@@ -45,7 +45,7 @@ sp500_val, sp500_chg, sp500_chart = get_metric_data("^GSPC", "red")
 usdkrw_val, usdkrw_chg, usdkrw_chart = get_metric_data("KRW=X", "green")
 
 # ---------------------------------------------------------
-# 3. 한국 주요 주식 (링크 추가됨)
+# 3. 한국 주요 주식 (링크 포함)
 # ---------------------------------------------------------
 print("2. 한국 주식 데이터 수집...")
 korea_tickers = [
@@ -84,8 +84,6 @@ for code, name, naver_code in korea_tickers:
                 line_color = "gray"
             
             chart = make_sparkline_url(hist['Close'].tolist(), line_color)
-            
-            # ★ 네이버 금융 링크 생성 ★
             link_url = f"https://finance.naver.com/item/main.naver?code={naver_code}"
             
             korea_table_html += f"""
@@ -105,41 +103,72 @@ for code, name, naver_code in korea_tickers:
 korea_table_html += "</tbody></table>"
 
 # ---------------------------------------------------------
-# 4. 뉴스 (엄격한 날짜 필터링)
+# 4. 뉴스 수집 (전문 매체 추가 & 날짜 필터링)
 # ---------------------------------------------------------
-print("3. 뉴스 수집 및 날짜 필터링...")
-# 검색어 최적화
-rss_list = [
-    ("https://news.google.com/rss/search?q=stock+market+korea&hl=ko&gl=KR&ceid=KR:ko", "📈 국내 증시"),
-    ("https://news.google.com/rss/search?q=robot+industry+news+korea&hl=ko&gl=KR&ceid=KR:ko", "🤖 로봇 산업"),
-    ("https://news.google.com/rss/search?q=robot+gripper+technology&hl=ko&gl=KR&ceid=KR:ko", "🦾 로봇 기술")
+print("3. 전문 뉴스 수집 중...")
+
+# RSS 리스트 확장 (사이트별 RSS 주소)
+rss_sources = [
+    # 1. 국내 증시 (Google News - 검색어 기반)
+    {
+        "url": "https://news.google.com/rss/search?q=stock+market+korea&hl=ko&gl=KR&ceid=KR:ko",
+        "title": "📈 국내 증시 속보",
+        "limit": 3
+    },
+    # 2. 국내 로봇 뉴스 (로봇신문 등)
+    {
+        "url": "http://www.irobotnews.com/rss/all.xml", 
+        "title": "🤖 로봇신문 (Korea)",
+        "limit": 3
+    },
+    # 3. 해외 로봇 전문 매체 (Humanoid Robotics Technology)
+    {
+        "url": "https://humanoidroboticstechnology.com/feed/",
+        "title": "🦾 Humanoid Tech (Global)",
+        "limit": 3
+    },
+    # 4. 해외 로봇 기술 (The Robot Report)
+    {
+        "url": "https://www.therobotreport.com/feed/",
+        "title": "🌎 The Robot Report",
+        "limit": 3
+    }
 ]
 
 news_content_html = ""
 today = datetime.datetime.now()
 
-for url, category in rss_list:
+for source in rss_sources:
     try:
-        feed = feedparser.parse(url)
+        # User-Agent 설정 (일부 사이트 차단 방지)
+        feed = feedparser.parse(source["url"], agent="Mozilla/5.0")
+        
         filtered_entries = []
         
-        # ★ 날짜 필터링 로직 (최근 3일 이내만) ★
+        # 날짜 필터링 (최근 5일 이내) - 전문 매체는 업데이트가 느릴 수 있어서 3일->5일로 조금 여유를 둠
         for entry in feed.entries:
-            if hasattr(entry, 'published_parsed'):
-                pub_date = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))
-                # 3일(72시간) 이내 기사만 통과
-                if (today - pub_date).days <= 3:
-                    filtered_entries.append(entry)
-        
-        # 걸러진 기사가 있을 때만 카테고리 표시
-        if filtered_entries:
-            news_content_html += f"<div class='news-category'><h4><span class='badge'>{category}</span></h4><ul class='news-list'>"
-            for entry in filtered_entries[:3]: # 카테고리 당 최대 3개
+            pub_dt = None
+            if hasattr(entry, 'published_parsed') and entry.published_parsed:
                 pub_dt = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))
-                # 날짜 표시 (오늘/어제)
+            elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+                pub_dt = datetime.datetime.fromtimestamp(time.mktime(entry.updated_parsed))
+            
+            if pub_dt:
+                # 5일 이내 기사만
+                if (today - pub_dt).days <= 5:
+                    filtered_entries.append((entry, pub_dt))
+        
+        # 최신순 정렬
+        filtered_entries.sort(key=lambda x: x[1], reverse=True)
+        
+        if filtered_entries:
+            news_content_html += f"<div class='news-category'><h4><span class='badge'>{source['title']}</span></h4><ul class='news-list'>"
+            
+            for entry, pub_dt in filtered_entries[:source["limit"]]:
+                # 날짜 표시
                 diff_days = (today - pub_dt).days
-                if diff_days == 0: date_txt = "오늘"
-                elif diff_days == 1: date_txt = "어제"
+                if diff_days == 0: date_txt = "Today"
+                elif diff_days == 1: date_txt = "Yesterday"
                 else: date_txt = pub_dt.strftime("%m-%d")
                 
                 news_content_html += f"""
@@ -151,10 +180,10 @@ for url, category in rss_list:
             news_content_html += "</ul></div>"
             
     except Exception as e:
-        print(f"News Error: {e}")
+        print(f"Error fetching {source['title']}: {e}")
 
 if not news_content_html:
-    news_content_html = "<div style='text-align:center; color:#888; padding:20px;'>최근 3일간 주요 뉴스가 없습니다.</div>"
+    news_content_html = "<div style='text-align:center; color:#888;'>최근 관련 뉴스가 없습니다.</div>"
 
 # ---------------------------------------------------------
 # 5. 파일 저장
