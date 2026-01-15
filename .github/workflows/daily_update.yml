@@ -2,9 +2,10 @@ name: Daily Market Monitor Update
 
 on:
   schedule:
-    # 매일 UTC 21:00 (한국 시간 06:00) 실행
-    - cron: '0 21 * * *'
-  workflow_dispatch: # 수동 실행 버튼 추가
+    # 한국 시간 기준: 평일 09:00 ~ 16:00 까지 매 시간 실행
+    # (UTC 기준: 00:00 ~ 07:00)
+    - cron: '0 0-7 * * 1-5'
+  workflow_dispatch: # 수동 실행 가능
 
 permissions:
   contents: write
@@ -33,5 +34,5 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add index.html
-          git commit -m "Daily Update: Market Data & News"
+          git commit -m "Auto Update: Hourly Stock Data" || echo "No changes to commit"
           git push
