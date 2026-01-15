@@ -5,51 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Market Monitor</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f9; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; padding: 20px; background-color: #f0f2f5; color: #333; }
         .container { max-width: 1200px; margin: 0 auto; }
-        header { display: flex; justify-content: space-between; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        .metric { text-align: center; }
-        .metric h2 { margin: 0; font-size: 1.2em; color: #555; }
-        .metric p { margin: 5px 0 0; font-size: 1.5em; font-weight: bold; color: #333; }
-        .map-container { width: 100%; height: 800px; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        iframe { width: 100%; height: 100%; border: none; }
-        .news-section { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .news-section h3 { border-bottom: 2px solid #ddd; padding-bottom: 10px; }
-        .news-item { margin-bottom: 15px; }
-        .news-date { font-size: 0.8em; color: #888; }
-        footer { text-align: center; margin-top: 20px; color: #aaa; font-size: 0.9em; }
+        
+        /* 상단 지표 카드 */
+        header { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 20px; }
+        .card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; }
+        .card h2 { margin: 0 0 10px 0; font-size: 14px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+        .card p { margin: 0; font-size: 24px; font-weight: 700; color: #2c3e50; }
+        
+        /* 지도 (히트맵) */
+        .map-container { height: 700px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; border: 1px solid #e1e4e8; }
+        
+        /* 뉴스 섹션 */
+        .news-section { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .news-section h3 { margin-top: 0; border-bottom: 2px solid #f0f2f5; padding-bottom: 15px; font-size: 18px; }
+        .news-group { margin-bottom: 20px; }
+        .news-group h4 { margin: 15px 0 10px; color: #0056b3; font-size: 16px; }
+        .news-item { list-style: none; margin-bottom: 8px; font-size: 14px; line-height: 1.5; }
+        .news-item a { text-decoration: none; color: #333; font-weight: 500; }
+        .news-item a:hover { color: #0056b3; text-decoration: underline; }
+        .news-date { font-size: 0.85em; color: #888; margin-left: 5px; }
+        ul { padding-left: 0; }
+
+        footer { text-align: center; margin-top: 30px; color: #999; font-size: 12px; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="metric">
+            <div class="card">
                 <h2>KOSPI</h2>
                 <p id="kospi-val">Loading...</p>
             </div>
-            <div class="metric">
+            <div class="card">
                 <h2>S&P 500</h2>
                 <p id="sp500-val">Loading...</p>
             </div>
-            <div class="metric">
-                <h2>USD/KRW</h2>
+            <div class="card">
+                <h2>USD/KRW (환율)</h2>
                 <p id="exchange-val">Loading...</p>
             </div>
         </header>
 
         <div class="map-container">
-            <iframe src="https://finviz.com/map.ashx?t=sec"></iframe>
-        </div>
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+                {
+                "exchanges": [],
+                "dataSource": "SPX500",
+                "grouping": "sector",
+                "blockSize": "market_cap_basic",
+                "blockColor": "change",
+                "locale": "kr",
+                "symbolUrl": "",
+                "colorTheme": "light",
+                "hasTopBar": false,
+                "isDataSetEnabled": false,
+                "isZoomEnabled": true,
+                "hasSymbolTooltip": true,
+                "width": "100%",
+                "height": "100%"
+                }
+                </script>
+            </div>
+            </div>
 
         <div class="news-section">
-            <h3>📈 오늘의 증시 & 🤖 로봇 뉴스 요약</h3>
+            <h3>📢 아침 뉴스 브리핑</h3>
             <div id="news-content">
-                <p>뉴스를 불러오는 중입니다...</p>
+                <p style="color:#888;">데이터를 불러오는 중입니다... (잠시 후 업데이트 됩니다)</p>
             </div>
         </div>
 
         <footer>
-            Updated at: <span id="last-updated">-</span>
+            Last Updated: <span id="last-updated">-</span>
         </footer>
     </div>
 </body>
