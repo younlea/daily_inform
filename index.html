@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Market Monitor</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f9; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header { display: flex; justify-content: space-between; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .metric { text-align: center; }
+        .metric h2 { margin: 0; font-size: 1.2em; color: #555; }
+        .metric p { margin: 5px 0 0; font-size: 1.5em; font-weight: bold; color: #333; }
+        .map-container { width: 100%; height: 800px; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        iframe { width: 100%; height: 100%; border: none; }
+        .news-section { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .news-section h3 { border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        .news-item { margin-bottom: 15px; }
+        .news-date { font-size: 0.8em; color: #888; }
+        footer { text-align: center; margin-top: 20px; color: #aaa; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="metric">
+                <h2>KOSPI</h2>
+                <p id="kospi-val">Loading...</p>
+            </div>
+            <div class="metric">
+                <h2>S&P 500</h2>
+                <p id="sp500-val">Loading...</p>
+            </div>
+            <div class="metric">
+                <h2>USD/KRW</h2>
+                <p id="exchange-val">Loading...</p>
+            </div>
+        </header>
+
+        <div class="map-container">
+            <iframe src="https://finviz.com/map.ashx?t=sec"></iframe>
+        </div>
+
+        <div class="news-section">
+            <h3>📈 오늘의 증시 & 🤖 로봇 뉴스 요약</h3>
+            <div id="news-content">
+                <p>뉴스를 불러오는 중입니다...</p>
+            </div>
+        </div>
+
+        <footer>
+            Updated at: <span id="last-updated">-</span>
+        </footer>
+    </div>
+</body>
+</html>
