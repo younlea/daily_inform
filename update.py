@@ -3,90 +3,65 @@ import feedparser
 import datetime
 import urllib.parse
 import time
+from email.utils import parsedate_to_datetime
 
 # ---------------------------------------------------------
-# 1. 헬퍼 함수: 미니 차트 URL 생성 (QuickChart)
+# 1. 헬퍼 함수: 미니 차트 & 링크 생성
 # ---------------------------------------------------------
 def make_sparkline_url(data_list, color):
-    if not data_list or len(data_list) < 2:
-        return ""
-    # 최근 30개 데이터만 사용
+    if not data_list or len(data_list) < 2: return ""
     subset = data_list[-30:]
     data_str = ",".join([f"{x:.2f}" for x in subset])
-    
-    chart_config = f"""
-    {{
-        type: 'sparkline',
-        data: {{
-            datasets: [{{
-                data: [{data_str}],
-                borderColor: '{color}',
-                borderWidth: 2,
-                fill: false,
-                pointRadius: 0
-            }}]
-        }}
-    }}
-    """
+    chart_config = f"{{type:'sparkline',data:{{datasets:[{{data:[{data_str}],borderColor:'{color}',borderWidth:2,fill:false,pointRadius:0}}]}}}}"
     return "https://quickchart.io/chart?c=" + urllib.parse.quote(chart_config)
 
 # ---------------------------------------------------------
-# 2. 시장 지수 가져오기 (상단 3개용)
+# 2. 시장 지수 (상단)
 # ---------------------------------------------------------
 def get_metric_data(ticker, color):
     try:
         stock = yf.Ticker(ticker)
-        # 5일치(변동폭 계산용) + 1달치(차트용)
         hist = stock.history(period="1mo")
         if hist.empty: return "N/A", "0.00%", ""
-
         current = hist['Close'].iloc[-1]
         prev = hist['Close'].iloc[-2]
         change = current - prev
         change_pct = (change / prev) * 100
         
-        # 등락에 따른 색상/부호
-        if change >= 0:
-            sign = "+"
-            css_class = "text-red" # 한국은 상승이 빨강
-        else:
-            sign = ""
-            css_class = "text-blue" # 하락이 파랑
-
+        sign = "+" if change >= 0 else ""
+        css_class = "text-red" if change >= 0 else "text-blue"
+        
         val_str = f"{current:,.2f}"
         if ticker == "KRW=X": val_str += " 원"
         
         change_str = f"<span class='{css_class}'>{sign}{change:.2f} ({sign}{change_pct:.2f}%)</span>"
         chart_url = make_sparkline_url(hist['Close'].tolist(), color)
-        
         return val_str, change_str, chart_url
-    except:
-        return "Error", "-", ""
+    except: return "Error", "-", ""
 
-print("1. 지수 데이터 수집 중...")
+print("1. 지수 데이터 수집...")
 kospi_val, kospi_chg, kospi_chart = get_metric_data("^KS11", "red")
-sp500_val, sp500_chg, sp500_chart = get_metric_data("^GSPC", "red") # 미국 지수도 상승은 빨강/하락 파랑 로직 공유
+sp500_val, sp500_chg, sp500_chart = get_metric_data("^GSPC", "red")
 usdkrw_val, usdkrw_chg, usdkrw_chart = get_metric_data("KRW=X", "green")
 
-
 # ---------------------------------------------------------
-# 3. 한국 주요 주식 직접 만들기 (위젯 대체)
+# 3. 한국 주요 주식 (링크 추가됨)
 # ---------------------------------------------------------
-print("2. 한국 주식 데이터 수집 중...")
+print("2. 한국 주식 데이터 수집...")
 korea_tickers = [
-    ('005930.KS', '삼성전자'),
-    ('000660.KS', 'SK하이닉스'),
-    ('373220.KS', 'LG에너지솔루션'),
-    ('207940.KS', '삼성바이오로직스'),
-    ('005380.KS', '현대차'),
-    ('005490.KS', 'POSCO홀딩스'),
-    ('000270.KS', '기아'),
-    ('035420.KS', 'NAVER')
+    ('005930.KS', '삼성전자', '005930'),
+    ('000660.KS', 'SK하이닉스', '000660'),
+    ('373220.KS', 'LG에너지솔루션', '373220'),
+    ('207940.KS', '삼성바이오로직스', '207940'),
+    ('005380.KS', '현대차', '005380'),
+    ('005490.KS', 'POSCO홀딩스', '005490'),
+    ('000270.KS', '기아', '000270'),
+    ('035420.KS', 'NAVER', '035420')
 ]
 
 korea_table_html = "<table class='stock-table'><thead><tr><th>종목명</th><th>현재가</th><th>등락률</th><th>추세(1달)</th></tr></thead><tbody>"
 
-for code, name in korea_tickers:
+for code, name, naver_code in korea_tickers:
     try:
         stock = yf.Ticker(code)
         hist = stock.history(period="1mo")
@@ -95,7 +70,6 @@ for code, name in korea_tickers:
             prev = hist['Close'].iloc[-2]
             pct = ((curr - prev) / prev) * 100
             
-            # 색상 결정
             if pct > 0:
                 color_cls = "bg-red-light text-red"
                 sign = "+"
@@ -111,10 +85,13 @@ for code, name in korea_tickers:
             
             chart = make_sparkline_url(hist['Close'].tolist(), line_color)
             
+            # ★ 네이버 금융 링크 생성 ★
+            link_url = f"https://finance.naver.com/item/main.naver?code={naver_code}"
+            
             korea_table_html += f"""
-            <tr>
+            <tr onclick="window.open('{link_url}', '_blank')" style="cursor:pointer;">
                 <td>
-                    <span class='stock-name'>{name}</span>
+                    <span class='stock-name'>{name} 🔗</span>
                     <span class='stock-code'>{code}</span>
                 </td>
                 <td class='stock-price'>{curr:,.0f}원</td>
@@ -127,86 +104,75 @@ for code, name in korea_tickers:
 
 korea_table_html += "</tbody></table>"
 
-
 # ---------------------------------------------------------
-# 4. 뉴스 가져오기 (기간 필터링 적용)
+# 4. 뉴스 (엄격한 날짜 필터링)
 # ---------------------------------------------------------
-print("3. 뉴스 수집 중...")
-
-# URL 뒤에 &tbs=qdr:w (지난 1주), &tbs=qdr:d (지난 24시간)
-# 여기서는 안전하게 '지난 1주(w)'로 설정하여 뉴스가 없어서 빈칸이 되는 것을 방지
+print("3. 뉴스 수집 및 날짜 필터링...")
+# 검색어 최적화
 rss_list = [
-    ("https://news.google.com/rss/search?q=stock+market+korea&hl=ko&gl=KR&ceid=KR:ko&tbs=qdr:w", "📈 국내 증시"),
-    ("https://news.google.com/rss/search?q=robot+industry+technology&hl=ko&gl=KR&ceid=KR:ko&tbs=qdr:w", "🤖 로봇 산업"),
-    ("https://news.google.com/rss/search?q=robot+end+effector+gripper&hl=ko&gl=KR&ceid=KR:ko&tbs=qdr:w", "🦾 로봇 핸드/그리퍼")
+    ("https://news.google.com/rss/search?q=stock+market+korea&hl=ko&gl=KR&ceid=KR:ko", "📈 국내 증시"),
+    ("https://news.google.com/rss/search?q=robot+industry+news+korea&hl=ko&gl=KR&ceid=KR:ko", "🤖 로봇 산업"),
+    ("https://news.google.com/rss/search?q=robot+gripper+technology&hl=ko&gl=KR&ceid=KR:ko", "🦾 로봇 기술")
 ]
 
 news_content_html = ""
+today = datetime.datetime.now()
 
 for url, category in rss_list:
-    news_content_html += f"<div class='news-category'><h4><span class='badge'>{category}</span></h4><ul class='news-list'>"
     try:
         feed = feedparser.parse(url)
-        # 5개만
-        count = 0
+        filtered_entries = []
+        
+        # ★ 날짜 필터링 로직 (최근 3일 이내만) ★
         for entry in feed.entries:
-            if count >= 5: break
-            
-            # 날짜 파싱 (오늘/어제 등 표시)
-            dt_struct = entry.published_parsed
-            if dt_struct:
-                dt_obj = datetime.datetime(*dt_struct[:6])
-                time_diff = datetime.datetime.now() - dt_obj
+            if hasattr(entry, 'published_parsed'):
+                pub_date = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))
+                # 3일(72시간) 이내 기사만 통과
+                if (today - pub_date).days <= 3:
+                    filtered_entries.append(entry)
+        
+        # 걸러진 기사가 있을 때만 카테고리 표시
+        if filtered_entries:
+            news_content_html += f"<div class='news-category'><h4><span class='badge'>{category}</span></h4><ul class='news-list'>"
+            for entry in filtered_entries[:3]: # 카테고리 당 최대 3개
+                pub_dt = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))
+                # 날짜 표시 (오늘/어제)
+                diff_days = (today - pub_dt).days
+                if diff_days == 0: date_txt = "오늘"
+                elif diff_days == 1: date_txt = "어제"
+                else: date_txt = pub_dt.strftime("%m-%d")
                 
-                # 표시 날짜 포맷
-                if time_diff.days < 1:
-                    date_display = "오늘/최신"
-                elif time_diff.days < 2:
-                    date_display = "1일 전"
-                else:
-                    date_display = f"{dt_obj.month}/{dt_obj.day}"
-            else:
-                date_display = ""
-
-            news_content_html += f"""
-            <li class='news-item'>
-                <a href='{entry.link}' target='_blank'>{entry.title}</a>
-                <span class='news-time'>{date_display}</span>
-            </li>
-            """
-            count += 1
-            
-        if count == 0:
-            news_content_html += "<li class='news-item'>최근 관련 기사가 없습니다.</li>"
+                news_content_html += f"""
+                <li class='news-item'>
+                    <a href='{entry.link}' target='_blank'>{entry.title}</a>
+                    <span class='news-time'>{date_txt}</span>
+                </li>
+                """
+            news_content_html += "</ul></div>"
             
     except Exception as e:
-        news_content_html += f"<li class='news-item'>뉴스 로딩 실패</li>"
-    news_content_html += "</ul></div>"
+        print(f"News Error: {e}")
 
+if not news_content_html:
+    news_content_html = "<div style='text-align:center; color:#888; padding:20px;'>최근 3일간 주요 뉴스가 없습니다.</div>"
 
 # ---------------------------------------------------------
 # 5. 파일 저장
 # ---------------------------------------------------------
-print("4. HTML 생성 중...")
+print("4. HTML 생성...")
 now_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 with open('template.html', 'r', encoding='utf-8') as f:
     template = f.read()
 
 output = template.replace('{{LAST_UPDATED}}', now_str)
-
-# 지표 교체
 output = output.replace('{{KOSPI_VAL}}', kospi_val).replace('{{KOSPI_CHANGE}}', kospi_chg).replace('{{KOSPI_CHART}}', kospi_chart)
 output = output.replace('{{SP500_VAL}}', sp500_val).replace('{{SP500_CHANGE}}', sp500_chg).replace('{{SP500_CHART}}', sp500_chart)
 output = output.replace('{{USDKRW_VAL}}', usdkrw_val).replace('{{USDKRW_CHANGE}}', usdkrw_chg).replace('{{USDKRW_CHART}}', usdkrw_chart)
-
-# 한국 주식 테이블 교체
 output = output.replace('{{KOREA_MARKET_HTML}}', korea_table_html)
-
-# 뉴스 교체
 output = output.replace('{{NEWS_CONTENT}}', news_content_html)
 
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(output)
 
-print("완료! index.html 업데이트됨.")
+print("업데이트 완료.")
