@@ -1,18 +1,21 @@
 import yfinance as yf
 import feedparser
 import datetime
-import re
-import time
 import urllib.parse
+import time
 
-# 차트 생성을 위한 함수 (QuickChart 사용)
+# ----------------------------------------
+# 1. 퀵차트(QuickChart) URL 생성 함수
+# ----------------------------------------
 def make_sparkline_url(data_list, color='blue'):
-    if not data_list:
-        return ""
-    # 데이터가 너무 많으면 URL이 길어지므로 최근 30개만 사용
+    if not data_list or len(data_list) < 2:
+        # 데이터 없으면 빈 투명 이미지 리턴
+        return "https://quickchart.io/chart?c={type:'sparkline',data:{datasets:[{data:[0]}]}}"
+    
+    # 최근 30일 데이터만 사용
     data_str = ",".join([f"{x:.2f}" for x in data_list[-30:]])
     
-    # QuickChart API URL 생성 (배경 투명, 선 그래프, 포인트 없음)
+    # 차트 설정
     chart_config = f"""
     {{
         type: 'sparkline',
@@ -27,84 +30,99 @@ def make_sparkline_url(data_list, color='blue'):
         }}
     }}
     """
-    base_url = "https://quickchart.io/chart?c="
-    return base_url + urllib.parse.quote(chart_config)
+    return "https://quickchart.io/chart?c=" + urllib.parse.quote(chart_config)
 
-def get_market_data(ticker, color='rgba(0, 116, 217, 1)'):
+# ----------------------------------------
+# 2. 시장 데이터 가져오기 (가격 + 차트)
+# ----------------------------------------
+def get_market_data(ticker, color):
     try:
+        print(f"Fetching {ticker}...")
         stock = yf.Ticker(ticker)
-        # 1달치 데이터 가져오기 (그래프용)
+        # 1달치 데이터 요청
         hist = stock.history(period="1mo")
-        if not hist.empty:
-            current_price = hist['Close'].iloc[-1]
-            price_list = hist['Close'].tolist()
-            chart_url = make_sparkline_url(price_list, color)
-            return current_price, chart_url
-        return None, None
+        
+        if hist.empty:
+            return "N/A", ""
+            
+        current_price = hist['Close'].iloc[-1]
+        price_list = hist['Close'].tolist()
+        chart_url = make_sparkline_url(price_list, color)
+        
+        # 포맷팅 (환율은 '원', 나머지는 그냥 숫자)
+        if ticker == "KRW=X":
+            price_str = f"{current_price:,.2f} 원"
+        else:
+            price_str = f"{current_price:,.2f}"
+            
+        return price_str, chart_url
     except Exception as e:
         print(f"Error fetching {ticker}: {e}")
-        return None, None
+        return "Error", ""
 
-# 1. 데이터 가져오기 (가격 및 차트 URL)
-print("1. Fetching Market Data...")
-# KOSPI (빨간색 계열), S&P500 (파란색 계열), 환율 (초록색 계열)
+# 실행
 kospi_val, kospi_chart = get_market_data("^KS11", "red")
 sp500_val, sp500_chart = get_market_data("^GSPC", "blue")
 usdkrw_val, usdkrw_chart = get_market_data("KRW=X", "green")
 
-# 2. 뉴스 가져오기 (RSS)
-print("2. Fetching News...")
-rss_urls = [
+# ----------------------------------------
+# 3. 뉴스 가져오기 (RSS)
+# ----------------------------------------
+print("Fetching News...")
+
+rss_config = [
     ("https://news.google.com/rss/search?q=stock+market+korea+headline&hl=ko&gl=KR&ceid=KR:ko", "📈 증시 주요 뉴스"),
-    ("https://news.google.com/rss/search?q=robot+technology+industry+korea&hl=ko&gl=KR&ceid=KR:ko", "🤖 로봇/기술 뉴스"),
-    ("https://news.google.com/rss/search?q=robot+gripper+hand+technology&hl=ko&gl=KR&ceid=KR:ko", "🦾 로봇 핸드 & 그리퍼 기술")
+    ("https://news.google.com/rss/search?q=robot+technology+industry+korea&hl=ko&gl=KR&ceid=KR:ko", "🤖 로봇 산업 뉴스"),
+    ("https://news.google.com/rss/search?q=robot+gripper+hand+technology&hl=ko&gl=KR&ceid=KR:ko", "🦾 로봇 핸드/그리퍼 기술")
 ]
 
 news_html = ""
-for url, title in rss_urls:
+
+for url, title in rss_config:
     try:
         feed = feedparser.parse(url)
-        news_html += f"<div class='news-group'><h4>{title}</h4><ul>"
-        # 뉴스 항목이 없으면 메시지 표시
+        news_html += f"<div class='news-group'><h4>{title}</h4><ul class='news-list'>"
+        
+        # 뉴스 4개씩만
+        for entry in feed.entries[:4]:
+            pub_date = entry.published_parsed
+            date_str = time.strftime("%m-%d %H:%M", pub_date) if pub_date else ""
+            news_html += f"<li class='news-item'><a href='{entry.link}' target='_blank'>{entry.title}</a> <span class='news-date'>({date_str})</span></li>"
+        
         if not feed.entries:
-             news_html += "<li class='news-item'>최근 관련 뉴스가 없습니다.</li>"
-        else:
-            for entry in feed.entries[:4]: # 4개씩 가져오기
-                pub_date = entry.published_parsed
-                date_str = time.strftime("%m-%d %H:%M", pub_date) if pub_date else ""
-                news_html += f"<li class='news-item'><a href='{entry.link}' target='_blank'>{entry.title}</a> <span class='news-date'>({date_str})</span></li>"
+            news_html += "<li class='news-item'>최근 관련 뉴스가 없습니다.</li>"
+            
         news_html += "</ul></div>"
     except Exception as e:
-        print(f"Error fetching news {url}: {e}")
+        print(f"News Error {url}: {e}")
+        news_html += f"<p>뉴스 로딩 실패: {title}</p>"
 
-# 3. HTML 파일 업데이트
+# ----------------------------------------
+# 4. HTML 파일 읽고 구멍 채우기 (Replace 방식)
+# ----------------------------------------
 html_file = 'index.html'
+now_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+
 with open(html_file, 'r', encoding='utf-8') as f:
     content = f.read()
 
-# 날짜
-now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+# 확실하게 치환 (Placeholder Replace)
+content = content.replace('{{KOSPI_VAL}}', str(kospi_val))
+content = content.replace('{{KOSPI_CHART}}', str(kospi_chart))
 
-# 값 교체 로직
-if kospi_val:
-    content = re.sub(r'<p id="kospi-val">.*?</p>', f'<p id="kospi-val">{kospi_val:,.2f}</p>', content)
-    content = re.sub(r'<img id="kospi-chart" class="chart-img" src=".*?"', f'<img id="kospi-chart" class="chart-img" src="{kospi_chart}"', content)
+content = content.replace('{{SP500_VAL}}', str(sp500_val))
+content = content.replace('{{SP500_CHART}}', str(sp500_chart))
 
-if sp500_val:
-    content = re.sub(r'<p id="sp500-val">.*?</p>', f'<p id="sp500-val">{sp500_val:,.2f}</p>', content)
-    content = re.sub(r'<img id="sp500-chart" class="chart-img" src=".*?"', f'<img id="sp500-chart" class="chart-img" src="{sp500_chart}"', content)
+content = content.replace('{{USDKRW_VAL}}', str(usdkrw_val))
+content = content.replace('{{USDKRW_CHART}}', str(usdkrw_chart))
 
-if usdkrw_val:
-    content = re.sub(r'<p id="exchange-val">.*?</p>', f'<p id="exchange-val">{usdkrw_val:,.2f} 원</p>', content)
-    content = re.sub(r'<img id="exchange-chart" class="chart-img" src=".*?"', f'<img id="exchange-chart" class="chart-img" src="{usdkrw_chart}"', content)
+content = content.replace('{{NEWS_CONTENT}}', news_html)
+content = content.replace('{{LAST_UPDATED}}', now_str)
 
-# 뉴스 섹션 교체
-content = re.sub(r'(<div id="news-content">).*?(</div>)', f'\\1{news_html}\\2', content, flags=re.DOTALL)
-
-# 업데이트 시간
-content = re.sub(r'(<span id="last-updated">).*?(</span>)', f'\\1{now}\\2', content)
-
+# ----------------------------------------
+# 5. 파일 저장
+# ----------------------------------------
 with open(html_file, 'w', encoding='utf-8') as f:
     f.write(content)
 
-print("Update Complete.")
+print("Update Complete Successfully.")
