@@ -50,7 +50,9 @@ def process_news_with_local_llm(title, snippet):
         return title, snippet
 
 def clean_html(raw_html):
-    cleanr = re.compile('<.*?>')
+    if not raw_html: return ""
+    raw_html = str(raw_html)
+    cleanr = re.compile('<.*?>', re.DOTALL)
     text = re.sub(cleanr, '', raw_html)
     return text.replace('&nbsp;', ' ').strip()
 
