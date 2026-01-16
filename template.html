@@ -124,11 +124,17 @@
         </div>
 
         <div class="news-section">
-            <div class="news-header">📰 아침 뉴스 브리핑 (최신 3일)</div>
+            <div class="news-header" style="display:flex; justify-content:space-between; align-items:center;">
+                <span>📰 아침 뉴스 브리핑 (Brief)</span>
+                <a href="news.html" style="background:#e7f5ff; color:#1971c2; text-decoration:none; font-size:0.85rem; padding:6px 12px; border-radius:6px; font-weight:bold;">
+                    전체 뉴스 보기 >
+                </a>
+            </div>
             <div class="news-grid">
                 {{NEWS_CONTENT}}
             </div>
         </div>
+
 
         <footer>
             Auto-updates hourly (09:00 - 16:00 KST)
