@@ -39,8 +39,11 @@ MODEL_INSTANCE = None
 if GEMINI_KEY:
     MODEL_INSTANCE = get_ai_model()
 
-# ★★★ 핵심 수정: JSON 방식 버리고 텍스트 파싱 사용 ★★★
+# ★★★ 문법 오류 수정됨 (global 선언 위치 이동) ★★★
 def process_news_with_ai(title, snippet):
+    # 함수 내부에서 전역 변수를 바꾸려면 맨 위에 선언해야 함
+    global MODEL_INSTANCE
+    
     fallback_summary = snippet[:300] + ("..." if len(snippet) > 300 else "")
     
     if not MODEL_INSTANCE:
@@ -67,7 +70,7 @@ def process_news_with_ai(title, snippet):
             Input Snippet: {snippet}
             """
             
-            # JSON 모드 끄고 일반 텍스트 모드로 요청 (호환성 최강)
+            # JSON 모드 끄고 일반 텍스트 모드로 요청
             response = MODEL_INSTANCE.generate_content(prompt)
             result_text = response.text.strip()
             
@@ -78,7 +81,6 @@ def process_news_with_ai(title, snippet):
                 summary_ko = parts[1].strip()
                 return title_ko, summary_ko
             else:
-                # 구분자가 없으면 그냥 통째로 요약으로 간주하거나 원본 제목 사용
                 return title, result_text
             
         except Exception as e:
@@ -90,7 +92,6 @@ def process_news_with_ai(title, snippet):
             elif "404" in error_msg:
                  # 모델 못 찾으면 gemini-pro로 교체해서 재시도
                 print("⚠️ Model not found. Switching to gemini-pro...")
-                global MODEL_INSTANCE
                 MODEL_INSTANCE = genai.GenerativeModel('gemini-pro')
                 continue
             else:
