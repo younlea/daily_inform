@@ -229,6 +229,8 @@ for src in rss_robotics:
 
             log(f"🧠 AI Processing: {entry.title[:40]}...")
             raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
+            if not raw_snippet: 
+                raw_snippet = entry.title
             
             title_ko, summary_ko = process_news_with_local_llm(entry.title, raw_snippet)
             
@@ -247,8 +249,8 @@ for src in rss_robotics:
             archive.append(news_item)
             existing_links.add(link)
             new_items_count += 1
-            if new_items_count >= 50: break
-        if new_items_count >= 50: break
+            if new_items_count >= 200: break
+        if new_items_count >= 200: break
     except Exception as e:
         log(f"RSS Error: {e}")
 
