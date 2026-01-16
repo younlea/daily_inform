@@ -17,72 +17,82 @@ MAX_ITEMS = 2000
 # [디버깅] API 키 확인
 GEMINI_KEY = os.environ.get('GEMINI_API_KEY')
 if GEMINI_KEY:
-    print(f"✅ DEBUG: GEMINI_API_KEY 감지됨 (길이: {len(GEMINI_KEY)})")
+    print(f"✅ DEBUG: GEMINI_API_KEY 감지됨")
     genai.configure(api_key=GEMINI_KEY)
 else:
     print("❌ DEBUG: GEMINI_API_KEY 없음!")
 
-# ★★★ 수정됨: 자동 탐지 제거하고 'gemini-1.5-flash'로 강제 고정 ★★★
-# 1.5-flash는 무료 티어에서 가장 안정적이고 할당량이 높습니다.
+# 모델 가져오기 (1.5 Flash -> Pro 순서로 시도)
 def get_ai_model():
+    # 1순위: 1.5 Flash (빠름)
     try:
         return genai.GenerativeModel('gemini-1.5-flash')
-    except Exception as e:
-        print(f"❌ Model Init Error: {e}")
+    except:
+        pass
+    # 2순위: Pro (안정적)
+    try:
+        return genai.GenerativeModel('gemini-pro')
+    except:
         return None
 
 MODEL_INSTANCE = None
 if GEMINI_KEY:
     MODEL_INSTANCE = get_ai_model()
 
-# ★★★ 재시도(Retry) 로직 유지 ★★★
+# ★★★ 핵심 수정: JSON 방식 버리고 텍스트 파싱 사용 ★★★
 def process_news_with_ai(title, snippet):
     fallback_summary = snippet[:300] + ("..." if len(snippet) > 300 else "")
     
     if not MODEL_INSTANCE:
         return title, fallback_summary
     
-    # 최대 3번까지 재시도
+    # 재시도 로직
     max_retries = 3
     for attempt in range(max_retries):
         try:
+            # 프롬프트: JSON 대신 특수 구분자(|||)를 사용해달라고 요청
             prompt = f"""
-            당신은 IT 및 로봇 기술 전문 한국 기자입니다.
-            아래 영문 기사의 'Title'과 'Snippet'을 보고 JSON 형식으로 답하세요.
+            Role: Professional Tech Reporter (Korea).
+            Task: Translate title and summarize content into Korean.
 
-            1. title_ko: 제목을 자연스러운 한국어로 번역하세요.
-            2. summary_ko: 내용을 한국어로 2~3문장 요약하세요. (말투: ~함, ~임)
+            Format your response exactly like this:
+            KOREAN_TITLE ||| KOREAN_SUMMARY
+
+            Rules:
+            1. Title: Natural Korean translation.
+            2. Summary: 2-3 sentences in Korean. Noun-ending style (~함).
+            3. Do NOT output markdown, JSON, or any other text. Just the formatted string.
 
             Input Title: {title}
             Input Snippet: {snippet}
-
-            Response Format (JSON):
-            {{
-                "title_ko": "...",
-                "summary_ko": "..."
-            }}
             """
-            response = MODEL_INSTANCE.generate_content(prompt, generation_config={"response_mime_type": "application/json"})
-            data = json.loads(response.text)
-            return data.get("title_ko", title), data.get("summary_ko", fallback_summary)
+            
+            # JSON 모드 끄고 일반 텍스트 모드로 요청 (호환성 최강)
+            response = MODEL_INSTANCE.generate_content(prompt)
+            result_text = response.text.strip()
+            
+            # 구분자(|||)로 나누기
+            if "|||" in result_text:
+                parts = result_text.split("|||")
+                title_ko = parts[0].strip()
+                summary_ko = parts[1].strip()
+                return title_ko, summary_ko
+            else:
+                # 구분자가 없으면 그냥 통째로 요약으로 간주하거나 원본 제목 사용
+                return title, result_text
             
         except Exception as e:
             error_msg = str(e)
-            # 429 에러(Quota Exceeded)인 경우 60초 대기
             if "429" in error_msg or "quota" in error_msg.lower():
-                print(f"⚠️ Quota Limit Hit! (Attempt {attempt+1}/{max_retries}) - 60초 대기 후 재시도...")
-                time.sleep(60) 
-                continue 
-            # 404 에러인 경우 (혹시 flash도 안되면 pro로 변경 시도)
+                print(f"⚠️ Quota Limit! Waiting 60s... (Attempt {attempt+1})")
+                time.sleep(60)
+                continue
             elif "404" in error_msg:
-                print("⚠️ 1.5-Flash 모델 에러. gemini-pro로 1회 재시도합니다.")
-                try:
-                    backup_model = genai.GenerativeModel('gemini-pro')
-                    response = backup_model.generate_content(prompt, generation_config={"response_mime_type": "application/json"})
-                    data = json.loads(response.text)
-                    return data.get("title_ko", title), data.get("summary_ko", fallback_summary)
-                except:
-                    return title, fallback_summary
+                 # 모델 못 찾으면 gemini-pro로 교체해서 재시도
+                print("⚠️ Model not found. Switching to gemini-pro...")
+                global MODEL_INSTANCE
+                MODEL_INSTANCE = genai.GenerativeModel('gemini-pro')
+                continue
             else:
                 print(f"❌ AI Error: {error_msg}")
                 return title, fallback_summary
@@ -208,9 +218,10 @@ for src in rss_humanoid + rss_hand:
             print(f"AI Processing: {entry.title}...")
             raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
             
+            # AI 처리
             title_ko, summary_ko = process_news_with_ai(entry.title, raw_snippet)
             
-            # ★★★ 10초 대기 유지 ★★★
+            # 10초 대기
             print("Cooling down (10s)...")
             time.sleep(10) 
 
