@@ -36,6 +36,7 @@ def process_news_with_local_llm(title, snippet):
     try:
         response = ollama.chat(model=LOCAL_MODEL, messages=[{'role': 'user', 'content': final_prompt}])
         result_text = response['message']['content'].strip()
+        log(f"LLM Output: {result_text[:50]}...")
         
         if "|||" in result_text:
             parts = result_text.split("|||")
