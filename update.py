@@ -3,7 +3,6 @@ import feedparser
 import datetime
 import urllib.parse
 import time
-from email.utils import parsedate_to_datetime
 
 # ---------------------------------------------------------
 # 1. 헬퍼 함수: 미니 차트 & 링크 생성
@@ -107,32 +106,11 @@ korea_table_html += "</tbody></table>"
 # ---------------------------------------------------------
 print("3. 전문 뉴스 수집 중...")
 
-# RSS 리스트 확장 (사이트별 RSS 주소)
 rss_sources = [
-    # 1. 국내 증시 (Google News - 검색어 기반)
-    {
-        "url": "https://news.google.com/rss/search?q=stock+market+korea&hl=ko&gl=KR&ceid=KR:ko",
-        "title": "📈 국내 증시 속보",
-        "limit": 3
-    },
-    # 2. 국내 로봇 뉴스 (로봇신문 등)
-    {
-        "url": "http://www.irobotnews.com/rss/all.xml", 
-        "title": "🤖 로봇신문 (Korea)",
-        "limit": 3
-    },
-    # 3. 해외 로봇 전문 매체 (Humanoid Robotics Technology)
-    {
-        "url": "https://humanoidroboticstechnology.com/feed/",
-        "title": "🦾 Humanoid Tech (Global)",
-        "limit": 3
-    },
-    # 4. 해외 로봇 기술 (The Robot Report)
-    {
-        "url": "https://www.therobotreport.com/feed/",
-        "title": "🌎 The Robot Report",
-        "limit": 3
-    }
+    { "url": "https://news.google.com/rss/search?q=stock+market+korea&hl=ko&gl=KR&ceid=KR:ko", "title": "📈 국내 증시 속보", "limit": 3 },
+    { "url": "http://www.irobotnews.com/rss/all.xml", "title": "🤖 로봇신문 (Korea)", "limit": 3 },
+    { "url": "https://humanoidroboticstechnology.com/feed/", "title": "🦾 Humanoid Tech (Global)", "limit": 3 },
+    { "url": "https://www.therobotreport.com/feed/", "title": "🌎 The Robot Report", "limit": 3 }
 ]
 
 news_content_html = ""
@@ -140,12 +118,8 @@ today = datetime.datetime.now()
 
 for source in rss_sources:
     try:
-        # User-Agent 설정 (일부 사이트 차단 방지)
         feed = feedparser.parse(source["url"], agent="Mozilla/5.0")
-        
         filtered_entries = []
-        
-        # 날짜 필터링 (최근 5일 이내) - 전문 매체는 업데이트가 느릴 수 있어서 3일->5일로 조금 여유를 둠
         for entry in feed.entries:
             pub_dt = None
             if hasattr(entry, 'published_parsed') and entry.published_parsed:
@@ -153,32 +127,20 @@ for source in rss_sources:
             elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
                 pub_dt = datetime.datetime.fromtimestamp(time.mktime(entry.updated_parsed))
             
-            if pub_dt:
-                # 5일 이내 기사만
-                if (today - pub_dt).days <= 5:
-                    filtered_entries.append((entry, pub_dt))
+            if pub_dt and (today - pub_dt).days <= 5:
+                filtered_entries.append((entry, pub_dt))
         
-        # 최신순 정렬
         filtered_entries.sort(key=lambda x: x[1], reverse=True)
         
         if filtered_entries:
             news_content_html += f"<div class='news-category'><h4><span class='badge'>{source['title']}</span></h4><ul class='news-list'>"
-            
             for entry, pub_dt in filtered_entries[:source["limit"]]:
-                # 날짜 표시
                 diff_days = (today - pub_dt).days
                 if diff_days == 0: date_txt = "Today"
                 elif diff_days == 1: date_txt = "Yesterday"
                 else: date_txt = pub_dt.strftime("%m-%d")
-                
-                news_content_html += f"""
-                <li class='news-item'>
-                    <a href='{entry.link}' target='_blank'>{entry.title}</a>
-                    <span class='news-time'>{date_txt}</span>
-                </li>
-                """
+                news_content_html += f"<li class='news-item'><a href='{entry.link}' target='_blank'>{entry.title}</a> <span class='news-time'>{date_txt}</span></li>"
             news_content_html += "</ul></div>"
-            
     except Exception as e:
         print(f"Error fetching {source['title']}: {e}")
 
@@ -186,10 +148,14 @@ if not news_content_html:
     news_content_html = "<div style='text-align:center; color:#888;'>최근 관련 뉴스가 없습니다.</div>"
 
 # ---------------------------------------------------------
-# 5. 파일 저장
+# 5. 파일 저장 (시간 수정됨)
 # ---------------------------------------------------------
 print("4. HTML 생성...")
-now_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+# ★ 핵심 수정: UTC 시간에 9시간을 더해서 한국 시간(KST) 생성 ★
+utc_now = datetime.datetime.now(datetime.timezone.utc)
+kst_now = utc_now + datetime.timedelta(hours=9)
+now_str = kst_now.strftime("%Y-%m-%d %H:%M:%S (KST)")
 
 with open('template.html', 'r', encoding='utf-8') as f:
     template = f.read()
@@ -204,4 +170,4 @@ output = output.replace('{{NEWS_CONTENT}}', news_content_html)
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(output)
 
-print("업데이트 완료.")
+print(f"업데이트 완료: {now_str}")
