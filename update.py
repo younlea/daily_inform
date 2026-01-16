@@ -6,81 +6,24 @@ import time
 import json
 import os
 import re
-import requests
+# ★★★ AI 대신 번역기 사용 (키 필요 없음, 무제한) ★★★
+from deep_translator import GoogleTranslator
 
 # ==========================================
 # 1. 설정 및 헬퍼 함수
 # ==========================================
 ARCHIVE_FILE = 'news_archive.json'
 MAX_ITEMS = 2000
-GEMINI_KEY = os.environ.get('GEMINI_API_KEY')
 
-# 유일하게 반응이 있던 모델
-TARGET_MODEL = "gemini-2.0-flash-exp"
-
-def log(msg):
-    print(msg, flush=True)
-
-if GEMINI_KEY:
-    log(f"✅ DEBUG: API Key Loaded")
-else:
-    log("❌ DEBUG: API Key Missing!")
-
-def process_news_with_ai(title, snippet):
-    # 기본값: AI 실패 시 원문 그대로 사용
-    fallback_result = (title, snippet[:300] + "...")
-
-    if not GEMINI_KEY:
-        return fallback_result
-
-    prompt = f"""
-    Role: Professional Tech Reporter (Korea).
-    Task: Translate the title into Korean and summarize the snippet into Korean.
-    
-    Input Title: {title}
-    Input Snippet: {snippet}
-
-    Requirements:
-    1. Title: Natural Korean translation.
-    2. Summary: 2-3 sentences in Korean. Noun-ending style (e.g., ~함, ~임).
-    3. Output Format: "KOREAN_TITLE ||| KOREAN_SUMMARY"
-    4. Do NOT output anything else. Just the formatted string.
-    """
-
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{TARGET_MODEL}:generateContent"
-    payload = { "contents": [{ "parts": [{"text": prompt}] }] }
-    
-    # 딱 1번만 시도해보고, 안 되면 바로 포기 (시간 낭비 X)
+# ★★★ 텍스트 번역 함수 (무조건 성공함) ★★★
+def translate_text(text):
     try:
-        response = requests.post(
-            url,
-            headers={"Content-Type": "application/json"},
-            params={"key": GEMINI_KEY},
-            json=payload,
-            timeout=10 
-        )
-        
-        if response.status_code == 200:
-            try:
-                result = response.json()
-                result_text = result['candidates'][0]['content']['parts'][0]['text'].strip()
-                if "|||" in result_text:
-                    parts = result_text.split("|||")
-                    # 성공! 한국어 번역 반환
-                    return parts[0].strip(), parts[1].strip()
-            except:
-                pass # 파싱 에러나면 그냥 원문 사용
-        
-        elif response.status_code == 429:
-            log("   ⚠️ 사용량 초과 (AI 패스 -> 원문 사용)")
-        else:
-            log(f"   ⚠️ API 에러 {response.status_code} (AI 패스 -> 원문 사용)")
-
+        # 영어를 한국어로 번역
+        translated = GoogleTranslator(source='auto', target='ko').translate(text)
+        return translated
     except Exception as e:
-        log(f"   ❌ 통신 에러 (AI 패스 -> 원문 사용)")
-        
-    # 위에서 뭐라도 실패하면 그냥 원문 리턴
-    return fallback_result
+        print(f"❌ Translation Error: {e}")
+        return text # 에러나면 원문이라도 리턴
 
 def clean_html(raw_html):
     cleanr = re.compile('<.*?>')
@@ -127,7 +70,7 @@ def save_archive(data):
 # ==========================================
 # 2. 시장 데이터 수집
 # ==========================================
-log("1. 시장 데이터 수집...")
+print("1. 시장 데이터 수집...")
 kospi_val, kospi_chg, kospi_chart = get_metric_data("^KS11", "red")
 sp500_val, sp500_chg, sp500_chart = get_metric_data("^GSPC", "red")
 usdkrw_val, usdkrw_chg, usdkrw_chart = get_metric_data("KRW=X", "green")
@@ -157,9 +100,9 @@ for code, name, naver_code in korea_tickers:
 korea_table_html += "</tbody></table>"
 
 # ==========================================
-# 3. 뉴스 수집 및 AI 처리
+# 3. 뉴스 수집 및 번역
 # ==========================================
-log("2. 뉴스 데이터 수집 및 AI 처리 (Fallback Mode)...")
+print("2. 뉴스 데이터 수집 및 번역 (Deep Translator)...")
 archive = load_archive()
 existing_links = set(item['link'] for item in archive)
 
@@ -204,44 +147,46 @@ for src in rss_humanoid + rss_hand:
             
             if (today - pub_dt).days > 7: continue
 
-            log(f"Processing: {entry.title}...")
+            print(f"Processing: {entry.title}...")
             raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
             
-            # AI 시도 -> 안되면 원문 반환 (절대 안 멈춤)
-            title_final, summary_final = process_news_with_ai(entry.title, raw_snippet)
+            # ★★★ 여기서 바로 번역 (AI 필요 없음) ★★★
+            title_ko = translate_text(entry.title)
+            summary_ko = translate_text(raw_snippet[:500]) # 너무 길면 자르고 번역
             
-            # AI를 썼든 안 썼든 2초만 대기 (빠르게 처리)
-            time.sleep(2) 
+            # 번역은 빨라서 1초만 쉬어도 충분
+            time.sleep(1) 
 
             news_item = {
-                "title": title_final,
+                "title": title_ko,
                 "original_title": entry.title,
                 "link": link,
                 "date": pub_dt.strftime("%Y-%m-%d %H:%M"),
                 "source": src['title'],
                 "category": src['cat'],
-                "summary": summary_final
+                "summary": summary_ko
             }
             archive.append(news_item)
             existing_links.add(link)
             new_items_count += 1
             
-            if new_items_count >= 10:
-                log("🛑 10개 처리 완료. 종료합니다.")
+            # 번역은 제한이 없어서 20개까지 넉넉하게
+            if new_items_count >= 20:
+                print("🛑 20개 처리 완료. 종료합니다.")
                 break
         
-        if new_items_count >= 10: break
+        if new_items_count >= 20: break
 
     except Exception as e:
-        log(f"RSS Error: {e}")
+        print(f"RSS Error: {e}")
 
 save_archive(archive)
-log(f"New items: {new_items_count}")
+print(f"New items: {new_items_count}")
 
 # ==========================================
 # 4. HTML 생성
 # ==========================================
-log("3. HTML 생성...")
+print("3. HTML 생성...")
 utc_now = datetime.datetime.now(datetime.timezone.utc)
 kst_now = utc_now + datetime.timedelta(hours=9)
 now_str = kst_now.strftime("%Y-%m-%d %H:%M:%S (KST)")
@@ -307,4 +252,4 @@ output_news = output_news.replace('{{HAND_NEWS_FULL}}', generate_card_list(lates
 with open('news.html', 'w', encoding='utf-8') as f:
     f.write(output_news)
 
-log("완료!")
+print("완료!")
