@@ -22,12 +22,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # google-generativeai 추가됨
-          pip install yfinance feedparser google-generativeai
+          # ★★★ 여기 수정됨: --upgrade 옵션 추가 ★★★
+          pip install --upgrade yfinance feedparser google-generativeai
 
       - name: Run update script
         env:
-          # 여기서 GitHub 비밀금고의 키를 꺼내서 파이썬에게 전달합니다
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python update.py
 
@@ -36,5 +35,5 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add index.html news.html news_archive.json
-          git commit -m "Update Market Data & AI News Summary" || echo "No changes to commit"
+          git commit -m "Update Market Data & AI News" || echo "No changes to commit"
           git push
