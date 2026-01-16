@@ -171,11 +171,20 @@ for src in rss_economy:
         feed = feedparser.parse(src["url"], agent="Mozilla/5.0")
         for entry in feed.entries[:4]:
             raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
+            # Google News RSS often puts the title in the description too.
+            # If description is too short or almost same as title, we might want to flag it?
+            
             t_ko, s_ko = process_news_with_local_llm(entry.title, raw_snippet)
-            entry.title = t_ko
-            entry.summary = s_ko
-            economy_news_latest.append(entry)
-    except: pass
+            
+            # Create a clean dictionary instead of modifying the feedparser object
+            news_item = {
+                "title": t_ko,
+                "link": entry.link,
+                "summary": s_ko
+            }
+            economy_news_latest.append(news_item)
+    except Exception as e:
+        log(f"Economy RSS Error: {e}")
 
 today = datetime.datetime.now()
 new_items_count = 0
