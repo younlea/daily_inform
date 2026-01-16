@@ -163,8 +163,10 @@ for src in rss_economy:
     try:
         feed = feedparser.parse(src["url"], agent="Mozilla/5.0")
         for entry in feed.entries[:4]:
-            t_ko, _ = process_news_with_local_llm(entry.title, "")
+            raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
+            t_ko, s_ko = process_news_with_local_llm(entry.title, raw_snippet)
             entry.title = t_ko
+            entry.summary = s_ko
             economy_news_latest.append(entry)
     except: pass
 
@@ -223,7 +225,10 @@ def generate_simple_list(items):
     for item in items[:4]:
         title = item.get('title') if isinstance(item, dict) else item.title
         link = item.get('link') if isinstance(item, dict) else item.link
-        html += f"<li class='news-item'><a href='{link}' target='_blank'>{title}</a></li>"
+        summary = item.get('summary') if isinstance(item, dict) else getattr(item, 'summary', '')
+        
+        summary_html = f"<div style='font-size:0.9rem; color:#666; margin-top:4px;'>{summary}</div>" if summary else ""
+        html += f"<li class='news-item'><a href='{link}' target='_blank'>{title}</a>{summary_html}</li>"
     return html
 
 latest_humanoid = [x for x in archive if x['category'] == 'humanoid']
