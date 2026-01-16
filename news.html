@@ -8,29 +8,29 @@
         body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif; margin: 0; padding: 20px; background-color: #f8f9fa; color: #333; }
         .container { max-width: 900px; margin: 0 auto; }
         
-        /* 헤더 */
         .header { margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e9ecef; padding-bottom: 20px; }
         .header h1 { margin: 0; font-size: 1.8rem; color: #2c3e50; }
         .home-btn { text-decoration: none; background: #343a40; color: #fff; padding: 10px 18px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; transition: 0.2s; }
         .home-btn:hover { background: #495057; }
 
-        /* 검색창 */
         .search-box { width: 100%; margin-bottom: 40px; position: relative; }
         .search-input { width: 100%; padding: 15px 20px; font-size: 1rem; border: 2px solid #dee2e6; border-radius: 12px; box-sizing: border-box; transition: 0.2s; outline: none; }
         .search-input:focus { border-color: #1c7ed6; box-shadow: 0 0 0 3px rgba(28, 126, 214, 0.1); }
-        .search-icon { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: #adb5bd; }
 
-        /* 섹션 */
         .section-title { font-size: 1.4rem; font-weight: 700; color: #1c7ed6; margin: 50px 0 20px 0; display: flex; align-items: center; gap: 10px; }
         .section-title.hand { color: #e67700; }
         .badge-count { font-size: 0.9rem; background: #e9ecef; color: #495057; padding: 4px 10px; border-radius: 20px; font-weight: normal; }
 
-        /* 뉴스 카드 */
         .news-list { display: grid; gap: 15px; }
         .news-card { background: #fff; padding: 20px; border-radius: 12px; border: 1px solid #e9ecef; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s; }
         .news-card:hover { transform: translateY(-2px); border-color: #1c7ed6; }
-        .news-title { font-size: 1.1rem; font-weight: 600; color: #333; text-decoration: none; line-height: 1.4; display: block; margin-bottom: 8px; }
+        
+        .news-title { font-size: 1.15rem; font-weight: 700; color: #333; text-decoration: none; line-height: 1.4; display: block; margin-bottom: 8px; }
         .news-title:hover { color: #1c7ed6; }
+        
+        /* 요약글 스타일 추가 */
+        .news-summary { font-size: 0.95rem; color: #555; margin-bottom: 12px; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
         .news-meta { font-size: 0.85rem; color: #868e96; display: flex; gap: 10px; align-items: center; }
         .source-tag { background: #f1f3f5; padding: 2px 8px; border-radius: 4px; font-weight: 500; color: #495057; }
         .date-tag { color: #adb5bd; }
@@ -46,11 +46,11 @@
         </div>
 
         <div class="search-box">
-            <input type="text" id="searchInput" class="search-input" placeholder="기사 제목이나 키워드로 검색해보세요 (예: Tesla, Hand, Sensor...)">
+            <input type="text" id="searchInput" class="search-input" placeholder="기사 제목, 요약 내용으로 검색... (예: Tesla, Hand...)">
         </div>
 
         <div class="last-updated" style="text-align: right; color: #888; font-size: 0.9rem; margin-bottom: 20px;">
-            Updated: 2026-01-16 09:38:05 (KST)
+            Updated: 2026-01-16 09:45:28 (KST)
         </div>
 
         <div class="section-title">
@@ -60,6 +60,7 @@
             
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/industry-news/aimogas-intelligent-police-unit-r001-makes-official-debut/' target='_blank' class='news-title'>AiMOGA’s Intelligent Police Unit R001 Makes Official Debut</a>
+            <div class='news-summary'>AiMOGA Robotics has deployed its first intelligent traffic p...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
                 <span class='date-tag'>2026-01-15</span>
@@ -68,6 +69,7 @@
         
         <div class='news-card'>
             <a href='https://news.google.com/rss/articles/CBMibEFVX3lxTE9TMzVZLS01Tml3SjMtbDNtcXVZbFZQMDdWZ2k2ZU04bFd2U2RIbzhpTENfWnpGTHJFSFFNWjRCNkhoMlNKZEJOejVtVkNMSVp4X3FsU0tYak9wX3VkLXdpWEhqX0pkT0hFZTBmSw?oc=5' target='_blank' class='news-title'>Humanoid Robotics On Track to Become a $200 Billion Market by 2035 - IT비즈뉴스</a>
+            <div class='news-summary'>Humanoid Robotics On Track to Become a $200 Billion Market b...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Google News</span>
                 <span class='date-tag'>2026-01-15</span>
@@ -76,6 +78,7 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/news/x-square-robot-announces-140-million-in-series-a-funding/' target='_blank' class='news-title'>X Square Robot Announces $140 Million in Series A++ Funding</a>
+            <div class='news-summary'>X Square Robot has announced the completion of its Series A+...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
                 <span class='date-tag'>2026-01-13</span>
@@ -84,6 +87,7 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/industry-news/1x-unveils-paradigm-shift-in-humanoid-ai-neos-starting-to-learn-on-its-own/' target='_blank' class='news-title'>1X Unveils Updated World Model</a>
+            <div class='news-summary'>1X has announced the new 1X World Model, a groundbreaking AI...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
                 <span class='date-tag'>2026-01-13</span>
@@ -92,6 +96,7 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/news/humanoid-and-schaeffler-enter-a-strategic-technology-partnership/' target='_blank' class='news-title'>Humanoid and Schaeffler Enter a Strategic Technology Partnership</a>
+            <div class='news-summary'>Humanoid has announced a strategic technology partnership. O...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
                 <span class='date-tag'>2026-01-13</span>
@@ -100,6 +105,7 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/industry-news/matrix-robotics-launches-third-generation-humanoid-robot-matrix-3/' target='_blank' class='news-title'>Matrix Robotics Launches Third-Generation Humanoid Robot, MATRIX-3</a>
+            <div class='news-summary'>Matrix Robotics has officially launched its third-generation...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
                 <span class='date-tag'>2026-01-12</span>
@@ -108,6 +114,7 @@
         
         <div class='news-card'>
             <a href='https://news.google.com/rss/articles/CBMiU0FVX3lxTE43T1M0cWpMT3RSeEUxdllDV3VVWm9rel9fczVQZXRTM2tTa2dQbVJabTEyZEpGSWNWMndCWDlCYWhIdnJCY2RZUW83enpEazJycC1V?oc=5' target='_blank' class='news-title'>CES spotlight lifts humanoid robot ETFs - 네이트</a>
+            <div class='news-summary'>CES spotlight lifts humanoid robot ETFs  네이트</div>
             <div class='news-meta'>
                 <span class='source-tag'>Google News</span>
                 <span class='date-tag'>2026-01-11</span>
@@ -116,6 +123,7 @@
         
         <div class='news-card'>
             <a href='https://news.google.com/rss/articles/CBMiakFVX3lxTE9xaDJtdnI0bGtLdERkNFhoYlcwSHNVRTlNT1R2TDlHTG8tYnV5RUZsYVY3bUtKak85Tl9JeWdkdzQ4Q21RS3M4NnNtUWxMOW1ZdzNoRmY5enlZa0xTN0E0U2lCa05PcTBSbGc?oc=5' target='_blank' class='news-title'>RLWRLD Pushes Five-Finger Robotic Hand Control Forward with NVIDIA GR00T N1.5 - kmjournal.net</a>
+            <div class='news-summary'>RLWRLD Pushes Five-Finger Robotic Hand Control Forward with ...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Google News</span>
                 <span class='date-tag'>2026-01-11</span>
@@ -124,6 +132,7 @@
         
         <div class='news-card'>
             <a href='https://news.google.com/rss/articles/CBMiakFVX3lxTE9felREMmFPcHQ0OXY2UXRhSHlxMUdEWGdJaGtia3lydThSU3BacVVuc002eUZhRlkwMUI2TTZGdUVYb2xZZGFlU1ljaVFFSGk3TExzck45SG9WT2pNR3RPazc0dHNUcWZBc2c?oc=5' target='_blank' class='news-title'>Aiden Robotics Unveils Next-Generation Humanoid Robot Hand at CES 2026 - kmjournal.net</a>
+            <div class='news-summary'>Aiden Robotics Unveils Next-Generation Humanoid Robot Hand a...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Google News</span>
                 <span class='date-tag'>2026-01-10</span>
@@ -132,6 +141,7 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/news/pudu-robotics-launches-pudu-t150/' target='_blank' class='news-title'>Pudu Robotics Launches PUDU T150</a>
+            <div class='news-summary'>Pudu Robotics has announced the launch of PUDU T150, a Light...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
                 <span class='date-tag'>2026-01-09</span>
@@ -140,6 +150,7 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/industry-news/agibot-ranked-no-1-globally-in-humanoid-robot-shipments-by-omdia-2025/' target='_blank' class='news-title'>AGIBOT Ranked No. 1 Globally in Humanoid Robot Shipments by Omdia (2025)</a>
+            <div class='news-summary'>AGIBOT was ranked No.1 globally in both humanoid robot shipm...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
                 <span class='date-tag'>2026-01-09</span>
@@ -148,6 +159,7 @@
         
         <div class='news-card'>
             <a href='https://news.google.com/rss/articles/CBMiU0FVX3lxTE84a3pVNnBfa3lsdXE0bGtSOFVKb3duVnd0X2RlMjMxVnBFMUxaeWdyWHZiR1c0bzFJTHRaTld2bTVqd0dfUXlFVVlOaEp1d2V3ZEFN?oc=5' target='_blank' class='news-title'>CES 2026 : Boston Dynamics' Atlas wins CNET's top robot honor at CES 2026 - 네이트</a>
+            <div class='news-summary'>CES 2026 : Boston Dynamics' Atlas wins CNET's top robot hono...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Google News</span>
                 <span class='date-tag'>2026-01-09</span>
@@ -156,6 +168,7 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/industry-news/x-humanoid-showcases-fully-autonomous-and-more-useful-robotics-solutions-at-ces-2026/' target='_blank' class='news-title'>X-Humanoid Showcases Useful Robotics Solutions at CES 2026</a>
+            <div class='news-summary'>At CES 2026, which opens on January 6th, 2026, Beijing Innov...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
                 <span class='date-tag'>2026-01-08</span>
@@ -164,6 +177,7 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/industry-news/unix-ai-makes-its-official-debut-at-ces-2026/' target='_blank' class='news-title'>UniX AI Makes Its Official Debut at CES 2026</a>
+            <div class='news-summary'>The International Consumer Electronics Show of 2026 becomes ...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
                 <span class='date-tag'>2026-01-08</span>
@@ -172,6 +186,7 @@
         
         <div class='news-card'>
             <a href='https://news.google.com/rss/articles/CBMiakFVX3lxTE15NDdaVEtMVHpBZHpUQ2gzOFNDLVZvVG9neGJSZnVpMTdvLVlVck1vNG1ub2l0OFF2ZGkza2Z2X1FKRTc3SGJITFlrSFpQVkYwQnVJWWZVbnRMV1RNYjlIUVNlc2tJU2d1aVE?oc=5' target='_blank' class='news-title'>Boston Dynamics Says Kung Fu Is Not the Point. Practical Robots Will Win the Physical AI Race - kmjournal.net</a>
+            <div class='news-summary'>Boston Dynamics Says Kung Fu Is Not the Point. Practical Rob...</div>
             <div class='news-meta'>
                 <span class='source-tag'>Google News</span>
                 <span class='date-tag'>2026-01-08</span>
@@ -193,20 +208,20 @@
     </div>
 
     <script>
-        // 뉴스 개수 세기
         document.getElementById('count-humanoid').innerText = document.getElementById('list-humanoid').children.length;
         document.getElementById('count-hand').innerText = document.getElementById('list-hand').children.length;
 
-        // 검색 기능
         const searchInput = document.getElementById('searchInput');
         const cards = document.querySelectorAll('.news-card');
 
         searchInput.addEventListener('keyup', function(e) {
             const term = e.target.value.toLowerCase();
-            
             cards.forEach(card => {
+                // 제목과 요약글 모두에서 검색
                 const title = card.querySelector('.news-title').innerText.toLowerCase();
-                if (title.includes(term)) {
+                const summary = card.querySelector('.news-summary').innerText.toLowerCase();
+                
+                if (title.includes(term) || summary.includes(term)) {
                     card.style.display = 'block';
                 } else {
                     card.style.display = 'none';
