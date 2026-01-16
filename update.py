@@ -15,68 +15,23 @@ ARCHIVE_FILE = 'news_archive.json'
 MAX_ITEMS = 2000
 GEMINI_KEY = os.environ.get('GEMINI_API_KEY')
 
-# 모델 후보군 (2.0이 반응이 있었으므로 최상단 배치)
-CANDIDATE_MODELS = [
-    "gemini-2.0-flash-exp",
-    "gemini-1.5-flash",
-    "gemini-1.5-flash-latest",
-    "gemini-1.5-flash-001",
-    "gemini-pro"
-]
+# 유일하게 반응이 있던 모델
+TARGET_MODEL = "gemini-2.0-flash-exp"
 
-ACTIVE_MODEL = None
+def log(msg):
+    print(msg, flush=True)
 
 if GEMINI_KEY:
-    print(f"✅ DEBUG: API Key Loaded")
+    log(f"✅ DEBUG: API Key Loaded")
 else:
-    print("❌ DEBUG: API Key Missing!")
-
-# ★★★ 수정됨: 429(과부하)도 '성공'으로 간주하고 선택함 ★★★
-def find_working_model():
-    print("\n🔍 AI 모델 생존 확인 중...")
-    
-    payload = {"contents": [{"parts": [{"text": "hi"}]}]}
-    
-    for model in CANDIDATE_MODELS:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-        try:
-            print(f"   👉 Testing '{model}'...", end=" ")
-            response = requests.post(
-                url,
-                headers={"Content-Type": "application/json"},
-                params={"key": GEMINI_KEY},
-                json=payload,
-                timeout=10
-            )
-            
-            if response.status_code == 200:
-                print("✅ 정상 (200 OK)")
-                return model
-            elif response.status_code == 429:
-                print("✅ 생존 확인 (429 과부하 - 대기 후 사용 가능)")
-                print("      -> 이 모델을 선택하고 잠시 대기합니다.")
-                time.sleep(5) # 숨 고르기
-                return model
-            else:
-                print(f"❌ 실패 ({response.status_code})")
-                
-        except Exception as e:
-            print(f"❌ 에러 ({e})")
-            
-    return None
-
-if GEMINI_KEY:
-    ACTIVE_MODEL = find_working_model()
-    if ACTIVE_MODEL:
-        print(f"\n🎉 [확정] 오늘의 모델: {ACTIVE_MODEL}")
-    else:
-        print("\n🚨 [실패] 사용 가능한 모델이 없습니다. (영어 원문 저장)")
+    log("❌ DEBUG: API Key Missing!")
 
 def process_news_with_ai(title, snippet):
-    fallback_summary = snippet[:300] + ("..." if len(snippet) > 300 else "")
-    
-    if not GEMINI_KEY or not ACTIVE_MODEL:
-        return title, fallback_summary
+    # 기본값: AI 실패 시 원문 그대로 사용
+    fallback_result = (title, snippet[:300] + "...")
+
+    if not GEMINI_KEY:
+        return fallback_result
 
     prompt = f"""
     Role: Professional Tech Reporter (Korea).
@@ -92,51 +47,40 @@ def process_news_with_ai(title, snippet):
     4. Do NOT output anything else. Just the formatted string.
     """
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{ACTIVE_MODEL}:generateContent"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{TARGET_MODEL}:generateContent"
     payload = { "contents": [{ "parts": [{"text": prompt}] }] }
     
-    # ★★★ 독한 재시도 로직 (429 뜨면 최대 3번, 60초씩 대기) ★★★
-    for attempt in range(3):
-        try:
-            response = requests.post(
-                url,
-                headers={"Content-Type": "application/json"},
-                params={"key": GEMINI_KEY},
-                json=payload,
-                timeout=30
-            )
-            
-            if response.status_code == 200:
-                try:
-                    result = response.json()
-                    result_text = result['candidates'][0]['content']['parts'][0]['text'].strip()
-                    if "|||" in result_text:
-                        parts = result_text.split("|||")
-                        return parts[0].strip(), parts[1].strip()
-                    else:
-                        return title, result_text
-                except:
-                    return title, fallback_summary
-            
-            elif response.status_code == 429:
-                print(f"⚠️ Quota Limit! 60초 대기 중... ({attempt+1}/3)")
-                time.sleep(60) # 1분 강제 휴식
-                continue # 다시 시도
-            
-            else:
-                print(f"❌ Error {response.status_code}")
-                # 404면 답이 없으니 포기
-                if response.status_code == 404:
-                    return title, fallback_summary
-                time.sleep(5)
-                continue
+    # 딱 1번만 시도해보고, 안 되면 바로 포기 (시간 낭비 X)
+    try:
+        response = requests.post(
+            url,
+            headers={"Content-Type": "application/json"},
+            params={"key": GEMINI_KEY},
+            json=payload,
+            timeout=10 
+        )
+        
+        if response.status_code == 200:
+            try:
+                result = response.json()
+                result_text = result['candidates'][0]['content']['parts'][0]['text'].strip()
+                if "|||" in result_text:
+                    parts = result_text.split("|||")
+                    # 성공! 한국어 번역 반환
+                    return parts[0].strip(), parts[1].strip()
+            except:
+                pass # 파싱 에러나면 그냥 원문 사용
+        
+        elif response.status_code == 429:
+            log("   ⚠️ 사용량 초과 (AI 패스 -> 원문 사용)")
+        else:
+            log(f"   ⚠️ API 에러 {response.status_code} (AI 패스 -> 원문 사용)")
 
-        except Exception as e:
-            print(f"❌ Net Error: {e}")
-            time.sleep(5)
-            continue
-            
-    return title, fallback_summary
+    except Exception as e:
+        log(f"   ❌ 통신 에러 (AI 패스 -> 원문 사용)")
+        
+    # 위에서 뭐라도 실패하면 그냥 원문 리턴
+    return fallback_result
 
 def clean_html(raw_html):
     cleanr = re.compile('<.*?>')
@@ -183,7 +127,7 @@ def save_archive(data):
 # ==========================================
 # 2. 시장 데이터 수집
 # ==========================================
-print("1. 시장 데이터 수집...")
+log("1. 시장 데이터 수집...")
 kospi_val, kospi_chg, kospi_chart = get_metric_data("^KS11", "red")
 sp500_val, sp500_chg, sp500_chart = get_metric_data("^GSPC", "red")
 usdkrw_val, usdkrw_chg, usdkrw_chart = get_metric_data("KRW=X", "green")
@@ -215,7 +159,7 @@ korea_table_html += "</tbody></table>"
 # ==========================================
 # 3. 뉴스 수집 및 AI 처리
 # ==========================================
-print("2. 뉴스 데이터 수집 및 AI 처리...")
+log("2. 뉴스 데이터 수집 및 AI 처리 (Fallback Mode)...")
 archive = load_archive()
 existing_links = set(item['link'] for item in archive)
 
@@ -260,45 +204,44 @@ for src in rss_humanoid + rss_hand:
             
             if (today - pub_dt).days > 7: continue
 
-            print(f"AI Processing: {entry.title}...")
+            log(f"Processing: {entry.title}...")
             raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
             
-            title_ko, summary_ko = process_news_with_ai(entry.title, raw_snippet)
+            # AI 시도 -> 안되면 원문 반환 (절대 안 멈춤)
+            title_final, summary_final = process_news_with_ai(entry.title, raw_snippet)
             
-            # ★★★ 2.0 모델은 무료 할당량이 적으므로 30초 대기 필수 ★★★
-            print("Cooling down (30s)...")
-            time.sleep(30) 
+            # AI를 썼든 안 썼든 2초만 대기 (빠르게 처리)
+            time.sleep(2) 
 
             news_item = {
-                "title": title_ko,
+                "title": title_final,
                 "original_title": entry.title,
                 "link": link,
                 "date": pub_dt.strftime("%Y-%m-%d %H:%M"),
                 "source": src['title'],
                 "category": src['cat'],
-                "summary": summary_ko
+                "summary": summary_final
             }
             archive.append(news_item)
             existing_links.add(link)
             new_items_count += 1
             
-            # 안전하게 10개만
             if new_items_count >= 10:
-                print("⚠️ 안전을 위해 이번 실행은 10개까지만 처리합니다.")
+                log("🛑 10개 처리 완료. 종료합니다.")
                 break
         
         if new_items_count >= 10: break
 
     except Exception as e:
-        print(f"RSS Error: {e}")
+        log(f"RSS Error: {e}")
 
 save_archive(archive)
-print(f"New items: {new_items_count}")
+log(f"New items: {new_items_count}")
 
 # ==========================================
 # 4. HTML 생성
 # ==========================================
-print("3. HTML 생성...")
+log("3. HTML 생성...")
 utc_now = datetime.datetime.now(datetime.timezone.utc)
 kst_now = utc_now + datetime.timedelta(hours=9)
 now_str = kst_now.strftime("%Y-%m-%d %H:%M:%S (KST)")
@@ -364,4 +307,4 @@ output_news = output_news.replace('{{HAND_NEWS_FULL}}', generate_card_list(lates
 with open('news.html', 'w', encoding='utf-8') as f:
     f.write(output_news)
 
-print("완료!")
+log("완료!")
