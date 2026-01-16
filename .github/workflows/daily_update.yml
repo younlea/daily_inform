@@ -18,11 +18,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          # ★★★ 수정됨: 3.10 -> 3.11 (최신 라이브러리 호환성 확보) ★★★
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
-          # ★★★ 여기 수정됨: --upgrade 옵션 추가 ★★★
           pip install --upgrade yfinance feedparser google-generativeai
 
       - name: Run update script
