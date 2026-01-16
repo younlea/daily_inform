@@ -3,6 +3,7 @@ import feedparser
 import datetime
 import urllib.parse
 import time
+from email.utils import parsedate_to_datetime
 
 # ---------------------------------------------------------
 # 1. 헬퍼 함수: 미니 차트 & 링크 생성
@@ -102,15 +103,38 @@ for code, name, naver_code in korea_tickers:
 korea_table_html += "</tbody></table>"
 
 # ---------------------------------------------------------
-# 4. 뉴스 수집 (전문 매체 추가 & 날짜 필터링)
+# 4. 뉴스 수집 (검색 로직 개선: 신규 모델 발굴)
 # ---------------------------------------------------------
-print("3. 전문 뉴스 수집 중...")
+print("3. 뉴스 수집 (카테고리별 분류)...")
 
 rss_sources = [
-    { "url": "https://news.google.com/rss/search?q=stock+market+korea&hl=ko&gl=KR&ceid=KR:ko", "title": "📈 국내 증시 속보", "limit": 3 },
-    { "url": "http://www.irobotnews.com/rss/all.xml", "title": "🤖 로봇신문 (Korea)", "limit": 3 },
-    { "url": "https://humanoidroboticstechnology.com/feed/", "title": "🦾 Humanoid Tech (Global)", "limit": 3 },
-    { "url": "https://www.therobotreport.com/feed/", "title": "🌎 The Robot Report", "limit": 3 }
+    # [그룹 1] 국내외 증시 & 경제
+    {
+        "url": "https://news.google.com/rss/search?q=stock+market+economy+korea+usa&hl=ko&gl=KR&ceid=KR:ko", 
+        "title": "📈 국내외 증시 & 경제", 
+        "limit": 4 
+    },
+    
+    # [그룹 2] 휴머노이드 로봇 (신규 모델 발굴 강화)
+    # 검색어 설명: "휴머노이드 로봇" + (스타트업 OR 공개 OR 프로토타입 OR 신규) -청소기
+    {
+        "url": "https://news.google.com/rss/search?q=humanoid+robot+(startup+OR+unveiled+OR+prototype+OR+new+model)+-vacuum+-cleaner&hl=ko&gl=KR&ceid=KR:ko", 
+        "title": "🤖 휴머노이드 & 신규 로봇", 
+        "limit": 4 
+    },
+    {
+        # 전문 매체 (기술 블로그는 신기술 소식이 가장 빠름)
+        "url": "https://humanoidroboticstechnology.com/feed/", 
+        "title": "🤖 Humanoid Tech (Global Blog)", 
+        "limit": 2
+    },
+
+    # [그룹 3] 휴머노이드 핸드 & 그리퍼
+    {
+        "url": "https://news.google.com/rss/search?q=robot+hand+gripper+dexterous+manipulation+tactile+sensor+-vacuum&hl=ko&gl=KR&ceid=KR:ko", 
+        "title": "🦾 휴머노이드 핸드 & 그리퍼 기술", 
+        "limit": 4
+    }
 ]
 
 news_content_html = ""
@@ -120,6 +144,8 @@ for source in rss_sources:
     try:
         feed = feedparser.parse(source["url"], agent="Mozilla/5.0")
         filtered_entries = []
+        
+        # 날짜 필터링 (최근 5일)
         for entry in feed.entries:
             pub_dt = None
             if hasattr(entry, 'published_parsed') and entry.published_parsed:
@@ -130,6 +156,7 @@ for source in rss_sources:
             if pub_dt and (today - pub_dt).days <= 5:
                 filtered_entries.append((entry, pub_dt))
         
+        # 최신순 정렬
         filtered_entries.sort(key=lambda x: x[1], reverse=True)
         
         if filtered_entries:
@@ -139,8 +166,15 @@ for source in rss_sources:
                 if diff_days == 0: date_txt = "Today"
                 elif diff_days == 1: date_txt = "Yesterday"
                 else: date_txt = pub_dt.strftime("%m-%d")
-                news_content_html += f"<li class='news-item'><a href='{entry.link}' target='_blank'>{entry.title}</a> <span class='news-time'>{date_txt}</span></li>"
+                
+                news_content_html += f"""
+                <li class='news-item'>
+                    <a href='{entry.link}' target='_blank'>{entry.title}</a>
+                    <span class='news-time'>{date_txt}</span>
+                </li>
+                """
             news_content_html += "</ul></div>"
+            
     except Exception as e:
         print(f"Error fetching {source['title']}: {e}")
 
@@ -148,11 +182,10 @@ if not news_content_html:
     news_content_html = "<div style='text-align:center; color:#888;'>최근 관련 뉴스가 없습니다.</div>"
 
 # ---------------------------------------------------------
-# 5. 파일 저장 (시간 수정됨)
+# 5. 파일 저장 (한국 시간 적용)
 # ---------------------------------------------------------
 print("4. HTML 생성...")
 
-# ★ 핵심 수정: UTC 시간에 9시간을 더해서 한국 시간(KST) 생성 ★
 utc_now = datetime.datetime.now(datetime.timezone.utc)
 kst_now = utc_now + datetime.timedelta(hours=9)
 now_str = kst_now.strftime("%Y-%m-%d %H:%M:%S (KST)")
