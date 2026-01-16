@@ -5,12 +5,26 @@ import urllib.parse
 import time
 import json
 import os
+import re # 정규표현식 (HTML 태그 제거용)
 from email.utils import parsedate_to_datetime
 
 # ==========================================
 # 1. 설정 및 헬퍼 함수
 # ==========================================
 ARCHIVE_FILE = 'news_archive.json'
+
+# HTML 태그 제거 및 텍스트 요약 함수
+def clean_and_summarize(html_text, limit=60):
+    if not html_text: return ""
+    # HTML 태그 제거 (<p>, <a> 등)
+    cleanr = re.compile('<.*?>')
+    text = re.sub(cleanr, '', html_text)
+    # 특수문자 제거 및 공백 정리
+    text = text.replace('&nbsp;', ' ').replace('\n', ' ').strip()
+    # 길이 제한
+    if len(text) > limit:
+        return text[:limit] + "..."
+    return text
 
 def make_sparkline_url(data_list, color):
     if not data_list or len(data_list) < 2: return ""
@@ -37,9 +51,6 @@ def get_metric_data(ticker, color):
         return val_str, change_str, chart_url
     except: return "Error", "-", ""
 
-# ==========================================
-# 2. 아카이브(JSON) 관리 함수
-# ==========================================
 def load_archive():
     if os.path.exists(ARCHIVE_FILE):
         with open(ARCHIVE_FILE, 'r', encoding='utf-8') as f:
@@ -47,20 +58,18 @@ def load_archive():
     return []
 
 def save_archive(data):
-    # 날짜 최신순 정렬
     data.sort(key=lambda x: x['date'], reverse=True)
     with open(ARCHIVE_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 # ==========================================
-# 3. 데이터 수집 및 처리
+# 2. 시장 데이터 수집
 # ==========================================
 print("1. 시장 데이터 수집...")
 kospi_val, kospi_chg, kospi_chart = get_metric_data("^KS11", "red")
 sp500_val, sp500_chg, sp500_chart = get_metric_data("^GSPC", "red")
 usdkrw_val, usdkrw_chg, usdkrw_chart = get_metric_data("KRW=X", "green")
 
-# 한국 주식 테이블 생성
 korea_tickers = [
     ('005930.KS', '삼성전자', '005930'), ('000660.KS', 'SK하이닉스', '000660'),
     ('373220.KS', 'LG에너지솔루션', '373220'), ('207940.KS', '삼성바이오로직스', '207940'),
@@ -86,13 +95,12 @@ for code, name, naver_code in korea_tickers:
 korea_table_html += "</tbody></table>"
 
 # ==========================================
-# 4. 뉴스 수집 및 아카이빙
+# 3. 뉴스 수집 및 아카이빙
 # ==========================================
-print("2. 뉴스 데이터 수집 및 아카이빙...")
+print("2. 뉴스 데이터 수집...")
 archive = load_archive()
 existing_links = set(item['link'] for item in archive)
 
-# 뉴스 소스 정의 (Economy는 아카이빙 안하고 메인에만 표시, Humanoid/Hand는 아카이빙)
 rss_economy = [{"url": "https://news.google.com/rss/search?q=stock+market+economy+korea+usa&hl=ko&gl=KR&ceid=KR:ko", "title": "📈 국내외 증시", "cat": "economy"}]
 rss_humanoid = [
     {"url": "https://news.google.com/rss/search?q=humanoid+robot+(startup+OR+unveiled+OR+prototype+OR+new+model)+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "humanoid"},
@@ -102,7 +110,6 @@ rss_hand = [
     {"url": "https://news.google.com/rss/search?q=robot+hand+gripper+dexterous+manipulation+tactile+sensor+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "hand"}
 ]
 
-# 경제 뉴스 가져오기 (저장 안 함, 최신만 사용)
 economy_news_latest = []
 for src in rss_economy:
     try:
@@ -111,7 +118,6 @@ for src in rss_economy:
             economy_news_latest.append(entry)
     except: pass
 
-# 로봇 뉴스 가져오기 (저장함)
 today = datetime.datetime.now()
 new_items_count = 0
 
@@ -120,30 +126,27 @@ for src in rss_humanoid + rss_hand:
         feed = feedparser.parse(src["url"], agent="Mozilla/5.0")
         for entry in feed.entries:
             link = entry.link
+            if link in existing_links: continue
             
-            # 이미 저장된 뉴스면 건너뜀
-            if link in existing_links:
-                continue
-            
-            # 날짜 파싱
-            pub_dt = today # 기본값
+            pub_dt = today
             if hasattr(entry, 'published_parsed') and entry.published_parsed:
                 pub_dt = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))
             elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
                 pub_dt = datetime.datetime.fromtimestamp(time.mktime(entry.updated_parsed))
             
-            # 너무 오래된 뉴스(7일 이상)는 처음 가져올 때 무시 (DB 오염 방지)
-            if (today - pub_dt).days > 7:
-                continue
+            if (today - pub_dt).days > 7: continue
 
-            # 아카이브에 추가할 데이터 구조
+            # ★ 요약 추출 로직 (description 또는 summary 필드 사용) ★
+            raw_summary = entry.get('description', entry.get('summary', ''))
+            clean_summary = clean_and_summarize(raw_summary)
+
             news_item = {
                 "title": entry.title,
                 "link": link,
-                "date": pub_dt.strftime("%Y-%m-%d %H:%M"), # 정렬을 위한 문자열
+                "date": pub_dt.strftime("%Y-%m-%d %H:%M"),
                 "source": src['title'],
                 "category": src['cat'],
-                "timestamp": pub_dt.timestamp()
+                "summary": clean_summary # 요약 저장
             }
             archive.append(news_item)
             existing_links.add(link)
@@ -151,29 +154,26 @@ for src in rss_humanoid + rss_hand:
     except Exception as e:
         print(f"RSS Error: {e}")
 
-# 아카이브 저장
 save_archive(archive)
-print(f"새로운 뉴스 {new_items_count}개 추가됨. 총 {len(archive)}개 아카이빙 중.")
+print(f"New items: {new_items_count}, Total archive: {len(archive)}")
 
 # ==========================================
-# 5. HTML 생성
+# 4. HTML 생성
 # ==========================================
-print("3. HTML 페이지 생성...")
+print("3. HTML 생성...")
 utc_now = datetime.datetime.now(datetime.timezone.utc)
 kst_now = utc_now + datetime.timedelta(hours=9)
 now_str = kst_now.strftime("%Y-%m-%d %H:%M:%S (KST)")
 
-# [메인 페이지용 HTML 생성] - 최근 4개씩만
+# 메인 페이지 (index.html)
 def generate_simple_list(items):
     html = ""
     for item in items[:4]:
-        # item이 feedparser 객체일 수도 있고, dict일 수도 있음
         title = item.get('title') if isinstance(item, dict) else item.title
         link = item.get('link') if isinstance(item, dict) else item.link
         html += f"<li class='news-item'><a href='{link}' target='_blank'>{title}</a></li>"
     return html
 
-# 아카이브에서 카테고리별로 분류 (최신순 정렬되어 있음)
 latest_humanoid = [x for x in archive if x['category'] == 'humanoid']
 latest_hand = [x for x in archive if x['category'] == 'hand']
 
@@ -197,13 +197,17 @@ output_main = output_main.replace('{{NEWS_CONTENT}}', main_news_html)
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(output_main)
 
-# [뉴스 페이지용 HTML 생성] - 전체 리스트 (카드 형태)
+# 뉴스 페이지 (news.html) - 요약 포함
 def generate_card_list(items):
     html = ""
     for item in items:
+        # 요약글이 없으면 표시 안 함
+        summary_html = f"<div class='news-summary'>{item.get('summary', '')}</div>" if item.get('summary') else ""
+        
         html += f"""
         <div class='news-card'>
             <a href='{item['link']}' target='_blank' class='news-title'>{item['title']}</a>
+            {summary_html}
             <div class='news-meta'>
                 <span class='source-tag'>{item['source']}</span>
                 <span class='date-tag'>{item['date'][:10]}</span>
@@ -222,4 +226,4 @@ output_news = output_news.replace('{{HAND_NEWS_FULL}}', generate_card_list(lates
 with open('news.html', 'w', encoding='utf-8') as f:
     f.write(output_news)
 
-print("완료: index.html 및 news.html 업데이트됨.")
+print("완료!")
