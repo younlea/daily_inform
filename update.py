@@ -6,9 +6,7 @@ import time
 import json
 import os
 import re
-# 최신 SDK 사용
-from google import genai
-from google.genai import types
+from google import genai # 최신 SDK
 
 # ==========================================
 # 1. 설정 및 헬퍼 함수
@@ -16,7 +14,7 @@ from google.genai import types
 ARCHIVE_FILE = 'news_archive.json'
 MAX_ITEMS = 2000
 
-# [디버깅] API 키 확인 및 클라이언트 초기화
+# [디버깅] API 키 확인
 GEMINI_KEY = os.environ.get('GEMINI_API_KEY')
 client = None
 
@@ -35,6 +33,7 @@ def process_news_with_ai(title, snippet):
     if not client:
         return title, fallback_summary
     
+    # 재시도 로직
     max_retries = 3
     for attempt in range(max_retries):
         try:
@@ -52,10 +51,9 @@ def process_news_with_ai(title, snippet):
             4. Do NOT output anything else. Just the formatted string.
             """
 
-            # ★★★ 수정됨: 모델명을 'gemini-2.0-flash-exp'로 변경 (가장 확실함) ★★★
-            # 만약 2.0이 안 되면 1.5-flash-8b (초경량) 사용
+            # ★★★ 수정됨: 가장 안정적인 1.5-flash 모델 사용 ★★★
             response = client.models.generate_content(
-                model='gemini-2.0-flash-exp', 
+                model='gemini-1.5-flash', 
                 contents=prompt
             )
             
@@ -76,23 +74,6 @@ def process_news_with_ai(title, snippet):
                 print(f"⚠️ Quota Limit! Waiting 60s... (Attempt {attempt+1})")
                 time.sleep(60)
                 continue
-            # 404: 모델 못 찾음 -> 다른 모델로 재시도
-            elif "404" in error_msg:
-                print(f"⚠️ Model 2.0 not found. Retrying with gemini-1.5-flash-8b...")
-                try:
-                    response = client.models.generate_content(
-                        model='gemini-1.5-flash-8b', 
-                        contents=prompt
-                    )
-                    result_text = response.text.strip()
-                    if "|||" in result_text:
-                        parts = result_text.split("|||")
-                        return parts[0].strip(), parts[1].strip()
-                    else:
-                        return title, result_text
-                except Exception as e2:
-                    print(f"❌ Fallback failed: {e2}")
-                    return title, fallback_summary
             else:
                 print(f"❌ AI Error: {error_msg}")
                 return title, fallback_summary
@@ -176,7 +157,7 @@ korea_table_html += "</tbody></table>"
 # ==========================================
 # 3. 뉴스 수집 및 AI 처리
 # ==========================================
-print("2. 뉴스 데이터 수집 및 AI 처리 (Google GenAI SDK)...")
+print("2. 뉴스 데이터 수집 및 AI 처리...")
 archive = load_archive()
 existing_links = set(item['link'] for item in archive)
 
@@ -187,13 +168,13 @@ rss_economy = [{"url": "https://news.google.com/rss/search?q=stock+market+econom
 rss_humanoid = [
     # 1. Google 검색 (기본)
     {"url": "https://news.google.com/rss/search?q=humanoid+robot+(startup+OR+unveiled+OR+prototype+OR+new+model)+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "humanoid"},
-    # 2. TechXplore (요청하신 사이트)
+    # 2. TechXplore
     {"url": "https://techxplore.com/rss-feed/robotics-news/", "title": "Tech Xplore", "cat": "humanoid"},
-    # 3. IEEE Spectrum (요청하신 사이트)
+    # 3. IEEE Spectrum
     {"url": "https://spectrum.ieee.org/feeds/topic/robotics.rss", "title": "IEEE Spectrum", "cat": "humanoid"},
-    # 4. The Robot Report (요청하신 사이트)
+    # 4. The Robot Report
     {"url": "https://www.therobotreport.com/feed/", "title": "The Robot Report", "cat": "humanoid"},
-    # 5. 로봇신문 (요청하신 사이트)
+    # 5. 로봇신문
     {"url": "http://www.irobotnews.com/rss/all.xml", "title": "로봇신문", "cat": "humanoid"},
     # 6. Humanoid Tech Blog
     {"url": "https://humanoidroboticstechnology.com/feed/", "title": "Humanoid Tech Blog", "cat": "humanoid"}
@@ -235,8 +216,9 @@ for src in rss_humanoid + rss_hand:
             
             title_ko, summary_ko = process_news_with_ai(entry.title, raw_snippet)
             
-            print("Cooling down (15s)...")
-            time.sleep(15) # 안전 대기 시간
+            # ★★★ 10초 휴식 (1분 6회 제한) ★★★
+            print("Cooling down (10s)...")
+            time.sleep(10) 
 
             news_item = {
                 "title": title_ko,
@@ -251,11 +233,12 @@ for src in rss_humanoid + rss_hand:
             existing_links.add(link)
             new_items_count += 1
             
-            if new_items_count >= 15:
-                print("⚠️ 안전을 위해 이번 실행은 15개까지만 처리합니다.")
+            # ★★★ 한번에 너무 많이 하면 차단되니 10개만 하고 멈춤 ★★★
+            if new_items_count >= 10:
+                print("⚠️ 안정적인 업데이트를 위해 10개까지만 처리하고 종료합니다.")
                 break
         
-        if new_items_count >= 15: break
+        if new_items_count >= 10: break
 
     except Exception as e:
         print(f"RSS Error: {e}")
