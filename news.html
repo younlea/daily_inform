@@ -182,7 +182,7 @@
         </div>
 
         <div class="last-updated" style="text-align: right; color: #888; font-size: 0.9rem; margin-bottom: 20px;">
-            Updated: 2026-01-16 18:17:12 (KST)
+            Updated: 2026-01-16 18:18:25 (KST)
         </div>
 
         <div class="section-title">
@@ -233,30 +233,66 @@ UniX AI가 CES 2026에서 공식 데뷔한 게시물은 Humanoid Robotics Techno
     </div>
 
     <script>
-        document.getElementById('count-economy').innerText = document.getElementById('list-economy').children.length;
         document.getElementById('count-humanoid').innerText = document.getElementById('list-humanoid').children.length;
         document.getElementById('count-hand').innerText = document.getElementById('list-hand').children.length;
 
         const searchInput = document.getElementById('searchInput');
+        const showImportantOnly = document.getElementById('showImportantOnly');
         const cards = document.querySelectorAll('.news-card');
 
-        searchInput.addEventListener('keyup', function (e) {
-            const term = e.target.value.toLowerCase();
+        // Restore stars
+        const savedStars = JSON.parse(localStorage.getItem('dailyInformStars') || '[]');
+        cards.forEach(card => {
+            const link = card.getAttribute('data-link');
+            if (savedStars.includes(link)) {
+                card.querySelector('.star-btn').innerText = '★'; // Filled star
+                card.querySelector('.star-btn').style.color = '#fcc419';
+                card.classList.add('important');
+            }
+        });
+
+        // Toggle Star Function (Global)
+        window.toggleStar = function (btn, link) {
+            let stars = JSON.parse(localStorage.getItem('dailyInformStars') || '[]');
+            if (stars.includes(link)) {
+                stars = stars.filter(s => s !== link);
+                btn.innerText = '☆';
+                btn.style.color = '#ccc';
+                btn.closest('.news-card').classList.remove('important');
+            } else {
+                stars.push(link);
+                btn.innerText = '★';
+                btn.style.color = '#fcc419';
+                btn.closest('.news-card').classList.add('important');
+            }
+            localStorage.setItem('dailyInformStars', JSON.stringify(stars));
+            filterNews(); // Refresh view
+        };
+
+        function filterNews() {
+            const term = searchInput.value.toLowerCase();
+            const onlyImportant = showImportantOnly.checked;
+
             cards.forEach(card => {
                 const title = card.querySelector('.news-title').innerText.toLowerCase();
                 const summary = card.querySelector('.news-summary').innerText.toLowerCase();
-
-                // ★ 여기가 핵심: 숨겨진 영어 제목도 가져옵니다 ★
                 const hiddenEn = card.querySelector('.hidden-keywords') ? card.querySelector('.hidden-keywords').innerText.toLowerCase() : "";
+                const isImportant = card.classList.contains('important');
 
-                // 한국어 제목, 한국어 요약, 영어 원문 셋 중 하나라도 맞으면 보여줌
-                if (title.includes(term) || summary.includes(term) || hiddenEn.includes(term)) {
+                // Logic: Must match text search AND (if checked, must be important)
+                const matchText = title.includes(term) || summary.includes(term) || hiddenEn.includes(term);
+                const matchImportant = !onlyImportant || isImportant;
+
+                if (matchText && matchImportant) {
                     card.style.display = 'block';
                 } else {
                     card.style.display = 'none';
                 }
             });
-        });
+        }
+
+        searchInput.addEventListener('keyup', filterNews);
+        showImportantOnly.addEventListener('change', filterNews);
     </script>
 </body>
 
