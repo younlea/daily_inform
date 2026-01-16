@@ -22,18 +22,49 @@ if GEMINI_KEY:
 else:
     print("❌ DEBUG: GEMINI_API_KEY 없음!")
 
+# ★★★ 핵심: 작동 가능한 모델을 스스로 찾는 함수 ★★★
+def get_best_model():
+    try:
+        # 사용 가능한 모델 리스트를 요청
+        models = list(genai.list_models())
+        
+        # 1순위: gemini-1.5-flash (빠르고 저렴)
+        for m in models:
+            if 'gemini-1.5-flash' in m.name and 'generateContent' in m.supported_generation_methods:
+                print(f"✅ Selected Model: {m.name}")
+                return genai.GenerativeModel(m.name)
+        
+        # 2순위: gemini-pro (안정적)
+        for m in models:
+            if 'gemini-pro' in m.name and 'generateContent' in m.supported_generation_methods:
+                print(f"✅ Selected Model: {m.name}")
+                return genai.GenerativeModel(m.name)
+        
+        # 3순위: 아무거나 gemini 들어가는 것
+        for m in models:
+            if 'gemini' in m.name and 'generateContent' in m.supported_generation_methods:
+                print(f"✅ Selected Model: {m.name}")
+                return genai.GenerativeModel(m.name)
+                
+        print("❌ 사용 가능한 Gemini 모델을 찾을 수 없습니다.")
+        return None
+    except Exception as e:
+        print(f"❌ Model List Error: {e}")
+        return None
+
+# 전역 변수로 모델 한 번만 로드
+MODEL_INSTANCE = None
+if GEMINI_KEY:
+    MODEL_INSTANCE = get_best_model()
+
 def process_news_with_ai(title, snippet):
-    # 키가 없거나 에러 시 사용할 기본 텍스트
     fallback_summary = snippet[:300] + ("..." if len(snippet) > 300 else "")
     
-    if not GEMINI_KEY:
-        print("⚠️ DEBUG: 키 없음. AI 패스.")
+    if not MODEL_INSTANCE:
+        print("⚠️ DEBUG: AI 모델이 없어서 요약을 건너뜁니다.")
         return title, fallback_summary
     
     try:
-        # ★★★ 수정됨: 호환성이 가장 좋은 'gemini-pro' 모델 사용 ★★★
-        model = genai.GenerativeModel('gemini-pro')
-        
         prompt = f"""
         당신은 IT 및 로봇 기술 전문 한국 기자입니다.
         아래 영문 기사의 'Title'과 'Snippet'을 보고 JSON 형식으로 답하세요.
@@ -50,13 +81,12 @@ def process_news_with_ai(title, snippet):
             "summary_ko": "..."
         }}
         """
-        response = model.generate_content(prompt, generation_config={"response_mime_type": "application/json"})
+        response = MODEL_INSTANCE.generate_content(prompt, generation_config={"response_mime_type": "application/json"})
         data = json.loads(response.text)
         return data.get("title_ko", title), data.get("summary_ko", fallback_summary)
         
     except Exception as e:
-        print(f"❌ AI Error: {e}")
-        # 혹시 JSON 파싱 에러나면 한번 더 시도하지 않고 바로 원본 리턴 (안전장치)
+        print(f"❌ AI Generate Error: {e}")
         return title, fallback_summary
 
 def clean_html(raw_html):
@@ -178,7 +208,7 @@ for src in rss_humanoid + rss_hand:
             print(f"AI Processing: {entry.title}...")
             raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
             title_ko, summary_ko = process_news_with_ai(entry.title, raw_snippet)
-            time.sleep(2) # gemini-pro는 조금 더 빠를 수 있음 (2초로 단축)
+            time.sleep(3) # 자동탐지 시 딜레이 약간 확보
 
             news_item = {
                 "title": title_ko,
