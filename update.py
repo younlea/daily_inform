@@ -6,7 +6,7 @@ import time
 import json
 import os
 import re
-# ★★★ AI 대신 번역기 사용 (키 필요 없음, 무제한) ★★★
+# ★★★ 번역기 라이브러리 (키 필요 없음, 무제한) ★★★
 from deep_translator import GoogleTranslator
 
 # ==========================================
@@ -15,15 +15,16 @@ from deep_translator import GoogleTranslator
 ARCHIVE_FILE = 'news_archive.json'
 MAX_ITEMS = 2000
 
-# ★★★ 텍스트 번역 함수 (무조건 성공함) ★★★
+# ★★★ 텍스트 번역 함수 ★★★
 def translate_text(text):
+    if not text: return ""
     try:
-        # 영어를 한국어로 번역
+        # 영어를 한국어로 번역 (고유명사는 구글 번역기 로직을 따름)
         translated = GoogleTranslator(source='auto', target='ko').translate(text)
         return translated
     except Exception as e:
         print(f"❌ Translation Error: {e}")
-        return text # 에러나면 원문이라도 리턴
+        return text # 에러나면 원문 그대로 리턴
 
 def clean_html(raw_html):
     cleanr = re.compile('<.*?>')
@@ -106,8 +107,10 @@ print("2. 뉴스 데이터 수집 및 번역 (Deep Translator)...")
 archive = load_archive()
 existing_links = set(item['link'] for item in archive)
 
+# [경제 뉴스] - 아침 브리핑용
 rss_economy = [{"url": "https://news.google.com/rss/search?q=stock+market+economy+korea+usa&hl=ko&gl=KR&ceid=KR:ko", "title": "📈 국내외 증시", "cat": "economy"}]
 
+# [휴머노이드/로봇 일반 뉴스] - 요청하신 영문 사이트 완벽 포함
 rss_humanoid = [
     {"url": "https://news.google.com/rss/search?q=humanoid+robot+(startup+OR+unveiled+OR+prototype+OR+new+model)+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "humanoid"},
     {"url": "https://techxplore.com/rss-feed/robotics-news/", "title": "Tech Xplore", "cat": "humanoid"},
@@ -117,21 +120,28 @@ rss_humanoid = [
     {"url": "https://humanoidroboticstechnology.com/feed/", "title": "Humanoid Tech Blog", "cat": "humanoid"}
 ]
 
+# [로봇 핸드/그리퍼 뉴스]
 rss_hand = [
     {"url": "https://news.google.com/rss/search?q=robot+hand+gripper+dexterous+manipulation+tactile+sensor+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "hand"}
 ]
 
+# ★★★ [수정됨] 경제 뉴스도 번역 처리 ★★★
 economy_news_latest = []
+print("   >> Processing Economy News...")
 for src in rss_economy:
     try:
         feed = feedparser.parse(src["url"], agent="Mozilla/5.0")
         for entry in feed.entries[:4]:
+            # 제목 번역!
+            entry.title = translate_text(entry.title)
             economy_news_latest.append(entry)
+            time.sleep(0.5) # 짧은 대기
     except: pass
 
 today = datetime.datetime.now()
 new_items_count = 0
 
+print("   >> Processing Robot News...")
 for src in rss_humanoid + rss_hand:
     try:
         feed = feedparser.parse(src["url"], agent="Mozilla/5.0")
@@ -150,11 +160,11 @@ for src in rss_humanoid + rss_hand:
             print(f"Processing: {entry.title}...")
             raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
             
-            # ★★★ 여기서 바로 번역 (AI 필요 없음) ★★★
+            # ★★★ 제목과 요약문 번역 ★★★
             title_ko = translate_text(entry.title)
-            summary_ko = translate_text(raw_snippet[:500]) # 너무 길면 자르고 번역
+            # 내용은 너무 길면 500자만 잘라서 번역
+            summary_ko = translate_text(raw_snippet[:500]) 
             
-            # 번역은 빨라서 1초만 쉬어도 충분
             time.sleep(1) 
 
             news_item = {
@@ -170,7 +180,7 @@ for src in rss_humanoid + rss_hand:
             existing_links.add(link)
             new_items_count += 1
             
-            # 번역은 제한이 없어서 20개까지 넉넉하게
+            # 20개 제한
             if new_items_count >= 20:
                 print("🛑 20개 처리 완료. 종료합니다.")
                 break
@@ -195,6 +205,7 @@ now_str = kst_now.strftime("%Y-%m-%d %H:%M:%S (KST)")
 def generate_simple_list(items):
     html = ""
     for item in items[:4]:
+        # 여기서는 이미 번역된 title을 사용하거나, economy_news_latest의 경우 위에서 번역해둔 title 사용
         title = item.get('title') if isinstance(item, dict) else item.title
         link = item.get('link') if isinstance(item, dict) else item.link
         html += f"<li class='news-item'><a href='{link}' target='_blank'>{title}</a></li>"
@@ -204,6 +215,7 @@ latest_humanoid = [x for x in archive if x['category'] == 'humanoid']
 latest_hand = [x for x in archive if x['category'] == 'hand']
 
 main_news_html = ""
+# 경제 뉴스도 이제 한글로 나옵니다
 if economy_news_latest:
     main_news_html += f"<div class='news-category'><h4><span class='badge'>📈 증시/경제</span></h4><ul class='news-list'>{generate_simple_list(economy_news_latest)}</ul></div>"
 if latest_humanoid:
