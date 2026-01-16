@@ -258,7 +258,8 @@ def generate_simple_list(items):
         summary = item.get('summary') if isinstance(item, dict) else getattr(item, 'summary', '')
         
         summary_html = f"<div style='font-size:0.9rem; color:#666; margin-top:4px;'>{summary}</div>" if summary else ""
-        html += f"<li class='news-item'><a href='{link}' target='_blank'>{title}</a>{summary_html}</li>"
+        meta_html = f"<div style='font-size:0.8rem; color:#999; margin-top:2px;'>{item.get('source', '')} | {item.get('date', '')[:10]}</div>"
+        html += f"<li class='news-item'><a href='{link}' target='_blank'>{title}</a>{summary_html}{meta_html}</li>"
     return html
 
 latest_humanoid = [x for x in archive if x['category'] == 'humanoid']
@@ -288,12 +289,17 @@ def generate_card_list(items):
     for item in items:
         summary_html = f"<div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 {item.get('summary', '')}</div>" if item.get('summary') else ""
         original_title = item.get('original_title', '').replace("'", "&#39;")
-        html += f"""<div class='news-card'><a href='{item['link']}' target='_blank' class='news-title'>{item['title']}</a><div class='hidden-keywords' style='display:none;'>{original_title}</div>{summary_html}<div class='news-meta' style='margin-top:10px;'><span class='source-tag'>{item['source']}</span><span class='date-tag'>{item['date'][:10]}</span></div></div>"""
+        # Star icon added
+        star_icon = f"<span class='star-btn' onclick='toggleStar(this, \"{item['link']}\")' style='cursor:pointer; margin-right:8px; font-size:1.2rem; color:#ccc;'>☆</span>"
+        
+        html += f"""<div class='news-card' data-link='{item['link']}'><div style='display:flex; align-items:flex-start;'>{star_icon}<a href='{item['link']}' target='_blank' class='news-title' style='flex:1;'>{item['title']}</a></div><div class='hidden-keywords' style='display:none;'>{original_title}</div>{summary_html}<div class='news-meta' style='margin-top:10px;'><span class='source-tag'>{item['source']}</span><span class='date-tag'>{item['date'][:10]}</span></div></div>"""
     return html
 
 with open('news_template.html', 'r', encoding='utf-8') as f:
     news_template = f.read()
+
 output_news = news_template.replace('{{LAST_UPDATED}}', now_str)
+# Economy section removed from news.html
 output_news = output_news.replace('{{HUMANOID_NEWS_FULL}}', generate_card_list(latest_humanoid))
 output_news = output_news.replace('{{HAND_NEWS_FULL}}', generate_card_list(latest_hand))
 with open('news.html', 'w', encoding='utf-8') as f:
