@@ -6,7 +6,8 @@ import time
 import json
 import os
 import re
-from google import genai # 최신 SDK
+from google import genai
+from google.genai import types # 옵션 설정을 위해 types 모듈 필요
 
 # ==========================================
 # 1. 설정 및 헬퍼 함수
@@ -21,7 +22,11 @@ client = None
 if GEMINI_KEY:
     print(f"✅ DEBUG: GEMINI_API_KEY 감지됨")
     try:
-        client = genai.Client(api_key=GEMINI_KEY)
+        # ★★★ 핵심 수정: API 버전을 'v1'으로 강제 고정 (404 에러 해결) ★★★
+        client = genai.Client(
+            api_key=GEMINI_KEY,
+            http_options={'api_version': 'v1'} 
+        )
     except Exception as e:
         print(f"❌ Client Init Error: {e}")
 else:
@@ -33,7 +38,6 @@ def process_news_with_ai(title, snippet):
     if not client:
         return title, fallback_summary
     
-    # 재시도 로직
     max_retries = 3
     for attempt in range(max_retries):
         try:
@@ -51,7 +55,7 @@ def process_news_with_ai(title, snippet):
             4. Do NOT output anything else. Just the formatted string.
             """
 
-            # ★★★ 수정됨: 가장 안정적인 1.5-flash 모델 사용 ★★★
+            # 1.5 Flash 모델 사용 (v1 API에서는 정상 작동함)
             response = client.models.generate_content(
                 model='gemini-1.5-flash', 
                 contents=prompt
@@ -216,9 +220,9 @@ for src in rss_humanoid + rss_hand:
             
             title_ko, summary_ko = process_news_with_ai(entry.title, raw_snippet)
             
-            # ★★★ 10초 휴식 (1분 6회 제한) ★★★
-            print("Cooling down (10s)...")
-            time.sleep(10) 
+            # ★★★ 15초 휴식 (1분 6회 제한) ★★★
+            print("Cooling down (15s)...")
+            time.sleep(15) 
 
             news_item = {
                 "title": title_ko,
