@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Tech News Deep Dive</title>
+    <style>
+        body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif; margin: 0; padding: 20px; background-color: #f8f9fa; color: #333; }
+        .container { max-width: 800px; margin: 0 auto; }
+        
+        /* 헤더 & 네비게이션 */
+        .header { margin-bottom: 40px; border-bottom: 2px solid #e9ecef; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .header h1 { margin: 0; font-size: 1.8rem; color: #2c3e50; }
+        .home-btn { text-decoration: none; background: #2c3e50; color: #fff; padding: 8px 15px; border-radius: 8px; font-weight: bold; font-size: 0.9rem; transition: 0.2s; }
+        .home-btn:hover { background: #495057; }
+
+        /* 뉴스 섹션 */
+        .section-title { font-size: 1.4rem; font-weight: 700; color: #1c7ed6; margin: 40px 0 20px 0; border-left: 5px solid #1c7ed6; padding-left: 15px; }
+        .section-title.hand { color: #e67700; border-left-color: #e67700; }
+
+        .news-card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 15px; border: 1px solid #f1f3f5; transition: transform 0.2s; }
+        .news-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .news-title { display: block; font-size: 1.1rem; font-weight: 600; color: #333; text-decoration: none; margin-bottom: 8px; line-height: 1.4; }
+        .news-title:hover { color: #228be6; }
+        .news-meta { font-size: 0.85rem; color: #868e96; display: flex; gap: 10px; }
+        .source-badge { background: #f1f3f5; padding: 2px 6px; border-radius: 4px; color: #495057; font-weight: 500; }
+
+        footer { text-align: center; margin-top: 60px; color: #adb5bd; font-size: 0.85rem; padding-bottom: 30px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 Robot Tech News</h1>
+            <a href="index.html" class="home-btn">← 대시보드로 이동</a>
+        </div>
+
+        <div class="last-updated" style="text-align: right; color: #888; font-size: 0.9rem;">
+            Updated: {{LAST_UPDATED}}
+        </div>
+
+        <div class="section-title">🤖 휴머노이드 & 신규 로봇 (Latest Updates)</div>
+        <div class="news-list">
+            {{HUMANOID_NEWS_FULL}}
+        </div>
+
+        <div class="section-title hand">🦾 로봇 핸드 & 그리퍼 (Deep Tech)</div>
+        <div class="news-list">
+            {{HAND_NEWS_FULL}}
+        </div>
+
+        <footer>
+            Monitoring Robot Trends Automatically
+        </footer>
+    </div>
+</body>
+</html>
