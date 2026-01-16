@@ -190,11 +190,20 @@ for src in rss_economy:
             
             t_ko, s_ko = process_news_with_local_llm(entry.title, raw_snippet)
             
-            # Create a clean dictionary instead of modifying the feedparser object
+            # Date parsing
+            pub_dt = datetime.datetime.now()
+            if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                pub_dt = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))
+            elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+                pub_dt = datetime.datetime.fromtimestamp(time.mktime(entry.updated_parsed))
+
+            # Create a clean dictionary
             news_item = {
                 "title": t_ko,
                 "link": entry.link,
-                "summary": s_ko
+                "summary": s_ko,
+                "source": src.get('title', 'Economy News'),
+                "date": pub_dt.strftime("%Y-%m-%d %H:%M")
             }
             economy_news_latest.append(news_item)
     except Exception as e:
