@@ -6,7 +6,7 @@ import time
 import json
 import os
 import re
-import requests # 라이브러리 없이 직접 통신 (가장 확실함)
+import requests
 
 # ==========================================
 # 1. 설정 및 헬퍼 함수
@@ -15,30 +15,27 @@ ARCHIVE_FILE = 'news_archive.json'
 MAX_ITEMS = 2000
 GEMINI_KEY = os.environ.get('GEMINI_API_KEY')
 
-# ★★★ 후보 모델 리스트 (우선순위 순서) ★★★
-# 이 중에서 작동하는 것을 자동으로 찾아냅니다.
+# 모델 후보군 (2.0이 반응이 있었으므로 최상단 배치)
 CANDIDATE_MODELS = [
     "gemini-2.0-flash-exp",
     "gemini-1.5-flash",
     "gemini-1.5-flash-latest",
-    "gemini-pro",           # 구관이 명관 (가장 안정적)
-    "gemini-1.0-pro",
-    "gemini-1.5-pro-latest"
+    "gemini-1.5-flash-001",
+    "gemini-pro"
 ]
 
-# 전역 변수로 '확정된 모델' 저장
 ACTIVE_MODEL = None
 
 if GEMINI_KEY:
-    print(f"✅ DEBUG: API Key Loaded ({len(GEMINI_KEY)} chars)")
+    print(f"✅ DEBUG: API Key Loaded")
 else:
     print("❌ DEBUG: API Key Missing!")
 
-# ★★★ [핵심] 시작 전 작동 가능한 모델 찾기 (Self-Diagnosis) ★★★
+# ★★★ 수정됨: 429(과부하)도 '성공'으로 간주하고 선택함 ★★★
 def find_working_model():
-    print("\n🔍 AI 모델 연결 테스트 중...")
+    print("\n🔍 AI 모델 생존 확인 중...")
     
-    payload = {"contents": [{"parts": [{"text": "Hello"}]}]}
+    payload = {"contents": [{"parts": [{"text": "hi"}]}]}
     
     for model in CANDIDATE_MODELS:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
@@ -53,10 +50,13 @@ def find_working_model():
             )
             
             if response.status_code == 200:
-                print("✅ 성공! (이 모델을 사용합니다)")
+                print("✅ 정상 (200 OK)")
                 return model
             elif response.status_code == 429:
-                print("⚠️ 과부하 (Skip)")
+                print("✅ 생존 확인 (429 과부하 - 대기 후 사용 가능)")
+                print("      -> 이 모델을 선택하고 잠시 대기합니다.")
+                time.sleep(5) # 숨 고르기
+                return model
             else:
                 print(f"❌ 실패 ({response.status_code})")
                 
@@ -65,19 +65,16 @@ def find_working_model():
             
     return None
 
-# 프로그램 시작 시 딱 한 번 실행
 if GEMINI_KEY:
     ACTIVE_MODEL = find_working_model()
-    if not ACTIVE_MODEL:
-        print("\n🚨 [비상] 사용 가능한 AI 모델을 하나도 찾지 못했습니다.")
-        print("   -> 영어 원문으로 저장 모드로 전환합니다.\n")
+    if ACTIVE_MODEL:
+        print(f"\n🎉 [확정] 오늘의 모델: {ACTIVE_MODEL}")
     else:
-        print(f"\n🎉 [확정] 오늘의 AI 모델: {ACTIVE_MODEL}\n")
+        print("\n🚨 [실패] 사용 가능한 모델이 없습니다. (영어 원문 저장)")
 
 def process_news_with_ai(title, snippet):
     fallback_summary = snippet[:300] + ("..." if len(snippet) > 300 else "")
     
-    # 키가 없거나, 작동하는 모델을 못 찾았으면 원문 반환
     if not GEMINI_KEY or not ACTIVE_MODEL:
         return title, fallback_summary
 
@@ -98,7 +95,7 @@ def process_news_with_ai(title, snippet):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{ACTIVE_MODEL}:generateContent"
     payload = { "contents": [{ "parts": [{"text": prompt}] }] }
     
-    # 재시도 로직 (Quota Limit 대비)
+    # ★★★ 독한 재시도 로직 (429 뜨면 최대 3번, 60초씩 대기) ★★★
     for attempt in range(3):
         try:
             response = requests.post(
@@ -122,16 +119,21 @@ def process_news_with_ai(title, snippet):
                     return title, fallback_summary
             
             elif response.status_code == 429:
-                print(f"⚠️ Quota Limit. 30초 대기 후 재시도... ({attempt+1}/3)")
-                time.sleep(30)
-                continue
+                print(f"⚠️ Quota Limit! 60초 대기 중... ({attempt+1}/3)")
+                time.sleep(60) # 1분 강제 휴식
+                continue # 다시 시도
             
             else:
                 print(f"❌ Error {response.status_code}")
-                return title, fallback_summary
+                # 404면 답이 없으니 포기
+                if response.status_code == 404:
+                    return title, fallback_summary
+                time.sleep(5)
+                continue
 
-        except Exception:
-            time.sleep(2)
+        except Exception as e:
+            print(f"❌ Net Error: {e}")
+            time.sleep(5)
             continue
             
     return title, fallback_summary
@@ -213,7 +215,7 @@ korea_table_html += "</tbody></table>"
 # ==========================================
 # 3. 뉴스 수집 및 AI 처리
 # ==========================================
-print("2. 뉴스 데이터 수집 및 AI 처리 (Auto-Pilot)...")
+print("2. 뉴스 데이터 수집 및 AI 처리...")
 archive = load_archive()
 existing_links = set(item['link'] for item in archive)
 
@@ -263,9 +265,9 @@ for src in rss_humanoid + rss_hand:
             
             title_ko, summary_ko = process_news_with_ai(entry.title, raw_snippet)
             
-            # 안전하게 10초 대기
-            print("Cooling down (10s)...")
-            time.sleep(10) 
+            # ★★★ 2.0 모델은 무료 할당량이 적으므로 30초 대기 필수 ★★★
+            print("Cooling down (30s)...")
+            time.sleep(30) 
 
             news_item = {
                 "title": title_ko,
@@ -280,6 +282,7 @@ for src in rss_humanoid + rss_hand:
             existing_links.add(link)
             new_items_count += 1
             
+            # 안전하게 10개만
             if new_items_count >= 10:
                 print("⚠️ 안전을 위해 이번 실행은 10개까지만 처리합니다.")
                 break
