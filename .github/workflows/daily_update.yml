@@ -18,12 +18,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          # ★★★ 수정됨: 3.10 -> 3.11 (최신 라이브러리 호환성 확보) ★★★
-          python-version: '3.11'
+          python-version: '3.11' 
 
       - name: Install dependencies
         run: |
-          pip install --upgrade yfinance feedparser google-generativeai
+          # ★★★ 수정됨: 구형 라이브러리 삭제 -> 신형(google-genai) 설치 ★★★
+          pip install --upgrade yfinance feedparser google-genai
 
       - name: Run update script
         env:
@@ -35,5 +35,5 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add index.html news.html news_archive.json
-          git commit -m "Update Market Data & AI News" || echo "No changes to commit"
+          git commit -m "Update with Google GenAI SDK" || echo "No changes to commit"
           git push
