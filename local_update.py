@@ -49,12 +49,17 @@ def process_news_with_local_llm(title, snippet):
         log(f"❌ LLM Error: {e}")
         return title, snippet
 
+import html
+
 def clean_html(raw_html):
     if not raw_html: return ""
     raw_html = str(raw_html)
+    unescaped = html.unescape(raw_html)
     cleanr = re.compile('<.*?>', re.DOTALL)
-    text = re.sub(cleanr, '', raw_html)
-    return text.replace('&nbsp;', ' ').strip()
+    text = re.sub(cleanr, '', unescaped)
+    cleaned = text.replace('&nbsp;', ' ').strip()
+    # log(f"DEBUG CLEAN: {raw_html[:30]}... -> {cleaned[:30]}...")
+    return cleaned
 
 def make_sparkline_url(data_list, color):
     if not data_list or len(data_list) < 2: return ""
