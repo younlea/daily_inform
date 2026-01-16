@@ -6,7 +6,7 @@ import time
 import json
 import os
 import re
-import requests # ★★★ 라이브러리 없이 직접 통신하는 도구 ★★★
+import requests # 라이브러리 없이 직접 통신 (가장 확실함)
 
 # ==========================================
 # 1. 설정 및 헬퍼 함수
@@ -15,22 +15,72 @@ ARCHIVE_FILE = 'news_archive.json'
 MAX_ITEMS = 2000
 GEMINI_KEY = os.environ.get('GEMINI_API_KEY')
 
-# ★★★ 구글 서버 주소 직접 지정 (Gemini 1.5 Flash) ★★★
-# 라이브러리 버전에 상관없이 작동하는 "절대 주소"입니다.
-API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
+# ★★★ 후보 모델 리스트 (우선순위 순서) ★★★
+# 이 중에서 작동하는 것을 자동으로 찾아냅니다.
+CANDIDATE_MODELS = [
+    "gemini-2.0-flash-exp",
+    "gemini-1.5-flash",
+    "gemini-1.5-flash-latest",
+    "gemini-pro",           # 구관이 명관 (가장 안정적)
+    "gemini-1.0-pro",
+    "gemini-1.5-pro-latest"
+]
+
+# 전역 변수로 '확정된 모델' 저장
+ACTIVE_MODEL = None
 
 if GEMINI_KEY:
-    print(f"✅ DEBUG: API Key Loaded")
+    print(f"✅ DEBUG: API Key Loaded ({len(GEMINI_KEY)} chars)")
 else:
     print("❌ DEBUG: API Key Missing!")
+
+# ★★★ [핵심] 시작 전 작동 가능한 모델 찾기 (Self-Diagnosis) ★★★
+def find_working_model():
+    print("\n🔍 AI 모델 연결 테스트 중...")
+    
+    payload = {"contents": [{"parts": [{"text": "Hello"}]}]}
+    
+    for model in CANDIDATE_MODELS:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        try:
+            print(f"   👉 Testing '{model}'...", end=" ")
+            response = requests.post(
+                url,
+                headers={"Content-Type": "application/json"},
+                params={"key": GEMINI_KEY},
+                json=payload,
+                timeout=10
+            )
+            
+            if response.status_code == 200:
+                print("✅ 성공! (이 모델을 사용합니다)")
+                return model
+            elif response.status_code == 429:
+                print("⚠️ 과부하 (Skip)")
+            else:
+                print(f"❌ 실패 ({response.status_code})")
+                
+        except Exception as e:
+            print(f"❌ 에러 ({e})")
+            
+    return None
+
+# 프로그램 시작 시 딱 한 번 실행
+if GEMINI_KEY:
+    ACTIVE_MODEL = find_working_model()
+    if not ACTIVE_MODEL:
+        print("\n🚨 [비상] 사용 가능한 AI 모델을 하나도 찾지 못했습니다.")
+        print("   -> 영어 원문으로 저장 모드로 전환합니다.\n")
+    else:
+        print(f"\n🎉 [확정] 오늘의 AI 모델: {ACTIVE_MODEL}\n")
 
 def process_news_with_ai(title, snippet):
     fallback_summary = snippet[:300] + ("..." if len(snippet) > 300 else "")
     
-    if not GEMINI_KEY:
+    # 키가 없거나, 작동하는 모델을 못 찾았으면 원문 반환
+    if not GEMINI_KEY or not ACTIVE_MODEL:
         return title, fallback_summary
 
-    # 프롬프트 구성
     prompt = f"""
     Role: Professional Tech Reporter (Korea).
     Task: Translate the title into Korean and summarize the snippet into Korean.
@@ -45,30 +95,23 @@ def process_news_with_ai(title, snippet):
     4. Do NOT output anything else. Just the formatted string.
     """
 
-    # 요청 데이터 (JSON)
-    payload = {
-        "contents": [{
-            "parts": [{"text": prompt}]
-        }]
-    }
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{ACTIVE_MODEL}:generateContent"
+    payload = { "contents": [{ "parts": [{"text": prompt}] }] }
     
-    # 3번 재시도 로직
-    max_retries = 3
-    for attempt in range(max_retries):
+    # 재시도 로직 (Quota Limit 대비)
+    for attempt in range(3):
         try:
-            # ★★★ requests로 직접 호출 ★★★
             response = requests.post(
-                API_URL,
+                url,
                 headers={"Content-Type": "application/json"},
                 params={"key": GEMINI_KEY},
                 json=payload,
                 timeout=30
             )
             
-            # 성공 (200 OK)
             if response.status_code == 200:
-                result = response.json()
                 try:
+                    result = response.json()
                     result_text = result['candidates'][0]['content']['parts'][0]['text'].strip()
                     if "|||" in result_text:
                         parts = result_text.split("|||")
@@ -76,27 +119,19 @@ def process_news_with_ai(title, snippet):
                     else:
                         return title, result_text
                 except:
-                    # 응답은 왔는데 형식이 이상할 때
                     return title, fallback_summary
             
-            # 실패 (429: Too Many Requests)
             elif response.status_code == 429:
-                print(f"⚠️ Rate Limit (429). Waiting 60s... (Attempt {attempt+1})")
-                time.sleep(60)
+                print(f"⚠️ Quota Limit. 30초 대기 후 재시도... ({attempt+1}/3)")
+                time.sleep(30)
                 continue
-                
-            # 그 외 에러
+            
             else:
-                print(f"❌ API Error: {response.status_code} - {response.text[:100]}")
-                # 404가 뜨면 URL 문제이므로 재시도하지 않고 바로 리턴
-                if response.status_code == 404:
-                    return title, fallback_summary
-                time.sleep(5)
-                continue
+                print(f"❌ Error {response.status_code}")
+                return title, fallback_summary
 
-        except Exception as e:
-            print(f"❌ Network Error: {e}")
-            time.sleep(5)
+        except Exception:
+            time.sleep(2)
             continue
             
     return title, fallback_summary
@@ -178,14 +213,12 @@ korea_table_html += "</tbody></table>"
 # ==========================================
 # 3. 뉴스 수집 및 AI 처리
 # ==========================================
-print("2. 뉴스 데이터 수집 및 AI 처리 (REST API Mode)...")
+print("2. 뉴스 데이터 수집 및 AI 처리 (Auto-Pilot)...")
 archive = load_archive()
 existing_links = set(item['link'] for item in archive)
 
-# [경제 뉴스]
 rss_economy = [{"url": "https://news.google.com/rss/search?q=stock+market+economy+korea+usa&hl=ko&gl=KR&ceid=KR:ko", "title": "📈 국내외 증시", "cat": "economy"}]
 
-# [휴머노이드/로봇 일반 뉴스] - 요청하신 사이트 완벽 포함
 rss_humanoid = [
     {"url": "https://news.google.com/rss/search?q=humanoid+robot+(startup+OR+unveiled+OR+prototype+OR+new+model)+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "humanoid"},
     {"url": "https://techxplore.com/rss-feed/robotics-news/", "title": "Tech Xplore", "cat": "humanoid"},
@@ -195,7 +228,6 @@ rss_humanoid = [
     {"url": "https://humanoidroboticstechnology.com/feed/", "title": "Humanoid Tech Blog", "cat": "humanoid"}
 ]
 
-# [로봇 핸드/그리퍼 뉴스]
 rss_hand = [
     {"url": "https://news.google.com/rss/search?q=robot+hand+gripper+dexterous+manipulation+tactile+sensor+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "hand"}
 ]
@@ -231,9 +263,9 @@ for src in rss_humanoid + rss_hand:
             
             title_ko, summary_ko = process_news_with_ai(entry.title, raw_snippet)
             
-            # 15초 안전 대기 (무료 API 제한 준수)
-            print("Cooling down (15s)...")
-            time.sleep(15) 
+            # 안전하게 10초 대기
+            print("Cooling down (10s)...")
+            time.sleep(10) 
 
             news_item = {
                 "title": title_ko,
@@ -248,7 +280,6 @@ for src in rss_humanoid + rss_hand:
             existing_links.add(link)
             new_items_count += 1
             
-            # 안전하게 10개씩만 처리
             if new_items_count >= 10:
                 print("⚠️ 안전을 위해 이번 실행은 10개까지만 처리합니다.")
                 break
