@@ -101,9 +101,14 @@ now_str = kst_now.strftime("%Y-%m-%d %H:%M:%S (KST)")
 def generate_simple_list(items):
     html = ""
     for item in items:
+        # Dictionary access for consistent handling
         title = item.get('title')
         link = item.get('link')
-        html += f"<li class='news-item'><a href='{link}' target='_blank'>{title}</a></li>"
+        summary = item.get('summary', '')
+        
+        summary_html = f"<div style='font-size:0.9rem; color:#666; margin-top:4px;'>{summary}</div>" if summary else ""
+        meta_html = f"<div style='font-size:0.8rem; color:#999; margin-top:2px;'>{item.get('source', '')} | {item.get('date', '')[:10]}</div>"
+        html += f"<li class='news-item'><a href='{link}' target='_blank'>{title}</a>{summary_html}{meta_html}</li>"
     return html
 
 main_news_html = ""
