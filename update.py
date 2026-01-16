@@ -20,30 +20,23 @@ if GEMINI_KEY:
     print(f"✅ DEBUG: GEMINI_API_KEY 감지됨")
     genai.configure(api_key=GEMINI_KEY)
 else:
-    print("❌ DEBUG: GEMINI_API_KEY 없음!")
+    print("❌ DEBUG: GEMINI_API_KEY 없음! (Secrets 설정을 확인하세요)")
 
-# 모델 가져오기 (1.5 Flash -> Pro 순서로 시도)
+# ★★★ 핵심: 무료 한도가 넉넉한 1.5 Flash 모델 강제 사용 ★★★
 def get_ai_model():
-    # 1순위: 1.5 Flash (빠름)
     try:
+        # 1.5 Flash가 현재 무료 티어에서 가장 안정적입니다.
         return genai.GenerativeModel('gemini-1.5-flash')
-    except:
-        pass
-    # 2순위: Pro (안정적)
-    try:
-        return genai.GenerativeModel('gemini-pro')
-    except:
+    except Exception as e:
+        print(f"❌ Model Init Error: {e}")
         return None
 
 MODEL_INSTANCE = None
 if GEMINI_KEY:
     MODEL_INSTANCE = get_ai_model()
 
-# ★★★ 문법 오류 수정됨 (global 선언 위치 이동) ★★★
+# AI 처리 함수
 def process_news_with_ai(title, snippet):
-    # 함수 내부에서 전역 변수를 바꾸려면 맨 위에 선언해야 함
-    global MODEL_INSTANCE
-    
     fallback_summary = snippet[:300] + ("..." if len(snippet) > 300 else "")
     
     if not MODEL_INSTANCE:
@@ -53,24 +46,21 @@ def process_news_with_ai(title, snippet):
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            # 프롬프트: JSON 대신 특수 구분자(|||)를 사용해달라고 요청
+            # 프롬프트: JSON 대신 텍스트로 요청 (호환성 UP)
             prompt = f"""
             Role: Professional Tech Reporter (Korea).
-            Task: Translate title and summarize content into Korean.
-
-            Format your response exactly like this:
-            KOREAN_TITLE ||| KOREAN_SUMMARY
-
-            Rules:
-            1. Title: Natural Korean translation.
-            2. Summary: 2-3 sentences in Korean. Noun-ending style (~함).
-            3. Do NOT output markdown, JSON, or any other text. Just the formatted string.
-
+            Task: Translate the title into Korean and summarize the snippet into Korean.
+            
             Input Title: {title}
             Input Snippet: {snippet}
+
+            Requirements:
+            1. Title: Natural Korean translation.
+            2. Summary: 2-3 sentences in Korean. Noun-ending style (e.g., ~함, ~임).
+            3. Output Format: "KOREAN_TITLE ||| KOREAN_SUMMARY"
+            4. Do NOT output anything else. Just the formatted string.
             """
-            
-            # JSON 모드 끄고 일반 텍스트 모드로 요청
+
             response = MODEL_INSTANCE.generate_content(prompt)
             result_text = response.text.strip()
             
@@ -85,14 +75,10 @@ def process_news_with_ai(title, snippet):
             
         except Exception as e:
             error_msg = str(e)
+            # 429 에러(속도제한)일 경우
             if "429" in error_msg or "quota" in error_msg.lower():
                 print(f"⚠️ Quota Limit! Waiting 60s... (Attempt {attempt+1})")
                 time.sleep(60)
-                continue
-            elif "404" in error_msg:
-                 # 모델 못 찾으면 gemini-pro로 교체해서 재시도
-                print("⚠️ Model not found. Switching to gemini-pro...")
-                MODEL_INSTANCE = genai.GenerativeModel('gemini-pro')
                 continue
             else:
                 print(f"❌ AI Error: {error_msg}")
@@ -177,15 +163,24 @@ korea_table_html += "</tbody></table>"
 # ==========================================
 # 3. 뉴스 수집 및 AI 처리
 # ==========================================
-print("2. 뉴스 데이터 수집 및 AI 처리...")
+print("2. 뉴스 데이터 수집 및 AI 처리 (Gemini 1.5 Flash)...")
 archive = load_archive()
 existing_links = set(item['link'] for item in archive)
 
+# [경제 뉴스]
 rss_economy = [{"url": "https://news.google.com/rss/search?q=stock+market+economy+korea+usa&hl=ko&gl=KR&ceid=KR:ko", "title": "📈 국내외 증시", "cat": "economy"}]
+
+# [휴머노이드/로봇 일반 뉴스] - 추가된 사이트 포함
 rss_humanoid = [
     {"url": "https://news.google.com/rss/search?q=humanoid+robot+(startup+OR+unveiled+OR+prototype+OR+new+model)+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "humanoid"},
-    {"url": "https://humanoidroboticstechnology.com/feed/", "title": "Humanoid Tech Blog", "cat": "humanoid"}
+    {"url": "https://humanoidroboticstechnology.com/feed/", "title": "Humanoid Tech Blog", "cat": "humanoid"},
+    {"url": "https://techxplore.com/rss-feed/robotics-news/", "title": "Tech Xplore", "cat": "humanoid"},
+    {"url": "https://spectrum.ieee.org/feeds/topic/robotics.rss", "title": "IEEE Spectrum", "cat": "humanoid"},
+    {"url": "https://www.therobotreport.com/feed/", "title": "The Robot Report", "cat": "humanoid"},
+    {"url": "https://www.irobotnews.com/rss/allArticle.xml", "title": "로봇신문", "cat": "humanoid"}
 ]
+
+# [로봇 핸드/그리퍼 뉴스]
 rss_hand = [
     {"url": "https://news.google.com/rss/search?q=robot+hand+gripper+dexterous+manipulation+tactile+sensor+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "hand"}
 ]
@@ -222,9 +217,9 @@ for src in rss_humanoid + rss_hand:
             # AI 처리
             title_ko, summary_ko = process_news_with_ai(entry.title, raw_snippet)
             
-            # 10초 대기
-            print("Cooling down (10s)...")
-            time.sleep(10) 
+            # ★★★ 15초 대기 (무료 한도 절대 안전권) ★★★
+            print("Cooling down (15s)...")
+            time.sleep(15) 
 
             news_item = {
                 "title": title_ko,
