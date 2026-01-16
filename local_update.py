@@ -138,16 +138,30 @@ log("📰 뉴스 수집 및 로컬 AI 처리...")
 archive = load_archive()
 existing_links = set(item['link'] for item in archive)
 
-rss_economy = [{"url": "https://news.google.com/rss/search?q=stock+market+economy+korea+usa&hl=ko&gl=KR&ceid=KR:ko", "title": "📈 국내외 증시", "cat": "economy"}]
-rss_humanoid = [
-    {"url": "https://news.google.com/rss/search?q=humanoid+robot+(startup+OR+unveiled+OR+prototype+OR+new+model)+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "humanoid"},
-    {"url": "https://techxplore.com/rss-feed/robotics-news/", "title": "Tech Xplore", "cat": "humanoid"},
-    {"url": "https://spectrum.ieee.org/feeds/topic/robotics.rss", "title": "IEEE Spectrum", "cat": "humanoid"},
-    {"url": "https://www.therobotreport.com/feed/", "title": "The Robot Report", "cat": "humanoid"},
-    {"url": "http://www.irobotnews.com/rss/all.xml", "title": "로봇신문", "cat": "humanoid"},
-    {"url": "https://humanoidroboticstechnology.com/feed/", "title": "Humanoid Tech Blog", "cat": "humanoid"}
-]
-rss_hand = [{"url": "https://news.google.com/rss/search?q=robot+hand+gripper+dexterous+manipulation+tactile+sensor+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "hand"}]
+archive = load_archive()
+existing_links = set(item['link'] for item in archive)
+
+FEED_CONFIG_FILE = 'feeds.json'
+
+def load_feeds():
+    if not os.path.exists(FEED_CONFIG_FILE):
+        log(f"⚠️ Warning: {FEED_CONFIG_FILE} not found! Using default empty lists.")
+        return {"economy": [], "robotics": []}
+    try:
+        with open(FEED_CONFIG_FILE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        log(f"❌ Error loading {FEED_CONFIG_FILE}: {e}")
+        return {"economy": [], "robotics": []}
+
+feeds_config = load_feeds()
+rss_economy = feeds_config.get("economy", [])
+# Combine all robotics related feeds (humanoid, hand, paper, etc.)
+rss_robotics = feeds_config.get("robotics", [])
+
+# Temporarily map old variable names if needed, or update loops below
+# rss_humanoid and rss_hand are now mixed in rss_robotics
+# The classification logic will handle the specific category assignment.
 
 def classify_category(title, summary, current_cat):
     # 만약 이미 hand 카테고리면 그대로 유지
@@ -189,7 +203,7 @@ for src in rss_economy:
 today = datetime.datetime.now()
 new_items_count = 0
 
-for src in rss_humanoid + rss_hand:
+for src in rss_robotics:
     try:
         feed = feedparser.parse(src["url"], agent="Mozilla/5.0")
         for entry in feed.entries:
