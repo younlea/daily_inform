@@ -15,38 +15,49 @@ from email.utils import parsedate_to_datetime
 ARCHIVE_FILE = 'news_archive.json'
 MAX_ITEMS = 2000
 
-# ★ Gemini API 설정 ★
+# Gemini API 설정
 GEMINI_KEY = os.environ.get('GEMINI_API_KEY')
 if GEMINI_KEY:
     genai.configure(api_key=GEMINI_KEY)
-else:
-    print("⚠️ 경고: GEMINI_API_KEY가 설정되지 않았습니다. AI 요약이 작동하지 않습니다.")
 
-# AI 요약 함수
-def summarize_with_ai(title, snippet):
+# ★ 핵심: 제목 번역 & 내용 요약을 동시에 수행하는 함수 ★
+def process_news_with_ai(title, snippet):
+    # 키 없으면 그냥 원본 반환
     if not GEMINI_KEY:
-        return snippet[:60] + "..." # 키 없으면 그냥 자르기
+        return title, snippet[:60] + "..."
     
     try:
-        # 모델 로드 (가볍고 빠른 Flash 모델 사용)
         model = genai.GenerativeModel('gemini-1.5-flash')
         
-        # 프롬프트 작성
+        # 프롬프트: 제목 번역과 요약을 JSON으로 요청
         prompt = f"""
-        아래 뉴스 기사의 제목과 앞부분을 보고, 내용을 한국어로 50자 이내로 핵심만 요약해줘.
-        말투는 "~함", "~임" 처럼 간결하게 명사형으로 끝내줘. 불필요한 태그나 "기사 내용:" 같은 말은 빼줘.
+        You are a tech news translator.
+        1. Translate the 'Title' into natural Korean.
+        2. Summarize the 'Snippet' into Korean (max 60 chars, noun-ending style like '~함', '~임').
+        
+        Input Title: {title}
+        Input Snippet: {snippet}
 
-        제목: {title}
-        내용: {snippet}
+        Response Format (JSON):
+        {{
+            "title_ko": "...",
+            "summary_ko": "..."
+        }}
         """
         
-        response = model.generate_content(prompt)
-        return response.text.strip()
+        # JSON 모드로 응답 요청 (가능한 경우) or 텍스트 파싱
+        response = model.generate_content(prompt, generation_config={"response_mime_type": "application/json"})
+        
+        # 결과 파싱
+        data = json.loads(response.text)
+        return data.get("title_ko", title), data.get("summary_ko", "")
+        
     except Exception as e:
-        print(f"AI Summary Error: {e}")
-        return snippet[:60] + "..." # 에러나면 그냥 자르기
+        print(f"AI Error: {e}")
+        # 에러 나면 원본 제목과, 그냥 자른 내용 반환
+        return title, snippet[:60] + "..."
 
-# HTML 태그 제거 (AI에게 보내기 전 청소용)
+# HTML 태그 제거
 def clean_html(raw_html):
     cleanr = re.compile('<.*?>')
     text = re.sub(cleanr, '', raw_html)
@@ -122,12 +133,13 @@ for code, name, naver_code in korea_tickers:
 korea_table_html += "</tbody></table>"
 
 # ==========================================
-# 3. 뉴스 수집 및 AI 요약
+# 3. 뉴스 수집 및 AI 번역/요약
 # ==========================================
-print("2. 뉴스 데이터 수집 및 AI 요약 중...")
+print("2. 뉴스 데이터 수집 및 한국어 처리 중...")
 archive = load_archive()
 existing_links = set(item['link'] for item in archive)
 
+# 경제 뉴스 (메인용, 번역 안 함)
 rss_economy = [{"url": "https://news.google.com/rss/search?q=stock+market+economy+korea+usa&hl=ko&gl=KR&ceid=KR:ko", "title": "📈 국내외 증시", "cat": "economy"}]
 rss_humanoid = [
     {"url": "https://news.google.com/rss/search?q=humanoid+robot+(startup+OR+unveiled+OR+prototype+OR+new+model)+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "humanoid"},
@@ -137,7 +149,6 @@ rss_hand = [
     {"url": "https://news.google.com/rss/search?q=robot+hand+gripper+dexterous+manipulation+tactile+sensor+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "hand"}
 ]
 
-# 경제 뉴스 (요약 없이 제목만 사용하므로 패스)
 economy_news_latest = []
 for src in rss_economy:
     try:
@@ -149,7 +160,6 @@ for src in rss_economy:
 today = datetime.datetime.now()
 new_items_count = 0
 
-# 로봇 뉴스 처리 (AI 요약 적용)
 for src in rss_humanoid + rss_hand:
     try:
         feed = feedparser.parse(src["url"], agent="Mozilla/5.0")
@@ -165,23 +175,23 @@ for src in rss_humanoid + rss_hand:
             
             if (today - pub_dt).days > 7: continue
 
-            # ★ AI 요약 실행 ★
+            print(f"AI Processing: {entry.title}...")
+            
+            # 본문 추출
             raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
-            print(f"Summarizing: {entry.title}...")
             
-            # API 호출 (Gemini)
-            ai_summary = summarize_with_ai(entry.title, raw_snippet)
+            # ★ AI에게 제목 번역 + 내용 요약 요청 ★
+            title_ko, summary_ko = process_news_with_ai(entry.title, raw_snippet)
             
-            # 무료 티어 제한(분당 15회) 고려하여 잠시 대기
-            time.sleep(4) 
+            time.sleep(4) # API 제한 대기
 
             news_item = {
-                "title": entry.title,
-                "link": link,
+                "title": title_ko, # 번역된 제목 저장
+                "link": link,      # 링크는 원본 유지
                 "date": pub_dt.strftime("%Y-%m-%d %H:%M"),
                 "source": src['title'],
                 "category": src['cat'],
-                "summary": ai_summary # AI가 쓴 요약
+                "summary": summary_ko # 한국어 요약 저장
             }
             archive.append(news_item)
             existing_links.add(link)
@@ -200,6 +210,7 @@ utc_now = datetime.datetime.now(datetime.timezone.utc)
 kst_now = utc_now + datetime.timedelta(hours=9)
 now_str = kst_now.strftime("%Y-%m-%d %H:%M:%S (KST)")
 
+# 메인 페이지 (index.html)
 def generate_simple_list(items):
     html = ""
     for item in items[:4]:
@@ -231,10 +242,10 @@ output_main = output_main.replace('{{NEWS_CONTENT}}', main_news_html)
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(output_main)
 
+# 뉴스 페이지 (news.html)
 def generate_card_list(items):
     html = ""
     for item in items:
-        # AI 요약 적용
         summary_html = f"<div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:5px;'>💡 {item.get('summary', '')}</div>" if item.get('summary') else ""
         
         html += f"""
