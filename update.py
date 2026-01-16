@@ -56,7 +56,7 @@ def process_news_with_ai(title, snippet):
 
             # ★★★ 신형 SDK 호출 방식 (모델: gemini-1.5-flash) ★★★
             response = client.models.generate_content(
-                model='gemini-1.5-flash', 
+                model='gemini-2.0-flash-exp', 
                 contents=prompt
             )
             
