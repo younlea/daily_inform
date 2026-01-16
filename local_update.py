@@ -96,7 +96,7 @@ def save_archive(data):
 # ==========================================
 log(f"🚀 로컬 업데이트 시작 (Model: {LOCAL_MODEL})")
 log("📥 Git Pull...")
-subprocess.run(["git", "pull"], shell=True)
+subprocess.run(["git", "pull"])
 
 log("📈 시장 데이터 수집...")
 kospi_val, kospi_chg, kospi_chart = get_metric_data("^KS11", "red")
@@ -247,9 +247,9 @@ with open('news.html', 'w', encoding='utf-8') as f:
 
 log("📤 GitHub로 업로드 중...")
 try:
-    subprocess.run(["git", "add", "."], shell=True)
-    subprocess.run(["git", "commit", "-m", "Local AI Update (RTX 5060 Ti)"], shell=True)
-    subprocess.run(["git", "push"], shell=True)
+    subprocess.run(["git", "add", "."])
+    subprocess.run(["git", "commit", "-m", "Local AI Update (RTX 5060 Ti)"])
+    subprocess.run(["git", "push"])
     log("✅ 완료! 웹사이트가 업데이트되었습니다.")
 except Exception as e:
     log(f"❌ Git Upload Error: {e}")
