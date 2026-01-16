@@ -22,12 +22,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # ★★★ 구글 라이브러리 제거 -> requests(기본 통신) 설치 ★★★
-          pip install --upgrade yfinance feedparser requests
+          # ★★★ 구글 AI 제거 -> 번역 라이브러리(deep-translator) 설치 ★★★
+          pip install --upgrade yfinance feedparser requests deep-translator
 
       - name: Run update script
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        # API 키가 아예 필요 없습니다!
         run: python update.py
 
       - name: Commit and push changes
@@ -35,5 +34,5 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add index.html news.html news_archive.json
-          git commit -m "Update via REST API" || echo "No changes to commit"
+          git commit -m "Update via Deep Translator" || echo "No changes to commit"
           git push
