@@ -19,9 +19,9 @@ GEMINI_KEY = os.environ.get('GEMINI_API_KEY')
 if GEMINI_KEY:
     genai.configure(api_key=GEMINI_KEY)
 
-# ★ 수정된 AI 처리 함수 (길이 제한 해제) ★
+# ★ 수정됨: 한국어 강제 프롬프트 적용 ★
 def process_news_with_ai(title, snippet):
-    # 키가 없거나 에러 발생 시 사용할 기본 텍스트 (길게 300자까지 허용)
+    # 키가 없거나 에러 발생 시 사용할 기본 텍스트
     fallback_summary = snippet[:300] + ("..." if len(snippet) > 300 else "")
 
     if not GEMINI_KEY:
@@ -30,28 +30,35 @@ def process_news_with_ai(title, snippet):
     try:
         model = genai.GenerativeModel('gemini-1.5-flash')
         
-        # 프롬프트 수정: 글자수 제한 삭제 -> 2~3문장으로 변경
+        # 프롬프트를 한국어로 작성하여 한국어 출력 유도 강화
         prompt = f"""
-        You are a professional tech news editor.
-        1. Translate the 'Title' into natural Korean.
-        2. Summarize the 'Snippet' into Korean. 
-           - Create a comprehensive summary of 2 to 3 sentences.
-           - Capture the key facts clearly.
-           - Use a noun-ending style (e.g., '~함', '~임').
-        
-        Input Title: {title}
-        Input Snippet: {snippet}
+        당신은 IT 및 로봇 기술 전문 한국 기자입니다.
+        아래 영문 기사의 'Title'과 'Snippet'을 보고 다음 작업을 수행하세요.
 
-        Response Format (JSON):
+        1. [Title]을 한국 독자가 읽기 편한 '자연스러운 한국어 제목'으로 번역하세요.
+        2. [Snippet]을 바탕으로 기사의 핵심 내용을 파악하여 '한국어'로 요약하세요.
+           - 글자 수 제한은 없습니다. 내용을 충실하게 설명하기 위해 2~3문장으로 작성하세요.
+           - 말투는 '~함', '~임', '~것으로 보임' 등 명사형으로 간결하게 끝맺으세요.
+           - 전문 용어(예: Humanoid, Gripper 등)는 필요하다면 그대로 써도 됩니다.
+
+        입력 제목: {title}
+        입력 내용: {snippet}
+
+        응답 형식 (반드시 JSON):
         {{
-            "title_ko": "Translated Title",
-            "summary_ko": "Summarized Content"
+            "title_ko": "한국어 제목",
+            "summary_ko": "한국어 요약 내용"
         }}
         """
         
         response = model.generate_content(prompt, generation_config={"response_mime_type": "application/json"})
         data = json.loads(response.text)
-        return data.get("title_ko", title), data.get("summary_ko", fallback_summary)
+        
+        # AI가 가끔 빈칸을 줄 경우를 대비해 원본 유지
+        res_title = data.get("title_ko", title)
+        res_summary = data.get("summary_ko", fallback_summary)
+        
+        return res_title, res_summary
         
     except Exception as e:
         print(f"AI Error: {e}")
@@ -176,18 +183,18 @@ for src in rss_humanoid + rss_hand:
             print(f"AI Processing: {entry.title}...")
             raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
             
-            # AI 번역 및 요약 호출
+            # ★ 한국어 제목 + 한국어 요약 생성 ★
             title_ko, summary_ko = process_news_with_ai(entry.title, raw_snippet)
             
             time.sleep(4) 
 
             news_item = {
-                "title": title_ko,
+                "title": title_ko, # 번역된 제목
                 "link": link,
                 "date": pub_dt.strftime("%Y-%m-%d %H:%M"),
                 "source": src['title'],
                 "category": src['cat'],
-                "summary": summary_ko
+                "summary": summary_ko # 한국어 요약
             }
             archive.append(news_item)
             existing_links.add(link)
@@ -238,11 +245,10 @@ output_main = output_main.replace('{{NEWS_CONTENT}}', main_news_html)
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(output_main)
 
-# 뉴스 페이지 (news.html) - 요약 CSS 스타일 수정됨
+# 뉴스 페이지 (news.html)
 def generate_card_list(items):
     html = ""
     for item in items:
-        # 요약글이 길어도 잘리지 않게 스타일 적용
         summary_html = f"<div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 {item.get('summary', '')}</div>" if item.get('summary') else ""
         
         html += f"""
