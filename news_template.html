@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robot Tech News Archive</title>
     <style>
+        /* (CSS 스타일은 기존과 동일합니다. 그대로 두셔도 됩니다.) */
         body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif; margin: 0; padding: 20px; background-color: #f8f9fa; color: #333; }
         .container { max-width: 900px; margin: 0 auto; }
         
@@ -28,7 +29,6 @@
         .news-title { font-size: 1.15rem; font-weight: 700; color: #333; text-decoration: none; line-height: 1.4; display: block; margin-bottom: 8px; }
         .news-title:hover { color: #1c7ed6; }
         
-        /* ★ 수정됨: 글자 수 제한 제거 및 줄 간격 확보 ★ */
         .news-summary { font-size: 0.95rem; color: #555; margin-bottom: 12px; line-height: 1.6; }
 
         .news-meta { font-size: 0.85rem; color: #868e96; display: flex; gap: 10px; align-items: center; }
@@ -46,7 +46,7 @@
         </div>
 
         <div class="search-box">
-            <input type="text" id="searchInput" class="search-input" placeholder="기사 제목, 요약 내용으로 검색... (예: Tesla, Hand...)">
+            <input type="text" id="searchInput" class="search-input" placeholder="기사 제목, 요약 또는 영어 원문 키워드로 검색...">
         </div>
 
         <div class="last-updated" style="text-align: right; color: #888; font-size: 0.9rem; margin-bottom: 20px;">
@@ -85,7 +85,11 @@
                 const title = card.querySelector('.news-title').innerText.toLowerCase();
                 const summary = card.querySelector('.news-summary').innerText.toLowerCase();
                 
-                if (title.includes(term) || summary.includes(term)) {
+                // ★ 여기가 핵심: 숨겨진 영어 제목도 가져옵니다 ★
+                const hiddenEn = card.querySelector('.hidden-keywords') ? card.querySelector('.hidden-keywords').innerText.toLowerCase() : "";
+                
+                // 한국어 제목, 한국어 요약, 영어 원문 셋 중 하나라도 맞으면 보여줌
+                if (title.includes(term) || summary.includes(term) || hiddenEn.includes(term)) {
                     card.style.display = 'block';
                 } else {
                     card.style.display = 'none';
