@@ -19,18 +19,12 @@ GEMINI_KEY = os.environ.get('GEMINI_API_KEY')
 if GEMINI_KEY:
     genai.configure(api_key=GEMINI_KEY)
 
-# ★ 수정됨: 한국어 강제 프롬프트 적용 ★
 def process_news_with_ai(title, snippet):
-    # 키가 없거나 에러 발생 시 사용할 기본 텍스트
     fallback_summary = snippet[:300] + ("..." if len(snippet) > 300 else "")
-
-    if not GEMINI_KEY:
-        return title, fallback_summary
+    if not GEMINI_KEY: return title, fallback_summary
     
     try:
         model = genai.GenerativeModel('gemini-1.5-flash')
-        
-        # 프롬프트를 한국어로 작성하여 한국어 출력 유도 강화
         prompt = f"""
         당신은 IT 및 로봇 기술 전문 한국 기자입니다.
         아래 영문 기사의 'Title'과 'Snippet'을 보고 다음 작업을 수행하세요.
@@ -38,28 +32,20 @@ def process_news_with_ai(title, snippet):
         1. [Title]을 한국 독자가 읽기 편한 '자연스러운 한국어 제목'으로 번역하세요.
         2. [Snippet]을 바탕으로 기사의 핵심 내용을 파악하여 '한국어'로 요약하세요.
            - 글자 수 제한은 없습니다. 내용을 충실하게 설명하기 위해 2~3문장으로 작성하세요.
-           - 말투는 '~함', '~임', '~것으로 보임' 등 명사형으로 간결하게 끝맺으세요.
-           - 전문 용어(예: Humanoid, Gripper 등)는 필요하다면 그대로 써도 됩니다.
+           - 말투는 '~함', '~임' 등 명사형으로 간결하게 끝맺으세요.
 
         입력 제목: {title}
         입력 내용: {snippet}
 
-        응답 형식 (반드시 JSON):
+        응답 형식 (JSON):
         {{
             "title_ko": "한국어 제목",
             "summary_ko": "한국어 요약 내용"
         }}
         """
-        
         response = model.generate_content(prompt, generation_config={"response_mime_type": "application/json"})
         data = json.loads(response.text)
-        
-        # AI가 가끔 빈칸을 줄 경우를 대비해 원본 유지
-        res_title = data.get("title_ko", title)
-        res_summary = data.get("summary_ko", fallback_summary)
-        
-        return res_title, res_summary
-        
+        return data.get("title_ko", title), data.get("summary_ko", fallback_summary)
     except Exception as e:
         print(f"AI Error: {e}")
         return title, fallback_summary
@@ -141,7 +127,7 @@ korea_table_html += "</tbody></table>"
 # ==========================================
 # 3. 뉴스 수집 및 AI 처리
 # ==========================================
-print("2. 뉴스 데이터 수집 및 한국어 처리 중...")
+print("2. 뉴스 데이터 수집 및 AI 처리...")
 archive = load_archive()
 existing_links = set(item['link'] for item in archive)
 
@@ -182,19 +168,17 @@ for src in rss_humanoid + rss_hand:
 
             print(f"AI Processing: {entry.title}...")
             raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
-            
-            # ★ 한국어 제목 + 한국어 요약 생성 ★
             title_ko, summary_ko = process_news_with_ai(entry.title, raw_snippet)
-            
             time.sleep(4) 
 
             news_item = {
-                "title": title_ko, # 번역된 제목
+                "title": title_ko,
+                "original_title": entry.title, # ★ 중요: 원문 제목도 저장 ★
                 "link": link,
                 "date": pub_dt.strftime("%Y-%m-%d %H:%M"),
                 "source": src['title'],
                 "category": src['cat'],
-                "summary": summary_ko # 한국어 요약
+                "summary": summary_ko
             }
             archive.append(news_item)
             existing_links.add(link)
@@ -245,15 +229,21 @@ output_main = output_main.replace('{{NEWS_CONTENT}}', main_news_html)
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(output_main)
 
-# 뉴스 페이지 (news.html)
+# 뉴스 페이지 (news.html) - 숨겨진 영어 키워드 추가
 def generate_card_list(items):
     html = ""
     for item in items:
         summary_html = f"<div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 {item.get('summary', '')}</div>" if item.get('summary') else ""
         
+        # ★ 중요: 원문 제목을 hidden-keywords 태그로 숨겨서 삽입 ★
+        original_title = item.get('original_title', '').replace("'", "&#39;")
+        
         html += f"""
         <div class='news-card'>
             <a href='{item['link']}' target='_blank' class='news-title'>{item['title']}</a>
+            
+            <div class='hidden-keywords' style='display:none;'>{original_title}</div>
+            
             {summary_html}
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>{item['source']}</span>
