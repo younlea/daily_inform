@@ -6,82 +6,99 @@ import time
 import json
 import os
 import re
-from google import genai
-from google.genai import types # 옵션 설정을 위해 types 모듈 필요
+import requests # ★★★ 라이브러리 없이 직접 통신하는 도구 ★★★
 
 # ==========================================
 # 1. 설정 및 헬퍼 함수
 # ==========================================
 ARCHIVE_FILE = 'news_archive.json'
 MAX_ITEMS = 2000
-
-# [디버깅] API 키 확인
 GEMINI_KEY = os.environ.get('GEMINI_API_KEY')
-client = None
+
+# ★★★ 구글 서버 주소 직접 지정 (Gemini 1.5 Flash) ★★★
+# 라이브러리 버전에 상관없이 작동하는 "절대 주소"입니다.
+API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
 
 if GEMINI_KEY:
-    print(f"✅ DEBUG: GEMINI_API_KEY 감지됨")
-    try:
-        # ★★★ 핵심 수정: API 버전을 'v1'으로 강제 고정 (404 에러 해결) ★★★
-        client = genai.Client(
-            api_key=GEMINI_KEY,
-            http_options={'api_version': 'v1'} 
-        )
-    except Exception as e:
-        print(f"❌ Client Init Error: {e}")
+    print(f"✅ DEBUG: API Key Loaded")
 else:
-    print("❌ DEBUG: GEMINI_API_KEY 없음!")
+    print("❌ DEBUG: API Key Missing!")
 
 def process_news_with_ai(title, snippet):
     fallback_summary = snippet[:300] + ("..." if len(snippet) > 300 else "")
     
-    if not client:
+    if not GEMINI_KEY:
         return title, fallback_summary
+
+    # 프롬프트 구성
+    prompt = f"""
+    Role: Professional Tech Reporter (Korea).
+    Task: Translate the title into Korean and summarize the snippet into Korean.
     
+    Input Title: {title}
+    Input Snippet: {snippet}
+
+    Requirements:
+    1. Title: Natural Korean translation.
+    2. Summary: 2-3 sentences in Korean. Noun-ending style (e.g., ~함, ~임).
+    3. Output Format: "KOREAN_TITLE ||| KOREAN_SUMMARY"
+    4. Do NOT output anything else. Just the formatted string.
+    """
+
+    # 요청 데이터 (JSON)
+    payload = {
+        "contents": [{
+            "parts": [{"text": prompt}]
+        }]
+    }
+    
+    # 3번 재시도 로직
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            prompt = f"""
-            Role: Professional Tech Reporter (Korea).
-            Task: Translate the title into Korean and summarize the snippet into Korean.
-            
-            Input Title: {title}
-            Input Snippet: {snippet}
-
-            Requirements:
-            1. Title: Natural Korean translation.
-            2. Summary: 2-3 sentences in Korean. Noun-ending style (e.g., ~함, ~임).
-            3. Output Format: "KOREAN_TITLE ||| KOREAN_SUMMARY"
-            4. Do NOT output anything else. Just the formatted string.
-            """
-
-            # 1.5 Flash 모델 사용 (v1 API에서는 정상 작동함)
-            response = client.models.generate_content(
-                model='gemini-1.5-flash', 
-                contents=prompt
+            # ★★★ requests로 직접 호출 ★★★
+            response = requests.post(
+                API_URL,
+                headers={"Content-Type": "application/json"},
+                params={"key": GEMINI_KEY},
+                json=payload,
+                timeout=30
             )
             
-            result_text = response.text.strip()
+            # 성공 (200 OK)
+            if response.status_code == 200:
+                result = response.json()
+                try:
+                    result_text = result['candidates'][0]['content']['parts'][0]['text'].strip()
+                    if "|||" in result_text:
+                        parts = result_text.split("|||")
+                        return parts[0].strip(), parts[1].strip()
+                    else:
+                        return title, result_text
+                except:
+                    # 응답은 왔는데 형식이 이상할 때
+                    return title, fallback_summary
             
-            if "|||" in result_text:
-                parts = result_text.split("|||")
-                title_ko = parts[0].strip()
-                summary_ko = parts[1].strip()
-                return title_ko, summary_ko
-            else:
-                return title, result_text
-            
-        except Exception as e:
-            error_msg = str(e)
-            # 429: 속도 제한 -> 대기
-            if "429" in error_msg or "quota" in error_msg.lower():
-                print(f"⚠️ Quota Limit! Waiting 60s... (Attempt {attempt+1})")
+            # 실패 (429: Too Many Requests)
+            elif response.status_code == 429:
+                print(f"⚠️ Rate Limit (429). Waiting 60s... (Attempt {attempt+1})")
                 time.sleep(60)
                 continue
+                
+            # 그 외 에러
             else:
-                print(f"❌ AI Error: {error_msg}")
-                return title, fallback_summary
-    
+                print(f"❌ API Error: {response.status_code} - {response.text[:100]}")
+                # 404가 뜨면 URL 문제이므로 재시도하지 않고 바로 리턴
+                if response.status_code == 404:
+                    return title, fallback_summary
+                time.sleep(5)
+                continue
+
+        except Exception as e:
+            print(f"❌ Network Error: {e}")
+            time.sleep(5)
+            continue
+            
     return title, fallback_summary
 
 def clean_html(raw_html):
@@ -161,26 +178,20 @@ korea_table_html += "</tbody></table>"
 # ==========================================
 # 3. 뉴스 수집 및 AI 처리
 # ==========================================
-print("2. 뉴스 데이터 수집 및 AI 처리...")
+print("2. 뉴스 데이터 수집 및 AI 처리 (REST API Mode)...")
 archive = load_archive()
 existing_links = set(item['link'] for item in archive)
 
 # [경제 뉴스]
 rss_economy = [{"url": "https://news.google.com/rss/search?q=stock+market+economy+korea+usa&hl=ko&gl=KR&ceid=KR:ko", "title": "📈 국내외 증시", "cat": "economy"}]
 
-# [휴머노이드/로봇 일반 뉴스] - 요청하신 사이트 모두 포함
+# [휴머노이드/로봇 일반 뉴스] - 요청하신 사이트 완벽 포함
 rss_humanoid = [
-    # 1. Google 검색 (기본)
     {"url": "https://news.google.com/rss/search?q=humanoid+robot+(startup+OR+unveiled+OR+prototype+OR+new+model)+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "humanoid"},
-    # 2. TechXplore
     {"url": "https://techxplore.com/rss-feed/robotics-news/", "title": "Tech Xplore", "cat": "humanoid"},
-    # 3. IEEE Spectrum
     {"url": "https://spectrum.ieee.org/feeds/topic/robotics.rss", "title": "IEEE Spectrum", "cat": "humanoid"},
-    # 4. The Robot Report
     {"url": "https://www.therobotreport.com/feed/", "title": "The Robot Report", "cat": "humanoid"},
-    # 5. 로봇신문
     {"url": "http://www.irobotnews.com/rss/all.xml", "title": "로봇신문", "cat": "humanoid"},
-    # 6. Humanoid Tech Blog
     {"url": "https://humanoidroboticstechnology.com/feed/", "title": "Humanoid Tech Blog", "cat": "humanoid"}
 ]
 
@@ -220,7 +231,7 @@ for src in rss_humanoid + rss_hand:
             
             title_ko, summary_ko = process_news_with_ai(entry.title, raw_snippet)
             
-            # ★★★ 15초 휴식 (1분 6회 제한) ★★★
+            # 15초 안전 대기 (무료 API 제한 준수)
             print("Cooling down (15s)...")
             time.sleep(15) 
 
@@ -237,9 +248,9 @@ for src in rss_humanoid + rss_hand:
             existing_links.add(link)
             new_items_count += 1
             
-            # ★★★ 한번에 너무 많이 하면 차단되니 10개만 하고 멈춤 ★★★
+            # 안전하게 10개씩만 처리
             if new_items_count >= 10:
-                print("⚠️ 안정적인 업데이트를 위해 10개까지만 처리하고 종료합니다.")
+                print("⚠️ 안전을 위해 이번 실행은 10개까지만 처리합니다.")
                 break
         
         if new_items_count >= 10: break
