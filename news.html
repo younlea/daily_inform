@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robot Tech News Archive</title>
     <style>
+        /* (CSS 스타일은 기존과 동일합니다. 그대로 두셔도 됩니다.) */
         body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif; margin: 0; padding: 20px; background-color: #f8f9fa; color: #333; }
         .container { max-width: 900px; margin: 0 auto; }
         
@@ -28,7 +29,6 @@
         .news-title { font-size: 1.15rem; font-weight: 700; color: #333; text-decoration: none; line-height: 1.4; display: block; margin-bottom: 8px; }
         .news-title:hover { color: #1c7ed6; }
         
-        /* ★ 수정됨: 글자 수 제한 제거 및 줄 간격 확보 ★ */
         .news-summary { font-size: 0.95rem; color: #555; margin-bottom: 12px; line-height: 1.6; }
 
         .news-meta { font-size: 0.85rem; color: #868e96; display: flex; gap: 10px; align-items: center; }
@@ -46,11 +46,11 @@
         </div>
 
         <div class="search-box">
-            <input type="text" id="searchInput" class="search-input" placeholder="기사 제목, 요약 내용으로 검색... (예: Tesla, Hand...)">
+            <input type="text" id="searchInput" class="search-input" placeholder="기사 제목, 요약 또는 영어 원문 키워드로 검색...">
         </div>
 
         <div class="last-updated" style="text-align: right; color: #888; font-size: 0.9rem; margin-bottom: 20px;">
-            Updated: 2026-01-16 10:14:00 (KST)
+            Updated: 2026-01-16 10:22:13 (KST)
         </div>
 
         <div class="section-title">
@@ -60,6 +60,9 @@
             
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/industry-news/aimogas-intelligent-police-unit-r001-makes-official-debut/' target='_blank' class='news-title'>AiMOGA’s Intelligent Police Unit R001 Makes Official Debut</a>
+            
+            <div class='hidden-keywords' style='display:none;'>AiMOGA’s Intelligent Police Unit R001 Makes Official Debut</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 AiMOGA Robotics has deployed its first intelligent traffic policing robot, Intelligent Police Unit R001, at the intersection of Zhongjiang Avenue and Chizhu Mountain Road in Wuhu. The deployment brings humanoid robotics from pilot testing into frontline urban operations. Bridging the Gap: Human-Robo...</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
@@ -69,6 +72,9 @@
         
         <div class='news-card'>
             <a href='https://news.google.com/rss/articles/CBMibEFVX3lxTE9TMzVZLS01Tml3SjMtbDNtcXVZbFZQMDdWZ2k2ZU04bFd2U2RIbzhpTENfWnpGTHJFSFFNWjRCNkhoMlNKZEJOejVtVkNMSVp4X3FsU0tYak9wX3VkLXdpWEhqX0pkT0hFZTBmSw?oc=5' target='_blank' class='news-title'>Humanoid Robotics On Track to Become a $200 Billion Market by 2035 - IT비즈뉴스</a>
+            
+            <div class='hidden-keywords' style='display:none;'>Humanoid Robotics On Track to Become a $200 Billion Market by 2035 - IT비즈뉴스</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 Humanoid Robotics On Track to Become a $200 Billion Market by 2035  IT비즈뉴스</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Google News</span>
@@ -78,6 +84,9 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/news/x-square-robot-announces-140-million-in-series-a-funding/' target='_blank' class='news-title'>X Square Robot Announces $140 Million in Series A++ Funding</a>
+            
+            <div class='hidden-keywords' style='display:none;'>X Square Robot Announces $140 Million in Series A++ Funding</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 X Square Robot has announced the completion of its Series A++ funding round, raising about US$140 million (RMB 1 billion). The funding attracted world-class investors, including ByteDance and HongShan, along with several other strategic Chinese partners. With leading tech companies such as Alibaba G...</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
@@ -87,6 +96,9 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/industry-news/1x-unveils-paradigm-shift-in-humanoid-ai-neos-starting-to-learn-on-its-own/' target='_blank' class='news-title'>1X Unveils Updated World Model</a>
+            
+            <div class='hidden-keywords' style='display:none;'>1X Unveils Updated World Model</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 1X has announced the new 1X World Model, a groundbreaking AI update for NEO, marking a major leap forward in humanoid robotics. The new 1X World Model enables NEO to turn any request into an AI capability on demand, using a video model grounded in real-world physics. This marks the first major step ...</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
@@ -96,6 +108,9 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/news/humanoid-and-schaeffler-enter-a-strategic-technology-partnership/' target='_blank' class='news-title'>Humanoid and Schaeffler Enter a Strategic Technology Partnership</a>
+            
+            <div class='hidden-keywords' style='display:none;'>Humanoid and Schaeffler Enter a Strategic Technology Partnership</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 Humanoid has announced a strategic technology partnership. Over the next five years, the collaboration will bring hundreds of Humanoid’s robots into Schaeffler’s production facilities, fostering further industrial automation. Beyond deployment, the partnership covers actuator supply, data collection...</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
@@ -105,6 +120,9 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/industry-news/matrix-robotics-launches-third-generation-humanoid-robot-matrix-3/' target='_blank' class='news-title'>Matrix Robotics Launches Third-Generation Humanoid Robot, MATRIX-3</a>
+            
+            <div class='hidden-keywords' style='display:none;'>Matrix Robotics Launches Third-Generation Humanoid Robot, MATRIX-3</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 Matrix Robotics has officially launched its third-generation humanoid robot: MATRIX-3. This iteration represents a systematic reconstruction, from underlying algorithms to top-level applications. MATRIX-3 is a safe, autonomous, and highly generalizable physical intelligence platform capable of perfo...</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
@@ -114,6 +132,9 @@
         
         <div class='news-card'>
             <a href='https://news.google.com/rss/articles/CBMiU0FVX3lxTE43T1M0cWpMT3RSeEUxdllDV3VVWm9rel9fczVQZXRTM2tTa2dQbVJabTEyZEpGSWNWMndCWDlCYWhIdnJCY2RZUW83enpEazJycC1V?oc=5' target='_blank' class='news-title'>CES spotlight lifts humanoid robot ETFs - 네이트</a>
+            
+            <div class='hidden-keywords' style='display:none;'>CES spotlight lifts humanoid robot ETFs - 네이트</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 CES spotlight lifts humanoid robot ETFs  네이트</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Google News</span>
@@ -123,6 +144,9 @@
         
         <div class='news-card'>
             <a href='https://news.google.com/rss/articles/CBMiakFVX3lxTE9xaDJtdnI0bGtLdERkNFhoYlcwSHNVRTlNT1R2TDlHTG8tYnV5RUZsYVY3bUtKak85Tl9JeWdkdzQ4Q21RS3M4NnNtUWxMOW1ZdzNoRmY5enlZa0xTN0E0U2lCa05PcTBSbGc?oc=5' target='_blank' class='news-title'>RLWRLD Pushes Five-Finger Robotic Hand Control Forward with NVIDIA GR00T N1.5 - kmjournal.net</a>
+            
+            <div class='hidden-keywords' style='display:none;'>RLWRLD Pushes Five-Finger Robotic Hand Control Forward with NVIDIA GR00T N1.5 - kmjournal.net</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 RLWRLD Pushes Five-Finger Robotic Hand Control Forward with NVIDIA GR00T N1.5  kmjournal.net</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Google News</span>
@@ -132,6 +156,9 @@
         
         <div class='news-card'>
             <a href='https://news.google.com/rss/articles/CBMiakFVX3lxTE9felREMmFPcHQ0OXY2UXRhSHlxMUdEWGdJaGtia3lydThSU3BacVVuc002eUZhRlkwMUI2TTZGdUVYb2xZZGFlU1ljaVFFSGk3TExzck45SG9WT2pNR3RPazc0dHNUcWZBc2c?oc=5' target='_blank' class='news-title'>Aiden Robotics Unveils Next-Generation Humanoid Robot Hand at CES 2026 - kmjournal.net</a>
+            
+            <div class='hidden-keywords' style='display:none;'>Aiden Robotics Unveils Next-Generation Humanoid Robot Hand at CES 2026 - kmjournal.net</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 Aiden Robotics Unveils Next-Generation Humanoid Robot Hand at CES 2026  kmjournal.net</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Google News</span>
@@ -141,6 +168,9 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/news/pudu-robotics-launches-pudu-t150/' target='_blank' class='news-title'>Pudu Robotics Launches PUDU T150</a>
+            
+            <div class='hidden-keywords' style='display:none;'>Pudu Robotics Launches PUDU T150</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 Pudu Robotics has announced the launch of PUDU T150, a Light-payload Industrial Delivery Robot designed for internal material delivery in manufacturing and warehouse environments. Built for 150 kg payload applications, PUDU T150 emphasises fast deployment, stable operation, and high cost efficiency....</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
@@ -150,6 +180,9 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/industry-news/agibot-ranked-no-1-globally-in-humanoid-robot-shipments-by-omdia-2025/' target='_blank' class='news-title'>AGIBOT Ranked No. 1 Globally in Humanoid Robot Shipments by Omdia (2025)</a>
+            
+            <div class='hidden-keywords' style='display:none;'>AGIBOT Ranked No. 1 Globally in Humanoid Robot Shipments by Omdia (2025)</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 AGIBOT was ranked No.1 globally in both humanoid robot shipment volume and market share in 2025, according to General-Purpose Embodied Intelligent Robot 2026, the latest report released by Omdia. The report shows that AGIBOT shipped more than 5,100 humanoid robots during the year, capturing 39% of g...</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
@@ -159,6 +192,9 @@
         
         <div class='news-card'>
             <a href='https://news.google.com/rss/articles/CBMiU0FVX3lxTE84a3pVNnBfa3lsdXE0bGtSOFVKb3duVnd0X2RlMjMxVnBFMUxaeWdyWHZiR1c0bzFJTHRaTld2bTVqd0dfUXlFVVlOaEp1d2V3ZEFN?oc=5' target='_blank' class='news-title'>CES 2026 : Boston Dynamics' Atlas wins CNET's top robot honor at CES 2026 - 네이트</a>
+            
+            <div class='hidden-keywords' style='display:none;'>CES 2026 : Boston Dynamics&#39; Atlas wins CNET&#39;s top robot honor at CES 2026 - 네이트</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 CES 2026 : Boston Dynamics' Atlas wins CNET's top robot honor at CES 2026  네이트</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Google News</span>
@@ -168,6 +204,9 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/industry-news/x-humanoid-showcases-fully-autonomous-and-more-useful-robotics-solutions-at-ces-2026/' target='_blank' class='news-title'>X-Humanoid Showcases Useful Robotics Solutions at CES 2026</a>
+            
+            <div class='hidden-keywords' style='display:none;'>X-Humanoid Showcases Useful Robotics Solutions at CES 2026</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 At CES 2026, which opens on January 6th, 2026, Beijing Innovation Center of Humanoid Robotics (X-Humanoid) presented its advanced more useful robots, including Embodied Tien Kung 2.0 and Embodied Tien Kung Ultra, reflecting significant progress toward creating robots that are truly capable and skill...</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
@@ -177,6 +216,9 @@
         
         <div class='news-card'>
             <a href='https://humanoidroboticstechnology.com/industry-news/unix-ai-makes-its-official-debut-at-ces-2026/' target='_blank' class='news-title'>UniX AI Makes Its Official Debut at CES 2026</a>
+            
+            <div class='hidden-keywords' style='display:none;'>UniX AI Makes Its Official Debut at CES 2026</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 The International Consumer Electronics Show of 2026 becomes a place to reveal the embodied intelligent industry as UniX AI. The offspring of a humanoid robot company makes its official debut on the most influential technology stage. UniX AI regards CES 2026 as a place to reveal its transition from a...</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Humanoid Tech Blog</span>
@@ -186,6 +228,9 @@
         
         <div class='news-card'>
             <a href='https://news.google.com/rss/articles/CBMiakFVX3lxTE15NDdaVEtMVHpBZHpUQ2gzOFNDLVZvVG9neGJSZnVpMTdvLVlVck1vNG1ub2l0OFF2ZGkza2Z2X1FKRTc3SGJITFlrSFpQVkYwQnVJWWZVbnRMV1RNYjlIUVNlc2tJU2d1aVE?oc=5' target='_blank' class='news-title'>Boston Dynamics Says Kung Fu Is Not the Point. Practical Robots Will Win the Physical AI Race - kmjournal.net</a>
+            
+            <div class='hidden-keywords' style='display:none;'>Boston Dynamics Says Kung Fu Is Not the Point. Practical Robots Will Win the Physical AI Race - kmjournal.net</div>
+            
             <div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 Boston Dynamics Says Kung Fu Is Not the Point. Practical Robots Will Win the Physical AI Race  kmjournal.net</div>
             <div class='news-meta' style='margin-top:10px;'>
                 <span class='source-tag'>Google News</span>
@@ -220,7 +265,11 @@
                 const title = card.querySelector('.news-title').innerText.toLowerCase();
                 const summary = card.querySelector('.news-summary').innerText.toLowerCase();
                 
-                if (title.includes(term) || summary.includes(term)) {
+                // ★ 여기가 핵심: 숨겨진 영어 제목도 가져옵니다 ★
+                const hiddenEn = card.querySelector('.hidden-keywords') ? card.querySelector('.hidden-keywords').innerText.toLowerCase() : "";
+                
+                // 한국어 제목, 한국어 요약, 영어 원문 셋 중 하나라도 맞으면 보여줌
+                if (title.includes(term) || summary.includes(term) || hiddenEn.includes(term)) {
                     card.style.display = 'block';
                 } else {
                     card.style.display = 'none';
