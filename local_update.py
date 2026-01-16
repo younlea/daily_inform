@@ -142,6 +142,22 @@ rss_humanoid = [
 ]
 rss_hand = [{"url": "https://news.google.com/rss/search?q=robot+hand+gripper+dexterous+manipulation+tactile+sensor+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "hand"}]
 
+def classify_category(title, summary, current_cat):
+    # 만약 이미 hand 카테고리면 그대로 유지
+    if current_cat == 'hand': return 'hand'
+    
+    keywords_hand = ["hand", "gripper", "finger", "manipulation", "dexterous", "tactile", "grasping", "핸드", "그리퍼", "손", "매니퓰", "촉각", "파지"]
+    text = (title + " " + (summary or "")).lower()
+    for kw in keywords_hand:
+        if kw in text:
+            return "hand"
+    return current_cat
+
+# 기존 아카이브 재분류 (Re-classify existing items)
+for item in archive:
+    item['category'] = classify_category(item['title'], item.get('summary', ''), item['category'])
+
+
 economy_news_latest = []
 for src in rss_economy:
     try:
@@ -175,13 +191,16 @@ for src in rss_humanoid + rss_hand:
             
             title_ko, summary_ko = process_news_with_local_llm(entry.title, raw_snippet)
             
+            # Determine category dynamically
+            final_cat = classify_category(title_ko, summary_ko, src['cat'])
+
             news_item = {
                 "title": title_ko,
                 "original_title": entry.title,
                 "link": link,
                 "date": pub_dt.strftime("%Y-%m-%d %H:%M"),
                 "source": src['title'],
-                "category": src['cat'],
+                "category": final_cat,
                 "summary": summary_ko
             }
             archive.append(news_item)
