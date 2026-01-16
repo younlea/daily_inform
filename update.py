@@ -6,7 +6,7 @@ import time
 import json
 import os
 import re
-# ★★★ 구형(google.generativeai) 대신 신형(google.genai) 사용 ★★★
+# 최신 SDK 사용
 from google import genai
 from google.genai import types
 
@@ -23,7 +23,6 @@ client = None
 if GEMINI_KEY:
     print(f"✅ DEBUG: GEMINI_API_KEY 감지됨")
     try:
-        # 신형 클라이언트 초기화
         client = genai.Client(api_key=GEMINI_KEY)
     except Exception as e:
         print(f"❌ Client Init Error: {e}")
@@ -39,7 +38,6 @@ def process_news_with_ai(title, snippet):
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            # 프롬프트: JSON 대신 텍스트로 요청 (호환성 최강)
             prompt = f"""
             Role: Professional Tech Reporter (Korea).
             Task: Translate the title into Korean and summarize the snippet into Korean.
@@ -54,7 +52,8 @@ def process_news_with_ai(title, snippet):
             4. Do NOT output anything else. Just the formatted string.
             """
 
-            # ★★★ 신형 SDK 호출 방식 (모델: gemini-1.5-flash) ★★★
+            # ★★★ 수정됨: 모델명을 'gemini-2.0-flash-exp'로 변경 (가장 확실함) ★★★
+            # 만약 2.0이 안 되면 1.5-flash-8b (초경량) 사용
             response = client.models.generate_content(
                 model='gemini-2.0-flash-exp', 
                 contents=prompt
@@ -72,10 +71,28 @@ def process_news_with_ai(title, snippet):
             
         except Exception as e:
             error_msg = str(e)
+            # 429: 속도 제한 -> 대기
             if "429" in error_msg or "quota" in error_msg.lower():
                 print(f"⚠️ Quota Limit! Waiting 60s... (Attempt {attempt+1})")
                 time.sleep(60)
                 continue
+            # 404: 모델 못 찾음 -> 다른 모델로 재시도
+            elif "404" in error_msg:
+                print(f"⚠️ Model 2.0 not found. Retrying with gemini-1.5-flash-8b...")
+                try:
+                    response = client.models.generate_content(
+                        model='gemini-1.5-flash-8b', 
+                        contents=prompt
+                    )
+                    result_text = response.text.strip()
+                    if "|||" in result_text:
+                        parts = result_text.split("|||")
+                        return parts[0].strip(), parts[1].strip()
+                    else:
+                        return title, result_text
+                except Exception as e2:
+                    print(f"❌ Fallback failed: {e2}")
+                    return title, fallback_summary
             else:
                 print(f"❌ AI Error: {error_msg}")
                 return title, fallback_summary
@@ -166,7 +183,7 @@ existing_links = set(item['link'] for item in archive)
 # [경제 뉴스]
 rss_economy = [{"url": "https://news.google.com/rss/search?q=stock+market+economy+korea+usa&hl=ko&gl=KR&ceid=KR:ko", "title": "📈 국내외 증시", "cat": "economy"}]
 
-# [휴머노이드/로봇 일반 뉴스] - ★요청하신 사이트 모두 포함★
+# [휴머노이드/로봇 일반 뉴스] - 요청하신 사이트 모두 포함
 rss_humanoid = [
     # 1. Google 검색 (기본)
     {"url": "https://news.google.com/rss/search?q=humanoid+robot+(startup+OR+unveiled+OR+prototype+OR+new+model)+-vacuum&hl=ko&gl=KR&ceid=KR:ko", "title": "Google News", "cat": "humanoid"},
