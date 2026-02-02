@@ -172,10 +172,18 @@ def classify_category(title, summary, current_cat):
     if current_cat == 'hand': return 'hand'
     
     keywords_hand = ["hand", "gripper", "finger", "manipulation", "dexterous", "tactile", "grasping", "핸드", "그리퍼", "손", "매니퓰", "촉각", "파지"]
+    keywords_humanoid = ["humanoid", "bipedal", "walking", "locomotion", "torso", "human-centered", "휴머노이드", "이족보행", "보행", "로코모션"]
+    
     text = (title + " " + (summary or "")).lower()
+    
     for kw in keywords_hand:
         if kw in text:
             return "hand"
+            
+    for kw in keywords_humanoid:
+        if kw in text:
+            return "humanoid"
+            
     return current_cat
 
 # 기존 아카이브 재분류 (Re-classify existing items)
@@ -240,6 +248,13 @@ for src in rss_robotics:
             
             # Determine category dynamically
             final_cat = classify_category(title_ko, summary_ko, src['cat'])
+
+            # [STRICT FILTERING] If source is 'paper' (e.g. ArXiv), strictly require relevant category.
+            # If classify_category didn't find 'hand' or 'humanoid' keywords, it returns 'paper'.
+            # In that case, we DISCARD this item.
+            if src.get('cat') == 'paper' and final_cat == 'paper':
+                log(f"🚫 Filtered out paper: {title_ko} (No keywords matched)")
+                continue
 
             news_item = {
                 "title": title_ko,
