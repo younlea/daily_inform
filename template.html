@@ -1,64 +1,276 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Market Monitor</title>
     <style>
-        body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif; margin: 0; padding: 20px; background-color: #f0f2f5; color: #333; }
-        .container { max-width: 1200px; margin: 0 auto; }
-        
-        .header-title { text-align: center; margin-bottom: 30px; }
-        .header-title h1 { color: #2c3e50; margin: 0; font-size: 2rem; }
-        .last-updated { font-size: 0.9rem; color: #888; margin-top: 5px; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-title h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 5px;
+        }
 
         /* 상단 3대 지표 */
-        .top-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
-        .metric-card { background: #fff; padding: 20px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); text-align: center; border: 1px solid #eef0f2; }
-        .metric-card h2 { margin: 0 0 10px 0; font-size: 1rem; color: #666; font-weight: 600; }
-        .metric-card .price { font-size: 2rem; font-weight: 800; color: #222; margin: 0; }
-        .metric-card .change { font-size: 1rem; font-weight: 600; margin-top: 5px; }
-        .metric-card .chart-area { width: 100%; height: 60px; margin-top: 15px; }
-        .chart-img { width: 100%; height: 100%; object-fit: contain; opacity: 0.9; }
+        .top-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            border: 1px solid #eef0f2;
+        }
+
+        .metric-card h2 {
+            margin: 0 0 10px 0;
+            font-size: 1rem;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .metric-card .price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #222;
+            margin: 0;
+        }
+
+        .metric-card .change {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .metric-card .chart-area {
+            width: 100%;
+            height: 60px;
+            margin-top: 15px;
+        }
+
+        .chart-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            opacity: 0.9;
+        }
 
         /* 메인 컨텐츠 */
-        .main-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px; }
-        @media (max-width: 900px) { .main-grid { grid-template-columns: 1fr; } }
-        
-        .section-box { background: #fff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); overflow: hidden; display: flex; flex-direction: column; border: 1px solid #eef0f2; }
-        .box-header { padding: 15px 20px; background: #fafafa; border-bottom: 1px solid #eee; font-weight: 700; color: #444; font-size: 1.1rem; }
-        
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 900px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section-box {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #eef0f2;
+        }
+
+        .box-header {
+            padding: 15px 20px;
+            background: #fafafa;
+            border-bottom: 1px solid #eee;
+            font-weight: 700;
+            color: #444;
+            font-size: 1.1rem;
+        }
+
         /* 테이블 스타일 */
-        .stock-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
-        .stock-table th { text-align: left; padding: 12px 15px; color: #888; font-weight: 500; font-size: 0.8rem; border-bottom: 1px solid #eee; }
-        .stock-table td { padding: 12px 15px; border-bottom: 1px solid #f8f9fa; vertical-align: middle; }
+        .stock-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        .stock-table th {
+            text-align: left;
+            padding: 12px 15px;
+            color: #888;
+            font-weight: 500;
+            font-size: 0.8rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .stock-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #f8f9fa;
+            vertical-align: middle;
+        }
+
         /* 링크 효과 */
-        .stock-table tr:hover { background-color: #f8f9fa; }
-        .stock-name { font-weight: 600; color: #333; display: block; }
-        .stock-code { font-size: 0.8em; color: #999; }
-        .stock-price { font-weight: 700; }
-        
-        .text-red { color: #e11d48; }
-        .text-blue { color: #2563eb; }
-        .bg-red-light { background-color: #ffe4e6; padding: 4px 8px; border-radius: 6px; font-size: 0.85em; font-weight: bold; }
-        .bg-blue-light { background-color: #dbeafe; padding: 4px 8px; border-radius: 6px; font-size: 0.85em; font-weight: bold; }
+        .stock-table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .stock-name {
+            font-weight: 600;
+            color: #333;
+            display: block;
+        }
+
+        .stock-code {
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        .stock-price {
+            font-weight: 700;
+        }
+
+        .text-red {
+            color: #e11d48;
+        }
+
+        .text-blue {
+            color: #2563eb;
+        }
+
+        .bg-red-light {
+            background-color: #ffe4e6;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .bg-blue-light {
+            background-color: #dbeafe;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
 
         /* 뉴스 */
-        .news-section { background: #fff; border-radius: 16px; padding: 25px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #eef0f2; }
-        .news-header { font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; }
-        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .news-category h4 { margin: 0 0 15px 0; font-size: 1rem; color: #555; display: flex; align-items: center; gap: 8px; }
-        .badge { background: #222; color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; }
-        .news-list { list-style: none; padding: 0; margin: 0; }
-        .news-item { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #eee; }
-        .news-item:last-child { border-bottom: none; }
-        .news-item a { text-decoration: none; color: #333; font-weight: 500; line-height: 1.4; display: block; transition: 0.2s; }
-        .news-item a:hover { color: #2563eb; }
-        .news-time { font-size: 0.8rem; color: #aaa; margin-top: 4px; display: block; }
+        .news-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #eef0f2;
+        }
 
-        footer { text-align: center; margin-top: 50px; color: #aaa; font-size: 0.9rem; padding-bottom: 30px; }
+        .news-header {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .news-category h4 {
+            margin: 0 0 15px 0;
+            font-size: 1rem;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge {
+            background: #222;
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+
+        .news-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .news-item {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            line-height: 1.4;
+            display: block;
+            transition: 0.2s;
+        }
+
+        .news-item a:hover {
+            color: #2563eb;
+        }
+
+        .news-time {
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-top: 4px;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #aaa;
+            font-size: 0.9rem;
+            padding-bottom: 30px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header-title">
@@ -67,18 +279,49 @@
         </div>
 
         <div class="top-metrics">
+            <!-- 1. KOSPI -->
             <div class="metric-card">
                 <h2>🇰🇷 KOSPI</h2>
                 <div class="price">{{KOSPI_VAL}}</div>
                 <div class="change">{{KOSPI_CHANGE}}</div>
                 <div class="chart-area"><img class="chart-img" src="{{KOSPI_CHART}}"></div>
             </div>
+            <!-- 2. KOSDAQ -->
+            <div class="metric-card">
+                <h2>🇰🇷 KOSDAQ</h2>
+                <div class="price">{{KOSDAQ_VAL}}</div>
+                <div class="change">{{KOSDAQ_CHANGE}}</div>
+                <div class="chart-area"><img class="chart-img" src="{{KOSDAQ_CHART}}"></div>
+            </div>
+            <!-- 3. S&P 500 -->
             <div class="metric-card">
                 <h2>🇺🇸 S&P 500</h2>
                 <div class="price">{{SP500_VAL}}</div>
                 <div class="change">{{SP500_CHANGE}}</div>
                 <div class="chart-area"><img class="chart-img" src="{{SP500_CHART}}"></div>
             </div>
+            <!-- 4. NASDAQ -->
+            <div class="metric-card">
+                <h2>🇺🇸 NASDAQ</h2>
+                <div class="price">{{NASDAQ_VAL}}</div>
+                <div class="change">{{NASDAQ_CHANGE}}</div>
+                <div class="chart-area"><img class="chart-img" src="{{NASDAQ_CHART}}"></div>
+            </div>
+            <!-- 5. Gold -->
+            <div class="metric-card">
+                <h2>🥇 Gold</h2>
+                <div class="price">{{GOLD_VAL}}</div>
+                <div class="change">{{GOLD_CHANGE}}</div>
+                <div class="chart-area"><img class="chart-img" src="{{GOLD_CHART}}"></div>
+            </div>
+            <!-- 6. Silver -->
+            <div class="metric-card">
+                <h2>🥈 Silver</h2>
+                <div class="price">{{SILVER_VAL}}</div>
+                <div class="change">{{SILVER_CHANGE}}</div>
+                <div class="chart-area"><img class="chart-img" src="{{SILVER_CHART}}"></div>
+            </div>
+            <!-- 7. USD/KRW -->
             <div class="metric-card">
                 <h2>💵 USD/KRW</h2>
                 <div class="price">{{USDKRW_VAL}}</div>
@@ -93,24 +336,25 @@
                 <div style="height: 600px;">
                     <div class="tradingview-widget-container" style="height:100%;width:100%">
                         <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
-                        {
-                            "exchanges": [],
-                            "dataSource": "SPX500",
-                            "grouping": "sector",
-                            "blockSize": "market_cap_basic",
-                            "blockColor": "change",
-                            "locale": "kr",
-                            "symbolUrl": "",
-                            "colorTheme": "light",
-                            "hasTopBar": false,
-                            "isDataSetEnabled": false,
-                            "isZoomEnabled": true,
-                            "hasSymbolTooltip": true,
-                            "width": "100%",
-                            "height": "100%"
-                        }
-                        </script>
+                        <script type="text/javascript"
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+                                {
+                                    "exchanges": [],
+                                        "dataSource": "SPX500",
+                                            "grouping": "sector",
+                                                "blockSize": "market_cap_basic",
+                                                    "blockColor": "change",
+                                                        "locale": "kr",
+                                                            "symbolUrl": "",
+                                                                "colorTheme": "light",
+                                                                    "hasTopBar": false,
+                                                                        "isDataSetEnabled": false,
+                                                                            "isZoomEnabled": true,
+                                                                                "hasSymbolTooltip": true,
+                                                                                    "width": "100%",
+                                                                                        "height": "100%"
+                                }
+                            </script>
                     </div>
                 </div>
             </div>
@@ -126,7 +370,8 @@
         <div class="news-section">
             <div class="news-header" style="display:flex; justify-content:space-between; align-items:center;">
                 <span>📰 아침 뉴스 브리핑 (Brief)</span>
-                <a href="news.html" style="background:#e7f5ff; color:#1971c2; text-decoration:none; font-size:0.85rem; padding:6px 12px; border-radius:6px; font-weight:bold;">
+                <a href="news.html"
+                    style="background:#e7f5ff; color:#1971c2; text-decoration:none; font-size:0.85rem; padding:6px 12px; border-radius:6px; font-weight:bold;">
                     전체 뉴스 보기 >
                 </a>
             </div>
@@ -141,4 +386,5 @@
         </footer>
     </div>
 </body>
+
 </html>

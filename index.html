@@ -1,89 +1,332 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Market Monitor</title>
     <style>
-        body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif; margin: 0; padding: 20px; background-color: #f0f2f5; color: #333; }
-        .container { max-width: 1200px; margin: 0 auto; }
-        
-        .header-title { text-align: center; margin-bottom: 30px; }
-        .header-title h1 { color: #2c3e50; margin: 0; font-size: 2rem; }
-        .last-updated { font-size: 0.9rem; color: #888; margin-top: 5px; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-title h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 5px;
+        }
 
         /* 상단 3대 지표 */
-        .top-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
-        .metric-card { background: #fff; padding: 20px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); text-align: center; border: 1px solid #eef0f2; }
-        .metric-card h2 { margin: 0 0 10px 0; font-size: 1rem; color: #666; font-weight: 600; }
-        .metric-card .price { font-size: 2rem; font-weight: 800; color: #222; margin: 0; }
-        .metric-card .change { font-size: 1rem; font-weight: 600; margin-top: 5px; }
-        .metric-card .chart-area { width: 100%; height: 60px; margin-top: 15px; }
-        .chart-img { width: 100%; height: 100%; object-fit: contain; opacity: 0.9; }
+        .top-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            border: 1px solid #eef0f2;
+        }
+
+        .metric-card h2 {
+            margin: 0 0 10px 0;
+            font-size: 1rem;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .metric-card .price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #222;
+            margin: 0;
+        }
+
+        .metric-card .change {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .metric-card .chart-area {
+            width: 100%;
+            height: 60px;
+            margin-top: 15px;
+        }
+
+        .chart-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            opacity: 0.9;
+        }
 
         /* 메인 컨텐츠 */
-        .main-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px; }
-        @media (max-width: 900px) { .main-grid { grid-template-columns: 1fr; } }
-        
-        .section-box { background: #fff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); overflow: hidden; display: flex; flex-direction: column; border: 1px solid #eef0f2; }
-        .box-header { padding: 15px 20px; background: #fafafa; border-bottom: 1px solid #eee; font-weight: 700; color: #444; font-size: 1.1rem; }
-        
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 900px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section-box {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #eef0f2;
+        }
+
+        .box-header {
+            padding: 15px 20px;
+            background: #fafafa;
+            border-bottom: 1px solid #eee;
+            font-weight: 700;
+            color: #444;
+            font-size: 1.1rem;
+        }
+
         /* 테이블 스타일 */
-        .stock-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
-        .stock-table th { text-align: left; padding: 12px 15px; color: #888; font-weight: 500; font-size: 0.8rem; border-bottom: 1px solid #eee; }
-        .stock-table td { padding: 12px 15px; border-bottom: 1px solid #f8f9fa; vertical-align: middle; }
+        .stock-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        .stock-table th {
+            text-align: left;
+            padding: 12px 15px;
+            color: #888;
+            font-weight: 500;
+            font-size: 0.8rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .stock-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #f8f9fa;
+            vertical-align: middle;
+        }
+
         /* 링크 효과 */
-        .stock-table tr:hover { background-color: #f8f9fa; }
-        .stock-name { font-weight: 600; color: #333; display: block; }
-        .stock-code { font-size: 0.8em; color: #999; }
-        .stock-price { font-weight: 700; }
-        
-        .text-red { color: #e11d48; }
-        .text-blue { color: #2563eb; }
-        .bg-red-light { background-color: #ffe4e6; padding: 4px 8px; border-radius: 6px; font-size: 0.85em; font-weight: bold; }
-        .bg-blue-light { background-color: #dbeafe; padding: 4px 8px; border-radius: 6px; font-size: 0.85em; font-weight: bold; }
+        .stock-table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .stock-name {
+            font-weight: 600;
+            color: #333;
+            display: block;
+        }
+
+        .stock-code {
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        .stock-price {
+            font-weight: 700;
+        }
+
+        .text-red {
+            color: #e11d48;
+        }
+
+        .text-blue {
+            color: #2563eb;
+        }
+
+        .bg-red-light {
+            background-color: #ffe4e6;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .bg-blue-light {
+            background-color: #dbeafe;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
 
         /* 뉴스 */
-        .news-section { background: #fff; border-radius: 16px; padding: 25px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #eef0f2; }
-        .news-header { font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; }
-        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .news-category h4 { margin: 0 0 15px 0; font-size: 1rem; color: #555; display: flex; align-items: center; gap: 8px; }
-        .badge { background: #222; color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; }
-        .news-list { list-style: none; padding: 0; margin: 0; }
-        .news-item { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #eee; }
-        .news-item:last-child { border-bottom: none; }
-        .news-item a { text-decoration: none; color: #333; font-weight: 500; line-height: 1.4; display: block; transition: 0.2s; }
-        .news-item a:hover { color: #2563eb; }
-        .news-time { font-size: 0.8rem; color: #aaa; margin-top: 4px; display: block; }
+        .news-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #eef0f2;
+        }
 
-        footer { text-align: center; margin-top: 50px; color: #aaa; font-size: 0.9rem; padding-bottom: 30px; }
+        .news-header {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .news-category h4 {
+            margin: 0 0 15px 0;
+            font-size: 1rem;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge {
+            background: #222;
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+
+        .news-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .news-item {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            line-height: 1.4;
+            display: block;
+            transition: 0.2s;
+        }
+
+        .news-item a:hover {
+            color: #2563eb;
+        }
+
+        .news-time {
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-top: 4px;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #aaa;
+            font-size: 0.9rem;
+            padding-bottom: 30px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header-title">
             <h1>Daily Market Monitor</h1>
-            <div class="last-updated">Updated: 2026-02-02 08:24:27 (KST)</div>
+            <div class="last-updated">Updated: 2026-02-02 09:10:52 (KST)</div>
         </div>
 
         <div class="top-metrics">
+            <!-- 1. KOSPI -->
             <div class="metric-card">
                 <h2>🇰🇷 KOSPI</h2>
-                <div class="price">5,264.16</div>
-                <div class="change"><span class='text-blue'>-3.53 (-0.07%)</span></div>
-                <div class="chart-area"><img class="chart-img" src="https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B4214.17%2C4309.63%2C4457.52%2C4525.48%2C4551.06%2C4552.37%2C4586.32%2C4624.79%2C4692.64%2C4723.10%2C4797.55%2C4840.74%2C4904.66%2C4885.75%2C4909.93%2C4952.53%2C4990.07%2C4949.59%2C5084.85%2C5170.81%2C5221.25%2C5224.36%5D%2CborderColor%3A%27red%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D"></div>
+                <div class="price">5,224.36</div>
+                <div class="change"><span class='text-red'>+3.11 (+0.06%)</span></div>
+                <div class="chart-area"><img class="chart-img" src="https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B4309.63%2C4457.52%2C4525.48%2C4551.06%2C4552.37%2C4586.32%2C4624.79%2C4692.64%2C4723.10%2C4797.55%2C4840.74%2C4904.66%2C4885.75%2C4909.93%2C4952.53%2C4990.07%2C4949.59%2C5084.85%2C5170.81%2C5221.25%2C5224.36%5D%2CborderColor%3A%27red%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D"></div>
             </div>
+            <!-- 2. KOSDAQ -->
+            <div class="metric-card">
+                <h2>🇰🇷 KOSDAQ</h2>
+                <div class="price">1,149.44</div>
+                <div class="change"><span class='text-blue'>-14.97 (-1.29%)</span></div>
+                <div class="chart-area"><img class="chart-img" src="https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B945.57%2C957.50%2C955.97%2C947.39%2C944.06%2C947.92%2C949.81%2C948.98%2C942.18%2C951.16%2C954.59%2C968.36%2C976.37%2C951.29%2C970.35%2C993.93%2C1064.41%2C1082.59%2C1133.52%2C1164.41%2C1149.44%5D%2CborderColor%3A%27red%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D"></div>
+            </div>
+            <!-- 3. S&P 500 -->
             <div class="metric-card">
                 <h2>🇺🇸 S&P 500</h2>
-                <div class="price">6,937.50</div>
-                <div class="change"><span class='text-red'>+14.61 (+0.21%)</span></div>
+                <div class="price">6,939.03</div>
+                <div class="change"><span class='text-blue'>-29.98 (-0.43%)</span></div>
                 <div class="chart-area"><img class="chart-img" src="https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B6845.50%2C6858.47%2C6902.05%2C6944.82%2C6920.93%2C6921.46%2C6966.28%2C6977.27%2C6963.74%2C6926.60%2C6944.47%2C6940.01%2C6796.86%2C6875.62%2C6913.35%2C6915.61%2C6950.23%2C6978.60%2C6978.03%2C6969.01%2C6939.03%5D%2CborderColor%3A%27red%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D"></div>
             </div>
+            <!-- 4. NASDAQ -->
+            <div class="metric-card">
+                <h2>🇺🇸 NASDAQ</h2>
+                <div class="price">23,461.82</div>
+                <div class="change"><span class='text-blue'>-223.30 (-0.94%)</span></div>
+                <div class="chart-area"><img class="chart-img" src="https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B23241.99%2C23235.63%2C23395.82%2C23547.17%2C23584.28%2C23480.02%2C23671.35%2C23733.90%2C23709.87%2C23471.75%2C23530.02%2C23515.39%2C22954.32%2C23224.82%2C23436.02%2C23501.24%2C23601.36%2C23817.10%2C23857.45%2C23685.12%2C23461.82%5D%2CborderColor%3A%27red%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D"></div>
+            </div>
+            <!-- 5. Gold -->
+            <div class="metric-card">
+                <h2>🥇 Gold</h2>
+                <div class="price">5,067.50</div>
+                <div class="change"><span class='text-blue'>-250.90 (-4.72%)</span></div>
+                <div class="chart-area"><img class="chart-img" src="https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B4314.40%2C4436.90%2C4482.20%2C4449.30%2C4449.70%2C4490.30%2C4604.30%2C4589.20%2C4626.30%2C4616.30%2C4588.40%2C4759.60%2C4831.80%2C4908.80%2C4976.20%2C5079.70%2C5079.90%2C5301.60%2C5318.40%2C5067.50%5D%2CborderColor%3A%27gold%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D"></div>
+            </div>
+            <!-- 6. Silver -->
+            <div class="metric-card">
+                <h2>🥈 Silver</h2>
+                <div class="price">98.50</div>
+                <div class="change"><span class='text-blue'>-15.54 (-13.62%)</span></div>
+                <div class="chart-area"><img class="chart-img" src="https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B70.56%2C76.16%2C80.53%2C77.14%2C74.72%2C78.88%2C84.61%2C85.88%2C90.87%2C91.88%2C88.09%2C94.21%2C92.21%2C95.98%2C100.93%2C115.08%2C105.52%2C113.11%2C114.04%2C98.50%5D%2CborderColor%3A%27silver%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D"></div>
+            </div>
+            <!-- 7. USD/KRW -->
             <div class="metric-card">
                 <h2>💵 USD/KRW</h2>
-                <div class="price">1,450.29 원</div>
-                <div class="change"><span class='text-red'>+0.32 (+0.02%)</span></div>
-                <div class="chart-area"><img class="chart-img" src="https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B1434.71%2C1437.91%2C1443.64%2C1440.48%2C1445.56%2C1444.96%2C1446.14%2C1450.08%2C1455.24%2C1464.93%2C1473.01%2C1462.90%2C1468.84%2C1471.58%2C1471.52%2C1477.78%2C1464.83%2C1463.26%2C1444.81%2C1440.98%2C1432.51%2C1429.27%2C1450.29%5D%2CborderColor%3A%27green%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D"></div>
+                <div class="price">1,445.17 원</div>
+                <div class="change"><span class='text-red'>+15.90 (+1.11%)</span></div>
+                <div class="chart-area"><img class="chart-img" src="https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B1443.64%2C1440.48%2C1445.56%2C1444.96%2C1446.14%2C1450.08%2C1455.24%2C1464.93%2C1473.01%2C1462.90%2C1468.84%2C1471.58%2C1471.52%2C1477.78%2C1464.83%2C1463.26%2C1444.81%2C1440.98%2C1432.51%2C1429.27%2C1445.17%5D%2CborderColor%3A%27green%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D"></div>
             </div>
         </div>
 
@@ -93,24 +336,25 @@
                 <div style="height: 600px;">
                     <div class="tradingview-widget-container" style="height:100%;width:100%">
                         <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
-                        {
-                            "exchanges": [],
-                            "dataSource": "SPX500",
-                            "grouping": "sector",
-                            "blockSize": "market_cap_basic",
-                            "blockColor": "change",
-                            "locale": "kr",
-                            "symbolUrl": "",
-                            "colorTheme": "light",
-                            "hasTopBar": false,
-                            "isDataSetEnabled": false,
-                            "isZoomEnabled": true,
-                            "hasSymbolTooltip": true,
-                            "width": "100%",
-                            "height": "100%"
-                        }
-                        </script>
+                        <script type="text/javascript"
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+                                {
+                                    "exchanges": [],
+                                        "dataSource": "SPX500",
+                                            "grouping": "sector",
+                                                "blockSize": "market_cap_basic",
+                                                    "blockColor": "change",
+                                                        "locale": "kr",
+                                                            "symbolUrl": "",
+                                                                "colorTheme": "light",
+                                                                    "hasTopBar": false,
+                                                                        "isDataSetEnabled": false,
+                                                                            "isZoomEnabled": true,
+                                                                                "hasSymbolTooltip": true,
+                                                                                    "width": "100%",
+                                                                                        "height": "100%"
+                                }
+                            </script>
                     </div>
                 </div>
             </div>
@@ -119,19 +363,22 @@
                 <div class="box-header">
                     <span>🇰🇷 한국 주요 종목 (KOSPI Top)</span>
                 </div>
-                <table class='stock-table'><thead><tr><th>종목명</th><th>현재가</th><th>등락률</th><th>추세(1달)</th></tr></thead><tbody><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=005930', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>삼성전자 🔗</span><span class='stock-code'>005930.KS</span></td><td class='stock-price'>160,500원</td><td><span class='bg-blue-light text-blue'>-0.12%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B119900.00%2C128500.00%2C138100.00%2C138900.00%2C141000.00%2C138800.00%2C139000.00%2C138800.00%2C137600.00%2C140300.00%2C143900.00%2C148900.00%2C149300.00%2C145200.00%2C149500.00%2C152300.00%2C152100.00%2C152100.00%2C159500.00%2C162400.00%2C160700.00%2C160500.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=000660', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>SK하이닉스 🔗</span><span class='stock-code'>000660.KS</span></td><td class='stock-price'>909,000원</td><td><span class='bg-red-light text-red'>+5.57%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B651000.00%2C677000.00%2C696000.00%2C726000.00%2C742000.00%2C756000.00%2C744000.00%2C749000.00%2C738000.00%2C742000.00%2C749000.00%2C756000.00%2C764000.00%2C743000.00%2C740000.00%2C755000.00%2C767000.00%2C736000.00%2C800000.00%2C841000.00%2C861000.00%2C909000.00%5D%2CborderColor%3A%27red%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=373220', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>LG에너지솔루션 🔗</span><span class='stock-code'>373220.KS</span></td><td class='stock-price'>398,000원</td><td><span class='bg-blue-light text-blue'>-4.44%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B368500.00%2C361000.00%2C371500.00%2C378000.00%2C370500.00%2C366000.00%2C363000.00%2C379000.00%2C394000.00%2C389500.00%2C392000.00%2C391000.00%2C398500.00%2C403000.00%2C394500.00%2C417000.00%2C412000.00%2C416000.00%2C408500.00%2C431000.00%2C416500.00%2C398000.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=207940', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>삼성바이오로직스 🔗</span><span class='stock-code'>207940.KS</span></td><td class='stock-price'>1,745,000원</td><td><span class='bg-blue-light text-blue'>-1.75%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B1695000.00%2C1683000.00%2C1713000.00%2C1721000.00%2C1767000.00%2C1885000.00%2C1878000.00%2C1859000.00%2C1908000.00%2C1927000.00%2C1965000.00%2C1947000.00%2C1921000.00%2C1920000.00%2C1873000.00%2C1778000.00%2C1802000.00%2C1807000.00%2C1790000.00%2C1791000.00%2C1776000.00%2C1745000.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=005380', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>현대차 🔗</span><span class='stock-code'>005380.KS</span></td><td class='stock-price'>500,000원</td><td><span class='bg-blue-light text-blue'>-5.30%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B296500.00%2C298500.00%2C304500.00%2C308000.00%2C350500.00%2C340500.00%2C366000.00%2C367000.00%2C406000.00%2C411500.00%2C422000.00%2C413000.00%2C480000.00%2C479000.00%2C549000.00%2C529000.00%2C510000.00%2C492500.00%2C488500.00%2C492500.00%2C528000.00%2C500000.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=005490', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>POSCO홀딩스 🔗</span><span class='stock-code'>005490.KS</span></td><td class='stock-price'>347,500원</td><td><span class='bg-blue-light text-blue'>-4.53%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B305000.00%2C297500.00%2C302500.00%2C304000.00%2C308000.00%2C300500.00%2C304000.00%2C309500.00%2C352500.00%2C345000.00%2C351500.00%2C331500.00%2C347500.00%2C357500.00%2C351000.00%2C359500.00%2C368000.00%2C365000.00%2C359500.00%2C378000.00%2C364000.00%2C347500.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=000270', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>기아 🔗</span><span class='stock-code'>000270.KS</span></td><td class='stock-price'>152,600원</td><td><span class='bg-blue-light text-blue'>-1.48%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B121800.00%2C120600.00%2C122600.00%2C122500.00%2C129300.00%2C124900.00%2C133200.00%2C129300.00%2C136000.00%2C143000.00%2C152500.00%2C151100.00%2C169500.00%2C163900.00%2C172100.00%2C164600.00%2C159000.00%2C155200.00%2C153500.00%2C149700.00%2C154900.00%2C152600.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=035420', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>NAVER 🔗</span><span class='stock-code'>035420.KS</span></td><td class='stock-price'>275,000원</td><td><span class='bg-blue-light text-blue'>-4.18%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B242500.00%2C247000.00%2C249500.00%2C260000.00%2C252500.00%2C251000.00%2C254000.00%2C255500.00%2C264500.00%2C259500.00%2C247500.00%2C245500.00%2C238000.00%2C244000.00%2C238500.00%2C245500.00%2C266000.00%2C272500.00%2C281500.00%2C277500.00%2C287000.00%2C275000.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr></tbody></table>
+                <table class='stock-table'><thead><tr><th>종목명</th><th>현재가</th><th>등락률</th><th>추세(1달)</th></tr></thead><tbody><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=005930', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>삼성전자 🔗</span><span class='stock-code'>005930.KS</span></td><td class='stock-price'>160,500원</td><td><span class='bg-blue-light text-blue'>-0.12%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B128500.00%2C138100.00%2C138900.00%2C141000.00%2C138800.00%2C139000.00%2C138800.00%2C137600.00%2C140300.00%2C143900.00%2C148900.00%2C149300.00%2C145200.00%2C149500.00%2C152300.00%2C152100.00%2C152100.00%2C159500.00%2C162400.00%2C160700.00%2C160500.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=000660', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>SK하이닉스 🔗</span><span class='stock-code'>000660.KS</span></td><td class='stock-price'>909,000원</td><td><span class='bg-red-light text-red'>+5.57%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B677000.00%2C696000.00%2C726000.00%2C742000.00%2C756000.00%2C744000.00%2C749000.00%2C738000.00%2C742000.00%2C749000.00%2C756000.00%2C764000.00%2C743000.00%2C740000.00%2C755000.00%2C767000.00%2C736000.00%2C800000.00%2C841000.00%2C861000.00%2C909000.00%5D%2CborderColor%3A%27red%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=373220', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>LG에너지솔루션 🔗</span><span class='stock-code'>373220.KS</span></td><td class='stock-price'>398,000원</td><td><span class='bg-blue-light text-blue'>-4.44%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B361000.00%2C371500.00%2C378000.00%2C370500.00%2C366000.00%2C363000.00%2C379000.00%2C394000.00%2C389500.00%2C392000.00%2C391000.00%2C398500.00%2C403000.00%2C394500.00%2C417000.00%2C412000.00%2C416000.00%2C408500.00%2C431000.00%2C416500.00%2C398000.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=207940', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>삼성바이오로직스 🔗</span><span class='stock-code'>207940.KS</span></td><td class='stock-price'>1,745,000원</td><td><span class='bg-blue-light text-blue'>-1.75%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B1683000.00%2C1713000.00%2C1721000.00%2C1767000.00%2C1885000.00%2C1878000.00%2C1859000.00%2C1908000.00%2C1927000.00%2C1965000.00%2C1947000.00%2C1921000.00%2C1920000.00%2C1873000.00%2C1778000.00%2C1802000.00%2C1807000.00%2C1790000.00%2C1791000.00%2C1776000.00%2C1745000.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=005380', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>현대차 🔗</span><span class='stock-code'>005380.KS</span></td><td class='stock-price'>500,000원</td><td><span class='bg-blue-light text-blue'>-5.30%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B298500.00%2C304500.00%2C308000.00%2C350500.00%2C340500.00%2C366000.00%2C367000.00%2C406000.00%2C411500.00%2C422000.00%2C413000.00%2C480000.00%2C479000.00%2C549000.00%2C529000.00%2C510000.00%2C492500.00%2C488500.00%2C492500.00%2C528000.00%2C500000.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=005490', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>POSCO홀딩스 🔗</span><span class='stock-code'>005490.KS</span></td><td class='stock-price'>347,500원</td><td><span class='bg-blue-light text-blue'>-4.53%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B297500.00%2C302500.00%2C304000.00%2C308000.00%2C300500.00%2C304000.00%2C309500.00%2C352500.00%2C345000.00%2C351500.00%2C331500.00%2C347500.00%2C357500.00%2C351000.00%2C359500.00%2C368000.00%2C365000.00%2C359500.00%2C378000.00%2C364000.00%2C347500.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=000270', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>기아 🔗</span><span class='stock-code'>000270.KS</span></td><td class='stock-price'>152,600원</td><td><span class='bg-blue-light text-blue'>-1.48%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B120600.00%2C122600.00%2C122500.00%2C129300.00%2C124900.00%2C133200.00%2C129300.00%2C136000.00%2C143000.00%2C152500.00%2C151100.00%2C169500.00%2C163900.00%2C172100.00%2C164600.00%2C159000.00%2C155200.00%2C153500.00%2C149700.00%2C154900.00%2C152600.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr><tr onclick="window.open('https://finance.naver.com/item/main.naver?code=035420', '_blank')" style="cursor:pointer;"><td><span class='stock-name'>NAVER 🔗</span><span class='stock-code'>035420.KS</span></td><td class='stock-price'>275,000원</td><td><span class='bg-blue-light text-blue'>-4.18%</span></td><td><img src='https://quickchart.io/chart?c=%7Btype%3A%27sparkline%27%2Cdata%3A%7Bdatasets%3A%5B%7Bdata%3A%5B247000.00%2C249500.00%2C260000.00%2C252500.00%2C251000.00%2C254000.00%2C255500.00%2C264500.00%2C259500.00%2C247500.00%2C245500.00%2C238000.00%2C244000.00%2C238500.00%2C245500.00%2C266000.00%2C272500.00%2C281500.00%2C277500.00%2C287000.00%2C275000.00%5D%2CborderColor%3A%27blue%27%2CborderWidth%3A2%2Cfill%3Afalse%2CpointRadius%3A0%7D%5D%7D%7D' style='height:30px; width:80px;'></td></tr></tbody></table>
             </div>
         </div>
 
         <div class="news-section">
             <div class="news-header" style="display:flex; justify-content:space-between; align-items:center;">
                 <span>📰 아침 뉴스 브리핑 (Brief)</span>
-                <a href="news.html" style="background:#e7f5ff; color:#1971c2; text-decoration:none; font-size:0.85rem; padding:6px 12px; border-radius:6px; font-weight:bold;">
+                <a href="news.html"
+                    style="background:#e7f5ff; color:#1971c2; text-decoration:none; font-size:0.85rem; padding:6px 12px; border-radius:6px; font-weight:bold;">
                     전체 뉴스 보기 >
                 </a>
             </div>
             <div class="news-grid">
-                <div class='news-category'><h4><span class='badge'>🤖 휴머노이드</span></h4><ul class='news-list'><li class='news-item'><a href='https://www.therobotreport.com/evolving-robot-standards-mean-cobots-implementations/' target='_blank'>ROBOT_STANDARDIZATION_ IMPACT_ON_COBOT_IMPLEMENTATION</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>로봇 표준의 진화는 코봇 설계자에게 향상된 안전성과 더 많은 기능성을 제공하는 기회를 제공한다는 IDEC의 말에 따르면, 새로운 로봇 표준은 코봇 구현을 개선하게 할 것이다.</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>The Robot Report | 2026-02-01</div></li><li class='news-item'><a href='https://news.google.com/rss/articles/CBMiakFVX3lxTE1DM19EWUpmS0VsQ01uWXpJNFNrMGV2cDVRU09VNXpBenYtY3o3aVZOSElCeHJYTXpGeWFhOEh0ZmxucjlNLUlCdjhDY0hLYm1jMU9CUWh6R204QUNFcmxDXzBOTGg1MS1EQ0E?oc=5' target='_blank'>Unitree Humanoid Robot</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>Unitree의 인간 로봇이 23만 달러에 대한 한국 슈퍼마켓에서 판매 개시됨. 이 로봇은 인공 지능(AI) 기술을 활용하여 인간과 같은 움직임을 보이며, 4,000만 킬로칼리(4,000,000 kcal)의 에너지를 저장할 수 있는 배터리를 갖추고 있다.</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>Google News (Humanoid) | 2026-02-01</div></li><li class='news-item'><a href='https://techxplore.com/news/2026-01-legged-robots-dogs.html' target='_blank'>robots의 4각지구 교육 ~ robots</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>로봇이 가구, 공공 공간 및 전문 환경에 점점 더 많은 곳으로 들어가게 될 것으로 예상된다. 이러한 가장先進하고도망중인 로봇은 중앙 구조체와 이에 부착된 다리로 구성되는 구녕 로봇 등다.</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>Tech Xplore | 2026-01-31</div></li><li class='news-item'><a href='https://techxplore.com/news/2026-01-smelly-snapshot-current-state-electronic.html' target='_blank'>ROBOT OLFACTION 기술의 현황</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>로봇이 향상된 냄새 인식에 힘입어, 전자 코іль(E-nose)가 더 민감하고 냄새 원인 indentifying 능력을 갖추고 있어. 이 기술의 개선은 검색 및 구조 구출 임무에서부터 유해 가스 누출 감지 등 다양한 분야에서 향상에 기여함을 강조함.</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>Tech Xplore | 2026-01-31</div></li></ul></div><div class='news-category'><h4><span class='badge'>🦾 핸드/그리퍼</span></h4><ul class='news-list'><li class='news-item'><a href='https://news.google.com/rss/articles/CBMiakFVX3lxTE9qeTlHbjlLN0xodXlrNC02S3ZsY3RuRGRDSlV6ZjBMeU5Db3BqTDZlcVl6azQtUVN2cG85WjVrV1dVOENydGNaSDRQUkphLUN2QWM4NEp1bnNMUFk3dG1BLVd2MVhRWjI4bWc?oc=5' target='_blank'>로보틱 핸즈가 감각할 수 있는 로보틱 퀀트 ~</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>인간 TOUCH를 향한 인형 로봇의 발전을 촉진하는 로보틱 퀀트(Robotiq)가 로보틱 핸즈를 개발했음. 이 로보틱 핸즈는 인간 손과 유사한 감각 기능을 보유하고, 로보틱 퀀트의 Humanoid Robots에 적용할 계획임.
+                <div class='news-category'><h4><span class='badge'>📈 증시/경제</span></h4><ul class='news-list'><li class='news-item'><a href='https://news.google.com/rss/articles/CBMiXkFVX3lxTE9kV2xqNWxvN3FraFhzS0xndnRrNXdRdkYzTkxGXzBjcXFnSWhiTEQ2c2xyRzlSdnZqY0tPNzN6WjV2d1lGcjhQa20tMmFUNWRfQmJqRGFCZ1pUbjlXT2c?oc=5' target='_blank'>Koo Yoon-cheol “U.S. 금리정책 안정... 세제정책 불확실성 주시함”</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>2023년 U.S. 금리정책이 예상대로 유지됨에 따라 세계 경제 시장의 관심이 집중되는 가운데, 미국과 한국의 세제정책 불확실성이 주요懸念거리임을 강조한 Koo Yoon-cheol의 언급이다.</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>📈 국내외 증시 | 2026-01-29</div></li><li class='news-item'><a href='https://news.google.com/rss/articles/CBMiU0FVX3lxTE8tUENnTWRFLTRYNzlGdndBM0dzZV9MMkVMTklzTXFndHdVVGRtajdJaDZtUWVRWVR3UmRVSFBjLVNacnA1MDRkbmVVVmRfSHhmeHZR?oc=5' target='_blank'>KT Economy ~2%</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>KCMI가 올해 한국 경제 성장률을 2%로 예측했다. 이 dự측은 4분기 GDP 성장률의 회복과 주요 산업의 호조를 반영하는 것으로 분석된다.</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>📈 국내외 증시 | 2026-01-28</div></li><li class='news-item'><a href='https://news.google.com/rss/articles/CBMiXkFVX3lxTE1pVHBabm1lTzY4ZHlRemJLNi1qVEpjQVZfdWFXUG9mM1F0bzdXY3dwM0xZaVo0bVlHamxNVm5yRFF3V0N5VkdqdlkyTW1yTklGa3hGSVpEcUc2bUN1VFE?oc=5' target='_blank'>Coupang의 이익과 미국 로비… 트럼프를 설득한 것은 아닌가?</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>Coupang은 한국에서 이익을 벌이는 한편, 미국에서는 정치적 영향을 미칠 수 있는 강력한 로비 활동을 펼치고 있었다. 이 중에 어떤 영향이 있었는지는 아직 알려지지 않았다.</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>📈 국내외 증시 | 2026-01-28</div></li><li class='news-item'><a href='https://news.google.com/rss/articles/CBMi2wFBVV95cUxPY1BUQjcweF93cWFEVzJsWHZBczg1ZWJiZWFpOVl1bXBkb0Z4SGN1eG1wWndBUlI2VzF3OUVrRUlZbExkaEk0RGlVbDgzVnJXYkZ1Yy0taEJBQ04yckpudXhBOFNTNDRlaVd1MXlwal9Qenh3UmJTRFpEdjR6Zm5HU1ZrSlI1OHBLSXQ0ZUpfZ1VNZHFPNldZVmJYTWlGbVcxaFlZVnRpeTJ1OFF0aTNFNGpnUVVTTDZKTHB4VUh4bndoSVd2eTlOaU5ZMzEya0kwMXdrNnlaU0RDWGM?oc=5' target='_blank'>KOR Stocks Market Rally~함</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>stock market rally는 최근에 있어도 불안정성이 따라온다. 2022년 1월 말부터 4월까지의 주가 상승은 있지만, 이 기간 동안의 표준편차는 5.3%로 이는 2017년 이후 가장 높은 수치이다. 이러한 불안정성은 투자자의 분위기를 악화시키고 있다.
+
+(Note: I followed the formatting rules and translated the title and summarized the content according to the instructions.)</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>📈 국내외 증시 | 2025-11-13</div></li></ul></div><div class='news-category'><h4><span class='badge'>🤖 휴머노이드</span></h4><ul class='news-list'><li class='news-item'><a href='https://www.therobotreport.com/evolving-robot-standards-mean-cobots-implementations/' target='_blank'>ROBOT_STANDARDIZATION_ IMPACT_ON_COBOT_IMPLEMENTATION</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>로봇 표준의 진화는 코봇 설계자에게 향상된 안전성과 더 많은 기능성을 제공하는 기회를 제공한다는 IDEC의 말에 따르면, 새로운 로봇 표준은 코봇 구현을 개선하게 할 것이다.</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>The Robot Report | 2026-02-01</div></li><li class='news-item'><a href='https://news.google.com/rss/articles/CBMiakFVX3lxTE1DM19EWUpmS0VsQ01uWXpJNFNrMGV2cDVRU09VNXpBenYtY3o3aVZOSElCeHJYTXpGeWFhOEh0ZmxucjlNLUlCdjhDY0hLYm1jMU9CUWh6R204QUNFcmxDXzBOTGg1MS1EQ0E?oc=5' target='_blank'>Unitree Humanoid Robot</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>Unitree의 인간 로봇이 23만 달러에 대한 한국 슈퍼마켓에서 판매 개시됨. 이 로봇은 인공 지능(AI) 기술을 활용하여 인간과 같은 움직임을 보이며, 4,000만 킬로칼리(4,000,000 kcal)의 에너지를 저장할 수 있는 배터리를 갖추고 있다.</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>Google News (Humanoid) | 2026-02-01</div></li><li class='news-item'><a href='https://techxplore.com/news/2026-01-legged-robots-dogs.html' target='_blank'>robots의 4각지구 교육 ~ robots</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>로봇이 가구, 공공 공간 및 전문 환경에 점점 더 많은 곳으로 들어가게 될 것으로 예상된다. 이러한 가장先進하고도망중인 로봇은 중앙 구조체와 이에 부착된 다리로 구성되는 구녕 로봇 등다.</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>Tech Xplore | 2026-01-31</div></li><li class='news-item'><a href='https://techxplore.com/news/2026-01-smelly-snapshot-current-state-electronic.html' target='_blank'>ROBOT OLFACTION 기술의 현황</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>로봇이 향상된 냄새 인식에 힘입어, 전자 코іль(E-nose)가 더 민감하고 냄새 원인 indentifying 능력을 갖추고 있어. 이 기술의 개선은 검색 및 구조 구출 임무에서부터 유해 가스 누출 감지 등 다양한 분야에서 향상에 기여함을 강조함.</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>Tech Xplore | 2026-01-31</div></li></ul></div><div class='news-category'><h4><span class='badge'>🦾 핸드/그리퍼</span></h4><ul class='news-list'><li class='news-item'><a href='https://news.google.com/rss/articles/CBMiakFVX3lxTE9qeTlHbjlLN0xodXlrNC02S3ZsY3RuRGRDSlV6ZjBMeU5Db3BqTDZlcVl6azQtUVN2cG85WjVrV1dVOENydGNaSDRQUkphLUN2QWM4NEp1bnNMUFk3dG1BLVd2MVhRWjI4bWc?oc=5' target='_blank'>로보틱 핸즈가 감각할 수 있는 로보틱 퀀트 ~</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>인간 TOUCH를 향한 인형 로봇의 발전을 촉진하는 로보틱 퀀트(Robotiq)가 로보틱 핸즈를 개발했음. 이 로보틱 핸즈는 인간 손과 유사한 감각 기능을 보유하고, 로보틱 퀀트의 Humanoid Robots에 적용할 계획임.
 
 (Note: I followed the instruction to translate the title into natural, professional Korean and summarize the content into 2-3 concise sentences. The tone and style are formal, objective, and in nouns.)</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>Google News (Humanoid) | 2026-01-31</div></li><li class='news-item'><a href='https://arxiv.org/abs/2601.21394' target='_blank'>Towards Space-Based Environmentally-Adaptive Grasping</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>한국 우주 기반 환경 적응적 잡기 방안</div><div style='font-size:0.8rem; color:#999; margin-top:2px;'>ArXiv (Robotics) | 2026-01-30</div></li><li class='news-item'><a href='https://arxiv.org/abs/2601.21416' target='_blank'>**Spotlighting Task-Relevant Features: Object-Centric Representations for Better Generalization in Robotic Manipulation**</a><div style='font-size:0.9rem; color:#666; margin-top:4px;'>**robotic manipulation 정책의 일반화능력 향상을 위한 task-relevant 특징 고찰: Slot-Based Object-Centric Representations (SBOCR)**
 
@@ -145,4 +392,5 @@ The paper explores the impact of visual representations on robotic manipulation 
         </footer>
     </div>
 </body>
+
 </html>
