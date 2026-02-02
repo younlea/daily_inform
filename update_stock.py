@@ -55,7 +55,11 @@ def load_archive():
 # ==========================================
 print("1. 시장 데이터 수집 (Hourly Update)...")
 kospi_val, kospi_chg, kospi_chart = get_metric_data("^KS11", "red")
+kosdaq_val, kosdaq_chg, kosdaq_chart = get_metric_data("^KQ11", "red")
 sp500_val, sp500_chg, sp500_chart = get_metric_data("^GSPC", "red")
+nasdaq_val, nasdaq_chg, nasdaq_chart = get_metric_data("^IXIC", "red")
+gold_val, gold_chg, gold_chart = get_metric_data("GC=F", "gold")
+silver_val, silver_chg, silver_chart = get_metric_data("SI=F", "silver")
 usdkrw_val, usdkrw_chg, usdkrw_chart = get_metric_data("KRW=X", "green")
 
 korea_tickers = [
@@ -124,7 +128,11 @@ with open('template.html', 'r', encoding='utf-8') as f:
 
 output_main = template.replace('{{LAST_UPDATED}}', now_str)
 output_main = output_main.replace('{{KOSPI_VAL}}', kospi_val).replace('{{KOSPI_CHANGE}}', kospi_chg).replace('{{KOSPI_CHART}}', kospi_chart)
+output_main = output_main.replace('{{KOSDAQ_VAL}}', kosdaq_val).replace('{{KOSDAQ_CHANGE}}', kosdaq_chg).replace('{{KOSDAQ_CHART}}', kosdaq_chart)
 output_main = output_main.replace('{{SP500_VAL}}', sp500_val).replace('{{SP500_CHANGE}}', sp500_chg).replace('{{SP500_CHART}}', sp500_chart)
+output_main = output_main.replace('{{NASDAQ_VAL}}', nasdaq_val).replace('{{NASDAQ_CHANGE}}', nasdaq_chg).replace('{{NASDAQ_CHART}}', nasdaq_chart)
+output_main = output_main.replace('{{GOLD_VAL}}', gold_val).replace('{{GOLD_CHANGE}}', gold_chg).replace('{{GOLD_CHART}}', gold_chart)
+output_main = output_main.replace('{{SILVER_VAL}}', silver_val).replace('{{SILVER_CHANGE}}', silver_chg).replace('{{SILVER_CHART}}', silver_chart)
 output_main = output_main.replace('{{USDKRW_VAL}}', usdkrw_val).replace('{{USDKRW_CHANGE}}', usdkrw_chg).replace('{{USDKRW_CHART}}', usdkrw_chart)
 output_main = output_main.replace('{{KOREA_MARKET_HTML}}', korea_table_html)
 output_main = output_main.replace('{{NEWS_CONTENT}}', main_news_html)
