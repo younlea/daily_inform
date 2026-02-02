@@ -81,6 +81,42 @@
     "summary": "MemoryVLA는 비MARKOV의 로봇 조작을 위한 cognition-memory-action 프레임워크를 제안합니다. 이를 통해 150여개의 시뮬레이션과 실제 세계 태스크에서 성공률 71.9%, 72.7%, 96.5%, 41.2%를 기록했으며, CogACT와 pi-0보다 14.6퍼센트 이상 높게 성과를 내었습니다."
   },
   {
+    "title": "Temporally Coherent Imitation Learning via Latent Action Flow Matching for Robotic Manipulation",
+    "original_title": "Temporally Coherent Imitation Learning via Latent Action Flow Matching for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2601.23087",
+    "date": "2026-02-02 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 조작을 위한 일시적 일관성 이mitation learning 방법: 잠재 행위 흐름 매칭을 통한 로봇 조작 성능 개선\n이 연구는 로봇 조작의 장거리 예측을 가능하게 하는 새로운 이mitation learning 프레임워크를 제안함으로써 existing generative policies에 의해 발생하는 문제점을 해결하고자 함. proposed LG-Flow Policy framework은 행위 흐름을 위한 잠재 공간에서 flow matching을 수행하여 로봇 조작의 안정적 실행을 가능하게 하여 장거리 예측 성능을 개선함."
+  },
+  {
+    "title": "RN-D: 디스クリ타이즈드 카테고리 액터와 정규화된 네트워크를 위한 온-폴리시 레인포싱 러닝",
+    "original_title": "RN-D: Discretized Categorical Actors with Regularized Networks for On-Policy Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2601.23075",
+    "date": "2026-02-02 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고정 인공 일반적 구현은 보통 가우시안 액터와 얕은 MLP 정책을 사용하는데, noise의 경향과 보수적인 정책 업데이트가 필요할 때 옵티마이즈가 easily break되므로. 이 논문에서는 온-폴리시 최적화의 첫 번째 설계 선택으로 정책 표현을 재visit하는 것으로, 각 액션 차원에 대한 분포를 이용하여 cross-entropy 손실과 유사한 정책 대상-objective를 얻는 디스クリ타이즈드 카테고리 액터를 연구하고 있다. 이 논문에서는 또한 정규화된 액터 네트워크를 제안하며, 비평자 설계를 고정시키면서 supervise learning의 아키텍처적 진전을 기반으로 한다. 실험 결과는 디스クリ타이즈드 정규화 액터를 표준 액터 네트워크와 대체하면 다양한连續제어 벤치마크에서 일관되게 성과를 얻을 수 있으며, 현재의 최고 성과를 달성할 수 있다."
+  },
+  {
+    "title": "FlowCalib: LiDAR-to-Vehicle Miscalibration Detection using Scene Flows",
+    "original_title": "FlowCalib: LiDAR-to-Vehicle Miscalibration Detection using Scene Flows",
+    "link": "https://arxiv.org/abs/2601.23107",
+    "date": "2026-02-02 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "自율주행을 위한 LiDAR 센서의 정확한 정렬은 안전성을 보장하는 데 중요함. LiDAR 센서의 각도 불일치가 자율주행 중 발생할 수 있는 위험적인 문제를 일으키는 것은 물론이나, 현재의 방법들은 이 오류의 원인으로 sensor-to-sensor 오류를 고치는 데 초점을 맞추고 있다. 우리는 FlowCalib를 introduce, LiDAR-to-vehicle 불일치를 scene flow에서 motion cues를 사용하여 감지하는 첫 번째 프레임워크를 제안함. 이 접근방식은 3D 점구름의 시퀀셜 데이터로부터 생성된 flow field에 있는 회전 불일치로 인해 발생하는 체계적인 편향을 이용하여 추가 센서가 필요하지 않음으로써 정렬이 수행됨._ARCHITECTURE는 neural scene flow prior를 사용하여 flow 추정하고, learned global flow 특징과 handcrafted 기하학적 묘사가融合된 dual-branch detection 네트워크를 갖추고 있음. 이 결합된 표현은 시스템이 2개의 보조 classify 태스크를 수행할 수 있도록 하며, 전역 binary 결정을 통해 불일치가 있는지 판정하고, 각 회전 축에 대한 별도의 binary 결정을 통해 불일치를 판정함. nuScenes 데이터셋에서 실험을 진행하여 FlowCalib의 능력을 확인하고, 센서-to-vehicle 불일치 감지에 대한 벤치마크를 제안함."
+  },
+  {
+    "title": "HAFO: 인텐스 인터렉션 환경에서 인간형 로봇의 강제적 제어 프레임워크",
+    "original_title": "HAFO: A Force-Adaptive Control Framework for Humanoid Robots in Intense Interaction Environments",
+    "link": "https://arxiv.org/abs/2511.20275",
+    "date": "2026-02-02 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "인간형 로봇의 강제적 제어를 개선하기 위해 새로운 프레임워크 HAFO를 제안한다. 이 프레임워크는 강조 학습 알고리즘을 사용하여 두 가지 목표를 동시에 달성하는데, 첫째는 안정적인 보행 전략을 구현하고 둘째는 정확한 상부 조작 전략을 구현하는 것이다. HAFO는 제약된 잔여 액션 공간을 사용하여 이중 에이전트 훈련의 안정성을 개선하고 샘플 효율성을 높였다. 또한, 외부 조항 충격은 스프링-댐퍼 시스템을 사용하여 자세하게 모델링 하여 적 Hlavely한 조작을 통하여 외부 조인트를 제어할 수 있다. 실험 결과 HAFO는 하나의 이중 에이전트 정책으로 인간형 로봇의 전신 제어를 Across Diverse Force-Interaction Environments에서 달성하는데, 이는 무게에 대한 부하 및 추진 충격 조건에서도 안정적으로 작동하는 것을 보여준다."
+  },
+  {
     "title": "ROBOT_STANDARDIZATION_ IMPACT_ON_COBOT_IMPLEMENTATION",
     "original_title": "What evolving robot standards mean for implementations of cobots",
     "link": "https://www.therobotreport.com/evolving-robot-standards-mean-cobots-implementations/",
