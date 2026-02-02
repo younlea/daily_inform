@@ -153,6 +153,15 @@
     "summary": "ORB-SLAM3의 정확도를 극한 시점에서 유지하기 위해 VISUAL SLAM을 개선하려면 HAND-CRAFTED ORB 키포인트에 의존해야 한다. SUPERPOINT-SLAM3은 이 문제를 해결하는 DROP-IN UPGRADE로, SELF-SUPERVISED SUPERPOINT DETECTOR-DESCRIPTOR를 사용하여 ORB를 대체하고, 적응적 NON-MAXIMAL SUPPRESSION(ANMS)으로 공간적으로 균일한 키포인트를 강제한다. 또한 LEARNING-BASED LOOP CLOSURE를 위한 LIGHTWEIGHT NETVLAD PLACE-RECOGNITION HEAD를 통합했다. KITTI ODOMETRY 벤치마크에서는 TRANSLATIONAL ERROR가 4.15%에서 0.34%, ROTATIONAL ERROR가 0.0027 deg/m에서 0.0010 deg/m로 줄어들었다. EUROC MAV 데이터셋에서는 모든 시퀀스에서 이 두 에러를 거의 절반으로 줄였다."
   },
   {
+    "title": "Multi-agent Coordination via Flow Matching",
+    "original_title": "Multi-agent Coordination via Flow Matching",
+    "link": "https://arxiv.org/abs/2511.05005",
+    "date": "2026-02-02 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.05005v2 Announce Type: replace-cross \nAbstract: This work presents MAC-Flow, a simple yet expressive framework for multi-agent coordination. We argue that requirements of effective coordination are twofold: (i) a rich representation of the diverse joint behaviors present in offline data and (ii) the ability to act efficiently in real time. However, prior approaches often sacrifice one for the other, i.e., denoising diffusion-based solutions capture complex coordination but are computationally slow, while Gaussian policy-based solutions are fast but brittle in handling multi-agent interaction. MAC-Flow addresses this trade-off by first learning a flow-based representation of joint behaviors, and then distilling it into decentralized one-step policies that preserve coordination while enabling fast execution. Across four different benchmarks, including $12$ environments and $34$ datasets, MAC-Flow alleviates the trade-off between performance and computational cost, specifically achieving about $\\boldsymbol{\\times14.5}$ faster inference compared to diffusion-based MARL methods, while maintaining good performance. At the same time, its inference speed is similar to that of prior Gaussian policy-based offline multi-agent reinforcement learning (MARL) methods."
+  },
+  {
     "title": "ROBOT_STANDARDIZATION_ IMPACT_ON_COBOT_IMPLEMENTATION",
     "original_title": "What evolving robot standards mean for implementations of cobots",
     "link": "https://www.therobotreport.com/evolving-robot-standards-mean-cobots-implementations/",
