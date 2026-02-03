@@ -74,9 +74,16 @@ for code, name, naver_code in korea_tickers:
     try:
         stock = yf.Ticker(code)
         hist = stock.history(period="1mo")
+        hist_hourly = stock.history(period="5d", interval="1h")
+        
         if not hist.empty:
             curr = hist['Close'].iloc[-1]
             prev = hist['Close'].iloc[-2]
+            
+            # hourly 데이터가 있으면 현재가는 덮어쓰기 (더 최신일 확률 높음)
+            if not hist_hourly.empty:
+                curr = hist_hourly['Close'].iloc[-1]
+                
             pct = ((curr - prev) / prev) * 100
             if pct > 0: color_cls, sign, line_color = "bg-red-light text-red", "+", "red"
             elif pct < 0: color_cls, sign, line_color = "bg-blue-light text-blue", "", "blue"
