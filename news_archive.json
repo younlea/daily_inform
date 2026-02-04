@@ -135,6 +135,51 @@
     "summary": "한국 로봇 manos 1-shot demonstration으로 일반화된 이중 manipulaiton을 가능하게 하는 VLBiMan framework를 소개합니다. 이 시스템은 Task-aware decomposition을 통해 reuseable skills을 단일 인간 예시에서 유출하고, Vision-language grounding을 사용하여 adjustable components를 동적으로 조정합니다. \n\n(Note: I followed the instructions strictly and output only the required formatted string.)"
   },
   {
+    "title": "PokeNet: articulated object kinematic 모델링 ~함",
+    "original_title": "PokeNet: Learning Kinematic Models of Articulated Objects from Human Observations",
+    "link": "https://arxiv.org/abs/2602.02741",
+    "date": "2026-02-04 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고성능의 articulated object kinematic modeling framework PokeNet을 소개합니다. 이 framework는 인간 관찰 Sequence를 통해 unknown articulated objects의 joint parameters, manipulation order, 및 time-varying joint states를 예측하고 추정합니다. PokeNet은 existing state-of-the-art methods보다 27% 이상의 성능 향상을 달성하며 다양한 object categories에서 joint axis 및 state estimation 정확도를 개선합니다."
+  },
+  {
+    "title": "로봇 운동 기본 프레임워크: 언어 모델을 로봇 운동에 기반한 мов",
+    "original_title": "Language Movement Primitives: Grounding Language Models in Robot Motion",
+    "link": "https://arxiv.org/abs/2602.02839",
+    "date": "2026-02-04 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇이 자연어 지시서에서 수행하는 새로운 조작 과제를 완수하는 것은 로보틱스 분야의 근본적인 도전과제였습니다. generalize 문제 해결을 위한 foundational 모델은 시각장면 및 언어 이해를 가능하게 하는 대규모 비전 및 언어 모델(VLM)은 또한 태스크를 논리적 단계로 분해할 수 있지만, 그것들은 신체 로봇 운동에 기반하여 수행하는 것을 struggle합니다. 다른 한편으로는 로보틱스 foundation models은 액션 명령을 출력하지만, 새로운 태스크를 성공적으로 수행하려면 domain-specific fine-tuning 또는 경험을 필요로 합니다. 결국, 고급 태스크.reasoning과 저급 운동 제어 사이의 기본적 도전을 해결하기 위해 Language Movement Primitives(LMP) 프레임워크를 제안합니다. LMP는 VLM reasoning을 Dynamic Movement Primitive(DMP) parameterization에 기반한 framework으로, 핵심은 DMP가 해석 가능하게 하는 작은 숫자의 매개 변수를 제공하고 VLM이 이러한 매개 변수를 설정하여 다양한 연속적이고 안정적인 траектор리를 지정할 수 있습니다. LMP pipeline을 사용하여 zero-shot robot manipulation task을 완수하는 데 80%의 성공률을 달성했습니다."
+  },
+  {
+    "title": "Humanoid Whole-Body Control Framework EAGLE 공개됨",
+    "original_title": "Embodiment-Aware Generalist Specialist Distillation for Unified Humanoid Whole-Body Control",
+    "link": "https://arxiv.org/abs/2602.02960",
+    "date": "2026-02-04 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "Humanoid Whole-Body Controller(EAGLE)라는 새로운 프레임워크를 선보였습니다. 이 프레임워크는 다수의 다른 로봇을 제어할 수 있는 싱글 포licy를 생성하는데, 이를 통해 다이나믹스, 도F, кінемати카 토폴로지의 변화에도 적응할 수 있습니다."
+  },
+  {
+    "title": "LAGEA: 언어 지도로부터의 조절된 에이전트",
+    "original_title": "LAGEA: Language Guided Embodied Agents for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2509.23155",
+    "date": "2026-02-04 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 조작에 대한 기초 모델이 목표를 설명하는 데 도움이 되지만, 오늘날의 에이전트는 자신의 실수를 보지 못하는 원칙적인 방법을 lacked. 우리는 자연어를 피드백으로 사용하여 embodied agents가 무엇 잘못 되었는지診断하고 방향을 바꾸게 하는 erro-reasoning 신호를 물어본다. LAGEA.framework을 도입하여 비전 언어 모델(VLM)의 episodic, schema-constrained reflection을 episodic, schema-constrained reflection으로 turning each attempt in concise language로 요약하고, decisive moments in trajectory를 localize하고, feedback agreement와 visual state을 shared representation에서 align하고, goal progress와 feedback agreement을 bounded, step-wise shaping rewards로 convert하여 influence를 modulated by adaptive, failure-aware coefficient. 이 설계는 탐색이 지도로 필요할 때 densities 신호를 early에 내보내고, 기능성 성장과 함께 사라지게 하여 faster convergence를 나타낸다. Meta-World MT10와 Robotic Fetch embodied manipulation benchmark에서 LAGEA는 random goals에서 SOTA methods보다 9.0%의 평균 성공률을 높이고, fixed goals에서는 5.3%, fetch tasks에서는 17%의 성능 향상을 보였으며, 더 빠르게 도달하였다. 이 결과는 우리 가설에 지원을 주고, 언어가 시간에 구조화되고 지면에 기반하여 로봇이 실수를 비추하고 나은 선택을 할 수 있는 메커니즘임을 지지한다."
+  },
+  {
+    "title": "Geometry-aware 4D 비디오 생성",
+    "original_title": "Geometry-aware 4D Video Generation for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2507.01099",
+    "date": "2026-02-04 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 manipulation을 향상시키는 PHYSICAL WORLD의 Understanding과 prediction을 가능하게 하는 새로운 비디오 생성 모델을 제안합니다. 이 모델은 Camera view간 3D consistency를 강제하여 generated 비디오가 Temporally coherent하고 Geometrically consistent함을 보장합니다."
+  },
+  {
     "title": "포스코가 강철공장에 인공지능인간로봇을 배치할 것임",
     "original_title": "‘Will humanoid robots be formally hired?’… POSCO moves to deploy ‘humanoid robots’ at steelworks - 경향신문",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1QQ1VJQmxOMGc1c2E0Z3dXRno3U3NqaW9LOHpoZXBoVC1GZFMxdURMMjkwVFdjc1ZLZUJPeGZQR0ZqLWxEYzF0VGpFb2VHSzc1NkNCTnRpak52YVVrQmc?oc=5",
