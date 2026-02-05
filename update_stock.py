@@ -62,37 +62,7 @@ gold_val, gold_chg, gold_chart = get_metric_data("GC=F", "gold")
 silver_val, silver_chg, silver_chart = get_metric_data("SI=F", "silver")
 usdkrw_val, usdkrw_chg, usdkrw_chart = get_metric_data("KRW=X", "green")
 
-korea_tickers = [
-    ('005930.KS', '삼성전자', '005930'), ('000660.KS', 'SK하이닉스', '000660'),
-    ('373220.KS', 'LG에너지솔루션', '373220'), ('207940.KS', '삼성바이오로직스', '207940'),
-    ('005380.KS', '현대차', '005380'), ('005490.KS', 'POSCO홀딩스', '005490'),
-    ('000270.KS', '기아', '000270'), ('035420.KS', 'NAVER', '035420')
-]
 
-korea_table_html = "<table class='stock-table'><thead><tr><th>종목명</th><th>현재가</th><th>등락률</th><th>추세(1달)</th></tr></thead><tbody>"
-for code, name, naver_code in korea_tickers:
-    try:
-        stock = yf.Ticker(code)
-        hist = stock.history(period="1mo")
-        hist_hourly = stock.history(period="5d", interval="1h")
-        
-        if not hist.empty:
-            curr = hist['Close'].iloc[-1]
-            prev = hist['Close'].iloc[-2]
-            
-            # hourly 데이터가 있으면 현재가는 덮어쓰기 (더 최신일 확률 높음)
-            if not hist_hourly.empty:
-                curr = hist_hourly['Close'].iloc[-1]
-                
-            pct = ((curr - prev) / prev) * 100
-            if pct > 0: color_cls, sign, line_color = "bg-red-light text-red", "+", "red"
-            elif pct < 0: color_cls, sign, line_color = "bg-blue-light text-blue", "", "blue"
-            else: color_cls, sign, line_color = "text-gray", "", "gray"
-            chart = make_sparkline_url(hist['Close'].tolist(), line_color)
-            link_url = f"https://finance.naver.com/item/main.naver?code={naver_code}"
-            korea_table_html += f"<tr onclick=\"window.open('{link_url}', '_blank')\" style=\"cursor:pointer;\"><td><span class='stock-name'>{name} 🔗</span><span class='stock-code'>{code}</span></td><td class='stock-price'>{curr:,.0f}원</td><td><span class='{color_cls}'>{sign}{pct:.2f}%</span></td><td><img src='{chart}' style='height:30px; width:80px;'></td></tr>"
-    except: pass
-korea_table_html += "</tbody></table>"
 
 # ==========================================
 # HTML 생성 (뉴스는 기존 데이터 유지)
@@ -141,7 +111,7 @@ output_main = output_main.replace('{{NASDAQ_VAL}}', nasdaq_val).replace('{{NASDA
 output_main = output_main.replace('{{GOLD_VAL}}', gold_val).replace('{{GOLD_CHANGE}}', gold_chg).replace('{{GOLD_CHART}}', gold_chart)
 output_main = output_main.replace('{{SILVER_VAL}}', silver_val).replace('{{SILVER_CHANGE}}', silver_chg).replace('{{SILVER_CHART}}', silver_chart)
 output_main = output_main.replace('{{USDKRW_VAL}}', usdkrw_val).replace('{{USDKRW_CHANGE}}', usdkrw_chg).replace('{{USDKRW_CHART}}', usdkrw_chart)
-output_main = output_main.replace('{{KOREA_MARKET_HTML}}', korea_table_html)
+
 output_main = output_main.replace('{{NEWS_CONTENT}}', main_news_html)
 
 with open('index.html', 'w', encoding='utf-8') as f:
