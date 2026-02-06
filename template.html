@@ -433,9 +433,13 @@
                         if (market === 'kospi') {
                             document.getElementById('heatmap-kospi').style.display = 'block';
                             document.getElementById('heatmap-kosdaq').style.display = 'none';
+                            // Open KOSPI URL for debugging
+                            window.open('https://www.tradingview.com/heatmap/stock/#%7B%22dataSource%22%3A%22KOSPI200%22%2C%22blockColor%22%3A%22change%22%2C%22blockSize%22%3A%22market_cap_basic%22%2C%22grouping%22%3A%22sector%22%7D', '_blank');
                         } else {
                             document.getElementById('heatmap-kospi').style.display = 'none';
                             document.getElementById('heatmap-kosdaq').style.display = 'block';
+                            // Open KOSDAQ URL for debugging
+                            window.open('https://www.tradingview.com/heatmap/stock/#%7B%22dataSource%22%3A%22KOSDAQ150%22%2C%22blockColor%22%3A%22change%22%2C%22blockSize%22%3A%22market_cap_basic%22%2C%22grouping%22%3A%22sector%22%7D', '_blank');
                         }
                     }
                 </script>
