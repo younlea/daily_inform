@@ -330,43 +330,71 @@
             </div>
         </div>
 
-        <div class="section-box">
-            <div class="box-header" style="display:flex; justify-content:space-between; align-items:center;">
-                <span>🇰🇷 Korean Top Stocks</span>
-                <div style="display:flex; gap:10px;">
-                    <button
-                        onclick="window.open('https://www.tradingview.com/heatmap/stock/#%7B%22dataSource%22%3A%22KOSPI200%22%2C%22blockColor%22%3A%22change%22%2C%22blockSize%22%3A%22market_cap_basic%22%2C%22grouping%22%3A%22sector%22%7D', '_blank')"
-                        style="padding:4px 12px; border:1px solid #ddd; border-radius:6px; background:#fff; cursor:pointer; color:#555; font-size:0.8rem;">
-                        KOSPI Heatmap >
-                    </button>
-                    <button
-                        onclick="window.open('https://www.tradingview.com/heatmap/stock/#%7B%22dataSource%22%3A%22KOSDAQ150%22%2C%22blockColor%22%3A%22change%22%2C%22blockSize%22%3A%22market_cap_basic%22%2C%22grouping%22%3A%22sector%22%7D', '_blank')"
-                        style="padding:4px 12px; border:1px solid #ddd; border-radius:6px; background:#f0f2f5; cursor:pointer; color:#555; font-size:0.8rem;">
-                        KOSDAQ Heatmap >
-                    </button>
+        <div class="main-grid">
+            <div class="section-box">
+                <div class="box-header">🇺🇸 S&P 500 Heatmap</div>
+                <div style="height: 600px;">
+                    <div class="tradingview-widget-container" style="height:100%;width:100%">
+                        <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+                        <script type="text/javascript"
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+                                {
+                                    "exchanges": [],
+                                        "dataSource": "SPX500",
+                                            "grouping": "sector",
+                                                "blockSize": "market_cap_basic",
+                                                    "blockColor": "change",
+                                                        "symbolUrl": "",
+                                                            "colorTheme": "light",
+                                                                "hasTopBar": false,
+                                                                    "isDataSetEnabled": false,
+                                                                        "isZoomEnabled": true,
+                                                                            "hasSymbolTooltip": true,
+                                                                                "width": "100%",
+                                                                                    "height": "100%"
+                                }
+                            </script>
+                    </div>
                 </div>
             </div>
-            {{KOREA_MARKET_HTML}}
-        </div>
 
-        <div class="news-section">
-            <div class="news-header" style="display:flex; justify-content:space-between; align-items:center;">
-                <span>📰 아침 뉴스 브리핑 (Brief)</span>
-                <a href="news.html"
-                    style="background:#e7f5ff; color:#1971c2; text-decoration:none; font-size:0.85rem; padding:6px 12px; border-radius:6px; font-weight:bold;">
-                    전체 뉴스 보기 >
-                </a>
+            <div class="section-box">
+                <div class="box-header" style="display:flex; justify-content:space-between; align-items:center;">
+                    <span>🇰🇷 Korean Top Stocks</span>
+                    <div style="display:flex; gap:10px;">
+                        <button
+                            onclick="window.open('https://www.tradingview.com/heatmap/stock/#%7B%22dataSource%22%3A%22KOSPI200%22%2C%22blockColor%22%3A%22change%22%2C%22blockSize%22%3A%22market_cap_basic%22%2C%22grouping%22%3A%22sector%22%7D', '_blank')"
+                            style="padding:4px 12px; border:1px solid #ddd; border-radius:6px; background:#fff; cursor:pointer; color:#555; font-size:0.8rem;">
+                            KOSPI Heatmap >
+                        </button>
+                        <button
+                            onclick="window.open('https://www.tradingview.com/heatmap/stock/#%7B%22dataSource%22%3A%22KOSDAQ150%22%2C%22blockColor%22%3A%22change%22%2C%22blockSize%22%3A%22market_cap_basic%22%2C%22grouping%22%3A%22sector%22%7D', '_blank')"
+                            style="padding:4px 12px; border:1px solid #ddd; border-radius:6px; background:#f0f2f5; cursor:pointer; color:#555; font-size:0.8rem;">
+                            KOSDAQ Heatmap >
+                        </button>
+                    </div>
+                </div>
+                {{KOREA_MARKET_HTML}}
             </div>
-            <div class="news-grid">
-                {{NEWS_CONTENT}}
+
+            <div class="news-section">
+                <div class="news-header" style="display:flex; justify-content:space-between; align-items:center;">
+                    <span>📰 아침 뉴스 브리핑 (Brief)</span>
+                    <a href="news.html"
+                        style="background:#e7f5ff; color:#1971c2; text-decoration:none; font-size:0.85rem; padding:6px 12px; border-radius:6px; font-weight:bold;">
+                        전체 뉴스 보기 >
+                    </a>
+                </div>
+                <div class="news-grid">
+                    {{NEWS_CONTENT}}
+                </div>
             </div>
+
+
+            <footer>
+                Auto-updates hourly (09:00 - 16:00 KST)
+            </footer>
         </div>
-
-
-        <footer>
-            Auto-updates hourly (09:00 - 16:00 KST)
-        </footer>
-    </div>
 </body>
 
 </html>
