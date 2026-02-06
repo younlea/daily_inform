@@ -330,120 +330,23 @@
             </div>
         </div>
 
-        <div class="main-grid">
-            <div class="section-box">
-                <div class="box-header">🇺🇸 S&P 500 Heatmap</div>
-                <div style="height: 600px;">
-                    <div class="tradingview-widget-container" style="height:100%;width:100%">
-                        <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
-                                {
-                                    "exchanges": [],
-                                        "dataSource": "SPX500",
-                                            "grouping": "sector",
-                                                "blockSize": "market_cap_basic",
-                                                    "blockColor": "change",
-
-                                                        "symbolUrl": "",
-                                                            "colorTheme": "light",
-                                                                "hasTopBar": false,
-                                                                    "isDataSetEnabled": false,
-                                                                        "isZoomEnabled": true,
-                                                                            "hasSymbolTooltip": true,
-                                                                                "width": "100%",
-                                                                                    "height": "100%"
-                                }
-                            </script>
-                    </div>
+        <div class="section-box">
+            <div class="box-header" style="display:flex; justify-content:space-between; align-items:center;">
+                <span>🇰🇷 Korean Top Stocks</span>
+                <div style="display:flex; gap:10px;">
+                    <button
+                        onclick="window.open('https://www.tradingview.com/heatmap/stock/#%7B%22dataSource%22%3A%22KOSPI200%22%2C%22blockColor%22%3A%22change%22%2C%22blockSize%22%3A%22market_cap_basic%22%2C%22grouping%22%3A%22sector%22%7D', '_blank')"
+                        style="padding:4px 12px; border:1px solid #ddd; border-radius:6px; background:#fff; cursor:pointer; color:#555; font-size:0.8rem;">
+                        KOSPI Heatmap >
+                    </button>
+                    <button
+                        onclick="window.open('https://www.tradingview.com/heatmap/stock/#%7B%22dataSource%22%3A%22KOSDAQ150%22%2C%22blockColor%22%3A%22change%22%2C%22blockSize%22%3A%22market_cap_basic%22%2C%22grouping%22%3A%22sector%22%7D', '_blank')"
+                        style="padding:4px 12px; border:1px solid #ddd; border-radius:6px; background:#f0f2f5; cursor:pointer; color:#555; font-size:0.8rem;">
+                        KOSDAQ Heatmap >
+                    </button>
                 </div>
             </div>
-
-            <div class="section-box">
-                <div class="box-header" style="display:flex; justify-content:space-between; align-items:center;">
-                    <span>🇰🇷 Market Heatmap (v2)</span>
-                    <div class="tab-buttons" style="display:flex; gap:10px;">
-                        <button onclick="switchTab('kospi')" id="btn-kospi" class="market-tab active"
-                            style="padding:4px 12px; border:1px solid #ddd; border-radius:15px; background:#fff; cursor:pointer; font-weight:bold; color:#333;">KOSPI</button>
-                        <button onclick="switchTab('kosdaq')" id="btn-kosdaq" class="market-tab"
-                            style="padding:4px 12px; border:1px solid #ddd; border-radius:15px; background:#f0f2f5; cursor:pointer; color:#888;">KOSDAQ</button>
-                    </div>
-                </div>
-                <div style="height: 600px; position:relative;">
-                    <!-- KOSPI Heatmap -->
-                    <div id="heatmap-kospi" class="tradingview-widget-container" style="height:100%;width:100%">
-                        <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
-                                {
-                                    "dataSource": "KOSPI200",
-                                        "blockColor": "change",
-                                            "blockSize": "market_cap_basic",
-                                                "grouping": "sector",
-
-                                                    "symbolUrl": "",
-                                                        "colorTheme": "light",
-                                                            "hasTopBar": false,
-                                                                "isDataSetEnabled": false,
-                                                                    "isZoomEnabled": true,
-                                                                        "hasSymbolTooltip": true,
-                                                                            "width": "100%",
-                                                                                "height": "100%"
-                                }
-                            </script>
-                    </div>
-                    <!-- KOSDAQ Heatmap -->
-                    <div id="heatmap-kosdaq" class="tradingview-widget-container"
-                        style="height:100%;width:100%; display:none;">
-                        <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
-                                {
-                                    "dataSource": "KOSDAQ150",
-                                        "blockColor": "change",
-                                            "blockSize": "market_cap_basic",
-                                                "grouping": "sector",
-
-                                                    "symbolUrl": "",
-                                                        "colorTheme": "light",
-                                                            "hasTopBar": false,
-                                                                "isDataSetEnabled": false,
-                                                                    "isZoomEnabled": true,
-                                                                        "hasSymbolTooltip": true,
-                                                                            "width": "100%",
-                                                                                "height": "100%"
-                                }
-                            </script>
-                    </div>
-                </div>
-                <script>
-                    function switchTab(market) {
-                        // Reset buttons
-                        document.getElementById('btn-kospi').style.background = '#f0f2f5';
-                        document.getElementById('btn-kospi').style.color = '#888';
-                        document.getElementById('btn-kosdaq').style.background = '#f0f2f5';
-                        document.getElementById('btn-kosdaq').style.color = '#888';
-
-                        // Active button
-                        document.getElementById('btn-' + market).style.background = '#fff';
-                        document.getElementById('btn-' + market).style.color = '#333';
-                        document.getElementById('btn-' + market).style.border = '1px solid #333';
-
-                        // Show/Hide widgets
-                        if (market === 'kospi') {
-                            document.getElementById('heatmap-kospi').style.display = 'block';
-                            document.getElementById('heatmap-kosdaq').style.display = 'none';
-                            // Open KOSPI URL for debugging
-                            window.open('https://www.tradingview.com/heatmap/stock/#%7B%22dataSource%22%3A%22KOSPI200%22%2C%22blockColor%22%3A%22change%22%2C%22blockSize%22%3A%22market_cap_basic%22%2C%22grouping%22%3A%22sector%22%7D', '_blank');
-                        } else {
-                            document.getElementById('heatmap-kospi').style.display = 'none';
-                            document.getElementById('heatmap-kosdaq').style.display = 'block';
-                            // Open KOSDAQ URL for debugging
-                            window.open('https://www.tradingview.com/heatmap/stock/#%7B%22dataSource%22%3A%22KOSDAQ150%22%2C%22blockColor%22%3A%22change%22%2C%22blockSize%22%3A%22market_cap_basic%22%2C%22grouping%22%3A%22sector%22%7D', '_blank');
-                        }
-                    }
-                </script>
-            </div>
+            {{KOREA_MARKET_HTML}}
         </div>
 
         <div class="news-section">
