@@ -17620,3 +17620,34 @@ hint: preference for all repositories. You can also pass --rebase, --no-rebase,
 hint: or --ff-only on the command line to override the configured default per
 hint: invocation.
 fatal: Need to specify how to reconcile divergent branches.
+[master d92c98a] Local AI Update (RTX 5060 Ti)
+ 3 files changed, 37 insertions(+), 4 deletions(-)
+To github.com:younlea/daily_inform.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'github.com:younlea/daily_inform.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[11:00:02] 🚀 로컬 업데이트 시작 (Model: llama3)
+[11:00:02] 📥 Git Pull...
+[11:00:04] 📈 시장 데이터 수집...
+[11:00:07] 📰 뉴스 수집 및 로컬 AI 처리...
+[11:00:28] 📝 HTML 생성...
+[11:00:28] 📤 GitHub로 업로드 중...
+[11:00:30] ✅ 완료! 웹사이트가 업데이트되었습니다.
+From github.com:younlea/daily_inform
+   9d66be0..1bf3f37  master     -> origin/master
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
