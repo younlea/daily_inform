@@ -279,6 +279,87 @@
     "summary": "로봇 조작을 위해同时의 멀티모달 인식과 강력한 학습 프레임워크가 필요하다. STS 센서가 조합된 촉각과 시각 인식을 제공하지만, 기존 STS 디자인은 멀티모달 인식을 동시에 지원하지 못하고 촉각 추적이 불확실해 있다. 또한 이러한 풍부한 멀티모달 신호를 학습 기반 조작 파이프라인에 통합하는 개선된 도전이다. 우리는 TacThru, 시각 인식과robust 촉각 신호 추출을 가능하게 하는 STS 센서를 introduce하고, 이 센서와 함께 작동하는 TacThru-UMI 학습 프레임워크를 개발하였다. 이러한 시스템은 85.5%의 평균 성공률을 달성하며, 기본 모델인 촉각 정책(66.3%)과 비전 모델(55.4%)보다 더 정확하게 조작할 수 있다."
   },
   {
+    "title": "Bridging Speech, Emotion, and Motion: a VLM-based Multimodal Edge-deployable Framework for Humanoid Robots",
+    "original_title": "Bridging Speech, Emotion, and Motion: a VLM-based Multimodal Edge-deployable Framework for Humanoid Robots",
+    "link": "https://arxiv.org/abs/2602.07434",
+    "date": "2026-02-10 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "인간-로봇 상호작용을 위해서는 적극적인 다중 모달 표현이 필요하지만, 대부분의 휴먼 로봇은 조정된 말하기, 얼굴 표현, 동작이 부족하다. 실제-world 배포를 위해선 장비가 지속적으로 클라우드 접근이 없이 자율적으로 작동할 수 있어야 한다. 이러한 문제를 해결하기 위해 우리는 Vision Language Model-based 프레임워크인 SeM²를 제안하는데, 이 프레임워크는 사용자 맥락을 고려하는 다중 모달 감지 모듈,-chain-of-thought 추론을 위한 회답 계획 모듈, 그리고 정확한 시간 동기화를 위한 Semantic-Sequence Aligning Mechanism(SSAM)이 포함된다. 우리는 클라우드 기반 및 EDGE 배포 버전(SeM²_e_)을 구현하는데, Latter는 EDGE 하드웨어에서 효율적으로 작동할 수 있는 지식이 축적되어 95%의 상대 성능을 유지하는 데 사용된다. nostra 평가결과, 우리의 접근 방식은 자연스러움, 감정 명확성 및 모달 일관성을극대화하여 다양한 실제-world 환경에서 인간-로봇 상호작용을 진보시켰다."
+  },
+  {
+    "title": "Informative Object-centric Next Best View",
+    "original_title": "Informative Object-centric Next Best View for Object-aware 3D Gaussian Splatting in Cluttered Scenes",
+    "link": "https://arxiv.org/abs/2602.08266",
+    "date": "2026-02-10 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "objetosu gwanhae 3D Gaussian Splatting saemuri scene-e issseul yohan eumsikhamnida. 3DGS-eun jungsim hyanghwa ejung view selection-ryeo gaeseolgwa representation-neun jipyeokhal seupnamida. Daero, geuhaeng-gapneun approaches-eun geom-eui-gwanhyeong-reul wuhanhae, object-manipulation-haegyeong-bang-gi-eul maengseoneungeosseubnida. Geu-jeong-myeo, we introduce object-aware Next Best View policy-neun jechin-hamnida. Jechin-eun underexplored region-reul seonghyeokhae gwanhae, object feautures-reul yohanheomneunde information gain-reul jipyeokhae gaeseolgwa region-reul geu-jig-e issseul eumsikhamnida."
+  },
+  {
+    "title": "UniPlan: 비전-언어 태스크 계획시스템",
+    "original_title": "UniPlan: Vision-Language Task Planning for Mobile Manipulation with Unified PDDL Formulation",
+    "link": "https://arxiv.org/abs/2602.08537",
+    "date": "2026-02-10 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "한국 로봇 태스크 계획에서 비전-언어 통합이 새로운 접근 방식으로 입증됐습니다. existing work like UniDomain은 실시간 robot task planning에 성공적으로 적용되었습니다. 하지만 이러한 도메인은 표면 manipulation 제한되어 있었습니다. 우리는 UniPlan, a vision-language task planning system for long-horizon mobile-manipulation in large-scale indoor environments, to unify scene topology, visuals, and robot capabilities into a holistic PDDL representation을 제안합니다. UniPlan은 learnt tabletop domains from UniDomain을 지원하는 navigation, door traversal, and bimanual coordination을 지원하는 시스템입니다. It operates on a visual-topological map, comprising navigation landmarks anchored with scene images. Given a language instruction, UniPlan retrieves task-relevant nodes from the map and uses VLM to ground the anchored image into task-relevant objects and their PDDL states; next, it reconnects these nodes to a compressed, densely-connected topological map, also represented in PDDL, with connectivity and costs derived from the original map; Finally, a mobile-manipulation plan is generated using off-the-shelf PDDL solvers. UniPlan은 human-raised tasks in a large-scale map with real-world imagery에서 VLM and LLM+PDDL planning보다 성과를 제시하고 있습니다."
+  },
+  {
+    "title": "**로봇만ipуля션에서 리소스 활용을 위한 분산 불일치 문제 해결**",
+    "original_title": "$\\chi_{0}$: Resource-Aware Robust Manipulation via Taming Distributional Inconsistencies",
+    "link": "https://arxiv.org/abs/2602.09021",
+    "date": "2026-02-10 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "KOR-Robost Manipulation via Taming Distributional Inconsistencies를 제안하여 실무 환경에서 고가용성의 로봇만ipulation을 달성, 인공 지능 AI 기술 적용"
+  },
+  {
+    "title": "Cerebellar-Inspired Residual Control for Fault Recovery: From Inference-Time Adaptation to Structural Consolidation",
+    "original_title": "Cerebellar-Inspired Residual Control for Fault Recovery: From Inference-Time Adaptation to Structural Consolidation",
+    "link": "https://arxiv.org/abs/2602.07227",
+    "date": "2026-02-10 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "faults를 회복하는 cerebellar-inspired residual control 프레임워크를 소개합니다. 이 프레임워크는 실제 환경에서 배포된 강화학습 정책에 대한 실시간 수정 조치를 통해 파손을 회복할 수 있습니다. MuJoCo 벤치마크에서 실험 결과, HALF-Cheetah-v5와 Humanoid-v5의 faults에 따른 성능 향상으로 최대 +66%와 +53%를 달성했습니다.\n\n(Note: I followed the rules to output only the formatted string with the Korean title and summary.)"
+  },
+  {
+    "title": "모델링 3D пішер스트-Vehicle의 상호작용을 위한 Vehicle-Conditioned Pose Forecasting",
+    "original_title": "Modeling 3D Pedestrian-Vehicle Interactions for Vehicle-Conditioned Pose Forecasting",
+    "link": "https://arxiv.org/abs/2602.08962",
+    "date": "2026-02-10 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "autonomous driving에서 안전하고可靠한 3D 차량-보행자 자세 예측 프레임워크를 제안하는 연구에 대한 주요 내용은, 3D 차량 경계 box와 보행자 자세를 결합한 새로운 Waymo-3DSkelMo 데이터셋을 개발하여 다중 에이전트 пішер스트-차의 상호작용 모델링을 지원합니다. 또한, 다양한 상호작용 복잡도에 맞는 훈련을 가능하게 하는 пішер스트 및 차량 수 카테고리 샘플링 scheme을 도입했습니다. VehCondPose3D 코드는 https://github.com/GuangxunZhu/VehCondPose3D에서 공유됩니다."
+  },
+  {
+    "title": "자율주행차의 충돌위험추정via 손실예측",
+    "original_title": "Collision Risk Estimation via Loss Prediction in End-to-End Autonomous Driving",
+    "link": "https://arxiv.org/abs/2503.07425",
+    "date": "2026-02-10 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "AD 시스템의 안전성에 있어 충돌위험 추정 및 피가중한 기능은 최근 개발된 종단간 자율주행 시스템에서 중요한 역할을 играет. 그러나 이러한 종단간 계획자들은 그들의 출력에서 충돌 위험을 명시적으로 quantify하지 않는다. 이를 해결하기 위해 RiskMonitor를 도입하는데, 이는 state-of-the-art 종단간 계획자로부터의 플랜 및 동작 토큰을 해석하여 충돌 위험을 추정하는 효율적인 플러그 앤 플레이 모듈이다. RiskMonitor는 손실 예측 기반의 불확실성 quantify를 통해 충돌 위험이 있는지 예측하고, 이를 바이너리 분류 태스크로 프레임한다. 우리는 실제 세계 nuScenes 데이터세트 (오픈-루프) 및 신경망 render-based 시뮬레이터 NeuroNCAP (클로즈드-루프)에 RiskMonitor를 평가하였다.-Token driven method는 prediction-driven approaches, including deterministic rules, Gaussian mixture models, and Monte Carlo Dropout보다 우수한 성능을 보여주며, RiskMonitor와의 통합으로 클로즈드-루프 테스트에서 66.5%의 충돌 피 개선 효과를 보였다."
+  },
+  {
+    "title": "Neural-Augmented Kelvinlet for Real-Time Soft Tissue Deformation Modeling",
+    "original_title": "Neural-Augmented Kelvinlet for Real-Time Soft Tissue Deformation Modeling",
+    "link": "https://arxiv.org/abs/2506.08043",
+    "date": "2026-02-10 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "소프트 텍스 상호작용 모델링에 대한 실제 시간 대역 모델링을 향상시키는 데 필수적이므로, 수술 시뮬레이션, 수술 로보틱스 및 모델 기반 수술 자동화에 있어 정확하고 효율적인 모델링이 필요합니다. 이를實現하기 위해 기존의 유한 요소法(FEM) 계산자들은 신경망 approximations으로 대체되나, 물리적 prior를 포함하지 않고 완전히 데이터 주도적으로 훈련하는 경우 일반화 및 실제 예측이 낮은 정확도를 나타내는 문제가 발생합니다. 우리는 물리적 informed neural simulation framework를 제안하여 복잡한 단일- 및 다그라스퍼 상호작용 하에 실제 시간 Soft Tissue Deformation을 예측할 수 있습니다. 이 접근 방법은 켈빈렛 기반의 분석적 prior와 대규모 FEM 데이터를 결합하여 선형 및 비선형 조직 반응을 捕捉합니다. 이러한 혼합 설계는 다양한 신경망 구조에서 예측 정확도 및 물리적 가능성을 개선할 수 있습니다. 또한, 이 접근 방법은 인터랙티브 애플리케이션에 필요한 낮은 대역 성능을 유지할 수 있습니다. 우리는 표준 Laparoscopic Grasping Tool에 대한 수술 조작 과정을 기반으로 한 실제 결과를 얻어 성능을 개선했습니다."
+  },
+  {
+    "title": "Residual Vector Quantization For Communication-Efficient Multi-Agent Perception",
+    "original_title": "Residual Vector Quantization For Communication-Efficient Multi-Agent Perception",
+    "link": "https://arxiv.org/abs/2509.21464",
+    "date": "2026-02-10 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "한국 멀티 에이전트 인식에서 통신 효율성을 위해 Residual Vector Quantization을 제안합니다. 이를 통해 32비트浮動소수인 중간 특징치의 전송량을 8192바이트부터 6~30바이트로 줄일 수 있습니다. 이 알고리즘은 DAIR-V2X 실제 인식 데이터셋에서 273배 압축을 달성하고, 1365배 압축 시까지 정확도 손실이 없습니다."
+  },
+  {
     "title": "3D 프린팅 로봇",
     "original_title": "Rotating nozzle 3D printing creates air-powered soft robots with preset bends",
     "link": "https://techxplore.com/news/2026-02-rotating-nozzle-3d-air-powered.html",
