@@ -477,6 +477,24 @@
     "summary": "로봇 학습의 전형적인 패러다임은 다양한 환경, 물질, 작업에 대한 일반화를 목표로 하는데, 이 접근 방식은 언어 조건이 físically physical 이해를 위한 robust manipulation을 제한하는 기본적 긴장이 있습니다. CAP(Contact-Anchored Policies)을 도입하여物理接촉 지점을 언어 조건으로 대체하고, 이를 모듈러 유틸리 모델 라이브러리 구조로 구축합니다. 이 형식화는 실제-to-시뮬레이션 반복 cycle를 구현할 수 있습니다. CAP은 23시간의 데모 데이터만 사용하여 새로운 환경과 물질에 대한 3가지 manipulation skills을 일반화하고, 상태-of-the-art VLAs보다 56% 높게 zero-shot 평가를 수행합니다. 모든 모델 체크포인트, 코드베이스, 하드웨어, 시뮬레이션, 데이터셋이 공개됩니다. 프로젝트 페이지: https://cap-policy.github.io/"
   },
   {
+    "title": "STEP: 웰-스타티드 비주모터 정책과 스팔리템포랄 구성성 예측",
+    "original_title": "STEP: Warm-Started Visuomotor Policies with Spatiotemporal Consistency Prediction",
+    "link": "https://arxiv.org/abs/2602.08245",
+    "date": "2026-02-10 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Robotic manipulation의 비주모터 제어에 있어 diffusion 정책이 lately emergence 한 것은 multimodality를 catch하고 action sequence distribution을 모델링하는 능력 때문이다. 그러나 iterative denoising는 real-time closed-loop 시스템에서 inference latency로 제한된다. existing acceleration methods는 sampling steps를 줄이는 것, direct prediction을 bypass하는 것, 또는 past actions를 재사용하는 것인데, 이들이 action quality를 보존하면서 consistently low latency를 달성하는 것은 쉽지 않다. 이에 우리는 STEP, lightweight 스팔리템포랄 구성성 예측 메커니즘을 제안하여 high-quality 웰-스타티드 actions를 생성하고, real-world tasks에서 execution stall을 방지하기 위해 velocity-aware perturbation injection mechanism을 제안하였다. 또한 theoretical analysis를 통해 proposed prediction이 locally contractive mapping을 유도하는 것임을 보여주어 action errors의 convergence를 보장하였다. 우리는 nine simulated benchmarks와 two real-world tasks에서 exhaustive evaluations을 수행하여 RoboMimic benchmark와 real-world tasks에서 STEP과 2 steps가 BRIDGER와 DDIM보다 average 21.6% and 27.5% 높은 성공률을 달성함을 보여주었다."
+  },
+  {
+    "title": "CoBEVMoE: 고급 특성融合과 동적 Mixture-of-Experts를 사용한 협력 감지함",
+    "original_title": "CoBEVMoE: Heterogeneity-aware Feature Fusion with Dynamic Mixture-of-Experts for Collaborative Perception",
+    "link": "https://arxiv.org/abs/2509.17107",
+    "date": "2026-02-10 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고급 특성融合을 개선하기 위해, 다원점観察자 간의 정보 공유를 통해 협력 감지를 목표로 하는 새로운 프레임워크 CoBEVMoE를 제안합니다. 이 프레임워크는 Bird's Eye View (BEV) 공간에서 동작하고 Dynamic Mixture-of-Experts (DMoE) 아키텍처를 통합하여 각 관찰자에 대한 고유의 특성과 신뢰할 수 있는 인덱스를 추출할 수 있습니다. 또한 DEML(동적 전문가 지표 손실)을 소개하여 inter-expert diversity를 강조하고 fused representation의 차별성을 개선합니다. OPV2V, DAIR-V2X-C 데이터셋에 대한 실험 결과 CoBEVMoE는 state-of-the-art 성능을 달성했으며 카메라 기반 BEV 구획 segmentation에서 +1.5% 향상하고 LiDAR 기반 3D 물체 감지에서 +3.0% 향상을 달성했습니다."
+  },
+  {
     "title": "3D 프린팅 로봇",
     "original_title": "Rotating nozzle 3D printing creates air-powered soft robots with preset bends",
     "link": "https://techxplore.com/news/2026-02-rotating-nozzle-3d-air-powered.html",
