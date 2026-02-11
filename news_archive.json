@@ -396,6 +396,15 @@
     "summary": "Simulation-ready indoor scene generation framework SceneSmith를 발표. 이 Framework는 자연어 입력을 받아 Indoor Environment를 생성하고, Robotic manipulation에 적합한 Cluttered Space를 제공. SceneSmith는 VLM agent interaction을 통해 Architectural layout부터 Furniture placement까지 successive stage로 Environment를 생성. Static Object에 대한 3D Synthesis, Articulated Object에 대한 Dataset Retrieval, Physical Property Estimation까지 Integration되어 더 많은 객체를 생성할 수 있음."
   },
   {
+    "title": "LiDAR 기반 3D 도시 변화 감지함",
+    "original_title": "LiDAR-based 3D Change Detection at City Scale",
+    "link": "https://arxiv.org/abs/2510.21112",
+    "date": "2026-02-11 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고해상도 3D 도시 지도는 시내 계획, 변화 감지 등에 중요한 도구로, 일반적인 디지털_SURFACE_MODEL과 이미지 차이 분석은 수직 편향성과 관점 불일치 문제를 가질 수 있어, 원래 점 클라우드 모델 또는 voxel 모델은 큰 메모리 요구, 완벽한 정렬 가정, 세밀 구조 파손 등의 제약을 가질 수 있음. 새로운 방법론으로는 3D LiDAR 기반 도시 변화 감지를 위하여 불확실성-aware, object-centric 방식을 제안함. 이 방법론에서는 다중 분해 Normal Distributions Transform(NDT)와 Point-to-Plane Iterative Closest Point(ICP) 메서드를 사용하여 데이터를 다른 시기 periods에 맞추어, 높이 normalize하고, detection level을 계산하며, 등록의 불확실성과 표면 roughness를 고려하여 변화 결정을 조정함. Geometry-based association은 semantic segmentation과 instance-level decision을 통해 개선되며, class-constrained bipartite assignment with augmented dummies를 사용하여 split-merge 경우를 처리할 수 있음. Tiled processing는 메모리 제약을 초래하며, 좁은 지상 변화도 보호하는 방식으로, overlap, displacement, and volumetric differences를 통합하여 지역 detection gating에 따라 인스턴스-level 결정 integrate 함. Subiaco(Western Australia) dataset에서 2023년과 2025년에 걸쳐 실험을 수행하여, 95.3% 정확도, 90.8% mF1, and 82.9% mIoU를 달성하며, Triplet KPConv 기반보다 0.3, 0.6, and 1.1 점 정도 개선함. datasets은 IEEE DataPort에서 제공되며, source code는 https://github.com/HaitianWang/IEEE-Sensor-Journal-Changing-Detection에서 접근할 수 있음."
+  },
+  {
     "title": "Fox Robotics 인수",
     "original_title": "Symbotic acquires autonomous forklift maker Fox Robotics",
     "link": "https://www.therobotreport.com/symbotic-acquires-autonomous-forklift-maker-fox-robotics/",
