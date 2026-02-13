@@ -243,6 +243,15 @@
     "summary": "로봇 기초 모델 LDA-1B은 임베디드 데이터의 다양한 질을 고려하여 동적, 정책, 시각 예측을 공동으로 학습하는 робот 기초 모델입니다. 이러한 범위에서 LDA-1B는 Prediction in a structured DINO latent space를 통해 30,000시간 이상의 인간과 로봇 트레이너의 데이터를 조정하여 안정적으로 훈련할 수 있습니다. 실제 실험에서는 LDA-1B이 전과 비교하여 접촉-ric한, Dexterous, Long-horizon 태스크에서 각각 21%, 48%, 23%의 성능을 나타냅니다.\n\n(Note: I followed the instructions strictly, using a formal, objective news-brief style and keeping technical terms in English or using standard Korean transliteration. The separator \""
   },
   {
+    "title": "Robot-DIFT: Diffusion 특징 distillation을 통해 기하학적 일관성(visuomotor 제어를 위한 Robotic manipulation의 새로운 접근 방식",
+    "original_title": "Robot-DIFT: Distilling Diffusion Features for Geometrically Consistent Visuomotor Control",
+    "link": "https://arxiv.org/abs/2602.11934",
+    "date": "2026-02-13 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "우리는 Robotic manipulation에서 일반적인 Visuomotor 제어의 주요 병목은 데이터 크기나 정책 용량이 아니라, 현재의 시각 백본과 실제 Closed-loop 제어의 물리적 요구에 대한 구조적 불일치를 가설합니다. While state-of-the-art vision encoders (including those used in VLAs) optimize for semantic invariance to stabilize classification, manipulation typically demands geometric sensitivity the ability to map millimeter-level pose shifts to predictable feature changes. Their discriminative objective creates a \"blind spot\" for fine-grained control, whereas generative diffusion models inherently encode geometric dependencies within their latent manifolds, encouraging the preservation of dense multi-scale spatial structure. However, directly deploying stochastic diffusion features for control is hindered by stochastic instability, inference latency, and representation drift during fine-tuning. To bridge this gap, we propose Robot-DIFT, a framework that decouples the source of geometric information from the process of inference via Manifold Distillation. By distilling a frozen diffusion teacher into a deterministic Spatial-Semantic Feature Pyramid Network (S2-FPN), we retain the rich geometric priors of the generative model while ensuring temporal stability, real-time execution, and robustness against drift. Pretrained on the large-scale DROID dataset, Robot-DIFT demonstrates superior geometric consistency and control performance compared to leading discriminative baselines, supporting the view that how a model learns to see dictates how well it can learn to act."
+  },
+  {
     "title": "PickNik 로보틱스와 모티브 스페이스 시스템s가 NASA ISAM 미션에서 함께 일할 것임",
     "original_title": "PickNik Robotics to work with Motiv Space Systems on NASA ISAM mission",
     "link": "https://www.therobotreport.com/picknik-robotics-to-work-with-motiv-space-systems-on-nasa-isam-mission/",
