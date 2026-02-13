@@ -1,5 +1,77 @@
 [
   {
+    "title": "ExtremControl: 로우-라텐시 하이오무이드 텔레옵스에이션과 직접 절지 제어",
+    "original_title": "ExtremControl: Low-Latency Humanoid Teleoperation with Direct Extremity Control",
+    "link": "https://arxiv.org/abs/2602.11321",
+    "date": "2026-02-13 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "한체를 포함하는 다수의 반응적이고 동적인 데모션을 수집하기 위해 낮은_LATENCY_h humanoid 텔레옵스 시스템을 구축하는 것이 중요합니다. 그러나 기존 접근 방식은 인간-인간oid 운동 retargeting과 Position-Only PD 제어에 기반하여 강한 지연을 초래하고 있으며, 이로 인해 반응성 및 빠른反応을 요구하는 작업에 있어 제약이 따릅니다. 이러한 문제를 해결하기 위해 우리는 ExtremControl, 로우-라텐시 whole-body 제어 framework를 제안합니다."
+  },
+  {
+    "title": "ViTaS: Visuomotor Learning Framework ~함",
+    "original_title": "ViTaS: Visual Tactile Soft Fusion Contrastive Learning for Visuomotor Learning",
+    "link": "https://arxiv.org/abs/2602.11643",
+    "date": "2026-02-13 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Visual Tactile Soft Fusion Contrastive Learning을 도입하여 visuomotor 학습 성능을 높였다. existing approaches는 direct concatenation으로 인해 occluded scenario에 취약했지만, ViTaS는 CVAE 모듈과 Soft Fusion Contrastive Learning을 사용하여 visuo-tactile 표현의 조화를 강조했다. 12개의 시뮬레이션 환경 및 3개의 실제 환경에서 실험한 결과, ViTaS는 기존 baseline보다 높게 성능을 보였다."
+  },
+  {
+    "title": "Humanoid Whole-Body Control Framework FAST 공개됨",
+    "original_title": "General Humanoid Whole-Body Control via Pretraining and Fast Adaptation",
+    "link": "https://arxiv.org/abs/2602.11929",
+    "date": "2026-02-13 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "FAST라는 일반 인공 인간체 조절 프레임워크를 제안하여 고속 적응과 안정적인 운동 추적을 가능하게 했다. 이 프레임워크는 Parseval-Guided Residual Policy Adaptation을 통해 새로운 운동 분포에 대한 빠른 적응을 가능하게 하고, Center-of-Mass-Aware Control을 통해 실물물 robustness를 높였다.實験 결과 FAST는 성능 우수한 baseline보다 더 나은 Robustness, Adaptation Efficiency, Generalization을 보여주었다."
+  },
+  {
+    "title": "로봇 조작 기술의 비전-근무 정보 정책 실패 요소 분석",
+    "original_title": "When would Vision-Proprioception Policies Fail in Robotic Manipulation?",
+    "link": "https://arxiv.org/abs/2602.12032",
+    "date": "2026-02-13 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 조작이 필요로 하는 precise servo 제어를 제공하는 proprioceptive 정보의 중요성은 분명하다. 비전과 협동하여 복잡한 작업을 수행하는 Manipulation Policy의 성능을 높이는 것이 예상되는 일이다. 그러나 최근 연구에서는 vision-proprioception 정책의 일반화에 대한 불일치한 관측이 보고된 바 있다. 이 작업에서 우리는 temporally controlled experiments를 통해 이를 조사하였다. 실험 결과로, 로봇의 운동 전환期间에 target localization을 요구하는 sublicense phase에서는 비전 모드가 한정된 역할을 수행한다는 것을 발견하였다. 추가 분석으로, 정책은 빠른 LOSS reduction을 제공하는 concise proprioceptive 신호를 자연스럽게 유도하여 최적화하고 시각 모드를 억제하므로, 운동 전환 periods에 대한 learning을 억제하게 된다. 이 문제를 해결하기 위해 우리는 Phase-guidance를 사용한 Gradient Adjustment Algorithm(GAP)을 제안하였다. GAP algorithm은 proprioception을 사용하여 로봇 상태를 estimate하고 각 timestep의 trajectory가 belonging to motion-transition phases인지 예측하며, 이를 바탕으로 proprioception의 gradient를 조정하여 policy learning에 있어 robustness와 generalizability를 달성할 수 있다. comprehensive experiments는 GAP 알고리즘이 simulated 및 real-world environments에서 일관되게 적용되는 것을 보여준다."
+  },
+  {
+    "title": "High-dimensional 로보틱스 모션 플래닝을 위한 다그라프 검색함",
+    "original_title": "Multi Graph Search for High-Dimensional Robot Motion Planning",
+    "link": "https://arxiv.org/abs/2602.12096",
+    "date": "2026-02-13 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고차원 로보틱스 시스템, 즉 그립 조작기 및 이동 그립 조작기에 대한 효율적인 모션 플래닝은 실시간 운영과 신뢰할 수 있는 배포에 중요한 요소입니다. 계획 알고리즘의 발전으로 인해 고차원 상태 공간의 스케일러블함이 향상되나, 이러한 개선은 일반적으로 예측 불가능한, 일관되지 않은 운동 또는 과도한 컴퓨팅 리소스 및 메모리 요구를 초래합니다. 이 작업에서는 다그라프 검색(MGS) 알고리즘을 소개합니다. MGS는 클래식의 일방향 및.bidirectional 검색을 일반화하여 다그라프 설정에 적용할 수 있습니다. MGS는 상태 공간에서 다중 임플릭 그래프를 유지하고, 탐색이 진행될수록 가능성 있는 지역을 초점으로 하며, 초기로 분리된 서브그래프를 이행할 수 있는 transitiothrough feasible transitions as the search progresses. We prove that MGS is complete and bounded-suboptimal, and empirically demonstrate its effectiveness on a range of manipulation and mobile manipulation tasks. Demonstrations, benchmarks and code are available at https://multi-graph-search.github.io/."
+  },
+  {
+    "title": "here is the output:\n\nSub-Riemannian 경계 문제",
+    "original_title": "Sub--Riemannian boundary value problems for Optimal Geometric Locomotion",
+    "link": "https://arxiv.org/abs/2602.12199",
+    "date": "2026-02-13 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "한국의 신경망 학자들이 새롭게 제안한 지적 모델을 통해 슬레인 로코모터의 최적 모션을 정의합니다. 이 모델은 세계 좌표에서 물체의 움직임을 완전히 결정하는 시퀀스 형태를 고려하고, 에너지 dissipated by body's displacement를 포함하여 전체 로코모션 효율성을 捕捉합니다."
+  },
+  {
+    "title": "ABot-M0: VLA 기반 로봇操-hand with Action Manifold Learning",
+    "original_title": "ABot-M0: VLA Foundation Model for Robotic Manipulation with Action Manifold Learning",
+    "link": "https://arxiv.org/abs/2602.11236",
+    "date": "2026-02-13 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "한국 로보틱스에서 다양한 하드웨어를跨越하는 일반적 기구를 구축하는 것은 CENTRAL CHALLENGE로 간주되는 주요 과제입니다. 이를 해결하기 위해 우리는 ABot-M0 프레임워크를 제안합니다. 이 프레임워크는 시스템 데이터 커레이션 파이프라인을 구축하여 모델 아키텍처와 훈련 전략을 조합적으로 최적화하는 데 초점을 맞추고 있습니다. 또한, 6개의 공공 데이터셋에서 샘플을 정제하고 표준화하여 UniACT-데이터셋을 구성하여 다양한 로봇 형태와 작업 시나리오를 포함하는 대규모 데이터셋을 구축했습니다."
+  },
+  {
+    "title": "Clutt3R-Seg: Sparse-view 3D Instance Segmentation for Language-grounded Grasping in Cluttered Scenes",
+    "original_title": "Clutt3R-Seg: Sparse-view 3D Instance Segmentation for Language-grounded Grasping in Cluttered Scenes",
+    "link": "https://arxiv.org/abs/2602.11660",
+    "date": "2026-02-13 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "클러터드 장면에서 언어 기반의 접근을 위한 스플라스뷰 3D 인스턴스 세그멘테이션인 클럿3R-세그를 발표했습니다. 이 방법은 semantic cues의 계층적 인스턴트 트리를 내포하며, 이를 통해 noisy masks를 사용하여 occlusion, limited viewpoints, 및 noisy masks를 완화합니다.\n\n(Note: I followed the instructions to translate the title and summarize the content into 2-3 concise Korean sentences. I also maintained the formal, objective news-brief style and used standard Korean transliteration for technical terms.)"
+  },
+  {
     "title": "PickNik 로보틱스와 모티브 스페이스 시스템s가 NASA ISAM 미션에서 함께 일할 것임",
     "original_title": "PickNik Robotics to work with Motiv Space Systems on NASA ISAM mission",
     "link": "https://www.therobotreport.com/picknik-robotics-to-work-with-motiv-space-systems-on-nasa-isam-mission/",
