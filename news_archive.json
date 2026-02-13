@@ -18,22 +18,22 @@
     "summary": "웨어하우싱 로봇을 위한 강건하고 신뢰할 수 있는 베어링을 찾아야 했던 바스티안 솔루션스는 igus 운동 플라스틱에 도전하여 트럭 적재를 가능하게 했다."
   },
   {
-    "title": "The insect-inspired bionic eye that sees, smells and guides robots",
+    "title": "Korean Title:fruit fly-inspired bionic eye ~함\n\nKOREAN_TITLE",
     "original_title": "The insect-inspired bionic eye that sees, smells and guides robots",
     "link": "https://techxplore.com/news/2026-02-insect-bionic-eye-robots.html",
     "date": "2026-02-12 17:00",
     "source": "Tech Xplore",
     "category": "humanoid",
-    "summary": "The compound eyes of the humble fruit fly are a marvel of nature. They are wide-angle and can process visual information several times faster than the human eye. Inspired by this biological masterpiece, researchers at the Chinese Academy of Sciences have developed an insect-scale compound eye that can both see and smell, potentially improving how drones and robots navigate complex environments and avoid obstacles."
+    "summary": "KOREAN_SUMMARY\n프러그라이트 인스펙트드 바이오닉 아이 ~함"
   },
   {
-    "title": "Power of the collective: Modular robot boosts resilience by sharing resources",
+    "title": "_modular robot resource sharing resilience boosts_",
     "original_title": "Power of the collective: Modular robot boosts resilience by sharing resources",
     "link": "https://techxplore.com/news/2026-02-power-modular-robot-boosts-resilience.html",
     "date": "2026-02-12 15:20",
     "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "EPFL roboticists have shown that when a modular robot shares power, sensing, and communication resources among its individual units, it is significantly more resistant to failure than traditional robotic systems, where the breakdown of one element often means a loss of functionality."
+    "category": "hand",
+    "summary": "모듈러 로봇이 파워, 센싱, 커뮤니케이션 리소스를 공유하면 기능적 취약점을 significally 줄이는 데 성공함. EPFL 로봇공학자들은 이 방법으로 로봇 시스템의 견고성을 크게 향상시켰으며, 전통적인 로봇 시스템에서는 한 개의 부품이 붕괴되면 전체 기능이 손실되는 문제를 해결하였다."
   },
   {
     "title": "Weave 로보틱스 ~Isaac 0~ 가정세탁로봇 공개됨",
@@ -270,33 +270,6 @@
     "summary": "arXiv:2602.10688v1 Announce Type: new \nAbstract: Capsule robots are promising tools for minimally invasive diagnostics and therapy, with applications from gastrointestinal endoscopy to targeted drug delivery and biopsy sampling. Conventional magnetic capsule robots embed bulky permanent magnets at both ends, reducing the usable cavity by about 10-20 mm and limiting integration of functional modules. We propose a compact, 3D-printed soft capsule robot with a magnetic coating that replaces internal magnets, enabling locomotion via a thin, functional shell while preserving the entire interior cavity as a continuous volume for medical payloads. The compliant silicone-magnetic composite also improves swallowability, even with a slightly larger capsule size. Magnetostatic simulations and experiments confirm that programmed NSSN/SNNS pole distributions provide strong anisotropy and reliable torque generation, enabling stable bidirectional rolling, omnidirectional steering, climbing on 7.5 degree inclines, and traversal of 5 mm protrusions. Rolling motion is sustained when the magnetic field at the capsule reaches at least 0.3 mT, corresponding to an effective actuation depth of 30 mm in our setup. Future work will optimize material composition, coating thickness, and magnetic layouts to enhance force output and durability, while next-generation robotic-arm-based field generators with closed-loop feedback will address nonlinearities and expand maneuverability. Together, these advances aim to transition coating-based capsule robots toward reliable clinical deployment and broaden their applications in minimally invasive diagnostics and therapy."
   },
   {
-    "title": "Say, Dream, and Act: Learning Video World Models for Instruction-Driven Robot Manipulation",
-    "original_title": "Say, Dream, and Act: Learning Video World Models for Instruction-Driven Robot Manipulation",
-    "link": "https://arxiv.org/abs/2602.10717",
-    "date": "2026-02-12 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.10717v1 Announce Type: new \nAbstract: Robotic manipulation requires anticipating how the environment evolves in response to actions, yet most existing systems lack this predictive capability, often resulting in errors and inefficiency. While Vision-Language Models (VLMs) provide high-level guidance, they cannot explicitly forecast future states, and existing world models either predict only short horizons or produce spatially inconsistent frames. To address these challenges, we propose a framework for fast and predictive video-conditioned action. Our approach first selects and adapts a robust video generation model to ensure reliable future predictions, then applies adversarial distillation for fast, few-step video generation, and finally trains an action model that leverages both generated videos and real observations to correct spatial errors. Extensive experiments show that our method produces temporally coherent, spatially accurate video predictions that directly support precise manipulation, achieving significant improvements in embodiment consistency, spatial referring ability, and task completion over existing baselines. Codes & Models will be released."
-  },
-  {
-    "title": "RADAR: Benchmarking Vision-Language-Action Generalization via Real-World Dynamics, Spatial-Physical Intelligence, and Autonomous Evaluation",
-    "original_title": "RADAR: Benchmarking Vision-Language-Action Generalization via Real-World Dynamics, Spatial-Physical Intelligence, and Autonomous Evaluation",
-    "link": "https://arxiv.org/abs/2602.10980",
-    "date": "2026-02-12 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.10980v1 Announce Type: new \nAbstract: VLA models have achieved remarkable progress in embodied intelligence; however, their evaluation remains largely confined to simulations or highly constrained real-world settings. This mismatch creates a substantial reality gap, where strong benchmark performance often masks poor generalization in diverse physical environments. We identify three systemic shortcomings in current benchmarking practices that hinder fair and reliable model comparison. (1) Existing benchmarks fail to model real-world dynamics, overlooking critical factors such as dynamic object configurations, robot initial states, lighting changes, and sensor noise. (2) Current protocols neglect spatial--physical intelligence, reducing evaluation to rote manipulation tasks that do not probe geometric reasoning. (3) The field lacks scalable fully autonomous evaluation, instead relying on simplistic 2D metrics that miss 3D spatial structure or on human-in-the-loop systems that are costly, biased, and unscalable. To address these limitations, we introduce RADAR (Real-world Autonomous Dynamics And Reasoning), a benchmark designed to systematically evaluate VLA generalization under realistic conditions. RADAR integrates three core components: (1) a principled suite of physical dynamics; (2) dedicated tasks that explicitly test spatial reasoning and physical understanding; and (3) a fully autonomous evaluation pipeline based on 3D metrics, eliminating the need for human supervision. We apply RADAR to audit multiple state-of-the-art VLA models and uncover severe fragility beneath their apparent competence. Performance drops precipitously under modest physical dynamics, with the expectation of 3D IoU declining from 0.261 to 0.068 under sensor noise. Moreover, models exhibit limited spatial reasoning capability. These findings position RADAR as a necessary bench toward reliable and generalizable real-world evaluation of VLA models."
-  },
-  {
-    "title": "Scaling World Model for Hierarchical Manipulation Policies",
-    "original_title": "Scaling World Model for Hierarchical Manipulation Policies",
-    "link": "https://arxiv.org/abs/2602.10983",
-    "date": "2026-02-12 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.10983v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models are promising for generalist robot manipulation but remain brittle in out-of-distribution (OOD) settings, especially with limited real-robot data. To resolve the generalization bottleneck, we introduce a hierarchical Vision-Language-Action framework \\our{} that leverages the generalization of large-scale pre-trained world model for robust and generalizable VIsual Subgoal TAsk decomposition VISTA. Our hierarchical framework \\our{} consists of a world model as the high-level planner and a VLA as the low-level executor. The high-level world model first divides manipulation tasks into subtask sequences with goal images, and the low-level policy follows the textual and visual guidance to generate action sequences. Compared to raw textual goal specification, these synthesized goal images provide visually and physically grounded details for low-level policies, making it feasible to generalize across unseen objects and novel scenarios. We validate both visual goal synthesis and our hierarchical VLA policies in massive out-of-distribution scenarios, and the performance of the same-structured VLA in novel scenarios could boost from 14% to 69% with the guidance generated by the world model. Results demonstrate that our method outperforms previous baselines with a clear margin, particularly in out-of-distribution scenarios. Project page: \\href{https://vista-wm.github.io/}{https://vista-wm.github.io}"
-  },
-  {
     "title": "A receding-horizon multi-contact motion planner for legged robots in challenging environments",
     "original_title": "A receding-horizon multi-contact motion planner for legged robots in challenging environments",
     "link": "https://arxiv.org/abs/2602.11113",
@@ -304,24 +277,6 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2602.11113v1 Announce Type: new \nAbstract: We present a novel receding-horizon multi-contact motion planner for legged robots in challenging scenarios, able to plan motions such as chimney climbing, navigating very narrow passages or crossing large gaps. Our approach adds new capabilities to the state of the art, including the ability to reactively re-plan in response to new information, and planning contact locations and whole-body trajectories simultaneously, simplifying the implementation and removing the need for post-processing or complex multi-stage approaches. Our method is more resistant to local minima problems than other potential field based approaches, and our quadratic-program-based posture generator returns nodes more quickly than those of existing algorithms. Rigorous statistical analysis shows that, with short planning horizons (e.g., one step ahead), our planner is faster than the state-of-the-art across all scenarios tested (between 45% and 98% faster on average, depending on the scenario), while planning less efficient motions (requiring 5% fewer to 700% more stance changes on average). In all but one scenario (Chimney Walking), longer planning horizons (e.g., four steps ahead) extended the average planning times (between 73% faster and 400% slower than the state-of-the-art) but resulted in higher quality motion plans (between 8% more and 47% fewer stance changes than the state-of-the-art)."
-  },
-  {
-    "title": "RadarEye: Robust Liquid Level Tracking Using mmWave Radar in Robotic Pouring",
-    "original_title": "RadarEye: Robust Liquid Level Tracking Using mmWave Radar in Robotic Pouring",
-    "link": "https://arxiv.org/abs/2602.10417",
-    "date": "2026-02-12 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.10417v1 Announce Type: cross \nAbstract: Transparent liquid manipulation in robotic pouring remains challenging for perception systems: specular/refraction effects and lighting variability degrade visual cues, undermining reliable level estimation. To address this challenge, we introduce RadarEye, a real-time mmWave radar signal processing pipeline for robust liquid level estimation and tracking during the whole pouring process. RadarEye integrates (i) a high-resolution range-angle beamforming module for liquid level sensing and (ii) a physics-informed mid-pour tracker that suppresses multipath to maintain lock on the liquid surface despite stream-induced clutter and source container reflections. The pipeline delivers sub-millisecond latency. In real-robot water-pouring experiments, RadarEye achieves a 0.35 cm median absolute height error at 0.62 ms per update, substantially outperforming vision and ultrasound baselines."
-  },
-  {
-    "title": "Semi-Supervised Cross-Domain Imitation Learning",
-    "original_title": "Semi-Supervised Cross-Domain Imitation Learning",
-    "link": "https://arxiv.org/abs/2602.10793",
-    "date": "2026-02-12 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.10793v1 Announce Type: cross \nAbstract: Cross-domain imitation learning (CDIL) accelerates policy learning by transferring expert knowledge across domains, which is valuable in applications where the collection of expert data is costly. Existing methods are either supervised, relying on proxy tasks and explicit alignment, or unsupervised, aligning distributions without paired data, but often unstable. We introduce the Semi-Supervised CDIL (SS-CDIL) setting and propose the first algorithm for SS-CDIL with theoretical justification. Our method uses only offline data, including a small number of target expert demonstrations and some unlabeled imperfect trajectories. To handle domain discrepancy, we propose a novel cross-domain loss function for learning inter-domain state-action mappings and design an adaptive weight function to balance the source and target knowledge. Experiments on MuJoCo and Robosuite show consistent gains over the baselines, demonstrating that our approach achieves stable and data-efficient policy learning with minimal supervision. Our code is available at~ https://github.com/NYCU-RL-Bandits-Lab/CDIL."
   },
   {
     "title": "Self-Augmented Robot Trajectory: Efficient Imitation Learning via Safe Self-augmentation with Demonstrator-annotated Precision",
@@ -333,13 +288,31 @@
     "summary": "arXiv:2509.09893v2 Announce Type: replace \nAbstract: Imitation learning is a promising paradigm for training robot agents; however, standard approaches typically require substantial data acquisition -- via numerous demonstrations or random exploration -- to ensure reliable performance. Although exploration reduces human effort, it lacks safety guarantees and often results in frequent collisions -- particularly in clearance-limited tasks (e.g., peg-in-hole) -- thereby, necessitating manual environmental resets and imposing additional human burden. This study proposes Self-Augmented Robot Trajectory (SART), a framework that enables policy learning from a single human demonstration, while safely expanding the dataset through autonomous augmentation. SART consists of two stages: (1) human teaching only once, where a single demonstration is provided and precision boundaries -- represented as spheres around key waypoints -- are annotated, followed by one environment reset; (2) robot self-augmentation, where the robot generates diverse, collision-free trajectories within these boundaries and reconnects to the original demonstration. This design improves the data collection efficiency by minimizing human effort while ensuring safety. Extensive evaluations in simulation and real-world manipulation tasks show that SART achieves substantially higher success rates than policies trained solely on human-collected demonstrations. Video results available at https://sites.google.com/view/sart-il ."
   },
   {
-    "title": "An assistive robot learns to set and clear the table by observing humans",
+    "title": "Scaling World Model for Hierarchical Manipulation Policies",
+    "original_title": "Scaling World Model for Hierarchical Manipulation Policies",
+    "link": "https://arxiv.org/abs/2602.10983",
+    "date": "2026-02-12 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Vision-Language-Action 모델이 일반적인 로봇 조작에 hứ망을 보여주나 실제 로봇 데이터가 제한되는 경우 OOD 설정에서 brittle해질 수 있습니다. 이 bottleneck을 해결하기 위해 우리는 hierarchical Vision-Language-Action 프레임워크를 도입하여 large-scale pre-trained world model의 일반화를 활용하여 robust하고 generalizable한 VIsual Subgoal TAsk decomposition VISTA를 개발했습니다. 이 hierarchical framework는 high-level 플래너인 world model과 low-level 실행자로 구성된 VLA를 포함합니다._world model은 manipulation task를 subtask sequence로 나누어 goal image를 생성하고, low-level policy는 textual and visual guidance에 따라 action sequence를 생성합니다. 이러한 synthesized goal image는 unseen object와 novel scenario에서 일반화가 가능하게 하여 low-level policy의 성능을 14%에서 69%까지 향상시킵니다. 결과적으로 우리의 메서드는 OOD 설정에서 clear margin으로VIOUS baseline보다 나왔습니다. 프로젝트 페이지: https://vista-wm.github.io"
+  },
+  {
+    "title": "Semi-Supervised Cross-Domain Imitation Learning",
+    "original_title": "Semi-Supervised Cross-Domain Imitation Learning",
+    "link": "https://arxiv.org/abs/2602.10793",
+    "date": "2026-02-12 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Cross-domain imitation learning( CDIL)이 가속화되는 Semi-Supervised 설정과 알고리즘을 제안하며, 이론적 정당성을 갖추었다. SS-CDIL은Offline 데이터에만頼り,少数의 대상 예제와 몇몇 unlabeled 불완전 경로를 사용하여 정책 학습을 수행한다. 우리는 도메인 차이점을 해결하기 위해 새로운 cross-domain 손실 함수를 제안하고, 소스와 목표 지식의 적절한 균형을 찾는 adaptive weight 함수를 설계하였다. MuJoCo 및 Robosuite 실험에서 기반선보다 일관된 성능 향상을 보여주는SS-CDIL의 안정적이고 데이터 효율적인 정책 학습 방법이 있다는 것을 입증하였다. nosso 코드는~https://github.com/NYCU-RL-Bandits-Lab/CDIL에서 이용할 수 있다."
+  },
+  {
+    "title": "마드리드 대학교 연구진이 개발한 새로운 방법론으로 로봇이 humano의 관찰을 통해 팔을 자율적으로 움직일 수 있도록 학습하는 방식이 발표됨",
     "original_title": "An assistive robot learns to set and clear the table by observing humans",
     "link": "https://techxplore.com/news/2026-02-robot-table-humans.html",
     "date": "2026-02-11 22:16",
     "source": "Tech Xplore",
     "category": "humanoid",
-    "summary": "Researchers at Universidad Carlos III de Madrid (UC3M) have developed a new methodology for a robot to learn how to move its arms autonomously by combining a type of observational learning with intercommunication between its limbs. This work represents a further step toward achieving more natural and easily teachable service robots capable of performing assistive tasks in domestic environments, such as setting and clearing the table, ironing, or tidying up the kitchen."
+    "summary": "마드리드 대학교의 UC3M 연구진은 로봇이 팔 간의 상호 간섭을 조합하여 인간의 관찰을 통해 팔을 자율적으로 움직일 수 있도록 하는 새로운 방법론을 개발해 나갈 계획임으로 가정 환경에서 보조적인 작업, 즉 식탁 정리나 철인, 주방 정리를 수행하는 서비스 로봇의 개발에 중요한 단계를 구축함."
   },
   {
     "title": "Olympik-sayuk-jong-u-dron-kam-keu-yang-hwang-sae-imham",
