@@ -229,54 +229,78 @@ for src in rss_economy:
 today = datetime.datetime.now()
 new_items_count = 0
 
-for src in rss_robotics:
-    try:
-        feed = feedparser.parse(src["url"], agent="Mozilla/5.0")
-        for entry in feed.entries:
-            link = entry.link
-            if link in existing_links: continue
-            
-            pub_dt = today
-            if hasattr(entry, 'published_parsed') and entry.published_parsed:
-                pub_dt = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))
-            elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
-                pub_dt = datetime.datetime.fromtimestamp(time.mktime(entry.updated_parsed))
-            
-            if (today - pub_dt).days > 7: continue
+# Separate feeds into News and Papers
+rss_robotics_news = [src for src in rss_robotics if src.get('cat') != 'paper']
+rss_robotics_papers = [src for src in rss_robotics if src.get('cat') == 'paper']
 
-            log(f"🧠 AI Processing: {entry.title[:40]}...")
-            raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
-            if not raw_snippet: 
-                raw_snippet = entry.title
-            
-            title_ko, summary_ko = process_news_with_local_llm(entry.title, raw_snippet)
-            
-            # Determine category dynamically
-            final_cat = classify_category(title_ko, summary_ko, src['cat'])
+new_items_count = 0
+MAX_PAPERS_COUNT = 8
+paper_items_count = 0
 
-            # [STRICT FILTERING] If source is 'paper' (e.g. ArXiv), strictly require relevant category.
-            # If classify_category didn't find 'hand' or 'humanoid' keywords, it returns 'paper'.
-            # In that case, we DISCARD this item.
-            if src.get('cat') == 'paper' and final_cat == 'paper':
-                log(f"🚫 Filtered out paper: {title_ko} (No keywords matched)")
-                continue
+def process_feed_list(feed_list, is_paper=False):
+    global new_items_count, paper_items_count
+    for src in feed_list:
+        try:
+            feed = feedparser.parse(src["url"], agent="Mozilla/5.0")
+            for entry in feed.entries:
+                link = entry.link
+                if link in existing_links: continue
+                
+                # Check paper limit
+                if is_paper and paper_items_count >= MAX_PAPERS_COUNT:
+                    return
 
-            news_item = {
-                "title": title_ko,
-                "original_title": entry.title,
-                "link": link,
-                "date": pub_dt.strftime("%Y-%m-%d %H:%M"),
-                "source": src['title'],
-                "category": final_cat,
-                "summary": summary_ko
-            }
-            archive.append(news_item)
-            existing_links.add(link)
-            new_items_count += 1
-            if new_items_count >= 200: break
-        if new_items_count >= 200: break
-    except Exception as e:
-        log(f"RSS Error: {e}")
+                # Check global limit
+                if new_items_count >= 200: return
+
+                pub_dt = today
+                if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                    pub_dt = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed))
+                elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+                    pub_dt = datetime.datetime.fromtimestamp(time.mktime(entry.updated_parsed))
+                
+                if (today - pub_dt).days > 7: continue
+
+                log(f"🧠 AI Processing: {entry.title[:40]}...")
+                raw_snippet = clean_html(entry.get('description', entry.get('summary', '')))
+                if not raw_snippet: 
+                    raw_snippet = entry.title
+                
+                title_ko, summary_ko = process_news_with_local_llm(entry.title, raw_snippet)
+                
+                # Determine category dynamically
+                final_cat = classify_category(title_ko, summary_ko, src['cat'])
+
+                # [STRICT FILTERING]
+                if src.get('cat') == 'paper' and final_cat == 'paper':
+                    log(f"🚫 Filtered out paper: {title_ko} (No keywords matched)")
+                    continue
+
+                news_item = {
+                    "title": title_ko,
+                    "original_title": entry.title,
+                    "link": link,
+                    "date": pub_dt.strftime("%Y-%m-%d %H:%M"),
+                    "source": src['title'],
+                    "category": final_cat,
+                    "summary": summary_ko
+                }
+                archive.append(news_item)
+                existing_links.add(link)
+                new_items_count += 1
+                if is_paper: paper_items_count += 1
+                
+        except Exception as e:
+            log(f"RSS Error: {e}")
+
+# 1. Process News First
+log("📰 Fetching General News...")
+process_feed_list(rss_robotics_news, is_paper=False)
+
+# 2. Process Papers Second (Limited)
+if new_items_count < 200:
+    log("📄 Fetching Research Papers (Limited)...")
+    process_feed_list(rss_robotics_papers, is_paper=True)
 
 save_archive(archive)
 
