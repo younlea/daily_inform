@@ -39,12 +39,16 @@ def process_news_with_local_llm(title, snippet):
         
         if "|||" in result_text:
             parts = result_text.split("|||")
-            return parts[0].strip(), parts[1].strip()
+            title = parts[0].strip().strip('*').strip('#').strip()
+            summary = parts[1].strip().strip('*').strip('#').strip()
+            return title, summary
         else:
             lines = result_text.split('\n')
             if len(lines) >= 2:
-                return lines[0].strip(), " ".join(lines[1:]).strip()
-            return title, result_text 
+                title = lines[0].strip().strip('*').strip('#').strip()
+                summary = " ".join(lines[1:]).strip().strip('*').strip('#').strip()
+                return title, summary
+            return title.strip().strip('*').strip('#').strip(), result_text.strip().strip('*').strip('#').strip() 
     except Exception as e:
         log(f"❌ LLM Error: {e}")
         return title, snippet
@@ -188,6 +192,7 @@ def classify_category(title, summary, current_cat):
 
 # 기존 아카이브 재분류 (Re-classify existing items)
 for item in archive:
+    if 'title' not in item: continue
     item['category'] = classify_category(item['title'], item.get('summary', ''), item['category'])
 
 
@@ -321,6 +326,7 @@ with open('index.html', 'w', encoding='utf-8') as f:
 def generate_card_list(items):
     html = ""
     for item in items:
+        if 'title' not in item: continue
         summary_html = f"<div class='news-summary' style='color:#555; font-size:0.95rem; margin-top:8px; line-height:1.6;'>💡 {item.get('summary', '')}</div>" if item.get('summary') else ""
         original_title = item.get('original_title', '').replace("'", "&#39;")
         # Star icon added
