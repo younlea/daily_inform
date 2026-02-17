@@ -216,6 +216,42 @@
     "summary": "소프트 핌-레이 핑거의 내부 구조는 그 접근성 및 잡기 성능에 중요한 역할을 해온다. 그러나 디자인 목적으로 잡기힘과 변형 행동 모델링은 도전이 되는 경우가 있다. 핌-레이 핑거가 더 Rigid해지고 높은 힘을 발휘하게 되면 물체를 다루는 데 덜 세련화하게 된다. 두 가지의 대립은 다목적 최적화 문제를 일으킨다. 우리는 유한 요소법을 사용하여 핌-레이 핑거가 원통형 물체를 잡는 경우의:deflections과 contact forces를 추정하고, 120개의 시뮬레이션으로 구성된 데이터셋을 생성하였다. 이 데이터셋에는 3개의 입력 변수가 포함되는데, 그 중 2개의 변수는 디자인 변수로서, 전면 및 支持梁의 두께, 교방梁의 두께, 교방 간격이 있다. 이 데이터셋은 então를 사용하여 4개 출력 신경망을 구성하여 잡기힘과 tip displacement의 예측을 수행하였다. 최대 잡기힘 및 최대.tip displacement의 크기는 두 개의 최적화 목표로서, 힘과 세련된 다루는 트레이드 오프를 보여준다. NSGA-II 알고리즘을 사용하여 솔루션 집합을 찾아냈으며, 시뮬레이션 결과는 소프트 그립퍼의 디자인 및 잡기 성능을 개선하는 데 사용할 수 있는 방법을 보여주는 예시로 된다."
   },
   {
+    "title": "DM0: Embodied-Native Vision-Language-Action 모델 ~임",
+    "original_title": "DM0: An Embodied-Native Vision-Language-Action Model towards Physical AI",
+    "link": "https://arxiv.org/abs/2602.14974",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "한국 최고의 물리 AI 프레임워크 DM0를 발표, 이 모델은 인트ーネ트에서 훈련된 모델을 물리적 작업에 적응하는 전통적인 접근 방식에서 벗어나 embodied manipulation과 navigation을 통합하여 물리적 지식을 얻는 것을 목표로 하였다. DM0는 세 단계의 파이프라라인으로 구성되는데, 첫 번째는 다양한 corpus를 사용한 대규모 unified pretraining, 두 번째는 Vision-Language Model(VLM)위에 flow-matching action expert를 구축, 마지막은 Embodied Spatial Scaffolding을 통해 spatial Chain-of-Thought reasoning을 제안하여 물리적 해결 공간을 제한하였다. RoboChallenge 벤치마크에서 DM0는 Specialist와 Generalist 두 설정에서 Table30에 나타난 최우수 성능을 달성하였다."
+  },
+  {
+    "title": "GelSLAM: 실시간 3D 촬영 손가락 SLAM 시스템",
+    "original_title": "GelSLAM: A Real-time, High-Fidelity, and Robust 3D Tactile SLAM System",
+    "link": "https://arxiv.org/abs/2508.15990",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고속 및 방진이 필요한 precisa grasp 및 manipulation을 위해 물체의 자세와 형상을 정확하게 인식하는 것이 필수적입니다. 촕징기반 메서드보다는 촉감 센싱이 더 높은 정밀도 및 방진에 대한 이점을 제공합니다. 따라서 물체를 접촉하여 추적하고 재구성하는 경우 특히 가치가 있습니다. 이 작품에서는 GelSLAM, 3D SLAM 시스템을 제안하며 촉감 센싱만으로 물체의 자세를 오랜 기간 동안 추정하고 물체의 형상을 고도로 정밀하게 재구성합니다.傳統적 포인트 클라우드 기반 접근법과 달리 GelSLAM은 촉감-기반 표면 기울기 및 곡률을 사용하여坚强한 추적 및 구획閉を実現할 수 있습니다."
+  },
+  {
+    "title": "Seeing the Bigger Picture: 3D Latent Mapping for Mobile Manipulation Policy Learning",
+    "original_title": "Seeing the Bigger Picture: 3D Latent Mapping for Mobile Manipulation Policy Learning",
+    "link": "https://arxiv.org/abs/2510.03885",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "3D latent mapping 기술을 적용한 모바일 조작정책 학습이 이미지 기반 정책보다 공간적이고 시간적인推理 성과를 향상시킴. 이를 통해 모바일 조작정책이 현장의 큰 그림을 볼 수 있음, 15%의 성공률 향상을 달성함."
+  },
+  {
+    "title": "Vision-Based Early Fault Diagnosis and Self-Recovery for Strawberry Harvesting Robots",
+    "original_title": "Vision-Based Early Fault Diagnosis and Self-Recovery for Strawberry Harvesting Robots",
+    "link": "https://arxiv.org/abs/2601.02085",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "자작성 strawberry 수확 로봇의 일률 fault 진단 및 自己회복 framework를 제안, 이 framework의 core는 SRR-Net, end-to-end multi-task perception model으로, strawberry detection, segmentation, ripeness estimation을 수행, 이를 기반으로 relative error compensation method를 설계, positional misalignment을 정정하고, empty grasping/misgrasp, fruit-slippage fault를 mitigate하도록 early abort strategy를 구현."
+  },
+  {
     "title": "MOTOR DESIGN 특화로 다양한 로봇이 탄생함",
     "original_title": "How motor design enables different types of robots",
     "link": "https://www.therobotreport.com/how-motor-design-enables-different-types-of-robots/",
