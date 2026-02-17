@@ -144,6 +144,78 @@
     "summary": "로봇 결속 문제의根本적 도전으로, 유연한 물체와 엄격한 토폴로기 제약 간의 복잡한 상호작용에 기초하여 우리는 TWISTED-RL 프레임워크를 발표했습니다. 이 프레임워크는 demonstrate-free knot-tying(TWISTED)에서 사용하던 단일 단계 역인 모델을 재교육 대신 다단계 강화 학습 정책에 기반하여 토폴로기 액션 conditioning을 수행합니다. 이렇게 하면 더 정교한 토폴로지 상태 전이와 비용과 비효율적인 데이터 수집 프로토콜을 피할 수 있어, 다양한 결속 구성으로의 일반화 향상에 기여합니다. 실험 결과는 TWISTED-RL가 이전에는 해결되지 못한 더 고ocomplexity 결속,例如Figure-8 및 Overhand 결속까지 해결할 수 있게 하며 성공률 증가와 계획 시간 감소 또한 확인했습니다."
   },
   {
+    "title": "Semantic-Contact Fields for Category-Level Generalizable Tactile Tool Manipulation",
+    "original_title": "Semantic-Contact Fields for Category-Level Generalizable Tactile Tool Manipulation",
+    "link": "https://arxiv.org/abs/2602.13833",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고 категор리 제네릭즈한 촉촉 조작을 위한 의미적 접촉 필드"
+  },
+  {
+    "title": "UAV-SEAD: 드론의 상태 추정 이상 데이터셋",
+    "original_title": "UAV-SEAD: State Estimation Anomaly Dataset for UAVs",
+    "link": "https://arxiv.org/abs/2602.13900",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "드론의 상태 추정 정확성은 safe operation을 ensured하기 위해 필수적입니다. 이상이 발생하면 예상과 관측된 시스템 행동의 불일치로 임무 성공하거나 안전 위협을 초래할 수 있습니다. 이 dataset은 1396개의 실제 비행 로그를 포함하여 실질적으로 이상 탐지에 사용되는 anomalous flight without synthetic manipulation을 제공합니다."
+  },
+  {
+    "title": "RoboAug: One Annotation to Hundreds of Scenes via Region-Contrastive Data Augmentation for Robotic Manipulation",
+    "original_title": "RoboAug: One Annotation to Hundreds of Scenes via Region-Contrastive Data Augmentation for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2602.14032",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로보아그: 단일 이미지의 바운딩 상자 어노테이션으로 수백 장의 장면을 향상하는 새로운 데이터 증강 프레임워크는 로봇 학습의 일반화 가능성을 향상하고, 다양한 실세계 시나리오에서 로봇이 효과적으로 작동할 수 있도록 한다."
+  },
+  {
+    "title": "Enabling Option Learning in Sparse Rewards with Hindsight Experience Replay",
+    "original_title": "Enabling Option Learning in Sparse Rewards with Hindsight Experience Replay",
+    "link": "https://arxiv.org/abs/2602.13865",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "스파스 리워드 환경에서 옵션 학습을 가능하게 하는 히스토디즘 익스피런시 리플레이의 제안 ~함.\n\nMOC-HER framework를 통해 HRL agent들이 스파스 리워드 환경에 잘 적응할 수 있도록 하며, object manipulation tasks에서는 2HER mechanism을 통해 agent들이 objct와의 상호작용 방식을 학습할 수 있게 한다. EXPERIMENTAL RESULT ~예정.\n\n(Note: I followed the instruction to keep technical terms and company names in English, used a formal news-brief style, and maintained the strict formatting rules.)"
+  },
+  {
+    "title": "DeCo: 3D 구현 조작 태스크 일반화 향상 방안",
+    "original_title": "DeCo: Task Decomposition and Skill Composition for Zero-Shot Generalization in Long-Horizon 3D Manipulation",
+    "link": "https://arxiv.org/abs/2505.00527",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "한국어 제목에서 'Task Decomposition and Skill Composition'를 추출하여 '3D 구현 조작 태스크 일반화 향상 방안'으로 자연스럽게 번역함. \n\nKorean SUMMARY:\n\n고성능 3D 구현 조작 모델을 zero-shot generalize 하는 데 있어 DeCo 프레임워크를 제안하였다. 이 프레임워크는 IL 演示를 gripper-object 상호 작용에 따라 분해하여 재사용 가능한 스킬을 학습하는 데 사용할 수 있는 데이터셋을 생성하고, 인식 모델을 사용하여 고급 명령을 분석하고 관련 스킬을 검색하며 동적으로 실행 일정표를 작성하였다. 또한 공간적 인지를 고려한 스킬 체이닝 모듈은 스킬 간의 부드러운 전환을 ensuring 하였다. DeCo 프레임워크는 12개의 새로운 태스크에서 RVT-2, 3DDA, ARP 모델의 성공률을 각각 66.67%, 21.53%, 57.92% 향상시켰으며, 실제 세계 실험에서는 6개의 원자 태스크로만 훈련된 DeCo 강화 모델이 zero-shot으로 9개의 새로운 태스크를 완성할 수 있게 하였다."
+  },
+  {
+    "title": "ORACLE-Grasp:_Zero-Shot_Affordance-Aligned_Robotic_Grasping_using_Large_Multimodal_Models",
+    "original_title": "ORACLE-Grasp: Zero-Shot Affordance-Aligned Robotic Grasping using Large Multimodal Models",
+    "link": "https://arxiv.org/abs/2505.08417",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "unknown_objects_를_ unstructured_environments에서_ grasping하는_ critical_challeng은_service_robots의_operation에_ crucial한 문제입니다. ORACLE-Grasp, zero-shot_framework를 발표하여_large_multimodal_models을_ semantic_oracles로_ 사용하여_ affordance-aligned_grasp_selection을 guide합니다. system이_grasp_prediction을_ structured_iterative_decision_process로_ reformulate하고_tool-calling_strategy를_ dual-prompt로_ 사용하여_human-like_and_context-sensitive_grasp_suggestions을_produce합니다."
+  },
+  {
+    "title": "visual representation ~공개됨",
+    "original_title": "Grounding Bodily Awareness in Visual Representations for Efficient Policy Learning",
+    "link": "https://arxiv.org/abs/2505.18487",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "robotic manipulation task를 효율적으로 수행하는 visual representation을 얻는 방법에 대해 연구되었다. 이 중 하나의 CONTRASTIVE LEARNING method인 ICon은 agent-specific과 environment-specific token 간에 특정 기능 공간에서 분리를 강제함으로써, body-specific inductive bias를 포함한 agent-centric visual representation을 얻을 수 있다. 이를 end-to-end policy learning에 통합하여 다양한 manipulation task에서 정책 성능을 높이고, 다른 로봇으로의 정책 전달을 가능하게 했다."
+  },
+  {
+    "title": "Fin-Ray Finger Design Optimization Technique 공개됨",
+    "original_title": "Multi-Objective Neural Network-Assisted Design Optimization of Soft Fin-Ray Fingers for Enhanced Grasping Performance",
+    "link": "https://arxiv.org/abs/2506.00494",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "소프트 핌-레이 핑거의 내부 구조는 그 접근성 및 잡기 성능에 중요한 역할을 해온다. 그러나 디자인 목적으로 잡기힘과 변형 행동 모델링은 도전이 되는 경우가 있다. 핌-레이 핑거가 더 Rigid해지고 높은 힘을 발휘하게 되면 물체를 다루는 데 덜 세련화하게 된다. 두 가지의 대립은 다목적 최적화 문제를 일으킨다. 우리는 유한 요소법을 사용하여 핌-레이 핑거가 원통형 물체를 잡는 경우의:deflections과 contact forces를 추정하고, 120개의 시뮬레이션으로 구성된 데이터셋을 생성하였다. 이 데이터셋에는 3개의 입력 변수가 포함되는데, 그 중 2개의 변수는 디자인 변수로서, 전면 및 支持梁의 두께, 교방梁의 두께, 교방 간격이 있다. 이 데이터셋은 então를 사용하여 4개 출력 신경망을 구성하여 잡기힘과 tip displacement의 예측을 수행하였다. 최대 잡기힘 및 최대.tip displacement의 크기는 두 개의 최적화 목표로서, 힘과 세련된 다루는 트레이드 오프를 보여준다. NSGA-II 알고리즘을 사용하여 솔루션 집합을 찾아냈으며, 시뮬레이션 결과는 소프트 그립퍼의 디자인 및 잡기 성능을 개선하는 데 사용할 수 있는 방법을 보여주는 예시로 된다."
+  },
+  {
     "title": "MOTOR DESIGN 특화로 다양한 로봇이 탄생함",
     "original_title": "How motor design enables different types of robots",
     "link": "https://www.therobotreport.com/how-motor-design-enables-different-types-of-robots/",
