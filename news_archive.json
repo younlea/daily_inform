@@ -297,6 +297,42 @@
     "summary": "RGB 기반의 모바일 로봇의 기초 위치 정밀한 구현을 위해[last-meter navigation]을 category-level에서 학습하는 새로운 프레임워크를 introduce하는 데 초점을 둡니다. 이를 통해 quadruped mobile manipulator robot이 RGB 관측값으로만 작동하여, target object에 대한 manipulation-ready positioning을 달성할 수 있습니다."
   },
   {
+    "title": "로보틱 스토의 시각적 예측: 저분율_SNAPSHOT에서 기반한 세계 모델",
+    "original_title": "Visual Foresight for Robotic Stow: A Diffusion-Based World Model from Sparse Snapshots",
+    "link": "https://arxiv.org/abs/2602.13347",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "자동倉庫는 수천만개의 스토 연산을 수행하며, 로봇이 저장함에 있는 물체를 배치합니다. 이러한 시스템에서는 현재 관찰과 예정된 스토 행위부터 실제 실행 이전에 빈 상태를 예측하는 것이 가치 있습니다. 우리는 FOREST, 스토의 의도 조건ized 세계 모델을 제안하며, 이항 정렬 인스턴스 마스크로 빈 상태를 표현하고, 감출 확산 트랜스포머를 사용하여 관찰 콘텍스트에서 스토 이후 구성 prediction을 수행합니다.我们的 평가 결과에 따르면 FOREST는 기하학적 일치 degree를 예측된 후 스토 배치와 실제 true post-stow 배치 간에 의미적으로 개선시켰습니다. 또한 우리는 로보틱 스토의 예측 배치를 2개의 하위 태스크에서 평가했습니다. 이러한 태스크에서는 실제 post-stow 마스크를 FOREST prediction으로 대체하면 로더-질 평가 및 다 스토 논리 평가에서 성능손실을 경험적으로 확인한 결과로, 우리의 모델은 창고 계획에 유용한 시각적 예측 신호를 제공할 수 있습니다."
+  },
+  {
+    "title": "Generation of Uncertainty-Aware High-Level Spatial Concepts in Factorized 3D Scene Graphs via Graph Neural Networks",
+    "original_title": "Generation of Uncertainty-Aware High-Level Spatial Concepts in Factorized 3D Scene Graphs via Graph Neural Networks",
+    "link": "https://arxiv.org/abs/2409.11972",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Spatial Concept Generation System ~함, handcrafted heuristics 없이 자동으로 공간 개념을 추론하여 3D 씬 그래프에 통합하는 새로운 방법을 제안합니다. 이를 통해 SLAM 성능을 개선하고 다양한 환경에서 일반화할 수 있습니다."
+  },
+  {
+    "title": "BoundPlanner: A convex-set-based approach to bounded manipulator trajectory planning",
+    "original_title": "BoundPlanner: A convex-set-based approach to bounded manipulator trajectory planning",
+    "link": "https://arxiv.org/abs/2502.13286",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 매니퓰레이터의 경계 속성을 고려한 온라인 트라제クト리 계획 프레임워크를 제안하는 연구가 나왔다. BoundPlanner는 직교 공간을 사용하여 충돌-free 영역을 탐색하고 경계 속성에 기반한 참조 경로를 계산하며, BoundMPC는 경로 편차를 처리할 수 있는 확장된 온라인 트라제クト리 계획을 제공한다. Simmons 및 실험 결과는 제안된 플래너의 성능이 최신 기법보다 더 나은 것으로 나타났다."
+  },
+  {
+    "title": "ReaDy-Go:실제-시뮬레이션 동적 3D 가우시안 스플래팅 시뮬레이션",
+    "original_title": "ReaDy-Go: Real-to-Sim Dynamic 3D Gaussian Splatting Simulation for Environment-Specific Visual Navigation with Moving Obstacles",
+    "link": "https://arxiv.org/abs/2602.11575",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "한국의 시각항법 모델은 실제 세계의 역동적인 환경에서 제한된robustness를 보유하여 sim-to-real 간격과 대상 배포환경(예: 가구, 레스토랑, 공장)에 맞는 정책을 훈련하는 데 어려움이 있습니다. 이에 우리는 ReaDy-Go, 새로운 실-시뮬레이션 파이프라인을 제안하여 실제 환경의 동적 시나리오를 합성하고 대상 배포환경에서 navigation 정책을 훈련합니다. 이 파이프라인은 세 가지 주요 기여점을 제공하는데, 첫째는 정적인 GS 장면과 인물 애니메이션 모듈을 통합한 동적 GS 시뮬레이터입니다. 이 시뮬레이터는 2D 경로에서합성된 인물 GS 가상자와 실제 같은 인물 움직임을 생성합니다. 둘째는 시뮬레이터를 사용하여 navigation 데이터셋을 생성하는 프레임워크입니다. 셋째는 sim-to-real 간격과 이동 장애물을 견딜 수 있는 robust한 navigation 정책입니다. 이 파이프라인은 실제 환경에서 thoushands of photorealistic navigation scenario와 animatable 인물 GS 가상자를 생성합니다. ReaDy-Go는 대상 환경에서 baseline을 초과하며 실제 세계의 실험에서도 improved navigation 성능을 보여줍니다."
+  },
+  {
     "title": "MOTOR DESIGN 특화로 다양한 로봇이 탄생함",
     "original_title": "How motor design enables different types of robots",
     "link": "https://www.therobotreport.com/how-motor-design-enables-different-types-of-robots/",
