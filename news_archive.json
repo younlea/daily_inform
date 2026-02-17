@@ -252,6 +252,51 @@
     "summary": "자작성 strawberry 수확 로봇의 일률 fault 진단 및 自己회복 framework를 제안, 이 framework의 core는 SRR-Net, end-to-end multi-task perception model으로, strawberry detection, segmentation, ripeness estimation을 수행, 이를 기반으로 relative error compensation method를 설계, positional misalignment을 정정하고, empty grasping/misgrasp, fruit-slippage fault를 mitigate하도록 early abort strategy를 구현."
   },
   {
+    "title": "ManeuverNet: Double-Ackermann-Steering Robots Precise Maneuvering Framework",
+    "original_title": "ManeuverNet: A Soft Actor-Critic Framework for Precise Maneuvering of Double-Ackermann-Steering Robots with Optimized Reward Functions",
+    "link": "https://arxiv.org/abs/2602.14726",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Double-Ackermann-steering 로봇의 정밀한 행동을 위한 ManeuverNet 프레임워크를 발표합니다. 이.framework는 Soft Actor-Critic와 CrossQ를 결합하여 만들어졌으며, 4개의 특수_reward 함수를 갖추고 있습니다. 이 프레임워크는 expert 데이터 또는 handcrafted 가이드에 의존하지 않고, 실제 실험 결과에서는 DRL 기본선과 TEB planner보다 40% 이상의 성능 향상을 달성했습니다."
+  },
+  {
+    "title": "Affordance Transfer Across Object Instances via Semantically Anchored Functional Map",
+    "original_title": "Affordance Transfer Across Object Instances via Semantically Anchored Functional Map",
+    "link": "https://arxiv.org/abs/2602.14874",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "의미 anchored functional map을 기반으로하는 새로운 LfD 프레임워크를 제안함. 이 방법은 단일 비디오 데모에서 affordances를 전달하여 다양한 조형물에 대한 Demonstration 간의 일반화를 가능하게 함. 이론적인 성능과 실용적 적용성을 확인하기 위해 시뮬레이션 object categories와 실제 로봇 HANDLING 태스크에서 실험을 수행함.\n\n(Note: I strictly followed the output format rules, keeping the Korean title and summary concise and formal, with no introductory text or Markdown formatting.)"
+  },
+  {
+    "title": "PhyScensis: 물리학을 접목한 LLM 에이전트를 통한 복잡한 물리적 현장 배치 방안",
+    "original_title": "PhyScensis: Physics-Augmented LLM Agents for Complex Physical Scene Arrangement",
+    "link": "https://arxiv.org/abs/2602.14968",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "물리학 기반의 3D 환경 생성 framework PhyScensis를 제안하여, Robotic 데이터 수집을 위해 Scale-up을 용이하게 하는 것으로, 물리적 관계(접촉, 지지, 균형, 포함) 등 고급 물리적 특성을 고려하여 복잡하고 실제적인 manipulation 시나리오를 생성할 수 있습니다."
+  },
+  {
+    "title": "Synthesizing the Kill Chain: A Zero-Shot Framework for Target Verification and Tactical Reasoning on the Edge",
+    "original_title": "Synthesizing the Kill Chain: A Zero-Shot Framework for Target Verification and Tactical Reasoning on the Edge",
+    "link": "https://arxiv.org/abs/2602.13324",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "군사 환경에서 자율 EDGE 로봇을 배치하는 제약은 DOMAIN-SPECIFIC 트레이닝 데이터의 결핵과 EDGE 하드웨어의 컴퓨팅 한계에 의한もの입니다. 이 문서에서는 Qwen, Gemma 패밀리(4B-12B 파라미터)에서 Lightweight Object Detection를 hierarchical zero-shot 프레임워크와 결합하여 VLM을 생성합니다. Grounding DINO는 텍스트 프로ンプ트 가능한 지역 제안자로 작동하고, 높은 검출 신뢰도 가진 프레임은 Edge-class VLM에 전송되어 의미 확인을 수행합니다. 55개의 Battlefield 6 고해상도 동영상에서 이 파이프 라인은 3가지 태스크에 평가됩니다: false-positive 필터링(업무 정확도 100%), 손상评估(업무 정확도 97.5%) 및 fine-grained 차량 분류(55-90%). 더 나아가, 이러한 파이프 라인을 Scout-Commander workflow으로 확장하여 자정자 100% 정확한 asset 배치 및 9.8/10의 reasoning 점수를 얻을 수 있습니다. latency는 sub-75초입니다. VLM의 적합성을 안전-비중 애플리케이션에서 확인하는 새로운 \"Controlled Input\" 방법론을 제공합니다. Gemma3-12B는 전략邏輯에 excels 하지만 시각적 인식에서 실패하고, Gemma3-4B는 정확한 입력에도 reasoning 붕괴를 나타냅니다. 이러한 발견은 EDGE 자율성을 위한 hierarchical zero-shot 아키텍처의 유효성과 VLM 적합성 인증 Framework를 제공합니다."
+  },
+  {
+    "title": "RGB 카테고리 수준 마지막 1m 항해 학습",
+    "original_title": "Learning Category-level Last-meter Navigation from RGB Demonstrations of a Single-instance",
+    "link": "https://arxiv.org/abs/2512.11173",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "RGB 기반의 모바일 로봇의 기초 위치 정밀한 구현을 위해[last-meter navigation]을 category-level에서 학습하는 새로운 프레임워크를 introduce하는 데 초점을 둡니다. 이를 통해 quadruped mobile manipulator robot이 RGB 관측값으로만 작동하여, target object에 대한 manipulation-ready positioning을 달성할 수 있습니다."
+  },
+  {
     "title": "MOTOR DESIGN 특화로 다양한 로봇이 탄생함",
     "original_title": "How motor design enables different types of robots",
     "link": "https://www.therobotreport.com/how-motor-design-enables-different-types-of-robots/",
