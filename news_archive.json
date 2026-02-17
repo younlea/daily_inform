@@ -1,5 +1,77 @@
 [
   {
+    "title": "FlowHOI: Hand-object Interaction Generation Framework for Dexterous Robot Manipulation",
+    "original_title": "FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation",
+    "link": "https://arxiv.org/abs/2602.13444",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "FlowHOI를 소개합니다. 이 프레임워크는 시맨틱하게 grounded된 hand-object interaction sequences를 생성하며, 3D Gaussian splatting (3DGS).scene reconstruction과 language instruction을 조건으로 합니다. FlowHOI는 높은 액션 인식 정확도(40%) 및 물리 시뮬레이션 성공률(1.7배)을 달성했습니다."
+  },
+  {
+    "title": "TactAlign:인간-로봇 정책 전송 via Tactile Alignment",
+    "original_title": "TactAlign: Human-to-Robot Policy Transfer via Tactile Alignment",
+    "link": "https://arxiv.org/abs/2602.13579",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇에 대한 인간-collected tactail 신호를 전송하는 데 도움이 되는 새로운 메서드, TactAlign을 제안합니다. 이 메서드는 사람의 tactail 신호와 로봇의 tactail 관측 값을 공유된 隱示 표현으로.transform 하여, 쌍이 없는 데이터 세트, 수동 레이블 또는 특권 정보 없이 인간-collected tactail 신호를 로봇에 전송할 수 있습니다."
+  },
+  {
+    "title": "Hierarchical Audio-Visual-Proprioceptive Fusion for Precise Robotic Manipulation",
+    "original_title": "Hierarchical Audio-Visual-Proprioceptive Fusion for Precise Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2602.13640",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "robotic manipulation의 preciseness를 위해 Hierarchical Representation Fusion Framework을 제안하는 연구가 공개됨임. 이 연구에서는 acoustic cues를 조건으로 하는 vision, proprioception의 representation을 통합하여 multimodal observations으로부터 continuous robot actions을 생성하는 diffusion-based policy를 개발함. 실험 결과는 proposed method이 state-of-the-art multimodal fusion frameworks보다 우수한 성능을 나타내었으며, acoustic cues가 robotic manipulation에서 task-relevant 정보를 제공하는 경우 특히 잘 수행됨을 보여줌."
+  },
+  {
+    "title": "Symmetry-Aware Fusion of Vision and Tactile Sensing via Bilateral Force Priors for Robotic Manipulation",
+    "original_title": "Symmetry-Aware Fusion of Vision and Tactile Sensing via Bilateral Force Priors for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2602.13689",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 조작에서 시각과 촉각 감지의 결합을 위한 균형 강제 규칙을 도입하여 96.59%의 삽입 성공률을 달성함을 예고하며, 촉각 감지는 정밀한 대응을 위해 필수적임을 보여주는 연구결과를 공개함."
+  },
+  {
+    "title": "로봇 조작 정책의 2단계 생성 정책: HybridFlow",
+    "original_title": "HybridFlow: A Two-Step Generative Policy for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2602.13718",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 조작 політики의 실시간 환경과의 상호 작용에 제한이 있는 existing robot manipulation policies는 이제 더 빠른 생성 방법, 즉 Flow matching과 diffusion methods를 대체하고 있습니다. 그러나 이러한 연구자들은 incluso 더 빨라야하는 생성을 위한 Interactive robot control을 목표로 하고 있습니다. MeanFlow은 이미지 생성에서 강점을 보이나 로봇 조작에 대한 요구 사항에는 부족한 precision을 보여주었습니다. 따라서 우리는 HybridFlow를 제안하고 있으며, 3단계 메서드인 Global Jump in MeanFlow mode, ReNoise for distribution alignment, Local Refine in ReFlow mode를 갖추고 있습니다. 이 방법은 inference speed와 generation quality를 균형으로 하며, MeanFlow의 one-step generation의 빠른 장점을 활용하여 최소한의 생성 단계로 action precision을 보장합니다. HybridFlow는 16-step Diffusion Policy보다 15~25%의 성능 향상과 8배의 속도 향상을 나타내며, 未선-색 OOD grasping에서는 70.0%, deformable object folding에서는 66.3%의 성능을 나타냅니다."
+  },
+  {
+    "title": "Impact-Robust Posture Optimization for Aerial Manipulation",
+    "original_title": "Impact-Robust Posture Optimization for Aerial Manipulation",
+    "link": "https://arxiv.org/abs/2602.13762",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "robots의 자세 최적화 방법을 제안함으로써 항공 로봇의 충격 내성 향상을 목표로 함. 이에, 자세 변화량을 고려한 충격 모델을 기반으로 하는 새로운 지표를 정의하고, 이 지표를 최소화하는 자세를 찾는 문제를 푸는 새로운 알고리즘을 제안함.experimental simulation에서 확인된 바와 같이, 제안한 방법은 로봇의 상태와 입력 명령에 대한 Spike를 51%까지 줄이울 수 있으며, 실제 로봇에서도 사용할 수 있음임."
+  },
+  {
+    "title": "Push-Placement: A Hybrid Approach Integrating Prehensile and Non-Prehensile Manipulation for Object Rearrangement",
+    "original_title": "Push-Placement: A Hybrid Approach Integrating Prehensile and Non-Prehensile Manipulation for Object Rearrangement",
+    "link": "https://arxiv.org/abs/2602.13849",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "桌上재편성 효율화를 위한 하이브리드 접근 방식: 그라스드 오브젝트를 사용한 저항 물체 이동 및 배치\n\n Push-placement은 목표 자세가 차단될 때 임시 버퍼링을 요구하는 표면 재편성을 개선하는 새로운 방법으로, grasped 오브젝트를 사용하여 차단물체를 이동하면서 배치를 수행함으로써 명시적 버퍼링을 줄일 수 있다. 이 방법은 물리학 기반 Monte Carlo Tree Search(MCTS) 계획기에 통합되어 PyBullet 시뮬레이터에서 평가되었으며, 실험 결과가 push-placement이 11.12%의 manipulator 이동 비용 절감을 달성했음을 보여준다."
+  },
+  {
+    "title": "Humanoid Hanoi: 공략체 Whole-Body Control의 공유된 기법을 적용한.skill-based Box Rearrangement조사",
+    "original_title": "Humanoid Hanoi: Investigating Shared Whole-Body Control for Skill-Based Box Rearrangement",
+    "link": "https://arxiv.org/abs/2602.13850",
+    "date": "2026-02-17 05:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "최근 연구에서는 humanoid box rearrangement을 수행하는 skill-based framework를 개발하는데 성공했으며, 이는长 기간의 실행을 가능하게 하는 task level sequencing에 의존하고 있다. 이 접근 방식에서는 모든 skill이 공유된 Whole-Body Controller(Whole-Body Control, WBC)에서 실행되며, 이는 skill composition을 위해 일관된 closed-loop interface를 제공한다는 점에서 non-shared design과 다르다. 그러나 이 approach의 robustness는-long horizon-에서 문제가 되었으며, 이를 해결하기 위해 simple data aggregation procedure를 사용하여 shared-WBC training에 domain randomization-based rollout을 추가하는 방식을 제안했다. 이를 평가하기 위해 Humanoid Hanoi, a long-horizon Tower-of-Hanoi box rearrangement benchmark를 소개했으며, Digit V3 humanoid robot에서 simulation과 실제 실행을 통해 fully autonomous rearrangement을 달성하고, shared-WBC approach의 이점을 quantified했다."
+  },
+  {
     "title": "MOTOR DESIGN 특화로 다양한 로봇이 탄생함",
     "original_title": "How motor design enables different types of robots",
     "link": "https://www.therobotreport.com/how-motor-design-enables-different-types-of-robots/",
