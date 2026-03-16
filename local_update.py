@@ -107,7 +107,7 @@ def save_archive(data):
 # ==========================================
 log(f"🚀 로컬 업데이트 시작 (Model: {LOCAL_MODEL})")
 log("📥 Git Pull...")
-subprocess.run(["git", "pull"])
+subprocess.run(["git", "pull", "--no-rebase", "--strategy-option", "theirs"])
 
 log("📈 시장 데이터 수집...")
 kospi_val, kospi_chg, kospi_chart = get_metric_data("^KS11", "red")
