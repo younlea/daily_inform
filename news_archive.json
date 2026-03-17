@@ -144,6 +144,78 @@
     "summary": "한국에서는 최신 방대한 다축동물 보행 접근 방법은 모델 예측 제어(MPC)와 강화 학습(RL)을 결합하여 복잡한 동작 기능을 계획하고 지형 적응 행동을 달성합니다. 그러나 이러한 접근 방법은 長距離 경향에 대한 컴파운되는 오류를 직면하며 물리적 인덱스 저귀 absence로 해석의 제한을 받습니다. 우리는 RL MPC 프레임워크에서 Lagrangian Neural Networks(LNNs)를 결합하여 물리적으로 일관된 역동 학습을 가능하게 합니다. 배치 때 우리의 역동 무제한 시간 MPC 스키ーム은 비용이 들 수 있는 행렬 역수를 피하고, 태스크 성능에 대한 손실 없이 4배 이상의 컴퓨팅 효율성을 향상합니다. 우리는 제안된 LNN과 그 다양한 변형에 대한 복잡도 효율을 증명했습니다. 또한, 우리는 Unitree Go1 로봇에서 실제 세계 viabilitiy를 테스트하여 프레임워크의 실제 세계 가능성을 확인했습니다."
   },
   {
+    "title": "Learning Actionable Manipulation Recovery via Counterfactual Failure Synthesis",
+    "original_title": "Learning Actionable Manipulation Recovery via Counterfactual Failure Synthesis",
+    "link": "https://arxiv.org/abs/2603.13528",
+    "date": "2026-03-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 thao manipulate의 고도화된 Recent Foundation Models에 힘입어, 실제 실행 오류에서 自動 회복을 수행하는 시스템이 여전히 고생하고 있습니다. Dream2Fix는 성공적인 실전 데모에서 직접적으로 사진실질적이고 counterfactual failure rollouts를 synthesizing하여, 실패 진단과 실제 회복 사이의 간극을 좁히는 프레임워크를 제공합니다."
+  },
+  {
+    "title": "ArrayTac: Tactile Display for Simultaneous Rendering of Shape, Stiffness and Friction",
+    "original_title": "ArrayTac: A tactile display for simultaneous rendering of shape, stiffness and friction",
+    "link": "https://arxiv.org/abs/2603.13829",
+    "date": "2026-03-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "ArrayTac는 형태, Rigidity 및 Friction을 동시적으로 출력하는 tactle display를 제안하여 고도로 구현된 촉각 시뮬레이션을 가능하게 함으로써 기존의 tactile displays가 한계를 초월한 새로운 경로를 개척함을 발표함."
+  },
+  {
+    "title": "SmoothVLA: 비전-언어-행동 모델을 물리적 제약과 동기화하는 인트insic.smoothness.optimization의 새로운 프레임워크",
+    "original_title": "SmoothVLA: Aligning Vision-Language-Action Models with Physical Constraints via Intrinsic Smoothness Optimization",
+    "link": "https://arxiv.org/abs/2603.13925",
+    "date": "2026-03-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "비전-언어-행동(VLA) 모델은 로보틱 매니퓰레이션에서 강력한 패러다임으로 발전해 왔다. 그러나 기존 пост-트레이닝 메서드는 안정성과 탐색 사이의 딜레마를 맞이하고 있다. 예를 들어, Supervised Fine-Tuning(SFT)은 데모네이션 품질에 제약을 받으며 일반화 능력 부족으로 이를 해결하는 것은 Reinforcement Learning(RL)인데, RL은 탐색을 개선하지만 물리적 제약을 위반하는 흔들리는 경로를 유발할 가능성이 높다. 이러한 틈새를 메우는 데 우리는 SmoothVLA라는 새로운 강화 학습을 사용하여 태스크 성능과 운동의MOOTHNESS를 동기화한 프레임워크를 제안한다. 이 기술의 중심은 정책 롤아웃에서 직접 계산되는 물리적 제약이 포함된 하이드レ드 로워드 함수다. 이 Reward는 인트insic reward로, 환경 피드백이나 laborious_reward_engineering을 요구하지 않는다. LIBERO 벤치마크에서 conducted experiments를 통해 SmoothVLA가 표준 RL보다 13.8%의 SMOOTHNESS 향상과 다양한 태스크에서 SFT보다 일반화 능력이 뛰어난 것을 확인하였다.我们的 작품은 물리적 세계 제약에 VLA 모델을 동기화하는 스케일러블한 접근 방식을 제공하고 있다."
+  },
+  {
+    "title": "OCRA: Object-Centric Learning with 3D and Tactile Priors for Human-to-Robot Action Transfer",
+    "original_title": "OCRA: Object-Centric Learning with 3D and Tactile Priors for Human-to-Robot Action Transfer",
+    "link": "https://arxiv.org/abs/2603.14401",
+    "date": "2026-03-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "인공 중심 러닝 프레임워크 OCRA를 발표하여, 인간의 동영상 강의에서 로봇 액션을 이전할 수 있는 비디오 기반 인공-로봇 액션 전달을 실현합니다. OCRA는 task-relevant 물체와 그 상호작용을 강조하며 배경을 필터링하여 로봇을 교육하는 자연스러운 방법을 제공합니다. VGGT 3D 기초 모델, RGB 비디오 다중 뷰, 고급 탐지 및 분할 모델을 결합하여 물체 중심 3D 점雲을 재구성하고, 물체 간 상호작용을 捕捉합니다. 또한 촉각 정보를 처리하기 위해 촉각 대역의 큰 규모 데이터セット인 1,000만장의 촉각 이미지 자료를 도입하여 로봇 액션 생성을 지원합니다."
+  },
+  {
+    "title": "One-Policy-Fits-All: Geometry-Aware Action Latents for Cross-Embodiment Manipulation",
+    "original_title": "One-Policy-Fits-All: Geometry-Aware Action Latents for Cross-Embodiment Manipulation",
+    "link": "https://arxiv.org/abs/2603.14522",
+    "date": "2026-03-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "다체형 조작을 위한 One-Policy-Fits-All 프레임워크, 다체형의 구조적 불일치를 고려한 지옴トリ-어와 액션 레퍼런트를 통해 다양한 다체형 데이터에 적응하는 것을 가능하게 함."
+  },
+  {
+    "title": "Tactile Modality Fusion for Vision-Language-Action Models",
+    "original_title": "Tactile Modality Fusion for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2603.14604",
+    "date": "2026-03-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Vision-Language-Action 모델에 탤질 신호를 통합하는 경량 모달리티 퓨전 접근 방안을 제안함. VLA 모델의 최근进步는 일반화 가능하고 의미 기반으로 작동하는 로봇 정책을 도출했지만, 이러한 모델은 주로 시각 기반 인식에 의존하고 있어 접촉 리치 조작 Dynamics를 포착할 수 없었던 점을 해결하기 위하여 TacFiLM은 중간 시각 특징을 사전 훈련된 탤질 표현에 대한 조건부 조정 방법으로 조정하는 FiLM을 사용하여 이점을 보완함. EXPERIMENTAL RESULT의 insertion 태스크에서는 인분과 분할 태스크에서 성공률, 직접 삽입 성능, 완성 시간, 힘 안정성을 개선함."
+  },
+  {
+    "title": "Exploring Dynamic Properties and Motion Reproducibility of Small Upper-Body Humanoid Robot with 13-DOF Pneumatic Actuation for Data-Driven Control",
+    "original_title": "Exploring the dynamic properties and motion reproducibility of a small upper-body humanoid robot with 13-DOF pneumatic actuation for data-driven control",
+    "link": "https://arxiv.org/abs/2603.14787",
+    "date": "2026-03-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "13-DOF 상위체 인공 인간 로봇의 항진 동역학적 특성과 운동 재현 가능성을 조사하여 데이터 주도 제어에 활용함. 이를 위해 로봇의 주요 동역학적 속성을 조사하고, 시스템이高度 재현 가능성을 확인함. 이 reproducibility를 기반으로 4-DOF руку subsystem에 대한 초기 데이터 주도 컨트롤러를 설계하여 임의 경로 추적 성능을 개선함."
+  },
+  {
+    "title": "HALO:Sim-to-real Gap Closement for Heavy-loaded Humanoid Agile Motion Skills via Differentiable Simulation",
+    "original_title": "HALO:Closing Sim-to-Real Gap for Heavy-loaded Humanoid Agile Motion Skills via Differentiable Simulation",
+    "link": "https://arxiv.org/abs/2603.15084",
+    "date": "2026-03-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "무조코 XLA에 기반한 다변화 시뮬레이터를 사용하여 인간 로봇의 심-to-실 격차를 줄이는 2단계 그라디언트 기반 시스템 인식 프레임워크를 제안함으로써 실세계에서는 불명 페이로드를 이끌어야 하는 인간 로봇이 재학습을 개선하는 데 도움이 됨."
+  },
+  {
     "title": "RealSense unveils autonomous humanoid navigation at GTC 2026",
     "original_title": "RealSense unveils autonomous humanoid navigation at GTC 2026",
     "link": "https://www.therobotreport.com/realsense-unveils-autonomous-humanoid-navigation-gtc-2026/",
