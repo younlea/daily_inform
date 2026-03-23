@@ -423,6 +423,15 @@
     "summary": "LLM이 로봇 경로 계획 알고리즘 최적성 증명을 위한 벤치마크를 개발하여 연구 수준의 알고리즘 검증을 지원했다. 이 벤치마크는 34개의 다양한 경로 문제 유형과 복잡도-level에 걸쳐 있는 증명 과제를 포함하는데, 각 과제에는 알고리즘 설명, 제약 조건, 이론적 보장에 대한 구조적 사유가 필요하다.-state-of-the-art의 상용 LLMs와 오픈소스 LLMs를 평가한 결과, 가장 강력한 모델도 외부 도메인 지식을 제공하지 않으면 완전히 유효한 증명을 생산할 수 없었다. 그러나 LLMs에 특정 과제에 대한 문맥적 lemma를 제공하면 사유 품질을 개선하는데 효과가 있었으며, 일반적인 chain-of-thought prompting 또는 ground-truth approximation ratio를 제공하는 것보다 더 효과적이었다.\n\n(Note: I followed the strict output format rules and provided only the formatted string as requested.)"
   },
   {
+    "title": "SpikeGrasp: 6도F 강점 감지 프레임워크",
+    "original_title": "SpikeGrasp: A Benchmark for 6-DoF Grasp Pose Detection from Stereo Spike Streams",
+    "link": "https://arxiv.org/abs/2510.10602",
+    "date": "2026-03-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "한국의 3D 지그래스 시스템이 주로 센서 데이터를 3D 점雲으로 변환하는데, 이는 생물적智能체에서 찾을 수 없는 처리 단계입니다. 이 논문은 생물학적으로 영감을 받는 6도F 강점 감지 프레임워크인 SpikeGrasp를 도입합니다._spike camera의 raw, 비동기 이벤트 스트림을 처리하여 direct grasp pose 추정을 수행하고, recurrent spiking neural network를 사용하여 iterative refinement을 행합니다. 이 접근 방식의 유효성을 확인하기 위해 대규모의 합성 벤치마크 데이터셋을 구축했습니다. 실험 결과는 SpikeGrasp가 점구간 기반_baseline에 비해 성능이 우수하며, 특히 가로잡힌 및 텍스쳐 없는 환경에서 그렇습니다. 이 접근 방식으로 인하여 future systems capable of the fluid and efficient manipulation seen in nature can be established."
+  },
+  {
     "title": "Ubtech 로보틱스 경로의 이분화 ~임",
     "original_title": "The Diverging Paths of Ubtech Robotics: Market Pessimism Meets Operational Ambition - AD HOC NEWS",
     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZ09oME83R3hScHlNUHRJTktGWTNUS0ZYS0N2Uks5eU5CVEtxNVFXaTNMLS1ISXZPX09KWWc0Mml3YzNiRFdBaHRCYVFtWlZHNTFOMXpfejJMenpJRUZlQVAwOGZOQ2I1Zndzd1daY3JCQnZwM0Vscm45V255ZnFuUzBwRUVOTWh1ZXRKNHFtNDV5UkM1Z3NmS1JoZGFUbDlMREpxY25ZdTFEQ3c4OTd4NmV0Q09DcjBibUxjekxKTHZobTJWZUxTYUoyMEI?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "paper",
     "summary": "비전오도모델 기반 키 프레임.feed-forward 비전 오도계 ~함."
-  },
-  {
-    "title": "DTP: 간소화된 yet 효과적인 시각언어 액션 모델의 분기 프레임워크",
-    "original_title": "DTP: A Simple yet Effective Distracting Token Pruning Framework for Vision-Language Action Models",
-    "link": "https://arxiv.org/abs/2601.16065",
-    "date": "2026-01-23 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "paper",
-    "summary": "시각언어 액션(VLA) 모델이 로보틱스 조작에서 눈부심을 보이는 성과를 내는 것은, 시각언어 모델(VLM)을 통해 환경을 이해하고 직접 액션을 출력하는 능력을 활용함에 있다. 그러나 VLA 모델은 기본적으로 태스크와 관련 없는 이미지 토큰에 과적하게 집중하여 모델이 원하는 액션 토큰을 생성하는 데 방해를 주는 경우도 있을 수 있다. 이 현상을 '분기 토큰'으로 묘사할 수 있으며, 이를 해결하기 위해 우리는 간소화된 yet 효과적인 분기 프레임워크인 DTP(Distracting Token Pruning) framework를 제안함에 있다."
   }
 ]
