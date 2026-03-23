@@ -72,6 +72,78 @@
     "summary": "3D 초음파(Ultrasound)가 진단, 치료 계획 및 이미지 지향 요법에 용이하되나 현재 연구들이 볼륨 정확도 및 재현 가능성을 종합적으로 평가하지 않고 있다는 점을 강조하며 tracked 3D US 재구성의 robust 성능 보장 프레임워크를 제공하고자 한다. 이 연구는 3D US 재구성에 대한 QA 프레임워크와 flexibel한 오픈 소스 플랫폼을 제안하는데, 다양한 상미 속성을 갖는 커스텀 피노트를 사용하여 freehand 또는 로보틱 적qusition을 지원하는 tracked 3D US 재구성의 성능을 평가할 수 있다."
   },
   {
+    "title": "PhyGile: 물리학Prefix 가이드 모션 생성",
+    "original_title": "PhyGile: Physics-Prefix Guided Motion Generation for Agile General Humanoid Motion Tracking",
+    "link": "https://arxiv.org/abs/2603.19305",
+    "date": "2026-03-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "로봇의 기계적 성질을 고려하여 민첩한 generalize humanoid 모션 추적을 가능하게 하는 unified 프레임워크를 introduce합니다. 이 프레임워크는 물리학Prefix를 사용하여 로봇-자체 모션 생성을 수행하고, inference 시간에 로봇-자체 모션을 262차원 skeleton 공간에서 생성하며, 물리학적으로 가능한 모션을 출력합니다. offline 및 real-robot 실험 결과 PhyGile는 text-driven humanoids 제어의 경계를 넓히고, 민첩하고 어려운 whole-body 모션을 안정적으로 추적할 수 있습니다."
+  },
+  {
+    "title": "SOFTMAP: 텀든-시스템 소프트 로봇 전방 모델링 및 물리학적 전망",
+    "original_title": "SOFTMAP: Sim2Real Soft Robot Forward Modeling via Topological Mesh Alignment and Physics Prior",
+    "link": "https://arxiv.org/abs/2603.19384",
+    "date": "2026-03-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "소프트 로봇 조작자들은 고유의 탄성, 사람과 로봇 상호작용 등에서 장점을 보이나 실제 3D 전방 모델링이 열린 과제로 남아 있다. SOFTMAP은 실시간 3D 전방 모델링 프레임워크를 제공하여 텀든-시스템 소프트 Finger 조작자를 대상으로 삼았다. SOFTMAP은 네 가지 구성 요소를 갖추고 있으며, 이 중 첫 번째는 ARAP-기반 상위 구조 정렬을 통해 시뮬레이션 및 실제 점云을 공유한 탑올로지 일치하는 꼭짓점 공간에 투영하는 것이다. SOFTMAP의 성능은 시뮬레이션에서 0.389mm, 하드웨어에서 3.786mm의 정밀도 및 텀든 끝점 경로 추적 정확도 36.5% 향상으로 소프트 로봇 조작자의 실제 전방 모델링 및 제어에 데이터 효율적인 접근을 제공함을 보여준다."
+  },
+  {
+    "title": "Evolutionary Intelligent Robotics: Graph Neural Network-Driven Co-Design of Morphology and Control in Soft Robotics",
+    "original_title": "Evolving Embodied Intelligence: Graph Neural Network--Driven Co-Design of Morphology and Control in Soft Robotics",
+    "link": "https://arxiv.org/abs/2603.19582",
+    "date": "2026-03-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "한국의 소프트 로봇 지능 행위는 신경망과 몸짓 간의 긴밀한 결합으로부터 비롯되는 것이 아닌, 몸지고 뇌간의 조화를 통해 나타나는 원칙인 인지된 지능에 의해 발생합니다. 이러한 soft 로봇을 설계하는 것은 특히 형태와 제어를 동시에 최적화해야 하는 경우 particularly 어려운 도전입니다. 이 코-디자인 프로세스에서 가장 큰 장애물은 형태의 진화를 통해 배운 제어 전략이 손상되는 경우에, 재사용하거나 적응시키는 것이 어려울 수 있습니다. 이를 해결하기 위해 우리는 Graph Neural Network를 사용하여 형태와 제어를 동시에 설계하는 새로운 접근법을 개발했습니다. 각 로봇은 그래프로 나타나며, GAT(Graph Attention Network)가 노드 특징을 인코딩하고 MLP(Multilayer Perceptron) 헤드를 지나 actuator 명령 또는 가치 추정을 생산합니다. 진화 중에는 상속이 топологія-균일한 맵핑에 따르며, 공유된 GAT 레이어는 재사용되지만, MLP hidden 레이어는 완전히 전달되며, 일치하는 actuator 출력은 복제되고, 일치하지 않는 것은 랜덤으로 초기화되고 최적화됩니다. 이러한 형태-aware 정책은 로봇의 몸이 변화할 때 제어자가 적응하게 합니다. 벤치마크에서 nostro GAT-based 접근법은 traditional MLP-only 코-디자인 메서드보다 더 높은 최종 적합도와 stronger adaptability to morphological variations를 달성했습니다. 이러한 결과는 graph-structured 정책이 evolves되는 형태와 제어 간의 더 효과적인 인터페이스를 제공함을 나타냅니다."
+  },
+  {
+    "title": "EgoSpot:Hands-Free Mobile Manipulation 제어 프레임워크",
+    "original_title": "EgoSpot:Egocentric Multimodal Control for Hands-Free Mobile Manipulation",
+    "link": "https://arxiv.org/abs/2306.02393",
+    "date": "2026-03-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Spot 로봇의 hands-free 제어 프레임워크를 개발하여, Microsoft HoloLens 2 혼성현실 헤드셋을 사용하는 Egocentric Multimodal Control framework를 제안하였다. 이 시스템은 физ적 장애가 있는 개인에게로의 로봇 지원을 촉진하고자 하며, 실제 상호작용 및 원격 상호작용 태스크에 있어 접근성과 자연성을 향상시켰다. 실험 결과는 전 tradicional 조이스틱 기반 제어와 비교하여, 과제 완성 시간과 사용자 경험면에서 성능이 비슷하거나 더 나쁠 뿐 아니라, 접근성 및 상호작용의 자연성을 개선시켰다."
+  },
+  {
+    "title": "Latent Action Diffusion for Cross-Embodiment Manipulation",
+    "original_title": "Latent Action Diffusion for Cross-Embodiment Manipulation",
+    "link": "https://arxiv.org/abs/2506.14608",
+    "date": "2026-03-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 조작의 일관된 접근 방식으로서 엔드투엔드 학습이 부상하고 있지만, 데이터 절모와 다른 기구의 액션 공간 heterogeneity에 의해 제한받고 있습니다. 다양한 액션 공간의 생성을 통해, 로봇의 다양한 기구 액션을 일원화하는 새로운 접근 방식으로 이 문제를 해결합니다."
+  },
+  {
+    "title": "SPARTA: visualize object state change manipulation tasks",
+    "original_title": "Mash, Spread, Slice! Learning to Manipulate Object States via Visual Spatial Progress",
+    "link": "https://arxiv.org/abs/2509.24129",
+    "date": "2026-03-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "객체 상태 변화 처리任무에 대한 비주얼 스페이셜 프로그레스를 적용하여, object states을 manipulate하는 학습 방법을 소개합니다. SPARTA framework는 kinematic state의 변경 외에도, physical and visual state이 진행적으로 변화하는 다양한 실제 world manipulation task를 통합하는데 사용됩니다."
+  },
+  {
+    "title": "Task-Specified Compliance Bounds for Humanoids via Lipschitz-Constrained Policies",
+    "original_title": "Task-Specified Compliance Bounds for Humanoids via Lipschitz-Constrained Policies",
+    "link": "https://arxiv.org/abs/2603.16180",
+    "date": "2026-03-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "인공歩人에 대한 태스크 명시적 유연도 한계 및 리스비츠-제약 정책"
+  },
+  {
+    "title": "TeleDex: 액세스 가능 Dexterous 텔로페이션",
+    "original_title": "TeleDex: Accessible Dexterous Teleoperation",
+    "link": "https://arxiv.org/abs/2603.17065",
+    "date": "2026-03-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "한국어Abstract: TeleDex는 새로운 환경, 작업 또는 로봇 인격체에 배포된 상태-of-the-art 정책을 배포하는 데 필요한 도구를 제공합니다. 이 시스템은 어떤 sẵn có의 전화로도 Dextronous 손과 로봇 조인트를 직관적으로 텔로페이션할 수 있습니다. TeleDex는 핸드폰-만 사용 모드와 3D 프린터 가능한 손 마운트 인터페이스를 지원하여 finger-level 텔로페이션을 가능하게 합니다."
+  },
+  {
     "title": "Ubtech 로보틱스 경로의 이분화 ~임",
     "original_title": "The Diverging Paths of Ubtech Robotics: Market Pessimism Meets Operational Ambition - AD HOC NEWS",
     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZ09oME83R3hScHlNUHRJTktGWTNUS0ZYS0N2Uks5eU5CVEtxNVFXaTNMLS1ISXZPX09KWWc0Mml3YzNiRFdBaHRCYVFtWlZHNTFOMXpfejJMenpJRUZlQVAwOGZOQ2I1Zndzd1daY3JCQnZwM0Vscm45V255ZnFuUzBwRUVOTWh1ZXRKNHFtNDV5UkM1Z3NmS1JoZGFUbDlMREpxY25ZdTFEQ3c4OTd4NmV0Q09DcjBibUxjekxKTHZobTJWZUxTYUoyMEI?oc=5",
@@ -259,6 +331,15 @@
     "source": "Tech Xplore",
     "category": "humanoid",
     "summary": "영국 브리스톨 대학교에서 주도한 연구결과, published in the Journal of the Royal Society Interface에 발표된 결과는 로보틱스에서 새로운 가능성을 열 수 있을 것으로 예상됨"
+  },
+  {
+    "title": "OUTPUT\n\nHumanoid Learns Tennis Skills Playing Humans",
+    "original_title": "Video Friday: Humanoid Learns Tennis Skills Playing Humans",
+    "link": "https://spectrum.ieee.org/tennis-playing-robot",
+    "date": "2026-03-21 16:30",
+    "source": "IEEE Spectrum",
+    "category": "humanoid",
+    "summary": "인공 humanooid 로봇이 테니스 스킬을 배워 인간과 경쟁적으로 경기를 치룰 수 있는 시스템을 제안함. 또한, 로봇의 운동 데이터에 대한 분석과 이를 구현하는 방법도 설명됨."
   },
   {
     "title": "Nvidia GTC 2026에서 로봇이 스낵을 서비스해 주었습니다",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "paper",
     "summary": "Autonomous driving은 복잡한 시나리오에서 신뢰할 수 있는 인식과 안전한 결정을 요구하는 분야다. 최근의 vision-language 모델(VLM)은 합리성과 일반화 능력을 보여줌으로써 자율 주행에 새로운 가능성을 열었다. 하지만 기존의 벤치마크와 지표는 인식을 초점시켜 결정을 적절하게 평가하지 못했다. 우리는 AutoDriDM, 6,650개의 질문이 포함된 3차원 - Object, Scene, Decision을 possessing progressive benchmark를 제안하였다.เรา 주성 VLM을 evaluate하여 자율 주행에서 인식과 결정을 연결하는 경계선인 perception-to-decision capability boundary를 확인하였다. 우리는 모델의 추론 프로세스에 대한 설명 가능성 분석도 수행하고 논리적 추정 오류 등 주요 실패 모드를 indentified하고, 대규모.Annotation을 자동화하기 위한 analyzer 모델을 도입하였다. AutoDriDM는 인식을 초점시키고 결정을 초점시키는 평가를 연결하여 실제 자율 주행에 더 안전하고 신뢰할 수 있는 VLM을 개발하는 방향으로의 지침을 제공한다."
-  },
-  {
-    "title": "Implementing Knowledge Representation and Reasoning with Object Oriented Design",
-    "original_title": "Implementing Knowledge Representation and Reasoning with Object Oriented Design",
-    "link": "https://arxiv.org/abs/2601.14840",
-    "date": "2026-01-22 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "paper",
-    "summary": "지식 표현 및이해 프레임워크에 object 지향 설계를 구현함. KRROOD 프레임워크는 복잡한 애플리케이션 개발에 표준으로 있는 오브젝트 지향 프로그래밍(OOP)과 지식 표현 및 이해(KR&R) 시스템을 통합하는 차단을 해결하였다. KRROOD는 논리 프로그래밍과 OOP 패러다임 간의 간격을橋梁해 지식을 첫째 클래스 구조로 다룰 수 있도록 하였다. 우리는 OWL2Bench 벤치마크와 인간-로봇 태스크 러닝 시나리오에서 시스템을 평가하였다. 실험 결과에 따르면 KRROOD는 강한 성능을 달성하면서 실제 자율 시스템에 필요한 표현적 이해를 지원할 수 있었다."
-  },
-  {
-    "title": "From Observation to Prediction: LSTM for Vehicle Lane Change Forecasting on Highway On/Off-Ramps",
-    "original_title": "From Observation to Prediction: LSTM for Vehicle Lane Change Forecasting on Highway On/Off-Ramps",
-    "link": "https://arxiv.org/abs/2601.14848",
-    "date": "2026-01-22 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "paper",
-    "summary": "차량 레인 변경 예측을 위한 LSTMs ~함. 고속도로 진출입 구간에서 차량의 행동을 예측하여 도로 안전성을 높이는 데 활용 가능.\n\nNote:\n\n* The Korean title is translated to match the original English title.\n* The summary highlights the technical application of LSTM for predicting vehicle lane changes on highway on/off-ramps, emphasizing its potential in improving road safety."
-  },
-  {
-    "title": "Vision-Language-Action 모델의 제약 문제 해결을 위한 새로운 프레임워크 'BayesianVLA' 도입됨",
-    "original_title": "BayesianVLA: Bayesian Decomposition of Vision Language Action Models via Latent Action Queries",
-    "link": "https://arxiv.org/abs/2601.15197",
-    "date": "2026-01-22 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "paper",
-    "summary": "비전-언어-행동(Vision-Language-Action) 모델이 로봇 조작 등에서 성과를 보였지만 새로운 지침 또는 복잡한 다중 작업 시나리오에 일반화하는 데 어려움을 겪었다. 우리는 현재 훈련 패러디그마의 중요한 병적 상태를 확인했다. 이러한 데이터 집합에서는 언어 지령이 비전 관측값만으로 예측 가능하게 되면, 지령과 액션 간의 조건부 상호 정보량이 사라지게 된다. 이를 '정보 붕괴' 현상이라고 정의하며, 이로 인해 모델이 비전 전용 정책으로 파라미터화되어 언어 제약을 무시하고 OOD 설정에서 실패하게 된다. 이러한 문제를 해결하기 위해 우리는 지령 따르기 방식을 강제하는 새로운 프레임워크 'BayesianVLA'를 제안했다. 이를 통해 학습 가능한 Latent Action Queries를 생성하여 비전-언어-행동 모델을 구성할 수 있다."
-  },
-  {
-    "title": "FlowSSC: Universal Generative Monocular Semantic Scene Completion via One-Step Latent Diffusion",
-    "original_title": "FlowSSC: Universal Generative Monocular Semantic Scene Completion via One-Step Latent Diffusion",
-    "link": "https://arxiv.org/abs/2601.15250",
-    "date": "2026-01-22 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "paper",
-    "summary": "한 단계 적으로 3D 공간에 대한 유니버설 구문 생성을 가능하게 하는 FlowSSC 프레임워크를 발표하였다. 이 프레임워크는 Feed-forward SSC 방법과 결합할 수 있어 성능을 크게 향상시킬 수 있다. FlowSSC는 삼분 공간에서 작동하는 짧은 경로 매칭 기법을 통해 실시간 추론을 가능하게 하여 자율 시스템에 적용할 수 있는 고속 구문 생성을 달성하였다. SemanticKITTI 데이터셋에서 FlowSSC는 existing baselines보다 우수한 성능을 나타내어 State-of-the-Art를 달성하였다."
-  },
-  {
-    "title": "비디오 생성 모델의 재구상: embodie된 세계를 위한 새로운 접근 방식임",
-    "original_title": "Rethinking Video Generation Model for the Embodied World",
-    "link": "https://arxiv.org/abs/2601.15282",
-    "date": "2026-01-22 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "paper",
-    "summary": "embodied intelligence을 향상시킨 비디오 생성 모델의 발전을 이끌었다. 그러나 실제 세계에서 물리적으로 현실적이고 robots의 상호 작용을 나타내는 고화질 비디오를 synthesizing하는 것은 아직도 도전적이다. 따라서, 우리는 5개의 업무 영역과 4개의 구현체에 대한 comprehensive 로보틱스 벤치마크인 RBench를 introducing하였다. 이 벤치마크는 task-level correctness와 visual fidelity를 평가하기 위해 reproducible sub-metrics를 사용하여 물리적 실제성, 구조적 일관성, 액션 완성을 확인할 수 있다. 25개의 대표 모델을 평가한 결과, 물리적으로 현실적인 robots의 행동을 generating하는 데에 대한 결함이 있음을 보여준다. 더 나아가, 벤치마크는 인간 평가와의 Spearman 상관 계수 0.96를 달성하여 적절성을 확인하였다. 이러한 발견에 기인하여 우리는 고화질 훈련 데이터의 절실한 필요성을 해결하기 위해 refined four-stage data pipeline을 introducing하였다. 이를 통해, 로보틱스 dataset RoVid-X를 구축하게 되어, 4백만 개의 비디오 클립과 thousands of tasks, comprehensive physical property annotations을 포함하여 open-source로 제공하게 되었다. 이러한 evaluation 및 데이터의 상호 작용은 embodied AI의 진화에 중요한 기반을 제공하고, general intelligence을 향상시킬 수 있는 robust foundation을 구성하게 되었다."
-  },
-  {
-    "title": "이터레이티브 리피니먼트가 이미지 생성을 개선함",
-    "original_title": "Iterative Refinement Improves Compositional Image Generation",
-    "link": "https://arxiv.org/abs/2601.15286",
-    "date": "2026-01-22 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "paper",
-    "summary": "컴포저셔널 이미지 생성 모델은 복잡한 제약 조건을 simultaneously 처리하는 데 아직도 어려움을 겪고 있다. 기존의 추론 시점 전략으로는 병렬 샘플링과 verificar 또는 더 많은 noisy step 추가를 통해 제약 조건에 맞출 수 있지만, 풍부한 구성 요소를 다룰 때에는 부족하다는 문제가 존재한다.-chain-of-thought reasoning을 성공적으로 적용한 큰 언어 모델의 성공을 모방하여, 우리는 T2I 모델이 지속적으로 개선하는 방법을 제안하였다. 이러한 접근 방식은 단순하고 외부 도구 또는 전제 필요 없이 다양한 이미지 생성기와 비전-언어 모델에 적용할 수 있으며, 컴퓨트_MATCHED 병렬 샘플링보다 16.9%의 향상을 보였다."
-  },
-  {
-    "title": "로봇 차량의 역동적 동작 방식",
-    "original_title": "Locomotion Dynamics of an Underactuated Three-Link Robotic Vehicle",
-    "link": "https://arxiv.org/abs/2407.21540",
-    "date": "2026-01-22 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "paper",
-    "summary": "한국 로보틱스 연구소에서 개발한 3개 링크 로봇 차량의 운동 동작을 분석한 결과, 일반적인 비홀로노믹 모델에서는 발생하는 휠 슬립 현상이 확인되었다. 이를 해결하기 위해 새로운 역동적 모델을 제안하여 휠 슬립과 점착 저항을 고려하고, 입력 주파수의 영향을 분석하였다."
-  },
-  {
-    "title": "Allocating Dynamics for Omnidirectional Aerial Robots",
-    "original_title": "Allocation for Omnidirectional Aerial Robots: Incorporating Power Dynamics",
-    "link": "https://arxiv.org/abs/2412.16107",
-    "date": "2026-01-22 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "paper",
-    "summary": "tilt-rotor aerial robots의 동적 할당 문제에 대한 새로운 방법을 제안합니다. 특히, 이 방법은 고유성 문제를 피할 수 있는 다항식 할당 방법과 액추에이터 역동을 고려한 프로펠러 파워 역동을 추가하여 70% 빠른 트랙킹을 달성합니다.\n\n(Note: I followed the instructions and output only the required string. The title is translated naturally, and the summary is concise and focuses on technical specifications.)"
-  },
-  {
-    "title": "Collision Probability Estimation for Optimization-based Vehicular Motion Planning",
-    "original_title": "Collision Probability Estimation for Optimization-based Vehicular Motion Planning",
-    "link": "https://arxiv.org/abs/2505.21161",
-    "date": "2026-01-22 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "paper",
-    "summary": "차량 이동 계획 최적화에 따른 충돌 가능성 추정"
   }
 ]
