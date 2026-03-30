@@ -189,6 +189,24 @@
     "summary": "'novel 환경에서 언어 명령에 기반한 Mobile Manipulation 과제를 수행하는 데 도전이 있는 부분 관측된 장면과, 언어 명령으로부터 얻은 의미 정보를 부분 관측된 장면에 정지하고, 새로운 관측 결과로 장면의 지식을 업데이트하는 과제. 이 도전을 해결하기 위해 HELIOS를 제안하며, scene representation과 연관된 search objective를 구성합니다. 2D map에는 관련.semantic 및 occupancy 정보를 포함하여 항해를 가능하게 하며, 동시에 3D Gaussian representation으로 task-relevant object를 생성합니다. 관측 결과를 이 다중 레이어드 표현에서 결합하며, 각 object의 감지에 대한 다-view 일관성을 Dirichlet distribution을 사용하여 모델링합니다. 계획은 다중 레이어드 표현에서 검색 문제로 형식화됩니다.'"
   },
   {
+    "title": "엔지니어링 뉴럴 오톰론 정책: 시각-운동 추적 경로에서 기호 구조를 배워라",
+    "original_title": "Emergent Neural Automaton Policies: Learning Symbolic Structure from Visuomotor Trajectories",
+    "link": "https://arxiv.org/abs/2603.25903",
+    "date": "2026-03-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 학습을 장기 태스크에 확장하는 것은 아직도 주요 도전입니다. 엔드투엔드 정책은 종종 장기간의 추론에 필요한 구조적인 선행조건이 부족한 반면, 전통적 뉴로-기호 방법은 손으로 만든 기호 선행조건에 의존합니다. 이를 해결하기 위해 우리는 ENAP(엔지니어링 뉴럴 오톰론 정책)을 도입하여 시각-운동 시연 데이터에서 bi-level 뉴로-기호 정책이 적응적으로 발현할 수 있도록 합니다. ENAP은 특정적으로 비지도 클러스터링과 L* 알고리즘의 확장版本을 사용하여 시각-운동 데이터에서 Mealy 상태 머신을 추정하고, 이 불interpretable 고급 계획자는 태스크 모드를 캡처합니다. 다음으로는 이 디지털 구조가 저급 반응 residuaal 네트워크를 가이드하여 연속 제어를 배워 반복 학습(Behavior Cloning)을 사용합니다. ENAP은 TASK 구조를PLICIT하게 모델링하여 discrete transition과 continuous residual을 사용함으로써 저데이터 환경에서 SoTA 엔드투엔드 VLA 정책보다 최대 27% 향상하고 로봇의 의도(structured representation) Fig. 1에 나타나게 합니다."
+  },
+  {
+    "title": "sidewalk delivery robot route planning 문제의 강건한 해결",
+    "original_title": "Robust Route Planning for Sidewalk Delivery Robots",
+    "link": "https://arxiv.org/abs/2507.12067",
+    "date": "2026-03-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "Sidewalk delivery robots는 마지막 ми게 화물 배달을 위한 촉망되는 해법으로, 다이나믹 환경에서 보행자 흐름과 장애물로 인해 여행 시간이 불확실하여 효율성이 크게 영향을 받을 수 있습니다. 이 연구에서는 sidewalk robot의 route planning 문제를 해결하기 위해 explicitly travel time uncertainty를 고려합니다. robust optimization은 simulation과 통합하여 장애물과 보행자 흐름의 효과를 reproduce하고, 실제적 여행 시간을 생성합니다. 3가지 다른 방법으로 uncertainty set을 추출하는 investigated, namely budgeted, ellipsoidal, and support vector clustering (SVC)-based methods, along with a distributionally robust shortest path (DRSP) method based on ambiguity sets that model uncertainty in travel-time distributions. Stockholms의 city center에서 실질적인 경우를 사용하여 다양한 robot design과 환경 조건에 걸쳐 robust routing의 효율성을 평가했습니다. 결과적으로, robust routing은 variable sidewalk conditions에 있어서 conventional shortest path (SP) method보다 operation reliability을 높였습니다. ellipsoidal and DRSP approaches는 average and worst-case delay에서 other methods보다 높은 성능을 보였습니다. sensitivity analyses reveal that robust approaches are higher for sidewalk delivery robots that are wider, slower, and more conservative in their navigation behaviors, especially in adverse weather and high pedestrian congestion scenarios."
+  },
+  {
     "title": "프로젝트 관리 도구 선택에 대한 가이드",
     "original_title": "How to Choose the Right Project Management Tools for Your Team",
     "link": "https://roboticsandautomationnews.com/2026/03/29/how-to-choose-the-right-project-management-tools-for-your-team/100207/",
@@ -17980,23 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "Gartner는 인공 인간 로봇 개발사가 실험단계를 벗어나 실제배포 단계로 진출하는 경우가 매우 드물다고 밝혔다. 또한, 2028년에 초저가 인공 인간 로봇 배포를 Scale하게 하는 기업은 20개 미만으로 예측하였다."
-  },
-  {
-    "title": "Here is the output:\n\n인공지능人공 개발 플랫폼 ~함",
-    "original_title": "Introducing Sprout, a new humanoid development platform",
-    "link": "https://www.therobotreport.com/introducing-sprout-a-new-humanoid-development-platform/",
-    "date": "2026-01-28 20:06",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Fauna Robotics가 새로 출시한 Sprout는 안전하고 인간적인 성격을 지닌 로봇으로, 일상 생활에서 함께 사는 삶을 목표로 하였다. 이 로봇은 인간과 같은 방식으로 살아남, 일하기, 놀며 주변에 있는 것을 관찰할 수 있다.\n\n(Note: I've followed the formatting rules strictly and translated the title and summary as per your instructions.)"
-  },
-  {
-    "title": "Waabi 1천억달러 투자, 자율화 트럭과 로보택시 개발 진행임",
-    "original_title": "Waabi raises $1B to advance autonomous trucks and robotaxis",
-    "link": "https://www.therobotreport.com/waabi-raises-1b-to-advance-autonomous-trucks-and-robotaxis/",
-    "date": "2026-01-28 16:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Waabi가 개발한 Physical AI 플랫폼을 자율화 트럭에서 로보택시에 적용해 나갈 계획으로, 10만 달러의 물류운송 비용을 줄일 수 있는 기회를 잡을 계획이다."
   }
 ]
