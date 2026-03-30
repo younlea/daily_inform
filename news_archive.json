@@ -351,6 +351,15 @@
     "summary": "로보틱 더그와 같은协作 네비게이션 프레임워크, Triple Zero Path Planning(TZPP)을 제안하고 있습니다. TZPP는 훈련이 필요하지 않으며, 다양한 환경에서 인간과 같은 효율을 달성합니다. 로봇의 협동 네비게이션을 구현하기 위해 하위체계를 구성하여,  humanoid robot은 태스크 조정 및 quadruped robot은 feasible path를 식별하는 데 사용됩니다. TZPP는 Unitree G1 및 Go2 로봇에 구현하여 다양한 실내외 환경에서 평가했으며, 결과적으로 heterogeneous robot cooperation의 실제 배포에 있어 중요한一步을 향상합니다."
   },
   {
+    "title": "Ground Reaction Inertial Poser: 인력 동작 캡처 ~함",
+    "original_title": "Ground Reaction Inertial Poser: Physics-based Human Motion Capture from Sparse IMUs and Insole Pressure Sensors",
+    "link": "https://arxiv.org/abs/2603.16233",
+    "date": "2026-03-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "인력의 실제적인 물리적 운동을 재현하는 Ground Reaction Inertial Poser(GRIP) 알고리즘을 제안하였다. GRIP는 기존 IMU-only 접근방식보다 IMU 신호와 족압 데이터를 결합하여身体 역동과 지면 상호작용을 캡처하며, 물리적 동작을 재현하는 데에 synthesized humanoids in a physics simulator를 사용하였다. GRIP의 핵심은 KinematicsNet과 DynamicsNet 두 개의 모듈로 구성되는데, KinematicsNet은 센서 데이터에서 체고와 속도를 추정하고, DynamicsNet은 KinematicsNet 예측과 시뮬레이터 humanoids 상태 간의 잔여를 사용하여 물리적 동작을 재현하였다. 또한, 다양한 인력 운동을 캡처한 PRESSURE AND INERTIAL SENSING FOR HUMAN MOTION AND INTERACTION(PRISM) 데이터셋을 도입하여 알고리즘의 훈련 및 평가를 강화하였다. EXPERIMENTAL 결과는 GRIP가 기존 IMU-only와 IMU-압融 접근방식보다 모든 평가 데이터셋에서 더 높은 글로벌 자세 정확도와 물리적 일관성을 달성함을 보여주었다."
+  },
+  {
     "title": "프로젝트 관리 도구 선택에 대한 가이드",
     "original_title": "How to Choose the Right Project Management Tools for Your Team",
     "link": "https://roboticsandautomationnews.com/2026/03/29/how-to-choose-the-right-project-management-tools-for-your-team/100207/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "paper",
     "summary": "로보트 로컴포션 및 전신제어를 위한 정책 훈련은 고차원 지속 액션, 하드웨어 제한 및 탐색 제한으로 인하여 구현이 어려움. 기존 방법들은 환경 특정 heuristic (예: 보상 조정, 커리큘럼 설계, 수동 초기화)로 잘 작동하지만, 토크 기반 제어에서는 액션 공간을 효과적으로 탐색하고 교육 signals를 얻는 것이 훨씬 더 어렵음. 우리는 성장 정책 최적화를(CPO) 소개하여 초기 단계에서 액션 공간을 제한하여 데이터 수집 및 정책 학습을 촉진하고, 나중에 이를 확장하여 탐색 및 예상 반환을 개선하게 함. 이러한 변환은 PPO 업데이트 규칙을 보존하며만한, 소멸하는 기울기 왜곡을 도입함으로써 안정적인 훈련을 ensured. 우리는 CPO를 4족 로보트 및 6족 로보트에 적용하고, 시뮬레이션 훈련된 정책을 하드웨어에서 즉시 배포하게 함. CPO로 훈련된 정책들은 일반적으로 더 나은 성능을 나타냄. 이러한 결과는 CPO가 환경-agnostic 최적화 프레임워크를 제공하여 로보트 로컴포션에 대한 일반적인 최적화를 가능케 함을 시사함."
-  },
-  {
-    "title": "Tendon-based modelling, estimation and control for a simulated high-DoF anthropomorphic hand model",
-    "original_title": "Tendon-based modelling, estimation and control for a simulated high-DoF anthropomorphic hand model",
-    "link": "https://arxiv.org/abs/2601.20682",
-    "date": "2026-01-29 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "anthropomorphic 로봇 손의 Direct Joint Angle Sensing 부족 문제를 해결하기 위해 논문에서 tendon-driven modeling, estimation, and control framework을 제안함. proposed framework은 tendon states를 joint positions로 예측하고 closed-loop control을 가능하게 하는 Jacobian-based PI controller와 feedforward term을 추가함.\n\n(Note: I followed the instructions to translate the title and summarize the content into 2-3 concise sentences in a formal, objective news-brief style ending in nouns. Key technical terms and company names are kept in English or use standard Korean transliteration if widely used.)"
   }
 ]
