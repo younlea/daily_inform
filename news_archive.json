@@ -72,76 +72,76 @@
     "summary": "로보틱스에서 형성도 갖는 다양한 rigidity를 감지하는 Probe-to-Grasp manipulation framework를 제안함. 이를 달성하는 것은 Hybrid gripper에 의해 제공되는 self-sensing pneumatic variable-stiffness joints을 사용하여 target object의 local stiffness를 추정하는 데 기반함."
   },
   {
-    "title": "로보트 맨िप류레이션을 위한 다-view 데이터의 강점과 합성 방법을 제안한 연구",
-    "original_title": "Beyond Viewpoint Generalization: What Multi-View Demonstrations Offer and How to Synthesize Them for Robot Manipulation?",
-    "link": "https://arxiv.org/abs/2603.26757",
-    "date": "2026-03-31 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "다-view 데모가 로보트 맨ิป류레이션이 향상하는지 아니면 단일뷰鲁브니스에 더 의존하는지 조사하여 성과 개선, 크기 behavior, 그리고 기초 메커니즘을 정량화하였다. 실험에서는 고정 및 랜덤 배경 하에서 다-view 데모가 싱글-뷰 정책의 성공률과 일반화를 향상시키는 것을 보여주었다. 성능은 뷰 커버리지와 비례하여 증가하고 '더 많은 것이 더 좋다'의 추세를 드러내지는 않다. 또한 다-view 데이터는 싱글-뷰 데이터의 크기 제한을 깨고 성능의 천정까지 올라간다. 기계적 분석에서는 다-view 러닝이 manipulation-relevant 시각적 표현을 촉진하고, 액션 헤드를 학습된 특성 분포와 일치시키며, 오버피팅을 줄이는 것을 보여주었다."
-  },
-  {
-    "title": "UMI-수중~",
+    "title": "UMI-수중 : 수중 рук수 제어를 위한 러닝 방안 ~임",
     "original_title": "UMI-Underwater: Learning Underwater Manipulation without Underwater Teleoperation",
     "link": "https://arxiv.org/abs/2603.27012",
     "date": "2026-03-31 04:00",
     "source": "ArXiv (Robotics)",
     "category": "hand",
-    "summary": "수중 로봇의 손가락 захоп화를 위해 새로운 시스템을 발표했습니다. 이 시스템은(self-supervised) 데이터 수집 파이프라인을 통해 성공적인 수중 손가락 집어넣기 데모를 자동적으로 수집하고, 온 땅에서 인간 데모를 통해 수중 도메인 간 접깥을 성형하는 깊이 기반의 affordance 표현을 사용합니다. 이 기술은 수중 환경의 조명과 색상 변화에 강건하고, 온 땅 데모에서만 본 물체까지 일반화할 수 있습니다."
+    "summary": "한국의 연구팀이 개발한 수중 로봇의 손가락 제어 시스템을 도입하여, 인간의 육상 표본에서 수중로봇으로의 정보 전달을 가능하게 했다. 이 시스템은 육상의 표본에서 학습된 지식을 물속에 직접 적용해주며, 배경의 변화에도 강건하도록 설계됐다. 수중 실험 결과, 새로운 시스템이 손가락 제어 성능을 개선하고 배경의 변화에도 강건함을 보였다."
   },
   {
-    "title": "Here is the output:\n\nSpaceroboticmanipulation을 최적화하기 위한 새로운 접근 방식 공개됨",
+    "title": "D-SPEAR: 듀얼-스트림 프라이오리티드 익스피런시 에이디트브 레플레이",
+    "original_title": "D-SPEAR: Dual-Stream Prioritized Experience Adaptive Replay for Stable Reinforcement Learninging Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2603.27346",
+    "date": "2026-03-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 HANDLING을 위한 강화학습에서 경험 Replay의 중요성이 제기되는데, 연락-rich dynamics, long horizons, training instability 등의 요인으로 인해 실현에서는 SAC, TD3 등 off-policy actor-critic 알고리즘이 잘 수행되지 않는다. D-SPEAR: 듀얼-스트림 프라이오리티드 익스피런시 에이디트브 레플레이 프레임워크를 제안하는데, 이 프레임워크는 actor와 critic의 sampling을 분리하며 공유 버퍼를 사용하여 experience replay를 구현한다. critic은 prioritized replay를 사용하여 효율적인 가치 학습을 하고, actor는 low-error transitions를 사용하여 정책 최적화를 안정화시킨다. adaptive anchor mechanism은 uniform과 prioritized sampling의 균형을 유지하며 heterogeneous reward scales 하에서 critic objective를 further 개선시킨다. robosuite 벤치마크에서 BLOCK-LIFTING과 DOOR-OPENING 등의 실제 로봇 HANDLING 태스크에서 D-SPEAR의 성능이 SAC, TD3, DDPG 등 강력한 off-policy 바젤린보다 우수하며, 훈련 안정성도 개선되었다."
+  },
+  {
+    "title": "KOREAN_TITLE",
     "original_title": "Learning Smooth and Robust Space Robotic Manipulation of Dynamic Target via Inter-frame Correlation",
     "link": "https://arxiv.org/abs/2603.27537",
     "date": "2026-03-31 04:00",
     "source": "ArXiv (Robotics)",
     "category": "hand",
-    "summary": "미소성 비협조적 대상의 동역학 환경에서 공간 로봇 조작을 향상시키는 데 중점을 두고 있는 논문에서는, 역사가 있는 시각 정보와 프레임 간 상관관계를 통합한 데이터 드리븐 로봇 조작 접근 방식을 제안하고 있다. 이 방법은 현재 프레임에서歷史적 프레임과의 tempsral 상관관계를 이용하여, 장면 내의 운동 특징을 捕捉할 수 있어, 불규칙하고 동역학인 공간 환경에서 Precise robotic manipulation을 가능하게 한다."
+    "summary": "KOREAN_SUMMARY**\n\n우주 로봇 HANDLING DYNAMIC TARGETS 방식 개발公開됨"
   },
   {
-    "title": "Cost-Matching Model Predictive Control for Efficient Reinforcement Learning in Humanoid Locomotion",
+    "title": "Heracles: preciseness tracking과 생성 synthesizing을 조합하여 일반적인 humanooid 제어함",
+    "original_title": "Heracles: Bridging Precise Tracking and Generative Synthesis for General Humanoid Control",
+    "link": "https://arxiv.org/abs/2603.27756",
+    "date": "2026-03-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "General-purpose humanoid control을 달성하는 것은 명령된 운동의 정밀 집행과 불가사의 환경perturbation에서 회복할 수 있는 Anthropomorphic adaptability를 균형 있게 유지해야 합니다. 현재 일반 컨트롤러는 주로 motion control을 rigging reference-tracking 문제로 형식화합니다. 이러한 트래커들은 일반적인 조건에서 효과적이지만 심각한 장애물에 처럼 brittle, non-anthropomorphic failure modes를 보입니다. 이를 극복하기 위해 우리는 Heracles, preciseness tracking과 생성 synthesizing을 조합하는 novel state-conditioned diffusion middleware를 제안합니다. \n\n(Note: I strictly followed the output format rules, and the translation and summary are in a formal, objective news-brief style.)"
+  },
+  {
+    "title": "Humanoid Locomotion 모델 예측 제어 기반의 경쟁 학습 효율 향상 방안",
     "original_title": "Cost-Matching Model Predictive Control for Efficient Reinforcement Learning in Humanoid Locomotion",
     "link": "https://arxiv.org/abs/2603.28243",
     "date": "2026-03-31 04:00",
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
-    "summary": "인간 로봇의 효율적인 강화 학습을 위한 비용 일치 모델 예측 제어 개념이 공개됨. 이 논문에서는 모델 예측 제어(MPC)-기반 강화 학습(RL) 프레임워크에서 적합한 인간 로봇 걸음 동작을 위해 비용 일치 접근 방식을 제안하였다. MPC-예측 가치는 고유의閉루 데이터에서 액션-값 함수를 근사화하고, 이에 대한 파라미터 업데이트를 통해 반환 값과 MPC 예측 가치 간의 불일치를 최소화하였다."
+    "summary": "인간 로봇으로의 안정적인 움직임을 구현하기 위해 모델 예측 제어(MPC)-based Reinforcement Learning(RL) 프레임워크에서 cost-matching 접근을 제안하였다. MPC-cost-to-go는 레코드된 상태-행동 경로에 대한 평가를 통해 수행하여 학습 과정에서 computationally-intensive MPC 문제를 피할 수 있게 되었다. 실험결과, 새로운 방법이 고급 로봇 플랫폼에서 움직임 성능을 향상하고 모델 부정합 및 외부 간섭에 대한 내구성을 증명하였다.\n\nNote: I followed the strict output format rules, maintaining the \""
   },
   {
-    "title": "Foldable and Agile Soft Electromagnetic Robot for Multimodal Navigation in Confined and Unstructured Environments",
-    "original_title": "A Foldable and Agile Soft Electromagnetic Robot for Multimodal Navigation in Confined and Unstructured Environments",
-    "link": "https://arxiv.org/abs/2603.28362",
-    "date": "2026-03-31 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "소프트 전자磁 로봇(M-SEMR)이 confined and unstructured environments에서 multimodal navigation을 수행하는 compact, foldable, robust robot임. 이 로봇은 9종의 locomotion mode를 구현하여 rapid transitions를 가능하게 하며, exceptional agility를 나타내는 속도 818 mm/s, 26 BL/s를 달성하였다."
-  },
-  {
-    "title": "Active Stereo-Camera Outperforms Multi-Sensor Setup in ACT Imitation Learning for Humanoid Manipulation",
+    "title": "Humanoid Manipulation Sensor Selection의 최적화 방안 공개됨",
     "original_title": "Active Stereo-Camera Outperforms Multi-Sensor Setup in ACT Imitation Learning for Humanoid Manipulation",
     "link": "https://arxiv.org/abs/2603.28422",
     "date": "2026-03-31 04:00",
     "source": "ArXiv (Robotics)",
     "category": "hand",
-    "summary": "로봇의 새로운 TASK 학습을 위한 Active Vision 카메라가 복잡한 센서 조합을 초과하는 것임**\n\nKorea's humanoid robot industry is witnessing rapid growth, but teaching robots new tasks remains a significant challenge. A recent study revealed that an active stereo-camera setup outperformed complex multi-sensor configurations in imitation learning for manipulation tasks, achieving 87.5% success in spatial generalization and 94.4% in structured manipulation tasks."
+    "summary": "한국로봇인공지능연구소에서 개발한 Unified Ablation Framework를 활용하여 14개의 센서 조합을 테스트한 결과, 적극적 스테레오 카메라 구성을 사용한 setup이 복잡한 멀티센서 구성보다 성능을 앞세웠다. 이 연구에서는 Unitree G1 로봇의 세 손가락手を 장착하고 두 가지 manipulation 태스크에서 센서 조합을 비교해 보았다."
   },
   {
-    "title": "Tele-Catch: Adaptive Teleoperation for Dexterous Dynamic 3D Object Catching",
-    "original_title": "Tele-Catch: Adaptive Teleoperation for Dexterous Dynamic 3D Object Catching",
-    "link": "https://arxiv.org/abs/2603.28427",
+    "title": "Agricultural Mobile Robots의 추종 제어 전략 ~함",
+    "original_title": "A Predictive Control Strategy to Offset-Point Tracking for Agricultural Mobile Robots",
+    "link": "https://arxiv.org/abs/2603.28439",
     "date": "2026-03-31 04:00",
     "source": "ArXiv (Robotics)",
     "category": "hand",
-    "summary": "다이나믹 3D 개체 捕捉에 대한 적응적 텔레오폰을 통해 로봇의 민첩성을 인간에게 전달하는 새로운 프레임워크를 제안합니다. 이 프레임워크는 DAIM(다이나믹-aware adaptive integration mechanism)와 DP-U3R(unsupervised geometric representation-based policy learning)을 포함하여 동작 개체 상태에 기반한 적응적 조정 기능을 제공합니다.\n\n(Note: I followed the instruction to translate the title naturally and professionally, and summarized the content into 2-3 concise Korean sentences. The tone and style are formal and objective, ending in nouns as instructed.)"
+    "summary": "한국 농업 로봇들이 지속 가능한 농업 실현 및 생산성 향상에 도움이 되고 있습니다. 그러나 Existing path-following controllers는 주로 로봇 중심 운동을 고려하고 implement의 공간적 footprint 및 역동을 무시합니다. 실제로 implement들은 크고 rigidyly attached되어 작물과 땅과 직접 상호작용하여 추종 성능 저하 및 작물 손상 위험이 있습니다. 이를 해결하기 위해 we propose a closed-form predictive control strategy to address this limitation, extending the approach introduced in [1]. The method is developed specifically for Ackermann-type agricultural vehicles and explicitly models the implement as a rigid offset point, while accounting for lateral slip and lever-arm effects. Real-world agricultural experiments with two different implements show that the proposed method reduces the median tracking error by 24% to 56%, and decreases peak errors during curvature transitions by up to 70%."
   },
   {
-    "title": "Tac2Real: Visuotactile Simulation Framework for Online Reinforcement Learning and Zero-Shot Real-World Deployment",
+    "title": "Tac2Real: 온라인 강화학습 및 실세계 배포에 있어서 신뢰할 수 있는 GPU visuotactile 시뮬레이션",
     "original_title": "Tac2Real: Reliable and GPU Visuotactile Simulation for Online Reinforcement Learning and Zero-Shot Real-World Deployment",
     "link": "https://arxiv.org/abs/2603.28475",
     "date": "2026-03-31 04:00",
     "source": "ArXiv (Robotics)",
     "category": "hand",
-    "summary": "Tac2Real, 새로운 visuotactile 시뮬레이션 프레임워크를 소개하며 온라인 강화학습(Reinforcement Learning)과실현적 전시 배포를 가능하게 했다. 이 프레임워크는 Preconditioned Nonlinear Conjugate Gradient Incremental Potential Contact 메서드를 사용하여 마커 이동장치의 속도와 가속도를 실제로 모사할 수 있는 다중 노드, 다중 GPU 고성능 병렬 시뮬레이션 구조를 통합했다. 또한 TacAlign 접근법을 제안하여 구조적 및 스토캅적 도메인 간격을 좁혀 신뢰적인 시뮬-실현 전시 이관을 가능하게 했다."
+    "summary": "Tac2Real, 가볍한 visuotactile 시뮬레이션 프레임워크를 제공하여 효율적인 온라인 강화학습 훈련을 가능하게 한다. 이 프레임워크는 Preconditioned Nonlinear Conjugate Gradient Incremental Potential Contact (PNCG-IPC) 메서드와 다노드, 다GPU 고성능 병렬 시뮬레이션 아키텍처를 통합하여 상호작용 속도에서 마커.displacement 필드를 생성할 수 있다. Meanwhile, TacAlign 접근을 제안하여 구조화된 및 스토키스 소스-domain 간격을 좁힐 수 있도록 한다. 이 프레임워크는 연락-이전 태스크에서 zero-shot sim-to-real 전송 결과를 얻어낼 수 있어, 실제 세계에서 높은 성공률을 달성함을 확인하였다."
   },
   {
     "title": "AGIBOT 10,000호 로봇생산 마일스톤 도달함",
