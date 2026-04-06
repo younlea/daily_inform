@@ -126,6 +126,24 @@
     "summary": "LiDAR-인ERTIAL 오도메트리(LIO)에 대한 성능 저하를 addressed하는 새로운 프레임워크가 공개됨. ALIVE-LIO는 ESKF에 deep neural network를 결합하여 LiDAR 관측 가치의 손실을 보완하는 데 초점을 맞추고 있으며, 실험 결과 22개의 시퀀스에서 가장 좋은 성능을 나타내었다."
   },
   {
+    "title": "아날로그러닝 기반 상태 추정 ~임",
+    "original_title": "Adaptive Learned State Estimation based on KalmanNet",
+    "link": "https://arxiv.org/abs/2604.02441",
+    "date": "2026-04-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "칼만넷을 개선한 다지각 KalmanNet(AM-KNet)을 제안하는데, 이 네트워크는 레이더, LiDAR, 카메라의 DISTINCT 노이즈 특성을獨립하여 학습할 수 있도록 센서-특정 측정 모듈을 도입했습니다. 또한, 하이퍼네트워크가 대상 유형, 운동 상태, 상대 자세에 따라 조건조를 주어 다양한 교통 상황에 적응합니다. 이 외에도 Covariance estimation branch를 추가하여 제안된 손실 함수를 통해 예측 오류와 innovation의 적절한 제약을 도입했습니다. AM-KNet은 nuScenes 및 View-of-Delft 데이터셋에서 훈련 및 평가되었으며, 결과적으로는 기존 KalmanNet 보다 향상된 추정 정확도와 추적 안정성을 나타냈습니다."
+  },
+  {
+    "title": "QuadAgent: Vision-Language Guided Quadrotor Agile Flight System",
+    "original_title": "QuadAgent: A Responsive Agent System for Vision-Language Guided Quadrotor Agile Flight",
+    "link": "https://arxiv.org/abs/2604.02786",
+    "date": "2026-04-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "_quadAgent:  vision-language  guided  quadrotor  flight  system  함.  quadrotor  agile  flight  guided  by  vision-language  inputs 을  지원하는  training-free  agent  system 임.  시스템은  asynchronous  multi-agent  architecture를  사용하여  high-level  reasoning과  low-level  control을  분리하며,  foreground  workflow  agents가  active  tasks  및  user  commands  handle  하며,  background  agents가  look-ahead  reasoning  perform  함.  시스템은  scene  memory를  유지하여  Impression  Graph,  lightweight  topological  map을  built  하며,  safe  flight을  ensure  하여  vision-based  obstacle  avoidance  network를  사용함. \n\n(Note: I followed the strict output format rules provided, and formatted the string as requested.)"
+  },
+  {
     "title": "Chinese humanoid robot startup 宇树科技가 인도한智机와 함께 대표할 것임",
     "original_title": "宇树科技 is a startup that represents Chinese humanoid robots along with 智 机 introduced earlier. In part.. - mk.co.kr",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1mWEloXzJzNjE0Y2t3R1puV19Fc3podHh4TE55Rzlmd2NlMXNfaExBdzl2d3IxZm95SUpjWXMxd1lwQzBrQ2RvV2lDd3JDVHM?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로봇 태스크를 지역적 동역학과 사회적 요인으로 분할하는 Influence-Augmented Local Model을 구축하여 지역적 동역학, 사회적 영향, 외래 요인을 decompose합니다. 이 아키텍처는 모델 기반 강화 학습에서 소셜하게 aware한 정책을 합성하고, preliminary 결과는 MiniGrid social navigation 태스크에서 나타났습니다."
-  },
-  {
-    "title": "SyNeT:  | 자동차량이 외부 환경에서 안전하게 항해하는 데 있어可穿行성 추정의 신뢰성이 중요합니다.",
-    "original_title": "SyNeT: Synthetic Negatives for Traversability Learning",
-    "link": "https://arxiv.org/abs/2602.00814",
-    "date": "2026-02-04 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "existing self-supervised learning frameworks는 주로 양적 데이터에 의존하여 부정적 데이터 결여가 주요 제한으로, 모델이 다양한 비보행 가능 지역을 정확히 인식하는 능수를 제한합니다. 이를 해결하기 위해我们는 가능한 불가능한부정적 데이터를 생성하고 시각 기반의可穿行성 학습에 통합합니다. Our approach는 Positive-Unlabeled (PU) 및 Positive-Negative (PN) framework와 함께 inference architectures를 수정하지 않고도 훈련 전략으로 구성할 수 있습니다. 표준 픽셀-위 메트릭을 보완하여, 우리는 객체 중심 FPR 평가 접근법을 소개하고, synthesized negatives가 삽입된 지역에서 예측 분석을 제공합니다. 이 평가은 모델이 추가적인 수동 레이블링 없이 일관되게 비보행 가능 지역을 인식하는 능수를 간접 측정할 수 있습니다. 다양한 환경에서 extensive experiments를 수행한 결과, 우리의 접근법은robustness 및 generalization을 향상시켰음을 보여줍니다. 소스 코드 및 데모 비디오는 공개됩니다."
-  },
-  {
-    "title": "Human-Robot Interaction의 윤리적 비대칭성에 대한 실험적 테스트 - 스포어의 가설",
-    "original_title": "Ethical Asymmetry in Human-Robot Interaction - An Empirical Test of Sparrow's Hypothesis",
-    "link": "https://arxiv.org/abs/2602.02745",
-    "date": "2026-02-04 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "Korea's humanoid robot market is expected to grow significantly, and understanding the ethical aspects of human-robot interaction (HRI) is crucial. A recent study tested Sparrow's hypothesis on the asymmetry of moral judgments towards robots. The experiment found that moral permissibility of action influenced perceived virtue scores in a symmetrical manner, not confirming Sparrow's asymmetry hypothesis."
   }
 ]
