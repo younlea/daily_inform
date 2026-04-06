@@ -252,6 +252,15 @@
     "summary": "VLA 모델을 업그레이드하여 downsream manipulation 성능을 개선하는 것은 예상대로가 아니었다. 이는 Compression Gap 원리에 의해 설명되는 바와 같다. 정보이론적 원리는 visuomotor 파이프라라인에서 scaling 행위가 고정된 정보 병목 위치에 따라 결정됨을 보여준다..actions는 연속적인 경우 (e.g., Diffusion Policy), vision encoder가 고정된 제약으로 작용하며, 업그레이드가 성능 개선에 도움이 된다. 반면 actions가 고정된 코드북 (e.g., OAT)으로 discretized되는 경우에는 코드북이 고정된 제약으로 작용하며, encoder 업그레이드가 코드북의 크기 제한을 초과하여 성능 개선에 도움이 되지 않는다. LIBERO 벤치마크에서 three lines of evidence를 갖추어 validation하였다: Diffusion Policy에 대한 factorial 실험; 네 가지 encoders의 quality gradient; codebook size 실험으로 인해 encoder 민감도 부분적으로 회복됨을 보여준다. 성과는 Physical AI의 scaling이 정보 병목 위치를 확인하여 모델 또는 데이터 크기 uniform하게 증가시키지 않는 것임을 강조한다."
   },
   {
+    "title": "OMNI-PoseX: 6D 객체 자세 추정 모델",
+    "original_title": "OMNI-PoseX: A Fast Vision Model for 6D Object Pose Estimation in Embodied Tasks",
+    "link": "https://arxiv.org/abs/2604.02759",
+    "date": "2026-04-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "한국에서 embodied 에이전트의 기본 기능으로 6D objeto pose estimation은 여전히 도전적이나, OMNI-PoseX는 새로운 네트워크 구조를 제안하여 open-vocabulary perception을 결합한 SO(3)-aware reflected flow matching pose predictor를 사용하여 이 문제를 해결함. 이를 통해 OMNI-PoseX는 efficient하고 stable한 6D pose estimation을 가능하게 하여 robotic grasping integration에서 신뢰할 수 있는 예측을 제공함."
+  },
+  {
     "title": "Chinese humanoid robot startup 宇树科技가 인도한智机와 함께 대표할 것임",
     "original_title": "宇树科技 is a startup that represents Chinese humanoid robots along with 智 机 introduced earlier. In part.. - mk.co.kr",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1mWEloXzJzNjE0Y2t3R1puV19Fc3podHh4TE55Rzlmd2NlMXNfaExBdzl2d3IxZm95SUpjWXMxd1lwQzBrQ2RvV2lDd3JDVHM?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "Humanoid Whole-Body Controller(EAGLE)라는 새로운 프레임워크를 선보였습니다. 이 프레임워크는 다수의 다른 로봇을 제어할 수 있는 싱글 포licy를 생성하는데, 이를 통해 다이나믹스, 도F, кінемати카 토폴로지의 변화에도 적응할 수 있습니다."
-  },
-  {
-    "title": "LAGEA: 언어 지도로부터의 조절된 에이전트",
-    "original_title": "LAGEA: Language Guided Embodied Agents for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2509.23155",
-    "date": "2026-02-04 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 조작에 대한 기초 모델이 목표를 설명하는 데 도움이 되지만, 오늘날의 에이전트는 자신의 실수를 보지 못하는 원칙적인 방법을 lacked. 우리는 자연어를 피드백으로 사용하여 embodied agents가 무엇 잘못 되었는지診断하고 방향을 바꾸게 하는 erro-reasoning 신호를 물어본다. LAGEA.framework을 도입하여 비전 언어 모델(VLM)의 episodic, schema-constrained reflection을 episodic, schema-constrained reflection으로 turning each attempt in concise language로 요약하고, decisive moments in trajectory를 localize하고, feedback agreement와 visual state을 shared representation에서 align하고, goal progress와 feedback agreement을 bounded, step-wise shaping rewards로 convert하여 influence를 modulated by adaptive, failure-aware coefficient. 이 설계는 탐색이 지도로 필요할 때 densities 신호를 early에 내보내고, 기능성 성장과 함께 사라지게 하여 faster convergence를 나타낸다. Meta-World MT10와 Robotic Fetch embodied manipulation benchmark에서 LAGEA는 random goals에서 SOTA methods보다 9.0%의 평균 성공률을 높이고, fixed goals에서는 5.3%, fetch tasks에서는 17%의 성능 향상을 보였으며, 더 빠르게 도달하였다. 이 결과는 우리 가설에 지원을 주고, 언어가 시간에 구조화되고 지면에 기반하여 로봇이 실수를 비추하고 나은 선택을 할 수 있는 메커니즘임을 지지한다."
   }
 ]
