@@ -162,6 +162,33 @@
     "summary": "한국계산의 야외 지능화된 自主 로보틱 오퍼레이션을 지원하는 환경 지도는, 구조적 환경 정보를 유지하고 고급 로보틱이유를 허용하는 구문적 매핑 방식과 결합되어야 합니다. 3D 씬 그래프(3DSG)는 지오메트릭, 토폴로지 및 의미 관계를 다차원 그래프로 통합하여 구조적으로 이해하고 조직합니다. 야외 로보틱 오퍼레이션은 일반적으로 지형 정보에 의존하거나 로보틱 플랫폼의 보행 가능성을 고려해야 합니다. 우리는 인공 3DSG 기술과 표준 야외 지오메트릭 매핑, 지형-aware_reasoning을 결합하여 야외 환경에 대한 지형-aware 장소 노드와 계층적으로 조직된 지역을 생성합니다.我们的 방법은 태스크-agnostique 메트릭-센틱 스플래스 지도와 3DSG를 생성하고 autonomous 로보틱 오퍼레이션에 적합한轻量화하여 계획 tarea에 사용할 수 있습니다.우리의 철저한 평가 결과는 state-of-the-art 카메라-based 3DSG 방식과 동등하며 지역 분류에서 이들을 초과하는 성능을 보입니다.우리는 다양한 로보틱 태스크, 즉 물체 검색 및 지역 모니터링에 있어서의 효율성을 simulation 및 실제 환경에서 확인했습니다."
   },
   {
+    "title": "로보틱스 정책학습에 대한 컨트롤러 게인 설정이 함 ~임",
+    "original_title": "Tune to Learn: How Controller Gains Shape Robot Policy Learning",
+    "link": "https://arxiv.org/abs/2604.02523",
+    "date": "2026-04-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "게인이 robot policy learning에서 얼마나 영향을 주는지 조사한 연구. Position controllers가 learned manipulation policies의 구현에 있어 주요 인터페이스로 자리 잡은 것과 같은 방식으로, gain setting의 선택을 learnability를 기준으로 하는 것이 더 적절하다는 주장이다. This work에서는 behavior cloning, reinforcement learning from scratch, and sim-to-real transfer의 3가지 핵심 구성 요소를 대상으로 position controller gains의 영향을 조사하고, 다수의 태스크와 로보틱스 구현체를 통해 gain setting이 learned algorithm의 성능에 어떤 영향을 미치는지 확인하였다."
+  },
+  {
+    "title": "FSUNav: Cerebrum-Cerebellum Architecture for Fast, Safe, and Universal Zero-Shot Goal-Oriented Navigation",
+    "original_title": "FSUNav: A Cerebrum-Cerebellum Architecture for Fast, Safe, and Universal Zero-Shot Goal-Oriented Navigation",
+    "link": "https://arxiv.org/abs/2604.03139",
+    "date": "2026-04-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "FSUNav를 제안하는 것은 빠른, 안전한 및 다목적 zero-shot 목표 방향.Navigation을 지원하는 Cerebrum-Cerebellum 구조체입니다. 이 구조체는 비전-언어 모델(VLMs)와 결합하여 고주파수 엔드-to-end 모듈인 cerebellum을 개발하여 다양한 플랫폼( humanoide, quadruped, wheeled robot)을 지원하는 통합 네비게이션을 제공합니다. 추가적으로 이 구조체는 다모달 입력(text, target description, image)을 지원하여 일반화, 실시간 성능, 안전성 및 튜닝성을 개선합니다.\n\nNote: I followed the formatting rules strictly and did not include any introductory text or Markdown formatting."
+  },
+  {
+    "title": "Multi-view 비디오 확산 정책 : 3D 공간-시각적-일람 인식을 위한 동작 모델",
+    "original_title": "Multi-View Video Diffusion Policy: A 3D Spatio-Temporal-Aware Video Action Model",
+    "link": "https://arxiv.org/abs/2604.03181",
+    "date": "2026-04-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "3D 공간-시각적-일람 상태를同時 모델링하는 multi-view 비디오 확산 정책인 MV-VDP를 소개합니다. 이 정책은 2D 시각 관찰에만 의존하지 않고, 환경의 3D 공간 구조와 일람을 모두 고려하여 로봇이 수행할 액션과 환경이 예상되는 일람을 모두 예측합니다. 실험 결과 MV-VDP는 데이터 효율적이고, 강건하고, 일반화 가능하며 해석 가능하게 로봇의 manipulations를 수행했습니다."
+  },
+  {
     "title": "Chinese humanoid robot startup 宇树科技가 인도한智机와 함께 대표할 것임",
     "original_title": "宇树科技 is a startup that represents Chinese humanoid robots along with 智 机 introduced earlier. In part.. - mk.co.kr",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1mWEloXzJzNjE0Y2t3R1puV19Fc3podHh4TE55Rzlmd2NlMXNfaExBdzl2d3IxZm95SUpjWXMxd1lwQzBrQ2RvV2lDd3JDVHM?oc=5",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "비전-언어-행동(VLA) 모델의 일생학습은 개방된 환경에서 수행되는Manipulation을 가능하게 하는 강화학습을 통해 달성된다. 그러나 이를 위해 안정성(고전적 기술 유지)과 пластич성(새로운 기술 배우기)를 균형 내리는 것은 기존 방법론의 큰 挑戰이었다. 우리는 CRL-VLA 프레임워크를 소개하는데, 이 프레임워크는 VLA 모델을 일생 로보틱스 시나리오에서 지속적으로 교육하고 있는 것이다. LIBERO 벤치마크 experiments에 따르면 CRL-VLA가 이러한 상충되는 목표를 조화시키며, 기존 baseline보다 항공과 전진적 adaptability를 보여주었다."
-  },
-  {
-    "title": "Multi-function Robotized Surgical Dissector for Endoscopic Pulmonary Thromboendarterectomy: Preclinical Study and Evaluation",
-    "original_title": "Multi-function Robotized Surgical Dissector for Endoscopic Pulmonary Thromboendarterectomy: Preclinical Study and Evaluation",
-    "link": "https://arxiv.org/abs/2602.03147",
-    "date": "2026-02-04 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.03147v1 Announce Type: new \nAbstract: Patients suffering chronic severe pulmonary thromboembolism need Pulmonary Thromboendarterectomy (PTE) to remove the thromb and intima located inside pulmonary artery (PA). During the surgery, a surgeon holds tweezers and a dissector to delicately strip the blockage, but available tools for this surgery are rigid and straight, lacking distal dexterity to access into thin branches of PA. Therefore, this work presents a novel robotized dissector based on concentric push/pull robot (CPPR) structure, enabling entering deep thin branch of tortuous PA. Compared with conventional rigid dissectors, our design characterizes slenderness and dual-segment-bending dexterity. Owing to the hollow and thin-walled structure of the CPPR-based dissector as it has a slender body of 3.5mm in diameter, the central lumen accommodates two channels for irrigation and tip tool, and space for endoscopic camera's signal wire. To provide accurate surgical manipulation, optimization-based kinematics model was established, realizing a 2mm accuracy in positioning the tip tool (60mm length) under open-loop control strategy. As such, with the endoscopic camera, traditional PTE is possible to be upgraded as endoscopic PTE. Basic physic performance of the robotized dissector including stiffness, motion accuracy and maneuverability was evaluated through experiments. Surgery simulation on ex vivo porcine lung also demonstrates its dexterity and notable advantages in PTE."
-  },
-  {
-    "title": "LP-MPPI: Low-Pass Filtering for Efficient Model Predictive Path Integral Control",
-    "original_title": "LP-MPPI: Low-Pass Filtering for Efficient Model Predictive Path Integral Control",
-    "link": "https://arxiv.org/abs/2503.11717",
-    "date": "2026-02-04 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "MPPI 제어 알고리즘의 높은 주파수 노이즈 문제를 해결하기 위해 LP-MPPI(Low-Pass Model Predictive Path Integral Control)를 개발했다. 이 새로운 알고리즘은 샘플링 프로세스에 저주파수 필터링을 통합하여 노이즈를 제거하고 효율성을 개선시켰다. 실제로는 F1TENTH autonomous racing, Gymnasium environments, simulated quadruped locomotion 등을 통해 LP-MPPI가 MPPI와의 성능 비교에서 우위를 차지했다."
-  },
-  {
-    "title": "IMAGINE: 지능형 다중 에이전트 고도토 기반 실내 네트워크 탐색",
-    "original_title": "IMAGINE: Intelligent Multi-Agent Godot-based Indoor Networked Exploration",
-    "link": "https://arxiv.org/abs/2602.02858",
-    "date": "2026-02-04 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "국내위성항법시스템(DGPS)가 허용되지 않는 환경에서 무인 공기 정거선(UAVs) 군의 협력적 탐색은 조정, 인식 및 분산 의사 결정에 주요 과제를 내포합니다. 이 논문은 2D 실내 환경에서 다중 에이전트 강화 학습(MARL)을 구현하여 이러한 과제를 해결하는데, 이를 위하여 고도토 게임 엔진 시뮬레이션과 연속 액션 공간을 사용합니다. 정책 훈련의 목표는 불확실성하에 emergent 협력 행동 및 의사 결정을 달성하는 것입니다. 각 UAV는 Litear Detection and Ranging(LiDAR) 센서를 갖추고 이웃한 에이전트와 데이터 공유(센서 측정치 및 지역 점유 지도)를 수행합니다. 에이전트 간 통신 제약은 제한된 범위, 대역폭 및 지연을 포함합니다. 이 논문은 MARL 훈련 패러다임, 보상 함수, 통신 시스템, 신경망 구조, 메모리 기제, POMDP 형식에 대한 세부 조사 결과를 제시합니다. 이 작업은 이전 연구의 주요 제한, namely reliance on discrete actions, single-agent or centralized formulations, assumptions of a priori knowledge and permanent connectivity, inability to handle dynamic obstacles, short planning horizons and architectural complexity in Recurrent NNs/Transformers을 해결했습니다. 결과는 고도토 시뮬레이션, MARL 형식 및 계산 효율성을 결합하여 실내 지역의 자동적 탐색을 가능하게 하는 강한 기반을 제공합니다."
   }
 ]
