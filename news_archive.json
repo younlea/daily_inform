@@ -63,6 +63,42 @@
     "summary": "UUV 클러스터의 신뢰로운 운영은 지속적인 음향 통신에 크게 의존합니다. 그러나 이 통신 방법은 간헐적인 중단에 highly 취약합니다. 통신 중단이 발생하면 표준 상태 추정기인 Unscented Kalman Filter (UKF)는 개방 루프 예측을 하게 됩니다. 환경에 미modeled 동적 요소, 즉 불명시된 해류가 포함되어 있으면 이 추정 오류는 빠르게 증가하게 되고, 이러한 오류는 최종적으로 임무 실패를 초래할 수 있습니다. 이를 해결하기 위해 본 논문은 Variational History Distillation (VHD) 접근법을 제안합니다. VHD는 경로 예측을 approximate Bayesian reasoning 프로세스로 간주하고, 표준 운동 모델에 기초한 물리학적 모델과 과거 UUV 경로에서 직접 추출된 패턴을 링크하여 ``가상 측정''을 synthesizes 합니다. 이러한 가상 측정은 과거 경로의 역사적 추출을 통해 얻어집니다. 예측 지향이 길어질수록 가상 측정의 신뢰도는 줄어들게 되므로, 적응적 신뢰 메커니즘을 도입하여 필터가 communication outage 시간이 연장될 때 가상 측정의 신뢰도를 점진적으로 낮출 수 있습니다. 고속 Монте Carlo 시뮬레이션을 수행한 결과, 제안된 방법은 예측 Root Mean Square Error (RMSE)를 약 91% 줄여내어, 40초의 통신 중단에서 170 m에서 15 m으로 추정 오류를 줄일 수 있습니다. 이러한 결과는 VHD가 완전한 통신 손실에서도 Robust 상태 추정 성능을 유지할 수 있다고 보여줍니다."
   },
   {
+    "title": "humanoid robot MIS system 함",
+    "original_title": "A Rapid Instrument Exchange System for Humanoid Robots in Minimally Invasive Surgery",
+    "link": "https://arxiv.org/abs/2604.02707",
+    "date": "2026-04-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "인형 로봇의 미니멀리 인베이사드 서러지(MIS) 기술에 대한 새로운 시스템을 제안합니다. 이 시스템은 로봇의 자연스러운 기능 workflow를 흉내하는 효율적인 도구 교환 기능을 구현하는데 초점을 맞추고 있습니다. 도구 교환 속도가 현저하게 향상되어 수술 중에 발생하는 복잡한 절차를 수행할 수 있습니다."
+  },
+  {
+    "title": "VLA 모델의 개방-LOOP 계획 및 문합-LOOP 확인:環境 변화에 강건한 VLA 기반 제어 구현임",
+    "original_title": "Open-Loop Planning, Closed-Loop Verification: Speculative Verification for VLA",
+    "link": "https://arxiv.org/abs/2604.02965",
+    "date": "2026-04-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "VLA(Vision-Language-Action) 모델이 manipulation 작업에서 성과를 보였으나, 높은 추론 비용으로 인해 효율성을 향상하기 위해 최근에 나온 액션 chunking 기법을 제안합니다. 이러한 개방-LOOP 계획은 환경 변화에 취약하고 실수를 축적하는 문제를 해결하기 위해 문합-LOOP 온라인 확인 프레임워크인 SV-VLA(Speculative Verification for VLA Control)를 제안합니다. SV-VLA는 개방-LOOP宏-계획을 사용하여 액션 chunk와 계획 콘텍스트를 생성하며, 경량적인 확인자가 실행 관찰에 기반하여 문합-LOOP 참조 액션과 비교하여 재规划을 트리거링할 때만입니다. 실험 결과, SV-VLA는.chunked 예측의 효율성과 문합-LOOP 제어의 robustness를 결합하여 동적 환경에서 신뢰와 효율적인 VLA 기반 제어 구현을 가능하게 합니다."
+  },
+  {
+    "title": "ARM: Advantage Reward Modeling for Long-Horizon Manipulation",
+    "original_title": "ARM: Advantage Reward Modeling for Long-Horizon Manipulation",
+    "link": "https://arxiv.org/abs/2604.03037",
+    "date": "2026-04-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 제어 분야의_Long-horizon robotic manipulation_에서 reinforcement learning(RL) 알고리즘의 성능을 개선하고자 ARM(Avantage Reward Modeling)을 제안하였다. 이.framework는 absolute progress를 estimate하는 대신 relative advantage를 추정하여 sparse rewards 문제를 해결하는 데 도움이 된다. 또한 tri-state labeling strategy -- Progressive, Regressive, and Stagnant --를 사용하여 human cognitive overhead을 줄일 수 있고 cross-annotator consistency도 높일 수 있다. 이 알고리즘은 자동으로 progress annotation을 수행하고 offline RL pipeline에 통합하여 adaptive action-reward reweighting을 수행할 수 있어 정책 훈련 시 suboptimal samples을 필터링할 수 있다."
+  },
+  {
+    "title": "STRNet: 시공간 표현을 통한 동적 그래프 집합을 통해 비주얼 네비게이션",
+    "original_title": "STRNet: Visual Navigation with Spatio-Temporal Representation through Dynamic Graph Aggregation",
+    "link": "https://arxiv.org/abs/2604.02829",
+    "date": "2026-04-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "비주얼 네비게이션에서 시공간 구조의 손실을 극복하기 위해 새로운 프레임워크를 제안했다. 이 프레임워크는 이미지 시퀀스와 목표 관찰을両取り하여 이를 동적 그래프 집합 모듈로 결합하고, 각 프레임 내부의 공간 그래프 추론과 다이나믹 템포럴 시프트 모듈을 사용해 템포럴 다이나믹스를 모델링한다. 실험 결과에서는 STRNet이 네비게이션 성능을 향상시키고 일반화된 비주얼 백본을 제공하는 것을 보여준다."
+  },
+  {
     "title": "Chinese humanoid robot startup 宇树科技가 인도한智机와 함께 대표할 것임",
     "original_title": "宇树科技 is a startup that represents Chinese humanoid robots along with 智 机 introduced earlier. In part.. - mk.co.kr",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1mWEloXzJzNjE0Y2t3R1puV19Fc3podHh4TE55Rzlmd2NlMXNfaExBdzl2d3IxZm95SUpjWXMxd1lwQzBrQ2RvV2lDd3JDVHM?oc=5",
@@ -17962,41 +17998,5 @@
     "source": "Google News (Humanoid)",
     "category": "humanoid",
     "summary": "POSCO는 철강 завод에서 로봇을 배치하여 로지스틱스에 대한 힘을 발휘하는 데 나선다고 발표하였다. 이 로봇은 인간의 외모를 하고자 하는 인간형 로봇으로, 생산성 및 직무안전성을 개선할 것임."
-  },
-  {
-    "title": "포스코그룹",
-    "original_title": "포스코그룹, 제철소 물류관리에 휴머노이드 로봇 도입 추진 - 브레이크뉴스",
-    "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE8zMGgxRWlBOTBVYWltRm9aVUgxSnJXVzdPNjFSLXNjd0RvWDhGb0J5SjJLVE80dlM4Vm1LampMSV9kUQ?oc=5",
-    "date": "2026-02-04 01:02",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "제철소 물류관리에 휴默노이드 로봇 도입 추진임. 포스코그룹은 제철소를 현대화하고 productive하게 하기 위해 휴머노이드 로봇을 도입 중이다."
-  },
-  {
-    "title": ".POSCO Persona AI의 인간 로봇을 연철 공장에 배치하기 위해 검색함",
-    "original_title": "POSCO seeking to deploy Persona AI's humanoid robots for steelworks - 네이트",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yOTJKNU0tNE1YbmRPclBPXzRLX0pVa3BQenoxdl9WckljcDZkR0JaSXdBQldSTjBlRWVzMDZJSUdqVnNjUU52OGlSaWdiZFlBOEl3VWFlelJpVFVSUEpZaA?oc=5",
-    "date": "2026-02-04 00:51",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "POSCO는 Persona AI의 인간 로봇을 연철 공장에서 사용하여 생산성 향상과 위험 감소를 목표로 하는 계획을 갖고 있습니다. 이 로봇은 철강 제조 공정에서 작업을 자동화하고 안전을 강화할 것입니다."
-  },
-  {
-    "title": "POSCO 스틸웍스에 Persona AI의 인형 로봇 배치 추진함",
-    "original_title": "POSCO seeking to deploy Persona AI's humanoid robots for steelworks - 네이트",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9EbzZvbDU0MnNQMmdXcXhyT1Nna0d3UmRQYmJEcHlYNWtCTkNNX2pTX1pCaE1hSnQ0bTJtYVhrZGpHZDVRdm03S2xiRjZnNDk4WWpv?oc=5",
-    "date": "2026-02-04 00:51",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "한국제강은 Persona AI의 인형 로봇을 스틸웍스에 배치하려 한다. 이 로봇들은 생산 공정 최적화, 작업자 지원 등 다양한 기능을 수행할 것이다.\n\n(Note: I followed the instruction to translate the title and summarize the content in a concise manner, using formal language and standard Korean transliteration for key terms. The output format is strictly maintained as required.)"
-  },
-  {
-    "title": "Overland AI 투자금 100억달러 확보, 미국 군에 자율주행 기술 확장함",
-    "original_title": "Overland AI raises $100M to scale autonomy with the U.S. armed forces",
-    "link": "https://www.therobotreport.com/overland-ai-raises-100m-scale-autonomy-u-s-armed-forces/",
-    "date": "2026-02-03 21:57",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Overland AI는 이미 미국 육군, 해병대, 특수전사령부 등 다양한 군formation과 협력하여 자율 주행 지상시스템을 제공하고 있습니다."
   }
 ]
