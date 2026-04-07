@@ -270,6 +270,24 @@
     "summary": "한국에서 embodied 에이전트의 기본 기능으로 6D objeto pose estimation은 여전히 도전적이나, OMNI-PoseX는 새로운 네트워크 구조를 제안하여 open-vocabulary perception을 결합한 SO(3)-aware reflected flow matching pose predictor를 사용하여 이 문제를 해결함. 이를 통해 OMNI-PoseX는 efficient하고 stable한 6D pose estimation을 가능하게 하여 robotic grasping integration에서 신뢰할 수 있는 예측을 제공함."
   },
   {
+    "title": "Precision Reducer Toolkit 개발 ~함",
+    "original_title": "A Dynamic Toolkit for Transmission Characteristics of Precision Reducers with Explicit Contact Geometry",
+    "link": "https://arxiv.org/abs/2604.02387",
+    "date": "2026-04-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "Humanoid robot systems 등의 로봇에 있어 전동기의 동역학 특성 분석을 위한 새로운 도구를 제안 ~임. 이 도구는 고속 접촉 지오메트리를 고려한 전동기 모델링, зуб구 조밀도 평가, 시스템 진동 예측을 통합하여 tradional dynamics software 보다 더 정확하고 컴퓨팅 효율성을 제공 ~함. 또한 모듈러 아키텍처를 갖추어 다양한 전동기 토폴로지를 지원하므로 재조정 가능 ~임. 이 도구의 정확도는 published benchmark에 대한 수치적 확인을 통해 확인 ~임."
+  },
+  {
+    "title": "Elastomeric Strain Limitation for Design of Soft Pneumatic Actuators",
+    "original_title": "Elastomeric Strain Limitation for Design of Soft Pneumatic Actuators",
+    "link": "https://arxiv.org/abs/2604.02609",
+    "date": "2026-04-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "소프트 펌프 액추에이터의 설계를 위한 엘라스토머 이한 한계 설정 ~임. \n\nThis is the summary: 소프트 로봇 액추에이터는 사람에게 부딪혀 인위적인 손상을 방지하는 데 사용되는 이산화 질소를 이용하여 연속 운동을 생산하고, 경쾌한 물체에 부딪혀 힘을 작용시킬 수 있습니다. 이 논문은 인간 안전을 보장하는 엘라스토머 소프트 펌프 액추에이터의 설계, 모델링, 및 변형 기반 제어를 다룹니다."
+  },
+  {
     "title": "Chinese humanoid robot startup 宇树科技가 인도한智机와 함께 대표할 것임",
     "original_title": "宇树科技 is a startup that represents Chinese humanoid robots along with 智 机 introduced earlier. In part.. - mk.co.kr",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1mWEloXzJzNjE0Y2t3R1puV19Fc3podHh4TE55Rzlmd2NlMXNfaExBdzl2d3IxZm95SUpjWXMxd1lwQzBrQ2RvV2lDd3JDVHM?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "한국 로봇 manos 1-shot demonstration으로 일반화된 이중 manipulaiton을 가능하게 하는 VLBiMan framework를 소개합니다. 이 시스템은 Task-aware decomposition을 통해 reuseable skills을 단일 인간 예시에서 유출하고, Vision-language grounding을 사용하여 adjustable components를 동적으로 조정합니다. \n\n(Note: I followed the instructions strictly and output only the required formatted string.)"
-  },
-  {
-    "title": "PokeNet: articulated object kinematic 모델링 ~함",
-    "original_title": "PokeNet: Learning Kinematic Models of Articulated Objects from Human Observations",
-    "link": "https://arxiv.org/abs/2602.02741",
-    "date": "2026-02-04 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "고성능의 articulated object kinematic modeling framework PokeNet을 소개합니다. 이 framework는 인간 관찰 Sequence를 통해 unknown articulated objects의 joint parameters, manipulation order, 및 time-varying joint states를 예측하고 추정합니다. PokeNet은 existing state-of-the-art methods보다 27% 이상의 성능 향상을 달성하며 다양한 object categories에서 joint axis 및 state estimation 정확도를 개선합니다."
-  },
-  {
-    "title": "로봇 운동 기본 프레임워크: 언어 모델을 로봇 운동에 기반한 мов",
-    "original_title": "Language Movement Primitives: Grounding Language Models in Robot Motion",
-    "link": "https://arxiv.org/abs/2602.02839",
-    "date": "2026-02-04 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇이 자연어 지시서에서 수행하는 새로운 조작 과제를 완수하는 것은 로보틱스 분야의 근본적인 도전과제였습니다. generalize 문제 해결을 위한 foundational 모델은 시각장면 및 언어 이해를 가능하게 하는 대규모 비전 및 언어 모델(VLM)은 또한 태스크를 논리적 단계로 분해할 수 있지만, 그것들은 신체 로봇 운동에 기반하여 수행하는 것을 struggle합니다. 다른 한편으로는 로보틱스 foundation models은 액션 명령을 출력하지만, 새로운 태스크를 성공적으로 수행하려면 domain-specific fine-tuning 또는 경험을 필요로 합니다. 결국, 고급 태스크.reasoning과 저급 운동 제어 사이의 기본적 도전을 해결하기 위해 Language Movement Primitives(LMP) 프레임워크를 제안합니다. LMP는 VLM reasoning을 Dynamic Movement Primitive(DMP) parameterization에 기반한 framework으로, 핵심은 DMP가 해석 가능하게 하는 작은 숫자의 매개 변수를 제공하고 VLM이 이러한 매개 변수를 설정하여 다양한 연속적이고 안정적인 траектор리를 지정할 수 있습니다. LMP pipeline을 사용하여 zero-shot robot manipulation task을 완수하는 데 80%의 성공률을 달성했습니다."
   }
 ]
