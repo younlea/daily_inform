@@ -387,6 +387,24 @@
     "summary": "autonomous 로봇이 동적 환경에서 작동하려면 전역 경로 최적화와 실시간 반응을 баланс해야 한다. 이러한 요구는 고성비의 전역 계획과 빠른 지역 적응 사이에 있는 기본적인 교환 문제를 해결해야 하는 데 있다. 샘플링 기반 계획자 seperti RRT*는 근옵티마ль 경로를 생산하지만 Perturbation하에서 Struggle하게 되며, SEDS와 같은 동적 시스템 접근은 반응성의 원격이지만 오프라인 데이터-드라이브 최적화를 필요로 한다. 우리는 샘플링 기반 적응 운동 계획(SBAMP)을 발표하는데, 이 프레임워크는 RRT*-based 전역 계획과 온라인 Lyapunov-stable SEDS-inspired 컨트롤러를 결합하는 HYBRID framework다. 이 컨트롤러는 pre-trained 데이터 필요하지 않으며, 가볍한제약 최적화를 제어 회로에 통합하여 SBAMP가 안정적인 실시간 적응을 허용하면서 전역 경로 구조를 보존하게 된다. 시뮬레이션 및 RoboRacer 하드웨어에서 실험이나 다르며, Disturbance recovery, Obstacle handling, Dynamic condition performance의 일관성을 보여준다."
   },
   {
+    "title": "3D-안커드 룩어헤드 플래닝을 위한 지속적 로봇 씬 메모리",
+    "original_title": "3D-Anchored Lookahead Planning for Persistent Robotic Scene Memory via World-Model-Based MCTS",
+    "link": "https://arxiv.org/abs/2604.11302",
+    "date": "2026-04-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "persistent 3D-anchored lookahead planning으로 robotic manipulation의 System 2 reasoning engine를 제안하며, Monte Carlo Tree Search(MCTS)와 3D-consistent world model을 결합하여 rollout oracle로 사용함. 이를 통해 로봇이 직접 관측할 수 없는 물체 위치까지 정확한 replanning을 수행할 수 있으며, spatial memory가 필요한 5-step sequential reach task에서 0.650의 성공률을 기록하는 한편, greedy reactive baseline보다 +0.645의 성능 향상을 보였다."
+  },
+  {
+    "title": "MerNav: Zero-Shot Object Goal Navigation Framework의 고전화 가능성 높은 기억-수행-점검 프레임워크",
+    "original_title": "MerNav: A Highly Generalizable Memory-Execute-Review Framework for Zero-Shot Object Goal Navigation",
+    "link": "https://arxiv.org/abs/2602.05467",
+    "date": "2026-04-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "Memory-Execute-Review 프레임워크를 제안하여 embodied intelligence와 visuual language navigation을 향상시켰습니다. 이 프레임워크는 3개의 모듈로 구성되어 있으며, 고급기억장치, 수행모듈, 평가모듈이 있습니다. 4개의 데이터셋에서 실험한 결과, 이 프레임워크는 Zero-Shot 설정에서 평균 성공률을 7%나 5%나 높였으며, humanoid 로봇에 구현하여 실제 세계 실험을 수행했습니다."
+  },
+  {
     "title": "UNITREE의 $4,370 인공인간 로봇이 AliExpress 상자에 출시됨",
     "original_title": "Unitree's $4,370 Humanoid Robot Hits AliExpress Shelves - The Tech Buzz",
     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZVU3SUc4S1ZPMnBnMkF3RHN3TDNGdXZTd2FqdmVDQ21FbGVGODJUVVpSTUNjWWhXOVdwU1B0NFVNUlBsNmtmendTNl9PSHhxQTNWM0FJa1dENEpORGNKT0pteF9pOVNTdnpibDl4cUZDaVloSkJpNC1UdU1YTFUwQlB6U2lncXRnQTctd2xSa2M?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "Embodied reasoning과 고급 제어에 대한 새로운 접근 방식을 발표함. Steerable Policies는 비전 언어 모델(VLM)와 시각-언어-행동 모델(VLAs)을 결합하여, 다양한 추상 수준의 명령으로 훈련된 low-level 행위를 향상시킴. 이러한 접근 방식은 real-world manipulation 실험에서 우수한 성능을 보임.\n\nNote: I followed the rules strictly and did not add any introductory text or use Markdown formatting for the separator. The Korean title is a direct translation of the English title, and the summary highlights the technical specifications and significance of the new approach in 2-3 concise sentences."
-  },
-  {
-    "title": "올림픽의 주목~함",
-    "original_title": "Buzz of the Olympics: How drone cams deliver high-pace visuals and add a new dynamic for TV viewers",
-    "link": "https://techxplore.com/news/2026-02-olympics-drone-cams-high-pace.html",
-    "date": "2026-02-15 22:30",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "올림픽 DOWNHILL 경주에서 최고 속도 시각을 제공하는 드론 카메라가 TV 관람객에게 새로운 역동성을 추가하고 있다. 드론 카메라는 Cortina DOWNHILL 코스 위에 설치된 탑에서 운영 중으로, 마이크엘라 슈프린과 브리지 존슨과 같은 가장 큰 스키 대회에 참여하고 있는 인물과도 같다."
-  },
-  {
-    "title": "ROBOT SYSTEM ACCURACY 문제시 대응 방안",
-    "original_title": "High-precision robots: What to do when absolute accuracy is poor?",
-    "link": "https://www.therobotreport.com/high-precision-robots-what-to-do-when-absolute-accuracy-is-poor/",
-    "date": "2026-02-15 13:34",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "고성능 로봇의 절대 정확도 개선에 도웜하는 Fraunhofer Institute for Manufacturing Engineering and Automation IPA를 통해 로봇의 абсолют 정확도를 향상하는 작업을 진행하고 있다."
   }
 ]
