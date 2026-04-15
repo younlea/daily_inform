@@ -324,6 +324,24 @@
     "summary": "한국의 3DGS SLAM 알고리즘은 고밀도 맵 생성을 통해 성능 향상을 달성했지만, 정적 환경 가정에 의존하고 동적 환경에서는 성능 저하를 경험하게 된다. GGD-SLAM 프레임워크는 동적 환경에서 지역화와 밀도 매핑을address하기 위해 일반화된 운동 모델을 사용하여 정적으로 설계된 시스템을 개발하였다. 이 시스템은 FIFO 큐를 사용하여 Incoming 프레임을 관리하고, 순차적 주의 메커니즘을 통해 다이나믹 세마닉 기능 추출을 수행하며, 동적 구성 요소를 분리하는 다이나믹 기능 강조를 포함한다. 또한, 동적으로 방해되는 요소의 영향을 최소화하기 위해 occluded 영역을 정적으로 정보 샘플링하여 채우고, 동적 환경에 적합한 구조 유사 지수 측정 손실을 설계하였다. 실제 동적 데이터셋에서 수행된 실험 결과는 GGD-SLAM이 카메라 자세 추정과 밀도 재구성에서 최첨 성능을 달성하는 것을 확인하였다."
   },
   {
+    "title": "RACF: 자율주행차 프레임워크 ~함",
+    "original_title": "RACF: A Resilient Autonomous Car Framework with Object Distance Correction",
+    "link": "https://arxiv.org/abs/2604.12418",
+    "date": "2026-04-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고속과 정밀을 요구하는 자율주행차의 안정적인 인지층은 환경적 손상 및 사이버 물리적 공격으로부터 안전한 운영을 보장하는 것이 중요합니다. RACF(Resilient Autonomous Car Framework)가 이를 달성하는 데 새로운 ODCA(Object Distance Correction Algorithm)를 통합하여 카메라, LiDAR, 물리 기반 계략을 조합합니다. 이 프레임워크에서 카메라의障害물 거리 추정치가 불일치할 때 크로스-센서 게이트가 교정 알고리즘을 활성화하여 detected 불일치를 수정합니다. Quanser QCar 2 플랫폼을 사용한 테스트베드에서 제안된 프레임워크의 성능을 평가했으며, 강도 corruption 하에서도 최대 35% RMSE 감소와 정지 준수 및 브레이킹 늦출리를 향상시켰습니다."
+  },
+  {
+    "title": "Nonholonomic Robot Formation의 상대 자세 추정 ~공개됨",
+    "original_title": "Relative Pose Estimation for Nonholonomic Robot Formation with UWB-IO Measurements (Extended version)",
+    "link": "https://arxiv.org/abs/2411.05481",
+    "date": "2026-04-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "UWB-IO 측정치 사용하여 다기동 로봇 형성을 제어하는 문제를 연구하였다. 일반적으로 각 로봇의 자세와 센서 측정치는 공통 참조 프레임에서 표현해야 하지만, 실제로는 IO 측정치가 개별 로봇의 공통 프레임으로 맞출 수 없다는 제약이 있었다. 이를 해결하기 위해 먼저鄰接 로봇 간 상대 위치 추정을 위한 concurrent-learning 기반 추정기를 제안하고, 다음으로 정보 손실을 고려하여 리더 로봇에 대한 상대 자세 추정을 위한 협력 лок화 알고리즘을 도입하였다. 마지막으로 이론적 결과를 바탕으로 다기동 로봇의 분산 형성 추적 제어기를 제안하였으며, 3D와 2D 실제 실험을 통해 제안된 방법의 효율성을 확인하였다."
+  },
+  {
     "title": "Chinese humanoid robots deployed on assembly lines for precision tasks - China.org",
     "original_title": "Chinese humanoid robots deployed on assembly lines for precision tasks - China.org",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKeEExZklzbVMxMy15UUFrQ2FsYVBMMkY2QTN1dmpycl9mZVRwT0hvOW5QeDVWMmNzQmRCbU80dEE4TWdZVGZ6ajdYa1VkMjdFb2swSWZJQXM2dkR1LTZpc1VkbGw0NFZIZUE?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "IFR는 인공 지능이 로봇 기술을 빠르게 바꾸고 있음을 강조하고, AI가 로봇의 성과를 개선하고 새로운 수준의 생산성과 효율성을 달성할 것임을 예측하고 있습니다."
-  },
-  {
-    "title": "Robot hand 가 인공적 재능을 달성하는 새 방식의 시각-촉감 훈련으로 접근함",
-    "original_title": "Robot hand approaches human-like dexterity with new visual-tactile training",
-    "link": "https://techxplore.com/news/2026-02-robot-approaches-human-dexterity-visual.html",
-    "date": "2026-02-17 19:20",
-    "source": "Tech Xplore",
-    "category": "hand",
-    "summary": "인간 손은 자연의 기적이고 동물계에서 일치할 수 없는 것이나. 이를 따르면 로봇손이 접근하기 어려운 것이다. 이제 과학자들이 로봇 뇌를 훈련하여 로봇손에 인공적 재능을주는 새로운 방식을 개발했음."
-  },
-  {
-    "title": "ARM 인스티튜트",
-    "original_title": "ARM Institute opens project call for military supply chain technology",
-    "link": "https://www.therobotreport.com/arm-institute-opens-project-call-for-military-supply-chain-technology/",
-    "date": "2026-02-17 18:31",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "arm 인스티튜트는 군수급 체인 기술 프로젝트 공모를 열었다. 방어 장관의 사무실은 이 프로젝트에서 arm 인스티튜트와 다른 제조 혁신 інститут들과 함께 일하고 있다."
   }
 ]
