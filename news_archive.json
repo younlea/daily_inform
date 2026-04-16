@@ -108,6 +108,42 @@
     "summary": "로봇의 단일 관점 객체 잡는 문제를 해결하기 위해 새로운 두 단계 프레임워크를 제안합니다. 이 프레임워크에서는 첫 번째 단계에서 입력된 단일 관점 3D點雲을 초각력에 기반한 기본 데이터와 일치시켜 유효하고-diverse 잡 후보를 검색하고, 두 번째 단계에서 end-to-end 네트워크를 사용하여 잡 결성을 위한 지역을 확장하고 지역의 конт스트 관계를 고려하여 더 정확하고 신뢰할 수 있는 잡 평가 및局所 조정을 통해 잡 적응성을 개선합니다."
   },
   {
+    "title": "Vectorizing Projection in Manifold-Constrained Motion Planning for Real-Time Whole-Body Control",
+    "original_title": "Vectorizing Projection in Manifold-Constrained Motion Planning for Real-Time Whole-Body Control",
+    "link": "https://arxiv.org/abs/2604.13323",
+    "date": "2026-04-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "로봇 계획 태스크는 constraint satisfaction을 요구하는 경우가 많다. 이러한 geometric constraint을 만족시키는 manifold-constrained motion planning 알고리즘은 시작과 목표 구성으로 구성된 constraint submanifolds에 대한 경로를 계획할 수 있지만, 복잡한 시스템 such as humanoid robots에서 수十 초까지의 처리 시간이 필요해 pragmaatic하게 사용 불가능하다. 하드웨어 가속화된 motion planningRecent advances를 바탕으로 CPU SIMD-accelerated manifold-constrained motion planner를 제안하여 constraint satisfaction을 projection-based constraint satisfaction을 통해 병렬화하였다. 이 접근 방식은 state-of-the-art method에 비해 100-1000배의 속도 향상을 달성하며, 실제 time constrained motion planning이 가능해졌다. 또한 실제 humanoid robot에서 quasi-static plan generation을 보여주었다. 본 연구는 https://commalab.org/papers/mcvamp/에서 확인할 수 있다."
+  },
+  {
+    "title": "카이로스코프의 슬레인 마이크로봇 개발 ~임",
+    "original_title": "A transformable slender microrobot inspired by nematode parasites for interventional endovascular surgery",
+    "link": "https://arxiv.org/abs/2604.13513",
+    "date": "2026-04-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "Korea's cardiovascular diseases account for approximately 17.9 million deaths annually, posing significant challenges in treatment due to the confined space and complex topology of the vascular network. To overcome this dilemma, a transformable slender magnetic microrobot inspired by nematodes has been developed, featuring great flexibility, locomotion capability, and potential applications in interventional surgery and embolization."
+  },
+  {
+    "title": "Reinforcement Learning with Vision-Language-Action Regularization",
+    "original_title": "Jump-Start Reinforcement Learning with Vision-Language-Action Regularization",
+    "link": "https://arxiv.org/abs/2604.13733",
+    "date": "2026-04-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Sparse Reinforcement Learning 모델이 Robot Manipulation을 위하여 고주파수 제어를 가능하게 하지만, 불완전한 보상 및 inefficient Exploration 문제가 해결되지 않고 있습니다. VLA 모델은 Multimodal Pretraining을 통해 Task-level Reasoning을 제공하지만, Current Limitations로 Fast & Precise Manipulation에서 직렬적으로 사용할 수 없습니다. 이 논문에서는 VLAJS(Vision-Language-Action Jump-Starting) 방법을 제안하는데, 이는 Sparse VLA Guidance를 RL에 적용하여 Exploration Efficiency를 향상하고 Credit Assignment을 개선하는 방식입니다. VLAJS는 PPO(Proximal Policy Optimization)에 Directional Action-consistency Regularization을 추가하여 RL Agent의 액션을 VLA Guidance와 알맞게 조정합니다. 이 접근은 Demonstrations이 필요하지 않으며, Continuous Teacher Queries가 필요하지 않습니다. VLAJS는 6개의 Manipulation Tasks에서 PPO 및 Distillation-style Baselines보다 Sample Efficiency를 향상하는 결과를 나타내었습니다."
+  },
+  {
+    "title": "FCBV-네트워크: 카테고리 수준의 로봇 가armeant 정리 via Feature-Conditioned Bimanual Value Prediction",
+    "original_title": "FCBV-Net: Category-Level Robotic Garment Smoothing via Feature-Conditioned Bimanual Value Prediction",
+    "link": "https://arxiv.org/abs/2508.05153",
+    "date": "2026-04-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "카테고리 수준의 일반화를 위한 로봇 가armeant 조작, 예를 들어 이중 손으로의 정리, 고차원성, 복잡한 역학 및 intra-category 변동에 직면해 있다. 현재 접근 방식은 특정 인스턴스의 시각적 기능을 동시에 배워서 과적합하거나, Category-level 의식 일반화를 통해 비로소 synergistic 이중 손 조작의 가치 예측을 실패하는 경우도 있다. 우리는 FCBV-Net을 제안하고 3D 점云을 기반으로 카테고리 수준의 정책 일반화를 향상시킨다. FCBV-Net은 pre-trained, frozen 고밀도 기하학적 기능에 대한 조건 조작 가치 예측을 통해 intra-category 가armeant 변동에 강건성을 확보하고 trainable 하위 구성 요소가 이러한 정적인 기능을 사용하여 task-specific 정책을 배워낸다. CLOTH3D 데이터셋을 기반으로 PyFlex 환경에서 FCBV-Net은 카테고리 수준의 일반화를 보여주었다. FCBV-Net은 2D 이미지 기반 baseline과 비교하여 96.2%에 해당하는 unseen 가armeant에 대한 효율성 하락률이 11.5%로 매우 낮았다. 3D 대응기반 baseline에서는 identical per-point 기하학적 기능을 사용하지만 고정된 원칙으로 83%의 최종 커버리지지만 FCBV-Net은 89%의 최종 커버리지를 달성했다. 이러한 결과는 기하학적 이해를 이중 손 조작 가치 예측에서 분리하는 것이 카테고리 수준의 일반화를 향상시킨다는 것을 강조해 주었다. 코드, 비디오 및 보조 자료는 다음 웹 사이트에 있는지 확인할 수 있다: https://dabaspark.github.io/fcbvnet/."
+  },
+  {
     "title": "Tencent Robotics X 핵심 멤버가 개발한 Dexterous Hand, 1년 간 5輪의 투자 받음함",
     "original_title": "Seeds | Former Tencent Robotics X Core Member Develops Dexterous Hand, Raises 5 Rounds in One Year - Gasgoo",
     "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOVmNIZ1BwSHRwbHpxQ3ZldXRWM05lMGk0VHZqdzB3cjlvOHlILU1QeXZIbGpLdWJLdGpuUlZlRURocV9VZHFWZXN6d1VUYjB0VzFMY0xYNmxCckVfVVJwRGVEUUZRcExJaEo0azZnd0NBWjRsUWlnYVowYmQzT0VicVdMTm5aTmR0WjB5RFQ3LWZaS3hZUXBRM0hrTXdOWHFYd1hLZm84bDJwTWIwaGpoR055ZXJHN25hOW9OY3M2M2xaRzFkeXFMSDdxNXNsZXdpYVd4Q1U2aU9zME5YVHBzUXIxMDVVRzh4Q0tONmRB?oc=5",
@@ -17962,41 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "한국 소프트 구조의 스냅닝 불안정성은 에너지 효율적 actuatioin을 달성하는 강력한 경로를 제공합니다. 이 연구에서는 주계를 갖는 eccentric dome-shaped snapping actuator를 개발하여 형상誘導 Instability에 의한 비대칭 운동을 생성했습니다. 유한 요소 해석과 실험 결과, 일관된 비대칭 변형 및 압력 특성들이 관찰되었습니다. 이 snapping actuators 4개를 공압 네트워크에 결합하여 Quadrapedal 로봇을 구축하면, 단일 압력 입력으로 좌우로 주파수 의존적인 성능을 발휘하는 wavelike locomotion을 달성할 수 있습니다. 이 로봇은 7.5~Hz에서 최대 72.78mm/s의 속도를 보여주는 성능을 나타냅니다. 이러한 결과는 비대칭 스냅닝 메커니즘을 통한 물리적 제어와 완전히 독립적이고 효율적인 소프트 로봇 시스템 개발에 대한 기반을 마련합니다."
-  },
-  {
-    "title": "Whole-Brain Connectomic Graph Model Enables Whole-Body Locomotion Control in Fruit Fly",
-    "original_title": "Whole-Brain Connectomic Graph Model Enables Whole-Body Locomotion Control in Fruit Fly",
-    "link": "https://arxiv.org/abs/2602.17997",
-    "date": "2026-02-23 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "Drosophila의脑동네그래프 모델을 개발하여 체내 운동제어를 가능하게 함. 이를 통해 다양한 체내운동 제어를 안정적으로 수행하며, 연결도 기반 모델이 다른 모델보다 높은 샘플 효율과 우수한 성능을 보인다."
-  },
-  {
-    "title": "HL-IK: 인간과 같은 역동적 inverse kinematics 프레임워크",
-    "original_title": "HL-IK: A Lightweight Implementation of Human-Like Inverse Kinematics in Humanoid Arms",
-    "link": "https://arxiv.org/abs/2509.20263",
-    "date": "2026-02-23 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "인간처럼 움직이는 로봇을 구현하는 HL-IK 프레임워크를 소개합니다. 이 프레임워크는 기존의 IK 방법보다 더 인간적인 손목과 팔의 움직임을 보여주는 183,000 단계의 시뮬레이션에서 평균적으로 30.6%의 위치 오류와 35.4%의 방향 오류를 줄입니다."
-  },
-  {
-    "title": "Geometric Backstepping Control of Omnidirectional Tiltrotors Incorporating Servo-Rotor Dynamics for Robustness against Sudden Disturbances",
-    "original_title": "Geometric Backstepping Control of Omnidirectional Tiltrotors Incorporating Servo-Rotor Dynamics for Robustness against Sudden Disturbances",
-    "link": "https://arxiv.org/abs/2510.01675",
-    "date": "2026-02-23 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Variable-tilt omnidirectional multirotor의 geometric backstepping 제어를 위한 서보-로터 дина믹스 고려, 급격한 외부 충격에 대한 강건성 확보. 이 제어 알고리즘은 서보 및 로터 дина믹스를 고려하여 변수 틸트 각도에서 나타나는 비선형성을 포함하여 시스템 안정성을 보장함을 증명.\n\n(Note: I followed the rules strictly, using a formal and objective tone, no polite conversational endings, and keeping key technical terms in English. The summary highlights the main points of the paper, focusing on the geometric backstepping controller's ability to handle sudden disturbances.)"
-  },
-  {
-    "title": "Integrated motion control enables sophisticated robot motion",
-    "original_title": "Integrated motion control enables sophisticated robot motion",
-    "link": "https://www.therobotreport.com/integrated-motion-control-enables-sophisticated-robot-motion/",
-    "date": "2026-02-22 13:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "로봇의 정교한 운동을 가능하게 하는 통합運動제어를 비롯해 다양한 작업을 처리할 수 있는 모든 kinds of robots이함."
   }
 ]
