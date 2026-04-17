@@ -450,6 +450,15 @@
     "summary": "한국서태도 불확실성 하에서 컨트롤러의 robust한 확인 ~임. 이를 달성하기 위해 우리는 Hamilton-Jacobi reachable analysis를 활용하여 perception-based controller의 안전하고 성능을 공식적으로 확인 ~함. Prior work들은 approximate reachability method에 기반한 verification algorithm을 제안했지만, 일반적인 controller와 system handling이 제약되거나 overly conservative 분석을 초래 ~럼. In this work, we propose RoVer-CoRe framework for the Robust Verification of Controllers via HJ Reachability. We demonstrate the efficacy of the framework in case studies involving aircraft taxiing and NN-based rover navigation. Code is available at the link in the footnote."
   },
   {
+    "title": "A1: 전자적이고 적합한 비전-언어-행동 모델",
+    "original_title": "A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model",
+    "link": "https://arxiv.org/abs/2604.05672",
+    "date": "2026-04-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "비전-언어-행동(VLA) 모델이 열려있는 세계 로봇 조작의 강력한 패러다임으로-emerged 그러나 실제 배포는 종종 비용 제약으로 인하여 억대-규모 VLM backbone과 iterated diffusion/flow-based action heads의 고주파수와 compute로 인해 실시간 제어는 경상성 가격으로 commodity hardware에서 실행되게 함. A1은 저렴하고 고속인 지능 framework를 설계, manipulation 성공을 포기하지 않고 inference 시간을 낮추는 것을 목표로 함. 이러한 접근 방식은 pretrained VLM이 implicit affordance prior를 제공하여 action generation에 사용할 수 있도록 하는 것이다. 우리는 전체 훈련 스택(훈련 코드, 데이터/데이터 처리 파イ프라인, 중간 체크포인트, 평가 스크립트)을 공개하여 end-to-end reproducibility를 구현하는 데 집중함. A1은 VLM의 optimized pipeline이 아니라 inference pipeline 전반을 대상으로 하여 budget-aware adaptive inference scheme를 제안, backbone과 action head을 동시에 가속화하는 것을 목표로 함. 즉, 우리는 intermediate VLM layer의 action consistency를 모니터링하여 early termination을 triggle하고 Inter-Layer Truncated Flow Matching를 제안, 정확한 액션을 warm-started하는 데 사용할 수 있도록 함. LIBERO, VLABench, Franka, AgiBot와 같은 시뮬레이션 벤치마크에서 A1은 최고 성과를 달성함으로써 inference cost를 단축(eg, flow-matching inference 72% lower per-episode latency for), backbone computation을 76.6% 줄이는 데 성공함. RoboChallenge에서는 A1이 평균 성공률 29.00%를 달성하여 pi0(28.33%), X-VLA (21.33%), RDT-1B (15.00%)와 같은 baseline을 초과했다."
+  },
+  {
     "title": "Tencent Robotics X 핵심 멤버가 개발한 Dexterous Hand, 1년 간 5輪의 투자 받음함",
     "original_title": "Seeds | Former Tencent Robotics X Core Member Develops Dexterous Hand, Raises 5 Rounds in One Year - Gasgoo",
     "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOVmNIZ1BwSHRwbHpxQ3ZldXRWM05lMGk0VHZqdzB3cjlvOHlILU1QeXZIbGpLdWJLdGpuUlZlRURocV9VZHFWZXN6d1VUYjB0VzFMY0xYNmxCckVfVVJwRGVEUUZRcExJaEo0azZnd0NBWjRsUWlnYVowYmQzT0VicVdMTm5aTmR0WjB5RFQ3LWZaS3hZUXBRM0hrTXdOWHFYd1hLZm84bDJwTWIwaGpoR055ZXJHN25hOW9OY3M2M2xaRzFkeXFMSDdxNXNsZXdpYVd4Q1U2aU9zME5YVHBzUXIxMDVVRzh4Q0tONmRB?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "TactEx는 인간과 비슷한 손가락 감각 및 고구암 예측을 위하여 Explainable Multimodal Robotic Interaction Framework를 개발하였다. 이 시스템은 시각, 촉감 및 언어 정보를 통합하여 과제의 성공률 90%를 달성하고 새로운 과제에 일반화하는 등 성과를 나타내었다.\n\nNote: I translated the title and summarized the content according to the given rules. Let me know if you need any further assistance!"
-  },
-  {
-    "title": "Scaling Law of Neural Koopman Operators",
-    "original_title": "Scaling Law of Neural Koopman Operators",
-    "link": "https://arxiv.org/abs/2602.19943",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보틱 시스템의 라인화와 제어를 위한 데이터 주도적 신경망 만 오퍼레이터 이론이 강력한 도구가 되었다. 그러나 이러한 데이터 주도 모델의 성능은 샘플 크기와 모델 차원의 트레이드오프에 따라 fundamentally 좌우되는데, 이러한 관계에 대한 스케일링 로이는 아직 불분명하였다. 이 논문에서는 이러한 challenge를 해결하는 rigorously framework을 도출하여 empirically validated scaling laws를 얻었다. 또한 Koopman 추정 오류의 upper bound를 도출하고 sampling 오류와 projection 오류로 분해하여 정당화하였다. 이를 기반으로 우리는 두 가지 가벼운 정규자에게 신경망 만 오퍼레이터를 소개하였다: 이차분성 손실을 통해 학습된 잠재 특징을 안정화하고 물리적 액추에이션과 일치하는 모델을 ensured. 이를 기반으로 우리는 6개의 로보틱 환경에서 수행한 체계적인 실험 결과를 얻었다. 이러한 결과는 Koopman 동역학을 위한 데이터 수집과 모델 용량 할당의 쉽게 요약할 수 있는 레시피를 제공한다."
   }
 ]
