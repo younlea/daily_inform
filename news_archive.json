@@ -144,6 +144,51 @@
     "summary": "arXiv:2510.27420v3 Announce Type: replace \nAbstract: Multi-embodiment grasping focuses on developing approaches that exhibit generalist behavior across diverse gripper designs. Existing methods often learn the kinematic structure of the robot implicitly and face challenges due to the difficulty of sourcing the required large-scale data. In this work, we present a data-efficient, flow-based, equivariant grasp synthesis architecture that can handle different gripper types with variable degrees of freedom and successfully exploit the underlying kinematic model, deducing all necessary information solely from the gripper and scene geometry. Unlike previous equivariant grasping methods, we translated all modules from the ground up to JAX and provide a model with batching capabilities over scenes, grippers, and grasps, resulting in smoother learning, improved performance and faster inference time. Our dataset encompasses grippers ranging from humanoid hands to parallel yaw grippers and includes 25,000 scenes and 20 million grasps."
   },
   {
+    "title": "Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion",
+    "original_title": "Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion",
+    "link": "https://arxiv.org/abs/2511.14178",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.14178v2 Announce Type: replace \nAbstract: Vision-Language-Action (VLA) models have demonstrated significant potential in real-world robotic manipulation. However, pre-trained VLA policies still suffer from substantial performance degradation during downstream deployment. Although fine-tuning can mitigate this issue, its reliance on costly demonstration collection and intensive computation makes it impractical in real-world settings. In this work, we introduce VLA-Pilot, a plug-and-play inference-time policy steering method for zero-shot deployment of pre-trained VLA without any additional fine-tuning or data collection. We evaluate VLA-Pilot on six real-world downstream manipulation tasks across two distinct robotic embodiments, encompassing both in-distribution and out-of-distribution scenarios. Experimental results demonstrate that VLA-Pilot substantially boosts the success rates of off-the-shelf pre-trained VLA policies, enabling robust zero-shot generalization to diverse tasks and embodiments. Experimental videos and code are available at: https://rip4kobe.github.io/vla-pilot/."
+  },
+  {
+    "title": "Hoi! -- A Multimodal Dataset for Force-Grounded, Cross-View Articulated Manipulation",
+    "original_title": "Hoi! -- A Multimodal Dataset for Force-Grounded, Cross-View Articulated Manipulation",
+    "link": "https://arxiv.org/abs/2512.04884",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.04884v3 Announce Type: replace \nAbstract: We present a dataset for force-grounded, cross-view articulated manipulation that couples what is seen with what is done and what is felt during real human interaction. The dataset contains 3048 sequences across 381 articulated objects in 38 environments. Each object is operated in four embodiments - (i) human hand, (ii) human hand with a wrist-mounted camera, (iii) handheld UMI gripper, and (iv) a custom Hoi! gripper, where the tool embodiment provides end-effector forces and tactile sensing. Our dataset offers a holistic view of interaction understanding from video, enabling researchers to evaluate how well methods transfer between human and robotic viewpoints, but also investigate underexplored modalities such as interaction forces. The Project Website can be found at https://timengelbracht.github.io/Hoi-Dataset-Website/."
+  },
+  {
+    "title": "Humanoid Factors: Design Principles for AI Humanoids in Human Worlds",
+    "original_title": "Humanoid Factors: Design Principles for AI Humanoids in Human Worlds",
+    "link": "https://arxiv.org/abs/2602.10069",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2602.10069v2 Announce Type: replace \nAbstract: Human factors research has long focused on optimizing environments, tools, and systems to account for human performance. Yet, as humanoid robots begin to share our workplaces, homes, and public spaces, the design challenge expands. We must now consider not only factors for humans but also factors for humanoids, since both will coexist and interact within the same environments. Unlike conventional machines, humanoids introduce expectations of human-like behavior, communication, and social presence, which reshape usability, trust, and safety considerations. In this article, we introduce the concept of humanoid factors as a framework structured around four pillars - physical, cognitive, social, and ethical - that shape the development of humanoids to help them effectively coexist and collaborate with humans. This framework characterizes the overlap and divergence between human capabilities and those of general-purpose humanoids powered by AI foundation models. To demonstrate our framework's practical utility, we then apply the framework to evaluate a real-world humanoid control algorithm, illustrating how conventional task completion metrics in robotics overlook key human cognitive and interaction principles. We thus position humanoid factors as a foundational framework for designing, evaluating, and governing sustained human-humanoid coexistence."
+  },
+  {
+    "title": "Trajectory-based actuator identification via differentiable simulation",
+    "original_title": "Trajectory-based actuator identification via differentiable simulation",
+    "link": "https://arxiv.org/abs/2604.10351",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2604.10351v2 Announce Type: replace \nAbstract: Accurate actuation models are critical for bridging the gap between simulation and real robot behavior, yet obtaining high-fidelity actuator dynamics typically requires dedicated test stands and torque sensing. We present a trajectory-based actuator identification method that uses differentiable simulation to fit system-level actuator models from encoder motion alone. Identification is posed as a trajectory-matching problem: given commanded joint positions and measured joint angles and velocities, we optimize actuator and simulator parameters by backpropagating through the simulator, without torque sensors, current/voltage measurements, or access to embedded motor-control internals. The framework supports multiple model classes, ranging from compact structured parameterizations to neural actuator mappings, within a unified optimization pipeline. On held-out real-robot trajectories for a high-gear-ratio actuator with an embedded PD controller, the proposed torque-sensor-free identification achieves much tighter trajectory alignment than a supervised stand-trained baseline dominated by steady-state data, reducing mean absolute position error from 14.20 mrad to as low as 7.54 mrad (1.88 times). Finally, we demonstrate downstream impact for the same actuator class in a real-robot locomotion study: training policies with the refined actuator model increases travel distance by 46% and reduces rotational deviation by 75% relative to the baseline."
+  },
+  {
+    "title": "Learning to Plan, Planning to Learn: Adaptive Hierarchical RL-MPC for Sample-Efficient Decision Making",
+    "original_title": "Learning to Plan, Planning to Learn: Adaptive Hierarchical RL-MPC for Sample-Efficient Decision Making",
+    "link": "https://arxiv.org/abs/2512.17091",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.17091v2 Announce Type: replace-cross \nAbstract: We propose a new approach for solving planning problems with a hierarchical structure, fusing reinforcement learning and MPC planning. Our formulation tightly and elegantly couples the two planning paradigms. It leverages reinforcement learning actions to inform the MPPI sampler, and adaptively aggregates MPPI samples to inform the value estimation. The resulting adaptive process leverages further MPPI exploration where value estimates are uncertain, and improves training robustness and the overall resulting policies. This results in a robust planning approach that can handle complex planning problems and easily adapts to different applications, as demonstrated over several domains, including race driving, modified Acrobot, and Lunar Lander with added obstacles. Our results in these domains show better data efficiency and overall performance in terms of both rewards and task success, with up to a 72% increase in success rate compared to existing approaches, as well as accelerated convergence (x2.1) compared to non-adaptive sampling."
+  },
+  {
     "title": "Unitree starts selling cheapest humanoid robot from US$6,800 - VnExpress International",
     "original_title": "Unitree starts selling cheapest humanoid robot from US$6,800 - VnExpress International",
     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUkJaRnRjWE05QS01UXFWWEstczBFMTdtR0t2OW1kNTI1Uk1xbERJQmxLdHlFSl84UVFzd1VDU2p5ZVlLU2hscklTaXhOSENIZDRUM0pfRTQwbVVJM21QZDRmTEsyV1ByNTNlOVNobmF6TDZGVkhJYWtaUjIteFk2UGdHeWRUNmtsNDJkbUloaUx1SXcxOHdVNHhoR2NFOWRjVjRRN1F6MGp5cDIwV1UyMC1BNXk5MU1Bc01Z?oc=5",
@@ -17953,50 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로보큐레이트는 비디오 생성 모델에 의해 생성된 합성 데이터를 처리하여 로봇 러닝 성능을 향상하는 새로운 프레임워크다. 이 프레임워크는 시뮬레이터에서 예측된 행동을 재플레이하고 실제 비디오와의 일관성을 측정하여 행동 품질을 평가한다. 또한, 우리는 관찰 다양성을 가능하게 하는 이미지-이미지 편집 및行動보존 비디오-비디오 전송을 통해 데이터를 추가적으로 강화한다.实验 결과로, 로보큐레이트가 생성한 데이터는 실제 데이터만 사용할 때보다 성과율이 70.1% 향상되었으며 dexMimicGen에서 16.1%, ALLEX 인간 로봇의 Manipulation에서 179.9% 향상되었다."
-  },
-  {
-    "title": "food waste sorting robot benchmarking framework 발표됨",
-    "original_title": "GRAB: A Systematic Real-World Grasping Benchmark for Robotic Food Waste Sorting",
-    "link": "https://arxiv.org/abs/2602.18835",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "food waste management에 있어 robots의 grasping 기능을 평가하는 새로운 frameworks one of which is GRAB, which integrates deformable objects and grasp-pose-estimation vision to establish a set of critical graspability metrics. This large-scale evaluation reveals distinct gripper strengths and limitations, with object quality emerging as the dominant performance factor in cluttered environments."
-  },
-  {
-    "title": "드론~관성 물성 디자인으로 공정 항상물 상호작용",
-    "original_title": "Bumper Drone: Elastic Morphology Design for Aerial Physical Interaction",
-    "link": "https://arxiv.org/abs/2602.18976",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Aerial robots are evolving from avoiding obstacles to exploiting environmental contact interactions for navigation, exploration and manipulation. We presented a drone platform with elastic horns that enables touch-and-go maneuvers - a self-regulated, consecutive bumping motion that allows the drone to maintain proximity to a wall without relying on active obstacle avoidance. The platform equipped with elastic horns demonstrated stable, sustained contact with static objects, relying on a standard attitude PID controller."
-  },
-  {
-    "title": "FruitTouch: A Perceptive Gripper",
-    "original_title": "FruitTouch: A Perceptive Gripper for Gentle and Scalable Fruit Harvesting",
-    "link": "https://arxiv.org/abs/2602.18991",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "과제수확 Automation을 위한 FruitTouch, 고해상도 비전 기반 촉촉식 감지기 구현\n\nSummary:\n과제수확 Automation에서 sensorized gripper는 Compactness,稳定한 그립, 및 과제 상태 정보 제공이 요구되는 Key Component. 이를 해결하기 위해 Compact gripper를 제안, 다양한 과제 크기에 적응하여 Low cost, mechanic simplicity를 유지. Embedded camera로 captured tactile images는 Real-time force estimation, slip detection, softness prediction을 위한 Rich information을 제공.\n\nNote: The title is translated to Korean in a natural and professional style, following the instruction's tone and style. The summary is concise and highlights the key technical specifications of the FruitTouch gripper, focusing on its compactness, stability, and ability to provide reliable feedback on fruit conditions."
-  },
-  {
-    "title": "Neuro-Symbolic Methods that Outperform VLAs on Long-Horizon Manipulation Tasks with Lower Energy Consumption",
-    "original_title": "The Price Is Not Right: Neuro-Symbolic Methods Outperform VLAs on Structured Long-Horizon Manipulation Tasks with Significantly Lower Energy Consumption",
-    "link": "https://arxiv.org/abs/2602.19260",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Neuro-symbolic 방법이 에너지 소비가 낮은 LONG-HORIZON MANIPULATION TASKS에서 VLA를 초과하는 성능을 보였다. 이 연구에서는 VLA 모델과 neuro-symbolic 구조의 비교 평가를 수행하여 3-block task에서 95%의 성공률을 달성하고, 4-block variant에서도 78%의 성공률을 달성했으며, 학습 및 실행期间 에너지 소비가 두 배 이상 감소했다."
-  },
-  {
-    "title": "3D 형상 제어를 위한 연장형 다절 연속 로봇의 시각 서비스",
-    "original_title": "3D Shape Control of Extensible Multi-Section Soft Continuum Robots via Visual Servoing",
-    "link": "https://arxiv.org/abs/2602.19273",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "연장형 다절 연속 로봇의 3D 형상을 제어하는 새로운 비전 기반 제어 알고리즘을 제안합니다. 기존의 비전 기반 제어 알고리즘은 로봇의 끝 손가락 자세를 제어하지만, proposed control algorithm는 로봇의 전체 body configuration을 제어하여 kinematic redundancy를 활용할 수 있습니다. 또한, 2.5D 형상 시각 서비스는 로봇의 3D workspace에서_globally stable asymptotic convergence를 제공합니다."
   }
 ]
