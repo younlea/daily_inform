@@ -1,5 +1,86 @@
 [
   {
+    "title": "CART: Context-Aware Terrain Adaptation using Temporal Sequence Selection for Legged Robots",
+    "original_title": "CART: Context-Aware Terrain Adaptation using Temporal Sequence Selection for Legged Robots",
+    "link": "https://arxiv.org/abs/2604.14344",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2604.14344v1 Announce Type: new \nAbstract: Animals in nature combine multiple modalities, such as sight and feel, to perceive terrain and develop an understanding of how to walk on uneven terrain in a stable manner. Similarly, legged robots need to develop their ability to stably walk on complex terrains by developing an understanding of the relationship between vision and proprioception. Most current terrain adaptation methods are susceptible to failure on complex, off-road terrain as they rely on prior experience, particularly observations from a vision sensor. This experience-based learning often creates a Visual-Texture Paradox between what has been seen and how it actually feels. In this work, we introduce CART, a high-level controller built on a context-aware terrain adaptation approach that integrates proprioception and exteroception from onboard sensing to achieve a robust understanding of terrain. We evaluate our method on multiple terrains using an ANYmal-C robot on the IsaacSim simulator and a Boston Dynamics SPOT robot for our real-world experiments. To evaluate the learned contextual terrain properties, we adapt vibrational stability on the base of the robot as a metric. We compare CART with various state-of-the-art baselines equipped with multimodal sensing in both simulation and the real world. CART achieves an average success rate improvement of 5% over all baselines in simulation and improves the overall stability up to 45% and 24% in the real world without increasing the time taken by the robot to accomplish locomotion tasks."
+  },
+  {
+    "title": "BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps",
+    "original_title": "BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps",
+    "link": "https://arxiv.org/abs/2604.14421",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2604.14421v1 Announce Type: new \nAbstract: Reliable odometry is essential for mobile robots as they increasingly enter more challenging environments, which often contain little information to constrain point cloud registration, resulting in degraded LiDAR-Inertial Odometry (LIO) accuracy or even divergence. To address this, we present BIEVR-LIO, a novel approach designed specifically to exploit subtle variations in the available geometry for improved robustness. We propose a high-resolution map representation that stores surfaces as compact voxel-wise oriented height images. This representation can directly be used for registration without the calculation of intermediate geometric primitives while still supporting efficient updates. Since informative geometry is often sparsely distributed in the environment, we further propose a map-informed point sampling strategy to focus registration on geometrically informative regions, improving robustness in uninformative environments while reducing computational cost compared to global high-resolution sampling. Experiments across multiple sensors, platforms, and environments demonstrates state-of-the-art performance in well-constrained scenes and substantial improvements in challenging scenarios where baseline methods diverge. Additionally, we demonstrate that the fine-grained geometry captured by BIEVR-LIO can be used for downstream tasks such as elevation mapping for robot locomotion."
+  },
+  {
+    "title": "Model-Based Reinforcement Learning Exploits Passive Body Dynamics for High-Performance Biped Robot Locomotion",
+    "original_title": "Model-Based Reinforcement Learning Exploits Passive Body Dynamics for High-Performance Biped Robot Locomotion",
+    "link": "https://arxiv.org/abs/2604.14565",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2604.14565v1 Announce Type: new \nAbstract: Embodiment is a significant keyword in recent machine learning fields. This study focused on the passive nature of the body of a biped robot to generate walking and running locomotion using model-based deep reinforcement learning. We constructed two models in a simulator, one with passive elements (e.g., springs) and the other, which is similar to general humanoids, without passive elements. The training of the model with passive elements was highly affected by the attractor of the system. This lead that although the trajectories quickly converged to limit cycles, it took a long time to obtain large rewards. However, thanks to the attractor-driven learning, the acquired locomotion was robust and energy-efficient. The results revealed that robots with passive elements could efficiently acquire high-performance locomotion by utilizing stable limit cycles generated through dynamic interaction between the body and ground. This study demonstrates the importance of implementing passive properties in the body for future embodied AI."
+  },
+  {
+    "title": "Differentiable Object Pose Connectivity Metrics for Regrasp Sequence Optimization",
+    "original_title": "Differentiable Object Pose Connectivity Metrics for Regrasp Sequence Optimization",
+    "link": "https://arxiv.org/abs/2604.14733",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.14733v1 Announce Type: new \nAbstract: Regrasp planning is often required when one pick-and-place cannot transfer an object from an initial pose to a goal pose while maintaining grasp feasibility. The main challenge is to reason about shared-grasp connectivity across intermediate poses, where discrete search becomes brittle. We propose an implicit multi-step regrasp planning framework based on differentiable pose sequence connectivity metrics. We model grasp feasibility under an object pose using an Energy-Based Model (EBM) and leverage energy additivity to construct a continuous energy landscape that measures pose-pair connectivity, enabling gradient-based optimization of intermediate object poses. An adaptive iterative deepening strategy is introduced to determine the minimum number of intermediate steps automatically. Experiments show that the proposed cost formulation provides smooth and informative gradients, improving planning robustness over other alternatives. They also demonstrate generalization to unseen grasp poses and cross-end-effector transfer, where a model trained with suction constraints can guide parallel gripper grasp manipulation. The multi-step planning results further highlight the effectiveness of adaptive deepening and minimum-step search."
+  },
+  {
+    "title": "Switch: Learning Agile Skills Switching for Humanoid Robots",
+    "original_title": "Switch: Learning Agile Skills Switching for Humanoid Robots",
+    "link": "https://arxiv.org/abs/2604.14834",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2604.14834v1 Announce Type: new \nAbstract: Recent advancements in whole-body control through deep reinforcement learning have enabled humanoid robots to achieve remarkable progress in real-world chal lenging locomotion skills. However, existing approaches often struggle with flexible transitions between distinct skills, cre ating safety concerns and practical limitations. To address this challenge, we introduce a hierarchical multi-skill system, Switch, enabling seamless skill transitions at any moment. Our approach comprises three key components: (1) a Skill Graph (SG) that establishes potential cross-skill transitions based on kinematic similarity within multi-skill motion data, (2) a whole-body tracking policy trained on this skill graph through deep reinforcement learning, and (3) an online skill scheduler to drive the tracking policy for robust skill execution and smooth transitions. For skill switching or significant tracking deviations, the scheduler performs online graph search to find the optimal feasible path, which ensures efficient, stable, and real-time execution of diverse locomotion skills. Comprehensive experiments demonstrate that Switch empowers humanoid to execute agile skill transitions with high success rates while maintaining strong motion imitation performance."
+  },
+  {
+    "title": "HRDexDB: A Large-Scale Dataset of Dexterous Human and Robotic Hand Grasps",
+    "original_title": "HRDexDB: A Large-Scale Dataset of Dexterous Human and Robotic Hand Grasps",
+    "link": "https://arxiv.org/abs/2604.14944",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.14944v1 Announce Type: new \nAbstract: We present HRDexDB, a large-scale, multi-modal dataset of high-fidelity dexterous grasping sequences featuring both human and diverse robotic hands. Unlike existing datasets, HRDexDB provides a comprehensive collection of grasping trajectories across human hands and multiple robot hand embodiments, spanning 100 diverse objects. Leveraging state-of-the-art vision methods and a new dedicated multi-camera system, our HRDexDB offers high-precision spatiotemporal 3D ground-truth motion for both the agent and the manipulated object. To facilitate the study of physical interaction, HRDexDB includes high-resolution tactile signals, synchronized multi-view video, and egocentric video streams. The dataset comprises 1.4K grasping trials, encompassing both successes and failures, each enriched with visual, kinematic, and tactile modalities. By providing closely aligned captures of human dexterity and robotic execution on the same target objects under comparable grasping motions, HRDexDB serves as a foundational benchmark for multi-modal policy learning and cross-domain dexterous manipulation."
+  },
+  {
+    "title": "DEX-Mouse: A Low-cost Portable and Universal Interface with Force Feedback for Data Collection of Dexterous Robotic Hands",
+    "original_title": "DEX-Mouse: A Low-cost Portable and Universal Interface with Force Feedback for Data Collection of Dexterous Robotic Hands",
+    "link": "https://arxiv.org/abs/2604.15013",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.15013v1 Announce Type: new \nAbstract: Data-driven dexterous hand manipulation requires large-scale, physically consistent demonstration data. Simulation and video-based methods suffer from sim-to-real gaps and retargeting problems, while MoCap glove-based teleoperation systems require per-operator calibration and lack portability, as the robot hand is typically fixed to a stationary arm. Portable alternatives improve mobility but lack cross-platform and cross-operator compatibility. We present DEX-Mouse, a portable, calibration-free hand-held teleoperation interface with integrated kinesthetic force feedback, built from commercial off-the-shelf components under USD 150. The operator-agnostic design requires no calibration or structural modification, enabling immediate deployment across diverse environments and platforms. The interface supports a configuration in which the target robot hand is mounted directly on the forearm of an operator, producing robot-aligned data. In a comparative user study across various dexterous manipulation tasks, operators using the proposed system achieved an 86.67% task completion rate under the attached configuration. Also, we found that the attached configuration reduced the perceived workload of the operators compared to spatially separated teleoperation setups across all compared interfaces. The complete hardware and software stack, including bill of materials, CAD models, and firmware, is open-sourced at https://dex-mouse.github.io/ to facilitate replication and adoption."
+  },
+  {
+    "title": "DockAnywhere: Data-Efficient Visuomotor Policy Learning for Mobile Manipulation via Novel Demonstration Generation",
+    "original_title": "DockAnywhere: Data-Efficient Visuomotor Policy Learning for Mobile Manipulation via Novel Demonstration Generation",
+    "link": "https://arxiv.org/abs/2604.15023",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.15023v1 Announce Type: new \nAbstract: Mobile manipulation is a fundamental capability that enables robots to interact in expansive environments such as homes and factories. Most existing approaches follow a two-stage paradigm, where the robot first navigates to a docking point and then performs fixed-base manipulation using powerful visuomotor policies. However, real-world mobile manipulation often suffers from the view generalization problem due to shifts of docking points. To address this issue, we propose a novel low-cost demonstration generation framework named DockAnywhere, which improves viewpoint generalization under docking variability by lifting a single demonstration to diverse feasible docking configurations. Specifically, DockAnywhere lifts a trajectory to any feasible docking points by decoupling docking-dependent base motions from contact-rich manipulation skills that remain invariant across viewpoints. Feasible docking proposals are sampled under feasibility constraints, and corresponding trajectories are generated via structure-preserving augmentation. Visual observations are synthesized in 3D space by representing the robot and objects as point clouds and applying point-level spatial editing to ensure the consistency of observation and action across viewpoints. Extensive experiments on ManiSkill and real-world platforms demonstrate that DockAnywhere substantially improves policy success rates and easily generalizes to novel viewpoints from unseen docking points during training, significantly enhancing the generalization capability of mobile manipulation policy in real-world deployment."
+  },
+  {
+    "title": "Unitree starts selling cheapest humanoid robot from US$6,800 - VnExpress International",
+    "original_title": "Unitree starts selling cheapest humanoid robot from US$6,800 - VnExpress International",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUkJaRnRjWE05QS01UXFWWEstczBFMTdtR0t2OW1kNTI1Uk1xbERJQmxLdHlFSl84UVFzd1VDU2p5ZVlLU2hscklTaXhOSENIZDRUM0pfRTQwbVVJM21QZDRmTEsyV1ByNTNlOVNobmF6TDZGVkhJYWtaUjIteFk2UGdHeWRUNmtsNDJkbUloaUx1SXcxOHdVNHhoR2NFOWRjVjRRN1F6MGp5cDIwV1UyMC1BNXk5MU1Bc01Z?oc=5",
+    "date": "2026-04-17 03:13",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree starts selling cheapest humanoid robot from US$6,800  VnExpress International"
+  },
+  {
     "title": "AGIBOT 로봇이 전자제조 산업에서 시범 배치됨",
     "original_title": "AGIBOT deploys semi-humanoid robots in electronics manufacturing",
     "link": "https://www.therobotreport.com/agibot-deploys-semi-humanoid-robots-in-electronics-manufacturing/",
@@ -1114,6 +1195,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중국 로보틱스 기업은 4족동물 로봇에 초점을 맞추어 주요 수입원을 확보하고 있는 것으로 나타났다. 이로 인해 2022년 중반기에는 4족동물 로봇 판매가 1.5억 달러를 웃도는 것이 예정이다."
+  },
+  {
+    "title": "Humanoid robots: The race for a trillion-dollar market - Table.Briefings",
+    "original_title": "Humanoid robots: The race for a trillion-dollar market - Table.Briefings",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcXJYcGZ4RzVPTWdDSmpJWTJPa1J2cUVvRklVQXp4NWx2WVBGejdzeXRFM2djY0t0QWRlNEhLQ2l4aDgyd3NsNndtTFY0WUJUelEyQl9aV015cEFmdHQ4M1RrRDFxOXZVVTJwS053TG9ad2YwQ253VHBjN2JDemVsNEFxM1IwWTBwbG5aUW5ORFBWSlRC?oc=5",
+    "date": "2026-04-14 21:47",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Humanoid robots: The race for a trillion-dollar market  Table.Briefings"
   },
   {
     "title": "Boston Dynamics와 Google DeepMind는 Spot을 지능화하기 위해 Gemini를 사용함",
@@ -17908,95 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "한국 로보틱스 연구소에서는 3D 로보트 매니푸레이션이자 일반화를 위해 새로운 프레임워크를 제안하였다. 이 프레임워크는 3-component 구조로 구성되어 있으며, 1) 태스크 분해, 2) VLM fine-tuning for 3D 키포인트 예측, 3) 3D-aware 표현으로 구성된 CLAP(Coarse-to-fine Language-Aligned manipulation Policy)다. 이 프레임워크를 simulation 및 실제 로보트에서 실험한 결과, 일반화 가능성을 향상시켰다. GemBench의 경우, 평균 성공률을 12% 높이는 성과를 보였다. 실제 로보트 실험에서는 10개 시연만으로도 새로운 지침 및 환경에 일반화할 수 있었다."
-  },
-  {
-    "title": "Design, Locomotion, and Control of Amphibious Robots: Recent Advances",
-    "original_title": "Design, Locomotion, and Control of Amphibious Robots: Recent Advances",
-    "link": "https://arxiv.org/abs/2602.19077",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "지상·수면両用 로봇의 설계, 행위 및 제어: 최근 동향"
-  },
-  {
-    "title": "TactiVerse: 소프트 로보틱스에서의 다중 접촉 감지에 있어 단일 점 데이터를 활용한 일반화",
-    "original_title": "TactiVerse: Generalizing Multi-Point Tactile Sensing in Soft Robotics Using Single-Point Data",
-    "link": "https://arxiv.org/abs/2602.19850",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "소프트 로보틱스의 고 Compliance soft 물질의 휨 예측을 실시간으로 수행하는 것은 아직도 큰 도전입니다. 비전 기반의 소프트 탱클 센서가 내부 마커 격퇴 방향을 추적할 수 있지만, 3D 접촉 추정 모델에 의존하여 복잡한 시나리오에서 일반화가 제한됩니다. 이를 해결하기 위해 우리는 TactiVerse를 introduce하고 있습니다. 이는 U-Net 기반 프레임워크로 접촉 조각 추정을 공간적 히트맵 예측 태스크로 형식화합니다. 단일 점 인덴티에 대한 제한된 데이터 세트에서만 훈련된 우리의 구조는 0.0589mm의 평균 절대 오차를 달성하며, 회귀 기반 CNN 기본 모델보다 뛰어납니다. 또한, multi-point 접촉 데이터를 추가하여 센서의 다중 접촉 감지 기능을 향상시킬 수 있습니다. 이 방법으로 복잡한 접촉 조각을 기본 상호 작용에서 추정할 수 있습니다. Ultimately, this methodology significantly streamlines the development of marker-based soft sensors, offering a highly scalable solution for real-world tactile perception."
-  },
-  {
-    "title": "NovaPlan: Zero-Shot Long-Horizon Manipulation via Closed-Loop Video Language Planning",
-    "original_title": "NovaPlan: Zero-Shot Long-Horizon Manipulation via Closed-Loop Video Language Planning",
-    "link": "https://arxiv.org/abs/2602.20119",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇이 장기 태스크를 수행하는 데 필요한 고급 의미 추론과 저급 물리적 상호 작용을 통합하는 새로운 프레임워크 NovaPlan을 발표했습니다. 이_framework은 문학 모델과 비디오 생성 모델을 결합하여_CLOSED-LOOP_VLM와 비디오 계획, 기하적으로 기반된 로봇 실행을 통일합니다."
-  },
-  {
-    "title": "Uncertainty-Aware Rank-One MIMO Q Network Framework for Accelerated Offline Reinforcement Learning",
-    "original_title": "Uncertainty-Aware Rank-One MIMO Q Network Framework for Accelerated Offline Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2602.19917",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "에이프릴 오프라인 강화 학습에서 extrapolation error를Address하는 새로운 프레임워크를 도입하였다. 이 프레임워크는 데이터 불확실성을 quantify하고 이를 훈련 손실에 통합하여, 더 효율적으로 OOD 데이터를 활용할 수 있는 정책을 훈련하게 된다. 또한 Rank-One MIMO 아키텍처를 사용하여 불확실성-aware Q-function을 모델링하며, 이에따라 더 높은 성능을 달성하였다."
-  },
-  {
-    "title": "SafeFlowMatcher: Flow Matching Control Barrier Functions Safe && Fast Planning ~함",
-    "original_title": "SafeFlowMatcher: Safe and Fast Planning using Flow Matching with Control Barrier Functions",
-    "link": "https://arxiv.org/abs/2509.24243",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Planning framework SafeFlowMatcher를 제안, flow matching (FM)과 control barrier functions (CBFs)를 결합하여 실시간 효율성과 보장된 안전성을 달성. 이 프레임워크는 예측-수정 두 단계(ODE step) 간에 FM을 사용하여 후보 경로를 생성하고, CBF-based quadratic program으로 이를 수정하는 방법을 사용. SafeFlowMatcher는 강제 안전성을 취급하여 실행 경로에만 적용하므로, 분포 드리프트와 로컬 트랩 문제를 완화. 또한, maze navigation, locomotion, robot manipulation tasks에서 FM-기반 benchmark보다 빠른,-smoother, safer 경로를 달성."
-  },
-  {
-    "title": "MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation",
-    "original_title": "MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation",
-    "link": "https://arxiv.org/abs/2510.18316",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇을 훈련하는 구현 학습의 효과를 보인 대규모 다diverse한 인간 demonstrators에 의한 모방 학습은 있지만, 이러한 데이터를 수집하는 것은 비용과 시간이 소요되는挑战입니다. 이 문제는 특히 다단계 양손으로 이동식 조종을 포함하는 태스크에서 심각하게 가중치 됩니다. MoMaGen은 이 문제를 해결하기 위해 데이터 생성을 제약 최적화 문제로 형식화하여硬제약(Reachability)과 부드러운 제약(Viewibility while Navigation)을 만족시킴으로써 일반화된 기초를 제공합니다."
-  },
-  {
-    "title": "Neuro-Symbolic Control with Large Language Models for Language-Guided Spatial Tasks",
-    "original_title": "Neuro-Symbolic Control with Large Language Models for Language-Guided Spatial Tasks",
-    "link": "https://arxiv.org/abs/2512.17321",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "LLM을 활용한 언어 조건된 제어에 있어 불안정성, 느린 수렴, 고양된 액션 등 제약으로 인해 직접적인 적용이 제한되는 문제를 해결하기 위해 neuro-symbolic control framework을 제안하였다. 이 프레임워크에서는 저-Level motion execution과 고Level semantic reasoning을 분리하여 bounded, incremental actions을 수행하고, locally deployed LLM이 symbolic tasks을 해석한다. 이 방법을 planar manipulation setting에서 평가하였으며, Mistral, Phi, LLaMA-3.2 등의 LLM-only control, neural-only control, LLM+DL framework과 비교한 결과 neuro-symbolic integration으로 인해 success rate와 efficiency가 증가하여 평균 단계 감소 70% 이상, 속도 업 8.83x까지 향상되었으며, 언어 모델의 품질에 구애받지 않는다."
-  },
-  {
-    "title": "PalpAid:_MULTIMODAL_PNEUMATIC_TACTILE_SENSOR_ FOR_TISSUE_PLAPATION",
-    "original_title": "PalpAid: Multimodal Pneumatic Tactile Sensor for Tissue Palpation",
-    "link": "https://arxiv.org/abs/2512.19010",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "수술 온코로지에서 조직의 촉감 특성, namely elasticity and stiffness이 경계 tumor 식별에 중요한데, 로봇 보조 수술은 눈으로 의존하는 반면, sensor가 필요. 우리는 PalpAid를 제안하여 로봇 보조 수술에서 촉감을 복구. PalpAid는 마이크로폰과 압력 센서를 탑재, 접촉 힘을 내부 압력 격차로 변환. 압력 센서는 이벤트 감지기로, 음향 신호는 조직 식별에 도움을 준다. 우리는 설계, 제작, 조립을 보여줌, 그리고 특성 테스트를 진행하여 사용, 반복 주기, 로봇 시스템과 통합을 보여줌. 마지막으로, 우리는 3D 프린트 硬체를 varying infills 및 soft ex vivo tissues와 함께 분류할 수 있다고 강조."
-  },
-  {
-    "title": "Scout-로버 협력 : 지상물质 강도 매핑 및 행성유사 탐색을 위한 항진 위험 추정",
-    "original_title": "Scout-Rover cooperation: online terrain strength mapping and traversal risk estimation for planetary-analog explorations",
-    "link": "https://arxiv.org/abs/2602.18688",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "planetary surfaces, the importance of understanding geologic processes. A hybrid team of legged and wheeled robots is proposed to expand safe access to hazardous terrain. A high-mobility legged robot serves as a mobile scout, estimating regolith strength through proprioceptive interactions during locomotion and constructing spatially resolved terrain maps. These maps are integrated with rover locomotion models to estimate traversal risk and inform path planning. The framework is validated through analogue missions at the NASA Ames Lunar Simulant Testbed and the White Sands Dune Field, demonstrating online terrain strength mapping and rover-specific traversal-risk estimation for safe navigation."
-  },
-  {
-    "title": "TactEx: multimodal robotic interaction framework ~함",
-    "original_title": "TactEx: An Explainable Multimodal Robotic Interaction Framework for Human-Like Touch and Hardness Estimation",
-    "link": "https://arxiv.org/abs/2602.18967",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "TactEx는 인간과 비슷한 손가락 감각 및 고구암 예측을 위하여 Explainable Multimodal Robotic Interaction Framework를 개발하였다. 이 시스템은 시각, 촉감 및 언어 정보를 통합하여 과제의 성공률 90%를 달성하고 새로운 과제에 일반화하는 등 성과를 나타내었다.\n\nNote: I translated the title and summarized the content according to the given rules. Let me know if you need any further assistance!"
   }
 ]
