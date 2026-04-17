@@ -72,6 +72,78 @@
     "summary": "arXiv:2604.15023v1 Announce Type: new \nAbstract: Mobile manipulation is a fundamental capability that enables robots to interact in expansive environments such as homes and factories. Most existing approaches follow a two-stage paradigm, where the robot first navigates to a docking point and then performs fixed-base manipulation using powerful visuomotor policies. However, real-world mobile manipulation often suffers from the view generalization problem due to shifts of docking points. To address this issue, we propose a novel low-cost demonstration generation framework named DockAnywhere, which improves viewpoint generalization under docking variability by lifting a single demonstration to diverse feasible docking configurations. Specifically, DockAnywhere lifts a trajectory to any feasible docking points by decoupling docking-dependent base motions from contact-rich manipulation skills that remain invariant across viewpoints. Feasible docking proposals are sampled under feasibility constraints, and corresponding trajectories are generated via structure-preserving augmentation. Visual observations are synthesized in 3D space by representing the robot and objects as point clouds and applying point-level spatial editing to ensure the consistency of observation and action across viewpoints. Extensive experiments on ManiSkill and real-world platforms demonstrate that DockAnywhere substantially improves policy success rates and easily generalizes to novel viewpoints from unseen docking points during training, significantly enhancing the generalization capability of mobile manipulation policy in real-world deployment."
   },
   {
+    "title": "CAVERS: Multimodal SLAM Data from a Natural Karstic Cave with Ground Truth Motion Capture",
+    "original_title": "CAVERS: Multimodal SLAM Data from a Natural Karstic Cave with Ground Truth Motion Capture",
+    "link": "https://arxiv.org/abs/2604.15052",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.15052v1 Announce Type: new \nAbstract: Autonomous robots operating in natural karstic caves face perception and navigation challenges that are qualitatively distinct from those encountered in mines or tunnels: irregular geometry, reflective wet surfaces, near-zero ambient light, and complex branching passages. Yet publicly available datasets targeting this environment remain scarce and offer limited sensing modalities and environmental diversity. We present CAVERS, a multimodal dataset acquired in two structurally distinct rooms of Cueva de la Victoria, M\\'alaga, Spain, comprising 24 sequences totaling approximately 335 GB of recorded data. The sensor suite combines an Intel RealSense D435i RGB-D-I camera, an Optris PI640i near-IR thermal camera, and a Velodyne VLP-16 LiDAR, operated both handheld and mounted on a wheeled rover under full darkness and artificial illumination. For most of the sequences, mm-accurate 6-DoF ground truth pose and velocity at 120 Hz are provided by an Optirack motion capture system installed directly inside the cave. We benchmark seven state-of-the-art SLAM and odometry algorithms spanning visual, visual-inertial, thermal-inertial, and LiDAR-based pipelines, as well as a 3D reconstruction pipeline, demonstrating the dataset's usability. %The dataset and all supplementary material are publicly available at: https://github.com/spaceuma/cavers."
+  },
+  {
+    "title": "A Hierarchical Spatiotemporal Action Tokenizer for In-Context Imitation Learning in Robotics",
+    "original_title": "A Hierarchical Spatiotemporal Action Tokenizer for In-Context Imitation Learning in Robotics",
+    "link": "https://arxiv.org/abs/2604.15215",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.15215v1 Announce Type: new \nAbstract: We present a novel hierarchical spatiotemporal action tokenizer for in-context imitation learning. We first propose a hierarchical approach, which consists of two successive levels of vector quantization. In particular, the lower level assigns input actions to fine-grained subclusters, while the higher level further maps fine-grained subclusters to clusters. Our hierarchical approach outperforms the non-hierarchical counterpart, while mainly exploiting spatial information by reconstructing input actions. Furthermore, we extend our approach by utilizing both spatial and temporal cues, forming a hierarchical spatiotemporal action tokenizer, namely HiST-AT. Specifically, our hierarchical spatiotemporal approach conducts multi-level clustering, while simultaneously recovering input actions and their associated timestamps. Finally, extensive evaluations on multiple simulation and real robotic manipulation benchmarks show that our approach establishes a new state-of-the-art performance in in-context imitation learning."
+  },
+  {
+    "title": "R3D: Revisiting 3D Policy Learning",
+    "original_title": "R3D: Revisiting 3D Policy Learning",
+    "link": "https://arxiv.org/abs/2604.15281",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.15281v1 Announce Type: cross \nAbstract: 3D policy learning promises superior generalization and cross-embodiment transfer, but progress has been hindered by training instabilities and severe overfitting, precluding the adoption of powerful 3D perception models. In this work, we systematically diagnose these failures, identifying the omission of 3D data augmentation and the adverse effects of Batch Normalization as primary causes. We propose a new architecture coupling a scalable transformer-based 3D encoder with a diffusion decoder, engineered specifically for stability at scale and designed to leverage large-scale pre-training. Our approach significantly outperforms state-of-the-art 3D baselines on challenging manipulation benchmarks, establishing a new and robust foundation for scalable 3D imitation learning. Project Page: https://r3d-policy.github.io/"
+  },
+  {
+    "title": "A Robust Approach for LiDAR-Inertial Odometry Without Sensor-Specific Modeling",
+    "original_title": "A Robust Approach for LiDAR-Inertial Odometry Without Sensor-Specific Modeling",
+    "link": "https://arxiv.org/abs/2509.06593",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2509.06593v2 Announce Type: replace \nAbstract: Accurate odometry is a critical component in a robotic navigation stack, and subsequent modules such as planning and control often rely on an estimate of the robot's motion. Sensor-based odometry approaches should be robust across sensor types and deployable in different target domains, from solid-state LiDARs mounted on cars in urban-driving scenarios to spinning LiDARs on handheld packages used in unstructured natural environments. In this paper, we propose a robust LiDAR-inertial odometry system that does not rely on sensor-specific modeling. Sensor fusion techniques for LiDAR and inertial measurement unit (IMU) data typically integrate IMU data iteratively in a Kalman filter or use pre-integration in a factor graph framework, combined with LiDAR scan matching often exploiting some form of feature extraction. We propose an alternative strategy that only requires a simplified motion model for IMU integration and directly registers LiDAR scans in a scan-to-map approach. Our approach allows us to impose a novel regularization on the LiDAR registration, improving the overall odometry performance. We detail extensive experiments on a number of datasets covering a wide array of commonly used robotic sensors and platforms. We show that our approach works with the exact same configuration in all these scenarios, demonstrating its robustness. We have open-sourced our implementation so that the community can build further on our work and use it in their navigation stacks."
+  },
+  {
+    "title": "Multi-Modal Manipulation via Multi-Modal Policy Consensus",
+    "original_title": "Multi-Modal Manipulation via Multi-Modal Policy Consensus",
+    "link": "https://arxiv.org/abs/2509.23468",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2509.23468v3 Announce Type: replace \nAbstract: Effectively integrating diverse sensory modalities is crucial for robotic manipulation. However, the typical approach of feature concatenation is often suboptimal: dominant modalities such as vision can overwhelm sparse but critical signals like touch in contact-rich tasks, and monolithic architectures cannot flexibly incorporate new or missing modalities without retraining. Our method factorizes the policy into a set of diffusion models, each specialized for a single representation (e.g., vision or touch), and employs a router network that learns consensus weights to adaptively combine their contributions, enabling incremental of new representations. We evaluate our approach on simulated manipulation tasks in {RLBench}, as well as real-world tasks such as occluded object picking, in-hand spoon reorientation, and puzzle insertion, where it significantly outperforms feature-concatenation baselines on scenarios requiring multimodal reasoning. Our policy further demonstrates robustness to physical perturbations and sensor corruption. We further conduct perturbation-based importance analysis, which reveals adaptive shifts between modalities."
+  },
+  {
+    "title": "AFFORD2ACT: Affordance-Guided Automatic Keypoint Selection for Generalizable and Lightweight Robotic Manipulation",
+    "original_title": "AFFORD2ACT: Affordance-Guided Automatic Keypoint Selection for Generalizable and Lightweight Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2510.01433",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.01433v2 Announce Type: replace \nAbstract: Vision-based robot learning often relies on dense image or point-cloud inputs, which are computationally heavy and entangle irrelevant background features. Existing keypoint-based approaches can focus on manipulation-centric features and be lightweight, but either depend on manual heuristics or task-coupled selection, limiting scalability and semantic understanding. To address this, we propose AFFORD2ACT, an affordance-guided framework that distills a minimal set of semantic 2D keypoints from a text prompt and a single image. AFFORD2ACT follows a three-stage pipeline: affordance filtering, category-level keypoint construction, and transformer-based policy learning with embedded gating to reason about the most relevant keypoints, yielding a compact 38-dimensional state policy that can be trained in 15 minutes, which performs well in real-time without proprioception or dense representations. Across diverse real-world manipulation tasks, AFFORD2ACT consistently improves data efficiency, achieving an 82% success rate on unseen objects, novel categories, backgrounds, and distractors."
+  },
+  {
+    "title": "Flow with the Force Field: Learning 3D Compliant Flow Matching Policies from Force and Demonstration-Guided Simulation Data",
+    "original_title": "Flow with the Force Field: Learning 3D Compliant Flow Matching Policies from Force and Demonstration-Guided Simulation Data",
+    "link": "https://arxiv.org/abs/2510.02738",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.02738v3 Announce Type: replace \nAbstract: While visuomotor policy has made advancements in recent years, contact-rich tasks still remain a challenge. Robotic manipulation tasks that require continuous contact demand explicit handling of compliance and force. However, most visuomotor policies ignore compliance, overlooking the importance of physical interaction with the real world, often leading to excessive contact forces or fragile behavior under uncertainty. Introducing force information into vision-based imitation learning could help improve awareness of contacts, but could also require a lot of data to perform well. One remedy for data scarcity is to generate data in simulation, yet computationally taxing processes are required to generate data good enough not to suffer from the Sim2Real gap. In this work, we introduce a framework for generating force-informed data in simulation, instantiated by a single human demonstration, and show how coupling with a compliant policy improves the performance of a visuomotor policy learned from synthetic data. We validate our approach on real-robot tasks, including non-prehensile block flipping and a bi-manual object moving, where the learned policy exhibits reliable contact maintenance and adaptation to novel conditions. Project Website: https://flow-with-the-force-field.github.io/webpage/"
+  },
+  {
+    "title": "Towards a Multi-Embodied Grasping Agent",
+    "original_title": "Towards a Multi-Embodied Grasping Agent",
+    "link": "https://arxiv.org/abs/2510.27420",
+    "date": "2026-04-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.27420v3 Announce Type: replace \nAbstract: Multi-embodiment grasping focuses on developing approaches that exhibit generalist behavior across diverse gripper designs. Existing methods often learn the kinematic structure of the robot implicitly and face challenges due to the difficulty of sourcing the required large-scale data. In this work, we present a data-efficient, flow-based, equivariant grasp synthesis architecture that can handle different gripper types with variable degrees of freedom and successfully exploit the underlying kinematic model, deducing all necessary information solely from the gripper and scene geometry. Unlike previous equivariant grasping methods, we translated all modules from the ground up to JAX and provide a model with batching capabilities over scenes, grippers, and grasps, resulting in smoother learning, improved performance and faster inference time. Our dataset encompasses grippers ranging from humanoid hands to parallel yaw grippers and includes 25,000 scenes and 20 million grasps."
+  },
+  {
     "title": "Unitree starts selling cheapest humanoid robot from US$6,800 - VnExpress International",
     "original_title": "Unitree starts selling cheapest humanoid robot from US$6,800 - VnExpress International",
     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUkJaRnRjWE05QS01UXFWWEstczBFMTdtR0t2OW1kNTI1Uk1xbERJQmxLdHlFSl84UVFzd1VDU2p5ZVlLU2hscklTaXhOSENIZDRUM0pfRTQwbVVJM21QZDRmTEsyV1ByNTNlOVNobmF6TDZGVkhJYWtaUjIteFk2UGdHeWRUNmtsNDJkbUloaUx1SXcxOHdVNHhoR2NFOWRjVjRRN1F6MGp5cDIwV1UyMC1BNXk5MU1Bc01Z?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "연장형 다절 연속 로봇의 3D 형상을 제어하는 새로운 비전 기반 제어 알고리즘을 제안합니다. 기존의 비전 기반 제어 알고리즘은 로봇의 끝 손가락 자세를 제어하지만, proposed control algorithm는 로봇의 전체 body configuration을 제어하여 kinematic redundancy를 활용할 수 있습니다. 또한, 2.5D 형상 시각 서비스는 로봇의 3D workspace에서_globally stable asymptotic convergence를 제공합니다."
-  },
-  {
-    "title": "Modular Magnetic Millirobots for Multimodal Locomotion and Shape Reconfiguration 개발함",
-    "original_title": "Design and Control of Modular Magnetic Millirobots for Multimodal Locomotion and Shape Reconfiguration",
-    "link": "https://arxiv.org/abs/2602.19346",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "Modular small-scale robots의 잠재적 성능을 발휘하는 새로운 플랫폼을 제안하였다. 이 플랫폼은 3개의 큐브 모듈로 구성되어 있으며, 각 모듈에는 영구자성 자석이 내장되어 있습니다. 이러한 플랫폼에서는 2차원 균일 및 그래디언트 자기장이 Programmable하게 조절되어 있어, closed-loop 네비게이션을 수행할 수 있습니다."
-  },
-  {
-    "title": "Scalable Low-Density Distributed Manipulation Using an Interconnected Actuator Array",
-    "original_title": "Scalable Low-Density Distributed Manipulation Using an Interconnected Actuator Array",
-    "link": "https://arxiv.org/abs/2602.19653",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "分布된 액추에이터 배열을 사용한 저밀도 분산 조작 시스템\n\nKorea의 로보틱스 연구원들이 개발한 새로운 조작 시스템이 공개됨. 이 시스템은 3-DoF 로보틱스 탬퍼를 모듈화하여 interconnected actuator array를 구성하고, 이를 조용한 표면층으로 연결함으로써 저밀도 분산 조작을 가능하게 함."
-  },
-  {
-    "title": "Towards Dexterous Embodied Manipulation via Deep Multi-Sensory Fusion and Sparse Expert Scaling",
-    "original_title": "Towards Dexterous Embodied Manipulation via Deep Multi-Sensory Fusion and Sparse Expert Scaling",
-    "link": "https://arxiv.org/abs/2602.19764",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "다이렉트로스 에미보디드 맨피툴레이션 방향의 깊은 다중 감각 결합 및 스플레어 익스펏 스케일링"
-  },
-  {
-    "title": "EEG-Driven Intention Decoding: Offline Deep Learning Benchmarking on a Robotic Rover",
-    "original_title": "EEG-Driven Intention Decoding: Offline Deep Learning Benchmarking on a Robotic Rover",
-    "link": "https://arxiv.org/abs/2602.20041",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 로버의 실제-world 조종과 다역 EEG 의도 해석을 결합한 reproducible 벤치마크를 도입하고 예측 기반 BCI 시스템 설계에 대한 핵심 디자인 인사이트를 반영하는 본 연구는 BCIs가 모바일 로보틱스를 Hands-free control modality로 제공하는 데 중요한 문제, 즉 실제-world 탐색 중의 사용자 의도 해석을 해결하는데 주력합니다."
-  },
-  {
-    "title": "Rendezvous and Docking of Mobile Ground Robots for Efficient Transportation Systems",
-    "original_title": "Rendezvous and Docking of Mobile Ground Robots for Efficient Transportation Systems",
-    "link": "https://arxiv.org/abs/2602.19862",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "자동차 무인 로봇의 efficient運輸체계 구축을 위한 접속 및 정박 방법 발표됨**\n\nIn-motion physical coupling of multiple mobile ground robots has the potential to improve efficiency in handling and transferring goods, tackling current challenges in logistics. A key challenge lies in achieving reliable autonomous in-motion physical coupling, which we address with a central MPC approach that models the dynamics and states of two omnidirectional wheeled robots, incorporating constraints related to their docking interface and implementing an approaching strategy for rendezvous and docking."
-  },
-  {
-    "title": "KINESIS: 모션 추종 프레임워크 ~함",
-    "original_title": "KINESIS: Motion Imitation for Human Musculoskeletal Locomotion",
-    "link": "https://arxiv.org/abs/2503.14637",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "해당 연구는 인간의 보행을 모델링하기 위해 강화 학습(RL)을 활용하여 인공智慧물체를 제어하는 방법을 제안합니다. KINESIS 프레임워크는 1시간 48분치의 보행 데이터에 기초하여 익숙하지 않은 보행 경로에서 좋은 모션 추종 성능을 달성했습니다. 또한, 이 연구에서는 인체 EMG 활동과 유사한 근육 활성 패턴을 생성하는 데 성공했습니다."
-  },
-  {
-    "title": "Fruit Manipulation AI",
-    "original_title": "Find the Fruit: Zero-Shot Sim2Real RL for Occlusion-Aware Plant Manipulation",
-    "link": "https://arxiv.org/abs/2505.16547",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Sim2Real RL 기술을 구현하여 가상 환경에서 learnt 정책을 물리 세계에 적용한 새로운 harvest automation 접근 방식을 제안합니다. 이 접근 방식은 occlusion-aware plant manipulation을 가능하게 하여 다양한 식물 구조 및rigidity 조건에서 86.7%의 성공률로 과일을 열 수 있습니다."
-  },
-  {
-    "title": "로보트 매니浦레이션 일반화 가능성 향상 via 언어 연계 3D 키포인트",
-    "original_title": "Generalizable Coarse-to-Fine Robot Manipulation via Language-Aligned 3D Keypoints",
-    "link": "https://arxiv.org/abs/2509.23575",
-    "date": "2026-02-24 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국 로보틱스 연구소에서는 3D 로보트 매니푸레이션이자 일반화를 위해 새로운 프레임워크를 제안하였다. 이 프레임워크는 3-component 구조로 구성되어 있으며, 1) 태스크 분해, 2) VLM fine-tuning for 3D 키포인트 예측, 3) 3D-aware 표현으로 구성된 CLAP(Coarse-to-fine Language-Aligned manipulation Policy)다. 이 프레임워크를 simulation 및 실제 로보트에서 실험한 결과, 일반화 가능성을 향상시켰다. GemBench의 경우, 평균 성공률을 12% 높이는 성과를 보였다. 실제 로보트 실험에서는 10개 시연만으로도 새로운 지침 및 환경에 일반화할 수 있었다."
   }
 ]
