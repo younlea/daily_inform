@@ -15,7 +15,7 @@ import ollama
 ARCHIVE_FILE = 'news_archive.json'
 PROMPT_FILE = 'prompt.md'
 MAX_ITEMS = 2000
-LOCAL_MODEL = "VladimirGav/gemma4-26b-16GB-VRAM:latest"
+LOCAL_MODEL = "gemma2:9b"
 
 def log(msg):
     print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] {msg}")

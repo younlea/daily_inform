@@ -288,6 +288,24 @@
     "summary": "arXiv:2503.05578v4 Announce Type: replace-cross \nAbstract: Pose estimation-guided unseen object 6-DoF robotic manipulation is a key task in robotics. However, the scalability of current pose estimation methods to unseen objects remains a fundamental challenge, as they generally rely on CAD models or dense reference views of unseen objects, which are difficult to acquire, ultimately limit their scalability. In this paper, we introduce a novel task setup, referred to as SinRef-6D, which addresses 6-DoF absolute pose estimation for unseen objects using only a single pose-labeled reference RGB-D image captured during robotic manipulation. This setup is more scalable yet technically nontrivial due to large pose discrepancies and the limited geometric and spatial information contained in a single view. To address these issues, our key idea is to iteratively establish point-wise alignment in a common coordinate system with state space models (SSMs) as backbones. Specifically, to handle large pose discrepancies, we introduce an iterative object-space point-wise alignment strategy. Then, Point and RGB SSMs are proposed to capture long-range spatial dependencies from a single view, offering superior spatial modeling capability with linear complexity. Once pre-trained on synthetic data, SinRef-6D can estimate the 6-DoF absolute pose of an unseen object using only a single reference view. With the estimated pose, we further develop a hardware-software robotic system and integrate the proposed SinRef-6D into it in real-world settings. Extensive experiments on six benchmarks and in diverse real-world scenarios demonstrate that our SinRef-6D offers superior scalability. Additional robotic grasping experiments further validate the effectiveness of the developed robotic system. The code and robotic demos are available at https://paperreview99.github.io/SinRef-6DoF-Robotic."
   },
   {
+    "title": "반복 불변 EKF를 활용한 4족보행 로봇 운동량 추정",
+    "original_title": "Iterated Invariant EKF for Quadruped Robot Odometry",
+    "link": "https://arxiv.org/abs/2604.15449",
+    "date": "2026-04-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "본 연구는 Iterated Invariant Extended Kalman Filter (IterIEKF) 알고리즘을 제시하여 자율 주행 능력을 향상시킨다.  IterIEKF는 발의 속도와 기준 프레임의 속도 등 직접 감지 데이터를 활용하여 환경 변화에 강인한 운동량 추정을 가능하게 하며, 실제 데이터셋과 수치적 시뮬레이션에서 기존 방법들보다 높은 정확성과 일관성을 보여준다."
+  },
+  {
+    "title": "COVER: 유한시간 내 동작 계획을 위한 검증 도로맵 프레임워크",
+    "original_title": "COVER:COverage-VErified Roadmaps for Fixed-time Motion Planning in Continuous Semi-Static Environments",
+    "link": "https://arxiv.org/abs/2510.03875",
+    "date": "2026-04-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "COVER는 반동적 환경에서 유한 시간 안에 동작 계획 쿼리를 해결할 수 있는 프레임워크로, 이동 가능한 장애물의 구성 공간을 독립적으로 분할하여 도로맵 실현성을 검증함. 7개 자유도 매니퓰레이터를 사용하여 테이블형 및 선반 환경에서 물체 피킹 작업에 COVER를 적용하여 기존 연구보다 더 광범위한 문제 영역 범위와 높은 쿼리 성공률을 보임."
+  },
+  {
     "title": "Humanoid Robot Beats Human World Record at Beijing Half-Marathon - Kursiv Media",
     "original_title": "Humanoid Robot Beats Human World Record at Beijing Half-Marathon - Kursiv Media",
     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbDJJTng4Ri14QVd1VTE3XzVoNEhmV0VaTWFIR3JYajhtMGtwbGp6clZ4aWFTcXpDSllfVW41Z2V0ZExWd1BoVzNsYlpob0gtM0hpc3JkV0Yza19JUG1Sb3BsYXd2T3JOSldPNGZCcTJfRW13cHNHd3IzOF9HM3BHbG9ucXBQMkhta0pBVmU0ekJjSXJtWUhzNklvVnpPYUFrT0pXaWZ3?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "한국 로봇이 복잡한 환경에서 정확한 실시간 결정을 내리기 위한 발톱 선택과 접촉 계획에 대한 새로운 접근 방식인 KCFRC를 발표함. 이 알고리즘은 로봇이 실제로 발톱 도달 가능성을 확인할 수 있도록 하는 새로운 방법을 제공하며, 실제 실험에서는 2ms 내에 900개의 POSSIBLE 발톱에서 하나의 다리를 대상으로 하는 풋홀 도달 가능성 확인을 완료함."
-  },
-  {
-    "title": "Squint: Visual Reinforcement Learning for Sim-to-Real Robotics의 발전함",
-    "original_title": "Squint: Fast Visual Reinforcement Learning for Sim-to-Real Robotics",
-    "link": "https://arxiv.org/abs/2602.21203",
-    "date": "2026-02-25 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Recent research introduced Squint, a visual Soft Actor Critic method that achieves faster wall-clock training than prior methods in visual off-policy and on-policy reinforcement learning. This achievement is attributed to parallel simulation, distributional critic, resolution squinting, layer normalization, tuned update-to-data ratio, and optimized implementation. The method was evaluated on SO-101 Task Set, a suite of eight manipulation tasks with heavy domain randomization, and demonstrated sim-to-real transfer to a real robot, training policies for 15 minutes on a single RTX 3090 GPU."
-  },
-  {
-    "title": "Human-Exoskeleton Kinematic Calibration",
-    "original_title": "Human-Exoskeleton Kinematic Calibration to Improve Hand Tracking for Dexterous Teleoperation",
-    "link": "https://arxiv.org/abs/2507.23592",
-    "date": "2026-02-25 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "exoskeleton 기반의 손 추적을 개선하기 위한 주체 특화 칼리브레이션 프레임워크를 제안함으로써, Dexterous Teleoperation 및 Immersive Manipulation Interface에서 정확한 손 추적을 달성하는 것이 문제됨. 이러한 문제는 사용자 고유의 생체적 다양성과 착용 일관성을 이유로 발생하여 추적 성능을 저하하고 정밀 작업에 제한을 가함. \n\n(Note: I followed the instructions strictly and formatted the output as required.)"
   }
 ]
