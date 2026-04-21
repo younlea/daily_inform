@@ -33,25 +33,36 @@ def process_news_with_local_llm(title, snippet):
 
     final_prompt = template.replace("{title}", title).replace("{snippet}", snippet)
     
-    try:
-        response = ollama.chat(model=LOCAL_MODEL, messages=[{'role': 'user', 'content': final_prompt}])
-        result_text = response['message']['content'].strip()
-        
-        if "|||" in result_text:
-            parts = result_text.split("|||")
-            title = parts[0].strip().strip('*').strip('#').strip()
-            summary = parts[1].strip().strip('*').strip('#').strip()
-            return title, summary
-        else:
-            lines = result_text.split('\n')
-            if len(lines) >= 2:
-                title = lines[0].strip().strip('*').strip('#').strip()
-                summary = " ".join(lines[1:]).strip().strip('*').strip('#').strip()
-                return title, summary
-            return title.strip().strip('*').strip('#').strip(), result_text.strip().strip('*').strip('#').strip() 
-    except Exception as e:
-        log(f"❌ LLM Error: {e}")
-        return title, snippet
+    for attempt in range(2):
+        try:
+            response = ollama.chat(model=LOCAL_MODEL, messages=[
+                {'role': 'system', 'content': '당신은 한국의 베테랑 IT 및 로보틱스 전문 기자입니다. 반드시 한국어로만 응답하세요.'},
+                {'role': 'user', 'content': final_prompt}
+            ])
+            result_text = response['message']['content'].strip()
+            
+            # 한국어가 전혀 포함되지 않았다면 재시도
+            if not bool(re.search(r'[가-힣]', result_text)):
+                log(f"⚠️ Warning: No Korean detected in output. Retrying... (Attempt {attempt+1})")
+                continue
+
+            if "|||" in result_text:
+                parts = result_text.split("|||")
+                t_ko = parts[0].strip().strip('*').strip('#').strip()
+                s_ko = parts[1].strip().strip('*').strip('#').strip()
+                return t_ko, s_ko
+            else:
+                lines = result_text.split('\n')
+                if len(lines) >= 2:
+                    t_ko = lines[0].strip().strip('*').strip('#').strip()
+                    s_ko = " ".join(lines[1:]).strip().strip('*').strip('#').strip()
+                    return t_ko, s_ko
+                return result_text.strip().strip('*').strip('#').strip(), result_text.strip().strip('*').strip('#').strip() 
+        except Exception as e:
+            log(f"❌ LLM Error: {e}")
+            break
+            
+    return title, snippet
 
 import html
 
