@@ -477,6 +477,15 @@
     "summary": "BOIL은 복잡한 환경에서 다중 에이전트 시스템에 유용한 정보를 추출하는 범위 확장형 방법임. Pagerank 알고리즘과 일반적인 정보 최대화 기법을 활용하여 보다 오랜 시간 동안 효과적인 전략을 수립할 수 있도록 하여,  보행, 순찰 등 복잡한 환경에서의 문제 해결에 도움을 주는 것을 실험적으로 입증."
   },
   {
+    "title": "시간 가속화된 시범을 점진적인 이터레이티브 참조 학습 제어를 통한 정밀도 개선",
+    "original_title": "Refinement of Accelerated Demonstrations via Incremental Iterative Reference Learning Control for Fast Contact-Rich Imitation Learning",
+    "link": "https://arxiv.org/abs/2604.16850",
+    "date": "2026-04-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Contact-rich manipulation에서 빠른 동작 실행이 중요하며, 이를 위한 면밀한 시범 제공은 어렵습니다. 연구자들은 Iterative Reference Learning Control (IRLC)을 사용하여 시간 가속화된 시범을 자율적으로 정비하는 방법을 제시했습니다. Incremental Iterative Reference Learning Control (I2RLC)을 통해 점진적으로 속도를 높이면서 참조 경로를 업데이트하여 고품질의 기동 경로 생성에 성공했습니다."
+  },
+  {
     "title": "NCS, AGIBOT, HZTC와의 파트너십으로 APAC 전역에 인형 로봇 배포 - 빠른 모드",
     "original_title": "NCS Partners with AGIBOT and HZTC to Deploy Humanoid Robotics Across APAC - The Fast Mode",
     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSVlFZUdIaHhPZkZDbjJuRnNUa0VQTTVtZ3BfSFF4YzlaVVd3bmQzTU95UDRCLVdscDhoaEpkYk02U3J2ZlZCTVB0SzNQQmlBdE5BX3NKLVRPR054aWtNZ3Z1OXpTZUVDT21CclBmLUhGQXgySzFHeUJXejBucEFCay1vNjZpTllrMkZsZVlhNXRncTVsRWFWeUh4REtCN29nUGxhMi1xcmtMenhtZF96ZVJuMURIQlBuTHc2MXV6VUM5UVpXZlJR?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로봇이 다양한 환경에서 긴 역할을 수행하는 데 필요로 하는 compositional long-horizon manipulation의 해결책으로 LiLo-VLA 프레임워크를 제안함. 이 프레임워크는 transport와 interaction을 분리하여 전역 운동을 처리하고, 각 물체에 대한 Object-Centric VLA를 사용하여 불필요한 시각적 특징과 공간 구성에 내성 있는 Robustness를 제공함."
-  },
-  {
-    "title": "로봇 이미테이션의 액션 생성을 위한 Primary-Fine Decoupling",
-    "original_title": "Primary-Fine Decoupling for Action Generation in Robotic Imitation",
-    "link": "https://arxiv.org/abs/2602.21684",
-    "date": "2026-02-26 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 thaoe의 다이모달 행동 시퀀스에 있어 제약이 있는 이мит레이션 러닝 문제를 해결하기 위해 existing approaches는 액션 공간을 토큰 집합으로 또는 연속(latent-variable) 분포로 모델링하는 경우가 종종 있습니다. 이러한 접근 방식은 다음과 같은 단점을 가집니다: 일부 방법에서는 액션을 토큰으로 쪼개어 fine-grained 액션 변이력을 잃는 반면, 다른 방법에서는 연속 액션을 일단 생성하여 Instable mode transitions를 생산하는 경우가 있습니다. 이러한 제한을 addressed하기 위해 우리는 Primary-Fine Decoupling for Action Generation(PF-DAG)을 제안합니다. PF-DAG은 coarse action consistency와 fine-grained variations을 분리하여 2-stage 프레임워크입니다. 첫 번째로, 우리는 액션 CHUNKS를 작은 토큰 집합으로 압축하여 lightweight policy가 일관된 coarse modes를 선택하고 mode bouncing을 방지할 수 있습니다. 두 번째로, 모드 조건ated MeanFlow policy를 배워 high-fidelity 연속 액션을 생성할 수 있습니다. 이론적으로는 PF-DAG의 2-stage 설계는 single-stage generative policies에 있는 MSE bound보다 낮은 bound를 달성할 수 있습니다. 실제로는 PF-DAG이 state-of-the-art baselines을 초과하는 성능을 보여주는 56 tasks from Adroit, DexArt, and MetaWorld benchmarks에서 empirical results를 얻을 수 있습니다. 더 나아가서, PF-DAG은 실세계의 tactile dexterous manipulation tasks까지 일반화할 수 있습니다. 우리의 연구는 로봇 thaoe의 다이모달 모델링과 반응적 클로즈드-루프 제어를 가능하게 하는 explicit mode-level decoupling을 보여줍니다."
   }
 ]
