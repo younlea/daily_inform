@@ -171,6 +171,15 @@
     "summary": "asRoBallet은 humanoid ballbot에 대한 강화학습의 최초 적용으로, 높은 정밀도 Simulink 모델과 마찰 요소를 고려하는 새로운 강화 학습 프레임워크를 통해 하드웨어 시뮬레이션 및 실제 환경 적용 성공을 달성했습니다."
   },
   {
+    "title": "Libra-VLA: 비동기적 두 개 체계를 통한 학습 균형 달성",
+    "original_title": "Libra-VLA: Achieving Learning Equilibrium via Asynchronous Coarse-to-Fine Dual-System",
+    "link": "https://arxiv.org/abs/2604.24921",
+    "date": "2026-04-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Libra-VLA는 시각-언어-작용(VLA) 모델의 코스-투-파인 두 계층 구조를 통해 복잡한 로봇 제어 작업을 위한 고급 의미 지시를 실행 가능한 물리적 동작으로 매핑하는 방법을 제시. 이 접근 방식은 먼저 시각적-언어적 특징을 해상도가 높은 운동 명령에 직접 매핑하는 대신, 큰 방향성의 손짓과 정밀한 자세 조정으로 로봇 제어 작업을 분해하여 학습 복잡도를 단계적으로 줄이고 의미-작용 간격을 완화합니다."
+  },
+  {
     "title": "Polaris AI가 한국 UBTECH 인형 로봇 운영 | Polaris AI는 한국에서 UBTECH 인형 로봇을 관리하며 물리적 인공지능 사업 가속화를 목표로 한다.",
     "original_title": "Polaris AI Takes Charge of UBTECH Humanoid Robots in Korea... Accelerates Physical AI Business - 아시아경제",
     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE44TnRWaXNuamtYa3NfYk80elFCVkI0N1loLVFiX0pVQ0NjZFpRbm85QWg3OVI3S0RVV3o5c0N4RklkVDNlN2Q0dEhvdFJ2b3hrMFQwUUlsLTVfc0ZIaHBuR3ZQVVhQTldzUjVvTzBwanNYTjdrN0xYMjc5SQ?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "오프라인 강화 학습(RL)은 robots가 오프라인 데이터셋에서 학습할 수 있지만, 성능은 일반적으로 dataset 지원 범위 밖으로 정책을 밀어내는 trade-off과 행동 제약으로 인한 민감한 하이퍼파라미터 튜닝에 의존합니다. Latent steering은 RL 동안 dataset 지원 범위를 유지하는 구조적 방법입니다. 그러나 기존 오프라인 적응들은 일반적으로 간접.distillation을 통해 학습된_PROXY_ latent-space critics를 사용하여 정보 손실과 수렴 지연을 일으킵니다. 우리는 Latent Policy Steering(LPS)을 제안하고 있습니다. LPS는 원래 액션 공간 Q-기울기를 한 단계 MeanFlow 정책을 через 다항식으로 업데이트한 latent-action-space 액터를 업데이트하는 방식입니다. 이脱Coupling은 원래 액션 공간 비판자에게 엔드 투 엔드 latent-space 최적화에 대한 지침을 제공하고, 한 단계 MeanFlow 정책이 행동 제약 generative prior로 작동하게 됩니다. 이러한 독립성으로 인해 LPS는 기본적인 튜닝 없이 state-of-the-art 성능을 달성하고, 행동 클론링과 강력한 latent steering baseline보다 항상 좋은 성능을 보입니다."
-  },
-  {
-    "title": "SeedPolicy: 로봇 조작 기술을 위한 하이라이즈 스케일링 방안",
-    "original_title": "SeedPolicy: Horizon Scaling via Self-Evolving Diffusion Policy for Robot Manipulation",
-    "link": "https://arxiv.org/abs/2603.05117",
-    "date": "2026-03-06 05:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 조작 기술을 위해 SeedPolicy를 제안하는 연구에서, Expert 강령을 통해 Robot Manipulation Skills을 학습하는 Imitation Learning(IL) 방안의 한계를 해결하기 위해 Self-Evolving Gated Attention(SEGA) 모듈을提案하고 있다. SEGA는 시간-evolving Latent State을 유지하여 Long-Horizon Observations을 fixed-size Representation으로 압축할 수 있으며, Temporal Modeling Bottleneck를 해결할 수 있는 SeedPolicy를 도출하는 데 사용된다. RoboTwin 2.0 벤치마크에서 SeedPolicy는 DP와 다른 IL 방안보다 성능이 우수한 것을 나타내었다."
   }
 ]
