@@ -45,6 +45,78 @@
     "summary": "\"값 명시적 사전 학습\"(VEP)은 새로운 과제를 효율적으로 배우도록 하는 일반화 가능한 표현을 학습하는 방법이다. VEP는 환경 동역학과 외관의 변화에 영향받지 않는 표현을 학습하도록 훈련된 인코더를 통해, 이전에 학습된 과제와 유사한 목표를 가진 새로운 과제를 효율적으로 배우도록 한다.   실험 결과, VEP는 Ant locomotion, 현실적인 네비게이션 시뮬레이터 및 Atari 기준에서 기존의 최고 수행 방법보다  unseen 과제 일반화 능력이 우수함을 보여주었다."
   },
   {
+    "title": "E$^2$DT: Efficient and Effective Decision Transformer with Experience-Aware Sampling for Robotic Manipulation",
+    "original_title": "E$^2$DT: Efficient and Effective Decision Transformer with Experience-Aware Sampling for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.00159",
+    "date": "2026-05-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.00159v1 Announce Type: new \nAbstract: In reinforcement learning (RL) for robotic manipulation, the Decision Transformer (DT) has emerged as an effective framework for addressing long-horizon tasks. However, DT's performance depends heavily on the coverage of collected experiences. Without an active exploration mechanism, standard DT relies on uniform replay, which leads to poor sample efficiency, limited exploration, and reduced overall effectiveness. At the same time, while excessive exploration can help avoid local optima, it often delays policy convergence and leads to degraded efficiency. To address these limitations, we propose E$^2$DT, a DT-guided k-Determinantal Point Process sampling framework that enables the model to actively shape its own experience selection. Our framework is experience-aware, allowing E$^2$DT to be both efficient, by prioritizing sampling quality, such as high-return, high-uncertainty, and underrepresented trajectories, and effective, by ensuring diversity across trajectory windows to preserve policy optimality. Specifically, DT's internal latent embeddings measure diversity across trajectory windows, while quality is quantified through a composite metric that integrates return-to-go (RTG) quantiles, predictive uncertainty, and stage coverage based on inverse frequency. These two dimensions are integrated into a novel quality-diversity joint kernel that prioritizes the most informative experiences, thereby enabling learning that is both efficient and effective. We evaluate E$^2$DT on challenging robotic manipulation benchmarks in both simulation and real-robot settings. Results show that it consistently outperforms prior methods. These findings demonstrate that coupling policy learning with experience-aware sampling provides a principled path toward robust long-horizon robotic learning."
+  },
+  {
+    "title": "Lucid-XR: An Extended-Reality Data Engine for Robotic Manipulation",
+    "original_title": "Lucid-XR: An Extended-Reality Data Engine for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.00244",
+    "date": "2026-05-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.00244v1 Announce Type: new \nAbstract: We introduce Lucid-XR, a generative data engine for creating diverse and realistic-looking multi-modal data to train real-world robotic systems. At the core of Lucid-XR is vuer, a web-based physics simulation environment that runs directly on the XR headset, enabling internet-scale access to immersive, latency-free virtual interactions without requiring specialized equipment. The complete system integrates on-device physics simulation with human-to-robot pose retargeting. Data collected is further amplified by a physics-guided video generation pipeline steerable via natural language specifications. We demonstrate zero-shot transfer of robot visual policies to unseen, cluttered, and badly lit evaluation environments, after training entirely on Lucid-XR's synthetic data. We include examples across dexterous manipulation tasks that involve soft materials, loosely bound particles, and rigid body contact. Project website: https://lucidxr.github.io"
+  },
+  {
+    "title": "Task-Conditioned Uncertainty Costmaps for Legged Locomotion",
+    "original_title": "Task-Conditioned Uncertainty Costmaps for Legged Locomotion",
+    "link": "https://arxiv.org/abs/2605.00261",
+    "date": "2026-05-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.00261v1 Announce Type: new \nAbstract: Legged robots maintain dynamic feasibility through multicontact interactions with terrain. Learned foothold prediction can provide feasibility-aware costs for motion planning and path selection, but accurately predicting future contacts from perceptual inputs such as height scans remains challenging on highly unstructured terrain, even with a repetitive gait cycle. In this work, we show that modeling epistemic uncertainty in predicted footholds, conditioned on terrain observations and commanded motion, distinguishes in-distribution from out-of-distribution operating regimes in simulation and real-world settings. This allows a single learned model, trained on limited data distributions, to express uncertainty caused by missing training coverage. We use this learned uncertainty to detect OOD regions and incorporate them into a unified costmap-generation framework for uncertainty-aware path planning. Using these uncertainty-aware costmaps, we evaluate feasibility error across in-distribution and OOD terrains in simulation and real-world settings. The results show improved OOD detection, up to a 37% reduction in simulation feasibility error, and more reliable planning behavior than geometry-only baselines."
+  },
+  {
+    "title": "Embodied Interpretability: Linking Causal Understanding to Generalization in Vision-Language-Action Models",
+    "original_title": "Embodied Interpretability: Linking Causal Understanding to Generalization in Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.00321",
+    "date": "2026-05-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.00321v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) policies often fail under distribution shift, suggesting that decisions may depend on spurious visual correlations rather than task-relevant causes. We formulate visual-action attribution as an interventional estimation problem. Accordingly, we introduce the Interventional Significance Score (ISS), an interventional masking procedure for estimating the causal influence of visual regions on action predictions, and the Nuisance Mass Ratio (NMR), a scalar measure of attribution to task-irrelevant features. We analyze the statistical properties of ISS and show that it admits unbiased estimation, and we characterize conditions under which action prediction error provides a valid proxy for causal influence. Experiments across diverse manipulation tasks indicate that NMR predicts generalization behavior and that ISS yields more faithful explanations than existing interpretability methods. These results suggest that interventional attribution provides a simple diagnostic approach for identifying causal misalignment in embodied policies."
+  },
+  {
+    "title": "PrefMoE: Robust Preference Modeling with Mixture-of-Experts Reward Learning",
+    "original_title": "PrefMoE: Robust Preference Modeling with Mixture-of-Experts Reward Learning",
+    "link": "https://arxiv.org/abs/2605.00384",
+    "date": "2026-05-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.00384v1 Announce Type: new \nAbstract: Preference-based reinforcement learning offers a scalable alternative to manual reward engineering by learning reward structures from comparative feedback. However, large-scale preference datasets, whether collected from crowdsourced annotators or generated by synthetic teachers, often contain heterogeneous and partially conflicting supervision, including disagreement across annotators and inconsistency within annotators. Existing reward learning methods typically fit a single reward model to such data, forcing it to average incompatible signals and thereby limiting robustness. To solve this, we propose PrefMoE, a mixture-of-experts reward learning framework for robust preference modeling. PrefMoE learns multiple specialized reward experts and uses trajectory-level soft routing to combine them adaptively, enabling the model to capture diverse latent preference patterns under noisy and heterogeneous preference supervision. A load-balancing regularizer further stabilizes training by preventing expert collapse. Across locomotion benchmarks from D4RL and manipulation tasks from MetaWorld, PrefMoE improves preference prediction robustness and leads to more reliable downstream policy learning than strong single-model baselines."
+  },
+  {
+    "title": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies",
+    "original_title": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies",
+    "link": "https://arxiv.org/abs/2605.00416",
+    "date": "2026-05-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.00416v1 Announce Type: new \nAbstract: Generalist robot policies increasingly benefit from large-scale pretraining, but offline data alone is insufficient for robust real-world deployment. Deployed robots encounter distribution shifts, long-tail failures, task variations, and human correction opportunities that fixed demonstration datasets cannot fully capture. We present Learning While Deploying (LWD), a fleet-scale offline-to-online reinforcement learning framework for continual post-training of generalist Vision-Language-Action (VLA) policies. Starting from a pretrained VLA policy, LWD closes the loop between deployment, shared physical experience, policy improvement, and redeployment by using autonomous rollouts and human interventions collected across a robot fleet. To stabilize learning from heterogeneous, sparse-reward fleet data, LWD combines Distributional Implicit Value Learning (DIVL) for robust value estimation with Q-learning via Adjoint Matching (QAM) for policy extraction in flow-based VLA action generators. We validate LWD on a fleet of 16 dual-arm robots across eight real-world manipulation tasks, including semantic grocery restocking and 3--5 minute long-horizon tasks. A single generalist policy improves as fleet experience accumulates, reaching an average success rate of 95%, with the largest gains on long-horizon tasks."
+  },
+  {
+    "title": "Stereo Multistage Spatial Attention for Real-Time Mobile Manipulation Under Visual Scale Variation and Disturbances",
+    "original_title": "Stereo Multistage Spatial Attention for Real-Time Mobile Manipulation Under Visual Scale Variation and Disturbances",
+    "link": "https://arxiv.org/abs/2605.00471",
+    "date": "2026-05-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.00471v1 Announce Type: new \nAbstract: Robots operating in open, unstructured real-world environments must rely on onboard visual perception while autonomously moving across different locations. Continuous changes in onboard camera viewpoints cause significant visual scale variations in target objects, affecting vision-based motion generation. In this work, we present a stereo multistage spatial attention-based deep predictive learning method for real-time mobile manipulation. The proposed methods extracts task-relevant spatial attention points from stereo images and integrates them with robot states through a hierarchical recurrent architecture for closed-loop action prediction. We evaluate the system on four real-world mobile manipulation tasks using a mobile manipulator, including rigid placement, articulated object manipulation, and deformable object interaction. Experiments under randomized initial positions and visual disturbance conditions demonstrate improved robustness and task success rates compared to representative imitation learning and vision-language-action baselines under identical control settings. The results indicate that structured stereo spatial attention combined with predictive temporal modeling provides an effective solution within the evaluated mobile manipulation scenarios."
+  },
+  {
+    "title": "Recovering Hidden Reward in Diffusion-Based Policies",
+    "original_title": "Recovering Hidden Reward in Diffusion-Based Policies",
+    "link": "https://arxiv.org/abs/2605.00623",
+    "date": "2026-05-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.00623v1 Announce Type: new \nAbstract: This paper introduces EnergyFlow, a framework that unifies generative action modeling with inverse reinforcement learning by parameterizing a scalar energy function whose gradient is the denoising field. We establish that under maximum-entropy optimality, the score function learned via denoising score matching recovers the gradient of the expert's soft Q-function, enabling reward extraction without adversarial training. Formally, we prove that constraining the learned field to be conservative reduces hypothesis complexity and tightens out-of-distribution generalization bounds. We further characterize the identifiability of recovered rewards and bound how score estimation errors propagate to action preferences. Empirically, EnergyFlow achieves state-of-the-art imitation performance on various manipulation tasks while providing an effective reward signal for downstream reinforcement learning that outperforms both adversarial IRL methods and likelihood-based alternatives. These results show that the structural constraints required for valid reward extraction simultaneously serve as beneficial inductive biases for policy generalization. The code is available at https://github.com/sotaagi/EnergyFlow."
+  },
+  {
     "title": "중국 로봇 손 제조업체 Linkerbot, 인간의 섬세한 기술 라이브러리 전체 복제 목표|| 중국 로봇 손 제조업체 Linkerbot는 인간의 다양하고 정교한 기술을 모아놓은 라이브러리를 완전히 복제하는 것을 목표로 하고 있습니다.  Linkerbot은 촉각, 위치 감지 등 다양한 센서를 통해 인간 손의 복잡한 동작을 시뮬레이션할 수 있는 로봇 손 개발에 집중하고 있습니다.",
     "original_title": "China robotic hands maker Linkerbot aims to replicate entire library of human dexterous skills - The Straits Times",
     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZGUweWlyWGhBRlJHM09LXzlkZVhDY3FiUGhmTHg0R1JzNFVSX3ZtY2lnQlRscFBadW1oRm1BMl9JR1ByOFlfUlBTdUhUV1N1TU5JT1FidmpLckJMaHp5YTJyU2tkY2h6bEwzTjZWN3pMRUJxdF9Hb3I4S09EYTBoOV8xRFNSQWdRVHFMSmxiSms3ZUdsYzBHUjZ0cTRKWDc1czAyWjUyMERFcVhFTXJyY0QxWjdKZHE3WW5GekR3?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "granular 지형에서 로봇의 빠른 행보를 가능하게 하는 생물학적 хвost oscillation ; 67%의 속도 향상과 46%의 체드래그 감소\n\nNote: I followed the instruction to keep key technical terms and company names in English, and used standard Korean transliteration for \"granular\" as it is widely used. The summary focuses on the technical specifications of the robot's locomotion performance improvement."
-  },
-  {
-    "title": "RetoVLA: 스페이셜 리ASONING을 위한 레지스터 토큰의 재사용",
-    "original_title": "RetoVLA: Reusing Register Tokens for Spatial Reasoning in Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2509.21243",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "비전-언어-행동(VLA) 모델은 다양한 로보틱스 태스크에서 robust 성능을 보였으나, 높은 메모리와 컴퓨테이션 요구로 인해 실시간 배포가 제한 된다. existing 모델 압축 기법으로는 3D 스페이셜 리ASONING과 장면 레이아웃 이해를 잃게 된다. 이 글에서는 레지스터 토큰을 재사용하여 가벼운 모델에서 스페이셜-awareness을 유지하는 새로운 아키텍처, RetoVLA를 소개하며 7-DOF 매니퓰레이터 실험 결과 17.1%p의 평균 성공률 향상을 보여준다."
-  },
-  {
-    "title": "SaiVLA-0: 컴퓨트 인지 비전-언어-행동 삼각 구조",
-    "original_title": "SaiVLA-0: Cerebrum--Pons--Cerebellum Tripartite Architecture for Compute-Aware Vision-Language-Action",
-    "link": "https://arxiv.org/abs/2603.08124",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "我们 revisit 비전-언어-행동을 컴퓨터 상호 연결에 вдохновлен 삼각 구조를 통하여. 이 구조에서 신경 과학적으로는 세 개의 부위가 있다. cerebrum은 안정된 고급 다중 모드 전제를 제공하고 있으며, frozen; Pons Adapter는 이러한 피질 기능을 실시간 proprioceptive 입력으로 통합하고 실행 준비 토큰으로 컴파일; 그리고 cerebellum(ParaCAT)은 빠른,並行 카테고리 해독을 위한 온라인 제어에 사용되는 hysteresis/EMA/temperature/entropy를 제공. 고정 비율 스케줄과 두 단계 기능 캐싱은 시스템이 compute-aware하고 reproducible하도록 한다. 활동 적인, foveted vision에inspired의 팔 ROI는 손 끝 effector와 조정된 投影을 통해 움직임 안정화되고, 높은 해상도视图를 제공하며, 주위 문맥과 결합하여 fine-grained 자세 변경에 민감하게 된다.\n\n이 설계는 모듈식: cerebrum을 업그레이드하면 Pons만 재트레인되며; 로봇을 바꾸면 cerebellum을 재트레인할 수 있으며; cerebellum-only RL은 제어를 추가로 개선할 수 있어 고급 의미를 건드리지 않게 된다. concept-and-protocol paper에inspired, 우리는 matched 조건하에서(A GPU, resolution, batch) 항상화의 timing 프로토콜을 설명하며, anticipated 효율 향상을 확인하는 데 사용되는 것을 밝힌다. 또한 LIBERO 증거 보고서에는 split 기능 캐싱이 훈련 시간을 줄여(7.5h to 4.5h) 및 평균 성공률을 높이는(86.5% to 92.5%)를 보여 주며, SaiVLA0는 N1.5 head-only 훈련에서 99.0%의 평균 성공률을 alcanzato한다."
-  },
-  {
-    "title": "SAIL: 테스트 시닝 스케일링으로 인코텍 이mitation 러닝 ~함",
-    "original_title": "SAIL: Test-Time Scaling for In-Context Imitation Learning with VLM",
-    "link": "https://arxiv.org/abs/2603.08269",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "SAIL 프레임워크는 로봇의 이mitation을 반복적인 보완 문제로 정의하여 테스트 시닝 컴퓨트와 함께 스케일링할 수 있습니다. SAIL은 몬테 카를로 트리 서치 알고리즘을 사용하여 각 노드는 완성된 траекторий이고, 에지들은 траекторий의 보완에 해당합니다. 이 프로세스는 세 가지 주요 구성 요소에 의해指导됩니다: 성공적인 траекторий의 자동화된 아카이브, 비전 언어 모델 기반의 траекторий 평가 메커니즘, 그리고 단계별 피드백이 траекторий에 알맞은 점수를 제공하는 iterative 보완. 이 프로세스는 시뮬레이션과 실제 세계에서 6개의 다iverse한 manipulation 태스크를 통해 실험을 진행하였으며, 테스트 시닝 컴퓨트가 증가할수록 성능률이 향상되는 것을 입증했습니다."
-  },
-  {
-    "title": "Inverse-dynamics.Observer.디자인.Linear.Single-track.Vehicle.Model.With.Distributed.Tire.Dynamics",
-    "original_title": "Inverse-dynamics observer design for a linear single-track vehicle model with distributed tire dynamics",
-    "link": "https://arxiv.org/abs/2603.07499",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "unknown.운전.Scenario에.위해.차의.side.silp.angle과.tire.forces를.정확하게.추정하는 것은.안전.성과.handling.perfomance를.향상하는 데.필수적입니다.제안된.observer는.linear.single-track.model을.조합하여.standard.sensors에서.획득한.정보를.이용하여.차의.lumped.and.distributed.states를.reconstruct할 수 있습니다."
-  },
-  {
-    "title": "DAISS: Phase-Aware Imitation Learning for Dual-Arm Robotic Ultrasound-Guided Interventions",
-    "original_title": "DAISS: Phase-Aware Imitation Learning for Dual-Arm Robotic Ultrasound-Guided Interventions",
-    "link": "https://arxiv.org/abs/2603.07663",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보틱스 제어 분야에서 새로운 성과를 이룩한 DAISS 시스템이 공개됨. DAISS는 의료 로보틱스에서 사용되는 초음파 지시 아래의 양손 동시 조작을 자동화하는 새로운 방법을 개발했으며, 이를테는 의사들이 초음파 공명 관점을 유지하면서 간섭針을 조작하는 어려운 작업을 ease할 수 있도록 하는 것임."
-  },
-  {
-    "title": "컨티뉴움 소프트 로봇 모델링 일반 Lie군 프레임워크",
-    "original_title": "A General Lie-Group Framework for Continuum Soft Robot Modeling",
-    "link": "https://arxiv.org/abs/2603.08232",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 논문은 컨티뉴움 소프트 로봇을 모델링하는 일반 Lie군 프레임워크를 소개하는데, 코서 라드 이론과 누적 매개변수화를 SE(3) Lie군에 결합하여 유한 strain 기반 및 구성 기반 방법의 제약을 해결하고 기하학 적 로컬 contro를 제공합니다. 논문은 unified 분석적 표현을 얻어 kinematics, statics, dynamics를 포함하여 재귀 Jacobi 컴퓨팅과 에너지 보존 integrate를 공유로봇 시뮬레이션 및 제어에 적합하게 제안합니다. 이 프레임워크는 복잡한 로보틱 구조, 즉 세그먼트드, 브랜CHED, 네스드, Rigd-soft 컴포즈 구성 등을 처리할 수 있도록 확장하여 모듈러하고 unified 모델링 전략을 제공합니다. 다양한 시나리오, including large-deformation rods, concentric tube robots, parallel robots, cable-driven robots, articulated fingers를 통해 제안된 방법론의 효율성, 일반성 및 컴퓨팅 성능을 증명합니다."
-  },
-  {
-    "title": "A Contrastive Fewshot RGBD Traversability Segmentation Framework for Indoor Robotic Navigation",
-    "original_title": "A Contrastive Fewshot RGBD Traversability Segmentation Framework for Indoor Robotic Navigation",
-    "link": "https://arxiv.org/abs/2603.06927",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "인도어 로봇 навиг레이션을 위하여 RGB-D 이미지와 1D 레이저 깊이 정보를 결합한 다종 모드 구분 프레임워크를 제안함으로 인해 안전하고 보행할 수 있는 자유 공간을 식별하는 인도어 구분의 목표는 로봇 навиг레이션이 중요함. pure 비전 기반 모델은 일반적으로椅子 다리와 같은 thin obstacles를 감지하지 못하여 위험적인 안전 문제를 일으킬 수 있음. 또한, 이 프레임워크는 1-shot, 5-shot 설정에서 state-of-the-art FSS, RGB-D 구분 기준선에 상회하는 성능을 달성함을 입증적으로 보여줌."
-  },
-  {
-    "title": "로봇의 중복 제어를 위한 적응적 비전 기반 제어 및 null 공간 상호작용에 대한 연구",
-    "original_title": "Adaptive Vision-Based Control of Redundant Robots with Null-Space Interaction for Human-Robot Collaboration",
-    "link": "https://arxiv.org/abs/2603.08089",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "적응적 비전 기반 제어 및 null 공간 상호작용을 갖는 새로운 로봇 제어 체계가 개발되어, 인간-로봇 협업의 안전성과 효율성을 향상시킴으로써 humanoide 로봇의 성능을 개선하고, 불확실한 환경에서 작업을 수행할 수 있습니다."
   }
 ]
