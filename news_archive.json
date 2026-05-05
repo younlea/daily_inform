@@ -72,6 +72,78 @@
     "summary": "arXiv:2605.01427v1 Announce Type: new \nAbstract: Humanoid robots are entering our physical world at scale, yet as oversized toys--good at singing and dancing, but short on force-interaction capabilities for practical tasks. Bridging this gap necessitates prioritizing reliable contact perception as a fundamental requirement. Estimating external wrenches in humanoids is complicated by floating-base dynamics and indeterminate contact locations. Existing analytical frameworks require idealistic assumptions and hard-to-obtain measurements, which are often unavailable in practice. To bridge this gap, we propose SixthSense, a task-agnostic approach that infers whole-body contact timing, location, and wrenches from proprioception and IMU data alone. To capture the multi-modal dynamics between unstructured contact inputs and the uncertain motion outputs, we employ conditional flow matching to tokenize proprioceptive histories and estimate a spatiotemporally sparse contact-event flow. SixthSense serves as a plug-and-play perception module for applications including collision detection, physical human-robot interaction, and force-feedback teleoperation. Experiments across standing, walking, and whole-body motion-tracking policies showcased unprecedented performance in diverse behaviors."
   },
   {
+    "title": "High-Speed, Scalable Sensor Readout for Dexterous Robotic Hands via Shift-Register Multiplexing",
+    "original_title": "High-Speed, Scalable Sensor Readout for Dexterous Robotic Hands via Shift-Register Multiplexing",
+    "link": "https://arxiv.org/abs/2605.01434",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01434v1 Announce Type: new \nAbstract: Dexterous robotic hands require high-speed multimodal sensing across many degrees of freedom, yet existing readout architectures often impose trade-offs between sensor count, wiring complexity, and sampling bandwidth. This paper presents a scalable analog sensor readout architecture based on a serial-in parallel-out (SIPO) shift-register principle. The proposed architecture supports versatile integration of heterogeneous analog-output sensors, scalable expansion using only three signal lines between sensor modules, and fast, configurable sampling. We validate the approach on a tendon-driven robotic hand integrating 16 joint sensor modules and one four-channel tactile sensor module, enabling acquisition of 20 sensor channels at a full-scan rate of 1 kHz, with stable operation up to 1.5 kHz. Joint sensor characterization showed a maximum slope absolute percentage error (APE) of 0.446% and sub-degree estimation error, indicating that the proposed readout system does not significantly degrade sensing performance. For tactile sensing, LSTM-based models achieved an RMSE of 0.125 N for force estimation and 93.4% accuracy for five-class contact-location classification, and were deployed for real-time inference at 1 kHz. System-level experiments showed that the joint sensors provide more accurate feedback than motor-based estimation during interaction, while the tactile sensor enables responsive force estimation in contact. The proposed architecture offers a practical path toward fully sensorized robotic hands for dexterous manipulation."
+  },
+  {
+    "title": "Decompose and Recompose: Reasoning New Skills from Existing Abilities for Cross-Task Robotic Manipulation",
+    "original_title": "Decompose and Recompose: Reasoning New Skills from Existing Abilities for Cross-Task Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.01448",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01448v1 Announce Type: new \nAbstract: Cross-task generalization is a core challenge in open-world robotic manipulation, and the key lies in extracting transferable manipulation knowledge from seen tasks. Recent in-context learning approaches leverage seen task demonstrations to generate actions for unseen tasks without parameter updates. However, existing methods provide only low-level continuous action sequences as context, failing to capture composable skill knowledge and causing models to degenerate into superficial trajectory imitation. We propose Decompose and Recompose, a skill reasoning framework using atomic skill-action pairs as intermediate representations. Our approach decomposes seen demonstrations into interpretable skill--action alignments, enabling the model to recompose these skills for unseen tasks through compositional reasoning. Specifically, we construct a task-adaptive dynamic demonstration library via visual-semantic retrieval combined with skill sequences from a planning agent, complemented by a coverage-aware static library to fill missing skill patterns. Together, these yield skill-comprehensive demonstrations that explicitly elicit compositional reasoning for skill composition and execution ordering. Experiments on the AGNOSTOS benchmark and real-world environments validate our method's zero-shot cross-task generalization capability."
+  },
+  {
+    "title": "Action Agent: Agentic Video Generation Meets Flow-Constrained Diffusion",
+    "original_title": "Action Agent: Agentic Video Generation Meets Flow-Constrained Diffusion",
+    "link": "https://arxiv.org/abs/2605.01477",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.01477v1 Announce Type: new \nAbstract: We present Action Agent, a two-stage framework that unifies agentic navigation video generation with flow-constrained diffusion control for multi-embodiment robot navigation. In Stage I, a large language model (LLM) acts as an orchestration module that selects video diffusion models, refines prompts through iterative validation, and accumulates cross-task memory to synthesize physically plausible first-person navigation videos from language and image inputs. This increases video generation success from 35% (single-shot) to 86% across 50 navigation tasks. In Stage II, we introduce FlowDiT, a Flow-Constrained Diffusion Transformer that converts optimized goal videos and language instructions into continuous velocity commands using action-space denoising diffusion. FlowDiT integrates DINOv2 visual features, learned optical flow for ego-motion representation, and CLIP language embeddings for semantic stopping. We pretrain on the RECON outdoor navigation dataset and fine-tune on 203 Unitree G1 humanoid episodes collected in Isaac Sim to calibrate velocity dynamics. A single 43M-parameter checkpoint achieves 73.2% navigation success in simulation and 64.7% task completion on a real Unitree G1 in unseen indoor environments under open-loop execution, while operating at 40--47 Hz. We evaluate Action Agent across three embodiments: a Unitree G1 humanoid (real hardware), a drone, and a wheeled mobile robot (Isaac Sim), demonstrating that decoupling trajectory imagination from execution yields a scalable and embodiment-aware paradigm for language-guided navigation."
+  },
+  {
+    "title": "VOFA: Visual Object Goal Pushing with Force-Adaptive Control for Humanoids",
+    "original_title": "VOFA: Visual Object Goal Pushing with Force-Adaptive Control for Humanoids",
+    "link": "https://arxiv.org/abs/2605.01518",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01518v1 Announce Type: new \nAbstract: The ability to push large objects in a goal-directed manner using onboard egocentric perception is an essential skill for humanoid robots to perform complex tasks such as material handling in warehouses. To robustly manipulate heavy objects to arbitrary goal configurations, the robot must cope with unknown object mass and ground friction, noisy onboard perception, and actuation errors; all in a real-time feedback loop. Existing solutions either rely on privileged object-state information without onboard perception or lack robustness to variations in goal configurations and object physical properties. In this work, we present VOFA, a visual goal-conditioned humanoid loco-manipulation system capable of pushing objects with unknown physical properties to arbitrary goal positions. VOFA consists of a two-level hierarchical architecture with a high-level visuomotor policy and a low-level force-adaptive whole-body controller. The high-level policy processes noisy onboard observations and generates goal-conditioned commands to operate in closed loop across diverse object-goal configurations, while the low-level whole-body controller provides robustness to variations in object physical properties. VOFA is extensively evaluated in both simulation and real-world experiments on the Booster T1 humanoid robot. Our results demonstrate strong performance, achieving over 90% success in simulation and over 80% success in real-world trials. Moreover, VOFA successfully pushes objects weighing up to 17kg, exceeding half of the Booster T1's body weight."
+  },
+  {
+    "title": "Hydra-DP3: Frequency-Aware Right-Sizing of 3D Diffusion Policies for Visuomotor Control",
+    "original_title": "Hydra-DP3: Frequency-Aware Right-Sizing of 3D Diffusion Policies for Visuomotor Control",
+    "link": "https://arxiv.org/abs/2605.01581",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01581v1 Announce Type: new \nAbstract: Diffusion-based visuomotor policies perform well in robotic manipulation, yet current methods still inherit image-generation-style decoders and multi-step sampling. We revisit this design from a frequency-domain perspective. Robot action trajectories are highly smooth, with most energy concentrated in a few low-frequency discrete cosine transform modes. Under this structure, we show that the error of the optimal denoiser is bounded by the low-frequency subspace dimension and residual high-frequency energy, implying that denoising error saturates after very few reverse steps. This further suggests that action denoising requires a much simpler denoising model than image generation. Motivated by this insight, we propose Hydra-DP3(HDP3), a pocket-scale 3D diffusion policy with a lightweight Diffusion Mixer decoder that supports two-step DDIM inference. Our synthetic experiments validate the theory and support the sufficiency of two-step denoising. Futhermore, across RoboTwin2.0, Adroit, MetaWorld, and real-world tasks, HDP3 achieves state-of-the-art performance with fewer than 1% of the parameters of prior 3D diffusion-based policies and substantially lower inference latency."
+  },
+  {
+    "title": "Phone2Act: A Low-Cost, Hardware-Agnostic Teleoperation System for Scalable VLA Data Collection",
+    "original_title": "Phone2Act: A Low-Cost, Hardware-Agnostic Teleoperation System for Scalable VLA Data Collection",
+    "link": "https://arxiv.org/abs/2605.01948",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01948v1 Announce Type: new \nAbstract: Collecting diverse, high-quality manipulation data for Vision-Language-Action (VLA) model training remains prohibitively expensive for many research groups, as existing teleoperation frameworks rely on specialized hardware or are tightly coupled to specific robot platforms. We present Phone2Act, a low-cost, hardware-agnostic teleoperation framework that transforms a commodity smartphone into a 6-DoF robot controller via Google ARCore. Built on a modular ROS 2 architecture, Phone2Act decouples control logic from hardware specifics through interchangeable bridge nodes, supporting platforms from industrial cobots to low-cost bimanual arms without code modification. A Universal Recorder synchronizes multi-camera RGB streams with robot state feedback and exports demonstrations natively in the LeRobot dataset format, eliminating post-processing and enabling immediate VLA fine-tuning. We validate the framework by fine-tuning GR00T-N1.5 on 130 collected episodes, achieving a 90% success rate on a real-world multi-stage pick-and-place task deployed on a physical Dobot CR5."
+  },
+  {
+    "title": "Optimized and kinematically feasible multi-agent motion planning",
+    "original_title": "Optimized and kinematically feasible multi-agent motion planning",
+    "link": "https://arxiv.org/abs/2605.01996",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01996v1 Announce Type: new \nAbstract: Multi-agent motion planning (MAMP) is an important problem for autonomous systems with multiple agents. In this work we propose a two-step method for finding optimized and kinematically feasible solutions to MAMP problems. The first step finds an initial feasible solution using state-of-the-art methods such as conflict-based search (CBS) or priority-based search (PBS), and the second step is an improvement step which improves the solution by solving a multi-phase optimal control problem (OCP) where the initial solution is used to warm-start the solver. We also propose a method for generating motion primitives in an optimized way under the constraint that the primitive durations are all multiples of the same sample time.\n  We evaluate our proposed framework on a MAMP problem for tractor-trailer systems. We extend the safe interval path planning with interval projections (SIPP-IP) algorithm so it can handle more general cost functions and larger agents, but our results show that for the tractor-trailer system a simple lattice-based planner performs better due to less conservative collision checks. Our experiments also indicate that CBS performs better than PBS for this system as it achieves a higher success rate in environments with obstacles and had a lower average runtime, although both planners achieve solutions of similar quality after the improvement step."
+  },
+  {
+    "title": "VILAS: A VLA-Integrated Low-cost Architecture with Soft Grasping for Robotic Manipulation",
+    "original_title": "VILAS: A VLA-Integrated Low-cost Architecture with Soft Grasping for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.02037",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02037v1 Announce Type: new \nAbstract: We present VILAS, a fully low-cost, modular robotic manipulation platform designed to support end-to-end vision-language-action (VLA) policy learning and deployment on accessible hardware. The system integrates a Fairino FR5 collaborative arm, a Jodell RG52-50 electric gripper, and a dual-camera perception module, unified through a ZMQ-based communication architecture that seamlessly coordinates teleoperation, data collection, and policy deployment within a single framework. To enable safe manipulation of fragile objects without relying on explicit force sensing, we design a kirigami-based soft compliant gripper extension that induces predictable deformation under compressive loading, providing gentle and repeatable contact with delicate targets. We deploy and evaluate three state-of-the-art VLA models on the VILAS platform: pi_0, pi_0.5, and GR00T N1.6. All models are fine-tuned from publicly released pretrained checkpoints using an identical demonstration dataset collected via our teleoperation pipeline. Experiments on a grape grasping task validate the effectiveness of the proposed system, confirming that capable manipulation policies can be successfully trained and deployed on low-cost modular hardware. Our results further provide practical insights into the deployment characteristics of current VLA models in real-world settings."
+  },
+  {
     "title": "Home Robots Are Moving Into Reality as 1X Scales Up U.S. Production - kmjournal.net",
     "original_title": "Home Robots Are Moving Into Reality as 1X Scales Up U.S. Production - kmjournal.net",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzUXRlQ3Nob2xZLWtlTkhhcVRTSVVhMDBuMy1ubFc4bjVaNTFnSGNWZTI0VnY5UUZTaEJ3WW1FUkx0MVVEOE9PU2dmTklVTVNpVXpHRGtldWRwOTFaWHAtbjV3Z1lvRWd4NElZ?oc=5",
@@ -358,6 +430,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "hand",
     "summary": "중국 로봇 손 제조업체 Linkerbot, 인간의 섬세한 기술 라이브러리 전체 복제 목표|| 중국 로봇 손 제조업체 Linkerbot는 인간의 다양하고 정교한 기술을 모아놓은 라이브러리를 완전히 복제하는 것을 목표로 하고 있습니다.  Linkerbot은 촉각, 위치 감지 등 다양한 센서를 통해 인간 손의 복잡한 동작을 시뮬레이션할 수 있는 로봇 손 개발에 집중하고 있습니다."
+  },
+  {
+    "title": "Profile: A Chinese prodigy on a mission to bring robots to life - Xinhua",
+    "original_title": "Profile: A Chinese prodigy on a mission to bring robots to life - Xinhua",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBtTDNwbzJVN1B5X1pHYlZvMmhudWNHcTNMTFZUQmZtZk83bjZDeW1oTmdseENvQ0NhQlM1RWoyUW1rZVhORDB4V3pOSFdLTUVuODNZOGprY1Z1VG8yeHV4Z1VWMkk0U1JneHZrSzlYaDhGY29qUWVUN252UWY?oc=5",
+    "date": "2026-05-04 00:58",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Profile: A Chinese prodigy on a mission to bring robots to life  Xinhua"
   },
   {
     "title": "중국 로봇 제작 스타트업 링크르봇, 60억 달러 평가 목표 설정",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "수술 로봇 자동화 정책"
-  },
-  {
-    "title": "Vision Language Action Fine-tuning의 적응 용량 할당",
-    "original_title": "Adaptive Capacity Allocation for Vision Language Action Fine-tuning",
-    "link": "https://arxiv.org/abs/2603.07404",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "VLAs(Vision language action models)는 물리적 AI에서 increasing하게 사용되는 반면, 예전 환경, 의복체, 작업에 배치된 pre-trained VLA 모델이 아직适应이 필요합니다. Parameter-efficient fine-tuning(PEFT)은 특히 LoRA를 통해 VLA 정책을 찾는 데 일반적으로 사용되지만, 노출 용량 조정 버튼은 일관하지 않습니다. 로보틱스 전송에서는 고전적인 intrinsic rank가 언어 fine-tuning보다 높으며 작업이 다르면 그 값이 달라집니다. 작은 ranks는 LLMs에 적합한 반면, spectral 분석 결과 VLA들은 더 큰 ranks(예: 128)나 near-full rank를 요구할 수 있습니다. 우리는 LoRA-SP(Select-Prune), 적응 용량 fine-tuning 방법을 소개합니다. 이 메서드는 고정 용량 업데이트를 입력 및 層wise 용량으로 replacing하고 SVD-style parameterization을 사용하여 shared vector bank에 있는 vectors의 scores를 singular values로 사용합니다. 활성 세트는 cumulative squared scores E(k) ≥ η에 대한 에너지 타겟에 의해 선택됩니다. 이 에너지 타겟은 approximation error에 직접적으로 링크된 yours를 제공하고 router가 적절한 방향을 따라 그저 몇 개의 vectors를 사용하여 정확도를 유지할 수 있습니다. 이렇게 얻어진 compact adapter는 cross-task interference를 줄이고 일반화 성능을 향상시킬 수 있습니다. 실제로 4개의 real-robot manipulation task에서 LoRA-SP은 VLA backbones인 $\\pi_0$과 SmolVLA에 적용하여 full fine-tuning보다 적은 trainable parameter를 사용하면서 성공률이 31.6%까지 향상되었으며 rank choice에 대한 robustness를 보였습니다."
-  },
-  {
-    "title": "FeasibleCap: 실시간 수행 가능성 지침 시스템",
-    "original_title": "FeasibleCap: Real-Time Embodiment Constraint Guidance for In-the-Wild Robot Demonstration Collection",
-    "link": "https://arxiv.org/abs/2603.07580",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국 로봇 FREE 데이터 수집 프레임워크 FeasibleCap을 발표합니다. 이 시스템은 각 프레임에서 대상 로봇 모델에 대한 도달 가능성, 조인트 속도 제한, 충돌 등을 확인하고, 디바이스 시각 오버레이와 촉각 신호를 통해 демон스트레이터가 수집 중 수정할 수 있도록 합니다. 이렇게 하면 실제로 사용할 수 있는 경로의 성공률을 높이고, 불가능한 프레임의 비율을 줄입니다."
-  },
-  {
-    "title": "drone planning 방면 지식 결손 문제 해결 via LLM 기반 적극적 발화",
-    "original_title": "Reasoning Knowledge-Gap in Drone Planning via LLM-based Active Elicitation",
-    "link": "https://arxiv.org/abs/2603.07824",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "UAV 조정에 있어 환경 불확실성 대응을 위해 제안하는 새로운_framework는 control takeover를 대체하여 적극적 정보 발화를 통해 협력 모범을 변화시킨다. 이 프레임워크는 MINT(minimal information neuro-symbolic tree)라 불리는 reasoning mechanism을 도입하여 장애물 및 목표에 대한 지식 결손을 queryable 형식으로 구조화하고, LLM을 활용하여 최적의 2진 쿼리를 생성하여 특정 모호함을 최소한의 인간 상호작용으로 해결하는 것을 보여준다."
-  },
-  {
-    "title": "로봇-zero통신 3D 추적-탈출의 강건성 향상: 표현 파손 방식으로 의존하지 않는 협력",
-    "original_title": "Less is More: Robust Zero-Communication 3D Pursuit-Evasion via Representational Parsimony",
-    "link": "https://arxiv.org/abs/2603.08273",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Robust zero-communication 3D pursuit-evasion via representational parsimony was successfully achieved. By removing redundant inter-agent channels and using Contribution-Gated Credit Assignment, the system reached a success rate of 0.753 +/- 0.091 and reduced collisions to 0.223 +/- 0.066 in Stage-5 evaluation. The results also showed resilience under stress tests and zero-shot transfer on urban-canyon maps, supporting a practical paradigm shift towards explicit channel severance for robustness improvement."
-  },
-  {
-    "title": "STRIDE: Lagrangian and Stochastic Residual Dynamics via Flow Matching",
-    "original_title": "STRIDE: Structured Lagrangian and Stochastic Residual Dynamics via Flow Matching",
-    "link": "https://arxiv.org/abs/2603.08478",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "로봇이 비구조화된 환경에서 작동할 때는 불확실성으로 인해 간적으로 접촉, 구간의 가변성, 모델링되지 않은 충돌 등에 대응해야 합니다. 최근 model-free 접근 방식은 좋은 성능을 나타냈지만, 배포 설정이 아직 예측 모델이 필요한 경우가 많습니다. 분석적 고刚체 모델은 강한 물리적 구조를 제공하지만, 복잡한 상호 작용 효과를 잘 포착하지 못하고, 데이터에 의존하는 모델은 물리적 일관성을 위반할 수 있고, 장거리 이론漂移을 축적할 수 있습니다. 이 작업에서는 STRIDE, 역동 학습 프레임워크를 제안합니다. STRIDE는 고刚체 역동을 Lagrangian Neural Network(LNN)로 모델링하여 에너지 일관성의 유지와, 잔여 상호 작용력은 Conditional Flow Matching(CFM)를 사용하여 다중 모드 상호 작용 현상을 포착합니다. 이 두 구성 요소는 엔드 투엔드으로 훈련되어 물리적 구조를 유지하면서 복잡한 확률론적 행동을 나타낼 수 있습니다. STRIDE를 다양한 시스템에서 평가했습니다, 이를 포함하여PENDULUM, Unitree Go1 quadruped, Unitree G1 humanoids입니다. 결과는 20%의 장거리 예측 오류 감소와 30%의 접촉력 예측 오류 감소를 보여주어 불확실한 로봇 환경에서 더可 신뢰적 모델 기반 제어를 지원합니다."
-  },
-  {
-    "title": "Robotic Manipulation Learning Framework EquiBim ~함",
-    "original_title": "EquiBim: Learning Symmetry-Equivariant Policy for Bimanual Manipulation",
-    "link": "https://arxiv.org/abs/2603.08541",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Symmetry-equivariant policy learning framework EquiBim이 소개됨, 이는 bimanual manipulation을 학습하는 데 사용되는 물리적_symmetry를 강조하여 고른 행동을 취하게 하는 새로운 방법으로, 이 접근방식은 다양한 관측 모데이티 및 액션 표현에 적용할 수 있는 모델-agnostic framework로, RoboTwin robotics platform에서 시뮬레이션과 실제 실험에서 성능 향상과鲁棒성을 보임."
-  },
-  {
-    "title": "Diffusion-SAFE: 다중 모드 인간 의도 액션 시퀀스 예측을 위한 Diffusion-Native 인공-로봇 운전자 핸오버 방식",
-    "original_title": "Diffusion-SAFE: Diffusion-Native Human-to-Robot Driving Handover for Shared Autonomy",
-    "link": "https://arxiv.org/abs/2505.09889",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "humano-robot 공유 autonomy의 요구는 인간 행동 anticipation, 위험 detection 및 안전하고-smooth한 제어 전달 required. 우리는 Diffusion-SAFE, closed-loop framework를 제안하는데, 이에는 2개의 diffusion 모델이 포함: evaluator가 multimodal human-intent action sequences를 예측하는 probabilistic risk detection, safety-guided copilot가 map-based safety certificate의 gradient를 사용하여 safe regions을 steering하는 thing. 위험 감지 시 제어는 partial diffusion을 통해 전달됨: human plan은 intermediate level까지 forward-noised이고, safety-guided copilot에 의해 denoised됨. forward-diffusion ratio $\\rho$는 제어-authority shift knob-small $\\rho$는 output이 human intent에 가까워지게 하며, 증가하는 $\\rho$는 copilot의 authoritativeness를 피하게 함. Unlike score function을 hand-crafted한 방법, ours는 demonstrations에서 safety evaluation과 plan generation을 직접 지원함. 우리는 Diffusion-SAFE를 시뮬레이션 및 실제 ROS-based race car에 평가하여 93.0%/87.0%(sim/real) handover 성공률 및 smooth transition을 달성함."
-  },
-  {
-    "title": "ActivePusher: Active Learning and Planning with Residual Physics for Nonprehensile Manipulation",
-    "original_title": "ActivePusher: Active Learning and Planning with Residual Physics for Nonprehensile Manipulation",
-    "link": "https://arxiv.org/abs/2506.04646",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국 개발자·투자가 관심 있는 뉴스입니다. 'ActivePusher'는 새로운 프레임워크로, residual-physics 모델링과 불확실성 기반의 액티브 러닝을 결합하여 가장 정보 풍부한 스킬 매개변수를 데이터 수집에 초점을 맞추어 효율성을 높이고 계획 성공률을 개선했으며, 이와 함께 모델-기반 키노딕스 플래너를 일관되게 통합하여 불확실성 추정치를 기반으로 controlsampling을 더 신뢰할 수 있는 액션으로 편향시켰습니다."
-  },
-  {
-    "title": "Visuomotor 정책의 Task-Aware Semantic-Geometric 표현",
-    "original_title": "Choose What to Observe: Task-Aware Semantic-Geometric Representations for Visuomotor Policy",
-    "link": "https://arxiv.org/abs/2603.07875",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Visuomotor 정책에 대해 demonstrating된 데이터가 흔히 raw RGB 관측치에서 nuisance visual 요인으로 과적합되면, 이를 통해 나타나는 강건성은 배경 변화와 대상 재색칠 등 출현 변동 하에서의 brittle한 행동을 초래하게 된다. 우리는 task-aware 관측 인터페이스를 제안하여 visual 입력을 공통 표현으로 canonicalize하고, OOD 출현 변동에 대한 내구성을 향상시킴으로써 정책을 수정하거나 fine-tuning하지 않아도 되게 한다. RGB 이미지와 열어놓은-task relevant 엔티티의 명세에 따라, 우리는 SAM3를 사용하여 목표 물체와 로봇/그리퍼를 분할하고, L0 관측을 생성하는데 predefined semantic 색상을 사용하여 constant 배경에서 segmented 엔티티를 다시 그린다. 강건한 기하적 주회가 필요한_tasks는 더 추가적으로 Depth Anything 3의 monocular dept를 segmented 레고에 depth-guided overwrite 방식으로 주입하여 unified semantic-geometric 관측(L1)을 생성하게 한다. 이 관측은 표준 3 채널, 이미지와 같은 입력으로 남게 된다. 우리는 RoboMimic (Lift), ManiSkill YCB grasping under clutter, RLBench task 4-under controlled appearance shifts, 및 두 Franka Tasks (ReachX and CloseCabinet)에 평가하고, 모든 벤치마크와 정책 backbone (Flow Matching Policy and SmolVLA)에서 interface가 in-distribution 성능을 보장하는 한편 OOD visual shift 하에서의 내구성을 크게 향상시켰다."
   }
 ]
