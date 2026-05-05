@@ -288,6 +288,78 @@
     "summary": "arXiv:2605.02739v1 Announce Type: new \nAbstract: Dual-system Vision-Language-Action (VLA) models achieve state-of-the-art robotic manipulation but are bottlenecked by the VLM backbone, which must\n  execute at every control step while producing temporally redundant features. We propose Latent Bridge, a lightweight model that predicts VLM output\n  deltas between timesteps, enabling the action head to operate on predicted outputs while the expensive VLM backbone is called only periodically. We\n  instantiate Latent Bridge on two architecturally distinct VLAs: GR00T-N1.6 (feature-space bridge) and {\\pi}0.5 (KV-cache bridge), demonstrating that the\n  approach generalizes across VLA designs. Our task-agnostic DAgger training pipeline transfers across benchmarks without modification. Across four\n  LIBERO suites, 24 RoboCasa kitchen tasks, and the ALOHA sim transfer-cube task, Latent Bridge achieves 95-100% performance retention while reducing\n  VLM calls by 50-75%, yielding 1.65-1.73x net per-episode speedup."
   },
   {
+    "title": "A skin-like conformal sensor for real-time shape mapping",
+    "original_title": "A skin-like conformal sensor for real-time shape mapping",
+    "link": "https://arxiv.org/abs/2605.01170",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01170v1 Announce Type: cross \nAbstract: Reliable real-time 3D shape sensing is essential for robust control and interpretation of deformable systems during motion. Existing vision-based approaches require line-of-sight and complex instrumentation, limiting operation in occluded and space-constrained settings. Here, we introduce a scalable, skin-like sensor that reconstructs its continuous 3D deformation in real time from distributed strain measurements. The device embeds a 2D array of mirror-stacked, printed oxidized eutectic gallium-indium (o-EGaIn) strain gauges within an elastomeric film to measure off-neutral-axis strains. Combined with a mechanics-informed observation model and a fast optimization routine, the system estimates local curvature, elongation, offset, and orientation under concurrent stretching, bending, and indentation, enabling reconstruction of complex surfaces. A 5-by-5 array with a 12 mm pitch achieves a mean surface reconstruction error of 0.62 mm with 0.1s latency across all tested scenarios. When conforming to complex surfaces, the sensor provides fast 3D shape mapping of the underlying geometry. Demonstrations involving palm gesturing, finger indentation, and contact-induced balloon deformation highlight utility for epidermal motion tracking, haptic interaction, and intraoperative monitoring."
+  },
+  {
+    "title": "Towards Efficient and Expressive Offline RL via Flow-Anchored Noise-conditioned Q-Learning",
+    "original_title": "Towards Efficient and Expressive Offline RL via Flow-Anchored Noise-conditioned Q-Learning",
+    "link": "https://arxiv.org/abs/2605.01663",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01663v1 Announce Type: cross \nAbstract: We propose Flow-Anchored Noise-conditioned Q-Learning (FAN), a highly efficient and high-performing offline reinforcement learning (RL) algorithm. Recent work has shown that expressive flow policies and distributional critics improve offline RL performance, but at a high computational cost. Specifically, flow policies require iterative sampling to produce a single action, and distributional critics require computation over multiple samples (e.g., quantiles) to estimate value. To address these inefficiencies while maintaining high performance, we introduce FAN. Our method employs a behavior regularization technique that utilizes only a single flow policy iteration and requires only a single Gaussian noise sample for distributional critics. Our theoretical analysis of convergence and performance bounds demonstrates that these simplifications not only improve efficiency but also lead to superior task performance. Experiments on robotic manipulation and locomotion tasks demonstrate that FAN achieves state-of-the-art performance while significantly reducing both training and inference runtimes. We release our code at https://github.com/brianlsy98/FAN."
+  },
+  {
+    "title": "IMPACT-HOI: Supervisory Control for Onset-Anchored Partial HOI Event Construction",
+    "original_title": "IMPACT-HOI: Supervisory Control for Onset-Anchored Partial HOI Event Construction",
+    "link": "https://arxiv.org/abs/2605.01666",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01666v1 Announce Type: cross \nAbstract: We present IMPACT-HOI, a mixed-initiative framework for annotating egocentric procedural video by constructing structured event graphs for Human-Object Interactions (HOI), motivated by the need for high-quality structured supervision for learning robot manipulation from human demonstration. IMPACT-HOI frames this task as the incremental resolution of a partially specified, onset-anchored event state. A trust-calibrated controller selects among direct queries, human-confirmed suggestions, and conservative completions based on empirical annotator behavior and evidence quality. A risk-bounded execution protocol, utilizing atomic rollback, ensures that human-confirmed decisions are preserved against conflicting automated updates. A user study with 9 participants shows a 13.5% reduction in manual annotation actions, a 46.67% event match rate, and zero confirmed-field violations under the studied protocol. The code will be made publicly available at https://github.com/541741106/IMPACT_HOI."
+  },
+  {
+    "title": "Stability of Control Lyapunov Function Guided Reinforcement Learning",
+    "original_title": "Stability of Control Lyapunov Function Guided Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2605.01978",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.01978v1 Announce Type: cross \nAbstract: Reinforcement learning (RL) has become the de facto method for achieving locomotion on humanoid robots in practice, yet stability analysis of the corresponding control policies is lacking. Recent work has attempted to merge control theoretic ideas with reinforcement learning through control guided learning. A notable example of this is the use of a control Lyapunov function (CLF) to synthesize the reinforcement learning rewards, a technique known as CLF-RL, which has shown practical success. This paper investigates the stability properties of optimal controllers using CLF-RL with the goal of bridging experimentally observed stability with theoretical guarantees. The RL problem is viewed as an optimal control problem and exponential stability is proven in both continuous and discrete time using both core CLF reward terms and the additional terms used in practice. The theoretical bounds are numerically verified on systems such as the double integrator and cart-pole. Finally, the CLF guided rewards are implemented for a walking humanoid robot to generate stable periodic orbits."
+  },
+  {
+    "title": "Robotic Affection -- Opportunities of AI-based haptic interactions to improve social robotic touch through a multi-deep-learning approach",
+    "original_title": "Robotic Affection -- Opportunities of AI-based haptic interactions to improve social robotic touch through a multi-deep-learning approach",
+    "link": "https://arxiv.org/abs/2605.02538",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02538v1 Announce Type: cross \nAbstract: Despite the advancement in robotic grasping and dexterity through haptic information, affective social touch, such as handshaking or reassuring stroking, remains a major challenge in Human-Robot-Interaction. This position paper examines current progress and limitations across artificial intelligence, haptics and robotics research, and proposes a novel multi-model architecture to address these gaps. Drawing inspiration from neurobiology, we decompose affective touch into distinct, specialized subtasks models. By treating affective touch as a distributed, closed-loop perceptual task rather than a monolithic motoric movement, we aim to overcome the \"haptic uncanny valley\" through a peer-to-peer, state-sharing framework. Our approach supports scalable and cumulative development within a Sim-to-Real pipeline, fostering interdisciplinary collaboration. By enabling haptics, AI, and robotics researchers to contribute independently yet coherently, we outline a pathway toward a unified, expressive system for social robotics."
+  },
+  {
+    "title": "MorphIt: Flexible Spherical Approximation of Robot Morphology for Representation-driven Adaptation",
+    "original_title": "MorphIt: Flexible Spherical Approximation of Robot Morphology for Representation-driven Adaptation",
+    "link": "https://arxiv.org/abs/2507.14061",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2507.14061v2 Announce Type: replace \nAbstract: What if a robot could rethink its own morphological representation to better meet the demands of diverse tasks? Most robotic systems today treat their physical form as a fixed constraint rather than an adaptive resource, forcing the same rigid geometric representation to serve applications with vastly different computational and precision requirements. We introduce MorphIt, a novel spherical approximation framework that treats morphological representation as a tunable resource. MorphIt enables task-driven morphological adaptation through gradient-based optimization with tunable parameters that provide explicit control over the accuracy-efficiency tradeoff. Unlike existing approaches that rely on either labor-intensive manual specification or inflexible computational methods optimized for visualization rather than robotics, MorphIt generates spherical approximations up to 100x faster while maintaining superior geometric fidelity. Quantitative evaluations demonstrate that MorphIt outperforms baseline approaches (Variational Sphere Set Approximation and Adaptive Medial-Axis Approximation), achieving better mesh approximation with fewer spheres. Through seamless integration with existing robotics infrastructure, MorphIt enables enhanced capabilities in collision detection accuracy, contact-rich interaction simulation, and navigation through confined spaces. By dynamically adapting geometric representations to task requirements, robots can now exploit their physical embodiment as an active resource rather than an inflexible parameter, opening new frontiers for manipulation in environments where physical form must continuously balance precision with computational tractability."
+  },
+  {
+    "title": "Learning to Act Through Contact: A Unified View of Multi-Task Robot Learning",
+    "original_title": "Learning to Act Through Contact: A Unified View of Multi-Task Robot Learning",
+    "link": "https://arxiv.org/abs/2510.03599",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.03599v2 Announce Type: replace \nAbstract: We present a unified framework for multi-task locomotion and manipulation policy learning grounded in a contact-explicit representation. Instead of designing different policies for different tasks, our approach unifies the definition of a task through a sequence of contact goals--desired contact positions, timings, and active end-effectors. This enables leveraging the shared structure across diverse contact-rich tasks, leading to a single policy that can perform a wide range of tasks. In particular, we train a goal-conditioned reinforcement learning (RL) policy to realise given contact plans. We validate our framework on multiple robotic embodiments and tasks: a quadruped performing multiple gaits, a humanoid performing multiple biped and quadrupedal gaits, and a humanoid executing different bimanual object manipulation tasks. Each of these scenarios is controlled by a single policy trained to execute different tasks grounded in contacts, demonstrating versatile and robust behaviours across morphologically distinct systems. Our results show that explicit contact reasoning significantly improves generalisation to unseen scenarios, positioning contact-explicit policy learning as a promising foundation for scalable loco-manipulation. Video available at: https://youtu.be/idHx67oHHU0?si=qZJ7C0ujemXNWgA5"
+  },
+  {
+    "title": "A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting",
+    "original_title": "A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting",
+    "link": "https://arxiv.org/abs/2601.03200",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2601.03200v2 Announce Type: replace \nAbstract: Developing high-fidelity, interactive digital twins is crucial for enabling closed-loop motion planning and reliable real-world robot execution, which are essential to advancing sim-to-real transfer. However, existing approaches often suffer from slow reconstruction, limited visual fidelity, and difficulties in converting photorealistic models into planning-ready collision geometry. We present a practical framework that constructs high-quality digital twins within minutes from sparse RGB inputs. Our system employs 3D Gaussian Splatting (3DGS) for fast, photorealistic reconstruction as a unified scene representation. We enhance 3DGS with visibility-aware semantic fusion for accurate 3D labelling and introduce an efficient, filter-based geometry conversion method to produce collision-ready models seamlessly integrated with a Unity-ROS2-MoveIt physics engine. In experiments with a Franka Emika Panda robot performing pick-and-place tasks, we demonstrate that this enhanced geometric accuracy effectively supports robust manipulation in real-world trials. These results demonstrate that 3DGS-based digital twins, enriched with semantic and geometric consistency, offer a fast, reliable, and scalable path from perception to manipulation in unstructured environments."
+  },
+  {
     "title": "Home Robots Are Moving Into Reality as 1X Scales Up U.S. Production - kmjournal.net",
     "original_title": "Home Robots Are Moving Into Reality as 1X Scales Up U.S. Production - kmjournal.net",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzUXRlQ3Nob2xZLWtlTkhhcVRTSVVhMDBuMy1ubFc4bjVaNTFnSGNWZTI0VnY5UUZTaEJ3WW1FUkx0MVVEOE9PU2dmTklVTVNpVXpHRGtldWRwOTFaWHAtbjV3Z1lvRWd4NElZ?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "인공 조종 및 다exterity-expert VLA를 결합한 인간과 같은 thaoat 제어 방안을 제안함으로써 인공 조종의 발전을 도모하고 있음. 이를 달성하기 위해 IMCopilot와 MoDE-VLA를 구축하여 인공 조종의 어려운 문제점을 해결하고, 4가지 증가하는 복잡도에 대한 테스트에서 2배 이상의 성공률 향상을 나타내어 제안한 방안의有效성을 증명함."
-  },
-  {
-    "title": "Tethered Payload Transport via Rotating Equilibrium",
-    "original_title": "Energy-Efficient Collaborative Transport of Tether-Suspended Payloads via Rotating Equilibrium",
-    "link": "https://arxiv.org/abs/2603.06955",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Payloads의 Tethered Collaborative Transportation은 공간, 전력, 무게 제약에 의해 제한되는 바 있다. 정적 균형 조건을 기초로 하는 truyền统적인 접근 방식은 각 항공기들이 형상幾何미를 유지하기 위해 각종력을 생성하여 충돌과 공력 상호작용을避ける 것이다. 이러한 수직힘 성분이 이상의 경우와 비교하여 에너지 손실을 초래하는 것은 분명한 제약이다. 긴 Tether 구성으로 이를 최소화할 수 있지만, 그것은 항공기들을 더 가까운 위치에서 날아가게 하거나 Tether의 길이를 크게 늘리는 것으로 인해 복잡성을 증가시키고 활용 가능성을 줄이는 것이다. 우리는 tether-suspended flying system을 회전 균형 상태에서 운영하는 새로운 접근 방식을 제안하고 있다. 이 방법에서는 Steady circular motion을 유지하여 원심력으로 Tether의 긴장을 제공할 수 있어, 각 Quadrotor가 pure vertical thrust를 생성할 수 있어, 총힘과 전력을 최소화할 수 있는 것이다. 또한, 다양한 Tether 구성이 사용 가능해지게 하여 효율성을 높일 수 있다. Experimental results는 회전 균형 조건에서 20%의 전력 소모를 줄이는 것을 보여주고 있으며, 공유 항공 솔루션이 더 실제적으로 관련되게 하는 것을 확인해왔다."
-  },
-  {
-    "title": "KOREAN_TITLE**: granular properties 추정 이론(I-RFT) - 로봇이 흙지반 물리적 상호작용을 통해 학습",
-    "original_title": "Inverse Resistive Force Theory (I-RFT): Learning granular properties through robot-terrain physical interactions",
-    "link": "https://arxiv.org/abs/2603.07796",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "KOREAN_SUMMARY**: 새로운 물리학 기반의 기계 학습 프레임워크 I-RFT를 제안하여, 로봇이 자연적인 locomotion 중 granular property 추정을 가능하게 했다. 이 프레임워크는 Granular Resistive Force Theory 모델을 결합한 Gaussian Processes를 사용하여, proprioceptively 측정된 접촉력으로부터 지반 물리적 속성을 추정하는 데 성공했다."
-  },
-  {
-    "title": "Aero-Promptness: Drag-Aware Aerodynamic Manipulability for Propeller-driven Vehicles",
-    "original_title": "Aero-Promptness: Drag-Aware Aerodynamic Manipulability for Propeller-driven Vehicles",
-    "link": "https://arxiv.org/abs/2603.07998",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "프로펠러 운송 수동차의 에어로ダイنام릭操-handling을위한 드래그-인지操-manipulability 프레임워크를 도입함. 이 프레임워크는 각 모터의 잔여 자이로 액셀러레이션 용량에 기초한 리만치 메트릭을 사용하여 제동력 한계 및 에어로다이나믹 드래그를 고려함. 이 메트릭을 비선형 스루스 법칙으로 매핑하면 generalized force space에 대한 상태 종속操-handling 볼륨을얻음. 이 볼륨의 로그-결정치가 자연적인 장벽 함수로 작동하여 제동력 과소진 및 저 스펀 thrust 손실을 엄격히 벌칙함. 이 볼륨을 allocation fibers에 따라 최적화하면 generalized-force space에서 좌표 축척 무관하게의 재dundancy 해결 전략을 제공함."
-  },
-  {
-    "title": "TRIAGE: 알레토릭-에피스텐틱 게이트된 추정의 형태-유도적 제어와 적응적 인식 개선 ~함",
-    "original_title": "TRIAGE: Type-Routed Interventions via Aleatoric-Epistemic Gated Estimation in Robotic Manipulation and Adaptive Perception -- Don't Treat All Uncertainty the Same",
-    "link": "https://arxiv.org/abs/2603.08128",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "This paper introduces a lightweight framework that decomposes uncertainty into aleatoric and epistemic components to regulate robotic responses. The system improves task success in robotic manipulation from 59.4% to 80.4% under compound perturbations, and reduces average compute by 58.2% in adaptive tracking inference while preserving detection quality."
-  },
-  {
-    "title": "Multifingered Force-Aware Control for Humanoid Robots",
-    "original_title": "Multifingered force-aware control for humanoid robots",
-    "link": "https://arxiv.org/abs/2603.08142",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "인간망 로봇의 다지지력 지각제어에 대한 연구에서, 우리는 다지지 손의 플랫폼에서 сила 지각 제어 및 сила 분배를 해결하는 방법을 개발했습니다. 이 방법은 torso, arm, wrist, finger의 운동을 조정하여 다양한 질량 배포 또는 불안정 접촉하에 있는 물체와 안정적인 접촉을 유지합니다."
-  },
-  {
-    "title": "FlowTouch: 뷰-인바리언트 비주얼-타일러드 예측",
-    "original_title": "FlowTouch: View-Invariant Visuo-Tactile Prediction",
-    "link": "https://arxiv.org/abs/2603.08255",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국 tactile 감각은 접촉-위주 조작 작업에 있어 필수적입니다. 이는 물체의 지오메트리, 표면 속성 및 상호 작용 강제로의 직접 피드백을 제공하여 인식과 세밀한 제어를 가능하게 합니다. tactile 센서는 물체가 촬영된 후만 읽을 수 있는 제약이 있습니다. 이에 대한补助는 시각 정보에서 tactile 정보를 예측하여 이러한 차이를 극복할 수 있습니다. FlowTouch, 새로운 뷰-인바리언트 비주얼-타일러드 예측 모델을 소개합니다. 우리의 주요 아이디어는 물체의 3D 멩스에 있는 풍부한 정보를 예측하는 tactile 패턴에 사용하여 장면 종속적인 세부 사항을 추상화하는 것입니다. FlowTouch는 장면 재구축 및 Flow Matching-based 이미지 생성 모델을 통합합니다. 우리의 결과는 FlowTouch가 실현-실물 간격을 조정하고 새로운 센서 인스턴스로 일반화할 수 있음을 보여줍니다. 또한, 얻어진 tactile 이미지는 하위 조작 안정 예측에 사용할 수 있습니다. 코드, 데이터셋 및 비디오는 https://flowtouch.github.io/에서 제공됩니다."
-  },
-  {
-    "title": "MoMaStage: ~함",
-    "original_title": "MoMaStage: Skill-State Graph Guided Planning and Closed-Loop Execution for Long-Horizon Indoor Mobile Manipulation",
-    "link": "https://arxiv.org/abs/2603.08383",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Korea's leading robotics researchers have developed a groundbreaking framework called MoMaStage that enables long-horizon indoor mobile manipulation tasks. This innovative system eliminates the need for explicit scene mapping and ensures generated plans remain logically consistent with the agent's physical state. Extensive experiments demonstrate MoMaStage outperforms state-of-the-art baselines in planning success, reducing token overhead, and improving overall task success rates."
-  },
-  {
-    "title": "StructBiHOI: 3D 손--물 상호 동작 생성을 위한 구조화된 말초 모델링",
-    "original_title": "StructBiHOI: Structured Articulation Modeling for Long--Horizon Bimanual Hand--Object Interaction Generation",
-    "link": "https://arxiv.org/abs/2603.08390",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 recent 3D 손--물 상호 동작(HOI) 생성에 대한 접근은 주로 단일 손 잡음 합성에 초점을 두어 왼손-오른손 만지기 synthesized HOI 생성이 더 어려운 상황임. 멀리 점차적인 계획 불안정, fine-grained 조인트 말초화, 복잡한 교--손 조율 due to multimodal conditions으로 인해 연속된 시퀀스에서 일관성, 물리적 현실성 및 의미적 일치성을 ensured 하기 어려웠다. We propose StructBiHOI, a structured articulation modeling framework for long-horizon bimanual HOI generation. Our key insight is to structure--disentangle temporal joint planning from frame-level manipulation refinement. Specifically, a jointVAE models long-term joint evolution conditioned on object geometry and task semantics, while a maniVAE refines fine-grained hand poses at the single-frame level. To enable stable and efficient long-sequence generation, we incorporate a state--space-inspired diffusion denoiser based on Mamba, which models long-range dependencies with linear complexity. This hierarchical design facilitates coherent dual-hand coordination and articulated object interaction. Extensive experiments on bimanual manipulation and single-hand grasping benchmarks demonstrate that our method achieves superior long-horizon stability, motion realism, and computational efficiency compared to strong baselines."
   }
 ]
