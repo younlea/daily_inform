@@ -360,6 +360,78 @@
     "summary": "arXiv:2601.03200v2 Announce Type: replace \nAbstract: Developing high-fidelity, interactive digital twins is crucial for enabling closed-loop motion planning and reliable real-world robot execution, which are essential to advancing sim-to-real transfer. However, existing approaches often suffer from slow reconstruction, limited visual fidelity, and difficulties in converting photorealistic models into planning-ready collision geometry. We present a practical framework that constructs high-quality digital twins within minutes from sparse RGB inputs. Our system employs 3D Gaussian Splatting (3DGS) for fast, photorealistic reconstruction as a unified scene representation. We enhance 3DGS with visibility-aware semantic fusion for accurate 3D labelling and introduce an efficient, filter-based geometry conversion method to produce collision-ready models seamlessly integrated with a Unity-ROS2-MoveIt physics engine. In experiments with a Franka Emika Panda robot performing pick-and-place tasks, we demonstrate that this enhanced geometric accuracy effectively supports robust manipulation in real-world trials. These results demonstrate that 3DGS-based digital twins, enriched with semantic and geometric consistency, offer a fast, reliable, and scalable path from perception to manipulation in unstructured environments."
   },
   {
+    "title": "MVP-LAM: Learning Action-Centric Latent Action via Cross-Viewpoint Reconstruction",
+    "original_title": "MVP-LAM: Learning Action-Centric Latent Action via Cross-Viewpoint Reconstruction",
+    "link": "https://arxiv.org/abs/2602.03668",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.03668v2 Announce Type: replace \nAbstract: Latent actions learned from diverse human videos serve as pseudo-labels for vision-language-action (VLA) pretraining, but provide effective supervision only if they remain informative about the underlying ground-truth actions. For effective supervision, latent actions should contain information about the underlying actions even though they are inaccessible. We propose Multi-ViewPoint Latent Action Moel (MVP-LAM), which learns latent actions that are highly informative about ground-truth actions from multi-view videos. MVP-LAM trains latent actions with a cross-viewpoint reconstruction objective, so that a latent action from one view must explain the future in another view, reducing reliance on viewpoint-specific cues. On Bridge V2, MVP-LAM produces more action-centric latent actions, achieving higher mutual information with ground-truth actions and improved action prediction, including under out-of-distribution evaluation. Finally, pretraining VLAs with MVP-LAM latent actions improves downstream manipulation performance on various benchmarks. The code and trained checkpoints are available at https://jmsnu.github.io."
+  },
+  {
+    "title": "STEP: Warm-Started Visuomotor Policies with Spatiotemporal Consistency Prediction",
+    "original_title": "STEP: Warm-Started Visuomotor Policies with Spatiotemporal Consistency Prediction",
+    "link": "https://arxiv.org/abs/2602.08245",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.08245v2 Announce Type: replace \nAbstract: Diffusion policies have recently emerged as a powerful paradigm for visuomotor control in robotic manipulation due to their ability to model the distribution of action sequences and capture multimodality. However, iterative denoising leads to substantial inference latency, limiting control frequency in real-time closed-loop systems. Existing acceleration methods either reduce sampling steps, bypass diffusion through direct prediction, or reuse past actions, but often struggle to jointly preserve action quality and achieve consistently low latency. In this work, we propose STEP, a lightweight spatiotemporal consistency prediction mechanism to construct high-quality warm-start actions that are both distributionally close to the target action and temporally consistent, without compromising the generative capability of the original diffusion policy. Then, we propose a velocity-aware perturbation injection mechanism that adaptively modulates actuation excitation based on temporal action variation to prevent execution stall especially for real-world tasks. We further provide a theoretical analysis showing that the proposed prediction induces a locally contractive mapping, ensuring convergence of action errors during diffusion refinement. We conduct extensive evaluations on nine simulated benchmarks and two real-world tasks. Notably, STEP with 2 steps can achieve an average 21.6% and 27.5% higher success rate than BRIDGER and DDIM on the RoboMimic benchmark and real-world tasks, respectively. These results demonstrate that STEP consistently advances the Pareto frontier of inference latency and success rate over existing methods.The code is publicly available at https://github.com/Kimho666/STEP."
+  },
+  {
+    "title": "Robo3R: Enhancing Robotic Manipulation with Accurate Feed-Forward 3D Reconstruction",
+    "original_title": "Robo3R: Enhancing Robotic Manipulation with Accurate Feed-Forward 3D Reconstruction",
+    "link": "https://arxiv.org/abs/2602.10101",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.10101v2 Announce Type: replace \nAbstract: 3D spatial perception is fundamental to generalizable robotic manipulation, yet obtaining reliable, high-quality 3D geometry remains challenging. Depth sensors suffer from noise and material sensitivity, while existing reconstruction models lack the precision and metric consistency required for physical interaction. We introduce Robo3R, a feed-forward, manipulation-ready 3D reconstruction model that predicts accurate, metric-scale scene geometry directly from RGB images and robot states in real time. Robo3R jointly infers scale-invariant local geometry and relative camera poses, which are unified into the scene representation in the canonical robot frame via a learned global similarity transformation. To meet the precision demands of manipulation, Robo3R employs a masked point head for sharp, fine-grained point clouds, and a keypoint-based Perspective-n-Point (PnP) formulation to refine camera extrinsics and global alignment. Trained on Robo3R-4M, a curated large-scale synthetic dataset with four million high-fidelity annotated frames, Robo3R consistently outperforms state-of-the-art reconstruction methods and depth sensors. Across downstream tasks including imitation learning, sim-to-real transfer, grasp synthesis, and collision-free motion planning, we observe consistent gains in performance, suggesting the promise of this alternative 3D sensing module for robotic manipulation."
+  },
+  {
+    "title": "Semantic-Contact Fields for Category-Level Generalizable Tactile Tool Manipulation",
+    "original_title": "Semantic-Contact Fields for Category-Level Generalizable Tactile Tool Manipulation",
+    "link": "https://arxiv.org/abs/2602.13833",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.13833v2 Announce Type: replace \nAbstract: Generalizing tool manipulation requires both semantic planning and precise physical control. Modern generalist robot policies, such as Vision-Language-Action (VLA) models, often lack the physical grounding required for contact-rich tool manipulation. Conversely, existing contact-aware policies that leverage tactile or haptic sensing are typically instance-specific and fail to generalize across diverse tool geometries. Bridging this gap requires learning representations that are both semantically transferable and physically grounded, yet a fundamental barrier remains: diverse real-world tactile data are prohibitive to collect at scale, while direct zero-shot sim-to-real transfer is challenging due to the complex nonlinear deformation of soft tactile sensors.\n  To address this, we propose Semantic-Contact Fields (SCFields), a unified 3D representation that fuses visual semantics with dense extrinsic contact estimates, including contact probability and force. SCFields is learned through a two-stage Sim-to-Real Contact Learning Pipeline: we first pre-train on large-scale simulation to learn geometry-aware contact priors, then fine-tune on a small set of real data pseudo-labeled via geometric heuristics and force optimization to align real tactile signals. The resulting force-aware representation serves as the dense observation input to a diffusion policy, enabling physical generalization to unseen tool instances. Experiments on scraping, crayon drawing, and peeling demonstrate robust category-level generalization, significantly outperforming vision-only and raw-tactile baselines. Project page: https://kevinskwk.github.io/SCFields/."
+  },
+  {
+    "title": "Rhythm: Learning Interactive Whole-Body Control for Dual Humanoids",
+    "original_title": "Rhythm: Learning Interactive Whole-Body Control for Dual Humanoids",
+    "link": "https://arxiv.org/abs/2603.02856",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2603.02856v2 Announce Type: replace \nAbstract: Realizing interactive whole-body control for multi-humanoid systems is critical for unlocking complex collaborative capabilities in shared environments. Although recent advancements have significantly enhanced the agility of individual robots, bridging the gap to physically coupled multi-humanoid interaction remains challenging, primarily due to severe kinematic mismatches and complex contact dynamics. To address this, we introduce Rhythm, the first unified framework enabling real-world deployment of dual-humanoid systems for complex, physically plausible interactions. Our framework integrates three core components: (1) an Interaction-Aware Motion Retargeting (IAMR) module that generates feasible humanoid interaction references from human data; (2) an Interaction-Guided Reinforcement Learning (IGRL) policy that masters coupled dynamics via graph-based rewards; and (3) a real-world deployment system that enables robust transfer of dual-humanoid interaction. Extensive experiments on physical Unitree G1 robots demonstrate that our framework achieves robust interactive whole-body control, successfully transferring diverse behaviors such as hugging and dancing from simulation to reality."
+  },
+  {
+    "title": "KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning",
+    "original_title": "KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning",
+    "link": "https://arxiv.org/abs/2604.25788",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.25788v2 Announce Type: replace \nAbstract: Robotic systems that interact with the physical world must reason about kinematic and dynamic constraints imposed by their own embodiment, their environment, and the task at hand. We introduce KinDER, a benchmark for Kinematic and Dynamic Embodied Reasoning that targets physical reasoning challenges arising in robot learning and planning. KinDER comprises 25 procedurally generated environments, a Gymnasium-compatible Python library with parameterized skills and demonstrations, and a standardized evaluation suite with 13 implemented baselines spanning task and motion planning, imitation learning, reinforcement learning, and foundation-model-based approaches. The environments are designed to isolate five core physical reasoning challenges: basic spatial relations, nonprehensile multi-object manipulation, tool use, combinatorial geometric constraints, and dynamic constraints, disentangled from perception, language understanding, and application-specific complexity. Empirical evaluation shows that existing methods struggle to solve many of the environments, indicating substantial gaps in current approaches to physical reasoning. We additionally include real-to-sim-to-real experiments on a mobile manipulator to assess the correspondence between simulation and real-world physical interaction. KinDER is fully open-sourced and intended to enable systematic comparison across diverse paradigms for advancing physical reasoning in robotics. Website and code: https://prpl-group.com/kinder-site/"
+  },
+  {
+    "title": "SaLF: Sparse Local Fields for Multi-Sensor Rendering in Real-Time",
+    "original_title": "SaLF: Sparse Local Fields for Multi-Sensor Rendering in Real-Time",
+    "link": "https://arxiv.org/abs/2507.18713",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2507.18713v2 Announce Type: replace-cross \nAbstract: High-fidelity sensor simulation of light-based sensors such as cameras and LiDARs is critical for safe and accurate autonomy testing. Neural radiance field (NeRF)-based methods that reconstruct sensor observations via ray-casting of implicit representations have demonstrated accurate simulation of driving scenes, but are slow to train and render, hampering scalability. 3D Gaussian Splatting (3DGS) has demonstrated faster training and rendering times through rasterization, but is primarily restricted to pinhole camera sensors, preventing usage for realistic multi-sensor autonomy evaluation. Moreover, both NeRF and 3DGS couple the representation with the rendering procedure (implicit networks for ray-based evaluation, particles for rasterization), preventing interoperability, which is key for general usage. In this work, we present Sparse Local Fields (SaLF), a novel volumetric representation that supports rasterization and raytracing for unified multi-sensor simulation. SaLF represents volumes as a sparse set of 3D voxel primitives, where each voxel is a local implicit field. SaLF has fast training ($<$30 min) and rendering capabilities (50+ FPS for camera and 600+ FPS for LiDAR), has adaptive pruning and densification to easily handle large scenes, and can support non-pinhole cameras and spinning LiDARs. We demonstrate that SaLF has similar realism as existing self-driving sensor simulation methods while improving efficiency and enhancing capabilities, enabling more scalable simulation."
+  },
+  {
+    "title": "OmniTrack++: Omnidirectional Multi-Object Tracking by Learning Large-FoV Trajectory Feedback",
+    "original_title": "OmniTrack++: Omnidirectional Multi-Object Tracking by Learning Large-FoV Trajectory Feedback",
+    "link": "https://arxiv.org/abs/2511.00510",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2511.00510v2 Announce Type: replace-cross \nAbstract: To address panoramic distortion, large search space, and identity ambiguity under a 360{\\deg} FoV, OmniTrack++ adopts a feedback-driven framework that progressively refines perception with trajectory cues. A DynamicSSM block first stabilizes panoramic features, implicitly alleviating geometric distortion. On top of normalized representations, FlexiTrack Instances use trajectory-informed feedback for flexible localization and reliable short-term association. To ensure long-term robustness, an ExpertTrack Memory consolidates appearance cues via a Mixture-of-Experts design, enabling recovery from fragmented tracks and reducing identity drift. Finally, a Tracklet Management module adaptively switches between end-to-end and tracking-by-detection modes according to scene dynamics, offering a balanced and scalable solution for panoramic MOT. To support rigorous evaluation, we establish the EmboTrack benchmark, a comprehensive dataset for panoramic MOT that includes QuadTrack, captured with a quadruped robot, and BipTrack, collected with a bipedal wheel-legged robot. Together, these datasets span wide-angle environments and diverse motion patterns, providing a challenging testbed for real-world panoramic perception. Extensive experiments on JRDB and EmboTrack demonstrate that OmniTrack++ achieves state-of-the-art performance, yielding substantial HOTA improvements of +3.94 on JRDB and +15.03 on QuadTrack over the original OmniTrack. These results highlight the effectiveness of trajectory-informed feedback, adaptive paradigm switching, and robust long-term memory in advancing panoramic multi-object tracking. Datasets and code will be made available at https://github.com/xifen523/OmniTrack."
+  },
+  {
     "title": "Home Robots Are Moving Into Reality as 1X Scales Up U.S. Production - kmjournal.net",
     "original_title": "Home Robots Are Moving Into Reality as 1X Scales Up U.S. Production - kmjournal.net",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzUXRlQ3Nob2xZLWtlTkhhcVRTSVVhMDBuMy1ubFc4bjVaNTFnSGNWZTI0VnY5UUZTaEJ3WW1FUkx0MVVEOE9PU2dmTklVTVNpVXpHRGtldWRwOTFaWHAtbjV3Z1lvRWd4NElZ?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로봇의 다리형 멀티러빗의 촌각 피드백을 제공하는 강건한 안테나 개발함"
-  },
-  {
-    "title": "HSC-VLA: 자율Manipulation 환경에서 Robust한 이중수동 처리를 위한 계층적 장면정리",
-    "original_title": "HSC-VLA: Hierarchical Scene-Clearing for Robust Bimanual Manipulation in Dense Clutter",
-    "link": "https://arxiv.org/abs/2603.07484",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "클러스터 환경에서 task-irrelevant visuaual 클러터가 수행을 저하하는 문제를 해결하기 위해 HSC-VLA, 계층적 프레임워크를 제안하였다. 이 프레임워크는 고급 비전-언어 추상화와 저급 센서-운동 실행을 분리하여 장면 정리를 통해 task-relevant 지형을 보호하고 distractor를 억제하는 방법을 사용한다. 실험 결과 HSC-VLA는 86.7%의 aggregate 성공률을 달성하며, 클러스터 환경에서 monolithic baseline보다 52.4% 더 높은 성능을 나타내었다."
-  },
-  {
-    "title": "GeoLoco: 3D 형상 프라이어를 활용한 Robust RGB-Only 인형 로코모션",
-    "original_title": "GeoLoco: Leveraging 3D Geometric Priors from Visual Foundation Model for Robust RGB-Only Humanoid Locomotion",
-    "link": "https://arxiv.org/abs/2603.07624",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "3D 이미지 프레임워크 GeoLoco를 제안하여, monocular RGB 이미지를 고차원 3D 잠재 표현으로 구현하고, 이에 기반한 proprioceptive-query 다중 주의 mechanism을 설계하여, 실제 가이프相에 따라 topological 특징을 조건화합니다. 또한, 이Frameworks는 dual-head 보조 학습 scheme을 통해, 정책이 поверх 텍스처에 과적합하지 않도록 제약을 줍니다. Simulation에서만 훈련된 GeoLoco Framework은 Unitree G1 인형을 사용하여, 도전적인 terrain을 성공적으로 해결함을 예정합니다."
-  },
-  {
-    "title": "Exoskeleton 제어를 통해 생물학적 족 관형을 줄이는 학습 방식",
-    "original_title": "Exoskeleton Control through Learning to Reduce Biological Joint Moments in Simulations",
-    "link": "https://arxiv.org/abs/2603.07629",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "인공 지형 RL 알고리즘을 사용하여 생물학적 족관형을 줄이는 이차원 다층 인공 신경망(MLP) 제어자를 개발하여, 람프 보행, 평평한 지면 보행 등 다양한 보행 형태에서 족 관형 예측 정확도 94% 이상으로 확인하였다."
-  },
-  {
-    "title": "TempoFit: Plug-and-Play Layer-Wise Temporal KV Memory for Long-Horizon Vision-Language-Action Manipulation",
-    "original_title": "TempoFit: Plug-and-Play Layer-Wise Temporal KV Memory for Long-Horizon Vision-Language-Action Manipulation",
-    "link": "https://arxiv.org/abs/2603.07647",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국 제목: Plug-and-Play_LAYER-WISE_시간적KV 메모리_비전-언어-행동 조작에 대한 TempoFit"
-  },
-  {
-    "title": "RoboRouter: Training-Free Policy Routing for Robotic Manipulation",
-    "original_title": "RoboRouter: Training-Free Policy Routing for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2603.07892",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보라우터: 로봇 조작에 대한 교육받지 않은 정책 라우팅을 제안함."
-  },
-  {
-    "title": "Omnidirectional Humanoid Locomotion on Stairs via Unsafe Stepping Penalty and Sparse LiDAR Elevation Mapping",
-    "original_title": "Omnidirectional Humanoid Locomotion on Stairs via Unsafe Stepping Penalty and Sparse LiDAR Elevation Mapping",
-    "link": "https://arxiv.org/abs/2603.07928",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "stair踏행 로보트의 안정적 다이렉셔널 이동을 위하여 불안전한 걸음 penalty 및 스플래스 LiDAR 고도 карт 생성을 결합한 새로운 훈련 프레임워크를 제안함. 이를 통해 로보트는 복잡한 야외 지형에서 안전하게 100% 이상의 걸음률을 달성하고, 실내 테스트에서도 높은 안전률을 보장하는 Safe Stair-Traversal Gait를 구현함.\n\n(Note: I followed the instruction to translate the title and summarize the content in a formal, objective news-brief style, using nouns as ending words. The summary focuses on the technical specifications and strategic significance of the research.)"
-  },
-  {
-    "title": "AffordGrasp: Cross-Modal Diffusion for Affordance-Aware Grasp Synthesis",
-    "original_title": "AffordGrasp: Cross-Modal Diffusion for Affordance-Aware Grasp Synthesis",
-    "link": "https://arxiv.org/abs/2603.08021",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "objeto geometri와 사용자-specified 상호작용 의미에 대한 정확한 인간 잡기 자세를 생성하는 것은 AR/VR 및 인체 AI에서 자연스러운 손물 상호작용을 위한 Essentials입니다. 그러나 기존의 의미잡기 접근은 3D 물체 표현과 텍스트적 인스트럭션 간의 큰 모달리티 차이로 인해 물리적으로无效 또는 의미 불일치한 잡기를 생산합니다. 이에 우리는 AffordGrasp라는 확산 기반 프레임워크를 제시하여 실제적으로 안정하고 의미적으로 충실한 인간 잡기 자세를 고精度으로 생성합니다.まず,我们는 손물 상호작용 데이터셋을 enriched한 annotation 파이프라라인을 소개하여 interaction intent를 캡쳐하는 fine-grained 구조 언어 레이블을 자동화적으로 추가합니다. 이 annotaitons에 따라 AffordGrasp는 손 자세의 affordance-aware潜在 representation과 쌍 조건 diffusion 프로세스를 통합하여 물체 geometri, 공간 affordance 및 인스트럭션 의미를 결합하여 모델이 물리적 접촉 일관성 및 의미 항목을 강제화하는 distribution adjustment 모듈을 추가합니다. 우리는 AffordGrasp를 HO-3D, OakInk, GRAB, 및 AffordPose에서 파생된 네 개의 인스트럭션-augmented 벤치마크에서 평가하고 상태-of-the-art 메서드보다 잡기 품질, 의미 정확도 및 다양성에서 심각한 향상을 관찰합니다."
-  },
-  {
-    "title": "Towards Human-Like Manipulation through RL-Augmented Teleoperation and Mixture-of-Dexterous-Experts VLA",
-    "original_title": "Towards Human-Like Manipulation through RL-Augmented Teleoperation and Mixture-of-Dexterous-Experts VLA",
-    "link": "https://arxiv.org/abs/2603.08122",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "인공 조종 및 다exterity-expert VLA를 결합한 인간과 같은 thaoat 제어 방안을 제안함으로써 인공 조종의 발전을 도모하고 있음. 이를 달성하기 위해 IMCopilot와 MoDE-VLA를 구축하여 인공 조종의 어려운 문제점을 해결하고, 4가지 증가하는 복잡도에 대한 테스트에서 2배 이상의 성공률 향상을 나타내어 제안한 방안의有效성을 증명함."
   }
 ]
