@@ -216,6 +216,78 @@
     "summary": "arXiv:2605.02370v1 Announce Type: new \nAbstract: This paper presents a novel model predictive control (MPC) approach for autonomous pick-and-place between moving platforms with a hook-equipped aerial manipulator. First, for accurate and rapid modeling of the complex dynamics, a digital twin model of the quadcopter equipped with a hook-based gripper, implemented in MuJoCo, is constructed and used as the predictive model for the MPC. To handle uncertainties of the predictive model (e.g. due to aerodynamics and uncertain payloads), a robust adaptive MPC approach is proposed. By systematic integration of zero-order robust optimization (zoRO) based uncertainty propagation and an extended Kalman filter (EKF) for parameter estimation, the MPC algorithm ensures robust constraint satisfaction, high performance, and computational efficiency. The effectiveness of the proposed method is evaluated in complex simulated scenarios and in real-world flight experiments."
   },
   {
+    "title": "Visibility-Aware Mobile Grasping in Dynamic Environments",
+    "original_title": "Visibility-Aware Mobile Grasping in Dynamic Environments",
+    "link": "https://arxiv.org/abs/2605.02487",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02487v1 Announce Type: new \nAbstract: This paper addresses the problem of mobile grasping in dynamic, unknown environments where a robot must operate under a limited field-of-view. The fundamental challenge is the inherent trade-off between ``seeing'' around to reduce environmental uncertainty and ``moving'' the body to achieve task progress in a high-dimensional configuration space, subject to visibility constraints. Previous approaches often assume known or static environments and decouple these objectives, failing to guarantee safety when unobserved dynamic obstacles intersect the robot's path during manipulation. In this paper, we propose a unified mobile grasping system comprising two core components: (1) an iterative low-level whole-body planner coupled with velocity-aware active perception to navigate dynamic environments safely; and (2) a hierarchical high-level planner based on behavior trees that adaptively generates subgoals to guide the robot through exploration and runtime failures. We provide experimental results across 400 randomized simulation scenarios and real-world deployment on a Fetch mobile manipulator. Results show that our system achieves a success rate of 68.8\\% and 58.0\\% in unknown static and dynamic environments, respectively, significantly boosting success rates by 22.8\\% and 18.0\\% over the \\nam approach in both unknown static and dynamic environments, with improved collision safety."
+  },
+  {
+    "title": "Adaptive Gait Generation for Multi-Terrain Exoskeletons via Constrained Kernelized Movement Primitives",
+    "original_title": "Adaptive Gait Generation for Multi-Terrain Exoskeletons via Constrained Kernelized Movement Primitives",
+    "link": "https://arxiv.org/abs/2605.02513",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.02513v1 Announce Type: new \nAbstract: Lower limb exoskeletons (LLEs) present the potential to make motor-impaired individuals walk again. Their application in real-world environments is still limited by the lack of effective adaptive gait planning. Indeed, current exoskeletons are meant to walk only on a flat and even terrain. Generating environment-aware, physiologically consistent gait trajectories in real-time is an open challenge. To overcome this, we propose a novel Kernelized Movement Primitives (KMP)-based framework for adaptive gait generation (AGG) across multiple indoor terrains. The proposed approach learns a probabilistic representation of human gait in both the joint and task spaces from a limited number of human demonstrations, representing natural gait characteristics and ensuring kinematic feasibility. In addition, the learned trajectories are adapted using environmental information extracted from an onboard RGB-D camera by treating the AGG as a linearly constrained optimization problem with via-points. The proposed method has been thoroughly validated first in simulations for gait generation in different scenarios, such as flat-ground walking, slopes, stairs, and obstacles crossing. Finally, the effectiveness and robustness of the method have been demonstrated with experiments on a commercial LLE in real-world scenarios. The results obtained demonstrate the feasibility of an environment-aware gait planning system for a new generation of intelligent lower limb exoskeletons for assisting people with disabilities in their every-day life."
+  },
+  {
+    "title": "A Semantic Autonomy Framework for VLM-Integrated Indoor Mobile Robots: Hybrid Deterministic Reasoning and Cross-Robot Adaptive Memory",
+    "original_title": "A Semantic Autonomy Framework for VLM-Integrated Indoor Mobile Robots: Hybrid Deterministic Reasoning and Cross-Robot Adaptive Memory",
+    "link": "https://arxiv.org/abs/2605.02525",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02525v1 Announce Type: new \nAbstract: Autonomous indoor mobile robots can navigate reliably to metric coordinates using established frameworks such as ROS 2 Navigation 2, yet they lack the ability to interpret natural language instructions that express intent rather than positions. Vision-Language Models offer the semantic reasoning required to bridge this gap, but their inference latency (2-9 seconds per decision on consumer hardware) and session-by-session amnesia limit practical deployment. This paper presents the Semantic Autonomy Stack, a six-layer reference framework for semantically autonomous indoor navigation, and validates a complete instance featuring hybrid deterministic-VLM reasoning and cross-robot adaptive memory on physical robots with off-the-shelf edge hardware. A seven-step parametric resolver handles 88% of instructions in under 0.1 milliseconds without invoking a language model, camera, or GPU; only genuinely ambiguous instructions escalate to VLM reasoning. A five-category semantic memory framework with explicit scope taxonomy (global environment knowledge, per-operator preferences, per-robot capabilities) enables cross-session learning and cross-robot knowledge transfer: preferences learned through VLM interactions on one robot are promoted to deterministic resolution and transferred to a second robot via a shared compiled digest, achieving a measured latency reduction of 103,000-fold. Experimental validation on two custom-built differential-drive robots across 82 scenario-level decisions and three sessions demonstrates 100% semantic transfer accuracy (33/33, 95% CI [0.894, 1.000]), 100% semantic resolution accuracy, and concurrent multi-robot operation feasibility - all on Raspberry Pi 5 platforms with no onboard GPU, requiring zero training data."
+  },
+  {
+    "title": "CoRAL: Contact-Rich Adaptive LLM-based Control for Robotic Manipulation",
+    "original_title": "CoRAL: Contact-Rich Adaptive LLM-based Control for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.02600",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02600v1 Announce Type: new \nAbstract: While Large Language Models (LLMs) and Vision-Language Models (VLMs) demonstrate remarkable capabilities in high-level reasoning and semantic understanding, applying them directly to contact-rich manipulation remains a challenge due to their lack of explicit physical grounding and inability to perform adaptive control. To bridge this gap, we propose CoRAL (Contact-Rich Adaptive LLM-based control), a modular framework that enables zero-shot planning by decoupling high-level reasoning from low-level control. Unlike black-box policies, CoRAL uses LLMs not as direct controllers, but as cost designers that synthesize context-aware objective functions for a sampling-based motion planner (MPPI). To address the ambiguity of physical parameters in visual data, we introduce a neuro-symbolic adaptation loop: a VLM provides semantic priors for environmental dynamics, such as mass and friction estimates, which are then explicitly refined in real time via online system identification, while the LLM iteratively modulates the cost-function structure to correct strategic errors based on interaction feedback. Furthermore, a retrieval-based memory unit allows the system to reuse successful strategies across recurrent tasks. This hierarchical architecture ensures real-time control stability by decoupling high-level semantic reasoning from reactive execution, effectively bridging the gap between slow LLM inference and dynamic contact requirements. We validate CoRAL on both simulation and real-world hardware across challenging and novel tasks, such as flipping objects against walls by leveraging extrinsic contacts. Experiments demonstrate that CoRAL outperforms state-of-the-art VLA and foundation-model-based planner baselines by boosting success rates over 50% on average in unseen contact-rich scenarios, effectively handling sim-to-real gaps through its adaptive physical understanding."
+  },
+  {
+    "title": "AnchorD: Metric Grounding of Monocular Depth Using Factor Graphs",
+    "original_title": "AnchorD: Metric Grounding of Monocular Depth Using Factor Graphs",
+    "link": "https://arxiv.org/abs/2605.02667",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02667v1 Announce Type: new \nAbstract: Dense and accurate depth estimation is essential for robotic manipulation, grasping, and navigation, yet currently available depth sensors are prone to errors on transparent, specular, and general non-Lambertian surfaces. To mitigate these errors, large-scale monocular depth estimation approaches provide strong structural priors, but their predictions can be potentially skewed or mis-scaled in metric units, limiting their direct use in robotics. Thus, in this work, we propose a training-free depth grounding framework that anchors monocular depth estimation priors from a depth foundation model in raw sensor depth through factor graph optimization. Our method performs a patch-wise affine alignment, locally grounding monocular predictions in metric real-world depth while preserving fine-grained geometric structure and discontinuities. To facilitate evaluation in challenging real-world conditions, we introduce a benchmark dataset with dense scene-wide ground truth depth in the presence of non-Lambertian objects. Ground truth is obtained via matte reflection spray and multi-camera fusion, overcoming the reliance on object-only CAD-based annotations used in prior datasets. Extensive evaluations across diverse sensors and domains demonstrate consistent improvements in depth performance without any (re-)training. We make our implementation publicly available at https://anchord.cs.uni-freiburg.de."
+  },
+  {
+    "title": "Learning Equivariant Neural-Augmented Object Dynamics From Few Interactions",
+    "original_title": "Learning Equivariant Neural-Augmented Object Dynamics From Few Interactions",
+    "link": "https://arxiv.org/abs/2605.02699",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02699v1 Announce Type: new \nAbstract: Learning data-efficient object dynamics models for robotic manipulation remains challenging, especially for deformable objects. A popular approach is to model objects as sets of 3D particles and learn their motion using graph neural networks. In practice, this is not enough to maintain physical feasibility over long horizons and may require large amounts of interaction data to learn. We introduce PIEGraph, a novel approach to combining analytical physics and data-driven models to capture object dynamics for both rigid and deformable bodies using limited real-world interaction data. PIEGraph consists of two components: (1) a \\textbf{P}hysically \\textbf{I}nformed particle-based analytical model (implemented as a spring--mass system) to enforce physically feasible motion, and (2) an \\textbf{E}quivariant \\textbf{Graph} Neural Network with a novel action representation that exploits symmetries in particle interactions to guide the analytical model. We evaluate PIEGraph in simulation and on robot hardware for reorientation and repositioning tasks with ropes, cloth, stuffed animals and rigid objects. We show that our method enables accurate dynamics prediction and reliable downstream robotic manipulation planning, which outperforms state of the art baselines."
+  },
+  {
+    "title": "Tensegrity crutches with compliance from a pre-stressed self-tensile module improve ground reaction force profiles, speed, effort, comfort, and perceived stability",
+    "original_title": "Tensegrity crutches with compliance from a pre-stressed self-tensile module improve ground reaction force profiles, speed, effort, comfort, and perceived stability",
+    "link": "https://arxiv.org/abs/2605.02710",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.02710v1 Announce Type: new \nAbstract: Purpose: Six million people use crutches as mobile aids in the US. Rigid designs with no axial mobility limit sensory feedback and lead to secondary injury on the upper joints. Spring-loaded designs offer compliance but may compromise stability. We designed a biologically inspired tensegrity crutch with a compliant module aiming to achieve favorable mechanical properties. The terminal module was a pre-stressed self-tensile two-cell tensegrity structure. We compared the tensegrity crutch to commercial rigid and spring-loaded crutches in mechanical tests using axial loading, in overground straight and turning walking, and in participant experience. Methods: In human trials, healthy young adults (N=18) with no recent lower-body injury performed straight walking and turning trials at a comfortable self-selected pace. A knee blocker simulated unilateral injury of the dominant leg. After using each type of crutch, participants reported their perceived levels of effort, comfort, pain, stability, and usability. Results: Compared to the rigid design, both spring-loaded and tensegrity conditions reduced peak loading rates. The tensegrity design improved effort, comfort, pain, and usability. Spring-loaded crutches reduced perceived stability and walking speed. Conclusion: The biologically inspired tensegrity crutches were an overall improvement to existing designs. Simulations and mechanical testing suggest that nonlinear stiffness, ground-following, and force feedback are among the beneficial mechanical properties that underlie this improvement."
+  },
+  {
+    "title": "Latent Bridge: Feature Delta Prediction for Efficient Dual-System Vision-Language-Action Model Inference",
+    "original_title": "Latent Bridge: Feature Delta Prediction for Efficient Dual-System Vision-Language-Action Model Inference",
+    "link": "https://arxiv.org/abs/2605.02739",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02739v1 Announce Type: new \nAbstract: Dual-system Vision-Language-Action (VLA) models achieve state-of-the-art robotic manipulation but are bottlenecked by the VLM backbone, which must\n  execute at every control step while producing temporally redundant features. We propose Latent Bridge, a lightweight model that predicts VLM output\n  deltas between timesteps, enabling the action head to operate on predicted outputs while the expensive VLM backbone is called only periodically. We\n  instantiate Latent Bridge on two architecturally distinct VLAs: GR00T-N1.6 (feature-space bridge) and {\\pi}0.5 (KV-cache bridge), demonstrating that the\n  approach generalizes across VLA designs. Our task-agnostic DAgger training pipeline transfers across benchmarks without modification. Across four\n  LIBERO suites, 24 RoboCasa kitchen tasks, and the ALOHA sim transfer-cube task, Latent Bridge achieves 95-100% performance retention while reducing\n  VLM calls by 50-75%, yielding 1.65-1.73x net per-episode speedup."
+  },
+  {
     "title": "Home Robots Are Moving Into Reality as 1X Scales Up U.S. Production - kmjournal.net",
     "original_title": "Home Robots Are Moving Into Reality as 1X Scales Up U.S. Production - kmjournal.net",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzUXRlQ3Nob2xZLWtlTkhhcVRTSVVhMDBuMy1ubFc4bjVaNTFnSGNWZTI0VnY5UUZTaEJ3WW1FUkx0MVVEOE9PU2dmTklVTVNpVXpHRGtldWRwOTFaWHAtbjV3Z1lvRWd4NElZ?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "한국의 recent 3D 손--물 상호 동작(HOI) 생성에 대한 접근은 주로 단일 손 잡음 합성에 초점을 두어 왼손-오른손 만지기 synthesized HOI 생성이 더 어려운 상황임. 멀리 점차적인 계획 불안정, fine-grained 조인트 말초화, 복잡한 교--손 조율 due to multimodal conditions으로 인해 연속된 시퀀스에서 일관성, 물리적 현실성 및 의미적 일치성을 ensured 하기 어려웠다. We propose StructBiHOI, a structured articulation modeling framework for long-horizon bimanual HOI generation. Our key insight is to structure--disentangle temporal joint planning from frame-level manipulation refinement. Specifically, a jointVAE models long-term joint evolution conditioned on object geometry and task semantics, while a maniVAE refines fine-grained hand poses at the single-frame level. To enable stable and efficient long-sequence generation, we incorporate a state--space-inspired diffusion denoiser based on Mamba, which models long-range dependencies with linear complexity. This hierarchical design facilitates coherent dual-hand coordination and articulated object interaction. Extensive experiments on bimanual manipulation and single-hand grasping benchmarks demonstrate that our method achieves superior long-horizon stability, motion realism, and computational efficiency compared to strong baselines."
-  },
-  {
-    "title": "로봇아시스트 신경파지용 시점대 지속성 인위여행자",
-    "original_title": "Long-Short Term Agents for Pure-Vision Bronchoscopy Robotic Autonomy",
-    "link": "https://arxiv.org/abs/2603.07909",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "브рон코스코피의 정확한 intraoperative 경유는 로봇어시스트 엔도룬탈 인터벤션을 위한 필수적이나 아직까지는 제한된 엔도스코픽 필드 비ュー와 동적 아티팣트에 기인하여 어려운 문제입니다. 기존의 경유 플랫폼은 외부 로컬라이제이션 기술 SUCH AS 전자磁학 추종 또는 형상 감지에 의존하여 하드웨어 복잡성을 증가시키고 intraoperative 신체 불일치 가능성으로부터 취약합니다. 우리는 시점대 지속성 인위여행자 프레임워크를 제안하는데, 이 프레임워크는 전후 CT-원천 기반 virtually 목표와 라이브 엔도스콥 비디오를 사용하여 로봇아시스트 브론코스코피의 긴 수평 경유를 수행합니다. 이 프레임워크는 hierarchical long-short agents를 사용하며, 이를 구성하는 short-term 반응적 인위여행자 및 long-term 전략적 인위여행자가 있습니다. 이러한 인위여행자는 intraoperative 신체 불일치 지점에서 결함이 발생할 때 world-model 비판 모델을 통해将来시각 상태 예측하고 대상 시각 상태와 일치하는 액션을 선택합니다. 우리는 고밀도 공기관 피노, 세 개의 ex vivo 포르킨 람, 및 실제 포르킨 모델에 이 시스템을 평가했습니다. 이 시스템은 피노에서 계획된 세그멘탈 목표를 도달했으며, ex vivo 8세대까지 80%의 성공률을 나타냈으며, 실제 포르킨 모델에서는 경과치와 expert 브론코스코피스트에 견줄 수 있는 인위여행 성능을 보여주었습니다. 이러한 결과는 시점대 지속성 인위여행자 프레임워크의 예비 클리닉 가능성을 지원합니다."
-  },
-  {
-    "title": "See & Switch: Vision-Based Branching for Interactive Robot-Skill Programming",
-    "original_title": "See and Switch: Vision-Based Branching for Interactive Robot-Skill Programming",
-    "link": "https://arxiv.org/abs/2603.08057",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 기술 프로그래밍에 대한 새로운 접근방식인 'See & Switch'가 발표됨. 이 시스템은 조건부任务 그래프를 기반으로 하여, eyes-in-hand 이미지 사용하여 경로 선택을 가능하게 함. \n\n(Note: I translated the title as is, without changing any words or phrases, and summarized the content into 2 concise Korean sentences, using a formal tone and style.)"
-  },
-  {
-    "title": "PhaForce: Phase-Scheduled Visual-Force Policy Learning with Slow Planning and Fast Correction for Contact-Rich Manipulation",
-    "original_title": "PhaForce: Phase-Scheduled Visual-Force Policy Learning with Slow Planning and Fast Correction for Contact-Rich Manipulation",
-    "link": "https://arxiv.org/abs/2603.08342",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "PhaForce, 새로운 시각-공력 정책 학습을 제안하여 접촉-ric한 조작에서 낮은 주파수 업데이트를 사용하고 있는 일반적인 비자-정책에 비해 개선된 접근 방식을 제공합니다. 이 프로젝트는 86%의 성공률을 나타내며, 접촉 질량을 개선하고 다양한 geometrical shift에 대한 적응성을 보이습니다.\n\n(Note: I translated the title and summarized the content into a concise Korean text, following the strict output format rules.)"
-  },
-  {
-    "title": "Tactile Shape and Material Recognition System with Automatic Feature Optimization Enabled Meta Learning",
-    "original_title": "Tactile Recognition of Both Shapes and Materials with Automatic Feature Optimization-Enabled Meta Learning",
-    "link": "https://arxiv.org/abs/2603.08423",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "자동 특징 최적화 가능 메타 러닝을 지원하는 촉식 shape 및 물질 인식 시스템에 대해 제안합니다. 이 프로토タイプ 네트워크는 새로운 未해 클래스에 대한快速 적응뿐만 아니라最佳特징 공간을 자동으로 결정할 수 있습니다. 촉식 지느러에서 4-채널 신호를 활용하여 촉식 shape 및 물질을 인식하고, 36개 카테고리 벤치마크에서 5-way-1-shot 시나리오에서는 96.08%의 정확도를 달성할 수 있습니다."
-  },
-  {
-    "title": "3PoinTr: 3D Point Tracks for Robot Manipulation Pretraining from Casual Videos",
-    "original_title": "3PoinTr: 3D Point Tracks for Robot Manipulation Pretraining from Casual Videos",
-    "link": "https://arxiv.org/abs/2603.08485",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국 로봇 정책의 데이터 효율적 트레이닝을 위한 3D 포인트 추적 기법으로, 인간 비디오에서 무제한으로 학습할 수 있어 시너지 automation을 달성하는 새로운 가능성을 열었다."
-  },
-  {
-    "title": "CONTACT: CONtact-aware TACTile Learning for Robotic Disassembly",
-    "original_title": "CONTACT: CONtact-aware TACTile Learning for Robotic Disassembly",
-    "link": "https://arxiv.org/abs/2603.08560",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보틱 디어셈블리 contato-aware tactile 학습에 대한 CONTACT"
-  },
-  {
-    "title": "MetaWorld-X: Hierarchical World Modeling via VLM-Orchestrated Experts for Humanoid Loco-Manipulation",
-    "original_title": "MetaWorld-X: Hierarchical World Modeling via VLM-Orchestrated Experts for Humanoid Loco-Manipulation",
-    "link": "https://arxiv.org/abs/2603.08572",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Korea의 로봇 제어에 있어 신속하고 안정적인 다기능 控制 정책을 개발하는 데 중점을 두고 있는 MetaWorld-X 프레임워크를 출시했습니다. 이 프레임워크는 복잡한 제어 문제를 분할하여 각 특화된 전문가 정책(SEP)을 훈련하고, 인지路由기구(IRM)를介於시각-언어 모델(VLM)으로 지시하여Task semantics에 기반한 조합을 가능하게 합니다."
-  },
-  {
-    "title": "Exp-Force: 익스피런스-컨디셔닝드 프레그라스 포스 셀렉션",
-    "original_title": "Exp-Force: Experience-Conditioned Pre-Grasp Force Selection with Vision-Language Models",
-    "link": "https://arxiv.org/abs/2603.08668",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보틱 맨이퓨레이션의 안전성과 신뢰성을 확보하는 데 중요한 접촉 전prehensile force의 정확한 선택을 제안합니다. 이 트레이드오프는 특히 Compliance gripper에 있어서 어려운 접촉 역학 분석 없이도 시나리오에서 예측할 수 있습니다. 이 논문에서는 Exp-Force라는 경험-조건 프레임워크를 제안하여 단일 RGB 이미지에서 최소 구현 가능한 입체화력을 예측합니다. Cette 메서드는 작은 집합의 관련 전력과 시각 언어 모델을 조건화하여 이러한 예제에 따라 결론을 내리는 것이며, 분석적 접촉 모델 또는 수동적으로 설계된 heuristics를 필요로 하지 않습니다. 129 개의 물체 인스턴스에서 Exp-Force는 0.43 N의 최소 오차를 달성하며, zero-shot inference에 비해 72%의 오류 감소를 이끌어 냅니다. 실제 세계 테스트에서는 30 개의 미상 물체에 대해 적절한 포스 선택률을 63%에서 87%로 향상시켰습니다."
   }
 ]
