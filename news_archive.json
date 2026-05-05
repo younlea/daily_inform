@@ -144,6 +144,78 @@
     "summary": "arXiv:2605.02037v1 Announce Type: new \nAbstract: We present VILAS, a fully low-cost, modular robotic manipulation platform designed to support end-to-end vision-language-action (VLA) policy learning and deployment on accessible hardware. The system integrates a Fairino FR5 collaborative arm, a Jodell RG52-50 electric gripper, and a dual-camera perception module, unified through a ZMQ-based communication architecture that seamlessly coordinates teleoperation, data collection, and policy deployment within a single framework. To enable safe manipulation of fragile objects without relying on explicit force sensing, we design a kirigami-based soft compliant gripper extension that induces predictable deformation under compressive loading, providing gentle and repeatable contact with delicate targets. We deploy and evaluate three state-of-the-art VLA models on the VILAS platform: pi_0, pi_0.5, and GR00T N1.6. All models are fine-tuned from publicly released pretrained checkpoints using an identical demonstration dataset collected via our teleoperation pipeline. Experiments on a grape grasping task validate the effectiveness of the proposed system, confirming that capable manipulation policies can be successfully trained and deployed on low-cost modular hardware. Our results further provide practical insights into the deployment characteristics of current VLA models in real-world settings."
   },
   {
+    "title": "Robotic Desk Organization: A Multi-Primitive Approach to Manipulating Heterogeneous Objects via Environmental Constraints",
+    "original_title": "Robotic Desk Organization: A Multi-Primitive Approach to Manipulating Heterogeneous Objects via Environmental Constraints",
+    "link": "https://arxiv.org/abs/2605.02135",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02135v1 Announce Type: new \nAbstract: Desktop organization remains challenging for service robots because of heterogeneous objects and diverse manipulation objectives, such as collection and stacking. In this article, a task-oriented framework is presented for organizing planar rigid and deformable objects on desks. A perception pipeline was developed that augments existing datasets with uncommon desktop items and makes geometry-based pose and keypoint estimation possible, along with the detection of environmental constraints, such as table edges. To handle diverse manipulation requirements, environment-assisted primitives are used, including contact-based grasping for small objects, edge-based push-grasping for planar rigid objects, and levering-based grasping for planar deformable objects. These primitives leverage environmental and interobject constraints to improve robustness. A task planner was designed to integrate these primitives into multiobject organization. Sufficient real-world experiments demonstrate the effectiveness and robustness of the proposed framework. This research provides practical manipulation primitives for planar rigid and deformable objects, highlighting the role of environmental and interobject constraints in complex multiobject manipulation tasks. Code and video are available online."
+  },
+  {
+    "title": "Sampling-Based Control via Entropy-Regularized Optimal Transport",
+    "original_title": "Sampling-Based Control via Entropy-Regularized Optimal Transport",
+    "link": "https://arxiv.org/abs/2605.02147",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02147v1 Announce Type: new \nAbstract: Sampling-based model predictive control methods like MPPI and CEM are essential for real-time control of nonlinear robotic systems, particularly where discontinuous dynamics preclude gradient-based optimization. However, these methods derive from information-theoretic objectives that are agnostic to the geometry of the control problem, leading to pathological behaviors such as mode-averaging when the cost landscape is complex. We present OT-MPC, a sampling-based algorithm that overcomes these limitations through an entropy-regularized optimal transport formulation. By computing an optimal coupling between candidate control sequences and low-cost proposals, OT-MPC refines candidates toward nearby promising samples while coordinating updates across the ensemble to maintain coverage of the solution space. We derive closed-form, gradient-free updates via the Sinkhorn algorithm, enabling real-time performance. Experiments on navigation, manipulation, and locomotion tasks demonstrate improved success rates over existing methods."
+  },
+  {
+    "title": "Do We Really Need Immediate Resets? Rethinking Collision Handling for Efficient Robot Navigation",
+    "original_title": "Do We Really Need Immediate Resets? Rethinking Collision Handling for Efficient Robot Navigation",
+    "link": "https://arxiv.org/abs/2605.02192",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02192v1 Announce Type: new \nAbstract: Should a single collision necessarily terminate an entire navigation episode? In most deep reinforcement learning (DRL) frameworks for robot navigation, this remains the standard practice: every collision immediately triggers a global environment reset and is penalized as a complete task failure. While a collision during deployment naturally indicates task failure, applying the same treatment during training prevents the agent from exploring challenging obstacle configurations, which slows learning progress in the early training phase. In this work, we challenge this convention and propose a Multi-Collision reset Budget (MCB) framework that decouples local collision termination from global environment resets, allowing the agent to retry difficult configurations within the same episode. Experiments on multiple simulated and real-world robotic platforms show that the framework accelerates early-stage exploration and improves both success rate and navigation efficiency over conventional single-collision reset baselines, with a small collision budget producing the largest gains."
+  },
+  {
+    "title": "Change-Robust Online Spatial-Semantic Topological Mapping",
+    "original_title": "Change-Robust Online Spatial-Semantic Topological Mapping",
+    "link": "https://arxiv.org/abs/2605.02227",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02227v1 Announce Type: new \nAbstract: Autonomous robots require change-robust spatial-semantic reasoning: using spatial and semantic knowledge to decide where to go, how to get there, and where the robot is despite environmental change. Existing approaches typically attach semantics to SLAM-built metric maps, but these pipelines are brittle under appearance shifts and scene dynamics, where data association and relocalization degrade. We propose a Change-Robust Online Spatial-Semantic (CROSS) representation that replaces a globally consistent metric substrate with an online, pose-aware topological graph of RGB-D keyframes. The system explicitly reasons over perceptual ambiguity using sequential hypothesis testing in continuous SE(3). Our estimator maintains a bounded Gaussian-mixture belief over poses, enabling principled handling of loop closures and kidnapped-robot events. Experiments under severe appearance change, including real-robot object-goal navigation with lighting shifts and furniture rearrangement, demonstrate improved robustness over SLAM-based and topological baselines while remaining safe under perceptual aliasing."
+  },
+  {
+    "title": "Exact Higher-Order Derivatives for SE(3) via Analytical/AD Methods",
+    "original_title": "Exact Higher-Order Derivatives for SE(3) via Analytical/AD Methods",
+    "link": "https://arxiv.org/abs/2605.02252",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02252v1 Announce Type: new \nAbstract: Fast prototyping of new SE(3) estimation objectives remains awkward in practice. Modern Lie-group frameworks -- GTSAM, manif, Sophus, SymForce, Ceres -- target first-order workloads through different code-generation and automatic-differentiation strategies, each optimized for a particular seam between hand-derived geometry and generic differentiation. The remaining gap is a compact, AD-safe path from these first-order primitives to exact Hessians, observed-information matrices, and higher-order derivative tensors: the quantities needed for exact Newton steps, observed-information covariance estimates, and covariance correction.\n  This paper presents a hybrid analytical/AD recipe for SE(3) negative log-likelihoods. The practitioner writes the NLL gradient once, generic over a scalar type, and places the analytical/AD seam at the point-action interface y = Tx. Closed-form Lie-group Jacobians are used up to this interface; AD is applied only beyond it. The same source is then instantiated with ordinary floating-point scalars for gradients, vector-seeded dual numbers for exact Hessians in a single forward-mode pass, and nested dual numbers for higher-order derivative tensors. On a representative 6-DoF, 5-landmark SE(3) NLL, the advocated seeded-Hessian path is approximately 5x faster than finite-differencing the AD gradient on this benchmark while matching a nested-AD oracle to machine precision. The implementation adds roughly 70 lines of analytical-Jacobian code over an AD-only baseline. We also identify and fix a removable singularity in the standard SO(3)/SE(3) scalar basis that would otherwise produce NaNs at the origin under seeded AD, and we audit which Lie-group derivative tensors require this stabilized basis. The result is a practical path from rapidly written SE(3) objectives to exact higher-order derivatives, with predictable runtime and no finite-difference tuning."
+  },
+  {
+    "title": "Natural Gradient Bayesian Filtering: Geometry-Aware Filter for Dynamical Systems",
+    "original_title": "Natural Gradient Bayesian Filtering: Geometry-Aware Filter for Dynamical Systems",
+    "link": "https://arxiv.org/abs/2605.02306",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02306v1 Announce Type: new \nAbstract: Bayesian filtering is a cornerstone of state estimation in complex systems such as aerospace systems, yet exact solutions are available only for linear Gaussian models. In practice,nonlinear systems are handled through tractable approximations,with Gaussian filters such as the extended and unscented Kalman filters being among the most widely used methods. This tutorial revisits Gaussian filtering from an information-geometric perspective, viewing the prediction and measurement update steps as inference procedures over state distributions. Within this framework, we introduce a geometry-aware Gaussian filtering approach that leverages natural gradient descent on the statistical manifold of Gaussian distributions. The resulting Natural Gradient Gaussian Approximation (NANO) filter iteratively refines the posterior mean and covariance while respecting the intrinsic geometry of the Gaussian family and preserving the positive definiteness of the covariance matrix. We further highlight fundamental connections to the classical Kalman filtering, showing that a single natural-gradient step exactly recovers the Kalman measurement update in the linear-Gaussian case. The practical implications of the proposed framework are illustrated through case studies in representative nonlinear estimation problems,including satellite attitude estimation, simultaneous localization and mapping, and state estimation for robotic systems including quadruped and humanoid robots."
+  },
+  {
+    "title": "ShapeGrasp: Simultaneous Visuo-Haptic Shape Completion and Grasping for Improved Robot Manipulation",
+    "original_title": "ShapeGrasp: Simultaneous Visuo-Haptic Shape Completion and Grasping for Improved Robot Manipulation",
+    "link": "https://arxiv.org/abs/2605.02347",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02347v1 Announce Type: new \nAbstract: Humans grasp unfamiliar objects by combining an initial visual estimate with tactile and proprioceptive feedback during interaction. We present ShapeGrasp, a robotic implementation of this approach. The proposed method is an iterative grasp-and-complete pipeline that couples implicit surface visuo-haptic shape completion (creation of full 3D shape from partial information) with physics-based grasp planning. From a single RGB-D view, ShapeGrasp infers a complete shape (point cloud or triangular mesh), generates candidate grasps via rigid-body simulation, and executes the best feasible grasp. Each grasp attempt yields additional geometric constraints -- tactile surface contacts and space occupied by the gripper body -- which are fused to update the object shape. Failures trigger pose re-estimation and regrasping using the refined shape. We evaluate ShapeGrasp in the real world using two different robots and grippers. To the best of our knowledge, this is the first approach that updates shape representations following a real-world grasp. We achieved superior results over baselines for both grippers (grasp success rate of 84% with a three-finger gripper and 91% with a two-finger gripper), while improving the 3D shape reconstruction quality in all evaluation metrics used."
+  },
+  {
+    "title": "Robust Adaptive Predictive Control for Hook-Based Aerial Transportation Between Moving Platforms",
+    "original_title": "Robust Adaptive Predictive Control for Hook-Based Aerial Transportation Between Moving Platforms",
+    "link": "https://arxiv.org/abs/2605.02370",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.02370v1 Announce Type: new \nAbstract: This paper presents a novel model predictive control (MPC) approach for autonomous pick-and-place between moving platforms with a hook-equipped aerial manipulator. First, for accurate and rapid modeling of the complex dynamics, a digital twin model of the quadcopter equipped with a hook-based gripper, implemented in MuJoCo, is constructed and used as the predictive model for the MPC. To handle uncertainties of the predictive model (e.g. due to aerodynamics and uncertain payloads), a robust adaptive MPC approach is proposed. By systematic integration of zero-order robust optimization (zoRO) based uncertainty propagation and an extended Kalman filter (EKF) for parameter estimation, the MPC algorithm ensures robust constraint satisfaction, high performance, and computational efficiency. The effectiveness of the proposed method is evaluated in complex simulated scenarios and in real-world flight experiments."
+  },
+  {
     "title": "Home Robots Are Moving Into Reality as 1X Scales Up U.S. Production - kmjournal.net",
     "original_title": "Home Robots Are Moving Into Reality as 1X Scales Up U.S. Production - kmjournal.net",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzUXRlQ3Nob2xZLWtlTkhhcVRTSVVhMDBuMy1ubFc4bjVaNTFnSGNWZTI0VnY5UUZTaEJ3WW1FUkx0MVVEOE9PU2dmTklVTVNpVXpHRGtldWRwOTFaWHAtbjV3Z1lvRWd4NElZ?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로보틱 맨이퓨레이션의 안전성과 신뢰성을 확보하는 데 중요한 접촉 전prehensile force의 정확한 선택을 제안합니다. 이 트레이드오프는 특히 Compliance gripper에 있어서 어려운 접촉 역학 분석 없이도 시나리오에서 예측할 수 있습니다. 이 논문에서는 Exp-Force라는 경험-조건 프레임워크를 제안하여 단일 RGB 이미지에서 최소 구현 가능한 입체화력을 예측합니다. Cette 메서드는 작은 집합의 관련 전력과 시각 언어 모델을 조건화하여 이러한 예제에 따라 결론을 내리는 것이며, 분석적 접촉 모델 또는 수동적으로 설계된 heuristics를 필요로 하지 않습니다. 129 개의 물체 인스턴스에서 Exp-Force는 0.43 N의 최소 오차를 달성하며, zero-shot inference에 비해 72%의 오류 감소를 이끌어 냅니다. 실제 세계 테스트에서는 30 개의 미상 물체에 대해 적절한 포스 선택률을 63%에서 87%로 향상시켰습니다."
-  },
-  {
-    "title": "AtomVLA: Scalable Post-Training for Robotic Manipulation via Predictive Latent World Models",
-    "original_title": "AtomVLA: Scalable Post-Training for Robotic Manipulation via Predictive Latent World Models",
-    "link": "https://arxiv.org/abs/2603.08519",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 조정에 있어서 일반적이고 다양한 robotic manipulation을 구현하는 Vision-Language-Action(VLA) 모델의 성능 향상에 대한 scalable post-training 방법을 제안합니다. VLA 모델이 복잡한 다단계 행위를 실행하는 데에는 robust instruction grounding이 있어야 하며, 이를 강조하여 long-horizon 태스크에서 에러 accumulation을 방지할 수 있습니다. 이 방법은 pre-trained predictive world model과 함께 subgroup Relative Policy Optimization를 사용하여 physical robots에 대한 비용이 높은 온라인 롤아웃을 피할 수 있습니다. LIBERO benchmark와 LIBERO-PRO benchmark에서 97.0%의 평균 성공률을 달성하며, Galaxea R1 Lite platform에서 실험하여 다양한 태스크에서 broad applicability를 확인했습니다.\n\nNote: I followed the instructions carefully to provide a formal and objective news-brief style summary ending in nouns (in this case, ~방지할 수 있습니다). I also kept key technical terms and company names in English or used standard Korean transliteration if widely used."
-  },
-  {
-    "title": "Humanoid Robotics Recovery Technique Development 발표됨",
-    "original_title": "Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery",
-    "link": "https://arxiv.org/abs/2603.08619",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "인공 로봇이 불안정한 환경에서 쓰임을 제한하는 추락과 회복 문제를 해결하기 위해, 강화학습 기술에 고전적인 균형 조절 원리를 도입하였다. 이를 통해 로봇이 다양한 회복 방법을 사용하여 93.4%의 회복률을 달성할 수 있었으며, 이 중에는 단추와 허리 전략부터 다이나믹 펀치에 대한 교정 걸음까지 다양한 회복 방법이 포함되었다."
-  },
-  {
-    "title": "MotionBits: 비정형체의 운동수준 分析를 통해 비디오 구분함",
-    "original_title": "MotionBits: Video Segmentation through Motion-Level Analysis of Rigid Bodies",
-    "link": "https://arxiv.org/abs/2603.06846",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "모션비트(MotionBit) concept를 정의하고, 움직이는 고정체 segmentation을 위한 새로운 접근 방식을 제안합니다. 이를 위해 MoRiBo hand-labeled benchmark를 생성하여 robotic manipulation 및 human-in-the-wild 비디오에 대한 moving rigid-body segmentation을 평가하는 데 사용할 수 있습니다. MotionBits segmentation method는 state-of-the-art embodied perception methods보다 37.3%의 성능 향상을 달성하여 downstream embodied reasoning과 manipulation task에서 효과적인 활용을 확인했습니다."
-  },
-  {
-    "title": "TeamHOI: 인간-물체 상호작용을 위한 일원화 정책",
-    "original_title": "TeamHOI: Learning a Unified Policy for Cooperative Human-Object Interactions with Any Team Size",
-    "link": "https://arxiv.org/abs/2603.07988",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "코프에라티브 인간-물체 상호작용(HOI)을 확장하는 데 어려움을 초래하는 PHYSICS-BASED 인형 제어의 고성능 성과를 활용하여, 다양한 팀 크기에 적용할 수 있는 분산된 정책 프레임워크 TeamHOI를 제안합니다. 각 에이전트는 지역 관찰을 사용하여 팀원들에게 집중하면서, teammate 토큰을 기반으로 하는 트랜스포머-기반 정책 네트워크를 사용하여 확장적 조정 기능을 얻습니다. 이를 강화하는 마스크드 악성 운동 전략(AMP)도 도입하여, 싱글 휴먼 참조 운동을 사용하여 협력 HOI 데이터의 희박성을 완전히 보상합니다. ||\n(Korean Summary: This paper proposes a framework called TeamHOI that enables a single decentralized policy to handle cooperative human-object interactions across various team sizes. Each agent uses local observations and focuses on teammates through a Transformer-based policy network with teammate tokens, achieving scalable coordination. The framework also includes a masked adversarial motion prior strategy to address the scarcity of cooperative HOI data.)"
-  },
-  {
-    "title": "ClearDepth: Transparent Object Depth Perception Algorithm for Robotic Manipulation 함",
-    "original_title": "ClearDepth: Enhanced Stereo Perception of Transparent Objects for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2409.08926",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Transparent object depth perception algorithm ClearDepth를 개발하여 로봇 조작을 지원하는 것을 발표했습니다. 이 알고리즘은 시각 transformer-based stereo depth recovery 방법과 구조적 특징을 고려한 post-fusion module를 사용하여 투명 객체의 깊이 맵을 정밀하게 생성합니다. 또한, 데이터 생성을 가속화하고 일반화를 개선하기 위해 AI 알고리즘을 사용하여 Sim2Real 시뮬레이션을 수행했습니다. 실험 결과에 따르면 이 모델은 실세계 시나리오에서 좋은 Sim2Real 일반성을 보여주는 것을 확인할 수 있습니다."
-  },
-  {
-    "title": "비ipedal 로봇의 안전한 항해를 위한 Koopman 연산자 기반 모델 예측 제어",
-    "original_title": "Safe Navigation of Bipedal Robots via Koopman Operator-Based Model Predictive Control",
-    "link": "https://arxiv.org/abs/2409.14736",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "한국 robotics에 있은 비례성을 유지하는 nonlinear dynamic에 직면한 주요 도전이었다. 이를 해결하기 위해 우리는 Koopman operator 이론에 의한 안전한 항해 프레임워크를 제안했다. 이를 통해 우리는 low-level locomotion policy를 deep reinforcement learning을 사용하여 학습하고, linearized dynamics를 high-dimensional lifted space에서 학습하는 방법으로 그 dynamic의 base-level 특징을 캐치할 수 있었다. 또한, 우리의 model-predictive controller(MPC)는 lifted space에서 quadratic objective와 linear dynamics 제한을 효율적으로 최적화하여 control signals를 결정할 수 있었다. 이를 통해 우리는 Koopman 모델이 baseline 접근 방식보다 더 정확하게 bipedal 로봇의 경로를 예측하는 것을 확인했고, 또한 dense 환경에서 narrow passage에 있는 경우 improved safety를 달성하는 것을 보여줄 수 있었다."
-  },
-  {
-    "title": "Korean Title:",
-    "original_title": "Strengthening Generative Robot Policies through Predictive World Modeling",
-    "link": "https://arxiv.org/abs/2502.00622",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "강제 생성 로봇 정책 강화에 대한 예측 세계 모델링 방안의 강화\n\nKorean Summary: GPC 프레임워크를 통해 expert 조명 및 랜덤 탐색으로부터 learnt predictive action-conditioned world model을 구축한 후, 이를 사용하여 online planner이 action proposals을优化적으로_rank하는 thing에 초점을 두어 로봇 manipulation tasks에서 behavior cloning보다 우수한 성과를 보인다."
-  },
-  {
-    "title": "Diffusion Stabilizer Policy for Automated Surgical Robot Manipulations",
-    "original_title": "Diffusion Stabilizer Policy for Automated Surgical Robot Manipulations",
-    "link": "https://arxiv.org/abs/2503.01252",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "수술 로봇 자동화 정책"
   }
 ]
