@@ -1,5 +1,77 @@
 [
   {
+    "title": "Ablation Study of Multimodal Perception, Language Grounding, and Control for Human-Robot Interaction in an Object Detection and Grasping Task",
+    "original_title": "Ablation Study of Multimodal Perception, Language Grounding, and Control for Human-Robot Interaction in an Object Detection and Grasping Task",
+    "link": "https://arxiv.org/abs/2605.00963",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.00963v1 Announce Type: new \nAbstract: This manuscript extends our previous multimodal human-robot interaction system by introducing a controlled ablation study of the three modules that most strongly influence end-to-end performance: the large language model used for action extraction, the perception system used for visual grounding, and the controller used for motion execution. The goal is not to redesign the full pipeline, but to isolate the contribution of each component under a common experimental protocol and then evaluate the best combinations end-to-end. We therefore compare three language models, five perception configurations, and three controllers, followed by a second-stage factorial study over the best candidates. The resulting analysis is intended to clarify which choices primarily affect execution time, which primarily affect success rate, and where the largest engineering gains are likely to come from in future revisions of the system."
+  },
+  {
+    "title": "Online Safety Filter for Deformable Object Manipulation with Horizon Agnostic Neural Operators",
+    "original_title": "Online Safety Filter for Deformable Object Manipulation with Horizon Agnostic Neural Operators",
+    "link": "https://arxiv.org/abs/2605.01069",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01069v1 Announce Type: new \nAbstract: Safety critical control of robotic manipulation tasks involving deformable media such as fluids, cloth, and soft objects remains challenging because existing learning based approaches encode safety indirectly through reward shaping, which provides no guarantee of constraint satisfaction at deployment. We present a constraint driven online safety filter for deformable object manipulation that enforces explicit task level safety constraints in real time by minimally modifying any nominal control policy. Our approach combines two key components: a horizon agnostic neural operator that learns the boundary input output mapping of the underlying PDE dynamics and generalizes across variable rollout lengths without retraining, and a boundary control barrier function that certifies safety at the task relevant output level via a lightweight quadratic program. The resulting safety constraint is affine in the boundary input rate, enabling real time online filtering. We evaluate the proposed method on fluid manipulation tasks in FluidLab, where the filter improves safe trajectory rates by up to 22% over unfiltered base policies while also reducing the number of steps required to reach the safe set, demonstrating that constraint driven safety enforcement is both more reliable and more efficient than reward shaping approaches."
+  },
+  {
+    "title": "Sentinel-VLA: A Metacognitive VLA Model with Active Status Monitoring for Dynamic Reasoning and Error Recovery",
+    "original_title": "Sentinel-VLA: A Metacognitive VLA Model with Active Status Monitoring for Dynamic Reasoning and Error Recovery",
+    "link": "https://arxiv.org/abs/2605.01191",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01191v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models have advanced the field of embodied manipulation by harnessing broad world knowledge and strong generalization. However, current VLA models still face several key challenges, including limited reasoning capability, lack of status monitoring, and difficulty in self-correction. In this paper, we introduce \\textbf{Sentinel-VLA}, a metacognitive VLA model equipped with an active ``sentinel'' module to monitor real-time execution status. Only when necessary, such as during initial planning or upon detecting an error, the model triggers a dynamic reasoning or formulate error recovery solutions. This on-demand reasoning mechanism ensures robust decision-making while minimizing computational overhead. Notably, all training data (spanning 44 tasks and over 2.6 million transitions) is automatically generated and annotated through our designed pipeline. We also propose the Self-Evolving Continual Learning (SECL) algorithm, which allows Sentinel-VLA to identify its capability boundaries and automatically collect data for expansion, paired with Orthogonal Continual Adapter (OC-Adapter) to constrain parameter updates to an orthogonal space, thereby preventing catastrophic forgetting. Real-world experiments demonstrate that Sentinel-VLA boosts the task success rate by over 30\\% compared to the SOTA model, PI0. We will open-source all the code, weights, and data generation pipeline."
+  },
+  {
+    "title": "VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model",
+    "original_title": "VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model",
+    "link": "https://arxiv.org/abs/2605.01194",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01194v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have demonstrated remarkable capabilities and generalization in embodied manipulation. However, their decision-making relies on a fast, instinctive process that lacks deliberation. This strategy often leads to suboptimal or catastrophic actions when facing complex or ambiguous scenarios that require greater consideration. In this paper, we introduce \\textbf{VLA-ATTC}, a framework that endows VLA models with adaptive test-time compute (TTC). VLA-ATTC employs an uncertainty-based ``cognitive clutch'' to dynamically transition from reflexive execution to a TTC deliberation phase when necessary. During TTC phase, a novel \\textbf{Relative Action Critic} (RAC) model identifies the optimal action from generated candidates via pairwise comparisons. This relative mechanism replaces unstable absolute value estimation, significantly simplifying the learning objective. Furthermore, we introduce an efficient sampling strategy to amortize computational costs and an automated data pipeline that curates preference pairs without manual annotation. On the LIBERO-LONG benchmark, VLA-ATTC reduces the failure rate of the SOTA model PI0.5 by over 50\\%. We will open-source all the code and weights."
+  },
+  {
+    "title": "TAIL-Safe: Task-Agnostic Safety Monitoring for Imitation Learning Policies",
+    "original_title": "TAIL-Safe: Task-Agnostic Safety Monitoring for Imitation Learning Policies",
+    "link": "https://arxiv.org/abs/2605.01195",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01195v1 Announce Type: new \nAbstract: Recent imitation learning (IL) algorithms such as flow-matching and diffusion policies demonstrate remarkable performance in learning complex manipulation tasks. However, these policies often fail even when operating within their training distribution due to extreme sensitivity to initial conditions and irreducible approximation errors that lead to compounding drift. This makes it unsafe to deploy IL policies in the field where out-of-distribution scenarios are prevalent. A prerequisite for safe deployment is enabling the policy to determine whether it can execute a task the way it was learned from demonstrations. This paper presents TAIL-Safe, a principled approach to identify, for a trained IL policy, a safe set from where the policy empirically succeeds in completing the learned task. We propose a Lipschitz-continuous Q-value function that maps state-action pairs to a long-term safety score based on three short-term task-agnostic criteria: visibility, recognizability, and graspability. The zero-superlevel set of this function characterizes an empirical control invariant set over state-action pairs. When the nominal policy proposes an action outside this set, we apply a recovery mechanism inspired by Nagumo's theorem that uses gradient ascent to the Q-function to steer the policy back to safety. To learn this Q-function, we construct a high-fidelity digital twin using Gaussian Splatting that enables systematic collection of failure data without risk to physical hardware. Experiments with a Franka Emika robot demonstrate that flow-matching policies, which fail under run-time perturbations, achieve consistent task success when guided by the proposed TAIL-Safe."
+  },
+  {
+    "title": "Dynamics Aware Quadrupedal Locomotion via Intrinsic Dynamics Head",
+    "original_title": "Dynamics Aware Quadrupedal Locomotion via Intrinsic Dynamics Head",
+    "link": "https://arxiv.org/abs/2605.01227",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.01227v1 Announce Type: new \nAbstract: Quadrupedal locomotion plays a critical role in enabling agile, versatile movement across complex terrains. Understanding and estimating the underlying physical dynamics are essential for achieving efficient and stable quadrupedal locomotion. We propose a novel training framework for quadrupedal locomotion that enables the Control Policy to understand and reason about physical dynamics. In simulation, we concurrently train an Intrinsic Dynamics (ID) Head that learns state-to-torque dynamics alongside the Control Policy, and we define a dynamics reward enabled by the ID Head that encourages the Policy toward more predictable dynamical behavior. We also provide a mechanism to tune the learned dynamics in the resulting Policy by controlling the training coefficients of the ID Head. Our simulation experiments show that this mechanism drives convergence to better optima across a wide range of standard quadrupedal locomotion rewards, yielding more efficient and smoother policies. Our real-robot experiments demonstrate sim-to-real transfer of these improvements, with significant gains in torque efficiency (16.8%), action rate (18.6%), and mechanical power (12.8%), while improving safe torque occupancy by 6.4%."
+  },
+  {
+    "title": "A Principled Approach for Creating High-fidelity Synthetic Demonstrations for Imitation Learning",
+    "original_title": "A Principled Approach for Creating High-fidelity Synthetic Demonstrations for Imitation Learning",
+    "link": "https://arxiv.org/abs/2605.01232",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.01232v1 Announce Type: new \nAbstract: Recent advances in 3D Gaussian Splatting (3DGS) have enabled visually realistic demonstration generation from a single expert trajectory and a short multi-view scan. However, existing 3DGS-based synthesis pipelines typically generate new motions using sampling-based planners or trajectory optimization, which often deviate substantially from the expert's demonstrated path. While such deviations may be acceptable for tasks insensitive to motion shape, they discard subtle spatial and temporal structure that is critical for contact-rich and shape-sensitive manipulation, causing increased demonstration diversity to harm downstream policy learning. We argue that demonstration synthesis should treat the expert trajectory as a strong prior. Building on this principle, we propose a framework that synthesizes diverse task demonstrations while explicitly preserving expert motion structure. We model the expert trajectory using Dynamic Movement Primitives (DMPs) and retarget it to new goals, object configurations, and viewpoints within a reconstructed 3DGS scene, yielding phase-consistent, shape-preserving motion by construction. To safely realize this expert-preserving diversity in cluttered scenes, we introduce an analytic obstacle-aware DMP formulation that operates directly on the continuous density field induced by the 3DGS representation. This enables collision avoidance while minimally perturbing the nominal expert motion, unifying photorealistic rendering and geometric reasoning without additional scene representations. We evaluate our approach on a Spot mobile manipulator across three manipulation tasks with increasing sensitivity to trajectory fidelity. Compared to planner- and optimization-based synthesis, our method produces trajectories with lower deviation and collision rates and yields higher task success when training diffusion-based visuomotor policies."
+  },
+  {
+    "title": "SixthSense: Task-Agnostic Proprioception-Only Whole-Body Wrench Estimation for Humanoids",
+    "original_title": "SixthSense: Task-Agnostic Proprioception-Only Whole-Body Wrench Estimation for Humanoids",
+    "link": "https://arxiv.org/abs/2605.01427",
+    "date": "2026-05-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.01427v1 Announce Type: new \nAbstract: Humanoid robots are entering our physical world at scale, yet as oversized toys--good at singing and dancing, but short on force-interaction capabilities for practical tasks. Bridging this gap necessitates prioritizing reliable contact perception as a fundamental requirement. Estimating external wrenches in humanoids is complicated by floating-base dynamics and indeterminate contact locations. Existing analytical frameworks require idealistic assumptions and hard-to-obtain measurements, which are often unavailable in practice. To bridge this gap, we propose SixthSense, a task-agnostic approach that infers whole-body contact timing, location, and wrenches from proprioception and IMU data alone. To capture the multi-modal dynamics between unstructured contact inputs and the uncertain motion outputs, we employ conditional flow matching to tokenize proprioceptive histories and estimate a spatiotemporally sparse contact-event flow. SixthSense serves as a plug-and-play perception module for applications including collision detection, physical human-robot interaction, and force-feedback teleoperation. Experiments across standing, walking, and whole-body motion-tracking policies showcased unprecedented performance in diverse behaviors."
+  },
+  {
     "title": "Home Robots Are Moving Into Reality as 1X Scales Up U.S. Production - kmjournal.net",
     "original_title": "Home Robots Are Moving Into Reality as 1X Scales Up U.S. Production - kmjournal.net",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzUXRlQ3Nob2xZLWtlTkhhcVRTSVVhMDBuMy1ubFc4bjVaNTFnSGNWZTI0VnY5UUZTaEJ3WW1FUkx0MVVEOE9PU2dmTklVTVNpVXpHRGtldWRwOTFaWHAtbjV3Z1lvRWd4NElZ?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "Visuomotor 정책에 대해 demonstrating된 데이터가 흔히 raw RGB 관측치에서 nuisance visual 요인으로 과적합되면, 이를 통해 나타나는 강건성은 배경 변화와 대상 재색칠 등 출현 변동 하에서의 brittle한 행동을 초래하게 된다. 우리는 task-aware 관측 인터페이스를 제안하여 visual 입력을 공통 표현으로 canonicalize하고, OOD 출현 변동에 대한 내구성을 향상시킴으로써 정책을 수정하거나 fine-tuning하지 않아도 되게 한다. RGB 이미지와 열어놓은-task relevant 엔티티의 명세에 따라, 우리는 SAM3를 사용하여 목표 물체와 로봇/그리퍼를 분할하고, L0 관측을 생성하는데 predefined semantic 색상을 사용하여 constant 배경에서 segmented 엔티티를 다시 그린다. 강건한 기하적 주회가 필요한_tasks는 더 추가적으로 Depth Anything 3의 monocular dept를 segmented 레고에 depth-guided overwrite 방식으로 주입하여 unified semantic-geometric 관측(L1)을 생성하게 한다. 이 관측은 표준 3 채널, 이미지와 같은 입력으로 남게 된다. 우리는 RoboMimic (Lift), ManiSkill YCB grasping under clutter, RLBench task 4-under controlled appearance shifts, 및 두 Franka Tasks (ReachX and CloseCabinet)에 평가하고, 모든 벤치마크와 정책 backbone (Flow Matching Policy and SmolVLA)에서 interface가 in-distribution 성능을 보장하는 한편 OOD visual shift 하에서의 내구성을 크게 향상시켰다."
-  },
-  {
-    "title": "LAR-MoE: 로봇 임자 학습에 대한 묵적 정렬 경로",
-    "original_title": "LAR-MoE: Latent-Aligned Routing for Mixture of Experts in Robotic Imitation Learning",
-    "link": "https://arxiv.org/abs/2603.08476",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇이 보여주는 기술을 배운 임자 학습은 효율적이나 다양한 동적에서 모델이 각별적인 행동 모드를 평균화하는 것을 해결해야 하는 문제를 가지고 있습니다. MoE 아키텍처는 이러한 문제를 해결하지만, 전문가 라우팅을 위해 기술 분해가 있어야 합니다. 우리는 LAR-MoE, 묵적 정렬 경로 MoE 프레임워크를 소개합니다. 이 프레임워크는 주제-학생 共훈과 후속 훈련 두 단계를ประกอบ하여 묵적 공간 구조를 따르는 전문가 라우팅을 정규화합니다. 우리는 LIBERO 벤치마크에서 LAR-MoE를 평가하고, 95.2%의 평균 성공률을 달성했습니다. furthermore, 우리는 수술 적 복수 grasping and retraction 태스크에서 MoE 기준선에 도달하며 ex vivo porcine 조직으로 전이되지 않았습니다."
-  },
-  {
-    "title": "DemoDiffusion: One-Shot Human Imitation using pre-trained Diffusion Policy",
-    "original_title": "DemoDiffusion: One-Shot Human Imitation using pre-trained Diffusion Policy",
-    "link": "https://arxiv.org/abs/2506.20668",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇이_SINGLE_HUMAN_제출을 구현하는 새로운 방법, DemoDiffusion를 제안합니다. 이 접근은 두 가지 인사이트에 기반해 있습니다. 첫째, 인간의 데모션에서 손을 움직이는 것은 로봇의 엔도-이펙터 트레임재를 생성하는 유용한 전처입니다. 둘째, 이를 통해 얻어진 트레임재는 인간의 데모션의 구조를 잡을 수 있지만, 실제로 가능한 로봇 액션과 일치하지 않을 수 있습니다. 이러한 문제를 해결하기 위해 우리는 pre-trained generalist diffusion policy를 사용하여 트레임재를 수정합니다. 이 방법은 새로운 태스크와 씬에 적응하는 데 적극적인데, 이는 최소한의 노력으로 가능합니다. 실제 실험에서는 8개의 다양한 manipulate 태스크에서 DemoDiffusion는 83.8%의 평균 성공률을 달성했으며, pre-trained policy의 경우 13.8%, kinematic retargeting의 경우 52.5%를 달성했습니다."
-  },
-  {
-    "title": "They See Me Rolling: High-Speed Event Vision-Based Tactile Roller Sensor for Large Surface Inspection",
-    "original_title": "They See Me Rolling: High-Speed Event Vision-Based Tactile Roller Sensor for Large Surface Inspection",
-    "link": "https://arxiv.org/abs/2507.19914",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "고속 이벤트 비전 기반 롤링 센서 : 대면적 시각 검사용"
-  },
-  {
-    "title": "M4Diffuser: Multi-View Diffusion Policy with Manipulability-Aware Control for Robust Mobile Manipulation",
-    "original_title": "M4Diffuser: Multi-View Diffusion Policy with Manipulability-Aware Control for Robust Mobile Manipulation",
-    "link": "https://arxiv.org/abs/2509.14980",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇의 이동 제어와 로보틱 어름의 조정에 대한 모바일 처리를 요구하는 다중관점 방출 정책과 새로운 감성-구조 QP(Manipulability-aware QP) 컨트롤러를 결합하여 성능을 개선한 M4Diffuser framework를 제안하였다. 이 새로운 접근법은 proprioceptive 상태, 카메라의 다양한 관점 및 글로벌 환경과 세부적 물체의 정세를 고려하여 작업-관련 끝점 목표를 생성하며, 이를 ReM-QP 컨트롤러가 수행함으로써 효율성과 강건성을 향상하였다. 이 새로운 접근법은 시뮬레이션 및 실제 환경에서 7~56%의 성능을 향상하고 충돌을 3~31%까지 줄이면서 모바일 처리의 신뢰성을 확보한 바 있다."
-  },
-  {
-    "title": "CroSTAta: Cross-State Transition Attention Transformer for Robotic Manipulation",
-    "original_title": "CroSTAta: Cross-State Transition Attention Transformer for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2510.00726",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보틱 맨이풀레이션 정책을 통해 강제 학습으로부터의 과시 교육은 훈련期间 비표현적으로 나타난 실행 변화와 직면하는挑戰입니다. 이에 표준 접근법은 시퀀스 전반을 처리하지만, 과거 상태를 기반으로한 attention 메커니즘을 통해 robustness를 향상할 수 있습니다. 우리는 Cross-State Transition Attention Transformer를 제안하여 State Transition Attention (STA) 기제를 활용해 standard attention 가중치를 learned 상태 진화 패턴에 기반하여 modulate합니다. 이 접근 방식은 구조적 attention과 temporal masking 훈련을 조합하여, recent timesteps에서 시각 정보를 무작위로 삭제하여 과거 역사 컨텍스트로부터의 reasoning을 장려합니다. 평가에서는 STA가 표준 attention 접근법, TCN, LSTM 네트워크와 비교하여 2배 이상의 정확도 향상을 달성했습니다. 소스 코드 및 데이터는 https://github.com/iit-DLSLab/croSTAta에서 액세스할 수 있습니다."
-  },
-  {
-    "title": "Vision-Guided Targeted Grasping and Vibration for Robotic Pollination in Controlled Environments",
-    "original_title": "Vision-Guided Targeted Grasping and Vibration for Robotic Pollination in Controlled Environments",
-    "link": "https://arxiv.org/abs/2510.06146",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "controlled environments에서 로봇 오래된 precise pollination을 위한 vision-guided robotic framework를 제안하고 검증했다. 이 프레임워크는 RGB-D 센서에 Mounted end-effector 데이터, 3D plant reconstruction, targeted grasp planning, physics-based vibration modeling 등을 결합하여 exact pollination을 가능하게 했다."
-  },
-  {
-    "title": "Humanoid Locomotion AI Algorithm 개발됨",
-    "original_title": "Preference-Conditioned Multi-Objective RL for Integrated Command Tracking and Force Compliance in Humanoid Locomotion",
-    "link": "https://arxiv.org/abs/2510.10851",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "humanooid 로코미네이션을 위한 멀티-오브젝트 RL 프레임워크를 개발하여 명령 추적과 외부 힘 유연성을 균형에 둔 새로운 알고리즘을 제안하고 있다. 이를 통해 1개의 omnidirectional 로코미네이션 정책을 개발할 수 있으며, 사용자 지정 선호 입력으로 명령 따르기와 힘 유연성을 조정할 수 있다. 이 알고리즘은 시뮬레이션과 실제 실험에서 안정적으로 훈련하고 있고, humanooid 로봇에 적용 가능하다."
-  },
-  {
-    "title": "로봇 인터랙션 설계:미테리얼에 의한 예Plainability",
-    "original_title": "Material Driven HRI Design: Aesthetics as Explainability",
-    "link": "https://arxiv.org/abs/2603.06879",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "로봇의 역할을 해석하는 데 주요한 요소는 기능 뿐 아니라 미적 요소도 포함된다. 실제와 fictitious 로봇 디자인에서는 산업적인 미를 사용하여 하드 글로시 플라스틱 등을 숨기고, underlying 메커니즘과 전자 부품을 내부적으로 감추어 누가의 인트어프티를 기다리는 nude humanoide 형태를 나타내는 경우가 많다. 이러한 로봇은 사용자에게 커버링을 적용하여, 미디어와 같은 작품에 기반하여 이를 정의하게 된다. 우리는 설계자가 패션에서 모티브를 얻어 인터랙션을 디자인하고 적절한 기대를 설정할 수 있다고 주장하며, 외관을 장식으로서 아니라 색상, 텍스쳐, 및 재료 선택이 인터랙션 신호로 작용할 수 있다고 제안한다. 이러한 신호는 로봇의 역할, 태스크, 및 환경을 설명하고 사용자의 기대를 조정할 수 있으며, 잘 생각해두면 친숙함과 읽기성을 생성하며, 나쁘게 되면 잘못된 기대에 이르게 된다. 이 논문에서는 재료가 인터랙션을 만들어 예Plainability를 생성하는 프레임워크를 제안하고, 이를 6가지 로봇의 콘텐츠 분석을 통해 적용한다."
   }
 ]
