@@ -1,5 +1,77 @@
 [
   {
+    "title": "Refining Compositional Diffusion for Reliable Long-Horizon Planning",
+    "original_title": "Refining Compositional Diffusion for Reliable Long-Horizon Planning",
+    "link": "https://arxiv.org/abs/2605.03075",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.03075v1 Announce Type: new \nAbstract: Compositional diffusion planning generates long-horizon trajectories by stitching together overlapping short-horizon segments through score composition. However, when local plan distributions are multimodal, existing compositional methods suffer from mode-averaging, where averaging incompatible local modes leads to plans that are neither locally feasible nor globally coherent. We propose Refining Compositional Diffusion (RCD), a training-free guidance method that steers compositional sampling toward high-density, globally coherent plans. RCD leverages the self-reconstruction error of a pretrained diffusion model as a proxy for the log-density of composed plans, combined with an overlap consistency term that enforces consistency at segment boundaries. We show that the combined guidance concentrates sampling on high-density plans that mitigate mode-averaging. Experiments on challenging long-horizon tasks from OGBench, including locomotion, object manipulation, and pixel-based observations, demonstrate that RCD consistently outperforms existing methods."
+  },
+  {
+    "title": "RLDX-1 Technical Report",
+    "original_title": "RLDX-1 Technical Report",
+    "link": "https://arxiv.org/abs/2605.03269",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.03269v1 Announce Type: new \nAbstract: While Vision-Language-Action models (VLAs) have shown remarkable progress toward human-like generalist robotic policies through the versatile intelligence (i.e. broad scene understanding and language-conditioned generalization) inherited from pre-trained Vision-Language Models, they still struggle with complex real-world tasks requiring broader functional capabilities (e.g. motion awareness, memory-aware decision making, and physical sensing). To address this, we introduce RLDX-1, a general-purpose robotic policy for dexterous manipulation built on the Multi-Stream Action Transformer (MSAT), an architecture that unifies these capabilities by integrating heterogeneous modalities through modality-specific streams with cross-modal joint self-attention. RLDX-1 further combines this architecture with system-level design choices, including synthesizing training data for rare manipulation scenarios, learning procedures specialized for human-like manipulation, and inference optimizations for real-time deployment. Through empirical evaluation, we show that RLDX-1 consistently outperforms recent frontier VLAs (e.g. $\\pi_{0.5}$ and GR00T N1.6) across both simulation benchmarks and real-world tasks that require broad functional capabilities beyond general versatility. In particular, RLDX-1 shows superiority in ALLEX humanoid tasks by achieving success rates of 86.8% while $\\pi_{0.5}$ and GR00T N1.6 achieve around 40%, highlighting the ability of RLDX-1 to control a high-DoF humanoid robot under diverse functional demands. Together, these results position RLDX-1 as a promising step toward reliable VLAs for complex, contact-rich, and dynamic real-world dexterous manipulation."
+  },
+  {
+    "title": "Height Control and Optimal Torque Planning for Jumping With Wheeled-Bipedal Robots",
+    "original_title": "Height Control and Optimal Torque Planning for Jumping With Wheeled-Bipedal Robots",
+    "link": "https://arxiv.org/abs/2605.03302",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.03302v1 Announce Type: new \nAbstract: This paper mainly studies the accurate height jumping control of wheeled-bipedal robots based on torque planning and energy consumption optimization. Due to the characteristics of underactuated, nonlinear estimation, and instantaneous impact in the jumping process, accurate control of the wheeled-bipedal robot's jumping height is complicated. In reality, robots often jump at excessive height to ensure safety, causing additional motor loss, greater ground reaction force and more energy consumption. To solve this problem, a novel wheeled-bipedal jumping dynamical model(W-JBD) is proposed to achieve accurate height control. It performs well but not suitable for the real robot because the torque has a striking step. Therefore, the Bayesian optimization for torque planning method(BOTP) is proposed, which can obtain the optimal torque planning without accurate dynamic model and within few iterations. BOTP method can reduce 82.3% height error, 26.9% energy cost with continuous torque curve. This result is validated in the Webots simulation platform. Based on the torque curve obtained in the W-JBD model to narrow the searching space, BOTP can quickly converge (40 times on average). Cooperating W-JBD model and BOTP method, it is possible to achieve the height control of real robots with reasonable times of experiments."
+  },
+  {
+    "title": "Learning Reactive Dexterous Grasping via Hierarchical Task-Space RL Planning and Joint-Space QP Control",
+    "original_title": "Learning Reactive Dexterous Grasping via Hierarchical Task-Space RL Planning and Joint-Space QP Control",
+    "link": "https://arxiv.org/abs/2605.03363",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.03363v1 Announce Type: new \nAbstract: In this work, we propose a hybrid hierarchical control framework for reactive dexterous grasping that explicitly decouples high-level spatial intent from low-level joint execution. We introduce a multi-agent reinforcement learning architecture, specialized into distinct arm and hand agents, that acts as a high-level planner by generating desired task-space velocity commands. These commands are then processed by a GPU-parallelized quadratic programming controller, which translates them into feasible joint velocities while strictly enforcing kinematic limits and collision avoidance. This structural isolation not only accelerates training convergence but also strictly enforces hardware safety. Furthermore, the architecture unlocks zero-shot steerability, allowing system operators to dynamically adjust safety margins and avoid dynamic obstacles without retraining the policy. We extensively validate the proposed framework through a rigorous simulation-to-reality pipeline. Real-world hardware experiments on a 7-DoF arm equipped with a 20-DoF anthropomorphic hand demonstrate highly robust zero-shot transferability for dexterous grasping to a diverse set of unseen objects, highlighting the system's ability to reactively recover from unexpected physical disturbances in unstructured environments."
+  },
+  {
+    "title": "BifrostUMI: Bridging Robot-Free Demonstrations and Humanoid Whole-Body Manipulation",
+    "original_title": "BifrostUMI: Bridging Robot-Free Demonstrations and Humanoid Whole-Body Manipulation",
+    "link": "https://arxiv.org/abs/2605.03452",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.03452v1 Announce Type: new \nAbstract: High-quality data collection is a fundamental cornerstone for training humanoid whole-body visuomotor policies. Current data acquisition paradigms predominantly rely on robot teleoperation, which is often hindered by limited hardware accessibility and low operational efficiency. Inspired by the Universal Manipulation Interface (UMI), we propose BifrostUMI, a portable, efficient, and robot-free data collection framework tailored for humanoid robots. BifrostUMI leverages lightweight VR devices to capture human demonstrations as sparse keypoint trajectories while simultaneously recording wrist-mounted visual data. These multimodal data are subsequently utilized to train a high-level policy network that predicts future keypoint trajectories conditioned on the captured visual features. Through a robust keypoint retargeting pipeline, keypoint trajectories are precisely mapped onto the robot's morphology and executed via a whole-body controller. This approach enables the seamless transfer of diverse and agile behaviors from natural human demonstrations to humanoid embodiments. We demonstrate the efficacy and versatility of the proposed framework across two distinct experimental scenarios."
+  },
+  {
+    "title": "Bridging the Embodiment Gap: Disentangled Cross-Embodiment Video Editing",
+    "original_title": "Bridging the Embodiment Gap: Disentangled Cross-Embodiment Video Editing",
+    "link": "https://arxiv.org/abs/2605.03637",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.03637v1 Announce Type: new \nAbstract: Learning robotic manipulation from human videos is a promising solution to the data bottleneck in robotics, but the distribution shift between humans and robots remains a critical challenge. Existing approaches often produce entangled representations, where task-relevant information is coupled with human-specific kinematics, limiting their adaptability. We propose a generative framework for cross-embodiment video editing that directly addresses this by learning explicitly disentangled task and embodiment representations. Our method factorizes a demonstration video into two orthogonal latent spaces by enforcing a dual contrastive objective: it minimizes mutual information between the spaces to ensure independence while maximizing intra-space consistency to create stable representations. A parameter-efficient adapter injects these latent codes into a frozen video diffusion model, enabling the synthesis of a coherent robot execution video from a single human demonstration, without requiring paired cross-embodiment data. Experiments show our approach generates temporally consistent and morphologically accurate robot demonstrations, offering a scalable solution to leverage internet-scale human video for robot learning."
+  },
+  {
+    "title": "Feasibility-aware Hybrid Control for Motion Planning under Signal Temporal Logics",
+    "original_title": "Feasibility-aware Hybrid Control for Motion Planning under Signal Temporal Logics",
+    "link": "https://arxiv.org/abs/2605.03662",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.03662v1 Announce Type: new \nAbstract: In this work, a novel method for planar task and motion planning based on hybrid modeling is proposed. By virtue of a discrete variable which models local constraint satisfaction and enables local feasibility analysis, the proposed control architecture unifies planning with control design. Concurrently, control barrier functions are designed on a transformed disk version of the original nonconvex and geometrically complex robotic workspace, thus amending the issue of deadlocks. Simulations of the proposed method indicate effective handling of multiple overlapping spatio-temporal tasks even in the face of input saturation."
+  },
+  {
+    "title": "Sensorless State Estimation and Control for Agile Cable-Suspended Payload Transport by Quadrotors",
+    "original_title": "Sensorless State Estimation and Control for Agile Cable-Suspended Payload Transport by Quadrotors",
+    "link": "https://arxiv.org/abs/2605.03666",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.03666v1 Announce Type: new \nAbstract: This work proposes a novel control and estimation approach for aerial manipulation of a cable-suspended load using Unmanned Aerial Vehicles (UAVs). Common approaches in the state of the art have practical limitations, relying on direct load measurements and Lagrangian methods for dynamic modeling. The lack of a straightforward dynamic model of the system led us to propose adopting the Udwadia-Kalaba method to explicitly incorporate the cable's geometric constraints. This formulation allowed for the consistent derivation of the tension force and its direct integration into the NMPC prediction model. Additionally, we propose a sensorless load state estimation based on the same geometric constraints. Results from real-robot experiments demonstrated that the explicit inclusion of load dynamics in the optimization problem significantly reduces trajectory-tracking errors and yields better overall performance compared to strategies based on incomplete models."
+  },
+  {
     "title": "A Chinese prodigy on a mission to bring robots to life - Borneo Post",
     "original_title": "A Chinese prodigy on a mission to bring robots to life - Borneo Post",
     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPblhMMU5PS04xVWNfdDdhUXdGa0xDTjdTbVJ3NHhta0ladlVkSFk3cUNSdVNWRlFpbWU0SzBFdE1xTmVaOGR6MW1EWE8yVWQ0NHRMUmdrRVhlR1g5N0FWaDl3OW9vNjlKdjdleDNvNG5DR09ubDBaaGFyUHJqTWF3Mjc5eFY5N1FucGxZWldMTDg2VUl5MWFiU18tenA?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "Korean AI research team introduced T2Nav, a zero-shot visual navigation system that utilizes graph-based reasoning and integrates heterogeneous data. This approach enables efficient obstacle avoidance, reliable loop closure detection, and path planning while adapting to unknown environments. The system demonstrates flexibility in handling goals specified using reference images of target object instances."
-  },
-  {
-    "title": "granular 지형에 기상 로봇의 보행",
-    "original_title": "Failure Mechanisms and Risk Estimation for Legged Robot Locomotion on Granular Slopes",
-    "link": "https://arxiv.org/abs/2603.06928",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "Legged robot의 granular 지형에서 보행을 하는데 문제가 되는 고전파 mechanism과 risk estimation을 개발한 연구였다. 실험에서는 6족 로봇을 사용하여 granular bed에 놓고, inclination이 증가할 때의 normal 및 shear resistance를 측정했다. 이 결과를 바탕으로 로봇-지형 상호작용 모델을 개발하여 terrain strength와 slope angle이 주는 robot speed을 예측했고, failure phase diagrams를 구축하여 sinkage-과 slippage-induced failure regimes를 확인할 수 있었다."
-  },
-  {
-    "title": "TacDexGrasp: 컴플라이언트 및 강건한 Dexterous Grasping with Tactile Feedback",
-    "original_title": "TacDexGrasp: Compliant and Robust Dexterous Grasping with Tactile Feedback",
-    "link": "https://arxiv.org/abs/2603.07040",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "컴플라이언트 및 강건한 Dexterous Grasping을 구현하기 위해 다지선손이 가지는 고차원 force control 문제를 해결하고자 하는 연구임. 이 연구에서는 tactle feedback와 Second-Order Cone Programming (SOCP)-based controller를 사용하여 object의 무게에 대응하는 force 분배 및 rotational slip을 방지하는 것을 목표로 함.実験 결과, 12종류의 물체에서 robustness 및 compliance이 입증됨."
-  },
-  {
-    "title": "GuideTWSI: A Diverse Tactile Walking Surface Indicator Dataset from Synthetic and Real-World Images for Blind and Low-Vision Navigation",
-    "original_title": "GuideTWSI: A Diverse Tactile Walking Surface Indicator Dataset from Synthetic and Real-World Images for Blind and Low-Vision Navigation",
-    "link": "https://arxiv.org/abs/2603.07060",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 실내 환경에서 지상 도로 표지물인 조감 지표치 (TWSI) dataset을 개발한 국제 연구팀이 BLV 인원의 이동 지원을 위해 새로운 데이터셋을 공개함. 이 dataset은 실제 세계 이미지와 합성 이미지를 결합해 TWSI를 다양한 각도에서 촬영했으며, 이를 통해 모델들이 BLV 인원에게 중요한 지상 도로 표지물을 정확하게 추정할 수 있도록 하는 것을 목표로 함.\n\nNote: I've followed the strict rules and output only the formatted string with Korean title and summary."
-  },
-  {
-    "title": "ACLM: ADMM-Based Distributed Model Predictive Control for Collaborative Loco-Manipulation",
-    "original_title": "ACLM: ADMM-Based Distributed Model Predictive Control for Collaborative Loco-Manipulation",
-    "link": "https://arxiv.org/abs/2603.07095",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보트 팀이 중량의 화물을 협조적으로 이동하는 방식에 대한 새로운 제안이 공개됨. 이 연구에서는 4마리의 quadruped 로보트와 manipulator를 갖는 팀이 중량의 화물을协作적으로 이동하는 데 필요한 분산 모델 예측 제어 프레임워크를 제안함."
-  },
-  {
-    "title": "Stability-Guided Exploration for Diverse Motion Generation",
-    "original_title": "Stability-Guided Exploration for Diverse Motion Generation",
-    "link": "https://arxiv.org/abs/2603.06773",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 러닝에서 성능을 높이는 데 효과적 인 데이터 크기 확장이 가능하지만, 데이터 수집이 여전히 제한 요인이 됩니다. 인간의 시범에 의존하는 접근 방식은劳동 집약적이고 제한적: 특정 태스크를 대상으로 하는 것이며 가능한 상태 공간의 모든 부분을 적절하게 탐색하지 못합니다. синтетич 데이터 생성은 이러한 문제를 해결할 수 있지만, 현재 기술들은 주로 지역 경로 최적화에 의존하고 다양한 솔루션을 찾지 못합니다. 이 연구에서는 새로운 방법을 제안하여 블랙박스 시뮬레이션을 통해 장기 해석을 발견할 수 있습니다. 이를 달성하는 것은 RRT-Style 검색과 샘플링 기반 MPC를 조합하면서 안정 상태 manifold에서 샘플링을 하되, 계획자는 pure stable motion에 제한되지 않는 새로운 샘플링 체계를 사용합니다. 우리는 다양한 수단 전략을 발견할 수 있는 방법의 능력을 보여주는 manipulations을 다수 예로 제시했습니다."
-  },
-  {
-    "title": "로보틱 텔레서지의 네트워크 QoS 효과 고찰",
-    "original_title": "A Comprehensive Analysis of the Effects of Network Quality of Service on Robotic Telesurgery",
-    "link": "https://arxiv.org/abs/2603.06824",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보틱 텔레서지를 위한 신뢰적 네트워크 QoS가 긴거리 텔레서지 가능성을 좌우한다. 실제 네트워크 왜곡이 수행 성능에 미치는 영향은 충분히 파악되지 않았다. 이 논문에서는 패킷 손실, 지연, 통신 손실이 작업 수행에 미치는 영향을 고찰하였다. 또한 NetFI를 소개하여 stochastic QoS 모델을 사용하여 실제 네트워크 데이터를 기반으로 다양한 네트워크 조건을 에뮬레이트하는 새로운 결함 삽입 도구를 개발하였다. 15명의 참가자들이 세 개의 경험이 다른 수준에서 표준화된 peg transfer 작업을 수행하면서 NetFI를 integrates한 수술 시뮬레이션 플랫폼에 대한 사용자 연구를 수행하였다. 또한 ネ트워크 QoS가 작업 성능과 안전성에 미치는 영향을 분석하고 참가자의 심각한 운동 원리 (MPs)에서 네트워크 왜곡의 취약점을 파악하였다. 이러한 결과는 텔레서지의 실제 운영 경계를 제공하고 네트워크 인식 제어 및 방제 전략 개발을 위한 기본 자료를 제공한다."
-  },
-  {
-    "title": "러닝 기반 강건 제어 : exploration과 분포 강건성을 통합하여 신뢰할 수 있는 로보틱스 방안을 제안함",
-    "original_title": "Learning-Based Robust Control: Unifying Exploration and Distributional Robustness for Reliable Robotics via Free Energy",
-    "link": "https://arxiv.org/abs/2603.06831",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국 로보틱스 제어의 주요 도전 과제는 필드 배포에 안전하게 운영되는 정책을 학습하는 데 있어 컴퓨테이션 모델을 개발하는 일이다. 우리는 인지 신경과학에서 얻은 자유 에너지 원칙에 영감을 받아 환경 동적학과 보상을 함께 학습하며, 예측 불확실성을 고려한 강건성을 확약하는 모델을 제안하였다. 그리고 분포 강건성 없는 자유 에너지 원칙을 설명하고 최대 확산 학습 framework를 수정하여 정책의 강건성을 특정할 수 있었다. 실제로  Franka Research~3 arm을 사용한 물론 실험과 시뮬레이션 실험을 통해 정책의 효과를 확인하였다. 이 접근 방식은 시뮬레이션 및 예비 배포에서 스ิม 투 실 가라오, 테이블 탑 manipulation을 repeated하지 않고 task-specific fine-tuning도 필요치 않았다."
-  },
-  {
-    "title": "DexKnot: Generalizable Visuomotor Policy Learning for Dexterous Bag-Knotting Manipulation",
-    "original_title": "DexKnot: Generalizable Visuomotor Policy Learning for Dexterous Bag-Knotting Manipulation",
-    "link": "https://arxiv.org/abs/2603.07136",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "플라스틱 배그 결박 작업은 일상 생활에서 일반적으로 일어나는-task; 그러나 로봇에게는 불연속의 자유도 및 복잡한 물리적 역학으로 인해 도전이 된다. 기존 방법들은 예보되지 않은 배그 인스턴스 또는 왜곡에 대한 일반화가 어려움을 보여준다. 이를 해결하기 위해 DexKnot framework를 제안하는데, 이 프레임워크는 키포인트 affordance와 확산 정책을 결합하여 일반적 배그 결박 정책을 학습하는 데 사용된다. 본 방법은 실제 세계의 수동 왜곡으로부터 얻어진 키포인트 대응 데이터에 기반하여 배그의 형상 무관한 표현을 학습한다. 예보되지 않은 배그 구성에서 keypoints는 참조와 일치시키는 것에 의해 식별되며, 이러한 keypoints는 diffusion transformer에 제공하여 인간 데모션의 작은 수에 기반하여 로봇 액션을 생성하게 된다. DexKnot은 관측 공간의 차원성을 줄여주는 sparse set of keypoints으로 일반적 정책을 달성할 수 있도록 한다. 실험 결과를 통해 DexKnot은 다양한 예보되지 않은 인스턴스 및 왜곡에 대해 신뢰하고 일관된 결박 성능을 달성함을 보여준다."
   }
 ]
