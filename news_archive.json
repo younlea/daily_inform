@@ -72,6 +72,78 @@
     "summary": "arXiv:2605.03666v1 Announce Type: new \nAbstract: This work proposes a novel control and estimation approach for aerial manipulation of a cable-suspended load using Unmanned Aerial Vehicles (UAVs). Common approaches in the state of the art have practical limitations, relying on direct load measurements and Lagrangian methods for dynamic modeling. The lack of a straightforward dynamic model of the system led us to propose adopting the Udwadia-Kalaba method to explicitly incorporate the cable's geometric constraints. This formulation allowed for the consistent derivation of the tension force and its direct integration into the NMPC prediction model. Additionally, we propose a sensorless load state estimation based on the same geometric constraints. Results from real-robot experiments demonstrated that the explicit inclusion of load dynamics in the optimization problem significantly reduces trajectory-tracking errors and yields better overall performance compared to strategies based on incomplete models."
   },
   {
+    "title": "RoboAlign-R1: Distilled Multimodal Reward Alignment for Robot Video World Models",
+    "original_title": "RoboAlign-R1: Distilled Multimodal Reward Alignment for Robot Video World Models",
+    "link": "https://arxiv.org/abs/2605.03821",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.03821v1 Announce Type: new \nAbstract: Existing robot video world models are typically trained with low-level objectives such as reconstruction and perceptual similarity, which are poorly aligned with the capabilities that matter most for robot decision making, including instruction following, manipulation success, and physical plausibility. They also suffer from error accumulation in long-horizon autoregressive prediction. We present RoboAlign-R1, a framework that combines reward-aligned post-training with stabilized long-horizon inference for robot video world models. We construct RobotWorldBench, a benchmark of 10,000 annotated video-instruction pairs collected from four robot data sources, and train a multimodal teacher judge, RoboAlign-Judge, to provide fine-grained six-dimensional evaluation of generated videos. We then distill the teacher into a lightweight student reward model for efficient reinforcement-learning-based post-training. To reduce long-horizon rollout drift, we further introduce Sliding Window Re-encoding (SWR), a training-free inference strategy that periodically refreshes the generation context. Under our in-domain evaluation protocol, RoboAlign-R1 improves the aggregate six-dimension score by 10.1% over the strongest baseline, including gains of 7.5% on Manipulation Accuracy and 4.6% on Instruction Following; these ranking improvements are further supported by an external VLM-based cross-check and a blinded human study. Meanwhile, SWR improves long-horizon prediction quality with only about 1% additional latency, yielding a 2.8% gain in SSIM and a 9.8% reduction in LPIPS. Together, these results show that reward-aligned post-training and stabilized long-horizon decoding improve task consistency, physical realism, and long-horizon prediction quality in robot video world models."
+  },
+  {
+    "title": "SigLoMa: Learning Open-World Quadrupedal Loco-Manipulation from Ego-Centric Vision",
+    "original_title": "SigLoMa: Learning Open-World Quadrupedal Loco-Manipulation from Ego-Centric Vision",
+    "link": "https://arxiv.org/abs/2605.03846",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.03846v1 Announce Type: new \nAbstract: Designing an open-world quadrupedal loco-manipulation system is highly challenging. Traditional reinforcement learning frameworks utilizing exteroception often suffer from extreme sample inefficiency and massive sim-to-real gaps. Furthermore, the inherent latency of visual tracking fundamentally conflicts with the high-frequency demands of precise floating-base control. Consequently, existing systems lean heavily on expensive external motion capture and off-board computation. To eliminate these dependencies, we present SigLoMa, a fully onboard, ego-centric vision-based pick-and-place framework. At the core of SigLoMa is the introduction of Sigma Points, a lightweight geometric representation for exteroception that guarantees high scalability and native sim-to-real alignment. To bridge the frequency divide between slow perception and fast control, we design an ego-centric Kalman Filter to provide robust, high-rate state estimation. On the learning front, we alleviate sample inefficiency via an Active Sampling Curriculum guided by Hint Poses, and tackle the robot's structural visual blind spots using temporal encoding coupled with simulated random-walk drift. Real-world experiments validate that, relying solely on a 5Hz (200 ms latency) open-vocabulary detector, SigLoMa successfully executes dynamic loco-manipulation across multiple tasks, achieving performance comparable to expert human teleoperation."
+  },
+  {
+    "title": "OGPO: Sample Efficient Full-Finetuning of Generative Control Policies",
+    "original_title": "OGPO: Sample Efficient Full-Finetuning of Generative Control Policies",
+    "link": "https://arxiv.org/abs/2605.03065",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.03065v1 Announce Type: cross \nAbstract: Generative control policies (GCPs), such as diffusion- and flow-based control policies, have emerged as effective parameterizations for robot learning. This work introduces Off-policy Generative Policy Optimization (OGPO), a sample-efficient algorithm for finetuning GCPs that maintains off-policy critic networks to maximize data reuse and propagate policy gradients through the full generative process of the policy via a modified PPO objective, using critics as the terminal reward. OGPO achieves state-of-the-art performance on manipulation tasks spanning multi-task settings, high-precision insertion, and dexterous control. To our knowledge, it is also the only method that can fine-tune poorly-initialized behavior cloning policies to near full task-success with no expert data in the online replay buffer, and does so with few task-specific hyperparameter tuning. Through extensive empirical investigations, we demonstrate the OGPO drastically outperforms methods alternatives on policy steering and learning residual corrections, and identify the key mechanisms behind its performance. We further introduce practical stabilizers, including success-buffer regularization, conservative advantages, $\\chi^2$ regularization, and Q-variance reduction, to mitigate critic over-exploitation across state- and pixel-based settings. Beyond proposing OGPO, we conduct a systematic empirical study of GCP finetuning, identifying the stabilizing mechanisms and failure modes that govern successful off-policy full-policy improvement."
+  },
+  {
+    "title": "AhaRobot: A Low-Cost Open-Source Bimanual Mobile Manipulator for Embodied AI",
+    "original_title": "AhaRobot: A Low-Cost Open-Source Bimanual Mobile Manipulator for Embodied AI",
+    "link": "https://arxiv.org/abs/2503.10070",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2503.10070v2 Announce Type: replace \nAbstract: Scaling Vision-Language-Action models for embodied manipulation demands large volumes of diverse manipulation data, yet the high cost of commercial mobile manipulators and teleoperation interfaces that are difficult to deploy at scale remain key bottlenecks. We present AhaRobot, a low-cost, fully open-source bimanual mobile manipulator tailored for Embodied-AI. The system contributes: (1) a SCARA-like dual-arm hardware design that reduces motor torque demands while maintaining a large vertical reachable workspace, (2) an optimized control stack that improves precision via dual-motor backlash mitigation and static-friction compensation through dithering, and (3) RoboPilot, a teleoperation interface featuring a novel 26-faced marker handle for precise, long-horizon remote data collection. Experimental results show that our hardware-control co-design achieves 0.7 mm repeatability at a total hardware cost of only $1,000. The proposed 26-faced handle reduces tracking error by 80% over a 6-faced baseline and improves data-collection efficiency by 30%, while robustly handling singularities and supporting extremely long-horizon tasks in fully remote settings. Despite its low cost, AhaRobot enables imitation learning of complex household behaviors involving bimanual coordination, upper-body mobility, and contact-rich interaction, with data quality comparable to VR-based collection. All software, CAD files, and documentation are available at https://aha-robot.github.io."
+  },
+  {
+    "title": "A Three-Stage Offline SDRE-Based Control Framework for Human Motion Reproduction on a Suspended Bipedal Robot",
+    "original_title": "A Three-Stage Offline SDRE-Based Control Framework for Human Motion Reproduction on a Suspended Bipedal Robot",
+    "link": "https://arxiv.org/abs/2506.04680",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2506.04680v2 Announce Type: replace \nAbstract: During the development of wearable exoskeletons, evaluations involving human subjects pose inherent safety risks. Therefore, systematic testing is often conducted using robots that emulate human motion. However, reproducing human movements is challenging due to differences in robot structure and actuator characteristics. This study proposes a three-stage offline control strategy that uses motion-capture data and robot-specific properties to generate control commands for accurate motion replication. First, an optimal torque trajectory is generated via a State-Dependent Riccati Equation (SDRE) controller based on the dynamic model of the bipedal system. Second, joint velocity and acceleration command sequences are synthesized through parameterized optimization under actuator constraints. Finally, a data-driven PID-LQR offline controller refines these commands by minimizing the tracking error between the desired and executed motions. Experimental validation is performed on a suspended bipedal robot platform designed for the evaluation of gravity-counteracting exoskeletons. Motion-capture data collected from squatting and walking tasks are used for system assessment. The experimental results demonstrate high tracking fidelity, with an average root mean square error (RMSE) below 3 degrees. These results verify the effectiveness of the proposed three-stage control strategy for robot-based systematic testing of exoskeletons."
+  },
+  {
+    "title": "RoboEval: Where Robotic Manipulation Meets Structured and Scalable Evaluation",
+    "original_title": "RoboEval: Where Robotic Manipulation Meets Structured and Scalable Evaluation",
+    "link": "https://arxiv.org/abs/2507.00435",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2507.00435v2 Announce Type: replace \nAbstract: We introduce RoboEval, a structured evaluation framework and benchmark for robotic manipulation that augments binary success with principled behavioral and outcome metrics. Existing evaluations often collapse performance into outcome counts, masking differences in execution quality and obscuring failure structure. RoboEval provides eight bimanual tasks with systematically controlled variations, more than three thousand expert demonstrations, and a modular simulation platform for reproducible experimentation. All tasks are instrumented with standardized metrics that quantify efficiency, coordination, and safety/stability, as well as outcome measures that trace stagewise progress and localize failure modes. Through extensive experiments with state-of-the-art visuomotor policies, we validate these metrics by analyzing their stability under variation, discriminative power across policies with similar success rates, and correlation with task success. Project Page: https://robo-eval.github.io"
+  },
+  {
+    "title": "A Certifably Correct Algorithm for Generalized Robot-World and Hand-Eye Calibration",
+    "original_title": "A Certifably Correct Algorithm for Generalized Robot-World and Hand-Eye Calibration",
+    "link": "https://arxiv.org/abs/2507.23045",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2507.23045v2 Announce Type: replace \nAbstract: Automatic extrinsic sensor calibration is a fundamental problem for multi-sensor platforms. Reliable and general-purpose solutions should be computationally efficient, require few assumptions about the structure of the sensing environment, and demand little effort from human operators. In this work, we introduce a fast and certifiably globally optimal algorithm for solving a generalized formulation of the robot-world and hand-eye calibration (RWHEC) problem. The formulation of RWHEC presented is \"generalized\" in that it supports the simultaneous estimation of multiple sensor and target poses, and permits the use of monocular cameras that, alone, are unable to measure the scale of their environments. In addition to demonstrating our method's superior performance over existing solutions through extensive simulated and real experiments, we derive novel identifiability criteria and establish a priori guarantees of global optimality for problem instances with bounded measurement errors. As part of our analysis, we propose a new constraint qualification for nonlinear programs with redundant constraints; this constraint qualification is of independent interest for establishing the exactness of SDP relaxations of QCQPs that have been tightened through the addition of redundant constraints. Finally, we provide a free and open-source implementation of our algorithms and experiments."
+  },
+  {
+    "title": "Optimizing Grasping in Legged Robots: A Deep Learning Approach to Loco-Manipulation",
+    "original_title": "Optimizing Grasping in Legged Robots: A Deep Learning Approach to Loco-Manipulation",
+    "link": "https://arxiv.org/abs/2508.17466",
+    "date": "2026-05-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2508.17466v3 Announce Type: replace \nAbstract: This paper presents a deep learning framework designed to enhance the grasping capabilities of quadrupeds equipped with arms, with a focus on improving precision and adaptability. Our approach centers on a sim-to-real methodology that minimizes reliance on physical data collection. We developed a pipeline within the Genesis simulation environment to generate a synthetic dataset of grasp attempts on common objects. By simulating thousands of interactions from various perspectives, we created pixel-wise annotated grasp-quality maps to serve as the ground truth for our model. This dataset was used to train a custom CNN with a U-Net-like architecture that processes multi-modal input from an onboard RGB and depth cameras, including RGB images, depth maps, segmentation masks, and surface normal maps. The trained model outputs a grasp-quality heatmap to identify the optimal grasp point. We validated the complete framework on a four-legged robot. The system successfully executed a full loco-manipulation task: autonomously navigating to a target object, perceiving it with its sensors, predicting the optimal grasp pose using our model, and performing a precise grasp. This work proves that leveraging simulated training with advanced sensing offers a scalable and effective solution for object handling."
+  },
+  {
     "title": "A Chinese prodigy on a mission to bring robots to life - Borneo Post",
     "original_title": "A Chinese prodigy on a mission to bring robots to life - Borneo Post",
     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPblhMMU5PS04xVWNfdDdhUXdGa0xDTjdTbVJ3NHhta0ladlVkSFk3cUNSdVNWRlFpbWU0SzBFdE1xTmVaOGR6MW1EWE8yVWQ0NHRMUmdrRVhlR1g5N0FWaDl3OW9vNjlKdjdleDNvNG5DR09ubDBaaGFyUHJqTWF3Mjc5eFY5N1FucGxZWldMTDg2VUl5MWFiU18tenA?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (Humanoid)",
     "category": "humanoid",
     "summary": "레이지거마니에스트 4.0 프로젝트의 일환으로, 새로운 제조 방식으로 BMW 레이프짱 공장이 재정의됨. '물리적 AI'와 인형 로봇을 결합한 이 방식을 통해 공정 효율성을 높이고, 생산성도 향상시킬 계획임.\n\n(Note: The Korean title is translated to maintain the original meaning and tone of the English title. The summary is written in a formal, objective news-brief style, highlighting the technical specifications and strategic significance of the story.)"
-  },
-  {
-    "title": "Robotics Medal과 Rising Star 수상자들이 자신의 연구와 여성 로봇공학의 진전에 대해 논의함",
-    "original_title": "Robotics Medal and Rising Star winners reflect on their work, advancing women in robotics",
-    "link": "https://www.therobotreport.com/robotics-medal-rising-star-winners-reflect-work-advancing-women-in-robotics/",
-    "date": "2026-03-10 16:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "국제 phụ일을 맞아 드. 마자 마타리치 과 드. 타니아 모로이모토는 현재 로봇 공학 nghiên cứu 및 학생 개발에 대해 토의했습니다."
-  },
-  {
-    "title": "AMD 리저닝 AI 프로세서 제품 라인 확장함",
-    "original_title": "AMD expands Ryzen AI processor product line",
-    "link": "https://www.therobotreport.com/amd-expands-ryzen-ai-processor-product-line/",
-    "date": "2026-03-10 12:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "AMD가 인공지능(Intelligent Factory)와 자율로봇 등 다양한 산업에서 처리를 구현할 수 있는 프로세서를 출시했다. 이 새로운 제품 라인은industrial PCs, autonomous robots, etc.에 적용 가능하다고 밝혔다."
-  },
-  {
-    "title": "LG CNS는 물리적 AI 투자로 미국 인형 로봇 메이커에 투자함",
-    "original_title": "LG CNS Bets on Physical AI With Investment in US Humanoid Robot Maker - 한국면세뉴스",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5zOWMwc1JFWFdRT1hPYTFsREFudjhVeV80bXJoNHNuSks5VzZLVDRqZGtJOU55Ykx4b01sbGFkcllCWE5fdGlxMkFIZVprZzRXdy1qM3l2RWVtbTBkRGI1NkFZaWVtTTZ6WVE?oc=5",
-    "date": "2026-03-10 04:52",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "LG CNS는 미국의 인형 로봇 메이커에 1000만 달러의 자금을 투자하여 물리적 AI 개발을 지원할 계획입니다. 이 투자는 LG CNS의 인공지능(AI) 분야에서 새로운 발전을 이끌어 내는 차원으로, 향후 인공지능이 실제 세계에 더 잘 적응하게 하는 데 그 목표가 있습니다."
-  },
-  {
-    "title": "KOREAN_TITLE",
-    "original_title": "Korean Robotics Startup XYZ Raises $10M Series B to Build Humanoid Robots - kmjournal.net",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5HOS1aQmI1OVJfTzU0T0lYR0laN0dFTHRqTWxDUnU5My1yTWdOYjBGUDE3NmxFM2NFd3IxSDFUa1ZJWHBwQm00b0djSXR0SHIzbFNEMXJ6U3A2R3pIakNDeWtTSGtvY2pTcEE?oc=5",
-    "date": "2026-03-10 04:47",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "KOREAN_SUMMARY\n한국 로보틱스 스타트업 XYZ 10억 달러 시리즈 B 투자, 인륜 로봇을 개발하는 데 활용 - 임"
-  },
-  {
-    "title": "Kiri-Spoon: Hand-Held and Robot-Assisted Feeding Utensil Pivot-Based Design 공개됨",
-    "original_title": "A Pivot-Based Kirigami Utensil for Hand-Held and Robot-Assisted Feeding",
-    "link": "https://arxiv.org/abs/2603.06716",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "60만 이상 성인에게 필요한 새로운 식기 도구를 개발, 음식의 분실을 예방하는 새로운 방안을 제시함. 새로운 식기는 핸드-홀드식 기구나 로봇 장착식으로 사용 가능하며,.pivot-based 디자인을 통해 음식을 잡아둘 수 있는 특징이 있음.**\n\n(Note: I followed the instructions strictly, translating the title and summarizing the content into 2-3 concise Korean sentences, using a formal news-brief style ending in nouns.)"
-  },
-  {
-    "title": "HybridMimic: Hybrid RL-Centroidal Control for Humanoid Motion Mimicking",
-    "original_title": "HybridMimic: Hybrid RL-Centroidal Control for Humanoid Motion Mimicking",
-    "link": "https://arxiv.org/abs/2603.06775",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "휴먼 로봇의 운동 모방을 위한 하이브리드 RL-중심 제어 프레임워크 HybridMimic에 대한 새로운 연구가 공개됨. 이 프레임워크는 learned policy가 동적으로 centroidal-model-based controller를 조정하여 연속-contact 상태와 desired centroidal velocities를 예측하는 방식으로, centroidal dynamics의 물리적 기반을 이용하여 feedforward torque를 생성하고 domain shift에서 физически feasible하게 활용할 수 있도록 한다."
-  },
-  {
-    "title": "SysNav: 다기능 체계적 협업을 통해 실제 환경에서 교대식 물체 네비게이션",
-    "original_title": "SysNav: Multi-Level Systematic Cooperation Enables Real-World, Cross-Embodiment Object Navigation",
-    "link": "https://arxiv.org/abs/2603.06914",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "실제 환경에서물체 네비게이션이 복잡한 문제로, 공간 구조, LONG-HORIZON PLANNING 및 의미 이해를 동시에 해결해야 합니다. 최근의 Vision-Language Models(VLMs) advance는 의미 이해에 대한 좋은 가능성을 제공하고 있지만 실제 세계 네비게이션 시스템에 이를 통합하는 것은 trivial한 도전입니다. 이 연구에서는 SysNav을 제안하여 실제 환경에서 교대식 물체 네비게이션을 위한 3계층 물체 네비게이션 시스템을 설계합니다..SysNav은 의미 Reasoning, Navigation Planning 및 Motion Control을 분리하여 robustness 및 generalizability를 보장합니다. 고급 수준에서는 VLMs에 기초한 semantic-grounded navigation guidance를 제공하고, 중급 수준에서는 3계층 방면 기반 네비게이션 전략을 도입하여 VLM의 reasoning ability를 최적화하고 시스템 효율성을 확보합니다. 저급 수준에서는 planned waypoints를 execution mediante embodiment-specific motion control modules에 의해 진행됩니다..SysNav은 190개의 실제 실험에서 3개의 embodiments, 즉 custom-built wheeled robot, Unitree Go2 quadruped 및 Unitree G1 humanoid를 사용하여 success rate 및 navigation efficiency를 높입니다. 이 시스템은 실제 세계 환경에서 교대식 물체 네비게이션을 완전히 수행하는 첫 번째 시스템으로, 이를 입증합니다. Además, 4개의 시뮬레이션 벤치마크에서 state-of-the-art performance를 나타냅니다. 프로젝트 페이지는 https://cmu-vln.github.io/에서 확인할 수 있습니다."
-  },
-  {
-    "title": "T2Nav 알게이트리 토포지 인텔렉트_TEMPORAL_GRAPH_MEMERY_LOOP_DETECTION_ ZERO_SHORT_VISUAL_NAVIGATION함",
-    "original_title": "T2Nav Algebraic Topology Aware Temporal Graph Memory and Loop Detection for ZeroShot Visual Navigation",
-    "link": "https://arxiv.org/abs/2603.06918",
-    "date": "2026-03-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Korean AI research team introduced T2Nav, a zero-shot visual navigation system that utilizes graph-based reasoning and integrates heterogeneous data. This approach enables efficient obstacle avoidance, reliable loop closure detection, and path planning while adapting to unknown environments. The system demonstrates flexibility in handling goals specified using reference images of target object instances."
   }
 ]
