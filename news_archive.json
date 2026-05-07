@@ -144,6 +144,60 @@
     "summary": "arXiv:2511.06371v3 Announce Type: replace \nAbstract: Humanoid robots are promising to learn a diverse set of human-like locomotion behaviors, including standing up, walking, running, and jumping. However, existing methods predominantly require training independent policies for each skill, yielding behavior-specific controllers that exhibit limited generalization and brittle performance when deployed on irregular terrains and in diverse situations. To address this challenge, we propose Adaptive Humanoid Control (AHC) that adopts a two-stage framework to learn an adaptive humanoid locomotion controller across different skills and terrains. Specifically, we first train several primary locomotion policies and perform a multi-behavior distillation process to obtain a basic multi-behavior controller, facilitating adaptive behavior switching based on the environment. Then, we perform reinforced fine-tuning by collecting online feedback in performing adaptive behaviors on more diverse terrains, enhancing terrain adaptability for the controller. We conduct experiments in both simulation and real-world experiments in Unitree G1 robots. The results show that our method exhibits strong adaptability across various situations and terrains. Project website: https://ahc-humanoid.github.io."
   },
   {
+    "title": "SlotVLA: Towards Modeling of Object-Relation Representations in Robotic Manipulation",
+    "original_title": "SlotVLA: Towards Modeling of Object-Relation Representations in Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2511.06754",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.06754v3 Announce Type: replace \nAbstract: Inspired by how humans reason over discrete objects and their relationships, we explore whether compact object-centric and object-relation representations can form a foundation for multitask robotic manipulation. Most existing robotic multitask models rely on dense embeddings that entangle both object and background cues, raising concerns about both efficiency and interpretability. In contrast, we study object-relation-centric representations as a pathway to more structured, efficient, and explainable visuomotor control. Our contributions are two-fold. First, we introduce LIBERO+, a fine-grained benchmark dataset designed to enable and evaluate object-relation reasoning in robotic manipulation. Unlike prior datasets, LIBERO+ provides object-centric annotations that enrich demonstrations with box- and mask-level labels as well as instance-level temporal tracking, supporting compact and interpretable visuomotor representations. Second, we propose SlotVLA, a slot-attention-based framework that captures both objects and their relations for action decoding. It uses a slot-based visual tokenizer to maintain consistent temporal object representations, a relation-centric decoder to produce task-relevant embeddings, and an LLM-driven module that translates these embeddings into executable actions. Experiments on LIBERO+ demonstrate that object-centric slot and object-relation slot representations drastically reduce the number of required visual tokens, while providing competitive generalization. Together, LIBERO+ and SlotVLA provide a compact, interpretable, and effective foundation for advancing object-relation-centric robotic manipulation."
+  },
+  {
+    "title": "Learning to Feel the Future: DreamTacVLA for Contact-Rich Manipulation",
+    "original_title": "Learning to Feel the Future: DreamTacVLA for Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2512.23864",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.23864v3 Announce Type: replace \nAbstract: Vision-Language-Action (VLA) models have shown remarkable generalization by mapping web-scale knowledge to robotic control, yet they remain blind to physical contact. Consequently, they struggle with contact-rich manipulation tasks that require reasoning about force, texture, and slip. While some approaches incorporate low-dimensional tactile signals, they fail to capture the high-resolution dynamics essential for such interactions. To address this limitation, we introduce DreamTacVLA, a framework that grounds VLA models in contact physics by learning to feel the future. Our model adopts a hierarchical perception scheme in which high-resolution tactile images serve as micro-vision inputs coupled with wrist-camera local vision and third-person macro vision. To reconcile these multi-scale sensory streams, we first train a unified policy with a Hierarchical Spatial Alignment (HSA) loss that aligns tactile tokens with their spatial counterparts in the wrist and third-person views. To further deepen the model's understanding of fine-grained contact dynamics, we finetune the system with a tactile world model that predicts future tactile signals. To mitigate tactile data scarcity and the wear-prone nature of tactile sensors, we construct a hybrid large-scale dataset sourced from both high-fidelity digital twin and real-world experiments. By anticipating upcoming tactile states, DreamTacVLA acquires a rich model of contact physics and conditions its actions on both real observations and imagined consequences. Across contact-rich manipulation tasks, it outperforms state-of-the-art VLA baselines, achieving up to 95% success, highlighting the importance of understanding physical contact for robust, touch-aware robotic agents."
+  },
+  {
+    "title": "CLAMP: Contrastive Learning for 3D Multi-View Action-Conditioned Robotic Manipulation Pretraining",
+    "original_title": "CLAMP: Contrastive Learning for 3D Multi-View Action-Conditioned Robotic Manipulation Pretraining",
+    "link": "https://arxiv.org/abs/2602.00937",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.00937v3 Announce Type: replace \nAbstract: Leveraging pre-trained 2D image representations in behavior cloning policies has achieved great success and has become a standard approach for robotic manipulation. However, such representations fail to capture the 3D spatial information about objects and scenes that is essential for precise manipulation. In this work, we introduce Contrastive Learning for 3D Multi-View Action-Conditioned Robotic Manipulation Pretraining (CLAMP), a novel 3D pre-training framework that utilizes point clouds and robot actions. From the merged point cloud computed from RGB-D images and camera extrinsics, we re-render multi-view four-channel image observations with depth and 3D coordinates, including dynamic wrist views, to provide clearer views of target objects for high-precision manipulation tasks. The pre-trained encoders learn to associate the 3D geometric and positional information of objects with robot action patterns via contrastive learning on large-scale simulated robot trajectories. During encoder pre-training, we pre-train a Diffusion Policy to initialize the policy weights for fine-tuning, which is essential for improving fine-tuning sample efficiency and performance. After pre-training, we fine-tune the policy on a limited amount of task demonstrations using the learned image and action representations. We demonstrate that this pre-training and fine-tuning design substantially improves learning efficiency and policy performance on unseen tasks. Furthermore, we show that CLAMP outperforms state-of-the-art baselines across six simulated tasks and five real-world tasks. The project website and videos can be found at https://clamp3d.github.io/CLAMP/."
+  },
+  {
+    "title": "Encoding Predictability and Legibility for Style-Conditioned Diffusion Policy",
+    "original_title": "Encoding Predictability and Legibility for Style-Conditioned Diffusion Policy",
+    "link": "https://arxiv.org/abs/2603.16368",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.16368v2 Announce Type: replace \nAbstract: Striking a balance between efficiency and transparent motion is a core challenge in human-robot collaboration, as highly expressive movements often incur unnecessary time and energy costs. In collaborative environments, legibility allows a human observer a better understanding of the robot's actions, increasing safety and trust. However, these behaviors result in sub-optimal and exaggerated trajectories that are redundant in low-ambiguity scenarios where the robot's goal is already obvious. To address this trade-off, we propose Style-Conditioned Diffusion Policy (SCDP), a modular framework that constrains the trajectory generation of a pre-trained diffusion model toward either legibility or efficiency based on the environment's configuration. Our method utilizes a post-training pipeline that freezes the base policy and trains a lightweight scene encoder and conditioning predictor to modulate the diffusion process. At inference time, an ambiguity detection module activates the appropriate conditioning, prioritizing expressive motion only for ambiguous goals and reverting to efficient paths otherwise. We evaluate SCDP on manipulation and navigation tasks, and results show that it enhances legibility in ambiguous settings while preserving optimal efficiency when legibility is unnecessary, all without retraining the base policy."
+  },
+  {
+    "title": "LaST-R1: Reinforcing Robotic Manipulation via Adaptive Physical Latent Reasoning",
+    "original_title": "LaST-R1: Reinforcing Robotic Manipulation via Adaptive Physical Latent Reasoning",
+    "link": "https://arxiv.org/abs/2604.28192",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.28192v2 Announce Type: replace \nAbstract: Robotic foundation models require reasoning over complex visual scenes to execute adaptive actions in dynamic environments. While recent studies on latent-reasoning Vision-Language-Action (VLA) models have demonstrated the capability to capture fine-grained physical dynamics, they remain predominantly confined to static imitation learning, severely limiting their adaptability and generalization. In this paper, we present LaST-R1, a novel reinforcement learning (RL) post-training framework designed to effectively harness \"latent reasoning-before-acting\" policies. Specifically, we propose Latent-to-Action Policy Optimization (LAPO), a core RL algorithm that jointly optimizes the latent reasoning process and the action generation. By explicitly embedding latent Chain-of-Thought (CoT) reasoning directly within the RL optimization loop, LAPO stimulates profound physical world modeling, which in turn drives robust execution in interactive environments. Furthermore, an adaptive latent CoT mechanism is introduced, allowing the policy to dynamically modulate its reasoning horizon based on diverse environment states. Experiments show that LaST-R1 achieves a near-perfect 99.9% average success rate on the LIBERO benchmark with only one-shot supervised warm-up, significantly improving convergence speed and performance over prior state-of-the-art (SOTA) methods. In real-world deployments, LaST-R1 yields up to a 22.5% average improvement over SOTA supervised fine-tuning approach across four complex tasks, including both single-arm and dual-arm settings. Finally, LaST-R1 demonstrates strong generalization across simulated and real-world environments."
+  },
+  {
+    "title": "AnyPos: Automated Task-Agnostic Actions for Bimanual Manipulation",
+    "original_title": "AnyPos: Automated Task-Agnostic Actions for Bimanual Manipulation",
+    "link": "https://arxiv.org/abs/2507.12768",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2507.12768v2 Announce Type: replace-cross \nAbstract: Learning generalizable manipulation policies hinges on data, yet robot manipulation data is scarce and often entangled with specific embodiments, making both cross-task and cross-platform transfer difficult. We tackle this challenge with task-agnostic embodiment modeling, which learns embodiment dynamics directly from task-agnostic action data and decouples them from high-level policy learning. By focusing on exploring all feasible actions of the embodiment to capture what is physically feasible and consistent, task-agnostic data takes the form of independent image-action pairs with the potential to cover the entire embodiment workspace, unlike task-specific data, which is sequential and tied to concrete tasks. This data-driven perspective bypasses the limitations of traditional dynamics-based modeling and enables scalable reuse of action data across different tasks. Building on this principle, we introduce AnyPos, a unified pipeline that integrates large-scale automated task-agnostic exploration with robust embodiment modeling through inverse dynamics learning. AnyPos generates diverse yet safe trajectories at scale, then learns embodiment representations by decoupling arm and end-effector motions and employing a direction-aware decoder to stabilize predictions under distribution shift, which can be seamlessly coupled with diverse high-level policy models. In comparison to the standard baseline, AnyPos achieves a 51% improvement in test accuracy. On manipulation tasks such as operating a microwave, toasting bread, folding clothes, watering plants, and scrubbing plates, AnyPos raises success rates by 30-40% over strong baselines. These results highlight data-driven embodiment modeling as a practical route to overcoming data scarcity and achieving generalization across tasks and platforms in visuomotor control. Project page: https://embodiedfoundation.github.io/vidar_anypos."
+  },
+  {
     "title": "Boston Dynamics Unveils Advanced Atlas Humanoid as Industrial AI Robot Race Accelerates - Korea IT Times",
     "original_title": "Boston Dynamics Unveils Advanced Atlas Humanoid as Industrial AI Robot Race Accelerates - Korea IT Times",
     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBpd1JVQUhfQVZoMVBfNFMtZUxfQ0NMdkJCRzhMazdLdU9vbkVZUF9XRVpfa2lvYTZnNTJKZVFlUnVjUzlkYTBXQVZSSXZoMGJpbGQwNXAyRnBLQWpLc3BYeExEaDNuajJhMnhGVzlTaw?oc=5",
@@ -493,6 +547,15 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "Tutor Intelligence is running 100 Sonny semi-humanoid robots in its headquarters while sharing technology and data with its Cassie mobile manipulator.\nThe post Tutor Intelligence builds Data Factory to train robot AI in the real world appeared first on The Robot Report."
+  },
+  {
+    "title": "Chinese Startup Linkerbot Targets $6B Valuation as Robot-Hand Demand Grows - eWeek",
+    "original_title": "Chinese Startup Linkerbot Targets $6B Valuation as Robot-Hand Demand Grows - eWeek",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBLN2o4WU9yU2VtV1BVaHFQTVBORnhBdVZsb24tczlhb29FRHZJbVdUZDNSYWFWaVpMaUlrNmlrX1VWa3Z0T3BpeGV3a3JHQkw0VEtFdjQtcFhmMFlfMW1YQVRiOUh1bWQ1SlFWQjhEcExmZVVlYWYwVg?oc=5",
+    "date": "2026-05-05 18:12",
+    "source": "Google News (China Robotics - EN)",
+    "category": "hand",
+    "summary": "Chinese Startup Linkerbot Targets $6B Valuation as Robot-Hand Demand Grows  eWeek"
   },
   {
     "title": "Rethinking Global Hiring: Choosing the Right Remote Alternative for Modern Teams",
@@ -17935,68 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "로봇의 적하운송을 위한 예측 제어 및 간접 적응법** \n\nPayload transportation by quadrupedal robots를 목표로 하는 새로운 하이리치럴 계획 및 제어 프레임워크를 개발하였다. 이 프레임워크는 모델 예측 제어(MPC) 알고리즘과 경사하강 기반 적응 업데이트 법을 통합하는데, 높은 수준에서는 template locomotion 모델의 неизвест한 파라미터를 추정하고 이를 MPC 알고리즘에 피드백하여 실시간 추종을 가능하게 한다. \n\n(Translation note: The Korean title is a direct translation of the English title, while the summary is a concise and formal explanation of the content, highlighting the technical significance.)"
-  },
-  {
-    "title": "Proprioceptive Safe Active Navigation and Exploration for Planetary Environments",
-    "original_title": "Proprioceptive Safe Active Navigation and Exploration for Planetary Environments",
-    "link": "https://arxiv.org/abs/2603.08905",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "PLANETARY 환경에서의 Proprioceptive Safe Active Navigation and Exploration Framework, granular terrain의 불안정성과 Immobilization risk을 고려한 locomotion planning을 가능하게 하는 PSANE 프레임워크를 제안함. 이 프레임워크는 leg-terrain interaction measurement을 통해 traversability 모델을 생성하고, 이를 기반으로 safe navigation과 exploration을 수행하는 데 사용됨."
-  },
-  {
-    "title": "ZeroWBC: Learning Natural Visuomotor Humanoid Control Directly from Human Egocentric Video",
-    "original_title": "ZeroWBC: Learning Natural Visuomotor Humanoid Control Directly from Human Egocentric Video",
-    "link": "https://arxiv.org/abs/2603.09170",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "인간에그센트릭 비디오에서 직접적으로 인간과학적-visuomotor humanooid 컨트롤 정책을 학습하는 ZeroWBC 프레임워크를 도입함으로써, humanoid 로봇의 장면 상호작용 제어를 자연스럽게 수행할 수 있게 되었다."
-  },
-  {
-    "title": "TRIP-Bag: A Portable Teleoperation System for Plug-and-Play Robotic Arms and Leaders",
-    "original_title": "TRIP-Bag: A Portable Teleoperation System for Plug-and-Play Robotic Arms and Leaders",
-    "link": "https://arxiv.org/abs/2603.09226",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "manipulate 태스크의 러닝 기반 로봇 정책에 있어 대규모 다iverse 데이터 수집이 남아 있는 주요 持續적인 도전이다. 기존 野生 데이터 수집 접근법은 시각 기반 손가락 또는 글로브의 자세 추정에依存하여 집합 플랫폼과 대상 로봇 간의 차이embodiment gap을 Introduce한다. 텔레오폴레이션 시스템은 laboratory 환경 외에서 배포할 수 없는 일반적인 문제다. 우리는 휴대용 suitcase 내에 완전히 포함된 가상 조종식 텔레오폴레이션 시스템인 TRIP-Bag를 제안하여 다양한 설정에서 높은 정성의 데이터를 수집하는 실용적 해결책으로서, 5분 이하의 설치 시간과 직접 관절-to-관절 조정으로 TRIP-Bag는 환경 어디서나 신속하고 신뢰할 수 있는 데이터 수집을 허용함을 확인하였다."
-  },
-  {
-    "title": "See, Plan, Rewind: Progress-Aware Vision-Language-Action Models for Robust Robotic Manipulation",
-    "original_title": "See, Plan, Rewind: Progress-Aware Vision-Language-Action Models for Robust Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2603.09292",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 해제의 robustness를 확보하기 위해 태스크 진행을 측정하는 중요성은 분명하다. 이를 가능하게 하는 See, Plan, Rewind(SPR) 프레임워크는 언어 지침을 2D 웨이포인트 시퀀스로 변환하여 스팬셜 서브골들을 계획하고, 실패할 때는 진행 상태를 모니터링하여 회복을 수행하는 클로즈드-루프 접근 방식을 취한다. SPR 프레임워크는 LIBERO 벤치마크에서 5% 향상을 보이며,_LIBERO-Plus 벤치마크에선 estadof-the-art의 robustness를 보여준다."
-  },
-  {
-    "title": "NLiPsCalib: An Efficient Calibration Framework for High-Fidelity 3D Reconstruction of Curved Visuotactile Sensors",
-    "original_title": "NLiPsCalib: An Efficient Calibration Framework for High-Fidelity 3D Reconstruction of Curved Visuotactile Sensors",
-    "link": "https://arxiv.org/abs/2603.09319",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "큿 Visuotactile 센서의 고해상도 3D 재구성을 위한 효율적인 보정 프레임워크를 제안, 비미믹 커브드 SURFACE에 의한 감각-운동 기능 향상을 목표로 함."
-  },
-  {
-    "title": "StyleVLA: autonomous driving driving style-aware vision language action model",
-    "original_title": "StyleVLA: Driving Style-Aware Vision Language Action Model for Autonomous Driving",
-    "link": "https://arxiv.org/abs/2603.09482",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "styleVLA: autonomous driving driving style-aware vision language action model (스포츠,舒适) driving style을 고려한 물리적으로가능한 드라이빙 행동을 생성하는 물리적 인보인 VLA 프레임워크를 제안하였다. 이 프레임워크는 kinematic consistency constraint와 continuous regression head를 결합한 하이브리드 손실 함수를 사용하여 트래킷의 가능성을 향상시켰으며, Qwen3-VL-4B에 기반하여 1.2k의 시나리오, 76k의 Bird's Eye View(베이스 아이뷰) 샘플, 42k의 First Person View(퍼스트 퍼슨 비ュー) 샘플을 생성한 instruction dataset을 사용하여 훈련하고, 실험결과 StyleVLA는 Gemini-3-Pro 및 state-of-the-art VLA 모델보다 더 성능이 우수하였다."
-  },
-  {
-    "title": "Beyond Short-Horizon: VQ-Memory for Robust Long-Horizon Manipulation in Non-Markovian Simulation Benchmarks",
-    "original_title": "Beyond Short-Horizon: VQ-Memory for Robust Long-Horizon Manipulation in Non-Markovian Simulation Benchmarks",
-    "link": "https://arxiv.org/abs/2603.09513",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 시뮬레이션 플랫폼에서 로보틱 데이터 수집의 높은 비용으로 인해 실제 세계任务의非마르코비아 특징을 포착하는 새로운 мистецт가가 필요함에 따라 RuleSafe, articulated manipulation benchmark를 개발함. 이 벤치마크는 다양한 잠금 메커니즘을 갖추고 있는 안전상자들이 포함되어 있으며, 멀티-스테이지 추론과 조작 전략이 필요한 비-Markovian 및 긴 수평 태스크를 제공함. VQ-Memory를 제안하여, 과거 proprioceptive 상태를 벡터-쿼런트 변동 自조编码 (VQ-VAEs)를 사용하여 디스ครète latent 토큰으로 인코딩하는 구조화된 시간 표현을 개발함. 이 표현은 저급 잡음 필터링을 WHILE 고급 태스크-상황 콘텍스트를 보존하며, 기존 Vision-Language-Action 모델 (VLA)과 호환되는 경량却 강력한 시간 Cue를 제공함. 상태-of-the-art VLA 모델 및 확산 정책에 대한 실험 결과는 VQ-Memory가 긴 수평 계획을 향상하고, 未seen 구성에 일반화를 향상하며, 컴퓨팅 비용을 줄이는 조작을 가능하게 함을 보여줌."
   }
 ]
