@@ -72,6 +72,87 @@
     "summary": "arXiv:2605.04939v1 Announce Type: new \nAbstract: A cooperative robot swarm is a collective of computationally-limited robots that share a common goal. Each robot can only interact with a small subset of its peers, without knowing how this affects the collective utility. Recent advances in distributed multi-agent reinforcement learning have demonstrated that it is possible for robots to learn how to interact effectively with others, in a manner that is aligned with the common goal, despite each robot learning independently of others. However, this requires each robot to represent a potentially combinatorial number of interaction states, challenging the memory capabilities of the robots. This paper proposes an alternative approach for representing spatial interaction states for multi-robot reinforcement learning in swarms. A modular (decomposed) representation is used, where each feature of the state is handled by a separate learning procedure, and the results aggregated. We demonstrate the efficacy of the approach in numerous experiments with simulated robot swarms carrying out foraging."
   },
   {
+    "title": "Reduced-order Neural Modeling with Differentiable Simulation for High-Detail Tactile Perception",
+    "original_title": "Reduced-order Neural Modeling with Differentiable Simulation for High-Detail Tactile Perception",
+    "link": "https://arxiv.org/abs/2605.05053",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.05053v1 Announce Type: new \nAbstract: Tactile perception is key to dexterous manipulation, yet simulating high-resolution elastomer deformation remains computationally prohibitive. Finite element methods (FEM) deliver high fidelity but demand costly remeshing, while Material Point Methods (MPM) suffer from heavy particle-memory tradeoffs. We propose a {reduced-order neural simulation framework} that couples coarse-grained MPM dynamics with an implicit neural decoder to reconstruct sub-particle tactile details from compact latent states. The framework learns a continuous deformation manifold from paired high- and low-resolution simulations, enabling physically consistent, differentiable inference. Compared to the TacIPC, our method achieves over 65\\% faster simulation and {40\\% lower memory usage}, while maintaining better geometric fidelity. In tactile rendering and 3D surface reconstruction, our methods further improve accuracy by 25\\% and produce realistic depth images and surface mesh within a faster inference speed. These results demonstrate that the proposed reduced-order neural model enables high-detail, physically grounded tactile simulation with substantial efficiency gains for robotic interaction and optimization."
+  },
+  {
+    "title": "LineRides: Line-Guided Reinforcement Learning for Bicycle Robot Stunts",
+    "original_title": "LineRides: Line-Guided Reinforcement Learning for Bicycle Robot Stunts",
+    "link": "https://arxiv.org/abs/2605.05110",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.05110v1 Announce Type: new \nAbstract: Designing reward functions for agile robotic maneuvers in reinforcement learning remains difficult, and demonstration-based approaches often require reference motions that are unavailable for novel platforms or extreme stunts. We present LineRides, a line-guided learning framework that enables a custom bicycle robot to acquire diverse, commandable stunt behaviors from a user-provided spatial guideline and sparse key-orientations, without demonstrations or explicit timing. LineRides handles physically infeasible guidelines using a tracking margin that permits controlled deviation, resolves temporal ambiguity by measuring progress via traveled distance along the guideline, and disambiguates motion details through position- and sequence-based key-orientations. We evaluate LineRides on the Ultra Mobility Vehicle (UMV) and show that the policy trained with our methods supports seamless transitions between normal driving and stunt execution, enabling five distinct stunts on command: MiniHop, LargeHop, ThreePointTurn, Backflip, and DriftTurn."
+  },
+  {
+    "title": "ConsisVLA-4D: Advancing Spatiotemporal Consistency in Efficient 3D-Perception and 4D-Reasoning for Robotic Manipulation",
+    "original_title": "ConsisVLA-4D: Advancing Spatiotemporal Consistency in Efficient 3D-Perception and 4D-Reasoning for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.05126",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.05126v1 Announce Type: new \nAbstract: Current Vision-Language-Action (VLA) models primarily focus on mapping 2D observations to actions, but exhibit notable limitations in spatiotemporal perception and reasoning: 1) spatial representations often rely on additional sensors, introducing substantial computational overhead; 2) visual reasoning is typically limited to future-frame prediction, lacking alignment with the instruction-grounded scene and thus compromising spatiotemporal consistency. To address these challenges, we propose ConsisVLA-4D, a unified and efficient framework that enhances spatiotemporal consistency in 3D perception and 4D reasoning. Specifically, we design: 1) CV-Aligner, which ensures cross-view object semantic consistency by filtering instruction-relevant regions and aligning object identities across multiple viewpoints; 2) CO-Fuser, which guarantees cross-object spatial geometric consistency by eliminating spatial relation ambiguities between objects across views using compact latent representations. Building upon these, we introduce 3) CS-Thinker to achieve cross-scene spatiotemporal consistency as actions unfold. It learns implicit knowledge of local dynamics from object-semantic tokens of CV-Aligner and global depth from geometric tokens of CO-Fuser, thereby enhancing efficient visual reasoning under scene variations. Extensive experiments demonstrate that, benefiting from its efficient spatiotemporal consistency design, ConsisVLA-4D achieves 21.6% and 41.5% performance improvements, along with 2.3-fold and 2.4-fold inference speedups compared to OpenVLA on the LIBERO benchmark and real-world platforms, respectively.ConsisVLA-4D is open-sourced and publicly available at"
+  },
+  {
+    "title": "When Life Gives You BC, Make Q-functions: Extracting Q-values from Behavior Cloning for On-Robot Reinforcement Learning",
+    "original_title": "When Life Gives You BC, Make Q-functions: Extracting Q-values from Behavior Cloning for On-Robot Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2605.05172",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.05172v1 Announce Type: new \nAbstract: Behavior Cloning (BC) has emerged as a highly effective paradigm for robot learning. However, BC lacks a self-guided mechanism for online improvement after demonstrations have been collected. Existing offline-to-online learning methods often cause policies to replace previously learned good actions due to a distribution mismatch between offline data and online learning. In this work, we propose Q2RL, Q-Estimation and Q-Gating from BC for Reinforcement Learning, an algorithm for efficient offline-to-online learning. Our method consists of two parts: (1) Q-Estimation extracts a Q-function from a BC policy using a few interaction steps with the environment, followed by online RL with (2) Q-Gating, which switches between BC and RL policy actions based on their respective Q-values to collect samples for RL policy training. Across manipulation tasks from D4RL and robomimic benchmarks, Q2RL outperforms SOTA offline-to-online learning baselines on success rate and time to convergence. Q2RL is efficient enough to be applied in an on-robot RL setting, learning robust policies for contact-rich and high precision manipulation tasks such as pipe assembly and kitting, in 1-2 hours of online interaction, achieving success rates of up to 100% and up to 3.75x improvement against the original BC policy. Code and video are available at https://pages.rai-inst.com/q2rl_website/"
+  },
+  {
+    "title": "Constraint-Enhanced Reinforcement Learning Based on Dynamic Decoupled Spherical Radial Squashing",
+    "original_title": "Constraint-Enhanced Reinforcement Learning Based on Dynamic Decoupled Spherical Radial Squashing",
+    "link": "https://arxiv.org/abs/2605.04185",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.04185v1 Announce Type: cross \nAbstract: When deploying reinforcement learning policies to physical robots, actuator rate constraints -- hard limits on how fast each joint can move per control step -- are unavoidable. These limits vary substantially across joints due to differences in motor inertia, power bandwidth, and transmission stiffness, creating pronounced heterogeneity that existing methods fail to handle geometrically: the per-joint feasible region forms a high-dimensional box in action-increment space, yet QP projection and spherical parameterization methods impose isotropic ball-shaped constraints, exponentially under-covering the true feasible set as heterogeneity grows. This paper proposes Dynamic Decoupled Spherical Radial Squashing (DD-SRad), which resolves this mismatch by computing a position-adaptive radius independently for each actuator, achieving tight alignment with the true per-joint feasible region. DD-SRad satisfies per-step hard constraints with probability~1, preserves well-conditioned gradients throughout training, and admits exact policy gradient backpropagation with zero runtime solver overhead. MuJoCo benchmark experiments demonstrate the highest task return at zero constraint violation -- matching the unconstrained upper bound -- with 30%--50% improvement in constraint-space coverage over spherical baselines. High-fidelity IsaacLab simulations with Unitree H1 and G1 humanoid robots confirm end-to-end optimality parameterized directly from official joint specifications, validating a systematic pathway from hardware datasheets to safe deployment."
+  },
+  {
+    "title": "ipc_shared_ptr: A Publish/Subscribe-Aware Smart Pointer for Cross-Process Object Lifetime Management",
+    "original_title": "ipc_shared_ptr: A Publish/Subscribe-Aware Smart Pointer for Cross-Process Object Lifetime Management",
+    "link": "https://arxiv.org/abs/2605.04226",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.04226v1 Announce Type: cross \nAbstract: True zero-copy Inter-Process Communication (IPC) in publish/subscribe (pub/sub) middleware such as Robot Operating System 2 (ROS 2) requires subscribers to reference message objects in publisher-owned shared memory. Objects must not be reclaimed while referenced, yet must eventually be reclaimed, with correct handling of crash recovery and Transient Local QoS retention requirements. We propose ipc_shared_ptr, a pub/sub-aware smart pointer for cross-process message lifetime management. ipc_shared_ptr exploits pub/sub structural properties to specialize Birrell's reference listing, limiting global metadata updates to per-subscriber 01 transitions and achieving an order-of-magnitude reduction in global communication over general-purpose distributed reference counting. We analyze the key metadata management tradeoff: scalability versus implementation simplicity. Owner-driven reclaim offers greater scalability, but concurrent membership changes and reclamation decisions produce races that widen the correctness-verification state space. Single-writer achieves structural atomicity, eliminating this complexity at the cost of a centralized bottleneck. iceoryx2 (owner-driven reclaim) and Agnocast -- a true zero-copy ROS 2 IPC middleware sharing the publisher's heap with subscribers and adopting ipc_shared_ptr with single-writer -- embody each architecture. Comparative evaluation at the scale of Autoware -- the largest open-source ROS 2 application -- confirms that single-writer achieves sufficient scalability: at 200 topics, two subscribers per topic and 100 Hz, Agnocast's E2E p99.9 is 2.9x lower than iceoryx2's, justifying implementation simplicity over owner-driven reclaim."
+  },
+  {
+    "title": "RouteFormer: A Transformer-Based Routing Framework for Autonomous Vehicles",
+    "original_title": "RouteFormer: A Transformer-Based Routing Framework for Autonomous Vehicles",
+    "link": "https://arxiv.org/abs/2504.05407",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2504.05407v2 Announce Type: replace \nAbstract: Autonomous surveillance missions in Internet of Things (IoT) networks often involve solving NP-hard combinatorial optimization problems to ensure efficient resource utilization. To address the limitations of conventional heuristics in dynamic environments, we propose RouteFormer, a novel framework for single-agent routing in graph-based terrains. RouteFormer creates a synergy between the global context awareness of the transformer self-attention mechanism and the adaptive decision-making capabilities of Reinforcement Learning (RL). This architecture allows the system to output optimized routing decisions that adapt to complex task dependencies and resource availability without requiring labeled training datasets. We evaluated RouteFormer on varying graph sizes designed to resemble realistic reconnaissance missions. The results indicate that our model effectively handles the complexity of missions requiring multiple action profiles, outperforming baseline approaches, in terms of both time and distance. Specifically, RouteFormer achieved 10\\% and 7\\% reduction in distance compared to the solutions obtained from well-established solvers like Concorde and Lin-Kernighan-Helsgaun-3 (LKH-3). This improvement was achieved by effectively incorporating mission-specific constraints that traditional solvers overlook. The proposed framework serves as a modular, scalable pipeline for diverse autonomous scheduling and routing tasks."
+  },
+  {
+    "title": "Towards Adaptive Humanoid Control via Multi-Behavior Distillation and Reinforced Fine-Tuning",
+    "original_title": "Towards Adaptive Humanoid Control via Multi-Behavior Distillation and Reinforced Fine-Tuning",
+    "link": "https://arxiv.org/abs/2511.06371",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2511.06371v3 Announce Type: replace \nAbstract: Humanoid robots are promising to learn a diverse set of human-like locomotion behaviors, including standing up, walking, running, and jumping. However, existing methods predominantly require training independent policies for each skill, yielding behavior-specific controllers that exhibit limited generalization and brittle performance when deployed on irregular terrains and in diverse situations. To address this challenge, we propose Adaptive Humanoid Control (AHC) that adopts a two-stage framework to learn an adaptive humanoid locomotion controller across different skills and terrains. Specifically, we first train several primary locomotion policies and perform a multi-behavior distillation process to obtain a basic multi-behavior controller, facilitating adaptive behavior switching based on the environment. Then, we perform reinforced fine-tuning by collecting online feedback in performing adaptive behaviors on more diverse terrains, enhancing terrain adaptability for the controller. We conduct experiments in both simulation and real-world experiments in Unitree G1 robots. The results show that our method exhibits strong adaptability across various situations and terrains. Project website: https://ahc-humanoid.github.io."
+  },
+  {
+    "title": "Boston Dynamics Unveils Advanced Atlas Humanoid as Industrial AI Robot Race Accelerates - Korea IT Times",
+    "original_title": "Boston Dynamics Unveils Advanced Atlas Humanoid as Industrial AI Robot Race Accelerates - Korea IT Times",
+    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBpd1JVQUhfQVZoMVBfNFMtZUxfQ0NMdkJCRzhMazdLdU9vbkVZUF9XRVpfa2lvYTZnNTJKZVFlUnVjUzlkYTBXQVZSSXZoMGJpbGQwNXAyRnBLQWpLc3BYeExEaDNuajJhMnhGVzlTaw?oc=5",
+    "date": "2026-05-07 03:57",
+    "source": "Google News (Humanoid)",
+    "category": "humanoid",
+    "summary": "Boston Dynamics Unveils Advanced Atlas Humanoid as Industrial AI Robot Race Accelerates  Korea IT Times"
+  },
+  {
     "title": "Chinese humanoid robots expand global industrial roles, boost battery lines - CHOSUNBIZ - Chosunbiz",
     "original_title": "Chinese humanoid robots expand global industrial roles, boost battery lines - CHOSUNBIZ - Chosunbiz",
     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOdUhjZE9oWlZDSW1QY2x6d2xzLWlQbk1mcmF0YnZXdHQ1Nk1wRjRDNmttb291SWU0Qy1HeEZ5VFA1ZjF6YTFxMmlBVVdIVUppUzJQYUlpUmZucEtyekgwcXFSaHRTdEtxSkpsWHNZUnFQeDVmN0VtRHIxNm1Zck1jT2pB0gGWAUFVX3lxTE96dWZIdmRPXzE5MDVMSUJkOWZNWUxxYVA5YTVPeE5JZmtTYnl3YnZMUm1VT1BFTy0zM190QnJkWXFLYjdlS19FRGxGeElDZlZpb29jQkdpS2RvWEYyN29lMlFsWUJHcW1FOVVWU1AtTmtnU3hSYXUwWkJUOTVFVkFtY28zeUhSM0RZNkRWLVZtTzFlWmZaZw?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로봇 시뮬레이션 플랫폼에서 로보틱 데이터 수집의 높은 비용으로 인해 실제 세계任务의非마르코비아 특징을 포착하는 새로운 мистецт가가 필요함에 따라 RuleSafe, articulated manipulation benchmark를 개발함. 이 벤치마크는 다양한 잠금 메커니즘을 갖추고 있는 안전상자들이 포함되어 있으며, 멀티-스테이지 추론과 조작 전략이 필요한 비-Markovian 및 긴 수평 태스크를 제공함. VQ-Memory를 제안하여, 과거 proprioceptive 상태를 벡터-쿼런트 변동 自조编码 (VQ-VAEs)를 사용하여 디스ครète latent 토큰으로 인코딩하는 구조화된 시간 표현을 개발함. 이 표현은 저급 잡음 필터링을 WHILE 고급 태스크-상황 콘텍스트를 보존하며, 기존 Vision-Language-Action 모델 (VLA)과 호환되는 경량却 강력한 시간 Cue를 제공함. 상태-of-the-art VLA 모델 및 확산 정책에 대한 실험 결과는 VQ-Memory가 긴 수평 계획을 향상하고, 未seen 구성에 일반화를 향상하며, 컴퓨팅 비용을 줄이는 조작을 가능하게 함을 보여줌."
-  },
-  {
-    "title": "Trajectory Optimization for Self-Wrap-Aware Cable-Towed Planar Object Manipulation under Implicit Tension Constraints",
-    "original_title": "Trajectory Optimization for Self-Wrap-Aware Cable-Towed Planar Object Manipulation under Implicit Tension Constraints",
-    "link": "https://arxiv.org/abs/2603.09557",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한결사-aware 케이블-로우드 플랜 OBJECT MANIPULATION의 경도 최적화 문제"
-  },
-  {
-    "title": "ReTac-ACT: State-Gated Vision-Tactile Fusion Transformer for Precision Assembly",
-    "original_title": "ReTac-ACT: A State-Gated Vision-Tactile Fusion Transformer for Precision Assembly",
-    "link": "https://arxiv.org/abs/2603.09565",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "precision assembly을 구현하는 ReTac-ACT가 출시됨. 이 새로운 기술은 시각적 피드백이 가려진 \"마지막 밀리미터\" 지역에서 접촉이 많은 마지막 미ilim의 정밀 조립을 가능하게 하는 세 가지 동시적인 메커니즘을具现."
-  },
-  {
-    "title": "Towards Terrain-Aware Safe Locomotion for Quadrupedal Robots Using Proprioceptive Sensing",
-    "original_title": "Towards Terrain-Aware Safe Locomotion for Quadrupedal Robots Using Proprioceptive Sensing",
-    "link": "https://arxiv.org/abs/2603.09585",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "분산지형 안정한 네다족 로봇을 위한 proprioceptive 센서 기반 안전 로코모션 방안이 공개됨. \n\nThis summary is 2 sentences long and focuses on the technical specifications of the research, highlighting the use of proprioceptive sensors for terrain estimation and safety-critical control."
-  },
-  {
-    "title": "Kinodynamic Motion Retargeting for Humanoid Locomotion via Multi-Contact Whole-Body Trajectory Optimization",
-    "original_title": "Kinodynamic Motion Retargeting for Humanoid Locomotion via Multi-Contact Whole-Body Trajectory Optimization",
-    "link": "https://arxiv.org/abs/2603.09956",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "인간용 로봇의步行을 위한 다 연락체 관성 운동 전달 프레임워크(KDMR) 발표. KDMR는 모션 캡처 데이터에 의존하지 않고 rigidity 보디 동력학과 접촉 공용 제약을 강제하여 실제로 사람과 같은 접촉 패턴을 재현할 수 있는 새로운 방법을 소개합니다. KDMR은 3가지 차원에서 state-of-the-art의 GMR보다 성능이 우수하다고 평가되었습니다: 동적 가능성 및 연속성, 지면 반작용력 추적 정확도, 다운스트림 제어 정책 훈련의 효율성 및 최종 성능."
-  },
-  {
-    "title": "SPAARS: 오프라인 RL 정책 일치성 및 추상 탐색, 개선된 액션 공간 활용을 통해 더 안전한 RL 함",
-    "original_title": "SPAARS: Safer RL Policy Alignment through Abstract Exploration and Refined Exploitation of Action Space",
-    "link": "https://arxiv.org/abs/2603.09378",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "SPAARS는 오프라인에서 훈련된 RL 정책을 온라인에서 fine-tuning하는 방법으로, 안전한 온라인 탐색을 가능하게 했다. 이를 달성하는 것은 초기에 낮은 차원 latent manifold에서 탐색을 제한하고, 이후에는 raw action space로의 전환을 수행하는 커리큘럼 러닝 프레임워크인 SPAARS를 사용하는 것이다. SPAARS는 CVAE와 같은 조건부 생성 모델을 사용하여 exploration을 제한하는데, 이 방법은 decoder의 재구성 손실에 의해 성능한계가 발생하지만, 이를 뛰어넘는 raw action space로의 전환을 가능하게 했다."
-  },
-  {
-    "title": "Vision-Language 모델을 활용한 오픈월드 태스크 및 운동 계획 ~임",
-    "original_title": "Open-World Task and Motion Planning via Vision-Language Model Genereated Constraints",
-    "link": "https://arxiv.org/abs/2411.08253",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Korean_title: Vision-Language 모델을 활용한 오픈월드 태스크 및 운동 계획 ~임, VLM(Vision-Language Models)을 TAMP(Task and Motion Planning)시스템에 통합하여 장기적이면서 지속적인 reasoning을 구현하는 새로운 접근방식을 제안하였다. 이러한 접근방식은 VLM을 사용하여 discrete action ordering constraints를 생성하고, continuous constraints를 형성하여 오픈월드 reasoning을 가능하게 한다. 실험결과, proposed approach인 OWL-TAMP는 TAMP 및 VLM에만 의존하는 baselines보다 장기적이면서 manipulate tasks를 잘 수행하였다. Moreover, OWL-TAMP는 off-the-shelf TAMP 시스템과 결합하여 실제 하드웨어에서 challenging manipulation tasks를 해결할 수 있다."
-  },
-  {
-    "title": "multi-robot motion planning시 전송 성능 보장",
-    "original_title": "Connectivity Maintenance and Recovery for Multi-Robot Motion Planning",
-    "link": "https://arxiv.org/abs/2510.03504",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "멀티 로봇 애플리케이션에서 전송이 중요한데, 장애물이 많은 환경에서 호위 가능성을 유지하는 것이 도전과제입니다. 우리는 B\\'ezier-based 제한된 운동 계획 알고리즘, MPC--CLF--CBF를 제안하여, 고차원 제한 함수 및 제어 Lyapunov 함수 조건 하에 траектор리와 제어를 동시 생성합니다. 이-motion planner는 연결된 함대가 장애물이 많은 작업 공간에서 성공적으로 탐색하고 예상치 못한 연결 손실 시 회복할 수 있습니다. 추가로, 우리의 예측 운동 계획 알고리즘은 B\\'ezier 곡선 솔루션으로 인해 diferentailly flat 시스템, 즉 콰드롭터에 적합합니다. 우리는 시뮬레이션과 8개의 크레이지 플라이 nano-콰드롭터를 사용하여 제안한 알고리즘을 확인했습니다."
-  },
-  {
-    "title": "Flow from Multi-Modal Trajectory Policies를 via IMLE-based Distribution Distillation을",
-    "original_title": "From Flow to One Step: Real-Time Multi-Modal Trajectory Policies via Implicit Maximum Likelihood Estimation-based Distribution Distillation",
-    "link": "https://arxiv.org/abs/2603.09415",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "인공지능(Robotics Manipulation)에서 다종모드 인간 동시대를 모델링하는 생성 정책을 기반으로 다종모드 인간 강령을 모델링하는 생성 정책을 기반으로 하여 강력한 성능을 달성하지만, ODE积分의 반복 사용은 고속 제어에 문제를 일으키는 한편, 최근의 단일 단계 가속화 방법은 분포 붕괴를 일으켜 averaged trajectories가 일관성 없는 조작 전략을 생산하는 데, 이러한 한계를克服하기 위해 IMLE를 기반으로 Conditional Flow Matching(CFM) 고문을 단일 단계 학생으로 배출하여 배출하는 새로운 프레임워크를 제안하고 있습니다."
-  },
-  {
-    "title": "SCDP: partial 관측 기반의 humanooid 로코모션 학습 방안",
-    "original_title": "SCDP: Learning Humanoid Locomotion from Partial Observations via Mixed-Observation Distillation",
-    "link": "https://arxiv.org/abs/2603.09574",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "humilioid 로코모션 제어를 오프라인 데이터셋에서 배포할 수 있는 정책으로 distill 하는데는 도전이 있었다. 기존 메서드는 복잡하고 종종 불신뢰스러운 상태 추정에 의존하여야 했다. 우리는 sensor-conditioned diffusion policies(SCDP)를 발표하여 onboard 센서만 사용하여 humilioid 로코모션을 가능하게 했다. SCDP는 sensing과 supervision을 decouple 하여 mixed-observation 훈련을 통해 diffusion 모델이.partial 관측하 환경에서 동작 방식을 추정하도록 강제했다. simulation에서는 velocity control(99-100%)와 motion reference tracking(93% success)을 달성했고, 실제 G1 humanooid robot에서 50Hz로 로코모션을 수행했으며, 외부 센싱 또는 상태 추정 없이robust하게 동작했다."
   }
 ]
