@@ -1,5 +1,77 @@
 [
   {
+    "title": "Autonomous Laparoscope Control through Unified Mechanics-Based Representation of Multimodal Intraoperative Information",
+    "original_title": "Autonomous Laparoscope Control through Unified Mechanics-Based Representation of Multimodal Intraoperative Information",
+    "link": "https://arxiv.org/abs/2605.04408",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.04408v1 Announce Type: new \nAbstract: Laparoscope-holding robots can provide surgeons with a stable laparoscopic field of view (FOV) and reduce the burden on human assistants. To maintain an ideal intraoperative FOV, the robot must continuously adjust the laparoscope pose according to intraoperative information. However, intraoperative multimodal signals, such as position, force/torque, and images, differ markedly in physical meaning and units, making it difficult to build a unified representation and to generate control commands that can be used directly for laparoscope control. To address this issue, we propose a laparoscope-holding robot control method based on unified mechanics modeling of multimodal information. First, we design mapping strategies for multiple intraoperative sources, including position, force/torque, and images, and unify them into an equivalent-wrench representation in the operational space. Then, using a task-priority scheme, we inject the wrenches into the task space and the null space, respectively, and synthesize laparoscope control commands via task-priority projection, thereby achieving consistent representation and coordinated fusion of multimodal information within a single framework. Finally, taking the intraoperative remote center of motion (RCM) position, force/torque sensor readings, and laparoscopic images as examples, we construct an RCM-constraint wrench to enforce the RCM geometric constraint and reduce the contact force at the trocar site, a laparoscope-manipulation wrench to enable compliant dragging, and an instrument-tracking wrench to achieve autonomous visual tracking of the instruments. Experiments on a surgical phantom and in vivo porcine trials demonstrate that the proposed method supports multi-task operation, including compliant laparoscope manipulation and autonomous instrument tracking, while maintaining the RCM constraint and reducing sustained trocar-site loading."
+  },
+  {
+    "title": "HDFlow: Hierarchical Diffusion-Flow Planning for Long-horizon Tasks",
+    "original_title": "HDFlow: Hierarchical Diffusion-Flow Planning for Long-horizon Tasks",
+    "link": "https://arxiv.org/abs/2605.04525",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.04525v1 Announce Type: new \nAbstract: Recent advances in generative models have shown promise in generating behavior plans for long-horizon, sparse reward tasks. While these approaches have achieved promising results, they often lack a principled framework for hierarchical decomposition and struggle with the computational demands of real-time execution, due to their iterative denoising process. In this work, we introduce Hierarchical Diffusion-Flow (HDFlow), a novel hierarchical planning framework that optimally leverages the strengths of diffusion and rectified flow models to overcome the limitations of single-paradigm generative planners. HDFlow employs a high-level diffusion planner to generate sequences of strategic subgoals in a learned latent space, capitalizing on diffusion's powerful exploratory capabilities. These subgoals then guide a low-level rectified flow planner that generates smooth and dense trajectories, exploiting the speed and efficiency of ordinary differential equation (ODE)-based trajectory generation. We evaluate HDFlow on four challenging furniture assembly tasks in both simulation and real-world, where it significantly outperforms state-of-the-art methods. Furthermore, we also showcase our method's generalizability on two long-horizon benchmarks comprising diverse locomotion and manipulation tasks. Project website: https://hdflow-page.github.io/"
+  },
+  {
+    "title": "Right Model, Right Time: Real-Time Cascaded-Fidelity MPC for Bipedal Walking",
+    "original_title": "Right Model, Right Time: Real-Time Cascaded-Fidelity MPC for Bipedal Walking",
+    "link": "https://arxiv.org/abs/2605.04607",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.04607v1 Announce Type: new \nAbstract: This paper presents a multi-phase whole-body model predictive control approach for bipedal walking, combining a detailed whole-body model in the near horizon with a simplified single-rigid-body model in the later prediction steps. This reduces computational complexity while retaining prediction capabilities. The resulting nonlinear optimal control problem is solved using sequential quadratic programming (SQP) in acados. Using a prior specified contact schedule and a target walking speed, the controller optimizes joint torques without depending on prior selected foot step locations. The controller is validated in MuJoCo simulation on the 18-DoF bipedal robot HyPer-2"
+  },
+  {
+    "title": "Active Contact Sensing for Robust Robot-to-Human Object Handover",
+    "original_title": "Active Contact Sensing for Robust Robot-to-Human Object Handover",
+    "link": "https://arxiv.org/abs/2605.04610",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.04610v1 Announce Type: new \nAbstract: Robot-to-human object handover is an essential skill for robot assistants, from serving drinks at home to passing surgical tools in the operating room. We expect robots to perform handover robustly -- to release the object only after a firm human grasp while ignoring incidental touches. Existing passive-sensing methods struggle to generalize across diverse objects and human behaviors, as they lack informative perturbations to disambiguate different contact conditions, such as firm grasp versus incidental touch. We propose an active sensing approach for robust handovers: the robot applies information-gathering motions and senses the resulting human-applied forces to infer the contact state. A firm grasp produces forces in multiple directions, while an accidental touch does not. To capture this distinction, we model the contact state with a Bayesian linear model: a distribution over piecewise-linear mappings from robot motions to human-applied forces. This model enables firm grasp detection and active information gathering. In experiments with 12 participants and 30 diverse rigid objects, our method achieved a 97.5% success rate -- over 30% higher than two common baselines."
+  },
+  {
+    "title": "From Reach to Insert: Tactile-Augmented Precision Assembly under Sub-Millimeter Tolerances",
+    "original_title": "From Reach to Insert: Tactile-Augmented Precision Assembly under Sub-Millimeter Tolerances",
+    "link": "https://arxiv.org/abs/2605.04649",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.04649v1 Announce Type: new \nAbstract: High-precision assembly frequently involves tight-tolerance insertions, where even slight pose errors can cause jamming or excessive interaction forces, making robust and safe insertion policies difficult to obtain. This paper proposes a tactile-augmented two-stage method that combines Imitation Learning (IL) and Reinforcement Learning (RL) for precision insertion tasks. In the first stage, IL learns a reaching policy with position generalization that grasps the peg and brings it to the vicinity of the target region. In the second stage, RL executes the insertion and enables recovery from failures during contact-rich interactions. To better exploit tactile feedback, we introduce tactile group sampling to increase coverage of critical contact segments during training, and design a tactile critic to more accurately evaluate policy values, improving insertion performance while maintaining low contact forces. We conduct systematic experiments across five hole geometries and three clearance settings. Results show that our method substantially improves insertion performance across all settings; under the most challenging 0.05\\,mm clearance, it achieves a 67\\% success rate while keeping contact forces low, reducing the maximum interaction force by 60\\% and torque by 44\\%, thereby validating both effectiveness and safety for precision assembly."
+  },
+  {
+    "title": "3D Printing of Passively Actuated Self-Folding Robots with Integrated Functional Modules",
+    "original_title": "3D Printing of Passively Actuated Self-Folding Robots with Integrated Functional Modules",
+    "link": "https://arxiv.org/abs/2605.04757",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.04757v1 Announce Type: new \nAbstract: We introduce an elastic-driven self-folding approach that fabricates robots directly from flat 3D-printed conductive PLA nets. Elastic bands routed through printed hooks store energy that folds the sheet into programmed 3D geometries, while the flat state allows accurate placement of electronics and magnets before deployment. The same substrate doubles as electrodes for capacitive touch and supports a reusable platform I/O palette with Hall sensors and eccentric rotating mass (ERM) motors for docking detection and vibration actuation. We also derive a closed-form folding model that balances hinge stiffness with elastic band moment to predict equilibrium fold angles; experiments validate the model and yield a design map linking hinge thickness, band size, and hook spacing to target angles. Using this workflow we realize multiple polyhedral modules and demonstrate three applications: a cube that highlights the potential of self-folding for scalable modular robot collectives, a deployable gripper, and a tendon-driven finger. The method is low cost, stimulus-free, and integrates actuation and sensing."
+  },
+  {
+    "title": "Optimal Uncertainty-Aware Calibration for the AX=YB Problem",
+    "original_title": "Optimal Uncertainty-Aware Calibration for the AX=YB Problem",
+    "link": "https://arxiv.org/abs/2605.04809",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.04809v1 Announce Type: new \nAbstract: This article proposes a general optimization framework for solving hand-eye calibration problem. Unlike traditional methods, an iterative algorithm based on Lie algebra that achieves approximately global optimal solutions is developed. During the optimization process, the method strictly preserves the structural constraints of the calibration parameters and enables synchronized updates between calibration parameters. Recognizing that data used in real-word hand-eye calibration often contain uncertainty, especially in over-loading and large workspace industrial robot scenarios, which can significantly degrade accuracy, and accurately modeling such uncertainty is inherently difficult, this article avoids explicit uncertainty modeling. Instead, an uncertainty metric to evaluate the relative uncertainty between data sources is introduced and used to dynamically refine the iterative process. To further enhance convergence efficiency, an effective initial solution generation method that improves overall stability and accuracy is designed. Numerical simulations and real-world experiments validate the effectiveness of the proposed approach, and in synthetic datasets, the proposed approach improves the estimation accuracy by at least 67\\% under high-uncertainty conditions compared with the existing methods."
+  },
+  {
+    "title": "Modular Reinforcement Learning For Cooperative Swarms",
+    "original_title": "Modular Reinforcement Learning For Cooperative Swarms",
+    "link": "https://arxiv.org/abs/2605.04939",
+    "date": "2026-05-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.04939v1 Announce Type: new \nAbstract: A cooperative robot swarm is a collective of computationally-limited robots that share a common goal. Each robot can only interact with a small subset of its peers, without knowing how this affects the collective utility. Recent advances in distributed multi-agent reinforcement learning have demonstrated that it is possible for robots to learn how to interact effectively with others, in a manner that is aligned with the common goal, despite each robot learning independently of others. However, this requires each robot to represent a potentially combinatorial number of interaction states, challenging the memory capabilities of the robots. This paper proposes an alternative approach for representing spatial interaction states for multi-robot reinforcement learning in swarms. A modular (decomposed) representation is used, where each feature of the state is handled by a separate learning procedure, and the results aggregated. We demonstrate the efficacy of the approach in numerous experiments with simulated robot swarms carrying out foraging."
+  },
+  {
     "title": "Chinese humanoid robots expand global industrial roles, boost battery lines - CHOSUNBIZ - Chosunbiz",
     "original_title": "Chinese humanoid robots expand global industrial roles, boost battery lines - CHOSUNBIZ - Chosunbiz",
     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOdUhjZE9oWlZDSW1QY2x6d2xzLWlQbk1mcmF0YnZXdHQ1Nk1wRjRDNmttb291SWU0Qy1HeEZ5VFA1ZjF6YTFxMmlBVVdIVUppUzJQYUlpUmZucEtyekgwcXFSaHRTdEtxSkpsWHNZUnFQeDVmN0VtRHIxNm1Zck1jT2pB0gGWAUFVX3lxTE96dWZIdmRPXzE5MDVMSUJkOWZNWUxxYVA5YTVPeE5JZmtTYnl3YnZMUm1VT1BFTy0zM190QnJkWXFLYjdlS19FRGxGeElDZlZpb29jQkdpS2RvWEYyN29lMlFsWUJHcW1FOVVWU1AtTmtnU3hSYXUwWkJUOTVFVkFtY28zeUhSM0RZNkRWLVZtTzFlWmZaZw?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "humilioid 로코모션 제어를 오프라인 데이터셋에서 배포할 수 있는 정책으로 distill 하는데는 도전이 있었다. 기존 메서드는 복잡하고 종종 불신뢰스러운 상태 추정에 의존하여야 했다. 우리는 sensor-conditioned diffusion policies(SCDP)를 발표하여 onboard 센서만 사용하여 humilioid 로코모션을 가능하게 했다. SCDP는 sensing과 supervision을 decouple 하여 mixed-observation 훈련을 통해 diffusion 모델이.partial 관측하 환경에서 동작 방식을 추정하도록 강제했다. simulation에서는 velocity control(99-100%)와 motion reference tracking(93% success)을 달성했고, 실제 G1 humanooid robot에서 50Hz로 로코모션을 수행했으며, 외부 센싱 또는 상태 추정 없이robust하게 동작했다."
-  },
-  {
-    "title": "티프트롭(TiPToP): 오픈-보쿠레이션 로봇 매니퓰레이션 시스템",
-    "original_title": "TiPToP: A Modular Open-Vocabulary Planning System for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2603.09971",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 연구진이 개발한 티프트롭은, 이미지 및 자연어 지시를 입력받아 다단계 매니프라케이션 태스크를 해결하는 모듈러 오픈-보쿠레이션 시스템입니다. 이 시스템은 1시간 이내에 표준 DROID 환경에서 설치·운영할 수 있으며 새로운 인형인에 최소 노력으로 적응할 수 있습니다."
-  },
-  {
-    "title": "Physics-Conditioned Grasping for Stable Tool Use",
-    "original_title": "Physics-Conditioned Grasping for Stable Tool Use",
-    "link": "https://arxiv.org/abs/2505.01399",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "도구 사용이 실패하는 이유는 로봇이 도구를 잘못 식별하는 것이 아니라, task-induced wrench에 대응하지 못하는 구급 때문임. existing vision-language manipulation systems은 도구와 접촉 지帯을 언어에서 ground하지만 quasi-static 또는 geometry-only 가정하에 구급을 선택함. 하지만 interaction duration동안 inertial impulse 및 lever-arm amplification에 의해 wrist torque 및 tangential loads가 발생하여 slip 및 rotation을 유발함. 우리는 inverse Tool-use Planning(iTuP)을 도입하여 task-conditioned trajectory에 따라 구급을 선택하는 방식을 개발함. rigid-body mechanics를 통해 torque, slip, 및 alignment penalties를 파악하고 Stable Dynamic Grasp Network(SDG-Net)을 훈련하여 이와 같은 경로에 대한 예측 비용을 근사화함. simulation 및 하드웨어에서 SDG-Net은 induced torque를 17.6%까지 억제하고 empirically observed instability thresholds에 대한 구급을 오프셋하며 real-world 성공을 17.5%까지 개선함."
-  },
-  {
-    "title": "SynHLMA:Articulated Object InterACTION Representation을 위한 Hand Language Manipulation Synthesis함",
-    "original_title": "SynHLMA:Synthesizing Hand Language Manipulation for Articulated Object with Discrete Human Object Interaction Representation",
-    "link": "https://arxiv.org/abs/2510.25268",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 AI연구가 제안한 새로운 HAOI(Hand Articulatied Object Interaction)시퀀스 생성 프레임워크인 SynHLMA는 articulated object interaction representation을 모델링하고, language description과 align하여 hand grasps synthesis을 수행합니다. 이 프레임워크는 articulated object의 joints dynamics를 고려하여 hand grasps sequence generation performance을 향상시키고, state-of-the-art와의 비교에서 우수한 성능을 보여줍니다."
-  },
-  {
-    "title": "EgoMI: Active Vision and Whole-Body Manipulation Learning from Egocentric Human Demonstrations",
-    "original_title": "EgoMI: Learning Active Vision and Whole-Body Manipulation from Egocentric Human Demonstrations",
-    "link": "https://arxiv.org/abs/2511.00153",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "人체중심의 시선과 다지몸 조정 학습을 통해 EgoMI 프레임워크를 발표,semi-인간 로봇에 적용하여 고성능의 모방학습 성과를 달성함."
-  },
-  {
-    "title": "Bootstrap Dynamic-Aware 3D Visual Representation for Scalable Robot Learning",
-    "original_title": "Bootstrap Dynamic-Aware 3D Visual Representation for Scalable Robot Learning",
-    "link": "https://arxiv.org/abs/2512.00074",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 학습에서 3D 시각 표현을 크게 개선하는 AFRO 프레임워크를 공개함. 이 프레임워크는 상태 예측을 생성 diffusion 프로세스로 형식화하고, вперед과 역방향 동적 모델링을 공유-latent 공간에 함께 모델링하여 인공 구조를 捕捉함. AFRO는 16의 시뮬레이션 과제와 4개의 실제 세계 과제에서 manipulation 성공률을 크게 높임으로써 기존 프레트레이닝 방법들을 능가함."
-  },
-  {
-    "title": "UniBYD: embodied intelligence framework for robotic manipulation across diverse morphologies",
-    "original_title": "UniBYD: A Unified Framework for Learning Robotic Manipulation Across Embodiments Beyond Imitation of Human Demonstrations",
-    "link": "https://arxiv.org/abs/2512.11609",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇을 위한 unified framework UniBYD를 제안, 다양한 모서형으로 확장하여 인간 рук의 이mitation을 초과하는 manipulation 정책을 학습하도록 하였다. \n\n(Note: I translated the title to natural and professional Korean, summarized the content into 2-3 concise sentences, and followed the tone and style instruction.)"
-  },
-  {
-    "title": "Robot Manipulator Trajectory Generation Safe Guarantees",
-    "original_title": "Provably Safe Trajectory Generation for Manipulators Under Motion and Environmental Uncertainties",
-    "link": "https://arxiv.org/abs/2603.09083",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국 로봇 매니퓰레이터의 тра이세クト리 생성에 대한 안전 보장 프레임워크를 제안합니다. 이 프레임워크는 동작 불확실성과 환경 불확실성을 고려하여 효율적인이고 공식적으로 인증된 충돌 위험을 제공합니다."
-  },
-  {
-    "title": "Robotic Scene Cloning:Advancing Zero-Shot Robotic Scene Adaptation in Manipulation via Visual Prompt Editing",
-    "original_title": "Robotic Scene Cloning:Advancing Zero-Shot Robotic Scene Adaptation in Manipulation via Visual Prompt Editing",
-    "link": "https://arxiv.org/abs/2603.09712",
-    "date": "2026-03-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 씬 클로닝(RSC) 방안을 제안하여 환경에 특화된 적응을 달성하는 새로운 방법을 개발하였다. RSC는 시각적인 데스크트 메커니즘과 조건 주입 모듈을 결합하여 현지 데이터 수집의 필요성을 완전히 없애게 하였다. 이 방안은 다양한 물체 유형에 대한 태스크 성능을 보여주며, 다양한 시뮬레이션 환경과 실제 세계 환경에서 실험을 통해 RSC가 목표 환경에서 정책 일반화에 있어 의미 있는 향상을 달성함을 확인하였다."
   }
 ]
