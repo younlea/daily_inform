@@ -1,5 +1,14 @@
 [
   {
+    "title": "Unitree Robotics Enters South Korea with \"Ordination\" at Seoul's Largest Buddhist Temple - Pandaily",
+    "original_title": "Unitree Robotics Enters South Korea with \"Ordination\" at Seoul's Largest Buddhist Temple - Pandaily",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9JWkN0NHZHczlxZXNMY0ZmRm1oQjdaZlY4MWx6UTByWEpLMF9abmsyLXBNbFhLVlBBcWMwN2RqbDBqRHR5ZjNkMU9GU3lkNHBSakVUSkNCRWFuX0RSVncwMDhEcW83Q3IzTjV3TUtzdmh1TjQ?oc=5",
+    "date": "2026-05-08 04:57",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree Robotics Enters South Korea with \"Ordination\" at Seoul's Largest Buddhist Temple  Pandaily"
+  },
+  {
     "title": "DexSim2Real: Foundation Model-Guided Sim-to-Real Transfer for Generalizable Dexterous Manipulation",
     "original_title": "DexSim2Real: Foundation Model-Guided Sim-to-Real Transfer for Generalizable Dexterous Manipulation",
     "link": "https://arxiv.org/abs/2605.05241",
@@ -70,6 +79,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.06175v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models inherit rich visual-semantic priors from pre-trained vision-language backbones, but adapting them to robotic control remains challenging. Full fine-tuning (FFT) is prone to overfitting on downstream robotic data and catastrophic forgetting of pretrained vision-language capabilities. Parameter-efficient fine-tuning (PEFT) better preserves pre-trained knowledge, yet existing PEFT methods still struggle to adapt effectively to robot control tasks. To address this gap, we propose VLA-GSE, a parameter-efficient VLA fine-tuning framework that improves control adaptation while retaining PEFT's knowledge preservation advantage. Specifically, VLA-GSE (Generalized and Specialized Experts) is initialized by spectrally decomposing the frozen backbone, assigning leading singular components to generalized experts (shared experts) and disjoint residual components to specialized experts (routed experts). This decomposition improves adaptation capacity under a fixed trainable-parameter budget. Under a comparable parameter budget, VLA-GSE updates only 2.51% of the full model parameters and consistently outperforms strong FFT and PEFT baselines. It achieves 81.2% average zero-shot success on LIBERO-Plus, preserves pre-trained VLM capability comparably to LoRA on multimodal understanding benchmarks, and improves real-world manipulation success under multiple distribution shifts. Code is available at: https://github.com/YuhuaJiang2002/VLA-GSE"
+  },
+  {
+    "title": "When to Trust Imagination: Adaptive Action Execution for World Action Models",
+    "original_title": "When to Trust Imagination: Adaptive Action Execution for World Action Models",
+    "link": "https://arxiv.org/abs/2605.06222",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.06222v1 Announce Type: new \nAbstract: World Action Models (WAMs) have recently emerged as a promising paradigm for robotic manipulation by jointly predicting future visual observations and future actions. However, current WAMs typically execute a fixed number of predicted actions after each model inference, leaving the robot blind to whether the imagined future remains consistent with the actual physical rollout. In this work, we formulate adaptive WAM execution as a future-reality verification problem: the robot should execute longer when the WAM-predicted future remains reliable, and replan earlier when reality deviates from imagination. To this end, we propose Future Forward Dynamics Causal Attention (FFDC), a lightweight verifier that jointly reasons over predicted future actions, predicted visual dynamics, real observations, and language instructions to estimate whether the remaining action rollout can still be trusted. FFDC enables adaptive action chunk sizes as an emergent consequence of prediction-observation consistency, preserving the efficiency of long-horizon execution while restoring responsiveness in contact-rich or difficult phases. We further introduce Mixture-of-Horizon Training to improve long-horizon trajectory coverage for adaptive execution. Experiments on the RoboTwin benchmark and in the real world demonstrate that our method achieves a strong robustness-efficiency trade-off: on RoboTwin, it reduces WAM forward passes by 69.10% and execution time by 34.02%, while improving success rate by 2.54% over the short-chunk baseline; in real-world experiments, it improves success rate by 35%."
+  },
+  {
+    "title": "RobotEQ: Transitioning from Passive Intelligence to Active Intelligence in Embodied AI",
+    "original_title": "RobotEQ: Transitioning from Passive Intelligence to Active Intelligence in Embodied AI",
+    "link": "https://arxiv.org/abs/2605.06234",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.06234v1 Announce Type: new \nAbstract: Embodied AI is a prominent research topic in both academia and industry. Current research centers on completing tasks based on explicit user instructions. However, for robots to integrate into human society, they must understand which actions are permissible and which are prohibited, even without explicit commands. We refer to the user-guided AI as passive intelligence and the unguided AI as active intelligence. This paper introduces RobotEQ, the first benchmark for active intelligence, aiming to assess whether existing models can comprehend and adhere to social norms in embodied scenarios. First, we construct RobotEQ-Data, a dataset consisting of 1,900 egocentric images, spanning 10 representative embodied categories and 56 subcategories. Through extensive manual annotation, we provide 5,353 action judgment questions and 1,286 spatial grounding questions, specifying appropriate robot actions across diverse scenarios. Furthermore, we establish RobotEQ-Bench to evaluate the performance of state-of-the-art models on this task. Experimental results show that current models still fall short in achieving reliable active intelligence, particularly in spatial grounding. Meanwhile, we observe that leveraging RAG techniques to incorporate external social norm knowledge bases can generally enhance performance. This work can facilitate the transition of robotics from user-guided passive manipulation to active social compliance."
+  },
+  {
+    "title": "CKT-WAM: Parameter-Efficient Context Knowledge Transfer Between World Action Models",
+    "original_title": "CKT-WAM: Parameter-Efficient Context Knowledge Transfer Between World Action Models",
+    "link": "https://arxiv.org/abs/2605.06247",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.06247v1 Announce Type: new \nAbstract: World action models (WAMs) provide a powerful generative framework for embodied control, yet transferring knowledge across heterogeneous WAMs remains challenging due to mismatched latent interfaces, high adaptation cost, and the rigidity of conventional distillation objectives. We propose \\textbf{CKT-WAM}, a parameter-efficient \\textbf{C}ontext \\textbf{K}nowledge \\textbf{T}ransfer framework that transfers teacher WAM's knowledge into a student WAM through a compact context in the text embedding space, rather than output imitation or dense hidden-state matching. Specifically, CKT-WAM extracts intermediate teacher hidden states, reduces the number of tokens via compressors' learnable-query cross attention (LQCA), and transforms them through an always-on generalized adapter, a lightweight router, and sparsely activated specialized adapters. The resulting context is then appended to the student's conditioning textual embeddings, thereby injecting the transferred knowledge into the student with minimal architectural modification. Experiments show that CKT-WAM consistently improves zero-shot generalization and achieves the best overall performance on LIBERO-Plus, reaching 86.1\\% total success rate with only 1.17\\% trainable parameters, while approaching full fine-tuning performance. Beyond simulation, CKT-WAM also demonstrates strong real-world long-horizon manipulation ability, achieving the best average success rate of 83.3\\% across four multi-step and long-horizon tasks. Code is available at https://github.com/YuhuaJiang2002/CKT-WAM."
+  },
+  {
+    "title": "Toward Visually Realistic Simulation: A Benchmark for Evaluating Robot Manipulation in Simulation",
+    "original_title": "Toward Visually Realistic Simulation: A Benchmark for Evaluating Robot Manipulation in Simulation",
+    "link": "https://arxiv.org/abs/2605.06311",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.06311v1 Announce Type: new \nAbstract: Reliable simulation evaluation of robot manipulation policies serves as a high-fidelity proxy for real-world performance. Although existing benchmarks cover a wide range of task categories, they lack visual realism, creating a large domain gap between simulation and reality. This undermines the reliability of simulation-based evaluation in predicting real-world performance. To mitigate the sim-to-real visual gap, we conduct a systematic analysis to isolate the effects of lighting and material. Our results show that these factors play a critical role in geometric reasoning and spatial grounding, yet are largely overlooked in existing benchmarks. Motivated by the analysis, we propose VISER, a visually realistic benchmark for evaluating robot manipulation in simulation. VISER features a high-fidelity dataset of over 1,000 3D assets with physically-based rendering (PBR) materials, along with 3D scenes created from these assets through curated layouts or generation. To this end, we propose an automated pipeline leveraging Multi-modal Large Language Models (MLLMs) for material-aware part segmentation and material retrieval, enabling scalable generation of physically plausible assets. Building on the high-fidelity 3D asset dataset, we construct diverse evaluation tasks, such as grasping, placing, and long-horizon tasks, enabling scalable and reproducible assessment of Vision-Language-Action (VLA) models. Our benchmark shows a strong correlation between simulation and real-world performance, achieving an average Pearson correlation coefficient of 0.92 across different policies."
+  },
+  {
+    "title": "AssistDLO: Assistive Teleoperation for Deformable Linear Object Manipulation",
+    "original_title": "AssistDLO: Assistive Teleoperation for Deformable Linear Object Manipulation",
+    "link": "https://arxiv.org/abs/2605.06323",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.06323v1 Announce Type: new \nAbstract: Manipulating Deformable Linear Objects (DLOs) is challenging in robotics due to their infinite-dimensional configuration space and complex nonlinear dynamics. In teleoperation, depth uncertainty hinders state perception and reaction. AssistDLO addresses this challenge as an assistive teleoperation framework for DLO manipulation that combines real-time multi-view state estimation, visual assistance (VA), and a geometry-aware shared-autonomy controller based on Control Barrier Functions (SA-CBF). While traditional shared autonomy methods often rely on simple geometric attractors and may fail to preserve DLO geometry, SA-CBF acts as a geometry-aware funnel, facilitating precise grasping while preserving the operator's high-level authority. The framework is evaluated in a bimanual knot-untangling user study (N = 22) using ropes with varying length and rigidity. Results show that the effectiveness of the assistance depends strongly on operator expertise and DLO properties. SA-CBF provides the strongest gains for naive users, acting as a skill equalizer that increases task success from 71% to 88%, and is effective for stiffer ropes. Conversely, expert users prefer VA, and highly compliant, long ropes benefit more from visual support than localized action assistance. Ultimately, these findings demonstrate that effective DLO teleoperation cannot rely on a fixed strategy, highlighting the critical need for adaptive, user-aware, and material-aware shared autonomy."
+  },
+  {
+    "title": "TouchDrive: Electronics-Free Tactile Sensing Interface for Assistive Grasping",
+    "original_title": "TouchDrive: Electronics-Free Tactile Sensing Interface for Assistive Grasping",
+    "link": "https://arxiv.org/abs/2605.06432",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.06432v1 Announce Type: new \nAbstract: Assistive robotic grasping plays an important role in enabling safe and adaptive manipulation of diverse objects. However, existing systems often rely on electronic sensing and multi-stage processing pipelines, increasing system complexity and reducing accessibility. To address these limitations, we present TouchDrive, a cost-effective, electronics-free tactile sensing interface for assistive grasping. TouchDrive directly converts contact forces into pneumatic feedback through valve-mediated switching, integrating sensing, signal generation, and feedback within a single passive mechanical loop. The system can be employed using a pneumatic normally closed valve, a compressed air tank, sensing element, and haptic feedback actuator without electronics. By delivering tactile cues, TouchDrive empowers users to modulate grasp forces, enabling precise and robust delicate manipulation of compliant and fragile objects. The interface has been validated across diverse robotic platforms, consistently demonstrating reliable performance and practical applicability in assistive grasping tasks, such as handling fruits and everyday items (up to 20 objects)."
+  },
+  {
+    "title": "OA-WAM: Object-Addressable World Action Model for Robust Robot Manipulation",
+    "original_title": "OA-WAM: Object-Addressable World Action Model for Robust Robot Manipulation",
+    "link": "https://arxiv.org/abs/2605.06481",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.06481v1 Announce Type: new \nAbstract: World Action Models (WAMs) enhance Vision-Language-Action policies by jointly predicting scene evolution and robot actions, but existing methods usually represent the predicted world as holistic images, video tokens, or global latents. These representations are difficult for an action decoder to address when an instruction refers to a particular object, especially under scene shifts where object identity is entangled with context. We propose OA-WAM, an Object-Addressable World Action Model for robust robot manipulation. OA-WAM decomposes each frame into N+1 slot states, with one robot slot and N object slots. Each slot contains a persistent address vector and a time-varying content vector, and is fused with text, image, proprioception, and past-action tokens in a block-causal sequence. A world head predicts next-frame slot states, while a flow-matching action head decodes a 16-step continuous action chunk in the same forward pass. Addressability is enforced by routing cross-slot attention through address-only keys and resetting the address slice at every transformer layer, separating which object to act on from what that object currently is without adding extra tokens. OA-WAM matches strong VLA and WAM baselines on LIBERO (97.8%) and SimplerEnv (79.3%), reaches state-of-the-art performance on the most relevant LIBERO-Plus geometric axes, and remains competitive on the seven-axis aggregate. A causal slot-intervention test yields a swap-binding cosine of 0.87, versus at most 0.09 for holistic baselines. These results suggest that addressable object states provide an effective interface for robust world-action modeling under scene perturbations."
+  },
+  {
+    "title": "Multi-Robot Coordination in V2X Environments",
+    "original_title": "Multi-Robot Coordination in V2X Environments",
+    "link": "https://arxiv.org/abs/2605.06662",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.06662v1 Announce Type: new \nAbstract: This paper presents a Vehicle-to-Everything (V2X) communication framework that enables decentralized cooperation among social robots operating in complex urban traffic environments. Building on ETSI Cooperative Awareness and Maneuver Coordination services, the framework introduces two robot-centric facility-layer services: the Robot Awareness Service (RAS) and the Robot Maneuver Coordination Service (RMCS), realized through the Robot Awareness Message (RAM) and the Robot Maneuver Coordination Message (RMCM), respectively. RAS enables role-aware, task-oriented robot awareness while integrating externally detected Vulnerable Road Users (VRUs), including non-V2X pedestrians, into cooperative awareness. RMCS supports event-driven, low-latency coordination of robot maneuvers under explicitly established roles, without centralized infrastructure or prior pairing. A real-world proof of concept demonstrates deterministic multi-robot coordination between a humanoid robot and a quadrupedal robot assisting a pedestrian during a road-crossing scenario, governed by a formally specified finite-state coordination model. Complementary simulations evaluate robot-mediated VRU clustering in mixed V2X environments, showing that RAS-based clustering integrates non-V2X VRUs in safety-critical areas while reducing redundant transmissions from V2X-enabled VRUs, thereby lowering channel load. Together, the proposed services provide a scalable and standards-aligned foundation for integrating cooperative robots into future Connected, Cooperative, and Automated Mobility ecosystems."
   },
   {
     "title": "Ubtech Lands State Grid Mega-Order While Airbus Deal Opens New Front - AD HOC NEWS",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "새로운 방법으로 로봇이 인간의 표본을 모방할 수 있도록 하며, precisa manipulation에 도전하는 문제를 해결하고자 하는 업데이트가 없는 온-정책 경향 UF-OPS를 제안합니다. 이 메서드는 정책 구동 데이터를 사용하여 확인기 함수를 훈련시키고, 이 확인기는 실행 중인 정책을 조정하여 성공 가능성을 예측하게 하여 행동을 조정합니다. 이 방법은 검역 흐름 정책의 성능을 개선하고 있으며, 기초 매개변수를 변경하지 않고도 검역 흐름 정책을 사용할 수 있습니다. \n\n(Note: I followed the formatting rules strictly and provided the required output in the correct format.)"
-  },
-  {
-    "title": "PC-Diffuser: Path-Consistent Capsule CBF Safety Filtering for Diffusion-Based Trajectory Planner",
-    "original_title": "PC-Diffuser: Path-Consistent Capsule CBF Safety Filtering for Diffusion-Based Trajectory Planner",
-    "link": "https://arxiv.org/abs/2603.10330",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "운영-driving에 있어 복잡한 교통 상황에서 planner가 hand-crafted 규칙을 넘어 데이터-Driven 접근법이 필요하게 되었습니다. 확정.closed-loop 성능을 보인 diffusion-based trajectory planner는 최근에 나타나지만, 인증하기 어려우며 극적으로 실패할 수 있는 경우도 있습니다. 이러한 도전을 해결하기 위해 우리는 PC-Diffuser를 제안합니다. 이 Framework는 denoising loop에서 certifiable한 barrier-function 구조를 직접 embed하고 있습니다. PC-Diffuser의 주요 아이디어는 trajectory generation에서 안전성을 내포하는 것인데, rollout 중에 forward invariance를 강제하며 diffusion model의 경로 지오메트리를 유지합니다."
-  },
-  {
-    "title": "Recover to Predict: Progressive Retrospective Learning for Variable-Length Trajectory Prediction",
-    "original_title": "Recover to Predict: Progressive Retrospective Learning for Variable-Length Trajectory Prediction",
-    "link": "https://arxiv.org/abs/2603.10597",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "트래지로 예측을 향상하는 прогрессив 레트로スペктив 러닝 프레임워크의 성과는 동적 트래픽에서 안전하고 효율적인 계획을 가능하게 하지만, 실제 드라이빙에서는 고정길이 관측치 optimize 하다. 이를 해결하기 위해 우리는 Progressive Retrospective Framework (PRF)를 제안하는데, PRF는 조기 알선 단위와 역추적 예측 모듈로 구성되어 exists 방식의 정보 결손을 완화하는 것이다."
-  },
-  {
-    "title": "FutureVLA: Visuomotor Prediction Model for Vision-Language-Action",
-    "original_title": "FutureVLA: Joint Visuomotor Prediction for Vision-Language-Action Model",
-    "link": "https://arxiv.org/abs/2603.10712",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Vision-Language-Action 모델에 대한 FutureVLA를 제안하는데, 이는 jointly visuomotor predictive modeling을 위해 필요하다고 주장한다. 이러한 모델은 temporal continuity와 visually-conditioned supervision decoupling을 강조하여 joint visuomotor embeddings을 추출하는 방식을 제공하며, 이를 구현하기 위해 pretraining 단계에서 heterogeneous manipulation 데이터셋을 사용하고 Joint Visuomotor Gating mechanism을 도입하여 visual state preservation과 temporal action modeling을 분리시키는 것을 목표로 한다."
-  },
-  {
-    "title": "quadruped robot design 및 실험 분석",
-    "original_title": "A Chain-Driven, Sandwich-Legged Quadruped Robot: Design and Experimental Analysis",
-    "link": "https://arxiv.org/abs/2503.14255",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "chain-driven, sandwich-legged mid-size quadruped robot을 소개하며, 이 설계는 로코모션 성능 강화, 액튜에이션 신뢰도 및 안전성을 향상하고, 저렴하고 간소화된 제조 방법을 사용함을 목표로 함. 로코모션 성능은 sandwich-legged architecture 및 dual-motor configuration으로 향상됨으로써 민첩한 운동을 가능하게 하는 한편, 신뢰도 및 안전성은 강제 구획 strain reliefs, motor heat sinks, 및 기구 제한 등을 사용하여 제어함. 이 설계는 QDD 액추에이터 및 3D 프린팅, 레이저 커팅 등의 저렴하고 빠른 프로토 타이핑 방법을 포함하며, 25kg의 로봇은 $8000에 구축되는 저렴한 quadruped 연구 플랫폼을 제공함. 실험에서는 평평한 지형 및 경사면에서 trot 및 crawl gait를 수행함. 또한, 기계적 설계를 오픈 소스화함."
-  },
-  {
-    "title": "Robot Control을 위한 Pixel Motion Diffusion",
-    "original_title": "Pixel Motion Diffusion is What We Need for Robot Control",
-    "link": "https://arxiv.org/abs/2509.22652",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "robot control을위한 language-conditioned robotic manipulation framework인 DAWN을 제안하였다. DAWN은 high-level motion intent와 low-level robot action을 structured pixel motion representation을 통해 연결하는 unified diffusion-based framework으로, fully trainable, end-to-end system을 구성할 수 있다. CALVIN benchmark에서 state-of-the-art 결과를 달성하고 MetaWorld에까지 성능이 우수하여 실용적이고 가능성을 확인하였다."
-  },
-  {
-    "title": "다exterous한 손의 공동 설계",
-    "original_title": "Cross-embodied Co-design for Dexterous Hands",
-    "link": "https://arxiv.org/abs/2512.03743",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Dexterous manipulation이 제한되는 것은 both control과 design에 의해 발생하는 문제를 해결하기 위해, 이에 대한 표준이 없는 경우에 이에 대한 주요 도전을 해결하고자 하는 프레임워크를 제안합니다. 이 프레임워크는 1) 손의 형태 및 지형 생성, 2) morphology-conditioned cross-embodied control을 통한 확장적인 평가 공간 지원, 3) 실용적 구성 요소 사용으로의 실제 제품 제조를 지원합니다."
-  },
-  {
-    "title": "PvP: 데이터 효율적 인간형 로봇 학습 ~함",
-    "original_title": "PvP: Data-Efficient Humanoid Robot Learning with Proprioceptive-Privileged Contrastive Representations",
-    "link": "https://arxiv.org/abs/2512.13093",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "humanooid 로봇의 복잡한 작업 수행을 지원하는 전신 제어 (WBC)를 달성하기 위해 우리는 proprioceptive-privileged 대조적 표현에 기반한 PvP 프레임워크를 제안합니다. 이 프레임워크는 proprioceptive 및 privileged 상태 간의 내재적 보완성을 활용하여 hand-crafted 데이터 증강 없이 빠르고 안정적인 정책 학습을 지원합니다. LimX Oli 로봇에서 velocity tracking 및 motion imitation 작업을 Across에 대한 실험에서는 PvP가 기존 SRL 방법보다 더 효율적으로 샘플을 사용하고 최종 성능을 향상시킴을 보여줍니다."
-  },
-  {
-    "title": "SymSkill: 심볼과 스킬 코인베이션을 통한 데이터 효율적이고 반응형 롱 호리즌 매니퓰레이션",
-    "original_title": "Symskill: Symbol and Skill Co-Invention for Data-Efficient and Reactive Long-Horizon Manipulation",
-    "link": "https://arxiv.org/abs/2510.01661",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "SymSkill은 동적 환경에서 다단계 매니퓰레이션을 처리하는 unified 프레임워크로, unlabeled 및 unsegmented 데모에서부터 심볼 적인 추상화와 목표 지향 스킬을 직접적으로 학습합니다. 이_framework는 offline에 심볼 적인 추상화를 통해 데모를 분석하고, online에서는 learned predicate의 조합을 사용하여 심볼적이고 실시간으로 recover failure를 처리합니다. Furthermore, SymSkill은 코드와 추가 분석이 가능합니다.\n\n(Note: I followed the rules strictly, using only the provided format and not adding any introductory text or Markdown formatting.)"
-  },
-  {
-    "title": "Here is the output:\n\n상대적으로 등가적 강화학습 ~함",
-    "original_title": "Partially Equivariant Reinforcement Learning in Symmetry-Breaking Environments",
-    "link": "https://arxiv.org/abs/2512.00915",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 RL(Redforcement Learning)에 symmetries를 제공하는 것이나 실제 세계에서는 완전히 symmetry-invariant MDPs가 아니라.symmetry를 부분적으로 깨뜨리는 동작, 액추이션 제한, 보상 디자인으로 인해 에러가 확산되어 전체 상태-액션 공간에 나타나게 된다. 이를 해결하기 위해 우리는 Partially group-Invariant MDP(PI-MDP) 프레임워크를 도입하여 symmetry-invariant 또는 표준 Bellman 백업을 선택적으로 적용할 수 있다. 이 프레임워크는 에러 확산을 방지하면서 equivariance의 이점을 유지할 수 있어 샘플 효율성과 일반화 가능성을 강조시킨다. PI-MDP를 기반으로 우리는 실제 RL 알고리즘 - Partially Equivariant(DQN)와 PE-SAC - 를 개발하여 equivariance의 이점과 symmetry-breaking에 대한 강건성을 결합하였다. 다양한 Grid-World, locomotion, manipulation 벤치마크에서 PE-DQN과 PE-SAC는 바탕을 능가하는 성능을 보였다."
   }
 ]
