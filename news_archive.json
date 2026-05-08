@@ -1,5 +1,86 @@
 [
   {
+    "title": "DexSim2Real: Foundation Model-Guided Sim-to-Real Transfer for Generalizable Dexterous Manipulation",
+    "original_title": "DexSim2Real: Foundation Model-Guided Sim-to-Real Transfer for Generalizable Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2605.05241",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.05241v1 Announce Type: new \nAbstract: Sim-to-real transfer remains a critical bottleneck for deploying dexterous manipulation policies learned in simulation to real-world robots. Existing approaches rely on manually designed domain randomization or task-specific adaptation, limiting their generalizability across diverse manipulation scenarios. We present DexSim2Real, an integrated framework that leverages vision-language foundation models to bridge the sim-to-real gap for dexterous manipulation. Our system combines three components: (1) Foundation Model-Guided Domain Randomization (FM-DR), which uses a vision-language model as a visual realism critic to optimize simulation parameters via closed-loop CMA-ES, complementing text-based approaches like DrEureka with direct visual feedback; (2) a Tactile-Visual Cross-Attention Policy (TVCAP) that adapts cross-attention visuo-tactile fusion to zero-shot sim-to-real RL; and (3) a Progressive Skill Curriculum (PSC) that builds on LLM-based task decomposition with a difficulty scheduler tailored to contact-rich dexterous tasks. Extensive experiments on six challenging manipulation tasks with blinded evaluation demonstrate that DexSim2Real achieves a 78.2% average real-world success rate, outperforming DrEureka and DeXtreme while reducing the sim-to-real performance gap to only 8.3%."
+  },
+  {
+    "title": "Contact-Free Grasp Stability Prediction with In-Hand Time-of-Flight Sensors",
+    "original_title": "Contact-Free Grasp Stability Prediction with In-Hand Time-of-Flight Sensors",
+    "link": "https://arxiv.org/abs/2605.05461",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.05461v1 Announce Type: new \nAbstract: Current approaches to grasp planning for robotics demonstrate high success rates, but degrade with noisy sensors and other factors. Previous works have proposed tactile-based grasp stability classifiers to detect failures, but these approaches rely on making contact and grasping the object to do so. We propose a contact-free grasp stability predictor using multi-zone time-of-flight sensors mounted in the distal links of a gripper. Our method, as it does not require grasping the object to make a prediction, significantly speeds up the stability classification process, cycling at 15 Hz. We collected over 2,500 real-world grasps across 15 objects to train a classifier. Additionally, we conducted grasp attempts over six additional unseen objects, three for validation and model selection, and three for model testing. Our approach demonstrated strong classification performance, with an accuracy of 85.5% on validation and 86.0% on test objects."
+  },
+  {
+    "title": "On the Emergence of Pendular Structure in Multi-Contact Locomotion",
+    "original_title": "On the Emergence of Pendular Structure in Multi-Contact Locomotion",
+    "link": "https://arxiv.org/abs/2605.05707",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.05707v1 Announce Type: new \nAbstract: LIPM is everywhere in legged-locomotion control, but almost always as a modeling choice rather than as something the\n  controller's cost actually prefers. This note tries to make that link more explicit. Working from a small centroidal\n  OCP that penalizes the rate of angular momentum, we look at what its optimum tends to look like. Three things come\n  out. With full-rank stance, the optimum drifts toward a pendular force pattern at a rate determined by the SVD of the\n  moment Jacobian; the constant is set by foot-span geometry and matches the experiments to within 16%. With N=2 stance,\n  as in trot, the friction cone introduces a lower bound on $\\|\\dot{H}_G\\|$ that no amount of weight tuning fixes; we\n  also see a non-smooth feasibility kink at a critical horizontal acceleration that we can write in closed form. Adding\n  a task term that asks for a nonzero $\\dot{H}_G$ moves the optimum off the pendular set in a predictable way. None of\n  this is far from the classical ZMP/DCM picture. We test these claims on a point-mass quadruped and on the Unitree Go1\n  in MuJoCo (open-loop QP and a torque-level closed-loop controller), and we note where the asymptotic story stops being\n  a good description of what the closed loop actually does."
+  },
+  {
+    "title": "MaMi-HOI: Harmonizing Global Kinematics and Local Geometry for Human-Object Interaction Generation",
+    "original_title": "MaMi-HOI: Harmonizing Global Kinematics and Local Geometry for Human-Object Interaction Generation",
+    "link": "https://arxiv.org/abs/2605.05756",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.05756v1 Announce Type: new \nAbstract: Generating realistic 3D Human-Object Interactions (HOI) is a fundamental task for applications ranging from embodied AI to virtual content creation, which requires harmonizing high-level semantic intent with strict low-level physical constraints. Existing methods excel at semantic alignment, however, they struggle to maintain precise object contact. We reveal a key finding termed \\textit{Geometric Forgetting}: as diffusion model depth increases, semantic feature tend to overshadow object geometry feature, causing the model to lose its perception to object geometry. To address this, we propose MaMi-HOI, a hierarchical framework reconciling \\textbf{Ma}cro-level kinematic fluidity with \\textbf{Mi}cro-level spatial precision. First, to counteract geometric forgetting, we introduce the Geometry-Aware Proximity Adapter (GAPA), which explicitly re-injects dense object details to perform residual snapping corrections for precise contact. Nevertheless, such aggressive local enforcement can disrupt global dynamics, leading to robotic stiffness. In response, we introduce the Kinematic Harmony Adapter (KHA), which proactively aligns whole-body posture with spatial objectives, ensuring the skeleton actively accommodates constraints without compromising naturalness. Extensive experiments validate that MaMi-HOI simultaneously achieves natural motion and precise contact. Crucially, it extends generation capabilities to long-term tasks with complex trajectories, effectively bridging the gap between global navigation and high-fidelity manipulation in 3D scenes. Code is available at https://github.com/DON738110198/MaMi-HOI.git"
+  },
+  {
+    "title": "Cycle-resolved Cephalopod-Inspired Pulsed-Jet Robot With High-Volume Expulsion and Drag-Reduced Gliding",
+    "original_title": "Cycle-resolved Cephalopod-Inspired Pulsed-Jet Robot With High-Volume Expulsion and Drag-Reduced Gliding",
+    "link": "https://arxiv.org/abs/2605.05875",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.05875v1 Announce Type: new \nAbstract: Cephalopod pulsed-jet locomotion is not a single isolated expulsion event, but a coordinated cycle involving jet expulsion, passive gliding, and mantle refilling. Inspired by this cycle-resolved biological strategy, this paper presents a cephalopod-inspired pulsed-jet robot with a rigid-soft hybrid origami mantle that enables large, actively driven, and geometry-guided body deformation. The proposed mantle integrates rigid folding panels with a compliant silicone framework, allowing a 75% effective cavity-volume reduction during expulsion and reducing the projected cross-sectional drag area by approximately 75.7% in the contracted gliding configuration. Using this platform, we formulate a cycle-resolved framework to separately investigate how expelled volume, glide duration, and refill pathway influence whole-cycle locomotion performance. Experiments show that the robot reaches a peak speed of approximately 0.5 m/s (3.8 BL/s) and an average speed exceeding 0.2 m/s (1.5 BL/s) within the first jetting cycle. The results further demonstrate the roles of high expelled-volume-ratio contraction in speed generation, reduced-drag-area gliding under different glide durations, and mantle-aperture-inspired passive inlet valves in assisting refill. This work provides both a robotic implementation of actively deformable cephalopod-like jet propulsion and a unified experimental platform for studying expulsion-gliding-refilling dynamics in pulsed-jet locomotion."
+  },
+  {
+    "title": "Generating Roadside LiDAR Datasets from Vehicle-Side Datasets via Novel View Synthesis",
+    "original_title": "Generating Roadside LiDAR Datasets from Vehicle-Side Datasets via Novel View Synthesis",
+    "link": "https://arxiv.org/abs/2605.05897",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.05897v1 Announce Type: new \nAbstract: Intelligent Transportation Systems (ITS) require reliable environmental perception to support safe and efficient transportation. With the rapid development of Vehicle-to-everything (V2X), roadside perception has become an effective means to extend sensing coverage and improve traffic safety. However, the scarcity of large-scale annotated roadside LiDAR datasets poses a major challenge for training high-performance roadside perception models. In this paper, we introduce Vehicle-to-Roadside LiDAR Synthesis (VRS), a data synthesis framework that generates labeled roadside LiDAR datasets from vehicle-side datasets via LiDAR novel view synthesis. To mitigate the vehicle-to-roadside domain gap, VRS employs vehicle point cloud completion to compensate for missing geometry in vehicle-side observations, and introduces an occupancy-based visibility constraint to handle large viewpoint changes during cross-view rendering. The proposed framework enables flexible multi-view rendering for scalable roadside data generation. Extensive experiments on roadside 3D object detection demonstrate that the synthesized data effectively complements real roadside data, mitigates the limitations of limited real-world roadside data, and improves generalization to unseen roadside viewpoints."
+  },
+  {
+    "title": "DexSynRefine: Synthesizing and Refining Human-Object Interaction Motion for Physically Feasible Dexterous Robot Actions",
+    "original_title": "DexSynRefine: Synthesizing and Refining Human-Object Interaction Motion for Physically Feasible Dexterous Robot Actions",
+    "link": "https://arxiv.org/abs/2605.05925",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.05925v1 Announce Type: new \nAbstract: Learning dexterous manipulation from human-object interaction (HOI) data is a scalable alternative to teleoperation, but HOI demonstrations are sparse and provide only kinematic motion that is not directly executable under embodiment mismatch and contact-rich dynamics. We present DexSynRefine, a framework with three coupled components: HOI-MMFP, a task- and object-initial-state-conditioned extension of motion manifold primitives that synthesizes coordinated hand-object trajectories from sparse HOI demonstrations; a task-space residual RL policy that physically grounds the synthesized reference while inheriting its kinematic structure; and a contact-and-dynamics adaptation module that enables sim-to-real transfer from proprioceptive history. Across five dexterous manipulation tasks spanning pick-and-place, tool use, and object reorientation, our task-space residual policy outperforms prior action-representation baselines in simulations and transfers to a real robot on all five tasks, improving over kinematic retargeting by 50-70 percentage points."
+  },
+  {
+    "title": "VLA-GSE: Boosting Parameter-Efficient Fine-Tuning in VLA with Generalized and Specialized Experts",
+    "original_title": "VLA-GSE: Boosting Parameter-Efficient Fine-Tuning in VLA with Generalized and Specialized Experts",
+    "link": "https://arxiv.org/abs/2605.06175",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.06175v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models inherit rich visual-semantic priors from pre-trained vision-language backbones, but adapting them to robotic control remains challenging. Full fine-tuning (FFT) is prone to overfitting on downstream robotic data and catastrophic forgetting of pretrained vision-language capabilities. Parameter-efficient fine-tuning (PEFT) better preserves pre-trained knowledge, yet existing PEFT methods still struggle to adapt effectively to robot control tasks. To address this gap, we propose VLA-GSE, a parameter-efficient VLA fine-tuning framework that improves control adaptation while retaining PEFT's knowledge preservation advantage. Specifically, VLA-GSE (Generalized and Specialized Experts) is initialized by spectrally decomposing the frozen backbone, assigning leading singular components to generalized experts (shared experts) and disjoint residual components to specialized experts (routed experts). This decomposition improves adaptation capacity under a fixed trainable-parameter budget. Under a comparable parameter budget, VLA-GSE updates only 2.51% of the full model parameters and consistently outperforms strong FFT and PEFT baselines. It achieves 81.2% average zero-shot success on LIBERO-Plus, preserves pre-trained VLM capability comparably to LoRA on multimodal understanding benchmarks, and improves real-world manipulation success under multiple distribution shifts. Code is available at: https://github.com/YuhuaJiang2002/VLA-GSE"
+  },
+  {
+    "title": "Ubtech Lands State Grid Mega-Order While Airbus Deal Opens New Front - AD HOC NEWS",
+    "original_title": "Ubtech Lands State Grid Mega-Order While Airbus Deal Opens New Front - AD HOC NEWS",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSWk1SjZzUHJ6VWtZZEVFNTBnMF9rczQwelN1VVlrVmFrNmF1TDFTU0d1N2MwWXI2am5NZ0lxRzc4eGZvZkhSd1IzZWV6THRnSlhabGE3Y3J1VHJwQXJ5bk1kdjVqUl9IeFM5ZzZOeFdnZGFnWW5oTjJwMVFBb0Z1MFRrb3ZVeHB4U3lONjdKSjh1MUlvM1RwamppZDR2NHJOdHNWMXdnSmVLby1kX21ORkZTeDhEcE0wbkQxMjJJNmdncG1Ebmc?oc=5",
+    "date": "2026-05-08 03:51",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Ubtech Lands State Grid Mega-Order While Airbus Deal Opens New Front  AD HOC NEWS"
+  },
+  {
     "title": "South Korean temple ordains China’s Unitree G1 humanoid robot in world-first Buddhist ceremony - TechNode",
     "original_title": "South Korean temple ordains China’s Unitree G1 humanoid robot in world-first Buddhist ceremony - TechNode",
     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRm5UMXU3d0x3ejcxckQwUDdNblA5LTkyRVYxN0Y0VU1TbDZWaXpuOFZIbmdvcm1SaGtoN3lEVXM2Uk80UE5lb2NJMlZOTjI4b1JueE45QTZXVUNhVmtWUzB1Q0V5cEc4VVFZRVB6UjRtdnRzWkE0ZlNmOVFiZDJqQ3BrbklEYzZIRVc2R0dwdFc0MThaQTZSeldOV3pBODRRVGFQOTlLYmJGRFhpMTRRT0xDQ1JBVnRPV1MtcnlIbWRYMkJn?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "한국의 RL(Redforcement Learning)에 symmetries를 제공하는 것이나 실제 세계에서는 완전히 symmetry-invariant MDPs가 아니라.symmetry를 부분적으로 깨뜨리는 동작, 액추이션 제한, 보상 디자인으로 인해 에러가 확산되어 전체 상태-액션 공간에 나타나게 된다. 이를 해결하기 위해 우리는 Partially group-Invariant MDP(PI-MDP) 프레임워크를 도입하여 symmetry-invariant 또는 표준 Bellman 백업을 선택적으로 적용할 수 있다. 이 프레임워크는 에러 확산을 방지하면서 equivariance의 이점을 유지할 수 있어 샘플 효율성과 일반화 가능성을 강조시킨다. PI-MDP를 기반으로 우리는 실제 RL 알고리즘 - Partially Equivariant(DQN)와 PE-SAC - 를 개발하여 equivariance의 이점과 symmetry-breaking에 대한 강건성을 결합하였다. 다양한 Grid-World, locomotion, manipulation 벤치마크에서 PE-DQN과 PE-SAC는 바탕을 능가하는 성능을 보였다."
-  },
-  {
-    "title": "Learning Adaptive Force Control for Contact-Rich Sample Scraping with Heterogeneous Materials",
-    "original_title": "Learning Adaptive Force Control for Contact-Rich Sample Scraping with Heterogeneous Materials",
-    "link": "https://arxiv.org/abs/2603.10979",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇화된 과학기술 연구의 요구 증가에 따라 고도 AI-Driven 로보틱스 개발이 필요함임. 이를 달성하는 데는 다양한 화학물질의 처리를 포함하여 인공적으로 발견을 가속화하는 것이 중요함. 이 논문은 adaptable control framework을 제안하여 robot manipulation을 개선함."
-  },
-  {
-    "title": "MAVEN",
-    "original_title": "MAVEN: A Meta-Reinforcement Learning Framework for Varying-Dynamics Expertise in Agile Quadrotor Maneuvers",
-    "link": "https://arxiv.org/abs/2603.10714",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Quadrotor 동역학 expertise를 위한 Meta-강화 학습 프레임워크, MAVEN을 발표하였다. 이 프레임워크는 quadrotor 질량 변화와 로터 추진력 손실 등 다양한 동역학 조건에서 한정된 정책으로 고속 수행을 가능하게 한다. 이를 통해 MAVEN은 실내 및 실제 세계에서 성과를 보였다."
-  },
-  {
-    "title": "PlayWorld: 로봇 월드 모델을 自己의 놀이로부터 배워보는 새로운 접근 방식",
-    "original_title": "PlayWorld: Learning Robot World Models from Autonomous Play",
-    "link": "https://arxiv.org/abs/2603.09030",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 월드 모델을 생성하는 데 있어 새로운 접근 방식을 제안합니다. PlayWorld는 자동화된 로봇의 놀이를 통해 월드 모델을 생성하는데, 이를 통해 실제 물리적 상호작용을 포함하는 고해상도 월드 모델을 배워보는 데 성공했습니다. 이 새로운 접근 방식은 기존의 방법보다 더 자연스러운 물리적 상호작용을 포함하여 로봇의 manipulation에 적합한 월드 모델을 생성할 수 있습니다."
-  },
-  {
-    "title": "Few-Shot Adaptation to Non-Stationary Environments via Latent Trend Embedding for Robotics",
-    "original_title": "Few-Shot Adaptation to Non-Stationary Environments via Latent Trend Embedding for Robotics",
-    "link": "https://arxiv.org/abs/2603.10373",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇이 실제 환경에서 작업할 때는 일반적으로 개념 변화에 대응해야 하는데, 이러한 개념 변화는 직접 관찰할 수 없는-latent environmental factor-에 의해 발생한다. 기존의 적응 방법에서는 모델 파라미터를 업데이트하므로, 가상적 잊어질과 고화율을 초래할 우려가 있다. 이 논문에서는 non-stationary environment에서 few-shot adaptation을 위한 Trend ID-based 프레임워크를 제안한다. 모델 파라미터는 고정하고, environmental state를 추정하는 low-dimensional Trend ID를 backpropagation으로 얻는다. per-sample latent variable을 방지하기 위해 우리는 temporal regularization과 state transition model을 도입하여 latent space의 연속적인-evolving-을 강제하게 한다. quantitative food grasping task에서 실험을 통해, learned Trend IDs는 distinct regions of the latent space에 분포하며, unseen environment에 대한 few-shot adaptation이 가능하도록 얻었다. 제안된 프레임워크는 다방면 환경에서 로봇 애플리케이션을 위하여 scaleable하고 해석할 수 있는 해결책을 제공한다."
-  },
-  {
-    "title": "STADA: 자율 주행 요원에 대한仕한 기반 테스트 생성 프레임워크",
-    "original_title": "STADA: Specification-based Testing for Autonomous Driving Agents",
-    "link": "https://arxiv.org/abs/2603.10940",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "자율 주행 요원을 validar하기 전에 실제 세계 배포 이전에 표준적인 접근 방식으로_simulation-based 테스팅이 되었다. 고질의 검증 캠페인은 다양한 정적 환경, 예를 들어 도로, 교차로, 표지, 및 동적 요소, 예를 들어 자동차 및 보행자 등으로 구성된 다채로운 콘텍스트에서 요원을 훈련시킨다. 이에 이를 달성하기 위해 기존 테스트 생성 기술은 템플릿 기반, 수동적으로 구성 또는 랜덤 시나리오 생성에 의존한다. 이러한 방법을 formally specified safety requirements와 결합하면 사람의 노력에 대한 요구 또는 중요한 행동을 놓치게 된다.\n이러한 간극을 addressed하기 위해 STADA, 자율 주행 요원에 대한仕한 기반 테스트 생성 프레임워크를 제안하는데, 이 프레임워크는 temporal logic(LTLf)에서 정의된 formal specification에 따라 scenarios의 공간을 시스템적으로 생성한다. given a specification, STADA는 모든 DISTINCT 초기장면, 다양한 장면들의 연속, 및 specification의 행위를 반영하는 시뮬레이션을 구성하는데, 이에 대한 evaluation은 LTLf specifications formalized in SCENEFLOW에서 3가지 보완적 커버리지 기준으로 수행한 3개의 STADA의 성능을 보여주는데, 이에 따라 STADA는 가장 coarsest criteria에서는 75%의 증가를 나타내며, 가장 finest criteria에서는 2배 higher coverage를 제공한다."
-  },
-  {
-    "title": "-safe-and-optimal-learning-from-preferences-via-weighted-temporal-logic-with-applications-in-robotics-and-formula-1",
-    "original_title": "Safe and Optimal Learning from Preferences via Weighted Temporal Logic with Applications in Robotics and Formula 1",
-    "link": "https://arxiv.org/abs/2511.08502",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "자동제어 시스템이 인간의 피드백을 통해 동작을 조정하는데, 기존 방법들은 안전한 도메인에서 안전을 보장하지 못하는 경우가 많다. 우리는 preferences, 랭킹, 또는 데모네이션을 기반으로 하는 Weighted Signal Temporal Logic (WSTL) 사용하여 학습 문제를 해결하는 새로운 접근 방식을 제안하고 있다. WSTL 학습 문제는 구조적 손실과 로그 변환 절차를 통해 크게 줄이고 Mixed-Integer Linear Program으로 전환할 수 있어, 안전 보장을 지키 còn robotics navigation 및 실제 Formula 1 데이터 실험을 통해 이 방법이 세밀한 선호도를 포착하고 복잡한任務목표를 모델링하는 데 성공함을 보여주었다."
-  },
-  {
-    "title": "PPGuide: Steering Diffusion Policies with Performance Predictive Guidance",
-    "original_title": "PPGuide: Steering Diffusion Policies with Performance Predictive Guidance",
-    "link": "https://arxiv.org/abs/2603.10980",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "robotic manipulation 방지정책 steer fail-safe mode 공개됨. PPGuide는 pre-trained diffusion policy를 inference time에 failure mode에서 steer하는 lightweight framework임. self-supervised process를 사용하여 success or failure와 관련된 observation-action chunk 자동추가하고, 이 데이터를 Performance Predictor로 훈련시킨 후, 실시간 gradient를 제공하여 policy를 더 robust한 액션으로 guide함. PPGuide는 Robomimic 및 MimicGen 벤치마크의 다양한 태스크에서 성능 향상을 보인다."
-  },
-  {
-    "title": "ScanDP: 3D 스캐닝 ~함",
-    "original_title": "ScanDP: Generalizable 3D Scanning with Diffusion Policy",
-    "link": "https://arxiv.org/abs/2603.10390",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "고성능의 3D 스캐닝을 효율적으로 수행하는 데 있어 러닝 기반 3D 스캐닝이 중요한 역할을 수행하고 있습니다. 그러나 최근에는 대규모 트레이닝 데이터를 요구하며 새로운 오브젝트 카테고리에서 일반화에 어려움을 겪는 경우가 많습니다. 이에 우리는 Diffusion Policy를 사용하여 인간과 같은 스캔 전략을 모방하는 3D 스캐닝 프레임워크를 제안합니다. 이를 강조하기 위해 우리는 Occupancy Grid Mapping을採用하여 직접 점구름 처리 대신 오브젝트의 다양한 지형을-handling하는 thing을 목표로 설정했습니다. 또한, 우리는 sphere-based space representation과 path optimization procedure를 결합하여 경로의 안전성과 스캔 효율성을 확보할 수 있습니다. 이 방법은 기존의 Imitation Learning의 제약을 addressed합니다. 우리는 이 방법을 다양한 새로운 오브젝트에 적용하여 성능을 평가하고, 실제 환경에서 안정적으로 작동하는 것을 확인했습니다."
-  },
-  {
-    "title": "Cosmos-H-Surgical: 시각 모델링을 통해 수술 로봇 정책을 비디오에서 학습하는 접근",
-    "original_title": "Cosmos-H-Surgical: Learning Surgical Robot Policies from Videos via World Modeling",
-    "link": "https://arxiv.org/abs/2512.23162",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "수술 로봇의 완전히 자율화에 있어 데이터 빈도는 주요 제약으로 남아있다. 일반화된 집과 산업 manipulation을 가능하게 한 대규모 vision language action(VLA) 모델은 다양한 도메인에서 쌍의 비디오 액션 데이터를 활용하여 뛰어난 일반화 성능을 보였다. 그러나 수술 로봇에 대한 데이터셋이 있을 뿐, 시각 관찰과 정확한 로봇 경ค율이 부족하여 직접적인 이mitation learning 또는 VLA 훈련이 불가능하다. 이 연구에서는 Cosmos-H-Surgical, 수술 물리 AI 세계 모델을 바탕으로 정책 모델을 학습하고, 이를 통해 실제 수술 로봇 플랫폼에서 높은 성능을 보인다."
   }
 ]
