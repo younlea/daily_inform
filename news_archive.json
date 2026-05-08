@@ -153,6 +153,60 @@
     "summary": "arXiv:2605.06662v1 Announce Type: new \nAbstract: This paper presents a Vehicle-to-Everything (V2X) communication framework that enables decentralized cooperation among social robots operating in complex urban traffic environments. Building on ETSI Cooperative Awareness and Maneuver Coordination services, the framework introduces two robot-centric facility-layer services: the Robot Awareness Service (RAS) and the Robot Maneuver Coordination Service (RMCS), realized through the Robot Awareness Message (RAM) and the Robot Maneuver Coordination Message (RMCM), respectively. RAS enables role-aware, task-oriented robot awareness while integrating externally detected Vulnerable Road Users (VRUs), including non-V2X pedestrians, into cooperative awareness. RMCS supports event-driven, low-latency coordination of robot maneuvers under explicitly established roles, without centralized infrastructure or prior pairing. A real-world proof of concept demonstrates deterministic multi-robot coordination between a humanoid robot and a quadrupedal robot assisting a pedestrian during a road-crossing scenario, governed by a formally specified finite-state coordination model. Complementary simulations evaluate robot-mediated VRU clustering in mixed V2X environments, showing that RAS-based clustering integrates non-V2X VRUs in safety-critical areas while reducing redundant transmissions from V2X-enabled VRUs, thereby lowering channel load. Together, the proposed services provide a scalable and standards-aligned foundation for integrating cooperative robots into future Connected, Cooperative, and Automated Mobility ecosystems."
   },
   {
+    "title": "TriRelVLA: Triadic Relational Structure for Generalizable Embodied Manipulation",
+    "original_title": "TriRelVLA: Triadic Relational Structure for Generalizable Embodied Manipulation",
+    "link": "https://arxiv.org/abs/2605.05714",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.05714v1 Announce Type: cross \nAbstract: Vision-language-action (VLA) models perform well on training-seen robotic tasks but struggle to generalize to unseen scenes and objects. A key limitation lies in their implicit visual representations, which entangle object appearance, background, and scene layout. This makes policies sensitive to visual variations. Prior work improves transferability through structured intermediate representations that objectify visual content. However, these representations mainly capture scene semantics instead of action-relevant relations. As a result, action prediction remains tied to appearance statistics. We observe that manipulation actions depend on the object-hand-task relational structure, which governs interactions among task requirements, robot states, and object properties. Based on this observation, we propose TriRelVLA, a triadic relational VLA framework for generalizable embodied manipulation. Our approach consists of three components: 1) We construct explicit object-hand-task triadic representations from multimodal inputs as relational primitives. 2) We build a task-grounded relational graph. Task-guided cross-attention forms nodes, and a relation-aware graph transformer models interactions among them. 3) We perform relation-conditioned action generation. The relational structure is compressed into a bottleneck space and projected into the LLM for action prediction. This triadic relational bottleneck reduces reliance on appearance statistics and enables transfer across scenes, objects, and task compositions. We further introduce a real-world robotic dataset for fine-tuning. Experiments show strong performance on fine-tuned tasks and clear gains in cross-scene, cross-object, and cross-task generalization."
+  },
+  {
+    "title": "AsyncVLA: Asynchronous Flow Matching for Vision-Language-Action Models",
+    "original_title": "AsyncVLA: Asynchronous Flow Matching for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2511.14148",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.14148v2 Announce Type: replace \nAbstract: Vision-language-action (VLA) models have recently emerged as a powerful paradigm for building generalist robots. However, traditional VLA models that generate actions through flow matching (FM) typically rely on rigid and uniform time schedules, i.e., synchronous FM (SFM). Without action context awareness and asynchronous self-correction, SFM becomes unstable in long-horizon tasks, where a single action error can cascade into failure. In this work, we propose asynchronous flow matching VLA (AsyncVLA), a novel framework that introduces temporal flexibility in asynchronous FM (AFM) and enables self-correction in action generation. AsyncVLA breaks from the vanilla SFM in VLA models by generating the action tokens in a non-uniform time schedule with action context awareness. Besides, our method introduces the confidence rater to extract confidence of the initially generated actions, enabling the model to selectively refine inaccurate action tokens before execution. Moreover, we propose a unified training procedure for SFM and AFM that endows a single model with both modes, improving KV-cache utilization. Extensive experiments on robotic manipulation benchmarks demonstrate that AsyncVLA is data-efficient and exhibits self-correction ability. AsyncVLA outperforms existing methods across both simulation and real-world evaluations. Our code is available at https://github.com/YuhuaJiang2002/AsyncVLA."
+  },
+  {
+    "title": "Continually Evolving Skill Knowledge in Vision Language Action Model",
+    "original_title": "Continually Evolving Skill Knowledge in Vision Language Action Model",
+    "link": "https://arxiv.org/abs/2511.18085",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.18085v3 Announce Type: replace \nAbstract: Vision-language-action (VLA) models show promising knowledge accumulation ability from pretraining, yet continual learning in VLA remains challenging, especially for efficient adaptation. Existing continual imitation learning (CIL) methods often rely on additional parameters or external modules, limiting scalability for large VLA models. We propose Stellar VLA, a knowledge-driven CIL framework without increasing network parameters.Two progressively extended variants are designed: T-Stellar for flat task-centric modeling and TS-Stellar for hierarchical task-skill structure.Stellar VLA enables self-evolving knowledge learning by jointly optimizing task representations and a learned knowledge space. We propose a knowledge-guided expert routing mechanism conditioned on knowledge relation and Top-K semantic embeddings, enabling task specialization without increasing model size. Experiments on the LIBERO benchmark show that Stellar VLAs achieve strong performance among both VLA and CIL baselines, using only 1 % data replay. Real-world evaluation on a dual-arm platform with distinct embodiment and scene configurations validates effective knowledge transfer. TS-Stellar excels in hierarchical manipulation, and visualizations reveal robust knowledge retention and task discovery.Project Website: https://stellarvla.github.io/"
+  },
+  {
+    "title": "Information Filtering via Variational Regularization for Robot Manipulation",
+    "original_title": "Information Filtering via Variational Regularization for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2601.21926",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2601.21926v3 Announce Type: replace \nAbstract: Diffusion-based visuomotor policies built on 3D visual representations have achieved strong performance in learning complex robotic skills. However, most existing methods employ an oversized denoising decoder. While increasing model capacity can improve denoising, empirical evidence suggests that it also introduces redundancy and noise in intermediate feature blocks. Crucially, we find that randomly masking backbone features in U-Net or skipping intermediate layers in DiT at inference time (without changing training) can improve performance, confirming the presence of task-irrelevant noise in intermediate features. To this end, we propose Variational Regularization (VR), a plug-and-play module that imposes a context-conditioned Gaussian over the noisy features and applies a KL-divergence regularizer, forming an adaptive information bottleneck. Extensive experiments on three simulation benchmarks, RoboTwin2.0, Adroit, and MetaWorld, show that our approach consistently improves task success rates over the baseline for both DP3-UNet and DP3-DiT, achieving new state-of-the-art results. Real-world experiments further demonstrate that our method performs well in practical deployments."
+  },
+  {
+    "title": "Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching",
+    "original_title": "Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching",
+    "link": "https://arxiv.org/abs/2602.15827",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2602.15827v2 Announce Type: replace \nAbstract: While recent advances in humanoid locomotion have achieved stable walking on varied terrains, capturing the agility and adaptivity of highly dynamic human motions remains an open challenge. In particular, agile parkour in complex environments demands not only low-level robustness, but also human-like motion expressiveness, long-horizon skill composition, and perception-driven decision-making. In this paper, we present Perceptive Humanoid Parkour (PHP), a modular framework that enables humanoid robots to autonomously perform long-horizon, vision-based parkour across challenging obstacle courses. Our approach first leverages motion matching, formulated as nearest-neighbor search in a feature space, to compose retargeted atomic human skills into long-horizon kinematic trajectories. This framework enables the flexible composition and smooth transition of complex skill chains while preserving the elegance and fluidity of dynamic human motions. Next, we train motion-tracking reinforcement learning (RL) expert policies for these composed motions, and distill them into a single depth-based, multi-skill student policy, using a combination of DAgger and RL. Crucially, the combination of perception and skill composition enables autonomous, context-aware decision-making: using only onboard depth sensing and a discrete 2D velocity command, the robot selects and executes whether to step over, climb onto, vault or roll off obstacles of varying geometries and heights. We validate our framework with extensive real-world experiments on a Unitree G1 humanoid robot, demonstrating highly dynamic parkour skills such as climbing tall obstacles up to 1.25m (96% robot height), as well as long-horizon multi-obstacle traversal with closed-loop adaptation to real-time obstacle perturbations."
+  },
+  {
+    "title": "MARVL: Multi-Stage Guidance for Robotic Manipulation via Vision-Language Models",
+    "original_title": "MARVL: Multi-Stage Guidance for Robotic Manipulation via Vision-Language Models",
+    "link": "https://arxiv.org/abs/2602.15872",
+    "date": "2026-05-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.15872v3 Announce Type: replace \nAbstract: Designing dense reward functions is pivotal for efficient robotic Reinforcement Learning (RL). However, most dense rewards rely on manual engineering, which fundamentally limits the scalability and automation of reinforcement learning. While Vision-Language Models (VLMs) offer a promising path to reward design, naive VLM rewards often misalign with task progress, struggle with spatial grounding, and show limited understanding of task semantics. To address these issues, we propose MARVL-Multi-stAge guidance for Robotic manipulation via Vision-Language models. MARVL fine-tunes a VLM for spatial and semantic consistency and decomposes tasks into multi-stage subtasks with task direction projection for trajectory sensitivity. Empirically, MARVL significantly outperforms existing VLM-reward methods on the Meta-World benchmark, demonstrating superior sample efficiency and robustness on sparse-reward manipulation tasks."
+  },
+  {
     "title": "Ubtech Lands State Grid Mega-Order While Airbus Deal Opens New Front - AD HOC NEWS",
     "original_title": "Ubtech Lands State Grid Mega-Order While Airbus Deal Opens New Front - AD HOC NEWS",
     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSWk1SjZzUHJ6VWtZZEVFNTBnMF9rczQwelN1VVlrVmFrNmF1TDFTU0d1N2MwWXI2am5NZ0lxRzc4eGZvZkhSd1IzZWV6THRnSlhabGE3Y3J1VHJwQXJ5bk1kdjVqUl9IeFM5ZzZOeFdnZGFnWW5oTjJwMVFBb0Z1MFRrb3ZVeHB4U3lONjdKSjh1MUlvM1RwamppZDR2NHJOdHNWMXdnSmVLby1kX21ORkZTeDhEcE0wbkQxMjJJNmdncG1Ebmc?oc=5",
@@ -17944,59 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "Generative Robot 정책을 개선하는 DICE-RL 프레임워크 공개됨**\n\n\n\nTranslation: The DICE-RL framework, which uses reinforcement learning as a \"distribution contraction\" operator to refine pre-trained generative robot policies, has been announced.\n\nSummary: The new framework, called Distribution Contractive Reinforcement Learning (DICE-RL), can improve the performance of pre-trained generative robot policies by amplifying high-success behaviors from online feedback. It enables mastery of complex long-horizon manipulation skills directly from high-dimensional pixel inputs in simulation and on a real robot.\n\nNote: I followed the instruction to keep key technical terms and company names in English, using standard Korean transliteration only when widely used."
-  },
-  {
-    "title": "MapGCLR: 지리 공간 대조적 학습된 표현을 사용한 온라인 벡터 HD 맵 구축",
-    "original_title": "MapGCLR: Geospatial Contrastive Learning of Representations for Online Vectorized HD Map Construction",
-    "link": "https://arxiv.org/abs/2603.10688",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "온라인 HD 맵 구축 모델의 벡터ized 특성GRID표현을 개선하기 위해, 겹치는 지리 공간적 BEV 특성GRID사이의 일관성을 강제하는 대조적 손실 함수를 도입하였다. 이를 위해, 주어진 데이터셋 내부의 횡도 분석을 통해 subsidiary 데이터셋 나누기를 생성하고, 조정 가능한 다횡도 요구에 따르도록 하였다. 또한, 동일 모델을 단일 횡도 레이블 데이터에서 지도 학습시키고, broader unlabeled 데이터에 대해 self-supervised 훈련을 수행하여半지도적 접근을 구현하였다. 이 접근은 모든 downstream 태스크에서 상당한 성능 향상을 달성하였으며, 벡터ized 맵 인식 성능과 BEV 특성 공간의 PCA 시각화에 있어도 질적으로 우수함을 나타내었다."
-  },
-  {
-    "title": "가방 열림용 핸들러 개발 ~함",
-    "original_title": "A gripper for flap separation and opening of sealed bags",
-    "link": "https://arxiv.org/abs/2603.10890",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의료기관에서 가장 일반적인 수술 준비 과정을 automate하기 위해 새로 설계된 핸들러를 발표했습니다. 이 핸들러는 고도로柔软한 가방을 열리게 하는 중요한 manipulate primitive를 제공합니다. clinically, nurses는 매시 240개의 가방을 수동으로 열어야 하지만, 이러한 작업은 근골격 질환에 연관이 있습니다. proposed gripper는 active dented-roller fingertip와 compliant fingers를 결합하여 가방의 플랩을 확실하게 잡아내고 열립니다. experimental 결과, 이 핸들러는 가방 플랩과 다른 고도로柔软한 물질을 확실하게 잡아내고 열 수 있습니다."
-  },
-  {
-    "title": "Contact Coverage-Guided Exploration for General-Purpose Dexterous Manipulation",
-    "original_title": "Contact Coverage-Guided Exploration for General-Purpose Dexterous Manipulation",
-    "link": "https://arxiv.org/abs/2603.10971",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 일반적 용도 손 동작 조정에 대한 Contact Coverage-Guided Exploration(CCGE) 알고리즘을 제안합니다. CCGE는 오브젝트 표면점과 정의된 핸드 키포인트의 교집합을_contact state로 나타내어 다양한 새로운 접촉 패턴을 발견하게 합니다. 이 알고리즘은 두 가지 방식으로 사용됩니다: 첫째, 접촉 패턴의 Novelty를 촉진하는 Count-based Contact Coverage Reward, 둘째, 미-explored 접촉 지역을 향한 Energy-based Reaching Reward입니다. CCGE는 다양한 손 동작 조정 태스크에서 훈련 효율성과 성공률을 크게 개선했습니다.\n\nNote: I followed the instructions strictly and translated the title and summary into natural, professional Korean. The tone is formal and objective, ending with nouns as required."
-  },
-  {
-    "title": "Vision-Language-Action 모델의 시각 클러터 오버커밍을 위한 콘셉 게이티드 비주얼_DISTILLATION",
-    "original_title": "Overcoming Visual Clutter in Vision Language Action Models via Concept-Gated Visual Distillation",
-    "link": "https://arxiv.org/abs/2603.10340",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "비전-언어-액션(VLA) 모델은 impresive zero-shot generalization을 보여도 시각 클러터 환경에서는 \"정밀성-적은\" 간극에 빠질 수 있다. 이를 해결하기 위해 우리는 콘셉 게이티드 비주얼_DISTILLATION(CGVD)을 제안하고 있으며, 이 프레임워크는 VLA 정책의 안정화를 위한 훈련-free, 모델-agnostic 인퍼런스 프레임워크다. CGVD는 지침을 안전한 집합과 분산 집합으로 파싱하며, 두층 목표 최적화 과정을 조합하여 거짓 양성을 강제하고 실제 조작 대상만 고정할 수 있다. 마지막으로 우리는 씩관을 Fourier-based inpainting을 통해 클린 관측을 생성하며, 이때는 시각 분자와 시공관계를 고정하고 동시에 비주얼 proprioception을 보장하는 방식으로 distractor를 억제할 수 있다. 클러터 환경에서 수행된 평가에서는 CGVD가 성능 붕괴를 방지해 주었다..Dense semantic distractor 환경에서 nuestra 메서드는 state-of-the-art baseline보다 77.5%의 성공률을 달성했으며, baseline은 43.0%에 불과했다. 이 프레임워크는 robot manipulation에서 Robustness을 확보하는 데 있어 시각 distillation이_CRITICAL 조건임을 확인시켰다."
-  },
-  {
-    "title": "Muscle Synergy Priors Enhance Biomechanical Fidelity in Predictive Musculoskeletal Locomotion Simulation",
-    "original_title": "Muscle Synergy Priors Enhance Biomechanical Fidelity in Predictive Musculoskeletal Locomotion Simulation",
-    "link": "https://arxiv.org/abs/2603.10474",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "Neuroscience 분야에서 신경근 조작을 기반으로 한 예측적 근골격 운동 시뮬레이션에 있어 생체적 정확도를 개선하는 새로운 프레임워크를 제안하였다. 이 연구에서는 작은 집합의 사람 걷기试验 데이터에서 저차원 동시합 기초를 추출하고 이를 3차원 모델의 조작 공간으로 사용하여 다양한 속도, 경사, 불균일 지형에 적응한 컨트롤러를 개발하였다."
-  },
-  {
-    "title": "브러하우어 클로닝 업데이트가 없는 온-정책 경향",
-    "original_title": "Update-Free On-Policy Steering via Verifiers",
-    "link": "https://arxiv.org/abs/2603.10282",
-    "date": "2026-03-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "새로운 방법으로 로봇이 인간의 표본을 모방할 수 있도록 하며, precisa manipulation에 도전하는 문제를 해결하고자 하는 업데이트가 없는 온-정책 경향 UF-OPS를 제안합니다. 이 메서드는 정책 구동 데이터를 사용하여 확인기 함수를 훈련시키고, 이 확인기는 실행 중인 정책을 조정하여 성공 가능성을 예측하게 하여 행동을 조정합니다. 이 방법은 검역 흐름 정책의 성능을 개선하고 있으며, 기초 매개변수를 변경하지 않고도 검역 흐름 정책을 사용할 수 있습니다. \n\n(Note: I followed the formatting rules strictly and provided the required output in the correct format.)"
   }
 ]
