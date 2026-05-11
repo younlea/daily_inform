@@ -1,5 +1,86 @@
 [
   {
+    "title": "An Aerial Manipulator for Perception-Driven Flower Targeting Toward Contactless Pollination in Vertical Farming",
+    "original_title": "An Aerial Manipulator for Perception-Driven Flower Targeting Toward Contactless Pollination in Vertical Farming",
+    "link": "https://arxiv.org/abs/2605.06759",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.06759v1 Announce Type: new \nAbstract: The decline of natural pollinators has created a major challenge for crop production in controlled indoor agriculture, particularly in vertical farming environments where natural insect pollination is absent. This motivates the development of robotic systems capable of performing precise flower targeting tasks while minimizing physical interference with delicate floral structures. This paper presents an aerial manipulator platform for perception driven flower detection, localization, and approach in vertical farming environments. The proposed system integrates onboard RGBD based perception, model predictive path integral (MPPI) based unmanned aerial vehicle (UAV) control on a PX4 platform, and a lightweight 2DoF manipulator for precise end effector positioning. The platform is evaluated in both MuJoCo simulation and UAV lab experiments using a flower targeting testbed. The experimental results demonstrate stable UAV flight, reliable flower localization, and centimeter level end effector positioning accuracy. In simulation, the proposed controller achieves consistent trajectory convergence and accurate target alignment. In the real world UAV lab environment, the integrated perception control manipulation framework enables stable flower targeted positioning and end effector alignment under constrained aerial operation. These results validate the proposed aerial manipulator as a robust robotic carrier and positioning framework for future contactless pollination systems. While the current study focuses on perception guided targeting and positioning, the developed platform provides a practical foundation for integrating advanced contactless end effectors, including acoustic based pollen manipulation modules, in future work."
+  },
+  {
+    "title": "Traffic Scenario Orchestration from Language via Constraint Satisfaction",
+    "original_title": "Traffic Scenario Orchestration from Language via Constraint Satisfaction",
+    "link": "https://arxiv.org/abs/2605.06966",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.06966v1 Announce Type: new \nAbstract: Autonomous vehicles (AVs) require extensive testing in simulation, but test case generation for driving scenarios is laborious. The desired scenarios are often out-of-distribution and have precise requirements on interactions with the AV policy under test. Manually programming scenarios allows for precise controllability but is difficult to scale. On the other hand, statistical models can leverage compute and data, but struggle with precise controllability when out-of-distribution. We cast scenario orchestration as a constraint-solving problem and present a language-in, simulation-out scenario orchestrator for closed-loop testing AVs. Our approach leverages foundation model reasoning to translate general, natural language descriptions into a set of constraints as a scenario representation. This then allows us to leverage off the shelf solvers to solve for actor behaviors which meet precise testing intentions in closed-loop. Under a benchmark of carefully crafted and diverse scenario descriptions, our approach greatly outperforms our baselines in orchestration success rate. We further show that our closed-loop approach is especially important for scenarios which require ego-reactive specifications."
+  },
+  {
+    "title": "AirBender: Adaptive Transportation of Bendable Objects Using Dual UAVs",
+    "original_title": "AirBender: Adaptive Transportation of Bendable Objects Using Dual UAVs",
+    "link": "https://arxiv.org/abs/2605.07003",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.07003v1 Announce Type: new \nAbstract: The interaction of robots with bendable objects in midair presents significant challenges in control, often resulting in performance degradation and potential crashes, especially for aerial robots due to their limited actuation capabilities and constant need to remain airborne. This paper presents an adaptive controller that enables two aerial vehicles to collaboratively follow a trajectory while transporting a bendable object without relying on explicit elasticity models. Our method allows on-the-fly adaptation to the object's unknown deformable properties, ensuring stability and performance in trajectory-tracking tasks. We use Lyapunov analysis to demonstrate that our adaptive controller is asymptotically stable. Our method is evaluated through hardware experiments in various scenarios, demonstrating the capabilities of using multirotor aerial vehicles to handle bendable objects."
+  },
+  {
+    "title": "PISTO: Proximal Inference for Stochastic Trajectory Optimization",
+    "original_title": "PISTO: Proximal Inference for Stochastic Trajectory Optimization",
+    "link": "https://arxiv.org/abs/2605.07215",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.07215v1 Announce Type: new \nAbstract: Stochastic trajectory optimization methods like STOMP enable planning with non-differentiable costs, offering substantial flexibility over gradient-based approaches. We show that STOMP implicitly minimizes the KL divergence from a Boltzmann trajectory distribution, revealing an elegant Variational Inference (VI) structure underlying its updates. Building on this insight, we propose the \\textit{Proximal Inference for Stochastic Trajectory Optimization} (PISTO) algorithm that stabilizes the updates by augmenting the objective with a KL regularization between successive Gaussian proposals. This proximal formulation admits a trust-region interpretation and yields closed-form mean updates computable as expectations under a surrogate distribution. We estimate these expectations via importance-weighted Monte Carlo sampling, producing a simple, derivative-free algorithm that inherits STOMP's ability to handle non-differentiable and discontinuous costs without modification. On robot arm motion planning benchmarks, PISTO achieves an 89\\% success rate -- outperforming CHOMP (63\\%) and STOMP (68\\%) -- while producing shorter, smoother paths at twice the speed of competing stochastic methods. We further validate PISTO on contact-rich MuJoCo locomotion and manipulation tasks, where it consistently outperforms both CEM and MPPI baselines in reward."
+  },
+  {
+    "title": "BioProVLA-Agent: An Affordable, Protocol-Driven, Vision-Enhanced VLA-Enabled Embodied Multi-Agent System with Closed-Loop-Capable Reasoning for Biological Laboratory Manipulation",
+    "original_title": "BioProVLA-Agent: An Affordable, Protocol-Driven, Vision-Enhanced VLA-Enabled Embodied Multi-Agent System with Closed-Loop-Capable Reasoning for Biological Laboratory Manipulation",
+    "link": "https://arxiv.org/abs/2605.07306",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.07306v1 Announce Type: new \nAbstract: Biological laboratory automation can reduce repetitive manual work and improve reproducibility, but reliable embodied execution in wet-lab environments remains challenging. Protocols are often unstructured, labware is frequently transparent or reflective, and multi-step procedures require state-aware execution beyond one-shot instruction following. Existing robotic systems often rely on costly hardware, fixed workflows, dedicated instruments, or robotics-oriented interfaces. Here, we introduce BioProVLA-Agent, an affordable, protocol-driven, vision-enhanced embodied multi-agent system enabled by Vision-Language-Action (VLA) models for biological manipulation. The system uses protocols as the task interface and integrates protocol parsing, visual state verification, and embodied execution in a closed-loop workflow. A Tailored LLM Protocol Agent converts protocols into verifiable subtasks; a VLM-RAG Verification Agent assesses readiness and completion using observations, robot states, retrieved knowledge, and success/failure examples; and a VLA Embodied Agent executes verified subtasks through a lightweight policy. To improve robustness under wet-lab visual perturbations, we develop AugSmolVLA, an online augmentation strategy targeting transparent labware, reflections, illumination shifts, and overexposure. We evaluate the system on a hierarchical benchmark covering 15 atomic tasks, 6 composite workflows, and 3 bimanual tasks, including tube loading, sorting, waste disposal, cap twisting, and liquid pouring. Across normal and high-exposure settings, AugSmolVLA improves execution stability over ACT, X-VLA, and the original SmolVLA, especially for precise placement, transparent-object manipulation, composite workflows, and visually degraded scenes. These results suggest a practical route toward accessible, protocol-centered, and verification-capable embodied AI for biological manipulation."
+  },
+  {
+    "title": "AT-VLA: Adaptive Tactile Injection for Enhanced Feedback Reaction in Vision-Language-Action Models",
+    "original_title": "AT-VLA: Adaptive Tactile Injection for Enhanced Feedback Reaction in Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.07308",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.07308v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have significantly advanced the capabilities of robotic agents in executing diverse tasks; however, they still face challenges in contact-rich manipulation scenarios that require precise physical interactions. To address this limitation, recent studies have attempted to incorporate tactile signals during downstream tasks, enabling pretrained VLAs to interpret tactile feedback. Nevertheless, introducing new modalities during finetuning, which are rarely present in the pretrain stage, may disrupt the pretrained capabilities of VLAs. In addition, the inherently slow inference speed of VLAs hampers real-time responsiveness and limits the effective utilization of tactile feedback for action adjustment. To overcome these challenges, we propose Adaptive Tactile Vision-Language-Action (AT-VLA), which introduces a novel Adaptive Tactile Injection mechanism. This mechanism dynamically determines the appropriate timing and locations for tactile injection, incorporating only when it significantly contributes to action generation, thereby minimizing interference with pretrained representations. Furthermore, to enable rapid and accurate tactile responses, we propose a Tactile Reaction Dual-Stream mechanism, which decouples sensory processing into a slow visual-language stream for low-frequency perceptual reasoning and a fast tactile control stream for high-frequency physical interaction understanding, achieving real-time close-loop responses within 0.04 s. Real-world experiments thoroughly validate the effectiveness of AT-VLA in contact-rich manipulation tasks. The project page is available at: https://sites.google.com/view/at-vla."
+  },
+  {
+    "title": "Escaping the Diversity Trap in Robotic Manipulation via Anchor-Centric Adaptation",
+    "original_title": "Escaping the Diversity Trap in Robotic Manipulation via Anchor-Centric Adaptation",
+    "link": "https://arxiv.org/abs/2605.07381",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.07381v1 Announce Type: new \nAbstract: While Vision-Language-Action (VLA) models offer broad general capabilities, deploying them on specific hardware requires real-world adaptation to bridge the embodiment gap. Since robot demonstrations are costly, this adaptation must often occur under a strict data budget. In this work, we identify a critical diversity trap: the standard heuristic of \"maximizing coverage\" by collecting diverse, single-shot demonstrations can be self-defeating due to non-vanishing estimation noise. We formalize this phenomenon as a Coverage--Density Trade-off. By decomposing the policy error into estimation (density) and extrapolation (coverage) terms, we characterize an interior optimal allocation of unique conditions for a fixed budget. Guided by this analysis, we propose Anchor-Centric Adaptation (ACA), a two-stage framework that first stabilizes a policy skeleton through repeated demonstrations at core anchors, then selectively expands coverage to high-risk boundaries via teacher-forced error mining and constrained residual updates. Real-robot experiments validate our trade-off framework and demonstrate that ACA significantly improves task reliability and success rates over standard diverse sampling strategies under the same budget."
+  },
+  {
+    "title": "BrickCraft: Visuomotor Skill Composition with Situated Manual Guidance for Long-Horizon Interlocking Brick Assembly",
+    "original_title": "BrickCraft: Visuomotor Skill Composition with Situated Manual Guidance for Long-Horizon Interlocking Brick Assembly",
+    "link": "https://arxiv.org/abs/2605.07605",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.07605v1 Announce Type: new \nAbstract: Autonomous robotic assembly of interlocking bricks demands seamless integration of long-horizon task reasoning, spatial grounding, and fine-grained manipulation. This paper presents BrickCraft, a compositional framework designed for long-horizon and generalizable interlocking brick assembly. BrickCraft models the assembly process using a relative formulation, where each step is anchored to a reference brick within the partial structure, thereby decomposing complex tasks into a finite set of reusable primitive skills. BrickCraft bridges the gap between high-level assembly plans and physical execution through situated manuals, which provide explicit spatial guidance for learned visuomotor skills by projecting the assembly intent onto real-time robot observations. Finally, BrickCraft employs a compositional execution pipeline that chains these spatially grounded skills to accomplish long-horizon assembly tasks. Extensive experimental validations demonstrate that BrickCraft acquires proficient assembly skills from a limited set of demonstrations and exhibits strong compositional generalization to unseen structures. The project website is available at https://intelligent-control-lab.github.io/BrickCraft."
+  },
+  {
+    "title": "Unitree brings App Store ecosystem to humanoid robots - digitimes",
+    "original_title": "Unitree brings App Store ecosystem to humanoid robots - digitimes",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdS1IYUFOUmZySlIyaGlsc1UzRmgtN3pzalc4ckRCMkZCRDFqaWxsNW5VcEdSdmJhQ0tGS21Jek1POHoxMDllbG5HenBKWm5XWTYzeW9JZVYxOFpJV2hXOVVabjdtYUd0aS1MZ3BaaE5sSkMxdldTdHRBZ19OaDB3QXpEemxCdy1ZUDRF?oc=5",
+    "date": "2026-05-11 02:12",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree brings App Store ecosystem to humanoid robots  digitimes"
+  },
+  {
     "title": "Artificial muscle merges sensing and movement in one structure for humanoid robots",
     "original_title": "Artificial muscle merges sensing and movement in one structure for humanoid robots",
     "link": "https://techxplore.com/news/2026-05-artificial-muscle-merges-movement-humanoid.html",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "사파베는 비전-언어-행동 모델을 개발하여, 복잡한 시나리오와 상호작용하는 로봇의 능력을 향상시키는 데 중점을 두었습니다. 이 프레임워크는 카메라 및 조정 액션을 공유 공간에 위치하지 않고 instead, 이를 분할하여 학습하고 bottom-up 훈련 전략을 따랐습니다.\n\nNote: I followed the instructions strictly and maintained the separator \""
-  },
-  {
-    "title": "Multi-로봇 다중任務 가우시안 프로세스 추정 및 커버리지",
-    "original_title": "Multi-Robot Multitask Gaussian Process Estimation and Coverage",
-    "link": "https://arxiv.org/abs/2603.11264",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "robots의 커버리지 제어는 감지 요구 지역을 최적으로 모니터링하거나 커버하게 하는 데 필수적입니다. 증가하는 자율성으로 인해 이제는 다중任務 운영이 가능해졌습니다. 이 논문에서는 새로운 다중任務 커버리지 문제를 도입하고 알려진 및 未知 감지 요구에 대한 해결 방법을 제안합니다. 알려진 요구에 대한 경우, 우리는 연방 다중任務 커버리지 알고리즘을 설계하고 이의収束 성질을 확립합니다. 未知 요구에 대한 경우, 우리는 다중任務 가우시안 프로세스.framework를 사용하여 감지 요구 함수를 학습하고 이를 다중任務 커버리지 알고리즘과 결합하여 적응 알고리즘을 개발합니다. 이 논문에서는 새로운 다중任務 커버리지 손실을 도입하여 적응 알고리즘이 oracle에 대한 성능을 평가하고, 우리의 알고리즘이 부분선형 누적 손실을 달성함을 확립합니다."
-  },
-  {
-    "title": "HiSync: 스피오-템포럴리 얼라인한 핸드 모션 ~함",
-    "original_title": "HiSync: Spatio-Temporally Aligning Hand Motion from Wearable IMU and On-Robot Camera for Command Source Identification in Long-Range HRI",
-    "link": "https://arxiv.org/abs/2603.11809",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇- gắn 카메라의 광학 유동과 HAND-worn IMU 신호를 연속하여 멀티-유저 LONG-RANGE HRI에서 명령원 식별을 실현하는 새로운 프레임워크를 공개함. 이 프레임워크는 92.32%의 정확도를 달성하며, 이전 SOTA보다 48.44% 더 높은 정확도 보여줌."
-  },
-  {
-    "title": "Whleaper: 10도 자유 이족동력 로봇",
-    "original_title": "Whleaper: A 10-DOF Flexible Bipedal Wheeled Robot",
-    "link": "https://arxiv.org/abs/2504.21767",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "로봇의 3도 freedoms를 갖는 인체와 같은 족관절 설계를 통해 다양한 스크리너에서 adaptable한 운동을 수행하며 안정성과 유연성을 확보하는 새로운 10도 freedoms bipedal wheeled robot, Whleaper를 출시하였다. 이 로봇은 지면 접촉을 향상시키는 증가된 3도 freedoms를 갖는 족관절 설계로 안정성을 향상시켰으며, 다양한 스크리너에서 자유롭게 움직일 수 있는 모빌리티를 보장했다."
-  },
-  {
-    "title": "XGrasp: Gripper-Aware Grasp Detection with Multi-Gripper Data Generation",
-    "original_title": "XGrasp: Gripper-Aware Grasp Detection with Multi-Gripper Data Generation",
-    "link": "https://arxiv.org/abs/2510.11036",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "가ripper-aware 그라스 탐지 프레임워크 XGrasp를 제안, 다양한 가ripper 구성을 일반화하고 이를 위한 새로운 데이터 생성 방법을 제공하여 로봇 시스템의 다양한 태스크 수행에 적용 가능함."
-  },
-  {
-    "title": "D-LIDAR스포핑공격: 동적ポイント클라우드저입을 사용한 환경무관의 LIDAR 스파오프 공격",
-    "original_title": "D-SLAMSpoof: An Environment-Agnostic LiDAR Spoofing Attack using Dynamic Point Cloud Injection",
-    "link": "https://arxiv.org/abs/2603.11365",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 연구진이 개발한 D-SLAMSpoof는 LiDAR SLAM을 훼손하는 새로운 공격으로, 환경 무관하게 작동한다. 이 공격은 외부 레이저 간섭을 사용하여 LiDAR 스캔에 가짜 측정치를 삽입하며, 스파오프 성공률을 향상시킨다. 또한, 우리는 ISD-SLAM 방어 방법을 제안하여, autonomous 시스템에서 일반적으로 제공되는 인첸셜 데드レ켄닝 신호를 사용하여 LiDAR 스파오프 공격을检测하고 효과적으로 대응할 수 있다."
-  },
-  {
-    "title": "로봇 러닝에서 시간 차원의 통제 dimension으로의 시간",
-    "original_title": "Time as a Control Dimension in Robot Learning",
-    "link": "https://arxiv.org/abs/2511.07654",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "시간-aware policy learning framework를 도입하여 로봇행동을 regulate하는 데 사용되는 두 개의 템포럴 신호, 남은 시간과 시간 비율을 추가합니다. 이 신호들은 정책 내부의 시간 진행을 조절하고, 다양한 Manipulation tasks에서 정책이 행동을 지속적으로 adapting하여 효율성, 튼튼성 및 인간 입력에 적응성을 향상시킵니다."
-  },
-  {
-    "title": "FSAG: Dexterous Hand Finger-Specific Affordance Grounding 방식 개선 via 보급 모델",
-    "original_title": "FSAG: Enhancing Human-to-Dexterous-Hand Finger-Specific Affordance Grounding via Diffusion Models",
-    "link": "https://arxiv.org/abs/2601.08246",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "다음은 인간이 사용하는 다지그的手의 접근 제한을 고려하여 정교하게 접근하는 새로운 프레임워크를 제안합니다. 이 프레임워크는 예전과 달리 hardware-specific 그라스 데이터셋을 수집하지 않고도 다지그的手의 접근을 얻을 수 있습니다. 이를 통해 다양한 오브젝트와 도구에 대한 접근 제한이 정교하게 수행됩니다."
-  },
-  {
-    "title": "Deployment-Time 로봇 정책의 신뢰성",
-    "original_title": "Deployment-Time Reliability of Learned Robot Policies",
-    "link": "https://arxiv.org/abs/2603.11400",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "recent advances in learning-based robot manipulation에 의해 produced policies with remarkable capabilities를 배제하고, real-world use에서는 distribution shift, compounding errors, and complex task dependencies로 system performance가 저하되는 것을 해결하기 위해 deployment-time mechanisms을 개발하였다. 이 논문에서는 runtime monitoring methods, data-centric framework for policy interpretability, and reliable long-horizon task execution framework을 제안하여 learned robot policies의 신뢰성을 향상시켰다."
-  },
-  {
-    "title": "로보틱스 데이터셋의 다양성 측정: 모델-프리 로보틱스 데이터셋의 시그니처 변환 기반 엔트로피",
-    "original_title": "Diversity You Can Actually Measure: A Fast, Model-Free Diversity Metric for Robotics Datasets",
-    "link": "https://arxiv.org/abs/2603.11634",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보틱스 datasets의 다양성을 측정하는 새로운 방법을 제안했습니다. 이를 위해 로보틱스 demonstrateations의 SIG와 네이umann 엔트로피를 확장하여 demonstration dataset에 직접적으로 작용하는 entropy 및 diversity metrics를 정의했습니다. 이러한 metric을 활용하여 로보틱스 데이터셋의 다양성이 robot imitation learning의 성능에 미치는 영향을 연구하고 model-free 데이터 curation 알고리즘인 FAKTUAL을 제안했습니다. FAKTUAL은 demonstration subset을 선택하여 entropy가 최대화되는 subset-size budget에서 작용합니다. 우리는 이미지 및 state-based RoboMimic, MetaWorld benchmarks, 4개의 실제 manipulation tasks에 대한 평가를 수행했습니다. 다양한 태스크와 아키텍처에서 FAKTUAL이 random selection보다 하위 성공률을 개선하는 데 성공적으로 사용되었습니다."
   }
 ]
