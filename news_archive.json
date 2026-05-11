@@ -225,6 +225,15 @@
     "summary": "arXiv:2603.05687v3 Announce Type: replace \nAbstract: Contact-rich dexterous manipulation with multi-finger hands remains an open challenge in robotics because task success depends on multi-point contacts that continuously evolve and are highly sensitive to object geometry, frictional transitions, and slip. Recently, tactile-informed manipulation policies have shown promise. However, most use tactile signals as additional observations rather than modeling contact state or how their action outputs interact with low-level controller dynamics. We present Contact-Grounded Policy (CGP), a visuotactile policy that grounds multi-point contacts by predicting coupled trajectories of actual robot state and tactile feedback, and using a learned contact-consistency mapping to convert these predictions into executable target robot states for a compliance controller. CGP consists of two components: (i) a conditional diffusion model that forecasts future robot state and tactile feedback in a compressed latent space, and (ii) a learned contact-consistency mapping that converts the predicted robot state-tactile pair into executable targets for a compliance controller, enabling it to realize the intended contacts. We evaluate CGP using a physical four-finger Allegro V5 hand with Digit360 fingertip tactile sensors, and a simulated five-finger Tesollo DG-5F hand with dense whole-hand tactile arrays. Across a range of dexterous tasks including in-hand manipulation, delicate grasping, and tool use, CGP outperforms visuomotor and visuotactile diffusion-policy baselines."
   },
   {
+    "title": "AGILE: Hand-Object Interaction Reconstruction from Video via Agentic Generation",
+    "original_title": "AGILE: Hand-Object Interaction Reconstruction from Video via Agentic Generation",
+    "link": "https://arxiv.org/abs/2602.04672",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.04672v3 Announce Type: replace-cross \nAbstract: Reconstructing dynamic hand-object interactions from monocular videos is critical for dexterous manipulation data collection and creating realistic digital twins for robotics and VR. However, current methods face two prohibitive barriers: (1) reliance on neural rendering often yields fragmented, non-simulation-ready geometries under heavy occlusion, and (2) dependence on brittle Structure-from-Motion (SfM) initialization leads to frequent failures on in-the-wild footage. To overcome these limitations, we introduce AGILE, a robust framework that shifts the paradigm from reconstruction to agentic generation for interaction learning. First, we employ an agentic pipeline where a Vision-Language Model (VLM) guides a generative model to synthesize a complete, watertight object mesh with high-fidelity texture, independent of video occlusions. Second, bypassing fragile SfM entirely, we propose a robust anchor-and-track strategy. We initialize the object pose at a single interaction onset frame using a foundation model and propagate it temporally by leveraging the strong visual similarity between our generated asset and video observations. Finally, a contact-aware optimization integrates semantic, geometric, and interaction stability constraints to enforce physical plausibility. Extensive experiments on HO3D, DexYCB, ARCTIC, and in-the-wild videos reveal that AGILE outperforms baselines in global geometric accuracy while demonstrating exceptional robustness on challenging sequences where prior arts frequently collapse. By prioritizing physical validity, our method produces simulation-ready assets validated via real-to-sim retargeting for robotic applications. Project page: https://agile-hoi.github.io."
+  },
+  {
     "title": "Unitree brings App Store ecosystem to humanoid robots - digitimes",
     "original_title": "Unitree brings App Store ecosystem to humanoid robots - digitimes",
     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdS1IYUFOUmZySlIyaGlsc1UzRmgtN3pzalc4ckRCMkZCRDFqaWxsNW5VcEdSdmJhQ0tGS21Jek1POHoxMDllbG5HenBKWm5XWTYzeW9JZVYxOFpJV2hXOVVabjdtYUd0aS1MZ3BaaE5sSkMxdldTdHRBZ19OaDB3QXpEemxCdy1ZUDRF?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "Robohub",
     "category": "humanoid",
     "summary": "알란 윈필드는 영국 웨스트 오브 잉글랜드 대학교(University of the West of England, UWE) 교수로 로보틱스 윤리에 대한 새로운 표준을 개발하는 것에 주목하고 있다. 이 회의에서는 로보틱스 분야에서 этиcs와 투명성을 강조하는 새로운 방안을 탐색하였다."
-  },
-  {
-    "title": "Three companies demonstrate global commercialization potential at AW 2026",
-    "original_title": "Three companies demonstrate global commercialization potential at AW 2026",
-    "link": "https://www.therobotreport.com/three-companies-demonstrate-global-commercialization-potential-aw-2026/",
-    "date": "2026-03-13 12:54",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "AW 2026에서 세계적으로 상업화 잠재성을 보여주는 3개 기업이 공연한 것임. 이 중에는 글로벌 지배 시장 가능성을 보유한 NVIDIA, Tesla, Figure AI 등이 포함됨. AW 2026에서는 이러한 회사의 투자력, 경쟁력을 확인할 수 있음."
   }
 ]
