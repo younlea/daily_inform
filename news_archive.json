@@ -72,6 +72,78 @@
     "summary": "arXiv:2605.07605v1 Announce Type: new \nAbstract: Autonomous robotic assembly of interlocking bricks demands seamless integration of long-horizon task reasoning, spatial grounding, and fine-grained manipulation. This paper presents BrickCraft, a compositional framework designed for long-horizon and generalizable interlocking brick assembly. BrickCraft models the assembly process using a relative formulation, where each step is anchored to a reference brick within the partial structure, thereby decomposing complex tasks into a finite set of reusable primitive skills. BrickCraft bridges the gap between high-level assembly plans and physical execution through situated manuals, which provide explicit spatial guidance for learned visuomotor skills by projecting the assembly intent onto real-time robot observations. Finally, BrickCraft employs a compositional execution pipeline that chains these spatially grounded skills to accomplish long-horizon assembly tasks. Extensive experimental validations demonstrate that BrickCraft acquires proficient assembly skills from a limited set of demonstrations and exhibits strong compositional generalization to unseen structures. The project website is available at https://intelligent-control-lab.github.io/BrickCraft."
   },
   {
+    "title": "PhySPRING: Structure-Preserving Reduction of Physics-Informed Twins via GNN",
+    "original_title": "PhySPRING: Structure-Preserving Reduction of Physics-Informed Twins via GNN",
+    "link": "https://arxiv.org/abs/2605.07687",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.07687v1 Announce Type: new \nAbstract: Physics-based digital twins aim to predict the dynamics of real-world objects under interaction, enabling real-to-sim-to-real applications in robotics. Current approaches reconstruct such twins as explicit physical models (such as spring-mass systems) to predict the dynamics, but the resulting models often inherit the resolution of the visual reconstruction rather than being reduced to the physical complexity required to reproduce task-relevant dynamics. This mismatch introduces redundant topology, making repeated forward-dynamics rollouts unnecessarily expensive. To address this challenge, we present PhySPRING, an fully differentiable GNN-based method to reduce complexity in spring--mass digital twins. PhySPRING jointly learns a hierarchy of coarsened graph topologies and their mechanical parameters from observations. At each reduction level, PhySPRING merges nodes with similar learned dynamic responses to optimize the topology, while maintaining every reduced layer as an explicit spring--mass system. On the PhysTwin benchmark, PhySPRING improves dense reconstruction and prediction accuracy over PhysTwin, while reduced models retain stable physical and visual fidelity with up to a 2.30 times speed-up. We further demonstrate the effectiveness of PhySPRING in a Real2Sim robot policy-evaluation pipeline, where the reduced models are substituted zero-shot into ACT and $\\pi_0$ evaluations, maintaining comparable manipulation success rates across downsampling levels while improving action-sampling effectiveness. Together, PhySPRING enables efficient and structure-preserving spring--mass reduction without sacrificing fidelity or robotic utility."
+  },
+  {
+    "title": "Sensitivity-Based Robust NMPC for Close-Proximity Offshore Wind Turbine Inspection with a Tilted Multirotor",
+    "original_title": "Sensitivity-Based Robust NMPC for Close-Proximity Offshore Wind Turbine Inspection with a Tilted Multirotor",
+    "link": "https://arxiv.org/abs/2605.07771",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.07771v1 Announce Type: new \nAbstract: Close-proximity offshore wind turbine inspection requires strict clearance control around large cylindrical structures under wind and model mismatch. Nominal Nonlinear Model Predictive Control (NMPC) may violate safety constraints when mass, inertia, thrust effectiveness, drag, or wind conditions differ from nominal assumptions. We propose a sensitivity-based robust NMPC for a tilted multirotor that robustifies the tower-clearance constraint via online constraint tightening. First-order parametric state sensitivities provide a structured-uncertainty margin, while bounded gusts are handled by a stage-dependent additive margin. The formulation augments the nominal NMPC with sensitivity propagation and margin evaluation only, leaving the receding-horizon optimization structure unchanged. Monte-Carlo evaluation over 500 uncertainty realizations on a boundary-critical helical inspection trajectory shows that the proposed controller eliminates the clearance violations observed under nominal NMPC at the cost of a moderate increase in solve time."
+  },
+  {
+    "title": "NoiseGate: Learning Per-Latent Timestep Schedules as Information Gating in World Action Models",
+    "original_title": "NoiseGate: Learning Per-Latent Timestep Schedules as Information Gating in World Action Models",
+    "link": "https://arxiv.org/abs/2605.07794",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.07794v1 Announce Type: new \nAbstract: World Action Models (WAMs) are an emerging family of policies that tie robot action generation to future-observation modeling. In this work, we focus on the joint video--action modeling paradigm, where actions and imagined future observations are co-generated along a shared denoising or flow trajectory, so that perception, prediction, and control are coupled within one generative process. Existing WAMs typically realize this paradigm with a Mixture-of-Transformers (MoT), where video and action tokens interact through shared self-attention. This architecture can in principle assign a separate timestep $t_f$ to each predicted latent frame, yet current systems collapse this degree of freedom onto a single shared scalar $t$. Under the noise-as-masking view of Diffusion Forcing, this shared schedule imposes the unjustified prior that every predicted latent is equally reliable for action generation. We instead view the per-latent schedule as a \\emph{learnable information-gating policy}: by changing a latent frame's noise level, the policy modulates the reliability of its Key/Value contribution to the action tokens. We propose \\textbf{NoiseGate}, which combines independent per-latent timestep sampling during backbone training, a lightweight Gating Policy Network that emits per-latent time increments during denoising, and task-reward optimization that trains the schedule policy without hand-crafted shape priors. Built on a joint video--action MoT backbone, NoiseGate delivers consistent gains on diverse RoboTwin random-scene manipulation tasks."
+  },
+  {
+    "title": "TAVIS: A Benchmark for Egocentric Active Vision and Anticipatory Gaze in Imitation Learning",
+    "original_title": "TAVIS: A Benchmark for Egocentric Active Vision and Anticipatory Gaze in Imitation Learning",
+    "link": "https://arxiv.org/abs/2605.07943",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.07943v1 Announce Type: new \nAbstract: Active vision -- where a policy controls its own gaze during manipulation -- has emerged as a key capability for imitation learning, with multiple independent systems demonstrating its benefits in the past year. Yet there is no shared benchmark to compare approaches or quantify what active vision contributes, on which task types, and under what conditions. We introduce TAVIS, evaluation infrastructure for active-vision imitation learning, with two complementary task suites -- TAVIS-Head (5 tasks, global search via pan/tilt necks) and TAVIS-Hands (3 tasks, local occlusion via wrist cameras) -- on two humanoid torso embodiments (GR1T2, Reachy2), built on IsaacLab. TAVIS provides three evaluation primitives: a paired headcam-vs-fixedcam protocol on identical demonstrations; GALT (Gaze-Action Lead Time), a novel metric grounded in cognitive science and HRI that quantifies anticipatory gaze in learned policies; and procedural ID/OOD splits. Baseline experiments with Diffusion Policy and $\\pi_0$ reveal that (i) active-vision generally helps, but benefits are task-conditional rather than uniform; (ii) multi-task policies degrade sharply under controlled distribution shifts on both suites; and (iii) imitation alone yields anticipatory gaze, with median lead times comparable to the human teleoperator reference. Code, evaluation scripts, demonstrations (LeRobot v3.0; ~2200 episodes) and trained baselines are released at https://github.com/spiglerg/tavis and https://huggingface.co/tavis-benchmark."
+  },
+  {
+    "title": "Evaluation of an Actuated Spine in Agile Quadruped Locomotion",
+    "original_title": "Evaluation of an Actuated Spine in Agile Quadruped Locomotion",
+    "link": "https://arxiv.org/abs/2605.07988",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.07988v1 Announce Type: new \nAbstract: The spine plays a crucial role in the dynamic locomotion of quadrupedal animals, improving the stability, speed, and efficiency of their gait, especially for fast-paced and highly agile movements. Therefore, the spine is also a promising and natural way to extend the capabilities of quadruped robots. This paper empirically investigates the benefits of an actuated spine for learning agile quadruped locomotion. We evaluate whether the use of the spine brings benefits in terms of high-speed running, climbing stairs, climbing high-angle slopes, hurdling, and crawling scenarios. We conducted an empirical study in MuJoCo simulation using the Silver Badger robot from MAB Robotics with an actuated 1-DOF spine in the sagittal plane. The obtained results show that the use of the spine provides the robot with increased agility and allows it to overcome higher stairs, steeper slopes, higher obstacles, and smaller passages."
+  },
+  {
+    "title": "123D: Unifying Multi-Modal Autonomous Driving Data at Scale",
+    "original_title": "123D: Unifying Multi-Modal Autonomous Driving Data at Scale",
+    "link": "https://arxiv.org/abs/2605.08084",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08084v1 Announce Type: new \nAbstract: The pursuit of autonomous driving has produced one of the richest sensor data collections in all of robotics. However, its scale and diversity remain largely untapped. Each dataset adopts different 2D and 3D modalities, such as cameras, lidar, ego states, annotations, traffic lights, and HD maps, with different rates and synchronization schemes. They come in fragmented formats requiring complex dependencies that cannot natively coexist in the same development environment. Further, major inconsistencies in annotation conventions prevent training or measuring generalization across multiple datasets. We present 123D, an open-source framework that unifies such multi-modal driving data through a single API. To handle synchronization, we store each modality as an independent timestamped event stream with no prescribed rate, enabling synchronous or asynchronous access across arbitrary datasets. Using 123D, we consolidate eight real-world driving datasets spanning 3,300 hours and 90,000 kilometers, together with a synthetic dataset with configurable collection scripts, and provide tools for data analysis and visualization. We conduct a systematic study comparing annotation statistics and assessing each dataset's pose and calibration accuracy. Further, we showcase two applications 123D enables: cross-dataset 3D object detection transfer and reinforcement learning for planning, and offer recommendations for future directions. Code and documentation are available at https://github.com/kesai-labs/py123d."
+  },
+  {
+    "title": "HumanNet: Scaling Human-centric Video Learning to One Million Hours",
+    "original_title": "HumanNet: Scaling Human-centric Video Learning to One Million Hours",
+    "link": "https://arxiv.org/abs/2605.06747",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.06747v1 Announce Type: cross \nAbstract: Progress in embodied intelligence increasingly depends on scalable data infrastructure. While vision and language have scaled with internet corpora, learning physical interaction remains constrained by the lack of large, diverse, and richly annotated human activity data. We present HumanNet, a one-million-hour human-centric video corpus that captures how humans interact with the physical world at scale. HumanNet spans both first-person and third-person perspectives and covers fine-grained activities, human-object interactions, tool use, and long-horizon behaviors across diverse real-world environments. Beyond raw video, the dataset provides interaction-centric annotations, including captions, motion descriptions, and hand and body-related signals, enabling motion-aware and interaction-aware learning. Beyond scale, HumanNet introduces a systematic data curation paradigm for embodied learning, where human-centric filtering, temporal structuring, viewpoint diversity, and annotation enrichment are treated as first-class design principles. This design transforms unstructured internet video into a scalable substrate for representation learning, activity understanding, motion generation, and human-to-robot transfer. We conduct a first-step validation on the value of this design through controlled vision-language-action ablation: under a fixed set of validation data, continued training from the Qwen VLM model with 1000 hours of egocentric video drawn from HumanNet surpasses the continued training with 100 hours of real-robot data from Magic Cobot, indicating that egocentric human video could be a scalable and cost-effective substitute for robot data. By building this project, we aim to explore the opportunity to scale embodied foundation models using human-centric videos, rather than relying solely on robot-specific data."
+  },
+  {
+    "title": "R$^3$L: Reasoning 3D Layouts from Relative Spatial Relations",
+    "original_title": "R$^3$L: Reasoning 3D Layouts from Relative Spatial Relations",
+    "link": "https://arxiv.org/abs/2605.06758",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.06758v1 Announce Type: cross \nAbstract: Relative spatial relations provide a compact representation of spatial structure and are fundamental to relative spatial reasoning in 3D layout generation. Recent works leverage Multimodal Large Language Models (MLLMs) to infer such relations, but the inferred relations are often unreliable and are typically handled with post-hoc heuristics. In this paper, we propose R$^3$L, a general framework that improves the reliability and consistency of relative spatial reasoning for 3D layout generation. Our key motivation is that multi-hop reasoning requires repeated reference-frame transformations, which accumulate errors in inferred relations and lead to semantic and metric drift. To mitigate this, we propose invariant spatial decomposition to break coupled relation chains, and consistent spatial imagination to promote self-consistency through an imagine-and-revise loop. We further introduce supportive spatial optimization to ease pose optimization via global-to-local coordinate re-parameterization. Extensive experiments across diverse scene types and instructions demonstrate that R$^3$L produces more physically feasible and semantically consistent layouts. Notably, our analysis shows that resolving frame-induced inconsistencies is crucial for reliable multi-hop relative spatial reasoning. The code is available at https://github.com/Neal2020GitHub/R3L."
+  },
+  {
     "title": "Unitree brings App Store ecosystem to humanoid robots - digitimes",
     "original_title": "Unitree brings App Store ecosystem to humanoid robots - digitimes",
     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdS1IYUFOUmZySlIyaGlsc1UzRmgtN3pzalc4ckRCMkZCRDFqaWxsNW5VcEdSdmJhQ0tGS21Jek1POHoxMDllbG5HenBKWm5XWTYzeW9JZVYxOFpJV2hXOVVabjdtYUd0aS1MZ3BaaE5sSkMxdldTdHRBZ19OaDB3QXpEemxCdy1ZUDRF?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "Dexterous한 손으로는 동시 전후 주먹 조작과 비전후 주먹 조작을 가능하게 하는 멀티-스테이지 덱스트로스 태스크를 해결하는 데 도움이 되는 새로운 접근법을 제안합니다. 이 접근법은 demonstrations을 object-centric skills로 분할하고, 이를 기반으로 현재 물체의 형상에 따라 demonstrated skills을 검색하고, 이를 수행하는 retrieve-align-execute 방식을 사용합니다. 실제 1,000여회의 실험에서 평균적으로 66%의 성공률을 달성했습니다."
-  },
-  {
-    "title": "CRAFT: 테논-드라이브드 핸드 ~함",
-    "original_title": "CRAFT: A Tendon-Driven Hand with Hybrid Hard-Soft Compliance",
-    "link": "https://arxiv.org/abs/2603.12120",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "테놈-드라이브드 인공손 CRAFT는 접촉-ric 하트 매니푸레이션을 위한 하이드하드-소프트 컴플라이언스를 보유한 테놈-드라이브드 안θρω포마닉 핸드를 소개합니다. 이 설계는 간단한 아이디어에 기반하고 있습니다: 접촉은 손의 모든 부분에서 균일하지 않습니다. 강세는 단조, 링크들은 로드는 대부분을 차지합니다. CRAFT는 단조에서 부드러운 물질을 배치하고 링크를 딱딱하게 유지하면서, 회전연락면을 통해 반복적 운동 경로를 유지합니다. 15개의 모터가 지지를 하여 손이 테놈으로 드라이브 되고 있습니다. 구조 테스트에서는 CRAFT가 강도와 내구성을 개선하여 비교할 수 있는 반복성을 유지하고 있습니다. 텔로페이션에서 CRAFT는 취약하고 낮은 마찰물체를 더 잘 처리할 수 있으며, Feix 택소미에 33/33의 그라스 커버를 달성합니다. 이 설계의 전체 비용은 $600 미만으로 열린 소스를 공개하여,視 기반 텔로페이션 및 시뮬레이션 통합을 제공할 것입니다. 프로젝트 페이지: http://craft-hand.github.io/."
-  },
-  {
-    "title": "HandelBot: 실세계 피아노 연주 via Dexterous Robot 정책의 빠른 적응",
-    "original_title": "HandelBot: Real-World Piano Playing via Fast Adaptation of Dexterous Robot Policies",
-    "link": "https://arxiv.org/abs/2603.12243",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "실로봇이 decades에 걸쳐 직관적으로 조작하는 다지手を 구현한 핸들봇 프레임워크를 소개합니다. 이 프레임워크는 시뮬레이션정책을 시작으로 구조적 보완 단계와 잔여 강화학습을 통해 실세계 피아노 연주를 가능하게 합니다. 핸들봇은 5곡의 하드웨어 실험에서 정밀한雙手 피아노 연주를 성공적으로 수행합니다."
-  },
-  {
-    "title": "Humanoid Dexterous Manipulation Made Easy",
-    "original_title": "HumDex:Humanoid Dexterous Manipulation Made Easy",
-    "link": "https://arxiv.org/abs/2603.12260",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "HumDex: 휴먼 로봇의 전체 신체 적응 조작을 쉽게 하다. HumDex는 이동식 텔로페이션 시스템으로, IMU 기반 움직임 추적을 사용하여 포트Ability-정밀성을 개선, 정확한 toàn 신체 추적을 가능하게 했다. 또한, 이 시스템은 학습 기반 retargeting 방법을 도입하여 수동 파라미터 조정을 필요하지 않는 자연스러운 손 움직임을 생성했다. HumDex는 텔로페이션 외에도 휴먼 운동 데이터의 효율적인 수집을 허용하며, 이 기능을 바탕으로 2 단계 모방 학습 프레임워크를 제안하여 새로운 구성, 물체 및 배경에 대한 일반화 능력을 크게 향상시켰다."
-  },
-  {
-    "title": "Humanoid Loco-Manipulation Foundation Model 공개됨",
-    "original_title": "$\\Psi_0$: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation",
-    "link": "https://arxiv.org/abs/2603.12263",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "에스키피즈 제로(Psi-Zero)를 도입하여 인간 및 인형 로봇의 복잡한 작업을 처리하는 새로운 모델을 제안합니다. 기존 접근법은 인간 및 인형 로봇 데이터를 혼합하여 학습하려고 하지만, 우리는 이러한 전략이 인간과 인형 로봇 간의 기본적인 운동 및 자세의 차이를 고려하지 않는다고 주장합니다. 따라서, 데이터 효율성과 모델 성능은 불만족스러운 상태로 남아 있습니다. 이 문제를 해결하기 위해 저희는 다양한 데이터 소스를 분리하여 학습 프로세스를 최적화합니다. 특정적으로, 우리는 큰 규모의 인간 비디오 데이터에서 VLM 백본을 생성하고 인형 로봇 데이터에서 flow-based 액션 експерт를 생성하여 정확한 로봇 조인트 제어를 학습합니다."
-  },
-  {
-    "title": "OA-NBV: Occlusion-Aware Next-Best-View Planning for Human-Centered Active Perception on Mobile Robots",
-    "original_title": "OA-NBV: Occlusion-Aware Next-Best-View Planning for Human-Centered Active Perception on Mobile Robots",
-    "link": "https://arxiv.org/abs/2603.11072",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "인간 중심의 모바일 로봇을 위한 가로막-aware 다음-best-view 계획(OA-NBV)을 제안합니다. OA-NBV는 부분적으로 가려진 사람을 확인하는 데 trọng한 목표를 갖는 새로운 관점 선택 파이프라인을 제안합니다. 이 파이프라인은 부분적으로 가려진 사람의 완전한 관찰을 얻을 수 있도록 다음에 선택할관점을 결정합니다. OA-NBV는 90% 이상의 성공률을 달성했으며, 실제 세계试験에서도 같은 성과를 낸다. 더불어 OA-NBV는 관찰 품질도 개선하는데, 가장 강력한 baseline과 비교하면 최소 81%의 표적 면적과 58%의 키포인트 가시성을 늘린다."
-  },
-  {
-    "title": "MiNI-Q: 미니형 무선 4족 로봇 ~함",
-    "original_title": "MiNI-Q: A Miniature, Wire-Free Quadruped with Unbounded, Independently Actuated Leg Joints",
-    "link": "https://arxiv.org/abs/2603.11537",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "mini 4족 로봇 MiNI-Q의 설계, 운동해석, 실험적 확인을소개합니다. 이 로봇은 2-도Freedom leg joint를 사용하여 oscillatory gait와 회전 이동을 가능하게 하며, 2.5cm에 불과한 최소 높이까지 접혀낼 수 있습니다. 실제로 MiNI-Q는 0.46m/s의 속도로 달릴 수 있고, 낮은 clearance crawling, stair climbing, inverted locomotion, jumping, backflipping 등의 다양한 움직임을 보여줍니다."
-  },
-  {
-    "title": "드론이 좁은 틈을 나는 morphing-wing 드론의 날개가 temporarily Sweep",
-    "original_title": "Flight through Narrow Gaps with Morphing-Wing Drones",
-    "link": "https://arxiv.org/abs/2603.12059",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "morphing-wing 드론에 의한 좁은 틈 traversal을 가능하게 하는 새로운 기술이 공개됨. 이技术은 드론의 날개의 morphing을 통해 순간적으로 날개의 형태를 바꾸어 좁은 틈을 지나갈 수 있도록 한다. 이 기능은 낮은 비행 속도에서 틈을 지나가면서 날개의 lift 손실을 초래하고, 틈 앞으로 날개의 형태를 바꿔야 하는 등의 제약이 따르지만, 이를 해결하기 위해선 드론의 동적 모델과 최적의 reference 경로 생성 framework이 필요함. \n\nNote: The Korean title and summary are written in a formal news-brief style without polite conversational endings or informal language. Key technical terms and company names are kept in English or use standard Korean transliteration if widely used."
-  },
-  {
-    "title": "사파베 : ACTIVE PERCEPTION 과 MANIPULATION 을 통합한 비전-언어-행동 모델을 개발함",
-    "original_title": "SaPaVe: Towards Active Perception and Manipulation in Vision-Language-Action Models for Robotics",
-    "link": "https://arxiv.org/abs/2603.12193",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "사파베는 비전-언어-행동 모델을 개발하여, 복잡한 시나리오와 상호작용하는 로봇의 능력을 향상시키는 데 중점을 두었습니다. 이 프레임워크는 카메라 및 조정 액션을 공유 공간에 위치하지 않고 instead, 이를 분할하여 학습하고 bottom-up 훈련 전략을 따랐습니다.\n\nNote: I followed the instructions strictly and maintained the separator \""
   }
 ]
