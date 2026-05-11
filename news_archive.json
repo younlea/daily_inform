@@ -1,5 +1,14 @@
 [
   {
+    "title": "GENE-26.5 brings dexterous AI robotics into focus ... - eeNews Europe",
+    "original_title": "GENE-26.5 brings dexterous AI robotics into focus ... - eeNews Europe",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPeXU5andOX1l6WHMtNE9PVW5pam04Z0cxWS00MEhrMXE5UGM4ZGdUTU9xdnJ1MEFvTW9RMEZqbEJ5emhSODltaWViRG1pS3hKQUxBa1lPcFVlb29hb2NieUFpY0pyd0YxcVN6NmFRUGVEM2s1dlVXWC0yNFViSXE2VUFjSVpUWkx4Nnc?oc=5",
+    "date": "2026-05-11 05:29",
+    "source": "Google News (Global Hand/Gripper)",
+    "category": "hand",
+    "summary": "GENE-26.5 brings dexterous AI robotics into focus ...  eeNews Europe"
+  },
+  {
     "title": "An Aerial Manipulator for Perception-Driven Flower Targeting Toward Contactless Pollination in Vertical Farming",
     "original_title": "An Aerial Manipulator for Perception-Driven Flower Targeting Toward Contactless Pollination in Vertical Farming",
     "link": "https://arxiv.org/abs/2605.06759",
@@ -142,6 +151,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.06758v1 Announce Type: cross \nAbstract: Relative spatial relations provide a compact representation of spatial structure and are fundamental to relative spatial reasoning in 3D layout generation. Recent works leverage Multimodal Large Language Models (MLLMs) to infer such relations, but the inferred relations are often unreliable and are typically handled with post-hoc heuristics. In this paper, we propose R$^3$L, a general framework that improves the reliability and consistency of relative spatial reasoning for 3D layout generation. Our key motivation is that multi-hop reasoning requires repeated reference-frame transformations, which accumulate errors in inferred relations and lead to semantic and metric drift. To mitigate this, we propose invariant spatial decomposition to break coupled relation chains, and consistent spatial imagination to promote self-consistency through an imagine-and-revise loop. We further introduce supportive spatial optimization to ease pose optimization via global-to-local coordinate re-parameterization. Extensive experiments across diverse scene types and instructions demonstrate that R$^3$L produces more physically feasible and semantically consistent layouts. Notably, our analysis shows that resolving frame-induced inconsistencies is crucial for reliable multi-hop relative spatial reasoning. The code is available at https://github.com/Neal2020GitHub/R3L."
+  },
+  {
+    "title": "Learning Visual Feature-Based World Models via Residual Latent Action",
+    "original_title": "Learning Visual Feature-Based World Models via Residual Latent Action",
+    "link": "https://arxiv.org/abs/2605.07079",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.07079v1 Announce Type: cross \nAbstract: World models predict future transitions from observations and actions. Existing works predominantly focus on image generation only. Visual feature-based world models, on the other hand, predict future visual features instead of raw video pixels, offering a promising alternative that is more efficient and less prone to hallucination. However, current feature-based approaches rely on direct regression, which leads to blurry or collapsed predictions in complex interactions, while generative modeling in high-dimensional feature spaces still remains challenging. In this work, we discover that a new type of latent action representation, which we refer to as *Residual Latent Action* (RLA), can be easily learned from DINO residuals. We also show that RLA is predictive, generalizable, and encodes temporal progression. Building on RLA, we propose *RLA World Model* (RLA-WM), which predicts RLA values via flow matching. RLA-WM outperforms both state-of-the-art feature-based and video-diffusion world models on simulation and real-world datasets, while being orders of magnitude faster than video diffusion. Furthermore, we develop two robot learning techniques that use RLA-WM to improve policy learning. The first one is a minimalist world action model with RLA that learns from actionless demonstration videos. The second one is the first visual RL framework trained entirely inside a world model learned from offline videos only, using a video-aligned reward and no online interactions or handcrafted rewards. Project page: https://mlzxy.github.io/rla-wm"
+  },
+  {
+    "title": "Drifting Field Policy: A One-Step Generative Policy via Wasserstein Gradient Flow",
+    "original_title": "Drifting Field Policy: A One-Step Generative Policy via Wasserstein Gradient Flow",
+    "link": "https://arxiv.org/abs/2605.07727",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.07727v1 Announce Type: cross \nAbstract: We propose Drifting Field Policy (DFP), a non-ODE one-step generative policy built on the drifting model paradigm. We frame the policy update as a reverse-KL Wasserstein-2 gradient flow toward a soft target policy, so that each DFP update corresponds to a gradient step in probability space. By construction, this gradient is decomposed into an ascent toward higher action-value regions and a score matching with the anchor policy as a trust region. We further derive a simple, tractable surrogate of the otherwise intractable update loss, akin to behavior cloning on top-K critic-selected actions. We find empirically that this mechanism uniquely benefits the drifting backbone owing to its non-ODE parameterization. With one-step inference, DFP achieves state-of-the-art performance on several manipulation tasks across Robomimic and OGBench, outperforming ODE-based policies."
+  },
+  {
+    "title": "GATO: GPU-Accelerated and Batched Trajectory Optimization for Scalable Edge Model Predictive Control",
+    "original_title": "GATO: GPU-Accelerated and Batched Trajectory Optimization for Scalable Edge Model Predictive Control",
+    "link": "https://arxiv.org/abs/2510.07625",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.07625v2 Announce Type: replace \nAbstract: While Model Predictive Control (MPC) delivers strong performance across robotics applications, solving the underlying (batches of) nonlinear trajectory optimization (TO) problems online remains computationally demanding. Existing GPU-accelerated approaches either parallelize single solves, handle large batches at sub-real-time rates, or sacrifice model generality for speed. This leaves a large gap in solver performance for many state-of-the-art MPC applications that require real-time batches of tens to low-hundreds of solves. As such, we present GATO, an open source, GPU-accelerated, batched TO solver co-designed across algorithm, software, and computational hardware to deliver real-time throughput for these moderate batch size regimes. Our approach leverages a combination of block-, warp-, and thread-level parallelism within and across solves for ultra-high performance. We demonstrate the effectiveness of our approach through a combination of: simulated benchmarks showing speedups of 18-21x over CPU baselines and 1.4-16x over GPU baselines as batch size increases; case studies highlighting improved disturbance rejection and convergence behavior; and finally a validation on hardware using an industrial manipulator. We open source GATO to support reproducibility and adoption."
+  },
+  {
+    "title": "Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models",
+    "original_title": "Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2602.01166",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.01166v2 Announce Type: replace \nAbstract: Vision-Language-Action (VLA) models benefit from chain-of-thought (CoT) reasoning, but existing approaches incur high inference overhead and rely on discrete reasoning representations that mismatch continuous perception and control. We propose Latent Reasoning VLA (LaRA-VLA), a unified VLA framework that internalizes multi-modal CoT reasoning into continuous latent representations for embodied action. LaRA-VLA performs unified reasoning and prediction in latent space, eliminating explicit CoT generation at inference time and enabling efficient, action-oriented control. To realize latent embodied reasoning, we introduce a curriculum-based training paradigm that progressively transitions from explicit textual and visual CoT supervision to latent reasoning, and finally adapts latent reasoning dynamics to condition action generation. We construct two structured CoT datasets and evaluate LaRA-VLA on both simulation benchmarks and long-horizon real-robot manipulation tasks. Experimental results show that LaRA-VLA consistently outperforms state-of-the-art VLA methods while reducing inference latency by up to 90\\% compared to explicit CoT-based approaches, demonstrating latent reasoning as an effective and efficient paradigm for real-time embodied control. Project Page: https://loveju1y.github.io/Latent-Reasoning-VLA/"
+  },
+  {
+    "title": "DynaRetarget: Dynamically-Feasible Retargeting using Sampling-Based Trajectory Optimization",
+    "original_title": "DynaRetarget: Dynamically-Feasible Retargeting using Sampling-Based Trajectory Optimization",
+    "link": "https://arxiv.org/abs/2602.06827",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.06827v2 Announce Type: replace \nAbstract: In this paper, we introduce DynaRetarget, a complete pipeline for retargeting human motions to humanoid control policies. The core component of DynaRetarget is a novel Sampling-Based Trajectory Optimization (SBTO) framework that refines imperfect kinematic trajectories into dynamically feasible motions. SBTO incrementally advances the optimization horizon, enabling optimization over the entire trajectory for long-horizon tasks. We validate DynaRetarget by successfully retargeting hundreds of humanoid-object demonstrations and achieving higher success rates than the state of the art. The framework also generalizes across varying object properties, such as mass, size, and geometry, using the same tracking objective. This ability to robustly retarget diverse demonstrations opens the door to generating large-scale synthetic datasets of humanoid loco-manipulation trajectories, addressing a major bottleneck in real-world data collection."
+  },
+  {
+    "title": "HAIC: Humanoid Agile Object Interaction Control via Dynamics-Aware World Model",
+    "original_title": "HAIC: Humanoid Agile Object Interaction Control via Dynamics-Aware World Model",
+    "link": "https://arxiv.org/abs/2602.11758",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2602.11758v2 Announce Type: replace \nAbstract: Humanoid robots show promise for complex whole-body tasks in unstructured environments. Although Human-Object Interaction (HOI) has advanced, most methods focus on fully actuated objects rigidly coupled to the robot, ignoring underactuated objects with independent dynamics and non-holonomic constraints. These introduce control challenges from coupling forces and occlusions. We present HAIC, a unified framework for robust interaction across diverse object dynamics without external state estimation. Our key contribution is a dynamics predictor that estimates high-order object states (velocity, acceleration) solely from proprioceptive history. These predictions are projected onto static geometric priors to form a spatially grounded dynamic occupancy map, enabling the policy to infer collision boundaries and contact affordances in blind spots. We use asymmetric fine-tuning, where a world model continuously adapts to the student policy's exploration, ensuring robust state estimation under distribution shifts. Experiments on a humanoid robot show HAIC achieves high success rates in agile tasks (skateboarding, cart pushing/pulling under various loads) by proactively compensating for inertial perturbations, and also masters multi-object long-horizon tasks like carrying a box across varied terrain by predicting the dynamics of multiple objects."
+  },
+  {
+    "title": "SeedPolicy: Horizon Scaling via Self-Evolving Diffusion Policy for Robot Manipulation",
+    "original_title": "SeedPolicy: Horizon Scaling via Self-Evolving Diffusion Policy for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2603.05117",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.05117v3 Announce Type: replace \nAbstract: Imitation Learning (IL) enables robots to acquire manipulation skills from expert demonstrations. Diffusion Policy (DP) models multi-modal expert behaviors but degrades when naively increasing stacked observation horizons, limiting long-horizon manipulation. We propose Self-Evolving Gated Attention (SEGA), a temporal module that maintains a time-evolving latent state via gated attention, enabling efficient recurrent updates that accumulate long-term context into a compact latent representation while filtering irrelevant temporal information. Integrating SEGA into DP yields Self-Evolving Diffusion Policy (SeedPolicy), which resolves the temporal modeling bottleneck and extends the effective temporal horizon with moderate overhead. On the RoboTwin 2.0 benchmark with 50 manipulation tasks, SeedPolicy outperforms DP and other IL baselines. Averaged across both CNN and Transformer backbones, SeedPolicy achieves 36.8% relative improvement in clean settings and 169% relative improvement in randomized challenging settings over the DP. Compared to vision-language-action models such as RDT with 1.2B parameters, SeedPolicy achieves stronger performance in the clean setting with one to two orders of magnitude fewer parameters, demonstrating strong efficiency. These results establish SeedPolicy as a state-of-the-art imitation learning method for long-horizon robotic manipulation. Code is available at: https://anonymous.4open.science/r/SeedPolicy-64F0/."
+  },
+  {
+    "title": "Contact-Grounded Policy: Dexterous Visuotactile Policy with Generative Contact Grounding",
+    "original_title": "Contact-Grounded Policy: Dexterous Visuotactile Policy with Generative Contact Grounding",
+    "link": "https://arxiv.org/abs/2603.05687",
+    "date": "2026-05-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.05687v3 Announce Type: replace \nAbstract: Contact-rich dexterous manipulation with multi-finger hands remains an open challenge in robotics because task success depends on multi-point contacts that continuously evolve and are highly sensitive to object geometry, frictional transitions, and slip. Recently, tactile-informed manipulation policies have shown promise. However, most use tactile signals as additional observations rather than modeling contact state or how their action outputs interact with low-level controller dynamics. We present Contact-Grounded Policy (CGP), a visuotactile policy that grounds multi-point contacts by predicting coupled trajectories of actual robot state and tactile feedback, and using a learned contact-consistency mapping to convert these predictions into executable target robot states for a compliance controller. CGP consists of two components: (i) a conditional diffusion model that forecasts future robot state and tactile feedback in a compressed latent space, and (ii) a learned contact-consistency mapping that converts the predicted robot state-tactile pair into executable targets for a compliance controller, enabling it to realize the intended contacts. We evaluate CGP using a physical four-finger Allegro V5 hand with Digit360 fingertip tactile sensors, and a simulated five-finger Tesollo DG-5F hand with dense whole-hand tactile arrays. Across a range of dexterous tasks including in-hand manipulation, delicate grasping, and tool use, CGP outperforms visuomotor and visuotactile diffusion-policy baselines."
   },
   {
     "title": "Unitree brings App Store ecosystem to humanoid robots - digitimes",
@@ -17917,86 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "AW 2026에서 세계적으로 상업화 잠재성을 보여주는 3개 기업이 공연한 것임. 이 중에는 글로벌 지배 시장 가능성을 보유한 NVIDIA, Tesla, Figure AI 등이 포함됨. AW 2026에서는 이러한 회사의 투자력, 경쟁력을 확인할 수 있음."
-  },
-  {
-    "title": "WIRobotics AI 페허시티드",
-    "original_title": "WIRobotics Chosen for the Physical AI Fellowship Powered by AWS, NVIDIA, and MassRobotics",
-    "link": "https://humanoidroboticstechnology.com/industry-news/wirobotics-chosen-for-the-physical-ai-fellowship-powered-by-aws-nvidia-and-massrobotics/",
-    "date": "2026-03-13 09:32",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "WIRobotics가.AWS와 NVIDIA, MassRobotics의 가상 프로그램인 Physical AI Fellowships 2번째 조에 선정됐습니다. 이 프로그램은 하이-포텐셜 로봇 스타트업들이 물리적 AI 솔루션을 구축, 조정, 확대하는 데 도움을 주는 것입니다."
-  },
-  {
-    "title": "Sunday의 165억달러 Series B 투자환급",
-    "original_title": "Sunday Raises $165M Series B Funding Round",
-    "link": "https://humanoidroboticstechnology.com/industry-news/sunday-raises-165m-series-b-funding-round/",
-    "date": "2026-03-13 09:22",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "Coatue를 주도하여 1.15조달러 평가치에서 165억달러를 지원하며, Thomas Laffont는 이사회에 참여했다. Bain Capital Ventures, Fidelity Management & Research Company, Tiger Global, Benchmark, Conviction, Xtal Ventures 등 다른 투자자들도 참여했다. 이 자금으로 Sunday는 다양한 개발을 진행할 계획이다."
-  },
-  {
-    "title": "Tesollo는 고도F humanoid 로봇 팔을 출시함",
-    "original_title": "Tesollo launches compact humanoid robotic hand aimed at growing high-DoF robotics market - Robotics & Automation News",
-    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZlNPaExsZFliN0xnc2ZfLTRPUnlCUVluYldBZW0wbDFtQmpnUUxac3FhbVZXNWVDY25nc2dHanREUzBDZnJRTWdXUi1QM2FVZ19RYWxZTjMxdnNtNHZCZDRSNEViLXVEbU5lS2w3dnk4WmxOZTgzeFlsWGVpZUdJUk5QRkh0d3gxNHhMZDNza3pYOG4wS01mT0FGV0R0QmlBZG1WRG1PM1VnbkJmbThqQTNmRFVrSms1a1poSjY2dkhwRDdOSmlIVVFMcVRCTFJ1eXUtVENWMEo1cFQ1?oc=5",
-    "date": "2026-03-13 08:19",
-    "source": "Google News (Global Hand/Gripper)",
-    "category": "hand",
-    "summary": "Tesollo가 최근 고도F humanooid 로봇 팔을 출시하여 6도(F) 이상의自由도를 구현하는 것을 목표로 하는 thing. 이 로봇 팔은 compact한 디자인과 강점이 있으며, 다양한 산업에서 사용될 수 있는 versatility를 갖추고 있음.\n\n(Note: KOREAN_TITLE is the translated title in Korean, and KOREAN_SUMMARY is a concise summary of the content.)"
-  },
-  {
-    "title": "NVIDIA GTC 2026 AI Burning Man이 다음 주에 열리다 - 예상되는 주요 콘텐츠",
-    "original_title": "AI Burning Man happens next week –what to expect at Nvidia GTC 2026 - theregister.com",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQaXl5Ml95S0p0ZVJ1bmJVRDRyLWhfTUNvanBYVHcteWxoUmJ4b1VzYllPeDZQaDdfT0g4Q0k5MDV3djNIcW5hNU9wU2tmSUxyV0dHOUdjbUt3ZlBGRGYwR01MWFdEZHFSd3ZvMmxIbkVkYkR4OE9HMG82VkRHTWt1ZXN5Y0hrbjJub3lTeA?oc=5",
-    "date": "2026-03-13 06:30",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA GTC 2026 AI Burning Man이 개최되는 다음 주에는 인공지능(AI) 및 자율주행차량 등 cutting-edge 테크놀로지의 최신 개발과 적용을 집중적으로 소개할 예정이다. 특히, NVIDIA의 AI 인프라 및 자동驾驶 기술에 대한 업데이트를 포함하여 AI 산업의 전망을 살펴보게 할 것이다."
-  },
-  {
-    "title": "삼성 'HAND LAB'",
-    "original_title": "Samsung Bets on the Robot Hand: Inside Its New ‘Hand Lab’ Driving the Next Wave of Humanoid Innovation - kmjournal.net",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9NdWpxamR3a1gxeXMzdHFlcVI1VnJBejNPblJVT2Y3a1RxSFpLemZ1WTRVeWRtbVM3LXNCVlpyRTFVckZUX0R5VEtNc0c5cXM5aWVxNkRRUUtSOGV3TWVzWXltTmVkeXpnT3c?oc=5",
-    "date": "2026-03-13 05:15",
-    "source": "Google News (Robot Hand)",
-    "category": "hand",
-    "summary": "삼성은 인간형 로봇의 새로운 물결을 주도하는 데 HAND LAB을 설정하여, 로봇 팔에 투자하고 있습니다. 이 프로젝트는 고급화된 의사 결정 알고리즘과 휴머노이드 로봇의 강력한 상호작용을 특징으로 하는데, 이를 통해 인간형 로봇이 다양한 직무에서 활용할 수 있도록 합니다.\n\n(Note: I followed the instructions to translate the title and summarize the content into 2-3 concise Korean sentences. The tone and style are formal and objective, with no polite conversational endings.)"
-  },
-  {
-    "title": "Vision-Based Hand Shadowing for Robotic Manipulation via Inverse Kinematics",
-    "original_title": "Vision-Based Hand Shadowing for Robotic Manipulation via Inverse Kinematics",
-    "link": "https://arxiv.org/abs/2603.11383",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "robotic manipulation의 제어 어려움을 해결하기 위해 우리는 RGB-D 카메라를 장착한 3D 프린터 글래스에서 egocentric 카메라에 기반한 off-line hand-shadowing 및 retargeting 파이프라인을 제안합니다. 이 파이프라인은 MediaPipe Hands를 사용하여 21개의 손 지점을 감지하고, 그들을 3D로 전입시키고, SO-ARM101 로봇의 좌표 프레임으로 변환하고, PyBullet을 사용한 역 키네마틱 문제를 해결하여 로봇의 조인트 명령을 얻습니다. IK retargeting 파이프라인은 구조화된 pick-and-place 벤치마크에서 90%의 성공률을 달성했으며, 다양한 시나리오에 적용 가능성을 확인했습니다."
-  },
-  {
-    "title": "로봇 시스템의 로드 분배 일반화 이론 ~임",
-    "original_title": "A Generalized Theory of Load Distribution in Redundantly-actuated Robotic Systems",
-    "link": "https://arxiv.org/abs/2603.11431",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 연구에서는 다중 незалеж闭루프 운동체인으로 구성된 역할로봇 시스템에서 적용된 로드는 rigid bodies 내부에 어떻게 분배되는지 설명하는 일반적인 이론을 제시합니다. 이 이론은 resultant wrench가 주어진 rigid body에 적용된 manipulating wrench의 가능성 집합을 완전히 특성화하며, 다지가 finger gripper, legged robot, cooperating robot 등 다양한 overconstrained 메커니즘에 대한 force-control에 중요한 의미를 가집니다. 또한 우리는 wrench synthesis와 wrench analysis 문제의 구체적인 해결책을 도출하고, 이러한 해결책은 적용된 wrench의 수에 tuyến형으로 성장하며, 큰 행렬의 역산 또는 숫자적 방법이 필요하지 않습니다. 마지막으로, 우리는 현재 최고의 접근 방식의 중요한 약점을 indentify하고, 보완 제안을 提出합니다. 이러한 제안은 이LLUSTRATIVE 예를 보여주는 장점을 가집니다."
-  },
-  {
-    "title": "SPARK: Skeleton-Parameter Aligned Retargeting on Humanoid Robots with Kinodynamic Trajectory Optimization",
-    "original_title": "SPARK: Skeleton-Parameter Aligned Retargeting on Humanoid Robots with Kinodynamic Trajectory Optimization",
-    "link": "https://arxiv.org/abs/2603.11480",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "인간 운동 데이터를 기초로 일반용 인공 인간 제어 정책을 훈련하는 데富한 전제를 제공하지만, raw 데모는 로봇의 경학 및 역동을 고려하지 않아 직접 사용이 제한되는 문제를 해결하기 위해 우리는 두 단계 파이프라인을 제안합니다. 첫째, 우리는 인간 운동을 일원화된 로봇 설명 형식(RDF)-based skeleton 표현으로 변환하고 이를 대상 인공 인간의 크기를 조정하여 Skeleton 구조를 맞춥니다. 둘째, 우리는 retargeted 경로를 kinodynamic 경로 최적화(KTO) 통해 개선합니다. KTO는 세 단계로 구성됩니다: 경학 TO, 역동, 그리고 풀 경학 TO. 각 단계는 이전 해결에서 시작됩니다. 이러한 결과는 동적 일관 상태 경로 및 조인트 토크 프로파일을 제공하여 학습 기반 제어자에 고급한 참조를 제공합니다. Skeleton 조정과 KTO를 결합하면 다양한 인공 인간 플랫폼에서 자연스럽고 물리적으로 일관된 운동 참조를 생성할 수 있습니다."
-  },
-  {
-    "title": "다중 스테이지 덱스트로스 태스크 수행을 위한 실제적 접근: 동시 전후 주먹 조작 및 비전후 주먹 조작",
-    "original_title": "Concurrent Prehensile and Nonprehensile Manipulation: A Practical Approach to Multi-Stage Dexterous Tasks",
-    "link": "https://arxiv.org/abs/2603.11655",
-    "date": "2026-03-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Dexterous한 손으로는 동시 전후 주먹 조작과 비전후 주먹 조작을 가능하게 하는 멀티-스테이지 덱스트로스 태스크를 해결하는 데 도움이 되는 새로운 접근법을 제안합니다. 이 접근법은 demonstrations을 object-centric skills로 분할하고, 이를 기반으로 현재 물체의 형상에 따라 demonstrated skills을 검색하고, 이를 수행하는 retrieve-align-execute 방식을 사용합니다. 실제 1,000여회의 실험에서 평균적으로 66%의 성공률을 달성했습니다."
   }
 ]
