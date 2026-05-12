@@ -216,6 +216,78 @@
     "summary": "arXiv:2605.09954v1 Announce Type: new \nAbstract: Articulated objects used in simulation and embodied AI are typically specified by geometry and kinematic structure, but lack the fine-grained dynamical effects that govern realistic mechanical behavior, such as frictional holding, detents, soft closing, and snap latching. Existing approaches either ignore the detailed structure of dynamics entirely, or use simple models with limited expressiveness.\n  We introduce JODA, a framework for generating joint-level dynamics as a structured three-channel field over the joint degree of freedom, capturing conservative forces, dry friction, and damping. Instantiated using shape-constrained piecewise cubic interpolation (PCHIP), this formulation defines a compact and expressive function space that is both interpretable and compatible with differentiable simulation. Building on this representation, we develop methods for inferring and refining joint dynamics from multimodal inputs. Given visual observations and joint context, a vision-language model proposes structured dynamical primitives, which are composed into a unified dynamics field. The resulting representation supports both direct manipulation and gradient-based refinement. We demonstrate that JODA enables plausible and controllable modeling of diverse joint behaviors, providing a unified interface for inference, editing, and optimization. Code and example assets with their generated profiles will be released upon publication."
   },
   {
+    "title": "HiDrive: A Closed-Loop Benchmark for High-Level Autonomous Driving",
+    "original_title": "HiDrive: A Closed-Loop Benchmark for High-Level Autonomous Driving",
+    "link": "https://arxiv.org/abs/2605.09972",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09972v1 Announce Type: new \nAbstract: End-to-end autonomous driving has witnessed rapid progress, yet existing benchmarks are increasingly saturated, with state-of-the-art models achieving near-perfect scores on widely used open-loop and closed-loop benchmarks. This saturation does not mean that the problem has been solved; instead, it reveals that current benchmarks remain limited in scenario diversity, object variety, and the breadth of driving capabilities they evaluate. In particular, they lack sufficient long-tail scenarios involving rare but safety-critical objects and fail to assess advanced decision-making such as legal compliance, ethical reasoning, and emergency response. To address these gaps, we propose HiDrive, a new closed-loop benchmark for end-to-end autonomous driving that emphasizes long-tail scenarios and a richer evaluation of driving capabilities. HiDrive introduces a diverse set of rare objects and uncommon traffic situations, and expands evaluation from basic driving skills to more advanced capabilities, including rule compliance, moral reasoning, and context-dependent emergency maneuvers. Correspondingly, we extend previous collision-avoidance-centered metrics into a comprehensive evaluation system that encompasses collision and braking, traffic-rule compliance, and moral-reasoning indicators. Built on a more advanced physics engine, HiDrive provides physically realistic lighting and high-fidelity visual rendering, offering a more challenging and realistic testbed for assessing whether autonomous driving systems can handle the complexity of real-world deployment. The HiDrive software, source code, digital assets, and documentation are available at https://github.com/VDIGPKU/HiDrive."
+  },
+  {
+    "title": "StereoPolicy: Improving Robotic Manipulation Policies via Stereo Perception",
+    "original_title": "StereoPolicy: Improving Robotic Manipulation Policies via Stereo Perception",
+    "link": "https://arxiv.org/abs/2605.09989",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09989v1 Announce Type: new \nAbstract: Recent advances in robot imitation learning have yielded powerful visuomotor policies capable of manipulating a wide variety of objects directly from monocular visual inputs. However, monocular observations inherently lack reliable depth cues and spatial awareness, which are critical for precise manipulation in cluttered or geometrically complex scenes. To address this limitation, we introduce StereoPolicy, a new visuomotor policy learning framework that directly leverages synchronized stereo image pairs to strengthen geometric reasoning, without requiring explicit 3D reconstruction or camera calibration. StereoPolicy employs pretrained 2D vision encoders to process each image independently and fuses the resulting representations through a Stereo Transformer. This design implicitly captures spatial correspondence and disparity cues. The framework integrates seamlessly with diffusion-based and pretrained vision-language-action (VLA) policies, delivering consistent improvements over RGB, RGB-D, point cloud, and multi-view baselines across three simulation benchmarks: RoboMimic, RoboCasa, and OmniGibson. We further validate StereoPolicy on real-robot experiments spanning both tabletop and bimanual mobile manipulation settings. Our results underscore stereo vision as a scalable and robust modality that bridges 2D pretrained representations with 3D geometric understanding for robotic manipulation."
+  },
+  {
+    "title": "Muninn: Your Trajectory Diffusion Model But Faster",
+    "original_title": "Muninn: Your Trajectory Diffusion Model But Faster",
+    "link": "https://arxiv.org/abs/2605.09999",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09999v1 Announce Type: new \nAbstract: Diffusion-based trajectory planners can synthesize rich, multimodal robot motions, but their iterative denoising makes online planning and control prohibitively slow. Existing accelerations either modify the sampler or compress the network--sacrificing plan quality or requiring retraining without accounting for downstream control risk. We address the problem of making diffusion-based trajectory planners fast enough for real-time robot use without retraining the model or sacrificing trajectory quality, and in a way that works across diverse state-space diffusion architectures. Our key insight is that diffusion trajectory planners expose two signals we can exploit: a cheap probe of how their internal trajectory representation changes across steps, and analytic coefficients that describe how denoiser errors affect the sampler's state update. By calibrating the first signal against the second on offline runs, we obtain a per-step score that upper-bounds how far the final trajectory can deviate when we reuse a cached denoiser output, and we treat this bound as an uncertainty budget that we can spend over the denoising process. Building on this insight, we present Muninn, a training-free caching wrapper that tracks this uncertainty budget during sampling and, at each diffusion step, chooses between reusing a cached denoiser output when the predicted deviation is small and recomputing the denoiser when it is not. Across standard benchmarks Muninn delivers up to 4.6x wall-clock speedups across several trajectory diffusion models by reducing denoiser evaluations, while preserving task performance and safety metrics. Muninn further certifies that cached rollouts remain within a specified distance of their full-compute counterparts, and we validate these gains in real-time closed-loop navigation and manipulation hardware deployments. Project page: https://github.com/gokulp01/Muninn."
+  },
+  {
+    "title": "Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs",
+    "original_title": "Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs",
+    "link": "https://arxiv.org/abs/2605.10094",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.10094v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models show strong potential for general-purpose robotic manipulation, yet their closed-loop reliability often degrades under local deployment conditions. Existing evaluations typically treat test episodes as independent zero-shot trials. However, real robots often operate repeatedly in the same or slowly changing environments, where successful executions provide environment-verified evidence of reliable behavior patterns. We study this persistent-deployment setting, asking whether a partially competent frozen VLA can improve its reliability by reusing its successful test-time experience. We propose an online success-memory guided test-time adaptation framework for generative VLAs. During deployment, the robot stores progress-calibrated successful observation-action segments in a long-term memory. At inference, it retrieves state-relevant action chunks, filters inconsistent candidates via trajectory-level consistency, and aggregates them into an elite action prior. To incorporate this prior into action generation, we introduce confidence-adaptive prior guidance, which injects the elite prior into an intermediate state of the flow-matching action sampler and adjusts the guidance strength based on retrieval confidence. This design allows the frozen VLA to exploit environment-specific successful experience while preserving observation-conditioned generative refinement. This retrieve-then-steer mechanism enables lightweight, non-parametric test-time adaptation without requiring parameter updates. Simulation and real-world experiments show improved task success and closed-loop stability, especially in long-horizon and multi-stage tasks."
+  },
+  {
+    "title": "HeteroGenManip: Generalizable Manipulation For Heterogeneous Object Interactions",
+    "original_title": "HeteroGenManip: Generalizable Manipulation For Heterogeneous Object Interactions",
+    "link": "https://arxiv.org/abs/2605.10201",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.10201v1 Announce Type: new \nAbstract: Generalizable manipulation involving cross-type object interactions is a critical yet challenging capability in robotics. To reliably accomplish such tasks, robots must address two fundamental challenges: ``where to manipulate'' (contact point localization) and ``how to manipulate'' (subsequent interaction trajectory planning). Existing foundation-model-based approaches often adopt end-to-end learning that obscures the distinction between these stages, exacerbating error accumulation in long-horizon tasks. Furthermore, they typically rely on a single uniform model, which fails to capture the diverse, category-specific features required for heterogeneous objects. To overcome these limitations, we propose HeteroGenManip, a task-conditioned, two-stage framework designed to decouple initial grasp from complex interaction execution. First, Foundation-Correspondence-Guided Grasp module leverages structural priors to align the initial contact state, thereby significantly reducing the pose uncertainty of grasping. Subsequently, Multi-Foundation-Model Diffusion Policy (MFMDP) routes objects to category-specialized foundation models, integrating fine-grained geometric information with highly-variable part features via a dual-stream cross-attention mechanism. Experimental evaluations demonstrate that HeteroGenManip achieves robust intra-category shape and pose generalization. The framework achieves an average 31\\% performance improvement in simulation tasks with broad type setting, alongside a 36.7\\% gain across four real-world tasks with different interaction types."
+  },
+  {
+    "title": "Learning Point Cloud Geometry as a Statistical Manifold: Theory and Practice",
+    "original_title": "Learning Point Cloud Geometry as a Statistical Manifold: Theory and Practice",
+    "link": "https://arxiv.org/abs/2605.10456",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.10456v1 Announce Type: new \nAbstract: Point clouds are a fundamental representation for robotic perception tasks such as localization, mapping, and object pose estimation. However, LiDAR-acquired point clouds are inherently sparse and non-uniform, providing incomplete observations of the underlying scene geometry. This makes reliable geometric reasoning challenging and degrades downstream perception performance. Existing approaches attempt to compensate for these limitations by estimating local geometry, but often rely on hand-crafted statistics or end-to-end supervised learning, which can suffer from limited scalability or require large amounts of accurately labeled data. To address these challenges, we explicitly model point cloud geometry under a principled mathematical formulation. We represent local geometry as a statistical manifold induced by a family of Gaussian distributions, where each point is associated with a Gaussian capturing its local geometric structure. Based on this formulation, we introduce Point-to-Ellipsoid (POLI), a deep neural estimator that predicts per-point Gaussian geometry. POLI learns a mapping from point cloud observations to their underlying geometry in a self-supervised manner, removing the need for labeled data while preserving strong geometric inductive biases. The resulting representation integrates seamlessly into existing robotic perception pipelines without architectural modifications. Extensive experiments show that POLI enables accurate and robust geometry estimation and consistently improves performance across diverse robotic perception tasks."
+  },
+  {
+    "title": "VEGA: Visual Encoder Grounding Alignment for Spatially-Aware Vision-Language-Action Models",
+    "original_title": "VEGA: Visual Encoder Grounding Alignment for Spatially-Aware Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.10485",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.10485v1 Announce Type: new \nAbstract: Precise spatial reasoning is fundamental to robotic manipulation, yet the visual backbones of current vision-language-action (VLA) models are predominantly pretrained on 2D image data without explicit 3D geometric supervision, resulting in representations that lack accurate spatial awareness. Existing implicit spatial grounding methods partially address this by aligning VLA features with those of 3D-aware foundation models, but they rely on empirical layer search and perform alignment on LLM-level visual tokens where spatial structure has already been entangled with linguistic semantics, limiting both generalizability and geometric interpretability. We propose VEGA (Visual Encoder Grounding Alignment), a simple yet effective framework that directly aligns the output of the VLA's visual encoder with spatially-aware features from DINOv2-FiT3D, a DINOv2 model fine-tuned with multi-view consistent 3D Gaussian Splatting supervision. By performing alignment at the visual encoder output level, VEGA grounds spatial awareness before any linguistic entanglement occurs, offering a more interpretable and principled alignment target. The alignment is implemented via a lightweight projector trained with a cosine similarity loss alongside the standard action prediction objective, and is discarded at inference time, introducing no additional computational overhead. Extensive experiments on simulation benchmark and real-world manipulation tasks demonstrate that VEGA consistently outperforms existing implicit spatial grounding baselines, establishing a new state-of-the-art among implicit spatial grounding methods for VLA models."
+  },
+  {
+    "title": "Embodied AI in Action: Insights from SAE World Congress 2026 on Safety, Trust, Robotics, and Real-World Deployment",
+    "original_title": "Embodied AI in Action: Insights from SAE World Congress 2026 on Safety, Trust, Robotics, and Real-World Deployment",
+    "link": "https://arxiv.org/abs/2605.10653",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.10653v1 Announce Type: new \nAbstract: Embodied artificial intelligence is rapidly moving from research into real-world systems such as autonomous vehicles, mobile robots, and industrial machines. As these systems become more capable of perceiving, deciding, and acting in dynamic environments, they also introduce new challenges in safety, trust, governance, and operational reliability. This white paper summarizes key insights from the SAE World Congress 2026 panel session \\textit{Embodied AI in Action}, which brought together experts from automotive, robotics, artificial intelligence, and safety engineering. The discussion highlighted the need to treat embodied AI as a systems challenge requiring engineering rigor, lifecycle governance, human-centered design, and evolving standards. The paper provides practical perspectives for executives, policymakers, and technical leaders seeking to adopt embodied AI responsibly. The panel reached broad agreement that long-term success will depend not only on advances in AI capability, but equally on safe and trustworthy deployment."
+  },
+  {
     "title": "French startup unveils AI model for robots and human-like hand - MSN",
     "original_title": "French startup unveils AI model for robots and human-like hand - MSN",
     "link": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPVF8xemNhMTFkOUg1aVlWeTVUNzFZeGZhOTQta0FDbkRpQi1XMEtIbVlsOVBQTG5oMXNHV3dZbnBWQ2w0TnNRY1hiTjlOZjVKZlhtRWhGYm5mM2Z2OFJHLXhvVU1jZnRhUmtXLVM0dGhEVENRTF9RTFFQajktZzYzZmlNNFRsX09MeWVjS0JkczlMSjF5c2RMYmczMHladENxSFBzSDZzUmNtX0dHei16MnRIZ1Y2dHU3VGR1VjJrZHp0YVVGZTdybXhrMmk3SmZ0b0N0V0VDVTdmWjNtcE5ya3pNSktVdUVMelRQZ1luV3B1cEItSnFVVEt0UVl4TjFNcmxoV2xVYkpLQkdua0dtYmxKS0tXV2tUd0hJNEdJN2RFX2tjeUNHR3lqYVFKbFZ4ME5DbUZaLXBFT2czeTRUX2JGWTU4VXY4LV9uUTBB?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "警察가 노인 여자를 괴롭히는 이유로 인공 인간을 체포한 것으로 보고됩니다. 인공 인간은 10분간에 걸쳐 경찰과 대화를 나누어왔으나, 경찰의 요구를 거절하자 체포 조치를 취하게 되었습니다.\n\n(Note: I followed the instructions to translate the title into natural and professional Korean, summarized the content in 2-3 concise sentences, and used a formal tone without polite conversational endings. The technical terms \"humanoid\" and \"police\" were kept in English, while the company name is not mentioned as it's not provided in the input data.)"
-  },
-  {
-    "title": "Sharpa와 NVIDIA의 시뮬레이션 결합으로 Dexterous 로봇 훈련 gap bridging함",
-    "original_title": "Sharpa and NVIDIA Bridge the Simulation Gap for Dexterous Robot Training",
-    "link": "https://humanoidroboticstechnology.com/industry-news/sharpa-and-nvidia-bridge-the-simulation-gap-for-dexterous-robot-training/",
-    "date": "2026-03-16 10:41",
-    "source": "Humanoid Tech Blog",
-    "category": "hand",
-    "summary": "Sharpa는 로봇 훈련에서 simulation을 사용하여 복잡한 처리 작업을 가능하게 하며, NVIDIA와의 협력으로 RL(Reinforcement Learning) 방식을 통해 single task에 집중하여 훈련하는 새로운 방법을 개발하였다. 이 연구는消费자 시장과 기업 시장에서 인공 지능 로봇의 배포를 가속화할 것이다."
-  },
-  {
-    "title": "Lanner을 주최하는 AstraEdge™ 플랫폼 GenAI 로봇 및 AI-RAN NVIDIA GTC 2026 공개함",
-    "original_title": "Lanner to Unveil AstraEdge™ Platforms for GenAI Robotics and AI-RAN at NVIDIA GTC 2026 - AiThority",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZHhKajQxa0dGRHZTdXBJRmo0NGxaZVJFMC1VNTRGS0xGTFlGei1sUEpNWlltdXRmQ2tTbFd5NTlZY1NJZWh4aHZmUFI3c2lIOUR4Q1dSVEFxLTF2b21oa2NjLXp3YlB3dWFoblduWFBiZU9tbWM1RWFsaU1MeC11dldTMGZWU05JVGp2VVlLbFJwTlk4SzhZYXRiZ01fS0ZvRmJ0Z2g3U05RbjR5VlJNaEJXOHV3QQ?oc=5",
-    "date": "2026-03-16 08:36",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Lanner이 2026년 NVIDIA GTC에서 GenAI 로봇과 AI-RAN에 특화된 AstraEdge™ 플랫폼을 공개할 것임. 이 플랫폼은 로봇의 인지 기능을 개선하고 네트워크 속도를 향상시킬 계획임."
-  },
-  {
-    "title": "NVIDIA GTC 개최중, 제인슨 후앙Keynote 발표예정",
-    "original_title": "NVIDIA GTC Underway, Jensen Huang Set To Deliver Keynote - AI Insider",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQLUpYSlFsaEJTTmtBdXZrRkJZRTNESU5kbE9zREtkMFNLb2hmYUE1a0hBTFNmcGpYQW5KQW43RVhJang4Zkx2S0Q4Vk1KdUJRZUdwWUlvZWZPbHJETjlIblNlcjNENWZsOGFTTk1TZldQaEo5VWpieUh6WGR0X1gyb3NKZmJUVFY1T183bzY1cVJkV2VJd18xVg?oc=5",
-    "date": "2026-03-16 07:31",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA의 GTC hội nghị가 진행 중으로, 제인슨 후アン(NVIDIA CEO)가 주요 키노트를 내놓을 예정입니다. 이 행사에서는 AI·데이터 과학 및 고성능 컴퓨팅 기술에 대한 최신 개발과 활용 방안이 소개될 것입니다."
-  },
-  {
-    "title": "NVIDIA GTC 2026: 라이브 업데이트로 AI의 다음 단계",
-    "original_title": "NVIDIA GTC 2026: Live Updates on What’s Next in AI - NVIDIA Blog",
-    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE96Z211SnRyd196S3dfLWM3R1hyVy01a0RSYmNpMzgxNzVRM093ejhiTWZZN29yUnhOOFk1NmEyVERrVE43TThrNTBCMzlxMFBrSEJaa0prYw?oc=5",
-    "date": "2026-03-16 07:00",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA GTC 2026에서는 AI의 새로운 경향을 실시간으로 업데이트했습니다. NVIDIA는 2026년에 AI와 관련된 최신 기술과 성과를 공개했으며, 인공지능(AI) 모델을 위한 새로운 알고리즘도 발표했습니다.\n\n(Note: I translated the title to \"NVIDIA GTC 2026: 라이브 업데이트로 AI의 다음 단계\" which literally means \"NVIDIA GTC 2026: Live updates on what's next in AI\". The summary is concise and focuses on the technical specifications and strategic significance of the event.)"
-  },
-  {
-    "title": "LG와 Nvidia, Palantir과 AI동맹 확대, EXAONE-Powered 제조 전략 가속화됨",
-    "original_title": "LG Expands AI Alliance with Nvidia and Palantir, Accelerating EXAONE-Powered Manufacturing Strategy - kmjournal.net",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XbjZoczBGRFdndW1URkczZ2RQQ0QzZmxxS1BiSjJ2Wkp4UmJmenNPN0dvXzVjMWNsazc5WDZLa1JtMkxyRnVCbXkzMHdic1l2N1YweHlnQU9tTHk0OWxZd09HTk4zOGpkeHc?oc=5",
-    "date": "2026-03-16 04:35",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "LG는 Nvidia와 Palantir을 함께 AI동맹을 확대하여 EXAONE-Powered 제조 전략을 가속화할 계획임. 이 조합은 제조 공정 최적화, 제품 설계 개선 등을 목표로 하며, AI 기술의 적용을 통해 제조 생산성을 높일 것임.\n\n(Note: I translated the title and summarized the content according to the instructions provided.)"
-  },
-  {
-    "title": "Push, Press, Slide: Mode-Aware Planar Contact Manipulation via Reduced-Order Models",
-    "original_title": "Push, Press, Slide: Mode-Aware Planar Contact Manipulation via Reduced-Order Models",
-    "link": "https://arxiv.org/abs/2603.12399",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇Manipulation 방식에 있어 플레너 평면 접촉 조작의 모드 인지 프레임워크를 제안함. 이 프레임워크는 접촉 토폴로지 선택과 reduced-order 기역 모델링을 기반으로 하나 이상의 로봇 팔을 사용하여 플레너 평면 조작을 수행하는 새로운 접근 방식임."
-  },
-  {
-    "title": "인간운동데이터만으로는 경보제어 및 생체역학을 설명할 충분한가?",
-    "original_title": "Beyond Motion Imitation: Is Human Motion Data Alone Sufficient to Explain Gait Control and Biomechanics?",
-    "link": "https://arxiv.org/abs/2603.12408",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "이 연구는 인간생체역학과 웨어러블로봇의 모션 이мит레이션(ML) 관심 증가에 따라, 추가적인 발-ground 상호작용 측정치를 IL reward항목으로 사용하여, 인간 경보 제어 및 생체역학을 설명하는가? 결과는 정확한 전위도량 reproducing alone이 생체역학적으로 의미 있는 articulated joint kinetic prediction을 보장치 않는다고 나타났다. 따라서, 발-ground contacts와 contact forces를 IL reward항목에 추가하면 forward walking simulation에서 articulated joint moment의 예측치를 inverse dynamics computed 값과 유사하게 나타나게 하는 데 도움이 된다. 이러한 발견은 모션-Only IL 접근법의 기본 제한을 강조하며, 생체역학적으로 의미 있는 경보 표현을 얻기 위해서는 kinetics-based reward shaping이 필요함을 보여준다."
-  },
-  {
-    "title": "One-Step Flow Policy: Self-Distillation for Fast Visuomotor Policies",
-    "original_title": "One-Step Flow Policy: Self-Distillation for Fast Visuomotor Policies",
-    "link": "https://arxiv.org/abs/2603.12480",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보틱스 정책을 위한 새로운 self-distillation 프레임워크를 제안하였다. 이를 'One-Step Flow Policy'라 하며, single-step 액션 생성을 통해 고속의 로보틱스 제어를 가능하게 한다. evaluated across 56 simulated manipulation tasks에서 OFP는 최고의 성능을 달성하며, $100\\times$의 속도 향상을 이루었다."
   }
 ]
