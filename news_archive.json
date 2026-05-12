@@ -72,6 +72,78 @@
     "summary": "arXiv:2605.08722v1 Announce Type: new \nAbstract: Multi-agent systems can be extremely efficient when working concurrently and collaboratively, e.g., for delivery, surveillance, search and rescue. Coordination of such teams often involves two aspects: selecting appropriate subteams for different tasks in various areas, and coordinating agents in the subteams to execute the associated subtasks. Existing work often assumes that the tasks are static and known beforehand, where an integer program can be formulated and solved offline. However, in many applications, the team-wise tasks are generated online continually by external requests, and the amount of subtasks within each task is uncertain, e.g., the number of packages to deliver or victims to rescue. The aforementioned offline solution becomes inadequate as it would require constant re-computation for the whole team and global communication to broadcast the results. Thus, this work tackles the large-scale coordination problem under continual and uncertain temporal tasks, specified as temporal logic formulas over collaborative actions. The proposed hierarchical framework, HULK, consists of two interleaved layers: the rolling assignment of currently known tasks to subteams within a certain horizon, and the dynamic coordination within a subteam given the detected subtasks during online execution. Thus, coordination is performed hierarchically at different granularities and triggering conditions, improving computational efficiency and robustness. The method is validated rigorously over large-scale heterogeneous systems under various temporal tasks and environment uncertainties."
   },
   {
+    "title": "Latent Geometry Beyond Search: Amortizing Planning in World Models",
+    "original_title": "Latent Geometry Beyond Search: Amortizing Planning in World Models",
+    "link": "https://arxiv.org/abs/2605.08732",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08732v1 Announce Type: new \nAbstract: Modern vision-based world models can represent observations as compact yet expressive latent manifolds, but fast goal-oriented planning in these spaces remains challenging. This raises a central question: when does a learned representation simplify control, rather than merely enabling prediction? We study this question in a pretrained LeWorldModel, whose latent geometry is regularized for smoothness and uniformity. Our key insight is that, under such geometry, planning can be amortized into a latent inverse-dynamics mapping instead of requiring online search. We therefore replace iterative planning with a lightweight Goal-Conditioned Inverse Dynamics Model (GC-IDM) that maps the current latent state, goal latent state, and remaining horizon directly to the next action. Empirically, across four benchmark environments spanning navigation, contact-rich manipulation, and continuous control, our controller matches or exceeds CEM in seven of eight environment-protocol settings while reducing per-decision cost by 100-130x. A broader sweep over test-time planners (CEM, MPPI, iCEM, and gradient-based methods) shows that this result is not specific to a particular optimizer. These findings suggest that much of the structure recovered by test-time planning is already locally encoded in the latent representation. More broadly, our results indicate that sufficiently structured latent spaces can shift part of the planning burden from online optimization to learned inference."
+  },
+  {
+    "title": "A Visuo-Tactile Data Collection System with Haptic Feedback for Coarse-to-Fine Imitation Learning",
+    "original_title": "A Visuo-Tactile Data Collection System with Haptic Feedback for Coarse-to-Fine Imitation Learning",
+    "link": "https://arxiv.org/abs/2605.08757",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08757v1 Announce Type: new \nAbstract: We present a visuo-tactile data-collection system that generates temporally structured, contact-rich demonstrations for imitation learning. Conventional systems often decouple the operator from contact forces, which hinders the demonstration of subtle force modulation. Our system introduces a direct-drive gripper that the operator actuates with the fingers, preserving natural haptic feedback. Integrated visual sensors and custom tactile arrays capture image streams and contact geometry. A handle-mounted push button enables the operator to annotate the task's temporal structure in real time by marking task-critical regions. By fusing in-hand force perception with in-situ temporal annotation, the system produces multimodal datasets designed for coarse-to-fine learning algorithms that exploit structural task knowledge, enabling the development of high-quality manipulation policies."
+  },
+  {
+    "title": "Omni-scale Learning-based Sequential Decision Framework for Order Fulfillment of Tote-handling Robotic Systems",
+    "original_title": "Omni-scale Learning-based Sequential Decision Framework for Order Fulfillment of Tote-handling Robotic Systems",
+    "link": "https://arxiv.org/abs/2605.08758",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08758v1 Announce Type: new \nAbstract: Driven by the rapid expansion of e-commerce and small-batch production, the size of the intralogistics load unit of finished goods, semi-finished goods and raw materials is steadily shrinking. Totes are gradually replacing pallets as the primary handling and storage container. This shift has propelled tote-handling robotic systems to the forefront of automation order fulfillment centers. The order-fulfillment decisions of tote-handling robotic systems share a common order-tote-robot sequential decision-making nature. Existing studies primarily focus on decision mechanisms tailored to particular systems, making it difficult to generalize or transfer them to other contexts. We propose an Omni-scale Learning-based Sequential Decision Framework for Order Fulfillment of Tote-handling Robotic Systems (OLSF-TRS), a generalized and scalable sequential decision framework that combines structured combinatorial optimization with multi-agent reinforcement learning to coordinate order,tote, and robot decisions. On small-scale tote-handling robotic systems, OLSF-TRS achieves near-optimal performance with average optimality gaps below 3.5% across two distinct system configurations. In large-scale scenarios, OLSF-TRS consistently outperforms heuristic baselines across two different system types, reducing total tote movements by 8-12% and over 30% compared to SOTA rule-based approaches, while maintaining real-time responsiveness. These improvements translate into tangible operational benefits, including cost reduction, lower energy consumption, and enhanced throughput stability. The proposed framework delivers an efficient and unified order fulfillment decision-making framework for widely deployed tote-handling robotic systems,supporting high-quality order fulfillment in both e-commerce and industrial logistics sectors."
+  },
+  {
+    "title": "ProcVLM: Learning Procedure-Grounded Progress Rewards for Robotic Manipulation",
+    "original_title": "ProcVLM: Learning Procedure-Grounded Progress Rewards for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.08774",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08774v1 Announce Type: new \nAbstract: Long-horizon robotic manipulation requires dense feedback that reflects how a task advances through its procedural stages, not merely whether the final outcome is successful. Existing reward models often rely on trajectory-level success labels or time-based interpolation, which can conflate elapsed time with true task progress and therefore fail to capture unfinished steps, stagnation, and failure states. We present ProcVLM, a progress-aware vision-language model that learns procedure-grounded progress as a dense reward signal for manipulation. Rather than deriving progress from terminal outcomes or temporal proxies, ProcVLM grounds progress estimation in procedural structure and intra-stage visual change, and further adopts a reasoning-before-estimation paradigm that infers the remaining atomic actions before estimating task progress. Specifically, we construct this supervision by synthesizing frame-level subtask-semantic annotations, assigning progress budgets according to subtask structure, and distributing each budget based on intra-subtask visual change. To train ProcVLM at scale, we build a standardized procedural supervision synthesis pipeline and construct ProcCorpus-60M from 30 embodied datasets with 60M annotated frames, from which we derive ProcVQA for procedure-aware pretraining, with progress estimation as the central task alongside action segmentation and future planning. Experiments on ProcVQA and reward-model benchmarks show that ProcVLM improves embodied procedural reasoning and yields more discriminative trajectory-internal progress estimates than representative baselines, supporting its use as a dense reward model for downstream reward-guided policy optimization. Project page: https://procvlm.github.io/"
+  },
+  {
+    "title": "ElasticFlow: One-Step Physics-Consistent Policy with Elastic Time Horizons for Language-Guided Manipulation",
+    "original_title": "ElasticFlow: One-Step Physics-Consistent Policy with Elastic Time Horizons for Language-Guided Manipulation",
+    "link": "https://arxiv.org/abs/2605.08799",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08799v1 Announce Type: new \nAbstract: Diffusion policies have demonstrated exceptional performance in embodied AI. However, their iterative denoising process results in high latency, and existing acceleration methods often sacrifice physical consistency. To address this, we propose ElasticFlow, a distillation-free, physics-consistent one-step policy framework. We reconstruct the Mean Field Theory by directly modeling the average velocity field, enabling a direct single-step mapping from noise to action. Addressing the Temporal Heterogeneity of robotic tasks, we introduce the Elastic Time Horizons mechanism. This mechanism effectively overcomes Spectral Bias by explicitly encoding control granularity, achieving efficient alignment between semantic instructions and physical execution horizons. Experiments on benchmarks such as LIBERO, CALVIN, and RoboTwin demonstrate that ElasticFlow achieves efficient 1-NFE inference (approximately 71Hz). Furthermore, it outperforms state-of-the-art methods, including OpenVLA and $\\pi_0$, on long-horizon tasks, highlighting its potential for efficient, robust, and semantically aligned control."
+  },
+  {
+    "title": "Constraint-Aware Diffusion Priors for High-Fidelity and Versatile Quadruped Locomotion",
+    "original_title": "Constraint-Aware Diffusion Priors for High-Fidelity and Versatile Quadruped Locomotion",
+    "link": "https://arxiv.org/abs/2605.08804",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.08804v1 Announce Type: new \nAbstract: Reinforcement learning combined with imitation learning has significantly advanced biomimetic quadrupedal locomotion. However, scaling these frameworks to massive, multi-source datasets exposes fundamental bottlenecks. First, traditional GAN-based discriminators are prone to mode collapse, struggling to capture diverse motion distributions from uncurated datasets. Second, existing kinematic priors suffer from out-of-distribution (OOD) tracking conflicts, leading to severe unintended heading drifts during complex maneuvers. Furthermore, deploying unconstrained priors to physical hardware poses critical safety risks by disregarding actuator dynamics. To overcome these challenges, we propose Diff-CAST (Diffusion-guided Constraint-Aware Symmetric Tracking), a novel motion prior framework leveraging the multi-modal distribution modeling capabilities of diffusion models for stylistic rewards. Diff-CAST effectively replaces traditional GAN discriminators, unlocking robust data scaling on heterogeneous collections. To ensure high-fidelity intent execution and reliable real-world deployment, we introduce a comprehensive Sim2Re architecture integrating Symmetric Augmented Command Conditioning (SACC) for drift-free tracking, and Constrained RL for hardware safety. Experiments on a quadruped demonstrate that Diff-CAST mitigates mode collapse, enables seamless transitions between diverse skills, and ensures robust, hardware-compliant locomotion."
+  },
+  {
+    "title": "A low-cost mockup to simulate robotic laser cutting in nuclear decommissioning",
+    "original_title": "A low-cost mockup to simulate robotic laser cutting in nuclear decommissioning",
+    "link": "https://arxiv.org/abs/2605.08947",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08947v1 Announce Type: new \nAbstract: This paper introduces a low-cost experimental mockup to simulate the laser cutting process of containers in nuclear decommissioning. It is composed of a three-axis table supporting a cuboid container with ultraviolet-sensitive faces, a six-degree-of-freedom serial manipulator holding an ultraviolet torch that simulates the laser, and a visual system based on cameras and fiducial markers. The system employs a constrained task-space adaptive motion controller that compensates for inaccurate parameters and eliminates the need to calibrate the system. Furthermore, as the motion controller explicitly accounts for geometric constraints, the robot reactively avoids collisions with obstacles while handling the ultraviolet torch. To enhance tracking of the laser-cutting path, we control the ultraviolet beam, which requires only four degrees of freedom, instead of the full end-effector pose. Experiments show that, despite an initially uncalibrated system, the overall system is capable of tracking different trajectories with an overall mean accuracy of 3.9 (sd 2.5) mm when the end-effector pose is controlled and 2.4 (sd 1.3) mm when the ultraviolet beam is controlled."
+  },
+  {
+    "title": "Smoothing Out the Edges: Continuous-Time Estimation with Gaussian Process Motion Priors on Factor Graphs",
+    "original_title": "Smoothing Out the Edges: Continuous-Time Estimation with Gaussian Process Motion Priors on Factor Graphs",
+    "link": "https://arxiv.org/abs/2605.09073",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09073v1 Announce Type: new \nAbstract: Continuous-time state estimation is gaining in popularity due to its abilities to provide smooth solutions, handle asynchronous sensors, and interpolate between data points. While there are two main paradigms, parametric (e.g., temporal basis functions, splines) and nonparametric (Gaussian processes), the latter has seen less adoption despite its technical advantages and relative ease of implementation. In this article, we seek to rectify this situation by providing a new simplified explanation of GP continuous-time estimation rooted in the language of factor graphs, which have become the de facto estimation paradigm in much of robotics. To simplify onboarding, we also provide three working examples implemented in the popular GTSAM estimation framework."
+  },
+  {
     "title": "RLWRLD releases RLDX-1, a dexterity-first foundation model for robot hands",
     "original_title": "RLWRLD releases RLDX-1, a dexterity-first foundation model for robot hands",
     "link": "https://www.therobotreport.com/rlwrld-releases-rldx-1-a-dexterity-first-foundation-model-for-robot-hands/",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "PhysMoDPO 프레임워크가 제안되는 physic-based humanoid motion generation. 이 프레임워크는 diffusion model을 optimizing하여 WBC(Wole-Body Controller)와 physics-based rewards를 결합, simulation robot에서 실제로 구현하는 physially-plausible human motion generation을 가능하게 함을 보여주는 실험적 결과가 있음.\n\n(Note: The output format is strictly maintained, following the rules. The Korean title and summary are separated by \""
-  },
-  {
-    "title": "Reference-Free Sampling-Based Model Predictive Control",
-    "original_title": "Reference-Free Sampling-Based Model Predictive Control",
-    "link": "https://arxiv.org/abs/2511.19204",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "모델 예측 제어(MPC) 프레임워크를 제안하여, 수동적으로 구축된 패턴 또는 미리 정의된 접촉 시퀀스에 의존하지 않고, emergent locomotion을 실현합니다. 이 방법은 고급 목표 최적화를 통해 다양한 운동 패턴, 자세 정책, 점핑, 등하stands balancing 등을 발견하고, MPPI 모델에 기반하여 구문 Hermite spline 파라미터화가 위치와 속도 제어점을 사용합니다."
-  },
-  {
-    "title": "AOMGen: Photoreal, Physics-Consistent Demonstration Generation for Articulated Object Manipulation",
-    "original_title": "AOMGen: Photoreal, Physics-Consistent Demonstration Generation for Articulated Object Manipulation",
-    "link": "https://arxiv.org/abs/2512.18396",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "아티큐레이티드 오브젝트 조작을 위한 사진실질적, 물리적상관성 있는 데모네이션 제너레이션 프레임워크 AOMGen"
-  },
-  {
-    "title": "From Woofs to Words: Towards Intelligent Robotic Guide Dogs with Verbal Communication",
-    "original_title": "From Woofs to Words: Towards Intelligent Robotic Guide Dogs with Verbal Communication",
-    "link": "https://arxiv.org/abs/2603.12574",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Robot 기요견 개조 동물 도우하기 언어 통신 향상 임**\n\nRobotic guide dogs are developed to assist visually impaired people in obstacle avoidance and navigation. A novel dialog system is proposed for robotic guide dogs that uses Large Language Models (LLMs) to verbalize navigational plans and scenes, enabling verbal communication for collaborative decision-making between the handler and robot."
-  },
-  {
-    "title": "RoboStream: robotics vision-language 모델에 공간-시간이 상관하는 추론 및 메모리 기술",
-    "original_title": "RoboStream: Weaving Spatio-Temporal Reasoning with Memory in Vision-Language Models for Robotics",
-    "link": "https://arxiv.org/abs/2603.12939",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보스트림은 3D 지ทรง 속성과 시각적 증거를 결합하여 지속적인 물체 정지 기능을 달성하고, 액션 트리거 상태 전환 기록을 통해 일관된 공간-시간 그래프를 구축함으로써 장기 manipulation의 신뢰성을 확보한다. 이를 통해 로보스트림은 90.5%의 성능을 달성하고, 실제 세계 블록 빌딩 태스크에서 44.4%의 성능을 달성하였다."
-  },
-  {
-    "title": "Quadrortor 배터리 건강 평가 Framework ~함",
-    "original_title": "Motion-Specific Battery Health Assessment for Quadrotors Using High-Fidelity Battery Models",
-    "link": "https://arxiv.org/abs/2603.12791",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "quadrotor의 배터리 지속 가능성은 실제로 배터리의 행동에 의해 제한되지만, 대부분의 에너지 aware 계획은 배터리를 간단한 에너지 저장고로 다루어 비행 동작이 батар리를 강화하는 정동적 전류 로드들을 무시합니다. 이 연구는 quadrotor의 배터리 건강 평가 Framework을 내놓습니다. 우리는 첫째, 실제 비행 중에 운동 특정 전류 프로파일을 캡처하는 광범위한 전류 센싱 모듈을 설계하고 동시에 참조 성능 테스트와 Electrochemical 모델에 기반한 Metaheuristic를 사용하여 고해상도 배터리 모델을 조정합니다. 다음으로, 측정된 비행 로드를 조정 모델에서 시뮬레이션하여 실제 비행 방식이 어떻게 배터리 손상 경로에 영향을 주는지 밝혀냅니다. 결과는 실제로 같은 평균 에너지를 소모하는 두 비행 프로파일이 다른 배터리 손상 경로를 일으키는 것을 보여줍니다, 이는 효율성과 배터리 손상을 균형으로 맞출 필요성을 강조합니다."
-  },
-  {
-    "title": "MIND-V: 로봇 조작의 長期 시나리오에 대한 계층적 세계 모델",
-    "original_title": "MIND-V: Hierarchical World Model for Long-Horizon Robotic Manipulation with RL-based Physical Alignment",
-    "link": "https://arxiv.org/abs/2512.06628",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국 로보틱스 manipulation 데이터의 한계를극복하기 위해 MIND-V, 로직적으로 일관성 있는 물리적 비디오를 생성하는 계층적 세계 모델을 도입했다. 이 모델은 Semantic Reasoning Hub, Behavioral Semantic Bridge, Motor Video Generator의 3가지 핵심 구성 요소를 갖추고 있다. 이를테스트 시간 최적화 전략인 Staged Visual Future Rollouts를 사용하여 長期 안정성을 높이고, 물리학의 법칙에 따라 행동하는 GRPO 강화 학습 후 훈련 단계를 추가했다. 이 모델은 로보틱스 조작의 SOTA 성능을 보였으며, 정책 러닝에 있어 상당한 가치가 있으며, 완전히 자율적인 embodied 데이터 생성框架를 소개했다."
-  },
-  {
-    "title": "SegDAC: Object Token Embedding을 활용한 강화학습의 시각적 일반화",
-    "original_title": "SegDAC: Visual Generalization in Reinforcement Learning via Dynamic Object Tokens",
-    "link": "https://arxiv.org/abs/2508.09325",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "SegDAC는 Pixel 관측치 기반 강화학습 정책이 테스트 시점에서 시각 조건이 변경될 때 일반화에 실패하는 문제를 해결하기 위해 proposed. 이 모델은 변수길이의 Object Token Embedding을 사용하여 Actor-Critic를 구축하고, Transformer-based를 통해 처리한다. SegDAC는 8 ManiSkill3 manipulation tasks에서 12 visual perturbation types와 3 difficulty levels에 걸쳐 prior visual generalization methods보다 15%를 migliorate하는 성과를 보였다."
-  },
-  {
-    "title": "PVI: 플러그인 시각 주입으로 현역 언어 액션 모델",
-    "original_title": "PVI: Plug-in Visual Injection for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2603.12772",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "플러그인 시각 주입(PVI)은 예약된 액션 전문가와 연결하여 ngôn ngữ 조건화 manipulation을 강조하는 VLA 구조에서 사용할 수 있는 가벼운, 인코더-agnostic 모듈입니다. 이 module은 zero-initialized residual 경로를 통해 예약된 액션 전문가에 부착하고 auxiliary 시각 đại diện을 주입하여 예약된 동작을 그대로 유지하면서 단일 단계 fine-tuning으로 작동합니다. PVI를 사용하면 기존 정책보다 일정한 향상을 얻을 수 있으며, 조절 연구에서는 video 특징(V-JEPA2)이 이미지 특징(DINOv2)보다 더 큰 향수를 보여줍니다. 이에 따라 멀티-Phase 태스크에서 상태 추적과 조정이 필요하므로 PVI는 실현 가능성을 나타내는 실제 로봇 실험으로 확인할 수 있습니다."
   }
 ]
