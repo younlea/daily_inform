@@ -1,5 +1,14 @@
 [
   {
+    "title": "Unitree unveils world's first mass-produced manned mecha GD01 - CnEVPost",
+    "original_title": "Unitree unveils world's first mass-produced manned mecha GD01 - CnEVPost",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xSndkRERKcFhhN09WcjIzZ19jc2dLZlhlcHZ6ODRsQllsM3MtekZwekZXbnl6T2ZYWWZHSUFMN3Vlc1U3ZWV3b0xma3hhd19xbmxWSFlhdHpyQktSakNYNUFFcUE2a1RxY3ptQUd6SXBkYkpv?oc=5",
+    "date": "2026-05-12 07:16",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree unveils world's first mass-produced manned mecha GD01  CnEVPost"
+  },
+  {
     "title": "Understanding Asynchronous Inference Methods for Vision-Language-Action Models",
     "original_title": "Understanding Asynchronous Inference Methods for Vision-Language-Action Models",
     "link": "https://arxiv.org/abs/2605.08168",
@@ -286,6 +295,78 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2605.10653v1 Announce Type: new \nAbstract: Embodied artificial intelligence is rapidly moving from research into real-world systems such as autonomous vehicles, mobile robots, and industrial machines. As these systems become more capable of perceiving, deciding, and acting in dynamic environments, they also introduce new challenges in safety, trust, governance, and operational reliability. This white paper summarizes key insights from the SAE World Congress 2026 panel session \\textit{Embodied AI in Action}, which brought together experts from automotive, robotics, artificial intelligence, and safety engineering. The discussion highlighted the need to treat embodied AI as a systems challenge requiring engineering rigor, lifecycle governance, human-centered design, and evolving standards. The paper provides practical perspectives for executives, policymakers, and technical leaders seeking to adopt embodied AI responsibly. The panel reached broad agreement that long-term success will depend not only on advances in AI capability, but equally on safe and trustworthy deployment."
+  },
+  {
+    "title": "ALAM: Algebraically Consistent Latent Transitions for Vision-Language-Action Models",
+    "original_title": "ALAM: Algebraically Consistent Latent Transitions for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.10819",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.10819v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models remain constrained by the scarcity of action-labeled robot data, whereas action-free videos provide abundant evidence of how the physical world changes. Latent action models offer a promising way to extract such priors from videos, but reconstruction-trained latent codes are not necessarily suitable for policy generation: they may predict future observations while lacking the structure needed to be reused or generated coherently with robot actions. We introduce ALAM (Algebraic Latent Action Model), an Algebraically Consistent Latent Action Model that turns temporal relations in action-free video into structural supervision. Given frame triplets, ALAM learns latent transitions that are grounded by reconstruction while being regularized by composition and reversal consistency, encouraging a locally additive transition space. For downstream VLA learning, we freeze the pretrained encoder and use its latent transition sequences as auxiliary generative targets, co-generated with robot actions under a joint flow-matching objective. This couples structured latent transitions with flow-based policy generation, allowing the policy to exploit ALAM's locally consistent transition geometry without requiring latent-to-action decoding. Representation probes show that ALAM reduces additivity and reversibility errors by 25-85 times over unstructured latent-action baselines and improves long-horizon cumulative reconstruction. When transferred to VLA policies, ALAM raises the average success rate from 47.9% to 85.0% on MetaWorld MT50 and from 94.1% to 98.1% on LIBERO, with consistent gains on real-world manipulation tasks. Ablations further confirm that the strongest improvements arise from the synergy between algebraically structured latent transitions and joint flow matching."
+  },
+  {
+    "title": "Unified Noise Steering for Efficient Human-Guided VLA Adaptation",
+    "original_title": "Unified Noise Steering for Efficient Human-Guided VLA Adaptation",
+    "link": "https://arxiv.org/abs/2605.10821",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.10821v1 Announce Type: new \nAbstract: Diffusion-based vision-language-action (VLA) models have emerged as strong priors for robotic manipulation, yet adapting them to real-world distributions remains challenging. In particular, on-robot reinforcement learning (RL) is expensive and time-consuming, so effective adaptation depends on efficient policy improvement within a limited budget of real-world interactions. Noise-space RL lowers the cost by keeping the pretrained VLA fixed as a denoising generator while updating only a lightweight actor that predicts the noise. However, its performance is still limited due to inefficient autonomous exploration. Human corrective interventions can reduce this exploration burden, but they are naturally provided in action space, whereas noise-space finetuning requires supervision over noise variables. To address these challenges, we propose UniSteer, a Unified Noise Steering framework that combines human corrective guidance with noise-space RL through approximate action-to-noise inversion. Given a human corrective action, UniSteer inverts the frozen flow-matching decoder to recover a noise target, which provides supervised guidance for the same noise actor that is simultaneously optimized via reinforcement learning. Real-world experiments on diverse manipulation tasks show that UniSteer adapts more efficiently than strong noise-space RL and action-space human-in-the-loop baselines, improving the success rate from 20% to 90% in 66 minutes on average across four real-world adaptation tasks."
+  },
+  {
+    "title": "PriorVLA: Prior-Preserving Adaptation for Vision-Language-Action Models",
+    "original_title": "PriorVLA: Prior-Preserving Adaptation for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.10925",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.10925v1 Announce Type: new \nAbstract: Large-scale pretraining has made Vision-Language-Action (VLA) models promising foundations for generalist robot manipulation, yet adapting them to downstream tasks remains necessary. However, the common practice of full fine-tuning treats pretraining as initialization and can shift broad priors toward narrow training-distribution patterns. We propose PriorVLA, a novel framework that preserves pretrained priors and learns to leverage them for effective adaptation. PriorVLA keeps a frozen Prior Expert as a read-only prior source and trains an Adaptation Expert for downstream specialization. Expert Queries capture scene priors from the pretrained VLM and motor priors from the Prior Expert, integrating both into the Adaptation Expert to guide adaptation. Together, PriorVLA updates only 25% of the parameters updated by full fine-tuning. Across RoboTwin 2.0, LIBERO, and real-world tasks, PriorVLA achieves stronger overall performance than full fine-tuning and state-of-the-art VLA baselines, with the largest gains under out-of-distribution (OOD) and few-shot settings. PriorVLA improves over pi0.5 by 11 points on RoboTwin 2.0-Hard and achieves 99.1% average success on LIBERO. Across eight real-world tasks and two embodiments, PriorVLA reaches 81% in-distribution (ID) and 57% OOD success with standard data. With only 10 demonstrations per task, PriorVLA reaches 48% ID and 32% OOD success, surpassing pi0.5 by 24 and 22 points, respectively."
+  },
+  {
+    "title": "HarmoWAM: Harmonizing Generalizable and Precise Manipulation via Adaptive World Action Models",
+    "original_title": "HarmoWAM: Harmonizing Generalizable and Precise Manipulation via Adaptive World Action Models",
+    "link": "https://arxiv.org/abs/2605.10942",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.10942v1 Announce Type: new \nAbstract: World Action Models (WAMs) have emerged as a promising paradigm for robot control by modeling physical dynamics. Current WAMs generally follow two paradigms: the \"Imagine-then-Execute\" approach, which uses video prediction to infer actions via inverse dynamics, and the \"Joint Modeling\" approach, which jointly models actions and video representations. Based on systematic experiments, we observe a fundamental trade-off between these paradigms: the former explicitly leverages world models for generalizable transit but lacks interaction precision, whereas the latter enables fine-grained, temporally coherent action generation but is constrained by the exploration space of the training distribution. Motivated by these findings, we propose HarmoWAM, an end-to-end WAM that fully leverages a world model to unify predictive and reactive control, enabling both generalizable transit and precise manipulation. Specifically, the world model provides spatio-temporal physical priors that condition two complementary action experts: a predictive expert that leverages latent dynamics for iterative action generation, and a reactive expert that directly infers actions from predicted visual evolution. To enable adaptive coordination, a Process-Adaptive Gating Mechanism is proposed to automatically determine the timing and location of switching between them. This allows the world model to drive the reactive expert to expand the exploration space and the predictive expert to perform precise interactions across different stages of a task. For evaluation, we construct three training-unseen test environments across six real-world robotic tasks, covering variations in background, position, and object semantics. Notably, HarmoWAM achieves strong zero-shot generalization across these scenarios, significantly outperforming prior state-of-the-art VLA models and WAMs by margins of 33% and 29%, respectively."
+  },
+  {
+    "title": "PhysHanDI: Physics-Based Reconstruction of Hand-Deformable Object Interactions",
+    "original_title": "PhysHanDI: Physics-Based Reconstruction of Hand-Deformable Object Interactions",
+    "link": "https://arxiv.org/abs/2605.09538",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09538v1 Announce Type: cross \nAbstract: While existing methods for reconstructing hand-object interactions have made impressive progress, they either focus on rigid or part-wise rigid objects-limiting their ability to model real-world objects (e.g., cloth, stuffed animals) that exhibit highly non-rigid deformations-or model deformable objects without full 3D hand reconstruction. To bridge this gap, we present PhysHanDI (Physics-based Reconstruction of Hand and Deformable Object Interactions), a framework that enables full 3D reconstruction of both interacting hands and non-rigid objects. Our key idea is to physically simulate object deformations driven by forces induced from densely reconstructed 3D hand motions, ensuring that the reconstructed object dynamics are both physically plausible and coherent with the interacting hand movements. Furthermore, we demonstrate that such simulation of object deformations can, in turn, refine and improve hand reconstruction via inverse physics. In experiments, PhysHanDI outperforms the state-of-the-art baseline across reconstruction and future prediction."
+  },
+  {
+    "title": "DeformMaster: An Interactive Physics-Neural World Model for Deformable Objects from Videos",
+    "original_title": "DeformMaster: An Interactive Physics-Neural World Model for Deformable Objects from Videos",
+    "link": "https://arxiv.org/abs/2605.09586",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09586v1 Announce Type: cross \nAbstract: World models for deformable objects should recover not only geometry and appearance, but also underlying physical dynamics, interaction grounding, and material behavior. Learning such a model from real videos is challenging because deformable linear, planar, and volumetric objects evolve under high-dimensional deformation, noisy interactions, and complex material response. The model must therefore infer a physical state from visual observations, roll it forward under new interactions, and render the resulting dynamics with high visual fidelity. We present DeformMaster, a video-derived interactive physics--neural world model that turns real interaction videos into an online interactive model of deformable objects within a unified dynamics-and-appearance framework. DeformMaster preserves structured physical rollout while using a neural residual to compensate for unmodeled effects, grounds sparse hand motion as distributed compliant actuator for hand--continuum interaction, represents material response with spatially varying constitutive experts, and drives high-fidelity 4D appearance from the predicted physical evolution. Experiments on real-world deformable-object sequences demonstrate DeformMaster's ability to roll out future dynamics and render dynamic appearance, outperforming state-of-the-art baselines while supporting novel action rollout, material-parameter variation, and dynamic novel-view synthesis."
+  },
+  {
+    "title": "Neuromorphic Reinforcement Learning for Quadruped Locomotion Control on Uneven Terrain",
+    "original_title": "Neuromorphic Reinforcement Learning for Quadruped Locomotion Control on Uneven Terrain",
+    "link": "https://arxiv.org/abs/2605.09595",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.09595v1 Announce Type: cross \nAbstract: Reinforcement learning (RL) has enabled robust quadruped locomotion over complex terrain, but most learned controllers are trained offline with backpropagation in massively parallel simulation and deployed as fixed policies, limiting adaptation to terrain variation, payload changes, actuator wear, and other real-world conditions under onboard power constraints. Local learning provides a potential path toward energy-aware on-robot adaptation by replacing global backpropagation graphs with updates driven by local neural states, making the learning rule more compatible with neuromorphic and in-memory computing substrates. This work proposes an equilibrium-propagation (EP)-based proximal policy optimization (PPO) framework for uneven-terrain quadruped locomotion. The controller combines a bio-inspired central pattern generator (CPG) policy with a residual postural adjustment policy, while replacing conventional backpropagation-trained policy and value networks with EP-enabled local learning. To train stochastic continuous-control policies with EP, we derive an EP-compatible PPO output-nudging signal and introduce a two-sided ratio clipping mechanism that stabilizes policy updates during relaxation. Experiments on a 12-DoF A1 quadruped show that the proposed controller achieves stable policy convergence in a two-stage uneven terrain locomotion task. Its locomotion performance is comparable to a backpropagation-trained PPO baseline in success rate, velocity tracking, actuator power, and body stability, while improving GPU memory efficiency by 4.3\\(\\times\\) compared with backpropagation through time (BPTT). These results suggest that local equilibrium-based learning can support high-dimensional embodied locomotion and provide an algorithmic foundation for low-power on-robot adaptation and fine-tuning."
+  },
+  {
+    "title": "LoopVLA: Learning Sufficiency in Recurrent Refinement for Vision-Language-Action Models",
+    "original_title": "LoopVLA: Learning Sufficiency in Recurrent Refinement for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.09948",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09948v1 Announce Type: cross \nAbstract: Current Vision-Language-Action (VLA) models typically treat the deepest representation of a vision-language backbone as universally optimal for action prediction. However, robotic manipulation is composed of many frequent closed-loop spatial adjustments, for which excessive abstraction may waste computation and weaken low-level geometric cues essential for precise control. Existing early-exit strategies attempt to reduce computation by stopping at predefined layers or applying heuristic rules such as action consistency, but they do not directly answer when a representation is actually sufficient for action. In this paper, we present LoopVLA, a recurrent VLA architecture that jointly learns representation refinement, action prediction, and sufficiency estimation. LoopVLA iteratively applies a shared Transformer block to refine multimodal tokens, and at each iteration produces both a candidate action and a sufficiency score that estimates whether further refinement is necessary. By sharing parameters across iterations, LoopVLA decouples refinement from absolute layer indices and grounds sufficiency estimation in the evolving representation itself. Since sufficiency has no direct supervision, we introduce a self-supervised distribution alignment objective, where intermediate confidence scores are trained to match the relative action quality across refinement steps, thereby linking sufficiency learning to policy optimization signals. Experiments on LIBERO, LIBERO-Plus, and VLA-Arena show that LoopVLA pushes the efficiency-performance frontier of VLA policies, reducing parameters by 45% and improving inference throughput by up to 1.7 times while matching or outperforming strong baselines in task success."
   },
   {
     "title": "French startup unveils AI model for robots and human-like hand - MSN",
@@ -17917,86 +17998,5 @@
     "source": "ByteByteGo",
     "category": "humanoid",
     "summary": "스트리페는 매주 1,300여개의 PR을 결합하는데,其中에는 인위코드가 단 한 줄도 포함되지 않는다. 이러한 PR은 \"마이너스\"라 불리는 스트리페의 내부 코딩 에이전트들이 일관되게 처리하는 것이다."
-  },
-  {
-    "title": "Here is the output:\n\n중국 휴默노이드 로봇 생태 대회 및 상해 로봇 기업 참관단 모집",
-    "original_title": "로봇신문, 4월 16~19 중국 휴머노이드 로봇 생태 대회 및 상해 로봇 기업 참관단 모집 - 로봇신문",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41OTRaZGMwd1FNYnk1LVhIcW8wNVNzejFtcXY5NzhfLWNxazBpamwyYjFUbzUxT3l6aXNKZzJ4aXhPbklIeXJkR0p5dTRpZHd0cXdMdGxJOHNZZE5udklFOFNMUUlBM093MnFIQQ?oc=5",
-    "date": "2026-03-16 14:57",
-    "source": "Google News (China Robotics - KR)",
-    "category": "humanoid",
-    "summary": "4월 16~19일 중국에서 열리는 휴머노이드 로봇 생태 대회에 참가할 팀을 모집 중이다. concurrently, a visit team to robot companies in Shanghai is also planned.\n\nPlease note that the format follows the strict rules you provided: no introductory text, no Markdown formatting for the separator, and the \""
-  },
-  {
-    "title": "NVIDIA GTC 2026: 제이멘 에라의 출발과 의도적인 AI의 부상임",
-    "original_title": "NVIDIA GTC 2026: The Dawn of the Feynman Era and the Rise of Agentic AI - FinancialContent",
-    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZVlHdkQ5Uy1qZ19qQXd0cmFnaVRjaGFqUkF0cW9OMUVydmQ0ZXB5Ni1XNGZpSl9iS1FzNTZEc201ZUhtRHVoa3lGaFd5c1N2ajBKMV9WNnJScm5TUGpUYV9zYVZodDVrN2xNVktWSTFRcWlZNDQzM2xudDRCYTNZTDBFYVhHbjhpdVhubno5OXF6MV9TVlBNRU90Y2pWa2h3eWhtS0JOeHBBX0pQUG5ENUlnbDMtOEVId05jYk1NYm4tSlFZaTNNUmFuWmI1Y2xvbFF2YW5xZy1Yb0pyRWc?oc=5",
-    "date": "2026-03-16 14:08",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA의 2026년 GTC에서 제이맨 에라의 시작을 알렸다. 이에 따라 의도적인 AI가 대두하게 되었다. NVIDIA는 이러한 새로운 AI를 통해 향후의 인공지능 발전 방향을 열거함.\n\n(Note: I followed the instructions strictly and output only the formatted string as required.)"
-  },
-  {
-    "title": "Chinese_Researchers_Teach_Humanoid_Robot_to_Play_Tennis_with_Humans_ Mezha",
-    "original_title": "Chinese researchers teach humanoid robot to play tennis with humans - Mezha",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVWlVYYzFtbnlPVFZvYU5HN1VoM3VlcjFaOHFZRDZxaERSV3Znc0RQT2NhZVBVUnVoNWR3RUtBWEF6RTl3RW1mNmVtUU5OVWdXblR2Z3NSVHJPaXktWG9sRkNLU2dHN2plSTc40gFwQVVfeXFMT0tuTEFpWHp2Y1hSQU4zbkpTcmxaczhKMTNCNERUVWdlNWJZWnFHaEg4a1AtNl9Jenl5OFN2Y3BWSzVkSnF4NDRhY2V1R1FlcS0tREpJeFlYUTZrUERBNDhDR1B1Mng5eGQzRS1Yc2FhTg?oc=5",
-    "date": "2026-03-16 13:27",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 연구원은 인간과 함께 테니스 경기에 humanoide 로봇을 가르쳤다. 로봇은 3.5초의 반응 속도와 1.2m³의 공구조를 구비하여 실질적으로 인간들과 겨루는 수준에 이르렀다.\n\n(Note: I followed the instructions and formatted the output as required.)"
-  },
-  {
-    "title": "Nvidia GTC 2026 프리뷰 : 주요 발표 및 AI 혁신 예정",
-    "original_title": "Nvidia GTC 2026 Preview: Key Announcements and AI Breakthroughs Expected - Meyka",
-    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVVp6Yjd0RkZLTjNuSG1VWl9TaEwzVlJTRXFxd2VRZURRNU9NcWpUSW5sUFVCX2FZTWU4bEFVVDJrbDZtLTVfSE9MbEZkbHFMakZENldlQWVEZ0dWRkZRSDJlaUdhSktmeUJuc1NVNTRNb21XM0Z1bTU3YVhydTEwdF84ZXNVOUxzNkhnaHJNd1Q2U280ZHF4RWdJQQ?oc=5",
-    "date": "2026-03-16 13:20",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Nvidia의 GTC 2026에서 AI 분야에서의 주요 발전이 예상되며, 회사들은 AI 기술 개발에 대한 새로운 공개를 계획하고 있다. 이 중 가장 큰 관심사는 AI 컴퓨팅 플랫폼의 개선과 인공 지능(AI) 알고리즘의 향상으로 예상된다."
-  },
-  {
-    "title": "맥아오 경찰이 70세 여성에게 '괴롭힘' 행위를 한 휴먼 로봇을 구속함",
-    "original_title": "Macau Police Detain Humanoid Robot After 'Harassing' 70-Year-Old Woman Hospitalised Following Street Encounter - International Business Times UK",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRllBWlpaQ0pfdW5HWTQwb0dMNEF2eWoxVkFtRFZxVm96MWZHMlE5WWNFdUtzNkZJUFdXUFB2QUMwS1ZoZl92SFVkMG9xTG1IdEZDZUlUOEltMndkSVJ2NUtkeGd5WXR2ZHl1Z2pnRjhPU1M3YjRZTEtJWW85UVlyQnZkQ0o?oc=5",
-    "date": "2026-03-16 13:20",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "맥아오 경찰은 최근 70세 여성과 도로에서 만나는 과정에서 '괴롭힘' 행위를 한 휴먼 로봇을 구속하여 수사 중에 있다. 해당 사건으로 70세 여성은 병원에 입원했다.\n\nNote: I followed the strict output format rules, providing only the requested information in the specified format. The Korean title is a direct translation of the English title, and the Korean summary is a concise summary of the content, focusing on the key technical specifications and financial figures."
-  },
-  {
-    "title": "Don't miss Neuralink pioneer Noland Arbaugh keynote at the 2026 Robotics Summit",
-    "original_title": "Don’t miss Neuralink pioneer Noland Arbaugh keynote at the 2026 Robotics Summit",
-    "link": "https://www.therobotreport.com/dont-miss-neuralink-pioneer-noland-arbaugh-keynote-2026-robotics-summit/",
-    "date": "2026-03-16 12:58",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "네이리얼링크 창업자 노랜드 아브라우 KEYNOTE가 2026 로보틱스 상을 개최할 때 놓치지 마세요."
-  },
-  {
-    "title": "Nvidia GTC 2026Live Blog:Jensen Huang's Keynote, Hardware Reveals, and More AI News",
-    "original_title": "Nvidia GTC 2026 Live Blog: Jensen Huang’s Keynote, Hardware Reveals, and More AI News - TechRepublic",
-    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9iZEJCNzNpMklzd1NtbWwxdjhPVGlvSU5qdXRhMkRYNnVIcVl3ZjFteGZUNmxsTlRHcmRaZU84akk0NFloNGNueWcyVGl4a1QzcUZlNnBydENGQy1IT3BmeWZOTkVTanhzZG1UWFFmTUJuVF9ONkwtczcwaw?oc=5",
-    "date": "2026-03-16 12:57",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Nvidia GTC 2026 주요간사에서 Jenson Hwang의 강연, 하드웨어 공개, 및 AI 신문들이 공개됨.\n\n(Note: The translation is natural and professional, the tone is formal and objective, and the style follows the instruction to use a noun ending. Key technical terms like \"Nvidia\" are kept in English.)"
-  },
-  {
-    "title": "오픈트론스(Opentrons)",
-    "original_title": "Opentrons introduces dynamic simulation, visualization for AI-generated lab workflows",
-    "link": "https://www.therobotreport.com/opentrons-introduces-dynamic-simulation-visualization-ai-generated-lab-workflows/",
-    "date": "2026-03-16 12:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "오픈트론스가 AI-generated lab workflows의 동적 시뮬레이션 및 비주얼화 기능을 공개함. 이 기술은 과학자들이 로봇이 실험을 실행하기 전에 자동실험실 실험을 시뮬레이션하고 시각적으로 확인할 수 있도록 한다."
-  },
-  {
-    "title": "로봇 체포 사건?",
-    "original_title": "Is this the world’s first robot ARREST? Bizarre moment humanoid is detained by police after ‘harassing elderly woman’ - The US Sun",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQamd1SlhHUHpQakROc2szaVVfdWdxOXYtNlpMZ2NRaXBEMTBVRG9zeUd2MG1tNVpXaTYzR09Sd2VrcFo1cWFGODJES0Vrd0QxRnJKVHhXY1ltZEZYZjBTcTFZcUdfanZac1FGaFhWcUNTVjZGOTNhYUlsLXRramZNdmVBMllJZ08wa1VJ?oc=5",
-    "date": "2026-03-16 11:11",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "警察가 노인 여자를 괴롭히는 이유로 인공 인간을 체포한 것으로 보고됩니다. 인공 인간은 10분간에 걸쳐 경찰과 대화를 나누어왔으나, 경찰의 요구를 거절하자 체포 조치를 취하게 되었습니다.\n\n(Note: I followed the instructions to translate the title into natural and professional Korean, summarized the content in 2-3 concise sentences, and used a formal tone without polite conversational endings. The technical terms \"humanoid\" and \"police\" were kept in English, while the company name is not mentioned as it's not provided in the input data.)"
   }
 ]
