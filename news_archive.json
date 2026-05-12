@@ -144,6 +144,96 @@
     "summary": "arXiv:2605.09073v1 Announce Type: new \nAbstract: Continuous-time state estimation is gaining in popularity due to its abilities to provide smooth solutions, handle asynchronous sensors, and interpolate between data points. While there are two main paradigms, parametric (e.g., temporal basis functions, splines) and nonparametric (Gaussian processes), the latter has seen less adoption despite its technical advantages and relative ease of implementation. In this article, we seek to rectify this situation by providing a new simplified explanation of GP continuous-time estimation rooted in the language of factor graphs, which have become the de facto estimation paradigm in much of robotics. To simplify onboarding, we also provide three working examples implemented in the popular GTSAM estimation framework."
   },
   {
+    "title": "IMPACT: An Implicit Active-Set Augmented Lagrangian for Fast Contact-Implicit Trajectory Optimization",
+    "original_title": "IMPACT: An Implicit Active-Set Augmented Lagrangian for Fast Contact-Implicit Trajectory Optimization",
+    "link": "https://arxiv.org/abs/2605.09127",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09127v1 Announce Type: new \nAbstract: Contact-implicit trajectory optimization (CITO) has attracted growing attention as a unified framework for planning and control in contact-rich robotic tasks. Recent approaches have demonstrated promising results in manipulation and locomotion without requiring a prescribed contact-mode schedule. It is well known that the underlying mathematical programs with complementarity constraints (MPCCs) remain numerically ill-conditioned, and systematic, scalable solution strategies for CITO remain an active area of research. More efficient and principled solvers that can handle contact constraints are therefore essential to broaden the applicability of CITO. In this work, we develop an augmented-Lagrangian approach to CITO for solving MPCC-based CITO with stationarity guarantees. The method can be interpreted as identifying the implicit contact-mode branches on the fly during the trajectory optimization (TO) iterations; we call this approach IMPACT (IMPlicit contact ACtive-set Trajectory optimization). We provide an efficient C++ implementation tailored to trajectory-optimization workloads and evaluate it on the open-source CITO and contact-implicit model predictive control (CI-MPC) benchmarks. On CITO, IMPACT achieves 2.9x-70x speedups over strong baselines (geometric mean 13.8x). On CI-MPC, we show improved control quality for contact-rich trajectories on dexterous manipulation tasks in simulation. Finally, we demonstrate the proposed method on real robotic hardware on a T-shaped object pushing task."
+  },
+  {
+    "title": "RePO-VLA: Recovery-Driven Policy Optimization for Vision-Language-Action Models",
+    "original_title": "RePO-VLA: Recovery-Driven Policy Optimization for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.09410",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09410v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models remain brittle in long-horizon, contact-rich manipulation because success-only imitation provides little supervision for execution drift, while failed rollouts are often discarded. We introduce RePO-VLA, a recovery-driven policy optimization framework that assigns distinct roles to success, recovery, and failure trajectories. RePO-VLA first applies Recovery-Aware Initialization (RAI), slicing recovery segments and resetting history so corrective actions depend on the current adverse state rather than the preceding failure. It then learns a Progress-Aware Semantic Value Function (PAS-VF), aligning spatiotemporal trajectory features with instructions and successful references. The resulting labels salvage useful failure prefixes via reliability decay, while low-value labels mark drift and terminal breakdowns, teaching differences among nominal, failed, and corrective actions. The data engine turns adverse states into planner-generated or human-collected corrective rollouts, teaching recovery to the success manifold. Value-Conditioned Refinement (VCR) trains the policy to prefer high-progress actions. At deployment, a fixed high value ($v=1.0$) biases actions toward the learned success manifold without online failure detectors or heuristic retries. We introduce FRBench, with standardized error injection and recovery-focused evaluation. Across simulated and real-world bimanual tasks, RePO-VLA improves robustness, raising adversarial success from 20% to 75% on average and up to 80% in scaled real-world trials."
+  },
+  {
+    "title": "Beyond Isolation: A Unified Benchmark for General-Purpose Navigation",
+    "original_title": "Beyond Isolation: A Unified Benchmark for General-Purpose Navigation",
+    "link": "https://arxiv.org/abs/2605.09441",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.09441v1 Announce Type: new \nAbstract: The pursuit of general-purpose embodied agents is hindered by fragmented evaluation protocols that isolate navigation skills and fixate on specific robot morphologies, failing to reflect real-world scenarios where agents must orchestrate diverse behaviors across varying embodiments. To bridge this gap, we introduce OmniNavBench, a benchmark for cross-skill coordination and cross-embodiment generalization. OmniNavBench introduces three paradigm shifts: (1) Compositional Complexity. We propose composite instructions that interleave sub-tasks from 6 categories (PointNav, VLN, ObjectNav, SocialNav, Human Following and EQA), compelling agents to transition between exploration, interaction, and social compliance within a single episode. (2) Morphological Universality and Sensor Flexibility. We present a simulation platform that breaks the reliance on single-morphology evaluation, enabling generalization tests across humanoid, quadrupedal, and wheeled robots, with a modular sensor interface and 170 environments blending synthetic assets with real-world scans. (3) Demonstrations Quality. Moving beyond shortest-path algorithms, we curate 1779 expert trajectories via human teleoperation, capturing behavioral nuances such as exploratory glance and anticipatory avoidance. Extensive evaluations demonstrate that current methods, despite their claimed unified design, struggle with the complex, interleaved nature of general-purpose navigation. This exposes a critical disparity between existing capabilities and real-world deployment demands, underscoring OmniNavBench as a testbed for the next generation of generalist navigators. Dataset, code, and leaderboard are available at http://omninavbench.cloud-ip.cc."
+  },
+  {
+    "title": "SABER: A Scalable Action-Based Embodied Dataset for Real-World VLA Adaptation",
+    "original_title": "SABER: A Scalable Action-Based Embodied Dataset for Real-World VLA Adaptation",
+    "link": "https://arxiv.org/abs/2605.09613",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09613v1 Announce Type: new \nAbstract: Robotic deployment in real-world environments depends on rich, domain-specific action data as much as on strong model architecture. General-purpose robot foundation models show modest performance in complex unseen tasks such as manipulation in a retail domain when applied out of the box. The root cause is a data gap: retail environments are structurally absent from general robot pretraining distributions, and the path to filling that gap through teleoperation is prohibitively expensive, logistically constrained, and difficult to scale. We introduce SABER, a high-fidelity retail robotics action dataset built from over 100 hours of natural in-store capture across multiple real grocery environments. Egocentric footage from head-mounted cameras records fine-grained hand activity at the point of interaction, while exocentric 360-degree scene footage from DreamVu's ALIA camera simultaneously observes all actors and activities across the entire space. This combination yields a uniquely complete picture of human retail behavior: dexterous hand activity, whole-body motion, and scene dynamics, all captured without staging, scripting, or teleoperation overhead. The SABER corpus contains 44.8K training samples across three action representation streams: 25K latent action sequences via LAPA-style encoding, 18.6K dexterous hand-pose trajectories retargeted to robot joint space, and 1.2K whole-body synchronized motion sequences retargeted to a humanoid embodiment. When applied to GR00T N1.6 via a shared-backbone multi-task post-training recipe, SABER yields a mean success rate of 29.3% across ten retail manipulation tasks -- more than 2.19x over fine-tuning baselines (13.4%). SABER demonstrates that the path to capable retail robots runs through better data, which can be collected today, at scale, without a robot in the loop. The dataset and code are available at https://dreamvu.ai/saber"
+  },
+  {
+    "title": "MVB-Grasp: Minimum-Volume-Box Filtering of Diffusion-based Grasps for Frontal Manipulation",
+    "original_title": "MVB-Grasp: Minimum-Volume-Box Filtering of Diffusion-based Grasps for Frontal Manipulation",
+    "link": "https://arxiv.org/abs/2605.09672",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09672v1 Announce Type: new \nAbstract: State-of-the-art 6-DoF grasp generators excel on tabletop benchmarks with overhead cameras but struggle in frontal grasping scenarios on low-cost manipulators with constrained workspaces, where kinematic limits and approach-direction constraints cause high failure rates. We address this challenge for the Unitree Z1 arm by proposing MVB-Grasp, a novel grasping stack that injects a Minimum Volume Bounding Box (MVBB) geometric prior into diffusion-based grasp generation to dramatically improve success rates in frontal, workspace-constrained settings. Our key scientific contributions are threefold: (i) an MVBB-based geometric filter that exploits oriented bounding-box face normals to reject grasps approaching through the table or misaligned with accessible object faces in O(N) time; (ii) a combined re-scoring function that blends learned discriminator scores with face-alignment geometry {\\alpha}=0.85, specifically calibrated for the Z1's frontal workspace and kinematic constraints; and (iii) a systematic MuJoCo evaluation protocol measuring grasp success across object types, distances, lateral positions, and pitch orientations to validate embodiment-specific performance. We implement MVB-Grasp on a Unitree Z1 arm with an Intel RealSense D405 camera, integrating YOLOv8 object detection, GraspGen for candidate generation, Principal Component Analysis (PCA)-based MVBB fitting, and inverse-kinematics trajectory planning. Experiments across 81 MuJoCo episodes (cylinder, asymmetric box, waterbottle) demonstrate that MVB-Grasp achieves 59.3% success versus 24.7% for vanilla GraspGen, a 2.4x improvement, by filtering geometrically infeasible candidates and prioritizing face-aligned grasps suited to the Z1's frontal approach constraints. Real-world trials confirm that the MVBB prior substantially improves grasp reliability on constrained, low-cost manipulators without requiring model retraining."
+  },
+  {
+    "title": "Zero-Shot Sim-to-Real Robot Learning: A Dexterous Manipulation Study on Reactive Catching",
+    "original_title": "Zero-Shot Sim-to-Real Robot Learning: A Dexterous Manipulation Study on Reactive Catching",
+    "link": "https://arxiv.org/abs/2605.09789",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09789v1 Announce Type: new \nAbstract: Dexterous manipulation is physics-intensive and highly sensitive to modeling errors and perception noise, making sim-to-real transfer prohibitively challenging. Domain randomization (DR) is commonly used to improve the robustness of learned policies for such tasks, but conventional DR randomizes one instance per episode, offering very limited exposure to the variability of real-world dynamics. To this end, we propose Domain-Randomized Instance Set (DRIS), which represents and propagates a set of randomized instances simultaneously, providing richer approximation of uncertain dynamics and enabling policies to learn actions that account for multiple possible outcomes. Supported by theoretical analysis, we show that DRIS yields more robust policies and alleviates the need for real-world fine-tuning, even with a modest number of instances (e.g., 10). We demonstrate this on a challenging reactive catching task. Unlike traditional catching setups that use end-effectors designed to mechanically stabilize the object (e.g., curved or enclosing surfaces), our system uses a flat plate that offers no passive stabilization, making the task highly sensitive to noise and requiring rapid reactive motions. The learned policies exhibit strong robustness to uncertainties and achieve reliable zero-shot sim-to-real transfer."
+  },
+  {
+    "title": "Explicit Stair Geometry Conditioning for Robust Humanoid Locomotion",
+    "original_title": "Explicit Stair Geometry Conditioning for Robust Humanoid Locomotion",
+    "link": "https://arxiv.org/abs/2605.09944",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.09944v1 Announce Type: new \nAbstract: Robust humanoid stair climbing remains challenging due to geometric discontinuities, sensitivity to step height variations, and perception uncertainty in real-world environments. Existing learning-based locomotion policies often rely on implicit terrain representations or blind proprioceptive feedback, limiting their ability to generalize across varying stair geometries and to anticipate required gait adjustments. This paper proposes an explicit stair geometry conditioning framework for robust humanoid stair climbing. Instead of encoding terrain as high-dimensional latent features, we extract a compact set of interpretable geometric parameters, including step height, step depth, and current yaw angle relative to the robot heading. These explicit stair parameters directly condition a Proximal Policy Optimization (PPO)-based locomotion policy, enabling proactive modulation of swing-foot clearance and stride characteristics according to stair structure. Simulation experiments demonstrate improved generalization across unseen stair heights beyond the training distribution. Real-world experiments on the Unitree G1 humanoid validate reliable indoor and outdoor stair traversal. In challenging outdoor scenarios, the robot successfully ascends 33 consecutive steps without failure, demonstrating robustness and practical deployability."
+  },
+  {
+    "title": "JODA: Composable Joint Dynamics for Articulated Objects",
+    "original_title": "JODA: Composable Joint Dynamics for Articulated Objects",
+    "link": "https://arxiv.org/abs/2605.09954",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.09954v1 Announce Type: new \nAbstract: Articulated objects used in simulation and embodied AI are typically specified by geometry and kinematic structure, but lack the fine-grained dynamical effects that govern realistic mechanical behavior, such as frictional holding, detents, soft closing, and snap latching. Existing approaches either ignore the detailed structure of dynamics entirely, or use simple models with limited expressiveness.\n  We introduce JODA, a framework for generating joint-level dynamics as a structured three-channel field over the joint degree of freedom, capturing conservative forces, dry friction, and damping. Instantiated using shape-constrained piecewise cubic interpolation (PCHIP), this formulation defines a compact and expressive function space that is both interpretable and compatible with differentiable simulation. Building on this representation, we develop methods for inferring and refining joint dynamics from multimodal inputs. Given visual observations and joint context, a vision-language model proposes structured dynamical primitives, which are composed into a unified dynamics field. The resulting representation supports both direct manipulation and gradient-based refinement. We demonstrate that JODA enables plausible and controllable modeling of diverse joint behaviors, providing a unified interface for inference, editing, and optimization. Code and example assets with their generated profiles will be released upon publication."
+  },
+  {
+    "title": "French startup unveils AI model for robots and human-like hand - MSN",
+    "original_title": "French startup unveils AI model for robots and human-like hand - MSN",
+    "link": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPVF8xemNhMTFkOUg1aVlWeTVUNzFZeGZhOTQta0FDbkRpQi1XMEtIbVlsOVBQTG5oMXNHV3dZbnBWQ2w0TnNRY1hiTjlOZjVKZlhtRWhGYm5mM2Z2OFJHLXhvVU1jZnRhUmtXLVM0dGhEVENRTF9RTFFQajktZzYzZmlNNFRsX09MeWVjS0JkczlMSjF5c2RMYmczMHladENxSFBzSDZzUmNtX0dHei16MnRIZ1Y2dHU3VGR1VjJrZHp0YVVGZTdybXhrMmk3SmZ0b0N0V0VDVTdmWjNtcE5ya3pNSktVdUVMelRQZ1luV3B1cEItSnFVVEt0UVl4TjFNcmxoV2xVYkpLQkdua0dtYmxKS0tXV2tUd0hJNEdJN2RFX2tjeUNHR3lqYVFKbFZ4ME5DbUZaLXBFT2czeTRUX2JGWTU4VXY4LV9uUTBB?oc=5",
+    "date": "2026-05-12 03:28",
+    "source": "Google News (Global Hand/Gripper)",
+    "category": "hand",
+    "summary": "French startup unveils AI model for robots and human-like hand  MSN"
+  },
+  {
+    "title": "Will investors embrace China’s humanoid robot champion? - Financial Times",
+    "original_title": "Will investors embrace China’s humanoid robot champion? - Financial Times",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRmNRMFZzamVrX1ktaXUtUEZ2NzlkcUczLTBET0kxSUdFYXQtWDlWTFFvZ01URWtIaDFmeEoxY3J0NFJhOXluRk1hYlNqOHZuRGJXOTFXa3VyYW9RY2lPT21pZWZrWk1nQkVVbzJ4Y3dEZFRZRzd1WlV6Qk5JQkpVVWRIR0Y?oc=5",
+    "date": "2026-05-12 02:12",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Will investors embrace China’s humanoid robot champion?  Financial Times"
+  },
+  {
     "title": "RLWRLD releases RLDX-1, a dexterity-first foundation model for robot hands",
     "original_title": "RLWRLD releases RLDX-1, a dexterity-first foundation model for robot hands",
     "link": "https://www.therobotreport.com/rlwrld-releases-rldx-1-a-dexterity-first-foundation-model-for-robot-hands/",
@@ -17908,95 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로보틱스 정책을 위한 새로운 self-distillation 프레임워크를 제안하였다. 이를 'One-Step Flow Policy'라 하며, single-step 액션 생성을 통해 고속의 로보틱스 제어를 가능하게 한다. evaluated across 56 simulated manipulation tasks에서 OFP는 최고의 성능을 달성하며, $100\\times$의 속도 향상을 이루었다."
-  },
-  {
-    "title": "World Model-Based 구조 Planner로의 Robotic Manipulation 개선함",
-    "original_title": "Beyond Dense Futures: World Models as Structured Planners for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2603.12553",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 로봇 조작에 있어 고도로 정제된 세계 모델을 활용하여 예측적 시각적 앞길을 구현하는 연구가 진행되고 있습니다. 이 새로운 접근방식은 적극적인 구조 플래너를 통해 예측적으로 조망을 구현하며, 이러한 방식으로는 로봇 조작의 안정성을 높이는 데 사용됩니다. 실제 실험에서는 Libero 등에서 75.0%의 평균 성공률을 나타내며, 실제 세계에서의 배포에서는 기본적인 선택과 장기 조작도 가능하엿습니다."
-  },
-  {
-    "title": "Skill-informed Data-driven Haptic Nudges for High-dimensional Human Motor Learning",
-    "original_title": "Skill-informed Data-driven Haptic Nudges for High-dimensional Human Motor Learning",
-    "link": "https://arxiv.org/abs/2603.12583",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "학문 기반 데이터 주도 접근 방식으로 고차원 인간 운동 학습에 최적의 촉각 부여 피드백을 설계하는 framework를 제안함. 이 framework는 입력-출력 히든 마코프 모델을 사용하여 인간 운동 학습의 확률적 역학을 모델링하고, 이를 기반으로 파티션 observable 마코브 데시전 프로세스를 형성하여 최적 부여 정책을 도출함. 이 접근 방식을 Validation 하기 위해 30명의 참가자를 포함한 고차원 손-겔라스 테스크에서 수행한 실험 결과, POMDP 그룹의 참가자들이 성능 향상이 있었음을 보여줌.\n\n(Note: I followed the strict output format rules and translated the title into natural, professional Korean. The summary is a concise 2-sentence summary of the content.)"
-  },
-  {
-    "title": "TacVLA: Contact-Aware Tactile Fusion for Robust Vision-Language-Action Manipulation",
-    "original_title": "TacVLA: Contact-Aware Tactile Fusion for Robust Vision-Language-Action Manipulation",
-    "link": "https://arxiv.org/abs/2603.12665",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "비전어행동(TacVLA) 모델의 강점을 살리기 위해 비전, 언어 및 tactle 정보를 결합한 fine-tuned VLA 모델을 제안하는바, 이를 통해 눈에 띄는 제약과 세밀한 조작, 물리적 접촉 등의 challanges를 극복할 수 있습니다."
-  },
-  {
-    "title": "Humanoid Tennis Robot가 인격적인 운동 데이터를 통해 테니스 기술을 배워",
-    "original_title": "Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data",
-    "link": "https://arxiv.org/abs/2603.12686",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "이 연구에서는 인간의 모션 데이터를 기반으로 humanoid tennis robot이 테니스 기술을 배울 수 있는 LATENT 시스템을 제안합니다. 이 시스템은 인간의 모션 프라임 리스크를 포함하여 테니스 경기 중의 모션 구간만을 사용하여 데이터 수집을 용이하게 하며, 이러한 불완전한 데이터도 인간의 primitiveskill에 대한_PRIOR을 제공할 수 있습니다."
-  },
-  {
-    "title": "Altered Thoughts, Altered Actions: Probing Chain-of-Thought Vulnerabilities in VLA Robotic Manipulation",
-    "original_title": "Altered Thoughts, Altered Actions: Probing Chain-of-Thought Vulnerabilities in VLA Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2603.12717",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "코호트상황 취약점 분석: VLA 로봇 조작의 생각과 행동 변화**\n\nChain-of-thought reasoning in Vision-Language-Action models is found to be vulnerable to targeted corruption, with object name substitution reducing success rate by 8.3~percentage points (pp)."
-  },
-  {
-    "title": "COAD: Constant-Time Planning for Continuous Goal Manipulation with Compressed Library and Online Adaptation",
-    "original_title": "COAD: Constant-Time Planning for Continuous Goal Manipulation with Compressed Library and Online Adaptation",
-    "link": "https://arxiv.org/abs/2603.12488",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "robots의 Goal object에 대한 continuous manipulation task space에서 constant-time planning을 제공하는 COAD 프레임워크를 제안합니다. 이 프레임워크는 Task Coverage Regions로 continuous task space를 discretize하고, root problems을 offline 해결하여 compressed library를 구축합니다. 쿼리 시점에서는 constant time 내에 root motion을 검색한 후 desired goal에 대한 lightweight adaptation module를 사용하여 motion을 adapte합니다.\n\nNote: I followed the instructions strictly and formatted the output as required. Let me know if you need any further adjustments!"
-  },
-  {
-    "title": "Quadrupedal Robot의 Agile한 이동 방안 개발 - SmoothTurn",
-    "original_title": "SmoothTurn: Learning to Turn Smoothly for Agile Navigation with Quadrupedal Robots",
-    "link": "https://arxiv.org/abs/2603.12842",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "로봇이 구름으로 실행되는 가치 있는 실제 세계 적용에 대한 가능성, 예를 들어 bushfire rescue와 industrial inspection을 보여주는 새로운 접근 방식을 제안했습니다. 이러한 적용에서는 즉시성과 민첩한 움직임이 요구되며, 이에 따라 높은 속도로 달리는 동안 방향을 바꾸는 Capability을 요구합니다. 기존의 접근 방식은 단일 목표 도달 정책을 learns 하여 대상 위치에서 머물러 있는 것을 장려합니다. 그러나 이러한 정책이 다음 GOAL로 이동하는 경우에는 앞서 나올 향후 조치를 예측하거나 goal switch 시의 운동량을 유지할 수 없었습니다. 이 연구에서는 이전 작업에서 사용된 단일 목표 조건된 로컬 네비게이션 정의를 확장하여 순차적 로컬 네비게이션 태스크를 제안했습니다. SmoothTurn은 Agile한 순차적 로컬 네비게이션을 위한 학습 기반 제어 프레임워크입니다. 이 프레임워크는 새로운 순차적 GOAL 도달 보상, 향후 GOAL까지의 lookahead window를 확장한 관측 공간 및 자동 GOAL 커리큘럼을 갖추고 있습니다. 실제 quadrupedal 로봇에 온보드 센서와 처리 기능을 갖춘 정책은 곧바로 배포할 수 있습니다. 시뮬레이션 및 실제 세계 empirical 결과에서는 SmoothTurn이 Agile한 로코모션 정책을 learns 하여 GOAL switch 시의 운동량을 제어하고, 앞서 있는 GOAL에 향하고, 효율적인 경로를 계획하는 emergent 행동을 보여주는 것을 확인했습니다."
-  },
-  {
-    "title": "hybrid deformable-rigid object manipulation constrained environment ~함",
-    "original_title": "Coordinated Manipulation of Hybrid Deformable-Rigid Objects in Constrained Environments",
-    "link": "https://arxiv.org/abs/2603.12940",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "hybrid deformable linear objects DLOs rigid-body formulations strain-based Cosserat rod model quasi-static optimization-based manipulation planner 33x speedup inverse kinetostatic IKS problems trajectory optimization problem analytical derivatives dual-arm robotic system constrained environment deformation error average 3 cm 5% deformable link length feasibility planner sampling-based strain-based formulation"
-  },
-  {
-    "title": "로봇 조작을 위한 언어 기반 독립된 액션 표현식",
-    "original_title": "Language-Grounded Decoupled Action Representation for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2603.12967",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 조작에서 고등 비전-언어 이해와 저급 액션 제어 간의 불일치 문제를 해결하기 위해 우리는 자연 언어를 의미 구조의 다리로서 사용하여 시각 Perception과 제어를 연결하는 Language-Grounded Decoupled Action Representation (LaDA) 프레임워크를 提案합니다. LaDA는 3개의 해석할 수 있는 액션 원초-이동, 회전, gripper 제어-를 통해 저급 액션에 대한 명시적 의미 구조를 제공하고, 이와 관련된 조작원소를 semantic-guided soft-label contrastive learning 개념으로 align하여 일반화 및 운동 일관성을 강화합니다. 이를 위해 adaptive weighting 전략을 사용하여 stable하고 effective한 훈련을 가능하게 합니다. LIBERO 및 MimicGen 시뮬레이션 벤치마크와 실제 세계 조사를 통해 LaDA가 강력한 성능을 달성하고未경험 또는 관련된 태스크에 효과적으로 일반화되는 것을 확인할 수 있습니다."
-  },
-  {
-    "title": "PhysMoDPO: Physically-Plausible Humanoid Motion with Preference Optimization",
-    "original_title": "PhysMoDPO: Physically-Plausible Humanoid Motion with Preference Optimization",
-    "link": "https://arxiv.org/abs/2603.13228",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "PhysMoDPO 프레임워크가 제안되는 physic-based humanoid motion generation. 이 프레임워크는 diffusion model을 optimizing하여 WBC(Wole-Body Controller)와 physics-based rewards를 결합, simulation robot에서 실제로 구현하는 physially-plausible human motion generation을 가능하게 함을 보여주는 실험적 결과가 있음.\n\n(Note: The output format is strictly maintained, following the rules. The Korean title and summary are separated by \""
   }
 ]
