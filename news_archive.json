@@ -1,5 +1,77 @@
 [
   {
+    "title": "Understanding Asynchronous Inference Methods for Vision-Language-Action Models",
+    "original_title": "Understanding Asynchronous Inference Methods for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.08168",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08168v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models offer a promising path to generalist robot control, but their inference latency causes observation staleness when generated actions are executed asynchronously. Several methods have been proposed concurrently to mitigate this problem: inference-time inpainting (IT-RTC), training-time delay simulation (TT-RTC), future-state-aware conditioning (VLASH), and lightweight residual correction (A2C2). Each takes a fundamentally different approach, but they have so far been evaluated independently with different codebases, base policies, and protocols. We present a systematic comparison of these four methods under controlled conditions. We develop two unified codebases that integrate all methods with harmonized library and dataset versions, and we benchmark them on the Kinetix suite with MLPMixer policies and on the LIBERO manipulation benchmark with SmolVLA, sweeping inference delays up to $d=20$ control steps. A2C2's per-step residual correction is the most effective method on Kinetix, holding above 90% solve rate up to $d=8$, and also leads on LIBERO from $d=4$ onwards. IT-RTC is competitive at low delays but degrades sharply under long chunks ($H=30$) and high delays. TT-RTC is the most robust training-based method: stable across $d_\\max$ choices, generalizes beyond its training delay distribution, and adds zero inference overhead. VLASH exhibits a clear low-delay vs. high-delay trade-off governed by the fine-tuning delay range $[0,d_\\max]$. Code is available at https://github.com/TheAyos/async-vla-inference"
+  },
+  {
+    "title": "Hierarchical Prompting with Dual LLM Modules for Robotic Task and Motion Planning",
+    "original_title": "Hierarchical Prompting with Dual LLM Modules for Robotic Task and Motion Planning",
+    "link": "https://arxiv.org/abs/2605.08330",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08330v1 Announce Type: new \nAbstract: We present a hierarchical language-driven framework for robotic task and motion planning to improve natural, intuitive human-robot interaction in service and assistance scenarios. The proposed system employs two large language model (LLM) modules: a high-level planning agent and a low-level spatial reasoning sub-module. The primary agent processes natural language commands and generates action sequences using a ReAct-style prompt, interacting with tools for object perception and manipulation (e.g., pick, place, release). For precise spatial placement, such as interpreting \"place the mug next to the plate\", a separate sub-prompting module handles 3D reasoning based on object geometry and scene layout. The system integrates YOLOX-GDRNet for object detection and pose estimation, along with a motion execution stub. We evaluated the system in 24 test scenarios, ranging from simple spatial commands to high-level instructions and infeasible requests. The system achieved an overall task success rate of 86%."
+  },
+  {
+    "title": "Failing Forward: Adaptive Failure-Informed Learning for Vision-Language-Action Models",
+    "original_title": "Failing Forward: Adaptive Failure-Informed Learning for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.08434",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08434v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models provide a promising paradigm for scalable robotic manipulation, yet their reliance on success-only behavioral cloning leaves them brittle; lacking corrective training signals, minor execution errors rapidly compound into unrecoverable, out-of-distribution failures. To address this limitation, we propose Adaptive Failure-Informed Learning (AFIL), an end-to-end framework that leverages failure trajectories as adaptive negative guidance for diffusion- and flow-based VLA policies. AFIL uses a pretrained VLA to generate failure rollouts online, avoiding the need for handcrafted failure-mode design or human-in-the-loop recovery. It then jointly trains Dual Action Generators (DAGs) for successful and failed behaviors while sharing a common vision-language backbone, enabling efficient failure-aware policy learning with limited parameter overhead. During sampling, the failure generator adaptively steers action generation away from failure-prone regions and toward more reliable success modes, with guidance strength determined by the per-diffusion-step distance between success and failure distributions. Experiments across in-domain and out-of-domain robotic manipulation tasks, covering both short- and long-horizon settings, show that AFIL consistently improves task success rates and robustness over existing VLA baselines, demonstrating its effectiveness, efficiency, and generality."
+  },
+  {
+    "title": "LE-PAVD: Learning-Enhanced Physics-Aware Vehicle Dynamics for High-Speed Autonomous Navigation",
+    "original_title": "LE-PAVD: Learning-Enhanced Physics-Aware Vehicle Dynamics for High-Speed Autonomous Navigation",
+    "link": "https://arxiv.org/abs/2605.08489",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08489v1 Announce Type: new \nAbstract: Accurate modeling of nonlinear vehicle dynamics is essential for high-speed autonomous racing, where controllers operate at the handling limits. Model-based methods are interpretable but rely on simplifying assumptions, while purely learned models capture nonlinearities yet often lack physical consistency and generalization. We propose LE-PAVD (Learning-Enhanced Physics-Aware Vehicle Dynamics), a hybrid model that integrates physics priors with learned components. Our architecture adds four components: load-sensitive Pacejka tire forces, longitudinal load transfer, lateral tire-force effects, and rate-limited actuator inputs. Trained end-to-end on simulation and real-world telemetry, LE-PAVD enforces physical consistency while improving state prediction accuracy. On an unseen track, LE-PAVD reduces average displacement error (ADE) by 16.1$\\%$, final displacement error (FDE) by 20.6$\\%$, and lowers yaw-rate root mean squared error (RMSE) by 91.3$\\%$ versus a deep dynamics baseline, while using 21.6$\\%$ fewer FLOPs and achieving approximately 1.50$\\times$ faster inference. In closed-loop simulations, LE-PAVD consistently outperforms the baseline by achieving faster lap times by 17.4$\\%$ on a training track and 9.5$\\%$ on a test track, without any track boundary violations. Overall, LE-PAVD offers a compact, physics-grounded dynamics backbone that improves predictive fidelity and closed-loop performance while reducing inference cost."
+  },
+  {
+    "title": "Trajectory-Consistent Flow Matching for Robust Visuomotor Policy Learning",
+    "original_title": "Trajectory-Consistent Flow Matching for Robust Visuomotor Policy Learning",
+    "link": "https://arxiv.org/abs/2605.08511",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08511v1 Announce Type: new \nAbstract: Flow matching policies learn continuous velocity fields that transport noise to actions, enabling fast deterministic inference for robot manipulation. However, standard training optimizes a pointwise velocity objective while inference requires numerical integration of that field -- a mismatch that causes compounding trajectory errors. We propose four complementary remedies: (1) auxiliary rectified flow velocity regression that provides uniform temporal supervision across the full time interval; (2) multi-step trajectory consistency training that supervises the integrated displacement of the velocity field over trajectory segments, directly closing the train-inference gap; (3) velocity field regularization that enforces temporal smoothness, preventing oscillations that destabilize integration; and (4) fourth-order Runge-Kutta (RK4) inference that reduces global discretization error by orders of magnitude over Euler methods. Critically, these components are not independently sufficient -- RK4 without a smooth velocity field fails, and smoothness without trajectory-level supervision still drifts, as our ablation study confirms. We further pair these with a dual-view 3D point cloud encoder using two independent PointNet encoders for complementary spatial perception. On four real-robot tasks across a Franka arm and a Boston Dynamics Spot, our method achieves 70% and 60% overall success on two long-horizon multi-phase tasks where both baselines score 0%, and reaches 100% on precision tool placement. Three MetaWorld simulation tasks confirm consistent improvements, validating that trajectory-level supervision is essential for reliable policy execution."
+  },
+  {
+    "title": "BEACON: Cross-Domain Co-Training of Generative Robot Policies via Best-Effort Adaptation",
+    "original_title": "BEACON: Cross-Domain Co-Training of Generative Robot Policies via Best-Effort Adaptation",
+    "link": "https://arxiv.org/abs/2605.08571",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08571v1 Announce Type: new \nAbstract: We introduce BEACON--Best-Effort Adaptation for Cross-Domain Co-Training--a theory-driven framework for training generative robot policies with abundant source demonstrations and limited target demonstrations. BEACON casts cross-domain co-training as a discrepancy-aware importance-reweighting problem, jointly learning a diffusion-based visuomotor policy and per-sample source weights that minimize an objective informed by target-domain generalization guarantees. To make best-effort adaptation practical for high-dimensional sequence policies, we develop scalable instance-level discrepancy estimators, stochastic alternating updates for policy and weights, and a multi-source extension that balances heterogeneous source domains. Across sim-to-sim, sim-to-real, and multi-source manipulation settings, BEACON improves robustness and data efficiency over target-only, fixed-ratio co-training, and feature-alignment baselines. Importantly, even without an explicit alignment objective, BEACON achieves feature alignment as an implicit result of discrepancy-aware cross-domain co-training."
+  },
+  {
+    "title": "ATAAT: Adaptive Threat-Aware Adversarial Tuning Framework against Backdoor Attacks on Vision-Language-Action Models",
+    "original_title": "ATAAT: Adaptive Threat-Aware Adversarial Tuning Framework against Backdoor Attacks on Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.08612",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08612v1 Announce Type: new \nAbstract: Addressing the escalating security vulnerabilities in Vision-Language-Action (VLA) models, this study investigates backdoor attacks targeting the visual pathway. We identify a core obstacle causing the failure of traditional attack paradigms: \"Gradient Interference.\" This phenomenon represents an optimization failure triggered by conflicting strategies during end-to-end training. To resolve this, we propose an Adaptive Threat-Aware Adversarial Tuning (ATAAT) framework. Through its core \"Threat-Method Adaptive Mapping\" mechanism, ATAAT intelligently selects the optimal gradient decoupling strategy based on the adversary's capabilities. Extensive experiments demonstrate that ATAAT exhibits significant advantages, achieving a highly robust Targeted Attack Success Rate (TASR > 80%) while maintaining extreme stealthiness with merely a 5% poisoning rate. It efficiently handles complex semantic-level triggers and achieves implicit decoupled attacks in data poisoning scenarios for the first time. This work reveals a critical security vulnerability in VLAs and provides theoretical and methodological support for future defense architectures."
+  },
+  {
+    "title": "HULK: Large-scale Hierarchical Coordination under Continual and Uncertain Temporal Tasks",
+    "original_title": "HULK: Large-scale Hierarchical Coordination under Continual and Uncertain Temporal Tasks",
+    "link": "https://arxiv.org/abs/2605.08722",
+    "date": "2026-05-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.08722v1 Announce Type: new \nAbstract: Multi-agent systems can be extremely efficient when working concurrently and collaboratively, e.g., for delivery, surveillance, search and rescue. Coordination of such teams often involves two aspects: selecting appropriate subteams for different tasks in various areas, and coordinating agents in the subteams to execute the associated subtasks. Existing work often assumes that the tasks are static and known beforehand, where an integer program can be formulated and solved offline. However, in many applications, the team-wise tasks are generated online continually by external requests, and the amount of subtasks within each task is uncertain, e.g., the number of packages to deliver or victims to rescue. The aforementioned offline solution becomes inadequate as it would require constant re-computation for the whole team and global communication to broadcast the results. Thus, this work tackles the large-scale coordination problem under continual and uncertain temporal tasks, specified as temporal logic formulas over collaborative actions. The proposed hierarchical framework, HULK, consists of two interleaved layers: the rolling assignment of currently known tasks to subteams within a certain horizon, and the dynamic coordination within a subteam given the detected subtasks during online execution. Thus, coordination is performed hierarchically at different granularities and triggering conditions, improving computational efficiency and robustness. The method is validated rigorously over large-scale heterogeneous systems under various temporal tasks and environment uncertainties."
+  },
+  {
     "title": "RLWRLD releases RLDX-1, a dexterity-first foundation model for robot hands",
     "original_title": "RLWRLD releases RLDX-1, a dexterity-first foundation model for robot hands",
     "link": "https://www.therobotreport.com/rlwrld-releases-rldx-1-a-dexterity-first-foundation-model-for-robot-hands/",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "플러그인 시각 주입(PVI)은 예약된 액션 전문가와 연결하여 ngôn ngữ 조건화 manipulation을 강조하는 VLA 구조에서 사용할 수 있는 가벼운, 인코더-agnostic 모듈입니다. 이 module은 zero-initialized residual 경로를 통해 예약된 액션 전문가에 부착하고 auxiliary 시각 đại diện을 주입하여 예약된 동작을 그대로 유지하면서 단일 단계 fine-tuning으로 작동합니다. PVI를 사용하면 기존 정책보다 일정한 향상을 얻을 수 있으며, 조절 연구에서는 video 특징(V-JEPA2)이 이미지 특징(DINOv2)보다 더 큰 향수를 보여줍니다. 이에 따라 멀티-Phase 태스크에서 상태 추적과 조정이 필요하므로 PVI는 실현 가능성을 나타내는 실제 로봇 실험으로 확인할 수 있습니다."
-  },
-  {
-    "title": "LiDAR 스캐닝으로부터 야외 장소 카테고리화에 관한 지오мет릭 및 광학적 특징 학습",
-    "original_title": "Learning Geometric and Photometric Features from Panoramic LiDAR Scans for Outdoor Place Categorization",
-    "link": "https://arxiv.org/abs/2603.12663",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "야외 장소 카테고리화, 자율 로봇 및 차량의 필수 과제로, 이를 통해 그들은 익숙하지 않은 환경에서 의사 결정과 항해를 가능하게 한다. 특히, 24시간 동적 조명 및 차와 보행자의 간섭 등으로 인한 Outdoor 장소는 Indoor 장소보다 더 어려운 대상이다. 이 논문은 3D LiDARs로 얻어진 Omnidirectional Depth/Reflectance 이미지 입력을 받는 컨볼루션 신경망(CNN)을 사용하여 야외 장소를 카테고리화하는 새로운 방법을 제안한다. 우선, MPO(Multi-modal Panoramic 3D Outdoor)라고 하는 대규모 야외 장소 데이터셋을 구성하는데, 이 데이터셋에는 두 가지 LiDARs로 얻어진 Point Cloud가 포함되어 있고 여섯의 야외 장소 카테고리(해안, 삼림, Indoor/Outdoor 주차장, 민간 지역, 도시 지역)와 함께 라벨이 지정되어 있다. 다음으로, LiDAR를 기반으로 하는 Outdoor 장소를 카테고리화하는 CNN을 제공하고 MPO 데이터셋에 대한 평가를 수행하여 성과를 나타내었다. MPO 데이터셋에서 nuestra 접근 방식은 전통적인 접근 방식보다 더 뛰어나게 되었으며, depth 및 reflectance 모듈러티 모두 사용함으로써의 효용을 보여 주었다.-trained deep 네트워크를 분석하기 위해 우리는 학습된 특징을 시각화하였다."
-  },
-  {
-    "title": "FLUX: Accelerating Cross-Embodiment Generative Navigation Policies via Rectified Flow and Static-to-Dynamic Learning",
-    "original_title": "FLUX: Accelerating Cross-Embodiment Generative Navigation Policies via Rectified Flow and Static-to-Dynamic Learning",
-    "link": "https://arxiv.org/abs/2603.12806",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "한국의 autonomous navigation 기술에 있어, 정적 목표 달성에서부터 동적 사회 탐색까지 다양한 스펙트럼의 스킬이 필요하다. 우리는 DynBench라는 새로운 동적_navigation_벤치마크를 도입하여, 실제로 가능한crowd simulation을 지원해 comprehensive evaluation을 수행할 수 있도록 했다. 이러한 프레임워크에서 FLUX를 제안하는데, 이는 probability flow를 선형화하여, 직선 траекторий으로 iterative denoising을 대체함으로써, 기존의 flow-based method보다 47%, diffusion-based method보다 29%의 효율성을 향상시켰다. FLUX는 statically goal-reaching부터 dynamically social traversal까지 총 6개의 fundamental navigation tasks에서 state-of-the-art 성능을 달성하고, wheeled, quadrupedal, humanoid 플랫폼에 대한 zero-shot sim-to-real 전이도 가능함을示시켰다."
-  },
-  {
-    "title": "humanoobject detection system based on human video demonstration data ~함",
-    "original_title": "Show, Don't Tell: Detecting Novel Objects by Watching Human Videos",
-    "link": "https://arxiv.org/abs/2603.12751",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "\"Show, Don't Tell\" : humanoobjeceul jineun saram ui videeo demonstration deo bulgwa jikyeokhae jinaewhaesseoyo. humanoid robot-i gwaegaghaeui object detector-eui performance-eui upsaengjayeoseyo."
-  },
-  {
-    "title": "로봇이 자체적으로 재설계되는 새로운 방법: 신축적 파괴 방식으로 몸의 구조를 변경함",
-    "original_title": "Robots that redesign themselves through kinematic self-destruction",
-    "link": "https://arxiv.org/abs/2603.12505",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "한국 로봇은 dosud 외부 프로세스에 의해 설계되던 것과 달리, 생애 동안 자신의 설계를 참여시킴. 무작정 조립된身体에서 시작하여 proprioceptive 피드백을 사용해 새로운 설계로 몸을 동적으로 조형하고, 신축적 파괴 방식을 통해 불필요한 링크를 제거함으로써 보행성을 개선하는 새로운 로봇 설계 전략을 제공함."
-  },
-  {
-    "title": "SldprtNet: 3D 디자인에 대한 언어 기반の大規模 다모달 데이터셋",
-    "original_title": "SldprtNet: A Large-Scale Multimodal Dataset for CAD Generation in Language-Driven 3D Design",
-    "link": "https://arxiv.org/abs/2603.13098",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "SldprtNet, 242,000개의 산업 부품을 포함하는 대규모 다모달 데이터셋을 개발하여 3D設計의 의미 구축 모델링, 기하 학습, 다모달 모델 훈련 및 fine-tuning을 지원합니다. 이 데이터셋은 .step와 .sldprt 형식으로 3D 모형을 제공하여 다양한 트레이닝 및 테스트를 지원하며, 파라미터 모델링을 비롯한 도구인 인코더와 디코더를 개발하여 13개의 CAD 명령을 지원하고 3D 모형과 구조화된 텍스트 표현 간의 무손실 변환을 허용합니다. 또한 각 샘플은 7가지 다른 관점에서 3D 모형을 RENDER링하여 생성된 이미지와 함께 제공되며, 이 이미지와 인코더 출력을 결합하여 가벼운 다모달 언어 모델 Qwen2.5-VL-7B를 사용하여 각 부품의 зовніш과 기능에 대한 자연어 설명을生成합니다."
-  },
-  {
-    "title": "From Passive Monitoring to Active Defence: Resilient Control of Manipulators Under Cyberattacks",
-    "original_title": "From Passive Monitoring to Active Defence: Resilient Control of Manipulators Under Cyberattacks",
-    "link": "https://arxiv.org/abs/2603.13003",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "FDIA 공격에 취약한 사이버 물리 로봇 시스템의 적응성 제어 방안이 새로 발표됨. 기존 안ωμα 검출자에서 침묵하는 FDIAs를 탐지하여 제어 입력을 억제하고,.nominal 조작 손실과 제어 루프 stablity를 보장함. 이 방안은 6-DOF 평면 로봇에 대한 시뮬레이션 결과를 바탕으로 FDIAs에 의한 엔딩-에플러 변위를 줄이고, 공격이 없는 경우의 nominal task 수행을 보장함."
-  },
-  {
-    "title": "Conflict Mitigation in Shared Environments using Flow-Aware Multi-Agent Path Finding",
-    "original_title": "Conflict Mitigation in Shared Environments using Flow-Aware Multi-Agent Path Finding",
-    "link": "https://arxiv.org/abs/2603.12736",
-    "date": "2026-03-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "멀티 로봇 시스템을 동적이고 제어 불가능한 에ージ언과 공유 환경에서 배포하는 경우, 큰 로봇 호출에 대한 지연 문제가 발생할 수 있습니다. 이를 해결하기 위해 우리는 중앙 집중식 MAPF 알고리즘에 제어 불가능한 에이지언의 운동 패턴을 통합한 FA-MAPF 프레임워크를 제안합니다. 실험 결과, FA-MAPF는 제어 불가능한 에이지언과의 충돌을 55%까지 줄일 수 있었으며, 작업 효율성을 손실하지 않았습니다."
-  },
-  {
-    "title": "Lanner to Unveil AstraEdge™ Platforms for GenAI Robotics and AI-RAN at NVIDIA GTC 2026 - National Today",
-    "original_title": "Lanner to Unveil AstraEdge™ Platforms for GenAI Robotics and AI-RAN at NVIDIA GTC 2026 - National Today",
-    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZmlLa3JFUDR2Ni0wUkFLZ2RzZndPT1lodlZBa29MLVZQSFBISEE5TlU4QmFzU1ZReXJFZmtqS1VhNllYdkMtS1dVeHB6ME50cXZjLVc3dGVaYnZ4aS02TXUzejdaQk1ZNVJ2dXhNWEQzOGFOa0JkYWpXNlJ6MmY4UWU4a0NTSnRZcW9Vd1V1TENyc2FWNjBrU2JoSWR1aEVSbC01UnEtWjZUckZWY0hiQTM0Qm4xQnFfVC1paDZjd05QTDE0ZWFmalcwdnlIZDhjTm1VVHRGWlhyTzgyTmNGb2h3?oc=5",
-    "date": "2026-03-15 22:39",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "라너(Lanner)는 NVIDIA GTC 2026에서 GenAI 로보틱스(AI 로보틱스)와 AI-RAN(AI-Radio Access Network) 플랫폼 AstraEdge™를 공개할 예정임. 이 새로운 플랫폼은 AI 기술을 기반으로한 고성능 로보틱스 애플리케이션과 5G 통신 네트워크를 구현하는 데 사용될 계획임."
   }
 ]
