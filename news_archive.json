@@ -1,5 +1,14 @@
 [
   {
+    "title": "China's Unitree showcases transformable mecha robot in latest robotics breakthrough - The Online Citizen",
+    "original_title": "China's Unitree showcases transformable mecha robot in latest robotics breakthrough - The Online Citizen",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRDJMU09aazdET2UteFZwcnA3UHJtWTA1bkNaTmZiNk8tY0hid2FsVHdtMXlkMzQzcE1aTW4tY3JsS3Frd3dJMHZoRnhSUThsOUV6RkR2VjJtQ0xUTWR2dmxTbEd3NlpSa2trYk5GWXl4aEh4V2lSaHRrb2xkZlRsWk1WS3JmM3JISmJDRDFFa3hMQlVlVXBZX3owR1A0dENTMjRPWEpHLVpOR3RpTnN2THRGNVYzakdLUE9RdUlyank3LVlmemhtXw?oc=5",
+    "date": "2026-05-13 05:31",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China's Unitree showcases transformable mecha robot in latest robotics breakthrough  The Online Citizen"
+  },
+  {
     "title": "Chinese humanoid robots go viral over fight in San Francisco store - VnExpress International",
     "original_title": "Chinese humanoid robots go viral over fight in San Francisco store - VnExpress International",
     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZElTTGNaOHZfUHF1X2xZYVU4N2N5MzVqdU40VDlYNVMwcG5rZDl3SV9BWHl4X1pBczBOb2tEWlB6ajVXRFlUVHNWNnE1TXlWRGg3UTJSSTNHWDgxLVcySlZ1QTFwQy1CYmNOYnZGWXE4NHVQenpJZ2x3b3BYekpjRkY1OV9pNEpJUlBMelBFZmplQVVqTS1lcENiMHdSczdwUF91cWRHMk5RYlJZNllnSmlLTTVEazlHckNDdF8weGQ?oc=5",
@@ -151,6 +160,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.11951v1 Announce Type: new \nAbstract: Although robotic manipulation has made significant progress, reliable execution remains challenging because task failures are inevitable in dynamic and unstructured environments. To handle such failures, existing frameworks typically follow a stepwise detect-reason-recover pipeline, which often incurs high latency and limited robustness due to delayed reasoning and reactive planning. Inspired by the human capability to anticipate and proactively plan for potential failures, we introduce AgentChord, an agentic system that models a manipulation task as a directed task graph. Before execution, this graph is enriched with anticipatory recovery branches that specify context-aware corrective behaviors, enabling immediate and targeted responses when failures occur. Specifically, AgentChord operates through a choreography of specialized agents: a composer that structures the nominal task graph, an arranger that augments the graph with anticipatory recovery branches, and a conductor that compiles and coordinates executable transitions using low-latency monitors to detect deviations and trigger pre-compiled recoveries without re-planning. Empirical studies on diverse long-horizon bimanual manipulation tasks demonstrate that AgentChord substantially improves success rates and execution efficiency, advancing the reliability and autonomy of real-world robotic systems. The project page is available at: https://shengxu.net/AgentChord/."
+  },
+  {
+    "title": "Cooperative Robotics Reinforced by Collective Perception for Traffic Moderation",
+    "original_title": "Cooperative Robotics Reinforced by Collective Perception for Traffic Moderation",
+    "link": "https://arxiv.org/abs/2605.11972",
+    "date": "2026-05-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.11972v1 Announce Type: new \nAbstract: Collisions at non-line-of-sight (NLOS) intersections remain a major safety concern because drivers have limited visibility of approaching traffic. V2X based warnings can reduce these risks, yet many vehicles are not equipped with V2X and drivers may ignore in vehicle alerts. Collective perception (CP) can compensate for low V2X penetration by extending the awareness of connected vehicles, but it cannot influence unconnected vehicles. To fill this gap, our work introduces a complementary concept that adds a cooperative humanoid robot as an active traffic moderator capable of physically stopping a vehicle that attempts to merge into an unseen traffic stream. The system operates on two parallel perception pathways. A dual camera infrastructure unit detects the position, speed and motion of approaching vehicles and transmits this information to the robot as a collective perception message (CPM). The robot also receives cooperative awareness messages (CAM) from connected vehicles through its onboard V2X unit and can act as a relay for decentralized environmental notification messages (DENM) when safety events originate elsewhere along the road. A fusion module combines these streams to maintain a robust real time view of the main road. A Zone of Danger (ZoD) is defined and used to predict whether an approaching vehicle creates a collision risk for a merging road user. When such a risk is detected, the robot issues a human-like STOP gesture and blocks the merging path until the hazard disappears. The full system was deployed at the Future Mobility Park (FMP) in Rotterdam. Experiments show that the combined vision and V2X perception allows the robot to detect approaching vehicles early, predict hazards reliably and prevent unsafe merges in real world NLOS conditions."
+  },
+  {
+    "title": "Learning What Matters: Adaptive Information-Theoretic Objectives for Robot Exploration",
+    "original_title": "Learning What Matters: Adaptive Information-Theoretic Objectives for Robot Exploration",
+    "link": "https://arxiv.org/abs/2605.12084",
+    "date": "2026-05-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.12084v1 Announce Type: new \nAbstract: Designing learnable information-theoretic objectives for robot exploration remains challenging. Such objectives aim to guide exploration toward data that reduces uncertainty in model parameters, yet it is often unclear what information the collected data can actually reveal. Although reinforcement learning (RL) can optimize a given objective, constructing objectives that reflect parametric learnability is difficult in high-dimensional robotic systems. Many parameter directions are weakly observable or unidentifiable, and even when identifiable directions are selected, omitted directions can still influence exploration and distort information measures. To address this challenge, we propose Quasi-Optimal Experimental Design (Q{\\footnotesize OED}), an adaptive information objective grounded in optimal experimental design. Q{\\footnotesize OED} (i) performs eigenspace analysis of the Fisher information matrix to identify an observable subspace and select identifiable parameter directions, and (ii) modifies the exploration objective to emphasize these directions while suppressing nuisance effects from non-critical parameters. Under bounded nuisance influence and limited coupling between critical and nuisance directions, Q{\\footnotesize OED} provides a constant-factor approximation to the ideal information objective that explores all parameters. We evaluate Q{\\footnotesize OED} on simulated and real-world navigation and manipulation tasks, where identifiable-direction selection and nuisance suppression yield performance improvements of \\SI{35.23}{\\percent} and \\SI{21.98}{\\percent}, respectively. When integrated as an exploration objective in model-based policy optimization, Q{\\footnotesize OED} further improves policy performance over established RL baselines."
+  },
+  {
+    "title": "X-Imitator: Spatial-Aware Imitation Learning via Bidirectional Action-Pose Interaction",
+    "original_title": "X-Imitator: Spatial-Aware Imitation Learning via Bidirectional Action-Pose Interaction",
+    "link": "https://arxiv.org/abs/2605.12162",
+    "date": "2026-05-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.12162v1 Announce Type: new \nAbstract: Effectively handling the interplay between spatial perception and action generation remains a critical bottleneck in robotic manipulation. Existing methods typically treat spatial perception and action execution as decoupled or strictly unidirectional processes, fundamentally restricting a robot's ability to master complex manipulation tasks. To address this, we propose X-Imitator, a versatile dual-path framework that models spatial perception and action execution as a tightly coupled bidirectional loop. By reciprocally conditioning current pose predictions on past actions and vice versa, this framework enables continuous mutual refinement between spatial reasoning and action generation. This joint modeling exactly mimics human internal forward models. Designed as a modular architecture, the system can be seamlessly integrated into various visuomotor policies. Extensive experiments across 24 simulated and 3 real-world tasks demonstrate that our framework significantly outperforms both vanilla policies and prior methods utilizing explicit pose guidance. The code will be open sourced."
+  },
+  {
+    "title": "From Imagined Futures to Executable Actions: Mixture of Latent Actions for Robot Manipulation",
+    "original_title": "From Imagined Futures to Executable Actions: Mixture of Latent Actions for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2605.12167",
+    "date": "2026-05-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.12167v1 Announce Type: new \nAbstract: Video generation models offer a promising imagination mechanism for robot manipulation by predicting long-horizon future observations, but effectively exploiting these imagined futures for action execution remains challenging. Existing approaches either condition policies on predicted frames or directly decode generated videos into actions, both suffering from a mismatch between visual realism and control relevance. As a result, predicted observations emphasize perceptual fidelity rather than action-centric causes of state transitions, leading to indirect and unstable control. To address this gap, we propose MoLA (Mixture of Latent Actions), a control-oriented interface that transforms imagined future videos into executable representations. Instead of passing predicted frames directly to the policy, MoLA leverages a mixture of pretrained inverse dynamics models to infer a mixture of latent actions implied by generated visual transitions. These modality-aware inverse dynamics models capture complementary semantic, depth, and flow cues, providing a structured and physically grounded action representation that bridges video imagination and policy execution. We evaluate our approach on simulated benchmarks (LIBERO, CALVIN, and LIBERO-Plus) and real-world robot manipulation tasks, achieving consistent gains in task success, temporal consistency, and generalization."
+  },
+  {
+    "title": "DexTwist: Dexterous Hand Retargeting for Twist Motion via Mixed Reality-based Teleoperation",
+    "original_title": "DexTwist: Dexterous Hand Retargeting for Twist Motion via Mixed Reality-based Teleoperation",
+    "link": "https://arxiv.org/abs/2605.12182",
+    "date": "2026-05-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.12182v1 Announce Type: new \nAbstract: Dexterous teleoperation via Mixed Reality (MR)-based interfaces offers a scalable paradigm for transferring human manipulation skills to dexterous robot hands. However, conventional retargeting approaches that minimize kinematic dissimilarity (e.g., joint angle or fingertip position error) often fail in contact-rich rotational manipulation, such as cap opening, key turning, and bolt screwing. This failure stems from the embodiment gap: mismatched link lengths, joint axes/limits, and fingertip geometry can cause direct pose imitation to induce tangential fingertip sliding rather than stable object rotation, resulting in screw axis drift, contact slip, and grasp instability. To address this, we propose DexTwist, a functional twist-retargeting framework for MR-based dexterous teleoperation. DexTwist detects a tripod pinch, estimates the operator's intended screw axis and twist magnitude, and applies a real-time residual joint-space refinement that tracks turning progress while regularizing the robot tripod geometry. The refinement minimizes a virtual-object objective defined by turning angle, screw axis consistency, fingertip closure, and tripod stability. Simulation and real-world experiments show that DexTwist improves turning angle tracking and screw axis stability compared with a vector-based retargeting baseline."
+  },
+  {
+    "title": "Morphologically Equivariant Flow Matching for Bimanual Mobile Manipulation",
+    "original_title": "Morphologically Equivariant Flow Matching for Bimanual Mobile Manipulation",
+    "link": "https://arxiv.org/abs/2605.12228",
+    "date": "2026-05-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.12228v1 Announce Type: new \nAbstract: Mobile manipulation requires coordinated control of high-dimensional, bimanual robots. Imitation learning methods have been broadly used to solve these robotic tasks, yet typically ignore the bilateral morphological symmetry inherent in such systems. We argue that morphological symmetry is an underexplored but crucial inductive bias for learning in bimanual mobile manipulation: knowing how to solve a task in one configuration directly determines how to solve its mirrored counterpart. In this paper, we formalize this symmetry prior and show that it constrains optimal bimanual policies to be ambidextrous and equivariant under reflections across the robot's sagittal plane. We introduce a $\\mathbb{C}_2$-equivariant flow matching policy that enforces reflective symmetry either via a regularized training loss or an equivariant velocity network. Across planar and 6-DoF mobile manipulation tasks, symmetry-informed policies consistently improve sample efficiency and achieve zero-shot generalization to mirrored configurations absent from the training distribution. We further validate this zero-shot generalization capability on a real-world manipulation task with a TIAGo++ robot. Together, our findings establish morphological symmetry as an effective, generalizable, and scalable inductive bias for ambidextrous generative policy learning."
+  },
+  {
+    "title": "TMRL: Diffusion Timestep-Modulated Pretraining Enables Exploration for Efficient Policy Finetuning",
+    "original_title": "TMRL: Diffusion Timestep-Modulated Pretraining Enables Exploration for Efficient Policy Finetuning",
+    "link": "https://arxiv.org/abs/2605.12236",
+    "date": "2026-05-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.12236v1 Announce Type: new \nAbstract: Fine-tuning pre-trained robot policies with reinforcement learning (RL) often inherits the bottlenecks introduced by pre-training with behavioral cloning (BC), which produces narrow action distributions that lack the coverage necessary for downstream exploration. We present a unified framework that enables the exploration necessary to enable efficient robot policy finetuning by bridging BC pre-training and RL fine-tuning. Our pre-training method, Context-Smoothed Pre-training (CSP), injects forward-diffusion noise into policy inputs, creating a continuum between precise imitation and broad action coverage. We then fine-tune pre-trained policies via Timestep-Modulated Reinforcement Learning (TMRL), which trains the agent to dynamically adjust this conditioning during fine-tuning by modulating the diffusion timestep, granting explicit control over exploration. Integrating seamlessly with arbitrary policy inputs, e.g., states, 3D point clouds, or image-based VLA policies, we show that TMRL improves RL fine-tuning sample efficiency. Notably, TMRL enables successful real-world fine-tuning on complex manipulation tasks in under one hour. Videos and code available at https://weirdlabuw.github.io/tmrl/."
+  },
+  {
+    "title": "SI-Diff: A Framework for Learning Search and High-Precision Insertion with a Force-Domain Diffusion Policy",
+    "original_title": "SI-Diff: A Framework for Learning Search and High-Precision Insertion with a Force-Domain Diffusion Policy",
+    "link": "https://arxiv.org/abs/2605.12247",
+    "date": "2026-05-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.12247v1 Announce Type: new \nAbstract: Contact-rich assembly is fundamental in robotics but poses significant challenges due to uncertainties in relative poses, such as misalignments and small clearances in peg-in-hole tasks. Existing approaches typically address search and high-precision insertion separately, because these tasks involve distinct action patterns. However, supporting both tasks within a single model, without switching models or weights, is desirable for intelligent assembly systems. In this work, we propose SI-Diff, a framework that learns both search and high-precision insertion through a force-domain diffusion policy. To this end, we introduce a new mode-conditioning mechanism that enables the policy to capture distinct action behaviors under a single framework. Moreover, we develop a new search teacher policy that can generate diverse trajectories. By training on successful and efficient demonstrations provided by the teacher policy, the model learns the mapping from tactile and end-effector velocity observations to effective action behaviors. We conduct thorough experiments to show that SI-Diff extends the tolerance to x-y misalignments from 2 mm to 5 mm compared to the state-of-the-art baseline, TacDiffusion, while also demonstrating strong zero-shot transferability to unseen shapes."
   },
   {
     "title": "The Unitree GD01 Is a Giant Mecha Robot You Can Actually Buy - The Tech Buzz",
@@ -17917,86 +17998,5 @@
     "source": "Google News (NVIDIA GTC)",
     "category": "humanoid",
     "summary": "NVIDIA CEO Jenssen Huang이 GTC 2026에서 NVIDIA와 디즈니가 함께 진행한 'Frozen' 캐릭터 올레프를 데뷔시켰다. 그는 로보틱스 산업을 '$50 Trillion Industry'로 규정하며 그에 대한 가능성을 강조하였다.\n\n(Note: The translation follows the instruction to use a formal, objective news-brief style and does not include polite conversational endings. Key technical terms like 'NVIDIA', 'GTC 2026' are kept in English.)"
-  },
-  {
-    "title": "SAATT Nav",
-    "original_title": "SAATT Nav: a Socially Aware Autonomous Transparent Transportation Navigation Framework for Wheelchairs",
-    "link": "https://arxiv.org/abs/2603.13698",
-    "date": "2026-03-17 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "고지능 무인 휠체어 교통 навиг이션 프레임워크, 사용자의 의도와 다른 사람의 의도 예측을 통해 사회적 상황 탐지 및 통행을 가능하게 하는 새로운 솔루션이다. 이 프레임워크는 언어 모델에 의존하여 각 지점에서 이유를 텍스트적으로 설명하고 있어透明성을 확보하는 기능을 갖추고 있다. 이 실험에서는 표준 글로벌 플래너, 경쟁자 사회_NAV_model과 결손 연구를 3개 시뮬레이션 환경에서 8개 성능 지표(안전, 사회적 호응성, 효율, 편리)에서 비교한 결과 SAATT Nav가 대부분의 社会적 상황에서優勢을 보이며 예외적인 경우에도 안전하고透明한 무인 휠체어 교통<nav>ion</nav> 시스템의 가능성을 보여주는もの임."
-  },
-  {
-    "title": "robots에 대한 새로운 기술 ~함\n\nExploration-assisted Bottleneck Transition Toward Robust and Data-efficient Deformable Object Manipulation",
-    "original_title": "Exploration-assisted Bottleneck Transition Toward Robust and Data-efficient Deformable Object Manipulation",
-    "link": "https://arxiv.org/abs/2603.13756",
-    "date": "2026-03-17 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇이물체 조작을 데이터 효율적으로 강화하기 위해 개발된 새로운 프레임워크를 제안했다. 이 프레임워크는 2가지 주요 특징을 갖추고 있다. 첫째, bottleneck states를 정의하여 task execution의 시작점으로 사용하고 이를 통해 OOD challenge를 reconceptualize할 수 있다. 둘째, imperfect perception을 고려하여 state space를 partition하고 dual action primitives를 사용하여 unrecognizable states조차 조작할 수 있는 방안을 제안했다. 이러한 접근방식으로 ExBot은 data efficiency와 robustness를 동시에 달성할 수 있어 rope과 cloth manipulation 등의 실제 실험에서도 diverse OOD states에서 task completion을 성공적으로 수행할 수 있었다."
-  },
-  {
-    "title": "Building Explicit World Model for Zero-Shot Open-World Object Manipulation",
-    "original_title": "Building Explicit World Model for Zero-Shot Open-World Object Manipulation",
-    "link": "https://arxiv.org/abs/2603.13825",
-    "date": "2026-03-17 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "open-world object manipulation을 위한 명시적 세계 모델 framework를 제안하여 zero-shot generalize할 수 있도록 physic-enabled simulator에서 효율적으로 탐색 evaluate하고 실제 세계에 배포함. 이 프레임워크는 open-set perception, digital-twin reconstruction, interaction strategy sampling evaluation 등을 통합하며 task-agnostic action demonstration 없이 다양한 object manipulation 태스크 수행 가능함을 실험적으로 입증함."
-  },
-  {
-    "title": "GraspADMM: Improving Dexterous Grasp Synthesis via ADMM Optimization",
-    "original_title": "GraspADMM: Improving Dexterous Grasp Synthesis via ADMM Optimization",
-    "link": "https://arxiv.org/abs/2603.13832",
-    "date": "2026-03-17 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 구속에 중요한 고급 구속 합성 문제를 해결하기 위해 새로운 접근방식인 GraspADMM을 제안하였다. 이 framework은 다양성을 보장하면서 구속 가능성을 향상하고 동적 안정성을 개선하는 데 성공적으로 사용되며, 실험 결과 state-of-the-art baseline보다 15% 이상의 구속 성공률을 달성함을 확인하였다."
-  },
-  {
-    "title": "LDHP: Library-Driven Hierarchical Planning for Non-prehensile Dexterous Manipulation",
-    "original_title": "LDHP: Library-Driven Hierarchical Planning for Non-prehensile Dexterous Manipulation",
-    "link": "https://arxiv.org/abs/2603.13844",
-    "date": "2026-03-17 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "고도 계획 시스템(LDHP)이 제안되었습니다. LDHP는 실행 가능성을 우선적인 설계 목표로 삼아, 물체의 자세를 설정하는 상위 계획 단위와 일치할 수 있는 가ripper의 feasible grasp sequence를 하위 계획 단위에서 synthesizes합니다. 이 방법은 물체 운동과 잡기의 실현 가능성을 분리하여, 다양한 조작 태스크와 지형 변화에 대응할 수 있습니다.\n\n(Note: I followed the instructions strictly to output the formatted string in the desired format.)"
-  },
-  {
-    "title": "TransDex: Pre-training Visuo-Tactile Policy with Point Cloud Reconstruction for Dexterous Manipulation of Transparent Objects",
-    "original_title": "TransDex: Pre-training Visuo-Tactile Policy with Point Cloud Reconstruction for Dexterous Manipulation of Transparent Objects",
-    "link": "https://arxiv.org/abs/2603.13869",
-    "date": "2026-03-17 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "transparent object manipulation을 해결하기 위해 TransDex를 제안하는데, 이 전략은 3D visuo-tactile fusion motor policy를 기반으로 한다. 이를 구성하는 첫 번째 단계는 Transformer를 사용한 self-supervised point cloud reconstruction pre-training 방법으로, 이 방법으로는 Dexterous hands의 interactive point clouds에서 물체의 3D 구조를 정확하게 회복할 수 있다. 두 번째 단계에서는 TransDex를 구축하는데, 여기에는 Robotic arm과 Dexterous hand의 기능을 differentiated motion prediction을 위해 adaptively fuse하는 multi-round attention mechanisms이 포함된다. 실제 로봇 시스템에서 transparent object manipulation 실험을 수행한 결과, TransDex는 기존 baseline method보다 성능이 우수함을 보였으며, Further analysis에서는 TransDex의 일반화 가능성과 각 구성 요소의 효과성을 확인하였다."
-  },
-  {
-    "title": "Stiffness Copilot: An Impedance Policy for Contact-Rich Teleoperation",
-    "original_title": "Stiffness Copilot: An Impedance Policy for Contact-Rich Teleoperation",
-    "link": "https://arxiv.org/abs/2603.14068",
-    "date": "2026-03-17 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "텔레옵서레이션에서 접촉-rich 매니퓰레이션 작업 선택하는 로봇 임피던스는 중요하지만 어려운 문제입니다. 로봇은 환경을 손상하지 않도록 유연해야 하지만, 필요한 힘을 적용하려면 rigidity를 갖추어야 합니다. 이 논문에서는 Stiffness Copilot, contact-rich teleoperation에서 operator가 로봇 자세를 지시하고 정책이 온라인으로 로봇 임피던스를 조정하는 비전 기반의 공유 제어 방식을 제안합니다. \n\n(Note: I followed the instructions strictly and output the required format with no introductory text.)"
-  },
-  {
-    "title": "GelSphere: Omnidirectional Rolling Vision-Based Tactile Sensor",
-    "original_title": "GelSphere: An Omnidirectional Rolling Vision-Based Tactile Sensor for Online 3D Reconstruction and Normal Force Estimation",
-    "link": "https://arxiv.org/abs/2603.14104",
-    "date": "2026-03-17 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "GelSphere는 실시간 지속적 표면 스크닝을 위한 구형視-based tactle 센서를 발표했습니다. тради적인 视-based tactle 센서는 표면에 슬라이드 될 때 손상되는 반면, 우리는 Steel Ball을 내부에 배치하여 Omnidirectional Rolling을 모든 축에서 허용하는 새로운 감응 시스템 디자인을 개발했습니다. 이 센서는 Wi-Fi를 통해 Tactile 이미지를 스트리밍하고, 온라인 대면 재구성 기능을 지원합니다. 우리는 재구성 정확도와 이미지融合 성능에 대한 정량적 결과를 발표했습니다. 이 결과는 multi-directional Rolling 하에서도 지오메τρ적 신뢰성을 유지하고 고해상도 재구성 정확도를 보여주는 것입니다."
-  },
-  {
-    "title": "MRPoS: Spatial Pointing and Speech Interface ~함",
-    "original_title": "MRPoS: Mixed Reality-Based Robot Navigation Interface Using Spatial Pointing and Speech with Large Language Model",
-    "link": "https://arxiv.org/abs/2603.13313",
-    "date": "2026-03-17 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "MRPoS는 Mixed Reality(MR) 기반의 로봇 навиг이션 인터페이스다. 이 시스템은 자연적인, 다모달 인터페이스를 통해 손가락 제스처 대신 공간 지칭과 언어 모델(Large Language Model)-기반 음성 상호작용을 사용하여 목표를 설정할 수 있다. experiments에 따르면 MRPoS는传통적 제스처 기반 시스템보다 작업 완료 시간과 부하를 현저하게 줄여주어 더 접근적이고 效率적인 인터페이스를 제공하는 것을 확인했다."
   }
 ]
