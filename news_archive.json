@@ -144,6 +144,78 @@
     "summary": "arXiv:2605.13548v1 Announce Type: new \nAbstract: Existing robotic foundation models, while powerful, are predicated on an implicit assumption of temporal homogeneity: treating all actions as equally informative during optimization. This \"flat\" training paradigm, inherited from language modeling, remains indifferent to the underlying physical hierarchy of manipulation. In reality, robot trajectories are fundamentally heterogeneous, where low-velocity segments often dictate task success through precision-demanding interactions, while high-velocity motions serve as error-tolerant transitions. Such a misalignment between uniform loss weighting and physical criticality fundamentally limits the performance of current Vision-Language-Action (VLA) models and World-Action Models (WAM) in complex, long-horizon tasks. To rectify this, we introduce AttenA+, an architecture-agnostic framework that prioritizes kinematically critical segments via velocity-driven action attention. By reweighting the training objective based on the inverse velocity field, AttenA+ naturally aligns the model's learning capacity with the physical demands of manipulation. As a plug-and-play enhancement, AttenA+ can be integrated into existing backbones without structural modifications or additional parameters. Extensive experiments demonstrate that AttenA+ significantly elevates the ceilings of current state-of-the-art models. Specifically, it improves OpenVLA-OFT to 98.6% (+1.5%) on the Libero benchmark and pushes FastWAM to 92.4% (+0.6%) on RoboTwin 2.0. Real-world validation on a Franka manipulator further showcases its robustness and cross-task generalization. Our work suggests that mining the intrinsic structural priors of action sequences offers a highly efficient, physics-aware complement to standard scaling laws, paving a new path for general-purpose robotic control."
   },
   {
+    "title": "Robot Squid Game: Quadrupedal Locomotion for Traversing Narrow Tunnels",
+    "original_title": "Robot Squid Game: Quadrupedal Locomotion for Traversing Narrow Tunnels",
+    "link": "https://arxiv.org/abs/2605.13665",
+    "date": "2026-05-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.13665v1 Announce Type: new \nAbstract: Quadruped robots demonstrate exceptional potential for navigating complex terrain in critical applications such as search and rescue missions and infrastructure inspection However autonomous traversal of confined 3D environments including tunnels caves and collapsed structures remains a significant challenge Existing methods often struggle with rigid gait patterns limited adaptability to diverse geometries and reliance on oversimplified environmental assumptions This paper introduces a Reinforcement Learning RL framework that combines procedural environment generation with policy distillation to enable robust locomotion across various tunnel configurations Our approach leverages a teacher student training paradigm where specialized expert policies trained on procedurally generated tunnel geometries transfer their knowledge to a unified student policy This strategy eliminates the need for complex reward shaping in end-to-end RL training simplifying the process by breaking down complicated tasks into smaller more manageable components that are easier for the robot to learn By synthesizing diverse tunnel structures during training and distilling navigation strategies into a generalizable policy our method achieves consistent traversal across complex spatial constraints where conventional approaches fail We demonstrate through both simulation and real world experiments that our method enables quadruped robots to successfully traverse challenging confined tunnel environments"
+  },
+  {
+    "title": "Manipulation Planning for Construction Activities with Repetitive Tasks",
+    "original_title": "Manipulation Planning for Construction Activities with Repetitive Tasks",
+    "link": "https://arxiv.org/abs/2605.13754",
+    "date": "2026-05-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.13754v1 Announce Type: new \nAbstract: In this paper, we study the problem of manipulation skill acquisition for performing construction activities consisting of repetitive tasks (e.g., building a wall or installing ceiling tiles). Our approach involves setting up a simulated construction activity in a Virtual Reality (VR) environment, where the user can provide demonstrations of the object manipulation skills needed to perform the construction activity. We then exploit the screw geometry of motion to approximate the demonstrated motion as a sequence of constant screw motions. For performing the construction activity, we generate the sequence of manipulation task instances and then compute the joint space motion plan corresponding to each instance using Screw Linear Interpolation (ScLERP) and Resolved Motion Rate Control (RMRC). We evaluate our framework by executing two representative construction tasks: constructing brick walls and installing multiple ceiling tiles. Each task is performed using only a single demonstration, a pick-and-place action for the bricks, and a single ceiling tile installation. Our experiments with a 7-DoF robot in both simulation and hardware demonstrate that the approach generalizes robustly to arbitrarily long construction activities that involve repetitive motions and demand precision, even when provided with just one demonstration. For instance, we can construct walls of arbitrary layout and length by leveraging a single demonstration of placing one brick on top of another."
+  },
+  {
+    "title": "FrameSkip: Learning from Fewer but More Informative Frames in VLA Training",
+    "original_title": "FrameSkip: Learning from Fewer but More Informative Frames in VLA Training",
+    "link": "https://arxiv.org/abs/2605.13757",
+    "date": "2026-05-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.13757v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) policies are commonly trained from dense robot demonstration trajectories, often collected through teleoperation, by sampling every recorded frame as if it provided equally useful supervision. We argue that this convention creates a temporal supervision imbalance: long low-change segments dominate the training stream, while manipulation-critical transitions such as alignment, contact, grasping, and release appear only sparsely. We introduce FrameSkip, a data-layer frame selection framework that scores trajectory frames using action variation, visual-action coherence, task-progress priors, and gripper-transition preservation, then remaps training samples toward high-importance frames under a target retention ratio. Because FrameSkip operates only in the dataloader, it leaves the VLA architecture, action head, training objective, and inference procedure unchanged. Across RoboCasa-GR1, SimplerEnv, and LIBERO, FrameSkip improves the success-retention trade-off over full-frame training and simpler frame selection variants, achieving a macro-average success rate of 76.15% across the three benchmarks compared with 66.50% for full-frame training while using a compressed trajectory view that retains 20% of unique frames in the main setting."
+  },
+  {
+    "title": "RoboEvolve: Co-Evolving Planner-Simulator for Robotic Manipulation with Limited Data",
+    "original_title": "RoboEvolve: Co-Evolving Planner-Simulator for Robotic Manipulation with Limited Data",
+    "link": "https://arxiv.org/abs/2605.13775",
+    "date": "2026-05-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.13775v1 Announce Type: new \nAbstract: The scalability of robotic manipulation is fundamentally bottlenecked by the scarcity of task-aligned physical interaction data. While vision-language models (VLMs) and video generation models (VGMs) hold promise for autonomous data synthesis, they suffer from semantic-spatial misalignment and physical hallucinations, respectively. To bridge this gap, we introduce RoboEvolve, a novel framework that couples a VLM planner and a VGM simulator into a mutually reinforcing co-evolutionary loop. Operating purely on unlabeled seed images, RoboEvolve leverages a cognitive-inspired dual-phase mechanism: (i) daytime exploration fosters physically grounded behavioral discovery through a semantic-controlled multi-granular reward, and (ii) nighttime consolidation mines \"near-miss\" failures to stabilize policy optimization. Guided by an autonomous progressive curriculum, the system naturally scales from simple atomic actions to complex tasks. Extensive experiments demonstrate that RoboEvolve (I) achieves superior effectiveness, elevating base planners by 30 absolute points and amplifying simulator success by 48% on average; (II) exhibits extreme data efficiency, surpassing fully supervised baselines with merely 500 unlabeled seeds--a 50x reduction; and (III) demonstrates robust continual learning without catastrophic forgetting."
+  },
+  {
+    "title": "Scale-Gest: Scalable Model-Space Synthesis and Runtime Selection for On-Device Gesture Detection",
+    "original_title": "Scale-Gest: Scalable Model-Space Synthesis and Runtime Selection for On-Device Gesture Detection",
+    "link": "https://arxiv.org/abs/2605.12506",
+    "date": "2026-05-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.12506v1 Announce Type: cross \nAbstract: Realizing on-device ML-based gesture detection under tight real-time performance, energy and memory constraints is challenging, especially when considering mobile devices with varying battery-power levels. Existing EdgeAI deployments typically rely on a single fixed detector, limiting optimization opportunities. We present Scale-Gest, a novel run-time adaptive gesture detection framework that expands the detector space into a dense family of tiny-YOLO architectures. We introduce multiple novel device-calibrated ACE (Accuracy-Complexity-Energy) profiles by analyzing different model-resolution-stride operating points. A lightweight run-time controller selects an appropriate ACE mode under user-defined and battery constraints, while a motion-aware hand-gesture-tracking ROI gate crops the input for reduced complexity detection. To evaluate performance of our system in real-world car driving scenarios, we introduce a temporally-annotated Driver Simulated Gesture (DSG-18) dataset. Scale-Gest maintains event-level F1 while significantly reducing energy and latency compared to single-detector approaches. On a battery-powered laptop running gesture streams, our ACE controller reduces per-frame energy by 4x (from 6.9 mJ to 1.6 mJ) while maintaining high gesture-detection performance (event-level F1 = 0.8-0.9) and low mean latency (6 ms)."
+  },
+  {
+    "title": "Multi-Modal World Model for Physical Robot Interactions: Simultaneous Visual and Tactile Predictions for Enhanced Accuracy",
+    "original_title": "Multi-Modal World Model for Physical Robot Interactions: Simultaneous Visual and Tactile Predictions for Enhanced Accuracy",
+    "link": "https://arxiv.org/abs/2304.11193",
+    "date": "2026-05-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2304.11193v2 Announce Type: replace \nAbstract: Predicting the outcomes of robotic actions, often referred to as learning a world model, in complex environments remains a fundamental challenge in robotics. Existing approaches primarily rely on visual observations and action inputs to generate video-based predictions, frequently overlooking the critical role of tactile feedback in understanding physical interactions. In this work, we investigate the integration of tactile and visual information within predictive perception systems for physical robot interaction. We demonstrate that visuo-tactile prediction provides the greatest benefits in physically ambiguous interaction regimes, while improvements are naturally limited when object dynamics are visually inferable. Furthermore, we introduce two novel robot-pushing datasets collected using a magnetic-based tactile sensor for unsupervised learning. The first dataset comprises visually identical objects with varying physical properties, explicitly isolating physical ambiguity, while the second mirrors existing robot-pushing benchmarks involving clusters of household objects. Our results show that tactile-visual integration improves prediction accuracy and robustness under physical ambiguity, while offering limited gains in visually unambiguous settings. Code and datasets are publicly available."
+  },
+  {
+    "title": "ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation",
+    "original_title": "ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2506.15953",
+    "date": "2026-05-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2506.15953v2 Announce Type: replace \nAbstract: Dexterous manipulation is a cornerstone capability for robotic systems aiming to interact with the physical world in a human-like manner. Although vision-based methods have advanced rapidly, tactile sensing remains crucial for fine-grained control, particularly in unstructured or visually occluded settings. We present ViTacFormer, a representation-learning approach that couples a cross-attention encoder to fuse high-resolution vision and touch with an autoregressive tactile prediction head that anticipates future contact signals. Building on this architecture, we devise an easy-to-challenging curriculum that steadily refines the visual-tactile latent space, boosting both accuracy and robustness. The learned cross-modal representation drives imitation learning for multi-fingered hands, enabling precise and adaptive manipulation. Across a suite of challenging real-world benchmarks, our method achieves approximately 50% higher success rates than prior state-of-the-art systems. To our knowledge, it is also the first to autonomously complete long-horizon dexterous manipulation tasks that demand highly precise control with an anthropomorphic hand, successfully executing up to 11 sequential stages and sustaining continuous operation for 2.5 minutes."
+  },
+  {
+    "title": "Robotic Manipulation by Imitating Generated Videos Without Physical Demonstrations",
+    "original_title": "Robotic Manipulation by Imitating Generated Videos Without Physical Demonstrations",
+    "link": "https://arxiv.org/abs/2507.00990",
+    "date": "2026-05-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2507.00990v3 Announce Type: replace \nAbstract: This work introduces Robots Imitating Generated Videos (RIGVid), a system that enables robots to perform complex manipulation tasks--such as pouring, wiping, and mixing--purely by imitating AI-generated videos, without requiring any physical demonstrations or robot-specific training. Given a language command and an initial scene image, a video diffusion model generates potential demonstration videos, and a vision-language model (VLM) automatically filters out results that do not follow the command. A 6D pose tracker then extracts object trajectories from the video, and the trajectories are retargeted to the robot in an embodiment-agnostic fashion. Through extensive real-world evaluations, we show that filtered generated videos are as effective as real demonstrations, and that performance improves with generation quality. We also show that relying on generated videos outperforms more compact alternatives such as keypoint prediction using VLMs, and that strong 6D pose tracking outperforms other ways to extract trajectories, such as dense feature point tracking. These findings suggest that videos produced by a state-of-the-art off-the-shelf model can offer an effective source of supervision for robotic manipulation."
+  },
+  {
     "title": "Interview with Intrinsic’s Stefan Nusser: Traditional automation is ‘too expensive and too inflexible’",
     "original_title": "Interview with Intrinsic’s Stefan Nusser: Traditional automation is ‘too expensive and too inflexible’",
     "link": "https://roboticsandautomationnews.com/2026/05/13/interview-with-intrinsics-stefan-nusser-traditional-automation-is-too-expensive-and-too-inflexible/101497/",
@@ -17926,77 +17998,5 @@
     "source": "Google News (NVIDIA GTC)",
     "category": "humanoid",
     "summary": "NVIDIA GTC 2026에서 선보인 하이어로이드 로보틱스 기술은 인간모델의 로봇을 기반으로 창의적이고 혁신적인 솔루션을 제공함. 이 기술은 인간적인 움직임과 감정을 구현하며, 향후 로보틱스 산업의 새로운 가능성을 열어놓음."
-  },
-  {
-    "title": "NVIDIA GTC 2026: 에이젠티 AI 인플레이션 건강 및 생명과학에 영향을 미침",
-    "original_title": "NVIDIA GTC 2026: Agentic AI Inflection Hits Healthcare and Life Sciences - Genetic Engineering and Biotechnology News",
-    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZUszRVY5NVhuc0F3VnNmX3c4OEIwdWwzU2t5MmdUX29GcmdUQTNjX1BQUjhSeUlWS1YyRFpSb0VqQXVWbkdwTkE0b1VVMkhEV2pSdzdFUmhGNDlsUmhRd2g1MGZnaTYxcXAtTF9PZW9BTWhmcEp2RjFYM2d5RnJkYklMU2RZRlpQLUJaRGNOejh3N1NGX0NQaW4tcDA1LWd3NXJSUjYyck9CLTk5QUZZYlE4RlIxZTBBOUVicFhhQ1p2a3VxZXhrcVdn?oc=5",
-    "date": "2026-03-18 14:16",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA의 2026년 GTC 컨퍼런스에서 에이젠티 AI 인플레이션이 건강 및 생명과학 분야에 큰 영향을 미쳤다고 보도됐다. NVIDIA는 새로운 AI 모델을 공개했으며, 이 기술은 암 치료와 유전적engineering을 향상시키는 데 사용될 예정이다."
-  },
-  {
-    "title": "Unitree ~20,000인 인물 로봇을 목표로 4배의 생산능력 확장 계획을 수립함",
-    "original_title": "Unitree targets 20,000 humanoid robots with fourfold capacity expansion plan - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxQMWpDZWVWUEZrOS14NXQ3SG9GaHpCbGRYZ2pJR3dkSlhILXV5V2NiSXZSRmJ3UEw0c3VHbHY4ZzNSRXM3X1BwUm5SV0d6NEU4RV9pZjU5bHRFaGdaWG5TQWw4VEEzam9QVkMyUWZfYW1IWF84VmlFWUI4eEdwdnVid3FjLXl4M0pxSTAySFFFeWJDM3ZxdW1FMGd3YnBuLS1CUTZFTmJjdjh1dVMyTkNGcjJlYkV4REI2bHFJSW1kNVVuTDJIeUFqSXpnc2lIbUFWbjZSSXJ6d09lckcxbjhWMk9JWkFTbDhyckRUTmZMaWtXaUxvTGxYTlBSYXNsbER3TmRSQ3hTYURFQkZTbDJtRHZuVWhhZTdEN2daZWRTRjhmMXhkYlZwbXU3N2pIN0p5U19HRHJnMkVISmhmOTIwRWIwYWt5eFVrcEgxLWJ2MU85cUhPV085T3NjZ0twdw?oc=5",
-    "date": "2026-03-18 14:16",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree는 인간과 비슷한 로봇을 20,000대까지 생산하겠다는 4배의 생산능력을 확장할 계획을 발표하였다. 이 계획은 기업의 성장을 위한 중요한 조치를 취하고 있다."
-  },
-  {
-    "title": "Unitree",
-    "original_title": "Unitree targets 20,000 humanoid robots with fourfold capacity expansion plan - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxOdGV3TGZKX3Yya3pxdDM5MU40RXBWRnVaRmhoOTBJVzRxWFpvZ3JzRjVZY2hoZTVHb3BGYm8zWFcxYk5SS3loektwNDNvQU9ramZEckdfbWU0azI2NHhOelJfeUs4QzlQSkdoaHhsSGhEbE9FbVIyc3Z4dkpucDBvX01mMFRRZ0M1STh4XzJLVzM4aW11RmhJaUlsejdlRlljV0tKajdlZjQ5ZTdjYy1mNHI1QnBEMXBxUlR5TjRuYzNWUzFPTjh5d0cxX1hKRWh2M2NfZTlnY2dnWEswVkphSGZPQVVsNE9fS0wtTkZBMlJXNWV0NGlubHhvZGsycXpyb2dUMUtVYUVBcHhxRDZBeUhUSmtoRnFuNTc4Y3NIeEN2VXVYT0VrRWFCaEo2elhyMm9FZWNRNl9DM1NhSXlmRldIV1prUHBKTk51Mmt2ZTluTEV5UFoyazdDUGhkWDg?oc=5",
-    "date": "2026-03-18 14:16",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree는 4배의 생산역량 확장 계획을 통해 20,000기의 휴머로이드 로봇을 목표로 놓아 인간과 같은 동작을 구현하는 로봇 개발에 대한 적극적인 성장을 앞두고 있다."
-  },
-  {
-    "title": "US 로봇 기술기업들은 중국 로봇 제조업체에 대한 '보안 위험'으로 인한 제한을 요구 - 글로벌 타임스",
-    "original_title": "US tech firms, including Boston Dynamics, push for curbs on Chinese robot makers over alleged 'security risks' - Global Times",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9YUWwxRnItR2ZNT21FXy13ZHFjdUFZa3JsbUFmQllORzNsX1RuYTMwV1N3WW5kRk5fVmdrcFdZaUhXcEw0SzBqQWVKSlh5a0h1QVBGQkdqRnV6Q1pteFVaMnpn?oc=5",
-    "date": "2026-03-18 13:38",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "미국 로봇 기술企業, 包括 보스턴 다이내믹스,는 중국 로봇 제조업체에 대한 '보안 위험'으로 인한 제한을 요구하고 있습니다. 이에 따르면 이들 기업들은 중국의 로봇 제조업체가 개발한 로봇들이 미국 내부에서 사용되는 경우 보안 문제를 일으킬 수 있다고 주장합니다."
-  },
-  {
-    "title": "Restaurant 스태프가 춤을 추는 로봇을 제한하는 데 어려움을 겪음",
-    "original_title": "Restaurant Staff Struggle to Restrain Dancing Robot Causing Dining Room Chaos - The Daily Beast",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaUdPazVOVkNjdkp3R1VFTHh3MGFhdzVNS1JmZE90OHJvVzd1Y1E4R3dBNUs2R3JNMHlQVmZ5LU15cVdmeHB2WjBJc3ZjMGlGNkREb3FlajZEWFVEc0dhcnF0enhCNGlZQnRQdUtsVDFtWDhNVDNWZ01WaEVHZWlzQzE3a25ldlExdEh4cW85cC1Rc1RJakhYRVB3Tkc0eDBxbVBpRnJpR2dSZGhn?oc=5",
-    "date": "2026-03-18 13:31",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "서울특별시의 한 식당에서 춤을 추는 로봇이 식당 내를 무장해 놓은 가운데 스태프들이 이를 제한하는 데 어려움을 겪는 문제가 발생한 것으로 알려졌다.\n\n(Note: I followed the instructions to translate the title into natural, professional Korean and summarized the content into 2-3 concise Korean sentences. The tone and style are formal, objective news-brief style ending in nouns as instructed.)"
-  },
-  {
-    "title": "Qingtianzu, 에지봇 지원下 14.5만 달러 이상 거치, 로봇 대여 네트워크 확장예정",
-    "original_title": "AgiBot-Backed Qingtianzu Secures Over USD14.5 Million to Expand Robot Rental Network - Yicai Global",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaGRQLXdWRDYtQm91Y2taZTN2b0ZzUEtDRnp4QkNzZGNoQXY3a3lJN3p1bERsNHQzOG05YWZhSnMtSjhMSDFPOEtyeVpkcE5WTHpOM21tZmVQSlBLVy1XQ0hvZXdiX3NPX3hJNFlTbXFXY2syc3AyRFVmelhSNjJxRWxVUGt2a1hpZ3JZcGFIbzRQZXl5akUzZWlXdEFFbFk0Z3Fsdi1TUXFXOWpMdWk2Z3pZb3c1dGc?oc=5",
-    "date": "2026-03-18 13:23",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Qingtianzu는 에지봇의 후원으로 14.5만 달러 이상을 거치고 로봇 대여 네트워크를 확장할 계획입니다. 이번 투자조차로 Qingtianzu는 중국의 로봇 서비스 시장에 대한 진출을 가속화할 수 있습니다."
-  },
-  {
-    "title": "Advantech를 대상으로 하는 NVIDIA GTC 2026에서 로봇, 의료,零售 edge AI를展示할 예정임",
-    "original_title": "Advantech to Demonstrate Robotics, Healthcare, and Retail Edge AI at NVIDIA GTC 2026 - Embedded Computing Design",
-    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPM3luS1ZCcTgyT21JTjdtV1U1VTI3Xy16M1pFLVJ3T19FQnVYeTJsZUp1TFk1WWxZcW5fLXpnQUxmY0drb3RlbU9PLS15dTJWbGY2WVV2cWRDQ252Qmd3aEZnZzY5SGVsMVBwLWhudExSR29mTXAxNXpVQXBYcXhTOHpUaTlNYlB6d213QzVVMU5udU9wVERvbmROZnRqLTAtMXFMc0RjTXJ3dXNtME9KZ2RRd2FOYVlpVWVTUWFLWjdUa19Ic2Y4Z0oxVUN5bTlFR3VhOEJVMElUREE?oc=5",
-    "date": "2026-03-18 13:22",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Advantech는 NVIDIA GTC 2026에서 로봇, 의료,零售 edge AI 기술을 선보일 예정이다. 회사는 이 행사에서 고성능 Edge AI 솔루션을 통해 로봇, 의료기기,零售 산업의 효율성을 높이는 것을 목표로 한다."
-  },
-  {
-    "title": "Woman Hospitalized After Being Startled by Humanoid Robot : 'Are You Crazy?'",
-    "original_title": "Woman hospitalized after being startled by humanoid robot: \"Are you crazy?\" - CBS News",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSk1kckR1d1JSYmJJMElfTlVVTXJiYVJ2YlM5Nmc5bFBmbDJONlJPLTlINzhnZW9Say1hMC00VUNmRmhsMEJ4aGZycDFLWlNQaXZSdGtRUElzVWhjLTJlSlN6Wm1aVzN4RDNmSS1KWXZvQml3akZDTHRKb09jdDdvS9IBhgFBVV95cUxNaldqSVBMY1BHam1WdkNGWXZRVVZtQndvWVVHN2FkZjRzbmhXYlNNQXUzTHUzLUM4UVhDVVlfRWdSdTJCQm5zY3lYZFVGRnNvemxMNTM4NnB1VGxXWDZ0U21fTVpreWdGb2lUZ1JPaDBNX1pRV0h3Q0ZSWVJRdjkxbHNuZDZNZw?oc=5",
-    "date": "2026-03-18 13:13",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "인간 로봇에 놀란 여자가 병원으로 옮겨짐. CBS 뉴스는 '미쳤니?'라고 하여 놀라는 여자의 모습을 보도함.\n\n(Note: I followed the rules strictly, and you can parse the output easily using the given format.)"
   }
 ]
