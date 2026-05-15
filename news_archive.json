@@ -1,5 +1,77 @@
 [
   {
+    "title": "Towards Robotic Dexterous Hand Intelligence: A Survey",
+    "original_title": "Towards Robotic Dexterous Hand Intelligence: A Survey",
+    "link": "https://arxiv.org/abs/2605.13925",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.13925v1 Announce Type: new \nAbstract: Robotic dexterous hands are central to contact-rich manipulation, with rapid progress driven by advances in hardware, sensing, control, simulation, and data generation. However, existing studies are often developed under different assumptions regarding hand embodiments, sensory configurations, task settings, training data, and evaluation protocols, making systematic comparison difficult and obscuring the developmental trajectory of the field. This survey provides a holistic review of dexterous hand research from four complementary aspects. First, we present a hardware-level analysis covering actuation, transmission, perception, and representative hand designs, highlighting the key trade-offs in force capability, compliance, bandwidth, integration, and system complexity. Furthermore, we review control and learning methods for dexterous manipulation from a methodological perspective, grouping representative works by major paradigms and tracing their evolution in chronological order. In addition, we consolidate datasets, modality design, and evaluation practices, which enables methodological progress to be interpreted together with the ways in which it is trained, benchmarked, and assessed. Finally, we discuss the major limitations of current dexterous hand research and summarize the corresponding future directions. By connecting hardware analysis, methodological development, data resources, and evaluation, this survey aims to provide a structured understanding of dexterous hand research and to clarify the most important open challenges for future study."
+  },
+  {
+    "title": "Motion Planning for Autonomous Vehicles using Optimization over Graphs of Convex Sets",
+    "original_title": "Motion Planning for Autonomous Vehicles using Optimization over Graphs of Convex Sets",
+    "link": "https://arxiv.org/abs/2605.14199",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.14199v1 Announce Type: new \nAbstract: Motion planning for autonomous vehicles requires generating collision-free and dynamically feasible trajectories in complex environments under real-time constraints. While nonlinear optimal control formulations provide high-fidelity solutions, they are computationally demanding and sensitive to initialization, whereas geometric planning methods scale well but often decouple path selection from trajectory optimization. This paper studies the extent to which optimization over Graphs of Convex Sets (GCS) can approximate solutions of nonlinear optimal control problems in the context of autonomous driving. The free space is represented as a finite union of convex regions organized as a directed graph, allowing nonconvex geometry to be handled through discrete connectivity decisions while maintaining convex trajectory constraints within each region. Vehicle motion is parameterized using Bezier curves for the spatial path and a polynomial time-scaling function for temporal evolution. Under small-slip and linear tire assumptions, a simplified dynamic bicycle model enables approximate enforcement of dynamic feasibility through convex constraints on trajectory derivatives. The approach is evaluated in CommonRoad scenarios involving static obstacle avoidance and lane-changing maneuvers, and is compared against a nonlinear discrete-time optimal control formulation. The results indicate that the GCS-based method generates collision-free and dynamically consistent trajectories that closely match those obtained from the nonlinear program, while exhibiting improved computational efficiency and reduced sensitivity to initialization. These findings suggest that GCS provides a structured approximation of nonlinear motion planning problems, capturing dominant geometric and dynamic effects while preserving convexity in the continuous relaxation."
+  },
+  {
+    "title": "Energy-Efficient Quadruped Locomotion with Compliant Feet",
+    "original_title": "Energy-Efficient Quadruped Locomotion with Compliant Feet",
+    "link": "https://arxiv.org/abs/2605.14411",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.14411v1 Announce Type: new \nAbstract: Quadruped robots are often designed with rigid feet to simplify control and maintain stable contact during locomotion. While this approach is straightforward, it limits the ability of the legs to absorb impact forces and reuse stored elastic energy, leading to higher energy expenditure during locomotion. To explore whether compliant feet can provide an advantage, we integrate foot compliance into a reinforcement learning (RL) locomotion controller and study its effect on walking efficiency. In simulation, we train eight policies corresponding to eight different spring stiffness values and then cross-evaluate their performance by measuring mechanical energy consumed per meter traveled. In experiments done on a developed quadruped, the energy consumption for the intermediate stiffness spring is lower by ~ 17% when compared to a very stiff or a very flexible spring incorporated in the feet, with similar trends appearing in the simulation results. These results indicate that selecting an appropriate foot compliance can improve locomotion efficiency without destabilizing the robot during motion."
+  },
+  {
+    "title": "Before the Body Moves: Learning Anticipatory Joint Intent for Language-Conditioned Humanoid Control",
+    "original_title": "Before the Body Moves: Learning Anticipatory Joint Intent for Language-Conditioned Humanoid Control",
+    "link": "https://arxiv.org/abs/2605.14417",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.14417v1 Announce Type: new \nAbstract: Natural language is an intuitive interface for humanoid robots, yet streaming whole-body control requires control representations that are executable now and anticipatory of future physical transitions. Existing language-conditioned humanoid systems typically generate kinematic references that a low-level tracker must repair reactively, or use latent/action policies whose outputs do not explicitly encode upcoming contact changes, support transfers, and balance preparation. We propose \\textbf{DAJI} (\\emph{Dynamics-Aligned Joint Intent}), a hierarchical framework that learns an anticipatory joint-intent interface between language generation and closed-loop control. DAJI-Act distills a future-aware teacher into a deployable diffusion action policy through student-driven rollouts, while DAJI-Flow autoregressively generates future intent chunks from language and intent history. Experiments show that DAJI achieves strong results in anticipatory latent learning, single-instruction generation, and streaming instruction following, reaching 94.42\\% rollout success on HumanML3D-style generation and 0.152 subsequence FID on BABEL."
+  },
+  {
+    "title": "Let Robots Feel Your Touch: Visuo-Tactile Cortical Alignment for Embodied Mirror Resonance",
+    "original_title": "Let Robots Feel Your Touch: Visuo-Tactile Cortical Alignment for Embodied Mirror Resonance",
+    "link": "https://arxiv.org/abs/2605.14571",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.14571v1 Announce Type: new \nAbstract: Observing touch on another's body can elicit corresponding tactile sensations in the observer, a phenomenon termed mirror touch that supports empathy and social perception. This visuo-tactile resonance is thought to rely on structural correspondence between visual and somatosensory cortices, yet robotic systems lack computational frameworks that instantiate this principle. Here we demonstrate that cortical correspondence can be operationalized to endow robots with mirror touch. We introduce Mirror Touch Net, which imposes semantic, distributional and geometric alignment between visual and tactile representations through multi-level constraints, enabling prediction of millimetre-scale tactile signals across 1,140 taxels on a robotic hand from RGB images. Manifold analysis reveals that these constraints reshape visual representations into geometry consistent with the tactile manifold, reducing the complexity of cross-modal mapping. Extending this alignment framework to cross-domain observations of human hands enables tactile prediction and reflexive responses to observed human touch. Our results link a neural principle of visuo-tactile resonance to robotic perception, providing an explainable route towards anticipatory touch and empathic human-robot interaction. Code is available at https://github.com/fun0515/Mirror-Touch-Net."
+  },
+  {
+    "title": "DSSP: Diffusion State Space Policy with Full-History Encoding",
+    "original_title": "DSSP: Diffusion State Space Policy with Full-History Encoding",
+    "link": "https://arxiv.org/abs/2605.14598",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.14598v1 Announce Type: new \nAbstract: Diffusion-based imitation learning has shown strong promise for robot manipulation. However, most existing policies condition only on the current observation or a short window of recent observations, limiting their ability to resolve history-dependent ambiguities in long-horizon tasks. To address this, we introduce DSSP, a history-conditioned Diffusion State Space Policy that enables efficient, full-history conditioning for robot manipulation. Leveraging the continuous sequence modeling properties of State Space Models (SSMs), our history encoder effectively compresses the entire observation stream into a compact context representation. To ensure this context preserves critical information regarding future state evolution, the encoder is optimized with a dynamics-aware auxiliary training objective. This high-level context representation is then seamlessly fused with recent state observations to form a hierarchical conditioning mechanism for action generation. Furthermore, to maintain architectural consistency and minimize GPU memory overhead, we also instantiate the diffusion backbone itself using an SSM. Extensive experiments across simulation benchmarks and real-world manipulation tasks show that DSSP achieves state-of-the-art performance with a significantly smaller model size, demonstrating superior efficiency of the hierarchical conditioning in capturing crucial information as the history length increases."
+  },
+  {
+    "title": "IntentVLA: Short-Horizon Intent Modeling for Aliased Robot Manipulation",
+    "original_title": "IntentVLA: Short-Horizon Intent Modeling for Aliased Robot Manipulation",
+    "link": "https://arxiv.org/abs/2605.14712",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.14712v1 Announce Type: new \nAbstract: Robot imitation data are often multimodal: similar visual-language observations may be followed by different action chunks because human demonstrators act with different short-horizon intents, task phases, or recent context. Existing frame-conditioned VLA policies infer each chunk from the current observation and instruction alone, so under partial observability they may resample different intents across adjacent replanning steps, leading to inter-chunk conflict and unstable execution. We introduce IntentVLA, a history-conditioned VLA framework that encodes recent visual observations into a compact short-horizon intent representation and uses it to condition chunk generation. We further introduce AliasBench, a 12-task ambiguity-aware benchmark on RoboTwin2 with matched training data and evaluation environments that isolate short-horizon observation aliasing. Across AliasBench, SimplerEnv, LIBERO, and RoboCasa, IntentVLA improves rollout stability and outperforms strong VLA baselines"
+  },
+  {
+    "title": "Exploring Bottlenecks in VLM-LLM Navigation: How 3D Scene Understanding Capability Impacts Zero-Shot VLN",
+    "original_title": "Exploring Bottlenecks in VLM-LLM Navigation: How 3D Scene Understanding Capability Impacts Zero-Shot VLN",
+    "link": "https://arxiv.org/abs/2605.14801",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.14801v1 Announce Type: new \nAbstract: Zero-shot vision-and-language navigation (VLN) has gained significant attention due to its minimal data collection costs and inherent generalization. This paradigm is typically driven by the integration of pre-trained Vision-Language Models (VLMs) and Large Language Models (LLMs), where VLMs construct 3D scene graphs while LLMs handle high-level reasoning and decision-making. However, a critical bottleneck exists in this system: current 3D perception models prioritize pixel-level accuracy, directly conflicting with the strict computational limits and real-time efficiency demanded by embodied navigation. To address this gap, this paper quantifies the actual impact of 3D scene understanding capability on VLN performance. Based on typical VLM-LLM frameworks, we propose statistical success rate (SR) upper bounds for two core subsystems: 1) the slow LLM planner, which relies on topological mapping semantics, and 2) the fast reactive navigator, which utilizes spatial coordinates and bounding boxes to execute LLM decisions. Evaluations using state-of-the-art 3D scene understanding models validate our proposed bounds and reveal a perception saturation phenomenon, indicating that improvements in perception accuracy beyond a certain threshold yield diminishing returns in navigation success. Our findings suggest that 3D scene understanding for VLN should pivot away from strict pixel-level precision, prioritizing instead navigation-relevant core vocabularies and accurate bounding box proportions."
+  },
+  {
     "title": "David Muir comes face-to-face with humanoid robots in China - ABC News - Breaking News, Latest News and Videos",
     "original_title": "David Muir comes face-to-face with humanoid robots in China - ABC News - Breaking News, Latest News and Videos",
     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMHJFdkd5Sk42SGlxcUZ3TzN1Y1BWT0lrakNoeGtGUkVaYm9mTzZ0TFBWbHI4YjAzcDYyQXRaRFVDNktDTy1UN2dtenlJeC14Qi1kMGJVR3J0a21yQjhicHFTTXlpNWp5N3M1MmdWRTZleTlscFNCaDJNdDBueTFuVEh5WVVQUGo0WWhqLS1WVllZeFhmbkxB0gGcAUFVX3lxTE5OMmZ3SXotNEViaUpsQ1Vma3pZSncyS01UR2t1MWgwNXFVcG93TWw4VXRzM1JXanBwN3NUajhkUktUSEpvNGJpd042c2REd1J1NTJkQlBjbW0tNEFGbmpCMFctTk5rSlZ1QTRsYkt5WGJtSlRCREZDQ2tlN2lBeFBfU1FucW0tZUJZaEdPTnFxVlVJbnQzb2U4dmhTWg?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Tech Xplore",
     "category": "humanoid",
     "summary": "人間 로봇은 테니스 스포츠의 고차원적 운동, 즉시 반응, 정밀을 능구한 것과는 달리 어려움을 겪어왔으며, 이러한 스포츠에는 인간의 움직임 데이터 추출 및 키넴틱 데이터 사용 등의 복잡한 접근이 있었으나, 실제로는 물리적으로 불가능한 경우도 있었다."
-  },
-  {
-    "title": "KUKA AMP 열람식",
-    "original_title": "From Lab to Factory Floor: KUKA Unveils ‘KUKA AMP’ at NVIDIA GTC 2026 as a Software Bridge to New Growth - Robotics Tomorrow",
-    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPMnVnT2RlRnA3bnJJdkktTmJ0ZDRGcHFDZjZpeGs0NkNYWFhoSm9JT21CV2ZxYmF6c295XzdnTXQwTk9QcVZUNWdDUnNoZFBzSzRMdXhiRlpGY21oMU5rN0dBSF83V1NjNGdJNnRYNENGaVlRdGJjbWxDVTd3cnQwMGh5MjVFSC1GUk9nSFRzamN5QngtQTNQVWNnelJac3gtMVptV1RrUU04aUdwOUNoUm9zTlZEcDN1VlhFYjhtQ2hGVERpdzluNUlqZk9ZNUV0Nkp6RnpJV0Nqa3NTbU1zX21jdWpGQzRJUjZmdnE1NGotT2FjbTF3cTZ3?oc=5",
-    "date": "2026-03-19 16:39",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "KUKA가 NVIDIA GTC 2026에서 'KUKA AMP'를 공개하여 새로운 성장의 소프트웨어 다리 역할을 수행함, 연구실에서 공정.floor로 전환된 Robotics Tomorrow\n\n(Note: I translated the title as \"열람식\" which means \"unveiling\" or \"launching\", and summarized the content in 2 sentences.)"
-  },
-  {
-    "title": "Lab-grown Muscle Tissue Robot Speed Record Set",
-    "original_title": "Swimming robot propelled by lab-grown muscle hits record speed",
-    "link": "https://techxplore.com/news/2026-03-robot-propelled-lab-grown-muscle.html",
-    "date": "2026-03-19 16:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "로봇이 사용하는 생체근육은 467mm/min의 최고 속도, 이에 세계 기록을 세웠다. NUS 연구진은 lab-grown muscle tissue를 RECORD-BREAKING STRENGTH으로 훈련시켰으며, 이를 OstraBot라는 생태형 다리 로봇에 적용하여 우수한 성능을 보였다."
-  },
-  {
-    "title": "Event Sourcing을 설명하는 방식 ~함",
-    "original_title": "Event Sourcing Explained: Benefits and Use Cases",
-    "link": "https://blog.bytebytego.com/p/event-sourcing-explained-benefits",
-    "date": "2026-03-19 15:30",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "이 글에서는 Event Sourcing의 이점과 투자 등에 대해 살펴보겠습니다. Event Sourcing은 시스템 상태를 이벤트 스트림으로 추적하여 시스템의 복잡성을 줄이는 방법입니다. 이를 활용하면 데이터 일관성 문제가 줄어들며, auditing 기능을 강화할 수 있습니다."
-  },
-  {
-    "title": "ElliQ",
-    "original_title": "ElliQ earns Washington state Medicaid support for smart care",
-    "link": "https://www.therobotreport.com/elliq-earns-washington-state-medicaid-support-smart-care/",
-    "date": "2026-03-19 15:19",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "워싱턴 주 의약 보험 지원을 얻은 IntelliQ AI 동반자, 건강한 삶 유지에 도움을 주는 첫 번째"
-  },
-  {
-    "title": "KEWAZO LIFTBOT 투자함",
-    "original_title": "KEWAZO raises funding to accelerate LIFTBOT deployment in heavy industry",
-    "link": "https://www.therobotreport.com/kewazo-raises-funding-accelerate-liftbot-deployment-heavy-industry/",
-    "date": "2026-03-19 15:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "KEWAZO는 에너지 산업에서 유지 및 설비 프로젝트를 자동화하는 LIFTBOT의 배포를 가속화하기 위해 투자를 받았다. LIFTBOT은 보수와 설비 프로젝트를 자동화하여 에너지 산업의 생산성을 높이는 데 초점을 맞췄다."
-  },
-  {
-    "title": "SS Innovations' SSi Mantra의 초음파 수술 로봇 시스템 이도네시아와 필리핀에서 텔레수건적 성과임.",
-    "original_title": "SS Innovations’ SSi Mantra surgical robotic system approved for telesurgeries in Indonesia and the Philippines",
-    "link": "https://roboticsandautomationnews.com/2026/03/19/ss-innovations-ssi-mantra-surgical-robotic-system-approved-for-telesurgeries-in-indonesia-and-the-philippines/99933/",
-    "date": "2026-03-19 14:41",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "SS Innovations International이 개발한 초음파 수술 로봇 기술을 전 세계 인구에 접근 가능하게 하는 데 중점을 두고 있는 SSi Mantra의 초음파 수술 로봇 시스템이 이도네시아와 필리핀에서 텔레수건적 성과를 얻었다. 더불어 150회 이상의 텔레수건적 수술이 성공적으로 진행되었다."
-  },
-  {
-    "title": "Flexiv의 세계적 배포를 확보하기 위해 인비스 투자 secured",
-    "original_title": "Flexiv secures investment from Invus to scale global deployment of adaptive robots",
-    "link": "https://roboticsandautomationnews.com/2026/03/19/flexiv-secures-investment-from-invus-to-scale-global-deployment-of-adaptive-robots/99929/",
-    "date": "2026-03-19 14:30",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Flexiv는 일반용 로봇 개발사로, 새로운 전략적 투자가 진행됐다. 인비스 글로벌 투자 회사와 일부 기존 투자자들이 참여한 이번 투자는 Flexiv의 복잡한 작업을 자동화하는 міс션이 강한 시장 신뢰를 나타내는 것으로 보인다."
-  },
-  {
-    "title": "MISUMI ~Oishii와 합력하여 직면 vertical farm automation 공급",
-    "original_title": "MISUMI partners with Oishii to supply Fictiv automation for vertical farms",
-    "link": "https://www.therobotreport.com/misumi-partners-oishii-farm-corp-supply-fictiv-vertical-farm-automation/",
-    "date": "2026-03-19 13:58",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "MISUMI는 Oishii와 제휴를 맺으며 agritech 분야에서 디지털 제조와 R&D에 집중할 것임. MISUMI는 Oishii의 Fictiv 자동화 솔루션을 수요하여 vertical farm 성장에 이바지할 예정이다."
   }
 ]
