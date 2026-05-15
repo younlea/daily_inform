@@ -144,6 +144,51 @@
     "summary": "arXiv:2506.04646v4 Announce Type: replace \nAbstract: Planning with learned dynamics models offers a promising approach toward versatile real-world manipulation, particularly in nonprehensile settings such as pushing or rolling, where accurate analytical models are difficult to obtain. However, collecting training data for learning-based methods can be costly and inefficient, as it often relies on randomly sampled interactions that are not necessarily the most informative. Furthermore, learned models tend to exhibit high uncertainty in underexplored regions of the skill space, undermining the reliability of long-horizon planning. To address these challenges, we propose ActivePusher, a novel framework that combines residual-physics modeling with uncertainty-based active learning, to focus data acquisition on the most informative skill parameters. Additionally, ActivePusher seamlessly integrates with model-based kinodynamic planners, leveraging uncertainty estimates to bias control sampling toward more reliable actions. We evaluate our approach in both simulation and real-world environments, and demonstrate that it consistently improves data efficiency and achieves higher planning success rates in comparison to baseline methods. The source code is available at https://github.com/elpis-lab/ActivePusher."
   },
   {
+    "title": "XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations",
+    "original_title": "XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations",
+    "link": "https://arxiv.org/abs/2511.02776",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.02776v2 Announce Type: replace \nAbstract: Recent progress in large-scale robotic datasets and vision-language models (VLMs) has advanced research on vision-language-action (VLA) models. However, existing VLA models still face two fundamental challenges: (i) producing precise low-level actions from high-dimensional observations, (ii) bridging domain gaps across heterogeneous data sources, including diverse robot embodiments and human demonstrations. Existing methods often encode latent variables from either visual dynamics or robotic actions to guide policy learning, but they fail to fully exploit the complementary multi-modal knowledge present in large-scale, heterogeneous datasets. In this work, we present X Robotic Model 1 (XR-1), a novel framework for versatile and scalable VLA learning across diverse robots, tasks, and environments. XR-1 introduces the \\emph{Unified Vision-Motion Codes (UVMC)}, a discrete latent representation learned via a dual-branch VQ-VAE that jointly encodes visual dynamics and robotic motion. UVMC addresses these challenges by (i) serving as an intermediate representation between the observations and actions, and (ii) aligning multimodal dynamic information from heterogeneous data sources to capture complementary knowledge. To effectively exploit UVMC, we propose a three-stage training paradigm: (i) self-supervised UVMC learning, (ii) UVMC-guided pretraining on large-scale cross-embodiment robotic datasets, and (iii) task-specific post-training. We validate XR-1 through extensive real-world experiments with more than 14,000 rollouts on six different robot embodiments, spanning over 120 diverse manipulation tasks. XR-1 consistently outperforms state-of-the-art baselines such as $\\pi_{0.5}$, $\\pi_0$, RDT, UniVLA, and GR00T-N1.5 while demonstrating strong generalization to novel objects, background variations, distractors, and illumination changes. Our project is at https://xr-1-vla.github.io/."
+  },
+  {
+    "title": "MonoSpheres: Large-Scale Monocular SLAM-Based UAV Exploration through Perception-Coupled Mapping and Planning",
+    "original_title": "MonoSpheres: Large-Scale Monocular SLAM-Based UAV Exploration through Perception-Coupled Mapping and Planning",
+    "link": "https://arxiv.org/abs/2511.17299",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.17299v2 Announce Type: replace \nAbstract: Autonomous exploration of unknown environments is a key capability for mobile robots, but it is largely unsolved for robots equipped with only a single monocular camera and no dense range sensors. In this paper, we present a novel approach to monocular vision-based exploration that can safely cover large-scale unstructured indoor and outdoor 3D environments by explicitly accounting for the properties of a sparse monocular SLAM frontend in both mapping and planning. The mapping module solves the problems of sparse depth data, free-space gaps, and large depth uncertainty by oversampling free space in texture-sparse areas and keeping track of obstacle position uncertainty. The planning module handles the added free-space uncertainty through rapid replanning and perception-aware heading control. We further show that frontier-based exploration is possible with sparse monocular depth data when parallax requirements and the possibility of textureless surfaces are taken into account. We evaluate our approach extensively in diverse real-world and simulated environments, including ablation studies. To the best of the authors' knowledge, the proposed method is the first to achieve 3D monocular exploration in real-world unstructured outdoor environments. We open-source our implementation to support future research."
+  },
+  {
+    "title": "MALLVI: A Multi-Agent Framework for Integrated Generalized Robotics Manipulation",
+    "original_title": "MALLVI: A Multi-Agent Framework for Integrated Generalized Robotics Manipulation",
+    "link": "https://arxiv.org/abs/2602.16898",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.16898v5 Announce Type: replace \nAbstract: Task planning for robotic manipulation with large language models (LLMs) is an emerging area. Prior approaches rely on specialized models, fine tuning, or prompt tuning, and often operate in an open loop manner without robust environmental feedback, making them fragile in dynamic settings. MALLVI presents a Multi Agent Large Language and Vision framework that enables closed-loop feedback driven robotic manipulation. Given a natural language instruction and an image of the environment, MALLVI generates executable atomic actions for a robot manipulator. After action execution, a Vision Language Model (VLM) evaluates environmental feedback and decides whether to repeat the process or proceed to the next step. Rather than using a single model, MALLVI coordinates specialized agents, Decomposer, Localizer, Thinker, and Reflector, to manage perception, localization, reasoning, and high level planning. An optional Descriptor agent provides visual memory of the initial state. The Reflector supports targeted error detection and recovery by reactivating only relevant agents, avoiding full replanning. Experiments in simulation and real-world settings show that iterative closed loop multi agent coordination improves generalization and increases success rates in zero shot manipulation tasks. Code available at https://github.com/iman1234ahmadi/MALLVI ."
+  },
+  {
+    "title": "Learning Dynamic Rope Manipulation Using Task-Level Iterative Learning Control",
+    "original_title": "Learning Dynamic Rope Manipulation Using Task-Level Iterative Learning Control",
+    "link": "https://arxiv.org/abs/2602.21302",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.21302v2 Announce Type: replace \nAbstract: We introduce a Task-Level Iterative Learning Control method for dynamic manipulation of ropes. We demonstrate this method on a non-planar rope manipulation task called the flying knot. Using a single human demonstration and a simplified rope model, the method learns directly on hardware without reliance on large amounts of demonstration data or massive amounts of simulation. At each iteration, the algorithm inverts a model of the robot and rope by solving a quadratic program to propagate task-space errors into action updates. We evaluate performance across 7 different kinds of ropes, including chain, latex surgical tubing, and braided and twisted ropes, ranging in thicknesses of 7--25\\,mm and densities of 0.013--0.5\\,kg/m. Learning achieves a 100\\% success rate within 10 trials on all ropes. Furthermore, the method can successfully transfer between most rope types in 2--5 trials. https://flying-knots.github.io"
+  },
+  {
+    "title": "Adapting Dijkstra for Buffers and Unlimited Transfers",
+    "original_title": "Adapting Dijkstra for Buffers and Unlimited Transfers",
+    "link": "https://arxiv.org/abs/2603.11729",
+    "date": "2026-05-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.11729v3 Announce Type: replace-cross \nAbstract: In recent years, RAPTOR based algorithms have been considered the state-of-the-art for path-finding with unlimited transfers without preprocessing. However, this status largely stems from the evolution of routing research, where Dijkstra-based solutions were superseded by timetable-based algorithms without a systematic comparison. In this work, we revisit classical Dijkstra-based approaches for public transit routing with unlimited transfers and demonstrate that Time-Dependent Dijkstra (TD-Dijkstra) outperforms MR. However, efficient TD-Dijkstra implementations rely on filtering dominated connections during preprocessing, which assumes passengers can always switch to a faster connection. We show that this filtering is unsound when stops have buffer times, as it cannot distinguish between seated passengers who may continue without waiting and transferring passengers who must respect the buffer. To address this limitation, we introduce Transfer Aware Dijkstra (TAD), a modification that scans entire trip sequences rather than individual edges, correctly handling buffer times while maintaining performance advantages over MR. Our experiments on London and Switzerland networks show that we can achieve a greater than two time speed-up over MR while producing optimal results on both networks with and without buffer times."
+  },
+  {
     "title": "David Muir comes face-to-face with humanoid robots in China - ABC News - Breaking News, Latest News and Videos",
     "original_title": "David Muir comes face-to-face with humanoid robots in China - ABC News - Breaking News, Latest News and Videos",
     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMHJFdkd5Sk42SGlxcUZ3TzN1Y1BWT0lrakNoeGtGUkVaYm9mTzZ0TFBWbHI4YjAzcDYyQXRaRFVDNktDTy1UN2dtenlJeC14Qi1kMGJVR3J0a21yQjhicHFTTXlpNWp5N3M1MmdWRTZleTlscFNCaDJNdDBueTFuVEh5WVVQUGo0WWhqLS1WVllZeFhmbkxB0gGcAUFVX3lxTE5OMmZ3SXotNEViaUpsQ1Vma3pZSncyS01UR2t1MWgwNXFVcG93TWw4VXRzM1JXanBwN3NUajhkUktUSEpvNGJpd042c2REd1J1NTJkQlBjbW0tNEFGbmpCMFctTk5rSlZ1QTRsYkt5WGJtSlRCREZDQ2tlN2lBeFBfU1FucW0tZUJZaEdPTnFxVlVJbnQzb2U4dmhTWg?oc=5",
@@ -1411,6 +1456,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2506.01568v3 Announce Type: replace-cross \nAbstract: Being able to solve a task in diverse ways makes agents more robust to task variations and less prone to local optima. In this context, constrained diversity optimization has become a useful reinforcement learning (RL) framework for training a set of diverse agents in parallel. However, existing constrained-diversity RL methods often under-explore in complex tasks such as robot manipulation, resulting in limited behavioral diversity. We address this with a two-stage curriculum that introduces a spline-based trajectory prior as an inductive bias to produce diverse, high-reward behaviors in an initial stage, and then distills these behaviors into reactive, step-wise policies in a second stage. In our empirical evaluation, we provide novel insights into challenges of diversity-targeted training and show that our curriculum increases the diversity of learned skills while maintaining high task performance."
+  },
+  {
+    "title": "Robot rentals set path for mass-market adoption - China Daily",
+    "original_title": "Robot rentals set path for mass-market adoption - China Daily",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5xcEJCWW5Pd04wa0toMVFjVlZ5LUFHa2RRV3lfb1NwdlY5RE1sS1BoV1FWZno1RFk5Z21GZXBhX1B4dXdfeldaa245SEV0TFBCdGtHS0d6ZkdLa1A0V0NYOF9IUUlzUFlnYl9jUU1MZkNWUndpekswMUlmZm9pZw?oc=5",
+    "date": "2026-05-13 02:29",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Robot rentals set path for mass-market adoption  China Daily"
   },
   {
     "title": "French startup unveils AI model for robots and human-like hand - MSN",
@@ -17944,59 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "한국 로봇pi 연구소의 Rice-RobotPI-Lab가 개발한 오픈 소스 라이브러리인 ManiDreams는 실세계 구현에서 발생하는 불확실성을 고려한 manipulation planning framework를 제공한다. 이 프레임워크는 퍼스트, 파라미터, 구조적 불확실성สาม요소를 address하고,RL baseline보다 더鲁지거하게 성능을 유지하는데 성공했으며, 다양한 정책, 최적화 알고리즘, 물리 엔진, 실행자에 대한 유연성을 보여준다."
-  },
-  {
-    "title": "Bio-inspired Tactile Hand을 사용한 접촉 상태 인식 및 실전 감지 ~함",
-    "original_title": "Contact Status Recognition and Slip Detection with a Bio-inspired Tactile Hand",
-    "link": "https://arxiv.org/abs/2603.18370",
-    "date": "2026-03-20 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "The proposed method uses a bio-inspired tactile hand to recognize contact status and detect slips with an accuracy of 96.39% across different sliding speeds and materials, and achieves a generalization rate of 91.95% on unseen materials. This technology can be applied to robotics for grasping fragile or glazed objects in unstructured environments."
-  },
-  {
-    "title": "MemoAct: Atkinson-Shiffrin-Inspired Memory-Augmented Visuomotor Policy for Robotic Manipulation",
-    "original_title": "MemoAct: Atkinson-Shiffrin-Inspired Memory-Augmented Visuomotor Policy for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2603.18494",
-    "date": "2026-03-20 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 만이팩션의 메모리-어금정 정책인 MemoAct를 제안하는데, 이를 위해 애틀킨-슈프린 메모리 모델을 참고하여 다단계 메모리를 갖는 정책을 개발하였다. 이 정책은 작업 상태 추적과 장기 연산 저장을 동시에 해결하는 데 효과적이다."
-  },
-  {
-    "title": "Robotic Agentic Platform for Intelligent Electric Vehicle Disassembly",
-    "original_title": "Robotic Agentic Platform for Intelligent Electric Vehicle Disassembly",
-    "link": "https://arxiv.org/abs/2603.18520",
-    "date": "2026-03-20 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이전차량 배터리 패크의 인텔리전트 분해에 있어 Robotic Agentic Platform을 제안합니다. 이 시스템은 RGB-D 감지, 산업용 집게 장치, 자동 나사取り 도구를 결합하여 실제 배터리 패크 분해 시나리오에서 manipulation, automation, AI-assisted robot programming을 구현합니다. \n\n(Note: I translated the title and summarized the content into 2-3 concise sentences in Korean, following the instruction.)"
-  },
-  {
-    "title": "Empathic Motion Generation for Humanoid Educational Robots via Reasoning-Guided Vision--Language--Motion Diffusion Architecture",
-    "original_title": "Empathetic Motion Generation for Humanoid Educational Robots via Reasoning-Guided Vision--Language--Motion Diffusion Architecture",
-    "link": "https://arxiv.org/abs/2603.18771",
-    "date": "2026-03-20 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "인간교육 로봇을 위한 사유가导한 비전-언어-운동 확산架構를 통해 공감적 운동 생성 방안이 제안됨임. 이 시스템은 다모드 affective 추정, 교정사유, 가르침-행동조건 운동 합성 등을 결합하여 적응적이고 의미연관 로봇 행동을 가능하게 함으로써 교육 시나리오에서 인간-로봇 상호작용의 pedagogical 표현과 제어를 향상시킴."
-  },
-  {
-    "title": "china 로봇 제조사 내부 부품을 내수화하여 대량 생산을 추진함",
-    "original_title": "China robot makers internalize key parts to drive mass production - CHOSUNBIZ - Chosunbiz",
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQYWJRRlphS1FlTlBkN3FQcU5wdDVwZkp4Qk83SmlIVExnSUZ4ZTlrT3NEY2U0TERhMWpoVlA4XzJEbEVNaENEb1BwM0RHZzdRU1JZcFBieXRWN09qZzZ0LWRWUmlCTzBXUW5kRlJJOEZpSnhpaFRxQzRfMlFfTUQ5R0hB0gGWAUFVX3lxTE1tNmkyTVBldFNGOUVPV0lrMEk2SXVsSFhMdVV0NGN2YnltOTJtSVRJSUVpQ2lHb1JWdFEyMkNaQmM4UF9pdjBBN0w3cHpfZ0NLalNtTHlpa3Z6SXBmSU8ySUZ5THlJeXUzeF9YZ2JJcUxGeFlwMzNKalM1akw5V0hvTHZpeFlQTG1tVElXdWlyYVIyUDk3dw?oc=5",
-    "date": "2026-03-20 01:27",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 로봇 제조사는 주요 부품을 내수화하여 대량 생산을 추진하기 위해 노력하고 있다. 이를 통해 수율을 개선하고 가격을 낮출 계획이다."
-  },
-  {
-    "title": "Amazon RIVR 구입",
-    "original_title": "Amazon acquires robotic doorstep delivery provider RIVR",
-    "link": "https://www.therobotreport.com/amazon-acquires-robotic-doorstep-delivery-provider-rivr/",
-    "date": "2026-03-19 23:35",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Amazon이 doorstep 배송 робот 공급자 RIVR를 인수하여, 곧은 우리의 Amazon 패키지를 네 quadrupeds가 배달할 가능성이나? \n\nNote: I followed the output format rules strictly. The Korean title is translated from the English title, and the summary is a concise translation of the content."
   }
 ]
