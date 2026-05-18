@@ -288,6 +288,60 @@
     "summary": "arXiv:2601.09512v2 Announce Type: replace \nAbstract: To teach robots complex manipulation tasks, a common approach is to fine-tune a pre-trained vision-language-action model (VLA) on task-specific data. However, since this recipe updates existing representations, it is unsuitable for long-term operation in the real world, where robots must continually adapt to new tasks and environments while retaining the knowledge they have already acquired. Existing continual learning methods for robotics commonly require storing previous data (exemplars), struggle with long task sequences, or rely on task identifiers for deployment. To address these limitations, we propose CLARE, a general, parameter-efficient framework for exemplar-free continual learning with VLAs. CLARE introduces lightweight modular adapters into selected VLA modules and autonomously expands the model only where necessary when learning a new task, guided by layer-wise feature similarity. During deployment, an autoencoder-based routing mechanism dynamically activates the most relevant adapters without requiring task labels. Through extensive experiments on the LIBERO benchmark and five real-world tasks, we show that CLARE achieves high performance on new tasks without catastrophic forgetting of earlier tasks, significantly outperforming even exemplar-based methods. Code, data, and videos are available at our website: https://tum-lsy.github.io/clare."
   },
   {
+    "title": "The OncoReach Stylet for Brachytherapy: Design Evaluation and Pilot Study",
+    "original_title": "The OncoReach Stylet for Brachytherapy: Design Evaluation and Pilot Study",
+    "link": "https://arxiv.org/abs/2601.13529",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2601.13529v2 Announce Type: replace \nAbstract: Cervical cancer accounts for a significant portion of the global cancer burden among women. Interstitial brachytherapy (ISBT) is a standard procedure for treating cervical cancer; it involves placing a radioactive source through a straight hollow needle within or in close proximity to the tumor and surrounding tissue. However, the use of straight needles limits surgical planning to a linear needle path. We present the OncoReach stylet, a handheld, tendon-driven steerable stylet designed for compatibility with standard ISBT 15- and 13-gauge needles. Building upon our prior work, we evaluated design parameters like needle gauge, spherical joint count and spherical joint placement, including an asymmetric disk design to identify a configuration that maximizes bending compliance while retaining axial stiffness. Free space experiments quantified tip deflection across configurations, and a two-tube Cosserat rod model accurately predicted the centerline shape of the needle for most trials. The best performing configuration was integrated into a reusable handheld prototype that enables manual actuation. A patient-derived, multi-composite phantom model of the uterus and pelvis was developed to conduct a pilot study of the OncoReach steerable stylet with one expert user. Results showed the ability to steer from less-invasive, medial entry points to reach the lateral-most targets, underscoring the significance of steerable stylets."
+  },
+  {
+    "title": "HoMMI: Learning Whole-Body Mobile Manipulation from Human Demonstrations",
+    "original_title": "HoMMI: Learning Whole-Body Mobile Manipulation from Human Demonstrations",
+    "link": "https://arxiv.org/abs/2603.03243",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.03243v2 Announce Type: replace \nAbstract: We present Whole-Body Mobile Manipulation Interface (HoMMI), a data collection and policy learning framework that learns whole-body mobile manipulation directly from robot-free human demonstrations. We augment UMI interfaces with egocentric sensing to capture the global context required for mobile manipulation, enabling portable, robot-free, and scalable data collection. However, naively incorporating egocentric sensing introduces a larger human-to-robot embodiment gap in both observation and action spaces, making policy transfer difficult. We explicitly bridge this gap with a cross-embodiment hand-eye policy design, including an embodiment agnostic visual representation; a relaxed head action representation; and a whole-body controller that realizes hand-eye trajectories through coordinated whole-body motion under robot-specific physical constraints. Together, these enable long-horizon mobile manipulation tasks requiring bimanual and whole-body coordination, navigation, and active perception. Results are best viewed on: https://hommi-robot.github.io"
+  },
+  {
+    "title": "OpenFrontier: General Navigation with Visual-Language Grounded Frontiers",
+    "original_title": "OpenFrontier: General Navigation with Visual-Language Grounded Frontiers",
+    "link": "https://arxiv.org/abs/2603.05377",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.05377v2 Announce Type: replace \nAbstract: Open-world navigation requires robots to make decisions in complex everyday environments while adapting to flexible task requirements. Conventional navigation approaches often rely on dense 3D reconstruction and hand-crafted goal metrics, which limits their generalization across tasks and environments. Recent advances in vision-language navigation (VLN) and vision-language-action (VLA) models enable end-to-end policies conditioned on natural language, but typically require interactive training, large-scale data collection, or task-specific fine-tuning with a mobile agent. We formulate navigation as a sparse subgoal identification and reaching problem and observe that providing visual anchoring targets for high-level semantic priors enables highly efficient goal-conditioned navigation. Based on this insight, we select visual frontiers as semantic anchors and propose OpenFrontier, a navigation framework that requires no task-specific training or fine-tuning and seamlessly integrates diverse vision-language prior models. OpenFrontier enables efficient navigation with a lightweight system design, without dense 3D semantic mapping, task-specific policy training, or model fine-tuning. We evaluate OpenFrontier across multiple navigation benchmarks and demonstrate strong zero-shot performance, as well as effective real-world deployment on a mobile robot."
+  },
+  {
+    "title": "frax: Fast Robot Kinematics and Dynamics in JAX",
+    "original_title": "frax: Fast Robot Kinematics and Dynamics in JAX",
+    "link": "https://arxiv.org/abs/2604.04310",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2604.04310v2 Announce Type: replace \nAbstract: In robot control, planning, and learning, there is a need for rigid-body dynamics libraries that are highly performant, easy to use, and compatible with CPUs and accelerators. While existing libraries often excel at either low-latency CPU execution or high-throughput GPU workloads, few provide a unified framework that targets multiple architectures without compromising performance or ease-of-use. To address this, we introduce frax, a JAX-based library for robot kinematics and dynamics, providing a high-performance, pure-Python interface across CPU, GPU, and TPU. Via a fully-vectorized approach to robot dynamics, frax enables efficient real-time control and parallelization, while supporting automatic differentiation for optimization-based methods. On CPU, frax achieves low-microsecond computation times suitable for kilohertz control rates, outperforming common libraries in Python and approaching optimized C++ implementations. On GPU, the same code scales to thousands of instances, reaching upwards of 100 million dynamics evaluations per second. We validate performance on a Franka Panda manipulator and a Unitree G1 humanoid, and release frax as an open-source library."
+  },
+  {
+    "title": "A Hierarchical Spatiotemporal Action Tokenizer for In-Context Imitation Learning in Robotics",
+    "original_title": "A Hierarchical Spatiotemporal Action Tokenizer for In-Context Imitation Learning in Robotics",
+    "link": "https://arxiv.org/abs/2604.15215",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.15215v2 Announce Type: replace \nAbstract: We present a novel hierarchical spatiotemporal action tokenizer for in-context imitation learning. We first propose a hierarchical approach, which consists of two successive levels of vector quantization. In particular, the lower level assigns input actions to fine-grained subclusters, while the higher level further maps fine-grained subclusters to clusters. Our hierarchical approach outperforms the non-hierarchical counterpart, while mainly exploiting spatial information by reconstructing input actions. Furthermore, we extend our approach by utilizing both spatial and temporal cues, forming a hierarchical spatiotemporal action tokenizer, namely HiST-AT. Specifically, our hierarchical spatiotemporal approach conducts multi-level clustering, while simultaneously recovering input actions and their associated timestamps. Finally, extensive evaluations on multiple simulation and real robotic manipulation benchmarks show that our approach establishes a new state-of-the-art performance in in-context imitation learning."
+  },
+  {
+    "title": "Efficiently Solving Mixed-Hierarchy Games with Quasi-Policy Approximations",
+    "original_title": "Efficiently Solving Mixed-Hierarchy Games with Quasi-Policy Approximations",
+    "link": "https://arxiv.org/abs/2602.01568",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.01568v2 Announce Type: replace-cross \nAbstract: Multi-robot coordination often exhibits hierarchical structure, with some robots' decisions depending on the planned behaviors of others. While game theory provides a principled framework for such interactions, existing solvers struggle to handle mixed information structures that combine simultaneous (Nash) and hierarchical (Stackelberg) decision-making. We study N-robot forest-structured mixed-hierarchy games, in which each robot acts as a Stackelberg leader over its subtree while robots in different branches interact via Nash equilibria. We derive the Karush-Kuhn-Tucker (KKT) first-order optimality conditions for this class of games and show that they involve increasingly high-order derivatives of robots' best-response policies as the hierarchy depth grows, rendering a direct solution intractable. To overcome this challenge, we introduce a quasi-policy approximation that removes higher-order policy derivatives and develop an inexact Newton method for efficiently solving the resulting approximated KKT systems. We prove local exponential convergence of the proposed algorithm for games with non-quadratic objectives and nonlinear constraints. The approach is implemented in a highly optimized Julia library (MixedHierarchyGames.jl) and evaluated in hardware and simulated multi-agent experiments, demonstrating real-time convergence for complex mixed-hierarchy information structures."
+  },
+  {
     "title": "사람처럼 일하고 스스로 달린다…산업현장 로봇 투입은 시간문제 - 브레이크뉴스",
     "original_title": "사람처럼 일하고 스스로 달린다…산업현장 로봇 투입은 시간문제 - 브레이크뉴스",
     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0xVnhzcTZ2NmxxQ2dySlNOZlZUckFLcWxVd1AwUUJJZVRmTlpONlpVaTFlVVI3emF6UnV2czVPY0RuZlUtdmZNeA?oc=5",
@@ -17944,59 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중화국이 인공인간 로봇을 지원하기 위해 최초의 국립 표준을 발전시킨 것임. 새로운 표준은 로봇의 움직임, 작동, 안전 등 14개 카테고리를 포함하며, 산업 확장 지원을 목표로 한다."
-  },
-  {
-    "title": "McDonald의~ humanooid 로봇 Shanghai 팈리서 ~",
-    "original_title": "McDonald’s tests humanoid robots in Shanghai pilot",
-    "link": "https://roboticsandautomationnews.com/2026/03/22/mcdonalds-tests-humanoid-robots-in-shanghai-pilot/100019/",
-    "date": "2026-03-22 20:33",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "맥도날드는 Shanghai 식당에서 humanooid 서비스 로봇을 테스트 중에 있는 것으로 알려졌습니다. Keenon 로보티즘에서 개발된 로봇이 고객 직면 작업을 수행하는 범위 내에서 다양한 업무를 맡아 있습니다."
-  },
-  {
-    "title": "NVIDIA 하드웨어에서 실제 AI 세계 모델 'Foresight'가 잠금된 풀 파이널을.unlock하는 데 중점을 둔 Dexterity의 발표함",
-    "original_title": "Dexterity says its physical AI world model ‘unlocks full potential on Nvidia hardware’",
-    "link": "https://roboticsandautomationnews.com/2026/03/22/dexterity-says-its-physical-ai-world-model-unlocks-full-potential-on-nvidia-hardware/100016/",
-    "date": "2026-03-22 20:12",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Dexterity.ai는 엔터프라이즈 환경에서 크게 확장하고 있는 NVIDIA 하드웨어에서 Foresight를 기반으로 새로운 수준의 성능을 달성할 수 있다고 밝혔다. 이 모델은 raw multi-modal sensor 데이터에서 사물의 완전한 그림을 그리고, 움직임 계획 및 액션 시작하기 전에 이 작업을 수행해야 함을 강조했다."
-  },
-  {
-    "title": "NVIDIA의 로보트눈우산 공개함",
-    "original_title": "Nvidia’s Ambitious Robot Snowman Reveal at GTC 2025 Highlights Both Engineering Triumphs and Social Dilemmas - Bitcoin world",
-    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBGSEJ1T1AyWjBWNTFKSW0yMGxnVlRfTWJ6b2ZoZktHSEFJbE0yakV3NmJtUUllaFVveldDSVhsMFhXZW9jX1ZGTDFMdFF2THpqY0lXdU0yUjdwQVpNT2dsMEV1RndQRVJJ?oc=5",
-    "date": "2026-03-22 20:10",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA는 GTC 2025에서 로보트눈우산을 공개하여 공학적 성공과 사회적 딜레마를 이었다. 로보트눈우산은 인공 지능(AI)와 3D 모델링 기술을 결합한 새로운 형태의 로봇으로, 이에 대한 사회적 고려 또한 필요할 것이다.\n\n(Note: I followed the formatting rules and output a strict string with the given format. The Korean title is a translation of the English title, and the summary is a concise summary of the content.)"
-  },
-  {
-    "title": "이그주미 SMMP네널을 위한 최적의 10인 플랫폼 (2026)",
-    "original_title": "Cheapest SMM Panel for Instagram: Top 10 Platforms (2026)",
-    "link": "https://roboticsandautomationnews.com/2026/03/22/cheapest-smm-panel-for-instagram-top-10-platforms-2026/100009/",
-    "date": "2026-03-22 18:56",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "인스타그램 성장은 이제 더 이상 좋은 시각에 의존하는 것뿐만 아니라, 플랫폼이 훨씬 더 경쟁적이고 강력한 콘텐츠라도 있어도 초기 참여 신호, 가시 활동 또는พอ 충분한 사회적 증거가 없는 경우 계정이 주의를 받지 못하게 된다. 따라서 많은 크리에이터, 에지니즘, 리셀러 및 소규모 기업들은 인스타그램 성장에 있어 early engagement signal, visible activity, or enough social proof이 필요하게 되었다."
-  },
-  {
-    "title": "AI 엔지니어링 코ース | 마지막 기회",
-    "original_title": "Last Chance to Enroll | Become an AI Engineer | Cohort-Based Course",
-    "link": "https://blog.bytebytego.com/p/last-chance-to-enroll-become-an-ai-2ca",
-    "date": "2026-03-22 15:30",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "5번째 AI 엔지니어링 코스를 다음 주에 시작합니다. 이코스는 ByteByteGo에서 발행한 최고의 베스트셀러 저자 알리 아미니아와 공동으로 개발된 라이브, 코호트 기반의 강좌입니다."
-  },
-  {
-    "title": "Offline 프로그래밍이 제조 자동화 배포 시간을 줄이는 방식임",
-    "original_title": "How offline programming reduces machining automation deployment times",
-    "link": "https://www.therobotreport.com/how-offline-programming-reduces-machining-automation-deployment-times/",
-    "date": "2026-03-22 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "로보DK의 설립자와 CEO는 고혼적, 저량적 응용에서 offline 프로그래밍의 속도를 설명하였다. offline 프로그래밍은 2시간 이내에 프로토타입을 완성할 수 있어 실제로는 1/3로 빠르게 배포가 가능해졌다."
   }
 ]
