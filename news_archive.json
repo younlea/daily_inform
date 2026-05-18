@@ -144,6 +144,78 @@
     "summary": "arXiv:2605.15892v1 Announce Type: new \nAbstract: Robots are increasingly present in human spaces, such as for conducting deliveries in hospitals, interacting with visitors at museums, and stocking items in warehouses. To ensure the seamless integration of robots into these spaces, a new role in human-robot interaction is emerging - the robot wrangler, namely an individual who is responsible for setting up, overseeing, and troubleshooting the robot. To understand the needs of this stakeholder, we conducted a scoping review that uncovered a typology of robot wrangling across the research literature, and discovered that wrangling is an umbrella term that collapses a highly complex and heterogeneous space of activities, often rendering this labor difficult to characterize and support. To further clarify and understand robot wrangling, we then reflected on our own firsthand and imagined experiences as robot wranglers within our own respective domains. Guided by the scoping review and our reflections, we devise a series of design implications for supporting wranglers directly as individuals and as members of a wider service ecology."
   },
   {
+    "title": "FocalPolicy: Frequency-Optimized Chunking and Locally Anchored Flow Matching for Coherent Visuomotor Policy",
+    "original_title": "FocalPolicy: Frequency-Optimized Chunking and Locally Anchored Flow Matching for Coherent Visuomotor Policy",
+    "link": "https://arxiv.org/abs/2605.15944",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15944v1 Announce Type: new \nAbstract: Visuomotor policies aim to learn complex manipulation tasks from expert demonstrations. However, generating smooth and coherent trajectories remains challenging, as it requires balancing proximal precision with distal foresight. Existing approaches typically focus on optimizing intra-chunk action distributions, often neglecting the inter-chunk coherence. Consequently, inter-chunk discontinuities significantly impede the learning of coherent long-horizon actions. To overcome this limitation and achieve a synergetic balance between precision and foresight, we propose FocalPolicy, a foresight-aware visuomotor policy that combines Frequency-Optimized Chunking with Locally Anchored flow matching. We introduce a foresight composite objective that supervises time-domain alignment within the proximal actions while regularizing frequency-domain structure over multiple future action chunks to improve cross-chunk coherence. To efficiently learn complex action distributions, we design locally anchored campling to enhance target signal propagation efficiency during consistency flow matching training. Extensive experiments demonstrate that FocalPolicy outperforms existing approaches and confirm the generalizability of our modules to other baselines. Project website: https://focalpolicy.github.io/"
+  },
+  {
+    "title": "A Reproducible and Physically Feasible Dynamic Parameter Identification Framework for a Low-Cost Robot Arm",
+    "original_title": "A Reproducible and Physically Feasible Dynamic Parameter Identification Framework for a Low-Cost Robot Arm",
+    "link": "https://arxiv.org/abs/2605.15949",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15949v1 Announce Type: new \nAbstract: This paper presents a reproducible and physically feasible dynamic parameter identification framework for CRANE-X7, a low-cost robot arm driven by modular smart actuators. To improve practical identifiability, products of inertia are removed according to approximate link symmetry, reducing the rigid-body model from 65 to 39 base parameters. Identification motions are hand-designed from structured single-joint and adjacent-joint primitives under practical joint-range limits. The proposed pipeline combines preprocessing, inverse-dynamics-regressor-based ordinary least squares (OLS), conditional semidefinite-programming (SDP) projection for feasibility recovery, and closed-loop input error (CLIE) refinement. Candidate solutions from 40 structured trajectories are analyzed in a common PCA space to select a statistically central representative model. Because statistical centrality alone does not ensure physical acceptability, the selected model is finally screened by an all-pose positive-definiteness audit of the inertia matrix and, when necessary, corrected by a localized post-CLIE SDP rescue step. Experiments show that the parameter cloud becomes progressively more concentrated from OLS to SDP and CLIE, while the final accepted model preserves high predictive accuracy on held-out validation motions. These results demonstrate a practical route to statistically coherent and physically feasible dynamic models for low-cost robot platforms."
+  },
+  {
+    "title": "OHP-RL: Online Human Preference as Guidance in Reinforcement Learning for Robot Manipulation",
+    "original_title": "OHP-RL: Online Human Preference as Guidance in Reinforcement Learning for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2605.15971",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15971v1 Announce Type: new \nAbstract: While reinforcement learning (RL) enables robots to acquire skills autonomously, its real-world deployment is severely limited by inefficient and unsafe exploration. Human-in-the-loop interventions offer a practical solution, yet existing methods typically exploit these interventions as auxiliary training signals, without fully capturing the richer information they provide about when and how autonomy should be guided.\n  Human interventions often encode relative preferences over behavior under safety and task constraints, rather than prescribing exact actions to imitate. Motivated by this perspective, we propose Online Human Preference as Guidance in Reinforcement Learning (OHP-RL), a framework that leverages human interventions as preference information to guide policy learning. OHP-RL introduces a state-dependent preference gate that adaptively regulates when and to what extent human interventions should shape policy learning. This design enables the agent to benefit from intermittent and imperfect human feedback while preserving autonomous exploration and stable policy optimization.\n  We evaluate OHP-RL on three challenging real-world contact-rich manipulation tasks on a Franka robot. Across all tasks, OHP-RL consistently achieves strong success rates, faster convergence, and substantially lower human intervention effort than prior approaches. Moreover, the learned policies exhibit more stable and human-aligned behavior throughout training."
+  },
+  {
+    "title": "Learning Sim-Grounded Policies for Bimanual Rope Manipulation from Human Teleoperation Data",
+    "original_title": "Learning Sim-Grounded Policies for Bimanual Rope Manipulation from Human Teleoperation Data",
+    "link": "https://arxiv.org/abs/2605.16043",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.16043v1 Announce Type: new \nAbstract: Deformable Linear Objects (DLOs) such as ropes and cables are widely encountered in both household and industrial applications, yet remain challenging to manipulate due to their infinite-dimensional configuration space and frequent self-occlusion. Imitation learning from teleoperation offers a practical path to bimanual DLO manipulation, but its scalability is limited by human effort, making the choice of observation space critical for generalization from small datasets. In this study, we investigate whether the lack of generalization in egocentric visual policies for the knot-untangling task stems from the observation space itself, rather than from the policy architecture or data scale. We compare two Action Chunking with Transformers policies trained on the same bimanual teleoperation data: a vision-based policy conditioned on two egocentric RGB streams from wrist-mounted cameras, and a state-based policy conditioned on the DLO's 3D particle state, extracted from an initial observation via multi-view fusion and evolved in a particle-based eXtended Position-Based Dynamics simulation. Evaluated open-loop on an unseen rope configuration, the state-based policy outperforms its visual counterpart with a 30.8% reduction in L1 error when predicting the initial grasp-and-pull action, quantifying the observability gap between pixels and physics-consistent state, and pointing toward more data-efficient robot learning for the DLO manipulation task from limited human demonstrations."
+  },
+  {
+    "title": "Health-Conditioned Vision-Language-Action Models for Malfunction-Aware Robot Control",
+    "original_title": "Health-Conditioned Vision-Language-Action Models for Malfunction-Aware Robot Control",
+    "link": "https://arxiv.org/abs/2605.16056",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.16056v1 Announce Type: new \nAbstract: Research on Vision Language Action (VLA) models has been increasing rapidly in recent years. Although some of them focus on detecting, preventing, and recovering from task failures, they usually don't deal with adapting to robot's physical failures. In real-life scenarios, most robots face physical degradations in various ways such as joint degradation, actuator failure, or weak gripper. We introduce malfunction-aware (health-conditioned) VLA that takes a health vector as an input that gives information about robots' joints' operation angle and torque capability, and adapts its predictions to complete the tasks with the degraded joints. To achieve this, we inject a Health Projector module to the VLA-Adapter architecture and train it on malfunction robot data we collected on the LIBERO environment [1]. We collect 128 teleoperated episodes on Libero-Spatial tasks. Our results show that, with a very lightweight addition, the model can learn to operate successfully with different configurations of degraded joints which the default pretrained VLA-Adapter's Libero-Spatial-Pro model cannot. The code and dataset will be available soon at https://github.com/h-arslan/health-aware-vla"
+  },
+  {
+    "title": "DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo",
+    "original_title": "DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo",
+    "link": "https://arxiv.org/abs/2605.16257",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.16257v1 Announce Type: new \nAbstract: Achieving human-level manipulation requires dexterous robotic hands capable of complex object interactions. Advancing such capabilities further demands standardized benchmarks for systematic evaluation. However, existing dexterous benchmarks lack tasks that reflect the unique manipulation capabilities of dexterous hands over parallel grippers, as well as comprehensive evaluation pipelines. In this paper, we present DexJoCo, a benchmark and toolkit for task-oriented dexterous manipulation, comprising 11 functionally grounded tasks that evaluate tool-use, bimanual coordination, long-horizon execution, and reasoning. We develop a low-cost data collection system and collect 1.1K trajectories across these tasks, with support for domain randomization to assess robustness. We benchmark modern models under diverse settings, including visual and dynamics randomization, multi-task training, and action-head adaptation. Through extensive empirical analysis, we identify several important insights and common limitations of current policies in dexterous manipulation, highlighting key challenges for future research in dexterous hand robot learning. Project page available at: https://dexjoco.github.io"
+  },
+  {
+    "title": "Optimizing Line Segment Inspection with Limited-Range Drones",
+    "original_title": "Optimizing Line Segment Inspection with Limited-Range Drones",
+    "link": "https://arxiv.org/abs/2605.15765",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15765v1 Announce Type: cross \nAbstract: Optimization problems with drones are widely studied in a variety of civilian tasks, mainly due to their ability to traverse rough terrains and to carry cameras and other sensors for surveillance tasks. The limited battery life of these aerial robots poses challenges in operational research. In this paper, we address the following optimization problem. We are given a set of line segments (e.g. tubes in a solar plant) to inspect by drones. The objective is to detect broken pipes using artificial intelligence and path planning must be carried out efficiently. On the one hand, the limited capacity of the batteries necessitates periodic visits (tours) to a fixed base station. However, it is desirable to allocate a set of tours for each drone to ensure that the segments are covered as quickly as possible, aiming to minimize the makespan, which is the maximum time spent by any drone. We are able to prove that this optimization problem is strongly NP-hard even when the segments are positioned on a line and the scenario involves only two drones. Then, approximation algorithms are proposed. Our computational experiments demonstrate that the proposed algorithm achieves near-optimal performance across diverse operational scenarios."
+  },
+  {
+    "title": "Driving Through the Network: Performance and Workload Under Latency and Video Impairment",
+    "original_title": "Driving Through the Network: Performance and Workload Under Latency and Video Impairment",
+    "link": "https://arxiv.org/abs/2605.15952",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15952v1 Announce Type: cross \nAbstract: Teleoperation promises to extend the operational envelope of automated vehicles, yet it critically depends on network latency and video quality. We report a fixed-base driving-simulator study (N=25) with a 2x2 manipulation of added latency (100/300 ms) and bitrate (500/2000 kbit/s), plus a best-case baseline (0 ms added, 9000 kbit/s). We measured effective glass-to-glass (G2G) latency per condition (baseline approx. 413 ms; effective totals approx. 500-700 ms) and verified stable framerate and encoder settings. Multimodal measures covered performance (speed, steering reversals, crashes), oculomotor behavior (blink rate, fixation duration), physiology (RR interval, heart rate, skin conductance), and subjective workload. Latency and bitrate each increased operator load and modestly affected performance. Physiological measures (heart rate, RR interval) exhibited sub-additive interactions, whereas performance and oculomotor interactions were small or non-significant. Equivalence tests showed that 300 ms with 2000 kbit/s was velocity-equivalent to best-case (SESOI +/- 2 km/h), while 300 ms with 500 kbit/s was not. We argue that latency and video quality should be treated as largely independent design levers, and that physiology-aware adaptation can anticipate overload before safety is compromised."
+  },
+  {
     "title": "사람처럼 일하고 스스로 달린다…산업현장 로봇 투입은 시간문제 - 브레이크뉴스",
     "original_title": "사람처럼 일하고 스스로 달린다…산업현장 로봇 투입은 시간문제 - 브레이크뉴스",
     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0xVnhzcTZ2NmxxQ2dySlNOZlZUckFLcWxVd1AwUUJJZVRmTlpONlpVaTFlVVI3emF6UnV2czVPY0RuZlUtdmZNeA?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Tech Xplore",
     "category": "humanoid",
     "summary": "영국 브리스톨 대학교에서 주도한 연구결과, published in the Journal of the Royal Society Interface에 발표된 결과는 로보틱스에서 새로운 가능성을 열 수 있을 것으로 예상됨"
-  },
-  {
-    "title": "OUTPUT\n\nHumanoid Learns Tennis Skills Playing Humans",
-    "original_title": "Video Friday: Humanoid Learns Tennis Skills Playing Humans",
-    "link": "https://spectrum.ieee.org/tennis-playing-robot",
-    "date": "2026-03-21 16:30",
-    "source": "IEEE Spectrum",
-    "category": "humanoid",
-    "summary": "인공 humanooid 로봇이 테니스 스킬을 배워 인간과 경쟁적으로 경기를 치룰 수 있는 시스템을 제안함. 또한, 로봇의 운동 데이터에 대한 분석과 이를 구현하는 방법도 설명됨."
-  },
-  {
-    "title": "Nvidia GTC 2026에서 로봇이 스낵을 서비스해 주었습니다",
-    "original_title": "I asked a robot to serve me snacks at Nvidia GTC 2026 - here's how it went - TechRadar",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNUHY0OHVMVWxqY0l1MW9Gb19VenRCQXFUN0xza1Z1eHl5cFRpR2hsWXZINS1xdXlvWV9CYWZRYnRabzFZOV9EZ0dDRkllQVJ3TzRucm5EYl9hS1JSUGJ1UDR6MzFmTWlMNEVqS0FIWjBwaUpWbm1IcVdQMEFUS0dWal9PakpPbmNXNFl0ZG50aWZhRHhmbFpqM2xtMTZjdDlsbk9MQ3FuZWVvRHJUbE5pS3M3UEQ5cXFvbkhFeGstRTh2RGtMNUVVaEotaw?oc=5",
-    "date": "2026-03-21 16:15",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Nvidia의 GTC 2026에서 열린 이벤트에 로봇이 스낵 서비스를 제공해 주었는데, 기술적인 측면에서 다양한 방식으로 작동하는 로봇의 실제 적용 예시로 간직되었다. Nvidia는 이에 대한 인공 지능(AI)와 물리학을 결합한 새로운 서비스를 선보였다."
-  },
-  {
-    "title": "GitHub AI 저장소 12위 ~함",
-    "original_title": "EP207: Top 12 GitHub AI Repositories",
-    "link": "https://blog.bytebytego.com/p/ep207-top-12-github-ai-repositories",
-    "date": "2026-03-21 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "GitHub에서 인기가 많은 AI 저장소를 기반으로 선정된 것으로, 총 12개의 저장소가 있습니다."
-  },
-  {
-    "title": "US의 경보: 중국의 인어 로봇에 대한 보안 우려 -함",
-    "original_title": "US sounds alarm over China’s humanoid robots amid security concerns - The Star",
-    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOODNGcFN6elpzVHh4RnZJN3pTLS1MNDN1MDZqNk5CVmxEbVJKa1JqWDdreGV0Yy1RNG0yLVFMdGh5eEl1T0FZbi1NR0NlV2tMREl0LUhRWlRGZlREZjBMcmwxOU1HTzB4U3Z0aHFPUkdYWGcxRU90aDlPbnRaZ1VwOTZoWkduUVhueDlPbjBpUXhPcV8wZnduR2lhNGRxdnh6YlFDRVZ5YzZURmZXSU8tZC1aeVpGVWVoVzIwb21yYWZUODRhZVlBaA?oc=5",
-    "date": "2026-03-21 14:30",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 인어 로봇이 미국의 안보 우려를 일으키자, 미국은 경보를 발령하였다. 중국은 인어 로봇을 개발하여 세계적으로 판매할 계획임에도 불구하고, 미국은 이러한 로봇이 국가안보 및 정보 보안에 영향을 줄 수 있는 우려를 표명하고 있다."
-  },
-  {
-    "title": "Nvidia CEO는 중국 공급 사슬에 의존하는 미국 로봇 산업 경고함",
-    "original_title": "Nvidia CEO says US robotics still relies on China supply chain - Tech in Asia",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOV09TSUtzMVFlMUVFR3FwTWRjMjJfVlBhTWpnbVFLalVOUjVOT1pDUmttT2NpRmF6YVlXS0toTFJuX21YNjlXUnVFWUxqdG9jRk91Q0RKQ3lLMlh5ZU5DY2hlbkR4aXVYZ2JNNW1MVmNNaGJoSVV1ZWR4dHg5WkdvZ2lybUtIUURMNW9vRzBQZVZWUlEtM1dtRGdR?oc=5",
-    "date": "2026-03-21 14:18",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Nvidia 최고경영자가 말한 것과 같이, 미국 로봇 산업은 여전히 중국 공급 사슬에 의존하고 있으며 이는 수요와 공급 imbalance를 초래할 우려가 있다."
-  },
-  {
-    "title": "UBTECH와 시메نز의 10,000개의 인형봇 연간 계획은 크다임",
-    "original_title": "🤖 10,000 humanoid robots per year: The gigantic secret plan of UBTECH and Siemens 🤝 - Xpert.Digital - Konrad Wolfenstein",
-    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBqdmozUjV5bFFvb3pDNVZJdjNDR2Fmb0FsT21UYksyLWVwZXB0eXBxS2RuUGJkWmtVZ3phOGJUUnA2c2tjUXBBN1NEYTU4ZUZCRUpnd2hJaUlDY2hTTUd5UjZ6TVZnbkhZ?oc=5",
-    "date": "2026-03-21 13:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "시emens와 UBTECH이 10,000개의 인형봇을 연간 생산하는 기대치를 열거하는 비밀 계획을 가지고 있다고 보도됐다. 이 계획에는 인형봇의 AI 기술이 포함된 것 같으며, 산업용으로 사용되는 인형봇도 포함될 가능성이 있다."
-  },
-  {
-    "title": "robot race",
-    "original_title": "The great robot race: How companies can balance speed to market and compliance in the U.S.",
-    "link": "https://www.therobotreport.com/great-robot-race-how-companies-balance-speed-market-compliance-u-s/",
-    "date": "2026-03-21 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "미국에서 로봇을 출시하는 회사의 속도와 준수성 균형 방법을 찾는 것이 중요하다. Cooley의 전문가들은 소비자 로봇 및 AI 개발자가 준수 전략을 필요로 한다고 설명한다."
-  },
-  {
-    "title": "EU어вроп 의 새로운 frontier로 인물의 경우 AI",
-    "original_title": "Investor makes a case for Europe as a new frontier for physical AI",
-    "link": "https://www.therobotreport.com/investor-makes-case-europe-new-frontier-physical-ai/",
-    "date": "2026-03-21 12:15",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "유럽은 로보틱스, AI, 공간 계산에 있어 전문성을 보유하고 있어 심층 기술 leadership를 이끌 수 있다고 FOV Ventures 파트너가 주장합니다. EU는 물리적 AI 개발에서 새로운 전망을 열어둘 가능성이 있습니다."
   }
 ]
