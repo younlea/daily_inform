@@ -1,5 +1,77 @@
 [
   {
+    "title": "HoloMotion-1 Technical Report",
+    "original_title": "HoloMotion-1 Technical Report",
+    "link": "https://arxiv.org/abs/2605.15336",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.15336v1 Announce Type: new \nAbstract: In this report, we present HoloMotion-1, a humanoid motion foundation model for zero-shot whole-body motion tracking. A key innovation of HoloMotion-1 is to scale control-policy training with a large-scale hybrid motion corpus, where video-reconstructed motions from in-the-wild videos provide the dominant source of motion diversity, while curated motion-capture and in-house motion data provide higher-fidelity supervision and deployment-oriented coverage. This data regime enables HoloMotion-1 to move beyond conventional MoCap-only training and exposes the policy to substantially broader behaviors, capture conditions, and motion styles.\n  Learning from such heterogeneous data introduces new challenges, including reconstruction noise, source-domain mismatch, uneven motion quality, and the need for temporal modeling under large behavioral variation. To address these challenges, HoloMotion-1 integrates large-capacity temporal modeling, a sparsely activated Mixture-of-Experts Transformer with KV-cache inference for real-time control, and a sequence-level training strategy that improves learning efficiency on extended motion sequences. Extensive experiments on multiple unseen motion benchmarks show that HoloMotion-1 generalizes robustly across diverse motion types and capture conditions, significantly improves tracking accuracy over prior methods, and transfers directly to a real humanoid robot without task-specific fine-tuning."
+  },
+  {
+    "title": "Diffusion Policy for Coordinated Control of a Nonholonomic Mobile Base and Dual Arms in Door Opening and Passing",
+    "original_title": "Diffusion Policy for Coordinated Control of a Nonholonomic Mobile Base and Dual Arms in Door Opening and Passing",
+    "link": "https://arxiv.org/abs/2605.15352",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15352v1 Announce Type: new \nAbstract: Opening heavy, self closing doors, especially those that require pulling remains a long standing challenge in robotics. Humans naturally employ both arms in a dexterous manner, rotating the handle, widening the gap, holding the door, switching arms when needed, and moving through while maintaining clearance. To replicate such behaviors, a robot must perform a long sequence of motions spanning multiple stages and interactions with different parts of the door. Traditional approaches rely on state machines that transition between manually defined stages (e.g., pulling after the knob is rotated, passing after the gap is sufficiently wide). While intuitive, these methods lack robustness, as hand crafted trajectories fail to generalize to the diversity of real world conditions without extensive engineering effort. Recent advances in imitation learning offer a scalable alternative, yet no existing visual action model has demonstrated simultaneous coordination of a nonholonomic base and dual arms for the complete door opening and passing task. In this paper, we tackle this complex, highly constrained problem using a diffusion based visuomotor control policy. Our results demonstrate that a single end to end policy can be learned to execute long horizon tasks requiring tight coordination between manipulation and locomotion. The resulting policy not only achieves a high success rate in opening and traversing damped pull doors but also demonstrates strong robustness to external disturbances capabilities that are difficult to realize with traditional methods."
+  },
+  {
+    "title": "Where to Perch in a Tree: Vision-Guidance for Tree-Grasping Drones",
+    "original_title": "Where to Perch in a Tree: Vision-Guidance for Tree-Grasping Drones",
+    "link": "https://arxiv.org/abs/2605.15430",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15430v1 Announce Type: new \nAbstract: This study demonstrates a method to locate an ideal perch location on a tree for vision-guided autonomous tree-perching drones. Various image processing algorithms, including those used for machine learning, image segmentation and binary image morphology, are implemented to assess the shape and structure of a tree. Rather than identifying the closest available branch, this study builds on vision methods by evaluating the potential of each branch, determining its suitability for perching based on factors such as branch width, slope (angle to the horizontal) and curvature. For a given tree-perching drone and a dataset of more than 10,000 urban tree images taken from February to October in a subtropical and temperate monsoon climate, the proposed method successfully produces a result for 76% of feasible targets. A feasible target defined as a tree where the branch diameters are sufficiently thick and where the available perching space is at least equal to the width of a tendon-driven grasping claw. These successful preliminary results create a foundation from which a number of identified improvements and additional features can be developed to create a generalised method; this will involve the incorporation of supplementary data from depth perception and attitude sensors to enhance the branch assessment."
+  },
+  {
+    "title": "FLASH: Efficient Visuomotor Policy via Sparse Sampling",
+    "original_title": "FLASH: Efficient Visuomotor Policy via Sparse Sampling",
+    "link": "https://arxiv.org/abs/2605.15492",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15492v1 Announce Type: new \nAbstract: Generative models such as diffusion and flow matching have become dominant paradigms for visuomotor policy learning, yet their reliance on iterative denoising incurs high inference latency incompatible with real-time robotic control. We present Fast Legendre-polynomial Action policy via Sparse History-anchored flow (FLASH Policy), which replaces discrete action-chunk generation with continuous Legendre polynomial trajectory representation. Specifically, by fitting expert demonstrations under sparse temporal sampling, FLASH enables a single inference to cover a significantly extended action horizon. To further accelerate generation, FLASH initiates the flow matching process from history polynomial coefficients rather than uninformative Gaussian noise, shortening the transport distance and enabling accurate single-step inference. Moreover, analytic polynomial differentiation directly provides desired velocity feed-forward signals to the torque controller without numerical approximation. Extensive experiments on five simulated and two real-world manipulation tasks demonstrate that FLASH achieves state-of-the-art success rates ($\\ge 92\\%$ across all tasks), a per-episode inference time of $31.40\\,ms$ (up to $175\\times$ faster than diffusion policies and $18\\times$ faster than prior flow matching policies), up to $4\\times$ faster training convergence than ACT, and $5\\times$ to $7\\times$ reduction in controller tracking error compared to discrete-action baselines."
+  },
+  {
+    "title": "A QUBO Formulation Framework for Kinematic Structure-Based Robot Design Optimization: A Robotic Hand Case Study",
+    "original_title": "A QUBO Formulation Framework for Kinematic Structure-Based Robot Design Optimization: A Robotic Hand Case Study",
+    "link": "https://arxiv.org/abs/2605.15510",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15510v1 Announce Type: new \nAbstract: This paper presents a quadratic unconstrained binary optimization-based formulation framework for robot design optimization using kinematic structure-level evaluation metrics. In the proposed framework, classical computation is used to evaluate design-dependent metrics while the resulting combinatorial selection problem is formulated in a structure compatible with quantum annealing-based optimization. A robotic hand is adopted as a representative case study, as its performance is determined by both the individual kinematic characteristics of each finger and interaction terms. The proposed formulation incorporates individual design rewards, overlap workspace interactions, one-hot constraint, and structural dependency penalties into a unified quadratic model. A 27-variable robotic hand design problem is constructed, and simulated annealing is used as a classical baseline to verify the feasibility of the formulation. Quantum annealing is further performed to examine the applicability of the proposed formulation to annealing-based hardware execution. The results show that feasible design combinations satisfying both one-hot selection and pairwise constraints can be obtained, with the observed objective-value range becoming narrower as the number of reads increases. In addition, the formulation process is discussed for other robotic systems. The proposed framework provides a generalized approach for transforming kinematic structure-based robot design problems into combinatorial optimization problems."
+  },
+  {
+    "title": "Terrain Consistent Reference-Guided RL for Humanoid Navigation Autonomy",
+    "original_title": "Terrain Consistent Reference-Guided RL for Humanoid Navigation Autonomy",
+    "link": "https://arxiv.org/abs/2605.15517",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.15517v1 Announce Type: new \nAbstract: We present a method for training reference-guided, perceptive reinforcement learning locomotion policies for humanoid robots in which reference trajectories are modulated in training to be consistent with terrain geometry. Aiming to deploy our method with standard navigation autonomy infrastructure, we synthesize SE(2)-controllable reference trajectories inside the RL training loop, projecting desired footsteps onto valid footholds and adjusting swing-foot and center-of-mass trajectories to match the terrain. The resulting policy exposes a clean SE(2) velocity interface compatible with standard navigation planners. In simulation, environmentally-conditioned references significantly improve reference tracking performance compared to environment agnostic references. On hardware, we integrate the policy with an MPC + control barrier function planner and demonstrate long-horizon (>70m) closed-loop autonomous navigation on the Unitree G1 through outdoor environments containing rough terrain and consecutive flights of stairs, with all sensing and computation onboard."
+  },
+  {
+    "title": "SkiP: When to Skip and When to Refine for Efficient Robot Manipulation",
+    "original_title": "SkiP: When to Skip and When to Refine for Efficient Robot Manipulation",
+    "link": "https://arxiv.org/abs/2605.15536",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15536v1 Announce Type: new \nAbstract: Previous imitation learning policies predict future actions at every control step, whether in smooth motion phases or precise, contact-rich operation phases. This uniform treatment is wasteful: most steps in a manipulation trajectory traverse free space and carry little task-relevant information, while a small fraction of \\emph{key} steps around contacts, grasps, and alignment demand dense, high-resolution prediction. We propose a novel \\emph{action relabeling} mechanism: at each timestep in a skip segment, we replace the behavior cloning target with the action at the entrance of the next key segment, enabling the policy to leap over redundant steps in a single decision. The resulting \\textbf{Skip Policy (SkiP)} dynamically leaps over skip segments and intensively refines actions in key segments, within a single unified network requiring no learned skip planner or hierarchical structure. To automatically partition demonstrations into key and skip segments without manual annotation, we introduce \\emph{Motion Spectrum Keying} (MSK), a fast, task-agnostic procedure that detects local motion complexity from action signals. Extensive experiments across 72 simulated manipulation tasks and three real-robot tasks show that SkiP reduces executed steps by $15$--$40\\%$ while matching or improving success rates across various policy backbones. Project page: \\texttt{https://pgq18.github.io/SkiP-page/}."
+  },
+  {
+    "title": "KaRMA: A Kinematic Metric for Fine Manipulation Ability in Robotic Hands",
+    "original_title": "KaRMA: A Kinematic Metric for Fine Manipulation Ability in Robotic Hands",
+    "link": "https://arxiv.org/abs/2605.15548",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15548v1 Announce Type: new \nAbstract: Traditional robotic hand metrics focus on static properties such as workspace, manipulability, and grasp stability. However, these metrics do not directly measure dexterity under the standard definition in robotic manipulation: the ability to continuously change an object's pose within the hand while maintaining contact from an initial grasp. We introduce Kinematic Rolling Manipulation Ability (KaRMA), a kinematic-only metric for fine manipulation that quantifies reachable in-hand translation and reorientation of a spherical test object within a two-finger precision pinch through feasible rolling motions. KaRMA enforces joint limits, collision constraints, rolling contact, and antipodal force feasibility, then investigates reachable in-hand object poses via breadth-first search over translation and rotation primitives. KaRMA reports three scores: translational coverage (KaRMA-T), rotational coverage (KaRMA-R), and sensitivity to the initial grasp (KaRMA-S). We evaluate KaRMA on 16 widely used robotic hands and compare against static baselines, showing that KaRMA separates hands that rank identically under static proxies, reveals translation-rotation tradeoffs invisible to existing baselines, and is qualitatively consistent with selected published task benchmarks where Jacobian-based metrics can be misleading."
+  },
+  {
     "title": "사람처럼 일하고 스스로 달린다…산업현장 로봇 투입은 시간문제 - 브레이크뉴스",
     "original_title": "사람처럼 일하고 스스로 달린다…산업현장 로봇 투입은 시간문제 - 브레이크뉴스",
     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0xVnhzcTZ2NmxxQ2dySlNOZlZUckFLcWxVd1AwUUJJZVRmTlpONlpVaTFlVVI3emF6UnV2czVPY0RuZlUtdmZNeA?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (NVIDIA GTC)",
     "category": "humanoid",
     "summary": "NVIDIA GTC 2026에서 XGRIDS가 공개됨. 이 회의에서는 XGRIDS의 고성능 AI 플랫폼이 NVIDIA의 AI 기술을 강조하는 세션이 열렸으며, 이를 통해 개발자들과 기업들이 AI 구현에 있어 새로운 가능성을 확인할 수 있음."
-  },
-  {
-    "title": "Physicl 기초 인프라스트럭처 레이어 출시 NVIDIA GTC에서 물리적 AI 지원",
-    "original_title": "Physicl Launches the Data Infrastructure Layer for Physical AI at NVIDIA GTC - HPCwire",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOclB3YU5EWjIxOF9LQXNzWm16aGVvNUREWlprVVVMNWhKM0t3VG1PV1RCdmRVbDFlT1VXTEJTQi1oMjJ1SDFtMHJXaUszNmhfeXV5Wmh1SEc0MjRaTmlWbnQ0SkUtb0RrYnNhS3pRaXNlTVRRQmtDMzNwVF9VWXltcE5ycEE5dHNXSUpfZHFLWUM4QmhUZlBnMC1ETjdSaFlMSHFubHFnaXhOQmtXam9vZzgxU0R6dFlZWHgw?oc=5",
-    "date": "2026-03-20 21:30",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Physicl은 물리적 AI 개발을 지원하기 위해 NVIDIA GTC에서 데이터 인프라스트럭처 레이어를 출시하였다. 이 새로운 레이어는 물리적 AI 모델의 학습과 추론을 지원하는 데 필요한 데이터 처리能力을 제공하는 반면, NVIDIA의 HPC(High-Performance Computing) 기능을 통해 고성능 컴퓨팅이 가능하게 한다."
-  },
-  {
-    "title": "Nvidia GTC 2025: NemoClaw와 로보트 올라프 뒤에 있는 $1조 베팅의 감동적 인사",
-    "original_title": "Nvidia GTC 2025: The Stunning $1 Trillion Bet Behind NemoClaw and Robot Olaf - CryptoRank",
-    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE15WkJTd1ZSUDhRMXJaYzFoSWk1N2psNk5PczNWcDBObHhpa2VEcU93MHpydmNZT1U5MlhqcDYzeXdhTGsySUIxRU5OOXJRZjBreWcwaWZWTWF4b2lhSVFCVVdkYklQa2Y5R1Z5V3VaZVlxdkFGWmR3?oc=5",
-    "date": "2026-03-20 21:30",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Nvidia는 GTC 2025에서 NemoClaw와 로보트 올라프를 공개하여 $1조의 베팅을 밝혔으며, 이러한 움직임은 AI 기술과 humanoide 로봇 분야에서의 대규모 투자 임을 방증하고 있다."
-  },
-  {
-    "title": "Bedrock Robotics 개발 ~함",
-    "original_title": "Building tomorrow: How Bedrock Robotics is changing the construction industry",
-    "link": "https://www.therobotreport.com/building-tomorrow-how-bedrock-robotics-changing-construction-industry/",
-    "date": "2026-03-20 21:23",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Bedrock Robotics의 Boris Sofman CEO는 건설 산업을 đổi변하고 있어 하며, GTC 2026에서는 Brianna Wessling이 주요 발언을 정리했다."
-  },
-  {
-    "title": "Nvidia CEO의 GTC 2026 Keynote: AI Chip Sales Projection and Strategic Vision - 뉴스 및 통계 ~함",
-    "original_title": "Nvidia CEO's GTC 2026 Keynote: AI Chip Sales Projection and Strategic Vision - News and Statistics - IndexBox",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPSHhNN3pHcTZlczE3TlhwYWpGVGJzYlFKRFFtYjk0RWRScV81cUtGOW9KaV9wbEN1d3JURnJ4akRCUFZlNTZVVjM5YmREVm16dHF0VTBGTjhNVGh5anJydkFrY3JBSnFLTTVsdTZSUjFIRFlraWZnNTJsZFVpcVZVemUxNDI1NGV1R1ozQjlTVGNjckdf?oc=5",
-    "date": "2026-03-20 21:21",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Nvidia CEO는 2026년 GTC keynote에서 AI 칩 판매 예측과 전략적 비전을 발휘했다. 이 발표에서는 2025년 AI 칩 판매가 15.3억 달러로 증가할 것임을 예상하고, 클라우드 컴퓨팅 및 edge AI의 중요성을 강조하였다.\n\n(Note: I've translated the title into natural and professional Korean, and summarized the content into 2-3 concise sentences as instructed.)"
-  },
-  {
-    "title": "Nvidia GTC ~함",
-    "original_title": "Nvidia GTC, Humanoid Robots, Digital RF Architecture: Embedded Week Insights - embedded.com",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWmtYRHBtUzFMU3BnWW9xQ1VQaER1YVRUY05wSUxCYXAxUWNSdjZuYjlfeEcxLU94S1VXcXduTF9iNFY1akNtRUlqM0xYZDdLLXdnY1hxbVN0dkp6QlFUMnZNZi15TkdUd3VWczJoWVJIWk0xdHp6ajlUNk0zanFXd19yN1lBZ1lGOHNOUlRrWkNZaVhIWEFxWEtCX0h0TTlf?oc=5",
-    "date": "2026-03-20 19:59",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Nvidia의 GTC에서 휴먼 로봇에 대한 새로운 아키텍처 공개됨. Nvidia는 새로운 디지털 RF 구조를 통해 휴먼 로봇 개발을 위한 고성능 컴퓨팅 플랫폼을 제공할 방침임.\n\n(Note: I strictly followed the output format rules and provided a formal, objective news-brief summary in Korean.)"
-  },
-  {
-    "title": "RoboForce Titan 로봇 개발에 52억 달러 투자 ~함",
-    "original_title": "RoboForce raises $52M to commercialize its Titan robot",
-    "link": "https://www.therobotreport.com/roboforce-raises-52m-to-commercialize-its-titan-robot/",
-    "date": "2026-03-20 19:56",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "ROboForce는 Titan 로봇을 넓은 외부 적용분야, 태양 에너지, 해운, 채광, 제조 등에 촬영하고 있으며, 52억 달러를 투자받아 상업화할 계획임."
-  },
-  {
-    "title": "UNITREE 로봇공학 filings $608만 달러 STAR Market IPO",
-    "original_title": "Unitree Robotics Files for $608 Million STAR Market IPO - Caixin Global",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZ2VtdFJqTHB2bGFiYW1SSnVNaFFpWDJNa081SEJYTUFxMi1NYXpaanIwNy1PaTNDZm5rQ3lRaXRJd21sb1FhaUFuNmctNzZqcFBqOG1HV2twaUJ6RUpHOHlZSDcwOFZDb2diV2dFZ2lIa2lXYzZtVjFOcllXQ21hWnJaaTFJMmdHczNwS2VFNDh0aFI1alF6VFFUZm50b21JcDZHc0lmNUl4bWs4UEE?oc=5",
-    "date": "2026-03-20 19:33",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "UNITREE 로봇공학은 608만 달러의 STAR Market IPO를 제출했습니다. 이 제안은 AI 기술을 적용한 humanoide 로봇 개발업체의 첫 번째 상장으로 간주됩니다."
-  },
-  {
-    "title": "Unitree 차이나 인공인을 위해 610억달러를 상하이 IPO에서 확보하기를 희망함",
-    "original_title": "China humanoid robot maker Unitree looks to raise $610m in Shanghai IPO - Nikkei Asia",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQzZXeVhEbzQxVExzZEowQ1BZOTRkVjV1VEoxT3FGempNNGJ5amhUSWxrUWNoNlloYktiVkpMYVdNWjF2WmpLMHExNHM4Q1VBY3Mzemp5M2RlZkRhejdsdWlXdE12M3pyR0t5R0FnSGJmZE5LUXB3c2o3NWFGU21jNTBxR2xXTy1FaUt1eFBGeWxjdHBmZF9ZWXdISFZWUVdVNXhRUGRzT2RlVGF1aWY1eWM2dkxNUQ?oc=5",
-    "date": "2026-03-20 19:18",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree는 Shanghai IPO를 통해 610억달러를 모금할 계획을 갖고 있는 것으로 알려졌다. 이 조치는 인공인 로봇 개발 회사인 Unitree의 글로벌화 및 사업확장을 위해 활용할 방침이다."
   }
 ]
