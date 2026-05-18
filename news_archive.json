@@ -216,6 +216,78 @@
     "summary": "arXiv:2605.15952v1 Announce Type: cross \nAbstract: Teleoperation promises to extend the operational envelope of automated vehicles, yet it critically depends on network latency and video quality. We report a fixed-base driving-simulator study (N=25) with a 2x2 manipulation of added latency (100/300 ms) and bitrate (500/2000 kbit/s), plus a best-case baseline (0 ms added, 9000 kbit/s). We measured effective glass-to-glass (G2G) latency per condition (baseline approx. 413 ms; effective totals approx. 500-700 ms) and verified stable framerate and encoder settings. Multimodal measures covered performance (speed, steering reversals, crashes), oculomotor behavior (blink rate, fixation duration), physiology (RR interval, heart rate, skin conductance), and subjective workload. Latency and bitrate each increased operator load and modestly affected performance. Physiological measures (heart rate, RR interval) exhibited sub-additive interactions, whereas performance and oculomotor interactions were small or non-significant. Equivalence tests showed that 300 ms with 2000 kbit/s was velocity-equivalent to best-case (SESOI +/- 2 km/h), while 300 ms with 500 kbit/s was not. We argue that latency and video quality should be treated as largely independent design levers, and that physiology-aware adaptation can anticipate overload before safety is compromised."
   },
   {
+    "title": "Learning Bilevel Policies over Symbolic World Models for Long-Horizon Planning",
+    "original_title": "Learning Bilevel Policies over Symbolic World Models for Long-Horizon Planning",
+    "link": "https://arxiv.org/abs/2605.15975",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15975v1 Announce Type: cross \nAbstract: We tackle the challenge of building embodied AI agents that can reliably solve long-horizon planning problems. Imitation learning from demonstrations has shown itself to be effective in training robots to solve a diversity of complex tasks requiring fine motor control and manipulation over low-level (LL), continuous environments. Yet, it remains a difficult endeavour to generate long-horizon plans from imitation learning alone. In contrast, high-level (HL), symbolic abstractions facilitate efficient and interpretable long-horizon planning. We propose to combine the strengths of LL imitation learning for manipulation and control, and HL symbolic abstractions for long-horizon planning. We realise this idea via \\emph{bilevel policies} of the form $(\\pi^{\\mathrm{hl}}, \\pi^{\\mathrm{ll}})$, consisting of a neural policy $\\pi^{\\mathrm{ll}}$ learned from LL demonstrations, and an HL symbolic policy $\\pi^{\\mathrm{hl}}$ that is constructed from symbolic abstractions of the LL demonstrations combined with inductive generalisation. We implement these ideas in the BISON system. Experiments on extended MetaWorld benchmarks demonstrate that BISON generalises to long horizons and problems with greater numbers of objects than those solved by VLA and end-to-end methods, and is more time and memory efficient in training and inference. Notably, when ignoring LL execution, BISON's HL policies can solve HL problems with 10,000 relevant objects in under a minute. Project page: https://dillonzchen.github.io/bison"
+  },
+  {
+    "title": "Learn Where Outcomes Diverge: Efficient VLA RL via Probabilistic Chunk Masking",
+    "original_title": "Learn Where Outcomes Diverge: Efficient VLA RL via Probabilistic Chunk Masking",
+    "link": "https://arxiv.org/abs/2605.16154",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.16154v1 Announce Type: cross \nAbstract: Reinforcement learning (RL) allows vision-language-action (VLA) policies to generalize beyond their training distribution by optimizing directly for task success, but post-training is computationally expensive. A natural response has been to speed rollout collection through faster simulators and world models. In GRPO-based VLA RL, we find that the dominant cost lies elsewhere: gradient computation accounts for approximately 78% of wall-clock time per step in our runs, while rollout collection accounts for only 21%. Gradient cost dominates because much of this computation is spent on phases that contribute little to learning. GRPO's learning signal is driven by advantage variance: only phases where successful and failed rollouts diverge produce learning signal. However, GRPO assigns the same advantage to every chunk in a rollout. As a result, actor-update compute is spent uniformly across the trajectory, including phases the policy already handles after pre-training and supervised fine-tuning. This paper presents Probabilistic Chunk Masking (PCM), a drop-in modification to GRPO that allocates gradient computation to a small, probabilistically selected subset of chunks per trajectory. PCM scores semantic phases using success-failure action variance, a rollout-derived proxy for per-phase gradient variance, and samples a fixed chunk budget with online-updated phase-level keep probabilities. We formalize per-phase gradient variance as the quantity determines where gradient computation is useful and show that success-failure action variance provides a measurable proxy for it. PCM requires no reward model or learned critic. On three LIBERO benchmarks, PCM matches the final success rate of standard GRPO while achieving 2.38 times wall-clock speedup, 4.8 times faster gradient updates, and 60% lower peak activation memory, while backpropagating through fewer than 20% of trajectory chunks."
+  },
+  {
+    "title": "TACO: General Acrobatic Flight Control via Target-and-Command-Oriented Reinforcement Learning",
+    "original_title": "TACO: General Acrobatic Flight Control via Target-and-Command-Oriented Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2503.01125",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2503.01125v4 Announce Type: replace \nAbstract: Although acrobatic flight control has been studied extensively, one key limitation of the existing methods is that they are usually restricted to specific maneuver tasks and cannot change flight pattern parameters online. In this work, we propose a target-and-command-oriented reinforcement learning (TACO) framework, which can handle different maneuver tasks in a unified way and allows online parameter changes. Additionally, we propose a spectral normalization method with input-output rescaling to enhance the policy's temporal and spatial smoothness, independence, and symmetry, thereby overcoming the sim-to-real gap. We validate the TACO approach through extensive simulation and real-world experiments, demonstrating its capability to achieve high-speed circular flights and continuous multi-flips."
+  },
+  {
+    "title": "Approximating Global Contact-Implicit MPC via Sampling and Local Complementarity",
+    "original_title": "Approximating Global Contact-Implicit MPC via Sampling and Local Complementarity",
+    "link": "https://arxiv.org/abs/2505.13350",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2505.13350v2 Announce Type: replace \nAbstract: To achieve general-purpose dexterous manipulation, robots must rapidly devise and execute contact-rich behaviors. Existing model-based controllers are incapable of globally optimizing in real-time over the exponential number of possible contact sequences. Instead, recent progress in contact-implicit control has leveraged simpler models that, while still hybrid, make local approximations. However, the use of local models inherently limits the controller to only exploit nearby interactions, potentially requiring intervention to richly explore the space of possible contacts. We present a novel approach which leverages the strengths of local complementarity-based control in combination with low-dimensional, but global, sampling of possible end-effector locations. Our key insight is to consider a contact-free stage preceding a contact-rich stage at every control loop. Our algorithm, in parallel, samples end effector locations to which the contact-free stage can move the robot, then considers the cost predicted by contact-rich MPC local to each sampled location. The result is a globally-informed, contact-implicit controller capable of real-time dexterous manipulation. We demonstrate our controller on precise, non-prehensile manipulation of non-convex objects using a Franka Panda arm. Project page: https://approximating-global-ci-mpc.github.io"
+  },
+  {
+    "title": "Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming",
+    "original_title": "Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming",
+    "link": "https://arxiv.org/abs/2507.17572",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2507.17572v3 Announce Type: replace \nAbstract: Global optimization has gained attraction over the past decades, thanks to the development of both theoretical foundations and efficient numerical routines. Among recent advances, Kernel Sum of Squares (KernelSOS) provides a powerful theoretical framework, combining the expressivity of kernel methods with the guarantees of SOS optimization. In this paper, we take KernelSOS from theory to practice and demonstrate its use on challenging control and robotics problems. We identify and address the practical considerations required to make the method work in applied settings: restarting strategies, systematic calibration of hyperparameters, methods for recovering minimizers, and the combination with fast local solvers. As a proof of concept, the application of KernelSOS to robot localization highlights its competitiveness with existing SOS approaches that rely on heuristics and handcrafted reformulations to render the problem polynomial. Even in the high-dimensional, non-parametric setting of trajectory optimization with simulators treated as black boxes, we demonstrate how KernelSOS can be combined with fast local solvers to uncover higher-quality solutions without compromising overall runtimes."
+  },
+  {
+    "title": "Whole-body motion planning and safety-critical control for aerial manipulation",
+    "original_title": "Whole-body motion planning and safety-critical control for aerial manipulation",
+    "link": "https://arxiv.org/abs/2511.02342",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.02342v3 Announce Type: replace \nAbstract: Aerial manipulation combines the maneuverability of multirotors with the dexterity of robotic arms to perform complex tasks in cluttered spaces. Yet planning safe, dynamically feasible trajectories remains difficult due to whole-body collision avoidance and the conservativeness of common geometric abstractions such as bounding boxes or ellipsoids. We present a whole-body motion planning and safety-critical control framework for aerial manipulators built on superquadrics (SQs). Using an SQ-plus-proxy representation, we model both the vehicle and obstacles with differentiable, geometry-accurate surfaces. Leveraging this representation, we introduce a maximum-clearance planner that fuses Voronoi diagrams with an equilibrium-manifold formulation to generate smooth, collision-aware trajectories. We further design a safety-critical controller that jointly enforces thrust limits and collision avoidance via high-order control barrier functions. In simulation, our approach outperforms sampling-based planners in cluttered environments, producing faster, safer, and smoother trajectories and exceeding ellipsoid-based baselines in geometric fidelity. Actual experiments on a physical aerial-manipulation platform confirm feasibility and robustness, demonstrating consistent performance across simulation and hardware settings. The video can be found at https://youtu.be/hQYKwrWf1Ak."
+  },
+  {
+    "title": "Empowering Robot Teleoperation: Exploring the Synergies Between Devices and Manipulator Controllers in a Comparative Study",
+    "original_title": "Empowering Robot Teleoperation: Exploring the Synergies Between Devices and Manipulator Controllers in a Comparative Study",
+    "link": "https://arxiv.org/abs/2511.07720",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.07720v2 Announce Type: replace \nAbstract: Robot learning empowers the robot system with human brain-like intelligence to autonomously acquire and adapt skills through experience, enhancing flexibility and adaptability in various environments. Aimed at achieving a similar level of capability in large language models (LLMs) for embodied intelligence, data quality plays a crucial role in training a foundational model with diverse robot skills. In this study, we investigate the collection of data for manipulation tasks using teleoperation devices. Different devices yield varying effects when paired with corresponding controller strategies, including position-based inverse kinematic (IK) control, torque-based inverse dynamic (ID) control, and optimization-based compliant control. Analysis of experimental results suggests the importance of the relationship between teleoperation devices and controllers for real tasks."
+  },
+  {
+    "title": "CLARE: Continual Learning for Vision-Language-Action Models via Autonomous Adapter Routing and Expansion",
+    "original_title": "CLARE: Continual Learning for Vision-Language-Action Models via Autonomous Adapter Routing and Expansion",
+    "link": "https://arxiv.org/abs/2601.09512",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2601.09512v2 Announce Type: replace \nAbstract: To teach robots complex manipulation tasks, a common approach is to fine-tune a pre-trained vision-language-action model (VLA) on task-specific data. However, since this recipe updates existing representations, it is unsuitable for long-term operation in the real world, where robots must continually adapt to new tasks and environments while retaining the knowledge they have already acquired. Existing continual learning methods for robotics commonly require storing previous data (exemplars), struggle with long task sequences, or rely on task identifiers for deployment. To address these limitations, we propose CLARE, a general, parameter-efficient framework for exemplar-free continual learning with VLAs. CLARE introduces lightweight modular adapters into selected VLA modules and autonomously expands the model only where necessary when learning a new task, guided by layer-wise feature similarity. During deployment, an autoencoder-based routing mechanism dynamically activates the most relevant adapters without requiring task labels. Through extensive experiments on the LIBERO benchmark and five real-world tasks, we show that CLARE achieves high performance on new tasks without catastrophic forgetting of earlier tasks, significantly outperforming even exemplar-based methods. Code, data, and videos are available at our website: https://tum-lsy.github.io/clare."
+  },
+  {
     "title": "사람처럼 일하고 스스로 달린다…산업현장 로봇 투입은 시간문제 - 브레이크뉴스",
     "original_title": "사람처럼 일하고 스스로 달린다…산업현장 로봇 투입은 시간문제 - 브레이크뉴스",
     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0xVnhzcTZ2NmxxQ2dySlNOZlZUckFLcWxVd1AwUUJJZVRmTlpONlpVaTFlVVI3emF6UnV2czVPY0RuZlUtdmZNeA?oc=5",
@@ -1465,6 +1537,15 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "The closer robots get to people, the more vital it is for them to see, hear and react without missing a beat.\nThe post How humanoids learn to read the room appeared first on The Robot Report."
+  },
+  {
+    "title": "Unitree will sell you a massive ‘transformable mecha’ for $650,000 - The Verge",
+    "original_title": "Unitree will sell you a massive ‘transformable mecha’ for $650,000 - The Verge",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9pTjItWnI2clpnZUhIYmR5cDZsUG9SVUVlT0dVN3pGZUhnOFlIWXE5NzBFZS1ZYW9kdVdldk1yRW9qeTYxN19Va2syR1ZoaHpvME5UaGN4RWxCcTJ0OEJWRmFxdldFRGtqUzJPMkxXV1RaZzl1WGpqMGlLWQ?oc=5",
+    "date": "2026-05-13 12:11",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree will sell you a massive ‘transformable mecha’ for $650,000  The Verge"
   },
   {
     "title": "The Convergence in Perception Systems from Cars to Robots",
@@ -17917,86 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "로보DK의 설립자와 CEO는 고혼적, 저량적 응용에서 offline 프로그래밍의 속도를 설명하였다. offline 프로그래밍은 2시간 이내에 프로토타입을 완성할 수 있어 실제로는 1/3로 빠르게 배포가 가능해졌다."
-  },
-  {
-    "title": "로봇, AI, 그리고 정의되지 않은 미래 - 프레임이 이를 추월하는 것 ~함",
-    "original_title": "Op-Ed: Robots, AI, and an undefined future – A frame of reference that can’t keep up with itself - Digital Journal",
-    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWnI2eWhQNlliVEdwTUxkV3Y3SWMtdlVKRE5Oci1maU00MzNfTzh2TlpTZTRFREhycF9xdWVKMEJGQzVFVC1HNmVQWG5saml4dC1odHUzeFVURjJlcjFEbmVZRkNtamtmV3lqUjlqTGVtbEJ5SUhxNUd3OU14aUFpY1c1ZDBjNWFEVkNmbFRqZTVOVGxVMS1TOEQ1WTJ6Zzlnc25aaTRGS2RxVWRvMXVvNTVHNWp1U3ZiOUI4Q0JKc053Zk8zcVRTaXpKQ0VFQ1dPaGRCRA?oc=5",
-    "date": "2026-03-22 06:24",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "robots, AI를 포함한 未定義된未来에 대한 프레임의 제약은 빠르게 변화하는 기술 환경을 따라잡을 수 없는 것을 강조한다. 이러한 프레임이 과연 우리가 있는 미래를 예측할 수 있느냐는 질문을 던진다."
-  },
-  {
-    "title": "로봇, AI, 및 정의되지 않은 미래 - 자체를 따라잡을 수 없는 프레임",
-    "original_title": "Op-Ed: Robots, AI, and an undefined future – A frame of reference that can’t keep up with itself - Digital Journal",
-    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPbnZyaE81UnBSZVZwR3hIUWppWjlPakNpVVBZeGhBckhKZUZwSzZWcUVSbTgxMXJhYTBwOG9qVzd0OGRTWXBXTWVzMWZPeGhzX084RzJEM3ZTRmxnZklrZE9KZEg5SmEwcDZmVEtZSTJ3MFJmNXlaVzBOVGpLUld0a1JrSGZWdVo4cE5TSEl5Y3ZIdmNZNEs1TG8wTHZIMXV5TjI5Z2lldWVTenBleC12NExMcnpDQVRjWlpMcDB1RHl5bkNzZTlFVXRVMXlnNHB2eDQxRjlHeWdUdw?oc=5",
-    "date": "2026-03-22 06:24",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "로봇과 AI가 미래에 어떤 영향을 미칠지 예측하기 어려운 이유는 이러한 기술이 너무 빠르게 발전하고 있는 데 있다. 이에 로봇과 AI에 대한 새로운 프레임이 필요해졌으며, 이를 통해 우리는未來의 가능성을 탐색할 수 있을 것이다."
-  },
-  {
-    "title": "Unitree 로봇츠 IPO ~회로봇시장 전환점을 나타내는 것임",
-    "original_title": "Unitree Robotics IPO Signals a Turning Point for the Humanoid Robot Market - kmjournal.net",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE42U2dRQjA5QS1PMFUxTXNaVWV0T2Q3eklfZkNiZ2pNVVdKQ1N1ZWd5UEVsSHdjZ0dGSmRJLXR6T3l4TUtuODFsUWJ2dGxOZ1I0MUstR0NRcDA4a1RFVUNadUpyamRSWndIOXc?oc=5",
-    "date": "2026-03-22 02:54",
-    "source": "Google News (China Robotics - KR)",
-    "category": "humanoid",
-    "summary": "휴먼로보트 시장을 다시 시작하는 Unitree 로봇츠의 IPO가 열리게 됨. 이에 따라 2022년 로보틱스 인플레이션 추세를 이어갈 것으로 기대됨."
-  },
-  {
-    "title": "-China humanoide robot이 사람을 초과할 수 있다는 Says Unitree 창업자-",
-    "original_title": "China humanoid robots could outrun humans, Unitree founder says - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNc3Y3OExrX0JENDAyQkRWVkN2QnNJajlRbEwwRVRvdERUejRLc0d3VC1XSlNRRHpBUWxzZFJwcF9fT2Jxa0xHR2hGQS01Sm13TDltV09idktmYU9iU0RLMGYwM0JfQ0M4eUZ3ckgwbFk1LU5JY0xPVkd6X3QxY0ktNW0zUU95MDdnOW04Tm1sSkYxaWZKMkZjZHl4ZWN1bjJ1Ml9sRkZFY1h4b3FyN21GZ0ZLNGJ1WlBHa3Fj?oc=5",
-    "date": "2026-03-22 01:52",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 humanoide robot이 사람보다 더 빠를 수 있다고 Unitree의 창업자가 말했다. Unitree는 AI-powered humanoid robot을 개발하고 있는 회사로, 최근에 3억 5천만 달러의 Series C轮 자금을 확보하여 성장 방안을 강화하고 있다.\n\n(Note: I translated the title and summarized the content according to the instructions. The tone is formal and objective, ending in nouns as instructed.)"
-  },
-  {
-    "title": "CHINA'S HUMANOID ROBOT",
-    "original_title": "China’s humanoid robot rallies tennis shots with human - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcVB3aWJkRGhYTHMxcTh2RmVXQkt4X3J0VkFtSmtKQ3lENTBpcmtFc08wY01BckFVc0hJTDhKTE81Y0VCTGZMeUR6cU1MSzlwdjUzV3g5SDZFbmpvY29SbWd0cVo0eGZ5T0R2dHA4UGROQ19ZbmJobVQxbS1YU2RNbGhrWHl5aVdybEJPeUJ1MXpxSWowNUJCQmRTc3Z5TUp0UDFsR05GTVUxaFBpcUgtWA?oc=5",
-    "date": "2026-03-22 01:52",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 humanoiod 로봇이 인간과 함께 테니스 스매시를 치는 방식임, 90%의 정확도에 도달함. 이 로봇은 10여년간 개발을 거쳤으며, 이제는 실전에서 사용할 수 있음.\n\n(Note: I followed the instructions strictly and output the formatted string as requested.)"
-  },
-  {
-    "title": "Nvidia CEO Jensen Huang의 '$50조 industry' 발언으로 N과 디즈니가 'Olaf'를 GTC 2026에서 실제로 부상함",
-    "original_title": "Jensen Huang calls robotics a '$50 trillion industry' as Nvidia and Disney bring 'Frozen' character 'Olaf' to life at GTC 2026 - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQbDBtVUo0cTJaQkNKV1BDbDhWMXhfaUJOUGF2RVg2RUx6MjRrM3hHU2FuYmJZRnBTWGtXbVJWOXFxX2huQ0VaOVBVV3I5OS1KX2VUdlZSLW9MU2VNMmpRSDVOYTFxSTd5RmtVTEcwYm1zd2FNc19ET0xqQmlVRTJURzVXc3NkNlZ3VnNRNnJ6b1VyNHVTenVDWnEzYVlFZER4Z1lJMl95SHZHWnN5NEUxbkVDTDVnb0ZfYkFmbnp0X3l2V3kzUUFnVXpUNlYzclhKVUlnY2V5eUZvT1BQbVdIb2I1VUpNaFlsY3plRERLcjNxeUFrS25VODVmR3M?oc=5",
-    "date": "2026-03-21 22:39",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Nvidia와 Disney가 GTC 2026에서 'Frozen' 캐릭터 'Olaf'를 실제로 부상해 '$50조' 로보틱스 산업을 주장하는 Nvidia CEO Jensen Huang의 발언이 있었습니다."
-  },
-  {
-    "title": "Unitree의 G1 휴인공 로봇",
-    "original_title": "Video: Unitree’s G1 humanoid robots perform synchronized kung fu at Chinese temple - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxNVDJzLVo5dlFrQmJhSE1hNGQyN19vbUtYRmV2MnFqREhfNGZSbzVEUWZuVU5qLWpWR1FLMEdrVW9sNzRtSjhZNHpvT0N6c05uXzIzRzh2bUpqY0o1UEY4cmRpMzFrUlllN1ExRGdyRHVFQmlPcjhOeElVT18yVURJZ0hrSW1tNFdQZkYxRGlsWVp3MXlyUnA4OUZDM3BKcVQteVlNbjMxQlVjbjdtTzU2cHVYSS1ENXMtaG5QU3Q1dkdiTnQ4ZzJKUTE3cmVzd2d1MlBLdU5lOWROLW5JUVY2T2VYVmdEWG5ZSC1HTmtSRldmblRKLXliblVrajl2b0lJTEZ0Tm1FXzBaTGNkM2ZnSnBoQ1M2dEhEcVpKTHRRR2VnZHRBcVRLYjBfdXQyY3ZfOWF4V21SNzhUX1BBaGNZLVlYX0JUOTVhSEFULS15Yy1GamJ3U2R2RHhwUUlxOVZkMmc?oc=5",
-    "date": "2026-03-21 22:08",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "(Unitree의 G1 휴인공 로봇이 중국 성당에서 동기화된 구부를 수행했으며, 이러한 예술적 표현은 로봇의 움직임을 개선하고 인간-로봇 상호작용을 강조하는 데 사용할 수 있습니다.)"
-  },
-  {
-    "title": "NVIDIA GTC 2026 로보틱스 하이라이트 10선",
-    "original_title": "10 Robotics Highlights From Nvidia GTC 2026 - AI Insider",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORXJ1UGdjNGl5TGNNX2dIVkhSMzllYmVNbmxsZDc2SFJHYmVSZktjRDhIQ2hjbWpiV0sxcjlDeGMtVXhFN1VtdlVBd0NJbUtIVUxxMC1GaU4wamIxZ29RaWpWVm1zN2hHbE8yempGcHFOTlFFMzAweFVKZ0gtcTItNFRxRkd0Sm5M?oc=5",
-    "date": "2026-03-21 17:14",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA GTC 2026에서 발표된 10가지 주요 로보틱스 특징은 AI 부문에서 새로운 개발 트렌드를 제시하고 있다. 이 중 하나는 DGX-ABC 서버의 고성능 로보틱스 액세서리 지원임. 또한, NVIDIA의 클라우드 서비스인 NVIDIA CloudXR은 가상 현실(VR)과 증강현실(AR) 콘텐츠를 제공할 예정이다."
-  },
-  {
-    "title": "Simple motor network이 인간근육 동작을 모방하는 구조체로 발달됨",
-    "original_title": "Simple motor networks mimic human muscle behavior under increasing load",
-    "link": "https://techxplore.com/news/2026-03-simple-motor-networks-mimic-human.html",
-    "date": "2026-03-21 17:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "영국 브리스톨 대학교에서 주도한 연구결과, published in the Journal of the Royal Society Interface에 발표된 결과는 로보틱스에서 새로운 가능성을 열 수 있을 것으로 예상됨"
   }
 ]
