@@ -72,6 +72,78 @@
     "summary": "arXiv:2605.15548v1 Announce Type: new \nAbstract: Traditional robotic hand metrics focus on static properties such as workspace, manipulability, and grasp stability. However, these metrics do not directly measure dexterity under the standard definition in robotic manipulation: the ability to continuously change an object's pose within the hand while maintaining contact from an initial grasp. We introduce Kinematic Rolling Manipulation Ability (KaRMA), a kinematic-only metric for fine manipulation that quantifies reachable in-hand translation and reorientation of a spherical test object within a two-finger precision pinch through feasible rolling motions. KaRMA enforces joint limits, collision constraints, rolling contact, and antipodal force feasibility, then investigates reachable in-hand object poses via breadth-first search over translation and rotation primitives. KaRMA reports three scores: translational coverage (KaRMA-T), rotational coverage (KaRMA-R), and sensitivity to the initial grasp (KaRMA-S). We evaluate KaRMA on 16 widely used robotic hands and compare against static baselines, showing that KaRMA separates hands that rank identically under static proxies, reveals translation-rotation tradeoffs invisible to existing baselines, and is qualitatively consistent with selected published task benchmarks where Jacobian-based metrics can be misleading."
   },
   {
+    "title": "MyoChallenge 2025: A New Benchmark for Human Athletic Intelligence",
+    "original_title": "MyoChallenge 2025: A New Benchmark for Human Athletic Intelligence",
+    "link": "https://arxiv.org/abs/2605.15650",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15650v1 Announce Type: new \nAbstract: Athletic performance represents the pinnacle of human motor intelligence, demanding rapid choices, precise control, agility, and coordinated physical execution. Replicating this seamless combination of capabilities remains elusive in current artificial intelligence and robotic systems. Concurrently, understanding the biological mastery of these movements is hindered because complex muscle coordination is rarely measured in vivo due to the limitations of physical equipment. To bridge this fundamental gap in understanding, MyoChallenge at NeurIPS 2025 established a pioneering benchmark for motor control intelligence in sports, leveraging high-fidelity musculoskeletal models within physics simulation combined with machine learning-driven algorithms. The competition introduces two distinct tracks emphasizing either upper or lower limbs control: a table tennis rally task utilizing a biomechanic upper limb composed of an arm with a hand and a trunk; and a soccer penalty kick using a biomechanic model of legs and a trunk. Marking the fourth iteration of the MyoChallenge series, this event attracted almost 70 teams and over 560 submissions globally, uniting a diverse community ranging from physicians and neuroscientists to machine learning experts. The competition facilitated the development of several state-of-the-art control algorithms for a musculoskeletal system capable of sports agility, leveraging techniques such as physics-based motion planners, on-policy behaviour cloning, hierarchical planning, and muscle synergies. By integrating standardized tasks and physiologically realistic models into the open-source framework of MyoSuite, MyoChallenge'25 serves as a reproducible and reusable testbed to accelerate interdisciplinary research across machine learning, biomechanics, sports science, and neuroscience. Project page: https://www.myosuite.org//myochallenge/myochallenge-2025."
+  },
+  {
+    "title": "Feedback World Model Enables Precise Guidance of Diffusion Policy",
+    "original_title": "Feedback World Model Enables Precise Guidance of Diffusion Policy",
+    "link": "https://arxiv.org/abs/2605.15705",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15705v1 Announce Type: new \nAbstract: World models aim to improve robotic decision making by predicting the consequences of actions. However, in practice, their predictions often become unreliable once the robot encounters states outside the training distribution, limiting their effectiveness at deployment. We observe that execution itself provides a natural but underutilized signal: after each action, the robot directly observes the true next state, revealing the mismatch between predicted and actual outcomes. Building on this insight, we propose feedback world model, a new paradigm that closes the loop between prediction and observation at inference time. Instead of treating the world model as a static open-loop predictor, our method maintains a lightweight feedback state that is updated online to iteratively correct future predictions, compensating for model errors using real-time observations without additional training data or parameter updates. We show that this process can be interpreted as a latent-space observer and admits convergence guarantees under mild conditions. We further introduce action-aware guidance to better translate corrected predictions into control by emphasizing action-controllable components while suppressing irrelevant variations. Experiments on LIBERO-Plus, Robomimic, and real-world manipulation tasks demonstrate that our method substantially improves both prediction accuracy and policy performance under distribution shift. In particular, it reduces world model prediction error by up to 76.4% and improves out-of-distribution (OOD) success rate by 30%. These results show that incorporating real-time feedback at inference time provides a simple yet powerful alternative to static world modeling."
+  },
+  {
+    "title": "Learning Dynamic Pick-and-Place for a Legged Manipulator",
+    "original_title": "Learning Dynamic Pick-and-Place for a Legged Manipulator",
+    "link": "https://arxiv.org/abs/2605.15713",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15713v1 Announce Type: new \nAbstract: Legged manipulators extend robotic capabilities beyond static manipulation by integrating agile locomotion with versatile arm control. However, achieving precise manipulation while maintaining coordinated locomotion remains a major challenge. This work presents a hierarchical reinforcement learning framework for dynamic pick-and-place tasks using a quadruped equipped with a 6-DOF robotic arm. The framework incorporates an explicit mass estimation module enabling adaptive whole-body control for objects with varying weights. In simulation, the system achieves an 86.05% success rate with payloads up to 2.3 kg. The approach is further validated through real-world experiments across six representative scenarios with controlled variations in object physical properties (size and mass) and task heights. Specifically, within a wide vertical workspace ranging from ground level to 1.1~m-high tabletops, the system demonstrates an average success rate of 73.3% for payloads up to 1.3 kg, with an average execution time of 4.06 s. Unlike prior works that handle lightweight objects and execute pick-and-place motions with slow, piecewise motions, the proposed framework exploits concurrent locomotion and manipulation for dynamic, continuous execution. These results demonstrate the potential of quadrupedal mobile manipulators for adaptive, whole-body pick-and-place with heavier payloads and extended workspaces."
+  },
+  {
+    "title": "Hierarchical and Holistic Open-Vocabulary Functional 3D Scene Graphs for Indoor Spaces",
+    "original_title": "Hierarchical and Holistic Open-Vocabulary Functional 3D Scene Graphs for Indoor Spaces",
+    "link": "https://arxiv.org/abs/2605.15753",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15753v1 Announce Type: new \nAbstract: Functional 3D scene graphs offer a versatile and flexible representation for 3D scene understanding and robotic manipulation, defined by object nodes, interactive elements, and functional relationship edges. However, their potential remains underexplored due to the limited coverage of existing benchmarks and the overly straightforward design of previous pipelines, which primarily focus on large-scale furniture but lack of hierarchical structures. Therefore, in this work, we extend the benchmark coverage by introducing dense tabletop objects and explicit multi-level functional relationships. This expansion introduces critical challenges involving small-scale, dense, and similar instances, with lack of visual anchoring in relational reasoning, instance confusion during cross-frame fusion, and attribution uncertainty under dynamic viewpoints. To address these issues, we propose an open-vocabulary pipeline based on 2D visual grounding and 3D graph optimization. Specifically, we anchor fine-grained functional edges from 2D visual evidence, and associate nodes across frames in 3D using multiple cues. Furthermore, edge association is formulated as temporal graph optimization, integrating evidence accumulation, entropy regularization, and temporal smoothing to robustly determine the functional connections of each node. Finally, global hierarchy shaping is performed to recover the hierarchical graph structure. Extensive experiments demonstrate that the proposed method can reliably infer functional 3D scene graphs in challenging real-world scenes, thereby further unlocking their potential for practical applications."
+  },
+  {
+    "title": "A Topology-Aware Spatiotemporal Handover Framework for Continuous Multi-UAV Tracking",
+    "original_title": "A Topology-Aware Spatiotemporal Handover Framework for Continuous Multi-UAV Tracking",
+    "link": "https://arxiv.org/abs/2605.15779",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15779v1 Announce Type: new \nAbstract: The integration of Unmanned Aerial Vehicles(UAVs) into Intelligent Transportation Systems (ITS) offers synoptic visibility for traffic monitoring, yet scalable deployment is hindered by trajectory fragmentation, where vehicle identity persistence is lost across multi-UAV Fields of View (FOV). While state-of-the-art frameworks excel in optimizing local trajectory extraction and stability for single-drone imagery, they often function as isolated data silos that generate disjointed trajectories, thereby precluding network-level analysis such as Origin-Destination estimation. This paper presents a real-time Multi-Camera Multi-Vehicle Tracking (MCMT) system designed to handle global identity persistence. Addressing the visual ambiguity and computational cost of appearance-based Re-Identification (Re-ID) in nadir views, we introduce a lightweight Topology-Based Spatiotemporal Handover mechanism. We implement a high-throughput parallel pipeline leveraging YOLO11 and ByteTrack to process concurrent 4K streams. Our core contribution is a deterministic queue-based matching algorithm that utilizes geometric overlaps and virtual lane discretization to predictively manage identity handover via FIFO queues. Experimental results on complex urban environments, including intersections and merging traffic, demonstrate a Handover Success Rate (HOSR) of 99.8% in continuous traffic flows, significantly outperforming Re-ID baselines (74.1%) while validating edge deployment feasibility. The source code is available at https://github.com/JYe9/multi-camera-multi-vehicle-tracking-system."
+  },
+  {
+    "title": "Reactive Robot-Centric Safety for Autonomous Navigation in Constrained and Dynamic Environments",
+    "original_title": "Reactive Robot-Centric Safety for Autonomous Navigation in Constrained and Dynamic Environments",
+    "link": "https://arxiv.org/abs/2605.15782",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15782v1 Announce Type: new \nAbstract: In this work, we address the problem of ensuring real-time safety in autonomous robot navigation, in spatially constrained dynamic environments, by utilizing only onboard sensors. We present a real-time control architecture that integrates a 3D LIDAR perception-based composite control barrier function(CBF)-based safety filter directly into the autonomy pipeline. The proposed perception-driven framework enforces collision avoidance constraints dynamically from onboard point cloud data, thus allowing a large number of constraints to be handled at the control frequency, while remaining minimally invasive to nominal task execution. The safety region is defined as an ellipsoid in the body-frame, consistent with the geometry of the platform, which induces time-varying constraints in the world frame as the robot rotates; this effect is handled through a dedicated formulation of time-varying (CBF) for each LIDAR point. We validate the system through multiple field experiments in underground environments by utilizing a quadruped platform performing a visual inspection task, demonstrating reliable operation in the presence of dynamic obstacles, unsafe high-level references, abrupt localization anomalies, and while traversing through narrow corridors."
+  },
+  {
+    "title": "GAP: Geometric Anchor Pre-training for Data-Efficient Visuomotor Learning of Manipulation Tasks",
+    "original_title": "GAP: Geometric Anchor Pre-training for Data-Efficient Visuomotor Learning of Manipulation Tasks",
+    "link": "https://arxiv.org/abs/2605.15836",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15836v1 Announce Type: new \nAbstract: Learning visuomotor policies from scarce expert demonstrations remains a core challenge in robotic manipulation. A primary hurdle lies in distilling high-dimensional RGB representations into control-relevant geometry without overfitting. While using frozen pre-trained Vision Foundation Models (VFMs) improves data efficiency, it also shifts most task adaptation onto a small spatial pooling module, which can latch onto task-irrelevant shortcuts and lose geometric grounding when finetuned with few data samples. More broadly, pre-trained visual representations used for policy learning have been observed to struggle under even minor scene perturbations, highlighting the need for robustness-oriented inductive biases. We propose Geometric Anchor Pre-training (GAP), a simple, action-free warm-up stage that regularizes the spatial adapter before downstream imitation learning. GAP pre-trains the pooling layer on a lightweight simulated proxy task where object masks are available at no cost, encouraging the adapter to produce keypoints that lie on the object, cover its spatial extent, and remain sharp and repeatable over time. This yields stable geometric anchors that provide a reliable coordinate interface for few-shot policy learning, while keeping the VFM frozen. We evaluate GAP on RoboMimic and ManiSkill under severe data scarcity (15-50 demonstrations) and domain shift. A simple adapter regularized with GAP consistently outperforms stronger attention-based poolers and end-to-end fine-tuning, achieving 62% success on RoboMimic Can with 15 demonstrations (+16% over AFA), 63% on the long-horizon high-precision Tool Hang task with 50 demonstrations, and 61% on ManiSkill StackCube with 30 demonstrations (+11% over full fine-tuning). The proxy stage is lightweight and fully decoupled from downstream tasks, making it practical to reuse across environments and manipulation skills."
+  },
+  {
+    "title": "Designing for Robot Wranglers: A Synthesis of Literature and Practice",
+    "original_title": "Designing for Robot Wranglers: A Synthesis of Literature and Practice",
+    "link": "https://arxiv.org/abs/2605.15892",
+    "date": "2026-05-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.15892v1 Announce Type: new \nAbstract: Robots are increasingly present in human spaces, such as for conducting deliveries in hospitals, interacting with visitors at museums, and stocking items in warehouses. To ensure the seamless integration of robots into these spaces, a new role in human-robot interaction is emerging - the robot wrangler, namely an individual who is responsible for setting up, overseeing, and troubleshooting the robot. To understand the needs of this stakeholder, we conducted a scoping review that uncovered a typology of robot wrangling across the research literature, and discovered that wrangling is an umbrella term that collapses a highly complex and heterogeneous space of activities, often rendering this labor difficult to characterize and support. To further clarify and understand robot wrangling, we then reflected on our own firsthand and imagined experiences as robot wranglers within our own respective domains. Guided by the scoping review and our reflections, we devise a series of design implications for supporting wranglers directly as individuals and as members of a wider service ecology."
+  },
+  {
     "title": "사람처럼 일하고 스스로 달린다…산업현장 로봇 투입은 시간문제 - 브레이크뉴스",
     "original_title": "사람처럼 일하고 스스로 달린다…산업현장 로봇 투입은 시간문제 - 브레이크뉴스",
     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0xVnhzcTZ2NmxxQ2dySlNOZlZUckFLcWxVd1AwUUJJZVRmTlpONlpVaTFlVVI3emF6UnV2czVPY0RuZlUtdmZNeA?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "유럽은 로보틱스, AI, 공간 계산에 있어 전문성을 보유하고 있어 심층 기술 leadership를 이끌 수 있다고 FOV Ventures 파트너가 주장합니다. EU는 물리적 AI 개발에서 새로운 전망을 열어둘 가능성이 있습니다."
-  },
-  {
-    "title": "Nvidia의 허응 중국 '강력' 로보틱스에 조명하며 물리적 AI에 투자함",
-    "original_title": "Nvidia’s Huang calls China ‘formidable’ in robotics as firm bets on physical AI - South China Morning Post",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNV19kMThySEQ5OV9GcklxbjlLZ2RETEQwOEh0UV9JVnBncDNQSUlrS0VkQmMwQ2hmT25udl9FYVM0Y0l2THJrM3dUQXJMR2NFLW5WVTdORjNwS1k4T0Y5V1ZXX3NWNGZRdVo2dVhLTWlxTUptaThGbmtxUkpuLUNKZ3UxRGsxaGhNZW5oV1YtWGp6S1FCQjRrRmo2R1FHQXhHQk5Wb2NHWTNadUhHSl9NUHFobFRHcVdHWGU5M1ZR0gG-AUFVX3lxTE5zYjRnbjdJdm40QVBJNUxPVlhaWTdiYzlDLWJNS0RUUlhyQlVTOU9kY3JvdWpfZGRVN1Nmd2ZOd3ZTNXdIMGRtdkN5aVR4VEl1VjJKSnMyTEFXRWJzZzY5NnRDcmVFaGR1LTBiNTNDckJzMUlyVUZOdVJ1Z0lkVnRrVkNyLVMzM1lkLXdETTBYcTlLWUdNcFIwNnFVZTlCSTdQTW1kdnhObndHdFV1ZlNMS3U3TVllc29ETE43bVE?oc=5",
-    "date": "2026-03-21 10:18",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국이 로보틱스에서 강력한 존재임을 인정하면서 Nvidia는 물리적 AI에 큰 기대를 걸고 있는 것으로 보인다.허응 회장은 중국의 로보틱스 성장세를 강조하고 물리적 AI 개발에 집중하겠다고 밝혔다."
-  },
-  {
-    "title": "UNITREE",
-    "original_title": "Half of the Investment Circle Owes Gratitude to Unitree - 36 Kr",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE10NDRMMHNsOW93WjhNYm1lbE1YZndlcG9FLW00ZXUxLTQ5c04zZE5XbDhzVkdfU25ieVIwZ2ZOcEFfSHlpOHQ0V0Q5S0RMYjJPRnpv?oc=5",
-    "date": "2026-03-21 09:20",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "운트리, 투자원 50%에 감사함 ~임. UNITRUE의 인공지능 로봇 기술이 투자원 생태계 발전을 이끌어냈다."
-  },
-  {
-    "title": "NVIDIA GTC 2026 XGRIDS ~함",
-    "original_title": "XGRIDS at NVIDIA GTC 2026: Bridging Real-World Spaces and Physical AI Through Real2Sim - PR Newswire Asia",
-    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPcXlIcjM3S0wtQXFzS0ViVi1PUnRscExrb2VLbEZVWEJiS1Q0UlV3T01JRzh2UWJVcVhxNWhpUExvSF92SjVReDItV1FCbFByMGlfWTZMVmJjbGZtR19ZcExSSEpoVFpqOGM1dEU5QnFFMUdRY3NWdU9fdFAyLVV6bVdGb2xoMzFDN00wNUl2QkdmLW9VbzUzR1dfMnFtTnZMUElmQld4ZW1rRk42dkFLc3hUWU1uMkotMVdUZGFYX0d6c3BhVVU4V2tCcC11Q0pSOEI4X3BGMGw?oc=5",
-    "date": "2026-03-21 08:29",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "XGRIDS는 NVIDIA GTC 2026에서 'Physical AI Through Real2Sim'을 통해 실제 세계 공간과 물리적 AI를 잇는 새로운 기술을 공개하였습니다. 이 신기술은 실제 세계와 가상 세계 간의 브릿지를 형성하여 새로운 액션을 가능하게 합니다. XGRIDS는 NVIDIA의 GTC 2026에서만 열린 특별 세션에 참여하여 Physical AI의 발전을 이끌었습니다."
-  },
-  {
-    "title": "Sharpa 로보틱스가 이룬 바이만이 AI contro ~함",
-    "original_title": "A Humanoid That Can Peel an Apple? Sharpa Robotics Unveils Breakthrough in Bimanual AI Control - kmjournal.net",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Oc09SUk9oQWNoREVSYkkyRk9Jb1dRVlJiTk1Pclh4TWlteFdGNlYzRVlHOW1CMGVwZnN2NVN6YnlnM1g2eU9taFphd2FVWUV3N1JDcjQzamxKR3NBblkxUVFEcVhjTTFLOVE?oc=5",
-    "date": "2026-03-21 06:07",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "Sharpa 로보틱스가 lately unveiled a breakthrough in bimanual AI control, enabling humanoids to perform complex tasks like peeling an apple. The company's new technology utilizes advanced algorithms and sensors to simulate human-like movements, paving the way for more versatile robot applications."
-  },
-  {
-    "title": "Unitree",
-    "original_title": "Unitree Moves Step Closer to Becoming First Chinese Mainland-Listed Humanoid Robot Stock - citynewsservice.cn",
-    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdFpPWkhGZ3lWT2xfaE5nUTlBbVNlWnZWazllaXlCRThiSGVnRm93akhaNHhIZ2c4dzZHZFFmM2RGOVBEeVF0VENtZElWSnpocm1haTljRHlyZldDR0tOaldaZ2tIUHp3U09PcTRGVlN4WVM3ZVNNQkRJcjRKLTFaUW9nWGJJSWdOVGRNTkNUODZPQVNqUm82aXRKaUZyWkZ2MVNpeEJEN3YzN1lUMXoxRzlXUllfNnAxLTZtbS1NLXlmTWh1eE5WTWxEeTRpQnRQYkpHek9iaTY3ZjVxSzl3cUZrYlVmejZwMk4taDBn?oc=5",
-    "date": "2026-03-21 02:44",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "中国주식시장에 상장할 인공인간 로봇 첫 번째 단계/close하게 - Unitree, 중국 주식시장에 상장할 인공인간 로봇을 위한 준비를 갖추고 있다. 이로 인해 중국 주식시장에서 상장되는 첫 번째 인공인간 로봇이 될 가능성이 높아졌다."
-  },
-  {
-    "title": "XGRIDS at NVIDIA GTC 2026: 브릿지링 리얼월드 스페이스와 물리적 AI를 통해 Real2Sim - 회의함",
-    "original_title": "XGRIDS at NVIDIA GTC 2026: Bridging Real-World Spaces and Physical AI Through Real2Sim - Thailand Business News",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOVm9wQkNyWmVxclF2Rk4yaDBjbGJMeXBTaW5iU3RteFZnejRmckZkOHZwRk95MDhwYVo3bkJ6dXkwRlhreWloOHRZSXdUNzhyeDZjRV9Pd1JMRUtzSFlkTkNFc0NVZ1dJblFETGpmRS1xVExhZFBleDNkSFpTa2szXzdhUTdoMXhFcjg0d1YwV0lEUXM3WFEydF9UZjFLdmlSb0dzazljcDhyZS02SjZ0TmxKMnJZTWhEXzd3eWhENEFpV05SVVpQY004eEQ?oc=5",
-    "date": "2026-03-21 00:04",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA GTC 2026에서 XGRIDS는 실제 세계 공간과 물리적 AI를 연결하는 Real2Sim을 선보였다. 이 기술은 실제 세계 공간에서 생성된 데이터를 시뮬레이션 환경으로 전환하여 물리적 AI 개발을 용이하게 하는 데 사용된다. XGRIDS의 Real2Sim은 실제 세계 공간에서 데이터를 수집하고 이를 시뮬레이션 환경에 적용하여 물리적 AI 모델을 개발하는 데 사용되는 기술임을 나타낸다."
-  },
-  {
-    "title": "XGRIDS at NVIDIA GTC 2026",
-    "original_title": "[PRNewswire] XGRIDS at NVIDIA GTC 2026 - Yonhap News Agency",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmbnBPVDMtOWtSVGxMLW9sdUo2M3p3NmlUc3hsZDdlcXd1NGFjNXNLMjJVZlIyMHdua1ZLaFdHeVVxaFdsUnZUWEgxN0U0NkoxelIyLVF0NFZOWWZ6UnhYd0RFQU1aQ3pwLXVEV3I0QlRyd3FrQVJYYTBWMWRFTkE?oc=5",
-    "date": "2026-03-20 23:34",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA GTC 2026에서 XGRIDS가 공개됨에 따라 새로운 데이터 분석 기술이 개발자와 투자자에게 제공되는 방식이 확정됨. XGRIDS는 NVIDIA의 고성능 GPU를 활용하여 빅데이터 처리를 향상시킬 계획임. 이 기술은 다양한 산업에서 적용 가능하며, 데이터 분석 능력을 강화할 것으로 예측됨."
-  },
-  {
-    "title": "XGRIDS at NVIDIA GTC 2026",
-    "original_title": "[PRNewswire] XGRIDS at NVIDIA GTC 2026 - Yonhap News Agency",
-    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE90OXZPWlhYVzhkMUdkeUtUSmR2V2FESmlTSG9sZExRbHFOMWhZMXlraFM1OEJ6T1I3eTNiczlpZTJrd1E2bXlOOUpiTzZPMl9vaFVxR1B6VHlEQQ?oc=5",
-    "date": "2026-03-20 23:34",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA GTC 2026에서 XGRIDS가 공개됨. 이 회의에서는 XGRIDS의 고성능 AI 플랫폼이 NVIDIA의 AI 기술을 강조하는 세션이 열렸으며, 이를 통해 개발자들과 기업들이 AI 구현에 있어 새로운 가능성을 확인할 수 있음."
   }
 ]
