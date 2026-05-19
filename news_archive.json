@@ -144,6 +144,78 @@
     "summary": "arXiv:2605.17601v1 Announce Type: new \nAbstract: We present a Learning from Demonstration (LfD) framework that achieves one-shot generalization in multi-stage, contact-rich manipulation tasks. Central to our approach is the utilization of environmental constraints as the inductive bias. By representing a demonstration as a sequence of behaviors that exploit environmental constraints, the robot separates task-general structure -- the constraint types and their transitions -- from instance-specific details such as exact demonstration trajectories, poses, and local geometries. Our four-stage pipeline builds a complete policy on this representation: the robot first abstracts a single demonstration into environmental-constraint primitives, then disambiguates them through self-guided exploration, next assimilates targeted human corrections that handle out-of-distribution variations, and finally recovers the abstracted-away details online through compliant interaction. Because the resulting policy follows constraints rather than mimics trajectories, it generalizes across object poses, local geometries, and unmodeled contact dynamics. We validate our approach on seven real-world multi-stage contact-rich manipulation tasks and achieve over 90% success. These extensive experimental results establish environmental constraints as fundamental building blocks for efficient generalization in learning from demonstration."
   },
   {
+    "title": "PRIME: Physically-consistent Robotic Inertial and Motion Estimation for Legged and Humanoid Robots",
+    "original_title": "PRIME: Physically-consistent Robotic Inertial and Motion Estimation for Legged and Humanoid Robots",
+    "link": "https://arxiv.org/abs/2605.17681",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.17681v1 Announce Type: new \nAbstract: Humanoid and legged robots interact with the environment through intermittent contacts, making accurate motion estimation fundamentally dependent on reasoning about contact dynamics. However, standard sensing pipelines-whether based on onboard proprioception with Extended Kalman Filters (EKFs) or external motion capture systems-recover only kinematics, while contact forces, contact timing, and inertial parameters remain unobserved. As a result, purely kinematic reconstructions often violate rigid-body dynamics, particularly during contact-rich motions. To enable accurate motion estimation from onboard kinematics in real-world deployment, we propose PRIME (Physically-consistent Robotic Inertial and Motion Estimation), a Maximum A Posteriori (MAP) formulation that refines measured kinematics and actuator commands into a dynamically consistent trajectory while jointly estimating frictional contact forces and physically consistent inertial parameters. Our approach incorporates differentiable contact dynamics with smoothed complementarity constraints and an Anitescu-style friction model, yielding a smooth optimization problem that remains tractable across versatile contact transitions. We evaluate PRIME on contact-rich locomotion with quadrupedal robots and the Unitree G1 humanoid, demonstrating improved trajectory consistency and accurate inertial parameter identification. Beyond improving state estimation and feedback control with calibrated inertial parameters, PRIME produces force- and contact-annotated motion reconstructions from real robots in deployment, which can be used to provide high-quality data for downstream learning applications, including large-scale behavior modeling and robot foundation models."
+  },
+  {
+    "title": "Optimal Knock-Pick Planning for Tightly Packed Tabletop Blocks With Parallel Grippers",
+    "original_title": "Optimal Knock-Pick Planning for Tightly Packed Tabletop Blocks With Parallel Grippers",
+    "link": "https://arxiv.org/abs/2605.17800",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17800v1 Announce Type: new \nAbstract: Rearranging densely packed tabletop objects is challenging when parallel-gripper picks are infeasible without sufficient clearance around an object. This work studies the problem characteristics for practically motivated settings with uniformly sized blocks placed at planar tabletop grid locations. Since purely prehensile removal can become infeasible, a directional knock primitive is therefore introduced and the optimal knock-pick variant of the problem is formulated. The work proposes a series of abstractions wherein minimal constraining gadgets are covered to identify the necessary knocks. Utilizing a maximum-weight perfect matching on a graphical abstraction yields efficient polynomial-time computation of the optimal plan that minimizes the number of actions. Experiments are reported for increasing grid sizes in synthetic settings as well as in IsaacSim. The theoretical observations provide a promising stepping stone towards rigorously building efficient manipulation strategies that interleave prehensile and non-prehensile actions."
+  },
+  {
+    "title": "Virtues of Ordered Chaos: Planning with Topple Actions in Tabletop Stack Rearrangement",
+    "original_title": "Virtues of Ordered Chaos: Planning with Topple Actions in Tabletop Stack Rearrangement",
+    "link": "https://arxiv.org/abs/2605.17815",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17815v1 Announce Type: new \nAbstract: Efficient object manipulation strategies have significant impact in automation applications. In this work, the stack rearrangement in tabletop settings is studied, with a focus on augmenting the task planning domain with richer nonprehensile aggregating actions, in particular the toppling of objects from a stack to the table. Toppling can compress long sequences of intermediate relocations. Computed plans need to interleave pick-and-place actions with topple throughout its plan based on the problem. In order to generate the task plan and model an abstraction to compute solutions that include both pick-and-place and topple actions, a novel aggregating gadget for topple is introduced. Using this directed graphical abstraction, candidate task plan computation becomes a variant of the pebble motion problem, treating objects as pebbles. Benchmarks are then reported in a IsaacSim-based physics simulation. Results highlight clear benefits of achieving faster execution than solely using pick-and-place actions. Though this work primarily investigates the topple action, we demonstrate that similar abstractions can model other aggregating actions of interest, like scoop. The current work provides a preliminary, strong indication of the promising benefits of abstractions for rich object interactions in manipulation applications."
+  },
+  {
+    "title": "A Dexterous and Compliant Gripper With Soft Hydraulic Actuation for Microgravity Manipulation",
+    "original_title": "A Dexterous and Compliant Gripper With Soft Hydraulic Actuation for Microgravity Manipulation",
+    "link": "https://arxiv.org/abs/2605.17851",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17851v1 Announce Type: new \nAbstract: Astrobee's existing one-degree-of-freedom (DOF) underactuated compliant claw gripper enables perching on the International Space Station (ISS), but provides limited capability for continuous dexterous manipulation. More complex microgravity tasks require an end-effector that can maintain stable contact while limiting disturbance to the free-flying base, since contact forces directly couple into base motion. This article presents the integration of DexCoHand, a dexterous and compliant two-finger, 6-DOF gripper, with the Astrobee free-flying robot for microgravity manipulation. The system is evaluated in MuJoCo using Astrobee's standard handrail perching sequence, including approach, perching, and subsequent pan and tilt motions. Compared with Astrobee's existing gripper, DexCoHand preserves the commanded pan and tilt motions while reducing unintended cross-axis base motion. Hardware experiments on Earth further demonstrate DexCoHand's dexterous manipulation capabilities and its potential for more adaptable intelligent manipulation tasks."
+  },
+  {
+    "title": "WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform",
+    "original_title": "WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform",
+    "link": "https://arxiv.org/abs/2605.17912",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17912v1 Announce Type: new \nAbstract: World models have emerged as a central paradigm for embodied intelligence, enabling agents to predict action-conditioned future and reason about environmental dynamics. However, existing embodied world model benchmarks are still largely confined to vision-only prediction, offline embodied applications, and simulator-based evaluation, making them insufficient for assessing increasingly comprehensive world models. In this work, we introduce WorldArena 2.0, an expanded benchmark that systematically broadens embodied world model evaluation along three dimensions: modality, functionality, and platform. Along the modality dimension, WorldArena 2.0 extends evaluation from vision-only to visuotactile modalities, enabling assessment of multimodal perception and prediction. Along the functionality dimension, it extends beyond policy evaluation and planning to assess world models as interactive RL environments for policy optimization. Along the platform dimension, it moves beyond simulator-only evaluation to a diverse suite of simulated and real-world robotic settings across multiple embodiments. Under a standardized protocol, WorldArena 2.0 comprehensively evaluates perceptual quality, interactive utility, and cross-platform performance, providing a comprehensive testbed for tracking progress toward embodied world models. The benchmark is available at: https://world-arena.ai."
+  },
+  {
+    "title": "Learning-Based Adaptive Control for Surgical Robotic Exposure Task on Deformable Tissues",
+    "original_title": "Learning-Based Adaptive Control for Surgical Robotic Exposure Task on Deformable Tissues",
+    "link": "https://arxiv.org/abs/2605.17927",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17927v1 Announce Type: new \nAbstract: In various surgical procedures, regions of interest (ROIs) such as organs or lesions are often occluded by overlying tissues, requiring surgeons to achieve adequate exposure for precise intervention. However, the irregular geometry, nonlinear biomechanical properties of overlying tissues, and limited intraoperative visibility of the ROI pose significant challenges to the autonomous execution of tissue retraction. To address this, we formulate a realistic model of the tissue retraction task and propose a learning-based adaptive control framework for achieving ROI exposure. The method optimizes control inputs online by monitoring changes in the visual boundary of the tissue, while leveraging a deep deformation estimation model trained on simulation data to identify the optimal grasping point and ensure the convergence and safety of the adaptive controller. Through simulations and real-world experiments on different deformable materials, it has been demonstrated that this framework exhibits zero-shot adaptation to similar tasks and can complete the autonomous retraction process, from initial grasp selection to full ROI exposure. Therefore, it has the potential to be applied in actual surgical assistance scenarios."
+  },
+  {
+    "title": "TacSE3: Equivariant SE(3) Motion Estimation from Low-Texture Visuotactile Images for In-Gripper Tracking and Compensation",
+    "original_title": "TacSE3: Equivariant SE(3) Motion Estimation from Low-Texture Visuotactile Images for In-Gripper Tracking and Compensation",
+    "link": "https://arxiv.org/abs/2605.17929",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17929v1 Announce Type: new \nAbstract: Robotic in-hand manipulation requires reliable object-motion tracking under frequent visual occlusion, yet low-texture visuotactile images provide few stable correspondences for conventional image- or geometry-matching methods. This paper presents TacSE3, a tactile motion-estimation pipeline that converts low-texture visuotactile observations into a decoupled three-dimensional force field and estimates incremental rigid-body motion on SE(3). The method derives planar translation from contact-centroid motion and estimates rotation primarily from shear-related tactile responses, yielding a physically interpretable signal for in-gripper tracking and compensation. Experiments with paired DM-Tac fingertip sensors show that dual-sensor sensing reduces translation-rotation ambiguity, supports rotation tracking across axes and object geometries, and provides a lightweight compensation signal that improves disturbance tolerance in downstream manipulation tasks without retraining the base policy."
+  },
+  {
+    "title": "Key-Gram: Extensible World Knowledge for Embodied Manipulation",
+    "original_title": "Key-Gram: Extensible World Knowledge for Embodied Manipulation",
+    "link": "https://arxiv.org/abs/2605.18556",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.18556v1 Announce Type: new \nAbstract: Embodied control increasingly requires models to follow compositional language instructions while reasoning over dynamic visual states. However, current vision-language-action policies and world-action models often couple linguistic knowledge with visual computation in a shared backbone or conditioning pathway, leading to modality competition and making knowledge extension dependent on backbone updates. In this paper, we introduce Key-Gram, a conditional-memory framework that separates language-derived world knowledge from visual-state reasoning for embodied control. At its core is a memory module that decomposes an instruction into task-specific key-grams, retrieves static linguistic priors through deterministic hashed lookup, and injects the retrieved entries into selected hidden layers through context-aware gating and lightweight convolutional fusion. This design allows the backbone to devote its main capacity to visual reasoning and action inference, while reusable instruction knowledge is stored in an extensible external memory. The logical memory table can be conveniently partitioned during training and, due to its $O(1)$ lookup pattern, efficiently placed on host memory during inference. Across RoboTwin2.0, LIBERO/LIBERO-Plus, and real-world dual-arm manipulation, Key-Gram consistently improves both $\\pi_{0}$ and $\\pi_{0.5}$ backbones, with average relative gains of $29.5\\%/9.9\\%$ on RoboTwin2.0, $35.8\\%/4.5\\%$ on LIBERO-Plus transfer without target-domain fine-tuning, and $15.4\\%/8.1\\%$ on real-world long-horizon tasks. These results demonstrate that externalized linguistic memory provides an effective and extensible mechanism for improving compositional grounding, transfer, and real-world manipulation."
+  },
+  {
     "title": "Comau to acquire Brazilian intralogistics and warehouse automation company Invent",
     "original_title": "Comau to acquire Brazilian intralogistics and warehouse automation company Invent",
     "link": "https://roboticsandautomationnews.com/2026/05/18/comau-to-acquire-brazilian-intralogistics-and-warehouse-automation-company-invent/101673/",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Unitree 로봇공학은 최근에 급격한 글로벌 수요에 대응하기 위해 생산을 가속화하고 있습니다. 새로운 생산 설비를 추가하여 2023년에 10,000대의 로봇을 생산할 계획입니다."
-  },
-  {
-    "title": "Unitree의 경계적 IPO: 중국의 гумано이드 거인에 대한 알아야 할 것들",
-    "original_title": "Inside Unitree’s landmark IPO: what to know about China’s humanoid giant - South China Morning Post",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVVFyUHZESDJEcUR5WWx6d3VWYXlCLWtOQ0VKNUZjV2s0cmhTWUptUklpNTBybnVkVEJHajZWczVQVERLenRYSi0yZmItLXI3Qi1xZHNJaHlId3pteExLa2pfUlF1NWhRUFdLRTNiRElkemJ0X0pBbDNWSS04aTJwTWtDNEZoZkNUSHVCMDFFTG9UWjJHbnYwUGtBM1pQQTdfemMxcUhHZjB6RWVO0gGsAUFVX3lxTFBPb3BQNnE2S2kyVnNMeVRuQjBNYzdpVVpmLUVWd0szUnlNT25oZ0NhRWxhaEdlajFPbnFJeXV1SnQ0MmV3cGtOQVlKUG50Q3dLOTlWcEJ3QjhMeEk4eWktcnY2WS1sdjRnaHIwRnhvXzUwV3NJTE9SZVZuN25QYUR0eWlSalB0b2ZSRmRtY2ZTc0NaZFd3cnVxcEY2YW9zRXo0bXE3N25kaHdDbXk?oc=5",
-    "date": "2026-03-23 13:45",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree는 5.3조 불어 중국의 humanooid 로봇 제조업체가 IPO를 통해 8,000억원 상당의 자금을 확보하는 데 성공했습니다. 이 기업은 AI와 로봇 기술을 결합해 인간과 같은 움직임을 보이는 humanooid 로봇을 개발하고 있습니다."
-  },
-  {
-    "title": "<Unitree의 랜드마크 IPO: 중국人형 로봇 거장에 대한 핵심 정보>",
-    "original_title": "Inside Unitree’s landmark IPO: what to know about China’s humanoid giant - South China Morning Post",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVVFyUHZESDJEcUR5WWx6d3VWYXlCLWtOQ0VKNUZjV2s0cmhTWUptUklpNTBybnVkVEJHajZWczVQVERLenRYSi0yZmItLXI3Qi1xZHNJaHlId3pteExLa2pfUlF1NWhRUFdLRTNiRElkemJ0X0pBbDNWSS04aTJwTWtDNEZoZkNUSHVCMDFFTG9UWjJHbnYwUGtBM1pQQTdfemMxcUhHZjB6RWVO?oc=5",
-    "date": "2026-03-23 13:45",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "(Unitree는 8월 15일 중국 증권시장에 상장하여 2.3조 위안(약 340억원)급의 자금을 확보하는 랜드마크 IPO를 здійс냈다. 이 IPO에는 5천 500개의 지분이 포함되어 있으며, 이를 통해 Unitree는 중국에서 가장 큰 humanoid 로봇 개발업체가 되었다.)"
-  },
-  {
-    "title": "Alstef Group의 자율 산업차량 공개 ahead of LogiMAT",
-    "original_title": "Alstef Group unveils AI-powered autonomous industrial vehicle ahead of LogiMAT",
-    "link": "https://roboticsandautomationnews.com/2026/03/23/alstef-group-unveils-ai-powered-autonomous-industrial-vehicle-ahead-of-logimat/100041/",
-    "date": "2026-03-23 10:31",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Alstef Group은 항공, 인트롤로지스틱스 및 패키즘 시장에 대한 자동화 솔루션을 디자인하고 통합하는 회사로, 새로운 자율 산업차량을 AI 기반 감각 기능과 함께 공개하였다. 이 차량은 창고와 분포 센터를 대상으로 개발되었으며, LogiMAT에서 시스템을 공개할 계획이다."
-  },
-  {
-    "title": "NVIDIA 이사크 텔레옵 공개함",
-    "original_title": "NVIDIA Launches Isaac Teleop at GTC 2026 With MANUS as the Official Data Glove",
-    "link": "https://humanoidroboticstechnology.com/industry-news/nvidia-launches-isaac-teleop-at-gtc-2026-with-manus-as-the-official-data-glove/",
-    "date": "2026-03-23 10:10",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "NVIDIA는 GTC 2026에서 이사크 텔레옵을 일반 사용 가능 상태로 출시했다. 이사크 텔레옵은 시뮬레이션 및 실제 세계 시스템의 통합 프레임워크로, 인간 입력이 로봇 액션으로 변환되는 방식을 표준화하는 것이다. 이 출시는 로봇술 분야의 더 큰 변화를 반영하는 것으로, 상호된 AI 및 일반적 로봇 정책을 향한 움직임에 포함된다."
-  },
-  {
-    "title": "Ubtech 로보틱스 && 시만즈 colaborates to mass-produce robots",
-    "original_title": "Ubtech Robotics collaborates with Siemens to mass-produce robots. Will the combination of Chinese technology and German manufacturing become a new trend in the industry? - 富途牛牛",
-    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ25WZ0Z0dm4xU1BDQXIxOHItNUFqd3JUbzFEV09iZzRCdzVFdlRPMU9Sc1phSzFIcHI4MU12dE1QdUlvSm1nR3lqb0xxYmRkTVhSNHlQNXlkWFJ0MHBqdFVRbURYb09GMVRxYmh1WXp0bm5QVTM2TTNVWTBkM2txWEVuQXFRenZOUGZSZ0pXRmo0bU1BUjFhYXZqamVYVDBkWjVxVll4aERTdzlRTWcw?oc=5",
-    "date": "2026-03-23 09:06",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Ubtech 로보틱스와 시만즈가 협력하여 로봇을 대량 생산함으로써 중국 기술과 독일 제조의 조합이 산업에서 새로운 트렌드로 될 것인지 궁금함. 이 조합은 고성능 로봇의 개발 및 판매에 있어 새로운 경쟁요소를 제공할 것이며, 향후 로보틱스 시장의 발전 방향을 보여줄 것이다."
-  },
-  {
-    "title": "Amazon Rivr 구입함",
-    "original_title": "Amazon acquires delivery robotics startup Rivr to target ‘last-meter’ logistics",
-    "link": "https://roboticsandautomationnews.com/2026/03/23/amazon-acquires-delivery-robotics-startup-rivr-to-target-last-meter-logistics/100037/",
-    "date": "2026-03-23 07:16",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "아마존이 스위스 로봇 스타트업 리브르을 인수하여 '마지막 메터' 로지스틱스 목표로 집중하게 됨. 아마존은 자사 배송 파트너에게 \"리브르를 최근에 구입했습니다\"라고 통보하며, 공식 보도稿를 발간하지 않았지만, 리브르의自走 로봇이 패키지를 고객의 문 앞으로 전달하는 데 사용되는 것임을 확인했다."
-  },
-  {
-    "title": "MIND 로보틱스",
-    "original_title": "Mind Robotics raises $500 million to build AI-powered industrial robots for real-world deployment",
-    "link": "https://roboticsandautomationnews.com/2026/03/23/mind-robotics-raises-500-million-to-build-ai-powered-industrial-robots-for-real-world-deployment/100033/",
-    "date": "2026-03-23 07:01",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "500만달러 자금을 출연하여 실제 적용을 목표로 AI 강화 산업 로봇을 개발하는 데 사용할 계획임. MIND 로보틱스는 이 500만 달러 자금이 늦은 이달 말까지 완제될 것임."
-  },
-  {
-    "title": "Hexxabotics의 새로운 AS/RS 공개될 예정임",
-    "original_title": "Hexxabotics to unveil honeycomb-based AS/RS with shuttle-style AMRs at LogiMAT",
-    "link": "https://roboticsandautomationnews.com/2026/03/23/hexxabotics-to-unveil-honeycomb-based-as-rs-with-shuttle-style-amrs-at-logimat/100030/",
-    "date": "2026-03-23 06:35",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Hexxabotics는 LogiMAT 2026에서 새로운 자동 저장 및 수거 시스템(AS/RS)을 공개할 예정이다. 이 시스템은 모듈러 하니콤 구조를 바탕으로 최대 куб릭 저장 밀도를 유지하면서 접근성을 높이고자 하는 'next-gen' AS/RS로 설명하고 있다."
   }
 ]
