@@ -72,6 +72,78 @@
     "summary": "arXiv:2605.17033v1 Announce Type: new \nAbstract: Urgently needed generalizable robot object interaction and manipulation requires high-quality Cross-Category object perception. As a pioneer of this area, Generalizable and Actionable Parts (GAParts) understanding has attracted increasing attention from relevant researchers. However, most recent works either have insufficient design regarding the symmetry issue or require rich symmetry annotation, which severely impedes precise GAPart pose estimation in data-lacking scenarios. In this paper, we propose SAFAG, a novel Symmetry Annotation-Free framework for Generalizable and Actionable Parts Pose Estimation. Specifically, we suggest a stepwise refinement two-stage framework for candidate-to-final quaternion regression, and tackle the symmetry prediction as a probability distribution problem with self-supervised learning strategy. The experimental results demonstrate the superior performance and robustness of our SAFAG. We believe that our work has the enormous potential to be applied in many areas of embodied AI system."
   },
   {
+    "title": "How to Instruct Your Robot: Dense Language Annotations Power Robot Policy Learning",
+    "original_title": "How to Instruct Your Robot: Dense Language Annotations Power Robot Policy Learning",
+    "link": "https://arxiv.org/abs/2605.17077",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17077v1 Announce Type: new \nAbstract: Scaling robot policy learning is bottlenecked by the cost of collecting demonstrations, while language annotations for existing demonstrations are comparatively cheap. We study language density as a lever for extracting more signal from a fixed robot or egocentric-video corpus. We introduce DeMiAn (Dense Multi-aspect Annotation), a two-stage approach that first re-labels demonstration segments with VLM-generated annotations along four complementary aspects: physical motion, scene composition, arm pose, and reasoning. A learned instructor then maps a task description and initial scene snapshot to a task-appropriate annotation at deployment, running asynchronously so generation latency is hidden behind policy execution. Across over 1M robot manipulation clips and 50K EgoVerse human-egocentric videos, DeMiAn improves both a vision-language-action policy and a video-based world-action model without collecting new demonstrations. On RoboCasa, the instructor raises success by 5 points over a task-only baseline and comes within 3 points of a per-task oracle. No fixed annotation aspect dominates across tasks, showing that selecting the right dense language matters. DeMiAn also improves composite-task and out-of-distribution performance, and shifts the compute-performance frontier in both mid-training and post-training after accounting for annotation-generation FLOPs. These results position dense re-annotation as a practical scaling lever for robot policy learning."
+  },
+  {
+    "title": "Task Capability Improvement Algorithm for Collaborative Manipulators",
+    "original_title": "Task Capability Improvement Algorithm for Collaborative Manipulators",
+    "link": "https://arxiv.org/abs/2605.17293",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17293v1 Announce Type: new \nAbstract: This work introduces a cooperative task capability improvement utilizing additional moments. The manipulators apply forces at the object's grasp point. Applying forces at a point other than the object's center of gravity produces undesired moments. The undesired moment acts as an additional moment. It improves the capability of an individual manipulator and, hence, the entire collaborative group. Any improvements in task capability directly add up to the object and transportation capability. The group's enhanced capability also helps achieve optimal capability, optimal resource allocation, and maximum fault tolerance in object manipulation. Our simulation results show an improvement in the capability of 5.86 \\% compared to when no moment is used to enhance the capability of the manipulators."
+  },
+  {
+    "title": "HCLM: A Hierarchical Framework for Cooperative Loco-Manipulation with Dual Quadrupeds",
+    "original_title": "HCLM: A Hierarchical Framework for Cooperative Loco-Manipulation with Dual Quadrupeds",
+    "link": "https://arxiv.org/abs/2605.17300",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17300v1 Announce Type: new \nAbstract: We introduce HCLM, a hierarchical framework for general-purpose cooperative loco-manipulation with dual quadrupedal systems. Coordinating multi-robot collaborative manipulation across floating bases is highly challenging due to the conflicting demands of spatial coordination, robust locomotion, and closed-chain physical interactions. To resolve this, our architecture systematically decouples high-level collaborative reasoning from low-level robust motion execution. At the high level, a centralized Joint Diffusion Policy leverages an SE(3)-invariant task-space representation to learn coordinate-agnostic spatial coordination patterns. To translate these frame-agnostic references into physical motion, a task-centric hybrid Whole-Body Controller synergizes a proactive kinematic Model Predictive Control for collision-free velocity distribution with a reactive execution layer. Crucially, this reactive layer guarantees rapid responsiveness for precise end-effector tracking, while concurrently integrating active force regulation via a cooperative admittance scheme to safely resolve kinematic conflicts and strictly regulate internal stresses during closed-chain interactions. We validate the framework across progressively challenging simulated scenarios, including cooperative carrying, packing and handovers, and successfully deploy the latter in the real world. The results demonstrate reliable task execution, strict configuration agnosticism, and exceptional resilience against severe physical perturbations, offering a highly robust pathway for multi-robot embodied coordination."
+  },
+  {
+    "title": "Tactile-based Multimodal Fusion in Embodied Intelligence: A Survey of Vision, Language, and Contact-Driven Paradigms",
+    "original_title": "Tactile-based Multimodal Fusion in Embodied Intelligence: A Survey of Vision, Language, and Contact-Driven Paradigms",
+    "link": "https://arxiv.org/abs/2605.17336",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17336v1 Announce Type: new \nAbstract: Tactile sensing is a fundamental modality for embodied intelligence, offering unique and direct feedback on contact geometry, material properties, and interaction dynamics that remote sensors cannot replace. However, unimodal tactile perception is inherently limited by its sparse spatial coverage and lack of global semantic context. With the recent explosion in deep learning and large language models, integrating tactile with vision and language has become essential to bridge physical interaction with semantic reasoning, leading to the emergence of Multimodal Tactile Fusion. Despite rapid progress, the existing researches remain fragmented across disparate datasets, sensing modalities, and tasks, lacking a unified theoretical framework. To address this gap, this paper provides a comprehensive survey of multimodal tactile fusion research up to the first quarter of 2026. We propose a hierarchical taxonomy that organizes the field into two primary dimensions: multimodal datasets and multimodal methods. On the data side, we categorize resources ranging from Tactile-Vision datasets, Tactile-Language datasets, Tactile-Vision-Language datasets, and Tactile-Vision-Other datasets. On the method side, we structure prior work into three core pillars: (1) Multimodal Perception and Recognition, which focuses on object understanding and grasp prediction; (2) Cross-Modal Generation, focusing on bidirectional translation between tactile, vision, and text; and (3) Multimodal Interaction, emphasizing feedback control and language-guided manipulation. Furthermore, we summarize representative tactile sensing hardware, review commonly used evaluation metrics and benchmark settings, and discuss current challenges and promising future directions."
+  },
+  {
+    "title": "AffordVLA: Injecting Affordance Representations into Vision-Language-Action Models via Implicit Feature Alignment",
+    "original_title": "AffordVLA: Injecting Affordance Representations into Vision-Language-Action Models via Implicit Feature Alignment",
+    "link": "https://arxiv.org/abs/2605.17517",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17517v1 Announce Type: new \nAbstract: Recent advances in Vision-Language-Action (VLA) models have shown strong potential for general-purpose robotic manipulation. However, the visual representations of most VLA models are often dominated by global object appearance and struggle to focus on task-relevant functional interaction regions, which limits their robustness in unstructured environments. Existing affordance-based methods typically rely on explicit mask injection or external perception modules, requiring additional annotations while introducing cascading perception errors and inference overhead. To address these limitations, we propose AffordVLA, an affordance-enhanced VLA framework that internalizes manipulation-centric affordance perception into VLA visual representations through implicit representation alignment. Specifically, we construct a zero-shot affordance teacher to extract task-conditioned affordance visual representations from RGB observations and language instructions. AffordVLA aligns the intermediate visual representations of the VLA with the affordance visual representations extracted by the teacher, thereby implicitly injecting manipulation-centric affordance perception into VLA visual representations and improving action accuracy. Extensive simulation and real-world experiments demonstrate that AffordVLA and its affordance teacher achieve state-of-the-art performance and outperform strong baselines. Ablation analyses show that AffordVLA effectively reshapes VLA visual representations while preserving inference efficiency, leading to improved manipulation success rates and training efficiency."
+  },
+  {
+    "title": "RoboFlow4D: A Lightweight Flow World Model Toward Real-Time Flow-Guided Robotic Manipulation",
+    "original_title": "RoboFlow4D: A Lightweight Flow World Model Toward Real-Time Flow-Guided Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.17522",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17522v1 Announce Type: new \nAbstract: Planning and acting in 3D environments is a fundamental capability for robotic manipulation in the real world. Although prior work has explored predictive flow planners to guide 3D manipulation, existing approaches often rely on modular pipelines stacking multiple submodels, resulting in high computational overhead and limited real-time performance. To address these challenges, we introduce RoboFlow4D, a lightweight flow world model that unifies perception and planning by estimating temporal motion in physical 3D space. As an end-to-end framework, RoboFlow4D directly predicts multi-frame 3D flows from visual observations and textual instructions, providing explicit flow-based planning to guide action generation. This design allows seamless integration with general action policies, forming an efficient observation-planning-execution closed loop. Through slow-fast collaboration between flow prediction and action control, RoboFlow4D enables real-time and resource-efficient manipulation. Extensive experiments in both simulation and real-world settings demonstrate that RoboFlow4D consistently improves manipulation success rates and computational efficiency, advancing flow-guided planning for embodied intelligence."
+  },
+  {
+    "title": "Visual Sculpting: Visually-Aligned Planning Representations for Long-Horizon Robot Clay Sculpting",
+    "original_title": "Visual Sculpting: Visually-Aligned Planning Representations for Long-Horizon Robot Clay Sculpting",
+    "link": "https://arxiv.org/abs/2605.17556",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17556v1 Announce Type: new \nAbstract: Clay sculpting is a nuanced, artistic task involving dexterous manipulation with long-horizon planning to achieve high-level goals. As a robotics problem, we formulate clay sculpting as a shape-to-shape matching challenge. Prior deformable object manipulation work either requires retraining a policy per goal or relies on dynamics models which represent state as sparse point clouds which do not capture important clay features, such as textures, well. We present a method for modeling the dynamics of deformable materials and planning for robotic sculpting in a representation that is visually-aligned, capturing lighting and texture features. With three different deformable materials and various end-effectors, we demonstrate that our dynamics model is comparable in performance to the state-of-the-art with the added benefit of being compatible with visual planning. Our actions are represented as parametrized pushes into clay with a single end-effector, which proved to be suitable for long-horizon (>100 actions) clay relief sculptures. Lastly, we show the benefits of planning in a visually-aligned representation, but also provide analysis providing evidence as to why this representation is challenging to plan in compared to 3D representations."
+  },
+  {
+    "title": "From a Single Demonstration to a General Policy for Contact-Rich Manipulation",
+    "original_title": "From a Single Demonstration to a General Policy for Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2605.17601",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17601v1 Announce Type: new \nAbstract: We present a Learning from Demonstration (LfD) framework that achieves one-shot generalization in multi-stage, contact-rich manipulation tasks. Central to our approach is the utilization of environmental constraints as the inductive bias. By representing a demonstration as a sequence of behaviors that exploit environmental constraints, the robot separates task-general structure -- the constraint types and their transitions -- from instance-specific details such as exact demonstration trajectories, poses, and local geometries. Our four-stage pipeline builds a complete policy on this representation: the robot first abstracts a single demonstration into environmental-constraint primitives, then disambiguates them through self-guided exploration, next assimilates targeted human corrections that handle out-of-distribution variations, and finally recovers the abstracted-away details online through compliant interaction. Because the resulting policy follows constraints rather than mimics trajectories, it generalizes across object poses, local geometries, and unmodeled contact dynamics. We validate our approach on seven real-world multi-stage contact-rich manipulation tasks and achieve over 90% success. These extensive experimental results establish environmental constraints as fundamental building blocks for efficient generalization in learning from demonstration."
+  },
+  {
     "title": "Comau to acquire Brazilian intralogistics and warehouse automation company Invent",
     "original_title": "Comau to acquire Brazilian intralogistics and warehouse automation company Invent",
     "link": "https://roboticsandautomationnews.com/2026/05/18/comau-to-acquire-brazilian-intralogistics-and-warehouse-automation-company-invent/101673/",
@@ -1600,6 +1672,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Chinese robots attract attention, cooperation in Central, Eastern European markets  China.org.cn"
+  },
+  {
+    "title": "China’s Unitree unveils transformable humanoid mecha robot with cockpit - MSN",
+    "original_title": "China’s Unitree unveils transformable humanoid mecha robot with cockpit - MSN",
+    "link": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxPRGJuaElLV0RsYmxWRmpqTXY3dHlxQi00TXB4NWdVdHg0d3JQdjIyQlhna2NkZ1lwMURKWllUZlRZRHM1eExtSHN6SFRuY0N3WE1hUVZvR0c0bWk0NjViUlJkRFBGSmJRcnRXa1B2RWdxUVNucDJ2WHIzQnZhTk1SejlkVE9aQVdyUjd6RHhySUZkZFhnUnRzczlBSTFWbFFiOUlfTjM5bENjMjBzVGFhMURKMUw0WVdNSVhPdVZSTjNrMk9SblIxOXk0LXItRnYwbWMzWGhrZTJ0WDVvSXNFa3hNdmZVWFE1UFFLbVpMcXZWMzFiV1VOdnN3Zk5QVGdOT3RObUctaTN0REhPSndReGJNSDFrMGp3a2lYbUJYa2dWcTV6UUJwVUtHMVk2dWVkbEgwNzRrMnVNY3hJcEx4Wm5vblk2UmhybEZWb2ZRaEVzZkk0aEVpWjVn?oc=5",
+    "date": "2026-05-13 23:36",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China’s Unitree unveils transformable humanoid mecha robot with cockpit  MSN"
   },
   {
     "title": "Interview with Intrinsic’s Stefan Nusser: Traditional automation is ‘too expensive and too inflexible’",
@@ -17917,86 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "Hexxabotics는 LogiMAT 2026에서 새로운 자동 저장 및 수거 시스템(AS/RS)을 공개할 예정이다. 이 시스템은 모듈러 하니콤 구조를 바탕으로 최대 куб릭 저장 밀도를 유지하면서 접근성을 높이고자 하는 'next-gen' AS/RS로 설명하고 있다."
-  },
-  {
-    "title": "QCraft~100천만원 투자, 4계층 자율주행 및 물리적 AI 확장 방안을 추진함",
-    "original_title": "QCraft raises $100 million to push toward Level 4 autonomy and physical AI at scale",
-    "link": "https://roboticsandautomationnews.com/2026/03/23/qcraft-raises-100-million-to-push-toward-level-4-autonomy-and-physical-ai-at-scale/100026/",
-    "date": "2026-03-23 06:19",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "QCraft, 자율 주행 AI 개발사, 100만 달러의 새로운 Series D 펀딩 라운드를 완료했다. 이 라운드에는 니엔보 닌하이 신태허펀드, 원더랜드 캐피탈, 리량시 과학 및 혁신 산업 투자 파트너십(브로드 비전 펀즈에 의해 관리됨) 등 조합 투자자 및 전략적 투자자가 포함됐다."
-  },
-  {
-    "title": "Yushu 투자 커뮤니티의 50%가 감사함",
-    "original_title": "Half of the investment community is grateful to Yushu. - PANews",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ZQ0tlT0J3QUY3N0RIc2pkUVJfclRpRTFMZG1ZZmt3QUNwVWxlWUJLTmU1UC0xNHdpMTB3aEp3RU1YUml4Q2RHeUZSUzR6OHFCR0tEU1hYMlpHREJaM04zdlhQNXFtU1hCaldtRXlUNXdWbTd3SEZsWk9ibUZrazA?oc=5",
-    "date": "2026-03-23 05:38",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "PANews에 따르면 Yushu의 투자가 대다수의 투자 커뮤니티에게 감사하게 받는 것으로 나타났다."
-  },
-  {
-    "title": "VAMPO: 비디오 액션 모델의 시각 동적 개선 정책 최적화",
-    "original_title": "VAMPO: Policy Optimization for Improving Visual Dynamics in Video Action Models",
-    "link": "https://arxiv.org/abs/2603.19370",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "비디오 액션 모델이 비전--언어--행동 시스템의 근거가 되는 것은 대규모 비디오 데이터에서 시각 동력을 학습하고 이를 하류 로봇 제어에 이전하는 데 적합한 이유입니다. 그러나 현재 확산 기반 비디오 예측자는 이점적인 목표로 훈련되므로 글로벌 가능성을 강조하지 않고 시각 동적의 정밀성을 직접 최적화하지 않습니다. 이러한 목표 불일치가 하류 정책에 의해 암plified된 오차를 초래할 수 있습니다. 우리는 VAMPO, 비디오 액션 모델에서 시각 동적을 개선하는 포스트-훈련 프레임워크를 제안합니다. nostro 키 아이디어는 다단계 소음화를 시퀀셜 결정 프로세스로 형식화하고 이 소음화 정책을 주어진 latent 공간의 전문가 시각 동적에 따라 최적화합니다. 이를 실용적으로 만들기 위해 우리는 유럽 하이브드 샘플러를 소개하여 첫 번째 소음화 단계에서만 확률성을 투입하여 저변성 정책-그래디언트 추정을 허용하면서 나머지 소음화 경로의 일관성을 보존합니다. 더불어 이 설계는 GRPO와 확인할 수 있는 비방적 보상을 결합합니다. 다양한 시뮬레이티드 및 실제 세계 manipulation 태스크에서 VAMPO는 업스트림 액션 생성과 일반화 강화를 나타내는 업스트림 시각 동적을 개선합니다. https://vampo-robot.github.io/VAMPO/는 홈페이지입니다."
-  },
-  {
-    "title": "Speculative Policy Orchestration: A Latency-Resilient Framework for Cloud-Robotic Manipulation",
-    "original_title": "Speculative Policy Orchestration: A Latency-Resilient Framework for Cloud-Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2603.19418",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "클라우드 로보틱스 제어를 위한_latency-resilient_ 프레임워크, SPO는 네트워크 지연과 버퍼링을 고려하여 클라우드에서 예측한 경로를 에지 노드로 전송하는 방식으로, 실제 실행 오류를 bounded하게 하는 ε-튜브-verifier를 사용하여 안정적인 제어를 가능하게 함."
-  },
-  {
-    "title": "Zero Shot Soft Robot Deformation Reconstruction 방법",
-    "original_title": "Zero Shot Deformation Reconstruction for Soft Robots Using a Flexible Sensor Array and Cage Based 3D Gaussian Modeling",
-    "link": "https://arxiv.org/abs/2603.19543",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국 소프트 로봇의 형태 변형을 위한 zero-shot framework를 제안했다. 이 방식은 시각적_SUPERVISION도 필요하지 않고, 이전에 보지 않은 소프트 로봇의 형태 변형을 추정할 수 있다. 알고리즘은 피조레스리스티브 센서 배열과 3D Gaussian 모델을 결합하는데, 이를 사용하여 실제로 tactile sensing 정보를 분석하여 형태 변형을 예측한다."
-  },
-  {
-    "title": "ContractionPPO: certified reinforcement learning via differentiable contraction layers",
-    "original_title": "ContractionPPO: Certified Reinforcement Learning via Differentiable Contraction Layers",
-    "link": "https://arxiv.org/abs/2603.19632",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "robots의 robust planning 및 control을 위한 certified framework, ContractionPPO를 발표하였다. PPORL에 state-dependent contraction metric layer를 추가하여 policy가 성능을 최대화하면서 simulated closed-loop system의 incremental exponential stability를 certify하는 방식을 제안했다. hardware experiments result, quadruped locomotion experiment에서는 strong external perturbations 하에서도 robust, certifiably stable control이 가능하게 하는 것을 확인하였다."
-  },
-  {
-    "title": "Morphology-Consistent Humanoid Interaction through Robot-Centric Video Synthesis",
-    "original_title": "Morphology-Consistent Humanoid Interaction through Robot-Centric Video Synthesis",
-    "link": "https://arxiv.org/abs/2603.19709",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "휴먼형 로봇의 다양하고 일관성 있는 상호작용을 가능하게 하는 로봇 중심 비디오 생성 프레임워크를 제안함으로써, 로봇과 대상 객체의 움직임을 일관성 있게 표현할 수 있음. 이 프레임워크는 로봇-native 조인트 트래키스트를 추출하여 실행하는 일반적 목차제어기를 사용하여, 상호작용을 실현하고 있는 방식으로, 이전에 인간-로봇 접근 제한 문제를 해결함."
-  },
-  {
-    "title": "AGILE: Comprehensive Workflow for Humanoid Loco-Manipulation Learning",
-    "original_title": "AGILE: A Comprehensive Workflow for Humanoid Loco-Manipulation Learning",
-    "link": "https://arxiv.org/abs/2603.20147",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "인간형 로보틱스RL의 성능을 개선하기 위한 종합 워크플로우 AGILE를 발표했습니다. 이 workflow는 4단계 구조를 보유하고 있습니다. 첫 번째 단계는 환경 확인, 두 번째 단계는 reproducible 훈련, 세 번째 단계는 통합 평가, 마지막으로 네 번째 단계는 로보틱스 구성을 위한 데스크립터에서 드라이브한 배포를 통해 성능을 개선합니다."
-  },
-  {
-    "title": "Pedestrian Crossing Intent Prediction via Psychological Features and Transformer Fusion",
-    "original_title": "Pedestrian Crossing Intent Prediction via Psychological Features and Transformer Fusion",
-    "link": "https://arxiv.org/abs/2603.19533",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "심층 사회적 구조를 결합한 보행자 의도 예측 모델을 제안합니다. 이 모델은 4가지 행동 스트림을 고속 4-token Transformer와 글로벌 셀프 애티넨 풀링을 사용하여 조인하고, 불확실성을 quantify하기 위해 두 가지 상보적 헤드를 추가했습니다. 이러한 구성 요소들은 효율적인 기능과 신뢰할 수 있는 예측 결과를 제공합니다. PSI 1.0 벤치마크에서 우리의 모델은 0.9 F1, 0.94 AUC-ROC, 0.78 MCC를 달성하고, PSI 2.0 데이터세트에서는 0.78 F1, 0.79 AUC-ROC을 성과했습니다."
   }
 ]
