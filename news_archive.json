@@ -288,6 +288,78 @@
     "summary": "arXiv:2605.18746v1 Announce Type: cross \nAbstract: Spatial intelligence unfolds through a perception-action loop: agents act to acquire observations, and reason about how observations vary as a function of action. Rather than passively processing what is seen, they actively uncover what is unseen - occluded structure, dynamics, containment, and functionality that cannot be resolved from passive sensing alone. We move beyond prior formulations of spatial intelligence that assume oracle observations by recasting the observer as an actor. We introduce ESI-BENCH, a comprehensive benchmark for embodied spatial intelligence spanning 10 task categories and 29 subcategories built on OmniGibson, grounded in Spelke's core knowledge systems. Agents must decide what abilities to deploy - perception, locomotion, and manipulation - and how to sequence them to actively accumulate task-relevant evidence. We conduct extensive experiments on state-of-the-art MLLMs and find that active exploration substantially outperforms passive counterparts, with agents spontaneously discovering emergent spatial strategies without explicit instructions, while random multi-view often adds noise rather than signal despite consuming far more images. Most failures stem not from weak perception but from action blindness: poor action choices lead to poor observations, which in turn drive cascading errors. While explicit 3D grounding stabilizes reasoning on depth-sensitive tasks, imperfect 3D representation proves more harmful than 2D baselines by distorting spatial relations. Human studies further reveal that unlike humans who seek falsifying viewpoints and revise beliefs under contradiction, models commit prematurely with high confidence regardless of evidence quality, exposing a metacognitive gap that neither better perception nor more embodied interaction alone can close."
   },
   {
+    "title": "DexWild: Dexterous Human Interactions for In-the-Wild Robot Policies",
+    "original_title": "DexWild: Dexterous Human Interactions for In-the-Wild Robot Policies",
+    "link": "https://arxiv.org/abs/2505.07813",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2505.07813v2 Announce Type: replace \nAbstract: Large-scale, diverse robot datasets have emerged as a promising path toward enabling dexterous manipulation policies to generalize to novel environments, but acquiring such datasets presents many challenges. While teleoperation provides high-fidelity datasets, its high cost limits its scalability. Instead, what if people could use their own hands, just as they do in everyday life, to collect data? In DexWild, a diverse team of data collectors uses their hands to collect hours of interactions across a multitude of environments and objects. To record this data, we create DexWild-System, a low-cost, mobile, and easy-to-use device. The DexWild learning framework co-trains on both human and robot demonstrations, leading to improved performance compared to training on each dataset individually. This combination results in robust robot policies capable of generalizing to novel environments, tasks, and embodiments with minimal additional robot-specific data. Experimental results demonstrate that DexWild significantly improves performance, achieving a 68.5% success rate in unseen environments-nearly four times higher than policies trained with robot data only-and offering 5.8x better cross-embodiment generalization. Video results, codebases, and instructions at https://dexwild.github.io"
+  },
+  {
+    "title": "GRaD-Nav++: Vision-Language Model Enabled Visual Drone Navigation with Gaussian Radiance Fields and Differentiable Dynamics",
+    "original_title": "GRaD-Nav++: Vision-Language Model Enabled Visual Drone Navigation with Gaussian Radiance Fields and Differentiable Dynamics",
+    "link": "https://arxiv.org/abs/2506.14009",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2506.14009v2 Announce Type: replace \nAbstract: Autonomous drones capable of interpreting and executing high-level language instructions in unstructured environments remain a long-standing goal. Yet existing approaches are constrained by their dependence on hand-crafted skills, extensive parameter tuning, or computationally intensive models unsuitable for onboard use. We introduce GRaD-Nav++, a lightweight Vision-Language-Action (VLA) framework that runs fully onboard and follows natural-language commands in real time. Our policy is trained in a photorealistic 3D Gaussian Splatting (3DGS) simulator via Differentiable Reinforcement Learning (DiffRL), enabling efficient learning of low-level control from visual and linguistic inputs. At its core is a Mixture-of-Experts (MoE) action head, which adaptively routes computation to improve generalization while mitigating forgetting. In multi-task generalization experiments, GRaD-Nav++ achieves a success rate of 83% on trained tasks and 75% on unseen tasks in simulation. When deployed on real hardware, it attains 67% success on trained tasks and 50% on unseen ones. In multi-environment adaptation experiments, GRaD-Nav++ achieves an average success rate of 81% across diverse simulated environments and 67% across varied real-world settings. These results establish a new benchmark for fully onboard Vision-Language-Action (VLA) flight and demonstrate that compact, efficient models can enable reliable, language-guided navigation without relying on external infrastructure."
+  },
+  {
+    "title": "Therapist-Exoskeleton-Patient Interaction for Gait Therapy",
+    "original_title": "Therapist-Exoskeleton-Patient Interaction for Gait Therapy",
+    "link": "https://arxiv.org/abs/2507.16059",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2507.16059v2 Announce Type: replace \nAbstract: Following a stroke, individuals often experience mobility and balance impairments due to lower-limb weakness and loss of independent joint control. Gait recovery is a key goal of rehabilitation, traditionally achieved through high-intensity therapist-led training. However, manual assistance can be physically demanding and limits the therapist's ability to interact with multiple joints simultaneously. Robotic exoskeletons offer multi-joint support, reduce therapist strain, and provide objective feedback, but current control strategies often limit therapist involvement and adaptability. We present a novel gait rehabilitation paradigm based on physical Human-Robot-Human Interaction (pHRHI), where both the therapist and the post-stroke individual wear lower-limb exoskeletons virtually connected at the hips and knees via spring-damper elements. This enables bidirectional interaction, allowing the therapist to guide movement and receive haptic feedback. In a study with eight chronic stroke patients, pHRHI training outperformed conventional therapist-guided treadmill walking, leading to increased joint range of motion, step metrics, muscle activation, and motivation. These results highlight pHRHI's potential to combine robotic precision with therapist intuition for improved rehabilitation outcomes."
+  },
+  {
+    "title": "Do Robots Really Need Anthropomorphic Hands? A Comparison of Human and Robotic Hands",
+    "original_title": "Do Robots Really Need Anthropomorphic Hands? A Comparison of Human and Robotic Hands",
+    "link": "https://arxiv.org/abs/2508.05415",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2508.05415v3 Announce Type: replace \nAbstract: Human manipulation skills represent a pinnacle of their voluntary motor functions, requiring the coordination of many degrees of freedom and processing of high-dimensional sensor input to achieve remarkable dexterity. Thus, we set out to answer whether the human hand, with its associated biomechanical properties, sensors, and control mechanisms, is an ideal that we should strive for in robotics. Do robots need anthropomorphic hands?\n  We start by extracting characteristics of the human hand in terms of biomechanics and perception to compare them with currently commercially available robotic hands. From this comparison, we derive our research questions that connect manipulation system complexity to skill repertoire size and dexterity. We attempt to answer these with a systematic literature review, in which we analyze the manipulation capabilities demonstrated in 125 papers from 2019-2025.\n  Although complex five-fingered hands are often considered the ultimate goal for robotic manipulators, they are not necessary for all tasks. We find that in-hand manipulation does not benefit from anthropomorphic hand design as simpler mechanisms are sufficient, but mechanism complexity correlates with the breadth of manipulation tasks a hand can perform. Sensor integration and intelligent manipulation strategies remain underexplored, which may be because of a misalignment with hand design: instead of replicating the number of fingers and degrees of freedom, focusing on robustness and softness would allow more intelligent control and learning to exploit environmental contacts and integrate more sensors. Finally, we argue for standardized evaluation criteria to enable systematic comparison of hand designs and manipulation systems."
+  },
+  {
+    "title": "FUNCanon: Learning Pose-Aware Action Primitives via Functional Object Canonicalization for Generalizable Robotic Manipulation",
+    "original_title": "FUNCanon: Learning Pose-Aware Action Primitives via Functional Object Canonicalization for Generalizable Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2509.19102",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2509.19102v2 Announce Type: replace \nAbstract: General-purpose robotic skills from end-to-end demonstrations often leads to task-specific policies that fail to generalize beyond the training distribution. Therefore, we introduce FunCanon, a framework that converts long-horizon manipulation tasks into sequences of action chunks, each defined by an actor, verb, and object. These chunks focus policy learning on the actions themselves, rather than isolated tasks, enabling compositionality and reuse. To make policies pose-aware and category-general, we perform functional object canonicalization for functional alignment and automatic manipulation trajectory transfer, mapping objects into shared functional frames using affordance cues from large vision language models. An object centric and action centric diffusion policy FuncDiffuser trained on this aligned data naturally respects object affordances and poses, simplifying learning and improving generalization ability. Experiments on simulated and real-world benchmarks demonstrate category-level generalization, cross-task behavior reuse, and robust sim2real deployment, showing that functional canonicalization provides a strong inductive bias for scalable imitation learning in complex manipulation domains. Details of the demo and supplemental material are available on our project website https://sites.google.com/view/funcanon."
+  },
+  {
+    "title": "PLATO Hand: Shaping Contact Behavior with Fingernails for Precise Manipulation",
+    "original_title": "PLATO Hand: Shaping Contact Behavior with Fingernails for Precise Manipulation",
+    "link": "https://arxiv.org/abs/2602.05156",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.05156v2 Announce Type: replace \nAbstract: We present the PLATO Hand, a dexterous robotic hand with a hybrid fingertip that combines a rigid fingernail, embedded distal phalanx, and compliant pulp to shape contact behavior during manipulation. \\rrev{By mechanically organizing how contact is initiated, supported, and transmitted at the fingertip, this structure creates stable and task-relevant contact conditions across diverse object geometries and grasp orientations.} We develop a strain-energy-based bending--indentation model to guide the fingertip design and to explain how material stiffness and contact geometry govern deformation partitioning within the fingertip. \\rrev{Experiments show improved pinch stability, improved fingernail-mediated dorsal-contact force transmission and proprioceptive observability}, and successful execution of edge-sensitive manipulation tasks, including paper singulation, card picking, and orange peeling. These results show that coupling a mechanically structured contact interface with a force-motion-transparent finger mechanism provides a principled approach to precise manipulation. Our project page is at: https://platohand.github.io"
+  },
+  {
+    "title": "Self-Supervised Bootstrapping of Action-Predictive Embodied Reasoning",
+    "original_title": "Self-Supervised Bootstrapping of Action-Predictive Embodied Reasoning",
+    "link": "https://arxiv.org/abs/2602.08167",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.08167v2 Announce Type: replace \nAbstract: Embodied Chain-of-Thought (CoT) reasoning has significantly enhanced Vision-Language-Action (VLA) models, yet current methods rely on rigid templates to specify reasoning primitives (e.g., objects in the scene, high-level plans, structural affordances). These templates can force policies to process irrelevant information that distracts from critical action-prediction signals. This creates a bottleneck: without successful policies, we cannot verify reasoning quality; without quality reasoning, we cannot build robust policies. We introduce R&B-EnCoRe, which enables models to bootstrap embodied reasoning from internet-scale knowledge through self-supervised refinement. By treating reasoning as a latent variable within importance-weighted variational inference, models can generate and distill a refined reasoning training dataset of embodiment-specific strategies without external rewards, verifiers, or human annotation. We validate R&B-EnCoRe across manipulation (Franka Panda in simulation, WidowX in hardware), legged navigation (bipedal, wheeled, bicycle, quadruped), and autonomous driving embodiments using various VLA architectures with 1B, 4B, 7B, and 30B parameters. Our approach achieves 28% gains in manipulation success, 101% improvement in navigation scores, and 21% reduction in collision-rate metric over models that indiscriminately reason about all available primitives. R&B-EnCoRe enables models to distill reasoning that is predictive of successful control, bypassing manual annotation engineering while grounding internet-scale knowledge in physical execution."
+  },
+  {
+    "title": "Real-to-Sim for Highly Cluttered Environments via Physics-Consistent Inter-Object Reasoning",
+    "original_title": "Real-to-Sim for Highly Cluttered Environments via Physics-Consistent Inter-Object Reasoning",
+    "link": "https://arxiv.org/abs/2602.12633",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.12633v2 Announce Type: replace \nAbstract: Reconstructing physically valid 3D scenes from single-view observations is a prerequisite for bridging the gap between visual perception and robotic control. However, in scenarios requiring precise contact reasoning, such as robotic manipulation in highly cluttered environments, geometric fidelity alone is insufficient. Standard perception pipelines often neglect physical constraints, resulting in invalid states, e.g., floating objects or severe inter-penetration, rendering downstream simulation unreliable. To address these limitations, we propose a novel physics-constrained Real-to-Sim pipeline that reconstructs physically consistent 3D scenes from single-view RGB-D data. Central to our approach is a differentiable optimization pipeline that explicitly models spatial dependencies via a contact graph, jointly refining object poses and physical properties through differentiable rigid-body simulation. Extensive evaluations in both simulation and real-world settings demonstrate that our reconstructed scenes achieve high physical fidelity and faithfully replicate real-world contact dynamics, enabling stable and reliable contact-rich manipulation."
+  },
+  {
     "title": "Comau to acquire Brazilian intralogistics and warehouse automation company Invent",
     "original_title": "Comau to acquire Brazilian intralogistics and warehouse automation company Invent",
     "link": "https://roboticsandautomationnews.com/2026/05/18/comau-to-acquire-brazilian-intralogistics-and-warehouse-automation-company-invent/101673/",
@@ -2194,6 +2266,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "34 Best Humanoid Robots [2026 Ranked]  Robozaps"
+  },
+  {
+    "title": "Most Advanced Humanoid Robots You Can Buy in 2026 (Ranked) - Robozaps",
+    "original_title": "Most Advanced Humanoid Robots You Can Buy in 2026 (Ranked) - Robozaps",
+    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBNazNyWTR3SDZ6MXQ0SGpnVlp0WHFCYUExNzlQYXRXbmd1TnpSUmMwUWlHdnRZUFB6cTFfVldRd3c4Ui1mVk54NGNlRk82Sl84bS1wUUViNlVoV0tRdzVMSE9EUG9td3BKVFVMOE5aOA?oc=5",
+    "date": "2026-05-13 07:00",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Most Advanced Humanoid Robots You Can Buy in 2026 (Ranked)  Robozaps"
   },
   {
     "title": "Video. China’s Unitree unveils transformable humanoid ‘mecha’ robot with cockpit - Euronews.com",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "US AI와 중국의 하드웨어 간 경쟁에서 전선 긋는 TSMC의 웨이는 미국 AI를 강조하며, 중국의 하드웨어를 경계하기로 했다. 이 계획은 로봇 산업의 차세대 경쟁을 가리키는 핵심 전략임으로서, 세계적 기업들은 주목하고 있는 상황임."
-  },
-  {
-    "title": "아메리칸스 페이온 타임 ~로보트 군의 금융",
-    "original_title": "“Americans pay on time” – How US companies like are financing China’s robot army - Adafruit",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZF9HRUtxNFBxUHIwekVXQWtFNTh5cG41MjkwZmM2Zkc1ZXMxREtSaXJTd1dad0M0Tl9temZiaHk3TjlSNUJpdkVVcC1VNEFWeU9DTWYzZmFocUtIVHd3eFNLUHBnazNWMF9VZktTbjRyRHRxZURlWkg3YmdIWlR6UFJaVVN1RXNPY1FDX3VkQllOdEszNUQ2d05ZQUVlSXBjUmhIM2lBV0Eyby1vZnY3TmIzWQ?oc=5",
-    "date": "2026-03-23 21:30",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "미국 회사들이 중국 로봇 군을 tài 자금으로 지원하는 방식을 설명합니다. 예를 들어, US 회사는 10억 달러 이상을 투자하여 중국 로봇 제조업체의 개발에 사용하고 있습니다."
-  },
-  {
-    "title": "브라운 대학의 신경 과학자들이 개발한 인공 신경망이 4각 동물의 걸음 패턴을 복제함",
-    "original_title": "Artificial neural network reproduces gait patterns of four-legged animals",
-    "link": "https://techxplore.com/news/2026-03-artificial-neural-network-gait-patterns.html",
-    "date": "2026-03-23 21:20",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "브라운 대학의 카니 연구소 신경 과학자가 개발한 인공 신경망은 4각 동물이 다수의 고유 걸음 패턴을 생성하는 방식을 보여준다. 이 연구는 복잡한 행위 처리에 대한 새로운 통찰을 제공하고 있다."
-  },
-  {
-    "title": "humanooid robot",
-    "original_title": "Five-level model rates humanoid robots across mobility, manipulation and cognition",
-    "link": "https://techxplore.com/news/2026-03-humanoid-robots-mobility-cognition.html",
-    "date": "2026-03-23 21:20",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "Fraunhofer HNFIZ의 연구팀이 개발한 5단계 모델은 인간사용 로봇의 기술 기능을 분류합니다. 이 모델은 로봇의 이동성, 조작성, 지각성을 고려하여 인간사용 로봇을 평가하며, 특정 애플리케이션에 맞는 로봇을 찾는 데 도움이 되며, 기술 개발에서 열린 문제를 강조합니다."
-  },
-  {
-    "title": "NVIDIA 이GX Thor",
-    "original_title": "NVIDIA IGX Thor Powers Industrial, Medical, and Robotics Edge AI Applications | NVIDIA Technical Blog - NVIDIA Developer",
-    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNaUgya01hLUFsVDNpbjVtMHAyanhqSUVDQUZiSnVTN3NqQTJuUy1LRUJHRkZTSlppUkYwdEo2dWMtMk1rVzZyOGxMQU9VOGN6bXBrd2FyanpfNVhtRzZDTkNHZk83SEs5blBPVFZlM2pFdEZHZS1md25aWmVKamhJNEZoTEtabm1FLUNXUXN1amR6RjZXYnFuLUJmTUlOMDNsNnJDNVB2dzUyQmRhZ0Fv?oc=5",
-    "date": "2026-03-23 20:28",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA 이GX Thor는 산업, 의료 및 로보틱스 에지 AI 애플리케이션을 구동하는 강력한 플랫폼으로, 30배 가속화된 성능과 10배 개선된 에너지 효율성을 제공하여 Edge AI 개발을 쉽게 합니다. 이 기기는 NVIDIA의 Tegra X1 처리 장치와 함께 작동하며, 3D 모델링, computer vision, 및 natural language processing 등 다양한 AI 애플리케이션에 적용할 수 있습니다."
-  },
-  {
-    "title": "Vention 출시 AI",
-    "original_title": "Vention releases Rapid Operator AI to automate deep bin picking",
-    "link": "https://www.therobotreport.com/vention-releases-rapid-operator-ai-automate-deep-bin-picking/",
-    "date": "2026-03-23 19:44",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "벤치언의 'Rapid Operator AI'를 통해 중소·대기업 제조업체들이 다중shift 공정에서 깊은-bin 수거 자동화 방안을 개발함."
-  },
-  {
-    "title": "Renault의 350호인 인공체 로봇 배치 계획",
-    "original_title": "Renault reportedly planning to deploy 350 humanoid robots in manufacturing push",
-    "link": "https://roboticsandautomationnews.com/2026/03/23/renault-reportedly-planning-to-deploy-350-humanoid-robots-in-manufacturing-push/100050/",
-    "date": "2026-03-23 18:41",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "자동차 제조 업계 Renault는 향후 18개월 간 제조 시설에서 350호인 인공체 로봇을 배치할 계획을 갖고 있습니다. 이.initiative는 Wandercraft와의 파트너쉽으로 개발된 것입니 다."
-  },
-  {
-    "title": "Carbon Robotics $100만 달러 수준의 연간 매출을 경상함",
-    "original_title": "Carbon Robotics surpasses $100 million in annual revenue as agricultural AI adoption accelerates",
-    "link": "https://roboticsandautomationnews.com/2026/03/23/carbon-robotics-surpasses-100-million-in-annual-revenue-as-agricultural-ai-adoption-accelerates/100047/",
-    "date": "2026-03-23 17:58",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Carbon Robotics는 2026년 1월 31일까지의 회계연도에 100만 달러 이상의 연간 매출을 돌파하여, 농업 AI 및 로봇 기업으로서 주요 마일스톤을 달성하였다. 이 회사는 농업용 AI 시스템 개발업체로 15개국에 걸쳐 운영 중 있으며, 북아메리카, 유럽, 호주 등에서 강한 존재를 보이고 있다.\n\n(Note: The output follows the strict rules you provided, with a Korean title and summary separated by \""
-  },
-  {
-    "title": "league of legends와 ai-DrivenCompetitive Gaming플랫폼의 미래",
-    "original_title": "League of Legends and the Future of AI-Driven Competitive Gaming Platforms",
-    "link": "https://roboticsandautomationnews.com/2026/03/23/league-of-legends-and-the-future-of-ai-driven-competitive-gaming-platforms/100044/",
-    "date": "2026-03-23 17:40",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "리그 오브 레전드가 경쟁적인 디지털 엔터테인먼트 기술을 새로운 패러다임으로 재편하고 있다. AI 드라이븐 플랫폼은 플레이어 경험을 관리하고 성능을 최적화하며 공정한 경쟁을 유지하는 데 의존하고 있다."
-  },
-  {
-    "title": "Unitree 로보틱스 ~610억원 IPO 신청, 상하이증권거래소에 제출됨",
-    "original_title": "After viral martial arts demos, Unitree Robotics files for $610M IPO in Shanghai - Tech Funding News",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQzFyQlBmYjQ5UnpFOTdYRlZSM0NpR2ZYUl8zTEJka0s4TG1TTjk3clFfT21hUHZISnZWWDB5eTJubjNwSElHeG1CMHRuZGlfMXlGV2N6bG92d0E3T1FmcmdQMDFrQm1TRFBkTUdQbWFXQUw4aUhvdW8wSGdLZ09kNThJUkVuTk5lWk9KNW9PYlRkV1VuYVpmXzRMdGpENmRQNVRaV0p4WmF6cFU?oc=5",
-    "date": "2026-03-23 17:21",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree 로보틱스가 viral 마술 예술 쇼 demos 이후로 610억원 규모의 IPO를 상하이증권거래소에 제출하여 글로벌 인공지능(AI) 로봇 산업 발전에 중요한一步을 내딘 것임._UNITREE 로보틱스는 AI 기반 인체 모방 로봇을 개발해 세계 최초로 마술 예술 쇼에서 활용한 적이 있는 회사로, 이번 IPO는 610억원 규모로 최대 10배 확장되는 계획임."
   }
 ]
