@@ -1,5 +1,77 @@
 [
   {
+    "title": "No Plan, Yet Human: A Reactive Robotics Model Predicts Human Planning Failures on a Clinical Task",
+    "original_title": "No Plan, Yet Human: A Reactive Robotics Model Predicts Human Planning Failures on a Clinical Task",
+    "link": "https://arxiv.org/abs/2605.16514",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.16514v1 Announce Type: new \nAbstract: Understanding why some sequential planning problems are harder than others requires models that go beyond average performance. They should capture the specific pattern of which problems are hard, and ideally fail in the same way people do when planning capacity is reduced. We apply AICON, a reactive gradient-descent framework developed for robotic manipulation, to the Tower of London test, a cognitive test used to assess planning in Parkinson's disease, mild cognitive impairment, and stroke. Without any lookahead planning or knowledge of human cognition, AICON reproduces the fine-grained human difficulty ordering across 24 problems better than structural task parameters and generalizes to held-out problems in a leave-two-out evaluation. Crucially, AICON outperforms a planning baseline for groups with reduced planning capacity while the planning baseline better captures healthy controls. This dissociation was predicted by the original AICON paper, which noted that the model's failure modes resemble those of Parkinson's patients who struggle with goal hierarchies but not move counts. This suggests that as planning capacity is reduced, human behavior shifts toward the reactive mode AICON models. The finding extends a broader pattern: AICON, originally built for robotics, now captures aspects of biological behavior across perception, eye movements, and sequential planning, suggesting its core abstraction reflects something real about how biological systems are organized."
+  },
+  {
+    "title": "Nori Bot: A Sub-$1,000 Floor-to-Counter Mobile Manipulator",
+    "original_title": "Nori Bot: A Sub-$1,000 Floor-to-Counter Mobile Manipulator",
+    "link": "https://arxiv.org/abs/2605.16537",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.16537v1 Announce Type: new \nAbstract: Open-source mobile manipulators have reached $660 (XLeRobot) but every sub-$1,000 platform shares three limitations: a fixed-height workspace, reactive-only control, and no protection against the stall-induced burn-out that destroys cheap Feetech servos. We present Nori Bot, a 17-DoF dual-arm mobile manipulator at $947 (~3% the cost of comparable commercial platforms) that addresses all three: (1) a 600mm Z-axis lift on the existing servo bus for floor-to-counter reach; (2) a thin-client Raspberry Pi 4 paired with the OpenClaw proactive agent runtime so cron jobs and hooks trigger physical tasks autonomously; and (3) a software safety stack with sensorless grip-force feedback via motor current on a soft TPU finger. Code, CAD, and the skill manifest will be released."
+  },
+  {
+    "title": "LACE: Latent Visual Representation for Cross-Embodiment Learning",
+    "original_title": "LACE: Latent Visual Representation for Cross-Embodiment Learning",
+    "link": "https://arxiv.org/abs/2605.16743",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.16743v1 Announce Type: new \nAbstract: Cross-embodiment learning from human demonstrations is hindered by the visual gap between human and robot embodiments. While self-supervised learning (SSL) backbones encode rich inter-class semantics of general objects, we show they fail to establish correspondence between human and robot hands. We propose LACE, a framework that aligns human and robot visual representations in the latent space of these backbones by leveraging correspondences between shared body parts across embodiments as sparse supervision. These annotations can be automatically obtained via forward kinematics, and single robot demonstration is sufficient to train the model. Our semantic alignment loss matches distributions incurred by corresponding features, lifting patch-level supervision to semantic-level alignment, while a Gram loss preserves pretrained feature quality. This alignment enables robot policies to leverage abundant human data when robot demonstrations are scarce: in zero-shot transfer, policies using LACE-DINO outperform those using DINO by a large margin (65\\%), with consistent gains in low-data regimes and out-of-distribution environments."
+  },
+  {
+    "title": "Pedestrian-Aware LLM-Driven Behavioral Planning for Autonomous Vehicles",
+    "original_title": "Pedestrian-Aware LLM-Driven Behavioral Planning for Autonomous Vehicles",
+    "link": "https://arxiv.org/abs/2605.16858",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.16858v1 Announce Type: new \nAbstract: Autonomous Vehicles (AVs) must make reliable decisions in dense urban environments where pedestrian behavior is variable, sometimes abnormal, and often unseen during training. Reinforcement learning (RL)-based AV control systems perform well in structured traffic but struggle to generalize to unpredictable pedestrian interactions and out-of-distribution scenarios. Their reliance on handcrafted rewards and opaque decisions further limits their suitability for safety-critical, pedestrian-rich environments. To address these limitations, we introduce a Large Language Model (LLM)-based decision-making framework for pedestrian-aware behavioral planning. The system converts structured scene observations into natural-language reasoning prompts, enabling the LLM to infer pedestrian intent, anticipate risk, and generate cautious tactical driving decisions. These decisions are executed by a motion planner that ensures smooth, kinematically feasible control. We evaluate the framework in SUMO across multiple pedestrian-interaction scenarios, including unexpected jaywalking, turn-back crossing, hesitation, and bidirectional crossing. In zero-shot evaluation, the LLM-based agent achieves a 68% collision-free success rate, substantially outperforming deep RL baselines (17.7%). With few-shot episodic memory in a single-pedestrian scenario, performance increases to 96.0%, exceeding a custom DQN controller (82.0%). Cross-behavior evaluation further shows that memory derived from turn-back interactions transfers to unseen hesitation and bidirectional crossing scenarios, achieving 82.0% and 90.0% success, respectively. The system consistently initiates earlier responses, maintains wider safety buffers, and produces interpretable, human-aligned decisions."
+  },
+  {
+    "title": "SADP: Subgoal-Aware Diffusion Policy for Explainable Robots Learned from Foundation Model Generated Demonstrations",
+    "original_title": "SADP: Subgoal-Aware Diffusion Policy for Explainable Robots Learned from Foundation Model Generated Demonstrations",
+    "link": "https://arxiv.org/abs/2605.16871",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.16871v1 Announce Type: new \nAbstract: Explainable robots require not only successful task execution but also the ability to expose internal decision-making process in a user-friendly manner. However, most imitation learning methods are trained solely on task-level demonstrations, without explicitly modeling subgoal structure or execution progress. This limitation is further exacerbated by the scarcity of subgoal-level supervision in standard robot learning datasets, which restricts the development of robots that can convey the subtasks they are executing during long-horizon manipulation. To address this issue, this paper proposes Subgoal-Aware Diffusion Policy (SADP), a framework that leverages foundation models to autonomously generate subgoal-annotated demonstrations and trains diffusion policies on these datasets. SADP structures policy execution around human-interpretable subgoals by conditioning action generation on both task-level and subgoal-level descriptions. A lightweight auxiliary head further predicts subgoal completion states, allowing the robot to expose its current execution stage and monitor subgoal progression. Experiments in RLBench simulations and real-world evaluations on a UR5e robot demonstrate that SADP achieves higher task success rates than strong task-conditioned diffusion baselines, while providing subgoal-level execution signals for monitoring progress and diagnosing failures. These results highlight that built-in, rather than post-hoc, interpretability can coexist with high task performance."
+  },
+  {
+    "title": "Beyond Safety Filtering: Control Barrier Function-Informed Reinforcement Learning for Connected and Automated Vehicles",
+    "original_title": "Beyond Safety Filtering: Control Barrier Function-Informed Reinforcement Learning for Connected and Automated Vehicles",
+    "link": "https://arxiv.org/abs/2605.16894",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.16894v1 Announce Type: new \nAbstract: Reinforcement Learning (RL) uses rewards to guide learning, yet reward design is typically hand-crafted using heuristics that can be difficult to tune. We propose a Control Barrier Function (CBF)-informed reward design for Multi-Agent RL (MARL) that converts CBF constraint values under joint MARL actions into a reward signal that explicitly guides safe learning. We compare against two heuristic reward baselines in a four-way multi-lane intersection with connected and automated vehicles. Results show that our method achieves the highest task performance and is less sensitive to reward hyperparameters, yielding consistently strong performance across the tested hyperparameter range. Code for reproducing the experimental results and a video demonstration are available at https://github.com/bassamlab/SigmaRL."
+  },
+  {
+    "title": "NORM-Nav: Zero-Shot Mobile Robot Navigation with Natural Language Behavioral Constraints",
+    "original_title": "NORM-Nav: Zero-Shot Mobile Robot Navigation with Natural Language Behavioral Constraints",
+    "link": "https://arxiv.org/abs/2605.16979",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.16979v1 Announce Type: new \nAbstract: Mobile robots operating in human-centered environments must generate not only collision-free paths but also trajectories that follow local behavioral conventions. Conventional costmap-based navigation emphasizes geometric feasibility and often overlooks such requirements, which can result in socially inappropriate behaviors. This paper presents NORM-Nav, a zero-shot framework that integrates natural language behavioral constraints into costmap-based planning. An LLM parses each instruction into structured constraints and grounds them using real-time vision--LiDAR perception. These constraints are encoded as multi-layer costmaps that represent geometric, semantic, directional, and velocity cues and are directly compatible with standard grid-based planners. Simulation and real-world experiments indicate that NORM-Nav improves task success rates and produces trajectories closer to human references than representative baselines. The project website is available at https://ei-nav.github.io/NORM-Nav."
+  },
+  {
+    "title": "Generalizable and Actionable Parts Pose Estimation with Symmetry Annotation-Free Learning Strategy",
+    "original_title": "Generalizable and Actionable Parts Pose Estimation with Symmetry Annotation-Free Learning Strategy",
+    "link": "https://arxiv.org/abs/2605.17033",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.17033v1 Announce Type: new \nAbstract: Urgently needed generalizable robot object interaction and manipulation requires high-quality Cross-Category object perception. As a pioneer of this area, Generalizable and Actionable Parts (GAParts) understanding has attracted increasing attention from relevant researchers. However, most recent works either have insufficient design regarding the symmetry issue or require rich symmetry annotation, which severely impedes precise GAPart pose estimation in data-lacking scenarios. In this paper, we propose SAFAG, a novel Symmetry Annotation-Free framework for Generalizable and Actionable Parts Pose Estimation. Specifically, we suggest a stepwise refinement two-stage framework for candidate-to-final quaternion regression, and tackle the symmetry prediction as a probability distribution problem with self-supervised learning strategy. The experimental results demonstrate the superior performance and robustness of our SAFAG. We believe that our work has the enormous potential to be applied in many areas of embodied AI system."
+  },
+  {
     "title": "Comau to acquire Brazilian intralogistics and warehouse automation company Invent",
     "original_title": "Comau to acquire Brazilian intralogistics and warehouse automation company Invent",
     "link": "https://roboticsandautomationnews.com/2026/05/18/comau-to-acquire-brazilian-intralogistics-and-warehouse-automation-company-invent/101673/",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "심층 사회적 구조를 결합한 보행자 의도 예측 모델을 제안합니다. 이 모델은 4가지 행동 스트림을 고속 4-token Transformer와 글로벌 셀프 애티넨 풀링을 사용하여 조인하고, 불확실성을 quantify하기 위해 두 가지 상보적 헤드를 추가했습니다. 이러한 구성 요소들은 효율적인 기능과 신뢰할 수 있는 예측 결과를 제공합니다. PSI 1.0 벤치마크에서 우리의 모델은 0.9 F1, 0.94 AUC-ROC, 0.78 MCC를 달성하고, PSI 2.0 데이터세트에서는 0.78 F1, 0.79 AUC-ROC을 성과했습니다."
-  },
-  {
-    "title": "3D초음파 재구성 플랫폼과 성능 보장 프레임워크",
-    "original_title": "A Unified Platform and Quality Assurance Framework for 3D Ultrasound Reconstruction with Robotic, Optical, and Electromagnetic Tracking",
-    "link": "https://arxiv.org/abs/2603.20077",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "3D 초음파(Ultrasound)가 진단, 치료 계획 및 이미지 지향 요법에 용이하되나 현재 연구들이 볼륨 정확도 및 재현 가능성을 종합적으로 평가하지 않고 있다는 점을 강조하며 tracked 3D US 재구성의 robust 성능 보장 프레임워크를 제공하고자 한다. 이 연구는 3D US 재구성에 대한 QA 프레임워크와 flexibel한 오픈 소스 플랫폼을 제안하는데, 다양한 상미 속성을 갖는 커스텀 피노트를 사용하여 freehand 또는 로보틱 적qusition을 지원하는 tracked 3D US 재구성의 성능을 평가할 수 있다."
-  },
-  {
-    "title": "PhyGile: 물리학Prefix 가이드 모션 생성",
-    "original_title": "PhyGile: Physics-Prefix Guided Motion Generation for Agile General Humanoid Motion Tracking",
-    "link": "https://arxiv.org/abs/2603.19305",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "로봇의 기계적 성질을 고려하여 민첩한 generalize humanoid 모션 추적을 가능하게 하는 unified 프레임워크를 introduce합니다. 이 프레임워크는 물리학Prefix를 사용하여 로봇-자체 모션 생성을 수행하고, inference 시간에 로봇-자체 모션을 262차원 skeleton 공간에서 생성하며, 물리학적으로 가능한 모션을 출력합니다. offline 및 real-robot 실험 결과 PhyGile는 text-driven humanoids 제어의 경계를 넓히고, 민첩하고 어려운 whole-body 모션을 안정적으로 추적할 수 있습니다."
-  },
-  {
-    "title": "SOFTMAP: 텀든-시스템 소프트 로봇 전방 모델링 및 물리학적 전망",
-    "original_title": "SOFTMAP: Sim2Real Soft Robot Forward Modeling via Topological Mesh Alignment and Physics Prior",
-    "link": "https://arxiv.org/abs/2603.19384",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "소프트 로봇 조작자들은 고유의 탄성, 사람과 로봇 상호작용 등에서 장점을 보이나 실제 3D 전방 모델링이 열린 과제로 남아 있다. SOFTMAP은 실시간 3D 전방 모델링 프레임워크를 제공하여 텀든-시스템 소프트 Finger 조작자를 대상으로 삼았다. SOFTMAP은 네 가지 구성 요소를 갖추고 있으며, 이 중 첫 번째는 ARAP-기반 상위 구조 정렬을 통해 시뮬레이션 및 실제 점云을 공유한 탑올로지 일치하는 꼭짓점 공간에 투영하는 것이다. SOFTMAP의 성능은 시뮬레이션에서 0.389mm, 하드웨어에서 3.786mm의 정밀도 및 텀든 끝점 경로 추적 정확도 36.5% 향상으로 소프트 로봇 조작자의 실제 전방 모델링 및 제어에 데이터 효율적인 접근을 제공함을 보여준다."
-  },
-  {
-    "title": "Evolutionary Intelligent Robotics: Graph Neural Network-Driven Co-Design of Morphology and Control in Soft Robotics",
-    "original_title": "Evolving Embodied Intelligence: Graph Neural Network--Driven Co-Design of Morphology and Control in Soft Robotics",
-    "link": "https://arxiv.org/abs/2603.19582",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 소프트 로봇 지능 행위는 신경망과 몸짓 간의 긴밀한 결합으로부터 비롯되는 것이 아닌, 몸지고 뇌간의 조화를 통해 나타나는 원칙인 인지된 지능에 의해 발생합니다. 이러한 soft 로봇을 설계하는 것은 특히 형태와 제어를 동시에 최적화해야 하는 경우 particularly 어려운 도전입니다. 이 코-디자인 프로세스에서 가장 큰 장애물은 형태의 진화를 통해 배운 제어 전략이 손상되는 경우에, 재사용하거나 적응시키는 것이 어려울 수 있습니다. 이를 해결하기 위해 우리는 Graph Neural Network를 사용하여 형태와 제어를 동시에 설계하는 새로운 접근법을 개발했습니다. 각 로봇은 그래프로 나타나며, GAT(Graph Attention Network)가 노드 특징을 인코딩하고 MLP(Multilayer Perceptron) 헤드를 지나 actuator 명령 또는 가치 추정을 생산합니다. 진화 중에는 상속이 топологія-균일한 맵핑에 따르며, 공유된 GAT 레이어는 재사용되지만, MLP hidden 레이어는 완전히 전달되며, 일치하는 actuator 출력은 복제되고, 일치하지 않는 것은 랜덤으로 초기화되고 최적화됩니다. 이러한 형태-aware 정책은 로봇의 몸이 변화할 때 제어자가 적응하게 합니다. 벤치마크에서 nostro GAT-based 접근법은 traditional MLP-only 코-디자인 메서드보다 더 높은 최종 적합도와 stronger adaptability to morphological variations를 달성했습니다. 이러한 결과는 graph-structured 정책이 evolves되는 형태와 제어 간의 더 효과적인 인터페이스를 제공함을 나타냅니다."
-  },
-  {
-    "title": "EgoSpot:Hands-Free Mobile Manipulation 제어 프레임워크",
-    "original_title": "EgoSpot:Egocentric Multimodal Control for Hands-Free Mobile Manipulation",
-    "link": "https://arxiv.org/abs/2306.02393",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Spot 로봇의 hands-free 제어 프레임워크를 개발하여, Microsoft HoloLens 2 혼성현실 헤드셋을 사용하는 Egocentric Multimodal Control framework를 제안하였다. 이 시스템은 физ적 장애가 있는 개인에게로의 로봇 지원을 촉진하고자 하며, 실제 상호작용 및 원격 상호작용 태스크에 있어 접근성과 자연성을 향상시켰다. 실험 결과는 전 tradicional 조이스틱 기반 제어와 비교하여, 과제 완성 시간과 사용자 경험면에서 성능이 비슷하거나 더 나쁠 뿐 아니라, 접근성 및 상호작용의 자연성을 개선시켰다."
-  },
-  {
-    "title": "Latent Action Diffusion for Cross-Embodiment Manipulation",
-    "original_title": "Latent Action Diffusion for Cross-Embodiment Manipulation",
-    "link": "https://arxiv.org/abs/2506.14608",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 조작의 일관된 접근 방식으로서 엔드투엔드 학습이 부상하고 있지만, 데이터 절모와 다른 기구의 액션 공간 heterogeneity에 의해 제한받고 있습니다. 다양한 액션 공간의 생성을 통해, 로봇의 다양한 기구 액션을 일원화하는 새로운 접근 방식으로 이 문제를 해결합니다."
-  },
-  {
-    "title": "SPARTA: visualize object state change manipulation tasks",
-    "original_title": "Mash, Spread, Slice! Learning to Manipulate Object States via Visual Spatial Progress",
-    "link": "https://arxiv.org/abs/2509.24129",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "객체 상태 변화 처리任무에 대한 비주얼 스페이셜 프로그레스를 적용하여, object states을 manipulate하는 학습 방법을 소개합니다. SPARTA framework는 kinematic state의 변경 외에도, physical and visual state이 진행적으로 변화하는 다양한 실제 world manipulation task를 통합하는데 사용됩니다."
-  },
-  {
-    "title": "Task-Specified Compliance Bounds for Humanoids via Lipschitz-Constrained Policies",
-    "original_title": "Task-Specified Compliance Bounds for Humanoids via Lipschitz-Constrained Policies",
-    "link": "https://arxiv.org/abs/2603.16180",
-    "date": "2026-03-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "인공歩人에 대한 태스크 명시적 유연도 한계 및 리스비츠-제약 정책"
   }
 ]
