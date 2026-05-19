@@ -360,6 +360,78 @@
     "summary": "arXiv:2602.12633v2 Announce Type: replace \nAbstract: Reconstructing physically valid 3D scenes from single-view observations is a prerequisite for bridging the gap between visual perception and robotic control. However, in scenarios requiring precise contact reasoning, such as robotic manipulation in highly cluttered environments, geometric fidelity alone is insufficient. Standard perception pipelines often neglect physical constraints, resulting in invalid states, e.g., floating objects or severe inter-penetration, rendering downstream simulation unreliable. To address these limitations, we propose a novel physics-constrained Real-to-Sim pipeline that reconstructs physically consistent 3D scenes from single-view RGB-D data. Central to our approach is a differentiable optimization pipeline that explicitly models spatial dependencies via a contact graph, jointly refining object poses and physical properties through differentiable rigid-body simulation. Extensive evaluations in both simulation and real-world settings demonstrate that our reconstructed scenes achieve high physical fidelity and faithfully replicate real-world contact dynamics, enabling stable and reliable contact-rich manipulation."
   },
   {
+    "title": "Learning Native Continuation for Action Chunking Flow Policies",
+    "original_title": "Learning Native Continuation for Action Chunking Flow Policies",
+    "link": "https://arxiv.org/abs/2602.12978",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.12978v2 Announce Type: replace \nAbstract: Action chunking enables Vision Language Action (VLA) models to run in real time, but naive chunked execution often exhibits discontinuities at chunk boundaries. Real-Time Chunking (RTC) alleviates this issue but is external to the policy, leading to spurious multimodal switching and trajectories that are not intrinsically smooth. We propose Legato, a training-time continuation method for action-chunked flow-based VLA policies. Specifically, Legato initializes denoising from a schedule-shaped mixture of known actions and noise, exposing the model to partial action information. Moreover, Legato reshapes the learned flow dynamics to ensure that the denoising process remains consistent between training and inference under per-step guidance. Legato further uses randomized schedule condition during training to support varying inference delays and achieve controllable smoothness. Empirically, Legato produces smoother trajectories and reduces spurious multimodal switching during execution, leading to less hesitation and shorter task completion time. Extensive real-world experiments show that Legato consistently outperforms RTC across five manipulation tasks, achieving approximately 10% improvements in both trajectory smoothness and task completion time."
+  },
+  {
+    "title": "One Hand to Rule Them All: Canonical Representations for Unified Dexterous Manipulation",
+    "original_title": "One Hand to Rule Them All: Canonical Representations for Unified Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2602.16712",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.16712v2 Announce Type: replace \nAbstract: Dexterous manipulation policies today largely assume fixed hand designs, severely restricting their generalization to new embodiments with varied kinematic and structural layouts. To overcome this limitation, we introduce a parameterized canonical representation that unifies a broad spectrum of dexterous hand architectures. It comprises a unified parameter space and a canonical URDF format, offering three key advantages. 1) The parameter space captures essential morphological and kinematic variations for effective conditioning in learning algorithms. 2) A structured latent manifold can be learned over our space, where interpolations between embodiments yield smooth and physically meaningful morphology transitions. 3) The canonical URDF standardizes the action space while preserving dynamic and functional properties of the original URDFs, enabling efficient and reliable cross-embodiment policy learning. We validate these advantages through extensive analysis and experiments, including grasp policy replay, VAE latent encoding, and cross-embodiment zero-shot transfer. Specifically, we train a VAE on the unified representation to obtain a compact, semantically rich latent embedding, and develop a grasping policy conditioned on the canonical representation that generalizes across dexterous hands. We demonstrate, through simulation and real-world tasks on unseen morphologies (e.g., 81.9% zero-shot success rate on 3-finger LEAP Hand), that our framework unifies both the representational and action spaces of structurally diverse hands, providing a scalable foundation for cross-hand learning toward universal dexterous manipulation. Project Page: https://zhenyuwei2003.github.io/OHRA/"
+  },
+  {
+    "title": "Global Prior Meets Local Consistency: Dual-Memory Augmented Vision-Language-Action Model for Efficient Robotic Manipulation",
+    "original_title": "Global Prior Meets Local Consistency: Dual-Memory Augmented Vision-Language-Action Model for Efficient Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2602.20200",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.20200v2 Announce Type: replace \nAbstract: Hierarchical Vision-Language-Action (VLA) models have rapidly become a dominant paradigm for robotic manipulation. It typically comprising a Vision-Language backbone for perception and understanding, together with a generative policy for action generation. However, its performance is increasingly bottlenecked by the action generation proceess. (i) Low inference efficiency. A pronounced distributional gap between isotropic noise priors and target action distributions, which increases denoising steps and the incidence of infeasible samples. (ii) Poor robustness. Existing policies condition solely on the current observation, neglecting the constraint of history sequence and thus lacking awareness of task progress and temporal consistency. To address these issues, we introduce OptimusVLA, a dual-memory VLA framework with Global Prior Memory (GPM) and Local Consistency Memory (LCM). GPM replaces Gaussian noise with task-level priors retrieved from semantically similar trajectories, thereby shortening the generative path and reducing the umber of function evaluations (NFE). LCM dynamically models executed action sequence to infer task progress and injects a learned consistency constraint that enforces temporal coherence and smoothness of trajectory. Across three simulation benchmarks, OptimusVLA consistently outperforms strong baselines: it achieves 98.6% average success rate on LIBERO, improves over pi_0 by 13.5% on CALVIN, and attains 38% average success rate on RoboTwin 2.0 Hard. In Real-World evaluation, OptimusVLA ranks best on Generalization and Long-horizon suites, surpassing pi_0 by 42.9% and 52.4%, respectively, while delivering 2.9x inference speedup."
+  },
+  {
+    "title": "RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies",
+    "original_title": "RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies",
+    "link": "https://arxiv.org/abs/2603.04639",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.04639v2 Announce Type: replace \nAbstract: Memory is critical for long-horizon and history-dependent robotic manipulation. Such tasks often involve counting repeated actions or manipulating objects that become temporarily occluded. Recent vision-language-action (VLA) models have begun to incorporate memory mechanisms; however, their evaluations remain confined to narrow, non-standardized settings. This limits their systematic understanding, comparison, and progress measurement. To address these challenges, we introduce RoboMME: a large-scale standardized benchmark for evaluating and advancing VLA models in long-horizon, history-dependent scenarios. Our benchmark comprises 16 manipulation tasks constructed under a carefully designed taxonomy that evaluates temporal, spatial, object, and procedural memory. We further develop a suite of 14 memory-augmented VLA variants built on the {\\pi}0.5 backbone to systematically explore different memory representations across multiple integration strategies. Experimental results show that the effectiveness of memory representations is highly task-dependent, with each design offering distinct advantages and limitations across different tasks. Videos and code can be found at our website https://robomme.github.io."
+  },
+  {
+    "title": "HandelBot: Real-World Piano Playing via Fast Adaptation of Dexterous Robot Policies",
+    "original_title": "HandelBot: Real-World Piano Playing via Fast Adaptation of Dexterous Robot Policies",
+    "link": "https://arxiv.org/abs/2603.12243",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.12243v4 Announce Type: replace \nAbstract: Mastering dexterous manipulation with multi-fingered hands has been a grand challenge in robotics for decades. Despite its potential, the difficulty of collecting high-quality data remains a primary bottleneck for high-precision tasks. While reinforcement learning and simulation-to-real-world transfer offer a promising alternative, the transferred policies often fail for tasks demanding millimeter-scale precision, such as bimanual piano playing. In this work, we introduce HandelBot, a framework that combines a simulation policy and rapid adaptation through a two-stage pipeline. Starting from a simulation-trained policy, we first apply a structured refinement stage to correct spatial alignments by adjusting lateral finger joints based on physical rollouts. Next, we use residual reinforcement learning to autonomously learn fine-grained corrective actions. Through extensive hardware experiments across five recognized songs, we demonstrate that HandelBot can successfully perform precise bimanual piano playing. Our system outperforms direct simulation deployment by a factor of 1.8x and requires only 30 minutes of physical interaction data."
+  },
+  {
+    "title": "OxyGen: Unified KV Cache Management for VLA Inference under Multi-Task Parallelism",
+    "original_title": "OxyGen: Unified KV Cache Management for VLA Inference under Multi-Task Parallelism",
+    "link": "https://arxiv.org/abs/2603.14371",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.14371v2 Announce Type: replace \nAbstract: Embodied AI agents increasingly require parallel execution of multiple tasks, such as manipulation, conversation, and memory construction, from shared observations under distinct time constraints. Recent Mixture-of-Transformers (MoT) Vision-Language-Action Models (VLAs) architecturally support such heterogeneous outputs, yet existing inference systems fail to achieve efficient multi-task parallelism for on-device deployment because of redundant computation and resource contention. We identify isolated KV cache management as the root cause. To address this, we propose unified KV cache management, an inference design that treats the KV cache as a first-class shared resource across tasks and over time. This abstraction enables two key optimizations: cross-task KV sharing eliminates redundant prefill of shared observations, while cross-frame continuous batching decouples variable-length language decoding from fixed-rate action generation across control cycles. We implement this design for $\\pi_{0.5}$, a popular MoT VLA, and evaluate it on both NVIDIA GeForce RTX 4090 and Jetson AGX Thor, two representative platforms for on-device VLA inference. OxyGen achieves up to 3.7$\\times$ speedup over isolated execution, delivering over 200 tokens/s language throughput and 70 Hz action frequency simultaneously without degrading action quality, and we further validate the gains on a real humanoid robot with on-board Jetson AGX Thor."
+  },
+  {
+    "title": "FAM-HRI: Foundation-Model Assisted Multi-Modal Human-Robot Interaction Combining Gaze and Speech",
+    "original_title": "FAM-HRI: Foundation-Model Assisted Multi-Modal Human-Robot Interaction Combining Gaze and Speech",
+    "link": "https://arxiv.org/abs/2503.16492",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2503.16492v3 Announce Type: replace-cross \nAbstract: ffective Human-Robot Interaction (HRI) is crucial for enhancing accessibility and usability in real-world robotics applications. However, existing solutions often rely on gesture- only or language-only commands, making interaction inefficient and ambiguous, particularly for users with physical impairments. In this paper, we introduce FAM-HRI, an efficient multimodal framework for HRI that integrates language and gaze inputs via foundation models. By leveraging lightweight Meta ARIA glasses, our system captures real-time multimodal signals and utilizes large language models (LLMs) to fuse user intention with scene context, enabling intuitive and precise robot manipulation. Our method accurately determines the gaze fixation time interval, reducing noise caused by the gaze dynamic nature. Experimental evaluations demonstrate that FAM-HRI achieves a high success rate in task execution while maintaining a low interaction time, providing a practical solution for individuals with limited physical mobility or motor impairments. To support the community, we have released our system design, algorithms, and solutions at https://github.com/laiyuzhi/FAM-HRI."
+  },
+  {
+    "title": "DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving",
+    "original_title": "DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving",
+    "link": "https://arxiv.org/abs/2505.16278",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2505.16278v2 Announce Type: replace-cross \nAbstract: End-to-end autonomous driving (E2E-AD) demands effective processing of multi-view sensory data and robust handling of diverse and complex driving scenarios, particularly rare maneuvers such as aggressive turns. Recent success of Mixture-of-Experts (MoE) architecture in Large Language Models (LLMs) demonstrates that specialization of parameters enables strong scalability. In this work, we propose DriveMoE, a novel MoE-based E2E-AD framework, with a Scene-Specialized Vision MoE and a Skill-Specialized Action MoE. DriveMoE is built upon our $\\pi_0$ Vision-Language-Action (VLA) baseline (originally from the embodied AI field), called Drive-$\\pi_0$. Specifically, we add Vision MoE to Drive-$\\pi_0$ by training a router to select relevant cameras according to the driving context dynamically. This design mirrors human driving cognition, where drivers selectively attend to crucial visual cues rather than exhaustively processing all visual information. In addition, we add Action MoE by training another router to activate specialized expert modules for different driving behaviors. Through explicit behavioral specialization, DriveMoE is able to handle diverse scenarios without suffering from modes averaging like existing models. In Bench2Drive closed-loop evaluation experiments, DriveMoE achieves state-of-the-art (SOTA) performance, demonstrating the effectiveness of combining vision and action MoE in autonomous driving tasks. We will release our code and models of DriveMoE and Drive-$\\pi_0$."
+  },
+  {
     "title": "Comau to acquire Brazilian intralogistics and warehouse automation company Invent",
     "original_title": "Comau to acquire Brazilian intralogistics and warehouse automation company Invent",
     "link": "https://roboticsandautomationnews.com/2026/05/18/comau-to-acquire-brazilian-intralogistics-and-warehouse-automation-company-invent/101673/",
@@ -1096,6 +1168,15 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "Xpanner, a provider of construction automation equipment, has raised $18 million in Series B bridge funding. The round was led by Korea Investment Partners with participation from KB Investment (KBIC), both existing global investors. The raise brings Xpanner’s total funding to $38 million and marks a focused effort to expand its subscription-based automation solution across […]"
+  },
+  {
+    "title": "China's AI robot T-800 joins the police in patrolling the streets in wild video that looks like it's from the future - supercarblondie.com",
+    "original_title": "China's AI robot T-800 joins the police in patrolling the streets in wild video that looks like it's from the future - supercarblondie.com",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1tckQ4Q0JPYmxJODhMUjdnUkExODdfLW85dmZvLWpjZnJWM3o1aS1yUEdoLTY5cjJEUk9DODBXWTN2WnVFdE5UdUI1ZjFpLUVrU29XMDVoQ1hBWFJjMW50cDhQVXM4b3J3TTdscVhhS2VXckpjY3QzcUZ2eXU4QjQ?oc=5",
+    "date": "2026-05-15 09:27",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China's AI robot T-800 joins the police in patrolling the streets in wild video that looks like it's from the future  supercarblondie.com"
   },
   {
     "title": "All3 raises $25 million in Seed funding to ‘triple productivity’ in the construction industry through robotics and AI",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로봇에 탑재된 OCT 프로브의 6차원 핸드-아이 캘리브레이션 마커를 제안하고, phantom 표면을 대상으로 두 가지 쿼터드 조직 표면을 로보틱스 스캐닝하여 성능을 평가했습니다. 이를 통해 고정밀도 6D 로봇 OCT 스캐닝을 가능하게 하였습니다."
-  },
-  {
-    "title": "에너지 액션: 에너지 기반 모델을 사용한 단손 조정의 이식",
-    "original_title": "EnergyAction: Unimanual to Bimanual Composition with Energy-Based Models",
-    "link": "https://arxiv.org/abs/2603.20236",
-    "date": "2026-03-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "에너지 액션 프레임워크를 제안하여, 단손 조정 정책을 이식하는 새로운 방법을 개발했습니다. 이 METHOD는 세 가지 주요 혁신을 포함합니다. 첫째, 우리는 단손 조정 정책을 에너지 기반 모델로 구현하고, 이를 사용하여 왼손과 오른손의 조정을 조합하여 이식된 바인손 조정 정책을 생성합니다. 둘째, 우리는 에너지를 기반으로 하는 시간-공간 조정 메커니즘을 개발하여, 생성된 바인손 조치가 동시성과 공간적 가능성을 보장합니다. 마지막으로, 우리는 에너지 기반 노이즈 제거 전략 두 가지를 제안하여, 액션의 품질을 평가하여 노이즈 제거 단계를 동적으로 adapting 합니다. 이 전략은 고수준의 액션을 생성하면서도 고급 컴퓨팅 효율성을 유지할 수 있습니다. 실험 결과에 따르면 에너지 액션 프레임워크는 단손 조정 지식을 이식하여 바인손 작업에서 우수한 성능을 보여 주었습니다."
-  },
-  {
-    "title": "ROI-Driven Foveated Attention for Unified Egocentric Representations in Vision-Language-Action Systems",
-    "original_title": "ROI-Driven Foveated Attention for Unified Egocentric Representations in Vision-Language-Action Systems",
-    "link": "https://arxiv.org/abs/2603.20668",
-    "date": "2026-03-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "vision-language-action 시스템의 개발은 물리적 상호작용 데이터의 가용성과 구조에 의해 제한되다. VLA 모델의 최근进歩에도 불구하고, 현재의 파이프라인은데이터 수집 비용이 높은 문제점을 안고 있으며, 인터넷 크롤링된 시각 데이터를 로봇 제어에 전달하는 것은 열악하다. \n\n我們의提案은 embodied AI 시스템의 개발을 위해 ROI-Driven Engineering Workflow를 도입하는데, 이_workflow는 egocentric, geometry-grounded data representation을 제공한다. 끝점-effector poses을 forward kinematics (FK)으로 프로젝팅하여 단일 외부 카메라에 있는 movement-aligned hand-centric ROIs을 얻을 수 있다. \n\n이러한 표현은 embodiment-aligned 및 viewpoint-normalized로, 서로 다른 로봇에 데이터를 재사용할 수 있도록 하는데, 이 표현은 인터넷 크롤링된 시각 perception과 로봇 제어의 접근성을 연결하는 Practical data abstraction으로 작용하게 된다."
-  },
-  {
-    "title": "Implementing Robust M-Estimators with Certifiable Factor Graph Optimization",
-    "original_title": "Implementing Robust M-Estimators with Certifiable Factor Graph Optimization",
-    "link": "https://arxiv.org/abs/2603.20932",
-    "date": "2026-03-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보틱스 및 컴퓨터 비전에서 파라미터 추정은 오웃라이어오염과 비convex 최적화 지형으로부터 인해 강한 도전을 받는다는 것이다. M-estimation은 오웃라이어 문제를 처리하기 위해 강인한 손실 함수를 사용하지만, 이는 글로벌적으로 해결하기 어려운 심각한 비convex 문제를 창조한다. 적응 재가중제 scheme은 실제로는 M-estimation을 구현하는 데 특히 매력적인 전략으로서, 이러한 메서드는 표준적이면서도 더 좋은 추정치를 제공하는 단순한 현지 검색에 이르게 하는 것이다. 그러나 적응 재가중제는 내부 WLS 문제를 해결하는 데 여전히 도전을 받는다는 것은 로보틱스 애플리케이션에서 일반적으로 공통의 파라미터 공간(예: 회전 및 위치)에 대한 비convex성 때문이다.\n이 논문에서는 우리는 내부 WLS 문제에 대한 글로벌 최적화 인증서를 제공하는 데만 필요한 빠른 현지 최적화를 사용하여 adaptively reweighted M-estimators를 구현할 수 있는 것을 보여준다. 우리의 접근은 최근의 certifiable factor graph optimization 작업을 활용하여 existing factor graph-based 소프트웨어 라이브러리 및 워크플로우에 완전히 통합되는 내부 WLS 문제를 해결하는 데 사용할 수 있다. 실제 평가에서는 우리의 adaptively reweighted certifiable estimation 접근이 지역 검색기반 메서드보다 더 좋은 추정치를 제공하면서도 현실적인 문제 크기로까지 확장 가능함을 보여준다."
-  },
-  {
-    "title": "A Framework for Low-Latency, LLM-driven Multimodal Interaction on the Pepper Robot",
-    "original_title": "A Framework for Low-Latency, LLM-driven Multimodal Interaction on the Pepper Robot",
-    "link": "https://arxiv.org/abs/2603.21013",
-    "date": "2026-03-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "LLM을 활용한 소셜 로봇의 다지능 인터랙션 프레임워크를 제안함으로서 두 가지 약점을 극복하고자 함. 첫째,existing Pepper 플랫폼 구현에서는 스피치-투-텍스트 -> LLM -> 텍스트-투-스피치 파이프라인에 의존하여 높은 지연 및 가시 정보의 손실을 초래하는 반면, 이 프레임워크는 S2S 모델을 사용하여 낮은 지연 인터랙션을 달성하고 가시 인포메이션을 보장함. 둘째, 이 프레임워크는 LLM을 기관 계획자로 격상하여 로봇 액션(항해, 시선 제어, 테이블트 인터랙션)을 조정하고 다양한 다지능 피드백(시각, 촉감, 시스템 상태)를 통합함."
-  },
-  {
-    "title": "로봇이 알려지지 않은 환경에서 안전하고 효과적인 이동 계획을 개발하는 새로운 프레임워크를 제안함",
-    "original_title": "A Tactile-based Interactive Motion Planner for Robots in Unknown Cluttered Environments",
-    "link": "https://arxiv.org/abs/2509.16963",
-    "date": "2026-03-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇이 다량의 물체가 있는 неизвест한 환경에서 tự도 모델링하고 추론하여 충돌-free 경로를 계획하는 I-MP 프레임워크를 제안하였다. 이 프레임워크는触覺 및 운동-loop을 기반으로 하며, 로봇이 실시간으로 물체의机械적 성질을 인지하고 subsequently contact models을 구성할 수 있도록 하는 tactile perception을 사용한다. 실험 결과로, 0.01 ~ 0.07 m/s의巡航 속도로 로봇이 물체와의 초기 접촕력은 1.0 ± 0.7 N으로 유지하였다."
-  },
-  {
-    "title": "Physics Augmentation for Coordinated End-to-end Reinforcement Learning toward Versatile Humanoid Table Tennis",
-    "original_title": "PACE: Physics Augmentation for Coordinated End-to-end Reinforcement Learning toward Versatile Humanoid Table Tennis",
-    "link": "https://arxiv.org/abs/2509.21690",
-    "date": "2026-03-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "humanoide table tennis을위한 신속한 감지, 예측적身体운동 및 조화로운 발자국 요구하는 capabilities를강조한 강化学 학습 프레임워크를 제안합니다. 이 프레임워크에서는 공의 위치 관측을 기반으로 Whole-Body joint 명령에 직접 매핑하고, 예측 신호와 물리학 지향적 보상을 강화하여 적극적인 의사 결정 가능성을 향상시킵니다. 이를 통해 다양한 공의距离에서 강한 성능을 나타내는 정책을 개발할 수 있습니다."
-  },
-  {
-    "title": "Video2Act:  로보틱스 스판리오-모션 모델링을 중심으로 하는 이중 시스템 비디오 확산 정책",
-    "original_title": "Video2Act: A Dual-System Video Diffusion Policy with Robotic Spatio-Motional Modeling",
-    "link": "https://arxiv.org/abs/2512.03044",
-    "date": "2026-03-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보틱스 행동 학습을 효율적으로 지침하는 새로운 프레임워크를 제안합니다. 이를 통해 VDM의 내재적 표현에서 foreground 경계 및 inter-frame 운동 변동을 추출하여 배경 잡음과 태스크와 관련 없는 편향을 필터링합니다. 이러한 개정된 표현은 diffusion transformer(디티) 행동 head에 조건 입력으로 사용하여 물체를 조작하고 움직이도록 하는 데 사용됩니다. VDM을 Slow System 2로, DiT head를 Fast System 1로 각각 작동하도록 하는 비동기 이중 시스템 설계도 제안합니다. VDM에서 motion-aware 조건을 제공하면 Video2Act는 stable manipulation을 유지할 수 있습니다. evaluation에서는 Video2Act가 이전의 state-of-the-art VLA 방법보다 7.7% 더 좋은 성과를 보였습니다."
-  },
-  {
-    "title": "RoboticDemonstrationGenerationInterface",
-    "original_title": "Real2Edit2Real: Generating Robotic Demonstrations via a 3D Control Interface",
-    "link": "https://arxiv.org/abs/2512.19402",
-    "date": "2026-03-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "3D 컨트롤 인터페이스를 사용한 Robot Demonstration Generation Framework를 제안합니다. 이 프레임워크는 3D 편집을 통해 새로운 demonstrators를 생성하고, 지능체가 물리적으로 일관된 새로한 동작을 수행할 수 있습니다. 이 시스템은 실제 WORLD MANIPULATION TASKS에서 테스트하여 데이터 효율성을 10-50배 향상시켰습니다."
-  },
-  {
-    "title": "TSMC의 웨이",
-    "original_title": "TSMC's Wei draws battle lines between US AI and China's hardware in robotics race - digitimes",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORmx0OWRzalJoWHRmbXJTNFhTMGF0a0pZUi1MdEFUN1JLeHFZWTZxdU1HQ05ybkM1TnNqS211MnVkazM1THVNU2JTZ2t4UGF0bUJYcHU0TjdKandqVkdFVmNNNG9vem5yalp5c1k4ekVJalhXS0p2NnNjd0YzUmNxWFJnWTZkSjRNQ1M5czR0dnRoVUVFQXZscXktdFo?oc=5",
-    "date": "2026-03-24 03:20",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "US AI와 중국의 하드웨어 간 경쟁에서 전선 긋는 TSMC의 웨이는 미국 AI를 강조하며, 중국의 하드웨어를 경계하기로 했다. 이 계획은 로봇 산업의 차세대 경쟁을 가리키는 핵심 전략임으로서, 세계적 기업들은 주목하고 있는 상황임."
   }
 ]
