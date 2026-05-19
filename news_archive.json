@@ -216,6 +216,78 @@
     "summary": "arXiv:2605.18556v1 Announce Type: new \nAbstract: Embodied control increasingly requires models to follow compositional language instructions while reasoning over dynamic visual states. However, current vision-language-action policies and world-action models often couple linguistic knowledge with visual computation in a shared backbone or conditioning pathway, leading to modality competition and making knowledge extension dependent on backbone updates. In this paper, we introduce Key-Gram, a conditional-memory framework that separates language-derived world knowledge from visual-state reasoning for embodied control. At its core is a memory module that decomposes an instruction into task-specific key-grams, retrieves static linguistic priors through deterministic hashed lookup, and injects the retrieved entries into selected hidden layers through context-aware gating and lightweight convolutional fusion. This design allows the backbone to devote its main capacity to visual reasoning and action inference, while reusable instruction knowledge is stored in an extensible external memory. The logical memory table can be conveniently partitioned during training and, due to its $O(1)$ lookup pattern, efficiently placed on host memory during inference. Across RoboTwin2.0, LIBERO/LIBERO-Plus, and real-world dual-arm manipulation, Key-Gram consistently improves both $\\pi_{0}$ and $\\pi_{0.5}$ backbones, with average relative gains of $29.5\\%/9.9\\%$ on RoboTwin2.0, $35.8\\%/4.5\\%$ on LIBERO-Plus transfer without target-domain fine-tuning, and $15.4\\%/8.1\\%$ on real-world long-horizon tasks. These results demonstrate that externalized linguistic memory provides an effective and extensible mechanism for improving compositional grounding, transfer, and real-world manipulation."
   },
   {
+    "title": "Unified Walking, Running, and Recovery for Humanoids via State-Dependent Adversarial Motion Priors",
+    "original_title": "Unified Walking, Running, and Recovery for Humanoids via State-Dependent Adversarial Motion Priors",
+    "link": "https://arxiv.org/abs/2605.18611",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.18611v1 Announce Type: new \nAbstract: We propose a unified reinforcement learning framework that enables a single policy to perform walking, running, and fall recovery on the Unitree G1 humanoid robot, validated on physical hardware without any explicit mode-switching command at deployment. The framework extends Adversarial Motion Priors (AMP) by replacing the conventional global reference distribution with a state-dependent gate that routes each training transition to one of two discriminators: a dedicated recovery discriminator and a velocity-conditioned locomotion discriminator that jointly covers walking and running. The gate is defined by a single fixed threshold on projected gravity: the recovery discriminator is activated when body tilt exceeds approximately $37^\\circ$ from vertical ($|g_z+1|>0.6$); otherwise the locomotion discriminator is used, with the normalized commanded velocity serving as a condition that selects the appropriate reference trajectory between walk and run clips. Only three LAFAN1 reference clips are required to regularize the complete behavior set. At deployment, a single frozen ONNX policy executes at 50\\,Hz with no runtime mode logic; hardware experiments demonstrate successful recovery from both prone and supine falls and smooth walk-to-run transitions under the same controller."
+  },
+  {
+    "title": "ManiSoft: Towards Vision-Language Manipulation for Soft Continuum Robotics",
+    "original_title": "ManiSoft: Towards Vision-Language Manipulation for Soft Continuum Robotics",
+    "link": "https://arxiv.org/abs/2605.18617",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.18617v1 Announce Type: new \nAbstract: Most existing vision-language manipulation research targets rigid robotic arms, whose fixed morphology limits adaptability in cluttered or confined spaces. Soft robotic arms offer an appealing alternative due to their deformability, but confront challenges such as unreliable proprioception and distributed low-level actuation. To investigate these challenges, we introduce \\ManiSoft, a benchmark for vision-language manipulation with soft arms. ManiSoft features a tailored simulator that couples realistic soft-body dynamics with contact-rich interactions via an elastic force constraint. On this basis, ManiSoft defines four tasks, each highlighting distinct aspects of deformable control, from basic end-effector coordination to obstacle avoidance. To support policy training and evaluation, \\ManiSoft{} includes an automated pipeline that generates $6{,}300$ diverse scenes and corresponding expert trajectories. To produce high-quality trajectories at scale, we first employ a high-level planner to decompose each task into a sequence of waypoints, followed by a low-level reinforcement learning policy that generates torque commands to track waypoints. Benchmarking three representative policy models shows relatively promising results in clean scenes but substantial performance drop under randomization. Visualization analysis indicates that failures stem primarily from inaccurate visual estimation of proprioceptive state and limited exploitation of deformability for adaptive obstacle avoiding. We anticipate ManiSoft to serve as a valuable testbed, bridging the gap between rigid and soft arms in the context of vision-language manipulation. Out codes and datasets are released at https://buaa-colalab.github.io/ManiSoft."
+  },
+  {
+    "title": "Dexora: Open-source VLA for High-DoF Bimanual Dexterity",
+    "original_title": "Dexora: Open-source VLA for High-DoF Bimanual Dexterity",
+    "link": "https://arxiv.org/abs/2605.18722",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.18722v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have recently become a central direction in embodied AI, but current systems are restricted to either dual-gripper control or single-arm dexterous hand manipulation. While low-dimensional gripper control can often be handled with simpler methods, high-dimensional dexterous hand control benefits greatly from full end-to-end VLA learning. In this work, we introduce Dexora, the first open-source VLA system that natively targets dual-arm, dual-hand high-DoF manipulation. We design a hybrid teleoperation pipeline that decouples gross arm kinematics (captured with a custom exoskeleton backpack) from fine finger motion (markerless hand tracking via Apple Vision Pro), and that drives both a physical dual-arm dual-hand platform and an identical MuJoCo digital twin. Using that interface, we assemble a large training corpus: an embodiment-matched synthetic corpus (100K simulated trajectories, 6.5M frames) and a real-world dataset of 10K teleoperated episodes (2.92M frames). To mitigate noisy teleoperation demonstrations, we propose a data-quality-aware training recipe: an offline discriminator provides clip-level weights for diffusion-transformer policy training, down-weighting low-quality demonstrations. Empirically, Dexora outperforms competitive VLA baselines on both basic and dexterous benchmarks (e.g., average dexterous success 66.7% vs. 51.7%), attains 90% success on basic tasks, and shows robust out-of-distribution and cross-embodiment generalization. Ablations confirm the importance of real data and the discriminator for dexterity."
+  },
+  {
+    "title": "DexHoldem: Playing Texas Hold'em with Dexterous Embodied System",
+    "original_title": "DexHoldem: Playing Texas Hold'em with Dexterous Embodied System",
+    "link": "https://arxiv.org/abs/2605.18727",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.18727v1 Announce Type: new \nAbstract: Evaluating embodied systems on real dexterous hardware requires more than isolated primitive skills: an agent must perceive a changing tabletop scene, choose a context-appropriate action, execute it with a dexterous hand, and leave the scene usable for later decisions. We introduce DexHoldem, a real-world system-level benchmark built around Texas Hold'em dexterous manipulation with a ShadowHand. DexHoldem provides 1,470 teleoperated demonstrations across 14 Texas Hold'em manipulation primitives, a standardized physical policy benchmark, and an agentic perception benchmark that tests whether agents can recover the structured game state needed for embodied decision making. On primitive execution, $\\pi_{0.5}$ obtains the highest task completion rate ($61.2\\%$), while $\\pi_{0.5}$ and $\\pi_0$ tie on scene-preserving success rate ($47.5\\%$). On agentic perception, Opus 4.7 obtains the best strict problem-level accuracy ($34.3\\%$), while GPT 5.5 obtains the best average field-wise accuracy ($66.8\\%$), exposing a gap between isolated visual sub-capabilities and complete routing-relevant state recovery. Finally, we instantiate the full embodied-agent loop in three case studies, where waiting, recovery dispatches, human-help requests, and repeated primitive execution reveal how perception and policy errors accumulate during closed-loop deployment. DexHoldem therefore evaluates dexterous tabletop execution, agentic perception, and embodied decision routing in a shared physical setting. Project page: https://dexholdem.github.io/Dexholdem/."
+  },
+  {
+    "title": "EfficientTDMPC: Improved MPC Objectives for Sample-Efficient Continuous Control",
+    "original_title": "EfficientTDMPC: Improved MPC Objectives for Sample-Efficient Continuous Control",
+    "link": "https://arxiv.org/abs/2605.16692",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.16692v1 Announce Type: cross \nAbstract: We introduce EfficientTDMPC, a sample-efficient model-based reinforcement learning method for continuous control built on the TD-MPC family of algorithms. Central to this family is a planner that aims to find an action sequence that maximizes the estimated return. The return is estimated using a learned model and value networks, each of which can introduce error. EfficientTDMPC proposes to reduce this error in two ways. First, it introduces an ensemble of dynamics models and averages the return estimates across those models and across different rollout depths. Second, it adds the option to apply an uncertainty penalty to the planner objective, yielding a planner that avoids actions with uncertain return estimates. It then adds practical improvements which increase buffer data freshness and reduce compute. Lastly, we find that our contributions enable EfficientTDMPC to benefit more from a higher update-to-data (UTD) ratio, further improving sample efficiency. To the best of our knowledge, in the low data regime of each benchmark, EfficientTDMPC achieves state-of-the-art (SOTA) in terms of sample efficiency on HumanoidBench-Hard and DMC hard, while matching SOTA on DMC easy."
+  },
+  {
+    "title": "EgoKit: Towards Unified Low-Cost Egocentric Data Collection with Heterogeneous Devices",
+    "original_title": "EgoKit: Towards Unified Low-Cost Egocentric Data Collection with Heterogeneous Devices",
+    "link": "https://arxiv.org/abs/2605.16797",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.16797v1 Announce Type: cross \nAbstract: Egocentric video is increasingly used as a data source for robot learning, activity understanding, and embodied AI research, but collecting it at scale remains fragmented in practice: each candidate host device, such as an Android phone, iPhone, iPad, smart glasses, or extended reality (XR) headset, exposes a different SDK, a different policy on raw camera access, and different limitations on external USB cameras and on-device tracking. Synchronized ego-view and wrist-view capture is therefore typically obtained by either committing to a single proprietary platform or building one-off rigs that do not transfer across devices. To address this gap, we present EgoKit, a toolkit that exposes the same egocentric recording workflow across six heterogeneous host devices. Across all supported devices, EgoKit presents the same recording interaction and produces locally stored video with a uniform log format; on XR headsets, it additionally logs head pose and OpenXR-standard 26-joint hand tracking aligned to the video streams. The companion accessories, including two wrist cameras with mounts, a head strap, and a USB-C hub, add wrist-view capture to any supported host without custom hardware fabrication. EgoKit is available at \\url{https://egokit.chuange.org/}."
+  },
+  {
+    "title": "Not What You Asked For: Typographic Attacks in Household Robot Manipulation",
+    "original_title": "Not What You Asked For: Typographic Attacks in Household Robot Manipulation",
+    "link": "https://arxiv.org/abs/2605.18593",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.18593v1 Announce Type: cross \nAbstract: Open-vocabulary embodied AI agents increasingly rely on vision-language models such as CLIP for object perception and task grounding. However, the shared embedding space that enables this flexibility introduces a structural vulnerability to typographic attacks, where printed text in a physical scene semantically overrides visual judgment. While prior work has quantified this threat in static 2D benchmarks and 3D navigation tasks, its impact on the full Sense-Plan-Act pipeline of household robot manipulation remains unexplored.\n  This work evaluates typographic attacks in a Habitat-based simulation using the HomeRobot benchmark. We introduce a decoupled perception architecture that exposes a frozen CLIP encoder to adversarial stickers while maintaining geometric grounding via DETIC. In a controlled evaluation pool of 59 attributable episodes, the attack achieves an overall Attack Success Rate (ASR) of 67.8%, rising to 70.0% among fully successful episodes, under uncontrolled viewing angles and occlusion with no perceptual optimization.\n  Critically, we find that perceptual errors propagate through the persistent 3D semantic map to produce kinetic failures, defined here as physically executed grasping and transport of the wrong object driven by an adversarially poisoned semantic state. In these cases, the robot physically grasps and delivers the wrong object to a target receptacle. These results establish typographic misclassification as a real, measurable, and physically consequential threat to the safety of modular manipulation pipelines that prior typographic attack research has left unexamined."
+  },
+  {
+    "title": "ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop",
+    "original_title": "ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop",
+    "link": "https://arxiv.org/abs/2605.18746",
+    "date": "2026-05-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.18746v1 Announce Type: cross \nAbstract: Spatial intelligence unfolds through a perception-action loop: agents act to acquire observations, and reason about how observations vary as a function of action. Rather than passively processing what is seen, they actively uncover what is unseen - occluded structure, dynamics, containment, and functionality that cannot be resolved from passive sensing alone. We move beyond prior formulations of spatial intelligence that assume oracle observations by recasting the observer as an actor. We introduce ESI-BENCH, a comprehensive benchmark for embodied spatial intelligence spanning 10 task categories and 29 subcategories built on OmniGibson, grounded in Spelke's core knowledge systems. Agents must decide what abilities to deploy - perception, locomotion, and manipulation - and how to sequence them to actively accumulate task-relevant evidence. We conduct extensive experiments on state-of-the-art MLLMs and find that active exploration substantially outperforms passive counterparts, with agents spontaneously discovering emergent spatial strategies without explicit instructions, while random multi-view often adds noise rather than signal despite consuming far more images. Most failures stem not from weak perception but from action blindness: poor action choices lead to poor observations, which in turn drive cascading errors. While explicit 3D grounding stabilizes reasoning on depth-sensitive tasks, imperfect 3D representation proves more harmful than 2D baselines by distorting spatial relations. Human studies further reveal that unlike humans who seek falsifying viewpoints and revise beliefs under contradiction, models commit prematurely with high confidence regardless of evidence quality, exposing a metacognitive gap that neither better perception nor more embodied interaction alone can close."
+  },
+  {
     "title": "Comau to acquire Brazilian intralogistics and warehouse automation company Invent",
     "original_title": "Comau to acquire Brazilian intralogistics and warehouse automation company Invent",
     "link": "https://roboticsandautomationnews.com/2026/05/18/comau-to-acquire-brazilian-intralogistics-and-warehouse-automation-company-invent/101673/",
@@ -2860,6 +2932,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Science fiction becomes reality: Unitree Robotics unveils world’s first production-ready manned mecha  Global Times"
+  },
+  {
+    "title": "Unitree Introduces a Manned Robot Ready for Production - ForkLog",
+    "original_title": "Unitree Introduces a Manned Robot Ready for Production - ForkLog",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSkNOOWlEaDM5dlZDdTBMRXBHMXN1YWFsVFhWQ2Y5WE9oZWpXbXhCVFc3MEF6U2NrOXJ6UkNEdXRMbzJDQnA0OTkwQUxnbkZlOXNRb2F1TzFWM2FTQUdFdjZhRGpPM3JhaXRBdEgwWTRReTVUS0w0R2FTelQ0bUh3QXJfdnU?oc=5",
+    "date": "2026-05-12 10:43",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree Introduces a Manned Robot Ready for Production  ForkLog"
   },
   {
     "title": "Global Dexterous Robotic Hand Modules Market Report 2026 Shows - openPR.com",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Unitree 로보틱스가 viral 마술 예술 쇼 demos 이후로 610억원 규모의 IPO를 상하이증권거래소에 제출하여 글로벌 인공지능(AI) 로봇 산업 발전에 중요한一步을 내딘 것임._UNITREE 로보틱스는 AI 기반 인체 모방 로봇을 개발해 세계 최초로 마술 예술 쇼에서 활용한 적이 있는 회사로, 이번 IPO는 610억원 규모로 최대 10배 확장되는 계획임."
-  },
-  {
-    "title": "Bird‑like robots promise greater flexibility and control than drones",
-    "original_title": "Bird‑like robots promise greater flexibility and control than drones",
-    "link": "https://techxplore.com/news/2026-03-birdlike-robots-greater-flexibility-drones.html",
-    "date": "2026-03-23 17:20",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "새빗과 같은 로봇이 드론보다 더 큰 유연성과 제어력을 제공할 것임, 러츠 대학교 공학자들이 전자駆動 재료를 사용하여 날개가 실제 새와 같이 접히는 드론을 개발중임."
-  },
-  {
-    "title": "Radiation‑hardened Wi‑Fi 칩 ~500 kGy 방사능 강화 WiFi 칩",
-    "original_title": "Radiation‑hardened Wi‑Fi chip survives 500 kGy for nuclear plant decommissioning robots",
-    "link": "https://techxplore.com/news/2026-03-radiationhardened-wifi-chip-survives-kgy.html",
-    "date": "2026-03-23 17:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "방사능 공장 Decommissioning 로봇을 위한 500kGy까지 방사능 저항 Wi-Fi 칩 개발에 성공했다. 이 기술은 핵 발전소의 폐기작업에서 방사능 물질을 안전하게 처리하는 데 사용될 예정이다."
-  },
-  {
-    "title": "Insect-inspired robot tracks odors even with only one working 'antenna'",
-    "original_title": "Insect-inspired robot tracks odors even with only one working 'antenna'",
-    "link": "https://techxplore.com/news/2026-03-insect-robot-tracks-odors-antenna.html",
-    "date": "2026-03-23 16:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "인셉트 인스핵 로봇은 하나의 작업 안테나라도 냄새를 추적할 수 있음"
-  },
-  {
-    "title": "AGENTIC RAG 작동 방식",
-    "original_title": "How Agentic RAG Works?",
-    "link": "https://blog.bytebytego.com/p/how-agentic-rag-works",
-    "date": "2026-03-23 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "한국 기술 저널리스트가 전달하는 정보에 따르면, 스탠다드 RAG의 개선 방법과 고려해야 할_TRADE-OFFS_이 포함된 이 기사는 AGENTIC RAG의 작동 방식을 탐구합니다."
-  },
-  {
-    "title": "ROBOTICS SIMULATION~함",
-    "original_title": "How simulations and digital twins are advancing robotics - TechTarget",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdlZFQ0xKbXdmMFh6cUE2ZVFSVTQwMWd3TVhIZzVrblFrUElsSzQ1WEIwVWRtSjFXTWZyRzhnem90V2hoTkk3cmFUUFQxMHNxS2E4elY5OEpJbThEQ2tKWlYtb245SkVmQXZvNG0tLVJfYnlEX01HdVRJbEVYNVZ5eUdDNTZqcE5YSEllVURmN1hNVmJsYkJQOG1vWkxyLXFXYTNfZmM0bDBqTFk5TVBQbkNDY0xTVmFL?oc=5",
-    "date": "2026-03-23 15:18",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "로봇공학의 발전을 추진하는 시뮬레이션과 디지털 트윈의 영향은, 실제 실험에 필요한 비용과 시간을 줄이는 데 도움이 되며, 새로운 로봇 설계를 위한 가상 테스트 환경을 제공함. 또한, 로봇공학의 전자적 적응성을 강화하고, 새로운 가능성을 열어주는 것으로 예견됨."
-  },
-  {
-    "title": "Palladyne AI와 드라건플라이가 자율적 드론 스워미의 마일스톤 달성함",
-    "original_title": "Palladyne AI and Draganfly reach milestone for autonomous drone swarms",
-    "link": "https://www.therobotreport.com/palladyne-ai-draganfly-reach-integration-milestone-autonomous-drone-swarms/",
-    "date": "2026-03-23 15:01",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Palladyne AI는 SwarmOS 플랫폼을 드라건플라이 드론 컴포넌트와 통합하여 성공적인 비행 시뮬레이션을 수행해 제거 방어 애플리케이션의 다음세대 모델을 향상시켰다."
-  },
-  {
-    "title": "Unitree",
-    "original_title": "🤖Chinese Star Robot Maker Unitree Doesn’t Look Like a High-Tech Company - Recode China AI",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9GUTZwTlJHdmh1S21HSjZQSDJEN2xRTVpNTWlkVWxqeVpoTVpJVlNFWXVvMXI2eWtRVkxrUk5qVEl1NWd3RHgzaHJnMnp2eGFwdWJsQklKNTAtZ0sxUEY0c2VZM2k4ZTFJY0xoVmpCSi1qa2s0Q3VLVA?oc=5",
-    "date": "2026-03-23 14:54",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree의 중국스타 로봇제조업체 이미 고가공정 기업으로 보이지 않음. 재.CODE China AI는_UNITREE의 로봇 제조 공정과 제품을 분석하여, 고가공정 기업으로서의 특징이 없는 것을 확인했다.\n\n(Note: The translation is in a formal, objective news-brief style, and the summary focuses on the technical specifications.)"
-  },
-  {
-    "title": "Unitree",
-    "original_title": "🤖Chinese Star Robot Maker Unitree Doesn’t Look Like a High-Tech Company - Recode China AI",
-    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxON2l2WXpXNXYtOWtkVkktZjYxQmtFUnBnMjMtYndJMVRRcjRPUlNXT3I4WEk0WVNEcU9QUmI5M0RuRWM3R2hXcnAyQ2U0eEdpSzRsNXYwN0FLUzNVTUtmSDRyZE54MmhfclNKQTJpZmU2TEZtWlJLclJwZzBuQU83RGJUeTlhbGdXMndueU1xUWNHZEhxNEMyOG5BMlJrQm90MkJMS0JCa1Y4YlVLTHFOYmd1VENzalhCcjdnVjFsVHBTTzRRdUQ3cjNyU2x5X2NaeHhWY1p5TmJsRWRtUkRkbTEyOA?oc=5",
-    "date": "2026-03-23 14:54",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 스타 로봇 메이커 Unitree는 고가 기술 회사의 모습을 보이지 않는다. 회사는 2022년 12월 기준으로 3억 5천만 달러의 시가 가치를 자랑하며, AI를 활용한 로봇 개발에 집중하고 있다."
-  },
-  {
-    "title": "Unitree 로봇공학 가속생산으로 글로벌 수요를 충족함",
-    "original_title": "Unitree Robotics accelerates production to meet surging global demand - China Daily",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE91WUJ2d0EtcUMzcEVGaXdpVTBydVo1QW44RWZfbXllRlBFbE8zVTVaY2ctVkc5R1ZzNU9LRVE1V0MxdVg4S2pxTEtfMk9iY19BWno2S25nWThRSnFJb29tWVcwRy1UcGxJcVNEMnBWa3Nmb3ViOHFwdm12QlFwUQ?oc=5",
-    "date": "2026-03-23 13:47",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree 로봇공학은 최근에 급격한 글로벌 수요에 대응하기 위해 생산을 가속화하고 있습니다. 새로운 생산 설비를 추가하여 2023년에 10,000대의 로봇을 생산할 계획입니다."
   }
 ]
