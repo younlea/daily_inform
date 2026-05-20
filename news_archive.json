@@ -225,6 +225,24 @@
     "summary": "arXiv:2509.14787v2 Announce Type: replace \nAbstract: Manipulation in confined and cluttered environments remains a significant challenge due to partial observability and complex configuration spaces. Effective manipulation in such environments requires an intelligent exploration strategy to safely understand the scene and search the target. In this paper, we propose COMPASS, a multi-stage exploration and manipulation framework featuring a manipulation-aware sampling-based planner. First, we reduce collision risks with a near-field awareness scan to build a local collision map. Additionally, we employ a multi-objective utility function to find viewpoints that are both informative and conducive to subsequent manipulation. Moreover, we perform a constrained manipulation optimization strategy to generate manipulation poses that respect obstacle constraints. To systematically evaluate method's performance under these difficulties, we propose a benchmark of confined-space exploration and manipulation containing four level challenging scenarios. Compared to exploration methods designed for other robots and only considering information gain, our framework increases manipulation success rate by 24.25% in simulations. Real-world experiments demonstrate our method's capability for active sensing and manipulation in confined environments."
   },
   {
+    "title": "Hybrid Training for Vision-Language-Action Models",
+    "original_title": "Hybrid Training for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2510.00600",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.00600v2 Announce Type: replace \nAbstract: Using Large Language Models to produce intermediate thoughts, a.k.a. Chain-of-thought (CoT), before providing an answer has been a successful recipe for solving complex language tasks. In robotics, similar embodied CoT strategies, generating thoughts before actions, have also been shown to lead to improved performance when using Vision-Language-Action models (VLAs). As these techniques increase the length of the model's generated outputs to include the thoughts, the inference time is negatively affected. Delaying an agent's actions in real-world executions, as in robotic manipulation settings, strongly affects the usability of a method, as tasks require long sequences of actions. However, is the generation of long chains-of-thought a strong prerequisite for achieving performance improvements? In this work, we explore the idea of Hybrid Training (HyT), a framework that enables VLAs to learn from thoughts and benefit from the associated performance gains, while enabling the possibility to leave out CoT generation during inference. Furthermore, by learning to conditionally predict a diverse set of outputs, HyT supports flexibility at inference time, enabling the model to either predict actions directly, generate thoughts or follow instructions. We evaluate the proposed method in a series of simulated benchmarks and real-world experiments."
+  },
+  {
+    "title": "TwinRL: Digital Twin-Driven Reinforcement Learning for Real-World Robotic Manipulation",
+    "original_title": "TwinRL: Digital Twin-Driven Reinforcement Learning for Real-World Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2602.09023",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.09023v4 Announce Type: replace \nAbstract: Despite strong generalization capabilities, Vision-Language-Action (VLA) models remain constrained by the high cost of expert demonstrations and limited real-world interaction. While online reinforcement learning (RL) has shown promise, its application to real-world VLA manipulation is hindered by low exploration efficiency and restricted exploration coverage. Through systematic real-world experiments, we observe that the effective exploration space of online RL is largely constrained by the trajectory distribution induced during supervised fine-tuning (SFT). Motivated by this observation, we propose TwinRL, a digital twin-real-world collaborative post-training framework that expands and guides RL exploration for VLA models through three stages: SFT warm-up, twin RL warm-up, and real-world RL. TwinRL first reconstructs a high-fidelity digital twin from smartphone-captured scenes. During the SFT stage, we introduce an exploration space expansion strategy that expands the support of the trajectory distribution beyond real demonstrations, reshaping the exploration space for more effective RL. Rather than treating the twin as a data augmentation tool, we propose a twin RL warm-up strategy that enables it to act as an exploration guide for real-world RL. Specifically, TwinRL performs efficient parallel RL in the digital twin to generate interactive trajectories that populate the replay buffer and stabilize subsequent real-world RL learning. This process also identifies failure-prone yet informative configurations, enabling targeted human-in-the-loop rollouts to further improve on-robot efficiency. Across four tasks, TwinRL achieves near-100% success in both in-distribution and out-of-distribution regions, delivering over 30% faster convergence than prior real-world RL methods with only 20 minutes of on-robot interaction."
+  },
+  {
     "title": "Taiwan suppliers look past Tesla as China's robot makers scale up - digitimes",
     "original_title": "Taiwan suppliers look past Tesla as China's robot makers scale up - digitimes",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORmw3bUVrdHhGOXVxS0xaUVcyQU8yY1pCUV9iN3FsZDRNM0tvaGp5MERMM09vV3k4Q0ZFOVVPMGtxY3I5RGdibXZWdFA5dHdXZ09kSXEtUEdZYmdNeHFkZmJ0WGtjUS1iSUJFOXd0NjZ1VHR0X3FXckJzQ3pwQ2MyVW13QU9UWkVsb1lRa1JxaDhKMWRyTjNwcUNR?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "산 호세 민테 국제공항이 자비스틀린 밸리 게이트웨이로, 승객여정을 AI-empowered 인봇으로 접근하는 것을 발표했습니다. 지역 스타트업 IntBot에서 제공하는 인봇 'Josie'는 여행자들을 맞아주고 질문에 답하며 실시간 정보를 제공하여 한 곳의 지점을 도와줍니다."
-  },
-  {
-    "title": "Airbus는 인공로봇에 대한 새로운 접근을 취함",
-    "original_title": "Airbus Embraces Humanoid Robots - Technology Org",
-    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1TdGxwbE9RLVMxR19acHZ3ZzZLWFdKUDk4dmdPOTQyNlFxTnlGTUxKRWpaRFNlcG5UUHlMVUtDQkIxQWxkTVRMSGhuZEJ5YlREQlR4clJjS19DWXZlRi1Md0Z5YzdCdUdiMzRNdFRqWTRNSWdFdV96dEtB?oc=5",
-    "date": "2026-03-25 06:24",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "에어부스(airbus)는 인공로봇 개발에 대한 새로운 접근을 취하고, 이를 통해 인간의 일상생활에서 로봇이 점점 더 중요한 역할을 수행하게 함으로써 향후 산업과 삶을 변화시킬 계획임. 이와 같은 새로운 접근은 에어부스의 새로운 기술 연구를 기반으로 하며, 인공로봇이 실제로는 다양한 산업과 삶에 있어 필요한 새로운 가능성을 열게 할 것임."
-  },
-  {
-    "title": "UNITREE가 4배 용량 확장 계획으로 20,000기형 로봇을 목표로 함",
-    "original_title": "Unitree targets 20,000 humanoid robots with fourfold capacity expansion plan - MSN",
-    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNmdTZjlrdDI5TVY1dVJ5bUpwMG1SOExUdWxVLTRyMDdLZjBPcEd6MjdpVVhSWElmRms1bzNOTjMwWHV6REtpY0p5NG5iN28tYS0zS3ZCWEEzVGpuYkpQTEI2aFVRSngtTkF0UW1UcjM1RXlFcDFIMngyY0FQNDMxZTNpWjBJTDQ2bnBvalppMWVWTXQ1SmNYbEpBSVg3enk0RFV3Nk5ZT0RGeDVkWnFiOUI1MXZyYTdGQUhhQ1BiWXdyNG45eXNXTQ?oc=5",
-    "date": "2026-03-25 04:01",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "UNITree는 4배의 용량을 확장해 20,000대를 생산하는 계획을 발표했습니다. 이에 따라 회사는 하드웨어와 소프트웨어 개발 능력을 강화할 계획입니다."
   }
 ]
