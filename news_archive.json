@@ -1,5 +1,86 @@
 [
   {
+    "title": "KG-ASG: Collision-Knowledge-Guided Closed-Loop Adversarial Scenario Generation With Primary-Support Attribution",
+    "original_title": "KG-ASG: Collision-Knowledge-Guided Closed-Loop Adversarial Scenario Generation With Primary-Support Attribution",
+    "link": "https://arxiv.org/abs/2605.18895",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.18895v1 Announce Type: new \nAbstract: Safety validation of autonomous driving systems requires high-risk scenario coverage, clear collision semantics, executable trajectories, and attributable multi-vehicle interactions. Existing safety-critical scenario generation methods often rely on low-level trajectory perturbations, collision-proxy optimization, or single-adversary search, which may produce adversarial samples with ambiguous collision causes or uncontrolled multi-vehicle collisions. This paper proposes KG-ASG, a collision-knowledge-guided closed-loop adversarial scenario generation framework with primary-support attribution. KG-ASG constructs a structured collision knowledge base and trains a lightweight Collision Expert to infer the target collision mode, the unique primary adversary, support vehicles, and their interaction roles. Guided by this semantic prior, multi-vehicle adversarial generation is formulated as a primary-support process, where the primary adversary induces the main conflict and support vehicles shape the surrounding risk structure without becoming additional colliders. Rule, physical, interaction-safety, and single-collider constraints are imposed as hard gates to filter non-executable samples. To handle reactive ego behaviors, planner-controller feedback is further used for failure diagnosis, candidate re-ranking, and terminal refinement. Experiments on WOMD scenarios reconstructed in MetaDrive show that KG-ASG achieves strong adversarial effectiveness while improving Valid Primary Attack, reducing multi-collision, and obtaining closed-loop recovery gains under IDM, Cruise, and Expert controllers. These results demonstrate that collision-knowledge guidance and primary-support single-collider reasoning improve adversarial effectiveness, interpretability, and executability for autonomous driving safety validation."
+  },
+  {
+    "title": "Adversarial Stress Testing of SPARK Humanoid Safety Filters",
+    "original_title": "Adversarial Stress Testing of SPARK Humanoid Safety Filters",
+    "link": "https://arxiv.org/abs/2605.19009",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.19009v1 Announce Type: new \nAbstract: Humanoid robots are difficult to deploy safely because they have high-dimensional bodies, many collision constraints, and must operate near people and obstacles. Safety filters help by modifying a nominal control action when it may violate collision-avoidance constraints. Still, nominal benchmark scores do not fully show how these filters behave in harder environments. In this work, we study the robustness of SPARK humanoid safety filters through replication and stress testing. We replicate the SPARK benchmark case G1SportMode_D1_WG_SO_v1 in MuJoCo and evaluate RSSA, RSSS, SSA, CBF, PFM, and SMA under controlled random seeds. We also built a post-processing pipeline that converts raw SPARK logs into goal-tracking, minimum-distance, and collision-step metrics. Our results show that some methods track the goal more closely, while others reduce collision steps more effectively. The stress tests further indicate that safety behavior can change under obstacle crowding, noisy distance estimates, and delayed obstacle information. These findings suggest that humanoid autonomy should be evaluated beyond nominal performance, using metrics that expose failure modes before deployment."
+  },
+  {
+    "title": "Distributionally Robust Control via Stein Variational Inference for Contact-Rich Manipulation",
+    "original_title": "Distributionally Robust Control via Stein Variational Inference for Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2605.19029",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19029v1 Announce Type: new \nAbstract: Reliable robotic manipulation requires control policies that can accurately represent and adapt to uncertainty arising from contact-rich interactions. Modern data-driven methods mitigate uncertainty through large-scale training and computation, and degrade significantly in performance with limited number of training samples. By contrast, classical model-based controllers are computationally efficient and reliable, but their limited ability to represent task-relevant uncertainty can hinder performance in contact-rich interactions.\n  In this work, we propose to expand the capabilities of model-based manipulation control through more flexible uncertainty modeling that retains performance while exactly adapting to uncertainty. Our approach casts the manipulation problem as a distributionally robust control optimization and proposes a novel deterministic formulation based on Stein variational inference that preserves performance while explicitly modeling task-sensitive parameter uncertainty. As a result, the derived controllers are more aware of task sensitivities to uncertainty, yielding high reliability without compromising performance. Experimental results demonstrate up to 3$\\times$ improved robustness across a range of contact-rich manipulation tasks under broad parametric uncertainty, outperforming existing model-based control methods."
+  },
+  {
+    "title": "Neural Operators for Design-Space Surrogate Modeling of Tendon-Actuated Continuum Robots",
+    "original_title": "Neural Operators for Design-Space Surrogate Modeling of Tendon-Actuated Continuum Robots",
+    "link": "https://arxiv.org/abs/2605.19104",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19104v1 Announce Type: new \nAbstract: Continuum robots enable dexterous manipulation in constrained environments, but require accurate and efficient models for real-time manipulation and control. Traditional physics-based models can be computationally expensive and may suffer from inaccuracies due to unmodeled effects, while current learning-based methods often generalize poorly beyond the specific robot on which they are trained. We present a formulation of surrogate modeling for tendon-driven continuum robots as an operator learning problem that maps robot design parameters and tendon actuation inputs to resulting configurations. This formulation enables a single trained model to generalize across a large class of robot designs. We develop four novel neural operator architectures--two based on Deep Operator Networks (DeepONets) and two based on Fourier Neural Operators (FNOs)--and train them on simulation data to predict robot configurations. All architectures achieve good accuracy while allowing for fast and accurate generalization across designs. Our results demonstrate that operator learning provides an effective and generalizable surrogate for continuum robot mechanics in the design space, enabling fast modeling for control, planning, and design optimization in surgical and industrial applications."
+  },
+  {
+    "title": "Automatically Improving Simulation Physics for Articulated Objects",
+    "original_title": "Automatically Improving Simulation Physics for Articulated Objects",
+    "link": "https://arxiv.org/abs/2605.19136",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19136v1 Announce Type: new \nAbstract: Simulation is a central tool for scalable robot learning, but its effectiveness depends on the quality of object assets. While modern 3D datasets provide rich geometric and kinematic representations, they typically lack the physical properties required for stable and realistic interaction, requiring significant manual effort to construct simulation-ready articulated objects. In this thesis, we introduce interaction-readiness, which characterizes whether an object can be reliably simulated under manipulation. We propose a quantitative evaluation framework that decomposes interaction-readiness into measurable components, enabling systematic analysis of object quality and revealing failure modes not captured by conventional evaluation. We further present a multi-modal, simulator-in-the-loop approach for generating interaction-ready articulated objects from incomplete 3D assets. The method integrates geometric, visual, and semantic information to infer physical properties and refines them through iterative simulator feedback to improve physical consistency. Experiments across diverse articulated objects and manipulation tasks show that object quality directly impacts simulation stability, interaction behavior, and policy performance. Objects refined by our method exhibit more stable and realistic dynamics, enabling more reliable downstream learning and evaluation. Overall, this thesis demonstrates the importance of physical realism for articulated objects in simulation and introduces a practical multi-modal refinement approach, guided by simulator feedback, for constructing such objects at scale."
+  },
+  {
+    "title": "COBALT: Crowdsourcing Robot Learning via Cloud-Based Teleoperation with Smartphones",
+    "original_title": "COBALT: Crowdsourcing Robot Learning via Cloud-Based Teleoperation with Smartphones",
+    "link": "https://arxiv.org/abs/2605.19138",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19138v1 Announce Type: new \nAbstract: The scarcity of large-scale, high-quality demonstration data remains a bottleneck in scaling imitation learning for robotic manipulation. We present COBALT, a teleoperation platform designed to democratize robot learning at scale both in simulation and in the real world. By leveraging vectorized environments, our scalable, load-balanced infrastructure supports concurrent teleoperation by multiple users on a single GPU, yielding a significant reduction in teleoperation cost. Operators can connect from nearly anywhere on Earth using commonly available devices, including single or dual smartphones, VR headsets, 3D mice, and keyboards. An inmemory data cache and efficient video streaming keep control and rendering synchronous, sustaining dozens of concurrent users at 20 Hz with sub-100 ms end-to-end latency for up to 8 concurrent users per GPU. We also demonstrate stable operation supporting 256 simulated clients across 8 GPUs, underscoring the system's ability to scale across hardware and within individual servers. We perform a comprehensive user study showing that phone-based teleoperation performs comparably to or better than specialized hardware, enabling faster, more ergonomic data collection. To ensure data quality, COBALT logs a suite of real-time metrics to automatically filter suboptimal demonstrations. We further demonstrate that a structured user training curriculum significantly improves data collection quality. Guided by insights from our user study, we crowdsource the collection of a large-scale, high-quality pilot dataset with 7500+ demonstrations (50+ hours) collected with smartphones across nine countries over five days. We validate the dataset's quality by training state-of-the-art imitation learning algorithms. Please visit \\href{https://cobalt-teleop.github.io/}{cobalt-teleop.github.io} for more details."
+  },
+  {
+    "title": "PRISM-SLAM: Probabilistic Ray-Grounded Inference for Scale-aware Metric SLAM",
+    "original_title": "PRISM-SLAM: Probabilistic Ray-Grounded Inference for Scale-aware Metric SLAM",
+    "link": "https://arxiv.org/abs/2605.19257",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19257v1 Announce Type: new \nAbstract: Monocular SLAM historically suffers from scale ambiguity and tracking failure in dynamic environments. While recent vision foundation models (VFMs) provide remarkable zero-shot depth priors, naively integrating these deterministic predictions ignores predictive uncertainty and frame-to-frame scale inconsistencies. We propose PRISM-SLAM, a real-time framework that rigorously integrates VFM priors into a structured Bayesian factor graph to achieve scale-aware, metric-consistent localization and mapping. Specifically, we introduce a Pl\\\"ucker Ray-Distance Factor to anchor monocular observations in absolute space within a globally consistent metric coordinate system, mathematically resolving scale drift by making the metric scale Fisher-identifiable. To handle environmental dynamics, we derive an epistemic uncertainty proxy from temporal depth consistency and formulate a Dynamic Scene Uncertainty Gating (DSUG) mechanism. This soft-gating approach probabilistically down-weights dynamic distractors without incurring the heavy computational overhead associated with traditional semantic segmentation masks. By employing a multi-process architecture that asynchronously processes VFM inference and geometric tracking, PRISM-SLAM provides verified metric output at 30 FPS using solely RGB input, bridging the gap between foundation models and real-world robotic applications. Evaluated on the TUM RGB-D and 7-Scenes benchmarks, PRISM-SLAM achieves a metric $SE(3)$ Absolute Trajectory Error (ATE) nearly identical to its oracle-aligned $Sim(3)$ error. This demonstrates that our system can produce deployment-ready metric trajectories by delivering robust metric SLAM solutions without any post-hoc scale correction. Project page: https://prismslam-cmd.github.io/prismslam_pr/"
+  },
+  {
+    "title": "ContextFlow: Hierarchical Task-State Alignment for Long-Horizon Embodied Agents",
+    "original_title": "ContextFlow: Hierarchical Task-State Alignment for Long-Horizon Embodied Agents",
+    "link": "https://arxiv.org/abs/2605.19314",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19314v1 Announce Type: new \nAbstract: Long-horizon embodied agents increasingly delegate navigation, search, approach, and manipulation to specialist executors. As these executors become stronger, the main bottleneck shifts from local skill execution to maintaining a coherent task frontier across planning, monitoring, memory, and execution. We study task-state misalignment, a task-level consistency failure in which the planner's active stage, runtime evidence, remembered context, and delegated executor no longer justify the same next-step decision. This failure can lead to unsupported handoffs, stage lock, executor-context mismatch, and unnecessary replanning. We propose ContextFlow, an inspectable alignment framework that represents stages as explicit contracts, converts runtime observations into evidence packets, and applies scoped updates including continue, refine, transfer, promote, and repair. ContextFlow keeps specialist executors responsible for local closed-loop control while making task-frontier alignment explicit and auditable. Experiments and demonstration traces on long-horizon embodied tasks illustrate how evidence-grounded scoped updates diagnose and mitigate recurring task-state failures."
+  },
+  {
+    "title": "Taiwan suppliers look past Tesla as China's robot makers scale up - digitimes",
+    "original_title": "Taiwan suppliers look past Tesla as China's robot makers scale up - digitimes",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORmw3bUVrdHhGOXVxS0xaUVcyQU8yY1pCUV9iN3FsZDRNM0tvaGp5MERMM09vV3k4Q0ZFOVVPMGtxY3I5RGdibXZWdFA5dHdXZ09kSXEtUEdZYmdNeHFkZmJ0WGtjUS1iSUJFOXd0NjZ1VHR0X3FXckJzQ3pwQ2MyVW13QU9UWkVsb1lRa1JxaDhKMWRyTjNwcUNR?oc=5",
+    "date": "2026-05-20 02:31",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Taiwan suppliers look past Tesla as China's robot makers scale up  digitimes"
+  },
+  {
     "title": "Hyundai Motor to Deploy 25,000+ Atlas Humanoid Robots, Accelerate In-House Robotics Value Chain - 알파경제",
     "original_title": "Hyundai Motor to Deploy 25,000+ Atlas Humanoid Robots, Accelerate In-House Robotics Value Chain - 알파경제",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5QOEtDRTFBcFdyV0lOUHl3UHplZ1JXQXNSX0pkeEJHNXpPTzNsNFQzeDJxQTlBX3F2TWdTTFZEeTNFRE5wU2lwOFR6ZmZtQmNxZHhzdEpsZ1pZRzZjbFHSAW5BVV95cUxPZU1fSlNLemplYTcxdF95QUI1QmFFSE4tRHkwalBDc3MybUxEdHVCcm1samg2Tlk2VldNNjFDcVhHcnEyVXF1dkoxbTZSVlIwZ2xTd2NYdGlqMktacWNIR2dubjVNV3ZUQUpuVXN4QQ?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "캘리포니아의 산업실내재산 спрос 증가는 자동화에 의해 일으켜지고 있다. 이들 은  California의 warehouse, manufacturing floor, logistics network 등 공정의 변화에 의해 주도되는 것이다."
-  },
-  {
-    "title": "China의 인공인간 로봇 90%가 실.shipped함",
-    "original_title": "90% of Humanoid Robots Are Shipped by China 🤖 - Voronoi by Visual Capitalist",
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYVVPVjJsRkVmQ2NPUnNIbzBGMlViVFZPdnM1WkFWNWh4aW1NYVpZWHNvZVctcUVheWExN180czZYa3Fkd1dqQ1BEUzdGT2h5M0FISUNXVU5saDdsb3dEQnY1V2xobng5RkdZOFhfYWY3RjF0V3dNUG8zYS1xT3AzaEhtQ3BMbEx3UU5pbS1CNA?oc=5",
-    "date": "2026-03-24 18:31",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국이 90%의 인공인간 로봇을 공급함으로, 새로운 산업 경쟁구조를 조성하는 한편, 인공지능(AI)와 5G 등 첨단 기술과 결합하여 로봇산업의 확장과 발전을 촉진하고 있다."
-  },
-  {
-    "title": "드론에 AI가 결합되어 실종자의 빠른 발견을 도울 수 있을 가능성이 있는 경우",
-    "original_title": "Drones paired with AI could help search‑and‑rescue teams find missing persons faster",
-    "link": "https://techxplore.com/news/2026-03-drones-paired-ai-searchandrescue-teams.html",
-    "date": "2026-03-24 18:20",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "드론에 적외선 이미징, 열 이미징 및 컬러 카메라를 탑재하고 AI 시스템이 데이터를 해석하여야 한다. 이 실험적인 시스템은 응급대응자 및 실종자구조팀에게 실종자가 있는 위치를 pinpoint하고 실종자가 부상하거나 심지어 생존하는지를 확인할 수 있다."
-  },
-  {
-    "title": "Robot Humanoid Digital Brain 구축 방안",
-    "original_title": "How digital brains for humanoid robots are being built - Computerworld",
-    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUlN5Vlc0QmVrdHNRajBWLVNManBvWmxFYUpHWjl5TDB5cUV4aFVsd2pJVXBEYmZNd2RSOWZBck5kVzZBMkNpS2E1UlFDV3pLVnRZTTlPUWVFVVhDTXNRMmdIUkVNc0Z5Y3h4d2Nqc1hoSFN5QWhRRUpsUlRCZ0p6encxVXlqYXc5NWtic3U5RC03SWpTXzRpSUl6aEpaSVhxcTB6WU8zWDM?oc=5",
-    "date": "2026-03-24 16:54",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "인공지능(AI)과 컴퓨팅 파워를 결합하여 humanoiod 로보트의 '뇌'를 구축하는 방법이 개발되고 있습니다. 이 기술은 로보트가 인간과 같은 움직임을 보유할 수 있도록 하고, 향후 로보트의 가능성을 높일 것입니다."
-  },
-  {
-    "title": "TI와 NVIDIA가 로봇 배포를 가속화하는 파트너십을 맺었다",
-    "original_title": "TI partners with NVIDIA to accelerate robot deployments",
-    "link": "https://www.therobotreport.com/ti-partners-with-nvidia-to-accelerate-robot-deployments/",
-    "date": "2026-03-24 15:52",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "NVIDIA의 물리적 AI 컴퓨팅을 실 세계 애플리케이션에 접근하도록 결정적 제어, 감지, 출력, 안전을 모든 관절에서 제공함으로써 로봇 배포를 가속화하는TI와 NVIDIA의 파트너십이 열렸다."
-  },
-  {
-    "title": "Netflix 라이브 스트리밍 100만 기기까지 60초 내에 탑재함",
-    "original_title": "How Netflix Live Streams to 100 Million Devices in 60 Seconds",
-    "link": "https://blog.bytebytego.com/p/how-netflix-live-streams-to-100-million",
-    "date": "2026-03-24 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "넷플릭스가 100만 장치에 이르는 라이브 스트리밍을 60초 내에 구현한 시스템 구조와挑戰을 고찰하는 글에서 우리는 이를 보게 됩니다. 이 시스템은 초당 1,000개 이상의 요청을 처리할 수 있어야 하며, 이러한 요구 사항을 충족하기 위해 넷플릭스는 고성능의 인프라를 구축했습니다."
-  },
-  {
-    "title": "AGILE 로봇과 구글 딥마인드가 '로봇에 지성을 부여'하는 파트너쉽을 설정함",
-    "original_title": "Agile Robots and Google DeepMind partner to ‘bring intelligence to robotics’",
-    "link": "https://roboticsandautomationnews.com/2026/03/24/agile-robots-and-google-deepmind-partner-to-bring-intelligence-to-robotics/100076/",
-    "date": "2026-03-24 13:21",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Agile 로봇 개발사와 구글 딥마인드 AI 연구소가 전역적인 AI 로봇 발전을 위해 استرات지컬 리서치 파트너쉽을 구성하여 물리 세계에서 AI를 적용하는 것이 변혁적이라고 믿는다. 이ความร합작은 최신 AI 기술을 적용해 로봇 분야에 혁신을 가져올 것이다.\n\nNote: I followed the formatting rules strictly, and only provided the required output in the specified format."
-  },
-  {
-    "title": "Agile 로보틱스 및 구글 딥마인드가 PHYSICAL WORLD의 인텔리전스를 구현하기 위해 전략적研究 제휴를 체결함",
-    "original_title": "Agile Robots and Google DeepMind Collaborate to Bring Intelligence to Robotics",
-    "link": "https://humanoidroboticstechnology.com/industry-news/agile-robots-and-google-deepmind-collaborate-to-bring-intelligence-to-robotics/",
-    "date": "2026-03-24 13:03",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "Agile 로보틱스 SE와 구글 딥마인드, 세계 최고의 AI연구소가 jointly 다음세대 AI로보틱스를 추진하는 전략적 협력을 체결했으며, 이에 AI를 물리 세계에 적용하면 혁신적인 영향을 미칠 것임. 이 제휴는 실제 로보틱 시스템에 최신 AI를 도입하고 적응적, 의사 결단 Robots를 가능하게 할 것이다."
-  },
-  {
-    "title": "FANUC 아메리카 $90M 자금 투자, 미국 로봇 제조장 설치함",
-    "original_title": "FANUC America to invest $90M in U.S. robot manufacturing",
-    "link": "https://www.therobotreport.com/fanuc-america-invests-90m-u-s-robot-manufacturing/",
-    "date": "2026-03-24 12:54",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "FANUC 아메리카는 2019년부터 700여 명의 미국 직원을 고용하여 산업 자동화 장비를 생산해왔다. 새로운 투자는 U.S. 로봇 제조장을 건설하는 데 사용할 예정이다."
-  },
-  {
-    "title": "ROboCup의 역대",
-    "original_title": "A history of RoboCup with Manuela Veloso",
-    "link": "https://robohub.org/a-history-of-robocup-with-manuela-veloso/",
-    "date": "2026-03-24 12:43",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "로보컵은 국제 대회로 로봇과 AI를 촉진하고 발전시키는 다양한 리그의 도전을 통해 진행됩니다. 교수.manuela Veloso, 로보컵의 공동 설립자와 함께 interviewed하여 대회 시작부터 년차 성장에 대한 이야기를 들어보게 됩니다.\n\nNote: I translated the title as \"ROboCup의 역대\" which means \"The History of RoboCup\"."
   }
 ]
