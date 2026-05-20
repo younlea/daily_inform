@@ -72,6 +72,78 @@
     "summary": "arXiv:2605.19314v1 Announce Type: new \nAbstract: Long-horizon embodied agents increasingly delegate navigation, search, approach, and manipulation to specialist executors. As these executors become stronger, the main bottleneck shifts from local skill execution to maintaining a coherent task frontier across planning, monitoring, memory, and execution. We study task-state misalignment, a task-level consistency failure in which the planner's active stage, runtime evidence, remembered context, and delegated executor no longer justify the same next-step decision. This failure can lead to unsupported handoffs, stage lock, executor-context mismatch, and unnecessary replanning. We propose ContextFlow, an inspectable alignment framework that represents stages as explicit contracts, converts runtime observations into evidence packets, and applies scoped updates including continue, refine, transfer, promote, and repair. ContextFlow keeps specialist executors responsible for local closed-loop control while making task-frontier alignment explicit and auditable. Experiments and demonstration traces on long-horizon embodied tasks illustrate how evidence-grounded scoped updates diagnose and mitigate recurring task-state failures."
   },
   {
+    "title": "Self-assembling Modular Aerial Robot for Versatile Aerial Tasks",
+    "original_title": "Self-assembling Modular Aerial Robot for Versatile Aerial Tasks",
+    "link": "https://arxiv.org/abs/2605.19431",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19431v1 Announce Type: new \nAbstract: Multirotor aerial robots excel at maneuvering in three-dimensional space, and recent advances enable nimble navigation in cluttered and confined environments, especially for small airframes. By contrast, platforms built for high-altitude work tend to be larger to deliver high thrust for stable physical interaction with the environment. However, these conflicting design requirements create a long-standing trade-off between nimble navigation and robust aerial manipulation. Here, we present LEGION units, which are reconfigurable modular aerial robots capable of in-flight self-assembly for cooperative manipulation, drawing inspiration from the self-organized collectives formed by ants. Each unit retains nimble maneuverability while joint-equipped docking interfaces at both ends enable end-to-end self-assembly into a flying manipulator. We show that multiple units autonomously dock in flight; once latched, they maintain a zero-clearance interlock by controlling the contact force and torque, enabling reliable aggregation and articulated motion even outdoors. We further show that self-reconfigurability enables morphological switching between nimble individual flight and collective articulated manipulation, while realizing core in-flight manipulation primitives including pushing, pulling, rotating, grasping, and carrying. LEGION's self-organization enables aerial robots, especially in swarms, to shift from passive observers to active participants in their environment, broadening the scope of aerial physical interaction."
+  },
+  {
+    "title": "ARC-RL: A Reinforcement Learning Playground Inspired by ARC Raiders",
+    "original_title": "ARC-RL: A Reinforcement Learning Playground Inspired by ARC Raiders",
+    "link": "https://arxiv.org/abs/2605.19503",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19503v1 Announce Type: new \nAbstract: Reinforcement learning for legged locomotion has matured into a stack of multi-component reward functions and physics-engine benchmarks whose morphologies are uniformly derived from real commercial hardware. Game NPCs, however, are bound by stylistic constraints absent from sim-to-real robotics and routinely take the form of creatures with no real-robot counterpart. We introduce ARC-RL, a suite of four MuJoCo continuous-control environments featuring robotic morphologies inspired by the bestiary of ARC Raiders: the 18-DoF tall hexapod Queen, the 12-DoF armoured hexapod Bastion, the 18-DoF compact hexapod Tick, and the 12-DoF quadruped Leaper. All four robots share a unified observation template, action convention, simulation cadence, and a single closed-form multi-component reward function whose only per-morphology variation lives in a small set of weights and parameters. The reward fuses a velocity-tracking tent, a healthy survive bonus, a phase-locked gait-compliance bonus/cost pair, action regularisers, three safety penalties, and a posture anchor; no motion-capture data enters the reward at any point. We additionally provide hand-crafted Central Pattern Generator demonstrators per morphology, which serve both as fixed expert references and as sources of prior data for offline-to-online training. On this playground, we conduct a controlled empirical study comparing standard online algorithms (SAC, SPEQ, SOPE-EO) and methods augmented with prior data (SACfD, SPEQ-O2O, SOPE), and characterise how each paradigm copes with the playground's morphological diversity and animation-style stylistic constraints."
+  },
+  {
+    "title": "Learning-Accelerated Optimization-based Trajectory Planning for Cooperative Aerial-Ground Handover Missions",
+    "original_title": "Learning-Accelerated Optimization-based Trajectory Planning for Cooperative Aerial-Ground Handover Missions",
+    "link": "https://arxiv.org/abs/2605.19562",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19562v1 Announce Type: new \nAbstract: This paper presents a learning-augmented trajectory planning framework for cooperative unmanned aerial vehicle (UAV) and unmanned ground vehicle (UGV) handover missions. While centralized trajectory optimization ensures dynamic feasibility and task optimality, its high computational cost limits real-time applicability. We propose a neural surrogate planner utilizing decoupled encoder-decoder long short-term memory (LSTM) networks to generate coordinated handover trajectory predictions from the task specifications. These predictions serve as informed warm starts for the downstream centralized optimizer, thereby accelerating convergence to dynamically feasible solutions. Benchmark evaluations demonstrate that the learning-augmented planning framework achieves more than a threefold speedup and 100% optimization success rate compared to cold start optimization. The results indicate that combining data-driven inference with model-based refinement enables fast and reliable trajectory generation for heterogeneous multi-robot systems."
+  },
+  {
+    "title": "PAPO-VLA: Planning-Aware Policy Optimization for Vision-Language-Action Models",
+    "original_title": "PAPO-VLA: Planning-Aware Policy Optimization for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.19580",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19580v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models show promising ability in language-guided robotic tasks. However, making VLA policies reliable remains challenging, because a manipulation task is completed through closed-loop interaction, where each action affects subsequent execution. To analyze this problem, we revisit VLA policy during execution and argue that a VLA policy acts both as a planner, which makes task-oriented decisions that change the direction of execution, and as an executor, which realizes these decisions through dense continuous actions. This view suggests that improving VLA reliability requires particular attention to planning actions. Existing optimization methods can imitate actions or improve complete trajectories, but they usually do not explicitly identify planning actions or measure their importance for task success. To address this issue, we propose Planning-Aware Policy Optimization for VLA models (PAPO-VLA). PAPO-VLA first identifies planning actions by jointly considering action variation and trajectory outcome, then estimates their importance through causal sufficiency and causal necessity, and finally incorporates this importance into GRPO advantage estimation. In this way, more important planning actions receive stronger optimization emphasis, while the whole trajectory is still optimized by trajectory-level feedback. Experiments on multiple benchmarks demonstrate the effectiveness of PAPO-VLA."
+  },
+  {
+    "title": "RoVLA: Multi-Consistency Constraints for Robust Vision-Language-Action Models",
+    "original_title": "RoVLA: Multi-Consistency Constraints for Robust Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.19678",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19678v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have shown strong performance on embodied manipulation, yet they remain brittle under visual observation changes, paraphrased language instructions, and compounded perturbations. This limitation suggests that existing methods still rely heavily on shallow correlations in the training distribution, rather than learning stable couplings among task semantics, environment states, and action generation. Although recent efforts improve robustness through larger-scale training, post-training adaptation, or enhanced predictive modeling, they rarely enforce invariance-oriented consistency within the end-to-end policy itself. To address this issue, we propose RoVLA, a robust vision-language-action framework with multi-consistency constraints. RoVLA enforces consistency under three complementary transformations: instruction semantics, trajectory evolution, and observation perturbation. Specifically, Instructional Consistency (IC) promotes stable grounding under semantically equivalent instruction rewrites, Evolutionary Consistency (EC) preserves coherent action intent throughout the generation process, and Observational Consistency (OC) improves robustness to visual and proprioceptive perturbations by enforcing consistent predictions before and after targeted disturbances. By explicitly modeling these invariances during training, RoVLA reduces reliance on superficial correlations and improves robustness and generalization. Experiments on LIBERO-Plus, RoboTwin 2.0, and real-world manipulation tasks show that RoVLA consistently outperforms strong baseline methods and exhibits superior robustness under diverse task and observation shifts. These results demonstrate the effectiveness of multi-consistency learning for robust embodied control. Codes will be available at https://github.com/HCPLab-SYSU/RoVLA."
+  },
+  {
+    "title": "Beyond Action Residuals: Real-World Robot Policy Steering via Bottleneck Latent Reinforcement Learning",
+    "original_title": "Beyond Action Residuals: Real-World Robot Policy Steering via Bottleneck Latent Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2605.19919",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19919v1 Announce Type: new \nAbstract: Pretrained imitation policies have become a strong foundation for robot manipulation, but they often require online improvement to overcome execution errors, limited dataset coverage, and deployment mismatch. A central question is therefore how reinforcement learning (RL) should adapt policies after offline pretraining. Existing lightweight methods commonly apply residual corrections directly in action space, but this often leads to noisy and poorly structured exploration. In this work, we propose Z-Perturbation Reinforcement Learning (ZPRL), an approach that steers pretrained policies through a compact bottleneck latent rather than through policy weights or output actions. During offline training, we augment the policy with a plug-and-play variational information bottleneck (VIB) module to extract a task-relevant latent interface from observation embeddings. During online finetuning, the base policy is frozen and RL learns only a residual perturbation on this latent, whose decoded representation conditions the frozen action generator. We instantiate ZPRL on flow-matching policies and evaluate it on eight simulation tasks and four real-world tasks. Across diverse manipulation settings, ZPRL improves both sample efficiency and final performance over strong post-training baselines. In the real world, ZPRL improves the average success rate on four tasks by 33.7% over imitation base policies while producing smoother exploration behaviors than an action residual counterpart. These results suggest that a compact, task-aligned bottleneck latent provides an effective interface for online RL adaptation. More videos can be found at https://manutdmoon.github.io/ZPRL/."
+  },
+  {
+    "title": "RoHIL: Robust Human-in-the-Loop Robotic Reinforcement Learning Against Illumination Variations",
+    "original_title": "RoHIL: Robust Human-in-the-Loop Robotic Reinforcement Learning Against Illumination Variations",
+    "link": "https://arxiv.org/abs/2605.19924",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19924v1 Announce Type: new \nAbstract: Human-in-the-loop reinforcement learning systems achieve near-perfect success on the workstation where they are trained, but collapse when the same robot is moved to a workstation a few meters away due to shifts in the visual input distribution caused by new lamp positions and window light. Re-collecting demonstrations and re-running HIL on every workstation is incompatible with deployment, and naively fine-tuning on shifted-light data triggers catastrophic forgetting of the source workstation. To close this cross-domain gap, we present RoHIL, an offline fine-tuning framework that uses no extra real-robot interaction. RoHIL combines (i) a world-model-based image relighter that re-synthesises the visual stream of source-workstation trajectories under multiple virtual HDRI environments, leaving actions and rewards real; (ii) Illumination-Retention Replay (IRR), a data-level anti-forgetting mechanism that interleaves relit adaptation transitions with original-light retention transitions to preserve source-workstation Bellman coverage; and (iii) an anchored Bellman-actor regulariser that constrains representation and policy drift from the original source-workstation policy. Across four real-robot manipulation tasks under significant cross-workstation illumination variations, RoHIL substantially improves shifted-light performance where standard HIL-RL collapses, while preserving source-workstation performance, eliminating the need to re-collect data and retrain for every new workstation and environment. Project page: https://anonymous4365.github.io/RoHIL/"
+  },
+  {
+    "title": "CEER: Compliant End-Effector and Root Control as a Unified Interface for Hierarchical Humanoid Loco-Manipulation",
+    "original_title": "CEER: Compliant End-Effector and Root Control as a Unified Interface for Hierarchical Humanoid Loco-Manipulation",
+    "link": "https://arxiv.org/abs/2605.19981",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19981v1 Announce Type: new \nAbstract: Humanoid robots have achieved impressive locomotion performance, yet contact-rich and long-horizon manipulation remains a major bottleneck. Manipulation is inherently contact-rich and demands compliant whole-body control for stable interaction, while its diversity and long-horizon nature favor modular, planner-compatible interfaces over joint-space tracking.\n  We propose CEER, a compliant end-effector-root (EE-root) control abstraction for modular humanoid loco-manipulation within a hierarchical planning framework. CEER enables compliance-aware whole-body control in an interpretable task space defined by root motion commands and end-effector pose targets, and supports plug-and-play integration with heterogeneous high-level planners. A teacher-student framework is adopted to distill a general motion-tracking controller into a low-level policy that consumes only EE-root commands.\n  We further construct a hierarchical system that integrates heterogeneous planners and task modules through the EE-root interface, enabling diverse manipulation tasks without retraining the underlying whole-body policy. Experiments in simulation and on hardware demonstrate 3.3 cm end-effector tracking accuracy with substantially reduced jerk compared to baselines, stable contact-rich manipulation under teleoperation, and up to 70% success in simulated single-object loco-manipulation tasks within a room-scale environment. These results indicate that compliant EE-root control provides a practical abstraction for humanoid loco-manipulation, enabling modular and scalable integration of diverse skills."
+  },
+  {
     "title": "Taiwan suppliers look past Tesla as China's robot makers scale up - digitimes",
     "original_title": "Taiwan suppliers look past Tesla as China's robot makers scale up - digitimes",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORmw3bUVrdHhGOXVxS0xaUVcyQU8yY1pCUV9iN3FsZDRNM0tvaGp5MERMM09vV3k4Q0ZFOVVPMGtxY3I5RGdibXZWdFA5dHdXZ09kSXEtUEdZYmdNeHFkZmJ0WGtjUS1iSUJFOXd0NjZ1VHR0X3FXckJzQ3pwQ2MyVW13QU9UWkVsb1lRa1JxaDhKMWRyTjNwcUNR?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "Amazon은 인물로봇이 고객의 삶을 개선하는 방식을 이해하기 위해 '잘 생각하고 조심스러운 접근'을 취하고 있으며, Fauna 로봇 개발사의 취득을 발표하였다."
-  },
-  {
-    "title": "스ाउ테른 글레이저의와 코르바스 로보틱스의 드론 인벤토리 시스템을 전국 분포망에 확장적용함",
-    "original_title": "Southern Glazer’s expands use of Corvus Robotics drone inventory system across its distribution network",
-    "link": "https://roboticsandautomationnews.com/2026/03/24/southern-glazers-expands-use-of-corvus-robotics-drone-inventory-system-across-its-distribution-network/100113/",
-    "date": "2026-03-24 22:01",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "코르바스 로보틱스와 스ाउ테rn 글레이저의 와의 전략 기술 파트너쉽으로, 코르바스 원 오톤모우스 인벤톰리 매니지먼트 시스템이 전국 9개의 분포센터에서 40여 대의 드론을 배치하여 운영하고 있으며, 추가 확장 계획 중이다."
-  },
-  {
-    "title": "Exotec는 유럽 전역에 Decathlon 창고 자동화 확장 서비스를 출시함",
-    "original_title": "Exotec rolls out Skyfleet program to scale Decathlon warehouse automation across Europe",
-    "link": "https://roboticsandautomationnews.com/2026/03/24/exotec-rolls-out-skyfleet-program-to-scale-decathlon-warehouse-automation-across-europe/100106/",
-    "date": "2026-03-24 21:48",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Exotec은 Decathlon을 위하여 5개국의 7개의 로지스틱스 플랫폼에서 Skyfleet 프로그램을 배포해 주는 것입니다. 이 프로젝트는 Decathlon이 Европ계 로지스틱스 흐름을 표준화하고 관리할 수 있도록 도와주는 데 있습니다."
-  },
-  {
-    "title": "Geekplus 로보슈틀 V5",
-    "original_title": "Geekplus launches RoboShuttle V5 to enable fully autonomous warehouse picking",
-    "link": "https://roboticsandautomationnews.com/2026/03/24/geekplus-launches-roboshuttle-v5-to-enable-fully-autonomous-warehouse-picking/100102/",
-    "date": "2026-03-24 21:30",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "게이플러스(World's largest autonomous mobile robot manufacturer)는 로보슈틀 V5를 출시하여 다체인 저장소 picking을 완전히 자동화하는 tote-to-person 및 embedded robot arm picking station 솔루션의 주요 업그레이드입니다. 로보슈틀 V5는 \"새 산업 표준\"을 세팅한 것으로, LogiMAT 2026(3월 24-26일) 독일 슈투트가르트에서 첫 공개됩니다."
-  },
-  {
-    "title": "AI 음성합성 기술을 적용한 다국어 비디오 제작 방법",
-    "original_title": "How to Add AI Voice-Over to Videos in Multiple Languages",
-    "link": "https://roboticsandautomationnews.com/2026/03/24/how-to-add-ai-voice-over-to-videos-in-multiple-languages/100096/",
-    "date": "2026-03-24 19:57",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "AI 음성합성 기술을 통해 130여 개 언어의 자연스러운 음성을 생성할 수 있습니다. 이에 따라 다국어 비디오 콘텐츠를 생산할 수 있어 언어별 목소리 배우 hire 없이 가능합니다. 또한, 음성 클로닝 기능으로는 원래 발언자의 음声を 새로운 언어에서 복제할 수 있어 시청자는amiliar voice를 들을 수 있습니다. 처리 시간은 30분의 비디오가 1시간 이하로 걸립니다."
-  },
-  {
-    "title": "Derribar Ventures Limited의 гибкость 있는 일과제 productivity를 유지하는 접근 방식",
-    "original_title": "Derribar Ventures Limited’s Approach to Flexible Work Without Losing Productivity",
-    "link": "https://roboticsandautomationnews.com/2026/03/24/derribar-ventures-flexible-work/100092/",
-    "date": "2026-03-24 19:40",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Derribar Ventures Limited가 발표한 조사에 따르면 일정 flexibility를 가진 직원들은 29% 높은 productivity와 53% 높은 집중력을 보였다. гибкость 있는 일과제는 거의 모든 사람이 원하는 것들 중 하나로, 직원들은 스케줄의 своб도를 원하고, 매니저들은 실제로 일과제가 이루어지는지 확인하려 한다."
-  },
-  {
-    "title": "Amplysphere OÜ의 콘텐츠 전략",
-    "original_title": "Strategies by Amplysphere OÜ Refining Your Content Strategy for Better ROI",
-    "link": "https://roboticsandautomationnews.com/2026/03/24/amplysphere-ou-sustainable-digital-growth-insights/100088/",
-    "date": "2026-03-24 19:27",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "다양한 마케팅 노력과 단기 성과에 벗어나서, 기업들은 지속적인 확장에 대한 데이터 해석과 의미 있는 상호 작용을 중시하게 되었다. Algorithm-driven 디지털 환경에서 경쟁이 심해짐에 따라, 사업자는 창의성을 균형 있게 하되며 측정 가능성 있는 결과를 달성하는 구조화된 전략을 채택해야 한다."
-  },
-  {
-    "title": "MIT의 TEDRAKE가 로보틱스 수머릿에 스팀 AI 스타트업을 공개할 것임",
-    "original_title": "Russ Tedrake to unveil stealth AI startup at Robotics Summit",
-    "link": "https://www.therobotreport.com/russ-tedrake-to-unveil-stealth-ai-startup-at-robotics-summit/",
-    "date": "2026-03-24 18:50",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "MIT의 TEDRAKE가 로보틱스 산업에 있는 물리적 AI를 활용하여 다양한 산업에서 더 강력하고 adaptable한 로봇을 개발하는 비전을 공유할 예정입니다."
-  },
-  {
-    "title": "California Industrial Real Estate Demand Upsurge due to Automation의 성장함",
-    "original_title": "How Automation is Driving Demand for Industrial Real Estate in California",
-    "link": "https://roboticsandautomationnews.com/2026/03/24/how-automation-is-driving-demand-for-industrial-real-estate-in-california/100080/",
-    "date": "2026-03-24 18:48",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "캘리포니아의 산업실내재산 спрос 증가는 자동화에 의해 일으켜지고 있다. 이들 은  California의 warehouse, manufacturing floor, logistics network 등 공정의 변화에 의해 주도되는 것이다."
   }
 ]
