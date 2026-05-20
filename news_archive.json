@@ -1,5 +1,14 @@
 [
   {
+    "title": "Parallel Systems raises $100 million to bring autonomous freight trains into mainstream logistics",
+    "original_title": "Parallel Systems raises $100 million to bring autonomous freight trains into mainstream logistics",
+    "link": "https://roboticsandautomationnews.com/2026/05/20/parallel-systems-raises-100-million-to-bring-autonomous-freight-trains-into-mainstream-logistics/101739/",
+    "date": "2026-05-20 05:59",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Parallel Systems is developing what it describes as the world’s first autonomous freight train system, as the broader logistics industry increasingly shifts toward automated and autonomous transportation technologies. The Los Angeles-based company has raised approximately $100 million to date and is currently conducting commercial testing of its autonomous rail vehicles in Georgia in partnership with […]"
+  },
+  {
     "title": "KG-ASG: Collision-Knowledge-Guided Closed-Loop Adversarial Scenario Generation With Primary-Support Attribution",
     "original_title": "KG-ASG: Collision-Knowledge-Guided Closed-Loop Adversarial Scenario Generation With Primary-Support Attribution",
     "link": "https://arxiv.org/abs/2605.18895",
@@ -142,6 +151,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.19981v1 Announce Type: new \nAbstract: Humanoid robots have achieved impressive locomotion performance, yet contact-rich and long-horizon manipulation remains a major bottleneck. Manipulation is inherently contact-rich and demands compliant whole-body control for stable interaction, while its diversity and long-horizon nature favor modular, planner-compatible interfaces over joint-space tracking.\n  We propose CEER, a compliant end-effector-root (EE-root) control abstraction for modular humanoid loco-manipulation within a hierarchical planning framework. CEER enables compliance-aware whole-body control in an interpretable task space defined by root motion commands and end-effector pose targets, and supports plug-and-play integration with heterogeneous high-level planners. A teacher-student framework is adopted to distill a general motion-tracking controller into a low-level policy that consumes only EE-root commands.\n  We further construct a hierarchical system that integrates heterogeneous planners and task modules through the EE-root interface, enabling diverse manipulation tasks without retraining the underlying whole-body policy. Experiments in simulation and on hardware demonstrate 3.3 cm end-effector tracking accuracy with substantially reduced jerk compared to baselines, stable contact-rich manipulation under teleoperation, and up to 70% success in simulated single-object loco-manipulation tasks within a room-scale environment. These results indicate that compliant EE-root control provides a practical abstraction for humanoid loco-manipulation, enabling modular and scalable integration of diverse skills."
+  },
+  {
+    "title": "Beyond Binary Success: A Diagnostic Meta-Evaluation Framework for Fine-Grained Manipulation",
+    "original_title": "Beyond Binary Success: A Diagnostic Meta-Evaluation Framework for Fine-Grained Manipulation",
+    "link": "https://arxiv.org/abs/2605.19986",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19986v1 Announce Type: new \nAbstract: Fine-grained manipulation marks a regime where global scene context no longer suffices, and success hinges on the tight coupling of local attribute grounding, high-fidelity spatial perception, and constraint-respecting motor execution. However, current embodied AI benchmarks collapse these capacities into binary success rates, systematically inflating reported capabilities by up to 70% and masking the architectural bottlenecks that impede real-world deployment. We introduce MetaFine, a diagnostic meta-evaluation framework that disentangles manipulation competency along three axes: understanding, perception, and controlled behavior. Built on a compositional task graph, MetaFine absorbs heterogeneous external benchmarks and reconstructs them into diagnostic scenarios of varying complexity under a unified protocol. Evaluating state-of-the-art vision-language-action (VLA) models through this lens exposes severe dimension-specific failures invisible to conventional metrics. Through targeted causal intervention, we identify the visual encoder's ability to preserve local spatial structure as a key bottleneck for fine-grained precision: improving it directly unlocks previously inaccessible manipulation capabilities without modifying downstream policies. MetaFine further supports hybrid real-sim validation, using limited paired real-world rollouts to calibrate scalable simulation-based estimates for more stable physical benchmarking. By shifting evaluation from ranking to diagnosis, MetaFine turns benchmarking into an actionable compass for repairing the layered capacities underlying genuine physical dexterity. The MetaFine framework, benchmarks, and supporting resources will be publicly released at our project page: https://metafine.github.io/."
+  },
+  {
+    "title": "EgoTraj: Real-World Egocentric Human Trajectory Dataset for Multimodal Prediction",
+    "original_title": "EgoTraj: Real-World Egocentric Human Trajectory Dataset for Multimodal Prediction",
+    "link": "https://arxiv.org/abs/2605.19004",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.19004v1 Announce Type: cross \nAbstract: Accurately forecasting human trajectories from an egocentric perspective plays a central role in applications such as humanoid robotics, wearable sensing systems, and assistive navigation. However, progress in this direction remains limited due to the scarcity of egocentric trajectory datasets collected in real-world environments. Addressing this need, we introduce EgoTraj, an egocentric multimodal open dataset recorded using Meta Quest Pro (MQPro). EgoTraj contains 75 sequences of human navigation collected from multiple MQPro wearers in real-world urban environments. Each recording provides synchronized RGB video along with ground-truth data, including continuous time-synchronized 6-degree-of-freedom head poses, per-frame 3D eye gaze vectors, scene annotations. To the best of our knowledge, EgoTraj differs from typical egocentric trajectory datasets by capturing long-horizon, self-directed navigation across diverse urban routes with broad participant diversity. To demonstrate the potential of the dataset, we benchmark several state-of-the-art methods for egocentric trajectory prediction and conduct ablation studies to analyze the contributions of gaze, scene, and motion cues. The results highlight the utility of EgoTraj for AR-based perception, navigation, and assistive systems. The EgoTraj dataset, code, and EgoViz Dashboard are publicly available at https://github.com/yehiahmad/EgoTraj."
+  },
+  {
+    "title": "Domain-Adaptive Communication-Rate Optimization for Sim-to-Real Humanoid-Robot Wireless XR Teleoperation",
+    "original_title": "Domain-Adaptive Communication-Rate Optimization for Sim-to-Real Humanoid-Robot Wireless XR Teleoperation",
+    "link": "https://arxiv.org/abs/2605.19293",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.19293v1 Announce Type: cross \nAbstract: Wireless extended reality (XR) teleoperation provides embodied interaction capability for collecting humanoid robot demonstrations, but the large-scale adoption is restricted by the overhead of high-frequency motion transmission. This paper develops a system framework that integrates sampling, transmission, interpolation, and reconstruction and formulates a communication-rate optimization that aims to minimize the communication energy while maintaining the reconstruction accuracy of robot motion trajectories through dimension-wise sampling-rate control. Since acquiring real-time feedback from physical robots is limited by hardware costs, it is necessary to solve the problem through simulator interaction with offline real-domain data correction. To guide sim-to-real adaptation, we provide a PAC-Bayes generalization characterization that reveals the effects of latent density-ratio estimation, finite-sample deviation, and encoder bias. Building on this analysis, we propose a proximal policy optimization (PPO) method with density-ratio weighting and trust-region regularization. Experiments on public humanoid teleoperation dataset show that the proposed method improves the tradeoff between reconstruction error and communication energy consumption under sim-to-real distribution shift. We further analyze the effectiveness of the proposed algorithm across various wireless channels and dynamic motion trajectories."
+  },
+  {
+    "title": "World-Ego Modeling for Long-Horizon Evolution in Hybrid Embodied Tasks",
+    "original_title": "World-Ego Modeling for Long-Horizon Evolution in Hybrid Embodied Tasks",
+    "link": "https://arxiv.org/abs/2605.19957",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.19957v1 Announce Type: cross \nAbstract: World models are widely explored in embodied intelligence, yet they typically predict distinct evolutions of the world and the ego within a single stream, where the world captures persistent instruction-agnostic scene regularities and the ego captures robot-centric instruction-conditioned dynamics. This world-ego entanglement leads to a degradation in long-horizon embodied scenarios, particularly in hybrid tasks with interleaved navigation and manipulation behaviors. In this paper, we introduce \\emph{World-Ego Modeling}, a new conceptual paradigm that decomposes future evolution into world and ego components. We define the world-ego boundary from three perspectives, i.e., motion-, semantic-, and intention-based views, and analyze three disentanglement strategies with post-, pre-, and full disentanglement. Further, we instantiate this paradigm as the World-Ego Model (WEM), a unified embodied world model that couples an implicit separate world-ego planner with a cascade-parallel mixture-of-experts (CP-MoE) diffusion generator. To enable rigorous evaluation, we further construct HTEWorld, the first benchmark for long-horizon world modeling with hybrid navigation-manipulation tasks, providing 125K video clips (over 4.5M frames) with fine-grained action annotations and 300 multi-turn evaluation trajectories (over 2K instructions). Extensive experiments show that WEM achieves state-of-the-art performance on HTEWorld while remaining competitive on existing manipulation-only benchmarks."
+  },
+  {
+    "title": "Learn2Decompose: Learning Problem Decomposition for Efficient Sequential Multi-object Manipulation Planning",
+    "original_title": "Learn2Decompose: Learning Problem Decomposition for Efficient Sequential Multi-object Manipulation Planning",
+    "link": "https://arxiv.org/abs/2408.06843",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2408.06843v5 Announce Type: replace \nAbstract: We present an efficient task and motion replanning approach for sequential multi-object manipulation in dynamic environments. Conventional Task And Motion Planning (TAMP) solvers experience an exponential increase in planning time as the planning horizon and number of objects grow, limiting their applicability in real-world scenarios. To address this, we propose learning problem decompositions from demonstrations to accelerate TAMP solvers. Our approach consists of three key components: goal decomposition learning, computational distance learning, and object reduction. Goal decomposition identifies the necessary sequences of states that the system must pass through before reaching the final goal, treating them as subgoal sequences. Computational distance learning predicts the computational complexity between two states, enabling the system to identify the temporally closest subgoal from a disturbed state. Object reduction minimizes the set of active objects considered during replanning, further improving efficiency. We evaluate our approach on three benchmarks, demonstrating its effectiveness in improving replanning efficiency for sequential multi-object manipulation tasks in dynamic environments."
+  },
+  {
+    "title": "RoboMD: Uncovering Robot Vulnerabilities through Semantic Potential Fields",
+    "original_title": "RoboMD: Uncovering Robot Vulnerabilities through Semantic Potential Fields",
+    "link": "https://arxiv.org/abs/2412.02818",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2412.02818v4 Announce Type: replace \nAbstract: Robot manipulation policies, while central to the promise of physical AI, are highly vulnerable in the presence of external variations in the real world. Diagnosing these vulnerabilities is hindered by two key challenges: (i) the relevant variations to test against are often unknown, and (ii) direct testing in the real world is costly and unsafe. We introduce a framework that tackles both issues by learning a separate deep reinforcement learning (deep RL) policy for vulnerability prediction through virtual runs on a continuous vision-language embedding trained with limited success-failure data. By treating this embedding space, which is rich in semantic and visual variations, as a potential field, the policy learns to move toward vulnerable regions while being repelled from success regions. This vulnerability prediction policy, trained on virtual rollouts, enables scalable and safe vulnerability analysis without expensive physical trials. By querying this policy, our framework builds a probabilistic vulnerability-likelihood map. Experiments across simulation benchmarks and a physical robot arm show that our framework uncovers up to 23% more unique vulnerabilities than state-of-the-art vision-language baselines, revealing subtle vulnerabilities overlooked by heuristic testing. Additionally, we show that fine-tuning the manipulation policy with the vulnerabilities discovered by our framework improves manipulation performance with much less fine-tuning data."
+  },
+  {
+    "title": "Neural Configuration-Space Barriers for Manipulation Planning and Control",
+    "original_title": "Neural Configuration-Space Barriers for Manipulation Planning and Control",
+    "link": "https://arxiv.org/abs/2503.04929",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2503.04929v3 Announce Type: replace \nAbstract: Planning and control for high-dimensional robot manipulators in cluttered dynamic environments require computational efficiency and robust safety guarantees. Inspired by recent advances in learning configuration-space distance functions (CDFs) as representations of robot bodies, we propose a unified approach for motion planning and control that formulates safety constraints as CDF barriers. A CDF barrier approximates the local free configuration space, substantially reducing the number of collision-checking operations during motion planning. However, learning a CDF barrier with a neural network and relying on online sensor observations introduces uncertainties that must be considered during control synthesis. To address this, we develop a distributionally robust CDF barrier formulation for control that accounts for modeling errors and sensor noise without assuming a known underlying distribution. Simulations and hardware experiments on a UFactory xArm6 manipulator show that our neural CDF barrier formulation enables efficient planning and robust safe control in cluttered and dynamic environments, relying only on onboard point-cloud observations."
+  },
+  {
+    "title": "COMPASS: Confined-space Manipulation Planning with Active Sensing Strategy",
+    "original_title": "COMPASS: Confined-space Manipulation Planning with Active Sensing Strategy",
+    "link": "https://arxiv.org/abs/2509.14787",
+    "date": "2026-05-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2509.14787v2 Announce Type: replace \nAbstract: Manipulation in confined and cluttered environments remains a significant challenge due to partial observability and complex configuration spaces. Effective manipulation in such environments requires an intelligent exploration strategy to safely understand the scene and search the target. In this paper, we propose COMPASS, a multi-stage exploration and manipulation framework featuring a manipulation-aware sampling-based planner. First, we reduce collision risks with a near-field awareness scan to build a local collision map. Additionally, we employ a multi-objective utility function to find viewpoints that are both informative and conducive to subsequent manipulation. Moreover, we perform a constrained manipulation optimization strategy to generate manipulation poses that respect obstacle constraints. To systematically evaluate method's performance under these difficulties, we propose a benchmark of confined-space exploration and manipulation containing four level challenging scenarios. Compared to exploration methods designed for other robots and only considering information gain, our framework increases manipulation success rate by 24.25% in simulations. Real-world experiments demonstrate our method's capability for active sensing and manipulation in confined environments."
   },
   {
     "title": "Taiwan suppliers look past Tesla as China's robot makers scale up - digitimes",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "UNITree는 4배의 용량을 확장해 20,000대를 생산하는 계획을 발표했습니다. 이에 따라 회사는 하드웨어와 소프트웨어 개발 능력을 강화할 계획입니다."
-  },
-  {
-    "title": "Humanoid Robot Safety Stoppability 감시자 개발 ~함",
-    "original_title": "Learning Safe-Stoppability Monitors for Humanoid Robots",
-    "link": "https://arxiv.org/abs/2603.22703",
-    "date": "2026-03-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "Korea's humanoid robot safety stoppability monitoring technology developed to enable proactive safety measures, utilizing a simulation-driven framework called PRISM. The system learns a neural predictor for state-level stoppability and refines the decision boundary using importance sampling, improving data efficiency while reducing false-safe predictions. This technology supports scalable certification of fail-safe behaviors for humanoid robots."
-  },
-  {
-    "title": "Grounding Sim-to-Real Generalization in Dexterous Manipulation: An Empirical Study with Vision-Language-Action Models",
-    "original_title": "Grounding Sim-to-Real Generalization in Dexterous Manipulation: An Empirical Study with Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2603.22876",
-    "date": "2026-03-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Korea의 Dexterous Manipulation을 위한 Sim-to-Real 일반화 연구, 4차원(다층 도메인 랜덤화, Photorealistic Rendering, Physics-Realistic Modeling, 강화 학습 업데이트)에 초점을 맞춘 실용적 연구 결과를 보고합니다."
-  },
-  {
-    "title": "PHANTOM Hand",
-    "original_title": "PHANTOM Hand",
-    "link": "https://arxiv.org/abs/2603.23152",
-    "date": "2026-03-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "phantom hand ~임. tendon-driven underactuated hands ~을 하지만 kinematic unpredictability 및 highly non-linear force transmission ~으로 preciseness ~이 제한되는 문제 ~을 해결하기 위해 hybrid precision-augmented compliance ~을 proposing. modular 1:1 human-scale system ~을 개발하여 kinematic reproducibility ~을 sub-degree level로 달성하고 mechanical compliance ~을 retention하여 stable physical interaction ~을 가능하게 하는 unified framework ~을 제안."
-  },
-  {
-    "title": "LiDAR 포인트 클라우드 데이터 압축 프레임워크: LiZIP",
-    "original_title": "LiZIP: An Auto-Regressive Compression Framework for LiDAR Point Clouds",
-    "link": "https://arxiv.org/abs/2603.23162",
-    "date": "2026-03-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "자동화된 주행차량의 LiDAR 센서로 생성되는 거대한 데이터 볼륨이 실시간 처리와 V2X 전송에 걸림돌을 만들어 냈다. 기존의 无손실압축 방법들은 Industry Standard 알고리즘(LASzip)와 다르게 Adaptability가 부족하고, Deep Learning 접근은 prohibitively의 계산 비용으로 인해 제한된다. 이 논문에서는 LiZIP, Neural Predictive Coding 기반의 Lightweight, Near-Lossless Zero-Drift 압축 프레임워크를 제안한다. 로컬 컨텍스트에서 점좌표를 예측하는 compact Multi-Layer Perceptron (MLP) 사용하여 LiZIP은 스파이스 리저이드만을 효율적으로 인코딩할 수 있다.\n이제 LiZIP은 NuScenes와 Argoverse 데이터셋에 평가를 한 반면, GZip, LASzip, Google Draco (24-bit quantization으로 설정된 고정밀도 기하학 기반)와의 벤치마크를 수행했다. 결과는 다양한 환경에서 LiZIP이 consistently superior한 압축비율을 달성하는 것을 보여준다. 제안된 시스템은 Industry Standard LASzip보다 7.5%-14.8%의 파일 크기를 줄였으며, Google Draco보다 8.8%-11.3%를 초과하여 다양한 데이터셋에서 성능을 나타내었다. 또한, Argoverse 데이터셋에 대한 일반화 기능을 수행하며, 재학습없이 성능을 유지했다. GZip 알고리즘과 비교하여 LiZIP은 38%-48%의 압축비율을 달성하는 것을 보여준다. 이 효율성은 V2X 애플리케이션과 클라우드 아카이브에 대한 Bandwidth 제한된 이점을 제공하고 있다."
-  },
-  {
-    "title": "Efficient Hybrid SE(3)-Equivariant Visuomotor Flow Policy via Spherical Harmonics for Robot Manipulation",
-    "original_title": "Efficient Hybrid SE(3)-Equivariant Visuomotor Flow Policy via Spherical Harmonics for Robot Manipulation",
-    "link": "https://arxiv.org/abs/2603.23227",
-    "date": "2026-03-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 조작을 위한 새로운 프레임워크, E3Flow를 제안합니다. 이 프레임워크는 단일 모달리티 입력에頼らず, 고속 샘플링 메서드와 안정적으로 결합할 수 있습니다. 또한 E3Flow는 직사각형 플로우와 고급의 SO(3) 일관성을 ensured하고 있습니다.\n\n(Note: I followed the instructions to translate the title and summarize the content into 2-3 concise Korean sentences, using a formal and objective tone.)"
-  },
-  {
-    "title": "VTAM: 비디오-촉각-동작 모델로 복잡한 물리적 상호 작용을 넘어설 것임",
-    "original_title": "VTAM: Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs",
-    "link": "https://arxiv.org/abs/2603.23481",
-    "date": "2026-03-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "KOREAN_SUMMARY: 비디오-촉각-동작 모델(VTAM)을 제안하여 시각 reasoning으로부터의 임박한 상호 작용 상태를 보다 신뢰할 수 있도록 촉각 피드백을 추가하였다. VTAM은 촉각 스트림을 비디오 트랜스포머에 결합하여 촉각-언어 쌍 데이터나 독립적인 촉각 정련이 필요하지 않도록 가볍게 모달리티 전송을 적용하고 있다. 이 모델은 물리적으로 지상화된 표현 모델에 있어 촉각 피드백의 중요성을 보여주는 90% 이상의 성공률을 보인다."
-  },
-  {
-    "title": "ABot-PhysWorld: 이론 기반의 물리적 Manipulation 세계 모델",
-    "original_title": "ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment",
-    "link": "https://arxiv.org/abs/2603.23376",
-    "date": "2026-03-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Physically implausible manipulations이 발생하는 상태-of-the-art 세계 모델을 개선하기 위해 ABot-PhysWorld, 14B Diffusion Transformer 모델을 개발하였다. 이 모델은 3백만 건의 물리적 annotation이 있는 manipulation 클립 데이터에 기반하여 생성하고, DPO-based post-training framework를 사용하여 물리적 불합리를 억제하면서 시각적 품질을 보존한다. 또한 cross-embodiment control을 위한 precise spatial action injection 기능을 구현하였다."
-  },
-  {
-    "title": "AME-2: Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding",
-    "original_title": "AME-2: Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding",
-    "link": "https://arxiv.org/abs/2601.08485",
-    "date": "2026-03-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "테라인에 대한 민첩하고 일반화된 다지하 보행을 달성하는 것은 감각과 제어의.tight한 통합이 필요합니다. 이 existing methods는 공원 코스에서 민첩성을 보여주지만 종종 end-to-end 센서-모터 모델에 의존하여 일반화되고 해석이 불가능한 경우가 있습니다. 그 대조적으로, generalized locomotion을 대상으로 하는 method는 일반화된 agility를 보이지만 시각적 가림막의 struggle로 인해 제한적인 민첩성을 보여주는 경우가 있습니다. AME-2 framework를 도입하여 unified reinforcement learning RL framework를 사용하여 민첩하고 일반화된 다지하 보행을 달성합니다. 이 framework는 control policy에 attention-based map encoder를 포함시켜 local과 global mapping feature를 추출하고 salient region에 focus를 두어 interpretable하고 generalized embedding을 생성합니다."
-  },
-  {
-    "title": "Amazon Fauna 로봇 개발사 취득함",
-    "original_title": "Amazon acquires humanoid developer Fauna Robotics",
-    "link": "https://www.therobotreport.com/amazon-acquires-humanoid-developer-fauna-robotics/",
-    "date": "2026-03-24 22:22",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Amazon은 인물로봇이 고객의 삶을 개선하는 방식을 이해하기 위해 '잘 생각하고 조심스러운 접근'을 취하고 있으며, Fauna 로봇 개발사의 취득을 발표하였다."
   }
 ]
