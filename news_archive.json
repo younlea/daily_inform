@@ -72,6 +72,78 @@
     "summary": "arXiv:2605.20774v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have shown strong promise for general-purpose robotic manipulation, but their real-world evaluation remains limited by a lack of accessible, reproducible, and consistent benchmarks. Simulation benchmarks fail to capture real-world complexity, while existing real-world benchmarks often require expensive hardware, centralized evaluation, or are limited in task diversity. We introduce VLA-REPLICA, a low-cost, easily reproducible real-world benchmark for evaluating VLA models. Built from off-the-shelf components, our system can be quickly assembled and replicated across laboratories, providing a consistent environment for policy evaluation anywhere in the world. VLA-REPLICA includes a diverse suite of manipulation tasks and a small-scale demonstration dataset for target-domain adaptation, with real-world evaluation protocols for both in-distribution and out-of-distribution settings. Experiments with imitation learning and state-of-the-art VLA models reveal model strengths and limitations, while consistent results across independently constructed setups demonstrate the reproducibility of our benchmark."
   },
   {
+    "title": "Demo-JEPA: Joint-Embedding Predictive Architecture for One-shot Cross-Embodiment Imitation",
+    "original_title": "Demo-JEPA: Joint-Embedding Predictive Architecture for One-shot Cross-Embodiment Imitation",
+    "link": "https://arxiv.org/abs/2605.20811",
+    "date": "2026-05-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.20811v1 Announce Type: new \nAbstract: Robotic imitation learning is often treated as reproducing demonstrated actions, but actions are inherently embodiment-specific. When demonstrations come from humans or robots with different morphology, kinematics, or action spaces, this action-centric view requires shared action spaces, heuristic retargeting, or large-scale multi-embodiment co-training. We instead view demonstrations as implicit specifications of future goals: the target agent should infer what state the demonstrator is trying to realize, rather than how the demonstrator executes it. We propose Demo-JEPA, a cross-embodiment imitation framework that decouples demonstration intent from embodiment-specific execution. Built on a JEPA-based world model, Demo-JEPA translates source visual demonstrations into target-compatible future latent trajectories in a shared predictive representation space. The target agent then uses these latent trajectories as subgoals and realizes them through planning under its own learned forward dynamics. Because Demo-JEPA avoids action-level correspondence and requires only visual demonstrations plus the target agent's own interaction experience, it supports flexible imitation across heterogeneous embodiments. Experiments on RLBench and real-world manipulation tasks show that Demo-JEPA matches specialized in-domain planners and generalizes to unseen tasks and embodiment configurations where prior methods fail."
+  },
+  {
+    "title": "DISC: Decoupling Instruction from State-Conditioned Control via Policy Generation",
+    "original_title": "DISC: Decoupling Instruction from State-Conditioned Control via Policy Generation",
+    "link": "https://arxiv.org/abs/2605.20856",
+    "date": "2026-05-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.20856v1 Announce Type: new \nAbstract: Language-conditioned manipulation policies typically process instructions and observations through shared network parameters. This task-state entanglement provides a pathway for observation leakage -- networks learn scene-to-action shortcuts that bypass language grounding entirely. DISC eliminates this failure structurally. Rather than conditioning a universal policy on language, DISC uses a hypernetwork to generate the entire parameter set of a task-specific visuomotor policy from the instruction alone. The generated policy never directly accesses language; therefore, its task-awareness must come from the language. Consequently, observation leakage has no pathway to emerge. On the other hand, generating coherent high-dimensional policy weights is itself a challenging problem. We address it with a two-stage hypernetwork whose refinement stage embeds the structure of gradient-based optimization as a feed-forward inductive bias, producing globally consistent parameters without actual gradient computation. Trained entirely from scratch on standard data budgets, DISC outperforms all entangled baselines on LIBERO-90 and Meta-World, with advantages that widen on complex, long-horizon tasks -- and surpasses the large-scale pretrained $\\pi_0$ despite using no external pretraining data. On a real-world benchmark where all tasks share identical visual context, DISC substantially outperforms entangled alternatives, directly confirming that language-generated policy parameters, not visual shortcuts, drive behavior. The hypernetwork further learns a semantically structured parameter manifold that enables few-shot adaptation from minimal demonstrations and robust generalization across paraphrased instructions. Our code is available at: {https://github.com/ReNginx/DISC}."
+  },
+  {
+    "title": "Mobile UMI: Cross-View Diffusion Policy with Decoupled Kinematics for Mobile Manipulation",
+    "original_title": "Mobile UMI: Cross-View Diffusion Policy with Decoupled Kinematics for Mobile Manipulation",
+    "link": "https://arxiv.org/abs/2605.20894",
+    "date": "2026-05-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.20894v1 Announce Type: new \nAbstract: Mobile imitation learning on portable demonstration interfaces faces two coupled bottlenecks: locomotion-contaminated action labels and inference-induced execution latency on a continuously moving base. Recent wrist-mounted interfaces lower the cost of tabletop data collection, yet a single wrist view does not capture the global context required for base navigation. Adding a body-mounted camera entangles human walking with hand motion. Meanwhile, generative policies introduce hundreds of milliseconds of inference latency, during which the base advances past predicted waypoints, forcing backward corrections at action splices. This paper presents Mobile UMI, a hardware-free demonstration framework that addresses both gaps through three components. First, a dual-camera capture system records chest-centric global context and wrist-centric local interaction without any robot present. Second, a one-shot ChArUco-based spatial anchor unifies the chest and hand visual-inertial frames; the hand pose is then re-expressed relative to the chest to extract decoupled SE(3) manipulation and SE(2) base trajectories. Third, an asynchronous receding-horizon executor performs online state matching: each generated action chunk is realigned with the current physical pose so that expired waypoints are discarded before execution. The full system is evaluated on four long-horizon household tasks, achieving an average success rate of 83.8% over 100 trials per task. Controlled comparisons against ACT and Diffusion Policy show that the chest-relative label alone closes much of the gap; online state matching closes the remainder. These results indicate that, for mobile imitation learning under the tested conditions, explicit kinematic factorization combined with state-level latency alignment provides an effective solution without requiring architectural changes to the underlying policy class."
+  },
+  {
+    "title": "STEAM: A Training-Free Congestion-Aware Enhancement Framework for Decentralized Multi-Agent Path Finding",
+    "original_title": "STEAM: A Training-Free Congestion-Aware Enhancement Framework for Decentralized Multi-Agent Path Finding",
+    "link": "https://arxiv.org/abs/2605.20929",
+    "date": "2026-05-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.20929v1 Announce Type: new \nAbstract: We propose STEAM (Spatial, Temporal, and Emergent congestion Awareness for MAPF), a training-free test-time enhancement framework for learning-based decentralized Multi-Agent Path Finding (MAPF) in discrete environments. Given a pretrained decentralized policy, STEAM requires no retraining, architectural modification, or replacement by a centralized planner. Instead, it injects lightweight congestion-aware guidance into the original policy execution. STEAM first rolls out the shortest paths induced by the current cost-to-go maps to identify potential future congestion hotspots. Spatially avoidable congestion is mitigated by updating agent-specific cost-to-go information, while spatially unavoidable bottlenecks are handled through temporal logit correction. In addition, emergent local congestion is reduced by a density-aware logit correction based on neighboring agents' corrected cost-to-go maps. Extensive experiments on representative learning-based decentralized MAPF algorithms show that STEAM consistently improves success rate, makespan, and solution cost, with success-rate gains of up to 60% and only minor computational overhead. The implementation is available at https://anonymous.4open.science/r/STEAM-MAPF-7A62."
+  },
+  {
+    "title": "WiXus: A Wheeled-Legged Robot with Wire-Driven Environmental Utilizing to Integrate Mobility and Manipulation",
+    "original_title": "WiXus: A Wheeled-Legged Robot with Wire-Driven Environmental Utilizing to Integrate Mobility and Manipulation",
+    "link": "https://arxiv.org/abs/2605.20932",
+    "date": "2026-05-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.20932v1 Announce Type: new \nAbstract: Wheeled-legged robots, which have wheels at their feet and achieve high mobility by coordinating wheel drive and leg drive, have been developed. These robots have been developed purely as platforms specialized for locomotion. Therefore, they do not have a means to repurpose their legs for roles other than locomotion, such as object manipulation or tool utilization. In this paper, we address the problem of how to draw out the potential task-execution capability of the legs by freeing them from the roles of locomotion through external body support. To this end, we propose and develop a new robot, WiXus, which fuses a wheeled-legged mechanism with a wire-driven mechanism that utilizes the external environment. The developed WiXus demonstrates not only planar locomotion with wheeled-legged drive, but also three-dimensional mobility such as cliff climbing by coordinating wire-driven and wheeled-legged actuation. Furthermore, by suspending the body with wire-driven actuation, WiXus successfully repurpose its legs as arms to perform object manipulation, (e.g., rescuing a dog (stuffed animal)), and tool utilization (e.g., harvesting an apple (mockup) with loppers). This study demonstrates that the approach of utilizing the environment with wire-driven actuation is a new design principle that extends the operational domain of wheeled-legged robots."
+  },
+  {
+    "title": "Humanoid Whole-Body Manipulation via Active Spatial Brain and Generalizable Action Cerebellum",
+    "original_title": "Humanoid Whole-Body Manipulation via Active Spatial Brain and Generalizable Action Cerebellum",
+    "link": "https://arxiv.org/abs/2605.21133",
+    "date": "2026-05-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.21133v1 Announce Type: new \nAbstract: In this paper, we explore spatial-aware humanoid whole-body manipulation task. Compared with tabletop settings, this task poses two key challenges: 1) Spatial understanding is challenging in complex 3D environments with diverse spatial relations. 2) Action generation is difficult to generalize, as limited and costly real-robot data restricts data-driven models generalization. To address these challenges, we propose a generalizable humanoid loco-manipulation framework that leverages the spatial perception and action generation capabilities of multi-agent large models. Specifically, our framework includes two components: Active Spatial Brain for active spatial perception and decision-making, and Generalizable Action Cerebellum for executable robot action generation. The first component actively perceives the spatial scene and makes decisions on task planning and subtask decomposition. The second component generate executable robot actions based on the decisions made by the first module without needs of task-specific real robot data. To benchmark our framework, we design a set of spatial manipulation tasks from two perspectives: evaluating spatial perception and understanding, and assessing real-robot task performance. The results demonstrate strong performance on both aspects across diverse tasks and environments."
+  },
+  {
+    "title": "To Select or not to Select, that is the Question: Distilling Robot Skill Prediction into a Small Ensemble",
+    "original_title": "To Select or not to Select, that is the Question: Distilling Robot Skill Prediction into a Small Ensemble",
+    "link": "https://arxiv.org/abs/2605.21242",
+    "date": "2026-05-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.21242v1 Announce Type: new \nAbstract: As robot fleets become more heterogeneous, including humanoids, rovers, quadrupeds, and drones, selecting the right robot for a task becomes a core systems problem. We study robot skill prediction: mapping a natural-language task description to the physical capabilities required to execute it, such as fly, wheels, legs, surface water, under water and hands. Since labelled data that maps natural-language task descriptions to robot's physical capabilities does not exist, we construct a synthetic task-to-skill dataset using LLM-assisted generation and targeted label auditing. Trained on this data, a ~133M-parameter ensemble of two fine-tuned sentence encoders (mpnet + MiniLM) reaches 83.5% task-to-skill matching on a stratified 200 task dataset, outperforming Kimi K2 (1T MoE) at 72.0%, GPT-OSS-120B at 71.5%, and Llama-4-Scout-17B at 69.0% under the same zero-shot prompt. These results suggest that, for fixed robot skill taxonomies, small specialized models trained on synthetic data can outperform much larger general-purpose LLMs for fleet-level task routing."
+  },
+  {
+    "title": "Learning Structural Latent Points for Efficient Visual Representations in Robotic Manipulation",
+    "original_title": "Learning Structural Latent Points for Efficient Visual Representations in Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.21258",
+    "date": "2026-05-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.21258v1 Announce Type: new \nAbstract: Current 3D-aware pretraining methods for embodied perception and manipulation are largely built on differentiable rendering frameworks, producing either fully implicit neural fields or fully explicit geometric primitives. Implicit representations, while expressive, lack explicit structural cues, whereas explicit ones preserve geometry but suffer from resolution limits and weak generalization. To address these limitations, we propose a novel pretraining framework that learns a hybrid representation-structural latent points. Specifically, we insert a point-wise latent variational autoencoder into the latent space of a point-cloud autoencoder, jointly regularizing point-wise features and coordinates toward a Gaussian prior. The resulting compact latent preserves coarse structural tendencies, which do not encode precise geometry but capture richer rough shape and semantic information, effectively combining the expressiveness of implicit representations with the structural priors of explicit ones. In addition, informed by shared design choices in prior work, we develop a streamlined, efficient 3DGS-based rendering pipeline that is deliberately kept lightweight, improving efficiency while leaving greater representational capacity to the front-end latent module. Extensive evaluations on RLBench, ManiSkill2, and a real-robot platform demonstrate consistent gains in task success, sample efficiency, and robustness to viewpoint and scene variations over strong baselines. Ablation studies further confirm that each component of our framework is critical to overall performance."
+  },
+  {
     "title": "Inside Verobotics’ edge AI robotics deployment at NVIDIA’s Israel campus",
     "original_title": "Inside Verobotics’ edge AI robotics deployment at NVIDIA’s Israel campus",
     "link": "https://www.therobotreport.com/inside-verobotics-edge-ai-robotics-deployment-at-nvidias-israel-campus/",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - KR)",
     "category": "humanoid",
     "summary": "중국 휴默노이드 로봇 생태 대회 및 상해 로봇기업 참관단 모집이 4월 16~19일 개최됨임. 이 대회는 세계의 로봇 기업을 초대하고, 새로운 기술과 인재를 발굴하는 기회를 제공함.\n\n(Note: I followed the instructions to translate the title and summarize the content in a concise manner, using formal language and omitting polite conversational endings.)"
-  },
-  {
-    "title": "CHINA의 인공인간 로봇에 대한 용기있는 베팅의 원동력은 무엇인가?",
-    "original_title": "What is driving China’s bold bet on humanoid robotics? - AnewZ",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSWdMczhBakhaZlpRajRmSm9HTGFiVURnZUZXNzV0OHZubHFOcHpVSGp2ek1MdzRpRXp5NXJlbF85NnNISXdHVEREMHhkWHlHNEQtVFJPcV9yanVpaXIzOWNRZXFPOGJSRXp2RDVzeldZQWgyMUdXQUFIbC1BTXJtWWpZWGR1ZFJhS1JNeUVMRW9aZXlMRmhPeg?oc=5",
-    "date": "2026-03-27 07:28",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 인공인간 로봇에 대한 용기있는 베팅의 원동력은 AI 기술 개발, 제조 industry의 성장 및 세계화, 그리고 로보틱스 industry의 전망 때문이다. 또한 차이나는 글로벌 로보틱스 market에서 경쟁을 겪고 있는 다른 나라와 경쟁을 피하기 위해 이러한 베팅을 선택한 것이다."
-  },
-  {
-    "title": "SFCA robots",
-    "original_title": "Chinese Humanoid Robots Fight in San Francisco, Sparking New Boxing League Plans - eWeek",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcmZnTXFmd091Tk45VVRvQmc0bGZXRmYtdlptRmpoQmhtcDJRMHVUb25tVjdLMS1fQVJjZTR0NGV1eThEVjduUmtfMHZqZUFTS2ZDelZJUDZtN25FTFBnYUhZQlJ4Y1lSdWd6YmtLTnk4bHpmaU5UNTVWeWZQd0wtb1JiX1Q?oc=5",
-    "date": "2026-03-27 07:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 인간 로봇이 샌프란시스코에서 맞붙어 새로운 BOXING 리그 구상 촉진됨."
-  },
-  {
-    "title": "Physics-Guided Transfer of VLA Models to Aerial Manipulation 함",
-    "original_title": "$\\pi$, But Make It Fly: Physics-Guided Transfer of VLA Models to Aerial Manipulation",
-    "link": "https://arxiv.org/abs/2603.25038",
-    "date": "2026-03-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "VLA 모델을 항공 제어용으로 전이하는 물리 가이드에 기반한 연구 결과, 항상성 460회의實際 실험에서 지능적인 항공 제어 및 물품搬移 성공률을 23%에서 50%로 높였으며, 긴 호라이즌 구성 작업에서도 62%의 성공률을 달성하였다."
-  },
-  {
-    "title": "SafeGuard ASF",
-    "original_title": "SafeGuard ASF: SR Agentic Humanoid Robot System for Autonomous Industrial Safety",
-    "link": "https://arxiv.org/abs/2603.25353",
-    "date": "2026-03-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "산업안전을 위한 humanoide 로봇 시스템 'SafeGuard ASF'를 발표했습니다. 이 시스템은 다중 모드 퍼셉션, ReAct 기반의_AGENTIC_사고 프레임워크 및 Unitree G1 humanoide 플랫폼에서 learned 로컴션 정책을 통합하여 산업 환경에서 자율적이고 다기능적인 위험 탐지 기능을 제공합니다."
-  },
-  {
-    "title": "Temporally Decoupled Diffusion Planning for Autonomous Driving",
-    "original_title": "Temporally Decoupled Diffusion Planning for Autonomous Driving",
-    "link": "https://arxiv.org/abs/2603.25462",
-    "date": "2026-03-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 자율주행 기술에서 즉각적인 안전과 장기 목표를 균형 잡는 동적 도시 환경에서의 운동 계획을 개선하기 위해, 우리는 Temporally Decoupled Diffusion Model (TDDM)을 제안합니다. 이 모델은 Noise-as-Mask 방식을 사용하여 조orney Generation을 재구성하고, 높은 노이즈를 정보 공백으로 간주하며 약한 노이즈를 문맥적 지침으로 간주합니다. 이러한 접근방식은 near-term 상태의 손상된 부분을 leveraging internal correlations with better-preserved temporal contexts로 복원하는 데 도움이 됩니다."
-  },
-  {
-    "title": "A Mentalistic Interface for Probing Folk-Psychological Attribution to Non-Humanoid Robots",
-    "original_title": "A Mentalistic Interface for Probing Folk-Psychological Attribution to Non-Humanoid Robots",
-    "link": "https://arxiv.org/abs/2603.25646",
-    "date": "2026-03-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "로봇에 대한 의식적 상태ATTRIBUTION를 조사하는 실험 플랫폼을 제안하는 논문이 공개됨. 이 시스템은 시뮬레이션 로봇, 실제 작업 환경 및 언어 모델 기반 설명 층으로 구성되며, 같은 행동을 정신적, 도덕적 또는 기계적 방식으로 표현할 수 있는 방식을 제공함. 이러한 플랫폼은 언어 및 프레임이 로봇에 대한 의식적 태도를 채택하는 방식을 조사하는 데 사용할 수 있는 제어된 방법을 제공함."
-  },
-  {
-    "title": "SoftMimicGen: 데이터 생성 시스템",
-    "original_title": "SoftMimicGen: A Data Generation System for Scalable Robot Learning in Deformable Object Manipulation",
-    "link": "https://arxiv.org/abs/2603.25725",
-    "date": "2026-03-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "한국 로봇 학습을위한 가치 있는 데이터를 확보하기 위해 SoftMimicGen을 발표했습니다. 이 시스템은 비rigid 물체 조작 tasks에 있어 simulate 데이터를 생성하는 것을 목표로 하고 있습니다. SoftMimicGen은 다양한 물체(uffed animal, rope, tissue, towel)와 조작 행동(high-precision threading, dynamic whipping, folding, pick-and-place)에 있어 4개의 로봇 구현체(single-arm manipulator, bimanual arms, humanoid, surgical robot)를 포함하는 고의밀도 시뮬레이션 환경을 제공합니다."
-  },
-  {
-    "title": "Constant-Time Motion Planning with Manipulation Behaviors",
-    "original_title": "Constant-Time Motion Planning with Manipulation Behaviors",
-    "link": "https://arxiv.org/abs/2512.00939",
-    "date": "2026-03-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "manipulative robotics 알ゴリ즘의 고속화와 신뢰성 확보를 위한 Constant-Time Motion Planning (CTMP) 알고리즘의 Behavioral Constant-Time Motion Planner (B-CTMP) 개념을 소개하여 10毫秒 이하의 시간 예약 내에 충돌 없는 운동 질의를 수행하며, manipulative robotics tasks( shelf picking and plug insertion)에 적용하여 성능을 확인하는 연구결과를 공개됨."
   }
 ]
