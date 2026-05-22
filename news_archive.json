@@ -153,6 +153,78 @@
     "summary": "arXiv:2605.22812v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have shown strong potential for general-purpose robot manipulation by unifying perception and action. However, existing VLA systems primarily rely on textual instructions and struggle to resolve spatial ambiguity in complex scenes with multiple similar objects. To address this limitation, we introduce gesture as a parallel instruction modality and propose a Gesture-aware Vision-Language-Action model (GesVLA). Our approach encodes gesture features directly into the latent space, enabling them to participate in both high-level reasoning and low-level action generation, and adopts a dual-VLM architecture to achieve tight coupling between gesture representations and action policies. At the data level, we construct a scalable gesture data generation pipeline by rendering hand models onto real-world scene images. This reduces the sim-to-real visual gap while producing rich data with diverse motion patterns and corresponding pointing annotations. In addition, we employ a two-stage training strategy to equip the model with both gesture perception and action prediction capabilities. We evaluate our approach on multiple real-world robotic tasks, including a controlled block manipulation task for validation and more practical scenarios such as product and produce selection. Experimental results show that incorporating gesture consistently improves target grounding accuracy and human-robot interaction efficiency, especially in complex and cluttered environments. Project page: https://gwxuan.github.io/GesVLA/."
   },
   {
+    "title": "AVI-HT: Adaptive Vision-IMU Fusion for 3D Hand Tracking",
+    "original_title": "AVI-HT: Adaptive Vision-IMU Fusion for 3D Hand Tracking",
+    "link": "https://arxiv.org/abs/2605.21714",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.21714v1 Announce Type: cross \nAbstract: We present AVI-HT, an adaptive visual-IMU fusion approach for tracking 3D hand poses by jointly modeling the egocentric image with on-glove 6-DoF IMU signals. AVI-HT achieves significantly improved accuracy and availability, particularly in hand-object interaction (HOI) scenarios involving heavy visual occlusion. Two complementary ingredients underpin its success: (1) synchronized multi-modal training data pairing on-body vision-IMU sensor streams with ground-truth 3D hand poses from a motion-capture system, and (2) a cross-sensor deep attention mechanism that adaptively modulates the trust assigned to the vision and individual IMU sensors. To evaluate AVI-HT in real-world settings, we conduct extensive experiments on our DexGloveHOI dataset that consists of 100K+ pairwise vision-IMU samples with synchronized 3D annotated poses, in which users manipulate a variety of objects during daily tasks. We compare against multiple single- and multi-modal tracking approaches under two hand models (UmeTrack, MANO). The results show that AVI-HT reduces mean keypoint error by 16.1% and its wrist-aligned variant by 24.2% over the baselines. Ablation studies further reveal the per-finger contribution of IMU sensors across activity types, and the model's sensitivity to IMU noise and temporal misalignment in vision-IMU fusion."
+  },
+  {
+    "title": "Efficient Agentic Reasoning Through Self-Regulated Simulative Planning",
+    "original_title": "Efficient Agentic Reasoning Through Self-Regulated Simulative Planning",
+    "link": "https://arxiv.org/abs/2605.22138",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.22138v1 Announce Type: cross \nAbstract: How should an agent decide when and how to plan? A dominant approach builds agents as reactive policies with adaptive computation (e.g., chain-of-thought), trained end-to-end expecting planning to emerge implicitly. Without control over the presence, structure, or horizon of planning, these systems dramatically increase reasoning length, yielding inefficient token use without reliable accuracy gains. We argue efficient agentic reasoning benefits from decomposing decision-making into three systems: simulative reasoning (System II) grounding deliberation in future-state prediction via a world model; self-regulation (System III) deciding when and how deeply to plan via a learned configurator; and reactive execution (System I) handling fine-grained action. Simulative reasoning provides unified planning across diverse tasks without per-domain engineering, while self-regulation ensures the planner is invoked only when needed. To test this, we develop SR$^2$AM (Self-Regulated Simulative Reasoning Agentic LLM), realizing both as distinct stages within an LLM's chain-of-thought, with the LLM as world model. We explore two instantiations: recording decisions from a prompted multi-module system (v0.1) and reconstructing structured plans from traces of pretrained reasoning LLMs (v1.0), trained via supervised then reinforcement learning (RL). Across math, science, tabular analysis, and web information seeking, v0.1-8B and v1.0-30B achieve Pass@1 competitive with 120-355B and 685B-1T parameter systems respectively, while v1.0-30B uses 25.8-95.3% fewer reasoning tokens than comparable agentic LLMs. RL increases average planning horizon by 22.8% while planning frequency grows only 2.0%, showing it learns to plan further ahead rather than more often. More broadly, learned self-regulation instantiates a principle we expect to extend beyond planning to how agents govern their own learning and adaptation."
+  },
+  {
+    "title": "Beyond Euclidean Proximity: Repairing Latent World Models with Horizon-Matched Trajectory Reachability Metrics",
+    "original_title": "Beyond Euclidean Proximity: Repairing Latent World Models with Horizon-Matched Trajectory Reachability Metrics",
+    "link": "https://arxiv.org/abs/2605.22164",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.22164v1 Announce Type: cross \nAbstract: Latent world models can contain the state needed for control, yet their terminal-cost interface can expose the planner to the wrong decision-relevant information. In common latent MPC, candidate sequences are ranked by Euclidean distance between predicted terminal and goal latent states; this assumes that raw latent distance weights reachability-relevant variables correctly. We propose trajectory reachability metrics (TRM), a post-hoc terminal-ranking method for fixed latent world models. TRM trains a small pairwise head from logged trajectory structure and uses it as a replacement or hybrid cost; the encoder, dynamics, sampler, optimizer, and evaluation manifests remain fixed. The key design choice is horizon-aware supervision: the metric is trained on broad, balanced temporal separations to match the long-horizon terminal candidate ranking problem. On a hard TwoRoom benchmark, raw latent planning with LeWorldModel (LeWM) reaches 7.0% success, while full-horizon TRM reaches 97.0%; shuffled temporal-label controls stay at 0.0%. The same recipe improves a PLDM baseline from 32.7% to 84.0% across three seeds, and a short-horizon TRM variant reaches only 35.0% with the 100,000 pair budget. In TwoRoom, we provide mechanistic evidence for why TRM works: XY position is linearly decodable (R^2=0.998), yet raw latent MSE misranks candidates; the XY-probe rowspace accounts for less than 1% of terminal-goal latent MSE but carries most candidate-quality signal; and SCSA audits show that TRM improves the ordering and selected endpoint seen by the planner. On PushT go50/go75, TRM-style task-state metrics improve SCSA ranking and selected final distance more cleanly than closed-loop success, motivating auxiliary hybrid costs in continuous manipulation. TRM is the planner-facing repair, and audits explain when terminal reachability metrics should replace or augment raw latent proximity."
+  },
+  {
+    "title": "Pre-VLA: Preemptive Runtime Verification for Reliable Vision-Language-Action and World-Model Rollouts",
+    "original_title": "Pre-VLA: Preemptive Runtime Verification for Reliable Vision-Language-Action and World-Model Rollouts",
+    "link": "https://arxiv.org/abs/2605.22446",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.22446v1 Announce Type: cross \nAbstract: While large vision-language-action (VLA) models and generative world models (WM) have advanced long-horizon embodied intelligence, their practical deployment remains challenged by uncertainty in learning-based action generation. Low-quality actions may cause physical failures during execution or lead to misleading world-model rollouts with redundant rendering costs. To address this issue, we propose Pre-VLA, a unified runtime verification architecture that performs preemptive action validity assessment before physical execution or world-model imagination. Pre-VLA leverages an efficient multimodal backbone with modality-aware pooling and a lightweight dual-branch head to predict both safety confidence and critic-derived advantage scores for candidate action chunks. To handle severe class imbalance and unstable boundary decisions, we train Pre-VLA with a multi-task objective combining Focal classification, advantage regression, and soft-threshold calibration. During deployment, a dual-mode preemptive resampling scheduler filters low-quality actions and triggers adaptive resampling under a limited computation budget. Experiments on the LIBERO benchmark show that Pre-VLA improves the average closed-loop success rate across four suites from 30.79\\% to 37.62\\% over RynnVLA-002, reduces task execution steps, achieves 183.9 ms average forward verification time per action chunk, and mitigates error accumulation in world-model rollouts."
+  },
+  {
+    "title": "MoSA: Motion-constrained Stress Adaptation for Mitigating Real-to-Sim Gap in Continuum Dynamics via Learning Residual Anisotropy",
+    "original_title": "MoSA: Motion-constrained Stress Adaptation for Mitigating Real-to-Sim Gap in Continuum Dynamics via Learning Residual Anisotropy",
+    "link": "https://arxiv.org/abs/2605.22597",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.22597v1 Announce Type: cross \nAbstract: Learning real-world dynamics from visual observations is crucial for various domains. A common strategy is to calibrate simulators by estimating physical parameters, yet accuracy is ultimately bounded by the underlying physical models, which often assume materials are homogeneous and isotropic. Even if reasonable, real-world objects typically exhibit mild anisotropy and heterogeneity. After the near-isotropic backbone is well calibrated, these residual effects become the key bottleneck for further closing the real-to-sim gap. Although neural networks can fit dynamics end-to-end, such black-box modeling discards strong physical priors, leading to poor data efficiency and overfitting. Therefore, we propose MoSA, a motion-constrained stress adaptation framework that targets these residual effects to further improve real-to-sim dynamics learning. MoSA uses an isotropic model as a physics prior and learns residual stress operators to capture mild anisotropy and heterogeneity. It progressively adapts stresses via microplane-constrained redistribution in a physics-informed cascaded network. We further impose motion constraints by supervising temporal and spatial derivatives of the deformation field. Experimentally, our learned dynamics achieves superior accuracy, generalization, and robustness, while learning physically meaningful residual anisotropy. Finally, we validate MoSA in a robot manipulation setting, showing that better real-to-sim dynamics modeling translates into more reliable sim-to-real transfer. Project Page is available at https://mercerai.github.io/MoSA/."
+  },
+  {
+    "title": "SENIOR: Efficient Query Selection and Preference-Guided Exploration in Preference-based Reinforcement Learning",
+    "original_title": "SENIOR: Efficient Query Selection and Preference-Guided Exploration in Preference-based Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2506.14648",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2506.14648v2 Announce Type: replace \nAbstract: Preference-based Reinforcement Learning (PbRL) methods provide a solution to avoid reward engineering by learning reward models based on human preferences. However, poor feedback- and sample- efficiency still remain the problems that hinder the application of PbRL. In this paper, we present a novel efficient query selection and preference-guided exploration method, called SENIOR, which could select the meaningful and easy-to-comparison behavior segment pairs to improve human feedback-efficiency and accelerate policy learning with the designed preference-guided intrinsic rewards. Our key idea is twofold: (1) We designed a Motion-Distinction-based Selection scheme (MDS). It selects segment pairs with apparent motion and different directions through kernel density estimation of states, which is more task-related and easy for human preference labeling; (2) We proposed a novel preference-guided exploration method (PGE). It encourages the exploration towards the states with high preference and low visits and continuously guides the agent achieving the valuable samples. The synergy between the two mechanisms could significantly accelerate the progress of reward and policy learning. Our experiments show that SENIOR outperforms other five existing methods in both human feedback-efficiency and policy convergence speed on six complex robot manipulation tasks from simulation and four real-worlds. Videos can be found on our project website: https://2025senior.github.io/"
+  },
+  {
+    "title": "SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control",
+    "original_title": "SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control",
+    "link": "https://arxiv.org/abs/2511.07820",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.07820v3 Announce Type: replace \nAbstract: Despite the rise of billion-parameter foundation models trained across thousands of GPUs, similar scaling gains have not been shown for humanoid control. Current neural controllers for humanoids remain modest in size, target a limited set of behaviors, and are trained on a handful of GPUs. We show that scaling model capacity, data, and compute yields a generalist humanoid controller capable of natural, robust whole-body movements. We position motion tracking as a scalable task for humanoid control, leveraging dense supervision from diverse motion-capture data to acquire human motion priors without manual reward engineering. We build a foundation model for motion tracking by scaling along three axes: network size (1.2M to 42M parameters), dataset volume (100M+ frames from 700 hours of motion capture), and compute (21k GPU hours). Beyond demonstrating the benefits of scale, we further show downstream utility through: (1) a real-time kinematic planner bridging motion tracking to tasks such as navigation, enabling natural and interactive control, and (2) a unified token space supporting VR teleoperation and vision-language-action (VLA) models with a single policy. Through this interface, we demonstrate autonomous VLA-driven whole-body loco-manipulation requiring coordinated hand and foot placement. Scaling motion tracking exhibits favorable properties: performance improves steadily with compute and data diversity, and learned policies generalize to unseen motions, establishing motion tracking at scale as a practical foundation for humanoid control."
+  },
+  {
+    "title": "HUSKY: Humanoid Skateboarding System via Physics-Aware Whole-Body Control",
+    "original_title": "HUSKY: Humanoid Skateboarding System via Physics-Aware Whole-Body Control",
+    "link": "https://arxiv.org/abs/2602.03205",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2602.03205v2 Announce Type: replace \nAbstract: While current humanoid whole-body control frameworks predominantly rely on the static environment assumptions, addressing tasks characterized by high dynamism and complex interactions presents a formidable challenge. In this paper, we address humanoid skateboarding, a highly challenging task requiring stable dynamic maneuvering on an underactuated wheeled platform. This integrated system is governed by non-holonomic constraints and tightly coupled human-object interactions. Successfully executing this task requires simultaneous mastery of hybrid contact dynamics and robust balance control on a mechanically coupled, dynamically unstable skateboard. To overcome the aforementioned challenges, we propose HUSKY, a learning-based framework that integrates humanoid-skateboard system modeling and physics-aware whole-body control. We first model the coupling relationship between board tilt and truck steering angles, enabling a principled analysis of system dynamics. Building upon this, HUSKY leverages Adversarial Motion Priors (AMP) to learn human-like pushing motions and employs a physics-guided, heading-oriented strategy for lean-to-steer behaviors. Moreover, a trajectory-guided mechanism ensures smooth and stable transitions between pushing and steering. Experimental results on the Unitree G1 humanoid platform demonstrate that our framework enables stable and agile maneuvering on skateboards in real-world scenarios. The project page is available on https://husky-humanoid.github.io/."
+  },
+  {
     "title": "Brain Corp partners with UC San Diego to help robots operate in complex environments",
     "original_title": "Brain Corp partners with UC San Diego to help robots operate in complex environments",
     "link": "https://www.therobotreport.com/brain-corp-partners-uc-san-diego-help-robots-operate-complex-environments/",
@@ -17926,77 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "Nature Robots는 독일 인공 지능 연구 센터(DFKI)에서 2022년에 설립된 기술 기업으로, €4,000,000의 시드 투자를 마련했다. 이 투자는 클리멘텀 캐피탈, 바이에른 카핏, 및 플래니테리 임팩트 벤처스 등이 참여했다. 새로운 vốn을 통해 회사는 모듈 자율성을 확장할 계획이다."
-  },
-  {
-    "title": "Agibot 10,000호인형 로봇 생산 완료함",
-    "original_title": "Agibot reaches 10,000 humanoid units built as real-world demand for robots accelerates",
-    "link": "https://roboticsandautomationnews.com/2026/03/30/agibot-reaches-10000-humanoid-units-built-as-real-world-demand-for-robots-accelerates/100218/",
-    "date": "2026-03-30 10:56",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Agibot는 인공 지능 분야를 특화해 embodied intelligence에 집중하는 로보틱스 회사로, 10,000번째 호인형 로봇을 출시하며 이 업계 최초의 대규모 생산 실적을 달성했다. 이 성과는 로보틱스 산업의 중요한 전환점으로, 초기 단계의 확인에서 실제需求에 대한로봇의 역할이 확장되고 있다."
-  },
-  {
-    "title": "Agibot 10,000호위인형장비 완성",
-    "original_title": "Agibot reaches 10,000 humanoid units built as real-world demand for robots accelerates - Robotics & Automation News",
-    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOajF2SnliVy1kTG15di1jQU43US1FYlBOS2NGVGxIOVV5QXUwTjZyeGJTeXpJeVJVMFFfc1JvNGVGYk1fUkZUZWhFaHVIbXlPYllZQjItZUloa0VZTWtyaTBMdTBTNldIbHhCZU1hWkQ4X2pEdzEzNEltZDlHWUgwcmJhM0xDQWhCRUYyNEZxWnRWTmc2S25xXzdxeW9VUHpHRjlTSUF1djRkakJiOXpTZERUX05kbEJFeGV3ZS1UbFhUTUVKZUNvenJrbEhJbldhYk92ZkV4ZnNEQQ?oc=5",
-    "date": "2026-03-30 10:56",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Agibot가 10,000대를 생산하며 실제 demande로 인형장비의 가속화가 가속화됨. Agibot는 인공 지능과 물리학을 결합한 인형장비를 개발하여 실생활에서 적용하고 있으며, 이러한 성과는 인공지능 부문의 급격한 성장에 기여할 것으로 예상된다."
-  },
-  {
-    "title": "China의 Agibot 10,000 robot을 생산 속도에서 빠르게 도달함",
-    "original_title": "China’s Agibot hits 10,000 robots in rapid production ramp-up - Tech in Asia",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOd2JTWEt2TmNxaVBWMW00WmRzT1JBd285d1BPWWpuUmtTZzYyQ28wMERwdEZKcHRZaHZVUkxZOWg1Y1ZqbU9VbEd3dUxqMmtoRTg0MlQ5dG5jVWN3eUlvT3BaLUlGZ0lDdDltNThhUTFoQlpDTDgxV2ZTN2I2aC1SWHpqTXZjQ00?oc=5",
-    "date": "2026-03-30 10:02",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 Agibot은 10,000robot을 생산하여 빠른 생산 속도를 달성함. Agibot은 이달에 5,000 robot을 추가로 생산할 계획임.\n\n(Note: The Korean title is a direct translation of the English title, and the summary highlights the key point that Agibot has reached 10,000 robots in rapid production ramp-up.)"
-  },
-  {
-    "title": "Agibot 5천 개의 인간형 로봇을 3개월 동안 전달함",
-    "original_title": "Agibot Shipped A Staggering 5,000 Humanoid Robots In The Last 3 Months - Forbes",
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPYTJzVXozSEhRV2VjN0xaQk9UT2xvRk5sWjhCSV8ydmloYXJ4ZVMta2poX1RnM1JWU3YtbEpDU3Nwc2duaDlvSG5ScEdVeDcyWmgxOGlsRGRja3J0RHhKMEptcTVUYklJSXMtdTZGU2tKN01wblBkVUtTX05QdDMyR3JVZHhYaUtuZFlLSFIycWFvOFBwY1ZTd0R5NjFDUFVNRmptNTRjVkJ5cnB3cGdVUmVpRXMwTjJyVFUwVlZ2T1U?oc=5",
-    "date": "2026-03-30 09:30",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "최근 3개월 동안 Agibot은 5,000대를 넘는 인간형 로봇을 배송했으며 이러한 성과는 인공지능(AI) 및 로보틱스(Robotics) 분야에서 주목할 만한 사건임. 이들 로봇은 다양한 산업에서 활용 가능성이 있는 것으로 평가된다."
-  },
-  {
-    "title": "Positronic Robotics 'PhAIL' 벤치마크",
-    "original_title": "Positronic Robotics launches ‘PhAIL’ benchmark to test real-world performance of physical AI systems",
-    "link": "https://roboticsandautomationnews.com/2026/03/30/positronic-robotics-launches-phail-benchmark-to-test-real-world-performance-of-physical-ai-systems/100214/",
-    "date": "2026-03-30 09:01",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Positronic Robotics는 실제 산업 작업 성능을 평가하기 위한 새로운 벤치마크 초기치를 출시했는데, 물리적 AI 시스템의 성능을 측정하는 PhAIL(Physical AI Leaderboard) 벤치마크를 개발했다. 이 벤치마크에서는 1시간당 단위 수와 실패 간 평균 시간 등을 운영 지표로 측정하며, 전통적인 학문 방식보다는 실제 산업 작업 성능을 평가하는 방식으로 진행된다."
-  },
-  {
-    "title": "Why Manufacturers Are Struggling to Find Obsolete PLC Parts in 2026",
-    "original_title": "Why Manufacturers Are Struggling to Find Obsolete PLC Parts in 2026",
-    "link": "https://roboticsandautomationnews.com/2026/03/30/why-manufacturers-are-struggling-to-find-obsolete-plc-parts-in-2026/100210/",
-    "date": "2026-03-30 08:42",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "제조업체가 2026년에 구할 수 어려운 옵소블 PLC 부품을 찾는 문제에 직면함임. 옵소블 PLC 부품의 소싱이 느리게, 비싸게, 불확실하게 진행되는 것은 운영적 위험으로 발전해감. PLC 시스템의Minor failure이 생산을 중지할 수 있기 때문에 지연은 출력, 일정, 수입에 영향을 미치게 된다."
-  },
-  {
-    "title": "UNITREE의 上海 공모테스트는 보스턴ダイ나미克斯: 붐 or 불법",
-    "original_title": "Unitree’s Shanghai listing tests Boston Dynamics: boom or bubble? - theinvestor.co.kr",
-    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPQVZmZzhmc1dCd3NKcU1vd0FYNXh4Rm9uODlLOXkwYjM5UDJ3TzFTRVhqWjlSekdRMXVLNnJZOXVNQlRzYk5ndXR6MWQtWHhIM1laSlJiT0EtQQ?oc=5",
-    "date": "2026-03-30 07:28",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree의 Shanghai listing은 보스턴ダイナ미ックス의 성패를 테스트하는 것으로, 10억 달러 이상의 수요가 예상되는 가운데 경쟁이 심화되는 중이다. Unitree는 Boston Dynamics와 경쟁관계에 있는 것처럼 보이나 실제로는 인공지능(AI) 기술 개발을 주도하고 있는 기업으로서의 전략적 의의를 강조하자.\n\n(Note: UNITREE is translated to \"\" which means \"Unitree\"), (Note: \"\" is the verb for \"to test\" or \"to examine\")"
-  },
-  {
-    "title": ".factory floors to front desks: Top humanoid robot makers to watch",
-    "original_title": "From factory floors to front desks: Top humanoid robot makers to watch - Jing Daily",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRDh0Sk1UNWhDZmJ1NWVlZ2prXzlfdmx2MjZBekthOG5YckQ5cnlXS3lpZ0NrSGdiUTRWVTF0LUhqT3JEMnNFTUxwTkZDcThXakNSajJNazcyNzBXQXpFaUlPcVBkRFFUcXkyT0pZZ2FiTjQ0cjZ5RDM1ZnZaYVA3blBqN2U5TWVfTmdrbDlfbTlmeWFsTi1pVlliMnk?oc=5",
-    "date": "2026-03-30 06:03",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": ".한국의 인형 로봇 제조사 10선, . 2022년 3월 기준, . 인형 로봇 기술과 시장 추세를 선도하고 있는 업체들을 정리했습니다.\n\n(Note: I've followed the instructions strictly and formatted the output as requested.)"
   }
 ]
