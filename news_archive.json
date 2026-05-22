@@ -225,6 +225,24 @@
     "summary": "arXiv:2602.03205v2 Announce Type: replace \nAbstract: While current humanoid whole-body control frameworks predominantly rely on the static environment assumptions, addressing tasks characterized by high dynamism and complex interactions presents a formidable challenge. In this paper, we address humanoid skateboarding, a highly challenging task requiring stable dynamic maneuvering on an underactuated wheeled platform. This integrated system is governed by non-holonomic constraints and tightly coupled human-object interactions. Successfully executing this task requires simultaneous mastery of hybrid contact dynamics and robust balance control on a mechanically coupled, dynamically unstable skateboard. To overcome the aforementioned challenges, we propose HUSKY, a learning-based framework that integrates humanoid-skateboard system modeling and physics-aware whole-body control. We first model the coupling relationship between board tilt and truck steering angles, enabling a principled analysis of system dynamics. Building upon this, HUSKY leverages Adversarial Motion Priors (AMP) to learn human-like pushing motions and employs a physics-guided, heading-oriented strategy for lean-to-steer behaviors. Moreover, a trajectory-guided mechanism ensures smooth and stable transitions between pushing and steering. Experimental results on the Unitree G1 humanoid platform demonstrate that our framework enables stable and agile maneuvering on skateboards in real-world scenarios. The project page is available on https://husky-humanoid.github.io/."
   },
   {
+    "title": "Harnessing Embodied Agents: Runtime Governance for Policy-Constrained Execution",
+    "original_title": "Harnessing Embodied Agents: Runtime Governance for Policy-Constrained Execution",
+    "link": "https://arxiv.org/abs/2604.07833",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.07833v3 Announce Type: replace \nAbstract: Embodied agents are evolving from passive reasoning systems into active executors that interact with tools, robots, and physical environments. Once granted execution authority, the central challenge becomes how to keep actions governable at runtime. Existing approaches embed safety and recovery logic inside the agent loop, making execution control difficult to standardize, audit, and adapt.\n  This paper argues that embodied intelligence requires not only stronger agents, but stronger runtime governance. We propose a framework for policy-constrained execution that separates agent cognition from execution oversight. Governance is externalized into a dedicated runtime layer performing policy checking, capability admission, execution monitoring, rollback handling, and human override.\n  We formalize the control boundary among the embodied agent, Embodied Capability Modules (ECMs), and runtime governance layer, and validate through 1000 randomized simulation trials across three governance dimensions. Results show 96.2% interception of unauthorized actions, reduction of unsafe continuation from 100% to 22.2% under runtime drift, and 91.4% recovery success with full policy compliance, substantially outperforming all baselines (p<0.001). By reframing runtime governance as a first-class systems problem, this paper positions policy-constrained execution as a key design principle for embodied agent systems."
+  },
+  {
+    "title": "4D Radar Semantic Segmentation of People in Field Conditions Using Temporal Multi-View Networks",
+    "original_title": "4D Radar Semantic Segmentation of People in Field Conditions Using Temporal Multi-View Networks",
+    "link": "https://arxiv.org/abs/2404.05307",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2404.05307v2 Announce Type: replace-cross \nAbstract: Reliable people detection is crucial for the safe autonomy of mobile robots and heavy vehicles, both on roads and in industrial settings like mining and construction. However, common sensors like cameras or lidars are prone to failure in adverse conditions such as dust, fog, or smoke, which limits their use in real-world robotic systems. Radar, on the other hand, delivers robust measurements in a wide range of environmental conditions. In particular, modern high-resolution 4D imaging radars provide 4D point clouds across range, azimuth, and elevation, as well as per-point Doppler velocity data, well suited for robot perception. We propose TMVA4D, a family of artificial neural network architectures based on CNN and ConvLSTM encoders that leverage the 4D radar modality for semantic segmentation. The architectures are trained to distinguish between background and person classes using a series of 2D projections of the 4D radar data, encompassing elevation, azimuth, range, and Doppler velocity dimensions. Evaluated across several operational sites, our models achieve promising performance (Dice 75.9%, IoU 61.2% for class person) even in low-visibility conditions. The data and code will be made publicly available upon publication."
+  },
+  {
     "title": "Brain Corp partners with UC San Diego to help robots operate in complex environments",
     "original_title": "Brain Corp partners with UC San Diego to help robots operate in complex environments",
     "link": "https://www.therobotreport.com/brain-corp-partners-uc-san-diego-help-robots-operate-complex-environments/",
@@ -286,6 +304,15 @@
     "source": "Google News (NVIDIA GTC)",
     "category": "humanoid",
     "summary": "GOWIN Participates in NVIDIA APAC Robotics and Edge AI Partner Day  The Manila Times"
+  },
+  {
+    "title": "China's real-life 'transformer' mech is a giant humanoid robot that can switch from bounding on 4 legs to walking on 2 - Live Science",
+    "original_title": "China's real-life 'transformer' mech is a giant humanoid robot that can switch from bounding on 4 legs to walking on 2 - Live Science",
+    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOSndiNS1oeThJVjVnRldvV2FQWjlRUDJiQjRkV0lUUy0xZW1uUnZYanRGanBpYkF5akJGOERveEF5aUtBMW1tWE1aUXBCYU1rQ0J0ZE9uTWhwc2JzYXlDZVBjY0o1VEpNWlZ3QTB4Wmpkc0NiTzh0YnpRRF9tQUl4cy1SUng0Y0xuZTlpZDdRVUpwWU5lbHRHYlFNTU9pMFRxSWtpckkyUWZCNHJwUEdFclpZVU8tM0JlZmp4QVk2TEtxeWFnelZwU0o0RVVKTHQ1ZWNiVTJnbnIyM2FGdmtJanRQVkRaczRRYXFHVVNYcDJHN1JhRGc?oc=5",
+    "date": "2026-05-21 15:00",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China's real-life 'transformer' mech is a giant humanoid robot that can switch from bounding on 4 legs to walking on 2  Live Science"
   },
   {
     "title": "The Hidden Cost of Getting Interpretation Wrong: Why Professional Interpreters Are a Business Necessity",
@@ -17971,32 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중국 AGIBOT의 10,000번째 호인형 로봇이 생산선상에서 rolls off production line을 마쳤다. 이 robot은 고도의 인간기반 AI를 갖추고 있어 제조품질 개선과 생산성 향상을 기대해온다."
-  },
-  {
-    "title": "AGIBOT 10,000호 humanoide 로봇 마일스톤 달성함",
-    "original_title": "AGIBOT Reaches 10,000 Humanoid Robot Milestone - Let's Data Science",
-    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTWVhOVNXamwzaW1fTXVrQmJLaEpJVjU2RnhQZ2RHWU04ZGVwZmU0RmcxZXFQSXQ3dHVVaTBLUzhBcWswR1hKTmxRajhldFYxMl9uUHdoMXIxZy0zYUs1YXo3UUlrVUR6RFRoUkxiLURfbnVIVUVhcmh5ajBtamU5M2hoN24zR28yeEttaUNJOHI?oc=5",
-    "date": "2026-03-30 12:07",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "AGIBOT의 humanoide 로봇 수가 10,000대를 돌파했으며, 데이터 사이언싱 적용을 통해 로봇 개발의 효율성을 높이고자 한다. 이 성과는 AGIBOT의 로봇 개발 및 산업화 노력의 일환으로, 향후 humanoide 로봇의 промислов화와 서비스를 강화할 계획임."
-  },
-  {
-    "title": "Measuring ROI from Intranet Investments as Organizations Scale Advanced Automation",
-    "original_title": "Measuring ROI from Intranet Investments as Organizations Scale Advanced Automation",
-    "link": "https://roboticsandautomationnews.com/2026/03/30/measuring-roi-from-intranet-investments-as-organizations-scale-advanced-automation/100224/",
-    "date": "2026-03-30 11:26",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "오직화된 인트라넷 투자 RETURN ON INVESTMENT 측정으로 조직이 고급 자동화 발전을 확장"
-  },
-  {
-    "title": "Nature Robots €4,000,000 투자금 지원을 통해 자율 농업 소프트웨어 확장",
-    "original_title": "Nature Robots secures €4 million seed funding to scale software for autonomous farming",
-    "link": "https://roboticsandautomationnews.com/2026/03/30/nature-robots-secures-e4-million-seed-funding-to-scale-software-for-autonomous-farming/100221/",
-    "date": "2026-03-30 11:11",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Nature Robots는 독일 인공 지능 연구 센터(DFKI)에서 2022년에 설립된 기술 기업으로, €4,000,000의 시드 투자를 마련했다. 이 투자는 클리멘텀 캐피탈, 바이에른 카핏, 및 플래니테리 임팩트 벤처스 등이 참여했다. 새로운 vốn을 통해 회사는 모듈 자율성을 확장할 계획이다."
   }
 ]
