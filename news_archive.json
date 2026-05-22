@@ -1,5 +1,77 @@
 [
   {
+    "title": "Closed-Loop Sim-to-Real Reinforcement Learning for Deformable Microfiber Shape Control",
+    "original_title": "Closed-Loop Sim-to-Real Reinforcement Learning for Deformable Microfiber Shape Control",
+    "link": "https://arxiv.org/abs/2605.21688",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.21688v1 Announce Type: new \nAbstract: Autonomous contact-based micromanipulation is challenging because surface and interfacial interactions at the microscale are difficult to model accurately, limiting the use of conventional model-based control and sim-to-real learning. We present a closed-loop sim-to-real reinforcement learning (RL) approach for microfiber shape control on a surface. The central idea is to train geometric shape regulation in a simplified frictionless simulator and rely on real-time visual feedback during deployment to iteratively correct the observed effects of unmodeled surface interactions. An RL policy trained entirely in simulation is transferred directly to a physical dual-gripper micromanipulation system operating at 40 Hz, without retraining or domain adaptation. Using silk microfibers as a testbed, the policy achieves a mean point-wise shape error of 270 $\\pm$ 80 $\\mu$m across twenty-four diverse initial configurations. Across nine specimens covering all combinations of three fiber diameters (50, 80, and 120 $\\mu$m) and three manipulated lengths (10 mm, 15mm, and 20 mm), the same policy achieves sub-millimeter final shape error without any retraining or retuning. These results show that a policy learned in a simplified simulator can achieve repeatable real-world microfiber shape regulation under surface contact, provided that the task-relevant effects of the sim-to-real mismatch remain observable and correctable within the closed feedback loop."
+  },
+  {
+    "title": "Motion Design for Grasp-Based Dynamic Locomotion in Microgravity",
+    "original_title": "Motion Design for Grasp-Based Dynamic Locomotion in Microgravity",
+    "link": "https://arxiv.org/abs/2605.21704",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.21704v1 Announce Type: new \nAbstract: Locomotion in microgravity often relies on sparsely and irregularly arranged anchors, motivating grasp-based mobility with multiple limbs. In this setting, dynamic locomotion is feasible only through deliberate regulation of both anchored interactions and whole-body coordination under coupled dynamic and kinematic constraints. This paper presents design insights for grasp-based dynamic locomotion with multi-limbed robotic systems in microgravity, targeting scenarios that require 6D limb manipulation to establish contacts with candidate anchors. The investigated design parameters include gait pattern, stride length, locomotion speed, and nominal posture. A parameterizable locomotion planning framework is proposed to support variations of these parameters and to evaluate the resulting locomotion performance in terms of stability and actuation demand. Two representative quadruped morphologies are adopted for evaluation in physics-based simulation. The results demonstrate that enlarging the feasible contact wrench space and attenuating impulsive whole-body dynamics improve locomotion performance. These findings inform strategies for contact configuration selection and whole-body coordination in microgravity locomotion with multi-limbed systems."
+  },
+  {
+    "title": "PGDG: Physically Grounded Data Generation for Robust Bimanual Policy Learning from a Single Demonstration",
+    "original_title": "PGDG: Physically Grounded Data Generation for Robust Bimanual Policy Learning from a Single Demonstration",
+    "link": "https://arxiv.org/abs/2605.21710",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.21710v1 Announce Type: new \nAbstract: Behavior cloning for contact-rich bimanual manipulation remains challenging because diverse demonstrations are expensive to collect, and even small disturbances can push the system into off-manifold states where no recovery supervision is available. We propose PGDG, a data generation framework with zero-shot curation that expands a single demonstration into a compact dataset of physically plausible, successful, and diverse recovery behaviors without additional human labeling. PGDG iterates between a physics-grounded sampler and a dataset curator, where the curator selects informative, non-redundant, and recoverable behaviors to update the sampling distribution toward under-covered recovery modes, and the sampler draws physically plausible rollout candidates from this updated distribution and retains successful trajectories. To further improve data quality, PGDG applies short-horizon sampling-based control to relabel selected risky states with corrective actions. Across four bimanual manipulation tasks, PGDG consistently outperforms spatial-only augmentation in both simulation and zero-shot real-world transfer. On RotateBox-Pitch, success improves from 38% to 93% in simulation and from 35% to 82% in the real world. PGDG also enables effective foundation models fine-tuning such as GR00T, increasing success from 46% to 77%. Additional results are available in our website: https://cunxid.github.io/PGDG/."
+  },
+  {
+    "title": "Safe and Steerable Geometric Motion Policies for Robotic Dexterous Manipulation",
+    "original_title": "Safe and Steerable Geometric Motion Policies for Robotic Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2605.21811",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.21811v1 Announce Type: new \nAbstract: Robotic dexterous manipulation requires continuously reconciling objectives and constraints defined on heterogeneous geometric spaces: a robot controlled on a $\\mathbb{R}^7$ configuration manifold may need to track end effector poses on $\\mathrm{SE}(3)$ while satisfying obstacle avoidance margins in $\\mathbb{R}$. We present Safe Pullback Bundle Dynamical Systems (SafePBDS), a geometrically consistent framework that computes optimal, certifiably safe configuration manifold accelerations from objectives and safety requirements on arbitrary task manifolds. SafePBDS builds on prior work that combines predefined task manifold dynamical systems to produce autonomous motion. Its first innovation is a pullback control barrier function construction, which converts task manifold safety conditions into linear constraints on configuration manifold accelerations. The second innovation is a task manifold action interface that allows a high-level policy to inject low dimensional residual motions; zero input recovers the autonomous behavior, while safety is preserved under arbitrary inputs. This lets high-level policies efficiently steer exploration while leaving precise motion to the autonomous behavior. We validate SafePBDS in simulation and on a 23-DOF Franka Panda-Allegro Hand platform. On dexterous grasping, SafePBDS achieves a $92.5\\%$ success rate across 20 household objects and 120 trials. Using the action interface, the method can exclude any one of the four fingers during grasping via a one-dimensional action, achieving $94.4\\%$ 3-finger grasp success across 3 objects and 36 trials. The efficient planning and safety guarantee of SafePBDS also enables the first model-based, fully actuated palm-down in-hand reorientation, exceeding $360^\\circ$ of yaw rotation in both directions under varying object weight and wrist motion. Demo video and details: https://tml.stanford.edu/safe-pbds"
+  },
+  {
+    "title": "OCELOT: Odometry and Contact Estimation for Legged Robots",
+    "original_title": "OCELOT: Odometry and Contact Estimation for Legged Robots",
+    "link": "https://arxiv.org/abs/2605.21863",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.21863v1 Announce Type: new \nAbstract: One of the significant challenges in legged robotics is achieving accurate odometry using only onboard proprioceptive sensors. In this study, we present a complete leg odometry pipeline based on an Error-State EKF (ESEKF) that relies exclusively on proprioceptive data: a body fixed IMU, joint encoders, and force sensors, where filter's state is corrected by feet determined to be in a stationary stance. The core of our contribution is fused contact detection and an uncertainty quantification module designed to explicitly identify and reject slippage. This module runs two detectors in parallel for each foot, 1) a debounced, force-based Gaussian Mixture Model (GMM) guided Finite State Machine (FSM) to confirm physical contact, and 2) a kinematic-based Generalized Likelihood Ratio Test (GLRT) on the estimated velocity of the foot. The continuous quality scores from both estimators are fused to detect if the foot is both physically loaded and kinematically stationary and served as an uncertainty signal for each contact. To validate our approach, we collected a multi-modal dataset of 29 sequences spanning diverse indoor and outdoor terrains (e.g., concrete, grass, pebble, and rock) total of 2.4 km long. We benchmarked our approach against both proprioceptive and exteroceptive methods. The results demonstrate our method's efficacy in providing accurate odometry estimates, robustly handling slippage-prone environments. We also share our code and real-time ROS2 package as open-source."
+  },
+  {
+    "title": "Auction-Consensus Algorithm with Learned Bidding Scheme for Multi-Robot Systems",
+    "original_title": "Auction-Consensus Algorithm with Learned Bidding Scheme for Multi-Robot Systems",
+    "link": "https://arxiv.org/abs/2605.21932",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.21932v1 Announce Type: new \nAbstract: Multi-Robot Task Allocation (MRTA) is a central challenge in decentralized multi-agent systems, where teams of robots must cooperatively assign and execute tasks under limited communication while optimizing global performance objectives. Auction-consensus algorithms, such as the Consensus-Based Bundle Algorithm (CBBA), provide scalable decentralized coordination with provable convergence, but rely on hand-crafted greedy scoring functions that often lead to suboptimal task allocations. This paper proposes a learning-enhanced auction-consensus framework in which CBBA's deterministic bidding mechanism is replaced by a neural bidding policy trained using reinforcement learning. Under a centralized training and decentralized execution paradigm, agents learn to compute task bids from partial local observations while retaining the standard auction and consensus phases for decentralized coordination. The learned bidding policy is trained using Proximal Policy Optimization with rewards shaped by proximity to globally optimal solutions obtained via mixed-integer linear programming. Multiple neural architectures are evaluated, including a Neural Additive Model, the Long Short-Term Memory (LSTM) model, and the Set Transformer Model. Experimental results across varying swarm sizes demonstrate that learned bidding policies can improve solution quality over classical CBBA while preserving decentralized execution. The proposed approach highlights the effectiveness of integrating reinforcement learning with classical distributed coordination algorithms, offering a scalable pathway toward higher-quality decentralized multi-robot task allocation."
+  },
+  {
+    "title": "Learning to Evolve: Multi-modal Interactive Fields for Robust Humanoid Navigation in Dynamic Environments",
+    "original_title": "Learning to Evolve: Multi-modal Interactive Fields for Robust Humanoid Navigation in Dynamic Environments",
+    "link": "https://arxiv.org/abs/2605.21935",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.21935v1 Announce Type: new \nAbstract: Safe manipulation-oriented navigation for humanoid robots requires scene memory that remains reliable under locomotion-induced perceptual distortion, environmental changes, and interaction-level geometric safety constraints. Existing semantic mapping and scene-graph systems are difficult to deploy directly in this setting because they often assume stable camera trajectories, static environments, or coarse object geometry. We introduce the Multi-modal Interactive Field (MIF), a humanoid-oriented system that integrates confidence-aware semantic 3D Gaussian Splatting, discrepancy-triggered spatial memory updates, and task-driven geometric reconstruction within a closed-loop perception-adaptation pipeline. MIF couples three fields: an uncertainty-aware 3DGS Appearance Field that suppresses gait-induced blur, a Spatial Field that maintains topological memory, and a Geometry Field that supports Interaction Pose Safety (IPS) before manipulation. A discrepancy detection score is introduced to separate locomotion-induced false-positive changes from persistent changes and updates only locally inconsistent regions. On a Unitree-G1 humanoid in a real dynamic office, MIF improves relocation success in non-static environments from 12% to 94% compared with static scene-graph memory, while reducing semantic memory footprint by 91.4% through feature distillation for practical online operation. Project page and code: https://ziya-jiang.github.io/MIF-homepage/"
+  },
+  {
+    "title": "TacO: Benchmarking Tactile Sensors for Object Manipulation",
+    "original_title": "TacO: Benchmarking Tactile Sensors for Object Manipulation",
+    "link": "https://arxiv.org/abs/2605.21976",
+    "date": "2026-05-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.21976v1 Announce Type: new \nAbstract: Vision-based learning from demonstrations has achieved remarkable success in enabling robots to perform manipulation tasks and high-level semantic reasoning, yet it remains insufficient for complex, contact-rich manipulation. While there is broad agreement that tactile sensing improves manipulation, there is no empirical guidance on which tactile sensors are best suited for which manipulation tasks. In this paper, we provide a systematic, task-driven evaluation of tactile sensors for robot manipulation and propose a framework for selecting and evaluating sensors based on manipulation policy performance. Separate manipulation policies are trained for tactile sensors of four distinct modalities: visual, acoustic, magnetic, and resistive, across three tasks: pick-and-place with unknown mass, object reorientation, and plug insertion. For each task, an analysis of how sensor properties such as spatial resolution, shear sensing, and tactile representation, and the inherent material friction affect task performances is done. Rather than tactile sensing being universally beneficial in the same way, our results show that the usefulness of tactile information depends strongly on sensor modality, material properties, and the specific manipulation tasks. All of the tactile sensors, code, data, and hardware setup will be publicly available on the project website."
+  },
+  {
     "title": "Brain Corp partners with UC San Diego to help robots operate in complex environments",
     "original_title": "Brain Corp partners with UC San Diego to help robots operate in complex environments",
     "link": "https://www.therobotreport.com/brain-corp-partners-uc-san-diego-help-robots-operate-complex-environments/",
@@ -2698,6 +2770,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2603.11729v3 Announce Type: replace-cross \nAbstract: In recent years, RAPTOR based algorithms have been considered the state-of-the-art for path-finding with unlimited transfers without preprocessing. However, this status largely stems from the evolution of routing research, where Dijkstra-based solutions were superseded by timetable-based algorithms without a systematic comparison. In this work, we revisit classical Dijkstra-based approaches for public transit routing with unlimited transfers and demonstrate that Time-Dependent Dijkstra (TD-Dijkstra) outperforms MR. However, efficient TD-Dijkstra implementations rely on filtering dominated connections during preprocessing, which assumes passengers can always switch to a faster connection. We show that this filtering is unsound when stops have buffer times, as it cannot distinguish between seated passengers who may continue without waiting and transferring passengers who must respect the buffer. To address this limitation, we introduce Transfer Aware Dijkstra (TAD), a modification that scans entire trip sequences rather than individual edges, correctly handling buffer times while maintaining performance advantages over MR. Our experiments on London and Switzerland networks show that we can achieve a greater than two time speed-up over MR while producing optimal results on both networks with and without buffer times."
+  },
+  {
+    "title": "David Muir comes face-to-face with humanoid robots in China - MSN",
+    "original_title": "David Muir comes face-to-face with humanoid robots in China - MSN",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNDl5RDJEZG9MNGpfY25jWlJoYWpIdkE0bXNreU1oci1kZkw3Y2RoaFhnVVNKbEpEU0s2eEVOVlZjQUttdXJwZkVzLU1yck4wb2ZYOEpKSjBDTXNXLUktaHNSV0dTWGNfa25PU2IwOFhmYWhCRTNybkxwcHowT0MweFBjM05RWklMY010eWNjeXJjX1JoVVpKUXkyOEs3TU5CekJ4a2oxYW5zOTlITjJxb0N6NA?oc=5",
+    "date": "2026-05-14 21:13",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "David Muir comes face-to-face with humanoid robots in China  MSN"
   },
   {
     "title": "David Muir comes face-to-face with humanoid robots in China - ABC News - Breaking News, Latest News and Videos",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로봇의 로코-마니퓰레이션 능력을 향상하기 위해 propose된 이 방법은 먼저 stable 로콴_POLICY를 훈련하고, 일부 적대적 모션 전이를 통해 loco-manipulation 정책을 배웠다. 다양한 실험에서 learned 정책이 다양한 경로에 카트를 성공적으로 밀어냈으며, 이 방법이 기존의 baselines보다 더 안정적이고 정확한 로코-마니퓰레이션 행동을 보였다."
-  },
-  {
-    "title": "Ruka-v2: 테너드 구동 오픈소스 다exterous 핸드 ~함",
-    "original_title": "Ruka-v2: Tendon Driven Open-Source Dexterous Hand with Wrist and Abduction for Robot Learning",
-    "link": "https://arxiv.org/abs/2603.26660",
-    "date": "2026-03-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "테니돈 구동 오픈소스 다exterous 핸드 Ruka-v2를 발표, 11도 الحرية를 자랑하는 핸드를 1,300달러以下으로 제작 가능하도록 개선. Ruka-v2는 주요 2도 الحرية를 추가, 테니돈 구동 오픈소스 다exterous 핸드의 디자인을 개선하고, 사용자 연구를 통해 51.3%의 완성 시간 경감과 21.2%의 성공률 상승을 달성."
-  },
-  {
-    "title": "VLA-OPD: 브리징 오프라인 SFT와 온라인 RL을 통한 비전-언어-행동 모델의 구현",
-    "original_title": "VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation",
-    "link": "https://arxiv.org/abs/2603.26666",
-    "date": "2026-03-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 비전-언어-행동(VLA) 모델은 로보틱 매니퓰레이션에서 우수한 일반화 성능을 보이나 배포 시에 신뢰할 수 있는 성능을 ensured하기 위해 후훈이 필요하다. 그러나 표준 오프라인 SFT는 분포.shift와 과거의 망각으로 인해 제약되며 온라인 RL은 희박한 보상을 요구하며 샘플 효율성이 낮다. 이 문서에서는 VLA-OPD 프레임워크를 제안한다. VLA-OPD는 SFT의 효율성을 RL의robustness와 결합하는 방식으로, 환경적 보상 대신 EXPERT TEACHER가 제공하는 token-level 지도에 의존하여 학생의 self-generated 경로에 대한 활성 오류 校정을 허용하며 미리 훈련된 일반화 기능을 보호한다. 이에 우리는 VLA-OPD를 Reverse-KL 대상으로 형식화 한다. standard Forward-KL은 모드 커버 엔트로피 붕괴를 유발하거나 Hard-CE는 과거의 엔트로피 붕괴를 초래하며 우리의 방식은 Teacher의 에픽스틱 불확실성을 필터링하여 행동 다량을 유지하면서 정책 학습을 안정화한다. LIBERO 및 RoboTwin2.0 벤치마크에서 VLA-OPD가 RL보다 샘플 효율성이 높으며 SFT보다 탄탄성 성능을 보인다."
-  },
-  {
-    "title": "BFM adaptability 기법 선보임",
-    "original_title": "Task Tokens: A Flexible Approach to Adapting Behavior Foundation Models",
-    "link": "https://arxiv.org/abs/2503.22886",
-    "date": "2026-03-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "한국 University 연구팀이 최근 개발한 'Task Tokens' 기법을 통해 transformer-based behavior foundation models(BFMs)가 특정 태스크에 적응하는 방안을 제시했다. BFMs는 humanoid agents의 인간적 조종을 가능하게 하지만, 주어진 태스크에 대한 명확한 설계를 요구하여 최적의 성능을 못 달성할 수 있다. Task Tokens 기법은 BFMs의 transformer 구조를 활용해 새로운 태스크-특정 인코더를 강화학습으로 학습하고 원래 BFMs를 그대로 두어 사용자 정의 전조를 반영할 수 있는 균형을 맞출 수 있어 보다 나은 성능을 내보낼 수 있다. 이 기법은 다양한 태스크에 대한 성능 향상과 다른 설계 모드와 호환성을 보여주는 예시를 제시했다."
-  },
-  {
-    "title": "CoMo: 인터넷 비디오에서 연속 운동을 학습하는 방법",
-    "original_title": "CoMo: Learning Continuous Latent Motion from Internet Videos for Scalable Robot Learning",
-    "link": "https://arxiv.org/abs/2505.17006",
-    "date": "2026-03-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "인터넷 비디오에서 연속 운동을 학습하는 CoMo를 제안합니다. 이 방법은 early temporal difference (Td) 메커니즘과 temporal contrastive learning (Tcl) 스키ーム을 사용하여 정보 손실을 방지하고.motion cues를 강조합니다. 또한, unseen 비디오에 대한 효과적인 가짜 액션 레이블을 생성하여 policy의 성능을 개선합니다. CoMo는 확장된 시뮬레이션 및 실제 세계 실험에서 제안한 방법과 비교하여 우수한 성능을 나타냅니다."
-  },
-  {
-    "title": "Fast-dVLA: ~고속화된 격자확산 VLA를 실시간 성능에~",
-    "original_title": "Fast-dVLA: Accelerating Discrete Diffusion VLA to Real-Time Performance",
-    "link": "https://arxiv.org/abs/2603.25661",
-    "date": "2026-03-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 이 연구는 사전 훈련된 VLA 모델이 일반적인 초점 finetuning(Standard Supervised Finetuning, SFT)에 비해 성능을 개선하고 적응 비용을 줄이는 방법을 제안합니다. 이 방법은 추가적 목표를 설정하여 성능을 개선하고 조화 단계를 감소할 수 있습니다. 그러나 이러한 advanced finetuning 방법들은 일반적인 SFT와 더불어 추가적 손실로부터 발생하는 컴퓨팅 오버헤드를 포함하게 됩니다. 새로운 접근 방식으로는 VLA 모델의 파라미터 공간 내부에서 두 가지 목표인 보완적 과제 훈련과 작업-특정 액션 분포 fitting을 분리하여 이 두 objectives를 동시에 달성할 수 있습니다."
-  },
-  {
-    "title": "Meta-Adaptive Beam Search Planning for Transformer-Based Reinforcement Learning Control of UAVs with Overhead Manipulators under Flight Disturbances",
-    "original_title": "Meta-Adaptive Beam Search Planning for Transformer-Based Reinforcement Learning Control of UAVs with Overhead Manipulators under Flight Disturbances",
-    "link": "https://arxiv.org/abs/2603.26612",
-    "date": "2026-03-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "드론이 탑 매니퓰레이터를 장착하면, 검사, 유지, 접촉 기반 상호작용을 제공하는 고유한 기능을 갖추게 된다. 그러나 드론의 운동과 매니퓰레이터의 운동은.tightly linked로, 바람이나 제어 오류에 의해 일어나는 소규모의 자세 변경으로 인해 엔디-이펠러가 최종 경로에서 벗어나게 된다. 이러한 결합으로 인해 reliabe tracking이 어려워지고 또한 fixed-base 로봇에 designed된 학습 기반 arm 컨트롤러를 직접 사용할 수 없다. 이 효과는 항상 드론 바디의 이동 또는 빠른 자세 수정에 의해 일어나며, 우리의 테스트에서 항상 나타났다. 이러한 행동을address하기 위해 우리는 reinforcement-learning(RL) 프레임워크를 개발하여 transformer-based double deep Q learning(DDQN)을 적용하고 adaptive beam-search planner를 개발하였다. 이 계획은 candidate control sequences를 short-horizon beam search로 처리하여 learned critic을 forward estimator로 사용하며, SITL 접근 방식을 실현한다. lookout은 value estimates from Transformer critic이 short sequences of states를 처리하는 데 기초하고 DDQN backbone이 one-step targets를 제공하여 learning process를 안정화시킨다. 3-DoF 항공 매니퓰레이터에서 identical training conditions 하에서 제안된 meta-adaptive planner는 DDQN baseline보다 10.2% reward increase, mean tracking error reduction(about 6% to 3%), combined reward-error metric improvement(29.6%)를 보여준다. 우리의 메서드는 드론 바디가 외부 disturbance에 의해 이동할 때 target tip trajectory를 maintain하는 5 cm tracking error로 예비한 고정된 트랙킹을 제공한다."
-  },
-  {
-    "title": "DTP-Attack: Trajectory Prediction 시스템에 대한 결정기반 흑박 적대적 공격",
-    "original_title": "DTP-Attack: A decision-based black-box adversarial attack on trajectory prediction",
-    "link": "https://arxiv.org/abs/2603.26462",
-    "date": "2026-03-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "Trajectory prediction systems는 자율차의 안전성에 있어 중요한 시설물이지만, 현재까지는 흑박 액세스와 그라디언트 정보를 필요로 하는 existing attack methods에 제한적으로 적용된다. 새로운 DTP-Attack 프레임워크를 제안하는데, 이 방법은 모델 내부 정보나 그라디언트 없이도 binary decision outputs만을 기반으로 작동하므로 실제 세계에서 가능하게 된다. DTP-Attack는 boundary walking algorithm를 사용하여 적대적 지역을 탐색하고, 주로 실재성 유지와 가깝음을 자연적으로維持하는 기능을 지니고 있다. existing approaches보다 성능이 우수한 것으로 나타났다."
-  },
-  {
-    "title": "HELIOS: Language-Grounded Interaction in Open Scenes",
-    "original_title": "HELIOS: Hierarchical Exploration for Language-Grounded Interaction in Open Scenes",
-    "link": "https://arxiv.org/abs/2509.22498",
-    "date": "2026-03-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "'novel 환경에서 언어 명령에 기반한 Mobile Manipulation 과제를 수행하는 데 도전이 있는 부분 관측된 장면과, 언어 명령으로부터 얻은 의미 정보를 부분 관측된 장면에 정지하고, 새로운 관측 결과로 장면의 지식을 업데이트하는 과제. 이 도전을 해결하기 위해 HELIOS를 제안하며, scene representation과 연관된 search objective를 구성합니다. 2D map에는 관련.semantic 및 occupancy 정보를 포함하여 항해를 가능하게 하며, 동시에 3D Gaussian representation으로 task-relevant object를 생성합니다. 관측 결과를 이 다중 레이어드 표현에서 결합하며, 각 object의 감지에 대한 다-view 일관성을 Dirichlet distribution을 사용하여 모델링합니다. 계획은 다중 레이어드 표현에서 검색 문제로 형식화됩니다.'"
-  },
-  {
-    "title": "엔지니어링 뉴럴 오톰론 정책: 시각-운동 추적 경로에서 기호 구조를 배워라",
-    "original_title": "Emergent Neural Automaton Policies: Learning Symbolic Structure from Visuomotor Trajectories",
-    "link": "https://arxiv.org/abs/2603.25903",
-    "date": "2026-03-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 학습을 장기 태스크에 확장하는 것은 아직도 주요 도전입니다. 엔드투엔드 정책은 종종 장기간의 추론에 필요한 구조적인 선행조건이 부족한 반면, 전통적 뉴로-기호 방법은 손으로 만든 기호 선행조건에 의존합니다. 이를 해결하기 위해 우리는 ENAP(엔지니어링 뉴럴 오톰론 정책)을 도입하여 시각-운동 시연 데이터에서 bi-level 뉴로-기호 정책이 적응적으로 발현할 수 있도록 합니다. ENAP은 특정적으로 비지도 클러스터링과 L* 알고리즘의 확장版本을 사용하여 시각-운동 데이터에서 Mealy 상태 머신을 추정하고, 이 불interpretable 고급 계획자는 태스크 모드를 캡처합니다. 다음으로는 이 디지털 구조가 저급 반응 residuaal 네트워크를 가이드하여 연속 제어를 배워 반복 학습(Behavior Cloning)을 사용합니다. ENAP은 TASK 구조를PLICIT하게 모델링하여 discrete transition과 continuous residual을 사용함으로써 저데이터 환경에서 SoTA 엔드투엔드 VLA 정책보다 최대 27% 향상하고 로봇의 의도(structured representation) Fig. 1에 나타나게 합니다."
   }
 ]
