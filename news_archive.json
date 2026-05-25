@@ -1,5 +1,86 @@
 [
   {
+    "title": "Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Models",
+    "original_title": "Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.22896",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.22896v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have emerged as a promising paradigm for robotic manipulation by leveraging pre-trained vision-language representations. However, current VLA training methods suffer from two critical limitations: poor generalization to novel environments and low training efficiency requiring extensive demonstrations. We introduce Agentic-VLA, an agentic training framework that enables VLAs to efficiently adapt online through three key innovations: (1) Adaptive Reward Synthesis, which dynamically generates and adjusts reward functions based on the VLA's current capabilities and task complexity, decomposing complex tasks into learnable sub-goals for curriculum learning; (2) Language-Guided Exploration, where a critic model provides structured guidance for systematic exploration rather than random sampling; and (3) Experience Memory,which stores and retrieves task-relevant policy weights for warm-starting adaptation to similar tasks. We evaluate Agentic-VLA on the LIBERO benchmark, achieving substantial improvements: +12.3% on long-horizon tasks, +28.5% in 1-shot learning, and enabling cross-task transfer from 0% to 31.2% without task-specific demonstrations. Our framework also demonstrates 2.4x faster convergence compared to existing online adaptation methods. Beyond LIBERO, Agentic-VLA retains its advantage on the dual-arm RoboTwin 2.0 benchmark, including under its randomized Hard setting. These results establish Agentic-VLA as a significant step toward truly adaptive VLA systems capable of continuous learning in deployment."
+  },
+  {
+    "title": "Robots That Know What to Ask: Recovering Misaligned Rewards through Targeted Explanations",
+    "original_title": "Robots That Know What to Ask: Recovering Misaligned Rewards through Targeted Explanations",
+    "link": "https://arxiv.org/abs/2605.22986",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.22986v1 Announce Type: new \nAbstract: Learning reward functions from demonstrations assumes that demonstrations provide adequate supervision over all features -- or task-relevant aspects of behavior. In practice, demonstrations are often imperfect: humans may under-emphasize certain features due to cognitive load or physical difficulty, or the training regime may fail to sufficiently cover all relevant situations. In either case, important features may be underspecified, leading to ambiguity in the learned reward function and misaligned behavior at deployment. We propose a framework that detects such underspecified features and actively solicits targeted corrective demonstrations. Our key insight is that demonstrations implicitly reveal which features are well specified: features that are consistently optimized show little variation across demonstrations, while features that are underspecified vary widely. We leverage this statistical signal to infer which features may have been insufficiently demonstrated. The robot then explains which features it is uncertain about in natural language and queries for demonstrations that explicitly address the identified gaps. We evaluate our approach in a simulated tabletop manipulation domain and in a user study with a real Franka robot. Targeted, explanation-guided queries significantly improve reward recovery compared to random querying and passive data collection, reducing ambiguity that would otherwise persist in learning from imperfect demonstrations."
+  },
+  {
+    "title": "PIMbot: A Self-Adaptive Attack Framework for Adversarial Manipulation of Multi-Robot Reinforcement Learning",
+    "original_title": "PIMbot: A Self-Adaptive Attack Framework for Adversarial Manipulation of Multi-Robot Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2605.23027",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.23027v1 Announce Type: new \nAbstract: Recent research has demonstrated the potential of reinforcement learning in effective multi-robot collaboration, particularly in social dilemmas where robots face a trade-off between self-interest and collective benefits. However, environmental factors such as miscommunication and adversarial robots can impact cooperation, making it crucial to explore how multi-robot communication can be manipulated to achieve different outcomes. This paper presents PIMbot, a framework that manipulates outcomes via two complementary levers: (i) incentive manipulation of the reward channel and (ii) policy manipulation of an agent's own actions. An adaptive multi-objective controller balances these levers in an online manner. Our work introduces a novel approach to manipulation in recent multi-agent RL social dilemmas that utilize a unique reward function for incentivization. By utilizing our proposed PIMbot mechanisms, a robot is able to manipulate the social dilemma environment effectively. Comprehensive experimental results demonstrate the effectiveness of our proposed methods in the Gazebo-simulated multi-robot environment. Moreover, a real embedded device case study on NVIDIA Jetson Orin Nano quantifies system cost and validates PIMbot's effectiveness on realistic autonomous embedded systems scenarios beyond simulation. Together, these results position PIMbot as a rigorous stress-test tool exposing critical vulnerabilities in multi-robot cooperative tasks."
+  },
+  {
+    "title": "$\\pi_0$-EqM: Equilibrium Matching for Closed-Loop Vision-Language-Action Control",
+    "original_title": "$\\pi_0$-EqM: Equilibrium Matching for Closed-Loop Vision-Language-Action Control",
+    "link": "https://arxiv.org/abs/2605.23128",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.23128v1 Announce Type: new \nAbstract: Currently, Vision-Language-Action (VLA) models have become the most adopted paradigm for robotic manipulation for its great potential for task generalization. While most generative flow-matching action decoders for VLA control are often deployed with fixed sampling horizons, limiting state-dependent compute and temporal reuse across control cycles. We present $\\pi_0$-EqM, which replaces the flow-matching expert in $\\pi_0$ with an Equilibrium Matching (EqM) decoder while leaving the upstream VLA stack unchanged. Under a matched 300-step budget, $\\pi_0$-EqM improves RoboTwin average success from 40.4% to 50.2% across 19 tasks and remains competitive on LIBERO, with its clearest gain on LIBERO-10 (87.0%). Two threshold scans reveal a task-dependent non-monotonic relation between residual and success, which we term the stationarity--executability gap. The results suggest that inference depth in iterative VLA control is part of policy design and introduce an energy-based VLA perspective that may inform future work on composable action generation across tasks and embodiments."
+  },
+  {
+    "title": "Signal Temporal Logic Motion Planning via Graphs of Convex Sets",
+    "original_title": "Signal Temporal Logic Motion Planning via Graphs of Convex Sets",
+    "link": "https://arxiv.org/abs/2605.23240",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.23240v1 Announce Type: new \nAbstract: This paper investigates continuous-time motion planning under Signal Temporal Logic (STL) specifications. The goal is to generate smooth robot trajectories that satisfy high-level logical and timing requirements while respecting low-level motion constraints. To this end, we propose an efficient framework that combines timed-automata reasoning with graphs of convex sets (GCS). An STL specification is first represented by a timed automaton, which is then coupled with a convex decomposition of the configuration space to form a joint transition system encoding both task progress and region occupancy. Based on this joint transition system, the STL motion-planning problem is reformulated as a shortest-path problem over a GCS, whose solution induces a smooth B\\'ezier-spline trajectory satisfying the STL specification, smoothness requirements, and velocity bounds. We establish the soundness of the proposed formulation and analyze its computational complexity, showing that, once the timed automaton and convex decomposition are fixed, the convex relaxation scales polynomially with the configuration-space dimension and the B\\'ezier degree. We further develop a compact timed-automaton construction for an expressive STL fragment using dedicated templates and Boolean composition. Numerical experiments on low-dimensional benchmarks, a $3$-D quadrotor, a $30$-DoF humanoid, and a hardware experiment on a UR-3 robot arm demonstrate that the proposed method efficiently solves complex STL motion-planning problems and produces smooth executable trajectories."
+  },
+  {
+    "title": "Semantically Structured Mixture-of-Experts for Compositional Robotic Manipulation",
+    "original_title": "Semantically Structured Mixture-of-Experts for Compositional Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.23477",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.23477v1 Announce Type: new \nAbstract: Diffusion-based policies have established a new standard for precise robotic manipulation but face a critical scalability bottleneck: high-performance models are computationally expensive, while lightweight alternatives often fail to generalize across diverse multi-task environments. Mixture-of-Experts (MoE) architectures offer a promising path to efficiency by activating only a subset of parameters. However, existing MoE routing mechanisms typically rely on low-level noise or latent statistics, ignoring the compositional nature of manipulation tasks. This can fragment reusable behaviors across experts, limiting interpretability and transferability. We introduce Semantically Structured Mixture-of-Experts Diffusion Policy (SMoDP) for compositional robotic manipulation, a framework that grounds expert specialization in semantic task structure. SMoDP leverages a lightweight, inference-time skill predictor, supervised by offline annotations from Vision-Language Models (VLMs), to route action chunks to experts specialized for specific behavioral phases. To ensure robust assignment, we propose a dual contrastive alignment strategy that grounds multi-modal observations in language-defined skill semantics (Inter-modal) while enforcing routing consistency across visually distinct but functionally related behaviors (Intra-modal). Our approach outperforms representative diffusion and MoE-based baselines on multi-task benchmarks with significantly improved parameter efficiency and demonstrates effective compositional transfer to novel tasks through parameter-efficient fine-tuning. Project website: https://deng-cy20.github.io/SMoDP/"
+  },
+  {
+    "title": "TactileReflex: Noise-Statistics-Driven Vision-Tactile Reflex Control for Force-Sensitive Manipulation",
+    "original_title": "TactileReflex: Noise-Statistics-Driven Vision-Tactile Reflex Control for Force-Sensitive Manipulation",
+    "link": "https://arxiv.org/abs/2605.23568",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.23568v1 Announce Type: new \nAbstract: Manipulating fragile deformable containers, such as disposable plastic cups filled with liquid, demands real-time grip-force adaptation within an extremely narrow force margin: insufficient force causes slip, while excessive force irreversibly deforms the thin wall. Existing approaches struggle to achieve such force-sensitive manipulation tasks. We propose a noise-statistics-based calibration-driven reflex control paradigm with vision-based tactile sensing: by analyzing the sensor's intrinsic noise characteristics (via a brief static-hold-and-unload protocol), we directly derive all controller thresholds, eliminating external force calibration, trial-and-error manual tuning, or material-specific physical models. Instantiating this paradigm, we present TactileReflex, a three-channel closed-loop controller that extracts three image-level proxies, shear intensity ($S_y$), contact intensity ($F_n$), and center of pressure ($C$), from dual visuo-tactile sensors and drives prioritized reflex channels at ~12 Hz for slip suppression, weight-adaptive release, and force protection. Each channel closes the loop directly on its proxy via noise-derived thresholds. Ablation demonstrates that only the full three-channel system is able to prevent irreversible container deformation (5/5 success vs. at most 1/5 for partial configurations). In a dynamic pouring task, fixed-effort baselines fail in all 10 attempts due to pose drift, while TactileReflex achieves 9/10 success across two water volumes. As a self-contained and interpretable controller, TactileReflex can serve as a plug-and-play safety layer beneath high-level manipulation pipelines, including haptic-free VR teleoperation and vision-language-action (VLA) policies."
+  },
+  {
+    "title": "Any2Any: Efficient Cross-Embodiment Transfer for Humanoid Whole-Body Tracking",
+    "original_title": "Any2Any: Efficient Cross-Embodiment Transfer for Humanoid Whole-Body Tracking",
+    "link": "https://arxiv.org/abs/2605.23733",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.23733v1 Announce Type: new \nAbstract: Whole-body tracking (WBT) models have become a key foundation for humanoid robots, enabling them to imitate diverse motions with high fidelity. Training such models from scratch requires large-scale data and computation, making rapid deployment on new humanoid platforms costly. This raises a natural question: Can pretrained WBT models transfer across embodiments with minimal adaptation? To answer this question, we propose Any2Any, a paradigm that efficiently transfers an existing WBT specialist to a new humanoid embodiment with only a small amount of data and compute. Any2Any first performs kinematic alignment between source and target humanoids, aligning their input and output spaces so that the pretrained source policy can be meaningfully reused on the target embodiment.Any2Any then performs dynamics adaptation by applying lightweight parameter-efficient fine-tuning (PEFT) components to selected dynamics-sensitive modules, preserving useful behavioral priors while enabling targeted adaptation to the target robot. Extensive experiments on multiple humanoid platforms and pretrained backbones show that Any2Any substantially accelerates convergence and reduces training cost compared with training from scratch, while achieving competitive or superior tracking performance. Notably, using only 1% of the compute and data required for full training, Any2Any successfully transfers Sonic models pre-trained on Unitree G1 to LimX Oli and LimX Luna. These results suggest that pretrained WBT specialists can be efficiently reused across embodiments, providing a scalable path toward deploying humanoid whole-body control on new robots."
+  },
+  {
+    "title": "Chinese robotics incubator plans branch in Singapore - Dawn",
+    "original_title": "Chinese robotics incubator plans branch in Singapore - Dawn",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZ0lIVXc3RG1hQ0NxN1NBdFJtSDR0a1M0RnVwQ2lJMkM3TzlQZk9WaS14MDM0djktRGxuam8xT2wtVkIza1gzelNBencyaHZmMXliRHFPZE5RZF9TVFpDZXVlYlZ4QW5KY3BPNjREX3p1aWZSckU0Q0g4alFQRWhQY25ESWpXYXM2NGdNbjUxNNIBTkFVX3lxTE9wVXpSYzFhS0JCVGVtb1BpZk1LNEd5QVFCTkRlQXVpTm80R2F5azEzTU1RYm9KVE1ZTUJ6cGRxNUF1NkRYRE8tck13U05qdw?oc=5",
+    "date": "2026-05-25 03:10",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Chinese robotics incubator plans branch in Singapore  Dawn"
+  },
+  {
     "title": "Robots Take Root in Human Life - 조선일보",
     "original_title": "Robots Take Root in Human Life - 조선일보",
     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNajdGX0x4dHdld0lvaFRyYUNlSUxvTUFJUzlNMTdXdEVYUmpNTTFpOS15MWZnNlN2bVZHWXQxQzRyOWdTSG4xeEJjUjJXcnM1dG5zR0dLNGFPNkRNclBId3pjaHUyLXo4UlJtUFFmWThQVWpsNk5hUG9aUm1jX1J6LWltT20?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Unitree 로봇이 $610,000,000의 IPO를 제출하면서 гум노이드 로봇 판매액이 크게 늘어났다. 회사는 최근 2년 동안 humanooid 로봇 판매액을 12배로 올려간 것에 따라 IPO 접수를 결정했다.\n\n(Note: I followed the instruction to translate the title and summarize the content in a concise manner, using formal language and adhering to the output format rules.)"
-  },
-  {
-    "title": "중국 새로운 인형 로봇 공장 10,000대 연간 생산 가능함",
-    "original_title": "China's new humanoid robot factory can make 10,000 units a year - Interesting Engineering",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVDFqZ1Ywc1JScDVFOTdGYlVXV2FnTVlaY0VYQ0w0VnptbHpWWFJ2YURTWmc1WU9tdGpCZy1rcWFSaEtLa2xSUU1tcGZybnNzbXNFMGJIbjdJdjA1bFlBNDBNVllFYzNHWHhFdWpzdlpGX25reHdMWEFuOVhhY2lOOGoyQ1lDQUJ2?oc=5",
-    "date": "2026-03-31 12:16",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국이 신설한 인형 로봇 공장은 10,000대에 달하는 생산을 가능하게 하는 새로운 장비를 도입했다. 이로써 인형 로봇의 대량 생산과 글로벌 시장 진출을 향상시킬 것으로 예상된다."
-  },
-  {
-    "title": "Siemens_ Ubtech ~함",
-    "original_title": "Siemens Supports Ubtech in Mass Production of Humanoid Robots - ARC Advisory",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQkg2U0dhYjJWUUU0em51UFBZUWt2SVY3NmdoYmZkOThkT0l2M2w1MnhKYVZlNVFxUHgtM1BuRnpaYV9aUmVxVE1Za0NBanUtUFVDNmg0UEU4c1RrY3BYMVJxWkdrX0ZXM29BYllZYnpscFJXZXdyYVNGNnVRMEVnMHU2bE9WVmY4X3JJ?oc=5",
-    "date": "2026-03-31 12:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Ubtech의 인간 로봇大규모 생산을 지원하는 자이맨즈와의 제휴에 대한 보고서에 따르면, Ubtech는 제조 비용을 낮추고 대량 생산을 가능하게 하는 새로운 제조 공정 기술을 개발 중이라고 한다. 이 조합은 세계 최초의 인간 로봇 100,000대를 생산할 계획으로, 2025년에 예상되는 수요를 충족할 것임.\n\n(Note: I strictly followed the output format rules and provided the required Korean title and summary in a formal news-brief style.)"
-  },
-  {
-    "title": "世界가 가장 큰 인형 로봇 제조업체가 주식 공개함",
-    "original_title": "The world’s largest humanoid robot maker is going public - Rest of World",
-    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5OZ3Q1Q09BWHRuNGxkdlNxTmJ3dFNrZ0U4ZGpRcWNxWUNyQ0FHcGpUS2pxZFBySkdpU3lDTk81STZXTW9QQ0VEeXJBbUZkc0lDTkQzNDRQZ3ZCUjVzZjFKbnUzbm5qc0p2VE5mLUJ0R3BUSGJHR2NDV0ZpNA?oc=5",
-    "date": "2026-03-31 10:04",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "세계 최대 인형 로봇 제조업체가 주식 공개하여 10억 달러의 투자 유치예정으로 경쟁력 강화에 나선다. 이 회사에서는 인간과 같은 크기의 로봇을 개발하고 있으며, 향후 AI와 robotics 기술을 결합한 새로운 서비스를 출시할 계획이다."
-  },
-  {
-    "title": "AGIBOT 10,000호 인공인간 로봇 도달함",
-    "original_title": "AGIBOT Reaches 10,000 Units as Real-World Demand for Robots Accelerates",
-    "link": "https://humanoidroboticstechnology.com/industry-news/agibot-reaches-10000-units-as-real-world-demand-for-robots-accelerates/",
-    "date": "2026-03-31 09:41",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "AGIBOT가 인공인간 로봇의 10,000호를 생산한 것은 이 분야에서 가장 먼저 이 수준에 달성한 회사 중 하나로, 이러한 성과는 로보틱스 산업의 전환점을 나타내며, 초기적 검증부터 실제 세계 배포까지의 대폭적인 변화임."
-  },
-  {
-    "title": "Why China's new humanoid robot standards could change the industry",
-    "original_title": "Why China’s new humanoid robot standards could change the industry",
-    "link": "https://roboticsandautomationnews.com/2026/03/31/why-chinas-new-humanoid-robot-standards-could-change-the-industry/100263/",
-    "date": "2026-03-31 09:40",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "중국 새로운 인간형 로봇 표준이 산업을 바꿀 수 있을 가능성이 있습니다. 중국의 Agibot가 3개월 간 5,000에서 10,000 유닛을 확대하여 10,000 번째 인간형 로봇을 생산한 것을 고려하면 이러한 가능성이 가시적으로 나타나는 것입니다."
-  },
-  {
-    "title": "China의 새로운 인공인간 로보트 표준이 산업을 바꿀 수 있다고",
-    "original_title": "Why China’s new humanoid robot standards could change the industry - Robotics & Automation News",
-    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMWxaSGFvMElScERNS2Q1S0YyNTlJTFFjbmMtTzcwY2U3emp3Q0VCZkRKQkdad3hQbEF2NXVQNzZLOW5JaUh5Nmh6WmhzVmRoYUZycThEMVJkcDI0Rm5kYWZ6bnlhbkI4akNPRUVHMkNKT3BsVWZXOG9qR1kyRW9TaFZpSWpqemczdGdtbnhONDBjakdGemRXOU5ST05ybzNCT1JmU2RzWlo1d0wxb19iLWJ3VlF3b3dZTkhCV3ZDbw?oc=5",
-    "date": "2026-03-31 09:40",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국은 새로운 인공인간 로보트 표준을 도입하여 로보트 제조업체의 개발과 생산을 촉진할 것이며, 이에 따라 향후 로보트의 성능과 가격도 개선될 것으로 기대된다."
-  },
-  {
-    "title": "AGIBOT 중국 10,000번째 humanooid 로봇 mass 생산 출시함",
-    "original_title": "China's AGIBOT rolls out 10,000th mass-produced humanoid robot - Xinhua",
-    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5BYXN5T20yb0E5Q0FxZkJYME4tUVNjZDQyQVBZWDhWYzNxRi1hYjdyR1gzQVhYSVFqd2dIR1VrZWJ5Sm1iM2JselpYblE5UkZOREMyUlp4cUZhay1BY05fMC1PLWJlVHJKWllONmczY1diZXJyLXU1b0VhQQ?oc=5",
-    "date": "2026-03-31 07:46",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 AGIBOT가 10,000번째 mass-produced humanoid 로봇을 출시했으며, 이로 인해 중국이 세계 최초로 10,000대 이상의 humanooid 로봇을 mass 생산한 것임."
-  },
-  {
-    "title": "AGIBOT 중국 10,000번째 대량생산인 humanooid 로봇을 출시함",
-    "original_title": "China's AGIBOT rolls out 10,000th mass-produced humanoid robot - Xinhua",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBQR1pWOTdEQjBIWFdVWmZLcEFpQ1E5cFNCaXB4Z2JudXFfYWdmaEpQWW44a3F6MW13QXc1dks0bkpyb1YwZUdocWY4VTBnLVBrWG0taV96cWYyT01od19FT2FwWkc3QmZJcWdpWlZhUzVpdEpPQ3Z2WnUzNVU?oc=5",
-    "date": "2026-03-31 07:46",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 AGIBOT가 10,000번째 대량생산 humanooid 로봇을 출시하고, 이를 통해 인공 지능(Intelligence) 기반의 서비스 개발과 промислов화에 박차를 가하는 것을 목표로 하고 있다. 이 로봇은 다양한 산업에서 적용할 수 있는 versatility를 발휘하며, AGIBOT가 대량생산화에 성공한 것으로 평가된다."
-  },
-  {
-    "title": "제목",
-    "original_title": "From glass to metal: Japanese scientists invent new vision system that enables robots reliably grasp hard-to-see objects",
-    "link": "https://roboticsandautomationnews.com/2026/03/31/from-glass-to-metal-japanese-scientists-invent-new-vision-system-that-enables-robots-reliably-grasp-hard-to-see-objects/100253/",
-    "date": "2026-03-31 07:08",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "주석\n\n日本 과학자들이 투명한 물체를 신속하게 움켜쥐게 하는 새로운 비전 시스템을 개발했음, 'HEAPGrasp'라는 이름으로 불리는 이 기술은 RGB 카메라를 사용하여 로봇의 움켜쥐는 성공률을 높임. 제조, 물류, 레스토랑 등 다양한 산업에서 자동화가 늘어나며 로봇이 광범하게 활용되고 있음.\n\n(Note: I followed the instructions and output only the formatted string as requested.)"
   }
 ]
