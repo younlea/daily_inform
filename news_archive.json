@@ -144,6 +144,24 @@
     "summary": "arXiv:2510.07869v4 Announce Type: replace \nAbstract: Underwater environments pose unique challenges for robotic navigation and manipulation. While existing research has primarily focused on task-specific methods, studies on general-purpose intelligence for multi-task execution remain scarce. To address this gap, we propose a unified framework for general-purpose underwater robots that integrates perception and action driven by language instructions. First, we develop a data synthesis pipeline to construct USIM, a simulation-based dataset which comprises over 905K frames from 2275 trajectories, totaling approximately 25 hours of BlueROV2 interactions. Furthermore, we propose U0, a vision-language-action (VLA) model capable of executing various tasks from obstacle-avoidance navigation to three-dimensional mobile manipulation. The model features a convolution-attention-based perception (CAP) module, which incorporates target pose estimation as an auxiliary task to explicitly bolster the model's spatial awareness. For evaluation, we establish a systematic assessment framework and an automated pipeline encompassing both offline metrics and online task execution. Experimental results demonstrate that the USIM dataset significantly empowers existing VLA models to adapt to underwater scenarios. Notably, our U0 model achieves state-of-the-art performance: it reduces the offline mean action prediction error to 0.0359 and achieves an overall online success rate of 43.1%, marking a 5.5% improvement over existing competitive baselines (below 37.6%), with navigation tasks reaching as high as 87.5%. These results validate the feasibility of general-purpose intelligence in underwater robotics, providing a foundation for scalable dataset synthesis and aquatic embodied agents."
   },
   {
+    "title": "LACY: A Vision-Language Model-based Language-Action Cycle for Self-Improving Robotic Manipulation",
+    "original_title": "LACY: A Vision-Language Model-based Language-Action Cycle for Self-Improving Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2511.02239",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.02239v2 Announce Type: replace \nAbstract: Learning generalizable policies for robotic manipulation increasingly relies on large-scale models that map language instructions to actions (L2A). However, this one-way paradigm often produces policies that execute tasks without deeper contextual understanding, limiting their ability to generalize or explain their behavior. We argue that the complementary skill of mapping actions back to language (A2L) is essential for developing more holistic grounding. An agent capable of both acting and explaining its actions can form richer internal representations and unlock new paradigms for self-supervised learning. We introduce LACY (Language-Action Cycle), a unified framework that learns such bidirectional mappings within a single vision-language model. LACY is jointly trained on three synergistic tasks: generating parameterized actions from language (L2A), explaining observed actions in language (A2L), and verifying semantic consistency between two language descriptions (L2C). This enables a self-improving cycle that autonomously generates and filters new training data through an active augmentation strategy targeting low-confidence cases, thereby improving the model without additional human labels. Experiments on pick-and-place tasks in both simulation and the real world show that LACY improves task success rates by 56.46% on average and yields more robust language-action grounding for robotic manipulation. Project page: https://vla2026.github.io/LACY/"
+  },
+  {
+    "title": "V-VLAPS: Value-Guided Planning for Vision-Language-Action Models",
+    "original_title": "V-VLAPS: Value-Guided Planning for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2601.00969",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2601.00969v2 Announce Type: replace \nAbstract: Vision-language-action (VLA) models provide strong action priors for robotic manipulation, but their reactive behavior can fail under distribution shift and long-horizon task structure. Recent VLA-guided planning methods improve execution by using pretrained policies to guide tree search, yet node selection still depends heavily on policy priors and visit-count exploration. Consequently, when the policy favors poor actions, the planner lacks a learned value signal to correct this bias. Prior work has shown that VLA representations encode rollout success and failure information, suggesting that they may also support value estimation during planning. We introduce Value-Guided Vision-Language-Action Planning and Search (V-VLAPS), which augments VLA-guided planning with a lightweight value head trained on offline VLA rollouts to predict Monte Carlo returns. These predictions guide Monte Carlo Tree Search toward higher-value branches. Across five LIBERO suites, V-VLAPS matches value-free planning baseline at the default search budget in aggregate, and analysis shows that many hard failures are root-level timeouts where predicted values are weakly separated. With a larger search budget, V-VLAPS improves over the baseline in all task suites with +6 percentage points on LIBERO-Object and +4 percentage points on LIBERO-10. Our results suggest that VLA representations can support not only failure prediction, but also value-guided planning when search reaches branches where value-based ranking matters."
+  },
+  {
     "title": "Chinese robotics incubator plans branch in Singapore - Dawn",
     "original_title": "Chinese robotics incubator plans branch in Singapore - Dawn",
     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZ0lIVXc3RG1hQ0NxN1NBdFJtSDR0a1M0RnVwQ2lJMkM3TzlQZk9WaS14MDM0djktRGxuam8xT2wtVkIza1gzelNBencyaHZmMXliRHFPZE5RZF9TVFpDZXVlYlZ4QW5KY3BPNjREX3p1aWZSckU0Q0g4alFQRWhQY25ESWpXYXM2NGdNbjUxNNIBTkFVX3lxTE9wVXpSYzFhS0JCVGVtb1BpZk1LNEd5QVFCTkRlQXVpTm80R2F5azEzTU1RYm9KVE1ZTUJ6cGRxNUF1NkRYRE8tck13U05qdw?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중국 AGIBOT의 휴망 로봇 10,000대를 완성한 것은 새로운 스케일링 마일스톤으로, 이러한 성과는 로봇 산업의 성장에 기여할 것으로 예상된다."
-  },
-  {
-    "title": "CHINA의 AGIBOT 10,000번째 인공로봇을 생산, 주요 크레징 마일스톤 달성함",
-    "original_title": "China’s AGIBOT builds 10,000th humanoid robot in major scaling milestone - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOMzAxNXFmSm9Zd190bkhUSnd4clFDUzAwVURmeTB1NDcyLVV2MGFVcnU3bmhTcWNTZG16UTBCSmVYOXJQZ0xzcG1XS29wTW5pRTdZbkhHbWxzS0NhTENLb0hpOWhCLXBLSWxacG8yYkNZQWNqREhRZGtOcHJ6NE5VeVFEQlNwLWYwNFdIbTd0MFVQNnlFMnRRS1BuUTJxbHZHV09PaGFZaDVfa3hQWWljWWk4MjFWeTRQN0JYUVNVSjB0SnUzVmo0dVluNnRGc1ZsaUlWbVpGLVJ2QzBlNURVTkV4ejVMSWhZc1dpTkdjcnFGRTNTbXRlZEJCdXdTSUU?oc=5",
-    "date": "2026-03-31 16:47",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 AGIBOT이 최근 10,000 번째 인공로봇을 생산하는 데 성공했으며, 이렇게 큰 규모의 생산은 인공로봇 기술 개발과 실용화에 있어 중요한계약으로 평가된다. 이와 같은 성과는 AGIBOT의 인공로봇 생산 기술을 세계적으로 인정받게 하는 계기가 되었다."
-  },
-  {
-    "title": "Vecna 로보틱스 ~ Vecna 로보틱스",
-    "original_title": "Vecna Robotics adds voice control to case picking automation with CaseFlow Voice",
-    "link": "https://roboticsandautomationnews.com/2026/03/31/vecna-robotics-adds-voice-control-to-case-picking-automation-with-caseflow-voice/100282/",
-    "date": "2026-03-31 16:45",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "Vecna 로보틱스가 케이스 피킹 오투메이션에 보이스 컨트롤을 추가한 CaseFlow Voice를 공개했. 이 제품은 케이스 피킹 워크플로우에서 완전히 통합된 보이스เทคโนโลย이 내장되어 있어, 물론의 hands-free 운영으로 성과를 향상하고 정확도 역시 높이는 데 도움이 된다."
   }
 ]
