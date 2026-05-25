@@ -72,6 +72,78 @@
     "summary": "arXiv:2605.23733v1 Announce Type: new \nAbstract: Whole-body tracking (WBT) models have become a key foundation for humanoid robots, enabling them to imitate diverse motions with high fidelity. Training such models from scratch requires large-scale data and computation, making rapid deployment on new humanoid platforms costly. This raises a natural question: Can pretrained WBT models transfer across embodiments with minimal adaptation? To answer this question, we propose Any2Any, a paradigm that efficiently transfers an existing WBT specialist to a new humanoid embodiment with only a small amount of data and compute. Any2Any first performs kinematic alignment between source and target humanoids, aligning their input and output spaces so that the pretrained source policy can be meaningfully reused on the target embodiment.Any2Any then performs dynamics adaptation by applying lightweight parameter-efficient fine-tuning (PEFT) components to selected dynamics-sensitive modules, preserving useful behavioral priors while enabling targeted adaptation to the target robot. Extensive experiments on multiple humanoid platforms and pretrained backbones show that Any2Any substantially accelerates convergence and reduces training cost compared with training from scratch, while achieving competitive or superior tracking performance. Notably, using only 1% of the compute and data required for full training, Any2Any successfully transfers Sonic models pre-trained on Unitree G1 to LimX Oli and LimX Luna. These results suggest that pretrained WBT specialists can be efficiently reused across embodiments, providing a scalable path toward deploying humanoid whole-body control on new robots."
   },
   {
+    "title": "Direct Dynamic Retargeting for Humanoid Imitation Learning from Videos",
+    "original_title": "Direct Dynamic Retargeting for Humanoid Imitation Learning from Videos",
+    "link": "https://arxiv.org/abs/2605.23762",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.23762v1 Announce Type: new \nAbstract: Imitation Learning from monocular video demonstrations provides a scalable approach for teaching complex skills to humanoid robots. However, translating human motion to humanoids requires overcoming significant morphological mismatches. Standard approaches rely on Geometric Retargeting or Indirect Dynamic Retargeting pipelines. We identify that these intermediate kinematic projections introduce a geometric bias, restricting the search space and yielding suboptimal dynamic behaviors. In this paper, we propose Direct Dynamic Retargeting (DDR), a novel single-stage framework that generates high-fidelity, dynamically feasible trajectories directly from expert videos. By formulating the problem in the task space and leveraging a sampling-based Model Predictive Control solver within a physics simulator, DDR natively optimizes over complex contact sequences while mitigating input drift. Our experiments demonstrate that bypassing the geometric bias allows DDR to outperform state-of-the-art baselines in demonstration tracking accuracy. Furthermore, we establish that providing such physically viable references to RL agents accelerates training convergence and enhances the final execution of agile and balancing behaviors. Source code will be made publicly available."
+  },
+  {
+    "title": "Instrumentation for Imitation Learning: Enhancing Training Datasets for Clothes Hanger Insertion",
+    "original_title": "Instrumentation for Imitation Learning: Enhancing Training Datasets for Clothes Hanger Insertion",
+    "link": "https://arxiv.org/abs/2605.23847",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.23847v1 Announce Type: new \nAbstract: Large behaviour models have transformed the field of robotic manipulation, but prohibitive data requirements have thus far prevented a revolution similar to vision language models. We believe that instrumentation, i.e. sensor integration in objects, can provide invaluable state information and enable efficient learning for robotic manipulation. In this paper, we present instrumented imitation learning of clothes hanger insertion. Using 180 teleoperated demonstrations, we train diffusion policies with and without access to instrumentation data. Results show that policies leveraging instrumentation outperform vision-only counterparts by 14-25 %pt and exhibit greater task awareness. Crucially, a black-box imitation learning policy learns to prioritise instrumentation signals without explicit guidance. In addition, enhancing the teleoperation dataset with rollouts from an instrumented expert policy, enables a vision-only student policy to achieve performance comparable to the instrumented expert, thereby surpassing the original vision-only policy. These findings establish instrumentation as a promising strategy to enhance imitation learning for robotic manipulation. Datasets are available on Zenodo."
+  },
+  {
+    "title": "Robotic Strawberry Harvesting with Robust Vision and Deep Reinforcement Learning based Sim-to-Real Control",
+    "original_title": "Robotic Strawberry Harvesting with Robust Vision and Deep Reinforcement Learning based Sim-to-Real Control",
+    "link": "https://arxiv.org/abs/2605.23863",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.23863v1 Announce Type: new \nAbstract: This study presents a closed-loop robotic strawberry harvesting system that combines a robust vision module, simulation-trained deep reinforcement learning (DRL) control, and ROS-based realrobot execution. For perception, we propose HRAttnEdge-YOLO26-seg, a modified YOLO26-seg architecture that incorporates a high-resolution P2 branch, segmentation-path attention, and edgesupervised prototype learning to improve instance segmentation in cluttered scenes. For control, we train a target-conditioned Proximal Policy Optimization (PPO) policy in Isaac Lab to produce smooth joint-position commands for a UR10e manipulator and deploy it on a UR10e robot for targetfruit reaching and harvesting. This simulation-based approach reduces hardware dependency, lowers development cost, and allows scalable policy training without exhaustive physical trials before real deployment. The proposed vision model demonstrated the highest overall performance among the evaluated methods. On both self-collected and public datasets, the model showed a 10 to 14% improvement in segmentation performance. In controlled in-house tests, the PPO controller produced stable and dynamically smoother motion than a inverse kinematics (IK)-based MoveIt baseline. In greenhouse trials, the proposed integrated system harvested 281 strawberries, achieving 96.6% reaching success, 91.3% grasp-and-pull success, and 84.3% overall harvesting success. These results illustrate that task-specific perception combined with simulation-trained PPO can serve as a practical and resource-efficient alternative to conventional planner-dependent reaching in manipulation, enabling reliable closed-loop robotic harvesting in complex agricultural environments."
+  },
+  {
+    "title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation",
+    "original_title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2605.22882",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.22882v1 Announce Type: cross \nAbstract: Video world models can generate realistic futures from a single instruction, but they often fail to preserve consistent point-level motion over time. As a result, the generated videos appear plausible, yet lack the physical grounding required for reliable action execution, such as robot manipulation. We present GEM-4D, a geometry-grounded video world model that resolves this limitation by injecting dense 4D correspondence supervision, distilled from a pretrained geometry foundation model, into the video generative backbone during training. This supervision enables the model to jointly capture appearance and geometric structure while retaining a single-stream architecture with no additional inference cost. We further introduce an inverse dynamics module that converts correspondence-consistent video rollouts into executable robot trajectories, enabling direct deployment in both real-world and simulated manipulation. GEM-4D achieves state-of-the-art performance on both video prediction and geometric consistency across simulation and realistic scenarios and improves real-world manipulation success from 61% to 81%. Additional results are available at the project page: https://anonymous-submission-20.github.io/gem.github.io/."
+  },
+  {
+    "title": "SCRIPT: Scalable Diffusion Policy with Multi-stage Training for Language-driven Physics-Based Humanoid Control",
+    "original_title": "SCRIPT: Scalable Diffusion Policy with Multi-stage Training for Language-driven Physics-Based Humanoid Control",
+    "link": "https://arxiv.org/abs/2605.22894",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.22894v1 Announce Type: cross \nAbstract: Controlling physics-based humanoids from natural-language instructions is a critical step toward general-purpose embodied agents. However, existing methods remain constrained by a tension between semantic expressiveness and physical feasibility, often failing to jointly achieve faithful instruction following, high-quality motion, and stable long-horizon control. We propose SCRIPT, a scalable diffusion policy with a multi-stage training framework for language-driven physics-based humanoid control. The core of SCRIPT is a Joint Action-State-Text Diffusion Transformer (JAST-DiT), which represents actions, physical states, and text as dedicated token streams and couples them through joint attention, enabling direct interaction between language semantics and control dynamics. To stabilize autoregressive control, we introduce a nonlinear history conditioning mechanism, which preserves the dense recent context and samples increasingly sparse cues from long-term history. Beyond supervised imitation pre-training, we propose a post-training stage, further improving the performance using Reinforcement Learning with Hybrid Rewards (RLHR). By injecting learnable noise into the flow-sampling process, RLHR effectively improves motion quality and instruction following within closed-loop simulations using hybrid physical feedback and text rewards. Quantitative evaluations demonstrate that SCRIPT outperforms prior state-of-the-art methods, with gains across text alignment, motion quality, and physical realism metrics. Furthermore, scaling studies on the 1200-hour MotionMillion dataset demonstrate consistent performance gains with model scaling, highlighting SCRIPT's robust scalability for large-scale pre-training. Our code will be publicly available for future research."
+  },
+  {
+    "title": "Lipschitz Optimization for Formal Verification of Homographies",
+    "original_title": "Lipschitz Optimization for Formal Verification of Homographies",
+    "link": "https://arxiv.org/abs/2605.23203",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.23203v1 Announce Type: cross \nAbstract: The adoption of vision neural networks in regulated industries requires formal robustness guarantees, especially in safety-critical domains such as healthcare, autonomous vehicles, and aerospace. However, current approaches are confined to incomplete statistical verification or robustness to $\\ell_p$-norm and affine transforms, which cover only a narrow subset of perturbations to the image formation process. In particular, robustness to camera motion remains an open problem despite being key to deploy many vision applications. We present a formal verification approach that targets robustness against 3D motion perturbations of the capturing camera. We first establish a closed-form mapping from camera pose to pixel values. By analyzing the continuity properties of the resulting homographies, we show that recent work on Lipschitz optimization and piecewise continuity can be extended to derive tight linear bounds on perturbed pixel values. Our approach applies to scenes with predominantly planar structure, such as ground planes in augmented reality, road markings and traffic signs in autonomous driving, or planar workspaces in robotic manipulation. This enables the first formal verification of projective geometry transforms, without complex simulation, surrogate networks, or explicit image-formation models. We validate our implementation and show up to 89% speedup and 7% tighter bounds over prior work. We then evaluate our method on the VNN-COMP benchmark and reveal systematic weaknesses to projective perturbations. Finally, we demonstrate a real-world case study on a safety-critical runway classifier, highlighting practical vulnerabilities to camera motion, and addressing a key challenge in the certification of learned models. Data and code are publicly available at https://github.com/jeangud/homography-verification ."
+  },
+  {
+    "title": "GAF: Gaussian Action Field as a 4D Representation for Dynamic World Modeling in Robotic Manipulation",
+    "original_title": "GAF: Gaussian Action Field as a 4D Representation for Dynamic World Modeling in Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2506.14135",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2506.14135v5 Announce Type: replace \nAbstract: Accurate scene perception is critical for vision-based robotic manipulation. Existing approaches typically follow either a Vision-to-Action (V-A) paradigm, predicting actions directly from visual inputs, or a Vision-to-3D-to-Action (V-3D-A) paradigm, leveraging intermediate 3D representations. However, these methods often struggle with action inaccuracies due to the complexity and dynamic nature of manipulation scenes. In this paper, we adopt a V-4D-A framework that enables direct action reasoning from motion-aware 4D representations via a Gaussian Action Field (GAF). GAF extends 3D Gaussian Splatting (3DGS) by incorporating learnable motion attributes, allowing 4D modeling of dynamic scenes and manipulation actions. To learn time-varying scene geometry and action-aware robot motion, GAF provides three interrelated outputs: reconstruction of the current scene, prediction of future frames, and estimation of init action via Gaussian motion. Furthermore, we employ an action-vision-aligned denoising framework, conditioned on a unified representation that combines the init action and the Gaussian perception, both generated by the GAF, to further obtain more precise actions. Extensive experiments demonstrate significant improvements, with GAF achieving +11.5385 dB PSNR, +0.3864 SSIM and -0.5574 LPIPS improvements in reconstruction quality, while boosting the average +7.3% success rate in robotic manipulation tasks over state-of-the-art methods."
+  },
+  {
+    "title": "USIM and U0: A Vision-Language-Action Dataset and Model for General Underwater Robots",
+    "original_title": "USIM and U0: A Vision-Language-Action Dataset and Model for General Underwater Robots",
+    "link": "https://arxiv.org/abs/2510.07869",
+    "date": "2026-05-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.07869v4 Announce Type: replace \nAbstract: Underwater environments pose unique challenges for robotic navigation and manipulation. While existing research has primarily focused on task-specific methods, studies on general-purpose intelligence for multi-task execution remain scarce. To address this gap, we propose a unified framework for general-purpose underwater robots that integrates perception and action driven by language instructions. First, we develop a data synthesis pipeline to construct USIM, a simulation-based dataset which comprises over 905K frames from 2275 trajectories, totaling approximately 25 hours of BlueROV2 interactions. Furthermore, we propose U0, a vision-language-action (VLA) model capable of executing various tasks from obstacle-avoidance navigation to three-dimensional mobile manipulation. The model features a convolution-attention-based perception (CAP) module, which incorporates target pose estimation as an auxiliary task to explicitly bolster the model's spatial awareness. For evaluation, we establish a systematic assessment framework and an automated pipeline encompassing both offline metrics and online task execution. Experimental results demonstrate that the USIM dataset significantly empowers existing VLA models to adapt to underwater scenarios. Notably, our U0 model achieves state-of-the-art performance: it reduces the offline mean action prediction error to 0.0359 and achieves an overall online success rate of 43.1%, marking a 5.5% improvement over existing competitive baselines (below 37.6%), with navigation tasks reaching as high as 87.5%. These results validate the feasibility of general-purpose intelligence in underwater robotics, providing a foundation for scalable dataset synthesis and aquatic embodied agents."
+  },
+  {
     "title": "Chinese robotics incubator plans branch in Singapore - Dawn",
     "original_title": "Chinese robotics incubator plans branch in Singapore - Dawn",
     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZ0lIVXc3RG1hQ0NxN1NBdFJtSDR0a1M0RnVwQ2lJMkM3TzlQZk9WaS14MDM0djktRGxuam8xT2wtVkIza1gzelNBencyaHZmMXliRHFPZE5RZF9TVFpDZXVlYlZ4QW5KY3BPNjREX3p1aWZSckU0Q0g4alFQRWhQY25ESWpXYXM2NGdNbjUxNNIBTkFVX3lxTE9wVXpSYzFhS0JCVGVtb1BpZk1LNEd5QVFCTkRlQXVpTm80R2F5azEzTU1RYm9KVE1ZTUJ6cGRxNUF1NkRYRE8tck13U05qdw?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "hand",
     "summary": "Vecna 로보틱스가 케이스 피킹 오투메이션에 보이스 컨트롤을 추가한 CaseFlow Voice를 공개했. 이 제품은 케이스 피킹 워크플로우에서 완전히 통합된 보이스เทคโนโลย이 내장되어 있어, 물론의 hands-free 운영으로 성과를 향상하고 정확도 역시 높이는 데 도움이 된다."
-  },
-  {
-    "title": "에모빌리티 애플리케이션 개발 서비스 ~함",
-    "original_title": "Emobility Application Development Services for Automated EV Ecosystems",
-    "link": "https://roboticsandautomationnews.com/2026/03/31/emobility-application-development-services-for-automated-ev-ecosystems/100279/",
-    "date": "2026-03-31 16:29",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "EV 산업에서 로그스틱스, 공공 교통, 에너지零售 등에서의 모빌리티 도입이 가속화되고 있다. 충전 네트워크, 휩대 관리 시스템, 에너지 플랫폼, 파트너 API 등은 병렬적으로 작동하지만 rarely는 의사 소통을 하지 않는다. 디스패처는 자동으로 트리거해야 하는 세션을 수동으로 조정하고, 에너지 매니저는 실시간으로 처리할-platform의 스프레드 시트를 내 экспорт하고 있다. 이를 확대하면 이러한 격벽이 한계로 작용하게 된다."
-  },
-  {
-    "title": "Positronic Robotics 'PhAIL' 벤치마크",
-    "original_title": "Positronic Robotics launches ‘PhAIL’ benchmark to test real-world performance of physical AI systems",
-    "link": "https://roboticsandautomationnews.com/2026/03/31/positronic-robotics-launches-phail-benchmark-to-test-real-world-performance-of-physical-ai-systems/100214/",
-    "date": "2026-03-31 16:00",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "POSITRONIC 로보틱스가 실제 산업 작업 수행 능력을 평가하기 위해 새로운 벤치마크 인 PhAIL을 출시한 가운데, '물리적 AI' 시스템 관심이 증가하고 있습니다. 이 벤치마크는 단위 시간당 생산량 및 평균故障 간격 등 운영 지표를 사용하여 로보틱스 성능을 측정합니다."
-  },
-  {
-    "title": "Meta~제품으로 Debugging을 만들었습니다",
-    "original_title": "How Meta Turned Debugging Into a Product",
-    "link": "https://blog.bytebytego.com/p/how-meta-turned-debugging-into-a",
-    "date": "2026-03-31 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "Meta는 DrP를 개발하는 과정에서 고가의 설계 선택을 했으며, 이.article에서는 Meta의 이러한 디자인 선택을 주요하게 다룰 것입니다. Specifically, Meta는 DEBUGGER TOOL을 통해 사용자들이 쉽게 오류를 찾아내도록 하였으며, 이를 바탕으로 제품화에 성공했습니다."
-  },
-  {
-    "title": "AGIBOT 차이나의 10,000호인형 로봇, 3개월 반으로 절반 배송함",
-    "original_title": "China’s AGIBOT Hits 10,000 Humanoid Robots, Half Shipped in 3 Months - eWeek",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1qQVg1empzcm9uTHBqaWpaWGN1d2t5MXNtcFRNT3NMVzZ0VDJHQW9ra2RKZ3B1M1ktS2NHQlBpWWtBaUc3UDhlaVJBVFpaMDFza2JjamNKdXFlNTBDR0lIamxEQkxqcVAweUZ6X1lJZkxEZWtESWJiTw?oc=5",
-    "date": "2026-03-31 14:16",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "차이나의 AGIBOT는 최근에 10,000대를 생산하고, 3개월 간의 배송을 통해 절반을 판매한 것으로 나타났다. 이로 인해 AGIBOT은 경쟁자들에게 강력한 도전자가 되고 있는 것이다."
-  },
-  {
-    "title": "Humanoid 로봇 가격 85,000 달러에서 25,000 달러로 하락, 글로벌 시장 세그멘테이션 분할",
-    "original_title": "Humanoid robot prices fall from $85,000 to $25,000 as global market splits into tiers",
-    "link": "https://roboticsandautomationnews.com/2026/03/31/humanoid-robot-prices-fall-from-85000-to-25000-as-global-market-splits-into-tiers/100276/",
-    "date": "2026-03-31 13:15",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "최근 Unitree Robotics의 데이터에 따르면 Humanoid 로봇 평균 가격은 2023년에 약 85,000 달러에서 25,000 달러까지 급격히 하락함을 시각화하는 것으로, 상업적 실제 Inflection Point 접근 중인 것으로 보이게 된다."
-  },
-  {
-    "title": "PDW 드론 기반 방위시스템에 1100만 달러 이상을 조달함",
-    "original_title": "PDW raises over $110M for its drone-based defense systems",
-    "link": "https://www.therobotreport.com/pdw-raises-over-110m-for-its-drone-based-defense-systems/",
-    "date": "2026-03-31 12:34",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "PDW는 이 자금으로 다목적 드론의 생산 Scale-up 계획 및 다른 전략 프로그램을 구축하는 것으로 밝혔다. 이 투자로 PDW는 방위시스템의 개발을 가속화할 방침임."
-  },
-  {
-    "title": "Unitree 로보틱스 $610억 IPO 신청",
-    "original_title": "Unitree Robotics files for $610 million IPO as humanoid robot sales surge",
-    "link": "https://roboticsandautomationnews.com/2026/03/31/unitree-robotics-files-for-610-million-ipo-as-humanoid-robot-sales-surge/100272/",
-    "date": "2026-03-31 12:29",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Unitree 로보틱스가 인공인간 로봇의 판매 호조에 힘입어 4.2억 위안($610만)까지 자금을 조달할 수 있는 STAR 시장 상장 신청을 접수하였다. 이에 따라 중화항주Based의 기업은 상하이 증권거래소에서 IPO 신청을 공식적으로 인정받게 되었다."
-  },
-  {
-    "title": "Unitree 로봇 6억 달러 IPO 접수, гум노이드 로봇 판매액 증가 -",
-    "original_title": "Unitree Robotics files for $610 million IPO as humanoid robot sales surge - Robotics & Automation News",
-    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNT1YyemVoN2JxV2ZTd1N3M25tWG9pbE15b0VyMWJZcnFhTW5BTEtiS3Q4RnJ3RVNEbm5UaVotQ0puNlFwSVg3QTg3TzNtVW9ocmZPOE8tUlFaaTdvMzR5NU80cHZDTUpEWUhIdE9nMG9XWDVLQ2F3YnhaaGk1TWI1NHY5VXdXMEpGaVg2VWpfbTktRVl2bEpzN1VDeGR6ODhwNGk4WjRQUUEtUkxpOVJXc0hVN3hIeW5uVVpwak10N0Z5Z3MyLUVsTg?oc=5",
-    "date": "2026-03-31 12:29",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree 로봇이 $610,000,000의 IPO를 제출하면서 гум노이드 로봇 판매액이 크게 늘어났다. 회사는 최근 2년 동안 humanooid 로봇 판매액을 12배로 올려간 것에 따라 IPO 접수를 결정했다.\n\n(Note: I followed the instruction to translate the title and summarize the content in a concise manner, using formal language and adhering to the output format rules.)"
   }
 ]
