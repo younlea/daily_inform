@@ -1,5 +1,14 @@
 [
   {
+    "title": "Unitree speeds China IPO as growth soars but profitability and safety worry investors - CHOSUNBIZ - Chosunbiz",
+    "original_title": "Unitree speeds China IPO as growth soars but profitability and safety worry investors - CHOSUNBIZ - Chosunbiz",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMW9rQl82QllZbkZHaG5iN3dIUUp2WXFCeUI2NkxNYTkwNE5iYlVJWUs0cWFtLVJBaE1YNDRobE5lc0d5NGc1RWlYSm85WnR6TExMUE1jdnhibUlGcF9INXROMTZZTGFiX3RJZS0yQkNodE5ocWF5SEwycDlfNXVuUjNSV255bklk0gGcAUFVX3lxTE9SOEJ5bjlrUlBGZFJINnlxNFVuY0pBNXlzNzliazhwb0NjRHVKb2hWQTA0NWgxODBLZllqa1VEQWN1azg5eDNyNjU3YVlHOTZuZzlGZWpjOFdxOTdqLUJYb0FkV0tYNnhnMllxaUVwRUhBVmRrY2ZuUUFWYjN3ZDBydWdjbzdERGVVT2tPUHJIaHpVcHNJak9BcVZiMQ?oc=5",
+    "date": "2026-05-26 06:50",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree speeds China IPO as growth soars but profitability and safety worry investors - CHOSUNBIZ  Chosunbiz"
+  },
+  {
     "title": "Unitree Robotics Q1 2026 Profit Drop and IPO Hearing on June 1 - News and Statistics - IndexBox",
     "original_title": "Unitree Robotics Q1 2026 Profit Drop and IPO Hearing on June 1 - News and Statistics - IndexBox",
     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNM2U3MnlFREdlZGxoMUxrSGxDRkxzVE1jV1NWc1RpWlNOcVlxNzNZMzZ2UUtqWFBGNE9Xa19VRi1ILWk0cEFuSDhZZHl0SFJKVXd5LWxWR0JLd3JEeUcwejVIVG8zOVR2dzdjWTZqVmNyc2ZLRUJsT19nT0N0S0t3YXAwSmtGZkppWHdEbzY3VU5QaFk?oc=5",
@@ -232,6 +241,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.25547v1 Announce Type: new \nAbstract: Existing embodied control research demonstrates remarkable performance improvements by scaling training data and model size. We instead explore inference-time strategy as an alternative axis. Non-deterministic generative models, such as diffusion and autoregressive models, have been widely adopted in the field of embodied control. However, the single-shot inference paradigm limits their performance. In this paper, we propose \\textbf{TapSampling}, a plug-and-play framework for inference-time sampling. First, we introduce an Action-VAE that represents actions in a low-dimensional latent space by mapping policy-generated initial actions into a compressed posterior distribution, from which any number of latent samples can be drawn and decoded into candidate actions that approximate the true action distribution. Second, we formulate action verification as task-progress outcome prediction, using the intrinsic sequential structure of robotic datasets to train a semantically grounded verifier for interpretable action selection. Furthermore, TapSampling is a policy-agnostic framework. Extensive experiments in both simulated and real-world environments demonstrate that our method substantially improves multiple generalist policies without further policy finetuning. Code and models are available at the project page."
+  },
+  {
+    "title": "Compliant Non-Prehensile Pushing Manipulation",
+    "original_title": "Compliant Non-Prehensile Pushing Manipulation",
+    "link": "https://arxiv.org/abs/2605.25672",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.25672v1 Announce Type: new \nAbstract: In this paper, we address the challenge of performing non-prehensile pushing operations with a compliant robotic manipulation system. To ensure safe operations in human-populated environments, robots must comply with external physical interactions and exhibit passive behavior. To achieve this, we extend a state-of-the-art pushing model to integrate it with impedance-controlled robots. We develop a model predictive control framework built upon this model that enables compliant pushing through optimal modulation of the robot's position/velocity set-point, jointly realizing the required pushing force and contact point adaptation to obtain desired object motion. However, external interactions may induce tracking errors, causing a consequent potentially indefinite increase of the pushing force. To prevent this, we integrate an energy tank passivity filter that further modulates the robot velocity set-point to guarantee passivity and avoid uncontrolled energy buildup. The proposed method has been rigorously tested in simulation and validated through experiments on two different robotic systems, demonstrating passive compliance during human-robot interactions and assessing trajectory tracking performance and robustness to variations in the object's physical parameters."
+  },
+  {
+    "title": "ParkourFormer: Integrating Predictive Supervision and Sequence Modeling into Parkour Locomotion",
+    "original_title": "ParkourFormer: Integrating Predictive Supervision and Sequence Modeling into Parkour Locomotion",
+    "link": "https://arxiv.org/abs/2605.25782",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.25782v1 Announce Type: new \nAbstract: Humanoid parkour requires locomotion policies to coordinate whole-body dynamics across rapidly changing terrains such as stairs, gaps, slopes, and obstacles. Existing reinforcement learning policies are largely reactive, mapping observations directly to actions without explicitly modeling future body states. Such modeling becomes critical in agile locomotion tasks where successful motion execution depends strongly on anticipating upcoming contact transitions and body dynamics.We present ParkourFormer, a Transformer-based sequence modeling framework that reformulates humanoid locomotion as a future-conditioned decision-making problem. The current robot state queries historical sensorimotor trajectories through cross-attention, while a lightweight prediction head forecasts short-horizon future proprioceptive states. The predicted future states, trained with supervised signals, are fused with temporal features to generate actions, enabling the policy to jointly reason over motion history and anticipated future dynamics. We evaluate ParkourFormer on a diverse multi-terrain humanoid parkour benchmark including stairs, gaps, slopes, rough terrain, and obstacle traversal. Experiments in simulation and on a real humanoid robot show that ParkourFormer achieves a 93.85% average traversal success rate on highly challenging terrains, with improvements of up to 42.73% over strong MLP, MoE-based MLP, and vanilla Transformer baselines, while maintaining a single unified policy across all terrain types. These results demonstrate that explicit future-state modeling significantly improves robustness and generalization for agile whole-body locomotion."
+  },
+  {
+    "title": "OASIS: Observation-Action Space Alignment via SE(3) Trajectory Prediction for Robotic Manipulation",
+    "original_title": "OASIS: Observation-Action Space Alignment via SE(3) Trajectory Prediction for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.25829",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.25829v1 Announce Type: new \nAbstract: Recent vision-language-action (VLA) models and world action models (WAMs) advance robotic manipulation by enriching intermediate representations with auxiliary spatial features or future visual-state prediction. However, these representations largely remain within the observation space and do not share the rigid-body geometry of the action space, forcing the action decoder to implicitly recover this geometry. We propose OASIS, a visuomotor policy that aligns the intermediate representation with the action space via $SE(3)$ end-effector trajectory prediction. OASIS couples a 3D-aware feature encoder that fuses vision-language and metric-depth features with an $SE(3)$ trajectory predictor that produces a camera-frame end-effector trajectory. Conditioned on the predictor's pose-supervised hidden states, the action decoder generates action chunks consistent with rigid-body motion. Across simulation and real-world experiments, OASIS outperforms VLA and WAM baselines in success rate and out-of-distribution generalization. Our project page is available at https://npuhandsome.github.io/OASIS_web."
+  },
+  {
+    "title": "When Search Becomes Memory: Turning Robot Design Trials into Transferable Skills",
+    "original_title": "When Search Becomes Memory: Turning Robot Design Trials into Transferable Skills",
+    "link": "https://arxiv.org/abs/2605.25832",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.25832v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used as proposal generators for evolutionary robot design, yet most loops remain memoryless: simulator results shape the next population but are not preserved as reusable design knowledge. We present Auto-Robotist, a self-evolving LLM agent that distills morphology-search traces into an explicit natural-language skill library. Each skill stores a structural archetype, evidence-grounded positive and negative rules, and the evaluated designs that support them, making design memory inspectable rather than implicit in a population. During search, the agent retrieves skills to condition LLM edits of elite bodies while retaining a Genetic Algorithm (GA) mutation path for exploration; after evaluation, it updates the library through Add, Diagnose, and Merge. Across seven EvoGym tasks spanning locomotion, traversal, and object interaction, Auto-Robotist improves cold-start 5x5 search and transfers learned skills to 10x10 design spaces, where reference-conditioned transfer outperforms GA on every task. These results suggest that LLM agents can convert expensive physical evaluations into reusable, auditable design principles. Our code will be released upon acceptance."
+  },
+  {
+    "title": "RePlan-Bot: Multi-Level Replanning for Embodied Instruction Following",
+    "original_title": "RePlan-Bot: Multi-Level Replanning for Embodied Instruction Following",
+    "link": "https://arxiv.org/abs/2605.25851",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.25851v1 Announce Type: new \nAbstract: Embodied instruction following (EIF) requires agents to understand and execute complex natural language commands within interactive 3D environments. Despite recent advances, existing methods often fail in long-horizon planning and handling irreversible state changes, resulting in low task success rates. To address these challenges, we introduce RePlan-Bot, a novel EIF agent that performs multi-level, continuous replanning throughout task execution. RePlan-Bot integrates a high-level LLM-based auditor for dynamic sub-goal adjustments guided by environmental feedback, a commonsense-guided search mechanism based on a multi-layered instance map for precise and structured object localization, and a lightweight ViT-based corrector to preemptively fix risky low-level actions. Evaluated on the ALFRED benchmark, RePlan-Bot achieves state-of-the-art performance in both seen and unseen environments, demonstrating superior adaptability and reliability."
+  },
+  {
+    "title": "WideDepth: Millimeter-Accurate Benchmark for Fisheye Depth Estimation",
+    "original_title": "WideDepth: Millimeter-Accurate Benchmark for Fisheye Depth Estimation",
+    "link": "https://arxiv.org/abs/2605.24074",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.24074v1 Announce Type: cross \nAbstract: Fisheye cameras are increasingly adopted in robotics for near-field manipulation, navigation, and immersive perception, yet indoor depth benchmarks with accurate ground truth are still missing. To address this, we introduce WideDepth - the first indoor dataset for fisheye depth estimation, featuring 101 scenes containing 5K high-resolution stereo pairs labeled with millimeter-level ground truth depth and disparity. Our dataset also includes paired pinhole and fisheye samples across varying fields of view and baselines in both horizontal and vertical stereo setups. We further propose a method to adapt pinhole-trained stereo models to fisheye images and introduce a novel stereo fisheye image generation pipeline based on high-resolution LiDAR scans. Leveraging these methods, we thoroughly evaluate state-of-the-art monocular depth, stereo matching, and depth completion models on our benchmark. Additionally, we provide 18K LiDAR-derived sparse depth training samples, achieving up to a 62% performance boost on fisheye data when fine-tuning pinhole-based stereo models. In summary, the high precision and versatility of our benchmark set a strong foundation for advancing research in fisheye depth estimation and robotics perception. Project page: https://ilyaind.github.io/WideDepth"
+  },
+  {
+    "title": "Neuromorphic LiDAR-based Bird's Eye View Object Detection using Energy-efficient Spiking Neural Networks",
+    "original_title": "Neuromorphic LiDAR-based Bird's Eye View Object Detection using Energy-efficient Spiking Neural Networks",
+    "link": "https://arxiv.org/abs/2605.25293",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.25293v1 Announce Type: cross \nAbstract: Autonomous driving perception demands accurate and efficient processing of three-dimensional sensor data under strict power constraints. Traditional convolutional neural networks achieve strong detection accuracy but are computationally intensive, limiting their suitability for deployment on resource-constrained neuromorphic platforms. Spiking neural networks offer a compelling alternative through event-driven sparse computation, yet their application to complex real-world perception tasks such as three-dimensional object detection remains limited. In this work, we propose an end-to-end spiking encoder-decoder network for object detection in bird's eye view representations of LiDAR point clouds, trained using surrogate gradient backpropagation. We train two variants: a membrane potential variant that reads continuous neuron state at the output stage for maximum accuracy, achieving $92.05$/$87.04$/$86.51$ AP at $\\mathrm{IoU}\\!=\\!0.5$ (Easy/Moderate/Hard), and, a fully binary spiking variant that operates exclusively on spike trains at every layer for direct neuromorphic deployment. We evaluate four input spike encoding strategies and demonstrate that allowing the network to learn spike representations directly from data outperforms hand-crafted Poisson, latency, and z-axis encoding schemes on the KITTI benchmark, where sequential frames are unavailable and the BEV input is presented repeatedly across timesteps as a proxy for temporal streaming. A block-wise energy analysis demonstrates a $3.33\\times$ reduction in synaptic operation energy over an equivalent CNN under conservative loop-based operation. Together, these results demonstrate the viability of spiking neural networks for accurate and energy-efficient neuromorphic perception in autonomous driving."
+  },
+  {
+    "title": "MIND: Multi-Scale Intent Diffusion for Text-Driven Physics-Based Humanoid Control",
+    "original_title": "MIND: Multi-Scale Intent Diffusion for Text-Driven Physics-Based Humanoid Control",
+    "link": "https://arxiv.org/abs/2605.26006",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.26006v1 Announce Type: cross \nAbstract: Enabling physics-based humanoids to execute diverse behaviors from high-level textual commands remains a significant challenge. Existing methods typically follow either a two-stage paradigm that combines kinematic motion generation with physics-based tracking, or an end-to-end imitation-learning paradigm that directly generates actions from text. However, the former suffers from the inherent domain shift between kinematic generation and physics-based tracking, while the latter struggles with the substantial modality gap between textual commands and low-level actions, limiting effective semantic alignment. Notably, humanoid states encode rich motion dynamics that are more semantically aligned with textual descriptions than low-level actions, making them a natural basis for deriving behavioral intent. Building upon this insight, we propose MIND, a novel end-to-end diffusion framework for text-driven physics-based humanoid control that leverages behavioral intent as a semantic bridge between textual commands and low-level actions. At its core, MIND introduces a multi-scale intent diffusion mechanism, where a holistic intent predictor captures global behavioral dynamics to guide overall behavior synthesis, while an immediate intent predictor provides step-wise, fine-grained signals for local behavior refinement at each diffusion step. This hierarchical intent formulation imposes a structured inductive bias for humanoid control, improving semantic alignment and behavioral naturalness. Furthermore, MIND encodes humanoid states into a latent space to enable more effective semantic intent modeling. Extensive experiments demonstrate that MIND outperforms existing methods and synthesizes coherent, physically plausible, and semantically aligned humanoid behaviors from text commands. Our code will be released to facilitate future research."
   },
   {
     "title": "Unitree Robotics IPO Review Approaches, Shoucheng Holdings Robot Assets Poised for Valuation Re-rating - TradingView",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중국은 4개월 간격으로 새로운 로봇 모델을 출시할 계획임. 이를 통해 인도적이고 인간적인 로봇을 개발하여 세계의 관심을 끌려고 한다.\n\n(Note: I followed the instruction to translate the title, summarize the content in 2-3 concise Korean sentences, and maintain the specified tone and style.)"
-  },
-  {
-    "title": "9880.HK",
-    "original_title": "Ubtech Robotics Corp Ltd (9880.HK) stock price, news, quote and history - Yahoo Finance UK",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5lWVoyVDVCLUVvdms3QlZDY1d2dDhmOG4xQ2FoUWVfZkZXNjZ1Z1hVZjhHWmdWRmdjSGtsV0tpT3FlYmV2X2p2WWFYQ18yWGxKSXBqbVF3?oc=5",
-    "date": "2026-04-02 08:08",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Ubtech 로봇스텝프스포트프리서티뉴스콴티과하이스트리임."
-  },
-  {
-    "title": "LocaXion 세계 최초 RTLS 통합자",
-    "original_title": "Why the World’s First Pure-Play RTLS Integrator, LocaXion, Chooses Redpoint When it Comes to Forklift Safety",
-    "link": "https://roboticsandautomationnews.com/2026/04/02/why-the-worlds-first-pure-play-rtls-integrator-locaxion-chooses-redpoint-when-it-comes-to-forklift-safety/100348/",
-    "date": "2026-04-02 07:42",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "RTLS(RTLS는 indoors 또는 outdoors에서 자산, 장비 또는 사람을 정밀하게 식별, 추적 및 관리하는 무선 기술을 의미) 안정성 GRADE RTLS를 선택한 LocaXion CEO Viren Mathuria와 Redpoint CEO Chunjie Duan의 대화 결과, 안전한 RTLS 구축을 위한 구조, 정확도 요구 사항 등에 대한 주요 내용이 공개됨."
-  },
-  {
-    "title": "로봇 태스크에 대한 일반적밀상 밀상 보상을 제안함",
-    "original_title": "Generalizable Dense Reward for Long-Horizon Robotic Tasks",
-    "link": "https://arxiv.org/abs/2604.00055",
-    "date": "2026-04-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 기본 정책들은 주로 대규모 표범 학습을 통해 훈련되나 이는 종횡 방향 태스크에서 분포 변화와 오류累집으로 인해 어려움을 겪는 경우도 있다. 이러한 모델들은 강화 학습(rl)을 통해 fine-tuning이 가능하나 다양한 태스크에 대한 작동은 수작업 보상 엔지니어링이 필요하다. 우리는 VLLR, 밀상 보상을 결합하는 프레임워크를 제안하는데, 이를 구성하는 것은 LLMs와 VLMs의 부가적 보상 및 정책 자체의 확신에서부터다. VLLR는 LLMs를 사용하여 태스크를 분해하고 VLMs를 사용하여 진행을 추정해 주로 열화 기간을 갖게 하는데, 이로써 전체 훈련 중인 비용을 줄이는 데 도움이 된다; 그리고 확신은 PPO fine-tuning 전반에 걸쳐 각 단계당 내부 지침을 제공한다. 절단 연구에서는 교차적 이점이 있음을 보여준다: VLM-based value initialization은 태스크 완성 효율성을 높이며, 확신은 특히 분포 외의 태스크에서 성공률을 높이는 데 도움이 된다. CHORES 벤치마크 covering mobile manipulation and navigation에서 VLLR는 56% 절대 성공률 증가를 달성하며, in-distribution 태스크에서는 RL fine-tuning method보다 5% 증가, out-of-distribution 태스크에서는 $10\\%$ 증가를 달성하는데, 이는 수작업 보상 엔지니어링이 필요하지 않다. 추가 시각화는 https://silongyong.github.io/vllr_project_page/에서 찾을 수 있다."
-  },
-  {
-    "title": "MRReP: Mixed Reality-based Hand-drawn Reference Path Editing Interface for Mobile Robot Navigation",
-    "original_title": "MRReP: Mixed Reality-based Hand-drawn Reference Path Editing Interface for Mobile Robot Navigation",
-    "link": "https://arxiv.org/abs/2604.00059",
-    "date": "2026-04-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "자율移動로봇이 실내 환경에서 사람과 공유할 때 인간 공간 의도에 기반한 경로를 필요로 하는데, 일반적인 경로 계획자는 지질 비용 최적화에만 초점을 맞추어 사람이 직접 경로를 지정하는 지원을 제한적으로 제공한다. 이 논문은 MRReP를 소개하는데, 사용자가 손가락으로 실제 바닥 위에서 Hand-drawn Reference Path(HRP)를 그리는 Mixed Reality-based 인터페이스를 개발하였다. 그린 HRP는 로봇 경로 계획자에 통합하여 사용자-specified 점 시퀀스를 글로벌 경로로 변환하여 자율 이동을 가능하게 하는 것이다. 우리는 MRReP를 2D 기본 인터페이스와 대조하는 within-subject 실험에서 평가하였다. 결과적으로 MRReP가 경로 지정 정확도, 사용성, 과부하 정도를 개선하고 실제 환경에서 더 안정적인 경로를 설계할 수 있음을 보였다."
-  },
-  {
-    "title": "DreamControl-v2: Autonoimous Humanoid Skills Development via Trainable Guided Diffusion Priors",
-    "original_title": "DreamControl-v2: Simpler and Scalable Autonomous Humanoid Skills via Trainable Guided Diffusion Priors",
-    "link": "https://arxiv.org/abs/2604.00202",
-    "date": "2026-04-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 로보틱스 연구팀이 개발한 DreamControl-v2는 autonomy를 위해 설계된 humanoid robot의 manipulation skill을 개선하는 새로운 프레임워크를 제안함. 이 프레임워크는 trainable guided diffusion prior를 사용하여 RL 정책을 훈련하고, 다양한 human과 robot 데이터셋을 하나의 unified embodiment space에 통합하여 wider range of skills을 캡처할 수 있는 기능을 추가함."
-  },
-  {
-    "title": "Humanoid Navigation Learning System 공개됨",
-    "original_title": "Learning Humanoid Navigation from Human Data",
-    "link": "https://arxiv.org/abs/2604.00416",
-    "date": "2026-04-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "한인들이 걷는 데이터 5시간을 사용하여 초보적인 환경에서 로봇이 이동할 수 있는 시스템을 제안합니다. 이 시스템은 과거 траектор리의 조건하에 가능한 미래 траектор리를 예측하는 diffusion 모델, 360도 시각 메모리, video feature를 결합하여 액러런스 cues를 캡처하고, hybrid sampling scheme를 사용하여 실시간 추론을 수행합니다. 이 시스템은 실내와 실외 환경에서 최적의 성능을 나타내어 door waiting, crowd navigation, glass wall avoidance 등의 행동을 자연적으로 얻습니다."
-  },
-  {
-    "title": "에너지 효율적 4족 로봇의 행보 지원을 위한 물리적 모방학 파이프라인",
-    "original_title": "A Physical Imitation Learning Pipeline for Energy-Efficient Quadruped Locomotion Assisted by Parallel Elastic Joint",
-    "link": "https://arxiv.org/abs/2604.00611",
-    "date": "2026-04-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "한국 과학기술연구소가 발표한 논문 \"Physical Imitation Learning Pipeline for Energy-Efficient Quadruped Locomotion Assisted by Parallel Elastic Joint\"에서는 4족 로봇의 에너지 효율적인 행보를 지원하기 위해 새로운 물리적 모방학 방식을 개발하였다. 이를 통해 87%의 메커니컬 파워를 평평한 지형에서, 18%의 메커니컬 파워를 험난한 지형에서 병진을 지원할 수 있게 되었다."
-  },
-  {
-    "title": "SoftHand Model-W: 3D-Printed Anthro robotic Hand with Integrated Wrist && Carpal Tunnel",
-    "original_title": "SoftHand Model-W: A 3D-Printed, Anthropomorphic, Underactuated Robot Hand with Integrated Wrist and Carpal Tunnel",
-    "link": "https://arxiv.org/abs/2604.00738",
-    "date": "2026-04-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한 인공 손인 SoftHand Model-W에 대하여. 이 모델은 Pisa/IIT SoftHand를 기반으로 하며, 항로동 작동 mechanisms을 통합한 2차도 freedom의 tendons-driven wrist을 지니고 있다. 이러한 4개의 자유도를 통해 5개의 엄지손가락이 적극 flexion과 extension을 구현하며, 팔꿈치와腕 조합을 통해 적극 flexion/extension과 radial/ulnar deviation을 구현할 수 있다. 팔꿈치를 모티베이션한 tendon routing은Forearm에 distal motor placement을 허용하고, compact form factor를 유지하게 한다. SoftHand-W는 6축 robot arm에 부착되어 cube stacking과 in-plane disc rotation task에 대한 2개의 reorientation task를 수행하여, wrist actuation이 absent일 경우의 task time, arm joint travel, and configuration changes와 비교한 결과를 제시했다. 이 결과는 wrist을 추가하면 arm의 pose compensation movement을 줄여 task-completion time을 빠르게 하는 데 도움이 되며, pick-and-place operation도 가능하게 되었다. 전체적으로, SoftHand Model-W는 proximal degrees of freedom가 key인 versatile human-like manipulation을 달성하는 데 도움이 되며, compact design은 research and assistive setting에서 배포를 허용하게 된다."
-  },
-  {
-    "title": "How to Train your Tactile Model: Tactile Perception with Multi-fingered Robot Hands",
-    "original_title": "How to Train your Tactile Model: Tactile Perception with Multi-fingered Robot Hands",
-    "link": "https://arxiv.org/abs/2604.00744",
-    "date": "2026-04-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 손에 탱귤 감지 모델 훈련하는 방법: 다 지니드 로봇 손에 탱귤 인식**\n\nTacViT tactile perception model을 도입하여 새로운 센서 데이터에 일반화할 수 있습니다. 이 모델은 글로벌 자가 주의 메커니즘을 사용하여 탱귤 이미지에서 강건한 특징을 추출해 내어, 이전에 알 수 없는 센서에서도 정확한 접촉 속성 추정 가능합니다."
   }
 ]
