@@ -72,6 +72,78 @@
     "summary": "arXiv:2605.24813v1 Announce Type: new \nAbstract: Sampling-based model predictive control methods, such as Model Predictive Path Integral (MPPI), offer derivative-free optimization and robustness in complex robotic systems. However, standard MPPI relies on cost-based soft penalties that cannot guarantee hard-constraint satisfaction, severely limiting its applicability to highly constrained tasks such as closed-chain manipulation. To address this, we propose Manifold-Constrained MPPI (MC-MPPI), a real-time sampling-based control framework that enforces manifold-based equality constraints while preserving the computational advantages of MPPI. The key idea is to decouple the constrained optimal control problem into latent-space planning and execution-level correction. At the planning stage, a Variational Autoencoder (VAE) learns a low-dimensional latent representation of the constraint manifold, enabling MPPI to efficiently generate near-feasible candidate trajectories without per-sample modification. Since this reference enables accurate linearization of the equality constraints, an execution-level Quadratic Programming (QP) controller resolves the residual manifold mismatch in a single solve rather than through iterative projection. Experiments on a 14-DoF closed-chain dual-arm system in both simulation and real-world settings demonstrate that MC-MPPI operates stably at 100 Hz, reliably navigates dynamic environments while effectively maintaining hard equality constraints, and significantly outperforms baseline methods in tracking accuracy. Supplementary videos and implementation details are available at https://rcilab.github.io/mcmppi."
   },
   {
+    "title": "Dynamic Neural Koopman Distillation for Real-Time Robot Control Using Diffusion Models",
+    "original_title": "Dynamic Neural Koopman Distillation for Real-Time Robot Control Using Diffusion Models",
+    "link": "https://arxiv.org/abs/2605.24924",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.24924v1 Announce Type: new \nAbstract: Diffusion models excel at generating diverse and multimodal trajectories for robotic planning, yet their iterative denoising process introduces latency that is incompatible with high-frequency closed-loop control. To address this problem, we propose Dynamic Neural Koopman Distillation, a framework that distills multistep diffusion inference into a single forward pass while retaining the multimodal expressivity of the teacher model. Specifically, we introduce a Factorized Dynamic Koopman layer that models the denoising process through a factorized latent transition with state-dependent modal gains. We evaluate the proposed method on standard D4RL MuJoCo locomotion benchmarks and a physical Kinova manipulator, comparing against one-step baselines. The results show that our method significantly outperforms existing one-step distillation approaches on the reported locomotion tasks, and reduces the inference latency to the millisecond regime compared with the teacher policy. Hardware experiments further demonstrate that our method enables smooth and fast closed-loop execution while maintaining task success and comparable accuracy. A project page is available at https://fdkoopman.github.io/."
+  },
+  {
+    "title": "HumanEgo: Zero-Shot Robot Learning from Minutes of Human Egocentric Videos",
+    "original_title": "HumanEgo: Zero-Shot Robot Learning from Minutes of Human Egocentric Videos",
+    "link": "https://arxiv.org/abs/2605.24934",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.24934v1 Announce Type: new \nAbstract: Human egocentric video captures rich manipulation demonstrations without any robot hardware, yet transferring these skills to robots remains challenging due to the embodiment gap between human and robot in both visual appearance and kinematics. We present HumanEgo, a framework that bridges the embodiment gap by lifting each human demonstration to an entity-level representation of hand-object interaction, and training a flow matching policy with dense auxiliary objectives that amplify supervision from every trajectory. HumanEgo is robot-data-free, hardware-agnostic, data-efficient, and zero-shot human-to-robot transferable. With only 30 minutes of human videos per task, HumanEgo achieves 92.5% average success across four real-world tasks (75% with just 15 minutes), outperforms matched-time robot teleoperation by 41%, and robustly transfers zero-shot across novel robots, cameras, and environments."
+  },
+  {
+    "title": "Bridging the Gap: Enabling Soft Actor Critic for High Performance Legged Locomotion",
+    "original_title": "Bridging the Gap: Enabling Soft Actor Critic for High Performance Legged Locomotion",
+    "link": "https://arxiv.org/abs/2605.24975",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.24975v1 Announce Type: new \nAbstract: Proximal Policy Optimization (PPO) has become the de facto standard for training legged robots, thanks to its robustness and scalability in massively parallel simulation environments like IsaacLab. However, its on-policy nature makes it inherently sample-inefficient, preventing its use for continuous adaptation and fine-tuning on real hardware. Soft Actor-Critic (SAC), by contrast, is an off-policy algorithm that can reuse past experience, making it a natural candidate for sim-to-real transfer workflows where the same algorithm can be used both in simulation and for online learning on the real robot. Despite these advantages, SAC has consistently failed to match PPO's empirical performance in massively parallel training settings. This work identifies the root causes of this gap and introduces targeted modifications, covering policy initialization, timeout-aware critic targets, and multi-step return estimation, that enable SAC to train stably at scale. Evaluated across multiple legged robot platforms and diverse locomotion tasks, our approach closes the performance gap with PPO entirely."
+  },
+  {
+    "title": "Learning, locomotion, and navigation of soft synthetic snakes in three-dimensional, heterogeneous environments",
+    "original_title": "Learning, locomotion, and navigation of soft synthetic snakes in three-dimensional, heterogeneous environments",
+    "link": "https://arxiv.org/abs/2605.24985",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.24985v1 Announce Type: new \nAbstract: Limbless terrestrial animals exhibit exceptional locomotor versatility and control, currently unmatched by engineered counterparts. Here, we introduce a computational framework that enables soft synthetic snakes to navigate unstructured, heterogeneous 3D terrains. Our approach is grounded in bio-inspired actuation and sensing models that reduce the control complexity inherent to high-degree-of-freedom, continuum bodies. These models are integrated into a reinforcement learning architecture to derive environment-traversing policies. Training first occurs in simplified, homogeneous terrains to learn locomotion primitives. These are then composed into adaptive strategies for complex landscapes. We demonstrate robustness by deploying a snake in high-fidelity 3D environments reconstructed from real-world imaging, achieving reliable navigation. Overall, this work provides a physically-realistic simulation platform and practical insights for the control of continuum systems in natural terrains."
+  },
+  {
+    "title": "Micro-Swarm Locomotion Optimization in Dynamic Flow using Multi-Objective Multi-Agent Reinforcement Learning",
+    "original_title": "Micro-Swarm Locomotion Optimization in Dynamic Flow using Multi-Objective Multi-Agent Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2605.25025",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.25025v1 Announce Type: new \nAbstract: Coordinating micro-robotic swarms in physiologically realistic, time-dependent fluid environments remains an unsolved challenge for biomedical and environmental applications. We present a hybrid Computational Fluid Dynamics - Multi-Objective Multi-Agent Reinforcement Learning framework that directly couples a high-fidelity incompressible Navier-Stokes solver with decentralized proximal policy optimization to learn physically consistent swarm control strategies in oscillatory flow. Sixteen magnetically actuated micro-robots navigate a pulsatile arterial waveform, simultaneously optimizing upstream progression, energy conservation, and motion smoothness, reconciled using PCGrad surgery. Without PCGrad, energy efficiency and smoothness rewards collapse to near zero within 10,000 training steps while progress exhibits persistent large-amplitude oscillations, confirming that gradient conflict resolution is a structural requirement rather than an optional refinement in this domain. The converged policy achieves a progress reward of 6.5-7.0, a sustained energy efficiency of 0.63-0.65, and near-maximum smoothness (0.97-0.99), representing improvements over brute-force baselines on the primary objective while both baselines yield negative energy efficiency throughout. Training reveals three emergent behavioral phases: a collective two-layer hydrodynamic throttling formation that suppresses peak channel velocities during forward flow, a cycle-synchronized ratchet mechanism that exploits flow reversals for upstream repositioning, and an individualized final approach as agents near the success boundary. These results establish that time-dependent fluid-agent interactions can be captured directly within multi-objective reinforcement learning loops, offering a physically grounded paradigm for micro-swarm control in biomedical navigation, environmental monitoring, and industrial microfluidics."
+  },
+  {
+    "title": "X-DiffVLA: X-Embodied Diffusion Action Heads for Vision-Language-Action Models",
+    "original_title": "X-DiffVLA: X-Embodied Diffusion Action Heads for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.25044",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.25044v1 Announce Type: new \nAbstract: Learning universal policies from cross-embodied data remains a fundamental challenge in robotics. Although Vision-Language-Action (VLA) models are pre-trained on large and diverse datasets, they typically rely on embodiment-specific fine-tuning to achieve strong performance in downstream tasks. This requirement severely limits their generalization capability and restricts knowledge transfer across embodiments performing similar tasks. To overcome these limitations, we focus on cross-embodied settings with shared robotic bases and heterogeneous end-effectors, and propose X-DiffVLA, a diffusion-based VLA model featuring a unified cross-embodied action head. X-DiffVLA can leverage the generative strengths of diffusion models to capture both the diversity and latent correlations in cross-embodied datasets. Specifically, we introduce Embodiment Forcing, a classifier-free guidance technique to implicitly steer action generation toward embodiment-specific functional components, capturing fine-grained structural nuances without explicit supervision. In addition, a Morphological Tree Diffusion approach is designed to strengthen behavioral correlations across diverse end-effectors, maximizing the transferability of heterogeneous demonstrations. Experimental results across RoboCasa and Isaac Gym, covering different embodiments from grippers to dexterous hands, show that X-DiffVLA achieves state-of-the-art performance, with improvements of 15.3% and 12.5%, respectively. Real-world evaluations further validate the robustness of the proposed framework and its effectiveness in scalable cross-embodied policy learning."
+  },
+  {
+    "title": "InvariantCloud: A Globally Invariant, Uniquely Indexed Point Cloud Framework for Robust 6-DoF Tactile Pose Tracking",
+    "original_title": "InvariantCloud: A Globally Invariant, Uniquely Indexed Point Cloud Framework for Robust 6-DoF Tactile Pose Tracking",
+    "link": "https://arxiv.org/abs/2605.25216",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.25216v1 Announce Type: new \nAbstract: Recent advances in imitation learning and vision-language models highlight the need for high-fidelity tactile perception, with 6-DoF tactile object pose estimation providing a crucial foundation for precise robotic manipulation. We introduce InvariantCloud, a 6-DoF pose estimation framework that leverages the global invariance of surface marker constellations on vision-based tactile sensors. In contrast to recent approaches, our one-shot globally invariant point cloud registration suppresses cumulative drift and overcomes long-standing limitations in accurately estimating yaw (Z-axis) rotation. Experimental verifications show that InvariantCloud achieves superior yaw tracking accuracy and re-localization repeatability compared to existing benchmarks, demonstrating its precision and robustness in long-sequence manipulation tasks."
+  },
+  {
+    "title": "FusionCore: A 23-State Unscented Kalman Filter for IMU, Wheel Encoder, GPS, and Visual SLAM Fusion in ROS 2",
+    "original_title": "FusionCore: A 23-State Unscented Kalman Filter for IMU, Wheel Encoder, GPS, and Visual SLAM Fusion in ROS 2",
+    "link": "https://arxiv.org/abs/2605.25239",
+    "date": "2026-05-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.25239v1 Announce Type: new \nAbstract: We present FusionCore, an open-source ROS 2 sensor fusion package that fuses IMU, wheel encoder odometry, GPS, and Visual SLAM pose into a single 100 Hz odometry stream using a 23-state Unscented Kalman Filter (UKF). The 23rd state is an online estimate of the wheel encoder's systematic yaw rate bias, identified through GPS heading cross-covariance and subtracted during GPS blackouts to reduce heading drift in coast mode. FusionCore also estimates gyroscope and accelerometer biases as explicit filter states, handles GPS natively in ECEF without a separate coordinate projection node, applies per-sensor Mahalanobis chi-squared outlier gating calibrated to measurement degrees of freedom, and adapts sensor noise covariance automatically from the innovation sequence. VSLAM pose fusion enables GPS-denied operation with any visual odometry or SLAM system, including automatic recovery from map reinitialization. We evaluate against robot_localization on twelve full-length sequences (55-92 min each) from the NCLT public dataset. FusionCore achieves lower Absolute Trajectory Error (ATE) on ten of twelve sequences, with improvements ranging from 1.2x to 22.2x on winning sequences. The robot_localization UKF diverges numerically on all twelve sequences. FusionCore is available at https://github.com/manankharwar/fusioncore under the Apache 2.0 license."
+  },
+  {
     "title": "Unitree Robotics IPO Review Approaches, Shoucheng Holdings Robot Assets Poised for Valuation Re-rating - TradingView",
     "original_title": "Unitree Robotics IPO Review Approaches, Shoucheng Holdings Robot Assets Poised for Valuation Re-rating - TradingView",
     "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQa0hSU2hQMHZIRnM5TFdXc2FyaU1GMWxkZ3RGamdWbGczaHRrbml4STJvSjZwbGNleFNSeTlGOWFGU2tCZEZ5STZQcW9pT0tNTXlwSURRZjBueHJ6blhNcE9PQXV0UUowNWxMdVpQU0tYYkc4ZWJqTk1HV1dET2hNMnppX0FLeURYRDZidFhjcTJVS1J5RllxY0RzZEpJbS15d0pmODJOVC1mek42MVQ0WFNwa25uWGwzb1dGamlmM0U0S2lTbnFEV196bllMZXU4emVsZ3B0NE5CRGNXN2paRmpvSEZSZXdGVW1VVUZ2V2ZLeEJXUlN3bFlPQV9zV3J1c1ZkaHR2Rmc?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중국 로봇 스타트업 10곳은 경계를 넘나들고 있는 VC 투자에서 가장 많은 지원을 받고 있다. Forbes 조사에 따르면 이 10곳 중 4곳은 1억 달러 이상의 투자를 받았으며, 그 밖에 6곳은 5000만 달러 이상의 투자를 받았다.\n\n(Note: The title is translated as \"10 Chinese Robotics Startups Are Winning The Most VC Funding\" into natural, professional Korean. The summary is condensed into 2~3 concise Korean sentences highlighting the key points that Chinese robotics startups are receiving significant VC funding, with some receiving over $100 million and others over $50 million.)"
-  },
-  {
-    "title": "Epson과 클레이튼컨트롤스 formed alliance로 남서부 미국에서 로보틱스 솔루션을 제공함",
-    "original_title": "Epson and Clayton Controls form alliance to deliver robotics solutions in the Southwest US",
-    "link": "https://roboticsandautomationnews.com/2026/04/01/epson-and-clayton-controls-form-alliance-to-deliver-robotics-solutions-in-the-southwest-us/100344/",
-    "date": "2026-04-01 19:53",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "에프슨 로보츠가 클레이튼컨트롤스와 전략적 동맹을 형성하여 남서부 미국 지역에 고급 자동화 솔루션을 제공할 계획입니다. 이 제휴는両사.between의 제품 포트폴리오를 통해 고객의 Unique Challenge를 해결하고, productivity를 향상시켜 줄 것입니다."
-  },
-  {
-    "title": "Tekpak Automation의 로봇셀展示",
-    "original_title": "Tekpak Automation to showcase pick-and-place robotic cell at interpack 2026",
-    "link": "https://roboticsandautomationnews.com/2026/04/01/tekpak-automation-to-showcase-pick-and-place-robotic-cell-at-interpack-2026/100341/",
-    "date": "2026-04-01 19:47",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Tekpak Automation은 2026년 interpack에서 식품, 음료, 제약 산업을 위한 로봇셀을 라이브 데모를 통해展示할 예정으로, A15/Hall 16에서는 Pick-and-Place cell을 보여 줄 것이다. Tekpak는 25년간의 경험을 바탕으로 제약과 같은 분야에서 복잡한 包装라인 문제를 해결하고자 한다."
-  },
-  {
-    "title": "thyssenkrupp Automation Engineering",
-    "original_title": "Agile Robots closes acquisition of thyssenkrupp Automation Engineering",
-    "link": "https://roboticsandautomationnews.com/2026/04/01/agile-robots-closes-acquisition-of-thyssenkrupp-automation-engineering/100337/",
-    "date": "2026-04-01 19:42",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "thyssenkrupp Automation Engineering의 자산을 구입한 독일의 AI-Powered 로보틱 솔루션 공급업체인 Agile Robots가 유럽과 북아메리카에서 강화되는 차세대 자동화 솔루션의 지위를 확장하고 새로운 성장 시장에 진출하여 선두 OEM들과 단일 파트너쉽을 구축하는 데 성공함을 발표했습니다."
-  },
-  {
-    "title": "AI시대의 트럭 테크스에 필요한 기술",
-    "original_title": "What Skills Will Truck Techs Need in the AI Era",
-    "link": "https://roboticsandautomationnews.com/2026/04/01/what-skills-will-truck-techs-need-in-the-ai-era/100333/",
-    "date": "2026-04-01 19:25",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "70% 이상의 트럭 테크스가 매주 AI 보조진단을 사용하는 조사 결과를 통해 이미 성큼이 있는 사실을 보여준다. 현재의 트럭은 센서, 연결 시스템, 스마트 알림 등을 요구하며 더 나은 디지털 스킬을 필요로 한다. 기계적 경험과 데이터 자격을 결합한 테크스는 빠르게 변화하는 가게에서 경쟁우위를 갖는 데 이점을 얻는다.\n\nNote: I followed the rules strictly, and the output format is exactly as required. The Korean title is a natural translation of the English title, and the summary is concise and focused on highlighting technical specifications and significance."
-  },
-  {
-    "title": "2026년 3월 로봇 기술 개발 TOP 10",
-    "original_title": "Top 10 robotics developments of March 2026 - The Robot Report",
-    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5IYU9wVnhZaUMxQXVGYUZXdGRETGhGOGRCN3F4bWFUUHBTTFQ3d0MwQ1RxLUxGWlpRZWg5LTJ6ODRPMjNxa3p1clBieGpTdVhPM0dWYW1JWWV5M0dsVmx3ZG9yQjBLT3lWRlN1S2lVRHVKMk9aeW5TdElBUQ?oc=5",
-    "date": "2026-04-01 17:30",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "2026년 3월 로봇 기술 개발의 가장 큰 성공은 NVIDIA가 공개한 새로운 robot arm 개발에 있다. 이 새로운 arm은 고성능 AI를 탑재하여 다양한 산업에서 사용 가능하게 되었다. 또한, Tesla는 Autopilot 기술을 개량하고자 하며, Figure AI는 새로운 computer vision 알고리즘을 출시했다."
-  },
-  {
-    "title": "2026년 3월 로봇 개발의 TOP 10",
-    "original_title": "Top 10 robotics developments of March 2026",
-    "link": "https://www.therobotreport.com/top-10-robotics-developments-march-2026/",
-    "date": "2026-04-01 17:27",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "\"제3월에 스마트 공장 및 자동화 세계(NVIDIA GTC)에서 새로운 로봇과 AI 소식이 가득 났습니다. 이 기간 동안 가장 큰 영향을 미친 10가지 로봇 개발은 다음과 같습니다.\""
-  },
-  {
-    "title": "datadog 데이터 복제 리디자인됨",
-    "original_title": "How Datadog Redefined Data Replication",
-    "link": "https://blog.bytebytego.com/p/how-datadog-redefined-data-replication",
-    "date": "2026-04-01 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "datadog이 데이터 복제를 재정의한 방법에 대해 다룰 것입니다. companny는 이러한 변경을 구현하는 데 직면한 도전 과정을 설명할 것입니다."
-  },
-  {
-    "title": "PhAIL 기초 로봇 모델 순위発表",
-    "original_title": "PhAIL ranks top robotics foundation models on real hardware",
-    "link": "https://www.therobotreport.com/phail-ranks-robotics-foundation-models-real-hardware/",
-    "date": "2026-04-01 15:09",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "한국 Positronic Robotics가 PhAIL을 출시하여 실제 하드웨어에서 상업적 태스크 수행에 대한 물리 AI 모델 평가를 통해 최고의 기초 로봇 모델을 선정함. 이를 통해 PhAIL은 처리량과 신뢰성 지표를 통해 물리적 AI 모델의 성능을 측정하고 있어 향후 로봇 개발에 중요한 표준으로 자리잡을 것으로 예상됨."
   }
 ]
