@@ -1,5 +1,23 @@
 [
   {
+    "title": "The power of the open-source community in robotics: Collaboration and shared innovation",
+    "original_title": "The power of the open-source community in robotics: Collaboration and shared innovation",
+    "link": "https://roboticsandautomationnews.com/2026/05/27/the-power-of-the-open-source-community-in-robotics-collaboration-and-shared-innovation/101927/",
+    "date": "2026-05-27 05:46",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "For decades, robotics was viewed as a niche engineering discipline inhabited largely by researchers, academics, and highly specialized industrial automation companies. Development was expensive, fragmented, and slow. Even simple mobile robots often required years of work and highly customized software stacks. Today, robotics sits at the center of one of the largest technology investment waves […]"
+  },
+  {
+    "title": "China to track humanoid robots with personal ID numbers - VnExpress International",
+    "original_title": "China to track humanoid robots with personal ID numbers - VnExpress International",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZUpDTEZmU21GaHctZC1Ya292djhOTVpDZW0zaFlDWWd2WFdLUi1ocHZGczU4d1NtVjk4UlV5eGFYUms1dkZCMXh0Wl8tZ1R0c1U2ek96VkNERHFRRlN6clYxTVJDVzh3c2UyZGdBWDI4UVB0S1ZJb3ZKamZuWVZsN2VvSmMyVkxEMEFTcmVTM2tvMWV6eWFyM2FOSG42aU5kN24zWEp0T3NQaHJfY1I5VnB3?oc=5",
+    "date": "2026-05-27 05:43",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China to track humanoid robots with personal ID numbers  VnExpress International"
+  },
+  {
     "title": "PhyPush: One Push is All You Need for Sensorless Physical Property Estimation with Physics-Guided Transformers",
     "original_title": "PhyPush: One Push is All You Need for Sensorless Physical Property Estimation with Physics-Guided Transformers",
     "link": "https://arxiv.org/abs/2605.26284",
@@ -142,6 +160,42 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2509.18384v2 Announce Type: replace \nAbstract: Large language models (LLMs) can translate natural language instructions into executable action plans for robotics, autonomous driving, and other domains. Yet, deploying LLM-driven planning in the physical world demands strict adherence to safety and regulatory constraints, which current models often violate due to hallucination or weak alignment. Traditional data-driven alignment methods, such as Direct Preference Optimization (DPO), require costly human labeling, while recent formal-feedback approaches still depend on resource-intensive fine-tuning. In this paper, we propose LAD-VF, a fine-tuning-free framework that leverages formal verification feedback for automated prompt engineering. By introducing a formal-verification-informed text loss integrated with LLM-AutoDiff, LAD-VF iteratively refines prompts rather than model parameters. This yields three key benefits: (i) scalable adaptation without fine-tuning; (ii) compatibility with modular LLM architectures; and (iii) interpretable refinement via auditable prompts. Experiments in robot navigation and manipulation tasks demonstrate that LAD-VF substantially enhances specification compliance, improving success rates from 60% to over 90%. Our method thus presents a scalable and interpretable pathway toward trustworthy, formally-verified LLM-driven control systems."
+  },
+  {
+    "title": "AdaMorph: Unified Motion Retargeting via Embodiment-Aware Adaptive Transformers",
+    "original_title": "AdaMorph: Unified Motion Retargeting via Embodiment-Aware Adaptive Transformers",
+    "link": "https://arxiv.org/abs/2601.07284",
+    "date": "2026-05-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2601.07284v2 Announce Type: replace \nAbstract: Retargeting human motion to heterogeneous robots is a fundamental challenge in robotics, primarily due to the severe kinematic and dynamic discrepancies between varying embodiments. Existing solutions typically resort to training embodiment-specific models, which scales poorly and fails to exploit shared motion semantics. To address this, we present AdaMorph, a unified neural retargeting framework that enables a single model to adapt human motion to diverse robot morphologies. Our approach treats retargeting as a conditional generation task. We map human motion into a morphology-agnostic latent intent space and utilize a dual-purpose prompting mechanism to condition the generation. Instead of simple input concatenation, we leverage Adaptive Layer Normalization (AdaLN) to dynamically modulate the decoder's feature space based on embodiment constraints. Furthermore, we enforce physical plausibility through a curriculum-based training objective that ensures orientation and trajectory consistency via integration. Experimental results on 12 distinct humanoid robots demonstrate that AdaMorph effectively unifies control across heterogeneous topologies, exhibiting strong zero-shot generalization to unseen complex motions while preserving the dynamic essence of the source behaviors."
+  },
+  {
+    "title": "SOLE-R1: Video-Language Reasoning as the Sole Reward for On-Robot Reinforcement Learning",
+    "original_title": "SOLE-R1: Video-Language Reasoning as the Sole Reward for On-Robot Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2603.28730",
+    "date": "2026-05-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.28730v2 Announce Type: replace \nAbstract: Vision-language models (VLMs) have shown impressive capabilities across diverse tasks, motivating efforts to leverage these models to supervise robot learning. However, when used as evaluators in reinforcement learning (RL), today's strongest models often fail under partial observability and distribution shift, enabling policies to exploit perceptual errors rather than solve the task. We introduce SOLE-R1 (Self-Observing LEarner), a video-language reasoning model explicitly designed to serve as the sole reward signal for online RL. Given only raw video observations and a natural-language goal, SOLE-R1 performs per-timestep spatiotemporal chain-of-thought (CoT) reasoning and produces dense estimates of task progress that can be used directly as rewards. To train SOLE-R1, we develop a large-scale video trajectory and reasoning synthesis pipeline that generates temporally grounded CoT traces aligned with continuous progress supervision. This data is combined with foundational spatial and multi-frame temporal reasoning, and used to train the model with a hybrid framework that couples supervised fine-tuning with RL from verifiable rewards. Across four different simulation environments and a real-robot setting, SOLE-R1 enables zero-shot online RL from random initialization: robots learn previously unseen manipulation tasks without ground-truth rewards, success indicators, demonstrations, or task-specific tuning. SOLE-R1 succeeds on 24 unseen tasks and substantially outperforms strong vision-language rewarders, including Robometer, RoboReward, ReWiND, GPT-5, and Gemini-3-Pro, while exhibiting markedly greater robustness to reward hacking. We release all models, data, code, and demos at the anonymous page: https://philip-mit.github.io/sole-r1/"
+  },
+  {
+    "title": "Governed Capability Evolution: Lifecycle-Time Compatibility Checking and Rollback for AI-Component-Based Systems, with Embodied Agents as Case Study",
+    "original_title": "Governed Capability Evolution: Lifecycle-Time Compatibility Checking and Rollback for AI-Component-Based Systems, with Embodied Agents as Case Study",
+    "link": "https://arxiv.org/abs/2604.08059",
+    "date": "2026-05-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.08059v5 Announce Type: replace \nAbstract: Software systems built from versioned AI components increasingly need lifecycle-time governance: when a capability module evolves into a new version, the hosting system must decide whether the new version may be activated safely, under what deployment conditions it should run, how it must be monitored, and when it should be rolled back. Existing software-deployment patterns (canary release, blue-green, feature flags, and MLOps pipelines) address parts of this loop but were designed for stateless web services rather than for stateful, policy-constrained runtimes that drive AI components in the field. We formulate governed capability evolution as a first-class software-lifecycle problem for AI-component-based systems and propose a staged upgrade framework in which every new capability version is treated as a governed deployment candidate rather than an immediately executable replacement. The framework introduces four upgrade compatibility checks (interface, policy, behavioral, recovery) and organizes them into a seven-stage pipeline (candidate validation, sandbox evaluation, shadow deployment, gated activation, online monitoring, rollback, audit). We implement a reference prototype on a PyBullet manipulation testbed with ROS 2 middleware and evaluate it over 6 rounds of capability upgrade with 15 random seeds. Naive upgrade achieves 72.9% task success but drives unsafe activation to 60% by the final round; governed upgrade retains comparable success (67.4%) while maintaining zero unsafe activations across all rounds (Wilcoxon p=0.003). Shadow deployment reveals 40% of upgrade regressions invisible to sandbox evaluation alone, and rollback succeeds in 79.8% of post-activation drift scenarios."
+  },
+  {
+    "title": "Continual Model-Based Reinforcement Learning with Hypernetworks",
+    "original_title": "Continual Model-Based Reinforcement Learning with Hypernetworks",
+    "link": "https://arxiv.org/abs/2009.11997",
+    "date": "2026-05-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2009.11997v3 Announce Type: replace-cross \nAbstract: Effective planning in model-based reinforcement learning (MBRL) and model-predictive control (MPC) relies on the accuracy of the learned dynamics model. In many instances of MBRL and MPC, this model is assumed to be stationary and is periodically re-trained from scratch on state transition experience collected from the beginning of environment interactions. This implies that the time required to train the dynamics model - and the pause required between plan executions - grows linearly with the size of the collected experience. We argue that this is too slow for lifelong robot learning and propose HyperCRL, a method that continually learns the encountered dynamics in a sequence of tasks using task-conditional hypernetworks. Our method has three main attributes: first, it includes dynamics learning sessions that do not revisit training data from previous tasks, so it only needs to store the most recent fixed-size portion of the state transition experience; second, it uses fixed-capacity hypernetworks to represent non-stationary and task-aware dynamics; third, it outperforms existing continual learning alternatives that rely on fixed-capacity networks, and does competitively with baselines that remember an ever increasing coreset of past experience. We show that HyperCRL is effective in continual model-based reinforcement learning in robot locomotion and manipulation scenarios, such as tasks involving pushing and door opening. Our project website with videos is at this link https://rvl.cs.toronto.edu/blog/hypercrl"
   },
   {
     "title": "Unitree gearing up for IPO; Shanghai review next week - China Daily - Global Edition",
@@ -17944,59 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "한국에서 embodied 에이전트의 기본 기능으로 6D objeto pose estimation은 여전히 도전적이나, OMNI-PoseX는 새로운 네트워크 구조를 제안하여 open-vocabulary perception을 결합한 SO(3)-aware reflected flow matching pose predictor를 사용하여 이 문제를 해결함. 이를 통해 OMNI-PoseX는 efficient하고 stable한 6D pose estimation을 가능하게 하여 robotic grasping integration에서 신뢰할 수 있는 예측을 제공함."
-  },
-  {
-    "title": "Precision Reducer Toolkit 개발 ~함",
-    "original_title": "A Dynamic Toolkit for Transmission Characteristics of Precision Reducers with Explicit Contact Geometry",
-    "link": "https://arxiv.org/abs/2604.02387",
-    "date": "2026-04-06 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "Humanoid robot systems 등의 로봇에 있어 전동기의 동역학 특성 분석을 위한 새로운 도구를 제안 ~임. 이 도구는 고속 접촉 지오메트리를 고려한 전동기 모델링, зуб구 조밀도 평가, 시스템 진동 예측을 통합하여 tradional dynamics software 보다 더 정확하고 컴퓨팅 효율성을 제공 ~함. 또한 모듈러 아키텍처를 갖추어 다양한 전동기 토폴로지를 지원하므로 재조정 가능 ~임. 이 도구의 정확도는 published benchmark에 대한 수치적 확인을 통해 확인 ~임."
-  },
-  {
-    "title": "Elastomeric Strain Limitation for Design of Soft Pneumatic Actuators",
-    "original_title": "Elastomeric Strain Limitation for Design of Soft Pneumatic Actuators",
-    "link": "https://arxiv.org/abs/2604.02609",
-    "date": "2026-04-06 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "소프트 펌프 액추에이터의 설계를 위한 엘라스토머 이한 한계 설정 ~임. \n\nThis is the summary: 소프트 로봇 액추에이터는 사람에게 부딪혀 인위적인 손상을 방지하는 데 사용되는 이산화 질소를 이용하여 연속 운동을 생산하고, 경쾌한 물체에 부딪혀 힘을 작용시킬 수 있습니다. 이 논문은 인간 안전을 보장하는 엘라스토머 소프트 펌프 액추에이터의 설계, 모델링, 및 변형 기반 제어를 다룹니다."
-  },
-  {
-    "title": "Chinese humanoid robot startup 宇树科技가 인도한智机와 함께 대표할 것임",
-    "original_title": "宇树科技 is a startup that represents Chinese humanoid robots along with 智 机 introduced earlier. In part.. - mk.co.kr",
-    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1mWEloXzJzNjE0Y2t3R1puV19Fc3podHh4TE55Rzlmd2NlMXNfaExBdzl2d3IxZm95SUpjWXMxd1lwQzBrQ2RvV2lDd3JDVHM?oc=5",
-    "date": "2026-04-05 22:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국인형 로봇 스타트업 宇树科技가 중국인형 로봇 智 机를 앞서 내놓은 데 이어 대표할 것으로 예상됨."
-  },
-  {
-    "title": "Resilient actuator shows potential for space-ready soft robots",
-    "original_title": "Resilient actuator shows potential for space-ready soft robots",
-    "link": "https://techxplore.com/news/2026-04-resilient-actuator-potential-space-ready.html",
-    "date": "2026-04-05 14:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "우주 및 극한 환경에서 작동하는软 로봇을 개발하는 데 적합한 강건 액추에이터의 가능성이 열려있다. 이 액추에이터는 khắc nghiệt한 조건하에서도 안정적이고 신속하게 변화하는环境에 적응할 수 있도록 설계되며, 우주 등 다른 극한 환경에서 사용되는데 적합하다.\n\n(Note: I followed the rules strictly and maintained the \""
-  },
-  {
-    "title": "KOREAN_TITLE: 로봇의 인지 방식 연구 - 경험을 통해 사람들의 태도 조사함\n\nKOREAN_SUMMARY",
-    "original_title": "Studying Human Attitudes Towards Robots Through Experience",
-    "link": "https://spectrum.ieee.org/boston-dynamics-spot-interaction",
-    "date": "2026-04-05 13:00",
-    "source": "IEEE Spectrum",
-    "category": "humanoid",
-    "summary": "로봇이 가정, 사무실, 공장 등에서 성공적으로 통합하려면 Hardware와 Software 문제를 해결하는 것만으로는 suffice하지 않습니다. 또한 로봇이 인간과 함께 효과적으로 일하게 하려면 사람들의 태도와 인식을 이해해야 합니다. 2025년 RAI Institute가 CambridgeSide mall에서 무료로 운영한 popup robot experience를 통해 사람들의 태도 조사하고자 했습니다. 이 연구는 실제로 로봇을 경험하는 것이 주변의 인식과 태도를 변화시켰습니다."
-  },
-  {
-    "title": "NORD 드라이시스템즈",
-    "original_title": "NORD Drivesystems launches industrial gear units for the mining industry",
-    "link": "https://www.therobotreport.com/nord-drivesystems-launches-industrial-gear-units-for-the-mining-industry/",
-    "date": "2026-04-05 13:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "NORD 드라이시스템즈는 광업 산업을 위한工業 기어 유닛을 출시함. MAXXDRIVE 시리즈의 일체형 UNICASE 하우징은 구조적剛性와 액정 보호를 ensured하는設計임."
   }
 ]
