@@ -72,6 +72,78 @@
     "summary": "arXiv:2605.26820v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models provide a promising foundation for general-purpose robotics. However, their successful deployment in real-world scenarios requires the ability to continually acquire new skills while retaining previously learned behaviors. While pioneering research has studied the continual learning of VLA models in narrowly simulated environments, this challenge remains largely unexplored under realistic conditions. To address this limitation, we construct a real-world continual learning dataset comprising four sequential manipulation tasks, spanning rigid-object pick-and-place, contact-rich pressing, and deformable-object folding. Using this dataset, we conduct comprehensive experiments and find that VLA models suffer significant catastrophic forgetting when continually learning from heterogeneous real-world demonstrations. We then systematically evaluate experience replay and uncover key implementation factors that govern its success. In summary, this work provides the first empirical study of real-world continual VLA learning and offers practical guidance for deploying long-lived robot policies."
   },
   {
+    "title": "Object Pose and Shape Estimation for Grasping: Does it Work?",
+    "original_title": "Object Pose and Shape Estimation for Grasping: Does it Work?",
+    "link": "https://arxiv.org/abs/2605.26944",
+    "date": "2026-05-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.26944v1 Announce Type: new \nAbstract: The problem of object pose and shape estimation has seen key advancements lately. Encoder-decoder (e.g., SAM3D, LRM, CRISP) and diffusion-based models (e.g., InstantMesh, Zero123, SceneComplete) have shown category-agnostic shape encoding capacity and open-set generalizability. In this work, we ask the question: Are the object pose and shape estimation methods mature enough, such that when used with antipodal grasp sampling, can outperform the end-to-end grasp synthesis methods? We explore this question in detail by scoping our study to parallel jaw grippers, 7-DoF grasps, and single-view RGB(-D) image as input. We implement and compare a state-of-the-art, end-to-end grasp synthesis method and three modular methods, which first estimate the object pose and shape for all objects in the scene, and generate grasps using antipodal sampling. We observe that the modular methods outperform the end-to-end method in all our experiments. The modular methods are able to synthesize plenty of grasps, even for small objects, where the end-to-end methods fail. The effectiveness of the modular methods is contingent on the accuracy of the pose and shape estimation, and suffers partial degradation in cluttered scenes - a limitation of the existing pose and shape estimation methods. We also analyze the failure modes and run-times for the three modular methods, which use two different ways of object pose and shape estimation: one based on an encoder-decoder model, while another a diffusion model. Finally, we demonstrate that the single-view object pose and shape estimation methods can be augmented with vision-language models to yield language-conditioned grasps from just single-view RGB-D image as input. We notice comparable performance to the state-of-the-art LERF-TOGO baseline."
+  },
+  {
+    "title": "Towards Shared Embodied Intelligence in Humanoid Robots through Optimization Development and Testing of the Human Aware ergoCub Robot",
+    "original_title": "Towards Shared Embodied Intelligence in Humanoid Robots through Optimization Development and Testing of the Human Aware ergoCub Robot",
+    "link": "https://arxiv.org/abs/2605.26991",
+    "date": "2026-05-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.26991v1 Announce Type: new \nAbstract: Collaboration is central to human behavior, enabling tasks beyond individual capability. This ability arises from coordinating actions through internal representations of others, a concept known as shared intelligence. Additionally, humans are characterized by physical bodies and cognitive abilities that are optimized in response to their environment, a phenomenon referred to as embodied cognition. Designing humanoid robots that collaborate safely and effectively with people requires unifying these principles. Here we propose an architecture that integrates shared intelligence and embodied cognition to enable robots to physically collaborate with humans, where robot hardware and control are optimized for human metrics, using representations of the human body and motion intelligence. The ultimate goal is to achieve a form of shared embodied intelligence. Specifically, our architecture optimizes robot hardware and physical intelligence parameters with respect to human ergonomic metrics. This is accomplished by modeling human-robot interaction as a function of hardware configurations and embedding human models into the robot's physical intelligence. As a concrete implementation, we present the humanoid robot ergoCub, whose morphology and control have been optimized for collaborative tasks with humans. Our approach provides a framework for designing humanoid robots that prioritize human ergonomics at both the hardware and physical intelligence levels, with applications in industrial and assistive robotics."
+  },
+  {
+    "title": "Learning to Balance Motor Thermal Safety and Quadrupedal Locomotion Performance with Residual Policy",
+    "original_title": "Learning to Balance Motor Thermal Safety and Quadrupedal Locomotion Performance with Residual Policy",
+    "link": "https://arxiv.org/abs/2605.27046",
+    "date": "2026-05-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.27046v1 Announce Type: new \nAbstract: Motor thermal management is often overlooked in the context of electrically-actuated robots, particularly legged robots, but motor overheating is a key factor that limits long-duration locomotion especially under payload conditions. This paper integrates a whole-body thermal model of a quadruped robot into the reinforcement learning pipeline to update motor temperatures, and proposes a two-stage training framework for motor thermal management. In this framework, a nominal policy is first pre-trained as a locomotion baseline capable of traversing diverse terrains. A residual policy is then trained on top of the nominal policy to provide corrective actions based on the robot's thermal state, ensuring high performance under low-temperature conditions and preventing motor overheating under high-temperature conditions. Simulation results demonstrate that the proposed policy achieves an effective balance between motor thermal safety and locomotion performance. Real-world experiments on a Unitree A1 quadruped robot further validate the approach: under a 3 kg payload, the robot achieves stable locomotion across multiple terrains for over 13 minutes, while the nominal policy alone leads to motor overheating in about 5 minutes."
+  },
+  {
+    "title": "VR-DAgger: Immersive VR for Dexterous Data Collection and Uncertainty-Guided On-Policy Correction",
+    "original_title": "VR-DAgger: Immersive VR for Dexterous Data Collection and Uncertainty-Guided On-Policy Correction",
+    "link": "https://arxiv.org/abs/2605.27114",
+    "date": "2026-05-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.27114v1 Announce Type: new \nAbstract: Learning from demonstrations is effective for robotic manipulation, but collecting sufficient task-specific data remains a major bottleneck. Under distribution shift, small errors compound, performance degrades, and expert time is often spent on redundant, low-value corrections instead of the few critical failure cases."
+  },
+  {
+    "title": "FineVLA: Fine-Grained Instruction Alignment for Steerable Vision-Language-Action Policies",
+    "original_title": "FineVLA: Fine-Grained Instruction Alignment for Steerable Vision-Language-Action Policies",
+    "link": "https://arxiv.org/abs/2605.27284",
+    "date": "2026-05-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.27284v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models are increasingly expected to not only complete robot tasks, but also follow human instructions about how those tasks should be executed. However, existing robot datasets usually pair trajectories with coarse goal-level language, leaving execution-critical details such as active arm, approach direction, and contact region unspecified. This limits steerable policy learning and robotic video understanding. We introduce FineVLA, an open framework for action-aligned fine-grained VLA supervision. The framework includes: (1) a data construction tool that unifies 972,247 trajectories across 85K tasks from 10 open-source robot datasets and builds FineVLA-Data, a human-verified dataset of 47,159 fine-grained trajectories; (2) a held-out benchmark with 500 videos, 10,816 atomic facts, and 1,030 VQA questions; (3) a robotics-specialized VLM annotator for scalable fine-grained annotation; and (4) a steerable VLA policy trained with controlled mixtures of fine-grained and raw goal-level instructions. Our experiments yield three findings. First, fine-grained supervision does not sacrifice goal-level success: FG-only improves over Raw-only by +1.4 to +8.1 success-rate points across settings. Second, fine-grained and raw instructions are complementary, following a consistent inverted-U trend peaking at FG:Raw = 1:2 to 1:1. The best mixed setting reaches 86.8%/82.5% in RoboTwin simulation and 62.7/100 in real-world dual-arm manipulation (vs. 49.9 Raw-only). Third, fine-grained supervision improves steerable control: the largest real-world gains appear on pose (+23), color (+18), and approach direction (+18)--factors where goal-level instructions provide no guidance. Overall, fine-grained language should augment goal-level instructions: specifying how to execute alongside what to achieve. Project page: https://finevla.xlang.ai/"
+  },
+  {
+    "title": "Breaking the Epistemic Trap: Active Perception Under Compound Uncertainty",
+    "original_title": "Breaking the Epistemic Trap: Active Perception Under Compound Uncertainty",
+    "link": "https://arxiv.org/abs/2605.26627",
+    "date": "2026-05-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.26627v1 Announce Type: cross \nAbstract: Deploying reinforcement learning in safety critical domains, from autonomous vehicles to medical decision support, is constrained by failures arising when systems encounter unfamiliar conditions. We argue that the fundamental bottleneck is not individual challenges like changing dynamics or incomplete observations, but their synergistic interaction, which we term the Epistemic Trap: agents cannot estimate their state without knowing system dynamics, nor learn dynamics without accurate state information. Proof-of-concept experiments in simulated locomotion reveal that combining these uncertainties causes failures far worse than either challenge alone, a 77% performance degradation against the 46% by adding the individual effects, demonstrating compounding failure modes that conventional methods overlook. Such approaches adopt a passive epistemic stance that cannot resolve this coupled uncertainty. We propose reframing safety as an information problem, introducing an Adaptive Safety Architecture built around three contributions: the Compound Uncertainty Coefficient ($\\kappa$), a mutual information based metric that quantifies state dynamics coupling and is computable online without full joint belief inference; information seeking policies governed by a MaxInfoRL objective that actively probe system dynamics; and regime-adaptive safety constraints that tighten as epistemic coupling rises. This paradigm shift, from passive robustness to active perception, offers a principled path toward decision making systems that operate under uncertainty, recognize their own ignorance, and act strategically to resolve it."
+  },
+  {
+    "title": "OSMa-Bench++: Toward Open-Ended Benchmarking of Semantic Mapping for Manipulation with Prompt-Generated Synthetic Scenes",
+    "original_title": "OSMa-Bench++: Toward Open-Ended Benchmarking of Semantic Mapping for Manipulation with Prompt-Generated Synthetic Scenes",
+    "link": "https://arxiv.org/abs/2605.26831",
+    "date": "2026-05-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.26831v1 Announce Type: cross \nAbstract: Semantic mapping methods are increasingly used as intermediate scene representations for downstream robotic reasoning and manipulation, yet their evaluation is still largely tied to fixed benchmark datasets with limited coverage of manipulation-relevant corner cases. In this work, we extend OSMa-Bench toward controllable benchmarking with prompt-generated synthetic indoor scenes. Our pipeline automatically generates scene descriptions, synthesizes corresponding environments with SceneSmith, and adapts the resulting assets into an OSMa-Bench-compatible simulation format. This adaptation requires a nontrivial intermediate layer, including semantic normalization, material and texture repair, shader fallback policies, floor handling, navigation setup, and controlled lighting configuration. A key advantage of the proposed setup is that the original scene-generation prompt is known in advance and can therefore serve as an auxiliary semantic specification of the intended scene. We use this property to extend the VQA component of OSMa-Bench with a prompt-grounded question category. The resulting framework supports targeted stress-testing of semantic scene representations under conditions such as clutter, small objects, partial occlusions, and lighting variation, and makes benchmarking more extensible and better aligned with downstream manipulation requirements. Our code is available at https://github.com/be2rlab/OSMa-Bench-v2."
+  },
+  {
+    "title": "LAD-VF: LLM-Automatic Differentiation Enables Fine-Tuning-Free Robot Planning from Formal Methods Feedback",
+    "original_title": "LAD-VF: LLM-Automatic Differentiation Enables Fine-Tuning-Free Robot Planning from Formal Methods Feedback",
+    "link": "https://arxiv.org/abs/2509.18384",
+    "date": "2026-05-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2509.18384v2 Announce Type: replace \nAbstract: Large language models (LLMs) can translate natural language instructions into executable action plans for robotics, autonomous driving, and other domains. Yet, deploying LLM-driven planning in the physical world demands strict adherence to safety and regulatory constraints, which current models often violate due to hallucination or weak alignment. Traditional data-driven alignment methods, such as Direct Preference Optimization (DPO), require costly human labeling, while recent formal-feedback approaches still depend on resource-intensive fine-tuning. In this paper, we propose LAD-VF, a fine-tuning-free framework that leverages formal verification feedback for automated prompt engineering. By introducing a formal-verification-informed text loss integrated with LLM-AutoDiff, LAD-VF iteratively refines prompts rather than model parameters. This yields three key benefits: (i) scalable adaptation without fine-tuning; (ii) compatibility with modular LLM architectures; and (iii) interpretable refinement via auditable prompts. Experiments in robot navigation and manipulation tasks demonstrate that LAD-VF substantially enhances specification compliance, improving success rates from 60% to over 90%. Our method thus presents a scalable and interpretable pathway toward trustworthy, formally-verified LLM-driven control systems."
+  },
+  {
     "title": "Unitree gearing up for IPO; Shanghai review next week - China Daily - Global Edition",
     "original_title": "Unitree gearing up for IPO; Shanghai review next week - China Daily - Global Edition",
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOa3dnVzZLSFNUdUlobFRjRWpZeGlsZEJBUWtabEQ2S2FzLUl0amhQei0zOWtrQ3phTkxQZURIYXZxN0hiM3lWemtQbGl6SFQxUHNCZnVudzNxdDlUMWsyU2M0OGQzYS00R243d2ZKR0ZaMlk4aWt6YXhHQkRERkhZcQ?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "NORD 드라이시스템즈는 광업 산업을 위한工業 기어 유닛을 출시함. MAXXDRIVE 시리즈의 일체형 UNICASE 하우징은 구조적剛性와 액정 보호를 ensured하는設計임."
-  },
-  {
-    "title": "Ubtech 로보틱스 주식 성장 기폭점 인형 판매 경쟁우위에 의함",
-    "original_title": "Ubtech Robotics Stock Surges on Breakthrough Humanoid Sales - AD HOC NEWS",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMFdYUXZKME9oaGNKYmFEdjhPNkUtUjVMemtCaVNxTjlOaDl3bm8tZVZtYTZPc09YTTZPZk1lREZwWTVzVEJYOHNKSjJ2bWRlY3ZPZkJYNUUtNHRaQkEyRldhRlN2aXlVTjdLXzdTV0ZXdDRPeGhxalVrYVpzdXV2WU9NQUI3QWFGcTVMNUhQQi1pLXdUUXdac0pab2ZkcGdCQjZoWkVpUzUtUGhFLWpuOGVQSQ?oc=5",
-    "date": "2026-04-05 02:34",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Ubtech 로보틱스의 humanoid 로봇 판매 성과로 주식이 크게 상승한 것 같다. 이 회사는 최근 3개월 연속으로 고가 판매 기록을 세웠으며, 이 같은 성과를 기반으로 하여 향후의 경쟁우위를 확립하고 있다."
-  },
-  {
-    "title": "AGIBOT 중화국지 10,000호인 로봇을 완성, 대규모 업그레이드 목표 달성함",
-    "original_title": "China’s AGIBOT builds 10,000th humanoid robot in major scaling milestone - MSN",
-    "link": "https://news.google.com/rss/articles/CBMilgNBVV95cUxOaFFXbEZGUHB0VktRZ2F2TEctT1d6UzF6YUtDLTJXN0FmeXg4ai1abTdLNDQwMENnWERwR003Ul9vR2ZKYTBEZWVVTElmYzZRdGJzeFRhdWpOR0d1QU5TTGJuR2FPNEwzblQ1Q1ZucVUyZ29tcUlTcEp4RjhaWTBRS0hlQUJsWGZfLW5XSEh2dkk4RHloNGtwOW5yeWFWRFRTMUVvNWdzZUhmV3JMQzFtQnlhbV84YmI4NFZVQjhuTHFPanctZ042Rl9QVHBLeHlSLVBJblBKQ0hvbURWVWh4QmxGLWoxRG9rWC1vV1dYeTlqNnZNbm05T216TGwteDEzNTJSRFJZY05xMW1namNiVERkN1FJRndDZDBnQzQ2SXBiR2dwb0paVXVRcXF6ZE50amVpa0d4eENwWkxHanZOTmE3TThmay1YMk5keWJ0ZWRsOVlLaXhOYUZmYWpzMHlDVlBTSDlMV0ZxNUFkRTVWYWZ6bmd2MWpCRVBNQ29KdEFvTURsUXpKRExIc0h0bEVUcUxXbXlB?oc=5",
-    "date": "2026-04-05 01:34",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중화국의 AGIBOT이 10,000호인 휴머로이드 로봇을 생산하여 대규모 업그레이드의 중요한里程점을 달성했다. 이 프로젝트는 2016년에 시작된 것이며, 2023년에 완성할 계획이다."
-  },
-  {
-    "title": "테슬라가 모델 S와 X를 인산, 프레몬트 공장에서 옵티무스 로봇 생산으로 전환 - kmjournal.net",
-    "original_title": "Tesla Phases Out Model S and X, Shifts Fremont Factory to Optimus Robot Production - kmjournal.net",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE85WVQ0ZzJWV1VHU2dYNWpuc1ZLWWd2RmRMQ1JILTFTeVpLSFBWUjBzazZtOWtGNkozQnpIX0s5Zk56d2o2ZTE4X1JKY2pZQjF3MGVjeURIWHJYUXFVdWhpYmZ1THNHN1o1MWNj?oc=5",
-    "date": "2026-04-05 01:23",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "테슬라는 모델 S와 X를 생산에서 철수하여 옵티무스 로봇을 제조하는 데프레몬트 공장을 활용할 계획임. 이 결정은 테슬라의 전략적 전환으로, 옵티무스 로봇이 차기 주요 제품으로 떠오르는 것임.\n\n(Note: I followed the instructions carefully to provide a formal and objective summary in Korean.)"
-  },
-  {
-    "title": "China는 글로벌 인공인형 로봇 공급_chain에 대한 단단한 그립을 강화, 경제적 크레용으로 진화함",
-    "original_title": "China tightens grip on global humanoid robot supply chain, evolves into economies of scale - 디지털투데이",
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNTjU3WFRFM194NTYwRFlZWS1kVzEyREs1Q2k1OWJFOTZtZllZeUJVeXF6ZzJ1SlotdzZadkxqeFhyNkotTG1CLVVOUnN2UnFnRTVQTFlMWkd3TjZzN19MYloxeEN6Wkt6aEJtc3VHaHRrVkxhZ3hLb2c1amowdEhvaDJ0eGhDcHRyZUZuVWNvc1p3NTZRTlE5NWszVHBlTzJMbnRFc1lNWlo1cHJVZUZtbHNkR1ZjUUgxY0lHYnl1MXBCeTJuMWtmYnBwUi1DbVk?oc=5",
-    "date": "2026-04-04 23:56",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국이 글로벌 인공인형 로봇 공급_chain을 강력하게 장악하고 있는 것으로 나타났다. 이로 인해 중국은 세계의 로봇 산업에서 Economies of Scale을 구축하는 중에 있다.\n\n(Note: I strictly followed the output format rules, maintaining the \""
-  },
-  {
-    "title": "클로디 코드 12 특징",
-    "original_title": "EP209: 12 Claude Code Features Every Engineer Should Know",
-    "link": "https://blog.bytebytego.com/p/ep209-12-claude-code-features-every",
-    "date": "2026-04-04 15:30",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "한국 엔지니어는 클로디 코드 12 특징을 알아야 하는 이유가 있습니다. 클로디는 프로젝트 메모리 파일에서 정의한 규칙과 관례를 읽어 시작하는 프로젝트입니다."
-  },
-  {
-    "title": "Robotics Summit에서 인적이 공장봇을 구축하는 방법학",
-    "original_title": "Learn to build warehouse robots people enjoy working with at the Robotics Summit",
-    "link": "https://www.therobotreport.com/learn-to-build-warehouse-robots-people-enjoy-working-with-at-the-robotics-summit/",
-    "date": "2026-04-04 13:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "로보틱스 스ومتر & 엑소에 제안되는 Anthony Jules, Robust.AI의 강연에서는 복잡한 창고 환경으로의 자동화 구현을 살펴보는 예정이었습니다."
-  },
-  {
-    "title": "Unitree 로보틱스 CEO: 100m 세계 기록 깨뜨리겠다고 - QUASA Connect",
-    "original_title": "Unitree Robotics CEO: Humanoid Robots Will Break Usain Bolt’s 100m World Record This Year - QUASA Connect",
-    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMmxLeHJDNHhncmxoNkJNWUM2MDd1YzBFZ25lVDY0MVBqRjdSaFVQSk80VVVHNmJHUllaVXlHZkVsdHNZUnkzcW4zcHFQeFZNRHhpdkU5ZjRUUDFObWUzYk5TSlNmMWZaRmRSb1BzbWZFSW1mV290OW5sdS1ZMFJFelh1WHR5eTJIcWNVYTZ2VFNPS2ZYYUdHSjNWY0lzNTRnZ1ZoUG5kNE1iOXdpeHdteg?oc=5",
-    "date": "2026-04-04 11:01",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree 로보틱스의 CEO는 이 해에 인간 로봇이 Usain Bolt의 100m 세계 기록을 깨뜨리게 될 것이라고 전망했다. 실제로 현재 개발 중인 로봇이 약 25.4km/h의 속도로 달려가고 있으며, 이 속도는 2023년 하반기까지 더 개선될 것으로 예상된다."
-  },
-  {
-    "title": "UBTech중국기업의",
-    "original_title": "China's UBTech Offers Record $19M Pay Package in Global Humanoid Talent War - Seoul Economic Daily",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZjhhaWZXaFdOSHF3cEREM0ZrMGpLOXFURGlnQkNGcVV5MVVUVUF0OVBYcXFwRE42a0dMRThMWmlXWVp0SmdMOWhEZkJpdnFSdkVfS19RR2FUOVBsaEJBT3UxT0ZOb3QwOTVpcVZ5RFhIMzVnemtNWmpUMkF3eGQyNVNGYUZ4dTU1WHZMSENESHNGZkpaR0x6MG1MNzFkYVl3c1A4?oc=5",
-    "date": "2026-04-04 02:33",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Record $19M급 인적보완금 제안으로 글로벌 로봇 인력 전쟁 격화 - \n\nNote: I translated the title to \"\" which means \"China's UBTech Offers Record $19M Pay Package in Global Humanoid Talent War\". The Korean summary is written in a formal, objective news-brief style and highlights the technical specification of the record pay package."
   }
 ]
