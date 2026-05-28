@@ -1,5 +1,77 @@
 [
   {
+    "title": "A Factory-Floor Deployment Case Study of VLA Pipelines for Industrial Packaging Task: Workflow, Failures, and Lessons",
+    "original_title": "A Factory-Floor Deployment Case Study of VLA Pipelines for Industrial Packaging Task: Workflow, Failures, and Lessons",
+    "link": "https://arxiv.org/abs/2605.27461",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.27461v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) policies have shown promising manipulation capabilities, yet their practical impact is often limited by the reliability demands of real-world deployment. We present a deployment study of an industrial packaging task at Siemens Factory (GWE, Erlangen, Germany), where a robot must pick a transparent accessory bag from a cluttered pile, insert it into the remaining cavity of a cardboard package, and ensure that the bag and its contents remain below the closing plane. Our goal is to understand the practical effort required to adapt a pretrained Pi0.5 policy to a single factory-floor task through iterative fine-tuning and deployment-driven refinement. The pipeline consists of repeated loops of data collection, curation, fine-tuning, evaluation, and targeted recovery data collection. We have accumulated 2535 episodes (10 hours) from the on-site factory settings. In this paper, we contribute an empirical account of a factory-floor VLA deployment, highlighting recurring failure modes and lessons that inform how to improve the deployment workflow."
+  },
+  {
+    "title": "GE-Sim 2.0: A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation",
+    "original_title": "GE-Sim 2.0: A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.27491",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.27491v1 Announce Type: new \nAbstract: We introduce GE-Sim 2.0 (Genie Envisioner World Simulator 2.0), a closed-loop video world simulator for robotic manipulation. Building on the action-conditioned video generation framework of Genie Envisioner, GE-Sim 2.0 is re-trained on thousands of hours of real-world robot data spanning teleoperation, contact-rich interaction, and on-robot policy deployment, substantially improving action-following fidelity and trajectory coverage. On top of this foundation, three new modules close the loop from video simulation to policy learning: a state expert that decodes proprioceptive state from video latents to support next-chunk prediction by downstream VLA policies; a world judge that scores generated rollouts against task instructions, yielding machine-verifiable success signals and rewards in place of manual inspection; and an acceleration framework that delivers a 25-frame rollout in 2.3 seconds on a single H100, with up to 4* frame skipping at inference for long-horizon evaluation. GE-Sim 2.0 tops the public WorldArena leaderboard at only 2B parameters, outperforming both dedicated robotic world models and closed-source general video generators, and policies trained against its rollouts and rewards translate into measurable real-world gains, establishing GE-Sim 2.0 as a practical platform for scalable evaluation and closed-loop learning of manipulation policies."
+  },
+  {
+    "title": "Inducing Calmness With Pocket-Sized Robotics: Reducing Movement and Heart Rate in Children through Hand-Held Tactile Interactions",
+    "original_title": "Inducing Calmness With Pocket-Sized Robotics: Reducing Movement and Heart Rate in Children through Hand-Held Tactile Interactions",
+    "link": "https://arxiv.org/abs/2605.27533",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.27533v1 Announce Type: new \nAbstract: Periods of heightened arousal or restlessness can interfere with children's ability to focus, self-regulation, and physically calm. Technologies that encourage embodied self-regulation through tactile interaction may provide a simple and accessible means of promoting calmness. This paper investigates how interaction with a pocket-sized tactile device influences physiological and behavioral markers of calmness in typically developing children. Building on prior work examining heart rate modulation, we present new findings on how tactile interaction affects full-body movement and postural stability. We employ a device that engages children through a hand-held rhythmic vibration-matching game, designed to focus attention and encourage stillness. Eighteen children participated in a within-subjects study that involved two conditions: with and without tactile interaction with a hand-held device, while having their heart rate and body movement recorded. Results show that the tactile game interaction reduced physiological arousal (heart rate decreased by 3.56 bpm, p < 0.01) and physical restlessness (overall movement decreased by 38%, p < 0.05), with attention-related body regions showing the greatest change toward stillness (45% reduction in movement). These findings demonstrate that brief tactile game-like engagement with a hand-held device can down-regulate physiological activation, promoting the calm and focused states toward sustained attention and behavior regulation."
+  },
+  {
+    "title": "Synthetic Emotions vs. Gamification: Exploring Engagement Strategies for Small Social Robots in Different Age Groups",
+    "original_title": "Synthetic Emotions vs. Gamification: Exploring Engagement Strategies for Small Social Robots in Different Age Groups",
+    "link": "https://arxiv.org/abs/2605.27539",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.27539v1 Announce Type: new \nAbstract: Many children experience challenges in emotional regulation and social interaction, which can limit their participation in everyday activities and therapeutic programs. For socially assistive robots to be effective in this context, it is essential that children remain consistently and meaningfully engaged. We explore engagement strategies for a tactile robot designed to support children suffering from anxiety disorders through daily interactions. The robot delivers either synthetic emotional feedback or point rewards to encourage user participation. We evaluated these strategies through two studies: a preference assessment with 16 school children aged 6-8 years, and a behavioral study with 14 university students aged 20-27 years in naturalistic environments. The study with school children indicated a preference for emotional engagement over points-based approaches. The follow up study with university students across a full day of interactions revealed contrasting results: points-based systems produced significantly higher task accuracy (p < 0.05) and sustained performance over time. Findings from different user groups suggest that stated preferences and behavioral outcomes can diverge depending on engagement context, highlighting the importance of validating design assumptions through observed interaction. This work contributes insights into age-related differences in engagement strategy effectiveness in human-robot interaction design."
+  },
+  {
+    "title": "Uni-LaViRA: Language-Vision-Robot Actions Translation for Unified Embodied Navigation",
+    "original_title": "Uni-LaViRA: Language-Vision-Robot Actions Translation for Unified Embodied Navigation",
+    "link": "https://arxiv.org/abs/2605.27582",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.27582v1 Announce Type: new \nAbstract: Embodied navigation requires an agent to map language and visual observations to a stream of spatial actions that drive a real robot through environments it has never seen. The dominant approach has been to scale vision-language-action (VLA) foundation models on ever-larger collections of robot trajectories. This paper argues that, for navigation specifically, generality can be obtained structurally, not only through data scale. The underlying decision structure of navigation reduces to a single Language-Vision-Robot Actions Translation. The language action emits semantic-level directional command and the vision action emits a pixel-level visual target. Both outputs lie inside the natural output manifold of pretrained multimodal large language models (MLLMs), so the task can be reasoned about by an agent rather than learned from robot data. Therefore, we present Uni-LaViRA, a unified agentic architecture that extends the same insight to four task families (VLN-CE, ObjectNav, EQA, and Aerial-VLN) and to four heterogeneous real robots (Wheeled, Quadruped, Humanoid robot, and a self-built UAV) in a zero-shot manner. Two agent-loop mechanisms make this unification practical. TODO List Memory (TDM) rewrites a structured checklist of pending sub-goals at every step, reciting the unfinished items back into the agent's most recent attention window. Second Chance Backtrack (SCB) rolls the robot back to the pre-error state and conditions the agent's next plan on the failed sub-trajectory, turning single-pass navigation into a self-correcting process. With zero training effort, Uni-LaViRA reaches 60.7% SR on VLN-CE R2R, 51.3% on VLN-CE RxR, 77.7% on HM3D-v2, 60.0% on HM3D-OVON, 54.7% on MP3D-EQA, and 40.0% on OpenUAV, matching or even surpassing recent training navigation foundation models that consume millions of samples and thousands of GPU-hours."
+  },
+  {
+    "title": "Agentic Language-to-Objective Synthesis for Optofluidic Assembly",
+    "original_title": "Agentic Language-to-Objective Synthesis for Optofluidic Assembly",
+    "link": "https://arxiv.org/abs/2605.27643",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.27643v1 Announce Type: new \nAbstract: Light-based advanced manufacturing increasingly requires programmable, closed-loop tools that translate human design intent into executable operations at small length scales. Yet a key bottleneck persists across robotic and manufacturing modalities: turning user intent into machine-readable objectives that are reliably executable. While micro-robotics offers versatile manipulation via optical actuation of fluids, mathematically tractable goal specification remains manual and hard to reuse. Here, we introduce Speak-to-Objective, a modular agentic pipeline that uses a conditioned Large Language Model (LLM) to translate spoken or written commands into fully differentiable objective functions for assembling microparticles in a constraint-aware inverse solver (SLSQP) and on an experimental optofluidic platform. The approach employs a compact loop - perceive -> compose -> propose -> act -> report & learn - that treats the objective as the interface between intent and actuation, separating what to assemble or pattern from how to actuate, while learning from user feedback. The pipeline composes geometry, spacing, and assignment/topology terms to generate robust descriptive objectives that assemble from partial traces and recover after perturbations, as well as explicit objectives for precise placement, all in an actuator-agnostic fashion. Using laser-induced thermoviscous flows as the physical actuation modality, we demonstrate natural-language-programmable, light-based microscale assembly of particle patterns in a microfluidic environment. Beyond its immediate impact on programmable microassembly, and using laser-induced optofluidic actuation as a reduced-complexity experimental platform, our work points toward self-driving, AI-assisted optical manufacturing platforms in which natural language, differentiable objectives, and laser-based actuation are coupled into a reusable digital workflow."
+  },
+  {
+    "title": "HumanoidMimicGen: Data Generation for Loco-Manipulation via Whole-Body Planning",
+    "original_title": "HumanoidMimicGen: Data Generation for Loco-Manipulation via Whole-Body Planning",
+    "link": "https://arxiv.org/abs/2605.27724",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.27724v1 Announce Type: new \nAbstract: Imitation learning is a promising approach for training humanoid robots to both walk and manipulate, but it requires a large number of demonstrations, which are time-intensive and difficult to collect via teleoperation. Existing data-generation algorithms can automatically synthesize demonstrations for manipulators, but they are ineffective on humanoids because their high-dimensional composite action spaces involve arms, legs, and torsos. We present HumanoidMimicGen, a method for generating humanoid legged loco-manipulation data. Our method adapts contact-rich whole-body skills from a handful of source demonstrations to new states, generalizing across changes in object pose. By interleaving these single- and dual-arm skills with whole-body locomotion and manipulation planning, the method generates stable, collision-free data across diverse scenes and layouts. To evaluate our approach, we introduce a new simulated loco-manipulation benchmark containing nine diverse tasks that test humanoid loco-manipulation capabilities. There, we demonstrate that HumanoidMimicGen automatically generates large datasets for imitation learning and enables a systematic study of how data generation and policy learning decisions impact model performance. We show that whole-body visuomotor policies co-trained with data generated by HumanoidMimicGen outperform those trained only on real-world data by 20%."
+  },
+  {
+    "title": "Colosseum V2: Benchmarking Generalization for Vision Language Action Models",
+    "original_title": "Colosseum V2: Benchmarking Generalization for Vision Language Action Models",
+    "link": "https://arxiv.org/abs/2605.27759",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.27759v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models demonstrate promising generalization in robotic manipulation, driven by advances in large-scale vision and language pre-training. This progress can be misleading. Despite the zero-shot perception and language capabilities of VLAs, their overall task performance often degrades under distribution shifts, revealing gaps in how these systems translate high-level understanding into robust behavior. To systematically study this gap, we introduce Colosseum V2, a large-scale simulation benchmark for evaluating VLA generalization in robot learning across diverse conditions. The benchmark comprises 28 tasks spanning 13 task categories and two robot morphologies, covering a wide range of manipulation primitives and long-horizon behaviors. Built on the ManiSkill simulator, Colosseum V2 enables fast, GPU-parallelized evaluation and supports both in-domain and out-of-domain testing at scale. We evaluate state-of-the-art methods, including Action Chunking Transformers (ACT) and Pi0.5, and reveal limitations in both base performance and generalization. We demonstrate strong correlations between simulation and real-world metrics that support the ecological validity of the benchmark. By standardizing tasks, metrics, and evaluation protocols within a unified benchmark, Colosseum V2 enables reproducible and fair comparisons, reduced evaluation overhead, and accelerated progress toward general-purpose robot policies."
+  },
+  {
     "title": "Pea-size liquid-metal pump runs robot butterfly on under 0.1 V",
     "original_title": "Pea-size liquid-metal pump runs robot butterfly on under 0.1 V",
     "link": "https://techxplore.com/news/2026-05-pea-size-liquid-metal-robot.html",
@@ -511,6 +583,15 @@
     "source": "ByteByteGo",
     "category": "humanoid",
     "summary": "In this article, we examine the constraints Vercel faced, the choices they made in response, and the optimizations that produced the speedup."
+  },
+  {
+    "title": "China: EngineAI’s 129,000 sq ft factory claims to build one humanoid robot every 15 mins - MSN",
+    "original_title": "China: EngineAI’s 129,000 sq ft factory claims to build one humanoid robot every 15 mins - MSN",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPVHh0V1BZdjVqV0RFazZKZ2pxSFhfbVlUcXRjUVJESi1yaTE2c3lMbFFaLThGeGUtcVQySUt0ZE1US0g4RlpVN2IxTjFmc29UdzF5Zm0tMVFEY1FNMXVIV3MzcHB5RU1Lb2pDUTRPUEFFSTk4SzZCa1VzdzdwVXkwTzRqdnlKa3JNNTZiVXFscXZRV3d4MnRlbm1VUnIybnhiNFJUTTFYdEFGb0txZlNqZHBEU3RyNS05VW1INEtYUUxRSVI2Vzd0STA0Qk5mNEdEYnlN?oc=5",
+    "date": "2026-05-26 15:13",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China: EngineAI’s 129,000 sq ft factory claims to build one humanoid robot every 15 mins  MSN"
   },
   {
     "title": "How to Buy Bitcoin (BTC) with Euros (EUR): A Beginner’s Guide",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로봇 조작에 있어 장기 시퀀스 작업을 향상시키는 프로그레스 인지하고 정책 학습 메커니즘인 PALM을 도입하였다. 이 프레임워크는 비전-언어-행동(VLA) 모델의 약점인 장기 시퀀스 작업에서 수행하는 과제 해결에 있어 새로운 방법론으로, 로봇 조작 성능을 91.8%로 개선시키는 성과를 보였다.\n\nPlease note that the provided Korean title and summary are in a formal and objective news-brief style, ending with nouns (e.g., ~함), as per the instruction."
-  },
-  {
-    "title": "3D 물체 인식: 단일 차량, 협력 및 종합 관점의 안정성 중심함",
-    "original_title": "Safety-Aligned 3D Object Detection: Single-Vehicle, Cooperative, and End-to-End Perspectives",
-    "link": "https://arxiv.org/abs/2604.03325",
-    "date": "2026-04-07 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "CAVs에서 인식은 중앙적인 역할을 한다고 하며, 전통적인 모듈러 드라이빙 스택뿐 아니라 협력 인식 시스템과 최근의 종합 운전 모델까지 이를 뒷받침합니다. 딥 러닝으로 인한 인식 성능 개선에도 불구하고, 통계적 성질은 완벽한 예측을 달성하는 데 어려움을 초래합니다. 한편 표준 훈련 목표 및 평가 지표는 모든 인식 오류를 균등하게 다룰 뿐 아니라 일부는 안전성이 낮은 오류일 수 있습니다. 이 논문에서는 3D 물체 인식을 위한 안정성 중심 평가 및 최적화 기법을 조사합니다. 이전에 제안한 안정성 지표 NDS-USC와 안정성-aware 손실 함수 EC-IU를 기반으로 세 가지 공헌을 제공합니다. 첫째, 우리는 다양한 신경망 아키텍처 및 감지 모듈에서 단일 차량 3D 물체 인식 모델을 확장하여 조사하고, 표준 지표 such as mAP and NDS는 안정성 중심 지표 NDS-USC로의 이점이 translate되지 않는다는 것을 보여줍니다. 둘째, 우리는 AV-인프라 협력 물체 인식 모델을 ego-centric적으로 평가하여, 차량-only 모델보다 우수하고 \"Vision Zero\"에 대한 안전 영향을 분석합니다. 셋째, 우리는 EC-IU를 SparseDrive에 통합하여, 안정성-aware 인식을 통해 충돌률을 30% 감소시키고 시스템-레벨 안정성을 직접 향상시킬 수 있는 framework를 보여줍니다. 결론적으로, 우리의 결과는 CAV안전을 개선하는 데 실제적인 방법으로 안전 중심 인식 평가 및 최적화 기법을 제공합니다."
-  },
-  {
-    "title": "Adversarial Robustness Analysis of Cloud-Assisted Autonomous Driving Systems",
-    "original_title": "Adversarial Robustness Analysis of Cloud-Assisted Autonomous Driving Systems",
-    "link": "https://arxiv.org/abs/2604.04349",
-    "date": "2026-04-07 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "구름 기반 自차 시스템의 적대적 강도 분석 ~함\n\n雲간 이오V를 통해 개선된 지각과 조정된 결정을 달성하는 구름 기반 自차 아키텍처는, 지각 모델 및_vehicle-cloud_ 링크망의 성능에 취약점을 초래한다. 이 논문에서는 실제-time 지각, 제어 및 통신을 통합한 이오V 테스트베드를 개발하여 이러한 취약점을 평가하였다. 구름에서 YOLOv8 기반 물체 검출기가 FGSM과 PGD를 사용하여 적대적 공격을 받으면서, _vehicle-cloud_ 링크망의 지연 및 패킷 손실을誘發하였다. 결과는 깨끗한 기준선에서 0.73, 0.68인 정확도와 재현율이 epsilon= 0.04에서는 0.22, 0.15로 감소하는 것을 보여주며, 네트워크 지연과 패킷 손실은 클로즈드-루프 제어를 불안정하게 만들고, 즉시 작동을 지연하고 규칙 위반을 일으킨다."
-  },
-  {
-    "title": "로봇 협력 촉진을 위한 시퀀셜 월드 모델",
-    "original_title": "Empowering Multi-Robot Cooperation via Sequential World Models",
-    "link": "https://arxiv.org/abs/2509.13095",
-    "date": "2026-04-07 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 로봇 기술 잡지에서 공유하는 최신 뉴스입니다. SeqWM 프레임워크는 다중 로봇 모델 기반 강화 학습에 새로운 접근 방식을 제공하고 있습니다. 이 새로운 방법은 각 로봇이 다른 로봇의 예측을 기반으로 hành위를 계획하므로, 복잡한 동역학을 줄여주고, 고급 협력 행동을 성취할 수 있습니다. SeqWM는 Bi-DexHands와 Multi-Quadruped에 대한 실험을 통해 기존 최고의 모델 기반 및 모델 무료 기본보다 우수한 성능과 샘플 효율성을 보였습니다."
-  },
-  {
-    "title": "Tennibot PARTNER V2",
-    "original_title": "Tennibot launches Partner V2, its latest robotic tennis ball machine",
-    "link": "https://www.therobotreport.com/tennibot-launches-partner-v2-latest-robotic-tennis-ball-machine/",
-    "date": "2026-04-06 23:39",
-    "source": "The Robot Report",
-    "category": "hand",
-    "summary": "테니봇이 내투한 PARTNER V2 로보틱 테니스 볼 머신을 출시하여, 로보틱스 서밋 & 엑스코에서 참가자들은 Tennibot의 기술에 대한hands-on 접근을 할 수 있음."
-  },
-  {
-    "title": "Korea's Four SI Firms Race to Own the Humanoid Operating System",
-    "original_title": "Korea's Four SI Firms Race to Own the Humanoid Operating System - 한국금융신문",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE94LV9NRXVmZjhhYXo5WlMxdi1nVXg5dzZIa0d6di1ocFBMVmxwd3ltVVJ2MTkwQlFfb091ODI1bTFTcVNhVWIwVXZiN0dIWjBCUi1OUXgtcVhvaklvZE1xTVZHd2Y2SThwdnpXUzlxZzNxdnBabXZzSjdaa3U?oc=5",
-    "date": "2026-04-06 23:34",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "한국 4사소프트웨어 회사 경쟁 가속, humanoide OS 개발을 위한 혜택을 경쟁함. SI 업계 4사의 humanoide OS 개발에 10억원 이상 투자, AI 및 5G 기술 적용을 주요 전략으로 삼음."
-  },
-  {
-    "title": "Ubtech 로봇기술: Ambitious Growth that Meets Technical Reality",
-    "original_title": "Ubtech Robotics: Ambitious Growth Meets Technical Reality - AD HOC NEWS",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNW10U2JianhSUnRCRVM2MXI5elZnN0djalM5VGI0S2dTbm1GMG50aVJieTNJcTE4LWoyanRJYVVDMEhYX1JHUUNGc25iQnBSRmdERUpGTHJaLTJnY005ZWpFWTRNYkFlMTUxNFZZUHN0RlRRMmxUVmJ0UkczTklmQ2o4bnI0UUppaTMzblM0c1RIN1V1QUdXdDVxZjJRMmdhbFJZQlN1XzZYbVFjQW91V0FUdmc0Zw?oc=5",
-    "date": "2026-04-06 23:07",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Ubtech 로봇기술의 성장 목표가 기술적 실제와 부딪히게 되면서 도전을 맞이하게 되었다. 회사는 2022년 4분기 기준으로 100억불 이상의 매출을 달성했다. 이 같은 성과를 기초로 Ubtech는 향후 5년간 10배의 성장 계획을 수립하고 있다."
-  },
-  {
-    "title": "Serve 로보틱스, NVIDIA GTC 2026에서 에지 AI를 활용한 대화형 로봇을 데뷔함",
-    "original_title": "Serve Robotics Debut Conversational Robot Powered by Edge AI at NVIDIA GTC 2026 - Bitget",
-    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1rcUtTRnoxaWpKeF9LWDJwYVYzZHVNVzZ2cjRWRWhKajg4QnFsMXl6OW0ycHVtTVB6MHQ1VzFRdkluVl84WE80ZU96VE84MXBocWlyaThCa1JDeF95SW02WUFSRzXSAWpBVV95cUxObWE5cXp3di1IdVJpYzFWQXFBbUFfLVVLdUNDSWpxN1dCMk12Wlc4RV9NV1M0cVhhMERoVkstQW0tbGRUWEJOTGtmWHFkYVI0c2tMOVRERGRVSE1tR2Jnd1otUzhCLXctYzJ3?oc=5",
-    "date": "2026-04-06 20:03",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA GTC 2026에서 Serve 로보틱스는 에지 AI 기술을 기반으로 개발한 새로운 대화형 로봇을 데뷔하였다. 이 로봇은 사용자의 질문에 대한 정교한 답변을 제공하며, conversational AI의 구현을 보여주는 예시임."
-  },
-  {
-    "title": "로봇 군집의 골든프로비 레벨 찾는 문제 ~임",
-    "original_title": "Too many cooks, or too many robots? Finding a Goldilocks level of randomness to keep robot swarms moving",
-    "link": "https://techxplore.com/news/2026-04-cooks-robots-goldilocks-randomness-robot.html",
-    "date": "2026-04-06 20:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "로봇 군집을 구현하는 경우, 초기에 추가된 로봇은 작업을 더 빨리 진행하게 하지만, 너무 많은 로봇이 공간을 차지하고 서로 방해하여 작업 속도를 늦추게 하는 문제가 발생합니다."
-  },
-  {
-    "title": "Faraday Future의 Aegis quadruped",
-    "original_title": "Faraday Future’s Aegis quadruped passes compliance certification for U.S. sales",
-    "link": "https://www.therobotreport.com/faraday-futures-aegis-quadruped-passes-compliance-certification-u-s-sales/",
-    "date": "2026-04-06 17:21",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Aegis 로봇이 미국 판매에 필요한 모든 안전성, 보안성 및 스펙트럼 표준을 완전히 준수함으로써 통제인증을 통과했다. Faraday Future의 Aegis 로봇은 이제 미국에서 판매될 수 있는 것이다."
   }
 ]
