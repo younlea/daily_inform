@@ -225,6 +225,78 @@
     "summary": "arXiv:2605.28412v1 Announce Type: new \nAbstract: Direct physical guidance is a natural means of teaching and interacting with robots, and robotic skins make a key contribution by enabling sensitive contact sensing and localization. This paper presents a tactile-proprioceptive sensor fusion framework for natural physical human-robot interaction. Tactile cues from pneumatic skin pads serve as contact indicators that bypass the ambiguity between frictional residues and applied external forces, enabling highly sensitive contact detection without explicit friction identification. We fuse these cues with motor-current-based proprioception to reconstruct multi-axis contact forces on the robot surface. To maintain accuracy during motion, we employ a temporal convolutional network (TCN) to mitigate friction hysteresis during stick-slip transitions, reducing uncertainty at contact onset and yielding smooth, responsive guidance. We validate the approach on a skin-integrated robot arm: (i) multi-axis forces are reconstructed in stationary contacts, and (ii) simultaneous force estimation and kinesthetic teaching are demonstrated. Results indicate improved sensitivity and responsiveness across diverse contact conditions compared with tactile-only and proprioceptive-only baselines, supporting tactile-proprioceptive fusion as a reliable pathway to safe, intuitive physical human-robot interaction."
   },
   {
+    "title": "Self-Supervised Online Robot-Agnostic Traversability Estimation for Open-World Environments",
+    "original_title": "Self-Supervised Online Robot-Agnostic Traversability Estimation for Open-World Environments",
+    "link": "https://arxiv.org/abs/2605.28442",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.28442v1 Announce Type: new \nAbstract: Self-supervised online traversability estimation enables robots to continuously learn from unlabeled open-world experiences and adapt their navigation behavior toward safe and efficient trajectories. Existing approaches either rely on handcrafted proprioceptive traversability scores, limiting robot-agnosticism, or cluster prior data, preventing online learning. Moreover, many continual learning methods incur substantial memory and computational costs, hindering onboard deployment. We introduce COTRATE, an online learning framework for continuous traversability estimation from multimodal, unlabeled robot experience. Our method first infers robust traversability scores using a robot-agnostic, learning-based online terrain assessment module operating on proprioceptiveand inertial signals. These scores then supervise a visual traversability network through a novel alignment loss that associates visual embeddings with online terrain assessments.To mitigate forgetting during continual learning with minimal overhead, we propose a diversity-aware feature selection strategythat preserves performance using a compact replay memory. We further show that the learned traversability representation supports knowledge transfer across different robot platforms with different locomotion kinematics. We evaluate COTRATE on a dataset of \\approx 50,000 images collected with two robotic platforms across 11 outdoor terrains, and benchmark it on navigation tasks in three representative outdoor environments. We make the dataset, code, and trained models publicly available."
+  },
+  {
+    "title": "A Digital Twin Framework for Virtual Visuo-Haptic Teleoperation of Complex-Shaped Optical Microrobots",
+    "original_title": "A Digital Twin Framework for Virtual Visuo-Haptic Teleoperation of Complex-Shaped Optical Microrobots",
+    "link": "https://arxiv.org/abs/2605.28448",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.28448v1 Announce Type: new \nAbstract: Optical tweezers (OT) provide piconewton-scale manipulation for delicate biomedical tasks, where visuo-haptic feedback can improve operator awareness by conveying interaction-force cues and trap-stability information. However, visuo-haptic teleoperation frameworks for complex-shaped optical microrobots remain underdeveloped, particularly in multi-trap manipulation scenarios. This paper presents a digital twin framework for virtual visuo-haptic teleoperation of complex-shaped OT-driven microrobots. The framework integrates a digital twin environment, image-based pose and depth estimation, microrobot motion simulation, and model-based haptic rendering within a Robot Operating System (ROS)-connected bimanual teleoperation system. For force modeling, we combine a Multi-Sphere Distributed Manipulation (MSDM) model with optical-force estimation from the Optical Tweezers Toolbox, enabling simulator-driven visuo-haptic feedback. The framework reproduces representative microrobot motion trends and provides haptic force rendering that is numerically consistent with the fitted optical-force model. In simulated cell-delivery tasks, haptic feedback reduced the standard deviations of the contact-force metric and the microrobot-to-trap-center distance metric by 53.2% and 55.2%, respectively, and improved task success from 30% to 80%. These results demonstrate the framework's effectiveness for evaluating visuo-haptic teleoperation strategies for complex-shaped optical microrobots."
+  },
+  {
+    "title": "EIT-Pneumatic Hybrid Robotic Skin for Practical and Accurate Force Map Reconstruction",
+    "original_title": "EIT-Pneumatic Hybrid Robotic Skin for Practical and Accurate Force Map Reconstruction",
+    "link": "https://arxiv.org/abs/2605.28468",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.28468v1 Announce Type: new \nAbstract: We present a hybrid robotic skin that combines electrical impedance tomography (EIT) with pneumatic tactile sensing to improve force reconstruction capability. The developed robotic skin is fabricated entirely by 3D printing and spray coating, making it affordable and easy to build. A Tikhonov-regularized inverse reconstruction, paired with per-pad pneumatic calibration, enables accurate large-area tactile sensing with a simple measurement scheme. For validation, we conducted load-cell indentation experiments; the results showed consistent force reconstruction across locations within a pad. Compared with an EIT-only baseline, sensitivity non-uniformity was also reduced, with the coefficient of variation decreasing from 0.31 to 0.14, indicating that the proposed approach addresses a longstanding limitation of EIT. We further demonstrated chest-mounted integration on a humanoid robot and found that the pneumatic signals remained reliable across diverse contact scenarios, including multiple simultaneous contacts on the same sensing pad. These results indicate a practical path toward accurate, scalable whole-body tactile sensing in real robotic systems."
+  },
+  {
+    "title": "Mag-VLA: Vision-Language-Action Model for Bimanual Magnetically Actuated Microrobot Manipulation",
+    "original_title": "Mag-VLA: Vision-Language-Action Model for Bimanual Magnetically Actuated Microrobot Manipulation",
+    "link": "https://arxiv.org/abs/2605.28486",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.28486v1 Announce Type: new \nAbstract: Magnetically actuated microrobots have been used as wireless, non-contact manipulation tools at microscales, making them promising for minimally invasive applications. However, their control remains challenging due to indirect actuation, limited sensing, and nonlinear magnetic interactions. In this work, we propose Mag-VLA, a vision-language-action (VLA) model for dexterous magnetic microrobot manipulation using two robotic arms with mounted magnets for dynamic magnetic-field construction. Bimanual coordination enables capabilities such as microrobot reorientation that are difficult or infeasible with a single arm, but it also introduces coupled control challenges, as the policy must generate coordinated trajectories for both actuators within a shared workspace. Our framework adapts a Qwen2.5-VL-7B backbone using Low-Rank Adaptation (LoRA) to process visual observations and language instructions for action prediction. To capture task progression, we introduce a motion-aware phase classifier and a phase-conditioned Action Chunking Transformer (ACT) decoder for temporally coherent multi-step control. We further construct a teleoperated magnetic microrobot manipulation dataset covering three task configurations. Ablation studies show that the ACT-based decoder substantially outperforms alternative generative action heads. In real-robot experiments, Mag-VLA achieves a 90% approach success rate across all tasks and transport success rates of 80%, 70%, and 50% as task difficulty increases. These results demonstrate that hierarchical VLA modeling provides a promising framework for magnetic microrobot manipulation."
+  },
+  {
+    "title": "What Frozen VLAs Already Know About Success: A Probing Study of Value-Like Structure in Foundation Robot Policies",
+    "original_title": "What Frozen VLAs Already Know About Success: A Probing Study of Value-Like Structure in Foundation Robot Policies",
+    "link": "https://arxiv.org/abs/2605.28527",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.28527v1 Announce Type: new \nAbstract: Vision--language--action (VLA) policies are trained to imitate actions; their loss never asks them to estimate reward, progress, or future success. Their frozen representations nevertheless carry such information, and it can be read out and used to guide action choice without retraining the policy. From mixed successful and failed manipulation trajectories on LIBERO-Goal, we recover Monte-Carlo outcome targets using lightweight linear probes on frozen features. The targets are consistently predictable from OpenVLA, Pi0.5, DINOv2, and CLIP features, and substantially less so from baselines built on progress, time-to-go, task identity, or proprioception. To rule out task and temporal shortcuts, we evaluate the probes under same-task, same-timestep matched comparisons: Pi0.5 probes still reach roughly 92% pairwise ordering accuracy, while label-shuffled controls stay at chance. Used as a test-time selector over sampled Pi0.5 action prefixes, the same probe turns this offline finding into behavior: on push-plate, success rises from 26.7% under greedy decoding to 44.3%, with a second positive case on wine-rack. The gains are not universal and require additional inference compute, but the underlying finding is clean: frozen VLAs already encode information about success that their imitation objective never explicitly demands."
+  },
+  {
+    "title": "SPRINT: Efficient Spectral Priors for Humanoid Athletic Sprints",
+    "original_title": "SPRINT: Efficient Spectral Priors for Humanoid Athletic Sprints",
+    "link": "https://arxiv.org/abs/2605.28549",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.28549v1 Announce Type: new \nAbstract: The pursuit of humanoid athletic sprints is hindered by a scarcity of humanoid-viable kinematic reference data and the inability of existing frameworks to maintain stability during sprints. To overcome these limitations, we introduce SPRINT, a novel framework driven by efficient, frequency-adaptive spectral priors. By characterizing the fundamental periodicity of human locomotion in the frequency domain using a reference library of five discrete motion sequences, these priors generate kinematically feasible joint trajectories across a broad velocity spectrum, successfully extrapolating to speeds that exceed the reference distribution. Guided by these pretrained priors, the SPRINT policy achieves zero-shot sim-to-real transfer in field experiments on the Unitree G1 platform, reaching a peak sprinting velocity of 6 m/s and demonstrating seamless gait transitions while preserving biomimetic naturalness. Ultimately, this work establishes frequency-adaptive spectral priors as a highly data-efficient foundation for humanoid athletic sprints. The project page is available at https://anonymous.4open.science/w/SPRINT-138A/."
+  },
+  {
+    "title": "PrimitiveVLA: Learning Reusable Motion Primitives for Efficient and Generalizable Robotic Manipulation",
+    "original_title": "PrimitiveVLA: Learning Reusable Motion Primitives for Efficient and Generalizable Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2605.28634",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.28634v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models offer a promising paradigm for generalist robotic policies, yet their adaptation is hindered by data inefficiency and poor generalization. We argue that these bottlenecks stem from the prevailing Direct Instruction-to-Control Mapping, which forces models to memorize monolithic trajectories rather than reusable motion patterns, i.e., primitives. We propose PrimitiveVLA, a framework that shifts this paradigm toward a Primitive-Centric Disassemble & Assemble paradigm. Supported by a shared Multimodal Canonical Representation (MCR), PrimitiveVLA unifies two phases: (1) Fine-tuning-phase Disassembly, which uses an automated pipeline to disassemble demonstrations into reusable primitives; and (2) Inference-phase Assembly, which employs a VLM-based planner and an LLM-generated switch module for robust closed-loop execution. By disassembling tasks into reusable primitives, PrimitiveVLA enables VLA models to learn invariant motion patterns instead of task-specific trajectories. Extensive experiments show that our framework improves data efficiency and achieves superior zero-shot generalization across unseen and long-horizon tasks."
+  },
+  {
+    "title": "How VLAs Fail Differently: Black-Box Action Monitoring Reveals Architecture-Specific Failure Signatures",
+    "original_title": "How VLAs Fail Differently: Black-Box Action Monitoring Reveals Architecture-Specific Failure Signatures",
+    "link": "https://arxiv.org/abs/2605.28726",
+    "date": "2026-05-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.28726v1 Announce Type: new \nAbstract: We discover that VLA architectures fail in fundamentally different, predictable ways at the motor-command level. Running VQ-BeT, Diffusion Policy, and ACT on identical evaluation protocols (n=450 episodes across PushT and ALOHA 14-DOF bimanual manipulation), we find: (1) direction reversal rate is a universal failure predictor across all three architectures (AUROC=0.93, 0.79, 0.91; p<0.001); (2) jerk monitoring is predictive only for discrete-token architectures, following a discrete-to-continuous gradient (0.88, 0.69, 0.41); (3) velocity violations alone are non-predictive everywhere (AUROC 0.41-0.69), yet velocity checking is the most common safety mechanism in VLA deployment code; and (4) for continuous-family VLAs, velocity monitoring provides effectively zero predictive signal (AUROC=0.52 on ACT, 0.41 on Diffusion), proving that architecture-matched monitor selection is essential. These results quantify a monitoring consequence of the well-known discrete/continuous VLA distinction: the two families produce qualitatively different failure signatures that require different monitors. No single monitor works universally; architecture-matched selection is required. This finding was enabled by SafeContract, a training-free, black-box action monitoring toolkit with conformal calibration. Code: https://github.com/krishnam94/vla-edge"
+  },
+  {
     "title": "Pea-size liquid-metal pump runs robot butterfly on under 0.1 V",
     "original_title": "Pea-size liquid-metal pump runs robot butterfly on under 0.1 V",
     "link": "https://techxplore.com/news/2026-05-pea-size-liquid-metal-robot.html",
@@ -17926,77 +17998,5 @@
     "source": "Google News (NVIDIA GTC)",
     "category": "humanoid",
     "summary": "Serve Robotics가 NVIDIA GTC 2026에서 에지 AI를 탑재한 대화식 로봇을 공개했다. 이 로봇은 사용자와의 대화에 기반해 행동을 조정하며, Edge AI 기술을 구현하여实시간 처리를 가능하게 했다.\n\n(Note: I followed the instructions strictly and maintained the output format rules. The Korean title is a natural translation of the English title, and the summary concisely covers the key points.)"
-  },
-  {
-    "title": "UBTECH-backed UQI, Honda Trading 업무연합으로 자동차 공급망에서 인간 로봇 적용을 확장함",
-    "original_title": "UBTECH-backed UQI, Honda Trading team up to boost humanoid robot applications in auto supply chain - Gasgoo",
-    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNbXRSangwZHJZMmJmVmlHZkQ3UV9qXzNuUVVpdk01VmFQR0l0WFJ0WWZnZXJsX25rMEQteGlkOW1jdGIybFlWQzFWTmxXX3hDMmhPN05udTRnVkdJQzFKcUdLRThqa0NFdnhNZjIzY3RvVjZUa21hWmp1R3RYd0lKUkJlM1JsNWxDRkd1WjNBOGVaYVFZckpXRzh5ZVp1ZldBZW00dUxYUmxUbk41Q0d4TVdGR3UweHNSUE4yTDZiZ2dMbExQWHZvZEgzWG9OZ3Jqblo4ekVNNzFQNDhlaEJWbWwxVXlLYTRoQjhYUU5mSjd4TllMOTBDelEtYjZTVXc?oc=5",
-    "date": "2026-04-07 10:28",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "UBTECH의 후원 하에 UQI와 Honda Trading이 함께 나선 일치적인 노력으로 자동차 공급망에서 인간 로봇 적용을 확장하고, 자동차 제조 공정에서 효율성을 높일 계획임. UQI의 humanoide 로봇 기술을 활용하여 자동차 공급망의 다양한 프로세스에 적용할 예정."
-  },
-  {
-    "title": "지ูร래스 배그: 유대자 DNA에서 디자이너 GOODS까지 - 생화학적 공정과 자동제조가 재료를 어떻게 다시 정의하고 생산할 수 있는지",
-    "original_title": "Jurassic bag: From dinosaur DNA to designer goods – how biofabrication and automation could reshape materials",
-    "link": "https://roboticsandautomationnews.com/2026/04/07/jurassic-bag-from-dinosaur-dna-to-designer-goods-how-biofabrication-and-automation-could-reshape-materials/100367/",
-    "date": "2026-04-07 09:09",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "생화학적 공정, 인공 지능, 그리고 자동 제조 시스템을 결합하는 새로운 재료 설계, 성장, 제조 방법이 개발되고 있는 것 같다. 이러한 접근 방식은 재료의 물성과 기능을 개선하는 데 도움이 되며, 최종적으로는 산업에 새로운 가능성을 열 수 있을 것이다."
-  },
-  {
-    "title": "Aniket Roy와의 인터뷰: 컴퓨팅 비전 테스크에 대한 생성 모델 연구",
-    "original_title": "Resource-constrained image generation and visual understanding: an interview with Aniket Roy",
-    "link": "https://robohub.org/resource-constrained-image-generation-and-visual-understanding-an-interview-with-aniket-roy/",
-    "date": "2026-04-07 08:51",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "컴퓨팅 비전 태스크에 대한 생성 모델을 연구한 Aniket Roy와의 인터뷰에서, 그는 PhD를 논문으로 작성하여, 컴퓨팅 비전 테스크에 대한 생성 모델을 개발하는 데 집중했다."
-  },
-  {
-    "title": "Big-D건설의 로봇 도입 확대",
-    "original_title": "Big-D expands construction operations with FieldAI as robotics adoption accelerates",
-    "link": "https://roboticsandautomationnews.com/2026/04/07/big-d-expands-construction-operations-with-fieldai-as-robotics-adoption-accelerates/100362/",
-    "date": "2026-04-07 07:42",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Big-D건설은 필드AI와의 제휴를 통해 다수의 프로젝트에서 로봇을 대규모로 도입하고 있으며, 현장 작업지점에서 자율 시스템 사용이 가속화되는 신호를 보낸다. 이 회사는 2년 이상 필드AI시스템을 테스트해 왔으며 현재는 파일럿 배포부터 더広한 운영에 들어가고 있다."
-  },
-  {
-    "title": "AGIBOT WORLD 2026",
-    "original_title": "AGIBOT Launches ‘AGIBOT WORLD 2026’ to Power the Next Wave of Embodied AI",
-    "link": "https://humanoidroboticstechnology.com/industry-news/agibot-launches-agibot-world-2026-to-power-the-next-wave-of-embodied-ai/",
-    "date": "2026-04-07 07:21",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "AGIBOT이 신개념의 embodied AI 발전을 견인하는 'AGIBOT WORLD 2026' 오픈 소스를 공개했으며, 이 데이터 세트는 embodied intelligence의 5가지 주요 연구 경로를 지원하고 있다. 이 데이터 세트는 구조화된, 정확히 주석이 부착된 실제 로봇 데이터를 제공하여 다음세대 embodied AI 시스템을 훈련하고 평가하는 데 강한 기반을 마련해준다."
-  },
-  {
-    "title": "UBTech ~함",
-    "original_title": "UBTech sees losses and margins improve as humanoid robots drive 40% of revenue - digitimes",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdTA0QzEtWUM3UGxPU0dndjdnY3pUOWt6MFNmdFNxTERZYVMycXg5cXZEVG9PMjl3bGQ5d09Eb2kzQWR3UE9kNlh0bTE3U2tNekw0V3VVVFczNXdMQy05Umdic2YwYUpkSm5aZURKeko1Y21ZT2YtOUZ2UnJOWkFlWnBoVVE1NkxUeWNMMmhSenZoZTA?oc=5",
-    "date": "2026-04-07 06:58",
-    "source": "Google News (China Robotics - EN)",
-    "category": "hand",
-    "summary": "UBTech는 인공위인로봇이 40%의 수익을 내는 가운데 잭손과 마진이 개선됨을 발표했습니다. 이 같은 성과는 인공위인로봇 기술 개발의 효과를 나타내는 데 있다."
-  },
-  {
-    "title": "Neurorobot Policy 최적화",
-    "original_title": "Optimizing Neurorobot Policy under Limited Demonstration Data through Preference Regret",
-    "link": "https://arxiv.org/abs/2604.03523",
-    "date": "2026-04-07 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "Korea의 과학기술지 기자로, STOCK MARKETS, HUMANOID ROBOTS, AI TECHNOLOGY 및 GLOBAL TECH TREND에 대한 전문 지식을 갖추고 있습니다. 본 문서에서는 영어 테크 뉴스에 대하여 한국 개발자 및 투자자에게 설명합니다.\n\n**Translated Korean Title:** Neurorobot Policy 최적화\n\n**Summary:** Robot reinforcement learning framework를 통해 limited demonstration data에서 neurorobot policy를 최적화하는 방안을 제안합니다. proposed QMoP-SSM 모델과 preference regret를 사용하여 robot control policy를 최적화하고, 실용성과 성능을 향상시킵니다.\n\n(No additional text or formatting beyond the output string is allowed.)"
-  },
-  {
-    "title": "CRAFT: 비만aul 로봇 데이터 생성을 위한 비디오 확산",
-    "original_title": "CRAFT: Video Diffusion for Bimanual Robot Data Generation",
-    "link": "https://arxiv.org/abs/2604.03552",
-    "date": "2026-04-07 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "비만aul 로봇 러닝의 제한적은 실제 세계 데이터의 비용과 시각 다양성으로 인해 보조정의 견고성을 제한합니다. 새로운 프레임워크 Canny-guided Robot Data Generation using Video Diffusion Transformers(CRAFT)를 제안하여, 비디오 확산을 기반으로 scalable bi-manual demonstration generation을 synthesizing temporally coherent manipulation videos while producing action labels입니다. 이를 통해 물리적으로 가능한 траектор리 변동과 embodiment transfer를 지원하고, object pose changes, camera viewpoints, lighting and background variations를 포함한 통합 augmentation pipeline을 구축합니다. CRAFT는 simulated videos와 action labels을 pre-trained video diffusion model에 적용하여, simulation trajectories에서부터 실제 세계 demonstrate의 작동.consistent demonstration을 생성합니다. 시작으로부터 apenas a few real-world demonstrations, CRAFT는 large, visually diverse set of photorealistic training data를 생성하고, Sim2Real bypassing the need to replay demonstrations on the real robot을 허용합니다. CRAFT는 existing augmentation strategies와 데이터 scaling보다 simulated and real-world bimanual tasks에서 improved success rates를 보여주는 diffusion-based video generation의 가능성을 확장해줍니다."
   }
 ]
