@@ -72,6 +72,78 @@
     "summary": "arXiv:2605.29562v1 Announce Type: new \nAbstract: Vision-Language-Action~(VLA) models have shown strong potential for general-purpose robotic manipulation, yet they still struggle to generalize to unseen tasks that necessitate transferring relevant experience across objects, scenes, and action patterns. This paper proposes VLA-Pro, a plug-and-play framework designed to enhance cross-task generalization by storing task-relevant procedural memories at training time and transferring these memories during inference. Specifically, VLA-Pro stores task-specific LoRA adapters as parameterized procedural memories during training. At inference time, VLA-Pro retrieves relevant procedural memories based on the current multi-modal context and dynamically fuses these memories for generating the current action chunk. Experiments on RoboTwin, RLBench, and real-world manipulation tasks show that VLA-Pro consistently improves cross-task generalization across multiple backbones, achieving up to a 207% relative improvement in simulation and increasing real-world success rate from 5.8% to 65.0%. These results suggest that procedural memory retrieval and adaptation provide an effective mechanism for transferring manipulation experience to novel tasks while preserving modularity and execution stability."
   },
   {
+    "title": "VE2VF: Vision-Enabled to Vision-Free Distillation via Real-world Reinforcement Learning for Robust Contact-Rich Manipulation",
+    "original_title": "VE2VF: Vision-Enabled to Vision-Free Distillation via Real-world Reinforcement Learning for Robust Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2605.29564",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29564v1 Announce Type: new \nAbstract: When using reinforcement learning (RL) for contact-rich robotic manipulation, vision can provide task-relevant information that accelerates learning beyond what proprioception alone can achieve. However, vision-enabled policies tend to overfit to the visual conditions seen during training, limiting their robustness and transferability. We present a human-in-the-loop RL framework that employs teacher-student distillation to achieve robust performance across multiple task variants, trained entirely in the real world without requiring domain randomization or data augmentation. A vision-enabled teacher distills its knowledge into a vision-free student that relies solely on pose, twist, and wrench sensing, combining fast training with strong task generalization. On the real-world NIST assembly benchmark board, our approach achieves 95\\% overall success after approximately 50 minutes of training on 3 representative tasks, including robust generalization to 8 unseen task variants. Fine-tuning with distillation achieves full success on the most challenging task. We demonstrate that the resulting policies outperform baselines in both robustness and adaptability."
+  },
+  {
+    "title": "Learning to Feel Materials from Multisensory Tactile Data via Interpretable Models",
+    "original_title": "Learning to Feel Materials from Multisensory Tactile Data via Interpretable Models",
+    "link": "https://arxiv.org/abs/2605.29572",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29572v1 Announce Type: new \nAbstract: Human tactile perception of materials relies on complex multisensory touch cues, yet the relationship between low-level tactile signals and perceptual representations remains poorly understood. This knowledge gap hinders the integration of touch in digital environments and the development of robots capable of human-like tactile perception. Here, we present an interpretable computational framework for modeling human material perception and recognition using multisensory touch data. Our framework comprises three interconnected models: Model 1 maps finger-surface interaction features to psychophysical sensory attributes, Model 2 classifies materials based on these perceptual representations, and Model 3 directly classifies materials from tactile features. The results showed that combining information from pressing, static contact, and sliding interactions improves prediction accuracy, and that thermal cues are particularly informative for both perceptual modeling and material classification. These findings highlight the importance of thermal and compliance cues, which remain underrepresented in current robotic fingers and haptic displays. Incorporating such cues may enhance artificial systems' ability to approximate human material perception and guide the design of more perceptually grounded haptic interfaces."
+  },
+  {
+    "title": "VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models",
+    "original_title": "VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.29605",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29605v1 Announce Type: new \nAbstract: Confidence estimation for Vision-Language-Action (VLA) models is essential for robots to perform manipulation tasks in the open world, providing crucial signals for risk-sensitive decision-making and failure anticipation. Existing confidence estimation methods typically rely on ensemble-based paradigms or action-token probabilities to predict the likelihood of task success. However, they still encounter challenges in computational efficiency and cross-architecture generalizability. These methods usually require repeated sampling, leading to inference inefficiency, and are restricted to VLA models with discrete action outputs, making them difficult to apply to continuous action spaces. To address this issue, we propose VLAConf, a one-class discriminative confidence framework. By leveraging frozen pretrained VLA internal representations, VLAConf directly estimates step-wise anomaly scores in a single forward pass using a lightweight confidence head, thereby eliminating the overhead of exhaustive resampling. We additionally use step-conditioned modeling to encode rollout-phase information along the manipulation trajectory. Experiments on the LIBERO benchmark demonstrate that VLAConf significantly improves the quality of the confidence signal constructed for post-hoc calibration, outperforming existing baselines by a large margin in inference efficiency. The effectiveness of VLAConf is further validated in real-robot experiments. To access the source code and supplementary videos, visit https://sites.google.com/view/vlaconf."
+  },
+  {
+    "title": "MARS Policy: Multimodality Only When It Matters",
+    "original_title": "MARS Policy: Multimodality Only When It Matters",
+    "link": "https://arxiv.org/abs/2605.29766",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29766v1 Announce Type: new \nAbstract: Imitation learning has become a cornerstone for solving complex robotic manipulation tasks. In particular, multimodality, which enables robots to capture diverse yet valid behavioral patterns, has driven the rapid emergence of generative policies as a dominant paradigm in robot learning. However, achieving such multimodality typically relies on stochastic noise initialization and iterative denoising procedures, resulting in substantial training complexity and low inference efficiency. Meanwhile, not all phases of a robotic task inherently require behavioral diversity. Motivated by this insight, we propose the Modality-Adaptive Robot Sampling (MARS) policy, which adaptively invokes tailored stochasticity only when it is truly beneficial, while reverting to an efficient deterministic learning during single-modal phases. In other words, the proper amount of noise is injected only at the proper time. By selectively activating multimodal generation, MARS policy bridges the gap between the multimodal capability of generative policies and the superior training and inference efficiency of deterministic models. Empirical studies across 8 simulated and 4 real-world tasks demonstrate that MARS exhibits robust multimodal expressivity and high efficiency, with a 16.67% success rate improvement and an 83.20% inference latency reduction in real-world tests. Counterintuitively, MARS also outpaces deterministic policies in training efficiency on near-deterministic tasks by more effectively modeling nuanced action diversity."
+  },
+  {
+    "title": "LLM-Guided Future Hypotheses for Horizon-Aware Exploration in Multi-Step Robot Manipulation",
+    "original_title": "LLM-Guided Future Hypotheses for Horizon-Aware Exploration in Multi-Step Robot Manipulation",
+    "link": "https://arxiv.org/abs/2605.29864",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29864v1 Announce Type: new \nAbstract: Multi-step robot manipulation requires acting under uncertainty about how the scene will evolve, making exploration and policy adaptation challenging. We study whether short-horizon, task-consistent future videos can provide useful structured priors for control and reinforcement-learning fine-tuning. We formalize this idea through Future-Experience Conditioning (FEC), a simple interface that conditions closed-loop policies on a latent representation of a short future video. In our simulation setup, future clips are generated in three stages, an LLM reasoner operating over a task ontology initialized from the current scene state, a robot-free digital-twin rollout of the intended object motion, and a mask-free video diffusion model that synthesizes a robot-consistent future clip without requiring segmentation at inference. We instantiate this future-conditioning interface primarily with BC and BC+RL, and compare against a future-conditioned Streaming Flow Policy (SFP) baseline on RoboCasa and CALVIN under NoFuture, GTFuture, GenFuture, and WrongFuture. Generated futures improve performance over no-future conditioning, while mismatched futures degrade it, and our BC+RL instantiation achieves the strongest overall results. An average BC+RL learning-curve analysis across 8 CALVIN tasks further shows that GTFuture improves fastest, GenFuture improves earlier and to a higher level than NoFuture, and WrongFuture remains at zero throughout training. These results suggest that short-horizon future videos can serve as useful structured priors for exploration and policy adaptation under imperfect future predictions. https://enact2026.github.io/"
+  },
+  {
+    "title": "Sample-Efficient Diffusion-based Reinforcement Learning with Critic Guidance",
+    "original_title": "Sample-Efficient Diffusion-based Reinforcement Learning with Critic Guidance",
+    "link": "https://arxiv.org/abs/2605.30056",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30056v1 Announce Type: new \nAbstract: Recent advances in reinforcement learning (RL) have achieved great successes by leveraging the multimodality and exploration capability of diffusion policies. Among these approaches, one representative branch focuses on the sampling-based policy optimization. This design enables better exploration capability of the diffusion model, particularly at the beginning of training, but suffer from low exploitation in Q-value information, resulting in a slow policy convergence. Another branch pays attention to gradient-based policy optimization, which sufficiently exploits the gradient of the Q function yet tends to collapse into a unimodal policy with low diversity. To address this issue, we propose CGPO, \\textbf{C}ritic-\\textbf{G}uided diffusion \\textbf{P}olicy \\textbf{O}ptimization, which effectively balances exploration and exploitation with the training-free guidance technique integrated into the denoising process of diffusion policy. Concretely, CGPO steers action generation toward high-value regions defined by the critic network and uses the guided actions as regression objectives. In this manner, CGPO reduces the time required to obtain high-quality actions and improves final performance with better balance between the exploration-exploitation tradeoff. We validate the effectiveness of CGPO on 5 MuJoCo locomotion tasks, and CGPO achieves state-of-the-art performance compared with existing diffusion-based RL methods. Notably, CGPO is the first success to incorporate diffusion policy into real-world RL, with its superior performance on Franka robot arm grasping tasks. Our official page is released at https://dingsht.tech/cgpo-webpage."
+  },
+  {
+    "title": "BORA: Bridging Offline Reinforcement Learning and Online Residual Adaptation for Real-World Dexterous VLA Models",
+    "original_title": "BORA: Bridging Offline Reinforcement Learning and Online Residual Adaptation for Real-World Dexterous VLA Models",
+    "link": "https://arxiv.org/abs/2605.30226",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30226v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have emerged as a promising paradigm for grounding visual-language understanding into real-world robotic manipulation. However, dexterous manipulation remains challenging for VLA policies due to high-dimensional hand control and compounding execution errors, which makes real-world RL post-training essential for bridging the gap between visually grounded action generation and physically reliable dexterous execution. However, high-dimensional dexterous exploration often triggers temporal inconsistency, sample inefficiency and hardware risks in the real world. To address these challenges, we propose BORA, an offline-to-online RL post-training framework designed for real-world dexterous VLA models. In the offline phase, BORA constructs a critic that takes both the VLM's cognition tokens and action chunks as inputs. This design enables action-conditioned value guidance, allowing the critic to evaluate dexterous hand motions beyond visual context alone. During the subsequent online phase, BORA freezes the VLA base and introduces a lightweight, Human-in-the-Loop (HiL) chunk-wise residual adaptation mechanism to mitigate real-world execution errors and further correct the offline-learned intents within the actual physical environment. By inheriting the offline critic and employing intervention-driven rewards, BORA effectively corrects execution discrepancies and adapts to real-world physical variances while preserving the pretrained policy as a stable prior. Extensive evaluations across five complex real-world dexterous tasks demonstrate that BORA significantly outperforms pure imitation learning and traditional decoupled RL baselines, achieving a 33% absolute increase in average success rate under standard settings and up to a 43% improvement in unseen object generalization."
+  },
+  {
+    "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
+    "original_title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
+    "link": "https://arxiv.org/abs/2605.30280",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30280v1 Announce Type: new \nAbstract: Embodied intelligence is often studied through specialized models for individual tasks such as manipulation or navigation, resulting in fragmented capabilities and limited generalization across tasks, environments, and robot embodiments. In this work, we study whether heterogeneous embodied decision-making problems can be unified within a single vision-language-action model. We present Qwen-VLA, a unified embodied foundation model that extends Qwen's vision-language modeling stack from perception, understanding, and reasoning to continuous action and trajectory generation through a DiT-based action decoder. Qwen-VLA is trained with a large-scale joint pretraining recipe over diverse data sources, including robotics manipulation trajectories, human egocentric demonstrations, synthetic simulation data, vision-and-language navigation data, trajectory-centric supervision, and auxiliary vision-language data. To support multiple robot platforms, we introduce embodiment-aware prompt conditioning, where robot-specific textual descriptions specify the current embodiment and control convention. We further cast manipulation, navigation, and trajectory prediction into a unified action-and-trajectory prediction framework, enabling transferable visual grounding, spatial reasoning, and continuous action generation across robot morphologies, task families, and environments. Experiments on manipulation, navigation, and trajectory-centric benchmarks show consistent multi-task performance and out-of-distribution generalization under variations in scene layout, background, lighting, object configuration, and robot embodiment. Qwen-VLA-Instruct achieves 97.9% on LIBERO, 73.7% on Simpler-WidowX, 86.1%/87.2% on RoboTwin-Easy/Hard, 69.0% OSR on R2R, 59.6% SR on RxR, 76.9% average OOD success in real-world ALOHA experiments, and 26.6% zero-shot success on DOMINO dynamic manipulation."
+  },
+  {
     "title": "Best Rugged DC‑DC Converters for Industrial and Military Applications",
     "original_title": "Best Rugged DC‑DC Converters for Industrial and Military Applications",
     "link": "https://roboticsandautomationnews.com/2026/05/28/best-rugged-dc-dc-converters-for-industrial-and-military-applications/102041/",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "2026년에 세계적으로 가장 큰 인형 로봇 제조사 중에 테슬라 옵티무스는 5위, 피구어 AI는 7위로 집계됐다. 중국의 대형 로봇 제조사들도 순위를 占할 정도로 성과를 낸 것으로 보인다.\n\nNote: The translation is in a formal, objective news-brief style, and the summary focuses on technical specifications and strategic significance."
-  },
-  {
-    "title": "AGIBOT Genie Sim 3.0",
-    "original_title": "AGIBOT Announces Genie Sim 3.0",
-    "link": "https://humanoidroboticstechnology.com/news/agibot-announces-genie-sim-3-0/",
-    "date": "2026-04-08 07:05",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "에이비보트가 Embodied AI 개발 플랫폼 genie sim 3.0을 공개함으로 환경 생성, 확장 가능 데이터 생성, 표준 평가를 해결하는 주요 업그레이드임을 발표하였다."
-  },
-  {
-    "title": "Tennibot AItennisballmachine V2 출시됨",
-    "original_title": "Tennibot launches AI-powered tennis-playing machine with adaptive training features",
-    "link": "https://roboticsandautomationnews.com/2026/04/08/tennibot-launches-ai-powered-tennis-playing-machine-with-adaptive-training-features/100404/",
-    "date": "2026-04-08 06:54",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Tennibot이 발전한 인공지능을 갖춘 테니스볼 머신인 Partner V2를 출시했으며, 이 제품은 가볍게 설계되고 다양한 슛 기능을 추가하여 테니스 선수들에게 가장 avanzed한 훈련 경험을 제공하는 것을 목표로 한다."
-  },
-  {
-    "title": "로직이 '옥토포스' 지상 다기능 로봇을 선보아 창고 처리율을 강화함",
-    "original_title": "Logic introduces ‘Octopus’ overhead multi-arm robot to boost warehouse throughput",
-    "link": "https://roboticsandautomationnews.com/2026/04/08/logic-introduces-octopus-overhead-multi-arm-robot-to-boost-warehouse-throughput/100400/",
-    "date": "2026-04-08 06:46",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "로직은 자가 주행 데이터 기반의 로지스틱솔루션의 선구자로, 옥토포스를 고속 다기능 물품 로봇으로 선보였다. 옥토포스는 현존하는 workflow 위에 제동한 상태에서 자율적으로 물品을 선택하며, 이로써 창고 처리율을 강화할 수 있다.\n\n(Note: I followed the strict formatting rules and output the Korean title and summary as required.)"
-  },
-  {
-    "title": "Robotronic& Mitsubishi Electric이 제조하는 고속 약품 배급시스템",
-    "original_title": "Robotronic and Mitsubishi Electric launch high-speed pharma palletising system",
-    "link": "https://roboticsandautomationnews.com/2026/04/08/robotronic-and-mitsubishi-electric-aim-to-strengthen-pharmaceutical-supply-chain-and-cut-medicine-lead-times-with-new-smallest-automated-palletising-cell/100396/",
-    "date": "2026-04-08 06:36",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Robotronic과 Mitsubishi Electric이 20년간의 상호운용적 파트너쉽을 통해 유럽 фар마시스트 공급망을 혁신화하고자 하는 조치를 발표했습니다. 이 조치는 최소규모 자동 배급 셀을 개발하여 필링 시술제와 ampoules를 대상으로 하여 약품 제조기업의 생산성과 효율성을 향상시킬 것입니다."
-  },
-  {
-    "title": "Niantic Spatial ~launchham",
-    "original_title": "Niantic Spatial launches two new world models to support real-world AI deployment",
-    "link": "https://roboticsandautomationnews.com/2026/04/08/niantic-spatial-launches-two-new-world-models-to-support-real-world-ai-deployment/100393/",
-    "date": "2026-04-08 06:21",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Niantic Spatial의 새로운 두 가지 월드 모델을 출시하여 물리적 환경에서 인공 지능(AI) 시스템이 더 효과적으로 작동할 수 있도록 지원함으로써, 실제 세계 공간을 이해하고 상호작용하는 AI 시스템, 즉 '월드 모델'을 개발하는 기업들이 계속 추진하는 방침에 따라 발전해 오는 중이다."
-  },
-  {
-    "title": "precision manufacturing의 기계 선택에 있어 가로 밀링기 vsbed 밀링기: 더 적합한 것은 무엇입니까?",
-    "original_title": "Knee Mill vs Bed Mill: Which One Makes More Sense for Precision Manufacturing?",
-    "link": "https://roboticsandautomationnews.com/2026/04/08/knee-mill-vs-bed-mill-precision-manufacturing/100389/",
-    "date": "2026-04-08 06:05",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "한국의 précision 제조에서는 물론 주어진 부품을 생산하는 데 있어 강력한 기계를 사용하는 것이 아니라 적절한 장비를 선택하는 문제입니다. 이에 대한 기계공장의 결론은 일반적으로 두 가지 종류의 수직 밀링기인 가로 밀링기와 bed 밀링기가 있습니다. 이 기계들은 모두 précision 제조에서 중요한 기능을 수행합니다."
-  },
-  {
-    "title": "KIMM의 人間 로보트 시대 도래에 급속 회전 요구 ~함",
-    "original_title": "S. Korea's KIMM urges rapid pivot as humanoid era dawns - 네이트",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9lVTRMdVBWbHhncDcxX05DSUZ3NmhSYnJsc0FJcDBrODFydC1OZTNGOVRmSWhIWnBDU0tmR2hmbUt5SzRkNU9aaXN6ZEF6NTYzbTVJ?oc=5",
-    "date": "2026-04-08 06:03",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "대한민국의 KIMM(Korea Institute of Machinery and Materials)는 인간 로보트 시대의 도래를 맞이하여 급속한 회전을 촉구하고 있다. 이 기관은 인공지능(AI), 5G, 클라우드 컴퓨팅 등 새로운 기술 혁신을 통한 인간 로보트의 개발을 추진할 계획이다."
-  },
-  {
-    "title": "Generative AI 기술이 전파 방해를 극복한 무선 비전 시스템을 향상시킴",
-    "original_title": "Generative AI improves a wireless vision system that sees through obstructions",
-    "link": "https://robohub.org/generative-ai-improves-a-wireless-vision-system-that-sees-through-obstructions/",
-    "date": "2026-04-08 04:32",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "새로운 기술로 로봇이 숨겨진 물체나 실내 장면을 더 정확하게 감지하거나 이해할 수 있게 됨."
   }
 ]
