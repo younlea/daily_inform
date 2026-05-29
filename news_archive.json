@@ -1,5 +1,77 @@
 [
   {
+    "title": "Extreme dynamic symmetry enables omnidirectional and multifunctional robots",
+    "original_title": "Extreme dynamic symmetry enables omnidirectional and multifunctional robots",
+    "link": "https://arxiv.org/abs/2605.29254",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.29254v1 Announce Type: new \nAbstract: Symmetry is a central organizing principle in natural systems, yet its use as a unifying design strategy in robotics has largely remained limited to geometric form. We show that symmetry can instead be leveraged at the level of dynamic actuation capability. We introduce dynamic symmetry, the uniformity of a robot's attainable center-of-mass accelerations, and formalize it through a measure coined as dynamic isotropy. Across more than 1000 simulated morphologies, we found that higher dynamic symmetry consistently improved trajectory tracking, task success, robustness, resiliency, and energy efficiency, with the benefits becoming most pronounced as dynamic isotropy approached its theoretical limit. To study this regime systematically, we developed Argus, a family of spherical robots designed to explore the effects of increasing dynamic symmetry. Members of the Argus family vary in their actuation geometry and dynamic symmetry level while sharing a common architectural principle: radially oriented linear actuators that directly shape the robot's center-of-mass dynamics. Among them, we built a physical 20-leg Argus variant that achieved near-extreme dynamic isotropy and demonstrated orientation-invariant locomotion, agile traversal of cluttered and deformable terrain, rapid self-stabilization, and resilience to partial actuator failures. Its distributed sensing further enabled omnidirectional perception and object interaction during continuous motion. These results show that designing robots for symmetry not only in morphology but also in their attainable dynamics provides a powerful and general pathway toward agility, robustness, and multifunctionality in uncertain terrestrial and extraterrestrial environments."
+  },
+  {
+    "title": "MonoDuo: Using One Robot Arm to Learn Bimanual Policies",
+    "original_title": "MonoDuo: Using One Robot Arm to Learn Bimanual Policies",
+    "link": "https://arxiv.org/abs/2605.29298",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29298v1 Announce Type: new \nAbstract: Bimanual coordination is essential for many real-world manipulation tasks, yet learning bimanual robot policies is limited by the scarcity of bimanual robots and datasets. Single-arm robots, however, are widely available in research labs. Can we leverage them to train bimanual robot policies? We present MonoDuo, a framework for learning bimanual manipulation policies using single-arm robot demonstrations paired with human collaboration. MonoDuo collects data by teleoperating a single-arm robot to perform one side of a bimanual task while a human performs the other, then swapping roles to cover both sides. RGB-D observations from a wrist-mounted and fixed camera are augmented into synthetic demonstrations for target bimanual robots using state-of-the-art hand pose estimation, image and point cloud segmentation, and inpainting. These synthetic demonstrations, grounded in real robot kinematics, are used to train bimanual policies. We evaluate MonoDuo on five tasks: box lifting, backpack packing, cloth folding, jacket zipping, and plate handover. Compared to approaches relying solely on human bimanual videos, MonoDuo enables zero-shot deployment on unseen bimanual robot configurations, achieving success rates up to 70%. With only 25 target robot demonstrations, few-shot finetuning further boosts success rates by 65-70% over training from scratch, demonstrating MonoDuo's effectiveness in efficiently transferring knowledge from single-arm robot data to bimanual robot policies."
+  },
+  {
+    "title": "Decentralized LLM-Driven Coordination of Acoustic Robots for Contactless Object Manipulation",
+    "original_title": "Decentralized LLM-Driven Coordination of Acoustic Robots for Contactless Object Manipulation",
+    "link": "https://arxiv.org/abs/2605.29378",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29378v1 Announce Type: new \nAbstract: Natural language interfaces can simplify interaction with multi-robot systems, especially when non-expert users need to issue high-level commands. Acoustic manipulation using ultrasonic phased arrays also enables contactless object handling for applications such as healthcare, laboratory automation, and precision transport. However, combining large language models (LLMs) with distributed acoustic mobile robots remains underexplored. This paper presents a decentralized framework for natural language-driven coordination of acoustic robots for contactless object manipulation. The system converts spoken instructions into executable multi-robot task plans using Whisper-based speech recognition, LLM-based semantic parsing, structured JSON task representation, and distributed scheduling. The JSON schema encodes robot assignments, temporal dependencies, spatial constraints, and synchronization requirements for sequential, parallel, and synchronized execution. The system is implemented on two TurtleBot3-based acoustic robots, each equipped with an ultrasonic phased array for contactless object transport. Experiments were conducted in three scenarios: sequential execution, parallel multi-robot transport, and synchronized cooperative manipulation. The system achieved task success rates of 96 percent for sequential tasks, 86 percent for parallel execution, and 70 percent for synchronized collaborative transport. These results show that natural language commands can be transformed into distributed robot actions for contactless manipulation, highlighting the potential of LLM-driven automation for human-robot interaction in distributed robotic systems."
+  },
+  {
+    "title": "Phase-Conditioned Imitation Learning with Autonomous Failure Recovery for Robust Deformable Object Manipulation",
+    "original_title": "Phase-Conditioned Imitation Learning with Autonomous Failure Recovery for Robust Deformable Object Manipulation",
+    "link": "https://arxiv.org/abs/2605.29407",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29407v1 Announce Type: new \nAbstract: This paper presents a phase-conditioned, force-aware framework for robust deformable object manipulation. Standard imitation learning policies such as Action Chunking with Transformers (ACT) rely on a Markovian assumption at inference, causing state aliasing when visually similar observations require contradictory actions and preventing autonomous recovery from execution failures. We address this with a closed-loop hierarchical architecture. A FiLM-conditioned ACT encoder modulates feature extraction based on the current task phase, enabling a single unified policy to produce phase-specific behaviors while sharing action dynamics across phases. A multi-modal phase predictor fusing visual, force, and pose feedback estimates the phase in real time, detecting contact failures that are invisible to vision alone and autonomously triggering recovery trajectories. The system is completed by a hybrid impedance controller for compliant execution and a haptic teleoperation interface for force-aware data collection. Ablation studies show that FiLM-based modulation significantly outperforms both unconditioned and token-level conditioned baselines, and t-SNE analysis confirms that FiLM induces well-separated, phase-specific feature representations. Validated on hanging and removing a T-shirt with dual arms, the closed-loop system improves the hanging success rate from 56\\% to 87\\% through autonomous error recovery. Code and videos: https://leledeyuan00.github.io/phaser/"
+  },
+  {
+    "title": "A Progress-Aware Leader-Follower Midair Docking System for Dual-Drone Aerial Manipulation",
+    "original_title": "A Progress-Aware Leader-Follower Midair Docking System for Dual-Drone Aerial Manipulation",
+    "link": "https://arxiv.org/abs/2605.29410",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29410v1 Announce Type: new \nAbstract: Reliable midair docking between small unmanned aerial vehicles (UAVs) is essential for modular aerial cooperation and manipulation, but it requires precise relative-pose control and repeatable platform under tight thrust and payload constraints. We present a dual-drone docking platform where two quadrotors operate in a leader-follower formation and dock using a lightweight modular frame with passive magnetic latching. A progress-aware mission supervisor manages phase transitions: approach, alignment, capture, and settle. This platform integrates a complete hardware-software stack (ROS 2 with Crazyflie/PX4 interfaces) and synchronized logging for benchmark evaluation. We evaluate the platform in simulation and real-world experiments using quantitative metrics such as formation error, baseline and yaw consistency, docking success rate, time-to-dock, and failure-mode statistics. The platform enables statistically grounded comparison of docking supervision and synchronization strategies and provides a practical testbed for modular aerial cooperation and repeatable midair aerial manipulation."
+  },
+  {
+    "title": "3DVLA: Enhancing Vision-Language-Action Models via 3D Spatial and Instance Understanding",
+    "original_title": "3DVLA: Enhancing Vision-Language-Action Models via 3D Spatial and Instance Understanding",
+    "link": "https://arxiv.org/abs/2605.29416",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29416v1 Announce Type: new \nAbstract: Vision-Language-Action models have achieved remarkable progress in robotic manipulation, yet they suffer from a critical limitation: a lack of 3D scene understanding. This deficiency manifests as three intertwined challenges: weak extraction of 3D spatial positions without enforcing multi-view consistency, inadequate 3D instance understanding, and fragile reasoning under occlusion. Although mature 3D perception methods exist, their direct integration into VLA pipelines is hindered by architectural incompatibility and by heavy reliance on costly instance-level annotations. To address the above challenges, we propose 3DVLA, a plug-and-play framework that injects robust 3D reasoning into pretrained VLAs without requiring extra manual labels or discarding VLM priors. Specifically, 3DVLA tackles the three challenges through: (1) pervasive 3D feature encoding with explicit multi-view consistency constraints across all modalities and a Spatially-Conditioned Geometry Aggregation method, (2) an instance estimation module with high-level instance tokens for 3D instance awareness, and (3) a masked self-supervised 3D encoding branch that retains its predictor for visual token completion to handle occlusions. We integrate 3DVLA with multiple VLA baselines and evaluate on LIBERO-Plus and RoboTwin 2.0. Results show consistent and significant gains in manipulation performance, validating both the effectiveness and plug-and-play compatibility of our approach."
+  },
+  {
+    "title": "ElegantVLA: Learning When to Think for Efficient Vision-Language-Action Models",
+    "original_title": "ElegantVLA: Learning When to Think for Efficient Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.29438",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29438v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models are a powerful paradigm for generalist robotic control. However, their high computational cost and limited control frequency hinder real-time robotic manipulation, especially when large vision-language backbones and iterative action heads run at every control step. Existing VLA acceleration methods often optimize individual components or rely on fixed acceleration rules, treating different control steps with largely fixed computation and overlooking the non-uniform reasoning demands of sequential embodied control. Inspired by human motor control, where cognitive and feedback resources concentrate on goal-sensitive stages, we argue that VLA models should learn when to invest full computation and when to reuse prior computation. We propose ElegantVLA, a plug-in phase-adaptive inference framework that accelerates VLA models through intra-model dynamic compute scheduling. ElegantVLA introduces a lightweight scheduler that observes temporal representation similarity, robot-motion cues, and episode progress to jointly allocate computation across the vision encoder, LLM, and action head. For perception-language reasoning, the scheduler selects a five-level Vision-LLM compute mode, from full recomputation to multi-step temporal reuse, based on visual-language representation stability. For action generation, it selects a three-level denoising mode, reusing intermediate denoising states during stable motion while preserving full refinement for goal-sensitive stages. By coordinating these decisions, ElegantVLA offers a general acceleration framework for modern VLA pipelines with explicit action-generation modules, without modifying or retraining the base model. Experiments on GR00T and CogACT achieve up to 2.55x and 3.77x speedup, and on six real-world GR00T tasks ElegantVLA cuts computation by 2.18x while raising control frequency from 13.8 Hz to 26.3 Hz."
+  },
+  {
+    "title": "VLA-Pro: Cross-Task Procedural Memory Transfer for Vision-Language-Action Models",
+    "original_title": "VLA-Pro: Cross-Task Procedural Memory Transfer for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2605.29562",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29562v1 Announce Type: new \nAbstract: Vision-Language-Action~(VLA) models have shown strong potential for general-purpose robotic manipulation, yet they still struggle to generalize to unseen tasks that necessitate transferring relevant experience across objects, scenes, and action patterns. This paper proposes VLA-Pro, a plug-and-play framework designed to enhance cross-task generalization by storing task-relevant procedural memories at training time and transferring these memories during inference. Specifically, VLA-Pro stores task-specific LoRA adapters as parameterized procedural memories during training. At inference time, VLA-Pro retrieves relevant procedural memories based on the current multi-modal context and dynamically fuses these memories for generating the current action chunk. Experiments on RoboTwin, RLBench, and real-world manipulation tasks show that VLA-Pro consistently improves cross-task generalization across multiple backbones, achieving up to a 207% relative improvement in simulation and increasing real-world success rate from 5.8% to 65.0%. These results suggest that procedural memory retrieval and adaptation provide an effective mechanism for transferring manipulation experience to novel tasks while preserving modularity and execution stability."
+  },
+  {
     "title": "Best Rugged DC‑DC Converters for Industrial and Military Applications",
     "original_title": "Best Rugged DC‑DC Converters for Industrial and Military Applications",
     "link": "https://roboticsandautomationnews.com/2026/05/28/best-rugged-dc-dc-converters-for-industrial-and-military-applications/102041/",
@@ -17926,77 +17998,5 @@
     "source": "Robohub",
     "category": "humanoid",
     "summary": "새로운 기술로 로봇이 숨겨진 물체나 실내 장면을 더 정확하게 감지하거나 이해할 수 있게 됨."
-  },
-  {
-    "title": "CHINA'S HUMANOID ROBOT MARKET 구조",
-    "original_title": "Analysis: China's humanoid robot market forms three-player structure at scaling inflection point - digitimes",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeUJLWURBTElRaVphTnNXb1VHS2djcEVpQ2V5VDVkS2VPZmk5SS1fS2ZFbUp2dmxwVkJDamdGRDY1RlBKYXhfd1Z0TWxsQ3M1UWh1OGNnZm5lZ3ZnR01Wc0d0bko4TUxzaldkbzAxUkdoaGZSRjRKOEV5YjdoeUNxTGx5U1hDU2E4Z0k5RDR0Yzg0QmM?oc=5",
-    "date": "2026-04-08 04:23",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 인공인간 로봇 시장은 크기 도약 지점에서 3인자 구조를 형성함. 최근 5년 동안 100% 이상의 성장률을 달성한 이 시장은 이제 확장 속도와 경쟁 강화로 3대 플레이어 구조를 형성하고 있음. Specifically, Baidu's robot arm subsidiary, Kingdee's robot platform provider, and Megvii's facial recognition technology developer are forming a three-player structure in China's humanoid robot market."
-  },
-  {
-    "title": "Behavioral Shift Detection in Safe Collaborative Manipulation",
-    "original_title": "Belief Dynamics for Detecting Behavioral Shifts in Safe Collaborative Manipulation",
-    "link": "https://arxiv.org/abs/2604.04967",
-    "date": "2026-04-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇이 공유 작업 공간에서 다른 에ージ언트와의 안전한 조정에 성공하려면 그들의 행동이 작업 실행 중에 변경할 수 있는 경우, outdated assumption으로 계속 작동하면 안전하지 않은 액션과 충돌 위험이 증가하게 됩니다. 따라서 이러한 행동 변환의 신뢰적 검출은 매우 중요합니다. 우리는 ManiSkill 공유 작업 공간 조작 태스크에서 제어된 비주류성 하에 범위 전환 검출을 연구했습니다. 열아十 종의 검출 방법과 다섯 난수 생성기로, 검출이 가능하면 post-switch 충돌이 52% 줄어들게 됩니다. 그러나 평균 성능은 실제 허용한 +-3 단계에서 86% ~ 30%, +-5 단계에서는 모든 메서드가 100%의 검출률을 달성하는 등-significant 신뢰도 차이가 있습니다. 우리는 UA-TOM, lightweight belief-tracking 모듈을 소개합니다. 이 모듈은 결제 vision-language-action (VLA) 제어 백본에 selective state-space dynamics, causal attention, 및 prediction-error signals를 추가하여, 1200 에피소드와 다섯 난수 생성기로 UA-TOM이 가장 높은 검출률을 달성하는 unassisted 메서드(85.7% at +-3)과 최저 근거리 시간(4.8 단계)을 보여주는 최고의 검출 성능을 달성합니다."
-  },
-  {
-    "title": "ExpressMM: Expressive Mobile Manipulation Behaviors in Human-Robot Interactions",
-    "original_title": "ExpressMM: Expressive Mobile Manipulation Behaviors in Human-Robot Interactions",
-    "link": "https://arxiv.org/abs/2604.05320",
-    "date": "2026-04-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "휴먼-로봇 상호작용에서 표현적 모바일 마니퓰레이터 행동을 개발하는 ExpressMM 프레임워크를 제안하는데, 이 프레임워크는 비전-언어 모델에 기반한 예지 및 대화(reasoning) 기능과 저준 비전-언어-행동 정책을 결합하여 로봇의 표현적 행동을 생성하도록 한다. 또한, 이 프레임워크는 사용자가 로봇의 액션을 중단하거나 수정할 수 있도록 허용하는 인터럽트 가능한 상호작용을 지원한다."
-  },
-  {
-    "title": "Synergizing Efficiency and Reliability for Continuous Mobile Manipulation",
-    "original_title": "Synergizing Efficiency and Reliability for Continuous Mobile Manipulation",
-    "link": "https://arxiv.org/abs/2604.05430",
-    "date": "2026-04-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇이 무한하게 수평 이동 및 조작을 수행하는 데 있어 효율성과 신뢰성을 동시에 강조하는統一 프레임워크를 제안함. 이를 통해 효율적이고 신뢰적인 성능을 달성하고, 다양한 환경에서 안정적인 지시와 보상을 가능케 함."
-  },
-  {
-    "title": "Simulation-Driven Evolutionary Motion Parameterization for Contact-Rich Granular Scooping with a Soft Conical Robotic Hand",
-    "original_title": "Simulation-Driven Evolutionary Motion Parameterization for Contact-Rich Granular Scooping with a Soft Conical Robotic Hand",
-    "link": "https://arxiv.org/abs/2604.05531",
-    "date": "2026-04-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국 소프트 로보틱 핸드의 granular scooping을 위한 물리 기반 시뮬레이션 모델이 개발됨으로써, 다양한 크기와 모양의 컨테이너 surfaces에 대한 접촉을 유지하여 scooping 효율성을 향상시킴. 이 모델은 재설정 가능하고 Soft robotic end-effectors의 패시브 리컨피게이션 동작을 캡처하여, 시뮬레이션 최적화로 scooping 경로를 자동적으로 설계할 수 있음."
-  },
-  {
-    "title": "Control Architecture and Experimental Validation of a Novel Surgical Robotic Instrument",
-    "original_title": "Control Architecture and experimental validation of a Novel Surgical Robotic Instrument",
-    "link": "https://arxiv.org/abs/2604.05610",
-    "date": "2026-04-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "新시술 로보틱 인스턴メント의 제어 아키텍처와 실험적 validarion으로, 최소침착 수술(MIS)이 환자 트라우마를 줄이고 회복 시간을 단축하는 데 도움이 되지만, 전통적인 laparoscopic 인스트루먼트는 한정된 운동 범위를 유지하는 제약에 걸려 있다. 이 연구에서는 4-DOF гибкая laparoscopic 인스트루먼트의 제어 아키텍처를 제안하고, distal bending, independent distal head rotation, shaft rotation, 및 gripper을 포함하여 10 mm 직경으로 표준 trocar와 호환되게 설계하였다. Raspberry Pi 5에 Motoron 컨트롤러에서 구현된 actuation unit 및 SpaceMouse teleoperation은 얻어졌다. 또한, 분석적 스컬-링 모델이 도출되고 파라미터화되었다. predicted jaw opening은 CAD 측정치(MAE 0.13°)와 OptiTrack motion capture(MAE 1.43°)와 일치하였다. ATHENA 병렬 로보틱과 통합하여 시뮬레이티드 пан크레아스 수술 절차를 확인하였다."
-  },
-  {
-    "title": "GraspSense: Physically Grounded Grasp and Grip Planning for a Dexterous Robotic Hand via Language-Guided Perception and Force Maps",
-    "original_title": "GraspSense: Physically Grounded Grasp and Grip Planning for a Dexterous Robotic Hand via Language-Guided Perception and Force Maps",
-    "link": "https://arxiv.org/abs/2604.05697",
-    "date": "2026-04-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇손의 촥한 manipulation을 위한 물리적 기반 잡기 및 접착 계획을 제안하는 연구임. 이 연구에서는 개체의 3D幾何학을 분석하고, 각 표면 위치에서의 최대侧接촉력 제한을 반영한 힘 지도 생성, 잡기 후보 선택, 임피던스 제어를 통하여 안전하고 신뢰할 수 있는 접착을 달성함."
-  },
-  {
-    "title": "BiCoord: 로봇 두 팔의 manipulate coordinate benchmark",
-    "original_title": "BiCoord: A Bimanual Manipulation Benchmark towards Long-Horizon Spatial-Temporal Coordination",
-    "link": "https://arxiv.org/abs/2604.05831",
-    "date": "2026-04-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇이 인간 수준의 민첩성을 달성하는 데 있어 동시적으로 두 팔을 사용하여 작업을 완료하는 바이만리 만이플(로봇) 조정(Bimanual manipulation)은 필수적입니다. 최근 시뮬레이션 벤치마크, 예를 들어 RoboTwin 및 RLBench2는 데이터 주導 학습을 위한 바이만리 만이플에 대한进展을 이루었습니다. 그러나 기존의 작업은 짧은 개요且에로 loosely 조정되어 실세계 바이만리 만이플의 공간-시간 결합을 모릅니다. 이를 해결하기 위해 우리는 BiCoord, 로봇 두 팔의 긴 개요且에로.tightly 조정된 바이만리 만이플 벤치마크를 introduce합니다. 구체적으로 BiCoord는 다양한 작업을 포함하여 연속적인 상호-팔 의존성 및 다중 하위 목표 간 역할 교환을 요구하는 LONG-HORIZON과 TIGHTLY COORDINATED 바이만리 만이플을 구성합니다. Además, 우리는 공간-시간 관점에서 조정 evaluation을 가능하게 하는 수치적 지표를 제안합니다. EXPERIMENTAL 결과는 대표적인 manipulate 정책, 예를 들어 DP, RDT, Pi0 및 OpenVLA-OFT가 LONG-DURATION과 HIGHLY COUPLED 작업에 어렵게 되며 LONG-HORIZON의 tight 조정 작업에서 근본적인 도전을 주는 것을 보여줍니다. BiCoord가 LONG-HORIZON 협력 만이플 연구의 기반으로 서비스할 수 있는 것도 기대합니다.\n\n(Note: I followed the instructions and formatted the output string accordingly.)"
   }
 ]
