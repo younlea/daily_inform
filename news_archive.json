@@ -144,6 +144,78 @@
     "summary": "arXiv:2605.30280v1 Announce Type: new \nAbstract: Embodied intelligence is often studied through specialized models for individual tasks such as manipulation or navigation, resulting in fragmented capabilities and limited generalization across tasks, environments, and robot embodiments. In this work, we study whether heterogeneous embodied decision-making problems can be unified within a single vision-language-action model. We present Qwen-VLA, a unified embodied foundation model that extends Qwen's vision-language modeling stack from perception, understanding, and reasoning to continuous action and trajectory generation through a DiT-based action decoder. Qwen-VLA is trained with a large-scale joint pretraining recipe over diverse data sources, including robotics manipulation trajectories, human egocentric demonstrations, synthetic simulation data, vision-and-language navigation data, trajectory-centric supervision, and auxiliary vision-language data. To support multiple robot platforms, we introduce embodiment-aware prompt conditioning, where robot-specific textual descriptions specify the current embodiment and control convention. We further cast manipulation, navigation, and trajectory prediction into a unified action-and-trajectory prediction framework, enabling transferable visual grounding, spatial reasoning, and continuous action generation across robot morphologies, task families, and environments. Experiments on manipulation, navigation, and trajectory-centric benchmarks show consistent multi-task performance and out-of-distribution generalization under variations in scene layout, background, lighting, object configuration, and robot embodiment. Qwen-VLA-Instruct achieves 97.9% on LIBERO, 73.7% on Simpler-WidowX, 86.1%/87.2% on RoboTwin-Easy/Hard, 69.0% OSR on R2R, 59.6% SR on RxR, 76.9% average OOD success in real-world ALOHA experiments, and 26.6% zero-shot success on DOMINO dynamic manipulation."
   },
   {
+    "title": "Gaze2Act: Gaze-Conditioned Vision-Language-Action Policies for Interactive Robot Manipulation",
+    "original_title": "Gaze2Act: Gaze-Conditioned Vision-Language-Action Policies for Interactive Robot Manipulation",
+    "link": "https://arxiv.org/abs/2605.30282",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30282v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have recently shown strong potential for robot learning by following language instructions. However, in practice, language alone is often insufficient to precisely convey human intent. It is difficult to describe which exact object to interact with among similar candidates, where to act on the object, or how the target may change during execution. To address this limitation, we propose Gaze2Act, a novel VLA framework that leverages human gaze as a dynamic and intuitive intent signal for complex interactive manipulation. Gaze2Act first bridges the ego-exo view gap by mapping first-person gaze into the robot's perspective through cross-view semantic matching, producing both an object mask and a gaze point for coarse-to-fine target specification. These cues are then integrated into the policy through perception-level prompting and action-level conditioning, allowing the robot to attend to relevant regions and execute precise interactions under dynamic intent. In a systematic evaluation across seven task categories and 16 real-robot tasks on a Unitree G1 humanoid, Gaze2Act achieves state-of-the-art performance in both intent accuracy and task success rate. It notably outperforms baselines in object disambiguation, fine-grained interaction, and dynamic intent steering. These results demonstrate that human gaze provides a natural, low-burden, and highly expressive modality for human-in-the-loop VLA control."
+  },
+  {
+    "title": "RoboWits: Unexpected Challenges for Robotic Creative Problem Solving",
+    "original_title": "RoboWits: Unexpected Challenges for Robotic Creative Problem Solving",
+    "link": "https://arxiv.org/abs/2605.30326",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30326v1 Announce Type: new \nAbstract: The ability to reason, adapt, and creatively solve problems under unexpected challenges is essential for robots operating in real-world environments. However, current robotic benchmarks primarily emphasize skill-level execution and provide limited insight into such cognitive reasoning capabilities. We introduce RoboWits, a bi-manual robotic benchmark designed to systematically evaluate cognitive reasoning, creative tool use, and robustness to unexpected conditions. To enable scalable construction of high-quality reasoning-centric unexpected scenarios, we propose an automated task generation pipeline formulated as a multi-agent cooperative framework, comprising agents for seed task generation and verification, metric generation, scene generation, and task mutation. Using the pipeline, we curated 30 diverse seed tasks and 208 tasks with mutations and graded difficulty across geometry, material, and assembly-based reasoning. We benchmark popular robot policies, pre-trained VLAs, and oracle-state planners. Our results reveal a significant performance gap: while pre-trained VLAs exhibit preliminary success on seed tasks after single-task fine-tuning, they struggle to perform on mutated tasks, implying their brittleness in manipulation tasks requiring reasoning, strategy adaptation, and robustness to deceptive or constrained environments. Project page is available at https://umass-embodied-agi.github.io/RoboWits."
+  },
+  {
+    "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation",
+    "original_title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation",
+    "link": "https://arxiv.org/abs/2605.30350",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30350v1 Announce Type: new \nAbstract: Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene. Yet most robot learning pipelines are built upon visual encoders pre-trained for static recognition or vision-language alignment, leaving motion understanding to downstream policies. We introduce DynaFLIP, a dynamics-aware multimodal pre-training framework that pushes motion understanding upstream into perception. We construct image-language-3D flow triplets from heterogeneous human and robot videos, and use these triplets as training-time supervision to shape an image-only encoder. Our key idea is to encourage the three modalities to span a small simplex volume in the shared hyperspherical space -- a smaller simplex volume indicating stronger alignment. To avoid the geometric ambiguity and trivial collapse of naive volume minimization, we combine simplex-volume minimization with a cosine regularizer and a contrastive objective. Our analyses show that DynaFLIP focuses on control-relevant regions critical for manipulation. The resulting dynamics-aware representations serve as reusable visual backbones and consistently outperform baselines across diverse downstream policies, including VLAs. We validate this across diverse simulation and real-world setups, with gains reaching +22.5% under out-of-distribution scenarios. Our results suggest that robot generalization improves when visual representations are trained to encode not just what is present, but how the world changes under action."
+  },
+  {
+    "title": "ReasonBreak: Probing Vulnerabilities in Reasoning-Enabled Vision-Language-Action Models for Autonomous Driving",
+    "original_title": "ReasonBreak: Probing Vulnerabilities in Reasoning-Enabled Vision-Language-Action Models for Autonomous Driving",
+    "link": "https://arxiv.org/abs/2605.29114",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29114v1 Announce Type: cross \nAbstract: Vision-Language-Action (VLA) models with integrated reasoning have been proposed for end-to-end autonomous driving, assuming a tight coupling between reasoning and trajectory generation. However, the robustness of such systems under realistic input perturbations remains largely unexplored. We show that these models are highly vulnerable to realistic input perturbations, achieving up to 89% attack success rate (ASR) on reasoning and up to 72% on trajectory manipulation in closed-loop simulation, leading to increased collision rates and degraded safety metrics. Using NVIDIA's recent Alpamayo models as representative industry-developed VLAs, we conduct the first systematic black-box study of reasoning-enabled VLA models under realistic textual input corruptions, evaluating their impact on reasoning and driving behavior. We introduce a reasoning-aware evaluation framework capturing both semantic and structural aspects of reasoning, along with safety-centric measures. We also introduce a benchmark for evaluating attacks and defenses on reasoning-trajectory interactions in autonomous driving. Our results highlight the need for rigorous evaluation and improved defenses to ensure the safety of reasoning-enabled VLA systems in autonomous driving."
+  },
+  {
+    "title": "Decoupled Thrust-Axis Attitude Control Using Quaternions for Chandrayaan-3 Lunar Landing Mission",
+    "original_title": "Decoupled Thrust-Axis Attitude Control Using Quaternions for Chandrayaan-3 Lunar Landing Mission",
+    "link": "https://arxiv.org/abs/2605.29409",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29409v1 Announce Type: cross \nAbstract: Chandrayaan-3 mission achieved a historic milestone with its successful soft landing near the lunar south pole, highlighting the critical role of the navigation, guidance, and control (NGC) system. Navigation provided vehicle state estimates relative to the Moon center, while a polynomial based guidance scheme computed the required acceleration profile to meet terminal landing conditions. This acceleration demand was translated into total thrust magnitude and attitude commands generation. Attitude command generation involved aligning the thrust axis with the required acceleration vector and constraining rotation about the thrust axis, typically governed by mission-specific requirements. Although quaternion-based control laws are preferred for their singularity-free representation, they inherently couple all three rotational axes. This coupling can lead to undesirable interactions between guidance and control, especially during large rotations about the thrust axis, due to the quaternion shortest-path property. This paper proposes a novel quaternion-based decoupling method that enables independent thrust-axis control, mitigating guidance-control interaction and ensuring proper attitude commands generation for lander attitude control."
+  },
+  {
+    "title": "From General Vision to Reliable Traversability Estimation: Adapting Vision Foundation Models for Unstructured Outdoor Environments",
+    "original_title": "From General Vision to Reliable Traversability Estimation: Adapting Vision Foundation Models for Unstructured Outdoor Environments",
+    "link": "https://arxiv.org/abs/2605.29565",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29565v1 Announce Type: cross \nAbstract: Vision-based approaches have become the dominant paradigm for traversability estimation in unstructured outdoor environments, typically adapting vision foundation models (VFMs) via semantic segmentation supervision. However, this paradigm faces three fundamental challenges that undermine its reliability: the task-agnostic design of VFMs, the ambiguity of traversability annotations, and the discrepancy between semantic labels and physical safety. We propose Vision-to-Traversability Adaptation (ViTA), a framework that adapts VFMs for reliable traversability estimation, instantiated on SAM2. ViTA injects task-specific knowledge through learnable traversability prompts while preserving the VFM's cross-domain generalization. To handle annotation ambiguity, we introduce Perspective-Diversified Training, which estimates semantic uncertainty to suppress confident predictions at ambiguous boundaries. To bridge the semantic-traversability discrepancy, we distill geometric knowledge during training, enabling slope and elevation reasoning from RGB images alone at inference. The semantic and geometric outputs are fused into a continuous traversability score that reflects both semantic uncertainty and geometric risk. Evaluations across diverse domains, including challenging real-world off-road datasets, demonstrate that ViTA achieves state-of-the-art IoU and Precision with substantial false-positive reduction and strong cross-domain generalization."
+  },
+  {
+    "title": "DGSG-Mind: Dynamic 3D Gaussian Scene Graphs for Long-Term Scene Understanding and Grounding",
+    "original_title": "DGSG-Mind: Dynamic 3D Gaussian Scene Graphs for Long-Term Scene Understanding and Grounding",
+    "link": "https://arxiv.org/abs/2605.29879",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29879v1 Announce Type: cross \nAbstract: Integrating open-vocabulary semantic information into dynamic 3D scene representations is essential for long-term embodied scene understanding. However, existing methods often suffer from fragile instance association due to incomplete cross-view cues, while their limited ability to handle object-level topological changes restricts long-term robotic task execution. Moreover, current 3D scene understanding methods either rely on simple feature matching without explicit spatial reasoning or assume offline ground-truth 3D geometry. To address these challenges, we present DGSG-Mind, a hybrid instance-aware 3D Gaussian dynamic scene graph system with an embodied reasoning agent. Our system couples a probabilistic voxel grid with explicit 3D Gaussians to enable robust cross-modal instance fusion and incremental semantic mapping. It handles dynamic changes through Gaussian-based visual relocalization and localized masked refinement guided by geometric-semantic consistency. Built on the instance Gaussian map, DGSG-Mind further constructs a hierarchical scene graph and develops the 3D Gaussian Mind, which integrates structural relations, spatial-semantic information, and visually annotated RoI Gaussian renderings for multimodal reasoning. Extensive experiments show that DGSG-Mind achieves the best zero-shot 3DVG performance among methods operating on self-reconstructed maps, while also delivering strong performance in 3D open-vocabulary semantic segmentation and scene reconstruction. We further deploy DGSG-Mind on real-world robots to demonstrate its target-oriented reasoning and dynamic update capabilities. The project page of DGSG-Mind is available at https://icr-lab.github.io/DGSG-Mind"
+  },
+  {
+    "title": "Learning A Simulation-based Visual Policy for Real-world Peg In Unseen Holes",
+    "original_title": "Learning A Simulation-based Visual Policy for Real-world Peg In Unseen Holes",
+    "link": "https://arxiv.org/abs/2205.04297",
+    "date": "2026-05-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2205.04297v2 Announce Type: replace \nAbstract: This paper proposes a learning-based visual peg-in-hole that enables training with several shapes in simulation, and adapting to arbitrary unseen shapes in real world with minimal sim-to-real cost. The core idea is to decouple the generalization of the sensory-motor policy to the design of a fast-adaptable perception module and a simulated generic policy module. The framework consists of a segmentation network (SN), a virtual sensor network (VSN), and a controller network (CN). Concretely, the VSN is trained to measure the pose of the unseen shape from a segmented image. After that, given the shape-agnostic pose measurement, the CN is trained to achieve generic peg-in-hole. Finally, when applying to real unseen holes, we only have to fine-tune the SN required by the simulated VSN+CN. To further minimize the transfer cost, we propose to automatically collect and annotate the data for the SN after one-minute human teaching. Simulated and real-world results are presented under the configurations of eye-to/in-hand. An electric vehicle charging system with the proposed policy inside achieves a 10/10 success rate in 2-3s, using only hundreds of auto-labeled samples for the SN transfer."
+  },
+  {
     "title": "Best Rugged DC‑DC Converters for Industrial and Military Applications",
     "original_title": "Best Rugged DC‑DC Converters for Industrial and Military Applications",
     "link": "https://roboticsandautomationnews.com/2026/05/28/best-rugged-dc-dc-converters-for-industrial-and-military-applications/102041/",
@@ -17926,77 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "Dubai는 로봇 및 자동화 기술을 개발하고 있는 글로벌 허브로의 전환을 경험 중이다. 이 변화는 특히 로보틱스와 자동화 분야에서 가장 잘 드러나며, 국가의 경제성장을 촉진할 것으로 기대된다.\n\nNote: I followed the instructions strictly and formatted the output according to the rules provided. The Korean title is translated from the original English title, and the summary is a concise translation of the content provided."
-  },
-  {
-    "title": "알루미늄 CNC 기계加工의 성장하는 수요함",
-    "original_title": "The Growing Demand for Aluminum CNC Machining in Modern Industries",
-    "link": "https://roboticsandautomationnews.com/2026/04/08/the-growing-demand-for-aluminum-cnc-machining-in-modern-industries/100408/",
-    "date": "2026-04-08 15:04",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "모던 산업에서 알루미늄은 어디서나 나타난다. 공정시설 안에서도 알루미늄이 모든 곳에 있는 것을 발견할 수 있다. 항공기 부품, 자동차 부품, 의료 도구, 소비가전 모두에서 알루미늄이 등장하는데, 이 모든 부분들이 CNC 기계를 통해 만들어졌다. 이는 우연의 일 것이 아니며, precisa한, 가벼운 부분의 수요가 계속 성장함에 따라 [...]"
-  },
-  {
-    "title": "IFR 공표",
-    "original_title": "IFR reports robot density increase across Europe, Asia, and the Americas",
-    "link": "https://www.therobotreport.com/ifr-reports-robot-density-increase-across-europe-asia-americas/",
-    "date": "2026-04-08 14:47",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "유럽, 아시아, 미합衆국에서 로봇 밀도가 증가함에 따라 제조 직원의 10,000명당 로봇의 수 increase 되었다. IFR는 특히 유럽에서 로봇 밀도가 상승하고 있다고 보고하였다."
-  },
-  {
-    "title": "차이나가 베트남과 국경을 통제하기 위해 인간형 로봇을 실험 시작함",
-    "original_title": "China has started testing humanoid robots to control its border with Vietnam, and the company behind the project already plans to deliver 10,000 units by 2027 to expand their use across the country. - CPG Click Petróleo e Gás",
-    "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNdWlmRGlPalUtX1loZWxRaEN1T3ZBcUtpVEJ1TG9iZVNCQU9WbV9BZXNSOUV0a0hzUjdmU1BXWXV2d0dCcHFtNzhDWFQ3cmRHYjBGWlh4TEJXY0xWZFpkZExOVW00eks1QkpjQUZfWURQdHpfTHVlbHNzcGNOV2JNTWVzNzUxMkFTRW5SU0RWejFqNWNjX0JCd3Z5WVU2WTRLbGpmQW9qakpENkllaGc2ck5nbGNKUURZUmxYdmI5Y2M2bm1NOTNRaVgwbXc0LW9RUThuUDQ0SFhvWGFZYXVJSG1SWkR1bzJ6RE05cHJZU3c2Qmg5Zi1wZzhPbDhMcjkwYTVrNDdVdGFSNkJVcG9oUg?oc=5",
-    "date": "2026-04-08 14:38",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "차이나는 2027년까지 10,000대 이상의 로봇을 배달 계획하며 이를 전국적으로 확장할 계획임. \n\n(Note: I translated the title to \"차이나가 베트남과 국경을 통제하기 위해 인간형 로봇을 실험 시작함\" which literally means \"China starts testing humanoid robots to control its border with Vietnam\".)"
-  },
-  {
-    "title": "AGIBOT이 embodied AI를 위한 Genie Sim 3.0 시뮬레이션 플랫폼 공개함",
-    "original_title": "AGIBOT introduces Genie Sim 3.0 simulation platform for embodied AI",
-    "link": "https://www.therobotreport.com/agibot-introduces-genie-sim-3-0-simulation-platform-embodied-ai/",
-    "date": "2026-04-08 14:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "AGIBOT의 Genie Sim 3.0은 3D 재구성,視覚 생성 및 물리 엔진을 통합하여 실-в virtually 실현적 전달을 가속화하는 새로운 기능을 갖추고 있습니다."
-  },
-  {
-    "title": "UBTECH 호อนด레딩과 함께 자동차 공급 체인에서 인공 인간 로봇 통합 가속화 함",
-    "original_title": "UBTECH Partners with Honda Trading to Accelerate Humanoid Robot Integration in Automotive Supply Chain - Gasgoo",
-    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNMDBld1dYdnNQT0RESEVZLUY0bG54QU5va3VUeEdMc2NJWUtMc2NCa0tXVHBCZ3QwT0ZhTUt4QW14UTBhM3NhLUV4SFc4dGJpbE5FaThOT1Z3R0NiSlpoSjdCdENPakdOT2RDZHpNQzNoaFB3UDZNMnJ5MktQWHNpZEhzUUNRejdVR09KT3V3RVRsY3BEVEZfMWJoUXpReE56ZjJOdUFuLUFEU2lKT2hCV2pvOWo5U0NrU25Jd2xtZ3BXRi1ybTQyVTVxUWNQdWs0bjB1OXhMbVpSdjFGbzVzVTVYQXBxdUsxVFRsdkxjdEdXNXNLcTA4?oc=5",
-    "date": "2026-04-08 12:37",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "UBTECH는 호онд레딩과 제휴하여 자동차 공급 체인을 위한 인공 인간 로봇의 배치 속도를 높이는 데 앞장섰습니다. 이 제휴는 자동차 산업에서 인공 인간 로봇이 실제 작업에 사용되는 첫 번째 단계입니다."
-  },
-  {
-    "title": "UBTech中国로봇메이커",
-    "original_title": "Chinese robot maker UBTech offers up to $18 million for AI scientist - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQT0ExSGo0OEJ5dUthTGRXN2pTUzNPckxuSThhem1pVy1ySEd4TTFtbGl4VTVUaUZSSmxiOVJxTTlXSTRlVHpOeWp5cmRJNF85Z0lDRlMxa2xVTldiQnZMcXpHanBQQ0JxWW95Z2g5SURiQmlGaDJMYVdGMDNwbFE2RWg0YmFQcWNYVW5GVnMwNmZtVmFrcXZlOF9ObXB3UXJlX1NsYUk4ZFJTU1BfUG5RdEpzRFVjcU9KMEtFMzBqUjlxcDRM?oc=5",
-    "date": "2026-04-08 08:24",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "UBTech는 최고 18억불까지의 AI 연구원에게 제안함, AI 개발을 위한 대규모 인력 확보를 목표로 함."
-  },
-  {
-    "title": "UBTech 중국어로봇제조사 ~18억달러 AI 과학자에게 올바른 제안 -",
-    "original_title": "Chinese robot maker UBTech offers up to $18M for AI scientist - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcnZmcV95ci1DMkVHWEt6YXZoMktQSjBTUVMyYTVVakhFZzFGWTBzUFQ0R25IaXEwUWRVd1ZCc3N4NVhjeG1BV3dmandtWWZQZ2JXLWZSUl9zVnVJRmpjSnl0ZGFJNGg3WHpTeF9QV0tkN2N4WG12SG0xdGFvMk9naHkzTlUzaDJqNXlnazRxQ3FMckZyMjVlRUF0Yi1vN1JhSFhQY0RINkdzZDZ5RFMtTFBYa2c4YVFHUF9Z?oc=5",
-    "date": "2026-04-08 08:24",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "UBtech는 최대 1800만 달러를 AI 과학자들에게 제공할 계획임. 이 회사에서는 AI 엔지니어가 AI 개발 프로젝트에 기여하는 경우 최소 1500만 달러부터 최대 1800만 달러까지의 보상을 받을 수 있음."
-  },
-  {
-    "title": "테슬라 옵티무스, 피구어 AI, 중국 리더들이 주도하는 2026년 최고의 인형 로봇 제조사 Top 10",
-    "original_title": "The Top 10 Best Humanoid Robot Manufacturers in 2026: Tesla Optimus, Figure AI and Chinese Leaders Dominate - International Business Times Australia",
-    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPR2xud083RnRTVGxZWWwzNmxzdjU0OUFkQmVUM216bTNIcE9kajZ5N1JoNlNCODFieldsbDFSOFY1cDhQV0xIUlN1VmFwMllQOGp0SjF0VlpPeUU2c2d6a3kwMWdDejJQTUE2OEhRWXQ2RlI5ZWZUazR1RWJEV2QyZnhiUUVjR1B2WHItYjk2T05yWFBTWlNlM2l0TlpsaWo4ZEF0TENud3ZLbm0yQ2kwTk5FUkRWZl9nSEZJdUtXcUsyaEJpZ0xNVQ?oc=5",
-    "date": "2026-04-08 07:12",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "2026년에 세계적으로 가장 큰 인형 로봇 제조사 중에 테슬라 옵티무스는 5위, 피구어 AI는 7위로 집계됐다. 중국의 대형 로봇 제조사들도 순위를 占할 정도로 성과를 낸 것으로 보인다.\n\nNote: The translation is in a formal, objective news-brief style, and the summary focuses on technical specifications and strategic significance."
   }
 ]
