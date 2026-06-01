@@ -1,5 +1,14 @@
 [
   {
+    "title": "NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research - NVIDIA Newsroom",
+    "original_title": "NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research - NVIDIA Newsroom",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQa1B3b3A1eXcwc3AzeG1BNDRwU1hJbWliLWN6WW5FWlJCaUNrNW1sM24tV3p6NEF4YkVfTnZqWWtfbmttdUxXLVV6bnN4RzQxM0hlVUhLQXVGYzlzRlotVnEzcW1jYy1hallQQVBQWUNESDhXcXJKSElkbGdHM0FVSkVkSTc?oc=5",
+    "date": "2026-06-01 04:55",
+    "source": "Google News (NVIDIA GTC)",
+    "category": "humanoid",
+    "summary": "NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research  NVIDIA Newsroom"
+  },
+  {
     "title": "ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation",
     "original_title": "ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation",
     "link": "https://arxiv.org/abs/2605.30484",
@@ -70,6 +79,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.30780v1 Announce Type: new \nAbstract: In this paper, we use asymmetric vibrations to demonstrate two degree-of-freedom (DoF) in-hand manipulation of grasped parts. The asymmetric vibrations are achieved through closed-loop position control of a moving surface, which applies a periodic stick-slip waveform to the part to be manipulated. We show analytically how two vibratory waveform parameters, the sticking acceleration and the slipping acceleration, affect average part velocity when moving against gravity. The theoretical trends are then validated using an experimental setup where the squeeze force is controlled and part motion is recorded by a high-resolution encoder. We also develop a 2-DoF vibratory surface capable of translation in one direction and rotation about the surface normal. Using two of these 2-DoF surfaces in a parallel jaw gripper configuration, we bidirectionally translate and rotate a variety of grasped parts, as well as demonstrate that the same waveform trends for translation also persist for in-plane rotation."
+  },
+  {
+    "title": "Feat2Go: Visual Feature-Grounded Value Estimation for Embodied Reinforcement Learning",
+    "original_title": "Feat2Go: Visual Feature-Grounded Value Estimation for Embodied Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2605.30795",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30795v1 Announce Type: new \nAbstract: Reinforcement learning is a promising approach for improving the capabilities of vision-language-action (VLA) models while avoiding the heavy data requirements of imitation learning. However, its effectiveness for VLA models is often constrained by sparse supervision and the difficulty of designing informative reward signals for long-horizon manipulation. In this work, we present Feat2Go, a fine-grained value estimation framework for embodied reinforcement learning. Specifically, Feat2Go first derives a continuous progress target from a pretrained visual world model by measuring patch-level similarity to subgoal states and partitioning episodes into semantic stages with trend-based clustering. We then train an embodied value model to predict this structural progress from the current observation and task instruction, and use the predicted value to reshape terminal rewards during policy optimization. The proposed framework is compatible with existing VLA policy reinforcement learning pipelines, including PPO and GRPO, and does not rely on manual reward engineering. Extensive experiments on ManiSkill3 and RoboTwin 2.0 demonstrate that Feat2Go consistently improves the performance of existing VLA models under both single-arm and bimanual manipulation settings. More specifically, on ManiSkill3, Feat2Go improves OpenVLAOFT from 17.5% to 82.9% average out-of-distribution success while retaining 96.9% in-distribution performance. On RoboTwin 2.0, Feat2Go achieves an average success rate of 88.8% in domain-randomized task settings, outperforming prior reinforcement learning methods."
+  },
+  {
+    "title": "High-Load-Density Electro-Permanent Magnetic Foot with Controllable Adhesion for Quadruped Wall-Climbing Robots",
+    "original_title": "High-Load-Density Electro-Permanent Magnetic Foot with Controllable Adhesion for Quadruped Wall-Climbing Robots",
+    "link": "https://arxiv.org/abs/2605.30849",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.30849v1 Announce Type: new \nAbstract: To enable reliable climbing locomotion of quadruped robots on ferromagnetic surfaces, this paper presents a high-load-density electro-permanent magnetic foot with controllable adhesion, featuring force-feedback circular Halbach-net electro-permanent magnet (CHN-EPM) adhesion units and a magnetization control system. Due to its three-dimensional magnetic circuit structure and flux-concentration effect, the CHN-EPM enables a distributed parallel magnetic flux path with enhanced flux utilization, resulting in reduced sensitivity to air-gap variations and allowing effective adhesion to be maintained even under partial contact conditions. The proposed CHN-EPM generates a maximum adhesion force exceeding 1000 N with a load-to-weight ratio over 200:1. A magnetization driver and a two-stage pulse current control strategy are developed to regulate the excitation current amplitude and duration, enabling accurate and reliable magnetization. By incorporating a flexible pressure sensor for contact force feedback, the system can effectively monitor attachment and detachment states, ensuring robust adhesion switching under uncertain contact conditions. The proposed system is integrated into a commercial quadruped robot (Unitree GO2), demonstrating high-load adhesion on ceiling and vertical-wall surfaces and stable locomotion on painted, perforated, and curved ferromagnetic surfaces."
+  },
+  {
+    "title": "Wall-OSS-0.5 Technical Report",
+    "original_title": "Wall-OSS-0.5 Technical Report",
+    "link": "https://arxiv.org/abs/2605.30877",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30877v1 Announce Type: new \nAbstract: Large-scale Vision-Language-Action (VLA) pretraining is increasingly adopted as the foundation for robot policies, yet the evidence for pretrained VLAs is almost invariably reported after task-specific fine-tuning.This leaves a foundational question unanswered: does VLA pretraining itself yield executable robot behavior, or does it merely furnish a better initialization for downstream policy learning? We present Wall-OSS-0.5, an open-source 4B VLA built upon a 3B VLM backbone augmented with action-generation components, designed so that pretrained robotic capability is directly measurable on physical hardware.The model is pretrained across more than 20 embodiments, processing over one million robot trajectories per epoch alongside a grounded multimodal corpus. We adopt a gradient-bridged co-training recipe in which three objectives play distinct and complementary roles: discrete action prediction routes strong VLM-native gradients into the backbone, multimodal prediction preserves grounded vision-language understanding, and continuous flow matching serves as the deployment-time action interface. Before task-specific fine-tuning, the pretrained checkpoint achieves non-trivial zero-shot real-robot behavior, completing several tasks, including a held-out deformable manipulation task, at high task progress on a 17-task suite. After fine-tuning, the same checkpoint serves as a stronger adaptation prior, reaching 60.5% average task progress on 15 real-robot tasks and outperforming \\pi_0.5 by 17.5%. Multimodal evaluations further confirm that action training does not erode grounded vision-language competence: the model preserves broad vision-language ability while strengthening embodied grounding. Together, these results reposition VLA pretraining from an initialization strategy to a directly testable, already useful source of robot capability."
+  },
+  {
+    "title": "A study on a Real-Time VR-Based Teleoperation Framework for Manipulator in Dynamic Environment",
+    "original_title": "A study on a Real-Time VR-Based Teleoperation Framework for Manipulator in Dynamic Environment",
+    "link": "https://arxiv.org/abs/2605.30989",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30989v1 Announce Type: new \nAbstract: Robot teleoperation enables safe, non-contact task execution in hazardous environments where direct human access is difficult, and its application has expanded with recent VR technologies. Many VR teleoperation studies, however, have primarily served as data-collection tools for robot imitation learning, so they often do not explicitly address dynamic obstacles, workspace changes, or collision risks during operation. For real deployment aimed at operator safety, teleoperation must react to dynamic situations with low latency and remain robust to mistakes made by inexperienced operators. This paper presents a VR teleoperation framework that supports real-time manipulation while handling collisions with both static and moving obstacles. The framework integrates GPU-accelerated inverse kinematics and trajectory optimization within a VR interface to generate feasible joint commands at each control cycle under robot constraints. Experiments with a 7-DoF manipulator demonstrate stable online behavior and collision-aware motion generation across three scenarios: obstacle-free, static-obstacle, and moving-obstacle environments. The results indicate that the proposed approach generates motion consistent with the operator's command while producing safe detours when obstacles interfere with the commanded path."
+  },
+  {
+    "title": "HARP-VLA: Human-Robot Aligned Representation Learning for Vision-Language-Action Model",
+    "original_title": "HARP-VLA: Human-Robot Aligned Representation Learning for Vision-Language-Action Model",
+    "link": "https://arxiv.org/abs/2605.31234",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.31234v1 Announce Type: new \nAbstract: Learning generalizable vision-language-action (VLA) models from large-scale human videos is promising but challenging due to cross-embodiment discrepancies in both visual observations and executable actions. While latent action models reduce the action execution gap by learning action abstractions, they still rely on visual features. Thus, misaligned human and robot visual representations can lead to inconsistencies in policy inputs and induce domain-dependent latent actions, hindering effective co-training with human videos. To address this, we propose HARP, a human-robot aligned representation learning framework for more effective VLA pretraining from human videos. Specifically, HARP uses limited paired human-robot demonstrations as cross-embodiment bridges and abundant unpaired human and robot videos as a scalable dynamics supervision data source. It trains a robot-adapted visual encoder and a latent action model with manipulation-centric auxiliary cues and a source-relative pair-discriminative alignment loss, which adapts robot representations toward human semantics while preserving pair-level discrimination. The learned aligned vision encoder and latent action model provide a unified vision and action representation for VLA-style policy learning, where human and robot videos provide vision-language-to-latent-action supervision and a lightweight robot action head grounds latent actions into executable commands. Experiments on feature visualization, simulation, and realworld manipulation show improved human-robot alignment and downstream policy performance, achieving 4.481 average length on CALVIN ABC$\\rightarrow$D and a 7.1\\% realworld success rate gain over the strongest baseline."
+  },
+  {
+    "title": "DeMaVLA: A Vision-Language-Action Foundation Model for Generalizable Deformable Manipulation",
+    "original_title": "DeMaVLA: A Vision-Language-Action Foundation Model for Generalizable Deformable Manipulation",
+    "link": "https://arxiv.org/abs/2605.31286",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.31286v1 Announce Type: new \nAbstract: Real-world household robots require Vision-Language-Action (VLA) foundation models that can acquire reusable manipulation skills across diverse objects, task conditions, and household environments. Deformable-object folding is a representative challenge, requiring robots to handle clothing items from random initial states across varying categories, geometries, materials, and scenes. However, existing VLA systems commonly train separate policies for different object categories, while naively mixed multi-task training often suffers from task interference and degraded performance. To move beyond category-specific folding policies, we introduce DeMaVLA, a VLA foundation model for generalizable Deformable Manipulation. DeMaVLA adopts a VLM backbone with an action expert and formulates continuous action generation using flow matching. To improve efficiency, the action expert is constructed by pruning every other transformer layer while preserving layer-wise alignment with the VLM backbone, reducing training and inference cost. DeMaVLA is first pre-trained on approximately 5,000 hours of selected real-world dual-arm demonstrations to acquire general manipulation priors. It is then post-trained on mixed folding data that aggregates self-collected demonstrations and corrective trajectories from real-robot failures across multiple folding tasks through a human-in-the-loop Data Aggregation~(DAgger) pipeline. Experiments show that DeMaVLA achieves competitive performance on RoboTwin and strong real-world results on our household folding benchmark. These results highlight the value of scalable real-world data, efficient action generation, and corrective learning for general-purpose VLA policies in deformable-object manipulation."
+  },
+  {
+    "title": "Surface Constraint Policy for Learning Surface-Constrained and Dynamically Feasible Robot Skills",
+    "original_title": "Surface Constraint Policy for Learning Surface-Constrained and Dynamically Feasible Robot Skills",
+    "link": "https://arxiv.org/abs/2605.31321",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.31321v1 Announce Type: new \nAbstract: Diffusion-based imitation learning methods have driven rapid progress in robot dexterous manipulation tasks. However, they have limitations when applied to tasks that involve complex free-form surface constraints because of their lack of explicit surface geometry constraint modeling and the dynamic feasibility issue, resulting in stochastic action generation that fails to achieve reliable surface alignment and maintain stable contact. To address these limitations, we propose a novel surface constraint policy (SCP) for generating robot actions that satisfy free-form surface constraints on the basis of human demonstrations and real-time visual observations. First, the surface geometry constraint is encoded using a two-dimensional weighted Gaussian kernel function that is derived from demonstrations. Building on the encoded surface geometry constraints, the diffusion-based policy is used to infer task-level action intentions from multimodal sensory inputs, including visual observations and robot state feedback. These intentions are further transformed into surface-constrained dynamic movement primitives (DMPs) through a similarity-based action mapping method, thereby enabling smooth and compliant motion execution. The SCP achieves generation of structured surface geometric intent and dynamically admissible actions. The proposed method is validated on multiple surface manipulation tasks and compared with existing techniques. The experimental results demonstrate superior task success rates and contact stability under surface constraints."
+  },
+  {
+    "title": "Learning Terrain-Aware Whole-Body Control for Perceptive Legged Loco-Manipulation",
+    "original_title": "Learning Terrain-Aware Whole-Body Control for Perceptive Legged Loco-Manipulation",
+    "link": "https://arxiv.org/abs/2605.31343",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.31343v1 Announce Type: new \nAbstract: Legged manipulators integrate exceptional terrain adaptability along with mobile manipulation capabilities, which make them highly promising for deployment in human-centric environments. By coordinating the control of both legs and arms, a whole-body controller can significantly expand the operational workspace of legged manipulators. However, many existing whole-body controllers primarily depend on proprioception and do not incorporate the critical exteroception required for effective terrain topology perception. This limitation can hinder their ability to adapt to varying environmental conditions and navigate complex terrains effectively. In this paper, we introduce TA-WBC, a terrain-aware whole-body control framework for legged manipulators, which features a novel RL-based unified policy tailored to whole-body loco-manipulation tasks in various terrains. Specifically, we employ a hybrid exteroception encoder to extract terrain features, providing an essential basis for the robot to proactively adapt posture and footholds. Furthermore, to facilitate stable cross-terrain loco-manipulation, we propose a novel end-effector sampling method based on the foot contact plane, decoupling manipulation target from base fluctuations. Moreover, a dual-policy distillation module is introduced to integrate expansive whole-body motion with terrain adaptability without catastrophic forgetting. The simulation and real-world experiments validate the robustness of our proposed controller, which leads to a larger reachable space, less tracking error, and reduced unexpected stumbles. This unified policy highlights the promising capabilities of legged manipulators in performing loco-manipulation tasks across complex terrains."
   },
   {
     "title": "Unitree Humanoid Robot Shakes Hands with Child - 조선일보",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "中国 로보틱스 스타트업 EngineAI가 200억달러를 인수한 B 시리즈 투자가 공개됨. 이 투자로 EngineAI는 AI 기반 로보틱스 개발을 강화하고 글로벌 시장 확장에 나설 계획임."
-  },
-  {
-    "title": "A Physical Agentic Loop for Language-Guided Grasping with Execution-State Monitoring",
-    "original_title": "A Physical Agentic Loop for Language-Guided Grasping with Execution-State Monitoring",
-    "link": "https://arxiv.org/abs/2604.07395",
-    "date": "2026-04-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "'언어 지침에 따라 물체 잡는 로봇 제어 시스템을 개선하기 위해 물리적 에이전트 루프를 개발했다. 이 새로운 루프에서는 물체 잡는 기본 동작과 실행 상태 감시 층을 추가하여 실시간으로 실패 이벤트를 탐지하고 재시도를 수행할 수 있다.'"
-  },
-  {
-    "title": "GraspDreamer: 기능적인 잡기 기술 ~함",
-    "original_title": "Grasp as You Dream: Imitating Functional Grasping from Generated Human Demonstrations",
-    "link": "https://arxiv.org/abs/2604.07517",
-    "date": "2026-04-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "GraspDreamer는 일반적 로봇이 실세계의 다양한 물체와任务에 기능적으로 잡을 수 있도록 하는 새로운 접근방식을 제안합니다. 이 기술은 영상 생성 모델(VGM)으로부터 인간 시연 데이터를 Synthesize하여 zero-shot functionality grasping을 가능하게 합니다."
-  },
-  {
-    "title": "EgoVerse: 에고중심인 인물 Dataset for 로봇 러닝 from Around the World",
-    "original_title": "EgoVerse: An Egocentric Human Dataset for Robot Learning from Around the World",
-    "link": "https://arxiv.org/abs/2604.07607",
-    "date": "2026-04-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 러닝의 성장에 있어 대규모且多様한 데이터의 필요성이 부각되나, 로봇 데이터 수집은 비용과 확장성 문제를 안고 있다. 에고중심인 인물 데이터는 manipulate 태스크의 다양한 환경에서 rich 정보를 제공하는 promising 접근 방식으로 간주된다. 그러나 기존 인물 데이터셋들은 일반적으로 scope가 제한적이고, 확장이나 조직간 분산을 앓는다. 우리는 EgoVerse, 로봇 러닝에 있어 인물 데이터驱动 플랫폼을 제안하는데, 데이터 수집, 처리, 접근을 공유 프레임워크 하에서统一화해 개인 연구자, 학술연구소, 업체 파트너의 참여를 허용하게 된다. 현재 릴리즈에는 1,362시간(80k 에피소드) worth of human demonstrations that spans 1,965 태스크, 240 scenes, and 2,087 unique demonstrators가 포함되어 있으며, 표준화된 formats, manipulation-relevant annotations, and tooling for downstream learning이 제공된다."
-  },
-  {
-    "title": "HEX:인공시선체조정 전문가 집단을 위한 크로스 เอimbodiment 전신 제어",
-    "original_title": "HEX: Humanoid-Aligned Experts for Cross-Embodiment Whole-Body Manipulation",
-    "link": "https://arxiv.org/abs/2604.07993",
-    "date": "2026-04-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국의 3D 로봇 제어에 있어 복잡한 manipulation은 일체적으로 조작되는 전신 제어를 요구하는 경우, 일반적인 VLA 모델에서는 로봇의 각 부분을 서로 독립적으로 다루게 되므로 고도-DoF 인공시선체 제어는 어려운 문제였다. HEX 프레임워크를 발표하여 이 문제를 해결하고자 하며, 이 프레임워크에는 인공시선체 조정에 적합한 UNIVERSAL STATE REPRESENTATION을 도입하여 다양한 embodimentsacross 학습의 skalability를 확보하고, Mixture-of-Experts Unified Proprioceptive Predictor를 사용하여 전신 조작과 temps motion dynamics을 modeling할 수 있다."
-  },
-  {
-    "title": "EMMa: End-Effector Stability-Oriented Mobile Manipulation for Tracked Rescue Robots",
-    "original_title": "EMMa: End-Effector Stability-Oriented Mobile Manipulation for Tracked Rescue Robots",
-    "link": "https://arxiv.org/abs/2604.08292",
-    "date": "2026-04-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "탭모바일 매니피류의 구동 안정화를 목표로 한 EMMa 프레임워크를 발표하는 연구입니다. 이 프레임워크는 구동 및 매니피류 상태를couple한 최적화 모델을 구성하여 비선형성을 완화하고 계산 복잡도를 줄이는 데 효과적인이고, 독립 제어 스키ーム도 개발하여 로봇의 경로 추적을 가능하게 했습니다.実験 결과로 SOTA 방법보다 성과를 보여주는 EMMa 프레임워크는 구동 안정화를 통해 복잡한 모바일 매니피류 태스크에서 효과와robustness를 갖추고 있습니다."
-  },
-  {
-    "title": "Sumo: Dyanmic and Generalizable Whole-Body Loco-Manipulation",
-    "original_title": "Sumo: Dynamic and Generalizable Whole-Body Loco-Manipulation",
-    "link": "https://arxiv.org/abs/2604.08508",
-    "date": "2026-04-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보트가 거친 물품을 동시에 움직이는 수면 동작을 가능하게 하는 새로운 접근 방식이 공개됨. 이 방법은 사전 훈련된 몸 전체 제어 정책을 테스트 시에 샘플 기반 계획자로 조정하여 다양한 동적 위치 이동 작업을 해결할 수 있는 것을 발견하였으며, 실제 세계에서 Spot 쿼드레포트 로봇을 사용하여 다양한 힘의 물품을 움직이는 경우와, 인형 로보트가 문을 열고 테이블을 밀 때까지 generalize하는 예를 보여주는 방식임."
-  },
-  {
-    "title": "A-SLIP: 액усти큐 센싱을 통한 지속적 인핸드 슬립 추정함",
-    "original_title": "A-SLIP: Acoustic Sensing for Continuous In-hand Slip Estimation",
-    "link": "https://arxiv.org/abs/2604.08528",
-    "date": "2026-04-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "액스티큐 감지 시스템인 A-SLIP은 패러럴-자우 그립퍼에 내장된 다채널 액스티큐 마이크로폰을 사용하여 구획면에서의 지속적 슬립을 추정합니다. 이 시스템은 텍스트드 실리콘 접촉패드 뒤에 위치한 파이즈로 전기 마이크로폰을 통해 구조화된 접촉유도 진동을 捕捉하고, 이진 처리를 통하여 슬립의 존재, 방향 및 크기를 예측합니다."
-  },
-  {
-    "title": "ActiveGlasses: Learning Manipulation with Active Vision from Ego-centric Human Demonstration",
-    "original_title": "ActiveGlasses: Learning Manipulation with Active Vision from Ego-centric Human Demonstration",
-    "link": "https://arxiv.org/abs/2604.08534",
-    "date": "2026-04-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Korea human manipulation 및 지각 행위 학습을 위한 ActiveGlasses 시스템이 소개됨. 이 시스템은 smart glasses에 탑재된 stereo 카메라를 통해 지각 행위를 capture하며, 같은 카메라가 6-DoF perception arm에 장착되어 robotic platform으로의 zero-shot transfer를 가능하게 함."
-  },
-  {
-    "title": "SIM1: Physics-Aligned Simulator as Zero-Shot Data Scaler in Deformable Worlds",
-    "original_title": "SIM1: Physics-Aligned Simulator as Zero-Shot Data Scaler in Deformable Worlds",
-    "link": "https://arxiv.org/abs/2604.08544",
-    "date": "2026-04-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 manipulated deformable objects의 데이터 중한 세부와 상호작용하는 embodied learning에서 shape, contact, topology이 rigid-body abstraction에 비교하여 심대한 다양성을 나타낸다. 우리는 simulation이 비합리적인 이유는 synthetic이지 ungrounded임을 주장한다. 이를 해결하기 위해 우리는 SIM1, physics-aligned real-to-sim-to-real data engine을 도입하는데, limited demonstrations으로 scene을 metric-consistent twin으로 digitize하고 deformable dynamics를 elastic modeling에 의거하여 calibrate하고 diffusion-based trajectory generation에 quality filtering을 추가하여 sparse observations을 scaled synthetic supervision으로 변환시킨다. 이 파이프라인은 purely synthetic 데이터로 훈련된 정책이 1:15 EQUIVALENCE RATIO에서 real-data baseline과 경쟁성을 나타내며, real-world deployment에서 90% zero-shot 성공과 50% generalization gain을 달성한다. 이러한 결과는 physics-aligned simulation이 deformable manipulation의 scalable supervision으로 데이터 효율적 정책 학습의 실제 경로임을 확인시킨다."
   }
 ]
