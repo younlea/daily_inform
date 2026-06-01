@@ -1,5 +1,77 @@
 [
   {
+    "title": "ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation",
+    "original_title": "ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation",
+    "link": "https://arxiv.org/abs/2605.30484",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30484v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have shown promise for robotic manipulation, yet most existing policies operate reactively by directly regressing actions from current observations, without explicitly modeling future dynamics. This limits their ability to generalize under out-of-distribution perturbations. To address this issue, we propose ELAN4D, an embodiment-centric, 4D-aware training framework that enhances VLA policies with future robot keypoint tracks as predictive spatio-temporal supervision. Using only forward kinematics from proprioceptive states, we derive 3D displacement tracks of robot keypoints, such as joints and the end-effector, with negligible preprocess cost. These tracks provide metric and compact supervision without requiring external trackers or reconstruction. A plug-and-play auxiliary branch with a lightweight track decoder injects this 4D signal into the action expert while preserving the pretrained vision-language backbone through gradient isolation. The track decoder is discarded during inference, leaving the base policy interface unchanged. Extensive experiments on LIBERO, LIBERO-Plus, RoboTwin2.0 and real-world manipulation tasks demonstrate that ELAN4D consistently improves over strong VLA baselines, achieving the best overall performance and substantial gains under out-of-distribution perturbations, including camera, background, and layout shifts. These results highlight the effectiveness of embodiment-centric 4D supervision for building more robust and generalizable manipulation policies."
+  },
+  {
+    "title": "Physics-informed Goal-Conditioned Reinforcement Learning under Hybrid Contact Dynamics",
+    "original_title": "Physics-informed Goal-Conditioned Reinforcement Learning under Hybrid Contact Dynamics",
+    "link": "https://arxiv.org/abs/2605.30503",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30503v1 Announce Type: new \nAbstract: Learning to reach arbitrary goals from sparse feedback requires agents to infer a rich notion of reachability across state--goal pairs. Goal-conditioned reinforcement learning (GCRL) tackles this challenge by learning policies that generalize across goals, but this generalization becomes increasingly difficult as the underlying dynamics become high-dimensional, hybrid, or contact-dependent. To address this issue, physics-informed GCRL (Pi-GCRL) introduces optimal-control-inspired inductive biases into goal-conditioned value learning. While Pi-GCRL methods have proven effective in navigation and object-free goal-reaching domains, their reliability in contact-rich tasks remains unclear, where contact interactions induce hybrid dynamics, mode-dependent controllability, and nonsmooth value landscapes. In this work, we show that these structural properties can cause existing Pi-GCRL methods to degrade when applied naively to contact-rich manipulation. Motivated by this analysis, we introduce contact-aware and hierarchical formulations that apply physics-informed inductive biases selectively across the manipulation problem. Our results provide a principled step toward extending Pi-GCRL to contact-rich manipulation."
+  },
+  {
+    "title": "ARISTO Hand: Sensing-Driven Distal Hyperextension for Fine-Grained Manipulation",
+    "original_title": "ARISTO Hand: Sensing-Driven Distal Hyperextension for Fine-Grained Manipulation",
+    "link": "https://arxiv.org/abs/2605.30508",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30508v1 Announce Type: new \nAbstract: Manipulating thin objects requires precise contact geometry and reliable force perception, yet many anthropomorphic robotic hands lack the mechanical and sensing capabilities needed for such interactions. We present the ARISTO Hand, a tendon-driven robotic hand that integrates active distal hyperextension with a hybrid fingertip-sensing architecture that combines a rigid, nail-mounted force-torque sensor and a soft capacitive tactile array. Active hyperextension enables controlled fingertip engagement beyond the kinematic limits of standard flexion, increasing pull-out force by 2.76x for object thicknesses of 1-20 mm while preserving the nominal grasp capability. The rigid nail-mounted sensor provides reliable force measurements during edge contacts, where the sensitivity of proprioceptive force estimation degrades as the contact geometry approaches kinematic singularities. We validate the proposed architecture through quantitative force characterization and a multi-stage SD card extraction and insertion task. Video and supplementary materials are available at: https://aristohand.github.io"
+  },
+  {
+    "title": "Any-ttach: Quick End-effector Swapping Enables Manipulation Dexterity with Simplicity",
+    "original_title": "Any-ttach: Quick End-effector Swapping Enables Manipulation Dexterity with Simplicity",
+    "link": "https://arxiv.org/abs/2605.30569",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30569v1 Announce Type: new \nAbstract: Robotic manipulation dexterity is often pursued by building increasingly complex high-DoF multifingered hands. While many robotic hands are designed to replicate human morphology, the functional role of human hands suggests a different perspective: much of their complexity may exist to enable tool use and tool making. This observation motivates Any-ttach, a tool-centric manipulation framework that treats quick end-effector swapping as a mechanism for dexterity with simplicity. Any-ttach combines a low-cost automatic swapping mechanism for an open-close robot interface, a handheld device for collecting human demonstrations, and a task planning framework that composes learned, parameterized, and planned tool-use skills. The system supports diverse tools and end-effector modules, including daily tools, articulated tools such as scissors, Fin Ray fingers, and a low-cost anthropomorphic hand, through the same shared interface. Our experiments show that Any-ttach improves tool-swapping reliability, increases demonstration efficiency, reduces tool-pose variability, and supports diverse tool-use skills. In two long-horizon tasks, making a sandwich and preparing a cucumber, Any-ttach executes six tool-use subskills through end-effector switching and execution monitoring. These results suggest that robots can expand manipulation capability not only through more complex end-effectors, but also through rapidly exchangeable tools and end-effector modules. More details and videos are available at https://any-ttach.github.io/."
+  },
+  {
+    "title": "GSAM: A Generalizable and Safe Robotic Framework for Articulated Object Manipulation",
+    "original_title": "GSAM: A Generalizable and Safe Robotic Framework for Articulated Object Manipulation",
+    "link": "https://arxiv.org/abs/2605.30740",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30740v1 Announce Type: new \nAbstract: Articulated object manipulation is a unique challenge for service robots. Existing methods employ end-to-end policy learning, visionmotion planning, and large-language/visual-language model (LLM/VLM), but often overlook the diversity of articulated objects and the complexity of interactions between end-effector and handle, leading to limited generalization and destructive collisions. To address this, we propose GSAM, a generalizable and safe robotic framework for articulated object manipulation. Specifically, a vision-based perceiver generates the kinematic parameters. Considering that pre-trained markers in perceiver yield raw estimations that may deviate from commonsense, we present a f ine-tuned VLM-based refiner, using chain-of-thought (COT) commonsense reasoning to refine perception. To prevent destructive collisions, we design an interaction constraint function generator, integrating articulated object, interaction pose, and obstacle avoidance knowledge into a base. LLM then functionalize these constraints and apply them to trajectory and posture planning. A kinematic-aware manipulation planner verifies reachability for trajectory and posture. Experiments on 50 hinge tasks across 5 object categories and 50 randomly initialized end-effectorhandle configurations show that GSAM reduces standard deviation by 3.1% and improves manipulation success rate by 36.0% compared to the best baseline, respectively demonstrating the superior object generalization and interaction safety of GSAM in practical scenarios."
+  },
+  {
+    "title": "SSR: Scaling Surefooted and Symmetric Humanoid Traversal to the Open World",
+    "original_title": "SSR: Scaling Surefooted and Symmetric Humanoid Traversal to the Open World",
+    "link": "https://arxiv.org/abs/2605.30770",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2605.30770v1 Announce Type: new \nAbstract: Extending humanoid traversal to the open world is key to practical deployment in human environments, but remains challenging. The robot must use vision to ensure safe and reliable foot placement on heterogeneous terrain under highly dynamic motion, while producing coordinated, natural whole-body behaviors. We propose SSR, an efficient end-to-end framework for egocentric vision-based humanoid traversal that jointly learns these capabilities. SSR introduces imagined foothold guidance, which learns to model forthcoming swing-foot contacts and evaluates their support to guide pre-touchdown swings toward stable regions, reducing edge slips. It further employs equivariant latent-space symmetry augmentation to efficiently induce bilateral coordination under high-dimensional visual observations, and uses terrain-specific multi-discriminator motion priors to encourage human-like behavior across scenes. Extensive experiments show that SSR achieves safe, stable, and high-quality locomotion on diverse real-world terrains, including stairs with varied structures and extreme challenges such as wide gaps and high platforms, while enabling reliable long-horizon traversal in open outdoor environments."
+  },
+  {
+    "title": "Object-Informed Model Predictive Path Integral Control for Non-Prehensile Robot Manipulation",
+    "original_title": "Object-Informed Model Predictive Path Integral Control for Non-Prehensile Robot Manipulation",
+    "link": "https://arxiv.org/abs/2605.30778",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30778v1 Announce Type: new \nAbstract: Long-horizon planning for non-prehensile robot manipulation is challenging due to underactuated and discontinuous interactions. We propose a hierarchical formulation of model predictive path integral (MPPI) control that guides robot-level planning with a separately computed object-level plan to achieve efficient long-horizon prediction. We first solve a simplified object-only problem, assuming the object can be actuated directly, and use the planned object trajectory as a reference in solving the joint robot-object planning problem. We evaluate our method in both simulation and hardware using a 6-DoF xArm6 manipulator to perform object pushing tasks in which the target object must reach a goal while avoiding static obstacles, necessitating non-myopic reasoning. Our object-informed MPPI increases task success by 40\\% with a 26\\% faster control frequency in simulation, and by 20\\% in real experiments with similar computation as regular MPPI."
+  },
+  {
+    "title": "Two Degree-of-Freedom Vibratory Transport in a Grasp",
+    "original_title": "Two Degree-of-Freedom Vibratory Transport in a Grasp",
+    "link": "https://arxiv.org/abs/2605.30780",
+    "date": "2026-06-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.30780v1 Announce Type: new \nAbstract: In this paper, we use asymmetric vibrations to demonstrate two degree-of-freedom (DoF) in-hand manipulation of grasped parts. The asymmetric vibrations are achieved through closed-loop position control of a moving surface, which applies a periodic stick-slip waveform to the part to be manipulated. We show analytically how two vibratory waveform parameters, the sticking acceleration and the slipping acceleration, affect average part velocity when moving against gravity. The theoretical trends are then validated using an experimental setup where the squeeze force is controlled and part motion is recorded by a high-resolution encoder. We also develop a 2-DoF vibratory surface capable of translation in one direction and rotation about the surface normal. Using two of these 2-DoF surfaces in a parallel jaw gripper configuration, we bidirectionally translate and rotate a variety of grasped parts, as well as demonstrate that the same waveform trends for translation also persist for in-plane rotation."
+  },
+  {
     "title": "Unitree Humanoid Robot Shakes Hands with Child - 조선일보",
     "original_title": "Unitree Humanoid Robot Shakes Hands with Child - 조선일보",
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRHdJWDdtOWNXQk1yTkJqNkEydEZGQ2hqSVI4NTM3ZVUyb1RucDNpenhMb0k3Y3RtN0E5M1lXSE1iZHlaQktTUlBsbFNUcjMybWREbXNXendSM0JJMXBkU2VvbmV5cTBuMkQ4ZmkzNmNzZlNKdEVzcjJLQnlIMFU3TDM3a09oelNa?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로봇 manipulated deformable objects의 데이터 중한 세부와 상호작용하는 embodied learning에서 shape, contact, topology이 rigid-body abstraction에 비교하여 심대한 다양성을 나타낸다. 우리는 simulation이 비합리적인 이유는 synthetic이지 ungrounded임을 주장한다. 이를 해결하기 위해 우리는 SIM1, physics-aligned real-to-sim-to-real data engine을 도입하는데, limited demonstrations으로 scene을 metric-consistent twin으로 digitize하고 deformable dynamics를 elastic modeling에 의거하여 calibrate하고 diffusion-based trajectory generation에 quality filtering을 추가하여 sparse observations을 scaled synthetic supervision으로 변환시킨다. 이 파이프라인은 purely synthetic 데이터로 훈련된 정책이 1:15 EQUIVALENCE RATIO에서 real-data baseline과 경쟁성을 나타내며, real-world deployment에서 90% zero-shot 성공과 50% generalization gain을 달성한다. 이러한 결과는 physics-aligned simulation이 deformable manipulation의 scalable supervision으로 데이터 효율적 정책 학습의 실제 경로임을 확인시킨다."
-  },
-  {
-    "title": "Visually-grounded Humanoid Agents",
-    "original_title": "Visually-grounded Humanoid Agents",
-    "link": "https://arxiv.org/abs/2604.08509",
-    "date": "2026-04-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "한국 인공지능(VI) 2계층(pipeline) 방식으로 실제 세계 3D 장면에 디지털 인간을 배치할 수 있는 새로운 기술을 발표했습니다. 이 시스템은 실제 세계 영상을 기반으로 3D gaussian.scene을 재구성하고, 이러한 avatars를 autonomous humanoid agents로 변화시켜 실제와 비슷한 행동을 수행합니다."
-  },
-  {
-    "title": "Iteratively Learning Muscle Memory for Legged Robots to Master Adaptive and High Precision Locomotion",
-    "original_title": "Iteratively Learning Muscle Memory for Legged Robots to Master Adaptive and High Precision Locomotion",
-    "link": "https://arxiv.org/abs/2507.13662",
-    "date": "2026-04-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "로보트의 정조동 운동을 위한 Iterative Learning Control(ILC) 및 torque library(TL)를 결합한 확장 가능한 Adaptive Control Framework를 제안합니다. 이를 통해 로보트가 외부 교란 및 불명시된 역학에 적응하여 정확한 구간 추적과 일반화를 달성할 수 있습니다. TL은 스토어드 콘트롤 프로필을 저장하고 속도, 표면, 중력 조건 변화에 대한 빠른 적응을 가능하게 하여 모델 불확실성 및 외부 교란에 대한 보완을 제공합니다. 이 방법은 2-족 로보트 Cassie와 4-족 로보트 A1에 대한 시뮬레이션과 하드웨어 실험을 통해 검증되었습니다. 결과는 정조동 추적 오류를 최대 85%까지 줄이고 주기적 및 비주기적 걸음의 실행을 가능하게 하는 등 효과적인 솔루션이라는 점을 강조합니다."
-  },
-  {
-    "title": "Amazon CEO 회의로봇이 배달速度, 비용을 낮추는 열쇠임",
-    "original_title": "Amazon CEO says robotics is key for faster delivery, lower costs",
-    "link": "https://www.therobotreport.com/amazon-ceo-says-robotics-key-faster-delivery-lower-costs/",
-    "date": "2026-04-09 23:50",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Amazon은 현재 1천만 명의 로봇이 공급기지에서 운영 중으로, 저장, 선택, 정렬, 및 내부시설運輸에 도움을 주고 있습니다."
-  },
-  {
-    "title": "Unitree의 R1 인공인간 로봇 US에서 AliExpress를 통해 데뷔함",
-    "original_title": "Unitree's cheapest R1 humanoid robot to debut in US via AliExpress - Interesting Engineering",
-    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaHA2RlVoUGM5dmRLQXRTVXNHSmFIS2kza29ueHRxNWlYNmY5c05QYVRob1J4VTJxajNoOHVid2lscmdoTmN0MlV0TmgwRFJ1dXhuR21MRHVuZnlFR05LSkdmUkotOWhleWRnSVVxMTVjM2tzZFpsRDNsWExsNFl5eEJ5V045WHg1eS1xSURzTks?oc=5",
-    "date": "2026-04-09 22:31",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree는 R1 인공인간 로봇을 AliExpress를 통해 미국에 데뷔할 계획으로, 이 제품은 1,500 달러의 낮은 가격에 제공될 예정이다. 이产品은 17.5kg의 무게를 가지는 3D 프린팅 된 알루미늄재는 1.4m의 높이까지 올라갈 수 있는 인공인간 로봇으로, 개발자가 이를 활용하여 다양한 산업에서 적용할 수 있을 것이다.\n\nNote: The Korean title and summary are strictly formatted according to the rules provided, with a separator \""
-  },
-  {
-    "title": "PickNik의 MoveIt Pro 9",
-    "original_title": "PickNik releases MoveIt Pro 9 to improve AI-driven robotics in variable environments",
-    "link": "https://roboticsandautomationnews.com/2026/04/09/picknik-releases-moveit-pro-9-to-improve-ai-driven-robotics-in-variable-environments/100466/",
-    "date": "2026-04-09 21:19",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "PickNik은 MoveIt Pro 9를 출시하여 AI 구동 로봇이 복잡한 환경에서 작동하는 것을 개선하고자 하는 새로운 기능을 추가했습니다. 이 업데이트는 '스캔-플랜' 워크플로우를 중점으로 하는데, 이는 로봇이 실제 세계에서 작동할 수 있는 방식을 제공합니다."
-  },
-  {
-    "title": "엑솔, 미국 로보틱스 피니싱 네트워크 출시 '피니싱 액어 서비스' 모델 도입",
-    "original_title": "Exol launches US robotic fulfillment network with ‘fulfillment-as-a-service’ model",
-    "link": "https://roboticsandautomationnews.com/2026/04/09/exol-launches-us-robotic-fulfillment-network-with-fulfillment-as-a-service-model/100462/",
-    "date": "2026-04-09 21:08",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "엑솔(구 그린박스 로지스틱스)가 처음으로 미국 \"물리 AI\" 피니싱 시설을 출시하여 새로운 로지스틱스 모델을 개발하게 되었다. 이를 통해 대규모 웨어하우스 자동화 지원을 확장할 계획으로, 전국 6개 부지 총 60만 제곱피트 규모의 네트워크를 구축할 예정이며, 이에 따라 리테일 등 산업 지원을 강화할 것이다."
-  },
-  {
-    "title": "DoorDash와 WING이 메트로 애틀랜타에 드론 배달 파트너십을 확장함",
-    "original_title": "DoorDash and Wing expand drone delivery partnership to Metro Atlanta",
-    "link": "https://roboticsandautomationnews.com/2026/04/09/doordash-and-wing-expand-drone-delivery-partnership-to-metro-atlanta/100459/",
-    "date": "2026-04-09 20:39",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "도어더시 및 와이ング은 로컬 커머스 플랫폼과 주거용 드론 배달 회사 간의 파트너십을 메트로 애틀랜타 지역으로 확장하여, 새로운 방식으로 메트로 애틀랜타 소비자들이 선호하는 로컬 메르칸트에게 주문할 수 있도록 해주어, 플랫폼상의 배달 옵션을 확대하고 있습니다. \n\n(Note: I followed the instructions strictly, using a formal and objective tone, and ending in nouns as instructed. The title is translated naturally into professional Korean, and the summary concisely highlights the key points of the expansion.)"
-  },
-  {
-    "title": "Robotics Plus One 2억원의 PICK를 달성함",
-    "original_title": "Plus One Robotics hits 2 billion picks as warehouse automation scales under labor pressure",
-    "link": "https://roboticsandautomationnews.com/2026/04/09/plus-one-robotics-hits-2-billion-picks-as-warehouse-automation-scales-under-labor-pressure/100455/",
-    "date": "2026-04-09 20:29",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "AI-powered robotic vision으로 물류 Automation이 가속화되는 가운데, parcel induction와 depalletization 로봇의 글로벌 휩집으로 2억개의 PICK를 달성한 것으로 확인됐다. 더킹로, 회사는 물류 및 e-commerce 운営자들을 대상으로 지능적인 Automation을 추진하는 10년目の 기념일이기도 하다."
   }
 ]
