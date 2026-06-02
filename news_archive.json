@@ -72,6 +72,78 @@
     "summary": "arXiv:2606.00119v1 Announce Type: new \nAbstract: Reliable work zone mapping is important for connected and autonomous vehicles (CAVs) to navigate safely and smoothly through work zone areas. Cone-mounted ultra-wideband (UWB) roadside units (RSU) offer a cost-effective way for work zone layout inference, as roadside anchors and vehicle tags provide direct vehicle-to-infrastructure (V2I) range constraints for work zone geometry reconstruction. However, UWB range estimation is degraded by bursty outliers, non-line-of-sight (NLOS) errors, arbitrary anchor-ordering issues, and vehicle pose uncertainties in practical field deployments. To address these challenges, this study proposes a pose-conditioned, permutation-equivariant predictive denoiser for multi-anchor UWB ranging. The model employs shared anchor-wise temporal prediction to capture range dynamics, symmetric set aggregation to handle unordered and missing anchors, and pose-conditioned residual decoding to incorporate vehicle motion as a geometric prior. A two-stage training strategy first learns prediction from observed ranges, and then fine-tunes the denoiser with NLOS-weighted supervision. The method is evaluated on rare real-world V2I UWB field data collected with a CAV, as well as on controlled large-scale simulation benchmarks for ablative insights. Results show that the proposed method substantially improves range accuracy, cone localization, and work zone geometry reconstruction in challenging NLOS-dominated regimes, remains robust to anchor re-indexing and moderate anchor dropout, and reduces measurement-weighted field MSE by 66.9% relative to the raw input."
   },
   {
+    "title": "Completion at the Boundary (CaB): Deployable Switching with Completion-Aware Control under Limited Calibration",
+    "original_title": "Completion at the Boundary (CaB): Deployable Switching with Completion-Aware Control under Limited Calibration",
+    "link": "https://arxiv.org/abs/2606.00145",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.00145v1 Announce Type: new \nAbstract: Vision-language-action (VLA) agents can execute natural-language instructions, yet deployed systems still lack an operational interface: deciding when the instruction is complete. This gap is acute in short composites (\"do A, then B\"), where mistimed handoffs cascade into downstream failures. Completion is inherently closed-loop because switching is an intervention that changes the instruction context and thus future actions and observations. We study completion under a deployable low-calibration regime motivated by open-ended instruction spaces, enforcing no test-time relearning and a single globally calibrated switching rule selected once on development set and reused unchanged on test set. Under this constraint, collapsing asymmetric boundary evidence into a single scalar can be brittle under polarity shifts across tasks. We propose Completion at the Boundary (CaB), which predicts an event-local completion object in the form of Boundary-Phase Tokens (Before/Hit/After), retaining two-sided boundary evidence under this discipline. CaB-When converts this completion object into a minimal, auditable switching decision (when), while CaB-How reuses the same completion object to condition action generation for boundary-stable control through handoffs (how). Using an intervention-aware E1/E2 protocol, we show that CaB improves composite execution and handoff quality on a first-person Minecraft VLA benchmark under matched capacity and deployability constraints."
+  },
+  {
+    "title": "Modeling Robotics Dataset Construction as an Artifact-Based Build Process",
+    "original_title": "Modeling Robotics Dataset Construction as an Artifact-Based Build Process",
+    "link": "https://arxiv.org/abs/2606.00162",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.00162v1 Announce Type: new \nAbstract: Robotic systems generate large volumes of multimodal sensor data, but converting ROS bag recordings into machine learning datasets is often handled by ad hoc sequential scripts, creating engineering overhead and slow iteration cycles. We model dataset construction as an artifact-based build process over a dependency graph and implement this approach in Bagzel, an open-source Bazel extension for reproducible, incremental dataset generation (including nuScenes-format export). We compare Bagzel and Bagzel-xattr (server-side digest management) against a sequential rosbag2nuscenes baseline. Bagzel reduces runtime in all evaluated execution modes, with the largest gains in iterative workflows (up to 386.26x in warm builds and 7.21x in incremental builds on a 20.4 GB dataset). Across dataset sizes from 5.1 to 20.4 GB, Bagzel variants show markedly better scaling behavior than the baseline, especially in warm and incremental modes. Bagzel-xattr provides additional gains, with a mean runtime reduction of 5.9% compared to Bagzel in the input granularity study. Overall, modeling robotics dataset construction as an artifact-based build process substantially reduces dataset update latency while maintaining a deterministic build design that supports reproducibility. Bagzel is publicly available at https://github.com/UniBwTAS/bagzel."
+  },
+  {
+    "title": "Safe2Drive: Evaluating Safe Driving Behaviors of E2E Autonomous Driving Models",
+    "original_title": "Safe2Drive: Evaluating Safe Driving Behaviors of E2E Autonomous Driving Models",
+    "link": "https://arxiv.org/abs/2606.00191",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.00191v1 Announce Type: new \nAbstract: Recent end-to-end (E2E) autonomous driving policies achieve high driving scores in closed-loop simulations. Yet it remains unclear whether these policies handle common safety-critical scenarios. We present Safe2Drive (S2D), a set of Bench2Drive-aligned scenario extensions focused on three frequent families of road hazards: work zones, pedestrian jaywalking, and occluded vulnerable road users (VRUs). Safe2Drive adds 100 common but challenging scenarios and introduces SafeDriving Score (SDS), a safety-centric metric that augments prior evaluators with pre-crash braking, work zone-object contact, lane centering, and smoothness checks. Evaluating two state-of-the-art policies (LEAD and SimLingo) on S2D, we find that their driving scores drop sharply relative to their reported Bench2Drive baselines (LEAD: from 94.70 DS on Bench2Drive to 39.95 DS on S2D; SimLingo: from 85.07 DS on Bench2Drive to 41.00 DS on S2D) and that SDS on S2D is low (11.85 for LEAD and 15.27 for Sim-Lingo). These results are consistent with brittle safe-driving behaviors such as poor work-zone understanding, red-light violations, and late or absent braking for pedestrians. This study highlights a lack of safe behavioral reasoning in E2E models even when tested on CARLA towns that are part of the training set. We plan to release the code and videos for all 100 S2D scenarios."
+  },
+  {
+    "title": "Cuttlebot: a platform demonstration for complex, autonomous, bio-inspired swimmers",
+    "original_title": "Cuttlebot: a platform demonstration for complex, autonomous, bio-inspired swimmers",
+    "link": "https://arxiv.org/abs/2606.00197",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.00197v1 Announce Type: new \nAbstract: Increasing interest in deep-sea operations and resources motivates the development of ecologically sensitive but environmentally durable robots. Dielectric elastomer actuator artificial muscles are good candidates for powering such systems due to their pressure and temperature tolerance and soft makeup, but they are difficult to integrate with robotic systems. This work presents an autonomous robotic platform: the CORE, capable of driving six artificial muscles while sensing visual and spatial information. To validate the platform, we developed the Cuttlebot - a cuttlefish-inspired robot that swims in three dimensions using undulatory fin locomotion. The Cuttlebot has four primary artificial muscles in its fins in addition to a tentacle-inspired soft gripper. The robot was evaluated in a series of tethered and untethered swimming tests, demonstrating a top speed of 2.5 centimeters per second translation and 10 degrees per second rotation. Furthermore, the CORE system was capable of driving specialized control signals into the artificial muscles to controllably output force and torque in six axes. This work provides a platform for developing complex, bio-inspired swimming robots for ocean exploration and monitoring, laying the foundation with our leading example: the Cuttlebot."
+  },
+  {
+    "title": "HOIST: Humanoid Optimization with Imitation and Sample-efficient Tuning for Manipulating Suspended Loads",
+    "original_title": "HOIST: Humanoid Optimization with Imitation and Sample-efficient Tuning for Manipulating Suspended Loads",
+    "link": "https://arxiv.org/abs/2606.00252",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.00252v1 Announce Type: new \nAbstract: Manipulating suspended payloads with humanoid robots is challenging because the robot can only influence an underactuated, oscillatory load through whole-body motion and intermittent contact. Imitation learning provides safe initial behavior but does not directly optimize final placement, while reinforcement learning from scratch is unsafe and sample-inefficient on real humanoids. We present HOIST-Humanoid Optimized with Imitation and Sample-efficient Tuning for manipulating suspended loads. HOIST first finetunes a high-level vision-language-action (VLA) policy from virtual-reality (VR) teleoperation demonstrations and executes its commands through a whole-body controller. It then uses VLA rollouts and iterative batched RL to improve placement accuracy and stopping behavior. Experiments in simulation and on a real humanoid show that HOIST improves over imitation-only and additional-demonstration baselines; compared with pure VLA rollouts, HOIST reduces translational placement error by 19.9 cm and raw angular error by 3.56 degrees, demonstrating the potential of humanoids for underactuated material-handling tasks."
+  },
+  {
+    "title": "Per-Group Error, Not Total MSE: Fine-Tuning Vision-Language-Action Models for 11-DoF Mobile Manipulation",
+    "original_title": "Per-Group Error, Not Total MSE: Fine-Tuning Vision-Language-Action Models for 11-DoF Mobile Manipulation",
+    "link": "https://arxiv.org/abs/2606.00253",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.00253v1 Announce Type: new \nAbstract: Fine-tuning Vision-Language-Action (VLA) models for mobile manipulators with heterogeneous joint spaces can produce a counterintuitive result: the checkpoint with the lowest aggregate MSE is not the one that performs best on the real robot. We argue this is a predictable consequence of collapsing heterogeneous joint groups (arm, gripper, head, wheeled base) into a single metric, where easy-to-predict joints can mask joints that still fail.\n  We fine-tune SmolVLA (450M, action-expert only) on the 11-DoF Toyota HSR and compare it against $\\pi_{0.5}$ (3.3B), a stronger pretrained baseline. Per-group analysis exposes two patterns: in SmolVLA, the mobile base converges slowest and limits overall performance. In expert-only fine-tuning of $\\pi_{0.5}$ (training only the action head, backbone frozen), total MSE drops below the baseline but arm accuracy degrades. On 60 real-robot trials (20 per model), $\\pi_{0.5}$ 80k (4.0/4) significantly outperforms both fine-tuned variants (expert-only 3k: 3.75/4; HSR-SmolVLA: 3.5/4; Mann-Whitney $p \\leq 0.010$), despite expert-only 3k having the lowest total MSE. This separation is most consistent with the offline arm-group error, not total MSE or base-group error. We conclude that per-group error is a more reliable signal than total MSE for checkpoint selection on robots with heterogeneous action spaces. Code: https://github.com/paumontagut/per-group-mse-vla"
+  },
+  {
+    "title": "Constrained Whole-Body Tracking for Humanoid Robots",
+    "original_title": "Constrained Whole-Body Tracking for Humanoid Robots",
+    "link": "https://arxiv.org/abs/2606.00374",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.00374v1 Announce Type: new \nAbstract: Recent advances in reinforcement learning (RL) have demonstrated impressive whole-body agility for humanoid robots, yet ensuring safety and satisfying constraints -- particularly those specified after training -- remains a challenge. Towards this goal, we present ConstrainedMimic, a control framework that leverages whole-body kinematics and dynamics for real-time constraint enforcement within RL tracking policies. By integrating principles from operational space control and control barrier functions (CBFs), we enable the satisfaction of arbitrary runtime constraints on both the kinematic reference motion and the underlying dynamics. In whole-body motion-tracking and teleoperation experiments on a (simulated) Unitree G1 with a learned policy, we demonstrate collision avoidance (both with the robot body and external obstacles), joint limits, and center of mass stability constraints. By remaining consistent with the current contact mode and tracking objectives, we minimally restrict the capabilities of the policy when constraints are active. Our method is fully differentiable, runs on CPU, GPU, and TPU, and can be deployed at up to 300-500 Hz. All software will be freely available upon publication."
+  },
+  {
+    "title": "SoFiE: Soft Finger Exoskeleton for Intelligent Grasping",
+    "original_title": "SoFiE: Soft Finger Exoskeleton for Intelligent Grasping",
+    "link": "https://arxiv.org/abs/2606.00397",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.00397v1 Announce Type: new \nAbstract: Soft wearable robotic systems have emerged as a promising solution for assisting individuals with reduced hand function. This paper presents SoFiE, a modular soft finger exoskeleton designed to assist index-finger flexion during grasping tasks. The proposed system is primarily fabricated using 3D-printed flexible materials, enabling a lightweight, low-profile, and modular design. Actuation is achieved through a tendon-driven mechanism powered by a compact DC motor, while passive extension is provided by a compliant conductive spring. This element, termed StretchSense, also functions as a proprioceptive sensor by exhibiting resistance changes under deformation. Furthermore, a novel tactile sensing approach, MagSense, is introduced, using a magnet and magnetometer pair embedded in a soft fingertip structure to estimate contact force and object compliance. The system is fully untethered and controlled by an embedded microcontroller. In addition, actuator-level sensing through motor encoder feedback enables estimation of the system state, providing a foundation for safe and adaptive control strategies. Experimental validation demonstrates the capability of the system to provide reliable pose estimation, distinguish between materials with different stiffness, and generate distinct sensor signatures across different grasping tasks. This paper details the design, fabrication, and sensing concepts of the proposed exoskeleton as a proof of concept toward modular, soft, and assistive wearable robotics."
+  },
+  {
     "title": "China’s Robot Maker Unitree Passes IPO Review For STAR Market Listing - BusinessToday Malaysia",
     "original_title": "China’s Robot Maker Unitree Passes IPO Review For STAR Market Listing - BusinessToday Malaysia",
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcDNYTFFrYnNrWk1wQWdiNWJKMENBWEpoNUFHUjFGUXJSQlZpX2s4LVo3NVc2TXJOeGhkZG9zNllDRkJXOUo3Q09fQVV2NEZmQmVuZVUwa3pJV1lwc1pIU0NvWGRMT1pLTWJLcmxHQ1R2QzJZejUzei1OSkdNNEdsam9fbjJVS3QtRTJXMDVfMXZ1RjA0b25GdTNHTnJBVU1rUUJhSDJFalFORnlhN3ZEN3hsTQ?oc=5",
@@ -583,6 +655,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Nvidia, Unitree and Sharpa to design humanoid robot that can perform ‘real work’  South China Morning Post"
+  },
+  {
+    "title": "SG robotics firm Sharpa powers H2 Plus humanoid robot - Tech in Asia",
+    "original_title": "SG robotics firm Sharpa powers H2 Plus humanoid robot - Tech in Asia",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNN3A5ZU8zTlpZV2pfZ25hZnNJY2M1LWhrNnJmOENoZHcwTF83MHNsOFhRcTY2Z2ZzODl1RzNQdmVfU0Z5X3NRX3o3TXNVT2RlWG1qV0hRQzJhckRRQlZ0S1Fhc2FuMmpGUV9uWHJMS3MycU9CSnVaa2M0MDFmenNHSlhjb1RGRjA?oc=5",
+    "date": "2026-06-01 05:30",
+    "source": "Google News (China Hand/Sensor Startups - EN)",
+    "category": "hand",
+    "summary": "SG robotics firm Sharpa powers H2 Plus humanoid robot  Tech in Asia"
   },
   {
     "title": "Nvidia selects Unitree for humanoid research platform - Let's Data Science",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "한국의 로봇 연구소가 개발한 인간형 로봇이 야생 돼지 무리를 추적하는 동영상이 공개됨. 로봇은 20㎞/h에 달하는 속도로 움직이며, 야생 돼지들과 10분간의 추적 경쟁을 펼쳤다."
-  },
-  {
-    "title": "Fiber Optic Equipment 사용 가이드 ~함",
-    "original_title": "A Practical Guide to Fiber Optic Equipment and its Uses",
-    "link": "https://roboticsandautomationnews.com/2026/04/13/a-practical-guide-to-fiber-optic-equipment-and-its-uses/100553/",
-    "date": "2026-04-13 18:47",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "피복 optic 네트워크는 modern connectivity의 기초입니다. 그들은 스트리밍 비디오와 클라우드 데이터, 병원과 이緊急 서비스에 긴급 통신까지 전송합니다. 그러나 이러한 네트워크를 구축, 유지 및 문제해결하려면 특정 설치 또는 유지 단계를 처리하기 위해 설계된 각종 장치 및 장비의 조직적인 툴킷이 필요합니다."
-  },
-  {
-    "title": "Transitive Robotics 2.0 오픈소스 로봇 프레임워크 발표함",
-    "original_title": "Transitive Robotics announces Transitive 2.0 open-source robotics framework",
-    "link": "https://www.therobotreport.com/transitive-robotics-announces-transitive-2-0-open-source-robotics-framework/",
-    "date": "2026-04-13 17:49",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Transitive Robotics는 ClickHouse, Grafana, Alertmanager를 추가하여 성장하는 로봇 집단을 지원하기 위해 고급 저장 및 모니터링 기능을 제공하는 Transitive 2.0을 공개했다."
-  },
-  {
-    "title": "Locus 로보틱스~배열",
-    "original_title": "Locus Robotics launches Locus Array for fully autonomous fulfillment",
-    "link": "https://www.therobotreport.com/locus-robotics-launches-locus-array-for-fully-autonomous-fulfillment/",
-    "date": "2026-04-13 16:38",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Locus 로보틱스가 완전히 自動화된 대실무를 위한 Locus Array를 출시하여, DHL과 다른 고객사에서 이미 사용 중인 상태임."
-  },
-  {
-    "title": "링크드인 피드를 13억 사용자에게 제공하는 LLM 활용 방법",
-    "original_title": "How LinkedIn Feed Uses LLMs to Serve 1.3 Billion Users",
-    "link": "https://blog.bytebytego.com/p/how-linkedin-feed-uses-llms-to-serve",
-    "date": "2026-04-13 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "링크드인 엔지니어링 팀이 피드를 재구성하고 직면한 도전 과제를 설명합니다. \n\n(Note: The translation is formal and objective, following the tone and style guidelines. Key terms and company names are kept in English or use standard Korean transliteration.)"
-  },
-  {
-    "title": "Humanoid robot programming & development ~공개됨",
-    "original_title": "Humanoid robots show off their language and boxing skills in Hong Kong",
-    "link": "https://techxplore.com/news/2026-04-humanoid-robots-language-skills-hong.html",
-    "date": "2026-04-13 15:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "홍콩에서 인형 로봇이 언어 및 бок싱 기술을 선보였는데, 이를 주제로 크레드 학생 크기인 인형 로봇이 만다언어와 영어를 사용하여 노래를 불렀으며 질문에 답하며 주변 관객을 즐겁게 했다."
-  },
-  {
-    "title": "홍콩에서 인형 로봇이 언어와 бок싱 스킬을 뽐내다",
-    "original_title": "Humanoid robots show off their language and boxing skills in Hong Kong - Tech Xplore",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPcVVtSDVQOHVZRVhINFZzWmRlNGlYVk5YVUgyM0hKemVnRnRONC1TdW5HWWhhVDJIRGdkblZZWW5hZWRnWUc4ckRBOWFKT0lLUDNVeW9kYWxvdDNVVUcwTjZlNWlDdGR4RGtNSkFvdTBpelBNYl9mYmdkZTlucjdFRTBGQQ?oc=5",
-    "date": "2026-04-13 15:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "홍콩에서 열린 행사에서 인형 로봇은 언어 처리 기능과 복싱 기술을 선보였다. 이에 따라 로봇이 사람과 같은 언어를 사용하고, 복싱 경기에서도 좋은 성능을 보여준다.\n\nNote: I followed the instructions carefully and output only the required formatted string with the Korean title and summary."
-  },
-  {
-    "title": "홍콩에서 인공지능 로봇의 언어 및 бок싱 기술 공개됨",
-    "original_title": "Humanoid robots show off their language and boxing skills in Hong Kong - abcnews.com",
-    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVXB6RlFibWNLY2txOGxYemdWdEFkZVZPQ1JhT2VBUE1pN1hnTHpNbXVhQ2VhWFZzZkxud0llcGR5ZEppbnJlT0Yzb3M3NlcxSk03bTZkem5CcXZtcURGRk5hTm43QmVlVnZXZVkzTUZuR05PUXh5Y01OUlczT1ZHVzB5RC1jaFZDM2NfQVZwQzRvUy0yRVVWZ1NRN01aVThPUGtJVWl30gGrAUFVX3lxTE9iaHBkM19KanYzbEFaU2huRkdhdWZUVTlsUEdKWWJSSEg2Y0xqeTdfQjZ4amc1Y2RIN003U1ZjWUpEOXFtTDJyRVViWHJWTlVnNHpPelpGbEJNN0lOWVhtaVBLazAxNDZxMjZNYUxCTWVlQjRSSGU2UjRCcmoxM2tPdjUyOFAtU3ZDWExCdV80dHphYThuTGdHcjMyZUJRdGJGWjU4Z3pDZ3R5NA?oc=5",
-    "date": "2026-04-13 13:48",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "홍콩에서 개최된 인공지능 로봇 쇼케이스에서는 인공지능 로봇이 언어와 бок싱 기술을 선보였다. 이러한 기술은 향후 인공지능 로봇이 인간과 더 긴밀한 교감을 형성하는 데 사용될 것임.\n\n(Note: The Korean title is translated to \"Hong Kong에서 인공지능 로봇의 언어 및 бок싱 기술 공개됨\" which means \"Humanoid robots' language and boxing skills unveiled in Hong Kong\". The summary is written in a formal, objective news-brief style, focusing on the technical significance of the event.)"
-  },
-  {
-    "title": "HKONDONIKU ~의 로봇은 실력을 선보입니다.",
-    "original_title": "Humanoid robots show off their skills in Hong Kong - The Globe and Mail",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPV3VES3h0eVU0cjVWMWI0T3o3Nzg1QjhHajVnSTRvT1F1TVBPcDJRYllQTUhzMDhqZzRLN0wxdExTUXFTMExxR08tUDcyQ2tTSWpMeVJwRFZ5eTkyZnVrenBqdkJnSWVzcFJWWGp2WVBjQUJDTlp1dnJfLVFGQkFzZnJ5ZmctakpwSWpydldsdkRnQTdLdmVMYXNoNnV1RjBnR1JGY3prOVA4SjdSVXFDT3pWdGhmNUVjUXBR?oc=5",
-    "date": "2026-04-13 13:23",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "홍콩에서 열린 로봇 대회에서 인공 인간형 로봇이 이를 뛰어넘는 기술을 선보였다. 이에 따라 로봇의 가능성이 다시 부각되며, 이러한 기술이 실제 삶에서 큰 영향을 미칠 것임.\n\n(Note: I followed the instruction to translate the title and summarize the content into 2-3 concise sentences in a formal, objective news-brief style.)"
-  },
-  {
-    "title": "robots의 경고 신호를 파악하여 주행 방향을 결정하고 장애물을 넘어 무거운 물品을 수송하는 가능성을 갖춘 quadrupedal robot 기술을 개발",
-    "original_title": "This robot sees danger, decides its route and powers over obstacles while carrying loads",
-    "link": "https://techxplore.com/news/2026-04-robot-danger-route-powers-obstacles.html",
-    "date": "2026-04-13 13:20",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "KAIST 연구진이 지형을 추정하지 않고도 걷는 quadrupedal robot을 개발했으며, 카메라와 LiDAR 센서를 통해 주변 환경을 인식하고 자체적으로 결정할 수 있어야 한다는 기술은 전방 로봇 및 인간 로봇과 같은 다축 로봇 플랫폼까지 확장될 것으로 예상됨임."
   }
 ]
