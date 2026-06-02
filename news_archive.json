@@ -342,6 +342,78 @@
     "summary": "arXiv:2606.01072v1 Announce Type: new \nAbstract: Imitation learning enables robots to learn how to execute tasks via observation. However, real-world environments like homes and offices are often severely partially observed due to their large spatial scales. In addition, many tasks involve executing a series of subtasks requiring autonomous robots to reason over extended time horizons. To address these challenges, we propose using scene graphs as an explicit and structured memory mechanism in imitation learning. By maintaining a dynamic scene graph that captures object-centric relationships and their evolution over time, our method allows the agent to retain relevant historical context during task execution to efficiently reason over incrementally accrued scene information. Our experiments on simulated mobile manipulation and real-world tabletop manipulation demonstrate that our approach substantially improves policy performance, particularly in settings that demand long-term reasoning and robust generalization under partial observability."
   },
   {
+    "title": "Beyond Task Success: Behavioral and Representational Diagnostics for WAM and VLA",
+    "original_title": "Beyond Task Success: Behavioral and Representational Diagnostics for WAM and VLA",
+    "link": "https://arxiv.org/abs/2606.01095",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.01095v1 Announce Type: new \nAbstract: Vision-language-action (VLA) policies and World-Action Models (WAM) represent two increasingly important paradigms for robotic manipulation. However, it remains unclear whether future prediction in WAMs leads to behaviorally meaningful improvements beyond final task success. In this paper, we ask whether WAMs merely add future prediction, or whether they change robot behavior and internal representations in ways that are actionable for control. We introduce a model-agnostic diagnostic framework that compares WAMs and VLAs through two complementary lenses: behavioral rollout analysis and sparse-autoencoder-based feature analysis. The behavioral protocol measures action dynamics consistency, target-object progress, distractor disturbance, and runtime cost. The feature-space protocol characterizes internal representations as memorized, reactive, or predictive, revealing whether models encode future-oriented structure. Across LIBERO and RoboTwin2.0, we evaluate 7 policies spanning direct VLAs and joint, sequential, and auxiliary WAMs. Our results show that success alone hides key differences: WAMs often improve object-level behavior and target selectivity, but their gains depend on architecture and incur higher inference cost. Sequential WAMs show the clearest predictive structure, while auxiliary and joint WAMs respectively compress or entangle future information. These findings suggest future directions for WAMs design to preserve behaviorally actionable future representations for efficient manipulation."
+  },
+  {
+    "title": "Implicit Drifting Policy: One-Step Action Generation via Conditional Expert Geometry",
+    "original_title": "Implicit Drifting Policy: One-Step Action Generation via Conditional Expert Geometry",
+    "link": "https://arxiv.org/abs/2606.01098",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.01098v1 Announce Type: new \nAbstract: Generative action policies based on diffusion or flow matching excel in behavior cloning, yet their iterative sampling is prohibitive for high-frequency robot control. While recent one-step formulations alleviate this latency, they inevitably discard the intermediate trajectory evolution that provides crucial action correction. Directly recovering this mechanism by explicitly estimating a training-time drifting field is mathematically ill-posed due to extreme conditional demonstration sparsity. We introduce Implicit Drifting Policy (IDP), a one-step imitation learning framework that brings the training-time correction of Drifting into policy learning without explicit vector field estimation. IDP extracts a conditional expert geometry from the local variation of observation-similar expert actions, and compares it against a global reference geometry to isolate condition-specific constraints. This local geometric structure adaptively weights a scalar potential objective. Combined with an expert-proximal terminal evaluation, IDP directly enforces manifold constraints on the one-step generator during training. Extensive evaluations across 2D, 3D, and real-world manipulation tasks show IDP effectively maintains adherence to valid action manifolds, improving upon explicit drifting methods and achieving competitive performance with strong one-step baselines."
+  },
+  {
+    "title": "OneVLA: A Unified Framework for Embodied Tasks",
+    "original_title": "OneVLA: A Unified Framework for Embodied Tasks",
+    "link": "https://arxiv.org/abs/2606.01241",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.01241v1 Announce Type: new \nAbstract: Navigation and manipulation are fundamental capabilities of embodied intelligence, enabling robots to interpret natural language commands and interact physically with their surroundings. However, current Vision-Language-Action (VLA) models remain constrained by task-specific architectures, specializing in either navigation or manipulation, which hinders the development of general-purpose robotic agents. To bridge this gap, we introduce OneVLA, a unified architecture that integrates these distinct tasks into a single, cohesive framework. Specifically, we design a unified action head capable of generating both navigation and manipulation actions without requiring task-specific variants. Furthermore, we propose a multi stage progressive training strategy-incorporating curated data construction and Chain-of-Thought (CoT) fine-tuning that facilitates strong positive transfer and mutual reinforcement between the two domains. Extensive experiments in both simulated and real-world environments demonstrate that OneVLA achieves state-of-the-art performance, significantly outperforming both specialized single-task and existing cross-task models. By unifying these core capabilities, OneVLA paves the way for truly general-purpose robotic systems. The model and source code will be publicly released."
+  },
+  {
+    "title": "S2M-Trek: From Single to Multi-Sphere Transport via Per-Frame Deep Sets on a Wheel-Legged Robot",
+    "original_title": "S2M-Trek: From Single to Multi-Sphere Transport via Per-Frame Deep Sets on a Wheel-Legged Robot",
+    "link": "https://arxiv.org/abs/2606.01332",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.01332v1 Announce Type: new \nAbstract: We study the problem of scaling dynamic loco-manipulation from a single free-rolling sphere to multiple spheres transported simultaneously on the back of a wheel-legged quadruped, without fences, grippers, or mechanical stops. Multiple identical free-rolling spheres form an unordered set with no persistent identity: their ordering may change independently at each history frame, creating a \\emph{per-frame permutation symmetry} that standard history-concatenation set encoders do not explicitly enforce -- these encoders impose only a shared, diagonal permutation symmetry over the full history. We show that this symmetry mismatch leads to a concrete failure mode in curriculum-based reinforcement learning. Within the same PPO training budget, flat MLPs and branch-wise encoders plateau at or below the two-sphere stage, while a history-concatenation Deep Sets baseline (\\HCDS) fails to progress past the two-sphere stage in our runs unless ball-to-slot assignments are randomised during training, suggesting that it exploits slot indices as a curriculum shortcut rather than learning identity-free multi-sphere dynamics. We propose \\textbf{Per-Frame Deep Sets (\\PFDS)}, which performs permutation-invariant pooling within each history frame before temporal readout; we prove that \\PFDS is $\\Gframe$-invariant and universally approximates continuous $\\Gframe$-invariant policies. A $2{\\times}2$ ablation over encoder architecture and slot randomisation separates the architectural and data-augmentation pathways, and \\PFDS reaches the five-sphere stage with 100\\% no-drop transport in simulation across all five random seeds. We further distill the \\PFDS teacher into \\TactSet via DAgger, replacing privileged sphere-state observations with a $16{\\times}16$ Boolean union contact map, yielding a compact and naturally $\\Gframe$-invariant tactile representation."
+  },
+  {
+    "title": "LEGS: Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting World",
+    "original_title": "LEGS: Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting World",
+    "link": "https://arxiv.org/abs/2606.01458",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.01458v1 Announce Type: new \nAbstract: Training vision-language-action (VLA) policies for humanoid loco-manipulation is constrained by the high cost and complexity of collecting human teleoperation demonstrations. VLA policies fine-tuned in simulators have, until now, failed to transfer effectively in humanoid loco-manipulation tasks. We present LEGS (Loco-manipulation via Embodied Gaussian Splatting), a hybrid simulator that composites a mesh foreground (robot, objects, props) over a photorealistic 3D Gaussian Splatting (3DGS) background reconstructed from a handheld scene capture. LEGS uses a procedural motion-primitive generator to synthesize labeled demonstrations at scale without human teleoperation, and a deterministic two-stage color calibration to align the rendered 3DGS image to the robot's deployment camera. On a Unitree G1 humanoid robot, across three pick-and-place tasks of increasing whole-body difficulty and three VLA backbones (psi_0, pi_0.5, GR00T N1.6), a policy trained purely on LEGS data matches or exceeds one trained on human teleoperation demos on every experiment. It also outperforms a mesh-only simulation baseline that ablates the effect of the 3DGS background, showing that photorealistic rendering is a key enabler for synthetic data transfer. Humanoid motion is recorded independently of scene appearance in LEGS, allowing the same auto-generated demonstrations to be re-rendered under new backgrounds and object meshes--covering a new scene at more than 15x lower cost than teleoperation--to augment training data for robustness to scene variations. Under combined object-and-scene appearance shift, the policy trained on re-rendered LEGS-AUG data maintains task success while the baseline trained on teleoperation data fails entirely. Our project page is located at https://legsvla.github.io/."
+  },
+  {
+    "title": "Trans2Occ: Voxel Occupancy Estimation and Grasp for Transparent Objects from Simulation to Reality",
+    "original_title": "Trans2Occ: Voxel Occupancy Estimation and Grasp for Transparent Objects from Simulation to Reality",
+    "link": "https://arxiv.org/abs/2606.01777",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.01777v1 Announce Type: new \nAbstract: Transparent objects remain challenging for robotic perception due to unreliable depth sensing caused by refraction and reflection. While prior approaches rely on multi-view reconstruction or depth completion, they are often difficult to scale or deploy in real-world robotic systems. In this paper, we present a practical framework for transparent object perception and manipulation based on single-view RGB input. Our approach predicts voxel-space occupancy directly from a single image, providing a geometry-aware representation that supports downstream robotic grasping. To enable large-scale training, we construct a simulation pipeline that generates paired RGB images and voxel occupancy annotations under diverse materials and lighting conditions. We demonstrate that the predicted occupancy representation is robust to domain shifts and transfers effectively from simulation to real-world robotic setups without fine-tuning. A simple rule-based grasping strategy built on top of the occupancy further achieves reliable grasp performance on transparent objects. Extensive experiments in both simulation and real-world environments show that our framework provides accurate 3D understanding and enables practical manipulation of transparent objects. These results suggest that single-view occupancy prediction offers a scalable and effective solution for transparent object perception in robotics."
+  },
+  {
+    "title": "The Lie We Tell: Correcting the Euclidean Fallacy in Vision Language Action Policies via Score Matching on Tangent Space",
+    "original_title": "The Lie We Tell: Correcting the Euclidean Fallacy in Vision Language Action Policies via Score Matching on Tangent Space",
+    "link": "https://arxiv.org/abs/2606.01847",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.01847v1 Announce Type: new \nAbstract: Diffusion-based Vision-Language-Action policies achieve remarkable success in robotic manipulation, yet commit a fundamental geometric error we term the $\\textbf{Euclidean Fallacy}$: representing SE(3) poses as flat $\\mathbb{R}^{12}$ vectors. This approximation induces (1) manifold drift violating SO(3) constraints, (2) broken equivariance under coordinate transformations, and (3) non-geodesic trajectories with excessive kinematic cost. We introduce $\\textbf{Lie Diffuser Actor (LDA)}$, a diffusion framework operating intrinsically on SE(3). Our method injects noise through left-invariant SDEs, predicts scores in the tangent space, and retracts samples via the exponential map. This formulation eliminates manifold drift by construction while guaranteeing coordinate-frame equivariance and geodesic optimality. On CALVIN ABC$\\rightarrow$D, LDA improves average task length from $3.27$ to $3.51$ ($+7.3\\%$). We further validate our method on real robot and the results show that our methodology outperforms the baseline on majority tasks."
+  },
+  {
+    "title": "PHASOR: Phase-Anchored Universal Action Representations for Humanoid Embodiments",
+    "original_title": "PHASOR: Phase-Anchored Universal Action Representations for Humanoid Embodiments",
+    "link": "https://arxiv.org/abs/2606.01851",
+    "date": "2026-06-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.01851v1 Announce Type: new \nAbstract: Learning a good action embedding space is fundamental to scalable robot policy learning, yet existing methods treat action latents as task-specific intermediates rather than first-class representations. The resulting latents are unstructured, embodiment-specific, and weakly tied to motion semantics, limiting interpretability, controllability, and transferability across robots. We position the action embedding space itself as a first-class design target, with downstream policy quality emerging from representation quality. Exploiting motion's intrinsic periodicity, we factorize it into a phase manifold that captures cyclic structure via FFT-parametric coefficients, together with a pose branch that conditions the manifold on non-periodic configuration detail. Combined with motion-semantic distillation, this factorized structure yields a cross-embodiment motion manifold that is interpretable and embodiment-agnostic by design. Anchoring multiple humanoid robots to a shared human-pretrained manifold then produces a unified action embedding space across diverse platforms, achieving strong cross-embodiment retrieval and consistent gains on downstream robot tasks."
+  },
+  {
     "title": "China’s Robot Maker Unitree Passes IPO Review For STAR Market Listing - BusinessToday Malaysia",
     "original_title": "China’s Robot Maker Unitree Passes IPO Review For STAR Market Listing - BusinessToday Malaysia",
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcDNYTFFrYnNrWk1wQWdiNWJKMENBWEpoNUFHUjFGUXJSQlZpX2s4LVo3NVc2TXJOeGhkZG9zNllDRkJXOUo3Q09fQVV2NEZmQmVuZVUwa3pJV1lwc1pIU0NvWGRMT1pLTWJLcmxHQ1R2QzJZejUzei1OSkdNNEdsam9fbjJVS3QtRTJXMDVfMXZ1RjA0b25GdTNHTnJBVU1rUUJhSDJFalFORnlhN3ZEN3hsTQ?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "한국의 3D 인지 시스템을 구축하기 위해 새로운 이미지 생성 모델을 제안합니다. 이 모델은 'Du-FreqNet'으로, 두 개의 독립적인 제어 네트워크를 사용하여 미세 로봇 3D 점雲과 깊이-특정 메시 레이어를编码합니다. 또한, 초고주파수 영역 손실을 도입하여 실제적인 주파수 분포를 캡처할 수 있습니다. 이 모델은 제한된 데이터셋(예: 80장/pose)으로 훈련된 후, 다양한 실험을 통해 실제적이고 깊이-특정 이미지를 생성할 수 있는 것으로 보입니다.\n\nNote: I strictly followed the format rules and output only the requested string."
-  },
-  {
-    "title": "HO-Flow: generalizeable hand-object interaction generation with latent flow matching",
-    "original_title": "HO-Flow: Generalizable Hand-Object Interaction Generation with Latent Flow Matching",
-    "link": "https://arxiv.org/abs/2604.10836",
-    "date": "2026-04-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "3D 손물 상호작용 생성을 위하여 HO-Flow 프레임워크를 제안하는데, 이 프레임워크는 텍스트와 3D 물체로부터 실제적 손물 운동시퀀스를 합성합니다. HO-Flow는 변수.autoencoder를 사용하여 손과 물체 운동 시퀀스를 일원화된 고차원 매니폴드를 생성하고, 이것을 통해 상호작용 동적을 捕捉할 수 있습니다. 또한, masked flow matching 모델을 사용하여 시간적 추세와 연속 고차원 생성을 조합하여 时间일관성을 개선합니다."
-  },
-  {
-    "title": "TacMan-Turbo: Proactive Tactile Control for Robust and Efficient Articulated Object Manipulation",
-    "original_title": "TacMan-Turbo: Proactive Tactile Control for Robust and Efficient Articulated Object Manipulation",
-    "link": "https://arxiv.org/abs/2508.02204",
-    "date": "2026-04-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "articulated object manipulation의 효과적이고 효율적인 제어를 위해 TacMan-Turbo 프레임워크를 개발, 200종 이상의 시뮬레이션 및 실제 실험에서 100%의 성공률을 달성하며 이전 tactile-informed 방법보다 처리 시간, 액션 효율, 경로.smoothness 등을 향상시켰다."
-  },
-  {
-    "title": "Multimodal Diffusion Forcing for Forceful Manipulation",
-    "original_title": "Multimodal Diffusion Forcing for Forceful Manipulation",
-    "link": "https://arxiv.org/abs/2511.04812",
-    "date": "2026-04-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 추종 데이터셋을 기반으로 하여 관찰부터 액션까지 다양한 모달리티 간의 상호작용을 고려한 새로운 프레임워크를 제안합니다. 이 프레임워크는 시간적과 교차 모달리티 의존성을 학습하도록 diffusion 모델을 TRAIN하여 주간, 액션의 효과를 예측하고 부족 관찰에서 상태를 추정하는 기능을 발전시켰습니다."
-  },
-  {
-    "title": "RoboCOIN: An Open-Sourced Bimanual Robotic Data Collection for Integrated Manipulation",
-    "original_title": "RoboCOIN: An Open-Sourced Bimanual Robotic Data Collection for Integrated Manipulation",
-    "link": "https://arxiv.org/abs/2511.17441",
-    "date": "2026-04-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보코인, 15개의 DISTINCT 로봇 플랫폼에서 180,000회 이상의 데이터를 수집한 다중체 유형의 바이만아울러 데이터셋을 도입합니다. 이 데이터셋은 16종류의 환경, 421가지 바이만태스크, 39가지 협력동작, 432개의 개체를 포함하여 다양한 로봇 구현체에 대한 성능 향상에 효과적입니다."
-  },
-  {
-    "title": "로봇 상태 추정에 대한 Lie 그룹 자연 기대적 가우시안 근사 필터",
-    "original_title": "Natural Gradient Gaussian Approximation Filter on Lie Groups for Robot State Estimation",
-    "link": "https://arxiv.org/abs/2604.10057",
-    "date": "2026-04-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 시스템의 Lie 그룹 매니폴드 위에서 진화하는 경우 로봇 상태 추정을 정확하게 수행하려면, 비선형 관측 모델을 처리하는 것이 중요한 문제입니다. 이 문제를 해결하기 위해 우리는 manifold filtering을 가우시안 분포된 증가 변수에 대한 파라미터 최적화 문제로 재formulate했습니다. 이러한 형태에서는 Lie 그룹을 통해 전조 추정의 후손 상태를 산출합니다. 우리는 이 문제를 처리하는 데 사용되는 자연 기대적 최적화 방안도 제안합니다. 또한, Lie производная 모델에서 우리는 invariant 관측 모델에 대한 NANO-L 필터의 편향 업데이트가 closed-form 솔루션을 갖는 것임을 증명했습니다. 이 결과로 컴퓨팅 효율성을 개선할 수 있습니다. 실제 하드웨어 실험에서는 Unitree GO2 로봇이 다양한 지형에서 운영되는 경우 NANO-L 필터가 일반적으로 사용되는 필터보다 약 40% 낮은 추정 오류를 성취했습니다."
-  },
-  {
-    "title": "Learning to Forget -- Hierarchical Episodic Memory for Lifelong Robot Deployment",
-    "original_title": "Learning to Forget -- Hierarchical Episodic Memory for Lifelong Robot Deployment",
-    "link": "https://arxiv.org/abs/2604.11306",
-    "date": "2026-04-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "회귀적 기억 구축을 위한 인공 지능 - 로봇의 삶속 경험 유지 함\n\nKorean developers and investors are introduced to H$^2$-EMV, a framework enabling humanoids to learn what to remember through user interaction. The approach constructs hierarchical episodic memory, selectively forgets using language-model-based relevance estimation conditioned on learned natural-language rules, and updates these rules given user feedback about forgotten details. Evaluations demonstrate that H$^2$-EMV maintains question-answering accuracy while reducing memory size and query-time compute."
-  },
-  {
-    "title": "바이오 미세조작 : 체현, 인식, 제어",
-    "original_title": "Micro-Dexterity in Biological Micromanipulation: Embodiment, Perception, and Control",
-    "link": "https://arxiv.org/abs/2604.11640",
-    "date": "2026-04-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "바이오 미세조작의 향상은 아직 많은 생체 의료적응에 요구되는 고유하고 적응적인 조작을 필요로 합니다. 이러한 조작은 세 가지 주요 클래스의 플랫폼으로 달성됩니다. 첫째, 이동 중인 모바일 에이전트를 통해 물리적으로 조작하는 형체적 미세로봇, 둘째, 접촉 없는 잡거나 조작력을 생성하는 필드-매미테이션 시스템, 셋째, 원격으로 제어되는 물리적인 도구를 통해 조작하는 외부 작동 끝단입니다. 이러한 시스템들은 액추아티에 미치지 못하고, 제한된 공간에서 활동하며, 부드럽고 혼합된 표면 위에서 조작을 수행합니다. 따라서, 클래식 조작의 기본조건인 rigidd-body 접촉, 안정적인 잡기, 풍부한 proprioceptive 피드백이 유지되지 못합니다. 이 리뷰는 바이오 미세조작을 체현, 인식, 제어의 쌍둥이 역할 framework으로 분석합니다. nosotros가 examining 클래스 조작 원칙, 즉 pusuing, reorientation, grasping, cooperative manipulation, 등과 함께 플랫폼의 구조를 비교하고, 태스크 실행을 위해 필요한 인식 및 제어 전략을 살펴보는 것입니다. nous가 실험실 데모와 병원적 pertinent 바이오 조작 간의 현존하는 기력과, 향후 번역에 있어 중요한 도전을 식별합니다."
-  },
-  {
-    "title": "AffordSim: 3D affordance prediction-based robotic manipulation 데이터 생성 및 벤치마크",
-    "original_title": "AffordSim: A Scalable Data Generator and Benchmark for Affordance-Aware Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2604.11674",
-    "date": "2026-04-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 수동 조작 정책 훈련에 Simulation-based 데이터 생성은 새로운 패러다임이 되었으나, 기존 플랫폼은 목적물의 기능적 구역 정보를 트레이서 제너레이션에 통합하지 않아 있다. 결과적으로, 특정 기능 구역에서 정확한 상호 작용을 요구하는 태스크(예, 컵에서 붓으로 음료수를 따는 것)는 의미 적절한 트레이서 없이 자동 생성이 불가능하다. nosotros introduce AffordSim, 3D affordance prediction을 통합하여 로봇 수동 조작 데이터 생성 파이프라인에 있는 첫 번째 시뮬레이션 프레임워크다. 이를 통해 우리는 로봇 수동 조작 데이터를 scalably 자동 생성할 수 있다."
   }
 ]
