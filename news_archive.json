@@ -1,5 +1,23 @@
 [
   {
+    "title": "Why Precision Swiss Machining is Critical to the Future of Robotics and Automation",
+    "original_title": "Why Precision Swiss Machining is Critical to the Future of Robotics and Automation",
+    "link": "https://roboticsandautomationnews.com/2026/06/03/why-precision-swiss-machining-is-critical-to-the-future-of-robotics-and-automation/102192/",
+    "date": "2026-06-03 06:08",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "The rapid growth of robotics, factory automation, and intelligent manufacturing systems is transforming industrial production worldwide. Modern manufacturing environments increasingly rely on highly precise mechanical systems capable of operating continuously with minimal deviation, especially as automation technologies become more advanced and interconnected. From collaborative robots and automated assembly systems to sensor-driven manufacturing equipment, precision-engineered components […]"
+  },
+  {
+    "title": "BYD-backed robotics firm PaXini weighs Hong Kong IPO - CnEVPost",
+    "original_title": "BYD-backed robotics firm PaXini weighs Hong Kong IPO - CnEVPost",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9xLW90cnpPQzZhWjYxRUxxclQ3ZnhYQ0ZqZXRNSEtzZjVNVDdJQVRJSk1PY1FOYXQ1WUR0LWcxSlNyaHB0S0NsTmhtWC1QRkFnUVNZYm9PV1JwRVNVaU1FV1J3cmlHOF9sa2MzMTBJN0xGZmV3alE?oc=5",
+    "date": "2026-06-03 05:52",
+    "source": "Google News (China Hand/Sensor Startups - EN)",
+    "category": "hand",
+    "summary": "BYD-backed robotics firm PaXini weighs Hong Kong IPO  CnEVPost"
+  },
+  {
     "title": "PaXini is testing Hong Kong's appetite for China's robotics boom - Startup Fortune",
     "original_title": "PaXini is testing Hong Kong's appetite for China's robotics boom - Startup Fortune",
     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOd1lFajRRemlraWtCSEg5aDRFWkdhMm5ERUJmM0pLYkR0dVJaTHpxcmhBT1hpUHBsaWl6QjdNMWIwTUk0MmJYQXA0dFVfT2EySkdxRExFMVNvOFctOUwxMW5SRmpBdVhOMUh1WGRmZVdxNG9PZmxZZ002SG80dF9rOHJHeGw2ektBbUxkRUtOREdBNnAx?oc=5",
@@ -225,6 +243,78 @@
     "summary": "arXiv:2606.03943v1 Announce Type: new \nAbstract: Video-Action Models (VAMs) leverage the broad visual dynamics captured by pre-trained video diffusion models, offering a promising path toward generalizable robot manipulation. However, RGB-only video rollouts are not directly actionable: they leave metric 3D motion, contact geometry, and fine-grained spatial constraints under-specified, making action grounding ambiguous. Meanwhile, scaling action supervision across diverse tasks and embodiments remains costly. We present PointAction, a framework that bridges video predictions to robot actions through explicit point-based 4D modeling. PointAction fine-tunes a foundation video generation model to jointly predict future RGB frames and dynamic 3D pointmaps, producing temporally consistent 3D motion of task-relevant scene geometry. These point dynamics serve as a structured, embodiment-agnostic action interface, which a diffusion-based action decoder maps to executable robot actions. By using metric 3D point dynamics as the interface between video prediction and control, PointAction reduces the ambiguity of RGB-only action grounding and supports transfer across tasks and embodiments with limited action supervision. Experiments show that PointAction achieves state-of-the-art 4D generation quality on robot scenes, outperforms existing baselines in simulation, and generalizes to two real robot arms unseen during pretraining."
   },
   {
+    "title": "Preference-Calibrated Human-in-the-Loop Reinforcement Learning for Robotic Manipulation",
+    "original_title": "Preference-Calibrated Human-in-the-Loop Reinforcement Learning for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.03949",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03949v1 Announce Type: new \nAbstract: Human-in-the-loop reinforcement learning (HIL-RL) improves sample efficiency in real-robot manipulation through online human intervention. However, successful trajectories may include suboptimal actions that deviate from the desired task-execution path and force human intervention. Existing HIL-RL methods typically apply the consistent credit assignment principle to all transitions, uniformly propagating discounted terminal rewards through suboptimal segments, ignoring the actual contribution of each transition to task success. This overestimates Q-values for critic learning and indirectly misguides actor updates toward suboptimal behavior patterns. To this end, we propose PACT, a Preference-calibrated Actor-Critic Training framework that leverages the implicit preference signals induced by intervention to perform credit reassignment on identified suboptimal segments while directly guiding policy training for unbiased critic-actor learning. Specifically, we first design a progress model that learns from human demonstration and identifies suboptimal segments for credit correction. Then, from the human action and resampled policy action at the intervention state, we build preference pairs to define a counterfactual advantage that penalizes Bellman targets of the identified suboptimal segment, enabling directional credit calibration. Moreover, we directly align the policy with human corrective actions in the bounded mean space, providing an additional signal beyond critic-guided updates. Across five real-robot manipulation tasks, PACT improves the average success rate by 24.5% and achieves 1.3 times faster convergence, thereby improving both RL sample efficiency and performance. Code is available at https://anonymous.4open.science/r/HILRL-A1X-BC05."
+  },
+  {
+    "title": "Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking",
+    "original_title": "Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking",
+    "link": "https://arxiv.org/abs/2606.03985",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.03985v1 Announce Type: new \nAbstract: We introduce Humanoid-GPT, a GPT-style Transformer with causal attention trained on a billion-scale motion corpus for whole-body control. Unlike prior shallow MLP trackers constrained by scarce data and an agility-generalization trade-off, Humanoid-GPT is pre-trained on a 2B-frame retargeted corpus that unifies all major mocap datasets with large-scale in-house recordings. Scaling both data and model capacity yields a single generative Transformer that tracks highly dynamic behaviors while achieving unprecedented zero-shot generalization to unseen motions and control tasks. Extensive experiments and scaling analyses show that our model establishes a new performance frontier, demonstrating robust zero-shot generalization to unseen tasks while simultaneously tracking highly dynamic and complex motions."
+  },
+  {
+    "title": "TRAP: Hijacking VLA CoT-Reasoning via Adversarial Patches",
+    "original_title": "TRAP: Hijacking VLA CoT-Reasoning via Adversarial Patches",
+    "link": "https://arxiv.org/abs/2603.23117",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.23117v2 Announce Type: cross \nAbstract: By integrating Chain-of-Thought (CoT) reasoning, Vision-Language-Action (VLA) models have demonstrated strong capabilities in robotic manipulation, particularly by improving generalization and interpretability. However, the security of CoT-based reasoning mechanisms remains largely unexplored. In this paper, we show that CoT reasoning introduces a novel attack vector for targeted behavior hijacking--for example, causing a robot to mistakenly deliver a knife to a person instead of an apple--without modifying the user's instruction. We first provide empirical evidence that CoT strongly governs action generation, even when it is semantically misaligned with the input instructions. Building on this observation, we propose TRAP, the first targeted behavior-hijacking adversarial attack against CoT-reasoning VLA models. By targeting the reasoning-to-action pathway, TRAP uses an adversarial patch (e.g., a tablecloth placed on the table) to steer intermediate CoT reasoning and downstream actions toward adversary-defined behaviors. Extensive evaluations on three representative reasoning VLAs, spanning distinct CoT reasoning mechanisms, demonstrate the effectiveness of TRAP. Notably, we implemented the patch by printing it on paper in a real-world setting. Our findings highlight the urgent need to secure CoT reasoning in VLA systems. The project page is available at https://zhengxian-huang.github.io/TRAP-website/."
+  },
+  {
+    "title": "Towards Compact Autonomous Driving Perception with Balanced Learning and Multi-sensor Fusion",
+    "original_title": "Towards Compact Autonomous Driving Perception with Balanced Learning and Multi-sensor Fusion",
+    "link": "https://arxiv.org/abs/2606.02979",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.02979v1 Announce Type: cross \nAbstract: We present a novel compact deep multi-task learning model to handle various autonomous driving perception tasks in one forward pass. The model performs multiple views of semantic segmentation, depth estimation, light detection and ranging (LiDAR) segmentation, and bird's eye view projection simultaneously without being supported by other models. We also provide an adaptive loss weighting algorithm to tackle the imbalanced learning issue that occurred due to plenty of given tasks. Through data pre-processing and intermediate sensor fusion techniques, the model can process and combine multiple input modalities retrieved from RGB cameras, dynamic vision sensors (DVS), and LiDAR placed at several positions on the ego vehicle. Therefore, a better understanding of a dynamically changing environment can be achieved. Based on the ablation study, the model variant trained with our proposed method achieves a better performance. Furthermore, a comparative study is also conducted to clarify its performance and effectiveness against the combination of some recent models. As a result, our model maintains better performance even with much fewer parameters. Hence, the model can inference faster with less GPU memory utilization. Moreover, the result tends to be consistent in 3 different CARLA simulation datasets and 1 real-world nuScenes-lidarseg dataset. To support future research, we share codes and other files publicly at https://github.com/oskarnatan/compact-perception."
+  },
+  {
+    "title": "SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single Image",
+    "original_title": "SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single Image",
+    "link": "https://arxiv.org/abs/2606.03994",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03994v1 Announce Type: cross \nAbstract: Reconstructing interactive, simulation-ready 3D scenes from a single image is a critical bottleneck for robotic manipulation. While recent single-image lifters recover plausible per-object shapes, composing them yields scenes that collapse under physical simulation due to interpenetrating, hovering, or sinking objects. Existing physics-aware methods address this strictly as a post-hoc layout correction, leaving the underlying geometric errors unresolved. To address this, we introduce SimuScene, a compositional 3D reconstruction pipeline that puts physics in the loop of shape and layout estimation. Rather than using physics merely for layout cleanup, we utilize the physics engine as a diagnostic measurement tool during the generative process itself. By diagnostically simulating reconstructed objects under gravity, we convert penetration and support failures into quantitative correction signals that drive gravity-axis stretching and amodal shape resampling. This physics-informed feedback loop mitigates accumulated reconstruction errors and produces a stable, simulation-ready compositional 3D scene. Extensive experiments demonstrate state-of-the-art performance on physical stability and geometric alignment benchmarks. We further highlight SimuScene's utility by deploying reconstructed environments in humanoid control and robot-arm manipulation tasks."
+  },
+  {
+    "title": "OMP: One-step Meanflow Policy with Directional Alignment",
+    "original_title": "OMP: One-step Meanflow Policy with Directional Alignment",
+    "link": "https://arxiv.org/abs/2512.19347",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.19347v3 Announce Type: replace \nAbstract: Robot manipulation has increasingly adopted data-driven generative policy frameworks, yet the field faces a persistent trade-off: diffusion models suffer from high inference latency, while flow-based methods often require complex architectural constraints. Although in image generation domain, the MeanFlow paradigm offers a path to single-step inference, its direct application to robotics is impeded by critical theoretical pathologies, specifically spectral bias and gradient starvation in low-velocity regimes. To overcome these limitations, we propose the One-step MeanFlow Policy (OMP), a novel framework designed for high-fidelity, real-time manipulation. We introduce a lightweight directional alignment mechanism to explicitly synchronize predicted velocities with true mean velocities. Furthermore, we implement a Differential Derivation Equation (DDE) to approximate the Jacobian-Vector Product (JVP) operator, which decouples forward and backward passes to significantly reduce memory complexity. Extensive experiments on the Adroit and Meta-World benchmarks demonstrate that OMP outperforms state-of-the-art methods in success rate and trajectory accuracy, particularly in high-precision tasks, while retaining the efficiency of single-step generation."
+  },
+  {
+    "title": "RoboCade: Gamifying Robot Data Collection",
+    "original_title": "RoboCade: Gamifying Robot Data Collection",
+    "link": "https://arxiv.org/abs/2512.21235",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.21235v3 Announce Type: replace \nAbstract: Imitation learning from human demonstrations has become a dominant approach for training autonomous robot policies. However, collecting demonstration datasets is costly: it often requires access to robots and needs sustained effort in a tedious, long process. These factors limit the scale of data available for training policies. We aim to address this scalability challenge by involving a broader audience in a gamified data collection experience that is both accessible and motivating. Specifically, we develop a gamified remote teleoperation platform, RoboCade, to engage general users in collecting data that is beneficial for downstream policy training. To do this, we embed gamification strategies into the design of the system interface and data collection tasks. In the system interface, we include components such as visual feedback, sound effects, goal visualizations, progress bars, leaderboards, and badges. We additionally propose principles for constructing gamified tasks that have overlapping structure with useful downstream target tasks. We instantiate RoboCade on three manipulation tasks -- including spatial arrangement, scanning, and insertion. To illustrate the viability of gamified robot data collection, we collect a demonstration dataset through our platform, and show that co-training robot policies with this data can improve success rate on non-gamified target tasks (+16-56%). Further, we conduct a user study to validate that novice users find the gamified platform significantly more enjoyable than a standard non-gamified platform (+24%). These results highlight the promise of gamified data collection as a scalable, accessible, and engaging method for collecting demonstration data."
+  },
+  {
+    "title": "Coupled Local and Global World Models for Efficient First Order RL",
+    "original_title": "Coupled Local and Global World Models for Efficient First Order RL",
+    "link": "https://arxiv.org/abs/2602.06219",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.06219v2 Announce Type: replace \nAbstract: World models offer a promising avenue for more faithfully capturing complex dynamics, including contacts and non-rigidity, as well as complex sensory information, such as visual perception, in situations where standard simulators struggle. However, these models are computationally complex to evaluate, posing a challenge for popular RL approaches that have been successfully used with simulators to solve complex locomotion tasks but yet struggle with manipulation. This paper introduces a method that bypasses simulators entirely, training RL policies inside world models learned from robots' interactions with real environments. At its core, our approach enables policy training with large-scale diffusion models via a novel decoupled first-order gradient (FoG) method: a full-scale world model generates accurate forward trajectories, while a lightweight latent-space surrogate approximates its local dynamics for efficient gradient computation. This coupling of a local and global world model ensures high-fidelity unrolling alongside computationally tractable differentiation. We demonstrate the efficacy of our method on the Push-T manipulation task, where it significantly outperforms PPO in sample efficiency. We further evaluate our approach through an ego-centric object manipulation task with a quadruped. Together, these results demonstrate that learning inside data-driven world models is a promising pathway for solving hard-to-model RL tasks in image space without reliance on hand-crafted physics simulators."
+  },
+  {
     "title": "NVIDIA’s Next Big Bet: Owning the Operating System of Humanoid Robots - kmjournal.net",
     "original_title": "NVIDIA’s Next Big Bet: Owning the Operating System of Humanoid Robots - kmjournal.net",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1NcnJQUExsR1ZRekdPU19GcGVzZTJQVFFaVXNuYzZ5OUhCdVhxek5ndy1kZUVONlVaUXg1c0lkTDNiTUpnYnh4TUIxNF96SHo1QmlFQVlfNUtCRTRmc2Y4b2FvMGhZOW1ySG5z?oc=5",
@@ -313,6 +403,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "What signals are sent by Chinese robot firms racing to go public?: Global Times editorial  Global Times"
+  },
+  {
+    "title": "Nvidia expands humanoid robot push beyond China’s Unitree - MSN",
+    "original_title": "Nvidia expands humanoid robot push beyond China’s Unitree - MSN",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNTkZoMzRZSmtJdURYdm9JSU1vN2VrV3pkNk5SaWx1eEhSV3RxNTBzU2lRc2JUX1pJQmdmaDN5M0pub083T3BWYVdleTNkdE01bTdMdjBtcWtQd1B1QkVOVTJKOWVMU0dTVlQ3ZThuWjViMmF1NmRRUWlPd2xtNzZ2LWlXZTQ4T1BsNnJsYUExQks5Y204T3hYLVFYbjBpY0dVaENyNmtLaENxWUtrN3NlWTRlYXY3bElmWnE1akJTeDBNZ0FmQW5tYVZiQlcybW9KZy15V1FPbmZGeGFIQkJ6Y0tGZDkwc2RpMGF6X0NSZWg?oc=5",
+    "date": "2026-06-02 15:59",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Nvidia expands humanoid robot push beyond China’s Unitree  MSN"
   },
   {
     "title": "LLMs help robots understand vague instructions and focus on key details",
@@ -17899,104 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "자동 주행이 없는 교차로에서의自动驾驶은 복잡한 다 خودرو 상호작용 및 안전성과 효율의 균형을 맞추는 것이 요구된다. 모델 예측 제어(MPC)는 구조화된 제약 처리를 optimizations 통해 제공하지만 일반적으로 과보수적인 행동을 생성하는 수동 규칙에 의존하고 있다. 깊은 강화 학습(RL)은 경험에서 적응적 행위를 배워나가지만 일반화 및 안전성 보장에 어려움을 초래하게 된다. 이 연구에서는 MPC-RL framework를 제안하여 다 자동차 시나리오에서 운항 성능을 향상하는 것을 목표로 한다. 실험 결과는 MPC-RL이 독립된 MPC와 종단 RL보다 3가지 교통 밀도 수준에서 성능을 초월하며 사고율을 21% 줄이고 성공률을 6.5% 높인다. 또한 고속도로 합류 시나리오에 대한 zero-shot 전송을 평가한 결과는 MPC-기반 방법이 PPO보다 더 잘 전송되는 것을 확인할 수 있다. 이 frameworks의 추가적인 평가에서는 RL training 중 손실 안정화 속도가 더 빨라지는 것을 확인할 수 있다. 이러한 결과는 다 자동차 교차로 시나리오에서 안전성 성능과 효율의 균형을 개선하는 데 있어 MPC-RL framework가 효과적일 가능성을 제안하고 있으며, MPC 구성 요소가 다양한 운행 환경에서의 일반화에 강한 기초를 제공할 수 있는 것이다. 이 implementation code는 오픈 소스 공개함."
-  },
-  {
-    "title": "로봇 제어에 적용한 inpainting 기법을 활용한 키포인트 탐지",
-    "original_title": "Utilizing Inpainting for Keypoint Detection for Vision-Based Control of Robotic Manipulators",
-    "link": "https://arxiv.org/abs/2604.13309",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 매니퓰레이터의 비전 기반 제어를 위해 새로운 시각 서비스 프레임워크를 제안한다. 이 연구에서는 로봇 몸체에 외적 마커를 장착하지 않고도 자연적 마커-less 이미지를 생성하여 키포인트 탐지 알고리즘을 훈련할 수 있는 데이터 드리븐 접근법을 개발하였다. 이를 통해 로봇의 구성 공간 제어를 가능하게 하는 비전 기반 제어 방법을 개발하였다."
-  },
-  {
-    "title": "Mosaic: An Extensible Framework for Composing Rule-Based and Learned Motion Planners",
-    "original_title": "Mosaic: An Extensible Framework for Composing Rule-Based and Learned Motion Planners",
-    "link": "https://arxiv.org/abs/2604.13853",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "자동차 보행자 예측을 위한 모티브 플래너 프레임워크 'Mosaic'를 소개합니다. 이 프레임워크는 규칙기반 플래너와 학습 플래너의 강점을 결합하여 안정적이고 설명할 수 있는 움직임 계획을 제공합니다. Mosaic의 구조화된 의사 결정 기법은 각 플래너의 출력을 확인하고 최적의 тра세이 선택을 수행함으로써 안전성과 투명성을 확보합니다."
-  },
-  {
-    "title": "GRITS:food spillage 예방을 위한 로봇 음식 주무기 작업 정책",
-    "original_title": "GRITS: A Spillage-Aware Guided Diffusion Policy for Robot Food Scooping Tasks",
-    "link": "https://arxiv.org/abs/2510.00573",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 음식 주무기 작업은 음식 준비 및 서비스 로봇에서 중요한 manipulation 기술입니다. 그러나 기존 로봇 학습 알고리즘, 특히 데모션으로부터 배운 방법들은 다양한 및 역동적인 음식을 다룰 수 없어 스피를 일으키는 경우가 많아 일관된 신뢰성을 확보하는 것이 쉽지 않습니다. 이 연구에서는 GRITS:food spillage 예방을 위한 로봇 음식 주무기 작업 정책을 소개합니다. 이 프레임워크는 guided diffusion policy를 사용하여 주무기 작업 중 스피를 최소화하고 목표 위치로 음식을 안전하게 옮길 수 있도록 합니다. Specifically, 우리는 스피 예측기를 설계하여 현재 관찰과 행동 rollout에 따라 스피의 가능성을 추정합니다. 이 예측기는 simulated dataset에서 food spillage 시나리오를 구성하는 4가지 기본 모양(구형, куб형, 콘형, 실린더형)와 물질 성질(질량, 마찰, 입자 크기)에 따라 훈련됩니다. 추론 때는 예측기가 다차원적인 안내 신호가 되며, 스피를 줄이는 safer 경로를 탐색하는 diffusion sampling 프로세스에 의해 이뤄집니다. 우리는 실제 로봇 음식 주무기 플랫폼에서 GRITS를 검증했습니다. GRITS는 6가지 음식 카테고리에서 훈련되고, 10개의未시 카테고리(다양한 모양과 양)에서 평가되었습니다. GRITS는 82%의 작업 성공률과 4%의 스피율을 달성하여, 스피를 줄이는 데 성공적으로 사용할 수 있습니다."
-  },
-  {
-    "title": "Robot Generation Policy의 Sim-and-Real 공학적 분석",
-    "original_title": "A Mechanistic Analysis of Sim-and-Real Co-Training in Generative Robot Policies",
-    "link": "https://arxiv.org/abs/2604.13645",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "robots를 위한 생성 정책을 훈련하는 데 사용되는 co-training 기법에 대한 mechanism을 조사하고, 2개의 기본적인 효과를 확인하였다. 첫째, \"구조화된 표현동조\"는 cross-domain 표현 동조와 도메인 구별 가능성의 균형을 반영하며, 하류 성능에서 주요 역할을 수행한다. 둘째, \"중요도 재가중 효과\"는 액션 가중치의 domain-dependent 조정으로 인해 2차 등급에서 작동하는 것이다. 이러한 효과를 controlled experiments와 extensive robot manipulation experiments를 통해 확인하였다. 이 분석은 co-training 기법에 대한 일관된 해석을 제공하고, prior approaches보다 보다 향상된 방법을 제안하며, 더 широк이, co-training의 inner workings를 조사하여 이 분야의 연구를 촉진하는 것을 목표로 한다."
-  },
-  {
-    "title": "HAMLET",
-    "original_title": "HAMLET: Switch your Vision-Language-Action Model into a History-Aware Policy",
-    "link": "https://arxiv.org/abs/2510.00695",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국 robotics 마비 작업은 과거 컨텍스트 고려에 의존적입니다. 그러나 기존 Vision-Language-Action 모델(VLAs)은 과거 컨텍스트 무시하고 현재 관찰만에 기반을 두고 있습니다. 이 논문에서는 HAMLET, VLAs를 과거 컨텍스트 적응하는可 확장 framework를 제안합니다. 특히, 우리는 timestep 마다 perceptual 정보를 컴팩트하게 인코딩하는 moment 토큰을 도입했습니다. 다음으로, 우리는 가벼운 메모리 모듈을 사용하여 과거 timestep에 해당하는 moment 토큰을 메모리 특징으로 통합합니다. 이 결과 HAMLET는 state-of-the-art VLA를 과거 컨텍스트 aware 정책으로 변환하는데 성공적이었으며, 특히 76.4%의 평균 성능을 달성하여 일반적인 robot-manipulation 벤치마크인 RoboCasa Kitchen과 LIBERO에서 성능을 개선했습니다."
-  },
-  {
-    "title": "GeoVision을 활용한 혼합자율-텔레오퍼레이션 의료응답_DIGITAL TWIN_함",
-    "original_title": "GeoVision-Enabled Digital Twin for Hybrid Autonomous-Teleoperated Medical Responses",
-    "link": "https://arxiv.org/abs/2604.13248",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Korea의 대규모 의료응답시스템 개발에 있어, 재해 khu 및 하수도 제약 환경에서 비상치료 지원을 강화하고 있다. 이 논문은 GeoVision 기술을 기반으로, 혼합자율-텔레오퍼레이션 의료응답시스템의 DIGITAL TWIN архитектура를 제안하며, 그중에는 현실시간으로 동기화된 DIGITAL TWIN을 포함하여 시스템 상태, 환경 역동성, 환자 상태, 임무 목표 등을 반영하는 통합 구조를 갖추고 있다. tradional ground control 인터페이스와 구별되는 DIGITAL TWIN은 의료 및 운영 사용자에게 계속적으로 업데이트되는 가상 Representation을 제공하여 현황지각과 고려파지를 향상시킨다."
-  },
-  {
-    "title": "Robust Verification of Controllers under State Uncertainty via Hamilton-Jacobi Reachability Analysis",
-    "original_title": "Robust Verification of Controllers under State Uncertainty via Hamilton-Jacobi Reachability Analysis",
-    "link": "https://arxiv.org/abs/2511.14755",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국서태도 불확실성 하에서 컨트롤러의 robust한 확인 ~임. 이를 달성하기 위해 우리는 Hamilton-Jacobi reachable analysis를 활용하여 perception-based controller의 안전하고 성능을 공식적으로 확인 ~함. Prior work들은 approximate reachability method에 기반한 verification algorithm을 제안했지만, 일반적인 controller와 system handling이 제약되거나 overly conservative 분석을 초래 ~럼. In this work, we propose RoVer-CoRe framework for the Robust Verification of Controllers via HJ Reachability. We demonstrate the efficacy of the framework in case studies involving aircraft taxiing and NN-based rover navigation. Code is available at the link in the footnote."
-  },
-  {
-    "title": "A1: 전자적이고 적합한 비전-언어-행동 모델",
-    "original_title": "A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model",
-    "link": "https://arxiv.org/abs/2604.05672",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "비전-언어-행동(VLA) 모델이 열려있는 세계 로봇 조작의 강력한 패러다임으로-emerged 그러나 실제 배포는 종종 비용 제약으로 인하여 억대-규모 VLM backbone과 iterated diffusion/flow-based action heads의 고주파수와 compute로 인해 실시간 제어는 경상성 가격으로 commodity hardware에서 실행되게 함. A1은 저렴하고 고속인 지능 framework를 설계, manipulation 성공을 포기하지 않고 inference 시간을 낮추는 것을 목표로 함. 이러한 접근 방식은 pretrained VLM이 implicit affordance prior를 제공하여 action generation에 사용할 수 있도록 하는 것이다. 우리는 전체 훈련 스택(훈련 코드, 데이터/데이터 처리 파イ프라인, 중간 체크포인트, 평가 스크립트)을 공개하여 end-to-end reproducibility를 구현하는 데 집중함. A1은 VLM의 optimized pipeline이 아니라 inference pipeline 전반을 대상으로 하여 budget-aware adaptive inference scheme를 제안, backbone과 action head을 동시에 가속화하는 것을 목표로 함. 즉, 우리는 intermediate VLM layer의 action consistency를 모니터링하여 early termination을 triggle하고 Inter-Layer Truncated Flow Matching를 제안, 정확한 액션을 warm-started하는 데 사용할 수 있도록 함. LIBERO, VLABench, Franka, AgiBot와 같은 시뮬레이션 벤치마크에서 A1은 최고 성과를 달성함으로써 inference cost를 단축(eg, flow-matching inference 72% lower per-episode latency for), backbone computation을 76.6% 줄이는 데 성공함. RoboChallenge에서는 A1이 평균 성공률 29.00%를 달성하여 pi0(28.33%), X-VLA (21.33%), RDT-1B (15.00%)와 같은 baseline을 초과했다."
-  },
-  {
-    "title": "Tencent Robotics X 핵심 멤버가 개발한 Dexterous Hand, 1년 간 5輪의 투자 받음함",
-    "original_title": "Seeds | Former Tencent Robotics X Core Member Develops Dexterous Hand, Raises 5 Rounds in One Year - Gasgoo",
-    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOVmNIZ1BwSHRwbHpxQ3ZldXRWM05lMGk0VHZqdzB3cjlvOHlILU1QeXZIbGpLdWJLdGpuUlZlRURocV9VZHFWZXN6d1VUYjB0VzFMY0xYNmxCckVfVVJwRGVEUUZRcExJaEo0azZnd0NBWjRsUWlnYVowYmQzT0VicVdMTm5aTmR0WjB5RFQ3LWZaS3hZUXBRM0hrTXdOWHFYd1hLZm84bDJwTWIwaGpoR055ZXJHN25hOW9OY3M2M2xaRzFkeXFMSDdxNXNsZXdpYVd4Q1U2aU9zME5YVHBzUXIxMDVVRzh4Q0tONmRB?oc=5",
-    "date": "2026-04-16 02:08",
-    "source": "Google News (Global Hand/Gripper)",
-    "category": "hand",
-    "summary": "Tencent Robotics X의 전직 멤버가 Dexterous Hand를 개발하여, 1년에 5輪의 투자를 받았다. 이 Dexterous Hand는 인간의손과 유사한 기능을 갖추고 있으며, 로봇공학领域에서 새로운 가능성을 열었다.\n\n(Note: I followed the instruction to translate the title and summarize the content into 2-3 concise sentences, using a formal tone and objective news-brief style. I also kept key technical terms and company names in English or used standard Korean transliteration if widely used.)"
-  },
-  {
-    "title": "Humanoid 로봇 반하프마라톤 알리바바, 호너에 의한 체현 AI 테스트",
-    "original_title": "Humanoid robot half-marathon draws Alibaba, Honor in embodied AI test - digitimes",
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQLWZLUlhvZnY3bzRVNE9NVkFHMVozeXBPQVd1ODJUcy15U01IbWdXUU9qcklkdWQ1SHYxR3h2X1FjRlVHb0h2MjdEMmxFNjdkZFVaVGkwdWpZaTZ4clFPQWdjNzNWX2toenM0Q3FlUnlkbUVuV1ByVmZTZlVTWnN6ODlMWGc1a0RzckJqRkNBVQ?oc=5",
-    "date": "2026-04-15 23:39",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "알리바바와 호너가 지원하는 인간형 로봇이 half-marathon 경주를 달리는 embodied AI 테스트의 새로운 성과를 발표함. 이를 통해 로봇의 실제 운동 성능을 평가하고자 함.\n\nNote: I followed the instructions carefully to provide a formal, objective summary with a natural translation of the title in Korean. The summary focuses on the technical aspect of the robot's test and the involvement of Alibaba and Honor."
-  },
-  {
-    "title": "KOREAN_TITLE",
-    "original_title": "Policy Support for Robotics Firms Shows Defense Integration - The Jamestown Foundation",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQeGwyVXpHeWUwaTJCR05fdkdMS0ozbUswbFQ5ZVk1SVl0emxVQlc3WFI2WWJ3dkFZNXZLQ0sxaTVuVlpaSXFzTjJCUEpVbFp5a01Na3pPRGxUbC1DQWFEVktYWlh6ZXlyY0xoY1pUT3AyaGFEV2tFU3VqNnhSMzFHV0F3ajhMTTJ3T1E?oc=5",
-    "date": "2026-04-15 21:19",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "KOREAN_SUMMARY**\n로보틱스 기업 지원 정책 방위 통합을 보여주는 것임"
   }
 ]
