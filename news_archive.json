@@ -153,6 +153,78 @@
     "summary": "arXiv:2606.03476v1 Announce Type: new \nAbstract: Retargeting human motion to humanoid robots is critical for teleoperation, imitation learning and human-robot interaction. However, it remains challenging because of substantial morphological discrepancies between humans and robots, including differences in skeletal topology, limb proportions and degrees of freedom, as well as the scarcity of paired motion data. This paper presents Human2Humanoid, an unsupervised motion retargeting framework that transfers human motions to humanoid robot behaviors with high fidelity. To bridge the domain gap under unpaired data, we adopt a CycleGAN-based architecture equipped with a skeleton-aware graph convolutional network to capture topology-dependent motion features. To address cross-domain scale mismatches, we introduce a morphology-invariant end-effector consistency loss that aligns normalized end-effector trajectories to preserve motion semantics across embodiments. To improve physical plausibility and reduce contact artifacts, we impose explicit physics-aware feasibility constraints to encourage reproduction of the contact patterns in the source motion. Experimental results show that the proposed method successfully retargets human motion to the Unitree G1 humanoid robot without paired data, and outperforms existing methods in both downstream controllability and physical feasibility."
   },
   {
+    "title": "Bionic Human-Motion Style Transfer for Physically Executable Whole-Body Control of Humanoid Robots",
+    "original_title": "Bionic Human-Motion Style Transfer for Physically Executable Whole-Body Control of Humanoid Robots",
+    "link": "https://arxiv.org/abs/2606.03536",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.03536v1 Announce Type: new \nAbstract: Expressive whole-body motion is important for humanoid robots operating in human environments, where robots are expected to move stably while presenting readable and adjustable body behaviors. However, most expressive motions are still obtained from fixed demonstrations or manually designed scripts, making it difficult to reuse a demonstrated style across different motion contents. Inspired by the way human motion styles convey affective and intentional cues through gait rhythm, posture, arm swing and body sway, this paper proposes a bionic generation-to-control framework for exemplar-driven style transfer on humanoid robots. Given a short human style exemplar and a target content motion, the proposed framework generates a stylized whole-body reference that preserves the intended motion content while transferring the demonstrated style. A physics-aware multi-condition latent diffusion model is developed to fuse style, content and trajectory conditions, and classifier-free guidance is used to adjust the style intensity without retraining. To improve hardware executability, contact-consistency and temporal-smoothness regularization are imposed on decoded motions during training. The generated references are then converted into G1-compatible robot references and executed by a preview-based whole-body tracking policy trained with a cluster-and-distill strategy. Simulation and Unitree G1 experiments show that the proposed method can transfer short human style exemplars to diverse robot motion contents, reduce contact and jitter artifacts compared with animation-oriented style-transfer baselines, and achieve a 96.0% success rate over 125 reported real-robot trials. The results demonstrate the feasibility of using short human motion exemplars as reusable bionic sources for physically executable expressive humanoid motion."
+  },
+  {
+    "title": "Static and Dynamic Representations for Tactile Contact-Angle Estimation with Event-Based Sensors",
+    "original_title": "Static and Dynamic Representations for Tactile Contact-Angle Estimation with Event-Based Sensors",
+    "link": "https://arxiv.org/abs/2606.03545",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03545v1 Announce Type: new \nAbstract: Event-based tactile sensing offers low-latency signal acquisition for contact-rich robotic interaction. This paper investigates contact-angle estimation using event streams from an event-based tactile sensor (NeuroTac) and compares three event-derived spatial contour representations: a dynamic representation capturing recent event activity, a static representation recovering a more persistent contact state, and their combined representation. Across the evaluated motion scenarios, all representation pipelines exhibited P99 processing latency below 10 ms at all tested sampling intervals, demonstrating their potential for high-frequency event-based tactile angle estimation in robotic manipulation. The static representation consistently achieved marginally better performance than the dynamic and combined representations under scenario-specific training, yielding a mean overall MAE of 0.160{\\deg} during continuous sensor rolling and a stop-phase mean MAE of 0.251{\\deg} during randomly inserted motion interruptions. It also exhibited smaller performance fluctuations across speed and indentation depth variations than the other two representations."
+  },
+  {
+    "title": "PHASER: Phase-Aware and Semantic Experience Replay for Vision-Language-Action Models",
+    "original_title": "PHASER: Phase-Aware and Semantic Experience Replay for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.03598",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03598v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have achieved remarkable success in language-conditioned robotic manipulation. However, deploying these models in open-ended environments requires continuously acquiring novel skills, a process that inevitably triggers severe catastrophic forgetting of previously learned behaviors. While experience replay (ER) serves as a standard mitigating strategy, naive uniform sampling fundamentally misaligns with the temporal characteristics of manipulation trajectories. It systematically under-samples brief but causally critical sub-skills, leading to phase starvation, and completely overlooks the varying degrees of forgetting across historical tasks. To overcome these limitations, we introduce PHASER, an architecture-agnostic continual learning framework. PHASER employs a phase-centric capacity allocation to guarantee equal memory support for all sub-skills, coupled with a multi-modal interference routing strategy that dynamically prioritizes historical phases at high risk of forgetting. Furthermore, to enable fully autonomous lifelong adaptation, we integrate Auto-PC, a lightweight pipeline combining unsupervised action-signal change-point detection with VLM-based semantic verification to extract temporal boundaries without intensive manual supervision. Evaluated across three VLA backbones on LIBERO continual learning suites, PHASER yields substantial empirical improvements, increasing Average Success Rate (ASR) by up to 31% over matched-budget ER and achieving an 87.8% final ASR on the LIBERO-Goal CL setting."
+  },
+  {
+    "title": "Revisiting Embodied Chain-of-Thought for Generalizable Robot Manipulation",
+    "original_title": "Revisiting Embodied Chain-of-Thought for Generalizable Robot Manipulation",
+    "link": "https://arxiv.org/abs/2606.03784",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03784v1 Announce Type: new \nAbstract: Embodied chain-of-thought (CoT) aims to bridge linguistic reasoning and robotic control, but its effective form and integration strategy remain underexplored. In this paper, we revisit embodied CoT for vision-language-action (VLA) models at large scale. We construct the largest embodied CoT corpus to date, comprising 978,743 trajectories, 226.3M samples, and 2592.5 hours of robot data. Through extensive experiments, we find that effective embodied CoT should ground high-level semantic understanding into concrete action guidance, such as end-effector movement descriptions and image-space trajectories, while high-level reasoning alone brings only marginal gains. We further show that explicit CoT does not scale reliably when used as an autoregressive action prefix, as it suffers from compounding inference errors and unstable reasoning-action coupling. To address these limitations, we propose ERVLA, a VLA model that uses embodied CoT as representation-shaping supervision rather than mandatory test-time reasoning. ERVLA is trained with a reasoning-dropout strategy, enabling the model to absorb rich reasoning traces during training while predicting actions directly without CoT decoding during inference. This design improves scalability with increasing pre-training data and avoids autoregressive instability. ERVLA achieves state-of-the-art performance on LIBERO-Plus with an 86.9% success rate and reaches 53.2% success rate on VLABench, demonstrating strong out-of-distribution generalization. In real-robot experiments, ERVLA further outperforms competitive state-of-the-art baselines, especially on tasks requiring semantic disambiguation and long-horizon execution. Code, data, and model checkpoints will be released."
+  },
+  {
+    "title": "Optimal Design and Analytical Modeling of a Soft Fin-Ray Effect Gripper Finger Using the Finite Rigid Elements Method",
+    "original_title": "Optimal Design and Analytical Modeling of a Soft Fin-Ray Effect Gripper Finger Using the Finite Rigid Elements Method",
+    "link": "https://arxiv.org/abs/2606.03798",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03798v1 Announce Type: new \nAbstract: Fin Ray-inspired soft grippers offer a promising solution for gently handling delicate, irregular objects, especially in agriculture. The objective of this research is to design, fabricate, and model a Fin Ray Effect (FRE) soft gripper finger to enable precise force control in future applications. This design aims to gently grasp delicate agricultural products, such as tomatoes, that require both adaptability and accurate force application. To address the inherent challenges of soft robotics, including nonlinear behavior, infinite degrees of freedom, and variable material properties, the Finite Rigid Elements Method (FREM) was employed for modeling. This method preserves analytical accuracy while providing a reliable foundation for the development of a force controller in later stages. A detailed Finite Element Model (FEM) was created using ANSYS, and the analytical results were validated through simulation and experimental testing. The gripper's fingers were optimized based on four key criteria: tip displacement, total deflection, stress distribution, and contact force. The optimal finger configuration includes a length of 30 mm, rib spacing of 10 mm, seven ribs angled at -15 deg, and a rib thickness of 1 mm. Theoretical modeling using the FREM predicted finger deformation with a 3% error, while the ANSYS numerical model achieved 2% error."
+  },
+  {
+    "title": "Let the Dynamics Flow: Stable Flow Matching Dynamical Systems",
+    "original_title": "Let the Dynamics Flow: Stable Flow Matching Dynamical Systems",
+    "link": "https://arxiv.org/abs/2606.03834",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.03834v1 Announce Type: new \nAbstract: Flow matching has recently emerged as a powerful approach for imitation learning, enabling scalable, expressive, and multimodal motion policies. However, incorporating formal stability guarantees into these generative models, a prerequisite to ensure safe and generalizable robot behaviors, remains a significant challenge. While modeling robot motions as dynamical systems allows for such stability-based inductive biases, existing frameworks struggle to capture the rich action distributions inherent in complex robotic tasks. This paper introduces Stable Flow Matching Dynamical Systems (SFMDS), a novel framework that bridges the gap between high-capacity generative modeling and formal Lyapunov stability guarantees. SFMDS parametrizes dynamical systems via flow matching while simultaneously constraining the model to a family of stable solutions. We propose two variants: a soft constraint based on a penalty term, and a hard structural constraint embedded directly in the model architecture. We further extend both formulations to Lie groups. Experiments on benchmark datasets, in simulation, and on a humanoid robot show that SFMDS learns stable, scalable, and multimodal dynamical systems in low- and high-dimensional state spaces, enabling safe and expressive robot motion generation."
+  },
+  {
+    "title": "Denoising Tells When to Replan: Denoising-Variance Adaptive Chunking for Flow-Based Robot Policies",
+    "original_title": "Denoising Tells When to Replan: Denoising-Variance Adaptive Chunking for Flow-Based Robot Policies",
+    "link": "https://arxiv.org/abs/2606.03847",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03847v1 Announce Type: new \nAbstract: Action chunking has become a common inference strategy for flow-based robot policies, improving action coherence by modeling multi-step temporal dependencies in demonstrations. However, the execution horizon is still typically set as an empirical fixed value, overlooking that predictable free-space motions and precision-critical interaction phases often require different replanning frequencies. In this work, we first show that the denoising process of flow-based policies contains an intrinsic signal of task phases: clean-action estimates remain stable during predictable motion phases, but fluctuate more strongly around contact-rich or precision-sensitive operations. Motivated by this observation, we propose DVAC (Denoising-Variance Adaptive Chunking), a test-time method that adaptively determines how many actions to execute from each predicted chunk. DVAC measures the variance of clean-action estimates over the final denoising steps, executes the stable low-variance prefix, and replans before high-variance future actions are committed. To transfer across tasks and rollouts, DVAC further calibrates the threshold with a rolling estimate of the local variance scale. Experiments on LIBERO, RoboTwin, CALVIN, and real-world manipulation show that DVAC improves task success while reducing replanning frequency. With a $\\pi_{0.5}$-based policy, DVAC improves LIBERO success from 94.75% to 98.00% and reduces replanning by 43.0%, while also yielding aggregate gains on RoboTwin and CALVIN and improving real-world execution efficiency."
+  },
+  {
+    "title": "PointAction: 3D Points as Universal Action Representations for Robot Control",
+    "original_title": "PointAction: 3D Points as Universal Action Representations for Robot Control",
+    "link": "https://arxiv.org/abs/2606.03943",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03943v1 Announce Type: new \nAbstract: Video-Action Models (VAMs) leverage the broad visual dynamics captured by pre-trained video diffusion models, offering a promising path toward generalizable robot manipulation. However, RGB-only video rollouts are not directly actionable: they leave metric 3D motion, contact geometry, and fine-grained spatial constraints under-specified, making action grounding ambiguous. Meanwhile, scaling action supervision across diverse tasks and embodiments remains costly. We present PointAction, a framework that bridges video predictions to robot actions through explicit point-based 4D modeling. PointAction fine-tunes a foundation video generation model to jointly predict future RGB frames and dynamic 3D pointmaps, producing temporally consistent 3D motion of task-relevant scene geometry. These point dynamics serve as a structured, embodiment-agnostic action interface, which a diffusion-based action decoder maps to executable robot actions. By using metric 3D point dynamics as the interface between video prediction and control, PointAction reduces the ambiguity of RGB-only action grounding and supports transfer across tasks and embodiments with limited action supervision. Experiments show that PointAction achieves state-of-the-art 4D generation quality on robot scenes, outperforms existing baselines in simulation, and generalizes to two real robot arms unseen during pretraining."
+  },
+  {
     "title": "NVIDIA’s Next Big Bet: Owning the Operating System of Humanoid Robots - kmjournal.net",
     "original_title": "NVIDIA’s Next Big Bet: Owning the Operating System of Humanoid Robots - kmjournal.net",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1NcnJQUExsR1ZRekdPU19GcGVzZTJQVFFaVXNuYzZ5OUhCdVhxek5ndy1kZUVONlVaUXg1c0lkTDNiTUpnYnh4TUIxNF96SHo1QmlFQVlfNUtCRTRmc2Y4b2FvMGhZOW1ySG5z?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "KOREAN_SUMMARY**\n로보틱스 기업 지원 정책 방위 통합을 보여주는 것임"
-  },
-  {
-    "title": "robot learning 방지 안전함",
-    "original_title": "Kinematic intelligence lets three different robots learn the same task safely",
-    "link": "https://techxplore.com/news/2026-04-kinematic-intelligence-robots-task-safely.html",
-    "date": "2026-04-15 20:20",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "세 개의 로봇이 같은 작업을 безопас하게 배울 수 있도록 кін에틱 인텔리전스를 사용하여 제조 환경에서 로봇 부대를 업그레이드하는 것은 시작부터 scratch가 아니라는 점을 강조하는 기술 발전이다."
-  },
-  {
-    "title": "로보틱스 개발 팀의 시급한 요구에 대응하는 디지털 제조 플랫폼",
-    "original_title": "Reducing Time-to-Market in Robotics with Digital Manufacturing Platforms",
-    "link": "https://roboticsandautomationnews.com/2026/04/15/reducing-time-to-market-in-robotics-with-digital-manufacturing-platforms/100645/",
-    "date": "2026-04-15 20:13",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "로보틱스 기업들이 이제까지보다 더 빨라야 하는 압박에 직면하고 있습니다. 이를 달성하려면 concept에서 생산까지 3D 디자인부터 설계, 테스트, 및 제조까지 모든 단계를 효율적으로 처리해야 하며, concurrently 수행되는 hardware 개발도 고려해야 합니다."
-  },
-  {
-    "title": "Nvidia, Cadence Design Systems",
-    "original_title": "Nvidia, Cadence Design Systems working together on AI for robotics - The Globe and Mail",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeG55RXFYZWtralFCN0xqTXJ1QXpyN01VY05TcEQtYjdTaEhDa2ZIaDVQYXJOMG9hMnpUTHU2YnVxQ1laMEVRdkZleWN2TU5WelVnS1ZEQkZsUHY1VlRGaThqem9KbXJaRGZkUGhZOHdCaFZLcExqbGZjS2NWQzVNNl9uZ2JsZWhlZm45b1E2V3RxZFpCY3hqaFd0RVp1MXhZQVhURUMtRjFmS0lhQlR1dTdsMUctOU41UTB3UmNGZlJ6c00?oc=5",
-    "date": "2026-04-15 18:02",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Nvidia와 Cadence Design Systems는 로보틱스에 AI를 개발하는 데 함께 일하고 있음. 새로운 파트너쉽은 로보틱스 산업의 성장과 발전을 도울 것으로 기대됨.\n\n(Note: I followed the instruction to translate the title, summarize the content in 2-3 concise Korean sentences, and maintain a formal, objective news-brief style. I also kept key technical terms and company names in English as per the instruction.)"
-  },
-  {
-    "title": "Volvo 자율주행솔루션과의 인터뷰 ~함",
-    "original_title": "Interview with Volvo Autonomous Solutions: Driverless trucks are upon us",
-    "link": "https://roboticsandautomationnews.com/2026/04/15/interview-with-volvo-autonomous-solutions-driverless-trucks-are-upon-us/100636/",
-    "date": "2026-04-15 17:48",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "고속물류산업이 운전원 부족, 운영비 지출 상승 및 효율 개선 압박에 직면하자마자 자율 트럭은 약속 이상으로 초기 상업 현실로 접근하고 있다. Volvo 자율주행솔루션의 전략적 공배역을 강조하는 인터뷰에서 자율 트럭이 실제 상업 적용을 위한 첫걸음으로 나아가고 있는 것이다.\n\n(Note: I followed the instruction to translate the title, summarize the content in 2-3 sentences, and maintain the formal tone and style. I also kept the technical terms and company name in English as per the instruction.)"
-  },
-  {
-    "title": "스테레오타시스, 45억달러까지 로보캣 인수함",
-    "original_title": "Stereotaxis to acquire Robocath for up to $45M",
-    "link": "https://www.therobotreport.com/stereotaxis-to-acquire-robocath-for-up-to-45m/",
-    "date": "2026-04-15 16:31",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "스테레오타시스는 엔도박혈술 절차 전반에 있어 리드平台을 강화하는 데 있어 로보캣 인수를 강조했습니다. 이 인수로 스테레오타시스의 엔도박혈술 절차 플랫폼의 강점을 확장할 것임."
-  },
-  {
-    "title": "토쿄 도착 중국 로봇 ~함",
-    "original_title": "Chinese Robots Arrive in Tokyo Amid Diplomatic Tensions - 조선일보",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOXzI3SnZ3VDRVZXFFTnRCYjNLWDRaLWRLbHNPa2tkVldRX2oydkR6VzM2QTVKUmxhamdHczJocG53RnJQSVZWX0M2WGJuOXZLazhuVkMtTzNxWjFxQlMtYUdoWGtpQmhRNTB3LXFiSHB5ek00LTIxZWpjcldFbTAzX2pmM1M?oc=5",
-    "date": "2026-04-15 15:46",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "일본 도쿄에 중국 로봇이 도착해 외교 긴장 상황속으로 소개된 바 있다. 중국 기업이 개발한 인공 지능 로봇 5종이 도쿼의 전시회에서 공개된 것으로, 향후 산업 발전을 주목하는 관심을 받고 있다.\n\n(Note: I translated the title to \"토쿄 도착 중국 로봇 ~함\" which means \"Chinese robots arrive in Tokyo\". The summary is concise and formal as instructed, highlighting the key point that Chinese robotics companies introduced their AI-powered robots at an exhibition in Tokyo amidst diplomatic tensions.)"
-  },
-  {
-    "title": "Tesla AMR 개발 및 확대 로드맵 공개함",
-    "original_title": "Tesla to share its roadmap for building and scaling AMRs at the Robotics Summit & Expo",
-    "link": "https://www.therobotreport.com/tesla-to-share-its-roadmap-for-building-and-scaling-amrs-at-the-robotics-summit-expo/",
-    "date": "2026-04-15 15:33",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "테슬라의 자동화된 물류 로봇(Autonomous Mobile Robot, AMR) 개발 및 확대의 로드맵을 공개할 예정입니다. 테슬라의 AMR 배포 엔지니어 제오스 조셉이 이에 대한 프레젠테이션을 진행할 계획입니다."
-  },
-  {
-    "title": "테슬라에 로봇 경쟁자 나왔다. 주가 상승함",
-    "original_title": "Tesla Has Some Robot Competition. The Stock Is Up. - Barron's",
-    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5CSXR0ZVR3Uk4zTEFnV1AxMTNLTVh5a3RTTDI4cDhfMVNxbmpRZ0s1LU8zRTJ6b2FzT0FGQVliSXZPV0UzRGZzMHZ0akVDU1hGWVYxQUVQMXl6MnI0ZnRsUm9UV2VJYy1Zd0lnTVVKdw?oc=5",
-    "date": "2026-04-15 15:32",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "테슬라의 humanoide 로봇 개발 경쟁에서 새로운 플레이어들이 등장하고 있는 것으로 나타났다. 이 중 하나는 스타트업인 Fabric 등으로, 테슬라의 Autopilot 시스팀을 경쟁시킬 계획이다. 이는 테슬라 주가가 상승하는 요인 가운데 하나로 간주된다."
   }
 ]
