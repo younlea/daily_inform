@@ -1,5 +1,86 @@
 [
   {
+    "title": "SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos",
+    "original_title": "SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos",
+    "link": "https://arxiv.org/abs/2606.02745",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.02745v1 Announce Type: new \nAbstract: Vision-language-action models (VLAs) are promising general-purpose robot policies, but adapting them to new tasks typically requires costly task-specific teleoperation data. As an alternative, we study one-shot demo-conditioned VLAs, where a robot policy is conditioned on a single demonstration video of an unseen task. We find that existing end-to-end approaches often struggle when successful execution requires precisely localizing small target regions. To address this limitation, we propose SeeTraceAct, a demo-conditioned VLA framework that encourages precise spatial grounding through visibility-aware prediction of future end-effector traces. To enable reproducible evaluation with cross-embodiment demonstrations, we introduce and release RoboCasa-DC, a demo-conditioned extension of RoboCasa with episode-paired humanoid videos. Experiments on RoboCasa-DC and a real-world benchmark, where a Franka Panda arm is conditioned on human demonstrations, show that SeeTraceAct outperforms baselines, achieving the best success rate across all four RoboCasa-DC settings and improving real-world average success by 12.5 percentage points."
+  },
+  {
+    "title": "Direct Informed Sampling on Riemannian Manifolds via Loewner Order Lower Bounds",
+    "original_title": "Direct Informed Sampling on Riemannian Manifolds via Loewner Order Lower Bounds",
+    "link": "https://arxiv.org/abs/2606.02879",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.02879v1 Announce Type: new \nAbstract: Informed sampling techniques accelerate sampling-based motion planners by focusing the search on promising regions of the state space, yet most existing methods rely on Euclidean heuristics that become inadmissible under configuration-dependent Riemannian metrics. While scalar eigenvalue bounds restore admissibility by uniformly scaling the Euclidean distance, they discard the directional structure of the metric, producing overly conservative informed sets. We propose a matrix-valued admissible heuristic that exploits the Loewner order on symmetric positive definite matrices to compute the tightest constant lower bound on the metric tensor while preserving its full directional structure. The Cholesky factorization of this bound defines a linear map to an isotropic Euclidean space in which the Riemannian informed set reduces to a standard prolate hyperspheroid, enabling direct, rejection-free sampling using existing algorithms. Experiments on manipulation tasks with a 6-DoF UR5, 7-DoF Franka, and 14-DoF PR2 under three distinct Riemannian metrics show that our heuristic produces consistently tighter informed sets than both the Euclidean and scalar eigenvalue bounds, accelerating convergence across multiple state-of-the-art asymptotically optimal planners."
+  },
+  {
+    "title": "Impact of a Soft Wearable Back-Support Device on Postural Stability during Trip-Like Perturbations",
+    "original_title": "Impact of a Soft Wearable Back-Support Device on Postural Stability during Trip-Like Perturbations",
+    "link": "https://arxiv.org/abs/2606.02888",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.02888v1 Announce Type: new \nAbstract: The effectiveness of a soft wearable back-support device in enhancing postural stability was investigated under trip-like perturbations using two experimental paradigms: perturbed standing and perturbed walking. Healthy subjects completed trials under three different back-support conditions: no device, device worn with low stiffness, and device activated with high stiffness. Whole-body stability was quantified using the minimum Margin of Stability (MOS) at the point of maximal instability. Results demonstrated increased MOS during device use, indicating enhanced postural stability. In standing, MOS increased significantly with device stiffness, whereas in walking, both device conditions improved MOS relative to no device but did not differ significantly from each other. These findings highlight the potential of soft wearable back-support devices with adjustable stiffness to improve reactive balance control against external perturbations, with important implications for fall prevention. Future research should explore personalized stiffness optimization and evaluate efficacy in populations at elevated risk of falls."
+  },
+  {
+    "title": "ModuLoop : Low-Level Code Generation using Modular Synthesizer and Closed-Loop Debugger for Robotic Control",
+    "original_title": "ModuLoop : Low-Level Code Generation using Modular Synthesizer and Closed-Loop Debugger for Robotic Control",
+    "link": "https://arxiv.org/abs/2606.03047",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03047v1 Announce Type: new \nAbstract: Large Language Models (LLMs) have demonstrated impressive performance across various domains, including code generation and problem solving. However, their application in robotic control, particularly in low-level tasks that require precise manipulation, real-time feedback, and environment-dependent execution, remains limited. To address this challenge, we propose the Closed-Loop Modular Code Synthesizer framework. This framework leverages a pre-trained LLM without any task-specific fine-tuning to perform modular code planning and generation, and iteratively executes the generated code while inserting debugging probes to observe its behavior. This closed-loop structure facilitates systematic debugging and refinement, ultimately producing executable control programs. We apply the proposed framework to the calibration of an RGB-D camera and a robotic arm, validating its effectiveness in real-world settings. Furthermore, through a subsequent pick-and-place task, we demonstrate not only the accuracy of the calibration but also the potential extensibility of the framework. Across both tasks, the framework achieved high execution accuracy and autonomy, illustrating the practicality and scalability of LLM-based robotic control using our framework."
+  },
+  {
+    "title": "TTT-VLA: Test-Time Latent Prompt Optimization for Vision-Language-Action Models",
+    "original_title": "TTT-VLA: Test-Time Latent Prompt Optimization for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.03127",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03127v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models trained on large-scale data have made remarkable progress, but they remain vulnerable to distribution shifts at deployment time. Recent VLA models suggest that prompts can serve as an efficient interface for steering policy behavior, but existing prompt-based steering typically relies on external guidance. This raises a natural question: can test-time training (TTT) for VLA be achieved by optimizing a prompt, so that the steering interface itself can be learned and adapted from interaction? We address this question with TTT-VLA, a test-time training framework based on Latent Prompt Optimization (LPO). During training, the latent prompt is learned with an additional proxy task, providing an extra learned conditioning signal for policy learning. At test time, TTT is performed by collecting interaction data from the current environment and optimizing only the latent prompt on those data using the proxy task's self-supervised signal, without modifying the policy itself. Experiments on SimplerEnv demonstrate that the proposed method consistently improves task success rates in both single- and multi-embodiment settings. Further analysis shows that the gains arise primarily from correcting a small number of critical decisions rather than globally altering policy behavior. These results suggest that LPO provides an effective and practical pathway for deployment-time improvement of foundation manipulation policies."
+  },
+  {
+    "title": "How Visible Are Silent Manipulation Failures? An Observability Study of False-Success Detection in Simulated Robot Episodes",
+    "original_title": "How Visible Are Silent Manipulation Failures? An Observability Study of False-Success Detection in Simulated Robot Episodes",
+    "link": "https://arxiv.org/abs/2606.03134",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03134v1 Announce Type: new \nAbstract: Imitation-learning policies for robot manipulation inherit the quality of the success labels attached to their training episodes, and those labels are usually produced by the robot's own success check. A particularly damaging error is the false success: an episode the robot logs as a success when the task outcome was actually wrong. We ask a narrow but practical question about these episodes. Once an episode has already been flagged as a success, how much of the information needed to overturn that label is present in proprioception, and how much requires vision? We build a simulated testbed on two bimanual ALOHA tasks, induce failures through environment perturbations rather than label edits, label every episode by privileged simulator state that the detector never sees, and keep only episodes the robot flagged as successful. We then compare detectors restricted to proprioception against a vision-based detector. We find that recoverability spans a wide range: in cube transfer the false successes are almost fully recoverable from joint data alone, while in peg insertion proprioception recovers only part of them and a vision detector closes most of the gap. We also show that the proprioceptive separability we measure rests on velocity differences far below any realistic sensor noise floor, so it is best read as an optimistic upper bound that a noiseless simulator inflates. We release the generation and evaluation pipeline."
+  },
+  {
+    "title": "ConTrack: Constrained Hand Motion Tracking with Adaptive Trade-off Control",
+    "original_title": "ConTrack: Constrained Hand Motion Tracking with Adaptive Trade-off Control",
+    "link": "https://arxiv.org/abs/2606.03177",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03177v1 Announce Type: new \nAbstract: Human demonstrations provide strong priors for robot manipulation, yet it is non-trivial to transfer them to execute on real robots due to the kinematic gap. In dexterous manipulation, it remains challenging to track long-horizon, contact-rich sequences even in simulators: a reference-tracking policy must keep objects on their target trajectories while preserving demonstrated joint motion and contact timing. Existing approaches often rely on hand-crafted reward tuning that require per-sequence tuning and break under limited interaction budgets. We introduce ConTrack, a reinforcement learning (RL) framework that scales with tracking data. ConTrack treats object tracking as a constraint and allocates remaining control authority to motion fidelity, which allows it to adapt task--style trade-offs online using a dual-variable update. In addition, ConTrack also stabilizes long-horizon learning with an adaptive mid-trajectory reset library that reuses policy-reachable simulator states. Our qualitative and quantitative results in simulation tracking and real robot demonstrate that ConTrack improves success and object pose accuracy significantly over prior arts while preserving joint and contact fidelity. Website: https://www.lyt0112.com/projects/ConTrack."
+  },
+  {
+    "title": "Toward Gripper-Integrated Active Electrosense for Pre-Contact Sensing in Underwater Soft Grippers",
+    "original_title": "Toward Gripper-Integrated Active Electrosense for Pre-Contact Sensing in Underwater Soft Grippers",
+    "link": "https://arxiv.org/abs/2606.03204",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.03204v1 Announce Type: new \nAbstract: Underwater manipulation often occurs under degraded visibility due to turbidity, glare, and gripper occlusion, limiting the reliability of vision-based perception during approach and grasping. In such settings, soft grippers are well suited for compliant interaction, but they typically lack an onboard pre-contact cue that can guide approach and closure when vision is unreliable. This extended abstract explores active electrosense as a lightweight sensing modality that can provide a proximity-like signal prior to contact by measuring perturbations of an applied electric field in conductive media. We instrument an octopus-inspired gripper with a discrete electrode layout and record multi-channel sensing voltages using off-the-shelf hardware. Simulation and tank experiments with a suspended conductive sphere show structured, object-dependent changes in the multi-electrode voltage readout relative to empty-water baselines, with detectability varying across excitation of 5 to 20 V and frequencies from 1 mHz to 1 kHz. These findings motivate systematic investigation of gripper-integrated electrosense as a complementary pre-contact cue for underwater soft manipulation."
+  },
+  {
+    "title": "NVIDIA’s Next Big Bet: Owning the Operating System of Humanoid Robots - kmjournal.net",
+    "original_title": "NVIDIA’s Next Big Bet: Owning the Operating System of Humanoid Robots - kmjournal.net",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1NcnJQUExsR1ZRekdPU19GcGVzZTJQVFFaVXNuYzZ5OUhCdVhxek5ndy1kZUVONlVaUXg1c0lkTDNiTUpnYnh4TUIxNF96SHo1QmlFQVlfNUtCRTRmc2Y4b2FvMGhZOW1ySG5z?oc=5",
+    "date": "2026-06-03 03:47",
+    "source": "Google News (Humanoid)",
+    "category": "humanoid",
+    "summary": "NVIDIA’s Next Big Bet: Owning the Operating System of Humanoid Robots  kmjournal.net"
+  },
+  {
     "title": "Unitree IPO Cleared, AGIBOT Hits 10,000 Units: China Humanoid Robot Duopoly Takes Shape - Tech Times",
     "original_title": "Unitree IPO Cleared, AGIBOT Hits 10,000 Units: China Humanoid Robot Duopoly Takes Shape - Tech Times",
     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNzFaaFpSRHV2NVB1c2prQ0JUOS1hZS12ZUpsTUxMMGJtZ1A1TEItaFctWGkxZnR1SkpQU25HQkJmeFZmaWpkRVJHMXlpODlLRkhKVFFEMFE5WFZDanlOQXRkUHR2ZWVVTktTMm1TLUQtUndERC1McXRDTW5TOEFOcW96NF9jaVh0U01BZmQyUlZuMUtWM1RHa1FJWXVGeGF3YkRqU0M4QnJ5V1p6YmxLRWRDSXFYSTJlLThYc3ZsR2tTVDk4WWZTVFZuc3g3NGNPQkdZTA?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Tesla의 로봇 경쟁자가 나타나면서 주식 가격이 올랐다. Tesla는 지난달에 39억 달러의 수익을 기록하여 전년 동기보다 11% 상승한 것 같으며, 경쟁자들은 자동차 산업에서 로봇 기술을 적용하고 있다."
-  },
-  {
-    "title": "구글 10억달러를 투자, 미국 제조업직공 4만명을 AI 기술 훈련에 지원함",
-    "original_title": "Google commits $10 million to train 40,000 US manufacturing workers in AI skills",
-    "link": "https://roboticsandautomationnews.com/2026/04/15/google-commits-10-million-to-train-40000-us-manufacturing-workers-in-ai-skills/100620/",
-    "date": "2026-04-15 11:43",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "구글.오르그가 10억달러를 들여 미국 제조업계의 인력훈련을 지원하기 위해 40,000명의 현직과 미래직공을 대상으로 AI 기술 훈련을 제공할 계획입니다. 이 금액은 제조 산업원 (MI)에게 지출되어 새로운 훈련 프로그램 개발과 전국적으로 아르바이트 기회 확대를 지원합니다."
-  },
-  {
-    "title": "테슬라의 로봇 경쟁자 나타났다. 주식은 상승함",
-    "original_title": "Tesla Has Some Robot Competition. The Stock Is Up. - Barron's",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5KYnhWMGxRQV9hbGF0Yjl4aVJzVzRSM0ZBQzZUTEdiYVZsNjZLaXhnZTdnZmtQRnd5X1hVODNENl9WOGo4RHNjN01lYnF3ZWRBMGFQSU1nSlEwQkpkOWgwYUxkRGJQZVFQZklIaXdoOXdnTkJiT0h3WHhIUFZXbUU?oc=5",
-    "date": "2026-04-15 11:37",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "테슬라는 인공지능(AI) 로봇 회사인 Figure AI와 경쟁을 벌이고 있는 것으로 나타났다. 테슬라의 주식은 이 소식에 힘입어 상승한 것임."
-  },
-  {
-    "title": "AGIBOT G2 인공인간 로봇이 중국 공장에서 상징적 AI 작업을 수행함",
-    "original_title": "Agibot's G2 humanoid robots with embodied AI work in Chinese factory - Interesting Engineering",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQ2dDV2FzaHJUU0dWaTN5b2t0YUo5ZGZVTjBGWXhIUEtJeGM4UEtzUC16SHFVU1AwaGVYRHZkaFRPY3dfTjdLVWJtLVBHNFQ1NU9yY0pLLVJXTHhtNC1HaGsxeDY5WFlHNHdKTzJjUkhUcmpOc1RueUJjU1VHNVFKcTRpaGtsTlVTUlE?oc=5",
-    "date": "2026-04-15 11:06",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중화人民共和国의 공장에서 AGIBOT G2 인공인간 로봇이 상징적 지능(Artificial Intelligence) 기술을 기반으로 작업을 수행하는 예가 보고된바 있다. 이 로봇은 embodied AI를 탑재하고 있으며, 다양한 산업에서 활용할 수 있는 잠재력을 보유하고 있다고 한다."
-  },
-  {
-    "title": "Unitree ~로보트",
-    "original_title": "Unitree launches cheapest humanoid robot on AliExpress to rival Tesla - The Business Times",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOM1lLT0tSNjV3QzhtYzU1UmNnYlk0X2pkdE9OVEhIdDBVNTl4MkQ3U0VUZm9VTjdPOW1wR2JRcmhRYlJKU25FbkxVMElGWi1icW4wU3dCLWFCZGNLYnVCUHM4T2UzcEZZcHNrNkJPdDcxXzNRcEZYdG52ZF9MbXQzc0JRUWdSV1E5WGNPVlM4YVFqR3VsV0VrM1NEMXRNZkFOZ1FHbVYxZmJEQU1KcndhN19LWTJOam9fYjA1Nnd0ZWQ1RmZNb2lEV3I1eXc?oc=5",
-    "date": "2026-04-15 10:58",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree는 알리익스프레스를 통해 최저가 гумано이드 로봇을 출시하여 테슬라와 경쟁을 벌이함. 가격은 1,299달러로 세계에서 가장 저렴한Humanoide 로봇임. Robot은 4도·2족·6DOF의 자유도를 갖추고 있고, AI를 적용하여 다양한 기능을 지원하는 모델임."
-  },
-  {
-    "title": "KEENON 로봇틱스 2026 암스테르담 인터클린에서 자율 청소 혁신 공개함",
-    "original_title": "At Interclean Amsterdam 2026 KEENON Robotics Demonstrated Autonomous Cleaning Innovation",
-    "link": "https://humanoidroboticstechnology.com/industry-news/at-interclean-amsterdam-2026-keenon-robotics-demonstrated-autonomous-cleaning-innovation/",
-    "date": "2026-04-15 10:25",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "KEENON 로봇틱스는 2026 암스테르담 인터클린에서 다음 покол의 자동화가 시설 관리(FM)계를 재창조하는 수치적 지능과 다로봇 협업을 선보였다. FM 산업이 인력 부족, 운영 복잡성 상승, 일관성 예상 등으로 도전을 받고 있을 때 KEENON은 더 자율화된, 확장 가능하며 효율적인 운영을 위해 프로페셔널 청소 대대를 구성하였다."
-  },
-  {
-    "title": "Pickup 트럭의 미래 방향",
-    "original_title": "How Modern Pickup Trucks Are Evolving with Smarter Performance Technology",
-    "link": "https://roboticsandautomationnews.com/2026/04/15/how-modern-pickup-trucks-are-evolving-with-smarter-performance-technology/100616/",
-    "date": "2026-04-15 08:50",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "현대 Pickup 트럭은 더 똑똑한 성능 기술을 추가하여 성능을 개선하고 제조 방법도 혁신적으로 바꾸어야 하는 움직임을 보여준다. 이러한 변화는 엔진 크기, 견인력, 견고함에만 국한되지 않고 Smart 기능을 추가해 트럭의 가능성을 확대하는 방향으로 가게 되었다."
-  },
-  {
-    "title": "AI는 자동차 보험 사고 평가 정확성을 개선하고 있습니다",
-    "original_title": "How AI is Improving Accuracy in Motor Insurance Claims Assessment",
-    "link": "https://roboticsandautomationnews.com/2026/04/15/how-ai-is-improving-accuracy-in-motor-insurance-claims-assessment/100613/",
-    "date": "2026-04-15 08:40",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "자동차 보험사고 평가 정확성은 동일한 차량 손상에 대한 두 명의 adjuster의 조사 결과가 천도 원하는 등차를 생성하는 문제를 초래하며, 보험사가 예측하지 못한 손실 예비에 문제가 있고, 정책자가 공정한 대우를 받는 것인지 모호함을 느끼며, 수리공장이 운영의 불합리를 경험하게 됩니다."
-  },
-  {
-    "title": "테슬라의 중국 로봇 라이벌 글로벌 진출加속 앞두고 IPO 예정",
-    "original_title": "Tesla’s Chinese Robot Rival Ramps up Global Push Ahead of IPO - Bloomberg.com",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVi1wVWU5N3lRaWVJenRFZndGSmFFeGtqbURRRU5EZW55eHQwU2QyNFVkOGxGUXhlUEJWSVYybkZSX09sZXRZTTRuZ1JKdmpQclFGNTV2UTdlbWVFWm1GTnl4N05sRks0WTNTX2ZTUnRoRldIT0l4aVpFcUtTS0hzSG5NVktvdmx0WTJkbzZvNFlHS2t4Z3ZBamFhNGN2dUhPTGJuX2NaX0swT0tXbGE2SENB?oc=5",
-    "date": "2026-04-15 08:38",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "테슬라의 중국 로봇 라이벌, 로보틱스-tech 기업인 메이저메이커가 글로벌 확장 계획을 발표했다. 이에 따라 주요 경쟁사인 테슬라에 도전장을 내세우는 것임. \n\n(Note: I followed the formatting rules and output the exact string as requested.)"
-  },
-  {
-    "title": "WHITE LABEL PPC 서비스가 조직의 성장에 보조함",
-    "original_title": "How White Label PPC Services Help Agencies Scale Faster",
-    "link": "https://roboticsandautomationnews.com/2026/04/15/how-white-label-ppc-services-help-agencies-scale-faster/100609/",
-    "date": "2026-04-15 08:28",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "WHITE LABEL PPC 서비스를 통해 디지털 마케팅 조직은 고급 기술을 제공할 수 있는 비용저축 방법을 찾을 수 있습니다. 이 서비스는 클라이언트 구입에서 캠페인 최적화까지 모든 과정을 효율적으로 처리하여 조직의 성장에 보조합니다."
   }
 ]
