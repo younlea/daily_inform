@@ -1,5 +1,23 @@
 [
   {
+    "title": "Robotics firm Eternal and seed breeder Rijk Zwaan partner to optimize tomato varieties for greenhouse automation",
+    "original_title": "Robotics firm Eternal and seed breeder Rijk Zwaan partner to optimize tomato varieties for greenhouse automation",
+    "link": "https://roboticsandautomationnews.com/2026/06/03/robotics-firm-eternal-and-seed-breeder-rijk-zwaan-partner-to-optimize-tomato-varieties-for-greenhouse-automation/102198/",
+    "date": "2026-06-03 07:14",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "eternal.ag and Rijk Zwaan are collaborating in exploring which tomato varieties can support robotic crop work operations in greenhouses. By sharing knowledge and insights, the initiative aims to better understand which plant characteristics are suited for a future where crop work in greenhouse environments is fully automated. By combining Rijk Zwaan’s global experience in fruit […]"
+  },
+  {
+    "title": "Yamaha expands autonomous farming platform with new weed-control system for orchards and vineyards",
+    "original_title": "Yamaha expands autonomous farming platform with new weed-control system for orchards and vineyards",
+    "link": "https://roboticsandautomationnews.com/2026/06/03/yamaha-expands-autonomous-farming-platform-with-new-weed-control-system-for-orchards-and-vineyards/102195/",
+    "date": "2026-06-03 07:07",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Yamaha Agriculture is expanding the capabilities of its Prospr autonomous farming platform with a new herbicide attachment designed to automate weed control in orchards and vineyards. Developed with Croplands Equipment, the system adds precision herbicide application to Prospr’s growing list of autonomous field operations, helping specialty crop growers reduce labor requirements, improve spraying consistency, and […]"
+  },
+  {
     "title": "Why Precision Swiss Machining is Critical to the Future of Robotics and Automation",
     "original_title": "Why Precision Swiss Machining is Critical to the Future of Robotics and Automation",
     "link": "https://roboticsandautomationnews.com/2026/06/03/why-precision-swiss-machining-is-critical-to-the-future-of-robotics-and-automation/102192/",
@@ -315,6 +333,24 @@
     "summary": "arXiv:2602.06219v2 Announce Type: replace \nAbstract: World models offer a promising avenue for more faithfully capturing complex dynamics, including contacts and non-rigidity, as well as complex sensory information, such as visual perception, in situations where standard simulators struggle. However, these models are computationally complex to evaluate, posing a challenge for popular RL approaches that have been successfully used with simulators to solve complex locomotion tasks but yet struggle with manipulation. This paper introduces a method that bypasses simulators entirely, training RL policies inside world models learned from robots' interactions with real environments. At its core, our approach enables policy training with large-scale diffusion models via a novel decoupled first-order gradient (FoG) method: a full-scale world model generates accurate forward trajectories, while a lightweight latent-space surrogate approximates its local dynamics for efficient gradient computation. This coupling of a local and global world model ensures high-fidelity unrolling alongside computationally tractable differentiation. We demonstrate the efficacy of our method on the Push-T manipulation task, where it significantly outperforms PPO in sample efficiency. We further evaluate our approach through an ego-centric object manipulation task with a quadruped. Together, these results demonstrate that learning inside data-driven world models is a promising pathway for solving hard-to-model RL tasks in image space without reliance on hand-crafted physics simulators."
   },
   {
+    "title": "From Video to Control: A Survey of Learning Manipulation Interfaces from Temporal Visual Data",
+    "original_title": "From Video to Control: A Survey of Learning Manipulation Interfaces from Temporal Visual Data",
+    "link": "https://arxiv.org/abs/2604.04974",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.04974v2 Announce Type: replace \nAbstract: Video is a scalable observation of physical dynamics: it captures how objects move, how contact unfolds, and how scenes evolve under interaction -- all without requiring robot action labels. Yet translating this temporal structure into reliable robotic control remains an open challenge, because video lacks action supervision and differs from robot experience in embodiment, viewpoint, and physical constraints. This survey reviews methods that exploit non-action-annotated temporal video to learn control interfaces for robotic manipulation. We introduce an interface-centric taxonomy organized by where the video-to-control interface is constructed and what control properties it enables, identifying three families: direct video-action policies, which keep the interface implicit; latent-action methods, which route temporal structure through a compact learned intermediate; and explicit visual interfaces, which predict interpretable targets for downstream control. For each family, we analyze control-integration properties -- how the loop is closed, what can be verified before execution, and where failures enter. A cross-family synthesis reveals that the most pressing open challenges center on the robotics integration layer -- the mechanisms that connect video-derived predictions to dependable robot behavior -- and we outline research directions toward closing this gap."
+  },
+  {
+    "title": "DiscreteRTC: Discrete Diffusion Policies are Natural Asynchronous Executors",
+    "original_title": "DiscreteRTC: Discrete Diffusion Policies are Natural Asynchronous Executors",
+    "link": "https://arxiv.org/abs/2604.25050",
+    "date": "2026-06-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.25050v2 Announce Type: replace \nAbstract: Unlike chatbots, physical AI must act while the world keeps evolving. Therefore, the inter-chunk pause of synchronous executors are fatal for dynamic tasks regardless of how fast the inference is. Asynchronous execution -- thinking while acting -- is therefore a structural requirement, and real-time chunking (RTC) makes it viable by recasting chunk transitions as inpainting: freezing committed actions and consistently generating the remainder. However, RTC with flow-matching policy is structurally suboptimal: its inpainting comes from inference-time corrections rather than the base policy, yielding little pre-training benefit, specific fine-tuning, heuristic guidance, and extra computation that inflates the latency. In this work, we observe that discrete diffusion policies, which generate actions by iteratively unmasking, are natural asynchronous executors that resolve all limitations at once: they are fine-tuning free since inpainting is their native operation, while early stopping further provides adaptive guidance and reduces inference cost. We propose DiscreteRTC, which replaces external corrections with native unmasking, and show on dynamic simulated benchmarks and real-world dynamic manipulation tasks that it achieves higher success rates than continuous RTC and other baselines. In summary, DiscreteRTC is simpler to implement with 0 lines of additional code to enable async inpainting, faster at inference with only $\\sim 0.7\\times$ computation compared with generating actions from scratch, and better at execution with 65\\% higher success rate in real-world hockey defend task compared with flow-matching RTC, and 30\\% higher compared with training-time flow-matching RTC.More visualizations are on https://outsider86.github.io/DiscreteRTCSite/."
+  },
+  {
     "title": "NVIDIA’s Next Big Bet: Owning the Operating System of Humanoid Robots - kmjournal.net",
     "original_title": "NVIDIA’s Next Big Bet: Owning the Operating System of Humanoid Robots - kmjournal.net",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1NcnJQUExsR1ZRekdPU19GcGVzZTJQVFFaVXNuYzZ5OUhCdVhxek5ndy1kZUVONlVaUXg1c0lkTDNiTUpnYnh4TUIxNF96SHo1QmlFQVlfNUtCRTRmc2Y4b2FvMGhZOW1ySG5z?oc=5",
@@ -327,6 +363,15 @@
     "title": "Unitree IPO Cleared, AGIBOT Hits 10,000 Units: China Humanoid Robot Duopoly Takes Shape - Tech Times",
     "original_title": "Unitree IPO Cleared, AGIBOT Hits 10,000 Units: China Humanoid Robot Duopoly Takes Shape - Tech Times",
     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNzFaaFpSRHV2NVB1c2prQ0JUOS1hZS12ZUpsTUxMMGJtZ1A1TEItaFctWGkxZnR1SkpQU25HQkJmeFZmaWpkRVJHMXlpODlLRkhKVFFEMFE5WFZDanlOQXRkUHR2ZWVVTktTMm1TLUQtUndERC1McXRDTW5TOEFOcW96NF9jaVh0U01BZmQyUlZuMUtWM1RHa1FJWXVGeGF3YkRqU0M4QnJ5V1p6YmxLRWRDSXFYSTJlLThYc3ZsR2tTVDk4WWZTVFZuc3g3NGNPQkdZTA?oc=5",
+    "date": "2026-06-03 01:05",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree IPO Cleared, AGIBOT Hits 10,000 Units: China Humanoid Robot Duopoly Takes Shape  Tech Times"
+  },
+  {
+    "title": "Unitree IPO Cleared, AGIBOT Hits 10,000 Units: China Humanoid Robot Duopoly Takes Shape - Tech Times",
+    "original_title": "Unitree IPO Cleared, AGIBOT Hits 10,000 Units: China Humanoid Robot Duopoly Takes Shape - Tech Times",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZVRQZEJYZzRPX1Jwa01NM0p1YjhtSlp6ZVdsdHVJX19xTjI5V29sTVowb19mUUJEaHhmUTZaNFNaVUNCT1lFYVhMTDMxLTBFUFg5VHZZTDBla295bUw2NlhyTlF3WWN3dUlYUTZaY2ZFSjd2b3ZzX05mYm8tYWRabWtHX3RoUU1vMWVBMTBxMGE5SmxmaDJaRWlGS1hzRk1HaEE2TFZHR0ZLS2lXUlkxdVYwVVdVZXUzSnhGVXdtaGlMa0hpZ2dCd2dZaWVKQzNxTjI0dFFR?oc=5",
     "date": "2026-06-03 01:05",
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
@@ -17953,50 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "카테고리 수준의 일반화를 위한 로봇 가armeant 조작, 예를 들어 이중 손으로의 정리, 고차원성, 복잡한 역학 및 intra-category 변동에 직면해 있다. 현재 접근 방식은 특정 인스턴스의 시각적 기능을 동시에 배워서 과적합하거나, Category-level 의식 일반화를 통해 비로소 synergistic 이중 손 조작의 가치 예측을 실패하는 경우도 있다. 우리는 FCBV-Net을 제안하고 3D 점云을 기반으로 카테고리 수준의 정책 일반화를 향상시킨다. FCBV-Net은 pre-trained, frozen 고밀도 기하학적 기능에 대한 조건 조작 가치 예측을 통해 intra-category 가armeant 변동에 강건성을 확보하고 trainable 하위 구성 요소가 이러한 정적인 기능을 사용하여 task-specific 정책을 배워낸다. CLOTH3D 데이터셋을 기반으로 PyFlex 환경에서 FCBV-Net은 카테고리 수준의 일반화를 보여주었다. FCBV-Net은 2D 이미지 기반 baseline과 비교하여 96.2%에 해당하는 unseen 가armeant에 대한 효율성 하락률이 11.5%로 매우 낮았다. 3D 대응기반 baseline에서는 identical per-point 기하학적 기능을 사용하지만 고정된 원칙으로 83%의 최종 커버리지지만 FCBV-Net은 89%의 최종 커버리지를 달성했다. 이러한 결과는 기하학적 이해를 이중 손 조작 가치 예측에서 분리하는 것이 카테고리 수준의 일반화를 향상시킨다는 것을 강조해 주었다. 코드, 비디오 및 보조 자료는 다음 웹 사이트에 있는지 확인할 수 있다: https://dabaspark.github.io/fcbvnet/."
-  },
-  {
-    "title": "Robotics Agent Framework for Adaptive Manipulation via Reflection Optimization함",
-    "original_title": "Evolvable Embodied Agent for Robotic Manipulation via Long Short-Term Reflection and Optimization",
-    "link": "https://arxiv.org/abs/2604.13533",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로보틱스 에이전트 프레임워크를 제안, 환경 해석과 정책 계획을 개선하는 'EEAgent'를 사용하여 일반적 robotics 목표 달성. past experiences와 새로 학습된 교훈을 기반으로 동적으로 프로미트를 개선하는 'LSTRO' 메커니즘을 추가하여 지속적인 자체 진화 촉진, 수행 성공률 향상.\n\nNote: I followed the instruction rules strictly and formatted the output as required. The Korean title is translated to \"로보틱스 에이전트 프레임워크를 제안, 환경 해석과 정책 계획을 개선하는 'EEAgent'를 사용하여 일반적 robotics 목표 달성\" which means \"The proposal of a robotics agent framework for adaptive manipulation via reflection optimization\". The Korean summary is written in formal news brief style and highlights the technical specifications and strategic significance of the research."
-  },
-  {
-    "title": "ESCAPE: Episodic Spatial Memory and Adaptive Execution Policy for Long-Horizon Mobile Manipulation",
-    "original_title": "ESCAPE: Episodic Spatial Memory and Adaptive Execution Policy for Long-Horizon Mobile Manipulation",
-    "link": "https://arxiv.org/abs/2604.13633",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "한국에서 embodied AI의 복잡한 실내 환경에서의_NAVIGATION 및 HANDLING을 강조하고 있는 ESCAPE를 제안했습니다. 이 프로젝트는 스피셜 메모리 coupled with an adaptive policy for execution을 통해 퍼셉션-그라운드-익스큐션 워크플로우를 구성합니다. 또한 ALFRED 벤치마크에서 최고의 성과를 얻어 65.09%와 60.79%의 성공률을 달성했습니다."
-  },
-  {
-    "title": "Singular Configurations 방지를 위한 역기인력학: 전통적 및 학습 기반 방법의 통일된 처리",
-    "original_title": "Singularity Avoidance in Inverse Kinematics: A Unified Treatment of Classical and Learning-based Methods",
-    "link": "https://arxiv.org/abs/2604.13405",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "역기인력학(Singularity)으로 인한 태스크 공간 모빌리티의 손실, articulated joint 속도 amplification, 솔버 다이브레전트와 같은 문제를 해결하고자 하는 연구는 이제까지 Classical singularity-robust 역기인력학과 Learning-based 접근 방식을 연결하는 통일된 처리를 제공함. Jacobian regularization, Riemannian manipulability tracking, constrained optimization, 그리고 modern data-driven paradigms을 포함하여 이를 성취함. 실험 결과에 따르면 pure learning methods은 잘 조건화된 target에 대해서도 fail(0% success, approx. 10 mm mean error), 반면 Hybrid warm-start architectures - IKFlow (59% to 100%), CycleIK (0% to 98.6%), GGIK (0% to 100%) -는 learned solvers를 classical refinement을 통해 구제하고, DLS는 초기 오류부터 207 mm까지의 오류를 보정함. Further singularity-regime evaluation이 향후 작업으로 정찰됨."
-  },
-  {
-    "title": "Weakly-supervised Learning for Physics-informed Neural Motion Planning via Sparse Roadmap",
-    "original_title": "Weakly-supervised Learning for Physics-informed Neural Motion Planning via Sparse Roadmap",
-    "link": "https://arxiv.org/abs/2604.13204",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "물리 가정보와의 신경 운동 계획을 위한 약식 지원 학습 ~함. 신경 시간 필드 (NTFields) 등 기존 물리 정보 방법이 복잡한 다량 방지 공간에서 성장하 못하는 문제를 해결하기 위해 Hierarchical Neural Time Fields (H-NTFields) 프레임워크를 제안하였다. 이 프레임워크는 약식 지원 로드맵과 물리 정보 PDE 규제화를 결합하여 로드맵이 전역 토폴로지 앵커를 제공하고, PDE 손실이 지역 지омет릭 신뢰성을 강조하는 방식으로 작동한다. 18 Gibson 환경과 실제 로봇 플랫폼에서 실험을 통해 H-NTFields가 기존 물리 정보 방법보다鲁이나 성장한 inference를 허용하는 것임을 보여주었다."
-  },
-  {
-    "title": "Here is the translation and summary:\n\nMulti-Agent Scenarios에서 보다 보수적인 自动驾驶을 초월하는_framework via Coupled Model Predictive Control and Deep Reinforcement Learning",
-    "original_title": "Beyond Conservative Automated Driving in Multi-Agent Scenarios via Coupled Model Predictive Control and Deep Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2604.13891",
-    "date": "2026-04-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "자동 주행이 없는 교차로에서의自动驾驶은 복잡한 다 خودرو 상호작용 및 안전성과 효율의 균형을 맞추는 것이 요구된다. 모델 예측 제어(MPC)는 구조화된 제약 처리를 optimizations 통해 제공하지만 일반적으로 과보수적인 행동을 생성하는 수동 규칙에 의존하고 있다. 깊은 강화 학습(RL)은 경험에서 적응적 행위를 배워나가지만 일반화 및 안전성 보장에 어려움을 초래하게 된다. 이 연구에서는 MPC-RL framework를 제안하여 다 자동차 시나리오에서 운항 성능을 향상하는 것을 목표로 한다. 실험 결과는 MPC-RL이 독립된 MPC와 종단 RL보다 3가지 교통 밀도 수준에서 성능을 초월하며 사고율을 21% 줄이고 성공률을 6.5% 높인다. 또한 고속도로 합류 시나리오에 대한 zero-shot 전송을 평가한 결과는 MPC-기반 방법이 PPO보다 더 잘 전송되는 것을 확인할 수 있다. 이 frameworks의 추가적인 평가에서는 RL training 중 손실 안정화 속도가 더 빨라지는 것을 확인할 수 있다. 이러한 결과는 다 자동차 교차로 시나리오에서 안전성 성능과 효율의 균형을 개선하는 데 있어 MPC-RL framework가 효과적일 가능성을 제안하고 있으며, MPC 구성 요소가 다양한 운행 환경에서의 일반화에 강한 기초를 제공할 수 있는 것이다. 이 implementation code는 오픈 소스 공개함."
   }
 ]
