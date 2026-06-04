@@ -72,6 +72,78 @@
     "summary": "arXiv:2606.04618v1 Announce Type: new \nAbstract: Probabilistic data association (PDA) improves semantic SLAM in perceptually aliased scenes, but existing methods often assume a fixed landmark set, recompute association weights as the map grows, or rely on hand-tuned null-hypothesis weights. To address these limitations, we propose \\textbf{BPDA-GMM}, an online Bayesian PDA framework for semantic SLAM with a growing object-level map. BPDA-GMM uses a Dirichlet-process prior to induce a Chinese Restaurant Process (CRP) association model, where accumulated evidence favors existing landmarks, and the concentration parameter assigns probability mass to new landmarks. For each semantic detection, plausible candidates are selected by a joint semantic-geometric gate, CRP-weighted association probabilities are computed, and object landmarks are updated as semantic Gaussians in closed form. The resulting landmark set forms a Gaussian mixture model, and its dominant component is passed to the back-end as a max-mixture semantic factor. When association weights are inconclusive, an ambiguity-triggered $\\alpha$-divergence tempering step improves discrimination. Finally, a decoupled back-end zeroes the pose Jacobian of semantic factors, allowing noisy detections to refine landmarks without directly perturbing the trajectory. Experiments in simulation and on a real indoor dataset demonstrate improved trajectory accuracy, semantic mapping quality, and robustness to perceptual aliasing and classifier errors over state-of-the-art baselines. Code and video are publicly available at https://github.com/thanhnguyencanh/BPDA-SLAM."
   },
   {
+    "title": "VISTA: Vision-Grounded and Physics-Validated Adaptation of UMI data for VLA Training",
+    "original_title": "VISTA: Vision-Grounded and Physics-Validated Adaptation of UMI data for VLA Training",
+    "link": "https://arxiv.org/abs/2606.04708",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04708v1 Announce Type: new \nAbstract: Universal Manipulation Interface (UMI) enables scalable real-world robot data collection without hardware-specific teleoperation, yet leveraging UMI data to train large-scale Vision-Language-Action (VLA) models remains fundamentally challenging. We identify two critical mismatches: wrist-mounted fisheye views, with severe radial distortion and local gripper-centric perspectives, are out-of-distribution for pretrained VLMs; and human-collected trajectories frequently violate kinematic limits, incur collisions, or exceed controller bandwidth, teaching VLA policies physically infeasible actions. To address the challenges, we present VISTA, a framework that bridges this dual gap through three synergistic components. (i)~UMI-VQA, the first large-scale VQA dataset tailored to wrist-mounted fisheye observations, aligns VLM representations to the distorted visual regime via auxiliary vision-language supervision. (ii)~A systematic physical-validation pipeline performs a data-completeness pre-check and scores each valid trajectory for trajectory continuity, self-collision risk, and execution fidelity before it enters training. (iii)~A two-stage co-training recipe jointly learns vision-language grounding on UMI-VQA and action prediction on validated trajectories. Our experiments empirically show that incorporating UMI-VQA consistently improves downstream policy performance, and that physical-validation scores are strongly predictive of deployment success. On diverse simulation and real-world manipulation tasks, VISTA significantly outperforms strong baselines including $\\pi_{0.5}$, LingBot-VLA, and Wall-X. We release the physical-validation pipeline, UMI-VQA, validated trajectory data, and the pre-trained model for the community."
+  },
+  {
+    "title": "CoRe-MoE: Contrastive Reweighted Mixture of Experts for Multi-Terrain Humanoid Locomotion with Gait Adaptation",
+    "original_title": "CoRe-MoE: Contrastive Reweighted Mixture of Experts for Multi-Terrain Humanoid Locomotion with Gait Adaptation",
+    "link": "https://arxiv.org/abs/2606.04718",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.04718v1 Announce Type: new \nAbstract: Humans primarily rely on walking and running to traverse complex terrains, without resorting to unnecessarily complex motion patterns. Similarly, humanoid robots should achieve smooth transitions between walking and running while maintaining natural and stable locomotion. However, unifying gait transition and multi-terrain adaptation within a single policy remains challenging due to gradient interference and the distribution shift induced by terrain-dependent visual and dynamic variations. Although Mixture-of-Experts (MoE) architectures can alleviate multi-skill interference, naive joint training often fails to yield clear expert specialization, limiting their effectiveness. To address these challenges, we propose CoRe-MoE, a two-stage reinforcement learning framework that decouples gait generation from terrain adaptation. In the first stage, a stable locomotion policy is learned to produce natural walking and running behaviors with smooth transitions. In the second stage, a terrain-aware MoE branch is introduced and trained with a contrastive objective to shape the gating network, enabling it to capture structured terrain representations and promote expert specialization. The final action is obtained via weighted fusion of the base gait policy and the terrain-aware branch, allowing the policy to preserve stable locomotion patterns while adapting to complex terrains. Extensive simulation results demonstrate that the proposed method outperforms baseline approaches in terms of success rate, locomotion stability, and multi-terrain adaptability. Furthermore, zero-shot deployment on a Unitree G1 humanoid robot validates the effectiveness of our framework, achieving robust walking and running across stairs, slopes, steps, obstacles, and unstructured outdoor terrains, while maintaining accurate foothold placement and dynamic stability under external disturbances."
+  },
+  {
+    "title": "COP-Q: Safety-First Reinforcement Learning for Robot Control via Cholesky-Ordered Projection",
+    "original_title": "COP-Q: Safety-First Reinforcement Learning for Robot Control via Cholesky-Ordered Projection",
+    "link": "https://arxiv.org/abs/2606.04749",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04749v1 Announce Type: new \nAbstract: Safe robot control requires maximizing return while satisfying safety constraints. In off-policy safe reinforcement learning, reward and safety Q-values are commonly learned by separate critic ensembles, with uncertainty handled independently for each objective. This objective-wise treatment neglects inter-objective correlation and can lead to overly conservative value estimates, thereby reducing sample efficiency. To address this issue, we propose Cholesky-Ordered Projection Q-learning (COP-Q), a safety-first method that incorporates inter-objective covariance into vector-valued Q-value estimation. COP-Q constructs a generalized confidence bound in the joint Q-value space and uses Cholesky factorization to encode objective priority in a sequential form. This preserves conservatism on safety while adaptively reducing excessive conservatism on the reward objective. The resulting estimate is used in both temporal-difference target computation and actor optimization. COP-Q incurs minimal computational overhead and is readily compatible with most existing deep Q-learning frameworks. Experiments on robot locomotion in Brax and safe navigation in Safety-Gymnasium, covering both hard- and soft-safety settings, demonstrate that COP-Q achieves strong safety performance together with competitive or improved sample efficiency relative to representative baselines."
+  },
+  {
+    "title": "SoftPINCH: EMG-Driven Soft Exoskeleton Assistance for Finger Flexion and Grasping",
+    "original_title": "SoftPINCH: EMG-Driven Soft Exoskeleton Assistance for Finger Flexion and Grasping",
+    "link": "https://arxiv.org/abs/2606.04776",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04776v1 Announce Type: new \nAbstract: Surface electromyography (sEMG) provides a non-invasive interface for detecting hand-movement intention and controlling wearable assistive devices. However, reliable EMG-driven hand assistance remains challenging because EMG signals are affected by noise, motion artifacts, electrode placement, muscle fatigue, and inter-subject variability. At the same time, many hand exoskeletons remain mechanically restrictive or bulky, limiting comfort and natural hand motion. This work presents SoftPINCH, an EMG-driven soft wearable exoskeleton for thumb-index finger flexion and pinch grasp assistance. The system combines a tendon-driven soft exoskeleton, fingertip magnetic contact sensing, and neural EMG decoding for intention-based assistance. Surface EMG was recorded from forearm muscles during index and thumb movements, and three subject-independent decoding architectures were evaluated: LSTM, CNN+LSTM, and CNN+LSTM with attention. The CNN+LSTM and CNN+LSTM-attention models both achieved 99.4% LOSO test accuracy, outperforming the standalone LSTM, which reached 97.8%. However, the attention mechanism did not provide a significant improvement over CNN+LSTM, indicating that CNN-based feature extraction was sufficient for robust EMG representation. The CNN+LSTM model was therefore selected for real-time deployment due to its high accuracy and lower architectural complexity. Functional evaluation showed that active exoskeleton assistance reduced muscular effort during isolated finger flexion and object grasping. During weighted grasping, assistance reduced muscular effort across all tested loads, with a 92.6% reduction at the highest load. These results demonstrate the potential of SoftPINCH for intuitive, low-effort pinch assistance using real-time EMG-driven soft robotic control."
+  },
+  {
+    "title": "HapTile: A Haptic-Informed Vision-Tactile-Language-Action Dataset for Contact-Rich Imitation Learning",
+    "original_title": "HapTile: A Haptic-Informed Vision-Tactile-Language-Action Dataset for Contact-Rich Imitation Learning",
+    "link": "https://arxiv.org/abs/2606.04825",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04825v1 Announce Type: new \nAbstract: Despite the importance of tactile sensing for reliable manipulation, most existing Vision-Language-Action (VLA) datasets remain vision-only, and those that do incorporate tactile information typically lack the joint combination of task diversity, language conditioning, and action trajectories. Furthermore, existing teleoperation pipelines rarely provide haptic feedback to the operator, despite its established role in demonstration quality and manipulation stability. In this work, we present HapTile, a contact-grounded visuotactile manipulation dataset that advances beyond vision-only trajectory datasets by embedding physical interaction sensing at two levels: fingertip tactile feedback at the robot end-effector, and haptic-informed demonstrations at the teleoperator side. The data collection platform integrates haptic feedback directly into the teleoperation controller, enabling the operator to perceive contact interactions in real time. It is built around a standard and reproducible robotic system equipped with custom-designed fingertip tactile sensors. The dataset comprises everyday manipulation tasks spanning a broad range of contact-rich skills, including pick-and-place, folding, pressing, stacking, and other routine activities. Each task is paired with language instructions that condition the policy on the manipulation objective, together with synchronized visuotactile observations and action trajectories. In addition, we provide a benchmarking study on contact-rich policy learning using two baseline models to evaluate the effectiveness of the proposed contact-grounded dataset. The dataset and additional details are available on our website: haptile-dataset.github.io."
+  },
+  {
+    "title": "M3imic: Learning a Versatile Whole-Body Controller for Multimodal Motion Mimicking",
+    "original_title": "M3imic: Learning a Versatile Whole-Body Controller for Multimodal Motion Mimicking",
+    "link": "https://arxiv.org/abs/2606.04829",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04829v1 Announce Type: new \nAbstract: Building a general-purpose whole-body controller is essential for enabling diverse motion capabilities in humanoid robots across a wide range of downstream tasks, including locomotion and loco-manipulation. Different tasks rely on distinct motion reference modalities: locomotion primarily depends on coordinated robot joint trajectories, whereas manipulation requires precise end-effector trajectory tracking. Existing methods often overlook the representational mismatch between dense robot joint angles and sparse end-effector poses. To address this, we propose Multi-Modal Mimic (M3imic), a versatile multi-modal whole-body control framework that unifies heterogeneous motion reference modalities, including robot joint angles, human pose trajectories, and end-effector poses, using modality-specific encoders to map them into a shared latent space. Leveraging large-scale reinforcement learning in the simulator, we train a single policy that achieves sim-to-real transfer across multiple motion reference modalities without modality-specific retraining. Extensive simulation and real-world experiments on the Unitree G1 robot are conducted to evaluate the proposed framework. In simulation, the policy achieves a peak success rate of 98.42\\% on an unseen test dataset, demonstrating its exceptional generalization capability. The code is available at https://github.com/Renforce-Dynamics/MultiModalWBC"
+  },
+  {
+    "title": "HORIZON: Recoverability-Governed Curriculum for Physical-Domain Scaling",
+    "original_title": "HORIZON: Recoverability-Governed Curriculum for Physical-Domain Scaling",
+    "link": "https://arxiv.org/abs/2606.05143",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.05143v1 Announce Type: new \nAbstract: Scaling robust robot policies requires more than broader randomization, because physical-domain experience must remain organized and learnable throughout training. We study when a policy can benefit from harder physics and identify recoverability as a central constraint in on-policy physical-domain scaling. In on-policy training, new dynamics are useful only insofar as they remain close enough to the current policy to generate corrective on-policy data, rather than collapsing rollouts into unrecoverable failures. Using quadruped locomotion as a physically demanding benchmark for embodied generalization, we introduce HORIZON, a checkpointed frontier curriculum that expands physical domains only within the current policy's recoverable boundary. HORIZON uses rollback and boundary refinement to govern each expansion step, turning fixed randomization into a continual process of physical-domain growth. Experiments reveal three regularities of physical-domain expansion. First, direct domain widening is uneven across physical axes and often unlearnable without staged ordering. Second, domain composition is non-monotonic, and adding more domains beyond a compact core can dilute recoverable joint samples and reduce overall robustness. Third, offline distillation of isolated experts cannot substitute for the joint interaction generated by on-policy curriculum. Together, these results frame physical-domain generalization as a continual growth problem for embodied control, with recoverability as the organizing principle for on-policy expansion."
+  },
+  {
+    "title": "X4Val: Learning Neural Surrogates for Variance-Reduced Policy Evaluation",
+    "original_title": "X4Val: Learning Neural Surrogates for Variance-Reduced Policy Evaluation",
+    "link": "https://arxiv.org/abs/2606.05159",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.05159v1 Announce Type: new \nAbstract: Rigorous evaluation of learning-based robotic systems is an essential prerequisite for deployment. However, real-world test data is expensive to gather; moreover, in a typical iterative development context, data gathered from the latest policy is necessarily limited in scale. This motivates evaluation methodologies that make use of heterogeneous data sources, including simulation, historical policy logs, and data collected from related platforms or environments. While such auxiliary data are abundant and inexpensive, they are generally not directly representative of real-world outcomes -- for example, performance in simulation may differ substantially from performance in the real world -- making their principled use for high-confidence performance estimation challenging. In this paper, we introduce X4Val, a general framework for variance-reduced real-world metric estimation in the presence of non-paired, multi-domain data. X4Val embeds samples from real and auxiliary domains into a shared representation space and learns a transferable predictor of real-world metrics; this learned predictor is then incorporated into a control-variates estimator, enabling variance reduction even when paired samples are unavailable. We provide theoretical analysis and empirical evaluations on autonomous driving and real-world robot manipulation tasks, domains across which X4Val achieves up to 38.4% variance reduction and demonstrates consistent improvements over strong baselines. These results show that non-paired, heterogeneous data can be leveraged to substantially improve the sample efficiency of rigorous robotic system validation."
+  },
+  {
     "title": "The 'Wintel' of robotics? Nvidia allies with Unitree to standardize AI humanoid development - digitimes",
     "original_title": "The 'Wintel' of robotics? Nvidia allies with Unitree to standardize AI humanoid development - digitimes",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUmFlalZFZ0Fiby1GeHhiSzhVQk5KWGZCWTNaQ09VVFZ1X1M1RDZONXg5Y1pDcDVudEJDeUxwTTdnZmJTOTRIY1hmbTBWa3F1TDR1QnNfeGZia29hMzhxTS1ibGp2TldBNG9rdjBJU3FsMHBCMXRleXhCR21kUHVvTjFXUEt6SHFiWEExVWNOQlp3cG40djJCOFkyMFJVMTJVdzc4?oc=5",
@@ -916,6 +988,15 @@
     "source": "Google News (China Hand/Sensor Startups - EN)",
     "category": "hand",
     "summary": "XELA Robotics to Unveil New Major Tactile Sensor Capabilities at Automate 2026  Yahoo Finance"
+  },
+  {
+    "title": "How Meituan’s US$1b bets on AI, robotics outshine quarterly loss - South China Morning Post",
+    "original_title": "How Meituan’s US$1b bets on AI, robotics outshine quarterly loss - South China Morning Post",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVDNnM2s5R01rZmNIbkp1THF2YTZEMS1YUmgyX1Y2T2JSYlZUV1VXQkN2QkFnOF9CQWR3Y0NGc0ZDdjZoZEVFX1dab3dZMEZNY29Xb2ttc25XZXRPN202aGFZaWdPQVIzNEZJVGJCZ3ctOEUtSnRxd3VMSGdmcGtROG1Vb08temZQRUNobzZoVTBQbUg3RFlQZkhqVHpKN1Q1S1o5a2Zwa2NIQkl3dEZaY21FenZBQ2R6VnfSAboBQVVfeXFMTmRDeHJMMUNqRVU5UFVNVUMzNTNlSlZmNGZteV9UVTB1TVgzNS1XNlp3eFFPdmFXQ2F0TVNhbjV1aDNjODFjcmdkOURXU083TmxCcm1qVDJUR3E2ek1GcU53bkxKcDVJR3FXY3Q4THRkYnJMcEVqU1dpY2ZPelpVbkFtaTU3WHFKMVl4c3ZKUERPUlRnODdlNzR3OTZfQjFqOHZsUDl6bFN3UHV2NUd0NzZGd3lpQVN3VmtB?oc=5",
+    "date": "2026-06-02 13:00",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "How Meituan’s US$1b bets on AI, robotics outshine quarterly loss  South China Morning Post"
   },
   {
     "title": "How SMEs can use automation to their advantage",
@@ -17917,86 +17998,5 @@
     "source": "ByteByteGo",
     "category": "humanoid",
     "summary": "자바 코드는 컴파일, 실행, 디버깅되는데, JVM은 이 과정에서 어떤 역할을 하는가에 대한 내용."
-  },
-  {
-    "title": "중국 인형 로봇 해프 마라톤, 기술력 폭증 과시",
-    "original_title": "China humanoid robot half-marathon to showcase technical leaps - arabnews.jp",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBwTHhSNnlaWVZrdkU1R00wT3dLRHVTNVkzMFJxWFVNUDgtcFYwTDlNQThWWmlzSHM3RFZWU0Z4R3c5U3g4WmcxOW1WTUlHSENiaUlfenNTdEFLSUNBZ1RWeg?oc=5",
-    "date": "2026-04-18 12:04",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 인형 로봇이 하프 마라톤을 완주하며 새로운 운동 동작 및 자율 주행 기술의 발전을 보여줄 예정이다. 이 행사는 로봇 기술 분야에서 중국의 성장을 입증하는 중요한 사건으로 평가된다."
-  },
-  {
-    "title": "중국 인형 로봇 반마라톤으로 기술력 향상 공개",
-    "original_title": "China humanoid robot half-marathon to showcase technical leaps - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPNjZYSTh3QkhpNnlGaWhKSEdtNUY2ei1TMnUwbi1VYTN4bG5aN2RWVTdXT0F6ODNseVRGT2xoMUhSN3BqN1pGZ040SjFiYlBmMzdpRVVBRl91S2dZZ1B5N1BtOHl6R0J4WmRWNHI3Zjh5WXQ5d2lINlZuWHlkUjU1Wk9FSUNjdTVQTEVVNEpjN3hNQU5QN1dxTmtmbE1zdnBzTFpZSElFNUNMWmpOQWs4V3hJa2s?oc=5",
-    "date": "2026-04-18 01:01",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국에서 개발된 인형 로봇이 반 마라톤 경주에 참가하며 기술 발전을 시연할 예정이다. 이 로봇은 자율 주행, 인간과의 상호 작용 등 다양한 능력을 보여주고 있으며, 중국의 로보틱스 기술력 향상을 알리는 계기로 삼는다."
-  },
-  {
-    "title": "MODEX 2026 개최 후기",
-    "original_title": "MODEX 2026 recap",
-    "link": "https://www.therobotreport.com/modex-2026-recap/",
-    "date": "2026-04-17 23:20",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "전문 기자가 Gene Demaitre과 Sarah Wynn의 관점을 바탕으로 MODEX 2026에서 생략하였던 내용을 소개합니다."
-  },
-  {
-    "title": "부동산 중개업자가 고객 인증 프로세스 간소화하는 방법",
-    "original_title": "How Real Estate Agents Can Streamline Client Verification Processes",
-    "link": "https://roboticsandautomationnews.com/2026/04/17/how-real-estate-agents-can-streamline-client-verification-processes/100717/",
-    "date": "2026-04-17 21:09",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "대부분의 부동산 중개인들은 고객 인증을 경쟁력 있는 차별점으로 생각하지 않고 관리 업무로 여기며, 이는 느리고 수동적이며 일관성이 없는 인증 프로세스를 초래한다."
-  },
-  {
-    "title": "사이트 프로젝트에서 포트폴리오 프로그램으로: 산업 운영자가 에너지 전략을 재정립하는 방식",
-    "original_title": "From Site Projects to Portfolio Programs: How Industrial Operators Are Rethinking Energy Strategy",
-    "link": "https://roboticsandautomationnews.com/2026/04/17/from-site-projects-to-portfolio-programs-how-industrial-operators-are-rethinking-energy-strategy/100714/",
-    "date": "2026-04-17 20:47",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "소수의 시설을 관리하는 운영자는 각 사이트별 에너지 관리가 가능하다. 하지만 20, 50 또는 100개 이상의 사이트로 확장되면 개별적인 관리 방식이 어렵게 되며 전체 시스템의 효율성 향상 및 비용 절감을 위한 새로운 전략이 필요함"
-  },
-  {
-    "title": "시мен스와 휴먼로이드 HMND 01 알파, 물류 작업 테스트",
-    "original_title": "Siemens and Humanoid test HMND 01 Alpha for logistics tasks",
-    "link": "https://www.therobotreport.com/siemens-and-humanoid-test-hmnd0-01-alpha-logistics-tasks/",
-    "date": "2026-04-17 20:34",
-    "source": "The Robot Report",
-    "category": "hand",
-    "summary": "시멘스는 독일 에랑겐 공장에서 NVIDIA의 시뮬레이션 및 개발 도구를 사용하여 휴먼로이드 모바일 매니퓰레이터 HMND 01 알파를 테스트했습니다."
-  },
-  {
-    "title": "AGIBOT, 혁신적인 AI 로봇 및 모델 출시하며 실현 가능성 높임",
-    "original_title": "AGIBOT Unveils New Generation of Embodied AI Robots and Models, Accelerating Real-World Deployment of Physical AI - KIPOST",
-    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sT014eWdwTjRlSTNULXRudDcxaFRBVGxYMEZLYkNOenhCNUl4MFJBTUQ5NktfVzhtTllzWHBIckJ2VTVsZXJuRVN4aENQZWh4X2FhX19RbEtMWkJiVUZKTVlfVi10cHpD?oc=5",
-    "date": "2026-04-17 18:16",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "AGIBOT가 새로운 세대의 에띰바디드 AI 로봇과 모델을 공개하며, 실제 세계에서의 AI 도입을 가속화한다고 발표했다. 이러한 발전은 AGIBOT의 AI 기술 진화와 더불어 현실 세계에 AI를 적용하는 데 중요한 발걸음으로 작용할 것이다."
-  },
-  {
-    "title": "생체 유사 인공 근육, 명령에 따라 재형성되고 손상 회복 및 하나의 로봇을 여러 개로 변경 가능",
-    "original_title": "Slime-like artificial muscle reshapes on command, heals after damage and turns one robot into many",
-    "link": "https://techxplore.com/news/2026-04-slime-artificial-muscle-reshapes-robot.html",
-    "date": "2026-04-17 17:40",
-    "source": "Tech Xplore",
-    "category": "hand",
-    "summary": "연구진은 전통적인 로봇보다 실시간으로 모양을 바꾸고 손상을 회복하며 재사용 가능한 차세대 인공 근육 개발에 성공하여 Science Advances 학술지에 연구 결과를 게재함"
-  },
-  {
-    "title": "영상 금요일: 디지트가 데드리프트 습득",
-    "original_title": "Video Friday: Digit Learns to Deadlift",
-    "link": "https://spectrum.ieee.org/robot-learning",
-    "date": "2026-04-17 15:00",
-    "source": "IEEE Spectrum",
-    "category": "humanoid",
-    "summary": "이번주 영상은 로봇의 새로운 기술, 특히  Digit의 데드리프트를 시연하며 로봇 학습과 하드웨어 제한을 뛰어넘는 내용이다. 다양한 로봇 기술 개발 사례들을 소개하며 향후 로보틱스 분야 발전 방향을 보여준다."
   }
 ]
