@@ -1,5 +1,86 @@
 [
   {
+    "title": "Affordance2Action: Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation",
+    "original_title": "Affordance2Action: Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation",
+    "link": "https://arxiv.org/abs/2606.04172",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04172v1 Announce Type: new \nAbstract: Task-conditioned manipulation requires grounding instructions to task-relevant functional parts rather than object categories. This setting is scene-dependent and often one-to-many in cluttered scenes: the same object may afford different interactions across tasks, while a single task may correspond to either one functional region or multiple valid functional regions, depending on the scene layout. Existing affordance datasets and benchmarks remain misaligned with this setting, as they typically focus on grasping or object-level affordances, rely on synthetic scenes, or assume a single instruction-region correspondence. We present Affordance2Action (A2A), a benchmark-centered learning framework for scene-level, task-conditioned part affordance grounding. At its core is A2A-Bench, a manipulation-oriented benchmark that covers both single-region and multi-region instruction correspondences in everyday scenes, with the latter highlighting the ambiguity and diversity of affordance grounding in realistic multi-object environments. To construct it at scale, we build A2A-AffordGen, an agent-assisted annotation pipeline that combines language-model filtering, interactive part segmentation, instance-level mask-out refinement, task-reasoning instruction generation, and human verification. A2A-Bench's supervision further supports diverse downstream applications, with real-time affordance grounding and affordance-conditioned manipulation policies as two representative examples. Experiments show that A2A exposes substantial gaps in generic segmentation, VLM-based grounding, and affordance distillation baselines, while improving task-level localization and providing useful spatial priors for downstream manipulation. All datasets and code will be publicly released to promote open research."
+  },
+  {
+    "title": "DLO-Lab: Benchmarking Deformable Linear Object Manipulations with Differentiable Physics",
+    "original_title": "DLO-Lab: Benchmarking Deformable Linear Object Manipulations with Differentiable Physics",
+    "link": "https://arxiv.org/abs/2606.04206",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04206v1 Announce Type: new \nAbstract: We address the challenge of enabling robots to manipulate deformable linear objects (DLOs), such as ropes, cables, and rubber bands. Prior work has primarily focused on narrow, task-specific problems, often relying on real-world demonstrations or handcrafted heuristics. Such approaches, however, struggle to scale to the wide variety of materials and tasks encountered in practice, and collecting sufficiently diverse real-world data is often impractical. Additionally, existing simulation environments offer limited support for the broad spectrum of material behaviors necessary for generalizable DLO manipulation. To overcome these limitations, we introduce a differentiable simulator explicitly designed for versatile DLO manipulation. Our simulator models a wide range of material properties-including (in)extensibility, elasticity, bending plasticity, and complex interactions with other objects-providing a robust foundation for learning and evaluating manipulation skills. Building on this simulator, we propose a benchmark suite of representative tasks that highlight the unique challenges of DLO manipulation. The successful execution of these tasks is often hindered by the topological complexity and grasp sensitivity inherent to DLOs. Therefore, we introduce a specialized DLO agent that explicitly manages these challenges by proposing strategic grasping points and decomposing long-horizon tasks to maximize control authority. Finally, we evaluate various policy-learning algorithms using our framework, alongside sim-to-real transfer experiments, demonstrating our platform's potential to advance DLO manipulation."
+  },
+  {
+    "title": "Towards Estimating Normal and Shear Interface Pressures in Prosthetic Sockets via Least Squares and Mechanics Modeling",
+    "original_title": "Towards Estimating Normal and Shear Interface Pressures in Prosthetic Sockets via Least Squares and Mechanics Modeling",
+    "link": "https://arxiv.org/abs/2606.04222",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04222v1 Announce Type: new \nAbstract: Prosthetic socket fitting remains largely manual and iterative, and objective fit metrics are still limited. Part of the challenge is the lack of long-term real-life pressure data at the residual limb--socket interface. Traditional pressure sensors are prone to drift over time, and capture only normal pressures at sparse locations within the socket, missing a critical component for biomechanical analysis: shear. Although some sensors can report both normal and shear interface stresses, these components are often difficult to decouple because of measurement crosstalk. One potential path forward is to develop models that can augment available measurements. This work introduces a testbed to evaluate model performance under sparse pressure sensing using two complementary validation signals: (i) the global wrench (\\ie, total forces and moments expressed in an orthonormal frame) transmitted through the socket, by an artificial residual-limb, and (ii) local interface loads (\\ie, decoupled normal and shear pressure components in a right-hand-rule orthogonal frame that lives in each instrumented location) measured by sparse sensing clusters, each composed of four capacitance-sensing channels. Rather than presenting full-field pressure estimates, the focus is on an analysis sequence that quantifies how well candidate mechanical models explain both global and local measurements under controlled conditions. A quasi-static spring--mass contact model is evaluated, and its parameters are identified via a two-stage convex least-squares problem. Validation under static loading shows that estimating constant bias terms reduces steady offsets in the wrench channels and improves agreement with local measurements. A Pareto-front sensitivity analysis further illustrates how the trade-off between global and local objectives changes when bias terms are included."
+  },
+  {
+    "title": "What Are We Actually Benchmarking in Robot Manipulation?",
+    "original_title": "What Are We Actually Benchmarking in Robot Manipulation?",
+    "link": "https://arxiv.org/abs/2606.04233",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04233v1 Announce Type: new \nAbstract: A robotics benchmark score measures success under one fixed evaluation setup, yet is routinely treated as evidence of general manipulation capability. We identify four failure modes, each of which weakens or invalidates a benchmark's role as a valid proxy for that capability: shortcut solvability, lack of statistical significance, creeping overfitting, and data-source dependence. We propose one diagnostic per failure mode. We audit LIBERO, CALVIN, SimplerEnv, RoboCasa, and RoboTwin 2.0 under these diagnostics. LIBERO and CALVIN fail multiple diagnostics. RoboCasa and RoboTwin 2.0 fail fewer, despite appearing far less often in recent progress claims. On LIBERO, a 0.09B probe with no language encoder scores at or near reported SOTA, and most reported gains are not provably statistically significant. On CALVIN, randomizing block poses within the training range drops performance for every tested policy. We release the four diagnostics with reference implementations for authors and reviewers to apply before treating a benchmark score as evidence of progress. Code and artifacts are available at https://ripl.github.io/manipulation_benchmark_audit/."
+  },
+  {
+    "title": "Instant-Fold: In-Context Imitation Learning for Deformable Object Manipulation",
+    "original_title": "Instant-Fold: In-Context Imitation Learning for Deformable Object Manipulation",
+    "link": "https://arxiv.org/abs/2606.04269",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04269v1 Announce Type: new \nAbstract: Deformable object manipulation (DOM) is challenging due to high-dimensional, partially observable states that evolve through long-horizon, topology-changing interactions with multiple valid manipulation modes. We introduce Instant-Fold, an in-context imitation learning framework for DOM. Given a single human demonstration, our policy infers and executes diverse manipulation modes directly from the demonstration, including variations in spatial execution and ordering, without requiring gradient updates. Our approach first learns deformation-aware visual representations via temporal contrastive pretraining, after which a flow-matching transformer policy conditioned on the demonstration predicts actions to execute the intended manipulation mode. Trained entirely in simulation, Instant-Fold generalizes across diverse folding modes and transfers zero-shot to real-world settings without additional data collection or finetuning. Videos are available at https://instant-fold.github.io."
+  },
+  {
+    "title": "OSCAR: Omni-Embodiment Skeleton-Conditioned World Action Model for Robotics",
+    "original_title": "OSCAR: Omni-Embodiment Skeleton-Conditioned World Action Model for Robotics",
+    "link": "https://arxiv.org/abs/2606.04463",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04463v1 Announce Type: new \nAbstract: We present OSCAR, a precise action-conditioned video world model that generalizes across different robot embodiments and enables robot policy evaluation. Existing video world models face three main challenges for real-world robot evaluation: limited scenario diversity in current robot training datasets, imprecise action following, and poor generalization across embodiments for broad adoption. We tackle these challenges from two perspectives. At its core is a large-scale standardized data pipeline that curates, filters, and deduplicates broad robotics and egocentric human datasets, yielding a clean joint-training dataset that spans diverse tasks, scenarios, actions, and robot embodiments. To condition the video model, we adopt 2D kinematic skeleton rendering as a unified conditioning representation that generalizes across different robot arms or even human hands. We finetune the Cosmos-Predict2.5-2B model on a single GH200 GPU. Our model achieves significant improvement on action following, appearance quality, and motion consistency, compared to existing baselines, which either have a much larger model size or require more GPUs. We further deploy OSCAR to evaluate robot policies from RoboArena. Extensive experiments demonstrate the significant correlation between our virtual policy evaluation in OSCAR and real-world evaluation, paving the way for the future where robot policies can be purely evaluated in virtual generated worlds."
+  },
+  {
+    "title": "TransTac: Visuo-Tactile Modality Transition via Ultraviolet-Encoded Transparent Elastomers",
+    "original_title": "TransTac: Visuo-Tactile Modality Transition via Ultraviolet-Encoded Transparent Elastomers",
+    "link": "https://arxiv.org/abs/2606.04477",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04477v1 Announce Type: new \nAbstract: Vision-based tactile sensors (VBTS) recover high-resolution contact geometry but typically rely on opaque elastomer layers that prevent visual transparency, while RGB-D cameras provide global depth perception yet degrade significantly at close range. To address this limitation, we present TransTac, a transparent ultraviolet (UV)-encoded binocular VBTS that integrates visual observation and marker-based tactile reconstruction within a single compact device. The system employs a transparent elastomer embedded with UV-reflective markers and a prior-guided Delaunay stereo matching algorithm for robust sparse triangulation.\n  To reliably detect densely distributed semitransparent markers, we develop a lightweight detector that enables stable localization under contact and deformation. The proposed prior-guided Delaunay matching improves correspondence robustness by approximately 21% compared with global assignment baselines while maintaining high reconstruction accuracy. In semantic evaluation, TransTac achieves up to 83.3% zero-shot recognition accuracy on tactile images, exceeding opaque tactile baselines by approximately 50 percentage points. Embedding analysis further reveals substantially stronger cross-modal alignment with natural images, with class-center similarity increasing from around 0.2 to over 0.77. Controlled near-distance experiments quantify the degradation of RGB-D depth reliability and demonstrate extended geometric coverage enabled by visuo-tactile integration. Finally, a compact prototype is implemented with an approximate hardware cost of $70."
+  },
+  {
+    "title": "BPDA-GMM: Bayesian Probabilistic Data Association via Gaussian Mixture Models for Semantic SLAM",
+    "original_title": "BPDA-GMM: Bayesian Probabilistic Data Association via Gaussian Mixture Models for Semantic SLAM",
+    "link": "https://arxiv.org/abs/2606.04618",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04618v1 Announce Type: new \nAbstract: Probabilistic data association (PDA) improves semantic SLAM in perceptually aliased scenes, but existing methods often assume a fixed landmark set, recompute association weights as the map grows, or rely on hand-tuned null-hypothesis weights. To address these limitations, we propose \\textbf{BPDA-GMM}, an online Bayesian PDA framework for semantic SLAM with a growing object-level map. BPDA-GMM uses a Dirichlet-process prior to induce a Chinese Restaurant Process (CRP) association model, where accumulated evidence favors existing landmarks, and the concentration parameter assigns probability mass to new landmarks. For each semantic detection, plausible candidates are selected by a joint semantic-geometric gate, CRP-weighted association probabilities are computed, and object landmarks are updated as semantic Gaussians in closed form. The resulting landmark set forms a Gaussian mixture model, and its dominant component is passed to the back-end as a max-mixture semantic factor. When association weights are inconclusive, an ambiguity-triggered $\\alpha$-divergence tempering step improves discrimination. Finally, a decoupled back-end zeroes the pose Jacobian of semantic factors, allowing noisy detections to refine landmarks without directly perturbing the trajectory. Experiments in simulation and on a real indoor dataset demonstrate improved trajectory accuracy, semantic mapping quality, and robustness to perceptual aliasing and classifier errors over state-of-the-art baselines. Code and video are publicly available at https://github.com/thanhnguyencanh/BPDA-SLAM."
+  },
+  {
+    "title": "The 'Wintel' of robotics? Nvidia allies with Unitree to standardize AI humanoid development - digitimes",
+    "original_title": "The 'Wintel' of robotics? Nvidia allies with Unitree to standardize AI humanoid development - digitimes",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUmFlalZFZ0Fiby1GeHhiSzhVQk5KWGZCWTNaQ09VVFZ1X1M1RDZONXg5Y1pDcDVudEJDeUxwTTdnZmJTOTRIY1hmbTBWa3F1TDR1QnNfeGZia29hMzhxTS1ibGp2TldBNG9rdjBJU3FsMHBCMXRleXhCR21kUHVvTjFXUEt6SHFiWEExVWNOQlp3cG40djJCOFkyMFJVMTJVdzc4?oc=5",
+    "date": "2026-06-04 03:01",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "The 'Wintel' of robotics? Nvidia allies with Unitree to standardize AI humanoid development  digitimes"
+  },
+  {
     "title": "NVIDIA Unveils Isaac GR00T Humanoid Reference Platform - Let's Data Science",
     "original_title": "NVIDIA Unveils Isaac GR00T Humanoid Reference Platform - Let's Data Science",
     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNS00QXYwaVczS1VkVVMxNHlVeG1qWXZXU3daWkgyYmo4TGVYN2ZmZm9iMkJpbm13VmxiRGh6ZHd2V1RpWmU3WFdJMmpMemRPTkVXNjFpQTZLQzg0YW14Y2hlQW9IbzV2V3UwaFdCT25DbkxhMjNXZkRDZEcwMlJWRjhSZ1d1elo4TmJkUWxXYzVpRkNSUmI0cjlVNjY?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "IEEE Spectrum",
     "category": "humanoid",
     "summary": "이번주 영상은 로봇의 새로운 기술, 특히  Digit의 데드리프트를 시연하며 로봇 학습과 하드웨어 제한을 뛰어넘는 내용이다. 다양한 로봇 기술 개발 사례들을 소개하며 향후 로보틱스 분야 발전 방향을 보여준다."
-  },
-  {
-    "title": "벌을 모티브로 한 단순 로봇들이 집단적으로 건축하고 매몰함",
-    "original_title": "Simple robots inspired by ants collectively build and excavate",
-    "link": "https://techxplore.com/news/2026-04-simple-robots-ants-excavate.html",
-    "date": "2026-04-17 13:20",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "능력이 없고,  임원도 없는 상황에서 복잡한, 기후 조절 가능한 구조물을 대규모로 건설하는 것으로 유명한 벌의 집단 노동 사례를 본뜬 연구."
-  },
-  {
-    "title": "로봇 대화 에피소드 152 - 민첩한 로봇 손, 리치 월커와 함께",
-    "original_title": "Robot Talk Episode 152 – Dexterous robot hands, with Rich Walker",
-    "link": "https://robohub.org/robot-talk-episode-152-dexterous-robot-hands-with-rich-walker/",
-    "date": "2026-04-17 12:53",
-    "source": "Robohub",
-    "category": "hand",
-    "summary": "섀도우 로봇의 리치 월커는 연구 및 산업 분야를 위한 고급 로봇 손에 대해 설명했다. 리치 월커는 회사 설립 이전부터 섀도우 로봇에서 일하며 소프트웨어 및 시스템 엔지니어링을 주로 담당했으며, 관리자직으로 이동했다."
-  },
-  {
-    "title": "쉐프 로봇, 1억 식사 제공 돌파",
-    "original_title": "Chef Robotics completes 100M meal servings milestone",
-    "link": "https://www.therobotreport.com/chef-robotics-completes-100-million-product-servings-milestone/",
-    "date": "2026-04-17 12:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "쉐프 로봇이 전 세계 고용량 식사 생산 자동화에 실제 물리적 인공지능을 활용하여 1억 식사를 제공하는 성과를 달성했다."
-  },
-  {
-    "title": "푸두 로봇, 골름  schoonhouden B.V와 전략적 파트너십 발표",
-    "original_title": "Pudu Robotics Announced a Strategic Partnership with Gom Schoonhouden B.V.",
-    "link": "https://humanoidroboticstechnology.com/industry-news/at-interclean-amsterdam-pudu-robotics-announced-a-strategic-partnership-with-gom-schoonhouden-b-v/",
-    "date": "2026-04-17 11:41",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "푸두 로봇은 네덜란드 주요 청소 서비스 제공 업체인 골름  schoonhouden B.V.와 전략적 파트너십을 체결하며, AI 기반 대형 스크래버-드라이어 로봇 PUDU BG1 시리즈를 유럽에서 처음 배치함으로써 차세대 청소 자동화 도입에 있어 중요한 발걸음을 내딛었다."
-  },
-  {
-    "title": "중국의 Agibot, 인형 로봇 생산 폭넓게 확대 계획",
-    "original_title": "China's Agibot eyes multifold expansion of humanoid robot production - Nikkei Asia",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYUVPVmFEWDNRQ3BBSjJqemphay1nUjViNnUwd1NqZUhEQkw4cGVCZWJzNF8xdDRsUHE2X0JHYU5wSndvXzQ1RFFVcE9pMHcyTms1SWdvZ2U4ZFJSNm90T1NpWndka1RKUkRBc3VlY3U1LVJ3VU93VlNuUGlhanoyWUNXRVI2eXo2ZEtVODRhQ3VWNDJvMDdFMmdJNzZmdUdpSUVSNU1xLTkxNTBKd3JWX1JB?oc=5",
-    "date": "2026-04-17 08:49",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 기업 Agibot는 인형 로봇 생산을 여러 배 증가시키기 위한 계획을 가지고 있습니다. Agibot는 이를 위해 제조 시설 확장 및 기술 개발에 힘쓰고 있으며, 앞으로 글로벌 시장에서 인형 로봇 분야의 주력 기업이 되기를 목표로 합니다."
-  },
-  {
-    "title": "AGIBOT, 신세대 탄생형 AI 로봇 및 모델 공개",
-    "original_title": "AGIBOT Announces New Generation of Embodied AI Robots and Models",
-    "link": "https://humanoidroboticstechnology.com/industry-news/agibot-announces-new-generation-of-embodied-ai-robots-and-models/",
-    "date": "2026-04-17 07:51",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "AGIBOT가 2026 파트너 컨퍼런스에서 \"One Robotic Body, Three Intelligences\" 아키텍처를 기반으로 한 네 가지 새로운 로봇 플랫폼과 여러 AI 모델을 발표하며 실제 세계에 대한 물리적인 AI 배치를 향해 나아가고 있다."
-  },
-  {
-    "title": "AGIBOT, 2026년을 '실전 배포 첫 해' 선언",
-    "original_title": "At APC 2026, AGIBOT Declares 2026 as “Deployment Year One”",
-    "link": "https://humanoidroboticstechnology.com/news/at-apc-2026-agibot-declares-2026-as-deployment-year-one/",
-    "date": "2026-04-17 07:51",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "AGIBOT는 2026년부터 실제 AI 시스템의 대규모 상용화로 생산성 증대 효과를 가져올 것이라고 전망하며 차세대 인공지능 기술 발전 방향을 제시했습니다."
-  },
-  {
-    "title": "유니트리, 6,800달러부터 판매 시작하는 최저가 인형 로봇 | 유니트리는 가장 저렴한 가격의 인형 로봇을 6,800달러부터 판매하기 시작했습니다.  이 로봇은 기존 인형 로봇들에 비해 저렴하며 더 많은 사람들에게 로봇 기술 접근성을 높일 수 있도록 합니다.",
-    "original_title": "Unitree starts selling cheapest humanoid robot from $6,800 - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONUg3NmN2Q1BERXlKUnQ4WW1waktyRUF0V3I3c2t0YTRYOW8zVDlGZDhtZ3kyOGl1NGV6aWNxTFhqT1lPWm5jY0FReUF0TDdkalJoQ0x0V051V0JJYWNHdmZDZVJtamNIOXV0VWRTRHhSa3JQUF9QdWNHMjlDdFUxOEFudHR2cWlDbUlZeUp3Y1c3dUdfYUgzR25LRlgxN3g5UXVQeVY1Qjh4TWZBRkdPM3c2UVpjcDg?oc=5",
-    "date": "2026-04-17 03:13",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "유니트리, 6,800달러부터 판매 시작하는 최저가 인형 로봇 | 유니트리는 가장 저렴한 가격의 인형 로봇을 6,800달러부터 판매하기 시작했습니다.  이 로봇은 기존 인형 로봇들에 비해 저렴하며 더 많은 사람들에게 로봇 기술 접근성을 높일 수 있도록 합니다."
-  },
-  {
-    "title": "AGIBOT 로봇이 전자제조 산업에서 시범 배치됨",
-    "original_title": "AGIBOT deploys semi-humanoid robots in electronics manufacturing",
-    "link": "https://www.therobotreport.com/agibot-deploys-semi-humanoid-robots-in-electronics-manufacturing/",
-    "date": "2026-04-16 22:32",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "AGIBOT G2 로봇 100대를 Q3 2026까지 탑재하여 태블릿 생산 라인에 통합할 계획을 갖추고 있습니다."
   }
 ]
