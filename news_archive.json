@@ -144,6 +144,78 @@
     "summary": "arXiv:2606.05159v1 Announce Type: new \nAbstract: Rigorous evaluation of learning-based robotic systems is an essential prerequisite for deployment. However, real-world test data is expensive to gather; moreover, in a typical iterative development context, data gathered from the latest policy is necessarily limited in scale. This motivates evaluation methodologies that make use of heterogeneous data sources, including simulation, historical policy logs, and data collected from related platforms or environments. While such auxiliary data are abundant and inexpensive, they are generally not directly representative of real-world outcomes -- for example, performance in simulation may differ substantially from performance in the real world -- making their principled use for high-confidence performance estimation challenging. In this paper, we introduce X4Val, a general framework for variance-reduced real-world metric estimation in the presence of non-paired, multi-domain data. X4Val embeds samples from real and auxiliary domains into a shared representation space and learns a transferable predictor of real-world metrics; this learned predictor is then incorporated into a control-variates estimator, enabling variance reduction even when paired samples are unavailable. We provide theoretical analysis and empirical evaluations on autonomous driving and real-world robot manipulation tasks, domains across which X4Val achieves up to 38.4% variance reduction and demonstrates consistent improvements over strong baselines. These results show that non-paired, heterogeneous data can be leveraged to substantially improve the sample efficiency of rigorous robotic system validation."
   },
   {
+    "title": "GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors",
+    "original_title": "GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors",
+    "link": "https://arxiv.org/abs/2606.05160",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.05160v1 Announce Type: new \nAbstract: Scaling humanoid loco-manipulation requires robot-compatible demonstrations across diverse objects, whole-body motions, and scene geometries, but teleoperation and motion capture are difficult to scale because each collection depends on physical setups, instrumented actors, and robot operation. We present GRAIL, a digital generation pipeline that remains fully virtual until deployment: it composes 3D assets, simulator-ready scenes, and priors from video foundation models (VFMs) to synthesize interactions without rebuilding physical environments or teleoperating the robot. Rather than reconstructing unconstrained in-the-wild videos, GRAIL starts from fully specified 3D configurations in which object geometry, camera parameters, metric scale, environment depth, and a robot-proportioned character are known before video generation and reused during reconstruction. This privileged setup better conditions 4D recovery, allowing model-based object tracking, human motion estimation, and interaction-aware optimization to reconstruct metric 4D human-object interaction (HOI) trajectories with reduced depth ambiguity and morphology mismatch. We retarget the recovered motions to a humanoid robot and train complementary task-general trackers: an object-aware latent adaptor for manipulation and a scene-aware tracker for terrain traversal. GRAIL produces over 20,000 sequences spanning pick-up, object manipulation, sitting, and terrain traversal. Using only GRAIL-generated data, we train egocentric visual policies through a sim-to-real pipeline and deploy them on a Unitree G1 humanoid, achieving 84\\% real-world success on diverse object pick-up and 90\\% success on stair-climbing."
+  },
+  {
+    "title": "Dive into the Scene: Breaking the Perceptual Bottleneck in Vision-Language Decision Making via Focus Plan Generation",
+    "original_title": "Dive into the Scene: Breaking the Perceptual Bottleneck in Vision-Language Decision Making via Focus Plan Generation",
+    "link": "https://arxiv.org/abs/2606.04046",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04046v1 Announce Type: cross \nAbstract: In embodied vision-language decision making tasks such as robotic manipulation and navigation, Vision-Language and Vision-Language-Action Models (VLMs & VLAs) are powerful tools with different benefits: VLMs are better at long-term planning, while VLAs are better at reactive control. However, their performance is limited by the same perceptual bottleneck: visual hallucinations arise due to the models' inability to distinguish task-relevant objects from distractors. In principle, accurate identification and focus on critical objects while filtering out irrelevant ones is the key to break this limitation. A straightforward solution is one-step focus: directly attending to essential objects. However, this approach proves ineffective because effective focus inherently requires deep scene understanding. To this end, we propose SceneDiver, a coarse-to-fine focus plan generation method for VLMs leveraging their long-term planning abilities, that first constructs a holistic scene graph to establish initial comprehension, then progressively decomposes the task into simpler sub-problems through an iterative cycle of recognition, understanding, and analysis. To enable reactive control, we also design a lightweight adapter for distilling the deliberate focus ability into VLAs. Evaluations on standard embodied AI benchmarks confirm that our method substantially reduces visual hallucinations for both VLMs and VLAs, while preserving computational efficiency in tasks requiring fast execution. Our code and data are released at: https://future-item.github.io/SceneDiver."
+  },
+  {
+    "title": "Dual Advantage Fields",
+    "original_title": "Dual Advantage Fields",
+    "link": "https://arxiv.org/abs/2606.04188",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04188v1 Announce Type: cross \nAbstract: Offline goal-conditioned reinforcement learning requires both long-horizon reachability estimates and local action comparisons. Dual goal representations provide value fields that capture global goal reachability, but they do not directly specify which action should be preferred at a given state. We propose Dual Advantage Fields, a policy-extraction method that turns a bilinear dual value model into a local advantage signal. Under bilinear dual parameterization, the goal embedding is the gradient of the value field with respect to the state representation. DAF learns an action-effect model that predicts the discounted feature displacement induced by an action and scores actions by the alignment between this displacement and the goal direction. In the realizable case, this score equals the goal-conditioned Bellman advantage, yielding a standard local policy-improvement guarantee. On OGBench locomotion, manipulation, and puzzle tasks, DAF improves aggregate RLiable metrics and performs strongly in settings where locally correct actions differ from direct movement toward the final goal."
+  },
+  {
+    "title": "3DThinkVLA: Endowing Vision-Language-Action Models with Latent 3D Priors via 3D-Thinking-Guided Co-training",
+    "original_title": "3DThinkVLA: Endowing Vision-Language-Action Models with Latent 3D Priors via 3D-Thinking-Guided Co-training",
+    "link": "https://arxiv.org/abs/2606.04436",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.04436v1 Announce Type: cross \nAbstract: We propose a 3D-thinking-guided co-training framework that enables vision-language-action (VLA) models to perform 3D spatial reasoning implicitly during action prediction. Our core insight is that 3D geometry perception and 3D spatial reasoning are distinct capabilities that can be disentangled and injected at different feature hierarchies. During training, three tightly coupled components work in concert primarily within the latent space: (1) To gain geometric priors, a latent 3D geometry perception module aligns intermediate visual features with a 3D foundation model, acquiring low-level geometric cues without architectural modifications to the VLM backbone. (2) Complementing this, an online 3D reasoning distillation module mitigates the prompt-induced reasoning gap via a shared reasoning anchor token. During 3D VLM co-training, this anchor is emitted as the first output token to robustly encode spatial priors. During VLA training, it serves as an input token inserted between the task and action instructions, transferring high-level spatial thinking from explicit teacher reasoning prompts to student action prompts without chain-of-thought text generation. (3) These disentangled geometric and reasoning features are then united by a spatially augmented action integration, which jointly injects them into the action-query tokens as hierarchical spatial conditions to prevent action shortcuts. At deployment, our method retains only its lightweight adapters to perform implicit 3D reasoning, discarding the 3D foundation model and the teacher branch used for supervision. Consequently, it operates purely on 2D images without 3D sensors, external models, or explicit text generation while preventing catastrophic forgetting of the pretrained VLM, achieving state-of-the-art performance on LIBERO, LIBERO-PLUS, SimplerEnv, and real-world manipulation tasks."
+  },
+  {
+    "title": "Dynamic Policy Learning for Legged Robot with Simplified Model Pretraining and Model-Homotopy-Inspired Transfer",
+    "original_title": "Dynamic Policy Learning for Legged Robot with Simplified Model Pretraining and Model-Homotopy-Inspired Transfer",
+    "link": "https://arxiv.org/abs/2512.24698",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2512.24698v2 Announce Type: replace \nAbstract: Generating dynamic motions for legged robots remains a challenging problem. While reinforcement learning has achieved notable success in various legged locomotion tasks, producing highly dynamic behaviors often requires extensive reward tuning or high-quality demonstrations. Leveraging reduced-order models can help mitigate these challenges. However, the model discrepancy poses a significant challenge when transferring policies to full-body dynamics environments. In this work, we introduce a continuation-based learning framework that combines simplified model pretraining and model-homotopy-inspired transfer to efficiently generate and refine complex dynamic behaviors. First, we pretrain the policy using a single rigid body model to capture core motion patterns in a simplified environment. Next, we employ a continuation strategy to progressively transfer the policy to the full-body environment, minimizing performance loss. To define the continuation path, we introduce a parametric transition path from the single rigid body model to the full-body model by gradually redistributing mass and inertia between the trunk and legs. The proposed method achieves faster convergence and demonstrates superior stability during the transfer process compared to baseline methods. Our framework is validated on a range of dynamic tasks, including flips and wall-assisted maneuvers, and is successfully deployed on a real quadrupedal robot."
+  },
+  {
+    "title": "How Users Understand Robot Foundation Model Performance through Task Success Rates and Beyond",
+    "original_title": "How Users Understand Robot Foundation Model Performance through Task Success Rates and Beyond",
+    "link": "https://arxiv.org/abs/2602.03920",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.03920v2 Announce Type: replace \nAbstract: Robot Foundation Models (RFMs) represent a promising approach to developing general-purpose home robots. Given the broad capabilities of RFMs, users will inevitably ask an RFM-based robot to perform tasks that the RFM was not trained or evaluated on. In these cases, it is crucial that users understand the risks associated with attempting novel tasks due to the relatively high cost of failure. Furthermore, an informed user who understands an RFM's capabilities will know what situations and tasks the robot can handle. In this paper, we study how non-roboticists interpret performance information from RFM evaluations. These evaluations typically report task success rate (TSR) as the primary performance metric. While TSR is intuitive to experts, it is necessary to validate whether novices also use this information as intended. Toward this end, we conducted a study in which users saw real evaluation data, including TSR, failure case descriptions, and videos from multiple published RFM research projects. The results highlight that non-experts not only use TSR in a manner consistent with expert expectations but also highly value other information types, such as failure cases that are not often reported in RFM evaluations. Furthermore, we find that users want access to both real data from previous evaluations of the RFM and estimates from the robot about how well it will do on a novel task."
+  },
+  {
+    "title": "LDA-1B: Scaling Latent Dynamics Action Model via Universal Embodied Data Ingestion",
+    "original_title": "LDA-1B: Scaling Latent Dynamics Action Model via Universal Embodied Data Ingestion",
+    "link": "https://arxiv.org/abs/2602.12215",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.12215v2 Announce Type: replace \nAbstract: Recent robot foundation models largely rely on large-scale behavior cloning, which imitates expert actions but discards transferable dynamics knowledge embedded in heterogeneous embodied data. While the Unified World Model (UWM) formulation has the potential to leverage such diverse data, existing instantiations struggle to scale to foundation-level due to coarse data usage and fragmented datasets. We introduce LDA-1B, a robot foundation model that scales through universal embodied data ingestion by jointly learning dynamics, policy, and visual forecasting, assigning distinct roles to data of varying quality. To support this regime at scale, we assemble and standardize EI-30k, an embodied interaction dataset comprising over 30k hours of human and robot trajectories in a unified format. Scalable dynamics learning over such heterogeneous data is enabled by prediction in a structured DINO latent space, which avoids redundant pixel-space appearance modeling. Complementing this representation, LDA-1B employs a multi-modal diffusion transformer to handle asynchronous vision and action streams, enabling stable training at the 1B-parameter scale. Experiments in simulation and the real world show LDA-1B outperforms prior methods (e.g., $\\pi_{0.5}$) by up to 21\\%, 48\\%, and 23\\% on contact-rich, dexterous, and long-horizon tasks, respectively. Notably, LDA-1B enables data-efficient fine-tuning, gaining 10\\% by leveraging 30\\% low-quality trajectories typically harmful and discarded."
+  },
+  {
+    "title": "3PoinTr: 3D Point Tracks for Learning Manipulation from Unconstrained Human Videos",
+    "original_title": "3PoinTr: 3D Point Tracks for Learning Manipulation from Unconstrained Human Videos",
+    "link": "https://arxiv.org/abs/2603.08485",
+    "date": "2026-06-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.08485v2 Announce Type: replace \nAbstract: Learning manipulation policies from human videos could greatly reduce the need for expensive robot demonstrations, but existing approaches typically require restrictive assumptions such as choreographed human motions, predefined keypoints, manual annotations, or known grasp locations. We propose 3PoinTr, a method for pretraining sample-efficient robot policies from unconstrained human videos by predicting dense 3D point tracks. In the unconstrained human demonstration videos, humans are free to follow whatever trajectories and manipulation strategies they see fit, rather than choreographing their motions to mimic a robot. 3PoinTr uses a lightweight visibility-aware transformer to learn how scene points should move from human videos, and then trains a closed-loop multitask robot policy to flexibly extract action-relevant priors from those predicted point tracks. With only 20 action-labeled robot demonstrations, 3PoinTr achieves a 25.0 percentage point higher average success rate than the strongest behavior cloning and video-pretraining baselines on real-world tasks, and a 29.6 percentage point higher average success rate in simulation. Targeted ablations support the key design choices and confirm the benefit of learning from actionless videos. We further show that 3PoinTr's point track prediction transformer outperforms a strong baseline by preserving supervision over partially occluded points. Project page: https://adamhung60.github.io/3PoinTr/."
+  },
+  {
     "title": "The 'Wintel' of robotics? Nvidia allies with Unitree to standardize AI humanoid development - digitimes",
     "original_title": "The 'Wintel' of robotics? Nvidia allies with Unitree to standardize AI humanoid development - digitimes",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUmFlalZFZ0Fiby1GeHhiSzhVQk5KWGZCWTNaQ09VVFZ1X1M1RDZONXg5Y1pDcDVudEJDeUxwTTdnZmJTOTRIY1hmbTBWa3F1TDR1QnNfeGZia29hMzhxTS1ibGp2TldBNG9rdjBJU3FsMHBCMXRleXhCR21kUHVvTjFXUEt6SHFiWEExVWNOQlp3cG40djJCOFkyMFJVMTJVdzc4?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중국에서 개발된 인형 로봇이 반마라톤 세계 기록을 갈아치웠습니다. 이 로봇은 인간의 뛰는 속도를 따라가며  과거 기록을 압도하는 성적을 보였습니다."
-  },
-  {
-    "title": "유니트리 인형 로봇, 바르샤바 거리에서 들소 쫓으며 화제됨",
-    "original_title": "Unitree humanoid robot goes viral after chasing wild boars on Warsaw street - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNVkpJemJ6Z2YzVmhsMjFSSlNyc1BrYzhySjZIOVE4a3p6SUFRRnpKMWVHcmdCQnJXRHFVWTRCY2ZyZmItX09Kd0ZUcjUxZUJsaVRWR1hQX2FSMjhnWVhWYUd5U1JoYUxLZXBkenRVQk4tbHVFQ0RTZUpxYkJEVWNtaENtOWZOeXE2TVI4TnVZbkhvanAyVzdZMjhJQUthd2hWQlhSa0p1c2owdXBLcXFYNGM4eHlGMUx4anZlUHpHQkhyR2ExRkZMTld6MHM?oc=5",
-    "date": "2026-04-19 05:36",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "유니트리의 인형 로봇이 바르샤바 거리에서 들소를 추격하는 영상으로 온라인에서 큰 관심을 받고 있으며, 인터넷 사용자들 사이에서 빠르게 확산되고 있다."
-  },
-  {
-    "title": "300개 이상의 인형 로봇이 중국 반마라톤에서 경주함",
-    "original_title": "Over 300 humanoid robots race in China half-marathon - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYmpGSFZEWW5lSXdMUlVYU3BEc0RtaEg3Ny1wb29RcVNPN2ZuT2ZCN0x4dlpSYjZVdXNjVG9TRHpzZzNnNlhoR1ZLdDdlVjJ0X0NhTTVjVkZEc3ZzUDRhUEk3TGliOGVseUJIR3loRnZ4aVJuNjQ0ZDhsRVpkU0ZnQ3kwS1FZbzdaNlBZY2w1c2ZnUWQxX3g4TmcwdndZMTB5T3g1RWd6SWZmbkVMUVE?oc=5",
-    "date": "2026-04-19 04:24",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "300개 이상의 인형 로봇들이 중국에서 열린 반마라톤 대회에 참여하여 경쟁했습니다. 이는 인공지능 및 로봇 기술 발전을 보여주는 사건으로 평가받고 있습니다."
-  },
-  {
-    "title": "인형 로봇, 베이징 반마라톤에서 인간 앞서며 빠르게 발전 - Reuters",
-    "original_title": "Humanoid robots race past humans in Beijing half-marathon, showing rapid advances - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMkctZm8yRDBvMEszWklVUVNDZHNkUkpJQ3oxZGxrdXE2ZjItdWp0dFM0THZsakUyNFdJd2ZuSzhtMXRmNTE4elcwenFmTkRSWE5nMmNtSmNMaU5IOTlEMkZYT2VyUXNUWHNRMVc4WjQwM2d0bFhNLVpNMFRLR0JPT2JZWU14UlVsU2ZOY0FpdHF1dkJWZVNnOVkweWsyWEt6X3duZGQ3SDdhbHJfR042M0k3REZHYVY5S1NPXw?oc=5",
-    "date": "2026-04-19 01:41",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "인형 로봇들이 베이징 반 마라톤에서 인간을 웃도며 AI 기술의 놀라운 진보를 보여주었다. 이는 인공지능과 로보틱스 분야의 급속한 발전을 증명하는 사례로, 앞으로 로봇과 인간이 공존하는 미래를 예고하고 있다."
-  },
-  {
-    "title": "인공지능 로봇, 인간의 준마라톤 기록 깰음",
-    "original_title": "Humanoid robot breaks human half-marathon record; Drastic improvement reflects systemic advances in China’s robot technologies: expert - Global Times",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9pRGlHQk9pdFRncUlXaDZZM3FTcG5KUzlsS3BfZGdRdzFCMlEwM1RrV1dCcWlSQnB0VzN3a3VwdHFGOGd6aEtTc1JvX0VlbXMyUzBxLUlPaG1LXzNiczlwcjJ3?oc=5",
-    "date": "2026-04-19 01:22",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국에서 개발된 인공지능 로봇이 인간을 제치고 준마라톤 기록을 수립했으며, 이는 중국의 로보틱스 기술 발전에 대한 명확한 증거로 분석됨."
-  },
-  {
-    "title": "Agibot 인형 로봇, 세계 최초로 실제 공장 라인에서 태블릿 테스트 | Agibot 인형 로봇이 세계 최초로 생산 라인에서 태블릿을 테스트하여 제조 공정의 자동화를 위한 새로운 가능성을 보여주었습니다. 이러한 시험은 산업 4.0 시대의 변화와 로보틱스 기술의 발전을 잘 보여주는 사례입니다.",
-    "original_title": "Agibot humanoid robots conduct world-first tablet testing on live factory line - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNWgtZVNLb2t0dUNOVXJ5SWVOWlZ2elFoV1NsZ2pSNjdES2FxV2hNOFVVaThFVFozOHJVQklzbXFYQjBCNkJ6WExEdG5yZUlLaG5XWWk0cWlrMmV5XzFSbzluS0xrN3JvVkxaRlJheGxmbjVwMnRqNElnYzlaOXRHSTYyYXZaOVZXX3BQWm1RdVl6SkZITEJoeWd3dEdpT0tITjZldTNpVWRIYVRqUmN2NjJtTVRHSXdwaXlyS2lhTFpacE9YMTh2M2x1UDhqNm9X?oc=5",
-    "date": "2026-04-19 00:08",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Agibot 인형 로봇, 세계 최초로 실제 공장 라인에서 태블릿 테스트 | Agibot 인형 로봇이 세계 최초로 생산 라인에서 태블릿을 테스트하여 제조 공정의 자동화를 위한 새로운 가능성을 보여주었습니다. 이러한 시험은 산업 4.0 시대의 변화와 로보틱스 기술의 발전을 잘 보여주는 사례입니다."
-  },
-  {
-    "title": "AGIBOT, 인간 로봇 기술의 전환점을 APC 2026에서 알립니다 - Unite.AI",
-    "original_title": "AGIBOT Signals a Turning Point for Humanoid Robotics at APC 2026 - Unite.AI",
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRHhhMnh3bjlZSkY1QVNOR2xHcjdSSWtyZklhNGhja3BNd0JtS3NXZXU2ajJhRjRtcTRtZExzVGE2eDV0ZEc1S29lOEh2cHc3Z2JiSEhBbmphNWtHNGEtQmY0SFI2RE01dDNNVGRhbDh4cGlFWjk0dG1lQlUyWW5QN2pnYWhQTmg5T2FzeUdWYw?oc=5",
-    "date": "2026-04-18 22:31",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unite.AI가 개발한 AGIBOT이 APC 2026에서 공개되어 인형 로봇 기술에 새로운 지평을 열었다고 전해진다.  AGIBOT은 인간과 유사한 움직임과 상호 작용 능력을 보여주어 로보틱스 분야의 중요한 발전으로 평가받는다."
-  },
-  {
-    "title": "빠르게 실패, 작게 실패, 안전하게 실패: 로봇 자동화를 위한 실용적인 모델",
-    "original_title": "Fail fast, fail small, fail safe: A practical model for robotic automation",
-    "link": "https://www.therobotreport.com/fail-fast-fail-small-fail-safe-a-practical-model-for-robotic-automation/",
-    "date": "2026-04-18 16:05",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "로봇 시스템을 테스트할 때 개발자들은 위험을 통제한다면 실패하고 배우는 것이 가능하다고 Bullen Ultrasonics의 연구 및 초기 혁신 관리자가 설명했다."
-  },
-  {
-    "title": "JVM 작동 방식 EP211",
-    "original_title": "EP211: How the JVM Works",
-    "link": "https://blog.bytebytego.com/p/ep211-how-the-jvm-works",
-    "date": "2026-04-18 15:30",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "자바 코드는 컴파일, 실행, 디버깅되는데, JVM은 이 과정에서 어떤 역할을 하는가에 대한 내용."
   }
 ]
