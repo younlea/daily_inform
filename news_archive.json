@@ -153,6 +153,78 @@
     "summary": "arXiv:2606.06139v1 Announce Type: new \nAbstract: We present MotionDisco, a framework that discovers contact-rich, long-horizon humanoid loco-manipulation motions from scratch, without relying on teleoperation or motion retargeting from human demonstrations. This is challenging because the space of possible contact interactions grows combinatorially with the task horizon and the number of objects in the scene. MotionDisco enables rapid discovery of novel motions by coupling a large language model (LLM) guided evolutionary search over sequences of interactions with an efficient sequential kinodynamic trajectory optimizer and pruning strategy, enabling the rapid discovery of novel skills. Through extensive ablation studies, we show that our LLM-guided search discovers successful whole-body trajectories across several challenging long-horizon tasks. Finally, by training reinforcement learning tracking policies on the discovered trajectories, we transfer the motions to a real humanoid robot. This is the first work to discover and deploy long-horizon humanoid loco-manipulation skills entirely through automated evolutionary search. Supplementary videos of the experiments are available at: https://youtu.be/DHiVz34QYlw."
   },
   {
+    "title": "AffordanceVLA: A Vision-Language-Action Model Empowering Action Generation through Affordance-Aware Understanding",
+    "original_title": "AffordanceVLA: A Vision-Language-Action Model Empowering Action Generation through Affordance-Aware Understanding",
+    "link": "https://arxiv.org/abs/2606.06155",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06155v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models leverage the rich world knowledge of pretrained vision-language models (VLMs) to enable instruction-following robotic manipulation. However, the structural mismatch between VLM semantic spaces and embodied control policies often hinders the learning of precise perception--action mappings. To address this challenge, we propose \\textbf{AffordanceVLA}, a unified framework that introduces structured affordance forecasting as a task-oriented intermediate representation to establish a more precise and robust perception--action mapping. Specifically, we progressively model manipulation priors through three complementary components: 1) \\textbf{Which2Act} for object-centric grounding via visual latent prediction to suppress distractions; 2) \\textbf{Where2Act} for 2D interaction localization via affordance map estimation; and 3) \\textbf{How2Act} for 3D geometric reasoning to guide manipulation policies. These affordance cues provide spatially grounded, semantically conditioned, and action-coupled intermediate representations, thereby naturally bridging vision, language and action. We integrate these modules into a Mixture-of-Transformer (MoT) architecture with specialized experts and train the model using a three-stage training strategy with a progressive data curriculum. To overcome the scarcity of dense affordance labels in robotic datasets, we also develop a robust automated data augmentation pipeline. Extensive experiments on simulation and real-world demonstrate that AffordanceVLA achieves strong performance across diverse manipulation scenarios."
+  },
+  {
+    "title": "ActiveMimic: Egocentric Video Pretraining with Active Perception",
+    "original_title": "ActiveMimic: Egocentric Video Pretraining with Active Perception",
+    "link": "https://arxiv.org/abs/2606.06194",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06194v1 Announce Type: new \nAbstract: Egocentric human video offers a scalable alternative to robot data for pretraining, yet models pretrained on such video consistently underperform those pretrained on robot data. We attribute this gap to a missing signal, the active perception behavior in egocentric videos, where humans continuously reposition their viewpoint during manipulation, inducing camera motion that standard pipelines treat as noise. To address this, we present ActiveMimic, a pretraining framework that recovers synchronized camera and wrist trajectories from a single body-worn RGB camera, models camera motion as a viewpoint action, and jointly learns active perception and manipulation from in-the-wild egocentric human video before adapting to a target robot. Empirically, real-world experiments across tasks with diverse active perception demands show that ActiveMimic consistently surpasses baselines pretrained on human video and matches state-of-the-art models pretrained on robot data. Further analysis provides evidence that active perception capability originates from egocentric human video pretraining rather than robot-specific fine-tuning, confirming active perception as the key to unlocking egocentric human video for robot pretraining."
+  },
+  {
+    "title": "TAM: Torque Adaptation Module for Robust Motion Transfer in Manipulation",
+    "original_title": "TAM: Torque Adaptation Module for Robust Motion Transfer in Manipulation",
+    "link": "https://arxiv.org/abs/2606.06218",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06218v1 Announce Type: new \nAbstract: A policy tuned for one robot often behaves differently on another, whether due to the sim-to-real gap, unknown payloads, or the differing dynamics of two instances of the same robot. In contact-rich, dynamic manipulation, even small motion discrepancies can result in failure to track reference motion, since they disrupt the timing and modes of contact. Common remedies, such as domain randomization or system identification, either produce overly conservative task policies or require data that must be recollected for each robot or payload. We introduce the Torque Adaptation Module (TAM), a learned module that adapts the torque commands sent to the robot to match the behavior of an ideal robot. TAM operates between the low-level controller that tracks the policy's actions and the robot's torque interface. It includes a history encoder that embeds proprioceptive history into a latent state and a torque adaptor that computes residual torque corrections. Because TAM depends only on proprioceptive history and not on policy observations, or the action space, the same TAM weights can be reused to adapt policies with different action spaces (joint targets, end-effector targets, or direct torques). The policies themselves do not need to be trained with domain randomization of robot parameters. Instead, we offload the need for domain randomization to TAM by training it entirely in randomized simulation, using multi-robot pretraining followed by a robot-specific fine-tuning step that still requires no real-robot data. We evaluate TAM zero-shot on a real Franka Panda robot across dynamic manipulation tasks that include a vision-based box pushing policy (from RL), a flip policy (from BC), and an MPC ball-on-plate balancing. Our experiments show that TAM improves zero-shot real-robot execution compared to online system identification and RMA baselines and enables robust dynamic manipulation performance."
+  },
+  {
+    "title": "Breaking Time: A Fully Gaussian Framework for Distributed and Continuous-Time SLAM",
+    "original_title": "Breaking Time: A Fully Gaussian Framework for Distributed and Continuous-Time SLAM",
+    "link": "https://arxiv.org/abs/2606.06250",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06250v1 Announce Type: new \nAbstract: Continuous-time SLAM provides a principled framework for fusing heterogeneous sensors while estimating smooth trajectories, and is particularly well-suited for handling heterogeneous, asynchronous sensor streams with non-uniform readout patterns, such as rolling shutter cameras, LiDAR scanners, radar sweeps, or event-based sensors. In this work, we introduce G-solver, a fully Gaussian and distributed framework that combines Gaussian Belief Propagation (GBP) with Gaussian Process (GP) motion priors for continuous-time trajectory estimation. Our GP model provides a probabilistic representation of the trajectory, enabling consistent interpolation and the use of data-driven hyperparameters, while GBP offers a scalable message-passing formulation well-suited for decentralized settings. The resulting solver naturally extends to multi-camera scenarios without specialized synchronization or engineering effort. We evaluate the approach on synthetic and real data, including rolling shutter and distributed multi-camera optimization, demonstrating accurate and stable estimation with runtimes comparable to existing continuous-time methods. An open-source implementation is released."
+  },
+  {
+    "title": "Multi-Resolution Tactile Imitation Learning for Contact-Rich Robotic Manipulation",
+    "original_title": "Multi-Resolution Tactile Imitation Learning for Contact-Rich Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.06281",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06281v1 Announce Type: new \nAbstract: Touch sensing is beneficial for solving a wide variety of manipulation tasks. While there exists a wide range of tactile sensors with different properties, exploiting the fusion of multiple heterogeneous tactile sensors to improve manipulation learning remains underexplored. We present Multi-Resolution Tactile Sensing (MiTaS), a representation framework that leverages multiple tactile sensors operating at different temporal resolutions in order to solve complex contact-rich manipulation tasks. We propose a novel architecture using modality-specific convolutional stems and transformer-based fusion that effectively fuses information from an RGB camera stream, a vision-based GelSight Mini sensor and a high-frequency event-based Evetac sensor. This multi-sensor representation then conditions a flow-matching policy for solving downstream tasks. Experimental results across five contact-rich manipulation tasks demonstrate the effectiveness of multi-resolution tactile features in imitation learning. MiTaS achieves an average success rate of 80 %, while vision-only (31 %) and visual-tactile (54 %) baselines cannot solve the task reliably. Co-training a visuo-tactile model with multi-tactile data boosts performance by over 10 \\% in certain tasks, without having access to the Evetac sensor during policy evaluation. A detailed sensor-reading and attention analysis reveals the importance of different sensors throughout task execution, validating our multi-resolution tactile sensing approach. Project Page: http://mitas-touch.github.io."
+  },
+  {
+    "title": "Meridian: Metric-Semantic Primitive Matching for Cross-View Geo-Localization Beyond Urban Environments",
+    "original_title": "Meridian: Metric-Semantic Primitive Matching for Cross-View Geo-Localization Beyond Urban Environments",
+    "link": "https://arxiv.org/abs/2606.06312",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06312v1 Announce Type: new \nAbstract: Successful robot automation requires accurate global localization to support repeatability, task planning, goal specification, and safe operation. However, reliable localization in GNSS-denied environments remains an open problem. Overhead aerial imagery offers a promising solution, but existing approaches primarily target structured urban environments and have been rarely demonstrated in unstructured natural terrain. Limitations of the state-of-the-art include a reliance on models trained for specific environments, as well as difficulty handling repetitive geometries and featureless landscapes commonly found in natural outdoor areas. To overcome these challenges, we present Meridian, a method for matching high-level metric-semantic primitives across aerial images and ground robot RGB-D camera data that achieves accurate global localization and generalizes well across diverse environments, all without any training or algorithmic fine-tuning on area-specific data. We formulate novel consistency metrics to estimate a distribution over robot submap poses and to reject outlier hypotheses in a robust pose graph optimization step for accurate robot trajectory estimation. We demonstrate that our algorithm can localize a ground robot across a wide variety of environments, including an autonomous driving dataset, a park and campus area, and a wilderness camp, with an average optimized trajectory error of 2.4 m over 19 km of ground traversal."
+  },
+  {
+    "title": "VOLT: Vision and Language Trajectory Segmentation for Faster-than-Demonstration Policies",
+    "original_title": "VOLT: Vision and Language Trajectory Segmentation for Faster-than-Demonstration Policies",
+    "link": "https://arxiv.org/abs/2606.06323",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06323v1 Announce Type: new \nAbstract: Humans often take longer to demonstrate a task than a robot would need to execute it. Rather than learning to replicate the demonstration at the same pace, many industrial and practical applications require robots to perform tasks as quickly as possible. In this paper, we investigate several hypotheses for learning policies that operate faster-than-demonstrations. Our experiments show that the most effective strategy is to downsample recorded demonstrations and train the robot's policy on this accelerated data. However, uniformly downsampling an entire trajectory can be problematic. Some parts of a task can be safely sped up (e.g., unconstrained motion), while others demand slower, more precise motion (e.g., object interactions or fine manipulation). To address this challenge, we introduce VOLT, a vision-and-language trajectory segmentation method that reasons over video demonstrations, and leverages contextual cues to determine when acceleration is appropriate and when careful precision is required. VOLT identifies segments where slow, deliberate motion is necessary, then selectively downsamples the remaining segments. The resulting reformatted trajectories can be used with standard imitation learning approaches, such as diffusion policies. Our results highlight that segmentation quality is critical -- baseline methods often misidentify when acceleration is possible, leading to overly cautious or unreliable policies. Compared to state-of-the-art alternatives, VOLT allows robots to execute tasks faster while maintaining strong performance."
+  },
+  {
+    "title": "TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies",
+    "original_title": "TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies",
+    "link": "https://arxiv.org/abs/2606.06491",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06491v1 Announce Type: new \nAbstract: Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs through model compression, KV-cache reuse, or reinforcement learning only shift the policy from one fixed speed to another, and leave deceleration almost unexplored. We observe that the magnitude of each predicted action already governs how fast the robot moves, opening a direct route to controllable execution speed. We turn this observation into TempoVLA, a single VLA whose execution speed is controlled by an explicit condition. TempoVLA combines two coupled components. (1) A data-side Variable-Speed Trajectory Augmentation (VSTA) that re-times demonstration to any target speed by merging or splitting actions while preserving its motion semantics. (2) A model-side conditioning mechanism that feeds the speed to the policy. Statistics show that VSTA reaches the requested speed with negligible motion error. Experiments in simulation and on real-world tasks demonstrate that TempoVLA achieves flexible speed control in both directions, while VSTA additionally boosts the default $1\\times$ performance via better data utilization. Furthermore, by cooperating with a large multimodal model, TempoVLA realizes dynamic speed control, accelerating through low-risk phases and decelerating for high-risk ones."
+  },
+  {
     "title": "Nvidia deepens humanoid robotics role with Unitree and Cosmos 3, secures AI chips - digitimes",
     "original_title": "Nvidia deepens humanoid robotics role with Unitree and Cosmos 3, secures AI chips - digitimes",
     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRm81ZkNleGdHam1YOHNjT05ScGtyN0ZaT2MyaE93T1dTZkRJSTYyVG1Ba2loUmNwb0xidHI2S3d6M1Z1Q3drYXMzdU5ZVHBwVEdmVGxyVWZJeFdCVEZNeG5TV0hnYmRtWEY2V3R3MmlQcF84ckNSeklvbW9QaW5xdGRRWlFfYmNsbnNxclVKTjA?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "이번 연구에서는 음식물 쓰레기를 분류하는 로봇 그립핑 기술의 실제 세계적 성능을 평가하기 위한 GRAB (Grasping-in-Clutter) 기준을 제안했습니다. GRAB는 다양한 변형 물체 데이터셋, 6D 그립 포즈 추정, 그리고 물체 특성에 따른 수집 조건을 명확히 평가하는 매개변수를 포함합니다. 실험 결과, 음식물 쓰레기 분류에 적용된 다양한 로봇 그리퍼 모듈의 성능 차이와 물체 품질이 그립핑 성능에 가장 큰 영향을 미친다는 것을 보여주었습니다."
-  },
-  {
-    "title": "잠재적 모방: 잠재 공간 모방을 통한 지형 적응 로코모션",
-    "original_title": "LatentMimic: Terrain-Adaptive Locomotion via Latent Space Imitation",
-    "link": "https://arxiv.org/abs/2604.16440",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "복잡한 지형에 적응하면서 동작 스타일을 유지하는 사족 로봇의 자연스럽고 다양한 운동 제어 개발은 중요한 과제로 남아있음. 본 논문에서는 잠재적 모방(LatentMimic)이라는 새로운 로코모션 학습 프레임워크를 소개하며 스타일적 신뢰성과 기하학적 제약 사이를 분리하여, 지형 적응성을 유지하면서 동작 스타일의 신뢰성을 보장하는 방법을 제시함."
-  },
-  {
-    "title": "인공신경망 기반 적응형 이벤트 트리거 제어 알고리즘을 이용한 양팔 무인 항공 매니퓰레이터 시스템",
-    "original_title": "Neural Network-Based Adaptive Event-Triggered Control for Dual-Arm Unmanned Aerial Manipulator Systems",
-    "link": "https://arxiv.org/abs/2604.17048",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 논문은 양팔 무인 항공 매니퓰레이터 시스템(DAUAM)의 제어 문제를 다루며, 인공신경망 기반 근사 알고리즘을 적용하여 상호작용 및 모델링되지 않은 역학적 요소와 외부 방해 등의 과제를 해결하며, 통신 제약을 고려한 적응형 이벤트 트리거 제어법을 제안함."
-  },
-  {
-    "title": "시각적 목표 달성을 위한 시각적 RRT",
-    "original_title": "Visual-RRT: Finding Paths toward Visual-Goals via Differentiable Rendering",
-    "link": "https://arxiv.org/abs/2604.16388",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구에서는 차이가 있는 렌더링 기반의 경사 기법과 RRT 알고리즘을 결합하여 시각적 목표를 설정한 로봇 운동 계획(Visual-goal planning)을 가능하게 하는 시각적 RRT(vRRT) 플랫폼을 제시함. vRRT는 프론티어 기반의 탐색 및 추출 전략과 관성 경사 트리 확장 기술을 통해 시각적으로 유망한 검색 영역 우선순위 설정 및 동력 일관성 있는 경사 사용을 가능하게 하여, Franka, UR5e, Fetch 등 다양한 로봇 매니퓰레이터에서 실제 세계 환경과 시뮬레이션 환경에서 효과적인 시각적 목표 계획 성능을 보임."
-  },
-  {
-    "title": "유리 표면 재구성을 위한 깊이 프라이오리 강화 로봇 네비게이션",
-    "original_title": "Enhancing Glass Surface Reconstruction via Depth Prior for Robot Navigation",
-    "link": "https://arxiv.org/abs/2604.18336",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "유리 표면은 로봇의 깊이 감지 측정값을 심각하게 손상시켜 내부 로봇 운항에 방해가 된다. 연구자들은 깊이 기반 모델과 RANSAC 알고리즘을 사용하여 부실한 유리 표면 측정값으로부터 자유로운 정확한 메트릭 스케일을 되찾는 새로운 프레임워크를 제안했다."
-  },
-  {
-    "title": "SYMBOLIZER: 상징적 모델 없는 작업 계획 수립을 위한 VLMs",
-    "original_title": "SYMBOLIZER: Symbolic Model-free Task Planning with VLMs",
-    "link": "https://arxiv.org/abs/2604.17830",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존 작업 및 동작 계획 시스템은 물리학 모델과 상징적 모델에 의존하지만, 상징적 모델 구축이 어렵고 비효율적이다. 최근 연구는 시각 언어 모델(VLMs)과 고전적 계획을 통합하여 작업 계획 문제에서 장기 전략 수립 능력을 높이고자 하지만, 일반성 부족 및 손crafted 해결 방식에 의존한다. 본 논문에서는 VLMs를 사용하여 상징적 상태 공간을 구축하고, 도메인 독립적인 휴리스틱 검색을 통해 계획을 수행하는 프레임워크를 제안하며,  직접 VLM 기반 계획보다 우수한 성능을 보였다."
-  },
-  {
-    "title": "NeRF와 Gaussian Splatting의 기하학적 정확도 비교 평가",
-    "original_title": "A Comparative Evaluation of Geometric Accuracy in NeRF and Gaussian Splatting",
-    "link": "https://arxiv.org/abs/2604.18205",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "최근 신경 렌더링 기술은 다양한 3D 시나리오 표현을 소개했지만, 표면 기하학의 정확도를 평가하는 것은 중요하며 특히 로봇 분야에서 Grasping 및 객체 조작 등에 필수적입니다. 본 논문에서는 신경 렌더링 방법의 기하학적 정확도를 평가하는 파이프라인을 제시하고, 19개의 다양한 장면으로 구성된 지표 세트를 제공합니다."
-  },
-  {
-    "title": "위성 궤도 공간 인공지능: 위성 자집단을 위한 연합, 다대원 및 협업 알고리즘",
-    "original_title": "On-Orbit Space AI: Federated, Multi-Agent, and Collaborative Algorithms for Satellite Constellations",
-    "link": "https://arxiv.org/abs/2604.16518",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 논문은 위성 자집단의 운영에 적용되는 연합학습, 다대원 알고리즘, 그리고 공동 감지 및 분산 추론과 같은 세 가지 새로운 방법론을 소개하며, 이러한 기술들은 다이나믹한 위성 연결 상태, 제한된 하드웨어 자원, 방사선 손상 등의 환경적 한계 속에서 효율적인 AI 작동을 가능하게 한다."
-  },
-  {
-    "title": "로봇 훈련기 스노피, 사람들의 기호를 얻을까?",
-    "original_title": "Will People Enjoy a Robot Trainer? A Case Study with Snoopie the Pacerbot",
-    "link": "https://arxiv.org/abs/2604.18331",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "로봇 사육 4족 보행 SNOOPIE가 운동 강도에 맞춘 인터벌 트레이닝 실행하여 사용자의 속도 일관성과 운동 지속율을 향상시켰습니다.  사용자 설문 결과, 스노피는 Apple Watch와 비교하여 사용 편의성, 즐거움, 유용성에서 높은 평가를 받았습니다."
   }
 ]
