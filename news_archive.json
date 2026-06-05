@@ -1,5 +1,86 @@
 [
   {
+    "title": "OLIVE: Online Low-Rank Incremental Learning for Efficient Adaptive Exoskeletons",
+    "original_title": "OLIVE: Online Low-Rank Incremental Learning for Efficient Adaptive Exoskeletons",
+    "link": "https://arxiv.org/abs/2606.05234",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.05234v1 Announce Type: new \nAbstract: Wearable exoskeleton systems hold promise for restoring mobility in individuals with physical impairments, yet most existing controllers rely on static gait policies that lack the ability to adapt to dynamic real-world environments or individual user characteristics. We present \\olive (\\underline{O}nline \\underline{L}ow-rank \\underline{I}ncremental Learning for Efficient Adapti\\underline{ve} Exoskeletons), a parameter-efficient online adaptation framework that continuously personalizes exoskeleton control during deployment. \\olive decomposes the adaptive component of the control policy into a low-rank residual form~$\\dW = \\At\\Bt^\\top$ with rank~$r!\\ll!\\min(d,k)$, reducing online update cost from $\\mathcal{O}(dk)$ to $\\mathcal{O}(r(d{+}k))$ while preserving the stability of a pretrained base controller~$\\Wz$. Parameters are updated via a reward-shaped policy gradient driven purely by on-body sensor feedback (EMG, IMU, vibration), eliminating dependence on offline reference trajectories. A gating mechanism modulates the strength of personalization based on contextual state, and a dynamic rank scheduler adapts the update dimensionality to terrain complexity -- allocating minimal capacity on simple flat terrain and expanding to higher-rank updates on demanding uneven surfaces -- enabling robust performance across diverse activities: flat walking, stair navigation, slopes, and uneven terrain. Experiments on the wearable platform demonstrate that \\olive achieves +13, +22, and +15 percentage-point improvements in gait smoothness, effort reduction, and motion stability over the strongest baseline, converging within $\\sim$1{,}800 walking steps at 7.4,ms end-to-end latency. Our code implementation is available at https://github.com/FastLM/OLIVE."
+  },
+  {
+    "title": "Inverse Manipulation through Symbolic Planning and Residual Operator Learning",
+    "original_title": "Inverse Manipulation through Symbolic Planning and Residual Operator Learning",
+    "link": "https://arxiv.org/abs/2606.05248",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.05248v1 Announce Type: new \nAbstract: Inverting a robotic task requires more than reversing symbolic state transitions or rewinding motor trajectories. In robot manipulation tasks, symbolic inverse plans often fail to fully restore the effects of forward executions under continuous interaction dynamics. We present a hybrid framework for inverse manipulation that derives inverse-skill objectives from STRIPS-like operators automatically extracted from demonstrations through soft geometric predicates. For each extracted operator, we construct an inverse restoration objective that preserves preconditions, restores delete effects, and negates add effects. A task planner first attempts to satisfy this objective using available action primitives. Unresolved symbolic predicates then induce a residual operator learning problem solved through Reinforcement Learning (RL). We evaluate the framework on the ManiSkill3 PushCube task. For a forward pushing skill, the symbolic inverse performs a coarse pick-and-place restoration, while a residual Soft Actor-Critic policy refines the cube pose to satisfy the remaining inverse predicates. Our results show that predicate-derived residual control can turn an approximate symbolic inverse into a physically grounded inverse skill."
+  },
+  {
+    "title": "MoDex: A Diffusion Policy for Sequential Multi-Object Dexterous Grasping",
+    "original_title": "MoDex: A Diffusion Policy for Sequential Multi-Object Dexterous Grasping",
+    "link": "https://arxiv.org/abs/2606.05407",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.05407v1 Announce Type: new \nAbstract: This work addresses sequentially grasping multiple objects with a single dexterous hand without releasing those already held. Most dexterous grasping methods commit all of the hand's degrees of freedom to a single object, underutilizing its dexterity and leaving no redundancy for subsequent grasps. The proposed solution, MoDex, is a diffusion policy that predicts the next gripper pose directly from observations, conditioned on an opposition space and point cloud. The opposition space condition specifies which fingers participate in the current grasp, enabling the gripper to use only a subset of its available degrees of freedom while reserving the remaining degrees of freedom for subsequent grasps. To facilitate sim-to-real transfer, MoDex is trained in two stages: first through imitation learning on expert demonstrations, and subsequently through reinforcement learning fine-tuning, which consistently improves success rates over the pre-trained policy. We evaluate MoDex in simulation on a MuJoCo-based Franka Emika Panda robot equipped with an Allegro Hand and on the corresponding real-world hardware platform. Across both simulation and real-world experiments, MoDex achieves higher success rates than the evaluated learning-based baselines, improving performance by 2.92-17.92% and 6.67-17.78%, respectively. Project page: https://modex2026.github.io/."
+  },
+  {
+    "title": "Safe Embodied AI for Long-horizon Tasks: A Cross-layer Analysis of Robotic Manipulation",
+    "original_title": "Safe Embodied AI for Long-horizon Tasks: A Cross-layer Analysis of Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.05660",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.05660v1 Announce Type: new \nAbstract: Embodied AI systems are increasingly expected to reason and act over extended horizons in physical environments. This growing capability brings safety to the foreground, because failures in the physical world can harm people, damage objects, and disrupt workplaces. Although safe embodied AI has attracted substantial attention, the literature remains fragmented across planning, policy design, and runtime execution. Long-horizon robotic manipulation is a particularly revealing anchor domain for this problem because semantic misgrounding, subtask-level error propagation, execution drift, and contact-rich physical risk can accumulate within the same closed-loop system. This survey therefore provides a structured review of safety in long-horizon robotic manipulation from an embodied AI perspective. We organize the literature by intervention locus, covering planning-time, policy-time, and execution-time safety, and we analyze the strength of the evidence that each line of work provides, distinguishing formal guarantees, statistical support, and empirical safety heuristics. This framework clarifies the distinct roles of backbone capability papers, direct safety mechanisms, and benchmark or evaluation studies, while exposing where current safety claims are well supported and where they remain indirect. We identify persistent gaps, including limited evidence for policy-time safety, weak formal support for contact-rich long-horizon manipulation, immature uncertainty-triggered intervention, and a shortage of manipulation-specific safety benchmarks. We conclude by outlining research directions for cross-layer assurance, evaluation design, and safer deployment of long-horizon robotic agents in real-world settings."
+  },
+  {
+    "title": "Accelerating and Scaling MPC-Guided Reinforcement Learning for Humanoid Locomotion and Manipulation",
+    "original_title": "Accelerating and Scaling MPC-Guided Reinforcement Learning for Humanoid Locomotion and Manipulation",
+    "link": "https://arxiv.org/abs/2606.05687",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.05687v1 Announce Type: new \nAbstract: In humanoid motion control, model predictive control (MPC) offers physically grounded prediction and constraint handling, while reinforcement learning (RL) enables robust whole-body skills through large-scale simulation. However, using MPC inside RL often requires time-consuming problem construction or excessive training overhead, making such frameworks difficult to justify in practice. This work studies efficient training-time MPC guidance for humanoid locomotion and manipulation, termed MPC-RL. We introduce a centroidal-dynamics MPC reward formulation that leverages guidance from MPC trajectories in training time. To make this practical in massively parallel RL, we develop $\\pi^n$MPC, a parallel-in-horizon and construction-free batched GPU MPC solver that operates directly on time-varying dynamics to avoid high memory usage and pre-compilation. Through a variety of comparative studies and hardware validations, we have found that MPC-RL achieves superior performance in locomotion and manipulation skills. The code base is available at https://github.com/junhengl/mpc-rl."
+  },
+  {
+    "title": "DexFuture: Hierarchical Future-State Visuomotor Targeting for Bimanual Dexterous Tool Use",
+    "original_title": "DexFuture: Hierarchical Future-State Visuomotor Targeting for Bimanual Dexterous Tool Use",
+    "link": "https://arxiv.org/abs/2606.05699",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.05699v1 Announce Type: new \nAbstract: Bimanual dexterous tool use remains challenging for robots due to high-dimensional hand configurations and complex hand-tool-object dynamics and contact. Most existing control policies depend on future configuration references provided from demonstrations, while future action-conditioned world models require slow online planning over high-dimensional action sequences. A significant challenge is generating a dynamically consistent future reference trajectory without relying on privileged states from demonstrations or slow counterfactual planning. We propose DexFuture, a hierarchical system that couples a high-level Future-State Visuomotor Target Predictor with a low-level Target-Conditioned Structured Dexterous Policy. Conditioned on egocentric RGB, proprioceptive and geometric history, the high-level predictor constructs structured hand-tool-object visuomotor embeddings and uses a horizon-conditioned transformer to generate a multi-step future target trajectory. Then, the low-level policy tracks them with a target-conditioned per-link transformer. This hierarchy decouples coarse future reference generation from fine-grained action control, and slow long-horizon semantic prediction from high-frequency execution. On OakInk2 bimanual tool-use tasks, DexFuture achieves 90% of the privileged-oracle performance, compared to 7% for a no-reference policy. DexFuture operates at 60 Hz, approximately 250 times faster than DexWM-style Cross-Entropy Method (CEM) planning with a future action-conditioned world model."
+  },
+  {
+    "title": "PiL-World: A Chunk-Wise World Model for VLA Policy-in-the-Loop Evaluation",
+    "original_title": "PiL-World: A Chunk-Wise World Model for VLA Policy-in-the-Loop Evaluation",
+    "link": "https://arxiv.org/abs/2606.05773",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.05773v1 Announce Type: new \nAbstract: Vision-language-action (VLA) policies operate in a closed loop in real-world robot tasks: a robot observes the scene, executes an action chunk, and conditions its next decision on the resulting observation. However, most existing world models for robot action evaluation are limited to open-loop prediction along pre-collected action trajectories. This prevents them from supporting closed-loop VLA evaluation, where each action chunk must be conditioned on the observation generated by the previous execution. To address this gap, we propose PiL-World, a chunk-wise world model designed for policy-in-the-loop VLA evaluation. Given the current observation and the action trajectory rolled out by a VLA policy, PiL-World generates multi-view future observations that are consistent with the VLA rollout and match the image inputs required by the policy. By alternating between VLA inference and world-model prediction, PiL-World enables closed-loop evaluation without real robot execution at every step. To improve rollout fidelity, PiL-World conditions video generation on action-derived visual control from head-view robot motion and latent histories that encode task execution context, while jointly predicting complementary multi-view observations. Beyond successful teleoperated demonstrations, it also learns from failed execution trajectories, helping the imagined rollouts better match the distribution of real policy executions. We evaluate PiL-World on three real dual-arm manipulation tasks. PiL-World generates imagined rollouts that are highly consistent with real robot executions. More importantly, compared with the baseline, it reduces the error between VLA success rates measured in real-world rollouts and those estimated through closed-loop world-model evaluation from 63.2% to 12.0%."
+  },
+  {
+    "title": "Visuotactile and Explicitly Force-Controlled Robotic Ultrasound for Abdominal Volumetric Reconstruction",
+    "original_title": "Visuotactile and Explicitly Force-Controlled Robotic Ultrasound for Abdominal Volumetric Reconstruction",
+    "link": "https://arxiv.org/abs/2606.05848",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.05848v1 Announce Type: new \nAbstract: In this paper, we present a robotic ultrasound acquisition system that integrates stereo vision, touch-based feedback, and expert-informed strategies to perform autonomous and adaptive abdominal scans. The system records freehand motion and force data from expert radiologists, creating a framework to capture transducer motion, applied forces, and anatomical scanning strategies. This expert data is replayed to replicate characteristic scans with the robot, forming a foundation for further autonomous capabilities. Using stereo vision, the system generates three-dimensional topography maps of the patient's abdomen, which are refined through stiffness measurements at key points to delineate the rib cage boundary. These combined techniques enable the robot to execute two distinct scanning paths: an upward-angled sweep beneath the rib cage to visualize structures near the upper abdomen and a perpendicular sweep across soft tissue regions. A compliant, torque-controlled seven degree-of-freedom robotic manipulator is controlled to maintain consistent probe contact through closed-loop force control over the varied anatomical surfaces. Physical experiments demonstrate that the system achieves high-quality imaging comparable to expert scans while dynamically adapting to patient-specific topographies. Furthermore, the robotic system surpasses expert capabilities by enabling three-dimensional volume acquisition, which enhances diagnostic potential and provides volumetric data for advanced analyses. This work highlights the integration of expert knowledge into autonomous robotic systems and underscores the potential of combining perception-based autonomy with physical reasoning for enhanced diagnostic performance."
+  },
+  {
+    "title": "Unitree dancing humanoid robots wow judges on ‘America's Got Talent’ - VnExpress International",
+    "original_title": "Unitree dancing humanoid robots wow judges on ‘America's Got Talent’ - VnExpress International",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPU1hCY040R01jZU5NZmhBQ25XN2tmV3N4Ukxkd0JTYTJJMURabGlIUll1c2N0dDhSTUdvZGJJb2REN3ByaktHWmtRamdmR0JTcEtSaEs4V1BrYkVNaXBMdmJMYzh4bFFMYV9pSDRDRVJLSnE0ZmxVbmFkUlk1QXZQMVgyQ2ZaQVhzV1Nsdms3RmRNb1ZJTlF5dTBiVHJCM3p1VkRQeE56bUxKUHBhcXhFRVB3aTM0OEQtSVlSd2dKNzM?oc=5",
+    "date": "2026-06-05 03:06",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree dancing humanoid robots wow judges on ‘America's Got Talent’  VnExpress International"
+  },
+  {
     "title": "AGIBOT Takes Center Stage with Human-Machine Dialogue at Beijing Summit 2026 - TMX Newsfile",
     "original_title": "AGIBOT Takes Center Stage with Human-Machine Dialogue at Beijing Summit 2026 - TMX Newsfile",
     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONkpZRXpNNk5wWUNhTmxrYUtWd1NVMHc5YTlyYlRnNzVjc2JsQXNxY3hvREJhaXBhV21sU0czbk5BZTFsa0ZZUDBfWXBrc3Q3RXEzeV9RQy1FMl9BZ2dHN2J5U0VNTzl3alQ3N09uMld1empSNnU0c093c05CZVJVME1QVHBDYm9lQnYxUDlWUDlJQ0JDcHI1ang0X0tnM1dwQjM2UEpaT2RXelJSYmZodFh6YVZQOEllTWxN?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "스킬 AI가 Zebra Technologies의 로보틱스 자동화 사업을 인수했다.  핵심은 \"Skild Brain\"으로  robots의 형태에 대한 사전 지식 없이 작동하는 omnibodied AI 소프트웨어로, 어떤 로봇도 제어할 수 있다고 알려져있다."
-  },
-  {
-    "title": "엔비디아와 파트너, 한nover Messe 2026에서 AI 기반 제조 시스템 선보임",
-    "original_title": "Nvidia and partners showcase AI-driven manufacturing systems at Hannover Messe 2026",
-    "link": "https://roboticsandautomationnews.com/2026/04/20/nvidia-and-partners-showcase-ai-driven-manufacturing-systems-at-hannover-messe-2026/100766/",
-    "date": "2026-04-20 21:37",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "엔비디아 및 산업 파트너들은 한nover Messe 2026에서 인공지능이 공학, 제조 현장 운영 및 로봇 배치를 변화시키는 방법을 보여주며 최신 AI 기반 제조 기술을 선보였다."
-  },
-  {
-    "title": "로봇코, 한nover Messe에서 산업 자동화를 위한 인간형 로봇 'Autonomous Alfie' 공개",
-    "original_title": "RobCo unveils ‘Autonomous Alfie’ humanoid robot for industrial automation at Hannover Messe",
-    "link": "https://roboticsandautomationnews.com/2026/04/20/robco-unveils-autonomous-alfie-humanoid-robot-for-industrial-automation-at-hannover-messe/100762/",
-    "date": "2026-04-20 21:18",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "로봇코는 한노버 메세에서 산업 분야 로봇을 확장하는 데 필요한 새로운 인형 로봇 'Autonomous Alfie'를 발표함.  Alfie는 변동성, 민감성 및 변경되는 입력이 있는 작업 자동화를 위해 제조업체들이 찾고 있는 새로운 범주를 열며 레벨 4 자율성으로 향하는 한 발걸음을 의미함."
-  },
-  {
-    "title": "사이먼스, AI 공학 에이전트 출시로 PLC 코딩 및 산업 프로세스 자동화 | 사이먼스는 자율적인 작업 수행을 위한 다단계 추론과 자체 교정 기능을 갖춘 새로운 유형의 산업용 AI 제품인 'Eigen Engineering Agent'를 출시함.  새롭게 출시된 Eigen Engineering Agent는 일반적인 AI 도구와 달리 단순한 제안 생성을 넘어 독립적으로 작업 수행이 가능하도록 설계됨.",
-    "original_title": "Siemens launches AI engineering agent to automate PLC coding and industrial workflows",
-    "link": "https://roboticsandautomationnews.com/2026/04/20/siemens-launches-ai-engineering-agent-to-automate-plc-coding-and-industrial-workflows/100758/",
-    "date": "2026-04-20 21:10",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "사이먼스, AI 공학 에이전트 출시로 PLC 코딩 및 산업 프로세스 자동화 | 사이먼스는 자율적인 작업 수행을 위한 다단계 추론과 자체 교정 기능을 갖춘 새로운 유형의 산업용 AI 제품인 'Eigen Engineering Agent'를 출시함.  새롭게 출시된 Eigen Engineering Agent는 일반적인 AI 도구와 달리 단순한 제안 생성을 넘어 독립적으로 작업 수행이 가능하도록 설계됨."
-  },
-  {
-    "title": "IL 파트너스, 중국 AgiBot와 인형 로봇 대량 생산 협력",
-    "original_title": "IL Partners With China's AgiBot to Mass-Produce Humanoid Robots - Seoul Economic Daily",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOei02OFZiZTdrY0U5Q1c0TExSWkdUclRFbXc3VENleDFvWkVjRjRpT1J0THJMWnRHUWF1Ym5FYVM2VW9sZ1hCbUhxWHJMMmU2UDdESVJlT2pPU3RwNFNlTHVKamNISC1aaVAtS01KQ2ZNX0cyYjBqVVByZi1wX1NpcTB4R1NMT0hnV3ZxTlVKd1hxWXhiTWlBTnlLY294UQ?oc=5",
-    "date": "2026-04-20 21:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "IL 파트너스가 중국의 로보틱스 기업 AgiBot와 협력하여 인형 로봇을 대량으로 생산할 계획이다.  이번 협력을 통해 두 기업은 최신 기술과 경험을 바탕으로 더욱 효율적이고 저렴한 방법으로 인형 로봇을 생산하고 전 세계 시장에 공급할 예정이다."
-  },
-  {
-    "title": "IL 파트너스, 중국 AgiBot과 인형 로봇 대량 생산 협력",
-    "original_title": "IL Partners With China's AgiBot to Mass-Produce Humanoid Robots - Seoul Economic Daily",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTlZkbGlsTUdCUjlOODJPNXh6ak1FcXRyM1puTDYxR1RNcEVfTF9XOHlyYzEzQnVIcnRUVlZxVVVGbXRTYVJaN0p0U3dNdkdFQWVRQzBjcU1tM0ZRel9iQ3ptUU5NVUlWSFNXZlBMa3NtdVNNVnBKUWlKaXQwR3VVSnpsY0JSR19RUW1EeTd4MkIzeTBydG5WT0J3?oc=5",
-    "date": "2026-04-20 21:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "IL 파트너스는 중국 AgiBot와 인형 로봇의 대량 생산을 위한 협력 관계를 구축했다. 이 협력으로 두 기업은 함께 최신 기술과 경험을 활용하여 효율적인 생산 시스템을 구축하고 글로벌 시장에서 인형 로봇 공급 강화를 목표한다."
-  },
-  {
-    "title": "해네웰, 생산성 솔루션 사업 14억 달러에 브래디 매각",
-    "original_title": "Honeywell to sell productivity solutions unit to Brady for $1.4 billion as portfolio overhaul continues",
-    "link": "https://roboticsandautomationnews.com/2026/04/20/honeywell-to-sell-productivity-solutions-unit-to-brady-for-1-4-billion-as-portfolio-overhaul-continues/100754/",
-    "date": "2026-04-20 20:34",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "해네웰은 14억 달러의 현금 거래로 생산성 솔루션 및 서비스 사업을 브래디 기업에 매각하기로 합의했습니다. 이 거래는 2026년 하반기에 완료될 예정이며, 법적 승인과 일반적인 종결 조건에 따라 진행됩니다."
-  },
-  {
-    "title": "크립토 미래 거래 완벽 가이드 2026",
-    "original_title": "The Ultimate Guide to Crypto Futures Trading in 2026",
-    "link": "https://roboticsandautomationnews.com/2026/04/20/the-ultimate-guide-to-crypto-futures-trading-in-2026/100752/",
-    "date": "2026-04-20 19:10",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "크립토 미래 거래는 기본 자산을 소유하지 않고도 코인 가격 변동에 투기하여 위험 관리 및 수익 창출이 가능한 도구임."
-  },
-  {
-    "title": "월드 오브 와크래프트 미드나잇: 드림리프트 레이드 로어 설명",
-    "original_title": "World of Warcraft Midnight: Dreamrift Raid Lore Explained",
-    "link": "https://roboticsandautomationnews.com/2026/04/20/world-of-warcraft-midnight-dreamrift-raid-lore-explained/100747/",
-    "date": "2026-04-20 18:53",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "월드 오브 와크래프트: 미드나잇 시즌 1에는 총 세개의 인스턴스에 걸쳐 아홉 명의 레이드 보스가 등장하며, 드림리프트는 크기보다는 방대한 로어로 눈길을 끈다."
-  },
-  {
-    "title": "온라인에서 저렴한 실험 장비 구매하기",
-    "original_title": "Where to Buy Affordable Laboratory Equipment Online",
-    "link": "https://roboticsandautomationnews.com/2026/04/20/where-to-buy-affordable-laboratory-equipment-online/100744/",
-    "date": "2026-04-20 18:30",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "최신 정보는 전문 제공업체를 통해 대량의 실험 장비를 쉽고 빠르게 구입할 수 있지만, 적절한 검색처지를 알아야 합니다. 이 가이드에서는 온라인으로 실험 장비를 구매하는 방법을 안내하여 고품질 및 권한이 있는 도구를 확보하도록 합니다."
   }
 ]
