@@ -1,5 +1,14 @@
 [
   {
+    "title": "Humanoid robot kicks child during public performance in Xinjiang - The Online Citizen",
+    "original_title": "Humanoid robot kicks child during public performance in Xinjiang - The Online Citizen",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPV2cxMnYwd0xqZDhYLVUzQkZTWDdUb2V4em9rYzRJWUs1Qk5WaXV6WWZFelZQMmtHbndNcC1QR3FfUGNOaERwNXZqSFZpQ3hERnN3eVM2QnhnZkJHV20xY0QwQ3NlSmJ3T2ZzZW9Qb1BIaXF4b1N5V3psLUNmalNwQTVJQkhRNjR6Uk5tY08wMk9Wd3Q0MHJDMHh4LUJIQ01xblZFSjVrSQ?oc=5",
+    "date": "2026-06-05 04:13",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Humanoid robot kicks child during public performance in Xinjiang  The Online Citizen"
+  },
+  {
     "title": "OLIVE: Online Low-Rank Incremental Learning for Efficient Adaptive Exoskeletons",
     "original_title": "OLIVE: Online Low-Rank Incremental Learning for Efficient Adaptive Exoskeletons",
     "link": "https://arxiv.org/abs/2606.05234",
@@ -70,6 +79,87 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.05848v1 Announce Type: new \nAbstract: In this paper, we present a robotic ultrasound acquisition system that integrates stereo vision, touch-based feedback, and expert-informed strategies to perform autonomous and adaptive abdominal scans. The system records freehand motion and force data from expert radiologists, creating a framework to capture transducer motion, applied forces, and anatomical scanning strategies. This expert data is replayed to replicate characteristic scans with the robot, forming a foundation for further autonomous capabilities. Using stereo vision, the system generates three-dimensional topography maps of the patient's abdomen, which are refined through stiffness measurements at key points to delineate the rib cage boundary. These combined techniques enable the robot to execute two distinct scanning paths: an upward-angled sweep beneath the rib cage to visualize structures near the upper abdomen and a perpendicular sweep across soft tissue regions. A compliant, torque-controlled seven degree-of-freedom robotic manipulator is controlled to maintain consistent probe contact through closed-loop force control over the varied anatomical surfaces. Physical experiments demonstrate that the system achieves high-quality imaging comparable to expert scans while dynamically adapting to patient-specific topographies. Furthermore, the robotic system surpasses expert capabilities by enabling three-dimensional volume acquisition, which enhances diagnostic potential and provides volumetric data for advanced analyses. This work highlights the integration of expert knowledge into autonomous robotic systems and underscores the potential of combining perception-based autonomy with physical reasoning for enhanced diagnostic performance."
+  },
+  {
+    "title": "LadderMan: Learning Humanoid Perceptive Ladder Climbing",
+    "original_title": "LadderMan: Learning Humanoid Perceptive Ladder Climbing",
+    "link": "https://arxiv.org/abs/2606.05873",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.05873v1 Announce Type: new \nAbstract: Humanoid robots hold great promise for operating in human-centered environments, yet ladder climbing remains one of the most challenging tasks due to sparse footholds and handholds, complex whole-body coordination, and sensitivity to perception and control errors. We present \\textbf{LadderMan}, a unified system that enables humanoid robots to robustly climb diverse ladders and perform manipulation under such constrained conditions. Our climbing policy is built on a scalable two-stage learning pipeline, where we use hybrid motion tracking to learn multiple climbing experts from a single reference motion, and distill these experts into a unified depth-based visuomotor climbing policy via hybrid imitation and reinforcement learning. To enable real-world deployment, we leverage vision foundation models to bridge the sim-to-real gap in depth perception. Building on the learned climbing policy, we further train a separate manipulation policy using a dual-agent formulation, allowing stable on-ladder manipulation via teleoperation. Experiments demonstrate that LadderMan achieves robust ladder climbing across a wide range of geometries, successfully transfers to real-world hardware in a zero-shot manner, and supports various manipulation tasks under challenging ladder constraints. Video results are available at https://ladderman-robot.github.io ."
+  },
+  {
+    "title": "TAGA: Terrain-aware Active Gaze Learning for Generalizable Agile Humanoid Locomotion",
+    "original_title": "TAGA: Terrain-aware Active Gaze Learning for Generalizable Agile Humanoid Locomotion",
+    "link": "https://arxiv.org/abs/2606.05880",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.05880v1 Announce Type: new \nAbstract: Agile humanoid locomotion across diverse challenging terrain demands both wide perceptual coverage and precise local geometry understanding. Motivated by the way humans selectively look at relevant terrain during locomotion, we introduce TAGA, a Terrain-aware Active Gaze learning framework for Attention-based humanoid control. By fusing vision, proprioception, and motion commands, our framework guides the model to learn anticipatory cues and actively attend to specific areas of the height scan, selectively using these informative regions for the downstream network. This adaptively increases the information density of observations under tight onboard computational constraints, thus enabling fine-grained perceptive locomotion over larger-scale terrains. We find that such gaze behaviors can naturally emerge through reinforcement learning alone, without requiring additional supervision or explicit guidance, significantly improve training efficiency. As a result, the trained policy demonstrates robust and generalizable locomotion in simulation and on hardware, including reliable terrain-aware foothold selection, elevated-platform traversal, competitive sparse-foothold traversal, and the largest reported real-world gap traversal distance of 1.2m among perceptive humanoid locomotion systems, while maintaining stability under severe perceptual disturbances and environmental interference."
+  },
+  {
+    "title": "Towards a Data Flywheel for Embodied Intelligence in Logistics",
+    "original_title": "Towards a Data Flywheel for Embodied Intelligence in Logistics",
+    "link": "https://arxiv.org/abs/2606.05960",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.05960v1 Announce Type: new \nAbstract: Embodied intelligence is moving from laboratory demonstrations toward industrial deployment, with the logistics industry serving as a key application scenario. Learning-based policies offer a promising path beyond traditional perception-planning-control pipelines, but their scalability depends on how embodied data can be collected, organized, and reused. This research studies a data-centric framework for industrial embodied intelligence by constructing a logistics data flywheel. Our framework converts daily operations into reusable data assets, uses World Models to generate reliable supervision for long-tail parcel manipulation, and feeds deployment feedback back into policy improvement. As an initial result, \\textit{WM-DAgger} introduces a World-Model-based data aggregation framework that synthesizes out-of-distribution recovery data for robust imitation learning. Building on this result, ongoing work explores how large-scale in-the-wild multimodal data, including labeled human demonstrations, unlabeled operational videos, and system-level robot logs, can be aligned for policy learning and transformed into feedback for continual system improvement."
+  },
+  {
+    "title": "RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning",
+    "original_title": "RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning",
+    "link": "https://arxiv.org/abs/2606.06033",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06033v1 Announce Type: new \nAbstract: Learning dexterous manipulation requires demonstrations that preserve fine hand-object interactions while remaining executable at deployment. Existing pipelines either lose deployable dexterity through retargeting or embodiment conversion, or rely on robot-specific teleoperation that is costly to scale and often lacks intuitive, contact-aware control for dexterous data collection. We present RealDexUMI, a wearable universal manipulation interface built around a shared dexterous end-effector module that integrates a lightweight dexterous hand, in-hand vision, and fingertip tactile sensing. A palm-side isomorphic teleoperation glove maps human finger inputs to robot-hand joint commands, enabling real-time, retargeting-free, intuitive, and precise hand control. The shared hand and sensing modules yield zero-gap end-effector data, with matched in-hand observations, tactile signals, contacts, and hand actions between collection and deployment. Across eight real-robot tasks spanning fine-grained, contact-rich, long-horizon, and bimanual manipulation, policies trained on RealDexUMI data achieve an average success rate of 88.75%, generalize to unseen initial poses, and transfer across three embodiments. Website: https://research.beingbeyond.com/realdexumi"
+  },
+  {
+    "title": "Sample-efficient Low-level Motion Planning for Robotic Manipulation Tasks via Zero-shot Transfer Learning",
+    "original_title": "Sample-efficient Low-level Motion Planning for Robotic Manipulation Tasks via Zero-shot Transfer Learning",
+    "link": "https://arxiv.org/abs/2606.06041",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06041v1 Announce Type: new \nAbstract: As robotic systems become more sophisticated, the growing complexity of their motion planning models and the longer training times pose substantial challenges. Evolutionary algorithms such as the Sample-efficient Cross-Entropy Method (iCEM) have recently demonstrated promising potential for low-level real-time planning by leveraging efficient knowledge reuse strategies to improve performance. Although effective in many control tasks, iCEM's performance can be constrained in more complex scenarios, particularly those requiring stacking, sliding, and shelf placement. In this work, we propose a novel iCEM+TL framework that explicitly leverages Transfer Learning (TL), where key iCEM parameters are transferred from simpler upstream tasks to guide more complex downstream tasks. Additionally, we applied Reward Redesign (RR) through task decomposition for stacking objects and shelf placement to optimize task-specific performance. Results from the simulation show that our framework achieves success rate improvements of up to 23%. The framework is further validated on a real Franka Emika robot in a stacking task, demonstrating its practical feasibility for real-world deployment."
+  },
+  {
+    "title": "L-SDPPO: Policy Optimization of Spiking Diffusion Policy for Intra-vehicular Robotic Manipulation",
+    "original_title": "L-SDPPO: Policy Optimization of Spiking Diffusion Policy for Intra-vehicular Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.06049",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06049v1 Announce Type: new \nAbstract: Intra-vehicular robots in spacecraft help reduce astronaut workload and improve mission efficiency. Recent research focuses on using deep learning methods to achieve the acute control required for operations in these complex environments. However, objects exhibit unpredictable, unconstrained drift without gravitational damping. These factors demand robustness against complex multimodal action distributions. Diffusion policies (DP) can model these complex actions, but their iterative sampling process consumes too much energy for the limited power budgets of spacecraft. We therefore propose a low-energy intra-vehicular robotic manipulation framework, L-SDPPO, in which the Spiking Diffusion Policy (SDP) is optimized with a reinforcement learning (RL) algorithm. Furthermore, to address the insufficient perception of dynamic spatiotemporal features in microgravity, we propose the statedependent latency injection (SDLI) mechanism, which mimics biological neural delays to dynamically regulate the timing of input information. Evaluation on five representative intra-vehicular daily tasks (e.g., hatch opening and precision container capping) shows that our method consistently achieves higher success rates and lower energy consumption, compared to the state-of-the-art robotic manipulation methods. These results demonstrate our method is a viable intra-vehicular robotic manipulation method."
+  },
+  {
+    "title": "A Conversational Framework for Human-Robot Collaborative Manipulation with Distributed Generative AI models",
+    "original_title": "A Conversational Framework for Human-Robot Collaborative Manipulation with Distributed Generative AI models",
+    "link": "https://arxiv.org/abs/2606.06061",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06061v1 Announce Type: new \nAbstract: This paper presents a distributed conversational framework for human-robot collaborative manipulation that integrates local language and vision-language models (VLMs) with a Robot Operating System 2 (ROS 2)-based execution stack. Language understanding, visual grounding, orchestration, and motion execution run as separate ROS 2 nodes, enabling flexible deployment across distributed hardware while maintaining a responsive control loop. From free-form user commands, the system generates structured action requests for pick, place, and handover. It uses a VLM to return image-space targets, which are converted into metric robot-frame goals using depth and calibration. A web dashboard exposes intermediate intent and grounding overlays (pixel, depth, and robot-frame) and requires explicit operator confirmation before any motion is executed. Experiments on a Franka FR3 platform evaluate end-to-end task reliability and latency under increasing working table scene ambiguity and compare alternative LLM/VLM configurations in the same pipeline. Code and full documentation are available at [github.com/cogrob-tuni/franka-llm](https://github.com/cogrob-tuni/franka-llm)."
+  },
+  {
+    "title": "MotionDisco: Motion Discovery for Extreme Humanoid Loco-Manipulation",
+    "original_title": "MotionDisco: Motion Discovery for Extreme Humanoid Loco-Manipulation",
+    "link": "https://arxiv.org/abs/2606.06139",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06139v1 Announce Type: new \nAbstract: We present MotionDisco, a framework that discovers contact-rich, long-horizon humanoid loco-manipulation motions from scratch, without relying on teleoperation or motion retargeting from human demonstrations. This is challenging because the space of possible contact interactions grows combinatorially with the task horizon and the number of objects in the scene. MotionDisco enables rapid discovery of novel motions by coupling a large language model (LLM) guided evolutionary search over sequences of interactions with an efficient sequential kinodynamic trajectory optimizer and pruning strategy, enabling the rapid discovery of novel skills. Through extensive ablation studies, we show that our LLM-guided search discovers successful whole-body trajectories across several challenging long-horizon tasks. Finally, by training reinforcement learning tracking policies on the discovered trajectories, we transfer the motions to a real humanoid robot. This is the first work to discover and deploy long-horizon humanoid loco-manipulation skills entirely through automated evolutionary search. Supplementary videos of the experiments are available at: https://youtu.be/DHiVz34QYlw."
+  },
+  {
+    "title": "Nvidia deepens humanoid robotics role with Unitree and Cosmos 3, secures AI chips - digitimes",
+    "original_title": "Nvidia deepens humanoid robotics role with Unitree and Cosmos 3, secures AI chips - digitimes",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRm81ZkNleGdHam1YOHNjT05ScGtyN0ZaT2MyaE93T1dTZkRJSTYyVG1Ba2loUmNwb0xidHI2S3d6M1Z1Q3drYXMzdU5ZVHBwVEdmVGxyVWZJeFdCVEZNeG5TV0hnYmRtWEY2V3R3MmlQcF84ckNSeklvbW9QaW5xdGRRWlFfYmNsbnNxclVKTjA?oc=5",
+    "date": "2026-06-05 03:51",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Nvidia deepens humanoid robotics role with Unitree and Cosmos 3, secures AI chips  digitimes"
   },
   {
     "title": "Unitree dancing humanoid robots wow judges on ‘America's Got Talent’ - VnExpress International",
@@ -790,6 +880,15 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "MassRobotics awarded prizes to university teams and showcased healthcare innovators, physical AI developers, and startups.\nThe post Boston University team wins MassRobotics Form & Function Challenge at Robotics Summit appeared first on The Robot Report."
+  },
+  {
+    "title": "Nvidia picks Unitree for humanoid robot platform as Chinese startup eyes IPO - MSN",
+    "original_title": "Nvidia picks Unitree for humanoid robot platform as Chinese startup eyes IPO - MSN",
+    "link": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQQ3F6RFZ5MjZLYVppNC05OGk1cFhTUy1vZW1RSFN5WG40eE1pa093SHdzVEg0M3lIeEg0eFZBY2N0aWJMczNVSlVtVWNnWkw0Z1VHNE95ekFuUS05SGdNWndPamY1NEhOTE1UWm9fMHBiQ1MtaU00MXBNU1RIamRFSE1JWTBmMmdNYjA3RE9WbTFCdm1iYzFxcXZkS2hFaWhfMl9YV0VaaU5qakpybENHYUZoYS1rM2tVYzFFUmFIMnFjdXp3aG9SRTdLSzhMTk1nSUNwS19IR1hSTkpyQnAxazI0NzRWTDFnLU42MXJiU2s4YzBEWjRxSUlub3BDRmh2RjM5Y1RBb05lUlg2Vm5IZEpmX1BWcDFkUFNEY1B6ZXRhTU4tOTdXeXhlOUdFQzd4WFlCT291R2xYMHcyWGR3eU9Nb0RwR0R2RUF4VVctdkF5TF9NSEFhb0djbEZoMTI0OWE3ZXRyeW5iOV92VlE?oc=5",
+    "date": "2026-06-03 11:07",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Nvidia picks Unitree for humanoid robot platform as Chinese startup eyes IPO  MSN"
   },
   {
     "title": "NVIDIA Works With TSMC and Unitree on AI for Chips and Robots - Thomasnet",
@@ -17899,104 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "로봇 사육 4족 보행 SNOOPIE가 운동 강도에 맞춘 인터벌 트레이닝 실행하여 사용자의 속도 일관성과 운동 지속율을 향상시켰습니다.  사용자 설문 결과, 스노피는 Apple Watch와 비교하여 사용 편의성, 즐거움, 유용성에서 높은 평가를 받았습니다."
-  },
-  {
-    "title": "구조화된 공간시간 VLA 모델을 통한 로봇 조작",
-    "original_title": "ST-$\\pi$: Structured SpatioTemporal VLA for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2604.17880",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 논문에서는 스트럭쳐드 스페이셜-템포럴 VLA (ST-$\\pi$) 모델을 제안하여 로봇 조작 분야의 정교한 시간 및 공간적 매니퓰레이션 문제를 해결한다. ST-$\\pi$ 모델은 4차원 관측값과 작업 지시를 latent space로 변환하고 이를 LLM에 입력하여 sub-task, spatial grounding, temporal grounding을 포함하는 chunk-level action prompt의 순서를 생성하며, 이러한 스트럭쳐드 프레임워크는 VLM이 글로벌 공간 시간 행동 계획을 수립하고, action expert가 지역적 공간 시간 제어를 정교하게 조정하도록 한다."
-  },
-  {
-    "title": "유령 추적: 시뮬레이션 기반 촉각 자율 항법 시스템",
-    "original_title": "Chasing Ghosts: A Simulation-to-Real Olfactory Navigation Stack with Optional Vision Augmentation",
-    "link": "https://arxiv.org/abs/2602.19577",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 연구에서는 최소한의 센서 장비를 사용하여 무인공기(UAV)가 향기를 따라 이동하는 방법을 개발했습니다. 본 시스템은 소프트웨어와 하드웨어 구성 요소를 포함하며, UAV가 향원을 직접 찾아갈 수 있도록 학습된 네비게이션 정책을 활용합니다.  시험 결과, 이 시스템은 실제 상황에서도 효과적인 향 원 식별 능력을 보여주었습니다."
-  },
-  {
-    "title": "StableIDM: 조작체 손실 시 역 역학 모델 안정화 기술 공개",
-    "original_title": "StableIDM: Stabilizing Inverse Dynamics Model against Manipulator Truncation via Spatio-Temporal Refinement",
-    "link": "https://arxiv.org/abs/2604.17887",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "StableIDM은 부분 관측 환경에서 역 역학 모델(IDM)의 성능을 향상시키기 위해 시공간적 특징을 정제하는 프레임워크로, AgiBot 벤치마크에서 심각한 절단 상태에서의 액션 정확도를 12.1% 향상시키고 실 로봇 재생에서 평균 작업 성공률을 9.7% 증가시켰음"
-  },
-  {
-    "title": "VR 로봇 게임 활용, 실체적 인공지능 작업 데이터 수집 용이화",
-    "original_title": "Leveraging VR Robot Games to Facilitate Data Collection for Embodied Intelligence Tasks",
-    "link": "https://arxiv.org/abs/2604.16903",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "Unity 기반 게임형 데이터 수집 프레임워크를 통해 생성된 환경에서 VR을 이용한 휴머노이드 로봇 제어와 자동 작업 평가 및 경로 로그 기록 기능을 제공."
-  },
-  {
-    "title": "블랙박스 오라클 정보 학습 (BOIL)",
-    "original_title": "BOIL: Learning Environment Personalized Information",
-    "link": "https://arxiv.org/abs/2604.17137",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "BOIL은 복잡한 환경에서 다중 에이전트 시스템에 유용한 정보를 추출하는 범위 확장형 방법임. Pagerank 알고리즘과 일반적인 정보 최대화 기법을 활용하여 보다 오랜 시간 동안 효과적인 전략을 수립할 수 있도록 하여,  보행, 순찰 등 복잡한 환경에서의 문제 해결에 도움을 주는 것을 실험적으로 입증."
-  },
-  {
-    "title": "시간 가속화된 시범을 점진적인 이터레이티브 참조 학습 제어를 통한 정밀도 개선",
-    "original_title": "Refinement of Accelerated Demonstrations via Incremental Iterative Reference Learning Control for Fast Contact-Rich Imitation Learning",
-    "link": "https://arxiv.org/abs/2604.16850",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Contact-rich manipulation에서 빠른 동작 실행이 중요하며, 이를 위한 면밀한 시범 제공은 어렵습니다. 연구자들은 Iterative Reference Learning Control (IRLC)을 사용하여 시간 가속화된 시범을 자율적으로 정비하는 방법을 제시했습니다. Incremental Iterative Reference Learning Control (I2RLC)을 통해 점진적으로 속도를 높이면서 참조 경로를 업데이트하여 고품질의 기동 경로 생성에 성공했습니다."
-  },
-  {
-    "title": "시나리오 제어: 비전 언어 제어 가능한 벡터화 잠재적 시나리오 생성",
-    "original_title": "ScenarioControl: Vision-Language Controllable Vectorized Latent Scenario Generation",
-    "link": "https://arxiv.org/abs/2604.17147",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "'시나리오 제어'는 학습된 주행 시나리오 생성을 위한 최초의 비전-언어 제어 메커니즘으로, 텍스트 프롬프트 또는 입력 이미지를 기반으로 다양하고 현실적인 3D 시나리오 확장(지도, 반응하는 인물의 3D 박스, 보행자, 주행 인프라 및 이고 카메라 관측)를 생성한다.  이 방법은 도로 구조와 동적 에이전트를 공동으로 나타내는 벡터화된 잠재적 공간에서 장면을 생성하며, 다중모달 제어와 희소화된 벡터화 장면 요소를 연결하기 위해 크로스-글로벌 제어 메커니즘을 제안하여 도로 레이아웃과 교통 상태에 대한 미세한 제어를 가능하게 한다."
-  },
-  {
-    "title": "근육을 따온 자기 작동 장치",
-    "original_title": "Muscle-inspired magnetic actuators that push, pull, crawl, and grasp",
-    "link": "https://arxiv.org/abs/2604.18090",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "3D 프린팅 기술을 이용하여 제작된 근육에 영감을 받은 자기 작동 장치가  굽힘, 접고, 이동, 그리고 Grasping 작업을 수행할 수 있도록 설계됨. 이러한 장치는 약한 자기장에서도 작동하며 다양한 움직임을 가능하게 하여 로봇 기술 발전에 기여할 것으로 예상됨."
-  },
-  {
-    "title": "중국 인형 로봇 생산량 2026년 94% 증가 예정; 유니트리, 아기봇 시장 점유율 약 80% 차지 예정",
-    "original_title": "China’s humanoid robot output to surge 94% in 2026; Unitree and AgiBot to capture nearly 80% market share - dqindia.com",
-    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYVc1bFhmOHplNGJKQnhtZ3QyeHZETFZwV0ZTdFFPT2pLUFBuUWEyZkkxOXlndFlJUVJOWGs4WUZ3NzFVeDJLOWRSUnhQZkFqMlZYaEY2aXk4ZGpkTmlYUHBSWlhCVFRsc0dWLUNObWxvSTlHdXVvdnMtMXNoUVVVQmlIX2RtWGU4X1FHRnNxWERDSURaTEQtRnlrZ2cxQi1GMmFlSFhWaXRpREpNRG12bU90ekdkYzhVd1NTeUlCc3F1bGY4cExfSjhmelZVRjNJNjJCR2Jn0gHWAUFVX3lxTFBhVzVsWGY4emU0YkpCeG1ndDJ4dkRMVnBXRlN0UU9PaktQUG5RYTJmSTE5eWd0WUlRUk5YazhZRnc3MVV4Mks5ZFJSeFBmQWoyVlhoRjZpeThkamROaVhQcFJaWEJUVGxzR1YtQ05tbG9JOUd1dW92cy0xc2hRVVVCaUhfZG1YZThfUUdGc3FYRENJRFpMRC1GeWtnZzFCLUYyYWVIWFZpdGlESk1EbXZtT3R6R2RjOFV3U1N5SUJzcXVsZjhwTF9KOGZ6VlVGM0k2MkJHYmc?oc=5",
-    "date": "2026-04-21 04:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 인형 로봇 생산량이 2026년까지 94% 증가할 것으로 전망되며, 유니트리와 아기봇이 전체 시장의 약 80%를 차지할 것으로 예상."
-  },
-  {
-    "title": "NCS, AGIBOT, HZTC와의 파트너십으로 APAC 전역에 인형 로봇 배포 - 빠른 모드",
-    "original_title": "NCS Partners with AGIBOT and HZTC to Deploy Humanoid Robotics Across APAC - The Fast Mode",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSVlFZUdIaHhPZkZDbjJuRnNUa0VQTTVtZ3BfSFF4YzlaVVd3bmQzTU95UDRCLVdscDhoaEpkYk02U3J2ZlZCTVB0SzNQQmlBdE5BX3NKLVRPR054aWtNZ3Z1OXpTZUVDT21CclBmLUhGQXgySzFHeUJXejBucEFCay1vNjZpTllrMkZsZVlhNXRncTVsRWFWeUh4REtCN29nUGxhMi1xcmtMenhtZF96ZVJuMURIQlBuTHc2MXV6VUM5UVpXZlJR?oc=5",
-    "date": "2026-04-21 01:07",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "NCS는 AGIBOT와 HZTC와 협력하여 APAC 지역에 인형 로봇을 대규모로 배치하고자 합니다. 이 제휴를 통해, 다양한 분야에서 인공 지능 및 로보틱스 기술을 기반으로 한 서비스가 제공될 예정입니다."
-  },
-  {
-    "title": "스킬 AI, Zebra Technologies 로보틱스 사업 인수",
-    "original_title": "Skild AI acquires Zebra Technologies’ robotics automation business",
-    "link": "https://roboticsandautomationnews.com/2026/04/20/skild-ai-acquires-zebra-technologies-robotics-automation-business/100769/",
-    "date": "2026-04-20 22:27",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "스킬 AI가 Zebra Technologies의 로보틱스 자동화 사업을 인수했다.  핵심은 \"Skild Brain\"으로  robots의 형태에 대한 사전 지식 없이 작동하는 omnibodied AI 소프트웨어로, 어떤 로봇도 제어할 수 있다고 알려져있다."
   }
 ]
