@@ -1,5 +1,14 @@
 [
   {
+    "title": "Méca-Précis utilizes robotic measurement cell to eliminate inspection bottlenecks",
+    "original_title": "Méca-Précis utilizes robotic measurement cell to eliminate inspection bottlenecks",
+    "link": "https://roboticsandautomationnews.com/2026/06/05/meca-precis-utilizes-robotic-measurement-cell-to-eliminate-inspection-bottlenecks/102297/",
+    "date": "2026-06-05 07:26",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "French precision engineering company Méca-Précis has automated part inspection using a robotic measurement cell that combines a coordinate measuring machine (CMM) from Mitutoyo with automation technology from a company called Engineering Data. The system was introduced after inspection processes became a bottleneck as production volumes increased, particularly for aerospace and space-sector customers that require 100 […]"
+  },
+  {
     "title": "Kirisense wins funding to develop robotic fingertips that can sense touch and slip",
     "original_title": "Kirisense wins funding to develop robotic fingertips that can sense touch and slip",
     "link": "https://roboticsandautomationnews.com/2026/06/05/kirisense-wins-funding-to-develop-robotic-fingertips-that-can-sense-touch-and-slip/102292/",
@@ -313,6 +322,33 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2602.10106v2 Announce Type: replace \nAbstract: Human demonstrations offer rich environmental diversity and scale naturally, making them an appealing alternative to robot teleoperation. While this paradigm has advanced robot-arm manipulation, its potential for the more challenging, data-hungry problem of humanoid loco-manipulation remains largely unexplored. We present EgoHumanoid, the first framework to co-train a vision-language-action policy using abundant egocentric human demonstrations together with a limited amount of robot data, enabling humanoids to perform loco-manipulation across diverse real-world environments. To bridge the embodiment gap between humans and robots, including discrepancies in physical morphology and viewpoint, we introduce a systematic alignment pipeline spanning from hardware design to data processing. A portable system for scalable human data collection is developed, and we establish practical collection protocols to improve transferability. At the core of our human-to-humanoid alignment pipeline lies two key components. The view alignment reduces visual domain discrepancies caused by camera height and perspective variation. The action alignment maps human motions into a unified, kinematically feasible action space for humanoid control. Extensive real-world experiments demonstrate that incorporating robot-free egocentric data significantly outperforms robot-only baselines by 51\\%, particularly in unseen environments. Our analysis further reveals which behaviors transfer effectively and the potential for scaling human data."
+  },
+  {
+    "title": "Beyond Imitation: Reinforcement Learning-Based Sim-Real Co-Training for VLA Models",
+    "original_title": "Beyond Imitation: Reinforcement Learning-Based Sim-Real Co-Training for VLA Models",
+    "link": "https://arxiv.org/abs/2602.12628",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.12628v4 Announce Type: replace \nAbstract: Simulation offers a scalable and low-cost way to enrich vision-language-action (VLA) training, reducing reliance on expensive real-robot demonstrations. However, most sim-real co-training methods rely on supervised fine-tuning (SFT), which treats simulation as a static source of demonstrations and does not exploit large-scale closed-loop interaction. Consequently, real-world gains and generalization are often limited. In this paper, we propose an RL-based sim-real Co-training (RL-Co) framework that leverages interactive simulation while preserving real-world capabilities. Our method follows a generic two-stage design: we first warm-start the policy with SFT on a mixture of real and simulated demonstrations, then fine-tune it with reinforcement learning in simulation while adding an auxiliary supervised loss on real-world data to anchor the policy and mitigate catastrophic forgetting. We evaluate our framework on four real-world tabletop manipulation tasks using two representative VLA architectures, OpenVLA and $\\pi_{0.5}$, and observe consistent improvements over real-only fine-tuning and SFT-based co-training, including +24% real-world success on OpenVLA and +20% on $\\pi_{0.5}$. Beyond higher success rates, RL co-training yields stronger generalization to unseen task variations and substantially improved real-world data efficiency, providing a practical and scalable pathway for leveraging simulation to enhance real-robot deployment."
+  },
+  {
+    "title": "HERO: Learning Humanoid End-Effector Control for Visual Whole-Body Open-Vocabulary Object Grasping",
+    "original_title": "HERO: Learning Humanoid End-Effector Control for Visual Whole-Body Open-Vocabulary Object Grasping",
+    "link": "https://arxiv.org/abs/2602.16705",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.16705v3 Announce Type: replace \nAbstract: Visual loco-manipulation of arbitrary in-the-wild objects requires accurate end-effector (EE) control and a generalizable understanding of the scene from visual inputs (eg, RGB-D images). Existing imitation and sim2real methods jointly learn both these aspects via monolithic end-to-end learning and are thus hard to scale. In this work, we bring to bear the best tools for each of these problems -- large vision models for generalizable scene understanding and simulated training for accurate EE control -- leading to an overall modular loco-manipulation system that exhibits strong generalization. Our core technical innovation is HERO, an accurate residual-aware EE tracking policy made possible by combining classical robotics with machine learning. It uses a) inverse kinematics to convert residual end-effector targets into reference trajectories, b) a learned neural forward model for accurate forward kinematics, and c) goal adjustment and replanning. Together, these innovations reduce the end-effector tracking error to 2.44cm, outperforming the strongest prior method by 5.5x. Our overall system operates in diverse real-world environments, from offices to coffee shops, where the robot reliably grasps various everyday objects (eg, mugs, apples, toys) on surfaces ranging from 43cm to 92cm in height. Systematic modular and end-to-end tests demonstrate the effectiveness of our proposed design. We believe our advances open up new ways of training humanoids to interact with daily objects."
+  },
+  {
+    "title": "Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics",
+    "original_title": "Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics",
+    "link": "https://arxiv.org/abs/2604.21017",
+    "date": "2026-06-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.21017v3 Announce Type: replace \nAbstract: Autonomous medical robots hold promise to improve patient outcomes, reduce provider workload, democratize access to care, and enable superhuman precision. However, autonomous medical robotics has been limited by a fundamental data problem: existing medical robotic datasets are small, single-embodiment, and rarely shared openly, restricting the development of foundation models that the field needs to advance. We introduce Open-H-Embodiment, the largest open dataset of medical robotic video with synchronized kinematics to date, spanning more than 50 institutions and multiple robotic platforms including the CMR Versius, Intuitive Surgical's da Vinci, da Vinci Research Kit (dVRK), Rob Surgical BiTrack, Virtual Incision's MIRA, Moon Surgical Maestro, and a variety of custom systems, spanning surgical manipulation, robotic ultrasound, and endoscopy procedures. We demonstrate the research enabled by this dataset through two foundation models. GR00T-H is the first open foundation vision-language-action model for medical robotics, which is the only evaluated model to achieve full end-to-end task completion on a structured suturing benchmark (25% of trials vs. 0% for all others) and achieves 64% average success across a 29-step ex vivo suturing sequence. We also train Cosmos-H-Surgical-Simulator, the first action-conditioned world model to enable multi-embodiment surgical simulation from a single checkpoint, spanning nine robotic platforms and supporting in silico policy evaluation and synthetic data generation for the medical domain. These results suggest that open, large-scale medical robot data collection can serve as critical infrastructure for the research community, enabling advances in robot learning, world modeling, and beyond."
   },
   {
     "title": "Nvidia deepens humanoid robotics role with Unitree and Cosmos 3, secures AI chips - digitimes",
@@ -1771,6 +1807,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Nvidia (NVDA) Picks Chinese Startup Over Tesla for Humanoid Robot Partnership  Blockonomi"
+  },
+  {
+    "title": "China Robotics Firms Line Up IPOs to Pitch Next Phase of AI - Yahoo Finance",
+    "original_title": "China Robotics Firms Line Up IPOs to Pitch Next Phase of AI - Yahoo Finance",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNzBadnlvZmZyaW1zS2ZvLW9ZNjEwcFZ2UndubmF0ZlQycUc4SW03eVNMUmRWRFlHcEY4ZEVodnNMYjJvX3JTTUhQYW5WNzhMMk9SMl8xUnIzdWx2VUdJWk9CQ2xockpGT2xzTFAwOWhNRTl4UEZvTGU1RldSR0JDUFNhRThWeEJFYUxkSkM0b3lmSDF2WUhvMWFsQQ?oc=5",
+    "date": "2026-06-02 10:06",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China Robotics Firms Line Up IPOs to Pitch Next Phase of AI  Yahoo Finance"
   },
   {
     "title": "Software is ‘the biggest bottleneck to robotics innovation’, says BlackBerry QNX report",
@@ -17953,50 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "이 논문은 혼잡한 인도 보행 환경에서 로봇의 네비게이션을 위한 가시 경계를 기반으로 하는 군집 표현 방식을 제안하며, 실험을 통해 높은 안전성과 사회성을 유지하면서 빠른 연산 속도를 달성함을 보였다."
-  },
-  {
-    "title": "시간 분할 다중 채널 작동 시스템 적용: 가벼운 설계 및 고장 내성",
-    "original_title": "Time-Division Multiplexing Actuation in Tendon-Driven Arms: Lightweight Design and Fault Tolerance",
-    "link": "https://arxiv.org/abs/2604.16887",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "항공우주 분야 로봇 매니퓰레이터에 적용 가능한 TDMA(Time-Division Multiplexing Actuation)는 작동 부품 수를 줄이고 높은 토크 출력과 내구성을 유지하는 기술로, MuxArm 로봇의 경우 2.17kg 무게에서 10kg까지의 하중 지지 및 부분 서보 고장 시에도 정밀한 위치 제어 기능을 제공함."
-  },
-  {
-    "title": "MM-Hand: 21도F 다모달 모듈러 민첩 로봇 손",
-    "original_title": "MM-Hand: A 21-DOF Multi-modal Modular Dexterous Robotic Hand with Remote Actuation",
-    "link": "https://arxiv.org/abs/2604.17245",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "MM-Hand는 원격 텐던 구동 방식을 사용하는 21도F의 다모달 모듈러 민첩 로봇 손으로, 가볍고 감각이 풍부하며 유지 관리가 용이한 플랫폼을 제공합니다.  장거리 텐던 경로에도 불구하고 손끝력은 약 25N까지 달성하며, 제어 시스템의 성능 또한 실험적으로 검증되었습니다.  모든 하드웨어 디자인 및 소프트웨어 프레임워크는 오픈 소스로 제공됩니다."
-  },
-  {
-    "title": "전신 인형 로봇 Locomotion 학습, 동작 생성 및 추적 활용",
-    "original_title": "Learning Whole-Body Humanoid Locomotion via Motion Generation and Motion Tracking",
-    "link": "https://arxiv.org/abs/2604.17335",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "본 연구는 참조 동작에서 학습된 기술과 지형에 대한 적응력을 결합하는 전신 인형 로봇 운동 프레임워크를 제안. 확산 모델을 사용하여 지형을 감지한 참조 동작을 실시간으로 예측하고, 이 데이터를 기반으로 RL을 이용한 전신 참조 추적기를 학습하며, 불완전하게 생성된 참조에 대한 강인성을 향상시키기 위해 폐쇄 루프 설정에서 고정된 동작 생성기를 추가로 미세 조율."
-  },
-  {
-    "title": "DART: 이중 팔 비물 grasping 제어 모델 학습 강화",
-    "original_title": "DART: Learning-Enhanced Model Predictive Control for Dual-Arm Non-Prehensile Manipulation",
-    "link": "https://arxiv.org/abs/2604.17833",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "DART는 물체를 가지지 않고 트레이 위에 이동시키는 데 필요한 두 개의 팔 프레임워크로, 비선형 모델 예측 제어(MPC)와 최적화 기반 임피던스 제어기를 통합하여 정확한 물체 운동을 달성합니다. 이 프레임워크는 트레이-물체 동역학을 모델링하는 세 가지 전략을 시스템적으로 평가하며, 결과적으로 트레이 위에 다양한 물체를 비물 grasping으로 이동시키는 데 최적화된 시뮬레이션 및 실험 결과를 제시합니다."
-  },
-  {
-    "title": "병렬 대칭 기반 손목으로 극세사 활동 제어 시스템 개발",
-    "original_title": "Periodic Steady-State Control of a Handkerchief-Spinning Task Using a Parallel Anti-Parallelogram Tendon-driven Wrist",
-    "link": "https://arxiv.org/abs/2604.17863",
-    "date": "2026-04-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "저널 논문에서는 병렬 대칭 구조를 이용한 새로운 손목 설계와 이를 통해 고속 회전 기능을 가진 극세사 (대표적으로 수건) 자원의 원활한 조작과 높은 정밀도 유지를 보여주는 연구 결과를 발표했다."
   }
 ]
