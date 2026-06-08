@@ -72,6 +72,78 @@
     "summary": "arXiv:2606.06870v1 Announce Type: new \nAbstract: Assistive robots operating under shared autonomy must balance user control with autonomous assistance. Because robot actions depend on internal intent inference that is not directly observable, mismatches between inferred and intended goals can undermine coordination and trust. We investigate how interface-level transparency, including feedback modality (visual vs. auditory) and information richness (sparse vs. rich), shapes interaction in a vision-based shared autonomy system. In a user study with N=25 participants across two assistive manipulation tasks, we evaluate how these designs influence coordination and trust. Providing feedback significantly improves intent alignment and reduces corrective intervention, indicating that making the inferred goal legible accelerates convergence in shared control. Participants preferred visual over auditory feedback, while preferences for sparse versus rich information depended on task complexity. We also found that revealing the full belief distribution did not consistently improve alignment or trust. Together, these findings indicate that effective transparency enhances coordination primarily through goal legibility, while trust depends on task-appropriate information exposure rather than maximal disclosure. Based on these results, we outline guidelines for designing transparent shared autonomy systems."
   },
   {
+    "title": "A Cross-view Fusion Framework for Robust 6-DoF Grasp Pose Estimation",
+    "original_title": "A Cross-view Fusion Framework for Robust 6-DoF Grasp Pose Estimation",
+    "link": "https://arxiv.org/abs/2606.06878",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06878v1 Announce Type: new \nAbstract: In this paper, we propose a cross-view fusion framework that enhances the robustness of 6-DoF grasp pose estimation in corner views. Our framework alleviates occlusion by incorporating an auxiliary view and avoids the time-consuming, task-agnostic multi-view reconstruction through a post-fusion strategy. To enhance cross-view fusion, we propose a self-supervised contrastive learning strategy that leverages cross-view associations to regularize point cloud features. In brief, a cross-view point pair is considered a match if the two points correspond to the same 3D location, and a non-match if they represent distinct grasp directions. The learning strategy significantly enhances the spatial consistency and direction distinctiveness of point features, thereby facilitating cross-view fusion and improving estimation robustness. Furthermore, we propose a cross-view-aligned cylinder integration module to fuse grasp-relevant geometry into a comprehensive representation. Specifically, the module first aligns the cross-view points and features according to their similarity to enhance the robustness against noise. Subsequently, these points are registered into the cylindrical coordinate frame, emphasizing the rotation-symmetric geometry which is important for grasping. Finally, local self-attention and seed cross-attention layers are alternately employed, respectively enabling interactions within single views and across views, which supports fine-grained representation of grasp-relevant geometry. Our framework achieves strong performance on the GraspNet-1Billion benchmark and in real-world applications. Code is available at https://github.com/KJZhuAutomatic/Cross-view-Grasp."
+  },
+  {
+    "title": "ActionMap: Robot Policy Learning via Voxel Action Heatmap",
+    "original_title": "ActionMap: Robot Policy Learning via Voxel Action Heatmap",
+    "link": "https://arxiv.org/abs/2606.06904",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06904v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models have advanced rapidly across backbones, training recipes, and data scale, yet the action decoder, which converts the backbone's hidden state into a continuous control signal, has barely changed and remains a single-point predictor across the majority of current VLAs. Whether implemented via autoregressive token bins, L1 regression, or flow-matching denoising, the resulting decoder treats the action space as unstructured, leaving the geometric proximity of neighboring actions unexploited during training. To advance this, we introduce ActionMap, a voxel heatmap action head that drops into an existing VLA in place of its native action decoder. For each new action, the head predicts a voxel heatmap over the action space, where each voxel directly stores the probability of the corresponding action. Across LIBERO simulation and real-world Franka manipulation, our heatmap head surpasses two architecturally distinct backbones at matched training steps (e.g., +8.2% over OpenVLA-OFT's L1 regression head on the LIBERO four-suite average), converges at comparable or faster rates on both backbones, and remains markedly more data-efficient at low training data. The cross-backbone consistency indicates that action representation is a real lever for VLA performance, distinct from further backbone or recipe scaling. Project Page: https://github.com/showlab/ActionMap."
+  },
+  {
+    "title": "T-GMP: Terrain-conditioned Generative Motion Priors for Versatile and Natural Humanoid Locomotion",
+    "original_title": "T-GMP: Terrain-conditioned Generative Motion Priors for Versatile and Natural Humanoid Locomotion",
+    "link": "https://arxiv.org/abs/2606.06944",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.06944v1 Announce Type: new \nAbstract: Achieving both anthropomorphic naturalness and robust terrain traversal remains a fundamental challenge in humanoid locomotion. Existing Reinforcement Learning (RL) approaches typically rely on fixed motion priors, limiting their adaptability to varying environments. We propose Terrain-conditioned Generative Motion Priors (T-GMP), a module that captures a terrain-conditioned latent motion manifold from a few expert state-terrain demonstrations using a Conditional Variational Autoencoder (CVAE). The learned priors enable smooth style transitions, facilitating a unified policy that adapts to terrain variations. We integrate T-GMP into an adversarial learning pipeline with our proposed Foothold Penalty, where a discriminator dynamically modulates naturalness constraints conditioned on local terrain features, guiding the generation of versatile and human-like motions. Experimental results demonstrate that our method outperforms existing baselines in traversal success rate and motion smoothness, while preserving biomimetically natural and physically coordinated motions."
+  },
+  {
+    "title": "LIMMT: Less is More for Motion Tracking",
+    "original_title": "LIMMT: Less is More for Motion Tracking",
+    "link": "https://arxiv.org/abs/2606.06953",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.06953v1 Announce Type: new \nAbstract: We argue that high-quality motion data can steer tracking policies toward better optimization trajectories early in training. In this work, we introduce LIMMT (Less Is More for Motion Tracking). To our knowledge, this is the first data-centric study for physics-based humanoid motion tracking. We go beyond simply removing low-quality and erroneous clips, but define motion data quality through three dimensions: physics feasibility, diversity, and complexity. We show that even training with under 3% of AMASS yields better tracking performance than training with the full dataset. We further conduct data cleaning on the estimated web-sourced mocap data. Extensive experiments and analyses validate the effectiveness of our framework."
+  },
+  {
+    "title": "Task Editing for Generalizable 3D Visuomotor Policy Learning",
+    "original_title": "Task Editing for Generalizable 3D Visuomotor Policy Learning",
+    "link": "https://arxiv.org/abs/2606.07012",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.07012v1 Announce Type: new \nAbstract: 3D visuomotor policies offer a promising direction for complex robotic manipulation, as depth maps and point clouds provide rich geometric information for spatial reasoning. However, their success often depends on large-scale real-world demonstrations, which are costly and time-consuming to collect. To this end, existing methods commonly use demonstration generation strategies to improve data efficiency by applying object-centric transformations to human-collected demonstrations, such as varying object poses or scales. While effective for local variation, these transformations largely preserve the original scene structure and skill sequence, limiting their ability to synthesize diverse scene-skill-object combinations for complex tasks. In this paper, we propose Task-Edit, a novel demonstration generation framework that generates diverse trajectories from a task-centric editing perspective. The key insight of Task-Edit is to decompose a task into scene, skill and object components, and flexibly recombine them. In this way, Task-Edit enables scalable demonstration generation and significantly improves generalization for long-horizon manipulation tasks. We evaluate Task-Edit through extensive real-world experiments and demonstrate three advantages: (1) Effectiveness: Task-Edit significantly improves 3D visuomotor policies across various real-world tasks and robot embodiments. (2) Generalizability: Task-Edit improves model generalization across different scenario setups. (3) Applicability: Task-Edit enables models to handle scenarios that are difficult to collect in the real world, including disturbance resistance, obstacle avoidance and unseen cluttered scenes."
+  },
+  {
+    "title": "A Multi-Operator Mixed-Reality Interface for Multi-Robot Control and Coordination: Co-Located and Private Workspace Collaboration",
+    "original_title": "A Multi-Operator Mixed-Reality Interface for Multi-Robot Control and Coordination: Co-Located and Private Workspace Collaboration",
+    "link": "https://arxiv.org/abs/2606.07013",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.07013v1 Announce Type: new \nAbstract: Multi-operator control of robot teams requires not only access to the same mission information, but also mechanisms for maintaining shared awareness and preventing conflicting interventions. Building on our previous HORUS interface (Holistic Operational Reality for Unified Systems) we present a mixed-reality interface that extends single-operator multi-robot supervision to collaborative multi-operator use. The system supports two complementary modes: a co-located shared workspace, in which operators observe and manipulate the same mini-map in the same physical location, and a private-workspace mode, in which operators work on the same mission through independently placed local workspaces. The architecture combines registration-driven scene construction, lightweight shared-session synchronization, and per-robot control leases to support collaborative monitoring, tasking, and teleoperation while preventing conflicting commands. We evaluated the approach in a human-subject study with 36 participants (18 pairs) controlling three Nova Carter mobile robots in two search environments. The performance of the objective task was comparable across the two modes, indicating that both modes supported effective mission execution. However, the co-located shared workspace significantly improved perceived collaboration, shared understanding, and handoff clarity, and was the preferred collaborative mode. These results indicate that physically co-locating the MR workspace improves how operators coordinate even when the underlying robot-control tools remain unchanged."
+  },
+  {
+    "title": "Predictive Style Matching: Natural and Robust Humanoid Locomotion",
+    "original_title": "Predictive Style Matching: Natural and Robust Humanoid Locomotion",
+    "link": "https://arxiv.org/abs/2606.07083",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.07083v1 Announce Type: new \nAbstract: Reinforcement learning has become the prevailing approach to humanoid locomotion control: policies transfer reliably from simulation to hardware and recover gracefully from disturbances.\n  Motion quality, however, still lags behind: task-only rewards often converge to stiff, asymmetric gaits, while motion imitation methods improve appearance but become more sensitive to external disturbances because reference signals can oppose the transient poses needed to regain balance.\n  We propose Predictive Style Matching, in which an offline predictor maps the robot's lower-body state history and velocity commands to interpretable upper-body joint and gait targets that shape the rewards during training.\n  Because the targets are state-conditioned rather than time-indexed and the predictor is used only at training time, the deployed controller inherits the proprioceptive interface and inference cost of a task-only RL baseline.\n  On the Unitree G1, in both simulation and hardware, PSM reduces upper-body style error by roughly an order of magnitude over task-only RL while preserving its fall-recovery rate, whereas the motion-imitation baseline attains the lowest style error but fails to recover from disturbances about five times as often."
+  },
+  {
+    "title": "Dreaming when Necessary: Advancing World Action Models with Adaptive Multi-Modal Reasoning",
+    "original_title": "Dreaming when Necessary: Advancing World Action Models with Adaptive Multi-Modal Reasoning",
+    "link": "https://arxiv.org/abs/2606.07089",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.07089v1 Announce Type: new \nAbstract: World Action Models (WAMs) offer a promising approach to embodied intelligence, yet existing methods rely heavily on video prediction as action priors and lack adaptive multimodal reasoning, limiting their effectiveness on long-horizon, complex tasks. We observe that WAMs require different multimodal reasoning modes under different execution contexts: textual reasoning is essential during task transitions to guide high-level action prediction, while visual reasoning is critical during fine-grained manipulation for precise control. Motivated by this observation, we propose \\textbf{AdaWAM}, a world action model with adaptive multimodal reasoning abilities. AdaWAM integrates a lightweight dynamic router that autonomously triggers textual or visual reasoning as needed during task execution. Experiments on both simulated and real-world embodied tasks show that AdaWAM substantially improves inference efficiency while outperforming state-of-the-art embodied policies. Codes and demos are available at: https://adawam.github.io/."
+  },
+  {
     "title": "Humanoid robot kicks child during public demonstration in China - VnExpress International",
     "original_title": "Humanoid robot kicks child during public demonstration in China - VnExpress International",
     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWlBZQ0hMYzZzQmhBVFNDY1JfRE8wZFdfV0NQai0xcWxpMFhGc0VtaDFiMDlWOUMzVGJaUmprdGktWGdoNkFCaWVFMWZyR0g3d3J1dXF1T2lMUDN4WWVsY09ld2p1UVBMUW5taUFwbkNjRWIwV2dDYURudTl2WEhTMEhzQ2JqVUVhLUJGS2RJajZHZVlpOW5jeUpVaEg3Z1JqS0VoTzBEU3E3N081aWRnVUd2Yzljc01BVnRETw?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "최근 연구에서, TD-MPC2라는 세계 모델 기반 학습 알고리즘이 인공지능을 활용한 자동 혈관 내 치료 과정에서 안전성과 효율성을 향상시키는 데 성공했다. 이 알고리즘은 다양한 환자의 동맥 구조를 대비해 최적 경로를 계획하고 실험 결과, 기존 학습 알고리즘보다 높은 성공률을 보였으며, 혈관 손상 위험도 낮추었다."
-  },
-  {
-    "title": "X-IONet: 횡단 플랫폼 이너셜 오도메트리 네트워크 for 보행자 및 사지 로봇",
-    "original_title": "X-IONet: Cross-Platform Inertial Odometry Network for Pedestrian and Legged Robot",
-    "link": "https://arxiv.org/abs/2511.08277",
-    "date": "2026-04-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "X-IONet은 단일 IMU를 사용하여 동작 플랫폼을 분류하고 맞춤형 전문 네트워크로 IMU 시퀀스를 전달하는 크로스 플랫폼 이너셜 오도메트리 프레임워크임.  이 알고리즘은 장거리 시간적 의존성과 축 간 상관 관계를 공동으로 모델링하여 정확한 동작 표현을 출력하며, 확장된 칼만 필터를 통해 강력한 상태 추정을 수행합니다. 이는 보행자 및 사지 로봇 데이터에서 최고의 성능을 제공하며 ATE와 RTE를 현저하게 개선합니다."
-  },
-  {
-    "title": "PokeVLA: 휴대폰 크기의 비전-언어-행동 모델을 포괄적인 세계 지식 가이드로 강화",
-    "original_title": "PokeVLA: Empowering Pocket-Sized Vision-Language-Action Model with Comprehensive World Knowledge Guidance",
-    "link": "https://arxiv.org/abs/2604.20834",
-    "date": "2026-04-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "<bos>We propose PokeVLA, a lightweight yet powerful foundation model for embodied manipulation that effectively infuses vision-language understanding into action learning. Our framework introduces a two-stage training paradigm: first, pre-training a compact vision-language model (PokeVLM) on a curated multimodal dataset and second, injecting manipulation-relevant representations into the action space through multi-view goal-aware semantics learning, geometry alignment, and a novel action expert."
-  },
-  {
-    "title": "인공형 로봇, 중국 기술력의 새로운 상징으로 부상함",
-    "original_title": "Humanoid robots become a new symbol of China's technological prowess - People's Daily Online",
-    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBFR0lzRVNQaTRINEZnNzZYQUhaVEwxY0lhcFc3TGF1U0txQUwzUXZOa21aQWRuX1FmM3I1dFNXR3hfRlhkb2xCVkVocDNremhqOGJINy1lck9mdVZ0WExaUElpVQ?oc=5",
-    "date": "2026-04-23 02:05",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 인공형 로봇 개발은 최근 그 국가의 기술력을 돋보이게 하는 새로운 표시로 자리잡았고, 이는 국제적인 관심과 주목을 받고 있다."
-  },
-  {
-    "title": "인형 로봇, 중국의 기술력 상징으로 부상",
-    "original_title": "Humanoid robots become a new symbol of China's technological prowess - People's Daily Online",
-    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1qSWhZbUItSjZDSlZzYmdhTVhMVFAwYllQQVpsaVdtd3AzdkNNVU8xUUVlTEVkcEZ6dktsNzA5d0N1LV9mUzdHLWRJemR2VE5lQ0hEeTl0bHpXaVpZdkFVazJpejE?oc=5",
-    "date": "2026-04-23 02:05",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "최근 중국에서 개발된 인형 로봇은 기술력을 나타내는 새로운 상징으로 주목받고 있으며, 국제적인 경쟁 속에서 중국이 선두를 달리는 첨단 산업 분야로 자리매김하고 있음."
-  },
-  {
-    "title": "테슬라, EVs에서 로봇으로: 텍사스 공장 신설로 1000만대 Optimus 목표|| Tesl가 2026년 2분기에 오 Optimus 생산 시작하며, Fremont 시설의 기존 자동차 생산 라인을 대체하고, 로보틱스 중심 미래를 향해 확장하는 계획.",
-    "original_title": "From EVs to robotics: Tesla targets 10M Optimus units with new Texas plant",
-    "link": "https://www.therobotreport.com/from-evs-to-robotics-tesla-targets-10m-optimus-units-with-new-texas-plant/",
-    "date": "2026-04-22 21:49",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "테슬라, EVs에서 로봇으로: 텍사스 공장 신설로 1000만대 Optimus 목표|| Tesl가 2026년 2분기에 오 Optimus 생산 시작하며, Fremont 시설의 기존 자동차 생산 라인을 대체하고, 로보틱스 중심 미래를 향해 확장하는 계획."
-  },
-  {
-    "title": "중국 인형 로봇 산업이 초기 시장을 선점하는 이유",
-    "original_title": "Why China’s humanoid robot industry is winning the early market - MSN",
-    "link": "https://news.google.com/rss/articles/CBMikANBVV95cUxNcHJjRjdLazVIbjJjc2VBMVltM19yejhldy01ck5uWjVPUE1kU1RIQkZ3N3BwdlhHVVBTR0hqNXhZYWNUN1l6WjRHXzV0ZkxEb1NQMEgtYUtWaTctZi1USVJhZGJPTW9BU2RJeDQ0TTdNOW9KWFJJcFNnMzNiRDMxZlJidkxXbHoxZlhlTFBlN0ozM01sU3lGOHdIY2xMUjU4MTVlQllaTlR5emphVmR0aUdrbDJZQmVkV2U5UlYxQ2duV1AxbG9Qcm9KaDFYdnZEbV9nR21tdTZaalJKU04tMktXZkFZYVVESFpLMWswR1RHZzhOUGdDd0VYR2h2MGozMXZERVZGT0JlRm8xNTZNWVJDaTAyY25nZ25Ga0NEV19tZFFlZmFQVTZaYkhEbm1YS0JSMFNWY2hpUHQzUFM4UGV0UnF1WGhmdEw5M1VzTzVzM2tlRTNmSExmakdIVDJ2R05FTWJ5RkxEa1ctdzhya1J4MUhuc1FtbkJySXlsWTZKR0o3UkE3QWNkT2w4bjQ2?oc=5",
-    "date": "2026-04-22 20:09",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국은 인형 로봇 생산 및 출시 능력이 우수하며, 저렴한 비용으로 높은 성능을 제공함에 따라 초기 시장에서 주목받고 있다."
-  },
-  {
-    "title": "크루즈를 통해 터미널을 통과함: A&K Robotics, 자율 주행 시스템 확대 위한 800만 달러 투자",
-    "original_title": "Cruz’ing through the terminal: A&K Robotics lands $8M for autonomous mobility",
-    "link": "https://www.therobotreport.com/cruzing-through-the-terminal-ak-robotics-lands-8m-for-autonomous-mobility/",
-    "date": "2026-04-22 19:03",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "캐나다 산업혁신투자기금(Industrial Innovation Venture Fund) 및 Vantage Futures가 주도하는 800만 달러의 투자로 A&K Robotics는 생산량 증대와 연구개발 역량 강화 계획임."
-  },
-  {
-    "title": "글리드웨이즈, 자율 주행 기술 확장 위한 1억 7천만 달러 투자 유치",
-    "original_title": "Glydways brings in $170M to scale its AV technology",
-    "link": "https://www.therobotreport.com/glydways-brings-in-170m-to-scale-its-av-technology/",
-    "date": "2026-04-22 18:59",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "글리드웨이즈는 사람을 이동하는 데 현재 기술의 10배 수준의 처리량을 제공할 수 있는 자율 주행 시스템 네트워크를 구축하려고 합니다."
   }
 ]
