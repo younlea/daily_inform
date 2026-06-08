@@ -1,5 +1,86 @@
 [
   {
+    "title": "PhyRoGen: Synthetic Generation of Physical Robot Manipulation Puzzles Using Procedural Content Generation",
+    "original_title": "PhyRoGen: Synthetic Generation of Physical Robot Manipulation Puzzles Using Procedural Content Generation",
+    "link": "https://arxiv.org/abs/2606.06569",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06569v1 Announce Type: new \nAbstract: Robot manipulation of physical puzzles is important for automatic assembly and disassembly tasks. However, to enable robots to solve physical puzzles, manipulation skills need to be learned, which requires large training datasets, the generation of which is often time consuming and tedious. To overcome this problem, we propose the Physical Robot Manipulation Puzzle Generation framework (PhyRoGen), which leverages procedural content generation (PCG) for automated generation of synthetic datasets of manipulation puzzles. PhyRoGen is a general-purpose puzzle generator, which can generate physical puzzles with interlocking object dependencies, where one articulated object must be manipulated before another can be moved. Based upon PhyRoGen, we define six concrete generators which we use to generate 24 physical puzzles. By using a benchmarking framework, we are able to solve all puzzles in 1 to 300 seconds using sampling-based planning algorithms. Finally, we demonstrate that every generated puzzle is manipulatable by using a KUKA LBR iiwa robot in a physical simulation. This shows that our framework is able to procedurally generate unique, solvable robot manipulation puzzles, which is a crucial ingredient to benchmark manipulation algorithms and to develop robust foundation models."
+  },
+  {
+    "title": "What Matters When Cotraining Robot Manipulation Policies on Everyday Human Videos?",
+    "original_title": "What Matters When Cotraining Robot Manipulation Policies on Everyday Human Videos?",
+    "link": "https://arxiv.org/abs/2606.06627",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06627v1 Announce Type: new \nAbstract: Human video datasets used for cotraining robot manipulation policies largely consist of curated demonstrations where motions are orchestrated to resemble robot behavior and 3D hand poses are captured with specialized hardware. A more plentiful source of data is everyday Internet video, but it is an open question what factors enable transfer from such videos to robots. We investigate this using a new dataset of 532 human videos with 28 hours of high-quality triangulated hand labels and natural motions. We find that hand pose quality affects transfer, but even with accurate hands, the inherent motion gap hinders transfer unless the vision and policy networks specialize to each embodiment. Our cotraining recipe yields consistent improvements, with an absolute success rate gain of $29.7\\%$ in the low-robot-data regime across six manipulation tasks."
+  },
+  {
+    "title": "Optimal Control Approach for Non-prehensile Ball Juggling Using a 7-DoF Manipulator",
+    "original_title": "Optimal Control Approach for Non-prehensile Ball Juggling Using a 7-DoF Manipulator",
+    "link": "https://arxiv.org/abs/2606.06704",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06704v1 Announce Type: new \nAbstract: Non-prehensile object manipulation skills are important for real-world robot interactions, enabling highly dynamic tasks such as balancing a glass on a tray or the controlled sliding of items on a table. Among such tasks, those characterised by high-speed manipulation requirements and general sensitivity of the resulting hybrid dynamics are particularly hard to accomplish. Within these, juggling can be seen as a highly challenging maneuver to be solved. The key to robotic juggling is achieving dynamic stabilisation of an underactuated object. Since the object does not possess the ability of self-correction, its stability is entirely dependent on the forces applied to it. This creates a system that is sensitive to control inputs, where timing is critical to continuously counteract deviations and maintain the desired behavior. We develop a systematic method to control a 7-degree-of-freedom manipulator performing non-prehensile ball juggling with a tool. Our primary contribution is a model-based framework for generating juggling trajectories and stabilizing a periodic juggling motion for this hybrid system. The framework incorporates a two-stage optimal control approach to compute the underlying feasible motion patterns required for stable juggling. Offline-computed trajectories are then organised to enable real-time error correction without solving optimal control problems online. We demonstrate the effectiveness of the resulting controller by first evaluating its performance in a simulation environment and performing an experiment using a Franka Emika Panda robot."
+  },
+  {
+    "title": "AxisGuide: Grounding Robot Action Coordinate System in RGB Observations for Robust Visuomotor Manipulation",
+    "original_title": "AxisGuide: Grounding Robot Action Coordinate System in RGB Observations for Robust Visuomotor Manipulation",
+    "link": "https://arxiv.org/abs/2606.06761",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06761v1 Announce Type: new \nAbstract: Visuomotor manipulation policies trained via large-scale behavior cloning have achieved strong semantic scene understanding, yet often fail to reliably execute correct low-level actions under distribution shifts. For example, even in a simple pickup task with identical scene layouts, camera viewpoints, and illumination, performance can degrade substantially when the object is placed at unseen locations. We argue that this gap arises from insufficient action understanding, namely the inability to interpret the robot's base-frame action coordinate system in image space. To address this issue, we introduce AxisGuide, a lightweight guidance method that bridges semantic scene understanding and action-coordinate interpretation. Using camera parameters and end-effector poses, AxisGuide renders the robot base-frame axes in each camera view and augments RGB observations with a small set of cue channels that explicitly visualize the meaning of the +x, +y, and +z motions in image space. Extensive evaluations in both the LIBERO simulation and real-world environments demonstrate that AxisGuide yields substantial performance gains and improved generalization, highlighting the effectiveness of explicit action-coordinate cues for learning reliable and transferable generalist visuomotor policies."
+  },
+  {
+    "title": "Learning All-Terrain Locomotion for a Planetary Rover with Actively Articulated Suspension",
+    "original_title": "Learning All-Terrain Locomotion for a Planetary Rover with Actively Articulated Suspension",
+    "link": "https://arxiv.org/abs/2606.06790",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.06790v1 Announce Type: new \nAbstract: This paper presents ERNEST, a four-wheeled planetary rover concept equipped with a two-degree-of-freedom Active Gimbal Suspension that combines yaw and roll actuation to enable wheel reconfiguration, steering, and active load redistribution. A single neural network controller, trained to track a desired path across challenging terrain, fully unlocks the capabilities of this actuated suspension system for autonomous obstacle negotiation. A reinforcement learning framework is developed using the high-fidelity DARTS simulation engine, which combines rigid-contact dynamics and Bekker-Wong terramechanics, enabling the emergence of locomotion strategies adapted to loose-soil conditions. To obtain a single unified controller across heterogeneous terrains, a policy consolidation strategy merges the experience of terrain-specialized agents into one neural network, eliminating the need for explicit terrain classification and controller switching. The resulting controller operates on a combination of proprioceptive and exteroceptive feedback, including sparse stereo-derived terrain elevation, chassis attitude, joint states, and force-torque measurements. Zero-shot transfer to the physical rover is achieved through domain randomization, sensor noise injection, and model-to-real system identification. Experimental results demonstrate autonomous traversal of rock fields, a bump trap, a wheel-high step, sand ripples, and sandy slopes. On a 20{\\deg} sandy slope, the learned controller reduces the cost of transport by 37% on dry sand despite the additional actuation, and achieves superior performance on wet sand where the passive suspension becomes completely immobilized."
+  },
+  {
+    "title": "Three-dimensional hydro-cluttered locomotion by an undulatory robot",
+    "original_title": "Three-dimensional hydro-cluttered locomotion by an undulatory robot",
+    "link": "https://arxiv.org/abs/2606.06829",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.06829v1 Announce Type: new \nAbstract: Aquatic robots have expanded human access to underwater environments, yet many underwater spaces contain obstacles that can disrupt open-water locomotion. In \"hydro-cluttered\" environments, water is interspersed with rigid and flexible clutter, making body-obstacle contact unavoidable. Operating in these spaces requires robots that can regulate and exploit contact, but this regime remains difficult to model or simulate. Building on recent advances in mechanical intelligence in terradynamically capable limbless robotics, we develop principles for 3D aquatic locomotion using AquaMILR, an elongate limbless robot that combines bilateral cable-driven actuation, programmable body compliance, distributed depth regulation, corrosion-resistant enclosures, and onboard power and electronics for untethered field operation. Systematic robophysical experiments reveal that programmable body compliance regulates body deformation and converts body-environment interactions into fast, robust, forward progression across increasing hydro-clutter constraint strength. Depth regulation provides three-dimensional access, allowing the robot to bypass clutter, recover from obstruction, and continue through otherwise inaccessible routes. In potential jamming scenarios, emergent inertia-induced rolling acts as a spontaneous recovery mechanism, freeing the robot from clutter that would otherwise lead to failure and allowing locomotion to continue without additional control. Tests of the robot in an aquatic mangrove field demonstrate that these principles transfer to practical operation, enabling navigation and onboard visual inspection of inaccessible root zones. These results establish principles for hydro-cluttered locomotion and a design paradigm in which aquatic robots exploit environmental complexity as a locomotor resource."
+  },
+  {
+    "title": "STRIPS-WM: Learning Grounded Propositional STRIPS-style World Models from Images",
+    "original_title": "STRIPS-WM: Learning Grounded Propositional STRIPS-style World Models from Images",
+    "link": "https://arxiv.org/abs/2606.06832",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06832v1 Announce Type: new \nAbstract: Robots performing long-horizon visual manipulation observe high-dimensional images, but successful plans depend on action-relevant facts: what can be done now and what changes afterward. A useful planning representation should discard irrelevant visual details while preserving action applicability and effects. Classical task planners exploit this structure through symbolic operators with preconditions and effects, but obtaining such representations from raw visual experience remains challenging. We study a visual task-planning setting in which a robot receives only image transitions: the current image, executed high-level action, and the resulting image. At test time, given a start image and a goal image, the robot must produce a sequence of high-level actions that reaches the goal. To address this problem, we introduce STRIPS-WM, a framework for learning image-grounded STRIPS-style world models directly from visual transitions. STRIPS-WM first induces a finite abstract transition graph from images, then learns latent binary predicates and one grounded propositional operator per action label. The learned operators form a symbolic action model with sparse preconditions and add/delete effects. Finally, the learned predicates are distilled into a visual encoder, enabling classical planning directly from novel start and goal images. Experiments on visual rearrangement tasks show that STRIPS-WM improves image-to-plan success over the tested visual rollout, latent graph-search and latent-symbolic baselines."
+  },
+  {
+    "title": "What Is My Robot Thinking? Design Considerations for Transparent and Trustworthy Shared Autonomy",
+    "original_title": "What Is My Robot Thinking? Design Considerations for Transparent and Trustworthy Shared Autonomy",
+    "link": "https://arxiv.org/abs/2606.06870",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.06870v1 Announce Type: new \nAbstract: Assistive robots operating under shared autonomy must balance user control with autonomous assistance. Because robot actions depend on internal intent inference that is not directly observable, mismatches between inferred and intended goals can undermine coordination and trust. We investigate how interface-level transparency, including feedback modality (visual vs. auditory) and information richness (sparse vs. rich), shapes interaction in a vision-based shared autonomy system. In a user study with N=25 participants across two assistive manipulation tasks, we evaluate how these designs influence coordination and trust. Providing feedback significantly improves intent alignment and reduces corrective intervention, indicating that making the inferred goal legible accelerates convergence in shared control. Participants preferred visual over auditory feedback, while preferences for sparse versus rich information depended on task complexity. We also found that revealing the full belief distribution did not consistently improve alignment or trust. Together, these findings indicate that effective transparency enhances coordination primarily through goal legibility, while trust depends on task-appropriate information exposure rather than maximal disclosure. Based on these results, we outline guidelines for designing transparent shared autonomy systems."
+  },
+  {
+    "title": "Humanoid robot kicks child during public demonstration in China - VnExpress International",
+    "original_title": "Humanoid robot kicks child during public demonstration in China - VnExpress International",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWlBZQ0hMYzZzQmhBVFNDY1JfRE8wZFdfV0NQai0xcWxpMFhGc0VtaDFiMDlWOUMzVGJaUmprdGktWGdoNkFCaWVFMWZyR0g3d3J1dXF1T2lMUDN4WWVsY09ld2p1UVBMUW5taUFwbkNjRWIwV2dDYURudTl2WEhTMEhzQ2JqVUVhLUJGS2RJajZHZVlpOW5jeUpVaEg3Z1JqS0VoTzBEU3E3N081aWRnVUd2Yzljc01BVnRETw?oc=5",
+    "date": "2026-06-08 03:16",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Humanoid robot kicks child during public demonstration in China  VnExpress International"
+  },
+  {
     "title": "CSC Financial: Construction Machinery Exceeds Expectations in May, Unitree IPO Clears Review, Boosting Humanoid Robot Sector - Pandaily",
     "original_title": "CSC Financial: Construction Machinery Exceeds Expectations in May, Unitree IPO Clears Review, Boosting Humanoid Robot Sector - Pandaily",
     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQnYydzZNWklqMnBxbzRQejVwdnJFMEFFbFFYOGM0dTE2amY1amFlRjRYNkpjVjIyLVQzX3Z2US1PUjRSLThqTDRzbTRMYnVUam9xMXdSTk9JQWIzd3Y3cDBVY0dUcWR4U1VFYTZPRGRjRGdzaXktREJMQTViVjc3YWI5UQ?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "글리드웨이즈는 사람을 이동하는 데 현재 기술의 10배 수준의 처리량을 제공할 수 있는 자율 주행 시스템 네트워크를 구축하려고 합니다."
-  },
-  {
-    "title": "AI 기반 탁구 로봇, 인간 프로에게 도전하며 빠르고 적응력 있는 로봇 시대 예고",
-    "original_title": "AI-powered table tennis robot now challenges human pros and hints at faster, more adaptive machines",
-    "link": "https://techxplore.com/news/2026-04-ai-powered-table-tennis-robot.html",
-    "date": "2026-04-22 18:08",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "새로운 연구에 따르면 AI 기술 발전으로 로봇이 탁구를 치는 능력이 향상되어 인간 전문 선수들에게도 어려움을 주며, 때로는 승리를 거두고 있다."
-  },
-  {
-    "title": "로보틱스 정상 및 전시회에서 의료 로봇 분야 최신 발전 알아보기",
-    "original_title": "Learn about the latest advancements in healthcare robotics at the Robotics Summit & Expo",
-    "link": "https://www.therobotreport.com/learn-about-the-latest-advancements-in-healthcare-robotics-at-the-robotics-summit-expo/",
-    "date": "2026-04-22 16:54",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "하버드, ForceN, Rovex Technologies 등 다수의 의료 로봇 전문가들이 Robotics Summit & Expo에서 발표함."
-  },
-  {
-    "title": "\"인공지능 스택에 숨겨진 정체성 문제: 환상 속 인간들\"",
-    "original_title": "Hallucinated humans: The identity problem hiding in your AI stack",
-    "link": "https://roboticsandautomationnews.com/2026/04/22/hallucinated-humans-the-identity-problem-hiding-in-your-ai-stack/100875/",
-    "date": "2026-04-22 16:53",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "로봇이 사람을 보는 능력이 향상되면서 창고에서 작업자를 추적하거나, 사무실에서 방문자를 알아보거나, 배송증과 얼굴을 일치시키거나, 영업 담당자가 회의에 들어오기 전 고객 정보를 불러오는 등 다양한 작업을 수행할 수 있게 됨.  그러나 인공지능 시스템이 사람들을 식별하고 처리하는 방식에서 발생하는 정체성 문제는 중요한 과제로 부상함."
-  },
-  {
-    "title": "크루라인, 건설 작업 자동화로 710만 달러 확보",
-    "original_title": "Crewline secures $7.1M to automate construction’s most repetitive task",
-    "link": "https://www.therobotreport.com/crewline-secures-7-1m-to-automate-constructions-most-repetitive-task/",
-    "date": "2026-04-22 16:36",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "크루라인은 건설 현장 바퀴 사용을 자동화하는 리트핏 키트를 통해 노동력 부족 문제 해결에 나서며 710만 달러의 시드 라운드 자금을 확보했고, 2600만 달러 규모의 대기 명단을 형성했습니다."
-  },
-  {
-    "title": "AI 기반 중독 치료: 로봇 치료 보조 시스템의 부상",
-    "original_title": "AI in Addiction Treatment: The Rise of Robotic Therapy Assistants",
-    "link": "https://roboticsandautomationnews.com/2026/04/22/ai-in-addiction-treatment-the-rise-of-robotic-therapy-assistants/100871/",
-    "date": "2026-04-22 16:22",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "최신 AI 기술이 의료 분야를 변화시키고 있으며, 특히 중독 치료 분야에서도 큰 영향을 미치고 있음. AI 기반 로봇 보조 시스템은 중독 증상 완화 및 재활에 도움을 주는 새로운 접근 방식을 제시하고 있음."
-  },
-  {
-    "title": "대량 LED 칩 vs 소비 시장: 휴대용 기기의 가격 개선",
-    "original_title": "Bulk LED Chips vs Retail: Better Pricing for Handheld Devices",
-    "link": "https://roboticsandautomationnews.com/2026/04/22/bulk-led-chips-vs-retail-better-pricing-for-handheld-devices/100864/",
-    "date": "2026-04-22 15:43",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "LED 기술은 스마트폰 디스플레이부터 태블릿 백라이트, 웨어러블 지시등 등 다양한 휴대용 기기에 사용되어 현재는 필수적인 요소가 되었지만 소비자 수요 증가에 따라 제조업체와 판매업체는 고품질 부품을 공급받아 이익을 최대화하는 데 어려움을 겪고 있음."
-  },
-  {
-    "title": "소니 AI 테니스 로봇, 엘리트 인간 선수들을 제압",
-    "original_title": "Sony AI table tennis robot outplays elite human players",
-    "link": "https://robohub.org/sony-ai-table-tennis-robot-outplays-elite-human-players/",
-    "date": "2026-04-22 15:09",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "소니 AI가 'Ace'라는 이름의 첫 번째 로봇을 공개하며 이 로봇이 경쟁적인 물리적 스포츠에서 엘리트 인간 선수들을 처음으로 꺾었다고 발표함."
-  },
-  {
-    "title": "HII, Path Robotics, GrayMatter Robotics와 파트너십 맺어 선박 건조 가속화",
-    "original_title": "HII partners with Path Robotics, GrayMatter Robotics to accelerate shipbuilding",
-    "link": "https://www.therobotreport.com/hii-partners-path-robotics-graymatter-robotics-accelerate-shipbuilding/",
-    "date": "2026-04-22 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "GrayMatter Robotics와 Path Robotics가 미국 선박 건설 업체 HII와의 관계를 강화하여 선박 건조 프로세스를 빠르게 추진하고자 함."
-  },
-  {
-    "title": "중국 로봇 수입 금지안, 최신 미국의 기술 주권 확보 노력",
-    "original_title": "Proposed Chinese Robot Ban Is Latest U.S. Tech Sovereignty Move",
-    "link": "https://spectrum.ieee.org/chinese-robots-us-ban",
-    "date": "2026-04-22 12:00",
-    "source": "IEEE Spectrum",
-    "category": "humanoid",
-    "summary": "미국 상원의원들과 의원들이 제기한 '미국 보안 로보틱스 법'은 중국산 지상 로봇(인형 로봇, 개 형태, 크롤러 등) 사용을 제한하며, 이는 FCC가 최근 외국제 라우터에 대한 규제를 강화한 사건과 함께 미국이 중국의 민감 기술 분야에서의 영향력을 줄이려는 노력의 일환으로 보인다."
   }
 ]
