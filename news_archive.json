@@ -1,5 +1,14 @@
 [
   {
+    "title": "Generalist Announces $400 Million in Funding",
+    "original_title": "Generalist Announces $400 Million in Funding",
+    "link": "https://humanoidroboticstechnology.com/news/generalist-announces-400-million-in-funding/",
+    "date": "2026-06-08 07:36",
+    "source": "Humanoid Tech Blog",
+    "category": "humanoid",
+    "summary": "Generalist has announced $400 million in new funding, bringing our total raised to more than half a billion dollars. The capital being deployed today will accelerate our mission to build physical AGI and make it useful to everyone. New major investors include Radical Ventures (lead), 8VC, Union Square Ventures, Hanabi Capital, Norwest, and all their […]\nThe post Generalist Announces $400 Million in Funding appeared first on Humanoid Robotics Technology."
+  },
+  {
     "title": "Best Morganite Engagement Rings for Modern Couples",
     "original_title": "Best Morganite Engagement Rings for Modern Couples",
     "link": "https://roboticsandautomationnews.com/2026/06/08/best-morganite-engagement-rings-for-modern-couples/102343/",
@@ -304,6 +313,51 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2509.14380v3 Announce Type: replace \nAbstract: Multi-Agent Reinforcement Learning (MARL) provides a powerful framework for learning coordination in multi-agent systems. However, applying MARL to robotics remains challenging due to their high-dimensional continuous joint action spaces, complex reward design, and non-stationarity from concurrently learning agents. On the other hand, humans often learn complex coordination with the help of coaches, who guide learning through carefully designed curricula and detailed feedback. Building on the reasoning capabilities of foundation models, we argue that these models can similarly coach robots to learn coordination. Motivated by this, we propose CRAFT: Coaching Reinforcement learning Autonomously using Foundation models for learning coordination Tasks, a framework that leverages foundation models to act as a \"coach\" for multi-robot coordination. CRAFT automatically decomposes long-horizon coordination tasks into sequences of subtasks using the planning capability of Large Language Models (LLMs). Then, CRAFT trains each subtask using LLM-generated reward functions, and refines them through a Vision Language Model (VLM)-guided reward-refinement loop. We evaluate CRAFT on multi-quadruped navigation and bimanual manipulation tasks, and demonstrate its capability to learn complex coordination behaviors. In addition, in a multi-quadruped navigation setting, we show that our learned policies transfer to the real world. Project website is https://iconlab.negarmehr.com/CRAFT/"
+  },
+  {
+    "title": "ActiveGrasp: Information-Guided Active Grasping with Calibrated Energy-based Model",
+    "original_title": "ActiveGrasp: Information-Guided Active Grasping with Calibrated Energy-based Model",
+    "link": "https://arxiv.org/abs/2511.12795",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.12795v2 Announce Type: replace \nAbstract: Grasping in a densely cluttered environment is a challenging task for robots. Previous methods tried to solve this problem by actively gathering multiple views before grasp pose generation. However, they either overlooked the importance of the grasp distribution for information gain estimation or relied on the projection of the grasp distribution, which ignores the structure of grasp poses on the SE(3) manifold. To tackle these challenges, we propose a calibrated energy-based model for grasp pose generation and an active view selection method that estimates information gain from grasp distribution. Our energy-based model captures the multi-modality nature of grasp distribution on the SE(3) manifold. The energy level is calibrated to the success rate of grasps so that the predicted distribution aligns with the real distribution. The next best view is selected by estimating the information gain for grasp from the calibrated distribution conditioned on the reconstructed environment, which could efficiently drive the robot to explore affordable parts of the target object. Experiments on simulated environments and real robot setups demonstrate that our model could successfully grasp objects in a cluttered environment with limited view budgets compared to previous state-of-the-art models. Our simulated environment can serve as a reproducible platform for future research on active grasping. The source code of our paper will be made public when the paper is released to the public."
+  },
+  {
+    "title": "Where to Touch, How to Contact: Hierarchical RL-MPC Framework for Geometry-Aware Long-Horizon Dexterous Manipulation",
+    "original_title": "Where to Touch, How to Contact: Hierarchical RL-MPC Framework for Geometry-Aware Long-Horizon Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2601.10930",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2601.10930v3 Announce Type: replace \nAbstract: A key challenge in contact-rich dexterous manipulation is the need to jointly reason over global geometry and nonsmooth contact dynamics. End-to-end policies bypass this complexity, but often require large amounts of data and transfer poorly from simulation to reality. We address the limitations with a simple insight: dexterous manipulation is inherently hierarchical--at a high level, a robot decides where to touch (geometry); at a low level it determines how to move the object through contact dynamics. Building on this insight, we propose a hierarchical RL--MPC framework in which a high-level reinforcement learning (RL) policy predicts a contact intention, a novel object-centric interface that specifies (i) an object-surface contact location and (ii) a post-contact object subgoal pose. Conditioned on the contact intention, a low-level contact-implicit model predictive control (MPC) optimizes local contact modes and real-time (re)plans through contact dynamics to generate robot actions that robustly move the object toward each subgoal. We evaluate the framework on non-prehensile tasks, including geometry-generalized pushing across diverse object shapes, pivoting/flipping-based object reorientation, and environment-assisted object repositioning. It achieves high success rate with substantially reduced data (10 times less than end-to-end baselines), highly robust performance, and zero-shot sim-to-real transfer."
+  },
+  {
+    "title": "SERNF: Sample-Efficient Real-World Dexterous Policy Fine-Tuning via Action-Chunked Critics and Normalizing Flows",
+    "original_title": "SERNF: Sample-Efficient Real-World Dexterous Policy Fine-Tuning via Action-Chunked Critics and Normalizing Flows",
+    "link": "https://arxiv.org/abs/2602.09580",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.09580v4 Announce Type: replace \nAbstract: Real-world fine-tuning of dexterous manipulation policies remains challenging due to limited real-world interaction budgets and highly multimodal action distributions. Diffusion-based policies, while expressive, do not permit conservative likelihood-based updates during fine-tuning because action probabilities are intractable. In contrast, conventional Gaussian policies collapse under multimodality, particularly when actions are executed in chunks, and standard per-step critics fail to align with chunked execution, leading to poor credit assignment. We present SERFN, a sample-efficient off-policy fine-tuning framework with normalizing flow (NF) to address these challenges. The normalizing flow policy yields exact likelihoods for multimodal action chunks, allowing conservative, stable policy updates through likelihood regularization and thereby improving sample efficiency. An action-chunked critic evaluates entire action sequences, aligning value estimation with the policy's temporal structure and improving long-horizon credit assignment. To our knowledge, this is the first demonstration of a likelihood-based, multimodal generative policy combined with chunk-level value learning on real robotic hardware. We evaluate SERFN on two challenging dexterous manipulation tasks in the real world: cutting tape with scissors retrieved from a case, and in-hand cube rotation with a palm-down grasp -- both of which require precise, dexterous control over long horizons. On these tasks, SERFN achieves stable, sample-efficient adaptation where standard methods struggle."
+  },
+  {
+    "title": "Chameleon: Control-Indexed Prospective Memory for Visuomotor Manipulation",
+    "original_title": "Chameleon: Control-Indexed Prospective Memory for Visuomotor Manipulation",
+    "link": "https://arxiv.org/abs/2603.24576",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.24576v2 Announce Type: replace \nAbstract: Robots often observe information that determines a future action long before that action is executed. In a shell game, for example, a robot first sees which cup hides the ball, watches the cups move, and only later needs to choose the correct cup. The final observation alone is not enough for a decision: the correct action depends on an earlier event. We refer to this temporal gap as observation-action delay. It makes memory a policy-facing problem: a policy must keep similar histories distinct, retrieve the past event relevant to the current decision, and convert that recall into an action-ready state. We call these requirements separability, addressability, and prospectiveness. We introduce Chameleon, a ~60M visuomotor policy for control-indexed prospective memory. Chameleon writes embodied event memory, preserves separable histories, retrieves control-relevant traces, and trains the resulting working state to be prospective. We also introduce Camo-Dataset, a real-robot benchmark that isolates observation-action delay by making the decision scene visually ambiguous, so the correct action must be inferred from earlier observations. Chameleon improves decision/end-to-end success on Camo-Dataset from 22.5%/21.3% to 80.8%/71.3%. On public long-horizon memory benchmarks, it achieves 87.1% +/- 0.8% on LIBERO-10, 97.3% +/- 4.5% on MemoryBench, and 75.1% +/- 1.4% on MIKASA-Robo, setting the state of the art for same-size models and exceeding multiple larger VLA baselines under the reported protocols. Probes and ablations show that Chameleon learns separable, addressable, and prospective memory, and that these properties drive its performance gains."
+  },
+  {
+    "title": "ViVa: A Video-Generative Value Model for Robot Reinforcement Learning",
+    "original_title": "ViVa: A Video-Generative Value Model for Robot Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2604.08168",
+    "date": "2026-06-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.08168v2 Announce Type: replace \nAbstract: Vision-language-action (VLA) models have advanced robot manipulation through large-scale pretraining, but real-world deployment remains challenging due to partial observability and delayed feedback. Reinforcement learning addresses this via value functions, which assess task progress and guide policy improvement. However, existing value models built on vision-language models (VLMs) struggle to capture temporal dynamics and physical interactions, undermining reliable value estimation in long-horizon tasks. In this paper, we propose ViVa, a video-generative value model that repurposes a pretrained video generator to jointly predict future proprioception and a scalar value. By grounding value estimation in anticipated embodiment dynamics, ViVa leverages spatiotemporal priors to intrinsically couple value with foresight beyond static snapshots. ViVa achieves state-of-the-art results in metric-based evaluation across three tasks, producing reliable value signals that accurately track task progress and detect execution errors. Integrated into RECAP, it achieves an average success rate of 80%, highlighting the promise of video-generative models for value estimation."
   },
   {
     "title": "Humanoid robot kicks child during public demonstration in China - VnExpress International",
@@ -17944,59 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "MoviĜo Robotics는 식품, 제약, 자동차 및 인쇄 산업 등 다양한 산업의 생산 물류에 활용되는 새로운 로봇 기술 플랫폼인 'Ŝharko5 Technology Platform'을 출시했다. 이 플랫폼은 높은 성과를 거둔 Ŝharko5 로봇 기술을 기반으로 개발되었으며, 로봇 및 가게 관리와 프로세스 소프트웨어로 구성되어 있다."
-  },
-  {
-    "title": "ABB 로보틱스, 고속 PoWa 협력형 로봇 시리즈 출시",
-    "original_title": "ABB Robotics launches high-speed PoWa collaborative robot range",
-    "link": "https://roboticsandautomationnews.com/2026/04/23/abb-robotics-launches-high-speed-powa-collaborative-robot-range/100894/",
-    "date": "2026-04-23 09:02",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "ABB 로보틱스는 새로운 PoWa 협력형 로봇 가족을 출시하며 20% 연평균 성장률로 예상되는 글로벌 협력형 로봇 시장에 진출했다. 이 시리즈는 높은 지렛목과 성능을 가진 협력형 로봇의 유연성을 결합하여 제품 생산, 재화 취급 등 다양한 분야에서 활용될 수 있다."
-  },
-  {
-    "title": "한nover Messe 2026에서 Zoomlion, Robot Ops 공개",
-    "original_title": "At Hannover Messe 2026, Zoomlion Debuts Robot Ops",
-    "link": "https://humanoidroboticstechnology.com/industry-news/at-hannover-messe-2026-zoomlion-debuts-robot-ops/",
-    "date": "2026-04-23 08:26",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "Zoomlion이 Hannover Messe 2026에서 산업 분야 로봇 운영 시스템인 Robot Ops를 세계 최초로 선보였으며, AI 및 스마트 제조 기술도 출시함."
-  },
-  {
-    "title": "7가지 최고의 AI 이야기 생성 도구 (이미지 제작 기능 포함)",
-    "original_title": "7 Best AI Story Generator With Image Creation Tools for Visual Storytelling",
-    "link": "https://roboticsandautomationnews.com/2026/04/23/7-best-ai-story-generator-with-image-creation-tools-for-visual-storytelling/100882/",
-    "date": "2026-04-23 07:57",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "2026년에는 AI가 글을 쓰는 것뿐 아니라 일치하는 이미지도 생성하여 시각적 이야기 전달이 가능해질 예정이며, 이처럼 다중 모드 작업 공간이 스토리텔러들에게 \"챗-만\" 방식의 보트보다 더 인기를 얻고 있다."
-  },
-  {
-    "title": "인형 로봇, 베이징 반마라톤에서 자율 주행 능력 선보임",
-    "original_title": "Humanoid robots showcase autonomy at Beijing half marathon - ANTARA News",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQnYyem9WcXRoa0t1SzZ4WV80ZlgzR3pqb1RKYUhhYVllR1VzNmVGaU1FdmNCYU1Lc0oxYmt0dEV5LUpBWnNTY1pqR1ZMVlR1Q3VhWEhwbWVFZFRKYlZjWHFFMUpENHd0NnRoZ29EYVk1dkl4RjNnWTR3UHhRbFhKcUpkd3pjNk9obVpNRkdwTzI2M24zSU5nY2FIN2_SAaIBQVVfeXFMTjFGYk5ZV3diSi1aZGp1V285NjBxeV9sVGJkM3JkN2tkSXFOYXRUTnVNazg4aWx1OGNsQ1pQajVCVkF4c3VQeEN1eE56QTU5M1dpczk2NFBJek8xS2FLc29RenNMSzBNYlljaG1HbkE0Yzc2aTFKZHlIcDdVWkhVb0UyUks3TWZpOWJKcDktMG1DTExDenV3c3AxVDFGTVZOcFhR?oc=5",
-    "date": "2026-04-23 06:46",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "인형 로봇들이 베이징 반마라톤 경주에서 자신의 자율 주행 능력을 보여줬다. 이들은 사람처럼 달리는 모습을 관람객들에게 선보였다."
-  },
-  {
-    "title": "ETac: 경량 및 효율적인 촉각 시뮬레이션 프레임워크",
-    "original_title": "ETac: A Lightweight and Efficient Tactile Simulation Framework for Learning Dexterous Manipulation",
-    "link": "https://arxiv.org/abs/2604.20295",
-    "date": "2026-04-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "ETac는 정밀한 로봇 조작 학습을 위한 고성능, 저비용 촉각 시뮬레이션 프레임워크로, 데이터 기반 변형 전파 모델을 사용하여 소프트 바디 접촉 역학을 모델링하며 FEM과 유사한 표면 변형 추정 및 강화 학습 환경에서 높은 처리 속도를 지원함."
-  },
-  {
-    "title": "AdaTracker: 다양한 로봇에서 적응하는 인접 정책 학습을 통한 활성 시각 추적",
-    "original_title": "AdaTracker: Learning Adaptive In-Context Policy for Cross-Embodiment Active Visual Tracking",
-    "link": "https://arxiv.org/abs/2604.20305",
-    "date": "2026-04-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "다양한 로봇의 물리적 제약과 동작 특성 변화를 고려하여, 공통 모델을 사용하여 활성 시각 추적을 수행하는 AdaTracker 프레임워크를 제안. Embodiment Context Encoder를 통해 로봇 형태에 따른 제약을 학습하고, Context-Aware Policy를 통해 새로운 로봇에서도 손쉽게 적응 가능하도록 함."
   }
 ]
