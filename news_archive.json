@@ -9,6 +9,15 @@
     "summary": "The packaging industry is undergoing a profound transformation. As consumer demands intensify and production timelines shrink, manufacturers across every sector are turning to smarter, faster, and more efficient solutions. At the heart of this revolution is VFFS technology, a system that has quietly become one of the most essential tools in modern packaging facilities. Vertical […]"
   },
   {
+    "title": "Chinese robotics company teases human-like robots with emotional AI ahead of 30 June launch - The Online Citizen",
+    "original_title": "Chinese robotics company teases human-like robots with emotional AI ahead of 30 June launch - The Online Citizen",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZWRuRWtabmFQS0hBTnFySk80N05feW1tcTdrTGljV1k0Q29ldzFfYmM0SkZGdW1KQjZ4VDlCMkJxdzJSbTZhZjJWbkVwY1VBUWU3Y0pZY0RMUlJkc3FkNGZudnBPWG80aGdENS1vckNIRmFFbHVfbkdOZTRSTExackxiWlN1Y0Jfck4zaUNnMGxDdjBTSzNzWVEyWmZHWGtNaVNCTGg0OUpPVzk5b2JRUm85aDAtV3JtT0RQTzVjZV9QWUhXWjB0MmZkaw?oc=5",
+    "date": "2026-06-09 08:51",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Chinese robotics company teases human-like robots with emotional AI ahead of 30 June launch  The Online Citizen"
+  },
+  {
     "title": "Simulation tools in the ROS ecosystem: Testing and validating robots virtually",
     "original_title": "Simulation tools in the ROS ecosystem: Testing and validating robots virtually",
     "link": "https://roboticsandautomationnews.com/2026/06/09/simulation-tools-in-the-ros-ecosystem-testing-and-validating-robots-virtually/102377/",
@@ -529,6 +538,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.09813v1 Announce Type: new \nAbstract: Embodied world models have emerged as a pivotal paradigm for visual robotic decision-making and interactive environment simulation. However, conventional embodied frameworks rely on low-dimensional structured action vectors (e.g., joint angles and end-effector poses), which suffer from limited expressive capacity, poor generalization across diverse embodiments, and unnatural dynamic modeling for complex physical interactions. To address these limitations, this paper proposesiMac (Image as Action Control), a novel unified control paradigm that treats raw visual images as native action representations for embodied world models. Departing from traditional explicit kinematic action encoding, iMac formulates continuous visual manipulation as image-based action tokens, which inherently encapsulate spatial motion intentions, interactive geometric constraints and subtle physical dynamics. We construct a dual-branch embodied architecture consisting of an image-action encoder and a dynamic world predictor: the encoder compresses target-driven visual images into compact action embeddings, while the predictor learns environment transition rules conditioned on image actions to achieve high-fidelity future state prediction and closed-loop embodied control. Extensive experiments are conducted on public embodied manipulation benchmarks and real-world robotic scenarios. The results demonstrate that iMac outperforms vector-based action control baselines in prediction accuracy, task success rate and cross-scene generalization ability. Moreover, our image-action design eliminates the reliance on manually defined action spaces, realizing flexible and universal control for heterogeneous embodied agents. This work provides an innovative visual-action perspective for embodied world models, offering a simple yet effective paradigm for scalable robotic perception and manipulation."
+  },
+  {
+    "title": "MemoryVLA++: Temporal Modeling via Memory and Imagination in Vision-Language-Action Models",
+    "original_title": "MemoryVLA++: Temporal Modeling via Memory and Imagination in Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.09827",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09827v1 Announce Type: new \nAbstract: Temporal modeling is essential for robotic manipulation, as effective control requires both memory of past interactions and imagination of future states. However, most VLA models rely primarily on the current observation and therefore struggle with long-horizon, temporally dependent tasks. Cognitive science suggests that humans rely on working memory to buffer short-lived context, the hippocampal system to preserve episodic memory of past experience, and internal models to imagine possible future state evolution. Inspired by these mechanisms, we propose MemoryVLA++, a full temporal modeling framework that equips VLA models with memory and imagination for robotic manipulation. A pretrained VLM encodes the current observation into perceptual and cognitive tokens, forming working memory. These tokens query a Perceptual-Cognitive Memory Bank to retrieve relevant historical context. This bank stores low-level details and high-level semantics from past interactions, and is updated through redundancy-aware consolidation. A world model imagines future states in a denoising latent space, and the imagined latents are integrated under memory guidance to form full temporal-aware tokens. The resulting tokens condition a diffusion action expert to predict temporally consistent action sequences. We conduct extensive experiments on 5 simulation benchmarks and 3 categories of real-robot tasks across 3 robots, covering general manipulation, long-horizon temporal tasks, robustness, and generalization. Our method achieves strong performance across Libero, SimplerEnv, Mikasa-Robo, Calvin, Libero-Plus, and diverse real-robot tasks, validating the effectiveness of full temporal modeling with memory and imagination. For example, on real robots, it achieves +9%, +26%, +28% gains on general, memory-dependent, and imagination-dependent tasks. Project Page: https://shihao1895.github.io/MemoryVLA-PP-Web"
+  },
+  {
+    "title": "TBD-VLA: Temporal Block Diffusion Vision Language Action Model",
+    "original_title": "TBD-VLA: Temporal Block Diffusion Vision Language Action Model",
+    "link": "https://arxiv.org/abs/2606.07895",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.07895v1 Announce Type: cross \nAbstract: Discrete Vision-Language-Action (VLA) models typically formulate action generation as next-token prediction over discretized action spaces, conditioning each token autoregressively on prior context. While effective, this paradigm incurs high inference latency and largely ignores the temporal structure inherent in action trajectories. Recent efforts introduce parallel decoding to improve efficiency, enabling faster inference, but lack explicit mechanisms for modeling token dependencies. We introduce TBD-VLA, a discrete token-based VLA framework that incorporates block diffusion to enable temporal action generation. We partition action sequences into temporal blocks and perform masked discrete diffusion within each block, while maintaining autoregressive generation across blocks. This design unifies temporal autoregression and parallel action decoding, achieving both strong temporal coherence and improved inference speed. In addition, the explicit temporal modeling enables asynchronous execution of action chunks (e.g., Real-Time Chunking) via temporal in-painting. TBD-VLA significantly outperforms prior VLA approaches in both simulation and real-world manipulation tasks, offering a scalable path toward fast, temporally aware, discrete VLA models. Project webpage: https://tbd-vla.github.io/"
+  },
+  {
+    "title": "Autonomous Aerial Manipulation via Contextual Contrastive Meta Reinforcement Learning",
+    "original_title": "Autonomous Aerial Manipulation via Contextual Contrastive Meta Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2606.08533",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.08533v1 Announce Type: cross \nAbstract: Unmanned aerial vehicles (UAVs) are increasingly being deployed in logistics, service robotics, and other real-world applications, creating a growing demand for autonomous payload acquisition and delivery. Existing approaches typically assume pre-attached payloads or rely on specialized grippers, leaving versatile end-to-end aerial delivery largely unresolved, where different payloads induce highly variable flight dynamics, requiring a single policy to adapt online without manual calibration or explicit system identification. To this end, we study \\textbf{A}utonomous \\textbf{A}erial Manipulation via \\textbf{Co}ntextual \\textbf{Co}ntrastive Meta Reinforcement Learning (\\textbf{\\textit{Aco2}}), a fully autonomous aerial delivery setting in which a quadrotor equipped with a lightweight hook continuously picks up, transports, and delivers diverse handle-equipped objects between randomized locations, all without human intervention. First, we design a contextual observation encoder that infers a compact latent context from recent interaction history, enabling the policy to adapt online to payload-dependent dynamics. To further improve the quality of this context, we introduce a contrastive objective that structures the context embedding around task-relevant variations, improving generalization across diverse payloads without requiring explicit system identification. Trained entirely in simulation with extensive domain randomization, \\textit{Aco2} can be directly deployed on a physical quadrotor without real-world fine-tuning."
+  },
+  {
+    "title": "Reward Evolution with Graph-of-Thoughts: A Bi-Level Language Model Framework for Reinforcement Learning",
+    "original_title": "Reward Evolution with Graph-of-Thoughts: A Bi-Level Language Model Framework for Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2509.16136",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2509.16136v5 Announce Type: replace \nAbstract: Designing effective reward functions remains a major challenge in reinforcement learning (RL), often requiring considerable human expertise and iterative refinement. Recent advances leverage Large Language Models (LLMs) for automated reward design, but these approaches are limited by hallucinations, reliance on human feedback, and challenges with handling complex, multi-step tasks. In this work, we introduce Reward Evolution with Graph-of-Thoughts (RE-GoT), a novel bi-level framework that enhances LLMs with structured graph-based reasoning and integrates Visual Language Models (VLMs) for automated rollout evaluation. RE-GoT first decomposes tasks into text-attributed graphs, enabling comprehensive analysis and reward function generation, and then iteratively refines rewards using visual feedback from VLMs without human intervention. Extensive experiments on 10 RoboGen and 4 ManiSkill2 tasks demonstrate that RE-GoT consistently outperforms existing LLM-based baselines. On RoboGen, our method improves average task success rates by 32.25%, with notable gains on complex multi-step tasks. On ManiSkill2, RE-GoT achieves an average success rate of 93.73% across four diverse manipulation tasks, significantly surpassing prior LLM-based approaches and even exceeding expert-designed rewards. Our results indicate that combining LLMs and VLMs with graph-of-thoughts reasoning provides a scalable and effective solution for autonomous reward evolution in RL."
+  },
+  {
+    "title": "Symskill: Symbol and Skill Co-Invention for Data-Efficient and Reactive Long-Horizon Manipulation",
+    "original_title": "Symskill: Symbol and Skill Co-Invention for Data-Efficient and Reactive Long-Horizon Manipulation",
+    "link": "https://arxiv.org/abs/2510.01661",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.01661v3 Announce Type: replace \nAbstract: Multi-step manipulation in dynamic environments remains challenging. Imitation learning (IL) is reactive but lacks compositional generalization, since monolithic policies do not decide which skill to reuse when scenes change. Classical task-and-motion planning (TAMP) offers compositionality, but its high planning latency prevents real-time failure recovery. We introduce SymSkill, a unified framework that jointly learns predicates, operators, and skills from unlabeled, unsegmented demonstrations, combining compositional generalization with real-time recovery. Offline, SymSkill learns symbolic abstractions and goal-oriented skills directly from demonstrations. Online, given a conjunction of learned predicates, it uses a symbolic planner to compose and reorder skills to achieve symbolic goals while recovering from failures at both the motion and symbolic levels in real time. Coupled with a compliant controller, SymSkill supports safe execution under human and environmental disturbances. In RoboCasa simulation, SymSkill executes 12 single-step tasks with 85% success and composes them into multi-step plans without additional data. On a real Franka robot, it learns from 5 minutes of play data and performs 12-step tasks from goal specifications. Code and additional analysis are available at https://symskill.github.io/ ."
+  },
+  {
+    "title": "How Well Do Latent World Models Understand Partially Observable Safety Constraints?",
+    "original_title": "How Well Do Latent World Models Understand Partially Observable Safety Constraints?",
+    "link": "https://arxiv.org/abs/2510.06492",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.06492v2 Announce Type: replace \nAbstract: Latent world models are a promising approach for learning state representations and dynamics directly from high-dimensional observations, enabling robot control in hard-to-model settings. However, control performance ultimately depends on the latent representation encoding the required information for the task. In this work, we study latent-space safe control problems and show how partial observability can induce control failures when safety-relevant information is not preserved in the latent state. Specifically, we identify two world model failure modes: estimation gaps, where current observations do not reveal safety-critical quantities (e.g., temperature in a cooking task), and prediction gaps, where failures are observable once they occur but cannot be reliably anticipated from available observations. We introduce two diagnostics for these gaps: a mutual-information-based measure of safety observability and a rollout-based measure of future safety predictability. Finally, we present mitigation strategies for each failure mode: privileged multimodal supervision for estimation gaps and conformal risk calibration for prediction gaps. Across two hardware case studies -- using unimodal RGB world models and multimodal RGB+Tactile and RGB+Thermal variants -- we show that these mitigation strategies improve the safety of a Franka Research 3 manipulator on challenging cooking tasks under partial observability, albeit with increased conservativeness. More broadly, our work raises the question of when world model state representations are sufficient for reliable robot control"
+  },
+  {
+    "title": "Programmable Deformation Design of Porous Soft Actuator through Volumetric-Pattern-Induced Anisotropy",
+    "original_title": "Programmable Deformation Design of Porous Soft Actuator through Volumetric-Pattern-Induced Anisotropy",
+    "link": "https://arxiv.org/abs/2512.12320",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.12320v2 Announce Type: replace \nAbstract: Conventional soft pneumatic actuators, typically based on hollow elastomeric chambers, often suffer from small structural support and require costly geometry-specific redesigns for multimodal functionality. Porous materials such as foam, filled into chambers, can provide structural stability for the actuators. However, methods to achieve programmable deformation by tailoring the porous body itself remain underexplored. In this paper, a novel design method is presented to realize soft porous actuators with programmable deformation by incising specific patterns into the porous foam body. This approach introduces localized structural anisotropy of the foam guiding the material's deformation under a global vacuum input. Furthermore, three fundamental patterns on a cylindrical foam substrate are discussed: transverse for bending, longitudinal for tilting, and diagonal for twisting. A computational model is built with Finite Element Analysis (FEA), to investigate the mechanism of the incision-patterning method. Experiments demonstrate that with a potential optimal design of the pattern array number N, actuators can achieve bending up to $80^{\\circ}$ (N=2), tilting of $18^{\\circ}$ (N=1), and twisting of $115^{\\circ}$ (N=8). The versatility of our approach is demonstrated via pattern transferability, scalability, and mold-less rapid prototyping of complex designs. As a comprehensive application, we translate the human hand crease map into a functional incision pattern, creating a bio-inspired soft robot hand capable of human-like adaptive grasping. Our work provides a new, efficient, and scalable paradigm for the design of multi-functional soft porous robots."
+  },
+  {
+    "title": "LightTact: A Visual-Tactile Fingertip Sensor for Deformation-Independent Contact Sensing",
+    "original_title": "LightTact: A Visual-Tactile Fingertip Sensor for Deformation-Independent Contact Sensing",
+    "link": "https://arxiv.org/abs/2512.20591",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.20591v3 Announce Type: replace \nAbstract: Contact often occurs without macroscopic surface deformation, such as during interaction with liquids, semi-liquids, or ultra-soft materials. However, most existing tactile sensors rely on deformation to infer contact, making such light-contact interactions difficult to perceive robustly. To address this, we present LightTact, a visual-tactile fingertip sensor that makes contact directly visible via a deformation-independent principle. LightTact features an ambient-blocking optical configuration that suppresses both external light and internal illumination at non-contact regions, while transmitting only the scattered light generated at true contacts. As a result, LightTact produces high-contrast raw images in which non-contact pixels remain near-black (mean gray value < 3) and contact pixels preserve the natural appearance of the contacting surface. Built on this, LightTact achieves accurate pixel-level contact segmentation that is robust to material properties, contact force, surface appearance, and environmental lighting. We further demonstrate that LightTact unlocks new robotic manipulation behaviors that require detection of extremely light contact, including water spreading, facial-cream dipping, and soft thin-film interaction. In addition, we show that LightTact's spatially aligned visual-tactile images can be directly interpreted by vision-language models."
   },
   {
     "title": "TARS brings real-life embodied AI to ICRA 2026 robotics conference",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "유니트리에서 개발한 인형 로봇이 스케이트를 타고 다양한 동작을 수행하는 모습을 보여주었음. 이 로봇은 스케이트처럼 자유로운 이동과 함께 flips와 spins도 가능하며, 향후 여러 분야에 활용될 것으로 전망됨."
-  },
-  {
-    "title": "인간형 로봇이 세계 걸음 기록을 경신함",
-    "original_title": "Meet the humanoid robot that just set a new world walking record - ABC News - Breaking News, Latest News and Videos",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaWxXdG9qazZxM0E0S0hYUFJGSEMwMmZQWkdlTlVQOGdCSHV4RmN6Q2xzZ1ZWUGM1Xy1YSjJJVHRMVjRRWFpIWEtfNlU3amxPc09SdlBjbXhQam1yRjFzYXhQQ1AzNzY4VHRHeTZYaUtFd3lhVTV0QVRNMVIxRDFBOFc1ZHdZLXdqaVpHMF94a1k5dDBxa1VmMklxeDTSAaIBQVVfeXFMTU44c2h4NU56Tng3VXg2RDAzSFlTcHhoVHFaQ2tzdERveTVjSlhsVDZVRndIcEdDNDlrdnpjRWJtQ2FRTjNoX1ZCMkE0ZWJXZ1Nuci1aVU1aTjBrdVJ1OWVoOVhZZGk5bkJQNk53cnhieGE0S2dXWVZfQno3Vm9tOVh3WWMzNUV1cmoxaXNrbkY1NjNTamFCQmlHNHFTOEtEQ1p3?oc=5",
-    "date": "2026-04-26 22:36",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "최근 인간형 로봇이 세계 신기록을 수립하여 주목받고 있습니다.  더 많은 사람들에게 이 업적에 대한 자세한 내용은 ABC 뉴스에서 확인 가능합니다."
-  },
-  {
-    "title": "10년간의 사족 로봇을 돌아보며 Ghost Robotics와 함께하는 로보틱스 서밋",
-    "original_title": "Look back on 10 years of legged robots with Ghost Robotics at the Robotics Summit",
-    "link": "https://www.therobotreport.com/look-back-on-10-years-of-legged-robots-with-ghost-robotics-at-the-robotics-summit/",
-    "date": "2026-04-26 13:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Ghost Robotics CEO Gavin Kenneally가 4개 다리 로봇 배치 경험을 바탕으로 10년 동안의 교훈을 공유함."
-  },
-  {
-    "title": "프리미엄 유리로 화장품 포장 디자인이 새롭게 정의됨",
-    "original_title": "How premium glass is redefining cosmetic packaging design",
-    "link": "https://roboticsandautomationnews.com/2026/04/26/how-premium-glass-is-redefining-cosmetic-packaging-design/101016/",
-    "date": "2026-04-26 10:02",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "화장품 산업에서는 포장이 단순한 보호 및 저장 기능을 넘어 사용자 경험, 인지도, 브랜드 정체성에 중요한 역할을 수행하며 소재 선택부터 병 모양까지 모든 세부 사항이 제품 경험에 영향을 미치고 있다."
-  },
-  {
-    "title": "자동화에서 전통 부품의 전략적 가치",
-    "original_title": "The Strategic Value of Legacy Components in Automation",
-    "link": "https://roboticsandautomationnews.com/2026/04/26/the-strategic-value-of-legacy-components-in-automation-3/101012/",
-    "date": "2026-04-26 09:51",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "현대 제조업은 AI 기반 로봇과 연동형 IIoT 시스템 등 첨단 기술을 중시하지만, 많은 공장에서는 여전히 안정적인 운영이 가능한 오래된 하드웨어가 생산의 핵심 역할을 하고 있음."
-  },
-  {
-    "title": "전자의 순환 경제: 하드웨어 수명 연장",
-    "original_title": "Circular economy in electronics: Extending hardware life",
-    "link": "https://roboticsandautomationnews.com/2026/04/26/circular-economy-in-electronics-extending-hardware-life-2/101007/",
-    "date": "2026-04-26 09:41",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "매년 세계적으로 수백만 톤의 전자 쓰레기가 발생하지만, 반도체 부족과 공급망 문제로 인해 공장들은 부품을 찾아 헤매고 있습니다. 이러한 상황 - 불필요한 버려진 하드웨어와 만족되지 못하는 수요 -는 순환적 접근의 중요성을 보여줍니다."
-  },
-  {
-    "title": "자동화군: 중국의 기업, 3개 인형과 1마리 로봇 개 모델로 미국 무대 진출",
-    "original_title": "Automation army: China’s firm hits US stage with 3 humanoids, 1 robot dog model - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxPdmd3ZGgzVUE3M2FfSE5pekRPb0hUQmc0Y3VabFhhbmxLaXZQdDY3ZEJGRm5MNUphT3RKZmIyeENvUnRzTXBoemgyVFAzdmFtYl9VdW9VaG9jdklGRkRCdlE0UUZTUnpLbFJUcFZZSlF1cHNoTFdfQ01GVUlsQmU0WExFQjc0OXlmNDFpRm8wSnM0Tzd0ZTY4ckR6Q2QwQk5fcnUxdmFqYnU5R21XWXRUZWpZMkxRWGxnb2l6cTl5dUMwRTVpbFVDZ1BQS2FycXBySkVKU0sxZzh4X3lydGhCSlEtaWZWYUYxa0pQMFZORXBhVFpkb2l6MnA1VmVZcHMwNVhwS0kwS3A2dHhMSW9WeXpxNWVwSGhuQy1mMENjdzNjeUhPZ0RTcXlMSVNuSHgzbVo4LVd6a2xyRmxaM2UzbzJWNDVOdDA2RFE4NGxPMlVsRmxUMlR0MExZcWFzR2RDSGdNSUVkQjRyQjhNMzBZbVVhWDFhb05DdGgxNmhoNA?oc=5",
-    "date": "2026-04-26 02:59",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 기업이 3개의 인형 로봇과 1마리 로봇 개 모델을 선보이며 미국 시장에 진출했다. 이들은 자동화 기술의 발전을 보여주는 대표적인 사례로, 제품 경쟁력을 증명하기 위해 전 세계 여러 나라에서 출시되었다."
-  },
-  {
-    "title": "로봇 군단: 중국 기업, 3명의 인형과 1마리 로봇견으로 미국 무대 진출",
-    "original_title": "Automation army: China’s firm hits US stage with 3 humanoids, 1 robot dog model - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi_gJBVV95cUxNdF9nYnFwaHg1TDBOQ0tMYmtGZTJXS24ybWZwdG16ZVh0OXlrVFhrRHRlMzctUDctb3ZQaDJmamZkd3l3b3pZRXZJLUU3NWt1YW1ibjBiRE9PQXA1b2pMQ3hVNmRicWM3anBWckpXM3FndXlRNEdCUllqbVZWXzRpVWdzTmhMQ1l3cElMeFJhaEFMbExyWHpiNEI2TDU4RWdyNnVPU183RnNKeExNdktSbzlabFZLUzZtaUY4ODRWZ1FySlFoSlN6eUw5Mm8zLWgwQV9lNlZKM2RCa0lUUmZEeUh4TDRzSm1XQ3plQWtBMEJSUko5cktaMjdaeEU2bi04U3pwcEdtZEtjUVZSbG5yZUdrRWVlUlJ6RGdDOEFfZk1lRVJOOUx6WVNSdlRIR1RMWkphYzhtZXg0VndLdjVnemh3OGFZaXhiU0FvRW9MQkVNZ0dGVG9TRnlrMTBjYzJjWjR6ZExZUVN2bjViOWtqd3R3Unp2emZGQmpLQlln?oc=5",
-    "date": "2026-04-26 02:59",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 기업이 미국에서 3개의 인형 로봇과 1마리 로봇견 모델을 선보이며  미국의 자율화 시장에 진입함. 이들은 작업 효율성 향상을 위한 자동화 솔루션으로, 다양한 분야에서 활용될 것으로 전망됨."
-  },
-  {
-    "title": "중국의 인형 로봇, 테니스 연습에서 '완벽한 스트로크' 기록",
-    "original_title": "Video: China’s humanoid robot hits ‘perfect strokes’ in tennis practice with human - MSN",
-    "link": "https://news.google.com/rss/articles/CBMiggNBVV95cUxQS0x0Ym5DVVJFc1AyVDRSTEZCak9leEFZRnJpeEw1N1BIY0xMN0Z6Y0tQYV82STNOWS1hOVNhWVowQV8zR0pjVWdNZHpURjg5RVpSdk9CRjJGUHpMOGhQWjJ1eWkyU0ljVUFrU1RfTnlnN3RDaUZMNlFBa2puWmZRR1pESUNGakF6eWpyZzlhZ1JRVlFCZVd1RVVpcmxYMG5xV2pqRjF5WUg5dVZGOWE2M21RT3BIS0dlajA2RXRDM0hGbmp2REpzODFDd1IxVVdSRzAxbVN5SzAyTWJmWVlwb0d2MTNCTkQyNUtFZEp0bFhxQ0pROXY2UzFSOVB6Ymoyckc4TUQ5dE52MF9vUEdyczZnY0lXR3A4Ynlyd2RyM3BsTmh2OG53SzJjWE83cnhhM2lMUFJHaTQ0TWxsZF91RUd4aXgtM1VNb2tjSkhzNGNDaE1LUUhaQ0ZKeEJTc2xCRkxHUXpLQjF4NXR5MG1qc1VHVENfTW1XUWJvVWdBWlhVdw?oc=5",
-    "date": "2026-04-25 17:36",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 기업이 개발한 인형 로봇이 테니스 경기에서 사람과 함께 완벽한 스트로크를 보여주며 주목받고 있음. 영상에서는 로봇이 드라이브, 발리 등 다양한 기술을 사용하여 사람 선수와 격돌하는 모습을 보이고 있다."
-  },
-  {
-    "title": "데이터 저장소, 데이터 호수, 데이터 메쉬",
-    "original_title": "EP212: Data Warehouse vs Data Lake vs Data Mesh",
-    "link": "https://blog.bytebytego.com/p/ep212-data-warehouse-vs-data-lake",
-    "date": "2026-04-25 15:30",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "데이터 저장은 쉽지만, 어디에 어떻게 정리할지 결정하는 것이 중요한 과제임."
   }
 ]
