@@ -1,5 +1,14 @@
 [
   {
+    "title": "Chinese firm plans life-like male and female humanoid robot companions - Interesting Engineering",
+    "original_title": "Chinese firm plans life-like male and female humanoid robot companions - Interesting Engineering",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWGdDdVNSS2h5UUV4NHlFdDZIXzczell0MUJYQV9LdVBCTkFIUkI2dUlnOHN0NVNneFhXODBVa2JaUHRiWnV2c051TTctTGJKZzlUUkFCcXFzc0NmWmZtYWNYQmx0b3pMdGt6eUpjd1J0Q3N1U3RIcEFMWXZYajZDN0V2bGlnVzJBMmNYZ0F3?oc=5",
+    "date": "2026-06-09 11:35",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Chinese firm plans life-like male and female humanoid robot companions  Interesting Engineering"
+  },
+  {
     "title": "The Future of VFFS Technology in High-Speed Packaging Operations",
     "original_title": "The Future of VFFS Technology in High-Speed Packaging Operations",
     "link": "https://roboticsandautomationnews.com/2026/06/09/the-future-of-vffs-technology-in-high-speed-packaging-operations/102387/",
@@ -610,6 +619,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2512.20591v3 Announce Type: replace \nAbstract: Contact often occurs without macroscopic surface deformation, such as during interaction with liquids, semi-liquids, or ultra-soft materials. However, most existing tactile sensors rely on deformation to infer contact, making such light-contact interactions difficult to perceive robustly. To address this, we present LightTact, a visual-tactile fingertip sensor that makes contact directly visible via a deformation-independent principle. LightTact features an ambient-blocking optical configuration that suppresses both external light and internal illumination at non-contact regions, while transmitting only the scattered light generated at true contacts. As a result, LightTact produces high-contrast raw images in which non-contact pixels remain near-black (mean gray value < 3) and contact pixels preserve the natural appearance of the contacting surface. Built on this, LightTact achieves accurate pixel-level contact segmentation that is robust to material properties, contact force, surface appearance, and environmental lighting. We further demonstrate that LightTact unlocks new robotic manipulation behaviors that require detection of extremely light contact, including water spreading, facial-cream dipping, and soft thin-film interaction. In addition, we show that LightTact's spatially aligned visual-tactile images can be directly interpreted by vision-language models."
+  },
+  {
+    "title": "Vision-Based Early Fault Diagnosis and Self-Recovery for Strawberry Harvesting Robots",
+    "original_title": "Vision-Based Early Fault Diagnosis and Self-Recovery for Strawberry Harvesting Robots",
+    "link": "https://arxiv.org/abs/2601.02085",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2601.02085v3 Announce Type: replace \nAbstract: Strawberry-harvesting robots faced challenges such as poor visual perception, gripper misalignment, empty grasp/misgrasp, and slippage, which reduced harvesting stability and efficiency.To overcome these issues, this paper proposes a visual fault diagnosis and self-recovery framework. An end-to-end SRR-Net achieved unified perception and fault diagnosis through joint detection, segmentation, and ripeness regression of the fruit and gripper. Leveraging this integrated perception, a relative error compensation method driven by simultaneous target-gripper detection was designed to correct positional misalignments exceeding the tolerance threshold. A micro-optical camera integrated within the end-effector delivered real-time visual feedback. Based on the micro-optical camera, a MobileNet V3-Small classifier was utilized for grasp adjustment during the deflating stage, enabling the early abort of the harvesting cycle in cases of empty grasp/misgrasps. Furthermore, a time-series LSTM classifier was applied during the snap-off stage to predict strawberry slippage. Based on these predictions, the system executed re-inflation and a secondary snap-off attempt for slipping strawberries, or aborted the cycle for slipped strawberries. Experiments demonstrated that the mean absolute errors between the end-effector and the picking point were reduced to 3.12 mm and 4.06 mm from 11.50 mm and 5.25 mm along the x- and y-axes, respectively, at the cost of a time increment of 0.64 $pm$ 0.24 s. The grasp adjustment module reduced the grasping phase by approximately 0.5 s and avoided empty-placement for failure cases. The strawberry slip prediction module handled slipped cases with an 88.89% success rate, saving approximately 4.00 s per harvesting cycle for failure cases. Also, it achieved an 81.25% recovery rate for slipping strawberries, requiring additional 0.63 s for re-grasping."
+  },
+  {
+    "title": "On-the-fly hand-eye calibration for the da Vinci surgical robot",
+    "original_title": "On-the-fly hand-eye calibration for the da Vinci surgical robot",
+    "link": "https://arxiv.org/abs/2601.14871",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2601.14871v2 Announce Type: replace \nAbstract: In Robot-Assisted Minimally Invasive Surgery (RMIS), accurate tool localization is crucial to ensure patient safety and successful task execution. However, this remains challenging for cable-driven robots, such as the da Vinci robot, because erroneous encoder readings lead to pose estimation errors. In this study, we propose a calibration framework to produce accurate tool localization results through computing the hand-eye transformation matrix on-the-fly. The framework consists of two interrelated algorithms: the feature association block and the hand-eye calibration block, which provide robust correspondences for key points detected on monocular images without pre-training, and offer the versatility to accommodate various surgical scenarios by adopting an array of filter approaches, respectively. To validate its efficacy, we test the framework extensively on publicly available video datasets that feature multiple surgical instruments conducting tasks in both in vitro and ex vivo scenarios, under varying illumination conditions and with different levels of key point measurement accuracy. The results show a significant reduction in tool localization errors under the proposed calibration framework, with accuracies comparable to other state-of-the-art methods while being more time-efficient."
+  },
+  {
+    "title": "Robot-DIFT: Correspondence-Sensitive Diffusion Features for Contact-Rich Robot Manipulation",
+    "original_title": "Robot-DIFT: Correspondence-Sensitive Diffusion Features for Contact-Rich Robot Manipulation",
+    "link": "https://arxiv.org/abs/2602.11934",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.11934v2 Announce Type: replace \nAbstract: Robot manipulation often fails in the final millimeters: a policy may recognize the right object yet miss the pose offsets, boundaries, or pre-contact alignments needed for action. We argue that such failures arise when semantic invariance suppresses correspondence cues for closed-loop control, or when these cues are not exposed to the policy in a usable form. Modern visual encoders provide strong semantic abstractions, but contact-rich manipulation requires correspondence sensitivity: discriminative feature responses to action-relevant changes in pose, boundary, and contact geometry. Diffusion features provide a strong prior for dense correspondence, but direct use is impractical due to stochasticity, latency, and representation drift. We introduce Robot-DIFT, a deterministic diffusion-derived backbone for real-time control. Through Manifold Distillation, Robot-DIFT converts a noise-conditioned diffusion Teacher into a clean-input, single-pass Student while preserving the teacher's feature manifold. A Spatial--Semantic Feature Pyramid Network (S2-FPN) fuses coarse-to-fine Student decoder features into visual tokens that expose semantic context and fine contact detail to the policy. Across RoboCasa, LIBERO-10, and real robots, Robot-DIFT outperforms vision--language, self-supervised, geometry-oriented, and diffusion baselines on contact-sensitive tasks. Controlled backbone/readout swaps show that S2-FPN unlocks, rather than replaces, the diffusion correspondence prior."
+  },
+  {
+    "title": "SODA-CitrON: Static Object Data Association by Clustering Multi-Modal Sensor Detections Online",
+    "original_title": "SODA-CitrON: Static Object Data Association by Clustering Multi-Modal Sensor Detections Online",
+    "link": "https://arxiv.org/abs/2602.22243",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.22243v3 Announce Type: replace \nAbstract: The online fusion and tracking of static objects from heterogeneous sensor detections is a fundamental problem in robotics, autonomous systems, and environmental mapping. Although classical data association approaches such as JPDA are well suited for dynamic targets, they are less effective for static objects observed intermittently and with heterogeneous uncertainties, where motion models provide minimal discriminative power with respect to clutter. In this paper, we propose a novel method for static object data association by clustering multi-modal sensor detections online (SODA-CitrON), while simultaneously estimating positions and maintaining persistent tracks for an unknown number of objects. The proposed unsupervised machine learning approach operates in a fully online manner and handles temporally uncorrelated and multi-sensor measurements. Additionally, it has a worst-case loglinear complexity in the number of sensor detections while providing full output explainability. We evaluate the proposed approach in different Monte Carlo simulation scenarios and compare it against state-of-the-art methods, including POM-based filtering, DBSTREAM clustering, and JPDA. The results demonstrate that SODA-CitrON consistently outperforms the compared methods in terms of F1 score, position RMSE, MOTP, and MOTA in the static object mapping scenarios studied."
+  },
+  {
+    "title": "Sparse Autoencoders Reveal Interpretable and Steerable Features in VLA Models",
+    "original_title": "Sparse Autoencoders Reveal Interpretable and Steerable Features in VLA Models",
+    "link": "https://arxiv.org/abs/2603.19183",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.19183v2 Announce Type: replace \nAbstract: Vision-Language-Action (VLA) models have emerged as a promising approach for general-purpose robot manipulation. However, little research has mechanistically explored when and why they generalize across objects, scenes, and instructions. To probe internal representations, we train Sparse Autoencoders (SAEs) on the VLA's hidden-layer activations. SAEs learn sparse dictionaries over model activations, often revealing features that correspond to interpretable directions in the model's representation space. We identify SAE features corresponding to motion primitives and semantic concepts, including features that are general across episodes and causally steerable. We propose a metric to categorize features as general transferable primitives or episode-specific memorizations, offering a promising glimpse towards VLA generalization. We validate these findings through steering experiments on both the LIBERO simulation benchmark and on real-world DROID hardware. We find that amplifying general and semantic features induces behaviors consistent with their meanings, whereas ablating them destroys model performance. Furthermore, we demonstrate steering as a way to control behavior in unpromptable directions. Together, these results provide mechanistic evidence that VLAs can learn reusable internal features linking perception, language, and action across tasks and scenes. Our project page is located at https://drvla.github.io"
+  },
+  {
+    "title": "FingerEye: Learning Dexterous Manipulation with Continuous Vision-Tactile Sensing",
+    "original_title": "FingerEye: Learning Dexterous Manipulation with Continuous Vision-Tactile Sensing",
+    "link": "https://arxiv.org/abs/2604.20689",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.20689v3 Announce Type: replace \nAbstract: Dexterous robotic manipulation requires perception that remains informative from pre-contact approach to contact initiation and post-contact control. We introduce FingerEye, a sensing and learning framework that strengthens robotic dexterity through continuous vision-tactile feedback throughout interaction. On the sensing side, FingerEye integrates binocular RGB cameras with a compliant contact interface to support perception both before and after contact. Before contact, the fingertip cameras provide close-range visual cues and implicit stereo for precise approach and object localization. After contact, marker-tracked deformation of the compliant ring provides a proxy for contact wrench sensing. On the learning side, we build real-and-sim infrastructure for data collection and evaluation, systematically study policy-interface designs for learning with multiple FingerEye sensors, and develop FingerEye Policy, which applies group-structured modality fusion to reduce modality shortcuts and better exploit distributed fingertip feedback. Across seven contact-sensitive task settings, FingerEye improves wrist-only policy by over 30 percentage points in mean success rate in both simulation and the real world."
+  },
+  {
+    "title": "CodeGraphVLP: Code-as-Planner Meets Semantic-Graph State for Non-Markovian Vision-Language-Action Models",
+    "original_title": "CodeGraphVLP: Code-as-Planner Meets Semantic-Graph State for Non-Markovian Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2604.22238",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2604.22238v2 Announce Type: replace \nAbstract: Vision-Language-Action (VLA) models promise generalist robot manipulation, but are typically trained and deployed as short-horizon policies that assume the latest observation is sufficient for action reasoning. This assumption breaks in non-Markovian long-horizon tasks, where task-relevant evidence can be occluded or appear only earlier in the trajectory, and where clutter and distractors make fine-grained visual grounding brittle. We present CodeGraphVLP, a hierarchical framework that enables reliable long-horizon manipulation by combining a persistent semantic-graph state with an executable code-based planner and progress-guided visual-language prompting. The semantic-graph maintains task-relevant entities and relations under partial observability. The synthesized planner executes over this semantic-graph to perform efficient progress checks and outputs a subtask instruction together with subtask-relevant objects. We use these outputs to construct clutter-suppressed observations that focus the VLA executor on critical evidence. On real-world non-Markovian tasks, CodeGraphVLP improves task completion over strong VLA baselines and history-enabled variants while substantially lowering planning latency compared to VLM-in-the-loop planning. We also conduct extensive ablation studies to confirm the contributions of each component."
+  },
+  {
+    "title": "UAOR: Uncertainty-aware Observation Reinjection for Vision-Language-Action Models",
+    "original_title": "UAOR: Uncertainty-aware Observation Reinjection for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2602.18020",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.18020v2 Announce Type: replace-cross \nAbstract: Vision-Language-Action (VLA) models leverage pretrained Vision-Language Models (VLMs) as backbones to map images and instructions to actions, demonstrating remarkable potential for generalizable robotic manipulation. To enhance performance, existing methods often incorporate extra observation cues (e.g., depth maps, point clouds) or auxiliary modules (e.g., object detectors, encoders) to enable more precise and reliable task execution, yet these typically require costly data collection and additional training. Inspired by the finding that Feed-Forward Network (FFN) in language models can act as \"key-value memory\", we propose Uncertainty-aware Observation Reinjection (UAOR), an effective, training-free and plug-and-play module for VLA models. Specifically, when the current language model layer exhibits high uncertainty, measured by Action Entropy, it reinjects key observation information into the next layer's Feed-Forward Network (FFN) through attention retrieval. This mechanism directly augments the hidden states with observation evidence at high-uncertainty layers, enabling more accurate and reliable action generation. Comprehensive experiments show that our method consistently improves diverse VLA models across simulation and real-world tasks with minimal overhead. Notably, UAOR eliminates the need for additional observation cues or modules, making it a versatile and practical plug-in for existing VLA pipelines. The project page is at https://uaor.jiabingyang.cn."
   },
   {
     "title": "TARS brings real-life embodied AI to ICRA 2026 robotics conference",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "이 연구는 사용자의 손 자세와 목표 작업을 기반으로 실시간으로 물품 전달 자세를 동적으로 조정하는 새로운 적응형 프레임워크를 제시하며, AI 기반 손 자세 추정과 부드러운 운동학적 제약 경로를 통합하여 안전한 접근 및 최적의 전달 자세를 보장함. 사용자 연구 결과는 정적인 기준 대비 적응형 방법이 인간 작업 능력 및 신체적 스트레스 감소, 로봇 신뢰도에 대한 인식 증가 등을 보여줌으로써 태스크와 자세를 인지하는 시스템의 유연하고 역학적 인간-로봇 협업 가능성을 강조함."
-  },
-  {
-    "title": "포인트 및 그립: 확률적 큐 통합을 통한 미달 물체의 유연한 선택",
-    "original_title": "Point & Grasp: Flexible Selection of Out-of-Reach Objects Through Probabilistic Cue Integration",
-    "link": "https://arxiv.org/abs/2604.22491",
-    "date": "2026-04-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "MR 환경에서 미달하는 물체를 선택하는 것은 기본적인 작업이며, 이 연구는 사용자 생성 신호들을 결합하여 의도 추론에 활용하는 확률적 큐 통합 프레임워크를 소개합니다. 새로운 상호작용 기술인 Point&Grasp를 통해 지시 방향과 그립 제스처를 이용하며, Out-of-Reach Grasping (ORG) 데이터셋을 구축하여 강력한 추측 모델을 학습했습니다. 큐 통합 기법은 다른 방법보다 정확성 및 속도 개선에 효과적이며, 다양한 모호성 상황에서 우수한 성능을 보여줍니다."
-  },
-  {
-    "title": "리만 특징과 RNN을 이용한 고차원 손 동작 디코딩",
-    "original_title": "Decoding High-Dimensional Finger Motion from EMG Using Riemannian Features and RNNs",
-    "link": "https://arxiv.org/abs/2604.22499",
-    "date": "2026-04-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "근전도 신호를 사용하여 다변량 손 운동을 실시간으로 예측하는 시스템을 개발하고, 이는 저렴한 소비자 장비를 통해 EMG-FK 데이터 세트 (10 시간)를 수집하여 고차원 손 운동 디코딩의 장벽을 낮추고 더 자연스러운 인터페이스 구현에 기여함."
-  },
-  {
-    "title": "지속적 로봇 학습에서 나타나는 자기 개념의 증거",
-    "original_title": "Evidence of an Emergent \"Self\" in Continual Robot Learning",
-    "link": "https://arxiv.org/abs/2603.24350",
-    "date": "2026-04-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "지속적인 학습을 겪는 로봇은 변화하는 작업에 적응하면서 일정 부분을 유지하는 하위 네트워크를 개발하며, 이 하위 네트워크는 기능적으로 중요하며 적응력을 높이고 손상시키면 성능 저하로 이어짐"
-  },
-  {
-    "title": "접촉 및 간접 제어 기반의 조인트 로봇 동작 시스템 연구",
-    "original_title": "Dynamic Coupling and Indirect Control of Jointed Robots Rolling Atop A Moving Platform",
-    "link": "https://arxiv.org/abs/2604.22104",
-    "date": "2026-04-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "자유롭게 회전하고 피벗하는 바퀴를 통해 지지되는 비대칭 두 연결로봇이 관절 각도의 진동을 통해 물고기 수영과 유사한 undulatory locomotion을 발현함. 두 개의 로봇이 공유 플랫폼 위에 올라가면 서로의 동작이 연관되어 나타나며, 이 시스템의 수학적 모델 및 시뮬레이션 결과를 제시함. 또한, 운동이 제어되는 플랫폼 위에서 자발적으로 관절을 움직이는 로봇은 플랫폼 가속도 입력에 따라 목표 함수를 추적하며 고정점 주위로 회전하거나 원하는 방향으로 지속적인 이동이 가능함."
-  },
-  {
-    "title": "실제 제조 공정에서 사용되는 학습 증강 로봇 자동화",
-    "original_title": "Learning-augmented robotic automation for real-world manufacturing",
-    "link": "https://arxiv.org/abs/2604.22235",
-    "date": "2026-04-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "연구진은 전통적인 산업 로봇 워크플로우에 학습 기반 작업 제어자와 신경망 3D 안전 모니터를 통합한 '학습 증강 로봇 자동화' 시스템을 개발하여 실제 제조 라인에서 연속적으로 5시간 10분 이상 작동하며, 손상이 없는 케이블을 연결하고 리드기를 장착하는 작업을 수행하였다."
-  },
-  {
-    "title": "변형 저항성 MPC의 다리 보행에서 거짓 가능성",
-    "original_title": "False Feasibility in Variable Impedance MPC for Legged Locomotion",
-    "link": "https://arxiv.org/abs/2604.22251",
-    "date": "2026-04-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "변형 저항성 MPC 방식이 제한적인 작동 동작 하에 실현 가능한 범위보다 큰 가능성을 가질 수 있으며, 이는 모델링 오차가 아니라 공식적 오류임을 밝혀냈다. 이러한 불일치를 설명하는 무차원 매개변수 alpha(actuator bandwidth times task timescale)를 제시하고,  1D hopping monoped 시스템에서 알파 값이 특정 하한선보다 작으면, 파라미터 기반 예측을 실현 가능하게 하는 댐핑 강성 명령이 존재하지 않는다는 것을 증명했다."
-  },
-  {
-    "title": "로보틱스 성공, 궤도에 올라 - 중국일보",
-    "original_title": "Robotics success on track - China Daily",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBPZzhRbXRwajhDcTRBNHQ5Sk5ONnRJcnNVSXdrelZMQXlJT2dBcVFqZDVnejg5dkZsa09tWURhUHR1VXFaTl9OZnlpM0NOdWNFWDh3M0loY196R3RYcm95R1JyNGFWcGl0ejV5Z3JNTG9kWkN2YnI4U0d6Mlk5QQ?oc=5",
-    "date": "2026-04-27 01:43",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국은 로봇 분야에서 큰 성공을 거두고 있으며 앞으로 더 발전할 전망이다."
-  },
-  {
-    "title": "중국형 로봇 조인트 제조업체 리더드라이브 뒤에 선대하는 형제가 인공지능로봇 수요 급증으로 부자가 되는|| 중국의 형제 사업자들이 생산하는 로봇 조인트의 수요 증가로 리더드라이브를 통하여 전 세계적으로 부유층 진입을 이루었다.",
-    "original_title": "Chinese brothers behind robot joint maker Leaderdrive become billionaires as humanoid demand surges - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOUWZNS3g3Ujg3LU45Q3dHYzQ1TlZfSUJjMUlLR0pQSmFiTHB1TTRBQzFFZTJhTnp4RmFkaVVJeHNnV1lvYnd5TmJscW92SVJrcFpDYUdXQWMwWmw1WTl2MzNLZjBTR3pHX0pWSDVGMy1fcVE4S2p3eVBWRkNySVR0ZUFQaFB0OUNaVFQ1MHhIUEFSbDA2OUUxRVdKY3doQlpNVlFsUWlUbFpFU3ZyLU9ZT1J2bjFNbnJhMC1PZmNkZEFUTC1WeElyendCU3Fkb2xoa1hGdXVJd3U0ZkloTmg5T3ZIWjhkcEktTGV4QnNwS1hjQQ?oc=5",
-    "date": "2026-04-27 00:52",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국형 로봇 조인트 제조업체 리더드라이브 뒤에 선대하는 형제가 인공지능로봇 수요 급증으로 부자가 되는|| 중국의 형제 사업자들이 생산하는 로봇 조인트의 수요 증가로 리더드라이브를 통하여 전 세계적으로 부유층 진입을 이루었다."
-  },
-  {
-    "title": "유니트리 인형 로봇, 스케이트 타고 뛰어넘고 회전함",
-    "original_title": "Unitree humanoid robot executes skating, flips and spins - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUjQ4T295WG1rV0NHX1BjYm5BLUd5emx2Zi1JLTdRVlV4WE43dmp5WDlHYTRzVnVuVVRpM1FSZ3VuTzQ1X2R0NWlSWEpzVG5LejJYdmhtdDhQalcycXYzR3V0d1lWT08wN2hDcFRLNXhmRGI0WXlCMTZHLTZmVm43LUhzX0pVcTZqeDN3bDBERjkwRmRjTFZHVXJPUEk5Vjd0YlJYb2xpeGNSLUp0aWhwNXlR?oc=5",
-    "date": "2026-04-26 23:52",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "유니트리에서 개발한 인형 로봇이 스케이트를 타고 다양한 동작을 수행하는 모습을 보여주었음. 이 로봇은 스케이트처럼 자유로운 이동과 함께 flips와 spins도 가능하며, 향후 여러 분야에 활용될 것으로 전망됨."
   }
 ]
