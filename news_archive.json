@@ -144,6 +144,78 @@
     "summary": "arXiv:2606.08253v1 Announce Type: new \nAbstract: Enabling humanoid robots to operate in complex, dynamic environments remains a critical challenge, fundamentally limited by the ability to navigate robustly, safely, and accurately. While reinforcement learning with velocity-commanded policies has achieved remarkable robustness in humanoid locomotion, this approach lacks explicit control of the foothold placement, leading to unsafe behavior, such as stepping onto human feet, or imprecise navigation, hindering the following manipulation task. Conversely, explicit foothold-tracking policies offer a promising alternative by directly being commanded with target foot poses. However, existing approaches are often limited by unrealistic state assumptions, compromising real-world deployment, or they are part of staged pipelines, making them tied to specific downstream tasks. In this work, we introduce a novel, lightweight framework for training general-purpose 3D foothold-tracking policies. By dynamically providing footstep support through a goal sampler, this method enables the learned policy to be agnostic to specific terrains. Our new target representation effectively mitigates challenges arising in the real world, such as noisy and inaccurate pose estimation and foot contact estimation. Designed for direct real-world transfer, our policy acts as a standalone low-level controller that can be seamlessly paired with various high-level foothold generators. We demonstrate the effectiveness of our framework through extensive experiments in simulation and in the real world. By coupling our policy with different upstream planners, we achieve natural and accurate locomotion in challenging settings, paving the way for loco-manipulation tasks in complex environments."
   },
   {
+    "title": "SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loco-manipulation",
+    "original_title": "SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loco-manipulation",
+    "link": "https://arxiv.org/abs/2606.08278",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.08278v1 Announce Type: new \nAbstract: Humanoid foundation models are advancing faster than we can evaluate them. While real-world testing is expensive and difficult to reproduce, existing simulation benchmarks focus primarily on table-top or wheeled robots. A scalable and reproducible benchmark for whole-body humanoid loco-manipulation remains an open problem. To this end, we present SIMPLE, a unified simulation testbed for humanoid policy learning and evaluation. SIMPLE couples the accurate contact-rich dynamics of MuJoCo with the photorealistic rendering of IsaacSim. It provides a large-scale environment comprising 60 diverse whole-body tasks, 50 indoor scenes, and over 1,000 object assets. To facilitate scalable data collection, the framework integrates two data generation pipelines: automated trajectory generation via motion planning and a low-latency VR teleoperation interface. We further integrate and benchmark mainstream humanoid policies at scale in SIMPLE, including lightweight imitation networks, large vision-language-action (VLA) models, and recent world action models (WAMs). Our experiments reveal a strong correlation between policy performance in simulation and the real world. Furthermore, we demonstrate that policies trained on data collected in SIMPLE can be transferred zero-shot to physical humanoid robots under similar settings, providing a robust and reproducible foundation for humanoid robotics research."
+  },
+  {
+    "title": "MotionVLA: Injecting Geometric Motion into Vision-Language-Action Model",
+    "original_title": "MotionVLA: Injecting Geometric Motion into Vision-Language-Action Model",
+    "link": "https://arxiv.org/abs/2606.08288",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.08288v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models increasingly condition robot policies on history, depth, or 4D features to resolve ambiguity in long-horizon manipulation. However, more spatiotemporal evidence is not necessarily better: when the injected evidence is not motion-consistent, it can introduce geometric drift, fragmented temporal cues, and unstable action generation. This raises a simple question: should a VLA remember past frames, or remember the motion that connects them? We introduce MotionVLA, a motion-history interface that converts a short past-only video window into compact, time-continuous trajectory-field tokens. Instead of treating history as a sparse set of ndependently lifted frames, MotionVLA represents recent observations as physically coherent motion evidence. Current visual tokens query this history to retrieve task-relevant motion information, which is then recoupled into the VLA stream under trajectory-grounded supervision. Experiments across simulation benchmarks and preliminary real-robot rollouts show that MotionVLA improves long-horizon manipulation while producing smoother and more direct executions. These results suggest that effective VLA memory is not just about providing more 4D context, but about exposing motion-consistent evidence that is usable for control."
+  },
+  {
+    "title": "Uncertainty-Aware Intention Prediction for Human-to-Robot Assembly Teleoperation",
+    "original_title": "Uncertainty-Aware Intention Prediction for Human-to-Robot Assembly Teleoperation",
+    "link": "https://arxiv.org/abs/2606.08341",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.08341v1 Announce Type: new \nAbstract: In assisted teleoperation for human-robot collaboration, accurate intention prediction is critical for enabling timely and reliable robotic assistance during long-horizon manipulation and assembly tasks. These systems require continuous understanding of user behavior to recognize actions, anticipate intentions, and detect mistakes in real time. However, robot teleoperation demonstrations are costly and hardware-limited, whereas human demonstrations are easier to collect and provide rich temporal structure. To address this challenge, we propose an uncertainty-aware human-to-robot intention prediction framework that combines: (1) hierarchical transfer learning, where MS-TCN++ is pretrained on human hand demonstrations and fine-tuned on limited robot teleoperation data to capture low-level actions and high-level task intentions; (2) a conformal prediction module that provides frame-level prediction sets with statistical coverage guarantees for reliable uncertainty quantification and early intention estimation; and (3) VLM-guided segment correction, which selectively reviews low-confidence or temporally uncertain segments using visual and temporal context. The framework supports action recognition, temporal segmentation, intention anticipation, and mistake detection for assisted teleoperation. Experiments on robot assembly demonstrations with 22 action classes show that human-to-robot fine-tuning improves the robot test-set Edit score from 70.50 to 80.70 using only 16 robot demonstrations. Edit-safe VLM correction further improves frame accuracy from 45.21% to 46.42% and increases F1@25 and F1@50 while preserving the Edit score. These results show that human demonstrations provide scalable pretraining data for robust, uncertainty-aware robot action segmentation. Code and data: project website."
+  },
+  {
+    "title": "PACT: Self-Evolving Physical Safety Alignment for Diffusion Policies in Embodied Manipulation",
+    "original_title": "PACT: Self-Evolving Physical Safety Alignment for Diffusion Policies in Embodied Manipulation",
+    "link": "https://arxiv.org/abs/2606.08414",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.08414v1 Announce Type: new \nAbstract: Diffusion policies have achieved remarkable success in robotic manipulation, yet they often fail to satisfy strict physical constraints required for safe deployment. Existing approaches impose safety either prematurely during training or reactively via external guardrails at test time, limiting policy expressivity and overall scalability. We propose Physical safety Alignment for Constrained Trajectories (PACT), a self-evolving post-training framework that projects pretrained diffusion policies onto constraint-feasible regions without accessing demonstration data or task rewards. PACT distills constraint gradients into the diffusion model through a reverse-KL objective with dense supervision across timesteps. It incorporates a curriculum that progressively tightens constraints while maintaining theoretically bounded policy shift and monotone improvement, mitigating the safety-performance trade-off from catastrophic forgetting. On simulated and real-world embodied manipulation benchmarks, PACT significantly reduces safety violations by 31.0% on average while improving task success by 30.7%."
+  },
+  {
+    "title": "GraspFoM: Towards Reconstruction-Driven Robotic Grasping with 3D Foundation Priors",
+    "original_title": "GraspFoM: Towards Reconstruction-Driven Robotic Grasping with 3D Foundation Priors",
+    "link": "https://arxiv.org/abs/2606.08440",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.08440v1 Announce Type: new \nAbstract: Robotic grasping is a fundamental capability in robotic manipulation. Yet grasping remains challenging under partial observations. Reliable grasping depends on both local contact cues and object-level 3D structure. Existing geometry-aware grasping methods recognize the value of reconstruction, but they typically treat geometry as an intermediate prediction rather than a reusable object prior for grasping. In this paper, we present GraspFoM, a unified framework that leverages 3D foundation priors (SAM3D) to build a shared 3D object latent for both reconstruction and grasp pose prediction. Built on this shared object latent, we introduce an anchor-initialized truncated pose-reasoning diffuser that predicts continuous and multimodal grasp poses without directly relying on discrete grasp candidates. We further investigate the interaction between reconstruction and grasping through a reconstruction-aware scorer and a residual latent updater. Reconstruction provides grounded geometric cues, while grasp supervision refines the shared object latent toward grasp-relevant affordances. GraspFoM jointly predicts grasp poses and reconstructs high-fidelity 3D assets in mesh and 3DGS forms. Comprehensive experiments demonstrate that GraspFoM achieves state-of-the-art results on both reconstruction and grasping. Notably, these improvements require only a small number of additional trainable parameters. Component-wise ablation studies also demonstrate the contribution of each component."
+  },
+  {
+    "title": "EgoPriMo: Egocentric Motion Generation for Interactive Humanoid Control",
+    "original_title": "EgoPriMo: Egocentric Motion Generation for Interactive Humanoid Control",
+    "link": "https://arxiv.org/abs/2606.08495",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.08495v1 Announce Type: new \nAbstract: Humanoid robots require whole-body motions that adapt to scene context, task requirements, and user intent. Motion tracking reproduces specified trajectories, and humanoid vision-language-action systems provide semantic interfaces, but neither offers a scalable and interactive prior for broad full-body behavior. We introduce EgoPriMo (Egocentric Motion Prior for Humanoid Robots), a unified framework that learns such priors from egocentric human demonstrations. Given egocentric observations and a text prompt, EgoPriMo reconstructs, generates, and forecasts SMPL-based full-body motion. Language is used as a high-level control signal rather than a complete motion specification. At the core of EgoPriMo is a Triple-stream DiT that jointly models body dynamics, egocentric visual context, and text; task-conditioning masks route different tasks and missing-modality data through the same checkpoint. Experiments on Nymeria and EgoExo4D show that one checkpoint improves egocentric motion generation over UniEgoMotion while supporting reconstruction and forecasting; the generated SMPL motions can also be executed by a Unitree humanoid controller. These results indicate a practical path from scalable egocentric observations to generalizable and interactive humanoid motion priors."
+  },
+  {
+    "title": "GEAR-VLA: Learning Geometry-Aware Action Representations for Generalizable Robotic Manipulation",
+    "original_title": "GEAR-VLA: Learning Geometry-Aware Action Representations for Generalizable Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.08530",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.08530v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models achieve strong benchmark performance but still struggle in real-world deployment with unseen objects, background shifts, and different robot embodiments. We argue that this stems from the lack of a unified geometry-aware manipulation representation, leaving existing VLAs vulnerable to low-level trajectory supervision, misaligned 3D features, and embodiment differences. To address this, we propose GEAR-VLA, a VLA framework for learning unified geometry-aware action representations for generalizable robotic manipulation. GEAR-VLA adopts coarse-to-fine action learning, where multi-source embodied pretraining equips the VLM with embodied reasoning and discrete action understanding before latent action tokens connect action semantics to a gradient-decoupled DiT continuous action expert. It further performs semantic-aligned 3D integration by aligning a trainable 3D spatial backbone with the VLA representation while freezing the original VLM-aligned visual pathway. To share this representation across robots, GEAR-VLA uses embodiment canonicalization, where embodiment-aware states and embodiment-invariant actions confine robot differences to the low-level interface. Extensive simulation and real-world experiments demonstrate strong generalization: GEAR-VLA achieves state-of-the-art performance on LIBERO, zero-shot LIBERO-Plus, and RoboTwin 2.0, reaches 85.9% success on AgileX and 81.0% on the pretraining-unseen LDT-01 embodiment, and obtains 90.1% success on a 6,360-trial universal grasping benchmark with 212 unseen objects. Code and models will be released at https://github.com/babynabeauty/GEAR-VLA."
+  },
+  {
+    "title": "When Video Misreads: Closed-Loop Distillation of Reading Heuristics for Exploratory Manipulation Trace QA",
+    "original_title": "When Video Misreads: Closed-Loop Distillation of Reading Heuristics for Exploratory Manipulation Trace QA",
+    "link": "https://arxiv.org/abs/2606.08542",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.08542v1 Announce Type: new \nAbstract: Exploratory manipulation often turns an apparent failed attempt into the key evidence for what to do next. For example, a robot pulls a locked cabinet drawer, fails, and only succeeds after opening the lock. The failed pull reveals a latent precondition (the drawer is locked) that determines the minimal-success action chain (the fewest actions that complete the task), here [lock-open, drawer-pull]. Correctly reading this trace is therefore the prerequisite for recovering that chain. We formalize this setting as Exploratory Manipulation Trace QA (EMT-QA): given synchronized video and proprioception from an exploratory trace, predict the minimal-success action chain under the latent precondition revealed by the probe. However, even state-of-the-art VLMs and embodied multimodal LLMs misread this evidence: they do not reliably recover the chain from raw video, raw proprioception, or their combination.\n  We introduce Closed-Loop Trace Distillation, a pipeline that uses a per-task coding agent to inspect labeled training traces and distill a one-line natural-language prompt over the trace, which we call the Distilled Reading Heuristic (DRH). At inference, no agent is invoked and no model weights are updated; a frozen VLM receives the raw trace plus the DRH as a prompt entry. Across three simulator and two real-robot tasks, the DRH improves chain accuracy by +0.38 to +0.47 over the best raw-modality baseline. The same DRH also serves as the sole specification for one-shot programmatic classifiers that match the prompted VLM."
+  },
+  {
     "title": "TARS brings real-life embodied AI to ICRA 2026 robotics conference",
     "original_title": "TARS brings real-life embodied AI to ICRA 2026 robotics conference",
     "link": "https://roboticsandautomationnews.com/2026/06/08/tars-brings-real-life-embodied-ai-to-icra-2026-robotics-conference/102367/",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "이 연구에서는 인형 로봇의 스킬 전환 중 안정성과 부드러움을 보장하는 하이브리드 전문 정책 프레임워크인 RPG를 제안. RPG는 동작 전환 랜덤화 및 시간적 랜덤화를 통해, 스킬 전환 중에 유연하고 안정적인 전투 동작을 생성하는 통합된 정책을 학습하며, 보행/달리기 등의 운동 능력과 전투 기술을 통합한 제어 파이프라인을 설계하여 임의 기간 동안 인간과 같은 장시간 전투를 가능하게 함."
-  },
-  {
-    "title": "MISTY: 믹서 기반 단일 단계 드리프팅을 통한 고속 동작 계획",
-    "original_title": "MISTY: High-Throughput Motion Planning via Mixer-based Single-step Drifting",
-    "link": "https://arxiv.org/abs/2604.21489",
-    "date": "2026-04-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "MISTY는 혼합기(Mixer)를 사용하여 단일 단계 추론으로 최첨단 성능을 달성하는 고속 생성 운동 플래너이다.  환경 맥락을 캡처하기 위한 벡터화 Sub-Graph 인코더, 전문 경로를 32차원의 공간으로 구조화하는 변분 오토인코더, 제곱형 주의 복잡도를 제거하는 가벼운 MLP-Mixer 디코더와 특징적인 드리프팅 손실함수를 사용한다."
-  },
-  {
-    "title": "장거리 인간 운전이 없는 차량 무리의 구성 및 제어 방안 연구",
-    "original_title": "PREVENT-JACK: Context Steering for Swarms of Long Heavy Articulated Vehicles",
-    "link": "https://arxiv.org/abs/2604.21337",
-    "date": "2026-04-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 논문은 장시간 인간 운전을 하지 않는 차량(HAV)으로 구성된 무리를 위한 새로운 접근 방식인 Prevent-Jack를 제시하며, 긴장 연결 구조를 가진 HAV의 특징을 고려하여 충돌 및 자기 파손 방지를 위한 지도 없는 협력 전략을 개발함."
-  },
-  {
-    "title": "개방형 환경에서 VLA(실제로) 작동 방식",
-    "original_title": "How VLAs (Really) Work In Open-World Environments",
-    "link": "https://arxiv.org/abs/2604.21192",
-    "date": "2026-04-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "최근에는 보행1K와 같은 벤치마크를 통해 복잡한 가정용 태스크를 해결하는 데 VLAs의 활용이 증가하고 있지만, 기존 평가 방식은 안전성을 고려하지 않고 단지 최종 상태만 판단하기 때문에 실제 세계 적용에 대한 과장된 성과를 나타낼 수 있다는 지적이 이루어졌으며, 본 논문에서는 B1K Challenge에서 주요 모델의 성능 분석 및 복구 가능성, 일관성, 안전성, 작업 인식 등을 평가하여 진정한 성능 측정을 위한 새로운 평가 프로토콜 제시를 목표로 한다."
-  },
-  {
-    "title": "인간 환경에서 작동하는 로봇 시스템은 물체 상호작용이 시간에 따라 어떻게 진화하는지, 현재 어떤 작업이 수행되고 있는지, 다음 어떤 조작 단계가 있을 것으로 예상되는지 이성적으로 추론해야 합니다. 본 논문에서는 확신 인식을 가진 관계 개념을 추가한 eSEC-LAM 프레임워크를 제안하여 Manipulation 이해에 적용합니다.   본 프레임워크는 기반 모델 기반의 인식 전단부에서 결정론적인 관계 추출을 통해 생성되며, 현재 작업 추론 및 다음 기본 단계 예측은 기본적 전후 조건을 사용하는 가벼운 상징적 추리로 수행됩니다.",
-    "original_title": "Neuro-Symbolic Manipulation Understanding with Enriched Semantic Event Chains",
-    "link": "https://arxiv.org/abs/2604.21053",
-    "date": "2026-04-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "인간 환경에서 작동하는 로봇 시스템은 물체 상호작용이 시간에 따라 어떻게 진화하는지, 현재 어떤 작업이 수행되고 있는지, 다음 어떤 조작 단계가 있을 것으로 예상되는지 이성적으로 추론해야 합니다. 본 논문에서는 확신 인식을 가진 관계 개념을 추가한 eSEC-LAM 프레임워크를 제안하여 Manipulation 이해에 적용합니다.   본 프레임워크는 기반 모델 기반의 인식 전단부에서 결정론적인 관계 추출을 통해 생성되며, 현재 작업 추론 및 다음 기본 단계 예측은 기본적 전후 조건을 사용하는 가벼운 상징적 추리로 수행됩니다."
-  },
-  {
-    "title": "로봇 장치의 전체 신체 동적 안전성 확보: CBF 기반 안전 필터에 적용되는 3D 포아송 안전 함수",
-    "original_title": "Full-Body Dynamic Safety for Robot Manipulators: 3D Poisson Safety Functions for CBF-Based Safety Filters",
-    "link": "https://arxiv.org/abs/2604.21189",
-    "date": "2026-04-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 연구는 로봇 매니퓰레이터의 전체 신체 충돌 회피를 위해 3D 포아송 안전 함수(PSFs)를 활용하는 프레임워크를 제시하며, 환경 점유 데이터를 기반으로 로봇 표면을 샘플링하고 Pontryagin 차이를 통해 자유 공간을 축소하여 완벽한 환경 안전함수를 생성한다."
-  },
-  {
-    "title": "VistaBot: 시공간 인식 기반 비주 견고성을 갖춘 로봇 조작",
-    "original_title": "VistaBot: View-Robust Robot Manipulation via Spatiotemporal-Aware View Synthesis",
-    "link": "https://arxiv.org/abs/2604.21914",
-    "date": "2026-04-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 논문은 View-Robust Robot Manipulation을 위한 VistaBot 프레임워크를 제시하며, 공격형 형태 기하학 모델과 동영상 확산 모델을 통합하여 시험 시간에 카메라 교정이 필요 없는 견고한 폐쇄 루프 조작을 달성한다.  VistaBot는 4D 기하 추정, 관점 합성 잠재 추출 및 잠재적 행동 학습의 세 가지 핵심 구성 요소로 이루어져 있으며, 시뮬레이션과 실제 작업에서 ACT와 $\\pi_0$ 정책에 통합되어 평가된다."
-  },
-  {
-    "title": "로봇 인공지능 정책 학습을 위한 행동 공간 설계의 해명",
-    "original_title": "Demystifying Action Space Design for Robotic Manipulation Policies",
-    "link": "https://arxiv.org/abs/2602.23408",
-    "date": "2026-04-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 로봇 manipulation 정책 학습에서 행동 공간의 중요성을 강조하며, 시간과 공간적 차원에서 행동 디자인 공간을 분석하여 정책 학습 성능과 제어 안정성에 미치는 영향을 조사했다. 13,000+개의 실제 시행 및 500개 이상의 모델 평가를 통해 절대 표현 대 delta 표현, joint-space vs. task-space 파라메타라이저 간의 성능 상이점을 분석하였다."
-  },
-  {
-    "title": "짧거리 자기 작동 및 우주선 정박 적용을 위한 학습 기반 코일 기하학 학습",
-    "original_title": "Certified Coil Geometry Learning for Short-Range Magnetic Actuation and Spacecraft Docking Application",
-    "link": "https://arxiv.org/abs/2507.03806",
-    "date": "2026-04-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 논문은 수치적 및 실험적 검증으로 뒷받침되는 정확한 자기장 상호작용 모델을 근사화하는 학습 기반 프레임워크를 제시. 전산 비용 효율성을 위해 디폴 방정식과 같은 근사 방법에 의존했지만, 이러한 방법은 근접 운항 중 정확도 손실로 인해 불안정한 동작 및 충돌로 이어질 수 있음.  제안된 프레임워크는 정밀한 모델을 효율적으로 계산할 수 있는 코일 간 전류 벡터를 결과 힘과 토크로 매핑하는 계수 행렬을 직접 유도함."
   }
 ]
