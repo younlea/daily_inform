@@ -1,5 +1,14 @@
 [
   {
+    "title": "RLWRLD and Nvidia launch DexBench to standardize humanoid robot dexterity",
+    "original_title": "RLWRLD and Nvidia launch DexBench to standardize humanoid robot dexterity",
+    "link": "https://roboticsandautomationnews.com/2026/06/09/rlwrld-and-nvidia-launch-dexbench-to-standardize-humanoid-robot-dexterity/102371/",
+    "date": "2026-06-09 07:07",
+    "source": "Robotics & Automation News",
+    "category": "hand",
+    "summary": "RLWRLD, a physical AI company, in collaboration with Nvidia has launched an initiative to develop next-generation industry standards for humanoid robot AI. RLWRLD will focus on three pillars: DexBench, a universal benchmark for evaluating dexterity performance; data standard for dexterous manipulation training; and deep integration with the open Nvidia Isaac Lab and Isaac Lab-Arena frameworks. […]"
+  },
+  {
     "title": "VoLo: A Physical Orchestrator for Open-Vocabulary Long-Horizon Manipulation",
     "original_title": "VoLo: A Physical Orchestrator for Open-Vocabulary Long-Horizon Manipulation",
     "link": "https://arxiv.org/abs/2606.07723",
@@ -286,6 +295,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.08743v1 Announce Type: new \nAbstract: Diffusion models have become a powerful tool for generative modeling in robotics, with diffusion policies excelling at modeling multimodal action-trajectory distributions. However, when demonstrations are limited, standard sampling often reproduces dominant behaviors while neglecting valid but rare modes, limiting the discovery of novel solutions. Existing approaches, such as guidance methods or combining reinforcement learning with diffusion, either push samples into infeasible regions or struggle to escape local minima, failing to systematically uncover diverse behaviors. To address these challenges, we propose a framework that combines Feynman-Kac correctors with a novel guiding potential that systematically guides diffusion policy samples towards promising yet underrepresented samples. These trajectories are refined using sampling-based trajectory optimization and reincorporated into the training set to retrain the diffusion policy. Our method effectively mines and repairs novel trajectories, enabling the systematic discovery of diverse and executable behaviors. We demonstrate the effectiveness of our framework across a range of manipulation environments, consistently discovering new behaviors."
+  },
+  {
+    "title": "RGB-S: Image-Aligned Tactile Saliency for Robust Dexterous Manipulation",
+    "original_title": "RGB-S: Image-Aligned Tactile Saliency for Robust Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2606.08765",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.08765v1 Announce Type: new \nAbstract: Effective visuo-tactile integration is critical for robotic dexterous manipulation, especially when visual observations are unreliable or occluded. However, robustly aligning sparse, heterogeneous tactile measurements with dense visual representations remains a fundamental challenge. Most existing approaches require policies to learn cross-modal correspondences implicitly from limited demonstrations, without leveraging geometric priors. As a result, they are often data-inefficient and generalize poorly when visual observations are degraded. To address this limitation, we propose a framework that explicitly grounds physical contacts in the image domain. Using robot forward kinematics and camera calibration, we project tactile sensor locations directly onto the RGB image plane. We then render force-modulated Gaussian saliency maps to model spatial uncertainty arising from kinematic and calibration errors. By integrating these 2D spatial anchors through a zero-initialized conditioning architecture, our method injects physical contact priors into standard visual backbones while preserving pre-trained visual representations. We evaluate our method on six dexterous manipulation tasks in both simulation and the real world under severe visual occlusions. Real-world experiments show that explicit RGB-S grounding in the image domain improves real-world occluded manipulation success rates by $26.7$ percentage points over the strongest implicit visuo-tactile baseline, suggesting its improved spatial reasoning and robustness to occlusion. Project page: touch-as-saliency.github.io"
+  },
+  {
+    "title": "Unifying Object-Centric World Models and Diffusion Policy: A Hierarchical Framework for Multi-Stage Robotic Tasks",
+    "original_title": "Unifying Object-Centric World Models and Diffusion Policy: A Hierarchical Framework for Multi-Stage Robotic Tasks",
+    "link": "https://arxiv.org/abs/2606.08775",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.08775v1 Announce Type: new \nAbstract: Visual world models have shown great potential in learning complex system dynamics. Recent advancements leverage these models as transition functions within Model Predictive Control (MPC) frameworks to solve various control tasks. When applied to robotics, however, they are limited to single-stage tasks such as reaching or grasping, and struggle with multi-stage ones that demand complex sequential planning. In this work, we introduce WorldDP, a world model framework designed for multi-stage robotic manipulation. Our hierarchical approach utilizes a high-level world model as a transition function to optimize for feasible subgoals during runtime, which are subsequently reached by a low-level Diffusion Policy. To further aid in learning dynamics and planning, we incorporate object-centric representations that decouple environmental entities and enable us to plan sequentially with respect to each. Evaluated across several robotics benchmarks, WorldDP consistently outperforms existing baselines, validating that coupling the world model's physically grounded planning with diffusion policy's efficient execution yields superior multi-stage performance."
+  },
+  {
+    "title": "Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video",
+    "original_title": "Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video",
+    "link": "https://arxiv.org/abs/2606.08828",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.08828v1 Announce Type: new \nAbstract: Human manipulation videos are a convenient and intuitive source for robot learning. However, directly transferring human dexterity to robots remains challenging due to perception errors and embodiment gap. To address this, we introduce Video2Sim2Real, a full-stack framework for autonomous skill acquisition from a single human manipulation video. Our framework first uses off-the-shelf foundation models to reconstruct a simulator-ready digital twin and extract robot and object motion priors. Rather than treating the extracted robot motion as a reliable reference throughout execution, our key idea is to recover and leverage the most fundamental sources of supervision from the demonstrated skill: We identify object-centric keyframes to optimize the corresponding robot configurations using object information from the simulator, and use these configurations as anchors that refine the robot motion such that it ultimately has the desired impact on the environment. To bridge the remaining sim-to-real gap, we introduce a sim-to-real strategy that decouples robustness to noisy and incomplete perception from variations in hand-object interaction dynamics. Specifically, we learn to recalibrate robot configurations from noisy real-world point clouds via IL, and leverage residual RL to perform local finger-level adaptations to ensure for robust and effective interactions. Finally, a collision-aware motion planning module enables spatial generalization to novel object configurations. Across several everyday manipulation tasks, Video2Sim2Real improves simulated task success, safety, and trajectory coherence over numerous baselines, and achieves better sim-to-real transfer than existing techniques. These results demonstrate a promising path toward autonomous dexterous skill acquisition from human videos."
+  },
+  {
+    "title": "Benchmarking Vision-Language-Action Models on SO-101: Failure and Recovery Analysis",
+    "original_title": "Benchmarking Vision-Language-Action Models on SO-101: Failure and Recovery Analysis",
+    "link": "https://arxiv.org/abs/2606.08881",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.08881v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have demonstrated strong generalization in robotic manipulation, yet existing evaluations are primarily conducted in simulation or on expensive robotic platforms, leaving their robustness on affordable real-world robots largely unexplored. We present a standardized real-world benchmark for evaluating representative VLA and imitation learning policies on the low-cost SO-101 robotic platform. The benchmark comprises four representative manipulation tasks together with unified evaluation protocols, enabling systematic comparison under embodiment uncertainty. Using real-world teleoperated demonstrations, we fine-tune and evaluate $\\pi_{0.5}$, SmolVLA, Wall-X, and ACT directly on the physical platform. Beyond conventional task success rates, the benchmark incorporates a structured failure taxonomy, semantic- and execution-level failure decomposition, and recovery-aware evaluation metrics to characterize policy robustness. Experimental results show that stronger pretrained VLA policies generally outperform the imitation learning baseline, although performance remains highly task-dependent under low-cost robotic deployment conditions. Execution instability emerges as the dominant failure source, while recovery capability varies substantially across architectures. These results highlight the importance of failure and recovery analysis beyond binary task success and establish SO-101 as a practical benchmark for evaluating embodied AI systems under realistic low-cost robotic deployment conditions."
+  },
+  {
+    "title": "PTDL:Multi-Terrain Fall Recovery via Phase-Terrain Decoupled Learning",
+    "original_title": "PTDL:Multi-Terrain Fall Recovery via Phase-Terrain Decoupled Learning",
+    "link": "https://arxiv.org/abs/2606.08922",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.08922v1 Announce Type: new \nAbstract: Humanoid robots can fall on slopes, gravel, and uneven ground in unstructured environments. We target integrated fall recovery and locomotion: rebuilding balance from a fallen state using proprioception alone and resuming velocity-commanded walking at the fall site. Prior methods often stop at quasi-static rise, neglect the post-fall ground-contact phase, or, when trained on mixed terrains without separating recovery and locomotion phases or per-surface constraints, collapse to a single compromise get-up across surfaces. We propose Phase--Terrain Decoupled Learning (PTDL), which decouples training supervision along phase and terrain axes while deploying one proprioceptive policy. On the phase axis, projected-gravity-gated dual motion-prior discriminators and a probe-to-walk transition link post-fall recovery to commanded walking. On the terrain axis, terrain-stratified recovery shaping assigns surface-specific training supervision on flat ground, gravel, and slopes; terrain labels are training-only and withheld from policy observations, enabling implicit post-fall strategy selection at deployment. We validate PTDL on a 29-DoF Unitree G1 across flat ground, gravel, and slopes up to 20 degrees in simulation and on hardware, achieving stable cross-terrain recovery, smooth recovery-to-locomotion transitions, and differentiated post-fall rise behaviors under one deployed policy."
+  },
+  {
+    "title": "Deterministic Execution of ROS~2 Applications via Lingua Franca",
+    "original_title": "Deterministic Execution of ROS~2 Applications via Lingua Franca",
+    "link": "https://arxiv.org/abs/2606.09203",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09203v1 Announce Type: new \nAbstract: The Robot Operating System~2 (ROS 2) is a widely used middleware for robotic systems, characterized by a publish-subscribe (pub-sub) communication mechanism in which computation is structured as callbacks dispatched by ROS 2 executors. Despite its popularity, the pub-sub pattern in ROS 2 is inherently nondeterministic: the order in which these callbacks run is nondeterministic even within a single executor, and distributed deployments add further nondeterminism from the interleaving of messages across nodes and from network latency. Such nondeterminism often leads to concurrency issues and makes it virtually impossible to analyze for safeness and provide guarantees.\n  We present a framework that is able to convert an unmodified ROS 2 application and run it under Lingua Franca (LF), a coordination language for deterministic execution using logical time, so that the same input always produces the same deterministic execution order. We first describe which ROS 2 features can be executed deterministically under logical time. Such features enable the possibility to establish an automatic conversion framework to extract information from a ROS 2 application and directly convert it into an LF program. The rich features of LF, such as logical-time delays, federated execution across processes, and fault handling, can then be applied to make the ROS 2 application be executed in a deterministic and timing-predictable manner without changing the ROS 2 code. We evaluate the framework on a synthetic example and on the Autoware reference system. We show that the order in which callbacks are executed differs in default ROS 2, while also having end-to-end latencies that vary across executions. In contrast, our LF-controlled ROS 2 system produces a deterministic execution order and consistent end-to-end latencies."
+  },
+  {
+    "title": "MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation",
+    "original_title": "MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation",
+    "link": "https://arxiv.org/abs/2606.09215",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09215v1 Announce Type: new \nAbstract: World Action Models (WAMs) couple a video dynamics prior to the policy and have shown encouraging results on tabletop manipulation, but iterative denoising over high-dimensional video-action latents leaves them too slow for real-time humanoid loco-manipulation. The problem is compounded by the dominant hierarchical paradigm, in which a high-level manipulation policy controls only the upper body while a low-level controller tracks coarse base commands -- placing upper and lower body in inconsistent action spaces and reducing the legs to balance-preserving locomotion. We present MotionWAM, a real-time WAM that drives autonomous humanoid loco-manipulation from a single egocentric camera by conditioning the policy on the intermediate denoising features of a video world model. MotionWAM replaces the upper-lower split with a unified motion latent and predicts whole-body motion tokens that jointly cover locomotion, torso motion, height regulation, foot interaction, and hand manipulation in a single action space. A three-stage learning framework progressively adapts the video world model to egocentric visual dynamics and to the target humanoid embodiment. On nine real-world Unitree G1 tasks, MotionWAM runs in real time, substantially outperforms Vision-Language-Action (VLA) baselines fine-tuned on the same demonstrations by over 30% in overall success rate, and executes task-driven foot interaction that decoupled upper-lower policies cannot reach. Our results suggest that video-pretrained WAMs can be lifted from tabletop manipulation to coordinated, human-like whole-body humanoid control."
+  },
+  {
+    "title": "Back to the Familiar Future: Failure Recovery for VLA Policies via Pre-Imagined Milestone Selection",
+    "original_title": "Back to the Familiar Future: Failure Recovery for VLA Policies via Pre-Imagined Milestone Selection",
+    "link": "https://arxiv.org/abs/2606.09258",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09258v1 Announce Type: new \nAbstract: Vision-language-action (VLA) policies can deviate from nominal trajectories during manipulation, even when tasks remain physically feasible. Recovering from these deviations is challenging, as they push the policy into unfamiliar state spaces where direct re-planning frequently destabilizes action sequences. We propose Back to the Familiar Future (B2FF), a recovery framework for foresight-driven VLAs that leverages future visual conditioning as a recovery interface. Before execution, the VLA generates a milestone bank of familiar future states conditioned on the clean initial observation. At recovery time, a recoverability-aware selector selects a recovery milestone from this bank and enforces it as a fixed visual goal. This enables the VLA to robustly map off-trajectory observations back to a familiar future. On failure-injected LIBERO, under controlled recovery timing aligned with the injected failure, B2FF increases the average success rate of a baseline VLA from 56.3% to 74.0%, demonstrating that pre-imagined milestones can guide recovery without fine-tuning the low-level action generator."
   },
   {
     "title": "TARS brings real-life embodied AI to ICRA 2026 robotics conference",
@@ -17917,86 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "자율비행사업체 AutoFlight가 중국 귀저우에서 2톤급 eVTOL 항공기 CarryAll (V2000CG)를 이용하여 생차 운송에 성공했다.  이는 Anshun과 Guiyang 간 약 120km 거리 이동을 완료한 최초의 실험이다."
-  },
-  {
-    "title": "두바이 공중택시 준비, 시상 첫 상업적 버티포트 기술 완료",
-    "original_title": "Dubai air taxis prepare for lift-off: World’s first commercial vertiport reaches technical completion",
-    "link": "https://roboticsandautomationnews.com/2026/04/24/dubai-air-taxis-prepare-for-lift-off-worlds-first-commercial-vertiport-reaches-technical-completion/100971/",
-    "date": "2026-04-24 08:47",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "두바이의 도로 및 교통청(RTA)과 스카이포츠 인프라(Skyports)가 두바이 국제공항 근처에 위치한 세계 최초의 상업적인 버티포트가 기술적으로 완성되었으며 전기 직립 이륙/착륙 (eVTOL) 항공기 수용 가능함을 발표 했다."
-  },
-  {
-    "title": "PAL 로봇, ICRA 2026에서 새로운 인공수의 로봇 선보임",
-    "original_title": "PAL Robotics to debut new manipulation robot at ICRA 2026",
-    "link": "https://roboticsandautomationnews.com/2026/04/24/pal-robotics-to-debut-new-manipulation-robot-at-icra-2026/100968/",
-    "date": "2026-04-24 08:05",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "PAL 로봇이 IEEE 국제로봇 및 자동화 학회 (ICRA 2026)에서 새로운 로봇 플랫폼을 공개하며 최신 시스템을 라이브 인터랙티브 데모를 통해 소개할 예정이다."
-  },
-  {
-    "title": "스타 로보틱스, 향상된 자율성과 네비게이션을 갖춘 새로운 보안 로봇 공개",
-    "original_title": "Star Robotics unveils new security robot with improved autonomy and navigation",
-    "link": "https://roboticsandautomationnews.com/2026/04/24/star-robotics-unveils-new-security-robot-with-improved-autonomy-and-navigation/100965/",
-    "date": "2026-04-24 07:37",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "스타 로보틱스는 데이터 센터나 발전 시설 등 실제 환경에서의 신뢰성 및 성능 향상을 목표로 한 최신 버전의 자율 주행형 보안 로봇 Watchbot 2를 출시했다."
-  },
-  {
-    "title": "콜모르겐, 모바일 로봇 성능 향상 위한 레이아웃 분석 도구 출시",
-    "original_title": "Kollmorgen launches layout analysis tool to improve mobile robot performance",
-    "link": "https://roboticsandautomationnews.com/2026/04/24/kollmorgen-launches-layout-analysis-tool-to-improve-mobile-robot-performance/100962/",
-    "date": "2026-04-24 07:23",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "콜모르겐은 NDC Layout Assistant라는 새로운 소프트웨어 도구를 발표하여 자동차 및 이동형 로봇의 운동 계획 및 최적화 지원. 이 도구는 공장 및 창고 내 자동 유도 차량과 자율 주행 모바일 로봇 경로 설계 개선에 목표 삼음."
-  },
-  {
-    "title": "Infor, 새로운 AI 조정 도구 출시",
-    "original_title": "Infor launches new AI orchestration tools as research highlights scaling challenges",
-    "link": "https://roboticsandautomationnews.com/2026/04/24/infor-launches-new-ai-orchestration-tools-as-research-highlights-scaling-challenges/100959/",
-    "date": "2026-04-24 07:15",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "인포는 AI 포트폴리오의 새로운 기능을 발표했으며, 연구에 따르면 많은 기업이 시범 단계를 넘어 AI를 확대하는 데 여전히 어려움을 겪고 있음.  4월 발표에는 Infor Velocity Suite 업데이트와 강화된 Infor Agentic Orchestrator의 제한적 이용 가능성이 포함됨."
-  },
-  {
-    "title": "엔시 업데이트 하이브리드 로봇 프로그래밍 플랫폼, 다 브랜드 및 3D 비전 기능 추가",
-    "original_title": "Ency updates hybrid robot programming platform with multi-brand and 3D vision capabilities",
-    "link": "https://roboticsandautomationnews.com/2026/04/24/ency-updates-hybrid-robot-programming-platform-with-multi-brand-and-3d-vision-capabilities/100956/",
-    "date": "2026-04-24 07:07",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "사이프러스 기반 엔시 소프트웨어가 하이브리드 프로그래밍 접근 방식을 강화하는 Ency Hyper 플랫폼 업데이트를 공개했다. 이 업데이트는 다 브랜드 로봇 셀, SCARA 로봇 및 통합 3D 비전 지원을 포함하며 오프라인 시뮬레이션과 실시간 물리적 로봇 상호작용을 결합한다."
-  },
-  {
-    "title": "케이블로 작동하는 손목 벌리고 모으기 메커니즘 설계 및 실험 평가",
-    "original_title": "Design, Modelling and Experimental Evaluation of a Tendon-driven Wrist Abduction-Adduction Mechanism for an upper limb exoskeleton",
-    "link": "https://arxiv.org/abs/2604.20893",
-    "date": "2026-04-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 논문은 전자모터 또는 공압과 같은 기존 작동 장치의 문제점을 해결하기 위해 케이블 구동, 원통 강체 상호 보조 작동 장치를 제시. 시뮬레이션 기반 방법으로 강성 매개변수를 선택하고, 실험 결과는 시뮬레이션에서 얻은 추세와 일관되며, 탄력 매개변수 선택이 컴팩트한 케이블 구동 손목 외골격 설계에 효과적임을 보여준다."
-  },
-  {
-    "title": "힘줄 동력 Wrist Abduction-Adduction 관절이 5도 자유 ULE 성능 향상 - 구현 및 실험 평가",
-    "original_title": "A Tendon-Driven Wrist Abduction-Adduction Joint Improves Performance of a 5 DoF Upper Limb Exoskeleton -- Implementation and Experimental Evaluation",
-    "link": "https://arxiv.org/abs/2604.20898",
-    "date": "2026-04-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Tendons로 작동하는 손목 Abduction-Adduction 관절을 탑재한 5도 자유 ULE(EXOTIC2)의 효과를 검증한 연구 결과, 일상생활 활동 수행 시 업무 성공률과 정확도 향상됨."
-  },
-  {
-    "title": "언어 제어 손목 벌리고 모으는 보조 장치의 임상적 평가 : ALS 및 SCI 환자를 위한 6도 자유도 상지 외장 착용 기",
-    "original_title": "Clinical Evaluation of a Tongue-Controlled Wrist Abduction-Adduction Assistance in a 6-DoF Upper-Limb Exoskeleton for Individuals with ALS and SCI",
-    "link": "https://arxiv.org/abs/2604.20967",
-    "date": "2026-04-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 연구에서는 언어제어형 6도 자유도 상지외장기(EXOTIC2) 내 손목 벌리고 모으는 보조 기능이 일상생활 활동 수행에 미치는 효과와 사용자 경험을 평가했다. 결과적으로, 손목 벌리고 모으는 보조 기능은 두 활동에서 성공률 향상 및 작업 시간 단축을 가져왔고, 사용자들은 그러한 기능이 더 편안하고 실용적인 작업 수행에 도움이 된다고 느꼈다."
   }
 ]
