@@ -1,5 +1,14 @@
 [
   {
+    "title": "Simulation tools in the ROS ecosystem: Testing and validating robots virtually",
+    "original_title": "Simulation tools in the ROS ecosystem: Testing and validating robots virtually",
+    "link": "https://roboticsandautomationnews.com/2026/06/09/simulation-tools-in-the-ros-ecosystem-testing-and-validating-robots-virtually/102377/",
+    "date": "2026-06-09 08:39",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Robots may operate in the physical world, but increasingly they are born, trained, tested, and refined in virtual ones. Before a warehouse robot navigates its first aisle, before an autonomous vehicle drives its first mile, and before a humanoid robot takes its first step, there is a good chance it has already spent hundreds or […]"
+  },
+  {
     "title": "RLWRLD and Nvidia launch DexBench to standardize humanoid robot dexterity",
     "original_title": "RLWRLD and Nvidia launch DexBench to standardize humanoid robot dexterity",
     "link": "https://roboticsandautomationnews.com/2026/06/09/rlwrld-and-nvidia-launch-dexbench-to-standardize-humanoid-robot-dexterity/102371/",
@@ -367,6 +376,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.09258v1 Announce Type: new \nAbstract: Vision-language-action (VLA) policies can deviate from nominal trajectories during manipulation, even when tasks remain physically feasible. Recovering from these deviations is challenging, as they push the policy into unfamiliar state spaces where direct re-planning frequently destabilizes action sequences. We propose Back to the Familiar Future (B2FF), a recovery framework for foresight-driven VLAs that leverages future visual conditioning as a recovery interface. Before execution, the VLA generates a milestone bank of familiar future states conditioned on the clean initial observation. At recovery time, a recoverability-aware selector selects a recovery milestone from this bank and enforces it as a fixed visual goal. This enables the VLA to robustly map off-trajectory observations back to a familiar future. On failure-injected LIBERO, under controlled recovery timing aligned with the injected failure, B2FF increases the average success rate of a baseline VLA from 56.3% to 74.0%, demonstrating that pre-imagined milestones can guide recovery without fine-tuning the low-level action generator."
+  },
+  {
+    "title": "VAIC: Vision-Guided Humanoid Agile Object Interaction Control via Decoupled Commands",
+    "original_title": "VAIC: Vision-Guided Humanoid Agile Object Interaction Control via Decoupled Commands",
+    "link": "https://arxiv.org/abs/2606.09286",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.09286v1 Announce Type: new \nAbstract: Humanoid robots hold immense potential for real-world assistance, yet agile interaction with objects in unstructured environments demands tightly coupled whole-body coordination. Despite recent advancements, current controllers face a critical deployment gap. They rely heavily on dense reference trajectories and perfect state observability, which inherently limits physical generalization. We present Vision Guided Agile Interaction Control (VAIC), a unified framework that bridges this gap by operating exclusively on onboard depth, historical proprioception, and a decoupled user command interface. VAIC employs a two-stage distillation paradigm. First, a privileged teacher policy masters diverse interaction skills using precise object kinematics and exact environmental states. Second, a deployable student policy distills these capabilities by replacing full body tracking with velocity targets across multiple axes and an interaction indicator for each frame. The student utilizes a recurrent object adaptation module to implicitly infer unobservable object dynamics from raw depth streams and proprioception. Evaluations and real-world deployments on the humanoid robot demonstrate that a single VAIC policy successfully executes highly diverse dynamic tasks. These tasks include box carrying, cart interaction, and skateboarding, consistently outperforming baselines and advancing autonomous humanoid deployment."
+  },
+  {
+    "title": "KPGrasp: Scalable Keypoint Flow Matching for Dexterous Grasp Generation",
+    "original_title": "KPGrasp: Scalable Keypoint Flow Matching for Dexterous Grasp Generation",
+    "link": "https://arxiv.org/abs/2606.09314",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09314v1 Announce Type: new \nAbstract: Generating high-quality dexterous grasps remains challenging for learning-based methods, which often depend on carefully tuned contact losses or costly contact-based test-time refinement. We present KPGrasp, a flow-matching framework that learns dexterous grasp priors from large-scale data rather than relying on contact losses or contact-based test-time refinement. KPGrasp couples an all-Euclidean 3D hand-keypoint parameterization with a simple yet scalable Transformer flow model. The parameterization avoids the drawbacks of the conventional mixed SE(3) pose and joint-angle output space, expresses grasps in the same frame as the object point cloud, and thus enables native spatial reasoning; the Transformer flow model is trained with only the standard flow-matching loss and scales effectively with data, model capacity, and batch size. Experiments demonstrate state-of-the-art performance on two simulation benchmarks. On the Dexonomy benchmark, it reaches a 76.3% grasp success rate, improving over the strongest directly comparable baseline by 47.4% while reducing penetration depth to 2.4 mm. The same model also achieves the best average performance on the DexGrasp Anything benchmark without fine-tuning. For batched inference, KPGrasp requires only 0.032 s per grasp. Finally, real-world experiments on 20 diverse objects demonstrate that the pipeline can be deployed in a real-world setup."
+  },
+  {
+    "title": "TORL-VLA: Tactile Guided Online Reinforcement Learning for Contact-Rich Manipulation",
+    "original_title": "TORL-VLA: Tactile Guided Online Reinforcement Learning for Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2606.09337",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09337v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have become a powerful framework for robotic manipulation, and recent studies have introduced tactile or force feedback into VLAs to address contact-rich tasks. However, these models are typically deployed as offline policies. When contact conditions shift from the training distribution, the policy cannot perform online adaptation, leading to problems such as inappropriate contact forces and inefficient retries. Therefore, we propose TORL-VLA, a tactile-guided online reinforcement learning framework that couples tactile feedback with policy refinement for contact-rich manipulation. Our method introduces a tactile-derived wrench-aware VLA to predict reference actions and future wrench sequences, while a lightweight online RL module is used to refine the reference actions. To stabilize learning from mixed exploratory policy-generated and human-intervention data, we introduce an intervention-censored critic that prevents post-intervention success from being wrongly credited to policy-generated actions preceding intervention. Real-robot experiments on long-horizon contact-rich tasks, including latch manipulation, coffee-cup placement, and egg handling, show that TORL-VLA improves success rates at both subtask and full-task levels, as well as time-bounded execution efficiency over strong baselines."
+  },
+  {
+    "title": "ReGIL: Retrieval-Guided Imitation Learning from a Single Demonstration",
+    "original_title": "ReGIL: Retrieval-Guided Imitation Learning from a Single Demonstration",
+    "link": "https://arxiv.org/abs/2606.09381",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09381v1 Announce Type: new \nAbstract: Learning robot manipulation policies with deep neural networks from a single demonstration remains highly challenging, as even small deviations from the demonstrated trajectory can quickly compound into failure, while collecting substantial online interaction data is costly. We propose ReGIL, a retrieval-guided imitation learning framework that treats a single demonstration as an external memory. ReGIL repeatedly queries this static memory throughout training to simultaneously guide exploration, generate the regularization buffer, and construct rewards. Specifically, it computes rewards through local temporal alignment between the current trajectory and the retrieved segment, providing step-wise and informative feedback for policy improvement. We evaluate ReGIL on robotic manipulation tasks from the LIBERO and Meta-World benchmarks under the single demonstration setting. ReGIL outperforms prior baselines in both success rate and training efficiency. In real-robot experiments, using only one demonstration and less than one hour of online training, ReGIL achieves over 75% success rate across three manipulation tasks with randomness in both initial robot pose and target position. These results demonstrate that leveraging the single demonstration as reusable memory can provide more than static supervision for efficient robot learning. More details can be found on our website: https://regil2026.github.io/"
+  },
+  {
+    "title": "Harness Engineering for Physical AI: Robot Middleware Is the Harness Layer",
+    "original_title": "Harness Engineering for Physical AI: Robot Middleware Is the Harness Layer",
+    "link": "https://arxiv.org/abs/2606.09416",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09416v1 Announce Type: new \nAbstract: Robot middleware faces a new role in the era of Physical AI. Learned policies, planners, and vision-language-action (VLA) models now enter deployed robots as causal participants on the control path, but the layer that integrates them with timing, scheduling, and network has not been named. Recent language-agent work names this layer the harness, the external system that mediates tools, manages state, bounds resources, and records execution. The robotics community has not yet adopted this framing, and we propose that robot middleware is that harness. A Physical AI harness differs from a software harness in where it intervenes. A software harness mediates at tool-call boundaries. A Physical AI harness must mediate at control, computing, and communication simultaneously, because a learned policy's output crosses all three: its commands shift the trajectory, its inference time shifts the schedule, and its payload shifts the bandwidth. Robot middleware is the lowest robot-stack layer with mediating abstractions over all three, so it is best positioned to compose their enforcement. It already provides most of what a harness needs but lacks the enforcement for an AI model. We name this missing enforcement as three functions: Projection gates each output at emission, Isolation bounds the model's execution and transmission slot, and Transfer falls back to a verified baseline when checks fail. Each appears today as hand-built application code in deployed robot systems, built on surfaces robot middleware already provides. Robot middleware should host them not as the best single-axis enforcer but as the layer that composes all three. We sketch this as a ROS 2 Harness Profile, a deployment artifact that carries an AI model's declared output region, inference budget, and operating regime while the middleware enforces them across ROS 2, DDS, and Zenoh."
+  },
+  {
+    "title": "Dense Force Estimation with an Event-based Optical Tactile Sensor",
+    "original_title": "Dense Force Estimation with an Event-based Optical Tactile Sensor",
+    "link": "https://arxiv.org/abs/2606.09451",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09451v1 Announce Type: new \nAbstract: Humans rely on spatially dense, geometry and force-aware tactile feedback at high temporal resolution for dexterous manipulation. While vision-based tactile sensors enable dense force estimation, they are limited by camera frame rates, motion blur, and data bandwidth. Event-based optical tactile sensors offer an attractive alternative with microsecond temporal resolution and low motion blur, but existing methods are restricted to predicting only net forces. We introduce the first framework for dense 3D force field reconstruction using event-based optical tactile sensors. Our approach estimates 3D surface displacements from event data and maps them to forces via the inverse Finite Elements Method (iFEM). Shear displacements are recovered through the proposed event-based marker tracking algorithm, while normal displacements are predicted by a convolutional neural network trained on a collected dataset of synchronized force-displacement-event data. Experiments demonstrate accurate reconstruction of physically grounded forces, achieving a mean absolute error of (0.14 N, 0.10 N, 0.93 N) over force ranges up to (4 N, 4 N, 20 N), while operating at an average of 100 Hz. This work constitutes a first step toward enabling dense force feedback for high-frequency control in robotic grasping and dexterous manipulation."
+  },
+  {
+    "title": "CT-VAM: A Cerebello-Thalamic-Inspired Vision-Action Model for Efficient Visuomotor Control",
+    "original_title": "CT-VAM: A Cerebello-Thalamic-Inspired Vision-Action Model for Efficient Visuomotor Control",
+    "link": "https://arxiv.org/abs/2606.09572",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09572v1 Announce Type: new \nAbstract: Vision-language-action models have shown strong promise for robot manipulation, yet raw language is primarily needed to specify task intent rather than to be repeatedly processed during high-frequency low-level execution. Motivated by this separation, we propose a cerebello-thalamic-inspired vision-action model (CT-VAM) for efficient task-conditioned visuomotor control. CT-VAM acts as a compact local execution policy that predicts action chunks from dualview visual observations, proprioception, and a lightweight task condition, potentially enabling a practical cloud-edge paradigm in which high-level semantic reasoning can be handled by large models while fast closed-loop control runs on local hardware. To fuse heterogeneous inputs effectively, CT-VAM introduces TARS (Thalamic Action Routing Stream), a stream-separated conditional attention decoder that independently routes action, visual and task streams, preventing dense sensory tokens from overwhelming compact task-relevant conditions. With only 68M parameters, CT-VAM achieves LIBERO success rates competitive with substantially larger VLA models, while reducing inference latency. Together with flow-consistent inpainting for asynchronous chunk execution, CT-VAM supports high-frequency control and demonstrates robust realworld deployment on resource-constrained robotic platforms."
+  },
+  {
+    "title": "DexPIE: Stable Dexterous Policy Improvement from Real-World Experience",
+    "original_title": "DexPIE: Stable Dexterous Policy Improvement from Real-World Experience",
+    "link": "https://arxiv.org/abs/2606.09615",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09615v1 Announce Type: new \nAbstract: Dexterous manipulation presents substantial challenges for imitation learning due to its high-dimensional action space and complex contact-rich dynamics. Policies trained purely from demonstrations often suffer from compounding errors during deployment and require large amounts of expert data to achieve reliable performance. To move beyond the limitations of demonstration data, in this work, we propose DexPIE, a post-training framework for dexterous policy improvement from experience collected through real-world deployment. First, DexPIE enables effective exploration coverage through a dexterous-hand-adapted intervention system and multi-stage DAgger-style data collection across initial and intermediate task stages, providing reliable supervision for accurate policy evaluation. To reduce temporal noise between post-training rollouts and demonstration data, we introduce asynchronous inference in the relative action space, which better aligns rollout data with demonstrated behavior and allows the critic to learn a value function induced by a more consistent underlying policy. Finally, DexPIE improves the policy through conditioning on a continuous optimality indicator, allowing the policy to leverage the quality of data in a more fine-grained manner. Across three challenging real-world dexterous manipulation tasks, DexPIE achieves a 37% improvement in success rate over the demonstration-based reference policy, outperforming all baseline methods and demonstrating stronger robustness. The source code and dataset will be made publicly available."
   },
   {
     "title": "TARS brings real-life embodied AI to ICRA 2026 robotics conference",
@@ -17917,86 +17998,5 @@
     "source": "IEEE Spectrum",
     "category": "humanoid",
     "summary": "IEEE Spectrum이 발행하는 로보틱스 영상들을 소개하며, Sony AI의 Ringbot Quad, 인공지능 중심 로봇 등 다양한 분야의 최신 기술을 보여주는 영상을 소개."
-  },
-  {
-    "title": "로봇 대화 에피소드 153 – 오리가미 영감을 받은 로봇, 진영 리와 함께",
-    "original_title": "Robot Talk Episode 153 – Origami-inspired robots, with Chenying Liu",
-    "link": "https://robohub.org/robot-talk-episode-153-origami-inspired-robots-with-chenying-liu/",
-    "date": "2026-04-24 12:35",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "옥스포드 대학교의 진영 리는 로봇의 형태가 감지, 처리, 의사결정, 이동에 적극적으로 기여할 수 있다고 설명하며, 그 연구를 이어나간다고 밝혔습니다."
-  },
-  {
-    "title": "SS Innovations, 드론 기반 수술 로봇 개발",
-    "original_title": "SS Innovations is developing a drone-based surgical robot",
-    "link": "https://www.therobotreport.com/ss-innovations-is-developing-a-drone-based-surgical-robot/",
-    "date": "2026-04-24 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "SS Innovations는 부상한 군인들에게 직접 로봇 수술을 제공하기 위해 SSi Vimana Aero를 설계하고 있으며, 수술 인공휴머노이드 개발도 진행 중이다."
-  },
-  {
-    "title": "유니트리 G1 인형 로봇, 이동성 재정의하며 스케이트와 플립 - Interesting Engineering",
-    "original_title": "Unitree's G1 humanoid robot skates and flips to redefine mobility - Interesting Engineering",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeFJlOFFXZThNUzJ0Z19FM0FNM2kteG9GeU5UWndmVUpIWDZYVFM5dVhVWHhWS1R6dnJFY3RnRXJDaVNrNnZMckJOT3BsdHlZN2w5UUNXMi16dkdTd1Zmb0lmaEdUM1pUWUlCX0tIRmRXSENnUWttcHNFaF83RHdBZ3djRzQ?oc=5",
-    "date": "2026-04-24 11:38",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "유니트리의 G1 인형 로봇은 스케이트를 타고 뒤집는 등의 동작을 통해 기존의 이동성 개념을 넘어서는 새로운 가능성을 보여주고 있다. 이러한 특징적인 기능으로 인해 G1은 다양한 분야에서 활용될 전망이다."
-  },
-  {
-    "title": "Flex와 Teradyne 로봇, 글로벌 제조 분야에서 지능형 자동화 확대 위한 파트너십 강화",
-    "original_title": "Flex and Teradyne Robotics expand partnership to scale intelligent automation across global manufacturing",
-    "link": "https://roboticsandautomationnews.com/2026/04/24/flex-and-teradyne-robotics-expand-partnership-to-scale-intelligent-automation-across-global-manufacturing/101001/",
-    "date": "2026-04-24 11:05",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Flex는 전 세계 최대의 계약 제조업체 중 하나이며, Teradyne 로봇과 협력 관계를 확장하여 글로벌 제조 시설에 걸쳐 지능형 자동화를 가속화할 예정입니다.  Flex는 자사 생산 시설에서 Teradyne 로봇 솔루션을 배치하는 동시에, Teradyne의 확장 가능한 자동화 구축을 위한 주요 로보틱스 부품 제조 역할을 수행합니다."
-  },
-  {
-    "title": "푸두 로봇공 USA 본사 Dallas에 개장",
-    "original_title": "Pudu Robotics inaugurates US headquarters in Dallas",
-    "link": "https://roboticsandautomationnews.com/2026/04/24/pudu-robotics-inaugurates-us-headquarters-in-dallas/100997/",
-    "date": "2026-04-24 10:50",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "푸두 로봇, 글로벌 확장 전략으로 미국 시장 진출을 위한 새로운 USA 본사를 Dallas에 오픈.  미국 지역 사업 역량 강화 및 장기적인 아메리카스 시장 공략 의지를 보여주는 동시에, 체계적인 미래 비즈니스 성장 계획을 발표함."
-  },
-  {
-    "title": "온라인 카드 게임, Z세대에게 몰입력을 선사하는 이유 5가지",
-    "original_title": "5 Surprising Reasons Online Card Games Are Gaining Popularity Among Gen Z Players",
-    "link": "https://roboticsandautomationnews.com/2026/04/24/5-surprising-reasons-online-card-games-are-gaining-popularity-among-gen-z-players/100993/",
-    "date": "2026-04-24 10:20",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Z세대는 디지털 엔터테인먼트에 익숙하지만, 접근성이 높고 플레이 시간이 빠른 간단한 게임 형식도 여전히 인기 있으며, 미국에서 Z세대의 디지털 게임 사용 비중이 가장 높아요."
-  },
-  {
-    "title": "데이터 조직 및 통제 개선을 통한 운영 위험 최소화",
-    "original_title": "Minimizing Operational Hazards by Streamlining Data Organization and Control",
-    "link": "https://roboticsandautomationnews.com/2026/04/24/minimizing-operational-hazards-by-streamlining-data-organization-and-control/100990/",
-    "date": "2026-04-24 10:01",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "근무장소의 위험은 주로 물리적 안전 측면에서 논의되지만, 데이터 관리의 부실은 규정 준수 문제, 생산성 손실, 비용적인 오류를 초래할 수 있는 중요한 요인임."
-  },
-  {
-    "title": "지능형 생체 공학 및 이탈디자인, 전략적 파트너십 체결",
-    "original_title": "Generative Bionics and Italdesign Enter a Strategic Partnership",
-    "link": "https://humanoidroboticstechnology.com/industry-news/generative-bionics-and-italdesign-enter-a-strategic-partnership/",
-    "date": "2026-04-24 09:18",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "지능형 생체 공학은 인간형 로봇 플랫폼 대량 생산을 가속화하기 위해 디자인 및 제품 엔지니어링 선두 기업인 이탈디자인과 전략적 파트너십을 발표했습니다. 양사는 공식적으로 기념서(Memorandum of Understanding)를 체결하여 관계를 강화했습니다."
-  },
-  {
-    "title": "자율비행, 중국 최초 2톤급 eVTOL 차량으로 생차 운송 성공",
-    "original_title": "AutoFlight completes first 2-ton-class eVTOL tea delivery in China",
-    "link": "https://roboticsandautomationnews.com/2026/04/24/autoflight-completes-first-2-ton-class-evtol-tea-delivery-in-china/100984/",
-    "date": "2026-04-24 09:06",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "자율비행사업체 AutoFlight가 중국 귀저우에서 2톤급 eVTOL 항공기 CarryAll (V2000CG)를 이용하여 생차 운송에 성공했다.  이는 Anshun과 Guiyang 간 약 120km 거리 이동을 완료한 최초의 실험이다."
   }
 ]
