@@ -1,5 +1,14 @@
 [
   {
+    "title": "The Future of VFFS Technology in High-Speed Packaging Operations",
+    "original_title": "The Future of VFFS Technology in High-Speed Packaging Operations",
+    "link": "https://roboticsandautomationnews.com/2026/06/09/the-future-of-vffs-technology-in-high-speed-packaging-operations/102387/",
+    "date": "2026-06-09 09:35",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "The packaging industry is undergoing a profound transformation. As consumer demands intensify and production timelines shrink, manufacturers across every sector are turning to smarter, faster, and more efficient solutions. At the heart of this revolution is VFFS technology, a system that has quietly become one of the most essential tools in modern packaging facilities. Vertical […]"
+  },
+  {
     "title": "Simulation tools in the ROS ecosystem: Testing and validating robots virtually",
     "original_title": "Simulation tools in the ROS ecosystem: Testing and validating robots virtually",
     "link": "https://roboticsandautomationnews.com/2026/06/09/simulation-tools-in-the-ros-ecosystem-testing-and-validating-robots-virtually/102377/",
@@ -448,6 +457,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.09615v1 Announce Type: new \nAbstract: Dexterous manipulation presents substantial challenges for imitation learning due to its high-dimensional action space and complex contact-rich dynamics. Policies trained purely from demonstrations often suffer from compounding errors during deployment and require large amounts of expert data to achieve reliable performance. To move beyond the limitations of demonstration data, in this work, we propose DexPIE, a post-training framework for dexterous policy improvement from experience collected through real-world deployment. First, DexPIE enables effective exploration coverage through a dexterous-hand-adapted intervention system and multi-stage DAgger-style data collection across initial and intermediate task stages, providing reliable supervision for accurate policy evaluation. To reduce temporal noise between post-training rollouts and demonstration data, we introduce asynchronous inference in the relative action space, which better aligns rollout data with demonstrated behavior and allows the critic to learn a value function induced by a more consistent underlying policy. Finally, DexPIE improves the policy through conditioning on a continuous optimality indicator, allowing the policy to leverage the quality of data in a more fine-grained manner. Across three challenging real-world dexterous manipulation tasks, DexPIE achieves a 37% improvement in success rate over the demonstration-based reference policy, outperforming all baseline methods and demonstrating stronger robustness. The source code and dataset will be made publicly available."
+  },
+  {
+    "title": "ReCoVLA: VLM-Guided Reward Compilation for Failure Recovery in Vision-Language-Action Policies",
+    "original_title": "ReCoVLA: VLM-Guided Reward Compilation for Failure Recovery in Vision-Language-Action Policies",
+    "link": "https://arxiv.org/abs/2606.09630",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09630v1 Announce Type: new \nAbstract: Vision-language-action (VLA) policies provide strong priors for language-conditioned manipulation, but remain brittle in off-nominal states requiring targeted recovery. We propose ReCoVLA -- a failure-conditioned residual recovery framework that keeps a pretrained VLA policy frozen, uses an external vision-language model (VLM) to infer the failure mode and recovery stage, and compiles a structured reward from task-relevant components. Rather than using the VLM to generate actions or rewards directly, ReCoVLA uses it as a semantic reward selector: it predicts a recovery descriptor and reward mask for in-simulation residual-policy training, followed by zero-shot sim-to-real deployment of the trained recovery policies. This decouples high-level failure understanding from low-level corrective control to support different VLAs. Experiments across short-horizon, long-horizon, and contact-rich manipulation tasks show that ReCoVLA outperforms the tested baselines on average. In simulation, our reward compiler improves average success from 36.7% for the fine-tuned $\\pi_{0.5}$ baseline to 66.7%. In physical zero-shot sim-to-real experiments, ReCoVLA achieves the best average performance, with 61.7% success."
+  },
+  {
+    "title": "ProbeAct: Probe-Guided Training-Free Failure Recovery in Vision-Language-Action Models",
+    "original_title": "ProbeAct: Probe-Guided Training-Free Failure Recovery in Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.09740",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09740v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models demonstrate strong perfor-1 mance on language-conditioned robotic manipulation within their training dis-2 tribution, yet their generalization capabilities remain fundamentally limited. They3 lack the robustness required to handle perturbations, frequently failing when con-4 fronted with lighting changes, altered camera viewpoints, or small initial-state5 variations. We propose PROBEACT, a training-free runtime intervention frame-6 work that detects and recovers from grasping and placement failures in pre-7 trained VLA policies without modifying their weights or requiring additional8 demonstrations. PROBEACT combines three components: (i) a lightweight multi-9 target hidden-state probe that predicts the 3D positions of task-relevant objects10 from intermediate VLA features, with Hungarian-matched identity tracking for11 multi-object scenes; (ii) an object-agnostic kinematic state machine that detects12 grasp, transport, and placement failures using only gripper-internal signals and13 end-effector kinematics; and (iii) a hierarchical Control Barrier Function (CBF)14 filter that encodes repeated-failure locations as soft safe-set constraints, mini-15 mally correcting VLA actions while preserving baseline behavior. As a plug-and-16 play, training-free intervention loop, PROBEACT is orthogonal to existing train-17 ing pipelines. Evaluated on the LIBERO-plus benchmark, our framework acts as18 a universal safety net, improving the success rate of the OpenVLA-OFT model19 from 69.6% to 74.1%, while demonstrating broad applicability to both base and20 fine-tuned VLA policies."
+  },
+  {
+    "title": "Your Model Already Knows: Attention-Guided Safety Filter for Vision-Language-Action Models",
+    "original_title": "Your Model Already Knows: Attention-Guided Safety Filter for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.09749",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09749v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have demonstrated impressive end-to-end performance across a variety of robotic manipulation tasks. However, these policies offer no guarantees against collisions with task-irrelevant objects in the scene. Existing safety filters sidestep this problem by querying a vision-language model (VLM) to identify obstacles and their locations. This, however, is too slow to run in the control loop and can only be invoked at episode initialization, leaving the filter unable to track moving obstacles. We discover that a small number of attention heads within a VLA model reliably localize the object the policy intends to approach. These heads can be exploited within a training-free safety framework that obtains the active target from the attention heads at every step, treats the remainder of the scene as obstacles, and feeds these into a Control Barrier Function (CBF) filter. Together with a lightweight real-time object tracker, this allows for collision avoidance for non-static obstacles. We evaluate our framework on SafeLIBERO, which we extend with moving obstacles. On the original static benchmark, our method performs comparably to an oracle that uses privileged simulator state to identify the target, emulating a VLM-based identification step run once at episode initialization. On the dynamic variant, where the oracle's init-time target assignment becomes stale, our method substantially outperforms it by 43%, on average. Our findings suggest that the perceptual signals needed for real-time safety filtering are already present within VLA policies and can be exploited without additional training or heavy auxiliary models."
+  },
+  {
+    "title": "Difference-Aware Retrieval Policies for Imitation Learning",
+    "original_title": "Difference-Aware Retrieval Policies for Imitation Learning",
+    "link": "https://arxiv.org/abs/2606.09758",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09758v1 Announce Type: new \nAbstract: Parametric imitation learning via behavior cloning can suffer from poor generalization to out-of-distribution states due to compounding errors during deployment. We show that reusing the training data during inference via a semi-parametric retrieval-based imitation learning approach can alleviate this challenge. We present Difference-Aware Retrieval Policies for Imitation Learning (DARP), a semi-parametric retrieval-based imitation learning approach that addresses this limitation by reparameterizing the imitation learning problem in terms of local neighborhood structure rather than direct state-to-action mappings. Instead of learning a global policy, DARP trains a model to predict actions based on $k$-nearest neighbors from expert demonstrations, their corresponding actions, and the relative distance vectors between neighbor states and query states. DARP requires no additional assumptions beyond those made for standard behavior cloning -- it does not require additional data collection, online expert feedback, or task-specific knowledge. We demonstrate consistent performance improvements of 15-46% over standard behavior cloning across diverse domains, including continuous control and robotic manipulation, and across different representations, including high-dimensional visual features. Code and demos are available at https://weirdlabuw.github.io/darp-site/."
+  },
+  {
+    "title": "AetheRock: An Arm-Worn Robot Teaching System for Force-Guided Vision-Tactile Learning",
+    "original_title": "AetheRock: An Arm-Worn Robot Teaching System for Force-Guided Vision-Tactile Learning",
+    "link": "https://arxiv.org/abs/2606.09777",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09777v1 Announce Type: new \nAbstract: Force and tactile sensing are indispensable in contact-rich manipulation. However, force-aware robot learning faces critical challenges due to the incompatible assembly of tactile and force sensors in handheld or wearable devices. To address these limitations, we first introduce AetheRock for gripper-force, vision, and tactile data collection, which is an arm-worn device featuring a modular and easily manufactured visuo-tactile sensor, GelSlim-MiniFab, at the fingertip, a resistive pressure sensor at the human finger contact region, a customized PCB module, and a wearable kit for comfortable and robust collection. Building on this, we propose ForceVT, a representation learning framework that uses force and vision to guide fidelity-agnostic tactile learning, enabling robust inference in any tactile situation. Real-world experiments show that AetheRock achieves qualified data efficiency and that ForceVT effectively alleviates inefficiencies when visuo-tactile sensors exhibit manufacturing and utilization inconsistencies. Overall, our work mitigates the limitations of gripper-force vision-tactile robot learning through innovative hardware design and algorithms."
+  },
+  {
+    "title": "SynManDex: Synthesizing Human-like Dexterous Grasps from Synthetic Human Pre-Grasps",
+    "original_title": "SynManDex: Synthesizing Human-like Dexterous Grasps from Synthetic Human Pre-Grasps",
+    "link": "https://arxiv.org/abs/2606.09798",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09798v1 Announce Type: new \nAbstract: Human hand-object interactions encode functional intent, but direct transfer to robotic hands often fails under morphology, contact, and reachability constraints. We present SynManDex, a synthetic pipeline that uses generated human pre-grasps as affordance-aware proposals and resolves the final contacts with robot-native optimization. SynManDex samples object-conditioned digital human pre-grasps, retargets them to dexterous robotic hand poses, optimizes force-closure contacts on the target embodiment, and admits trajectories that pass checks from each step. The resulting keyframes support both grasp-and-lift demonstrations and various prehensile manipulation tasks such as tea pouring, photo taking, and flute playing, designed via VLM agents. As a result, SynManDex combines high grasp quality (86.4\\% grasp stability) with 4.67/5 human-likeness (93.4\\%). It achieves 80.7\\% successes in simulation and 25/30 (83.3\\%) real-robot successes when applied to a 36-DOF bimanual dexterous robotic platform."
+  },
+  {
+    "title": "AHA-WAM:Asynchronous Horizon-Adaptive World-Action Modeling with Observation-Guided Context Routing",
+    "original_title": "AHA-WAM:Asynchronous Horizon-Adaptive World-Action Modeling with Observation-Guided Context Routing",
+    "link": "https://arxiv.org/abs/2606.09811",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09811v1 Announce Type: new \nAbstract: World-action models have emerged as a promising paradigm for robot manipulation, jointly modeling visual scene dynamics and actions to inject physical priors into policy learning. However, existing world-action models couple world prediction and action execution at the same temporal resolution, forcing the world branch to model near-term frame variations that are redundant and weakly informative. We posit that strictly binding world prediction and action execution to the same temporal rhythm may underutilize the potential of the video branch for embodied control. Therefore, we propose AHA-WAM, an Asynchronous Horizon-Adaptive World-Action Model built on a dual Diffusion Transformer (DiT) architecture that reorganizes world-action modeling around this temporal asymmetry. AHA-WAM instantiates the video DiT as a low-frequency world planner that maintains rolling key-value memory over past observations and exposes reusable layerwise latent context encoding long-horizon scene evolution, while a high-frequency action DiT executes short action chunks in closed loop by querying this context through layerwise joint attention. To support asynchronous execution, we introduce horizon-adaptive offset training and Observation-Guided Video-Context Routing (OVCR), which together let the action expert exploit long-horizon world context while remaining responsive to real-time execution state without rerunning the video DiT. Experiments on RoboTwin and real-world manipulation tasks show that AHA-WAM achieves state-of-the-art performance without any robot-data pretraining, attaining 92.80% average success on RoboTwin and 78.3% success across 4 real-world tasks, while reaching 24.17 Hz closed-loop control with a 4.59x speedup over Fast-WAM."
+  },
+  {
+    "title": "iMaC: Translating Actions into Motion and Contact Images for Embodied World Models",
+    "original_title": "iMaC: Translating Actions into Motion and Contact Images for Embodied World Models",
+    "link": "https://arxiv.org/abs/2606.09813",
+    "date": "2026-06-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.09813v1 Announce Type: new \nAbstract: Embodied world models have emerged as a pivotal paradigm for visual robotic decision-making and interactive environment simulation. However, conventional embodied frameworks rely on low-dimensional structured action vectors (e.g., joint angles and end-effector poses), which suffer from limited expressive capacity, poor generalization across diverse embodiments, and unnatural dynamic modeling for complex physical interactions. To address these limitations, this paper proposesiMac (Image as Action Control), a novel unified control paradigm that treats raw visual images as native action representations for embodied world models. Departing from traditional explicit kinematic action encoding, iMac formulates continuous visual manipulation as image-based action tokens, which inherently encapsulate spatial motion intentions, interactive geometric constraints and subtle physical dynamics. We construct a dual-branch embodied architecture consisting of an image-action encoder and a dynamic world predictor: the encoder compresses target-driven visual images into compact action embeddings, while the predictor learns environment transition rules conditioned on image actions to achieve high-fidelity future state prediction and closed-loop embodied control. Extensive experiments are conducted on public embodied manipulation benchmarks and real-world robotic scenarios. The results demonstrate that iMac outperforms vector-based action control baselines in prediction accuracy, task success rate and cross-scene generalization ability. Moreover, our image-action design eliminates the reliance on manually defined action spaces, realizing flexible and universal control for heterogeneous embodied agents. This work provides an innovative visual-action perspective for embodied world models, offering a simple yet effective paradigm for scalable robotic perception and manipulation."
   },
   {
     "title": "TARS brings real-life embodied AI to ICRA 2026 robotics conference",
@@ -17917,86 +17998,5 @@
     "source": "ByteByteGo",
     "category": "humanoid",
     "summary": "데이터 저장은 쉽지만, 어디에 어떻게 정리할지 결정하는 것이 중요한 과제임."
-  },
-  {
-    "title": "ABB 로보틱스, 산업 작업에 초점을 맞춘 PoWa 공동로봇 가족 출시",
-    "original_title": "ABB Robotics launches PoWa cobot family targeting industrial tasks",
-    "link": "https://www.therobotreport.com/abb-robotics-launches-powa-cobot-family-targeting-industrial-tasks/",
-    "date": "2026-04-25 13:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "ABB 로보틱스는 전통적인 공동로봇과의 시장 간격을 채우기 위해 새로운 PoWa 공동로봇 가족을 출시했다."
-  },
-  {
-    "title": "로봇 배치, 공장 및 가정에서 시작점일 뿐 - citynewsservice.cn",
-    "original_title": "The Finish Line Is Only a Starting Point for Robotic Deployment in Factories, Homes - citynewsservice.cn",
-    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQU0JtMlFwX3ZRRXNzb0VnQWxmUWNELU1hUHFQTFFUX2dncU81ajRVMlNCaGJfY1NYaFF6SWNiYWNUNXktSFlodW5KdC1wVUNUb2R1MzY5ekVaMmhIaWJHbnhvQ3oyVi1aMTVQWGdWd0NCYXAzTHdxcXpUT0Y3eHJVSkpTZ3ZELWtoM0VWZ3ROSTFTdHdMV3VvWXl4Vm95dC1hU21BblllRllEREEtZ251T0hNUFF5Ykc0a2JoQ2JNTzFWOGZzX0VnbUl1RFgxdGI1RTliWTlhQ0Jja2ducXVVbDRnSkhOZw?oc=5",
-    "date": "2026-04-25 12:48",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "로봇의 보급은 공장과 가정에서  다음 단계를 향해 나아가고 있지만, 여전히 초기 단계임을 강조함. 로보틱스 기술 발전과 함께 더욱 광범위한 분야에 적용될 전망이며, 앞으로도 혁신 및 융합이 이어질 것으로 예상됨."
-  },
-  {
-    "title": "중국의 새로운 인형 로봇이 숙련된 공중 동작을 선보임",
-    "original_title": "Kung fu 'master': China's new humanoid robot nails tough aerial moves in demo - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi-wJBVV95cUxNZThQMnQ1cmNnejNiZEJpakYyR3FkcWNLbEpRc1FtaDdFU0laX1ZLMTVURVhSeGlWVVFwdnhfVWduNGZUUEJnLW5tWnZYQ3VJZ3BwYTR5SGZzSzMzMWd1b3pObW9aSUdjTGd0SDQ5Qm9Ya0QyeURkY2VkS19rSXlUU2RIQW9QT2o5TEg5N0dSYzY5MFlsOGVrYjZxbGh0S0FVZlB3TWgwaHpncWptejRTaTZ1a3ctSUZjc0ptb0x2WkljbmhEYVphXzR1b0hmaDQ4VTdTRHp5ejluMnV4ZFdXV1pOSE1GeFZsMlptNFE1aVkxV3NTb3BVOHlVMDlDTjZTWFh5V2ZlclZCaWZGd0ZBT1U3djhpUUJIUXdWd2lVOFJycmgxeWRhY3laTUJLdFVKelYxcG16QnZxR2h0LXBTZlh5eUxtVHFFVjJwbGJCLVFzZ3RfQlFxYWpYUGRWVTFMTV9QWU9nMV9LeFpDczlOSUtyVUZhNmoxVlFj?oc=5",
-    "date": "2026-04-25 11:28",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국에서 개발된 새로운 인형 로봇 '쿵푸 마스터'가 어려운 공중 기술을 완벽하게 수행하는 모습을 보여주었습니다. 이 로봇은 앞으로 다양한 분야에서 활용될 가능성이 높습니다."
-  },
-  {
-    "title": "중국 기업, 1만대 인형 로봇 출고… 올해 세계 공장에 10만 대 배치 목표",
-    "original_title": "A Chinese company has just delivered its 10,000th humanoid robot — and now wants to place 100,000 in factories worldwide by the end of the year, while Tesla, Boston Dynamics, and the rest of the West have yet to move beyond prototypes. - CPG Click Petróleo e Gás",
-    "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOM3M1SHk1U05GZHU5SVlDdnczVV9oZUVNVW9zQnR2X2t1cl9EamE5VnN6YVdtRWVSNGJMMzkya2htVXExTGdob05vYXh5Z2JjazZZUzBCSXQtQUNlRXZIaXF4cGl1M293S1JNSWRHclBOSW1UNUZ4ZVNFbE5RMC11YkdoR0V0NThuVEVLeHAzS0VtM2o2UVJ0bGlFOThOX3JDT3c4V0pfdnFXU1RvZFJRUXBQOXFCaGhTR2ZiMHdrYWpSWkMxdnVGNGwwdHVPMW5QenVoWS1RUWdJU2Z3Y3pMeTJhY0ZOcEtURVlrYXlLWGstWThVaHJSNTgwVlc0MVkwY2M5MXpwOUxzVnJwWnVyVw?oc=5",
-    "date": "2026-04-25 09:05",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 기업이 1만대의 인형 로봇을 생산 및 전달했으며, 올해 말까지 전 세계 공장에 10만대를 배치할 계획이다. 반면 테슬라, 보스턴 다이내믹스 등 서구 기업은 아직 프로토타입 단계에 머물고 있다."
-  },
-  {
-    "title": "인형 로봇, 베이징 반마라톤서 인간 기록 경신 및 자율 주행 능력 선보임",
-    "original_title": "Humanoid robots shatter human record, showcase autonomy at Beijing half-marathon - Pressenza - International Press Agency",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPa1dUSkJFZGdRME5OVUpzQlA3ZnNIc2xNdmtYRVNaVHlGR05hQ1BydHl2eTY0aHRyZEdYUEptaFMxWmRJYUdUX1R6dDMxRS1BOV9lc095MldidXZhRUVxMy12N3FTaS1ySV80Y013MUgtUHJwVGJmVUlRd0Nhb2pPSVc4Mk9GN1BkaVUxWEZ1Y0s2WWZlNXpBdDJtNVdURUhBaE4tYkFHZUxfTEJNWDBWT1RTUnI?oc=5",
-    "date": "2026-04-25 01:56",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "인형 로봇들이 베이징 반마라톤에서 인간 기록을 경신하며 높은 수준의 자율 주행 능력을 보여주었습니다. 이번 행사는 로봇 기술 발전과 인공지능 적용 가능성을 시연했습니다."
-  },
-  {
-    "title": "주말 돈] '사인볼트 수준' 로봇 개발한 중국 기업, 올해 상장 예정",
-    "original_title": "[Weekend Money] Chinese Firm Behind 'Usain Bolt-Level' Robot to Go Public This Year - 아시아경제",
-    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE51VEdNQ3ZVdVhuYmpYWC1MaWEyQnROTm9kZUhWWkhpVmJJSnJjUGtNY0hmbVlXRUp6Ul8tZmxaR1VweUhEb3F5elNzWXFzLUwyelNVVWJVTHpyY200OUwwNDMwYl8?oc=5",
-    "date": "2026-04-25 00:49",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "'우주 볼트' 수준의 속도로 주행하는 로봇을 개발한 중국 기업이 올해 상장 계획임.  기업은 빠른 속도로 이동 가능한 로봇 기술을 갖추고 있으며, 투자 유치와 사업 확대를 위한 전략으로 상장을 추진 예정임."
-  },
-  {
-    "title": "과학 소설에서 현실로: 전문가 Jan Liphardt 박사와 함께 살펴보는 물리적 AI의 미래",
-    "original_title": "From sci-fi to reality: Physical AI’s future with Dr. Jan Liphardt",
-    "link": "https://www.therobotreport.com/from-sci-fi-to-reality-physical-ais-future-with-dr-jan-liphardt/",
-    "date": "2026-04-24 21:36",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Jan Liphardt 박사는 모듈식 인공지능 시스템이 로봇에 미치는 영향을 논하며 인간-로봇 상호작용에서 투명성과 안전의 중요성을 강조함."
-  },
-  {
-    "title": "Accenture, Vodafone, 및 SAP 창고에서 인형 로봇 시범 운영",
-    "original_title": "Accenture, Vodafone, and SAP to pilot humanoid robots in the warehouse",
-    "link": "https://www.therobotreport.com/accenture-vodafone-and-sap-to-pilot-humanoid-robots-in-the-warehouse/",
-    "date": "2026-04-24 18:51",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Accenture의 Robot Brain 솔루션으로 동력을 공급받는 인형 로봇이 창고 작업에 사용될 예정이며, 이를 통해 인간 작업자와 자연스럽게 상호 작용 가능."
-  },
-  {
-    "title": "로봇 대 프로 핑퐁 선수: 누가 이기나",
-    "original_title": "Video Friday: Who Wins in Robot Versus Pro Ping-Pong Player?",
-    "link": "https://spectrum.ieee.org/video-friday-ping-pong-robot",
-    "date": "2026-04-24 16:30",
-    "source": "IEEE Spectrum",
-    "category": "humanoid",
-    "summary": "IEEE Spectrum이 발행하는 로보틱스 영상들을 소개하며, Sony AI의 Ringbot Quad, 인공지능 중심 로봇 등 다양한 분야의 최신 기술을 보여주는 영상을 소개."
   }
 ]
