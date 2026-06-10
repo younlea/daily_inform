@@ -369,6 +369,69 @@
     "summary": "arXiv:2601.10724v3 Announce Type: replace \nAbstract: Multi-robot formation control has various applications in domains such as vehicle troops, platoons, payload transportation, and surveillance. Maintaining formation in a vehicle platoon requires designing a suitable control scheme that can tackle external disturbances and uncertain system parameters while maintaining a predefined safe distance between the robots. A crucial challenge in this context is dealing with the unknown/uncertain friction forces between wheels and the ground, which vary with changes in road surface, wear in tires, and speed of the vehicle. Although state-of-the-art adaptive controllers can handle a priori bounded uncertainties, they struggle with accurately modeling and identifying frictional forces, which are often state-dependent and cannot be a priori bounded.\n  This thesis proposes a new adaptive sliding mode controller for wheeled mobile robot-based vehicle platoons that can handle the unknown and complex behavior of frictional forces without prior knowledge of their parameters and structures. The controller uses the adaptive sliding mode control techniques to regulate the platoon's speed and maintain a predefined inter-robot distance, even in the presence of external disturbances and uncertain system parameters. This approach involves a two-stage process: first, the kinematic controller calculates the desired velocities based on the desired trajectory; and second, the dynamics model generates the commands to achieve the desired motion. By separating the kinematics and dynamics of the robot, this approach can simplify the control problem and allow for more efficient and robust control of the wheeled mobile robot."
   },
   {
+    "title": "Scalable and General Whole-Body Control for Cross-Humanoid Locomotion",
+    "original_title": "Scalable and General Whole-Body Control for Cross-Humanoid Locomotion",
+    "link": "https://arxiv.org/abs/2602.05791",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2602.05791v3 Announce Type: replace \nAbstract: Learning-based whole-body controllers have become a key driver for humanoid robots, yet most existing approaches require robot-specific training. In this paper, we study the problem of cross-embodiment humanoid control and show that a single policy can robustly generalize across a wide range of humanoid robot designs with one-time training. We introduce XHugWBC, a novel cross-embodiment training framework that enables generalist humanoid control through: (1) physics-consistent morphological randomization, (2) semantically aligned observation and action spaces across diverse humanoid robots, and (3) effective policy architectures modeling morphological and dynamical properties. XHugWBC is not tied to any specific robot. Instead, it internalizes a broad distribution of morphological and dynamical characteristics during training. By learning motion priors from diverse randomized embodiments, the policy acquires a strong structural bias that supports zero-shot transfer to previously unseen robots. Experiments on twelve simulated humanoids and seven real-world robots demonstrate the strong generalization and robustness of the resulting universal controller."
+  },
+  {
+    "title": "Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity",
+    "original_title": "Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity",
+    "link": "https://arxiv.org/abs/2602.07413",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.07413v3 Announce Type: replace \nAbstract: Contemporary visuo-motor dexterity models often rely on expressive policy classes with diffusion and transformer backbones to achieve strong performance. However, these architectures require significant data and computational resources, and remain far from reliable, particularly for multi-fingered dexterity. Importantly, they model skills as reactive mappings and rely on fixed-horizon action chunking, creating a rigid trade-off between temporal coherence and reactivity. To address these issues, we first introduce Unified Behavioral Models (UBMs), a framework to represent dexterous skills as coupled dynamical systems that capture how visual features of the environment (visual flow) and proprioceptive states of the robot (action flow) co-evolve. As such, UBMs ensure temporal coherence by construction rather than heuristic averaging. Unlike world models that attempt to predict the impact of arbitrary robot actions on the environment, UBMs target behavioral dynamics that encode how demonstrated robot behavior is related to desired impacts on the environment. A UBM can be viewed as a pseudo planner: given an initial condition, it computes the desired robot behavior over the entire skill horizon, while simultaneously ``imagining\" the resulting flow of visual features. To operationalize UBMs, we propose Koopman-UBM, a first instantiation of UBMs as a structured latent linear system. K-UBM is computationally efficient, enabling reactivity and adaptation via an online replanning strategy: the model acts as its own runtime monitor, automatically triggering replanning when predicted and observed visual flow diverge beyond a threshold. Across seven simulated tasks and four real-world tasks, our approach matches or exceeds the performance of state-of-the-art baselines, while offering considerably faster inference, smooth execution, robustness to occlusions, and flexible replanning."
+  },
+  {
+    "title": "Online Self-Training for Co-Adaptation in Hierarchical Diffusion Policies",
+    "original_title": "Online Self-Training for Co-Adaptation in Hierarchical Diffusion Policies",
+    "link": "https://arxiv.org/abs/2603.05291",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.05291v2 Announce Type: replace \nAbstract: Hierarchical policies decompose language-conditioned long-horizon robotic manipulation into a high-level planner and a low-level controller. However, effective coordination between HL and LL requires that both components operate on compatible subgoal distributions. We propose ORCHID, a self-training framework that enables stable online improvement of hierarchical diffusion policies by aligning planning and control through iterative refinement. By filtering policy samples via environment feedback, ORCHID identifies trajectories where the planner and controller are jointly successful and distills them back into both modules via supervised learning. This process induces a bidirectional co-adaptation: the planner grounds its subgoals in the actual reaching capabilities of the controller, while the controller specializes in the trajectory structures the planner produces. By relying on supervised distillation of filtered on-policy samples, ORCHID avoids the instability typical of online hierarchical gradient-based RL training with diffusion models. On the CALVIN benchmark, ORCHID allows a lightweight, initially weak model to outperform pure offline methods, including a Vision-Language-Action model twice its size."
+  },
+  {
+    "title": "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+    "original_title": "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+    "link": "https://arxiv.org/abs/2407.20242",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2407.20242v5 Announce Type: replace-cross \nAbstract: Embodied AI represents systems where AI is integrated into physical entities. Large Language Model (LLM), which exhibits powerful language understanding abilities, has been extensively employed in embodied AI by facilitating sophisticated task planning. However, a critical safety issue remains overlooked: could these embodied LLMs perpetrate harmful behaviors? In response, we introduce BadRobot, a novel attack paradigm aiming to make embodied LLMs violate safety and ethical constraints through typical voice-based user-system interactions. Specifically, three vulnerabilities are exploited to achieve this type of attack: (i) manipulation of LLMs within robotic systems, (ii) misalignment between linguistic outputs and physical actions, and (iii) unintentional hazardous behaviors caused by world knowledge's flaws. Furthermore, we construct a benchmark of various malicious physical action queries to evaluate BadRobot's attack performance. Based on this benchmark, extensive experiments against existing prominent embodied LLM frameworks (e.g., Voxposer, Code as Policies, and ProgPrompt) demonstrate the effectiveness of our BadRobot. Our code is available at https://github.com/Rookie143/BadRobot."
+  },
+  {
+    "title": "RoboGPT-R1: Enhancing Robot Task Planning with Reinforcement Learning",
+    "original_title": "RoboGPT-R1: Enhancing Robot Task Planning with Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2510.14828",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.14828v3 Announce Type: replace-cross \nAbstract: Improving the reasoning capabilities of embodied agents is crucial for robots to complete complex human instructions in long-view manipulation tasks successfully. Despite the success of large language models and vision language models based on Supervised Fine-Tuning (SFT) in planning tasks, they continue facing challenges in performing long-horizon manipulation tasks in complex real-world environments, owing to their restricted common sense and reasoning capabilities. Considering that aligning general-purpose vision language models to robotic planning tasks via supervised fine-tuning suffers from poor generalization and insufficient physical understanding, we propose RoboGPT-R1, a two-stage fine-tuning framework for embodied planning. In this framework, supervised training acquires foundational knowledge through expert sequences, followed by RL to address the model's shortcomings in visual-spatial understanding and reasoning. To achieve physical understanding and action sequence consistency in multi-step reasoning tasks, we design a rule-based reward function that simultaneously considers long-horizon performance and action constraint in the environment. The reasoning model, trained on Qwen2.5-VL-3B, significantly outperforms the larger-scale model, GPT-4o-mini, by 21.33% and surpasses other work trained on Qwen2.5-VL-7B by 20.33% on the EmbodiedBench benchmark."
+  },
+  {
+    "title": "QDepth-VLA: Quantized Depth Prediction as Auxiliary Supervision for Vision-Language-Action Models",
+    "original_title": "QDepth-VLA: Quantized Depth Prediction as Auxiliary Supervision for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2510.14836",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.14836v3 Announce Type: replace-cross \nAbstract: Spatial perception and reasoning are crucial for Vision-Language-Action (VLA) models to accomplish fine-grained manipulation tasks. However, existing approaches often lack the ability to understand and reason over the essential 3D structures necessary for precise control. To address this limitation, we propose QDepth-VLA, a general framework that augments VLA models with an auxiliary depth prediction task. A dedicated depth expert is designed to predict quantized latent tokens of depth maps obtained from a VQ-VAE encoder, enabling the model to learn depth-aware representations that capture critical geometric cues. Experimental results on the simulation benchmarks and real-world tasks demonstrate that QDepth-VLA yields strong spatial reasoning and competitive performance on manipulation tasks."
+  },
+  {
+    "title": "Glove2Hand: Synthesizing Natural Hand-Object Interaction from Multi-Modal Sensing Gloves",
+    "original_title": "Glove2Hand: Synthesizing Natural Hand-Object Interaction from Multi-Modal Sensing Gloves",
+    "link": "https://arxiv.org/abs/2603.20850",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.20850v2 Announce Type: replace-cross \nAbstract: Understanding hand-object interaction (HOI) is fundamental to computer vision, robotics, and AR/VR. However, conventional hand videos often lack essential physical information such as contact forces and motion signals, and are prone to frequent occlusions. To address the challenges, we present Glove2Hand, a framework that translates multi-modal sensing glove HOI videos into photorealistic bare hands, while faithfully preserving the underlying physical interaction dynamics. We introduce a novel 3D Gaussian hand model that ensures temporal rendering consistency. The rendered hand is seamlessly integrated into the scene using a diffusion-based hand restorer, which effectively handles complex hand-object interactions and non-rigid deformations. Leveraging Glove2Hand, we create HandSense, the first multi-modal HOI dataset featuring glove-to-hand videos with synchronized tactile and IMU signals. We demonstrate that HandSense significantly enhances downstream bare-hand applications, including video-based contact estimation and hand tracking under severe occlusion."
+  },
+  {
     "title": "China humanoid robot footballer dents wall with powerful kick - VnExpress International",
     "original_title": "China humanoid robot footballer dents wall with powerful kick - VnExpress International",
     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaUh4TFRpSDBrRXNnZkdjQ1dQY3JseG5lWDJET283RFAzV3JNYWJTcmtMWWRDRnY5Y2hwcXdTTWpVbEJPRnBFSHdvdmtveEVWVFRTVnFLdEhVVlJrOU9UMExxRjNfTXdsekNUVEJqaFJIN0x0S3lwU1ljQTlJbVRBRzZ6ZjlwTWdaTWpLN1RraVRybXJMMHp2dlg4Rk1CZ0JjZnc0QlkyWkhpS0lXNjByWDQwNl9PTDBDOGc?oc=5",
@@ -17935,68 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "3D 프린팅 인공 피부의 감지 범위 및 적합성 향상: 다중 모달 감지와 부드러운 소재를 통한|| 3D 프린팅 인공 피부는 전신 촉각과 근접도 측정에 유용하지만, 기존 구현은 단일 감지 방식과 경직된 재료로 제한되었음. 이 연구에서는 시간대 (ToF)와 자가 용량 (SC)을 결합하여 다중 모달 감지를 가능하게 하고, 충격 흡수 및 압력 감지에 적합한 부드러운 소재를 사용하는 인공 피부를 개발하여 실용성을 향상시킴."
-  },
-  {
-    "title": "선호하는 미래 예측 분별: 세계 행동 모델의 무료 미래 수정",
-    "original_title": "Privileged Foresight Distillation: Zero-Cost Future Correction for World Action Models",
-    "link": "https://arxiv.org/abs/2604.25859",
-    "date": "2026-04-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "최근 연구는 앞으로 나아가면서 영상과 행동을 동시에 예측하는 세계 행동 모델에서 미래 예측 부분이 실제로 하는 역할이 중요하지 않음을 보여주고 있다. 이 논문에서는 앞으로 예측 부분을 제거하면서도 일반적인 조작 지표에서의 손실이 거의 없다는 것을 확인하며, 미래 정보가 공유되는 시각 뼈대에 대한 정규화제 역할만 수행한다고 주장합니다.  본 연구에서는 학습 중에 행동 조건에 따라 미래 관찰이 행동 노이즈 제거에 미치는 수정 효과를 유도하는 것으로 설명하며, 현재 만의 정책은 이 수정을 부분적으로만 포착한다고 지적합니다."
-  },
-  {
-    "title": "asRoBallet:  마찰 인식 강화 학습을 통한 하모니형 로봇 시뮬레이션 및 실제 환경 적용",
-    "original_title": "asRoBallet: Closing the Sim2Real Gap via Friction-Aware Reinforcement Learning for Underactuated Spherical Dynamics",
-    "link": "https://arxiv.org/abs/2604.24916",
-    "date": "2026-04-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "asRoBallet은 humanoid ballbot에 대한 강화학습의 최초 적용으로, 높은 정밀도 Simulink 모델과 마찰 요소를 고려하는 새로운 강화 학습 프레임워크를 통해 하드웨어 시뮬레이션 및 실제 환경 적용 성공을 달성했습니다."
-  },
-  {
-    "title": "Libra-VLA: 비동기적 두 개 체계를 통한 학습 균형 달성",
-    "original_title": "Libra-VLA: Achieving Learning Equilibrium via Asynchronous Coarse-to-Fine Dual-System",
-    "link": "https://arxiv.org/abs/2604.24921",
-    "date": "2026-04-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Libra-VLA는 시각-언어-작용(VLA) 모델의 코스-투-파인 두 계층 구조를 통해 복잡한 로봇 제어 작업을 위한 고급 의미 지시를 실행 가능한 물리적 동작으로 매핑하는 방법을 제시. 이 접근 방식은 먼저 시각적-언어적 특징을 해상도가 높은 운동 명령에 직접 매핑하는 대신, 큰 방향성의 손짓과 정밀한 자세 조정으로 로봇 제어 작업을 분해하여 학습 복잡도를 단계적으로 줄이고 의미-작용 간격을 완화합니다."
-  },
-  {
-    "title": "RISE: 구성적 세계 모델을 활용한 자기 개선 로봇 정책",
-    "original_title": "RISE: Self-Improving Robot Policy with Compositional World Model",
-    "link": "https://arxiv.org/abs/2602.11075",
-    "date": "2026-04-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Contact-rich 및 dynamic manipulation task에서 성능 저하를 겪는 Vision-Language-Action (VLA) 모델의 한계를 극복하기 위해, RISE라는 새로운 로봇 강화학습 프레임워크가 제안됨. RISE는 구성적 세계 모델을 기반으로 하여 시뮬레이션 환경에서 다양한 가상 실행과 결과 평가를 통해 정책 개선에 유용한 정보를 제공함."
-  },
-  {
-    "title": "Polaris AI가 한국 UBTECH 인형 로봇 운영 | Polaris AI는 한국에서 UBTECH 인형 로봇을 관리하며 물리적 인공지능 사업 가속화를 목표로 한다.",
-    "original_title": "Polaris AI Takes Charge of UBTECH Humanoid Robots in Korea... Accelerates Physical AI Business - 아시아경제",
-    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE44TnRWaXNuamtYa3NfYk80elFCVkI0N1loLVFiX0pVQ0NjZFpRbm85QWg3OVI3S0RVV3o5c0N4RklkVDNlN2Q0dEhvdFJ2b3hrMFQwUUlsLTVfc0ZIaHBuR3ZQVVhQTldzUjVvTzBwanNYTjdrN0xYMjc5SQ?oc=5",
-    "date": "2026-04-28 23:52",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Polaris AI가 한국 UBTECH 인형 로봇 운영 | Polaris AI는 한국에서 UBTECH 인형 로봇을 관리하며 물리적 인공지능 사업 가속화를 목표로 한다."
-  },
-  {
-    "title": "폴라리스 AI, UBTECH 인형 로봇을 양도… 물리적 AI 사업 가속화",
-    "original_title": "Polaris AI Takes Charge of UBTECH Humanoid Robots in Korea... Accelerates Physical AI Business - 아시아경제",
-    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5sZldjckhKdUUwS243NkRiMTcwVUxYVlRXQk1MZzZraEdZbllTTlRwYnRQYmIxUXFiY0g5R0s2c0lrYUtYUVpzSkdHaWN5eG5SSFNzRXAwb0xoS2VZMnVDR1h1Zy0?oc=5",
-    "date": "2026-04-28 23:52",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "폴라리스 AI가 한국에서 인형 로봇 제조 업체 UBTECH의 인력 운영 전문 분야를 이끌기로 하였으며, 이는 물리적 AI 사업 확대에 기여할 것으로 예상됨."
-  },
-  {
-    "title": "우베텍의 인형군: 독일 약국에서 중국 전력망까지",
-    "original_title": "Ubtech’s Humanoid Army: From German Drugstores to Chinese Power Grids - AD HOC NEWS",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdHF3dXFTR2tHeFRvd0YwVXBqVWdpVkdVaTg4QWRiZXBnTDMwMFNDa295M0k2WHJtY21UQ0prVXNyWFpfSXpHV2lZVVZ1Uk92YlNDY2plZWpVNUxNWi01ZjFqeE0ybTd6cWgxSE92eW9MelRRUEI0MTdnODhCdFRkTGR1T0M5S3pHNDBmS19wOS1SSF9tMGtFd0JWQlZoZWJHN2NyQklPdzM1cUZLYTZETThZZ3FkeWFkWlZNY1h0V0F2NnhBSlE?oc=5",
-    "date": "2026-04-28 23:40",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "우베텍은 사람 형태의 로봇을 사용하여 독일 약국에서 서비스를 제공하고, 중국 전력망 관리에 활용하는 등 다양한 분야로 진출함."
   }
 ]
