@@ -1,5 +1,86 @@
 [
   {
+    "title": "GHOST: Hierarchical Sub-Goal Policies for Generalizing Robot Manipulation",
+    "original_title": "GHOST: Hierarchical Sub-Goal Policies for Generalizing Robot Manipulation",
+    "link": "https://arxiv.org/abs/2606.10025",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10025v1 Announce Type: new \nAbstract: We present GHOST, a framework for learning visuomotor manipulation policies that generalize beyond the training distribution. GHOST factorizes control into (i) a high-level policy that predicts the next sub-goal as a distribution over 3D end-effector poses from multi-view RGB-D observations, and (ii) a low-level goal-conditioned controller that executes embodiment-specific actions. To condition image-based policies on 3D goals, we introduce a simple spatial interface that projects predicted goals into the image plane and represents them as end-effector heatmaps. Across a suite of manipulation tasks, this hierarchical factorization consistently improves performance and robustness compared to a flat Diffusion Policy.\n  Further, we show that this hierarchical interface also makes it easy to incorporate human demonstrations without relying on (noisy) action retargeting. As sub-goals are largely embodiment-agnostic, we train the high-level policy on human video to specify how learned skills should be applied and composed, while keeping the low-level policy trained purely on robot data. This hierarchy enables adaptation to novel objects and task variations using a small number of human demonstrations."
+  },
+  {
+    "title": "Robotic Nonprehensile Object Transportation with a Hanging Tray",
+    "original_title": "Robotic Nonprehensile Object Transportation with a Hanging Tray",
+    "link": "https://arxiv.org/abs/2606.10039",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10039v1 Announce Type: new \nAbstract: We consider the nonprehensile object transportation task known as the waiter's problem, in which a robot must move an object balanced on a tray from one location to another. In contrast to prior works on the robotic waiter's problem, which make the robot tilt a tray rigidly held by its end effector (EE), we use a tray suspended from the EE by ropes, such that it behaves like a three-dimensional pendulum. Some prior works have actuated the robot so that the EE simulates the behavior of a pendulum, because pendular motion reduces the shear forces acting on the transported objects, minimizing the sliding of rigid objects and sloshing in containers of liquid. In contrast, our use of a real hanging tray allows us to obtain the benefits of pendular motion while only actuating a 3 degree-of-freedom (DOF) mobile base, rather than requiring a full 6-DOF manipulator arm. Our experiments in simulation and on real hardware show that the hanging tray substantially reduces both sliding and sloshing compared to a static, rigidly-grasped tray. Furthermore, we integrate the hanging tray into an interactive robot waiter demonstration, which uses computer vision to identify people with a raised hand and visual servoing to steer toward them and allow them to access the tray."
+  },
+  {
+    "title": "Efficient-WAM: A 1B-Parameter World-Action Model with Low-Cost Future Imagination",
+    "original_title": "Efficient-WAM: A 1B-Parameter World-Action Model with Low-Cost Future Imagination",
+    "link": "https://arxiv.org/abs/2606.10040",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10040v1 Announce Type: new \nAbstract: World-Action Models (WAMs) have emerged as a promising paradigm for embodied control by coupling future visual prediction with action generation. However, most existing WAMs rely on photorealistic future prediction, which incurs high inference latency and makes real-time robot deployment difficult. This motivates a more efficient WAM design that preserves the control benefits of future visual prediction while reducing its inference cost. We introduce Efficient-WAM, a World-Action Model that reduces the cost of future imagination while preserving its control benefit. Efficient-WAM improves inference efficiency via a compact video expert transferred from WAN-2.2-5B, token-sparse video latents, and asymmetric video-action denoising that allocates fewer sampling steps to video than to actions. Instead of optimizing the future branch for visual fidelity, Efficient-WAM treats future video prediction as a compact guidance signal for action generation. Comprehensive experiments on RoboTwin 2.0 and real-world manipulation tasks show that Efficient-WAM maintains strong action performance despite visibly coarse future predictions. While maintaining competitive control capabilities, our 1B-parameter model can reduce per-chunk latency to around 100 ms during physical deployment, achieving a 30x speedup over existing WAMs."
+  },
+  {
+    "title": "What Demonstration Curation Metrics Do to Your Policy",
+    "original_title": "What Demonstration Curation Metrics Do to Your Policy",
+    "link": "https://arxiv.org/abs/2606.10229",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10229v1 Announce Type: new \nAbstract: We study whether demonstration-curation metrics that detect defective training episodes also improve the downstream behavior-cloning policy that trains on the curated data. On a contact-rich LIBERO pick-and-place benchmark with a controlled structural defect (early gripper release during the carry phase), we find that the two quantities are sharply decoupled. The metric with the highest defect-detection AUROC (0.804) produces the worst curated policy (13.3% task success), while a metric with a substantially lower AUROC (0.638) produces a policy that nearly matches the oracle trained on ground-truth clean data (90.0% vs. 93.3%). We further show that five of the seven metrics we evaluate exploit episode length as a trivial proxy for the defect label, a confound that inflates reported AUROCs to near-perfect values and disappears once episode length is controlled. Across all conditions, the contaminated baseline succeeds on only 3.3% of rollouts, and the two best curation methods close this to within 3 percentage points of the 93.3% oracle ceiling. Our results argue that curation methods should be evaluated by the policy they produce, not the defects they flag, and that any curation benchmark must control for episode length before reporting detection accuracy. We release the testbed, all metric implementations, and the evaluation pipeline."
+  },
+  {
+    "title": "YUBI: Yielding Universal Bidigital Interface for Bimanual Dexterous Manipulation at Scale",
+    "original_title": "YUBI: Yielding Universal Bidigital Interface for Bimanual Dexterous Manipulation at Scale",
+    "link": "https://arxiv.org/abs/2606.10244",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10244v1 Announce Type: new \nAbstract: We introduce Yielding Universal Bidigital Interface (YUBI), a finger-aligned gripper designed to enable intuitive, ergonomic, and scalable data collection for bimanual dexterous manipulation. While handheld data collection systems such as Universal Manipulation Interface (UMI) enable affordable data collection, their bulky pistol-grip designs can pose ergonomic and usability challenges for fine-grained, dexterous manipulation tasks. To address this, YUBI presents a distinct design principle: yielding, finger-driven actuation that directly maps human finger movements to gripper jaw motion. Using the YUBI devices, we set up a data collection system with integrated VR-based 6 DoF tracking of the gripper, ensuring high-fidelity trajectory data acquisition. We curate a UMI-based dataset of unprecedented scale: 8,434 hours across 1.20M episodes and 119 tasks. Experiments show that YUBI offers advantages over the UMI gripper in versatility for complex bimanual tasks, dexterity, and operational efficiency. A single policy trained on the YUBI dataset transfers across multiple bimanual robots (UR, Franka, and ELEY) simply by mounting the gripper on each platform, confirming that the collected data are directly executable as policy supervision. We release the gripper hardware, data-collection software, and dataset as one integrated stack, offering the open community a reproducible path to large-scale data acquisition for advancing robotic foundation models."
+  },
+  {
+    "title": "What Matters in Orchestrating Robot Policies: A Systematic Study of Hierarchical VLA Agents",
+    "original_title": "What Matters in Orchestrating Robot Policies: A Systematic Study of Hierarchical VLA Agents",
+    "link": "https://arxiv.org/abs/2606.10267",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10267v1 Announce Type: new \nAbstract: Hierarchical vision-language-action (Hi-VLA) systems have emerged as a promising paradigm for complex robot manipulation, by using high-level VLM planners to decompose tasks into language subgoals executed by low-level VLA controllers. Despite recent empirical progress, there is a lack of unified design principles for these systems: existing Hi-VLA systems differ in how they choose and connect planners, controllers, mechanisms to switch between the two, and how observations and memory are represented in the planner. In this paper, we present a systematic study of Hi-VLA design for robot manipulation. We unify representative Hi-VLA agents under an options-style control framework and benchmark core design choices across short-horizon, long-horizon, and reasoning-intensive tasks. Our analysis distills practical principles for building Hi-VLA systems, showing how model choices and interface mechanisms jointly shape performance. Applying these principles yields a substantially stronger system than either flat VLA control or a naively designed hierarchy, across experiments both in simulation and on a real ALOHA robot. Overall, our results provide a foundation for building more capable, robust, and principled hierarchical VLA agents. More information and video at jiahenghu.github.io/hi-vla."
+  },
+  {
+    "title": "Locomotion analysis of a quadruped interacting with the lunar granular surface",
+    "original_title": "Locomotion analysis of a quadruped interacting with the lunar granular surface",
+    "link": "https://arxiv.org/abs/2606.10273",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.10273v1 Announce Type: new \nAbstract: Deploying legged robots in extra-terrestrial environments includes many challenges due to complex terrain interactions, energy, and thermal constraints. For effective mechanical design of a lunar exploration quadrupedal robot, careful consideration of motor torques, energy expenditure, and cost of transport is required. The lunar surface is composed of granular regolith, which impacts the locomotion of legged robots and their performance. Locomotion algorithms trained with rigid contact assumptions are also ineffective when applied to environments with soft contacts, such as granular surfaces, which can result in instability and poor tracking. In this report, the physical modelling of the granular lunar surface-robot foot contacts is applied to a simulation environment with locomotion trained using Reinforcement Learning. A comparison is conducted between the policy trained on rigid contact and soft contact environments, analysing the gait and locomotion performance metrics. The analysis demonstrates that soft contacts simulating regolith surfaces pose additional challenges for Reinforcement Learning based training, result in a qualitatively different gait, and increase the overall energy expenditure."
+  },
+  {
+    "title": "Hierarchical Policies from Verbal and Egocentric Human Signals for Natural Human-Robot Interaction",
+    "original_title": "Hierarchical Policies from Verbal and Egocentric Human Signals for Natural Human-Robot Interaction",
+    "link": "https://arxiv.org/abs/2606.10276",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10276v1 Announce Type: new \nAbstract: For natural human-robot interaction, a robot must understand human intent expressed not only through language but also through nonverbal signals such as gestures and gaze. However, current robot policies rely on language instructions as the sole interface for conveying intent, leaving nonverbal signals unused and placing the full burden of communication. In this work, we present EDITH, a robot framework that captures the human's nonverbal signals through continuous streams of first-person view and gaze from smart glasses, and uses them alongside language instructions as inputs to the robot policy. Our hardware system streams the human's first-person view, gaze, and speech to the robot in real time, transcribing the speech into language instructions. To handle these rich but noisy signals, we design a hierarchical policy in which a high-level policy infers the human's intent and produces a sequence of subtasks, where each subtask is represented as a fine-grained instruction paired with a keyframe that grounds the intent in the scene (e.g., the frame where the human points at the target object). A low-level policy then executes these subtasks. In our experiments on human-robot interactive tasks, EDITH enables the robot to act on the human's nonverbal signals even when intent is expressed only briefly, and significantly reduces user effort to convey intent compared to using language instructions alone. Visit our project page for source code and real-robot demo videos."
+  },
+  {
+    "title": "China humanoid robot footballer dents wall with powerful kick - VnExpress International",
+    "original_title": "China humanoid robot footballer dents wall with powerful kick - VnExpress International",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaUh4TFRpSDBrRXNnZkdjQ1dQY3JseG5lWDJET283RFAzV3JNYWJTcmtMWWRDRnY5Y2hwcXdTTWpVbEJPRnBFSHdvdmtveEVWVFRTVnFLdEhVVlJrOU9UMExxRjNfTXdsekNUVEJqaFJIN0x0S3lwU1ljQTlJbVRBRzZ6ZjlwTWdaTWpLN1RraVRybXJMMHp2dlg4Rk1CZ0JjZnc0QlkyWkhpS0lXNjByWDQwNl9PTDBDOGc?oc=5",
+    "date": "2026-06-10 03:34",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China humanoid robot footballer dents wall with powerful kick  VnExpress International"
+  },
+  {
     "title": "Tianjin develops sensors for embodied AI - China Daily",
     "original_title": "Tianjin develops sensors for embodied AI - China Daily",
     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBsNXcyaVJBUlUwQlRKakZGSGdwMThmNVp5RWdEZXVwbm1Rb3cybDlLdllYV0JOWTBGdXotSVhmd0llNko1RFY3aFU1ZFFkV2hoOHN0d2J6elVndmxzY0x3RHVfNExNOUtaX0ZBTHQzNnROYmNadEE3bVBPQlZJZw?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "DextER는 물체 표면에서 손가락 링크가 어디에 접촉하는지를 예측하는 접촉 기반 신체적 추론을 사용하여 다중 손가락 조작에 적용되는 새로운 모델입니다. 이 모델은 작업 의미를 물리적 제약과 연결하는 중간표현을 제공하며, DexGYS에서 최신 기술보다 3.83%p 높은 성공률을 보여줍니다."
-  },
-  {
-    "title": "KERV: 움직임 정규화 가정 디코딩을 통한  실체 VLA 모델",
-    "original_title": "KERV: Kinematic-Rectified Speculative Decoding for Embodied VLA Models",
-    "link": "https://arxiv.org/abs/2603.01581",
-    "date": "2026-04-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "KERV는 토큰 영역의 VLA 모델에 운동학 예측을 결합하여 가정 디코딩 프레임워크를 제안하며, 이를 통해 높은 속도 (27%~37%)와 성공율 손실 최소화(거의 0)를 달성함."
-  },
-  {
-    "title": "다양한 촉각 및 토크 입력을 활용하여 시각-언어-행동 모델의 성능 향상을 위한 모듈식 감각 스트림 프레임워크 제안.",
-    "original_title": "Modular Sensory Stream for Integrating Physical Feedback in Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2604.23272",
-    "date": "2026-04-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 논문에서는  Vision-Language-Action (VLA) 모델에 다양한 물리적 감각 신호를 통합하는 새로운 방법인 MoSS(Modular Sensory Stream)를 제시하며, 실제 세계 상황과 유사하게 여러 종류의 감각 입력을 활용하여 행동 예측 성능을 향상시킨다."
-  },
-  {
-    "title": "M² - VLA: 레이어 혼합 및 메타 스킬을 통한 일반화 가능한 조작을 위한 시각-언어 모델 강화",
-    "original_title": "$M^2$-VLA: Boosting Vision-Language Models for Generalizable Manipulation via Layer Mixture and Meta-Skills",
-    "link": "https://arxiv.org/abs/2604.24182",
-    "date": "2026-04-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "현재 시각-언어-행동 (VLA) 모델은 주로 엔드투엔드 파인튜닝에 의존하며, 이는 일반화 능력을 손상시키고  katastrophic forgetting 을 일으킬 수 있습니다.  이러한 한계를 해결하기 위해 제안된 M² - VLA는 일반화된 시각-언어 모델 (VLMs)을 로봇 조작에 직접 활용할 수 있음을 보여주며, 레이어 혼합 전략을 통해 VLM의 의미적 이해와 로봇 제어 요구사항 간의 격차를 해소하고, 메타 스킬 모듈 (MSM) 을 통해 제한된 모델 용량 하에서 효율적인 경로 학습을 지원합니다."
-  },
-  {
-    "title": "점수 기반 확산 모델을 이용한 가이드 벡터 필드 생성",
-    "original_title": "Guiding Vector Field Generation via Score-based Diffusion Model",
-    "link": "https://arxiv.org/abs/2604.24487",
-    "date": "2026-04-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "점수 기반 확산 모델을 사용하여 로봇 경로 추종에 활용되는 가이드 벡터 필드(GVF)를 직접 데이터 분포에서 생성하는 통합 프레임워크인 SGVF를 제시. SGVF는 단일 노름, 수직성, 방향 일관성 손실을 학습하여 기하학적 정확도와 제어 가능성을 보장하며 복잡한 구조를 따라가는 데 유용함."
-  },
-  {
-    "title": "사이버 공간에서의 타인성을 로봇 촉각 디자인에 적용",
-    "original_title": "Otherness as a Quality in Designing Expressive Robotic Touch",
-    "link": "https://arxiv.org/abs/2604.23402",
-    "date": "2026-04-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 논문은 로봇 촉각 디자인 시 '타인성'을 주된 요소로 삼는 것을 제안하며, 현실적인 환경 반영이나 인간 손짓 모방을 넘어 다양한 해석과 표현력을 추구할 수 있다고 주장한다."
-  },
-  {
-    "title": "원격 의료 촉각 기술 향상: 인지 및 감정을 통한",
-    "original_title": "Advancing Remote Medical Palpation through Cognition and Emotion",
-    "link": "https://arxiv.org/abs/2407.05595",
-    "date": "2026-04-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "연구팀은 의사와 환자 간의 상호 작용이 단순한 힘 전달 이상으로 인지적, 감정적인 교환을 포함한다는 점을 고려하여 실제 촉각과 주관적인 경험을 반영하는 원격 촉진 시스템을 개발했습니다."
-  },
-  {
-    "title": "밀리초 단위의 다중 로봇 동작: 기반을 둔 계획을 위한 벡터 가속화 프라이미티브",
-    "original_title": "Multi-Robot Motions in Milliseconds: Vector-Accelerated Primitives for Sampling-Based Planning",
-    "link": "https://arxiv.org/abs/2604.23960",
-    "date": "2026-04-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 논문은 Vector-Accelerated Motion Planning (VAMP) 프레임워크를 다중 로봇 동작 계획 (MRMP) 에 확장하여 SIMD 병렬성을 활용한 다중 로봇 동작 검증 (MotVal) 및 첫 충돌 찾기 (FFC) 와 같은 두 개의 벡터 가속화 프라이미티브를 개발하며 순수 MRMP 동작 검증 테스트에서 1100배 이상의 속도 향상을 달성하였다. 또한, 대표적인 MRMP 알고리즘 집합을 수정하여 이러한 새로운 프라이미티브를 사용하게 하며 매니퓰레이터, 유연체, 다양한 구성의 팀에서 다중 로봇 해결책을 밀리초 단위로 생성하는 등 850배 이상의 계획 시간 속도 향상을 보였다."
-  },
-  {
-    "title": "사람의 의도 정보 학습: 대규모 인간 시각 자료 기반 로봇 조작",
-    "original_title": "Learning Human-Intention Priors from Large-Scale Human Demonstrations for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2604.24681",
-    "date": "2026-04-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "'MoT-HRA'라는 프레임워크는 다양한 영상 자료에서 추출한 220만개의 행동-언어 데이터를 활용하여 사람의 의도 정보를 학습하며, 이를 바탕으로 로봇이 자세, 손동작 등을 예측하고 조작 작업을 수행하는 기술을 개발했다."
-  },
-  {
-    "title": "Intent-Driven Perception and Structured Coordination for Mobile Manipulation",
-    "original_title": "InCoM: Intent-Driven Perception and Structured Coordination for Mobile Manipulation",
-    "link": "https://arxiv.org/abs/2602.23024",
-    "date": "2026-04-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "InCoM은 모바일 로봇이 목표 행동을 인지하고 다양한 환경에서 효율적인 인식 및 조정하여 작업을 수행할 수 있도록 설계된 프레임워크이다. InCoM는 행동 의도를 추론하여 시각 정보의 중요도를 변화시키고,  기하학적-의미적 구조 정렬 메커니즘을 통해 다중 모달 인식을 강화하며, 베이스와 팔의 조합 학습을 분리하여 제어 복잡성을 줄인다."
   }
 ]
