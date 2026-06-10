@@ -216,6 +216,78 @@
     "summary": "arXiv:2606.10818v1 Announce Type: new \nAbstract: Real-world robotic manipulation tasks often involve forceful interactions with the environment, such as using tools of varying weights, transporting objects with different masses, and performing contact-rich tasks like table wiping. Previous learning-based approaches typically employ imitation learning policies that output target end-effector poses tracked by low-level impedance controllers. In these systems, forceful interactions are either implicitly realized through steady-state tracking errors or explicitly commanded using wrist force/torque or tactile sensors. However, implicit approaches generalize poorly across object weights, while explicit approaches require specialized hardware and increase system complexity. In this work, we propose IMPACT, a framework that decouples these forceful tasks into task-planning and internal-model-based predictive control. Extensive simulation and real-world experiments demonstrate that the proposed framework achieves higher success rates and improved generalization to unseen object weights, as well as better safety and energy efficiency."
   },
   {
+    "title": "MV-Actor: Aligning Multi-View Semantics and Spatial Awareness for Bimanual Manipulation",
+    "original_title": "MV-Actor: Aligning Multi-View Semantics and Spatial Awareness for Bimanual Manipulation",
+    "link": "https://arxiv.org/abs/2606.10899",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10899v1 Announce Type: new \nAbstract: Robotic manipulation has been widely applied in industrial scenarios. Compared with single-arm manipulation, bimanual manipulation is equipped with multiple cameras to capture information from different viewpoints. However, existing multi-view policies encode each view independently or fuse view features shallowly, resulting in limited sharing semantic perception and unreliable spatial awareness. In this paper, we propose \\textbf{MV-Actor}, a multi-view perception framework that builds a unified semantic-spatial representation for bimanual manipulation. First, MV-Actor performs Multi-view Semantic Interaction to share semantic perception across views. Then it uses Semantic-Spatial Token Interaction to ground visual semantics with feed-forward reconstruction model features and acquire reliable spatial awareness. Finally, a Guided Metric Depth Repair module refines degraded sensor depth to provide more reliable metric anchors under consumer-grade depth noise. In simulation experiments conducted on the PerAct2 bimanual benchmark, MV-Actor achieves a state-of-the-art average success rate of 87.8\\%. In real-world evaluations with more frequent viewpoint changes and unstable consumer-grade depth, MV-Actor outperforms both RGB and RGB-D baselines, further demonstrating the benefit of sharing semantic perception and reliable spatial awareness for bimanual manipulation."
+  },
+  {
+    "title": "AgniNav: Configuration-Driven Cross-Embodiment Local Planning for Robot Navigation",
+    "original_title": "AgniNav: Configuration-Driven Cross-Embodiment Local Planning for Robot Navigation",
+    "link": "https://arxiv.org/abs/2606.10903",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.10903v1 Announce Type: new \nAbstract: Monocular local navigation is attractive for lightweight robots, but existing vision-based policies often couple perception to a specific body, camera height, and footprint, making transfer from wheeled bases to legged platforms dependent on retraining or active depth hardware. This paper introduces AgniNav, a configuration-driven local navigation framework that standardizes cross-embodiment transfer at the collision-envelope level. Each robot is specified by a measurable four-parameter safety envelope: collision-relevant height, front length, rear length, and half width. The height parameter conditions an image-to-scan network to predict a one-dimensional, collision-relevant pseudo-laserscan from a monocular color image, while the remaining footprint parameters configure a dimension-aware local planner for collision checking. Training uses height-conditioned column-minimum scan labels generated from paired color-depth data, allowing the same image to supervise different safety envelopes without collecting robot-specific data. To the best of our knowledge, AgniNav is the first monocular local-navigation framework that jointly conditions perception and planning on a shared collision-envelope configuration for zero-retraining deployment across wheeled, quadruped, and humanoid platforms. Real-robot experiments on a Turtlebot2, Unitree Go2, and Accelerated Evolution K1 achieve 39/40, 18/20, and 18/20 successes with 0/40, 1/20, and 2/20 collisions, respectively, while running at 30 Hz on Jetson Orin."
+  },
+  {
+    "title": "Task Robustness via Re-Labelling Vision-Action Robot Data",
+    "original_title": "Task Robustness via Re-Labelling Vision-Action Robot Data",
+    "link": "https://arxiv.org/abs/2606.10918",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10918v1 Announce Type: new \nAbstract: The recent trend in scaling models for robot learning has resulted in impressive policies that can perform various manipulation tasks and generalize to novel scenarios. However, these policies continue to struggle with following instructions, likely due to the limited linguistic and action sequence diversity in existing robotics datasets. This paper introduces Task Robustness via Re-Labelling Vision-Action Robot Data (TREAD), a scalable framework that leverages large Vision-Language Models (VLMs) to augment existing robotics datasets without additional data collection, harnessing the transferable knowledge embedded in these models. Our approach leverages a pretrained VLM through three stages: generating semantic sub-tasks from original instruction labels and initial scenes, segmenting demonstration videos conditioned on these sub-tasks, and producing diverse instructions that incorporate object properties, effectively decomposing longer demonstrations into grounded language-action pairs. We further enhance robustness by augmenting the data with linguistically diverse versions of the text goals. Evaluations on LIBERO demonstrate that policies trained on our augmented datasets exhibit improved performance on novel, unseen tasks and goals. Our results show that TREAD enhances both planning generalization through trajectory decomposition and language-conditioned policy generalization through increased linguistic diversity."
+  },
+  {
+    "title": "A Spiking Neural Architecture for Coordinating Arm and Locomotor Control",
+    "original_title": "A Spiking Neural Architecture for Coordinating Arm and Locomotor Control",
+    "link": "https://arxiv.org/abs/2606.11034",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.11034v1 Announce Type: new \nAbstract: Spiking Neural Networks (SNNs) coupled with neuromorphic hardware offer energy-efficient solutions for humanoid robot control. However, existing SNN-based motor control systems address bipedal locomotion and arm control in isolation, leaving integrated control of both unaddressed. We present a spiking architecture that coordinates force-based arm control and bipedal locomotion in a simulated humanoid, using the Neural Engineering Framework (NEF) and Semantic Pointer Architecture (SPA). High-level action selection between locomotor and arm control is mediated by a biologically grounded spiking basal ganglia model. We validate the system through co-simulation of Nengo, for the neural control, and Isaac Sim, demonstrating successful target reaching, continuous digit drawing, path-following locomotion, and finally, switching between walking and arm control via basal ganglia disinhibition. To our knowledge, this is the first integrated spiking controller to combine bipedal locomotion and arm control on a full-scale humanoid platform. The full spike-based implementation enables future deployment on low-power neuromorphic hardware."
+  },
+  {
+    "title": "RoboNaldo: Accurate, Stable and Powerful Humanoid Soccer Shooting via Motion-Guided Curriculum Reinforcement Learning",
+    "original_title": "RoboNaldo: Accurate, Stable and Powerful Humanoid Soccer Shooting via Motion-Guided Curriculum Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2606.11092",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.11092v1 Announce Type: new \nAbstract: Elite humanoid soccer shooting requires whole-body stability, high-impulse whole-body interactions, and accuracy to targets. Motion tracking-driven reinforcement learning (RL) provides stability in whole-body movement coordination, but a fixed reference makes it hard to adapt to varied ball positions and strike timings; in contrast, task reward-driven RL struggles to explore and discover valid kicks from scratch. We therefore introduce RoboNaldo, a three-stage motion-guided curriculum RL framework for high-impulse humanoid interaction. A single human-kick reference is used as a scaffold and progressively shifts optimization towards shooting performance. The curriculum first learns a stable whole-body kicking prior, then adapts the kick to free-kick settings where the ball is stationary at random positions, and finally extends it to moving-ball shooting through a locomotion-command and kick-trigger interface. A high-level heuristic planner controls this interface during training, while alternative high-level controllers can drive the same low-level policy at inference. In simulation, RoboNaldo demonstrates free-kick shot error 48.6% lower and shoot velocity 2.96x than prior work baselines. In real world on a Unitree G1 with onboard perception, RoboNaldo attains 0.73 m and 0.86 m average target shooting error from 3 m away in free-kick and moving-ball cases, accordingly. And the post-contact ball velocity reaches 13.10 m/s, which is 59-71% of reported professional open-play shot speed. Project page: $\\href{https://opendrivelab.com/RoboNaldo}{\\text{opendrivelab.com/RoboNaldo}}$."
+  },
+  {
+    "title": "EM-Fall: Embodied mmWave Sensing for Day-and-Night Fall Detection on Humanoid Robots",
+    "original_title": "EM-Fall: Embodied mmWave Sensing for Day-and-Night Fall Detection on Humanoid Robots",
+    "link": "https://arxiv.org/abs/2606.11109",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.11109v1 Announce Type: new \nAbstract: Falls are one of the leading causes of injury and hospitalization among elderly individuals, making reliable fall awareness an essential capability for safety monitoring in residential environments. However, existing fall detection systems often rely on wearable devices or fixed sensing installations, which may suffer from low user compliance, limited spatial coverage, or degraded performance under occlusion and poor lighting conditions. In this work, we propose \\textbf{EM-Fall}, an embodied fall detection framework deployed on a mobile humanoid robot. The system integrates millimeter-wave (mmWave) sensing with robotic mobility, allowing the robot to actively adjust its sensing viewpoint and maintain target observability across rooms and under occlusion. To address interference in complex residential environments, including pet motion and multipath artifacts, we design a human-centered perception pipeline combined with lightweight temporal modeling to capture motion evolution before, during, and after fall events. We evaluate the proposed system across eight real indoor environments with four participants and construct an in-home mmWave fall detection dataset. Experimental results show that the embodied mobile sensing paradigm improves monitoring continuity and maintains robust fall detection performance under diverse environmental conditions. The proposed framework provides a practical solution for robot-assisted safety monitoring in home environments."
+  },
+  {
+    "title": "JOIN: Anchor-Grasp-Conditioned Joining via Opposition, Inference, and Navigation for Bimanual Assistive Manipulation",
+    "original_title": "JOIN: Anchor-Grasp-Conditioned Joining via Opposition, Inference, and Navigation for Bimanual Assistive Manipulation",
+    "link": "https://arxiv.org/abs/2606.11151",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11151v1 Announce Type: new \nAbstract: Assistive mobility and manipulation platforms have received increasing attention as a means of restoring independence to individuals with disabilities. While effective for many basic activities of daily living (ADLs), a significant percentage of everyday tasks such as opening a jar, pouring a liquid, lifting a tray, or basic meal preparation, is fundamentally bimanual and remains out of reach for any single-arm system. Adding a second arm to a wheelchair is impractical, due to the additional power draw, cost, and the loss of space required for transfers and mobility. We instead propose a heterogeneous, on-demand bimanual system, in which a wheelchair-mounted anchor arm is joined when needed by a summoned mobile manipulator that serves as a complement arm. The central technical problem, which we call bimanual joining, is conditional: the anchor has already committed to a grasp, and the complement arm must choose where to stand and what to grasp to complete the task. We formulate bimanual joining as a three-phase decomposition (plan, drive, grasp) and show that a vision-language model (VLM), coupled with standard geometric tools, provides task-level knowledge sufficient to solve a representative class of bimanual ADLs. Our system JOIN, contributes (i) a wheelchair-referenced opposition score, and (ii) task-conditioned directional manipulability. We evaluate JOIN on a Kinova Gen3 anchor and a Hello Robot Stretch~3 complement on representative same-object and different-object tasks. JOIN accomplished more attempts (19/20) than state-of-the-art methods (14/20) and required markedly less correction by the operator."
+  },
+  {
+    "title": "TacForeSight: Force-Guided Tactile World Model for Contact-Rich Manipulation",
+    "original_title": "TacForeSight: Force-Guided Tactile World Model for Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2606.11184",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11184v1 Announce Type: new \nAbstract: Contact-rich manipulation requires robots to continuously perceive and regulate evolving physical interactions under dynamic contact transitions or complex surface geometries. Recent imitation learning methods improve contact-aware control by incorporating tactile or force feedback, but they rarely model the asymmetric spatiotemporal roles of global force and local tactile sensing. To address this, we propose TacForeSight, a lightweight force-conditioned tactile foresight framework for real-time manipulation. The core component is TacForceWM, a tactile world model that predicts short-horizon tactile latent dynamics from dual-finger tactile observations conditioned on high-frequency wrist force and torque signals. Another key component, the Predictive Tactile-Conditioned Policy, leverages the predicted latents as anticipatory contact priors, models the current-to-future tactile evolution via cross-attention, and adaptively fuses visuo-tactile features through a tactile-guided gating module. By forecasting purely within a compact latent space, TacForeSight enables proactive contact reasoning with efficient real-time inference suitable for high-frequency manipulation control. Real-robot experiments on five representative tasks and three in-process perturbation settings show that TacForeSight consistently outperforms existing baselines, particularly under dynamic contact disturbances. All models and datasets will be made publicly available on the project website at https://tacforesight.github.io/ProjectPage."
+  },
+  {
     "title": "China humanoid robot footballer dents wall with powerful kick - VnExpress International",
     "original_title": "China humanoid robot footballer dents wall with powerful kick - VnExpress International",
     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaUh4TFRpSDBrRXNnZkdjQ1dQY3JseG5lWDJET283RFAzV3JNYWJTcmtMWWRDRnY5Y2hwcXdTTWpVbEJPRnBFSHdvdmtveEVWVFRTVnFLdEhVVlJrOU9UMExxRjNfTXdsekNUVEJqaFJIN0x0S3lwU1ljQTlJbVRBRzZ6ZjlwTWdaTWpLN1RraVRybXJMMHp2dlg4Rk1CZ0JjZnc0QlkyWkhpS0lXNjByWDQwNl9PTDBDOGc?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "현대 자동화는 인공지능, 로봇, 디지털 시스템에 기반한 지능형 네트워크로 전환되며 배달 로봇은 이 과정에서 중요성을 증가시키고 있으며, 물류, 의료 및 소매 등 산업의 실제 배송 작업을 자동화하여 가치를 창출하고 있음."
-  },
-  {
-    "title": "익명 인스타그램 스토리 시청이 2026년 사회적 미디어 프라이버시 전환을 이끌고 있는 StoriesIG",
-    "original_title": "StoriesIG: How Anonymous Instagram Story Viewers Are Reshaping Social Media Privacy in 2026",
-    "link": "https://roboticsandautomationnews.com/2026/04/28/storiesig-how-anonymous-instagram-story-viewers-are-reshaping-social-media-privacy-in-2026/101078/",
-    "date": "2026-04-28 17:40",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "StoriesIG는 사용자의 신원을 드러내지 않고 인스타그램 스토리를 볼 수 있는 플랫폼으로, 온라인 프라이버시 도구에 대한 수요 증가 속에서 가장 널리 사용되는 중 하나로 부상."
-  },
-  {
-    "title": "일본항공, 한eda 공항에서 휴머노이드 로봇 시험 적극 추진",
-    "original_title": "Japan Airlines to Test Humanoid Robots for Baggage Handling at Haneda Airport - eWeek",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOejhWeTBqWWwzSlFPZ2NuRzdIMkpfa0ZqRzhreFVXa0VSbGRJenV6QUtyeW96a0I3NVJDNEthdkZ2ODV2elREdVNma3RDbmk4TWpFd3hwalU0eVQyV0Q0Nmc0SUt1enRCOFVxYldoVWdYeXhnNk1zdEJxTUdKRk9BUnVvX2g?oc=5",
-    "date": "2026-04-28 16:44",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "일본항공은 한eda 공항에서 수하물 처리를 위한 휴머노이드 로봇을 테스트할 예정이며, 이는 항공 산업 내 자동화 및 효율성 증대에 대한 노력의 일환임."
-  },
-  {
-    "title": "인형 로봇, 일본 공항에서 짐 처리 인력으로 활동 임",
-    "original_title": "Humanoid robots to become baggage handlers in Japan airport experiment - The Guardian",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdl9HN0tKN0hjblAtRWlrOEtFenV1VEVabUZvVC1mbWNiY2VQUm5SNVBJUk5EV2NFN0pEOHdhWk9LaW1EaGRmVVV4eVZfUzBlUnJCSV9NMFdCUXdHa3VpZFd0cEhadU9qb0VRY1pqRkZOT2NQaFRZVjlRYjIyeUlsc0I5bUpsd21qMHJXOHNiWHJfT2hOenZVNA?oc=5",
-    "date": "2026-04-28 16:14",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "일본 한 공항에서 인형 로봇을 이용하여 짐 처리를 자동화하는 실험이 진행될 예정이며, 이를 통해 인력 부족 문제 해결과 효율성 증대를 목표 삼고 있음."
-  },
-  {
-    "title": "중국 유니트리 G1 인형 로봇 스케이트, 스핀 및 플립 시연 - eWeek",
-    "original_title": "China’s Unitree G1 Humanoid Robot Skates, Spins, and Flips in New Demo - eWeek",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMVFGdV9QdVZUeVJEZUljUmRKM0l3R0Q0MU5iakdSZU85eFpoN25kRjNGeEhjSHhSOXhZWkVTZkJ5eHREd2tWM25MOFFFY3I3V2t1VmJDNnFCbmxPYmJUdGJUTHlGZzg0SDBxTlBKMlVmb0JkcmhhTmxubHFMaUtFSjctNF9YdTU5cENqbGln?oc=5",
-    "date": "2026-04-28 16:04",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 유니트리(Unitree)에서 개발한 G1 인형 로봇이 새로운 데모를 통해 스케이트, 스핀, 플립 등의 동작을 보여주었다. 이 로봇은 다양한 환경에 적응하고 제어 가능하도록 설계되었으며,  인간과 상호 작용하는 능력을 향상시키기 위한 연구가 진행 중이다."
-  },
-  {
-    "title": "애플로트닉스, 시보티카 인수하여 레스토랑 주방 자동화",
-    "original_title": "Appetronix acquires Cibotica to automate restaurant kitchens",
-    "link": "https://www.therobotreport.com/appetronix-acquires-cibotica-to-automate-restaurant-kitchens/",
-    "date": "2026-04-28 13:05",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "애플로트닉스는 스테인드 푸르니 키오스크와 자율주행 로봇을 이용한 독립형 레스토랑 개발에 집중해왔지만, 시보티카 인수를 통해 기존 주방도 자동화할 수 있는 능력을 확보했다."
-  },
-  {
-    "title": "유니트리 R1 인형 로봇, AliExpress를 통한 출시 예정",
-    "original_title": "Unitree’s R1 humanoid robot could soon become available via AliExpress - Stuff South Africa",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRTZqM0h2WmdINGlIc29fOXdmNXZ3Z2trQlNmMWxPQ0I5VUZWYVJ1Nlo2NTJxQ3UySGxaRmIxaTRWNG1JZGwzRzY2MUNxQ25VbXlpYWFJX1FaY2k1Vks5RThOcmpUZVlfd1JZQXFyUUs4TWhNTm56c0RQNXpXQzNhQjdRN0d3Q3VsSk5Fd0poWXBaUjNWV2JqN1NqaFp0TmdwZEpV?oc=5",
-    "date": "2026-04-28 10:12",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "유니트리의 인형 로봇 R1이 AliExpress를 통해 구매 가능해질 것으로 예상됨.  현재 알려진 내용은 매우 제한적이며 출시 날짜나 가격 정보는 확인되지 않았음."
-  },
-  {
-    "title": "창고 자동화 재설계: 저장 공간을 전략적 근력으로 | 창고 운영이 배송 속도가 광고 지출을 앞서면서 중요해졌으며, 단 한 개의 늦은 상품도 불만을 유발하는 반면 빠른 배송은 고객 충성도를 높임. 최첨단 물류 허브는 게임 개발에서 사용되는 '전체 생애 주기' 접근 방식을 활용하여 코드, 로봇 및 작업 프로세스를 업그레이드하며 효율성을 향상시키고 있습니다.",
-    "original_title": "Warehouse Automation Reset: Turning Storage Space into Strategic Muscle",
-    "link": "https://roboticsandautomationnews.com/2026/04/28/warehouse-automation-reset-turning-storage-space-into-strategic-muscle/101074/",
-    "date": "2026-04-28 09:33",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "창고 자동화 재설계: 저장 공간을 전략적 근력으로 | 창고 운영이 배송 속도가 광고 지출을 앞서면서 중요해졌으며, 단 한 개의 늦은 상품도 불만을 유발하는 반면 빠른 배송은 고객 충성도를 높임. 최첨단 물류 허브는 게임 개발에서 사용되는 '전체 생애 주기' 접근 방식을 활용하여 코드, 로봇 및 작업 프로세스를 업그레이드하며 효율성을 향상시키고 있습니다."
-  },
-  {
-    "title": "AI 에이전트가 공장 자동화와 실질적인 결과 사이의 결실임?",
-    "original_title": "Why AI Agents Could Be the Missing Link Between Factory Automation and Real Results?",
-    "link": "https://roboticsandautomationnews.com/2026/04/28/why-ai-agents-could-be-the-missing-link-between-factory-automation-and-real-results/101070/",
-    "date": "2026-04-28 09:20",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "최근 Eclipse Automation 보고서에 따르면, 북미 제조업에서 많은 기업들이 자동화 시스템을 구축했지만 효과를 거두지 못하고 있다. 머신 성능은 향상되었지만, 사업 목표 달성에는 한계가 있음."
   }
 ]
