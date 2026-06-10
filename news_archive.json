@@ -144,6 +144,78 @@
     "summary": "arXiv:2606.10568v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models have shown strong promise for robotic manipulation, but their reliability at test time remains limited by one-shot action prediction, where even small action errors can cause grasp failure, collision, or incorrect task progression. A natural alternative is to equip VLA systems with test-time verification, allowing multiple candidate actions to be proposed and evaluated before execution. However, reliable action verification is challenging because it requires not only distinguishing subtle geometric differences between candidate actions, but also assessing whether an action makes meaningful progress toward the task goal. We present VeriSpace, a 3D-aware action verifier for test-time action selection in VLA systems. VeriSpace evaluates candidate actions through two key components: Dual-Path 3D-Injected Scene Encoding, which constructs a scene representation that jointly preserves visual semantics and explicit 3D geometry, and Spatially-Grounded Action Reasoning, which evaluates each action by reasoning over task-relevant spatial relations, geometric validity, and expected goal progress. Together, these components enable more reliable discrimination between subtle yet outcome-critical action candidates while remaining fully compatible with existing VLA policies. Experiments on public benchmarks and real-world robotic manipulation tasks show that VeriSpace consistently improves decision reliability over both underlying VLA policies and prior verification-based methods, yielding substantial gains in both in-distribution and out-of-distribution settings."
   },
   {
+    "title": "AgenticNav: Zero-Shot Vision-and-Language Navigation as a Tool-Calling Harness",
+    "original_title": "AgenticNav: Zero-Shot Vision-and-Language Navigation as a Tool-Calling Harness",
+    "link": "https://arxiv.org/abs/2606.10577",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10577v1 Announce Type: new \nAbstract: Zero-shot vision-and-language navigation in continuous environments (VLN-CE) has recently become feasible with large vision-language models (VLMs). However, existing methods typically rely on learned waypoint predictors to propose navigable actions. This severely limits the model's action space and fails to leverage depth inputs effectively. Moreover, memory is commonly handled by accumulating long textual or visual histories with substantial irrelevant context, or by retrieving cross-episode experiences, which weakens the zero-shot setting. In this paper, we rethink zero-shot VLN-CE as an agentic interface between the VLM and the environment, and present AgenticNav, a lightweight navigation harness that exposes action, depth, and memory as callable tools. Instead of choosing from predicted waypoints, the action tool allows the VLM to directly select a target pixel in RGB observations, converting it into executable motion. Depth is exposed through an on-demand pixel-depth tool, enabling the VLM to request precise metric distances only where they matter. For memory, AgenticNav provides a compact map image summarizing the historical trajectory, paired with a recall tool that allows the VLM to selectively revisit past visual observations without overwhelming the prompt context. On the R2R-CE benchmark, AgenticNav establishes new state-of-the-art (SOTA) performance among zero-shot methods given the same VLM backbone. Real-world validation further highlights its zero-shot generalization compared to prior methods. Ablations show that our action tool design outperforms traditional waypoint predictors, and that depth tool and agentic memory further contribute to navigation performance."
+  },
+  {
+    "title": "LieIPM: Lie Group Interior Point Method for Direct Trajectory Optimization of Rigid Bodies",
+    "original_title": "LieIPM: Lie Group Interior Point Method for Direct Trajectory Optimization of Rigid Bodies",
+    "link": "https://arxiv.org/abs/2606.10579",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10579v1 Announce Type: new \nAbstract: Designing dynamically feasible trajectories for rigid bodies is a fundamental problem in robotics. While direct methods are widely used, the existing constrained optimizers typically operate in Euclidean space and ignore the manifold structure of rigid body motions. This mismatch may introduce singularities or lead to poorly conditioned optimization problems. To bridge this gap, we develop a structure-aware framework for constrained trajectory optimization directly on matrix Lie groups. Our approach is based on the second-order rigid body models utilizing Lie group structures, which enables efficient Newton-type updates while preserving the underlying geometry. Building on this model, we propose a line-search Lie Group Interior Point Method (LieIPM) to handle constraints on the manifolds. We instantiate the framework for rigid body motion planning using Lie group variational integrators and derive closed-form intrinsic derivatives that exploit group symmetries. The LieIPM preserves the topology of rotation motions by construction and avoids singularities. Numerical results demonstrate superior robustness and faster convergence compared to general-purpose solvers and structure-exploiting optimal control methods."
+  },
+  {
+    "title": "Dexterous Point Policy: Learning Point-based Dexterous Hand Policies from Human Demonstrations",
+    "original_title": "Dexterous Point Policy: Learning Point-based Dexterous Hand Policies from Human Demonstrations",
+    "link": "https://arxiv.org/abs/2606.10614",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10614v1 Announce Type: new \nAbstract: Robotic foundation models pre-trained on human demonstration videos have shown promise, but a significant embodiment gap remains when the resulting policies are deployed on real robots. A common remedy is to fine-tune these models on robot-specific demonstrations. However, robot data collection can be prohibitively expensive and time-consuming, which is particularly acute in dexterous manipulation, e.g., teleoperating a multi-fingered hand for even a single atomic task can take days. To address this, we introduce Dexterous Point Policy, a framework that learns dexterous manipulation policies directly from human videos and requires no robot demonstrations. Our core insight is that a unified 3D keypoint representation can bridge human and robot embodiments when used for both observations and actions. Specifically, we extract 3D keypoints of task-relevant objects and human hands from raw videos, and train an autoregressive transformer over these keypoints. We observe that at the keypoint level, specifically the wrist and fingertips, human and robot behaviors closely align, enabling direct policy transfer. On a suite of real-robot tasks spanning pick-and-place and tool use, Dexterous Point Policy attains 75.0% success, whereas a state-of-the-art VLA baseline reaches only 1.0%. Furthermore, our method generalizes strongly to unseen scenarios, including multi-object environments and novel object categories."
+  },
+  {
+    "title": "UniDexTok: A Unified Dexterous Hand Tokenizer from Real Data",
+    "original_title": "UniDexTok: A Unified Dexterous Hand Tokenizer from Real Data",
+    "link": "https://arxiv.org/abs/2606.10683",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10683v1 Announce Type: new \nAbstract: Dexterous hands are essential for fine-grained manipulation, but their hardware designs vary substantially across embodiments. Differences in kinematics, joint definitions, and degrees of freedom make it difficult to define a shared state representation compared with parallel grippers. As a result, dexterous-hand data remains fragmented and difficult to use for joint training. In this work, we propose the Unified Dexterous Hand Model (UDHM), which maps human and robot hand states into a shared 22-DoF semantic interface. Based on UDHM, we introduce UniDexTok, a retargeting-free state tokenizer that learns embodiment-conditioned discrete tokens from standardized real joint states. UniDexTok provides a unified representation for heterogeneous dexterous hands without relying on retargeting or simulation data. Compared with the recent baseline UniHM, UniDexTok reduces MPJAE from 15.63 degrees to 0.16 degrees and MPJPE from 18.51 mm to 0.18 mm, corresponding to error reductions of 98.98% and 99.03%, respectively. These results improve reconstruction from centimeter-scale to sub-millimeter accuracy. Experiments further show that data from other embodiments improves target-embodiment reconstruction accuracy, demonstrating the benefit of cross-embodiment tokenization. UniDexTok also shows strong zero-shot and few-shot reconstruction ability when new dexterous hands are introduced."
+  },
+  {
+    "title": "Vehicle Prediction Model for Enhanced MPC Path Tracking in Formula Student Driverless",
+    "original_title": "Vehicle Prediction Model for Enhanced MPC Path Tracking in Formula Student Driverless",
+    "link": "https://arxiv.org/abs/2606.10732",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10732v1 Announce Type: new \nAbstract: Autonomous race cars, such as in Formula Student Driverless, operate close to their physical handling limits. The resulting highly nonlinear vehicle behavior increases the path tracking complexity, especially on narrow tracks. Model Predictive Control (MPC) is commonly used to address this issue, a method whose performance is closely tied to the accuracy of the underlying prediction model. This paper presents a novel, real-time capable prediction model for autonomous race cars that adjusts to changing conditions by combining information from past runs and the current driving situation. Our model is divided into three consecutive submodels: a nominal Kinematic Bicycle Model, an offline Bayesian Linear Regression (BLR) model, and an online Sparse Gaussian Process Regression (SGPR) model. The proposed approach enables efficient integration of all available data without significantly increasing computational cost, ensuring high prediction accuracy and a quantitative uncertainty assessment right from the start of the run. Compared to existing approaches, an improvement in prediction accuracy of up to 57% was achieved. Further, we successfully demonstrated the practical applicability of the model within an MPC-based path tracking controller on a real Formula Student race car."
+  },
+  {
+    "title": "Hand-centric Human-to-Robot Trajectory Transfer from Video Demonstrations via Open-World Contact Localization",
+    "original_title": "Hand-centric Human-to-Robot Trajectory Transfer from Video Demonstrations via Open-World Contact Localization",
+    "link": "https://arxiv.org/abs/2606.10743",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10743v1 Announce Type: new \nAbstract: Learning from human video demonstrations remains challenging due to noisy hand-object interactions, unseen objects with partial observation, and cross-embodiment discrepancy. To address these challenges, we present \\textit{HOWTransfer} (\\emph{H}and-\\emph{O}bject \\emph{O}pen-\\emph{W}orld Transfer), a hand-centric framework that distills human demonstrations into contact-aware, taxonomy-informed, and diverse robotic trajectories. Instead of relying on object-specific descriptions, vision-language queries, or explicit object-state tracking, \\emph{HOWTransfer} recovers temporally consistent 3D hand motion and localizes temporal contact intervals by reasoning over observed hand-object interaction cues. The localized contact onsets are then used to retarget human grasp intent into multi-modal parallel-jaw grasp hypotheses, which are propagated along the recovered wrist trajectory to generate robot-executable motions. Finally, a trajectory editing stage refines contact alignment and produces diverse executable variants from a single demonstration. Experiments across diverse manipulation tasks show that \\emph{HOWTransfer} enables accurate contact localization and high-quality robot motion retargeting with $86\\%$ success, which is preferred over teleoperated trajectories in a blinded preference study."
+  },
+  {
+    "title": "Bridging Semantics and Physical Execution: A Neuro-Symbolic Framework for Multi-Pair Robotic Assembly",
+    "original_title": "Bridging Semantics and Physical Execution: A Neuro-Symbolic Framework for Multi-Pair Robotic Assembly",
+    "link": "https://arxiv.org/abs/2606.10808",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10808v1 Announce Type: new \nAbstract: Multi-pair robotic assembly in unstructured environments faces spatial interference and contact uncertainties. Existing paradigms fail to bridge cognitive decision-making and physical execution, as they either encounter state-space explosion and knowledge bottlenecks or suffer from logical hallucinations and topological conflicts. We propose an end-to-end neuro-symbolic framework that solves the challenge hierarchically: generating optimal subgraphs for each pair, decoupling generality from edge cases, and then resolving cross-pair interferences. Given an eye-on-hand RGB-D assembly scene, the framework extracts semantic instance identity and state while quantifying the scene for divergence calculation. For each pair, optimal subgraph is generated via LLM using barely basic actions to mitigate hallucinations. Supportive actions for edge cases are reasoned and inserted with a lightweight discriminator. Driven by the divergence between the quantified baseline and current scene, it is easily extensible at low cost. Augmented subgraphs are topologically coordinated into global sequences while preserving internal behavioral coherence. Dynamic behavior trees embedding atomic skills close the force-aware execution loop. Offline evaluation on 100 real-world scenes achieves 97.00% global executability, outperforming classical and state-of-the-art planners. Real-robot deployment on a UR3 arm attains 90% success rate with 0.5 mm tolerance under strong interference, demonstrating a unified and verifiable solution for complex autonomous assembly."
+  },
+  {
+    "title": "IMPACT: Learning Internal-Model Predictive Control for Forceful Robotic Manipulation",
+    "original_title": "IMPACT: Learning Internal-Model Predictive Control for Forceful Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.10818",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.10818v1 Announce Type: new \nAbstract: Real-world robotic manipulation tasks often involve forceful interactions with the environment, such as using tools of varying weights, transporting objects with different masses, and performing contact-rich tasks like table wiping. Previous learning-based approaches typically employ imitation learning policies that output target end-effector poses tracked by low-level impedance controllers. In these systems, forceful interactions are either implicitly realized through steady-state tracking errors or explicitly commanded using wrist force/torque or tactile sensors. However, implicit approaches generalize poorly across object weights, while explicit approaches require specialized hardware and increase system complexity. In this work, we propose IMPACT, a framework that decouples these forceful tasks into task-planning and internal-model-based predictive control. Extensive simulation and real-world experiments demonstrate that the proposed framework achieves higher success rates and improved generalization to unseen object weights, as well as better safety and energy efficiency."
+  },
+  {
     "title": "China humanoid robot footballer dents wall with powerful kick - VnExpress International",
     "original_title": "China humanoid robot footballer dents wall with powerful kick - VnExpress International",
     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaUh4TFRpSDBrRXNnZkdjQ1dQY3JseG5lWDJET283RFAzV3JNYWJTcmtMWWRDRnY5Y2hwcXdTTWpVbEJPRnBFSHdvdmtveEVWVFRTVnFLdEhVVlJrOU9UMExxRjNfTXdsekNUVEJqaFJIN0x0S3lwU1ljQTlJbVRBRzZ6ZjlwTWdaTWpLN1RraVRybXJMMHp2dlg4Rk1CZ0JjZnc0QlkyWkhpS0lXNjByWDQwNl9PTDBDOGc?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "최근 Eclipse Automation 보고서에 따르면, 북미 제조업에서 많은 기업들이 자동화 시스템을 구축했지만 효과를 거두지 못하고 있다. 머신 성능은 향상되었지만, 사업 목표 달성에는 한계가 있음."
-  },
-  {
-    "title": "디지털 사업 신용이 Fintech 스타트업을 구할 수 있을까?",
-    "original_title": "Can Digital Business Credit Save Your Fintech Startup?",
-    "link": "https://roboticsandautomationnews.com/2026/04/28/can-digital-business-credit-save-your-fintech-startup/101064/",
-    "date": "2026-04-28 08:50",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Fintech 스타트업은 불규칙적인 매출 주기, 장시간 제품 개발 기간, 빠른 성장과 유동성 유지를 위한 끊임없는 노력으로 인해 금융적 어려움에 직면하며, 회사가 안정화되거나 침체되는지 여부는 자금 접근뿐만 아니라 자금 구조의 지혜로도 결정될 수 있음."
-  },
-  {
-    "title": "인간형 로봇, 일본 공항에서 인력 부족 해결 위해 근무 시작",
-    "original_title": "Humanoid robot begins work at Japanese airport to tackle labor crisis - Interesting Engineering",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTHlZV0x3R3M3SHQ5UC1lTWJ6UXlia0xmUzRRbkdNUTFNSFB2c1J0bDNSNlhBdGFXZHI1LXM3S2tRU3dnbkRSUFZPdGRodUZGak9ULVQzUjNuQVlEOF8zRkpiUmVqb2ZkWTVqOTBGR2hybEhZZkR1b2RQMXhJSU10UHJnLUM0MndqbDFB?oc=5",
-    "date": "2026-04-28 08:43",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "일본 공항에서 인간형 로봇이 근무를 시작하여 인력 부족 문제에 대처하고 있다.  이는 자동화 기술이 서비스 산업 분야에서 활용되는 사례로 밝혀졌다."
-  },
-  {
-    "title": "ADAS 캘리브레이션 시스템 비용이 최대 2만 달러까지 상승: 센서 기반 유리 수리로 자동차 애프터마켓이 변화함",
-    "original_title": "ADAS Calibration Systems Cost Up to $20,000: Why Sensor-Driven Windshield Repairs Are Reshaping the Automotive Aftermarket",
-    "link": "https://roboticsandautomationnews.com/2026/04/28/adas-calibration-systems-cost-up-to-20000-why-sensor-driven-windshield-repairs-are-reshaping-the-automotive-aftermarket/101059/",
-    "date": "2026-04-28 07:46",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "현대 Windshield는 전방 카메라, 강수 및 광량 센서, 그리고 정확한 위치를 유지하는 브래킷을 위한 마운팅 표면으로 사용되는 경우가 많습니다. 유리가 교체될 때 기하학적 구조가 변경되어 작은 차이만 있더라도 카메라의 시야는 어드밴스드 드라이버 어시스턴스 시스템(ADAS) 성능에 영향을 미칠 수 있습니다."
-  },
-  {
-    "title": "SUI의 기관적 성공이 이전 L1 이야기보다 더 중요할 수 있음",
-    "original_title": "Why SUI’s Institutional Story May Matter More Than its Old Layer-One Story",
-    "link": "https://roboticsandautomationnews.com/2026/04/28/why-suis-institutional-story-may-matter-more-than-its-old-layer-one-story/101054/",
-    "date": "2026-04-28 07:30",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "SUI는 처음 시장에 나온 시점에서 속도, 아키텍처, 확장성, 디자인 등을 강조하여 L1 네트워크로서 자리매김했지만, 최근에는 기관 투자와 같은 다른 요소가 더 중요해지고 있음."
-  },
-  {
-    "title": "고차원 세계 모델을 위한 병렬 확률적 기울기 기반 계획",
-    "original_title": "Gradient-based planning for world models at longer horizons",
-    "link": "https://robohub.org/gradient-based-planning-for-world-models-at-longer-horizons/",
-    "date": "2026-04-28 07:00",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "GRASP는 높은 차원의 세계 모델에서 장거리 계획 문제를 해결하기 위해 제안된 새로운 방법입니다. 샘플링과 최적화 과정을 결합하여 행동을 학습하는 대신, 세계 모델에 대한 직접적인 통제를 제공합니다. 고차원 데이터와 시각 정보를 다루는 데 유리합니다. GRASP의 주요 장점은 지속적인 모델 업데이트를 통해 시간의 경과에 따라 달라지는 환경에 적응할 수 있다는 것입니다. 또한, 계산 효율성을 개선하여 더 많은 훈련 데이터와 복잡한 환경에서도 성능이 우수합니다."
-  },
-  {
-    "title": "스웜드라이브: 지연 제한을 가진 공동 자율 주행을 위한 의미론적 V2V 협력",
-    "original_title": "SwarmDrive: Semantic V2V Coordination for Latency-Constrained Cooperative Autonomous Driving",
-    "link": "https://arxiv.org/abs/2604.22852",
-    "date": "2026-04-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "근접 차량이 지역 소규모 언어 모델(SLM)을 실행하고 불확실성이 높을 때만 간결한 의도 분포를 공유하며 이벤트 트리거 합의를 통해 통합하는 Semantic Vehicle-to-Vehicle(V2V) 협력 프레임워크인 SwarmDrive를 소개. 5번 시드 실행 연구에서, SwarmDrive는 한 개의 지역 SLM에 비해 성공률을 68.9%에서 94.1%로 향상시키고 510ms 클라우드 참조에서 151.4ms로 지연 시간을 줄임. 하지만 참여 차량 수가 증가할수록 통신 부하와 패킷 손실이 증가한다."
-  },
-  {
-    "title": "RecoverFormer: 인형 로봇의 접촉 정보를 고려하는 전체 엔드 투 엔드 복구",
-    "original_title": "RecoverFormer: End-to-End Contact-Aware Recovery for Humanoid Robots",
-    "link": "https://arxiv.org/abs/2604.22911",
-    "date": "2026-04-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "RecoverFormer는 환경 상황에 맞춰 보상 걸음, 손-환경 접촉 및 질량 중심 재형성 등 다양한 회복 전략을 선택하고 수행하며 모델 불일치에도 강인성을 보이는 인형 로봇의 엔드 투 엔드 복구 정책임.  RecoverFormer는 50개 단계 관측 기록에 대한 카주얼 트랜스포머와 접촉 가능성 헤드를 결합하여 환경 표면(벽, 손잡이, 테이블 가장자리)의 안정화에 유용한지를 예측하고 있으며, 오픈 플로어에서만 학습된 RecoverFormer는 벽이 있는 환경으로도 성공적으로 적용되어 100% 회복 성공률을 달성함."
-  },
-  {
-    "title": "BridgeACT: 인간의 시연을 로봇 동작으로 연결하는 통합 도구-대상 용이성을 통한",
-    "original_title": "BridgeACT: Bridging Human Demonstrations to Robot Actions via Unified Tool-Target Affordances",
-    "link": "https://arxiv.org/abs/2604.23249",
-    "date": "2026-04-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "BridgeACT는 로봇 데이터 없이 인간 영상에서 직접 로봇 제어를 학습하는, 용이성 중심 프레임워크로, 인간의 시연과 로봇 동작 사이의 연결고리 역할을 하는 용이성을 모델화하여 인간 영상으로부터 로봇 손잡기 위치와 움직임 예측 등을 수행함."
   }
 ]
