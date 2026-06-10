@@ -1,5 +1,14 @@
 [
   {
+    "title": "Tianjin develops sensors for embodied AI - ecns.cn",
+    "original_title": "Tianjin develops sensors for embodied AI - ecns.cn",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUER2UC1iX3NkUTM3dzlXRmZmTlZRbEwxS3RzMmV4WGt5Tk1sa0ZVOTliSGVJMzZpSHJMSFRwbkFCRjNVMExwUF9BWmlRZzRqSXNEc2ItckVDV3luU2FZcHdWS3BNNzBUZlpIUE1EaWVWRjEwQVl2ckVaQWdOWGVXWHFYWmJVOUp2dTFv?oc=5",
+    "date": "2026-06-10 05:41",
+    "source": "Google News (China Hand/Sensor Startups - EN)",
+    "category": "hand",
+    "summary": "Tianjin develops sensors for embodied AI  ecns.cn"
+  },
+  {
     "title": "GHOST: Hierarchical Sub-Goal Policies for Generalizing Robot Manipulation",
     "original_title": "GHOST: Hierarchical Sub-Goal Policies for Generalizing Robot Manipulation",
     "link": "https://arxiv.org/abs/2606.10025",
@@ -286,6 +295,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.11184v1 Announce Type: new \nAbstract: Contact-rich manipulation requires robots to continuously perceive and regulate evolving physical interactions under dynamic contact transitions or complex surface geometries. Recent imitation learning methods improve contact-aware control by incorporating tactile or force feedback, but they rarely model the asymmetric spatiotemporal roles of global force and local tactile sensing. To address this, we propose TacForeSight, a lightweight force-conditioned tactile foresight framework for real-time manipulation. The core component is TacForceWM, a tactile world model that predicts short-horizon tactile latent dynamics from dual-finger tactile observations conditioned on high-frequency wrist force and torque signals. Another key component, the Predictive Tactile-Conditioned Policy, leverages the predicted latents as anticipatory contact priors, models the current-to-future tactile evolution via cross-attention, and adaptively fuses visuo-tactile features through a tactile-guided gating module. By forecasting purely within a compact latent space, TacForeSight enables proactive contact reasoning with efficient real-time inference suitable for high-frequency manipulation control. Real-robot experiments on five representative tasks and three in-process perturbation settings show that TacForeSight consistently outperforms existing baselines, particularly under dynamic contact disturbances. All models and datasets will be made publicly available on the project website at https://tacforesight.github.io/ProjectPage."
+  },
+  {
+    "title": "SAFE-Pruner: Semantic Attention-Guided Future-Aware Token Pruning for Efficient Vision-Language-Action Manipulation",
+    "original_title": "SAFE-Pruner: Semantic Attention-Guided Future-Aware Token Pruning for Efficient Vision-Language-Action Manipulation",
+    "link": "https://arxiv.org/abs/2605.29662",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2605.29662v1 Announce Type: cross \nAbstract: Real-time inference of vision-language-action (VLA) models is essential for robotic control. While visual token pruning has shown strong potential for accelerating inference, most existing methods mainly base pruning decisions on shallow-layer cues and risk discarding visual information required by deep layers. To address this issue, we propose SAFE-Pruner, a plug-and-play pruning framework that incorporates attention cues of future layers into pruning decisions. Specifically, we identify semantic attention consistency, the tendency that VLA models concentrate their attention probability mass on the same semantic entity across execution steps. Based on this observation, we design a forward-looking strategy to forecast the token saliency in deep layers, which prevents the premature removal of critical tokens and leads to more stable acceleration. We further introduce an adaptive subtask division strategy to detect abrupt attention shifts, thereby improving forecasting accuracy and pruning reliability. Extensive experiments in simulation and real-world settings demonstrate that our method achieves up to 1.89x speedup with a minimal degradation in success rate of less than 1.7%, while outperforming state-of-the-art methods by up to 1.9%."
+  },
+  {
+    "title": "RAPTOR: Rapid Aerial Pickup and Transport of Objects by Robots",
+    "original_title": "RAPTOR: Rapid Aerial Pickup and Transport of Objects by Robots",
+    "link": "https://arxiv.org/abs/2203.03018",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2203.03018v3 Announce Type: replace \nAbstract: Rapid aerial grasping through robots can lead to many applications that utilize fast and dynamic picking and placing of objects. Rigid grippers traditionally used in aerial manipulators require high precision and specific object geometries for successful grasping. We propose RAPTOR, a quadcopter platform combined with a custom Fin Ray gripper to enable more flexible grasping of objects with different geometries, leveraging the properties of soft materials to increase the contact surface between the gripper and the objects. To reduce the communication latency, we present a new lightweight middleware solution based on Fast DDS (Data Distribution Service) as an alternative to ROS (Robot Operating System). We show that RAPTOR achieves an average of 83% grasping efficacy in a real-world setting for four different object geometries while moving at an average velocity of 1 m/s during grasping. In a high-velocity setting, RAPTOR supports up to four times the payload compared to previous works. Our results highlight the potential of aerial drones in automated warehouses and other manipulation applications where speed, swiftness, and robustness are essential while operating in hard-to-reach places."
+  },
+  {
+    "title": "Rod models in continuum and soft robot control: a review",
+    "original_title": "Rod models in continuum and soft robot control: a review",
+    "link": "https://arxiv.org/abs/2407.05886",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2407.05886v3 Announce Type: replace \nAbstract: Continuum and soft robots can transform automation tasks requiring compliant interaction in constrained or unstructured environments, including healthcare, agriculture, marine, and space applications. However, their complex mechanics introduce significant challenges in modeling and control. Low-dimensional continuum mechanical models, such as rod theories, effectively capture the large deformations of slender bodies in contact-rich scenarios while balancing accuracy and computational efficiency. This paper presents a vertical survey of rod models for continuum and soft robots, spanning their mathematical foundations, robot modeling, and control applications. We review the main rod theories adopted in soft robotics and introduce a deformation-based classification of rod models for continuum and soft robots. Furthermore, we survey recent model-based and learning-based control strategies leveraging rod models, highlighting their role in manipulation and physical interaction tasks. Finally, we discuss advantages, limitations, research gaps, and emerging directions of rod-based approaches. This paper aims to serve as a reference for developing models and control strategies for continuum and soft robots."
+  },
+  {
+    "title": "A Survey of Robotic Navigation and Manipulation with Physics Simulators in the Era of Embodied AI",
+    "original_title": "A Survey of Robotic Navigation and Manipulation with Physics Simulators in the Era of Embodied AI",
+    "link": "https://arxiv.org/abs/2505.01458",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2505.01458v2 Announce Type: replace \nAbstract: Navigation and manipulation are core capabilities in Embodied AI, but training agents to perform them directly in the real world is costly, time-consuming, and unsafe. Therefore, sim-to-real transfer has emerged as a key approach, yet the sim-to-real gap persists. This survey examines how physics simulators address this gap by analyzing properties that have received limited attention in prior surveys. We also analyze their features for navigation and manipulation tasks, as well as their hardware requirements. Additionally, we offer a resource with benchmark datasets, metrics, simulation platforms, and methods to help researchers select suitable tools while accounting for hardware constraints."
+  },
+  {
+    "title": "HandCept: A Visual-Inertial Fusion Framework for Accurate Proprioception in Dexterous Hands",
+    "original_title": "HandCept: A Visual-Inertial Fusion Framework for Accurate Proprioception in Dexterous Hands",
+    "link": "https://arxiv.org/abs/2505.08213",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2505.08213v2 Announce Type: replace \nAbstract: As robotics progresses toward general manipulation, dexterous hands are becoming increasingly critical. However, proprioception in dexterous hands remains a bottleneck due to limitations in volume and generality. In this work, we present HandCept, the first visual-inertial proprioception framework designed to overcome the challenges of traditional joint angle estimation methods for dexterous hands. HandCept addresses the difficulty of achieving accurate and robust joint angle estimation in dynamic environments where both visual and inertial measurements are prone to noise and drift. It leverages a zero-shot learning approach using a wrist-mounted RGB-D camera and 9-axis IMUs, fused in real time via a latency-free Extended Kalman Filter (EKF). Our results show that HandCept achieves joint angle estimation errors generally between $2^{\\circ}$ and $4^{\\circ}$ without observable drift, outperforming visual-only and inertial-only methods. Furthermore, we validate the stability and uniformity of the IMU system, demonstrating that a common base frame across IMUs simplifies system calibration. To support sim-to-real transfer, we also open-source our high-fidelity rendering pipeline, which is essential for training without real-world ground truth. This work offers a robust, generalizable solution for proprioception in dexterous hands, with significant implications for robotic manipulation and human-robot interaction. https://github.com/huangjund/blenderYCB"
+  },
+  {
+    "title": "CAST: Counterfactual Labels Improve Instruction Following in Vision-Language-Action Models",
+    "original_title": "CAST: Counterfactual Labels Improve Instruction Following in Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2508.13446",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2508.13446v2 Announce Type: replace \nAbstract: Generalist robots should be able to understand and follow user instructions. Despite providing a powerful architecture for mapping open-vocabulary language instructions to robot actions, current vision-language-action (VLA) models struggle to follow fine-grained commands. One cause for this is a lack of semantic diversity and language grounding in existing robot datasets and, specifically, a lack of fine-grained task diversity for similar observations. To address this, we present a novel method to augment existing robot datasets by leveraging vision-language models to create counterfactual labels. By augmenting existing datasets with these labels, we increase the diversity and granularity of language grounding for robot datasets, ultimately improving the language-following capabilities of VLAs. We evaluate the resulting model's ability to follow language instructions, ranging from simple object-centric commands to complex referential tasks, by conducting vision-language navigation experiments in 3 different indoor and outdoor environments. Our experiments show that counterfactual relabeling (without additional data collection) significantly improves instruction-following in VLA policies, outperforming state-of-the-art methods and doubling the success rate compared to VLAs trained on unaugmented data. We also evaluate our method for manipulation VLAs and find a similar gain in performance on tasks with distractors."
+  },
+  {
+    "title": "MIND-V: Hierarchical World Model for Long-Horizon Robotic Manipulation with RL-based Physical Alignment",
+    "original_title": "MIND-V: Hierarchical World Model for Long-Horizon Robotic Manipulation with RL-based Physical Alignment",
+    "link": "https://arxiv.org/abs/2512.06628",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.06628v3 Announce Type: replace \nAbstract: Scalable embodied intelligence is constrained by the scarcity of diverse, long-horizon robotic manipulation data. Existing video world models in this domain are limited to synthesizing short clips of simple actions and often rely on manually defined trajectories. To this end, we introduce MIND-V, a cognitive hierarchical world model designed to synthesize physically plausible and logically coherent videos of long-horizon robotic manipulation. Inspired by cognitive science, MIND-V bridges high-level reasoning with pixel-level synthesis through three core components: a Semantic Reasoning Hub (SRH) that leverages a pre-trained vision-language model for task planning; a Behavioral Semantic Bridge (BSB) that translates abstract instructions into domain-invariant representations; and a Motor Video Generator (MVG) for conditional video rendering. MIND-V employs Staged Visual Future Rollouts, a test-time optimization strategy to enhance long-horizon robustness. To enforce adherence to physical laws, we introduce a GRPO reinforcement learning post-training phase guided by a novel Physical Foresight Coherence (PFC) reward. PFC leverages the V-JEPA2 world model as a physics referee to penalize implausible dynamics in the latent feature space. Experiments confirm MIND-V's SOTA performance in long-horizon simulation and its significant value for policy learning, introducing a scalable and fully autonomous framework for embodied data synthesis."
+  },
+  {
+    "title": "Adaptive Sliding Mode Control for Vehicle Platoons with State-Dependent Friction Uncertainty",
+    "original_title": "Adaptive Sliding Mode Control for Vehicle Platoons with State-Dependent Friction Uncertainty",
+    "link": "https://arxiv.org/abs/2601.10724",
+    "date": "2026-06-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2601.10724v3 Announce Type: replace \nAbstract: Multi-robot formation control has various applications in domains such as vehicle troops, platoons, payload transportation, and surveillance. Maintaining formation in a vehicle platoon requires designing a suitable control scheme that can tackle external disturbances and uncertain system parameters while maintaining a predefined safe distance between the robots. A crucial challenge in this context is dealing with the unknown/uncertain friction forces between wheels and the ground, which vary with changes in road surface, wear in tires, and speed of the vehicle. Although state-of-the-art adaptive controllers can handle a priori bounded uncertainties, they struggle with accurately modeling and identifying frictional forces, which are often state-dependent and cannot be a priori bounded.\n  This thesis proposes a new adaptive sliding mode controller for wheeled mobile robot-based vehicle platoons that can handle the unknown and complex behavior of frictional forces without prior knowledge of their parameters and structures. The controller uses the adaptive sliding mode control techniques to regulate the platoon's speed and maintain a predefined inter-robot distance, even in the presence of external disturbances and uncertain system parameters. This approach involves a two-stage process: first, the kinematic controller calculates the desired velocities based on the desired trajectory; and second, the dynamics model generates the commands to achieve the desired motion. By separating the kinematics and dynamics of the robot, this approach can simplify the control problem and allow for more efficient and robust control of the wheeled mobile robot."
   },
   {
     "title": "China humanoid robot footballer dents wall with powerful kick - VnExpress International",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "우베텍은 사람 형태의 로봇을 사용하여 독일 약국에서 서비스를 제공하고, 중국 전력망 관리에 활용하는 등 다양한 분야로 진출함."
-  },
-  {
-    "title": "플렉스와 테라다인, 물리적 AI 확장 파트너십 협력",
-    "original_title": "Flex and Teradyne expand partnership to scale physical AI",
-    "link": "https://www.therobotreport.com/flex-teradyne-expand-partnership-scale-physical-ai/",
-    "date": "2026-04-28 22:58",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "플렉스와 테라다인 로봇이 글로벌 제조 시설에서 물리적 AI 기술을 보급하기 위해 파트너십을 확대했습니다."
-  },
-  {
-    "title": "실제 사람이 돌아와야 함: 사업형 챗봇이 인터넷 사용자에 의해 점점 거부당함",
-    "original_title": "Real people need to come back: Business bots are increasingly rebuffed by Internet users - Digital Journal",
-    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNM29PZDJLM1c5a0tlU2Z3QUN3WlItb25pLU9GSktvYnEzN1VhRlY0SktiM0ZULUZLYU9LVnQ5MkhNZmZBeU1nVGp4QjFVT3lYT3lYRTE2Zm9oQlBZSmpQVjhVSWk4cVBSWVM4aHpnWGp3Nm9aUmFOeFMtTGJpOEkzcktoWHhZX093QmxGSmI0WUhzQW03OHlCcTJ2YzV4VllLbzJid0tTSU9yWmVCbGd4OUx4MzZPZkxCT0RVYWRYakNrTjJpTXhtdEpsUEU1al8td1cxSEN3?oc=5",
-    "date": "2026-04-28 20:52",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "인터넷 이용자들이 사업 목적의 챗봇을 이용하는 것을 회피하고 있으며, 실제 사람과의 상호작용을 선호하고 있다는 보고가 나왔다."
-  },
-  {
-    "title": "자가식품 가공 뒤에 숨겨진 재료 계층",
-    "original_title": "The Hidden Ingredient Layer Behind Automated Food Processing",
-    "link": "https://roboticsandautomationnews.com/2026/04/28/the-hidden-ingredient-layer-behind-automated-food-processing/101088/",
-    "date": "2026-04-28 19:27",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "식품 공장은 새로운 로봇팔, 정리된 포장 시스템, 빠른 전달 시스템 등 눈에 보이는 자동화 진행을 선호하지만 자동화 성능의 상당 부분은 모든 장비가 제품에 닿기 전, 용액 탱크와 같은 조성 단계에서 결정됨."
-  },
-  {
-    "title": "애플트로닉의 새로운 CPO 임명, 바른 방향으로 나아가는 중요한 발걸음",
-    "original_title": "Apptronik’s new CPO hire a major step in right direction",
-    "link": "https://www.therobotreport.com/apptroniks-new-cpo-chu-hire-major-step-right-direction/",
-    "date": "2026-04-28 19:22",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "애플트로닉은 Waymo 전직자 Daniel Chu를 CPO로 선임하여 9억 3500만 달러의 자금을 투입하여 인형 로봇 연구 개발에서 대량 시장 상품화로의 전환을 이끌 수 있도록 함."
-  },
-  {
-    "title": "로봇으로 조립되는 건축 블록, 효율성 및 지속가능성 향상 가능",
-    "original_title": "Robotically assembled building blocks could make construction more efficient and sustainable",
-    "link": "https://techxplore.com/news/2026-04-robotically-blocks-efficient-sustainable.html",
-    "date": "2026-04-28 18:40",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "MIT 연구진의 새로운 연구에 따르면 로봇으로 조립되는 건축 블록은 기존 건설 기술보다 환경 친화적인 대규모 구조물 건설 방법이 될 수 있다."
-  },
-  {
-    "title": "인형 로봇, 도쿄 공항에서 인력 부족 속 짐 분류 시작",
-    "original_title": "Humanoid robots start sorting luggage in Tokyo airport test amid labor shortage - Ars Technica",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWElUNWgxVXUtaFNYVTdqVDJlOWNXYTNnVnVqTUhwLW9SVDRuejZKdkRvYnBHSUJRQkd0WjlOejhVdUwzdHFicTZhdWxEME50dVVUal9jT1p4YjllV29OYl9kblRYSGhZMUJ1bHhya0ktcHRHSExDSDk5MUJLQVc3MUN5SlQyUV9iOHc2OUU4ZFlrYkZrSHJNUHpxdGdTaXBaRU5SeUItUklhbGZtYWhEUnBpVQ?oc=5",
-    "date": "2026-04-28 18:01",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "인력 부족 문제 해결을 위해 도쿄 국제공항에서 유한 (Yuhan) 로봇이 짐 분류 작업을 수행하는 테스트가 진행 중이다."
-  },
-  {
-    "title": "FingerEye: 촉각과 시각을 연결하여 접촉 전후 로봇 다루기 개선",
-    "original_title": "FingerEye bridges touch and vision to improve robot handling before and after contact",
-    "link": "https://techxplore.com/news/2026-04-fingereye-bridges-vision-robot-contact.html",
-    "date": "2026-04-28 18:00",
-    "source": "Tech Xplore",
-    "category": "hand",
-    "summary": "robots should be able to handle a variety of objects, ranging from items found in households to tools used in specific professional settings. Many existing robotic systems can complete basic manual tasks but struggle with dexterous manipulation of objects, thus FingerEye aims to improve robot handling by bridging the gap between touch and vision."
-  },
-  {
-    "title": "フィンガー아이가 촉각과 시각을 연결하여 접촉 전후 로봇 조작 성능 향상 - Tech Xplore",
-    "original_title": "FingerEye bridges touch and vision to improve robot handling before and after contact - Tech Xplore",
-    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUlpnTzRsRGZ1Zjhfa0otajdOcFNjQXdLeHlaSGtSaGVDQ1N6MFJWUjFnNkFGdDZXYy13dFJRem1TVHdEWllZSWJ0dzBBbDBScG9STFlpdVh0OEpqUGtDR1oxZVV3ZmJhTHY5WDVITUs4MmZiUEZPSjRQekpoYzdQT2YyUjIydw?oc=5",
-    "date": "2026-04-28 18:00",
-    "source": "Google News (Global Hand/Gripper)",
-    "category": "hand",
-    "summary": "핀저아이는 로봇이 물체를 만지기 전후로 촉각 정보와 시각 정보를 결합하여 더욱 정확하고 효율적인 조작을 가능하게 함. 이 기술은 로봇이 다양한 작업 환경에서 복잡한 객체를 처리하는 능력을 향상시킬 것으로 기대됨."
-  },
-  {
-    "title": "배달 로봇이 현대 자동화에서 필수적인 요소가 되고 있음",
-    "original_title": "Why Delivery Robots Are Becoming Essential in Modern Automation",
-    "link": "https://roboticsandautomationnews.com/2026/04/28/why-delivery-robots-are-becoming-essential-in-modern-automation/101082/",
-    "date": "2026-04-28 17:54",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "현대 자동화는 인공지능, 로봇, 디지털 시스템에 기반한 지능형 네트워크로 전환되며 배달 로봇은 이 과정에서 중요성을 증가시키고 있으며, 물류, 의료 및 소매 등 산업의 실제 배송 작업을 자동화하여 가치를 창출하고 있음."
   }
 ]
