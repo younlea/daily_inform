@@ -1,5 +1,86 @@
 [
   {
+    "title": "Embodied-R1.5: Evolving Physical Intelligence via Embodied Foundation Models",
+    "original_title": "Embodied-R1.5: Evolving Physical Intelligence via Embodied Foundation Models",
+    "link": "https://arxiv.org/abs/2606.11324",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11324v1 Announce Type: new \nAbstract: We introduce Embodied-R1.5, a unified Embodied Foundation Model (EFM) that integrates comprehensive embodied reasoning capabilities, spanning embodied cognition, task planning, correction, and pointing, within a single architecture toward general physical intelligence. Leveraging three automated data construction pipelines to significantly expand the data coverage of critical capabilities, we build a large-scale data system of over 15B tokens, and design a multi-task balanced RL recipe to alleviate heterogeneous task conflicts. We further introduce a Planner-Grounder-Corrector (PGC) closed-loop framework that enables a single model to autonomously execute and self-correct over long-horizon tasks. With only 8B parameters, Embodied-R1.5 achieves SOTA on 16 out of 24 embodied VLM benchmarks, surpassing leading models like Gemini-Robotics-ER-1.5 and GPT-5.4. Benefiting from the internalized embodied capabilities, Embodied-R1.5 can be fine-tuned into a VLA with only a small amount of data, outperforming leading VLA models like $\\pi_{0.5}$ across 4 popular manipulation benchmark suites. We further conduct extensive zero-shot real-robot experiments, validating performance in instruction following, affordance grounding, articulated object manipulation, and long-horizon complex tasks, demonstrating strong generalization to the physical world. We open-source model weights, datasets, training code, and EmbodiedEvalKit, an evaluation framework tailored for embodied tasks, to facilitate future research in EFMs."
+  },
+  {
+    "title": "HiPi: Reproducible High-Fidelity Piezoresistive Sensors for Robotic Manipulation",
+    "original_title": "HiPi: Reproducible High-Fidelity Piezoresistive Sensors for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.11372",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11372v1 Announce Type: new \nAbstract: Piezoresistive tactile sensors are attractive for robotic manipulation because they are thin, lightweight, low-cost, and scalable to dense large-area sensing. However, existing systems still face a practical trade-off: recent reproducible designs emphasize accessibility and ease of reproduction, whereas high-fidelity readout architectures remain more difficult to fabricate, assemble, and deploy. We present HiPi, a reproducible high-fidelity piezoresistive sensing system for robotic manipulation. Building on a low-crosstalk readout principle, HiPi redesigns the complete hardware stack around reproducibility, deployability, and multi-sensor scalability. The system includes a compact readout PCB compatible with commercial PCB fabrication and assembly services, eliminating manual soldering; a smaller and lower-cost STM32-based MCU module; an optimized communication pipeline that achieves 220 Hz readout in a bimanual setup with four dense tactile arrays (2048 taxels in total); and FPCB-based conductive layers that simplify sensor fabrication and stacking. Experiments with structured 3D-printed contact patterns show that HiPi preserves contact geometry substantially better than a reproducible baseline, improving the average IoU from 0.428 to 0.797 and the average Dice score from 0.539 to 0.886. These results suggest that HiPi bridges an important gap between reproducible fabrication and high-fidelity readout, making dense piezoresistive tactile sensing more practical for bimanual manipulation and multi-fingered robotic systems."
+  },
+  {
+    "title": "PLUME: Probabilistic Latent Unified World Modeling and Parameter Estimation for Multi-Finger Manipulation",
+    "original_title": "PLUME: Probabilistic Latent Unified World Modeling and Parameter Estimation for Multi-Finger Manipulation",
+    "link": "https://arxiv.org/abs/2606.11396",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11396v1 Announce Type: new \nAbstract: Dexterous manipulation with multi-finger hands can be sensitive to physical parameters such as object shape, pose, and friction coefficients. While simulation enables large-scale data collection with known parameter values, simulation-trained policies must still handle uncertainty at deployment, where the true parameters and therefore the true dynamics are unknown. Standard domain randomization strategies may be insufficient for precise tasks like screwdriver turning, as manipulation strategies may need to change depending on specific parameter values. To address this, we propose Probabilistic Latent Unified world Modeling and parameter Estimation (PLUME), a world model that jointly learns to evolve a belief over parameter values as well as the system dynamics conditioned on those parameters. We learn a latent space to jointly represent multiple qualitatively different physical parameters along with rewards, themselves functions of partially-observable variables, to inform planning. Our novel learning framework leads to efficient alignment of the world model to true dynamics through online parameter inference as opposed to re-training or fine-tuning. We evaluate our method on simulated screwdriver turning, valve turning, bucket lifting, and disk flicking tasks, as well as a hardware screwdriver turning task, where we achieve successful zero-shot transfer of our simulation-trained policy and outperform state-of-the-art offline reinforcement learning and world-model-augmented behavior cloning baselines. Please see our website at https://plume-world-model.github.io for videos."
+  },
+  {
+    "title": "Dynamic Execution Horizon Prediction for Chunk-based Robot Policies",
+    "original_title": "Dynamic Execution Horizon Prediction for Chunk-based Robot Policies",
+    "link": "https://arxiv.org/abs/2606.11408",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11408v1 Announce Type: new \nAbstract: Action chunking has become a standard design in modern robot policies, from diffusion/flow policies to vision-language-action models, where the policy predicts a sequence of actions and executes a fixed number of them instead of acting one step at a time. However, this paradigm relies on a key assumption: a fixed execution horizon. During chunk execution, the policy operates open-loop, which is particularly problematic for fine-grained manipulation tasks that require frequent replanning. In practice, the execution horizon is typically chosen through empirical tuning and is highly task-dependent. To this end, we propose Dynamic Execution Horizon Prediction (DEHP), an effective method that trains a lightweight execution-horizon prediction branch using online reinforcement learning while keeping the pretrained chunk policy completely frozen. This makes the method compatible with black-box chunk policies and isolates the effect of adapting the execution horizon from changes to the underlying action generator. Across our evaluations, DEHP improves the success rate of different high-precision and long-horizon manipulation tasks by a large margin. Our qualitative analysis further shows that DEHP predicts shorter execution horizons during fine-grained stages of the task and longer horizons during free-space motion. In this way, DEHP balances the efficiency of open-loop chunk execution with the reactivity of closed-loop single-step control. Project page: https://dehp-chunking.github.io/"
+  },
+  {
+    "title": "Learning Object Manipulation from Scratch via Contrastive Interaction",
+    "original_title": "Learning Object Manipulation from Scratch via Contrastive Interaction",
+    "link": "https://arxiv.org/abs/2606.11525",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11525v1 Announce Type: new \nAbstract: Contrastive Reinforcement Learning (CRL) has seen recent success in a wide variety of goal-conditioned robotics tasks by learning structured representations of the dynamics. However, despite its success in locomotion and simpler control domains, CRL often struggles in interaction-rich manipulation. We argue that a key source of this difficulty is object-centric interaction, such as contact or grasping, that induces distinct changes in the underlying dynamic modes. In this work, we formulate manipulation dynamics as a piecewise-smooth Markov process and show that interaction-induced mode changes create piecewise nonlinear reachability structures that are difficult for standard CRL energy functions to represent and plan over. Based on this analysis, we introduce Interaction-weighted Resampling (IWR). IWR performs interaction-aware resampling around phases before, during, and after interactions, encouraging the learned representation to preserve the mode boundaries that determine future reachability to capture multi-modal and piecewise nonlinear reachability. Across interaction-centric environments, including 2D dynamic control, robotic manipulation, and robot air hockey, IWR improves both sample efficiency and overall performance over prior CRL methods, with 19.8% average improvement in simulation. Finally, using a sim-to-real pipeline with policies trained by IWR, we demonstrate the first real-world goal-conditioned robot air hockey agent capable of hitting goals, improving success from 25% to 60%. Project Page: IWR-arxiv.github.io."
+  },
+  {
+    "title": "LUCID: Learning Embodiment-Agnostic Intent Models from Unstructured Human Videos for Scalable Dexterous Robot Skill Acquisition",
+    "original_title": "LUCID: Learning Embodiment-Agnostic Intent Models from Unstructured Human Videos for Scalable Dexterous Robot Skill Acquisition",
+    "link": "https://arxiv.org/abs/2606.11628",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11628v1 Announce Type: new \nAbstract: The most widely-adopted robot learning pipelines today learn skills from robot demonstrations or structured human data, which are expensive to collect and tied to specific embodiments. In contrast, unstructured human videos provide a scalable alternative. They contain diverse manipulation demonstrations across objects, scenes, and strategies, but are not directly connected to robot action. We propose LUCID, a two-stage framework that learns task intent from unstructured human videos drawn from internet-scale datasets and learns robot control in massively-parallel simulation. The intent model predicts short-horizon intent (what should happen next in the scene) from the current observation in closed loop. An embodiment-specific sensorimotor policy converts this intent into robot actions. The intent interface is shared across controllers, so the same intent model can be applied to different embodiments, from our primary dexterous hand to a parallel-jaw gripper. We evaluate LUCID on five real-world manipulation tasks: stirring, wiping, and binning supervised by only internet video, with zero-shot transfer to novel scenes and object instances; and push-T and cable routing supervised by 1 hr each of self-collected smartphone video. Project page: https://lucid-robot.github.io/."
+  },
+  {
+    "title": "Improving Human Diving Endurance with a Field-Deployable, Untethered Exoskeleton",
+    "original_title": "Improving Human Diving Endurance with a Field-Deployable, Untethered Exoskeleton",
+    "link": "https://arxiv.org/abs/2606.11704",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.11704v1 Announce Type: new \nAbstract: Human endurance in underwater locomotion is fundamentally restricted by high energetic demands to overcome drag and the finite supply of self-contained breathing gas. While exoskeleton technology can reduce the metabolic cost of humans in terrestrial locomotion, its potential to enhance human endurance during underwater diving remains entirely unexplored. Here, we present DiveMate, a field-deployable, untethered exoskeleton designed to improve human diving endurance via adaptive kick assistance in real-world underwater environments. During naturalistic diving, DiveMate increases the travel distance using a given energy (breathing gas) by 42.9% and extends dive duration by 54.9% through reducing gas consumption rate. Marked reductions in muscle activation indicate a decrease in physiological exertion, with the net gas consumption rate decreasing by 47.0%. Kinematic characteristics and regularity improvements further underpin efficient energy economy. These results suggest that applying exoskeleton assistance is beneficial for improving human diving endurance and augmenting their ability to explore the aquatic world. This study extends the application frontier of exoskeletons and provides a potential reference for the design and assessment of future underwater assistive devices."
+  },
+  {
+    "title": "Explore From Sketch: Accelerating UAV Exploration in Large-scale Environments with Prior Maps",
+    "original_title": "Explore From Sketch: Accelerating UAV Exploration in Large-scale Environments with Prior Maps",
+    "link": "https://arxiv.org/abs/2606.11708",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11708v1 Announce Type: new \nAbstract: Autonomous exploration with UAVs in large-scale, topologically complex environments often suffers from low efficiency due to suboptimal scheduling and detours. Prior maps (e.g., construction drawings), although usually imprecise and flawed, are readily available in many scenarios and have the potential to provide global structural guidance. This paper presents a novel exploration framework that leverages sparse, unaligned, and even discrepant 2D prior maps for LiDAR-based UAV exploration. First, a robust 2D-3D point cloud registration pipeline is proposed to align LiDAR observations with prior maps. The registration pipeline combines a GeoContext descriptor for single-frame candidate retrieval, a multi-frame verification mechanism for coarse transformation estimation with outlier rejection, and a Scale-ICP algorithm for refinement. The registration module can handle map discrepancies and provide multiple hypotheses when geometric ambiguities arise. To effectively utilize the registration results for exploration planning, we further develop a hierarchical viewpoint planning strategy under localization uncertainties. The hierarchical strategy first spatially attaches local viewpoints to prior guidepoints and adopts a Monte Carlo Tree Search solver to determine their traversal sequence under each registration hypothesis. To mitigate registration uncertainty, a risk-aware selector evaluates prior sequences using confidence-weighted travel risk, and a fixed-endpoint traveling salesman problem is formulated to generate an efficient local coverage path under the selected prior guidance. Benchmark evaluations reveal up to 34.2% improvement in exploration efficiency and 37.9% reduction in flight distance compared to state-of-the-art methods, while extensive simulations and field experiments further demonstrate robustness to prior map incompleteness and deformations."
+  },
+  {
+    "title": "Meet the young founders driving China's AI and robotics boom - VnExpress International",
+    "original_title": "Meet the young founders driving China's AI and robotics boom - VnExpress International",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQk54U2hpTXdEMGRxc19OWWVNTGlWMEotNmZoVzJLVi1uNjhWN1lHd19KQWpFOFhwb1l3d1VMbkpmNFRoMEVEWlhQdS1DUG44NzhISmNZVTNQczdvVXJLRXc0VGN4REZWRHdMV3ktakF5aHhTNlVyVnNFVl8tVmNGVmc5OHpRVFY4ZHFMMzlYU0tmRHVnU0EzMTlMaEs4WHdlbUxXRjU5QktmZS1CRUo3Qjl3TXp1YlZibW1zWFZB?oc=5",
+    "date": "2026-06-11 03:48",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Meet the young founders driving China's AI and robotics boom  VnExpress International"
+  },
+  {
     "title": "China Builds 85% of the World's Humanoid Robots. So Why Is Nobody Buying Them? | FP Explains - Firstpost",
     "original_title": "China Builds 85% of the World's Humanoid Robots. So Why Is Nobody Buying Them? | FP Explains - Firstpost",
     "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQMndGUkRhMVlnVEU5UkhXVUZnRVFNSEc2MlV1NHpQZ3BtYXlTMU40YjN1b195dG42RGdfRXlsek16V0lDc3k5cFZNM0xVc29kVW8xa245NEJaalFxNmZ5SmxMYlZwRTBDMllMdUVaWVl2eFNqc2JObXNhM1dCYTkxZlBmWjBQbXhBa2JzOU1HZUtDN3BrXzU3NUpJdHhOOVFkWnZSdnNXN0E2Q0hQc19yZER3YWU5MzNLZ0RsSG93c2hfSjFDNVd1MUNJVmMzeGg3TUZxZlJ0S194TS03Z0xEd1dqX1NYUdIB6wFBVV95cUxNV3d5bWNzVUJxZnh5djczS2dGRTFWMEpSRmNIR1dXNFQ5ZVBTQWxzTmRtT0d2cnRHXzhrMHFTQm5XR3c0aFFXazZ5X3llVjl4d2x3N29ZVU9kWWV4UW1VWGtyczkxdXVDWEZrYzhqUVh0NTB5cTlqNVVUelh0WGt0Yk1xSTZmajZIaUV0NnJ5TWJTZmUzMEpaelBvd2I3cmpTZHB4dzBMbWNlWjVvQVBDamhUWGhZOUFwLXh1dVN2bWs3VFVkQ2pZZDgtRFp1Q3VpQmRrSlliN1RuMGlWNnpQT2FmVnRpVmR3MEpR?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중국에서 개발된 인형 로봇이 초속 10미터를 달리는 데 성공하여 Usain Bolt의 전설적인 속도에 가까워졌습니다. 이는 인공 지능과 로봇 기술 발전을 보여주는 중요한 사건이며, 앞으로 자동화 및 로보틱스 분야에서 새로운 가능성을 제시합니다."
-  },
-  {
-    "title": "U.S. adopts China's playbook on tech and security - The Japan Times",
-    "original_title": "U.S. adopts China's playbook on tech and security - The Japan Times",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaDNpLWQ5Y0VqSDU5WEZPYTVrM01NQjJVMXhJWXlsVG9jMHd5eUZKZGY5Qkx6QnFfWlFEeWxXX0JNOFBlNGFwWjI5MmdLb1JzX0tuM1Fvc3Q4MTFNdEpmOHN1c2pJSzBvQVAtWmJ2Tlg4TVZ4Rl9IVm10OEwyWTVoM2h3Yw?oc=5",
-    "date": "2026-04-30 04:22",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "U.S. adopts China's playbook on tech and security  The Japan Times"
-  },
-  {
-    "title": "2D 및 3D Grasp Planner for the GET 비대칭Gripper",
-    "original_title": "2D and 3D Grasp Planners for the GET Asymmetrical Gripper",
-    "link": "https://arxiv.org/abs/2604.26212",
-    "date": "2026-04-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "GET-2D-1.0은 단일 RGB-D 이미지를 이용하여 접지 계획을 수립하며, Ferrari-Canny 지표와 새로운 샘플링 전략을 사용하여 Bounding box 기준보다 리프트 성공률, 진동 내성 및 힘 저항력에서 40% 이상 향상된 성능을 보임. GET-3D-1.0은 메시 기반 방법으로 3D 그립퍼 모델과 레이 트레이싱을 사용하지만, 계산 시간이 GET-2D-1.0보다 길다."
-  },
-  {
-    "title": "원료 없는 이중 안정 유체 그리퍼",
-    "original_title": "Source-Free Bistable Fluidic Gripper for Size-Selective and Stiffness-Adaptive Grasping",
-    "link": "https://arxiv.org/abs/2511.03691",
-    "date": "2026-04-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "외부 에너지 공급 없이 내부 유체 재분배를 통해 작동하는 고정 크기의 소프트 그립퍼가 개발됨. 접촉 시 상단 감지 카메라 변형으로 인해 잡는 카메라가 확장되어, 지속적인 에너지 공급 없이 안정적이고 크기 선택형 잡기 기능을 제공하며 내부 수압 피드백을 통해 잡는 압력을 객체의 강성에 따라 적응하게 함."
-  },
-  {
-    "title": "여러 경로 개선을 위한 불연속적인 계획 및 연속 실행 연결",
-    "original_title": "Bridging Discrete Planning and Continuous Execution for Redundant Robot",
-    "link": "https://arxiv.org/abs/2604.02021",
-    "date": "2026-04-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 불연속적인 계획과 연속적인 실행 사이의 연결 프레임워크를 제안하여, voxel-grid 강화 학습 기반 7도자유 매니퓰레이터의 계획 성공률과 경로 길이를 개선하며 동시에 조인트 가속도를 크게 감소시키는 데 초점을 맞추고 있다."
-  },
-  {
-    "title": "고려체의 접선화 Gaussian 추론의 분포적 안정성",
-    "original_title": "Distributional Stability of Tangent-Linearized Gaussian Inference on Smooth Manifolds",
-    "link": "https://arxiv.org/abs/2602.19179",
-    "date": "2026-04-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 매끄러운 엽면에서의 접선화 Gaussian 추론의 분포적 안정성에 대해 분석하고, 투영 정규화와 표면 측도 조건에 대한 명시적인 비 대수 W₂ 안정성 경계를 유도했습니다. 이러한 경계는 국소 두차원 지오메트리 손상과 비국소 테일 누출을 분리하며, Gaussian 입력의 경우 (μ, Σ)와 곡률/반지름 서브러티 중 사용 가능한 폐쇄 형식 진단도를 제공합니다."
-  },
-  {
-    "title": "falconApp:  휴대폰을 통한 실시간 인식 시스템 빠른 배포",
-    "original_title": "FalconApp: Rapid iPhone Deployment of End-to-End Perception via Automatically Labeled Synthetic Data",
-    "link": "https://arxiv.org/abs/2604.25949",
-    "date": "2026-04-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "falconApp는 사용자가 휴대폰으로 짧게 촬영한 단일 물체 영상을 통해, 마스크 검출 및 6-DoF 자세 추정을 수행하는 인식 모듈을 생성하는 iPhone 앱이다.  falconApp은 사용자 입력된 핸드캡쳐 영상을 기반으로 실시간 합성 데이터 라벨링 프로세스를 통해 빠르게 학습하여 배포되는 신체 지도 인식 시스템 구축 가능하다."
-  },
-  {
-    "title": "스토캐스틱 얽힘을 이용한 결정론적 오리гами 트랜클의  유니버셜 로봇 그립핑",
-    "original_title": "Stochastic Entanglement of Deterministic Origami Tentacles For Universal Robotic Gripping",
-    "link": "https://arxiv.org/abs/2604.26897",
-    "date": "2026-04-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "오리гами 형태의 로봇 그리퍼를 이용하여 다양한 모양의 물체를 집는 방법을 제시함. 각 오리미 테닐은 단순한 텐던으로 작동하면서 결정론적인 말아짐 구현하며, 여러 개를 함께 사용하면 스토캐스틱 얽힘을 통해 브레이딩 및 노팅 등 다양한 형태의 물체 집지를 가능하게 함."
-  },
-  {
-    "title": "HiPAN: 계층적 자세 적응형 네비게이션 | unstructured 3D 환경에서 네바기하는 사족 로봇의 효율성을 높이기 위해 'Hierarchical Posture-Adaptive Navigation (HiPAN)' 프레임워크가 제시됨.  High-level policy는 전략적인 네비게이션 명령을 생성하고, low-level locomotion controller는 이를 posture-adaptive하게 실행하며, Path-Guided Curriculum Learning은 장거리 네비게이션 능력 향상에 기여하여 시뮬레이션 및 실제 환경에서 우수한 성능을 보임.",
-    "original_title": "HiPAN: Hierarchical Posture-Adaptive Navigation for Quadruped Robots in Unstructured 3D Environments",
-    "link": "https://arxiv.org/abs/2604.26504",
-    "date": "2026-04-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "HiPAN: 계층적 자세 적응형 네비게이션 | unstructured 3D 환경에서 네바기하는 사족 로봇의 효율성을 높이기 위해 'Hierarchical Posture-Adaptive Navigation (HiPAN)' 프레임워크가 제시됨.  High-level policy는 전략적인 네비게이션 명령을 생성하고, low-level locomotion controller는 이를 posture-adaptive하게 실행하며, Path-Guided Curriculum Learning은 장거리 네비게이션 능력 향상에 기여하여 시뮬레이션 및 실제 환경에서 우수한 성능을 보임."
-  },
-  {
-    "title": "원자 단위 능력 관리가 조합 로봇 정책 업데이트에 중요한 역할을 함",
-    "original_title": "Atomic-Probe Governance for Skill Updates in Compositional Robot Policies",
-    "link": "https://arxiv.org/abs/2604.26689",
-    "date": "2026-04-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 로봇 시스템에서 사용되는 기술 라이브러리가 지속적으로 업데이트되지만, 기존의 조합 방법은 테스트 시간에 라이브러리를 고정하고 능력이 교체되었을 때 조합 결과가 어떻게 변하는지 분석하지 않는다는 한계점을 지적합니다.  연구진은 Robosuite manipulation 작업에서 페어드-샘플링 크로스 버전 스왑 프로토콜을 사용하여 조합적 기술 학습의 이러한 차원을 특징화했습니다."
   }
 ]
