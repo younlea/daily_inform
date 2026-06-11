@@ -1,5 +1,14 @@
 [
   {
+    "title": "How Automated Container Gantry Cranes Are Reshaping Port Operations in 2026",
+    "original_title": "How Automated Container Gantry Cranes Are Reshaping Port Operations in 2026",
+    "link": "https://roboticsandautomationnews.com/2026/06/11/how-automated-container-gantry-cranes-are-reshaping-port-operations-in-2026/102455/",
+    "date": "2026-06-11 05:41",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Container gantry cranes have long been the backbone of global port logistics. However, in 2026, these towering machines are undergoing a profound transformation. Driven by automation, artificial intelligence, and the growing pressure to reduce emissions, container gantry cranes are no longer just mechanical workhorses – they are becoming intelligent, connected systems that redefine how ports […]"
+  },
+  {
     "title": "Embodied-R1.5: Evolving Physical Intelligence via Embodied Foundation Models",
     "original_title": "Embodied-R1.5: Evolving Physical Intelligence via Embodied Foundation Models",
     "link": "https://arxiv.org/abs/2606.11324",
@@ -142,6 +151,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.12027v1 Announce Type: new \nAbstract: Collision-free path planning in cluttered, real-world environments relies on a representation of the collision-free space, and existing representations broadly fall into two\n  categories. Explicit representations, such as unions of convex sets, can be plugged into optimization-based planners as hard collision-free constraints, but their parameters scale\n  poorly with configuration-space dimension. Implicit representations, by contrast, are flexible and scale well to complex geometries, yet typically lack such guarantees. We bridge this\n  gap with ILD (Invertible Latent Decomposition), a framework that jointly learns an invertible mapping and a union of explicit convex polytopes in the resulting latent space. Planning\n  is carried out over these latent convex sets, and the invertible mapping decodes the resulting paths back to the original configuration space while preserving feasibility with\n  respect to the refined explicit safe regions. We further propose Visibility-Guided Sampling (VGS) to keep the convex sets connected for path planning. Across 2D navigation, 6-DoF, and\n  14-DoF manipulation environments, ILD achieves broader coverage, better inter-set connectivity, and higher path-planning success rates than prior baselines, with zero observed false\n  positives after test-time refinement. On a 14-DoF bimanual manipulator, we further demonstrate real-time collision-free planning, with test-time refinement adapting to scene-geometry\n  changes during real-world deployment on a single 6-DoF arm."
+  },
+  {
+    "title": "VICX: Generalizable Robot Manipulation via Video Generation and In-Context Operator Network",
+    "original_title": "VICX: Generalizable Robot Manipulation via Video Generation and In-Context Operator Network",
+    "link": "https://arxiv.org/abs/2606.12028",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12028v1 Announce Type: new \nAbstract: Generalizable robot manipulation requires not only task-level reasoning over unseen scenes, but also reliable grounding of visual plans into embodiment-specific execution. To bridge this gap, we propose VICX (Video generation and In-Context eXecution), a decoupled closed-loop manipulation framework. In VICX, a frozen video generation model produces vision-language-conditioned high-level visual plans, while a Video-to-Trajectory In-Context Operator Network (V2T-ICON) serves as the task-agnostic interface that grounds these plans into executable robot-state trajectories. To improve execution generalization, V2T-ICON operates on segmentation-extracted arm-only frame observations and uses retrieved image-state pairs as in-context prompts, allowing a robust and generalizable visual-to-state mapping at inference time without parameter updates. Experiments on Meta-World show that VICX supports cross-task generalization, closed-loop self-correction, and cross-embodiment transfer, demonstrating dual generalization across both task semantics and robot execution. The project webpage can be found here: https://scaling-group.github.io/vicx/."
+  },
+  {
+    "title": "KinematicRL: A Sim-to-Real Reinforcement Learning Framework For Social Navigation With Kinodynamic Feasibility",
+    "original_title": "KinematicRL: A Sim-to-Real Reinforcement Learning Framework For Social Navigation With Kinodynamic Feasibility",
+    "link": "https://arxiv.org/abs/2606.12042",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12042v1 Announce Type: new \nAbstract: Deep Reinforcement Learning (DRL) has shown promise for social navigation, yet its real-world deployment remains hindered by a persistent sim-to-real gap arising from simplified first-order dynamics and context-specific human state estimation pipelines. This work presents a unified framework that addresses these limitations to produce dynamically feasible navigation policies suitable for real-world deployment. First, theoretical analysis reveals that tracking error between simulated and actual robot position decays exponentially with increased control order, motivating the use of higher-order control inputs as DRL action space. A second-order control formulation tailored to differential drive robots is developed, complemented by a stochastic iterative Linear Quadratic Regulator (iLQR) that pretrains the policy via a divergence minimization objective. Second, to avoid the added system complexity of camera-LiDAR fusion, a cluster-based human tracking pipeline using only 2D LiDAR is introduced. Human detections are associated according to both spatial proximity and velocity similarity, enabling reliable differentiation of nearby pedestrians and yielding stable velocity estimates through temporal aggregation. Third, we introduce an unbiased residual gating block to balance reaction- and memory-based behaviors while handling time-varying crowd sizes, both critical for social navigation. The resulting policy, KinematicRL, consistently improves kinematic performance and adapts to varying number of detected humans. Experiments in real-world environments demonstrate that, when combined with the proposed tracking pipeline, KinematicRL can be deployed on a real differential drive robot with minimal modifications."
+  },
+  {
+    "title": "Point Cloud Segmentation for Autonomous Clip Positioning in Laparoscopic Cholecystectomy on a Phantom",
+    "original_title": "Point Cloud Segmentation for Autonomous Clip Positioning in Laparoscopic Cholecystectomy on a Phantom",
+    "link": "https://arxiv.org/abs/2606.12048",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12048v1 Announce Type: new \nAbstract: High-risk applications in robotics, such as robot-assisted surgery, present unique challenges. These systems must be both highly precise and interpretable in order to be deployed in environments with very low tolerance for error or unsafe exploration. We present the first robotic system to demonstrate autonomous clip positioning on a physical phantom in laparoscopic surgery, one of the most common interventions in general surgery. After segmentation of a colorless point cloud from a single camera, target positions for the clips are extracted using spline interpolation, and can then be adjusted by the human operator. The segmentation model is trained on only 60 hand-labeled real point clouds, reflecting data scarcity in the surgical domain. We overcome this with a combination of pre-training on 128,000 synthetic point clouds and two novel data augmentation techniques. The motion of the end-effector to each target is visualized for the operator, satisfying the unique motion constraints of minimally-invasive surgery while ensuring that the robot's actions are verifiable and interpretable. In real robot experiments, our system localizes targets with the required precision of 0.75mm at a 95% success rate and executes autonomous clip positioning with a 100% success rate. We provide insights that are applicable to many other surgical and non-surgical tasks that require identifying and navigating to a precise target. Source code and project page: https://github.com/balazsgyenes/kirurc"
+  },
+  {
+    "title": "Fibration Trees: A Unified Approach to Multi-Robot Motion Planning",
+    "original_title": "Fibration Trees: A Unified Approach to Multi-Robot Motion Planning",
+    "link": "https://arxiv.org/abs/2606.12070",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12070v1 Announce Type: new \nAbstract: State space projections and decompositions have emerged as powerful tools to tackle the curse of dimensionality in high-dimensional, multi-robot motion planning problems. However, existing methods lack a unified framework which seamlessly handles combinations of projections (prioritization or task-space) and decompositions (parallel or decoupled subspaces). To fill this gap, we introduce fibration trees, which are trees consisting of state spaces as nodes and fibrations as edges, whereby a fibration models a projection from a higher-dimensional space to a lower-dimensional (or simplified) space. By modeling projections as fibrations, we unify sequential prioritization, parallel decomposition, and task-space projections under a single, coherent formalism. Building on this, we develop the rapidly-exploring random fibration trees (Fibration-RRT) planner, a sampling-based motion planner that generalizes strategies from quotient-space RRT (for sequential prioritizations) and discrete RRT (for parallel decompositions), while allowing the inclusion of task-space projections. Fibration-RRT operates on user-defined fibration trees and is proven to be probabilistically complete. To test the generality and efficiency of Fibration-RRT, we provide an open-source implementation and conduct experiments on 32 scenarios using multi robot teams with up to 96 degrees of freedom. Our results indicate that Fibration-RRT efficiently solves high-dimensional problems by exploiting user-defined fibration trees, thereby establishing fibration trees as a powerful, unified framework for multi-robot motion planning."
+  },
+  {
+    "title": "DAM-VLA: Decoupled Asynchronous Multimodal Vision Language Action model",
+    "original_title": "DAM-VLA: Decoupled Asynchronous Multimodal Vision Language Action model",
+    "link": "https://arxiv.org/abs/2606.12105",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12105v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models inherit a shared synchronous clock from vision-language pretraining, processing every input at one rate. This is misaligned with physical interaction, where a high-frequency modality changes at hundreds of hertz, vision evolves more slowly, and language stays constant across an episode. A synchronous VLA oversamples slow modalities, undersamples fast ones, and caps action generation at the lowest effective frequency. We hypothesize that decoupling temporal processing per modality, letting each update and retain information at its own sensor rate, yields stronger representations and more robust control. We present DAM-VLA, which maintains per-modality latent buffers refreshed at sensor rates and read continuously by the action head, integrating new high-frequency modalities through gated cross-attention that leaves the pretrained backbone intact. Across seven contact-rich real-world manipulation tasks, DAM-VLA more than doubles the average success rate of the strongest synchronous baseline (95.2\\% vs.\\ 40.95\\%) while sustaining smooth, reactive 100\\,Hz control. Project website: \\href{https://intuitive-robots.github.io/DAM-VLA/}{intuitive-robots.github.io/DAM-VLA/}"
+  },
+  {
+    "title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
+    "original_title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
+    "link": "https://arxiv.org/abs/2606.12109",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12109v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have demonstrated remarkable zero-shot generalization in robotic manipulation, yet the vast majority of pre-trained pipelines remain strictly confined to low-DoF parallel grippers. Adapting these rich semantic priors to high-DoF dexterous hands introduces a severe morphology gap, direct end-to-end joint fine-tuning inherently causes catastrophic forgetting of spatial reasoning and acute action manifold collapse due to data scarcity. In this paper, we present InDex, a novel, data-efficient adaptation framework rooted in cross-morphology semantic inheritance. Rather than discarding the pre-trained 1-DoF parallel grasp output, we repurpose it as a continuous, macroscopic virtual grasp intent proxy to sequentialize the control topology. We implement a two-stage decoupled learning architecture: the first stage parameter-efficiently aligns the VLA backbone to predict continuous arm trajectories and the scalar grasp intent; the second stage freezes this spatial backbone and leverages an intent-conditioned denoising diffusion head to decode fine-grained joint articulations for multi-fingered end-effectors. Extensive simulation benchmarks across a suite of multi-stage, contact-rich dexterous manipulation tasks demonstrate that InDex effectively masters intricate skills with minimal demonstration data, substantially outperforming monolithic baselines while preserving the robust spatial generalizability of the original VLA prior."
+  },
+  {
+    "title": "Intelligent Automation for Embodied Benchmark Construction: Pipelines, Embodiments, Simulators, and Trends",
+    "original_title": "Intelligent Automation for Embodied Benchmark Construction: Pipelines, Embodiments, Simulators, and Trends",
+    "link": "https://arxiv.org/abs/2606.12207",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12207v1 Announce Type: new \nAbstract: Embodied intelligence now spans navigation, household assistance, manipulation, autonomous driving, aerial agents, and multimodal large-model control. This expansion has made benchmark construction a central bottleneck for reliable evaluation. Unlike static datasets, embodied benchmarks combine task specifications, environments, robot data, demonstrations, annotations, metrics, evaluation scripts, and release policies into a single evaluation system. This survey reviews the literature through a five-stage construction pipeline: requirement and task construction, data acquisition, data cleaning and annotation, benchmark suite generation and metric definition, and evaluation execution with diagnostic feedback. For each stage, the survey analyzes the transition from manual curation to traditional automation, foundation-model assistance, and agentic closed-loop workflows. It also compares qualitative construction costs across human labor, data and asset acquisition, compute and simulation, validation and debugging, governance and maintenance, and rework risk. The main conclusion is that automation does not simply reduce benchmark cost. Instead, it often shifts cost toward validation, auditability, version control, and long-term governance. Progress in embodied evaluation will therefore depend not only on larger benchmark suites, but also on construction pipelines that are diagnosable, auditable, and responsibly refreshable."
+  },
+  {
+    "title": "DrivingAgent: Design and Scheduling Agents for Autonomous Driving Systems",
+    "original_title": "DrivingAgent: Design and Scheduling Agents for Autonomous Driving Systems",
+    "link": "https://arxiv.org/abs/2606.12236",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12236v1 Announce Type: new \nAbstract: Many autonomous driving systems are increasingly incorporating foundation models to improve generalization and handle long-tail scenarios. However, this trend introduces two key challenges: (i) the manual and labor-intensive process of designing and integrating new models, and (ii) the lack of intelligent, dynamic scheduling mechanisms to meet strict real-time constraints. While Large Language Model (LLM)-based agents offer a promising avenue for automation, existing frameworks are ill-suited for autonomous driving. Specifically, they fail to distinguish between the fundamentally different requirements of system design and real-time scheduling, treat modules as opaque black boxes, and are not designed for continuous operation. To address these limitations, we propose DrivingAgent, a novel agent framework tailored to the dual challenges of autonomous driving system design and scheduling. In the design phase, DrivingAgent automates module development by interpreting system architecture, generating code, and validating modules via super-network training. In the scheduling phase, it employs a lightweight LLM trained with reinforcement learning to dynamically orchestrate system modules in real time, supported by a structured memory that integrates long-term storage with timestamped short-term context. Experimental results demonstrate that DrivingAgent achieves a superior speed--accuracy trade-off on both the nuScenes and Bench2Drive benchmarks."
   },
   {
     "title": "Meet the young founders driving China's AI and robotics boom - VnExpress International",
@@ -17917,86 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "BTM 산업이 팬우, ABB, 쿠카, 야스카와 등 주요 로보틱스 공급업체의 과잉 재고를 해소하기 위해 150개 이상의 로봇, 제어기, 용접 장비 등을 포함한 경매를 개최함."
-  },
-  {
-    "title": "온라인 쇼핑몰 가격 모니터링을 위한 주거 IP 프록시 서비스: 팀이 비교해야 할 사항",
-    "original_title": "Residential IP Proxy Service for E-Commerce Price Monitoring: What Teams Need to Compare",
-    "link": "https://roboticsandautomationnews.com/2026/04/30/residential-ip-proxy-service-for-e-commerce-price-monitoring-what-teams-need-to-compare/101140/",
-    "date": "2026-04-30 18:13",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "온라인 판매팀들은 수십 개의 마켓플레이스에서 경쟁사 가격과 지역 프로모션을 추적하기 위해 대규모 데이터 수집의 어려움에 직면해 있습니다.  주거 IP 프록시 서비스는 신뢰할 수 있는 데이터 수집 시스템의 핵심이며, 상용급 데이터 수집은 진짜 사용자와 유사한 인프라를 요구합니다."
-  },
-  {
-    "title": "인더스트리얼 IoT 시스템과의 통합으로 실시간 보안 자동화",
-    "original_title": "How Access Control Systems Integrate with Industrial IoT for Real-Time Security Automation",
-    "link": "https://roboticsandautomationnews.com/2026/04/30/how-access-control-systems-integrate-with-industrial-iot-for-real-time-security-automation/101137/",
-    "date": "2026-04-30 18:00",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "공장, 에너지 플랜트 등 산업 현장이 연결된 센서 및 스마트 제어 시스템을 통해 데이터를 실시간으로 교환하는 산업 인터넷 오브 싱(IIoT) 변화가 진행되고 있으며, 이러한 변화는 2025년까지 IIoT 기기 수의 증가로 더욱 가속화될 것으로 예상됨."
-  },
-  {
-    "title": "빠르게 성장하는 기업을 위한 채널링 솔루션의 효과",
-    "original_title": "What Makes Fulfillment Solutions Work for Fast-Growing Businesses",
-    "link": "https://roboticsandautomationnews.com/2026/04/30/what-makes-fulfillment-solutions-work-for-fast-growing-businesses/101133/",
-    "date": "2026-04-30 17:44",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "빠르게 성장하는 기업은 제품 배송에 어려움을 겪는 경향이 있으며, 신뢰할 수 있는 운송만으로 고객 기대를 충족하기 어렵다. 채널링 솔루션은 높은 주문량 관리를 통해 사업성장을 촉진하고 운영 효율성과 서비스 품질을 유지하는 데 도움이 된다."
-  },
-  {
-    "title": "Kubernetes 초보 가이드",
-    "original_title": "A Beginner’s Guide to Kubernetes",
-    "link": "https://blog.bytebytego.com/p/a-beginners-guide-to-kubernetes",
-    "date": "2026-04-30 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "이 글에서는 Kubernetes가 약속의 시스템이며, 각 부분이 어떤 약속을 지키는 작은 프로그램임을 알려줍니다."
-  },
-  {
-    "title": "로봇 제작 AI, 'Launchpad Build AI' 산업 자동화 설계 가속화 MLM 제공",
-    "original_title": "Launchpad Build AI offers MLM to speed industrial automation design",
-    "link": "https://www.therobotreport.com/launchpad-build-ai-offers-manufacturing-language-model-industrial-automation/",
-    "date": "2026-04-30 14:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Launchpad Build AI는 'Manufacturing Language Model(MLM)'을 통해 사진, 동영상 또는 CAD 입력으로 높은 품목 다양성과 적은 생산량에 맞춘 자동화를 민주화한다고 발표함."
-  },
-  {
-    "title": "로봇 손에 촉각 감각을 심는 DAIMON Robotics",
-    "original_title": "DAIMON Robotics Wants to Give Robot Hands a Sense of Touch",
-    "link": "https://spectrum.ieee.org/daimon-robotics-physical-ai",
-    "date": "2026-04-30 13:22",
-    "source": "IEEE Spectrum",
-    "category": "hand",
-    "summary": "홍콩 기반 로봇 스타트업 DAIMON Robotics가 고해상도 촉각 센서를 장착한 최대규모 다중 모달 로봇 데이터셋인 Daimon-Infinity를 발표하며, 로봇이 '느끼고' 학습할 수 있도록 지원하는 기술 개발에 집중하고 있다."
-  },
-  {
-    "title": "유니트리, 베이징 중심가에 최초 오프라인 매장 출점 - 글로벌타임즈",
-    "original_title": "Unitree sells robots starting at around 10,000 yuan at its first directly operated offline store in downtown Beijing - Global Times",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5haGRSWmdRb0lKUjNSZW5zWXdtQ29pNTBRYktkY2NTMVp2Nl9uSkY2MExrUThvVHZ6V2VkbHplaUJHaENaVi1jTm1iejB3LXo3OGFrZ2RTbUtva29yZVFERWZR?oc=5",
-    "date": "2026-04-30 10:41",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "유니트리가 베이징 시내에 처음으로 직영 오프라인 매장을 오픈하여 1만 위안(약 20만원)부터 시작하는 로봇을 판매한다."
-  },
-  {
-    "title": "우베치 로봇틱스 HK SDR 10to1: 중국의 완성형 인형 로봇 회사 - 비언즈프라우트",
-    "original_title": "UBTECH Robotics HK SDR 10to1: China's full-stack humanoid robot company - Beansprout",
-    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBNRVpkbjhiVmRtRlhCMHMyMnU4a2JSTXFJWUUyMkVIeGRVc3B1aHFvaDBUMEVVZm82QnJuV3VwblM1aE1mcE0tTElkUERpRW42TmgtT1UweV8wRkF4dV9NMjVXcERwUEU?oc=5",
-    "date": "2026-04-30 10:06",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "우베치 로봇틱스 HK는 자체적으로 개발한 인형 로봇 \"SDR 10to1\"을 통해 완성형 인형 로봇 회사로서의 모습을 드러냈습니다. SDR 10to1은 중국에서 출시된 최고 수준의 인형 로봇이며, 다양한 작업을 수행할 수 있는 기능을 갖추고 있습니다."
-  },
-  {
-    "title": "procurement 자동화로 제조업 공급망 재무 감사 준비",
-    "original_title": "How Procurement Automation Creates Audit-Ready Supply Chains in Manufacturing",
-    "link": "https://roboticsandautomationnews.com/2026/04/30/how-procurement-automation-creates-audit-ready-supply-chains-in-manufacturing/101130/",
-    "date": "2026-04-30 09:50",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "한 2차 자동 부품 공급 업체는 고객 감사 중 지난 분기의 40% 매입 거래 승인 기록을 추적할 수 없었다. 주문이 처리되고 부품이 수령되었으며 청구서가 결제되었지만, 승인 내역은 확인되지 않았다."
   }
 ]
