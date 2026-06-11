@@ -72,6 +72,78 @@
     "summary": "arXiv:2606.11708v1 Announce Type: new \nAbstract: Autonomous exploration with UAVs in large-scale, topologically complex environments often suffers from low efficiency due to suboptimal scheduling and detours. Prior maps (e.g., construction drawings), although usually imprecise and flawed, are readily available in many scenarios and have the potential to provide global structural guidance. This paper presents a novel exploration framework that leverages sparse, unaligned, and even discrepant 2D prior maps for LiDAR-based UAV exploration. First, a robust 2D-3D point cloud registration pipeline is proposed to align LiDAR observations with prior maps. The registration pipeline combines a GeoContext descriptor for single-frame candidate retrieval, a multi-frame verification mechanism for coarse transformation estimation with outlier rejection, and a Scale-ICP algorithm for refinement. The registration module can handle map discrepancies and provide multiple hypotheses when geometric ambiguities arise. To effectively utilize the registration results for exploration planning, we further develop a hierarchical viewpoint planning strategy under localization uncertainties. The hierarchical strategy first spatially attaches local viewpoints to prior guidepoints and adopts a Monte Carlo Tree Search solver to determine their traversal sequence under each registration hypothesis. To mitigate registration uncertainty, a risk-aware selector evaluates prior sequences using confidence-weighted travel risk, and a fixed-endpoint traveling salesman problem is formulated to generate an efficient local coverage path under the selected prior guidance. Benchmark evaluations reveal up to 34.2% improvement in exploration efficiency and 37.9% reduction in flight distance compared to state-of-the-art methods, while extensive simulations and field experiments further demonstrate robustness to prior map incompleteness and deformations."
   },
   {
+    "title": "TacCoRL: Integrating Tactile Feedback into VLA via Simulation",
+    "original_title": "TacCoRL: Integrating Tactile Feedback into VLA via Simulation",
+    "link": "https://arxiv.org/abs/2606.11743",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11743v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models provide strong visual, language, and action priors for robot manipulation, but visual observations alone often miss the local contact state required for contact-rich tasks. We present TacCoRL, a scalable framework that injects Tactile feedback into VLA policies and improves them through sim-real Co-training and simulation-based reinforcement learning (RL), without requiring large-scale tactile pretraining or extensive real-world contact exploration. The key idea is not only adding touch as an input, but learning how contact readings should modulate action responses in near-failure states that are rare in demonstrations and risky to collect on hardware. We use a real-aligned simulator as a closed-loop training environment for contact interaction. Mixed simulated and real trajectories first warm-start tactile-conditioned actions in the pretrained policy. Reinforcement learning with verifiable task rewards then optimizes the policy using simulated contact rollouts. It reinforces tactile-conditioned actions that lead to task completion, while a supervised objective on real trajectories keeps the refined policy anchored to deployment visual, tactile, and action distributions. The resulting policy transfers directly to the real robot without privileged simulation state or online real-world RL. Across four bimanual contact-rich tasks, the final visuo-tactile policy achieves an average success rate of 72.5%, compared to baseline of 50.0%. Result videos and more details are available at https://tac-corl.github.io/"
+  },
+  {
+    "title": "Blind Dexterous Grasping via Real2Sim2Real Tactile Policy Learning",
+    "original_title": "Blind Dexterous Grasping via Real2Sim2Real Tactile Policy Learning",
+    "link": "https://arxiv.org/abs/2606.11767",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11767v1 Announce Type: new \nAbstract: Blind grasping with a dexterous hand is a crucial manipulation capability. Nevertheless, learning such tactile-only policies for real robots remains challenging due to the tactile sim-to-real gap and the limited expressiveness of sparse tactile signals. To bridge this gap, we propose a framework for tactile-only blind grasping that is deployable on a physical multi-fingered robotic hand. Our approach combines three key components. First, we introduce a Real2Sim tactile calibration pipeline that constructs a contact-calibrated digital-twin simulator capable of reproducing real tactile signals. Second, we improve the expressiveness of sparse tactile observations using a layout-aware tactile encoder, which incorporates sensor-geometry priors through self-supervised pretraining. Third, to improve generalization to unseen objects, we train object-specific reinforcement-learning experts in the calibrated simulator and aggregate their successful grasp trajectories into a tactile-conditioned Diffusion Policy. We evaluate our method on a physical LEAP Hand equipped with distributed tactile sensing across 10 seen and 10 unseen objects. The deployed policy achieves a 27\\% real-world grasp success rate across all 20 objects, without real-world grasping demonstrations or visual input. Simulation ablations show that layout-aware tactile pretraining improves grasping performance, while sensing-level evaluations confirm that Real2Sim calibration increases the consistency of tactile contact events between simulation and hardware. Together, these results suggest that contact-event calibration, geometry-aware tactile representation learning, and diffusion-based policy aggregation provide an effective path toward tactile-only blind grasping on real dexterous robotic hands. Project page:Dex-Blind-Grasp.github.io."
+  },
+  {
+    "title": "Human-Guided Co-Manipulation of Carbon Fiber Plies",
+    "original_title": "Human-Guided Co-Manipulation of Carbon Fiber Plies",
+    "link": "https://arxiv.org/abs/2606.11818",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11818v1 Announce Type: new \nAbstract: The handling of flexible materials is a difficult task to fully automate due to the challenges caused by the deformability of these types of objects. Meanwhile, a fully manual process can be ergonomically challenging, tedious and inefficient. Thus, human-robot collaboration (HRC) and cooperative manipulation (co-manipulation) have received increasing interest in this field as they enable human involvement when needed while also improving productivity. To enable efficient co-manipulation and interaction between the human operator and the robot, different modalities and control methods are required. In this paper, we present and examine different control methods for co-manipulation of carbon fiber plies, evaluating the pros and cons of each method in a controlled setting. We propose that a multimodal combination of speech commands, wrist-tracking through vision, and force with compliant control would provide the best solution for complete and intuitive control of the task."
+  },
+  {
+    "title": "Modular Anthropomorphic Hand Design via Multi-Parameter Finger Benchmarking and Selection",
+    "original_title": "Modular Anthropomorphic Hand Design via Multi-Parameter Finger Benchmarking and Selection",
+    "link": "https://arxiv.org/abs/2606.11826",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11826v1 Announce Type: new \nAbstract: Designing anthropomorphic dexterous robotic hands remains challenging as the design space straddles morphology, actuation, and sensing properties, and performance metrics span both task-dependent and task-agnostic. Existing optimization methods are often unstructured or consider only a single performance metric, limiting systematic comparison and targeted refinement. While the design considerations of the entire hand are significant, the individual finger properties play a key role in dexterity. By developing a robotic hand platform where fingers can be modularly integrated into a full teleoperated hand, we propose that optimizing the fingers can significantly improve overall hand performance. This approach enables rapid screening of different finger-level prototypes through a number of quantitative benchmarks before their integration into the hand for task-level validation. Candidate finger designs (incorporating variations in joint, bone, skin, and sensor placement) are assessed using both mechanism-oriented and task-relevant metrics, which establish a quantitative link between component design and full hand embodiment. The framework is validated through the development of an anthropomorphic robotic hand with optimized fingers, demonstrating how these fingers enable performance improvements across tasks, including multi-object grasping and light bulb screwing."
+  },
+  {
+    "title": "Critic Architecture Matters: Dual vs. Unified Critics for Humanoid Loco-Manipulation",
+    "original_title": "Critic Architecture Matters: Dual vs. Unified Critics for Humanoid Loco-Manipulation",
+    "link": "https://arxiv.org/abs/2606.11891",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11891v1 Announce Type: new \nAbstract: Multi-objective reinforcement learning for humanoid robots must coordinate locomotion and manipulation within a single policy. A natural design choice is whether to use a single (unified) critic that estimates the combined value of all objectives, or separate (dual) critics with disjoint reward signals. We present a controlled comparison on the Unitree G1 humanoid (23 active DoF) in NVIDIA Isaac Lab, training loco-manipulation policies through a sequential curriculum spanning 13 levels from stationary reaching to walking with variable-orientation targets. In standardized evaluation, dual-critic policies reach targets 3.5$\\times$ faster (6.5 vs. 22.6 simulation steps), achieve 2$\\times$ higher throughput (14.3 vs. 7.0 validated reaches per 1,000 steps), and attain higher validated reach rates (65.2% vs. 53.8%) compared to the unified-critic policy. Notably, additional anti-gaming reward mechanisms provide no further improvement beyond the architectural change alone (60.9% vs. 65.2%). These results have direct implications for the emerging paradigm of RL fine-tuning of imitation-learned policies: when refining a pre-trained manipulation policy with RL, a unified critic risks suppressing the learned behavior through competing locomotion gradients. These findings demonstrate that critic architecture is a primary - and often overlooked - design choice in multi-objective humanoid RL, with greater impact than reward engineering on reaching efficiency."
+  },
+  {
+    "title": "DuoBench: A Reproducible Benchmark for Bimanual Manipulation in Simulation and the Real World",
+    "original_title": "DuoBench: A Reproducible Benchmark for Bimanual Manipulation in Simulation and the Real World",
+    "link": "https://arxiv.org/abs/2606.11901",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11901v1 Announce Type: new \nAbstract: Bimanual robot systems substantially expand manipulation capabilities, but coordinating two arms introduces additional control complexity and failure modes that are not well captured by existing benchmarks. We introduce DuoBench, an extensible benchmarking framework for bimanual manipulation policies on the FR3 Duo platform. DuoBench comprises eleven tasks spanning four coordination categories, implemented in simulation and partially reproduced in the real world through reproducible task recipes with 3D-printable assets. In addition, we propose a stage-based evaluation scheme that supports fine-grained semantic failure analysis beyond binary success and provide human-teleoperated datasets for all benchmark tasks. We benchmark several dual-arm imitation-learning and vision-language-action policies in simulation and on real hardware. Our results show that current policies remain challenged by bimanual manipulation, particularly in early interaction stages, parallel arm execution, and transfer between simulation and real-world settings. DuoBench provides a reproducible testbed for diagnosing these failure modes and studying future methods for dual-arm policy learning. Code, datasets, and videos are available at https://duobench.github.io/"
+  },
+  {
+    "title": "Deformable In-Hand Slip-Aware Tactile Sensor with Integrated Velocity, Force/Torque, and Pressure Map Sensing",
+    "original_title": "Deformable In-Hand Slip-Aware Tactile Sensor with Integrated Velocity, Force/Torque, and Pressure Map Sensing",
+    "link": "https://arxiv.org/abs/2606.11952",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.11952v1 Announce Type: new \nAbstract: This paper introduces a novel tactile sensor for in-hand manipulation with slip-aware control that integrates velocity, force/torque, and pressure map sensing into a single device with a deformable contact pad. To the best of our knowledge, this is the first sensor to combine these sensing modalities within a single compliant structure. The sensor features a deformable contact surface and can robustly track both flat and curved surfaces across a wide range of materials. Its performance is evaluated through a comprehensive set of experiments that highlight both its capabilities and limitations. The sensor is designed for rapid and low-cost fabrication using a combination of standard PCB manufacturing and rapid prototyping techniques."
+  },
+  {
+    "title": "Learning Unions of Convex Sets via Invertible Latent Decomposition for Path Planning",
+    "original_title": "Learning Unions of Convex Sets via Invertible Latent Decomposition for Path Planning",
+    "link": "https://arxiv.org/abs/2606.12027",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12027v1 Announce Type: new \nAbstract: Collision-free path planning in cluttered, real-world environments relies on a representation of the collision-free space, and existing representations broadly fall into two\n  categories. Explicit representations, such as unions of convex sets, can be plugged into optimization-based planners as hard collision-free constraints, but their parameters scale\n  poorly with configuration-space dimension. Implicit representations, by contrast, are flexible and scale well to complex geometries, yet typically lack such guarantees. We bridge this\n  gap with ILD (Invertible Latent Decomposition), a framework that jointly learns an invertible mapping and a union of explicit convex polytopes in the resulting latent space. Planning\n  is carried out over these latent convex sets, and the invertible mapping decodes the resulting paths back to the original configuration space while preserving feasibility with\n  respect to the refined explicit safe regions. We further propose Visibility-Guided Sampling (VGS) to keep the convex sets connected for path planning. Across 2D navigation, 6-DoF, and\n  14-DoF manipulation environments, ILD achieves broader coverage, better inter-set connectivity, and higher path-planning success rates than prior baselines, with zero observed false\n  positives after test-time refinement. On a 14-DoF bimanual manipulator, we further demonstrate real-time collision-free planning, with test-time refinement adapting to scene-geometry\n  changes during real-world deployment on a single 6-DoF arm."
+  },
+  {
     "title": "Meet the young founders driving China's AI and robotics boom - VnExpress International",
     "original_title": "Meet the young founders driving China's AI and robotics boom - VnExpress International",
     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQk54U2hpTXdEMGRxc19OWWVNTGlWMEotNmZoVzJLVi1uNjhWN1lHd19KQWpFOFhwb1l3d1VMbkpmNFRoMEVEWlhQdS1DUG44NzhISmNZVTNQczdvVXJLRXc0VGN4REZWRHdMV3ktakF5aHhTNlVyVnNFVl8tVmNGVmc5OHpRVFY4ZHFMMzlYU0tmRHVnU0EzMTlMaEs4WHdlbUxXRjU5QktmZS1CRUo3Qjl3TXp1YlZibW1zWFZB?oc=5",
@@ -79,6 +151,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Meet the young founders driving China's AI and robotics boom  VnExpress International"
+  },
+  {
+    "title": "Breakingviews - Unitree previews China's bleak robot reality - Reuters",
+    "original_title": "Breakingviews - Unitree previews China's bleak robot reality - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRTE1VEVrSVlkN1FrTmNfeHdBcktBZmZFS09WSURRNm5SQzVGZnVTSkxacGpueGJoaFVJX2p3TFAwdzhpWWg1azdINkRzZzlOclFXc1dVRk5RM05IQ0sza21LeHBjOEtKTkhiRmRKUF9ObkR6bkRveG9TdWZBWnZLOTEwcElEdUZyUmRrY2s3RTJpc1d1VkRlbnFIdDh6UmJiWmZOYU41RQ?oc=5",
+    "date": "2026-06-11 02:33",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Breakingviews - Unitree previews China's bleak robot reality  Reuters"
   },
   {
     "title": "China Builds 85% of the World's Humanoid Robots. So Why Is Nobody Buying Them? | FP Explains - Firstpost",
@@ -17917,86 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "한 2차 자동 부품 공급 업체는 고객 감사 중 지난 분기의 40% 매입 거래 승인 기록을 추적할 수 없었다. 주문이 처리되고 부품이 수령되었으며 청구서가 결제되었지만, 승인 내역은 확인되지 않았다."
-  },
-  {
-    "title": "FAULHABER 새 DualGear 시스템 발표",
-    "original_title": "FAULHABER Presents DualGear System",
-    "link": "https://humanoidroboticstechnology.com/industry-news/faulhaber-presents-dualgear-system/",
-    "date": "2026-04-30 08:51",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "FAULHABER는 새로운 DualGear을 통해 BX4와 GPT 기술을 하나의 단위로 결합한 고성능 드라이브 시스템을 선보였다.  DualGear은 현대적 컨베이어 시스템 요구 사항에 맞춰 설계되었으며, 고역학, 내구성 및 정밀도를 소형, 지름 일치 디자인에서 제공한다."
-  },
-  {
-    "title": "일본 항공사, 인력 부족 심화에 한eda 공항 운영을 위한 로봇 시험 시작",
-    "original_title": "Japan trials humanoid robots for airport operations as labor shortages intensify",
-    "link": "https://roboticsandautomationnews.com/2026/04/30/japan-trials-humanoid-robots-for-airport-operations-as-labor-shortages-intensify/101120/",
-    "date": "2026-04-30 08:47",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "일본항공은 GMO Internet Group와의 파트너십으로 한eda 공항에서 5월부터 인간형 로봇을 이용한 기지 관리 시스템을 실제 환경에서 처음으로 적용할 예정이다."
-  },
-  {
-    "title": "중국편지: 인형 로봇, 베이징 반마라톤에서 인간 기록 깨고 자율성 보여줌",
-    "original_title": "Letter from China: Humanoid robots shatter human record, showcase autonomy at Beijing half marathon - the-star.co.ke",
-    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQbFVEZkpsTkZJd3hqRWtQWFNKeU9CNzVEUHhGQ09uVmVjQzE0Rk9iQ0N5Z2xKSXdTU0REQWt5QjBXSmIxc1NwOTVXRHFXQ0tadHJSRUsxSFgwanZlbWlrUHNnY1N0MjAyMHpKWnNDWWd3ZnVTLWZSREFkTGtJTWlTOENWLU1rcktRUHQ3Nkd0dEFibkFVcTluNy1FVWg3NUFHRTBVb1dmay1IdmhCOUNnTUtyRFBTOUJ4TWZzanQtU05paGpfdmF5ZE1UOFRnd3FrdWYwX2hhNXZpb0gzcGlr?oc=5",
-    "date": "2026-04-30 08:44",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 인형 로봇들이 베이징 반 마라톤에서 인간 선수들의 기록을 뛰어넘으며 놀라운 자율성을 보여주었다. 이는 인공지능 기술 발전의 상징이며, 앞으로 로봇들이 사회에 더 큰 영향을 미칠 것이라는 전망을 드러낸다."
-  },
-  {
-    "title": "실체화된 AI: 중국의 로봇 산업 변혁을 위한 야심찬 노력",
-    "original_title": "Embodied AI: China’s ambitious path to transform its robotics industry - Mercator Institute for China Studies (MERICS)",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQV3k0WTE5WXhMYTF4SmVTQV9xbXR4SGo1c0w4WkEyV2FiMDJnQTFpNENGYWtUT0pqV09EYWFVU09fbnQ0S0x6WHlaMWtnSkZFdFpxQ1BzOExCSHp4SUZJOFJDLVNIa1MxRk45d2kzUnEtUVJKUlZ5dW1zbGlDR1pZMjdIVEtGamYxNUNSNUE0REplZGVUelBmUjJ3?oc=5",
-    "date": "2026-04-30 08:18",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "메르카토르 중국 연구소(MERICS)는 중국의 로봇 산업을 혁신하기 위해 실체화된 인공지능 기술에 집중하고 있는 과정을 분석. 이러한 전략은 중국의 산업 경쟁력 강화 및 글로벌 로봇 시장에서의 우위 확보를 목표 삼고 있음."
-  },
-  {
-    "title": "앱트로닉, 리더십 팀 확장",
-    "original_title": "Apptronik Expands Leadership Team with New Executive Hires",
-    "link": "https://humanoidroboticstechnology.com/industry-news/apptronik-expands-leadership-team-with-new-executive-hires/",
-    "date": "2026-04-30 08:06",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "앱트로닉은 다음 단계의 성장과 상업화를 가속화하기 위해 와이모, 보스턴 다이나믹스, 아마존 등 세계 최첨단 기술 기업 출신의 전문가들을 임용했습니다.  이는 9억 3500만 달러의 시리즈 A 자금 조달 이후 이뤄진 확대 행보이며, 회사는 계속해서 빠르게 성장하고 있습니다."
-  },
-  {
-    "title": "에터널.애그, 오mnidirectional 트롤리 출시…\"Robinsonized Greenhouses\"로 이끌며 곧바로 완전자동화 채소원",
-    "original_title": "Eternal.ag launches omni-directional trolley as ‘stepping stone to fully-automated greenhouses’",
-    "link": "https://roboticsandautomationnews.com/2026/04/30/eternal-ag-launches-omni-directional-trolley-as-stepping-stone-to-fully-automated-greenhouses/101115/",
-    "date": "2026-04-30 07:52",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "독일농업기술 스타트업 에터널.애그가 '채소 수확 로봇 도입을 위한 위험 감소 및 가속화된 경로'를 제공하는 오mnidirectional 트롤리를 출시하여, 구조적 노동력 부족 문제에 빠르게 자동화된 채소 재배 시스템으로의 전환이 가능하도록 함."
-  },
-  {
-    "title": "소피아 로봇, 클래식 음악 데뷔",
-    "original_title": "Sophia the robot makes classical music debut - South China Morning Post",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQmVmbFotZkdwVnZnZEhyM0p5Z3BzSDNjZDdRNzFqWWs1Y05zTzY0UmVwa252c2MzUVE3XzlRMUZyNjMwNC1yZVVJZ01GWHBIeElYM3hDNlpjNEl6UlFqaVFYeEF1c0k5SVV3VkFnRzBob2NtZGNhdmpDRW9xNFZYcnNQTFhCXzdpcUV1LWlyODU3T2NmcXNFQ0FDeFlTUjVqTC1rUl84UGJUTW9Vd0d4S3dfQTFaQQ?oc=5",
-    "date": "2026-04-30 07:47",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Hanson Robotics에서 개발한 인공지능 소피아가 클래식 음악 퍼포먼스를 선보여 주목받고 있다.  음악 작곡 및 연주 경험이 있는 사람들에게 배울 수 있는 새로운 방법을 제공할 것을 목표로 한다.  소피아는 이번 데뷔를 통해 인공지능의 예술적 가능성을 보여줄 것으로 기대된다."
-  },
-  {
-    "title": "중국의 인형 로봇 10m/s 달리기 속도 기록",
-    "original_title": "China's humanoid robot hits 10 metres/second sprint, edges toward Usain Bolt's legendary speed - MSN",
-    "link": "https://news.google.com/rss/articles/CBMigANBVV95cUxNNFgwOHZ1bHFSUHZlTkxUNGRhTjhGTVNUczBrN0NEaVBWYW9tNXE4blhrMU1ic1hBd3hKeEJzMVhQSEFub2ZWSS1oakN1OHVyNjlGZFQxMkJqZnpkd2lNbkxEX2diVW1KT0loWWl2anpuZzlzLWc1Zl9UQ2ZVck9iQXdaX05jN1JMdFV2U004UkpWa2xiQXpQZFE5U1M3U0hiSFRuT2otWmlBN2lBeVhhZTFaUEVSZzFPeVBsYVJmVVI4OFFsN1VoSjhuTWJaNlhVeWdFR2hlSFdNZmh6cDdZU3hZUXd5aUMtdmdsMDdVaWhZck5HUUxuZkwtcFJlMXFmSWdXUlhOa0RweTRPNVJMRmh3cU92R0dkUUJHam1OQmcwRU9obDFoWERab2dCVEJ6WUJ5dVhjNkwwZDI3WGN4VWtTTTVCOTBHeXhCUEZjamNnS3dhNFZoR1lNQmUwc1pJTkFPSzc0eUROcUdfZm9PSzJVS05MWndrcG9RSmJGSnI?oc=5",
-    "date": "2026-04-30 07:44",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국에서 개발된 인형 로봇이 10m/s의 속도로 달렸으며, 우세인 볼트의 레전드적인 속도에 가까워졌음."
-  },
-  {
-    "title": "중국의 인형 로봇, 10m/s 달리기 기록 달성, 우세인 볼트의 신화 속도에 접근함",
-    "original_title": "China's humanoid robot hits 10 metres/second sprint, edges toward Usain Bolt's legendary speed - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQZ3JQZWpKb1V1UlBaZlJTR0lja0FNOThQUVFVbXF1YU5jOEg3eDhWenJrZW82Z2Vuc3hmUWdpRHRDQTlvcFNsOE51SUNRaVpYMEFXYVFqSUppYnZ4YUVrWFZQMWhkX25HN0FZajY2cVhOejgwTWd4MF96VmdRZUEwZ0FQcmRNMFY3R0c0QUJ1TUNkbFJMVzY5aUlkamNnd3FUWmdNM0YtaXg1RzFTR3JqdDVROXh5VHQzNWpYRExwbWk4UTJXWXhrSURjTWlQYm5IUk9pSVIzU3pwVlhHdWlYSUVjRkRqeGE3cGc?oc=5",
-    "date": "2026-04-30 07:07",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국에서 개발된 인형 로봇이 초속 10미터를 달리는 데 성공하여 Usain Bolt의 전설적인 속도에 가까워졌습니다. 이는 인공 지능과 로봇 기술 발전을 보여주는 중요한 사건이며, 앞으로 자동화 및 로보틱스 분야에서 새로운 가능성을 제시합니다."
   }
 ]
