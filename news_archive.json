@@ -1,5 +1,14 @@
 [
   {
+    "title": "More than 2,000 students to compete in world’s largest rocket engineering competition",
+    "original_title": "More than 2,000 students to compete in world’s largest rocket engineering competition",
+    "link": "https://roboticsandautomationnews.com/2026/06/11/more-than-2000-students-to-compete-in-worlds-largest-rocket-engineering-competition/102459/",
+    "date": "2026-06-11 06:17",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "ProtoSpace Mfg, a provider of rapid manufacturing for aerospace, defense, engineering, and research organizations, has announced its return as lead sponsor of the International Rocket Engineering Competition (IREC) 2026, taking place June 15-20 at Midland International Air & Space Port in Midland, Texas. Organized by the Experimental Sounding Rocket Association (ESRA), IREC is the world’s […]"
+  },
+  {
     "title": "How Automated Container Gantry Cranes Are Reshaping Port Operations in 2026",
     "original_title": "How Automated Container Gantry Cranes Are Reshaping Port Operations in 2026",
     "link": "https://roboticsandautomationnews.com/2026/06/11/how-automated-container-gantry-cranes-are-reshaping-port-operations-in-2026/102455/",
@@ -223,6 +232,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.12236v1 Announce Type: new \nAbstract: Many autonomous driving systems are increasingly incorporating foundation models to improve generalization and handle long-tail scenarios. However, this trend introduces two key challenges: (i) the manual and labor-intensive process of designing and integrating new models, and (ii) the lack of intelligent, dynamic scheduling mechanisms to meet strict real-time constraints. While Large Language Model (LLM)-based agents offer a promising avenue for automation, existing frameworks are ill-suited for autonomous driving. Specifically, they fail to distinguish between the fundamentally different requirements of system design and real-time scheduling, treat modules as opaque black boxes, and are not designed for continuous operation. To address these limitations, we propose DrivingAgent, a novel agent framework tailored to the dual challenges of autonomous driving system design and scheduling. In the design phase, DrivingAgent automates module development by interpreting system architecture, generating code, and validating modules via super-network training. In the scheduling phase, it employs a lightweight LLM trained with reinforcement learning to dynamically orchestrate system modules in real time, supported by a structured memory that integrates long-term storage with timestamped short-term context. Experimental results demonstrate that DrivingAgent achieves a superior speed--accuracy trade-off on both the nuScenes and Bench2Drive benchmarks."
+  },
+  {
+    "title": "CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy",
+    "original_title": "CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy",
+    "link": "https://arxiv.org/abs/2606.12352",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12352v1 Announce Type: new \nAbstract: Multi-robot collaboration allows robots to efficiently take on a wide range of tasks, from moving a couch through a doorway to assembling structures on a construction site. However, achieving such coordination in mobile multi-robot settings remains challenging: centralized methods conditioned on the combined observations of a team scale poorly with team size, and decentralized methods that train one policy per robot often require explicit alignment procedures or information sharing at inference time to overcome partial observability. Our key insight is that the visuomotor priors of pretrained vision-language-action (VLA) models should enable reactive, decentralized collaboration from each robot's local observations alone, without these inference-time assumptions. We propose CHORUS, a framework that adapts a single VLA backbone to control diverse, multi-robot teams. At inference time, each robot runs an independent copy of CHORUS, conditioned only on its own observations and a robot-identifying prompt. In real-world experiments including mobile tape measurement, library book handovers, and laundry basket lifting, CHORUS achieves a 64% point improvement over decentralized, from-scratch models, improves reactivity to teammate behavior by 40% points, and outperforms centralized baselines. Together, these results show that a shared VLA backbone is capable of achieving decentralized multi-robot collaboration, without per-robot policies or inter-robot communication at inference."
+  },
+  {
+    "title": "APT: Action Expert Pretraining Improves Instruction Generalization of Vision-Language-Action Policies",
+    "original_title": "APT: Action Expert Pretraining Improves Instruction Generalization of Vision-Language-Action Policies",
+    "link": "https://arxiv.org/abs/2606.12366",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12366v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models that couple pretrained Vision-Language Models (VLMs) with continuous action experts have achieved strong manipulation performance, yet generalization to out-of-distribution (OOD) language instructions remains poor. A known challenge is the structural imbalance in VLA data, where language is far less diverse than visual and action content, making policies prone to visual shortcuts. While discrete-action methods mitigate this through vision-language co-training, continuous action experts lack such protection: they start from random initialization and learn entirely from imbalanced data, producing noisy gradients that corrupt the VLM and fail to exploit its language capability. We address this from a Bayesian perspective, factorizing the policy into a language-agnostic Vision-Action (VA) prior and a language-conditioned VLA likelihood, and propose APT, a two-stage training method emphasizing Action expert PreTraining. In Stage 1, the action expert is pretrained as a VA prior on vision-action pairs from a frozen VLM, bypassing the language imbalance. In Stage 2, language tokens are injected through a gated fusion mechanism that integrates VLM features while preserving the learned visuomotor prior. APT applies to mainstream VLA architectures, including the $\\pi$ and GR00T-style architectures. Comprehensive experiments validate that APT achieves consistent gains on unseen instructions and compositional tasks. Project Page: https://xukechun.github.io/papers/APT/"
+  },
+  {
+    "title": "UniIntervene: Agentic Intervention for Efficient Real-World Reinforcement Learning",
+    "original_title": "UniIntervene: Agentic Intervention for Efficient Real-World Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2606.12372",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12372v1 Announce Type: new \nAbstract: Human-in-the-loop reinforcement learning (HiL-RL) has emerged as an effective paradigm for real-world robotic manipulation, enabling online policy improvement with human guidance. However, current HiL-RL frameworks remain intervention-intensive, relying on frequent human corrections to redirect the policy out of unproductive exploration, which incurs high labor cost and limits real-world scalability. To address this, we propose UniIntervene, an agentic intervention model that detects unproductive exploration and autonomously recovers the policy toward high-value states, taking over the bulk of interventions from human operators. Specifically, UniIntervene first performs future-conditioned action-value estimation, predicting the latent consequence of the current action and evaluating its induced value, which provides a more stable progress signal. Building on this, a temporal value-risk critic aggregates recent value dynamics and triggers intervention when the estimated value exhibits sustained stagnation or degradation. When intervention is required, UniIntervene retrieves a high-value recovery target from a memory of past intervention episodes and produces executable corrective actions through a goal-conditioned recovery policy. In this way, UniIntervene turns intervention from passive human correction into a value-aware recovery process for efficient real-world RL. Extensive experiments on diverse real-world manipulation tasks demonstrate that UniIntervene improves the average success rate by 8.6% while reducing human interventions by 57% relative to state-of-the-art HiL-RL baselines."
+  },
+  {
+    "title": "DIRECT: When and Where Should You Allocate Test-Time Compute in Embodied Planners?",
+    "original_title": "DIRECT: When and Where Should You Allocate Test-Time Compute in Embodied Planners?",
+    "link": "https://arxiv.org/abs/2606.12402",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12402v1 Announce Type: new \nAbstract: Vision-Language Models (VLMs) are increasingly deployed as high-level planners for embodied agents, with an emerging strategy of scaling test-time compute to improve capability. However, we observe that doing so increases latency, token usage, and FLOPs while yielding uneven, often diminishing gains in downstream success, limiting where embodied agents can be deployed. We argue that choosing when and where to spend test-time compute is central to bringing frontier performance to the real world. We introduce DIRECT, a routing framework that uses multimodal scene context to allocate compute per prompt, improving the success--cost Pareto frontier over fixed model selection. Across three dominant scaling axes, namely chain-of-thought depth, model size, and memory history, our experiments on VLABench and RoboMME show that test-time compute is not a uniform lever: different axes yield qualitatively distinct capability gains. We validate these insights on a physical Franka arm in a DROID setup spanning zero-shot manipulation and long-horizon chaining, where our router matches or exceeds a stronger model's success rate at up to 65% lower average latency. Ultimately, our results show that naively scaling test-time compute is wasteful, and that DIRECT can provide frontier-level embodied planning in robotic systems at a fraction of the cost. Project page can be found at jadee-dao.github.io/direct/."
+  },
+  {
+    "title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors",
+    "original_title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors",
+    "link": "https://arxiv.org/abs/2606.12403",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12403v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models inherit semantic grounding from large-scale pretraining and perform competently across in-distribution manipulation tasks. This grounding, however, is built on static image-text pairs, whereas manipulation is a continuous, contact-rich process whose dynamics this pretraining cannot capture. We present World Pilot, a VLA framework that augments the policy with priors from a World-Action Model (WAM), routed into the decision chain through two complementary pathways. Latent Steering conditions the perception layer on a scene-evolution latent, and Action Steering supplies an anticipated trajectory as a motion prior to the action generator. Together the two priors equip the VLA with an anticipated view of the scene and a trajectory-level motion hint alongside its semantic conditioning, and the scene-evolution prior remains effective even when supplied by a video-pretrained world model that has not been action-post-trained. World Pilot attains a state-of-the-art Total success rate of 84.7% on the LIBERO-Plus zero-shot OOD benchmark and the highest success rate on every real-robot setting across four manipulation tasks, with the largest margins under shifts in viewpoint, geometry, deformable state, and pose. Project Website: https://world-pilot.github.io/"
+  },
+  {
+    "title": "FACTR 2: Learning External Force Sensing for Commodity Robot Arms Improves Policy Learning",
+    "original_title": "FACTR 2: Learning External Force Sensing for Commodity Robot Arms Improves Policy Learning",
+    "link": "https://arxiv.org/abs/2606.12406",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12406v1 Announce Type: new \nAbstract: Contact-rich manipulation requires force sensitivity, but many robot arms lack dedicated force sensors due to their high cost. We present Neural External Torque Estimation (NEXT), a data-driven method that estimates external joint torques without needing any dedicated force sensors. NEXT trains in 1 minute from only 10 minutes of free-motion data, yet achieves estimates comparable to dedicated joint-torque sensors. NEXT enables force-feedback teleoperation on low-cost arms and improves policy learning through Force-Informed Re-Sampling Training (FIRST), which up-samples pre-contact and contact segments during behavior cloning. Across five long-horizon tasks, FIRST outperforms prior force-aware policies by over 17% in task progress. Together, NEXT and FIRST bring force-aware teleoperation and policy learning to off-the-shelf robots without additional sensing hardware. Video results and code are available at https://jasonjzliu.com/factr2"
+  },
+  {
+    "title": "Making Foresight Actionable: Repurposing Representation Alignment in World Action Models",
+    "original_title": "Making Foresight Actionable: Repurposing Representation Alignment in World Action Models",
+    "link": "https://arxiv.org/abs/2606.12217",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12217v1 Announce Type: cross \nAbstract: World Action Models (WAMs) offer a promising route for robot manipulation by using video generation models to model future scene evolution before producing control actions. However, our empirical observations reveal a phenomenon: generating plausible visual futures does not always guarantee the extraction of accurate actions. To diagnose this failure, we conduct action-head attention analysis and causal interventions. We find that the action decoder fails to focus on task-relevant interaction regions and remains sensitive to perturbations in task-irrelevant areas. This reveals a representation mismatch: hidden states optimized for visual reconstruction are not inherently organized in a form useful for low-level action control. In this paper, we propose AGRA, an Action-Grounded Representation Alignment objective that regularizes the world-action interface by aligning intermediate video diffusion features with spatially coherent semantic representations from a foundation visual encoder. We evaluate AGRA on real-world manipulation tasks. Experiments show that AGRA makes world model representations more action-grounded: by focusing the action decoder on the correct interaction regions, it improves object localization accuracy and affordance understanding, and makes the policy more robust to perturbations in task-irrelevant regions. As a result, AGRA consistently improves both in-distribution performance and out-of-distribution generalization over the baseline world action model."
+  },
+  {
+    "title": "Fourier Features Let Agents Learn High Precision Policies with Imitation Learning",
+    "original_title": "Fourier Features Let Agents Learn High Precision Policies with Imitation Learning",
+    "link": "https://arxiv.org/abs/2606.12334",
+    "date": "2026-06-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12334v1 Announce Type: cross \nAbstract: High-precision robotic manipulation requires fine-grained spatial reasoning that is often difficult to achieve with RGB-only policies due to depth ambiguity and perspective scale issues. Policies that leverage 3D information directly, such as those based on point clouds, offer a stronger geometric prior over purely image-based ones, yet their performance remains highly task-dependent. We hypothesize that this discrepancy may be due to the spectral bias of neural networks towards learning low frequency functions, which especially affects architectures conditioned on slow-moving Cartesian features. We thus propose to map point clouds from Cartesian space into high-dimensional Fourier space, effectively equipping the point cloud encoder with direct access to high-frequency features. We experimentally validate the use of Fourier features on challenging manipulation tasks from the RoboCasa and ManiSkill3 benchmarks and on a real robot setup. Despite their simplicity, we find that Fourier features provide significant benefits across diverse encoder architectures and benchmarks and are robust across hyperparameters. Our results indicate that Fourier features let policies leverage geometric details more effectively than Cartesian features, showing their potential as a general-purpose tool for point cloud-based imitation learning. We provide source code and videos on our project page: https://fourier-il.github.io/fourier-il"
   },
   {
     "title": "Meet the young founders driving China's AI and robotics boom - VnExpress International",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "최근 상용 시스템은 높은 비용으로 인해 접근성이 제한적인 반면, 이 연구에서는 가격이 저렴하고 사용하기 쉬운 로봇 복강수술 도구를 개발하여 감각 피드백을 제공.  개발된 장비는 손목에 부착된 힘/토크(F/T) 센서를 통해 수술 도구와 조직의 상호 작용 힘을 추정하고, 이를 하ptic 장치에 전달하여 사용자에게 감각적 피드백을 제공.  이러한 감각 피드백은 수술 교육 시험에서 시각만으로 작업하는 것보다 작업 성공률, 힘 조절 정확도, 작업 효율성을 향상시킴을 보여줌."
-  },
-  {
-    "title": "영아의 첫 인간 감각 운동 경험 모방, 동작 재대입을 통한 인형로봇에 적용",
-    "original_title": "Simulating Infant First-Person Sensorimotor Experience via Motion Retargeting from Babies to Humanoids",
-    "link": "https://arxiv.org/abs/2604.27583",
-    "date": "2026-05-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "이 연구는 영아의 동작을 분석하여 iCub 로봇과 가상 시뮬레이션 환경으로 재현하는 프레임워크를 제시하며, 이를 통해 영아의 다중 감각적 경험 (프리오셉션, 촉각, 시각 등)을 모방하고 발달 과정 분석 및 신경발달 질환 조기 진단에 활용 가능성을 보여준다."
-  },
-  {
-    "title": "K2MUSE: 인간 하체 다중 모드 보행 데이터셋 공개",
-    "original_title": "K2MUSE: A human lower-limb multimodal walking dataset spanning task and acquisition variability for rehabilitation robotics",
-    "link": "https://arxiv.org/abs/2504.14602",
-    "date": "2026-05-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "K2MUSE는 재활 로봇 개발에 필요한 다양한 측정치(동작, 운동량, 초음파 영상, 근전도)를 포함하는 하체 다중 모드 보행 데이터셋으로, 건강한 성인과 노인의 다양한 경사와 속도에서 수집되었으며 실제 환경에서 발생할 수 있는 측정 오차까지 고려하여 공개됨."
-  },
-  {
-    "title": "병렬 매니퓰레이터의 작동 여유가 있는 경우 상호작용 힘과 내부 부하",
-    "original_title": "Interaction Forces and Internal Loads in Parallel Manipulators with Actuation Redundancy",
-    "link": "https://arxiv.org/abs/2604.27095",
-    "date": "2026-05-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 논문은 병렬 매니퓰레이터에서 영공 변위 성분을 다룹니다. 접지 시스템에서 일반적으로 사용되는 이러한 구성 요소의 두 가지 가장 일반적인 특징화 기법, 즉 상호 작용력과 내부 하중을, 작동 여유가 있는 병렬 매니퓰레이터에 적용하는 것을 살펴봅니다. 기존 문헌의 중요한 과정을 파악하고 상호 작용력 및 내부 부하의 정의와 관련된 모호성을 해결하고, 균형을 유지하는 것과 관절 토크 벡터를 조작하는 명시적인 방법을 제공합니다. 또한 새로운 방법의 타당성을 검증하고 문헌에서 보고된 오류 있는 결과를 수정하기 위한 사례 연구도 제시됩니다."
-  },
-  {
-    "title": "액션 라벨에서 세트로: 보정 피드백으로부터 학습하는 행동 감독 재정의",
-    "original_title": "From Action Labels to Sets: Rethinking Action Supervision for Imitation Learning from Corrective Feedback",
-    "link": "https://arxiv.org/abs/2502.07645",
-    "date": "2026-05-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "이 논문에서는 보행 암기 학습에 있어서 인간 보상이 단순한 액션 라벨로 처리되는 문제점을 해결하기 위해, CLIC(Contrastive policy Learning from Interactive Corrections)라는 새로운 방법을 제시했다. CLIC는 인간의 보정을 통해 원하는 행동 세트를 구축하고 정교하게 하고, 이러한 세트 위에 확률 질량을 두어 정책을 최적화한다. 실험 결과, CLIC는 정확한 데이터에서 기존 방법과 경쟁력을 보이며, 노이즈가 많은, 상대적인, 부분 피드백의 경우 훨씬 더 강인함을 보였다."
-  },
-  {
-    "title": "일본 항공, 인력 부족 속 한eda 공항에서 인형 로봇 시험 시작",
-    "original_title": "Japan Airlines begins humanoid robot trials at Tokyo's Haneda airport as labor shortages bite - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdVFsY2ZVNkJoelE1VHVNbWVoMGpLWGdxdXlRVDdwSUJGUXhtX3paYndCZGh6Y3NlRkdIM2Y2YlpJZUdvZkpuV3BJSFVhbG02ek5TR2xwSTRrWlhFalZLd2RVTUZCaURQRmZfUjI3UnRXdjFtaHJTU1JWUXFKSzBnVUZYRjQ2XzAxY1B6WDgtQ0JpVHfSAZgBQVVfeXFMTkRhRHcyTm1LU2JoOFJUNmp1S3pXWGU4NzdOTjdHd01UWTVDcUpZMWtvNTNYTlZwUFVqUWlxTkM0WjlYZjRyMHlNWTJMcDA5OXpsd25Jd2RLVjAyaXZJTTdNRHNIYldSOVJwY1QwSl9JVkxEMFhXMXRhSnJqWUpGVVlpMklIaE1ZLXdldWxfV0s1ZDJ1cnpoMUI?oc=5",
-    "date": "2026-05-01 00:44",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "일본 항공이 인력 부족 문제에 대응하기 위해 도쿄 한에다 국제공항에서 인형 로봇 시험을 시작했다.  시험에는 업무 지원을 위한 humanoid robot이 사용되며, 결과가 긍정적인 경우 공항 내 여러 분야에서 활용될 예정이다."
-  },
-  {
-    "title": "인형 로봇 제조업체 엔진AI, 필리핀 시장 공략",
-    "original_title": "Humanoid robot maker EngineAI eyes Philippine market - Manila Bulletin",
-    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ250RDRUSEdUZ1Fmbm16eVo1MTJqRFdEMnc5RXZ1Mzc3MEc1UzBKTnNadzdCUVAybUE0WC1zOWZFQ3FzTll2VzIyTnlWdlZiM1NXQ01SZzdpd18wcjRfVmVFTDY3eG54cmxEckd1RFZyMHU0NzIza2NsdllxZ3BjdS1QNWcxUXczdFpjR2o4NnZYTjAxNzZYc1hMSVFqV2Z2SVNtU0VYMGNBUnNTZUZIZw?oc=5",
-    "date": "2026-04-30 21:26",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "인형 로봇을 생산하는 기업인 엔진AI가 필리핀 시장 진출을 목표로 하고 있다."
-  },
-  {
-    "title": "캘리포니아 lawmakers, 자율주행 트럭 도입 위한 길 열림",
-    "original_title": "California lawmakers open the gate for autonomous trucks in the state",
-    "link": "https://www.therobotreport.com/california-lawmakers-open-gate-autonomous-trucks-state/",
-    "date": "2026-04-30 20:05",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "캘리포니아 DMV는 모든 자율 주행 차량에 대한 안전 및 감독 요구 사항을 확대하여 주 내 자율 주행 트럭의 도입을 허용했습니다."
-  },
-  {
-    "title": "테라다인 로봇스, 2026년 첫째 분기에 매출 증가",
-    "original_title": "Teradyne Robotics revenue rises at the start of 2026",
-    "link": "https://www.therobotreport.com/teradyne-robotics-revenue-rises-start-2026/",
-    "date": "2026-04-30 18:24",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "테라다인 로봇스는 2026년 1분기 기준 9,100만 달러의 매출을 올렸으며 AI 제품이 로봇 판매를 늘리는 데 기여했다."
-  },
-  {
-    "title": "과잉 수량 로봇, 로봇 용접기, 지원 장비 BTM 산업에서 경매 예정",
-    "original_title": "Surplus robots, robot welders, and support equipment to be auctioned by BTM Industrial",
-    "link": "https://roboticsandautomationnews.com/2026/04/30/surplus-robots-robot-welders-and-support-equipment-to-be-auctioned-by-btm-industrial/101124/",
-    "date": "2026-04-30 18:21",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "BTM 산업이 팬우, ABB, 쿠카, 야스카와 등 주요 로보틱스 공급업체의 과잉 재고를 해소하기 위해 150개 이상의 로봇, 제어기, 용접 장비 등을 포함한 경매를 개최함."
   }
 ]
