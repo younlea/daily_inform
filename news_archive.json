@@ -234,6 +234,78 @@
     "summary": "arXiv:2606.13497v1 Announce Type: new \nAbstract: This work introduces Spatial Annotations from Robot Demonstrations with Reliability Calibration (SPARC), a risk-aware framework that automatically labels robot demonstrations with structured spatial annotations and assigns each annotation a reliability score. Structured spatial annotations, such as bounding boxes, object trajectories, and manipulation phase labels, benefit a broad range of robotics applications from training grounded robot policies and embodied foundation models to motion planning and hierarchical task composition. Existing automated pipelines generate such annotations at scale but provide no reliable quality signal: detector confidence is poorly calibrated for annotation correctness, forcing a choice between accepting noisy labels or discarding useful samples. In contrast to existing automated pipelines, SPARC leverages the spatio-temporal structure inherent to robot tasks to generate a reliability signal, reducing noisy labels and retaining more useful samples. We further introduce Interaction-Aware Bench (IA-Bench), a benchmark that measures model accuracy in grounding the locations of interacted objects in robot demonstrations. On 1.7k human-annotated demonstrations spanning diverse embodiments and scenarios, SPARC significantly outperforms detection-only baselines in localization accuracy while retaining three times more samples at high-precision operating points. Our experiments demonstrate that models finetuned on our annotations achieve state-of-the-art results on object-grounding and pointing benchmarks among similarly sized models, while remaining competitive on broader spatial-reasoning suites without manually verified or annotated training data. Furthermore, policies trained on SPARC-generated annotations outperform baselines in cluttered, visually ambiguous real-world scenes. Code, data, and models are available at intuitive-robots.github.io/sparc-labeling."
   },
   {
+    "title": "MCR-Bionic Hand: Anatomical Structural Priors for Dexterous Manipulation",
+    "original_title": "MCR-Bionic Hand: Anatomical Structural Priors for Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2606.13601",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.13601v1 Announce Type: new \nAbstract: Dexterous robotic hands are usually formulated as high dimensional active control systems governed by degrees of freedom, actuation, and algorithms. Human hand dexterity, however, is partly encoded in the physical architecture of bones, ligaments, tendons, aponeuroses, and intrinsic muscles. This work describes that contribution as two linked forms of structural intelligence: structural prior generation, in which wrist to finger tenodesis, FDS/FDP routing, and the dorsal extensor hood transform low dimensional posture inputs into default grasp configurations and PIP to DIP coordination; and muscle mediated modulation, in which extrinsic muscles, lumbricals, and interossei regulate MCP posture, distal stability, fingertip force paths, and contact states around that default state.\n  Based on this framework, MCR-Bionic Hand is developed as a 1:1 musculoskeletal biomimetic hand integrating a two row eight bone wrist, cross wrist tendons, anatomical flexor routing, volar plate and collateral ligament constraints, the dorsal extensor hood, and intrinsic muscle pathways within one body. Functional demonstrations and geometric mechanical models show that wrist posture induces multi joint pre shaping, the extensor hood maps PIP posture to a coupled DIP response, and intrinsic plus pathways modulate distal stability and fingertip action direction after grasp formation. Contact rich tasks, including coin rotation, pen transfer, dorsal coin flipping, and cube manipulation, show that MCR-Bionic links low dimensional state generation with fine post contact modulation. These results suggest that anatomical biomimetics is valuable not for visual similarity, but for identifying human hand structures that perform part of control."
+  },
+  {
+    "title": "$\\texttt{WEAVER}$, Better, Faster, Longer: An Effective World Model for Robotic Manipulation",
+    "original_title": "$\\texttt{WEAVER}$, Better, Faster, Longer: An Effective World Model for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.13672",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.13672v1 Announce Type: new \nAbstract: The potential impacts of world models (WMs, i.e., learned simulators) on robotics are far-reaching -- policy evaluation, policy improvement, and test-time planning -- all with limited real-world interaction. To unlock these downstream capabilities, a WM needs to jointly satisfy three desiderata: $\\textit{(i)}$ fidelity (i.e., producing simulated trajectories that correlate with reality), $\\textit{(ii)}$ consistency (i.e., producing simulated trajectories that are coherent over long horizons), and $\\textit{(iii)}$ efficiency (i.e., producing simulated trajectories quickly). We propose $\\texttt{WEAVER}$ (World Estimation Across Views for Embodied Reasoning): a WM architecture that simultaneously achieves all three desiderata, providing state-of-the-art results on robotic manipulation tasks. $\\texttt{WEAVER}$ is a multi-view WM trained to predict future latents and reward values via a flow-matching loss. We distill the key design decisions across model architecture, memory, and prediction objectives required to unlock the kinds of long-horizon dynamic manipulation tasks that have confounded prior world modeling approaches. We apply $\\texttt{WEAVER}$ in robotic hardware, demonstrating its effectiveness at policy evaluation ($\\rho$=0.870 correlation with real-world success rate), policy improvement (real-world success rate improvement of $38\\%$ on top of the $\\pi_{0.5}$ robot foundation model), and test-time planning (real-world success rate improvement of $14\\%$ with a $5-10\\times$ speedup over prior WMs). $\\texttt{WEAVER}$ also demonstrates better performance than prior WMs when evaluated on out-of-distribution scenarios. Code, models, and videos at: https://arnavkj1995.github.io/WEAVER/ ."
+  },
+  {
+    "title": "Improving Robotic Generalist Policies via Flow Reversal Steering",
+    "original_title": "Improving Robotic Generalist Policies via Flow Reversal Steering",
+    "link": "https://arxiv.org/abs/2606.13675",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.13675v1 Announce Type: new \nAbstract: Generalist policies can learn a wide range of skills from diverse robot datasets. In order to solve or improve on challenging news tasks, we need a way to infer and invoke the appropriate actions from the policy's rich behavioral prior, especially when directly commanding the policy fails. We focus on flow matching generalists and propose Flow Reversal Steering (FRS): a method that takes suboptimal but ``reasonable'' actions, finds their latent noises by passing them through the flow policy in reverse, and maps them to nearby generalist action modes. We evaluate FRS across many simulated and real-world manipulation settings. First, FRS can turn coarse semantic guidance from humans or vision-language models (VLMs) into corresponding good robot actions, improving zero-shot control. These gains can be distilled with behavioral cloning by training an auxiliary policy to output noises that the generalist maps to good actions -- showing up to 95% absolute task success rate boosts in under a minute of training. Finally, FRS enables policy improvement by bootstrapping reinforcement learning with semantic knowledge, improving on several tasks that standard RL fails to improve on."
+  },
+  {
+    "title": "Mana: Dexterous Manipulation of Articulated Tools",
+    "original_title": "Mana: Dexterous Manipulation of Articulated Tools",
+    "link": "https://arxiv.org/abs/2606.13677",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.13677v1 Announce Type: new \nAbstract: Articulated tool manipulation remains a major challenge in dexterous robotics due to the need to coordinate internal degrees of freedom and contact-rich interactions. While prior work has largely focused on rigid objects, articulated tool use remains underexplored because of its physical complexity and the difficulty of learning functional grasping and manipulation policies. We present Mana (Manipulation Animator), a general sim-to-real framework that reinterprets dexterous manipulation as an animation problem. Inspired by computer animation, Mana employs a coarse-to-fine pipeline that transforms procedurally-generated grasp keyframes into manipulation trajectories through motion planning and reinforcement learning. The data generation process is largely automatic, requiring only a few mouse clicks to specify functional affordances (<1 minute per tool). Across four articulated tools spanning different scales and joint types, Mana achieves zero-shot sim-to-real transfer for both grasping and in-hand manipulation, demonstrating a scalable approach to dexterous articulated tool use."
+  },
+  {
+    "title": "$\\mu$VLA: On Recurrent Memory for Partially Observable Manipulation in VLA Models",
+    "original_title": "$\\mu$VLA: On Recurrent Memory for Partially Observable Manipulation in VLA Models",
+    "link": "https://arxiv.org/abs/2606.12497",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12497v1 Announce Type: cross \nAbstract: Vision-language-action (VLA) models predict chunks of future actions from the current observation, an assumption that fails under partial observability, where decisions depend on information no longer visible. Existing memory-augmented VLAs simultaneously introduce recurrence, retrieval, compression modules, auxiliary objectives, hierarchical memory, or task-specific architectural changes, so the contribution of recurrence itself remains entangled with surrounding machinery. We present a controlled isolation study of recurrence in a strong pretrained VLA backbone. Our formulation augments the transformer with a small set of learnable memory tokens carried across timesteps and updated through self-attention, trained end to end with truncated backpropagation through time, with no auxiliary losses and no architectural changes. We instantiate this as $\\mu$VLA, a family of OpenVLA-OFT variants parameterized by memory width m, TBPTT length K, and the memory update rule (cross-step gradients or a detached EMA), so that recurrence is the only varying factor. On MIKASA-Robo, $\\mu$VLA improves average success rate on five training tasks from 0.42 to 0.84 at the strongest setting and reaches 0.23 on held-out tasks with the same memory structure versus 0.07 for the memoryless baseline. On tasks requiring different memory structure, performance remains near baseline. On LIBERO, the strongest recurrent variant achieves 96.2% average success, indicating no regression under full observability. We interpret these results as a calibration of the capability envelope of minimal in-backbone recurrence, identifying the regime in which it is sufficient and the regime where additional memory structure is required. Demos and videos can be found in https://avanturist322.github.io/mu-vla/."
+  },
+  {
+    "title": "ReactEMG Stroke: Healthy-to-Stroke Few-shot Adaptation for sEMG-Based Intent Detection",
+    "original_title": "ReactEMG Stroke: Healthy-to-Stroke Few-shot Adaptation for sEMG-Based Intent Detection",
+    "link": "https://arxiv.org/abs/2601.22090",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2601.22090v2 Announce Type: replace \nAbstract: Surface electromyography (sEMG) is a promising control signal for assist-as-needed hand rehabilitation after stroke, but detecting intent from paretic muscles often requires lengthy, subject-specific calibration and remains brittle to variability. We propose a healthy-to-stroke adaptation pipeline that initializes an intent detector from a model pretrained on large-scale able-bodied sEMG, then fine-tunes it for each stroke participant using only a small amount of subject-specific data. Using a newly collected dataset from three individuals with chronic stroke, we compare adaptation strategies (head-only tuning, parameter-efficient LoRA adapters, and full end-to-end fine-tuning) and evaluate on held-out test sets that include realistic distribution shifts such as within-session drift, posture changes, and armband repositioning. Across conditions, healthy-pretrained adaptation consistently improves stroke intent detection relative to both zero-shot transfer and stroke-only training under the same data budget; the best adaptation methods improve average transition accuracy from 0.42 to 0.61 and raw accuracy from 0.69 to 0.78. These results suggest that transferring a reusable healthy-domain EMG representation can reduce calibration burden while improving robustness for real-time post-stroke intent detection. Our project website, video, code, and dataset are available at: https://roamlab.github.io/reactemg-stroke/."
+  },
+  {
+    "title": "Extending the Law of Intersegmental Coordination: Implications for Powered Prosthetic Controls",
+    "original_title": "Extending the Law of Intersegmental Coordination: Implications for Powered Prosthetic Controls",
+    "link": "https://arxiv.org/abs/2602.02181",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2602.02181v2 Announce Type: replace \nAbstract: Powered prostheses are capable of providing net positive work to amputees and have advanced in the past two decades. However, reducing amputee metabolic cost of walking remains an open problem. The Law of Intersegmental Coordination (ISC) has been observed across gaits and previously implicated in energy expenditure of walking, yet it has rarely been analyzed or applied within the context of lower-limb amputee gait. This law states that the elevation angles of the thigh, shank and foot over the gait cycle covary. In this work, we developed a method to analyze intersegmental coordination for lower-limb 3D kinematic data, to simplify ISC analysis. Moreover, inspired by motor control, biomechanics and robotics literature, we used our method to extend ISC to a new law of coordination of moments. We find these Elevation Space Moments (ESM), and present results showing a moment-based coordination for able bodied gait. We also analyzed ISC for amputee gait with powered and passive prostheses, and found that while elevation angles remained planar, the ESM lacked planar coordination. We present an ISC-driven powered prosthetic control framework, using healthy coordination as a constraint to predict the shank angles/moments to compensate for alterations due to a passive foot. We developed the ISC3d toolbox that is freely available online, which may be used to compute kinematic and kinetic ISC in 3D. This provides a means to further study the role of coordination in gait and may help address fundamental questions of the neural control of human movement."
+  },
+  {
+    "title": "Adaptive-Horizon Conflict-Based Search for Closed-Loop Multi-Agent Path Finding",
+    "original_title": "Adaptive-Horizon Conflict-Based Search for Closed-Loop Multi-Agent Path Finding",
+    "link": "https://arxiv.org/abs/2602.12024",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.12024v2 Announce Type: replace \nAbstract: MAPF is a core coordination problem for large robot fleets in automated warehouses and logistics. Existing approaches are typically either open-loop planners, which generate fixed trajectories and struggle to handle disturbances, or closed-loop heuristics without reliable performance guarantees, limiting their use in safety-critical deployments. This paper presents ACCBS, a closed-loop algorithm built on a finite-horizon variant of CBS with a horizon-changing mechanism inspired by iterative deepening in MPC. ACCBS dynamically adjusts the planning horizon based on the available computational budget, and reuses a single constraint tree to enable seamless transitions between horizons. As a result, it produces high-quality feasible solutions quickly while being asymptotically optimal as the budget increases, exhibiting anytime behavior. Extensive case studies demonstrate that ACCBS combines flexibility to disturbances with strong performance guarantees, effectively bridging the gap between theoretical optimality and practical robustness for large-scale robot deployment."
+  },
+  {
     "title": "Humanoid Robot Manufacturer EngineAI Is Said to File for Hong Kong IPO - Bloomberg.com",
     "original_title": "Humanoid Robot Manufacturer EngineAI Is Said to File for Hong Kong IPO - Bloomberg.com",
     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbmlhTTMxdENTaEJKcmhNSXpaT25rcDdrOGNsT1VESkJyYkoyQTFXZnV5N0NFNmZXVkJYLXNSd1BrMDU1Q0RRT3p6SWJ2dVUxNjhjUHpIU2hSYTlkNVVWY0ZUVW9rTmxJZUp5MHlyUzJWbEJxMFM4Ylc0bV9GeXVsd1Q1QjdYN21CRGo3RF9vZTE0dmtFZG9WTWhWV2o0a3VsbkIxMmd2UjU2MjZKaXlFdnFwbVBCMUNEZ3dmOE9n?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "부드러운 로봇 그리퍼의 힘 감지를 위해 접촉 정위치를 파악하고 미지 물체까지 일반화하는 모델 기반 시각 방법을 제시했습니다. 이 시스템은 RGB-D 카메라 이미지에서 구조적 키 포인트를 추출하여 유한 요소 분석 시뮬레이션의 매개변수를 정의하며, 이는 3차원 재구성과 자세 추정 파이프라인을 사용하여 접촉 위치를 동적으로 업데이트하고 시각 차단 및 미지 물체에 강인합니다."
-  },
-  {
-    "title": "MSACT: 다단계 공간 정렬을 통한 안정적 저지연 미세 조작",
-    "original_title": "MSACT: Multistage Spatial Alignment for Stable Low-Latency Fine Manipulation",
-    "link": "https://arxiv.org/abs/2605.00475",
-    "date": "2026-05-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "MSACT는 시공간적으로 일관성 있는 주의점 추출과 미래 주의 순서 예측을 통해 실시간 bimanual manipulation에 필요한 안정적인 화상 위치 지정 및 저지연 제어를 가능하게 한다."
-  },
-  {
-    "title": "스타리: 로봇 제어를 위한 공간-시간 기반 행동 중심 세계 모델링",
-    "original_title": "STARRY: Spatial-Temporal Action-Centric World Modeling for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2604.26848",
-    "date": "2026-05-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "스타리는 2D 시각 토큰과 3D 지오메트리 제어 간의 연결을 위해 '지오메트리 인식 선택적 주의 조절(GASAM)'을 사용하여 로봇 제어를 위한 공간-시간 기반 행동 중심 세계 모델링을 제시합니다.  이는 RoboTwin 2.0에서 50개의 양손 작업에서 93.82% / 93.30%의 평균 성공률을 달성하고 실제 세계 실험에서도 성과를 크게 향상시켰습니다."
-  },
-  {
-    "title": "값 명시적 사전 학습을 통한 전이 가능성 표현 학습",
-    "original_title": "Value Explicit Pretraining for Learning Transferable Representations",
-    "link": "https://arxiv.org/abs/2312.12339",
-    "date": "2026-05-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "\"값 명시적 사전 학습\"(VEP)은 새로운 과제를 효율적으로 배우도록 하는 일반화 가능한 표현을 학습하는 방법이다. VEP는 환경 동역학과 외관의 변화에 영향받지 않는 표현을 학습하도록 훈련된 인코더를 통해, 이전에 학습된 과제와 유사한 목표를 가진 새로운 과제를 효율적으로 배우도록 한다.   실험 결과, VEP는 Ant locomotion, 현실적인 네비게이션 시뮬레이터 및 Atari 기준에서 기존의 최고 수행 방법보다  unseen 과제 일반화 능력이 우수함을 보여주었다."
-  },
-  {
-    "title": "E$^2$DT: Efficient and Effective Decision Transformer with Experience-Aware Sampling for Robotic Manipulation",
-    "original_title": "E$^2$DT: Efficient and Effective Decision Transformer with Experience-Aware Sampling for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2605.00159",
-    "date": "2026-05-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.00159v1 Announce Type: new \nAbstract: In reinforcement learning (RL) for robotic manipulation, the Decision Transformer (DT) has emerged as an effective framework for addressing long-horizon tasks. However, DT's performance depends heavily on the coverage of collected experiences. Without an active exploration mechanism, standard DT relies on uniform replay, which leads to poor sample efficiency, limited exploration, and reduced overall effectiveness. At the same time, while excessive exploration can help avoid local optima, it often delays policy convergence and leads to degraded efficiency. To address these limitations, we propose E$^2$DT, a DT-guided k-Determinantal Point Process sampling framework that enables the model to actively shape its own experience selection. Our framework is experience-aware, allowing E$^2$DT to be both efficient, by prioritizing sampling quality, such as high-return, high-uncertainty, and underrepresented trajectories, and effective, by ensuring diversity across trajectory windows to preserve policy optimality. Specifically, DT's internal latent embeddings measure diversity across trajectory windows, while quality is quantified through a composite metric that integrates return-to-go (RTG) quantiles, predictive uncertainty, and stage coverage based on inverse frequency. These two dimensions are integrated into a novel quality-diversity joint kernel that prioritizes the most informative experiences, thereby enabling learning that is both efficient and effective. We evaluate E$^2$DT on challenging robotic manipulation benchmarks in both simulation and real-robot settings. Results show that it consistently outperforms prior methods. These findings demonstrate that coupling policy learning with experience-aware sampling provides a principled path toward robust long-horizon robotic learning."
-  },
-  {
-    "title": "Lucid-XR: An Extended-Reality Data Engine for Robotic Manipulation",
-    "original_title": "Lucid-XR: An Extended-Reality Data Engine for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2605.00244",
-    "date": "2026-05-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.00244v1 Announce Type: new \nAbstract: We introduce Lucid-XR, a generative data engine for creating diverse and realistic-looking multi-modal data to train real-world robotic systems. At the core of Lucid-XR is vuer, a web-based physics simulation environment that runs directly on the XR headset, enabling internet-scale access to immersive, latency-free virtual interactions without requiring specialized equipment. The complete system integrates on-device physics simulation with human-to-robot pose retargeting. Data collected is further amplified by a physics-guided video generation pipeline steerable via natural language specifications. We demonstrate zero-shot transfer of robot visual policies to unseen, cluttered, and badly lit evaluation environments, after training entirely on Lucid-XR's synthetic data. We include examples across dexterous manipulation tasks that involve soft materials, loosely bound particles, and rigid body contact. Project website: https://lucidxr.github.io"
-  },
-  {
-    "title": "Task-Conditioned Uncertainty Costmaps for Legged Locomotion",
-    "original_title": "Task-Conditioned Uncertainty Costmaps for Legged Locomotion",
-    "link": "https://arxiv.org/abs/2605.00261",
-    "date": "2026-05-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.00261v1 Announce Type: new \nAbstract: Legged robots maintain dynamic feasibility through multicontact interactions with terrain. Learned foothold prediction can provide feasibility-aware costs for motion planning and path selection, but accurately predicting future contacts from perceptual inputs such as height scans remains challenging on highly unstructured terrain, even with a repetitive gait cycle. In this work, we show that modeling epistemic uncertainty in predicted footholds, conditioned on terrain observations and commanded motion, distinguishes in-distribution from out-of-distribution operating regimes in simulation and real-world settings. This allows a single learned model, trained on limited data distributions, to express uncertainty caused by missing training coverage. We use this learned uncertainty to detect OOD regions and incorporate them into a unified costmap-generation framework for uncertainty-aware path planning. Using these uncertainty-aware costmaps, we evaluate feasibility error across in-distribution and OOD terrains in simulation and real-world settings. The results show improved OOD detection, up to a 37% reduction in simulation feasibility error, and more reliable planning behavior than geometry-only baselines."
-  },
-  {
-    "title": "Embodied Interpretability: Linking Causal Understanding to Generalization in Vision-Language-Action Models",
-    "original_title": "Embodied Interpretability: Linking Causal Understanding to Generalization in Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2605.00321",
-    "date": "2026-05-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.00321v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) policies often fail under distribution shift, suggesting that decisions may depend on spurious visual correlations rather than task-relevant causes. We formulate visual-action attribution as an interventional estimation problem. Accordingly, we introduce the Interventional Significance Score (ISS), an interventional masking procedure for estimating the causal influence of visual regions on action predictions, and the Nuisance Mass Ratio (NMR), a scalar measure of attribution to task-irrelevant features. We analyze the statistical properties of ISS and show that it admits unbiased estimation, and we characterize conditions under which action prediction error provides a valid proxy for causal influence. Experiments across diverse manipulation tasks indicate that NMR predicts generalization behavior and that ISS yields more faithful explanations than existing interpretability methods. These results suggest that interventional attribution provides a simple diagnostic approach for identifying causal misalignment in embodied policies."
-  },
-  {
-    "title": "PrefMoE: Robust Preference Modeling with Mixture-of-Experts Reward Learning",
-    "original_title": "PrefMoE: Robust Preference Modeling with Mixture-of-Experts Reward Learning",
-    "link": "https://arxiv.org/abs/2605.00384",
-    "date": "2026-05-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.00384v1 Announce Type: new \nAbstract: Preference-based reinforcement learning offers a scalable alternative to manual reward engineering by learning reward structures from comparative feedback. However, large-scale preference datasets, whether collected from crowdsourced annotators or generated by synthetic teachers, often contain heterogeneous and partially conflicting supervision, including disagreement across annotators and inconsistency within annotators. Existing reward learning methods typically fit a single reward model to such data, forcing it to average incompatible signals and thereby limiting robustness. To solve this, we propose PrefMoE, a mixture-of-experts reward learning framework for robust preference modeling. PrefMoE learns multiple specialized reward experts and uses trajectory-level soft routing to combine them adaptively, enabling the model to capture diverse latent preference patterns under noisy and heterogeneous preference supervision. A load-balancing regularizer further stabilizes training by preventing expert collapse. Across locomotion benchmarks from D4RL and manipulation tasks from MetaWorld, PrefMoE improves preference prediction robustness and leads to more reliable downstream policy learning than strong single-model baselines."
   }
 ]
