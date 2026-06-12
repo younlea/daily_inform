@@ -72,6 +72,78 @@
     "summary": "arXiv:2606.12859v1 Announce Type: new \nAbstract: Aerial manipulation systems have long suffered from representation coupling in end-to-end control, as platform-level Unmanned Aerial Vehicle (UAV) movement and end-effector-level arm manipulation differ substantially in action scale, dynamics, and control objectives. In this paper, we propose AIR-VLA+, a flow matching action generation architecture specifically designed for aerial manipulation, featuring cascaded dual-action decoders and an asymmetric feature-level Mixture of Experts (MoE). We construct cascaded manipulation and movement decoders, allowing the UAV to unidirectionally observe the manipulator's intent during movement to achieve workflow coordination, while isolating the impact of UAV movement information backpropagation on arm manipulation stability. Addressing the characteristic that UAV movement is highly dependent on high-level semantics and responsible for task state transitions in aerial manipulation, we design an input feature enhancement module for the UAV movement decoder. This module introduces an implicit visual grasp projector to perceive the interaction state between the gripper and the object, and injects compressed global semantic features. Within the UAV movement decoder, we deploy an implicit MoE architecture, enabling different movement experts to spontaneously exhibit capacity inclinations for various task stages during training. Through dense soft blending computation on the feature manifold, the UAV movement is endowed with stronger task-stage adaptability. Experiments on the standardized AIR-VLA benchmark demonstrate that our method comprehensively surpasses all baselines with an overall average score of 48.0. The overall task completion score improves by 80.2\\% compared to the single-head $\\pi_{0.5}$ policy, effectively mitigating the heterogeneous coordinated control conflicts of composite robots."
   },
   {
+    "title": "Bounding Boxes as Goals: Language-Conditioned Grasping via Neuro-Symbolic Planning",
+    "original_title": "Bounding Boxes as Goals: Language-Conditioned Grasping via Neuro-Symbolic Planning",
+    "link": "https://arxiv.org/abs/2606.12910",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12910v1 Announce Type: new \nAbstract: For robotics to be effectively integrated into household or industrial environments, machines must adapt to natural-language prompts in real time. Although Vision-Language Models (VLMs) have enabled zero-shot generalization in robot task and motion planning (TAMP), current state-of-the-art approaches often remain computationally \"heavyweight\" or require extensive training on thousands of demonstrations. We present GRASP (Grounded Reasoning and Symbolic Planning), a framework designed as a step toward open-vocabulary tabletop manipulation. Our approach leverages a pretrained VLM to translate natural-language queries into neuro-symbolic goal states, grounded in the physical world via a bounding-box detection pipeline. Unlike methods that rely on fixed color lists or hard-coded coordinates, GRASP enables robots to interpret abstract spatial concepts such as \"top shelf\" and execute tasks without additional fine-tuning. We achieve 73.3% overall success across 90 real-robot trials at three difficulty levels, requiring no task-specific training."
+  },
+  {
+    "title": "An Embodied Simulation Platform, Benchmark, and Data-Efficient Augmentation Framework for Wet-Lab Robotics",
+    "original_title": "An Embodied Simulation Platform, Benchmark, and Data-Efficient Augmentation Framework for Wet-Lab Robotics",
+    "link": "https://arxiv.org/abs/2606.12936",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12936v1 Announce Type: new \nAbstract: Wet-lab robots can improve the reproducibility, throughput, and safety of biomedical experiments, but scaling their learning requires customizable simulators for safe and reproducible task generation, open editable laboratory assets, and efficient pipelines that turn limited demonstrations into usable training data. We present Pipette, an embodied simulation platform, benchmark, and data-efficient augmentation framework for wet-lab robot learning. Pipette releases over 43 open-source and re-editable wet-lab assets, together with an extensible asset-building pipeline. A key component of Pipette is its simulation-based data augmentation pipeline, replaying human demonstrations in simulation, applies lighting, camera, speed, and action perturbations, and filters generated episodes with automatic task success checks, rapidly expanding usable training data from limited manual demonstrations. We further introduce an 11-task wet-lab embodied benchmark covering sample handling, culture-ware manipulation, device operation, and precision placement. With only 30 demonstrations per task, ACT achieves 65.5% average success rate, while simulation augmentation improves SmolVLA from 44.1% to 74.7% and {\\pi}0 from 40.4% to 46.5%, validating the effectiveness of Pipette for data-efficient VLA training and evaluation. Pipette also supports natural-language-driven scene construction and task registration, lowering the barrier for non-expert users to define new wet-lab robotic tasks."
+  },
+  {
+    "title": "Towards Reliable Sequential Object Picking in Clutter: The Runner-up Solution to RGMC 2025",
+    "original_title": "Towards Reliable Sequential Object Picking in Clutter: The Runner-up Solution to RGMC 2025",
+    "link": "https://arxiv.org/abs/2606.12954",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12954v1 Announce Type: new \nAbstract: As a long-standing challenge in robotic manipulation, stable and efficient grasping in cluttered environments is of great importance in industrial settings. While recent studies have achieved relatively high success rates in grasping from clutter, there remain few mature solutions for more demanding tasks such as sequential object search and sorting. This work addresses sequential object picking in cluttered environments based on the Cluttered Environment Picking Benchmark (CEPB) and presents our solution to the Pick-in-Clutter track of the 10th Robotic Grasping and Manipulation Competition (RGMC) at ICRA 2025. The task poses several key challenges. First, it requires robust and collision-aware grasping with high success rates across a diverse set of objects, including both rigid and deformable ones. Second, it demands efficient search for target objects, which places stringent requirements on the decluttering and searching strategies of the solution. To address the above challenges, we design an integrated hardware-software pipeline that combines object recognition, decluttering, and multi-modal grasping. The main contributions include the hardware design of a multifunctional gripper and novel representations for object distribution and occlusion relationships in cluttered space. This pipeline enables efficient recognition, search, and sequential grasping of objects in clutter, demonstrating strong performance in both laboratory tests and competition scenarios, and ultimately achieving second place in the Pick-in-Clutter track of the RGMC 2025."
+  },
+  {
+    "title": "SERF: Spatiotemporal Environment and Robot Feature Map for Long-Horizon Mobile Manipulation",
+    "original_title": "SERF: Spatiotemporal Environment and Robot Feature Map for Long-Horizon Mobile Manipulation",
+    "link": "https://arxiv.org/abs/2606.12956",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12956v1 Announce Type: new \nAbstract: Long-horizon robot mobile manipulation requires continual reasoning about localization, environment changes, and task progress, all of which are challenging to infer from image observations alone. In this paper, we show that conditioning a mobile manipulation policy on a spatiotemporal feature map improves reasoning over long horizons. The map represents the environment and the articulated robot body as neural points in a shared latent space and is updated online from egocentric observations and proprioceptive state. We update the environment neural points using object-level rigid tracking and the robot neural points using forward kinematics. We use our spatiotemporal environment and robot feature (SERF) map as a state input to a vision-language-action (VLA) model by extracting map tokens from multiple reference frames and spatial scales, providing the policy with both local and global context. We demonstrate SERF on BEHAVIOR-1K, a benchmark for long-horizon mobile manipulation in household environments. Experiments show that the SERF VLA policy outperforms image-only baselines, reaches subgoals faster by following more direct trajectories, improves robustness to scene-configuration shifts, and recovers from object-drop failures."
+  },
+  {
+    "title": "Trajectory-Level Redirection Attacks on Vision-Language-Action Models",
+    "original_title": "Trajectory-Level Redirection Attacks on Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.12978",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12978v1 Announce Type: new \nAbstract: Vision-language-action (VLA) policies bring natural language into closed-loop robot control, enabling robots to execute manipulation tasks directly from text instructions. The same interface gives text a recurring role in control because the prompt is reused at every replanning step, and each prompt-conditioned action changes the future observations on which the policy acts. Existing VLA attacks study adversarial prompts that elicit targeted low-level actions or make such actions persist across changing images. We identify a stronger trajectory-level failure mode: a prompt that still $\\textit{appears}$ to specify the intended task but redirects the final physical outcome. We mathematically formalize this setting as $\\textit{command-preserving trajectory redirection}$, a prompt-only threat model in which the attacker chooses one prompt before the episode, all policy and environment components remain fixed, and the prompt must stay close to the benign instruction while omitting target words and correction language. To find such prompts, we introduce an on-policy prompt search method that uses rollouts to discover perturbations whose closed-loop behavior tracks a target task while satisfying the command-preserving constraints. Experiments in simulation and on hardware show that near-benign prompt perturbations can redirect VLA rollouts to attacker-specified targets. These results expose a trajectory-level vulnerability in VLA instruction grounding: text that appears to preserve the intended command can still give an adversary control over the robot's final physical outcome. Project website: https://vla-redirection-attack.github.io/"
+  },
+  {
+    "title": "GenHOI: Contact-Aware Humanoid-Object Interaction by Imitating Generated Videos without Task-Specific Training",
+    "original_title": "GenHOI: Contact-Aware Humanoid-Object Interaction by Imitating Generated Videos without Task-Specific Training",
+    "link": "https://arxiv.org/abs/2606.12995",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.12995v1 Announce Type: new \nAbstract: Humanoid-Object Interaction (HOI) is a fundamental capability for humanoid robots, yet it remains challenging due to the tight coupling between dynamic balance and stable interaction with diverse objects. Existing methods often require time-consuming task-specific policy training or rely on rigid trajectory replay, which limits their ability to accommodate novel interaction scenarios. In this work, we present \\textit{GenHOI}, a simple yet effective framework that enables humanoid robots to perform diverse object-interaction tasks in a zero-shot manner by directly imitating a single generated video, without task-specific training or physical demonstration data. GenHOI first reconstructs the robot-object scene in simulation and renders a first-frame image, which, together with the language command, conditions the synthesis of a task-oriented interaction video. The generated video is then analyzed to identify interaction-relevant contact events and estimate hand-object contact regions, which are encoded as object-centric geometric constraints that convert visual interaction cues into physically grounded optimization priors. Guided by these priors, the reference motion recovered from the video is refined and smoothed to resolve the scale ambiguity inherent in 2D video generation, while adapting a single reference trajectory to unseen robot-object relative poses. The optimized trajectory is finally executed by a closed-loop tracking controller. We validate the proposed framework in extensive simulation and real-world experiments across diverse object-interaction tasks, including box grasping, asymmetric bimanual chair carrying, table lifting from below, and cylindrical-object enveloping."
+  },
+  {
+    "title": "RoboProcessBench: Benchmarking Process-Aware Understanding in Vision-Language Robotic Manipulation",
+    "original_title": "RoboProcessBench: Benchmarking Process-Aware Understanding in Vision-Language Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.13040",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.13040v1 Announce Type: new \nAbstract: Vision-language models (VLMs) are increasingly explored as visual critics, reward generators, and failure detectors in robotic manipulation. These roles implicitly require models to judge not only final task success, but also how a manipulation execution is physically and temporally progressing. However, existing evaluations fail to test whether VLMs possess fine-grained process understanding. To address this gap, we present RoboProcessBench, a benchmark for process-aware understanding in vision-language robotic manipulation. RoboProcessBench decomposes such capability into two complementary dimensions, \\emph{static monitoring} and \\emph{dynamic reasoning}, instantiated as 12 diagnostic question families covering phase, contact, motion, coordination, primitive-local progress, temporal order, outcome, and primitive-level transitions. Built from physically grounded execution traces, the curated benchmark corpus ProcessData contains \\textasciitilde 58k question-answer pairs across 260 manipulation tasks, which is further split into ProcessData-SFT and ProcessData-Eval for post-training and evaluation purposes. Extensive evaluation of various VLMs on ProcessData-Eval reveals broad limitations across 12 diagnostic task families, suggesting current models still lack robust process-aware understanding of manipulation executions. But with ProcessData-SFT, the post-trained \\textit{Qwen2.5-VL-7B} and \\textit{InternVL-3-8B} exhibit consistent gains on local state, motion, progress, and primitive-aware cues. These results demonstrate that RoboProcessBench serves as both an evaluation benchmark and a learnable supervision source for developing VLMs capable of monitoring and evaluating robotic manipulation processes. Project webpage: \\href{https://processbench-2026.github.io/RoboProcessBench-Web/}{https://processbench-2026.github.io}."
+  },
+  {
+    "title": "EA-WM: Event-Aware World Models with Task-Specification Grounding for Long-Horizon Manipulation",
+    "original_title": "EA-WM: Event-Aware World Models with Task-Specification Grounding for Long-Horizon Manipulation",
+    "link": "https://arxiv.org/abs/2606.13053",
+    "date": "2026-06-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.13053v1 Announce Type: new \nAbstract: Pretrained-feature world models provide a useful substrate for robot imagination, but visual or latent prediction alone does not determine whether an imagined future satisfies task-relevant events. Long-horizon manipulation requires progress signals that are relational, predicate-level, and physically grounded: whether an object has moved, whether a drawer or contact state has changed, whether a placement predicate is satisfied, and whether a candidate future is reliable enough for execution. We introduce EA-WM, an event-aware world-model framework that augments frozen visual-feature dynamics with task-specification-grounded event prediction and verification. EA-WM rolls out candidate futures in pretrained visual-feature space, decodes them into structured event states, and scores them using task-progress, semantic-consistency, physical-feasibility, and uncertainty terms. The verifier guides sampling-based planning, gates candidate actions, and, in the contact-sensitive LIBERO wine-rack setting, selects among PPOgenerated proposals. Across navigation, deformable-object, wall-constrained, and languagedescribed manipulation studies, EA-WM shows that event-aware verification can make featurespace world models more interpretable and better aligned with task progress."
+  },
+  {
     "title": "Humanoid Robot Manufacturer EngineAI Is Said to File for Hong Kong IPO - Bloomberg.com",
     "original_title": "Humanoid Robot Manufacturer EngineAI Is Said to File for Hong Kong IPO - Bloomberg.com",
     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbmlhTTMxdENTaEJKcmhNSXpaT25rcDdrOGNsT1VESkJyYkoyQTFXZnV5N0NFNmZXVkJYLXNSd1BrMDU1Q0RRT3p6SWJ2dVUxNjhjUHpIU2hSYTlkNVVWY0ZUVW9rTmxJZUp5MHlyUzJWbEJxMFM4Ylc0bV9GeXVsd1Q1QjdYN21CRGo3RF9vZTE0dmtFZG9WTWhWV2o0a3VsbkIxMmd2UjU2MjZKaXlFdnFwbVBCMUNEZ3dmOE9n?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Profile: A Chinese prodigy on a mission to bring robots to life  People's Daily Online"
-  },
-  {
-    "title": "중국 로봇 손 제조업체 Linkerbot, 인간의 섬세한 기술 라이브러리 전체 복제 목표|| 중국 로봇 손 제조업체 Linkerbot는 인간의 다양하고 정교한 기술을 모아놓은 라이브러리를 완전히 복제하는 것을 목표로 하고 있습니다.  Linkerbot은 촉각, 위치 감지 등 다양한 센서를 통해 인간 손의 복잡한 동작을 시뮬레이션할 수 있는 로봇 손 개발에 집중하고 있습니다.",
-    "original_title": "China robotic hands maker Linkerbot aims to replicate entire library of human dexterous skills - The Straits Times",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZGUweWlyWGhBRlJHM09LXzlkZVhDY3FiUGhmTHg0R1JzNFVSX3ZtY2lnQlRscFBadW1oRm1BMl9JR1ByOFlfUlBTdUhUV1N1TU5JT1FidmpLckJMaHp5YTJyU2tkY2h6bEwzTjZWN3pMRUJxdF9Hb3I4S09EYTBoOV8xRFNSQWdRVHFMSmxiSms3ZUdsYzBHUjZ0cTRKWDc1czAyWjUyMERFcVhFTXJyY0QxWjdKZHE3WW5GekR3?oc=5",
-    "date": "2026-05-04 01:11",
-    "source": "Google News (China Robotics - EN)",
-    "category": "hand",
-    "summary": "중국 로봇 손 제조업체 Linkerbot, 인간의 섬세한 기술 라이브러리 전체 복제 목표|| 중국 로봇 손 제조업체 Linkerbot는 인간의 다양하고 정교한 기술을 모아놓은 라이브러리를 완전히 복제하는 것을 목표로 하고 있습니다.  Linkerbot은 촉각, 위치 감지 등 다양한 센서를 통해 인간 손의 복잡한 동작을 시뮬레이션할 수 있는 로봇 손 개발에 집중하고 있습니다."
-  },
-  {
-    "title": "China robotic hands maker Linkerbot aims to replicate entire library of human dexterous skills - The Straits Times",
-    "original_title": "China robotic hands maker Linkerbot aims to replicate entire library of human dexterous skills - The Straits Times",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdjhfbEYzTjdieXIwcGNndE1McC1mZklKR0stRUVkZDVMZV9iQXZjSUxGLUUza21kUzVzTURWRGY2UU9JVkN6d3VVZjR3ZThFVy1JMEN0d0J0OTRyRFNqN25KTzJoNXljS0hHYUE4b1VCYnJQOFFITXVCSFY1ZGJrUnRQVzd4SzMtX0ZPbk1pNG95MUx3aUhzWkVlWmtualdVRGlOYmYtNU13RDBFMzh0NG1EUDEycXcxenpjTlJ1RzZ0dkloTDZOazJ3NjU?oc=5",
-    "date": "2026-05-04 01:11",
-    "source": "Google News (China Robotics - EN)",
-    "category": "hand",
-    "summary": "China robotic hands maker Linkerbot aims to replicate entire library of human dexterous skills  The Straits Times"
-  },
-  {
-    "title": "Profile: A Chinese prodigy on a mission to bring robots to life - Xinhua",
-    "original_title": "Profile: A Chinese prodigy on a mission to bring robots to life - Xinhua",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBtTDNwbzJVN1B5X1pHYlZvMmhudWNHcTNMTFZUQmZtZk83bjZDeW1oTmdseENvQ0NhQlM1RWoyUW1rZVhORDB4V3pOSFdLTUVuODNZOGprY1Z1VG8yeHV4Z1VWMkk0U1JneHZrSzlYaDhGY29qUWVUN252UWY?oc=5",
-    "date": "2026-05-04 00:58",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Profile: A Chinese prodigy on a mission to bring robots to life  Xinhua"
-  },
-  {
-    "title": "중국 로봇 제작 스타트업 링크르봇, 60억 달러 평가 목표 설정",
-    "original_title": "Exclusive: China robot-hand-building unicorn Linkerbot targets $6 billion valuation - Reuters",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNN1RLMFQ0ZUx2ek1VSHhYNzl2eGhoTkYyZVE1R000MVkwQy0xYXd1VXVGRTM3RUlTSDlPUkZGQ2ZYbGF5QkxoRzN2MGZ5RmV4aEsxRTMzUkxkazQtYjQyNk8zRl9xYlZKZ1pQT0FId09IYzE3bVUyMTN6eGlhMmNwRHcydGlUTWsxSVZwZjNTcG9LSnB5UnY1cnZYVFNiNGxfRWNLclUwMFVXbERNcFZydUVYMA?oc=5",
-    "date": "2026-05-04 00:33",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 로봇 공장 자동화 스타트업인 링크르봇이 60억 달러의 기업 평가를 목표로 자금 조달을 시도하는 것으로 알려졌습니다. 링크르봇은 인공지능 기반 로봇 기술을 사용하여 수제품 제조에 필요한 작업 자동화 및 고속 생산 라인 구축 등을 제공합니다."
-  },
-  {
-    "title": "VNYX, 100만 유로 확보하여 의류 재판매 자동화 로봇 및 AI 확장",
-    "original_title": "VNYX raises €1 million to scale robotics and AI for automated fashion resale",
-    "link": "https://roboticsandautomationnews.com/2026/05/03/vnyx-raises-e1-million-to-scale-robotics-and-ai-for-automated-fashion-resale/101182/",
-    "date": "2026-05-03 20:24",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "네덜란드 아담스테르담 기반 스타트업 VNYX는 의류 재판매를 자동화하고 섬유 낭비를 줄이기 위해 개발한 로봇과 인공지능 시스템을 확대하기 위해 100만 유로 이상을 확보했다. 이 자금은 전략적 투자와 정부 지원금의 조합으로,  회사가 수익 창출 단계에 접어들었음을 나타내며 이미 초기 상용 배포를 진행하고 있다."
-  },
-  {
-    "title": "기술 전문 기업 Geekplus, 미국 시장 진출 확대",
-    "original_title": "Geekplus reports 50 percent growth in Americas as it pushes embodied intelligence into US warehouse market",
-    "link": "https://roboticsandautomationnews.com/2026/05/03/geekplus-reports-50-percent-growth-in-americas-as-it-pushes-embodied-intelligence-into-us-warehouse-market/101179/",
-    "date": "2026-05-03 19:50",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Geekplus는 2025년 미국의 주문량이 연전연승 50% 이상 증가하여 북미 시장에서 성장세를 보이고 있다. 이는 미국 창고 자동화에 대한 수요 증가와 인력 부족 및 비용 상승 문제 해결을 위한 노력으로 설명될 수 있다."
-  },
-  {
-    "title": "Locus Robotics, 엔드투엔드 창고 채널 성과 위한 Locus Array 출시",
-    "original_title": "Locus Robotics rolls out Locus Array for end-to-end warehouse fulfillment",
-    "link": "https://roboticsandautomationnews.com/2026/05/03/locus-robotics-rolls-out-locus-array-for-end-to-end-warehouse-fulfillment/101175/",
-    "date": "2026-05-03 19:27",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "로커스로보틱스는 모바일 로봇, 통합형 로봇 피킹 암, AI 기반 인식 및 자율 실행을 결합한 'Locus Array'를 출시하여 수동 개입 없이 완전 자동화된 채널 프로세스를 구현함.  초기 접근 고객에게 미국 북미 지역에서 이미 배포 시작됨."
-  },
-  {
-    "title": "China’s Unitree reshapes entry-level humanoid robot market with $4,290 droid - MSN",
-    "original_title": "China’s Unitree reshapes entry-level humanoid robot market with $4,290 droid - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxQN2FJNnZESmdvVEVybTNrTVpnRXpBMTdKRUE0U3FtOGdXa0VlRzhmREUwM0JBQmdyQThEbVBMUElwb25nUGxaY19DS3RNNUZHS01LZHFPbXhJR0lnWWxPWFphbmo2ZkJRUXljcWs1eHAwUjdBcjZBNFdrQUxxWDYyV08xb1JvTl9lc3VSZklBMzc3SVdzLXJfUk9EZmE4azg2Mng4NnBaMldiV0ZURzRCRi1NYkMyUV95OTN4eGlyX2lCY2VrWWczTGdCdWtJbUxWa3NFQnlUM2xIc0NOWDUyNkRQZk1SbUtUcTdQUTN0S21ZUE5yNG82QlpzWDVOZklVcXg1NjVYTFpXNloweTdRb0xIX1ZFU1pZZWxoMHlDc05sZm1GMDFnYjhXQ1V3bGJKODF5ZHFESlU2NzMyb2tsT0Zldl9YMXQtRDBNT3NNMGFZX2Z0cE1MUnNrZ3Y3X0lTMWxHOUFQVWw1UklKM21UWmlueFFMQQ?oc=5",
-    "date": "2026-05-03 18:15",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China’s Unitree reshapes entry-level humanoid robot market with $4,290 droid  MSN"
   }
 ]
