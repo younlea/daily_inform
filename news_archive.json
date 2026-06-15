@@ -1,5 +1,23 @@
 [
   {
+    "title": "Entangled robotic matter with cohesive motion",
+    "original_title": "Entangled robotic matter with cohesive motion",
+    "link": "https://robohub.org/entangled-robotic-matter-with-cohesive-motion/",
+    "date": "2026-06-15 10:06",
+    "source": "Robohub",
+    "category": "humanoid",
+    "summary": "By Syl Kacapyr Cornell engineers have developed a robotic collective that behaves less like a machine and more like a material that flows, reshapes and adapts to its environment without centralized control. The system, called the Cross-Link Collective, consists of dozens of small robots that have limited mobility individually, but together exhibit coordinated and sustained […]"
+  },
+  {
+    "title": "Burro introduces Grande 44 with proven outdoor autonomy built for heavy industry",
+    "original_title": "Burro introduces Grande 44 with proven outdoor autonomy built for heavy industry",
+    "link": "https://www.therobotreport.com/burro-introduces-grande-44-with-proven-outdoor-autonomy-built-for-heavy-industry/",
+    "date": "2026-06-15 09:59",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "The 44 hp Burro Grande brings more than 1 million hours of real-world experience to industrial towing, site logistics, and facilities operations.\nThe post Burro introduces Grande 44 with proven outdoor autonomy built for heavy industry appeared first on The Robot Report."
+  },
+  {
     "title": "Interview: Parallel Systems CEO Matt Soule on building ‘the world’s first autonomous freight rail system’",
     "original_title": "Interview: Parallel Systems CEO Matt Soule on building ‘the world’s first autonomous freight rail system’",
     "link": "https://roboticsandautomationnews.com/2026/06/15/interview-parallel-systems-ceo-matt-soule-on-building-the-worlds-first-autonomous-freight-rail-system/102545/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2508.17466v3 Announce Type: replace \nAbstract: This paper presents a deep learning framework designed to enhance the grasping capabilities of quadrupeds equipped with arms, with a focus on improving precision and adaptability. Our approach centers on a sim-to-real methodology that minimizes reliance on physical data collection. We developed a pipeline within the Genesis simulation environment to generate a synthetic dataset of grasp attempts on common objects. By simulating thousands of interactions from various perspectives, we created pixel-wise annotated grasp-quality maps to serve as the ground truth for our model. This dataset was used to train a custom CNN with a U-Net-like architecture that processes multi-modal input from an onboard RGB and depth cameras, including RGB images, depth maps, segmentation masks, and surface normal maps. The trained model outputs a grasp-quality heatmap to identify the optimal grasp point. We validated the complete framework on a four-legged robot. The system successfully executed a full loco-manipulation task: autonomously navigating to a target object, perceiving it with its sensors, predicting the optimal grasp pose using our model, and performing a precise grasp. This work proves that leveraging simulated training with advanced sensing offers a scalable and effective solution for object handling."
-  },
-  {
-    "title": "PROBE: Probabilistic Occupancy BEV Encoding with Analytical Translation Robustness for 3D Place Recognition",
-    "original_title": "PROBE: Probabilistic Occupancy BEV Encoding with Analytical Translation Robustness for 3D Place Recognition",
-    "link": "https://arxiv.org/abs/2603.05965",
-    "date": "2026-05-06 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.05965v2 Announce Type: replace \nAbstract: We present PROBE (PRobabilistic Occupancy BEV Encoding), a learning-free LiDAR place recognition descriptor that models each BEV cell's occupancy as a Bernoulli random variable. Rather than relying on discrete point-cloud perturbations, PROBE analytically marginalizes over continuous Cartesian translations via the polar Jacobian, yielding a distance-adaptive angular uncertainty $\\sigma_\\theta = \\sigma_t / r$ in $\\mathcal{O}(R{\\cdot}S)$ time. The primary parameter $\\sigma_t$ represents the expected translational uncertainty in meters, a sensor-independent physical quantity that enhances cross-sensor generalization while reducing the need for extensive per-dataset tuning. Pairwise similarity combines a Bernoulli-KL Jaccard with exponential uncertainty gating and FFT-based height cosine similarity for rotation alignment. Evaluated on four datasets spanning four diverse LiDAR types, PROBE achieves the highest accuracy among handcrafted descriptors in multi-session evaluation and competitive single-session performance relative to both handcrafted and supervised baselines. The source code and supplementary materials are available at https://sites.google.com/view/probe-pr."
-  },
-  {
-    "title": "Viewpoint-Agnostic Grasp Pipeline using VLM and Partial Observations",
-    "original_title": "Viewpoint-Agnostic Grasp Pipeline using VLM and Partial Observations",
-    "link": "https://arxiv.org/abs/2603.07866",
-    "date": "2026-05-06 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.07866v2 Announce Type: replace \nAbstract: Robust grasping in cluttered, unstructured environments remains challenging for mobile legged manipulators due to occlusions that lead to partial observations, unreliable depth estimates, and the need for collision-free, execution-feasible approaches. In this paper we present an end-to-end pipeline for language-guided grasping that bridges open-vocabulary target selection to safe grasp execution on a real robot. Given a natural-language command, the system grounds the target in RGB using open-vocabulary detection and promptable instance segmentation, extracts an object-centric point cloud from RGB-D, and improves geometric reliability under occlusion via back-projected depth compensation and two-stage point cloud completion. We then generate and collision-filter 6-DoF grasp candidates and select an executable grasp using safety-oriented heuristics that account for reachability, approach feasibility, and clearance. We evaluate the method on a quadruped robot with an arm in two cluttered tabletop scenarios, using paired trials against a view-dependent baseline. The proposed approach achieves a 90% overall success rate (9/10) against 30% (3/10) for the baseline, demonstrating substantially improved robustness to occlusions and partial observations in clutter."
   }
 ]
