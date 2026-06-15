@@ -1,5 +1,14 @@
 [
   {
+    "title": "A Guide to AI Inference Engineering",
+    "original_title": "A Guide to AI Inference Engineering",
+    "link": "https://blog.bytebytego.com/p/a-guide-to-ai-inference-engineering",
+    "date": "2026-06-15 15:31",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "In this article, we will walk through how inference works and why the field’s optimization techniques exist."
+  },
+  {
     "title": "Simple color cue helps people master prosthetic devices faster",
     "original_title": "Simple color cue helps people master prosthetic devices faster",
     "link": "https://techxplore.com/news/2026-06-simple-cue-people-master-prosthetic.html",
@@ -2505,6 +2514,15 @@
     "title": "Chinese robotics firm eyes growth opportunities in Indonesia - Xinhua",
     "original_title": "Chinese robotics firm eyes growth opportunities in Indonesia - Xinhua",
     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNmt4bi1FM2hucV9fcXhWaXJwMWhMbk5VcE5zLVZ5OHpOWE85R3NkUVJ3UWt4TU53Ml93RDRSX2lfdUdBeXI0V3NsN2N0R1NWV2xralZhUDdHY3dlX3lHZkxqN3lZSXprTUlLNDAtVllKWFp3eUFCX2FkTFQ5bTZwT1Z1SXlrNWc4djcwRQ?oc=5",
+    "date": "2026-06-09 14:28",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Chinese robotics firm eyes growth opportunities in Indonesia  Xinhua"
+  },
+  {
+    "title": "Chinese robotics firm eyes growth opportunities in Indonesia - Xinhua",
+    "original_title": "Chinese robotics firm eyes growth opportunities in Indonesia - Xinhua",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE80clA4NzlUbFRkS1pSTkUzZTYwSXVPOUdXT3U3UWowRlVKWUpET1YteVljYUpwMXZqMjR6S3dXem9tYnBzUkxVUUxpaHQ2OTVtVzNSRkRXbnQzbHZnVHduZlBkcmhxMXM4NGZCOTBzQ2haek51eDF0NGNTNEU?oc=5",
     "date": "2026-06-09 14:28",
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.03821v1 Announce Type: new \nAbstract: Existing robot video world models are typically trained with low-level objectives such as reconstruction and perceptual similarity, which are poorly aligned with the capabilities that matter most for robot decision making, including instruction following, manipulation success, and physical plausibility. They also suffer from error accumulation in long-horizon autoregressive prediction. We present RoboAlign-R1, a framework that combines reward-aligned post-training with stabilized long-horizon inference for robot video world models. We construct RobotWorldBench, a benchmark of 10,000 annotated video-instruction pairs collected from four robot data sources, and train a multimodal teacher judge, RoboAlign-Judge, to provide fine-grained six-dimensional evaluation of generated videos. We then distill the teacher into a lightweight student reward model for efficient reinforcement-learning-based post-training. To reduce long-horizon rollout drift, we further introduce Sliding Window Re-encoding (SWR), a training-free inference strategy that periodically refreshes the generation context. Under our in-domain evaluation protocol, RoboAlign-R1 improves the aggregate six-dimension score by 10.1% over the strongest baseline, including gains of 7.5% on Manipulation Accuracy and 4.6% on Instruction Following; these ranking improvements are further supported by an external VLM-based cross-check and a blinded human study. Meanwhile, SWR improves long-horizon prediction quality with only about 1% additional latency, yielding a 2.8% gain in SSIM and a 9.8% reduction in LPIPS. Together, these results show that reward-aligned post-training and stabilized long-horizon decoding improve task consistency, physical realism, and long-horizon prediction quality in robot video world models."
-  },
-  {
-    "title": "SigLoMa: Learning Open-World Quadrupedal Loco-Manipulation from Ego-Centric Vision",
-    "original_title": "SigLoMa: Learning Open-World Quadrupedal Loco-Manipulation from Ego-Centric Vision",
-    "link": "https://arxiv.org/abs/2605.03846",
-    "date": "2026-05-06 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.03846v1 Announce Type: new \nAbstract: Designing an open-world quadrupedal loco-manipulation system is highly challenging. Traditional reinforcement learning frameworks utilizing exteroception often suffer from extreme sample inefficiency and massive sim-to-real gaps. Furthermore, the inherent latency of visual tracking fundamentally conflicts with the high-frequency demands of precise floating-base control. Consequently, existing systems lean heavily on expensive external motion capture and off-board computation. To eliminate these dependencies, we present SigLoMa, a fully onboard, ego-centric vision-based pick-and-place framework. At the core of SigLoMa is the introduction of Sigma Points, a lightweight geometric representation for exteroception that guarantees high scalability and native sim-to-real alignment. To bridge the frequency divide between slow perception and fast control, we design an ego-centric Kalman Filter to provide robust, high-rate state estimation. On the learning front, we alleviate sample inefficiency via an Active Sampling Curriculum guided by Hint Poses, and tackle the robot's structural visual blind spots using temporal encoding coupled with simulated random-walk drift. Real-world experiments validate that, relying solely on a 5Hz (200 ms latency) open-vocabulary detector, SigLoMa successfully executes dynamic loco-manipulation across multiple tasks, achieving performance comparable to expert human teleoperation."
-  },
-  {
-    "title": "OGPO: Sample Efficient Full-Finetuning of Generative Control Policies",
-    "original_title": "OGPO: Sample Efficient Full-Finetuning of Generative Control Policies",
-    "link": "https://arxiv.org/abs/2605.03065",
-    "date": "2026-05-06 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.03065v1 Announce Type: cross \nAbstract: Generative control policies (GCPs), such as diffusion- and flow-based control policies, have emerged as effective parameterizations for robot learning. This work introduces Off-policy Generative Policy Optimization (OGPO), a sample-efficient algorithm for finetuning GCPs that maintains off-policy critic networks to maximize data reuse and propagate policy gradients through the full generative process of the policy via a modified PPO objective, using critics as the terminal reward. OGPO achieves state-of-the-art performance on manipulation tasks spanning multi-task settings, high-precision insertion, and dexterous control. To our knowledge, it is also the only method that can fine-tune poorly-initialized behavior cloning policies to near full task-success with no expert data in the online replay buffer, and does so with few task-specific hyperparameter tuning. Through extensive empirical investigations, we demonstrate the OGPO drastically outperforms methods alternatives on policy steering and learning residual corrections, and identify the key mechanisms behind its performance. We further introduce practical stabilizers, including success-buffer regularization, conservative advantages, $\\chi^2$ regularization, and Q-variance reduction, to mitigate critic over-exploitation across state- and pixel-based settings. Beyond proposing OGPO, we conduct a systematic empirical study of GCP finetuning, identifying the stabilizing mechanisms and failure modes that govern successful off-policy full-policy improvement."
   }
 ]
