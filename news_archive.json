@@ -1,5 +1,14 @@
 [
   {
+    "title": "MassRobotics honors Stanford’s Allison Okamura and Seoul National University’s Ayoung Kim with 2026 robotics medals",
+    "original_title": "MassRobotics honors Stanford’s Allison Okamura and Seoul National University’s Ayoung Kim with 2026 robotics medals",
+    "link": "https://roboticsandautomationnews.com/2026/06/15/massrobotics-honors-stanfords-allison-okamura-and-seoul-national-universitys-ayoung-kim-with-2026-robotics-medals/102530/",
+    "date": "2026-06-15 06:59",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "MassRobotics, a robotics innovation organization, announced its 2026 Robotics Medal and Rising Star recipients at the recent IEEE ICRA conference in Vienna. The Robotics Medal is the world’s first major award to recognize the wide-ranging impact of female researchers focusing on the development of robotics around the globe. The Robotics Medal is awarded to a […]"
+  },
+  {
     "title": "Scalable Dynamic Tactile Sensing Enabled by Passive and Flexible Acoustic Waveguides",
     "original_title": "Scalable Dynamic Tactile Sensing Enabled by Passive and Flexible Acoustic Waveguides",
     "link": "https://arxiv.org/abs/2606.13746",
@@ -216,6 +225,78 @@
     "summary": "arXiv:2606.14617v1 Announce Type: new \nAbstract: Floating-base robots must balance under rigid contact constraints while interacting safely with humans. Existing whole-body control~(WBC) frameworks allocate the full joint space to locomotion or rely on fixed-gain impedance feedback that accumulates steady-state error under sustained physical human--robot interaction~(pHRI) forces. This paper extends the authors' fixed-base two-layer Impedance MPC to floating-base platforms through a three-level architecture: a centroidal MPC plans contact forces over a 500\\,ms horizon; a priority-driven WBC layer resolves balance into joint torques through contact-consistent null-space projection; and the residual null space is governed by a receding-horizon quadratic program~(QP) that predicts and rejects pHRI disturbances using a Kalman-augmented state. A contact-consistent feedback linearization reduces the arm end-effector plant to a double integrator with a \\emph{constant} state matrix within each contact mode, enabling offline precomputation of the QP cost and ${\\geq}1$\\,kHz operation. A covariance-inflation protocol preserves the disturbance estimate across contact-mode switches, guaranteeing zero steady-state error under bounded constant pHRI loads, and an Impedance Equivalence Theorem shows the infinite-horizon limit recovers a classical task-space impedance law whose effective mass, damping, and stiffness adapt to posture and contact configuration. Simulations on a 17-DOF biped and the Unitree G1 humanoid validate the design."
   },
   {
+    "title": "EgoGuide: Egocentric Guidance for Efficient Robot-Free Demonstration Collection and Learning",
+    "original_title": "EgoGuide: Egocentric Guidance for Efficient Robot-Free Demonstration Collection and Learning",
+    "link": "https://arxiv.org/abs/2606.14665",
+    "date": "2026-06-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.14665v1 Announce Type: new \nAbstract: Robot learning from real-world demonstrations is currently constrained by data scaling. Universal Manipulation Interface (UMI) provides an efficient robot-free data collection interface, yet current UMI-style pipelines often collect redundant demonstrations and lack global scene context. To improve data efficiency, we present EgoGuide, a collection interface that records synchronized wrist and head/egocentric observations and couples them with online visual-geometric data quality guidance. We also introduce a Gated Egocentric Residual Policy for robust learning from a viewpoint-varying egocentric camera, allowing head/egocentric context to correct ambiguous local observations while preserving stable wrist-view control. Real-world experiments show that EgoGuide reduces the required number of data episodes and improves data efficiency. The residual policy further improves robustness under visual occlusion. Project Page: https://silicx.github.io/EgoGuide"
+  },
+  {
+    "title": "WAM4D: Fast 4D World Action Model via Spatial Register Tokens",
+    "original_title": "WAM4D: Fast 4D World Action Model via Spatial Register Tokens",
+    "link": "https://arxiv.org/abs/2606.14048",
+    "date": "2026-06-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.14048v1 Announce Type: cross \nAbstract: World action models (WAMs) have recently shown promise in jointly modeling future observations and executable robot actions. However, most existing WAMs still operate in 2D video or latent spaces, where visually plausible rollouts miss the 3D spatial constraints and occluded contact geometry required for precise manipulation. While geometric foundation models offer strong priors for recovering dense 3D structure and motion from visual observations, forcing WAMs to predict the dense 4D representation introduces costly geometric decoding and slows down causal action generation. To address the trade-off, we present WAM4D, a fast 4D world action model that uses lightweight spatial register tokens as training-time future-depth readouts to transfer pretrained geometric priors into a causal video-action transformer, then removes the register branch for lightweight action inference. To prevent non-causal shortcuts, we further design causal mixture attention for the Mixture-of-Transformers (MoT) WAM backbone, defining modality-specific visibility among video, action, and geometry tokens. Comprehensive experiments on RoboTwin 2.0 and challenging real-world manipulation tasks show that WAM4D improves spatial consistency and achieves competitive action prediction while maintaining efficient inference."
+  },
+  {
+    "title": "ADAPT: An Autonomous Forklift for Construction Site Operation",
+    "original_title": "ADAPT: An Autonomous Forklift for Construction Site Operation",
+    "link": "https://arxiv.org/abs/2503.14331",
+    "date": "2026-06-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2503.14331v4 Announce Type: replace \nAbstract: Efficient material logistics play a critical role in controlling costs and schedules in the construction industry. However, manual material handling remains prone to inefficiencies, delays, and safety risks. Autonomous forklifts offer a promising solution to streamline on-site logistics, reducing reliance on human operators and mitigating labor shortages. This paper presents the development and evaluation of ADAPT (Autonomous Dynamic All-terrain Pallet Transporter), a fully autonomous off-road forklift designed for construction environments. Unlike structured warehouse settings, construction sites pose significant challenges, including dynamic obstacles, unstructured terrain, and varying weather conditions. To address these challenges, our system integrates AI-driven perception techniques with traditional approaches for decision making, planning, and control, enabling reliable operation in complex environments. We validate the system through extensive real-world testing, comparing its continuous performance against an experienced human operator across various weather conditions. Our findings demonstrate that autonomous outdoor forklifts can operate near human-level performance, offering a viable path toward safer and more efficient construction logistics."
+  },
+  {
+    "title": "Asymmetric Friction in Geometric Locomotion",
+    "original_title": "Asymmetric Friction in Geometric Locomotion",
+    "link": "https://arxiv.org/abs/2512.22484",
+    "date": "2026-06-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2512.22484v2 Announce Type: replace \nAbstract: Geometric mechanics models of locomotion have provided insight into how robots and animals use environmental interactions to convert internal shape changes into displacement through the world, encoding this relationship in a ``motility map''. A key class of such motility maps arises from (possibly anisotropic) linear drag acting on the system's individual body parts, formally described via Riemannian metrics on the motions of the system's individual body parts. The motility map can then be generated by invoking a sub-Riemannian constraint on the aggregate system motion under which the position velocity induced by a given shape velocity is that which minimizes the power dissipated via friction. The locomotion of such systems is ``geometric'' in the sense that the final position reached by the system depends only on the sequence of shapes that the system passes through, but not on the rate with which the shape changes are made.\n  In this paper, we consider a far more general class of systems in which the drag may be not only anisotropic (with different coefficients for forward/backward and left/right motions), but also asymmetric (with different coefficients for forward and backward motions). Formally, including asymmetry in the friction replaces the Riemannian metrics on the body parts with Finsler metrics. We demonstrate that the sub-Riemannian approach to constructing the system motility map extends naturally to a sub-Finslerian approach and identify system properties analogous to the constraint curvature of sub-Riemannian systems that allow for the characterization of the system motion capabilities."
+  },
+  {
+    "title": "A Pragmatic VLA Foundation Model",
+    "original_title": "A Pragmatic VLA Foundation Model",
+    "link": "https://arxiv.org/abs/2601.18692",
+    "date": "2026-06-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2601.18692v3 Announce Type: replace \nAbstract: Offering great potential in robotic manipulation, a capable Vision-Language-Action (VLA) foundation model is expected to faithfully generalize across tasks and platforms while ensuring cost efficiency (e.g., data and GPU hours required for adaptation). To this end, we develop LingBot-VLA with around 20,000 hours of real-world data from 9 popular dual-arm robot configurations. Through a systematic assessment on 3 robotic platforms, each completing 100 tasks with 130 post-training episodes per task, our model achieves clear superiority over competitors, showcasing its strong performance and broad generalizability. We have also built an efficient codebase, which delivers a throughput of 261 samples per second with an 8-GPU training setup, representing a 1.5~2.8$\\times$ (depending on the relied VLM base model) speedup over existing VLA-oriented codebases. The above features ensure that our model is well-suited for real-world deployment. To advance the field of robot learning, we provide open access to the code, base model, and benchmark data, with a focus on enabling more challenging tasks and promoting sound evaluation standards."
+  },
+  {
+    "title": "A Unified Control Architecture for Macro-Micro Manipulation using a Active Remote Center of Compliance for Manufacturing Applications",
+    "original_title": "A Unified Control Architecture for Macro-Micro Manipulation using a Active Remote Center of Compliance for Manufacturing Applications",
+    "link": "https://arxiv.org/abs/2602.01948",
+    "date": "2026-06-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.01948v2 Announce Type: replace \nAbstract: Macro-micro manipulators combine a macro manipulator with a large workspace, such as an industrial robot, with a lightweight, high-bandwidth micro manipulator. This enables highly dynamic interaction control while preserving the wide workspace of the robot. Traditionally, position control is assigned to the macro manipulator, while the micro manipulator handles the interaction with the environment, limiting the achievable interaction control bandwidth. To solve this, we propose a novel control architecture that incorporates the macro manipulator into the active interaction control. This leads to a increase in control bandwidth by a factor of 2.1 compared to the state of the art architecture, based on the leader-follower approach and factor 12.5 compared to traditional robot-based force control. Further we propose surrogate models for a more efficient controller design and easy adaptation to hardware changes. We validate our approach by comparing it against the other control schemes in different experiments, like collision with an object, following a force trajectory and industrial assembly tasks."
+  },
+  {
+    "title": "Estimation of Ground Reaction Forces from Kinematic Data during Locomotion",
+    "original_title": "Estimation of Ground Reaction Forces from Kinematic Data during Locomotion",
+    "link": "https://arxiv.org/abs/2602.03177",
+    "date": "2026-06-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2602.03177v2 Announce Type: replace \nAbstract: Ground reaction forces (GRFs) provide fundamental insight into human gait mechanics and are widely used to assess joint loading, limb symmetry, balance control, and motor function. Despite their clinical relevance, the use of GRF remains underutilised in clinical workflows due to the practical limitations of force plate systems. In this work, we present a force-plate-free approach for estimating GRFs using only marker-based motion capture data. This kinematics only method to estimate and decompose GRF makes it well suited for widespread clinical depolyment. By using kinematics from sixteen body segments, we estimate the centre of mass (CoM) and compute GRFs, which are subsequently decomposed into individual components through a minimization-based approach. Through this framework, we can identify gait stance phases and provide access to clinically meaningful kinetic measures without a dedicated force plate system. Experimental results demonstrate the viability of CoM and GRF estimation based solely on kinematic data, supporting force-plate-free gait analysis."
+  },
+  {
+    "title": "X-Loco: Towards Generalist Humanoid Locomotion Control via Synergetic Policy Distillation",
+    "original_title": "X-Loco: Towards Generalist Humanoid Locomotion Control via Synergetic Policy Distillation",
+    "link": "https://arxiv.org/abs/2603.03733",
+    "date": "2026-06-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2603.03733v2 Announce Type: replace \nAbstract: While recent advances have demonstrated strong performance in individual humanoid skills such as upright locomotion, fall recovery and whole-body coordination, learning a single policy that masters all these skills remains challenging due to the diverse dynamics and conflicting control objectives involved. To address this, we introduce X-Loco, a framework for training a vision-based generalist humanoid locomotion policy. X-Loco trains multiple oracle specialist policies and adopts a synergetic policy distillation with a case-adaptive specialist selection mechanism, which dynamically leverages multiple specialist policies to guide a vision-based student policy. This design enables the student to acquire a broad spectrum of locomotion skills, ranging from fall recovery to terrain traversal and whole-body coordination skills. To the best of our knowledge, X-Loco is the first framework to demonstrate vision-based humanoid locomotion that jointly integrates upright locomotion, whole-body coordination and fall recovery, while operating solely under velocity commands without relying on reference motions. Experimental results show that X-Loco achieves superior performance, demonstrated by tasks such as fall recovery and terrain traversal. Ablation studies further highlight that our framework effectively leverages specialist expertise and enhances learning efficiency."
+  },
+  {
     "title": "Four-legged detection robots for safe firefighting operations",
     "original_title": "Four-legged detection robots for safe firefighting operations",
     "link": "https://techxplore.com/news/2026-06-legged-robots-safe-firefighting.html",
@@ -259,6 +340,15 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "Before Windows, only engineers and computer scientists could work with computers. Edge AI is causing a similar accessibility shift for robotics.\nThe post Windows for robots: Edge AI expands usability appeared first on The Robot Report."
+  },
+  {
+    "title": "Humanoid robot seen 'begging' for money in China sparks debate over AI's future - Moneycontrol.com",
+    "original_title": "Humanoid robot seen 'begging' for money in China sparks debate over AI's future - Moneycontrol.com",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNkU2WnZHd2dia01yZ0JyNXZmZXlVbUdNenV0T0F1aFl4Mm5ZNlRqc05WWURJamw4Z0g0SlN1VVNLT1N0eDZTcUptRDBIZ3Voc0pBSW5jSUk5TjdfeWRwX3JjakdPallEbUVTNzZseVgyYW9HdzRab3R1dW5ZeXoyNGNkaTBvc2FtbHh5dzlscC12T2FuekRjNlI5YW5wel9ZOTZmQXpyVk0wckdWbUtaY3A5R0ZoX3hlZ016Qk9XYlhQeW41Vkx2ZU9zY1rSAdIBQVVfeXFMTWhfT0I4dV8yT280WDZRVm9ZQnFDUERwUkhaZDN5aV9PTGV5TDl3SVVqOHRneXlFcF9LcHFkS2Y4TkxLQXgydU55eFB4bjU1WEJOSmw0d0JIQ2ZOWEFwd0c3NTR6LW8taS1VdUxLYW9EaHlNX1hDOVlzWXpVZjVGOXg3a01VckE0N1g3cFdPSXhJREhBMTBlLTJPV0wwMlQ5OWlaZkNTWENzRnBoT0VnOFdNRXg1QVNudHc2TVRydzN5Q0NodW8wUmVQWTB1Q3dkY0NB?oc=5",
+    "date": "2026-06-13 09:03",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Humanoid robot seen 'begging' for money in China sparks debate over AI's future  Moneycontrol.com"
   },
   {
     "title": "Why it’s nearly impossible to build a robot without China - The Japan Times",
@@ -17908,95 +17998,5 @@
     "source": "ByteByteGo",
     "category": "humanoid",
     "summary": "In this article, we will learn how Instacart’s search infrastructure evolved over the years and the challenges its engineering team faced."
-  },
-  {
-    "title": "Bedrock Robotics Highlights Real-World Autonomous Construction Focus at NVIDIA GTC - TipRanks",
-    "original_title": "Bedrock Robotics Highlights Real-World Autonomous Construction Focus at NVIDIA GTC - TipRanks",
-    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRFo5RHlpNV95SmZNdkFMOEdEUVdmeEtkWmxjSnBzVXA3c0s5ZHpXSTJrY1ZSSDFvekJwX2dWZmh3UGtGYU9mTTRRYUd6V09NTUp1d3F3bGY4SURSSUk2OC1tdXNHMVhURmJsTW9yUFpVRjBkdXNrU2JlSzduRFAxRWNGREYwa2J3M2xOT2puclppaGFBR0lvNUVyNExCSjI3UU1lTkFObzMybFJxcTlINVJrdWVQVkEzTldXMzhsTEZRSnM3YWl0OGxB?oc=5",
-    "date": "2026-05-05 12:47",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Bedrock Robotics Highlights Real-World Autonomous Construction Focus at NVIDIA GTC  TipRanks"
-  },
-  {
-    "title": "Hiroshi Fujiwara and Robert Little selected for 2026 Joseph F. Engelberger Robotics Awards",
-    "original_title": "Hiroshi Fujiwara and Robert Little selected for 2026 Joseph F. Engelberger Robotics Awards",
-    "link": "https://www.therobotreport.com/hiroshi-fujiwara-robert-little-selected-2026-joseph-f-engelberger-robotics-awards/",
-    "date": "2026-05-05 12:45",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "A3 honored Hiroshi Fujiwara and Robert Little with the 2026 Engelberger Awards for their transformative leadership and robotics application breakthroughs.\nThe post Hiroshi Fujiwara and Robert Little selected for 2026 Joseph F. Engelberger Robotics Awards appeared first on The Robot Report."
-  },
-  {
-    "title": "NORD Drivesystems releases motor starters, variable frequency drives",
-    "original_title": "NORD Drivesystems releases motor starters, variable frequency drives",
-    "link": "https://www.therobotreport.com/nord-drivesystems-releases-motor-starters-variable-frequency-drives/",
-    "date": "2026-05-05 12:35",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "NORD Drivesystems says its new motor starters and variable-frequency drives allow for easy integration and scaling.\nThe post NORD Drivesystems releases motor starters, variable frequency drives appeared first on The Robot Report."
-  },
-  {
-    "title": "Robotically assembled building blocks could make construction more efficient and sustainable",
-    "original_title": "Robotically assembled building blocks could make construction more efficient and sustainable",
-    "link": "https://robohub.org/robotically-assembled-building-blocks-could-make-construction-more-efficient-and-sustainable/",
-    "date": "2026-05-05 09:31",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "New research suggests constructing a simple building from interlocking subunits should be mechanically feasible and have a much smaller carbon footprint."
-  },
-  {
-    "title": "Ablation Study of Multimodal Perception, Language Grounding, and Control for Human-Robot Interaction in an Object Detection and Grasping Task",
-    "original_title": "Ablation Study of Multimodal Perception, Language Grounding, and Control for Human-Robot Interaction in an Object Detection and Grasping Task",
-    "link": "https://arxiv.org/abs/2605.00963",
-    "date": "2026-05-05 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.00963v1 Announce Type: new \nAbstract: This manuscript extends our previous multimodal human-robot interaction system by introducing a controlled ablation study of the three modules that most strongly influence end-to-end performance: the large language model used for action extraction, the perception system used for visual grounding, and the controller used for motion execution. The goal is not to redesign the full pipeline, but to isolate the contribution of each component under a common experimental protocol and then evaluate the best combinations end-to-end. We therefore compare three language models, five perception configurations, and three controllers, followed by a second-stage factorial study over the best candidates. The resulting analysis is intended to clarify which choices primarily affect execution time, which primarily affect success rate, and where the largest engineering gains are likely to come from in future revisions of the system."
-  },
-  {
-    "title": "Online Safety Filter for Deformable Object Manipulation with Horizon Agnostic Neural Operators",
-    "original_title": "Online Safety Filter for Deformable Object Manipulation with Horizon Agnostic Neural Operators",
-    "link": "https://arxiv.org/abs/2605.01069",
-    "date": "2026-05-05 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.01069v1 Announce Type: new \nAbstract: Safety critical control of robotic manipulation tasks involving deformable media such as fluids, cloth, and soft objects remains challenging because existing learning based approaches encode safety indirectly through reward shaping, which provides no guarantee of constraint satisfaction at deployment. We present a constraint driven online safety filter for deformable object manipulation that enforces explicit task level safety constraints in real time by minimally modifying any nominal control policy. Our approach combines two key components: a horizon agnostic neural operator that learns the boundary input output mapping of the underlying PDE dynamics and generalizes across variable rollout lengths without retraining, and a boundary control barrier function that certifies safety at the task relevant output level via a lightweight quadratic program. The resulting safety constraint is affine in the boundary input rate, enabling real time online filtering. We evaluate the proposed method on fluid manipulation tasks in FluidLab, where the filter improves safe trajectory rates by up to 22% over unfiltered base policies while also reducing the number of steps required to reach the safe set, demonstrating that constraint driven safety enforcement is both more reliable and more efficient than reward shaping approaches."
-  },
-  {
-    "title": "Sentinel-VLA: A Metacognitive VLA Model with Active Status Monitoring for Dynamic Reasoning and Error Recovery",
-    "original_title": "Sentinel-VLA: A Metacognitive VLA Model with Active Status Monitoring for Dynamic Reasoning and Error Recovery",
-    "link": "https://arxiv.org/abs/2605.01191",
-    "date": "2026-05-05 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.01191v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models have advanced the field of embodied manipulation by harnessing broad world knowledge and strong generalization. However, current VLA models still face several key challenges, including limited reasoning capability, lack of status monitoring, and difficulty in self-correction. In this paper, we introduce \\textbf{Sentinel-VLA}, a metacognitive VLA model equipped with an active ``sentinel'' module to monitor real-time execution status. Only when necessary, such as during initial planning or upon detecting an error, the model triggers a dynamic reasoning or formulate error recovery solutions. This on-demand reasoning mechanism ensures robust decision-making while minimizing computational overhead. Notably, all training data (spanning 44 tasks and over 2.6 million transitions) is automatically generated and annotated through our designed pipeline. We also propose the Self-Evolving Continual Learning (SECL) algorithm, which allows Sentinel-VLA to identify its capability boundaries and automatically collect data for expansion, paired with Orthogonal Continual Adapter (OC-Adapter) to constrain parameter updates to an orthogonal space, thereby preventing catastrophic forgetting. Real-world experiments demonstrate that Sentinel-VLA boosts the task success rate by over 30\\% compared to the SOTA model, PI0. We will open-source all the code, weights, and data generation pipeline."
-  },
-  {
-    "title": "VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model",
-    "original_title": "VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model",
-    "link": "https://arxiv.org/abs/2605.01194",
-    "date": "2026-05-05 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.01194v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have demonstrated remarkable capabilities and generalization in embodied manipulation. However, their decision-making relies on a fast, instinctive process that lacks deliberation. This strategy often leads to suboptimal or catastrophic actions when facing complex or ambiguous scenarios that require greater consideration. In this paper, we introduce \\textbf{VLA-ATTC}, a framework that endows VLA models with adaptive test-time compute (TTC). VLA-ATTC employs an uncertainty-based ``cognitive clutch'' to dynamically transition from reflexive execution to a TTC deliberation phase when necessary. During TTC phase, a novel \\textbf{Relative Action Critic} (RAC) model identifies the optimal action from generated candidates via pairwise comparisons. This relative mechanism replaces unstable absolute value estimation, significantly simplifying the learning objective. Furthermore, we introduce an efficient sampling strategy to amortize computational costs and an automated data pipeline that curates preference pairs without manual annotation. On the LIBERO-LONG benchmark, VLA-ATTC reduces the failure rate of the SOTA model PI0.5 by over 50\\%. We will open-source all the code and weights."
-  },
-  {
-    "title": "TAIL-Safe: Task-Agnostic Safety Monitoring for Imitation Learning Policies",
-    "original_title": "TAIL-Safe: Task-Agnostic Safety Monitoring for Imitation Learning Policies",
-    "link": "https://arxiv.org/abs/2605.01195",
-    "date": "2026-05-05 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.01195v1 Announce Type: new \nAbstract: Recent imitation learning (IL) algorithms such as flow-matching and diffusion policies demonstrate remarkable performance in learning complex manipulation tasks. However, these policies often fail even when operating within their training distribution due to extreme sensitivity to initial conditions and irreducible approximation errors that lead to compounding drift. This makes it unsafe to deploy IL policies in the field where out-of-distribution scenarios are prevalent. A prerequisite for safe deployment is enabling the policy to determine whether it can execute a task the way it was learned from demonstrations. This paper presents TAIL-Safe, a principled approach to identify, for a trained IL policy, a safe set from where the policy empirically succeeds in completing the learned task. We propose a Lipschitz-continuous Q-value function that maps state-action pairs to a long-term safety score based on three short-term task-agnostic criteria: visibility, recognizability, and graspability. The zero-superlevel set of this function characterizes an empirical control invariant set over state-action pairs. When the nominal policy proposes an action outside this set, we apply a recovery mechanism inspired by Nagumo's theorem that uses gradient ascent to the Q-function to steer the policy back to safety. To learn this Q-function, we construct a high-fidelity digital twin using Gaussian Splatting that enables systematic collection of failure data without risk to physical hardware. Experiments with a Franka Emika robot demonstrate that flow-matching policies, which fail under run-time perturbations, achieve consistent task success when guided by the proposed TAIL-Safe."
-  },
-  {
-    "title": "Dynamics Aware Quadrupedal Locomotion via Intrinsic Dynamics Head",
-    "original_title": "Dynamics Aware Quadrupedal Locomotion via Intrinsic Dynamics Head",
-    "link": "https://arxiv.org/abs/2605.01227",
-    "date": "2026-05-05 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.01227v1 Announce Type: new \nAbstract: Quadrupedal locomotion plays a critical role in enabling agile, versatile movement across complex terrains. Understanding and estimating the underlying physical dynamics are essential for achieving efficient and stable quadrupedal locomotion. We propose a novel training framework for quadrupedal locomotion that enables the Control Policy to understand and reason about physical dynamics. In simulation, we concurrently train an Intrinsic Dynamics (ID) Head that learns state-to-torque dynamics alongside the Control Policy, and we define a dynamics reward enabled by the ID Head that encourages the Policy toward more predictable dynamical behavior. We also provide a mechanism to tune the learned dynamics in the resulting Policy by controlling the training coefficients of the ID Head. Our simulation experiments show that this mechanism drives convergence to better optima across a wide range of standard quadrupedal locomotion rewards, yielding more efficient and smoother policies. Our real-robot experiments demonstrate sim-to-real transfer of these improvements, with significant gains in torque efficiency (16.8%), action rate (18.6%), and mechanical power (12.8%), while improving safe torque occupancy by 6.4%."
   }
 ]
