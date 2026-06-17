@@ -1,5 +1,14 @@
 [
   {
+    "title": "Unitree humanoid robot prepares to climb Mount Everest - VnExpress International",
+    "original_title": "Unitree humanoid robot prepares to climb Mount Everest - VnExpress International",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSTBxMFJTT3kzWHdZYUhqcVE3LWU2SkZWVjhuZjEtMkN3TjJBTHpUd0ptdjE4U3lPa1MybnBOekNFX19lTDFvbGJoTTNFbXRfd1VidzJOcFBGQ2tsM1ltYUtNZy1pM3VGWWFvZkRacmVZa3lGNnoxMnpNUGxtMnhFRlB2THVnNnlPSzcwenZpcG1zVUlEcm5NTEIxdGdrMGFCdXotckd6UGhqd3NPTHMxWQ?oc=5",
+    "date": "2026-06-17 05:14",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree humanoid robot prepares to climb Mount Everest  VnExpress International"
+  },
+  {
     "title": "ACE-Ego-0: Unifying Egocentric Human and Robotic Data for VLA Pretraining",
     "original_title": "ACE-Ego-0: Unifying Egocentric Human and Robotic Data for VLA Pretraining",
     "link": "https://arxiv.org/abs/2606.17200",
@@ -142,6 +151,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.17937v1 Announce Type: new \nAbstract: Most Vision-Language-Action (VLA) models map observations directly to actions without explicit reasoning, limiting their capacity for reasoning-intensive long-horizon tasks. To address this, existing approaches adopt Chain-of-Thought (CoT) reasoning to enable subgoal decomposition and spatial anticipation. However, those methods lack a unified architecture for effective cross-modal reasoning and fail to explicitly include inverse reasoning ability based on the target state. We argue that manipulation planning naturally decomposes into prediction, anticipating the next visual state, and inverse dynamics, inferring the actions to reach it. Bridging both requires a unified autoregressive architecture that interleaves textual and visual reasoning in a single generation process. We propose \\textbf{ThinkingVLA}, a generative model that realizes this decomposition within a unified Mixture-of-Transformers architecture. ThinkingVLA consists of a forward CoT that identifies the immediate subgoal and guides the visual forecasting; the predicted image then serves as the target state, grounding an inverse CoT that reasons about spatial relationships and action intent based on the predicted image; and the final action is generated conditioned on this full reasoning context. Extensive experiments on simulation and real-world benchmarks demonstrate that ThinkingVLA consistently outperforms state-of-the-art baselines, with particularly large gains on long-horizon manipulation tasks."
+  },
+  {
+    "title": "LAGO Policy: Latency-Aware Asynchronous Diffusion Policies with Goal-Directed Collision-Free Planning for Smooth Manipulation",
+    "original_title": "LAGO Policy: Latency-Aware Asynchronous Diffusion Policies with Goal-Directed Collision-Free Planning for Smooth Manipulation",
+    "link": "https://arxiv.org/abs/2606.17982",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.17982v1 Announce Type: new \nAbstract: Diffusion-based visuomotor policies deployed with asynchronous inference often exhibit inter-chunk discontinuities and lack explicit mechanisms for obstacle-aware execution, leading to jerky motions and collisions that hinder reliable manipulation in real-world scenes. To address these issues, we propose LAGO Policy, a unified asynchronous action-generation framework that integrates trajectory optimization with diffusion policy for smooth and safe execution. LAGO Policy improves inter-chunk consistency via latency-aware classifier-free guidance conditioning on future actions. It further enables goal-directed collision-free trajectory planning by predicting a task-relevant interaction goal from demonstrations. Finally, spatial-temporal trajectory optimization refines the actions to be executed for low-jerk and feasible motion. Extensive real-world experiments demonstrate that LAGO Policy achieves smooth collision-free execution with high task success across challenging manipulation tasks. Project Website: https://lago-policy.github.io/"
+  },
+  {
+    "title": "Uncertainty Quantification for Flow-Based Vision-Language-Action Models",
+    "original_title": "Uncertainty Quantification for Flow-Based Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.18043",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18043v1 Announce Type: new \nAbstract: Vision-language-action models (VLAs) combine vision-language backbones with expressive generative action heads trained via flow matching on large-scale robotic datasets. Despite their strong empirical performance in robotic manipulation, VLAs lack mechanisms to quantify confidence in their predictions and to detect when their actions may be unreliable. This presents a critical limitation for real-world deployment in non-stationary environments, where models inevitably encounter scenarios outside their pretraining distribution and may fail without warning. To address this, we derive an efficient method for quantifying epistemic uncertainty in flow-matching models by leveraging velocity-field disagreement (VFD) across a small ensemble. We successfully use this uncertainty estimate for failure detection during deployment and active fine-tuning of flow-based VLAs. To this end, we propose SAVE, a framework for uncertainty-guided active multitask fine-tuning that reduces the number of costly expert demonstrations required to adapt VLAs to new tasks. Through extensive experiments on the LIBERO benchmark, we demonstrate that VFD yields better-calibrated uncertainty estimates predictive of downstream performance, that VFD achieves strong performance in detecting failures, and that uncertainty-guided data acquisition with SAVE requires at least 22% fewer samples than baselines. In summary, our work shows that quantifying epistemic uncertainty in flow-based VLAs improves both failure awareness and adaptation. Project website: tum-lsy.github.io/uq_vla/."
+  },
+  {
+    "title": "EAGG: Embodiment-Aligned Grasp Generation via Geometry-Aware Graph Conditioning",
+    "original_title": "EAGG: Embodiment-Aligned Grasp Generation via Geometry-Aware Graph Conditioning",
+    "link": "https://arxiv.org/abs/2606.18092",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18092v1 Announce Type: new \nAbstract: Cross-end-effector grasp generation seeks a unified model that generalizes across objects and across embodiments ranging from parallel grippers to dexterous end effectors. Existing grasp generators are typically designed for a fixed embodiment or encode embodiment identity with a static descriptor, which weakens transfer when topology, actuation coupling, and contact geometry differ substantially. We present EAGG, an embodiment-aligned grasp generator that represents each embodiment with a topology-aware end-effector graph and an embodiment-specific low-dimensional end-effector control space. A frozen end-effector-cognition backbone converts the current articulated state into geometry-aware tokens that act as a reusable morphology prior, and iterative geometry injection refreshes these tokens throughout sampling so that conditioning remains synchronized with the evolving end-effector geometry. On the MultiGripperGrasp benchmark, EAGG reaches 56.17% average success across six training end effectors, remaining within 1.10 percentage points of specialized training while preserving transfer to finetuning and zero-shot end effectors. Iterative geometry injection further reduces the pooled median contact distance from 0.239 cm to 0.189 cm. These results show that cross-end-effector grasp generation is strengthened by aligning embodiment structure inside a shared generator rather than suppressing embodiment differences. Code is available at https://github.com/wanhaoniu/EAGG."
+  },
+  {
+    "title": "WireCraft: A Simulation Benchmark for Industrial DLO Manipulation",
+    "original_title": "WireCraft: A Simulation Benchmark for Industrial DLO Manipulation",
+    "link": "https://arxiv.org/abs/2606.18097",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18097v1 Announce Type: new \nAbstract: Deformable Linear Objects (DLOs), such as wires and cables, are central to industrial assembly. Unlike rigid objects, whose state is captured by a 6-DoF pose, DLOs have an infinite-dimensional configuration space and deform continuously under contact with grippers, fixtures, and the workspace, making them a demanding benchmark for general dexterous manipulation. Despite their importance, policy development and comparison remain difficult: existing benchmarks are often tied to specific hardware setups, lack modular and customizable task assets, or study generic deformable-object tasks without the fixtures relevant to real-world industrial wire manipulation. Few benchmarks align simulation, real-world data, and shared evaluation protocols. To bridge this gap, we introduce WireCraft, a simulation benchmark for industrial DLO manipulation with configurable difficulty and assets, spanning three task families: connector insertion, clip routing, and channel seating. It supports two complementary DLO physics models, articulated and deformable, and the trajectories come from both simulation and a physical UR5. We benchmark reinforcement learning (RL), imitation learning (IL), and vision-language-action (VLA) policies under shared metrics. Privileged state-based RL solves a representative setting in each task family with over 82\\% success, confirming the tasks are well-posed. For connector insertion, however, the transition from reaching the socket to contact-rich alignment remains a key bottleneck for vision RL, IL, and VLA policies. These results indicate that industrial DLO manipulation, though tractable under privileged state, remains an open challenge for current vision-based learning. The benchmark, data, and tools will be open-sourced upon acceptance."
+  },
+  {
+    "title": "Beyond Failure Recovery: An Engagement-Aware Human-in-the-loop Framework for Robotic Systems",
+    "original_title": "Beyond Failure Recovery: An Engagement-Aware Human-in-the-loop Framework for Robotic Systems",
+    "link": "https://arxiv.org/abs/2606.18189",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.18189v1 Announce Type: new \nAbstract: Conventional human-in-the-loop approaches typically involve users only when a robot encounters failure or uncertainty, treating humans primarily as tools for improving robot performance. However, in many human-centered robotics settings, interaction should support engagement by keeping users involved in decision-making rather than limiting them to failure-driven interventions. This is particularly compelling in physical caregiving, where mobility limitations can reduce users' ability to intervene or modulate the robot's behavior in the moment. As a result, failure-driven interaction policies may relegate users to passive observers for long stretches of the task. For example, a user with mobility limitations may feel less engaged when being continuously and passively fed by a robot. At the same time, overly frequent interaction can be tiring and increase the user's workload.\n  To address this trade-off, we propose Engagement-aware MPC (E-MPC), a user-engagement-aware method that plans interaction to maintain engagement while respecting a workload constraint. E-MPC leverages a user interaction dynamics model that captures how user engagement evolves as a function of both the frequency and type of interaction. Rather than requesting input only when difficulties arise during task execution, the robot proactively considers the user's preferred level of engagement throughout the task, balancing autonomy and interaction while ensuring task success. We evaluate E-MPC in simulation with several ablations and baseline comparisons. Results demonstrate the effectiveness of our approach across diverse user personas. In addition, we conduct a real-world user study with participants with emulated mobility limitations on a robot-assisted bite acquisition system, showing that E-MPC improves user experience while maintaining task success."
+  },
+  {
+    "title": "EBench: Elemental Diagnosis of Generalist Mobile Manipulation Policies",
+    "original_title": "EBench: Elemental Diagnosis of Generalist Mobile Manipulation Policies",
+    "link": "https://arxiv.org/abs/2606.18239",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18239v1 Announce Type: new \nAbstract: We present EBench, a simulation benchmark that diagnoses generalist mobile manipulation policies beyond a single success-rate scalar. EBench comprises 26 diverse and challenging manipulation tasks annotated along 5 capability dimensions and 4 generalization dimensions. We evaluate state-of-the-art generalist manipulation models including $\\pi_0$, $\\pi_{0.5}$, XVLA, and InternVLA-A1, and reveal that models with near success rates exhibit strikingly different capability profiles: $\\pi_{0.5}$ achieves the highest test success rate and the best train--test retention, whereas InternVLA-A1 dominates mobile manipulation but collapses on dexterous tasks, and XVLA exhibits strengths on a disjoint set of atomic skills compared to other policies. Beyond capability profiling, EBench analyzes the generalization ability from 4 representative perspectives, identifying the impact of different distribution shift factors. The results reveal strengths and weaknesses of models behind an overall score. We hope this benchmark offers a broad set of diagnostic signals to guide iteration on generalist manipulation models."
+  },
+  {
+    "title": "WeaveLA: Event Driven Cross-Subtask Latent Memory Weaving for Repetitive Robot Manipulation",
+    "original_title": "WeaveLA: Event Driven Cross-Subtask Latent Memory Weaving for Repetitive Robot Manipulation",
+    "link": "https://arxiv.org/abs/2606.17463",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.17463v1 Announce Type: cross \nAbstract: Vision-Language-Action (VLA) policies have achieved remarkable single-step manipulation, yet they remain brittle precisely where each stage depends on what was just completed. The core issue is structural: short-window VLAs lack an explicit channel for rouxting information across sub-task boundaries, and existing memory-augmented variants either write at every frame, retrieve from demonstration-time stages, or fire at sub-goal events without performing an explicit sub-task-to-sub-task hand-off into the action expert. We identify the sub-goal completion event as the natural temporal unit for cross-subtask memory hand-off, and present WeaveLA (Weave Latent memory for Vision-Language-Action policies), a cross-subtask memory interface that, on top of a frozen VLA backbone, compresses each completed segment into latent tokens via query-driven attention pooling and routes them directly into the action-generation path of the next sub-task. This event-triggered, action-side design preserves the base policy's short-window interface while adding a lightweight cross-subtask channel. Through stratified evaluation on RoboMME with a $\\pi_{0.5}$ backbone, WeaveLA's gains land exactly where the channel is needed: on the hardest repetition slice (SwingXtimes, $N{=}3$), success rises from $0\\%$ to $47.8\\%$, while single-execution episodes remain unchanged. Per-episode paired analysis confirms the gains are confined to tasks whose causal structure requires cross-subtask information."
+  },
+  {
+    "title": "GeneralVLA-2: Geometry-Aware Reconstruction and Governed Memory for Robot Planning",
+    "original_title": "GeneralVLA-2: Geometry-Aware Reconstruction and Governed Memory for Robot Planning",
+    "link": "https://arxiv.org/abs/2606.17480",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.17480v1 Announce Type: cross \nAbstract: Generalist vision-language-action systems need object-centric 3D evidence and reusable manipulation experience to plan reliable robot trajectories. GeneralVLA provides a hierarchical interface for converting language and RGB-D observations into 3D end-effector paths, but two bottlenecks remain. First, monocular SAM3D-style object reconstruction can hallucinate pose and unseen geometry, while manipulation benefits from stable object shape when calibrated multi-view observations are available. Second, the original KnowledgeBank mainly retrieves semantically similar snippets and appends new knowledge, which makes it difficult to control memory quality, conflicts, confidence, and geometric relevance. To address the first challenge, we introduce GeoFuse-MV3D, a geometry-prior-guided MV-SAM3D reconstruction branch that verifies external geometry cues with input-view masks, applies soft visual-hull support, performs axis-wise refinement, and fuses only geometry while preserving appearance. To address the second challenge, we upgrade KnowledgeBank into a governed long-term memory system with explicit quality, confidence, lifecycle, verifier, and conflict metadata, together with precision-oriented retrieval. Finally, we evaluate the reconstruction branch on GSO-30 and the memory module on Terminal-Bench 2.0 and SWE-Bench Verified; GeoFuse-MV3D improves over the MV-SAM3D baseline by reducing CD and LPIPS by 2.20% and 2.02% while increasing PSNR and SSIM by 2.36% and 1.03%, and KnowledgeBank improves over ReasoningBank by 4.53% on Terminal-Bench SR and 3.73% on SWE-Bench resolve rate, while reducing AS by 4.95% and 5.65%, respectively. Code: https://github.com/AIGeeksGroup/GeneralVLA-2. Website: https://aigeeksgroup.github.io/GeneralVLA-2."
   },
   {
     "title": "MTC launches new Robot Experience Centre to accelerate UK automation adoption",
@@ -17917,86 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "iRobot co-founder Colin Angle talks about his latest venture, creating next-gen social robots with Familiar Machines.\nThe post Podcast: Colin Angle discusses building companion robots with Familiar Machines & Magic appeared first on The Robot Report."
-  },
-  {
-    "title": "Brightpick to outline the path to lights-out warehouses at Robotics Summit",
-    "original_title": "Brightpick to outline the path to lights-out warehouses at Robotics Summit",
-    "link": "https://www.therobotreport.com/brightpick-zizka-outline-the-path-to-lights-out-warehouses-at-robotics-summit/",
-    "date": "2026-05-07 12:45",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Jan Zizka, co-founder and CEO of Brightpick, will outline a practical roadmap to more autonomous warehouse operations. \nThe post Brightpick to outline the path to lights-out warehouses at Robotics Summit appeared first on The Robot Report."
-  },
-  {
-    "title": "ABB Robotics launches PickMaster Lite to ‘simplify and accelerate robotic picking’",
-    "original_title": "ABB Robotics launches PickMaster Lite to ‘simplify and accelerate robotic picking’",
-    "link": "https://roboticsandautomationnews.com/2026/05/07/abb-robotics-launches-pickmaster-lite-to-simplify-and-accelerate-robotic-picking/101274/",
-    "date": "2026-05-07 09:52",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "ABB Robotics has launched PickMaster Lite, a streamlined version of its PickMaster software suite designed to help packaging OEMs and system integrators deploy high-speed, vision-guided robotic picking applications more quickly and with less complexity. Offering essential functionality for common picking tasks, PickMaster Lite reduces engineering effort and simplifies system setup, enabling faster commissioning and lower […]"
-  },
-  {
-    "title": "Richtech Robotics named ‘Rookie of the Year’ by Vegas Golden Knights",
-    "original_title": "Richtech Robotics named ‘Rookie of the Year’ by Vegas Golden Knights",
-    "link": "https://roboticsandautomationnews.com/2026/05/07/richtech-robotics-named-rookie-of-the-year-by-vegas-golden-knights/101268/",
-    "date": "2026-05-07 09:40",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Richtech Robotics, a Nevada-based provider of AI-driven robotic solutions, has been named “Rookie of the Year” by the Vegas Golden Knights for the 2025-2026 season, marking a standout first year in the team’s partner ecosystem. The recognition comes as the Golden Knights reach the 2026 NHL Stanley Cup playoffs. As one of the organization’s newest […]"
-  },
-  {
-    "title": "Comau and Aptiv partner on AI-powered robotics and autonomous industrial automation systems",
-    "original_title": "Comau and Aptiv partner on AI-powered robotics and autonomous industrial automation systems",
-    "link": "https://roboticsandautomationnews.com/2026/05/07/comau-and-aptiv-partner-on-ai-powered-robotics-and-autonomous-industrial-automation-systems/101262/",
-    "date": "2026-05-07 09:02",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Industrial automation specialist Comau is collaborating with technology company Aptiv to explore the co-development of next-generation intelligent automation solutions designed to help industrial customers operate more safely, efficiently, and autonomously. The agreement establishes a framework for the two companies to evaluate joint development in key areas of focus including advanced robotics, autonomous systems, and automated […]"
-  },
-  {
-    "title": "Krones unveils ‘first-ever’ use of robotics for container distribution",
-    "original_title": "Krones unveils ‘first-ever’ use of robotics for container distribution",
-    "link": "https://roboticsandautomationnews.com/2026/05/07/krones-unveils-first-ever-use-of-robotics-for-container-distribution/101259/",
-    "date": "2026-05-07 08:52",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Krones says it has had “great success” using robotics to group packs into pallet layers for several years. And now, for the first time, the same principle has been adapted to distribute containers as they approach the packer. With Robobox SynFlow, Krones has brought a new, modular system to market that is the first to […]"
-  },
-  {
-    "title": "New understanding of insect flight points way to stable flapping-wing robots",
-    "original_title": "New understanding of insect flight points way to stable flapping-wing robots",
-    "link": "https://robohub.org/new-understanding-of-insect-flight-points-way-to-stable-flapping-wing-robots/",
-    "date": "2026-05-07 08:41",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "By David Nutt The way bugs and birds flap their wings may look effortless, but the dynamics that keep them aloft are dizzyingly complex and difficult to quantify. Cornell researchers created a computational model that shows the effect of insects’ morphology on stabilizing their flight. The findings could lead to a new way to understand […]"
-  },
-  {
-    "title": "Skyports to collaborate with City of Gold Coast to advance commercial advanced air mobility in region",
-    "original_title": "Skyports to collaborate with City of Gold Coast to advance commercial advanced air mobility in region",
-    "link": "https://roboticsandautomationnews.com/2026/05/07/skyports-to-collaborate-with-city-of-gold-coast-to-advance-commercial-advanced-air-mobility-in-region/101256/",
-    "date": "2026-05-07 08:21",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Skyports Infrastructure, a vertiport development and operations company, has signed a Memorandum of Understanding with the City of Gold Coast, Australia to collaborate on implementing Advanced Air Mobility (AAM) within the city. The MoU was signed between Yun Yuan Tay, head of APAC, Skyports, and Gold Coast Mayor Tom Tate, at the City of Gold […]"
-  },
-  {
-    "title": "Geekplus partners with Mindugar to accelerate warehouse automation adoption across Latin America",
-    "original_title": "Geekplus partners with Mindugar to accelerate warehouse automation adoption across Latin America",
-    "link": "https://roboticsandautomationnews.com/2026/05/07/geekplus-partners-with-mindugar-to-accelerate-warehouse-automation-adoption-across-latin-america/101253/",
-    "date": "2026-05-07 08:12",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Geekplus, one of the world’s largest warehouse robotics companies, and Mindugar, a provider of industrial storage and racking systems in Latin America, have agreed a strategic partnership. This collaboration marks a key milestone in Geekplus’s continued global expansion and reinforces its commitment to enabling next-generation supply chain operations across the LatAm region. Together, Geekplus and […]"
-  },
-  {
-    "title": "Lightwheel Announces $100M in Q1 Orders",
-    "original_title": "Lightwheel Announces $100M in Q1 Orders",
-    "link": "https://humanoidroboticstechnology.com/industry-news/lightwheel-announces-100m-in-q1-orders/",
-    "date": "2026-05-07 07:55",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "Q1 2026 marked a turning point. Not just for Lightwheel, but for the Physical AI industry as a whole. In Q1 2026, Lightwheel closed approximately $100 million in orders across Physical AI infrastructure, including simulation, data generation, evaluation, and deployment-oriented systems. The number matters not as a financial milestone, but as evidence of a larger […]\nThe post Lightwheel Announces $100M in Q1 Orders appeared first on Humanoid Robotics Technology."
   }
 ]
