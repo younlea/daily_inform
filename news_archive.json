@@ -72,6 +72,78 @@
     "summary": "arXiv:2606.17418v1 Announce Type: new \nAbstract: Dexterous robotic hands face a longstanding trade-off among dexterity, compactness, and affordability. Particularly, high-degree-of-freedom designs typically demand complex actuation and transmission, hindering integration into human-scale forms. To address these challenges, this work presents a compact, low-cost linkage-driven anthropomorphic hand that achieves high dexterity, structural integration, and human-hand-like functionality. The hand integrates 20 joints driven by 16 independent actuators, with all actuation, sensing, and transmission components compactly embedded within a human-hand-sized structure. The resulting prototype weighs only 320g at a total cost below USD 400. To meet these objectives, a hybrid mechanical architecture combining planar and spatial linkage mechanisms is proposed, enabling decoupled multidirectional motion, biomimetic joint synergies, and high passive load-bearing capability. The thumb further incorporates biomimetic features supporting human-like reconfiguration and opposition movements. Through the coordinated integration of these mechanisms and structural layout, the prototype achieves a highly integrated design with anthropomorphic dexterity. Experimental evaluations demonstrate that the hand achieves the maximum Kapandji score, reproduces all 33 Feix grasp types, and performs stable grasping and dexterous manipulation across a wide variety of daily objects and tools. These results validate the proposed hand as an affordable, compact, and mechanically efficient platform for dexterous manipulation, teleoperation, and robot learning in human-centered environments."
   },
   {
+    "title": "AnnotateAnything: Automatic Annotation of 3D Assets for Robot Manipulation",
+    "original_title": "AnnotateAnything: Automatic Annotation of 3D Assets for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2606.17446",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.17446v1 Announce Type: new \nAbstract: Simulation enables scalable robot data collection, but raw 3D assets provide only geometry, lacking the semantic, interactive, and physical knowledge needed to specify where and how robots should act. In this work, we present AnnotateAnything, a general automatic annotation framework that converts passive 3D assets into manipulation-ready assets with structured, diverse, and executable manipulation labels. AnnotateAnything is built around two complementary pipelines. First, a unified visual-language annotation pipeline using vision-language reasoning to infer object semantics, interaction constraints, and 3D-grounded cues, providing human-prior guidance for identifying meaningful interaction regions. Second, a fully automatic and massively parallel physics annotation pipeline grounds these priors in each asset's geometry and physical constraints through candidate generation, geometry optimization and trajectory generation. This pipeline produces diverse and executable action annotations, including grasp poses, dexterous contacts, articulation waypoints, insertion directions, hanging affordances, and navigation targets. Using the generated annotations, we further build an asynchronous parallel simulation data-collection system across diverse objects, tasks, and robot embodiments. Experiments demonstrate that AnnotateAnything achieves superior annotation efficiency, data-collection efficiency, and task success rates over existing annotation and data-generation pipelines, while also supporting downstream tasks such as affordance detection, robotic VQA, and visual instruction finetuning. We provide project materials on the project page and plan to release the full code, annotations, and benchmark to facilitate future research. Videos, code, demo assets, and annotations are provided in supplementary materials Project page: https://tourmaline-caramel-169490.netlify.app."
+  },
+  {
+    "title": "GASE: Gaussian Splatting-Based Automated System for Reconstructing Embodied-Simulation Environments",
+    "original_title": "GASE: Gaussian Splatting-Based Automated System for Reconstructing Embodied-Simulation Environments",
+    "link": "https://arxiv.org/abs/2606.17520",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.17520v1 Announce Type: new \nAbstract: Training embodied agents in the real world requires skilled operators and expensive hardware. Simulation environments offer a compelling alternative by enabling large-scale, cost-effective data augmentation. Consequently, rapidly constructing high-fidelity simulation scenes with a minimal sim-to-real gap has become a critical objective in robot learning. While reconstruction-based methods provide superior visual quality, current workflows are hindered by inefficient data acquisition and subpar foreground object extraction. We thus propose GASE, a highly automated system for simulation scene construction. GASE leverages multi-view video streams from panoramic camera arrays to enable rapid environment scanning. To ensure high-quality asset generation, our pipeline introduces a camera-pose-based strategy that robustly extracts objects across frames in the 2D domain, followed by high-fidelity scene inpainting. Foreground objects and the static background are then reconstructed independently and seamlessly imported into physics simulators for policy training. Extensive experiments demonstrate that GASE outperforms existing 3D Gaussian-based methods in segmentation accuracy by over 10\\% while achieving state-of-the-art inpainting quality. Furthermore, real-robot deployments across manipulation and navigation tasks maintains a performance gap of less than 10\\% compared to policies trained purely on real-world data. These results confirm that GASE provides an efficient and highly effective solution for bridging the sim-to-real gap. Code will be released."
+  },
+  {
+    "title": "MuseVLA: An Adaptive Multimodal Sensing Vision-Language-Action Model for Robotic Manipulation",
+    "original_title": "MuseVLA: An Adaptive Multimodal Sensing Vision-Language-Action Model for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.17598",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.17598v1 Announce Type: new \nAbstract: Humans naturally leverage diverse sensing modalities to interact with the physical world, while most Vision-Language-Action (VLA) models for robotics rely solely on RGB observations. This limits their ability to perceive physical properties that are difficult or impossible to infer from RGB cameras, such as temperature, sound, or radar response. We present MuseVLA, an adaptive multimodal sensing VLA model that integrates novel sensors as on-demand tools for robotic manipulation. Given a task instruction and visual context, MuseVLA first generates a sensor token and target description that select the sensing modality to invoke and what to attend to, analogous to a tool call with arguments. It then converts the selected sensor measurement into a grounded sensor image, a unified intermediate representation that encodes heterogeneous readings for multimodal fusion and action generation. This design decouples sensor-specific processing from the VLA backbone, enabling efficient integration of diverse modalities. To reduce the need for expensive multisensory robot datasets, we further introduce a data synthesis pipeline that augments existing RGB video datasets with grounded sensor images, enabling generalization to unseen sensor-guided tasks. We evaluate MuseVLA on a real-world robot across challenging dexterous hand manipulation tasks that require multimodal sensing inputs, including temperature-guided pick-and-place, audio-driven object search, and radar-assisted hidden object retrieval. MuseVLA achieves 80.6% success rate on average, outperforming RGB-only and multisensory VLA baselines significantly, and exhibits strong zero-shot capabilities on unseen tasks."
+  },
+  {
+    "title": "FLAP: FOV-Constrained Active Perception Planning for Prior-Map-Free 3D Navigation",
+    "original_title": "FLAP: FOV-Constrained Active Perception Planning for Prior-Map-Free 3D Navigation",
+    "link": "https://arxiv.org/abs/2606.17630",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.17630v1 Announce Type: new \nAbstract: Safe and efficient trajectory planning in unknown, cluttered 3D environments constitutes a critical bottleneck for deploying Unmanned Aerial Vehicles (UAVs) in real-world applications. This challenge is further exacerbated by the limited field-of-view (FOV) and sensing range of onboard sensors. Many existing methods either make simplistic assumptions about unexplored space or rely on conservative heuristics such as speed limits or fixed perception patterns, reducing efficiency and generalizing poorly across different sensor types. In this work, we propose a novel planning framework that directly integrates active perception into trajectory optimization, thereby improving safety while preserving efficiency. The perception constraints are derived from the UAV's dynamic model and formulated in the sensor coordinate frame, which enables precise handling of FOV geometry. The velocity-triggered activation mechanism enables the planner to balance perception and motion efficiency. We introduce an active perception sub-trajectory segment with parametric start-time optimization, mitigating collision risks from late obstacle detection. Our formulation enables active perception during arbitrary 3D maneuvers, extending beyond prior methods designed mainly for horizontal motion. All constraints and penalties are incorporated into a differentiable optimization problem, so the planner requires only a simple front-end global path for guidance, rather than a computationally expensive perception-aware path generator. Extensive simulations and real-world experiments demonstrate robust performance across diverse unknown environments with varying sensor configurations."
+  },
+  {
+    "title": "HumanoidArena: Benchmarking Egocentric Hierarchical Whole-body Learning",
+    "original_title": "HumanoidArena: Benchmarking Egocentric Hierarchical Whole-body Learning",
+    "link": "https://arxiv.org/abs/2606.17833",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.17833v1 Announce Type: new \nAbstract: Humanoid robots promise whole-body interaction in human-centered environments, but scalable policy learning remains difficult because task-level decision-making and whole-body dynamic execution are tightly coupled. A practical solution is hierarchical control, where a high-level policy predicts intermediate whole-body actions and low-level general motion trackers (GMTs) execute them as stable humanoid motion. However, existing benchmarks rarely evaluate the policy-tracker interface itself, leaving open whether intermediate whole-body actions are executable, robust under task distribution shifts, and transferable across different GMT backends. We introduce HumanoidArena, a simulation-first benchmark for egocentric hierarchical whole-body learning. The benchmark formulates policy learning as a hierarchical decision making problem: a high-level policy converts egocentric vision, proprioception, and instructions into a compact whole-body action, which is subsequently executed by a low-level GMT. Instead of treating the legs as planar transport tools, HumanoidArena emphasizes interactions where lower-body coordination is structurally necessary in task completion. We therefore design 7 leg-critical HOI/HSI tasks in which success requires foot placement, balance maintenance, posture adjustment, and whole-body reorientation. To further diagnose the hierarchical system, we evaluate policies from two complementary perspectives: perturbation-conditioned generalization and GMT-conditioned transfer. Experiments show that hierarchical control enables learned policies to solve diverse leg-critical interactions, but performance is strongly tracker-conditioned and cross-GMT transfer remains fragile. These results position HumanoidArena as a benchmark for studying transferable intermediate action representations and scalable egocentric whole-body policy learning."
+  },
+  {
+    "title": "Qwen-RobotManip Technical Report: Alignment Unlocks Scale for Robotic Manipulation Foundation Models",
+    "original_title": "Qwen-RobotManip Technical Report: Alignment Unlocks Scale for Robotic Manipulation Foundation Models",
+    "link": "https://arxiv.org/abs/2606.17846",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.17846v1 Announce Type: new \nAbstract: Foundation models in language and multimodality achieve strong generalization by aligning heterogeneous data under a unified formulation and training at scale. In this report, we investigate whether this scaling recipe can be applied to robotic manipulation to achieve genuine generalization. This is challenging because, unlike text, manipulation data is heterogeneous by nature, expensive to collect, and narrow in diversity, making alignment and scale simultaneously difficult. We present Qwen-RobotManip, a generalizable Vision-Language-Action foundation model built on Qwen-VL. Qwen-RobotManip introduces a unified alignment framework across the representation, motion, and behavioral dimensions of manipulation, making large-scale multi-source training coherent rather than conflicting. This alignment capability in turn enables Qwen-RobotManip to absorb manipulation data at a scale that prior training regimes could not sustain. A human-to-robot synthesis pipeline converts egocentric hand demonstrations into robot trajectories across 15 platforms, and a rigorous curation pipeline harmonizes heterogeneous datasets. Using only open-source datasets and human videos without proprietary data collection, Qwen-RobotManip constructs a ~38,100-hour pretraining corpus and exhibits emergent generalization capabilities, including zero-shot instruction following, robustness to perturbations, reactive error recovery, and cross-embodiment transfer. We find that standard benchmarks fail to capture pretraining quality and instead adopt OOD settings including RoboCasa365, LIBERO-Plus, EBench, RoboTwin-Clean2Rand, RoboTwin-IF, and RoboTwin-XE. Qwen-RobotManip substantially outperforms prior state-of-the-art models, including $\\pi$0.5, across all OOD settings, ranks 1st in RoboChallenge with a 20% relative improvement, and is validated on real-robot platforms including AgileX ALOHA, Franka, UR, and ARX."
+  },
+  {
+    "title": "WAM-RL: World-Action Model Reinforcement Learning with Reconstruction Rewards and Online Video SFT",
+    "original_title": "WAM-RL: World-Action Model Reinforcement Learning with Reconstruction Rewards and Online Video SFT",
+    "link": "https://arxiv.org/abs/2606.17906",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.17906v1 Announce Type: new \nAbstract: Recent World-Action (WA) models demonstrate strong generalization ability and data efficiency, but they typically rely on expert trajectories for training. This reliance limits their ability to acquire fine-grained manipulation skills beyond the demonstration distribution and prevents them from continuously improving through real-world interaction. To address these limitations, we propose WAM-RL, a reinforcement learning framework that enables joint optimization of the world model and the action model through online interaction with the environment. By allowing the two components to co-evolve, our approach enhances fine-grained control and adaptability. Specifically, a WA model consists of a world model and an actor. We design a tailored reinforcement learning method with hierarchical optimization to coordinate their improvement. On the methodological side, we systematically investigate the effects of applying reinforcement learning to the action model, as well as online training of the world model within an RL setting. Our experiments reveal a key insight: optimizing only the actor yields improvements on short-horizon tasks, but fails to provide significant gains on long-horizon tasks. In contrast, jointly optimizing both the world model and the actor is critical for achieving strong performance in long-horizon settings. Our work is the first to introduce reinforcement learning into the World-Action paradigm, and provides insights into how online optimization of both the action head and the world model impacts overall performance."
+  },
+  {
+    "title": "ThinkingVLA: Interleaved Vision and Language Reasoning for Robotic Manipulation",
+    "original_title": "ThinkingVLA: Interleaved Vision and Language Reasoning for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.17937",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.17937v1 Announce Type: new \nAbstract: Most Vision-Language-Action (VLA) models map observations directly to actions without explicit reasoning, limiting their capacity for reasoning-intensive long-horizon tasks. To address this, existing approaches adopt Chain-of-Thought (CoT) reasoning to enable subgoal decomposition and spatial anticipation. However, those methods lack a unified architecture for effective cross-modal reasoning and fail to explicitly include inverse reasoning ability based on the target state. We argue that manipulation planning naturally decomposes into prediction, anticipating the next visual state, and inverse dynamics, inferring the actions to reach it. Bridging both requires a unified autoregressive architecture that interleaves textual and visual reasoning in a single generation process. We propose \\textbf{ThinkingVLA}, a generative model that realizes this decomposition within a unified Mixture-of-Transformers architecture. ThinkingVLA consists of a forward CoT that identifies the immediate subgoal and guides the visual forecasting; the predicted image then serves as the target state, grounding an inverse CoT that reasons about spatial relationships and action intent based on the predicted image; and the final action is generated conditioned on this full reasoning context. Extensive experiments on simulation and real-world benchmarks demonstrate that ThinkingVLA consistently outperforms state-of-the-art baselines, with particularly large gains on long-horizon manipulation tasks."
+  },
+  {
     "title": "MTC launches new Robot Experience Centre to accelerate UK automation adoption",
     "original_title": "MTC launches new Robot Experience Centre to accelerate UK automation adoption",
     "link": "https://roboticsandautomationnews.com/2026/06/16/mtc-launches-new-robot-experience-centre-to-accelerate-uk-automation-adoption/102595/",
@@ -17926,77 +17998,5 @@
     "source": "Humanoid Tech Blog",
     "category": "humanoid",
     "summary": "Q1 2026 marked a turning point. Not just for Lightwheel, but for the Physical AI industry as a whole. In Q1 2026, Lightwheel closed approximately $100 million in orders across Physical AI infrastructure, including simulation, data generation, evaluation, and deployment-oriented systems. The number matters not as a financial milestone, but as evidence of a larger […]\nThe post Lightwheel Announces $100M in Q1 Orders appeared first on Humanoid Robotics Technology."
-  },
-  {
-    "title": "Scientists and entrepreneurs debate AI’s role in innovation at Finland embassy event",
-    "original_title": "Scientists and entrepreneurs debate AI’s role in innovation at Finland embassy event",
-    "link": "https://roboticsandautomationnews.com/2026/05/07/scientists-and-entrepreneurs-debate-ais-role-in-innovation-at-finland-embassy-event/101237/",
-    "date": "2026-05-07 07:26",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Being invited to the Embassy of Finland in the uppest of upscale neighbourhoods in London, England is a treat Robotics & Automation News was never going to pass up. Quite apart from the importance of the award, the opportunity to experience the ambiance of the area where it seems every grand house you walk past […]"
-  },
-  {
-    "title": "Genesis AI unveils GENE-26.5 robotic manipulation system - Let's Data Science",
-    "original_title": "Genesis AI unveils GENE-26.5 robotic manipulation system - Let's Data Science",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQejFtQXhBaWFtTS12V2xQNlgxWlRkOVBKVV84Y3JjTFdINm9CUFpEbHRER3pDSXpBV1VrVS1nNDNPbmhzdGJueGdaRFZlblA1T3RvYVdLZWNpSHV2Z0ZtdGFuZlZwek1qeE9DbGFyRXh1VUhOSmJXbDZyLTl6NF9KNmk3MC1WNGxkd1JvWmZKSWQ2Y2I1QVVzNFd1TnRjdw?oc=5",
-    "date": "2026-05-07 07:00",
-    "source": "Google News (Global Hand/Gripper)",
-    "category": "hand",
-    "summary": "Genesis AI unveils GENE-26.5 robotic manipulation system  Let's Data Science"
-  },
-  {
-    "title": "China is applying its EV playbook to humanoid robots and the production economics already look familiar - Startup Fortune",
-    "original_title": "China is applying its EV playbook to humanoid robots and the production economics already look familiar - Startup Fortune",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNXR1aXZ5czVnT3F2bTU1d3lnUGpSS3NINDhrakdGaWNBMV9oeTUtdVloVHczNkNFSlQ3WjJ2OE5zUFNzWnFLbUxVam83aU5JdzlyaHBGbG5scWFnbldSWm5QUmtsbHQxTFJTV0Y2SkhaNFprV2JUZDlvMnMtUHVBc1Z2Y09QM2VsSTk3RS1GLUdaOTRkaUZHSmVXRFNlSkVEMU4wamJFamVCMXJZMTJsdlVpOWJYX0ptN1RHTFg4NEREWjczR1IzeDBxYw?oc=5",
-    "date": "2026-05-07 06:31",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China is applying its EV playbook to humanoid robots and the production economics already look familiar  Startup Fortune"
-  },
-  {
-    "title": "Autonomous Laparoscope Control through Unified Mechanics-Based Representation of Multimodal Intraoperative Information",
-    "original_title": "Autonomous Laparoscope Control through Unified Mechanics-Based Representation of Multimodal Intraoperative Information",
-    "link": "https://arxiv.org/abs/2605.04408",
-    "date": "2026-05-07 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.04408v1 Announce Type: new \nAbstract: Laparoscope-holding robots can provide surgeons with a stable laparoscopic field of view (FOV) and reduce the burden on human assistants. To maintain an ideal intraoperative FOV, the robot must continuously adjust the laparoscope pose according to intraoperative information. However, intraoperative multimodal signals, such as position, force/torque, and images, differ markedly in physical meaning and units, making it difficult to build a unified representation and to generate control commands that can be used directly for laparoscope control. To address this issue, we propose a laparoscope-holding robot control method based on unified mechanics modeling of multimodal information. First, we design mapping strategies for multiple intraoperative sources, including position, force/torque, and images, and unify them into an equivalent-wrench representation in the operational space. Then, using a task-priority scheme, we inject the wrenches into the task space and the null space, respectively, and synthesize laparoscope control commands via task-priority projection, thereby achieving consistent representation and coordinated fusion of multimodal information within a single framework. Finally, taking the intraoperative remote center of motion (RCM) position, force/torque sensor readings, and laparoscopic images as examples, we construct an RCM-constraint wrench to enforce the RCM geometric constraint and reduce the contact force at the trocar site, a laparoscope-manipulation wrench to enable compliant dragging, and an instrument-tracking wrench to achieve autonomous visual tracking of the instruments. Experiments on a surgical phantom and in vivo porcine trials demonstrate that the proposed method supports multi-task operation, including compliant laparoscope manipulation and autonomous instrument tracking, while maintaining the RCM constraint and reducing sustained trocar-site loading."
-  },
-  {
-    "title": "HDFlow: Hierarchical Diffusion-Flow Planning for Long-horizon Tasks",
-    "original_title": "HDFlow: Hierarchical Diffusion-Flow Planning for Long-horizon Tasks",
-    "link": "https://arxiv.org/abs/2605.04525",
-    "date": "2026-05-07 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.04525v1 Announce Type: new \nAbstract: Recent advances in generative models have shown promise in generating behavior plans for long-horizon, sparse reward tasks. While these approaches have achieved promising results, they often lack a principled framework for hierarchical decomposition and struggle with the computational demands of real-time execution, due to their iterative denoising process. In this work, we introduce Hierarchical Diffusion-Flow (HDFlow), a novel hierarchical planning framework that optimally leverages the strengths of diffusion and rectified flow models to overcome the limitations of single-paradigm generative planners. HDFlow employs a high-level diffusion planner to generate sequences of strategic subgoals in a learned latent space, capitalizing on diffusion's powerful exploratory capabilities. These subgoals then guide a low-level rectified flow planner that generates smooth and dense trajectories, exploiting the speed and efficiency of ordinary differential equation (ODE)-based trajectory generation. We evaluate HDFlow on four challenging furniture assembly tasks in both simulation and real-world, where it significantly outperforms state-of-the-art methods. Furthermore, we also showcase our method's generalizability on two long-horizon benchmarks comprising diverse locomotion and manipulation tasks. Project website: https://hdflow-page.github.io/"
-  },
-  {
-    "title": "Right Model, Right Time: Real-Time Cascaded-Fidelity MPC for Bipedal Walking",
-    "original_title": "Right Model, Right Time: Real-Time Cascaded-Fidelity MPC for Bipedal Walking",
-    "link": "https://arxiv.org/abs/2605.04607",
-    "date": "2026-05-07 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.04607v1 Announce Type: new \nAbstract: This paper presents a multi-phase whole-body model predictive control approach for bipedal walking, combining a detailed whole-body model in the near horizon with a simplified single-rigid-body model in the later prediction steps. This reduces computational complexity while retaining prediction capabilities. The resulting nonlinear optimal control problem is solved using sequential quadratic programming (SQP) in acados. Using a prior specified contact schedule and a target walking speed, the controller optimizes joint torques without depending on prior selected foot step locations. The controller is validated in MuJoCo simulation on the 18-DoF bipedal robot HyPer-2"
-  },
-  {
-    "title": "Active Contact Sensing for Robust Robot-to-Human Object Handover",
-    "original_title": "Active Contact Sensing for Robust Robot-to-Human Object Handover",
-    "link": "https://arxiv.org/abs/2605.04610",
-    "date": "2026-05-07 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.04610v1 Announce Type: new \nAbstract: Robot-to-human object handover is an essential skill for robot assistants, from serving drinks at home to passing surgical tools in the operating room. We expect robots to perform handover robustly -- to release the object only after a firm human grasp while ignoring incidental touches. Existing passive-sensing methods struggle to generalize across diverse objects and human behaviors, as they lack informative perturbations to disambiguate different contact conditions, such as firm grasp versus incidental touch. We propose an active sensing approach for robust handovers: the robot applies information-gathering motions and senses the resulting human-applied forces to infer the contact state. A firm grasp produces forces in multiple directions, while an accidental touch does not. To capture this distinction, we model the contact state with a Bayesian linear model: a distribution over piecewise-linear mappings from robot motions to human-applied forces. This model enables firm grasp detection and active information gathering. In experiments with 12 participants and 30 diverse rigid objects, our method achieved a 97.5% success rate -- over 30% higher than two common baselines."
-  },
-  {
-    "title": "From Reach to Insert: Tactile-Augmented Precision Assembly under Sub-Millimeter Tolerances",
-    "original_title": "From Reach to Insert: Tactile-Augmented Precision Assembly under Sub-Millimeter Tolerances",
-    "link": "https://arxiv.org/abs/2605.04649",
-    "date": "2026-05-07 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.04649v1 Announce Type: new \nAbstract: High-precision assembly frequently involves tight-tolerance insertions, where even slight pose errors can cause jamming or excessive interaction forces, making robust and safe insertion policies difficult to obtain. This paper proposes a tactile-augmented two-stage method that combines Imitation Learning (IL) and Reinforcement Learning (RL) for precision insertion tasks. In the first stage, IL learns a reaching policy with position generalization that grasps the peg and brings it to the vicinity of the target region. In the second stage, RL executes the insertion and enables recovery from failures during contact-rich interactions. To better exploit tactile feedback, we introduce tactile group sampling to increase coverage of critical contact segments during training, and design a tactile critic to more accurately evaluate policy values, improving insertion performance while maintaining low contact forces. We conduct systematic experiments across five hole geometries and three clearance settings. Results show that our method substantially improves insertion performance across all settings; under the most challenging 0.05\\,mm clearance, it achieves a 67\\% success rate while keeping contact forces low, reducing the maximum interaction force by 60\\% and torque by 44\\%, thereby validating both effectiveness and safety for precision assembly."
   }
 ]
