@@ -135,6 +135,78 @@
     "summary": "PSYONIC is combining its Ability Hand with ABB Robotics' GoFa cobot arm to apply data from prosthetics users to robotic grasping.\nThe post PSYONIC partners with ABB Robotics to apply human touch to robot dexterity appeared first on The Robot Report."
   },
   {
+    "title": "TacStyle: Personalizing Tactile Robot Policies using Structured Behavior Representations",
+    "original_title": "TacStyle: Personalizing Tactile Robot Policies using Structured Behavior Representations",
+    "link": "https://arxiv.org/abs/2606.14862",
+    "date": "2026-06-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.14862v1 Announce Type: new \nAbstract: Robotic systems that assist humans should be capable of adapting their behaviors to individual user preferences. For instance, users may want a robot arm to adjust the amount of force it applies while folding their laundry or cleaning furniture. Natural language provides an intuitive way for humans to communicate such preferences. Recent progress in language-conditioned robot policies has shown that robots can successfully use language prompts to determine what task to perform. However, extending the same approach to realize how the task should be performed requires detailed labels describing the preferences or styles of trajectories in the task data. Not only is collecting such annotations challenging, but conditioning directly on these labels may also fail to provide fine-grained control over a continuous range of behaviors. For example, it can be difficult to convey the exact force that a robot must apply through abstract instructions like \"apply a bit more pressure than before\". Therefore, in this work, we propose using language to reason over preferred behaviors instead of directly generating them. We first learn a structured latent representation that organizes user preferences according to differences in the corresponding trajectories. Then, given a preference prompt, we use a foundation model to interpret this latent space and choose a value that produces the desired behavior. Through both simulation and real-world experiments, we show that selecting robot behaviors from an intuitively structured latent space enables more precise adaptation to user preferences while requiring significantly fewer preference labels than language-conditioned policies."
+  },
+  {
+    "title": "Inference-time Policy Steering via Vision and Touch",
+    "original_title": "Inference-time Policy Steering via Vision and Touch",
+    "link": "https://arxiv.org/abs/2606.14981",
+    "date": "2026-06-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.14981v1 Announce Type: new \nAbstract: Inference-time steering adapts pre-trained generative robot policies during deployment by verifying candidate actions before execution. While prior methods typically perform this verification only with visual observations, vision alone is often insufficient for contact-rich manipulation, where success depends on both global task progress and subtle local interactions such as contact force. We introduce ViTaL, a visuo-tactile inference-time steering framework that formulates multimodal guidance as a bi-level optimization problem. At the high level, visual sampling-and-verification performs long-horizon mode selection, deciding what behavior the robot should execute. At the low level, tactile-guided diffusion editing refines the selected action sequence over a shorter horizon to satisfy local contact requirements. To support outcome-based steering, ViTaL learns a visuo-tactile latent world model and employs semantically aligned visual and tactile verifiers, including a novel text-conditioned tactile reward that scores predicted tactile futures directly in latent space. Across three real-world contact-rich manipulation tasks, ViTaL improves overall success by 51% over the base policy, outperforms unimodal steering by at least 33%, and exceeds naive multimodal fusion by at least 20%. Website: https://yilin-wu98.github.io/vital_website."
+  },
+  {
+    "title": "LV-Calib: LiDAR-Camera Extrinsic Calibration with Boundary-Response Modeling",
+    "original_title": "LV-Calib: LiDAR-Camera Extrinsic Calibration with Boundary-Response Modeling",
+    "link": "https://arxiv.org/abs/2606.15010",
+    "date": "2026-06-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.15010v1 Announce Type: new \nAbstract: We present LV-Calib, a calibration framework for LiDAR-camera extrinsic estimation and LiDAR boundary-response calibration using a printable planar target. The target serves as a shared observation carrier: visual fiducials provide indexed image measurements, while circular reflectivity boundaries provide LiDAR-observable structural feature points. Instead of directly fitting boundary points as ideal geometric contours, LV-Calib automatically crops background points, estimates the target plane, and iteratively refines accurate LiDAR-side 3-D feature points from intensity and geometric constraints. The refinement explicitly handles the broadened and distorted transition band induced by finite beam footprint and mixed-intensity returns around black-white reflectivity discontinuities. Given these refined LiDAR features, we formulate a weighted reprojection-consistent extrinsic optimization with LiDAR feature alignment, where image observations are kept in the reprojection domain and LiDAR feature residuals are weighted by refinement confidence. Finally, using the estimated extrinsic and the extracted transition band, LV-Calib calibrates the LiDAR boundary response by estimating pitch-yaw-range residual statistics of boundary-overlap samples. Experiments on printed-board calibration data demonstrate sub-pixel reprojection accuracy, millimeter-level LiDAR feature consistency, and improved odometry performance. Code and calibration data will be released for reproducible evaluation."
+  },
+  {
+    "title": "Steering Autoregressive Vision-Language-Action Policies via Action Token Intervention",
+    "original_title": "Steering Autoregressive Vision-Language-Action Policies via Action Token Intervention",
+    "link": "https://arxiv.org/abs/2606.15021",
+    "date": "2026-06-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.15021v1 Announce Type: new \nAbstract: We present Token Steering (TS), a method for dynamically steering trajectories generated by an autoregressive vision-language-action (VLA) model through direct intervention in the action-token space. TS injects low-dimensional user inputs into the model's native action-token representation, allowing users to influence trajectory generation without modifying the underlying vision-language model (VLM) architecture. Because TS operates entirely at inference time, it requires no additional training or finetuning. User inputs guide rather than override the pretrained policy, allowing users to influence robot actions while preserving the dexterity, smoothness, and task priors learned by the VLA. We evaluate TS on two household manipulation tasks -- drawer closing after object placement and state-aware object swapping -- and improve success rates from 10.0% to 72.5% and from 16.7% to 93.8%, respectively. By enabling lightweight, intuitive steering over robot foundation models, our interface has the potential to improve human-robot interaction in consumer environments and broaden accessibility for individuals with limited physical control. Project website: https://jasontchan.github.io/token-steering/ ."
+  },
+  {
+    "title": "Exact, Efficient, and Safe Occlusion-Aware Planning Using AH-Polyhedrons",
+    "original_title": "Exact, Efficient, and Safe Occlusion-Aware Planning Using AH-Polyhedrons",
+    "link": "https://arxiv.org/abs/2606.15046",
+    "date": "2026-06-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.15046v1 Announce Type: new \nAbstract: Safely handling occlusions is a fundamental challenge for autonomous mobile robots operating in dynamic environments. This issue is especially prominent in autonomous valet parking (AVP), where traffic rules are lax, occlusions are frequent and cluttered, and overly conservative behavior can leave vehicles stuck. However, existing methods either lack formal safety guarantees, assume agents follow road structures, or introduce conservatism, leaving occlusion-aware planning for AVP an open challenge. In this paper, we propose APRO (AH-Polyhedron Reachability for Occlusions), an exact and efficient occlusion-aware planning framework based on game-theoretic active perception and AH-polyhedron reachability analysis with AVP as our canonical use case. Our key insight is to reformulate set-based safety conditions in prior work as unions of AH-polyhedrons, enabling exact safety verification through linear programming (LP) without any additional conservatism in set computations or assumptions on road topology. We further show how the resulting safety conditions can be integrated into optimization-based planners or a bisection search scheme for real-time applications. We validate our method in simulation and hardware experiments, including data replay on a real-world parking lot dataset. Experimental results demonstrate that our method consistently achieved a 100% safety rate across all evaluated scenarios while maintaining real-time performance, resulting in safer and more optimal decisions than existing methods with formal safety guarantees."
+  },
+  {
+    "title": "DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects",
+    "original_title": "DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects",
+    "link": "https://arxiv.org/abs/2606.15133",
+    "date": "2026-06-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.15133v1 Announce Type: new \nAbstract: Dexterous interaction with articulated objects is important for household, assistive, and humanoid manipulation, where multi-finger hands can provide compliant contact patterns beyond parallel-jaw grasping. However, articulated-object manipulation differs from static-object manipulation: the target part cannot be directly actuated, and its motion must emerge through sustained physical hand--handle contact. This makes the transition from object-centric articulated generation to hand-driven dexterous hand--object interaction non-trivial, since geometric trajectory replay or open-loop execution does not model the contact dynamics required to move the articulated part. Moreover, policies trained only for task completion under fixed dynamics can overfit nominal contact loads, especially without tactile or force feedback, and may degrade when the contact load changes. To address these challenges, we present DragMesh-2, a contact-driven framework for dexterous interaction with articulated objects that extends articulated interaction from object-centric generation to hand-driven dexterous hand--object interaction, where articulated motion must arise through physical contact. We further propose PICA, a physically informed contact-aware training mechanism that injects physical signals into policy learning without tactile or force feedback, improving robustness and task success under changing contact loads. Finally, we conduct systematic evaluation across multiple damping conditions and articulated-object categories to study robustness under contact-load variation, and provide a pure-geometry dexterous interaction resource to support future loco-manipulation and humanoid hand--object interaction research. Across seven GAPartNet objects, DragMesh-2 achieves stronger robustness under contact-load variation than the compared methods while maintaining high task success across damping conditions."
+  },
+  {
+    "title": "MimicIK: Real-Time Generative Inverse Kinematics from Teleoperation with FK Consistency",
+    "original_title": "MimicIK: Real-Time Generative Inverse Kinematics from Teleoperation with FK Consistency",
+    "link": "https://arxiv.org/abs/2606.15148",
+    "date": "2026-06-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.15148v2 Announce Type: new \nAbstract: Inverse kinematics (IK) remains a critical bottleneck for real-time robot manipulation. Classical numerical solvers achieve high geometric precision but often suffer from discontinuous branch switching and unstable behavior near kinematic singularities during closed-loop deployment. Meanwhile, learned IK approaches frequently struggle to balance spatial accuracy, motion smoothness, and real-time efficiency, particularly when trained on noisy human teleoperation data. We present \\textbf{MimicIK}, a real-time generative inverse kinematics framework that learns smooth and robust joint-space motion priors from teleoperation demonstrations through conditional flow matching. Given the current joint configuration and a target end-effector pose, MimicIK predicts continuous delta-joint commands using an efficient two-step iterative refinement process based on a Minimal Iterative Policy (MIP) backbone. To enforce physical consistency, we further introduce an FK consistency loss, a differentiable forward-kinematics regularization that penalizes task-space deviations from the target pose during training. We evaluate MimicIK on a real-world 6-DOF robot dataset containing 8,848 teleoperation demonstrations. MimicIK achieves a mean position error of 4.65 mm, a 10 mm success rate of 92.01\\%, and a trajectory spike rate of only 7.99\\%. Compared with a UNet diffusion baseline, our method improves both spatial accuracy and motion smoothness while reducing inference latency from 21.66 ms to 6.74 ms. Furthermore, unlike deterministic MLP baselines that catastrophically diverge under out-of-distribution deployment, MimicIK remains stable near singular configurations and enables robust 20 Hz real-time control on deployment hardware."
+  },
+  {
+    "title": "Seam-to-Graph Reconstruction for Garment Configuration Alignment",
+    "original_title": "Seam-to-Graph Reconstruction for Garment Configuration Alignment",
+    "link": "https://arxiv.org/abs/2606.15171",
+    "date": "2026-06-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.15171v1 Announce Type: new \nAbstract: Seams encode rich structural information about garments but are frequently partially observable in robotic manipulation scenarios. To robustly leverage seam information, we propose a Seam-to-Graph network based on graph neural networks and attention mechanisms. This network maps unstructured seam observations to a topology-encoded structural skeleton graph for real-time garment state estimation. Using this skeleton-graph-based state estimation, we design a deformation-aware, hierarchical visual servoing controller for garment configuration alignment. We implement this controller on a bimanual robot system to load a garment onto a screen printing platen and to align it to the desired configuration precisely. Real-robot experiments demonstrate that the robot using the proposed method not only achieves human-level alignment accuracy with reduced variance in alignment error but is also robust to different garments. These results demonstrate that the use of seam information is effective for garment manipulation."
+  },
+  {
     "title": "China's 'Robot Lovers' Draw 2.2 Billion Won in Pre-Orders in 10 Days - Seoul Economic Daily",
     "original_title": "China's 'Robot Lovers' Draw 2.2 Billion Won in Pre-Orders in 10 Days - Seoul Economic Daily",
     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOV1Q4MGxUaXh1T3FwdFQwQUJTMFEyaHVBMFlVblNlMWxyelhDTEpVWUc4ZGhXU3dnTlpzYXFVZFExOVJhUVBBek5XTDBUUjJiVkoxMmxqNU4tcEhCamFMWTlpSW1WbjdKOWc2Q3d2Y3U0aVhhQmw0b0REbm1lZHlySEp3bllZcXRpMkF2UTlyd09VN09SVjJiXzdyeklWT0RtN1Q4TnhtMk1BLVk?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2604.28192v2 Announce Type: replace \nAbstract: Robotic foundation models require reasoning over complex visual scenes to execute adaptive actions in dynamic environments. While recent studies on latent-reasoning Vision-Language-Action (VLA) models have demonstrated the capability to capture fine-grained physical dynamics, they remain predominantly confined to static imitation learning, severely limiting their adaptability and generalization. In this paper, we present LaST-R1, a novel reinforcement learning (RL) post-training framework designed to effectively harness \"latent reasoning-before-acting\" policies. Specifically, we propose Latent-to-Action Policy Optimization (LAPO), a core RL algorithm that jointly optimizes the latent reasoning process and the action generation. By explicitly embedding latent Chain-of-Thought (CoT) reasoning directly within the RL optimization loop, LAPO stimulates profound physical world modeling, which in turn drives robust execution in interactive environments. Furthermore, an adaptive latent CoT mechanism is introduced, allowing the policy to dynamically modulate its reasoning horizon based on diverse environment states. Experiments show that LaST-R1 achieves a near-perfect 99.9% average success rate on the LIBERO benchmark with only one-shot supervised warm-up, significantly improving convergence speed and performance over prior state-of-the-art (SOTA) methods. In real-world deployments, LaST-R1 yields up to a 22.5% average improvement over SOTA supervised fine-tuning approach across four complex tasks, including both single-arm and dual-arm settings. Finally, LaST-R1 demonstrates strong generalization across simulated and real-world environments."
-  },
-  {
-    "title": "AnyPos: Automated Task-Agnostic Actions for Bimanual Manipulation",
-    "original_title": "AnyPos: Automated Task-Agnostic Actions for Bimanual Manipulation",
-    "link": "https://arxiv.org/abs/2507.12768",
-    "date": "2026-05-07 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2507.12768v2 Announce Type: replace-cross \nAbstract: Learning generalizable manipulation policies hinges on data, yet robot manipulation data is scarce and often entangled with specific embodiments, making both cross-task and cross-platform transfer difficult. We tackle this challenge with task-agnostic embodiment modeling, which learns embodiment dynamics directly from task-agnostic action data and decouples them from high-level policy learning. By focusing on exploring all feasible actions of the embodiment to capture what is physically feasible and consistent, task-agnostic data takes the form of independent image-action pairs with the potential to cover the entire embodiment workspace, unlike task-specific data, which is sequential and tied to concrete tasks. This data-driven perspective bypasses the limitations of traditional dynamics-based modeling and enables scalable reuse of action data across different tasks. Building on this principle, we introduce AnyPos, a unified pipeline that integrates large-scale automated task-agnostic exploration with robust embodiment modeling through inverse dynamics learning. AnyPos generates diverse yet safe trajectories at scale, then learns embodiment representations by decoupling arm and end-effector motions and employing a direction-aware decoder to stabilize predictions under distribution shift, which can be seamlessly coupled with diverse high-level policy models. In comparison to the standard baseline, AnyPos achieves a 51% improvement in test accuracy. On manipulation tasks such as operating a microwave, toasting bread, folding clothes, watering plants, and scrubbing plates, AnyPos raises success rates by 30-40% over strong baselines. These results highlight data-driven embodiment modeling as a practical route to overcoming data scarcity and achieving generalization across tasks and platforms in visuomotor control. Project page: https://embodiedfoundation.github.io/vidar_anypos."
-  },
-  {
-    "title": "Boston Dynamics Unveils Advanced Atlas Humanoid as Industrial AI Robot Race Accelerates - Korea IT Times",
-    "original_title": "Boston Dynamics Unveils Advanced Atlas Humanoid as Industrial AI Robot Race Accelerates - Korea IT Times",
-    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBpd1JVQUhfQVZoMVBfNFMtZUxfQ0NMdkJCRzhMazdLdU9vbkVZUF9XRVpfa2lvYTZnNTJKZVFlUnVjUzlkYTBXQVZSSXZoMGJpbGQwNXAyRnBLQWpLc3BYeExEaDNuajJhMnhGVzlTaw?oc=5",
-    "date": "2026-05-07 03:57",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "Boston Dynamics Unveils Advanced Atlas Humanoid as Industrial AI Robot Race Accelerates  Korea IT Times"
-  },
-  {
-    "title": "Boston Dynamics Unveils Advanced Atlas Humanoid as Industrial AI Robot Race Accelerates - Korea IT Times",
-    "original_title": "Boston Dynamics Unveils Advanced Atlas Humanoid as Industrial AI Robot Race Accelerates - Korea IT Times",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9VeWVfRnk4S0pPemEyTXR2ZUtzX3NDdS1qdGk3dFdzSkhmUHRkUXc3Y1NOczBnN09iTFBPWVlzTGVwWUd4VWRSRGFoczVlMFU2SkZLRmR2TFh4a0tHQ25mamZoQkUzOHQtWlF6cWoxMzQ?oc=5",
-    "date": "2026-05-07 03:57",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "Boston Dynamics Unveils Advanced Atlas Humanoid as Industrial AI Robot Race Accelerates  Korea IT Times"
-  },
-  {
-    "title": "Chinese humanoid robots expand global industrial roles, boost battery lines - CHOSUNBIZ - Chosunbiz",
-    "original_title": "Chinese humanoid robots expand global industrial roles, boost battery lines - CHOSUNBIZ - Chosunbiz",
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOdUhjZE9oWlZDSW1QY2x6d2xzLWlQbk1mcmF0YnZXdHQ1Nk1wRjRDNmttb291SWU0Qy1HeEZ5VFA1ZjF6YTFxMmlBVVdIVUppUzJQYUlpUmZucEtyekgwcXFSaHRTdEtxSkpsWHNZUnFQeDVmN0VtRHIxNm1Zck1jT2pB0gGWAUFVX3lxTE96dWZIdmRPXzE5MDVMSUJkOWZNWUxxYVA5YTVPeE5JZmtTYnl3YnZMUm1VT1BFTy0zM190QnJkWXFLYjdlS19FRGxGeElDZlZpb29jQkdpS2RvWEYyN29lMlFsWUJHcW1FOVVWU1AtTmtnU3hSYXUwWkJUOTVFVkFtY28zeUhSM0RZNkRWLVZtTzFlWmZaZw?oc=5",
-    "date": "2026-05-07 02:32",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese humanoid robots expand global industrial roles, boost battery lines - CHOSUNBIZ  Chosunbiz"
-  },
-  {
-    "title": "[미르의 알기쉬운 비즈니스]현대차의 '아틀라스' 체조…\"로봇이 유연하면 돈이 된다\" - 미디어펜",
-    "original_title": "[미르의 알기쉬운 비즈니스]현대차의 '아틀라스' 체조…\"로봇이 유연하면 돈이 된다\" - 미디어펜",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1XWlJmQS1rOGVMUmNKalBZWWlpVE11UHVkN2lwcXBUWGdDcE4yM1pTWlNXU1dwc216czk3c0UyckJHMlBreXBlMWZsWXVBQU05VmxpbGlwcGnSAVhBVV95cUxNV1pSZkEtazhlTFJjSmpQWVlpaVRNdVB1ZDdpcHFwVFhnQ3BOMjNaU1pTV1NXcHNtenM5N3NFMnJCRzJQa3lwZTFmbFl1QUFNOVZsaWxpcHBp?oc=5",
-    "date": "2026-05-06 23:51",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "[미르의 알기쉬운 비즈니스]현대차의 '아틀라스' 체조…\"로봇이 유연하면 돈이 된다\"  미디어펜"
-  },
-  {
-    "title": "Why most automation programmes plateau between cell and line",
-    "original_title": "Why most automation programmes plateau between cell and line",
-    "link": "https://roboticsandautomationnews.com/2026/05/06/why-most-automation-programmes-plateau-between-cell-and-line/101234/",
-    "date": "2026-05-06 21:19",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "A Tier 1 automotive supplier with three plants across central Europe finished its 2025 capex review with a slide that had been written four years running. Eighty-six robots installed across the body-in-white area, cycle time at every cell inside its commissioning envelope, OEE figures the line manager could quote without checking. Then, on the next […]"
-  },
-  {
-    "title": "How Valesnova Limited Uses AI to Stop Fraud in Cross-Border Payments",
-    "original_title": "How Valesnova Limited Uses AI to Stop Fraud in Cross-Border Payments",
-    "link": "https://roboticsandautomationnews.com/2026/05/06/ai-fraud-detection-cross-border-payments-valesnova-limited/101227/",
-    "date": "2026-05-06 20:47",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Every time money crosses a border, something interesting happens behind the scenes. Within milliseconds, dozens of checks run quietly in the background – verifying identities, flagging unusual patterns, and deciding whether a transaction should proceed or stop. Most people never see any of it. But for payment companies, that invisible layer is the difference between […]"
-  },
-  {
-    "title": "The Scaling Problem No Ad Agency Talks About – and How Quamly Corp. Solves it Across the U.S. Market",
-    "original_title": "The Scaling Problem No Ad Agency Talks About – and How Quamly Corp. Solves it Across the U.S. Market",
-    "link": "https://roboticsandautomationnews.com/2026/05/06/scaling-problem-ad-agencies-ignore-quamly-corp-us-market/101220/",
-    "date": "2026-05-06 20:14",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Most growing businesses know the moment. Sales are climbing, the team is bigger than last quarter, and marketing is humming. On paper, everything’s on track. Then something quietly slips. Nothing breaks loudly. No error message, no obvious mistake. The business grows, but the operations behind it can’t keep up. Marketing runs one playbook. Finance runs […]"
   }
 ]
