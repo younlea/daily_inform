@@ -1,5 +1,23 @@
 [
   {
+    "title": "ABB Robotics and PSYONIC Use Human-Generated Data to Advance Robotic Dexterity - 매일타임즈",
+    "original_title": "ABB Robotics and PSYONIC Use Human-Generated Data to Advance Robotic Dexterity - 매일타임즈",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5pNEJ0LTk0RUNidlBqcHl0aFVWeXptSDhXRnozQVctNDV0Q2xsN3lkVXZnMnl6bDh5MGxSMXFTc0VlWExkb3kyWDZOYlhfS2J2TjFRb1dISGNaTHU0anc?oc=5",
+    "date": "2026-06-17 08:10",
+    "source": "Google News (Robot Hand)",
+    "category": "hand",
+    "summary": "ABB Robotics and PSYONIC Use Human-Generated Data to Advance Robotic Dexterity  매일타임즈"
+  },
+  {
+    "title": "Genesis AI launches first general-purpose humanoid robot",
+    "original_title": "Genesis AI launches first general-purpose humanoid robot",
+    "link": "https://roboticsandautomationnews.com/2026/06/17/genesis-ai-launches-first-general-purpose-humanoid-robot/102623/",
+    "date": "2026-06-17 08:01",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Genesis AI, a “global full-stack robotics company”, has unveiled Eno, the company’s first general-purpose robot. The company describes Eno as “a next-generation robot that breaks free from traditional form factors through its minimalist design”. GENE, Genesis AI’s foundation model and the industry’s most advanced robotic brain, will operate Eno as a true physical agent: reasoning, […]"
+  },
+  {
     "title": "Raymond partners with Third Wave Automation to expand physical AI across lift truck fleets",
     "original_title": "Raymond partners with Third Wave Automation to expand physical AI across lift truck fleets",
     "link": "https://roboticsandautomationnews.com/2026/06/17/raymond-partners-with-third-wave-automation-to-expand-physical-ai-across-lift-truck-fleets/102620/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.06481v1 Announce Type: new \nAbstract: World Action Models (WAMs) enhance Vision-Language-Action policies by jointly predicting scene evolution and robot actions, but existing methods usually represent the predicted world as holistic images, video tokens, or global latents. These representations are difficult for an action decoder to address when an instruction refers to a particular object, especially under scene shifts where object identity is entangled with context. We propose OA-WAM, an Object-Addressable World Action Model for robust robot manipulation. OA-WAM decomposes each frame into N+1 slot states, with one robot slot and N object slots. Each slot contains a persistent address vector and a time-varying content vector, and is fused with text, image, proprioception, and past-action tokens in a block-causal sequence. A world head predicts next-frame slot states, while a flow-matching action head decodes a 16-step continuous action chunk in the same forward pass. Addressability is enforced by routing cross-slot attention through address-only keys and resetting the address slice at every transformer layer, separating which object to act on from what that object currently is without adding extra tokens. OA-WAM matches strong VLA and WAM baselines on LIBERO (97.8%) and SimplerEnv (79.3%), reaches state-of-the-art performance on the most relevant LIBERO-Plus geometric axes, and remains competitive on the seven-axis aggregate. A causal slot-intervention test yields a swap-binding cosine of 0.87, versus at most 0.09 for holistic baselines. These results suggest that addressable object states provide an effective interface for robust world-action modeling under scene perturbations."
-  },
-  {
-    "title": "Multi-Robot Coordination in V2X Environments",
-    "original_title": "Multi-Robot Coordination in V2X Environments",
-    "link": "https://arxiv.org/abs/2605.06662",
-    "date": "2026-05-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.06662v1 Announce Type: new \nAbstract: This paper presents a Vehicle-to-Everything (V2X) communication framework that enables decentralized cooperation among social robots operating in complex urban traffic environments. Building on ETSI Cooperative Awareness and Maneuver Coordination services, the framework introduces two robot-centric facility-layer services: the Robot Awareness Service (RAS) and the Robot Maneuver Coordination Service (RMCS), realized through the Robot Awareness Message (RAM) and the Robot Maneuver Coordination Message (RMCM), respectively. RAS enables role-aware, task-oriented robot awareness while integrating externally detected Vulnerable Road Users (VRUs), including non-V2X pedestrians, into cooperative awareness. RMCS supports event-driven, low-latency coordination of robot maneuvers under explicitly established roles, without centralized infrastructure or prior pairing. A real-world proof of concept demonstrates deterministic multi-robot coordination between a humanoid robot and a quadrupedal robot assisting a pedestrian during a road-crossing scenario, governed by a formally specified finite-state coordination model. Complementary simulations evaluate robot-mediated VRU clustering in mixed V2X environments, showing that RAS-based clustering integrates non-V2X VRUs in safety-critical areas while reducing redundant transmissions from V2X-enabled VRUs, thereby lowering channel load. Together, the proposed services provide a scalable and standards-aligned foundation for integrating cooperative robots into future Connected, Cooperative, and Automated Mobility ecosystems."
-  },
-  {
-    "title": "TriRelVLA: Triadic Relational Structure for Generalizable Embodied Manipulation",
-    "original_title": "TriRelVLA: Triadic Relational Structure for Generalizable Embodied Manipulation",
-    "link": "https://arxiv.org/abs/2605.05714",
-    "date": "2026-05-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.05714v1 Announce Type: cross \nAbstract: Vision-language-action (VLA) models perform well on training-seen robotic tasks but struggle to generalize to unseen scenes and objects. A key limitation lies in their implicit visual representations, which entangle object appearance, background, and scene layout. This makes policies sensitive to visual variations. Prior work improves transferability through structured intermediate representations that objectify visual content. However, these representations mainly capture scene semantics instead of action-relevant relations. As a result, action prediction remains tied to appearance statistics. We observe that manipulation actions depend on the object-hand-task relational structure, which governs interactions among task requirements, robot states, and object properties. Based on this observation, we propose TriRelVLA, a triadic relational VLA framework for generalizable embodied manipulation. Our approach consists of three components: 1) We construct explicit object-hand-task triadic representations from multimodal inputs as relational primitives. 2) We build a task-grounded relational graph. Task-guided cross-attention forms nodes, and a relation-aware graph transformer models interactions among them. 3) We perform relation-conditioned action generation. The relational structure is compressed into a bottleneck space and projected into the LLM for action prediction. This triadic relational bottleneck reduces reliance on appearance statistics and enables transfer across scenes, objects, and task compositions. We further introduce a real-world robotic dataset for fine-tuning. Experiments show strong performance on fine-tuned tasks and clear gains in cross-scene, cross-object, and cross-task generalization."
   }
 ]
