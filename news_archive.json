@@ -1,5 +1,23 @@
 [
   {
+    "title": "When will AI robots become part of everyday lives?",
+    "original_title": "When will AI robots become part of everyday lives?",
+    "link": "https://techxplore.com/news/2026-06-ai-robots-everyday.html",
+    "date": "2026-06-17 11:20",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "Many AI robots appear intelligent as long as they operate in controlled environments. Neuroscientist and robotics researcher Elisa Donati explains why robots with real-world readiness require more than just fast software."
+  },
+  {
+    "title": "Could AI tell you where you left your keys?",
+    "original_title": "Could AI tell you where you left your keys?",
+    "link": "https://techxplore.com/news/2026-06-ai-left-keys.html",
+    "date": "2026-06-17 11:20",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "An auto factory worker can remember the storage bin where she left a partly assembled component the night before and quickly return to that spot to pick it up. But robots that may work side by side with her would struggle to develop and access this same type of \"spatiotemporal\" memory."
+  },
+  {
     "title": "New research enables a robot to chart a better course",
     "original_title": "New research enables a robot to chart a better course",
     "link": "https://robohub.org/new-research-enables-a-robot-to-chart-a-better-course/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.05897v1 Announce Type: new \nAbstract: Intelligent Transportation Systems (ITS) require reliable environmental perception to support safe and efficient transportation. With the rapid development of Vehicle-to-everything (V2X), roadside perception has become an effective means to extend sensing coverage and improve traffic safety. However, the scarcity of large-scale annotated roadside LiDAR datasets poses a major challenge for training high-performance roadside perception models. In this paper, we introduce Vehicle-to-Roadside LiDAR Synthesis (VRS), a data synthesis framework that generates labeled roadside LiDAR datasets from vehicle-side datasets via LiDAR novel view synthesis. To mitigate the vehicle-to-roadside domain gap, VRS employs vehicle point cloud completion to compensate for missing geometry in vehicle-side observations, and introduces an occupancy-based visibility constraint to handle large viewpoint changes during cross-view rendering. The proposed framework enables flexible multi-view rendering for scalable roadside data generation. Extensive experiments on roadside 3D object detection demonstrate that the synthesized data effectively complements real roadside data, mitigates the limitations of limited real-world roadside data, and improves generalization to unseen roadside viewpoints."
-  },
-  {
-    "title": "DexSynRefine: Synthesizing and Refining Human-Object Interaction Motion for Physically Feasible Dexterous Robot Actions",
-    "original_title": "DexSynRefine: Synthesizing and Refining Human-Object Interaction Motion for Physically Feasible Dexterous Robot Actions",
-    "link": "https://arxiv.org/abs/2605.05925",
-    "date": "2026-05-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.05925v1 Announce Type: new \nAbstract: Learning dexterous manipulation from human-object interaction (HOI) data is a scalable alternative to teleoperation, but HOI demonstrations are sparse and provide only kinematic motion that is not directly executable under embodiment mismatch and contact-rich dynamics. We present DexSynRefine, a framework with three coupled components: HOI-MMFP, a task- and object-initial-state-conditioned extension of motion manifold primitives that synthesizes coordinated hand-object trajectories from sparse HOI demonstrations; a task-space residual RL policy that physically grounds the synthesized reference while inheriting its kinematic structure; and a contact-and-dynamics adaptation module that enables sim-to-real transfer from proprioceptive history. Across five dexterous manipulation tasks spanning pick-and-place, tool use, and object reorientation, our task-space residual policy outperforms prior action-representation baselines in simulations and transfers to a real robot on all five tasks, improving over kinematic retargeting by 50-70 percentage points."
-  },
-  {
-    "title": "VLA-GSE: Boosting Parameter-Efficient Fine-Tuning in VLA with Generalized and Specialized Experts",
-    "original_title": "VLA-GSE: Boosting Parameter-Efficient Fine-Tuning in VLA with Generalized and Specialized Experts",
-    "link": "https://arxiv.org/abs/2605.06175",
-    "date": "2026-05-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.06175v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models inherit rich visual-semantic priors from pre-trained vision-language backbones, but adapting them to robotic control remains challenging. Full fine-tuning (FFT) is prone to overfitting on downstream robotic data and catastrophic forgetting of pretrained vision-language capabilities. Parameter-efficient fine-tuning (PEFT) better preserves pre-trained knowledge, yet existing PEFT methods still struggle to adapt effectively to robot control tasks. To address this gap, we propose VLA-GSE, a parameter-efficient VLA fine-tuning framework that improves control adaptation while retaining PEFT's knowledge preservation advantage. Specifically, VLA-GSE (Generalized and Specialized Experts) is initialized by spectrally decomposing the frozen backbone, assigning leading singular components to generalized experts (shared experts) and disjoint residual components to specialized experts (routed experts). This decomposition improves adaptation capacity under a fixed trainable-parameter budget. Under a comparable parameter budget, VLA-GSE updates only 2.51% of the full model parameters and consistently outperforms strong FFT and PEFT baselines. It achieves 81.2% average zero-shot success on LIBERO-Plus, preserves pre-trained VLM capability comparably to LoRA on multimodal understanding benchmarks, and improves real-world manipulation success under multiple distribution shifts. Code is available at: https://github.com/YuhuaJiang2002/VLA-GSE"
   }
 ]
