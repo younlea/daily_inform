@@ -225,6 +225,78 @@
     "summary": "arXiv:2606.17480v1 Announce Type: cross \nAbstract: Generalist vision-language-action systems need object-centric 3D evidence and reusable manipulation experience to plan reliable robot trajectories. GeneralVLA provides a hierarchical interface for converting language and RGB-D observations into 3D end-effector paths, but two bottlenecks remain. First, monocular SAM3D-style object reconstruction can hallucinate pose and unseen geometry, while manipulation benefits from stable object shape when calibrated multi-view observations are available. Second, the original KnowledgeBank mainly retrieves semantically similar snippets and appends new knowledge, which makes it difficult to control memory quality, conflicts, confidence, and geometric relevance. To address the first challenge, we introduce GeoFuse-MV3D, a geometry-prior-guided MV-SAM3D reconstruction branch that verifies external geometry cues with input-view masks, applies soft visual-hull support, performs axis-wise refinement, and fuses only geometry while preserving appearance. To address the second challenge, we upgrade KnowledgeBank into a governed long-term memory system with explicit quality, confidence, lifecycle, verifier, and conflict metadata, together with precision-oriented retrieval. Finally, we evaluate the reconstruction branch on GSO-30 and the memory module on Terminal-Bench 2.0 and SWE-Bench Verified; GeoFuse-MV3D improves over the MV-SAM3D baseline by reducing CD and LPIPS by 2.20% and 2.02% while increasing PSNR and SSIM by 2.36% and 1.03%, and KnowledgeBank improves over ReasoningBank by 4.53% on Terminal-Bench SR and 3.73% on SWE-Bench resolve rate, while reducing AS by 4.95% and 5.65%, respectively. Code: https://github.com/AIGeeksGroup/GeneralVLA-2. Website: https://aigeeksgroup.github.io/GeneralVLA-2."
   },
   {
+    "title": "Learn to Quantify Social Interaction with Constraints for Pedestrian Walking",
+    "original_title": "Learn to Quantify Social Interaction with Constraints for Pedestrian Walking",
+    "link": "https://arxiv.org/abs/2606.17897",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.17897v1 Announce Type: cross \nAbstract: Long-term human path forecasting in crowds is critical for autonomous moving platforms (like autonomous driving cars and social robots) to avoid collision and make high-quality planning. Although the current research take into account social interactions for prediction, they don't reveal the exact kinds of social interactions happened among people and how the social interactions affect the decision-making process of pedestrians, which further limits its robustness. Social interactions in pedestrian walking are intuitively massive and hard to label and quantify. In this paper, we explore creatively to quantify and interpret how pedestrians interact with others by proposing Learn to Cluster. Our clustering social interactions is probabilistic latent variable generative, learning directly from sequential trajectory observations, scalable to arbitrary number of pedestrians. Learn to cluster is label-free and can be naturally integrated into the training process of the prediction model. The latent variables will then serve as 'labels' to categorize social interactions. Extensive experiments over several trajectory prediction benchmarks demonstrate that our method is able to learn the patterns of social interactions and effectively integrate the patterns to pedestrian trajectory prediction."
+  },
+  {
+    "title": "Memory as a Wasting Asset: Pricing Flash Endurance for Embodied Agents, and the Limits of Doing So",
+    "original_title": "Memory as a Wasting Asset: Pricing Flash Endurance for Embodied Agents, and the Limits of Doing So",
+    "link": "https://arxiv.org/abs/2606.18144",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18144v1 Announce Type: cross \nAbstract: A robot's flash endurance is a non-renewable stock: every persisted write spends one of a few thousand program/erase cycles and never refills, yet no fielded robot memory system prices which memories are worth an erase cycle. We treat embodied memory as depreciating capital and price that stock with a single endurance shadow price $\\eta$, which makes cost-minimizing placement across a RAM / on-board NVM / cloud hierarchy a threshold in a wear-augmented per-byte index. The index is cost-optimal whatever the sign of the value-write association $\\chi$; only when $\\chi > 0$ does the optimum turn non-monotone, sending a robot's most valuable memories off its flash.\n  The pivot is thus empirical, and we measure $\\chi$ on real robot logs at a pre-specified gate: its sign is a property of the deployment regime -- positive on recurrent long-horizon manipulation ($\\hat{\\chi} \\approx +1.0 \\times 10^{-3}$, replicated at full power), null on a shorter-horizon suite, and negative on non-recurrent teleoperation. Two boundaries scope the result. The endurance budget is dormant on premium 3,000-P/E TLC at datasheet prices and binding on the commodity QLC/eMMC ($\\sim$1,000 P/E) that cheaper edge robots run. And where it binds, a learned wear-aware controller only ties price-based routing on task value, because realized value is tier-invariant across RAM, NVM, and cloud: the rent governs device lifetime and cost, not task performance. Whether wear-aware placement improves task value remains open -- $\\chi$ is measured against a value proxy, and the non-monotone optimum, while proven, is not yet observed in data."
+  },
+  {
+    "title": "MOCHI: Motion Enhancement of Collaborative Human-object Interactions",
+    "original_title": "MOCHI: Motion Enhancement of Collaborative Human-object Interactions",
+    "link": "https://arxiv.org/abs/2606.18243",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18243v1 Announce Type: cross \nAbstract: Collaborative human-object interaction shows dynamic and complex movements that require mutual anticipation and continuous adjustment between participants and the shared object. Modeling such collaborative multi-human object interaction (MHOI) scenarios requires high-quality data acquisition as a foundational step; however, this is challenging due to the inherent complexity of MHOI where human-human and human-object interactions occur simultaneously. Such complexity leads to noisy MHOI captures characterized by several artifacts: contact misalignment between hands and objects, motion jitter and temporal inconsistencies in the captured sequences, and missing or incomplete finger-level articulation details. To address these challenges, we present MOCHI (MOtion Enhancement of Collaborative Human-object Interactions), a two-stage framework for enhancing noisy MHOI data. Our approach first generates physically plausible hand grasps through optimization from noisy body input, producing grasps that are both physically plausible and semantically consistent with the body pose, where these optimized grasps are extended into complete hand-object interaction sequences. Consequently, the full-body motion for all participants are refined through a diffusion-based noise optimization framework that uses single-person motion priors. During the optimization process, we introduce optimization objectives to encode human-object and human-human interaction information within these single-person priors. Experimental results demonstrate the effectiveness of our pipeline across diverse MHOI data, either acquired by existing capture methods or synthesized by generative models. We further show robustness of our system across varying numbers of participants and types of interactions, and demonstrate various applications including keyframe-based MHOI creation and data augmentation through varying object geometries."
+  },
+  {
+    "title": "RLRC: Reinforcement Learning-based Recovery for Compressed Vision-Language-Action Models",
+    "original_title": "RLRC: Reinforcement Learning-based Recovery for Compressed Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2506.17639",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2506.17639v2 Announce Type: replace \nAbstract: Vision-Language-Action models (VLA) have demonstrated remarkable capabilities and strong potential in complex robotic manipulation. However, their large parameter sizes and high inference latency hinder real-world deployment, especially on resource-constrained platforms. To address this, we conduct a systematic empirical study of model compression for VLAs. Building on these insights, we present \\textit{RLRC}, a three-stage compression and recovery pipeline consisting of structured pruning, performance recovery via SFT and RL, and subsequent quantization. The RL stage incorporates a critic warm-up strategy and BC loss regularization to stabilize training and preserve policy behavior. RLRC achieves up to an 8 times memory reduction and 2.3 times inference speedup while maintaining the original task success rate. Extensive experiments across multiple VLA backbones show that RLRC consistently outperforms existing compression baselines, highlighting its effectiveness for on-device deployment. Project website: https://rlrc-vla.github.io"
+  },
+  {
+    "title": "OmniRetarget: Interaction-Preserving Data Generation for Humanoid Whole-Body Loco-Manipulation and Scene Interaction",
+    "original_title": "OmniRetarget: Interaction-Preserving Data Generation for Humanoid Whole-Body Loco-Manipulation and Scene Interaction",
+    "link": "https://arxiv.org/abs/2509.26633",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2509.26633v3 Announce Type: replace \nAbstract: A dominant paradigm for teaching humanoid robots complex skills is to retarget human motions as kinematic references to train reinforcement learning (RL) policies. However, existing retargeting pipelines often struggle with the significant embodiment gap between humans and robots, producing physically implausible artifacts like foot-skating and penetration. More importantly, common retargeting methods neglect the rich human-object and human-environment interactions essential for expressive locomotion and loco-manipulation. To address this, we introduce OmniRetarget, an interaction-preserving data generation engine based on an interaction mesh that explicitly models and preserves the crucial spatial and contact relationships between an agent, the terrain, and manipulated objects. By minimizing the Laplacian deformation between the human and robot meshes while enforcing kinematic constraints, OmniRetarget generates kinematically feasible trajectories. Moreover, preserving task-relevant interactions enables efficient data augmentation, from a single demonstration to different robot embodiments, terrains, and object configurations. We comprehensively evaluate OmniRetarget by retargeting motions from OMOMO, LAFAN1, and our in-house MoCap datasets, generating over 8-hour trajectories that achieve better kinematic constraint satisfaction and contact preservation than widely used baselines. Such high-quality data enables proprioceptive RL policies to successfully execute long-horizon (up to 30 seconds) parkour and loco-manipulation skills on a Unitree G1 humanoid, trained with only 5 reward terms and simple domain randomization shared by all tasks, without any learning curriculum."
+  },
+  {
+    "title": "K-VARK: Kernelized Variance-Aware Residual Kalman Filter for Sensorless Force Estimation in Collaborative Robots",
+    "original_title": "K-VARK: Kernelized Variance-Aware Residual Kalman Filter for Sensorless Force Estimation in Collaborative Robots",
+    "link": "https://arxiv.org/abs/2512.13009",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.13009v2 Announce Type: replace \nAbstract: Reliable estimation of contact forces is crucial for ensuring safe and precise interaction of robots with unstructured environments. However, accurate sensorless force estimation remains challenging due to inherent modeling errors and complex residual dynamics and friction. To address this challenge, in this paper, we propose K-VARK (Kernelized Variance-Aware Residual Kalman filter), a novel approach that integrates a kernelized, probabilistic model of joint residual torques into an adaptive Kalman filter framework. Through Kernelized Movement Primitives trained on optimized excitation trajectories, K-VARK captures both the predictive mean and input-dependent heteroscedastic variance of residual torques, reflecting data variability and distance-to-training effects. These statistics inform a variance-aware virtual measurement update by augmenting the measurement noise covariance, while the process noise covariance adapts online via variational Bayesian optimization to handle dynamic disturbances. Experimental validation on a 6-DoF collaborative manipulator demonstrates that K-VARK achieves over 20% reduction in RMSE compared to state-of-the-art sensorless force estimation methods, yielding robust and accurate external force/torque estimation suitable for advanced tasks such as polishing and assembly."
+  },
+  {
+    "title": "SimTO: A two-stage, simulation-driven topology optimization framework for bespoke soft robotic grippers",
+    "original_title": "SimTO: A two-stage, simulation-driven topology optimization framework for bespoke soft robotic grippers",
+    "link": "https://arxiv.org/abs/2601.19098",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2601.19098v2 Announce Type: replace \nAbstract: Soft robotic grippers are essential for grasping delicate, geometrically complex objects in manufacturing, healthcare and agriculture. However, existing designs struggle to grasp feature-rich objects with high topological variability, including gears with sharp tooth profiles on automotive assembly lines, corals with fragile protrusions, or vegetables with irregular branching structures like broccoli. Unlike simple geometric primitives such as cubes or spheres, feature-rich objects lack a clear \"optimal\" contact surface, making them both difficult to grasp and susceptible to damage. Safe handling of such objects therefore requires specialized soft grippers whose morphology is tailored to the object's features. Topology optimization offers a promising approach for producing specialized grippers, but its utility is limited by the need for pre-defined load cases. For soft grippers, these loads arise from hundreds of unpredictable gripper-object contact forces during grasping and are unknown a priori. To address this problem, we introduce SimTO, a two-stage, simulation-driven topology optimization framework that automatically extracts load cases from a dynamic, contact-rich grasping simulation before performing classical topology optimization, eliminating the need for manual load specification. Given an arbitrary feature-rich object, SimTO produces highly customized soft grippers with fine-grained morphological features tailored to the object geometry. Physical experiments confirm that our specialized grippers achieve higher grasp forces than a generalist design produced by conventional topology optimization methods, while numerical experiments show that they achieve high grasp success rates across varying object poses and strong generalization to a set of unseen objects."
+  },
+  {
+    "title": "Physical Imitation Learning: Distilling Control Policies into Passive Elasticity",
+    "original_title": "Physical Imitation Learning: Distilling Control Policies into Passive Elasticity",
+    "link": "https://arxiv.org/abs/2604.00611",
+    "date": "2026-06-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2604.00611v2 Announce Type: replace \nAbstract: Due to brain-body co-evolution, animals' intrinsic body dynamics play a crucial role in their energy-efficient locomotion. Specifically, the control effort is shared between active muscles and passive body dynamics--a principle often referred to as Physical Intelligence. As a result, the body dynamics are part of the solution. In contrast, robot bodies are typically designed to be as simple as possible, but the active control often fights the intrinsic body dynamics, resulting in low energy-efficiency. We introduce Physical Imitation Learning (PIL), a novel approach that brings current robotics control closer to animals. PIL takes learned control policies obtained with Reinforcement Learning (RL) and systematically splits them up into an active and passive control contribution. The passive part can be then directly offloaded to passive Parallel Elastic Joints (PEJs). As a result, the active control contribution is significantly reduced, lowering the overall energy consumption. Furthermore, the policy can be trained via RL to leverage the PEJ assistance by generating gaits that are more readily emulated by the PEJs. This enables co-design of the active and passive control components, shifting a greater share of actuation effort to the PEJs. Here we demonstrate the potential of this approach in simulated quadrupeds. Our results show that the proposed approach can offload up to 95% of mechanical power to passive body dynamics on flat terrain and 13% on rough terrain. PIL thereby provides a generalisable route to task-specific Physical Intelligence applicable to a wide range of joint-based robot morphologies."
+  },
+  {
     "title": "MTC launches new Robot Experience Centre to accelerate UK automation adoption",
     "original_title": "MTC launches new Robot Experience Centre to accelerate UK automation adoption",
     "link": "https://roboticsandautomationnews.com/2026/06/16/mtc-launches-new-robot-experience-centre-to-accelerate-uk-automation-adoption/102595/",
@@ -2473,6 +2545,15 @@
     "source": "Google News (China Hand/Sensor Startups - EN)",
     "category": "hand",
     "summary": "Tianjin develops sensors for embodied AI  中国新闻网"
+  },
+  {
+    "title": "FF Master Review: $19,990 Humanoid Robot — Specs, Price & Truth [2026] - Robozaps",
+    "original_title": "FF Master Review: $19,990 Humanoid Robot — Specs, Price & Truth [2026] - Robozaps",
+    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE81RDYycUhObnE0Mk53ZDZ0Z1ZWb1p2UFZBUjZoT3ppWmhOV3FPN3FzYXFEZjFPbVJNMU1XVzhRMmVTa0dYX205VXJUNnA4R19hbWFnSExhZw?oc=5",
+    "date": "2026-06-10 07:00",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "FF Master Review: $19,990 Humanoid Robot — Specs, Price & Truth [2026]  Robozaps"
   },
   {
     "title": "NVIDIA Launches Isaac GR00T, Fuels Humanoid Robotics Trade - Let's Data Science",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "South Korean temple ordains China’s Unitree G1 humanoid robot in world-first Buddhist ceremony  TechNode"
-  },
-  {
-    "title": "Meet 'Gabi,' the Robot That Just Became a Monk at a Buddhist Temple in South Korea. It’s the Latest Robot to Take Up Religious Practice - Smithsonian Magazine",
-    "original_title": "Meet 'Gabi,' the Robot That Just Became a Monk at a Buddhist Temple in South Korea. It’s the Latest Robot to Take Up Religious Practice - Smithsonian Magazine",
-    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOMEJIV0UwbFJCMWgyUWhZaEQ3VU9LdXNSS0RHMld2ODZxY2ZNRkM5dDJHSUkwV0l6RTczLUxtTzhCMkFuRTFmR1g5THpBSTh1Q2dwV0cwNzktREVacGdVWWR1cHBBT01NVGotdDRvbU1PSVpYeG9JUVdTZkh4VDdnenZhQnhkUkRSN3JrNjZhUk1jRTBkZEVOcG5WcWFvRnp5TWkyNW9KVW1hT1VMZTg2eGdmc0tKRkJRVDM1UkxhVno0OGJKRi1KLS1DWXl1Nk42eGpWZTZLTnI5MlBwSUk1Qm5XRk9sQjNIMksydDFOa3NLODNBc3dQRkFNWi0?oc=5",
-    "date": "2026-05-07 21:21",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Meet 'Gabi,' the Robot That Just Became a Monk at a Buddhist Temple in South Korea. It’s the Latest Robot to Take Up Religious Practice  Smithsonian Magazine"
-  },
-  {
-    "title": "China’s Unitree reshapes entry-level humanoid robot market with $4,290 droid - MSN",
-    "original_title": "China’s Unitree reshapes entry-level humanoid robot market with $4,290 droid - MSN",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNS25BZmlSYmlQUTZrSEdaTE43aWtDUWhYdGt0ZmQ0UkdoYmZ1LWNoWnNhd0lMUGdRRzdOWlZ1RnkyTGNRdUpmQ1RDX1dkdDd1cU11dEdlRHp4VUxrcHB2Z1pncGJSMXlkTXVfTW9kZ1dieXZVQlUyalRZeW1qbUFBTzZTcE04LVBON3lpN0E0LUR3NGlZQjhkSXc2dzItdGNyQndXM0wzVWpETnFZc21jTy1lX3hMSXRMSjFBWjM5ODZtdXdXUXBZ?oc=5",
-    "date": "2026-05-07 20:37",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China’s Unitree reshapes entry-level humanoid robot market with $4,290 droid  MSN"
-  },
-  {
-    "title": "Hugging Face launches agentic toolkit for Reachy Mini",
-    "original_title": "Hugging Face launches agentic toolkit for Reachy Mini",
-    "link": "https://www.therobotreport.com/hugging-face-launches-agentic-toolkit-for-reachy-mini/",
-    "date": "2026-05-07 17:57",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Users describe the behavior they'd like to see in plain English, and the agent writes, tests, and ships the code to Reachy Mini.\nThe post Hugging Face launches agentic toolkit for Reachy Mini appeared first on The Robot Report."
-  },
-  {
-    "title": "2026 RBR50 Robotics Innovation Awards",
-    "original_title": "2026 RBR50 Robotics Innovation Awards",
-    "link": "https://www.therobotreport.com/rbr50-2026-report/",
-    "date": "2026-05-07 17:10",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "For 15 years, the RBR50 awards have recognized the world’s leading robotics organizations in terms of technology and business innovation. This year’s cohort includes several repeat winners, as well as first-time honorees, and it is a prestigious list of the leading commercial robotics developers and suppliers from around the world. This download provides profiles of…\nThe post 2026 RBR50 Robotics Innovation Awards appeared first on The Robot Report."
-  },
-  {
-    "title": "The 7 Best Auto Parts Inventory Management Platforms",
-    "original_title": "The 7 Best Auto Parts Inventory Management Platforms",
-    "link": "https://roboticsandautomationnews.com/2026/05/07/auto-parts-inventory-management-software/101285/",
-    "date": "2026-05-07 16:51",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Managing auto parts inventory comes with high pressure. One missing component can delay repairs, slow fulfillment, or disrupt an entire operation. For eCommerce retailers, repair shops, and distributors, keeping accurate stock while avoiding overordering is a constant balancing act. Manual tracking and scattered systems often lead to stockouts, lost parts, and frustrated customers who expect […]"
-  },
-  {
-    "title": "The Rise of the Autonomous Network Control Tower: How AI is Becoming the Supply Chain’s Central Nervous System",
-    "original_title": "The Rise of the Autonomous Network Control Tower: How AI is Becoming the Supply Chain’s Central Nervous System",
-    "link": "https://roboticsandautomationnews.com/2026/05/07/the-rise-of-the-autonomous-network-control-tower-how-ai-is-becoming-the-supply-chains-central-nervous-system/101282/",
-    "date": "2026-05-07 16:17",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "For a long time, visibility in the logistics industry has been focused on screens loaded with data, providing an almost real-time view into shipments in transit, anomalies or disruptions occurring along the way, the location of trucks and drivers in various parts of the country and the volume of shipments moving through the network. But […]"
-  },
-  {
-    "title": "Container Design Patterns for Distributed Systems",
-    "original_title": "Container Design Patterns for Distributed Systems",
-    "link": "https://blog.bytebytego.com/p/container-design-patterns-for-distributed",
-    "date": "2026-05-07 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "In this article, we’ll walk through the patterns that have crystallized over the past decade, organized by the scope of their coordination."
-  },
-  {
-    "title": "Octopus-Inspired Underwater Gripper Features Rapid Stiffness Control for Enhanced Upward Transport in Robotics - Bioengineer.org",
-    "original_title": "Octopus-Inspired Underwater Gripper Features Rapid Stiffness Control for Enhanced Upward Transport in Robotics - Bioengineer.org",
-    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPN3NEempaRlpoMjJvbENCTXBHVno2R3lac09hVGw2bXAzMkoxalZfbDA2Y0NTdmplWG9JUzhSZlBLYmJFckNDTm5ucm40djlnd1hnb0VYeTN5TGx2QWdqb3d3dmZfcE5HR0htLVpWalBKOGpGNmRoQ1NIaVJLQXZTOTUySGctY3RMZk9GN0NrajZyZHIwLVBETjdoYlctOGlLck9DWm1EY0p6YjJBNnFNTU5pdi13cmc1NmFITDk1QW9WODFPS1ZmTjBSdXV5emhF?oc=5",
-    "date": "2026-05-07 14:29",
-    "source": "Google News (Global Hand/Gripper)",
-    "category": "hand",
-    "summary": "Octopus-Inspired Underwater Gripper Features Rapid Stiffness Control for Enhanced Upward Transport in Robotics  Bioengineer.org"
-  },
-  {
-    "title": "Podcast: Colin Angle discusses building companion robots with Familiar Machines & Magic",
-    "original_title": "Podcast: Colin Angle discusses building companion robots with Familiar Machines & Magic",
-    "link": "https://www.therobotreport.com/podcast-colin-angle-discusses-building-companion-robots-familiar-machines-magic/",
-    "date": "2026-05-07 12:48",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "iRobot co-founder Colin Angle talks about his latest venture, creating next-gen social robots with Familiar Machines.\nThe post Podcast: Colin Angle discusses building companion robots with Familiar Machines & Magic appeared first on The Robot Report."
   }
 ]
