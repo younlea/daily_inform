@@ -1,5 +1,23 @@
 [
   {
+    "title": "Fennec Engineering earns T2 qualification for Advanced Safety Acceleration Platform",
+    "original_title": "Fennec Engineering earns T2 qualification for Advanced Safety Acceleration Platform",
+    "link": "https://www.therobotreport.com/fennec-engineering-earns-t2-qualification-advanced-safety-acceleration-platform/",
+    "date": "2026-06-17 14:00",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Fennec Engineering has obtained certification confirming that its automated traceability platform meets strict safety standards.\nThe post Fennec Engineering earns T2 qualification for Advanced Safety Acceleration Platform appeared first on The Robot Report."
+  },
+  {
+    "title": "Autonomique deploys semi-humanoid robots and AI at Canadian Tier 1",
+    "original_title": "Autonomique deploys semi-humanoid robots and AI at Canadian Tier 1",
+    "link": "https://www.therobotreport.com/autonomique-deploys-semi-humanoid-robots-canadian-tier-1/",
+    "date": "2026-06-17 14:00",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Autonomique has moved its AI-powered robots from pilot to production at F&P Mfg., with plans for deployment across F-tech's global network.\nThe post Autonomique deploys semi-humanoid robots and AI at Canadian Tier 1 appeared first on The Robot Report."
+  },
+  {
     "title": "Sanctuary AI validates physical AI performance at Tier 1 automotive supplier",
     "original_title": "Sanctuary AI validates physical AI performance at Tier 1 automotive supplier",
     "link": "https://www.therobotreport.com/sanctuary-ai-validates-physical-ai-performance-tier-1-automotive-supplier/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.05461v1 Announce Type: new \nAbstract: Current approaches to grasp planning for robotics demonstrate high success rates, but degrade with noisy sensors and other factors. Previous works have proposed tactile-based grasp stability classifiers to detect failures, but these approaches rely on making contact and grasping the object to do so. We propose a contact-free grasp stability predictor using multi-zone time-of-flight sensors mounted in the distal links of a gripper. Our method, as it does not require grasping the object to make a prediction, significantly speeds up the stability classification process, cycling at 15 Hz. We collected over 2,500 real-world grasps across 15 objects to train a classifier. Additionally, we conducted grasp attempts over six additional unseen objects, three for validation and model selection, and three for model testing. Our approach demonstrated strong classification performance, with an accuracy of 85.5% on validation and 86.0% on test objects."
-  },
-  {
-    "title": "On the Emergence of Pendular Structure in Multi-Contact Locomotion",
-    "original_title": "On the Emergence of Pendular Structure in Multi-Contact Locomotion",
-    "link": "https://arxiv.org/abs/2605.05707",
-    "date": "2026-05-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.05707v1 Announce Type: new \nAbstract: LIPM is everywhere in legged-locomotion control, but almost always as a modeling choice rather than as something the\n  controller's cost actually prefers. This note tries to make that link more explicit. Working from a small centroidal\n  OCP that penalizes the rate of angular momentum, we look at what its optimum tends to look like. Three things come\n  out. With full-rank stance, the optimum drifts toward a pendular force pattern at a rate determined by the SVD of the\n  moment Jacobian; the constant is set by foot-span geometry and matches the experiments to within 16%. With N=2 stance,\n  as in trot, the friction cone introduces a lower bound on $\\|\\dot{H}_G\\|$ that no amount of weight tuning fixes; we\n  also see a non-smooth feasibility kink at a critical horizontal acceleration that we can write in closed form. Adding\n  a task term that asks for a nonzero $\\dot{H}_G$ moves the optimum off the pendular set in a predictable way. None of\n  this is far from the classical ZMP/DCM picture. We test these claims on a point-mass quadruped and on the Unitree Go1\n  in MuJoCo (open-loop QP and a torque-level closed-loop controller), and we note where the asymptotic story stops being\n  a good description of what the closed loop actually does."
-  },
-  {
-    "title": "MaMi-HOI: Harmonizing Global Kinematics and Local Geometry for Human-Object Interaction Generation",
-    "original_title": "MaMi-HOI: Harmonizing Global Kinematics and Local Geometry for Human-Object Interaction Generation",
-    "link": "https://arxiv.org/abs/2605.05756",
-    "date": "2026-05-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.05756v1 Announce Type: new \nAbstract: Generating realistic 3D Human-Object Interactions (HOI) is a fundamental task for applications ranging from embodied AI to virtual content creation, which requires harmonizing high-level semantic intent with strict low-level physical constraints. Existing methods excel at semantic alignment, however, they struggle to maintain precise object contact. We reveal a key finding termed \\textit{Geometric Forgetting}: as diffusion model depth increases, semantic feature tend to overshadow object geometry feature, causing the model to lose its perception to object geometry. To address this, we propose MaMi-HOI, a hierarchical framework reconciling \\textbf{Ma}cro-level kinematic fluidity with \\textbf{Mi}cro-level spatial precision. First, to counteract geometric forgetting, we introduce the Geometry-Aware Proximity Adapter (GAPA), which explicitly re-injects dense object details to perform residual snapping corrections for precise contact. Nevertheless, such aggressive local enforcement can disrupt global dynamics, leading to robotic stiffness. In response, we introduce the Kinematic Harmony Adapter (KHA), which proactively aligns whole-body posture with spatial objectives, ensuring the skeleton actively accommodates constraints without compromising naturalness. Extensive experiments validate that MaMi-HOI simultaneously achieves natural motion and precise contact. Crucially, it extends generation capabilities to long-term tasks with complex trajectories, effectively bridging the gap between global navigation and high-fidelity manipulation in 3D scenes. Code is available at https://github.com/DON738110198/MaMi-HOI.git"
   }
 ]
