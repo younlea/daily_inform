@@ -153,6 +153,78 @@
     "summary": "arXiv:2606.18959v1 Announce Type: new \nAbstract: Tactile sensing provides direct measurements of contact interactions that are essential for robotic manipulation. However, current simulators lack the fidelity to faithfully model the complex deformation and transduction mechanics of tactile sensors, severely hindering sim-to-real transfer in robot learning pipelines. To address this challenge, we propose a multi-modal representation learning framework that aligns heterogeneous tactile modalities within a shared latent space, eliminating the need for accurate raw-signal simulation while preserving relevant contact information. Our approach employs modality-specific encoders to project diverse tactile observations, such as simulated penetration depth and real-world capacitance, into a common embedding space. The model is trained using self- and cross-reconstruction objectives alongside contrastive alignment, encouraging modality-invariant yet information-rich representations. We evaluate the learned embeddings on indenter shape identification, force prediction, and geometric reconstruction tasks, training exclusively in simulation and testing directly on real sensor measurements. Our results demonstrate zero-shot sim-to-real transfer across physically dissimilar representations. Furthermore, incorporating multi-physics simulation modalities yields more informative embeddings that transfer across diverse downstream tasks, demonstrating a 16.7% reduction in force prediction error and a 45.8% reduction in shape reconstruction error. Finally, we release an efficient Warp-based implementation of a penalty-based tactile simulation model for Isaac Lab, enabling scalable tactile data generation."
   },
   {
+    "title": "Sensor Configuration Matters: A Systematic Evaluation of Multimodal SLAM on Quadruped Robots",
+    "original_title": "Sensor Configuration Matters: A Systematic Evaluation of Multimodal SLAM on Quadruped Robots",
+    "link": "https://arxiv.org/abs/2606.19067",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19067v1 Announce Type: new \nAbstract: Autonomous navigation of quadrupedal robots in diverse environments fundamentally relies on resilient Simultaneous Localization and Mapping (SLAM). While visual-inertial SLAM has matured across wheeled, handheld, and aerial platforms, a critical evaluation gap remains regarding how hardware-level sensor configurations affect performance under the aggressive dynamics of legged locomotion. Quadrupeds introduce distinct embodiment-induced sensory challenges, including foot-impact shocks, high-frequency mechanical vibrations, and rapid angular rotations, which degrade standard perception pipelines. To address this gap, we present a systematic evaluation of state-of-the-art visual, visual-inertial, and LiDAR-visual-inertial SLAM methods using the GrandTour dataset recorded on an ANYmal D quadruped. We isolate and quantify the impacts of camera modalities, shutter techniques, and inertial sensor tiers, analyzing their trade-offs across localization accuracy, algorithmic robustness, and computational resource utilization. Our empirical findings demonstrate that hardware selection has substantial influence on system resilience: stereo configurations consistently outperform monocular and RGB-D modalities, global shutter cameras significantly mitigate motion-induced tracking failures compared to rolling shutter cameras, and, crucially, standard inertial integration can degrade the performance of primarily vision-based frameworks under harsh legged locomotion. These insights additionally offer concrete design guidelines for tailoring custom sensor payloads to achieve dependable perception on agile legged systems."
+  },
+  {
+    "title": "ReSiReg: Towards Spatially Consistent Semantics in Language-Conditioned Robotic Tasks",
+    "original_title": "ReSiReg: Towards Spatially Consistent Semantics in Language-Conditioned Robotic Tasks",
+    "link": "https://arxiv.org/abs/2606.19088",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19088v1 Announce Type: new \nAbstract: Vision-Language Models (VLMs) enable robots to follow open-language instructions. However, dense VLM embeddings have shown to be noisy and lack spatial consistency. This is problematic for robotic applications, which require simultaneous reasoning over semantics and 3D space. We examine spatial structure across recent VLMs and propose ReSiReg, a feature reconstruction method that uses spatially consistent VLM intermediates to improve dense language-grounded retrieval. ReSiReg clusters intermediates into visual prototypes, derives their language descriptors, and reconstructs each patch as a soft mixture of prototype-level language embeddings. We evaluate quantitatively on OVSS and 3D mapping across backbones, and qualitatively in real-world manipulation scenes. Quantitative results show improved dense retrieval; manipulation scenes show more spatially consistent target activations. We further provide a compact 25M dense VLM for robotic applications, substantially smaller than and competitive with ViT-B baselines. Available at https://resireg.github.io"
+  },
+  {
+    "title": "ART-VS: Adaptive Resolution Tiling for Vision Transformer Visual Servoing",
+    "original_title": "ART-VS: Adaptive Resolution Tiling for Vision Transformer Visual Servoing",
+    "link": "https://arxiv.org/abs/2606.19089",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19089v1 Announce Type: new \nAbstract: Visual servoing with self-supervised Vision Transformer (ViT) features enables training-free robotic positioning with strong generalization, but faces a fundamental trade-off between robustness and precision. Coarse patch-level descriptors provide stable correspondences yet limit positioning accuracy. Increasing image resolution improves precision but yields only marginal robustness gains - under perturbation, high-resolution processing improves convergence success rate from 76.6% to just 81.0% despite 12x more ViT patches. Therefore, we propose Adaptive Resolution Tiling Visual Servoing (ART-VS), a two-phase method that adapts feature granularity to servoing progress: a coarse phase at native ViT resolution for stable alignment, then a tiled high-resolution phase that restricts matching to local neighborhoods improving positioning accuracy. Without any task-specific training, ART-VS achieves 95.4% convergence under perturbation, outperforming standard and full-resolution ViT-based servoing by 18.8 and 14.4 percentage points. Over the former it reduces positioning error by 53%, while running at over 10x higher speed and 27% lower VRAM than the latter. We validate ART-VS across three ViT backbones and demonstrate real-world category-level grasping of unseen object instances, achieving 95/100 on transparent bottles and 98/100 on shoes. Code available under https://art-vs.github.io/."
+  },
+  {
+    "title": "GCNGrasp-VP: Affordance-Guided View Planning for Efficient Task-Oriented Grasping",
+    "original_title": "GCNGrasp-VP: Affordance-Guided View Planning for Efficient Task-Oriented Grasping",
+    "link": "https://arxiv.org/abs/2606.19091",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19091v1 Announce Type: new \nAbstract: Task-oriented grasping performance degrades significantly when object views suffer from occlusions. Existing task-oriented grasping methods typically assume task-relevant regions are visible in the initial frame, while view planning approaches enable active perception but often ignore task semantics and rely on time-consuming scene reconstruction. To address these limitations, we present GCNGrasp-VP, an efficient framework integrating affordance field prediction with active view planning. Central to this framework is GCNGrasp-v2, a task-oriented grasp model that simultaneously supports grasp evaluation and affordance field prediction, achieving constant-time inference complexity. Leveraging this capability, our Affordance-guided View Planner (Affordance-VP) utilizes the affordance field as an information gain metric to guide camera observation of task-relevant regions without requiring scene reconstruction. View planning results show that our method significantly outperforms scene-uncertainty-driven baselines with only one view adjustment. Real-world validation further confirms substantial improvements in grasp success rates for single-object scenarios while maintaining millisecond-level computational latency. Code and models are available at https://github.com/Instinct323/GCNGrasp-VP."
+  },
+  {
+    "title": "HT-Bench: Benchmarking and Learning Dexterous Full-Hand Tactile Representations with Egocentric Vision",
+    "original_title": "HT-Bench: Benchmarking and Learning Dexterous Full-Hand Tactile Representations with Egocentric Vision",
+    "link": "https://arxiv.org/abs/2606.19161",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19161v1 Announce Type: new \nAbstract: Establishing a universal benchmark for tactile representation learning in robotic manipulation remains challenging due to the diversity of tactile sensor designs, data formats, and robot embodiments. Rather than seeking to establish such, we explore a scalable and promising direction for future development: egocentric vision paired with full-hand tactile data. To this end, we introduce \\textbf{HT-Bench}, a large-scale multi-task benchmark for dexterous full-hand tactile sensing, comprising 10M RGB frames and 7.8M tactile frames collected across 226 tasks. HT-Bench evaluates tactile representations from three key perspectives: whether they encode meaningful contact geometry, whether they can align tactile observations with visual information, and whether they generalize to unseen tasks. To assess these capabilities, HT-Bench includes four tasks: fine-grained tactile similarity retrieval, masked tactile inpainting, vision-to-tactile synthesis, and multimodal tactile frame prediction. We further propose \\textbf{HandTouch}, a vector-quantized vision--tactile encoder that learns tactile representations through progressive spatial, cross-modal, and temporal training. Across HT-Bench, HandTouch consistently outperforms representative tactile encoder baselines, improving Recall@5 on fine-grained tactile similarity retrieval from 74.65\\% to 85.23\\%, reducing RMSE on masked tactile inpainting from 0.022 to 0.010, and increasing OOD cIoU on vision-to-tactile synthesis from 0.628 to 0.705. These results demonstrate the effectiveness of HandTouch and suggest that large-scale egocentric full-hand tactile data provides a scalable basis for evaluating and advancing tactile representation learning in dexterous manipulation."
+  },
+  {
+    "title": "Invertible Neural Network Adapter for One-Step Flow Matching in Robot Manipulation",
+    "original_title": "Invertible Neural Network Adapter for One-Step Flow Matching in Robot Manipulation",
+    "link": "https://arxiv.org/abs/2606.19194",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19194v1 Announce Type: new \nAbstract: This paper presents an invertible neural network adapter for general robotic manipulation, designed to generate precise high-dimensional actions conditioned on multimodal observations, including visual, linguistic, and proprioceptive inputs, through a one-step denoising process. Built upon a flow-matching formulation, the proposed adapter effectively constrains the action generation trajectory within an invertible latent space, thereby enabling efficient and high-quality dexterous action synthesis with only a single inference step. Compared with conventional iterative flow-matching policies, the proposed framework substantially reduces inference complexity while maintaining strong action prediction accuracy and stability. Extensive experiments are conducted across a diverse set of simulation benchmarks and real-world robotic platforms to evaluate the effectiveness of the proposed method. Across simulation benchmarks, the proposed adapter consistently demonstrates superior or near state-of-the-art performance on a wide range of manipulation tasks. Furthermore, real-world experiments reveal a significant improvement in inference efficiency for vision-language-action (VLA) models, reducing the average inference latency from 110 ms to 61 ms while maintaining strong task performance."
+  },
+  {
+    "title": "Constant Time-Delay Leader Following with Neural Networks and Invariant Extended Kalman Filters for Arbitrary Trajectories",
+    "original_title": "Constant Time-Delay Leader Following with Neural Networks and Invariant Extended Kalman Filters for Arbitrary Trajectories",
+    "link": "https://arxiv.org/abs/2606.19227",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19227v1 Announce Type: new \nAbstract: This paper proposes a constant time-delay trajectory tracking method for vehicle convoys operating without inter-vehicle communication, a common coordinate system, or global positioning. The method integrates a probabilistic sequence-to-sequence (Seq2Seq) neural network with an invariant extended Kalman filter (IEKF) to warm-start the prediction process, allowing accurate estimation of a leader vehicle's relative trajectory on the SE(2) manifold. A geometric model predictive controller is further incorporated to fully exploit the manifold-based trajectory predictions for improved control performance. The system can handle arbitrary nonlinear trajectories with varying speeds and motion profiles while reducing the need for expert-based domain knowledge for the design of trajectory following systems, even under long trajectory delays. The effectiveness of the method is validated through comparisons with a pure IEKF baseline, learning-based methods, and the ground-truth trajectory in kinematic simulations, as well as in experiments using real robotic vehicles."
+  },
+  {
+    "title": "Mobile Pedipulation for Object Sliding via Hierarchical Control on a Wheeled Bipedal Robot",
+    "original_title": "Mobile Pedipulation for Object Sliding via Hierarchical Control on a Wheeled Bipedal Robot",
+    "link": "https://arxiv.org/abs/2606.19233",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19233v1 Announce Type: new \nAbstract: In this letter, we present a hierarchical control framework that enables wheeled bipedal robots to perform planar object sliding tasks with their wheeled legs. The proposed approach formulates a nonlinear model predictive controller (NMPC) based on a reduced-order three rigid bodies (TRB) dynamical model that explicitly accounts for the hip roll degree of freedom and multiple wheel-environment contact modes, which is essential for lateral stepping and pedipulation tasks. Within this framework, the NMPC simultaneously regulates robot locomotion and interaction forces, allowing the robot to stably execute both rolling and object manipulation behaviors. A trajectory-optimization-based robot-object motion planner is developed to generate reference motions that incorporate stick-slip transitions in ground-object contact. Two representative pedipulation motions, namely scooting and lateral sliding, are validated through real-world hardware experiments, in which the robot successfully retrieves a 1 kg object from under a desk and slides a 4 kg object over a distance of 0.228 m via scooting."
+  },
+  {
     "title": "SAFe Has Won Enterprise Agile – What That Means for Your Career",
     "original_title": "SAFe Has Won Enterprise Agile – What That Means for Your Career",
     "link": "https://roboticsandautomationnews.com/2026/06/17/safe-has-won-enterprise-agile-what-that-means-for-your-career/102639/",
@@ -17926,77 +17998,5 @@
     "source": "Tech Xplore",
     "category": "humanoid",
     "summary": "A research team has developed an \"intelligent artificial muscle\" capable of simultaneously performing sensing and actuation functions, inspired by biological muscle–tendon complexes. This artificial muscle, which embeds liquid metal channels within a liquid crystal elastomer (LCE), contracts in response to electrical stimulation while also being able to measure internal force and length in real time."
-  },
-  {
-    "title": "How to engineer robot tracks and 7th axis systems for real-world environments",
-    "original_title": "How to engineer robot tracks and 7th axis systems for real-world environments",
-    "link": "https://www.therobotreport.com/how-to-engineer-robot-tracks-7th-axis-systems-real-world-environments/",
-    "date": "2026-05-10 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Experts from Güdel will focus on how harsh and dirty environments impact robot tracks and long-axis linear motion systems.\nThe post How to engineer robot tracks and 7th axis systems for real-world environments appeared first on The Robot Report."
-  },
-  {
-    "title": "Video Friday: AI Gives Robot Hands Human-Like Dexterity",
-    "original_title": "Video Friday: AI Gives Robot Hands Human-Like Dexterity",
-    "link": "https://spectrum.ieee.org/video-friday-robotic-hand-dexterity",
-    "date": "2026-05-09 16:00",
-    "source": "IEEE Spectrum",
-    "category": "hand",
-    "summary": "Video Friday is your weekly selection of awesome robotics videos, collected by your friends at IEEE Spectrum robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please send us your events for inclusion.ICRA 2026: 1–5 June 2026, VIENNARSS 2026: 13–17 July 2026, SYDNEYSummer School on Multi-Robot Systems: 29 July–4 August 2026, PRAGUEActuate 2026: 18–19 August 2026, SAN FRANCISCOEnjoy today’s videos! Introducing GENE-26.5—the first AI brain to give robots human-level physical manipulation capabilities. Cooking a full meal. Cracking an egg one-handed. Conducting lab experiments. Wire harnessing. Even playing the piano. Tasks that were impossible for robots. Until now.[ Genesis AI ] via [ TechCrunch ]This is Labububot—one of the rarest monsters on Earth. Twelve Labubu heads are reconstituted into a single spherical form: a Frankenstein’s Monster of pop culture iconography. Labububot is a playful critique of social robots, and a question made physical—what do the monsters we make reveal about the monsters we are?[ MIT Media Lab ]Watch Spot crouch, jump, climb boxes, and leap across gaps, controlled by a neural network trained with reinforcement learning (RL) and multi-expert distillation.[ Robotics and AI Institute ]Good, now there is a robot that can take over exercise for me.[ Kepler ]Additive manufacturing has become an enabling technology, but existing techniques are not capable of directly 3D printing high current electromagnetic actuators due to material and design limitations. In this work, a novel 3D-printable, multi-layer, wave-winding topology is created for high efficiency electric motors.[ Sensing Technologies Laboratory ]NASA is pushing the limits of flight on Mars—by spinning helicopter rotor blades so fast, they’re breaking the sound barrier. During recent tests at NASA’s Jet Propulsion Laboratory, engineers accelerated the tips of next-generation rotor blades beyond Mach 1 inside a special chamber that simulates the atmospheric conditions of the Red Planet.[ NASA Jet Propulsion Laboratory ]Balancing commercial goals and robotics research can be tricky, but with Atlas we’re making it work.[ Boston Dynamics ]Open Duck Mini is an open-source version of Disney’s BDX droids, and you can play with it in your browser.[ Open Duck Mini Viewer ]Thanks, Masato!Automated inspection of steel structures using magnetic climbing robots can reduce costs and improve safety, but many such structures feature interior corners that are challenging for wheeled or tracked robots to traverse. We present the first magnetic-wheeled robot to use X-ray fluorescence for steel structure inspection, Sally, capable of overcoming all interior corner transition types, traversing small obstacles, and maneuvering in tight spaces.[ Robomechanics Lab ]I don’t know what this is, but it’s coming soon from SwitchBot.[ SwitchBot ]You probably know the answers to these questions already, but this ELI5 from Aaron Ames is still fun.[ Wired ]Jim Fan, who leads the embodied autonomous research group at Nvidia, returns to AI Ascent to argue that robotics is entering its end game—and that the playbook is already written.[ Sequoia ]"
-  },
-  {
-    "title": "EP214: Claude Code vs. OpenClaw: 5 Design Dimensions",
-    "original_title": "EP214: Claude Code vs. OpenClaw: 5 Design Dimensions",
-    "link": "https://blog.bytebytego.com/p/ep214-claude-code-vs-openclaw-5-design",
-    "date": "2026-05-09 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "Both are highly capable, but they have key architectural differences."
-  },
-  {
-    "title": "Cognex releases fully integrated AI-powered vision system for robotics",
-    "original_title": "Cognex releases fully integrated AI-powered vision system for robotics",
-    "link": "https://www.therobotreport.com/cognex-releases-fully-integrated-ai-powered-vision-system-robotics/",
-    "date": "2026-05-09 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "The system combines Cognex-developed edge AI, advanced AI, and rule-based vision tools with a high-performance embedded compute.\nThe post Cognex releases fully integrated AI-powered vision system for robotics appeared first on The Robot Report."
-  },
-  {
-    "title": "Kodiak and Roehl Transport begin autonomous freight operations between Dallas and Houston",
-    "original_title": "Kodiak and Roehl Transport begin autonomous freight operations between Dallas and Houston",
-    "link": "https://roboticsandautomationnews.com/2026/05/09/kodiak-and-roehl-transport-begin-autonomous-freight-operations-between-dallas-and-houston/101340/",
-    "date": "2026-05-09 11:28",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Kodiak AI, a provider of physical AI-powered autonomous vehicle technology, has announced it is autonomously hauling freight with Roehl Transport, one of America’s leading truckload carriers. Starting last month, trucks equipped with the Kodiak Driver, Kodiak’s autonomous system, began hauling freight between Dallas and Houston four times roundtrip per week for Roehl Transport. Don Burnette, […]"
-  },
-  {
-    "title": "Opinion: Autonomy is reshaping logistics, but its real value lies in better decision-making",
-    "original_title": "Opinion: Autonomy is reshaping logistics, but its real value lies in better decision-making",
-    "link": "https://roboticsandautomationnews.com/2026/05/09/opinion-autonomy-is-reshaping-logistics-but-its-real-value-lies-in-better-decision-making/101336/",
-    "date": "2026-05-09 11:19",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "By Marcus Schunemann, head of autonomy at Dexory Warehouses are under growing pressure to do more with less. Labour shortages, rising operating costs and continued supply chain disruption are forcing logistics operators to rethink how goods are stored, tracked and moved. UK Warehousing Association research shows that recruitment difficulty remains widespread in warehousing, with only […]"
-  },
-  {
-    "title": "Unitree H1 robot runs fast, it may soon beat Usain Bolt - MSN",
-    "original_title": "Unitree H1 robot runs fast, it may soon beat Usain Bolt - MSN",
-    "link": "https://news.google.com/rss/articles/CBMihgRBVV95cUxPMGw4SEFBeWZpQ2JDd2F5b0JWc0NGRzVUbktCQ0lWVkdYeGdueGhIWFN1RkhWbUN1NGdidW9QQ2Z4cThTdmxqMm9xaDByUHlmOHk5YmFyQzZPeTg4UmhxUUhHeE9va1N6dnBEcWg2U1BMOV9SZFVqSmJXTmZqRFVTWmZXLTMxLTVxZWR2dktBYVZmQjdfOHRWS1BKaHczR2ZjYTFFYTFmajhtVmF2TjdYQ2pkV04yY3dhQTBqbmRvcENpLVZQY1FNOGJFTXRmTFI5NjI1eDlXN3JsTi16Ym1YLV9FNl9SQkc3N2lwaXlVcW85U3VUMFZSbXF1Z2FmRnlSckN1eU1JTEdVanlSbXF5RGYwVk5pMVhZWDdsTVpfUlJSQkRSNE1yRDlQV2xNS01ncUJrLWsxODc5MmtHSWlZdDdyRHB6STA4WHd5NWk3bERWdzhoN1JxdnBMekpxS1lSMkhGaUl6R1FGTXo5YWh4UEtpcUFKZUtOOG05UGtyVEFzM0tlQXpBTVRjaVdXMmtkSWZlcGdzaFA0UnRJMVA2OWJoRll6dnppY01PZ1VMcG5iRHBxYkpZckE2NXB2MVA0WjVVcGR5NU1xd3dfNzJQVWhQWFZoN2tqVWFKQmpJNmIxSTkzOXlieGhnUW11aWJrSVVnaGtjQVAxZFFxNG91Tmwwb0FlUQ?oc=5",
-    "date": "2026-05-09 08:28",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree H1 robot runs fast, it may soon beat Usain Bolt  MSN"
-  },
-  {
-    "title": "GoLabs Announces Robotics Security Initiative Using Unitree Quadrupeds",
-    "original_title": "GoLabs Announces Robotics Security Initiative Using Unitree Quadrupeds",
-    "link": "https://humanoidroboticstechnology.com/industry-news/golabs-announces-robotics-security-initiative-using-unitree-quadrupeds/",
-    "date": "2026-05-09 08:23",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "GoLabs has recently announced its innovative robotic security solutions. As a vendor of Unitree robotics, they offer top-of-the-line quadrupeds without the cost of international shipping. These four-legged machines never sleep, are fully autonomous, and allow companies to save both time and money while ensuring that their infrastructure and employees stay protected. GoLabs Robotics have security […]\nThe post GoLabs Announces Robotics Security Initiative Using Unitree Quadrupeds appeared first on Humanoid Robotics Technology."
   }
 ]
