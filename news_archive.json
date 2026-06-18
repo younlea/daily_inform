@@ -1,5 +1,77 @@
 [
   {
+    "title": "Recover, Discover, Plan: Learning Skills and Concepts from Robot Failures",
+    "original_title": "Recover, Discover, Plan: Learning Skills and Concepts from Robot Failures",
+    "link": "https://arxiv.org/abs/2606.18328",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18328v1 Announce Type: new \nAbstract: Intelligent robots should not only recover from failures, but also acquire the abstract knowledge needed to avoid them in the future. While reinforcement learning (RL) can learn reactive recovery behaviors, training a separate policy for every distinct failure mode is highly inefficient. We introduce Recovery-Driven Synthesis of Relational Concepts (ReSYNC), the first approach that progressively discovers and refines state abstractions (relational predicates) from failure-recovery experience to support abstract planning. Unlike purely reactive methods, ReSYNC jointly learns skills and concepts through an incremental dual-learning process. In the skill-learning phase, the robot uses RL to learn to recover from failures seen in training tasks. In the concept-learning phase, the robot discovers new relational predicates and refines its abstract planning model to explain and generalize the learned recovery behaviors. This interaction enables ReSYNC to convert local recoveries seen during training into global failure avoidance at test time. Across four simulated domains, we show that ReSYNC's ability to continually expand and refine its abstraction library allows it to solve long-horizon, previously unseen problems, outperforming strong baselines by over 50%. Additionally, we demonstrate sim-to-real transfer of ReSYNC, where it performs real-world non-prehensile manipulation skills and generalizes to unseen scenarios through abstract planning. Overall, ReSYNC represents a significant step toward robots that autonomously acquire abstractions for scalable, failure-aware planning in the physical world."
+  },
+  {
+    "title": "Guava: An Effective and Universal Harness for Embodied Manipulation",
+    "original_title": "Guava: An Effective and Universal Harness for Embodied Manipulation",
+    "link": "https://arxiv.org/abs/2606.18363",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18363v1 Announce Type: new \nAbstract: Language models trained on large-scale vision-language data have demonstrated strong potential for embodied agents. Harnessing models through embodied tools use offers a promising alternative to end-to-end vision-language-action systems by combining high-level reasoning with external modules for perception, planning, and control. However, it remains unclear what makes an effective harness for embodied manipulation, and to what extent such a harness can unlock embodied capabilities in a wide range of reasoning models. In this work, we present Guava, a harness framework for embodied tool use developed through systematic exploration of the design space of agent workflows, action spaces, and observation spaces. Our study identifies three key ingredients for effective embodied agents: iterative perception-reasoning-action loops, semantic action abstractions, and multimodal observations. To understand whether these design principles are universal even to small models, we develop an end-to-end training pipeline that distills embodied manipulation capabilities into a 4B open-source model using fewer than 2K trajectories collected entirely in simulation. Experimental results in both simulation and real-world environments show performance comparable to frontier proprietary models while exhibiting strong generalization to unseen objects, novel instructions, and long-horizon tasks. Results suggest that a well-designed harness can serve as a scalable, model-agnostic interface for embodied manipulation, enabling strong emergent embodied capabilities in compact open-source models with minimal training data."
+  },
+  {
+    "title": "PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation",
+    "original_title": "PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.18375",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18375v1 Announce Type: new \nAbstract: World foundation models (WFMs) are powerful simulators, yet they predominantly operate in a single-view setting and lack the multi-view 3D consistency required for robotic manipulation. While robotic systems rely on multiple cameras (egocentric, eye-to-hand, and wrist-mounted) for policy learning, current multi-view world models simply concatenate view tokens without explicit geometric reasoning. This causes cross-view object drift, depth inconsistency, and texture misalignment. We trace these failures to two deficiencies: the absence of an explicit inter-view communication mechanism and the lack of a 3D geometric prior. We argue that resolving both simultaneously is necessary and sufficient. To address this, we present PAIWorld, a framework that augments diffusion-transformer world models via three core components: (1) Geometry-Aware Cross-View Attention blocks that establish an explicit pathway across views, (2) Geometric Rotary Position Embedding that encodes camera ray directions and extrinsic poses into the attention mechanism, and (3) Latent 3D-REPA, which distills 3D-aware features from frozen 3D foundation models to ensure 3D consistency. Built upon a DiT-based world foundation model, PAIWorld achieves state-of-the-art multi-view 3D consistency on robotic manipulation benchmarks, ranking 1st on the WorldArena leaderboard and 2nd on the AgiBot-Challenge2026 leaderboard, while enabling downstream applications such as model-based planning, world action models, and multi-view policy post-training."
+  },
+  {
+    "title": "N(CO)$^2$: Neural Combinatorial Optimization with Chance Constraints to Solve Stochastic Orienteering",
+    "original_title": "N(CO)$^2$: Neural Combinatorial Optimization with Chance Constraints to Solve Stochastic Orienteering",
+    "link": "https://arxiv.org/abs/2606.18514",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18514v1 Announce Type: new \nAbstract: Neural combinatorial optimization (NCO) offers a promising alternative to traditional heuristic-based methods for solving complex graph optimization problems by proposing to learn heuristics through data. This class of problems frequently arises in automation, as it can be used to model a variety of applications. While NCO has been extensively studied for deterministic combinatorial optimization problems, there are only a few works that aim to solve stochastic combinatorial optimization problems. In this work, we present N(CO)$^2$: Neural Combinatorial Optimization with Chance cOnstraints to solve the Stochastic Orienteering Problem (SOP) without the use of hand-crafted heuristics. By integrating a reinforcement learning (RL) framework, the model optimizes path selection under uncertainty, effectively balancing exploration and exploitation. Empirical results demonstrate that our method generalizes well across diverse SOP instances, achieving competitive performance compared to the state-of-the-art mixed-integer linear program (MILP) for the task. The proposed approach reduces human effort in heuristic design while enabling adaptive and efficient decision-making in uncertain environments."
+  },
+  {
+    "title": "DREAM-Chunk: Reactive Action Chunking with Latent World Model",
+    "original_title": "DREAM-Chunk: Reactive Action Chunking with Latent World Model",
+    "link": "https://arxiv.org/abs/2606.18589",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18589v1 Announce Type: new \nAbstract: Action chunking has become a common interface for vision-language-action (VLA) models, enabling low-frequency policy inference to drive high-frequency robot execution. However, once an action chunk is committed, its open-loop execution can be brittle under stochastic dynamics, hardware execution errors, and partial observability. We propose DREAM-Chunk, a test-time scaling method that augments chunking-based policies with a lightweight latent world model, without requiring additional policy fine-tuning. At test time, DREAM-Chunk samples multiple candidate action chunks, rolls out their predicted latent futures, and selects actions from the chunk whose predicted state best matches the observed rollout. In this way, DREAM-Chunk uses additional test-time computation to cover multiple plausible stochastic futures and improve reactivity during long-horizon chunk execution. On the Kinetix benchmark, DREAM-Chunk improves robustness under increasing action noise and benefits from larger candidate sample sizes, especially when demonstrations contain corrective behaviors. We further validate DREAM-Chunk on four manipulation tasks across two robot platforms and two VLA policies under various sources of stochasticity. Across simulation and hardware experiments, DREAM-Chunk improves the robustness of action-chunking policies in stochastic dynamics."
+  },
+  {
+    "title": "Benchmarking Action Spaces in Reinforcement Learning for Vision-based Robotic Manipulation",
+    "original_title": "Benchmarking Action Spaces in Reinforcement Learning for Vision-based Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.18594",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18594v1 Announce Type: new \nAbstract: In real-world reinforcement learning (RL), the choice of action space can play a key role in shaping motion smoothness, safety, and overall task performance. In this study, we evaluate pose increment, pose velocity, joint position increment, and joint velocity across two vision-based manipulation tasks: object picking and pushing. We train policies in simulation and deploy them to the real world using sim-to-real transfer. We find that action-space representation indeed significantly affects sim-to-real performance. In particular, we find that the joint velocity action space is best for the vision-based picking and pushing tasks in terms of smoothness and final task performance. We also provide practical guidance for RL practitioners in choosing action spaces for both simulation and real-world experiments."
+  },
+  {
+    "title": "SC3-Eval: Evaluating Robot Foundation Models via Self-Consistent Video Generation",
+    "original_title": "SC3-Eval: Evaluating Robot Foundation Models via Self-Consistent Video Generation",
+    "link": "https://arxiv.org/abs/2606.18610",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18610v1 Announce Type: new \nAbstract: Evaluating generalist robot manipulation policies in the real world is expensive, slow, and difficult to scale. Action-conditioned video world models offer a scalable alternative by simulating policy rollouts. Autoregressive rollouts accumulate compounding errors, observations across multiple camera views must remain mutually consistent, and the evaluator must generalize to policies whose behaviors lie outside the training distribution. We address these challenges with SC3-Eval, a self-consistent video generation recipe that adapts a pre-trained video foundation model into an accurate policy evaluator by enforcing three complementary forms of consistency. First, forward-inverse dynamics consistency jointly trains the model to predict frames from actions and to recover actions from frames, anchoring generated rollouts to a physically plausible action manifold and counteracting the drift a forward-only model cannot penalize. Second, cross-view consistency trains the model to inpaint each camera view from the other, keeping the multi-camera observation coherent over long rollouts without any explicit memory mechanism. Third, test-time consistency reuses the inverse dynamics mode at inference as a per-action-chunk uncertainty signal that terminates rollouts whose generated frames drift away from the requested actions. We also demonstrate SC3-Eval rollouts reproduce the failure modes that policies exhibit in real-world rollouts, supporting fine-grained diagnostic comparison rather than aggregate ranking alone. Across seven real-world vision-language-action policies, SC3-Eval attains a closed-loop Pearson correlation of $0.929$ and MMRV of $0.119$, outperforming three strong prior video-model-based baselines, and generalizes to new tasks."
+  },
+  {
+    "title": "SRL: Combining SLIP Model and Reinforcement Learning for Agile Robotic Jumping",
+    "original_title": "SRL: Combining SLIP Model and Reinforcement Learning for Agile Robotic Jumping",
+    "link": "https://arxiv.org/abs/2606.18625",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.18625v1 Announce Type: new \nAbstract: Robotic jumping is pivotal in applications such as search and rescue and logistics, where crossing obstacles and enhancing mobility efficiency are critical. The Spring-Loaded Inverted Pendulum (SLIP) model leverages simplified spring-mass dynamics that naturally encode biologically plausible hopping motions, yet its performance degrades on irregular terrain due to idealized assumptions regarding contact and joint dynamics. Meanwhile, Reinforcement Learning (RL) can adapt to diverse and complex environments but often requires extensive data from unguided exploration. The complementary strengths of SLIP's physically grounded baseline and RL's adaptive capabilities motivate a hybrid framework that overcomes these individual limitations. We therefore propose Spring-loaded Reinforcement Learning (SRL), which integrates SLIP-based feedforward control signals with RL-driven real-time feedback, enabling continuous optimization of robotic jumping. Experimental results demonstrate that SRL can achieve more stable jumps with much less training time than the baseline method, maintaining an average position tracking error below 0.1 m and velocity tracking errors within +/-3% of the target values. Through bipedal and quadrupedal simulations of ground and stair jumping, as well as sim-to-sim and sim-to-real validations, SRL exhibits robust adaptability to various task requirements and environmental complexities, underscoring its potential for real-world deployment."
+  },
+  {
     "title": "SAFe Has Won Enterprise Agile – What That Means for Your Career",
     "original_title": "SAFe Has Won Enterprise Agile – What That Means for Your Career",
     "link": "https://roboticsandautomationnews.com/2026/06/17/safe-has-won-enterprise-agile-what-that-means-for-your-career/102639/",
@@ -17926,77 +17998,5 @@
     "source": "ByteByteGo",
     "category": "humanoid",
     "summary": "Our 6th cohort of Becoming an AI Engineer starts in about a week."
-  },
-  {
-    "title": "Unitree confirms with GT after its G1 humanoid robot reportedly ordained as Buddhist monk in S. Korea - Global Times",
-    "original_title": "Unitree confirms with GT after its G1 humanoid robot reportedly ordained as Buddhist monk in S. Korea - Global Times",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1xYTVldmNfRkYzNlY5RUVUcDJMbXNIaXhPdlpHVU9PVkl3OGNweTZFbWhFM25IVGFUcVRlTnBoZzFHdHBOeE9PdGlDT2RwSmhMWjVlMHZWUFpwNlZ2eHZhbHFR?oc=5",
-    "date": "2026-05-08 14:20",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree confirms with GT after its G1 humanoid robot reportedly ordained as Buddhist monk in S. Korea  Global Times"
-  },
-  {
-    "title": "Unitree confirms with GT after its G1 humanoid robot reportedly ordained as Buddhist monk in S. Korea; netizens call it ‘cyberpunk’ as robot expands real-world applications - Global Times",
-    "original_title": "Unitree confirms with GT after its G1 humanoid robot reportedly ordained as Buddhist monk in S. Korea; netizens call it ‘cyberpunk’ as robot expands real-world applications - Global Times",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0zTV9WM3B6MERKYV9IYlY1SzlEX29LaEJ5dVg2NDI3RVJHb1FMZ0FINnJ5WENXN2QtY2dIV2tObmwwR3RwNk9FcGtwdllzOW9saW9KODRJclNkYkdzaTRSWF93?oc=5",
-    "date": "2026-05-08 13:06",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree confirms with GT after its G1 humanoid robot reportedly ordained as Buddhist monk in S. Korea; netizens call it ‘cyberpunk’ as robot expands real-world applications  Global Times"
-  },
-  {
-    "title": "QNX to bring hands-on demonstrations and new research to the Robotics Summit",
-    "original_title": "QNX to bring hands-on demonstrations and new research to the Robotics Summit",
-    "link": "https://www.therobotreport.com/qnx-brings-hands-on-demonstrations-new-research-2026-robotics-summit/",
-    "date": "2026-05-08 12:45",
-    "source": "The Robot Report",
-    "category": "hand",
-    "summary": "QNX encourages visitors to stop by Booth 307 at the Robotics Summit & Expo to see its demonstrations firsthand. \nThe post QNX to bring hands-on demonstrations and new research to the Robotics Summit appeared first on The Robot Report."
-  },
-  {
-    "title": "Robot Talk Episode 155 – Making aerial robots smarter, with Melissa Greeff",
-    "original_title": "Robot Talk Episode 155 – Making aerial robots smarter, with Melissa Greeff",
-    "link": "https://robohub.org/robot-talk-episode-155-making-aerial-robots-smarter-with-melissa-greeff/",
-    "date": "2026-05-08 11:33",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "Claire chatted to Melissa Greeff from Queen’s University about autonomous navigation and learning for drones. Melissa Greeff is an Assistant Professor in Electrical and Computer Engineering at Queen’s University. She leads Robora Lab and is also an Ingenuity Labs Robotics and AI Institute member. Her research interests include aerial robots, vision-based navigation, and safe learning-based […]"
-  },
-  {
-    "title": "Morgan Stanley: China's humanoid robotics industry has the potential to replicate the 'electric vehicle miracle'. - 富途牛牛",
-    "original_title": "Morgan Stanley: China's humanoid robotics industry has the potential to replicate the 'electric vehicle miracle'. - 富途牛牛",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWTl3WXZMenF2b0dES2puMWVRWC02Qmk2d0lfZTBVNmdnN0tydTN3SEZ3aEhBaXRxYVVLSC05S3pSdHA5YjFZQi11bzUwalBqZnRZZmxkT3ZVR2Nrem9oWEFKUS1Ca2tUWTZFVUJndlh3NVJDNElKVkd3WGExZXhCQ2VzU3lFb0k2TmZ4NWNqQm0zNmZfTEtIVnFqM1JDUTE1bUNZVjhZODVSMkZr?oc=5",
-    "date": "2026-05-08 10:09",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Morgan Stanley: China's humanoid robotics industry has the potential to replicate the 'electric vehicle miracle'.  富途牛牛"
-  },
-  {
-    "title": "Humanoid robot swings punches and kicks after malfunction at China school performance - VnExpress International",
-    "original_title": "Humanoid robot swings punches and kicks after malfunction at China school performance - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNR1Q3ZWt0akw0QmU2Q0tvQ203VTNxNS10MkNGNldLM0V2ZHFPaVByQVN3LV9NRm9BVV8yRWpkbHBKTGJQbkZBc0s3aXJpd3NIZXdCMjRZazhlX1lNS09WNFBrOEc0R2lESVotMm9rNWZxSUpYTDBaWHlDT0JQR1psbDVvbUh0bGd0WG9qSUVRV2xIaHpBWmdmM0tQUTRVY0hqdDV0TXkwZmlaT1RGQ2pWbU1GS1FCdUhadEFBaWVvYWJfQU5jTTFFV29yTHBUVFFDWFJMWEk3OWlfZw?oc=5",
-    "date": "2026-05-08 09:24",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Humanoid robot swings punches and kicks after malfunction at China school performance  VnExpress International"
-  },
-  {
-    "title": "Brain Corp reports strong results from AI-powered shelf-scanning robots at Czech retailer Albert",
-    "original_title": "Brain Corp reports strong results from AI-powered shelf-scanning robots at Czech retailer Albert",
-    "link": "https://roboticsandautomationnews.com/2026/05/08/brain-corp-reports-strong-results-from-ai-powered-shelf-scanning-robots-at-czech-retailer-albert/101330/",
-    "date": "2026-05-08 09:17",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Brain Corp, the real-world AI company, has released what it says are “highly successful results” from the expansion of its partnership with Albert to deploy AI-powered shelf scanning robots. Albert is one of the leading retail brands in the Czech Republic and a subsidiary of Ahold Delhaize, and operates 350 stores nationwide. Historically, inventory management […]"
-  },
-  {
-    "title": "Rocsys launches ‘next-generation’ hands-free charging system for heavy-duty electric fleets",
-    "original_title": "Rocsys launches ‘next-generation’ hands-free charging system for heavy-duty electric fleets",
-    "link": "https://roboticsandautomationnews.com/2026/05/08/rocsys-launches-next-generation-hands-free-charging-system-for-heavy-duty-electric-fleets/101325/",
-    "date": "2026-05-08 09:03",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "Rocsys, a developer of charging technologies for electric and autonomous vehicles, has launched the S2, its next-generation hands-free charging solution for heavy-duty electric vehicles operating in demanding environments. Part of Rocsys’ expanding portfolio of stewards, including the recently unveiled M1, the S2 is now available to order for ports, distribution hubs and other logistics facilities. […]"
   }
 ]
