@@ -1,5 +1,23 @@
 [
   {
+    "title": "Sanctuary AI Announces Expanded Physical AI Strategy to Industrial Robotics",
+    "original_title": "Sanctuary AI Announces Expanded Physical AI Strategy to Industrial Robotics",
+    "link": "https://humanoidroboticstechnology.com/industrial-2/sanctuary-ai-announces-expanded-physical-ai-strategy-to-industrial-robotics/",
+    "date": "2026-06-18 13:24",
+    "source": "Humanoid Tech Blog",
+    "category": "humanoid",
+    "summary": "Sanctuary AI has announced it has achieved world-class performance and innovation on a complex wire plugging production task with a global Tier 1 automotive supplier. The result: a 99.5%+ task success rate at a cycle time of 2.54 seconds, validated against the customer’s live production benchmarks. The milestone is the result of the company’s updated […]\nThe post Sanctuary AI Announces Expanded Physical AI Strategy to Industrial Robotics appeared first on Humanoid Robotics Technology."
+  },
+  {
+    "title": "RealSense unveils AI-native D585 Pro depth camera for robots",
+    "original_title": "RealSense unveils AI-native D585 Pro depth camera for robots",
+    "link": "https://www.therobotreport.com/realsense-unveils-ai-native-d585-pro-depth-camera-for-robots/",
+    "date": "2026-06-18 13:10",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "The D585 Pro is powered by a proprietary Gen 5 system-on-chip and delivers more than 2x better depth quality than the previous generation of RealSense cameras.\nThe post RealSense unveils AI-native D585 Pro depth camera for robots appeared first on The Robot Report."
+  },
+  {
     "title": "Kinova launches KIMA medical robotic arm",
     "original_title": "Kinova launches KIMA medical robotic arm",
     "link": "https://www.therobotreport.com/kinova-launches-kima-medical-robotic-arm/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.07215v1 Announce Type: new \nAbstract: Stochastic trajectory optimization methods like STOMP enable planning with non-differentiable costs, offering substantial flexibility over gradient-based approaches. We show that STOMP implicitly minimizes the KL divergence from a Boltzmann trajectory distribution, revealing an elegant Variational Inference (VI) structure underlying its updates. Building on this insight, we propose the \\textit{Proximal Inference for Stochastic Trajectory Optimization} (PISTO) algorithm that stabilizes the updates by augmenting the objective with a KL regularization between successive Gaussian proposals. This proximal formulation admits a trust-region interpretation and yields closed-form mean updates computable as expectations under a surrogate distribution. We estimate these expectations via importance-weighted Monte Carlo sampling, producing a simple, derivative-free algorithm that inherits STOMP's ability to handle non-differentiable and discontinuous costs without modification. On robot arm motion planning benchmarks, PISTO achieves an 89\\% success rate -- outperforming CHOMP (63\\%) and STOMP (68\\%) -- while producing shorter, smoother paths at twice the speed of competing stochastic methods. We further validate PISTO on contact-rich MuJoCo locomotion and manipulation tasks, where it consistently outperforms both CEM and MPPI baselines in reward."
-  },
-  {
-    "title": "BioProVLA-Agent: An Affordable, Protocol-Driven, Vision-Enhanced VLA-Enabled Embodied Multi-Agent System with Closed-Loop-Capable Reasoning for Biological Laboratory Manipulation",
-    "original_title": "BioProVLA-Agent: An Affordable, Protocol-Driven, Vision-Enhanced VLA-Enabled Embodied Multi-Agent System with Closed-Loop-Capable Reasoning for Biological Laboratory Manipulation",
-    "link": "https://arxiv.org/abs/2605.07306",
-    "date": "2026-05-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.07306v1 Announce Type: new \nAbstract: Biological laboratory automation can reduce repetitive manual work and improve reproducibility, but reliable embodied execution in wet-lab environments remains challenging. Protocols are often unstructured, labware is frequently transparent or reflective, and multi-step procedures require state-aware execution beyond one-shot instruction following. Existing robotic systems often rely on costly hardware, fixed workflows, dedicated instruments, or robotics-oriented interfaces. Here, we introduce BioProVLA-Agent, an affordable, protocol-driven, vision-enhanced embodied multi-agent system enabled by Vision-Language-Action (VLA) models for biological manipulation. The system uses protocols as the task interface and integrates protocol parsing, visual state verification, and embodied execution in a closed-loop workflow. A Tailored LLM Protocol Agent converts protocols into verifiable subtasks; a VLM-RAG Verification Agent assesses readiness and completion using observations, robot states, retrieved knowledge, and success/failure examples; and a VLA Embodied Agent executes verified subtasks through a lightweight policy. To improve robustness under wet-lab visual perturbations, we develop AugSmolVLA, an online augmentation strategy targeting transparent labware, reflections, illumination shifts, and overexposure. We evaluate the system on a hierarchical benchmark covering 15 atomic tasks, 6 composite workflows, and 3 bimanual tasks, including tube loading, sorting, waste disposal, cap twisting, and liquid pouring. Across normal and high-exposure settings, AugSmolVLA improves execution stability over ACT, X-VLA, and the original SmolVLA, especially for precise placement, transparent-object manipulation, composite workflows, and visually degraded scenes. These results suggest a practical route toward accessible, protocol-centered, and verification-capable embodied AI for biological manipulation."
-  },
-  {
-    "title": "AT-VLA: Adaptive Tactile Injection for Enhanced Feedback Reaction in Vision-Language-Action Models",
-    "original_title": "AT-VLA: Adaptive Tactile Injection for Enhanced Feedback Reaction in Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2605.07308",
-    "date": "2026-05-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.07308v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have significantly advanced the capabilities of robotic agents in executing diverse tasks; however, they still face challenges in contact-rich manipulation scenarios that require precise physical interactions. To address this limitation, recent studies have attempted to incorporate tactile signals during downstream tasks, enabling pretrained VLAs to interpret tactile feedback. Nevertheless, introducing new modalities during finetuning, which are rarely present in the pretrain stage, may disrupt the pretrained capabilities of VLAs. In addition, the inherently slow inference speed of VLAs hampers real-time responsiveness and limits the effective utilization of tactile feedback for action adjustment. To overcome these challenges, we propose Adaptive Tactile Vision-Language-Action (AT-VLA), which introduces a novel Adaptive Tactile Injection mechanism. This mechanism dynamically determines the appropriate timing and locations for tactile injection, incorporating only when it significantly contributes to action generation, thereby minimizing interference with pretrained representations. Furthermore, to enable rapid and accurate tactile responses, we propose a Tactile Reaction Dual-Stream mechanism, which decouples sensory processing into a slow visual-language stream for low-frequency perceptual reasoning and a fast tactile control stream for high-frequency physical interaction understanding, achieving real-time close-loop responses within 0.04 s. Real-world experiments thoroughly validate the effectiveness of AT-VLA in contact-rich manipulation tasks. The project page is available at: https://sites.google.com/view/at-vla."
   }
 ]
