@@ -225,6 +225,96 @@
     "summary": "arXiv:2606.19233v1 Announce Type: new \nAbstract: In this letter, we present a hierarchical control framework that enables wheeled bipedal robots to perform planar object sliding tasks with their wheeled legs. The proposed approach formulates a nonlinear model predictive controller (NMPC) based on a reduced-order three rigid bodies (TRB) dynamical model that explicitly accounts for the hip roll degree of freedom and multiple wheel-environment contact modes, which is essential for lateral stepping and pedipulation tasks. Within this framework, the NMPC simultaneously regulates robot locomotion and interaction forces, allowing the robot to stably execute both rolling and object manipulation behaviors. A trajectory-optimization-based robot-object motion planner is developed to generate reference motions that incorporate stick-slip transitions in ground-object contact. Two representative pedipulation motions, namely scooting and lateral sliding, are validated through real-world hardware experiments, in which the robot successfully retrieves a 1 kg object from under a desk and slides a 4 kg object over a distance of 0.228 m via scooting."
   },
   {
+    "title": "Modeling Branches for Active Manipulation using Iterative Parameter Estimation",
+    "original_title": "Modeling Branches for Active Manipulation using Iterative Parameter Estimation",
+    "link": "https://arxiv.org/abs/2606.19314",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19314v1 Announce Type: new \nAbstract: This study presents a method for modeling diverse plant branches by iteratively estimating material parameters to support delicate branch manipulation. Branch manipulation is necessary in agricultural robotics for plant repositioning, stabilizing, and clearing visual obstructions in dense foliage. The proposed method builds a tetrahedral branch model from point-cloud data and simulates its behavior using the finite element method. Using real observed deformation data, it iteratively estimates branch parameters and then computes an optimal path with a deformation-aware motion planner to move and stabilize branches within another robot's field of view. Across 30 trials on branches with varying geometries and material properties, the proposed method reduced the deformation energy by 35.69% while increasing the path length by 8.10% on average."
+  },
+  {
+    "title": "Do as I Do: Dexterous Manipulation Data from Everyday Human Videos",
+    "original_title": "Do as I Do: Dexterous Manipulation Data from Everyday Human Videos",
+    "link": "https://arxiv.org/abs/2606.19333",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19333v1 Announce Type: new \nAbstract: How can we scalably generate data for robotic manipulation, especially on human-like platforms such as dexterous multi-fingered hands? Learning from human videos has recently emerged as a likely answer to this question. However, difficulties in estimating hand-object interaction and crossing the human-to-robot embodiment gap have hindered the adoption of abundant monocular RGB-only human videos as the primary source of robot manipulation data. In this work, we present DO AS I DO, an algorithm to reconstruct and retarget monocular RGB human videos to multi-fingered dexterous robotic hands. DO AS I DO reconstructs hand-object interactions from various egocentric and exocentric in-the-wild video sources. The algorithm then retargets these hand-object interaction estimates into a sequence of actions executable in the real world, yielding robot-complete manipulation data from disparate human videos. Overall, DO AS I DO outperforms previous state of the art in estimating hand-object interactions and extracting dexterous manipulation trajectories from RGB videos, as we show in experiments on datasets with ground truths and on a dataset of video clips collected online. Our experiments enable us to propose an efficacy playbook for practitioners collecting human data for manipulation."
+  },
+  {
+    "title": "Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
+    "original_title": "Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
+    "link": "https://arxiv.org/abs/2606.19340",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19340v1 Announce Type: new \nAbstract: We present a zero-shot framework for long-horizon dexterous manipulation that grounds language instructions into executable 3D task plans from calibrated multi-view RGB images. Rather than training an end-to-end policy, our system uses a vision-language model (VLM) to produce reference-frame task grounding and primitive-level 2D keypoints, then lifts them into 3D via multi-view fusion. This lifting combines triangulation of view-wise VLM groundings with reference-view ray voting, which searches along a semantic camera ray for geometrically consistent candidates across neighboring views. The resulting 3D keypoints support both pick-and-place and tool-use: for tool-use, we retrieve an object-centric atomic action corresponding to the inferred skill category and align its stored 6D tool trajectory to the scene; for dexterous execution, we expand the lifted grasp keypoint into a task-conditioned grasp affordance region and generate feasible grasp-motion pairs with an arm-hand motion generator. Real-world experiments show improved 3D grounding accuracy and execution reliability over single-view RGB-D grounding and fine-tuned VLA baselines. We further demonstrate long-horizon manipulation through closed-loop status verification and replan, enabling zero-shot execution on unseen objects and tool-use tasks in novel scenes."
+  },
+  {
+    "title": "Stealthy World Model Manipulation via Data Poisoning",
+    "original_title": "Stealthy World Model Manipulation via Data Poisoning",
+    "link": "https://arxiv.org/abs/2606.18697",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18697v1 Announce Type: cross \nAbstract: Model-based learning agents use learned world models to predict future states, plan actions, and adapt to new environments. However, the process of updating world models from collected experience creates a training-time attack surface: adversarially poisoned fine-tuning trajectories can manipulate the learned dynamics and thereby corrupt downstream planning. In this paper, we propose SWAAP, the first two-stage data poisoning framework for learned world models. In the first stage, SWAAP identifies a harmful target world model that induces low-return behavior under planning while remaining close to clean dynamics, using first-order bilevel optimization enabled by a transition-gradient theorem. In the second stage, SWAAP realizes this target through stealth-constrained gradient matching, modifying only a limited fraction of fine-tuning transition targets so that the induced training gradients steer the victim model toward the adversarial target, while a prediction-error regularizer encourages the poisoned targets to remain close to the world model's natural approximation error. To assess attack stealthiness, we evaluate defenses and detectability across three stages of the poisoning pipeline: pre-training detection of poisoned transitions, robust training during fine-tuning, and test-time monitoring of the resulting world model. Across diverse continuous-control tasks, SWAAP causes substantial performance degradation while keeping poisoned transitions close to clean data and evading the evaluated non-adaptive residual/CUSUM/TRIM-style defenses. These results reveal a practical vulnerability in world-model adaptation pipelines and highlight the need for robustness methods that protect both world-model training data and learned dynamics."
+  },
+  {
+    "title": "Motion-Focused Latent Action Enables Cross-Embodiment VLA Training from Human EgoVideos",
+    "original_title": "Motion-Focused Latent Action Enables Cross-Embodiment VLA Training from Human EgoVideos",
+    "link": "https://arxiv.org/abs/2606.18955",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18955v1 Announce Type: cross \nAbstract: Training generalist Vision-Language-Action(VLA) models typically requires massive, diverse robotic datasets with high-fidelity action annotations. While egocentric human manipulation videos are abundant and capture significant environmental diversity, the absence of action labels makes them difficult to use in conventional training paradigms. To address this, we propose a latent-action-based framework designed to extract general action priors from unlabeled human videos. The architecture features a Hybrid Disentangled VQ-VAE that decouples motion dynamics from environmental backgrounds through physical masks, enabling the construction of a cross-embodiment action codebook. By pre-training on human videos with the codebook, the VLM backbone learns deep representations of action intent. For adaptation to specific embodiments, we introduce an intent-perception decoupling strategy where the VLM predicts the action intent while a separate frozen visual encoder provides state-specific features to the action expert, thereby reducing action hallucinations. Results in simulation and real-world environments show that our method, pre-trained exclusively on unlabeled human videos, performs competitively with state-of-the-art VLA models trained on massive annotated datasets, requiring only 50 trajectories for downstream adaptation."
+  },
+  {
+    "title": "Mem-World: Memory-Augmented Action-Conditioned World Models for Persistent Robot Manipulation",
+    "original_title": "Mem-World: Memory-Augmented Action-Conditioned World Models for Persistent Robot Manipulation",
+    "link": "https://arxiv.org/abs/2606.18960",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.18960v1 Announce Type: cross \nAbstract: Action-conditioned world models have emerged as a promising paradigm for robot learning, offering a scalable alternative to costly real-world experimentation by generating action-consistent video rollouts. However, persistent world modeling remains challenging in manipulation: frequent end-effector occlusions and rapid wrist-camera motion make the current observation insufficient for predicting future views, causing models to forget or hallucinate scene details seen in earlier frames. Existing memory retrieval strategies often fail to identify informative history in dynamic manipulation scenarios. To address this limitation, we propose Mem-World, a memory-augmented multi-view action-conditioned world model. At its core, we present W-VMem, a 4D wrist-view-centered surfel-indexed memory that anchors historical observations to temporally evolving surface elements. By explicitly modeling when and where scene elements are observed, W-VMem enables geometry-aware retrieval of relevant history frames conditioned on future actions. During generation, relevant history frames are selected via surfel-based rendering and scoring, providing informative and non-redundant context for prediction. Extensive experiments show that Mem-World generates persistent rollouts in complex manipulation scenarios, enables more reliable policy evaluation than Ctrl-World, improving the Pearson correlation with real-world performance by 14.5\\%, and supports effective policy improvement through synthetic data generation, increasing success rates from 58\\% to 72\\% on long-horizon tasks."
+  },
+  {
+    "title": "Steering Flexible Linear Objects in Planar Environments by Two Robot Hands Using Euler's Elastica Solutions",
+    "original_title": "Steering Flexible Linear Objects in Planar Environments by Two Robot Hands Using Euler's Elastica Solutions",
+    "link": "https://arxiv.org/abs/2501.02874",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2501.02874v5 Announce Type: replace \nAbstract: The manipulation of flexible objects such as cables, wires and fresh food items by robot hands forms a special challenge in robot grasp mechanics. This paper considers the steering of flexible linear objects in planar environments by two robot hands. The flexible linear object, modeled as an elastic non-stretchable rod, is manipulated by varying the gripping endpoint positions while keeping equal endpoint tangents. The flexible linear object shape has a closed form solution in terms of the grasp endpoint positions and tangents, called Euler's elastica. This paper obtains the elastica solutions under the optimal control framework, then uses the elastica solutions to obtain closed-form criteria for non self-intersection, stability and obstacle avoidance of the flexible linear object. The new tools are incorporated into a planning scheme for steering flexible linear objects in planar environments populated by sparsely spaced obstacles. The scheme is fully implemented and demonstrated with detailed examples."
+  },
+  {
+    "title": "Bench-Push: Benchmarking Pushing-based Navigation and Manipulation Tasks for Mobile Robots",
+    "original_title": "Bench-Push: Benchmarking Pushing-based Navigation and Manipulation Tasks for Mobile Robots",
+    "link": "https://arxiv.org/abs/2512.11736",
+    "date": "2026-06-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.11736v2 Announce Type: replace \nAbstract: Mobile robots are increasingly deployed in cluttered environments with movable objects, posing challenges for traditional methods that prohibit interaction. In such settings, the mobile robot must go beyond traditional obstacle avoidance, leveraging pushing or nudging strategies to accomplish its goals. While research in pushing-based robotics is growing, evaluations rely on ad hoc setups, limiting reproducibility and cross-comparison. To address this, we present Bench-Push, the first unified benchmark for pushing-based mobile robot navigation and manipulation tasks. Bench-Push includes multiple components: 1) a comprehensive range of simulated environments that capture the fundamental challenges in pushing-based tasks, including navigating a maze with movable obstacles, autonomous ship navigation in ice-covered waters, box delivery, and area clearing, each with varying levels of complexity; 2) novel evaluation metrics to capture efficiency, interaction effort, and partial task completion; and 3) demonstrations using Bench-Push to evaluate example implementations of established baselines across environments. Bench-Push is open-sourced as a Python library with a modular design. The code, documentation, and trained models can be found at https://github.com/IvanIZ/BenchNPIN."
+  },
+  {
+    "title": "ABB Robotics and PSYONIC Use Human-Generated Data to Advance Robotic Dexterity - 세계뉴스통신",
+    "original_title": "ABB Robotics and PSYONIC Use Human-Generated Data to Advance Robotic Dexterity - 세계뉴스통신",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBNSk1WZUU5WGRyUEtYMzhMdEtGRkhsUGtZaFJnQVBoS1B0NG1OZ1dCOVNSMlN2VGFmSC1lQ3VTbndmUHVvOFNIcVpoWldkcEQ2TklxckowQnhmSDg0eGo1VFF0eC1SeEdGQzdXQVJpcUtPNDNL?oc=5",
+    "date": "2026-06-18 00:37",
+    "source": "Google News (Humanoid)",
+    "category": "humanoid",
+    "summary": "ABB Robotics and PSYONIC Use Human-Generated Data to Advance Robotic Dexterity  세계뉴스통신"
+  },
+  {
+    "title": "Young minds meet humanoids as study trips gain momentum - China Daily - Global Edition",
+    "original_title": "Young minds meet humanoids as study trips gain momentum - China Daily - Global Edition",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVlMwZm5OT1VvbE9JNW51QkN6ZUpZcUFvMS1mV2FNNzFZQ3p6Q205MTBQS2I1Qzg1TEtnQnhGV21Qc3I2WWdMczg2RFJpOUVJdXN0MmNZRkp3NWRhMzNKUlJkOUJ3ck1BSlczamhZbU5VbmZPeUl3R0lOT1pGS0RscEV3?oc=5",
+    "date": "2026-06-18 00:27",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Young minds meet humanoids as study trips gain momentum  China Daily - Global Edition"
+  },
+  {
     "title": "SAFe Has Won Enterprise Agile – What That Means for Your Career",
     "original_title": "SAFe Has Won Enterprise Agile – What That Means for Your Career",
     "link": "https://roboticsandautomationnews.com/2026/06/17/safe-has-won-enterprise-agile-what-that-means-for-your-career/102639/",
@@ -17908,95 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.07727v1 Announce Type: cross \nAbstract: We propose Drifting Field Policy (DFP), a non-ODE one-step generative policy built on the drifting model paradigm. We frame the policy update as a reverse-KL Wasserstein-2 gradient flow toward a soft target policy, so that each DFP update corresponds to a gradient step in probability space. By construction, this gradient is decomposed into an ascent toward higher action-value regions and a score matching with the anchor policy as a trust region. We further derive a simple, tractable surrogate of the otherwise intractable update loss, akin to behavior cloning on top-K critic-selected actions. We find empirically that this mechanism uniquely benefits the drifting backbone owing to its non-ODE parameterization. With one-step inference, DFP achieves state-of-the-art performance on several manipulation tasks across Robomimic and OGBench, outperforming ODE-based policies."
-  },
-  {
-    "title": "GATO: GPU-Accelerated and Batched Trajectory Optimization for Scalable Edge Model Predictive Control",
-    "original_title": "GATO: GPU-Accelerated and Batched Trajectory Optimization for Scalable Edge Model Predictive Control",
-    "link": "https://arxiv.org/abs/2510.07625",
-    "date": "2026-05-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2510.07625v2 Announce Type: replace \nAbstract: While Model Predictive Control (MPC) delivers strong performance across robotics applications, solving the underlying (batches of) nonlinear trajectory optimization (TO) problems online remains computationally demanding. Existing GPU-accelerated approaches either parallelize single solves, handle large batches at sub-real-time rates, or sacrifice model generality for speed. This leaves a large gap in solver performance for many state-of-the-art MPC applications that require real-time batches of tens to low-hundreds of solves. As such, we present GATO, an open source, GPU-accelerated, batched TO solver co-designed across algorithm, software, and computational hardware to deliver real-time throughput for these moderate batch size regimes. Our approach leverages a combination of block-, warp-, and thread-level parallelism within and across solves for ultra-high performance. We demonstrate the effectiveness of our approach through a combination of: simulated benchmarks showing speedups of 18-21x over CPU baselines and 1.4-16x over GPU baselines as batch size increases; case studies highlighting improved disturbance rejection and convergence behavior; and finally a validation on hardware using an industrial manipulator. We open source GATO to support reproducibility and adoption."
-  },
-  {
-    "title": "Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models",
-    "original_title": "Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2602.01166",
-    "date": "2026-05-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.01166v2 Announce Type: replace \nAbstract: Vision-Language-Action (VLA) models benefit from chain-of-thought (CoT) reasoning, but existing approaches incur high inference overhead and rely on discrete reasoning representations that mismatch continuous perception and control. We propose Latent Reasoning VLA (LaRA-VLA), a unified VLA framework that internalizes multi-modal CoT reasoning into continuous latent representations for embodied action. LaRA-VLA performs unified reasoning and prediction in latent space, eliminating explicit CoT generation at inference time and enabling efficient, action-oriented control. To realize latent embodied reasoning, we introduce a curriculum-based training paradigm that progressively transitions from explicit textual and visual CoT supervision to latent reasoning, and finally adapts latent reasoning dynamics to condition action generation. We construct two structured CoT datasets and evaluate LaRA-VLA on both simulation benchmarks and long-horizon real-robot manipulation tasks. Experimental results show that LaRA-VLA consistently outperforms state-of-the-art VLA methods while reducing inference latency by up to 90\\% compared to explicit CoT-based approaches, demonstrating latent reasoning as an effective and efficient paradigm for real-time embodied control. Project Page: https://loveju1y.github.io/Latent-Reasoning-VLA/"
-  },
-  {
-    "title": "DynaRetarget: Dynamically-Feasible Retargeting using Sampling-Based Trajectory Optimization",
-    "original_title": "DynaRetarget: Dynamically-Feasible Retargeting using Sampling-Based Trajectory Optimization",
-    "link": "https://arxiv.org/abs/2602.06827",
-    "date": "2026-05-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.06827v2 Announce Type: replace \nAbstract: In this paper, we introduce DynaRetarget, a complete pipeline for retargeting human motions to humanoid control policies. The core component of DynaRetarget is a novel Sampling-Based Trajectory Optimization (SBTO) framework that refines imperfect kinematic trajectories into dynamically feasible motions. SBTO incrementally advances the optimization horizon, enabling optimization over the entire trajectory for long-horizon tasks. We validate DynaRetarget by successfully retargeting hundreds of humanoid-object demonstrations and achieving higher success rates than the state of the art. The framework also generalizes across varying object properties, such as mass, size, and geometry, using the same tracking objective. This ability to robustly retarget diverse demonstrations opens the door to generating large-scale synthetic datasets of humanoid loco-manipulation trajectories, addressing a major bottleneck in real-world data collection."
-  },
-  {
-    "title": "HAIC: Humanoid Agile Object Interaction Control via Dynamics-Aware World Model",
-    "original_title": "HAIC: Humanoid Agile Object Interaction Control via Dynamics-Aware World Model",
-    "link": "https://arxiv.org/abs/2602.11758",
-    "date": "2026-05-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2602.11758v2 Announce Type: replace \nAbstract: Humanoid robots show promise for complex whole-body tasks in unstructured environments. Although Human-Object Interaction (HOI) has advanced, most methods focus on fully actuated objects rigidly coupled to the robot, ignoring underactuated objects with independent dynamics and non-holonomic constraints. These introduce control challenges from coupling forces and occlusions. We present HAIC, a unified framework for robust interaction across diverse object dynamics without external state estimation. Our key contribution is a dynamics predictor that estimates high-order object states (velocity, acceleration) solely from proprioceptive history. These predictions are projected onto static geometric priors to form a spatially grounded dynamic occupancy map, enabling the policy to infer collision boundaries and contact affordances in blind spots. We use asymmetric fine-tuning, where a world model continuously adapts to the student policy's exploration, ensuring robust state estimation under distribution shifts. Experiments on a humanoid robot show HAIC achieves high success rates in agile tasks (skateboarding, cart pushing/pulling under various loads) by proactively compensating for inertial perturbations, and also masters multi-object long-horizon tasks like carrying a box across varied terrain by predicting the dynamics of multiple objects."
-  },
-  {
-    "title": "SeedPolicy: Horizon Scaling via Self-Evolving Diffusion Policy for Robot Manipulation",
-    "original_title": "SeedPolicy: Horizon Scaling via Self-Evolving Diffusion Policy for Robot Manipulation",
-    "link": "https://arxiv.org/abs/2603.05117",
-    "date": "2026-05-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.05117v3 Announce Type: replace \nAbstract: Imitation Learning (IL) enables robots to acquire manipulation skills from expert demonstrations. Diffusion Policy (DP) models multi-modal expert behaviors but degrades when naively increasing stacked observation horizons, limiting long-horizon manipulation. We propose Self-Evolving Gated Attention (SEGA), a temporal module that maintains a time-evolving latent state via gated attention, enabling efficient recurrent updates that accumulate long-term context into a compact latent representation while filtering irrelevant temporal information. Integrating SEGA into DP yields Self-Evolving Diffusion Policy (SeedPolicy), which resolves the temporal modeling bottleneck and extends the effective temporal horizon with moderate overhead. On the RoboTwin 2.0 benchmark with 50 manipulation tasks, SeedPolicy outperforms DP and other IL baselines. Averaged across both CNN and Transformer backbones, SeedPolicy achieves 36.8% relative improvement in clean settings and 169% relative improvement in randomized challenging settings over the DP. Compared to vision-language-action models such as RDT with 1.2B parameters, SeedPolicy achieves stronger performance in the clean setting with one to two orders of magnitude fewer parameters, demonstrating strong efficiency. These results establish SeedPolicy as a state-of-the-art imitation learning method for long-horizon robotic manipulation. Code is available at: https://anonymous.4open.science/r/SeedPolicy-64F0/."
-  },
-  {
-    "title": "Contact-Grounded Policy: Dexterous Visuotactile Policy with Generative Contact Grounding",
-    "original_title": "Contact-Grounded Policy: Dexterous Visuotactile Policy with Generative Contact Grounding",
-    "link": "https://arxiv.org/abs/2603.05687",
-    "date": "2026-05-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.05687v3 Announce Type: replace \nAbstract: Contact-rich dexterous manipulation with multi-finger hands remains an open challenge in robotics because task success depends on multi-point contacts that continuously evolve and are highly sensitive to object geometry, frictional transitions, and slip. Recently, tactile-informed manipulation policies have shown promise. However, most use tactile signals as additional observations rather than modeling contact state or how their action outputs interact with low-level controller dynamics. We present Contact-Grounded Policy (CGP), a visuotactile policy that grounds multi-point contacts by predicting coupled trajectories of actual robot state and tactile feedback, and using a learned contact-consistency mapping to convert these predictions into executable target robot states for a compliance controller. CGP consists of two components: (i) a conditional diffusion model that forecasts future robot state and tactile feedback in a compressed latent space, and (ii) a learned contact-consistency mapping that converts the predicted robot state-tactile pair into executable targets for a compliance controller, enabling it to realize the intended contacts. We evaluate CGP using a physical four-finger Allegro V5 hand with Digit360 fingertip tactile sensors, and a simulated five-finger Tesollo DG-5F hand with dense whole-hand tactile arrays. Across a range of dexterous tasks including in-hand manipulation, delicate grasping, and tool use, CGP outperforms visuomotor and visuotactile diffusion-policy baselines."
-  },
-  {
-    "title": "AGILE: Hand-Object Interaction Reconstruction from Video via Agentic Generation",
-    "original_title": "AGILE: Hand-Object Interaction Reconstruction from Video via Agentic Generation",
-    "link": "https://arxiv.org/abs/2602.04672",
-    "date": "2026-05-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.04672v3 Announce Type: replace-cross \nAbstract: Reconstructing dynamic hand-object interactions from monocular videos is critical for dexterous manipulation data collection and creating realistic digital twins for robotics and VR. However, current methods face two prohibitive barriers: (1) reliance on neural rendering often yields fragmented, non-simulation-ready geometries under heavy occlusion, and (2) dependence on brittle Structure-from-Motion (SfM) initialization leads to frequent failures on in-the-wild footage. To overcome these limitations, we introduce AGILE, a robust framework that shifts the paradigm from reconstruction to agentic generation for interaction learning. First, we employ an agentic pipeline where a Vision-Language Model (VLM) guides a generative model to synthesize a complete, watertight object mesh with high-fidelity texture, independent of video occlusions. Second, bypassing fragile SfM entirely, we propose a robust anchor-and-track strategy. We initialize the object pose at a single interaction onset frame using a foundation model and propagate it temporally by leveraging the strong visual similarity between our generated asset and video observations. Finally, a contact-aware optimization integrates semantic, geometric, and interaction stability constraints to enforce physical plausibility. Extensive experiments on HO3D, DexYCB, ARCTIC, and in-the-wild videos reveal that AGILE outperforms baselines in global geometric accuracy while demonstrating exceptional robustness on challenging sequences where prior arts frequently collapse. By prioritizing physical validity, our method produces simulation-ready assets validated via real-to-sim retargeting for robotic applications. Project page: https://agile-hoi.github.io."
-  },
-  {
-    "title": "Analysis: Forget the hardware race — Unitree wants to own the robot platform - digitimes",
-    "original_title": "Analysis: Forget the hardware race — Unitree wants to own the robot platform - digitimes",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNV2c3ZE5sWi1DWkx2SnVGZkF0WG50bFZJd1FtcjRoYXF3aGo4OURWdkF2aF9obTIwN1kzSnNBRWdha2Rlb0s2S2gxNEI4UkJqeU1QeDNFODFUd1Q5Uk9vWXJSNGlrVEhpV08zb2ZyNUI0ZHFqbkdKVWJ2ak85UFlSTUowOWo1NEZPd0ZmUEF5V244S1V1WF8zVGd3?oc=5",
-    "date": "2026-05-11 03:37",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Analysis: Forget the hardware race — Unitree wants to own the robot platform  digitimes"
-  },
-  {
-    "title": "Unitree brings App Store ecosystem to humanoid robots - digitimes",
-    "original_title": "Unitree brings App Store ecosystem to humanoid robots - digitimes",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdS1IYUFOUmZySlIyaGlsc1UzRmgtN3pzalc4ckRCMkZCRDFqaWxsNW5VcEdSdmJhQ0tGS21Jek1POHoxMDllbG5HenBKWm5XWTYzeW9JZVYxOFpJV2hXOVVabjdtYUd0aS1MZ3BaaE5sSkMxdldTdHRBZ19OaDB3QXpEemxCdy1ZUDRF?oc=5",
-    "date": "2026-05-11 02:12",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree brings App Store ecosystem to humanoid robots  digitimes"
-  },
-  {
-    "title": "Artificial muscle merges sensing and movement in one structure for humanoid robots",
-    "original_title": "Artificial muscle merges sensing and movement in one structure for humanoid robots",
-    "link": "https://techxplore.com/news/2026-05-artificial-muscle-merges-movement-humanoid.html",
-    "date": "2026-05-11 00:30",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "A research team has developed an \"intelligent artificial muscle\" capable of simultaneously performing sensing and actuation functions, inspired by biological muscle–tendon complexes. This artificial muscle, which embeds liquid metal channels within a liquid crystal elastomer (LCE), contracts in response to electrical stimulation while also being able to measure internal force and length in real time."
   }
 ]
