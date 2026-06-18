@@ -1,5 +1,14 @@
 [
   {
+    "title": "Robots pour cocktails and run marathons, but still can't multitask",
+    "original_title": "Robots pour cocktails and run marathons, but still can't multitask",
+    "link": "https://techxplore.com/news/2026-06-robots-cocktails-marathons-multitask.html",
+    "date": "2026-06-18 09:10",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "They can mix cocktails, run marathons and fold laundry. But humanoid robots are still a long way from doing lots of different jobs on command, whatever the marketing says."
+  },
+  {
     "title": "Graitec outlines AI roadmap focused on accountability in engineering and construction",
     "original_title": "Graitec outlines AI roadmap focused on accountability in engineering and construction",
     "link": "https://roboticsandautomationnews.com/2026/06/18/graitec-outlines-ai-roadmap-focused-on-accountability-in-engineering-and-construction/102651/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.07771v1 Announce Type: new \nAbstract: Close-proximity offshore wind turbine inspection requires strict clearance control around large cylindrical structures under wind and model mismatch. Nominal Nonlinear Model Predictive Control (NMPC) may violate safety constraints when mass, inertia, thrust effectiveness, drag, or wind conditions differ from nominal assumptions. We propose a sensitivity-based robust NMPC for a tilted multirotor that robustifies the tower-clearance constraint via online constraint tightening. First-order parametric state sensitivities provide a structured-uncertainty margin, while bounded gusts are handled by a stage-dependent additive margin. The formulation augments the nominal NMPC with sensitivity propagation and margin evaluation only, leaving the receding-horizon optimization structure unchanged. Monte-Carlo evaluation over 500 uncertainty realizations on a boundary-critical helical inspection trajectory shows that the proposed controller eliminates the clearance violations observed under nominal NMPC at the cost of a moderate increase in solve time."
-  },
-  {
-    "title": "NoiseGate: Learning Per-Latent Timestep Schedules as Information Gating in World Action Models",
-    "original_title": "NoiseGate: Learning Per-Latent Timestep Schedules as Information Gating in World Action Models",
-    "link": "https://arxiv.org/abs/2605.07794",
-    "date": "2026-05-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.07794v1 Announce Type: new \nAbstract: World Action Models (WAMs) are an emerging family of policies that tie robot action generation to future-observation modeling. In this work, we focus on the joint video--action modeling paradigm, where actions and imagined future observations are co-generated along a shared denoising or flow trajectory, so that perception, prediction, and control are coupled within one generative process. Existing WAMs typically realize this paradigm with a Mixture-of-Transformers (MoT), where video and action tokens interact through shared self-attention. This architecture can in principle assign a separate timestep $t_f$ to each predicted latent frame, yet current systems collapse this degree of freedom onto a single shared scalar $t$. Under the noise-as-masking view of Diffusion Forcing, this shared schedule imposes the unjustified prior that every predicted latent is equally reliable for action generation. We instead view the per-latent schedule as a \\emph{learnable information-gating policy}: by changing a latent frame's noise level, the policy modulates the reliability of its Key/Value contribution to the action tokens. We propose \\textbf{NoiseGate}, which combines independent per-latent timestep sampling during backbone training, a lightweight Gating Policy Network that emits per-latent time increments during denoising, and task-reward optimization that trains the schedule policy without hand-crafted shape priors. Built on a joint video--action MoT backbone, NoiseGate delivers consistent gains on diverse RoboTwin random-scene manipulation tasks."
   }
 ]
