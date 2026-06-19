@@ -1,5 +1,14 @@
 [
   {
+    "title": "European robotics start-ups take on Chinese heavyweights - Free Malaysia Today",
+    "original_title": "European robotics start-ups take on Chinese heavyweights - Free Malaysia Today",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWGFNSkZWRU9wUWhEV3FPZ3IyUVAwejhKUVgwQlREN05TbERCLU9sWjNZb1dNa3kzQXJKM0tiU1gzLVEwZzVYVmt6NS1NdVRtelA1YXZWVUpURUN1YkJURGdfTTZTVXVWcmlKei1fbWdSNUF5cElrcFU1djdzZmRVT09tSXNPUWxRS09nUHZIbVVKdnlRa0ozWXUyVzFtMGR2Z3VldENieHNZTWpZOHV4LXRPa0pzTW9adUZF?oc=5",
+    "date": "2026-06-19 09:45",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "European robotics start-ups take on Chinese heavyweights  Free Malaysia Today"
+  },
+  {
     "title": "WorkBenchMark: A LEGO-Based Assembly Benchmark with an Assembly-by-Disassembly Baseline for the Smart Manufacturing League",
     "original_title": "WorkBenchMark: A LEGO-Based Assembly Benchmark with an Assembly-by-Disassembly Baseline for the Smart Manufacturing League",
     "link": "https://arxiv.org/abs/2606.19358",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.09999v1 Announce Type: new \nAbstract: Diffusion-based trajectory planners can synthesize rich, multimodal robot motions, but their iterative denoising makes online planning and control prohibitively slow. Existing accelerations either modify the sampler or compress the network--sacrificing plan quality or requiring retraining without accounting for downstream control risk. We address the problem of making diffusion-based trajectory planners fast enough for real-time robot use without retraining the model or sacrificing trajectory quality, and in a way that works across diverse state-space diffusion architectures. Our key insight is that diffusion trajectory planners expose two signals we can exploit: a cheap probe of how their internal trajectory representation changes across steps, and analytic coefficients that describe how denoiser errors affect the sampler's state update. By calibrating the first signal against the second on offline runs, we obtain a per-step score that upper-bounds how far the final trajectory can deviate when we reuse a cached denoiser output, and we treat this bound as an uncertainty budget that we can spend over the denoising process. Building on this insight, we present Muninn, a training-free caching wrapper that tracks this uncertainty budget during sampling and, at each diffusion step, chooses between reusing a cached denoiser output when the predicted deviation is small and recomputing the denoiser when it is not. Across standard benchmarks Muninn delivers up to 4.6x wall-clock speedups across several trajectory diffusion models by reducing denoiser evaluations, while preserving task performance and safety metrics. Muninn further certifies that cached rollouts remain within a specified distance of their full-compute counterparts, and we validate these gains in real-time closed-loop navigation and manipulation hardware deployments. Project page: https://github.com/gokulp01/Muninn."
-  },
-  {
-    "title": "Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs",
-    "original_title": "Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs",
-    "link": "https://arxiv.org/abs/2605.10094",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.10094v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models show strong potential for general-purpose robotic manipulation, yet their closed-loop reliability often degrades under local deployment conditions. Existing evaluations typically treat test episodes as independent zero-shot trials. However, real robots often operate repeatedly in the same or slowly changing environments, where successful executions provide environment-verified evidence of reliable behavior patterns. We study this persistent-deployment setting, asking whether a partially competent frozen VLA can improve its reliability by reusing its successful test-time experience. We propose an online success-memory guided test-time adaptation framework for generative VLAs. During deployment, the robot stores progress-calibrated successful observation-action segments in a long-term memory. At inference, it retrieves state-relevant action chunks, filters inconsistent candidates via trajectory-level consistency, and aggregates them into an elite action prior. To incorporate this prior into action generation, we introduce confidence-adaptive prior guidance, which injects the elite prior into an intermediate state of the flow-matching action sampler and adjusts the guidance strength based on retrieval confidence. This design allows the frozen VLA to exploit environment-specific successful experience while preserving observation-conditioned generative refinement. This retrieve-then-steer mechanism enables lightweight, non-parametric test-time adaptation without requiring parameter updates. Simulation and real-world experiments show improved task success and closed-loop stability, especially in long-horizon and multi-stage tasks."
   }
 ]
