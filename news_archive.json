@@ -1,5 +1,23 @@
 [
   {
+    "title": "AURA Foresight Reaches Global XPRIZE Wildfire Finals in Alaska",
+    "original_title": "AURA Foresight Reaches Global XPRIZE Wildfire Finals in Alaska",
+    "link": "https://robohub.org/aura-foresight-reaches-global-xprize-wildfire-finals-in-alaska/",
+    "date": "2026-06-19 16:42",
+    "source": "Robohub",
+    "category": "humanoid",
+    "summary": "One of only four teams remaining from more than 130 competitors worldwide, our team AURA Foresight is developing autonomous technology to stop wildfires before they grow out of control. AURA Foresight has been selected as a finalist in the prestigious XPRIZE Wildfire Autonomous Wildfire Response competition, emerging as one of just four teams remaining from […]"
+  },
+  {
+    "title": "Drones learn to squeeze through narrow gaps using onboard AI control",
+    "original_title": "Drones learn to squeeze through narrow gaps using onboard AI control",
+    "link": "https://techxplore.com/news/2026-06-drones-narrow-gaps-onboard-ai.html",
+    "date": "2026-06-19 16:40",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "Unmanned aerial vehicles (UAVs), commonly known as drones, are now widely used for various purposes, ranging from filmmaking and aerial photography to industrial inspection, precision farming and reaching obstructed areas during emergency response missions. While many existing drones can move swiftly in their surroundings and circumvent large obstacles, most still struggle in cluttered environments. In addition, they are often unable to execute maneuvers that would allow them to safely pass through small gaps or reach secluded areas."
+  },
+  {
     "title": "Video Friday: Do Robots Even Need Legs?",
     "original_title": "Video Friday: Do Robots Even Need Legs?",
     "link": "https://spectrum.ieee.org/video-friday-agentic-ai-robot",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.09410v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models remain brittle in long-horizon, contact-rich manipulation because success-only imitation provides little supervision for execution drift, while failed rollouts are often discarded. We introduce RePO-VLA, a recovery-driven policy optimization framework that assigns distinct roles to success, recovery, and failure trajectories. RePO-VLA first applies Recovery-Aware Initialization (RAI), slicing recovery segments and resetting history so corrective actions depend on the current adverse state rather than the preceding failure. It then learns a Progress-Aware Semantic Value Function (PAS-VF), aligning spatiotemporal trajectory features with instructions and successful references. The resulting labels salvage useful failure prefixes via reliability decay, while low-value labels mark drift and terminal breakdowns, teaching differences among nominal, failed, and corrective actions. The data engine turns adverse states into planner-generated or human-collected corrective rollouts, teaching recovery to the success manifold. Value-Conditioned Refinement (VCR) trains the policy to prefer high-progress actions. At deployment, a fixed high value ($v=1.0$) biases actions toward the learned success manifold without online failure detectors or heuristic retries. We introduce FRBench, with standardized error injection and recovery-focused evaluation. Across simulated and real-world bimanual tasks, RePO-VLA improves robustness, raising adversarial success from 20% to 75% on average and up to 80% in scaled real-world trials."
-  },
-  {
-    "title": "Beyond Isolation: A Unified Benchmark for General-Purpose Navigation",
-    "original_title": "Beyond Isolation: A Unified Benchmark for General-Purpose Navigation",
-    "link": "https://arxiv.org/abs/2605.09441",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.09441v1 Announce Type: new \nAbstract: The pursuit of general-purpose embodied agents is hindered by fragmented evaluation protocols that isolate navigation skills and fixate on specific robot morphologies, failing to reflect real-world scenarios where agents must orchestrate diverse behaviors across varying embodiments. To bridge this gap, we introduce OmniNavBench, a benchmark for cross-skill coordination and cross-embodiment generalization. OmniNavBench introduces three paradigm shifts: (1) Compositional Complexity. We propose composite instructions that interleave sub-tasks from 6 categories (PointNav, VLN, ObjectNav, SocialNav, Human Following and EQA), compelling agents to transition between exploration, interaction, and social compliance within a single episode. (2) Morphological Universality and Sensor Flexibility. We present a simulation platform that breaks the reliance on single-morphology evaluation, enabling generalization tests across humanoid, quadrupedal, and wheeled robots, with a modular sensor interface and 170 environments blending synthetic assets with real-world scans. (3) Demonstrations Quality. Moving beyond shortest-path algorithms, we curate 1779 expert trajectories via human teleoperation, capturing behavioral nuances such as exploratory glance and anticipatory avoidance. Extensive evaluations demonstrate that current methods, despite their claimed unified design, struggle with the complex, interleaved nature of general-purpose navigation. This exposes a critical disparity between existing capabilities and real-world deployment demands, underscoring OmniNavBench as a testbed for the next generation of generalist navigators. Dataset, code, and leaderboard are available at http://omninavbench.cloud-ip.cc."
-  },
-  {
-    "title": "SABER: A Scalable Action-Based Embodied Dataset for Real-World VLA Adaptation",
-    "original_title": "SABER: A Scalable Action-Based Embodied Dataset for Real-World VLA Adaptation",
-    "link": "https://arxiv.org/abs/2605.09613",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.09613v1 Announce Type: new \nAbstract: Robotic deployment in real-world environments depends on rich, domain-specific action data as much as on strong model architecture. General-purpose robot foundation models show modest performance in complex unseen tasks such as manipulation in a retail domain when applied out of the box. The root cause is a data gap: retail environments are structurally absent from general robot pretraining distributions, and the path to filling that gap through teleoperation is prohibitively expensive, logistically constrained, and difficult to scale. We introduce SABER, a high-fidelity retail robotics action dataset built from over 100 hours of natural in-store capture across multiple real grocery environments. Egocentric footage from head-mounted cameras records fine-grained hand activity at the point of interaction, while exocentric 360-degree scene footage from DreamVu's ALIA camera simultaneously observes all actors and activities across the entire space. This combination yields a uniquely complete picture of human retail behavior: dexterous hand activity, whole-body motion, and scene dynamics, all captured without staging, scripting, or teleoperation overhead. The SABER corpus contains 44.8K training samples across three action representation streams: 25K latent action sequences via LAPA-style encoding, 18.6K dexterous hand-pose trajectories retargeted to robot joint space, and 1.2K whole-body synchronized motion sequences retargeted to a humanoid embodiment. When applied to GR00T N1.6 via a shared-backbone multi-task post-training recipe, SABER yields a mean success rate of 29.3% across ten retail manipulation tasks -- more than 2.19x over fine-tuning baselines (13.4%). SABER demonstrates that the path to capable retail robots runs through better data, which can be collected today, at scale, without a robot in the loop. The dataset and code are available at https://dreamvu.ai/saber"
   }
 ]
