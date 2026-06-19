@@ -1,5 +1,14 @@
 [
   {
+    "title": "U.S. robotics industry saw double-digit growth in 2025, says IFR",
+    "original_title": "U.S. robotics industry saw double-digit growth in 2025, says IFR",
+    "link": "https://www.therobotreport.com/u-s-robotics-industry-saw-double-digit-growth-in-2025-says-ifr/",
+    "date": "2026-06-19 12:45",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "The IFR said robust growth in the food industry and other non-manufacturing sectors drove this recovery in the U.S. robotics industry.\nThe post U.S. robotics industry saw double-digit growth in 2025, says IFR appeared first on The Robot Report."
+  },
+  {
     "title": "Elmo releases new motion controller and servo drives for industrial applications",
     "original_title": "Elmo releases new motion controller and servo drives for industrial applications",
     "link": "https://www.therobotreport.com/elmo-releases-new-motion-controller-servo-drives-industrial-applications/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2605.09944v1 Announce Type: new \nAbstract: Robust humanoid stair climbing remains challenging due to geometric discontinuities, sensitivity to step height variations, and perception uncertainty in real-world environments. Existing learning-based locomotion policies often rely on implicit terrain representations or blind proprioceptive feedback, limiting their ability to generalize across varying stair geometries and to anticipate required gait adjustments. This paper proposes an explicit stair geometry conditioning framework for robust humanoid stair climbing. Instead of encoding terrain as high-dimensional latent features, we extract a compact set of interpretable geometric parameters, including step height, step depth, and current yaw angle relative to the robot heading. These explicit stair parameters directly condition a Proximal Policy Optimization (PPO)-based locomotion policy, enabling proactive modulation of swing-foot clearance and stride characteristics according to stair structure. Simulation experiments demonstrate improved generalization across unseen stair heights beyond the training distribution. Real-world experiments on the Unitree G1 humanoid validate reliable indoor and outdoor stair traversal. In challenging outdoor scenarios, the robot successfully ascends 33 consecutive steps without failure, demonstrating robustness and practical deployability."
-  },
-  {
-    "title": "JODA: Composable Joint Dynamics for Articulated Objects",
-    "original_title": "JODA: Composable Joint Dynamics for Articulated Objects",
-    "link": "https://arxiv.org/abs/2605.09954",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.09954v1 Announce Type: new \nAbstract: Articulated objects used in simulation and embodied AI are typically specified by geometry and kinematic structure, but lack the fine-grained dynamical effects that govern realistic mechanical behavior, such as frictional holding, detents, soft closing, and snap latching. Existing approaches either ignore the detailed structure of dynamics entirely, or use simple models with limited expressiveness.\n  We introduce JODA, a framework for generating joint-level dynamics as a structured three-channel field over the joint degree of freedom, capturing conservative forces, dry friction, and damping. Instantiated using shape-constrained piecewise cubic interpolation (PCHIP), this formulation defines a compact and expressive function space that is both interpretable and compatible with differentiable simulation. Building on this representation, we develop methods for inferring and refining joint dynamics from multimodal inputs. Given visual observations and joint context, a vision-language model proposes structured dynamical primitives, which are composed into a unified dynamics field. The resulting representation supports both direct manipulation and gradient-based refinement. We demonstrate that JODA enables plausible and controllable modeling of diverse joint behaviors, providing a unified interface for inference, editing, and optimization. Code and example assets with their generated profiles will be released upon publication."
   }
 ]
