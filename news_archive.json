@@ -1,5 +1,23 @@
 [
   {
+    "title": "At Automate 2026 NEURA Robotics Will Showcase Full-Stack Robotics Platform",
+    "original_title": "At Automate 2026 NEURA Robotics Will Showcase Full-Stack Robotics Platform",
+    "link": "https://humanoidroboticstechnology.com/industry-news/at-automate-2026-neura-robotics-will-showcase-full-stack-robotics-platform/",
+    "date": "2026-06-19 14:26",
+    "source": "Humanoid Tech Blog",
+    "category": "humanoid",
+    "summary": "NEURA Robotics will exhibit at Automate 2026, North America’s largest automation and robotics trade show, taking place June 22-25 at McCormick Place in Chicago. NEURA will occupy a twin island booth featuring live demos across its full industrial robot portfolio, from collaborative robots (cobots) and mobile autonomous transports to humanoids, all connected through the Neuraverse […]\nThe post At Automate 2026 NEURA Robotics Will Showcase Full-Stack Robotics Platform appeared first on Humanoid Robotics Technology."
+  },
+  {
+    "title": "Three-armed Sashimi-Bot learns to slice and serve fish like a pro",
+    "original_title": "Three-armed Sashimi-Bot learns to slice and serve fish like a pro",
+    "link": "https://techxplore.com/news/2026-06-armed-sashimi-bot-slice-fish.html",
+    "date": "2026-06-19 14:20",
+    "source": "Tech Xplore",
+    "category": "hand",
+    "summary": "If you ever need help in the kitchen cutting fish into appetizing bites, a new three-armed robot may be able to help. And that's no easy feat for robots. While they are generally good at picking up rigid objects, something slippery that can change shape when touched, such as a fish, poses a range of challenges. Then, if you add slicing into the mix, it becomes even more difficult because the robot has to cope with the fish changing shape as it is handled and cut."
+  },
+  {
     "title": "U.S. robotics industry saw double-digit growth in 2025, says IFR",
     "original_title": "U.S. robotics industry saw double-digit growth in 2025, says IFR",
     "link": "https://www.therobotreport.com/u-s-robotics-industry-saw-double-digit-growth-in-2025-says-ifr/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.09672v1 Announce Type: new \nAbstract: State-of-the-art 6-DoF grasp generators excel on tabletop benchmarks with overhead cameras but struggle in frontal grasping scenarios on low-cost manipulators with constrained workspaces, where kinematic limits and approach-direction constraints cause high failure rates. We address this challenge for the Unitree Z1 arm by proposing MVB-Grasp, a novel grasping stack that injects a Minimum Volume Bounding Box (MVBB) geometric prior into diffusion-based grasp generation to dramatically improve success rates in frontal, workspace-constrained settings. Our key scientific contributions are threefold: (i) an MVBB-based geometric filter that exploits oriented bounding-box face normals to reject grasps approaching through the table or misaligned with accessible object faces in O(N) time; (ii) a combined re-scoring function that blends learned discriminator scores with face-alignment geometry {\\alpha}=0.85, specifically calibrated for the Z1's frontal workspace and kinematic constraints; and (iii) a systematic MuJoCo evaluation protocol measuring grasp success across object types, distances, lateral positions, and pitch orientations to validate embodiment-specific performance. We implement MVB-Grasp on a Unitree Z1 arm with an Intel RealSense D405 camera, integrating YOLOv8 object detection, GraspGen for candidate generation, Principal Component Analysis (PCA)-based MVBB fitting, and inverse-kinematics trajectory planning. Experiments across 81 MuJoCo episodes (cylinder, asymmetric box, waterbottle) demonstrate that MVB-Grasp achieves 59.3% success versus 24.7% for vanilla GraspGen, a 2.4x improvement, by filtering geometrically infeasible candidates and prioritizing face-aligned grasps suited to the Z1's frontal approach constraints. Real-world trials confirm that the MVBB prior substantially improves grasp reliability on constrained, low-cost manipulators without requiring model retraining."
-  },
-  {
-    "title": "Zero-Shot Sim-to-Real Robot Learning: A Dexterous Manipulation Study on Reactive Catching",
-    "original_title": "Zero-Shot Sim-to-Real Robot Learning: A Dexterous Manipulation Study on Reactive Catching",
-    "link": "https://arxiv.org/abs/2605.09789",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.09789v1 Announce Type: new \nAbstract: Dexterous manipulation is physics-intensive and highly sensitive to modeling errors and perception noise, making sim-to-real transfer prohibitively challenging. Domain randomization (DR) is commonly used to improve the robustness of learned policies for such tasks, but conventional DR randomizes one instance per episode, offering very limited exposure to the variability of real-world dynamics. To this end, we propose Domain-Randomized Instance Set (DRIS), which represents and propagates a set of randomized instances simultaneously, providing richer approximation of uncertain dynamics and enabling policies to learn actions that account for multiple possible outcomes. Supported by theoretical analysis, we show that DRIS yields more robust policies and alleviates the need for real-world fine-tuning, even with a modest number of instances (e.g., 10). We demonstrate this on a challenging reactive catching task. Unlike traditional catching setups that use end-effectors designed to mechanically stabilize the object (e.g., curved or enclosing surfaces), our system uses a flat plate that offers no passive stabilization, making the task highly sensitive to noise and requiring rapid reactive motions. The learned policies exhibit strong robustness to uncertainties and achieve reliable zero-shot sim-to-real transfer."
-  },
-  {
-    "title": "Explicit Stair Geometry Conditioning for Robust Humanoid Locomotion",
-    "original_title": "Explicit Stair Geometry Conditioning for Robust Humanoid Locomotion",
-    "link": "https://arxiv.org/abs/2605.09944",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.09944v1 Announce Type: new \nAbstract: Robust humanoid stair climbing remains challenging due to geometric discontinuities, sensitivity to step height variations, and perception uncertainty in real-world environments. Existing learning-based locomotion policies often rely on implicit terrain representations or blind proprioceptive feedback, limiting their ability to generalize across varying stair geometries and to anticipate required gait adjustments. This paper proposes an explicit stair geometry conditioning framework for robust humanoid stair climbing. Instead of encoding terrain as high-dimensional latent features, we extract a compact set of interpretable geometric parameters, including step height, step depth, and current yaw angle relative to the robot heading. These explicit stair parameters directly condition a Proximal Policy Optimization (PPO)-based locomotion policy, enabling proactive modulation of swing-foot clearance and stride characteristics according to stair structure. Simulation experiments demonstrate improved generalization across unseen stair heights beyond the training distribution. Real-world experiments on the Unitree G1 humanoid validate reliable indoor and outdoor stair traversal. In challenging outdoor scenarios, the robot successfully ascends 33 consecutive steps without failure, demonstrating robustness and practical deployability."
   }
 ]
