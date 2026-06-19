@@ -1,5 +1,77 @@
 [
   {
+    "title": "WorkBenchMark: A LEGO-Based Assembly Benchmark with an Assembly-by-Disassembly Baseline for the Smart Manufacturing League",
+    "original_title": "WorkBenchMark: A LEGO-Based Assembly Benchmark with an Assembly-by-Disassembly Baseline for the Smart Manufacturing League",
+    "link": "https://arxiv.org/abs/2606.19358",
+    "date": "2026-06-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19358v1 Announce Type: new \nAbstract: We introduceWorkBenchMark, a LEGO Duplo-based robotic assembly benchmark motivated by the RoboCup Smart Manufacturing League. Robotic assembly couples low-level manipulation with task-level symbolic reasoning under physical constraints, a combination that current end-to-end learning methods do not yet solve reliably. The benchmark provides 400 tasks across four complexity tiers. We provide an open-vocabulary perception, Assembly-by-Disassembly baseline solution. Our planning-based pipeline outperforms a modern vision-language-action approach across all tiers. The benchmark, simulation environment, and baseline implementation will be released openly to support the broader robotic assembly community."
+  },
+  {
+    "title": "3D Scene Graphs: Open Challenges and Future Directions",
+    "original_title": "3D Scene Graphs: Open Challenges and Future Directions",
+    "link": "https://arxiv.org/abs/2606.19383",
+    "date": "2026-06-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19383v1 Announce Type: new \nAbstract: 3D Scene Graphs (3DSGs) have emerged as a powerful representation for spatial AI by combining geometric grounding with semantic and relational abstractions of the environment. Their expressiveness has made them relevant to a broad range of problems in robotics and computer vision, including manipulation, navigation, task planning, scene understanding, and many others. However, the field remains fragmented: different communities adopt distinct formulations, construction pipelines, and evaluation protocols, making it difficult to compare methods, identify common assumptions, and assess remaining challenges for robust real-world deployment. This survey provides a unified and critical review of 3DSGs, with particular emphasis on open challenges and future directions. We first formalize 3DSGs under a common definition and analyze the principal modeling choices that characterize existing formulations, including node and edge attributes, hierarchical structure, dynamic scene representations, and affordance-aware extensions. We then review how 3DSGs are built from raw sensory observations, discussing the most common terminologies, conventions, and techniques. Finally, we examine downstream applications and evaluation strategies, from intrinsic graph quality to task-level performance. To support the community, we also provide a dedicated website that organizes and extends the surveyed content, accessible at https://3dscenegraphs.com/."
+  },
+  {
+    "title": "DiffusionVS: A Generative Framework for Robust Visual Servoing Based on Diffusion Policy",
+    "original_title": "DiffusionVS: A Generative Framework for Robust Visual Servoing Based on Diffusion Policy",
+    "link": "https://arxiv.org/abs/2606.19397",
+    "date": "2026-06-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19397v1 Announce Type: new \nAbstract: Visual servoing is a fundamental technique in robotic manipulation and navigation. Regression-based visual servoing frequently experiences trajectory jitter as a result of noise-sensitive single-step mappings and the accumulation of errors during distribution shifts. In contrast, Diffusion Policy maintains temporal consistency by predicting action sequences and improves robustness through implicit data augmentation.\n  This paper presents a novel diffusion-based servoing method. Based on Diffusion Policy, the proposed approach uses normalized image coordinates of observed tag corners as input and generates camera velocity through conditional denoising. To overcome the generalization limitations of models trained on static datasets, an online training paradigm is adopted, continuously expanding the diversity of training data through interactive experience collection. This strategy substantially enhances both the performance and generalization capability of the model. Comprehensive simulations and real-world experiments demonstrate the effectiveness of the proposed method, achieving success rates of nearly 100\\% in simulation and 93\\% in physical experiments. Beyond the specific pipeline, we further validate the generality of the diffusion mechanism. Experiments show that existing visual servoing networks consistently achieve improved performance when integrated with our diffusion-based module. These results indicate that the proposed strategy possesses broad applicability and can enhance various visual servoing systems beyond the specific architecture presented here."
+  },
+  {
+    "title": "Simulating Robotic Locomotion in Sand: Resistive Force Theory in an Open-Source Physics Engine",
+    "original_title": "Simulating Robotic Locomotion in Sand: Resistive Force Theory in an Open-Source Physics Engine",
+    "link": "https://arxiv.org/abs/2606.19504",
+    "date": "2026-06-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.19504v1 Announce Type: new \nAbstract: Recent advancements in Resistive Force Theory (RFT) enable approximation of ground reaction forces for locomotion in sand without the computational expense of modeling interactions with individual grains. However, these tools have been absent in 3D physics engines commonly used for robot simulation. We explore if resistive force approximations are sufficient, when integrated with standard dynamics calculations, to provide a stable substrate for a freely walking robot. To determine this, we implement 3D Granular Resistive Force Theory (3D RFT) in a physics simulation engine, MuJoCo. We verify simulations in multiple scenarios to demonstrate that key trends due to end effector shape, speed, and loading are preserved. Our implementation predicts walking distance and foot sinkage of a 12-Degree of Freedom hexapod robot within 20\\% of experiments in sand. While RFT has inherent approximations, the open source tool described here has potential to help develop new and improved robot designs to traverse granular media substrates."
+  },
+  {
+    "title": "Proprioceptive Invariant State Estimation for Humanoid Robots on Non-Inertial Ground",
+    "original_title": "Proprioceptive Invariant State Estimation for Humanoid Robots on Non-Inertial Ground",
+    "link": "https://arxiv.org/abs/2606.19512",
+    "date": "2026-06-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.19512v1 Announce Type: new \nAbstract: This paper presents an invariant extended Kalman filtering (InEKF) approach for real-time state estimation of humanoid robots operating on non-inertial ground using only onboard proprioceptive sensing. The proposed approach estimates the robot's base position and velocity relative to the moving ground frame without requiring direct measurements of ground motion or externally mounted sensors. By exploiting kinematic constraints at the stance foot through foot-mounted IMUs, the filter accounts for ground-induced nonlinearities in the process and measurement models while remaining fully proprioceptive. The estimator is formulated to admit a right-invariant measurement model, enabling favorable error dynamics under large initial uncertainties. Observability analysis establishes conditions under which the robot's relative base position and velocity are observable with respect to the non-inertial ground frame. Experiments with the Digit humanoid robot standing and squatting atop a swaying and pitching ground showcase a 96% speedup in convergence rate and an 80% reduction in position estimate errors over existing InEKFs. Walking experiments on a uni-axially rotating ground achieve an average estimation error of less than 9 cm for an initial error of up to 1 m."
+  },
+  {
+    "title": "One Demo is Worth a Thousand Trajectories: Action-View Augmentation for Visuomotor Policies",
+    "original_title": "One Demo is Worth a Thousand Trajectories: Action-View Augmentation for Visuomotor Policies",
+    "link": "https://arxiv.org/abs/2606.19586",
+    "date": "2026-06-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19586v1 Announce Type: new \nAbstract: Visuomotor policies for manipulation have demonstrated remarkable potential in modeling complex robotic behaviors, yet minor alterations in the robot's initial configuration and unseen obstacles easily lead to out-of-distribution observations. Without extensive data collection effort, these result in catastrophic execution failures. In this work, we introduce an effective data augmentation framework that generates visually realistic fisheye image sequences and corresponding physically feasible action trajectories from real-world eye-in-hand demonstrations, captured with a portable parallel gripper with a single fisheye camera. We introduce a novel Gaussian Splatting formulation, adapted to wide FoV fisheye cameras, to reconstruct and edit the 3D scene with unseen objects. We utilize trajectory optimization to generate smooth, collision-free, view-rendering-friendly action trajectories and render visual observations from corresponding novel views. Comprehensive experiments in simulation and the real world show that our augmentation framework improves the success rate for various manipulation tasks in both the same scene and the augmented scene with obstacles requiring collision avoidance."
+  },
+  {
+    "title": "Fail-RAG : A Retrieval Augmented Generation Informed Framework for Robot Failure Identification",
+    "original_title": "Fail-RAG : A Retrieval Augmented Generation Informed Framework for Robot Failure Identification",
+    "link": "https://arxiv.org/abs/2606.19598",
+    "date": "2026-06-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19598v1 Announce Type: new \nAbstract: Industry automation is witnessing an evolution in robotics driven by both technological breakthroughs and societal changes: progress towards generalist robots, embodied and physical artificial intelligence (AI), and increasing labor shortage in manufacturing.An intelligent autonomous robot needs to not only act according to planned motions but also react to any unexpected events. In this study, we focus on such unexpected events in warehouses where robots are used for material handling. Specifically, we refer to any unexpected events as failures and develop methods to detect robot operations related failures. Rule-based detection methods may break since the form of failures could change due to the dynamic nature of both environments and tasks. We propose 'Fail-RAG', a Retrieval Augmented Generation (RAG)-based failure detection framework where failure images and context information are embedded and queried against a failure database by calculating their similarities. Vision-Language Models (VLMs) are further used to analyze failures and provide details by following our instruction template. We evaluated the performance of Fail-RAG by conducting both simulation and physical experiments using fixed robot arms and a mobile manipulator for multiple tasks that are common in warehouse automation. Fail-RAG achieved 25 percentage point higher failure detection accuracy on average across five types of robot operations compared to using off-the-shelf VLMs, indicating its effectiveness for real-world failure detection."
+  },
+  {
+    "title": "CTS-MoE: Implicit Terrain Adaptation via Mixture-of-Experts for Perceptive Locomotion",
+    "original_title": "CTS-MoE: Implicit Terrain Adaptation via Mixture-of-Experts for Perceptive Locomotion",
+    "link": "https://arxiv.org/abs/2606.19633",
+    "date": "2026-06-19 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.19633v1 Announce Type: new \nAbstract: Perceptive legged locomotion over discontinuous terrain (e.g., stairs, gaps, and obstacles) requires adaptive behavior, as a single conservative gait cannot produce the anticipatory maneuvers needed for abrupt topology changes. Cast as multi-task reinforcement learning, this problem introduces a tension between sharing and separation. Tasks use a common locomotion base but have conflicting rewards, so a policy must share behavior while avoiding value interference. Prior work addresses only one side, with monolithic policies sacrificing specialization and hierarchical sub-policies sacrificing generalization across transitions and unseen terrain. We propose CTS-MoE, which combines a dense mixture-of-experts actor with perception-based gating to compose shared behaviors and a multi-critic with task-specific value heads to prevent interference. The model is trained end-to-end in a single-stage concurrent teacher-student setup that handles partial observability and avoids sequential distillation, with task labels used only during training. At deployment, routing depends solely on perception, allowing terrain adaptation without a high-level selector or terrain classifier. Experiments on a Unitree Go1 in simulation and on hardware across seen and unseen terrains show task-aware specialization, with lower tracking error and higher success rates than monolithic baselines. Project Website: https://cts-moe.github.io/ ."
+  },
+  {
     "title": "Humanoid robots: How human-like machines could change our daily lives",
     "original_title": "Humanoid robots: How human-like machines could change our daily lives",
     "link": "https://techxplore.com/news/2026-06-humanoid-robots-human-machines-daily.html",
@@ -17926,77 +17998,5 @@
     "source": "ByteByteGo",
     "category": "humanoid",
     "summary": "In this article, we look at how Pinterest designed that ecosystem and what they had to get right beyond the protocol itself."
-  },
-  {
-    "title": "How to Shortlist Data Engineering Services Providers: A Side-by-Side Evaluation Guide",
-    "original_title": "How to Shortlist Data Engineering Services Providers: A Side-by-Side Evaluation Guide",
-    "link": "https://roboticsandautomationnews.com/2026/05/11/how-to-shortlist-data-engineering-services-providers-a-side-by-side-evaluation-guide/101364/",
-    "date": "2026-05-11 15:27",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Article Overview Evaluate data engineering services by moving beyond price to focus on governance and low-latency logic. Select data engineering companies that prioritize business outcomes and unit economics over simple data movement. Audit data engineering services providers using side-by-side comparisons of technical depth and long-term infrastructure. Why is your most expensive data infrastructure still producing […]"
-  },
-  {
-    "title": "How to Choose a Reliable Broker for Yacht Charter in Cannes",
-    "original_title": "How to Choose a Reliable Broker for Yacht Charter in Cannes",
-    "link": "https://roboticsandautomationnews.com/2026/05/11/how-to-choose-a-reliable-broker-for-yacht-charter-in-cannes/101359/",
-    "date": "2026-05-11 15:06",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Every summer Cannes fills up with yachts. Dozens of vessels berth in the old port, from modest sailing boats to gleaming white superyachts with helicopter pads. The city has long been one of the main hubs for Mediterranean chartering, and the sheer number of options on offer is enough to make anyone’s head spin. The […]"
-  },
-  {
-    "title": "How to teach the same skill to different robots",
-    "original_title": "How to teach the same skill to different robots",
-    "link": "https://robohub.org/how-to-teach-the-same-skill-to-different-robots/",
-    "date": "2026-05-11 14:18",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "The assembly line task setup. Credit: 2026 LASA EPFL CC-BY-SA. By Celia Luterbacher In today’s manufacturing environments, upgrading a robot fleet often means starting from scratch – not only replacing hardware, but also reprogramming tasks. Even when two robots are built to perform similar jobs, different joint arrangements or movement limits mean that a task […]"
-  },
-  {
-    "title": "Why Wire-Free Robotic Lawn Mowers Are Becoming the Industry Standard?",
-    "original_title": "Why Wire-Free Robotic Lawn Mowers Are Becoming the Industry Standard?",
-    "link": "https://roboticsandautomationnews.com/2026/05/11/why-wire-free-robotic-lawn-mowers-are-becoming-the-industry-standard/101353/",
-    "date": "2026-05-11 14:17",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "The robotic lawn mower industry is entering a new phase of technological maturity. Over the past decade, systems relying on boundary wires have dominated the mainstream market due to their stability and reliability. However, as user demand for “zero-maintenance” and “plug-and-play” experiences continues to grow, boundary-free robotic lawn mowers are rapidly becoming the industry’s future […]"
-  },
-  {
-    "title": "Joby and Skyports complete New York’s first point-to-point eVTOL flights to Downtown Skyport",
-    "original_title": "Joby and Skyports complete New York’s first point-to-point eVTOL flights to Downtown Skyport",
-    "link": "https://roboticsandautomationnews.com/2026/05/11/joby-and-skyports-complete-new-yorks-first-point-to-point-evtol-flights-to-downtown-skyport/101272/",
-    "date": "2026-05-11 10:21",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Skyports Infrastructure, a vertiport development and operations company, has completed multiple point-to-point eVTOL flights to Downtown Skyport – New York’s first – during Joby’s “2026 Electric Skies Tour” New York City Flight Campaign, which took place between April 23rd-May 1st 2026. Over the course of the week-long flight program, Downtown Skyport received 5 flights, also […]"
-  },
-  {
-    "title": "World’s first robot monk ordained at South Korean temple - VnExpress International",
-    "original_title": "World’s first robot monk ordained at South Korean temple - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNS2RRWk5SU0lnY1VDQUhia2pmMEJadG5ibDFmc2FDN1NvS3I3RmtxdE8yQllYOHpGMXRVUUwwT1FCYkZaUTZqY3F1Smo0U1RXeVBjeTFjVXFoNkN5VVQ5emZnVXV2UWtheEFKbFNtUlJfTGt3dWQ2R2tQZDE2bEREaE1NN2RScE8zYVZRSGViR3hXaFhwY1JKY0pVcTE1aU53ODlOZ21TS3NwcW8tRlNBT3kxYw?oc=5",
-    "date": "2026-05-11 08:32",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "World’s first robot monk ordained at South Korean temple  VnExpress International"
-  },
-  {
-    "title": "At AI EXPO KOREA 2026, GENON  Announces Senior‑Care Humanoid GenP",
-    "original_title": "At AI EXPO KOREA 2026, GENON  Announces Senior‑Care Humanoid GenP",
-    "link": "https://humanoidroboticstechnology.com/industry-news/at-ai-expo-korea-2026-genon-announces-senior-care-humanoid-genp/",
-    "date": "2026-05-11 07:48",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "GENON has announced that it successfully concluded its participation in AI EXPO KOREA 2026, where the company unveiled its expanded vision for Physical AI and next‑generation AI agents. Under the exhibition theme “Move ON Into the Real”, GENON demonstrated how generative AI is evolving beyond digital assistance to operate directly in physical environments and interact […]\nThe post At AI EXPO KOREA 2026, GENON  Announces Senior‑Care Humanoid GenP appeared first on Humanoid Robotics Technology."
-  },
-  {
-    "title": "GENE-26.5 brings dexterous AI robotics into focus ... - eeNews Europe",
-    "original_title": "GENE-26.5 brings dexterous AI robotics into focus ... - eeNews Europe",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPeXU5andOX1l6WHMtNE9PVW5pam04Z0cxWS00MEhrMXE5UGM4ZGdUTU9xdnJ1MEFvTW9RMEZqbEJ5emhSODltaWViRG1pS3hKQUxBa1lPcFVlb29hb2NieUFpY0pyd0YxcVN6NmFRUGVEM2s1dlVXWC0yNFViSXE2VUFjSVpUWkx4Nnc?oc=5",
-    "date": "2026-05-11 05:29",
-    "source": "Google News (Global Hand/Gripper)",
-    "category": "hand",
-    "summary": "GENE-26.5 brings dexterous AI robotics into focus ...  eeNews Europe"
   }
 ]
