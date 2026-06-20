@@ -1,5 +1,14 @@
 [
   {
+    "title": "EP219: 12 Open-source LLMs",
+    "original_title": "EP219: 12 Open-source LLMs",
+    "link": "https://blog.bytebytego.com/p/ep219-12-open-source-llms",
+    "date": "2026-06-20 15:30",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "Twelve models worth knowing in 2026, each with one standout strength."
+  },
+  {
     "title": "Defense manufacturing readiness hinges on autonomous finishing, says GrayMatter Robotics",
     "original_title": "Defense manufacturing readiness hinges on autonomous finishing, says GrayMatter Robotics",
     "link": "https://www.therobotreport.com/defense-manufacturing-readiness-hinges-autonomous-surface-prep-says-graymatter/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.08758v1 Announce Type: new \nAbstract: Driven by the rapid expansion of e-commerce and small-batch production, the size of the intralogistics load unit of finished goods, semi-finished goods and raw materials is steadily shrinking. Totes are gradually replacing pallets as the primary handling and storage container. This shift has propelled tote-handling robotic systems to the forefront of automation order fulfillment centers. The order-fulfillment decisions of tote-handling robotic systems share a common order-tote-robot sequential decision-making nature. Existing studies primarily focus on decision mechanisms tailored to particular systems, making it difficult to generalize or transfer them to other contexts. We propose an Omni-scale Learning-based Sequential Decision Framework for Order Fulfillment of Tote-handling Robotic Systems (OLSF-TRS), a generalized and scalable sequential decision framework that combines structured combinatorial optimization with multi-agent reinforcement learning to coordinate order,tote, and robot decisions. On small-scale tote-handling robotic systems, OLSF-TRS achieves near-optimal performance with average optimality gaps below 3.5% across two distinct system configurations. In large-scale scenarios, OLSF-TRS consistently outperforms heuristic baselines across two different system types, reducing total tote movements by 8-12% and over 30% compared to SOTA rule-based approaches, while maintaining real-time responsiveness. These improvements translate into tangible operational benefits, including cost reduction, lower energy consumption, and enhanced throughput stability. The proposed framework delivers an efficient and unified order fulfillment decision-making framework for widely deployed tote-handling robotic systems,supporting high-quality order fulfillment in both e-commerce and industrial logistics sectors."
-  },
-  {
-    "title": "ProcVLM: Learning Procedure-Grounded Progress Rewards for Robotic Manipulation",
-    "original_title": "ProcVLM: Learning Procedure-Grounded Progress Rewards for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2605.08774",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.08774v1 Announce Type: new \nAbstract: Long-horizon robotic manipulation requires dense feedback that reflects how a task advances through its procedural stages, not merely whether the final outcome is successful. Existing reward models often rely on trajectory-level success labels or time-based interpolation, which can conflate elapsed time with true task progress and therefore fail to capture unfinished steps, stagnation, and failure states. We present ProcVLM, a progress-aware vision-language model that learns procedure-grounded progress as a dense reward signal for manipulation. Rather than deriving progress from terminal outcomes or temporal proxies, ProcVLM grounds progress estimation in procedural structure and intra-stage visual change, and further adopts a reasoning-before-estimation paradigm that infers the remaining atomic actions before estimating task progress. Specifically, we construct this supervision by synthesizing frame-level subtask-semantic annotations, assigning progress budgets according to subtask structure, and distributing each budget based on intra-subtask visual change. To train ProcVLM at scale, we build a standardized procedural supervision synthesis pipeline and construct ProcCorpus-60M from 30 embodied datasets with 60M annotated frames, from which we derive ProcVQA for procedure-aware pretraining, with progress estimation as the central task alongside action segmentation and future planning. Experiments on ProcVQA and reward-model benchmarks show that ProcVLM improves embodied procedural reasoning and yields more discriminative trajectory-internal progress estimates than representative baselines, supporting its use as a dense reward model for downstream reward-guided policy optimization. Project page: https://procvlm.github.io/"
   }
 ]
