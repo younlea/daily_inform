@@ -1,5 +1,14 @@
 [
   {
+    "title": "Myanmar President visits leading technology firms in Hangzhou - Global New Light Of Myanmar",
+    "original_title": "Myanmar President visits leading technology firms in Hangzhou - Global New Light Of Myanmar",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOX1dkTUFaekpFV01PcDRFaFhXMmNRN1dRN2RqRVNzNWJpS29JZmpicHhVU2puZ2JnSGNrNGFtQXV1R0xqbnZPSndjNmV4Z2Y5aDR5cm9rb2R3anY4c0tuX2NfODZabXNTN1c1Nmd6ck5ybm80ZmExLU16NWM3MnY4UUV5TVdDc1FPU2FuTzFvUQ?oc=5",
+    "date": "2026-06-19 23:27",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Myanmar President visits leading technology firms in Hangzhou  Global New Light Of Myanmar"
+  },
+  {
     "title": "AURA Foresight Reaches Global XPRIZE Wildfire Finals in Alaska",
     "original_title": "AURA Foresight Reaches Global XPRIZE Wildfire Finals in Alaska",
     "link": "https://robohub.org/aura-foresight-reaches-global-xprize-wildfire-finals-in-alaska/",
@@ -1672,6 +1681,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Why It Is Impossible to Make Robots Without China  TechJuice"
+  },
+  {
+    "title": "PSYONIC partners with ABB Robotics to apply human touch to robot dexterity - The Robot Report",
+    "original_title": "PSYONIC partners with ABB Robotics to apply human touch to robot dexterity - The Robot Report",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOLW4xWldmUHFVaUlVLWNMTzhjaVlOUWJxMVVxejlfTFd3ZkNjaWozQ0hIaDcyLURWZzFEN3pUb01heFlXLUR5Um1STmFZX0ZkbWZOeUVHTGltaW8yNWN1b1hzRGRTRERoanc5VE8xUVZLZ3RhT2VkeTROUmMwb2FnYjM5YnpXcW5QdXVRSW50TUpZdFVCUFdCekhDUldRYUFh?oc=5",
+    "date": "2026-06-16 04:09",
+    "source": "Google News (Global Hand/Gripper)",
+    "category": "hand",
+    "summary": "PSYONIC partners with ABB Robotics to apply human touch to robot dexterity  The Robot Report"
   },
   {
     "title": "PSYONIC partners with ABB Robotics to apply human touch to robot dexterity",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.09073v1 Announce Type: new \nAbstract: Continuous-time state estimation is gaining in popularity due to its abilities to provide smooth solutions, handle asynchronous sensors, and interpolate between data points. While there are two main paradigms, parametric (e.g., temporal basis functions, splines) and nonparametric (Gaussian processes), the latter has seen less adoption despite its technical advantages and relative ease of implementation. In this article, we seek to rectify this situation by providing a new simplified explanation of GP continuous-time estimation rooted in the language of factor graphs, which have become the de facto estimation paradigm in much of robotics. To simplify onboarding, we also provide three working examples implemented in the popular GTSAM estimation framework."
-  },
-  {
-    "title": "IMPACT: An Implicit Active-Set Augmented Lagrangian for Fast Contact-Implicit Trajectory Optimization",
-    "original_title": "IMPACT: An Implicit Active-Set Augmented Lagrangian for Fast Contact-Implicit Trajectory Optimization",
-    "link": "https://arxiv.org/abs/2605.09127",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.09127v1 Announce Type: new \nAbstract: Contact-implicit trajectory optimization (CITO) has attracted growing attention as a unified framework for planning and control in contact-rich robotic tasks. Recent approaches have demonstrated promising results in manipulation and locomotion without requiring a prescribed contact-mode schedule. It is well known that the underlying mathematical programs with complementarity constraints (MPCCs) remain numerically ill-conditioned, and systematic, scalable solution strategies for CITO remain an active area of research. More efficient and principled solvers that can handle contact constraints are therefore essential to broaden the applicability of CITO. In this work, we develop an augmented-Lagrangian approach to CITO for solving MPCC-based CITO with stationarity guarantees. The method can be interpreted as identifying the implicit contact-mode branches on the fly during the trajectory optimization (TO) iterations; we call this approach IMPACT (IMPlicit contact ACtive-set Trajectory optimization). We provide an efficient C++ implementation tailored to trajectory-optimization workloads and evaluate it on the open-source CITO and contact-implicit model predictive control (CI-MPC) benchmarks. On CITO, IMPACT achieves 2.9x-70x speedups over strong baselines (geometric mean 13.8x). On CI-MPC, we show improved control quality for contact-rich trajectories on dexterous manipulation tasks in simulation. Finally, we demonstrate the proposed method on real robotic hardware on a T-shaped object pushing task."
-  },
-  {
-    "title": "RePO-VLA: Recovery-Driven Policy Optimization for Vision-Language-Action Models",
-    "original_title": "RePO-VLA: Recovery-Driven Policy Optimization for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2605.09410",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.09410v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models remain brittle in long-horizon, contact-rich manipulation because success-only imitation provides little supervision for execution drift, while failed rollouts are often discarded. We introduce RePO-VLA, a recovery-driven policy optimization framework that assigns distinct roles to success, recovery, and failure trajectories. RePO-VLA first applies Recovery-Aware Initialization (RAI), slicing recovery segments and resetting history so corrective actions depend on the current adverse state rather than the preceding failure. It then learns a Progress-Aware Semantic Value Function (PAS-VF), aligning spatiotemporal trajectory features with instructions and successful references. The resulting labels salvage useful failure prefixes via reliability decay, while low-value labels mark drift and terminal breakdowns, teaching differences among nominal, failed, and corrective actions. The data engine turns adverse states into planner-generated or human-collected corrective rollouts, teaching recovery to the success manifold. Value-Conditioned Refinement (VCR) trains the policy to prefer high-progress actions. At deployment, a fixed high value ($v=1.0$) biases actions toward the learned success manifold without online failure detectors or heuristic retries. We introduce FRBench, with standardized error injection and recovery-focused evaluation. Across simulated and real-world bimanual tasks, RePO-VLA improves robustness, raising adversarial success from 20% to 75% on average and up to 80% in scaled real-world trials."
   }
 ]
