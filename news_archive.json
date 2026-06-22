@@ -1,5 +1,23 @@
 [
   {
+    "title": "Interview with Clearpath Robotics co-founder Ryan Gariepy: ‘Most industries in Canada are under-automated’",
+    "original_title": "Interview with Clearpath Robotics co-founder Ryan Gariepy: ‘Most industries in Canada are under-automated’",
+    "link": "https://roboticsandautomationnews.com/2026/06/22/interview-with-clearpath-robotics-co-founder-ryan-gariepy-most-industries-in-canada-are-under-automated/102695/",
+    "date": "2026-06-22 09:43",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Canada has long been recognized for its contributions to robotics research, producing world-class universities, pioneering robotics startups, and innovative technologies that have found applications across manufacturing, logistics, agriculture, mining, and defense. Yet despite this strong technical foundation, many observers argue that Canada has not always translated its research strengths into widespread industrial deployment at the […]"
+  },
+  {
+    "title": "Interview with Paul Dawalibi: Can Ras Al Khaimah become the Silicon Valley of the Middle East?",
+    "original_title": "Interview with Paul Dawalibi: Can Ras Al Khaimah become the Silicon Valley of the Middle East?",
+    "link": "https://roboticsandautomationnews.com/2026/06/22/interview-with-paul-dawalibi-can-ras-al-khaimah-become-the-silicon-valley-of-the-middle-east/102688/",
+    "date": "2026-06-22 09:15",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "For decades, when technology companies looked to establish a presence in the Middle East, the conversation typically revolved around Dubai or Abu Dhabi. But as global competition for AI, robotics, and deep-tech investment intensifies, a growing number of smaller, more agile innovation hubs are seeking to carve out their own place in the technology landscape. […]"
+  },
+  {
     "title": "Interview with Sharpa’s Alicia Veneziani: ‘Dexterous manipulation is the key to useful humanoid robots’",
     "original_title": "Interview with Sharpa’s Alicia Veneziani: ‘Dexterous manipulation is the key to useful humanoid robots’",
     "link": "https://roboticsandautomationnews.com/2026/06/22/interview-with-sharpas-alicia-veneziani-dexterous-manipulation-is-the-key-to-useful-humanoid-robots/102683/",
@@ -7,6 +25,15 @@
     "source": "Robotics & Automation News",
     "category": "hand",
     "summary": "Much of the recent excitement surrounding humanoid robots has focused on increasingly impressive demonstrations of walking, running, jumping, and balancing. Yet many robotics experts argue that locomotion, while important, is only part of the challenge. The bigger obstacle to creating genuinely useful humanoid robots may be something far more familiar to humans: the ability to […]"
+  },
+  {
+    "title": "Interview with Sharpa’s Alicia Veneziani: ‘Dexterous manipulation is the key to useful humanoid robots’ - Robotics & Automation News",
+    "original_title": "Interview with Sharpa’s Alicia Veneziani: ‘Dexterous manipulation is the key to useful humanoid robots’ - Robotics & Automation News",
+    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQZ3Ztc1hGNWIzYTNLaG0wanRSR1ZIVE4wWW1MNFBKVmh1TF9wOUsxWlQ1WnVDd3FVcWQ1aXpTRTcxdGZXbW42T0xrU1RuZVF6bDZsOWFCa3l0Q0UzTE5kbmloR1BZOVVIbldJdUgyeFhVajd3ckZEYzJHempzVTlhS3g0NG1Qa2JPQnJ6eVBJZjBPV2c1d0xRVVN0aHBST05GbUVkS0pfRE9GWTBTMUR3R1hWOUFhZ0drbFpWWUZJRXZtM09odjhJLW1sUVdxc3FOMTR0TWd3N0Z2cTY4UU5fVGtiOEU0elE1R3RXLQ?oc=5",
+    "date": "2026-06-22 08:47",
+    "source": "Google News (Global Hand/Gripper)",
+    "category": "hand",
+    "summary": "Interview with Sharpa’s Alicia Veneziani: ‘Dexterous manipulation is the key to useful humanoid robots’  Robotics & Automation News"
   },
   {
     "title": "Opinion: The AI infrastructure risk robotics leaders can’t afford to ignore",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.08168v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models offer a promising path to generalist robot control, but their inference latency causes observation staleness when generated actions are executed asynchronously. Several methods have been proposed concurrently to mitigate this problem: inference-time inpainting (IT-RTC), training-time delay simulation (TT-RTC), future-state-aware conditioning (VLASH), and lightweight residual correction (A2C2). Each takes a fundamentally different approach, but they have so far been evaluated independently with different codebases, base policies, and protocols. We present a systematic comparison of these four methods under controlled conditions. We develop two unified codebases that integrate all methods with harmonized library and dataset versions, and we benchmark them on the Kinetix suite with MLPMixer policies and on the LIBERO manipulation benchmark with SmolVLA, sweeping inference delays up to $d=20$ control steps. A2C2's per-step residual correction is the most effective method on Kinetix, holding above 90% solve rate up to $d=8$, and also leads on LIBERO from $d=4$ onwards. IT-RTC is competitive at low delays but degrades sharply under long chunks ($H=30$) and high delays. TT-RTC is the most robust training-based method: stable across $d_\\max$ choices, generalizes beyond its training delay distribution, and adds zero inference overhead. VLASH exhibits a clear low-delay vs. high-delay trade-off governed by the fine-tuning delay range $[0,d_\\max]$. Code is available at https://github.com/TheAyos/async-vla-inference"
-  },
-  {
-    "title": "Hierarchical Prompting with Dual LLM Modules for Robotic Task and Motion Planning",
-    "original_title": "Hierarchical Prompting with Dual LLM Modules for Robotic Task and Motion Planning",
-    "link": "https://arxiv.org/abs/2605.08330",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.08330v1 Announce Type: new \nAbstract: We present a hierarchical language-driven framework for robotic task and motion planning to improve natural, intuitive human-robot interaction in service and assistance scenarios. The proposed system employs two large language model (LLM) modules: a high-level planning agent and a low-level spatial reasoning sub-module. The primary agent processes natural language commands and generates action sequences using a ReAct-style prompt, interacting with tools for object perception and manipulation (e.g., pick, place, release). For precise spatial placement, such as interpreting \"place the mug next to the plate\", a separate sub-prompting module handles 3D reasoning based on object geometry and scene layout. The system integrates YOLOX-GDRNet for object detection and pose estimation, along with a motion execution stub. We evaluated the system in 24 test scenarios, ranging from simple spatial commands to high-level instructions and infeasible requests. The system achieved an overall task success rate of 86%."
-  },
-  {
-    "title": "Failing Forward: Adaptive Failure-Informed Learning for Vision-Language-Action Models",
-    "original_title": "Failing Forward: Adaptive Failure-Informed Learning for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2605.08434",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.08434v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models provide a promising paradigm for scalable robotic manipulation, yet their reliance on success-only behavioral cloning leaves them brittle; lacking corrective training signals, minor execution errors rapidly compound into unrecoverable, out-of-distribution failures. To address this limitation, we propose Adaptive Failure-Informed Learning (AFIL), an end-to-end framework that leverages failure trajectories as adaptive negative guidance for diffusion- and flow-based VLA policies. AFIL uses a pretrained VLA to generate failure rollouts online, avoiding the need for handcrafted failure-mode design or human-in-the-loop recovery. It then jointly trains Dual Action Generators (DAGs) for successful and failed behaviors while sharing a common vision-language backbone, enabling efficient failure-aware policy learning with limited parameter overhead. During sampling, the failure generator adaptively steers action generation away from failure-prone regions and toward more reliable success modes, with guidance strength determined by the per-diffusion-step distance between success and failure distributions. Experiments across in-domain and out-of-domain robotic manipulation tasks, covering both short- and long-horizon settings, show that AFIL consistently improves task success rates and robustness over existing VLA baselines, demonstrating its effectiveness, efficiency, and generality."
-  },
-  {
-    "title": "LE-PAVD: Learning-Enhanced Physics-Aware Vehicle Dynamics for High-Speed Autonomous Navigation",
-    "original_title": "LE-PAVD: Learning-Enhanced Physics-Aware Vehicle Dynamics for High-Speed Autonomous Navigation",
-    "link": "https://arxiv.org/abs/2605.08489",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.08489v1 Announce Type: new \nAbstract: Accurate modeling of nonlinear vehicle dynamics is essential for high-speed autonomous racing, where controllers operate at the handling limits. Model-based methods are interpretable but rely on simplifying assumptions, while purely learned models capture nonlinearities yet often lack physical consistency and generalization. We propose LE-PAVD (Learning-Enhanced Physics-Aware Vehicle Dynamics), a hybrid model that integrates physics priors with learned components. Our architecture adds four components: load-sensitive Pacejka tire forces, longitudinal load transfer, lateral tire-force effects, and rate-limited actuator inputs. Trained end-to-end on simulation and real-world telemetry, LE-PAVD enforces physical consistency while improving state prediction accuracy. On an unseen track, LE-PAVD reduces average displacement error (ADE) by 16.1$\\%$, final displacement error (FDE) by 20.6$\\%$, and lowers yaw-rate root mean squared error (RMSE) by 91.3$\\%$ versus a deep dynamics baseline, while using 21.6$\\%$ fewer FLOPs and achieving approximately 1.50$\\times$ faster inference. In closed-loop simulations, LE-PAVD consistently outperforms the baseline by achieving faster lap times by 17.4$\\%$ on a training track and 9.5$\\%$ on a test track, without any track boundary violations. Overall, LE-PAVD offers a compact, physics-grounded dynamics backbone that improves predictive fidelity and closed-loop performance while reducing inference cost."
   }
 ]
