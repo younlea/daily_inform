@@ -1,5 +1,14 @@
 [
   {
+    "title": "The Shift from One-Size-Fits-All to Bespoke Systems",
+    "original_title": "The Shift from One-Size-Fits-All to Bespoke Systems",
+    "link": "https://roboticsandautomationnews.com/2026/06/22/the-shift-from-one-size-fits-all-to-bespoke-systems/102699/",
+    "date": "2026-06-22 10:40",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "For anyone who has been running a business for years, they know that they were told that standard solutions were the smartest path forward! Is this the truth, though? Businesses are told to buy the same software that everyone else is using, along with following the same processes, and make sure to fit their operations […]"
+  },
+  {
     "title": "Interview with Clearpath Robotics co-founder Ryan Gariepy: ‘Most industries in Canada are under-automated’",
     "original_title": "Interview with Clearpath Robotics co-founder Ryan Gariepy: ‘Most industries in Canada are under-automated’",
     "link": "https://roboticsandautomationnews.com/2026/06/22/interview-with-clearpath-robotics-co-founder-ryan-gariepy-most-industries-in-canada-are-under-automated/102695/",
@@ -17989,14 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Unitree turns a mecha demo into a robotics startup test  Startup Fortune"
-  },
-  {
-    "title": "Understanding Asynchronous Inference Methods for Vision-Language-Action Models",
-    "original_title": "Understanding Asynchronous Inference Methods for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2605.08168",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.08168v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models offer a promising path to generalist robot control, but their inference latency causes observation staleness when generated actions are executed asynchronously. Several methods have been proposed concurrently to mitigate this problem: inference-time inpainting (IT-RTC), training-time delay simulation (TT-RTC), future-state-aware conditioning (VLASH), and lightweight residual correction (A2C2). Each takes a fundamentally different approach, but they have so far been evaluated independently with different codebases, base policies, and protocols. We present a systematic comparison of these four methods under controlled conditions. We develop two unified codebases that integrate all methods with harmonized library and dataset versions, and we benchmark them on the Kinetix suite with MLPMixer policies and on the LIBERO manipulation benchmark with SmolVLA, sweeping inference delays up to $d=20$ control steps. A2C2's per-step residual correction is the most effective method on Kinetix, holding above 90% solve rate up to $d=8$, and also leads on LIBERO from $d=4$ onwards. IT-RTC is competitive at low delays but degrades sharply under long chunks ($H=30$) and high delays. TT-RTC is the most robust training-based method: stable across $d_\\max$ choices, generalizes beyond its training delay distribution, and adds zero inference overhead. VLASH exhibits a clear low-delay vs. high-delay trade-off governed by the fine-tuning delay range $[0,d_\\max]$. Code is available at https://github.com/TheAyos/async-vla-inference"
   }
 ]
