@@ -1,5 +1,23 @@
 [
   {
+    "title": "Interview with Sharpa’s Alicia Veneziani: ‘Dexterous manipulation is the key to useful humanoid robots’",
+    "original_title": "Interview with Sharpa’s Alicia Veneziani: ‘Dexterous manipulation is the key to useful humanoid robots’",
+    "link": "https://roboticsandautomationnews.com/2026/06/22/interview-with-sharpas-alicia-veneziani-dexterous-manipulation-is-the-key-to-useful-humanoid-robots/102683/",
+    "date": "2026-06-22 08:47",
+    "source": "Robotics & Automation News",
+    "category": "hand",
+    "summary": "Much of the recent excitement surrounding humanoid robots has focused on increasingly impressive demonstrations of walking, running, jumping, and balancing. Yet many robotics experts argue that locomotion, while important, is only part of the challenge. The bigger obstacle to creating genuinely useful humanoid robots may be something far more familiar to humans: the ability to […]"
+  },
+  {
+    "title": "Opinion: The AI infrastructure risk robotics leaders can’t afford to ignore",
+    "original_title": "Opinion: The AI infrastructure risk robotics leaders can’t afford to ignore",
+    "link": "https://roboticsandautomationnews.com/2026/06/22/opinion-the-ai-infrastructure-risk-robotics-leaders-cant-afford-to-ignore/102678/",
+    "date": "2026-06-22 08:21",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "By Nadine Akey, sales and marketing manager, Hutchinson Aerospace & Industry The robotics industry is entering a new phase of growth. Autonomous mobile robots navigate warehouses with increasing sophistication. Industrial robots are becoming smarter and more adaptive. AI-powered vision systems are transforming manufacturing, logistics and defense applications. Behind every one of these advances is a […]"
+  },
+  {
     "title": "From audio tapes to AI: Interview with TDK investment director Ankur Saxena",
     "original_title": "From audio tapes to AI: Interview with TDK investment director Ankur Saxena",
     "link": "https://roboticsandautomationnews.com/2026/06/22/from-audio-tapes-to-ai-interview-with-tdk-investment-director-ankur-saxena/102671/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.08489v1 Announce Type: new \nAbstract: Accurate modeling of nonlinear vehicle dynamics is essential for high-speed autonomous racing, where controllers operate at the handling limits. Model-based methods are interpretable but rely on simplifying assumptions, while purely learned models capture nonlinearities yet often lack physical consistency and generalization. We propose LE-PAVD (Learning-Enhanced Physics-Aware Vehicle Dynamics), a hybrid model that integrates physics priors with learned components. Our architecture adds four components: load-sensitive Pacejka tire forces, longitudinal load transfer, lateral tire-force effects, and rate-limited actuator inputs. Trained end-to-end on simulation and real-world telemetry, LE-PAVD enforces physical consistency while improving state prediction accuracy. On an unseen track, LE-PAVD reduces average displacement error (ADE) by 16.1$\\%$, final displacement error (FDE) by 20.6$\\%$, and lowers yaw-rate root mean squared error (RMSE) by 91.3$\\%$ versus a deep dynamics baseline, while using 21.6$\\%$ fewer FLOPs and achieving approximately 1.50$\\times$ faster inference. In closed-loop simulations, LE-PAVD consistently outperforms the baseline by achieving faster lap times by 17.4$\\%$ on a training track and 9.5$\\%$ on a test track, without any track boundary violations. Overall, LE-PAVD offers a compact, physics-grounded dynamics backbone that improves predictive fidelity and closed-loop performance while reducing inference cost."
-  },
-  {
-    "title": "Trajectory-Consistent Flow Matching for Robust Visuomotor Policy Learning",
-    "original_title": "Trajectory-Consistent Flow Matching for Robust Visuomotor Policy Learning",
-    "link": "https://arxiv.org/abs/2605.08511",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.08511v1 Announce Type: new \nAbstract: Flow matching policies learn continuous velocity fields that transport noise to actions, enabling fast deterministic inference for robot manipulation. However, standard training optimizes a pointwise velocity objective while inference requires numerical integration of that field -- a mismatch that causes compounding trajectory errors. We propose four complementary remedies: (1) auxiliary rectified flow velocity regression that provides uniform temporal supervision across the full time interval; (2) multi-step trajectory consistency training that supervises the integrated displacement of the velocity field over trajectory segments, directly closing the train-inference gap; (3) velocity field regularization that enforces temporal smoothness, preventing oscillations that destabilize integration; and (4) fourth-order Runge-Kutta (RK4) inference that reduces global discretization error by orders of magnitude over Euler methods. Critically, these components are not independently sufficient -- RK4 without a smooth velocity field fails, and smoothness without trajectory-level supervision still drifts, as our ablation study confirms. We further pair these with a dual-view 3D point cloud encoder using two independent PointNet encoders for complementary spatial perception. On four real-robot tasks across a Franka arm and a Boston Dynamics Spot, our method achieves 70% and 60% overall success on two long-horizon multi-phase tasks where both baselines score 0%, and reaches 100% on precision tool placement. Three MetaWorld simulation tasks confirm consistent improvements, validating that trajectory-level supervision is essential for reliable policy execution."
-  },
-  {
-    "title": "BEACON: Cross-Domain Co-Training of Generative Robot Policies via Best-Effort Adaptation",
-    "original_title": "BEACON: Cross-Domain Co-Training of Generative Robot Policies via Best-Effort Adaptation",
-    "link": "https://arxiv.org/abs/2605.08571",
-    "date": "2026-05-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.08571v1 Announce Type: new \nAbstract: We introduce BEACON--Best-Effort Adaptation for Cross-Domain Co-Training--a theory-driven framework for training generative robot policies with abundant source demonstrations and limited target demonstrations. BEACON casts cross-domain co-training as a discrepancy-aware importance-reweighting problem, jointly learning a diffusion-based visuomotor policy and per-sample source weights that minimize an objective informed by target-domain generalization guarantees. To make best-effort adaptation practical for high-dimensional sequence policies, we develop scalable instance-level discrepancy estimators, stochastic alternating updates for policy and weights, and a multi-source extension that balances heterogeneous source domains. Across sim-to-sim, sim-to-real, and multi-source manipulation settings, BEACON improves robustness and data efficiency over target-only, fixed-ratio co-training, and feature-alignment baselines. Importantly, even without an explicit alignment objective, BEACON achieves feature alignment as an implicit result of discrepancy-aware cross-domain co-training."
   }
 ]
