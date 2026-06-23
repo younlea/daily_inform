@@ -1,5 +1,86 @@
 [
   {
+    "title": "After workers, beggars replaced by robots: Viral video from China makes netizens question if begging will - The Economic Times",
+    "original_title": "After workers, beggars replaced by robots: Viral video from China makes netizens question if begging will - The Economic Times",
+    "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQNGZ0RFRmdkVHb0pkLWlFSjc3MGxWZjdJYzJMS0xrVkJBNUZPbEpVMXF6UUpuSEdJQkItOGtxRVV6MVFKSnZfbnVLMnhGSDdUZ3lLT09hSWhlRWtpOWdfcTNhckhfVEtheUNWT004MUx2d2N2QjNvWkRBNUtUczFnMnpfRGw1VGJRbURLeWZzbER6ZjFfdFVDejh6VXhtR0R5Wl9pS2daMDQ2VVhpWlFYTjA5cUQzRVJFTVhsV3VxeUtycTlteG85Zi1zUjVORDlMOFR6b3Q2MHpJR29DMVljSVQ1M3VwdmlLZTRzUmRDTlJnUDZPalZxbTJHQW1WdmlkaUpwS1QyTXQ3dFY4bjRodThfd3Q3QzBvRnhR0gGbAkFVX3lxTFA0ZnREVGZ2RUdvSmQtaUVKNzcwbFZmN0ljMkxLTGtWQkE1Rk9sSlUxcXpRSm5IR0lCQi04a3FFVXoxUUpKdl9udUsyeEZIN1RneUtPT2FJaGVFa2k5Z19xM2FySF9US2F5Q1ZPTTgxTHZ3Y3ZCM29aREE1S1RzMWcyel9EbDVUYlFtREt5ZnNsRHpmMV90VUN6OHpVeG1HRHlaX2lLZ1owNDZVWGlaUVhOMDlxRDNFUkVNWGxXdXF5S3JxOW14bzlmLXNSNU5EOUw4VHpvdDYweklHb0MxWWNJVDUzdXB2aUtlNHNSZENOUmdQNk9qVnFtMkdBbVZ2aWRpSnBLVDJNdDd0VjhuNGh1OF93dDdDMG9GeFE?oc=5",
+    "date": "2026-06-23 04:47",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "After workers, beggars replaced by robots: Viral video from China makes netizens question if begging will  The Economic Times"
+  },
+  {
+    "title": "TACT-ful: Multi-Channel Terrain Affordance and Compliance Training for Payload-Robust Perceptive Humanoid Locomotion",
+    "original_title": "TACT-ful: Multi-Channel Terrain Affordance and Compliance Training for Payload-Robust Perceptive Humanoid Locomotion",
+    "link": "https://arxiv.org/abs/2606.20645",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.20645v1 Announce Type: new \nAbstract: Foothold selection on structured terrain requires explicit reasoning about contact planarity, surface steepness, and kinematic reachability, properties not captured by a single height-based terrain signal. We propose a multi-channel terrain cost combining flatness, steepness, and velocity-aware height feasibility, plus a forward climb reward, that simultaneously drives a GPU-parallel divergent component of motion (DCM) foothold planner and shapes a dense per-step affordance reward for an asymmetric actor-critic policy trained with proximal policy optimization (PPO) from depth images. A B\\'ezier swing trajectory with adaptive apex bias extends foothold tracking to joint position-and-orientation, using the arc tangent to guide sole orientation through riser crossings and tread landings. To support payload tasks, we introduce a lower-body compliance training procedure in which a virtual wrench is injected at a sampled load attachment point, generating physically consistent force and moment; wrench-aware compliance targets replace rigid pose penalties, and the policy learns to yield to load-induced perturbations without force sensing. The full system trains end-to-end with standard PPO, no distillation, and no teacher-student staging, and is deployed on a humanoid directly from simulation with configuration changes only. In simulation, the policy reaches $1.0~\\mathrm{m/s}$ on stairs with risers up to $0.20~\\mathrm{m}$ and improves payload robustness up to ${\\sim}15~\\mathrm{kg}$ centered load and for moment-dominated wrist loads without fine-tuning. We also provide a qualitative hardware demonstration on structured terrain. Project website: https://fai-rl-tech.github.io/tact-locomotion.github.io/"
+  },
+  {
+    "title": "Learning Control as Enabling Layer for Embodied Intelligence Research explored with Soft Robotic Swimming in diverse Flow Speeds",
+    "original_title": "Learning Control as Enabling Layer for Embodied Intelligence Research explored with Soft Robotic Swimming in diverse Flow Speeds",
+    "link": "https://arxiv.org/abs/2606.20660",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.20660v1 Announce Type: new \nAbstract: Soft robots are valuable robophysical platforms for studying body-caudal undulatory locomotion, but their compliant bodies are difficult to control precisely under changing hydrodynamic loading. Conventional proportional-integral-derivative (PID) feedback stabilizes periodic undulation in static water, but can accumulate flow-dependent tracking delay and increasing inter-trial variability when environmental flow becomes non-trivial. Here, we evaluate whether augmenting PID control with a Linear Repetitive Learning Estimation Scheme (PID-LRLES) recovers tracking accuracy and repeatability under dynamic flow. The LRLES generalizes classical integral action from constant to periodic, non-constant references, while using a stable transfer-function realization whose poles have negative real parts to avoid the long-term instability issues of classical repetitive control. Closed-loop experiments were carried out in a recirculating flow tank at five bulk flow speeds spanning 0 to 32.6 cm s^-1, using an embedded soft capacitive bending sensor at a 1 kHz control-loop rate. With controller gains tuned once in static water and then held fixed across all conditions, PID-LRLES tracked the periodic bending-envelope reference more closely than the PID baseline and significantly reduced the inter-trial spread of the per-trial RMSE (paired Wilcoxon signed-rank test, p = 1.8 x 10^-4, n = 25). Embedded soft proprioception and cycle-to-cycle learning act as complementary contributors to robustness: the sensor exposes the periodic hydrodynamic bias in body deformation, while the learning term absorbs it over recent oscillation cycles. By reducing flow-dependent control-induced variability, the approach provides an enabling layer for future robophysical studies seeking to isolate the effects of morphology, sensing, and environmental flow on aquatic locomotion."
+  },
+  {
+    "title": "MemoryVAM: Integrating Memory into Video Action Model for Robot Manipulation",
+    "original_title": "MemoryVAM: Integrating Memory into Video Action Model for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2606.20679",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.20679v1 Announce Type: new \nAbstract: Video-world-model policies learn action-relevant representations by predicting future observations. However, they condition on only a short observation window, which renders long-horizon manipulation non-Markovian when the correct action depends on earlier events that are no longer visible. We present MemoryVAM, an episodic memory mechanism for video-world-model policies. We employ a Recap-Cue (RC) module, in which a Perceiver-based Recap Compressor maps per-frame CLIP embeddings into compact memory tokens, and a lightweight Cue Gate estimates task completion from memory and language. These tokens are injected into both the video backbone and the action decoder, aligning policy imagination with episode progress and conditioning actions on history. Our model trains the memory module with video prediction, a delta-reconstruction auxiliary loss, and episode-boundary supervision, requiring no per-frame progress labels. The same mechanism applies to UNet and Diffusion Transformer (DiT) backbones by changing only the cross-attention injection interface. On LIBERO-Mem, our model improves average success from 5% to 42.5%. On real robots, it achieves 78.3% success on counting tasks, 80.0% on spatial recall, and 75.0% on sequential tracking. Project page: https://MemoryVAM.github.io/"
+  },
+  {
+    "title": "SafeDojo: Safe Reinforcement Learning for VLA via Interactive World Model",
+    "original_title": "SafeDojo: Safe Reinforcement Learning for VLA via Interactive World Model",
+    "link": "https://arxiv.org/abs/2606.20698",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.20698v1 Announce Type: new \nAbstract: Safe control is a prerequisite for real-world embodied intelligence, for which safe reinforcement learning has emerged as a promising paradigm. However, existing safe reinforcement learning methods either require costly real-world exploration or depend on hand-crafted safety functions. Neither scales to vision-language-action models deployed in open-world physical environments. We propose SafeDojo, the first model-based safe reinforcement learning framework for vision-language-action policies designed to learn safe actions through world model-based imagination. Specifically, SafeDojo performs online reinforcement learning on top of an interactive video world model. The world model generates action-conditioned future predictions, from which a tailored ResNet success classifier estimates per-step task progress from imagined frames and a lightweight safety head predicts per-step safety costs from latent context together with the proposed action chunk, enabling simultaneous assessment of task execution and trajectory safety. The decoupled task-reward and safety-cost signals are balanced through a Lagrangian-based constrained GRPO objective, enabling coordinated improvement of task success and safety under explicit constraints. On SafeLIBERO, SafeDojo achieves the best aggregate task success, safe success, and execution efficiency among inference-time safety, model-free RL, and model-based RL baselines, with the best average safe-success rate on both levels and an 8.25 percentage-point improvement over the strongest baseline on Level I. Real-world Franka deployment further shows the best average task and safe-success rates across five tasks. Our results position world model-based safe reinforcement learning as a scalable and generalizable path toward safe embodied intelligence."
+  },
+  {
+    "title": "Real-World Deployment of Massively Parallel Sampling-Based MPC for Contact-Rich Manipulation",
+    "original_title": "Real-World Deployment of Massively Parallel Sampling-Based MPC for Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2606.20712",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.20712v1 Announce Type: new \nAbstract: Sampling-based Model Predictive Control (SMPC) is a promising strategy for contact-rich robotic manipulation, combining gradient-free optimization with massively parallel GPU simulation. Yet, most prior work relies on simplified dynamics or remains confined to simulation. We present an MPC framework that leverages JAX for large-scale parallelization and efficient computation, coupled with the high-fidelity MuJoCo MJX simulator, and deploy it on a Franka Research 3 executing the Push-T manipulation task through a complete real-to-sim-to-real pipeline. The MTP variant with structured global sampling outperforms unimodal baselines such as CEM, MPPI, and PS across tasks that require mode switching, both in simulation and on hardware. Furthermore, we evaluate online domain randomization within the MPC sample budget, showing that contact-initiation parameters yield interpretable adaptation signals, whereas global physics parameters provide feedback that is too weak for reliable exploitation at typical replanning frequencies. These findings highlight key challenges for sampling-based MPC in contact-rich manipulation-contact sensitivity, tight compute budgets, and the difficulty of obtaining informative domain-randomization signals in real time."
+  },
+  {
+    "title": "Toward Machine Risk Perception: Integrating Trust Calibration and Precursor-Based Risk Estimation for Humanoid",
+    "original_title": "Toward Machine Risk Perception: Integrating Trust Calibration and Precursor-Based Risk Estimation for Humanoid",
+    "link": "https://arxiv.org/abs/2606.20748",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.20748v1 Announce Type: new \nAbstract: Humanoid robots are emerging as co-workers in smart manufacturing, yet their dynamic, human-like movements introduce safety risks that differ fundamentally from those of fixed or wheeled robots. Conventional safety paradigms based on reactive force or distance limits fail to capture the sequential, uncertain nature of humanoid failures. This study proposes a precursor-driven, trust-calibrated framework to enable proactive humanoid risk perception. Accident evolution is modeled through sequential precursor cues using a Logistic-Exponential (LE) formulation that couples logistic escalation from diverse precursors with exponential decay for temporal dissipation. Trust is defined as the inverse of the estimated accident probability, allowing humanoids to adapt behavior in real time, reducing aggressiveness when risk intensifies, and restoring confidence as stability returns. A multi-source dataset of 126 documented events and 241 precursors revealed twelve dominant accident modes, most evolving through overlapping cues within one second. A simulated case study (\"fall-onto-human\") demonstrated how the LE-Trust coupling can trigger early intervention and prevent collapse. The results advance humanoid safety from static thresholds toward dynamic, evidence-based inference, establishing a foundation for risk-aware and trustworthy human-robot collaboration in Industry 5.0 environments."
+  },
+  {
+    "title": "Perturbation-Based Uncertainty for Failure Detection in Vision-Language-Action Models",
+    "original_title": "Perturbation-Based Uncertainty for Failure Detection in Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.20754",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.20754v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have shown strong performance in robotic manipulation, but reliable uncertainty quantification remains challenging, particularly under distribution shift. Unlike autoregressive policies, many modern VLA models generate continuous actions through regression or flow-based generation, where explicit predictive probabilities are unavailable. Moreover, existing approaches often rely on stochastic action sampling or supervised failure labels, limiting their applicability across diverse pretrained VLA models. In this work, we propose a label-free and model-agnostic framework for inference-time uncertainty estimation through hidden activation perturbations, motivated by Bayesian perspectives on local model variations. Specifically, we inject Gaussian perturbations into transformer hidden activations and estimate epistemic signals from disagreement across perturbed action predictions. Experiments on LIBERO and LIBERO-PRO show that perturbation-based uncertainty consistently improves failure detection under distribution shift compared to sampling-based uncertainty, providing a practical uncertainty signal for VLA models."
+  },
+  {
+    "title": "Geometric Entropy: When Trajectory Diversity Helps and Hurts in Imitation Learning",
+    "original_title": "Geometric Entropy: When Trajectory Diversity Helps and Hurts in Imitation Learning",
+    "link": "https://arxiv.org/abs/2606.20871",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.20871v1 Announce Type: new \nAbstract: We study how trajectory-shape diversity in demonstrations affects imitation learning (IL) performance across models, tasks, and data scales. We introduce Geometric Entropy (H_G), a task-agnostic metric that quantifies the intrinsic diversity of transit trajectories after normalizing away extrinsic variation, such as goal pose and workspace scale, via target-frame alignment. Across multiple IL architectures and both simulated and real-robot contact-rich manipulation tasks, we observe a consistent inverted-U relationship between success and H_G: increasing geometric diversity improves robustness in low-diversity regimes but degrades performance once diversity induces strategy ambiguity. Moreover, the optimal entropy shifts toward lower values as task mastery increases through more data, easier tasks, or stronger priors, and for a pretrained vision-language-action model the trend becomes effectively monotonic decreasing. Practically, H_G enables fast pre-training auditing of demonstration datasets and offers a simple guideline for calibrating demonstrations toward the learnable regime."
+  },
+  {
     "title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint",
     "original_title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint",
     "link": "https://www.therobotreport.com/fort-and-nvidia-launch-ai-driven-outside-in-safety-blueprint/",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Humanoid Robotics In 2026: The Race From Pilot To Platform  KraneShares"
-  },
-  {
-    "title": "ITS America Conference & Expo offers ‘more outdoor demonstration experiences than ever before’",
-    "original_title": "ITS America Conference & Expo offers ‘more outdoor demonstration experiences than ever before’",
-    "link": "https://roboticsandautomationnews.com/2026/05/12/its-america-conference-expo-offers-more-outdoor-demonstration-experiences-than-ever-before/101394/",
-    "date": "2026-05-12 14:33",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "ITS America Conference & Expo, organized in partnership by RX Global and ITS America, introduces an expanded demonstration program for the 2026 ITS America Conference & Expo, taking place June 9-11 in Detroit, Michigan. Attendees will see firsthand how the newest technologies installed along roadways and within vehicles are making transportation in Detroit safer and […]"
-  },
-  {
-    "title": "Unitree Shows Off Fully Functional Mecha Suit - Futurism",
-    "original_title": "Unitree Shows Off Fully Functional Mecha Suit - Futurism",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE44c2p4M040czhNU3lMbXlrWTRldnRCMmlmTnd5THF5Qnd4OFgyRjhxZWhKT3hDUW83YVR6T3FPMGdoSmxQQk9HODdaVEd4czg3OVdwZUxLTFFxeXplQU04MW0zRzlhdVlVRmRvWG1SSjQ?oc=5",
-    "date": "2026-05-12 14:31",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree Shows Off Fully Functional Mecha Suit  Futurism"
-  },
-  {
-    "title": "Factory Automation: Bridging Promise and Real-World Production",
-    "original_title": "Factory Automation: Bridging Promise and Real-World Production",
-    "link": "https://roboticsandautomationnews.com/2026/05/12/factory-automation/101387/",
-    "date": "2026-05-12 13:35",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Walk into a modern shop floor and the contrast is immediate. Bright collaborative robot arms move with practised precision next to conveyors that have been running since the 1990s. Touchscreen dashboards glow above workstations where an operator still keeps a grease-stained notebook with the real setup parameters. That juxtaposition is the current state of factory […]"
-  },
-  {
-    "title": "Machines with the ability to 'feel' currently in development as we enter next frontier of AI",
-    "original_title": "Machines with the ability to 'feel' currently in development as we enter next frontier of AI",
-    "link": "https://techxplore.com/news/2026-05-machines-ability-frontier-ai.html",
-    "date": "2026-05-12 13:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "New artificial intelligence (AI) technologies currently in development could lead to an imminent future where machines no longer just process and analyze information, but can feel. In his new book \"Perceptive Machines,\" futurologist and researcher Professor Rocky Scopelliti outlines a near future in which machines are capable of sensing, interpreting and responding to the world in ways once considered unique to humans and other biological species: including sight, sound, touch, smell and taste."
-  },
-  {
-    "title": "Automated Tire decloaks with new autonomous tire-changing SmartBay",
-    "original_title": "Automated Tire decloaks with new autonomous tire-changing SmartBay",
-    "link": "https://www.therobotreport.com/automated-tire-decloaks-smartbay-autonomous-tire-changing/",
-    "date": "2026-05-12 13:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Automated Tire says its SmartBay system enables one technician to supervise vehicle tire changing in up to three bays at once.\nThe post Automated Tire decloaks with new autonomous tire-changing SmartBay appeared first on The Robot Report."
-  },
-  {
-    "title": "Hello Robot’s latest Stretch 4 is bigger, faster, and stronger than previous versions",
-    "original_title": "Hello Robot’s latest Stretch 4 is bigger, faster, and stronger than previous versions",
-    "link": "https://www.therobotreport.com/hello-robots-latest-stretch-4-is-bigger-faster-and-stronger-than-previous-versions/",
-    "date": "2026-05-12 12:01",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Hello Robot's latest Stretch 4 is more capable than previous assistive robots, while still maintaining flexibility and safety. \nThe post Hello Robot’s latest Stretch 4 is bigger, faster, and stronger than previous versions appeared first on The Robot Report."
-  },
-  {
-    "title": "'Touch dreaming' helps humanoid robots handle five tricky tasks with 90.9% higher success",
-    "original_title": "'Touch dreaming' helps humanoid robots handle five tricky tasks with 90.9% higher success",
-    "link": "https://techxplore.com/news/2026-05-humanoid-robots-tricky-tasks-higher.html",
-    "date": "2026-05-12 12:00",
-    "source": "Tech Xplore",
-    "category": "hand",
-    "summary": "Humanoid robots, robotic systems with a body structure that resembles that of humans, could soon assist humans with various tasks in household environments, manufacturing sites, hospitals and other settings. While some humanoid robots already perform well on basic manual tasks, they often struggle with more complex tasks or with missions that require them to reliably manipulate objects while moving in the space around them."
-  },
-  {
-    "title": "'Touch dreaming' helps humanoid robots handle five tricky tasks with 90.9% higher success - Tech Xplore",
-    "original_title": "'Touch dreaming' helps humanoid robots handle five tricky tasks with 90.9% higher success - Tech Xplore",
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTG5UWV9JU1M4VmZLS0hJVVF3QlNwX2Y1RWtxSFhhOFJkd2RfbGxiT1VTR1N2ZWJkci1iNkgzVFFYalg3VklBRk9TbUV4cmNJVUkyNzBORl93QXRkLXRjY0N4aU9temlXWmxTaEJ0QlFhUlczSl9CNENrUG1RY0ZWdjBB?oc=5",
-    "date": "2026-05-12 12:00",
-    "source": "Google News (Global Hand/Gripper)",
-    "category": "hand",
-    "summary": "'Touch dreaming' helps humanoid robots handle five tricky tasks with 90.9% higher success  Tech Xplore"
-  },
-  {
-    "title": "Unitree Robotics debuts world's first mass-produced robot GD01 - China Daily",
-    "original_title": "Unitree Robotics debuts world's first mass-produced robot GD01 - China Daily",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9FdHdoelFpSS1JSlFCVUVhNzJBS0RDa1czMndNdHJneE1QcW1Pem1KZEl5RHlYb0RTUlU3RnB1ZHNUYjFfcm5DNC1TaV82NWZzUk9nNUZIU0Y3eG8xUVR5LUszQkRGcF9ZV25xcnQ1QnlnNW9uUG5kYnBlVmxfQQ?oc=5",
-    "date": "2026-05-12 11:33",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree Robotics debuts world's first mass-produced robot GD01  China Daily"
   }
 ]
