@@ -1,5 +1,32 @@
 [
   {
+    "title": "How to File a DBA Online: Requirements, Costs, and Registration Process",
+    "original_title": "How to File a DBA Online: Requirements, Costs, and Registration Process",
+    "link": "https://roboticsandautomationnews.com/2026/06/23/how-to-file-a-dba-online-requirements-costs-and-registration-process/102763/",
+    "date": "2026-06-23 09:39",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "If you are running a business in a competitive market, you must know the relevance of brand presence. Many business owners operate under a name that differs from their legal business name. A DBA, or “Doing Business As” name, helps businesses create a separate brand identity without forming a new legal entity. The online filing […]"
+  },
+  {
+    "title": "Inside modern supplement manufacturing: How automated filling lines are raising the quality bar",
+    "original_title": "Inside modern supplement manufacturing: How automated filling lines are raising the quality bar",
+    "link": "https://roboticsandautomationnews.com/2026/06/23/inside-modern-supplement-manufacturing-how-automated-filling-lines-are-raising-the-quality-bar/102760/",
+    "date": "2026-06-23 09:28",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Automation has redefined supplement manufacturing, with state-of-the-art filling lines now setting higher standards of quality and efficiency. These systems bring advanced technologies, but also introduce new protocols and expectations for quality assurance. This article explores the ways automated filling lines are raising the bar for supplement manufacturing, highlighting breakthroughs, best practices, and critical controls in […]"
+  },
+  {
+    "title": "Supplier Impersonation Fraud is Now an Operational Risk for Industrial Manufacturers",
+    "original_title": "Supplier Impersonation Fraud is Now an Operational Risk for Industrial Manufacturers",
+    "link": "https://roboticsandautomationnews.com/2026/06/23/supplier-impersonation-fraud-is-now-an-operational-risk-for-industrial-manufacturers/102756/",
+    "date": "2026-06-23 09:03",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Industrial manufacturing environments are becoming increasingly digitised, with robotics, automation systems, and connected supply chains driving efficiency across production and logistics. However, this growing digital interdependence has also introduced new cybersecurity risks that extend beyond traditional IT boundaries. One of the most overlooked threats is supplier impersonation fraud, where attackers exploit trusted vendor relationships to […]"
+  },
+  {
     "title": "Robot.com Launches Humanoid Robot, R-noid",
     "original_title": "Robot.com Launches Humanoid Robot, R-noid",
     "link": "https://humanoidroboticstechnology.com/industry-news/robot-com-launches-humanoid-robot-r-noid/",
@@ -403,6 +430,78 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.22073v1 Announce Type: new \nAbstract: This paper proposes an energy-recycling rimless wheel with spring-clutch legs. The proposed mechanism uses a lockable clutch to store part of the impact-induced elastic energy after foot contact and reinject it in the next gait cycle. First, we develop a hybrid dynamic model of the energy-recycling rimless wheel. Second, numerical simulations are used to examine the dynamics, local stability of periodic gaits, and the Cost of Transport (CoT) of the proposed mechanism. The simulation results show that the proposed mechanism reduces the CoT by up to 16.13% compared with a benchmark viscoelastic-legged rimless wheel with telescopic spring-damper legs. Compared with the rigid rimless wheel, the viscoelastic-legged and energy-recycling models reduce the CoT by more than 50%. The energy-recycling model also maintains locally stable periodic gaits over the tested slope and stiffness ranges. Finally, prototype experiments on an inclined plane are conducted to examine the feasibility of the proposed mechanism. The experimental results show that the proposed rimless wheel achieves passive walking on a shallow 1{\\deg} slope, corresponding to a CoT of approximately 0.02. These results suggest that the proposed spring-clutch mechanism can improve the simulated walking efficiency of the energy-recycling rimless wheel, while the prototype experiments support the feasibility of passive walking with the mechanism."
+  },
+  {
+    "title": "KITE: Decoupling Kinematics and Interaction for Zero-Shot Cross-Embodiment Manipulation",
+    "original_title": "KITE: Decoupling Kinematics and Interaction for Zero-Shot Cross-Embodiment Manipulation",
+    "link": "https://arxiv.org/abs/2606.22113",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22113v1 Announce Type: new \nAbstract: Generalizing manipulation policies across robot embodiments remains difficult because standard policies entangle task reasoning with embodiment-specific motor control. We study zero-shot cross-embodiment manipulation, where a policy trained on source embodiments must be deployed on a structurally different target embodiment without additional task demonstrations. We introduce Kinematic Interaction Transfer across Embodiments (KITE), which decouples manipulation into embodiment-agnostic task reasoning and embodiment-specific motor control, connected through a learned latent representation of interaction intent based on contact patterns. Task reasoning is performed by a shared policy that predicts latent intents from source demonstrations, while motor control is performed by an intent-conditioned action decoder learned from each embodiment's kinematic model. With KITE, adaptation to a new embodiment requires only training a new action decoder using its kinematic model, without recollecting demonstration data. We evaluate KITE on three manipulation tasks spanning transfer between parallel grippers, dexterous hands, and composite embodiments. KITE consistently achieves zero-shot transfer to structurally different target embodiments, outperforming state-of-the-art baselines in transfer success and task-embodiment scope."
+  },
+  {
+    "title": "DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects",
+    "original_title": "DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects",
+    "link": "https://arxiv.org/abs/2606.22116",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22116v1 Announce Type: new \nAbstract: Deformable linear objects (DLOs) such as wires, cables, and ropes are common in robotic manipulation tasks, yet simulating them with both visual realism and physical accuracy remains challenging. Existing visual simulation methods typically rely on procedural geometric primitives that lack physically grounded deformation behavior, while physics-based approaches with robot learning support often approximate DLOs as rigid-link chains or generic soft bodies, failing to accurately capture the bending, twisting, and shear mechanics of slender elastic structures. In this work, we introduce DeformX, a co-simulation framework that integrates a dedicated Cosserat rod physics engine with NVIDIA Isaac Sim, enabling DLO simulations that are both physically faithful and visually realistic. Our Cosserat rod engine simulates the dynamics and self-collisions of DLOs, and contact interactions with arbitrary free-form meshes. To achieve high-fidelity visualization, we employ mesh skinning to map discrete rod deformations onto imported CAD models. To the best of our knowledge, DeformX is the one of the first frameworks for DLO simulation that unifies realistic visualization, principled physics, and compatibility with robot learning pipelines. We demonstrate its versatility across synthetic data generation and policy learning for DLO manipulation, and validate visual and physical fidelity through comparisons against real-world experiments. Notably, fine-tuning Segment Anything Model 3 (SAM3) on DeformX-generated data yields a 10.2% mAP@75 improvement in real-image wire segmentation, and a rope-swinging policy trained entirely in DeformX achieves a mean target-hitting error of 6.6 cm on a UR5e manipulator in real-world trials, highlighting its strong sim-to-real transfer capability."
+  },
+  {
+    "title": "Durability-Aware Multi-Objective Optimization of the Jansen Linkage: Trading Gait Quality Against Joint Wear",
+    "original_title": "Durability-Aware Multi-Objective Optimization of the Jansen Linkage: Trading Gait Quality Against Joint Wear",
+    "link": "https://arxiv.org/abs/2606.22129",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.22129v1 Announce Type: new \nAbstract: The Jansen linkage is a single-degree-of-freedom planar leg mechanism whose eleven \"holy numbers\" were evolved by Theo Jansen to optimize the foot-path gait alone, with no regard for the wear of its revolute joints. This paper introduces a durability objective into the design of the Jansen leg. A parametric forward-kinematic model (two-circle-intersection solver), an inverse-dynamic model (constraint-Jacobian / Lagrange-multiplier formulation of a seven-body, ten-joint system, independently cross-verified by a reduced-DOF energy method), and an Archard wear model are coupled to evaluate, for any set of link lengths, both gait quality and the per-cycle sliding wear at every pin. Because the wear is computed on ideal, clearance-free revolute joints, the resulting wear figures are a relative comparative ranking rather than an absolute life prediction. A bi-objective problem -- composite gait error versus total joint wear, subject to step-length, ground-clearance, duty-factor and assembly constraints -- is solved with NSGA-II. Under the adopted gait metric the classical Jansen design is Pareto-dominated: for a representative design, link-length adjustments within +/-29% simultaneously flatten the stance (-28%), smooth the stance velocity (-58%) and reduce total joint wear by ~56%. A sensitivity study shows the wear advantage is robust across a crank-speed x payload envelope (48%-56%) and identifies the link lengths that most strongly govern wear. A variance-based global (Sobol) analysis confirms that two link lengths dominate the wear variance, and a Monte-Carlo manufacturing-tolerance study shows the wear advantage degrades gracefully under realistic fabrication error. The framework provides a practical route to longer-lived walking linkages and a baseline for future wear-clearance-impact coupled studies."
+  },
+  {
+    "title": "Wh0: Generative World Models as Scalable Sources of Egocentric Human Hand Manipulation Data",
+    "original_title": "Wh0: Generative World Models as Scalable Sources of Egocentric Human Hand Manipulation Data",
+    "link": "https://arxiv.org/abs/2606.22136",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22136v1 Announce Type: new \nAbstract: Scaling dexterous manipulation requires generalization across objects, scenes, and tasks, yet existing data sources face a trade-off between scale and scene/embodiment alignment: teleoperation data is well aligned with robot deployment but expensive to collect; simulation is scalable but limited by the sim-to-real gap; and real egocentric videos scale effectively but remain misaligned with robot deployment. We propose Wh0, a framework that uses generative video world models as scalable and controllable sources of egocentric human-hand manipulation data to unlock the manipulation capabilities of pretrained dexterous VLA models. Conditioned on language, objects, and scenes, Wh0 uses a generative world model to produce WM-H, a 50k-episode dataset of egocentric human-object interaction videos. Wh0 then converts the generated videos into robot-trainable supervision through hand motion reconstruction and visual editing. Co-trained with a limited amount of real robot data, WM-H adapts pretrained VLA models to dexterous manipulation deployment. Across 18 real-world dexterous manipulation tasks, compared with a model post-trained only on robot data, Wh0 improves zero-shot success on unseen tasks from 8.3% to 38.9%. Ablation studies further show that scalable generation and scene/embodiment alignment are key drivers of performance gains. Videos and open-source code can be found on our project website: https://chenyt31.github.io/wh0.github.io/."
+  },
+  {
+    "title": "RoboLineage: Agent-Native Data Lifecycle Governance Across Robot Policy Iterations",
+    "original_title": "RoboLineage: Agent-Native Data Lifecycle Governance Across Robot Policy Iterations",
+    "link": "https://arxiv.org/abs/2606.22142",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22142v1 Announce Type: new \nAbstract: We present RoboLineage, an agent-native data lifecycle governance system for robot policy iteration. Modern robot policies improve through repeated data collection, review, retraining, evaluation, and release decisions, but the evidence connecting these steps is often scattered across local tools, scripts, and expert memory. RoboLineage makes this lifecycle explicit by representing rollouts, reviews, dataset decisions, training runs, policy metadata, evaluations, deployment recommendations, and next-collection plans as typed lineage artifacts. Agents interpret embodied rollout evidence, adapt accepted data to existing training stacks, maintain data health, and summarize cross-iteration state under explicit artifact boundaries. In real-robot manipulation workflows, RoboLineage makes routine policy iteration faster and more auditable while maintaining downstream policy performance. We open source RoboLineage as a lightweight lifecycle layer for different robot embodiments and training families. Project page: https://robolineage.github.io/"
+  },
+  {
+    "title": "Physics-Informed Eikonal Caging for Whole-Arm Manipulation Planning",
+    "original_title": "Physics-Informed Eikonal Caging for Whole-Arm Manipulation Planning",
+    "link": "https://arxiv.org/abs/2606.22143",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22143v1 Announce Type: new \nAbstract: Planning contact-rich whole-arm manipulation is challenging because interactions that involve extended robot geometry give rise to complex contact dynamics that are difficult to model accurately. This creates a need for planning principles that do not rely heavily on precise contact models. Caging offers one such geometric notion of robustness to modeling inaccuracy by restricting object escape through geometrically enclosing the object. However, existing caging formulations are difficult to incorporate into continuous optimization-based manipulation planning. We reformulate caging as a minimum-time escape problem in which the object seeks to leave an enclosing robot geometry in the shortest time. This yields a continuous escape-time field that measures the robot's enclosure quality and we show it satisfies an eikonal equation. We therefore can approximate this field using a physics-informed neural network, producing a smooth differentiable representation that can be embedded directly into manipulation planning. The resulting objective supports whole-arm manipulation planning to favor robot configurations resisting object escape. This improves the manipulation robustness to contact model mismatch, thus enabling planning with simplified contact models, including quasi-dynamic approximations and simplified object geometry. Across simulation and real-world experiments, we show improved robustness to disturbances and contact-model mismatch relative to baselines. These results suggest that geometric enclosure can serve as a practical robustness primitive for whole-arm manipulation. A supplementary video, which includes an intuitive overview of our method and experiment video results, is available on our project webpage."
+  },
+  {
+    "title": "Zero-shot Transfer of Reinforcement Learning Control Policies for the Swing-Up and Stabilization of a Cart-Pole System",
+    "original_title": "Zero-shot Transfer of Reinforcement Learning Control Policies for the Swing-Up and Stabilization of a Cart-Pole System",
+    "link": "https://arxiv.org/abs/2606.22145",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22145v1 Announce Type: new \nAbstract: Reinforcement learning (RL) is a powerful and convenient tool to modernize controller design. In this work, we study the zero-shot transfer of RL-based control policies from simulation to hardware for cart-pole swing-up and stabilization. The two policies are trained independently, and the handoff is implemented in Simulink via switching logic. We apply a first-order action smoothing filter to prevent hardware damage from high-frequency oscillatory actuation. Pairing this bandwidth-aware filtering with sensitivity-guided domain randomization (DR) and a simple linear curriculum learning (CL) schedule, we obtain a swing-up policy that in all of our experiments injects sufficient energy for handoff into the stabilizer's region of attraction. The stabilization policy rejects disturbances within the tested range, and the swing-up policy can re-engage after larger perturbations and restores the pendulum to the inverted position."
+  },
+  {
+    "title": "Full Nonlinear Nonholonomic Dynamics and Motion Analysis of a 3-DoF Underactuated Spherical Rolling Robot",
+    "original_title": "Full Nonlinear Nonholonomic Dynamics and Motion Analysis of a 3-DoF Underactuated Spherical Rolling Robot",
+    "link": "https://arxiv.org/abs/2606.22169",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.22169v1 Announce Type: new \nAbstract: This paper presents a full nonlinear constrained dynamic model of MonoRollBot, a novel 3-DoF spherical rolling robot driven by a single motor, a lead-screw transmission, and a spring-coupled internal moving mass, together with motion analysis of its behavior. To the best of our knowledge, this is one of the first full nonlinear nonholonomic models reported for a mono-actuated, super-underactuated spherical rolling robot of this kind. Because rolling without slipping is nonholonomic, the dynamics are derived using the Lagrange--d'Alembert formulation, with the lead-screw relation imposed as a holonomic constraint and the rolling condition imposed in Pfaffian form. The formulation retains the complete generalized coordinates of shell translation, shell attitude, screw travel, nut rotation, and radial mass motion. Simulations and representative motion studies show qualitative agreement with prototype behavior and reveal how gravity, compliance, and inertia jointly shape the locomotion and motion capabilities of this strongly underactuated robot. The resulting model also provides a mechanically consistent basis for future state estimation and hybrid controller design for this nonholonomic mono-actuated rolling robot."
   },
   {
     "title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint",
@@ -17899,104 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.11825v1 Announce Type: new \nAbstract: Affective touch in human-robot interaction is shaped not only by emotional intent, but also by robot embodiment, including touch location, physical constraints, and perceived agency or social role. Existing HRI studies typically focus on one or two isolated body parts, limiting understanding of how affective touch generalises across the full humanoid body. We present a study with 32 participants interacting with the iCub robot, which is equipped with full-body distributed tactile sensors. Participants expressed eight emotions under three conditions: free touch, arm-only touch, and torso-only touch. Results show that body region and spatial constraints jointly shaped both touch location and dynamics. In free touch, participants preferred socially accessible upper-body regions, while less frequently touched areas showed stronger emotion-specific selectivity. Emotion-related variation was more evident in motion features for arm-only touch and pressure features for torso-only touch. Touch strategies also did not transfer directly between free and constrained conditions, even within the same coarse body region. Participants reported increased closeness to the robot after interaction, with around 30 percent reporting a change in perceived social relationship. Together, these findings show that affective touch expression is strongly body-region dependent and shaped by embodiment constraints."
-  },
-  {
-    "title": "Learning Action Manifold with Multi-view Latent Priors for Robotic Manipulation",
-    "original_title": "Learning Action Manifold with Multi-view Latent Priors for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2605.11832",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11832v1 Announce Type: new \nAbstract: This paper tackles spatial perception and manipulation challenges in Vision-Language-Action (VLA) models. To address depth ambiguity from monocular input, we leverage a pre-trained multi-view diffusion model to synthesize latent novel views and propose a Geometry-Guided Gated Transformer (G3T) that aligns multi-view features under 3D geometric guidance while adaptively filtering occlusion noise. To improve action learning efficiency, we introduce Action Manifold Learning (AML), which directly predicts actions on the valid action manifold, bypassing inefficient regression of unstructured targets like noise or velocity. Experiments on LIBERO, RoboTwin 2.0, and real-robot tasks show our method achieves superior success rate and robustness over SOTA baselines. Project page: https://junjxiao.github.io/Multi-view-VLA.github.io/."
-  },
-  {
-    "title": "EvoNav: Evolutionary Reward Function Design for Robot Navigation with Large Language Models",
-    "original_title": "EvoNav: Evolutionary Reward Function Design for Robot Navigation with Large Language Models",
-    "link": "https://arxiv.org/abs/2605.11859",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11859v1 Announce Type: new \nAbstract: Robot navigation is a crucial task with applications to social robots in dynamic human environments. While Reinforcement Learning (RL) has shown great promise for this problem, the policy quality is highly sensitive to the specification of reward functions. Hand-crafted rewards require substantial domain expertise and embed inductive biases that are difficult to audit or adapt, limiting their effectiveness and leading to suboptimal performance. In this paper, we propose EvoNav, an evolutionary framework that automates the design of robot navigation reward functions via large language models (LLMs). To overcome prohibitively costly policy training, EvoNav evaluates each candidate proposal from the LLM via a progressive three-stage warm-up-boost procedure. EvoNav advances from analytical proxies with low-cost surrogates, such as small datasets and analytic rules, to lightweight rollouts and, finally, to full policy training, enabling computationally efficient exploration under effective feedback. Experiment results show that EvoNav produces more effective navigation policies than manually designed RL rewards and state-of-the-art reward design methods."
-  },
-  {
-    "title": "From Reaction to Anticipation: Proactive Failure Recovery through Agentic Task Graph for Robotic Manipulation",
-    "original_title": "From Reaction to Anticipation: Proactive Failure Recovery through Agentic Task Graph for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2605.11951",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11951v1 Announce Type: new \nAbstract: Although robotic manipulation has made significant progress, reliable execution remains challenging because task failures are inevitable in dynamic and unstructured environments. To handle such failures, existing frameworks typically follow a stepwise detect-reason-recover pipeline, which often incurs high latency and limited robustness due to delayed reasoning and reactive planning. Inspired by the human capability to anticipate and proactively plan for potential failures, we introduce AgentChord, an agentic system that models a manipulation task as a directed task graph. Before execution, this graph is enriched with anticipatory recovery branches that specify context-aware corrective behaviors, enabling immediate and targeted responses when failures occur. Specifically, AgentChord operates through a choreography of specialized agents: a composer that structures the nominal task graph, an arranger that augments the graph with anticipatory recovery branches, and a conductor that compiles and coordinates executable transitions using low-latency monitors to detect deviations and trigger pre-compiled recoveries without re-planning. Empirical studies on diverse long-horizon bimanual manipulation tasks demonstrate that AgentChord substantially improves success rates and execution efficiency, advancing the reliability and autonomy of real-world robotic systems. The project page is available at: https://shengxu.net/AgentChord/."
-  },
-  {
-    "title": "Cooperative Robotics Reinforced by Collective Perception for Traffic Moderation",
-    "original_title": "Cooperative Robotics Reinforced by Collective Perception for Traffic Moderation",
-    "link": "https://arxiv.org/abs/2605.11972",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.11972v1 Announce Type: new \nAbstract: Collisions at non-line-of-sight (NLOS) intersections remain a major safety concern because drivers have limited visibility of approaching traffic. V2X based warnings can reduce these risks, yet many vehicles are not equipped with V2X and drivers may ignore in vehicle alerts. Collective perception (CP) can compensate for low V2X penetration by extending the awareness of connected vehicles, but it cannot influence unconnected vehicles. To fill this gap, our work introduces a complementary concept that adds a cooperative humanoid robot as an active traffic moderator capable of physically stopping a vehicle that attempts to merge into an unseen traffic stream. The system operates on two parallel perception pathways. A dual camera infrastructure unit detects the position, speed and motion of approaching vehicles and transmits this information to the robot as a collective perception message (CPM). The robot also receives cooperative awareness messages (CAM) from connected vehicles through its onboard V2X unit and can act as a relay for decentralized environmental notification messages (DENM) when safety events originate elsewhere along the road. A fusion module combines these streams to maintain a robust real time view of the main road. A Zone of Danger (ZoD) is defined and used to predict whether an approaching vehicle creates a collision risk for a merging road user. When such a risk is detected, the robot issues a human-like STOP gesture and blocks the merging path until the hazard disappears. The full system was deployed at the Future Mobility Park (FMP) in Rotterdam. Experiments show that the combined vision and V2X perception allows the robot to detect approaching vehicles early, predict hazards reliably and prevent unsafe merges in real world NLOS conditions."
-  },
-  {
-    "title": "Learning What Matters: Adaptive Information-Theoretic Objectives for Robot Exploration",
-    "original_title": "Learning What Matters: Adaptive Information-Theoretic Objectives for Robot Exploration",
-    "link": "https://arxiv.org/abs/2605.12084",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.12084v1 Announce Type: new \nAbstract: Designing learnable information-theoretic objectives for robot exploration remains challenging. Such objectives aim to guide exploration toward data that reduces uncertainty in model parameters, yet it is often unclear what information the collected data can actually reveal. Although reinforcement learning (RL) can optimize a given objective, constructing objectives that reflect parametric learnability is difficult in high-dimensional robotic systems. Many parameter directions are weakly observable or unidentifiable, and even when identifiable directions are selected, omitted directions can still influence exploration and distort information measures. To address this challenge, we propose Quasi-Optimal Experimental Design (Q{\\footnotesize OED}), an adaptive information objective grounded in optimal experimental design. Q{\\footnotesize OED} (i) performs eigenspace analysis of the Fisher information matrix to identify an observable subspace and select identifiable parameter directions, and (ii) modifies the exploration objective to emphasize these directions while suppressing nuisance effects from non-critical parameters. Under bounded nuisance influence and limited coupling between critical and nuisance directions, Q{\\footnotesize OED} provides a constant-factor approximation to the ideal information objective that explores all parameters. We evaluate Q{\\footnotesize OED} on simulated and real-world navigation and manipulation tasks, where identifiable-direction selection and nuisance suppression yield performance improvements of \\SI{35.23}{\\percent} and \\SI{21.98}{\\percent}, respectively. When integrated as an exploration objective in model-based policy optimization, Q{\\footnotesize OED} further improves policy performance over established RL baselines."
-  },
-  {
-    "title": "X-Imitator: Spatial-Aware Imitation Learning via Bidirectional Action-Pose Interaction",
-    "original_title": "X-Imitator: Spatial-Aware Imitation Learning via Bidirectional Action-Pose Interaction",
-    "link": "https://arxiv.org/abs/2605.12162",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.12162v1 Announce Type: new \nAbstract: Effectively handling the interplay between spatial perception and action generation remains a critical bottleneck in robotic manipulation. Existing methods typically treat spatial perception and action execution as decoupled or strictly unidirectional processes, fundamentally restricting a robot's ability to master complex manipulation tasks. To address this, we propose X-Imitator, a versatile dual-path framework that models spatial perception and action execution as a tightly coupled bidirectional loop. By reciprocally conditioning current pose predictions on past actions and vice versa, this framework enables continuous mutual refinement between spatial reasoning and action generation. This joint modeling exactly mimics human internal forward models. Designed as a modular architecture, the system can be seamlessly integrated into various visuomotor policies. Extensive experiments across 24 simulated and 3 real-world tasks demonstrate that our framework significantly outperforms both vanilla policies and prior methods utilizing explicit pose guidance. The code will be open sourced."
-  },
-  {
-    "title": "From Imagined Futures to Executable Actions: Mixture of Latent Actions for Robot Manipulation",
-    "original_title": "From Imagined Futures to Executable Actions: Mixture of Latent Actions for Robot Manipulation",
-    "link": "https://arxiv.org/abs/2605.12167",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.12167v1 Announce Type: new \nAbstract: Video generation models offer a promising imagination mechanism for robot manipulation by predicting long-horizon future observations, but effectively exploiting these imagined futures for action execution remains challenging. Existing approaches either condition policies on predicted frames or directly decode generated videos into actions, both suffering from a mismatch between visual realism and control relevance. As a result, predicted observations emphasize perceptual fidelity rather than action-centric causes of state transitions, leading to indirect and unstable control. To address this gap, we propose MoLA (Mixture of Latent Actions), a control-oriented interface that transforms imagined future videos into executable representations. Instead of passing predicted frames directly to the policy, MoLA leverages a mixture of pretrained inverse dynamics models to infer a mixture of latent actions implied by generated visual transitions. These modality-aware inverse dynamics models capture complementary semantic, depth, and flow cues, providing a structured and physically grounded action representation that bridges video imagination and policy execution. We evaluate our approach on simulated benchmarks (LIBERO, CALVIN, and LIBERO-Plus) and real-world robot manipulation tasks, achieving consistent gains in task success, temporal consistency, and generalization."
-  },
-  {
-    "title": "DexTwist: Dexterous Hand Retargeting for Twist Motion via Mixed Reality-based Teleoperation",
-    "original_title": "DexTwist: Dexterous Hand Retargeting for Twist Motion via Mixed Reality-based Teleoperation",
-    "link": "https://arxiv.org/abs/2605.12182",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.12182v1 Announce Type: new \nAbstract: Dexterous teleoperation via Mixed Reality (MR)-based interfaces offers a scalable paradigm for transferring human manipulation skills to dexterous robot hands. However, conventional retargeting approaches that minimize kinematic dissimilarity (e.g., joint angle or fingertip position error) often fail in contact-rich rotational manipulation, such as cap opening, key turning, and bolt screwing. This failure stems from the embodiment gap: mismatched link lengths, joint axes/limits, and fingertip geometry can cause direct pose imitation to induce tangential fingertip sliding rather than stable object rotation, resulting in screw axis drift, contact slip, and grasp instability. To address this, we propose DexTwist, a functional twist-retargeting framework for MR-based dexterous teleoperation. DexTwist detects a tripod pinch, estimates the operator's intended screw axis and twist magnitude, and applies a real-time residual joint-space refinement that tracks turning progress while regularizing the robot tripod geometry. The refinement minimizes a virtual-object objective defined by turning angle, screw axis consistency, fingertip closure, and tripod stability. Simulation and real-world experiments show that DexTwist improves turning angle tracking and screw axis stability compared with a vector-based retargeting baseline."
-  },
-  {
-    "title": "Morphologically Equivariant Flow Matching for Bimanual Mobile Manipulation",
-    "original_title": "Morphologically Equivariant Flow Matching for Bimanual Mobile Manipulation",
-    "link": "https://arxiv.org/abs/2605.12228",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.12228v1 Announce Type: new \nAbstract: Mobile manipulation requires coordinated control of high-dimensional, bimanual robots. Imitation learning methods have been broadly used to solve these robotic tasks, yet typically ignore the bilateral morphological symmetry inherent in such systems. We argue that morphological symmetry is an underexplored but crucial inductive bias for learning in bimanual mobile manipulation: knowing how to solve a task in one configuration directly determines how to solve its mirrored counterpart. In this paper, we formalize this symmetry prior and show that it constrains optimal bimanual policies to be ambidextrous and equivariant under reflections across the robot's sagittal plane. We introduce a $\\mathbb{C}_2$-equivariant flow matching policy that enforces reflective symmetry either via a regularized training loss or an equivariant velocity network. Across planar and 6-DoF mobile manipulation tasks, symmetry-informed policies consistently improve sample efficiency and achieve zero-shot generalization to mirrored configurations absent from the training distribution. We further validate this zero-shot generalization capability on a real-world manipulation task with a TIAGo++ robot. Together, our findings establish morphological symmetry as an effective, generalizable, and scalable inductive bias for ambidextrous generative policy learning."
-  },
-  {
-    "title": "TMRL: Diffusion Timestep-Modulated Pretraining Enables Exploration for Efficient Policy Finetuning",
-    "original_title": "TMRL: Diffusion Timestep-Modulated Pretraining Enables Exploration for Efficient Policy Finetuning",
-    "link": "https://arxiv.org/abs/2605.12236",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.12236v1 Announce Type: new \nAbstract: Fine-tuning pre-trained robot policies with reinforcement learning (RL) often inherits the bottlenecks introduced by pre-training with behavioral cloning (BC), which produces narrow action distributions that lack the coverage necessary for downstream exploration. We present a unified framework that enables the exploration necessary to enable efficient robot policy finetuning by bridging BC pre-training and RL fine-tuning. Our pre-training method, Context-Smoothed Pre-training (CSP), injects forward-diffusion noise into policy inputs, creating a continuum between precise imitation and broad action coverage. We then fine-tune pre-trained policies via Timestep-Modulated Reinforcement Learning (TMRL), which trains the agent to dynamically adjust this conditioning during fine-tuning by modulating the diffusion timestep, granting explicit control over exploration. Integrating seamlessly with arbitrary policy inputs, e.g., states, 3D point clouds, or image-based VLA policies, we show that TMRL improves RL fine-tuning sample efficiency. Notably, TMRL enables successful real-world fine-tuning on complex manipulation tasks in under one hour. Videos and code available at https://weirdlabuw.github.io/tmrl/."
-  },
-  {
-    "title": "SI-Diff: A Framework for Learning Search and High-Precision Insertion with a Force-Domain Diffusion Policy",
-    "original_title": "SI-Diff: A Framework for Learning Search and High-Precision Insertion with a Force-Domain Diffusion Policy",
-    "link": "https://arxiv.org/abs/2605.12247",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.12247v1 Announce Type: new \nAbstract: Contact-rich assembly is fundamental in robotics but poses significant challenges due to uncertainties in relative poses, such as misalignments and small clearances in peg-in-hole tasks. Existing approaches typically address search and high-precision insertion separately, because these tasks involve distinct action patterns. However, supporting both tasks within a single model, without switching models or weights, is desirable for intelligent assembly systems. In this work, we propose SI-Diff, a framework that learns both search and high-precision insertion through a force-domain diffusion policy. To this end, we introduce a new mode-conditioning mechanism that enables the policy to capture distinct action behaviors under a single framework. Moreover, we develop a new search teacher policy that can generate diverse trajectories. By training on successful and efficient demonstrations provided by the teacher policy, the model learns the mapping from tactile and end-effector velocity observations to effective action behaviors. We conduct thorough experiments to show that SI-Diff extends the tolerance to x-y misalignments from 2 mm to 5 mm compared to the state-of-the-art baseline, TacDiffusion, while also demonstrating strong zero-shot transferability to unseen shapes."
   }
 ]
