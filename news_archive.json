@@ -1,5 +1,14 @@
 [
   {
+    "title": "AI brings object-level vision prosthetics closer to reality",
+    "original_title": "AI brings object-level vision prosthetics closer to reality",
+    "link": "https://robohub.org/ai-brings-object-level-vision-prosthetics-closer-to-reality/",
+    "date": "2026-06-23 10:09",
+    "source": "Robohub",
+    "category": "humanoid",
+    "summary": "Image credit: By Jeff Dahl – Own work by uploader, Based on the public domain document: [1], CC BY-SA 3.0, Link By Stephanie Parker This research from the NeuroAI Lab of Martin Schrimpf, part of EPFL’s Schools of Computer and Communication Sciences and Life Sciences, uses AI models to predict exactly where to stimulate the […]"
+  },
+  {
     "title": "How to File a DBA Online: Requirements, Costs, and Registration Process",
     "original_title": "How to File a DBA Online: Requirements, Costs, and Registration Process",
     "link": "https://roboticsandautomationnews.com/2026/06/23/how-to-file-a-dba-online-requirements-costs-and-registration-process/102763/",
@@ -52,6 +61,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "\"Help Pay My Electricity Bill\"... 'Robot Beggar' Kneeling and Begging on the Streets in China Draws Attention  아시아경제"
+  },
+  {
+    "title": "Chinese company launches emotional companion robot amid humanoid robotics boom - Dao Insights",
+    "original_title": "Chinese company launches emotional companion robot amid humanoid robotics boom - Dao Insights",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPME04Y2VkVkpvWkh0c00zYmF0T0djYlZIcFdic09aR3ctR1FBRjVqblZwQTNycnEyUG8zaWZRdkpxOEdvbGxCYTFuT3lSTnJIUU1EREFNOTFVTGp5aXZLeXRPTUNqNjFaNThvcXo0VmpNVVJwUG1fejRqblBEa0hxS0xVZXF0b1E?oc=5",
+    "date": "2026-06-23 05:59",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Chinese company launches emotional companion robot amid humanoid robotics boom  Dao Insights"
   },
   {
     "title": "After workers, beggars replaced by robots: Viral video from China makes netizens question if begging will - The Economic Times",
@@ -504,6 +522,78 @@
     "summary": "arXiv:2606.22169v1 Announce Type: new \nAbstract: This paper presents a full nonlinear constrained dynamic model of MonoRollBot, a novel 3-DoF spherical rolling robot driven by a single motor, a lead-screw transmission, and a spring-coupled internal moving mass, together with motion analysis of its behavior. To the best of our knowledge, this is one of the first full nonlinear nonholonomic models reported for a mono-actuated, super-underactuated spherical rolling robot of this kind. Because rolling without slipping is nonholonomic, the dynamics are derived using the Lagrange--d'Alembert formulation, with the lead-screw relation imposed as a holonomic constraint and the rolling condition imposed in Pfaffian form. The formulation retains the complete generalized coordinates of shell translation, shell attitude, screw travel, nut rotation, and radial mass motion. Simulations and representative motion studies show qualitative agreement with prototype behavior and reveal how gravity, compliance, and inertia jointly shape the locomotion and motion capabilities of this strongly underactuated robot. The resulting model also provides a mechanically consistent basis for future state estimation and hybrid controller design for this nonholonomic mono-actuated rolling robot."
   },
   {
+    "title": "OpenHLM: An Empirical Recipe for Whole-Body Humanoid Loco-Manipulation",
+    "original_title": "OpenHLM: An Empirical Recipe for Whole-Body Humanoid Loco-Manipulation",
+    "link": "https://arxiv.org/abs/2606.22174",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22174v1 Announce Type: new \nAbstract: Whole-body humanoid loco-manipulation requires coordinating the robot's entire kinematic chain. However, most existing systems typically decouple the upper and lower bodies into separate controllers, limiting such coordination and yielding behaviors similar to those of a wheeled dual-arm platform. In this paper, we ask what it takes to build a whole-body native vision-language-action (VLA) model that maps language and pixels directly to all of the humanoid's degrees of freedom. We conduct a systematic empirical study organized as a roadmap of one-variable-at-a-time experiments across three phases: whole-body teleoperation, VLA model design, and heterogeneous co-training. Our study yields several intriguing findings: a joint-based whole-body teleoperation interface outperforms alternatives that only partially expose the humanoid's degrees of freedom; a VLA pretrained on static and wheeled dual-arm platforms transfers surprisingly well to a humanoid's full action space; and co-training with HuMI, the humanoid analog of UMI, extends the policy to new objects and instructions without additional whole-body teleoperation on those targets. Following this roadmap yields OpenHLM, an open-source recipe for whole-body humanoid loco-manipulation. In a challenging long-horizon task that spans a wide vertical range of the humanoid, OpenHLM outperforms two state-of-the-art humanoid VLA baselines (GR00T N1.6 and $\\Psi_0$) using less than half the total demonstration time. Our code, training data, and model checkpoints are available at [https://openhlm-project.github.io/]."
+  },
+  {
+    "title": "Geometric Reconstruction of Extrinsic Contact Trajectories using Tactile Sensing and Proprioception for Tool Manipulation",
+    "original_title": "Geometric Reconstruction of Extrinsic Contact Trajectories using Tactile Sensing and Proprioception for Tool Manipulation",
+    "link": "https://arxiv.org/abs/2606.22251",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22251v1 Announce Type: new \nAbstract: Tactile sensing enables robots to perceive rich contact information at the grasp, supporting tasks such as object recognition, in-hand pose estimation, and slip detection. However, in many tool-mediated manipulation tasks, the interaction that determines task success occurs at the tool tip, away from the tactile sensor, making direct sensing of tool-environment contact difficult, particularly when the contact moves during interaction. In this work, we reconstruct the trajectory of extrinsic tool-tip contact using tactile sensing and robot proprioception. We formulate tool-tip trajectory reconstruction as a geometric inference problem under a single-point contact assumption. Our method first estimates the global tool-tip contact location from a calibration segment designed to approximate fixed-point behavior, and then reconstructs the full trajectory by composing relative tool motion estimated from tactile marker observations under continuous contact. Across n=51 trials with multiple trajectories, tools, wrist poses, and grasp configurations, the proposed pipeline achieves a trajectory RMSE of 8.59 +/- 2.41 mm in the world frame and a shape RMSE of 5.96 +/- 1.16 mm, while operating online at 14.00 +/- 4.11 Hz. Overall, the results show that extrinsic tool-tip trajectory geometry can be recovered consistently from grasp-level tactile sensing, with trajectory shape remaining stable across variations in tools, wrist poses, and grasp configurations."
+  },
+  {
+    "title": "Any-Body Guard: Universal Safeguarding for Manipulation Policies via Action Masking",
+    "original_title": "Any-Body Guard: Universal Safeguarding for Manipulation Policies via Action Masking",
+    "link": "https://arxiv.org/abs/2606.22278",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22278v1 Announce Type: new \nAbstract: Ensuring safety of learning-enabled robotic manipulation across diverse embodiments and tasks still requires significant manual engineering. Existing approaches typically rely on heuristically designed fallback controllers or complex forward invariance assessments. These methods are often too conservative for task success, too computationally expensive for real-time execution, too heuristic to provide useful safety guarantees, or too engineering-heavy to transfer between setups. In this paper, we propose a universal safeguarding approach, X-Safe, which reasons directly in the robot's configuration space to provide formal probabilistic guarantees for collision avoidance. By operating in the configuration space, our method transfers across embodiments while relying solely on an object-based, quasi-static scene representation and a forward kinematics model of the robotic manipulator. Thus, X-Safe provides useful formal safety guarantees without requiring additional data, or engineering effort for different embodiments or scenes. We demonstrate X-Safe for diverse embodiments and policies, both in simulation and on hardware. We observe less degradation in task performance compared to state-of-the-art safeguarding, no collisions on hardware experiments, and empirically corroborate our formal guarantees."
+  },
+  {
+    "title": "FlowDPG: Deterministic Policy Gradient on Flow Matching Policies for Real-World Manipulation",
+    "original_title": "FlowDPG: Deterministic Policy Gradient on Flow Matching Policies for Real-World Manipulation",
+    "link": "https://arxiv.org/abs/2606.22303",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22303v1 Announce Type: new \nAbstract: Real-world reinforcement learning for robotic manipulation remains challenging, and this difficulty is amplified for flow matching policies: applying policy gradient methods to these policies is fundamentally limited by the need to backpropagate through time(BPTT) along the multi-step ODE that maps noise to actions, which is computationally prohibitive and numerically fragile. We propose FlowDPG, a DDPG-style method specifically designed for flow matching policies that distills the critic gradient into the velocity field at training time, bypassing BPTT entirely. Intuitively, FlowDPG combines two complementary vectors: the demonstration-driven velocity that keeps the action feasible, and the critic-driven correction that steers it toward higher value. Our contributions are threefold: (1) a BPTT-free distillation framework that enables stable DDPG-style policy improvement on flow matching policies, (2) a formal connection between the FlowDPG update direction and vanilla Deterministic Policy Gradient via three explicit approximations, and (3) real-world validation on a long-horizon, multi-stage, dual-arm AirPods assembly task, where FlowDPG attains a 92% end-to-end success rate, substantially outperforming recent RL methods spanning value-conditioning, auxiliary-module adaptation, and adjoint-based critic-gradient approaches. Videos and more results are provided on the project page https://flowdpg.github.io."
+  },
+  {
+    "title": "EmbodiedUS-FS: Fast Slow Intelligence for Ultrasound Robotics",
+    "original_title": "EmbodiedUS-FS: Fast Slow Intelligence for Ultrasound Robotics",
+    "link": "https://arxiv.org/abs/2606.22319",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22319v1 Announce Type: new \nAbstract: Robotic ultrasound scanning in real clinical environments requires both high-level clinical workflow reasoning and low-level closed-loop execution. Physicians natural-language instructions often contain implicit anatomical targets, procedural logic, image-quality requirements, and safety constraints, while execution is affected by patient motion, contact variations, and target drift. We propose a fast and slow hierarchical embodied ultrasound system for safe and interpretable robotic ultrasound assistance. The Slow Brain performs intent parsing and stage-wise task planning with knowledge augmentation from an API and handbook corpus, and generates executable plans through task-graph construction and structured plan verification. The Fast Brain fuses multimodal feedback, including ultrasound images, robot pose and force states, and patient-motion information, to refine local actions and perform image-quality-guided recovery behaviors. The system further integrates a Safety Shield and a hierarchical escalation policy to constrain risky actions and trigger replanning or human confirmation under persistent failures or safety-bound violations. Experiments on planning evaluation, closed-loop execution under dynamic perturbations, and safety-mechanism validation demonstrate that the proposed hierarchical design improves task success rates while reducing safety violations."
+  },
+  {
+    "title": "Tactile Genesis: Exploring Tactile Sensors at Scale for Learning Dexterous Tasks",
+    "original_title": "Tactile Genesis: Exploring Tactile Sensors at Scale for Learning Dexterous Tasks",
+    "link": "https://arxiv.org/abs/2606.22332",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22332v1 Announce Type: new \nAbstract: Tactile sensing is critical for contact-rich dexterous manipulation, yet it remains unclear which tactile abstractions a policy needs and when richer tactile fields justify their hardware cost. This is hard to study empirically: each sensor effectively defines a new robot, and no lab can replicate the same learning experiment across all of them. We present Tactile Genesis, a GPU-parallel tactile sensor simulation platform that exposes binary contact, contact depth, per-taxel kinematic force/torque, elastomer marker displacement, geometry-aware proximity, contact audio, and a voxelized temperature field (the first of its kind in robot learning physics simulation platforms) under a common interface, with configurable placement, resolution, and a realistic noise model (drift, hysteresis, dead taxels, crosstalk). It scales past 20,000 parallel environments and 1,000 taxels on a single GPU, improving throughput by 3 to 20 times over previous tactile simulators. We train teacher-student policies on three dexterous tasks, ablating sensor type, placement, resolution, and noise, and verify transfer to the real XHand1. Proprioception alone is insufficient on every task. Sensor placement dominates sensor type: fingertip-only coverage trails whole-hand coverage by a wide margin, while adding the palm and proximal phalanges closes most of the gap to the privileged teacher. Resolution matters far less than coverage: placing 200 taxels across the whole hand suffices across tasks. We find that force/torque per taxel is consistently the most useful sensor type. These results give concrete guidance for both future tactile hardware design for improving robot hands and policy-side observation choice in dexterous manipulation. https://neuroagents-lab.github.io/2026-tactile-genesis/"
+  },
+  {
+    "title": "Do Rigid-Body Simulators Dream of Soft Robots? Learning Contact-Rich Manipulation for Tendon-Driven Continuum Robots",
+    "original_title": "Do Rigid-Body Simulators Dream of Soft Robots? Learning Contact-Rich Manipulation for Tendon-Driven Continuum Robots",
+    "link": "https://arxiv.org/abs/2606.22397",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22397v1 Announce Type: new \nAbstract: Learning contact-rich, whole-body manipulation for soft continuum robots is held back by the lack of simulation infrastructure that has accelerated rigid-robot manipulation. Existing soft robot simulators are physically grounded but lack the contact handling, actuation support, or learning integration needed for contact-rich manipulation; rigid-body approximations offer these capabilities but sacrifice physical grounding. We bridge this gap for tendon-driven continuum robots (TDCRs) by deriving a continuum-mechanics-informed discretization that places the soft robot natively inside MuJoCo, unifying tendon forces, body contact, and dynamics in a single physics pipeline. We validate the simulator against a Cosserat rod reference (static and dynamic) and real TDCR hardware. We then train state-based imitation learning policies via teleoperation in simulation and deploy them zero-shot to a physical 3-segment TDCR on a 7-DoF Franka arm across two contact-rich manipulation tasks. To our knowledge, this is the first demonstration of sim-to-real transfer for contact-rich manipulation with continuum robots."
+  },
+  {
+    "title": "SPiralRoll: A Novel Adjustable-Stiffness Underactuated 3-DoF Joint with Torsion Springs for Rolling Robots",
+    "original_title": "SPiralRoll: A Novel Adjustable-Stiffness Underactuated 3-DoF Joint with Torsion Springs for Rolling Robots",
+    "link": "https://arxiv.org/abs/2606.22443",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.22443v1 Announce Type: new \nAbstract: Compliant mechanisms are important in robotics because they can improve adaptability, safety, and energy efficiency while reducing hardware complexity. This paper presents SPiralRoll, a novel torsion-spring-based underactuated compliant mechanism for rolling robots and compliant robotic actuation. The mechanism uses arc-distributed elastic members and two motor inputs to realize three physically observable output motions: rotational motion, radial expansion/contraction, and axial spin induced by nonlinear compliant deformation. Two configurations, namely full-arc and single-arc designs, are developed and experimentally evaluated. Beyond benchtop validation, the mechanism is integrated into a spherical rolling robot, where proof-of-concept experiments demonstrate forward rolling and turning. The results show that the full-arc design provides better structural support and smoother deformation, whereas the single-arc design yields larger deformation and stronger inertial excitation, making it more suitable for pendulum-driven rolling locomotion. Overall, SPiralRoll provides a low-cost, compact, and fully 3D-printable solution for underactuated compliant rolling robots and adaptive robotic joints."
+  },
+  {
     "title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint",
     "original_title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint",
     "link": "https://www.therobotreport.com/fort-and-nvidia-launch-ai-driven-outside-in-safety-blueprint/",
@@ -741,6 +831,15 @@
     "title": "“Don’t work, just talk to me”…A ‘friend robot’ that looks just like a human appears - 경향신문",
     "original_title": "“Don’t work, just talk to me”…A ‘friend robot’ that looks just like a human appears - 경향신문",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1qb1IwLVRBSGpTQkJTOTlaRHRXWWlFTVdmbmtzRmNzYTNkYXF3WTJVUy1mOHFhaFBDcjA0dGQ1VnBEd1hoZERZNGdyTnZ1enVLbEIwSUVGNk9nTDA0RWc?oc=5",
+    "date": "2026-06-21 05:20",
+    "source": "Google News (China Robotics - KR)",
+    "category": "humanoid",
+    "summary": "“Don’t work, just talk to me”…A ‘friend robot’ that looks just like a human appears  경향신문"
+  },
+  {
+    "title": "“Don’t work, just talk to me”…A ‘friend robot’ that looks just like a human appears - 경향신문",
+    "original_title": "“Don’t work, just talk to me”…A ‘friend robot’ that looks just like a human appears - 경향신문",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUTFvcVpzMHQ3YlRZNm1OWFBUOHVnRjd1M1V0YzQ3X29BY3hVb3FDRmlVQTllaThVT2I3UVNFcW9XZzNaUThjMC1qVm95eXZtZUZ6eFNydFNlamVZOUFmaE9FZk9IeDcxcXBuSV9aX01zTGo0QVhIYTBLUGFobFVxOWgtUkZSVWdEWHQxU0x6X3F2MU90bE5PTDYzSkpxQnBVRHZ3M1BjTW1ZMmNMZHdiOA?oc=5",
     "date": "2026-06-21 05:20",
     "source": "Google News (China Robotics - KR)",
     "category": "humanoid",
@@ -17899,104 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.11048v1 Announce Type: new \nAbstract: Existing imitation learning methods enable robots to interact autonomously with the physical environment. However, contact-rich manipulation tasks remain a significant challenge due to complex contact dynamics that demand high-precision force feedback and control. Although recent efforts have attempted to integrate force/torque sensing into policies, how to build a simple yet effective framework that achieves robust generalization under multimodal observations remains an open question. In this paper, we propose ForceFlow, a force-aware reactive framework built upon flow matching. For contact-stage policy design, we investigate force signal fusion mechanisms and adopt an asymmetric multimodal fusion architecture that treats force as a global regulatory signal, combined with a joint prediction paradigm that enhances the policy's understanding of instantaneous force and historical information, thereby achieving deep coupling between force and motion. For task-level hierarchical decomposition, we divide manipulation into a vision-dominant approach stage (VLM-based pointing for target localization) and a touch-dominant interaction stage (force-driven contact execution), with a Vision-to-Force (V2F) handover mechanism that explicitly decouples spatial generalization from contact regulation. Experimental results across six real-world contact-rich tasks demonstrate that ForceFlow achieves a 37% success rate improvement over the strong baseline ForceVLA while maintaining significantly lower cost. Moreover, ForceFlow exhibits accurate force signal prediction and demonstrates superior performance in contact force self-regulation and zero-shot out-of-distribution (OOD) generalization."
-  },
-  {
-    "title": "SEVO: Semantic-Enhanced Virtual Observation for Robust VLA Manipulation via Active Illumination and Data-Centric Collection",
-    "original_title": "SEVO: Semantic-Enhanced Virtual Observation for Robust VLA Manipulation via Active Illumination and Data-Centric Collection",
-    "link": "https://arxiv.org/abs/2605.11114",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11114v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) and imitation-learning policies trained via community toolchains on low-cost hardware frequently fail when deployed outside the training environment. Existing evaluations, including the original ACT and SmolVLA benchmarks, demonstrate high success rates under controlled, fixed backgrounds, yet community practitioners report near-zero transfer to new environments. We present SEVO (Semantic-Enhanced Virtual Observation), a data-centric approach that improves cross-environment manipulation robustness without modifying the policy architecture. SEVO transforms the raw RGB camera stream through three mechanisms: (1) body-fixed cameras whose combined fields of view cover the full manipulation workspace, (2) active red-spectrum illumination that physically normalizes object appearance, and (3) real-time YOLO segmentation overlay that provides a background-invariant semantic cue. Critically, we show that a diversified data collection protocol (systematically varying lighting, backgrounds, and distractors during teleoperation) is the single most important factor for generalization. We target transparent water bottles, objects that visually blend with their surroundings, and select a simple pick-and-place task to enable hundreds of controlled real-robot trials across two mobile platforms. The full pipeline achieves 95% grasp success with ACT and 83% with SmolVLA in the training environment, transferring to novel environments at 85% and 75%. Without SEVO, the same policies achieve only 75%/70% in training and collapse to 30-35% in novel environments. Our results demonstrate that principled observation design and environmental diversity during data collection, not model scaling, enable low-cost robots to operate reliably in everyday household environments."
-  },
-  {
-    "title": "Forecast-aware Gaussian Splatting for Predictive 3D Representation in Language-Guided Pick-and-Place Manipulation",
-    "original_title": "Forecast-aware Gaussian Splatting for Predictive 3D Representation in Language-Guided Pick-and-Place Manipulation",
-    "link": "https://arxiv.org/abs/2605.11144",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11144v1 Announce Type: new \nAbstract: We introduce Forecast-aware Gaussian Splatting (Forecast-GS), a predictive 3D representation framework for language-conditioned robotic manipulation. While recent manipulation systems have made progress by grounding language instructions into robot affordances, value maps, or relational keypoint constraints, they usually reason over the current scene and do not explicitly model the task-completed state. This limitation is critical when success depends on satisfying spatial and semantic goals under partial observations, where the robot must evaluate whether a candidate action leads to a feasible task-consistent outcome.\n  We validate Forecast-GS on real-world pick-and-place manipulation tasks, including Cutter-to-Box, Apple-to-Bowl, and Sponge-to-Tray. For each task, we conduct 25 real-world trials under varied initial object configurations using the same robot platform and sensing setup. Forecast-GS with automatic candidate selection achieves success rates of 21/25, 23/25, and 16/25 on the three tasks, respectively, outperforming the ReKep baseline, which achieves 15/25, 19/25, and 10/25. A diagnostic human-assisted setting further improves success rates to 23/25, 24/25, and 19/25, suggesting that candidate generation is effective while automatic ranking remains imperfect. These results suggest that explicitly forecasting task-completed 3D states enables more reliable action evaluation, while the gap between automatic and human-assisted selection indicates that robust final-state ranking remains an important challenge for fully autonomous manipulation. Overall, Forecast-GS provides an interpretable bridge between language understanding, 3D perception, and robotic manipulation planning."
-  },
-  {
-    "title": "Offline Policy Evaluation for Manipulation Policies via Discounted Liveness Formulation",
-    "original_title": "Offline Policy Evaluation for Manipulation Policies via Discounted Liveness Formulation",
-    "link": "https://arxiv.org/abs/2605.11479",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11479v1 Announce Type: new \nAbstract: Policy evaluation is a fundamental component of the development and deployment pipeline for robotic policies. In modern manipulation systems, this problem is particularly challenging: rewards are often sparse, task progression of evaluation rollouts are often non-monotonic as the policies exhibit recovery behaviors, and evaluation rollouts are necessarily of finite length. This finite length introduces truncation bias, breaking the infinite-horizon assumptions underlying standard methods relying on Bellman equations/principle of optimality. In this work, we propose a framework for offline policy evaluation from sparse rewards based on a liveness-based Bellman operator. Our formulation interprets policy evaluation as a task-completion problem and yields a conservative fixed-point value function that is robust to finite-horizon truncation. We analyze the theoretical properties of the proposed operator, including contraction guarantees, and show how it encodes task progression while mitigating truncation bias. We evaluate our method on two simulated manipulation tasks using both a Vision-Language-Action model and a diffusion policy, and a cloth folding task using human demonstrations. Empirical results demonstrate that our approach more accurately reflects task progress and substantially reduces truncation bias, outperforming classical baselines such as TD(0) and Monte Carlo policy evaluation."
-  },
-  {
-    "title": "Coordinated Diffusion: Generating Multi-Agent Behavior Without Multi-Agent Demonstrations",
-    "original_title": "Coordinated Diffusion: Generating Multi-Agent Behavior Without Multi-Agent Demonstrations",
-    "link": "https://arxiv.org/abs/2605.11485",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11485v1 Announce Type: new \nAbstract: Imitation learning powered by generative models has proven effective for modeling complex single-agent behaviors. However, teaching multi-agent systems, like multiple arms or vehicles, to coordinate through imitation learning is hindered by a fundamental data bottleneck: as the joint state-action space grows exponentially with the number of agents, collecting a sufficient amount of coordinated multi-agent demonstrations becomes extremely costly. In this work, we ask: how can we leverage single-agent demonstration data to learn multi-agent policies? We present Coordinated Diffusion (CoDi), a framework that couples independently trained single-agent diffusion policies through a user-defined multi-agent cost function, without requiring any coordinated demonstrations. We derive a new diffusion-based sampling scheme wherein the diffusion score function decomposes into independent, single-agent pre-trained base policies plus a cost-driven guidance term that coordinates these base policies into cohesive multi-agent behavior. We show that this guidance term can be estimated in a gradient-free manner, making CoDi applicable to black-box, non-differentiable cost functions without additional training. Theoretically and empirically, we analyze the conditions under which this composition can faithfully approximate a target multi-agent behavior. We find a complementary role for demonstration data versus the cost function: single-agent demonstrations must cover the support of the desired multi-agent behavior, while the cost function must promote desired behavior from this product of single-agent policies. Our results in simulation and hardware experiments of a two-arm manipulation task show that CoDi discovers robust coordinated behavior from single-agent data, is more data-efficient than multi-agent baselines, and highlights the importance of joint guidance, base policy support, and cost design."
-  },
-  {
-    "title": "RIO: Flexible Real-Time Robot I/O for Cross-Embodiment Robot Learning",
-    "original_title": "RIO: Flexible Real-Time Robot I/O for Cross-Embodiment Robot Learning",
-    "link": "https://arxiv.org/abs/2605.11564",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11564v1 Announce Type: new \nAbstract: Despite recent efforts to collect multi-task, multi-embodiment datasets, to design recipes for training Vision-Language-Action models (VLAs), and to showcase these models on different robot platforms, generalist cross-embodiment robot capabilities remains a largely elusive ideal. Progress is limited by fragmented infrastructure: most robot code is highly specific to the exact setup the user decided on, which adds major overhead when attempting to reuse, recycle, or share artifacts between users. We present RIO (Robot I/O), an open source Python framework that provides flexible, lightweight components for robot control, teleoperation, data formatting, sensor configuration, and policy deployment across diverse hardware platforms and morphologies. RIO provides abstractions that enable users to make any choice and to switch between them, with minimal reconfiguration effort. We validate RIO on VLA deployment workflows across three morphologies (single-arm, bimanual, humanoid) and four hardware platforms with varying grippers and cameras. Using teleoperated data collected with RIO, we fine-tune state-of-the-art VLAs including $\\pi_{0.5}$ and GR00T on household tasks such as pick-and-place, folding, and bowl scrubbing. By open sourcing all our efforts, we hope the community can accelerate their pace of robot learning on real-world robot hardware. Additional details at: https://robot-i-o.github.io"
-  },
-  {
-    "title": "Nautilus: From One Prompt to Plug-and-Play Robot Learning",
-    "original_title": "Nautilus: From One Prompt to Plug-and-Play Robot Learning",
-    "link": "https://arxiv.org/abs/2605.11665",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11665v1 Announce Type: new \nAbstract: Robot learning research is fragmented across policy families, benchmark suites, and real robots; each implementation is entangled with the others in a complex combination matrix, making it an engineering nightmare to port any single element. General-purpose coding agents may occasionally bridge specific setups, but cannot close this gap at scale because they lack the procedural priors and validation practices that characterize robotics research workflows. We propose NAUTILUS, an open-source harness that turns a single user prompt -- for example, \"Evaluate policy A with benchmark B\" -- into ready-to-use reproduction, evaluation, fine-tuning, and deployment workflows. NAUTILUS provides: plug-and-play agent skill sets with distilled priors from robotics research; typed contracts among policies, simulators/benchmarks, and real-world robots; unified interfaces and execution environments; and a trustworthy agentic coding workflow with explicit, automated validation, and testing at each milestone. NAUTILUS can not only automatically generate the required adapters and containers for existing implementations, but also wrap and onboard new or user-provided policies, simulators/benchmarks, and robots, all connected via a uniform interface. This expands cross-validation coverage without hand-written glue code. Like a nautilus shell that grows by adding chambers, NAUTILUS scales by extending its execution in chambered units, making it a research harness for scalability rather than a hand-curated framework, and aiming to reduce the engineering burden of cross-family reproduction and evaluation in the ever-growing robot learning ecosystem."
-  },
-  {
-    "title": "Rainbow Deep Q-Learning with Kinematics-Aware Design for Cooperative Delta and 3-RRS Parallel Robot Insertion",
-    "original_title": "Rainbow Deep Q-Learning with Kinematics-Aware Design for Cooperative Delta and 3-RRS Parallel Robot Insertion",
-    "link": "https://arxiv.org/abs/2605.11697",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11697v1 Announce Type: new \nAbstract: This paper presents a kinematics-aware deep reinforcement learning framework based on Rainbow Deep Q-Networks (DQN) for cooperative peg-in-hole manipulation by a Delta parallel robot and a 3-RRS (Revolute--Revolute--Spherical) parallel manipulator. A key contribution is the integration of a geometric design-optimization stage that precedes learning: the 3-RRS geometry is tuned to maximize the singularity-free workspace and improve conditioning, which in turn enlarges the safe region in which the reinforcement learning policy can explore. Together the two manipulators expose a 6~degree-of-freedom (DoF) controllable subspace (three Delta translations, two 3-RRS rotations, and one 3-RRS vertical translation); the peg-in-hole task is invariant to rotation about the peg axis, so the task-relevant manifold is five dimensional. The cooperative insertion problem is cast as a Markov Decision Process with a 12-dimensional state vector and a discrete action set containing $6 \\times 2 = 12$ incremental commands (one positive and one negative per controlled DoF). A shaped reward combines dense proximity guidance, penalties for kinematic and workspace violations, and sparse bonuses for successful insertions. The Rainbow DQN -- integrating double Q-learning, dueling architecture, prioritized replay, multi-step returns, noisy linear layers for exploration, and a distributional value head -- is trained with a two-stage curriculum. The co-designed framework is validated in a high-fidelity kinematic simulator, where it achieves stable policy convergence, reliable insertions, and reduced constraint violations compared against a vanilla DQN agent and a classical sampling-based planner."
-  },
-  {
-    "title": "Introducing Environmental Constraints to Grasping Strategies for Paper-Like Flexible Materials Using a Soft Gripper",
-    "original_title": "Introducing Environmental Constraints to Grasping Strategies for Paper-Like Flexible Materials Using a Soft Gripper",
-    "link": "https://arxiv.org/abs/2605.11714",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11714v1 Announce Type: new \nAbstract: Robotic manipulation of flexible objects is widely required in both industrial and service applications. Among such objects, paper-like materials exhibit distinct mechanical characteristics compared to cloth, being more sensitive to compressive stress, where minor variations in physical properties can significantly affect grasping. This study systematically investigates grasping strategies for paper-like materials using a universal soft gripper by exploiting environmental constraints. Based on manipulation primitives employed in existing grasping strategies, we proposed systematic grasping strategies for flexible materials by exploiting environmental constraints and analyzed their mechanical and kinematic models. To investigate the influence of materials and working conditions on grasping, an evaluation system for measuring grasping force and success rate was defined and experimentally evaluated. Finally, we summarized the specific workspaces and characteristics of different strategies that can satisfy various task requirements and lead to potential applications in household service robots for grasping planar flexible objects."
-  },
-  {
-    "title": "DreamAvoid: Critical-Phase Test-Time Dreaming to Avoid Failures in VLA Policies",
-    "original_title": "DreamAvoid: Critical-Phase Test-Time Dreaming to Avoid Failures in VLA Policies",
-    "link": "https://arxiv.org/abs/2605.11750",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11750v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models are often brittle in fine-grained manipulation, where minor action errors during the critical phases can rapidly escalate into irrecoverable failures. Since existing VLA models rely predominantly on successful demonstrations for training, they lack an explicit awareness of failure during these critical phases. To address this, we propose DreamAvoid, a critical-phase test-time dreaming framework that enables VLA models to anticipate and avoid failures. We also introduce an autonomous boundary learning paradigm to refine the system's understanding of the subtle boundary between success and failure. Specifically, we (1) utilize a Dream Trigger to determine whether the execution has entered a critical phase, (2) sample multiple candidate action chunks from the VLA via an Action Proposer, and (3) employ a Dream Evaluator, jointly trained on mixed data (success, failure, and boundary cases), to \"dream\" the short-horizon futures corresponding to the candidate actions, evaluate their values, and select the optimal action. We conduct extensive evaluations on real-world manipulation tasks and simulation benchmarks. The results demonstrate that DreamAvoid can effectively avoid failures, thereby improving the overall task success rate. Our code is available at https://github.com/XianzheFan/DreamAvoid."
-  },
-  {
-    "title": "See What Matters: Differentiable Grid Sample Pruning for Generalizable Vision-Language-Action Model",
-    "original_title": "See What Matters: Differentiable Grid Sample Pruning for Generalizable Vision-Language-Action Model",
-    "link": "https://arxiv.org/abs/2605.11817",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11817v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have shown remarkable promise in robotics manipulation, yet their high computational cost hinders real-time deployment. Existing token pruning methods suffer from a fundamental trade-off: aggressive compression using pruning inevitably discards critical geometric details like contact points, leading to severe performance degradation. This forces a compromise, limiting the achievable compression rate and thus the potential speedup. We argue that breaking this trade-off requires rethinking compression as a geometry-aware, continuous token resampling in the vision encoder. To this end, we propose the Differentiable Grid Sampler (GridS), a plug-and-play module that performs task-aware, continuous resampling of visual tokens in VLA. By adaptively predicting a minimal set of salient coordinates and extracting features via differentiable interpolation, GridS preserves essential spatial information while achieving drastic compression (with fewer than 10% original visual tokens). Experiments on both LIBERO benchmark and a real robotic platform demonstrate that validating the lowest feasible visual token count reported to date, GridS achieves a 76% reduction in FLOPs with no degradation in the success rate. The code is available at https://github.com/Fediory/Grid-Sampler."
-  },
-  {
-    "title": "Mapping Embodied Affective Touch Strategies on a Humanoid Robot",
-    "original_title": "Mapping Embodied Affective Touch Strategies on a Humanoid Robot",
-    "link": "https://arxiv.org/abs/2605.11825",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.11825v1 Announce Type: new \nAbstract: Affective touch in human-robot interaction is shaped not only by emotional intent, but also by robot embodiment, including touch location, physical constraints, and perceived agency or social role. Existing HRI studies typically focus on one or two isolated body parts, limiting understanding of how affective touch generalises across the full humanoid body. We present a study with 32 participants interacting with the iCub robot, which is equipped with full-body distributed tactile sensors. Participants expressed eight emotions under three conditions: free touch, arm-only touch, and torso-only touch. Results show that body region and spatial constraints jointly shaped both touch location and dynamics. In free touch, participants preferred socially accessible upper-body regions, while less frequently touched areas showed stronger emotion-specific selectivity. Emotion-related variation was more evident in motion features for arm-only touch and pressure features for torso-only touch. Touch strategies also did not transfer directly between free and constrained conditions, even within the same coarse body region. Participants reported increased closeness to the robot after interaction, with around 30 percent reporting a change in perceived social relationship. Together, these findings show that affective touch expression is strongly body-region dependent and shaped by embodiment constraints."
   }
 ]
