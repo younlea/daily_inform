@@ -162,6 +162,78 @@
     "summary": "arXiv:2606.21148v1 Announce Type: new \nAbstract: Functional robotic grasping requires a policy that generalizes across diverse object geometries and poses while maintaining task-specific contact precision. We study this challenge through mug-handle grasping, where thin handles, instance variation, and upright or inverted placements make both perception and control sensitive to object configuration. Grasp pose detection methods operate open-loop and are sensitive to estimation errors on thin handle structures. Learned visuomotor policies must implicitly learn to handle the coupled variation in visual appearance and action direction induced by different object placements, limiting generalization. We propose AnyMug, a canonicalized visuomotor reinforcement learning framework for functional grasping that trains a single closed-loop policy entirely in simulation and deploys it zero-shot on a real robot. AnyMug introduces observation-action canonicalization, which transforms both the depth observation and the predicted end-effector action into a shared object-centric frame. The policy therefore sees a consistent mug-centered view and emits actions in a canonical direction regardless of mug placement, allowing the same grasping behavior to be reused across configurations. A handle-aware reward further encourages precise approach, gripper alignment, and opposing-finger placement, while a pose curriculum and domain randomization improve training stability and sim-to-real transfer. In simulation, AnyMug achieves over 93% success rate on both unseen upright and inverted mugs and transfers zero-shot to a real Franka Panda, reaching 80% success rate on 5 held-out physical mugs across both pose categories."
   },
   {
+    "title": "Remember what you did?: Learning Behavioral Memories for Partially Observable Object Manipulation",
+    "original_title": "Remember what you did?: Learning Behavioral Memories for Partially Observable Object Manipulation",
+    "link": "https://arxiv.org/abs/2606.21188",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21188v1 Announce Type: new \nAbstract: Long horizon, contact-rich manipulation is inherently partially observable. This is as a single visual observation rarely captures a robot's full action context, including prior attempts, interactions, or progress. Consequently, standard visuomotor policies or vision-language-action models are prone to struggle in such tasks due to a lack of memory. To address this, we introduce Compressed Action Memory Policy (CAMP) based on the insight that a robot's own action history serves as a highly informative, self-supervised signal, enabling the policy to learn a robust, compact history representation. In our approach, we train a memory module to maintain a compressed representation of past actions, forcing it to encode a latent behavioral memory of all the robot's past interactions that can then be used to better contextualize future actions. This allows our approach to implicitly track generalized task progress and learn from failed attempts without any additional supervision, or external oversight. We evaluate CAMP across four real-robot setups and two novel simulation benchmarks: Memory-T-Bench and Memory-Manip-Bench. By demonstrating substantial gains over state-of-the-art baselines, CAMP is, to our knowledge, the first policy to demonstrate substantial success on contact-rich partially observable manipulation tasks purely through learned memory."
+  },
+  {
+    "title": "A Human-Inspired Thumb-Index Robotic Hand with Strain Gauges Embedded in Soft Joints",
+    "original_title": "A Human-Inspired Thumb-Index Robotic Hand with Strain Gauges Embedded in Soft Joints",
+    "link": "https://arxiv.org/abs/2606.21245",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21245v1 Announce Type: new \nAbstract: Human hand grasp adaptation depends mainly on the synergy between physical structure and biological feedback. Inspired by this biomechanical principle, the Safe Thumb-Index Robotic (STIR) Hand was developed as a minimal, lightweight, and low-cost two-digit prototype featuring an asymmetric thumb-index configuration. By pairing an underactuated, tendon-driven mechanical design with flexible strain gauges embedded into silicone-encapsulated soft joints, the system achieves passive grasp adaptation while establishing both internal proprioception and external perception. Unsupervised analysis was carried out on a dataset of the STIR hand grasping 20 different objects, along with an object classification task and an ablation study to highlight the contribution of the soft joint sensors. The object classification task discriminated object size, shape, and material stiffness with a high classification accuracy. In contrast to traditional industrial grippers and robotic hands, the STIR Hand demonstrates that sensorized compliant joints significantly improve overall sensitivity and ensure safe grasping, while remaining independent of additional fingertip tactile elements or external vision systems. Finally, a comparison to similar devices grasping identical objects validates the utility of the STIR Hand."
+  },
+  {
+    "title": "RogueRover: Autonomous Rogue Device Localization for Incident Response",
+    "original_title": "RogueRover: Autonomous Rogue Device Localization for Incident Response",
+    "link": "https://arxiv.org/abs/2606.21264",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21264v1 Announce Type: new \nAbstract: Physically localizing unauthorized wireless devices remains a critical bottleneck in cyber-physical security operations, where rogue access points can provide entry points for lateral movement and persistent compromise. While such devices can often be detected through network-side mechanisms, determining their physical location typically requires dense sensing infrastructure, site-specific RF fingerprinting, or manual inspection, limiting timely incident response. We investigate whether a single commodity robot can autonomously detect and localize rogue wireless devices under zero-configuration constraints, without RF fingerprinting, pre-installed sensors, or site calibration. We present RogueRover, an end-to-end system in which a quadruped robot autonomously patrols, collects spatially labeled RSSI measurements via a standard 802.11 interface, and estimates device locations offline. We evaluate the system across 11 patrol runs in a real indoor environment, with 6 rogue devices deployed under heterogeneous propagation conditions. Across 62 AP-patrol sessions, RogueRover achieves a median single-patrol localization error of 1.62 m without prior RF knowledge. Under multi-run aggregation, five of six devices are localized within 1 m. A blind trial validates the full pipeline, correctly identifying rogue devices among 73 observed BSSIDs and localizing them with errors of 0.34 m and 1.84 m. Across environments, simple weighted-centroid estimators perform comparably to, or better than, parametric path-loss models, indicating that measurement coverage from autonomous patrols is the primary determinant of localization accuracy under zero-prior constraints. Our results demonstrate that infrastructure-free, autonomous localization is feasible in practice, enabling rapid physical incident response in cyber-physical environments without additional sensing infrastructure."
+  },
+  {
+    "title": "NAC: Neural Action Codec for Vision-Language-Action Models",
+    "original_title": "NAC: Neural Action Codec for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.21372",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21372v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models rely on discrete action tokenizers to bridge continuous robot control and autoregressive sequence modeling, yet existing tokenizers often trade off between compression, latency, and downstream performance. We revisit this design through the lens of neural audio codecs-convolutional encoder-decoder architectures with residual vector quantization that serve as the standard front end for audio foundation models. Motivated by their success, we introduce the Neural Action Codec (NAC), which treats short robot action trajectories as multi-channel 1D signals and compresses them using a multi-scale RVQGAN architecture. We observe that audio-specific mel-spectrogram objectives are ill-suited for kinematic signals; however, by replacing them with simple time-domain and non-mel spectral reconstruction losses, audio-codec-style models can autoencode actions with high fidelity without substantial architectural changes. NAC provides a compact, ordered token space via offset codebooks, enabling standard autoregressive policies to operate over short, structured sequences. Meanwhile, a Vocos-style decoder with an ISTFT head and adversarial discriminators recovers smooth, detailed trajectories. Across LIBERO-10, RoboMimic, and a suite of real-world manipulation tasks, NAC achieves lower reconstruction error and higher success rates than binning, FAST, and prior VQ-based tokenizers at comparable or better compression rates. These results demonstrate that repurposed neural audio codecs offer a strong, practical backbone for learned action tokenization in modern VLAs."
+  },
+  {
+    "title": "Long-Distance Real-World Navigation of the Legged-Wheeled Robot Go2-W Using Deep Reinforcement Learning",
+    "original_title": "Long-Distance Real-World Navigation of the Legged-Wheeled Robot Go2-W Using Deep Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2606.21387",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.21387v1 Announce Type: new \nAbstract: Legged-wheeled robots have long been studied for their potential to combine the efficient flat-ground mobility of wheels with the rough-terrain capability of legs. However, examples of their application to long-range autonomous navigation in real environments remain limited. This paper reports our effort to build a deep reinforcement learning (DRL) based locomotion controller and an autonomous navigation system for the commercially available legged-wheeled robot Go2-W, and to apply them to long-range autonomous navigation in a real environment. For locomotion control, we extended a proprioception-only policy, which we had previously developed for quadruped robots, to the 16-DoF legged-wheeled robot. We also found that wheeled locomotion concentrates the load on the hip joints and causes heat concentration that hinders sustained travel, and obtained a policy that suppresses it by distributing the load. We evaluated the system at the Tsukuba Challenge 2025, demonstrating that it can autonomously traverse an approximately 2.8 km route including sidewalks, a park, and stairs without stopping due to overheating."
+  },
+  {
+    "title": "Robot Self-Improvement via Human-Video Dynamics Models",
+    "original_title": "Robot Self-Improvement via Human-Video Dynamics Models",
+    "link": "https://arxiv.org/abs/2606.21406",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21406v1 Announce Type: new \nAbstract: A central question in robot learning is how to acquire skills from the kinds of data that humans learn from: passive observation, embodied practice, and the experience of failure. Human videos provide the first of these in abundance, and prior work has shown they can initialize useful policies. Far less clear is whether they can support the second and third: whether priors extracted from human videos can ground a robot's own attempts well enough to evaluate them, correct them, and improve from them. In this work, we show that human videos can be used to learn embodiment-agnostic action, dynamics, and value representations that transfer across robot embodiments, providing the predictive foundation required for robots to autonomously improve from their own rollouts and failures. We introduce Dynamics-Guided Action Correction (DGAC), a training-free approach that leverages these adapted models to repair failed states: each failure becomes a query for which the learned models propose and rank corrective actions, turning failures into supervision for the next policy update. Across seven real-world manipulation tasks spanning both a mobile manipulator and a static manipulator arm, our approach improves success rates from 40% to 81% across multiple policy backbones, demonstrating cross-embodiment robot self-improvement from human-video priors. These results show that human priors and robot failures can be combined to enable scalable autonomous policy improvement. Project page: https://ethz-mrl.github.io/robot-self-improvement-website/."
+  },
+  {
+    "title": "Manipulider: A Multi-Engine Buoyancy-Controlled Robot for Thrusterless Underwater Gliding and Manipulation",
+    "original_title": "Manipulider: A Multi-Engine Buoyancy-Controlled Robot for Thrusterless Underwater Gliding and Manipulation",
+    "link": "https://arxiv.org/abs/2606.21461",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21461v1 Announce Type: new \nAbstract: The Manipulider is a buoyancy-actuated underwater robot that enables thrusterless, glide-like locomotion and attitude-based manipulation, while providing a magnetic modular interface for rapid payload swapping (e.g., a gripper or sensors). Four syringe-based buoyancy engines distributed around the body jointly regulate net buoyancy and the center of buoyancy, allowing the vehicle to maintain large tilt angles through static force balance without continuous thrust and to avoid propeller entanglement risks. We present the mechanical and electrical design, calibration procedure, and control architecture. Experiments with a gripper attached (no external payload) show a controllable buoyancy-displacement range of 40 mL per engine ({\\approx}160 g total buoyancy authority), maximum statically stable tilts of 64.6{\\deg} (single-engine) and 61.8{\\deg} (dual-engine), and representative vertical and tilt-transition dynamics. We further demonstrate tilt regulation, controlled ascent/descent primitives, and a proof-of-concept gripper-based payload-transport sequence without thrusters."
+  },
+  {
+    "title": "ASCII Art Turns LLMs into VLA Controllers",
+    "original_title": "ASCII Art Turns LLMs into VLA Controllers",
+    "link": "https://arxiv.org/abs/2606.21470",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21470v1 Announce Type: new \nAbstract: Vision--Language--Action (VLA) controllers are often built by extending vision--language models (VLMs) with action supervision, relying on multimodal backbones with large data and compute requirements. We demonstrate that a text-only large language model (LLM) can be adapted into a VLA-style controller when visual observations are rendered into a text input using an ASCII representation. This ASCII-as-vision interface enables existing training and deployment stacks for LLMs to efficiently condition on visual state, follow natural-language instructions, and produce constrained, executable actions. We fine-tune and compare multiple LLMs and VLMs across model families and scales, using both expert demonstrations from a planning-based teacher, as well as DAgger for iterative improvement. In a 2D manipulation benchmark, in both simulation and on a physical manipulator, the resulting controllers can identify task-relevant entities and plan feasible action sequences. Our results suggest that ASCII rendering can serve as a lightweight, interpretable modality bridge from images to text, complementing conventional VLA pipelines, and opening directions for VLA research with text-only backbones."
+  },
+  {
     "title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint",
     "original_title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint",
     "link": "https://www.therobotreport.com/fort-and-nvidia-launch-ai-driven-outside-in-safety-blueprint/",
@@ -214,6 +286,15 @@
     "source": "Tech Xplore",
     "category": "hand",
     "summary": "Current flying objects face a trade-off: Drones with propellers, for instance, are very agile and able to hover; however, they use up a lot of energy. Airplanes, on the other hand, feature fixed wings that allow them to fly very efficiently. The downside: They can't remain suspended in the air like a kestrel on the lookout for prey."
+  },
+  {
+    "title": "Video Shows Humanoid Robot 'Begging' In China, Claims It Has 'No Money To Recharge' - NDTV",
+    "original_title": "Video Shows Humanoid Robot 'Begging' In China, Claims It Has 'No Money To Recharge' - NDTV",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQk1fcGRWb2hTa19Wcl8zYWtnQXZaZmt4X0VyUENpbVphbVlRd2hkNDc1U2dLNC1mU1JHVGNTTkFyWk1iU0RuX3pUVDB1bXU4ZnN5aW01VTYxWmsxa3kzT1pEMEVFRFZEREpIdW4zd0Z3ZTB6em9nS0hFWWQ2bnhzUThmX0NtTnpzckVIZHdsS2o0NkhrUWQ1UHBaNEpZTmFvLVI2d1M4WTBURVNRbjhnMFJUYzF4NEXSAb8BQVVfeXFMT3hlNm1Yd0RVbS1aeG5aVEtJRDBvRFBJQnBXSW0xX01fel9xQWZidlhLMEk3Z3FPbkhvSXJTV0xiRjYzOFR5T013bVExNFU5ZnpXbE9yV3lFOWRsUWhnb1JUVy1wSzM5aWpqbFlKcml4NHhzYm5hX3plNE81d2hUQlktSlBHdUFDczZ1VnBER3laaUZtMFpNRFV5dmFuYmk5N092M2Z1c2VQdU5zRUxpREp1bjVLQ1ZncEF3QnBXek0?oc=5",
+    "date": "2026-06-22 17:33",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Video Shows Humanoid Robot 'Begging' In China, Claims It Has 'No Money To Recharge'  NDTV"
   },
   {
     "title": "Interview with MTC’s Mike Wilson: ‘Automation is not optional if the UK wants to rebuild manufacturing’",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "The Unitree GD01 Is a Giant Mecha Robot You Can Actually Buy  The Tech Buzz"
-  },
-  {
-    "title": "If You Have $650,000 and Don’t Buy This Giant Mecha Robot You’re a Fool - WIRED",
-    "original_title": "If You Have $650,000 and Don’t Buy This Giant Mecha Robot You’re a Fool - WIRED",
-    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9hbV9NM3JzOGk3enQ3RWEyOE1vLW5nalFEWGJ1am43RW05Nm9YOUd0bGR4WFlDeGNKc3RxZUg5N0J4UzU2S0prZTRyOU55TGtmSkpPVWNXa2VPZnNvYU1QZmlmNA?oc=5",
-    "date": "2026-05-12 22:51",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "If You Have $650,000 and Don’t Buy This Giant Mecha Robot You’re a Fool  WIRED"
-  },
-  {
-    "title": "Robotics Company Unveils World’s First Production-Ready Manned Transformable Mecha - Oddity Central",
-    "original_title": "Robotics Company Unveils World’s First Production-Ready Manned Transformable Mecha - Oddity Central",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeUU0TmJVUGN3a1FmdGFOaHNxaXhMN0xVVUVWaWZtYTdiN3BLOG9lZG84eDU2bWJGbHNaNmo3Q1p0ZDFtSWlwcmktZFVWQ2RFeUc5ZXZoaVpNM0FMeWpyaE5nOWFPOHFrVm9ScjFXa0JTakhET2pBZmp3Z2xBdVRHRHZTQ28wdlViZHZLZkZrM1V6S0JHOVNGc1Y1UVdwbjNlUnd1enNXRjA5R0dpQ2EzcEJjQXE2cVhLeUpjUTV2aXVIOWZTSWc?oc=5",
-    "date": "2026-05-12 19:13",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Robotics Company Unveils World’s First Production-Ready Manned Transformable Mecha  Oddity Central"
-  },
-  {
-    "title": "Comau and OMRON Robotics partner to offer robotics for more industries",
-    "original_title": "Comau and OMRON Robotics partner to offer robotics for more industries",
-    "link": "https://www.therobotreport.com/comau-omron-robotics-partner-offer-robotics-more-industries/",
-    "date": "2026-05-12 19:12",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Comau and OMRON Robotics are combining robotics, control, and software capabilities in flexible automation for global customers.\nThe post Comau and OMRON Robotics partner to offer robotics for more industries appeared first on The Robot Report."
-  },
-  {
-    "title": "Seegrid surpasses 20 million autonomous miles in industrial facilities",
-    "original_title": "Seegrid surpasses 20 million autonomous miles in industrial facilities",
-    "link": "https://roboticsandautomationnews.com/2026/05/12/seegrid-surpasses-20-million-autonomous-miles-in-industrial-facilities/101430/",
-    "date": "2026-05-12 18:33",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Autonomous mobile robot developer Seegrid says its fleet has surpassed 20 million autonomous miles driven across customer production environments, marking a major milestone for the company’s operations in manufacturing, warehousing, and logistics. The company says the total distance travelled by its autonomous mobile robots (AMRs) is equivalent to circling the Earth more than 800 times, […]"
-  },
-  {
-    "title": "Infineon launches humanoid robotics-focused startup challenge for 2026",
-    "original_title": "Infineon launches humanoid robotics-focused startup challenge for 2026",
-    "link": "https://roboticsandautomationnews.com/2026/05/12/infineon-launches-humanoid-robotics-focused-startup-challenge-for-2026/101426/",
-    "date": "2026-05-12 18:25",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Infineon’s Startup Challenge brings together promising founder teams and young high-tech companies from across the globe to work jointly on a highly relevant topic: humanoid robotics. The Challenge is a structured innovation program designed to develop technological concepts into market-ready applications. It is part of Infineon’s global Co‑Innovation Program, in which Infineon drives innovation together […]"
-  },
-  {
-    "title": "Exotec partners with Musinsa to power new automated warehouse for fast-growing K-fashion business",
-    "original_title": "Exotec partners with Musinsa to power new automated warehouse for fast-growing K-fashion business",
-    "link": "https://roboticsandautomationnews.com/2026/05/12/exotec-partners-with-musinsa-to-power-new-automated-warehouse-for-fast-growing-k-fashion-business/101421/",
-    "date": "2026-05-12 18:11",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Exotec, a global provider of warehouse robotics solutions, has announced a partnership with leading South Korean fashion brand, Musinsa. This collaboration marks Exotec’s first customer deployment in the Korean market and represents an important milestone in the company’s expansion across the Asia-Pacific region. The project will support Musinsa’s continued international growth as global demand for […]"
-  },
-  {
-    "title": "Comau partners with Omron to accelerate advanced industrial automation across high-growth manufacturing",
-    "original_title": "Comau partners with Omron to accelerate advanced industrial automation across high-growth manufacturing",
-    "link": "https://roboticsandautomationnews.com/2026/05/12/comau-partners-with-omron-to-accelerate-advanced-industrial-automation-across-high-growth-manufacturing/101417/",
-    "date": "2026-05-12 17:07",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Comau and Omron Robotics have signed a strategic collaboration agreement aimed at accelerating the adoption and deployment of advanced industrial automation solutions for manufacturers worldwide. The collaboration will focus on high-growth sectors including electronics, semiconductors, medical manufacturing and light industrial intralogistics – markets that continue to see strong demand for flexible, easily deployable automation. The […]"
-  },
-  {
-    "title": "China’s Robot Juggernaut Unitree Debuts a $650,000 Personal Gundam - Gizmodo",
-    "original_title": "China’s Robot Juggernaut Unitree Debuts a $650,000 Personal Gundam - Gizmodo",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUXpVM3FCOGpRRGFzcDQ5UHBmdktYX1VzeHhZZTVqd2s4VjRiR2ZTYmVVS0NsajZkTkw0S2hydUJ0dXNBN1REODExUVIwNUdhN3hsNXlPaGFOLWM1UDBYdDk3akxVbTNVNEhjNC1ZZVVwSzlfZG1FRXkySktOeWdnZ3BoeWFMUU53aEd4OVZTQlYwWFNpTmROamh3?oc=5",
-    "date": "2026-05-12 17:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China’s Robot Juggernaut Unitree Debuts a $650,000 Personal Gundam  Gizmodo"
-  },
-  {
-    "title": "Unitree Unveils 500KG ‘Transformers’ Mecha Robot to Stride Further Away from Rival Tesla - TipRanks",
-    "original_title": "Unitree Unveils 500KG ‘Transformers’ Mecha Robot to Stride Further Away from Rival Tesla - TipRanks",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOVZwMWtFQTJUcVYtS0NTVXFnaEtDcndTa21yOEttWURJUHZjN3pBc1Y3dXhBR2hRSk54amFDZG1ibF9fSllXVzhrX2xuZTNVRnh2NVZGb2RndTJHcFJEVU94alZXYkduRHVQZ1NYX1NJdExoSjJHWm1GT1BJNUpybDYwTjRCamRISWF2emsyYTgtNHNBM2RBQXMzTFAzWllHUUhaRWRGVS1HbXFRTnZ3d3VrY25jZ28?oc=5",
-    "date": "2026-05-12 16:52",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree Unveils 500KG ‘Transformers’ Mecha Robot to Stride Further Away from Rival Tesla  TipRanks"
   }
 ]
