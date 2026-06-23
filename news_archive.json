@@ -1,5 +1,14 @@
 [
   {
+    "title": "Ultraefficient chip could help tiny robots traverse complex environments",
+    "original_title": "Ultraefficient chip could help tiny robots traverse complex environments",
+    "link": "https://techxplore.com/news/2026-06-ultraefficient-chip-tiny-robots-traverse.html",
+    "date": "2026-06-23 17:00",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "A new chip developed by MIT researchers could help tiny, low-power UAVs avoid obstacles as they zip around tight corners inside an industrial HVAC system to check for gas leaks. The chip allows small autonomous robots and other battery-limited devices to construct detailed 3D maps of their environments in real time using only about as much power as a single LED. A robot could use such a map to plan a collision-free path to reach its goal."
+  },
+  {
     "title": "Video: Chinese humanoid robots go live on factory production line - Interesting Engineering",
     "original_title": "Video: Chinese humanoid robots go live on factory production line - Interesting Engineering",
     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSjVwTjdsT1o3YUNYbVpxelpaNGloLUJTYnVLb0xXdHJmQTFtMUZTUWVxeEIya3BST00wWnRsRWF3dUFHM0N6ei04UU9IbG9QYWpqb28zd0hmdko3TUFmemNhdExXczkzZzdHWUd0SXhpaVpfNDBjSDdHU0FlSEhxdWo1V1BJTklIaWNUUWtGS1M5UVI1dl9VTnVrREVzalFITVljWFRBMkhGU2MzZHBVa0pIdWFhajF3X1lpR1J2Y1NKQmhlX2QyWmhMV0I?oc=5",
@@ -1015,6 +1024,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2503.03579v2 Announce Type: replace \nAbstract: Spoken instructions in robot-to-human handovers may specify either an object (\"the cup\") or an intended use (\"pour water\"); in both cases, successful handover requires the robot to infer the target object and the region remaining available for the human to hold. If the robot grasps that hold region, the object could become awkward to receive and immediately use, potentially reducing perceived competence and trust; if the gripper approaches too close to the receiving hand during delivery, perceived safety may also suffer. We present Intent-Handover, which grounds unconstrained speech and visual scene context into explicit grasp and delivery constraints. Given a spoken instruction and a scene observation, a vision-language model identifies the target object and the intended human-usage region. A grasp optimization module then selects a feasible grasp keeping this region accessible while enforcing clearance from the predicted receiving hand. During execution, the robot tracks upper-body key points to estimate the user's receiving pose and places the handover at an ergonomically feasible location. In a within-subjects ablation study (n=30), human-usage region awareness increases perceived trust, hand-gripper collision avoidance increases perceived safety, and interaction comfort is highest when both are enabled. Website and code: https://robot-future.github.io/intent-handover/."
+  },
+  {
+    "title": "DataMIL: Selecting Data for Robot Imitation Learning with Datamodels",
+    "original_title": "DataMIL: Selecting Data for Robot Imitation Learning with Datamodels",
+    "link": "https://arxiv.org/abs/2505.09603",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2505.09603v2 Announce Type: replace \nAbstract: Recently, the robotics community has amassed ever larger and more diverse datasets to train generalist policies. However, while these policies achieve strong mean performance across a variety of tasks, they often underperform on individual, specialized tasks and require further tuning on newly acquired task-specific data. Combining task-specific data with carefully curated subsets of large prior datasets via co-training can produce better specialized policies, but selecting data naively may actually harm downstream performance. To address this, we introduce DataMIL, a data selection framework built on the datamodels paradigm that reasons about data selection in an end-to-end manner, using the policy itself to identify which data points will most improve performance. Unlike standard practices that filter data using human notions of quality (e.g., based on semantic or visual similarity), DataMIL directly optimizes data selection for task success, allowing us to select data that improves the policy while dropping data that degrade it. To avoid performing expensive rollouts in the environment during selection, we introduce a surrogate loss function on task-specific data, allowing us to use DataMIL in the real world without degrading performance. We validate our approach on 60+ simulation and real-world manipulation tasks, notably showing successful data selection from the largest open collections of robot datasets (OXE); demonstrating consistent gains in success rates over prior works. Our results underscore the importance of end-to-end, performance-aware data selection for unlocking the potential of large prior datasets in robotics. More information at https://robin-lab.cs.utexas.edu/datamodels4imitation/"
+  },
+  {
+    "title": "APEX: Action Priors Enable Efficient Exploration for Robust Motion Tracking on Legged Robots",
+    "original_title": "APEX: Action Priors Enable Efficient Exploration for Robust Motion Tracking on Legged Robots",
+    "link": "https://arxiv.org/abs/2505.10022",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2505.10022v4 Announce Type: replace \nAbstract: Learning natural, animal-like locomotion from demonstrations has become a core paradigm in legged robotics. While motion tracking can reproduce reference gaits, many approaches still require substantial tuning and depend on reference motion inputs at deployment, which can limit responsiveness to task objectives and reduce adaptability. We present APEX (Action Priors enable Efficient eXploration), a motion-tracking reinforcement learning (RL) framework that removes deployment-time dependence on reference motion inputs, improves sample efficiency, and reduces tuning effort. APEX integrates demonstrations into RL via decaying action priors, which guide early exploration toward demonstration-consistent actions and then fade to zero, yielding a pure RL policy at deployment. This is combined with a multi-critic framework that separates style and task + regularization learning signals. Moreover, APEX enables a single policy to learn diverse motions and transfer reference-like styles across different terrains and velocities, while remaining robust to variations in training parameters. We validate our method in simulation on both humanoid and quadruped robots, and with zero-shot deployment on a Unitree Go2 robot. Website and code: https://marmotlab.github.io/APEX/."
+  },
+  {
+    "title": "SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics",
+    "original_title": "SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics",
+    "link": "https://arxiv.org/abs/2505.11494",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2505.11494v3 Announce Type: replace \nAbstract: Robot learning has produced remarkably effective ``black-box'' controllers for complex tasks such as dynamic locomotion on humanoids. Yet ensuring dynamic safety, i.e., constraint satisfaction, remains challenging for such policies. Reinforcement learning (RL) embeds constraints heuristically through reward engineering, and adding or modifying constraints requires retraining. Model-based approaches, like control barrier functions (CBFs), enable runtime constraint specification with formal guarantees but require accurate dynamics models. This paper presents SHIELD, a layered safety framework that bridges this gap by: (1) training a generative, stochastic dynamics residual model using real-world data from hardware rollouts of the nominal controller, capturing system behavior and uncertainties; and (2) adding a safety layer on top of the nominal (learned locomotion) controller that leverages this model via a stochastic discrete-time CBF formulation enforcing safety constraints in probability. The result is a minimally-invasive safety layer that can be added to the existing autonomy stack to give probabilistic guarantees of safety that balance risk and performance. In hardware experiments on an Unitree G1 humanoid, SHIELD enables safe navigation (obstacle avoidance) through varied indoor and outdoor environments using a nominal (unknown) RL controller and onboard perception."
+  },
+  {
+    "title": "Bracing for Impact: Robust Humanoid Push Recovery and Locomotion with Reduced Order Models",
+    "original_title": "Bracing for Impact: Robust Humanoid Push Recovery and Locomotion with Reduced Order Models",
+    "link": "https://arxiv.org/abs/2505.11495",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2505.11495v2 Announce Type: replace \nAbstract: Push recovery during locomotion will facilitate the deployment of humanoid robots in human-centered environments. In this paper, we present a unified framework for walking control and push recovery for humanoid robots, leveraging the arms for push recovery while dynamically walking. The key innovation is to use the environment, such as walls, to facilitate push recovery by combining Single Rigid Body model predictive control (SRB-MPC) with Hybrid Linear Inverted Pendulum (HLIP) dynamics to enable robust locomotion, push detection, and recovery by utilizing the robot's arms to brace against such walls and dynamically adjusting the desired contact forces and stepping patterns. Extensive simulation results on a humanoid robot demonstrate improved perturbation rejection and tracking performance compared to HLIP alone, with the robot able to recover from pushes up to 100N for 0.2s while walking at commanded speeds up to 0.5m/s. Robustness is further validated in scenarios with angled walls and multi-directional pushes."
+  },
+  {
+    "title": "ScanBot: A Benchmark for Precision Robotic Surface Scanning with Industrial Laser Profilers",
+    "original_title": "ScanBot: A Benchmark for Precision Robotic Surface Scanning with Industrial Laser Profilers",
+    "link": "https://arxiv.org/abs/2505.17295",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2505.17295v2 Announce Type: replace \nAbstract: We introduce ScanBot, a benchmark for instruction-conditioned, high-precision surface scanning with robot-mounted industrial laser profilers. Unlike existing robot learning datasets that emphasize coarse behaviors such as grasping, navigation, or dialogue, ScanBot targets sensing-centric tasks where sub-millimeter motion continuity, strict stand-off control, and stable scanner settings are essential for acquiring usable geometry. The dataset contains scanning trajectories over twenty objects, including electronic components and structured 3D-printed parts, and spans six task types that range from broad inspection to fine-grained detail scanning and geometry-critical operations, including metrology and registration. Each episode is specified by natural language instructions and paired with synchronized first-person RGB-D, third-person video, laser height profiles, robot joint and pose traces, and scanner-parameter logs. These requirements expose a gap: despite recent progress, learning-based models often fail to produce stable and feasible scan motions under fine-grained instructions and real laser-profiling constraints. To reflect how industrial scanning is actually done, we evaluate methods through a two-stage pipeline. Stage I asks the model to \"set up the sensor\" by recommending scanner parameters, while Stage II asks it to \"move like a scanner\" by producing smooth, feasible trajectories that maintain stand-off and cover the intended region under precision demands."
+  },
+  {
+    "title": "Learned Controllers for Agile Quadrotors in Pursuit-Evasion Games",
+    "original_title": "Learned Controllers for Agile Quadrotors in Pursuit-Evasion Games",
+    "link": "https://arxiv.org/abs/2506.02849",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2506.02849v3 Announce Type: replace \nAbstract: In this letter we study 1v1 quadrotor pursuit-evasion, where a pursuer and an evader are trained via reinforcement learning (RL) by competing against each other. Such adversarial settings face well-known challenges: each agent's policy changes during training, creating a non-stationary environment; agents might overfit to the current opponent and forget earlier strategies (catastrophic forgetting); and the competitive dynamics can cause strategy cycling or policy collapse. To address these issues, we propose Asynchronous Multi-Stage Population-Based training with Hedge sampling (AMSPBH), a method based on Policy-Space Response Oracles (PSRO) and adapted to quadrotor RL control. PSRO maintains a population of previously trained policies and trains new approximate best responses against mixtures of that population instead of against a single opponent. In AMSPBH, each generation trains one agent with Proximal Policy Optimization (PPO) against frozen opponent policies, while a Hedge sampler assigns higher probability to opponents that are currently difficult to beat. We show that: (i) AMSPBH discovers new strategies while retaining competence against older opponents, reaching a regime where additional best-response training gives limited improvement; (ii) compared to training against only the latest opponent, population-based training generalizes better across diverse and unseen strategies; and (iii) the learned population contains distinct pursuit and evasion behaviors, providing useful strategic diversity for finding weaknesses and improving controller robustness. We validate the trained policies with hardware experiments on Crazyflie brushless quadrotors, showing zero-shot sim-to-real transfer of agile, reactive pursuit-evasion behavior against both handcrafted and learned adversaries, with physical flights reaching up to 4.87 m/s."
+  },
+  {
+    "title": "CLAR: Learning 3D Representations for Robotic Manipulation by Fusing Masked Reconstruction with Multi-Level Contrastive Alignment",
+    "original_title": "CLAR: Learning 3D Representations for Robotic Manipulation by Fusing Masked Reconstruction with Multi-Level Contrastive Alignment",
+    "link": "https://arxiv.org/abs/2507.08262",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2507.08262v2 Announce Type: replace \nAbstract: The spatial information inherent in 3D point clouds is crucial for robotic manipulation. However, existing 3D pre-training methods face a fundamental trade-off: Masked Autoencoding (MAE) excels at capturing spatial-geometric features but lacks semantics, whereas contrastive learning, while able to distill semantics from 2D foundation models, is ill-suited for the fine-grained details required for manipulation tasks. To address these challenges, we propose CLAR, a novel 3D pre-training framework that synergizes global understanding with fine-grained local alignment. Our framework unifies MAE with global cross-modal contrastive learning to integrate robust spatial awareness with rich semantic understanding. To enhance its focus on fine-grained details, at the local level, we introduce an adaptive alignment mechanism that leverages deformable attention to force precise correspondences between local 3D geometry and 2D visual features, thereby overcoming the limitations of conventional global alignment in manipulation tasks. Extensive experiments in simulation and the real world demonstrate that CLAR achieves state-of-the-art performance, significantly outperforming existing methods in visuomotor policy learning."
+  },
+  {
+    "title": "FILIC: Dual-Loop Force-Guided Imitation Learning with Impedance Torque Control for Contact-Rich Manipulation Tasks",
+    "original_title": "FILIC: Dual-Loop Force-Guided Imitation Learning with Impedance Torque Control for Contact-Rich Manipulation Tasks",
+    "link": "https://arxiv.org/abs/2509.17053",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2509.17053v2 Announce Type: replace \nAbstract: Many contact-rich manipulation tasks require precise force regulation. However, most imitation learning (IL) policies remain position-centric and lack explicit force awareness, and adding force/torque sensors to collaborative robot arms is often costly and requires additional hardware design. To overcome these issues, we propose FILIC, a Force-guided Imitation Learning framework with impedance torque control. FILIC integrates a Transformer-based IL policy with an impedance controller in a dual-loop structure, enabling compliant force-informed, force-executed manipulation. For robots without force/torque sensors, we introduce a cost-effective end-effector force estimator using joint torque measurements through analytical Jacobian-based inversion while compensating with model-predicted torques from a digital twin. Experiments show that FILIC significantly outperforms vision-only and joint-torque-based methods, achieving safer, more compliant, and adaptable contact-rich manipulation. The source code is available at https://github.com/OpenGHz/mujoco-wrench-estimator.git."
   },
   {
     "title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Chinese robots attract attention, cooperation in Central, Eastern European markets  China.org.cn"
-  },
-  {
-    "title": "China’s Unitree unveils transformable humanoid mecha robot with cockpit - MSN",
-    "original_title": "China’s Unitree unveils transformable humanoid mecha robot with cockpit - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxPRGJuaElLV0RsYmxWRmpqTXY3dHlxQi00TXB4NWdVdHg0d3JQdjIyQlhna2NkZ1lwMURKWllUZlRZRHM1eExtSHN6SFRuY0N3WE1hUVZvR0c0bWk0NjViUlJkRFBGSmJRcnRXa1B2RWdxUVNucDJ2WHIzQnZhTk1SejlkVE9aQVdyUjd6RHhySUZkZFhnUnRzczlBSTFWbFFiOUlfTjM5bENjMjBzVGFhMURKMUw0WVdNSVhPdVZSTjNrMk9SblIxOXk0LXItRnYwbWMzWGhrZTJ0WDVvSXNFa3hNdmZVWFE1UFFLbVpMcXZWMzFiV1VOdnN3Zk5QVGdOT3RObUctaTN0REhPSndReGJNSDFrMGp3a2lYbUJYa2dWcTV6UUJwVUtHMVk2dWVkbEgwNzRrMnVNY3hJcEx4Wm5vblk2UmhybEZWb2ZRaEVzZkk0aEVpWjVn?oc=5",
-    "date": "2026-05-13 23:36",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China’s Unitree unveils transformable humanoid mecha robot with cockpit  MSN"
-  },
-  {
-    "title": "Interview with Intrinsic’s Stefan Nusser: Traditional automation is ‘too expensive and too inflexible’",
-    "original_title": "Interview with Intrinsic’s Stefan Nusser: Traditional automation is ‘too expensive and too inflexible’",
-    "link": "https://roboticsandautomationnews.com/2026/05/13/interview-with-intrinsics-stefan-nusser-traditional-automation-is-too-expensive-and-too-inflexible/101497/",
-    "date": "2026-05-13 21:19",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "For years, industrial automation followed a relatively stable formula: high-volume production, long product lifecycles, and robotic systems designed to repeat the same process millions of times with minimal variation. That model helped transform industries such as automotive manufacturing, where fixed production lines and highly specialized robots delivered extraordinary efficiency at scale. But manufacturing is changing. […]"
-  },
-  {
-    "title": "Towering robot is the ‘friendly’ great wall-smasher of China - The Times",
-    "original_title": "Towering robot is the ‘friendly’ great wall-smasher of China - The Times",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdmUzSzh5Ry1TY3ZHbTJhYi1wcnI5ZnBHT2VLdVZ6ODhneWlMMzQ1SW05V3h2RmtVNms5ckFuUGpCUURmMUwyS2wxLXlpVEIyc25NZ1Q0T0VGbnliRHVqcEdRalZKV2M4RjRHc0hoOWNHSGROcUViQ2pOOGFKNmhLbXJweHlQUHZv?oc=5",
-    "date": "2026-05-13 21:10",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Towering robot is the ‘friendly’ great wall-smasher of China  The Times"
-  },
-  {
-    "title": "Expert opinion: Extending remote work to the factory floor through telepresence",
-    "original_title": "Expert opinion: Extending remote work to the factory floor through telepresence",
-    "link": "https://roboticsandautomationnews.com/2026/05/13/expert-opinion-extending-remote-work-to-the-factory-floor-through-telepresence/101491/",
-    "date": "2026-05-13 20:49",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "By Yonas Teodros Tefera, research team lead of the Vicarios Lab in the Department of Advanced Robotics at the Italian Institute of Technology Remote work has largely been defined by office jobs. Video calls, shared documents, and digital collaboration tools have allowed knowledge workers to operate from almost anywhere. But for millions of workers in […]"
-  },
-  {
-    "title": "GD01: Unitree causes a stir with its new giant robot - Table.Briefings",
-    "original_title": "GD01: Unitree causes a stir with its new giant robot - Table.Briefings",
-    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQaGhkb1ZxTmVpTlVMWFVEZXRKZk1IYWEtR0Q4c0NmWkl2aFBpTG5vOFBTaGtrQmpjYkxMXzcyQll5a2F4RW9aVml4ZFdRSVZ3QUJZcGlHb2p2eTFoSUx5WGoxZ3JGb1NXbnhYdXVNSW5hVGhMekNHem5GX21NY3VZNkhPR2pwN1ZiLUpfZDU3cnRNUQ?oc=5",
-    "date": "2026-05-13 20:04",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "GD01: Unitree causes a stir with its new giant robot  Table.Briefings"
-  },
-  {
-    "title": "Real-life Transformer: Giant robot on sale in China for $650K - Kursiv Media",
-    "original_title": "Real-life Transformer: Giant robot on sale in China for $650K - Kursiv Media",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNVVfYkVhS1VMdy05U05PQm55b1EzMXhMcHhGamZSMFowenVpNHN6a3BlRFpfeGVuNFU0MEtlZXdCUWdwWXZESnNHTzV4RmRybkpPSUJPNGhZYmdIM1ZNa25DdV8zcGFyTlc2Tl9UTnpMcTFTaDdoVGljSzc5YlQ4dXowVWRfNlF4SUJuUHhwU2ZWeV82N3J4Xzd5NzBqZXBCUlZmSU1Ma0dTV3hE0gGyAUFVX3lxTE50S2ZxTjRiVjBwQlloZ3d3cXJOV2VmZVdDVm16RFJVQXgxSEFEcncySnFRVnRMWEZ1NERIRTlUYWE3ZXE1R1NDZG15WDl0TXZ4a1lVdExXRW1EdjRMbl9ONGJ2bkxZREZnMk55LVFZNnNKN252SXVYUnp5Q05hcm11VC1pR1l6Ykpoc3VpYTZjZWhrQWJtTThXd2ltUGkwMW04SGp3YWRmbTRXQS1KaEpXT1E?oc=5",
-    "date": "2026-05-13 19:28",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Real-life Transformer: Giant robot on sale in China for $650K  Kursiv Media"
-  },
-  {
-    "title": "Chinese robots attract attention, cooperation in Central, Eastern European markets - The Macau Post Daily",
-    "original_title": "Chinese robots attract attention, cooperation in Central, Eastern European markets - The Macau Post Daily",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5UaFJmV2NudjFxRTJvei1rY19JUEFhOEJiMnVQbldfTkRsLTBibXNkOWlJMy16Y0VwTGNIeWZoQTdySzFMcDJ1bUFkSVdMMlpXdUxZ?oc=5",
-    "date": "2026-05-13 18:58",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese robots attract attention, cooperation in Central, Eastern European markets  The Macau Post Daily"
-  },
-  {
-    "title": "Why Disconnected Teams Are Silently Killing Your Retention, Says Ubitello Limited",
-    "original_title": "Why Disconnected Teams Are Silently Killing Your Retention, Says Ubitello Limited",
-    "link": "https://roboticsandautomationnews.com/2026/05/13/why-disconnected-teams-are-silently-killing-your-retention-says-ubitello-limited/101485/",
-    "date": "2026-05-13 18:08",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Two companies acquire users at the same cost, in the same market, with similar products. Twelve months later, one has 38% revenue retention and the other has 71%. The product isn’t the variable. The marketing isn’t the variable. The variable, in nearly every case Ubitello Limited has examined, is whether the company’s growth, marketing, experience, […]"
-  },
-  {
-    "title": "Zinelio Corp.’s Top Tips for Managing User Acquisition Without Losing Operational Control",
-    "original_title": "Zinelio Corp.’s Top Tips for Managing User Acquisition Without Losing Operational Control",
-    "link": "https://roboticsandautomationnews.com/2026/05/13/zinelio-corp-tips-managing-user-acquisition-operational-control/101479/",
-    "date": "2026-05-13 17:57",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "There’s a version of growth that looks great on paper and quietly wrecks a company from the inside. It usually starts the same way: a business enters a new market – let’s say the U.S. – gains some momentum, starts pulling in users faster than expected, and then realizes too late that the back end […]"
   }
 ]
