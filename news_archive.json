@@ -1,5 +1,14 @@
 [
   {
+    "title": "CreateMe partners with Avalo and Laguna Fabrics to bring resilience to apparel supply chains",
+    "original_title": "CreateMe partners with Avalo and Laguna Fabrics to bring resilience to apparel supply chains",
+    "link": "https://www.therobotreport.com/createme-partners-with-avalo-and-laguna-fabrics-to-bring-resilience-to-apparel-supply-chains/",
+    "date": "2026-06-23 17:09",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "CreateMe said the partnership aims to demonstrate how apparel can be produced faster, more locally, and with greater supply chain resilience.\nThe post CreateMe partners with Avalo and Laguna Fabrics to bring resilience to apparel supply chains appeared first on The Robot Report."
+  },
+  {
     "title": "Ultraefficient chip could help tiny robots traverse complex environments",
     "original_title": "Ultraefficient chip could help tiny robots traverse complex environments",
     "link": "https://techxplore.com/news/2026-06-ultraefficient-chip-tiny-robots-traverse.html",
@@ -1096,6 +1105,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2509.17053v2 Announce Type: replace \nAbstract: Many contact-rich manipulation tasks require precise force regulation. However, most imitation learning (IL) policies remain position-centric and lack explicit force awareness, and adding force/torque sensors to collaborative robot arms is often costly and requires additional hardware design. To overcome these issues, we propose FILIC, a Force-guided Imitation Learning framework with impedance torque control. FILIC integrates a Transformer-based IL policy with an impedance controller in a dual-loop structure, enabling compliant force-informed, force-executed manipulation. For robots without force/torque sensors, we introduce a cost-effective end-effector force estimator using joint torque measurements through analytical Jacobian-based inversion while compensating with model-predicted torques from a digital twin. Experiments show that FILIC significantly outperforms vision-only and joint-torque-based methods, achieving safer, more compliant, and adaptable contact-rich manipulation. The source code is available at https://github.com/OpenGHz/mujoco-wrench-estimator.git."
+  },
+  {
+    "title": "Imagine2Act: Leveraging Object-Action Motion Consistency from Imagined Goals for Robotic Manipulation",
+    "original_title": "Imagine2Act: Leveraging Object-Action Motion Consistency from Imagined Goals for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2509.17125",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2509.17125v2 Announce Type: replace \nAbstract: Relational object rearrangement (ROR) tasks (e.g., insert flower to vase) require a robot to manipulate objects with precise semantic and geometric reasoning. Existing approaches either rely on pre-collected demonstrations that struggle to capture complex geometric constraints or generate goal-state observations to capture semantic and geometric knowledge, but fail to explicitly couple object transformation with action prediction, resulting in errors due to generative noise. To address these limitations, we propose Imagine2Act, a 3D imitation-learning framework that incorporates semantic and geometric constraints of objects into policy learning to tackle high-precision manipulation tasks. We first generate imagined goal images conditioned on language instructions and reconstruct corresponding 3D point clouds to provide robust semantic and geometric priors. These imagined goal point clouds serve as additional inputs to the policy model, while an object-action consistency strategy with soft pose supervision explicitly aligns predicted end-effector motion with generated object transformation. This design enables Imagine2Act to reason about semantic and geometric relationships between objects and predict accurate actions across diverse tasks. Experiments in both simulation and the real world demonstrate that Imagine2Act outperforms previous state-of-the-art policies. More visualizations can be found at https://sites.google.com/view/imagine2act."
+  },
+  {
+    "title": "N2M: Bridging Navigation and Manipulation by Learning Pose Preference from Rollout",
+    "original_title": "N2M: Bridging Navigation and Manipulation by Learning Pose Preference from Rollout",
+    "link": "https://arxiv.org/abs/2509.18671",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2509.18671v2 Announce Type: replace \nAbstract: Determining where to execute the manipulation policy is a fundamental challenge in mobile manipulation. Most approaches have formulated this as a geometric search problem, prioritizing physical reachability. However, given the high sensitivity of modern learning-based manipulation policies, geometric criteria alone are insufficient. Optimal performance requires base positioning that is aware of the policy's preference. While recent works have attempted to address this, they remain limited in practicality due to reliance on pre-built scene reconstruction and slow inference. In this work, we introduce N2M that systematically reformulates the approach to base positioning problem, naturally overcoming limitations of previous methods. Our key insight is that policy preferences are inherent to the local scene structure and can be effectively learned from the policy rollouts. Technically, we propose a novel viewpoint augmentation strategy that enables the model to learn robust, viewpoint-invariant pose preferences with remarkable data efficiency. Extensive experiments demonstrate that N2M achieves state-of-the-art performance, outperforming both non-policy-aware baselines and recent policy-aware alternatives. Furthermore, we provide a comprehensive analysis highlighting N2M's broad applicability, generalization capabilities, and data efficiency. Project website: https://clvrai.github.io/N2M/"
+  },
+  {
+    "title": "KiVi: Kinesthetic-Visuospatial Integration for Dynamic and Safe Egocentric Legged Locomotion",
+    "original_title": "KiVi: Kinesthetic-Visuospatial Integration for Dynamic and Safe Egocentric Legged Locomotion",
+    "link": "https://arxiv.org/abs/2509.23650",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2509.23650v3 Announce Type: replace \nAbstract: Vision-based locomotion has shown great promise in enabling legged robots to perceive and adapt to complex environments. However, visual information is inherently fragile, being vulnerable to occlusions, reflections, and lighting changes, which often cause instability in locomotion. Inspired by animal sensorimotor integration, we propose KiVi, a Kinesthetic-Visuospatial integration framework, where kinesthetics encodes proprioceptive sensing of body motion and visuospatial reasoning captures visual perception of surrounding terrain. Specifically, KiVi separates these pathways, leveraging proprioception as a stable backbone while selectively incorporating vision for terrain awareness and obstacle avoidance. This modality-balanced, yet integrative design, combined with memory-enhanced attention, allows the robot to robustly interpret visual cues while maintaining fallback stability through proprioception. Extensive experiments show that our method enables quadruped robots to stably traverse diverse terrains and operate reliably in unstructured outdoor environments, remaining robust to out-of-distribution(OOD) visual noise and occlusion unseen during training, thereby highlighting its effectiveness and applicability to real-world legged locomotion. Project Page: https://marmotlab.github.io/kivi-quadruped/"
+  },
+  {
+    "title": "SIMSplat: Language-Aligned 4D Gaussian Splatting for Driving Scenario Generation",
+    "original_title": "SIMSplat: Language-Aligned 4D Gaussian Splatting for Driving Scenario Generation",
+    "link": "https://arxiv.org/abs/2510.02469",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.02469v2 Announce Type: replace \nAbstract: Driving scene manipulation using real-world sensor data has emerged as a promising alternative to traditional driving simulators. Despite advances in language control and neural scene representations, existing methods treat grounding, editing, and simulation as loosely connected stages, relying on heuristic object localization, manual guidance, and single-agent validation, thereby constraining semantic expressiveness and hindering scalable, reactive scenario generation. We introduce SIMSplat, a driving scene editor built on scene-graph-based 4D Gaussian Splatting augmented with language-aligned features. By embedding appearance, motion, and location semantics directly into Gaussian scene-graph nodes, SIMSplat makes reconstructed scenes queryable through free-form natural language, bridging language understanding to object-level editing and multi-agent simulation within a single framework. Building on this language-grounded scene graph, SIMSplat supports diverse edits including fine-grained pedestrian manipulation, while a multi-agent path refinement module propagates changes across all agents to ensure reactive, physically plausible simulations. The pipeline further integrates with Vision-Language Models for automated scenario mining. Experiments show that SIMSplat more than doubles baseline grounding accuracy, achieves the highest task completion rate, and produces the lowest failure rates across diverse driving scenarios."
+  },
+  {
+    "title": "Gain Tuning Is Not What You Need: Reward Gain Adaptation for Constrained Locomotion Learning",
+    "original_title": "Gain Tuning Is Not What You Need: Reward Gain Adaptation for Constrained Locomotion Learning",
+    "link": "https://arxiv.org/abs/2510.10759",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2510.10759v2 Announce Type: replace \nAbstract: Existing robot locomotion learning techniques rely heavily on the offline selection of proper reward weighting gains and cannot guarantee constraint satisfaction (i.e., constraint violation) during training. Thus, this work aims to address both issues by proposing Reward-Oriented Gains via Embodied Regulation (ROGER), which adapts reward-weighting gains online based on penalties received throughout the embodied interaction process. The ratio between the positive reward (primary reward) and negative reward (penalty) gains is automatically reduced as the learning approaches the constraint thresholds to avoid violation. Conversely, the ratio is increased when learning is in safe states to prioritize performance. With a 60-kg quadruped robot, ROGER achieved near-zero constraint violation throughout multiple learning trials. It also achieved up to 50% more primary reward than the equivalent state-of-the-art techniques. In MuJoCo continuous locomotion benchmarks, including a single-leg hopper, ROGER exhibited comparable or up to 100% higher performance and 60% less torque usage and orientation deviation compared to those trained with the default reward function. Finally, real-world locomotion learning of a physical quadruped robot was achieved from scratch within one hour without any falls. Therefore, this work contributes to constraint-satisfying real-world continual robot locomotion learning and simplifies reward weighting gain tuning, potentially facilitating the development of physical robots and those that learn in the real world."
+  },
+  {
+    "title": "DASIP: Dynamic Test-Time Compute Scaling for Robot Control with Stochastic Interpolant Policies",
+    "original_title": "DASIP: Dynamic Test-Time Compute Scaling for Robot Control with Stochastic Interpolant Policies",
+    "link": "https://arxiv.org/abs/2511.20906",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.20906v2 Announce Type: replace \nAbstract: Diffusion- and flow-based policies deliver state-of-the-art performance on long-horizon robotic manipulation and imitation learning tasks. However, these controllers employ a fixed inference budget at every control step, regardless of task complexity, leading to computational inefficiency for simple subtasks while potentially underperforming on challenging ones. To address these issues, we introduce Difficulty-Aware Stochastic Interpolant Policy (DA-SIP), a framework that enables robotic controllers to adaptively adjust their integration horizon in real time based on task difficulty. Our approach employs a difficulty classifier that analyzes observations to dynamically select the step budget, the optimal solver variant, and ODE/SDE integration at each control cycle. DA-SIP builds upon the stochastic interpolant formulation to provide a unified framework that unlocks diverse training and inference configurations for diffusion- and flow-based policies. Through comprehensive benchmarks across diverse manipulation tasks, DA-SIP achieves 2.6-4.4x reduction in total computation time while maintaining task success rates comparable to fixed maximum-computation baselines. By implementing adaptive computation within this framework, DA-SIP transforms generative robot controllers into efficient, task-aware systems that intelligently allocate inference resources where they provide the greatest benefit."
+  },
+  {
+    "title": "MILE: A Mechanically Isomorphic Exoskeleton Data Collection System with Fingertip Visuotactile Sensing for Dexterous Manipulation",
+    "original_title": "MILE: A Mechanically Isomorphic Exoskeleton Data Collection System with Fingertip Visuotactile Sensing for Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2512.00324",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.00324v3 Announce Type: replace \nAbstract: Imitation learning provides a promising approach to dexterous hand manipulation, but its effectiveness is limited by the lack of large-scale, high-fidelity data. Existing data-collection pipelines suffer from inaccurate motion retargeting, low data-collection efficiency, and missing high-resolution fingertip tactile sensing. We address this gap with MILE, a mechanically isomorphic teleoperation and data-collection system co-designed from human hand to exoskeleton to robotic hand. The exoskeleton is anthropometrically derived from the human hand, and the robotic hand preserves one-to-one joint-position isomorphism, eliminating nonlinear retargeting and enabling precise, natural control. The exoskeleton achieves a multi-joint mean absolute angular error below one degree, while the robotic hand integrates compact fingertip visuotactile modules that provide high-resolution tactile observations. Built on this retargeting-free interface, we teleoperate complex, contact-rich in-hand manipulation and efficiently collect a multimodal dataset comprising high-resolution fingertip visuotactile signals, RGB-D images, and joint positions. The teleoperation pipeline achieves a mean success rate improvement of 64%. Incorporating fingertip tactile observations further increases the success rate by an average of 25% over the vision-only baseline, validating the fidelity and utility of the dataset. Further details are available at: https://sites.google.com/view/mile-system."
+  },
+  {
+    "title": "ALOE: Action-Level Off-Policy Evaluation for Vision-Language-Action Model Post-Training",
+    "original_title": "ALOE: Action-Level Off-Policy Evaluation for Vision-Language-Action Model Post-Training",
+    "link": "https://arxiv.org/abs/2602.12691",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.12691v3 Announce Type: replace \nAbstract: We study how to improve large foundation vision-language-action (VLA) systems through human-in-the-loop reinforcement learning (RL) in real-world environments. A key challenge is learning reliable value functions from heterogeneous real-world experience, as value estimation provides the primary learning signal for VLA training. In practice, replay buffers contain trajectories collected from historical policies, online rollouts, demonstrations, and intermittent human interventions. Because replay buffers mix trajectories generated by different behaviors, the observed returns can be mismatched with the quality of the current policy. Prior VLA post-training methods often rely on progress-style value signals, which reflect the average quality of historical behaviors, leading to mismatched learning signals for the current policy. In this paper, we propose ALOE, an off-policy evaluation framework whose value function directly evaluates current-policy behavior for each iteration. Specifically, ALOE combines chunked temporal-difference bootstrapping and conservative value aggregation to perform stable current-policy evaluation, then uses these estimates for advantage-weighted policy improvement. This design improves credit assignment to critical action chunks under sparse rewards and supports stable policy improvement. We evaluate ALOE on four real-world manipulation tasks encompassing long-horizon and high-precision scenarios: smartphone packing, laundry folding, multi-object sorting, and phone assembly. Across all tasks, ALOE outperforms other VLA post-training methods, highlighting the benefit of off-policy value estimates for real-world VLA post-training. Videos are available at our project website https://rooshy-yang.github.io/aloe."
   },
   {
     "title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2304.11193v2 Announce Type: replace \nAbstract: Predicting the outcomes of robotic actions, often referred to as learning a world model, in complex environments remains a fundamental challenge in robotics. Existing approaches primarily rely on visual observations and action inputs to generate video-based predictions, frequently overlooking the critical role of tactile feedback in understanding physical interactions. In this work, we investigate the integration of tactile and visual information within predictive perception systems for physical robot interaction. We demonstrate that visuo-tactile prediction provides the greatest benefits in physically ambiguous interaction regimes, while improvements are naturally limited when object dynamics are visually inferable. Furthermore, we introduce two novel robot-pushing datasets collected using a magnetic-based tactile sensor for unsupervised learning. The first dataset comprises visually identical objects with varying physical properties, explicitly isolating physical ambiguity, while the second mirrors existing robot-pushing benchmarks involving clusters of household objects. Our results show that tactile-visual integration improves prediction accuracy and robustness under physical ambiguity, while offering limited gains in visually unambiguous settings. Code and datasets are publicly available."
-  },
-  {
-    "title": "ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation",
-    "original_title": "ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation",
-    "link": "https://arxiv.org/abs/2506.15953",
-    "date": "2026-05-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2506.15953v2 Announce Type: replace \nAbstract: Dexterous manipulation is a cornerstone capability for robotic systems aiming to interact with the physical world in a human-like manner. Although vision-based methods have advanced rapidly, tactile sensing remains crucial for fine-grained control, particularly in unstructured or visually occluded settings. We present ViTacFormer, a representation-learning approach that couples a cross-attention encoder to fuse high-resolution vision and touch with an autoregressive tactile prediction head that anticipates future contact signals. Building on this architecture, we devise an easy-to-challenging curriculum that steadily refines the visual-tactile latent space, boosting both accuracy and robustness. The learned cross-modal representation drives imitation learning for multi-fingered hands, enabling precise and adaptive manipulation. Across a suite of challenging real-world benchmarks, our method achieves approximately 50% higher success rates than prior state-of-the-art systems. To our knowledge, it is also the first to autonomously complete long-horizon dexterous manipulation tasks that demand highly precise control with an anthropomorphic hand, successfully executing up to 11 sequential stages and sustaining continuous operation for 2.5 minutes."
-  },
-  {
-    "title": "Robotic Manipulation by Imitating Generated Videos Without Physical Demonstrations",
-    "original_title": "Robotic Manipulation by Imitating Generated Videos Without Physical Demonstrations",
-    "link": "https://arxiv.org/abs/2507.00990",
-    "date": "2026-05-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2507.00990v3 Announce Type: replace \nAbstract: This work introduces Robots Imitating Generated Videos (RIGVid), a system that enables robots to perform complex manipulation tasks--such as pouring, wiping, and mixing--purely by imitating AI-generated videos, without requiring any physical demonstrations or robot-specific training. Given a language command and an initial scene image, a video diffusion model generates potential demonstration videos, and a vision-language model (VLM) automatically filters out results that do not follow the command. A 6D pose tracker then extracts object trajectories from the video, and the trajectories are retargeted to the robot in an embodiment-agnostic fashion. Through extensive real-world evaluations, we show that filtered generated videos are as effective as real demonstrations, and that performance improves with generation quality. We also show that relying on generated videos outperforms more compact alternatives such as keypoint prediction using VLMs, and that strong 6D pose tracking outperforms other ways to extract trajectories, such as dense feature point tracking. These findings suggest that videos produced by a state-of-the-art off-the-shelf model can offer an effective source of supervision for robotic manipulation."
-  },
-  {
-    "title": "UniJEPA: Enhancing Robot Policy via Unified Continuous and Discrete Representation Learning",
-    "original_title": "UniJEPA: Enhancing Robot Policy via Unified Continuous and Discrete Representation Learning",
-    "link": "https://arxiv.org/abs/2510.10642",
-    "date": "2026-05-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2510.10642v3 Announce Type: replace \nAbstract: Building generalist robot policies that can handle diverse tasks in open-ended environments is a central challenge in robotics. To leverage knowledge from large-scale pretraining, prior work (VLA) has typically built generalist policies either on top of vision-language understanding models (VLMs) or generative models. However, both semantic understanding from vision-language pretraining and visual dynamics modeling from visual-generation pretraining are crucial for embodied robots. Recent unified models of generation and understanding have demonstrated strong capabilities in both comprehension and generation through large-scale pretraining. We posit that robotic policy learning can likewise benefit from the combined strengths of understanding, planning, and continuous future representation learning. Building on this insight, we introduce UniJEPA, which acquires the ability to dynamically model high-dimensional visual features through pretraining on over 1M internet-scale instructional manipulation videos. Subsequently, UniJEPA is fine-tuned on data collected from the robot embodiment, enabling the learning of mappings from predictive representations to action tokens. Extensive experiments show our approach consistently outperforms baseline methods in terms of 9\\% and 12\\% across simulation environments and real-world out-of-distribution tasks."
-  },
-  {
-    "title": "SCU-Hand with Integrated Single-Sheet Valve: A Funnel-Shaped Robotic Hand for Milligram-Scale Powder Handling",
-    "original_title": "SCU-Hand with Integrated Single-Sheet Valve: A Funnel-Shaped Robotic Hand for Milligram-Scale Powder Handling",
-    "link": "https://arxiv.org/abs/2512.07091",
-    "date": "2026-05-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2512.07091v2 Announce Type: replace \nAbstract: Laboratory Automation (LA) has the potential to accelerate solid-state materials discovery by enabling continuous robotic operation without human intervention. While robotic systems have been developed for tasks such as powder grinding and X-ray diffraction (XRD) analysis, fully automating powder handling at the milligram scale remains a significant challenge due to the complex flow dynamics of powders and the diversity of laboratory tasks. To address this challenge, this study proposes the SCU-Hand-SV (Soft Conical Universal Robotic Hand with Single-sheet Valve), which preserves the softness and conical sheet designs in prior work while incorporating a controllable valve at the cone apex to enable precise, incremental dispensing of milligram-scale powder quantities. The SCU-Hand-SV is integrated with an external balance through a feedback control system based on a model of powder flow and online parameter identification. Experimental evaluations with glass beads, monosodium glutamate, and titanium dioxide demonstrated that 80% of the trials achieved an error within -2 mg to +2 mg, and the maximum error observed was approximately 20 mg across a target range of 20 mg to 3 g. In addition, by incorporating flow prediction models commonly used for hoppers and performing online parameter identification, the system is able to adapt to variations in powder dynamics. Compared to direct PID control, the proposed model-based control significantly improved both accuracy and convergence speed. These results highlight the potential of the proposed system to enable efficient and flexible powder weighing, with scalability toward larger quantities and applicability to a broad range of laboratory automation tasks."
-  },
-  {
-    "title": "TeleGate: Whole-Body Humanoid Teleoperation via Gated Expert Selection with Motion Prior",
-    "original_title": "TeleGate: Whole-Body Humanoid Teleoperation via Gated Expert Selection with Motion Prior",
-    "link": "https://arxiv.org/abs/2602.09628",
-    "date": "2026-05-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2602.09628v2 Announce Type: replace \nAbstract: Real-time whole-body teleoperation is a critical method for humanoid robots to perform complex tasks in unstructured environments. However, developing a unified controller that robustly supports diverse human motions remains a significant challenge. Existing methods typically distill multiple expert policies into a single general policy, which often inevitably leads to performance degradation, particularly on highly dynamic motions. This paper presents TeleGate, a unified whole-body teleoperation framework for humanoid robots that achieves high-precision tracking across various motions while avoiding the performance loss inherent in knowledge distillation. Our key idea is to preserve the full capability of domain-specific expert policies by training a lightweight gating network, which dynamically activates experts in real-time based on proprioceptive states and reference trajectories. Furthermore, to compensate for the absence of future reference trajectories in real-time teleoperation, we introduce a VAE-based motion prior module that extracts implicit future motion intent from historical observations, enabling anticipatory control for motions requiring prediction such as jumping and standing up. We conducted empirical evaluations in simulation and also deployed our technique on the Unitree G1 humanoid robot. Using only 2.5 hours of motion capture data for training, our TeleGate achieves high-precision real-time teleoperation across diverse dynamic motions (e.g., running, fall recovery, and jumping), significantly outperforming the baseline methods in both tracking accuracy and success rate."
-  },
-  {
-    "title": "QuickLAP: Quick Language-Action Preference Learning for Semi-Autonomous Systems",
-    "original_title": "QuickLAP: Quick Language-Action Preference Learning for Semi-Autonomous Systems",
-    "link": "https://arxiv.org/abs/2511.17855",
-    "date": "2026-05-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2511.17855v2 Announce Type: replace-cross \nAbstract: Robots must learn from both what people do and what they say, but either modality alone is often incomplete: physical corrections are grounded but ambiguous in intent, while language expresses high-level goals but lacks physical grounding. We introduce QuickLAP: Quick Language-Action Preference learning, a Bayesian framework that fuses physical and language feedback to infer reward functions in real time. Our key insight is to treat language as a probabilistic observation over the user's latent preferences, clarifying which reward features matter and how physical corrections should be interpreted. QuickLAP uses Large Language Models (LLMs) to extract reward feature attention masks and preference shifts from free-form utterances, which it integrates with physical feedback in a closed-form update rule. This enables fast, real-time, and robust reward learning that handles ambiguous feedback. In a semi-autonomous driving simulator, QuickLAP reduces reward learning error by over 70% compared to physical-only and heuristic multimodal baselines. A 15-participant user study further validates our approach: participants found QuickLAP significantly more understandable and collaborative, and preferred its learned behavior over baselines. Code is available at https://github.com/MIT-CLEAR-Lab/QuickLAP."
-  },
-  {
-    "title": "Prismatic World Model: Learning Compositional Dynamics for Planning in Hybrid Systems",
-    "original_title": "Prismatic World Model: Learning Compositional Dynamics for Planning in Hybrid Systems",
-    "link": "https://arxiv.org/abs/2512.08411",
-    "date": "2026-05-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2512.08411v2 Announce Type: replace-cross \nAbstract: Model-based planning in robotic domains is challenged by the hybrid nature of physical dynamics, where continuous motion is punctuated by discrete events such as contacts and impacts. Conventional latent world models typically employ monolithic neural networks that enforce global continuity, which over-smooths distinct dynamic modes (e.g., sticking vs. sliding, flight vs. stance). For a planner, this smoothing results in compounding errors during long-horizon lookaheads, rendering the search process unreliable at physical boundaries. To address this, we introduce the Prismatic World Model (PRISM-WM), a structured architecture designed to decompose complex hybrid dynamics into composable primitives. PRISM-WM uses a context-aware Mixture-of-Experts (MoE) framework where a gating mechanism implicitly identifies the current physical mode, and specialized experts predict the associated transition dynamics. We further introduce a latent orthogonalization objective to ensure expert diversity, preventing mode collapse. By modeling the mode transitions in system dynamics, PRISM-WM reduces rollout drift. Experiments on continuous control benchmarks, including high-dimensional humanoids and multi-task settings, demonstrate that PRISM-WM provides a high-fidelity substrate for trajectory optimization algorithms (e.g., TD-MPC), indicating its potential as a foundational model for model-based agents."
-  },
-  {
-    "title": "Humanoid Robot Price: 2026 Cost Guide ($1.4K–$320K) - Robozaps",
-    "original_title": "Humanoid Robot Price: 2026 Cost Guide ($1.4K–$320K) - Robozaps",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5zcGxFaF9ET2tfZHM2dHpPbGNpdVQ1eE83RUVNamxfc1pjM0hsdmdlMzN3cXhCamJRaFlQTWxNRXp1NWdHbHFvQmJDUDZ1V2lPa1R1OTVUeDF0TkE?oc=5",
-    "date": "2026-05-14 03:54",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Humanoid Robot Price: 2026 Cost Guide ($1.4K–$320K)  Robozaps"
-  },
-  {
-    "title": "Chinese robots attract attention, cooperation in Central, Eastern European markets - China.org.cn",
-    "original_title": "Chinese robots attract attention, cooperation in Central, Eastern European markets - China.org.cn",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CeUpGc0t2TkxRY19CYk9pWlBnQnl3WlJtSERnNmw5TTlkdFJBaldvMS1fOW5CVWoyWHRsN0kyRUFScS03NG1ScVEzVGlVWWZUZFNCSWxYenlicEhsQmRRMGx6Q3IwWXVCM0E?oc=5",
-    "date": "2026-05-14 01:41",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese robots attract attention, cooperation in Central, Eastern European markets  China.org.cn"
   }
 ]
