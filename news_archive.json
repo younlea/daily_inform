@@ -1,5 +1,23 @@
 [
   {
+    "title": "Video: Chinese humanoid robots go live on factory production line - Interesting Engineering",
+    "original_title": "Video: Chinese humanoid robots go live on factory production line - Interesting Engineering",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSjVwTjdsT1o3YUNYbVpxelpaNGloLUJTYnVLb0xXdHJmQTFtMUZTUWVxeEIya3BST00wWnRsRWF3dUFHM0N6ei04UU9IbG9QYWpqb28zd0hmdko3TUFmemNhdExXczkzZzdHWUd0SXhpaVpfNDBjSDdHU0FlSEhxdWo1V1BJTklIaWNUUWtGS1M5UVI1dl9VTnVrREVzalFITVljWFRBMkhGU2MzZHBVa0pIdWFhajF3X1lpR1J2Y1NKQmhlX2QyWmhMV0I?oc=5",
+    "date": "2026-06-23 15:45",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Video: Chinese humanoid robots go live on factory production line  Interesting Engineering"
+  },
+  {
+    "title": "An Ex-Meta L8’s Agentic Engineering Setup",
+    "original_title": "An Ex-Meta L8’s Agentic Engineering Setup",
+    "link": "https://blog.bytebytego.com/p/an-ex-meta-l8s-agentic-engineering",
+    "date": "2026-06-23 15:31",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "If you’re on the same journey of making your work with agents more productive and enjoyable, I hope this gives you a head start and shortcuts some of your own exploration."
+  },
+  {
     "title": "At Viva Tech, AGIBOT Showcases Embodied AI Robots",
     "original_title": "At Viva Tech, AGIBOT Showcases Embodied AI Robots",
     "link": "https://humanoidroboticstechnology.com/industry-news/at-viva-tech-agibot-showcases-embodied-ai-robots/",
@@ -925,6 +943,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.23689v1 Announce Type: new \nAbstract: Learning robust dexterous grasping requires real-world data that records the physical outcomes of grasp attempts. Such data is hard to obtain at scale: teleoperation yields valid physical outcomes but is slow and operator-biased, while simulation-based generation is cheap and scalable but cannot certify contact validity. A natural solution is to generate candidate grasps and verify them on real hardware, but this scales only if the entire collection loop (perception, execution, labeling, and reset) runs without human intervention. We present AutoDex, an automated real-world data-collection system that closes this loop: for each candidate from a replaceable generator, it localizes the object under severe hand-object occlusion with dense 20-camera perception, executes collision-monitored robot motions, labels lift-and-hold success or failure, and actively resets the object between trials to expose additional candidates across stable poses. The result is a reusable database of physically labeled grasp trials that downstream systems can query by retrieval and feasibility filtering. Using AutoDex, we collect 3,593 grasp trials across Allegro and Inspire hands on 100 diverse objects, with synchronized multi-view observations and robot-state logs. For a matched 500-trajectory collection, AutoDex requires 10.3 h versus 49.4 h for teleoperation, yielding a 4.8x throughput improvement, and grasps retrieved from the AutoDex-validated database succeed 76% versus 34% for simulation-only validation. Code and data will be publicly released."
+  },
+  {
+    "title": "MotionPyramid: Hierarchical Motion Representation and Residual Interfaces",
+    "original_title": "MotionPyramid: Hierarchical Motion Representation and Residual Interfaces",
+    "link": "https://arxiv.org/abs/2606.20705",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.20705v1 Announce Type: cross \nAbstract: We ask whether the representational hierarchy seen in perception, from local primitives such as edges to higher level structures such as parts and objects, can be established for motion. In humanoid control, low level actions specify immediate motor commands, while meaningful behavior is organized over longer temporal scales, including contacts, gait fragments, balance recovery, reaching, and whole body skills. We introduce MotionPyramid, a hierarchical action representation that learns such structure from motion data. Starting from a motion tracking teacher, it trains a recursive stack of latent decoders: low level latents decode to immediate full body motor commands, while higher level latents unfold through lower levels into temporally extended motion programs. After pretraining, the hierarchy is frozen and reused by downstream reinforcement learning policies as a family of action interfaces at different control resolutions. Experiments show the learned levels form a motion hierarchy: coarser interfaces improve early learning and motion regularity by constraining exploration to structured segments, while finer interfaces preserve feedback control and final task precision. Representation probes show the hierarchy supports traversal, interpolation, transition, and qualitative composition, exposing editable control handles across temporal scales. Finally, we introduce Residual Interfaces, letting a downstream policy maintain coarse, segment level, and frame level residual commands through the frozen hierarchy. Analogous to residual or skip connections in deep networks, this allows coarse motion programs and fine residual corrections to coexist within one controller. MotionPyramid shows that motion, like perception, can be organized into a reusable multi level representation, providing structured abstraction without sacrificing controllability."
+  },
+  {
+    "title": "SignVLA: Real-Time Sign Language-Guided Robotic Manipulation via Attention LSTM and Vision-Language-Action Models",
+    "original_title": "SignVLA: Real-Time Sign Language-Guided Robotic Manipulation via Attention LSTM and Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.20857",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.20857v1 Announce Type: cross \nAbstract: Vision-Language-Action (VLA) models enable robots to execute manipulation tasks from natural-language instructions grounded in visual observations. However, existing VLA interfaces primarily rely on speech or text input, limiting accessibility for deaf, hard-of-hearing, and speech-impaired users. We present SignVLA, a real-time sign-language-guided VLA framework for accessible human-robot interaction. The system introduces a modular sign-to-text interface that converts visual sign gestures into semantic instructions compatible with downstream VLA policies. Given video streams, SignVLA extracts hand landmark features and employs an attention-enhanced Long Short-Term Memory (LSTM) network to capture temporal gesture dynamics for alphabet- and command-level sign recognition. A temporal stabilization module further improves prediction consistency in real-time interaction settings.The generated instruction sequence is then passed to a downstream VLA policy for sign-conditioned robotic manipulation. Experimental results demonstrate stable real-time sign recognition and successful execution of manipulation tasks driven by sign-language inputs. Our findings suggest that lightweight temporal sign recognition can serve as an effective and practical accessibility layer for multimodal embodied intelligence."
+  },
+  {
+    "title": "Can Single-View Mesh Reconstruction Generalize to Robot Camera Rotation?",
+    "original_title": "Can Single-View Mesh Reconstruction Generalize to Robot Camera Rotation?",
+    "link": "https://arxiv.org/abs/2606.22987",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.22987v1 Announce Type: cross \nAbstract: Single-view mesh reconstruction predicts object meshes and spatial layouts from a single observation, making it attractive for fast robot spatial reasoning and real-to-sim digital twins. However, robot-mounted cameras naturally rotate during manipulation and navigation, while learned single-view reconstruction models often rely on view-dependent priors and may generalize poorly to out-of-distribution camera rotations. Such rotations can introduce 3D inconsistencies, incorrect layouts, and violations of physical constraints, but this failure mode remains under-evaluated. We introduce an evaluation protocol with controlled axis-wise roll, pitch, and yaw sweeps to trace errors in monocular depth estimation (MDE), canonical object meshes, camera-space layout, and physical plausibility within a representative SAM3D-style pipeline. On the Aria Digital Twin dataset and a real Franka wrist-camera sequence, camera rotations induce MDE distortion, layout drift, and collision penetration, while canonical mesh predictions remain relatively stable. A two-stage SAM3D+FoundationPose pipeline is more robust than one-stage feed-forward layout prediction, and our Gravity-Aware Refinement reduces one-stage pairwise ICP-based layout-orientation error by 47.1$\\%$. Our evaluation reveals that current single-view mesh reconstruction methods generalize poorly to robot camera rotation, and suggests that explicit gravity cues are important for reliable robotic single-view mesh reconstruction."
+  },
+  {
+    "title": "Flow6D: Discrete-to-Continuous Flow Matching for Efficient and Accurate Category-Level 6D Pose Estimation",
+    "original_title": "Flow6D: Discrete-to-Continuous Flow Matching for Efficient and Accurate Category-Level 6D Pose Estimation",
+    "link": "https://arxiv.org/abs/2606.23293",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.23293v1 Announce Type: cross \nAbstract: 6D pose estimation is a key task in computer vision and embodied AI, widely used in robotic manipulation, augmented reality, etc. Existing methods directly regress in a high-dimensional continuous space, facing two key challenges in category-level pose estimation: limited accuracy due to noise and local optima, and inefficient search over an infinite space that hinders real-time performance. This paper proposes Flow6D, a hierarchical flow matching framework with a two-stage discrete latent space localization-continuous pose regression strategy. Rotation and translation parameters are first discretized into bins, with a discrete flow matching model locking the latent space around the true pose to reduce search complexity. Then, by sampling in the latent space, a continuous flow matching model predicts local pose residuals to optimize the estimate and regress to an accurate pose. The framework also naturally extends to articulated objects, outperforming state-of-the-art methods on synthetic and real datasets with real-time inference at 70 FPS. Project website: https://flow6d.github.io/."
+  },
+  {
+    "title": "A Watermark for Vision-Language-Action and World Action Models",
+    "original_title": "A Watermark for Vision-Language-Action and World Action Models",
+    "link": "https://arxiv.org/abs/2606.23574",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.23574v1 Announce Type: cross \nAbstract: Vision-language-action (VLA) models and world-action models (WAM) are the generative models now driving general-purpose robot control, turning raw camera input directly into motor commands. They are increasingly deployed as black-box services, where a partner runs the policy through an interface while the owner keeps the weights private. Training such a model takes proprietary data and heavy computational power, making the deployed model itself a valuable intellectual property.\n  To address this, we propose the \\emph{keyed latent-provenance verification} method, which fingerprints the policy through the seed of the Gaussian noise vector that the models draw before generation. At the injection stage, the owner swaps this seed for a keyed one with the same distribution as ordinary noise, so the fingerprinted actions are statistically identical to those of an ordinary run and an adversary watching the output finds no signal to detect or remove. At the verification stage, the owner runs the suspect model under authorized access and records the action channels the robot executes, a partial and possibly post-processed view of the policy's output. From this view, the verifier recovers the seed by gradient-based maximum a posteriori (MAP) optimization, tests it for the secret key to score each rollout, and aggregates these scores into a single decision on whether the suspect model belongs to the owner.\n  We evaluate the method on two representative models across two robot suites. The experiments cover detection of the fingerprint, identification of which of several keys a suspect carries, robustness to a range of attacks, and an analysis of why the design works. Across both models, the fingerprint can be detected reliably with little change to task performance, and it remains detectable under output-side removal attacks and weight-level edits."
+  },
+  {
+    "title": "Learning Process Rewards via Success Visitation Matching for Efficient RL",
+    "original_title": "Learning Process Rewards via Success Visitation Matching for Efficient RL",
+    "link": "https://arxiv.org/abs/2606.23640",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.23640v1 Announce Type: cross \nAbstract: In many modern applications of reinforcement learning (RL), the natural reward for a task of interest is inherently sparse: a reward of 0 is given everywhere except when the task is completed, when a reward of +1 is given. Training a policy to maximize such a sparse reward requires solving a challenging credit assignment problem, leading to slow or ineffective RL improvement. We propose a simple approach to transform a sparse outcome reward into a dense process reward. Our approach relies on training a discriminator to distinguish between previous successful and unsuccessful episodes, and using this discriminator to incentivize the RL-learned policy to match the state-action visitations of successful episodes, while avoiding those of unsuccessful episodes. By incentivizing the policy to match the visitations over all states, not just those that correspond to task success, this reward provides dense feedback on whether progress is being made towards task completion, and, we show, provably achieves this without changing the optimal policy. Focusing on finetuning of robotic control policies, we demonstrate that our approach leads to significantly faster RL finetuning performance on both simulated and real-world manipulation tasks, as compared to simply maximizing the sparse outcome reward."
+  },
+  {
+    "title": "GAPartManip: A Large-scale Part-centric Dataset for Material-Agnostic Articulated Object Manipulation",
+    "original_title": "GAPartManip: A Large-scale Part-centric Dataset for Material-Agnostic Articulated Object Manipulation",
+    "link": "https://arxiv.org/abs/2411.18276",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2411.18276v3 Announce Type: replace \nAbstract: Effectively manipulating articulated objects in household scenarios is a crucial step toward achieving general embodied artificial intelligence. Mainstream research in 3D vision has primarily focused on manipulation through depth perception and pose detection. However, in real-world environments, these methods often face challenges due to imperfect depth perception, such as with transparent lids and reflective handles. Moreover, they generally lack the diversity in part-based interactions required for flexible and adaptable manipulation. To address these challenges, we introduced a large-scale part-centric dataset for articulated object manipulation that features both photo-realistic material randomization and detailed annotations of part-oriented, scene-level actionable interaction poses. We evaluated the effectiveness of our dataset by integrating it with several state-of-the-art methods for depth estimation and interaction pose prediction. Additionally, we proposed a novel modular framework that delivers superior and robust performance for generalizable articulated object manipulation. Our extensive experiments demonstrate that our dataset significantly improves the performance of depth perception and actionable interaction pose prediction in both simulation and real-world scenarios. More information and demos can be found at: https://pku-epic.github.io/GAPartManip/."
+  },
+  {
+    "title": "Intent-Handover: Grounding Language in Human-Usage Regions for Trustworthy Robot-to-Human Handovers",
+    "original_title": "Intent-Handover: Grounding Language in Human-Usage Regions for Trustworthy Robot-to-Human Handovers",
+    "link": "https://arxiv.org/abs/2503.03579",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2503.03579v2 Announce Type: replace \nAbstract: Spoken instructions in robot-to-human handovers may specify either an object (\"the cup\") or an intended use (\"pour water\"); in both cases, successful handover requires the robot to infer the target object and the region remaining available for the human to hold. If the robot grasps that hold region, the object could become awkward to receive and immediately use, potentially reducing perceived competence and trust; if the gripper approaches too close to the receiving hand during delivery, perceived safety may also suffer. We present Intent-Handover, which grounds unconstrained speech and visual scene context into explicit grasp and delivery constraints. Given a spoken instruction and a scene observation, a vision-language model identifies the target object and the intended human-usage region. A grasp optimization module then selects a feasible grasp keeping this region accessible while enforcing clearance from the predicted receiving hand. During execution, the robot tracks upper-body key points to estimate the user's receiving pose and places the handover at an ergonomically feasible location. In a within-subjects ablation study (n=30), human-usage region awareness increases perceived trust, hand-gripper collision avoidance increases perceived safety, and interaction comfort is highest when both are enabled. Website and code: https://robot-future.github.io/intent-handover/."
   },
   {
     "title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint",
@@ -17908,95 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "There’s a version of growth that looks great on paper and quietly wrecks a company from the inside. It usually starts the same way: a business enters a new market – let’s say the U.S. – gains some momentum, starts pulling in users faster than expected, and then realizes too late that the back end […]"
-  },
-  {
-    "title": "China’s Unitree unveils transformable humanoid mecha robot with cockpit - MSN",
-    "original_title": "China’s Unitree unveils transformable humanoid mecha robot with cockpit - MSN",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeXg3U0dNb0llMThHSEcxS2NqYnVrcTlCVThSUEZUNU5iUTBYT0pMUEZHalREekVlazVjY2tVTlRTb084aEFMQ2hhdWJOc1VNd1pOd2diSUotY203a2RlTDdJVloyeVBraW5EQmktQlZJbkdZSzBZc084d0p6ZUNCY2JvMjhTQVFGaFN2NlF1Mm5Oemg5U1dMajJZQllncWR4WUp2Vk9UZHNDZFg2N05fb0daU1JRQnV3ZHh1TQ?oc=5",
-    "date": "2026-05-13 16:25",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China’s Unitree unveils transformable humanoid mecha robot with cockpit  MSN"
-  },
-  {
-    "title": "What to Look for When Comparing Term Life Insurance Quotes Online",
-    "original_title": "What to Look for When Comparing Term Life Insurance Quotes Online",
-    "link": "https://roboticsandautomationnews.com/2026/05/13/what-to-look-for-when-comparing-term-life-insurance-quotes-online/101476/",
-    "date": "2026-05-13 16:19",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "Over 170 million people in the US have life insurance, and if you’re one of them, comparing term life insurance quotes online is about more than finding the lowest monthly premium. You need to verify that the death benefit actually lands in the hands of your beneficiaries without a legal struggle. Modern digital tools have […]"
-  },
-  {
-    "title": "Humanoid to Deploy Thousands of Humanoid Robots on Schaeffler Factory Floors",
-    "original_title": "Humanoid to Deploy Thousands of Humanoid Robots on Schaeffler Factory Floors",
-    "link": "https://humanoidroboticstechnology.com/industry-news/humanoid-to-deploy-thousands-of-humanoid-robots-on-schaeffler-factory-floors/",
-    "date": "2026-05-13 16:03",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "Humanoid has signed a binding, phased deployment and supply agreement with Schaeffler, to integrate humanoid robots directly into live manufacturing operations. The first systems go live in Germany before the end of 2026. Humanoid will also purchase actuators from Schaeffler as a preferred supplier. The agreement is one of the largest disclosed humanoid robot rollouts […]\nThe post Humanoid to Deploy Thousands of Humanoid Robots on Schaeffler Factory Floors appeared first on Humanoid Robotics Technology."
-  },
-  {
-    "title": "Chinese Robot Startup Releases Half-ton Mech Suit, Politely Asks People Not to Weaponize It - ZME Science",
-    "original_title": "Chinese Robot Startup Releases Half-ton Mech Suit, Politely Asks People Not to Weaponize It - ZME Science",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1OTm1yWDExLWFNVlRxVlJYVjdSanl2WDJLZDdhZFhQVzdSby04UGw1WnVLLUNKY3MyY0dYN3FDTzh1elJrTWFhVV9lMHdULXM2bWhkZ19NdDR5cExsWl9NdXhn?oc=5",
-    "date": "2026-05-13 15:43",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese Robot Startup Releases Half-ton Mech Suit, Politely Asks People Not to Weaponize It  ZME Science"
-  },
-  {
-    "title": "High Performance Rate Limiting at Databricks",
-    "original_title": "High Performance Rate Limiting at Databricks",
-    "link": "https://blog.bytebytego.com/p/high-performance-rate-limiting-at",
-    "date": "2026-05-13 15:30",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "In this article, we look at how Databricks implemented rate limiting at scale, how they shrank the critical path, and the accuracy tradeoff that shrinking usually requires."
-  },
-  {
-    "title": "Unitree’s transforming mecha robot is the closest thing yet to owning a real Transformer - Yanko Design",
-    "original_title": "Unitree’s transforming mecha robot is the closest thing yet to owning a real Transformer - Yanko Design",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPM3R5Y3hUZmpjU29LMVY1WmJTVEZQRzZid3d6YS1yZ0RsVDMyWGdYS0g2bzJOSTV5cC1PSTB2SkgwMFBvNWFzWVRYZE4zWk9BdWFxdHdXY1lIem12eElZOU1oNWdkdkRaaDI3OGowdk9sNFFzMVVnOHlvTEI4UjB4MlpZb2k4Wld6Q3dwRzZiZHA1aEhRY3NQREI4VmhrbDVGbF9NeGRNWHFESkMxLXl0aHlYc3lWSVZLb2RNMzA3aTU2RWZLZGfSAcsBQVVfeXFMUF83Q0pLZ0FMVDk1SDNpdDY4TVE0ZmgtYi1FR3o2QVFnbVRtSldEOXZTd1d5U1RSM2lqdmt4MEJ0Rjh0djVpVXNxbEpZeFVkQmMyang2c1Q2MDBfVGNZWHBrb1MwV3pmRDFVXzJfbUU3RUlsS1piTUVYd18wd09sTjgzbkhjOW1yQXhtX05DM3BEQjdubm1JN0NrWkxzSDZGS2MtRnlnYWtvQWdscW5BQnB1QlJCa28zMFh3UWw5WWg2d0RmVXZ6aGhuZkk?oc=5",
-    "date": "2026-05-13 15:20",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree’s transforming mecha robot is the closest thing yet to owning a real Transformer  Yanko Design"
-  },
-  {
-    "title": "Why Tech Travelers Need a Personal Killswitch for Hotel Wi-Fi",
-    "original_title": "Why Tech Travelers Need a Personal Killswitch for Hotel Wi-Fi",
-    "link": "https://roboticsandautomationnews.com/2026/05/13/why-tech-travelers-need-a-personal-killswitch-for-hotel-wi-fi/101470/",
-    "date": "2026-05-13 15:08",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Commissioning a project at a remote facility usually involves a suitcase full of proprietary hardware and a laptop housing months of R&D. In other words, it usually means moving through the world with what feels like your entire life on your back. You may not be as slow as an IRL snail, but you’re certainly […]"
-  },
-  {
-    "title": "Honeybees teach drones how to navigate",
-    "original_title": "Honeybees teach drones how to navigate",
-    "link": "https://techxplore.com/news/2026-05-honeybees-drones.html",
-    "date": "2026-05-13 15:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "It sounds like science fiction, but also strangely familiar: drones buzzing around, inspecting tomatoes in greenhouses, delivering your package or inspecting an industrial site. With all the talk about drone-swarms, development in drones seems to move fast. But their navigation still requires a lot of computing power and memory, making them heavy, expensive and energy-hungry."
-  },
-  {
-    "title": "Humanoid and Schaeffler strike deal to deploy thousands of humanoid robots in factories",
-    "original_title": "Humanoid and Schaeffler strike deal to deploy thousands of humanoid robots in factories",
-    "link": "https://roboticsandautomationnews.com/2026/05/13/humanoid-secures-landmark-deal-with-schaeffler-to-deploy-thousands-of-humanoid-robots/101411/",
-    "date": "2026-05-13 15:00",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Humanoid, a UK-based AI and robotics company, has signed a binding, phased deployment and supply agreement with Schaeffler, a leading motion technology company, to integrate humanoid robots directly into live manufacturing operations. The first systems go live in Germany before the end of 2026. Humanoid will also purchase actuators from Schaeffler as a preferred supplier. […]"
-  },
-  {
-    "title": "China’s Unitree Reveals $650K Giant Robot That Walks, Crawls, and Smashes Walls - eWeek",
-    "original_title": "China’s Unitree Reveals $650K Giant Robot That Walks, Crawls, and Smashes Walls - eWeek",
-    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5YM3Fya2h0LThwMHljXzdMRUZJQmdkV3ZvcEJXc01pdU5mUG5pWFgzN3hSY3FJMWlmYVJ1b0lfUmF0OTlSdkJBV1MtSjl4clFQYnAySUhIeldQU0J6blkxQWRNaGRtT1pRVXdQR3JVczI0NzhseDVv?oc=5",
-    "date": "2026-05-13 14:56",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China’s Unitree Reveals $650K Giant Robot That Walks, Crawls, and Smashes Walls  eWeek"
   }
 ]
