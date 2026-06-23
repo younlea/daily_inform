@@ -1,5 +1,14 @@
 [
   {
+    "title": "At Viva Tech, AGIBOT Showcases Embodied AI Robots",
+    "original_title": "At Viva Tech, AGIBOT Showcases Embodied AI Robots",
+    "link": "https://humanoidroboticstechnology.com/industry-news/at-viva-tech-agibot-showcases-embodied-ai-robots/",
+    "date": "2026-06-23 14:56",
+    "source": "Humanoid Tech Blog",
+    "category": "hand",
+    "summary": "AGIBOT presented its embodied AI robotics portfolio at VivaTech 2026 in Paris. The company conducted live demonstrations across interaction, locomotion, manipulation, and multi-robot coordination. As part of VivaTech’s 10th-anniversary celebration, AGIBOT participated in the public technology showcase on the Champs-Élysées, where visitors experienced humanoid robotics alongside other emerging technologies. At the main VivaTech venue, AGIBOT […]\nThe post At Viva Tech, AGIBOT Showcases Embodied AI Robots appeared first on Humanoid Robotics Technology."
+  },
+  {
     "title": "Why physical AI 2.0 needs a reality check",
     "original_title": "Why physical AI 2.0 needs a reality check",
     "link": "https://www.therobotreport.com/why-physical-ai-2-0-needs-reality-check/",
@@ -844,6 +853,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.23565v1 Announce Type: new \nAbstract: LLM agents follow a practical execution loop in digital environments: they reason over structured states, invoke tools, inspect feedback, and revise actions. Extending this loop to physical robots is difficult because physical execution is continuous, embodiment-dependent, uncertain, and constrained by safety. Existing embodied-AI systems have advanced manipulation, spatial understanding, navigation, and humanoid control, but these capabilities often remain specialized modules or loosely coupled decision loops. In this work, we introduce HoloAgent-0, a unified embodied agent framework for real-world robot deployment. Embodied AgentOS converts language instructions into executable skill graphs, schedules robot resources, monitors execution, and triggers clarification or re-planning from runtime feedback. HoloAgent-0 organizes heterogeneous robot models and controllers through three coupled layers: Embodied AgentOS for closed-loop execution, 3D spatial memory for physical world grounding, and embodied skills for robot action. We deploy HoloAgent-0 on real hardware and evaluate its spatial memory, long-horizon navigation, and closed-loop execution across motion generation, object search, cross-robot coordination, and mobile manipulation."
+  },
+  {
+    "title": "A Generative Model for Closed-Loop Microsimulation of Signalized Intersections",
+    "original_title": "A Generative Model for Closed-Loop Microsimulation of Signalized Intersections",
+    "link": "https://arxiv.org/abs/2606.23588",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.23588v1 Announce Type: new \nAbstract: Traffic microsimulators rely on hand-crafted behavior models that reproduce aggregate flow but miss the heterogeneous interactions between vehicles at signalized intersections. Learned trajectory predictors capture richer interactions but are short-horizon and tend to be unstable when run in closed loop. We present Enactor, an actor-centric generative model for closed-loop intersection microsimulation. The model focuses on vehicles; pedestrians are included as context that can influence vehicle decisions but not predicted. Dynamic actors and lane polylines are encoded in polar coordinates referenced to the intersection center. A transformer with separate spatial and temporal attention blocks predicts a distribution over each actor's next-step motion ($s$, $\\alpha$). Training uses a closed-loop curriculum so the model is exposed to its own predictions. We evaluate Enactor in two regimes. In a 4000-second simulation-in-the-loop test at two intersection geometries, Enactor controls every dynamic vehicle against a continuously refreshing actor set rather than the fixed cohort that learned trajectory predictors are usually evaluated against. It recovers the SUMO data generator's speed and travel-time distributions with KL divergence over an order of magnitude lower than a recent transformer baseline on travel time, and substantially lower on speed (roughly $5\\times$ lower at Site 1), and reduces red-light violations relative to the same baseline by more than an order of magnitude. An ablation isolates the leader rear-bumper feature as the change with the largest effect on intersection-aware safety metrics. We also evaluate on real-world field data and apply the same architecture to naturalistic vehicle trajectories from a fish-eye camera at a signalized intersection and evaluate it on multi-horizon predictive tasks. Enactor outperforms a constant-velocity baseline at every horizon evaluated."
+  },
+  {
+    "title": "KEMO: Event-Driven Keyframe Memory for Long-Horizon Robot Manipulation with VLA Policies",
+    "original_title": "KEMO: Event-Driven Keyframe Memory for Long-Horizon Robot Manipulation with VLA Policies",
+    "link": "https://arxiv.org/abs/2606.23589",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.23589v1 Announce Type: new \nAbstract: Long-horizon robot manipulation remains challenging because similar observations may occur at different execution stages, while the appropriate action depends on previously completed operations. Memory can address this ambiguity by enabling policies to infer task progress from execution history. However, existing memory-augmented approaches often either retain dense histories that require compression or rely primarily on recent context that may discard earlier task-relevant events. In this work, we propose propose KEMO, a lightweight plug-in memory framework that automatically selectively preserves keyframes associated with task-relevant state changes for VLA policies. KEMO combines robot kinematics with visual filtering to detect events, encodes the selected keyframes as compact temporally ordered memory tokens, and integrates them with current visual features through cross-attention and gated residual fusion for VLA training. The detected events also define higher-weight training samples near critical transitions. We evaluate KEMO on various real-world dual-arm manipulation tasks spanning 2 to 6 scored subtasks, and trajectory length ranging from 830 steps to 2846 execution steps (durations from 28 to 95 seconds). Compared with the memory-free baseline (e.g., $\\pi_{0.5}$), KEMO improves aggregate Task Success Rate by 23.6\\% and Stage Completion Rate by 34.1\\%. Ablations show that event-driven keyframe selection outperforms uniform sampling and recent-frame retention, while the proposed gated fusion and keyframe-aligned loss weighting provide complementary gains."
+  },
+  {
+    "title": "dVLA-RL: Reinforcement Learning over Denoising Trajectories for Discrete Diffusion Vision-Language-Action Models",
+    "original_title": "dVLA-RL: Reinforcement Learning over Denoising Trajectories for Discrete Diffusion Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.23623",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.23623v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have established a powerful paradigm for generalist robotic manipulation by grounding control into the semantic reasoning of VLMs. Prevailing architectures typically model actions continuously via diffusion or flow processes, or discretely through either autoregressive generation or parallel decoding. Recently, Discrete Diffusion VLAs (dVLAs) have emerged as a distinct alternative, unifying vision, language, and action into a single discrete token space via masked generative modeling. While combining iterative refinement with unified representations, its training has thus far been restricted to Supervised Fine-Tuning (SFT), leaving the potential of Reinforcement Learning (RL) for further policy refinement largely unexplored. A fundamental challenge in RL for dVLAs is that the marginal probability of the final action generated by dVLAs remains intractable. To solve this problem, we propose \\textbf{dVLA-RL}, shifting the learning objective from the marginal action probability to the joint probability of the sampled generation path. Specifically, by modeling the denoising process as a Markov Decision Process (MDP), we mathematically formulate this path probability as a product of step-wise transitions. This trajectory-level objective provides a unified formulation that natively accommodates variable denoising steps. Leveraging this intrinsic fexibility, we introduce a unified step scheduling approach for complex multi-task learning, tailoring denoising steps to specific task complexities to maximize both success rates and computational effciency. Extensive evaluations demonstrate that our approach achieves a success rate of \\textbf{99.7\\%} on LIBERO. Furthermore, it establishes strong VLA-based results on RoboTwin 2.0 by delivering a \\textbf{30.6\\%} improvement over the SFT baseline, remaining competitive with strong World-Action Model baselines."
+  },
+  {
+    "title": "Learning to See While Learning to Act: Diffusion Models for Active Perception in Robot Imitation",
+    "original_title": "Learning to See While Learning to Act: Diffusion Models for Active Perception in Robot Imitation",
+    "link": "https://arxiv.org/abs/2606.23625",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.23625v1 Announce Type: new \nAbstract: Most imitation learning methods assume full observability in table-top settings. In practice, objects are often occluded, requiring robots to both search and act, and learning this coupled behavior from limited demonstrations remains challenging. We propose See2Act, an imitation learning approach that conditions action prediction on a sequence of actively-inferred viewpoints at test time, by coupling action denoising with viewpoint refinement. The policy is trained using camera poses anchored to keyframe actions from offline demonstrations, enabling implicit learning of where to see, while learning how to act. We empirically demonstrate that in Ravens the policy recovers informative viewpoints under severe occlusions, and on RLBench tasks it improves performance by up to 34% over prior methods. In the real world, we collect 50 demonstrations in a digital twin and achieve zero-shot sim-to-real transfer on pick-and-place tasks using depth observations. The policy handles significant occlusions, showing that learned viewpoint reasoning enables robust manipulation under partial observability."
+  },
+  {
+    "title": "CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation",
+    "original_title": "CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation",
+    "link": "https://arxiv.org/abs/2606.23680",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.23680v1 Announce Type: new \nAbstract: Humanoid loco-manipulation is often simplified into a stop-and-go process: walking to an object, stopping to manipulate it, and then resuming locomotion. It also commonly relies on low degree-of-freedom (DoF) end effectors that behave like an open-close grasp primitive. We introduce CoorDex, a learning pipeline that converts high-dimensional body and dexterous hand control into coordinated latent residual control, enabling high-DoF dexterous loco-manipulation on the move. Starting from simulated whole-body and hand demonstrations, CoorDex trains privileged motion tracking teachers for the humanoid body and dexterous hand, distills them into proprioception-conditioned latent priors, and uses the frozen priors as the action space for downstream residual reinforcement learning. A coordinated latent residual policy composes these priors through shared task context and separate body-hand residual heads, preserving natural whole-body motion while improving finger-level contact reliability. CoorDex enables a Unitree G1 humanoid with a 20-DoF WUJI hand to execute dexterous manipulation while in motion, including non-stop bottle grasping and carrying, fridge door opening on the move, and cube pick-and-turn. Ablations on the walk-grasp-carry task show that joint-space PPO, joint-space hand control, and monolithic latent prediction all fail under the same reward budget, while the latent-prior interface and coordinated residual structure make high-dimensional contact-rich loco-manipulation trainable. Project Page: https://skevinci.github.io/coordex/"
+  },
+  {
+    "title": "LaST-HD: Learning Latent Physical Reasoning from Scalable Human Data for Robot Manipulation",
+    "original_title": "LaST-HD: Learning Latent Physical Reasoning from Scalable Human Data for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2606.23685",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.23685v1 Announce Type: new \nAbstract: Human-hand demonstrations provide a direct and scalable source of physical interaction data for robot learning. While manual retargeting is indispensable for establishing kinematic action correspondence across different morphologies, robust transfer requires going beyond geometry to address the underlying alignment of physical dynamics between human and robot manipulation. To address this, we introduce LaST-HD, a novel human-to-robot action learning paradigm that extends reasoning-before-acting VLA by aligning human-hand and robot demonstrations in a shared latent reasoning space. Rather than mimicking human kinematics, LaST-HD trains an auxiliary action-conditioned world model on unpaired human-hand and robot trajectories to synthesize unified latent targets. After aligning cross-embodiment representations in this shared forward-dynamics space, these targets supervise LaST-HD's latent reasoning process, enabling it to internalize shared physical dynamics and drive efficient human-hand action learning. Moreover, we develop Out-of-Lab (OOL) Glove, a low-cost motion-capture glove tailored to LaST-HD for human-hand data collection. The captured human data provide precise keypoints and serve as universal action supervision across grippers and dexterous hands. Armed with the aligned latent space and high-fidelity human-hand data, we develop a progressive mixed-to-human training recipe comprising mixed human-robot co-training and human-hand online correction post-training. Through mixed co-training, LaST-HD improves generalization to novel objects, scenes, and positions using only human-hand demonstrations. With online correction, LaST-HD further adapts to novel environments and achieves over 90\\% accuracy using only 20 minutes of OOL glove data."
+  },
+  {
+    "title": "LIBERO-Safety: A Comprehensive Benchmark for Physical and Semantic Safety in Vision-Language-Action Models",
+    "original_title": "LIBERO-Safety: A Comprehensive Benchmark for Physical and Semantic Safety in Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.23686",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.23686v1 Announce Type: new \nAbstract: Despite the impressive manipulation capabilities of Vision-Language-Action (VLA) models, their operational safety under strict constraints remains largely unverified. To address this, we introduce a parametric safety benchmark to procedurally generate safety-critical scenarios with comprehensive stochasticity. To overcome the scalability bottlenecks of human teleoperation, we develop a novel keypose-driven data generation pipeline. Leveraging this infrastructure, we curate a large-scale dataset of 19,664 strictly collision-free demonstrations with extensive domain randomization. We then conduct a systematic cross-paradigm evaluation of eight VLA and two embodied foundation models. Our analysis reveals a critical generalization-safety tension: although high-diversity training fosters safer trajectories, task success remains fundamentally bottlenecked by sub-optimal trajectory synthesis and semantic misalignment. By providing a scalable pipeline, a robust dataset, and profound failure-mode insights, LIBERO-Safety establishes a crucial foundation for developing safe and reliable VLA models."
+  },
+  {
+    "title": "AutoDex: An Automated Real-World System for Dexterous Grasping Data Collection",
+    "original_title": "AutoDex: An Automated Real-World System for Dexterous Grasping Data Collection",
+    "link": "https://arxiv.org/abs/2606.23689",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.23689v1 Announce Type: new \nAbstract: Learning robust dexterous grasping requires real-world data that records the physical outcomes of grasp attempts. Such data is hard to obtain at scale: teleoperation yields valid physical outcomes but is slow and operator-biased, while simulation-based generation is cheap and scalable but cannot certify contact validity. A natural solution is to generate candidate grasps and verify them on real hardware, but this scales only if the entire collection loop (perception, execution, labeling, and reset) runs without human intervention. We present AutoDex, an automated real-world data-collection system that closes this loop: for each candidate from a replaceable generator, it localizes the object under severe hand-object occlusion with dense 20-camera perception, executes collision-monitored robot motions, labels lift-and-hold success or failure, and actively resets the object between trials to expose additional candidates across stable poses. The result is a reusable database of physically labeled grasp trials that downstream systems can query by retrieval and feasibility filtering. Using AutoDex, we collect 3,593 grasp trials across Allegro and Inspire hands on 100 diverse objects, with synchronized multi-view observations and robot-state logs. For a matched 500-trajectory collection, AutoDex requires 10.3 h versus 49.4 h for teleoperation, yielding a 4.8x throughput improvement, and grasps retrieved from the AutoDex-validated database succeed 76% versus 34% for simulation-only validation. Code and data will be publicly released."
   },
   {
     "title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "China’s Unitree Reveals $650K Giant Robot That Walks, Crawls, and Smashes Walls  eWeek"
-  },
-  {
-    "title": "How Industrial Automation Services Are Modernizing Legacy Facilities",
-    "original_title": "How Industrial Automation Services Are Modernizing Legacy Facilities",
-    "link": "https://roboticsandautomationnews.com/2026/05/13/how-industrial-automation-services-are-modernizing-legacy-facilities/101465/",
-    "date": "2026-05-13 14:54",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Many older plants still produce dependable output, yet the systems behind that output often show their age. Support teams are asked to meet modern production goals using control systems built for a slower operating model. The gap becomes obvious when downtime rises, and fault detection arrives too late. Luckily, expert industrial automation services are helping […]"
-  },
-  {
-    "title": "Automated Tire emerges from stealth with robotic SmartBay tire service system",
-    "original_title": "Automated Tire emerges from stealth with robotic SmartBay tire service system",
-    "link": "https://roboticsandautomationnews.com/2026/05/13/automated-tire-emerges-from-stealth-with-robotic-smartbay-tire-service-system/101456/",
-    "date": "2026-05-13 14:00",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Automated Tire, Inc. (ATI), a physical AI and robotics company modernizing the traditional automotive service bay, has announced its emergence from stealth and unveiled SmartBay, its industry-first, AI-powered robotic platform designed to execute automotive services, starting with tire changes, wheel balancing, and vehicle inspections. With the SmartBay platform, automotive dealerships and tire and service centers […]"
-  },
-  {
-    "title": "Human-like robot voices boost customer support after mistakes, five experiments show",
-    "original_title": "Human-like robot voices boost customer support after mistakes, five experiments show",
-    "link": "https://techxplore.com/news/2026-05-human-robot-voices-boost-customer.html",
-    "date": "2026-05-13 13:40",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "When service robots make mistakes, it is not only important whether customers receive compensation. The robot's voice can also shape how the situation is perceived. A human-like voice can make customers feel more supported after a service failure. This is the finding of a study by the Chair of Value Based Marketing at the University of Augsburg, published in the Journal of Business Research. The findings are relevant for companies that use service robots and similar AI-based systems."
-  },
-  {
-    "title": "Bridging the gap: Profitability meets sustainability through physical AI",
-    "original_title": "Bridging the gap: Profitability meets sustainability through physical AI",
-    "link": "https://www.therobotreport.com/bridging-gap-profitability-meets-sustainability-through-physical-ai/",
-    "date": "2026-05-13 12:35",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Join Ranpak’s Omar Asali at the Robotics Summit to learn how physical AI scales sustainable, profitable warehouse operations.\nThe post Bridging the gap: Profitability meets sustainability through physical AI appeared first on The Robot Report."
-  },
-  {
-    "title": "Alva Industries to bring its frameless motor technology to the Robotics Summit",
-    "original_title": "Alva Industries to bring its frameless motor technology to the Robotics Summit",
-    "link": "https://www.therobotreport.com/alva-industries-brings-frameless-motor-technology-2026-robotics-summit/",
-    "date": "2026-05-13 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "At the show, Alva will show SlimTorq, one of the thinnest and lightest frameless motors on the market.\nThe post Alva Industries to bring its frameless motor technology to the Robotics Summit appeared first on The Robot Report."
-  },
-  {
-    "title": "Architecting Reliability: How GMSL Diagnostics Enable Robust Vision",
-    "original_title": "Architecting Reliability: How GMSL Diagnostics Enable Robust Vision",
-    "link": "https://www.therobotreport.com/architecting-reliability-how-gmsl-diagnostics-enable-robust-vision/",
-    "date": "2026-05-13 12:14",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Autonomous and robotic systems rely on highbandwidth, lowlatency sensor data to perceive and navigate the world.\nThe post Architecting Reliability: How GMSL Diagnostics Enable Robust Vision appeared first on The Robot Report."
-  },
-  {
-    "title": "The Evolution of Vision Connectivity in Robotics: From USB and Ethernet to GMSL",
-    "original_title": "The Evolution of Vision Connectivity in Robotics: From USB and Ethernet to GMSL",
-    "link": "https://www.therobotreport.com/the-evolution-of-vision-connectivity-in-robotics-from-usb-and-ethernet-to-gmsl/",
-    "date": "2026-05-13 12:13",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "As robotic systems evolve toward higher autonomy, richer perception, and greater scalability, the connectivity technologies used to transport image data have undergone a parallel evolution.\nThe post The Evolution of Vision Connectivity in Robotics: From USB and Ethernet to GMSL appeared first on The Robot Report."
-  },
-  {
-    "title": "GMSL and the growing ecosystem around robotic vision systems",
-    "original_title": "GMSL and the growing ecosystem around robotic vision systems",
-    "link": "https://www.therobotreport.com/gmsl-and-the-growing-ecosystem-around-robotic-vision-systems/",
-    "date": "2026-05-13 12:12",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Seeing clearly is important. So is everything that comes next.\nThe post GMSL and the growing ecosystem around robotic vision systems appeared first on The Robot Report."
-  },
-  {
-    "title": "How humanoids learn to read the room",
-    "original_title": "How humanoids learn to read the room",
-    "link": "https://www.therobotreport.com/how-humanoids-learn-to-read-the-room/",
-    "date": "2026-05-13 12:11",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "The closer robots get to people, the more vital it is for them to see, hear and react without missing a beat.\nThe post How humanoids learn to read the room appeared first on The Robot Report."
   }
 ]
