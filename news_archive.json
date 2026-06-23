@@ -1,5 +1,23 @@
 [
   {
+    "title": "Robot.com Launches Humanoid Robot, R-noid",
+    "original_title": "Robot.com Launches Humanoid Robot, R-noid",
+    "link": "https://humanoidroboticstechnology.com/industry-news/robot-com-launches-humanoid-robot-r-noid/",
+    "date": "2026-06-23 07:55",
+    "source": "Humanoid Tech Blog",
+    "category": "humanoid",
+    "summary": "Robot.com® has announced its entry into humanoid labour solutions with the commercial launch of R-noid™, a robot purpose-built for the repetitive, multi-shift, and hard-to-staff jobs. Deployed under a Robot-as-a-Service (RaaS) model, Robot.com can go from the first visit of a customer’s site to autonomous on-site R-noid operation in as few as eight to twelve weeks. […]\nThe post Robot.com Launches Humanoid Robot, R-noid appeared first on Humanoid Robotics Technology."
+  },
+  {
+    "title": "FORT Robotics Joins NVIDIA Halos for Robotics Ecosystem",
+    "original_title": "FORT Robotics Joins NVIDIA Halos for Robotics Ecosystem",
+    "link": "https://humanoidroboticstechnology.com/industry-news/fort-robotics-joins-nvidia-halos-for-robotics-ecosystem/",
+    "date": "2026-06-23 07:47",
+    "source": "Humanoid Tech Blog",
+    "category": "humanoid",
+    "summary": "FORT Robotics has announced its joining the NVIDIA Halos for Robotics ecosystem, which is bringing safety to autonomous robots. FORT will demonstrate an agentic safety application built with the open source NVIDIA Halos Outside-In Safety Blueprint this week at the Automate conference in Chicago, and will be presenting in the Humanoid Robotics Pavilion with NVIDIA on […]\nThe post FORT Robotics Joins NVIDIA Halos for Robotics Ecosystem appeared first on Humanoid Robotics Technology."
+  },
+  {
     "title": "After workers, beggars replaced by robots: Viral video from China makes netizens question if begging will - The Economic Times",
     "original_title": "After workers, beggars replaced by robots: Viral video from China makes netizens question if begging will - The Economic Times",
     "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQNGZ0RFRmdkVHb0pkLWlFSjc3MGxWZjdJYzJMS0xrVkJBNUZPbEpVMXF6UUpuSEdJQkItOGtxRVV6MVFKSnZfbnVLMnhGSDdUZ3lLT09hSWhlRWtpOWdfcTNhckhfVEtheUNWT004MUx2d2N2QjNvWkRBNUtUczFnMnpfRGw1VGJRbURLeWZzbER6ZjFfdFVDejh6VXhtR0R5Wl9pS2daMDQ2VVhpWlFYTjA5cUQzRVJFTVhsV3VxeUtycTlteG85Zi1zUjVORDlMOFR6b3Q2MHpJR29DMVljSVQ1M3VwdmlLZTRzUmRDTlJnUDZPalZxbTJHQW1WdmlkaUpwS1QyTXQ3dFY4bjRodThfd3Q3QzBvRnhR0gGbAkFVX3lxTFA0ZnREVGZ2RUdvSmQtaUVKNzcwbFZmN0ljMkxLTGtWQkE1Rk9sSlUxcXpRSm5IR0lCQi04a3FFVXoxUUpKdl9udUsyeEZIN1RneUtPT2FJaGVFa2k5Z19xM2FySF9US2F5Q1ZPTTgxTHZ3Y3ZCM29aREE1S1RzMWcyel9EbDVUYlFtREt5ZnNsRHpmMV90VUN6OHpVeG1HRHlaX2lLZ1owNDZVWGlaUVhOMDlxRDNFUkVNWGxXdXF5S3JxOW14bzlmLXNSNU5EOUw4VHpvdDYweklHb0MxWWNJVDUzdXB2aUtlNHNSZENOUmdQNk9qVnFtMkdBbVZ2aWRpSnBLVDJNdDd0VjhuNGh1OF93dDdDMG9GeFE?oc=5",
@@ -232,6 +250,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.21470v1 Announce Type: new \nAbstract: Vision--Language--Action (VLA) controllers are often built by extending vision--language models (VLMs) with action supervision, relying on multimodal backbones with large data and compute requirements. We demonstrate that a text-only large language model (LLM) can be adapted into a VLA-style controller when visual observations are rendered into a text input using an ASCII representation. This ASCII-as-vision interface enables existing training and deployment stacks for LLMs to efficiently condition on visual state, follow natural-language instructions, and produce constrained, executable actions. We fine-tune and compare multiple LLMs and VLMs across model families and scales, using both expert demonstrations from a planning-based teacher, as well as DAgger for iterative improvement. In a 2D manipulation benchmark, in both simulation and on a physical manipulator, the resulting controllers can identify task-relevant entities and plan feasible action sequences. Our results suggest that ASCII rendering can serve as a lightweight, interpretable modality bridge from images to text, complementing conventional VLA pipelines, and opening directions for VLA research with text-only backbones."
+  },
+  {
+    "title": "Decoupling the Declarative from the Procedural in Vision-Language-Action Models",
+    "original_title": "Decoupling the Declarative from the Procedural in Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.21496",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21496v1 Announce Type: new \nAbstract: Deploying generalist robotic agents in the real world requires transferable skills. Specifically, a policy trained to clone a behavior from object-specific demonstrations must generalize beyond that object, otherwise data collection requirements become intractable. Recently, fine-tuning of pre-trained billion-parameter Vision-Language Models (VLMs), initially on large-scale robot datasets and then on fewer scenario-specific demonstrations, has emerged as the predominant paradigm for designing Vision-Language-Action (VLA) models. While these policies achieve state-of-the-art manipulation performance in-distribution, they remain brittle to minor spatial, semantic, and task variations. In this work, we address the inability of current models to decouple the declarative (i.e., concepts and entity semantics) from the procedural knowledge (i.e., how to do something) encoded in their parameters, which is a fundamental bottleneck for zero-shot skill transfer to novel objects. To address this, we propose w$^{2}$VLA, a new VLA model with restructured information flow. Rather than feeding all multimodal tokens from the VLM encoder into a large, opaque transformer-based action expert, our approach modulates the robot state sequence with visual, spatial, and skill information in a compositional and interpretable manner. Unlike popular, state-of-the-art VLAs, we show that our modular approach successfully decouples knowledge representations, enabling robust behavior cloning and unprecedented zero-shot skill transfer capabilities across dissimilar, unseen objects."
+  },
+  {
+    "title": "UniviewVLA: A Unified Multiview Vision-Language-Action Model with World Modeling",
+    "original_title": "UniviewVLA: A Unified Multiview Vision-Language-Action Model with World Modeling",
+    "link": "https://arxiv.org/abs/2606.21501",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21501v1 Announce Type: new \nAbstract: Occluded tasks remain a bottleneck in robot manipulation. Existing solutions either deploy additional physical cameras requiring training-inference camera parity, or rely on explicit 3D reconstruction with high computational cost. Moreover, both approaches rely on standard agent-view and wrist-view observations, while failing to capture occlusion information and future scene evolution. To this end, we propose UniviewVLA, a unified multiview Vision-Language-Action model with world modeling, which infers multiview scene evolution for action prediction from only standard two-camera observations. We demonstrate that by leveraging generated multiview future views from the world model, UniviewVLA reveals occluded cues and models future scene evolution, improving action prediction and removing the need for extra hardware or explicit reconstruction. Besides, to accelerate inference while preserving prediction accuracy, UniviewVLA develops Motion-Informative Token Compression, which compresses each generated view from 625 to 16 tokens and reduces per-view latency from 6-7s to 0.2-0.3s. UniviewVLA also proposes training-free Action-Entropy View Selection, which dynamically identifies the most action-informative view at different inference stages. Extensive experiments show that UniviewVLA achieves 95.8% on LIBERO and 4.60 on CALVIN ABCD to D, both standard occlusion-free benchmarks. On customized occlusion-focused tasks, it improves success rate from 40.0% to 73.3%, and average real-robot success rate by 33.4 points, demonstrating stronger occlusion-focused performance without sacrificing standard occlusion-free benchmarks."
+  },
+  {
+    "title": "Robot Critics that Sweat the Small Stuff",
+    "original_title": "Robot Critics that Sweat the Small Stuff",
+    "link": "https://arxiv.org/abs/2606.21572",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21572v1 Announce Type: new \nAbstract: Large vision-language models contain several priors about the world and object interactions, making them useful critics during inference to steer robot policies towards success. However, closed-loop robot manipulation requires judging small visual differences between success and failure, which remains a challenge for current VLMs. We introduce a method to fine-tune critics by constructing pairwise progress supervision using success and failure rollouts obtained from a policy. Our fine-tuned critic excels at fine-grained progress reasoning and subtle failure detection, outperforming prior progress reasoning baselines. Additionally, we use an action-conditioned video model to predict the visual effect of several candidate actions sampled from a policy, and show that our critic can correctly identify successful candidates to execute, improving the average policy success rate by 11% across real-world tasks and 5.9% across simulation tasks."
+  },
+  {
+    "title": "VQActFlow: Vector-Quantized Action Mode Steering for Multi-Task Robot Manipulation",
+    "original_title": "VQActFlow: Vector-Quantized Action Mode Steering for Multi-Task Robot Manipulation",
+    "link": "https://arxiv.org/abs/2606.21600",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21600v1 Announce Type: new \nAbstract: Multi-task robot manipulation policies are challenging to learn from demonstration because traditionally a single network must select among qualitatively different action modes from a multimodal demonstration distribution, conditioned on language and visual context. A wrong mode selection means executing the wrong task or an action infeasible in the scene. Tokenizing continuous actions into a learned discrete codebook separates these modes at the representation level, offering structural advantages for multi-task learning. We propose VQActFlow, a multi-task manipulation policy that tokenizes action chunks and generates code sequences via Variational Flow Matching. VQActFlow maintains an explicit preference over action modes throughout generation. Inference-time guidance acts on this preference to steer mode commitment. We instantiate this with classifier-free guidance over language conditioning, which steers the policy toward the instructed action mode, and a learned codebook critic that supplies a complementary feasibility signal. We evaluate VQActFlow on three platforms: the LIBERO simulation benchmarks, a Unitree G1 humanoid performing whole-body pick-and-place, and an ALOHA-style bimanual platform performing contact-rich tasks. Across these benchmarks, VQActFlow outperforms both continuous and discrete baselines."
+  },
+  {
+    "title": "Online Learning of Robust Legged Odometry with Minimal Exteroceptive Supervision",
+    "original_title": "Online Learning of Robust Legged Odometry with Minimal Exteroceptive Supervision",
+    "link": "https://arxiv.org/abs/2606.21669",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.21669v1 Announce Type: new \nAbstract: Robust locomotion and navigation for legged robots relies heavily on dependable odometry. Traditional multi-sensor fusion for such state estimation requires meticulous sensor calibration and platform-specific kinematic modeling, which complicates deployment. Industrially packaged exteroceptive sensors can provide accurate motion tracking but remain vulnerable to perceptually degraded conditions. We thus develop a plug-and-play, robust legged odometry system that eliminates the need for explicit exteroceptive-to-proprioceptive calibration or system kinematic modeling. Our approach leverages established exteroceptive motion pipelines as a continuous supervisory signal to train an online learned velocity neural network directly from proprioceptive data. An Invariant EKF (InEKF) is then used to fuse the learned proprioceptive or exteroceptive velocity (if any) and IMU data. When exteroception fails due to environmental degradation, the system seamlessly falls back to using the learned proprioceptive model, yielding a resilient legged odometry that readily adapts to new hardware. We demonstrate the platform-agnostic, easily deployable nature of our approach on different quadruped platforms, showcasing promising results in maintaining robust motion estimation across challenging scenarios."
+  },
+  {
+    "title": "Imitation from Heterogeneous Demonstrations using Grounded Latent-Action World Models",
+    "original_title": "Imitation from Heterogeneous Demonstrations using Grounded Latent-Action World Models",
+    "link": "https://arxiv.org/abs/2606.21672",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21672v1 Announce Type: new \nAbstract: Imitation learning has emerged as a powerful paradigm for learning visuomotor policies, but its generalisation and stability are limited by the scale and quality of demonstration data needed. A promising direction is to leverage more abundant but heterogeneous data sources, which differ in action space and often lack action labels altogether. Existing co-training approaches that combine heterogeneous data sources rely on heuristic and hand-engineered alignment techniques. In contrast, we argue that action representations should be grounded in prediction: actions that produce the same effect on the environment should share the same representation, regardless of their sources. To this end, we instantiate this principle by using a grounded latent-action world model (GLAM), a pair of generative models with a shared latent action space across data sources that is grounded by predicting future observations consistently across sources. This latent action space is used to train downstream behavioural cloning (BC) policies which map observations to latent actions and decode them back to robot actions, providing a paradigm for learning from heterogeneous data. Empirically, we demonstrate that GLAM successfully learns an aligned latent action space that facilitates action transfer across data sources with and without action labels. Across five manipulation tasks in simulation and in the real world, GLAM-aligned policies significantly outperform BC baselines and prior latent-action methods, achieving an average of +48% improvement in task success rate with the same data-scarce setting. Videos and code are available at https://viccccciv.github.io/glam/."
+  },
+  {
+    "title": "Shape-programmable Magnetic Soft Membranes for Mechanically Active Microchannels",
+    "original_title": "Shape-programmable Magnetic Soft Membranes for Mechanically Active Microchannels",
+    "link": "https://arxiv.org/abs/2606.21716",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.21716v1 Announce Type: new \nAbstract: The capability to encode spatially distinct magnetization patterns within soft materials enables remote control over complex deformations. This characteristic is especially important for microfluidic platforms, where limited dynamic control of channel boundaries and laminar flow conditions usually restrict fluid transport and interactions. The present study introduces a shape-programmable magnetic soft membrane actuator as an active microchannel component that can dynamically modulate its shape under magnetic fields and therefore the microfluidic environment. The membrane is magnetically programmed using a template-based approach, which allows it to be controllably deformed in the form of a sinusoid under the influence of an external magnetic field. The membrane's integration into a microchannel converts a passive channel wall into a dynamically changeable interface, allowing active fluid manipulation and enhancing micromixing in laminar flow conditions. The proposed approach establishes a versatile platform for wirelessly controlled deformable interfaces in next-generation microfluidic and lab-on-chip systems."
+  },
+  {
+    "title": "Programmable magnetic soft robots with controlled locomotion and directional liquid cargo release",
+    "original_title": "Programmable magnetic soft robots with controlled locomotion and directional liquid cargo release",
+    "link": "https://arxiv.org/abs/2606.21737",
+    "date": "2026-06-23 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.21737v1 Announce Type: new \nAbstract: Magnetically programmable soft elastomers enable complex shape morphing and locomotion dynamics in small scale soft robots under external magnetic fields. Benefiting from their programmed deformation and wireless actuation capabilities, magnetic soft robots have emerged as promising platforms for targeted drug delivery, especially in human gastrointestinal tract. However, achieving controlled directional liquid cargo release toward desired tissue interface while preserving the encoded shape morphing and locomotion capabilities remain a significant challenge. Here, we report a new design strategy that employs an optimized magnetization profile to enable controlled directional release of aqueous cargo without compromising shape morphing and locomotion capabilities. Magnetic soft robots with a specific spatially distributed magnetization profile allow directional alignment of the release interface with the orientation of the external magnetic field. This orientation control ensures active alignment of the release interface toward the intestinal wall prior to drug release. An interconnected microporous elastomer is embedded within the robot for aqueous cargo storage, while a thin microcrystalline wax layer seals the release opening hole to isolate the stored liquid cargo from external environment during transport. Triggered release is achieved by mechanically rupturing the wax sealing layer under a higher magnitude external magnetic field. Controlled directional flipping, locomotion, and triggered release are decoupled through external magnetic field's direction and strength. The controlled directional release strategy reported here integrates directional targeted liquid cargo release, shape morphing, and locomotion, which establishes the groundwork for target drug delivery in gastrointestinal tract applications."
   },
   {
     "title": "FORT and NVIDIA launch AI-driven Outside-In Safety blueprint",
@@ -17908,95 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2508.21260v2 Announce Type: replace \nAbstract: Many estimation problems in aerospace navigation and robotics involve measurements that depend on prior states. A prominent example is odometry, which measures the relative change between states over time. Accurately handling these delayed-state measurements requires capturing their correlations with prior state estimates, and a widely used approach is stochastic cloning (SC), which augments the state vector to account for these correlations. This work revisits a long-established but often overlooked alternative--the delayed-state Kalman filter--and demonstrates that a properly derived filter yields exactly the same state and covariance update as SC, without requiring state augmentation. Moreover, two equivalent formulations of the delayed-state Kalman filter (DSKF) are presented, providing complementary perspectives on how the prior-state measurement correlations can be handled within the generalized Kalman filter. These formulations are shown to be comparable to SC in asymptotic computational and memory complexity, while one DSKF formulation can offer reduced arithmetic and storage costs for certain problem dimensions. Our findings clarify a common misconception that Kalman filter variants are inherently unable to handle correlated delayed-state measurements, demonstrating that an alternative formulation achieves the same results without state augmentation."
-  },
-  {
-    "title": "STL-Based Motion Planning and Uncertainty-Aware Risk Analysis for Human-Robot Collaboration with a Multi-Rotor Aerial Vehicle",
-    "original_title": "STL-Based Motion Planning and Uncertainty-Aware Risk Analysis for Human-Robot Collaboration with a Multi-Rotor Aerial Vehicle",
-    "link": "https://arxiv.org/abs/2509.10692",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2509.10692v4 Announce Type: replace \nAbstract: This paper presents a motion planning and risk analysis framework for enhancing human-robot collaboration with a Multi-Rotor Aerial Vehicle. The proposed method employs Signal Temporal Logic to encode key mission objectives, including safety, temporal requirements, and human preferences, with particular emphasis on ergonomics and comfort. An optimization-based planner generates dynamically feasible trajectories while explicitly accounting for the vehicle's nonlinear dynamics and actuation constraints. To address the resulting non-convex and non-smooth optimization problem, smooth robustness approximations and gradient-based techniques are adopted. In addition, an uncertainty-aware risk analysis is introduced to quantify the likelihood of specification violations under human-pose uncertainty. A robustness-aware event-triggered replanning strategy further enables online recovery from disturbances and unforeseen events by preserving safety margins during execution. The framework is validated through MATLAB and Gazebo simulations on an object handover task inspired by power line maintenance scenarios. Results demonstrate the ability of the proposed method to achieve safe, efficient, and resilient human-robot collaboration under realistic operating conditions."
-  },
-  {
-    "title": "SAGAS: Semantic-Aware Graph-Assisted Stitching for Offline Temporal Logic Planning",
-    "original_title": "SAGAS: Semantic-Aware Graph-Assisted Stitching for Offline Temporal Logic Planning",
-    "link": "https://arxiv.org/abs/2512.00775",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2512.00775v2 Announce Type: replace \nAbstract: Linear Temporal Logic (LTL) provides a rigorous framework for specifying long-horizon robotic tasks, yet existing approaches face a trade-off: model-based synthesis relies on accurate labeled transition systems, whereas learning-based methods often require online interaction, task-specific rewards, or specification-conditioned training. We study LTL-specified robotic planning and execution in a stricter offline, model-free setting, where the agent is given only fixed, task-agnostic trajectory fragments, with no dynamics model, task demonstrations, or online data collection. To address this setting, we propose SAGAS, a framework that combines the compositionality of symbolic synthesis with the data-driven reachability structure learned from offline trajectories. SAGAS first learns a reusable latent reachability graph and a frozen goal-conditioned executor from fragmented offline data. For each new LTL formula, it performs task-time semantic graph augmentation to ground state-defined propositions on the learned graph, and applies B\\\"uchi product search to synthesize a cost-aware accepting prefix--suffix waypoint plan executed by the frozen executor. By shifting formula-specific reasoning from policy learning to test-time graph augmentation and symbolic search, SAGAS enables zero-shot generalization to unseen, data-supported LTL specifications without task-specific reward design, policy retraining, or online interaction. Experiments on LTL task suites constructed from OGBench locomotion domains show that this design produces executable and cost-efficient prefix--suffix behaviors for diverse unseen LTL tasks from fragmented offline data."
-  },
-  {
-    "title": "Certified Gradient-Based Contact-Rich Manipulation via Smoothing-Error Reachable Tubes",
-    "original_title": "Certified Gradient-Based Contact-Rich Manipulation via Smoothing-Error Reachable Tubes",
-    "link": "https://arxiv.org/abs/2602.09368",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.09368v2 Announce Type: replace \nAbstract: Gradient-based methods can efficiently optimize controllers by leveraging differentiable simulation and physical priors. However, contact-rich manipulation remains challenging because hybrid contact dynamics often produce discontinuous or vanishing gradients. Although smoothing the dynamics can restore informative gradients, the resulting model mismatch can cause controller failures when deployed on real systems. We address this trade-off by planning with smoothed dynamics while explicitly quantifying and compensating for the induced error, providing formal guarantees on safety and task completion under the original nonsmooth dynamics. Our approach applies smoothing to both contact dynamics and contact geometry within a differentiable simulator based on convex optimization, allowing us to characterize the deviation from the nonsmooth dynamics as a set-valued discrepancy. We incorporate this discrepancy into the optimization of time-varying affine feedback policies through analytical reachable sets, enabling robust constraint satisfaction for the closed-loop hybrid system while relying solely on the informative gradients of the smoothed model. By bridging differentiable simulation with set-valued robust control, our method produces affine feedback policies that respect the unilateral nature of contact. We evaluate our method on several contact-rich tasks, including planar pushing, object rotation, and in-hand dexterous manipulation, achieving certified constraint satisfaction with lower safety violations and smaller goal errors than baseline approaches."
-  },
-  {
-    "title": "Tacmap: Bridging the Tactile Sim-to-Real Gap via Geometry-Consistent Penetration Depth Map",
-    "original_title": "Tacmap: Bridging the Tactile Sim-to-Real Gap via Geometry-Consistent Penetration Depth Map",
-    "link": "https://arxiv.org/abs/2602.21625",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.21625v2 Announce Type: replace \nAbstract: Vision-Based Tactile Sensors (VBTS) are essential for achieving dexterous robotic manipulation, yet the tactile sim-to-real gap remains a fundamental bottleneck. Current tactile simulations suffer from a persistent dilemma: simplified geometric projections lack physical authenticity, while high-fidelity Finite Element Methods (FEM) are too computationally prohibitive for large-scale reinforcement learning. In this work, we present Tacmap, a high-fidelity, computationally efficient tactile simulation framework anchored in volumetric penetration depth. Our key insight is to bridge the tactile sim-to-real gap by unifying both domains through a shared deform map representation. Specifically, we compute 3D intersection volumes as depth maps in simulation, while in the real world, we employ an automated data-collection rig to learn a robust mapping from raw tactile images to ground-truth depth maps. By aligning simulation and real-world in this unified geometric space, Tacmap minimizes domain shift while maintaining physical consistency. Quantitative evaluations across diverse contact scenarios demonstrate that Tacmap's deform maps closely mirror real-world measurements. Moreover, we validate the utility of Tacmap through an in-hand rotation task, where a policy trained exclusively in simulation achieves zero-shot transfer to a physical robot."
-  },
-  {
-    "title": "Vision-Based Hand Shadowing for Robotic Manipulation via Inverse Kinematics",
-    "original_title": "Vision-Based Hand Shadowing for Robotic Manipulation via Inverse Kinematics",
-    "link": "https://arxiv.org/abs/2603.11383",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.11383v2 Announce Type: replace \nAbstract: Teleoperation of low-cost robotic manipulators remains challenging due to the difficulty of retargeting human hand motion to robot joint commands. We present an offline hand-shadowing inverse-kinematics (IK) retargeting pipeline driven by a single egocentric RGB-D camera mounted on 3D-printed glasses. The pipeline detects 21 hand landmarks per hand using MediaPipe Hands, deprojects them into 3D via depth sensing, transforms them into the robot coordinate frame, and solves a damped-least-squares IK problem to produce joint commands for the SO-ARM101 robot (5 arm + 1 gripper joints). A gripper controller maps thumb-index finger geometry to grasp aperture with a multi-level fallback hierarchy. Actions are previewed in a physics simulation before replay on the physical robot. We evaluate the pipeline on a structured pick-and-place benchmark (5-tile grid, 10 grasps per tile, 3 independent runs) achieving an 86.7% +/- 4.2% success rate, and compare it against four vision-language-action (VLA) policies (ACT, SmolVLA, pi_0.5, GR00T N1.5) trained on leader-follower teleoperation data. We provide a quantitative error analysis of the pipeline, reporting a mean IK position error of 36.4 mm, trajectory smoothness metrics showing 57-68% jerk reduction from EMA smoothing, and an ablation study over the smoothing parameter. We also test the pipeline in unstructured real-world environments (grocery store, pharmacy) and find that success is reduced to 9.3% due to hand occlusion by surrounding objects. To mitigate this, we integrate WiLoR as an alternative hand detector, achieving an 8% improvement in hand detection rate over MediaPipe, highlighting both the promise and current limitations of marker-free analytical retargeting."
-  },
-  {
-    "title": "Simulation Distillation: Pretraining World Models in Simulation for Rapid Real-World Adaptation",
-    "original_title": "Simulation Distillation: Pretraining World Models in Simulation for Rapid Real-World Adaptation",
-    "link": "https://arxiv.org/abs/2603.15759",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.15759v2 Announce Type: replace \nAbstract: Robot learning requires adaptation methods that improve reliably from limited, mixed-quality interaction data. This is especially challenging in long-horizon, contact-rich tasks, where end-to-end policy finetuning remains inefficient and brittle. World models offer a compelling alternative: by predicting the outcomes of candidate action sequences, they enable online planning through counterfactual reasoning. However, training action-conditioned robotic world models directly in the real world requires diverse data at impractical scale. We introduce Simulation Distillation (SimDist), a framework that uses physics simulators as a scalable source of action-conditioned robot experience. During pretraining, SimDist distills structural priors from the simulator into a world model that enables planning from raw real-world observations. During real-world adaptation, SimDist transfers the encoder, reward model, and value function learned in simulation, and updates only the latent dynamics model using real-world prediction losses. This reduces adaptation to supervised system identification while preserving dense, long-horizon planning signals for online improvement. Across contact-rich manipulation and quadruped locomotion tasks, SimDist rapidly improves with experience, while prior adaptation methods struggle to make progress or degrade during online finetuning. Project website and code: https://sim-dist.github.io"
-  },
-  {
-    "title": "Trajectory First: A Curriculum for Discovering Diverse Policies",
-    "original_title": "Trajectory First: A Curriculum for Discovering Diverse Policies",
-    "link": "https://arxiv.org/abs/2506.01568",
-    "date": "2026-05-13 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2506.01568v3 Announce Type: replace-cross \nAbstract: Being able to solve a task in diverse ways makes agents more robust to task variations and less prone to local optima. In this context, constrained diversity optimization has become a useful reinforcement learning (RL) framework for training a set of diverse agents in parallel. However, existing constrained-diversity RL methods often under-explore in complex tasks such as robot manipulation, resulting in limited behavioral diversity. We address this with a two-stage curriculum that introduces a spline-based trajectory prior as an inductive bias to produce diverse, high-reward behaviors in an initial stage, and then distills these behaviors into reactive, step-wise policies in a second stage. In our empirical evaluation, we provide novel insights into challenges of diversity-targeted training and show that our curriculum increases the diversity of learned skills while maintaining high task performance."
-  },
-  {
-    "title": "Robot rentals set path for mass-market adoption - China Daily",
-    "original_title": "Robot rentals set path for mass-market adoption - China Daily",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5xcEJCWW5Pd04wa0toMVFjVlZ5LUFHa2RRV3lfb1NwdlY5RE1sS1BoV1FWZno1RFk5Z21GZXBhX1B4dXdfeldaa245SEV0TFBCdGtHS0d6ZkdLa1A0V0NYOF9IUUlzUFlnYl9jUU1MZkNWUndpekswMUlmZm9pZw?oc=5",
-    "date": "2026-05-13 02:29",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Robot rentals set path for mass-market adoption  China Daily"
-  },
-  {
-    "title": "French startup unveils AI model for robots and human-like hand - MSN",
-    "original_title": "French startup unveils AI model for robots and human-like hand - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQUnlUSWYxR09lTHd6c3RFanpvdlBzeUlrejdQNWpvQm02dHMzLXdZWnB3Y2VPc2tqQWRWYmgzcVVaR21nc003UlpMOGRhaGdHcDQ1MG9Ja1NON2R1LXl3S2J0Vk5lc0V0aG5tTS1ja1hvbUstRDlXakMxb1BTNFJaM3JJNXlTQjlrUHpYZU1mSE1leHUxZUdqTFdZdnBYNHJvVExlWnE4M1BjWFFLbFFJMzhTUm0wTjJJeUNlbWZoY29oa2o3aGFpU1BaUzN4VXV5b0xSVzFxVndyV005RE1wd1luRQ?oc=5",
-    "date": "2026-05-12 23:54",
-    "source": "Google News (Global Hand/Gripper)",
-    "category": "hand",
-    "summary": "French startup unveils AI model for robots and human-like hand  MSN"
-  },
-  {
-    "title": "The Unitree GD01 Is a Giant Mecha Robot You Can Actually Buy - The Tech Buzz",
-    "original_title": "The Unitree GD01 Is a Giant Mecha Robot You Can Actually Buy - The Tech Buzz",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMFRYOWV5NUVZNktSLWg4MGtOVWpWOEdvaUh2TU5ULWR2QmNOTHFCSW1XemEyTUw5dGxjb3dvaVJ0YmFnM1JOdEVHRnFHM25hZnFfRlBxbk9KZ0M4TFBtV0VOakMzYmNKSUdfcmwwalI0UWdGYkEyeHlSM3JHYWpiQ2U0UWpkMTREa1BmNTVYT3I0VlpJNUQ1eQ?oc=5",
-    "date": "2026-05-12 23:06",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "The Unitree GD01 Is a Giant Mecha Robot You Can Actually Buy  The Tech Buzz"
   }
 ]
