@@ -1,5 +1,14 @@
 [
   {
+    "title": "ExRobotics launches UL-certified inspection robot for hazardous environments",
+    "original_title": "ExRobotics launches UL-certified inspection robot for hazardous environments",
+    "link": "https://www.therobotreport.com/exrobotics-launches-ul-certified-inspection-robot-for-hazardous-environments/",
+    "date": "2026-06-23 23:00",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "ExRobotics says its ExR-2.5 inspection robot is certified for safe operations in explosive environments in North America.\nThe post ExRobotics launches UL-certified inspection robot for hazardous environments appeared first on The Robot Report."
+  },
+  {
     "title": "Vention collaborates with FANUC and Universal Robots on software-defined automation",
     "original_title": "Vention collaborates with FANUC and Universal Robots on software-defined automation",
     "link": "https://www.therobotreport.com/vention-collaborates-with-fanuc-universal-robots-software-defined-automation/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.13105v1 Announce Type: new \nAbstract: Reinforcement learning (RL) fine-tuning has shown promise for Vision-Language-Action (VLA) models in robotic manipulation, but deployment-time visual shifts pose practical challenges. A key difficulty is that standard task rewards supervise task success, but offer limited guidance on whether a visual change is task-irrelevant or changes the behavior required for manipulation. We propose PAIR-VLA (Paired Action Invariance & Sensitivity for Visually Robust VLA), an RL fine-tuning framework to address this difficulty by adding two auxiliary objectives over paired visual variants during PPO optimization: an invariance term that reduces the discrepancy between action distributions for a task-preserving pair (e.g., different distractors), and a sensitivity objective that encourages separable action distributions for a task-altering pair (e.g., target object in a different pose). Together, these objectives turn visual variants from mere observation diversity into behavior-level guidance on policy responses during RL fine-tuning. We evaluate on ManiSkill3 across two representative VLA architectures, OpenVLA and $\\pi_{0.5}$, under diverse out-of-distribution visual shifts including unseen distractors, texture changes, target object pose variation, viewpoint shifts, and lighting changes. Our method consistently improves over standard PPO, achieving average improvements of 16.62% on $\\pi_{0.5}$ and 9.10% on OpenVLA. Notably, ablations further show generalization across visual shifts: invariance guidance learned from distractor and texture variants transfers to target-pose and lighting shifts, while adding sensitivity guidance on target-pose variants further improves robustness to nuisance shifts, highlighting the broader transferability of behavior-level RL guidance."
-  },
-  {
-    "title": "SECOND-Grasp: Semantic Contact-guided Dexterous Grasping",
-    "original_title": "SECOND-Grasp: Semantic Contact-guided Dexterous Grasping",
-    "link": "https://arxiv.org/abs/2605.13117",
-    "date": "2026-05-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.13117v1 Announce Type: new \nAbstract: Achieving reliable robotic manipulation, such as dexterous grasping, requires a synergy between physically stable interactions and semantic task guidance, yet these objectives are often treated as separate, disjoint goals. In this paper, we investigate how to integrate dexterous grasping techniques, i.e., physically stable grasps for object lifting and language-guided grasp generation, to achieve both physical stability and semantic understanding. To this end, we propose SECOND-Grasp (SEmantic CONtact-guided Dexterous Grasping), a unified framework that enables robotic hands to dynamically adjust grasping strategies based on semantic reasoning while ensuring physical feasibility. We begin by obtaining coarse contact proposals through vision-language reasoning to infer where contacts should occur based on object properties, followed by segmentation to localize these regions across views. To further ensure consistency across multiple viewpoints, we introduce Semantic-Geometric Consistency Refinement (SGCR), which refines initial contact predictions by enforcing semantic consistency across views and removing geometrically invalid regions, yielding reliable 3D contact maps. Then, we derive a feasible hand pose for each contact map via inverse kinematics, generating a supervision signal for policy learning. Our approach, trained on DexGraspNet, consistently outperforms baselines in lifting success rate on both seen and unseen categories, achieving 98.2% and 97.7%, respectively, while also improving intent-aware grasping by 12.8% and 26.2%. We further show promising results on additional datasets and robotic hands, including Shadow Hand and Allegro Hand."
   }
 ]
