@@ -72,6 +72,78 @@
     "summary": "arXiv:2606.24350v1 Announce Type: new \nAbstract: Legged robots rely on accurate ground interaction awareness to traverse variable terrains, such as slippery surfaces. Existing slip detection methods often rely on kinematics and proprioception, which lack the sensitivity to detect early-stage slips that occur prior to catastrophic instability. Thus, this paper presents SlipSense, a novel framework for online force-based slip detection using a custom lightweight sensorized foot for quadrupeds to detect slip. The framework integrates a multimodal sensor design with a LSTM-based model to infer ground reaction forces and detect slip-indicative anomalies during locomotion. The proposed framework is deployed on a Unitree Go1 quadruped to demonstrate blind online slip detection over a slippery terrain. Our method detects early-stage slips down to an average displacement of 24.1 +/-6.4mm with an overall accuracy of 85.9%. This represents a 3.3-fold finer detection resolution and a 24% relative accuracy improvement over a standard kinematic baseline that uses foot velocity inferred through state estimation. The work in this paper serves as a foundation for force-aware gait adaptation in legged robotic locomotion, allowing future controllers to estimate terrain friction and adjust constraints, thus improving the overall stability of the system."
   },
   {
+    "title": "PDS Joint: A Parametric Double-Spiral Joint Tailored for Dexterous Hands",
+    "original_title": "PDS Joint: A Parametric Double-Spiral Joint Tailored for Dexterous Hands",
+    "link": "https://arxiv.org/abs/2606.24377",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.24377v1 Announce Type: new \nAbstract: Compliant joints can embed safety and adaptability into dexterous hands, but achieving large-stroke anthropomorphic motion while maintaining joint-specific, directiondependent stiffness and reliable proprioception remains challenging. This paper presents the PDS joint, a parametric doublespiral (PDS) compliant joint that enables systematic shaping of directional stiffness across multiple deformation modes, including flexion/extension, abduction/adduction, and pronation/supination. We instantiate the joint using Archimedean and logarithmic spiral templates for different hand joints and introduce an asymmetry ratio to tailor stiffness distributions for both grasp stability and hyperextension resistance. To make the joint practically usable under large deformation, we co-design embedded inductive proprioception and propose a learningbased calibration pipeline that maps raw inductive signals to joint states using ArUco-marker tracking. Experiments characterize the stiffness landscapes across geometric parameters and demonstrate a non-monotonic dependence of lateral support on asymmetry, indicating the importance of principled parameter tuning. For joint-state estimation in the most challenging abduction/adduction motion, a learned multilayer-perceptron (MLP) mapping reduces the error compared with conventional curve fitting by 41.6%. Finally, we integrate the proposed joints into an open-source dexterous hand as a demonstration platform, on which the hand grasps a set of nine everyday objects and performs safe, contact-rich human-involved interactions."
+  },
+  {
+    "title": "RE4: Transformation-aware Imitation of Object Interactions Using Manipulation Modes",
+    "original_title": "RE4: Transformation-aware Imitation of Object Interactions Using Manipulation Modes",
+    "link": "https://arxiv.org/abs/2606.24403",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.24403v1 Announce Type: new \nAbstract: Object interaction tasks have been a focus of advances in imitation learning. End-to-end methods, dominated by diffusion and flow-based variants have shown leaps in performance while sacrificing interpretability. Object-centric and pose-informed variants have had a role in learning from demonstration in manipulation tasks. In this paper, we revisit a few modern imitation learning benchmarks for object interactions, with the aim of composing a framework that repurposes principled theories of manipulation, preserving both performance and interpretability. For image observations, lightweight training is proposed for model-free pose estimation of the target object, using self-supervision over the demonstration data available for imitation learning. This information is then used to inform a manipulation mode-aware retrieval of a demonstration, a mode-aware transformation, a replan step that connects to the retrieval point while preserving mode constraints, and finally rolling out the transformed demonstration. These compose four key steps of the proposed RE4 framework, evaluated over state-based and image-based benchmarks in Push-T and Robomimic. An adversarial benchmark that evaluates sparse data regions of image-based Push-T showcases the robustness, further bolstered by indications from low-data regime experiments. The current work shows promise in using simple interpretable building blocks to learn manipulation skills."
+  },
+  {
+    "title": "Legible and Intuitive Multi-modal Robot State and Intent Communication Validated in Online and Real-world Studies",
+    "original_title": "Legible and Intuitive Multi-modal Robot State and Intent Communication Validated in Online and Real-world Studies",
+    "link": "https://arxiv.org/abs/2606.24445",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.24445v1 Announce Type: new \nAbstract: Effective robot-to-human communication can increase transparency and trust, reduce uncertainty, and contribute to safer collaboration in shared workspaces. Designing and validating an effective robot communication strategy is challenging due to the varying and often limited communication modalities across robots, differences in how diverse recipients interpret messages, and the underexplored virtual-to-real gap in studies of communication legibility. We present a systematic, large-scale comparative validation of existing communication strategies for a mobile non-humanoid robot across message types and settings (online and in-person). Based on the prescribed message types in the existing standards for industrial robots, we realize and compare a low-expressive, unimodal LED-based strategy with a highly expressive, multimodal one that leverages robotic gaze, gestures, and voice. For each strategy, we analyze the communication of a turning intention, an attention request, error status, whether the robot is stuck, and whether it is functioning normally. We evaluate these strategies in replicated online and in-person experiments. We find strong evidence that highly expressive multimodal communication is perceived as more legible and intuitive than unimodal LED-based communication. Comparing the online and real-world study findings, we observe a notable decrease in overall legibility, particularly for signaling with LEDs. Similarly, confidence in message interpretation decreases during the real-world evaluation."
+  },
+  {
+    "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
+    "original_title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2606.24450",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.24450v1 Announce Type: new \nAbstract: Perceiving physical contact is fundamental to dexterous manipulation. While robots often rely on dedicated hardware tactile sensors, humans exhibit a remarkable ability to infer contact by integrating visual information with an innate sense of their body's pose and movement. Inspired by this embodied perceptual skill, we investigate whether a robot can learn to infer contact from vision, an approach that also offers a scalable alternative to tactile hardware specifically for binary contact estimation, which faces practical challenges in cost, fragility, and integration. We present NoContactNoWorries, a transformer-based multimodal framework that fuses RGB-D vision with the robot's proprioception to infer binary contact states as a pseudo-tactile signal for hand-object interactions. We validate by training a single contact prediction model on multiple objects and show that the inferred contact signal supports downstream reinforcement learning agents for in-hand object reorientation, generalizing to novel objects. Experiments in both simulation and on a real-world robot validate our approach, highlighting the feasibility of inferring contact from vision and proprioception. Project Page: https://soham2560.github.io/no-contact-no-worries/"
+  },
+  {
+    "title": "FT-WBC: Learning Fault-Tolerant Whole-Body Control for Legged Loco-Manipulation",
+    "original_title": "FT-WBC: Learning Fault-Tolerant Whole-Body Control for Legged Loco-Manipulation",
+    "link": "https://arxiv.org/abs/2606.24466",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.24466v1 Announce Type: new \nAbstract: Legged manipulators combine the mobility of legged platforms with the manipulation capability of robotic arms. However, arm-induced Center-of-Mass shifts and dynamic disturbances make the system more prone to instability under actuator failures, potentially leading to falls, task failures, or safety risks. Existing fault-tolerant control methods mainly focus on locomotion alone, leaving the coupled problem of whole-body stability and arm reachability in fault-tolerant loco-manipulation largely unaddressed. To bridge this gap, we propose FT-WBC, a fault-tolerant loco-manipulation framework for robust whole-body control of legged manipulators under actuator failures. FT-WBC adopts a decoupled upper- and lower-body policy architecture and introduces two key modules: a Fault Estimator (FE) and a Posture Adaptation Module (PAM). The FE predicts faulty joints from lower-body proprioceptive histories, while the PAM uses this fault information to adapt the base posture plan generated by the arm policy, converting potentially unstable posture requests into safe and executable base posture commands. Through this fault-aware posture adaptation mechanism, FT-WBC synthesizes compensatory gaits under actuator failures and preserves as much arm workspace as possible while maintaining whole-body stability. Simulation and real-world experiments show that FT-WBC significantly improves survival rate and workspace under weakening or locked failures, and transfers zero-shot to a real legged manipulator in the real world."
+  },
+  {
+    "title": "G$^3$VLA: Geometric inductive bias for Vision-Language-Action Models",
+    "original_title": "G$^3$VLA: Geometric inductive bias for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.24472",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.24472v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models have made rapid progress in generalist robot manipulation by harnessing semantic knowledge from pretrained vision-language backbones, but their visual tokens remain grounded in 2D image coordinates rather than the calibrated geometry of the robot's cameras -- a mismatch especially pronounced in multi-camera setups, where views are coupled by known intrinsics and extrinsics yet processed as independent images. We propose G$^3$VLA, a camera-aware geometric module that injects calibrated structure into the visual-token stream of a pretrained VLA without altering its action space or imitation objective, combining intrinsic-conditioned ray embeddings, projective positional encoding (PRoPE), and bidirectional cross-view fusion. Geometric supervision is provided either from ground-truth point maps when available, or from confidence-gated $\\pi^3$X teacher predictions, requiring no depth sensors or manual annotations. Instantiated on $\\pi_0$, G$^3$VLA yields consistent gains across the LIBERO suites, RoboCasa24, RoboTwin2.0, and real-robot settings, with the largest improvements on spatially and object-sensitive tasks. We further validate on $\\pi_{0.5}$ and GR00T 1.5, with results suggesting that geometric transfer is most effective when geometry-aware tokens have direct access to the action generation pathway. Our project page is at https://sites.google.com/view/g3vla"
+  },
+  {
+    "title": "Enabling Robust Cloth Manipulation via Inference-Time Simulator-in-the-Loop Refinement",
+    "original_title": "Enabling Robust Cloth Manipulation via Inference-Time Simulator-in-the-Loop Refinement",
+    "link": "https://arxiv.org/abs/2606.24552",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.24552v1 Announce Type: new \nAbstract: Simulator-in-the-loop optimization offers a promising inference-time mechanism for robot manipulation. It uses a physical simulator as a backend rollout engine to evaluate candidate trajectories in parallel and refine nominal actions online, a paradigm proven effective in rigid-body manipulation where state and contact are relatively tractable. We bring this paradigm to real-world cloth manipulation from a single RGB input through three pillars. (i) We design a scalable synthetic-data generation and inference-time rollout pipeline built on FLASH, a deformable-object simulator that provides a practical balance among physical fidelity, numerical stability, and rollout efficiency. (ii) We develop a real-to-sim module, trained purely on synthetic data, that maps a single RGB observation to simulation-compatible cloth state by fusing pretrained visual features with learnable canonical tokens. (iii) We perform online planning by coupling a sparse-mesh rollout backend with prior-guided MPPI, anchored at an offline-distilled policy trajectory, preserving manipulation-relevant deformation and contact while enabling sufficient parallel rollout batches. Real-robot experiments show higher success rates and stronger robustness than baseline methods."
+  },
+  {
+    "title": "ArtiTwinSplat: Interactable Digital Twin Reconstruction via Gaussian Splatting from RGB-D videos",
+    "original_title": "ArtiTwinSplat: Interactable Digital Twin Reconstruction via Gaussian Splatting from RGB-D videos",
+    "link": "https://arxiv.org/abs/2606.24628",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.24628v1 Announce Type: new \nAbstract: Deploying robots in unstructured real-world environments needs accurate, interactive models of the objects. Constructing these models at scale remains a critical bottleneck for robotic system integration. We present ArtiTwinSplat, a framework that automatically constructs articulated, photo-realistic digital twins of objects directly from RGB-D videos, requiring no CAD models, simulation assets, or manual annotations. Our method is built on 3D Gaussian Splatting that preserve geometric fidelity and photometric realism, coupled with an unsupervised articulation discovery pipeline that recovers part structure and joint kinematics from observed motion alone. With tracking and optimization stages our method provides stable, queryable digital twins that support real-time rendering, viewpoint control, and interactive manipulation. Unlike prior methods confined to simulation, ArtiTwinSplat operates directly on real-world observations and produces twins that are immediately usable by downstream robot planning and learning systems. This method offers a practical, scalable pathway toward digital twin construction, lowering the integration barrier for articulated object manipulation in embodied AI and human-robot collaboration contexts."
+  },
+  {
     "title": "Smart drones, safe skies: Student's system tests and coordinates drone fleets",
     "original_title": "Smart drones, safe skies: Student's system tests and coordinates drone fleets",
     "link": "https://techxplore.com/news/2026-06-smart-drones-safe-skies-student.html",
@@ -17926,77 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "Piaggio Fast Forward has launched a new Star Wars-inspired version of its cargo-carrying robot, combining autonomous following technology with the distinctive design of Grogu’s floating pram from the Star Wars universe. The new Grogu gitamini robot, developed in collaboration with Disney and Disney Consumer Products, is based on the company’s existing gitamini personal cargo robot […]"
-  },
-  {
-    "title": "Europe’s largest 3D-printed apartment building completed months ahead of schedule",
-    "original_title": "Europe’s largest 3D-printed apartment building completed months ahead of schedule",
-    "link": "https://roboticsandautomationnews.com/2026/05/14/europes-largest-3d-printed-apartment-building-completed-months-ahead-of-schedule/101526/",
-    "date": "2026-05-14 09:57",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "PERI 3D Construction, using a COBOD BOD2 3D Construction Printer, has completed ViliaSprint², Europe’s largest 3D printed multi-family residential building. Developed by Plurial Novilia, a subsidiary of Action Logement, the building delivers 12 social housing apartments across three stories and 800 m² (8,600 sq ft. of living space. Some of the highlights of the construction […]"
-  },
-  {
-    "title": "Flytrex drones can now deliver two large Little Caesars pizzas to your door",
-    "original_title": "Flytrex drones can now deliver two large Little Caesars pizzas to your door",
-    "link": "https://roboticsandautomationnews.com/2026/05/14/flytrex-drones-can-now-deliver-two-large-little-caesars-pizzas-to-your-door/101523/",
-    "date": "2026-05-14 09:42",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Flytrex, a provider of on-demand drone food delivery, and Little Caesars, one of the largest Pizza chains in the world, are partnering to expand drone delivery with a new drone capable of delivering dinner for an entire family. Powered by Flytrex’s new Sky2 drone, customers can now receive two large pizzas and sodas in a […]"
-  },
-  {
-    "title": "Unitree’s new robot is like a giant Transformer come to life - Fast Company",
-    "original_title": "Unitree’s new robot is like a giant Transformer come to life - Fast Company",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYlhEejV2eXdWT2d1VHpDRFRBcEFrZTItc3UycGFsSXUyMHZXaW5rLUItN1p4cl9BMG1rY282UWlwTC13eWE5UW5SNmdzMDZkcWNOTEkzVzhHMVkteHZmWWtuR2c5SVVvV0N6MnVMb05VZVE2bkVKR1pQeFBrS1RTLVhxQWtWZWs5QzRkM1VucHZqZWtGTFJmeGhkUWU?oc=5",
-    "date": "2026-05-14 09:41",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree’s new robot is like a giant Transformer come to life  Fast Company"
-  },
-  {
-    "title": "igus showcases humanoid robots and AGVs through RBTX marketplace",
-    "original_title": "igus showcases humanoid robots and AGVs through RBTX marketplace",
-    "link": "https://roboticsandautomationnews.com/2026/05/14/igus-showcases-humanoid-robots-and-agvs-through-rbtx-marketplace/101517/",
-    "date": "2026-05-14 09:31",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "RBTX, the robotics marketplace operated by igus, used this year’s Hannover Messe 2026 to highlight what it described as the world’s widest range of humanoid robots available through a single robotics platform, alongside a growing portfolio of autonomous mobile robots and automated guided vehicles (AGVs). Presented during igus’ annual corporate press conference at the event, […]"
-  },
-  {
-    "title": "Horse Powertrain installs Siemens AI inspection system to automate engine quality checks",
-    "original_title": "Horse Powertrain installs Siemens AI inspection system to automate engine quality checks",
-    "link": "https://roboticsandautomationnews.com/2026/05/14/horse-powertrain-installs-ai-inspection-system-to-automate-engine-quality-checks/101513/",
-    "date": "2026-05-14 09:13",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "Horse Powertrain, an innovator of low-emission powertrain systems, has deployed the Siemens Inspekto Visual Inspection system at its Skövde engine production plant through its Aurobay Technologies division. Powered by artificial intelligence (AI), the system automates quality checks at the engine inspection station, replacing a process previously performed by hand. Engines arrive at the AI-powered inspection […]"
-  },
-  {
-    "title": "Sony achieves ‘major breakthrough’ with tennis-playing robot",
-    "original_title": "Sony achieves ‘major breakthrough’ with tennis-playing robot",
-    "link": "https://roboticsandautomationnews.com/2026/05/14/sony-achieves-major-breakthrough-with-tennis-playing-robot/101509/",
-    "date": "2026-05-14 08:56",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Sony AI has announced a “major breakthrough” in robotics and artificial intelligence (AI) with the publication of its project Ace, the first known real-world autonomous system competitive with elite and professional-level human table tennis players. The research outlining the achievement, “Outplaying Elite Table Tennis Players with an Autonomous Robot” was published on the cover of […]"
-  },
-  {
-    "title": "Softbank Robotics America and Direct Supply Announce Expansion of Partnership for Senior Living Communities",
-    "original_title": "Softbank Robotics America and Direct Supply Announce Expansion of Partnership for Senior Living Communities",
-    "link": "https://humanoidroboticstechnology.com/industry-news/softbank-robotics-america-and-direct-supply-announce-expansion-of-partnership-for-senior-living-communities/",
-    "date": "2026-05-14 08:01",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "SoftBank Robotics America is extending its strategic partnership with Direct Supply to accelerate the delivery of “best run operations” across senior living communities through the adoption of autonomous floor care programs. Direct Supply was announced as an official partner in March 2025. Since then, the collaboration has rapidly evolved into a repeatable, enterprise-scale model with […]\nThe post Softbank Robotics America and Direct Supply Announce Expansion of Partnership for Senior Living Communities appeared first on Humanoid Robotics Technology."
-  },
-  {
-    "title": "Smart Robotics raises €10 million to expand AI-driven warehouse robotics across Europe",
-    "original_title": "Smart Robotics raises €10 million to expand AI-driven warehouse robotics across Europe",
-    "link": "https://roboticsandautomationnews.com/2026/05/14/smart-robotics-raises-e10-million-to-expand-ai-driven-warehouse-robotics-across-europe/101506/",
-    "date": "2026-05-14 06:56",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Dutch warehouse robotics company Smart Robotics has raised €10 million in Series A funding as it looks to expand its AI-driven robotic picking technology across Europe and strengthen its position in the fast-growing warehouse automation market. The funding round was led by Rotterdamse Havendraken, with participation from Innovation Industries and Dutch family office Ernij Next. […]"
   }
 ]
