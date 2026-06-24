@@ -1,5 +1,23 @@
 [
   {
+    "title": "Inchworm-inspired robot that crawls without rigid parts could enable remote exploration",
+    "original_title": "Inchworm-inspired robot that crawls without rigid parts could enable remote exploration",
+    "link": "https://techxplore.com/news/2026-06-inchworm-robot-rigid-enable-remote.html",
+    "date": "2026-06-24 18:40",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "An inchworm has provided the inspiration for a robot that can move without any rigid parts. The robot mimics a flexing muscle and can be used to inspect sewer pipes or as an explorer on the planet Mars, according to a thesis from the University of Gothenburg. The research is published on the arXiv preprint server."
+  },
+  {
+    "title": "FAULHABER focuses on torque, noise, and power with new GPT gearheads",
+    "original_title": "FAULHABER focuses on torque, noise, and power with new GPT gearheads",
+    "link": "https://www.therobotreport.com/faulhaber-focuses-torque-noise-power-new-gpt-gearheads/",
+    "date": "2026-06-24 18:12",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "FAULHABER says its new GPT gearheads work with motors in its standard range and provide more performance with a compact design. \nThe post FAULHABER focuses on torque, noise, and power with new GPT gearheads appeared first on The Robot Report."
+  },
+  {
     "title": "Exoskeleton and robotic arm reduce factory lifting strain by up to 65%",
     "original_title": "Exoskeleton and robotic arm reduce factory lifting strain by up to 65%",
     "link": "https://techxplore.com/news/2026-06-exoskeleton-robotic-arm-factory-strain.html",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.14571v1 Announce Type: new \nAbstract: Observing touch on another's body can elicit corresponding tactile sensations in the observer, a phenomenon termed mirror touch that supports empathy and social perception. This visuo-tactile resonance is thought to rely on structural correspondence between visual and somatosensory cortices, yet robotic systems lack computational frameworks that instantiate this principle. Here we demonstrate that cortical correspondence can be operationalized to endow robots with mirror touch. We introduce Mirror Touch Net, which imposes semantic, distributional and geometric alignment between visual and tactile representations through multi-level constraints, enabling prediction of millimetre-scale tactile signals across 1,140 taxels on a robotic hand from RGB images. Manifold analysis reveals that these constraints reshape visual representations into geometry consistent with the tactile manifold, reducing the complexity of cross-modal mapping. Extending this alignment framework to cross-domain observations of human hands enables tactile prediction and reflexive responses to observed human touch. Our results link a neural principle of visuo-tactile resonance to robotic perception, providing an explainable route towards anticipatory touch and empathic human-robot interaction. Code is available at https://github.com/fun0515/Mirror-Touch-Net."
-  },
-  {
-    "title": "DSSP: Diffusion State Space Policy with Full-History Encoding",
-    "original_title": "DSSP: Diffusion State Space Policy with Full-History Encoding",
-    "link": "https://arxiv.org/abs/2605.14598",
-    "date": "2026-05-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.14598v1 Announce Type: new \nAbstract: Diffusion-based imitation learning has shown strong promise for robot manipulation. However, most existing policies condition only on the current observation or a short window of recent observations, limiting their ability to resolve history-dependent ambiguities in long-horizon tasks. To address this, we introduce DSSP, a history-conditioned Diffusion State Space Policy that enables efficient, full-history conditioning for robot manipulation. Leveraging the continuous sequence modeling properties of State Space Models (SSMs), our history encoder effectively compresses the entire observation stream into a compact context representation. To ensure this context preserves critical information regarding future state evolution, the encoder is optimized with a dynamics-aware auxiliary training objective. This high-level context representation is then seamlessly fused with recent state observations to form a hierarchical conditioning mechanism for action generation. Furthermore, to maintain architectural consistency and minimize GPU memory overhead, we also instantiate the diffusion backbone itself using an SSM. Extensive experiments across simulation benchmarks and real-world manipulation tasks show that DSSP achieves state-of-the-art performance with a significantly smaller model size, demonstrating superior efficiency of the hierarchical conditioning in capturing crucial information as the history length increases."
-  },
-  {
-    "title": "IntentVLA: Short-Horizon Intent Modeling for Aliased Robot Manipulation",
-    "original_title": "IntentVLA: Short-Horizon Intent Modeling for Aliased Robot Manipulation",
-    "link": "https://arxiv.org/abs/2605.14712",
-    "date": "2026-05-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.14712v1 Announce Type: new \nAbstract: Robot imitation data are often multimodal: similar visual-language observations may be followed by different action chunks because human demonstrators act with different short-horizon intents, task phases, or recent context. Existing frame-conditioned VLA policies infer each chunk from the current observation and instruction alone, so under partial observability they may resample different intents across adjacent replanning steps, leading to inter-chunk conflict and unstable execution. We introduce IntentVLA, a history-conditioned VLA framework that encodes recent visual observations into a compact short-horizon intent representation and uses it to condition chunk generation. We further introduce AliasBench, a 12-task ambiguity-aware benchmark on RoboTwin2 with matched training data and evaluation environments that isolate short-horizon observation aliasing. Across AliasBench, SimplerEnv, LIBERO, and RoboCasa, IntentVLA improves rollout stability and outperforms strong VLA baselines"
   }
 ]
