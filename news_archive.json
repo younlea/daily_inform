@@ -1,5 +1,14 @@
 [
   {
+    "title": "Deep dive into ARM’s physical AI and robotics strategies with Drew Henry",
+    "original_title": "Deep dive into ARM’s physical AI and robotics strategies with Drew Henry",
+    "link": "https://www.therobotreport.com/deep-dive-into-arms-physical-ai-and-robotics-strategies-with-drew-henry/",
+    "date": "2026-06-24 00:12",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "ARM’s Drew Henry discusses the future of physical AI, robotics, and autonomous systems built for real-world constraints.\nThe post Deep dive into ARM’s physical AI and robotics strategies with Drew Henry appeared first on The Robot Report."
+  },
+  {
     "title": "ExRobotics launches UL-certified inspection robot for hazardous environments",
     "original_title": "ExRobotics launches UL-certified inspection robot for hazardous environments",
     "link": "https://www.therobotreport.com/exrobotics-launches-ul-certified-inspection-robot-for-hazardous-environments/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.13086v1 Announce Type: new \nAbstract: This paper presents an object manipulation strategy for the Variable Topology Truss (VTT) system, a truss robot that comprises actuated truss members connected by passive spherical joints. Although truss robots were originally proposed as rapidly deployable manipulators, manipulation strategy has not been studied thoroughly. To enable manipulation, we introduce a hybrid control framework that regulates position and force concurrently without explicit decoupling. At the actuator level, each member employs a sensor-based force feedback controller to generate the desired axial forces despite high actuator friction. At the task level, the forces applied at the end-effector nodes are produced by computing the required member forces using a static model of the VTT. We evaluate force-tracking performance through experiments on both a single member module and the full VTT system. Finally, we demonstrate object manipulation using two representative configurations and quantitatively assess combined position and force tracking performance. Experimental results confirm that the proposed approach enables consistent and reliable object manipulation with the VTT system."
-  },
-  {
-    "title": "What to Ignore, What to React: Visually Robust RL Fine-Tuning of VLA Models",
-    "original_title": "What to Ignore, What to React: Visually Robust RL Fine-Tuning of VLA Models",
-    "link": "https://arxiv.org/abs/2605.13105",
-    "date": "2026-05-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.13105v1 Announce Type: new \nAbstract: Reinforcement learning (RL) fine-tuning has shown promise for Vision-Language-Action (VLA) models in robotic manipulation, but deployment-time visual shifts pose practical challenges. A key difficulty is that standard task rewards supervise task success, but offer limited guidance on whether a visual change is task-irrelevant or changes the behavior required for manipulation. We propose PAIR-VLA (Paired Action Invariance & Sensitivity for Visually Robust VLA), an RL fine-tuning framework to address this difficulty by adding two auxiliary objectives over paired visual variants during PPO optimization: an invariance term that reduces the discrepancy between action distributions for a task-preserving pair (e.g., different distractors), and a sensitivity objective that encourages separable action distributions for a task-altering pair (e.g., target object in a different pose). Together, these objectives turn visual variants from mere observation diversity into behavior-level guidance on policy responses during RL fine-tuning. We evaluate on ManiSkill3 across two representative VLA architectures, OpenVLA and $\\pi_{0.5}$, under diverse out-of-distribution visual shifts including unseen distractors, texture changes, target object pose variation, viewpoint shifts, and lighting changes. Our method consistently improves over standard PPO, achieving average improvements of 16.62% on $\\pi_{0.5}$ and 9.10% on OpenVLA. Notably, ablations further show generalization across visual shifts: invariance guidance learned from distractor and texture variants transfers to target-pose and lighting shifts, while adding sensitivity guidance on target-pose variants further improves robustness to nuisance shifts, highlighting the broader transferability of behavior-level RL guidance."
   }
 ]
