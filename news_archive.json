@@ -144,6 +144,87 @@
     "summary": "arXiv:2606.24628v1 Announce Type: new \nAbstract: Deploying robots in unstructured real-world environments needs accurate, interactive models of the objects. Constructing these models at scale remains a critical bottleneck for robotic system integration. We present ArtiTwinSplat, a framework that automatically constructs articulated, photo-realistic digital twins of objects directly from RGB-D videos, requiring no CAD models, simulation assets, or manual annotations. Our method is built on 3D Gaussian Splatting that preserve geometric fidelity and photometric realism, coupled with an unsupervised articulation discovery pipeline that recovers part structure and joint kinematics from observed motion alone. With tracking and optimization stages our method provides stable, queryable digital twins that support real-time rendering, viewpoint control, and interactive manipulation. Unlike prior methods confined to simulation, ArtiTwinSplat operates directly on real-world observations and produces twins that are immediately usable by downstream robot planning and learning systems. This method offers a practical, scalable pathway toward digital twin construction, lowering the integration barrier for articulated object manipulation in embodied AI and human-robot collaboration contexts."
   },
   {
+    "title": "Optimization-based Safe Trajectory Planning for Autonomous Ground Vehicle in Multi-Floor Scenarios",
+    "original_title": "Optimization-based Safe Trajectory Planning for Autonomous Ground Vehicle in Multi-Floor Scenarios",
+    "link": "https://arxiv.org/abs/2606.24631",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.24631v1 Announce Type: new \nAbstract: The development of trajectory planning strategies for autonomous ground vehicles (AGVs) represents a prevailing research interest within the domain of intelligent transportation systems. This paper introduces a trajectory planning framework tailored for multi-floor scenarios. The framework consists of two main modules: the task planning module and the trajectory planning module. The task planning module involves a strategic selection phase, where a task planning strategy based on generalized voronoi diagrams (GVD) and multi-objective algorithms is proposed to select the floor exits for each floor. The trajectory planning module utilizes optimization-based methods to generate high-quality trajectories, and a warm-started hierarchical planning framework is designed to ensure rapid convergence. Additionally, for handling complex obstacle constraints, a correlation constraint calculation method is designed for reducing obstacle constraints in trajectory planning. Finally, the feasibility and effectiveness of the proposed framework are verified through simulations."
+  },
+  {
+    "title": "Beyond Monotonic Progress: Retry-Supervised Value Learning for Robot Imitation",
+    "original_title": "Beyond Monotonic Progress: Retry-Supervised Value Learning for Robot Imitation",
+    "link": "https://arxiv.org/abs/2606.24633",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.24633v1 Announce Type: new \nAbstract: Human demonstrations for robot imitation learning often contain mistakes and corrective behaviors, such as imprecise grasps, object misalignment, unstable contact, and repeated attempts. While these segments are commonly treated as noisy or suboptimal data, they provide valuable evidence about when execution deviates from a desirable path and how task feasibility can be restored. However, existing reward and value models often rely on monotonic progress assumptions, which capture coarse task advancement but may overlook local execution errors and corrective behaviors in imperfect demonstrations. In this work, we propose ReTVL (ReTry-Supervised Value Learning), a framework for learning mistake-sensitive value functions from mixed-quality robot demonstrations by leveraging retry events as sparse supervision. ReTVL captures the local degradation-and-recovery structure around mistakes by combining global progress calibration with local pairwise preference learning induced by sparsely annotated retry keypoints. The learned value model is then used to reweight demonstration chunks for downstream behavior cloning, reducing the influence of harmful execution errors while preserving useful corrective behaviors. Experiments on real-robot manipulation tasks show that ReTVL produces more fine-grained value estimates than progress-based baselines and improves imitation learning from imperfect demonstrations."
+  },
+  {
+    "title": "TACTFUL: Tactile-Driven Exploration For Object Localization and Identification in Confined Environments",
+    "original_title": "TACTFUL: Tactile-Driven Exploration For Object Localization and Identification in Confined Environments",
+    "link": "https://arxiv.org/abs/2606.24712",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.24712v1 Announce Type: new \nAbstract: Humans effortlessly locate and identify objects by touch alone, even without vision. In contrast, robotic systems rely heavily on vision and struggle with autonomous tactile exploration and object identification. We present TACTFUL, a vision-free tactile exploration framework that enables a multi-fingered robot to autonomously explore confined workspaces, discover objects through contact, and identify them via tactile reconstruction. Trained entirely on real hardware without simulation, our system learns a single policy that balances global workspace exploration with local surface refinement through a dynamic reward schedule. Our results demonstrate that tactile sensing, when paired with structured learning, can serve as an effective primary modality for object-level reasoning, achieving 77% success with 0.015 m average reconstruction error and outperforming baseline approaches on real-world objects."
+  },
+  {
+    "title": "World Value Models for Robotic Manipulation",
+    "original_title": "World Value Models for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.24742",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.24742v1 Announce Type: new \nAbstract: Generalist value models play a pivotal role in scaling robotic policy learning from large-scale, mixed-quality data. Mathematically, accurate value estimation demands deep temporal understanding, requiring models to both ground the current belief using historical context and plan over future outcomes. However, most existing robotic value models are built on Vision-Language Model (VLM) backbones that are pretrained primarily on static or temporally sparse visual observations, lacking the requisite temporal modeling capabilities for value estimation. Unlike VLMs, world models naturally excel at temporal modeling and future planning, making them ideal foundations for learning generalizable value functions. Driven by this insight, we marry world models with value estimation to construct a new generalist robotic value model, World Value Model (WVM), that offers accurate task progressions to assess data quality. On standard benchmarks, WVM delivers state-of-the-art (SOTA) Value-Order Correlation (VOC) results. Complementing standard evaluation suites that contains only expert data, we further introduce Suboptimal-Value-Bench, a multi-embodiment benchmark consisting of 800 suboptimal trajectories with high-fidelity, human-labeled frame annotations. Our evaluations show that WVM maintains its SOTA performance on Suboptimal-Value-Bench, establishing its robustness in handling both expert and suboptimal data. When deployed for policy learning, WVM improves manipulation performance across various policy extraction approaches in both simulated and real-world deployment, providing robust guidance for learning from mixed-quality data."
+  },
+  {
+    "title": "InSight: Self-Guided Skill Acquisition via Steerable VLAs",
+    "original_title": "InSight: Self-Guided Skill Acquisition via Steerable VLAs",
+    "link": "https://arxiv.org/abs/2606.24884",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.24884v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models can learn manipulation skills from demonstrations, but their capabilities are bounded by the skills in the training data. We present InSight, a framework that unlocks autonomous skill acquisition by rendering VLAs steerable at the primitive-action level (e.g., \"move gripper to the bowl\", \"lift upward\", \"pour the bottle\"). InSight consists of two primary stages: (1) an automated segmentation pipeline that partitions demonstrations into labeled primitives via VLM plan decomposition and end-effector poses to enable VLA primitive steerability, and (2) a VLM-guided data flywheel that identifies missing primitives required to accomplish a novel task, autonomously attempts demonstrations of the missing primitives with VLM-proposed low-level control, and automatically labels, stores, and integrates successful demonstrations into the VLA training set. We evaluate InSight across simulation and real-world manipulation tasks, including block flipping, drawer closing, sweeping, twisting, and pouring, without any human demonstrations of these target skills. Once learned, these primitives can be composed to execute novel, long-horizon tasks without additional human demonstrations. Our findings demonstrate that primitive steerability provides a practical foundation for continual skill acquisition in VLA policies. Project website: https://insight-vla.github.io."
+  },
+  {
+    "title": "Decentralized Coordination of Autonomous Traffic Through Advanced Air Mobility Corridors",
+    "original_title": "Decentralized Coordination of Autonomous Traffic Through Advanced Air Mobility Corridors",
+    "link": "https://arxiv.org/abs/2606.23832",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.23832v1 Announce Type: cross \nAbstract: The use of dedicated corridors for Advanced Air Mobility (AAM) traffic is one of the most commonly proposed pathways to integrating them into existing airspace operations. Most prior research has focused on the design of networks of AAM corridors and conflict resolution for aircraft within corridors. It is also generally believed that while attractive from an implementation perspective, corridor-based operations may be inefficient, especially in the absence of centralized traffic management.\n  In this paper, we show that contrary to this belief, it is possible for autonomous aircraft to learn to self-organize into corridor flows in decentralized settings. We illustrate our approach using scenarios in which fixed-wing aircraft need to safely and efficiently traverse (1) a single corridor with metering after the exit, (2) a sequence of two consecutive corridors, and (3) a corridor that splits into two. We find that in decentralized settings with only local information, the aircraft are able to conform to the corridor boundaries more than 94% of the time and reach their goal in a relatively efficient manner. Furthermore, tactical interventions to handle violations of the separation minimum are needed only infrequently in low- and medium-density settings. However, such tactical interventions become more frequently necessary only when traffic density is high."
+  },
+  {
+    "title": "Reward-Centered ReST-MCTS: A Robust Decision-Making Framework for Robotic Manipulation in High Uncertainty Environments",
+    "original_title": "Reward-Centered ReST-MCTS: A Robust Decision-Making Framework for Robotic Manipulation in High Uncertainty Environments",
+    "link": "https://arxiv.org/abs/2503.05226",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2503.05226v2 Announce Type: replace \nAbstract: Monte Carlo tree search is attractive for robotic manipulation because it can improve action selection through simulation without requiring a fully differentiable policy. In uncertain domains, however, sparse terminal rewards and noisy transitions can make shallow search brittle: many candidate branches remain indistinguishable until late rollouts, and small simulation budgets amplify this ambiguity. This paper presents Reward-Centered ReST-MCTS, a decision-making framework that decomposes intermediate feedback into rule, heuristic, optional neural, and value-estimation channels, centers the resulting process signal against matched task contexts, and uses it to bias or repair search while preserving terminal-task evaluation. The primary evidence is intentionally tiered. Local tasks and matched ManiSkill diagnostics isolate reward-center mechanisms and ablations; matched option-level ManiSkill sweeps test robustness under primitive failure, observation noise, and initial-pose shifts while not claiming standard benchmark superiority; and an official same-backbone OpenVLA-OFT/LIBERO bridge tests bounded VLA action repair. The OpenVLA-OFT clean reproduction reaches 10/10 LIBERO-Spatial successes both with and without RCRM-Guard. A single-suite same-backbone action-channel stress artifact over ten paired LIBERO-Spatial action-channel stress episodes records 0/10 unguarded successes and 9/10 guarded successes. Additional observation-noise, language-perturbation, and visual-distractor probes are reported as coverage and negative-result context rather than superiority evidence. The resulting claim is bounded: Reward-Centered ReST-MCTS is an inspectable test-time verifier for same-backbone high-uncertainty manipulation, not a replacement VLA policy or a broad standard-benchmark superiority claim."
+  },
+  {
+    "title": "MuTRAP: Multi-trigger Trojans Attacking Robot Task Planning Systems",
+    "original_title": "MuTRAP: Multi-trigger Trojans Attacking Robot Task Planning Systems",
+    "link": "https://arxiv.org/abs/2504.17070",
+    "date": "2026-06-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2504.17070v3 Announce Type: replace \nAbstract: Robots need task planning methods to achieve goals that require more than one action. Recently, large pretrained models have demonstrated impressive performance in task planning. For instance, large language models (LLMs) can generate task plans using action and goal descriptions. Despite the rapid progress of large models in robot intelligence, their security implications remain only partially understood, leaving important gaps in the exploration of potential vulnerabilities in LLM-driven robotic planning systems. To investigate such risks, in this paper, we develop MuTRAP, the first multi-trigger trojan attack specifically designed and targeted for LLM-assisted robot task planners. MuTRAP follows the standard practice of LLM usage in robotics where the backbone LLM is typically frozen and hosted in a central server limiting attacker's reach. In contrast, MuTRAP injects backdoor using a small set of task-specific parameters. In addition, we develop a trigger optimization method for selecting multiple-trigger words that are most effective for different robot applications. For instance, one can use unique trigger word \"herical\" to activate a specific malicious behavior, e.g., cutting hand on a kitchen robot. Through MuTRAP that demonstrates the vulnerability of current LLM-based planners, our goal is to promote the development of secured robot intelligence. Details and demos are provided in: https://mutrap.github.io/MuTRAP/"
+  },
+  {
+    "title": "GSMA MWC26 Shanghai Opens Doors as AI, Robotics, and Drones Lead Packed Agenda - KIPOST",
+    "original_title": "GSMA MWC26 Shanghai Opens Doors as AI, Robotics, and Drones Lead Packed Agenda - KIPOST",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44RmwzQnQ4MGVRSzJNanJBQ0lFOWt4cE5jLTBxS200ZUxXRHFWeXlfSndXS01xdDlWbXJCVTk5MXFqM2ZIR2tDanVlclVlZjktSWtHYlA3c1VHRnZLck9CUXdJT3E3OTdG0gFsQVVfeXFMTjhBM19Kd2YteENLckluMi1TVEZ4UnZrRnJLX2VrdHl3UlJkZ2ZCVlo0ZkRBeDRGek9wT2ZxY3g0MGMwSGNEeUxtdlZvbmZOYU5MRm5kTFdEY3JRWkhLMkFadmlVQlJTYnVDMnpV?oc=5",
+    "date": "2026-06-24 03:30",
+    "source": "Google News (Humanoid)",
+    "category": "humanoid",
+    "summary": "GSMA MWC26 Shanghai Opens Doors as AI, Robotics, and Drones Lead Packed Agenda  KIPOST"
+  },
+  {
     "title": "Smart drones, safe skies: Student's system tests and coordinates drone fleets",
     "original_title": "Smart drones, safe skies: Student's system tests and coordinates drone fleets",
     "link": "https://techxplore.com/news/2026-06-smart-drones-safe-skies-student.html",
@@ -17917,86 +17998,5 @@
     "source": "ByteByteGo",
     "category": "humanoid",
     "summary": "Distributed systems are built out of services that need to communicate, and the simplest way to do that is for one service to call another directly and wait for a response."
-  },
-  {
-    "title": "Vention expands conveyor platform with integrated end-of-line automation system",
-    "original_title": "Vention expands conveyor platform with integrated end-of-line automation system",
-    "link": "https://roboticsandautomationnews.com/2026/05/14/vention-expands-conveyor-platform-with-integrated-end-of-line-automation-system/101549/",
-    "date": "2026-05-14 15:11",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "Vention, a provider of an automation platform and hardware ecosystem, has announced the expansion of its conveyor ecosystem, delivering a fully integrated solution for material handling across assembly lines, warehouse logistics, and end-of-line packaging applications. Vention’s conveyor ecosystem is part of its broader platform approach to industrial automation, where design, ordering, deployment, and operation are […]"
-  },
-  {
-    "title": "IEEE explores future of ‘networked AI’ where robots learn collectively",
-    "original_title": "IEEE explores future of ‘networked AI’ where robots learn collectively",
-    "link": "https://roboticsandautomationnews.com/2026/05/14/ieee-explores-future-of-networked-ai-where-robots-learn-collectively/101547/",
-    "date": "2026-05-14 14:49",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Researchers are increasingly exploring a future in which robots and AI systems do not operate as isolated machines, but instead learn collectively across connected networks – sharing information, adapting to changing environments, and continuously optimizing their own behavior in real time. That growing area of research – often referred to as “networked AI” – is […]"
-  },
-  {
-    "title": "GMEX Robotics receives first order for Bon Vivant 3.0 automated cooking machines worth almost $3 million",
-    "original_title": "GMEX Robotics receives first order for Bon Vivant 3.0 automated cooking machines worth almost $3 million",
-    "link": "https://roboticsandautomationnews.com/2026/05/14/gmex-robotics-receives-first-order-for-bon-vivant-3-0-automated-cooking-machines-worth-almost-3-million/101541/",
-    "date": "2026-05-14 13:58",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "GMEX Robotics, a developer of AI-powered robotic technologies, has announced it has received its first deployment order under its previously disclosed A$4.2 million (approximately $2.7 million) agreement with a leading Australian hospitality food and beverage group. The initial purchase order includes multiple Bon Vivant 3.0 automated cooking systems, representing approximately A$504,000 in value. Delivery of […]"
-  },
-  {
-    "title": "Mind Robotics raises $400M to scale AI-powered robots in manufacturing",
-    "original_title": "Mind Robotics raises $400M to scale AI-powered robots in manufacturing",
-    "link": "https://www.therobotreport.com/mind-robotics-raises-400m-scale-ai-powered-robots-in-manufacturing/",
-    "date": "2026-05-14 13:57",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Mind Robotics has become a 'unicorn' as it scales toward applying physical AI to manufacturing, starting with partner Rivian.\nThe post Mind Robotics raises $400M to scale AI-powered robots in manufacturing appeared first on The Robot Report."
-  },
-  {
-    "title": "PAL Robotics unveils new robotic arm platform for advanced AI-driven manipulation",
-    "original_title": "PAL Robotics unveils new robotic arm platform for advanced AI-driven manipulation",
-    "link": "https://roboticsandautomationnews.com/2026/05/14/pal-robotics-unveils-new-robotic-arm-platform-for-advanced-ai-driven-manipulation/101537/",
-    "date": "2026-05-14 13:51",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "PAL Robotics has announced a new robotic arm platform aimed at researchers, developers, and robotics engineers working on advanced manipulation applications. The Barcelona-based robotics company, known for platforms including TIAGo Pro and Kangaroo, said the new system has been designed to make robotic manipulation more accessible, flexible, and easier to deploy across both research and […]"
-  },
-  {
-    "title": "Get a systems perspective to scaling humanoids at the Robotics Summit",
-    "original_title": "Get a systems perspective to scaling humanoids at the Robotics Summit",
-    "link": "https://www.therobotreport.com/get-systems-perspective-scaling-humanoids-at-robotics-summit/",
-    "date": "2026-05-14 12:45",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Giovanni Campanella, the general manager of robotics at Texas Instruments, will provide a technical roadmap for building smarter humanoids.\nThe post Get a systems perspective to scaling humanoids at the Robotics Summit appeared first on The Robot Report."
-  },
-  {
-    "title": "Anthro Energy partners with EnPower to develop lithium-ion cells in the U.S.",
-    "original_title": "Anthro Energy partners with EnPower to develop lithium-ion cells in the U.S.",
-    "link": "https://www.therobotreport.com/anthro-energy-partners-enpower-develop-lithium-ion-cells-u-s/",
-    "date": "2026-05-14 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "The companies will combine EnPower's electrode and pouch cell manufacturing capabilities with Anthro Energy's Proteus electrolyte platform.\nThe post Anthro Energy partners with EnPower to develop lithium-ion cells in the U.S. appeared first on The Robot Report."
-  },
-  {
-    "title": "Unitree just brought the Transformer robot into real life - Fast Company South Africa",
-    "original_title": "Unitree just brought the Transformer robot into real life - Fast Company South Africa",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPLWxxbTZSWWhSTWFINU9jVUhwRUVGdk53eTl6OTR6dThwNHl0dW91UVowb0pmeW1RNDA4TE1aY3FMUXdUQ1VKVmJKZGstM0txYmNtRXQ4M3hBRndWdnFjWndSV3V5QnB2bE04b0pSZUdaekxXZUtaVUVSSVpLMVBDU0U2bl9nTUp1cm9CcmZCQXlaSWl0WTNGUjl3Q1o0Ukt0aUE?oc=5",
-    "date": "2026-05-14 11:33",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree just brought the Transformer robot into real life  Fast Company South Africa"
-  },
-  {
-    "title": "Piaggio Fast Forward launches Grogu-inspired cargo robot with autonomous following technology",
-    "original_title": "Piaggio Fast Forward launches Grogu-inspired cargo robot with autonomous following technology",
-    "link": "https://roboticsandautomationnews.com/2026/05/14/piaggio-fast-forward-launches-grogu-inspired-cargo-robot-with-autonomous-following-technology/101534/",
-    "date": "2026-05-14 10:09",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Piaggio Fast Forward has launched a new Star Wars-inspired version of its cargo-carrying robot, combining autonomous following technology with the distinctive design of Grogu’s floating pram from the Star Wars universe. The new Grogu gitamini robot, developed in collaboration with Disney and Disney Consumer Products, is based on the company’s existing gitamini personal cargo robot […]"
   }
 ]
