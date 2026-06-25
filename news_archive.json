@@ -1,5 +1,77 @@
 [
   {
+    "title": "BFMTrack: Latent Sequence Optimization for Physics-Based Motion Tracking with Behavioral Foundation Models",
+    "original_title": "BFMTrack: Latent Sequence Optimization for Physics-Based Motion Tracking with Behavioral Foundation Models",
+    "link": "https://arxiv.org/abs/2606.25056",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.25056v1 Announce Type: new \nAbstract: Behavioral Foundation Models (BFMs) offer a promising path toward universal physics-based character control by organizing a rich repertoire of physically plausible behaviors into a latent space, guided by a large-scale motion dataset. While these models excel at time-invariant tasks, such as goal-reaching and state-based reward optimization, their latent space does not directly support time-varying objectives, such as tracking a motion sequence. For tracking, existing heuristics rely on moving-window-averaging that fails to capture the nuances of highly dynamic motions. In this work, we propose a novel Latent Sequence Optimization (LSO) to address these shortcomings. Our approach combines simulation rollouts with a policy gradient update to optimize over a sequence of latents, extending the capabilities of BFMs toward precise motion tracking without requiring reward engineering and tuning. To guide the optimization toward smooth, coherent latent trajectories, we model the latent sequence using temporally correlated noise. We validate our approach across dense tracking, sparse keyframing, and direct deployment onto a real humanoid robot."
+  },
+  {
+    "title": "RGB: RL Guided Whole-Body MPPI for Humanoid Control",
+    "original_title": "RGB: RL Guided Whole-Body MPPI for Humanoid Control",
+    "link": "https://arxiv.org/abs/2606.25123",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.25123v1 Announce Type: new \nAbstract: Humanoid robots require whole-body controllers that are both robust and precise in contact-rich environments. While deep reinforcement learning (RL) achieves robust stability, its behavior is tightly coupled to the training objective and command interface, making it difficult to add new feedback objectives without retraining. In this study, we propose an RL guided whole-body model predictive path integral (MPPI) framework that acts as an add-on feedback controller on top of a pretrained RL policy. Instead of using RL policy as the final controller, we use it as a sampling prior that biases MPPI rollouts toward dynamically feasible behaviors. Task objectives are specified through modular MPPI cost terms, and MPPI closes the loop by continuously correcting the RL prior online to satisfy these objectives without retraining the policy. Simulations on a 29-DoF Unitree G1 humanoid in MuJoCo demonstrate stable high-rate control (average 280~Hz). The proposed method improves task-level precision over a pure RL baseline under the same command interface. This is achieved by correcting systematic drift during straight walking and tracking additional whole-body reference signals imposed through the cost."
+  },
+  {
+    "title": "Memory Retrieval in Visuomotor Policies for Long-Horizon Robot Control",
+    "original_title": "Memory Retrieval in Visuomotor Policies for Long-Horizon Robot Control",
+    "link": "https://arxiv.org/abs/2606.25136",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.25136v1 Announce Type: new \nAbstract: General-purpose robots operating in partially observable environments, such as homes, require memory to support autonomy. They must recall diverse information from the past, such as where objects were placed, which tasks a human partner has completed, and when an appliance was turned on. Achieving this versatility requires a general memory retrieval mechanism. Transformer architectures that use attention over long contexts for memory retrieval provide a promising approach, as they learn retrieval from data rather than relying on task-specific or hand-designed rules. However, directly incorporating them into imitation learning from offline data introduces two key challenges: (1) the policy may learn spurious correlations between past information and predicted actions, and (2) errors accumulate in memory due to prediction inaccuracies and their compounding interactions with the environment, causing model drift and cascading failures. To address both challenges, we introduce HALO, a visuomotor policy with an attention-based memory retrieval mechanism for long-horizon control. First, to suppress spurious correlations, HALO distills vision-language model (VLM) priors into the policy. It generates memory-dependent question--answer pairs from demonstration trajectories and trains jointly with a video question--answering objective, steering retrieval toward task-relevant information. Second, to reduce the impact of accumulated errors in memory during closed-loop control, HALO uses sparse attention that restricts retrieval to only the most relevant parts of the history. Together, these components enable more reliable long-horizon control by guiding the policy to retrieve task-relevant information from up to eight minutes of past experience. Project website: https://robin-lab.cs.utexas.edu/HALO"
+  },
+  {
+    "title": "Learning Perceptive Platform Adaptive Locomotion Controllers for Quadrupedal Robots",
+    "original_title": "Learning Perceptive Platform Adaptive Locomotion Controllers for Quadrupedal Robots",
+    "link": "https://arxiv.org/abs/2606.25179",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.25179v1 Announce Type: new \nAbstract: Universal quadrupedal locomotion remains limited by the difficulty of integrating perception across diverse robot morphologies. State-of-the-art controllers rely on single-robot training or blind policies that omit real-time perception, leading to poor cross-embodiment generalization. Designing locomotion policies that remain robust across related quadruped morphologies while incorporating perception is challenging. Moreover, fully perceptive policies are often sensitive to noise, whereas blind controllers lack terrain awareness. In this work, we study how perception should be integrated into morphology-aware reinforcement learning architectures for deployable quadrupedal control. Building on MorAL, we train morphology-specialized universal controllers on multiple reference quadrupeds using adaptive terrain curricula. We compare a blind baseline, a critic-perceptive variant (MorAL+), and a fully perceptive actor-critic (PPAL). Policies are evaluated in simulation on flat and rough terrains, and deployed on ANYmal hardware. Results show that critic-only perception improves robustness and tracking consistency over blind baselines while remaining more stable than fully perceptive policies under perception noise. These findings highlight that perception placement and curriculum design are key factors for scalable, morphology-aware locomotion."
+  },
+  {
+    "title": "Wear-Clearance-Impact Coupling in the Jansen Linkage: A Gait-Durability-Optimized Design Slows Joint Loosening",
+    "original_title": "Wear-Clearance-Impact Coupling in the Jansen Linkage: A Gait-Durability-Optimized Design Slows Joint Loosening",
+    "link": "https://arxiv.org/abs/2606.25208",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.25208v1 Announce Type: new \nAbstract: A companion study introduced joint durability into the dimensional design of the Theo Jansen walking linkage and found its classical \"holy numbers\" Pareto-dominated, but it modelled the revolute joints as ideal, clearance-free pins, so its wear figures were relative rankings, not a prediction of in-service degradation. Here we relax that idealization. We build a forward-dynamic model of the Jansen leg in which a revolute joint becomes a clearance joint with a continuous normal contact law (Lankarani-Flores, hysteresis-damped) and Ambrosio friction, integrated as a constraint-stabilized differential-algebraic system, and couple it to the Archard law in a wear->clearance->impact feedback loop. Three findings emerge. First, neglecting clearance underestimates the peak joint load: the clearance model gives a peak contact force of ~104 N at the load-bearing pin against ~48 N for the ideal joint (~2x amplification), rising to ~426 N when two joints carry clearance at once. Second, the coupling is strongly impact-sensitive--single trajectories are non-monotonic and can reverse the design ranking, a chaos consistent with the literature--so designs must be compared statistically; over an ensemble of 16 randomized phases the optimized joint is robustly more durable, with per-cycle wear ~9-7x lower (peak force ~4x lower) at one clearance joint and still ~1.7x lower on both with two (p<0.01 throughout). Third, the wear is strongly non-uniform--it concentrates on a ~10 deg load arc--so assuming uniform clearance growth underestimates local clearance growth by ~36x. The clearance-free durability advantage thus survives the chaotic, multi-joint, non-uniformly-worn coupling in the ensemble mean. We deliver the first clearance-coupled forward-dynamic model of the Jansen leg and specify a falsifiable protocol to test each prediction."
+  },
+  {
+    "title": "RigPI: Dynamic Parameter Identification of Rigid Body via VLM-Seeded Differentiable Simulation",
+    "original_title": "RigPI: Dynamic Parameter Identification of Rigid Body via VLM-Seeded Differentiable Simulation",
+    "link": "https://arxiv.org/abs/2606.25212",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.25212v1 Announce Type: new \nAbstract: Accurate physical parameter identification of manipulated objects is fundamental to advanced robotic manipulation and the construction of faithful digital twins. However, acquiring physically consistent inertial and frictional properties from real-world interactions remains challenging due to sensing noise, modeling errors, and limited prior knowledge. This paper presents \\textbf{RigPI}, a systematic framework for identifying dynamic parameters of both unconstrained rigid bodies and multi-link rigid bodies during robot-object interaction. RigPI integrates vision-based semantic priors, force-torque measurements, and motion observations within a differentiable simulation pipeline. A vision-language model (VLM) provides informed initialization and a constrained search space, while gradient information from a differentiable physics simulator enables efficient and stable parameter refinement. The proposed two-stage optimization strategy alleviates sensitivity to noise and avoids physically implausible solutions. Extensive real-world experiments on objects with revolute and prismatic joints demonstrate that RigPI achieves accurate and stable parameter estimates, and successfully reproduces manipulation trajectories on a real robot with parameter-aware predictive validity. These results highlight the effectiveness and robustness of RigPI for real-world robotic system identification tasks."
+  },
+  {
+    "title": "GRAFT: Graph-Based Affordance Transfer via Part Correspondence",
+    "original_title": "GRAFT: Graph-Based Affordance Transfer via Part Correspondence",
+    "link": "https://arxiv.org/abs/2606.25241",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.25241v1 Announce Type: new \nAbstract: Generalizing robotic manipulation to unseen objects remains challenging, as learning-based approaches require many demonstrations and fail in few-shot settings. Prior work transfers affordances through semantic retrieval, but semantics alone neglect geometric similarity, which is critical for manipulation. We propose GRAFT, a geometry-aware correspondence framework for zero-shot manipulation transfer using only one demonstration per object. Objects are represented as part-based graphs, where part-level descriptors support global instance retrieval and part correspondence, and vertex-level descriptors enable fine-grained contact point matching. For an unseen object, our method first retrieves the most functionally and geometrically similar instance from the demonstration buffer with aligned functional parts, and finally propagates the contact points through point-wise correspondence."
+  },
+  {
+    "title": "DynaMOMA: Instantaneous Prediction of Grasp Poses for Mobile Manipulation of Dynamic Objects",
+    "original_title": "DynaMOMA: Instantaneous Prediction of Grasp Poses for Mobile Manipulation of Dynamic Objects",
+    "link": "https://arxiv.org/abs/2606.25295",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.25295v1 Announce Type: new \nAbstract: Mobile manipulation is a fundamental robotics task and has advanced rapidly in recent years, enabling robots to navigate, reach, and interact with objects in complex environments. However, mobile manipulation of dynamic objects remains highly challenging, as robots must coordinate the mobile base and arm while adapting to continuously evolving target poses. A key challenge lies in predicting temporally consistent short-horizon grasp trajectories from dynamic observations. In this work, we propose \\ours{}, a dynamic mobile manipulation framework that couples instantaneous grasp trajectory prediction with whole-body control policy. Our predictor uses an anchor-based diffusion model to generate temporally consistent short-horizon grasp trajectories conditioned on historical observations. The predicted trajectories are then encoded as compact features and fed to a whole-body reinforcement learning policy, which controls the mobile manipulator for dynamic grasping. We further introduce a anticipation-guided reward that equips the policy with an anticipatory grasping horizon by adaptively shifting the target from the current grasp observation to the instantaneously predicted grasp trajectory. Through extensive experiments in Isaac Gym simulation, we show that our method achieves strong performance in mobile manipulation of dynamic objects across diverse settings and grasping metrics. Furthermore, our predictor and policy demonstrate strong generalizability in real-world experiments."
+  },
+  {
     "title": "Unitree’s IPO will test the ‘embodied AI’ valuation shortcut - The Business Times",
     "original_title": "Unitree’s IPO will test the ‘embodied AI’ valuation shortcut - The Business Times",
     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaE12MkxyWThMU1F4MWl1ZEZnUlNmbUJqNmc0UnRJZXJJMGlWOEFubHFiQ3lMVExiMHZTY2M2bUxGNWtBazN1UW1PS3dUYVYyRVBIR3lxYi03clI5ZXdCbUlKTThVWVdac2IxdW4tWkIxLVh4ZFRWWVMydWFVU2xuVVNGZm9OMS1DTVQwQ2tSXzBfQ2hELXZlT1h3c3lIYXFKenFwYjVR?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "All3, a European company developing a heavy-duty robotic platform for construction, has announced a $25 million seed funding round. The round is led by RTP Global with significant participation from SuperSeed, and additional investment from Begin Capital, s16vc and VNV Global. All3 has re-engineered every step of construction into one end-to-end process through three integrated […]"
-  },
-  {
-    "title": "From expo momentum to deep-tech investment: Osaka pushes to become Asia’s next global financial hub",
-    "original_title": "From expo momentum to deep-tech investment: Osaka pushes to become Asia’s next global financial hub",
-    "link": "https://roboticsandautomationnews.com/2026/05/15/from-expo-momentum-to-deep-tech-investment-osaka-pushes-to-become-asias-next-global-financial-hub/101585/",
-    "date": "2026-05-15 08:55",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Osaka is the second-largest city in Japan after Tokyo, which was, for a long time – until this year, the most populous city in the world – having lost the title this year to Jakarta, Indonesia. The “Vision of Global Financial City Osaka” is an initiative to build a city that attracts overseas investment, financial […]"
-  },
-  {
-    "title": "Unitree unveils $574K 'transformer' robot that shifts from two legs to four - VnExpress International",
-    "original_title": "Unitree unveils $574K 'transformer' robot that shifts from two legs to four - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdnpIVHVCNjlrcER5N0hyTTlONnVhd0dHNGxYa21SRHhHNFN3aXA4TmhfSjl3amVsU1lXTGRYUl9hdjgyRGVFdndQQXhLY0xCckJWeHdRMUk3S0hrb29VMUt5SDdUalpIajJnajFDaThRX3Y5NXJzOGVQeV9sb0QzSEVMRmhUSnNPRExhYW5fVUFZeXZBc2NJTEwtZ2xTY2RLMzdkRHBacEF2c256YlZsU2xyS0RJZWRiTk1uSEFjeUdOYmVUZ2lCaw?oc=5",
-    "date": "2026-05-15 08:24",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree unveils $574K 'transformer' robot that shifts from two legs to four  VnExpress International"
-  },
-  {
-    "title": "MIPI Alliance launches ‘Physical AI Birds of a Feather group’ focused on humanoids",
-    "original_title": "MIPI Alliance launches ‘Physical AI Birds of a Feather group’ focused on humanoids",
-    "link": "https://roboticsandautomationnews.com/2026/05/15/mipi-alliance-launches-physical-ai-birds-of-a-feather-group-focused-on-humanoids/101582/",
-    "date": "2026-05-15 07:45",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "The MIPI Alliance, an international organization that develops specifications that standardize wired interfaces for mobile and other connected ecosystems, has announced the formation of a “Physical AI Birds of a Feather (BoF) group” dedicated to exploring upcoming technologies and trends in the physical AI market, with an initial focus on humanoids. The group will examine […]"
-  },
-  {
-    "title": "WIRobotics Announces Approximately $68 Million Series B Funding",
-    "original_title": "WIRobotics Announces Approximately $68 Million Series B Funding",
-    "link": "https://humanoidroboticstechnology.com/news/wirobotics-announces-approximately-68-million-series-b-funding/",
-    "date": "2026-05-15 07:39",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "WIRobotics (Co-CEOs Yeonbaek Lee and Yongjae Kim) has announced that it has completed a KRW 95 billion (approximately USD 68 million) Series B funding round. The investment comes approximately two years after the company’s Series A financing in March 2024 (KRW 13 billion) and reflects growing confidence in WIRobotics’ next-generation robotics technologies and commercialisation potential. […]\nThe post WIRobotics Announces Approximately $68 Million Series B Funding appeared first on Humanoid Robotics Technology."
-  },
-  {
-    "title": "Hexagon and Fill Maschinenbau partner to advance manufacturing autonomy using humanoids",
-    "original_title": "Hexagon and Fill Maschinenbau partner to advance manufacturing autonomy using humanoids",
-    "link": "https://roboticsandautomationnews.com/2026/05/15/hexagon-and-fill-maschinenbau-partner-to-advance-manufacturing-autonomy-using-humanoids/101578/",
-    "date": "2026-05-15 06:46",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Hexagon Robotics and Fill Maschinenbau are have announced a collaboration to define how humanoids can work alongside Fill’s manufacturing solutions to increase autonomy in advanced manufacturing. AEON, Hexagon Robotics’ multi-purpose humanoid, will be piloted on one of Fill’s client use case in Gurten, Austria, to demonstrate how it can be integrated within real manufacturing workflows […]"
-  },
-  {
-    "title": "Seacon Logistics selects Dexory to strengthen operational continuity across 90,000 sq m of warehouse space",
-    "original_title": "Seacon Logistics selects Dexory to strengthen operational continuity across 90,000 sq m of warehouse space",
-    "link": "https://roboticsandautomationnews.com/2026/05/15/seacon-logistics-selects-dexory-to-strengthen-operational-continuity-across-90000-sq-m-of-warehouse-space/101575/",
-    "date": "2026-05-15 06:36",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Seacon Logistics has selected Dexory to deploy DexoryView across two warehouse locations in Maasbree, the Netherlands. This strengthens the company’s focus on data-driven warehouse operations. The deployment covers approximately 90,000 square metres of racked warehouse space at Zonneveld 1 and 3, where Seacon Logistics manages general cargo and fast-moving consumer goods under ambient conditions. The […]"
-  },
-  {
-    "title": "Segway Navimow reaches 1 million units in global cumulative mass production",
-    "original_title": "Segway Navimow reaches 1 million units in global cumulative mass production",
-    "link": "https://roboticsandautomationnews.com/2026/05/15/segway-navimow-reaches-1-million-units-in-global-cumulative-mass-production/101573/",
-    "date": "2026-05-15 06:25",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Robotic lawn mower manufacturer Segway Navimow says it has produced its one millionth unit. The organization held a ceremony at its research and development and manufacturing base in China to celebrate the milestone. The announcement comes as Navimow launches its new production line in Malaysia, providing a solid foundation for global supply chain stability and […]"
-  },
-  {
-    "title": "Towards Robotic Dexterous Hand Intelligence: A Survey",
-    "original_title": "Towards Robotic Dexterous Hand Intelligence: A Survey",
-    "link": "https://arxiv.org/abs/2605.13925",
-    "date": "2026-05-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.13925v1 Announce Type: new \nAbstract: Robotic dexterous hands are central to contact-rich manipulation, with rapid progress driven by advances in hardware, sensing, control, simulation, and data generation. However, existing studies are often developed under different assumptions regarding hand embodiments, sensory configurations, task settings, training data, and evaluation protocols, making systematic comparison difficult and obscuring the developmental trajectory of the field. This survey provides a holistic review of dexterous hand research from four complementary aspects. First, we present a hardware-level analysis covering actuation, transmission, perception, and representative hand designs, highlighting the key trade-offs in force capability, compliance, bandwidth, integration, and system complexity. Furthermore, we review control and learning methods for dexterous manipulation from a methodological perspective, grouping representative works by major paradigms and tracing their evolution in chronological order. In addition, we consolidate datasets, modality design, and evaluation practices, which enables methodological progress to be interpreted together with the ways in which it is trained, benchmarked, and assessed. Finally, we discuss the major limitations of current dexterous hand research and summarize the corresponding future directions. By connecting hardware analysis, methodological development, data resources, and evaluation, this survey aims to provide a structured understanding of dexterous hand research and to clarify the most important open challenges for future study."
   }
 ]
