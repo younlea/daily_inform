@@ -216,6 +216,78 @@
     "summary": "arXiv:2606.25985v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models have shown strong potential for general-purpose robot manipulation, but their inference latency remains a major obstacle to stable high-frequency control. Asynchronous execution mitigates this bottleneck by overlapping policy inference with action execution, yet the next action chunk is still predicted from stale observations while the robot continues to move. Direct chunk stitching therefore introduces handoff discontinuities, action jitter, and failures in contact-rich manipulation. Existing remedies typically require either full-policy retraining or architecture-specific runtime logic. This work proposes Action ControlNet (ACNet), a lightweight delay-aware adapter that uses the executed motion suffix as a residual condition for a mostly frozen action head. ACNet leaves the pretrained backbone unchanged, introduces few trainable parameters, and remains compatible with generative action heads such as diffusion and flow matching. On Kinetix, Meta-World MT50, and a real-world SO-ARM101 platform, ACNet improves robustness under inference delay and yields smoother asynchronous trajectories than direct chunk stitching, while remaining more lightweight than full delay-conditioned retraining."
   },
   {
+    "title": "Emcar: Embodied Controller for Animating Robots",
+    "original_title": "Emcar: Embodied Controller for Animating Robots",
+    "link": "https://arxiv.org/abs/2606.26008",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.26008v1 Announce Type: new \nAbstract: This chapter describes EMCAR, a novel software tool for programming robot motion that leverages the unique affordances of artistic practices such as puppetry and drawing to conceive, design, and program novel interactions and realize new use cases for HRI. The advantage of this no-code platform is that it expands creative applications for collaborative robots - putting robots directly in the hands of artists - and provides an inclusive environment that enables individuals with little or no technical backgrounds to engage meaningfully in collaborations and robotics research."
+  },
+  {
+    "title": "ForceBand: Learning Forceful Manipulation with sEMG",
+    "original_title": "ForceBand: Learning Forceful Manipulation with sEMG",
+    "link": "https://arxiv.org/abs/2606.26093",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.26093v1 Announce Type: new \nAbstract: Human demonstrations are a scalable data source for learning robot manipulation policies. However, common sources of human demonstration data, such as motion-capture trajectories and internet videos, capture mostly motion and appearance while missing the contact forces that are critical for force-sensitive manipulation. In this paper, we introduce ForceBand, a low-cost wrist-worn sEMG system that turns human muscle activity into force-enriched demonstrations. We first collect a 10-hour multimodal dataset containing egocentric video, sEMG, IMU, and fingertip force measurements across diverse actions and objects. Using this dataset, we pre-train an EMG2Force model that predicts per-finger forces from sEMG and IMU signals. After a short user-specific calibration, users can collect target-task demonstrations using only ForceBand and video; EMG2Force then labels these demonstrations with per-finger force traces, producing force-augmented demonstrations for robot policy learning. Experiments show that ForceBand recovers fine-grained fingertip interactions with over 50% lower force prediction error than vision-based baselines and achieves an 87% success rate on pick, squeeze, and place tasks that require object-specific force control across objects with diverse shapes, sizes, and weights. Project website: https://forceband-emg.github.io"
+  },
+  {
+    "title": "Learning Action Priors for Cross-embodiment Robot Manipulation",
+    "original_title": "Learning Action Priors for Cross-embodiment Robot Manipulation",
+    "link": "https://arxiv.org/abs/2606.26095",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.26095v1 Announce Type: new \nAbstract: Most Vision-Language-Action (VLA) models build on a Vision-Language Model (VLM) backbone by attaching an action module and optimizing the full policy jointly. This design inherits strong visual and linguistic priors from the VLM, but leaves the action module to learn physical motion almost from scratch. As a result, the policy lacks an explicit motion prior, forcing early optimization to simultaneously discover temporal action dynamics and cross-modal alignment, a challenge further amplified in cross-embodiment settings. In this work, we propose to pretrain the action module with motion priors before cross-modal VLA alignment. Specifically, we introduce a two-stage training framework that equips the action module with cross-embodiment temporal motion structure before VLA training begins. In Stage~1, a lightweight flow-matching-based encoder-decoder action module efficiently learns temporal motion structure solely from unconditioned action trajectories, without processing visual or language tokens. In Stage~2, this learned prior is transferred to VLA training through decoder reuse and early-stage latent distillation, aligning visual-language features with the action embedding space while still allowing end-to-end policy refinement. In addition, the trained encoder serves as a compact history compressor, summarizing state-action histories into a single temporal context token for history-aware modeling at negligible cost. Extensive experiments across 13 diverse cross-embodiment tasks on both simulated and real-world platforms validate the effectiveness of our approach. Compared with VLA training without action priors, our model achieves faster convergence, higher success rates, and substantially stronger performance on data-scarce real-world tasks. Moreover, scaling up the action data in Stage~1 yields a more generalizable action prior that directly improves downstream VLA performance."
+  },
+  {
+    "title": "MANGO: Automated Multi-Agent Test Oracle Generation for Vision-Language-Action Models",
+    "original_title": "MANGO: Automated Multi-Agent Test Oracle Generation for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.24815",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.24815v1 Announce Type: cross \nAbstract: Vision-Language-Action (VLA) models are emerging robotic control systems that integrate perception, language understanding, and action generation in a unified architecture. Existing testing approaches for VLA-enabled robots rely on manually constructed symbolic test oracles that determine task success from final environment states. These oracles are costly to construct, require domain expertise, and are often tightly coupled to specific tasks and environments, limiting scalability and reuse. Furthermore, they provide only end-state assessments of task outcomes, offering limited insight into intermediate behavior and fault localization. To address these limitations, we introduce MANGO, a multi-agent framework that automatically generates fine-grained oracles from natural-language descriptions of robotic tasks. MANGO first generates a reusable library of atomic tasks, then generates simulator-grounded oracle definitions for each atomic task, and finally produces executable fine-grained oracles by decomposing complex instructions into ordered sequences of atomic actions and corresponding oracles. The framework uses collaborative Generator, Assessor, and Judge agents that iteratively refine generated artifacts through structured feedback. We evaluate MANGO on the LIBERO_10 and RoboCasa Humanoid Tabletop benchmarks. Results show that MANGO generates executable, fine-grained oracles that detect a similar number of failures as symbolic oracles while accurately localizing them and providing richer diagnostic information. Through ablation studies, we further analyzed component contributions and the effect of initial task set, while preserving oracle quality. Overall, the results show the feasibility and effectiveness of test oracle generation for VLA-enabled robots testing."
+  },
+  {
+    "title": "Swarm-Inspired Generation of Collective Behaviors in Graph Dynamical Systems",
+    "original_title": "Swarm-Inspired Generation of Collective Behaviors in Graph Dynamical Systems",
+    "link": "https://arxiv.org/abs/2606.24958",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.24958v1 Announce Type: cross \nAbstract: Collective behavior arises when locally interacting units produce coordinated global organization, from synchronization in dynamical systems to task-relevant information flow on graphs. The central challenge is not only to explain how collective behavior emerges, but to design local interaction rules that can produce desired global organization and generalize across graphs, dynamics and tasks.To address this challenge, we introduce the Swarm-Inspired Emergent Synchronizer (SIES), a graph-dynamical framework that learns generalizable local-interaction laws for controllable collective organization. Each node is an agent-like dynamical unit with a state and task cue, and signed source-target-conditioned attention acts as an adaptive coupling term inside an explicit evolution model. Therefore, SIES combines an explicit dynamical engine with local agent intelligence, similar to biological swarms. For synchronization control, SIES learns a generalizable coupling operator that produces prescribed synchronization patterns for CDSs across untrained network scales, target phase relations, and intrinsic node dynamics without retraining. The learned operator also reaches gait-related modes faster than three oscillator baselines and generalizes synchronization-driven locomotion to simulated multi-legged robots of different scales and a physical hexapod after leg disablement. For graph representation learning, SIES applies the same signed interaction principle to message passing and achieves the highest performance among the compared methods on heterophilous node-classification benchmarks. Together, these results position SIES as a generalizable and learnable graph-dynamical interaction framework with promise for synchronization control, adaptive robot coordination, and heterophilous graph representation learning."
+  },
+  {
+    "title": "ROAD-VLA: Robust Online Adaptation via Self-Distillation for Vision-Language-Action Models",
+    "original_title": "ROAD-VLA: Robust Online Adaptation via Self-Distillation for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.25800",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.25800v1 Announce Type: cross \nAbstract: Effective online adaptation of vision-language-action (VLA) models remains challenging, as sparse rewards provide weak supervision for high-dimensional autoregressive action policies. Although self-distillation can in principle provide denser training signals, we find that text-based privileged teachers conditioned on demonstrations, retrieved experiences, or high-level plans are ineffective for VLA adaptation, exposing a modality gap between symbolic guidance and low-level robot actions. We propose ROAD-VLA, an advantage-guided self-distillation framework that constructs a proximal teacher directly in action space by perturbing action-token logits with calibrated advantage estimates. This converts sparse rewards into dense token-level supervision while keeping the teacher close to the current policy. We further derive a policy-improvement lower bound under calibrated advantages and accurate teacher matching. Across seven robotic manipulation environments with in-distribution and out-of-distribution shifts, ROADVLA outperforms PPO in nearly all settings, demonstrating robust online VLA adaptation."
+  },
+  {
+    "title": "Sampling Strategies for Robust Universal Quadrupedal Locomotion Policies",
+    "original_title": "Sampling Strategies for Robust Universal Quadrupedal Locomotion Policies",
+    "link": "https://arxiv.org/abs/2510.07094",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2510.07094v2 Announce Type: replace \nAbstract: This work focuses on sampling strategies of configuration variations for generating robust universal locomotion policies for quadrupedal robots. We investigate the effects of sampling physical robot parameters and joint proportional-derivative gains to enable training a single reinforcement learning policy that generalizes to multiple parameter configurations. Three fundamental joint gain sampling strategies are compared: parameter sampling with (1) linear and polynomial function mappings of mass-to-gains, (2) performance-based adaptive filtering, and (3) uniform random sampling. We improve the robustness of the policy by biasing the configurations using nominal priors and reference models. All training was conducted using the RaiSim simulation environment, tested in simulation on a range of diverse quadrupeds, and zero-shot deployed onto hardware using the ANYmal quadruped robot. Compared to multiple baseline implementations, our results demonstrate the need for significant joint controller gains randomization for robust closing of the sim-to-real gap."
+  },
+  {
+    "title": "RoDyn: Taming Interactive Robot-Dynamic 2.5D World Model for Robotic Manipulation",
+    "original_title": "RoDyn: Taming Interactive Robot-Dynamic 2.5D World Model for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2510.09036",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.09036v2 Announce Type: replace \nAbstract: Learned world models hold significant potential as neural simulators for robotic manipulation. However, prevalent 2D video-based models inherently lack the spatial and kinematic reasoning crucial for physical interactions. We introduce RoDyn, a novel Robot-Dynamic 2.5D World Model that formulates environmental dynamics within a highly efficient, geometry-aware latent space. Through the proposed Robot-Dynamic Tokenizer, we explicitly couple semantic visual appearances with spatial and agent-centric priors via an RGB-dominated cross-attention mechanism and dynamic mask guidance. Furthermore, by injecting these mask priors directly into sequence transitions, our Mask-guided Autoregressive architecture drives the model to focus on active robot-object interaction regions. Extensive experiments demonstrate that RoDyn establishes SOTA generation fidelity across large-scale datasets. Crucially, it translates these predictive capabilities into substantial downstream gains, accelerating model-based reinforcement learning and achieving a 42\\% improvement in real-world imitation learning success rates over pure 2D baselines."
+  },
+  {
     "title": "Unitree’s IPO will test the ‘embodied AI’ valuation shortcut - The Business Times",
     "original_title": "Unitree’s IPO will test the ‘embodied AI’ valuation shortcut - The Business Times",
     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaE12MkxyWThMU1F4MWl1ZEZnUlNmbUJqNmc0UnRJZXJJMGlWOEFubHFiQ3lMVExiMHZTY2M2bUxGNWtBazN1UW1PS3dUYVYyRVBIR3lxYi03clI5ZXdCbUlKTThVWVdac2IxdW4tWkIxLVh4ZFRWWVMydWFVU2xuVVNGZm9OMS1DTVQwQ2tSXzBfQ2hELXZlT1h3c3lIYXFKenFwYjVR?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "China's Robotics Industry Is Doing A Lot More Than Military Projects  AOL.com"
-  },
-  {
-    "title": "Unitree G1 humanoid robot ice skates and Rollerblades - AOL.com",
-    "original_title": "Unitree G1 humanoid robot ice skates and Rollerblades - AOL.com",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB1d2M5Q182eGpjZzB4REFsMzNMdmZDU21rRkdJTDlENnc1anlpM0RtRnFCUHVTVHRUMkhSbGdISXFHb29Ca29idTAyQW5zaHIyelpvY2s2VXk1TzBrMFdvRWRwa0h3VFg4aDFBRFlTZFRzZ0xNM1R0X1Z2cmduZw?oc=5",
-    "date": "2026-05-16 09:05",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree G1 humanoid robot ice skates and Rollerblades  AOL.com"
-  },
-  {
-    "title": "China Focus: Unitree secures orders after sensational debut of manned mecha - Xinhua",
-    "original_title": "China Focus: Unitree secures orders after sensational debut of manned mecha - Xinhua",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5ueUJhVWpTMFlLSEpHOERVLUdqT05wR1ZMblJxNTY1VXo2MzNGWkE1aUtTWmxoVVB4T0dJQjk5OEtGSWJQN0hENzZBVTlzOHhkeGF3N09oSVY0UmNYbXE2ZnVFaEs2aG9sNzhabWtwbE0yekxwcTJXZG9rZ08?oc=5",
-    "date": "2026-05-16 05:45",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China Focus: Unitree secures orders after sensational debut of manned mecha  Xinhua"
-  },
-  {
-    "title": "China Focus: Unitree secures orders after sensational debut of manned mecha - Xinhua",
-    "original_title": "China Focus: Unitree secures orders after sensational debut of manned mecha - Xinhua",
-    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5XQTVZMTNRS3FpOWVFR0dFOHBZNDNiUXMwdzQ0SmZ0ZTQ5eExSbGw1TWpxbUNEZDI3S1ZFRmp0UHBzLXdUNFdTU3IxME50STMzai1kdGJlaHhINUtnek45bTZiNHMxME9XcUE4UG9kRFAyZWc0Q2YxNHFoYw?oc=5",
-    "date": "2026-05-16 05:45",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China Focus: Unitree secures orders after sensational debut of manned mecha  Xinhua"
-  },
-  {
-    "title": "Unitree secures orders after sensational debut of manned mecha - irishsun.com",
-    "original_title": "Unitree secures orders after sensational debut of manned mecha - irishsun.com",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSkxtWi1kemM1VmxiUXVDeFNNTk0wMUdpSm9ua0dTN3pPZ21mNy1UWWxuVVZxQjNZaU5YcEVCSG5YS1hGSEtvS05mQmZodVFROUxqb1ZwM0JmczVOaGNqNEpPOEJWVnpUNGhHUHVBVW41Wjk3RzZhNVVETGxjYlcxN3J4eVVsMEtTTFM1WWU2X1FHdGdtM2RkZlZqNUZraXBQR3RYTg?oc=5",
-    "date": "2026-05-16 03:16",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree secures orders after sensational debut of manned mecha  irishsun.com"
-  },
-  {
-    "title": "“Humans Went to Sleep. The Robot Kept Working.” Figure AI’s Humanoid Robot Logged 57 Hours of Nonstop Labor - kmjournal.net",
-    "original_title": "“Humans Went to Sleep. The Robot Kept Working.” Figure AI’s Humanoid Robot Logged 57 Hours of Nonstop Labor - kmjournal.net",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAzWXRiclRTSUFSZ3lOTDRNbVNvZTVGajl1WWdKSkRnaDRDWDBFV2U3cGFTc1VaZ1dsRkJaeElxUV9hYU5FQWNxM3hJQllscE1nOXUwTWZmTnphRGp4T3JnWXFKWG5ldFJwRmVN?oc=5",
-    "date": "2026-05-16 02:17",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "“Humans Went to Sleep. The Robot Kept Working.” Figure AI’s Humanoid Robot Logged 57 Hours of Nonstop Labor  kmjournal.net"
-  },
-  {
-    "title": "Unitree Robotics - AOL.com",
-    "original_title": "Unitree Robotics - AOL.com",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hZkxwU21DSWxUZHZoVXhSSld3cGxVNzQ2ZDlQMGdUMzRLNmFWeVdFdDdzeHV2Vm1RU2tBVDVXeC1zTGlLZzN4MGdKR0xIeXBVQzdweWxJSWoydmNmekNXbg?oc=5",
-    "date": "2026-05-15 23:12",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree Robotics  AOL.com"
-  },
-  {
-    "title": "Editorial | China’s AI-enabled robots set to transform global playing field - South China Morning Post",
-    "original_title": "Editorial | China’s AI-enabled robots set to transform global playing field - South China Morning Post",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNN1BwalpES3ZGTm8wY3FjMUU5bE83dDBSNU5XTUxaUHZFYjM5QjVNcGQ4cHdfa1didHg4TGhqQ0hVN2hDcXAwSHNGMTVaMHdtWGhwRXBHU0FVdktRYUtxdVhDaGhsQnZIV1ZfX2NrbWNtb3UzZ1JNR0JZY3dRRXhhMVV3UWdrbElEZURlS3ViM1R6aUk0R1A2bS03X1M4SXJUWmRrTDJNYU9CVTRxRU5xV3ZR0gGyAUFVX3lxTE03UHBqWkRLdkZObzBjcWMxRTlsTzd0MFI1TldNTFpQdkViMzlCNU1wZDhwd19rV2J0eDhMaGpDSFU3aENxcDBIc0YxNVowd21YaHBFcEdTQVV2S1FhS3F1WENoaGxCdkhXVl9fY2ttY21vdTNnUk1HQlljd1FFeGExVXdRZ2tsSURlRGVLdWIzVHppSTRHUDZtLTdfUzhJclRaZGtMMk1hT0JVNHFFTnFXdlE?oc=5",
-    "date": "2026-05-15 22:45",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Editorial | China’s AI-enabled robots set to transform global playing field  South China Morning Post"
-  },
-  {
-    "title": "Editorial | China’s AI-enabled robots set to transform global playing field - South China Morning Post",
-    "original_title": "Editorial | China’s AI-enabled robots set to transform global playing field - South China Morning Post",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNm5FbW1BaUdHSDNMZFBHMVlOeUw3SkxQcDRteWFybXF3LVB1OXF5eWY1WWFxSXRJcmRDd3I0ZUJ2aVByQkVpbjNBNDRMemNCVmRoZnAyVnJNVDZjb2xVOHptSUJnYkdYY09YSzlHMmE2cDNLdXl0dmVYbmhzQ0FLTUM3UDlTcFVjeVZMVXRXc0x3cUFwYXhicS1ZQl9HdzgtR2I0ZWxuMjlGNlFscmJxdnN30gGyAUFVX3lxTE03UHBqWkRLdkZObzBjcWMxRTlsTzd0MFI1TldNTFpQdkViMzlCNU1wZDhwd19rV2J0eDhMaGpDSFU3aENxcDBIc0YxNVowd21YaHBFcEdTQVV2S1FhS3F1WENoaGxCdkhXVl9fY2ttY21vdTNnUk1HQlljd1FFeGExVXdRZ2tsSURlRGVLdWIzVHppSTRHUDZtLTdfUzhJclRaZGtMMk1hT0JVNHFFTnFXdlE?oc=5",
-    "date": "2026-05-15 22:45",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Editorial | China’s AI-enabled robots set to transform global playing field  South China Morning Post"
   }
 ]
