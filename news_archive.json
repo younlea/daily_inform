@@ -144,6 +144,78 @@
     "summary": "arXiv:2606.25699v1 Announce Type: new \nAbstract: Tightly coupled LiDAR-visual-inertial odometry (LIVO) fuses precise geometric depth with complementary visual measurements, yet its exteroceptive sensors face independent failure modes: LiDAR degenerates when scan geometry is under-constrained, while visual measurements degrade under adverse illumination or texture absence. Existing countermeasures, including binary degeneracy detection, covariance inflation, and scene-level quality gating, operate at the modality level and leave the direction-dependent structure of the joint information matrix unaddressed. Consequently, visual residuals enter pose directions where LiDAR is well-constrained, while in deficient directions visual compensation disperses across the full state space rather than concentrating where needed. We propose SA-LIVO, a LiDAR-inertial-visual odometry system addressing these limitations through direction-selective fusion and information-efficient processing. The Subspace-Aware Information Fusion (SAIF) framework eigendecomposes the joint LiDAR-visual information matrix and applies a linear-clamp soft gate per eigendirection, attenuating degenerate directions while preserving observable ones at full strength. LiDAR and visual residuals are then jointly optimized in one InEKF loop at a shared linearization point. Since visual information contributes only where LiDAR is deficient, photometric Jacobians are assembled once before the loop and reused across iterations, avoiding the per-iteration cost of conventional iterated filters. Experiments on 29 sequences from three benchmarks (HILTI'22, New College, Oxford Spires) and concurrent-degradation scenarios show accuracy competitive with the strongest baselines and bounded drift where competing systems diverge. SA-LIVO averages 12.3 ms per frame on a laptop CPU and 26.8 ms on an embedded ARM board without GPU, with 3.6-6.3x lower peak memory. The code will be open-sourced."
   },
   {
+    "title": "Learning Asynchronous Upper-body Task-space Trajectory Tracking Policy for Humanoid Robots",
+    "original_title": "Learning Asynchronous Upper-body Task-space Trajectory Tracking Policy for Humanoid Robots",
+    "link": "https://arxiv.org/abs/2606.25706",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.25706v1 Announce Type: new \nAbstract: High-level humanoid planners often output sparse task-space, low-rate trajectories, whereas whole-body controllers run at high frequency. This creates temporal asynchrony between the planning and execution, and structural incompleteness for full-body control. We propose an asynchronous upper body task-space tracking framework for humanoids. A student policy is initialized by teacher-student distillation, conditioned on the full cached future trajectory and an execution-time index, and trained with a sliding-window global reward to reduce frame drift without explicit frame estimation. For task-specific post-training, an MPC module completes sparse references into floating-base and upper-body guidance, while action- and FK level self-guidance constrain policy drift. Simulation and Unitree G1 hardware experiments show improved tracking under low update rates, stronger performance than synchronous and decoupled baselines, and safer adaptation to out-of-distribution motions."
+  },
+  {
+    "title": "StairMaster: Learning to Conquer Risky Hollow Stairs for Agile Quadrupedal Robots",
+    "original_title": "StairMaster: Learning to Conquer Risky Hollow Stairs for Agile Quadrupedal Robots",
+    "link": "https://arxiv.org/abs/2606.25765",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.25765v1 Announce Type: new \nAbstract: Climbing hollow stairs remains a challenging problem for quadruped robots due to the high risk of leg trapping, severe depth sparsity, and high-frequency depth-sensing noise. In this paper, we propose StairMaster, a novel three-stage reinforcement learning framework for stable locomotion on such extreme discontinuous terrains. Our architecture integrates a Cross-Attention mechanism to extract structural features from noisy depth data, alongside a Spatial-aware Recurrent Unit (SRU) that maintains robust spatio-temporal memory to mitigate perception blind spots. To bridge the sim-to-real gap in depth perception, we propose a high-fidelity sim-to-real depth sensor modeling pipeline that faithfully replicates real-world sensor artifacts. Additionally, we employ a 3D waypoint-guided active perception reward for proactive sensing, alongside hollow gap kinematic and stair edge penalties to ensure precise foothold placement. We successfully deployed StairMaster on a Unitree Go2 robot, demonstrating its ability to conquer hollow stairs with an unprecedented incline of up to 55$^\\circ$ through zero-shot transfer. To the best of our knowledge, this is the first RL-based policy to achieve such steep hollow stair climbing in real-world environments.\n  Project Website: https://sivan666666.github.io/StairMaster/."
+  },
+  {
+    "title": "TacVerse: A Multi-Sensor Dataset and Benchmark for Cross-Sensor Vision-Based Tactile Perception",
+    "original_title": "TacVerse: A Multi-Sensor Dataset and Benchmark for Cross-Sensor Vision-Based Tactile Perception",
+    "link": "https://arxiv.org/abs/2606.25877",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.25877v1 Announce Type: new \nAbstract: Vision-based tactile sensors (VBTSs) enable robots to infer contact geometry and force-related cues by imaging deformation through an internal camera, yet generalisation across sensor designs remains poorly understood. We present TacVerse, a multi-sensor dataset and benchmark for cross-sensor vision-based tactile perception. The dataset contains 106,800 tactile images from seven VBTSs and supports three downstream tasks: shape classification, grating classification, and force regression. Experiments are conducted under three settings: within-sensor training, zero-shot cross-sensor transfer, and few-shot adaptation. Strong within-sensor performance across all tasks indicates that the collected tactile observations are informative for the target objectives. Direct cross-sensor transfer, however, leads to substantial degradation. Shape classification is comparatively robust, whereas grating classification and force regression are more sensitive to sensor shift. Few-shot adaptation for force regression consistently improves performance on unseen target sensors but does not fully close the gap to within-sensor upper bounds. A representation study further shows that MAE (Masked Autoencoder) pretraining provides the most consistent gains across tasks and sensors. TacVerse provides a controlled testbed for studying sensor shift, data-efficient adaptation, and self-supervised learning in tactile perception."
+  },
+  {
+    "title": "A 3D-Printable Dataset for Fair Testing and Comparisons of Tactile Sensors",
+    "original_title": "A 3D-Printable Dataset for Fair Testing and Comparisons of Tactile Sensors",
+    "link": "https://arxiv.org/abs/2606.25886",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.25886v1 Announce Type: new \nAbstract: Existing texture datasets for tactile sensing primarily consist of sensor readings from a specific sensor interacting with available surfaces/objects rather than describing the textures themselves, limiting fair comparison between tactile sensors and hindering reproducible research. In this work, we introduce a 3D-printable dataset of mathematically defined textures designed to be fabricated reliably across different printers and filament types. The dataset consists of six parametrically generated surface patterns derived from combinations of sine-wave and Fourier-based functions, giving controlled variation in spatial frequency, amplitude, and directional structure. We evaluate the reproducibility of these textures across three popular 3D printers and multiple filament types by measuring variance in images captured using an optical TacTip sensor under controlled contact conditions. Our results show that print quality, particularly peak sharpness and stringing, affects tactile variance, with higher-end printers producing significantly more consistent signatures. Classification experiments using neural networks and PCA-based models further demonstrate that high-quality prints support strong within-printer generalisation, while cross-printer generalisation remains challenging due to geometric inconsistencies. This work establishes the first openly available, physically reproducible 3D-printed texture benchmark, providing a foundation for fair comparison of tactile sensors."
+  },
+  {
+    "title": "DeformGen: Dynamics-Based Topology Augmentation for Deformable Manipulation Policy Learning",
+    "original_title": "DeformGen: Dynamics-Based Topology Augmentation for Deformable Manipulation Policy Learning",
+    "link": "https://arxiv.org/abs/2606.25939",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.25939v1 Announce Type: new \nAbstract: Demonstration augmentation is proposed for cost-efficient data acquisition, but existing methods are fundamentally limited in deformable manipulation due to two challenges: (1) the state space is high-dimensional with physics-induced constraints, making valid configurations impossible to reach via low-dimensional pose perturbations; and (2) trajectory transfer is non-equivariant, as material points no longer move rigidly together under deformation. We present DeformGen, a dynamics-based augmentation framework that achieves topological diversity for deformable objects. For the state challenge, DeformGen expands the valid state distribution by applying localized physical disturbances and forward-simulating the dynamics to obtain topology-coherent, physically plausible deformable states. For the trajectory challenge, DeformGen transfers source manipulation trajectories via deformation-field warping, which lifts per-particle displacements into a continuous spatial function to adapt the end-effector trajectory consistently with the deformed geometry. In this way, our method jointly augments the state distribution and its associated manipulation behavior. Experiments on high-fidelity deformable manipulation benchmarks show that DeformGen generally improves policy learning compared with training on the original demonstrations alone and with rigid-style augmentation baselines."
+  },
+  {
+    "title": "DSP-SLAM++: A Unified Framework for Multi-Class, High-Fidelity Object SLAM in the Wild",
+    "original_title": "DSP-SLAM++: A Unified Framework for Multi-Class, High-Fidelity Object SLAM in the Wild",
+    "link": "https://arxiv.org/abs/2606.25953",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.25953v1 Announce Type: new \nAbstract: Existing object-aware SLAM systems force a trade-off between real-time performance, multi-class support, and the generation of high-fidelity, semantically coherent object models. To address this trade-off, we present DSP-SLAM++, which extends the DSP-SLAM framework with an asynchronous mapping pipeline for real-time performance and dedicated sensor fusion adaptations for a monocular fisheye-LiDAR suite. Experiments demonstrate that our system generates fine-grained, geometrically-complete shapes for multiple object classes while eliminating severe mapping thread bottlenecks by reducing maximum object processing latency by up to 70\\% compared to the state-of-the-art baseline, enabling robust, real-time performance on a challenging 25 Hz multi-class datasets. This work makes high-fidelity, multi-class object SLAM more practical for real-world applications like autonomous driving and robotic manipulation by enabling its use on platforms with common fisheye-LiDAR sensor setups. The open-source code is available at: [github.com/AUBVRL/DSP-SLAMpp]."
+  },
+  {
+    "title": "Mixture-of-Experts RL for Fault-Tolerant Legged Locomotion",
+    "original_title": "Mixture-of-Experts RL for Fault-Tolerant Legged Locomotion",
+    "link": "https://arxiv.org/abs/2606.25965",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.25965v1 Announce Type: new \nAbstract: Legged robots deployed in planetary exploration and other remote environments must maintain reliable locomotion despite actuator failures and challenging terrain conditions. Although reinforcement learning has achieved strong results in legged locomotion, monolithic policies can struggle to efficiently represent the diverse control strategies required to compensate for different fault conditions. In this work, we propose a fault-aware modular control architecture that explicitly leverages fault-diagnosis information to activate specialized control experts associated with distinct actuator failure modes. Experimental results show that explicit fault-conditioned modular policies consistently outperform monolithic policies of comparable size, achieving higher locomotion performance across failure scenarios. Moreover, the proposed modular architecture retains competitive performance even under significantly reduced network capacity, highlighting its suitability for compute-constrained robotic platforms, such as those typically employed in space applications. The code associated with this work is available at: https://github.com/iit-DLSLab/fault-locomotion-isaaclab."
+  },
+  {
+    "title": "Action ControlNet: A Lightweight Delay-Aware Adapter for Smooth Asynchronous Control in Vision-Language-Action Models",
+    "original_title": "Action ControlNet: A Lightweight Delay-Aware Adapter for Smooth Asynchronous Control in Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.25985",
+    "date": "2026-06-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.25985v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models have shown strong potential for general-purpose robot manipulation, but their inference latency remains a major obstacle to stable high-frequency control. Asynchronous execution mitigates this bottleneck by overlapping policy inference with action execution, yet the next action chunk is still predicted from stale observations while the robot continues to move. Direct chunk stitching therefore introduces handoff discontinuities, action jitter, and failures in contact-rich manipulation. Existing remedies typically require either full-policy retraining or architecture-specific runtime logic. This work proposes Action ControlNet (ACNet), a lightweight delay-aware adapter that uses the executed motion suffix as a residual condition for a mostly frozen action head. ACNet leaves the pretrained backbone unchanged, introduces few trainable parameters, and remains compatible with generative action heads such as diffusion and flow matching. On Kinetix, Meta-World MT50, and a real-world SO-ARM101 platform, ACNet improves robustness under inference delay and yields smoother asynchronous trajectories than direct chunk stitching, while remaining more lightweight than full delay-conditioned retraining."
+  },
+  {
     "title": "Unitree’s IPO will test the ‘embodied AI’ valuation shortcut - The Business Times",
     "original_title": "Unitree’s IPO will test the ‘embodied AI’ valuation shortcut - The Business Times",
     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaE12MkxyWThMU1F4MWl1ZEZnUlNmbUJqNmc0UnRJZXJJMGlWOEFubHFiQ3lMVExiMHZTY2M2bUxGNWtBazN1UW1PS3dUYVYyRVBIR3lxYi03clI5ZXdCbUlKTThVWVdac2IxdW4tWkIxLVh4ZFRWWVMydWFVU2xuVVNGZm9OMS1DTVQwQ2tSXzBfQ2hELXZlT1h3c3lIYXFKenFwYjVR?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Editorial | China’s AI-enabled robots set to transform global playing field  South China Morning Post"
-  },
-  {
-    "title": "North American robot orders remain flat at the start of 2026",
-    "original_title": "North American robot orders remain flat at the start of 2026",
-    "link": "https://www.therobotreport.com/north-american-robot-orders-remain-flat-at-the-start-of-2026/",
-    "date": "2026-05-15 19:57",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "A3 said its Q1 data reinforces a broader industry trend: robotics adoption is expanding well beyond traditional automotive manufacturing.\nThe post North American robot orders remain flat at the start of 2026 appeared first on The Robot Report."
-  },
-  {
-    "title": "ShengShu unveils world action model to offer ‘infinite possibilities’ for robotic intelligence",
-    "original_title": "ShengShu unveils world action model to offer ‘infinite possibilities’ for robotic intelligence",
-    "link": "https://roboticsandautomationnews.com/2026/05/15/shengshu-unveils-world-action-model-to-offer-infinite-possibilities-for-robotic-intelligence/101620/",
-    "date": "2026-05-15 17:58",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "ShengShu Technology has unveiled Motubrain, a world action model that replaces multiple task-specific systems with a single, unified model that functions as a robotic brain for the physical world. ShenShu describes Motubrain as one brain that offers infinite possibilities for robotic intelligence. Ranking highly on both WorldArena and RoboTwin 2.0, two of the field’s most […]"
-  },
-  {
-    "title": "RLWRLD unveils ‘dexterity-first’ foundation model for humanoid robots",
-    "original_title": "RLWRLD unveils ‘dexterity-first’ foundation model for humanoid robots",
-    "link": "https://roboticsandautomationnews.com/2026/05/15/rlwrld-unveils-dexterity-first-foundation-model-for-humanoid-robots/101614/",
-    "date": "2026-05-15 17:38",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "RLWRLD, a physical AI company developing robotics foundation models for dexterous manipulation, unveiled RLDX-1 at “Dexterity Night in SF”, introducing a model designed to help humanoid robots perform contact-rich tasks such as grasping, pouring and tool use. The company also reported benchmark results across humanoid tabletop, kitchen manipulation and real-world coffee-pouring evaluations, and said the […]"
-  },
-  {
-    "title": "Best Arizona Contractor Coverage Options for Construction Firms",
-    "original_title": "Best Arizona Contractor Coverage Options for Construction Firms",
-    "link": "https://roboticsandautomationnews.com/2026/05/15/best-arizona-contractor-coverage-options-for-construction-firms/101609/",
-    "date": "2026-05-15 17:02",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Running a construction firm in Arizona means dealing with insurance demands that go far beyond what a single-trade contractor faces. The Arizona Registrar of Contractors won’t issue or renew your license without proof of general liability. If you employ even one worker, the state requires workers’ compensation – and the Industrial Commission of Arizona fines […]"
-  },
-  {
-    "title": "Video Friday: Heavy Robotic Machinery Operates Itself",
-    "original_title": "Video Friday: Heavy Robotic Machinery Operates Itself",
-    "link": "https://spectrum.ieee.org/video-friday-material-handling-robots",
-    "date": "2026-05-15 17:00",
-    "source": "IEEE Spectrum",
-    "category": "hand",
-    "summary": "Video Friday is your weekly selection of awesome robotics videos, collected by your friends at IEEE Spectrum robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please send us your events for inclusion.ICRA 2026: 1–5 June 2026, VIENNARSS 2026: 13–17 July 2026, SYDNEYSummer School on Multi-Robot Systems: 29 July–4 August 2026, PRAGUEActuate 2026: 18–19 August 2026, SAN FRANCISCOEnjoy today’s videos! Bulk material handling is a critical, labor-intensive operation across various industries, traditionally performed by human operators using heavy hydraulic manipulators equipped with free-swinging, underactuated grippers. This work presents the first complete autonomous material handling solution deployed on a real-world 40-ton material handler.[ ETH Zurich ]I don’t want to minimize this bedroom tidying by Figure (although I suppose I’m going to), but in the context of doing a task like this in place of a human, it really illustrates what these robots are comfortable with, and what they’re not.[ Figure ]Give me this over videos of robots doing backflips any day.[ Hello Robot ]Okay but can it get them out of the can?[ Generalist ]The world’s first production-ready manned mecha. It can transform. It’s a civilian vehicle. It weighs ~500kg with you inside.[ Unitree ]Curious about what happens when street dance meets embodied AI? From smooth choreography to dynamic flips, NIX is exploring movement, rhythm, and real-world interaction through embodied AI. We’ll make NIX available—FOR FREE!—to selected partners from global universities, robotics labs, and creative technologists.[ Lumos ]Thanks, Ni Tao!We introduce and open-source the Unified Autonomy Stack, a novel solution for resilient autonomy across aerial and ground robot morphologies. The architecture combines multi-modal perception, multi-behavior planning, and multi-layered safe navigation to deliver mission-level autonomy across diverse robot morphologies. It fuses LiDAR, radar, vision, and inertial sensing to enable robust localization and mapping, vision-language-based scene reasoning, multi-behavior planning, and layered safety through map-based avoidance, deep learned policies, and control barrier functions. The system supports GNSS-denied navigation in perceptually-degraded environments, exploration, object discovery, and inspection, and has been validated on multirotor and legged robots in challenging settings, demonstrating resilient performance.[ NTNU ]Thanks, Kostas!Cassie WAS the best robot!The next video better be a Digit Centaur.[ Agility ]Any robot doing anything consistently over a long period of time is impressive. Having said that, you want to be very careful about claiming that any robot operates at “human performance levels,” especially in a somewhat complex manipulation task, because humans are very, very good at stuff like this.[ Figure ]Robust.AI co-founder & CTO Rodney Brooks, ranked #44 on the Forbes 250 America’s Greatest Innovators list, sits down for a Q&A ahead of his panel discussion at the Forbes America Innovates event in San Francisco. We asked him two questions: What makes innovation in robotics such a challenge? What does the current surge in AI mean for robotics today?[ Robust AI ]This is one of the best robotic research videos I’ve ever seen, and don’t worry, according to the credits it’s not AI. And make sure to watch after the credits![ Nature ]EFGCL is a guided reinforcement learning method that efficiently enables highly dynamic motions through the use of assistive forces. In this work, we successfully achieved several dynamic motions, including jumping, backflips, and lateral flips.[ EFGCL ]Thanks, Keita!Legged robots: helping farmers one vegetable at a time.[ University of Southern California ]Humanoid robots promise general-purpose assistance, yet real-world humanoid loco-manipulation remains challenging because it requires whole-body stability, dexterous hands, and contact-aware perception under frequent contact changes. In this work, we study dexterous, contact-rich humanoid loco-manipulation.[ Touch Dreaming ]More than just technology, KATA Friends is a lifelike AI companion designed to see your world, feel your touch, and understand your heart. With expressive movements, evolving emotions, and natural conversations, Noa and Niko both grow alongside you to become a presence uniquely yours. From curious head tilts and playful reactions to ever-changing eye expressions and a soft, innocent voice, every interaction feels warm, personal, and alive.[ SwitchBot ]I really hate to say this, but despite how cute it is, Aibo may be showing its age.[ Aibo ]One of the biggest challenges in robotics right now isn’t the hardware. It’s data. While many data collection methods are effective, handheld data collection can create a diverse dataset of environments, conditions and strategies for completing manipulation tasks. The Koala platform: co-designed the handheld grippers and robot grippers around the same linkage mechanism, same degrees of freedom, and same force transmission. The human feels through the linkages what the robot will feel through its actuators.[ Robotics and AI Institute ]"
-  },
-  {
-    "title": "Cirtronics to discuss manufacturing robotics at scale at the Robotics Summit",
-    "original_title": "Cirtronics to discuss manufacturing robotics at scale at the Robotics Summit",
-    "link": "https://www.therobotreport.com/cirtronics-discuss-manufacturing-robotics-at-scale-at-the-robotics-summit/",
-    "date": "2026-05-15 16:46",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Cirtronics is exhibiting and presenting an expert panel at the Robotics Summit & Expo on how to successfully commercialize robotics.\nThe post Cirtronics to discuss manufacturing robotics at scale at the Robotics Summit appeared first on The Robot Report."
-  },
-  {
-    "title": "Achieving Dataset Parity to Close the Robotics Training Gap",
-    "original_title": "Achieving Dataset Parity to Close the Robotics Training Gap",
-    "link": "https://roboticsandautomationnews.com/2026/05/15/achieving-dataset-parity-to-close-the-robotics-training-gap/101605/",
-    "date": "2026-05-15 16:32",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "It was in 1954 when the world witnessed its first real industrial robot, Unimate, a machine built to perform repetitive factory operations. Fast forward to 2026: today robots like Unitree GD01 are being trained to learn adaptive mobility, AI decision-making, and terrain navigation. In just half a century, robotics have evolved from immobile programmable arms […]"
-  },
-  {
-    "title": "Inside China’s race to dominate humanoid robotics industry - NBC News",
-    "original_title": "Inside China’s race to dominate humanoid robotics industry - NBC News",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZFlPc00xRlNZb1M1akF5VERibnljNVJkaXdMZEREdTlhbV84V0xhMng0Qkc0aDBoV0luUjhvMUhXTHZZOFJyQzRwZmFoTlhKMzdOM3Zra3otcjJTMUQ3Q3R2ckhaa2dYdUt0VlRCNEhhLThia2NoZ0dmVklGeHFYVmlfVzdRWGI1WkliVXktYk5SbU9zWmw1Yg?oc=5",
-    "date": "2026-05-15 15:20",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Inside China’s race to dominate humanoid robotics industry  NBC News"
   }
 ]
