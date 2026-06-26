@@ -1,5 +1,14 @@
 [
   {
+    "title": "Michigan Data Center to Deploy 143 Chinese Humanoid Robots as US Weighs Restrictions - ibtimes.sg",
+    "original_title": "Michigan Data Center to Deploy 143 Chinese Humanoid Robots as US Weighs Restrictions - ibtimes.sg",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTzBfYTBOcjVsUEtFSEVadHRObDJVcTBlYXBUVHhaRUpoeGRzU2lIYkJ3RUppeUVHWmxhcDBTaTdJYXpkU2JxSmJOR3JKMThjV2gyWFp5ajlKVGNSNGtfaWVMQ0hpTjNQRnZoa0xyOWUzZ0EzbWZNUzEzRktJRUcwUnVmZk5zME03eWY2ZHBpTzBHNFRXcE1KWDFYSzVVQjMweGlKbE1Ud3BETnc?oc=5",
+    "date": "2026-06-26 05:56",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Michigan Data Center to Deploy 143 Chinese Humanoid Robots as US Weighs Restrictions  ibtimes.sg"
+  },
+  {
     "title": "RMTL: Reinforced Micro-task Learning for Long-Horizon Manipulation with VLM Rewards",
     "original_title": "RMTL: Reinforced Micro-task Learning for Long-Horizon Manipulation with VLM Rewards",
     "link": "https://arxiv.org/abs/2606.26175",
@@ -142,6 +151,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.26700v1 Announce Type: new \nAbstract: Motion feasibility prediction plays a central role in robotics, particularly in task and motion planning and manipulation. A major bottleneck for this problem in cluttered environments is that infeasible planning attempts by Sampling-based motion planners (SBMPs) can incur substantial computational cost. Also existing approaches for infeasibility certification are limited to low-dimensional configuration spaces and often assume simplified geometric environments represented by primitive objects with known parameters. We study the complementary problem of learning motion feasibility prediction directly from raw RGB-D observations for a 7-DOF manipulator operating in realistic cluttered scenes. We introduce the first large-scale benchmark for this setting, comprising 2.7M grasp feasibility labels over 88 scanned objects and 190 cluttered tabletop scenes. We benchmark three representative classifier families spanning MLP- based, volumetric-CNN, and point-cloud-based Transformer architectures under matched training conditions. Our best model, GRASPFC-PTX (a point-cloud transformer), achieves an AUROC of 0.996 on Novel objects while providing predictions significantly faster than SBMPs."
+  },
+  {
+    "title": "PressMimic: Pressure-Guided Motion Capture and Control for Humanoid Robot Imitation",
+    "original_title": "PressMimic: Pressure-Guided Motion Capture and Control for Humanoid Robot Imitation",
+    "link": "https://arxiv.org/abs/2606.26741",
+    "date": "2026-06-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.26741v1 Announce Type: new \nAbstract: Humanoid motion imitation requires not only accurate perception of human kinematics but also faithful reproduction of physical interactions with the environment. However, existing pipelines rely primarily on vision-based motion capture and kinematic imitation, largely ignoring contact dynamics, leading to artifacts such as foot sliding, floor penetration, and unstable behaviors. In this work, we revisit humanoid motion imitation from the perspective of physical grounding and leverage pressure as a unified modality across perception and control. We present PressMimic, a framework that integrates pressure into the full pipeline from motion capture to humanoid control. In the perception stage, we introduce FRAPPE++, a multimodal model that fuses RGB and pressure to jointly estimate 3D pose and global motion, where pressure provides explicit contact and support constraints to resolve ambiguity in vision-based estimation. In the control stage, we propose a pressure-supervised policy (PSP) that incorporates pressure-derived signals into reinforcement learning, enabling physically consistent contact patterns during execution. We further construct MotionPRO, a large-scale dataset with synchronized RGB, pressure, and motion capture data. Experiments show that pressure improves motion estimation accuracy, trajectory consistency, and execution stability. These results demonstrate that pressure serves as an effective physical grounding signal, bridging perception and control for physically consistent humanoid motion imitation."
+  },
+  {
+    "title": "SSI-Policy: Learning Structured Scene Interfaces for Vision-Language Robotic Manipulation",
+    "original_title": "SSI-Policy: Learning Structured Scene Interfaces for Vision-Language Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.26800",
+    "date": "2026-06-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.26800v1 Announce Type: new \nAbstract: Real-world robotic manipulation demands spatial grounding, task-aware reasoning, and precise control. Learning such capabilities becomes particularly challenging in the low-data regime. Prior methods often trade off scalable task-level reasoning and explicit physical structure: video-based approaches can drift geometrically over long horizons, 3D approaches often require depth sensing, and many flow/trajectory interfaces emphasize motion without an explicit RGB-only geometric representation. We introduce SSI-Policy, a modular framework built around a Structured Scene Interface (SSI) -- a unified, RGB-only intermediate representation that jointly encodes monocular depth features, language-grounded object layouts, and instruction-conditioned 2D motion trajectories. Critically, SSI is robot-agnostic and trainable from action-free video, decoupling perception from control so that the downstream policy can learn from few demonstrations. On the LIBERO benchmark with only 10 demonstrations per task, SSI-Policy improves over the strongest prior method by nearly 15\\% and remains competitive with 50-demo methods that leverage large-scale external pretraining. Ablations show that geometric and motion cues provide complementary benefits within the shared interface. We further validate on 13 real-world tasks spanning spatial reasoning, cross-embodiment transfer, and contact-rich manipulation."
+  },
+  {
+    "title": "Improving Vision-Language-Action Model Fine-Tuning with Structured Stage and Keyframe Supervision",
+    "original_title": "Improving Vision-Language-Action Model Fine-Tuning with Structured Stage and Keyframe Supervision",
+    "link": "https://arxiv.org/abs/2606.26801",
+    "date": "2026-06-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.26801v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have shown strong potential for generalizable robotic manipulation. During fine-tuning, however, action supervision applies equally across all timesteps, without structured supervision on which manipulation stage the robot is in or what the next gripper-event target should be. This causes failures to concentrate around challenging gripper-event transitions. To address this, we propose StaKe, a plug-in auxiliary supervision framework that automatically derives two complementary signals from demonstration gripper states without manual annotation: a stage classifier that identifies the current manipulation stage, and a keyframe predictor that estimates the target joint action at the next gripper transition. Both are modeled as lightweight auxiliary heads that enrich the learned representations during training, while leaving the base VLA policy architecture and inference loop unchanged. Experiments on bimanual simulation and single-arm Franka real-robot tasks show that StaKe consistently improves success rates (relative gains of 14% and 56%, respectively), with larger improvements on longer-horizon tasks that involve more gripper-event transitions. Ablation studies validate each design choice, and qualitative analysis confirms that the learned representations faithfully track manipulation stages. These results indicate that structured supervision is an effective and general strategy for enhancing VLA fine-tuning in long-horizon manipulation. Project website: https://hi-yuanxu.github.io/StaKe-Web/"
+  },
+  {
+    "title": "Humanoid-DART: Humanoid Loco-Manipulation using Diffusion-guided Augmentation through Relabeling and Tracking",
+    "original_title": "Humanoid-DART: Humanoid Loco-Manipulation using Diffusion-guided Augmentation through Relabeling and Tracking",
+    "link": "https://arxiv.org/abs/2606.26855",
+    "date": "2026-06-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.26855v1 Announce Type: new \nAbstract: Imitating human demonstrations has emerged as a dominant paradigm for learning humanoid loco-manipulation policies. However, scaling these approaches remains challenging due to the high cost of collecting diverse demonstrations and the need for continual human intervention to correct policy failures. In this paper, we present a self-supervised framework that bootstraps from sparse demonstrations and progressively expands its behavioral repertoire, enabling the learning of a goal-conditioned policy that automatically explores the goal space with minimal expert supervision. Our approach combines diffusion-based trajectory generation with reinforcement learning, where the latter is used to track goal-conditioned trajectories produced by the diffusion model for a range of loco-manipulation skills. Through extensive ablation studies and comparisons with state-of-the-art methods, we demonstrate the effectiveness of our framework on multiple humanoid loco-manipulation skills."
+  },
+  {
+    "title": "RelAfford6D: Relational 6D Affordance Graphs for Constraint-Driven Robotic Manipulation",
+    "original_title": "RelAfford6D: Relational 6D Affordance Graphs for Constraint-Driven Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.27036",
+    "date": "2026-06-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.27036v1 Announce Type: new \nAbstract: Bridging abstract semantics and precise physical control remains a fundamental challenge in open-world robotic manipulation. While recent data-driven policies show promise, their reliance on isolated contact points or latent affordance embeddings lacks the rigorous kinematic constraints necessary for complex articulated objects.To overcome the limitation, we introduce RelAfford6D, a novel training-free framework centered on a Relational 6D Affordance Graph. Given a free-form instruction, our system deduces a semantic topology linking a primary interacting part to its physical anchor. By elevating these topological nodes into precise metric $SE(3)$ poses via vision foundation models, we analytically formulate downstream execution as a kinematic constraint satisfaction problem. The robot synthesizes continuous trajectories by tracking strictly defined physical manifolds (e.g., revolute or prismatic orbits). Coupled with a closed-loop tracking mechanism for dynamic replanning against disturbances, our physically grounded approach achieves superior zero-shot success rates, cross-category generalization and execution robustness in both simulation and the real world environments, outperforming existing data-driven baselines."
+  },
+  {
+    "title": "PAMAE: Phase-Aware-MoE Action Experts Towards Reliable Flow-Matching Vision-Language-Action Policies",
+    "original_title": "PAMAE: Phase-Aware-MoE Action Experts Towards Reliable Flow-Matching Vision-Language-Action Policies",
+    "link": "https://arxiv.org/abs/2606.27144",
+    "date": "2026-06-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.27144v1 Announce Type: new \nAbstract: Reliable action generation for multi-stage robotic manipulation remains challenging for Vision-Language-Action (VLA) models. While existing flow-matching VLA policies offer strong multimodal grounding and generalization, they typically employ a single shared action expert, limiting their ability to capture phase-specific control patterns across distinct execution stages. We propose a plug-and-play Phase-Aware Mixture-of-Experts Action Module (PAMAE), as a step towards more reliable phase-consistent action generation. PAMAE replaces the original flow-matching action expert with a sparse expert mixture while preserving the pretrained VLA backbone. PAMAE introduces a phase-aware router that leverages execution-phase cues to allocate action generation across experts, supported by a lightweight phase prediction head and a routing alignment objective. To stabilize specialization, we adopt a two-stage training scheme that first warms up the expert module under the standard flow-matching loss and then optimizes phase-consistent routing under auxiliary supervision. On multi-stage manipulation simulation tasks, PAMAE improves task success by up to \\textbf{9.2\\%} over strong VLA baselines. Further ablations show that both phase-supervised routing and staged optimization are essential for the observed gains. Our results highlight phase-consistent expert allocation as an effective mechanism for improving the reliability and action quality of flow-matching VLA policies."
+  },
+  {
+    "title": "PhysReflect-VLA: Physical Feasibility and Self-Reflective Regulation for Reliable Vision-Language-Action Policies",
+    "original_title": "PhysReflect-VLA: Physical Feasibility and Self-Reflective Regulation for Reliable Vision-Language-Action Policies",
+    "link": "https://arxiv.org/abs/2606.27146",
+    "date": "2026-06-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.27146v1 Announce Type: new \nAbstract: Long-horizon robotic manipulation is highly sensitive to physically infeasible transitions, contact-induced disturbances, and the lack of effective self-correction during execution. Although Vision-Language-Action (VLA) models provide strong task grounding through multimodal learning, they typically generate actions in a feed-forward manner without explicitly checking physical feasibility or diagnosing execution errors online. We present PhysReflect-VLA, a plug-and-play execution-time reliability framework that augments VLA policies with physical feasibility evaluation and structured self-reflection in a closed-loop control pipeline. A Feasibility Operator evaluates whether candidate actions induce dynamically consistent state transitions; an Action Explanation Operator verifies transition coherence; and an LLM-based Reflection Module analyzes state discrepancies to generate corrective guidance for subsequent actions. A two-stage training procedure stabilizes feasibility modeling and integrates reflection into the control loop. Experiments on multi-stage, contact-rich real-world manipulation tasks show consistent improvements in stage-wise stability and overall task success compared with representative VLA baselines with an average gain of 5.4\\%. Ablation results further indicate that feasibility checking and reflection-based correction both contribute to improved execution robustness. These results highlight the importance of embedding physical consistency checks and online self-reflection for reliable long-horizon robotic manipulation."
+  },
+  {
+    "title": "HumanoidUMI: Bridging Robot-Free Demonstrations and Humanoid Whole-Body Manipulation",
+    "original_title": "HumanoidUMI: Bridging Robot-Free Demonstrations and Humanoid Whole-Body Manipulation",
+    "link": "https://arxiv.org/abs/2606.27239",
+    "date": "2026-06-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.27239v1 Announce Type: new \nAbstract: High-quality demonstration data are essential for humanoid robot skill learning, especially for whole-body behaviors that require coordinated perception, locomotion, and manipulation. Existing data-collection methods largely rely on robot teleoperation, which is constrained by hardware accessibility, operator expertise, and limited efficiency. Inspired by the Universal Manipulation Interface (UMI), we propose HumanoidUMI, a portable and robot-free framework for humanoid whole-body data collection. HumanoidUMI uses lightweight VR devices and UMI-inspired grippers to collect sparse human keypoint trajectories, wrist-view observations, and gripper actions. These demonstrations train a high-level policy to predict future keypoints, which are retargeted to robot-native whole-body references and executed by a whole-body controller. Experiments in five real-world scenarios demonstrate the effectiveness of the proposed framework and validate the collected demonstrations for transferable humanoid whole-body skill learning."
   },
   {
     "title": "Robot maker deepens European presence - China Daily - Global Edition",
@@ -17917,86 +17998,5 @@
     "source": "IEEE Spectrum",
     "category": "humanoid",
     "summary": "This presentation highlights recent efforts at the Johns Hopkins Applied Physics Laboratory to advance agentic AI for collaborative robotic teams. It begins by framing the core challenges of enabling autonomy, coordination, and adaptability across heterogeneous systems, then introduces a scalable architecture designed to support agentic behaviors in multi-robot environments. The talk concludes with key challenges encountered and practical lessons learned from ongoing research and development.Key learningsProvides an introduction to LLM-based AI AgentsDescribes an approach to applying LLM-based AI Agents to robotic teamsProvides demonstrations of the approach running in hardware with a heterogeneous team of robotsPresents lessons learned and future work in this areaDownload this free whitepaper now!"
-  },
-  {
-    "title": "China's Unitree debuts rideable transforming mecha robot - MSN",
-    "original_title": "China's Unitree debuts rideable transforming mecha robot - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNNWs3VTZpUEo5X0s1R2VodTBlSE9DTWM3N3gyUk5IUm4wNnRSTHl0Z1VSZm02RWRMQktqR0ZOWnFHbVhPUU9BcG5Vb0lGdDN2ZmljekNQbzQyRUljZmMwXzFKYzFVQzR0blRpTlNMaURvSGtySkpqWlhtNHVoQVZzQ0pYVkxoVlVCcU5OQ1gzNV9mcExQMXJJV2cwbDNsRnZ0OUlHTk9LNzZWWW5EdmtuR0o0cXpGQUNhN21NZjhfTDllcGpDdWFkQUsza2pGVTJScGZxYzdtWTBuZWlNeURZ?oc=5",
-    "date": "2026-05-18 07:33",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China's Unitree debuts rideable transforming mecha robot  MSN"
-  },
-  {
-    "title": "LG CNS and Kurly Launch AI Humanoid Robot Project for Smart Logistics Centers - Korea IT Times",
-    "original_title": "LG CNS and Kurly Launch AI Humanoid Robot Project for Smart Logistics Centers - Korea IT Times",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1uOEI3UmJvckpnS245a3NhSGRocC1rZy12V09haXIydk5uZXpBMEcyZnF2bElGNUc2cjVOTmhPTU9hM1ZHbjlJNVZZTGpHMmlxR19SZlp0NTRNUkZVRVVRWDdDREtvTVAyMElRdmluc0g?oc=5",
-    "date": "2026-05-18 05:17",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "LG CNS and Kurly Launch AI Humanoid Robot Project for Smart Logistics Centers  Korea IT Times"
-  },
-  {
-    "title": "HoloMotion-1 Technical Report",
-    "original_title": "HoloMotion-1 Technical Report",
-    "link": "https://arxiv.org/abs/2605.15336",
-    "date": "2026-05-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.15336v1 Announce Type: new \nAbstract: In this report, we present HoloMotion-1, a humanoid motion foundation model for zero-shot whole-body motion tracking. A key innovation of HoloMotion-1 is to scale control-policy training with a large-scale hybrid motion corpus, where video-reconstructed motions from in-the-wild videos provide the dominant source of motion diversity, while curated motion-capture and in-house motion data provide higher-fidelity supervision and deployment-oriented coverage. This data regime enables HoloMotion-1 to move beyond conventional MoCap-only training and exposes the policy to substantially broader behaviors, capture conditions, and motion styles.\n  Learning from such heterogeneous data introduces new challenges, including reconstruction noise, source-domain mismatch, uneven motion quality, and the need for temporal modeling under large behavioral variation. To address these challenges, HoloMotion-1 integrates large-capacity temporal modeling, a sparsely activated Mixture-of-Experts Transformer with KV-cache inference for real-time control, and a sequence-level training strategy that improves learning efficiency on extended motion sequences. Extensive experiments on multiple unseen motion benchmarks show that HoloMotion-1 generalizes robustly across diverse motion types and capture conditions, significantly improves tracking accuracy over prior methods, and transfers directly to a real humanoid robot without task-specific fine-tuning."
-  },
-  {
-    "title": "Diffusion Policy for Coordinated Control of a Nonholonomic Mobile Base and Dual Arms in Door Opening and Passing",
-    "original_title": "Diffusion Policy for Coordinated Control of a Nonholonomic Mobile Base and Dual Arms in Door Opening and Passing",
-    "link": "https://arxiv.org/abs/2605.15352",
-    "date": "2026-05-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.15352v1 Announce Type: new \nAbstract: Opening heavy, self closing doors, especially those that require pulling remains a long standing challenge in robotics. Humans naturally employ both arms in a dexterous manner, rotating the handle, widening the gap, holding the door, switching arms when needed, and moving through while maintaining clearance. To replicate such behaviors, a robot must perform a long sequence of motions spanning multiple stages and interactions with different parts of the door. Traditional approaches rely on state machines that transition between manually defined stages (e.g., pulling after the knob is rotated, passing after the gap is sufficiently wide). While intuitive, these methods lack robustness, as hand crafted trajectories fail to generalize to the diversity of real world conditions without extensive engineering effort. Recent advances in imitation learning offer a scalable alternative, yet no existing visual action model has demonstrated simultaneous coordination of a nonholonomic base and dual arms for the complete door opening and passing task. In this paper, we tackle this complex, highly constrained problem using a diffusion based visuomotor control policy. Our results demonstrate that a single end to end policy can be learned to execute long horizon tasks requiring tight coordination between manipulation and locomotion. The resulting policy not only achieves a high success rate in opening and traversing damped pull doors but also demonstrates strong robustness to external disturbances capabilities that are difficult to realize with traditional methods."
-  },
-  {
-    "title": "Where to Perch in a Tree: Vision-Guidance for Tree-Grasping Drones",
-    "original_title": "Where to Perch in a Tree: Vision-Guidance for Tree-Grasping Drones",
-    "link": "https://arxiv.org/abs/2605.15430",
-    "date": "2026-05-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.15430v1 Announce Type: new \nAbstract: This study demonstrates a method to locate an ideal perch location on a tree for vision-guided autonomous tree-perching drones. Various image processing algorithms, including those used for machine learning, image segmentation and binary image morphology, are implemented to assess the shape and structure of a tree. Rather than identifying the closest available branch, this study builds on vision methods by evaluating the potential of each branch, determining its suitability for perching based on factors such as branch width, slope (angle to the horizontal) and curvature. For a given tree-perching drone and a dataset of more than 10,000 urban tree images taken from February to October in a subtropical and temperate monsoon climate, the proposed method successfully produces a result for 76% of feasible targets. A feasible target defined as a tree where the branch diameters are sufficiently thick and where the available perching space is at least equal to the width of a tendon-driven grasping claw. These successful preliminary results create a foundation from which a number of identified improvements and additional features can be developed to create a generalised method; this will involve the incorporation of supplementary data from depth perception and attitude sensors to enhance the branch assessment."
-  },
-  {
-    "title": "FLASH: Efficient Visuomotor Policy via Sparse Sampling",
-    "original_title": "FLASH: Efficient Visuomotor Policy via Sparse Sampling",
-    "link": "https://arxiv.org/abs/2605.15492",
-    "date": "2026-05-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.15492v1 Announce Type: new \nAbstract: Generative models such as diffusion and flow matching have become dominant paradigms for visuomotor policy learning, yet their reliance on iterative denoising incurs high inference latency incompatible with real-time robotic control. We present Fast Legendre-polynomial Action policy via Sparse History-anchored flow (FLASH Policy), which replaces discrete action-chunk generation with continuous Legendre polynomial trajectory representation. Specifically, by fitting expert demonstrations under sparse temporal sampling, FLASH enables a single inference to cover a significantly extended action horizon. To further accelerate generation, FLASH initiates the flow matching process from history polynomial coefficients rather than uninformative Gaussian noise, shortening the transport distance and enabling accurate single-step inference. Moreover, analytic polynomial differentiation directly provides desired velocity feed-forward signals to the torque controller without numerical approximation. Extensive experiments on five simulated and two real-world manipulation tasks demonstrate that FLASH achieves state-of-the-art success rates ($\\ge 92\\%$ across all tasks), a per-episode inference time of $31.40\\,ms$ (up to $175\\times$ faster than diffusion policies and $18\\times$ faster than prior flow matching policies), up to $4\\times$ faster training convergence than ACT, and $5\\times$ to $7\\times$ reduction in controller tracking error compared to discrete-action baselines."
-  },
-  {
-    "title": "A QUBO Formulation Framework for Kinematic Structure-Based Robot Design Optimization: A Robotic Hand Case Study",
-    "original_title": "A QUBO Formulation Framework for Kinematic Structure-Based Robot Design Optimization: A Robotic Hand Case Study",
-    "link": "https://arxiv.org/abs/2605.15510",
-    "date": "2026-05-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.15510v1 Announce Type: new \nAbstract: This paper presents a quadratic unconstrained binary optimization-based formulation framework for robot design optimization using kinematic structure-level evaluation metrics. In the proposed framework, classical computation is used to evaluate design-dependent metrics while the resulting combinatorial selection problem is formulated in a structure compatible with quantum annealing-based optimization. A robotic hand is adopted as a representative case study, as its performance is determined by both the individual kinematic characteristics of each finger and interaction terms. The proposed formulation incorporates individual design rewards, overlap workspace interactions, one-hot constraint, and structural dependency penalties into a unified quadratic model. A 27-variable robotic hand design problem is constructed, and simulated annealing is used as a classical baseline to verify the feasibility of the formulation. Quantum annealing is further performed to examine the applicability of the proposed formulation to annealing-based hardware execution. The results show that feasible design combinations satisfying both one-hot selection and pairwise constraints can be obtained, with the observed objective-value range becoming narrower as the number of reads increases. In addition, the formulation process is discussed for other robotic systems. The proposed framework provides a generalized approach for transforming kinematic structure-based robot design problems into combinatorial optimization problems."
-  },
-  {
-    "title": "Terrain Consistent Reference-Guided RL for Humanoid Navigation Autonomy",
-    "original_title": "Terrain Consistent Reference-Guided RL for Humanoid Navigation Autonomy",
-    "link": "https://arxiv.org/abs/2605.15517",
-    "date": "2026-05-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.15517v1 Announce Type: new \nAbstract: We present a method for training reference-guided, perceptive reinforcement learning locomotion policies for humanoid robots in which reference trajectories are modulated in training to be consistent with terrain geometry. Aiming to deploy our method with standard navigation autonomy infrastructure, we synthesize SE(2)-controllable reference trajectories inside the RL training loop, projecting desired footsteps onto valid footholds and adjusting swing-foot and center-of-mass trajectories to match the terrain. The resulting policy exposes a clean SE(2) velocity interface compatible with standard navigation planners. In simulation, environmentally-conditioned references significantly improve reference tracking performance compared to environment agnostic references. On hardware, we integrate the policy with an MPC + control barrier function planner and demonstrate long-horizon (>70m) closed-loop autonomous navigation on the Unitree G1 through outdoor environments containing rough terrain and consecutive flights of stairs, with all sensing and computation onboard."
-  },
-  {
-    "title": "SkiP: When to Skip and When to Refine for Efficient Robot Manipulation",
-    "original_title": "SkiP: When to Skip and When to Refine for Efficient Robot Manipulation",
-    "link": "https://arxiv.org/abs/2605.15536",
-    "date": "2026-05-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.15536v1 Announce Type: new \nAbstract: Previous imitation learning policies predict future actions at every control step, whether in smooth motion phases or precise, contact-rich operation phases. This uniform treatment is wasteful: most steps in a manipulation trajectory traverse free space and carry little task-relevant information, while a small fraction of \\emph{key} steps around contacts, grasps, and alignment demand dense, high-resolution prediction. We propose a novel \\emph{action relabeling} mechanism: at each timestep in a skip segment, we replace the behavior cloning target with the action at the entrance of the next key segment, enabling the policy to leap over redundant steps in a single decision. The resulting \\textbf{Skip Policy (SkiP)} dynamically leaps over skip segments and intensively refines actions in key segments, within a single unified network requiring no learned skip planner or hierarchical structure. To automatically partition demonstrations into key and skip segments without manual annotation, we introduce \\emph{Motion Spectrum Keying} (MSK), a fast, task-agnostic procedure that detects local motion complexity from action signals. Extensive experiments across 72 simulated manipulation tasks and three real-robot tasks show that SkiP reduces executed steps by $15$--$40\\%$ while matching or improving success rates across various policy backbones. Project page: \\texttt{https://pgq18.github.io/SkiP-page/}."
   }
 ]
