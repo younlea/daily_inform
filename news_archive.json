@@ -297,6 +297,15 @@
     "summary": "arXiv:2507.04949v3 Announce Type: replace \nAbstract: Many robotic tasks, such as inverse kinematics, motion planning, and contact-rich manipulation, can be formulated as optimization problems. Solving these problems requires addressing inherent nonlinear kinematics, complex contact dynamics, long-horizon correlations, and multi-modal optimization landscapes, each posing distinct challenges for state-of-the-art optimizers. While existing methods tackle these issues through problem-specific strategies, such specialization inherently limits cross-task generalization, requires heavy engineering effort in problem reformulation, and hinders multi-task autonomy. Monte Carlo Tree Search (MCTS) offers a compelling framework that generalizes across diverse robotic tasks via strategic exploration of the solution space. However, it typically suffers from combinatorial complexity when applied naively, resulting in slow convergence and excessive storage space in high-dimensional domains. To address this limitation, we propose Tensor Train Tree Search (TTTS), which leverages tensor factorization to exploit implicit correlations among different branches within the decision tree. By utilizing the resulting compact, linear-complexity representation, TTTS significantly reduces both computation and storage overhead, thereby enabling highly efficient global decision making. Experimental results across inverse kinematics, motion planning around obstacles, legged robot manipulation, multi-stage motion planning, and bimanual whole-body manipulation demonstrate the efficiency of TTTS for generalized robot optimization over a diverse set of tasks."
   },
   {
+    "title": "Residual RL-MPC for Robust Microrobotic Cell Pushing Under Time-Varying Flow",
+    "original_title": "Residual RL-MPC for Robust Microrobotic Cell Pushing Under Time-Varying Flow",
+    "link": "https://arxiv.org/abs/2603.05448",
+    "date": "2026-06-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.05448v2 Announce Type: replace \nAbstract: Contact-rich micromanipulation in microfluidic flow is challenging because small disturbances can break pushing contact and induce large lateral drift. We study planar cell pushing with a magnetic rolling microrobot that tracks a waypoint-sampled reference curve under time-varying Poiseuille flow in simulation. We propose a hybrid controller that augments a nominal MPC with a learned residual policy trained by SAC. The policy outputs a bounded 2D velocity correction that is contact-gated, so residual actions are applied only during robot-cell contact, preserving reliable approach behavior and stabilizing learning. All methods share the same actuation interface and speed envelope for fair comparisons. Simulation results show improved robustness and tracking accuracy over pure MPC and PID under nonstationary flow, with generalization from a clover training curve to unseen circle and square trajectories. A residual-bound sweep identifies an intermediate correction limit as the best trade-off, which we use in all benchmarks."
+  },
+  {
     "title": "Robot maker deepens European presence - China Daily - Global Edition",
     "original_title": "Robot maker deepens European presence - China Daily - Global Edition",
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSjQ3TTduRkVtX3piZXloOGJBR1BXcDhpYXBXZmZFUVd3N3VSZktLeUtEZjl0ZlQ0aklSSXlyRGhmRHl5WTBNTHN4VGxqM3RjRHJPemRQU1JOTEFkTm80Q2xSUDV5Z3ptZkxiRXN3d0h6anNNNENGOUtiMk5lVTk4cw?oc=5",
@@ -327,6 +336,15 @@
     "title": "SpaceX, Unitree, Anthropic, OpenAI: Is the ultra-hyped tech listing wave backed by sound fundamentals? - The Business Times",
     "original_title": "SpaceX, Unitree, Anthropic, OpenAI: Is the ultra-hyped tech listing wave backed by sound fundamentals? - The Business Times",
     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOWVVHaU5QV0tfNmNGWk5fc3RVdEJUbmNvREN1R1JUc015bVBLdFI4VjlyclhhUVFhdDIwc1VNZnUtbVRsczVuYUlEYkRxU1J5OEpFLVVPWFpWNW1uRXFnX05vQkVZajlTRWdLVzg3blZaUXFRczRfcWdrS3dyUFhmanhPNHR3cTlEMFpBYWsweEloR2IwWVdpVFM1bUhjeEFTb1hQOGZVNGlaWTl4aTVqZFVkaWtIMy1scjhOX0hyTDhad3BWS0xvQmdzTTJjUHVOUWkxQg?oc=5",
+    "date": "2026-06-26 01:20",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "SpaceX, Unitree, Anthropic, OpenAI: Is the ultra-hyped tech listing wave backed by sound fundamentals?  The Business Times"
+  },
+  {
+    "title": "SpaceX, Unitree, Anthropic, OpenAI: Is the ultra-hyped tech listing wave backed by sound fundamentals? - The Business Times",
+    "original_title": "SpaceX, Unitree, Anthropic, OpenAI: Is the ultra-hyped tech listing wave backed by sound fundamentals? - The Business Times",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRVpIVUtkWWVzSS1uRFYwMlY4b1VKOGpLdWlaLWlUSWloMmh1dFRRSzZCT2FCMEpuMmxndUJ1WUZEenZZZkVYMHJsXzAwYzFNUWhmelpzVHFvUHlkemZzS3ctS2VuWmx1OWFleDRuOVJfVGxhbElEUnU5dzNMN2xEY3F2SG5ScG1DT0tNMUxMMm5JcVFpVUlBWWc4NmVxTHpFNkZSVzdzdnUxY0FvUm1rd0YxZWtvY1E3YTBSOGtDNWJvcFFDb0ZxRHowM3FZTFdOTFA1V2pSQ2o?oc=5",
     "date": "2026-06-26 01:20",
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
@@ -17980,23 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "Richtech Robotics, a Nevada-based provider of AI-driven service robots, has announced the availability of its fleet of robotic solutions and data services in the Microsoft Marketplace, an online store providing applications and services for use on Azure. Richtech Robotics customers can now take advantage of the productive and trusted Azure cloud platform, with streamlined deployment […]"
-  },
-  {
-    "title": "GFT takes AI from visual inspection to physical action for auto manufacturers",
-    "original_title": "GFT takes AI from visual inspection to physical action for auto manufacturers",
-    "link": "https://roboticsandautomationnews.com/2026/05/18/gft-takes-ai-from-visual-inspection-to-physical-action-for-auto-manufacturers/101644/",
-    "date": "2026-05-18 18:20",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Global digital transformation company GFT Technologies has launched its new AI-powered robotic arms designed for automotive manufacturing. Building on the company’s existing work with Google on AI-powered visual inspection, the new technology can not only detect defective parts but also physically remove them from the assembly line – helping manufacturers improve quality and keep production […]"
-  },
-  {
-    "title": "Faraday Future obtains $25M to ship 1,500 robots by year’s end",
-    "original_title": "Faraday Future obtains $25M to ship 1,500 robots by year’s end",
-    "link": "https://www.therobotreport.com/faraday-future-obtains-25m-ship-1500-robots-years-end/",
-    "date": "2026-05-18 18:08",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Combined with the $45 million financing announced in April, Faraday Future has secured a total of $70 million over the past two months.\nThe post Faraday Future obtains $25M to ship 1,500 robots by year’s end appeared first on The Robot Report."
   }
 ]
