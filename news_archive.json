@@ -1,5 +1,14 @@
 [
   {
+    "title": "AGIBOT produces 15,000th robot, marking a milestone in embodied AI deployment",
+    "original_title": "AGIBOT produces 15,000th robot, marking a milestone in embodied AI deployment",
+    "link": "https://www.therobotreport.com/agibot-produces-15000th-robot-marking-milestone-embodied-ai-deployment/",
+    "date": "2026-06-28 09:00",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "AGIBOT has rolled out 15,000 wheeled semi-humanoid robots as it moves from embodied AI from development and production to deployment.\nThe post AGIBOT produces 15,000th robot, marking a milestone in embodied AI deployment appeared first on The Robot Report."
+  },
+  {
     "title": "Chinese Humanoid Robots Transition from Labs to Real Factories to Assemble Tablets: AgiBot Deploys G2 Machines at Longcheer, Aiming for 100 Robots in Electronics, Cars, Chips, and Energy by 2026 - CPG Click Petróleo e Gás",
     "original_title": "Chinese Humanoid Robots Transition from Labs to Real Factories to Assemble Tablets: AgiBot Deploys G2 Machines at Longcheer, Aiming for 100 Robots in Electronics, Cars, Chips, and Energy by 2026 - CPG Click Petróleo e Gás",
     "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPamZKRnkwcE56MmV3YzhSclhBOFRQeHlyM09wQVhIS18wMnFtYmV0UHFiZGpVd3hwZ1dEdEFqVkhpYXpreFdJQ0luNGV0V285STREbElnbVkwY0J2U0hfcEtWamdDdG14eFB1MWstdWVHaHEySHQ0aWRhdVNEbDFabnUxSXE2cXJZalFtRlB0RFdCaEhjeGVEZXl2SDFVTzdWRkxxTHNqcUpwVWtmZVk2Y2VzYXR5Tjl5SERhUUFBeVpxMnZiNHpnSUduLWZzaVk4RjdZY2lXNThhZktFa1hYOG1mZTFsU0VaLXJwUlhsUDF4WmtrU3ZzWEFLTkR6ajh0VzQ5NERTVTM3OEJlLVctRnUyTFg?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.18722v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have recently become a central direction in embodied AI, but current systems are restricted to either dual-gripper control or single-arm dexterous hand manipulation. While low-dimensional gripper control can often be handled with simpler methods, high-dimensional dexterous hand control benefits greatly from full end-to-end VLA learning. In this work, we introduce Dexora, the first open-source VLA system that natively targets dual-arm, dual-hand high-DoF manipulation. We design a hybrid teleoperation pipeline that decouples gross arm kinematics (captured with a custom exoskeleton backpack) from fine finger motion (markerless hand tracking via Apple Vision Pro), and that drives both a physical dual-arm dual-hand platform and an identical MuJoCo digital twin. Using that interface, we assemble a large training corpus: an embodiment-matched synthetic corpus (100K simulated trajectories, 6.5M frames) and a real-world dataset of 10K teleoperated episodes (2.92M frames). To mitigate noisy teleoperation demonstrations, we propose a data-quality-aware training recipe: an offline discriminator provides clip-level weights for diffusion-transformer policy training, down-weighting low-quality demonstrations. Empirically, Dexora outperforms competitive VLA baselines on both basic and dexterous benchmarks (e.g., average dexterous success 66.7% vs. 51.7%), attains 90% success on basic tasks, and shows robust out-of-distribution and cross-embodiment generalization. Ablations confirm the importance of real data and the discriminator for dexterity."
-  },
-  {
-    "title": "DexHoldem: Playing Texas Hold'em with Dexterous Embodied System",
-    "original_title": "DexHoldem: Playing Texas Hold'em with Dexterous Embodied System",
-    "link": "https://arxiv.org/abs/2605.18727",
-    "date": "2026-05-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.18727v1 Announce Type: new \nAbstract: Evaluating embodied systems on real dexterous hardware requires more than isolated primitive skills: an agent must perceive a changing tabletop scene, choose a context-appropriate action, execute it with a dexterous hand, and leave the scene usable for later decisions. We introduce DexHoldem, a real-world system-level benchmark built around Texas Hold'em dexterous manipulation with a ShadowHand. DexHoldem provides 1,470 teleoperated demonstrations across 14 Texas Hold'em manipulation primitives, a standardized physical policy benchmark, and an agentic perception benchmark that tests whether agents can recover the structured game state needed for embodied decision making. On primitive execution, $\\pi_{0.5}$ obtains the highest task completion rate ($61.2\\%$), while $\\pi_{0.5}$ and $\\pi_0$ tie on scene-preserving success rate ($47.5\\%$). On agentic perception, Opus 4.7 obtains the best strict problem-level accuracy ($34.3\\%$), while GPT 5.5 obtains the best average field-wise accuracy ($66.8\\%$), exposing a gap between isolated visual sub-capabilities and complete routing-relevant state recovery. Finally, we instantiate the full embodied-agent loop in three case studies, where waiting, recovery dispatches, human-help requests, and repeated primitive execution reveal how perception and policy errors accumulate during closed-loop deployment. DexHoldem therefore evaluates dexterous tabletop execution, agentic perception, and embodied decision routing in a shared physical setting. Project page: https://dexholdem.github.io/Dexholdem/."
   }
 ]
