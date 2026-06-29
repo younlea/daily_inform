@@ -216,6 +216,42 @@
     "summary": "arXiv:2510.01642v3 Announce Type: replace \nAbstract: Recent advances in robotic manipulation have integrated low-level robotic control into Vision-Language Models (VLMs), extending them into Vision-Language-Action (VLA) models. Although state-of-the-art VLAs achieve strong performance in downstream robotic applications, supported by large-scale crowd-sourced robot training data, they still inevitably encounter failures during execution. Enabling robots to reason and recover from unpredictable and abrupt failures remains a critical challenge. Existing robotic manipulation datasets, collected in either simulation or the real world, primarily provide only ground-truth trajectories, leaving robots unable to recover once failures occur. Moreover, the few datasets that address failure detection typically offer only textual explanations, which are difficult to utilize directly in VLA models. To address this gap, we introduce FailSafe, a novel failure generation and recovery system that automatically produces diverse failure cases paired with executable recovery actions. FailSafe can be easily adapted to a wide range of manipulation tasks in simulators with motion planning support, enabling scalable creation of failure-action data. To demonstrate its effectiveness, we fine-tune LLaVA-OneVision-7B (LLaVA-OV-7B) to build FailSafe-VLM. Experimental results show that FailSafe-VLM successfully helps robotic arms detect and recover from potential failures, improving the performance of three state-of-the-art VLA models (Pi-0-FAST, OpenVLA, OpenVLA-OFT) by up to 22.6% on average across several tasks in ManiSkill. Furthermore, FailSafe-VLM could generalize across different spatial configurations, camera viewpoints, object and robotic embodiments."
   },
   {
+    "title": "StereoVLA: Enhancing Vision-Language-Action Models with Stereo Vision",
+    "original_title": "StereoVLA: Enhancing Vision-Language-Action Models with Stereo Vision",
+    "link": "https://arxiv.org/abs/2512.21970",
+    "date": "2026-06-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.21970v2 Announce Type: replace \nAbstract: While Vision-Language-Action (VLA) models excel in generalist manipulation, they often lack fine-grained spatial awareness and show limited viewpoint robustness. This limitation largely stems from the reliance on pretrained RGB encoders, which lack explicit geometric cues and prioritize semantic alignment over geometric representation. We argue that effective visual representations for VLA models must jointly encode both semantic and geometric information. In this paper, we introduce StereoVLA, the first VLA model to incorporate rich geometric cues from large-scale synthetic stereo data. StereoVLA employs a Geometric-and-Semantic (GeoSem) vision encoder that extracts geometric cues from subtle stereo-view disparities for precise spatial perception, while simultaneously capturing semantic features from pixel observations to support language-conditioned manipulation. Additionally, we introduce two synergistic co-training objectives: Interaction-Region Depth Estimation for precise spatial reasoning, and Camera Parameter Estimation to implicitly align perception and action coordinate systems. Compared with baselines that employ various input modalities, StereoVLA achieves a 33.4% absolute gain in success rate in real-world experiments and demonstrates robustness to near-hemispheric camera perspectives. Project page: https://shengliangd.github.io/StereoVLA-Webpage."
+  },
+  {
+    "title": "MobileManiBench: Simplifying Model Verification for Mobile Manipulation",
+    "original_title": "MobileManiBench: Simplifying Model Verification for Mobile Manipulation",
+    "link": "https://arxiv.org/abs/2602.05233",
+    "date": "2026-06-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.05233v2 Announce Type: replace \nAbstract: Vision-language-action models have advanced robotic manipulation but remain constrained by reliance on the large, teleoperation-collected datasets dominated by the static, tabletop scenes. We propose a simulation-first framework to verify VLA architectures before real-world deployment and introduce MobileManiBench, a large-scale benchmark for mobile-based robotic manipulation. Built on NVIDIA Isaac Sim and powered by reinforcement learning, our pipeline autonomously generates diverse manipulation trajectories with rich annotations (language instructions, multi-view RGB-depth-segmentation images, synchronized object/robot states and actions). MobileManiBench features 2 mobile platforms (parallel-gripper and dexterous-hand robots), 2 synchronized cameras (head and right wrist), 630 objects in 20 categories, 5 skills (open, close, pull, push, pick) with over 100 tasks performed in 100 realistic scenes, yielding 300K trajectories. This design enables controlled, scalable studies of robot embodiments, sensing modalities, and policy architectures, accelerating research on data efficiency and generalization. We benchmark representative VLA models and report insights into perception, reasoning, and control in complex simulated environments, with all code, datasets, and models publicly released."
+  },
+  {
+    "title": "AeroGrab: A Unified Framework for Aerial Grasping in Cluttered Environments",
+    "original_title": "AeroGrab: A Unified Framework for Aerial Grasping in Cluttered Environments",
+    "link": "https://arxiv.org/abs/2603.15097",
+    "date": "2026-06-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.15097v2 Announce Type: replace \nAbstract: Reliable aerial grasping in cluttered environments remains challenging due to occlusions and collision risks. Existing aerial manipulation pipelines largely rely on centroid-based grasping and lack integration between the grasp pose generation models, active exploration, and language-level task specification, resulting in the absence of a complete end-to-end system. In this work, we present an integrated pipeline for reliable aerial grasping in cluttered environments. Given a scene and a language instruction, the system identifies the target object and actively explores it to gain better views of the object. During exploration, a grasp generation network predicts multiple 6-DoF grasp candidates for each view. Each candidate is evaluated using a collision-aware feasibility framework, and the overall best grasp is selected and executed using standard trajectory generation and control methods. Experiments in cluttered real-world scenarios demonstrate robust and reliable grasp execution, highlighting the effectiveness of combining active perception with feasibility-aware grasp selection for aerial manipulation."
+  },
+  {
+    "title": "Web2Grasp: Learning Functional Grasps from Web Images of Hand-Object Interactions",
+    "original_title": "Web2Grasp: Learning Functional Grasps from Web Images of Hand-Object Interactions",
+    "link": "https://arxiv.org/abs/2505.05517",
+    "date": "2026-06-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2505.05517v3 Announce Type: replace-cross \nAbstract: Functional grasping is essential for enabling dexterous multi-finger robot hands to manipulate objects effectively. Prior work largely focuses on power grasps, which only involve holding an object, or relies on in-domain demonstrations for specific objects. We propose leveraging human grasp information extracted from web images, which capture natural and functional hand-object interactions (HOI). Using a pretrained 3D reconstruction model, we recover 3D human HOI meshes from RGB images. To train on these noisy HOI data, we propose to use: (1) an interaction-centric model to learn the functional interaction pattern between hand and object, and (2) geometry-based filtering to remove the infeasible grasps and physical simulation to retain grasps who can resist disturbance. In IssacGym simulation, our model trained on reconstructed HOI grasps achieves a 75.8% success rate on objects from the web dataset and generalizes to unseen objects, outperforming baseline methods in both grasp success and functional quality. In real-world experiments with the LEAP hand and Inspire hand, it attains a 77.5% success rate across 12 objects, including challenging ones such as a syringe, spray bottle, knife, and tongs. Project website is at: https://web2grasp.github.io/."
+  },
+  {
     "title": "Ubtech Robotics Dual Product Push: From Factory Cruzr to Companion U1, but Stock Needs Hard Proof - Ad-hoc-news.de",
     "original_title": "Ubtech Robotics Dual Product Push: From Factory Cruzr to Companion U1, but Stock Needs Hard Proof - Ad-hoc-news.de",
     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdFJaRVBJY2pQNjY2UW1FMFJqaHlCNXdfNjY1MWd5c2tDV1puc2NpOEx0X1dDZGNOSjdVRi1IOGdlc3dCNmw1WFV3amRvSFozOXdtem1JemJzVTNtemxLUEZPS0FHdTVsZm04bUhLSkVRd1YyeHNQUC14ZzRUT180b2xtRV9oTGdIdUh5ZVdKVFNJT0Q4ZkdVR2VNR3dJWTNvOC00cnAtejNGZkVyaEFCeFFMWUxpMnRZZjNSSG1oNHVCSXhaNGpwOUEwVQ?oc=5",
@@ -17962,41 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Unitree secures orders after sensational debut of manned mecha  CCTV.com English"
-  },
-  {
-    "title": "Hyundai Motor Group Plans 25,000 Humanoid Robots for Vehicle Production Lines - Korea IT Times",
-    "original_title": "Hyundai Motor Group Plans 25,000 Humanoid Robots for Vehicle Production Lines - Korea IT Times",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5jb2VORXY0VTJQb1dEWWJRdXQ1QTBJZEQzZXdqelZPWmpqdFlpVldvYVRiUklXNlVIZDBIRGozakMzWFdTbzNidUJOMDUyS0RFUDlRcFYzckI5Q0E3S2NDQzYwdnE2bTZVUFpXd21mTG4?oc=5",
-    "date": "2026-05-19 09:33",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "Hyundai Motor Group Plans 25,000 Humanoid Robots for Vehicle Production Lines  Korea IT Times"
-  },
-  {
-    "title": "Automated wind propulsion gains momentum as Maersk Tankers expands suction sail rollout",
-    "original_title": "Automated wind propulsion gains momentum as Maersk Tankers expands suction sail rollout",
-    "link": "https://roboticsandautomationnews.com/2026/05/19/automated-wind-propulsion-gains-momentum-as-maersk-tankers-expands-suction-sail-rollout/101683/",
-    "date": "2026-05-19 09:27",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Maersk Tankers has completed the second installation in an ongoing rollout of automated wind-assisted propulsion systems across its medium-range tanker fleet, as shipping companies increasingly turn to hybrid automation and renewable energy technologies to reduce fuel consumption and emissions. The latest installation saw four 24-meter automated suction sails fitted to the tanker Maersk Tahiti at […]"
-  },
-  {
-    "title": "Why Modern Vehicles Depend on ECUs",
-    "original_title": "Why Modern Vehicles Depend on ECUs",
-    "link": "https://roboticsandautomationnews.com/2026/05/19/why-modern-vehicles-depend-on-ecus/101678/",
-    "date": "2026-05-19 09:15",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Today’s vehicles are no longer defined solely by their mechanical parts. Behind every smooth gear shift, every stable braking response, and every millisecond of engine timing sits an electronic control unit – commonly known as an ECU. These small embedded computers have become the backbone of vehicle operation, managing everything from fuel delivery to collision […]"
-  },
-  {
-    "title": "XPENG Robotaxi Announces First Unit Officially Rolls Off the Production Line",
-    "original_title": "XPENG Robotaxi Announces First Unit Officially Rolls Off the Production Line",
-    "link": "https://humanoidroboticstechnology.com/industry-news/xpeng-robotaxi-announces-first-unit-officially-rolls-off-the-production-line/",
-    "date": "2026-05-19 08:35",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "XPENG has announced the official rollout of its first mass-produced Robotaxi in Guangzhou. This marks the first time in China that an automaker has achieved mass production of a Robotaxi through full-stack, in-house development. The newly unveiled Robotaxi, built on the XPENG GX platform, is China’s first production-ready, pre-assembled Robotaxi model developed entirely with in-house […]\nThe post XPENG Robotaxi Announces First Unit Officially Rolls Off the Production Line appeared first on Humanoid Robotics Technology."
   }
 ]
