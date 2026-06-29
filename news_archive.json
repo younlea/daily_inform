@@ -144,6 +144,78 @@
     "summary": "arXiv:2606.28196v1 Announce Type: new \nAbstract: Traditionally, dexterous manipulation controllers are designed using analytic models constrained by strong assumptions about the hand and the objects being manipulated. Reinforcement learning (RL) has become another common approach in which skills are explored openly in an end-to-end manner but is inefficient because of unnoticeable instability and conflicts in learning objectives. This paper attempts to efficiently explore stable and accurate manipulation skills by decomposing dexterous skills into multiple simpler/analyzable components. Each skill component is subsequently learned with constraints and guidance from classical physics and control theory. Our work shows that for stable grasp, in-grasp reposition/reorientation with different objects, sensor/motor noise, latency, and frictional conditions, skill learning becomes efficient and stable with prior knowledge from theory."
   },
   {
+    "title": "Unleashing Infinite Motion: Scaling Expressive Quadrupedal Motion via Generative Video Priors",
+    "original_title": "Unleashing Infinite Motion: Scaling Expressive Quadrupedal Motion via Generative Video Priors",
+    "link": "https://arxiv.org/abs/2606.28237",
+    "date": "2026-06-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.28237v1 Announce Type: new \nAbstract: Quadruped robots have achieved remarkable locomotion, yet their behavioral repertoire remains confined to a few gaits--far from the expressive, companion-like presence long envisioned for them. Attempts to import the humanoid recipe of large-scale motion data have inherited one tacit assumption: that robot motion must first pass through an animal body, making data collection dependent on cooperative animals, reconstruction fragile across species, and retargeting ill-posed across incompatible morphologies. We propose Uni-Mo, a fully automated pipeline that removes the animal from the loop by reframing data scarcity as a generation problem: an LLM proposes motion prompts, a video diffusion model synthesizes the corresponding robot behaviors, and the generated videos are lifted into 3D reference trajectories used to train tracking policies deployed on a real Unitree Go2. To make naively-drifting generations reliably extractable, we introduce an Identity Consistency Loss that enforces appearance coherence across frames. We release Quad-Imaginarium at https://github.com/GaoLii/Quad-Imaginarium.git, the resulting open-source dataset of 7,488 language-annotated quadruped motions (18.5 hours) spanning acrobatic and performative behaviors. We validate 392 randomly sampled motions on a real Unitree Go2 with a 96.7% deployment success rate, complemented by a 97.6% success rate across the full dataset in simulation."
+  },
+  {
+    "title": "SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation",
+    "original_title": "SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation",
+    "link": "https://arxiv.org/abs/2606.28276",
+    "date": "2026-06-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.28276v1 Announce Type: new \nAbstract: Training and evaluating robot policies in the real world is costly and difficult to scale. We introduce SimFoundry, a modular and automated system for zero-shot real-to-sim scene construction from a video. SimFoundry generates sim-ready digital twins and supports object, scene, and task editing, enabling the automated generation of diverse digital cousins: affordance-preserving variations of reconstructed real-world scenes. Policies trained on SimFoundry data transfer zero-shot to challenging real tasks involving multi-step manipulation, articulated object interaction, and bimanual interaction, and its digital cousins (variations of the original scene, objects, and tasks) facilitate generalization to new real-world conditions. Across 7 manipulation tasks and 5 policy architectures, SimFoundry simulation evaluations strongly predict real-world performance, with mean Pearson correlation 0.911 and mean maximum ranking violation 0.018. When evaluating sim-trained policies zero-shot in the real world, policies trained with object, scene, and task cousins in simulation show average task success rate improvements of 17%, 21%, and 40%, respectively. Additional details at https://research.nvidia.com/labs/gear/simfoundry/ ."
+  },
+  {
+    "title": "CacheMPC: Certified Cached Model Predictive Control for Quadruped Locomotion",
+    "original_title": "CacheMPC: Certified Cached Model Predictive Control for Quadruped Locomotion",
+    "link": "https://arxiv.org/abs/2606.28300",
+    "date": "2026-06-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.28300v1 Announce Type: new \nAbstract: Model Predictive Control (MPC) is the standard predictive layer in hierarchical quadruped controllers, but the per-cycle QP solve limits the update rate achievable on embedded processors. Because legged gaits revisit a bounded region of state space, MPC solutions admit caching and reuse. This paper proposes \\emph{Certified CacheMPC}: a Locality-Sensitive-Hashed cache of horizon contact-force trajectories, partitioned by contact mode, retrieved at query time and accepted only when an a-posteriori per-query certificate confirms primal feasibility and a Lagrangian dual-gap upper bound on cost suboptimality. A bounded-budget controller schedule combines top-$K$ certified retrieval, a deadline-bounded QP solve, and a shifted last-certified fallback. The framework is evaluated on a Unitree Go2 across $2{,}038$ usable cold-controller MuJoCo trials, including a $600$-trial $n\\!=\\!50$ campaign at three failure-boundary cells, and a first-deploy session on the on-robot NVIDIA Orin NX. The un-gated cache delivers a $25\\times$ median solve-time speedup in simulation and an $18.7\\times$ median speedup on hardware. At $n\\!=\\!50$ no statistically significant difference in closed-loop stable rate is detected between the cache variants and the no-cache baseline at any tested cell. The certificate's contribution to closed-loop safety is not resolvable at the present sample size."
+  },
+  {
+    "title": "WARP-RM: A Warp-Augmented Relative Progress Reward Model for Data Curation",
+    "original_title": "WARP-RM: A Warp-Augmented Relative Progress Reward Model for Data Curation",
+    "link": "https://arxiv.org/abs/2606.28320",
+    "date": "2026-06-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.28320v1 Announce Type: new \nAbstract: Scaling imitation learning requires large datasets, yet human teleoperation inevitably produces mixed-quality demonstrations containing hesitations and recoveries. Prior frame-level progress reward models supervise on absolute temporal progress proxies that suffer from label noise, or require costly human annotations to define subtask boundaries. We present WARP (Warp-Augmented Relative Progress), a novel fully self-supervised algorithm for learning dense, signed relative progress magnitudes directly from successful demonstrations. WARP generates per-frame progress targets via time-warp augmentations of demonstrations (variable playback speeds and reversals) and we train WARP-RM to predict the normalized elapsed time between input frames. Aggregating these predictions across overlapping windows yields a dense frame-level progress signal. We then introduce WARP-BC, which leverages these scalar reward estimates to upweight high-advantage action chunks during behavior cloning, where chunk-level advantage is obtained by aggregating per-frame rewards. We evaluate our approach on a physical bimanual robot system performing a long-horizon deformable object manipulation task: folding T-shirts from a random crumpled start. To evaluate policy robustness against suboptimal data, we construct training datasets of varying quality using episode length as a proxy for teleoperation sub-optimality. As the dataset is widened to admit more inefficiencies, WARP-BC maintains a 19/20 success rate compared to vanilla BC's collapse to 2/20, improving throughput by up to 18x."
+  },
+  {
+    "title": "DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand",
+    "original_title": "DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand",
+    "link": "https://arxiv.org/abs/2606.28323",
+    "date": "2026-06-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.28323v1 Announce Type: new \nAbstract: Dexterous manipulation policies can solve individual skills, but composing them to perform multiple tasks with a single hand remains challenging. Adding a new task on top of an existing manipulation skill often imposes conflicting demands on overlapping fingers and contact modes, causing destructive interference between preserving an existing manipulation outcome and executing a new one. We propose DexCompose, a role-aware residual composition framework that reuses pretrained dexterous policies for multi-task manipulation through explicit finger-level action ownership. Given two pretrained full-hand policies, DexCompose first collects successful post-task states from the first skill and performs release tests over candidate finger masks to identify which fingers are necessary for maintaining the established skill state. It then trains two asymmetric residual modules: a bounded residual stabilizer for task preservation, and a context-aware residual that adapts the frozen downstream policy only within the action subspace assigned to the new task. We evaluate the framework on 16 composite dexterous manipulation tasks spanning four object-retention skills and four downstream interactions. DexCompose achieves a 77.4% average composite success rate, demonstrating that structural action ownership with dual residuals offers a promising direction for composing dexterous skills beyond conventional policy chaining."
+  },
+  {
+    "title": "PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation",
+    "original_title": "PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.28128",
+    "date": "2026-06-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.28128v1 Announce Type: cross \nAbstract: Video generation models have emerged as a promising paradigm for embodied world simulation. However, both general-domain video generators and robot-specific data fine-tuned models can still produce physically implausible manipulations, including discontinuous motion trajectories and inconsistent robot-object interactions, which limits their reliability as world simulators. Through extensive experiments, we find that such physical instability mainly arises from two factors: deformation of moving objects and implausible spatio-temporal correlations among interacting entities, particularly during contact. Building on this observation, we propose PhysisForcing, a scalable training framework that strengthens physical consistency by focusing supervision on physics-informative regions through joint optimization of pixel-level and semantic-level features. The framework consists of a pixel-level trajectory alignment loss, which supervises DiT features using reference point trajectories, and a semantic-level relational alignment loss, which aligns DiT features with inter-region relations extracted from a frozen video understanding encoder. Extensive experiments on R-Bench, PAI-Bench, and EZS-Bench show that PhysisForcing consistently improves embodied video generation over strong baselines, improving the Wan2.2-I2V-A14B and Cosmos3-Nano base models on R-Bench by 22.3\\% and 9.2\\% (7.1\\% and 3.7\\% over vanilla finetuning), with the Cosmos3-Nano variant attaining the best overall score. Beyond generation, as a world model under the WorldArena action-planner protocol it raises the closed-loop success rate from 16.0\\% to 24.0\\% and further improves downstream policy success, indicating that physically aligned video models yield stronger representations for robotic manipulation."
+  },
+  {
+    "title": "Data Scaling Laws in Imitation Learning for Robotic Manipulation",
+    "original_title": "Data Scaling Laws in Imitation Learning for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2410.18647",
+    "date": "2026-06-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2410.18647v4 Announce Type: replace \nAbstract: Data scaling has revolutionized fields like natural language processing and computer vision, providing models with remarkable generalization capabilities. In this paper, we investigate whether similar data scaling laws exist in robotics, particularly in robotic manipulation, and whether appropriate data scaling can yield single-task robot policies that can be deployed zero-shot for any object within the same category in any environment. To this end, we conduct a comprehensive empirical study on data scaling in imitation learning. By collecting data across numerous environments and objects, we study how a policy's generalization performance changes with the number of training environments, objects, and demonstrations. Throughout our research, we collect over 40,000 demonstrations and execute more than 15,000 real-world robot rollouts under a rigorous evaluation protocol. Our findings reveal several intriguing results: the generalization performance of the policy follows a roughly power-law relationship with the number of environments and objects. The diversity of environments and objects is far more important than the absolute number of demonstrations; once the number of demonstrations per environment or object reaches a certain threshold, additional demonstrations have minimal effect. Based on these insights, we propose an efficient data collection strategy. With four data collectors working for one afternoon, we collect sufficient data to enable the policies for two tasks to achieve approximately 90% success rates in novel environments with unseen objects."
+  },
+  {
+    "title": "FailSafe: Reasoning and Recovery from Failures in Vision-Language-Action Models",
+    "original_title": "FailSafe: Reasoning and Recovery from Failures in Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2510.01642",
+    "date": "2026-06-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2510.01642v3 Announce Type: replace \nAbstract: Recent advances in robotic manipulation have integrated low-level robotic control into Vision-Language Models (VLMs), extending them into Vision-Language-Action (VLA) models. Although state-of-the-art VLAs achieve strong performance in downstream robotic applications, supported by large-scale crowd-sourced robot training data, they still inevitably encounter failures during execution. Enabling robots to reason and recover from unpredictable and abrupt failures remains a critical challenge. Existing robotic manipulation datasets, collected in either simulation or the real world, primarily provide only ground-truth trajectories, leaving robots unable to recover once failures occur. Moreover, the few datasets that address failure detection typically offer only textual explanations, which are difficult to utilize directly in VLA models. To address this gap, we introduce FailSafe, a novel failure generation and recovery system that automatically produces diverse failure cases paired with executable recovery actions. FailSafe can be easily adapted to a wide range of manipulation tasks in simulators with motion planning support, enabling scalable creation of failure-action data. To demonstrate its effectiveness, we fine-tune LLaVA-OneVision-7B (LLaVA-OV-7B) to build FailSafe-VLM. Experimental results show that FailSafe-VLM successfully helps robotic arms detect and recover from potential failures, improving the performance of three state-of-the-art VLA models (Pi-0-FAST, OpenVLA, OpenVLA-OFT) by up to 22.6% on average across several tasks in ManiSkill. Furthermore, FailSafe-VLM could generalize across different spatial configurations, camera viewpoints, object and robotic embodiments."
+  },
+  {
     "title": "Ubtech Robotics Dual Product Push: From Factory Cruzr to Companion U1, but Stock Needs Hard Proof - Ad-hoc-news.de",
     "original_title": "Ubtech Robotics Dual Product Push: From Factory Cruzr to Companion U1, but Stock Needs Hard Proof - Ad-hoc-news.de",
     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdFJaRVBJY2pQNjY2UW1FMFJqaHlCNXdfNjY1MWd5c2tDV1puc2NpOEx0X1dDZGNOSjdVRi1IOGdlc3dCNmw1WFV3amRvSFozOXdtem1JemJzVTNtemxLUEZPS0FHdTVsZm04bUhLSkVRd1YyeHNQUC14ZzRUT180b2xtRV9oTGdIdUh5ZVdKVFNJT0Q4ZkdVR2VNR3dJWTNvOC00cnAtejNGZkVyaEFCeFFMWUxpMnRZZjNSSG1oNHVCSXhaNGpwOUEwVQ?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Humanoid Tech Blog",
     "category": "humanoid",
     "summary": "XPENG has announced the official rollout of its first mass-produced Robotaxi in Guangzhou. This marks the first time in China that an automaker has achieved mass production of a Robotaxi through full-stack, in-house development. The newly unveiled Robotaxi, built on the XPENG GX platform, is China’s first production-ready, pre-assembled Robotaxi model developed entirely with in-house […]\nThe post XPENG Robotaxi Announces First Unit Officially Rolls Off the Production Line appeared first on Humanoid Robotics Technology."
-  },
-  {
-    "title": "No Plan, Yet Human: A Reactive Robotics Model Predicts Human Planning Failures on a Clinical Task",
-    "original_title": "No Plan, Yet Human: A Reactive Robotics Model Predicts Human Planning Failures on a Clinical Task",
-    "link": "https://arxiv.org/abs/2605.16514",
-    "date": "2026-05-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.16514v1 Announce Type: new \nAbstract: Understanding why some sequential planning problems are harder than others requires models that go beyond average performance. They should capture the specific pattern of which problems are hard, and ideally fail in the same way people do when planning capacity is reduced. We apply AICON, a reactive gradient-descent framework developed for robotic manipulation, to the Tower of London test, a cognitive test used to assess planning in Parkinson's disease, mild cognitive impairment, and stroke. Without any lookahead planning or knowledge of human cognition, AICON reproduces the fine-grained human difficulty ordering across 24 problems better than structural task parameters and generalizes to held-out problems in a leave-two-out evaluation. Crucially, AICON outperforms a planning baseline for groups with reduced planning capacity while the planning baseline better captures healthy controls. This dissociation was predicted by the original AICON paper, which noted that the model's failure modes resemble those of Parkinson's patients who struggle with goal hierarchies but not move counts. This suggests that as planning capacity is reduced, human behavior shifts toward the reactive mode AICON models. The finding extends a broader pattern: AICON, originally built for robotics, now captures aspects of biological behavior across perception, eye movements, and sequential planning, suggesting its core abstraction reflects something real about how biological systems are organized."
-  },
-  {
-    "title": "Nori Bot: A Sub-$1,000 Floor-to-Counter Mobile Manipulator",
-    "original_title": "Nori Bot: A Sub-$1,000 Floor-to-Counter Mobile Manipulator",
-    "link": "https://arxiv.org/abs/2605.16537",
-    "date": "2026-05-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.16537v1 Announce Type: new \nAbstract: Open-source mobile manipulators have reached $660 (XLeRobot) but every sub-$1,000 platform shares three limitations: a fixed-height workspace, reactive-only control, and no protection against the stall-induced burn-out that destroys cheap Feetech servos. We present Nori Bot, a 17-DoF dual-arm mobile manipulator at $947 (~3% the cost of comparable commercial platforms) that addresses all three: (1) a 600mm Z-axis lift on the existing servo bus for floor-to-counter reach; (2) a thin-client Raspberry Pi 4 paired with the OpenClaw proactive agent runtime so cron jobs and hooks trigger physical tasks autonomously; and (3) a software safety stack with sensorless grip-force feedback via motor current on a soft TPU finger. Code, CAD, and the skill manifest will be released."
-  },
-  {
-    "title": "LACE: Latent Visual Representation for Cross-Embodiment Learning",
-    "original_title": "LACE: Latent Visual Representation for Cross-Embodiment Learning",
-    "link": "https://arxiv.org/abs/2605.16743",
-    "date": "2026-05-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.16743v1 Announce Type: new \nAbstract: Cross-embodiment learning from human demonstrations is hindered by the visual gap between human and robot embodiments. While self-supervised learning (SSL) backbones encode rich inter-class semantics of general objects, we show they fail to establish correspondence between human and robot hands. We propose LACE, a framework that aligns human and robot visual representations in the latent space of these backbones by leveraging correspondences between shared body parts across embodiments as sparse supervision. These annotations can be automatically obtained via forward kinematics, and single robot demonstration is sufficient to train the model. Our semantic alignment loss matches distributions incurred by corresponding features, lifting patch-level supervision to semantic-level alignment, while a Gram loss preserves pretrained feature quality. This alignment enables robot policies to leverage abundant human data when robot demonstrations are scarce: in zero-shot transfer, policies using LACE-DINO outperform those using DINO by a large margin (65\\%), with consistent gains in low-data regimes and out-of-distribution environments."
-  },
-  {
-    "title": "Pedestrian-Aware LLM-Driven Behavioral Planning for Autonomous Vehicles",
-    "original_title": "Pedestrian-Aware LLM-Driven Behavioral Planning for Autonomous Vehicles",
-    "link": "https://arxiv.org/abs/2605.16858",
-    "date": "2026-05-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.16858v1 Announce Type: new \nAbstract: Autonomous Vehicles (AVs) must make reliable decisions in dense urban environments where pedestrian behavior is variable, sometimes abnormal, and often unseen during training. Reinforcement learning (RL)-based AV control systems perform well in structured traffic but struggle to generalize to unpredictable pedestrian interactions and out-of-distribution scenarios. Their reliance on handcrafted rewards and opaque decisions further limits their suitability for safety-critical, pedestrian-rich environments. To address these limitations, we introduce a Large Language Model (LLM)-based decision-making framework for pedestrian-aware behavioral planning. The system converts structured scene observations into natural-language reasoning prompts, enabling the LLM to infer pedestrian intent, anticipate risk, and generate cautious tactical driving decisions. These decisions are executed by a motion planner that ensures smooth, kinematically feasible control. We evaluate the framework in SUMO across multiple pedestrian-interaction scenarios, including unexpected jaywalking, turn-back crossing, hesitation, and bidirectional crossing. In zero-shot evaluation, the LLM-based agent achieves a 68% collision-free success rate, substantially outperforming deep RL baselines (17.7%). With few-shot episodic memory in a single-pedestrian scenario, performance increases to 96.0%, exceeding a custom DQN controller (82.0%). Cross-behavior evaluation further shows that memory derived from turn-back interactions transfers to unseen hesitation and bidirectional crossing scenarios, achieving 82.0% and 90.0% success, respectively. The system consistently initiates earlier responses, maintains wider safety buffers, and produces interpretable, human-aligned decisions."
-  },
-  {
-    "title": "SADP: Subgoal-Aware Diffusion Policy for Explainable Robots Learned from Foundation Model Generated Demonstrations",
-    "original_title": "SADP: Subgoal-Aware Diffusion Policy for Explainable Robots Learned from Foundation Model Generated Demonstrations",
-    "link": "https://arxiv.org/abs/2605.16871",
-    "date": "2026-05-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.16871v1 Announce Type: new \nAbstract: Explainable robots require not only successful task execution but also the ability to expose internal decision-making process in a user-friendly manner. However, most imitation learning methods are trained solely on task-level demonstrations, without explicitly modeling subgoal structure or execution progress. This limitation is further exacerbated by the scarcity of subgoal-level supervision in standard robot learning datasets, which restricts the development of robots that can convey the subtasks they are executing during long-horizon manipulation. To address this issue, this paper proposes Subgoal-Aware Diffusion Policy (SADP), a framework that leverages foundation models to autonomously generate subgoal-annotated demonstrations and trains diffusion policies on these datasets. SADP structures policy execution around human-interpretable subgoals by conditioning action generation on both task-level and subgoal-level descriptions. A lightweight auxiliary head further predicts subgoal completion states, allowing the robot to expose its current execution stage and monitor subgoal progression. Experiments in RLBench simulations and real-world evaluations on a UR5e robot demonstrate that SADP achieves higher task success rates than strong task-conditioned diffusion baselines, while providing subgoal-level execution signals for monitoring progress and diagnosing failures. These results highlight that built-in, rather than post-hoc, interpretability can coexist with high task performance."
-  },
-  {
-    "title": "Beyond Safety Filtering: Control Barrier Function-Informed Reinforcement Learning for Connected and Automated Vehicles",
-    "original_title": "Beyond Safety Filtering: Control Barrier Function-Informed Reinforcement Learning for Connected and Automated Vehicles",
-    "link": "https://arxiv.org/abs/2605.16894",
-    "date": "2026-05-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.16894v1 Announce Type: new \nAbstract: Reinforcement Learning (RL) uses rewards to guide learning, yet reward design is typically hand-crafted using heuristics that can be difficult to tune. We propose a Control Barrier Function (CBF)-informed reward design for Multi-Agent RL (MARL) that converts CBF constraint values under joint MARL actions into a reward signal that explicitly guides safe learning. We compare against two heuristic reward baselines in a four-way multi-lane intersection with connected and automated vehicles. Results show that our method achieves the highest task performance and is less sensitive to reward hyperparameters, yielding consistently strong performance across the tested hyperparameter range. Code for reproducing the experimental results and a video demonstration are available at https://github.com/bassamlab/SigmaRL."
-  },
-  {
-    "title": "NORM-Nav: Zero-Shot Mobile Robot Navigation with Natural Language Behavioral Constraints",
-    "original_title": "NORM-Nav: Zero-Shot Mobile Robot Navigation with Natural Language Behavioral Constraints",
-    "link": "https://arxiv.org/abs/2605.16979",
-    "date": "2026-05-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.16979v1 Announce Type: new \nAbstract: Mobile robots operating in human-centered environments must generate not only collision-free paths but also trajectories that follow local behavioral conventions. Conventional costmap-based navigation emphasizes geometric feasibility and often overlooks such requirements, which can result in socially inappropriate behaviors. This paper presents NORM-Nav, a zero-shot framework that integrates natural language behavioral constraints into costmap-based planning. An LLM parses each instruction into structured constraints and grounds them using real-time vision--LiDAR perception. These constraints are encoded as multi-layer costmaps that represent geometric, semantic, directional, and velocity cues and are directly compatible with standard grid-based planners. Simulation and real-world experiments indicate that NORM-Nav improves task success rates and produces trajectories closer to human references than representative baselines. The project website is available at https://ei-nav.github.io/NORM-Nav."
-  },
-  {
-    "title": "Generalizable and Actionable Parts Pose Estimation with Symmetry Annotation-Free Learning Strategy",
-    "original_title": "Generalizable and Actionable Parts Pose Estimation with Symmetry Annotation-Free Learning Strategy",
-    "link": "https://arxiv.org/abs/2605.17033",
-    "date": "2026-05-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.17033v1 Announce Type: new \nAbstract: Urgently needed generalizable robot object interaction and manipulation requires high-quality Cross-Category object perception. As a pioneer of this area, Generalizable and Actionable Parts (GAParts) understanding has attracted increasing attention from relevant researchers. However, most recent works either have insufficient design regarding the symmetry issue or require rich symmetry annotation, which severely impedes precise GAPart pose estimation in data-lacking scenarios. In this paper, we propose SAFAG, a novel Symmetry Annotation-Free framework for Generalizable and Actionable Parts Pose Estimation. Specifically, we suggest a stepwise refinement two-stage framework for candidate-to-final quaternion regression, and tackle the symmetry prediction as a probability distribution problem with self-supervised learning strategy. The experimental results demonstrate the superior performance and robustness of our SAFAG. We believe that our work has the enormous potential to be applied in many areas of embodied AI system."
   }
 ]
