@@ -1,5 +1,14 @@
 [
   {
+    "title": "Ubtech Robotics Dual Product Push: From Factory Cruzr to Companion U1, but Stock Needs Hard Proof - Ad-hoc-news.de",
+    "original_title": "Ubtech Robotics Dual Product Push: From Factory Cruzr to Companion U1, but Stock Needs Hard Proof - Ad-hoc-news.de",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdFJaRVBJY2pQNjY2UW1FMFJqaHlCNXdfNjY1MWd5c2tDV1puc2NpOEx0X1dDZGNOSjdVRi1IOGdlc3dCNmw1WFV3amRvSFozOXdtem1JemJzVTNtemxLUEZPS0FHdTVsZm04bUhLSkVRd1YyeHNQUC14ZzRUT180b2xtRV9oTGdIdUh5ZVdKVFNJT0Q4ZkdVR2VNR3dJWTNvOC00cnAtejNGZkVyaEFCeFFMWUxpMnRZZjNSSG1oNHVCSXhaNGpwOUEwVQ?oc=5",
+    "date": "2026-06-29 02:03",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Ubtech Robotics Dual Product Push: From Factory Cruzr to Companion U1, but Stock Needs Hard Proof  Ad-hoc-news.de"
+  },
+  {
     "title": "AGIBOT produces 15,000th robot, marking a milestone in embodied AI deployment",
     "original_title": "AGIBOT produces 15,000th robot, marking a milestone in embodied AI deployment",
     "link": "https://www.therobotreport.com/agibot-produces-15000th-robot-marking-milestone-embodied-ai-deployment/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.18556v1 Announce Type: new \nAbstract: Embodied control increasingly requires models to follow compositional language instructions while reasoning over dynamic visual states. However, current vision-language-action policies and world-action models often couple linguistic knowledge with visual computation in a shared backbone or conditioning pathway, leading to modality competition and making knowledge extension dependent on backbone updates. In this paper, we introduce Key-Gram, a conditional-memory framework that separates language-derived world knowledge from visual-state reasoning for embodied control. At its core is a memory module that decomposes an instruction into task-specific key-grams, retrieves static linguistic priors through deterministic hashed lookup, and injects the retrieved entries into selected hidden layers through context-aware gating and lightweight convolutional fusion. This design allows the backbone to devote its main capacity to visual reasoning and action inference, while reusable instruction knowledge is stored in an extensible external memory. The logical memory table can be conveniently partitioned during training and, due to its $O(1)$ lookup pattern, efficiently placed on host memory during inference. Across RoboTwin2.0, LIBERO/LIBERO-Plus, and real-world dual-arm manipulation, Key-Gram consistently improves both $\\pi_{0}$ and $\\pi_{0.5}$ backbones, with average relative gains of $29.5\\%/9.9\\%$ on RoboTwin2.0, $35.8\\%/4.5\\%$ on LIBERO-Plus transfer without target-domain fine-tuning, and $15.4\\%/8.1\\%$ on real-world long-horizon tasks. These results demonstrate that externalized linguistic memory provides an effective and extensible mechanism for improving compositional grounding, transfer, and real-world manipulation."
-  },
-  {
-    "title": "Unified Walking, Running, and Recovery for Humanoids via State-Dependent Adversarial Motion Priors",
-    "original_title": "Unified Walking, Running, and Recovery for Humanoids via State-Dependent Adversarial Motion Priors",
-    "link": "https://arxiv.org/abs/2605.18611",
-    "date": "2026-05-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.18611v1 Announce Type: new \nAbstract: We propose a unified reinforcement learning framework that enables a single policy to perform walking, running, and fall recovery on the Unitree G1 humanoid robot, validated on physical hardware without any explicit mode-switching command at deployment. The framework extends Adversarial Motion Priors (AMP) by replacing the conventional global reference distribution with a state-dependent gate that routes each training transition to one of two discriminators: a dedicated recovery discriminator and a velocity-conditioned locomotion discriminator that jointly covers walking and running. The gate is defined by a single fixed threshold on projected gravity: the recovery discriminator is activated when body tilt exceeds approximately $37^\\circ$ from vertical ($|g_z+1|>0.6$); otherwise the locomotion discriminator is used, with the normalized commanded velocity serving as a condition that selects the appropriate reference trajectory between walk and run clips. Only three LAFAN1 reference clips are required to regularize the complete behavior set. At deployment, a single frozen ONNX policy executes at 50\\,Hz with no runtime mode logic; hardware experiments demonstrate successful recovery from both prone and supine falls and smooth walk-to-run transitions under the same controller."
   }
 ]
