@@ -1,5 +1,32 @@
 [
   {
+    "title": "Dürr implementing a CO2-efficient paint shop with cross-plant system integration",
+    "original_title": "Dürr implementing a CO2-efficient paint shop with cross-plant system integration",
+    "link": "https://roboticsandautomationnews.com/2026/06/30/durr-implementing-a-co2-efficient-paint-shop-with-cross-plant-system-integration/102937/",
+    "date": "2026-06-30 08:32",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Dürr is building a turnkey paint shop for Volkswagen Autoeuropa while simultaneously implementing a comprehensive software solution. The project combines state-of-the-art application and drying technologies designed to maximise CO2 reduction, along with an innovative SCADA integration that unifies three separate paint shops in a single system. In 2024, a total of 236,100 vehicles – an […]"
+  },
+  {
+    "title": "Hirebotics launches ‘no-code explosion-proof’ collaborative robot for industrial painting",
+    "original_title": "Hirebotics launches ‘no-code explosion-proof’ collaborative robot for industrial painting",
+    "link": "https://roboticsandautomationnews.com/2026/06/30/hirebotics-launches-no-code-explosion-proof-collaborative-robot-for-industrial-painting/102933/",
+    "date": "2026-06-30 08:21",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Hirebotics, a provider of collaborative robot solutions for metal fabrication, has announced the first explosion-proof cobot solution built using its no-code Beacon platform and the Fanuc CRX-10iA/L Paint hardware. Hirebotics’ Cobot Painter is available now, offering metal fabricators and manufacturers a practical, high-mix, low-volume alternative to manual spraying and complex automated lines. In the past, […]"
+  },
+  {
+    "title": "SVT Robotics surpasses four billion transactions on its Softbot automation platform",
+    "original_title": "SVT Robotics surpasses four billion transactions on its Softbot automation platform",
+    "link": "https://roboticsandautomationnews.com/2026/06/30/svt-robotics-surpasses-four-billion-transactions-on-its-softbot-automation-platform/102930/",
+    "date": "2026-06-30 08:13",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "SVT Robotics, a leader in interoperability software that provides the data foundation for enterprise and physical AI, has announced that its Softbot Platform has surpassed four billion transactions, underscoring the scale, resilience, and performance of the infrastructure it delivers worldwide. With transaction volumes now totaling 100 million to 130 million per week and accelerating, SVT […]"
+  },
+  {
     "title": "Agibot reaches new milestone as its 15,000th humanoid robot rolls off production line",
     "original_title": "Agibot reaches new milestone as its 15,000th humanoid robot rolls off production line",
     "link": "https://roboticsandautomationnews.com/2026/06/30/agibot-reaches-new-milestone-as-its-15000th-humanoid-robot-rolls-off-production-line/102922/",
@@ -376,6 +403,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.30474v1 Announce Type: new \nAbstract: Non-prehensile manipulation is often used as a preparatory step for robotic grasping, yet existing approaches typically require a predefined target object pose. In practice, however, objects admit multiple graspable configurations and the desired pose is not known in advance. We reformulate non-prehensile manipulation for grasping as optimizing an object centric graspability objective rather than reaching a specific pose. We construct a graspable set from synthesized grasps and define a graspability field that measures how suitable an object configuration is for successful grasp execution. The scalar measure provides a dense learning signal for reinforcement learning and determines when to terminate manipulation. This yields a closed-loop manipulation-to-grasp pipeline driven by a single policy. Experiments in simulation and on a real robot show that the policy reliably reconfigures objects into graspable states and transitions to grasping without external planners or manually specified stopping conditions. The predicted graspability distance correlates with real world grasp success, which indicates that the learned representation captures grasp feasibility of object configurations."
+  },
+  {
+    "title": "Learning from Mistakes: Rollout-Retrieval Lifelong Policy Learning for Autonomous Driving",
+    "original_title": "Learning from Mistakes: Rollout-Retrieval Lifelong Policy Learning for Autonomous Driving",
+    "link": "https://arxiv.org/abs/2606.30537",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.30537v1 Announce Type: new \nAbstract: Autonomous driving policies should be able to improve continually as deployment exposes them to increasingly diverse and long-tail traffic situations. However, most learning-based policies are trained or fine-tuned on expert demonstrations and then rely largely on generalization to handle challenging closed-loop scenarios, lacking an explicit mechanism to correct and retain the mistakes exposed in these scenarios. This paper studies autonomous driving policy improvement from a lifelong learning perspective: Can a pretrained policy improve continually by accumulating corrective knowledge derived from its own mistakes, while retaining previously acquired driving competence? To answer this question, we propose Rollout-Retrieval Lifelong Policy Learning (R$^2$LPL), a policy learning framework that retrieves corrective targets from recoverable policy-induced mistakes and retains the resulting knowledge through lifelong policy learning. R^2LPL addresses a key bottleneck in continual policy improvement: closed-loop mistakes reveal where the policy is weak, but do not directly specify what the policy should learn. By filtering recoverable mistake-related states and retrieving feasible corrective targets, R$^2$LPL turns sparse failure evidence into compact supervised knowledge for stable and sample-efficient policy improvement. We evaluate R$^2$LPL on large-scale closed-loop nuPlan benchmarks. With only a few rollout and continual-learning cycles, R$^2$LPL elevates a learning-based planner with moderate initial performance to state-of-the-art performance across the evaluated benchmarks, especially on the challenging and long-tail Test14-hard split. These results demonstrate the effectiveness of R$^2$LPL in converting recoverable closed-loop mistakes into corrective knowledge for sustained policy improvement."
+  },
+  {
+    "title": "Training Vision-Language-Action Models with Dense Embodied Chain-of-Thought Supervision",
+    "original_title": "Training Vision-Language-Action Models with Dense Embodied Chain-of-Thought Supervision",
+    "link": "https://arxiv.org/abs/2606.30552",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.30552v1 Announce Type: new \nAbstract: Cross-embodiment transfer in vision-language-action (VLA) models remains challenging because low-level state and action spaces differ fundamentally across robot platforms. We observe that the high-level cognitive process underlying manipulation, including scene perception, object identification, task planning, and sub-task decomposition, is largely shared across embodiments. Based on this observation, we present ZR-0, a 2.6 billion parameter end-to-end VLA model that uses dense Embodied Chain-of-Thought (ECoT) supervision to align cross-embodiment representations within the vision-language model (VLM). ZR-0 adopts a dual-stream architecture: a pre-trained VLM (System 2) generates structured ECoT reasoning during training, while a Diffusion Transformer-based action expert (System 1) produces continuous action chunks via flow matching. The two components are coupled through cross-attention, with an attention mask that restricts the action expert to input prompt features only, enabling ECoT generation to be entirely skipped at inference without any performance loss. ZR-0 is pre-trained on ProcCorpus-60M, a large-scale dataset comprising approximately 60 million frames (approximately 1,000 hours) from over 400K trajectories, with dense ECoT annotations covering 96.8% of all frames. We evaluate ZR-0 on three simulation benchmarks spanning single-arm (LIBERO), bimanual (RoboTwin 2.0), and humanoid (RoboCasa GR-1 Tabletop) embodiments, as well as real-world experiments on the xArm platform, demonstrating strong performance across all settings. Code and model checkpoints are available at https://github.com/RUCKBReasoning/ZR-0."
+  },
+  {
+    "title": "Sequential Planning via Anchored Robotic Keypoints",
+    "original_title": "Sequential Planning via Anchored Robotic Keypoints",
+    "link": "https://arxiv.org/abs/2606.30613",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.30613v1 Announce Type: new \nAbstract: We present Sequential Planning via Anchored Robotic Keypoints, SPARK, a training-free neurosymbolic manipulation system that reaches 43.7% on six LIBERO-PRO position \\& task cells, more than doubling CaP-Agent0 and Vision-Language-Action (VLA) baselines. CaP-Agent0, a multi-turn code-generation agent, achieves 18.2% by re-querying an LLM at every turn, but its restart-from-scratch solution proves costly against minor policy failures. Perception is the layer that fails most under position and task changes so SPARK spends its computation there. A single Gemini call composes the plan as a typed behavior tree (BT) of composable primitives, each already containing the low-level control (motion, grasping, depth geometry) a code-generation agent would otherwise regenerate on every trial. The rest of the budget goes to perception: a second Gemini call proposes three alternative text prompts per object, SAM3 evaluates each, and we keep the prompt$\\to$label pair with the most confident detection and a recovery loop then retries a failed primitive against freshly detected objects, with no new LLM call. The alternative prompts add +27.7 points on the spatial suite and +10.0 on the object suite, with the recovery loop adding +5.0 overall. SPARK runs the same primitives on three robot families (UR10e, Franka FR3, bimanual Franka) across nine unique tasks at twenty trials each, averaging 68%. Since the detector, planner, and controller modules sit behind the typed plan, they swap independently without training, and each primitive's checkable post-condition traces a failure to the corresponding module or a kinematic limit. Every trial logs a verified, labeled trajectory, so a training-free planner that already beats VLAs can supply the data those policies need without teleoperation. Project page: https://cwru-aism.github.io/spark-page/"
+  },
+  {
+    "title": "VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes",
+    "original_title": "VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes",
+    "link": "https://arxiv.org/abs/2606.30645",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.30645v1 Announce Type: new \nAbstract: Perception-based humanoid loco-manipulation requires connecting egocentric observations and task instructions to whole-body motion. Learning this mapping requires synchronized egocentric images, language commands, and robot-compatible kinematic trajectories, yet no existing data source provides this complete tuple at scale. We address this bottleneck by generating vision-language-kinematics (VLK) supervision synthetically in reconstructed scenes. Our pipeline leverages 3D Gaussian Splatting to reconstruct metric-scale indoor environments, synthesizes navigation and object-interaction trajectories using privileged scene information, and renders paired egocentric observations after the fact. We produce 48,000 paired trajectories with no human intervention and train a VLK policy that predicts short-horizon whole-body kinematic trajectories. A whole-body tracker converts these predictions into actions on the physical humanoid. We evaluate on the physical Unitree G1 performing navigation and single-object transport, demonstrating that synthesized interactions in reconstructed scenes provide effective supervision for sim-to-real perception-based humanoid loco-manipulation. Project Website: https://vision-language-kinematics.github.io/"
+  },
+  {
+    "title": "Reachability Guarantees for Cart-Pole Swing-Up and Stabilization",
+    "original_title": "Reachability Guarantees for Cart-Pole Swing-Up and Stabilization",
+    "link": "https://arxiv.org/abs/2606.28627",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.28627v1 Announce Type: cross \nAbstract: The cart-pole swing-up is a canonical benchmark for nonlinear control of underactuated systems, yet an end-to-end guarantee linking the global swing-up maneuver to the local stabilizer is seldom formalized. We present a reachability analysis of a switched energy-based/LQR controller that certifies convergence to the upright equilibrium from a compact set of initial conditions. The swing-up law is derived from an energy-error Lyapunov function; canceling the autonomous conservative term yields a strictly sign-definite Lyapunov derivative, and convergence follows from LaSalle's invariance principle. We also propose an augmented Lyapunov function to regulate the steady-state cart velocity to zero, for which we establish almost-global convergence. For the controller handoff, a switching region is designed to lie strictly within the LQR region of attraction, formally certifying the swing-up-to-stabilization transition. Numerical simulations corroborate the theoretical analysis."
+  },
+  {
+    "title": "Event-VLA: Action-Conditioned Event Fusion for Robust Vision-Language-Action Model",
+    "original_title": "Event-VLA: Action-Conditioned Event Fusion for Robust Vision-Language-Action Model",
+    "link": "https://arxiv.org/abs/2606.29384",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.29384v1 Announce Type: cross \nAbstract: Vision-Language-Action (VLA) models have become an important paradigm of embodied AI. However, existing VLA models typically assume well-lit and stable indoor settings, while real-world embodied manipulation may involve degraded RGB observations caused by illumination shifts, posing critical challenges for robust robotic manipulation. To address this gap, we propose \\textbf{Event-VLA}, an event-enhanced VLA framework for generalizable manipulation across varying illumination conditions. We formulate VLA-based manipulation under degraded visibility as a practical robustness problem for RGB-centric policies, and introduce event streams as an illumination-robust, motion-sensitive complementary observation to improve robustness across visibility levels. Specifically, unlike conventional multimodal fusion that directly merges event features into the global semantic token space, Event-VLA injects event information through an action-query routing pathway. It uses learnable action queries to extract task-relevant semantics from the VLA reasoning process, and selectively aggregates event tokens via gated cross-attention to construct event-aware action representations. This design preserves the pretrained RGB-language semantic priors while effectively leveraging event information for robust action prediction. Experiments in simulation and real-world deployment show that Event-VLA maintains strong manipulation performance under normal lighting and improves success rates under low-light degradation and near-dark real-world settings."
+  },
+  {
+    "title": "VISTA-DZ: Visual Semantic Trajectory Adaptation for Personalized Dilemma Zone Prediction",
+    "original_title": "VISTA-DZ: Visual Semantic Trajectory Adaptation for Personalized Dilemma Zone Prediction",
+    "link": "https://arxiv.org/abs/2606.29548",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.29548v1 Announce Type: cross \nAbstract: Driver decision making in the dilemma zone at signalized intersections is safety critical, as vehicles approaching a yellow signal must decide whether to stop or proceed within limited time and distance margins. Accurate prediction of both stop-go decisions and decision timing is important for adaptive signal control, advanced driver assistance systems, and human-centered intelligent transportation applications. However, dilemma zone behavior is strongly driver dependent. Similar approach trajectories may lead to different decisions across drivers because of differences in risk preference, braking habit, and decision threshold. Existing personalized models often rely on handcrafted scalar descriptors, which provide useful but limited summaries of individual behavior. This paper proposes VISTA-DZ, a semantic-profile-conditioned framework for personalized stop-go and decision-time prediction. Historical trajectories are converted into visual representations, interpreted by a vision-language model to generate behavioral profiles, and encoded as semantic embeddings to condition a dual-output prediction network. The final model combines a bidirectional GRU encoder, driver-conditioned multi-head cross-attention, and Feature-wise Linear Modulation for temporal evidence selection and feature adaptation. Experiments on the SDZ dataset and a newly collected FDZ dataset show that VISTA-DZ outperforms trajectory-only and handcrafted personalization baselines, achieving 93.26% in-domain simulation accuracy and 90.22% mean accuracy across 20 held-out simulation drivers. Cross-domain results further show feasible zero-shot simulation-to-real transfer and better real-world generalization when simulation data are combined with limited field data."
+  },
+  {
+    "title": "Generation of Uncertainty-Aware High-Level Spatial Concepts in Factorized 3D Scene Graphs via Graph Neural Networks",
+    "original_title": "Generation of Uncertainty-Aware High-Level Spatial Concepts in Factorized 3D Scene Graphs via Graph Neural Networks",
+    "link": "https://arxiv.org/abs/2409.11972",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2409.11972v4 Announce Type: replace \nAbstract: Enabling robots to autonomously discover high-level spatial concepts (e.g., rooms and walls) from primitive geometric observations (e.g., planar surfaces) within 3D Scene Graphs is essential for robust indoor navigation and mapping. These graphs provide a hierarchical metric-semantic representation in which such concepts are organized. To further enhance graph-SLAM performance, Factorized 3D Scene Graphs incorporate these concepts as optimization factors that constrain relative geometry and enforce global consistency. However, both stages of this process remain largely manual: concepts are typically derived using hand-crafted, concept-specific heuristics, while factors and their covariances are likewise manually designed. This reliance on manual specification limits generalization across diverse environments and scalability to new concept classes. This paper presents a novel learning-based method that infers spatial concepts online from observed vertical planes and introduces them as optimizable factors within a SLAM backend, eliminating the need to handcraft concept generation, factor design, and covariance specification. We evaluate our approach in simulated environments with complex layouts, improving room detection by 20.7% and trajectory estimation by 19.2%. Validated on real construction sites, room detection improves by 5.3% and map matching accuracy by 3.8%."
   },
   {
     "title": "Insights behind Kinisi’s acquisition by Bear Robotics",
@@ -17899,104 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.21330v1 Announce Type: new \nAbstract: In-hand object manipulation is a fundamental yet challenging capability for dexterous robots. Despite significant progress in dexterous manipulation, existing approaches rely heavily on vision or tactile sensing to track object states, while joint sensing -- the most readily available modality on any robotic hand -- remains largely overlooked, particularly for tendon-driven hands. In this paper, we study how far joint sensing alone can go by asking: (i) whether motor encoders or direct joint sensing provides better proprioceptive feedback, (ii) how to extract environment information from joint measurements, and (iii) whether joint-only control can achieve competitive real-world performance without external perception. We present the Proprioceptive Transformer (PT), an exteroceptive-free approach for continuous cube rotation on a tendon-driven dexterous hand that uses only joint sensing feedback. A teacher policy is first trained via reinforcement learning with privileged object information, then distilled into PT, which operates solely on joint position and velocity histories. The Transformer architecture effectively extracts implicit object state information from temporal patterns in joint sensor readings. Experiments on the real ORCA hand show that our approach achieves 3.1x higher rotation speed than baselines. We also demonstrate that our PT achieves a 23.4% lower RMSE for cube position estimation than the MLP baseline, indicating superior extraction of exteroceptive information from proprioceptive sources."
-  },
-  {
-    "title": "From swept contact to pose: Probe-aware registration via complementary-shape docking",
-    "original_title": "From swept contact to pose: Probe-aware registration via complementary-shape docking",
-    "link": "https://arxiv.org/abs/2605.21398",
-    "date": "2026-05-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.21398v1 Announce Type: new \nAbstract: Accurate registration between a prior model and the real scene is essential for high-precision robotic manipulation, yet optical methods suffer from long calibration chains, line-of-sight constraints, and fabrication errors. We propose a calibration-free alternative that reformulates contact registration as complementary-shape docking between the object and the probe's swept volume, explicitly accounting for probe geometry and leveraging both contact and non-contact evidence. Our solver integrates a global-to-local search via 3D FFT correlation over low-discrepancy SO(3) samples, then followed by continuous SE(3) refinement using Lie-algebra updates and analytic contact sensitivities. This pipeline yields efficient exploration and metric-grade convergence without fragile point correspondences. Simulation across free-form meshes achieved sub-0.04 mm and sub-0.4{\\deg} accuracy and robustness to pose noise and contact loss. On a tooth-preparation robot, our method attained 0.42 mm and 3.75{\\deg}, outperforming an optical tracker registration while requiring no external sensors. These results demonstrate a practical and precise registration strategy for surgical and industrial robots."
-  },
-  {
-    "title": "PointACT: Vision-Language-Action Models with Multi-Scale Point-Action Interaction",
-    "original_title": "PointACT: Vision-Language-Action Models with Multi-Scale Point-Action Interaction",
-    "link": "https://arxiv.org/abs/2605.21414",
-    "date": "2026-05-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.21414v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have shown strong potential for general-purpose robotic manipulation by leveraging large pretrained vision-language backbones. However, most existing VLAs rely primarily on 2D visual representations, which limit their ability to reason about fine-grained geometry and spatial grounding - capabilities that are essential for precise and robust manipulation in 3D environments. In this paper, we propose PointACT, a dual-system 3D-aware VLA policy that integrates hierarchical 3D point cloud representations directly into the action decoding process. PointACT employs a multi-scale point-action interaction mechanism with efficient bottleneck window self-attention, enabling evolving action tokens to densely attend to both local geometric detail and global scene structure. We evaluate PointACT on the LIBERO and RLBench benchmarks and systematically compare it against monolithic and dual-system VLA baselines, including variants augmented with point cloud inputs. PointACT achieves consistent improvements across both benchmarks, increasing success rates by 10% on the challenging RLBench-10Tasks suite over state-of-the-art pretrained VLAs, with even larger gains when the vision-language backbone is frozen and the action expert is trained from scratch. Extensive ablation studies demonstrate that tightly coupling hierarchical 3D geometry with pretrained 2D semantic representations is critical for robust and spatially grounded robot control. Our results also highlight the promise of pretrained 3D representations for 3D-aware VLA policies."
-  },
-  {
-    "title": "roto 2.0: The Robot Tactile Olympiad",
-    "original_title": "roto 2.0: The Robot Tactile Olympiad",
-    "link": "https://arxiv.org/abs/2605.21429",
-    "date": "2026-05-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.21429v1 Announce Type: new \nAbstract: Tactile-based reinforcement learning (RL) is currently hindered by fragmented research and a focus on over-saturated orientation tasks. We introduce v2 of the Robot Tactile Olympiad (\\texttt{roto 2.0}), a GPU-parallelised benchmark designed to standardise tactile-based RL across four distinct robotic morphologies (16-DOF to 24-DOF). Unlike prior benchmarks, roto focuses on end-to-end \"blind\" manipulation, utilising only proprioception and tactile sensing without state information or distillation. We demonstrate a significant performance leap, with our blind agents achieving 13 Baoding ball rotations in 10 seconds, an order of magnitude faster than current state-of-the-art speeds. By open-sourcing our environments and robustly tuned baselines, we reduce the barrier to entry and enable researchers to prioritise fundamental algorithmic challenges over tedious RL tuning. Website: https://elle-miller.github.io/roto/"
-  },
-  {
-    "title": "HITL-D: Human In The Loop Diffusion Assisted Shared Control",
-    "original_title": "HITL-D: Human In The Loop Diffusion Assisted Shared Control",
-    "link": "https://arxiv.org/abs/2605.21460",
-    "date": "2026-05-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.21460v1 Announce Type: new \nAbstract: Autonomous manipulation systems have achieved remarkable capabilities, yet the integration of human expertise with diffusion-based policies in shared control remains relatively unexplored. In this paper, we propose Human-In-The-Loop Diffusion (HITL-D), a shared control framework that enhances user performance in multi-step, insertion, and fine manipulation tasks. HITL-D leverages a novel combination of diffusion-based policies and human control to provide autonomous end effector orientation updates conditioned on a scene point cloud and the Cartesian position of the end effector. This approach reduces the number of joystick control axes required, thereby lowering mental workload. In a multi-task user study with 12 participants, HITL-D reduced average task completion times by 40%, decreased perceived workload by 37%, and improved Likert-scale ratings for independence, intuitiveness, and confidence compared to traditional teleoperation methods. These results demonstrate that HITL-D effectively integrates human expertise with autonomous assistance, improving both objective and subjective aspects of teleoperation."
-  },
-  {
-    "title": "Multi-Agent Reinforcement Learning for Safe Autonomous Driving Under Pedestrian Behavioral Uncertainty",
-    "original_title": "Multi-Agent Reinforcement Learning for Safe Autonomous Driving Under Pedestrian Behavioral Uncertainty",
-    "link": "https://arxiv.org/abs/2605.20255",
-    "date": "2026-05-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.20255v1 Announce Type: cross \nAbstract: Simulation-based testing of self-driving cars (SDCs) typically relies on scripted or simplified pedestrian models that do not capture the heterogeneity and uncertainty of real human crossing behavior. This limits the realism of safety assessments, especially in scenarios involving jaywalking, which is governed by latent personality traits that the vehicle cannot observe. We hypothesize that jointly training pedestrians and the SDC with multi-agent reinforcement learning (MARL) produces more realistic interaction scenarios than training the SDC against fixed pedestrian policies, and that the resulting behavior gap between predictable and unpredictable crossings can be measured directly from trajectories. This paper describes a MARL environment in which an SDC and 12 pedestrians are co-trained using Multi-Agent Proximal Policy Optimization (MAPPO). Pedestrian locomotion follows scripted Dijkstra pathfinding, while an RL policy controls high-level go/wait decisions. Jaywalking probability depends on a per-pedestrian personality trait sampled at episode start and hidden from the SDC. In 500-episode evaluations, the co-trained SDC reached 78% of goals with a 14% collision rate, compared to 35% goals and 33% collisions for the best rule-based baseline. A speed differential metric shows that the SDC traveled 2.65 m/s faster near jaywalkers than near crosswalk users at close range (0-3 m), indicating that jaywalking encounters were not anticipated. Jaywalking accounted for 13% of crossing events but was associated with 62% of collisions. Co-training with MARL pedestrians reduced collisions by 30% relative to single-agent RL, as pedestrians learned to wait when the SDC approached at speed."
-  },
-  {
-    "title": "Affordance-R1: Reinforcement Learning for Generalizable Affordance Reasoning in Multimodal Large Language Model",
-    "original_title": "Affordance-R1: Reinforcement Learning for Generalizable Affordance Reasoning in Multimodal Large Language Model",
-    "link": "https://arxiv.org/abs/2508.06206",
-    "date": "2026-05-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2508.06206v5 Announce Type: replace \nAbstract: Affordance grounding focuses on predicting the specific regions of objects that are associated with the actions to be performed by robots. It plays a vital role in the fields of human-robot interaction, human-object interaction, embodied manipulation, and embodied perception. Existing models often neglect the affordance shared among different objects because they lack the Chain-of-Thought(CoT) reasoning abilities, limiting their out-of-domain (OOD) generalization and explicit reasoning capabilities. To address these challenges, we propose Affordance-R1, the first unified affordance grounding framework that integrates cognitive CoT guided Group Relative Policy Optimization (GRPO) within a reinforcement learning paradigm. Specifically, we designed a sophisticated affordance function, which contains format, perception, and cognition rewards to effectively guide optimization directions. Furthermore, we constructed a high-quality affordance-centric reasoning dataset, ReasonAff, to support training. Trained exclusively via reinforcement learning with GRPO and without explicit reasoning data, Affordance-R1 achieves robust zero-shot generalization and exhibits emergent test-time reasoning capabilities. Comprehensive experiments demonstrate that our model outperforms well-established methods and exhibits open-world generalization. To the best of our knowledge, Affordance-R1 is the first to integrate GRPO-based RL with reasoning into affordance reasoning. The code of our method and our dataset is released on https://github.com/hq-King/Affordance-R1."
-  },
-  {
-    "title": "Multimodal Fusion for Sim2real Transfer in Visual Reinforcement Learning",
-    "original_title": "Multimodal Fusion for Sim2real Transfer in Visual Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2507.09180",
-    "date": "2026-05-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2507.09180v4 Announce Type: replace-cross \nAbstract: Depth information is robust to scene appearance variations and inherently carries 3D spatial details. Thus, a visual backbone based on the vision transformer is proposed to fuse RGB and depth modalities for enhancing generalization in this paper. Different modalities are first processed by separate CNN stems, and the combined convolutional features are delivered to the scalable vision transformer to obtain visual representations. Moreover, a contrastive learning scheme is designed with masked and unmasked tokens to enhance the sample efficiency and generalization performance. A curriculum-based domain randomization scheme is used to flexibly stabilize the training process. Finally, simulation results demonstrate that our fusion scheme outperforms the other baselines. The feasibility of our model is validated to perform real-world manipulation tasks via zero-shot transfer."
-  },
-  {
-    "title": "WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems",
-    "original_title": "WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems",
-    "link": "https://arxiv.org/abs/2603.14392",
-    "date": "2026-05-21 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2603.14392v2 Announce Type: replace-cross \nAbstract: Trajectory world models play a crucial role in robotic dynamics learning, planning, and control. While recent works have explored trajectory world models for diverse robotic systems, they struggle to scale to a large number of distinct system dynamics and overlook domain knowledge of physical structures. To address these limitations, we introduce WestWorld, a knoWledge-Encoded Scalable Trajectory World model for diverse robotic systems. To tackle the scalability challenge, we propose a novel system-aware Mixture-of-Experts (Sys-MoE) that dynamically combines and routes specialized experts for different robotic systems via a learnable system embedding. To further enhance zero-shot generalization, we incorporate domain knowledge of robot physical structures by introducing a structural embedding that aligns trajectory representations with morphological information. After pretraining on 89 complex environments spanning diverse morphologies across both simulation and real-world settings, WestWorld achieves significant improvements over competitive baselines in zero- and few-shot trajectory prediction. Additionally, it shows strong scalability across a wide range of robotic environments and significantly improves performance on downstream model-based control for different robots. Finally, we deploy our model on a real-world Unitree Go1, where it demonstrates stable locomotion performance. The code is available at https://github.com/511205787/WestWorld."
-  },
-  {
-    "title": "XPeng’s Humanoid Robot Steals the Show; Shares Jump—Valuation Upside Ahead - TMGM",
-    "original_title": "XPeng’s Humanoid Robot Steals the Show; Shares Jump—Valuation Upside Ahead - TMGM",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPa0oza0Q4VnpEZXhOaGs1d0VqUk1OVGtFU0NhZHI2WmwwQmZGa0pCTnVGQ2VTeHRoeXpMVG4xMndteXFMV3N2b1JjUE9sOHBHU1dMVC1lN2xMSkR6a1czbkJDelFjVENSb1RQVms4Q3NVdFBvcVBfdW44V05tNzAxS1RRTDg4aWpyMFd4bG55VDN5SF9tdXhEcg?oc=5",
-    "date": "2026-05-21 02:03",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "XPeng’s Humanoid Robot Steals the Show; Shares Jump—Valuation Upside Ahead  TMGM"
-  },
-  {
-    "title": "Inside Verobotics’ edge AI robotics deployment at NVIDIA’s Israel campus",
-    "original_title": "Inside Verobotics’ edge AI robotics deployment at NVIDIA’s Israel campus",
-    "link": "https://www.therobotreport.com/inside-verobotics-edge-ai-robotics-deployment-at-nvidias-israel-campus/",
-    "date": "2026-05-20 20:39",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Verobotics said its robot turns vertical surfaces from risky, one-off access zones into repeatable, data-rich robotic workspaces.\nThe post Inside Verobotics’ edge AI robotics deployment at NVIDIA’s Israel campus appeared first on The Robot Report."
-  },
-  {
-    "title": "What AI taxis and robots can learn from bees",
-    "original_title": "What AI taxis and robots can learn from bees",
-    "link": "https://techxplore.com/news/2026-05-ai-taxis-robots-bees.html",
-    "date": "2026-05-20 17:40",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "Even advanced technology can struggle when the real world becomes unpredictable. In April 2026, a Waymo robotaxi in San Antonio, Texas, drove into a flooded lane during severe weather, prompting the company to recall about 3,800 vehicles for a software fix."
   }
 ]
