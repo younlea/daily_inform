@@ -225,6 +225,78 @@
     "summary": "arXiv:2606.29936v1 Announce Type: new \nAbstract: Open-environment tabletop robotic manipulation requires systems to possess semantic understanding, precise geometric pose estimation, and high-frequency action generation. While end-to-end vision-language-action (VLA) models excel at semantic generalization, they often lack explicit geometric constraints for fine-grained tasks and require costly training. To bridge the gap between high-level semantics and low-level physical execution, we propose OpenSPM, an open environment spatial persistent memory framework consisting of spatial pose memory and flow-matching action generation model. OpenSPM first leverages semantically conditioned 3D perception and Kalman filtering to track continuous 6D poses. It then extracts key spatial poses from human demonstrations, keeping them as transferable, object-centric spatial persistent memory entries. During inference, OpenSPM retrieves relevant memory entries in terms of natural language instructions, transfers the spatial poses to new scenes using SE(3) transformations, and generates high-frequency action chunks via a lightweight conditional flow-matching model. Combined with real-time proprioceptive state feedback and terminal residual correction, the system effectively suppresses trajectory error accumulation. Evaluated on ten LIBERO-GOAL tasks, OpenSPM achieves an 85.6% success rate and an equivalent control frequency of 1033.3 Hz, while requiring minimal inference AI computing power. Extensive ablations illustrate that structured spatial persistent memory and closed-loop residual correction play a crucial role in reliable, high-frequency robotic manipulation."
   },
   {
+    "title": "WARP: Whole-Body Retargeting for Learning from Offline Human Demonstrations",
+    "original_title": "WARP: Whole-Body Retargeting for Learning from Offline Human Demonstrations",
+    "link": "https://arxiv.org/abs/2606.29940",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.29940v1 Announce Type: new \nAbstract: Direct transfer from human demonstration to learnable robot action is a crucial step towards scalable whole-body mobile manipulation. While human data scales better than mobile teleoperation, it requires overcoming significant embodiment gaps. Existing retargeting methods yield imprecise or inconsistent solutions, causing action multi-modality that prevents supervised policies from reliably converging. We present Whole-body-Aware Retargeting from human Pose (WARP), an offline pipeline that explicitly models embodiment differences to extract precise, unique whole-body actions. WARP leverages a closed-form Shoulder-Elbow-Wrist (SEW) geometric solver for exact end-effector tracking while preserving whole-body structural intent. Paired with lazy mobile-base control, it extracts accurate, consistent robot trajectories. Evaluations show WARP provides highly reliable data for open-loop real-world replay. To our knowledge, WARP is the first framework to achieve zero-shot whole-body mobile manipulation directly from offline human demonstrations, eliminating the need for human-in-the-loop teleoperation action data. More details on https://warp-retarget.github.io/"
+  },
+  {
+    "title": "Seeing Touch from Motion: A Unified Modality-Aware Visuo-Tactile Policy with Tactile Motion Correlation",
+    "original_title": "Seeing Touch from Motion: A Unified Modality-Aware Visuo-Tactile Policy with Tactile Motion Correlation",
+    "link": "https://arxiv.org/abs/2606.29941",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.29941v1 Announce Type: new \nAbstract: Visuo-Tactile policies leveraging optical tactile sensors have shown great promise in contact-rich manipulation. These sensors achieve high spatial resolution and multi-dimensional force sensing by utilizing an internal camera to monitor the deformation of their elastic gel surface, thereby indirectly inferring tactile cues. Despite their advantages, extracting fine-grained contact states necessary for contact-rich manipulation remains an open challenge. Existing methods typically use either raw images or cumulative motion fields to represent tactile cues. However, both are prone to perception ambiguity. Raw tactile images mainly capture appearance changes, while cumulative motion fields only reflect the aggregate gel deformation. Consequently, distinct fine-grained contact states can exhibit highly similar patterns, making it difficult to explicitly distinguish subtle contact variations. To address this issue, we explore the dynamic priors of tactile motion and discover that the correlation between transient and cumulative motion can explicitly distinguish fine-grained contact states. Based on this insight, we propose a motion-aware tactile representation to facilitate contact-rich manipulation. Beyond tactile representation, effective fusion of tactile and visual modalities is also critical. Most existing fusion methods either directly concatenate features from each modality or train modality-specific networks separately and fuse their outputs. However, these strategies struggle to simultaneously model cross-modal interactions and preserve modality-specific characteristics. In this work, we take advantage of the Mixture-of-Transformers architecture and propose a unified modality-aware visuo-tactile policy that captures cross-modal complementarity while maintaining modality-specific properties."
+  },
+  {
+    "title": "Heterogeneous Tactile Transformer",
+    "original_title": "Heterogeneous Tactile Transformer",
+    "link": "https://arxiv.org/abs/2606.29948",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.29948v1 Announce Type: new \nAbstract: Tactile sensors are inherently heterogeneous: a model trained on one sensor cannot be directly used on another, which limits learning contact-rich manipulation policies from diverse tactile data at scale. To bridge this gap, we propose the Heterogeneous Tactile Transformer (HTT), a framework that learns shared tactile representations across heterogeneous sensors. HTT consists of sensor-specific encoders and a shared transformer trunk, and is pretrained with per-modality masked reconstruction together with cross-modal alignment between paired sensors. Pretraining uses our novel Heterogeneous Paired Tactile (HPT) dataset, containing 1.6M synchronized paired frames across four vision- and array-based tactile sensors. Across distinct tactile perception and real-world manipulation tasks, HTT is shown to learn transferable representations that adapt to new tasks and previously unseen sensors. Dataset, code, and model checkpoints will be released upon publication at https://jxbi1010.github.io/htt-gh-page/."
+  },
+  {
+    "title": "TacEvo: Self-Evolving Architecture Discovery for Robotic Tactile Perception via LLM-Driven Quality-Diversity Search",
+    "original_title": "TacEvo: Self-Evolving Architecture Discovery for Robotic Tactile Perception via LLM-Driven Quality-Diversity Search",
+    "link": "https://arxiv.org/abs/2606.30109",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.30109v1 Announce Type: new \nAbstract: Vision-based tactile sensing converts contact-induced surface deformation into images, enabling robots to infer contact forces and fine surface textures that are not accessible through conventional vision alone. However, tactile images are sensor- and physics-specific, so effective architectures often require expert intuition and extensive manual iteration. Existing neural architecture search (NAS) pipelines can reduce this burden, but they are often computationally expensive and restricted to hand-designed search spaces, which limits architectural novelty and diversity. We introduce TacEvo, a self-evolving architecture discovery framework that improves network designs from downstream feedback. TacEvo uses an LLM to generate code-level mutations and crossovers, and a MAP-Elites quality-diversity loop that preserves diverse elite architectures while preferentially reusing prompts that consistently yield improvements. Exploration is guided by two behavioural descriptors, Architectural Diversity and Efficiency Ratio, which encourage coverage across structural variations and compute-size trade-offs. On ViTacTip force regression and grating classification, TacEvo achieves high autonomous generation reliability (96.0%/94.5% trainable) and improves best validation fitness over 20 generations by 56.1%/96.1%. In a 20-seed post-search high-fidelity evaluation, TacEvo matches the expert baseline on force prediction and outperforms it on fine-grained grating classification. These results suggest that LLM-driven self-evolving search constitutes a practical paradigm for AI-assisted scientific discovery in specialised robotic sensing."
+  },
+  {
+    "title": "Automating the Design of Embodied AgentArchitectures",
+    "original_title": "Automating the Design of Embodied AgentArchitectures",
+    "link": "https://arxiv.org/abs/2606.30111",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.30111v1 Announce Type: new \nAbstract: Embodied agents are typically built as hand-designed compositions of perception, memory, planning, and action modules. This modularity exposes a large architectural design space, but current systems still rely on researcher intuition to choose where information is stored, how observations are processed, and how model calls are connected. Agent Architecture Search (AAS) automates such design for text-domain agents, but has not been systematically evaluated on perceptual embodied agents through simulator rollouts. We study this transfer. We introduce AgentCanvas, a typed-graph runtime that hosts embodied executors as editable node-and-wire programs with simulator-aware execution and episode-level logs, and KDLoop, a coding-agent search procedure that cycles through proposal, critique, experiment, and distillation, with triggered reflection after stalls. We evaluate three AAS variants across four embodied executors spanning vision-language navigation, embodied question answering, and language-conditioned manipulation. The resulting 3x4 matrix shows that architecture-level search can produce deployable and directional success-rate gains on embodied tasks, while one apparent high-scoring candidate is rejected as leak-bearing. At the same time, the experiments expose constraints that are muted in text-domain AAS: optimization signals can be masked by rollout noise, search can become trapped in local edit basins, and episode-level credit assignment only partially emerges even when detailed logs are available. These results characterize both the promise and the current limits of automated architecture search for embodied agents."
+  },
+  {
+    "title": "SA-VLA: State-aware tokenizer for improving Vision-Language-Action Models' performance",
+    "original_title": "SA-VLA: State-aware tokenizer for improving Vision-Language-Action Models' performance",
+    "link": "https://arxiv.org/abs/2606.30113",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.30113v1 Announce Type: new \nAbstract: Discrete action tokenization provides a compact interface for autoregressive VLA policies, but accurately recovering continuous robot actions from discrete codes remains challenging. Existing tokenizers typically map each discrete code to a fixed continuous action prototype, ignoring the robot's current proprioceptive state. This limitation is particularly pronounced in manipulation, where the same action token may require different continuous controls under different joint configurations, object poses, and contact conditions. We therefore propose SA-VLA, a state-aware action tokenizer that conditions action decoding on robot state. We study two state-injection mechanisms for VQ-based action tokenization: cross-attention between state and action features, and a lightweight state adapter that predicts action-wise modulation factors for state-conditioned action modulation and reconstruction. The adapter formulation expands the effective support of a finite codebook by allowing each discrete token to represent a family of state-dependent continuous actions, while preserving the efficiency and compatibility of discrete action modeling. Integrated into an LLM-based VLA policy, SA-VLA supports both autoregressive and parallel action-token decoding with minimal changes to the model interface. On 12 RoboTwin manipulation tasks, SA-VLA improves the average success rate from 0.29 to 0.56 over the strongest tokenizer baseline. In zero-shot sim-to-real experiments on three real-world tasks, it further improves average success from 0.15 to 0.33 over the strongest tokenizer baseline. These results demonstrate that state-conditioned action decoding is a simple and effective mechanism for reducing the compression gap in discrete VLA policies."
+  },
+  {
+    "title": "Self-supervised Geometry Reasoning for LiDAR Simultaneous Localization and Mapping",
+    "original_title": "Self-supervised Geometry Reasoning for LiDAR Simultaneous Localization and Mapping",
+    "link": "https://arxiv.org/abs/2606.30166",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.30166v1 Announce Type: new \nAbstract: LiDAR simultaneous localization and mapping (SLAM) relies on local geometric quantities such as covariances, correspondences, and surface structures. However, most existing pipelines rely on hand-crafted estimates of local geometry and use them as fixed inputs to LiDAR SLAM, which can make the estimated local geometry noisy and unstable in sparse regions of a point cloud or when using low-resolution LiDAR. To address this issue, this paper introduces a self-supervised framework that learns an explicit symbolic representation of local geometry and uses it to improve LiDAR SLAM recursively. Specifically, each point is represented as a Gaussian distribution, allowing local geometry to be described by a covariance. Without dense geometry labels or ground-truth poses, the framework learns by maximizing the likelihood of local geometry, with self-supervision derived from consistency relations over symbolic geometric representations, including predicted covariances, correspondences, and trajectory from SLAM. The learned geometry is then fed back into LiDAR SLAM, forming a reciprocal loop in which improved geometry enhances localization and mapping, and improved localization provides cleaner supervision for subsequent geometry reasoning. This framework is backend-agnostic and can be plugged into existing LiDAR SLAM pipelines without architectural changes. Experiments on KITTI under varying LiDAR resolutions show that the proposed method improves both odometry and global registration."
+  },
+  {
+    "title": "KYON: Semi-Modular Wheel-Legged Quadruped With Agile Bimanual Capability",
+    "original_title": "KYON: Semi-Modular Wheel-Legged Quadruped With Agile Bimanual Capability",
+    "link": "https://arxiv.org/abs/2606.30243",
+    "date": "2026-06-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.30243v1 Announce Type: new \nAbstract: This paper presents KYON, a hybrid wheel-legged quadruped robot equipped with a bimanual upper body for loco-manipulation tasks. The platform features a semi-modular design with a reconfigurable lower legs, enabling both wheeled and legged locomotion depending on the environment. A design approach that places actuators in the base and uses transmission mechanisms reduces distal inertia, improving agility and dynamic performance. The robot integrates a whole-body control framework together with a reinforcement learning based policy to handle nonlinear dynamics and enhance robustness to disturbances for the execution of locomotion and manipulation tasks, independently. Experimental results demonstrate effective dynamic locomotion and bimanual manipulation, validating the platform's capability to operate in complex and unstructured scenarios."
+  },
+  {
     "title": "Insights behind Kinisi’s acquisition by Bear Robotics",
     "original_title": "Insights behind Kinisi’s acquisition by Bear Robotics",
     "link": "https://www.therobotreport.com/insights-behind-kinisi-acquisition-by-bear-robotics/",
@@ -17926,77 +17998,5 @@
     "source": "Tech Xplore",
     "category": "humanoid",
     "summary": "Imagine navigating a city street during rush hour—cars and bikes zipping by, pedestrians hustling down a crowded sidewalk, your eyes adjusting to the shop windows' glare in one moment and a dark underpass the next. Our brain, of course, does all this without us being aware of the complex processes going on in that moment. In real time, our eyes and brain create a three-dimensional, accurate representation of a dynamic scene, constantly calculating distances between objects with myriad shapes, sizes, and surfaces."
-  },
-  {
-    "title": "Boston Dynamics trains Atlas humanoid robot to pick up and place washing machine",
-    "original_title": "Boston Dynamics trains Atlas humanoid robot to pick up and place washing machine",
-    "link": "https://roboticsandautomationnews.com/2026/05/20/boston-dynamics-trains-atlas-humanoid-robot-to-pick-up-and-place-washing-machine/101759/",
-    "date": "2026-05-20 09:00",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "Boston Dynamics has released new behind-the-scenes footage showing its latest electric humanoid robot, Atlas, performing heavy lifting and manipulation tasks that the company says are designed to prepare the system for real industrial work. (See video below.) The demonstration centers on Atlas lifting and carrying a mini-fridge weighing roughly 50 pounds, although Boston Dynamics says […]"
-  },
-  {
-    "title": "Humanoid Robotics: The Blue-Collar Reality - UK Investor Magazine",
-    "original_title": "Humanoid Robotics: The Blue-Collar Reality - UK Investor Magazine",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRHRqal9SODNzZ0lWZXZVbEcxQ2Jsc1pWLUdsRzI0RjduaDRUeXJEQjE2UnlGdzJnU2JDdnNWZ1haTHBZdGp3emNBQUZhSUxwalhERXFZbzdqNFlEeERFem44dUZ3bU9jT3FScWUwNkJvaWJ2Q2VXa2RJbERTMXVfeQ?oc=5",
-    "date": "2026-05-20 08:55",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Humanoid Robotics: The Blue-Collar Reality  UK Investor Magazine"
-  },
-  {
-    "title": "Full Stack Observability: The ROI Case Boards Need Before Approving Security Budgets",
-    "original_title": "Full Stack Observability: The ROI Case Boards Need Before Approving Security Budgets",
-    "link": "https://roboticsandautomationnews.com/2026/05/20/full-stack-observability-the-roi-case-boards-need-before-approving-security-budgets/101756/",
-    "date": "2026-05-20 08:20",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Budget conversations inside enterprise security teams have changed. Technical merit alone rarely moves a board toward approval anymore. CISOs and IT leaders are now expected to justify every investment in operational terms: reduced downtime, faster incident response, lower business disruption, and measurable efficiency gains. That shift has pushed Full Stack Observability into a different category […]"
-  },
-  {
-    "title": "Best EcoFlow Power Station for Home Backup in 2026",
-    "original_title": "Best EcoFlow Power Station for Home Backup in 2026",
-    "link": "https://roboticsandautomationnews.com/2026/05/20/best-ecoflow-power-station-for-home-backup-in-2026/101751/",
-    "date": "2026-05-20 08:05",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Manufacturer runtime specs often use low wattage loads that do not reflect how most homes use backup power during an outage. A real home backup setup usually needs to support a refrigerator, WiFi router, lights, phone charging, and sometimes medical equipment at the same time. To make the comparison more useful, we modeled these five […]"
-  },
-  {
-    "title": "OLO Robotics completes commercial launch with three international manufacturing and distribution partnerships",
-    "original_title": "OLO Robotics completes commercial launch with three international manufacturing and distribution partnerships",
-    "link": "https://roboticsandautomationnews.com/2026/05/20/olo-robotics-completes-commercial-launch-with-three-international-manufacturing-and-distribution-partnerships/101745/",
-    "date": "2026-05-20 07:48",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "OLO Robotics has completed its commercial launch, announcing new manufacturing and distribution partnerships with Deep Robotics, inMotion Robotic, and Fiction Lab as robot companies move to make their hardware accessible to mainstream software teams, not only specialist roboticists. By integrating OLO’s ROS2-native platform with quadrupeds and mobile robots, these partners are positioning robots as part […]"
-  },
-  {
-    "title": "Digi International launches new serial device servers for modern IP networks",
-    "original_title": "Digi International launches new serial device servers for modern IP networks",
-    "link": "https://roboticsandautomationnews.com/2026/05/20/digi-international-launches-new-serial-device-servers-for-modern-ip-networks/101742/",
-    "date": "2026-05-20 07:29",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Digi International, a provider of IoT connectivity products and secure connectivity solutions, has launched Digi Connect EZ 4 TS and Digi Connect EZ 8 TS, next-generation serial device servers designed to help organizations modernize legacy serial infrastructure with enhanced security and centralized management – without requiring enclosure or wiring changes.  The EZ TS family builds […]"
-  },
-  {
-    "title": "Parallel Systems raises $100 million to bring autonomous freight trains into mainstream logistics",
-    "original_title": "Parallel Systems raises $100 million to bring autonomous freight trains into mainstream logistics",
-    "link": "https://roboticsandautomationnews.com/2026/05/20/parallel-systems-raises-100-million-to-bring-autonomous-freight-trains-into-mainstream-logistics/101739/",
-    "date": "2026-05-20 05:59",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Parallel Systems is developing what it describes as the world’s first autonomous freight train system, as the broader logistics industry increasingly shifts toward automated and autonomous transportation technologies. The Los Angeles-based company has raised approximately $100 million to date and is currently conducting commercial testing of its autonomous rail vehicles in Georgia in partnership with […]"
-  },
-  {
-    "title": "KG-ASG: Collision-Knowledge-Guided Closed-Loop Adversarial Scenario Generation With Primary-Support Attribution",
-    "original_title": "KG-ASG: Collision-Knowledge-Guided Closed-Loop Adversarial Scenario Generation With Primary-Support Attribution",
-    "link": "https://arxiv.org/abs/2605.18895",
-    "date": "2026-05-20 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.18895v1 Announce Type: new \nAbstract: Safety validation of autonomous driving systems requires high-risk scenario coverage, clear collision semantics, executable trajectories, and attributable multi-vehicle interactions. Existing safety-critical scenario generation methods often rely on low-level trajectory perturbations, collision-proxy optimization, or single-adversary search, which may produce adversarial samples with ambiguous collision causes or uncontrolled multi-vehicle collisions. This paper proposes KG-ASG, a collision-knowledge-guided closed-loop adversarial scenario generation framework with primary-support attribution. KG-ASG constructs a structured collision knowledge base and trains a lightweight Collision Expert to infer the target collision mode, the unique primary adversary, support vehicles, and their interaction roles. Guided by this semantic prior, multi-vehicle adversarial generation is formulated as a primary-support process, where the primary adversary induces the main conflict and support vehicles shape the surrounding risk structure without becoming additional colliders. Rule, physical, interaction-safety, and single-collider constraints are imposed as hard gates to filter non-executable samples. To handle reactive ego behaviors, planner-controller feedback is further used for failure diagnosis, candidate re-ranking, and terminal refinement. Experiments on WOMD scenarios reconstructed in MetaDrive show that KG-ASG achieves strong adversarial effectiveness while improving Valid Primary Attack, reducing multi-collision, and obtaining closed-loop recovery gains under IDM, Cruise, and Expert controllers. These results demonstrate that collision-knowledge guidance and primary-support single-collider reasoning improve adversarial effectiveness, interpretability, and executability for autonomous driving safety validation."
   }
 ]
