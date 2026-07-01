@@ -1,5 +1,14 @@
 [
   {
+    "title": "How OpenAI Delivers Low-Latency Voice AI for 900M Users",
+    "original_title": "How OpenAI Delivers Low-Latency Voice AI for 900M Users",
+    "link": "https://blog.bytebytego.com/p/how-openai-delivers-low-latency-voice",
+    "date": "2026-07-01 15:31",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "In this article, we will look at the entire journey in detail and challenges the OpenAI engineering team faced."
+  },
+  {
     "title": "Chinese firm sells hyper-real, 'always loyal' humanoid robots",
     "original_title": "Chinese firm sells hyper-real, 'always loyal' humanoid robots",
     "link": "https://techxplore.com/news/2026-07-chinese-firm-hyper-real-loyal.html",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.23863v1 Announce Type: new \nAbstract: This study presents a closed-loop robotic strawberry harvesting system that combines a robust vision module, simulation-trained deep reinforcement learning (DRL) control, and ROS-based realrobot execution. For perception, we propose HRAttnEdge-YOLO26-seg, a modified YOLO26-seg architecture that incorporates a high-resolution P2 branch, segmentation-path attention, and edgesupervised prototype learning to improve instance segmentation in cluttered scenes. For control, we train a target-conditioned Proximal Policy Optimization (PPO) policy in Isaac Lab to produce smooth joint-position commands for a UR10e manipulator and deploy it on a UR10e robot for targetfruit reaching and harvesting. This simulation-based approach reduces hardware dependency, lowers development cost, and allows scalable policy training without exhaustive physical trials before real deployment. The proposed vision model demonstrated the highest overall performance among the evaluated methods. On both self-collected and public datasets, the model showed a 10 to 14% improvement in segmentation performance. In controlled in-house tests, the PPO controller produced stable and dynamically smoother motion than a inverse kinematics (IK)-based MoveIt baseline. In greenhouse trials, the proposed integrated system harvested 281 strawberries, achieving 96.6% reaching success, 91.3% grasp-and-pull success, and 84.3% overall harvesting success. These results illustrate that task-specific perception combined with simulation-trained PPO can serve as a practical and resource-efficient alternative to conventional planner-dependent reaching in manipulation, enabling reliable closed-loop robotic harvesting in complex agricultural environments."
-  },
-  {
-    "title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation",
-    "original_title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation",
-    "link": "https://arxiv.org/abs/2605.22882",
-    "date": "2026-05-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.22882v1 Announce Type: cross \nAbstract: Video world models can generate realistic futures from a single instruction, but they often fail to preserve consistent point-level motion over time. As a result, the generated videos appear plausible, yet lack the physical grounding required for reliable action execution, such as robot manipulation. We present GEM-4D, a geometry-grounded video world model that resolves this limitation by injecting dense 4D correspondence supervision, distilled from a pretrained geometry foundation model, into the video generative backbone during training. This supervision enables the model to jointly capture appearance and geometric structure while retaining a single-stream architecture with no additional inference cost. We further introduce an inverse dynamics module that converts correspondence-consistent video rollouts into executable robot trajectories, enabling direct deployment in both real-world and simulated manipulation. GEM-4D achieves state-of-the-art performance on both video prediction and geometric consistency across simulation and realistic scenarios and improves real-world manipulation success from 61% to 81%. Additional results are available at the project page: https://anonymous-submission-20.github.io/gem.github.io/."
   }
 ]
