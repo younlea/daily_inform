@@ -1,5 +1,14 @@
 [
   {
+    "title": "AI Music Video Generation: 10 Tools That Automate Your Creative Workflow in 2026",
+    "original_title": "AI Music Video Generation: 10 Tools That Automate Your Creative Workflow in 2026",
+    "link": "https://roboticsandautomationnews.com/2026/07/01/ai-music-video-generation-10-tools-that-automate-your-creative-workflow-in-2026/102946/",
+    "date": "2026-07-01 06:21",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Creating a music video no longer requires expensive software or advanced editing skills. Now, AI can turn ideas, songs, or images into engaging videos in just a few steps, helping creators save both time and effort. However, with so many AI music video generators available, choosing the right one can be difficult. This guide highlights […]"
+  },
+  {
     "title": "Locker-based Truck-Drone Routing with Integrated Considerations of Pickups, Deliveries, and No-Fly Zones",
     "original_title": "Locker-based Truck-Drone Routing with Integrated Considerations of Pickups, Deliveries, and No-Fly Zones",
     "link": "https://arxiv.org/abs/2606.30680",
@@ -216,6 +225,78 @@
     "summary": "arXiv:2606.31836v1 Announce Type: new \nAbstract: In the field of robot learning, large-scale and diverse demonstration trajectories provide the fundamental basis for enhancing robotic manipulation ability. We introduce RoboTacDex, a large, multi-modal, and diverse dataset of dexterous manipulation behaviors performed with a humanoid robot. Built on the publicly accessible humanoid robot Unitree G1, RoboTacDex consists of 6k trajectories covering 19 tasks, 23 skills, and interactions with 22 objects. RoboTacDex provides comprehensive records including multi-view RGB and depth information, tactile feedback, and detailed semantic annotations. Furthermore, the dataset features a variety of relatively challenging tasks that can only be completed by dual arms and dexterous hands, aiming to mimic human-like operational logic and simulate real-world manipulation complexity. To ensure data collection quality, we develop an improved multi-camera synchronization system to enable millisecond data synchronization and recording of modalities. In our experiments, we evaluate three representative imitation learning models on our dataset,\n  analyzing their performance as well as their respective strengths and limitations across different task categories. Successful trial results and a moderate level of generalization capabilities across a suite of tasks indicate the effectiveness and diversity of the collected dataset. Our dataset will be open-sourced soon."
   },
   {
+    "title": "Z-1: Efficient Reinforcement Learning for Vision-Language-Action Models",
+    "original_title": "Z-1: Efficient Reinforcement Learning for Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2606.31846",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31846v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models offer a promising framework for robotic manipulation by connecting language instructions, visual observations, and continuous control. However, most existing policies remain limited by behavior cloning or supervised fine-tuning (SFT) from fixed demonstrations, which provides limited opportunity to improve from the policy's own failures. In this paper, we present Z-1, a reinforcement learning (RL) post-training framework for flow-based VLA models. Built on top of $\\pi_{0.5}$, Z-1 uses only publicly released RoboCasa demonstrations for SFT and then applies a task-wise Group Relative Policy Optimization (GRPO) strategy across $24$ standard RoboCasa tasks. To improve the efficiency and stability of online optimization, Z-1 combines shared-prefix rollout construction, tree-structured trajectory branching, completion-aware reward calibration, and selective joint training of VLM and Action Expert. Across all $24$ RoboCasa tasks, Z-1 achieves an average success rate of $80.6\\%$, improving over its SFT initialization by $13.2\\%$ points and outperforms the published sota models. These results show that systematic GRPO post-training can substantially improve flow-based VLA policies without additional private demonstrations."
+  },
+  {
+    "title": "CoDex: Learning Compositional Dexterous Functional Manipulation without Demonstrations",
+    "original_title": "CoDex: Learning Compositional Dexterous Functional Manipulation without Demonstrations",
+    "link": "https://arxiv.org/abs/2606.31909",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31909v1 Announce Type: new \nAbstract: In this work, we study Compositional Dexterous Functional Object Manipulation (CD-FOM): tasks such as aiming and actuating a spray bottle on a plant or a glue gun on wood, which require both actuating an object's internal mechanism and controlling its pose to apply the object's function to the environment. These tasks pose significant challenges for robots due to the demanding integration of semantic understanding of the object's function, actuation mode, and application area with intricate physical dexterity to manage grasp stability, movement trajectory, and actuation. We introduce CoDex, a zero-demonstration framework that autonomously discovers CD-FOM manipulation strategies. CoDex uses vision-language models (VLMs) to infer semantic constraints from the task and scene. These constraints guide analytic constrained optimization to generate a short list of functional grasp candidates that can be efficiently refined with reinforcement learning to generate full grasp-move-actuate policies transferable from simulation to the real world. We evaluate CoDex on a 7-DoF robot arm with a 16-DoF multi-fingered hand across six CD-FOM tasks involving previously unseen objects with internal mechanisms, including spray bottles, hot glue guns, air dusters, flashlights, and pepper grinders, and their application to unseen target objects, showcasing its ability to autonomously discover and execute complex, physically viable dexterous behaviors without human demonstrations. More information at https://robin-lab.cs.utexas.edu/CoDex/."
+  },
+  {
+    "title": "Learning Locomotion on Discrete Terrain via Minimal Proximity Sensing",
+    "original_title": "Learning Locomotion on Discrete Terrain via Minimal Proximity Sensing",
+    "link": "https://arxiv.org/abs/2606.31912",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31912v1 Announce Type: new \nAbstract: Learning-based control has revolutionized dynamic locomotion, yet navigating unstructured terrain remains limited by a robot's incomplete awareness of imminent ground contact. While global perception systems such as LiDARs and depth cameras provide environmental context, they are frequently plagued by latencies, occlusions, and the high computational cost of dense geometric reconstruction. On the other hand, proprioceptive feedback is purely reactive, initiating corrections only after impact has occurred. This work explores embedding a minimal suite of low-cost, high-frequency infrared proximity sensors directly into the feet of a quadrupedal robot. These sensors provide \"pre-contact\" feedback that is robust to self-occlusions and significantly less computationally demanding than conventional vision-based pipelines. By integrating these localized signals into a reinforcement learning framework, we enable the robot to anticipate terrain discontinuities such as gaps and stepping stones that are problematic for traditional perception stacks due to occlusions or state estimation drift. We demonstrate that such sparse, near-field sensing can be reliably modeled in simulation and transferred to the real world with high fidelity. Experimental results show that local proximity sensing substantially improves traversal robustness over discrete terrain and offers a low-power, low-latency alternative or complement to complex global perception suites in unpredictable environments. For more information about results and methods, please see the project website: https://sites.google.com/view/foot-tof/home."
+  },
+  {
+    "title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation",
+    "original_title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2606.31993",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31993v1 Announce Type: new \nAbstract: While robotic manipulation capabilities have advanced rapidly, physical safety remains a major barrier to deploying household robots: task success is insufficient if the robot damages itself or its surroundings. Simulation offers a harm-free alternative to costly and dangerous real-world training and evaluation, yet existing simulators lack general mechanisms to detect, quantify, and represent damage. To address this gap, we introduce OOPSIEVERSE, a unified simulation framework and benchmark for damage-aware household manipulation. OOPSIEVERSE provides damage as an explicit, physically-grounded, and taskagnostic signal by converting sources such as contact forces, temperature changes, and liquid interactions into corresponding mechanical, thermal or fluid damage. OOPSIEVERSE comprises two core elements: (1) DAMAGESIM, a simulator-agnostic framework for detecting and quantifying damage during navigation and manipulation, and (2) a suite of household tasks designed to evaluate common damage modes and distinguish between task completion and safe execution. We demonstrate the generality of our framework by instantiating DAMAGESIM in two simulators with different physics backends, OmniGibson (Nvidia Omniverse) and RoboCasa (MuJoCo). We further showcase the utility of OOPSIEVERSE across multiple use cases, including (1) guiding safer demonstration collection via real-time damage feedback, (2) learning safer manipulation policies through damage-conditioned imitation learning and reinforcement learning, (3) benchmarking the safety of state-of-the-art Vision Language Action policies, and (4) improving real-world safety of sim-to-real transferred policies. Together, our results highlight the potential of OOPSIEVERSE as an open-source foundation for systematic, scalable research on safe robot manipulation. For code and more information, please refer to https://robin-lab.cs.utexas.edu/oopsieverse/"
+  },
+  {
+    "title": "Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments",
+    "original_title": "Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Human-Aligned Embodiments",
+    "link": "https://arxiv.org/abs/2606.32009",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.32009v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models across robot embodiments require high-quality observation--action supervision to learn deployable action distributions, yet scaling such robot data remains difficult, especially for high-DoF humanoids. Teleoperation provides controller-aligned supervision, while human egocentric videos capture diverse bimanual manipulation but do not directly provide executable robot actions. We introduce Human-as-Humanoid, a human-to-humanoid supervision framework that enables near-real-time human-centric action generation, making human demonstrations usable for high-DoF humanoid VLA training by jointly aligning the robot embodiment, the sensing setup, and the action-label interface. Built on PrimeU, a human-aligned 60-DoF upper-body humanoid, Human-as-Humanoid uses synchronized ego-exo videos to pair deployment-aligned egocentric observations with exocentric motion recovery, retargets the recovered human motion through staged Inverse Kinematics (IK) into controller-aligned 60-DoF action chunks, and trains the VLA model with Forward Kinematics (FK)-aware supervision to preserve wrist and fingertip task-space geometry. This converts large-scale human demonstrations from visual observations into executable observation--action supervision for the target humanoid. Experiments validate the conversion chain at the motion-recovery, robot-action-space, and real-robot deployment levels. Human-as-Humanoid yields a 4.8--7.2x raw demonstration-throughput gain over humanoid teleoperation in our data-collection analysis, and on several downstream tasks, policies post-trained only with the converted human labels generalize to real-robot deployment without target-task robot demonstrations. The official project website is available at https://zgc-embodyai.github.io/Human-as-Humanoid."
+  },
+  {
+    "title": "Freeform Preference Learning for Robotic Manipulation",
+    "original_title": "Freeform Preference Learning for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.32027",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.32027v1 Announce Type: new \nAbstract: Reward design remains a central bottleneck for autonomous robot policy improvement, especially in long-horizon manipulation tasks where sparse success labels provide too little signal and binary preferences collapse many competing notions of quality into one ambiguous signal. We introduce Freeform Preference Learning (FPL), a method for learning robot policies from freeform human preferences. Rather than asking annotators which of two trajectories is better overall, FPL lets them define natural-language preference axes, such as speed, safety, quality of placement, or carefulness, and provide pairwise preferences along each axis. These annotations are used to learn a language-conditioned reward model that maps a trajectory and preference label to an axis-specific reward. We use this model to train a reward-conditioned policy that optimizes across the multiple human-specified dimensions. Across four real-world and two simulated long-horizon manipulation tasks, FPL improves over sparse-reward and binary-preference methods by 38 percentage points. Beyond improved performance, FPL learns dense progress signals without explicit subtask segmentation, shows compositionality of behavior not present in the data, and allows users to steer the policy towards different behaviors at test time without retraining. Blog post with videos available at https://freeform-pl.github.io/fpl.website/"
+  },
+  {
+    "title": "DVG-WM: Disentangled Video Generation Enables Efficient Embodied World Model for Robotic Manipulation",
+    "original_title": "DVG-WM: Disentangled Video Generation Enables Efficient Embodied World Model for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2606.32028",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.32028v1 Announce Type: new \nAbstract: Video-based embodied world models provide an appealing substrate for robotic manipulation by predicting future states, yet current approaches remain limited by a fundamental entanglement: accurately modeling dynamics typically requires low-level temporal reasoning, while producing high-resolution frames demands expansive visual synthesis according to high-level semantics. This entanglement results in slow inference speed for iterative planning or too coarse predictions to retain contact-rich details. To solve this dilemma, we present Disentangled Video Generation World Model (DVG-WM), an efficient framework that explicitly decomposes world modeling into dynamics learning and visual synthesis. Conditioned on an initial observation and a language instruction, our model first generates a plausible sequence of intermediate visual states to preview the physical interaction and refines them to obtain high-fidelity videos. Furthermore, an efficient cascading mechanism is proposed, where DVG-WM uses flow matching to directly map the dynamics to video latents, and introduces a latent degradation mechanism to regenerate contact-rich details. Experiments on LIBERO and real-world platforms demonstrate improved video quality with up to 3.97 times acceleration, validating that disentangled video generation can be an efficient embodied world model for robotic manipulation."
+  },
+  {
+    "title": "Warp RL: Reshaping Base Policy Distributions for Dynamics Adaptation",
+    "original_title": "Warp RL: Reshaping Base Policy Distributions for Dynamics Adaptation",
+    "link": "https://arxiv.org/abs/2606.31043",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31043v1 Announce Type: cross \nAbstract: Residual reinforcement learning adapts a pretrained robot policy by learning an additive correction to its actions. While effective when adaptation amounts to shifting the base policy's action distribution, additive corrections cannot change the distribution's shape, scale, or state-dependent geometry -- limitations we formalize as wrong variance, miscalibrated confidence, and non-uniform correction. We show that these matter under dynamics shift: when the base distribution is geometrically mismatched to the shifted system, residual correction can underperform even the unadapted policy. We propose \\textbf{Warp RL}, a policy adaptation method that replaces additive residuals with an invertible, state-conditioned transformation of the base policy's action distribution. Instantiated with monotonic rational-quadratic spline flows [arXiv:0706.1234v1], Warp RL preserves identity initialization, strictly generalizes additive residual correction, and exposes a structured adaptation space suitable for both policy-gradient and gradient-free optimization. Across a variety of ManiSkill3 manipulation tasks with controlled dynamics shifts, Warp RL matches residual correction when translation is sufficient and substantially outperforms it when adaptation requires distributional reshaping. We further demonstrate that warping can replace additive correction in an off-policy sim-to-real pipeline, achieving comparable success rate with 30% faster task completion on a real-robot peg-insertion task."
+  },
+  {
     "title": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot - PR Newswire Asia",
     "original_title": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot - PR Newswire Asia",
     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQalhOVE9uVVJJMEkxOXdfUVoteWduN1VPMU56N095VEhMdEF6VTNOR0hnc3AwZEZ5MDlVTDh2RWZMTXFEWGRIckZEZjY5X0NacXVqNERhczh3UGdrYzJKYWZqVnN6LTlTYk8xUGh5M3gtQjNnZS1nUVo5ZFN4SmNodU9aMUt1NjZXYWhMTDhEbjVHTVRBT0FxdFlJbFhPb21jbF9sUHNHVDRjeUVsS2RxbVV4TUtMM0VaZGRPTVFwYWsxVFJ2MFNLM1hzLWRDbzM1dDY5WWpMMV9jd0xpTkE?oc=5",
@@ -232,6 +313,15 @@
     "source": "Google News (Humanoid)",
     "category": "humanoid",
     "summary": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot  KIPOST"
+  },
+  {
+    "title": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot - Yahoo Finance",
+    "original_title": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot - Yahoo Finance",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWHVLQWtfaVlQS3VnYlp1VmNPM0Q0OXhfTkoxaVpXLTY4bXJhRDRoaENsMHp2VnRPUVhfcnNxZ0xuYWROTFdidE1VcnAwUlRKSk1oekZTREFBU0twcGphZ3NhLW5LTUUxUDNnakdLeDQyT1NhVF9uVHNzcEk4MGJpUElIVDZCeTF4WGZLdS1DMkNMMFRrYjU2U0Rzcks?oc=5",
+    "date": "2026-07-01 02:40",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot  Yahoo Finance"
   },
   {
     "title": "UBTech launches lifelike humanoid robots built for companionship in China - South China Morning Post",
@@ -412,6 +502,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Chinese robot completes six-day factory shift with 99% success rate  Yahoo! Finance Canada"
+  },
+  {
+    "title": "Chinese robot completes six-day factory shift with 99% success rate - The Independent",
+    "original_title": "Chinese robot completes six-day factory shift with 99% success rate - The Independent",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVDR4TWdIczBkNDFkU0oyNjJfRUJfSUo4NWJLa3kyNGR1a2NHQW9rTDFLdmRNUkpiTlRyRTM5OHJmU0wxLVpYdzYwX0Q5TXplTDNpSE92VmwzOGdCb28xY3RVX2tPSE8yakx5MjV1YjJ6dHVNRy0wQnZXVzVIbHlqcGROWDBLenhRU1ZDdA?oc=5",
+    "date": "2026-06-30 10:54",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Chinese robot completes six-day factory shift with 99% success rate  The Independent"
   },
   {
     "title": "Sonair ADAR One 3D ultrasonic sensor is now safety-certified",
@@ -17899,104 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "hand",
     "summary": "IT teams are moving device handoffs out of email threads, help desk queues, and storage rooms. A laptop loan, charger pickup, broken-device swap, or new-hire deployment can now happen through a controlled smart locker workflow instead of a manual exchange.  That shift has created a crowded category. Some smart locker solutions are built specifically for […]"
-  },
-  {
-    "title": "New framework helps robots turn complex language into precise 3D actions",
-    "original_title": "New framework helps robots turn complex language into precise 3D actions",
-    "link": "https://techxplore.com/news/2026-05-framework-robots-complex-language-precise.html",
-    "date": "2026-05-22 13:40",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "Over the past few decades, roboticists worldwide have introduced increasingly advanced robots that can understand human instructions, move in their surroundings and reliably complete basic manual tasks. While they perform well in some scenarios, many of these robots still struggle to translate the instructions of users into precise and executable actions that would allow them to successfully complete desired tasks."
-  },
-  {
-    "title": "GE Vernova to acquire Robotech Automation to expand robotics integration",
-    "original_title": "GE Vernova to acquire Robotech Automation to expand robotics integration",
-    "link": "https://www.therobotreport.com/ge-vernova-acquire-robotech-automation-expand-robotics-integration/",
-    "date": "2026-05-22 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Energy company GE Vernova is already working with systems integrator Robotech on supply chain projects.\nThe post GE Vernova to acquire Robotech Automation to expand robotics integration appeared first on The Robot Report."
-  },
-  {
-    "title": "Robot Talk Episode 157 – Generating new robot designs, with Josie Hughes",
-    "original_title": "Robot Talk Episode 157 – Generating new robot designs, with Josie Hughes",
-    "link": "https://robohub.org/robot-talk-episode-157-generating-new-robot-designs-with-josie-hughes/",
-    "date": "2026-05-22 12:13",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "Claire chatted to Josie Hughes from École Polytechnique Fédérale de Lausanne about using AI to develop new designs for robotic manipulators. Josie Hughes is an Assistant Professor at EPFL, where she established the CREATE Lab in 2021. She completed her PhD in the Bio-inspired Robotics Lab at the University of Cambridge, examining the role of […]"
-  },
-  {
-    "title": "AGIBOT's humanoid robot wows audience with dance, calligraphy at event - Interesting Engineering",
-    "original_title": "AGIBOT's humanoid robot wows audience with dance, calligraphy at event - Interesting Engineering",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORzhvV0s4alY4Vl9hRHVKVU9ORFpoRklhWFlrRkU1QjRLRVJqXzNzZ005aThhVHlfaHlVUlZCci1VRV9kWWxZU3gtSmpSN2dJZXVsbVZCZVhqU09Va3lrWlY2eU9nTFZsX1ZOLU4zOXpKZEQxMnFOZVVRNTc5UUNYYUx6Mi0xVkNRcm0temJ3VUtJYU9uNE9r?oc=5",
-    "date": "2026-05-22 11:51",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "AGIBOT's humanoid robot wows audience with dance, calligraphy at event  Interesting Engineering"
-  },
-  {
-    "title": "Licensable picture: A man shakes the hand of a Chinese G1 humanoid robot made by Unitree Robotics at the ImagiNxt conference in Mumbai - Reuters Connect",
-    "original_title": "Licensable picture: A man shakes the hand of a Chinese G1 humanoid robot made by Unitree Robotics at the ImagiNxt conference in Mumbai - Reuters Connect",
-    "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOdVZqX00yYWhkbUxyMmtZMGpDOTR0ZGhFbjY3TTdZcnVjQXc5RVJ3TDFKTWtZVTNvNW4zZU9xckdmQUN0M2hQSkl6aHplaGFRQzF4Z0J4d1E2WHZ1NXhvbFdXc3NobE9Pby1oWE9wdE9sRGp4UGRUeE9xOUFmNU5MTmZvZzNKY1pPZnBJMmtuS3F3TmJCOC1Tb1VUTEw3TF9ZZGpHQTJYQXFjUTQtcFZFQkZCUFdoYTduSC1GZmYzVUc1Y2NrY25WaXoyYi1zVHM2YWp1cEtlclBvMmJJSjI2WFV5Sk4yOFZ4amVqU25qdVhsZGpvU1JXOHJ5bFQtSUpRY093TlRkYlVuS29UcUQ4c1lQT3pHd0dBRDBkaWMwbnVRSEZEa1ktWlhSYU1BZw?oc=5",
-    "date": "2026-05-22 10:52",
-    "source": "Google News (China Robotics - EN)",
-    "category": "hand",
-    "summary": "Licensable picture: A man shakes the hand of a Chinese G1 humanoid robot made by Unitree Robotics at the ImagiNxt conference in Mumbai  Reuters Connect"
-  },
-  {
-    "title": "Doozy Robotics launches global expansion to scale AI-powered humanoid workforce for factories",
-    "original_title": "Doozy Robotics launches global expansion to scale AI-powered humanoid workforce for factories",
-    "link": "https://roboticsandautomationnews.com/2026/05/22/doozy-robotics-launches-global-expansion-to-scale-ai-powered-humanoid-workforce-for-factories/101803/",
-    "date": "2026-05-22 10:48",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Doozy Robotics, the Singapore-based Physical AI humanoid company building autonomous industrial workforces, has announced a coordinated global expansion across the United States, GCC, and Asia, marking its next phase of growth ahead of a planned Series A. The startup is backed by investors including Cocoon Capital, who have supported the company through a period of […]"
-  },
-  {
-    "title": "Perspective from Harting: The industrial reality check – why factory winners execute, not just innovate",
-    "original_title": "Perspective from Harting: The industrial reality check – why factory winners execute, not just innovate",
-    "link": "https://roboticsandautomationnews.com/2026/05/22/perspective-from-harting-the-industrial-reality-check-why-factory-winners-execute-not-just-innovate/101800/",
-    "date": "2026-05-22 10:32",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Rodriques Johnpeter, global industry segment manager, Harting Manufacturers are operating in a moment where disruption is the norm, not the exception. Supply chain volatility, inflationary pressure and labor constraints all collide with a parallel push to embed automation and AI into plants that were never designed for today’s technologies. Most facilities – well over two-thirds […]"
-  },
-  {
-    "title": "China Xplained | Why is China going all in on humanoid robots? - Guangdong News",
-    "original_title": "China Xplained | Why is China going all in on humanoid robots? - Guangdong News",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE02Vmpodl92SjJ4NkdON1NjWVh4NTh5WVBtaVZvSXVRUkVxQnEzSFBXTFQ0MzhERXU2Z1RqTk0tWHNlLXM2VW5zUmxabXpkQVJMTmFrZHNkM1hSUUlTZFlKMkJTTXJsUQ?oc=5",
-    "date": "2026-05-22 10:16",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China Xplained | Why is China going all in on humanoid robots?  Guangdong News"
-  },
-  {
-    "title": "Brain Corp and UC San Diego partner to advance the foundational intelligence layer for physical AI",
-    "original_title": "Brain Corp and UC San Diego partner to advance the foundational intelligence layer for physical AI",
-    "link": "https://roboticsandautomationnews.com/2026/05/22/brain-corp-and-uc-san-diego-partner-to-advance-the-foundational-intelligence-layer-for-physical-ai/101797/",
-    "date": "2026-05-22 09:31",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Brain Corp, the real-world AI company, has expanded its research collaboration with the University of California San Diego, which is aimed at advancing semantic mapping and contextual intelligence technologies for autonomous robots operating in complex commercial and industrial environments. The collaboration reflects a shared ambition to shape the future of physical AI, taking autonomous systems […]"
-  },
-  {
-    "title": "Flytrex opens drone manufacturing facility in Dallas",
-    "original_title": "Flytrex opens drone manufacturing facility in Dallas",
-    "link": "https://roboticsandautomationnews.com/2026/05/22/flytrex-opens-drone-manufacturing-facility-in-dallas/101786/",
-    "date": "2026-05-22 09:23",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Flytrex, an autonomous drone food delivery service, has announced the opening of a drone manufacturing and maintenance facility in Pilot Point, Texas, as the company accelerates its push to build a network of 60 delivery sites across the Dallas-Fort Worth metro by mid-2027. The facility – capable of assembling thousands of drones annually – will […]"
-  },
-  {
-    "title": "Humanoid secures partnership with manufacturing giant Bosch following a successful proof of concept",
-    "original_title": "Humanoid secures partnership with manufacturing giant Bosch following a successful proof of concept",
-    "link": "https://roboticsandautomationnews.com/2026/05/22/humanoid-secures-partnership-with-manufacturing-giant-bosch-following-a-successful-proof-of-concept/101720/",
-    "date": "2026-05-22 08:15",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Humanoid, a UK-based AI and robotics company, has agreed a partnership with manufacturing giant Bosch, marking the transition to scaled production of humanoid robots. The agreement follows the successful completion of a joint proof of concept (POC) in March 2026, where Humanoid’s platform demonstrated full capability in a complex industrial workflow. The POC focused on […]"
   }
 ]
