@@ -1,5 +1,23 @@
 [
   {
+    "title": "UBTech just introduced its first full-size Ultra-Bionic humanoid robot, but what it really wants to do is make robot replicas of loved ones — that's a hard no - TechRadar",
+    "original_title": "UBTech just introduced its first full-size Ultra-Bionic humanoid robot, but what it really wants to do is make robot replicas of loved ones — that's a hard no - TechRadar",
+    "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOZjNMMXRpZ3RPY3l3c2doVm1CdE5kc1FNb1FmZlRkSkNrZlM1a24yZDlPZ1ZjQmVFVmg4RVN6ZGZDZVE1bERadVlhWUxDM0xtNGt4Q0pZajNneTRXVGJ2WENJUFdPbmVHaEdCWnBGb2tXQ3JET3d4SExqVEY1T092S3FDelIzanNNTUEzT3hVeE9nQ0JYTEo3dVJpV3NHWnVzaldDLUQ1cmh2SnNaTGlEdVgyYWUxaTM0QVRUME9ucDNBU3BZUmpScVpYUHJoaHV3WGMyR3BqQUpEU01kOTZ3OWFFaXl5czJJOE4tc1psZWdHVmhhdjVpU3lucGpJY0VQeWRTUVlnYWxVM2gtQ1NZUmlVWkIyT1lOQjQxSDRlRzBRbUFiaW1uSExsMlg?oc=5",
+    "date": "2026-07-01 18:47",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "UBTech just introduced its first full-size Ultra-Bionic humanoid robot, but what it really wants to do is make robot replicas of loved ones — that's a hard no  TechRadar"
+  },
+  {
+    "title": "In Robotics, Ruggedization Is No Longer Optional",
+    "original_title": "In Robotics, Ruggedization Is No Longer Optional",
+    "link": "https://www.therobotreport.com/in-robotics-ruggedization-is-no-longer-optional/",
+    "date": "2026-07-01 18:44",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "As autonomy moves beyond controlled environments, ruggedized design is becoming a prerequisite for reliable robotic operations.\nThe post In Robotics, Ruggedization Is No Longer Optional appeared first on The Robot Report."
+  },
+  {
     "title": "Horror-movie cue inspires wearable that turns robot movements into warning music",
     "original_title": "Horror-movie cue inspires wearable that turns robot movements into warning music",
     "link": "https://techxplore.com/news/2026-07-horror-movie-cue-wearable-robot.html",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.23128v1 Announce Type: new \nAbstract: Currently, Vision-Language-Action (VLA) models have become the most adopted paradigm for robotic manipulation for its great potential for task generalization. While most generative flow-matching action decoders for VLA control are often deployed with fixed sampling horizons, limiting state-dependent compute and temporal reuse across control cycles. We present $\\pi_0$-EqM, which replaces the flow-matching expert in $\\pi_0$ with an Equilibrium Matching (EqM) decoder while leaving the upstream VLA stack unchanged. Under a matched 300-step budget, $\\pi_0$-EqM improves RoboTwin average success from 40.4% to 50.2% across 19 tasks and remains competitive on LIBERO, with its clearest gain on LIBERO-10 (87.0%). Two threshold scans reveal a task-dependent non-monotonic relation between residual and success, which we term the stationarity--executability gap. The results suggest that inference depth in iterative VLA control is part of policy design and introduce an energy-based VLA perspective that may inform future work on composable action generation across tasks and embodiments."
-  },
-  {
-    "title": "Signal Temporal Logic Motion Planning via Graphs of Convex Sets",
-    "original_title": "Signal Temporal Logic Motion Planning via Graphs of Convex Sets",
-    "link": "https://arxiv.org/abs/2605.23240",
-    "date": "2026-05-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.23240v1 Announce Type: new \nAbstract: This paper investigates continuous-time motion planning under Signal Temporal Logic (STL) specifications. The goal is to generate smooth robot trajectories that satisfy high-level logical and timing requirements while respecting low-level motion constraints. To this end, we propose an efficient framework that combines timed-automata reasoning with graphs of convex sets (GCS). An STL specification is first represented by a timed automaton, which is then coupled with a convex decomposition of the configuration space to form a joint transition system encoding both task progress and region occupancy. Based on this joint transition system, the STL motion-planning problem is reformulated as a shortest-path problem over a GCS, whose solution induces a smooth B\\'ezier-spline trajectory satisfying the STL specification, smoothness requirements, and velocity bounds. We establish the soundness of the proposed formulation and analyze its computational complexity, showing that, once the timed automaton and convex decomposition are fixed, the convex relaxation scales polynomially with the configuration-space dimension and the B\\'ezier degree. We further develop a compact timed-automaton construction for an expressive STL fragment using dedicated templates and Boolean composition. Numerical experiments on low-dimensional benchmarks, a $3$-D quadrotor, a $30$-DoF humanoid, and a hardware experiment on a UR-3 robot arm demonstrate that the proposed method efficiently solves complex STL motion-planning problems and produces smooth executable trajectories."
-  },
-  {
-    "title": "Semantically Structured Mixture-of-Experts for Compositional Robotic Manipulation",
-    "original_title": "Semantically Structured Mixture-of-Experts for Compositional Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2605.23477",
-    "date": "2026-05-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.23477v1 Announce Type: new \nAbstract: Diffusion-based policies have established a new standard for precise robotic manipulation but face a critical scalability bottleneck: high-performance models are computationally expensive, while lightweight alternatives often fail to generalize across diverse multi-task environments. Mixture-of-Experts (MoE) architectures offer a promising path to efficiency by activating only a subset of parameters. However, existing MoE routing mechanisms typically rely on low-level noise or latent statistics, ignoring the compositional nature of manipulation tasks. This can fragment reusable behaviors across experts, limiting interpretability and transferability. We introduce Semantically Structured Mixture-of-Experts Diffusion Policy (SMoDP) for compositional robotic manipulation, a framework that grounds expert specialization in semantic task structure. SMoDP leverages a lightweight, inference-time skill predictor, supervised by offline annotations from Vision-Language Models (VLMs), to route action chunks to experts specialized for specific behavioral phases. To ensure robust assignment, we propose a dual contrastive alignment strategy that grounds multi-modal observations in language-defined skill semantics (Inter-modal) while enforcing routing consistency across visually distinct but functionally related behaviors (Intra-modal). Our approach outperforms representative diffusion and MoE-based baselines on multi-task benchmarks with significantly improved parameter efficiency and demonstrates effective compositional transfer to novel tasks through parameter-efficient fine-tuning. Project website: https://deng-cy20.github.io/SMoDP/"
   }
 ]
