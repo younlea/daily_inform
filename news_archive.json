@@ -72,6 +72,78 @@
     "summary": "arXiv:2606.30988v1 Announce Type: new \nAbstract: Robot manipulation often relies on sensory feedback beyond vision, particularly in contact-rich settings where force, tactile, or audio signals reveal interaction states that are not directly observable from images. However, these modalities are often hardware- and task-specific, and large-scale multisensory robot datasets remain scarce. As a result, it is impractical to pretrain policies with every sensor they may encounter. We study multisensory continual learning: adapting a pretrained robot policy to new tasks with newly introduced modalities while preserving performance under the original sensor suite. We propose MuSe, which incorporates limited multisensory data into pretrained vision-only policies through multi-stage fusion, multisensory future prediction, and experience replay over pretraining data. We instantiate MuSe by augmenting a pretrained vision-only policy with force-torque sensing and evaluate it on real-world manipulation tasks. Our experiments show that MuSe performs strongly on contact-rich finetuning tasks while preserving, and in some cases improving, performance on the original pretraining tasks. These results suggest that a modest multisensory dataset can improve general robot capabilities beyond the finetuning distribution. Project website: https://jadenvc.github.io/multisensory-continual-learning/"
   },
   {
+    "title": "Labimus: A Simulation and Benchmark for Humanoid Dexterous Manipulation in Chemical Laboratory",
+    "original_title": "Labimus: A Simulation and Benchmark for Humanoid Dexterous Manipulation in Chemical Laboratory",
+    "link": "https://arxiv.org/abs/2606.31037",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31037v1 Announce Type: new \nAbstract: Laboratory automation has made remarkable progress through robotic platforms and AI-driven scientific reasoning. However, many laboratory operations (e.g., solid--solid transfer) remain inherently dynamic and require real-time adaptation to different materials and experimental conditions. Such precision-critical manipulations are difficult to standardize, motivating the use of humanoid robots with dexterous hands. Despite this opportunity, no existing benchmark evaluates humanoid manipulation in precision-critical laboratory environments. We present Labimus, to our knowledge, the first benchmark for humanoid dexterous manipulation in organic chemistry laboratories. Labimus reconstructs over 30 functionally faithful assets from real organic chemistry workstations through real-to-sim modeling, collectively covering the core operations of routine organic chemistry experiments. The benchmark integrates articulated laboratory instruments, particle-based powder physics, and closed-loop instrument readouts, enabling a complete manipulation-to-measurement pipeline. It further defines six atomic operations and a seven-step solid-weighing workflow derived from real laboratory standard operating procedures. We introduce a precision-aware evaluation protocol designed to jointly measure task completion, experimental precision, and long-horizon execution. We benchmark three representative policies under procedural layouts and environmental perturbations. Results reveal a precision gap: policies that successfully complete laboratory tasks can still fail to satisfy the quantitative tolerances required by experimental protocols. Our benchmark exposes a fundamental disconnect between task completion and experimental validity, providing a new testbed for developing reliable humanoid robots for scientific laboratories."
+  },
+  {
+    "title": "Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors",
+    "original_title": "Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors",
+    "link": "https://arxiv.org/abs/2606.31101",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31101v1 Announce Type: new \nAbstract: Bridging the sim-to-real gap is a core challenge in deploying learned manipulation policies. Sim-to-real learning is attractive because it can replace expensive real robot demonstrations with scalable synthetic data, yet world-action models have not previously been shown to transfer from simulation to real robotic manipulation. We study whether a world-action model can be trained from synthetic priors and deployed zero-shot in the real world. To this end, we build upon Cosmos Policy, a video diffusion model adapted for visuomotor control. We construct simulation environments with extensive domain randomization and generate demonstrations using the AnyTask motion planning pipeline. We evaluate our approach across object lifting, drawer opening, and pick-and-place tasks using ${\\sim}800$ synthetic demonstrations per task and no real demonstrations. When deployed zero-shot on a Franka Robot, our policy attains a 35\\% average success rate. To our knowledge, this represents the first successful sim-to-real transfer of a world-action model for robotic manipulation."
+  },
+  {
+    "title": "ELASTIC: Efficiently Learning to Adaptively Scale Test-Time Compute for Generative Control Policies",
+    "original_title": "ELASTIC: Efficiently Learning to Adaptively Scale Test-Time Compute for Generative Control Policies",
+    "link": "https://arxiv.org/abs/2606.31132",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31132v1 Announce Type: new \nAbstract: Generative control policies (GCPs), such as diffusion policies and flow-based vision-language-action models, enable test-time scaling in robot control. Test-time compute can be allocated along two axes: sequential scaling, which increases denoising steps to refine actions, and parallel scaling, which samples multiple candidate actions to search across modes of the policy distribution. However, the optimal allocation of sequential and parallel compute is hard to know a priori as it is state-, task-, and policy-dependent. For example, early stages of a grasp may benefit from broader parallel exploration, while near-contact phases may require more sequential refinement for precision. We present ELASTIC, an algorithm that learns state-dependent test-time compute schedules for GCPs. We formulate compute allocation as a meta-Markov Decision Process in which a meta-policy interacts with a frozen pretrained robot policy and selects sequential steps and parallel samples at each denoising iteration to maximize task success while minimizing compute. Using reinforcement learning, this meta-policy also learns adaptive compute schedules without access to the GCP's training data. Across simulated manipulation benchmarks with diffusion policies, ELASTIC Pareto-dominates fixed and single-axis scaling baselines at matched compute budgets. On real-world robot manipulation with the $\\pi_{0.5}$ vision-language-action model, ELASTIC matches best-of-$10$ success while reducing wall-clock latency by 34%."
+  },
+  {
+    "title": "LLM-Powered Interactive Robotic Action Synthesis from Multimodal Speech, Gestures, and Music",
+    "original_title": "LLM-Powered Interactive Robotic Action Synthesis from Multimodal Speech, Gestures, and Music",
+    "link": "https://arxiv.org/abs/2606.31158",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31158v1 Announce Type: new \nAbstract: The quest for intuitive and natural human-robot interaction (HRI) remains a significant challenge in robotics. Traditional methods often rely on rigid, pre-programmed commands that limit the robot's expressiveness and adaptability. This paper introduces a novel framework that leverages the reasoning capabilities of Large Language Models (LLMs) to synthesize complex robotic actions from a rich tapestry of multimodal human inputs: natural speech, hand gestures, and music/sound beats. Our system architecture integrates a speech transcription model, a gesture recognition module, and a signal processing pipeline for beat detection. These processed inputs are contextualized using prompt templates and fed into a LLM. The LLM, informed by a predefined robot action space, reasons over the combined inputs to generate a coherent sequence of actions. This sequence is dispatched to an action queue for execution on a quadruped robot over ROS. The framework has ability to interpret and fuse semantic commands from speech, deictic information from gestures, and rhythmic cues from music. This work represents a step towards creating robots that can interact with humans in a more fluid, creative, and context-aware manner."
+  },
+  {
+    "title": "TactX: Learning Shared Tactile Representations Across Diverse Sensors",
+    "original_title": "TactX: Learning Shared Tactile Representations Across Diverse Sensors",
+    "link": "https://arxiv.org/abs/2606.31236",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31236v1 Announce Type: new \nAbstract: Tactile sensors provide critical information for contact-rich manipulation, yet tactile representations and policies remain tightly coupled to each specific sensor, limiting transferability across robots and hardware platforms. We propose TactX, a framework for learning a transferable tactile representation across sensors spanning three fundamentally different transduction modalities: resistive, magnetic, and vision-based. TactX maps heterogeneous tactile observations into a shared latent space through modality-specific encoders trained on paired contact data. Such paired interactions provide a natural alignment signal across modalities, and the encoders are jointly trained across all sensor pairs, inducing a consistent latent space for all sensor types. Our experiments show that TactX aligns tactile representations across sensors while preserving object-level contact information, as evidenced by sensor-identity prediction and object classification in the learned latent space. We evaluate TactX on four contact-rich manipulation tasks: pick-and-place, plug insertion, board wiping, and object reorientation, and show that policies trained with one sensor transfer zero-shot to physically distinct sensors through the shared latent. This improves the average success rate from 27.5% for vision-only policy to 45.9%, providing a step toward sensor-agnostic tactile manipulation."
+  },
+  {
+    "title": "3D HAMSTER: Bridging Planning and Control in Hierarchical Vision Language Action Models through 3D Trajectory Guidance",
+    "original_title": "3D HAMSTER: Bridging Planning and Control in Hierarchical Vision Language Action Models through 3D Trajectory Guidance",
+    "link": "https://arxiv.org/abs/2606.31329",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31329v1 Announce Type: new \nAbstract: Hierarchical Vision-Language-Action (VLA) models decouple high-level planning from low-level control to improve generalization in robot manipulation. Recent work in this paradigm uses 2D end-effector trajectories predicted by a Vision-Language Model (VLM) as explicit guidance for a downstream policy. However, state-of-the-art low-level policies operate in 3D metric space on point clouds, and feeding them 2D guidance that lacks depth forces each waypoint to be assigned the depth of whatever scene surface lies beneath it, producing geometrically distorted trajectories. We propose 3D HAMSTER, a hierarchical framework that closes this gap by having the planner directly output metrically reliable 3D trajectories. We augment a VLM with a dedicated depth encoder and a dense depth reconstruction objective to predict 3D waypoint sequences, which are directly integrated into a pointcloudbased low-level policy. Across 3D trajectory prediction, simulation, and real-world manipulation, 3D HAMSTER consistently outperforms proprietary VLMs and 2D-guided baselines, with the largest gains under appearance-altering shifts and unseen language, spatial, and visual conditions. The project page is available at https://davian-robotics.github.io/3D_HAMSTER/."
+  },
+  {
+    "title": "Stage-Transition Dense Reward Modeling for Reinforcement Learning",
+    "original_title": "Stage-Transition Dense Reward Modeling for Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2606.31377",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31377v1 Announce Type: new \nAbstract: Reinforcement learning for long-horizon robotic manipulation is often limited by sparse and delayed rewards, while manually designing dense shaping signals is costly and brittle to changes in environments and object configurations. This work proposes Stage-Transition Dense Reward (STDR), a visual reward-learning framework that converts unstructured expert videos into logically grounded dense rewards for training RL agents from scratch. STDR leverages semantic understanding to infer a task's stage structure from demonstrations, and delivers two complementary learning signals during online training: (i) stage-transition feedback that provides goal-directed reward, and (ii) within-stage progress feedback that supplies fine-grained guidance toward completing each stage. Furthermore, an out-of-distribution (OOD) detection mechanism and a grasping regulation module are integrated to enhance robustness and prevent reward hacking. Experiments on 14 manipulation tasks across MetaWorld, ManiSkill, and Franka Kitchen show that STDR consistently improves sample efficiency and success rates over multiple baselines, and matches or surpasses handcrafted dense rewards on several challenging tasks. Real-robot evaluations further indicate that STDR assigns stable, progress-aligned rewards on successful executions while producing appropriately low rewards for failures, suggesting robustness to visual noise and better-calibrated reward assignment across settings."
+  },
+  {
+    "title": "UniTac: A Unified Multimodal Model for Cross-Sensor Tactile Understanding and Generation",
+    "original_title": "UniTac: A Unified Multimodal Model for Cross-Sensor Tactile Understanding and Generation",
+    "link": "https://arxiv.org/abs/2606.31451",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31451v1 Announce Type: new \nAbstract: Unified multimodal models (UMMs) have shown great promise in integrating understanding and generation across diverse modalities. However, existing research rarely extends this paradigm to the tactile domain, where both object-level semantics and sensor-level configurations jointly determine the meaning of touch. To address this gap, we propose UniTac, the first UMM designed for tactile understanding and generation. UniTac models the tactile process as a transition from non-contact to contact, capturing the physical interaction between sensors and objects through a dual-level representation that encodes both sensor and object attributes. For tactile understanding, UniTac introduces two tasks, object property description and sensor identification, to enhance reasoning over physical and cross-sensor information. For tactile generation, we design a two-stage training paradigm consisting of reconstruction and alignment, together with a sensor-prior-based sampling strategy that simulates realistic tactile contact. Trained on large-scale multi-sensor datasets, UniTac achieves state-of-the-art performance in tactile understanding and generates realistic tactile signals across sensors."
+  },
+  {
     "title": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot - PR Newswire Asia",
     "original_title": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot - PR Newswire Asia",
     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQalhOVE9uVVJJMEkxOXdfUVoteWduN1VPMU56N095VEhMdEF6VTNOR0hnc3AwZEZ5MDlVTDh2RWZMTXFEWGRIckZEZjY5X0NacXVqNERhczh3UGdrYzJKYWZqVnN6LTlTYk8xUGh5M3gtQjNnZS1nUVo5ZFN4SmNodU9aMUt1NjZXYWhMTDhEbjVHTVRBT0FxdFlJbFhPb21jbF9sUHNHVDRjeUVsS2RxbVV4TUtMM0VaZGRPTVFwYWsxVFJ2MFNLM1hzLWRDbzM1dDY5WWpMMV9jd0xpTkE?oc=5",
@@ -79,6 +151,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot  PR Newswire Asia"
+  },
+  {
+    "title": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot - KIPOST",
+    "original_title": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot - KIPOST",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE40Z21BZkVpQUpOMWloVmFyaGdFNlRqWUZRemQ1R1oxOFU0bXFYZlp0RGtGa01WcnZ4eEFpQUd0V2lJZXR2ME41WDZETHB0bUNwQTFYdXdaRmxWdGc5OW5UTy1oNEFBUERD0gFsQVVfeXFMUHZwdllUM1pTSFJyZ2pmRVljb2FnSFd3S3pJMTFXMGJiZDFWbUJUOTRJQ2ZNN2lhVk1XQjZNNF90cEFZUVozbnRjU0R2OFpqLVdxYXVBRkdCVzhKa0tFaWUxSGc1TkZqU0Y1am1t?oc=5",
+    "date": "2026-07-01 02:40",
+    "source": "Google News (Humanoid)",
+    "category": "humanoid",
+    "summary": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot  KIPOST"
   },
   {
     "title": "UBTech launches lifelike humanoid robots built for companionship in China - South China Morning Post",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.21811v1 Announce Type: new \nAbstract: Robotic dexterous manipulation requires continuously reconciling objectives and constraints defined on heterogeneous geometric spaces: a robot controlled on a $\\mathbb{R}^7$ configuration manifold may need to track end effector poses on $\\mathrm{SE}(3)$ while satisfying obstacle avoidance margins in $\\mathbb{R}$. We present Safe Pullback Bundle Dynamical Systems (SafePBDS), a geometrically consistent framework that computes optimal, certifiably safe configuration manifold accelerations from objectives and safety requirements on arbitrary task manifolds. SafePBDS builds on prior work that combines predefined task manifold dynamical systems to produce autonomous motion. Its first innovation is a pullback control barrier function construction, which converts task manifold safety conditions into linear constraints on configuration manifold accelerations. The second innovation is a task manifold action interface that allows a high-level policy to inject low dimensional residual motions; zero input recovers the autonomous behavior, while safety is preserved under arbitrary inputs. This lets high-level policies efficiently steer exploration while leaving precise motion to the autonomous behavior. We validate SafePBDS in simulation and on a 23-DOF Franka Panda-Allegro Hand platform. On dexterous grasping, SafePBDS achieves a $92.5\\%$ success rate across 20 household objects and 120 trials. Using the action interface, the method can exclude any one of the four fingers during grasping via a one-dimensional action, achieving $94.4\\%$ 3-finger grasp success across 3 objects and 36 trials. The efficient planning and safety guarantee of SafePBDS also enables the first model-based, fully actuated palm-down in-hand reorientation, exceeding $360^\\circ$ of yaw rotation in both directions under varying object weight and wrist motion. Demo video and details: https://tml.stanford.edu/safe-pbds"
-  },
-  {
-    "title": "OCELOT: Odometry and Contact Estimation for Legged Robots",
-    "original_title": "OCELOT: Odometry and Contact Estimation for Legged Robots",
-    "link": "https://arxiv.org/abs/2605.21863",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.21863v1 Announce Type: new \nAbstract: One of the significant challenges in legged robotics is achieving accurate odometry using only onboard proprioceptive sensors. In this study, we present a complete leg odometry pipeline based on an Error-State EKF (ESEKF) that relies exclusively on proprioceptive data: a body fixed IMU, joint encoders, and force sensors, where filter's state is corrected by feet determined to be in a stationary stance. The core of our contribution is fused contact detection and an uncertainty quantification module designed to explicitly identify and reject slippage. This module runs two detectors in parallel for each foot, 1) a debounced, force-based Gaussian Mixture Model (GMM) guided Finite State Machine (FSM) to confirm physical contact, and 2) a kinematic-based Generalized Likelihood Ratio Test (GLRT) on the estimated velocity of the foot. The continuous quality scores from both estimators are fused to detect if the foot is both physically loaded and kinematically stationary and served as an uncertainty signal for each contact. To validate our approach, we collected a multi-modal dataset of 29 sequences spanning diverse indoor and outdoor terrains (e.g., concrete, grass, pebble, and rock) total of 2.4 km long. We benchmarked our approach against both proprioceptive and exteroceptive methods. The results demonstrate our method's efficacy in providing accurate odometry estimates, robustly handling slippage-prone environments. We also share our code and real-time ROS2 package as open-source."
-  },
-  {
-    "title": "Auction-Consensus Algorithm with Learned Bidding Scheme for Multi-Robot Systems",
-    "original_title": "Auction-Consensus Algorithm with Learned Bidding Scheme for Multi-Robot Systems",
-    "link": "https://arxiv.org/abs/2605.21932",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.21932v1 Announce Type: new \nAbstract: Multi-Robot Task Allocation (MRTA) is a central challenge in decentralized multi-agent systems, where teams of robots must cooperatively assign and execute tasks under limited communication while optimizing global performance objectives. Auction-consensus algorithms, such as the Consensus-Based Bundle Algorithm (CBBA), provide scalable decentralized coordination with provable convergence, but rely on hand-crafted greedy scoring functions that often lead to suboptimal task allocations. This paper proposes a learning-enhanced auction-consensus framework in which CBBA's deterministic bidding mechanism is replaced by a neural bidding policy trained using reinforcement learning. Under a centralized training and decentralized execution paradigm, agents learn to compute task bids from partial local observations while retaining the standard auction and consensus phases for decentralized coordination. The learned bidding policy is trained using Proximal Policy Optimization with rewards shaped by proximity to globally optimal solutions obtained via mixed-integer linear programming. Multiple neural architectures are evaluated, including a Neural Additive Model, the Long Short-Term Memory (LSTM) model, and the Set Transformer Model. Experimental results across varying swarm sizes demonstrate that learned bidding policies can improve solution quality over classical CBBA while preserving decentralized execution. The proposed approach highlights the effectiveness of integrating reinforcement learning with classical distributed coordination algorithms, offering a scalable pathway toward higher-quality decentralized multi-robot task allocation."
-  },
-  {
-    "title": "Learning to Evolve: Multi-modal Interactive Fields for Robust Humanoid Navigation in Dynamic Environments",
-    "original_title": "Learning to Evolve: Multi-modal Interactive Fields for Robust Humanoid Navigation in Dynamic Environments",
-    "link": "https://arxiv.org/abs/2605.21935",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.21935v1 Announce Type: new \nAbstract: Safe manipulation-oriented navigation for humanoid robots requires scene memory that remains reliable under locomotion-induced perceptual distortion, environmental changes, and interaction-level geometric safety constraints. Existing semantic mapping and scene-graph systems are difficult to deploy directly in this setting because they often assume stable camera trajectories, static environments, or coarse object geometry. We introduce the Multi-modal Interactive Field (MIF), a humanoid-oriented system that integrates confidence-aware semantic 3D Gaussian Splatting, discrepancy-triggered spatial memory updates, and task-driven geometric reconstruction within a closed-loop perception-adaptation pipeline. MIF couples three fields: an uncertainty-aware 3DGS Appearance Field that suppresses gait-induced blur, a Spatial Field that maintains topological memory, and a Geometry Field that supports Interaction Pose Safety (IPS) before manipulation. A discrepancy detection score is introduced to separate locomotion-induced false-positive changes from persistent changes and updates only locally inconsistent regions. On a Unitree-G1 humanoid in a real dynamic office, MIF improves relocation success in non-static environments from 12% to 94% compared with static scene-graph memory, while reducing semantic memory footprint by 91.4% through feature distillation for practical online operation. Project page and code: https://ziya-jiang.github.io/MIF-homepage/"
-  },
-  {
-    "title": "TacO: Benchmarking Tactile Sensors for Object Manipulation",
-    "original_title": "TacO: Benchmarking Tactile Sensors for Object Manipulation",
-    "link": "https://arxiv.org/abs/2605.21976",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.21976v1 Announce Type: new \nAbstract: Vision-based learning from demonstrations has achieved remarkable success in enabling robots to perform manipulation tasks and high-level semantic reasoning, yet it remains insufficient for complex, contact-rich manipulation. While there is broad agreement that tactile sensing improves manipulation, there is no empirical guidance on which tactile sensors are best suited for which manipulation tasks. In this paper, we provide a systematic, task-driven evaluation of tactile sensors for robot manipulation and propose a framework for selecting and evaluating sensors based on manipulation policy performance. Separate manipulation policies are trained for tactile sensors of four distinct modalities: visual, acoustic, magnetic, and resistive, across three tasks: pick-and-place with unknown mass, object reorientation, and plug insertion. For each task, an analysis of how sensor properties such as spatial resolution, shear sensing, and tactile representation, and the inherent material friction affect task performances is done. Rather than tactile sensing being universally beneficial in the same way, our results show that the usefulness of tactile information depends strongly on sensor modality, material properties, and the specific manipulation tasks. All of the tactile sensors, code, data, and hardware setup will be publicly available on the project website."
-  },
-  {
-    "title": "Industrial Dual-Arm Box Handling via Online Inertial Estimation and Convex Wrench Optimization",
-    "original_title": "Industrial Dual-Arm Box Handling via Online Inertial Estimation and Convex Wrench Optimization",
-    "link": "https://arxiv.org/abs/2605.22021",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.22021v1 Announce Type: new \nAbstract: Industrial robotic object handling often involves boxes and packages whose mass and center of mass are not known in advance. These uncertainties affect the force--moment balance required for stable lifting, and improper regulation of contact wrenches can lead to slip, object drop, orientation deviation, or excessive squeezing. This paper presents a friction-aware dual-arm box-handling framework for objects with unknown inertial properties. The proposed approach estimates the object mass and center of mass online from measured contact wrenches, and computes friction-feasible contact forces and torsional moments through a second-order cone program (SOCP) under ellipsoidal friction-limit-surface constraints. An offline trajectory refinement stage is also included to reduce undesired object--environment contact when geometric constraints are present. By enforcing friction feasibility as a hard constraint and minimizing contact effort within the feasible region, the framework achieves stable lifting without treating slip avoidance and excessive squeezing as separately tuned objectives. Experiments on a real dual-arm robotic system under different center-of-mass configurations demonstrate that the method lifts objects with unknown inertial properties while maintaining stable frictional contact."
-  },
-  {
-    "title": "Beyond Pixels: Learning Invariant Rewards for Real-World Robotics From a Few Demonstrations",
-    "original_title": "Beyond Pixels: Learning Invariant Rewards for Real-World Robotics From a Few Demonstrations",
-    "link": "https://arxiv.org/abs/2605.22123",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.22123v1 Announce Type: new \nAbstract: Designing reward functions that generalize beyond controlled laboratory settings remains a fundamental challenge in reinforcement learning for robotics. In open-world manipulation problems, a single task can appear in numerous variants through different object instances, positions, and camera viewpoints. Recent vision-based reward models tend to memorize specific pixel distributions and fail to generalize beyond their training conditions. To address this, we propose a framework that learns invariant symbolic reward functions from as few as five demonstrations. The insight is to shift from visual feature-fitting to the discovery of behavioral invariants: task-level properties that remain constant across diverse visual instantiations. The framework has two coupled components: a structural reward formulation that encodes task-level strategies and physical constraints while preserving optimal policy invariance, and a hybrid symbolic-numerical procedure that distills these invariants from demonstrations without online interaction. Experiments on eight Meta-World tasks and three Franka manipulation tasks demonstrate that our method achieves stronger process alignment and policy rollout ranking abilities compared to baselines, accelerating downstream policy learning. Three real-world out-of-distribution experiments further show that the same learned reward generalizes zero-shot to position, viewpoint, and object variations, enabling a single reward representation to be reused across diverse task variants in practice."
-  },
-  {
-    "title": "Action with Visual Primitives",
-    "original_title": "Action with Visual Primitives",
-    "link": "https://arxiv.org/abs/2605.22183",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.22183v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have emerged as a promising paradigm for generalist robotic manipulation. A common design in current architectures maps language instructions and visual observations to actions in a single forward pass. While conceptually simple, this formulation entangles instruction comprehension, spatial scene understanding, and motor control within a single learning objective. As a result, the action expert must implicitly relearn cognitive and perceptual capabilities already present in the pretrained VLM, which can limit both learning efficiency and generalization. We introduce AVP (Action with Visual Primitives), an end-to-end architecture that implements this visual-primitive-centric interface: the VLM infers the next-stage target and emits visual-primitive tokens that condition a flow-matching action expert, with supervision derived from end-effector kinematics. Real-robot experiments on general pick-and-place tasks show that AVP improves the success rate by 27.61% over pi_0.5 and outperforms other recent methods, with consistent gains in data efficiency, spatial-compositional generalization, and object-level transfer."
-  },
-  {
-    "title": "Imagine2Real: Towards Zero-shot Humanoid-Object Interaction via Video Generative Priors",
-    "original_title": "Imagine2Real: Towards Zero-shot Humanoid-Object Interaction via Video Generative Priors",
-    "link": "https://arxiv.org/abs/2605.22272",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.22272v1 Announce Type: new \nAbstract: Whole-body Humanoid-Object Interaction (HOI) is bottlenecked by the scarcity of high-fidelity 3D data. While video generative priors offer a promising alternative, existing methods suffer from \\textit{Representation Misalignment} due to their reliance on geometric priors (e.g., explicit CAD models), and \\textit{Retargeting Complexity} arising from intensive morphing and morphological mismatch. We propose Imagine2Real, a zero-shot HOI framework for flexible, geometry-free interaction. To resolve misalignment, we formulate robot and object motions as unified 4D point trajectories. To overcome retargeting complexity, our Keypoints Tracker tracks only sparse critical points (base, hands, and object), entirely bypassing the error-amplifying retargeting process. To maintain natural gaits despite these sparse signals, we utilize the latent space of a Behavior Foundation Model (BFM) as the tracker's search domain. Using a progressive training strategy, Imagine2Real learns robust behaviors with simple tracking rewards, enabling zero-shot physical deployment within a motion capture(mocap) system."
-  },
-  {
-    "title": "Spatial Memory for Out-of-Vision Manipulation in Vision-Language-Action",
-    "original_title": "Spatial Memory for Out-of-Vision Manipulation in Vision-Language-Action",
-    "link": "https://arxiv.org/abs/2605.22283",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.22283v1 Announce Type: new \nAbstract: We introduce SOMA, the Spatial Memory framework for Out-of-Vision Manipulation in Vision-Language-Action (VLA) models. Most existing VLAs implicitly assume that task-relevant objects are always visible, leading to brittle and reactive behaviors when targets fall outside the camera's field of view. SOMA addresses this limitation by equipping VLAs with a persistent spatial memory constructed from multi-view observations acquired via a movable head camera, enabling reasoning beyond the current visual frustum. The framework consists of three components: Spatial Memory Construction, which aggregates angular-wise observations into a unified spatial-semantic representation through scanning; Dynamic Memory Refinement, which maintains global consistency over time; and Contextual Memory Retrieval, which activates instruction-relevant spatial cues during manipulation. We evaluate SOMA on five challenging real-world out-of-vision manipulation tasks, including multi-step and dual-arm scenarios where target objects are initially invisible. Experimental results show that SOMA not only improves task success rates, but also induces qualitatively different manipulation behaviors, with faster target localization, reduced viewpoint search, and near one-shot grasping under partial observability. Additional experiments on RoboCasa GR1 and SimplerEnv further validate the effectiveness of SOMA's memory design under conventional fully observable settings. Code will be released soon."
   }
 ]
