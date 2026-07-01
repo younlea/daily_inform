@@ -144,6 +144,78 @@
     "summary": "arXiv:2606.31451v1 Announce Type: new \nAbstract: Unified multimodal models (UMMs) have shown great promise in integrating understanding and generation across diverse modalities. However, existing research rarely extends this paradigm to the tactile domain, where both object-level semantics and sensor-level configurations jointly determine the meaning of touch. To address this gap, we propose UniTac, the first UMM designed for tactile understanding and generation. UniTac models the tactile process as a transition from non-contact to contact, capturing the physical interaction between sensors and objects through a dual-level representation that encodes both sensor and object attributes. For tactile understanding, UniTac introduces two tasks, object property description and sensor identification, to enhance reasoning over physical and cross-sensor information. For tactile generation, we design a two-stage training paradigm consisting of reconstruction and alignment, together with a sensor-prior-based sampling strategy that simulates realistic tactile contact. Trained on large-scale multi-sensor datasets, UniTac achieves state-of-the-art performance in tactile understanding and generates realistic tactile signals across sensors."
   },
   {
+    "title": "ChronoFlow-Policy: Unifying Past-Current-Future Interaction Flow in Visuomotor Policy Learning",
+    "original_title": "ChronoFlow-Policy: Unifying Past-Current-Future Interaction Flow in Visuomotor Policy Learning",
+    "link": "https://arxiv.org/abs/2606.31493",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31493v1 Announce Type: new \nAbstract: Visual signals play a crucial role in policy learning by enabling models to capture object motion and interaction dynamics. Just as humans reason about actions using both past experience and anticipated outcomes, effective policies should integrate past interactions with future predictions. However, existing visuomotor policies typically model either historical context or future dynamics in isolation, lacking a unified temporal representation of interaction dynamics. In this work, we introduce \\textbf{ChronoFlow}, a temporally unified representation that captures \\textbf{past, current, and future} interaction dynamics through sparse 3D keypoints of both objects and the gripper. Based on this representation, we propose \\textbf{ChronoFlow-Policy}, a diffusion-based visuomotor policy that jointly learns ChronoFlow and action sequences through a co-training objective. Experiments on 14 simulated tasks and 5 real-world manipulation tasks demonstrate that ChronoFlow-Policy consistently outperforms strong diffusion-policy baselines and improves robustness in long-horizon and non-Markovian manipulation scenarios."
+  },
+  {
+    "title": "Robustness of Robotic Manipulation: Foundations and Frontiers",
+    "original_title": "Robustness of Robotic Manipulation: Foundations and Frontiers",
+    "link": "https://arxiv.org/abs/2606.31494",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31494v1 Announce Type: new \nAbstract: Humans and animals exhibit remarkable robustness in physical manipulation, yet robots remain far behind. Progress toward human-level manipulation robustness is hindered by the absence of a unified and systematic understanding: different subfields frame robustness in distinct ways, often leaving the concept ambiguous and limiting deeper analysis as well as communication across research areas. This paper presents a systematic study of manipulation robustness. We begin with a formal definition, characterizing robustness as the degree to which a manipulation system can achieve its goal in the presence of uncertainty and variation. Building on this definition, we introduce general formulations of manipulation robustness from probabilistic and control-theoretic perspectives. We then synthesize the guiding principles and concrete mechanisms of manipulation robustness across perception, planning, control, policy learning, and hardware, illustrating each mechanism through representative works, including foundational and recent studies. In addition, we revisit existing metrics and evaluation methods for quantifying manipulation robustness. Finally, we distill broader lessons for designing robust manipulation systems and discuss open problems and future directions toward achieving human-level robustness in robotic manipulation."
+  },
+  {
+    "title": "HABIT: Human-Aware Behavior and Interaction Training Dataset for Robot Manipulation",
+    "original_title": "HABIT: Human-Aware Behavior and Interaction Training Dataset for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2606.31682",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31682v1 Announce Type: new \nAbstract: Large-scale demonstration datasets have been central to recent progress in general-purpose robot policies. However, existing datasets are collected in human-absent settings, and policies trained on such data may perform tasks competently in isolation but fail to exhibit human-aware behaviors. To address this gap, we introduce HABIT, a large-scale robot demonstration dataset for human-present environments. We organize tasks into three roles capturing distinct modes of human-robot interaction: Collaborator, where human and robot jointly accomplish a task; Coworker, where they pursue separate tasks in a shared space; and Supervisor, where the human directs the robot. The dataset comprises over 10K episodes and over 160 hours across 60 tasks. Our experiments show that training on human-present data elicits human-aware behaviors that robot-only data fails to produce: spatiotemporal synchronization in Collaborator tasks, yielding in Coworker tasks, and gesture grounding in Supervisor tasks. Moreover, training on HABIT enables rapid adaptation to new human-robot interaction tasks. By introducing human presence as a new axis of dataset diversity, HABIT extends robot policies to environments shared with humans."
+  },
+  {
+    "title": "FastDSAC: Enhancing Policy Plasticity via Constrained Exploration for Scalable Humanoid Locomotion",
+    "original_title": "FastDSAC: Enhancing Policy Plasticity via Constrained Exploration for Scalable Humanoid Locomotion",
+    "link": "https://arxiv.org/abs/2606.31691",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.31691v1 Announce Type: new \nAbstract: Scalable reinforcement learning has popularized high-throughput sampling architectures, which significantly compresses the training time for off-policy methods in robotic locomotion. However, the rapid increase of data volume and update frequency undermines the stability of value-based methods and diminishes the plasticity of policy networks. To address these challenges, this work presents FastDSAC, a fast and high-performance variant of the Distributional Actor-Critic algorithm designed for parallel sampling scenarios. Specifically, we introduce a truncated Gaussian distribution to approximate the learned policy, which effectively excludes out-of-distribution actions that strain target value estimation while keeping necessary stochasticity for exploration. The proposed action constraint functions as an implicit regularization, which counteracts the plasticity loss typically caused by aggressive gradient updates. This preservation of network adaptability enhances sample efficiency, particularly in scenarios with a high update-to-data ratio, and accelerates the early training process. In contrast to prior fast reinforcement learning approaches that rely on discrete value distributions, our method utilizes a continuous Gaussian representation equipped with adaptive variance regulation, which improves value estimation accuracy by sampling confident and informative transitions. Extensive experiments on MuJoCo Playground and HumanoidBench demonstrate that FastDSAC not only stabilizes the overall training process but also achieves superior asymptotic performance and faster convergence compared to state-of-the-art baselines."
+  },
+  {
+    "title": "RCT: A Robot-Collected Touch-Vision-Language Dataset for Tactile Generalization",
+    "original_title": "RCT: A Robot-Collected Touch-Vision-Language Dataset for Tactile Generalization",
+    "link": "https://arxiv.org/abs/2606.31694",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31694v1 Announce Type: new \nAbstract: For robots manipulating open-world objects, tactile representations must generalize to unseen materials. We introduce RCT (Robotic Contact Tactile), a robot-collected touch-vision-language dataset with 29,279 tactile frames from full robot presses on 122 industrial reference materials in 7 categories, recorded with three DIGIT sensors at multiple contact positions. RCT preserves each press as a contact sequence, enabling held-out evaluation across materials, categories, sensors, contact positions, and contact sequences. Frames from one press are strongly correlated: frame-random splits can place near-duplicate observations of the same physical interaction in both training and test. With the encoder held fixed, removing contact-sequence overlap reduces tactile-to-text Recall@1 by 17.7 percentage points. When materials are additionally held out at training time, performance drops sharply, leaving held-out-material Recall@1 at 25.1 +/- 6.1% averaged over three held-out draws. The public TVL/HCT split shows the same structure: every test contact sequence appears in training, and raw-pixel nearest neighbors recover the correct sequence in 98.3% of cases. Uniformly sampling a press improves contrastive training, and RCT-trained embeddings improve category probes on unseen materials. RCT makes contact-sequence-aware, held-out-material evaluation reproducible and exposes novel-material generalization as a central challenge for robotic tactile perception. The RCT dataset is open-sourced at https://faerber-lab.github.io/RCT/"
+  },
+  {
+    "title": "UniTacVLA: Unified Tactile Understanding and Prediction in Vision Language Action Models",
+    "original_title": "UniTacVLA: Unified Tactile Understanding and Prediction in Vision Language Action Models",
+    "link": "https://arxiv.org/abs/2606.31723",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31723v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models have achieved strong performance in many robotic manipulation tasks, yet remain limited in contact-rich dexterous manipulation. To overcome this limitation, recent vision-tactile-language-action (VTLA) methods incorporate tactile sensing into VLA models to provide direct contact information. However, they typically treat tactile signals as passive auxiliary inputs, making it difficult to model tactile semantics and future physical interactions. To this end, we propose a unified tactile learning framework for contact-rich manipulation that models tactile signals as dynamic interaction cues for both contact understanding and prediction. Specifically, we construct a unified tactile latent space and jointly model current tactile states and future contact changes through tactile chain-of-thought reasoning and coarse-to-fine future tactile prediction, thereby forming a state-aware and dynamics-aware tactile prior. Based on this prior, we introduce a tactile-action mixed controller that combines real-time and predicted tactile feedback to refine low-frequency action chunks with high-frequency corrections. Real-world experiments on four categories of contact-rich tasks, including adjustment, insertion, wiping, and assembly, under both clean and externally perturbed settings, show that our method improves success rate, manipulation accuracy, and contact robustness over existing methods, demonstrating its effectiveness in dexterous physical interaction."
+  },
+  {
+    "title": "Reinforcement Learning-Based Control for an Inline Skating Humanoid Robot",
+    "original_title": "Reinforcement Learning-Based Control for an Inline Skating Humanoid Robot",
+    "link": "https://arxiv.org/abs/2606.31807",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2606.31807v1 Announce Type: new \nAbstract: As humanoid robots become increasingly dynamic, coupling them with reinforcement learning offers a promising approach to solving the complex, underactuated mechanics of passive inline skating. Equipping a humanoid robot with passive inline skating wheels presents an opportunity to combine the versatile agility of humanoids with the high-speed, energy-efficient locomotion strategies utilized by human skaters. In this paper, we train and deploy a reinforcement learning control policy that enables novel locomotion strategies for a humanoid robot modified to equip consumer inline skates instead of conventional feet. Unlike previous work limited to quadrupedal robots or actively driven wheels, our system allows for precise 6-DoF control of the skates to execute dynamic, edge-driven propulsion strategies. Our skating strategies emerge entirely from our reward structure, without reliance on human motion data, imitation learning, or kinematic priors. We overcome the inherent instability of passive wheels and simulation contact artifacts by utilizing different geometric wheel models (spherical and ellipsoidal) during training and validation, along with a custom success-based command curriculum and a specialized rolling reward. Consequently, our policy demonstrates up to a 50% reduction in Cost of Transport (CoT) compared to standard walking gaits. The resulting policy successfully transfers zero-shot to the physical Booster T1 hardware. Real-world deployments demonstrate dynamic balance, the ability to reject active physical perturbations, and agile locomotion strategies capable of turning at speed. A video of our results can be found at https://www.youtube.com/watch?v=-_APcOS7uFo."
+  },
+  {
+    "title": "RoboTacDex: A Dexterous Visual-Tactile-Action Dataset for Humanoid Manipulation",
+    "original_title": "RoboTacDex: A Dexterous Visual-Tactile-Action Dataset for Humanoid Manipulation",
+    "link": "https://arxiv.org/abs/2606.31836",
+    "date": "2026-07-01 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2606.31836v1 Announce Type: new \nAbstract: In the field of robot learning, large-scale and diverse demonstration trajectories provide the fundamental basis for enhancing robotic manipulation ability. We introduce RoboTacDex, a large, multi-modal, and diverse dataset of dexterous manipulation behaviors performed with a humanoid robot. Built on the publicly accessible humanoid robot Unitree G1, RoboTacDex consists of 6k trajectories covering 19 tasks, 23 skills, and interactions with 22 objects. RoboTacDex provides comprehensive records including multi-view RGB and depth information, tactile feedback, and detailed semantic annotations. Furthermore, the dataset features a variety of relatively challenging tasks that can only be completed by dual arms and dexterous hands, aiming to mimic human-like operational logic and simulate real-world manipulation complexity. To ensure data collection quality, we develop an improved multi-camera synchronization system to enable millisecond data synchronization and recording of modalities. In our experiments, we evaluate three representative imitation learning models on our dataset,\n  analyzing their performance as well as their respective strengths and limitations across different task categories. Successful trial results and a moderate level of generalization capabilities across a suite of tasks indicate the effectiveness and diversity of the collected dataset. Our dataset will be open-sourced soon."
+  },
+  {
     "title": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot - PR Newswire Asia",
     "original_title": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot - PR Newswire Asia",
     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQalhOVE9uVVJJMEkxOXdfUVoteWduN1VPMU56N095VEhMdEF6VTNOR0hnc3AwZEZ5MDlVTDh2RWZMTXFEWGRIckZEZjY5X0NacXVqNERhczh3UGdrYzJKYWZqVnN6LTlTYk8xUGh5M3gtQjNnZS1nUVo5ZFN4SmNodU9aMUt1NjZXYWhMTDhEbjVHTVRBT0FxdFlJbFhPb21jbF9sUHNHVDRjeUVsS2RxbVV4TUtMM0VaZGRPTVFwYWsxVFJ2MFNLM1hzLWRDbzM1dDY5WWpMMV9jd0xpTkE?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "Humanoid, a UK-based AI and robotics company, has agreed a partnership with manufacturing giant Bosch, marking the transition to scaled production of humanoid robots. The agreement follows the successful completion of a joint proof of concept (POC) in March 2026, where Humanoid’s platform demonstrated full capability in a complex industrial workflow. The POC focused on […]"
-  },
-  {
-    "title": "Chinese Humanoid Robots Fight in San Francisco, Sparking New Boxing League Plans - eWeek",
-    "original_title": "Chinese Humanoid Robots Fight in San Francisco, Sparking New Boxing League Plans - eWeek",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcmZnTXFmd091Tk45VVRvQmc0bGZXRmYtdlptRmpoQmhtcDJRMHVUb25tVjdLMS1fQVJjZTR0NGV1eThEVjduUmtfMHZqZUFTS2ZDelZJUDZtN25FTFBnYUhZQlJ4Y1lSdWd6YmtLTnk4bHpmaU5UNTVWeWZQd0wtb1JiX1Q?oc=5",
-    "date": "2026-05-22 07:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese Humanoid Robots Fight in San Francisco, Sparking New Boxing League Plans  eWeek"
-  },
-  {
-    "title": "[Column] 'Humans,' Not Robots, Collect Data… Human Trajectory, the New Standard for the Physical AI Era - Shim Dong-hyun, CEO of Watts Lab - 에이빙",
-    "original_title": "[Column] 'Humans,' Not Robots, Collect Data… Human Trajectory, the New Standard for the Physical AI Era - Shim Dong-hyun, CEO of Watts Lab - 에이빙",
-    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiVl9XV0JrMDYwTlc2Q2lhTTRHN3RVMDBJQ0VSSWRPVE1zd3JHYTNoUV9TNjNZbU9FWDNiNHpCbHVHakxBUTdSd3dSWTNGQm5DSld2OUFwemYxd1pnVEd6ZVZveXZjdGfSAWtBVV95cUxQOFBGdTItaG96Uy15RGFBM2V1M3FEY1p2TmFqZnA4a2NWQ3NpN1FTQld6OTdwLV8zN0ZtSHpvNzRQREs2bGRucDZscm9QV2RHREhmQjZZSFRybFk1M3BlM2RlUWZxbHNNUVBlYw?oc=5",
-    "date": "2026-05-22 06:58",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "[Column] 'Humans,' Not Robots, Collect Data… Human Trajectory, the New Standard for the Physical AI Era - Shim Dong-hyun, CEO of Watts Lab  에이빙"
-  },
-  {
-    "title": "Unitree humanoid robot trips and falls while performing Michael Jackson moonwalk - VnExpress International",
-    "original_title": "Unitree humanoid robot trips and falls while performing Michael Jackson moonwalk - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSmVLYWRyd3VpSE82MlpXZjZTZldlQnIyS2ozYmRPTTR4cG1xTlktSTZZYnFNSmFVTmVLS0k0dy1ZZXhkeDdRRFBZY3o0RWpGZHByWXlOZklYWmdiNzBNWjlUb3E3YjJhS2FsTHNzWDJnYVFvOU0zamVEczZEN0FjbU9qTEd4Z2pFOUFLVWg5ZDdCRnViVEx4TGZrLS1aanRxY1B0eG5zZjVhT05PZF82ZDU2V2dsVldZSlYxM3pIajFHa3FhRldKME02LWlzYUVFbzBZ?oc=5",
-    "date": "2026-05-22 04:43",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree humanoid robot trips and falls while performing Michael Jackson moonwalk  VnExpress International"
-  },
-  {
-    "title": "World's first humanoid robot auction to launched at China’s biggest shopping event - VnExpress International",
-    "original_title": "World's first humanoid robot auction to launched at China’s biggest shopping event - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQc0hzUWNIRFVNQ2FraHRHWHBPLUc0S3JBWHgzRTNfYVZTcWFLbTlRMDQwaXZWNDE2Y0ZabEZ3b0NnR1ZMOF9OcjA0VktQc3A0TWctZGJMTnJaX19xV3FSQ1o0dmhzYjRIUkxibmc4VWl6X3p5Nm5LaC1lU19vOFhoeHFjbUplOXowRWlnekJnQmk1alNLRWZ0aGlCanA2a1AyWE5DTi1qZDRuTTZyTU1rYklKeWFCNE1McXNTbEY2RUlBQjVfQzV1VHYyXzhRaVVPclI1Y2JR?oc=5",
-    "date": "2026-05-22 04:41",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "World's first humanoid robot auction to launched at China’s biggest shopping event  VnExpress International"
-  },
-  {
-    "title": "Closed-Loop Sim-to-Real Reinforcement Learning for Deformable Microfiber Shape Control",
-    "original_title": "Closed-Loop Sim-to-Real Reinforcement Learning for Deformable Microfiber Shape Control",
-    "link": "https://arxiv.org/abs/2605.21688",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.21688v1 Announce Type: new \nAbstract: Autonomous contact-based micromanipulation is challenging because surface and interfacial interactions at the microscale are difficult to model accurately, limiting the use of conventional model-based control and sim-to-real learning. We present a closed-loop sim-to-real reinforcement learning (RL) approach for microfiber shape control on a surface. The central idea is to train geometric shape regulation in a simplified frictionless simulator and rely on real-time visual feedback during deployment to iteratively correct the observed effects of unmodeled surface interactions. An RL policy trained entirely in simulation is transferred directly to a physical dual-gripper micromanipulation system operating at 40 Hz, without retraining or domain adaptation. Using silk microfibers as a testbed, the policy achieves a mean point-wise shape error of 270 $\\pm$ 80 $\\mu$m across twenty-four diverse initial configurations. Across nine specimens covering all combinations of three fiber diameters (50, 80, and 120 $\\mu$m) and three manipulated lengths (10 mm, 15mm, and 20 mm), the same policy achieves sub-millimeter final shape error without any retraining or retuning. These results show that a policy learned in a simplified simulator can achieve repeatable real-world microfiber shape regulation under surface contact, provided that the task-relevant effects of the sim-to-real mismatch remain observable and correctable within the closed feedback loop."
-  },
-  {
-    "title": "Motion Design for Grasp-Based Dynamic Locomotion in Microgravity",
-    "original_title": "Motion Design for Grasp-Based Dynamic Locomotion in Microgravity",
-    "link": "https://arxiv.org/abs/2605.21704",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.21704v1 Announce Type: new \nAbstract: Locomotion in microgravity often relies on sparsely and irregularly arranged anchors, motivating grasp-based mobility with multiple limbs. In this setting, dynamic locomotion is feasible only through deliberate regulation of both anchored interactions and whole-body coordination under coupled dynamic and kinematic constraints. This paper presents design insights for grasp-based dynamic locomotion with multi-limbed robotic systems in microgravity, targeting scenarios that require 6D limb manipulation to establish contacts with candidate anchors. The investigated design parameters include gait pattern, stride length, locomotion speed, and nominal posture. A parameterizable locomotion planning framework is proposed to support variations of these parameters and to evaluate the resulting locomotion performance in terms of stability and actuation demand. Two representative quadruped morphologies are adopted for evaluation in physics-based simulation. The results demonstrate that enlarging the feasible contact wrench space and attenuating impulsive whole-body dynamics improve locomotion performance. These findings inform strategies for contact configuration selection and whole-body coordination in microgravity locomotion with multi-limbed systems."
-  },
-  {
-    "title": "PGDG: Physically Grounded Data Generation for Robust Bimanual Policy Learning from a Single Demonstration",
-    "original_title": "PGDG: Physically Grounded Data Generation for Robust Bimanual Policy Learning from a Single Demonstration",
-    "link": "https://arxiv.org/abs/2605.21710",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.21710v1 Announce Type: new \nAbstract: Behavior cloning for contact-rich bimanual manipulation remains challenging because diverse demonstrations are expensive to collect, and even small disturbances can push the system into off-manifold states where no recovery supervision is available. We propose PGDG, a data generation framework with zero-shot curation that expands a single demonstration into a compact dataset of physically plausible, successful, and diverse recovery behaviors without additional human labeling. PGDG iterates between a physics-grounded sampler and a dataset curator, where the curator selects informative, non-redundant, and recoverable behaviors to update the sampling distribution toward under-covered recovery modes, and the sampler draws physically plausible rollout candidates from this updated distribution and retains successful trajectories. To further improve data quality, PGDG applies short-horizon sampling-based control to relabel selected risky states with corrective actions. Across four bimanual manipulation tasks, PGDG consistently outperforms spatial-only augmentation in both simulation and zero-shot real-world transfer. On RotateBox-Pitch, success improves from 38% to 93% in simulation and from 35% to 82% in the real world. PGDG also enables effective foundation models fine-tuning such as GR00T, increasing success from 46% to 77%. Additional results are available in our website: https://cunxid.github.io/PGDG/."
-  },
-  {
-    "title": "Safe and Steerable Geometric Motion Policies for Robotic Dexterous Manipulation",
-    "original_title": "Safe and Steerable Geometric Motion Policies for Robotic Dexterous Manipulation",
-    "link": "https://arxiv.org/abs/2605.21811",
-    "date": "2026-05-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.21811v1 Announce Type: new \nAbstract: Robotic dexterous manipulation requires continuously reconciling objectives and constraints defined on heterogeneous geometric spaces: a robot controlled on a $\\mathbb{R}^7$ configuration manifold may need to track end effector poses on $\\mathrm{SE}(3)$ while satisfying obstacle avoidance margins in $\\mathbb{R}$. We present Safe Pullback Bundle Dynamical Systems (SafePBDS), a geometrically consistent framework that computes optimal, certifiably safe configuration manifold accelerations from objectives and safety requirements on arbitrary task manifolds. SafePBDS builds on prior work that combines predefined task manifold dynamical systems to produce autonomous motion. Its first innovation is a pullback control barrier function construction, which converts task manifold safety conditions into linear constraints on configuration manifold accelerations. The second innovation is a task manifold action interface that allows a high-level policy to inject low dimensional residual motions; zero input recovers the autonomous behavior, while safety is preserved under arbitrary inputs. This lets high-level policies efficiently steer exploration while leaving precise motion to the autonomous behavior. We validate SafePBDS in simulation and on a 23-DOF Franka Panda-Allegro Hand platform. On dexterous grasping, SafePBDS achieves a $92.5\\%$ success rate across 20 household objects and 120 trials. Using the action interface, the method can exclude any one of the four fingers during grasping via a one-dimensional action, achieving $94.4\\%$ 3-finger grasp success across 3 objects and 36 trials. The efficient planning and safety guarantee of SafePBDS also enables the first model-based, fully actuated palm-down in-hand reorientation, exceeding $360^\\circ$ of yaw rotation in both directions under varying object weight and wrist motion. Demo video and details: https://tml.stanford.edu/safe-pbds"
   }
 ]
