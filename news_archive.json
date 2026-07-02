@@ -1,5 +1,77 @@
 [
   {
+    "title": "EmbodimentSemantic: A Spatial Scene-Graph Dataset and Benchmark for Vision-Language Models on Embodied Manipulation Trajectories",
+    "original_title": "EmbodimentSemantic: A Spatial Scene-Graph Dataset and Benchmark for Vision-Language Models on Embodied Manipulation Trajectories",
+    "link": "https://arxiv.org/abs/2607.00020",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00020v1 Announce Type: new \nAbstract: Spatial grounding remains a key limitation of vision-language-action (VLA) systems for robotic manipulation. While current models can recognize objects and follow language instructions, they often lack an explicit representation of how objects are arranged in space, including support, containment, ordering, occlusion, and depth-sensitive relations. We introduce EmbodimentSemantic, a spatial scene-graph dataset and benchmark for evaluating relational grounding in embodied manipulation. EmbodimentSemantic represents scenes as directed object-relation-object triplets, where each triplet specifies a spatial relation between an ordered pair of objects using a fixed set of relations. This representation enables direct evaluation of object binding, relation prediction, and spatial consistency. The dataset includes real-world manipulation observations collected with the low-cost SO101 robot arm, together with generated scene graphs for studying spatial grounding in practical robotic settings. To provide controlled validation, we also introduce a simulator-grounded LIBERO benchmark with over 60K manipulation frames and more than 120K camera-specific scene graphs across paired third-person and wrist views, where ground-truth relations are derived automatically from MuJoCo geometry, world coordinates, camera projections, and visibility constraints. We further test whether scene graphs improve downstream control by injecting them into existing VLA policy prompts. Experiments across open-source and commercial VLMs show that current models often predict plausible relations but struggle with exact depth-aware and viewpoint-dependent spatial structure. EmbodimentSemantic provides a unified framework for diagnosing spatial grounding in VLM perception and testing its utility for VLA manipulation."
+  },
+  {
+    "title": "FLYNN: Robust Neural Network for Robot Navigation using Fly Brain Topology",
+    "original_title": "FLYNN: Robust Neural Network for Robot Navigation using Fly Brain Topology",
+    "link": "https://arxiv.org/abs/2607.00025",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00025v1 Announce Type: new \nAbstract: While deep learning models achieve state-of-the-art performance in complex tasks, they remain brittle when faced with new environments or sensory deprivation. In contrast, biological systems exhibit remarkable tolerance to these challenges. We address this vulnerability by developing a recurrent neural network (RNN) whose architecture is directly derived from the synaptic-resolution brain connectome of the fruit fly Drosophila melanogaster. We demonstrate the feasibility of training the fly connectome neural network (FLYNN) to perform vision-based navigation in MuJoCo, achieving performance comparable to modern hand-crafted networks of similar parameter counts. Crucially, FLYNN exhibits superior resistance to out-of-distribution (OOD) data and tolerance to sensory loss without further training. It remained functional even under total vision loss while hand-crafted networks largely failed, even when specifically trained with camera dropout. Principal Component Analysis (PCA) of the internal state of FLYNN suggests that it exhibits a particularly high degree of representational modularity, which might be related to its robustness. Our work provides a new direction for designing resilient artificial agents following the topology of biological brains."
+  },
+  {
+    "title": "Trajectory Learning with Graph Representations for Social Robot Navigation",
+    "original_title": "Trajectory Learning with Graph Representations for Social Robot Navigation",
+    "link": "https://arxiv.org/abs/2607.00028",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00028v1 Announce Type: new \nAbstract: Autonomous mobile robots are expected to exhibit socially compliant navigation for minimizing pedestrian disturbance. While capturing social interactions and incorporating pedestrian motion estimations into decision-making are beneficial for compliance, prior methods fail to address both spatial and temporal characteristics present in real-world data. Reinforcement Learning offers high capability, but it requires hand-crafted reward functions that reduce social behavior to static criteria, limiting its ability to reproduce patterns that exist in real pedestrian behavior. Imitation Learning offers direct training from real-world data but lacks modeling of social interactions and suffers from error accumulation. To this end, we propose an imitation learning framework that leverages spatiotemporal dynamics for socially compliant navigation. To represent social context based on interactions, we introduce a graph-based auxiliary network that encodes crowd states by attending to pedestrians. In addition, we present a navigation module that captures temporal dynamics and mitigates error accumulations by incorporating encoded state predictions and employing a trajectory-level learning objective. Our framework outperforms established data-driven baselines on simulation and a real-world dataset across diverse social metrics."
+  },
+  {
+    "title": "Joint Discovery of Object and Action Symbols through Effect Prediction for Robotic Manipulation Planning",
+    "original_title": "Joint Discovery of Object and Action Symbols through Effect Prediction for Robotic Manipulation Planning",
+    "link": "https://arxiv.org/abs/2607.00031",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00031v1 Announce Type: new \nAbstract: To perform complex manipulation planning, autonomous robots are required to abstract continuous, high-dimensional sensorimotor interactions into discrete object and action representations. Earlier work either categorized objects based on visual appearances, which fails to distinguish objects that appear similar but behave differently, or based on effects under interaction, but was limited to predefined actions. To address these limitations, we propose a model that jointly discovers high-level manipulation primitives and object categories through a binary bottleneck layer, trained to predict multi-modal outcomes, including object motion, contact, and force feedback, from random interaction data. Building on these discovered binary representations, we leverage a discrete planning method that uses intermediate steps in the predicted effect trajectory to enable partial action executions for precise low-level control. Additionally, we evaluate our framework's generalization capabilities on novel objects by assigning object categories through comparing a small number of interaction effects with the predicted effects of learned object symbols, enabling few-shot generalization based on behavior rather than visual similarity. We conduct experiments on tabletop repositioning and stacking tasks, and confirm that our effect-driven planning approach outperforms both a state-of-the-art method and a visual-based alternative in planning precision across seen and novel objects."
+  },
+  {
+    "title": "Learning Dexterous Manipulation Using Contact Wrench Guidance From Human Demonstration",
+    "original_title": "Learning Dexterous Manipulation Using Contact Wrench Guidance From Human Demonstration",
+    "link": "https://arxiv.org/abs/2607.00033",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00033v1 Announce Type: new \nAbstract: Dexterous robot manipulation can benefit from the abundance of human demonstrations, but transferring such demonstrations to robot policies remains challenging. We present Contact Wrench Guidance from Human Demonstration in Robotic Dexterous Manipulation (CHORD), a framework for long-horizon manipulation of rigid and articulated objects with reinforcement learning. The key idea is object-centric contact wrench space guidance: we represent human and robot motions by the forces and torques they can induce on the object, enabling similarity to be measured by the induced instantaneous motions. This guidance makes reinforcement learning more scalable for contact-rich dexterous manipulation. We further introduce a large-scale simulation benchmark with 4,739 bimanual dexterous manipulation tasks, constructed from motion-capture datasets and reconstructed in-house videos. Evaluated on 1,831 benchmark tasks, CHORD achieves an average success rate of 82.12%, demonstrating strong scalability. CHORD also generalizes to whole-body manipulation from hand-only and third-person demonstrations, achieving a 90.77% success rate, and the learned policies transfer to the real world in both open-loop and closed-loop settings."
+  },
+  {
+    "title": "AD-MPCC: Adaptive Differentiable Model Predictive Contouring Control for Autonomous Racing",
+    "original_title": "AD-MPCC: Adaptive Differentiable Model Predictive Contouring Control for Autonomous Racing",
+    "link": "https://arxiv.org/abs/2607.00141",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00141v1 Announce Type: new \nAbstract: This paper presents Adaptive Differentiable Model Predictive Contouring Control (AD-MPCC), a framework for autonomous racing that integrates differentiable MPCC with online parameter estimation to handle varying road-surface conditions. For online parameter estimation, we leverage a parameterized Pacejka Magic Formula together with a regularized moving-horizon estimation scheme with exponentially decaying weights to capture road interactions and update parameters in real time. Furthermore, we propose a differentiable MPCC (Diff-MPCC) framework that enables optimal adjustment of objective weights based on predefined long-horizon performance costs. To implement Diff-MPCC for online objective weight adaptation, we propose a Pacejka-informed machine learning model that is trained in a supervised manner using data generated by Diff-MPCC to tune the objective weights. Simulation results demonstrate that AD-MPCC reliably ensures safety and achieves faster lap times compared to baseline controllers in both single-surface and multiple-surface scenarios."
+  },
+  {
+    "title": "3D Point World Models: Point Completion Enables More Accurate Dynamics Learning",
+    "original_title": "3D Point World Models: Point Completion Enables More Accurate Dynamics Learning",
+    "link": "https://arxiv.org/abs/2607.00148",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00148v1 Announce Type: new \nAbstract: Learning predictive models of the world enables robotic control through planning, potentially allowing robots to improvise solutions on new tasks. However, large video-based dynamics models lack explicit 3D spatial structure and suffer from geometrically inconsistent long-term rollouts with compounding errors. Emerging 3D dynamics models based on partial point clouds improve geometric consistency but remain sensitive to occlusions and accumulated prediction drift. To address these challenges, we present 3D Point World Models (3DPWM) - a task-agnostic world model that operates entirely in 3D space by first completing partial point clouds and then learning action-conditioned dynamics in this completed 3D scene. By operating on completed geometry, 3DPWM enables reliable long-horizon rollouts and more accurate cost evaluation for model-based planning while supporting adaptation to new tasks. Experiments across different robotic embodiments and tabletop manipulation benchmarks demonstrate that 3DPWM achieves significantly more reliable long-horizon rollouts (100-300+ steps), supports both open-loop and closed-loop planning, and enables successful sim-to-real transfer."
+  },
+  {
+    "title": "ASPIRE: Agentic /Skills Discovery for Robotics",
+    "original_title": "ASPIRE: Agentic /Skills Discovery for Robotics",
+    "link": "https://arxiv.org/abs/2607.00272",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00272v1 Announce Type: new \nAbstract: Traditional robot programming is challenging: it requires orchestrating multimodal perception, managing physical contact dynamics, and handling diverse configurations and execution failures. We introduce ASPIRE (Agentic Skill Programming through Iterative Robot Exploration), a continual learning system that autonomously writes and refines robot control programs in a code-as-policy paradigm while compounding experience into a reusable skill library. ASPIRE discovers skills that persist across tasks, simulation and real-world settings, and embodiments. It operates in an open-ended loop with three components: (1) a closed-loop robot execution engine that exposes fine-grained multimodal traces, enabling autonomous failure diagnosis, repair synthesis, and validation; (2) a continually expanding skill library that distills validated fixes into reusable, transferable knowledge; and (3) evolutionary search that generates diverse task sequences and control programs to explore beyond single-trajectory refinement. ASPIRE surpasses prior methods by up to 77% on LIBERO-Pro manipulation under perturbation, 72% on Robosuite bimanual handover, and 32% on BEHAVIOR-1K long-horizon household tasks. Its accumulated library also enables zero-shot generalization to unseen long-horizon tasks: on LIBERO-Pro Long, ASPIRE achieves 31% success versus 4% for prior methods despite their use of test-time reasoning and retries. Finally, simulation-discovered skills provide initial evidence of sim-to-real transfer, substantially reducing real-robot programming effort across different embodiments and robot APIs."
+  },
+  {
     "title": "UN warns AI is advancing faster than science and regulation - thenationalnews.com",
     "original_title": "UN warns AI is advancing faster than science and regulation - thenationalnews.com",
     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbUlJSUo4NS1pcU10RHBvR1F5aE52eHl6SEJ5T29IRnRIUHRXRU5LamJhaEhIYzR4UlVFZ0F2cDZhcnBvZTJkMDNhWGNLOFdicENYQjdPV0VQZ210SXNsa1RJTlNxeWtYMjZ2THpoMzBKc0JkWDBqdVFBbE4tdHNyaHYtRm95UFVvQkpMVDAzUUdRWnRLV1JXYi1tZFRQR010Z3dyTXVWZWhDRHdBMTk3NA?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "Try answering this without checking: if a senior engineer leaves today and their Microsoft 365 account is deleted next week, how much of their actual working context can you restore cleanly, and in context? Mind you, we’re not talking only about data. We mean emails, chats, the messy, in-between information that keeps projects moving. Most […]"
-  },
-  {
-    "title": "How an Email Domain Can Make a Business Look More Professional",
-    "original_title": "How an Email Domain Can Make a Business Look More Professional",
-    "link": "https://roboticsandautomationnews.com/2026/05/25/how-an-email-domain-can-make-a-business-look-more-professional/101855/",
-    "date": "2026-05-25 16:02",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "These days, the first impression of a company is often formed not at a personal meeting or even a visit to the office, but rather upon receiving the first email. When a potential client or partner sees a message in their inbox sent from a free service, a red flag immediately goes off in their […]"
-  },
-  {
-    "title": "How CockroachDB Built Vector Indexing at Scale",
-    "original_title": "How CockroachDB Built Vector Indexing at Scale",
-    "link": "https://blog.bytebytego.com/p/how-cockroachdb-built-vector-indexing",
-    "date": "2026-05-25 15:30",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "In this article, we will look at how the CockroachDB engineering team built this index and the challenges they faced."
-  },
-  {
-    "title": "Chinese Humanoid Robot Performs Ballet With Human Dancers - Gadget Review",
-    "original_title": "Chinese Humanoid Robot Performs Ballet With Human Dancers - Gadget Review",
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSTc3SU5GdjZSRHlFeUYwcUZkWmowNEt1RHFFQ2Q0eTBtVHFsWmc5OFZPRlJhdlhSYTZmQ21MTmx5Ri1vSWJFSzNHSDg2bm1JbVU3Qkg1c0lvcFltcVd4SFExRUNBd3RiRFkwemVWNGFPalc5UHFFYm1jYnRkNjRhM003TTRlM3kxdjFreVJRZw?oc=5",
-    "date": "2026-05-25 14:53",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese Humanoid Robot Performs Ballet With Human Dancers  Gadget Review"
-  },
-  {
-    "title": "Chinese Humanoid Robot Performs Ballet With Human Dancers - Yahoo Finance",
-    "original_title": "Chinese Humanoid Robot Performs Ballet With Human Dancers - Yahoo Finance",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRDEzRUgtUWkzWXZ2QnduZkoyUE1zTDI0MTRKS2o5ZUZ3OW9GVV93dTgzakdYUmdmbjZEYWwyNy13dmJVdFNNZlNjUUFvZ1FlallseXM4V1JRS1BLbTI0dVp5REdDM3NIcUVncjRtOFNhUXlEYkctMmtEVzdWdEFfaUFvVm9yZ3E1X2tiZHA2bV8taTBob0twcXRqNkstLWhma1J2cDJ2RWRxNFk?oc=5",
-    "date": "2026-05-25 14:53",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese Humanoid Robot Performs Ballet With Human Dancers  Yahoo Finance"
-  },
-  {
-    "title": "Simulation vs. digital twin: A strategic lens on virtual manufacturing",
-    "original_title": "Simulation vs. digital twin: A strategic lens on virtual manufacturing",
-    "link": "https://www.therobotreport.com/simulation-versus-digital-twin-strategic-lens-on-virtual-manufacturing/",
-    "date": "2026-05-25 14:23",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Digital twins and simulation provide distinct benefits for manufacturers designing and integrating systems including automation, explains Visual Components.\nThe post Simulation vs. digital twin: A strategic lens on virtual manufacturing appeared first on The Robot Report."
-  },
-  {
-    "title": "Shanghai Stock Exchange to review Unitree Robotics IPO on June 1, with over 4.2 billion yuan fundraising plan - Global Times",
-    "original_title": "Shanghai Stock Exchange to review Unitree Robotics IPO on June 1, with over 4.2 billion yuan fundraising plan - Global Times",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5YSVd0bEFqNy00cWpoRXdsNzFCclVWRUoycjE3MmJnQjFCdmhCQm5zTFJWY1YzUXYxM0NadDhVRVVkd0xrTW9wNUpDN2FncFZna3Q2WGQwNlV4OXFmalBEbFBB?oc=5",
-    "date": "2026-05-25 14:04",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Shanghai Stock Exchange to review Unitree Robotics IPO on June 1, with over 4.2 billion yuan fundraising plan  Global Times"
-  },
-  {
-    "title": "China brings humanoid robots into real street enforcement operations - Interesting Engineering",
-    "original_title": "China brings humanoid robots into real street enforcement operations - Interesting Engineering",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPV2xLSWI1RU0yaGVLR1dCTXRIa3RwMi14WW40U0FNZ0dZVXYyaTAwREQtSGRIQW5iZ2M1b3dKWGhZcnBxOUZGRnVoU2V1UkRUYktPMEhWaUtoQ3BEMWV6VTRnRVBLODJxQ2ZCWmRCNzdwTmo1eUtQLXd6OFVmZTJ6VnNoNnRHRXQ3X1JwVjVfeDQ2WU5pbDJJYg?oc=5",
-    "date": "2026-05-25 09:53",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China brings humanoid robots into real street enforcement operations  Interesting Engineering"
-  },
-  {
-    "title": "Robot.com turns autonomous robots into mobile advertising network with launch of R-ads platform",
-    "original_title": "Robot.com turns autonomous robots into mobile advertising network with launch of R-ads platform",
-    "link": "https://roboticsandautomationnews.com/2026/05/25/robot-com-turns-autonomous-robots-into-mobile-advertising-network-with-launch-of-r-ads-platform/101850/",
-    "date": "2026-05-25 08:51",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Robot.com, the company putting robots to work in the real world, has announced the launch of its next-generation R-ads, the smart advertising platform turning autonomous robots into a measurable, scalable out-of-home media network. This launch follows a breakout run of more than 100 brand activations across 20+ countries – spanning sports leagues, global tech conferences, […]"
   }
 ]
