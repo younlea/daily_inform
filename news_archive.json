@@ -1,5 +1,14 @@
 [
   {
+    "title": "Why Mobile-First Banking is Becoming the New Standard for Financial Services",
+    "original_title": "Why Mobile-First Banking is Becoming the New Standard for Financial Services",
+    "link": "https://roboticsandautomationnews.com/2026/07/02/why-mobile-first-banking-is-becoming-the-new-standard-for-financial-services/102961/",
+    "date": "2026-07-02 06:45",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "For decades, traditional banking revolved around branches, paper-based processes, and desktop banking platforms. Even as digital banking emerged, mobile applications were often treated as an additional channel rather than the primary way customers interacted with financial services. That reality has changed. Today, customers increasingly expect to manage their finances entirely from their smartphones. From opening […]"
+  },
+  {
     "title": "EmbodimentSemantic: A Spatial Scene-Graph Dataset and Benchmark for Vision-Language Models on Embodied Manipulation Trajectories",
     "original_title": "EmbodimentSemantic: A Spatial Scene-Graph Dataset and Benchmark for Vision-Language Models on Embodied Manipulation Trajectories",
     "link": "https://arxiv.org/abs/2607.00020",
@@ -216,6 +225,78 @@
     "summary": "arXiv:2607.00678v1 Announce Type: cross \nAbstract: Mobile manipulation is a key capability for general-purpose robots, yet remains challenging for current embodied learning methods. VLA policies are typically reactive and lack explicit world modeling, while existing World Action Models (WAMs) are still poorly aligned with the structure of mobile manipulation: they operate on coarse video chunks, model entangled navigation-manipulation actions, and train inverse dynamics under supervision that does not match autoregressive inference. As a result, they often miss fine-grained contact dynamics, suffer from action-distribution conflicts, and accumulate errors over long-horizon rollouts. We propose ABot-M0.5, a new WAM built on the insight that mobile manipulation requires alignment at three levels: temporal granularity, action space, and train-test consistency. To align temporal granularity, we introduce intermediate latent actions that capture local visual state transitions and serve as an bridging action space between video latents and embodiment-specific controls. To align action space, we design a dual-level Mixture-of-Transformers architecture that disentangles both modality representations and heterogeneous action subspaces such as base movement and arm manipulation. To align inference conditions, we propose the dream-forcing training strategy that progressively trains inverse dynamics on model-predicted videos, improving train-test alignment and robustness during autoregressive prediction. Experiments on challenging mobile and fine-grained manipulation benchmarks demonstrate that ABot-M0.5 achieves state-of-the-art performance in both long-horizon task success and finegrained control accuracy. These results highlight the critical importance of granularity-aligned, action-disentangled, and inference-consistent world-action modeling."
   },
   {
+    "title": "Image-Domain Tilt Constrained Distributed Fusion for Maneuvering UAV Tracking with Multi-Camera Electro-Optical Observations",
+    "original_title": "Image-Domain Tilt Constrained Distributed Fusion for Maneuvering UAV Tracking with Multi-Camera Electro-Optical Observations",
+    "link": "https://arxiv.org/abs/2607.01008",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.01008v1 Announce Type: cross \nAbstract: Short-horizon prediction is essential for electro-optical UAV tracking, especially when the target is small, maneuvering, or intermittently observed. Image center, line-of-sight, and range measurements provide direct constraints on target position, but their constraints on acceleration are weak. As a result, prediction can lag during aggressive maneuvers.\n  This paper proposes an image-domain tilt constrained distributed fusion method for maneuvering UAV tracking. The method uses the apparent roll and pitch of a rotorcraft target in the image as low-level maneuver cues. A weak-prior auto-labeling pipeline first generates oriented bounding box and image-domain tilt labels from synchronized video, gimbal IMU, and UAV IMU data. A YOLO-OBB detector is then trained to provide online target position and tilt measurements. The front-end Python implementation is publicly available at github.com/ShineMinxing/PythonYOLO.\n  In the fusion stage, the UAV state is modeled by position, velocity, and acceleration. Image-domain roll and pitch are introduced as acceleration-related pseudo-observations. For distributed tracking, one mobile gimbal camera and two fixed ground cameras are fused asynchronously. Camera attitude error states are augmented into the filter to absorb extrinsic drift and cross-camera systematic inconsistency. A Mahalanobis gate with time-since-last-valid covariance widening is used to reject false detections and handle dropouts.\n  In simulation, adding roll/pitch observations reduces the prediction RMSE from 1.991 m to 0.821 m and decreases the cumulative prediction error by 60.75\\%. In real distributed experiments, a self-consistency evaluation shows an 18.10\\% reduction in cumulative prediction error. The results show that image-domain tilt can provide useful acceleration constraints for robust short-horizon UAV prediction."
+  },
+  {
+    "title": "GPU-Parallel Linearization Error Bounds for Real-Time Robust Optimal Control of Nonlinear and Neural Network Dynamics",
+    "original_title": "GPU-Parallel Linearization Error Bounds for Real-Time Robust Optimal Control of Nonlinear and Neural Network Dynamics",
+    "link": "https://arxiv.org/abs/2607.01203",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.01203v1 Announce Type: cross \nAbstract: This paper studies real-time robust optimal control for uncertain nonlinear systems, where linear time-varying (LTV) approximations make planning tractable but require sound linearization error bounds (LEBs) to guarantee robust constraint satisfaction. We develop tight, differentiable, GPU-parallel LEBs for LTV approximations of nonlinear and neural network (NN) dynamics. For analytic dynamics, we introduce path-based Hessian bounds that are tighter than standard interval methods. For NN dynamics, we derive certified LEBs using NN verifier-generated affine relaxations and local Jacobian corrections. We adapt a GPU-parallel system-level synthesis LTV-based robust control solver to be compatible with these LEBs by extending it to handle right-invertible disturbance matrices and non-zero-centered disturbance sets for tight zonotopic uncertainty propagation. Our method, GPUSLS-LEO, enables online optimization of robust feedback policies that account for linearization error, producing tight, formally verified reachable tubes. On complex nonlinear and NN dynamics up to 168 state dimensions, our method can compute robust control policies on the GPU at rates up to 67 Hz, reducing solve times and conservativeness relative to baselines while preserving formal guarantees and real-time performance."
+  },
+  {
+    "title": "Multi-Embodiment Robotic Retargeting via Guided Diffusion Model",
+    "original_title": "Multi-Embodiment Robotic Retargeting via Guided Diffusion Model",
+    "link": "https://arxiv.org/abs/2505.20857",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2505.20857v2 Announce Type: replace \nAbstract: Motion retargeting for specific robot from existing motion datasets is one critical step in transferring motion patterns from human behaviors to and across various robots. However, inconsistencies in topological structure, geometrical parameters as well as joint correspondence make it difficult to handle diverse embodiments with a unified retargeting architecture. In this work, we propose a novel unified graph-conditioned diffusion-based motion generation framework for retargeting reference motions across diverse embodiments. The intrinsic characteristics of heterogeneous embodiments are represented with graph structure that effectively captures topological and geometrical features of different robots. Such a graph-based encoding further allows for knowledge exploitation at the joint level with a customized attention mechanisms developed in this work. For lacking ground truth motions of the desired embodiment, we utilize an energy-based guidance formulated as retargeting losses to train the diffusion model. As one of the first cross-embodiment motion retargeting methods in robotics, our experiments validate that the proposed model can retarget motions across heterogeneous embodiments in a unified manner. Moreover, it demonstrates a certain degree of generalization to both diverse skeletal structures and similar motion patterns."
+  },
+  {
+    "title": "KungfuBot: Physics-Based Humanoid Whole-Body Control for Learning Highly-Dynamic Skills",
+    "original_title": "KungfuBot: Physics-Based Humanoid Whole-Body Control for Learning Highly-Dynamic Skills",
+    "link": "https://arxiv.org/abs/2506.12851",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2506.12851v3 Announce Type: replace \nAbstract: Humanoid robots are promising to acquire various skills by imitating human behaviors. However, existing algorithms are only capable of tracking smooth, low-speed human motions, even with delicate reward and curriculum design. This paper presents a physics-based humanoid control framework, aiming to master highly-dynamic human behaviors such as Kungfu and dancing through multi-steps motion processing and adaptive motion tracking. For motion processing, we design a pipeline to extract, filter out, correct, and retarget motions, while ensuring compliance with physical constraints to the maximum extent. For motion imitation, we formulate a bi-level optimization problem to dynamically adjust the tracking accuracy tolerance based on the current tracking error, creating an adaptive curriculum mechanism. We further construct an asymmetric actor-critic framework for policy training. In experiments, we train whole-body control policies to imitate a set of highly-dynamic motions. Our method achieves significantly lower tracking errors than existing approaches and is successfully deployed on the Unitree G1 robot, demonstrating stable and expressive behaviors. The project page is https://kungfubot.github.io."
+  },
+  {
+    "title": "Manifold-constrained Hamilton-Jacobi Reachability Learning for Decentralized Multi-Agent Motion Planning",
+    "original_title": "Manifold-constrained Hamilton-Jacobi Reachability Learning for Decentralized Multi-Agent Motion Planning",
+    "link": "https://arxiv.org/abs/2511.03591",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2511.03591v2 Announce Type: replace \nAbstract: Safe multi-agent motion planning (MAMP) under task-induced constraints is a critical challenge in robotics. Many real-world scenarios require robots to navigate dynamic environments while adhering to manifold constraints imposed by tasks. For example, service robots must carry cups upright while avoiding collisions with humans or other robots. Despite recent advances in decentralized MAMP for high-dimensional systems, incorporating manifold constraints remains difficult. To address this, we propose a manifold-constrained Hamilton-Jacobi reachability (HJR) learning framework for decentralized MAMP. Our method solves HJR problems under manifold constraints to capture task-aware safety conditions, which are then integrated into a decentralized trajectory optimization planner. This enables robots to generate motion plans that are both safe and task-feasible without requiring assumptions about other agents' policies. Our approach generalizes across diverse manifold-constrained tasks and scales effectively to high-dimensional multi-agent manipulation problems. Experiments show that our method outperforms existing constrained motion planners and operates at speeds suitable for real-world applications. Video demonstrations are available at https://youtu.be/RYcEHMnPTH8 ."
+  },
+  {
+    "title": "From Prior to Pro: Efficient Skill Mastery via Distribution Contractive RL Finetuning",
+    "original_title": "From Prior to Pro: Efficient Skill Mastery via Distribution Contractive RL Finetuning",
+    "link": "https://arxiv.org/abs/2603.10263",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.10263v2 Announce Type: replace \nAbstract: We introduce Distribution Contractive Reinforcement Learning (DICE-RL), a framework that uses reinforcement learning (RL) as a \"distribution contraction\" operator to refine pretrained generative robot policies. DICE-RL turns a pretrained behavior prior into a high-performing \"pro\" policy by amplifying high-success behaviors from online feedback. We pretrain a diffusion- or flow-based policy for broad behavioral coverage, then finetune it with a stable, sample-efficient residual off-policy RL framework that combines selective behavior regularization with value-guided action selection. Extensive experiments and analyses show that DICE-RL reliably improves performance with strong stability and sample efficiency. It enables mastery of complex long-horizon manipulation skills directly from high-dimensional pixel inputs, both in simulation and on a real robot. Project website: https://zhanyisun.github.io/dice.rl.2026/."
+  },
+  {
+    "title": "VolumeDP: Modeling Volumetric Representation for Manipulation Policy Learning",
+    "original_title": "VolumeDP: Modeling Volumetric Representation for Manipulation Policy Learning",
+    "link": "https://arxiv.org/abs/2603.17720",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.17720v2 Announce Type: replace \nAbstract: Imitation learning is a prominent paradigm for robotic manipulation. However, existing visual imitation methods map 2D image observations directly to 3D action outputs, imposing a 2D-3D mismatch that hinders spatial reasoning and degrades robustness. We present VolumeDP, a policy architecture that restores spatial alignment by explicitly reasoning in 3D. VolumeDP first lifts image features into a Volumetric Representation via cross-attention. It then selects task-relevant voxels with a learnable module and converts them into a compact set of spatial tokens, markedly reducing computation while preserving action-critical geometry. Finally, a multi-token decoder conditions on the entire token set to predict actions, thereby avoiding lossy aggregation that collapses multiple spatial tokens into a single descriptor. VolumeDP achieves a state-of-the-art average success rate of 88.8% on the LIBERO simulation benchmark, outperforming the strongest baseline by a substantial 14.8% improvement. It also delivers large performance gains over prior methods on the ManiSkill and LIBERO-Plus benchmarks. Real-world experiments further demonstrate higher success rates and robust generalization to novel spatial layouts, camera viewpoints, and environment backgrounds. Code and videos are available on the project page: https://yzc0731.github.io/VolumeDP/"
+  },
+  {
+    "title": "Tendon-Actuated Robots with a Tapered, Flexible Polymer Backbone: Design, Fabrication, and Modeling",
+    "original_title": "Tendon-Actuated Robots with a Tapered, Flexible Polymer Backbone: Design, Fabrication, and Modeling",
+    "link": "https://arxiv.org/abs/2603.19124",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.19124v3 Announce Type: replace \nAbstract: This paper presents the design, modeling, and fabrication of 3D-printed, tendon-actuated continuum robots featuring a flexible, tapered backbone constructed from thermoplastic polyurethane (TPU). Our scalable design incorporates an integrated electronics base housing that enables direct tendon tension control and sensing via actuators and compression load cells. Unlike many continuum robots that are single-purpose and costly, the proposed design prioritizes customizability, rapid assembly, and low cost while enabling high curvature and enhanced distal compliance through geometric tapering, thereby supporting a broad range of compliant robotic inspection and manipulation tasks. We develop a generalized forward kinetostatic model of the tapered backbone based on Cosserat rod theory using a Newtonian approach, extending existing tendon-actuated Cosserat rod formulations to explicitly account for spatially varying backbone cross-sectional geometry. The model captures the graded stiffness profile induced by the tapering and enables systematic exploration of the configuration space as a function of the geometric design parameters. Specifically, we analyze how the backbone taper angle influences the robot's configuration space and manipulability. The model is validated against motion capture data, achieving centimeter-level shape prediction accuracy after calibrating Young's modulus via a line search that minimizes modeling error. We further demonstrate teleoperated grasping using an endoscopic gripper routed along the continuum robot, mounted on a 6-DoF robotic arm. Parameterized iLogic/CAD scripts are provided for rapid geometry generation and scaling. The presented framework establishes a simple, rapid, and reproducible pathway from parametric design to controlled tendon actuation for tapered, tendon-driven continuum robots manufactured using fused deposition modeling 3D printers."
+  },
+  {
     "title": "Chinese tech firm unveils ‘robot companion,’ sparking debate over whether it's tech progress or threat to real-life relationships - Global Times",
     "original_title": "Chinese tech firm unveils ‘robot companion,’ sparking debate over whether it's tech progress or threat to real-life relationships - Global Times",
     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9jSGNlbEFYWGdUeklTT1VJN25NR25LU0JvRGtHT2ZuTllBRDZSWXhfY1lEcDNUbElwQ01qbWxHX2JqS1lETWE2ckp2eER4SWNoaWd6VzktN1Z3OUo0b2Y4bzNR?oc=5",
@@ -223,6 +304,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Chinese tech firm unveils ‘robot companion,’ sparking debate over whether it's tech progress or threat to real-life relationships  Global Times"
+  },
+  {
+    "title": "New humanoid robots from China look like creepy pop star action figures – complete with slightly dodgy lip-synch - The Register",
+    "original_title": "New humanoid robots from China look like creepy pop star action figures – complete with slightly dodgy lip-synch - The Register",
+    "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNUWVRRFM3RUxCZDQwOU9GTkRyYUxFalVlUDQtNDllT1Ewd0l5LUs2Tl80Q2NmYWs5RmVrRnZYc05UeHRaNnlOa2FDQmpYX3hjMW1La0xYcWpOeVRmeE9KemlYM0FydUVBdlhMOXpKYVB4TDlHUS1uRUlkOThpUnAwVFRmTlQ4d2VpTGZYSGMyc19VUWJSWXJtWl91Z2x0TWY2TWxRdk85MDFfM0cwcHU1N2gzeFBjTjBIbmUxby1FemZfUXA2bkZMWmpGVGlXeW1LY0sydlpBNTVoTnRpRnN4bm5ZYjFBR1pKUVVoUFJtcU4tcENzVmZ1UmN3Zw?oc=5",
+    "date": "2026-07-02 02:35",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "New humanoid robots from China look like creepy pop star action figures – complete with slightly dodgy lip-synch  The Register"
   },
   {
     "title": "UN warns AI is advancing faster than science and regulation - thenationalnews.com",
@@ -349,6 +439,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Chinese firm sells hyper-real, ‘always loyal’ humanoid robots  The Straits Times"
+  },
+  {
+    "title": "UBTech's US$137,000 companion robot sparks buzz and backlash - citynewsservice.cn",
+    "original_title": "UBTech's US$137,000 companion robot sparks buzz and backlash - citynewsservice.cn",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdFpZdmNxaEFMMGc5bVpCVEFYV2hhS1VoeFVSVHRGS29uSlExckx6M0ktUHlPOXFpSTBCdHFVUUdQR0tMZUNJYWFfTXBXLS1hNVJFUVk5WlYtOUdNbWQ5REVzOXhza19ERy00RWpOWExMMzYxOWJqMlM3dmRBdEl3eEpVaFc1RHcxQ25hLVVVQ2FpNUN3eGhSODlkS2VlU2lWSXJZYVp5cFk1NmZBRG5DMmpDS1B4VjNTcTlpUnNOM2tneFE?oc=5",
+    "date": "2026-07-01 11:21",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "UBTech's US$137,000 companion robot sparks buzz and backlash  citynewsservice.cn"
   },
   {
     "title": "China's UBTech unveils eerily lifelike companion robots, and yes, they want to move in with you - Digital Trends",
@@ -17899,104 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.25672v1 Announce Type: new \nAbstract: In this paper, we address the challenge of performing non-prehensile pushing operations with a compliant robotic manipulation system. To ensure safe operations in human-populated environments, robots must comply with external physical interactions and exhibit passive behavior. To achieve this, we extend a state-of-the-art pushing model to integrate it with impedance-controlled robots. We develop a model predictive control framework built upon this model that enables compliant pushing through optimal modulation of the robot's position/velocity set-point, jointly realizing the required pushing force and contact point adaptation to obtain desired object motion. However, external interactions may induce tracking errors, causing a consequent potentially indefinite increase of the pushing force. To prevent this, we integrate an energy tank passivity filter that further modulates the robot velocity set-point to guarantee passivity and avoid uncontrolled energy buildup. The proposed method has been rigorously tested in simulation and validated through experiments on two different robotic systems, demonstrating passive compliance during human-robot interactions and assessing trajectory tracking performance and robustness to variations in the object's physical parameters."
-  },
-  {
-    "title": "ParkourFormer: Integrating Predictive Supervision and Sequence Modeling into Parkour Locomotion",
-    "original_title": "ParkourFormer: Integrating Predictive Supervision and Sequence Modeling into Parkour Locomotion",
-    "link": "https://arxiv.org/abs/2605.25782",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.25782v1 Announce Type: new \nAbstract: Humanoid parkour requires locomotion policies to coordinate whole-body dynamics across rapidly changing terrains such as stairs, gaps, slopes, and obstacles. Existing reinforcement learning policies are largely reactive, mapping observations directly to actions without explicitly modeling future body states. Such modeling becomes critical in agile locomotion tasks where successful motion execution depends strongly on anticipating upcoming contact transitions and body dynamics.We present ParkourFormer, a Transformer-based sequence modeling framework that reformulates humanoid locomotion as a future-conditioned decision-making problem. The current robot state queries historical sensorimotor trajectories through cross-attention, while a lightweight prediction head forecasts short-horizon future proprioceptive states. The predicted future states, trained with supervised signals, are fused with temporal features to generate actions, enabling the policy to jointly reason over motion history and anticipated future dynamics. We evaluate ParkourFormer on a diverse multi-terrain humanoid parkour benchmark including stairs, gaps, slopes, rough terrain, and obstacle traversal. Experiments in simulation and on a real humanoid robot show that ParkourFormer achieves a 93.85% average traversal success rate on highly challenging terrains, with improvements of up to 42.73% over strong MLP, MoE-based MLP, and vanilla Transformer baselines, while maintaining a single unified policy across all terrain types. These results demonstrate that explicit future-state modeling significantly improves robustness and generalization for agile whole-body locomotion."
-  },
-  {
-    "title": "OASIS: Observation-Action Space Alignment via SE(3) Trajectory Prediction for Robotic Manipulation",
-    "original_title": "OASIS: Observation-Action Space Alignment via SE(3) Trajectory Prediction for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2605.25829",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.25829v1 Announce Type: new \nAbstract: Recent vision-language-action (VLA) models and world action models (WAMs) advance robotic manipulation by enriching intermediate representations with auxiliary spatial features or future visual-state prediction. However, these representations largely remain within the observation space and do not share the rigid-body geometry of the action space, forcing the action decoder to implicitly recover this geometry. We propose OASIS, a visuomotor policy that aligns the intermediate representation with the action space via $SE(3)$ end-effector trajectory prediction. OASIS couples a 3D-aware feature encoder that fuses vision-language and metric-depth features with an $SE(3)$ trajectory predictor that produces a camera-frame end-effector trajectory. Conditioned on the predictor's pose-supervised hidden states, the action decoder generates action chunks consistent with rigid-body motion. Across simulation and real-world experiments, OASIS outperforms VLA and WAM baselines in success rate and out-of-distribution generalization. Our project page is available at https://npuhandsome.github.io/OASIS_web."
-  },
-  {
-    "title": "When Search Becomes Memory: Turning Robot Design Trials into Transferable Skills",
-    "original_title": "When Search Becomes Memory: Turning Robot Design Trials into Transferable Skills",
-    "link": "https://arxiv.org/abs/2605.25832",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.25832v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used as proposal generators for evolutionary robot design, yet most loops remain memoryless: simulator results shape the next population but are not preserved as reusable design knowledge. We present Auto-Robotist, a self-evolving LLM agent that distills morphology-search traces into an explicit natural-language skill library. Each skill stores a structural archetype, evidence-grounded positive and negative rules, and the evaluated designs that support them, making design memory inspectable rather than implicit in a population. During search, the agent retrieves skills to condition LLM edits of elite bodies while retaining a Genetic Algorithm (GA) mutation path for exploration; after evaluation, it updates the library through Add, Diagnose, and Merge. Across seven EvoGym tasks spanning locomotion, traversal, and object interaction, Auto-Robotist improves cold-start 5x5 search and transfers learned skills to 10x10 design spaces, where reference-conditioned transfer outperforms GA on every task. These results suggest that LLM agents can convert expensive physical evaluations into reusable, auditable design principles. Our code will be released upon acceptance."
-  },
-  {
-    "title": "RePlan-Bot: Multi-Level Replanning for Embodied Instruction Following",
-    "original_title": "RePlan-Bot: Multi-Level Replanning for Embodied Instruction Following",
-    "link": "https://arxiv.org/abs/2605.25851",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.25851v1 Announce Type: new \nAbstract: Embodied instruction following (EIF) requires agents to understand and execute complex natural language commands within interactive 3D environments. Despite recent advances, existing methods often fail in long-horizon planning and handling irreversible state changes, resulting in low task success rates. To address these challenges, we introduce RePlan-Bot, a novel EIF agent that performs multi-level, continuous replanning throughout task execution. RePlan-Bot integrates a high-level LLM-based auditor for dynamic sub-goal adjustments guided by environmental feedback, a commonsense-guided search mechanism based on a multi-layered instance map for precise and structured object localization, and a lightweight ViT-based corrector to preemptively fix risky low-level actions. Evaluated on the ALFRED benchmark, RePlan-Bot achieves state-of-the-art performance in both seen and unseen environments, demonstrating superior adaptability and reliability."
-  },
-  {
-    "title": "WideDepth: Millimeter-Accurate Benchmark for Fisheye Depth Estimation",
-    "original_title": "WideDepth: Millimeter-Accurate Benchmark for Fisheye Depth Estimation",
-    "link": "https://arxiv.org/abs/2605.24074",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.24074v1 Announce Type: cross \nAbstract: Fisheye cameras are increasingly adopted in robotics for near-field manipulation, navigation, and immersive perception, yet indoor depth benchmarks with accurate ground truth are still missing. To address this, we introduce WideDepth - the first indoor dataset for fisheye depth estimation, featuring 101 scenes containing 5K high-resolution stereo pairs labeled with millimeter-level ground truth depth and disparity. Our dataset also includes paired pinhole and fisheye samples across varying fields of view and baselines in both horizontal and vertical stereo setups. We further propose a method to adapt pinhole-trained stereo models to fisheye images and introduce a novel stereo fisheye image generation pipeline based on high-resolution LiDAR scans. Leveraging these methods, we thoroughly evaluate state-of-the-art monocular depth, stereo matching, and depth completion models on our benchmark. Additionally, we provide 18K LiDAR-derived sparse depth training samples, achieving up to a 62% performance boost on fisheye data when fine-tuning pinhole-based stereo models. In summary, the high precision and versatility of our benchmark set a strong foundation for advancing research in fisheye depth estimation and robotics perception. Project page: https://ilyaind.github.io/WideDepth"
-  },
-  {
-    "title": "Neuromorphic LiDAR-based Bird's Eye View Object Detection using Energy-efficient Spiking Neural Networks",
-    "original_title": "Neuromorphic LiDAR-based Bird's Eye View Object Detection using Energy-efficient Spiking Neural Networks",
-    "link": "https://arxiv.org/abs/2605.25293",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.25293v1 Announce Type: cross \nAbstract: Autonomous driving perception demands accurate and efficient processing of three-dimensional sensor data under strict power constraints. Traditional convolutional neural networks achieve strong detection accuracy but are computationally intensive, limiting their suitability for deployment on resource-constrained neuromorphic platforms. Spiking neural networks offer a compelling alternative through event-driven sparse computation, yet their application to complex real-world perception tasks such as three-dimensional object detection remains limited. In this work, we propose an end-to-end spiking encoder-decoder network for object detection in bird's eye view representations of LiDAR point clouds, trained using surrogate gradient backpropagation. We train two variants: a membrane potential variant that reads continuous neuron state at the output stage for maximum accuracy, achieving $92.05$/$87.04$/$86.51$ AP at $\\mathrm{IoU}\\!=\\!0.5$ (Easy/Moderate/Hard), and, a fully binary spiking variant that operates exclusively on spike trains at every layer for direct neuromorphic deployment. We evaluate four input spike encoding strategies and demonstrate that allowing the network to learn spike representations directly from data outperforms hand-crafted Poisson, latency, and z-axis encoding schemes on the KITTI benchmark, where sequential frames are unavailable and the BEV input is presented repeatedly across timesteps as a proxy for temporal streaming. A block-wise energy analysis demonstrates a $3.33\\times$ reduction in synaptic operation energy over an equivalent CNN under conservative loop-based operation. Together, these results demonstrate the viability of spiking neural networks for accurate and energy-efficient neuromorphic perception in autonomous driving."
-  },
-  {
-    "title": "MIND: Multi-Scale Intent Diffusion for Text-Driven Physics-Based Humanoid Control",
-    "original_title": "MIND: Multi-Scale Intent Diffusion for Text-Driven Physics-Based Humanoid Control",
-    "link": "https://arxiv.org/abs/2605.26006",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.26006v1 Announce Type: cross \nAbstract: Enabling physics-based humanoids to execute diverse behaviors from high-level textual commands remains a significant challenge. Existing methods typically follow either a two-stage paradigm that combines kinematic motion generation with physics-based tracking, or an end-to-end imitation-learning paradigm that directly generates actions from text. However, the former suffers from the inherent domain shift between kinematic generation and physics-based tracking, while the latter struggles with the substantial modality gap between textual commands and low-level actions, limiting effective semantic alignment. Notably, humanoid states encode rich motion dynamics that are more semantically aligned with textual descriptions than low-level actions, making them a natural basis for deriving behavioral intent. Building upon this insight, we propose MIND, a novel end-to-end diffusion framework for text-driven physics-based humanoid control that leverages behavioral intent as a semantic bridge between textual commands and low-level actions. At its core, MIND introduces a multi-scale intent diffusion mechanism, where a holistic intent predictor captures global behavioral dynamics to guide overall behavior synthesis, while an immediate intent predictor provides step-wise, fine-grained signals for local behavior refinement at each diffusion step. This hierarchical intent formulation imposes a structured inductive bias for humanoid control, improving semantic alignment and behavioral naturalness. Furthermore, MIND encodes humanoid states into a latent space to enable more effective semantic intent modeling. Extensive experiments demonstrate that MIND outperforms existing methods and synthesizes coherent, physically plausible, and semantically aligned humanoid behaviors from text commands. Our code will be released to facilitate future research."
-  },
-  {
-    "title": "Design, Control, and Motion Strategy for DELTA: Transformable Multilink Multirotor for Air-Ground Hybrid Locomotion and Manipulation",
-    "original_title": "Design, Control, and Motion Strategy for DELTA: Transformable Multilink Multirotor for Air-Ground Hybrid Locomotion and Manipulation",
-    "link": "https://arxiv.org/abs/2403.06636",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2403.06636v2 Announce Type: replace \nAbstract: In recent years, multimodal locomotion capabilities have enabled robots to maneuver in both terrestrial and aerial domains. However, most of these robots are designed only for locomotion, and few possess the manipulation capabilities required for practical tasks. By adding a manipulator, ground robots can perform manipulation, and some drones with robotic arms have demonstrated aerial manipulation. Nonetheless, such multirotors cannot be directly used for manipulation on the ground, and this configuration itself is unsuitable for air-ground hybrid locomotion. This is because their thruster-centralized structure makes it difficult to achieve both sufficient degrees of freedom (DoF) for manipulation and stable motion with contact and transformation. Therefore, in this work, we develop a new multilink multirotor with thrusters on each link and capable of contact with the environments. This robot can perform terrestrial rolling locomotion, aerial flight locomotion, and manipulation in multiple environments using joint actuation. First, we introduce a minimal configuration design of the proposed robot. We also describe a kinematic model and propose a design for each component based on this model. Second, we propose a real-time control method based on nonlinear optimization that considers contact and joint motion, which can be applied to various multirotors. Third, we propose motion strategies that include contact constraints specific to air-ground hybrid multilink multirotors, and analyze the limitations of manipulation capabilities based on multi-contact model. Finally, we demonstrate a variety of motions in both domains using the implemented prototype. To the best of our knowledge, this is the first demonstration of air-ground hybrid locomotion and manipulation by a multilink multirotor."
-  },
-  {
-    "title": "Data-Driven Optimization of Tactile Sensor Configurations for Efficient Dexterous Manipulation",
-    "original_title": "Data-Driven Optimization of Tactile Sensor Configurations for Efficient Dexterous Manipulation",
-    "link": "https://arxiv.org/abs/2409.20473",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2409.20473v3 Announce Type: replace \nAbstract: Tactile sensing is critical for learning-based dexterous manipulation, yet principled guidelines for sensor placement remain largely absent. While dense sensor arrays provide rich contact feedback, they impose significant hardware costs and can even degrade policy performance by introducing redundant or conflicting inputs. This paper presents the first systematic framework for quantifying the contribution of individual tactile sensors to deep reinforcement learning (DRL) policy performance. We propose a two-stage approach: a coarse empirical pruning phase that reduces the sensor count on the Shadow Hand from 92 to 21 while retaining 93\\% task performance, followed by a fine-grained active learning phase that combines Gaussian Process Regression (GPR) with Lasso regression to rank the functional importance of each remaining sensor. Our analysis reveals that sensors on the thumb, ring finger, and little finger dominate manipulation performance, while middle-finger sensors exhibit negative contributions -- actively degrading policy learning. Ablation studies across three manipulation tasks (block, egg, and pen) confirm that a 14-sensor configuration preserves over 90\\% of the full-array performance. Zero-shot transfer experiments on two novel objects and cross-platform validation on the Allegro and Leap Hand further demonstrate that the identified importance rankings generalize across tasks and robot morphologies. These findings establish quantitative deployment guidelines that enable practitioners to select cost-effective sensor configurations with predictable performance trade-offs."
-  },
-  {
-    "title": "CollaBot: Vision-Language Guided Simultaneous Collaborative Manipulation",
-    "original_title": "CollaBot: Vision-Language Guided Simultaneous Collaborative Manipulation",
-    "link": "https://arxiv.org/abs/2508.03526",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2508.03526v2 Announce Type: replace \nAbstract: One central goal of robotics is to enable robots to interact with the physical world. Traditional manipulation studies primarily focus on single robots and relatively small objects. However, factory and domestic environments often require large-object manipulation, such as moving tables, where multiple robots must work collaboratively. Existing studies still lack a generalizable framework that can handle diverse objects, tasks, and robot team sizes. In this work, we propose CollaBot, a generalist framework for simultaneous collaborative manipulation. First, we use SEEM for scene segmentation and target-object extraction. Then, we propose a collaborative grasping framework that decomposes the task into local grasp pose generation and global coordination. Finally, we design a two-stage planning module to generate collision-free trajectories for task execution. Experimental results across different settings with varying objects, tasks, and numbers of robots indicate that our framework achieves a 72% success rate. This marks a substantial improvement over behavior cloning-based methods, validating the advantages of the proposed framework in complex multi-robot cooperative tasks. Real-world experiments further demonstrate the feasibility of our method in practical applications."
-  },
-  {
-    "title": "RoboManipBaselines: A Unified Framework for Imitation Learning in Robotic Manipulation across Real and Simulation Environments",
-    "original_title": "RoboManipBaselines: A Unified Framework for Imitation Learning in Robotic Manipulation across Real and Simulation Environments",
-    "link": "https://arxiv.org/abs/2509.17057",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2509.17057v3 Announce Type: replace \nAbstract: We present RoboManipBaselines, an open-source software framework for imitation learning research in robotic manipulation. The framework supports the entire imitation learning pipeline, including data collection, policy training, and rollout, across both simulation and real-world environments. Its design emphasizes integration through a consistent workflow, generality across diverse environments and robot platforms, extensibility for easily adding new robots, tasks, and policies, and reproducibility through evaluations using publicly available datasets. RoboManipBaselines systematically implements the core components of imitation learning: environment, dataset, and policy. Through a unified interface, the framework supports multiple simulators and real robot environments, as well as multimodal sensors and a wide variety of policy models. We further present benchmark evaluations in both simulation and real-world environments and introduce several research applications, including data augmentation, integration with tactile models, interactive robotic systems, 3D sensing evaluation, and hardware extensions. These results demonstrate that RoboManipBaselines provides a useful foundation for advancing research and experimental validation in robotic manipulation using imitation learning. https://isri-aist.github.io/RoboManipBaselines-ProjectPage"
   }
 ]
