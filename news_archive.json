@@ -72,6 +72,87 @@
     "summary": "arXiv:2607.00272v1 Announce Type: new \nAbstract: Traditional robot programming is challenging: it requires orchestrating multimodal perception, managing physical contact dynamics, and handling diverse configurations and execution failures. We introduce ASPIRE (Agentic Skill Programming through Iterative Robot Exploration), a continual learning system that autonomously writes and refines robot control programs in a code-as-policy paradigm while compounding experience into a reusable skill library. ASPIRE discovers skills that persist across tasks, simulation and real-world settings, and embodiments. It operates in an open-ended loop with three components: (1) a closed-loop robot execution engine that exposes fine-grained multimodal traces, enabling autonomous failure diagnosis, repair synthesis, and validation; (2) a continually expanding skill library that distills validated fixes into reusable, transferable knowledge; and (3) evolutionary search that generates diverse task sequences and control programs to explore beyond single-trajectory refinement. ASPIRE surpasses prior methods by up to 77% on LIBERO-Pro manipulation under perturbation, 72% on Robosuite bimanual handover, and 32% on BEHAVIOR-1K long-horizon household tasks. Its accumulated library also enables zero-shot generalization to unseen long-horizon tasks: on LIBERO-Pro Long, ASPIRE achieves 31% success versus 4% for prior methods despite their use of test-time reasoning and retries. Finally, simulation-discovered skills provide initial evidence of sim-to-real transfer, substantially reducing real-robot programming effort across different embodiments and robot APIs."
   },
   {
+    "title": "NeHMO: Neural Hamilton-Jacobi Reachability Learning for Decentralized Safe Multi-Arm Motion Planning",
+    "original_title": "NeHMO: Neural Hamilton-Jacobi Reachability Learning for Decentralized Safe Multi-Arm Motion Planning",
+    "link": "https://arxiv.org/abs/2607.00326",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00326v1 Announce Type: new \nAbstract: Safe multi-arm motion planning is a challenging problem in robotics due to its high dimensionality, coupled configuration space, and complex collision constraints. Centralized planners are capable of coordinating all arms but often face scalability limitations, restricting applicability in real-time settings. On the other hand, decentralized methods are scalable and recent deep learning-based approaches have shown promising results. However, these depend on accurate behavior prediction or coordination protocols and may fail when other arms act unpredictably. To address these challenges, we introduce a neural Hamilton-Jacobi Reachability (HJR) learning-based approach to approximate a safety value function that captures worst-case inter-arm safety constraints. We further develop a decentralized trajectory optimization framework that uses the learned HJR representation for real-time planning. The proposed method is scalable and data-efficient, generalizes across multi-manipulator systems, and outperforms state-of-the-art baselines on challenging multi-arm motion planning tasks."
+  },
+  {
+    "title": "Unleashing More Actions via Action Compositional Training for VLA Models",
+    "original_title": "Unleashing More Actions via Action Compositional Training for VLA Models",
+    "link": "https://arxiv.org/abs/2607.00351",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00351v1 Announce Type: new \nAbstract: Vision-Language-Action models excel at robotic manipulation, driven by the scale and diversity of demonstration data. However, standard training paradigms often cause VLA models to severely overfit to specific behavioral patterns, rendering them unable to generalize to out-of-distribution scenarios even when those scenarios merely require novel combinations of identical sub-skills. While expanding datasets can mitigate this overfitting, acquiring high-quality robot data remains notoriously labor-intensive and cost-prohibitive. To resolve this impasse without expensive human teleoperation and to truly unleash more actions,i.e., enable VLA models to compose known sub-skills into a much broader set of executable behaviors beyond the original demonstrations-we propose ACT-VLA (Action Compositional Training for VLA Models), an offline data augmentation framework that leverages the model's latent task representations to synthesize novel, physically valid demonstrations directly from existing tasks for policy training. By eliminating additional manual data collection, our method automatically expands the training distribution and mitigates overfitting. We evaluate our approach on challenging manipulation tasks in simulation. Experiments demonstrate that while baseline VLA models generalize poorly due to original distribution overfitting, policies trained with our synthesized data achieve substantially higher success rates, validating that leveraging existing tasks for automated demonstration synthesis provides an effective, scalable, and data-efficient route to broadening VLA generalization."
+  },
+  {
+    "title": "Robust Operational Space Control with Conformal Disturbance Bounds for Safe Redundant Manipulation",
+    "original_title": "Robust Operational Space Control with Conformal Disturbance Bounds for Safe Redundant Manipulation",
+    "link": "https://arxiv.org/abs/2607.00424",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00424v1 Announce Type: new \nAbstract: Redundant robotic manipulators operating in constrained and human-interactive environments require accurate task-space tracking together with rigorous safety guarantees under dynamic uncertainties. Classical operational space computed torque controller (OSCTC) relies on accurate dynamic models and degrades in the presence of disturbances. In contrast, the data-driven paradigm of residual learning approximates disturbances as functions learned from full-state measurements, which are often noisy in practice, lack rigorous theoretical guarantees, and introduce additional design complexity. This paper proposes a robust OSCTC framework that integrates an extended state observer (ESO) with conformal prediction to combine model-based robustness and data-driven adaptability. The ESO estimates lumped disturbances directly in operational space without requiring full-state measurements as in residual learning, and a robust control barrier function (CBF) is constructed to enforce safety under uncertainty. However, robust CBFs require a known disturbance-variation bound to guarantee absolute safety, which often leads to conservatism in practice. To address this limitation, we further employ a sliding-window conformal prediction mechanism to estimate the bound online in a distribution-free manner, thereby achieving practical probabilistic safety guarantees. Experiments on a 7-DoF Franka Research 3 manipulator demonstrate millimeter-level tracking accuracy and real-time safe control at 1~kHz under various disturbances."
+  },
+  {
+    "title": "Learning Gait-Aware Quadruped Locomotion with Temporal Logic Specifications",
+    "original_title": "Learning Gait-Aware Quadruped Locomotion with Temporal Logic Specifications",
+    "link": "https://arxiv.org/abs/2607.00442",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00442v1 Announce Type: new \nAbstract: Reinforcement learning (RL) for quadruped locomotion commonly depends on fixed, hand-crafted, and Markovian reward functions that limit both interpretability of learned policies and lack explicit control over gait behaviors. We introduce a framework where distinct gaits are specified using parameterized constraints expressed in Signal Temporal Logic (STL). These include safety bounds, gait synchronization constraints, command tracking, and actuation bounds. From these specifications, we develop a reward shaping mechanism that provides learning agents a dense, continuous reward landscape that encodes desired behavior. We define parametric STL templates for three speed regimes (walking-trot, trot, bound), calibrate their parameters from reference rollouts, and compute rewards from using smooth approximations of STL robustness over the rollouts. The generated rewards can be used to provide shaped gradients compatible with Proximal Policy Optimization (PPO). We instantiate the approach on Google's Barkour quadruped robot in MuJoCo XLA (MJX). We use parallelization within the simulator to improve training speeds and use domain randomization to robustify learned policies. We show that compared to a baseline of hand-crafted rewards, the STL-shaped rewards yield tighter velocity tracking and more stable training. Videos can be found on our project website: https://stl-locomotion.github.io/."
+  },
+  {
+    "title": "Search-Based Spatiotemporal and Multi-Robot Motion Planning on Graphs of Space-Time Convex Sets",
+    "original_title": "Search-Based Spatiotemporal and Multi-Robot Motion Planning on Graphs of Space-Time Convex Sets",
+    "link": "https://arxiv.org/abs/2607.00444",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00444v1 Announce Type: new \nAbstract: Spatiotemporal motion planning, especially in multi-robot settings, requires robots to reason about collision-free regions that change over time, which is challenging in continuous spaces when feasible regions are transient and geometrically constrained. We present an algorithmic framework based on graphs of space-time convex sets (ST-GCSs), where collision-free regions are represented as convex sets in space-time and trajectories correspond to paths on the graph together with continuous motions within the selected sets. We formulate time-optimal planning on ST-GCSs as a graph-search problem over path-indexed states and develop a best-first search solver that evaluates partial paths via continuous trajectory optimization, guided by admissible heuristics and dominance checks. We further present an Exact Convex Decomposition (ECD) scheme to reserve trajectory occupancies in space-time, enabling unified handling of dynamic obstacles and multi-robot interactions. For multi-robot motion planning, we integrate ST-GCS planning and ECD into prioritized planning methods and introduce a windowed coordination scheme to improve efficiency. Extensive experiments on single-robot and multi-robot problems demonstrate substantial speedups over various planners while maintaining high solution quality, particularly in environments with narrow and transient feasible regions. Large-scale demonstrations further show that the proposed multi-robot motion planner can solve instances with up to $100$ robots within only a few minutes. Project homepage: https://sites.google.com/view/stgcs"
+  },
+  {
+    "title": "VLM-AR3L: Vision-Language Models for Absolute and Relative Rewards in Reinforcement Learning",
+    "original_title": "VLM-AR3L: Vision-Language Models for Absolute and Relative Rewards in Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2607.00483",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00483v1 Announce Type: new \nAbstract: Designing effective reward functions remains a major challenge in reinforcement learning (RL), particularly in open-ended environments where task goals are abstract and difficult to quantify. In this work, we present VLM-AR3L, a framework that leverages Vision-Language Models (VLMs) to provide both absolute and relative rewards for RL. VLM-AR3L interprets an agent's visual observations in the context of a natural language task goal, and learns both absolute and relative rewards from VLM-generated preference labels. The absolute reward model predicts scalar evaluations for individual states, while the relative reward model compares consecutive observations to infer progress or regression toward the task goal. Their integration combines the stability of state-based evaluation with the robustness of comparative supervision. We evaluate VLM-AR3L across benchmarks spanning classic control, manipulation, and open-world embodied tasks, with a particular focus on Minecraft given its visual complexity and long-horizon decision-making requirements. Experimental results show that VLM-AR3L consistently outperforms prior VLM-based reward learning methods."
+  },
+  {
+    "title": "From Technical Metrics to User Perception: A User Study of a Multimodal Human-Robot Interaction System for Object Detection and Grasping",
+    "original_title": "From Technical Metrics to User Perception: A User Study of a Multimodal Human-Robot Interaction System for Object Detection and Grasping",
+    "link": "https://arxiv.org/abs/2607.00530",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.00530v1 Announce Type: new \nAbstract: Improvements in the technical performance of human--robot interaction (HRI) systems do not automatically translate into differences that human users can detect during live interaction. This paper investigates whether a 15 percentage point gain in end-to-end task success (from 75% in a multimodal baseline system to 90% in an improved configuration identified through a prior ablation study) is sufficient to produce consistent and measurable differences in user perception. The baseline system combines Whisper for speech recognition, Florence-2 for open-vocabulary object detection, LLaMA 3.1 for action extraction, and an interval Type-2 fuzzy logic controller for motion execution. The improved configuration replaces the perception and language modules with Grounding DINO + SAM and Qwen 3.5 9B, respectively, while retaining the same controller. A within-subject user study with 24 participants compared both systems on the same tabletop object-grasping task. After interacting with each configuration, participants rated perceived speed, reliability, and overall competence and fluency on a 7-point Likert scale. Results show that 17 out of 24 participants (70.83%) preferred the improved system (exact binomial test, p = 0.043, h = 0.43), and all three perceptual constructs were rated significantly higher for the improved configuration after Holm correction, with large to very large effect sizes (p < 0.001). These findings confirm that the identified technical improvements are perceptible to users in direct interaction and underscore the importance of complementing benchmark evaluation with user-centred evidence when assessing robotic manipulation pipelines."
+  },
+  {
+    "title": "AutoSpeed: Annotation-Free Stage-Adaptive Motion Speed Learning for Robot Manipulation",
+    "original_title": "AutoSpeed: Annotation-Free Stage-Adaptive Motion Speed Learning for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2607.01051",
+    "date": "2026-07-02 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.01051v1 Announce Type: new \nAbstract: Different stages of manipulation tasks exhibit varying levels of difficulty, suggesting stage-dependent motion speeds and temporal prediction horizons. However, existing IL-based visuomotor policies typically imitate the execution speed of expert demonstrations and operate with a fixed temporal prediction horizon, limiting flexibility and overall task throughput. In this paper, we introduce AutoSpeed, a model-agnostic learning framework that enables existing visuomotor policies to predict trajectories with stage-adaptive motion speeds, without requiring speed or stage annotations. We treat future trajectories at different speeds as candidate optimization targets, evaluate each candidate using a composite cost that trades off prediction error against prediction horizon, and optimize the policy toward the minimum-cost candidate. With a fixed-length action sequence, speed modulation adjusts the effective temporal prediction horizon: simple stages are executed faster with a longer prediction horizon, whereas complex stages are executed more slowly with a shorter prediction horizon. Specifically, we implement speed modulation in the frequency domain via the discrete cosine transform (DCT), which enables smooth, non-integer speed scaling and thus preserves motion continuity. Extensive evaluations show that AutoSpeed substantially reduces task execution time while also improving success rates. Under the AutoSpeed framework, the inferred motion speeds exhibit a strong correspondence with task stages."
+  },
+  {
+    "title": "Chinese tech firm unveils ‘robot companion,’ sparking debate over whether it's tech progress or threat to real-life relationships - Global Times",
+    "original_title": "Chinese tech firm unveils ‘robot companion,’ sparking debate over whether it's tech progress or threat to real-life relationships - Global Times",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9jSGNlbEFYWGdUeklTT1VJN25NR25LU0JvRGtHT2ZuTllBRDZSWXhfY1lEcDNUbElwQ01qbWxHX2JqS1lETWE2ckp2eER4SWNoaWd6VzktN1Z3OUo0b2Y4bzNR?oc=5",
+    "date": "2026-07-02 03:42",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Chinese tech firm unveils ‘robot companion,’ sparking debate over whether it's tech progress or threat to real-life relationships  Global Times"
+  },
+  {
     "title": "UN warns AI is advancing faster than science and regulation - thenationalnews.com",
     "original_title": "UN warns AI is advancing faster than science and regulation - thenationalnews.com",
     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbUlJSUo4NS1pcU10RHBvR1F5aE52eHl6SEJ5T29IRnRIUHRXRU5LamJhaEhIYzR4UlVFZ0F2cDZhcnBvZTJkMDNhWGNLOFdicENYQjdPV0VQZ210SXNsa1RJTlNxeWtYMjZ2THpoMzBKc0JkWDBqdVFBbE4tdHNyaHYtRm95UFVvQkpMVDAzUUdRWnRLV1JXYi1tZFRQR010Z3dyTXVWZWhDRHdBMTk3NA?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2505.11758v2 Announce Type: replace-cross \nAbstract: Few-shot adaptation of vision-language models remains fundamentally limited by how negative class signals are handled at inference. Existing methods apply uniform negative suppression across all queries, ignoring that the most damaging confusions are query-specific and shift with support-set geometry. We introduce SCAN (Selective Confusion-Aware Negatives), a framework that addresses this gap through three targeted contributions. In inference, query-adaptive negative routing restricts suppression to the top-K most confusable classes per query, requiring zero additional parameters. Generic negative text templates are replaced with LLM-bootstrapped contrastive prompts that describe discriminative attributes between confusable class pairs, sharpening the textual decision boundary where it matters most. A parameter-free adaptive fusion weight estimated from support-set Fisher discriminability removes the need for manual tuning of the vision-language trade-off. Evaluated across 11 standard benchmarks, SCAN consistently outperforms prior prompt-based and adapter-based methods by an average of 4.61% at 16-shot, with gains of up to 7.70% on fine-grained datasets where inter-class confusion is most severe. SCAN also generalizes strongly under distribution shift, improving by 2.95% on average across four ImageNet OOD variants, and maintains robust performance under significant label noise, with accuracy under 50% label corruption still exceeding the clean baseline of the strongest competing method."
-  },
-  {
-    "title": "LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization",
-    "original_title": "LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization",
-    "link": "https://arxiv.org/abs/2510.03827",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2510.03827v2 Announce Type: replace-cross \nAbstract: LIBERO has emerged as a widely adopted benchmark for evaluating Vision-Language-Action (VLA) models; however, its current training and evaluation settings are problematic, often leading to inflated performance estimates and preventing fair model comparison. To address these issues, we introduce LIBERO-PRO, an extended LIBERO benchmark that systematically evaluates model performance under reasonable perturbations across four dimensions: manipulated objects, initial states, task instructions, and environments. Experimental results reveal that, although existing models achieve over 90% accuracy under the standard LIBERO evaluation, their performance collapses to 0.0% under our generalized setting. Crucially, this discrepancy exposes the models' reliance on rote memorization of action sequences and environment layouts from the training set, rather than genuine task understanding or environmental perception. For instance, models persist in executing grasping actions when the target object is replaced with irrelevant items, and their outputs remain unchanged even when given corrupted instructions or even messy tokens. These findings expose the severe flaws in current evaluation practices, and we call on the community to abandon misleading methodologies in favor of robust assessments of model generalization and comprehension. Our code is available at: https://github.com/Zxy-MLlab/LIBERO-PRO."
-  },
-  {
-    "title": "Approximating Safety Feedback Without a Safety Oracle via Model Predictive Control",
-    "original_title": "Approximating Safety Feedback Without a Safety Oracle via Model Predictive Control",
-    "link": "https://arxiv.org/abs/2510.20955",
-    "date": "2026-05-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2510.20955v2 Announce Type: replace-cross \nAbstract: Safe decision-making algorithms for control of mobile robots often require the existence of feedback to verify the safety of proposed actions. This feedback is assumed to be directly available during the development or deployment of the control system. It can take the form of either an explicit constraint formulation or a set of hand-labeled safety data, both of which can be inaccurate or time consuming to produce. Many recently developed simulators can handle complex interactions and varied environments. These environments have implicit safety constraints that may be hard to model. By leveraging one of these simulators, we can construct a proxy for a safety function that bypasses the need for hand designed feedback in capturing these constraints. We present an algorithm that approximates safety by using reversibility and a positive-invariance assumption on the unsafe state space. This method employs the Model-Predictive Path Integral algorithm (MPPI) to establish this reversibility and verify a proposed action. First the action is projected via the simulator to a future state. Then if MPPI can find a path back to a previous state in the trajectory, that state is guaranteed to be outside the unsafe (positive invariant) set. Experimental results demonstrate that the proposed algorithm can approximate the performance of a safety oracle while avoiding classification of unsafe states as safe."
-  },
-  {
-    "title": "Unitree Robotics IPO Review Approaches, Shoucheng Holdings Robot Assets Poised for Valuation Re-rating - TradingView",
-    "original_title": "Unitree Robotics IPO Review Approaches, Shoucheng Holdings Robot Assets Poised for Valuation Re-rating - TradingView",
-    "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQa0hSU2hQMHZIRnM5TFdXc2FyaU1GMWxkZ3RGamdWbGczaHRrbml4STJvSjZwbGNleFNSeTlGOWFGU2tCZEZ5STZQcW9pT0tNTXlwSURRZjBueHJ6blhNcE9PQXV0UUowNWxMdVpQU0tYYkc4ZWJqTk1HV1dET2hNMnppX0FLeURYRDZidFhjcTJVS1J5RllxY0RzZEpJbS15d0pmODJOVC1mek42MVQ0WFNwa25uWGwzb1dGamlmM0U0S2lTbnFEV196bllMZXU4emVsZ3B0NE5CRGNXN2paRmpvSEZSZXdGVW1VVUZ2V2ZLeEJXUlN3bFlPQV9zV3J1c1ZkaHR2Rmc?oc=5",
-    "date": "2026-05-26 03:04",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree Robotics IPO Review Approaches, Shoucheng Holdings Robot Assets Poised for Valuation Re-rating  TradingView"
-  },
-  {
-    "title": "Unitree Robotics IPO Hearing Scheduled for June 1, Targeting China's First Listed Humanoid Robot Company - Pandaily",
-    "original_title": "Unitree Robotics IPO Hearing Scheduled for June 1, Targeting China's First Listed Humanoid Robot Company - Pandaily",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CekZyVE9KQXlfci1pSDJmZVpqS0Q1R3FHS0p5RTFWODdGR0NnZkEzaXJVdGZuUklkR2QwamxMYW5iZmJZcmFHb1l4MXZUeDZ5M3ZiLWZzcXZsejJKTkFJMEt1MjhiaGxERWZR?oc=5",
-    "date": "2026-05-26 02:20",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree Robotics IPO Hearing Scheduled for June 1, Targeting China's First Listed Humanoid Robot Company  Pandaily"
-  },
-  {
-    "title": "Unitree Fast-Tracks Shanghai IPO With Target Valuation of $6.2 Billion - Caixin Global",
-    "original_title": "Unitree Fast-Tracks Shanghai IPO With Target Valuation of $6.2 Billion - Caixin Global",
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQaUNVQVkwSW9vc0pNVkdpUnp6VTNFaDd4akZFWlloN0xWaC1wUFVITEd6czE3RGlYZlhLM0I3VUNScFpTemV5VnN4Z0FIOWFMRXNsLXR5WU1DOFprQldRRVFUNjVJSENiN2tTbkxKQy10WDd5MUQyOFl2MW5iOHB2NGFJUDdYQ3Y2MWRScmt1U3p1T2JQM25vWXlqYWxocHJ2UHplQWNHQW5WRnRRTV9helROUU1HajVnM0VicjM0d1Q?oc=5",
-    "date": "2026-05-25 18:38",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree Fast-Tracks Shanghai IPO With Target Valuation of $6.2 Billion  Caixin Global"
-  },
-  {
-    "title": "5 Best GPS Time Tracking for Field Crews",
-    "original_title": "5 Best GPS Time Tracking for Field Crews",
-    "link": "https://roboticsandautomationnews.com/2026/05/25/5-best-gps-time-tracking-for-field-crews/101868/",
-    "date": "2026-05-25 18:25",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "The best field crew time tracking apps with location verification in 2026 are Workyard, QuickBooks Time, BuddyPunch, Buildertrend, and Jibble.  Workyard ($6-13/user/month + base fee) is the strongest option for construction teams that need precise GPS verification and labor cost control. QuickBooks Time ($8/user/month + base fee) excels at photo verification and payroll syncing for […]"
-  },
-  {
-    "title": "Wiz Alternatives in 2026: 7 Tools Compared – Best for Cloud and Code Security",
-    "original_title": "Wiz Alternatives in 2026: 7 Tools Compared – Best for Cloud and Code Security",
-    "link": "https://roboticsandautomationnews.com/2026/05/25/wiz-alternatives-in-2026-7-tools-compared-best-for-cloud-and-code-security/101861/",
-    "date": "2026-05-25 17:37",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Wiz is one of the fastest-growing security companies in history. Its agentless cloud scanning, Security Graph visualization, and ability to surface cross-cloud attack paths changed how the market thinks about cloud-native application protection (CNAPP).  But 2026 has introduced new reasons to reconsider: The Google Acquisition Changes the Equation. In March 2025, Google completed the acquisition […]"
-  },
-  {
-    "title": "Motion tracking system shows robots the path most traveled by, keeping them on task",
-    "original_title": "Motion tracking system shows robots the path most traveled by, keeping them on task",
-    "link": "https://techxplore.com/news/2026-05-motion-tracking-robots-path-task.html",
-    "date": "2026-05-25 16:40",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "There's a delicate art to teaching robots, even when you're preparing them for predictable environments like factories, where they'll repeat the same tasks a little differently depending on the obstacles they face. Whether a human is suddenly in their way or there's new clutter, the machine must closely mimic its operator's actions by staying on a trajectory (or motion path)."
-  },
-  {
-    "title": "Do Robotics Firms Need Microsoft 365 Backups",
-    "original_title": "Do Robotics Firms Need Microsoft 365 Backups",
-    "link": "https://roboticsandautomationnews.com/2026/05/25/do-robotics-firms-need-microsoft-365-backups-2/101858/",
-    "date": "2026-05-25 16:14",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Try answering this without checking: if a senior engineer leaves today and their Microsoft 365 account is deleted next week, how much of their actual working context can you restore cleanly, and in context? Mind you, we’re not talking only about data. We mean emails, chats, the messy, in-between information that keeps projects moving. Most […]"
   }
 ]
