@@ -72,6 +72,78 @@
     "summary": "arXiv:2607.01804v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) foundation models have recently achieved strong progress in embodied intelligence. To reduce policy-call frequency while preserving temporal coherence, most generative policies adopt an action chunk mechanism, executing multiple future actions in an open-loop manner under a fixed action horizon. However, this \"predict-then-blindly-execute\" paradigm sacrifices closed-loop reactivity: in contact-rich physical interactions, even small local perturbations can rapidly amplify within the open-loop blind spot, leading to compounding errors and ultimately task failure. To address this limitation, we propose VLA-Corrector, a lightweight corrective inference framework for action-chunked VLA policies. Without modifying the backbone policy weights, VLA-Corrector introduces a lightweight Latent-space Vision Monitor (LVM) that continuously compares predicted and actual visual feature evolution, enabling online detection of visual dynamics deviations. Once persistent deviation is detected, the system triggers a truncation event, discards the remaining stale actions, and invokes corrective replanning via Online Gradient Guidance (OGG). The detect-and-correct mechanism of VLA-Corrector naturally induces an event-triggered adaptive action horizon: it preserves long-horizon execution when the current chunk remains reliable, and invokes short-horizon corrective replanning when execution begins to drift. In doing so, VLA-Corrector mitigates the trade-off imposed by static horizons between execution robustness and policy-call frequency. It can be integrated into different VLA models without further retraining the VLA backbone, interrupting compounding errors while preserving much of the efficiency benefit of action chunking and substantially improving robustness in long-horizon, contact-rich robotic manipulation tasks."
   },
   {
+    "title": "PhysMani: Physics-principled 3D World Model for Dynamic Object Manipulation",
+    "original_title": "PhysMani: Physics-principled 3D World Model for Dynamic Object Manipulation",
+    "link": "https://arxiv.org/abs/2607.01938",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.01938v1 Announce Type: new \nAbstract: Manipulating fast and dynamically moving targets in unstructured 3D environments remains challenging for embodied AI. Existing visual-language-action models and world models struggle with accurate 3D geometry and physically meaningful forecasting. We propose PhysMani, a framework that couples a physics-principled 3D Gaussian world model with a future-aware action policy model. The world model learns a divergence-free Gaussian velocity field via online optimization for fast and physically grounded future dynamics prediction. The policy model integrates the predicted 3D scene future dynamics through a learnable token based cross-attention module. We introduce PhysMani-Bench, a dynamic manipulation benchmark with 16 tasks, and demonstrate a superior success rate over strong baselines in both simulation and real-world robot experiments."
+  },
+  {
+    "title": "Guided Action Flow: Q-Guided Inference for Flow-Matching Vision-Language-Action Policies",
+    "original_title": "Guided Action Flow: Q-Guided Inference for Flow-Matching Vision-Language-Action Policies",
+    "link": "https://arxiv.org/abs/2607.02092",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.02092v1 Announce Type: new \nAbstract: Flow-matching vision-language-action policies generate robot action chunks through an iterative transport process, creating an opportunity for test-time guidance without retraining the base policy. We study this opportunity in Guided Action Flow, an inference-time framework that keeps a pretrained SmolVLA policy frozen and uses a learned action-chunk critic to guide its reverse-time flow sampler. The critic is trained from real success and failure rollouts, can condition on task-description features from the frozen SmolVLA language pathway, and is used only through action gradients during sampling. We evaluate the approach on LIBERO manipulation tasks. A single-task critic improves success from 68.0% to 82.0% on one seed window and from 82.0% to 86.0% on another. A multi-family task-description critic improves validation success from 46.0% to 56.0%, while the locked held-out test gain is positive but modest, from 65.0% to 67.5%. These results support the feasibility of Q-guided inference for frozen flow-matching VLA policies, while showing that critic generalization and uncertainty-aware guidance remain the central bottlenecks."
+  },
+  {
+    "title": "Bridge-WA: Predicting Where and How the World Changes for Robotic Action",
+    "original_title": "Bridge-WA: Predicting Where and How the World Changes for Robotic Action",
+    "link": "https://arxiv.org/abs/2607.02195",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.02195v1 Announce Type: new \nAbstract: General-purpose vision-language-action models benefit from large vision-language priors, but effective manipulation also requires anticipating action-relevant scene changes. Existing world-action models often rely on large generative world models or dense future rollouts, which are expensive and spend capacity on visual details weakly coupled to control. We present Bridge-WA, a lightweight world-action framework that distills a frozen future-change teacher into three compact priors: future tokens for intended outcomes, change maps for intervention support, and motion-flow maps for local transition direction. A WorldBridge conditions the action transformer on these priors through multi-source attention memories and spatial-temporal biases, while the teacher model is removed at inference. Across VLABench, RoboTwin2.0, LIBERO-Plus and real-robot evaluations, Bridge-WA improves task success, progress, and robustness, with particularly clear gains under out-of-distribution visual shifts. By focusing action generation on where and how the scene will change, Bridge-WA suppresses nuisance appearance factors such as background, lighting, and distractors, leading to better generalization without deployment-time dense future-image generation. Code and visualizations are available at: https://hcplab-sysu.github.io/BRIDGE-WA ."
+  },
+  {
+    "title": "Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning",
+    "original_title": "Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning",
+    "link": "https://arxiv.org/abs/2607.02205",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2607.02205v1 Announce Type: new \nAbstract: Sim-to-real transfer in robot learning is often limited by discrepancies between the ideal actuator dynamics assumed during policy training and the nonlinear, hardware-dependent behavior of physical motors. While conventional approaches attempt to bridge this gap by increasing simulator fidelity through system identification, domain randomization, or learned actuator models, we introduce an alternative paradigm: actuator reality shaping. Instead of modifying the simulator to match the real world, our method shapes the closed-loop behavior of physical actuators to match the idealized second-order reference dynamics used in simulation. By equipping each joint with a two-degree-of-freedom feedforward--feedback controller, we decouple reference-response shaping from robust stabilization, thereby providing a standardized actuator interface for reinforcement learning policies. As a result, policies trained only with the prescribed reference model can be deployed zero-shot on real hardware without task-level fine-tuning or learned actuator models. We validate the approach on a single-joint high-gear-ratio servo under external loads and a 7-DOF robotic arm reaching task, where actuator reality shaping substantially reduces sim-to-real tracking error and improves zero-shot task performance compared with standard servo-control and representative real-to-sim-to-real baselines. We further demonstrate zero-shot transfer on a wheeled-legged robot driving over a slope and a humanoid robot walking, suggesting that actuator reality shaping can serve as a reusable interface for robot learning across diverse hardware platforms."
+  },
+  {
+    "title": "The Moving Eye: Enhancing VLA Spatial Generalization via Hybrid Dynamic Data Collection",
+    "original_title": "The Moving Eye: Enhancing VLA Spatial Generalization via Hybrid Dynamic Data Collection",
+    "link": "https://arxiv.org/abs/2607.02322",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.02322v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have shown remarkable promise in generalized robotic manipulation. However, their spatial generalization remains fragile. We argue that simply increasing the number of viewpoints is insufficient. Models often fall into the trap of Shortcut Learning, latching onto spurious correlations (e.g., fixed relative poses between objects or between the camera and robot base) rather than learning true spatial relationships. In this work, we propose a data-centric solution to enhance VLA spatial generalization. We utilize a dual-arm setup where one arm performs manipulation while the other serves as a mobile environmental camera. We systematically evaluate three data distribution patterns: Fixed, Multi-Fixed, and Moving Views. Our findings reveal that a hybrid strategy, combining continuous camera motion with diverse static viewpoints, yields the best performance by substantially reducing spurious correlations while maintaining training stability. Our experiments demonstrate that this strategy mitigates spurious correlations, enabling VLAs to generalize to unseen camera poses and object configurations where simply adding more static viewpoints fails. Crucially, we reveal that the susceptibility to shortcut learning and the struggle with spatial generalization are universal characteristics shared across diverse architectures. Consequently, all evaluated models (ACT, Diffusion, and VLA models including Pi0 and Gr00t) benefit significantly from our mixed data strategy."
+  },
+  {
+    "title": "HEFT: Heavy-Payload Full-size Humanoid Teleoperation with Privileged Motion Guidance and Windowed Payload Curriculum",
+    "original_title": "HEFT: Heavy-Payload Full-size Humanoid Teleoperation with Privileged Motion Guidance and Windowed Payload Curriculum",
+    "link": "https://arxiv.org/abs/2607.02332",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2607.02332v1 Announce Type: new \nAbstract: General motion tracking and teleoperation offer a promising path to scalable humanoid skill acquisition, yet most existing frameworks are validated on compact platforms or without real payload interaction, leaving full-size humanoids with real payloads largely unexplored. Scaling to full-size humanoids introduces two compounding challenges: their larger inertia and tighter balance margins make tracking highly sensitive to noise, drift, and retargeting errors from commodity VR trackers, while their payload potential remains largely underutilized. We present HEFT, a heavy-payload full-size humanoid teleoperation framework that addresses both challenges. HEFT learns from deployable noisy VR references with physically plausible reconstructed references through Privileged Motion Guidance (PMG), and uses a Windowed Payload Curriculum (WPC) with expert-guided payload caps to acquire robust heavy-payload tracking. We deploy HEFT on L7, a 175cm, 65kg humanoid. The robot tracks motions including turns, forward/backward locomotion, and squats under payloads up to 24kg."
+  },
+  {
+    "title": "ACID: Action Consistency via Inverse Dynamics for Planning with World Models",
+    "original_title": "ACID: Action Consistency via Inverse Dynamics for Planning with World Models",
+    "link": "https://arxiv.org/abs/2607.02403",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.02403v1 Announce Type: new \nAbstract: Decision-time planning with action-conditioned world models has become a popular paradigm for embodied control. However, the standard planning cost judges a candidate solely by how close its predicted terminal state lies to the goal, leaving the realizability of the intermediate transitions unchecked -- a predicted trajectory can look convincing while the environment rollout drifts away from it. In this paper, we propose ACID, a decision-time planning framework that introduces cycle action consistency: the action inferred backward from a predicted transition by an inverse dynamics model should recover the one that was conditioned on. We fold this per-step residual into the planning cost via a scale-invariant adaptive weight. Across four action-conditioned world models and six tasks spanning rigid and deformable manipulation, articulated control, and visual navigation, ACID consistently improves planning and matches the baseline's accuracy with substantially less planning compute."
+  },
+  {
+    "title": "LIME: Learning Intent-aware Camera Motion from Egocentric Video",
+    "original_title": "LIME: Learning Intent-aware Camera Motion from Egocentric Video",
+    "link": "https://arxiv.org/abs/2607.02417",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.02417v1 Announce Type: new \nAbstract: Autonomous robots often need to move their camera before they can act: to inspect an object, reveal an occluded region, or obtain a view that responds to a user's intent. While vision-language navigation translates instructions to base motion and vision-language-action policies map instructions to manipulation actions, language-conditioned camera motion remains comparatively underexplored as a first-class action. We formulate language-conditioned camera motion generation: given a current RGB observation and a free-form natural-language intent, predict a relative target camera pose for the next observation. This task is inherently non-trivial: viewpoint changes are driven by latent perceptual intentions, and a valid motion may operate at different semantic granularity, from entering a room to looking around a corner, inspecting a visible object, or revealing an occluded detail. To model this structure, we mine multi-intention camera-motion supervision from egocentric video, pairing plausible intents and observation-gain descriptions with relative SE(3) target poses. We propose LIME, a vision-language camera-motion generator that combines an auto-regressive observation-gain output with a continuous flow-matching pose head. This design lets the model jointly predict what the next view should reveal while representing multi-hypothesis target views. Across experiments and downstream robotic tasks, we show that LIME can learn to actively choose camera poses from passive human video, turning ordinary egocentric recordings into supervision for intent-aware active perception."
+  },
+  {
     "title": "Ubtech Robotics’ U1 Consumer Robot Draws 13,000+ Pre-Orders, Yet Shares Slide on Profit Fears - Ad-hoc-news.de",
     "original_title": "Ubtech Robotics’ U1 Consumer Robot Draws 13,000+ Pre-Orders, Yet Shares Slide on Profit Fears - Ad-hoc-news.de",
     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSk5Pd1hTYnliLVVJY1JDclNvd3VXNFhmVndYRW9LT3YtRk9WVzRTN0dJTmxqcXVGMUdHQUpkZXF1bmNJTE5Pa081aUVaZFZqbGltYmV1WHE2Um1pTjhZYy1nMEhfRXNPZC1SZjJfMHRjZVROSXZBYXZ6UEl5QjFJTFFWSjd4NUZUYllKc0VCNThrMFJtSHRlOUQweDdZcHRNWDNyc1ZYcEpCSHFHTVJITS1Ha2R1Sk5Nc3hHTkZqWGxWZFNfQUE?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2601.07284v2 Announce Type: replace \nAbstract: Retargeting human motion to heterogeneous robots is a fundamental challenge in robotics, primarily due to the severe kinematic and dynamic discrepancies between varying embodiments. Existing solutions typically resort to training embodiment-specific models, which scales poorly and fails to exploit shared motion semantics. To address this, we present AdaMorph, a unified neural retargeting framework that enables a single model to adapt human motion to diverse robot morphologies. Our approach treats retargeting as a conditional generation task. We map human motion into a morphology-agnostic latent intent space and utilize a dual-purpose prompting mechanism to condition the generation. Instead of simple input concatenation, we leverage Adaptive Layer Normalization (AdaLN) to dynamically modulate the decoder's feature space based on embodiment constraints. Furthermore, we enforce physical plausibility through a curriculum-based training objective that ensures orientation and trajectory consistency via integration. Experimental results on 12 distinct humanoid robots demonstrate that AdaMorph effectively unifies control across heterogeneous topologies, exhibiting strong zero-shot generalization to unseen complex motions while preserving the dynamic essence of the source behaviors."
-  },
-  {
-    "title": "SOLE-R1: Video-Language Reasoning as the Sole Reward for On-Robot Reinforcement Learning",
-    "original_title": "SOLE-R1: Video-Language Reasoning as the Sole Reward for On-Robot Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2603.28730",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.28730v2 Announce Type: replace \nAbstract: Vision-language models (VLMs) have shown impressive capabilities across diverse tasks, motivating efforts to leverage these models to supervise robot learning. However, when used as evaluators in reinforcement learning (RL), today's strongest models often fail under partial observability and distribution shift, enabling policies to exploit perceptual errors rather than solve the task. We introduce SOLE-R1 (Self-Observing LEarner), a video-language reasoning model explicitly designed to serve as the sole reward signal for online RL. Given only raw video observations and a natural-language goal, SOLE-R1 performs per-timestep spatiotemporal chain-of-thought (CoT) reasoning and produces dense estimates of task progress that can be used directly as rewards. To train SOLE-R1, we develop a large-scale video trajectory and reasoning synthesis pipeline that generates temporally grounded CoT traces aligned with continuous progress supervision. This data is combined with foundational spatial and multi-frame temporal reasoning, and used to train the model with a hybrid framework that couples supervised fine-tuning with RL from verifiable rewards. Across four different simulation environments and a real-robot setting, SOLE-R1 enables zero-shot online RL from random initialization: robots learn previously unseen manipulation tasks without ground-truth rewards, success indicators, demonstrations, or task-specific tuning. SOLE-R1 succeeds on 24 unseen tasks and substantially outperforms strong vision-language rewarders, including Robometer, RoboReward, ReWiND, GPT-5, and Gemini-3-Pro, while exhibiting markedly greater robustness to reward hacking. We release all models, data, code, and demos at the anonymous page: https://philip-mit.github.io/sole-r1/"
-  },
-  {
-    "title": "Governed Capability Evolution: Lifecycle-Time Compatibility Checking and Rollback for AI-Component-Based Systems, with Embodied Agents as Case Study",
-    "original_title": "Governed Capability Evolution: Lifecycle-Time Compatibility Checking and Rollback for AI-Component-Based Systems, with Embodied Agents as Case Study",
-    "link": "https://arxiv.org/abs/2604.08059",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2604.08059v5 Announce Type: replace \nAbstract: Software systems built from versioned AI components increasingly need lifecycle-time governance: when a capability module evolves into a new version, the hosting system must decide whether the new version may be activated safely, under what deployment conditions it should run, how it must be monitored, and when it should be rolled back. Existing software-deployment patterns (canary release, blue-green, feature flags, and MLOps pipelines) address parts of this loop but were designed for stateless web services rather than for stateful, policy-constrained runtimes that drive AI components in the field. We formulate governed capability evolution as a first-class software-lifecycle problem for AI-component-based systems and propose a staged upgrade framework in which every new capability version is treated as a governed deployment candidate rather than an immediately executable replacement. The framework introduces four upgrade compatibility checks (interface, policy, behavioral, recovery) and organizes them into a seven-stage pipeline (candidate validation, sandbox evaluation, shadow deployment, gated activation, online monitoring, rollback, audit). We implement a reference prototype on a PyBullet manipulation testbed with ROS 2 middleware and evaluate it over 6 rounds of capability upgrade with 15 random seeds. Naive upgrade achieves 72.9% task success but drives unsafe activation to 60% by the final round; governed upgrade retains comparable success (67.4%) while maintaining zero unsafe activations across all rounds (Wilcoxon p=0.003). Shadow deployment reveals 40% of upgrade regressions invisible to sandbox evaluation alone, and rollback succeeds in 79.8% of post-activation drift scenarios."
-  },
-  {
-    "title": "Continual Model-Based Reinforcement Learning with Hypernetworks",
-    "original_title": "Continual Model-Based Reinforcement Learning with Hypernetworks",
-    "link": "https://arxiv.org/abs/2009.11997",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2009.11997v3 Announce Type: replace-cross \nAbstract: Effective planning in model-based reinforcement learning (MBRL) and model-predictive control (MPC) relies on the accuracy of the learned dynamics model. In many instances of MBRL and MPC, this model is assumed to be stationary and is periodically re-trained from scratch on state transition experience collected from the beginning of environment interactions. This implies that the time required to train the dynamics model - and the pause required between plan executions - grows linearly with the size of the collected experience. We argue that this is too slow for lifelong robot learning and propose HyperCRL, a method that continually learns the encountered dynamics in a sequence of tasks using task-conditional hypernetworks. Our method has three main attributes: first, it includes dynamics learning sessions that do not revisit training data from previous tasks, so it only needs to store the most recent fixed-size portion of the state transition experience; second, it uses fixed-capacity hypernetworks to represent non-stationary and task-aware dynamics; third, it outperforms existing continual learning alternatives that rely on fixed-capacity networks, and does competitively with baselines that remember an ever increasing coreset of past experience. We show that HyperCRL is effective in continual model-based reinforcement learning in robot locomotion and manipulation scenarios, such as tasks involving pushing and door opening. Our project website with videos is at this link https://rvl.cs.toronto.edu/blog/hypercrl"
-  },
-  {
-    "title": "Unitree gearing up for IPO; Shanghai review next week - China Daily - Global Edition",
-    "original_title": "Unitree gearing up for IPO; Shanghai review next week - China Daily - Global Edition",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOa3dnVzZLSFNUdUlobFRjRWpZeGlsZEJBUWtabEQ2S2FzLUl0amhQei0zOWtrQ3phTkxQZURIYXZxN0hiM3lWemtQbGl6SFQxUHNCZnVudzNxdDlUMWsyU2M0OGQzYS00R243d2ZKR0ZaMlk4aWt6YXhHQkRERkhZcQ?oc=5",
-    "date": "2026-05-27 01:46",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree gearing up for IPO; Shanghai review next week  China Daily - Global Edition"
-  },
-  {
-    "title": "Unitree gearing up for IPO; Shanghai review next week - China Daily - Global Edition",
-    "original_title": "Unitree gearing up for IPO; Shanghai review next week - China Daily - Global Edition",
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNVmd4M1JFNmJOOXVlT1VuNzdMeTVJM1ZMTklmZ1B4OXBoendQTzhvR08tbXVWTE11WnRqbWFZMWV0Z254NkQ1RVViS0N6eXYtdkRyZmo3Q3FkVFpXWll6dVVuZ2Fqc0NZUTcwVHBjdVkyRnVfV3RUeWFlRkNQNUF4UzJB?oc=5",
-    "date": "2026-05-27 01:46",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree gearing up for IPO; Shanghai review next week  China Daily - Global Edition"
-  },
-  {
-    "title": "Unitree gearing up for IPO; Shanghai review next week - China Daily",
-    "original_title": "Unitree gearing up for IPO; Shanghai review next week - China Daily",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB2VEZTWVM5bmx2a3hhTy1Hb29IYjJGQU92LUEzZlduM2ozRF84c1BQQnJmcFl5a2lFUkFmYnlfamNnWmMxUFhXWGdTQUxVNTBnc2p6eHVZQWFuRVg2cklwOVpQRXg4OHpLdW16di13QVdySi00SHVjRFVtVDkzdw?oc=5",
-    "date": "2026-05-27 01:20",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree gearing up for IPO; Shanghai review next week  China Daily"
-  },
-  {
-    "title": "China's humanoid robotics startup Unitree fast-tracks Shanghai IPO with target US$6.2 billion valuation - The Business Times",
-    "original_title": "China's humanoid robotics startup Unitree fast-tracks Shanghai IPO with target US$6.2 billion valuation - The Business Times",
-    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxORWxTY2d6OVhlREZuUUFRQ1dnY05ZMHdpX2RJZzRsazFFZk5jaFpsQVUwSW16b0x2ZDFBVVYzUjgtX2FGZXY2LUFNV3dOQVlqRlFUS0haVjlQbTB2WXpmdXM2QjdYYy1ybzBMaHkxcldncXdad0xPeWdjM3V4UmJfMUNmdFczYWNsSUlPbWREelNTOW0zelMzaFh2aFhaMkZpLVc4NTU1OGdQNU5UeTF0VE9rZHdsOXg1U0RRR3ZhcU1BamJtNlpBLVlNckxUekl6dnJFWVp0VVM0YkpueU80aA?oc=5",
-    "date": "2026-05-27 01:10",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China's humanoid robotics startup Unitree fast-tracks Shanghai IPO with target US$6.2 billion valuation  The Business Times"
-  },
-  {
-    "title": "China’s humanoid robot stuns viewers with lifelike ballet performance - VnExpress International",
-    "original_title": "China’s humanoid robot stuns viewers with lifelike ballet performance - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPLVIzTmVvTmIwTWRHTHdtSlh4Z1llakhub2wwNjRJUjNESWxRZGhmMkRBMnFDZWZoUG9nS2F6SnZqb3hLNEdpcnZxR2hwa09iNnRIcnVXbVQzUG9Ed2xXdWxjZUJKcXlrWTFjSHNGVGhSdzV1cGZ0cFFpd2RFNkg0VEZYdFlERVVRcWdBeU41R3U3ajlHNUo1aDdEOUI0Z202QXh6Nm1KU3hIbENIMFVEVEF2V2dKdHBkYTM1X2FIYTZ4bHZo?oc=5",
-    "date": "2026-05-26 23:52",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China’s humanoid robot stuns viewers with lifelike ballet performance  VnExpress International"
   }
 ]
