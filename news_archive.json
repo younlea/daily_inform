@@ -1,5 +1,14 @@
 [
   {
+    "title": "Chinese firm unveils hyper-real humanoid companion robot for loneliness - Newswire",
+    "original_title": "Chinese firm unveils hyper-real humanoid companion robot for loneliness - Newswire",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMTRTczFvYmdIYzBCTFUtbEpQd3dvSTZLYTBZN0hJT1RyR2prSTR5VW5iVEF3aXV1OF8xQkVtSWpnVXhIS2RnWjlISkh0aFI0YUdKWkpmMEx2X3prRnhTUVZHOV9sTTB4VkJYS3RFX0pJX3IxSVJtN3pyT3E1UFNhQV81UW56TGF0V3ZiQmZaUmhQdmlORUt0bWU3NnBSajBOQ2FGdDUxc3hBLTQ?oc=5",
+    "date": "2026-07-03 05:26",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Chinese firm unveils hyper-real humanoid companion robot for loneliness  Newswire"
+  },
+  {
     "title": "Adaptive Companionship for Group-Following Robots: Handling Dynamically Changing Group Formations",
     "original_title": "Adaptive Companionship for Group-Following Robots: Handling Dynamically Changing Group Formations",
     "link": "https://arxiv.org/abs/2607.01287",
@@ -142,6 +151,78 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2607.02417v1 Announce Type: new \nAbstract: Autonomous robots often need to move their camera before they can act: to inspect an object, reveal an occluded region, or obtain a view that responds to a user's intent. While vision-language navigation translates instructions to base motion and vision-language-action policies map instructions to manipulation actions, language-conditioned camera motion remains comparatively underexplored as a first-class action. We formulate language-conditioned camera motion generation: given a current RGB observation and a free-form natural-language intent, predict a relative target camera pose for the next observation. This task is inherently non-trivial: viewpoint changes are driven by latent perceptual intentions, and a valid motion may operate at different semantic granularity, from entering a room to looking around a corner, inspecting a visible object, or revealing an occluded detail. To model this structure, we mine multi-intention camera-motion supervision from egocentric video, pairing plausible intents and observation-gain descriptions with relative SE(3) target poses. We propose LIME, a vision-language camera-motion generator that combines an auto-regressive observation-gain output with a continuous flow-matching pose head. This design lets the model jointly predict what the next view should reveal while representing multi-hypothesis target views. Across experiments and downstream robotic tasks, we show that LIME can learn to actively choose camera poses from passive human video, turning ordinary egocentric recordings into supervision for intent-aware active perception."
+  },
+  {
+    "title": "WorldSample: Closed-loop Real-robot RL with World Modelling",
+    "original_title": "WorldSample: Closed-loop Real-robot RL with World Modelling",
+    "link": "https://arxiv.org/abs/2607.02431",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.02431v1 Announce Type: new \nAbstract: Reinforcement learning (RL) can overcome the demonstration-coverage limitation of imitation learning (IL) by allowing robots to improve through trial-and-error interaction beyond the states observed in demonstrations. However, deploying RL on real robots remains constrained by high interaction costs, since each physical rollout is costly and reflects only one realized action-outcome path. To address this challenge, we propose WorldSample, a physically grounded data augmentation framework for real-robot RL that closes a real-synthetic loop between physical rollouts, world-model generation, and policy improvement. Grounded on real rollouts, WorldSample generates high-fidelity synthetic transitions through a post-trained world model, which greatly lowers the visual hallucination. Specifically, rather than simply using these transitions as real-world experience, WorldSample introduces Policy-Paced Learning (PPL) to regulate the training process through sample selection and scheduling, balancing useful augmentation against value overestimation and mitigating the hallucination-induced noise. Experiments on robot manipulation tasks involving contact-rich and precise tasks show that WorldSample improves policy success rate by 28% while reducing training steps by 59% compared with baselines. Furthermore, WorldSample improves world model visual fidelity by 19.4dB in PSNR and 0.47 in SSIM over demonstration-only post-training, validating the effectiveness of the real-synthetic loop for both policy and world model performance."
+  },
+  {
+    "title": "VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation",
+    "original_title": "VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2607.02503",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.02503v1 Announce Type: new \nAbstract: Contact-rich manipulation requires policies to react to local deformation, pressure, slip, and friction, yet these cues are temporally sparse and often invisible in visual observations. Existing visual-tactile policies usually feed tactile observations directly into action prediction, but rarely model tactile deformation dynamics during action generation. In this paper, we introduce VT-WAM, a Visual-Tactile World Action Model that jointly learns future visual prediction, tactile deformation prediction, and action prediction within a unified flow matching framework. In particular, VT-WAM introduces (1) Asymmetric Mixture-of-Transformers (MoT) attention to bridge a first-frame visual anchor with temporal tactile dynamics, and (2) contact-gated Action-Visual-Tactile Attention Guidance (AVTAG) to encourage action queries to rely on tactile evidence during contact phases. Across six real-world contact-rich manipulation tasks, VT-WAM achieves a 71.67% average success rate, outperforming Fast-WAM by 26.67% and OmniVTLA by 35.84%. Ablations demonstrate that modeling tactile deformation dynamics and guiding contact-phase tactile attention are both important for contact-rich tasks. Project website: https://vt-wam.github.io/."
+  },
+  {
+    "title": "VLAFlow: A Unified Training Framework for Vision-Language-Action Models via Co-training and Future Latent Alignment",
+    "original_title": "VLAFlow: A Unified Training Framework for Vision-Language-Action Models via Co-training and Future Latent Alignment",
+    "link": "https://arxiv.org/abs/2607.01586",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.01586v1 Announce Type: cross \nAbstract: Vision-language-action models (VLAs) have recently advanced robotic manipulation, yet the effects of different robot-data pre-training paradigms remain difficult to compare because existing models often differ in architecture, data, action space, and evaluation protocol. We present VLAFlow (Vision-Language-Action Flow), a unified flow-matching framework for controlled comparison of VLA training objectives. Using a heterogeneous robot corpus, OXEMix, containing approximately 5,000 hours of data from DROID, OpenX-Embodiment, OpenX-Augmented, and RoboCOIN, we evaluate four paradigms under the same pi0-style architecture, shared VLM backbone, action expert, and 14-dimensional action space: action-only modeling (MindPI), language-supervised co-training (MindLPI), future latent alignment (MindWPI), and their combination (MindLWPI). Experiments on LIBERO, LIBERO-Plus, and SimplerEnv show that action-only pre-training is sensitive to heterogeneous data. In contrast, language supervision helps preserve vision-language generalization, while future latent alignment improves state-transition and action-outcome modeling. By combining both signals, MindLWPI achieves the most stable overall transfer performance across benchmarks. These results suggest a meta-action space view: language and future latent representations provide complementary intermediate constraints that make heterogeneous action supervision smoother and more transferable."
+  },
+  {
+    "title": "NeHMO: Neural Hamilton-Jacobi Reachability Learning for Decentralized Safe Multi-Arm Motion Planning",
+    "original_title": "NeHMO: Neural Hamilton-Jacobi Reachability Learning for Decentralized Safe Multi-Arm Motion Planning",
+    "link": "https://arxiv.org/abs/2507.13940",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2507.13940v2 Announce Type: replace \nAbstract: Safe multi-arm motion planning is a challenging problem in robotics due to its high dimensionality, coupled configuration space, and complex collision constraints. Centralized planners are capable of coordinating all arms but often face scalability limitations, restricting applicability in real-time settings. On the other hand, decentralized methods are scalable and recent deep learning-based approaches have shown promising results. However, these depend on accurate behavior prediction or coordination protocols and may fail when other arms act unpredictably. To address these challenges, we introduce a neural Hamilton-Jacobi Reachability (HJR) learning-based approach to approximate a safety value function that captures worst-case inter-arm safety constraints. We further develop a decentralized trajectory optimization framework that uses the learned HJR representation for real-time planning. The proposed method is scalable and data-efficient, generalizes across multi-manipulator systems, and outperforms state-of-the-art baselines on challenging multi-arm motion planning tasks."
+  },
+  {
+    "title": "Latent Policy Barrier: Learning Robust Visuomotor Policies by Staying In-Distribution",
+    "original_title": "Latent Policy Barrier: Learning Robust Visuomotor Policies by Staying In-Distribution",
+    "link": "https://arxiv.org/abs/2508.05941",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2508.05941v2 Announce Type: replace \nAbstract: Visuomotor policies trained via behavior cloning are vulnerable to covariate shift, where small deviations from expert trajectories can compound into failure. Common strategies to mitigate this issue involve expanding the training distribution through human-in-the-loop corrections or synthetic data augmentation. However, these approaches are often labor-intensive, rely on strong task assumptions, or compromise the quality of imitation. We introduce Latent Policy Barrier, a framework for robust visuomotor policy learning. Inspired by Control Barrier Functions, LPB treats the latent embeddings of expert demonstrations as an implicit barrier separating safe, in-distribution states from unsafe, out-of-distribution (OOD) ones. Our approach decouples the role of precise expert imitation and OOD recovery into two separate modules: a base diffusion policy solely on expert data, and a dynamics model trained on both expert and suboptimal policy rollout data. At inference time, the dynamics model predicts future latent states and optimizes them to stay within the expert distribution. Both simulated and real-world experiments show that LPB improves both policy robustness and data efficiency, enabling reliable manipulation from limited expert data and without additional human correction or annotation."
+  },
+  {
+    "title": "VLSA: Vision-Language-Action Models with Plug-and-Play Safety Constraint Layer",
+    "original_title": "VLSA: Vision-Language-Action Models with Plug-and-Play Safety Constraint Layer",
+    "link": "https://arxiv.org/abs/2512.11891",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.11891v2 Announce Type: replace \nAbstract: Vision-Language-Action (VLA) models have demonstrated remarkable capabilities in generalizing across diverse robotic manipulation tasks. However, deploying these models in unstructured environments remains challenging due to the critical need for simultaneous task compliance and safety assurance, particularly in preventing potential collisions during physical interactions. In this work, we introduce a Vision-Language-Safe Action (VLSA) architecture, named AEGIS, which contains a plug-and-play safety constraint (SC) layer formulated via control barrier functions. AEGIS integrates directly with existing VLA models to improve safety with theoretical guarantees, while maintaining their original instruction-following performance. To evaluate the efficacy of our architecture, we construct a comprehensive safety-critical benchmark SafeLIBERO, spanning distinct manipulation scenarios characterized by varying degrees of spatial complexity and obstacle intervention. Extensive experiments demonstrate the superiority of our method over state-of-the-art baselines. Notably, AEGIS achieves over 50% improvement in obstacle avoidance rate while substantially increasing the task success rate by nearly 10%. All benchmark datasets, code, and supplementary materials are publicly available at https://vlsa-aegis.github.io/."
+  },
+  {
+    "title": "Learning Semantic Atomic Skills for Multi-Task Robotic Manipulation",
+    "original_title": "Learning Semantic Atomic Skills for Multi-Task Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2512.18368",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2512.18368v2 Announce Type: replace \nAbstract: Scaling imitation learning to diverse multi-task robot manipulation remains challenging due to suboptimal demonstrations, behavioral multi-modality, and destructive interference across tasks. While skill-based methods offer a promising direction by decomposing behaviors into reusable abstractions, existing approaches often learn skills that are either biased toward linguistic structure or lack semantic alignment across tasks, limiting generalization. In this work, we propose AtomSkill, a novel framework that learns a semantically aligned Atomic Skill Space from demonstrations and enables robust long-horizon execution through keypose imagination. Our method introduces: (1) semantic contrastive skill alignment, which partitions demonstrations into variable-length atomic skills and employs a contrastive objective to jointly enforce semantic consistency and temporal coherence, yielding a compact and reusable skill library; and (2) action decoding with keypose imagining, where the policy predicts both a skill's terminal keypose and immediate actions, thereby supporting progress-aware skill transitions. During inference, an atomic skill diffusion sampler generates plausible skill sequences, while predicted keyposes autonomously trigger smooth skill chaining. Extensive experiments in simulation and real-world settings show that AtomSkill consistently outperforms state-of-the-art imitation learning and skill-based baselines. Project page: https://atom-skill.github.io."
+  },
+  {
+    "title": "Restoring Linguistic Grounding in VLA Models via Train-Free Attention Recalibration",
+    "original_title": "Restoring Linguistic Grounding in VLA Models via Train-Free Attention Recalibration",
+    "link": "https://arxiv.org/abs/2603.06001",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.06001v2 Announce Type: replace \nAbstract: Vision-Language-Action (VLA) models enable robots to perform manipulation tasks directly from natural language instructions and are increasingly viewed as a foundation for generalist robotic policies. However, their reliability under Out-of-Distribution (OOD) instructions remains underexplored. In this paper, we reveal a critical failure mode in which VLA policies continue executing visually plausible actions even when the language instruction contradicts the scene. We refer to this phenomenon as linguistic blindness, where VLA policies prioritize visual priors over instruction semantics during action generation. To systematically analyze this issue, we introduce ICBench, a diagnostic benchmark constructed from the LIBERO dataset that probes language-action coupling by injecting controlled OOD instruction contradictions while keeping the visual environment unchanged. Evaluations on three representative VLA architectures, including Pi0, Pi0.5 and OpenVLA OFT, show that these models frequently succeed at tasks despite logically impossible instructions, revealing a strong visual bias in action generation. To mitigate this issue, we propose Instruction-Guided Attention Recalibration (IGAR), a train-free inference-time mechanism that rebalances attention distributions to restore the influence of language instructions. IGAR operates without retraining or architectural modification and can be directly applied to existing VLA models. Experiments across 30 LIBERO tasks demonstrate that IGAR substantially reduces erroneous execution under OOD contradictory instructions while preserving baseline task performance. We additionally validate the approach on a real Franka robotic arm, where IGAR effectively prevents manipulation triggered by inconsistent instructions."
   },
   {
     "title": "Ubtech Robotics’ U1 Consumer Robot Draws 13,000+ Pre-Orders, Yet Shares Slide on Profit Fears - Ad-hoc-news.de",
@@ -394,6 +475,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "China Deploys UBTech Walker S2 at Vietnam Border  Let's Data Science"
+  },
+  {
+    "title": "UBTech unveils lifelike humanoid companion robots in China - MSN",
+    "original_title": "UBTech unveils lifelike humanoid companion robots in China - MSN",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZHYtZXZUNm95eV9jUnVjd1JuSDlLdDJQWVZSYzhYWXhBM05wWGkxaWdYS0hUMjkxV3pqeHpJbl9jZ2FVM0NpbDRlQjJGckF4bXBZSnAzc0dMLXNDeV9RNWwwRzFKOVcxamQ2Y1d3THdVNzh2ZDJUa2pOSTY0eGloM01SUWlJbGM2MHlibmxNd25KRHdlVDhGYjk4YnNrWFY4Y1pFQk5iOF9QR3FLbE45Sg?oc=5",
+    "date": "2026-07-02 09:01",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "UBTech unveils lifelike humanoid companion robots in China  MSN"
   },
   {
     "title": "The Role of Risk Calculations in Building More Reliable Automated Trading Systems",
@@ -17908,95 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.26649v1 Announce Type: new \nAbstract: RGB-based imitation learning requires many demonstrations to generalize to unseen objects or scenes, motivating research into intermediate representations to improve generalization for robotic manipulation. Visual foundation models enable one-shot extraction of keypoints to provide such representation. However, it remains unclear how to integrate them into imitation learning optimally and when they outperform alternative representations. We combine approaches from previous works on keypoint imitation learning (KIL) and investigate several design choices to provide practical guidelines. Using over 2000 real-world rollouts, we also assess the generalization capabilities of KIL to unseen objects and scene variations. KIL achieves a 75% overall success rate across five tasks, significantly outperforming the RGB baseline (47%) and performing on par with S2-diffusion (73%). Finally, we explore the limitations of the foundation models used for keypoint extraction and extend KIL to tasks with multiple object instances. Our results confirm KIL as a data-efficient approach for robot learning, though it does not outperform alternative representations and inherits limitations of the foundation models used for keypoint extraction. All rollout videos, demonstrations, and results are available at https://kil-manipulation.github.io/."
-  },
-  {
-    "title": "Can VLA Models Learn from Real-World Data Continually without Forgetting?",
-    "original_title": "Can VLA Models Learn from Real-World Data Continually without Forgetting?",
-    "link": "https://arxiv.org/abs/2605.26820",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.26820v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models provide a promising foundation for general-purpose robotics. However, their successful deployment in real-world scenarios requires the ability to continually acquire new skills while retaining previously learned behaviors. While pioneering research has studied the continual learning of VLA models in narrowly simulated environments, this challenge remains largely unexplored under realistic conditions. To address this limitation, we construct a real-world continual learning dataset comprising four sequential manipulation tasks, spanning rigid-object pick-and-place, contact-rich pressing, and deformable-object folding. Using this dataset, we conduct comprehensive experiments and find that VLA models suffer significant catastrophic forgetting when continually learning from heterogeneous real-world demonstrations. We then systematically evaluate experience replay and uncover key implementation factors that govern its success. In summary, this work provides the first empirical study of real-world continual VLA learning and offers practical guidance for deploying long-lived robot policies."
-  },
-  {
-    "title": "Object Pose and Shape Estimation for Grasping: Does it Work?",
-    "original_title": "Object Pose and Shape Estimation for Grasping: Does it Work?",
-    "link": "https://arxiv.org/abs/2605.26944",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.26944v1 Announce Type: new \nAbstract: The problem of object pose and shape estimation has seen key advancements lately. Encoder-decoder (e.g., SAM3D, LRM, CRISP) and diffusion-based models (e.g., InstantMesh, Zero123, SceneComplete) have shown category-agnostic shape encoding capacity and open-set generalizability. In this work, we ask the question: Are the object pose and shape estimation methods mature enough, such that when used with antipodal grasp sampling, can outperform the end-to-end grasp synthesis methods? We explore this question in detail by scoping our study to parallel jaw grippers, 7-DoF grasps, and single-view RGB(-D) image as input. We implement and compare a state-of-the-art, end-to-end grasp synthesis method and three modular methods, which first estimate the object pose and shape for all objects in the scene, and generate grasps using antipodal sampling. We observe that the modular methods outperform the end-to-end method in all our experiments. The modular methods are able to synthesize plenty of grasps, even for small objects, where the end-to-end methods fail. The effectiveness of the modular methods is contingent on the accuracy of the pose and shape estimation, and suffers partial degradation in cluttered scenes - a limitation of the existing pose and shape estimation methods. We also analyze the failure modes and run-times for the three modular methods, which use two different ways of object pose and shape estimation: one based on an encoder-decoder model, while another a diffusion model. Finally, we demonstrate that the single-view object pose and shape estimation methods can be augmented with vision-language models to yield language-conditioned grasps from just single-view RGB-D image as input. We notice comparable performance to the state-of-the-art LERF-TOGO baseline."
-  },
-  {
-    "title": "Towards Shared Embodied Intelligence in Humanoid Robots through Optimization Development and Testing of the Human Aware ergoCub Robot",
-    "original_title": "Towards Shared Embodied Intelligence in Humanoid Robots through Optimization Development and Testing of the Human Aware ergoCub Robot",
-    "link": "https://arxiv.org/abs/2605.26991",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.26991v1 Announce Type: new \nAbstract: Collaboration is central to human behavior, enabling tasks beyond individual capability. This ability arises from coordinating actions through internal representations of others, a concept known as shared intelligence. Additionally, humans are characterized by physical bodies and cognitive abilities that are optimized in response to their environment, a phenomenon referred to as embodied cognition. Designing humanoid robots that collaborate safely and effectively with people requires unifying these principles. Here we propose an architecture that integrates shared intelligence and embodied cognition to enable robots to physically collaborate with humans, where robot hardware and control are optimized for human metrics, using representations of the human body and motion intelligence. The ultimate goal is to achieve a form of shared embodied intelligence. Specifically, our architecture optimizes robot hardware and physical intelligence parameters with respect to human ergonomic metrics. This is accomplished by modeling human-robot interaction as a function of hardware configurations and embedding human models into the robot's physical intelligence. As a concrete implementation, we present the humanoid robot ergoCub, whose morphology and control have been optimized for collaborative tasks with humans. Our approach provides a framework for designing humanoid robots that prioritize human ergonomics at both the hardware and physical intelligence levels, with applications in industrial and assistive robotics."
-  },
-  {
-    "title": "Learning to Balance Motor Thermal Safety and Quadrupedal Locomotion Performance with Residual Policy",
-    "original_title": "Learning to Balance Motor Thermal Safety and Quadrupedal Locomotion Performance with Residual Policy",
-    "link": "https://arxiv.org/abs/2605.27046",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.27046v1 Announce Type: new \nAbstract: Motor thermal management is often overlooked in the context of electrically-actuated robots, particularly legged robots, but motor overheating is a key factor that limits long-duration locomotion especially under payload conditions. This paper integrates a whole-body thermal model of a quadruped robot into the reinforcement learning pipeline to update motor temperatures, and proposes a two-stage training framework for motor thermal management. In this framework, a nominal policy is first pre-trained as a locomotion baseline capable of traversing diverse terrains. A residual policy is then trained on top of the nominal policy to provide corrective actions based on the robot's thermal state, ensuring high performance under low-temperature conditions and preventing motor overheating under high-temperature conditions. Simulation results demonstrate that the proposed policy achieves an effective balance between motor thermal safety and locomotion performance. Real-world experiments on a Unitree A1 quadruped robot further validate the approach: under a 3 kg payload, the robot achieves stable locomotion across multiple terrains for over 13 minutes, while the nominal policy alone leads to motor overheating in about 5 minutes."
-  },
-  {
-    "title": "VR-DAgger: Immersive VR for Dexterous Data Collection and Uncertainty-Guided On-Policy Correction",
-    "original_title": "VR-DAgger: Immersive VR for Dexterous Data Collection and Uncertainty-Guided On-Policy Correction",
-    "link": "https://arxiv.org/abs/2605.27114",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.27114v1 Announce Type: new \nAbstract: Learning from demonstrations is effective for robotic manipulation, but collecting sufficient task-specific data remains a major bottleneck. Under distribution shift, small errors compound, performance degrades, and expert time is often spent on redundant, low-value corrections instead of the few critical failure cases."
-  },
-  {
-    "title": "FineVLA: Fine-Grained Instruction Alignment for Steerable Vision-Language-Action Policies",
-    "original_title": "FineVLA: Fine-Grained Instruction Alignment for Steerable Vision-Language-Action Policies",
-    "link": "https://arxiv.org/abs/2605.27284",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.27284v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models are increasingly expected to not only complete robot tasks, but also follow human instructions about how those tasks should be executed. However, existing robot datasets usually pair trajectories with coarse goal-level language, leaving execution-critical details such as active arm, approach direction, and contact region unspecified. This limits steerable policy learning and robotic video understanding. We introduce FineVLA, an open framework for action-aligned fine-grained VLA supervision. The framework includes: (1) a data construction tool that unifies 972,247 trajectories across 85K tasks from 10 open-source robot datasets and builds FineVLA-Data, a human-verified dataset of 47,159 fine-grained trajectories; (2) a held-out benchmark with 500 videos, 10,816 atomic facts, and 1,030 VQA questions; (3) a robotics-specialized VLM annotator for scalable fine-grained annotation; and (4) a steerable VLA policy trained with controlled mixtures of fine-grained and raw goal-level instructions. Our experiments yield three findings. First, fine-grained supervision does not sacrifice goal-level success: FG-only improves over Raw-only by +1.4 to +8.1 success-rate points across settings. Second, fine-grained and raw instructions are complementary, following a consistent inverted-U trend peaking at FG:Raw = 1:2 to 1:1. The best mixed setting reaches 86.8%/82.5% in RoboTwin simulation and 62.7/100 in real-world dual-arm manipulation (vs. 49.9 Raw-only). Third, fine-grained supervision improves steerable control: the largest real-world gains appear on pose (+23), color (+18), and approach direction (+18)--factors where goal-level instructions provide no guidance. Overall, fine-grained language should augment goal-level instructions: specifying how to execute alongside what to achieve. Project page: https://finevla.xlang.ai/"
-  },
-  {
-    "title": "Breaking the Epistemic Trap: Active Perception Under Compound Uncertainty",
-    "original_title": "Breaking the Epistemic Trap: Active Perception Under Compound Uncertainty",
-    "link": "https://arxiv.org/abs/2605.26627",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2605.26627v1 Announce Type: cross \nAbstract: Deploying reinforcement learning in safety critical domains, from autonomous vehicles to medical decision support, is constrained by failures arising when systems encounter unfamiliar conditions. We argue that the fundamental bottleneck is not individual challenges like changing dynamics or incomplete observations, but their synergistic interaction, which we term the Epistemic Trap: agents cannot estimate their state without knowing system dynamics, nor learn dynamics without accurate state information. Proof-of-concept experiments in simulated locomotion reveal that combining these uncertainties causes failures far worse than either challenge alone, a 77% performance degradation against the 46% by adding the individual effects, demonstrating compounding failure modes that conventional methods overlook. Such approaches adopt a passive epistemic stance that cannot resolve this coupled uncertainty. We propose reframing safety as an information problem, introducing an Adaptive Safety Architecture built around three contributions: the Compound Uncertainty Coefficient ($\\kappa$), a mutual information based metric that quantifies state dynamics coupling and is computable online without full joint belief inference; information seeking policies governed by a MaxInfoRL objective that actively probe system dynamics; and regime-adaptive safety constraints that tighten as epistemic coupling rises. This paradigm shift, from passive robustness to active perception, offers a principled path toward decision making systems that operate under uncertainty, recognize their own ignorance, and act strategically to resolve it."
-  },
-  {
-    "title": "OSMa-Bench++: Toward Open-Ended Benchmarking of Semantic Mapping for Manipulation with Prompt-Generated Synthetic Scenes",
-    "original_title": "OSMa-Bench++: Toward Open-Ended Benchmarking of Semantic Mapping for Manipulation with Prompt-Generated Synthetic Scenes",
-    "link": "https://arxiv.org/abs/2605.26831",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.26831v1 Announce Type: cross \nAbstract: Semantic mapping methods are increasingly used as intermediate scene representations for downstream robotic reasoning and manipulation, yet their evaluation is still largely tied to fixed benchmark datasets with limited coverage of manipulation-relevant corner cases. In this work, we extend OSMa-Bench toward controllable benchmarking with prompt-generated synthetic indoor scenes. Our pipeline automatically generates scene descriptions, synthesizes corresponding environments with SceneSmith, and adapts the resulting assets into an OSMa-Bench-compatible simulation format. This adaptation requires a nontrivial intermediate layer, including semantic normalization, material and texture repair, shader fallback policies, floor handling, navigation setup, and controlled lighting configuration. A key advantage of the proposed setup is that the original scene-generation prompt is known in advance and can therefore serve as an auxiliary semantic specification of the intended scene. We use this property to extend the VQA component of OSMa-Bench with a prompt-grounded question category. The resulting framework supports targeted stress-testing of semantic scene representations under conditions such as clutter, small objects, partial occlusions, and lighting variation, and makes benchmarking more extensible and better aligned with downstream manipulation requirements. Our code is available at https://github.com/be2rlab/OSMa-Bench-v2."
-  },
-  {
-    "title": "LAD-VF: LLM-Automatic Differentiation Enables Fine-Tuning-Free Robot Planning from Formal Methods Feedback",
-    "original_title": "LAD-VF: LLM-Automatic Differentiation Enables Fine-Tuning-Free Robot Planning from Formal Methods Feedback",
-    "link": "https://arxiv.org/abs/2509.18384",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2509.18384v2 Announce Type: replace \nAbstract: Large language models (LLMs) can translate natural language instructions into executable action plans for robotics, autonomous driving, and other domains. Yet, deploying LLM-driven planning in the physical world demands strict adherence to safety and regulatory constraints, which current models often violate due to hallucination or weak alignment. Traditional data-driven alignment methods, such as Direct Preference Optimization (DPO), require costly human labeling, while recent formal-feedback approaches still depend on resource-intensive fine-tuning. In this paper, we propose LAD-VF, a fine-tuning-free framework that leverages formal verification feedback for automated prompt engineering. By introducing a formal-verification-informed text loss integrated with LLM-AutoDiff, LAD-VF iteratively refines prompts rather than model parameters. This yields three key benefits: (i) scalable adaptation without fine-tuning; (ii) compatibility with modular LLM architectures; and (iii) interpretable refinement via auditable prompts. Experiments in robot navigation and manipulation tasks demonstrate that LAD-VF substantially enhances specification compliance, improving success rates from 60% to over 90%. Our method thus presents a scalable and interpretable pathway toward trustworthy, formally-verified LLM-driven control systems."
-  },
-  {
-    "title": "AdaMorph: Unified Motion Retargeting via Embodiment-Aware Adaptive Transformers",
-    "original_title": "AdaMorph: Unified Motion Retargeting via Embodiment-Aware Adaptive Transformers",
-    "link": "https://arxiv.org/abs/2601.07284",
-    "date": "2026-05-27 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2601.07284v2 Announce Type: replace \nAbstract: Retargeting human motion to heterogeneous robots is a fundamental challenge in robotics, primarily due to the severe kinematic and dynamic discrepancies between varying embodiments. Existing solutions typically resort to training embodiment-specific models, which scales poorly and fails to exploit shared motion semantics. To address this, we present AdaMorph, a unified neural retargeting framework that enables a single model to adapt human motion to diverse robot morphologies. Our approach treats retargeting as a conditional generation task. We map human motion into a morphology-agnostic latent intent space and utilize a dual-purpose prompting mechanism to condition the generation. Instead of simple input concatenation, we leverage Adaptive Layer Normalization (AdaLN) to dynamically modulate the decoder's feature space based on embodiment constraints. Furthermore, we enforce physical plausibility through a curriculum-based training objective that ensures orientation and trajectory consistency via integration. Experimental results on 12 distinct humanoid robots demonstrate that AdaMorph effectively unifies control across heterogeneous topologies, exhibiting strong zero-shot generalization to unseen complex motions while preserving the dynamic essence of the source behaviors."
   }
 ]
