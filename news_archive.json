@@ -1,5 +1,77 @@
 [
   {
+    "title": "Adaptive Companionship for Group-Following Robots: Handling Dynamically Changing Group Formations",
+    "original_title": "Adaptive Companionship for Group-Following Robots: Handling Dynamically Changing Group Formations",
+    "link": "https://arxiv.org/abs/2607.01287",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.01287v1 Announce Type: new \nAbstract: Accompanying a group of humans is an essential aspect of developing human-like social cognition in robots. However, human groups typically do not follow fixed formations, which poses significant challenges for robots in maintaining natural companionship behaviors. In this paper, we propose an adaptive group-accompaniment method for social robots based on Vision-Language Models (VLMs), leveraging their semantic reasoning capabilities to infer companion positions, maintain social distances, and understand group dynamics. The members of the group are first detected, and a perceptual module generates visual representations of the interaction group space as input to the VLM, which is then combined with a Model Predictive Path Integral (MPPI) controller to ensure stability and safety. Experimental evaluations across five scenarios show that the proposed method enables robots to accompany the group effectively, demonstrating a 15\\% improvement in success rate and a 25\\% reduction in collision rate compared to baseline approaches. Additionally, a user study indicates that the generated companionship behaviors are perceived as natural and socially appropriate."
+  },
+  {
+    "title": "Neuro-Symbolic Safety Guidance for Vision-Language-Action Models via Constrained Flow Matching",
+    "original_title": "Neuro-Symbolic Safety Guidance for Vision-Language-Action Models via Constrained Flow Matching",
+    "link": "https://arxiv.org/abs/2607.01378",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.01378v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have demonstrated promising generalization capabilities across robotic manipulation tasks, yet their real-world deployment remains limited by the lack of effective safety measures. Specifically, existing safety measures only prevent collisions caused by the robot's next action. In this paper, we propose a neuro-symbolic safety guidance mechanism for flow matching based VLAs that enables predictive collision avoidance. Flow matching based VLAs determine the next actions by predicting a trajectory (a sequence of actions) through an iterative neural flow matching process. Our method formulates safety enforcement as a minimum-norm constrained optimization problem that corrects safety violations during the denoising process of noisy intermediate trajectory predictions. By analyzing predicted trajectories and applying corrections during iterative denoising, our approach anticipates collisions before they become unavoidable. This interleaving of symbolic constraint satisfaction with neural trajectory generation enables predictive collision avoidance rather than reactive intervention. On the SafeLIBERO benchmark, our method achieves 82.8% collision avoidance and 81.6% task success, a 6.3% and 19.8% improvement respectively over single-step methods, with the largest gains on long-horizon tasks where compounding distribution shift is most pronounced. Video demonstrations of our approach are included on our project page at https://willenglish.tech/SafetyGuidedFlowMatching/."
+  },
+  {
+    "title": "BIFROST: Bridging Invariant Feature Representation for Observation-space Sim2Real Transfer",
+    "original_title": "BIFROST: Bridging Invariant Feature Representation for Observation-space Sim2Real Transfer",
+    "link": "https://arxiv.org/abs/2607.01410",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.01410v1 Announce Type: new \nAbstract: Sim2real transfer for robot policy learning suffers due to mismatch between simulation and reality. Existing methods typically address each gap in isolation through separate adaptation modules, which are composed or layered when both gaps coexist. Yet the basis for attempting sim2real in the first place is that there is shared structure between a task in simulation and reality, where equivalent actions from equivalent configurations produce equivalent long term outcomes regardless of domain specific differences in rendering or physics. In this paper, we study whether we can identify and exploit this shared structure from raw observations to train a policy that enables zero shot transfer. We introduce BIFROST, which learns a shared history encoder on paired cross-domain data via cross-domain bisimulation objective: observation-action sequences leading to equivalent long-term behavior are mapped to nearby latent states, regardless of domain. Policies trained on these latent states in simulation transfer zero-shot to reality. We provide empirical evidence on sim2sim visual navigation and sim2real contact rich manipulation task and visual servoing task that BIFROST achieves effective transfer where domain adaptation and co-training baselines fail under both visual and dynamics domain gaps."
+  },
+  {
+    "title": "Multi-Rate Nonlinear Model Predictive Control for Wall-Supported Bipedal Locomotion of Quadrupedal Robots",
+    "original_title": "Multi-Rate Nonlinear Model Predictive Control for Wall-Supported Bipedal Locomotion of Quadrupedal Robots",
+    "link": "https://arxiv.org/abs/2607.01574",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2607.01574v1 Announce Type: new \nAbstract: This paper presents a novel layered planning and control framework based on multi-rate nonlinear model predictive control (MR-NMPC) that enables quadrupedal robots to perform hybrid bipedal locomotion with wall-assisted support in constrained environments. Real-time trajectory optimization for this locomotion presents significant challenges, as the controller must simultaneously plan for both the contact points and the continuous trajectories of the robot's center of mass (CoM) and orientation within the robot's nonlinear dynamics while accounting for unilateral contact constraints, underactuation, and the switching nature of the robot's dynamics. At the high level of the control framework, an MR-NMPC is proposed, which dynamically plans both the discrete-time trajectories of the contact points and the continuous-time trajectories of the CoM and orientation, using a single rigid body (SRB) dynamics model. By incorporating contact-point planning within the multi-rate optimal control framework, this approach enhances dynamic stability compared to heuristic foot placement strategies. At the low level of the control framework, a nonlinear whole-body controller (WBC) based on virtual constraints and a quadratic program enforces full-order dynamics and tracks the MR-NMPC references. The proposed approach is validated through extensive numerical simulations demonstrating the robust wall-assisted bipedal locomotion of a Unitree A1 quadrupedal robot on rough terrains and under external disturbances in a constrained environment. Comparative analysis shows that the proposed MR-NMPC achieves a 2.9 times higher success rate compared to conventional MPC with heuristic-based foot placement strategies in negotiating irregular terrain at high speeds."
+  },
+  {
+    "title": "One Demonstration Is Enough for Real-World Robotic Reinforcement Learning",
+    "original_title": "One Demonstration Is Enough for Real-World Robotic Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2607.01651",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.01651v1 Announce Type: new \nAbstract: Learning effective robot control policies on physical hardware is challenging due to costly data collection and the difficulty of reward specification. Prior work has incorporated demonstrations into reinforcement learning (RL), yet existing approaches either require large numbers of demonstrations or depend on continuous human intervention during training. To address these limitations, we present AutoSERL, a framework that leverages a single demonstration to fully automate the intervention process in real-world robot RL. The framework includes three complementary mechanisms to accomplish certain tasks: a sliding window intervention mechanism that continuously guides exploration to prevent local optima and unsafe deviations, a safety recovery mechanism that detects and corrects failure states via predefined trajectory recovery points, and an intervention termination criterion that automatically disables guidance once the policy can independently complete the task, preserving its exploration advantage. We evaluate AutoSERL on six contact-intensive manipulation tasks across two robot platforms, spanning insertion, hanging, and hinge-based tasks. AutoSERL consistently outperforms SERL initialized with 20 demonstrations, behavior cloning, and MILES -- a dedicated one-shot imitation learning baseline -- across all tasks while matching HIL-SERL, achieves 100% success rate on insertion tasks, and demonstrates improved robustness to positional variations, all from a single demonstration. Code and videos are available on our project website: https://autoserl.github.io/."
+  },
+  {
+    "title": "Imagining the Sense of Touch: Touch-Informed Manipulation via Imagined Tactile Representations",
+    "original_title": "Imagining the Sense of Touch: Touch-Informed Manipulation via Imagined Tactile Representations",
+    "link": "https://arxiv.org/abs/2607.01684",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.01684v1 Announce Type: new \nAbstract: Tactile sensing can substantially improve contact-rich robotic manipulation, yet its practical deployment remains limited by the fragility, calibration requirements, and maintenance burden of tactile hardware. This raises a fundamental question: can robots benefit from tactile knowledge without requiring tactile sensors at deployment? We present TacImag, a tactile imagination framework that predicts tactile observations from vision and proprioception and uses the generated signals to guide manipulation policies. Trained from paired visuotactile demonstrations, TacImag enables touch-informed manipulation using only visual observations at test time. We evaluate TacImag on six simulated and four real-world manipulation tasks. Across simulation and real-world experiments, imagined tactile observations consistently improve manipulation performance without requiring tactile hardware. In real-world experiments, imagined force fields improve contact-sensitive tasks by 44.4% on average, whereas imagined tactile images improve texture-sensitive tasks by 23.3%, revealing that the effectiveness of tactile imagination depends strongly on the relationship between tactile representation and task requirements. Our results further suggest that tactile imagination does not simply recover missing tactile measurements. Instead, it acts as a form of contact-aware supervision that transforms subtle visual interaction cues into representations that are easier for manipulation policies to exploit."
+  },
+  {
+    "title": "CoRe: Combined Rewards with Vision-Language Model Feedback for Preference-Aligned Reinforcement Learning",
+    "original_title": "CoRe: Combined Rewards with Vision-Language Model Feedback for Preference-Aligned Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2607.01721",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.01721v1 Announce Type: new \nAbstract: Reward design remains a central challenge in reinforcement learning (RL). Hand-crafted rewards are often difficult to specify and may lead to suboptimal policies, while learned rewards from preferences can suffer from inefficiency and unstable training. Inspired by the dual nature of human learning explored in cognitive science, we decompose rewards into two complementary components: Formal Rewards (FR), explicitly designed based on task knowledge, and Residual Rewards (RR), learned from observations to capture implicit and nuanced preferences. Based on this decomposition, we propose CoRe, a hybrid framework that integrates FR and RR with vision-language models (VLMs) feedback to achieve preference-aligned policies without human involvement. Our contributions are twofold: (1) We propose a Formal Reward Module (FRM) that leverages VLMs to iteratively design and optimize FR based on task knowledge and preference feedback, enabling the continual improvement of policy during training; (2) We introduce a Residual Reward Module (RRM) that learns RR from video-level preference by employing VLMs to generate preference labels and capturing nuanced rewards that complement FR, ensuring alignment with human intent. Through the synergy of FRM and RRM, CoRe enables the automatic construction of reliable rewards that are efficient and preference-aligned. Extensive experiments demonstrate that CoRe outperforms existing approaches in terms of policy learning effectiveness and efficiency on ten robotic manipulation tasks in simulation and five real-worlds. Videos can be found on our project website: https://core-2026.github.io/"
+  },
+  {
+    "title": "VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon",
+    "original_title": "VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon",
+    "link": "https://arxiv.org/abs/2607.01804",
+    "date": "2026-07-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2607.01804v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) foundation models have recently achieved strong progress in embodied intelligence. To reduce policy-call frequency while preserving temporal coherence, most generative policies adopt an action chunk mechanism, executing multiple future actions in an open-loop manner under a fixed action horizon. However, this \"predict-then-blindly-execute\" paradigm sacrifices closed-loop reactivity: in contact-rich physical interactions, even small local perturbations can rapidly amplify within the open-loop blind spot, leading to compounding errors and ultimately task failure. To address this limitation, we propose VLA-Corrector, a lightweight corrective inference framework for action-chunked VLA policies. Without modifying the backbone policy weights, VLA-Corrector introduces a lightweight Latent-space Vision Monitor (LVM) that continuously compares predicted and actual visual feature evolution, enabling online detection of visual dynamics deviations. Once persistent deviation is detected, the system triggers a truncation event, discards the remaining stale actions, and invokes corrective replanning via Online Gradient Guidance (OGG). The detect-and-correct mechanism of VLA-Corrector naturally induces an event-triggered adaptive action horizon: it preserves long-horizon execution when the current chunk remains reliable, and invokes short-horizon corrective replanning when execution begins to drift. In doing so, VLA-Corrector mitigates the trade-off imposed by static horizons between execution robustness and policy-call frequency. It can be integrated into different VLA models without further retraining the VLA backbone, interrupting compounding errors while preserving much of the efficiency benefit of action chunking and substantially improving robustness in long-horizon, contact-rich robotic manipulation tasks."
+  },
+  {
     "title": "Ubtech Robotics’ U1 Consumer Robot Draws 13,000+ Pre-Orders, Yet Shares Slide on Profit Fears - Ad-hoc-news.de",
     "original_title": "Ubtech Robotics’ U1 Consumer Robot Draws 13,000+ Pre-Orders, Yet Shares Slide on Profit Fears - Ad-hoc-news.de",
     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSk5Pd1hTYnliLVVJY1JDclNvd3VXNFhmVndYRW9LT3YtRk9WVzRTN0dJTmxqcXVGMUdHQUpkZXF1bmNJTE5Pa081aUVaZFZqbGltYmV1WHE2Um1pTjhZYy1nMEhfRXNPZC1SZjJfMHRjZVROSXZBYXZ6UEl5QjFJTFFWSjd4NUZUYllKc0VCNThrMFJtSHRlOUQweDdZcHRNWDNyc1ZYcEpCSHFHTVJITS1Ha2R1Sk5Nc3hHTkZqWGxWZFNfQUE?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "China’s humanoid robot stuns viewers with lifelike ballet performance  VnExpress International"
-  },
-  {
-    "title": "How humanoids learn to read the room",
-    "original_title": "How humanoids learn to read the room",
-    "link": "https://www.therobotreport.com/how-humanoids-learn-to-read-the-room-2/",
-    "date": "2026-05-26 20:34",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Sponsored by Analog Devices Inc. Designing for a humanoid robot is one of the most complicated applications in robotics today. All on its own, a humanoid system has to manage movement, balance, vision and reactivity across a complex web of joints, sensors and data processing. This becomes critical when a humanoid robot operates in an…\nThe post How humanoids learn to read the room appeared first on The Robot Report."
-  },
-  {
-    "title": "GMSL and the growing ecosystem around robotic vision systems",
-    "original_title": "GMSL and the growing ecosystem around robotic vision systems",
-    "link": "https://www.therobotreport.com/gmsl-and-the-growing-ecosystem-around-robotic-vision-systems-2/",
-    "date": "2026-05-26 20:34",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Sponsored by Analog Devices Inc. Just a few years ago, many site owners were satisfied if a robot could move from point A to point B. That’s not quite enough anymore. Today’s robots are being asked to move faster, operate in more dynamic environments, and deal with more obstacles along the way. As those demands…\nThe post GMSL and the growing ecosystem around robotic vision systems appeared first on The Robot Report."
-  },
-  {
-    "title": "NūMove surpasses 20 semi-automatic mixed palletizer deployments",
-    "original_title": "NūMove surpasses 20 semi-automatic mixed palletizer deployments",
-    "link": "https://roboticsandautomationnews.com/2026/05/26/numove-surpasses-20-mixed-palletizer-deployments-as-us-beverage-distributors-accelerate-warehouse-automation/101829/",
-    "date": "2026-05-26 18:00",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "NūMove Robotics & Vision continues to play a strategic role in mixed palletizing, with more than 20 semi-automatic systems successfully deployed across the United States. Since its first implementation in 2021, the solution has been steadily adopted by leading wholesale alcoholic beverage distributors. Today, 22 units are fully operational across nine states, with several facilities […]"
-  },
-  {
-    "title": "DARPA prepares robotic satellite servicing mission for launch in 2026",
-    "original_title": "DARPA prepares robotic satellite servicing mission for launch in 2026",
-    "link": "https://roboticsandautomationnews.com/2026/05/26/darpa-prepares-robotic-satellite-servicing-mission-for-launch-in-2026/101923/",
-    "date": "2026-05-26 17:12",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Defense Advanced Research Projects Agency (DARPA) and its industry partners are preparing for the launch of a robotic satellite servicing mission designed to demonstrate on-orbit maintenance and upgrade capabilities for spacecraft operating in geosynchronous orbit. The mission, known as Robotic Servicing of Geosynchronous Satellites (RSGS), is scheduled for launch in summer 2026 and represents one […]"
-  },
-  {
-    "title": "Redwire delivers lunar robotic arm prototype to European Space Agency",
-    "original_title": "Redwire delivers lunar robotic arm prototype to European Space Agency",
-    "link": "https://roboticsandautomationnews.com/2026/05/26/redwire-delivers-lunar-robotic-arm-prototype-to-european-space-agency/101920/",
-    "date": "2026-05-26 16:58",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Redwire has delivered a prototype lunar robotic manipulator to the European Space Agency as Europe continues developing its Argonaut lunar lander program for future Moon missions. The robotic arm system, known as the Manipulator for Argonaut Payload Needs and Unloading Support (MANUS), was developed by Redwire in collaboration with Added Value Solutions and with support […]"
-  },
-  {
-    "title": "EngineAI opens Shenzhen plant to build humanoid robot every 15 mins - MSN",
-    "original_title": "EngineAI opens Shenzhen plant to build humanoid robot every 15 mins - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPZTZTb1dwVDlma01Md1NJRVhoSEFCelRqOWdmWTlvZWJnVlRTZEUzb2haQmZ3QnJFYjlXUUZfZU1xT1EyTEhsdjNIcHNYOUR3VUVYSlpaMGo3RWdYMDZzbTVCUFhKZXFqRVVwM2lObTZQX0RnbS1WTzZlci1wT0w3a1RHd3g2WDU2UlNEY0hyN0s0d0dCdXo1VDhHY3ZwVVpBTzFuWFl3WVBtaE1kS3Vib0l1V2VWNzduTzBoQ0JIMklZcjV3SWowYnRxa2EwZXg5cTlQdmpmbEJWNURuMUNqUHhibUlfcEF1Tnpnc0RR?oc=5",
-    "date": "2026-05-26 16:58",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "EngineAI opens Shenzhen plant to build humanoid robot every 15 mins  MSN"
-  },
-  {
-    "title": "AutoFlight advances heavy-lift eVTOL program with mixed-fleet formation flight",
-    "original_title": "AutoFlight advances heavy-lift eVTOL program with mixed-fleet formation flight",
-    "link": "https://roboticsandautomationnews.com/2026/05/26/autoflight-advances-heavy-lift-evtol-program-with-mixed-fleet-formation-flight/101916/",
-    "date": "2026-05-26 16:47",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "AutoFlight has completed a mixed-fleet formation flight of three aircraft, comprising one V5000 Matrix and two V2000-series eVTOL aircraft. The mission validated critical capabilities – communication links, route planning, flight coordination and safety control – across 5-ton and 2-ton platforms, demonstrating that different aircraft types can operate together at scale. It marks a significant step […]"
-  },
-  {
-    "title": "How Vercel Cut Build Wait Times From 90 Seconds To 5",
-    "original_title": "How Vercel Cut Build Wait Times From 90 Seconds To 5",
-    "link": "https://blog.bytebytego.com/p/how-vercel-cut-build-wait-times-from",
-    "date": "2026-05-26 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "In this article, we examine the constraints Vercel faced, the choices they made in response, and the optimizations that produced the speedup."
   }
 ]
