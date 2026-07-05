@@ -36,6 +36,15 @@
     "summary": "‘In some jobs, they want to be replaced’: Chinese robotics company Agibot says humanoids could take over ‘dangerous’ jobs — and one day even teach children  TechRadar"
   },
   {
+    "title": "Ubtech Robotics actively responds to industry development in... - Futubull Community - 富途牛牛",
+    "original_title": "Ubtech Robotics actively responds to industry development in... - Futubull Community - 富途牛牛",
+    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9NUlJoRzFBS1ZRbEhhX2RZR3puTFlmSzFXZ25YTU1kU0Y0R3lwZEJyM1lrbWd6ZXI0ZGMxUGZIZUE1YnVrd2ptRS1MaWJhclRSQVVKajNqcw?oc=5",
+    "date": "2026-07-04 15:39",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Ubtech Robotics actively responds to industry development in... - Futubull Community  富途牛牛"
+  },
+  {
     "title": "Proof of Human: How to Verify a Person Is Real and Unique",
     "original_title": "Proof of Human: How to Verify a Person Is Real and Unique",
     "link": "https://blog.bytebytego.com/p/proof-of-human-how-to-verify-a-person",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.27919v1 Announce Type: new \nAbstract: Learning visuomotor policies via behavior cloning typically involves mimicking expert demonstrations collected by human operators. However, natural human demonstrations inherently contain high-frequency noise, such as intermittent jerks, pauses, and action jitter. Training policies to directly imitate these raw trajectories inevitably causes the model to inherit these suboptimal behaviors. This pathology is particularly pronounced in diffusion-based policies, where iterative denoising steps can inadvertently amplify high-frequency artifacts at the expense of meaningful fine-grained details. To address these limitations, we present a novel frequency-based algorithm that enables implicit spectral maneuvering and smooth action generation. Our method, Frequency Guidance Operator (FGO), steers the generation process of diffusion polices by progressively driving the noisy samples through intermediate sub-frequency manifolds with expanding spectral bands. Validated on 15 robotic manipulation tasks from 5 benchmarks, FGO achieves superior performance in enhancing action smoothness and temporal consistency while preserving the details necessary for successful task execution. Project website: https://henrywjl.github.io/frequency-guidance-operator/"
-  },
-  {
-    "title": "SANTS: A State-Adaptive Scheduler for World Action Models",
-    "original_title": "SANTS: A State-Adaptive Scheduler for World Action Models",
-    "link": "https://arxiv.org/abs/2605.27947",
-    "date": "2026-05-28 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.27947v1 Announce Type: new \nAbstract: World Action Models (WAMs) improve robot manipulation by using video-based future representations to condition action generation. In pixel-space WAMs, however, the best action condition is not necessarily the fully denoised video. Controlled denoising-depth scans show that video refinement can reduce action error up to a state-dependent point, after which the gain may saturate or even reverse when late predictions become less action-relevant or physically unreliable. This suggests that action generation should use a state-dependent point along the video noise trajectory rather than a fixed terminal denoising depth. We introduce State-Adaptive Noise Trajectory Scheduler (SANTS), a lightweight scheduler for video-to-action diffusion policies. At each video decision point, SANTS reads the current video-state representation and noise level, then jointly predicts a cumulative stopping hazard and a relative noise-progression ratio. SANTS is post-trained with a path-level reward computed after the frozen action branch generates the final action chunk, so the scheduler is optimized for downstream action quality rather than intermediate video fidelity, while redundant video-state updates are explicitly penalized. Experiments show that SANTS reaches \\(94.4\\%\\) overall success on RoboTwin 2.0 and \\(73.1\\%\\) average success across seven real-robot tasks, while reducing latency by \\(81.7\\%\\) and \\(79.0\\%\\) relative to full video denoising, respectively. These results indicate that adaptive selection along the video noise trajectory can preserve the control benefits of WAM-style future reasoning while removing much of its redundant inference cost."
   }
 ]
