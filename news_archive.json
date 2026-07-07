@@ -837,6 +837,15 @@
     "summary": "본 논문은 시선(Gaze)과 음성(Speech)을 활용한 보조 로봇 작업을 위한 다중모드 상호작용 프레임워크를 제시함. 초점을 맞춘 'sticky-glance' 알고리즘은 기하학적 거리와 방향성 증거를 결합하여 시선 기반의 의도를 안정화시키고 실시간 목표 선택 능력을 확보함. 나아가 'Glance-Say' 패러다임을 통해 시선으로 객체를, 음성으로 행동을 지정하는 방식을 구현하고 연속 공유 제어(shared-control)를 적용하여, 로봇 매니퓰레이션 작업에서 높은 견고성과 효율성을 입증함."
   },
   {
+    "title": "RoboDojo: 범용 로봇 매니퓰레이션 정책을 위한 통합 시뮬레이션-현실 벤치마크",
+    "original_title": "RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies",
+    "link": "https://arxiv.org/abs/2607.04434",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 벤치마크의 한계를 극복하기 위해 통합 시뮬레이션-현실(Sim-and-Real) 벤치마크인 RoboDojo가 발표됨. 본 시스템은 42개의 시뮬레이션 과제와 18개의 실제 과제를 포함하며, 일반화, 장기 실행, 오픈-보캐뷸러리 지침 수행 등 포괄적이고 체계적인 로봇 정책 평가를 지원함. Isaac Sim 기반의 확장 가능한 테스트 환경과 XPolicyLab 연동을 통해 실제 배포 조건까지 반영하는 공정한 평가 체계를 구축함."
+  },
+  {
     "title": "인간형 로봇, 대량 생산 시대 임박: 테슬라 Optimus 라인 구축 및 Unitree IPO가 중국 A주 시장을 점화시킴",
     "original_title": "Humanoid Robots on the Eve of Mass Production: Tesla's Optimus Line Takes Shape, Unitree's IPO Ignites China's A-Share Market - finance.biggo.com",
     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1jdnBUYnB5NmFETVRwTnZla3luSXdjanh1eU1ZU1d1ZFMzV3d3cHpJd1hsOUNNRzNhNHhqRll6SHJSeGxrWVc5OUxaVWZZVXVwUTVRZmNvU1NyMHczdFpYeHk0N0U0V2JwUTNqTkpxaWxIV3pBM2c?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.30503v1 Announce Type: new \nAbstract: Learning to reach arbitrary goals from sparse feedback requires agents to infer a rich notion of reachability across state--goal pairs. Goal-conditioned reinforcement learning (GCRL) tackles this challenge by learning policies that generalize across goals, but this generalization becomes increasingly difficult as the underlying dynamics become high-dimensional, hybrid, or contact-dependent. To address this issue, physics-informed GCRL (Pi-GCRL) introduces optimal-control-inspired inductive biases into goal-conditioned value learning. While Pi-GCRL methods have proven effective in navigation and object-free goal-reaching domains, their reliability in contact-rich tasks remains unclear, where contact interactions induce hybrid dynamics, mode-dependent controllability, and nonsmooth value landscapes. In this work, we show that these structural properties can cause existing Pi-GCRL methods to degrade when applied naively to contact-rich manipulation. Motivated by this analysis, we introduce contact-aware and hierarchical formulations that apply physics-informed inductive biases selectively across the manipulation problem. Our results provide a principled step toward extending Pi-GCRL to contact-rich manipulation."
-  },
-  {
-    "title": "ARISTO Hand: Sensing-Driven Distal Hyperextension for Fine-Grained Manipulation",
-    "original_title": "ARISTO Hand: Sensing-Driven Distal Hyperextension for Fine-Grained Manipulation",
-    "link": "https://arxiv.org/abs/2605.30508",
-    "date": "2026-06-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.30508v1 Announce Type: new \nAbstract: Manipulating thin objects requires precise contact geometry and reliable force perception, yet many anthropomorphic robotic hands lack the mechanical and sensing capabilities needed for such interactions. We present the ARISTO Hand, a tendon-driven robotic hand that integrates active distal hyperextension with a hybrid fingertip-sensing architecture that combines a rigid, nail-mounted force-torque sensor and a soft capacitive tactile array. Active hyperextension enables controlled fingertip engagement beyond the kinematic limits of standard flexion, increasing pull-out force by 2.76x for object thicknesses of 1-20 mm while preserving the nominal grasp capability. The rigid nail-mounted sensor provides reliable force measurements during edge contacts, where the sensitivity of proprioceptive force estimation degrades as the contact geometry approaches kinematic singularities. We validate the proposed architecture through quantitative force characterization and a multi-stage SD card extraction and insertion task. Video and supplementary materials are available at: https://aristohand.github.io"
   }
 ]
