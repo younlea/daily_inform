@@ -225,6 +225,15 @@
     "summary": "AI 해킹 위협이 휴머노이드 로봇까지 확장되는 추세에 대한 내용임. Aim Intelligence가 이 분야를 선도하며 '실제 환경 레드팀(Real-World Red Teaming)'을 위한 새로운 테스트 무대를 마련함. 이는 로봇 시스템의 실전적이고 포괄적인 보안 취약점 검증 기준을 제시함."
   },
   {
+    "title": "중국, 로봇공학의 난제 '손' 개발에 집중",
+    "original_title": "China wants to solve the hardest problem in robotics – making hands - The Guardian",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaFROY0V3Mld2MzU4LUZDbm0zM1duRUtRY3pZRXZFSDNVQUEwaVBSN0pSd1Y1SzlHclgwbkdFT0gzWlozMFBudU5wTWFRalpreVdHbUNGaXdYYWl4UlB5dUZQeU5NUl9ETktmRDdNR1lWaDZIRlFoaDFQOV9DNGF1NDBpcHRNeGw1YUU3Tnlja2UwSENmSlFUVEhKUzJnTWJtMlYwSXJR?oc=5",
+    "date": "2026-07-06 00:31",
+    "source": "Google News (China Robotics - EN)",
+    "category": "hand",
+    "summary": "중국이 로봇공학 분야의 가장 어려운 과제인 인간과 같은 손 개발에 막대한 역량을 투입하고 있는 상황임. 로봇의 범용성과 섬세한 작업 수행 능력을 확보하기 위해 고도화된 그리핑(grasping) 메커니즘 구현이 주요 목표임. 이는 향후 로봇의 산업 현장 및 일상생활 적용 가능성을 혁신적으로 높이는 핵심 과제임."
+  },
+  {
     "title": "유비테크의 휴머노이드 챌린지, 현실 세계의 한계에 도전함",
     "original_title": "Ubtech’s humanoid challenge is coming up against the limits of the real world. For now - Startupbusiness.it",
     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONmFOYm04Q0E2OFN2blA4VDNNR0hpZFowNmhOZTFoS0xVQnRFV0pINXY2SjAxXzZCci1mQk10YlQ3ZDc4ZFkwa21YOXpoc2hCajRQN2xuRG40YzdHZlFRTUJtTHZ6MzNRcG82ckxwa2hDcG1hS0cxYi1xMUFmVXVpb1VTZFRZRkpaWlg4VTFZRGx6Zm94LW1HQTY3OUR6Ymt5OEdTR3gwODZPZDlzUUJOZEQtYnZmTFhQbDNEVE5TcDl2b3ZJ?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2510.01711v3 Announce Type: replace \nAbstract: Vision-Language-Action (VLA) models have shown strong capabilities in robot manipulation by leveraging rich representations from pre-trained Vision-Language Models (VLMs). However, their representations arguably remain suboptimal, lacking sensitivity to robotic signals such as control actions and proprioceptive information. To address the issue, we introduce Robot State-aware Contrastive Loss (RS-CL), a simple and effective representation regularization for VLA models, designed to bridge the gap between VLM representations and robotic signals. In particular, RS-CL aligns the representations more closely with the robot's proprioceptive states by using relative distances between the states as soft supervision. Complementing the original action prediction objective, RS-CL enhances control-relevant representation learning, while being lightweight and fully compatible with standard VLA training pipelines. Our empirical results demonstrate that RS-CL substantially improves the performance of state-of-the-art VLA models; it pushes the prior art to 69.7% achieving the state-of-the-art performance on the RoboCasa-Kitchen benchmark, and boosts success rates from 45.0% to 58.3% on challenging real-robot manipulation tasks."
-  },
-  {
-    "title": "ScheduleStream: Temporal Planning with Samplers for GPU-Accelerated Multi-Arm Task and Motion Planning & Scheduling",
-    "original_title": "ScheduleStream: Temporal Planning with Samplers for GPU-Accelerated Multi-Arm Task and Motion Planning & Scheduling",
-    "link": "https://arxiv.org/abs/2511.04758",
-    "date": "2026-05-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2511.04758v2 Announce Type: replace \nAbstract: Bimanual and humanoid robots are appealing because of their human-like ability to leverage multiple arms to efficiently complete tasks. However, controlling multiple arms at once is computationally challenging due to the growth in the hybrid discrete-continuous action space. Task and Motion Planning (TAMP) algorithms can efficiently plan in hybrid spaces but generally produce plans, where only one arm is moving at a time, rather than schedules that allow for parallel arm motion. In order to extend TAMP to produce schedules, we present ScheduleStream, the first general-purpose framework for planning & scheduling with sampling operations. ScheduleStream models temporal dynamics using hybrid durative actions, which can be started asynchronously and persist for a duration that's a function of their parameters. We propose domain-independent algorithms that solve ScheduleStream problems without any application-specific mechanisms. We apply ScheduleStream to Task and Motion Planning & Scheduling (TAMPAS), where we use GPU acceleration within samplers to expedite planning. We compare ScheduleStream algorithms to several ablations in simulation and find that they produce more efficient solutions. We demonstrate ScheduleStream on several real-world bimanual robot tasks at https://schedulestream.github.io."
   }
 ]
