@@ -819,6 +819,15 @@
     "summary": "기존 VLA(Vision-Language-Action) 모델의 일반화 한계 및 망각 문제를 극복하고자 $M^2$-VLA 모델을 제안함. 본 기술은 VLM의 추상적 의미 이해와 정밀한 로봇 제어 사이의 격차를 해소하기 위해 Layer Mixture(MoL) 전략과 Meta Skill Module(MSM)을 결합함. 시뮬레이션 및 실제 환경에서 수행된 실험을 통해 높은 일반화 성능과 Zero-shot 능력을 입증하였으며, 해당 코드와 사전 학습 모델은 공개될 예정임."
   },
   {
+    "title": "Glance-Say: 스티키 글랜스를 통한 다중모드 인간-로봇 협업 및 의도 인식",
+    "original_title": "Glance-Say: Multimodal Human-Robot Collaboration and Intent Recognition via Sticky Glance",
+    "link": "https://arxiv.org/abs/2603.06121",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 시선(Gaze)과 음성(Speech)을 활용한 보조 로봇 작업을 위한 다중모드 상호작용 프레임워크를 제시함. 초점을 맞춘 'sticky-glance' 알고리즘은 기하학적 거리와 방향성 증거를 결합하여 시선 기반의 의도를 안정화시키고 실시간 목표 선택 능력을 확보함. 나아가 'Glance-Say' 패러다임을 통해 시선으로 객체를, 음성으로 행동을 지정하는 방식을 구현하고 연속 공유 제어(shared-control)를 적용하여, 로봇 매니퓰레이션 작업에서 높은 견고성과 효율성을 입증함."
+  },
+  {
     "title": "인간형 로봇, 대량 생산 시대 임박: 테슬라 Optimus 라인 구축 및 Unitree IPO가 중국 A주 시장을 점화시킴",
     "original_title": "Humanoid Robots on the Eve of Mass Production: Tesla's Optimus Line Takes Shape, Unitree's IPO Ignites China's A-Share Market - finance.biggo.com",
     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1jdnBUYnB5NmFETVRwTnZla3luSXdjanh1eU1ZU1d1ZFMzV3d3cHpJd1hsOUNNRzNhNHhqRll6SHJSeGxrWVc5OUxaVWZZVXVwUTVRZmNvU1NyMHczdFpYeHk0N0U0V2JwUTNqTkpxaWxIV3pBM2c?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.30569v1 Announce Type: new \nAbstract: Robotic manipulation dexterity is often pursued by building increasingly complex high-DoF multifingered hands. While many robotic hands are designed to replicate human morphology, the functional role of human hands suggests a different perspective: much of their complexity may exist to enable tool use and tool making. This observation motivates Any-ttach, a tool-centric manipulation framework that treats quick end-effector swapping as a mechanism for dexterity with simplicity. Any-ttach combines a low-cost automatic swapping mechanism for an open-close robot interface, a handheld device for collecting human demonstrations, and a task planning framework that composes learned, parameterized, and planned tool-use skills. The system supports diverse tools and end-effector modules, including daily tools, articulated tools such as scissors, Fin Ray fingers, and a low-cost anthropomorphic hand, through the same shared interface. Our experiments show that Any-ttach improves tool-swapping reliability, increases demonstration efficiency, reduces tool-pose variability, and supports diverse tool-use skills. In two long-horizon tasks, making a sandwich and preparing a cucumber, Any-ttach executes six tool-use subskills through end-effector switching and execution monitoring. These results suggest that robots can expand manipulation capability not only through more complex end-effectors, but also through rapidly exchangeable tools and end-effector modules. More details and videos are available at https://any-ttach.github.io/."
-  },
-  {
-    "title": "GSAM: A Generalizable and Safe Robotic Framework for Articulated Object Manipulation",
-    "original_title": "GSAM: A Generalizable and Safe Robotic Framework for Articulated Object Manipulation",
-    "link": "https://arxiv.org/abs/2605.30740",
-    "date": "2026-06-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.30740v1 Announce Type: new \nAbstract: Articulated object manipulation is a unique challenge for service robots. Existing methods employ end-to-end policy learning, visionmotion planning, and large-language/visual-language model (LLM/VLM), but often overlook the diversity of articulated objects and the complexity of interactions between end-effector and handle, leading to limited generalization and destructive collisions. To address this, we propose GSAM, a generalizable and safe robotic framework for articulated object manipulation. Specifically, a vision-based perceiver generates the kinematic parameters. Considering that pre-trained markers in perceiver yield raw estimations that may deviate from commonsense, we present a f ine-tuned VLM-based refiner, using chain-of-thought (COT) commonsense reasoning to refine perception. To prevent destructive collisions, we design an interaction constraint function generator, integrating articulated object, interaction pose, and obstacle avoidance knowledge into a base. LLM then functionalize these constraints and apply them to trajectory and posture planning. A kinematic-aware manipulation planner verifies reachability for trajectory and posture. Experiments on 50 hinge tasks across 5 object categories and 50 randomly initialized end-effectorhandle configurations show that GSAM reduces standard deviation by 3.1% and improves manipulation success rate by 36.0% compared to the best baseline, respectively demonstrating the superior object generalization and interaction safety of GSAM in practical scenarios."
   }
 ]
