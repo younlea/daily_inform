@@ -792,6 +792,24 @@
     "summary": "플랩핑 구동의 효율성이 Strouhal 수 범위 내 작동에 달려있음을 바탕으로, Strouhal-aware MPC가 개발되어 자율 수중 차량의 다지느러미 구동에 적용됨. 이 제어기는 Strouhal 편차에 대한 명시적 페널티를 추가하고, 최적 코리도어(0.25-0.35) 유지와 정확한 힘 추적을 통해 기계적 전력을 평균 8.8%에서 최대 32%까지 절감하는 성능을 입증함. 이는 생물 모방의 흐름 물리학 원리를 MPC 목표에 통합함으로써, 차세대 다지느러미 로봇의 에너지 효율성과 민첩성 향상에 기여함."
   },
   {
+    "title": "MOSAIC: 물리 시뮬레이션을 활용한 스킬 중심 매니퓰레이션 계획",
+    "original_title": "MOSAIC: Skill-Centric Manipulation Planning with Physics Simulation",
+    "link": "https://arxiv.org/abs/2504.16738",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "장기적인 로봇 동작 계획 문제를 해결하기 위해 MOSAIC라는 스킬 중심 다방향 계획 접근법을 제시함. 본 방법론은 물리 시뮬레이션을 활용하여 스킬 실행 결과를 추정하며, 'Generators'와 'Connectors' 두 가지 상호 보완적인 스킬 패밀리를 사용하여 로봇의 역량이 높은 영역(islands of competence)에 계획 노력을 집중함. 그 결과, MOSAIC는 물리적으로 타당하며 효율적인 해결책을 도출하며, 시뮬레이션과 실제 환경 모두에서 복잡한 장기 동작 계획의 성공적인 수행 능력이 입증됨."
+  },
+  {
+    "title": "$M^2$-VLA: 레이어 혼합 및 메타 스킬을 통한 일반화 가능한 매니퓰레이션 성능 강화를 위한 비전-언어 모델 기술",
+    "original_title": "$M^2$-VLA: Boosting Vision-Language Models for Generalizable Manipulation via Layer Mixture and Meta-Skills",
+    "link": "https://arxiv.org/abs/2604.24182",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 VLA(Vision-Language-Action) 모델의 일반화 한계 및 망각 문제를 극복하고자 $M^2$-VLA 모델을 제안함. 본 기술은 VLM의 추상적 의미 이해와 정밀한 로봇 제어 사이의 격차를 해소하기 위해 Layer Mixture(MoL) 전략과 Meta Skill Module(MSM)을 결합함. 시뮬레이션 및 실제 환경에서 수행된 실험을 통해 높은 일반화 성능과 Zero-shot 능력을 입증하였으며, 해당 코드와 사전 학습 모델은 공개될 예정임."
+  },
+  {
     "title": "인간형 로봇, 대량 생산 시대 임박: 테슬라 Optimus 라인 구축 및 Unitree IPO가 중국 A주 시장을 점화시킴",
     "original_title": "Humanoid Robots on the Eve of Mass Production: Tesla's Optimus Line Takes Shape, Unitree's IPO Ignites China's A-Share Market - finance.biggo.com",
     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1jdnBUYnB5NmFETVRwTnZla3luSXdjanh1eU1ZU1d1ZFMzV3d3cHpJd1hsOUNNRzNhNHhqRll6SHJSeGxrWVc5OUxaVWZZVXVwUTVRZmNvU1NyMHczdFpYeHk0N0U0V2JwUTNqTkpxaWxIV3pBM2c?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2605.30770v1 Announce Type: new \nAbstract: Extending humanoid traversal to the open world is key to practical deployment in human environments, but remains challenging. The robot must use vision to ensure safe and reliable foot placement on heterogeneous terrain under highly dynamic motion, while producing coordinated, natural whole-body behaviors. We propose SSR, an efficient end-to-end framework for egocentric vision-based humanoid traversal that jointly learns these capabilities. SSR introduces imagined foothold guidance, which learns to model forthcoming swing-foot contacts and evaluates their support to guide pre-touchdown swings toward stable regions, reducing edge slips. It further employs equivariant latent-space symmetry augmentation to efficiently induce bilateral coordination under high-dimensional visual observations, and uses terrain-specific multi-discriminator motion priors to encourage human-like behavior across scenes. Extensive experiments show that SSR achieves safe, stable, and high-quality locomotion on diverse real-world terrains, including stairs with varied structures and extreme challenges such as wide gaps and high platforms, while enabling reliable long-horizon traversal in open outdoor environments."
-  },
-  {
-    "title": "Object-Informed Model Predictive Path Integral Control for Non-Prehensile Robot Manipulation",
-    "original_title": "Object-Informed Model Predictive Path Integral Control for Non-Prehensile Robot Manipulation",
-    "link": "https://arxiv.org/abs/2605.30778",
-    "date": "2026-06-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.30778v1 Announce Type: new \nAbstract: Long-horizon planning for non-prehensile robot manipulation is challenging due to underactuated and discontinuous interactions. We propose a hierarchical formulation of model predictive path integral (MPPI) control that guides robot-level planning with a separately computed object-level plan to achieve efficient long-horizon prediction. We first solve a simplified object-only problem, assuming the object can be actuated directly, and use the planned object trajectory as a reference in solving the joint robot-object planning problem. We evaluate our method in both simulation and hardware using a 6-DoF xArm6 manipulator to perform object pushing tasks in which the target object must reach a goal while avoiding static obstacles, necessitating non-myopic reasoning. Our object-informed MPPI increases task success by 40\\% with a 26\\% faster control frequency in simulation, and by 20\\% in real experiments with similar computation as regular MPPI."
-  },
-  {
-    "title": "Two Degree-of-Freedom Vibratory Transport in a Grasp",
-    "original_title": "Two Degree-of-Freedom Vibratory Transport in a Grasp",
-    "link": "https://arxiv.org/abs/2605.30780",
-    "date": "2026-06-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.30780v1 Announce Type: new \nAbstract: In this paper, we use asymmetric vibrations to demonstrate two degree-of-freedom (DoF) in-hand manipulation of grasped parts. The asymmetric vibrations are achieved through closed-loop position control of a moving surface, which applies a periodic stick-slip waveform to the part to be manipulated. We show analytically how two vibratory waveform parameters, the sticking acceleration and the slipping acceleration, affect average part velocity when moving against gravity. The theoretical trends are then validated using an experimental setup where the squeeze force is controlled and part motion is recorded by a high-resolution encoder. We also develop a 2-DoF vibratory surface capable of translation in one direction and rotation about the surface normal. Using two of these 2-DoF surfaces in a parallel jaw gripper configuration, we bidirectionally translate and rotate a variety of grasped parts, as well as demonstrate that the same waveform trends for translation also persist for in-plane rotation."
   }
 ]
