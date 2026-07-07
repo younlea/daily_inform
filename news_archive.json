@@ -72,6 +72,78 @@
     "summary": "기존의 외부 센서 의존성 문제를 극복하기 위해, 모터 전류와 관절 상태를 활용하는 고유수용성 기반의 프레임워크를 제안함. 이 방식은 모터 전류를 접촉력의 내재적 신호로 활용하여, 외부 힘 추정 대신 PD 컨트롤러를 위한 이상적인 '순응 레퍼런스 위치'를 예측함. 그 결과, 별도의 센서 없이도 안정적인 그립 및 원격 조작을 구현하며, 정밀한 로봇 정책 학습에 활용될 수 있음이 입증됨."
   },
   {
+    "title": "휴리스틱 초월: HIL 시뮬레이션을 위한 물리적 인간-로봇 상호작용의 표준화된 Real2Sim 파이프라인",
+    "original_title": "Beyond Heuristics: A Standardized Real2Sim Pipeline for Physical Human Robot Interaction in Human-in-the-Loop Simulation",
+    "link": "https://arxiv.org/abs/2607.03017",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "본 연구는 물리적 인간-로봇 상호작용(pHRI) 시뮬레이션의 정확도 향상을 목표로 Real2Sim 파이프라인을 개발함. 사용자의 '안전 및 편안함' 피드백을 이용해 CMA-ES 방식을 통해 복합적인 동역학 파라미터를 식별하여, 미개척 시나리오에 대한 우선 파라미터를 구축함. 이를 통해 Human Digital Twin(HDT) 기반의 보행 적응을 정확히 모사하며, 맞춤형 컨트롤러의 임상 전 검증 신뢰도 향상에 기여함."
+  },
+  {
+    "title": "CoorGrasp: 불확실성 환경에서의 적응형 정교 파지(Grasping)를 위한 협응형 접촉 제어",
+    "original_title": "CoorGrasp: Coordinated Contact Control for Adaptive Dexterous Grasping Under Uncertainty",
+    "link": "https://arxiv.org/abs/2607.03557",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "최근 연구가 파지 자세 생성에 치중되어 온 것과 달리, 본 논문은 불확실성 하에서의 파지 실행 단계에 초점을 맞춤. 이에 접촉력(tactile-driven) 기반의 Model Predictive Controller를 제안하여 다중 접촉 및 팔-손의 협응 제어를 강화한 것이 핵심임. 대규모 시뮬레이션과 실제 테스트를 통해 파지 성공률을 높이고 원치 않는 객체 움직임을 감소시킴이 입증됨."
+  },
+  {
+    "title": "통합 손 동작 공간을 활용한 이종체 로봇 조작",
+    "original_title": "Cross-Embodiment Robot Manipulation via a Unified Hand Action Space",
+    "link": "https://arxiv.org/abs/2607.03570",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 로봇 조작 정책의 플랫폼 종속성을 극복하기 위해 구(Sphere) 기반의 통합 동작 표현 방식인 UHAS(Unified Hand Action Space)를 제안함. UHAS는 공유된 표현 공간을 다양한 로봇 손의 관절 구동값으로 변환하며, 이를 활용해 Allegro Hand, LEAP Hand 등 여러 이종체 로봇에서 큐브 재배치 등의 동작 정책을 학습하고 성공적으로 전이시키는 것이 가능함을 실세계 실험을 통해 입증함."
+  },
+  {
+    "title": "OmniTacTune: 촉각 잔차 적응을 활용한 정책 비종속형 시각 정책 실제 환경 강화학습",
+    "original_title": "OmniTacTune: Policy-Agnostic Real-World RL for Tactile Residual Adaptation of Visual Policies",
+    "link": "https://arxiv.org/abs/2607.03723",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 시각 기반 정책이 접촉 환경(contact-rich manipulation)에서 낮은 성공률을 보이는 문제를 해결하기 위해 OmniTacTune이라는 정책 비종속형 실제 환경 RL 파이프라인이 개발됨. 본 방법론은 촉각 피드백을 활용한 잔차 보정(residual correction)을 통해 사전에 학습된 시각 정책을 적응시키는 방식을 취함. 실험 결과, OmniTacTune은 네 가지 실세계 접촉 작업에서 정책 성공률을 획기적으로 개선하며, 촉각 정보의 효율적인 정책 통합 가능성을 입증함."
+  },
+  {
+    "title": "ObjRetarget: 인간형 팔 제약 조건 및 다면체 손 모델링을 갖춘 객체 인지 모션 리타겟팅 프레임워크",
+    "original_title": "ObjRetarget: An Object-Aware Motion Retargeting Framework with Anthropomorphic Arm Constraints and Polyhedral Hand Modeling",
+    "link": "https://arxiv.org/abs/2607.03828",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇의 디그니터스 조작 학습에서 안정적인 손-물체 접촉 유지는 핵심 과제이나, 기존 방식의 부정확성을 개선함. 이에 따라 ObjRetarget 프레임워크는 인간형 팔 트래젝토리에 대한 제약 조건과 구조적 손-물체 모델링을 통합하여 자연스럽고 정확한 로봇 움직임을 생성함. 실제 로봇 실험 결과, 다양한 디그니터스 태스크에서 조작 성공률과 접촉 안정성이 개선되었으며 우수한 일반화 성능을 입증함."
+  },
+  {
+    "title": "Worldscape-MoE: 확장 가능한 이종 액션 제어를 위한 통합 전문가 혼합 세계 모델",
+    "original_title": "Worldscape-MoE: A Unified Mixture-of-Experts World Model for Scalable Heterogeneous Action Control",
+    "link": "https://arxiv.org/abs/2607.03964",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존의 World Model들은 카메라 궤적, 로봇 액션 등 개별적인 제어 인터페이스에 기반하여 확장성에 병목현상을 보임. Worldscape-MoE는 Diffusion Transformers를 활용한 Mixture-of-Experts (MoE) 아키텍처를 도입, 이종(heterogeneous) 액션 데이터를 통합 학습하는 새로운 접근법을 제시함. 본 모델은 이동, 로봇 조작, 손 제어 등 다양한 제어 방식이 공유하는 세계 역학을 포착하여, 여러 도메인에서 강력한 일반화 능력과 확장성을 입증함."
+  },
+  {
+    "title": "다중 매니퓰레이터 계획을 위한 충돌 기반 지연 탐색 기법",
+    "original_title": "Conflict-Based Lazy Search for Fast Multi-Manipulator Planning",
+    "link": "https://arxiv.org/abs/2607.04124",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "실시간 다중 매니퓰레이터 계획의 어려움을 해결하기 위해 Conflict-Based Search(CBS)를 기반으로 Conflict-Based Lazy Search(CBLS)라는 새로운 알고리즘을 제안함. CBLS는 사전 계산과 지연 탐색을 통합하여 계획 시간을 단축하고, 특히 단일 에이전트 경로 탐색(SAPF)의 계산 병목을 줄인 Lazy Edged-based A*(LEA*)를 활용함. 이를 통해 기존 CBS 및 RRT-Connect 등과의 성능 비교를 통해 우수한 성능을 입증함."
+  },
+  {
+    "title": "가우시안 스플래팅 기반의 의미론적 유도 점진 객체 제거 기법",
+    "original_title": "Semantic-Guided Progressive Object Removal with Gaussian Splatting",
+    "link": "https://arxiv.org/abs/2607.04144",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "3D 장면에서 객체 제거는 AR/VR, 로보틱스 등에서 핵심 과제임. 본 연구는 Semantic-guided Block Matching (SBM)과 Region-Wise Progressive Refinement (RPR)를 결합한 새로운 프레임워크를 제안함. DINOv2를 활용한 다중 뷰 의미론적 가이드를 통해 결손 영역을 보완하고, Gaussian Splatting 기반의 선택적 정제 과정을 거쳐 기존 대비 높은 충실도와 일관성을 확보함."
+  },
+  {
     "title": "Waabi, 재훈련 없는 AI 드라이버의 볼보 자율주행 트럭 이식 성공 발표",
     "original_title": "Waabi says its AI driver transferred to Volvo autonomous truck without retraining",
     "link": "https://roboticsandautomationnews.com/2026/07/07/waabi-says-its-ai-driver-transferred-to-volvo-autonomous-truck-without-retraining/103082/",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.29572v1 Announce Type: new \nAbstract: Human tactile perception of materials relies on complex multisensory touch cues, yet the relationship between low-level tactile signals and perceptual representations remains poorly understood. This knowledge gap hinders the integration of touch in digital environments and the development of robots capable of human-like tactile perception. Here, we present an interpretable computational framework for modeling human material perception and recognition using multisensory touch data. Our framework comprises three interconnected models: Model 1 maps finger-surface interaction features to psychophysical sensory attributes, Model 2 classifies materials based on these perceptual representations, and Model 3 directly classifies materials from tactile features. The results showed that combining information from pressing, static contact, and sliding interactions improves prediction accuracy, and that thermal cues are particularly informative for both perceptual modeling and material classification. These findings highlight the importance of thermal and compliance cues, which remain underrepresented in current robotic fingers and haptic displays. Incorporating such cues may enhance artificial systems' ability to approximate human material perception and guide the design of more perceptually grounded haptic interfaces."
-  },
-  {
-    "title": "VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models",
-    "original_title": "VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2605.29605",
-    "date": "2026-05-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.29605v1 Announce Type: new \nAbstract: Confidence estimation for Vision-Language-Action (VLA) models is essential for robots to perform manipulation tasks in the open world, providing crucial signals for risk-sensitive decision-making and failure anticipation. Existing confidence estimation methods typically rely on ensemble-based paradigms or action-token probabilities to predict the likelihood of task success. However, they still encounter challenges in computational efficiency and cross-architecture generalizability. These methods usually require repeated sampling, leading to inference inefficiency, and are restricted to VLA models with discrete action outputs, making them difficult to apply to continuous action spaces. To address this issue, we propose VLAConf, a one-class discriminative confidence framework. By leveraging frozen pretrained VLA internal representations, VLAConf directly estimates step-wise anomaly scores in a single forward pass using a lightweight confidence head, thereby eliminating the overhead of exhaustive resampling. We additionally use step-conditioned modeling to encode rollout-phase information along the manipulation trajectory. Experiments on the LIBERO benchmark demonstrate that VLAConf significantly improves the quality of the confidence signal constructed for post-hoc calibration, outperforming existing baselines by a large margin in inference efficiency. The effectiveness of VLAConf is further validated in real-robot experiments. To access the source code and supplementary videos, visit https://sites.google.com/view/vlaconf."
-  },
-  {
-    "title": "MARS Policy: Multimodality Only When It Matters",
-    "original_title": "MARS Policy: Multimodality Only When It Matters",
-    "link": "https://arxiv.org/abs/2605.29766",
-    "date": "2026-05-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.29766v1 Announce Type: new \nAbstract: Imitation learning has become a cornerstone for solving complex robotic manipulation tasks. In particular, multimodality, which enables robots to capture diverse yet valid behavioral patterns, has driven the rapid emergence of generative policies as a dominant paradigm in robot learning. However, achieving such multimodality typically relies on stochastic noise initialization and iterative denoising procedures, resulting in substantial training complexity and low inference efficiency. Meanwhile, not all phases of a robotic task inherently require behavioral diversity. Motivated by this insight, we propose the Modality-Adaptive Robot Sampling (MARS) policy, which adaptively invokes tailored stochasticity only when it is truly beneficial, while reverting to an efficient deterministic learning during single-modal phases. In other words, the proper amount of noise is injected only at the proper time. By selectively activating multimodal generation, MARS policy bridges the gap between the multimodal capability of generative policies and the superior training and inference efficiency of deterministic models. Empirical studies across 8 simulated and 4 real-world tasks demonstrate that MARS exhibits robust multimodal expressivity and high efficiency, with a 16.67% success rate improvement and an 83.20% inference latency reduction in real-world tests. Counterintuitively, MARS also outpaces deterministic policies in training efficiency on near-deterministic tasks by more effectively modeling nuanced action diversity."
-  },
-  {
-    "title": "LLM-Guided Future Hypotheses for Horizon-Aware Exploration in Multi-Step Robot Manipulation",
-    "original_title": "LLM-Guided Future Hypotheses for Horizon-Aware Exploration in Multi-Step Robot Manipulation",
-    "link": "https://arxiv.org/abs/2605.29864",
-    "date": "2026-05-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.29864v1 Announce Type: new \nAbstract: Multi-step robot manipulation requires acting under uncertainty about how the scene will evolve, making exploration and policy adaptation challenging. We study whether short-horizon, task-consistent future videos can provide useful structured priors for control and reinforcement-learning fine-tuning. We formalize this idea through Future-Experience Conditioning (FEC), a simple interface that conditions closed-loop policies on a latent representation of a short future video. In our simulation setup, future clips are generated in three stages, an LLM reasoner operating over a task ontology initialized from the current scene state, a robot-free digital-twin rollout of the intended object motion, and a mask-free video diffusion model that synthesizes a robot-consistent future clip without requiring segmentation at inference. We instantiate this future-conditioning interface primarily with BC and BC+RL, and compare against a future-conditioned Streaming Flow Policy (SFP) baseline on RoboCasa and CALVIN under NoFuture, GTFuture, GenFuture, and WrongFuture. Generated futures improve performance over no-future conditioning, while mismatched futures degrade it, and our BC+RL instantiation achieves the strongest overall results. An average BC+RL learning-curve analysis across 8 CALVIN tasks further shows that GTFuture improves fastest, GenFuture improves earlier and to a higher level than NoFuture, and WrongFuture remains at zero throughout training. These results suggest that short-horizon future videos can serve as useful structured priors for exploration and policy adaptation under imperfect future predictions. https://enact2026.github.io/"
-  },
-  {
-    "title": "Sample-Efficient Diffusion-based Reinforcement Learning with Critic Guidance",
-    "original_title": "Sample-Efficient Diffusion-based Reinforcement Learning with Critic Guidance",
-    "link": "https://arxiv.org/abs/2605.30056",
-    "date": "2026-05-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.30056v1 Announce Type: new \nAbstract: Recent advances in reinforcement learning (RL) have achieved great successes by leveraging the multimodality and exploration capability of diffusion policies. Among these approaches, one representative branch focuses on the sampling-based policy optimization. This design enables better exploration capability of the diffusion model, particularly at the beginning of training, but suffer from low exploitation in Q-value information, resulting in a slow policy convergence. Another branch pays attention to gradient-based policy optimization, which sufficiently exploits the gradient of the Q function yet tends to collapse into a unimodal policy with low diversity. To address this issue, we propose CGPO, \\textbf{C}ritic-\\textbf{G}uided diffusion \\textbf{P}olicy \\textbf{O}ptimization, which effectively balances exploration and exploitation with the training-free guidance technique integrated into the denoising process of diffusion policy. Concretely, CGPO steers action generation toward high-value regions defined by the critic network and uses the guided actions as regression objectives. In this manner, CGPO reduces the time required to obtain high-quality actions and improves final performance with better balance between the exploration-exploitation tradeoff. We validate the effectiveness of CGPO on 5 MuJoCo locomotion tasks, and CGPO achieves state-of-the-art performance compared with existing diffusion-based RL methods. Notably, CGPO is the first success to incorporate diffusion policy into real-world RL, with its superior performance on Franka robot arm grasping tasks. Our official page is released at https://dingsht.tech/cgpo-webpage."
-  },
-  {
-    "title": "BORA: Bridging Offline Reinforcement Learning and Online Residual Adaptation for Real-World Dexterous VLA Models",
-    "original_title": "BORA: Bridging Offline Reinforcement Learning and Online Residual Adaptation for Real-World Dexterous VLA Models",
-    "link": "https://arxiv.org/abs/2605.30226",
-    "date": "2026-05-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.30226v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have emerged as a promising paradigm for grounding visual-language understanding into real-world robotic manipulation. However, dexterous manipulation remains challenging for VLA policies due to high-dimensional hand control and compounding execution errors, which makes real-world RL post-training essential for bridging the gap between visually grounded action generation and physically reliable dexterous execution. However, high-dimensional dexterous exploration often triggers temporal inconsistency, sample inefficiency and hardware risks in the real world. To address these challenges, we propose BORA, an offline-to-online RL post-training framework designed for real-world dexterous VLA models. In the offline phase, BORA constructs a critic that takes both the VLM's cognition tokens and action chunks as inputs. This design enables action-conditioned value guidance, allowing the critic to evaluate dexterous hand motions beyond visual context alone. During the subsequent online phase, BORA freezes the VLA base and introduces a lightweight, Human-in-the-Loop (HiL) chunk-wise residual adaptation mechanism to mitigate real-world execution errors and further correct the offline-learned intents within the actual physical environment. By inheriting the offline critic and employing intervention-driven rewards, BORA effectively corrects execution discrepancies and adapts to real-world physical variances while preserving the pretrained policy as a stable prior. Extensive evaluations across five complex real-world dexterous tasks demonstrate that BORA significantly outperforms pure imitation learning and traditional decoupled RL baselines, achieving a 33% absolute increase in average success rate under standard settings and up to a 43% improvement in unseen object generalization."
-  },
-  {
-    "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
-    "original_title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
-    "link": "https://arxiv.org/abs/2605.30280",
-    "date": "2026-05-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.30280v1 Announce Type: new \nAbstract: Embodied intelligence is often studied through specialized models for individual tasks such as manipulation or navigation, resulting in fragmented capabilities and limited generalization across tasks, environments, and robot embodiments. In this work, we study whether heterogeneous embodied decision-making problems can be unified within a single vision-language-action model. We present Qwen-VLA, a unified embodied foundation model that extends Qwen's vision-language modeling stack from perception, understanding, and reasoning to continuous action and trajectory generation through a DiT-based action decoder. Qwen-VLA is trained with a large-scale joint pretraining recipe over diverse data sources, including robotics manipulation trajectories, human egocentric demonstrations, synthetic simulation data, vision-and-language navigation data, trajectory-centric supervision, and auxiliary vision-language data. To support multiple robot platforms, we introduce embodiment-aware prompt conditioning, where robot-specific textual descriptions specify the current embodiment and control convention. We further cast manipulation, navigation, and trajectory prediction into a unified action-and-trajectory prediction framework, enabling transferable visual grounding, spatial reasoning, and continuous action generation across robot morphologies, task families, and environments. Experiments on manipulation, navigation, and trajectory-centric benchmarks show consistent multi-task performance and out-of-distribution generalization under variations in scene layout, background, lighting, object configuration, and robot embodiment. Qwen-VLA-Instruct achieves 97.9% on LIBERO, 73.7% on Simpler-WidowX, 86.1%/87.2% on RoboTwin-Easy/Hard, 69.0% OSR on R2R, 59.6% SR on RxR, 76.9% average OOD success in real-world ALOHA experiments, and 26.6% zero-shot success on DOMINO dynamic manipulation."
-  },
-  {
-    "title": "Gaze2Act: Gaze-Conditioned Vision-Language-Action Policies for Interactive Robot Manipulation",
-    "original_title": "Gaze2Act: Gaze-Conditioned Vision-Language-Action Policies for Interactive Robot Manipulation",
-    "link": "https://arxiv.org/abs/2605.30282",
-    "date": "2026-05-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.30282v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have recently shown strong potential for robot learning by following language instructions. However, in practice, language alone is often insufficient to precisely convey human intent. It is difficult to describe which exact object to interact with among similar candidates, where to act on the object, or how the target may change during execution. To address this limitation, we propose Gaze2Act, a novel VLA framework that leverages human gaze as a dynamic and intuitive intent signal for complex interactive manipulation. Gaze2Act first bridges the ego-exo view gap by mapping first-person gaze into the robot's perspective through cross-view semantic matching, producing both an object mask and a gaze point for coarse-to-fine target specification. These cues are then integrated into the policy through perception-level prompting and action-level conditioning, allowing the robot to attend to relevant regions and execute precise interactions under dynamic intent. In a systematic evaluation across seven task categories and 16 real-robot tasks on a Unitree G1 humanoid, Gaze2Act achieves state-of-the-art performance in both intent accuracy and task success rate. It notably outperforms baselines in object disambiguation, fine-grained interaction, and dynamic intent steering. These results demonstrate that human gaze provides a natural, low-burden, and highly expressive modality for human-in-the-loop VLA control."
-  },
-  {
-    "title": "RoboWits: Unexpected Challenges for Robotic Creative Problem Solving",
-    "original_title": "RoboWits: Unexpected Challenges for Robotic Creative Problem Solving",
-    "link": "https://arxiv.org/abs/2605.30326",
-    "date": "2026-05-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.30326v1 Announce Type: new \nAbstract: The ability to reason, adapt, and creatively solve problems under unexpected challenges is essential for robots operating in real-world environments. However, current robotic benchmarks primarily emphasize skill-level execution and provide limited insight into such cognitive reasoning capabilities. We introduce RoboWits, a bi-manual robotic benchmark designed to systematically evaluate cognitive reasoning, creative tool use, and robustness to unexpected conditions. To enable scalable construction of high-quality reasoning-centric unexpected scenarios, we propose an automated task generation pipeline formulated as a multi-agent cooperative framework, comprising agents for seed task generation and verification, metric generation, scene generation, and task mutation. Using the pipeline, we curated 30 diverse seed tasks and 208 tasks with mutations and graded difficulty across geometry, material, and assembly-based reasoning. We benchmark popular robot policies, pre-trained VLAs, and oracle-state planners. Our results reveal a significant performance gap: while pre-trained VLAs exhibit preliminary success on seed tasks after single-task fine-tuning, they struggle to perform on mutated tasks, implying their brittleness in manipulation tasks requiring reasoning, strategy adaptation, and robustness to deceptive or constrained environments. Project page is available at https://umass-embodied-agi.github.io/RoboWits."
   }
 ]
