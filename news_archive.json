@@ -288,6 +288,87 @@
     "summary": "딥 reinforcement learning(DRL)의 안전성 문제 해결을 위해, 본 연구는 미분 가능한 물리 모델을 PPO(Proximal Policy Optimization) 액터 손실 함수에 통합하는 방식을 제시함. 이 방식은 훈련 과정에서 미래 궤적을 시뮬레이션하여 안전 제한 위반에 대한 패널티를 부여하며, 1-DoF 헬리콥터 시뮬레이션 환경에서 제약 조건 위반을 효과적으로 줄이면서도 목표 추적의 신뢰성을 확보하는 것으로 입증됨."
   },
   {
+    "title": "점 기반 의미론을 넘어서: 일반화 가능한 조작을 위한 객체 중심 의미 필드",
+    "original_title": "Beyond Point-Attached Semantics: Object-Centric Semantic Fields for Generalizable Manipulation",
+    "link": "https://arxiv.org/abs/2607.03163",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇의 일반화된 조작을 위해서는 관점 변화에 취약한 포인트 클라우드 대신 기능적 객체 부위(손잡이, 개구부 등)에 대한 안정적인 의미 이해가 필수적임. 본 논문은 객체 중심의 연속적인 의미 필드(object-centric continuous semantic field)를 제안하며, 이는 부분 인식적 의미 임베딩을 제공하여 포인트 클라우드의 한계를 극복함. 해당 필드는 RoboTwin 시뮬레이션 및 실세계 이인물 조작 과제에서 기존 방식 대비 더욱 안정적인 기능-부위 단서를 제공하며 조작 정책 성능을 개선하는 것으로 입증됨."
+  },
+  {
+    "title": "식품 절단을 위한 인식-조작 로보틱스 시스템 개발",
+    "original_title": "A Perception-Manipulation Robotics System for Food Cutting",
+    "link": "https://arxiv.org/abs/2607.04367",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇의 식재료 절단 과제는 다양한 음식 특성으로 인해 난이도가 높음. 본 연구는 초기 힘 데이터를 이용해 칼을 선택하는 모듈과 강화 학습(RL)을 활용한 적응형 절단 단계를 포함하는 인식-조작(Perception-Manipulation) 프레임워크를 제시함. 실험 결과, 시스템은 미지의 식재료에서도 100% 성공률을 달성했으며, 그 성능이 인간 작업자와 비교할 만한 수준임을 입증함."
+  },
+  {
+    "title": "혼잡 환경에서의 블레이드 삽입을 위한 3D 어포던스 학습",
+    "original_title": "Learning 3D Affordances for Blade Insertion in Cluttered Stowing",
+    "link": "https://arxiv.org/abs/2607.02549",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇의 재료 적재(stowing)와 같은 조작(manipulation) 작업에는 안전한 이동 공간을 파악하는 자유 공간 어포던스 추론이 핵심임. 본 연구는 3D occupancy field 기반의 masked autoencoder를 활용한 VulcanVoxel을 제안하며, 이는 블레이드 삽입 시의 실현 가능성을 국부적(locally)으로 공간 추론하는 방식임. 실제 창고 에피소드 데이터를 학습한 VulcanVoxel은 높은 커버리지와 빠른 추론 속도를 달성했으며, 관련 RGB-D 기반의 블레이드 삽입 데이터셋도 공개됨."
+  },
+  {
+    "title": "3D 파운데이션 모델 기반의 고속 Gaussian Splatting 구현",
+    "original_title": "Fast 3D Foundation Model Initialized Gaussian Splatting",
+    "link": "https://arxiv.org/abs/2607.03209",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 기존의 Structure-from-Motion(SfM) 과정 없이도 고품질 3D Gaussian Splatting(3DGS) 재구성을 가능하게 하는 신속한 방법론을 제시함. 3D Foundation Model(3DFM)을 활용하여 카메라 포즈와 점군을 초기화하고, 깊이 가이드 손실 함수를 이용해 포즈 및 가우시안 프리미티브를 공동 최적화함. 이 접근법은 재구성 속도를 획기적으로 단축시켜, 로보틱스나 자율 주행과 같은 근실시간 환경에 적용할 수 있는 3D 모델을 구축함."
+  },
+  {
+    "title": "파편화된 문서의 유도 및 협업적 재구성을 위한 비전 기반 시스템",
+    "original_title": "A Vision Based System for Guided and Collaborative Reconstruction of Fragmented Documents",
+    "link": "https://arxiv.org/abs/2607.03621",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "문화유산 보존 맥락에서 파편화된 문서의 실시간 재구성을 위한 협업 시스템 개발 및 평가가 이루어짐. 이 시스템은 특수 진공 흡착 장치를 활용한 코봇을 이용해 파편을 정밀하게 배치하며, 수동부터 완전 자동화까지 다양한 위치 지정 유연성을 확보함. 또한, 손상되거나 변형된 기록물 재구성을 위해 AI 기반 이미지 해석 기술과 더불어 SE2-LoFTR와 같은 detector-free 로컬 특징 매칭 기법을 적용하여 높은 재현성을 입증함."
+  },
+  {
+    "title": "카메라 고정 환경 제약 해소: 캘리브레이션 불필요한 시점 강건 VLA 모델",
+    "original_title": "From Fixed to Free Cameras: Calibration-Free View-Robust Vision-Language-Action Model",
+    "link": "https://arxiv.org/abs/2607.05396",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 VLA 모델은 실제 환경에서 카메라 설정 변경에 매우 취약하여 외부 보정에 의존하는 문제가 있었음. 이에 연구진은 카메라 중심의 동작과 로봇 베이스 간의 6-DoF 핸드-아이 매트릭스 예측을 분리한 'Camera-Centric VLA (CamVLA)'를 개발함. CamVLA는 단일 RGB 이미지 입력만으로 캘리브레이션, 깊이 정보 없이 시점 강건성을 확보하며, 시뮬레이션 및 실제 로봇 데이터에서 다양한 미확인 시점에서도 높은 성공률을 보임."
+  },
+  {
+    "title": "Ask-to-Clarify: 다중 턴 대화를 통한 지시 모호성 해결",
+    "original_title": "Ask-to-Clarify: Resolving Instruction Ambiguity through Multi-turn Dialogue",
+    "link": "https://arxiv.org/abs/2509.15061",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 VLA 기반 로보틱스 에이전트의 근본적 한계인 지시의 모호성을 해결하기 위해, 다중 턴 대화와 저수준 시각운동 제어를 통합한 'Ask-to-Clarify' 프레임워크가 제안됨. 이 프레임워크는 VLM 기반의 Cognitive Planner와 Diffusion 기반 Motor Executor를 결합하고, Semantic-Visual Alignment Adapter를 통해 고수준의 의도와 저수준의 시각적 인지 스트림을 연결함. 지식 손실(Catastrophic Forgetting) 문제를 해결한 결과, 11가지 실세계 과제에서 기존 방법론 대비 현저히 우수한 성능을 입증함."
+  },
+  {
+    "title": "3D Cal: Vision 기반 촉각 센서의 깊이 재구성을 위한 오픈 소스 소프트웨어 라이브러리",
+    "original_title": "3D Cal: An Open-Source Software Library for Depth Reconstruction on Vision-Based Tactile Sensors",
+    "link": "https://arxiv.org/abs/2511.03078",
+    "date": "2026-07-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇의 정교한 조작에 필수적이지만 보정 과정이 어려웠던 Vision 기반 촉각 센서의 문제를 해결하기 위해 오픈 소스 라이브러리 '3D Cal'이 공개됨. 3D Cal은 저가 3D 프린터를 자동화된 프로빙 장치로 활용하여 대규모 레이블링 훈련 데이터를 생성하고, 이를 기반으로 사용자 친화적인 깊이 재구성 파이프라인을 제공함. 이 라이브러리를 통해 상용 센서(DIGIT, GelSight Mini)에서 기존 최첨단 방식에 필적하는 높은 재구성 성능(평균 오차 약 156 $\\mathrm{\\mu m}$ 및 205 $\\mathrm{\\mu m}$)을 달성하며, 촉각 센서 연구 및 로봇 플랫폼 적용을 크게 간소화할 것으로 기대됨."
+  },
+  {
+    "title": "인간형 로봇, 대량 생산 시대 임박: 테슬라 Optimus 라인 구축 및 Unitree IPO가 중국 A주 시장을 점화시킴",
+    "original_title": "Humanoid Robots on the Eve of Mass Production: Tesla's Optimus Line Takes Shape, Unitree's IPO Ignites China's A-Share Market - finance.biggo.com",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1jdnBUYnB5NmFETVRwTnZla3luSXdjanh1eU1ZU1d1ZFMzV3d3cHpJd1hsOUNNRzNhNHhqRll6SHJSeGxrWVc5OUxaVWZZVXVwUTVRZmNvU1NyMHczdFpYeHk0N0U0V2JwUTNqTkpxaWxIV3pBM2c?oc=5",
+    "date": "2026-07-07 01:45",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "인간형 로봇 기술이 대량 생산 단계로 진입하는 움직임이 포착됨. 테슬라의 Optimus 라인 구축이 기술적 핵심 동력으로 주목받는 가운데, Unitree의 IPO가 중국 A주 시장을 활성화시키며 산업 전반의 투자 관심도가 급증함."
+  },
+  {
     "title": "UBTech, 정서적 교감을 위한 생체모사 휴머노이드 로봇 공개",
     "original_title": "UBTech unveils lifelike humanoid robots for emotional companionship - MSN",
     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUUIyQ1FxcGtGcllVVmNkTkxmYVdkZWxwS2VoUHBzc0xXUENzQVFiQnhjMzQtSWlxSTM0TENBVVo1eVRsN19TREpwV3Z1bldjNGJzakdMeDhpYVJqdFJuY2lpVHhvQzZ0QjhPNFZoSE9jdld1QzJlNUN2MXRJUGw4dVdhTHhGQkZzRmNXQjJCV1A4MGljVlRGaVg3SjNaVEplVTlsZnh3cW9YU2FWQlFadl8wYTR0NV9UaW0yWmpMUndOdjlBakdsbUtB?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "NIST has proposed a standardized performance benchmark and testing procedures to help developers and evaluators of humanoids.\nThe post NIST proposes a baseline performance benchmark for humanoid robots appeared first on The Robot Report."
-  },
-  {
-    "title": "Ubtech Robotics Bets on Proprietary Chips as Humanoid Competition Intensifies - AD HOC NEWS",
-    "original_title": "Ubtech Robotics Bets on Proprietary Chips as Humanoid Competition Intensifies - AD HOC NEWS",
-    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNVBERUVFREk3c1VRNVBMM1ctY0hBRjBremtfVk44T19DYjkyLXFvYjRMQ0Y4blZTdldHMl8tNWNCcjlwdmMwN09IWkpPR3FrR0owM01iWDIydFgzdDluaXlhanlkSnVVTGpGdjVWTjJVeThXTFYyY0ZrMEtBb2pxM3JYMDN3Uk1hMG5nOXhFZV9oOGtmWUNaTEhFZWhscWlXSFZBUGpkYmRNN0lUQ2pWd2lnaTEzcHdQQUlodGJYdUdUUQ?oc=5",
-    "date": "2026-05-29 14:12",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Ubtech Robotics Bets on Proprietary Chips as Humanoid Competition Intensifies  AD HOC NEWS"
-  },
-  {
-    "title": "Robot Talk Episode 158 – Autonomous robot deliveries, with Ahti Heinla",
-    "original_title": "Robot Talk Episode 158 – Autonomous robot deliveries, with Ahti Heinla",
-    "link": "https://robohub.org/robot-talk-episode-158-autonomous-robot-deliveries-with-ahti-heinla/",
-    "date": "2026-05-29 11:55",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "Claire chatted to Ahti Heinla from Starship Technologies about their AI-powered delivery robots that operate independently on streets and pavements. Ahti Heinla is the co-founder and CEO of Starship Technologies, the world’s leading autonomous delivery company building AI-powered robots that operate fully independently in real-world environments. One of the original engineers behind Skype’s billion-dollar success, […]"
-  },
-  {
-    "title": "Unitree touts low-cost humanoid that obeys voice, accelerates AI before IPO - CHOSUNBIZ - Chosunbiz",
-    "original_title": "Unitree touts low-cost humanoid that obeys voice, accelerates AI before IPO - CHOSUNBIZ - Chosunbiz",
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNOXoyeVUzZTZ2aXg0dU45SS1JcVRMNEdSZjFXUGN5RlNNYmMzZks3YnFLWV9XdDNCSUlrS1FkMEp5R3gtVXZKWFdFcC0wM19lSjBVRnlzQ1NBdWJ0dTd3T29PNnFoZFZuOVVMc2w3VGp4a2JLVTZfYXNqT19KeWd0NHdR0gGWAUFVX3lxTFAwZnV0eTNjVEs3MUIzMndFR040d3NoMHNCdW92UW84ZjRxcURCdzNWQ2ctZktLejBvazNlNUVMaV81U3EzdEp4N09JTmtza20wYzFUN3FVQUo3b3lSNGsxYTdNY1N3RkxSV2xOdnY3WWlIaTRwLXgwLXFPTmVma3RtN0ZDVnpsa21NR2V6Q2VHY09RSVZIZw?oc=5",
-    "date": "2026-05-29 11:26",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree touts low-cost humanoid that obeys voice, accelerates AI before IPO - CHOSUNBIZ  Chosunbiz"
-  },
-  {
-    "title": "First It Will Care for Your Mother, Then It Will Kill You - Дзеркало тижня",
-    "original_title": "First It Will Care for Your Mother, Then It Will Kill You - Дзеркало тижня",
-    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRGpMcGV0Z3lpNHhxN2RRQ192ei1KMk1GdWdoSlFPQkd3RUlJS0ZEUElJT3JDYnJnWEVXZ1V1RmRTYjZ2M2RhWnhrUUZ5TUlWWi1Hd0M3UEMxUmp4bzQ1aVNEVmJadnVad3hXcmR1R0swSFFBLWRPMjRDeDVGblV0VjRsWEVVQdIBiwFBVV95cUxPTjJnZHNEQzM0NGxsMVUyMkNseFJYQWVPQnZPaHU2ZnBKeFBNZ2RvNEVzTmtyU1E4bXNNNkF0SzdkNE9WeFN5cUdCZGpnU3hLb05SSzZoblYxb2MtaElvQ1RncERhUjNpVTkxbEJsNzA5YWZQMjBoempDOG9pZ0Vnd0dkdkhTN0tWTDU0?oc=5",
-    "date": "2026-05-29 10:07",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "First It Will Care for Your Mother, Then It Will Kill You  Дзеркало тижня"
-  },
-  {
-    "title": "EngineAI Rolls Out First Batch of T800 Humanoid Robots",
-    "original_title": "EngineAI Rolls Out First Batch of T800 Humanoid Robots",
-    "link": "https://humanoidroboticstechnology.com/industry-news/engineai-rolls-out-first-batch-of-t800-humanoid-robots/",
-    "date": "2026-05-29 09:41",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "EngineAI Robotics has announced the official launch of EngineAI Intelligent Manufacturing (Honghualing, Shenzhen) Base, alongside the rollout of the first batch of its flagship T800 full-size humanoid robots. This milestone marks the company’s decisive entry into a new phase of 10,000-unit scalable delivery capability. Spanning around 12,000 square meters, the Shenzhen Base features an integrated, closed-loop […]\nThe post EngineAI Rolls Out First Batch of T800 Humanoid Robots appeared first on Humanoid Robotics Technology."
-  },
-  {
-    "title": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery - PA Media",
-    "original_title": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery - PA Media",
-    "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxNVUVvcUZFQ3Jqc0phUlZhSXpkNm16SWNTZ3BDTE5KUHRKTXYzeUQyQ0FhZlM3bVhhVTBPRkxqZ3NpRk11Y2d2ZHE4Y1c4QS1kVUdSZlpwOHh0ZVRpc09HN1liS3FLWGh4MUZ3aThidXJlWVVmTHlYN2N0SjlxRWhtekRWaUlrZzhnY2pLRldvOHdVTUMwRTA4cG9fQ24zZkFBa0dEdWg2THNoR2hjNjdtdjR1Mm94SzcxdmJiN0IzZDFkejRncEJRVEprU0N2VlpOdGRac2twVm9hWWxWU2EweWZBc3FmcThJc0Q4SFhtOW9JWlp0WnJqLXV5MDhyUE1xekhlaWpTUUZ4dGkybGl1WmFVTzM3WHBGUEJpcGxES3JWYzgzcnhr?oc=5",
-    "date": "2026-05-29 09:02",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery  PA Media"
-  },
-  {
-    "title": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery | Corporate - EQS News",
-    "original_title": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery | Corporate - EQS News",
-    "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxOR1ZZdE1vNUFPUjlBdU8zNW02QlEtb2dreU9kLXE3bHdHVUFzemVxYV90Zm1SU1dyMzhoczcyVnFSamE2Y3ZtMzZpTTZ0bVlmR1FCSFQzTkQyeFZPWmRJdTNaWUVaWUduNTdBNWUxbTRCTnJzYUYzZ3VQU3lUUk41aTlPWlJKdi1UUVl5SlZFamVac1ZmZDh5Xzc5dDJ2VnVxMG1zQk9CUXdyQUhQaWhIeGh0S0wxTGl5Q1RHYy1Zem9ua1R0SlNxSTRaSnhPM0FSc0lndzgyZGZBcDVkaFVkNWlJeDgwaGpCeDFvQ3RzNktUeUJUekpxdlA4elhiMU1HUnZZaWI0M3dsWjlCWVgyZEY5MnZZenhvcjRtcTEyOFFCa0JVb1EtNW9vTDBJaU5fbHUtX0RVcnZ4eTE3emxvNklMYUZiSXYxNll2Zw?oc=5",
-    "date": "2026-05-29 08:20",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery | Corporate  EQS News"
-  },
-  {
-    "title": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery | Corporate - EQS News",
-    "original_title": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery | Corporate - EQS News",
-    "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxQanUxM1k2U0haZGxNZzJjR2lYZm92T2t4RkFzaUpFYzhhcnh3NHpheHNRUmE0cmVOWjNnbXJSQ25ULWo4OEdkOS1nbVh1QWNKbnJFdl9xMHZ3RHRfTkxpVnVlYVlQWUFYbFA0YTMzMjBSejd3TjU4dlBhNEo4VnBxb3hDbEFIT29KQmRCYlFfOEZYQWpGTHJKSmJrekk0YnFJVFpyZF9GNHBwc1lQSXZmTFZFdU5JWVhtNDdkQ25xXzJ0VEItaVd2MjVIZHZiX2RVZ25XcnlHT3hMcHdjZ3BhT3hXQWdaSGIteVNMcHFuRjlWVTVlOHlXc0VrWjVISDZiR0xHODZFcEU3ZVpMUnlWSUdDeGxQdUVWODhHZWY5RGx2Zkp2ZEtib0F4WFVOXzdOeTlGcTVEMzdhX2ZEVTFsRno1Z09ORVZkQWdCMw?oc=5",
-    "date": "2026-05-29 07:25",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery | Corporate  EQS News"
-  },
-  {
-    "title": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery | Corporate - EQS News",
-    "original_title": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery | Corporate - EQS News",
-    "link": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxOY0E4aU9HVWRVcWtnSWtCVTg4UkV1N2U5UjFKel9Uem1iTGZlSmJFMlFOcmtTQ1U3OUVWOWVuaXNlTTZ1dzZZQXctNTN5VThqUi0yQzVXa0pjMEN4VkV4cnBoXzRrc1RlNHF3bHZCLTU0a3dqT1dkTGUxeklGVmd6TVBBMUlIUG5NOWRqajNBYm16T0FMVkR4UUhOQVVHeTJsdTZPSXRfX1hlUkU0MElPc3pnOTNQaWt6X2ZZMmdUbjc5TzhfX2g0S1RGS19VbkI2U2tMZUdJS0psSzJuUm40R1JoVzdrWkE4YUVJZU1zRlduUXJBd2lwOWd0Q3VDX0FyMllCQzlUczE3VzVzbVJZNEdWS1c4MkJuX2lWRmtQMHlicThscE54c25BT3JRa09mTjdtWExlRHRwYXN2SDFOYjdHbVNoWmli?oc=5",
-    "date": "2026-05-29 07:25",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery | Corporate  EQS News"
   }
 ]
