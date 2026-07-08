@@ -1,5 +1,77 @@
 [
   {
+    "title": "발 착용형 AHRS를 위한 쿼터니언 평균 기반 적응형 보완 필터(QAACF) 제안",
+    "original_title": "Quaternion-Averaging-Based Adaptive Complementary Filter for Pedestrian Dead Reckoning With a Foot-Mounted AHRS",
+    "link": "https://arxiv.org/abs/2607.05451",
+    "date": "2026-07-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "실내 내비게이션에 활용되는 보행자 데드 레코닝(PDR)의 정확도는 발 착용형 AHRS의 자세 추정 알고리즘에 의존함. 이에 계산 비용 절감과 정확도 향상을 동시에 추구하는 쿼터니언 평균 기반 적응형 보완 필터(QAACF)를 제안함. QAACF는 Markley의 쿼터니언 평균을 이용해 각속도, 가속도, 자기장 측정을 융합하며, 보행 주기에 따라 가중치를 적응적으로 조정하여 기존 필터 대비 낮은 Root Mean Square Error(RMSE)와 낮은 연산 비용을 구현함."
+  },
+  {
+    "title": "로봇 매니퓰레이터의 고전적 및 제어 인지형 최적 궤적 계획의 동적 평가",
+    "original_title": "Dynamic Evaluation of Classical and Control-Aware Optimal Trajectory Planning in Robot Manipulators",
+    "link": "https://arxiv.org/abs/2607.05544",
+    "date": "2026-07-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존의 고전적 궤적 계획은 단순하지만 시스템의 동역학 및 제어 노력을 무시하는 한계로 비효율적인 구동을 초래함. 본 논문은 매니퓰레이터 동역학과 액추에이터 노력을 명시적으로 반영하는 제어 인지형 최적 궤적 계획 프레임워크를 제안하고, 이를 동일한 비선형 폐루프 조건에서 평가할 수 있는 통합 환경을 구축함. UR5 매니퓰레이터를 이용한 시뮬레이션 결과, 제안된 접근법이 기존 고전적 방법 대비 추적 오차와 보정 토크를 효과적으로 줄여, 운동학적 평활성만으로는 동적 효율성이 보장되지 않음을 입증함."
+  },
+  {
+    "title": "IMR: 다중 에이전트 궤적 예측을 위한 반복 모드-월드 가중 회귀",
+    "original_title": "IMR: Iterative Mode-World Weighted Regression for Multi-Agent Trajectory Prediction",
+    "link": "https://arxiv.org/abs/2607.05705",
+    "date": "2026-07-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "자율주행차의 필수 기능인 다중 에이전트 모션 예측의 한계점을 극복하기 위해, 본 논문은 모드-월드 가중 회귀 손실(mode-world weighted regression loss)을 제안함. 이 기법은 모드 콜랩스(mode collapse)를 완화하고 예측 정확도를 개선하는 데 중점을 둠. 또한, 반복 디코더(iterative decoder)를 통해 궤적을 재귀적, 분절적으로 생성하며, Argoverse 2 다중 에이전트 모션 예측 벤치마크에서 최고 성능을 입증함."
+  },
+  {
+    "title": "관측 품질의 중요성: 실패 지향 분석을 통한 견고한 다중 어안 렌즈 보정 기술",
+    "original_title": "Observation Quality Matters: Robust Multi-Fisheye Calibration via Failure-Oriented Analysis",
+    "link": "https://arxiv.org/abs/2607.05777",
+    "date": "2026-07-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "다중 어안 카메라 시스템의 보정 난이도에 대한 연구를 통해, 기존 보정 실패 원인이 단순한 데이터 손실보다는 intrinsic initialization에 기인함을 분석함. 이에 저자들은 학습 기반 타겟 검출기와 오류 분석 기반 프레임 선택기를 결합한 CO-Calib 프레임워크를 제안함. 본 방법론은 기존 보정 워크플로우를 유지하면서도 시스템의 전체 성공률을 68.1%에서 99.3%로 획기적으로 개선하고, 실제 환경에서의 보정 안정성을 극대화함."
+  },
+  {
+    "title": "ThorArena: 인간 동작 및 힘 시연을 통한 휴머노이드 물리적 상호작용 벤치마킹",
+    "original_title": "ThorArena: Benchmarking Humanoid Physical Interaction with Human Motion-Force Demonstrations",
+    "link": "https://arxiv.org/abs/2607.06052",
+    "date": "2026-07-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존 휴머노이드 평가가 외부 상호작용 힘을 간과하는 한계에 주목, 본 논문에서는 동작과 힘을 동시 측정한 실제 인간 시연 데이터를 기반으로 Force-Aware Tracking Score(FATS) 등의 새로운 평가 지표를 제시하는 ThorArena 벤치마크를 공개함. 이를 통해 로봇의 전신 추적 정확도와 다양한 외부 힘 하에서의 제어 강건성을 종합적으로 측정하는 표준화된 평가 프레임워크를 제공함. 실험 결과, 힘 인지 평가가 기존의 힘 무시 평가 대비 성능의 상당한 차이를 드러냄을 입증함."
+  },
+  {
+    "title": "사족 보행 로봇의 양손 이동 조작을 위한 종아리 통합형 암 기술",
+    "original_title": "Calf-Integrated Arms for Bimanual Quadruped Loco-Manipulation",
+    "link": "https://arxiv.org/abs/2607.06186",
+    "date": "2026-07-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 사족 보행 로봇의 이동성과 조작 능력 상충 문제를 해결하고자, 본 연구는 Unitree Go2의 앞 종아리에 매니퓰레이터를 통합하는 설계임. 이를 통해 네 발이 지면에 고정된 상태로 지면 높이에서 양팔을 이용한 bimanual 물체 파지 및 조작이 가능함. Vision-Language 모델을 통합하여 장기적 자율성을 확보했으며, 시뮬레이션에서 양손 협동 리프트 및 개체 간 핸드오버 등 다중 작업을 성공적으로 수행함."
+  },
+  {
+    "title": "에이전트 오케스트레이션 기반 VLA 스킬 구성에서 의미론적 핸드오프 실패 진단",
+    "original_title": "Diagnosing Semantic Handoff Failures in Agent-Orchestrated Vision-Language-Action Skill Composition",
+    "link": "https://arxiv.org/abs/2607.06256",
+    "date": "2026-07-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇의 장기 가정 작업 수행 시 발생하는 '의미론적 핸드오프 실패' 문제를 다루었으며, BEHAVIOR-1K 환경에서 에이전트 기반의 Vision-Language-Action 스킬 실행 시스템을 구축하여 평가함. 개별 스킬들은 높은 성공률을 달성했으나, 스킬들이 연속적으로 결합된(chained) 상태에서는 빈번하게 실행 실패가 발생하는 것으로 나타남. 이 결과는 단일 스킬의 성공과 달리, 장기적이고 복잡한 태스크 완료를 위해서는 VLA 스킬 라이브러리가 매끄럽게 이어지는 '혼잡한 결합 상태(messy chained-state distribution)'에 대한 견고한 학습이 필수적임을 입증함."
+  },
+  {
+    "title": "LAMP: 잠재 모션 사전 기반의 정교한 손 조작을 위한 실세계 학습",
+    "original_title": "LAMP: Latent Motion Prior-Guided Real-World Learning for Dexterous Hand Manipulation",
+    "link": "https://arxiv.org/abs/2607.06323",
+    "date": "2026-07-08 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "정교한 손 조작을 위한 실세계 학습은 고차원 액션 공간의 문제로 인해 신뢰성 확보가 어려웠음. 이에 연구진은 잠재 모션 사전(latent motion prior) 모듈을 도입하여 과거 손 액션 이력을 압축된 잠재 공간으로 매핑하는 기술을 제시함. 이를 바탕으로 구축된 $\\text{\\method{}}$ 프레임워크는 3단계 학습 과정을 거치며, 기존 대비 낮은 오류율로 로봇의 접촉 일관성을 유지하며 정교한 조작을 수행하는 높은 성공률(최종 목표 달성율 95% 이상)을 입증함."
+  },
+  {
     "title": "휴머노이드 로봇, '대규모 배치' 단계 진입 임박 전망",
     "original_title": "Humanoid robots to see 'large-scale deployment' - China Daily",
     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBrZ3ZsZDNhcl9PZi1MZUxzanB5ekxJMlNMeEZYaGNJRFhEU3RXdUR4X0hvYWtVOXZPTVVkSkxfTUVNQk0xX3M5MW84SWdDTHhwMmZmUnBVaGlYRmc5S0ZRVDFFSEZ3Y3pFbW1rWVYteU83R1pCMG01VXVNVVBoZw?oc=5",
@@ -3598,6 +3670,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot  PR Newswire"
+  },
+  {
+    "title": "UBTECH, 세계 최초 대량 생산 전신 울트라 바이오닉 휴머노이드 로봇 UWORLD U1 출시",
+    "original_title": "UBTECH Launches UWORLD U1, the World's First Full-Size Mass-Produced Ultra-Bionic Humanoid Robot - Yahoo Finance",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUkczaWlWU1dVNVB4ZkdYRmcwdG5zRG1mQnlWeHh3ZTZyN3RFN2UyRUVKS0tLZEh4Z29WRGpsQ1pGYjdqMFEtM0dKQW1FQ3g1MjRaclNjbXB2aW5DQi13ZjdqWnpTRWNad0JCMHZfanRtZnlheUFJVlhic3lHYzJfMXVpOUR6WW1fdEY4Zjctdm94NG5rb1BjTFByaFY?oc=5",
+    "date": "2026-07-01 02:27",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "UBTECH가 전신 규모의 신규 로봇 UWORLD U1을 시장에 선보임. 이 모델은 세계 최초로 대량 생산이 가능한 울트라 바이오닉 휴머노이드 로봇으로 높은 기술적 의미를 지님. 로봇 산업 분야의 새로운 이정표를 제시하는 제품으로 분석됨."
   },
   {
     "title": "UBTech launches lifelike humanoid robots built for companionship in China - South China Morning Post",
@@ -17917,86 +17998,5 @@
     "source": "Google News (Humanoid)",
     "category": "humanoid",
     "summary": "Jensen Huang Says the AI Agent Era Has Arrived as NVIDIA Evolves Beyond Chips at GTC Taipei 2026  kmjournal.net"
-  },
-  {
-    "title": "Scaling automation in contract manufacturing: Interview with Rodrigo DallOglio of Flex",
-    "original_title": "Scaling automation in contract manufacturing: Interview with Rodrigo DallOglio of Flex",
-    "link": "https://roboticsandautomationnews.com/2026/06/01/scaling-automation-in-contract-manufacturing-interview-with-rodrigo-dalloglio-of-flex/102095/",
-    "date": "2026-06-01 07:33",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "As manufacturers face increasing pressure to improve productivity, quality, and resilience while managing growing product complexity, automation is becoming a central part of modern factory operations. Technologies such as collaborative robots, autonomous mobile robots (AMRs), and emerging forms of physical AI are moving beyond pilot projects and into large-scale production environments. One company at the […]"
-  },
-  {
-    "title": "NVIDIA Announces Humanoid Built on Isaac GROOT Platform",
-    "original_title": "NVIDIA Announces Humanoid Built on Isaac GROOT Platform",
-    "link": "https://humanoidroboticstechnology.com/industry-news/nvidia-announces-humanoid-built-on-isaac-groot-platform/",
-    "date": "2026-06-01 07:14",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "NVIDIA has announced the NVIDIA Isaac™ GR00T Reference Humanoid Robot, the first open humanoid robot reference design built on NVIDIA Jetson Thor™ and the NVIDIA Isaac GR00T open development platform. The reference design helps democratize frontier humanoid robotics research by providing access to advanced hardware and an open software stack without requiring proprietary platforms. As demand for general-purpose […]\nThe post NVIDIA Announces Humanoid Built on Isaac GROOT Platform appeared first on Humanoid Robotics Technology."
-  },
-  {
-    "title": "Nvidia unveils H2+ humanoid reference design with Unitree and Sharpa - 디지털투데이",
-    "original_title": "Nvidia unveils H2+ humanoid reference design with Unitree and Sharpa - 디지털투데이",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSkZmVVd2RnNNZWMzbkcyaFRnQV9aaEEyLUhGZTQzNTMzRS1IWGFwbkh6WWdiYUNrNzlSY2YwRXA0bHVtcmQ3S3JmRGtxWC1ldkJoNkJ2RVdDd1FjN25NQVdOXzFNdmR6NU12UFFaX1ZMWlppRUx3TWhIbzBBZnRmVFk5azA1UWlScHFURHoyYmZrZG9WRnNzc1hBSVlhMXVEeDFjNE9yM1M4S05ZdUx3dUVfUVdXc0R6?oc=5",
-    "date": "2026-06-01 07:05",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Nvidia unveils H2+ humanoid reference design with Unitree and Sharpa  디지털투데이"
-  },
-  {
-    "title": "Nvidia expands humanoid robot partnerships beyond China - Gulf Business",
-    "original_title": "Nvidia expands humanoid robot partnerships beyond China - Gulf Business",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU0N6V2h5SGN3Yml1TlBhS3Y1aFk1ZlNjczF0SERuaXFEeHdqSkZUOGVMbXhDTGd3Q05hRnpUWF96RTZYbUJpc2VMX2xGel9NZzlpc3lKM0RPVGEyUl9FVnVfT1JodXFra3FnSWtIemJCRzJXWmFTelgtNXJHZlMwYnhlSTNKQzRQOGVnTU55NGtDQzBsUUJ6cw?oc=5",
-    "date": "2026-06-01 06:21",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Nvidia expands humanoid robot partnerships beyond China  Gulf Business"
-  },
-  {
-    "title": "NVIDIA wants AI agents everywhere: in data centers, PCs and humanoid robots - ynetnews",
-    "original_title": "NVIDIA wants AI agents everywhere: in data centers, PCs and humanoid robots - ynetnews",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4yOW5hdWpHMWtOdTVSSm41a0JvZkxxTjMyLU1qeG1yb3FwMzluV281M05DS0ROd2RYZnNXUEFMYWJCZkpsME9iRllMalZOTW9faGxPMlpYQmx6RS1iS25uX1F1cUkxX0NDaDRNZg?oc=5",
-    "date": "2026-06-01 06:20",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA wants AI agents everywhere: in data centers, PCs and humanoid robots  ynetnews"
-  },
-  {
-    "title": "On the day Unitree went public, Nvidia unveiled a humanoid robot. - PANews",
-    "original_title": "On the day Unitree went public, Nvidia unveiled a humanoid robot. - PANews",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zTWRrWi1HUUl1dEkzeVdNRFFPUXM4U1AzRURxbFE1eVNpRExSODBmOFk5SDUwYnRwdXNvQUx2MDFQM2toeVp1TmFqeFJiUEZDMnpvZ2l3dmhMbi1aeFMxUDBOaUthV0pOREZQUTdqbmgtY2M5dVdVbng1Mlg5Ukk?oc=5",
-    "date": "2026-06-01 06:20",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "On the day Unitree went public, Nvidia unveiled a humanoid robot.  PANews"
-  },
-  {
-    "title": "Open source hardware for robotics: Democratizing robot building",
-    "original_title": "Open source hardware for robotics: Democratizing robot building",
-    "link": "https://roboticsandautomationnews.com/2026/06/01/open-source-hardware-for-robotics-democratizing-robot-building/102089/",
-    "date": "2026-06-01 06:12",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Most discussions about open-source robotics focus on software. The Robot Operating System (ROS) has become the best-known example, providing developers with a common framework for building and operating robots. Yet software is only part of the story. Over the past two decades, a growing ecosystem of open-source hardware platforms has dramatically lowered the barriers to […]"
-  },
-  {
-    "title": "Nvidia to work with US, European humanoid robot makers in addition to China’s Unitree - 93.3 The Drive",
-    "original_title": "Nvidia to work with US, European humanoid robot makers in addition to China’s Unitree - 93.3 The Drive",
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQWF9Xc19lZExFQ3VUU1JGUmlNQ05ZaDhQaUZnYURIbHQ3RThodVdCUDh2YkU5bFNVNlQwRE9UWkRKeW41TFo2dzJPVDdaRTV6ajNkOEQ1RHBfX2RDUWlqeU12OGI4R1hrZGp1ZzFybXJ5Znl0NGgtNDBCLXNyUERtUFlWbmdkeGVoaXMxS3lGUUY5eEsxc0lWMnE2TXFXbFJ4VmFkc0taaTNQMnFKR2JyLUhiMFZUTzRKM2ZJbm5pYmc?oc=5",
-    "date": "2026-06-01 06:10",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Nvidia to work with US, European humanoid robot makers in addition to China’s Unitree  93.3 The Drive"
-  },
-  {
-    "title": "Unitree Announces H2 Plus, an NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research | Corporate - EQS News",
-    "original_title": "Unitree Announces H2 Plus, an NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research | Corporate - EQS News",
-    "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxObzdzRzRRWWRhMS1EUzBQTmpCTUtwOVdGVDZ5TGxBVmNwaUhPVk1JV2dWMXJZZ2lsWkFBRDVQZWNaVWxRZzhNeDlHR1doMXJDbVBXWHppajlHN21COWxMNHQzek9tWlo1azZnLV83MTZRTGUzcFc1VDhxQnhydUhPeGpfNWQ1N2ZaTllJY1J6R0d4QjZ3NFVFUUE5ZzhETmJBTC1LVXk5aGRTWWpTMmd3M0JkUUF3NmNvQ0J5TE9MMlZoWGZzMUJ1dHdncjlZdjg2YUJWa0l3M0hsMG5WNnh3czFSdUJESHdfSFJNZzZ6M0NaMjlNVThvNkJqQTRSOXExQVRPdA?oc=5",
-    "date": "2026-06-01 06:01",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree Announces H2 Plus, an NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research | Corporate  EQS News"
   }
 ]
