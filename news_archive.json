@@ -1,5 +1,14 @@
 [
   {
+    "title": "포사이트 로보틱스, 완전 로봇 백내장 수술 실현을 향한 여정",
+    "original_title": "ForSight Robotics’ road to performing a fully robotic cataract surgery",
+    "link": "https://www.therobotreport.com/forsight-robotics-road-to-performing-a-fully-robotic-cataracts-surgery/",
+    "date": "2026-07-09 21:14",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "ForSight Robotics의 JASPER Platform은 백내장 수술 시 외과의를 보조하는 기능을 제공하며, 수술의 최종적인 주도권은 외과의에게 남아있도록 설계됨. 이는 완전한 로봇 백내장 수술을 목표로 하는 회사의 개발 로드맵을 보여주는 내용임."
+  },
+  {
     "title": "물 위에서 재구성 가능한 구조물을 만드는 소형 수중 로봇",
     "original_title": "Small aquatic robots that assemble into reconfigurable structures on the water",
     "link": "https://techxplore.com/news/2026-07-small-aquatic-robots-reconfigurable.html",
@@ -493,6 +502,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "본 연구는 객체 중심의 신경 표현(Neural Fields)을 통해 환경 인식을 수행하고, 시공간적 MoE(Mixture-of-Experts)를 이용해 움직임 프리미티브(movement primitives)를 결합하는 생성 학습 프레임워크를 제시함. 이 구조는 동작을 시각적 구조에 근거하여 구성적으로 모델링함으로써, 시스템의 데이터 효율성을 유지하고 광범위한 환경 변화에 대한 체계적인 일반화가 가능함을 입증함. 시뮬레이션은 물론 실제 환경에서의 장기 조작(long-horizon manipulation) 작업에서 잡음 및 범주 레벨의 일반화 능력을 성공적으로 구현함."
+  },
+  {
+    "title": "모듈식 소프트 로봇의 적응 제어를 위한 지속 학습 프레임워크",
+    "original_title": "A Continual Learning Framework for Adaptive Control of Modular Soft Robots",
+    "link": "https://arxiv.org/abs/2607.06740",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "모듈식 소프트 로봇(MSR) 제어는 비선형 역학 및 구조적 복잡성 때문에 난제로 남아있으며, 형태 변화 시 재학습이 필수적임. 본 연구는 지속 학습(Continual Learning) 기반의 프레임워크를 제안하여, 이전 지식 손실 없이 로봇 형태 변화에 점진적으로 적응할 수 있는 제어 방안을 제시함. 이 프레임워크는 모듈별 역학을 분산 학습하여 국지적 제어의 정밀도를 높였으며, 시뮬레이션과 실제 공압식 소프트 로봇 팔 실험을 통해 그 우수성을 검증함."
   },
   {
     "title": "UMA, 차세대 휴머노이드 로봇 비전 공개함",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.01847v1 Announce Type: new \nAbstract: Diffusion-based Vision-Language-Action policies achieve remarkable success in robotic manipulation, yet commit a fundamental geometric error we term the $\\textbf{Euclidean Fallacy}$: representing SE(3) poses as flat $\\mathbb{R}^{12}$ vectors. This approximation induces (1) manifold drift violating SO(3) constraints, (2) broken equivariance under coordinate transformations, and (3) non-geodesic trajectories with excessive kinematic cost. We introduce $\\textbf{Lie Diffuser Actor (LDA)}$, a diffusion framework operating intrinsically on SE(3). Our method injects noise through left-invariant SDEs, predicts scores in the tangent space, and retracts samples via the exponential map. This formulation eliminates manifold drift by construction while guaranteeing coordinate-frame equivariance and geodesic optimality. On CALVIN ABC$\\rightarrow$D, LDA improves average task length from $3.27$ to $3.51$ ($+7.3\\%$). We further validate our method on real robot and the results show that our methodology outperforms the baseline on majority tasks."
-  },
-  {
-    "title": "PHASOR: Phase-Anchored Universal Action Representations for Humanoid Embodiments",
-    "original_title": "PHASOR: Phase-Anchored Universal Action Representations for Humanoid Embodiments",
-    "link": "https://arxiv.org/abs/2606.01851",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.01851v1 Announce Type: new \nAbstract: Learning a good action embedding space is fundamental to scalable robot policy learning, yet existing methods treat action latents as task-specific intermediates rather than first-class representations. The resulting latents are unstructured, embodiment-specific, and weakly tied to motion semantics, limiting interpretability, controllability, and transferability across robots. We position the action embedding space itself as a first-class design target, with downstream policy quality emerging from representation quality. Exploiting motion's intrinsic periodicity, we factorize it into a phase manifold that captures cyclic structure via FFT-parametric coefficients, together with a pose branch that conditions the manifold on non-periodic configuration detail. Combined with motion-semantic distillation, this factorized structure yields a cross-embodiment motion manifold that is interpretable and embodiment-agnostic by design. Anchoring multiple humanoid robots to a shared human-pretrained manifold then produces a unified action embedding space across diverse platforms, achieving strong cross-embodiment retrieval and consistent gains on downstream robot tasks."
-  },
-  {
-    "title": "Set-Supervised Diffusion Policy: Learning Action-Chunking Diffusion through Corrections",
-    "original_title": "Set-Supervised Diffusion Policy: Learning Action-Chunking Diffusion through Corrections",
-    "link": "https://arxiv.org/abs/2606.01865",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.01865v1 Announce Type: new \nAbstract: Diffusion policies have recently emerged as a powerful framework for robotic manipulation. However, like other behavior cloning methods, they remain vulnerable to distributional shift, often requiring human-in-the-loop interventions to correct failures during deployment. These interactions naturally provide paired supervision in the form of the robot's undesired actions and the human teacher's corrective actions. Yet existing data aggregation pipelines and standard behavior cloning losses largely ignore this negative signal from undesired actions, leading to overfitting to teacher's actions and an increasing reliance on costly expert data. To address this limitation, we propose Set-Supervised Diffusion Policy (SDP), a novel learning framework that utilizes contrastive action-chunk data to train diffusion policies from human corrections. From paired positive and negative action-chunks, SDP constructs a set of desired action-chunks and designs a training pipeline that encourages the diffusion policy to align with the set. Through extensive experiments across multiple robotic manipulation tasks, we demonstrate that SDP consistently improves policy performance, with particularly strong gains in robustness to noisy data. Moreover, SDP induces high-quality aggregated datasets, enabling more efficient and reliable policy learning from human-in-the-loop corrections. Our code is available at https://set-supervised-diffusion-policy.github.io/."
   }
 ]
