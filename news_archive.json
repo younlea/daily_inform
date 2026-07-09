@@ -1,5 +1,14 @@
 [
   {
+    "title": "물 위에서 재구성 가능한 구조물을 만드는 소형 수중 로봇",
+    "original_title": "Small aquatic robots that assemble into reconfigurable structures on the water",
+    "link": "https://techxplore.com/news/2026-07-small-aquatic-robots-reconfigurable.html",
+    "date": "2026-07-09 19:00",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "MIT 연구팀은 수변 공간을 역동적이고 레고 같은 건설 현장으로 활용하는 시스템을 개발함. 'FloatForm'이라는 명칭의 이 시스템은 작은 사각형 로봇 보트 군집(swarm)을 이용함. 이는 최소한의 인간 개입만으로 물 위에서 스스로 조립 및 대형 구조물 형성, 분해와 재조립 과정을 통해 새로운 형태를 구현할 수 있음."
+  },
+  {
     "title": "새 모양 로봇, 물속 수영 후 패들링 없이 비행함",
     "original_title": "Birdlike robot swims underwater, then flaps into flight without paddling",
     "link": "https://techxplore.com/news/2026-07-birdlike-robot-underwater-flight.html",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.01951v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models are promising for diverse robotic tasks, but their performance heavily depends on large-scale high-quality training data, whose collection on real robots is costly and time-consuming. While prior work has explored augmenting manipulation datasets with egocentric human videos, applying such approaches to mobile robot navigation remains challenging due to viewpoint changes during locomotion. In this paper, we propose a framework that converts egocentric walking videos into datasets for mobile robot imitation learning. The proposed method estimates camera motion from human videos and transforms it into action representations compatible with ground mobile robots. By jointly training a VLA model on human-derived and robot-collected datasets, the model achieves improved language understanding and more robust action generation than training with either data source alone. Experiments on a fruit-search navigation task demonstrate that human egocentric videos provide an effective and scalable data source for mobile robot learning."
-  },
-  {
-    "title": "World-Task Factorization for Robot Learning",
-    "original_title": "World-Task Factorization for Robot Learning",
-    "link": "https://arxiv.org/abs/2606.02027",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.02027v1 Announce Type: new \nAbstract: Robot learning must produce policies that generalize to new combinations of constraints, teammates, and environments. To achieve this, we must structurally factor the policy, which is a choice that dictates what generalizes, what requires retraining, and what remains entangled. Existing methods span a wide spectrum, from expecting structure to emerge from data scaling, to hand-designing it via hierarchies, skill libraries or learned specializations. In this paper, we study what we argue is the most fundamental factorization in robotics: separating the world from the task. We investigate the conditions under which this factorization is principled. World factors are properties of the embodied system and the environment; they exist independently of intent. Task factors are defined by the task's logic over what the world admits. We formalize this asymmetry through Bayesian model evidence: it aligns with the data-generating process, maintains high likelihood through an analytical world model, and reduces the Occam razor's penalty on task parameters. We instantiate this factorization by pairing AICON, a differentiable graph of recursive estimators and interconnections that is compositional, operates without task-specific data, and propagates cost gradients to actuators, with a compact, learned policy that modulates gradient paths. Gradients serve as the interface between the two factors: they carry world structure through the graph and task structure through costs, enabling low-dimensional learning while preserving structural generalization. We test the world/task factorization across three problems that encompass heterogeneous robots, environments, task logic and sensorimotor modalities. Our framework outperforms end-to-end baselines and analytical heuristics in all settings, generalizes zero-shot to out-of-distribution configurations, and transfers to real hardware without retraining."
   }
 ]
