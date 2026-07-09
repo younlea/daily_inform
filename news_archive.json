@@ -1,5 +1,14 @@
 [
   {
+    "title": "Rollon, 자석 통합형 텔레스코픽 레일 두 종 출시",
+    "original_title": "Rollon launches two telescopic rails with integrated magnets",
+    "link": "https://www.therobotreport.com/rollon-launches-two-telescopic-rails-integrated-magnets/",
+    "date": "2026-07-09 16:41",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Rollon이 자석이 통합된 텔레스코픽 레일 두 제품을 출시함. 이 자석 기술은 부하 관리 성능을 향상시키고, 확장 과정을 더욱 원활하게 하며, 내구성을 증가시키는 역할을 함. 특히 집중적이고 강도 높은 작동 환경에서도 뛰어난 성능 유지가 가능하다고 밝힘."
+  },
+  {
     "title": "스트리밍 대 배치: 데이터 처리의 두 가지 철학",
     "original_title": "Streaming vs Batch: Two Philosophies of Data Processing",
     "link": "https://blog.bytebytego.com/p/streaming-vs-batch-two-philosophies",
@@ -43,6 +52,15 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "Siemens가 Databricks 및 FFT와 새로운 edge-to-cloud 통합을 발표하며, 복잡한 IoT 미들웨어 없이 생산 데이터를 엔터프라이즈 AI에 직접 연결하는 시스템 구축함. 이는 산업 고객들이 생산 데이터를 실질적인 인사이트로 전환하고 산업 AI를 글로벌 규모로 확장하는 데 도움을 주는 것이 목적임."
+  },
+  {
+    "title": "Unitree와 UBTECH 중심, 2026년 중국 휴머노이드 로봇의 실제 상업화 돌파구 전망",
+    "original_title": "Unitree & UBTECH: 2026 Breakthroughs of Chinese Humanoid Robots in Real-World Commercialization - 36Kr",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9pQU94VTlodkI1czNlTXc5X2g5UlBEZ3dwTmNyS3lPX3RDYVp2VU5MbTdXS1lHeldIcXhJSVBYMVlUYWZpQVRQb1lhU3lnYkRjNmFv?oc=5",
+    "date": "2026-07-09 10:34",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "본 기사는 Unitree 및 UBTECH와 같은 중국 기업들이 주도하는 휴머노이드 로봇의 상용화 진전 상황을 분석함. 2026년을 기점으로 로봇들이 실제 산업 환경에서 활용 가능한 수준의 기술적 돌파구를 마련할 것으로 전망함. 이에 따라 관련 로봇들이 물류, 제조 등 노동 집약적 산업 현장에 본격적으로 투입될 예정임."
   },
   {
     "title": "Eclipse Automation, Automate 2026에서 몰입형 공장 기획 플랫폼 공개",
@@ -412,6 +430,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "본 연구는 강도 감지 플랫폼을 활용하여 로봇 인터벤션 신경방사선학 시술의 다양한 컨트롤러 인터페이스를 내시험(in-vitro) 환경에서 평가함. 10명의 전문의를 대상으로 수동 조작이 가장 빠르며, Joystick 사용 시 합병증(prolapse events) 위험이 높게 나타남. Device-mimicking controller가 Joystick 인터페이스 대비 전반적인 지표에서 우수함을 입증했으나, Haptic feedback은 유의미한 성능 개선 효과를 보이지 않은 것으로 결론지음."
+  },
+  {
+    "title": "잔차 기반 보수적 모델 예측 경로 적분 제어 (Residual-Conservative Model Predictive Path Integral Control)",
+    "original_title": "Residual-Conservative Model Predictive Path Integral Control",
+    "link": "https://arxiv.org/abs/2607.06950",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 샘플링 기반 MPC가 모델-플랜트 불일치에 적응하지 못하는 고정 제약 페널티를 사용하는 문제점을 해결하기 위해, 잔차(residual)를 활용하여 온라인으로 안전 보수성을 조절하는 RC-MPPI 프레임워크를 제시함. 본 방법은 잔차 의존적 제약 강화, 적응형 안전 비용 형성, 잔차 적응 샘플링 변조의 세 가지 결합 메커니즘을 통해 안전성을 확보함. 이를 통해 LTI 시스템 및 2R 매니퓰레이터 시뮬레이션에서 기존 MPPI 대비 우수한 안전 마진과 제어 효율성이 입증됨."
   },
   {
     "title": "UMA, 차세대 휴머노이드 로봇 비전 공개함",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.02486v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models generalize across static manipulation but fail when objects move during task execution. They map the current observation to an action and assume the scene is stationary between observation and execution, so at any non-trivial object speed the resulting latency exceeds the time available to grasp. We close this gap with AHEAD (Anticipatory Horizon Extrapolation with Adaptive Dynamics), a predict-then-act wrapper that augments a frozen VLA with a motion-aware latent world model. A small world model trained on manipulation video forecasts future patch tokens in the VLA's feature space, conditioned on per-token velocity and acceleration from optical flow. A language-and-motion saliency mask concentrates prediction on task-relevant patches, and the model rolls forward for an adaptive horizon, halting when prediction uncertainty crosses a threshold. The frozen action decoder then receives the predicted future tokens in place of the current ones. AHEAD adds 4.9M parameters to a frozen 7B OpenVLA and reaches 79 to 97% success across 20 dynamic simulation scenarios where the strongest baseline reaches 31 to 58%. On a physical UFactory xArm 7, AHEAD succeeds on 29/30 to 30/30 on three conveyor and rolling-ball tasks, 23/30 on paddle interception, and 19/30 on projectile catching where every baseline scores 0/30."
-  },
-  {
-    "title": "AFUN: Towards an Affordance Foundation Model for Functionality Understanding",
-    "original_title": "AFUN: Towards an Affordance Foundation Model for Functionality Understanding",
-    "link": "https://arxiv.org/abs/2606.02551",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.02551v1 Announce Type: new \nAbstract: Affordance understanding bridges visual perception and physical action, serving as an explainable interface for robot manipulation in open and unstructured real-world environments. Yet, building an affordance foundation model that not only understands where and how the interaction should happen, but also generalizes across diverse environments, objects, and tasks, remains a long-standing research challenge. Existing methods typically address only part of this challenge, either localizing task-relevant regions without specifying executable motion, or predicting motion but with limited scalability. In this paper, we present ourmodel, a step towards an affordance foundation model for functionality understanding. From a single RGB-D observation and a language task description, ourmodel predicts a task-conditional functional mask (where to interact) and a 3D post-contact motion curve (how to interact). To support open-world generalization, we build a large-scale standardized data pipeline that converts heterogeneous robot, human, simulation, and real-world scan data into a shared affordance schema with language, masks, and object-centric 3D motion labels. We evaluate ourmodel from three aspects: for affordance segmentation, ourmodel outperforms all baselines by a large margin across 8 test sets from 4 benchmarks, improving mean gIoU/cIoU by +23.9/+26.3; for contact-point prediction, it predicts substantially more accurate points, with a 12.7--61.3% hit-rate gain over the best baseline; and for 3D motion, it achieves the best performance on all three test sets. ourmodel can be deployed for real-world robot manipulation without finetuning for robot embodiment or using task-specific heuristics, demonstrating the ability to adapt to open-world affordance tasks. Project page: https://www.zhaoningwang.com/AFUN"
-  },
-  {
-    "title": "Permissive Safety Through Trusted Inference: Verifiable Belief-Space Neural Safety Filters for Assured Interactive Robotics",
-    "original_title": "Permissive Safety Through Trusted Inference: Verifiable Belief-Space Neural Safety Filters for Assured Interactive Robotics",
-    "link": "https://arxiv.org/abs/2606.02562",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.02562v1 Announce Type: new \nAbstract: Autonomous robots that interact with people must make safe and efficient decisions under human-induced uncertainty, such as their preferences, goals, competency, and willingness to cooperate. Safety filters are a popular approach for ensuring safety in interactive robotics, since their modular design separates safety from performance, allowing robots to operate safely around people with minimal impact on task efficiency. While traditional safety filters typically operate only in the physical space, neglecting the robot's ability to learn and adapt online, the recently proposed belief-space safety filter (BeliefSF) reasons about robot safety in closed-loop with runtime inference that actively reduces the robot's uncertainty online, thereby reducing conservativeness in filtering. However, providing formal safety guarantees for robots deploying BeliefSF remains a significant challenge due to errors in runtime inference and neural approximation of safety filters required to handle the high dimensionality of belief spaces. In this paper, we propose an algorithmic approach to certify high-probability safety of BeliefSF using conformal prediction, while explicitly accounting for the reliability of the robot's runtime inference module. Our method leverages the structure of belief-space safety filtering by focusing verification on a region where inference is expected to be reliable. It preserves the simplicity and sample complexity of standard conformal prediction, yet can certify a substantially less conservative safety filter. Through a simulated human-vehicle interaction benchmark, we show that our approach verifies a significantly more permissive belief-space safety filter than a standard conformal prediction baseline."
-  },
-  {
-    "title": "RoboDream: Compositional World Models for Scalable Robot Data Synthesis",
-    "original_title": "RoboDream: Compositional World Models for Scalable Robot Data Synthesis",
-    "link": "https://arxiv.org/abs/2606.02577",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.02577v1 Announce Type: new \nAbstract: Scaling robot learning requires large-scale, diverse demonstrations, yet real-world data collection via teleoperation remains prohibitively expensive and time-consuming. While video diffusion models offer a promising avenue for data scaling, existing generative approaches are often limited to superficial visual augmentation, or suffer from embodiment hallucinations that yield physically infeasible motions. We present a generalizable embodiment-centric world model that achieves scalable data generation by synthesizing photorealistic demonstrations with novel objects, in novel scenes, and from novel viewpoints. Our approach anchors generation to rendered robot motion while conditioning on explicit scene and object priors, effectively decoupling trajectory execution from environment synthesis. This formulation has the potential to unlock two powerful data scaling capabilities: (1) retrieval and rebirth, which repurposes existing trajectories into entirely new contexts without new motion data; and (2) prop-free teleoperation, where operators manipulate empty air and the model hallucinates the target objects and scene afterwards, eliminating reset time. We demonstrate with real-world experiments that our generated data consistently improves downstream policy performance and significantly reduces real-world data requirements across diverse manipulation tasks."
   }
 ]
