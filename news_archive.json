@@ -45,6 +45,15 @@
     "summary": "데이터 처리 방식 중 스트리밍(Streaming)과 배치(Batch)는 데이터가 컴퓨팅 단계로 이동할 준비가 되었는지 여부(completeness)를 핵심 쟁점으로 다룸. 이 과정에서 데이터를 실시간으로 처리할지, 아니면 데이터의 완전한 수집 후에 일괄적으로 처리할지 결정하는 것이 중요한 과제임."
   },
   {
+    "title": "Ubtech Robotics, U1 휴머노이드 예약 주문 13,300건 달성에도 불구하고 주가는 저점 부근에 머무름",
+    "original_title": "Ubtech Robotics’ U1 Humanoid Pre-Orders Top 13,300, But Stock Stays Stuck Near Lows as Delivery Te - Ad-hoc-news.de",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYTR4bHVMYjlwNjR5T1h5YXJSN2NfMEozT2Z1MHpORHQxa3hWZWRUSzIzakJiSFBtUTFvVHBoU3VEWGw4aDBDOW5BQXNoNDA5YU9PLVZJZ24ybjFBWC1vbHZEbjVSamlja2F6R1Z0TXJkQXR5LXVEZkVTeW5tTzdKS3JsLWNqdERsU1RUbV9ZVEtVR1dPOVdLQ2poaGgtS3JfeXp5Vkhzem9sTWNvRkhNczFWRndWM2Y0UXV1V0lFMjVVZw?oc=5",
+    "date": "2026-07-09 14:25",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Ubtech Robotics의 U1 휴머노이드 로봇이 13,300건의 높은 사전 예약 주문을 기록하며 높은 시장의 관심을 입증함. 다만, 기사는 제품의 실제 배송 일정과 물류 공급망 이슈를 주요 리스크 요인으로 지적함. 이로 인해 기업의 주가는 높은 수요에도 불구하고 저가권 부근에서 움직임이 정체된 상황임."
+  },
+  {
     "title": "다 빈치를 넘어선 미래: 다재다능한 휴머노이드 로봇이 개척할 수술 분야",
     "original_title": "Beyond da Vinci: Why versatile humanoid robots are the next frontier in surgery",
     "link": "https://www.therobotreport.com/beyond-da-vinci-why-versatile-humanoid-robots-are-next-frontier-surgery/",
@@ -475,6 +484,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "기존 샘플링 기반 MPC가 모델-플랜트 불일치에 적응하지 못하는 고정 제약 페널티를 사용하는 문제점을 해결하기 위해, 잔차(residual)를 활용하여 온라인으로 안전 보수성을 조절하는 RC-MPPI 프레임워크를 제시함. 본 방법은 잔차 의존적 제약 강화, 적응형 안전 비용 형성, 잔차 적응 샘플링 변조의 세 가지 결합 메커니즘을 통해 안전성을 확보함. 이를 통해 LTI 시스템 및 2R 매니퓰레이터 시뮬레이션에서 기존 MPPI 대비 우수한 안전 마진과 제어 효율성이 입증됨."
+  },
+  {
+    "title": "객체 중심 신경장을 활용한 시연 기반 구성적 모션 생성",
+    "original_title": "Compositional Motion Generation from Demonstration with Object-Centric Neural Fields",
+    "link": "https://arxiv.org/abs/2607.07129",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 객체 중심의 신경 표현(Neural Fields)을 통해 환경 인식을 수행하고, 시공간적 MoE(Mixture-of-Experts)를 이용해 움직임 프리미티브(movement primitives)를 결합하는 생성 학습 프레임워크를 제시함. 이 구조는 동작을 시각적 구조에 근거하여 구성적으로 모델링함으로써, 시스템의 데이터 효율성을 유지하고 광범위한 환경 변화에 대한 체계적인 일반화가 가능함을 입증함. 시뮬레이션은 물론 실제 환경에서의 장기 조작(long-horizon manipulation) 작업에서 잡음 및 범주 레벨의 일반화 능력을 성공적으로 구현함."
   },
   {
     "title": "UMA, 차세대 휴머노이드 로봇 비전 공개함",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.01865v1 Announce Type: new \nAbstract: Diffusion policies have recently emerged as a powerful framework for robotic manipulation. However, like other behavior cloning methods, they remain vulnerable to distributional shift, often requiring human-in-the-loop interventions to correct failures during deployment. These interactions naturally provide paired supervision in the form of the robot's undesired actions and the human teacher's corrective actions. Yet existing data aggregation pipelines and standard behavior cloning losses largely ignore this negative signal from undesired actions, leading to overfitting to teacher's actions and an increasing reliance on costly expert data. To address this limitation, we propose Set-Supervised Diffusion Policy (SDP), a novel learning framework that utilizes contrastive action-chunk data to train diffusion policies from human corrections. From paired positive and negative action-chunks, SDP constructs a set of desired action-chunks and designs a training pipeline that encourages the diffusion policy to align with the set. Through extensive experiments across multiple robotic manipulation tasks, we demonstrate that SDP consistently improves policy performance, with particularly strong gains in robustness to noisy data. Moreover, SDP induces high-quality aggregated datasets, enabling more efficient and reliable policy learning from human-in-the-loop corrections. Our code is available at https://set-supervised-diffusion-policy.github.io/."
-  },
-  {
-    "title": "Learning Action-Conditional and Object-Centric Gaussian Splatting World Models for Rigid Objects",
-    "original_title": "Learning Action-Conditional and Object-Centric Gaussian Splatting World Models for Rigid Objects",
-    "link": "https://arxiv.org/abs/2606.01950",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.01950v1 Announce Type: new \nAbstract: World models enable intelligent agents to predict the consequences of their actions on the environment. In this paper, we propose Multi Rigid Object Gaussian World Model (MRO-GWM), a novel model that learns action-conditional dynamics of rigid objects in 3D. By representing the scene by object-centric Gaussians, we can represent arbitrary object shapes and multi-object scenes. We develop a novel spatio-temporal transformer architecture that predicts future rigid body motion from a history of object Gaussians and future actions. Objects are represented by their Gaussians in a canonical frame, which allows for describing object motion as rigid body transformation. Our model is trained on reconstructions from multiple viewpoints, which requires the model to handle partial observations of objects due to occlusions. We analyze prediction performance of our approach on synthetic datasets composed of typical household objects with multi-object dynamics and interactions by a robot end effector. We also evaluate our model in model-predictive control for non-prehensile manipulation in simulation."
-  },
-  {
-    "title": "Co-training with Ego-centric Video and Demonstration for Robot Navigation Task",
-    "original_title": "Co-training with Ego-centric Video and Demonstration for Robot Navigation Task",
-    "link": "https://arxiv.org/abs/2606.01951",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.01951v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models are promising for diverse robotic tasks, but their performance heavily depends on large-scale high-quality training data, whose collection on real robots is costly and time-consuming. While prior work has explored augmenting manipulation datasets with egocentric human videos, applying such approaches to mobile robot navigation remains challenging due to viewpoint changes during locomotion. In this paper, we propose a framework that converts egocentric walking videos into datasets for mobile robot imitation learning. The proposed method estimates camera motion from human videos and transforms it into action representations compatible with ground mobile robots. By jointly training a VLA model on human-derived and robot-collected datasets, the model achieves improved language understanding and more robust action generation than training with either data source alone. Experiments on a fruit-search navigation task demonstrate that human egocentric videos provide an effective and scalable data source for mobile robot learning."
   }
 ]
