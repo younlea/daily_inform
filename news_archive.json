@@ -1,5 +1,23 @@
 [
   {
+    "title": "새 모양 로봇, 물속 수영 후 패들링 없이 비행함",
+    "original_title": "Birdlike robot swims underwater, then flaps into flight without paddling",
+    "link": "https://techxplore.com/news/2026-07-birdlike-robot-underwater-flight.html",
+    "date": "2026-07-09 18:00",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "수리부엉이, 갈매기, 퍼핀 등 100여 종의 새들이 비행과 수영이 모두 가능한 능력을 보유함. 이 잠수하는 새들은 사냥감을 쫓기 위해 물속으로 잠수했다가, 다시 공중으로 도약하여 비상하는 습성을 지니고 있음."
+  },
+  {
+    "title": "로봇 스타트업 대상 모집: RoboBusiness 스타트업 알리 참가 신청 요망",
+    "original_title": "Calling all robotics startups: apply to RoboBusiness Startup Alley",
+    "link": "https://www.therobotreport.com/calling-all-robotics-startups-apply-to-robobusiness-startup-alley/",
+    "date": "2026-07-09 17:53",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "RoboBusiness에서 전시할 로봇 스타트업의 참여를 모집함. 참가 기업은 풀 시스템, 특정 구성 요소, 또는 소프트웨어 시스템 등 완성된 기술 개발 결과물 제시가 필요함."
+  },
+  {
     "title": "Rollon, 자석 통합형 텔레스코픽 레일 두 종 출시",
     "original_title": "Rollon launches two telescopic rails with integrated magnets",
     "link": "https://www.therobotreport.com/rollon-launches-two-telescopic-rails-integrated-magnets/",
@@ -52,6 +70,15 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "Siemens가 Databricks 및 FFT와 새로운 edge-to-cloud 통합을 발표하며, 복잡한 IoT 미들웨어 없이 생산 데이터를 엔터프라이즈 AI에 직접 연결하는 시스템 구축함. 이는 산업 고객들이 생산 데이터를 실질적인 인사이트로 전환하고 산업 AI를 글로벌 규모로 확장하는 데 도움을 주는 것이 목적임."
+  },
+  {
+    "title": "체화된 정밀 조작을 위한 진화형 폐쇄 루프 개척: Proception, 1,100만 달러 시드 펀딩 확보함",
+    "original_title": "Unlocking Evolutionary Closed-Loop for Embodied Fine Manipulation: Proception Secures $11M Seed Round Funding - 36Kr",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBDNDBrUmtja0pacFB6YUVhb05nOVpORmdMeHFDZkwwX0N6aXpyam5ncVByTXdJVzFUYjU3dUZqMFpaVWNKdjBVdHFoSnZySTBuTk40?oc=5",
+    "date": "2026-07-09 11:03",
+    "source": "Google News (Global Hand/Gripper)",
+    "category": "hand",
+    "summary": "Proception이 체화된 정밀 조작(Embodied Fine Manipulation) 분야의 기술 혁신을 목표로 함. 회사는 진화형 폐쇄 루프(Evolutionary Closed-Loop) 기술 개발에 필요한 자금으로 총 1,100만 달러의 시드 라운드 투자를 유치함. 이번 자금 확보를 통해 로봇의 환경 상호작용 기반의 더욱 고도화된 움직임 구현을 가속화할 전망임."
   },
   {
     "title": "Unitree와 UBTECH 중심, 2026년 중국 휴머노이드 로봇의 실제 상업화 돌파구 전망",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.02027v1 Announce Type: new \nAbstract: Robot learning must produce policies that generalize to new combinations of constraints, teammates, and environments. To achieve this, we must structurally factor the policy, which is a choice that dictates what generalizes, what requires retraining, and what remains entangled. Existing methods span a wide spectrum, from expecting structure to emerge from data scaling, to hand-designing it via hierarchies, skill libraries or learned specializations. In this paper, we study what we argue is the most fundamental factorization in robotics: separating the world from the task. We investigate the conditions under which this factorization is principled. World factors are properties of the embodied system and the environment; they exist independently of intent. Task factors are defined by the task's logic over what the world admits. We formalize this asymmetry through Bayesian model evidence: it aligns with the data-generating process, maintains high likelihood through an analytical world model, and reduces the Occam razor's penalty on task parameters. We instantiate this factorization by pairing AICON, a differentiable graph of recursive estimators and interconnections that is compositional, operates without task-specific data, and propagates cost gradients to actuators, with a compact, learned policy that modulates gradient paths. Gradients serve as the interface between the two factors: they carry world structure through the graph and task structure through costs, enabling low-dimensional learning while preserving structural generalization. We test the world/task factorization across three problems that encompass heterogeneous robots, environments, task logic and sensorimotor modalities. Our framework outperforms end-to-end baselines and analytical heuristics in all settings, generalizes zero-shot to out-of-distribution configurations, and transfers to real hardware without retraining."
-  },
-  {
-    "title": "Dexterity-BEV: Aligning 3D World and Actions for Generalizable Robot Policies Learning",
-    "original_title": "Dexterity-BEV: Aligning 3D World and Actions for Generalizable Robot Policies Learning",
-    "link": "https://arxiv.org/abs/2606.02274",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.02274v1 Announce Type: new \nAbstract: End-to-end manipulation policies, combined with web-scale pretrained Vision-Language Models (VLMs), show the promise for generalizable and dexterous robotic manipulation. However, they inherit two key limitations from 2D foundation models: 1) the reliance on 2D RGB inputs that ignores the intrinsically 3D nature of manipulation; and 2) the lack of spatial 3D alignment between input-output spaces as well as across diverse robot embodiments, camera setups, and trajectory datasets. In this paper, we present a series of contributions to address these issues. First, we introduce aligned vertex map and vertex spectrum -- a pixel-wise 3D representation that elevates 2D visual inputs to 3D, using camera calibration and optional depth. This novel input representation marries 3D awareness with the generalization of 2D large VLMs. Then, we propose to align the inputs and outputs of manipulation policies by expressing per-pixel 3D information of each camera view and robot actions to a shared coordinate. Based on this, we designate a canonical Bird's-Eye-View (BEV) alignment frame and innovatively propose to construct BEV images, producing a view-invariant representation robust to camera pose variations. To enable training and evaluation at scale, we develop a comprehensive data processing pipeline to perform such alignments; we also introduce a novel temporal alignment scheme for trajectories across diverse robots, human operators, and datasets. These contributions collectively mitigate input and output spatial-temporal misalignments, improving the consistency and generalization for real-world manipulation. Pretrained checkpoint, source code and data processing pipeline are available in https://hnuzhy.github.io/projects/Dex-BEV."
-  },
-  {
-    "title": "NDPP-Grasp: Non-Differentiable Physical Plausibility Constraint-Guided Task-Oriented Dexterous Grasp Generation",
-    "original_title": "NDPP-Grasp: Non-Differentiable Physical Plausibility Constraint-Guided Task-Oriented Dexterous Grasp Generation",
-    "link": "https://arxiv.org/abs/2606.02432",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.02432v1 Announce Type: new \nAbstract: Task-oriented dexterous grasp generation aims to produce dexterous grasp poses that are both physically plausible and functionally suitable for specified manipulation tasks. Existing diffusion-based methods often address these two requirements in a decoupled manner: they first train a grasp diffusion model for task alignment and then rely on post-generation refinement to improve physical plausibility. However, this after-the-fact correction strategy applies physical plausibility guidance only once the grasp has already been generated, leaving the generation trajectory itself unguided by physical constraints and potentially leading to suboptimal grasps. To address this problem, we propose a novel framework that directly injects physical plausibility guidance into the denoising process of a task-aligned grasp diffusion model in a practical and effective manner, even when physical plausibility constraints are non-differentiable. This allows physical plausibility to shape grasp generation throughout denoising while preserving task alignment. Extensive experiments demonstrate the efficacy of our framework."
-  },
-  {
-    "title": "Intercepting the Future: Latent-Space Predictive World Model for Dynamic VLA Manipulation",
-    "original_title": "Intercepting the Future: Latent-Space Predictive World Model for Dynamic VLA Manipulation",
-    "link": "https://arxiv.org/abs/2606.02486",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.02486v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models generalize across static manipulation but fail when objects move during task execution. They map the current observation to an action and assume the scene is stationary between observation and execution, so at any non-trivial object speed the resulting latency exceeds the time available to grasp. We close this gap with AHEAD (Anticipatory Horizon Extrapolation with Adaptive Dynamics), a predict-then-act wrapper that augments a frozen VLA with a motion-aware latent world model. A small world model trained on manipulation video forecasts future patch tokens in the VLA's feature space, conditioned on per-token velocity and acceleration from optical flow. A language-and-motion saliency mask concentrates prediction on task-relevant patches, and the model rolls forward for an adaptive horizon, halting when prediction uncertainty crosses a threshold. The frozen action decoder then receives the predicted future tokens in place of the current ones. AHEAD adds 4.9M parameters to a frozen 7B OpenVLA and reaches 79 to 97% success across 20 dynamic simulation scenarios where the strongest baseline reaches 31 to 58%. On a physical UFactory xArm 7, AHEAD succeeds on 29/30 to 30/30 on three conveyor and rolling-ball tasks, 23/30 on paddle interception, and 19/30 on projectile catching where every baseline scores 0/30."
   }
 ]
