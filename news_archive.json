@@ -396,6 +396,15 @@
     "summary": "범용 로봇의 안전성 논의가 동작이나 대화 측면에 국한되어, 로봇의 첫 사회적 행동에 대한 '개시 승인(initiation authorization)'이라는 필수 안전 차원이 누락되었음을 지적함. 논문은 단순한 관찰을 넘어 상대방의 명시적인 동의를 기반으로 로봇의 첫 행동을 통제할 별도의 안전 계층 마련이 필요하다고 주장함. 이에 따라 연구진은 Probe-Authorize-Speak(PAS) 프로토콜을 제안하고 이를 실제 휴머노이드 모델에 적용하는 연구를 진행함."
   },
   {
+    "title": "로봇 인터벤션 신경방사선학 시술 내비게이션 전략 비교: 수동, 조이스틱, 촉각 피드백의 성능 분석",
+    "original_title": "Manual, Joystick, or Haptic Control? An In Vitro Comparison of Navigation Strategies for Robotic Interventional Neuroradiology Procedures",
+    "link": "https://arxiv.org/abs/2607.07253",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 강도 감지 플랫폼을 활용하여 로봇 인터벤션 신경방사선학 시술의 다양한 컨트롤러 인터페이스를 내시험(in-vitro) 환경에서 평가함. 10명의 전문의를 대상으로 수동 조작이 가장 빠르며, Joystick 사용 시 합병증(prolapse events) 위험이 높게 나타남. Device-mimicking controller가 Joystick 인터페이스 대비 전반적인 지표에서 우수함을 입증했으나, Haptic feedback은 유의미한 성능 개선 효과를 보이지 않은 것으로 결론지음."
+  },
+  {
     "title": "UMA, 차세대 휴머노이드 로봇 비전 공개함",
     "original_title": "UMA Unveils Its Vision for the Next Generation of Humanoid Robots - 매일타임즈",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1mQTBNbDdvV3hGNjhMbU5VMy1tcXljZlg5V2t0aGtGZ20tbk56VzNGeklaQmx5eE1OTHhfaFJJYkd2cHRPSGRFTk91MDBTUE1idVdBQWpzVF9vaFR4VlE?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.00267v1 Announce Type: cross \nAbstract: Video world models (WMs) have shown promise for policy evaluation and improvement by imagining realistic future observations conditioned on ego-robot actions. While WMs can model distributions over futures, policy evaluation and improvement typically rely on nominal imaginations, which can miss high-impact outcomes of robot actions unless prohibitively many samples are drawn. To enable robust policy evaluation and improvement over WM imaginations, we propose StressDream, which steers imaginations toward high-impact yet plausible outcomes specified at inference time by optimizing the initial noise of diffusion-based WMs. However, optimizing high-dimensional noise is challenging: the optimization must reason about nuanced, scene-dependent target events in generated videos while avoiding out-of-distribution (OOD) noise that yields implausible imaginations. We address this with two complementary objectives: a semantic objective with a Vision-Language Model that provides informative gradients by reasoning about the generated video, and a plausibility objective that prevents the optimized noise from drifting OOD. With state-of-the-art video world models for autonomous driving and robotic manipulation, we show that StressDream effectively steers imaginations toward high-impact yet plausible outcomes specified by text at inference time, such as task failures, enabling robust policy evaluation and improvement by identifying actions whose plausible futures include undesirable outcomes. Video results are available at https://junwon.me/StressDream/."
-  },
-  {
-    "title": "Global Convergence of a Line-Search Filter Differential Dynamic Programming Method",
-    "original_title": "Global Convergence of a Line-Search Filter Differential Dynamic Programming Method",
-    "link": "https://arxiv.org/abs/2606.01487",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.01487v1 Announce Type: cross \nAbstract: In this article, we establish the global convergence properties of the FilterDDP algorithm, which extends the discrete-time differential dynamic programming (DDP) algorithm of Mayne and Jacobson [\\emph{International Journal of Control}, 3, (1966), pp. 85-95] to handle nonlinear constraints over states and controls, in addition to the dynamics. FilterDDP adopts a line-search filter procedure for step acceptance. However, instead of a damped Newton step applied in the general nonlinear programming setting, the computation of a trial point involves applying a backward recursion and a forward simulation. We establish the global convergence of FilterDDP by showing that for a subset of constrained optimal control problems, the this backward-forward procedure satisfies the same properties as a Newton step for the purpose of establishing global convergence of a line-search filter method, following the analysis of W\\\"achter and Biegler [\\emph{SIAM Journal on Optimization}, 16 (2005), pp. 1-31]."
   }
 ]
