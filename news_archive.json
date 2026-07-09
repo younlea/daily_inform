@@ -1,5 +1,14 @@
 [
   {
+    "title": "다 빈치를 넘어선 미래: 다재다능한 휴머노이드 로봇이 개척할 수술 분야",
+    "original_title": "Beyond da Vinci: Why versatile humanoid robots are the next frontier in surgery",
+    "link": "https://www.therobotreport.com/beyond-da-vinci-why-versatile-humanoid-robots-are-next-frontier-surgery/",
+    "date": "2026-07-09 12:30",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "UC San Diego의 전임상 시험에서 원격 제어(teleoperated) 휴머노이드 로봇이 수술을 성공적으로 수행한 사례가 보고됨. 이는 로봇 수술 분야의 중요한 진전을 의미하며, 다용도 휴머노이드 로봇이 차세대 수술의 핵심 기술로 부상하고 있음을 보여줌."
+  },
+  {
     "title": "Intrinsic의 물리적 AI 비전: 소프트웨어 정의 공장 구축",
     "original_title": "Intrinsic’s vision for physical AI: Building the software-defined factory",
     "link": "https://roboticsandautomationnews.com/2026/07/09/intrinsics-vision-for-physical-ai-building-the-software-defined-factory/103211/",
@@ -376,6 +385,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "기존 모방 학습 기반 로봇 매니퓰레이션 정책은 근본적인 의도보다는 표면적인 행동 상관관계에 의존하여 일반화에 어려움이 있음. 이에 연구진은 적응형 로봇 매니퓰레이션을 위해 원시 요소(primitive) 안내 기반의 테스트 시간 적응 프레임워크인 PriGo를 제안함. PriGo는 PANet을 활용해 원시 분포를 추론하고, 미분 가능한 안내 메커니즘을 테스트 시간에 적용함으로써 재학습 없이도 로봇의 강건성 및 장기 실행 능력 향상을 입증함."
+  },
+  {
+    "title": "범용 로봇 안전성에서 간과되는 개시(Initiation) 안전성",
+    "original_title": "Initiation Safety: A Missing Dimension in Generalist-Robot Safety",
+    "link": "https://arxiv.org/abs/2607.07420",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "범용 로봇의 안전성 논의가 동작이나 대화 측면에 국한되어, 로봇의 첫 사회적 행동에 대한 '개시 승인(initiation authorization)'이라는 필수 안전 차원이 누락되었음을 지적함. 논문은 단순한 관찰을 넘어 상대방의 명시적인 동의를 기반으로 로봇의 첫 행동을 통제할 별도의 안전 계층 마련이 필요하다고 주장함. 이에 따라 연구진은 Probe-Authorize-Speak(PAS) 프로토콜을 제안하고 이를 실제 휴머노이드 모델에 적용하는 연구를 진행함."
   },
   {
     "title": "UMA, 차세대 휴머노이드 로봇 비전 공개함",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.01487v1 Announce Type: cross \nAbstract: In this article, we establish the global convergence properties of the FilterDDP algorithm, which extends the discrete-time differential dynamic programming (DDP) algorithm of Mayne and Jacobson [\\emph{International Journal of Control}, 3, (1966), pp. 85-95] to handle nonlinear constraints over states and controls, in addition to the dynamics. FilterDDP adopts a line-search filter procedure for step acceptance. However, instead of a damped Newton step applied in the general nonlinear programming setting, the computation of a trial point involves applying a backward recursion and a forward simulation. We establish the global convergence of FilterDDP by showing that for a subset of constrained optimal control problems, the this backward-forward procedure satisfies the same properties as a Newton step for the purpose of establishing global convergence of a line-search filter method, following the analysis of W\\\"achter and Biegler [\\emph{SIAM Journal on Optimization}, 16 (2005), pp. 1-31]."
-  },
-  {
-    "title": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation",
-    "original_title": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2606.01600",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.01600v1 Announce Type: cross \nAbstract: Video world models are increasingly used in robotic manipulation, yet existing benchmarks mostly evaluate them under valid, feasible, and safe instructions. We introduce RoboTrustBench, a benchmark for evaluating the trustworthiness of video world models under four scenarios: Normal, Constraint-Sensitive, Counterfactual, and Adversarial. Built from real-world DROID episodes, RoboTrustBench contains 1,207 expert-validated instruction-image pairs and a six-dimensional evaluation protocol with 13 fine-grained criteria. Evaluating seven representative video world models with human and MLLM assessment, we find that current models often generate visually coherent videos, but struggle with constraint reasoning, counterfactual grounding, physical interaction, and unsafe-instruction suppression. These results show that visual quality and surface-level instruction following are insufficient for trustworthy robotic video world modeling."
-  },
-  {
-    "title": "GIFT: Geometry-Induced Functional Transfer for Category-level Object Manipulation",
-    "original_title": "GIFT: Geometry-Induced Functional Transfer for Category-level Object Manipulation",
-    "link": "https://arxiv.org/abs/2503.15371",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2503.15371v2 Announce Type: replace \nAbstract: Robotic manipulation of unfamiliar objects in new environments is challenging due to limited generalisation capabilities. We propose a new skill transfer framework, GIFT (Geometry-Induced Functional Transfer), which enables a robot to transfer complex object manipulation skills and constraints from a single human demonstration. Our approach addresses the challenge of skill acquisition and task execution by deriving geometric representations from demonstrations focusing on object-centric interactions. By leveraging the Functional Maps (FMC) framework, we efficiently map interaction functions between objects and their environments, allowing the robot to replicate task operations across objects of similar topologies or categories, even when they have significantly different shapes. Additionally, our method incorporates screw interpolation (ScLERP) for generating smooth, geometrically-aware robot paths to ensure the transferred skills adhere to the demonstrated task constraints. We validate the effectiveness and adaptability of our approach through extensive experiments, demonstrating successful skill transfer and task execution in diverse real-world environments without requiring additional training."
   }
 ]
