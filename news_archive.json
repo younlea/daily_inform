@@ -1,5 +1,14 @@
 [
   {
+    "title": "로비안트, 업그레이드된 LingBot-VLA 2.0 공개",
+    "original_title": "Robbyant Announces Upgraded LingBot-VLA 2.0",
+    "link": "https://humanoidroboticstechnology.com/industry-news/robbyant-announces-upgraded-lingbot-vla-2-0/",
+    "date": "2026-07-09 07:24",
+    "source": "Humanoid Tech Blog",
+    "category": "humanoid",
+    "summary": "Robbyant가 오픈소스로 차세대 비전-언어-액션(VLA) 모델인 LingBot-VLA 2.0을 발표함. 이 모델은 기존 LingBot-VLA 1.0의 기반을 확장하여 형태 일반화(morphological generalization), 자유도(DoF) 지원, 배포 효율성 등 여러 면에서 비약적인 발전을 이룸. 이를 통해 실제 세계 로봇공학에 적용 가능한 고도화된 '범용 뇌(universal brain)'를 제공하는 것이 목표임."
+  },
+  {
     "title": "무인 항공 로봇 및 양팔 조작에 활용되는 VLA 모델 분석: 리뷰",
     "original_title": "Vision Language Action (VLA) Models for Unmanned Aerial Robotics and Bimanual Manipulation: A Review",
     "link": "https://arxiv.org/abs/2607.06706",
@@ -223,6 +232,24 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "본 연구는 체계적인 조명 변화 조건 하의 실제 로봇 조작 에피소드를 포착한 최초의 데이터셋인 RoboLight를 공개함. RoboLight는 2,800개의 실제 데이터를 담은 RoboLight-Real(색상, 방향, 강도 3차원 변화)과, 이를 기반으로 196,000개의 에피소드를 합성한 RoboLight-Synthetic로 구성됨. 이 데이터셋은 광학적 선형성(linearity of light transport)을 활용하여 조명 변화에 따른 로봇 인식 난이도와 분포 다양성을 극대화하였으며, 전체 시스템은 오픈 소스로 배포될 예정임."
+  },
+  {
+    "title": "SPECTRA: 로봇 스킬 일반화를 위한 문맥 조건부 스펙트럴 동작 원시 요소",
+    "original_title": "SPECTRA: Context-Conditioned Spectral Movement Primitives for Robot Skill Generalization",
+    "link": "https://arxiv.org/abs/2607.06978",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 로봇 모방 학습이 필터링 등으로 인해 작업 필수 경로를 왜곡하는 문제점을 해결하기 위해, Spectral Movement Primitive (SMP)라는 주파수 영역 기반 프레임워크를 제안함. SMP는 작업 공간의 스킬 생성과 관절 공간의 실행 규제를 결합하여 운동의 기하학적 구조를 파악하고, 관절 동역학적 제약 조건을 만족시키면서도 종단 효과기 경로를 보존함. 실험을 통해 복합적인 데이터 손상에 대한 강인성과 미지의 작업 환경으로의 일반화 능력, 그리고 로봇 팔(Franka Panda)에서의 성공적인 적용이 입증됨."
+  },
+  {
+    "title": "온보드 비전-언어 모델 기반 다중 에이전트 로봇 제어 기술 개발",
+    "original_title": "Multi-Agent Robotic Control with Onboard Vision-Language Models",
+    "link": "https://arxiv.org/abs/2607.07403",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 로봇 제어의 한계였던 VLM/VLA 모델의 외부 컴퓨팅 의존성 문제를 해결하기 위해 온보드 하드웨어에 특화된 다중 에이전트 시스템(MAS) 아키텍처를 제시함. 이 시스템은 AMD Ryzen AI mini PC 기반 시뮬레이션에서 자율 이동 매니퓰레이터를 제어하며, 안전 점검, 물류 창고 유지보수 등 5가지 임무 수행이 검증됨. 그 결과, 클라우드 기반 배포를 대체할 수 있는 온보드 MAS 아키텍처의 실효성과 비용 효율성이 입증되었으며, 오픈 소스로 공개됨."
   },
   {
     "title": "UMA, 차세대 휴머노이드 로봇 비전 공개함",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2603.09292v2 Announce Type: replace \nAbstract: Measurement of task progress through explicit, actionable milestones is critical for robust robotic manipulation. This progress awareness enables a model to ground its current task status, anticipate verifiable intermediate states, and detect and recover from failures when progress stalls. To embody this capability, we introduce \\textbf{S}ee, \\textbf{P}lan, \\textbf{R}ewind (SPR), a progress-aware vision-language-action framework that dynamically grounds language instructions into a sequence of spatial subgoals. SPR operates through a continuous core cycle, Seeing the current state and upcoming milestone, Planning a trajectory towards the next 2D waypoint, and Rewinding to a recoverable state upon failure by monitoring progress against the expected sequence. This closed-loop approach enables robust error correction without requiring additional training data or auxiliary models. Extensive experiments demonstrate the framework's effectiveness, generalization and robustness: SPR outperforms the MolmoAct baseline by 5\\% on the LIBERO benchmark. On the challenging LIBERO-Plus benchmark with unseen instructions and initial states, SPR achieves state-of-the-art robustness with the smallest performance drop, surpassing OpenVLA-OFT and UniVLA, demonstrating superior out-of-distribution robustness."
-  },
-  {
-    "title": "Update-Free On-Policy Steering via Verifiers",
-    "original_title": "Update-Free On-Policy Steering via Verifiers",
-    "link": "https://arxiv.org/abs/2603.10282",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.10282v2 Announce Type: replace \nAbstract: In recent years, Behavior Cloning (BC) has become one of the most prevalent methods for learning manipulation from human demonstrations. Despite their successes, BC policies are often brittle and struggle with precise manipulation. To overcome these issues, we propose UF-OPS, an Update-Free On-Policy Steering method that enables the robot to predict the success likelihood of its actions and adapt its strategy at execution time. We accomplish this by training verifier functions using policy rollout data obtained during an initial evaluation of the policy. These verifiers are subsequently used to steer the base policy toward actions with a higher likelihood of success. Our method improves the performance of black-box diffusion policies, without changing the base parameters, making it lightweight and flexible. We present results from both simulation and real-world data and achieve an average 49% improvement in success rate over the base policy across 5 real tasks."
-  },
-  {
-    "title": "MiNI-Q: A Miniature, Wire-Free Quadruped with Unbounded, Independently Actuated Leg Joints",
-    "original_title": "MiNI-Q: A Miniature, Wire-Free Quadruped with Unbounded, Independently Actuated Leg Joints",
-    "link": "https://arxiv.org/abs/2603.11537",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2603.11537v2 Announce Type: replace \nAbstract: Physical joint limits are common in legged robots and can restrict workspace, constrain gait design, and increase the risk of hardware damage. This paper introduces MiNI-Q^2, a miniature, wire-free quadruped robot with independently actuated, mechanically unbounded 2-DOF leg joints. We present the mechanical design, kinematic analysis, and experimental validation of the proposed robot. The leg mechanism enables both oscillatory gaits and rotary locomotion while allowing the robot to fold to a minimum height of 2.5 cm. Experimentally, MiNI-Q achieves speeds up to 0.46 m/s and demonstrates low-clearance crawling, stair climbing, inverted locomotion, jumping, and backflipping. The wire-free architecture extends our previous Q8bot design, improving assembly reliability at miniature scale. All mechanical and electrical design files are released open source to support reproducibility and further research."
-  },
-  {
-    "title": "URDF-Anything+: End-to-End Generation for Simulation-Ready Articulated Assets",
-    "original_title": "URDF-Anything+: End-to-End Generation for Simulation-Ready Articulated Assets",
-    "link": "https://arxiv.org/abs/2603.14010",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.14010v2 Announce Type: replace \nAbstract: Articulated objects are fundamental for robotics, simulation of physics, and interactive virtual environments. However, recovering them from visual observations is inherently challenging, as images provide only partial and ambiguous cues about both part geometry and their underlying kinematic structure. Existing approaches typically rely on multi-stage pipelines, retrieval from asset libraries, or explicit part segmentation. We present URDF-Anything+, an end-to-end autoregressive diffusion framework that generates simulation-ready URDF models directly from a single RGB image. Conditioned on visual observations and object geometry, URDF-Anything+ operates in a structured latent space and jointly models part geometry and articulation in a unified generation process. Specifically, the model sequentially predicts each articulated part together with its associated joint parameters, while a termination token dynamically determines the number of parts. This design enables direct generation of fully executable URDFs without external retrieval or post-processing stages. Experiments on large-scale articulated object benchmarks demonstrate that URDF-Anything+ outperforms prior methods in geometric reconstruction quality, joint parameter estimation, and physical executability, while being substantially more efficient than existing multi-stage approaches. Furthermore, the generated URDFs serve as faithful digital twins, enabling the zero-shot transfer of manipulation policies trained purely in simulation."
   }
 ]
