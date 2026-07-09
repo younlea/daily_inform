@@ -189,6 +189,42 @@
     "summary": "복잡한 3D 환경에서의 휴머노이드 전신 조작의 어려움을 극복하고자, 능동적 공간 인식(Active Spatial Brain)과 행동 일반화(Generalizable Action Cerebellum)를 결합한 로코-매니퓰레이션 프레임워크를 제안함. 해당 프레임워크는 첫 번째 모듈이 공간 인식 및 태스크 계획을 담당하고, 두 번째 모듈이 별도의 데이터 없이 실행 가능한 로봇 동작을 생성하여, 다양한 환경에서 강력한 성능을 입증함."
   },
   {
+    "title": "NativeMEM: 장기 이력(Long-Horizon)을 위한 네이티브 메모리 압축 기반 로보틱 매니퓰레이션",
+    "original_title": "NativeMEM: Native Memory Compression for Long-Horizon Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2607.06678",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 VLA(Vision-Language-Action) 모델이 효율적으로 장기 시각 히스토리 업데이트를 유지하는 데 어려움이 있었음. 이에 본 연구는 VLA 자체의 vision encoder를 활용하여 과거 프레임을 토큰으로 압축하는 Native Memory Compression 기법을 적용한 NativeMEM을 제시함. 이 방식을 통해 외부 메모리 관리 없이도 장기 이력에 효과적으로 주의를 기울일 수 있으며, 시뮬레이션에서 84.0%, 실제 로봇에서 98.7%에 달하는 높은 성공률을 기록하고 뛰어난 데이터 효율성을 입증함."
+  },
+  {
+    "title": "로봇 매니퓰레이션을 위한 비전-언어-행동 모델의 이중 잠재 메모리 구현",
+    "original_title": "Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2607.07608",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 VLA(Vision-Language-Action) 모델은 장기 의존적 과제 해결에 어려움이 있었으며, 본 연구는 이를 해결하기 위해 역사적 경험을 잠재 메모리 토큰으로 재구성하는 LaMem-VLA 프레임워크를 제시함. LaMem-VLA는 Curator, Seeker, Condenser, Weaver 등 네 가지 구성 요소를 통해 기억을 핵심 잠재 공간에 통합하며, 이를 현재 관찰 및 명령어와 결합하여 VLA 추론 과정에 직접 참여시킴으로써 행동 생성 능력을 크게 향상시키는 방식임."
+  },
+  {
+    "title": "GrandTour: 다중 모드 지각 및 상태 추정을 위한 실환경 사족 보행 로봇 데이터셋",
+    "original_title": "GrandTour: A Legged Robotics Dataset in the Wild for Multi-Modal Perception and State Estimation",
+    "link": "https://arxiv.org/abs/2602.18164",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "자율 사족 보행 로봇의 복잡한 실환경 운용을 위한 대규모 공개 데이터셋이 필요함에 따라 GrandTour가 공개됨. ANYbotics ANYmal-D를 이용해 알프스, 숲, 도시 등 다양한 환경에서 수집된 이 데이터셋은 LiDAR, RGB 카메라, RTK-GNSS 등 시간 동기화된 다중 센서 정보를 포함하고 있음. 이는 SLAM, 고정밀 상태 추정, 다중 모드 학습 등 로보틱스 분야의 엄격한 평가 및 연구 개발을 지원하는 최대 규모의 오픈 액세스 자원임."
+  },
+  {
+    "title": "RoboLight: 로봇 매니퓰레이션을 위한 선형 결합 조명 데이터셋",
+    "original_title": "RoboLight: A Dataset with Linearly Composable Illumination for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2603.04249",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 체계적인 조명 변화 조건 하의 실제 로봇 조작 에피소드를 포착한 최초의 데이터셋인 RoboLight를 공개함. RoboLight는 2,800개의 실제 데이터를 담은 RoboLight-Real(색상, 방향, 강도 3차원 변화)과, 이를 기반으로 196,000개의 에피소드를 합성한 RoboLight-Synthetic로 구성됨. 이 데이터셋은 광학적 선형성(linearity of light transport)을 활용하여 조명 변화에 따른 로봇 인식 난이도와 분포 다양성을 극대화하였으며, 전체 시스템은 오픈 소스로 배포될 예정임."
+  },
+  {
     "title": "UMA, 차세대 휴머노이드 로봇 비전 공개함",
     "original_title": "UMA Unveils Its Vision for the Next Generation of Humanoid Robots - 매일타임즈",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1mQTBNbDdvV3hGNjhMbU5VMy1tcXljZlg5V2t0aGtGZ20tbk56VzNGeklaQmx5eE1OTHhfaFJJYkd2cHRPSGRFTk91MDBTUE1idVdBQWpzVF9vaFR4VlE?oc=5",
@@ -17962,41 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2603.14010v2 Announce Type: replace \nAbstract: Articulated objects are fundamental for robotics, simulation of physics, and interactive virtual environments. However, recovering them from visual observations is inherently challenging, as images provide only partial and ambiguous cues about both part geometry and their underlying kinematic structure. Existing approaches typically rely on multi-stage pipelines, retrieval from asset libraries, or explicit part segmentation. We present URDF-Anything+, an end-to-end autoregressive diffusion framework that generates simulation-ready URDF models directly from a single RGB image. Conditioned on visual observations and object geometry, URDF-Anything+ operates in a structured latent space and jointly models part geometry and articulation in a unified generation process. Specifically, the model sequentially predicts each articulated part together with its associated joint parameters, while a termination token dynamically determines the number of parts. This design enables direct generation of fully executable URDFs without external retrieval or post-processing stages. Experiments on large-scale articulated object benchmarks demonstrate that URDF-Anything+ outperforms prior methods in geometric reconstruction quality, joint parameter estimation, and physical executability, while being substantially more efficient than existing multi-stage approaches. Furthermore, the generated URDFs serve as faithful digital twins, enabling the zero-shot transfer of manipulation policies trained purely in simulation."
-  },
-  {
-    "title": "ExpertGen: Scalable Sim-to-Real Expert Policy Learning from Imperfect Behavior Priors",
-    "original_title": "ExpertGen: Scalable Sim-to-Real Expert Policy Learning from Imperfect Behavior Priors",
-    "link": "https://arxiv.org/abs/2603.15956",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.15956v3 Announce Type: replace \nAbstract: Learning generalizable and robust behavior cloning policies requires large volumes of high-quality robotics data. While human demonstrations (e.g., through teleoperation) serve as the standard source for expert behaviors, acquiring such data at scale in the real world is prohibitively expensive. This paper introduces ExpertGen, a framework that automates expert policy learning in simulation to enable scalable sim-to-real transfer. ExpertGen first initializes a behavior prior using a diffusion policy trained on imperfect demonstrations, which may be synthesized by large language models or provided by humans. Reinforcement learning is then used to steer this prior toward high task success by optimizing the diffusion model's initial noise while keep original policy frozen. By keeping the pretrained diffusion policy frozen, ExpertGen regularizes exploration to remain within safe, human-like behavior manifolds, while also enabling effective learning with only sparse rewards. Empirical evaluations on challenging manipulation benchmarks demonstrate that ExpertGen reliably produces high-quality expert policies with no reward engineering. On industrial assembly tasks, ExpertGen achieves a 90.5% overall success rate, while on long-horizon manipulation tasks it attains 85% overall success, outperforming all baseline methods. The resulting policies exhibit dexterous control and remain robust across diverse initial configurations and failure states. To validate sim-to-real transfer, the learned state-based expert policies are further distilled into visuomotor policies via DAgger and successfully deployed on real robotic hardware."
-  },
-  {
-    "title": "AffordGen: Generating Diverse Demonstrations for Generalizable Object Manipulation with Afford Correspondence",
-    "original_title": "AffordGen: Generating Diverse Demonstrations for Generalizable Object Manipulation with Afford Correspondence",
-    "link": "https://arxiv.org/abs/2604.10579",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2604.10579v2 Announce Type: replace \nAbstract: Despite the recent success of modern imitation learning methods in robot manipulation, their performance is often constrained by geometric variations due to limited data diversity. Leveraging powerful 3D generative models and vision foundation models (VFMs), the proposed AffordGen framework overcomes this limitation by utilizing the semantic correspondence of meaningful keypoints across large-scale 3D meshes to generate new robot manipulation trajectories. This large-scale, affordance-aware dataset is then used to train a robust, closed-loop visuomotor policy, combining the semantic generalizability of affordances with the reactive robustness of end-to-end learning. Experiments in simulation and the real world show that policies trained with AffordGen achieve high success rates and enable zero-shot generalization to truly unseen objects, significantly improving data efficiency in robot learning. Project Page: https://jiaweiz9.github.io/AffordGen-release/"
-  },
-  {
-    "title": "CART: Context-Aware Terrain Adaptation using Temporal Sequence Selection for Legged Robots",
-    "original_title": "CART: Context-Aware Terrain Adaptation using Temporal Sequence Selection for Legged Robots",
-    "link": "https://arxiv.org/abs/2604.14344",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2604.14344v2 Announce Type: replace \nAbstract: Animals in nature combine multiple modalities, such as sight and feel, to perceive terrain and develop an understanding of how to walk on uneven terrain in an efficient manner. Similarly, legged robots need to develop their ability to stably walk on complex terrains by developing an understanding of the relationship between vision and proprioception. Most current terrain-adaptation methods remain susceptible to failure on complex off-road terrain because they do not explicitly model the context between exteroceptive terrain appearance and proprioceptive physical interaction. This experience-based learning often creates a Visual-Texture Paradox between what has been seen and how it actually feels. In this work, we introduce CART, a high-level controller built on a context-aware terrain adaptation approach that integrates proprioception and exteroception from onboard sensing to achieve a robust understanding of terrain. We evaluate our method on multiple terrains using the Unitree Go2 and ANYmal-C robot on the IsaacSim simulator and a Boston Dynamics SPOT robot for our real-world experiments. To evaluate whether the learned context improves locomotion behavior under the various paradox circumstances, we measure the robot s stability, traversal success, and task completion time in both simulation and real-world experiments. We compare CART against state-of-the-art locomotion and terrain- adaptation baselines across diverse terrain conditions. CART improves the average success rate by 5% over the baselines in simulation, while improving context-conditioned locomotion behavior, including up to 41% lower base oscillation in simulation and 22% in the real world, without increasing the time required to complete the locomotion tasks."
-  },
-  {
-    "title": "Magnetic Indoor Localization through CNN Regression and Rotation Invariance",
-    "original_title": "Magnetic Indoor Localization through CNN Regression and Rotation Invariance",
-    "link": "https://arxiv.org/abs/2604.22896",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2604.22896v2 Announce Type: replace \nAbstract: Indoor positioning is an essential technology for a wide range of applications in GNSS-denied environments, including indoor navigation and IoT systems. Combining convolutional neural networks (CNNs) and magnetic field-based features offers a low-cost, infrastructure-free solution for precise positioning. While magnetic fingerprints are a promising approach for indoor positioning, models trained on raw 3D magnetometer data are highly sensitive to device orientation. We address this by using two rotation invariant features derived from the 3D magnetic field: the norm (Mn) and the projection onto the gravity axis (Mg). We train a lightweight 7-layer dilated CNN (MagNetS/XL) on magnetic sequences to directly regress (x, y) positions. Using the MagPie dataset (three buildings, handheld trajectories), we systematically evaluate fixed and random rotations of test and/or train data. Raw 3D inputs (Mx, My , Mz) exhibit isotropic error increases under fixed 90{\\deg} rotations and further degrade with growing random rotations. In contrast, 2D (Mn, Mg) inputs maintain rotation invariant accuracy and surpass the 3D inputs once rotation exceeds building-specific thresholds for three reference buildings: 0{\\deg} for Loomis (large), 5{\\deg} for Talbot (medium), and 6{\\deg} for CSL (small). MagNetXL achieves or exceeds state-of-the-art accuracy on the MagPie dataset, and MagNetS delivers similar performance with roughly one third of the parameters, favoring mobile deployment. These results show that the robustness gained from rotation invariant inputs outweighs the loss of input dimensionality in realistic usage, allowing mapping and localization without orientation alignment or added infrastructure."
   }
 ]
