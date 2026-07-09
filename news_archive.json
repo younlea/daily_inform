@@ -1,5 +1,77 @@
 [
   {
+    "title": "무인 항공 로봇 및 양팔 조작에 활용되는 VLA 모델 분석: 리뷰",
+    "original_title": "Vision Language Action (VLA) Models for Unmanned Aerial Robotics and Bimanual Manipulation: A Review",
+    "link": "https://arxiv.org/abs/2607.06706",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "VLA 모델은 시각 인식, 자연어 이해, 행동 생성을 통합하여 로봇이 명령어 기반의 복합 작업을 수행하는 핵심 프레임워크임. 이 기술은 양팔 협응이나 UAV의 자세 및 그리퍼 제어처럼 높은 난이도의 다중 협응이 요구되는 분야에 적용됨. 본 리뷰는 2017년부터 2026년까지 183건의 연구를 고찰하며, 양팔 조작에서 개발된 협응 전략이 무인 항공 시스템에 전이 가능함을 입증하고 향후 연구 방향을 제시함."
+  },
+  {
+    "title": "CaLiSym: 구조화된 캐노니컬 리프트를 통한 실제 시스템의 심플렉틱 역학 학습",
+    "original_title": "CaLiSym: Learning Symplectic Dynamics of Real-World Systems through Structured Canonical Lifts",
+    "link": "https://arxiv.org/abs/2607.06824",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존의 물리 기반 학습(Physics-informed learning)이 폐쇄적 보존계 시스템에 한정되었다는 한계를 극복함. 본 연구에서 개발된 CaLiSym 프레임워크는 상태와 물리 포트를 구조화된 리프트 캐노니컬 위상 공간에 임베드하고, 이 공간에서만 정확한 심플렉틱 매핑을 통해 소산(dissipation)이 발생하는 실제 로봇 시스템의 역학을 학습하는 방식임. 그 결과, 실제 사행성 진자 및 사족 보행 로봇 등 다양한 실세계 시뮬레이션 환경에서 높은 예측 정확도를 보였으며, 심플렉틱 구조 보존을 통한 로보틱스 분야의 응용 가능성을 제시함."
+  },
+  {
+    "title": "로버스트 멀티-로봇 매니퓰레이션 구현을 위한 폐쇄 루프 다중 에이전트 프레임워크",
+    "original_title": "A Closed-Loop Multi-Agent Framework for Robust Multi-Robot Manipulation",
+    "link": "https://arxiv.org/abs/2607.06990",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "LLM의 고차원 추론 능력을 다중 로봇 시스템의 실제 물리적 실행에 연결하는 것이 핵심 과제임. 이를 해결하기 위해 Planning Agent, Manipulation Agent, Verification Agent의 세 가지 역할을 갖는 계층적 폐쇄 루프(closed-loop) LLM 기반 프레임워크를 제안함. 이 시스템은 물리적 결과를 지속적으로 모니터링하고 피드백을 통해 로봇 동작을 보정함으로써, 다양한 작업 환경에서 높은 적응성과 성공률을 달성함을 입증함."
+  },
+  {
+    "title": "적응성 및 고장 내성 모듈형 소형 로봇을 위한 프로그래밍 가능한 동기화 그래프",
+    "original_title": "Programmable Synchronization Graphs for Adaptive and Fault-Tolerant Modular Miniature Robots",
+    "link": "https://arxiv.org/abs/2607.07281",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 중앙 리더나 고정된 움직임 패턴에 의존하지 않고 모듈 로봇의 동작을 조정하는 프로그래밍 가능한 동기화 그래프 프레임워크를 제시함. 액추에이터-센서 쌍을 네트워크 노드로 설정하고 그래프 커플링을 활용하여 움직임을 인코딩하며, 부호가 지정된 간(inter-subgraph) 링크를 통해 그룹 간의 위상 관계를 정밀하게 프로그램하는 것이 핵심임. 이 방식은 모듈 손실에도 동기화 상태를 유지하는 높은 고장 내성과 환경 적응성을 확보하며, 기존 중앙 집중식 제어 대비 우수한 성능을 입증함."
+  },
+  {
+    "title": "TouchWorld: 고난도 조작을 위한 예측 및 반응형 촉각 기반 모델",
+    "original_title": "TouchWorld: A Predictive and Reactive Tactile Foundation Model for Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2607.07287",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "일상 환경에서의 정교한 조작은 예측적 상황 인지와 실시간 오류 반응이 필수적이나, 기존 모델은 접촉 상태를 통합적으로 다루지 못함. 이에 TouchWorld는 예측 및 반응형 촉각 기반 Foundation Model을 제시하며, 계층적 정책을 활용하여 고수준 계획(High-Level Planning)과 고주파 촉각 잔여 보정(Tactile Residual Refinement)을 분리 수행함. 이로써 세미틱한 일반화 능력과 로컬 접촉 적응력을 동시에 확보하여, 복합적인 조작 과제에서 기존 최고 모델 대비 월등한 성공률을 기록함."
+  },
+  {
+    "title": "음성 활동 관련 사전 훈련 인코더를 이용한 사회적 로봇의 대화 차례 예측을 위한 다중모드 음성 활동 투영",
+    "original_title": "Multimodal Voice Activity Projection for Turn-Taking in Social Robots with Voice-Activity-Related Pretrained Encoders",
+    "link": "https://arxiv.org/abs/2607.07294",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 인간과의 상호작용 시 단순히 정지에 반응하는 것이 아닌, 대화의 역학 관계를 예측하는 것이 사회적 로봇에 핵심 과제임을 제시함. 이에 음성 활동 투영(VAP) 개념을 확장하여 동기화된 오디오-비주얼 입력을 활용하는 MM-VAP 프레임워크를 제안함. 이 방식은 사전 훈련된 오디오-비주얼 백본에 Low-Rank Adaptation을 적용하고, 상호 화자 어텐션 및 의미론적 일관성 손실(semantic consistency loss)을 도입하여 대화 차례 예측 성능을 개선함. 실험 결과, NoXi 및 NoXi+J 코퍼스에서 기존 기준 모델 대비 우수한 성능 개선을 보였으며, 중재(mediation) 중심의 인간-로봇 상호작용 분야에 적합함이 입증됨."
+  },
+  {
+    "title": "HumAIN: 인간 인지 기반의 암묵적 사회 로봇 항법 시스템",
+    "original_title": "HumAIN: Human-Aware Implicit Social Robot Navigation",
+    "link": "https://arxiv.org/abs/2607.07357",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "HumAIN은 인간의 보행이나 방향 같은 미묘한 움직임(implicit social cues)에 대한 민감도를 통합한 새로운 로봇 항법 프레임워크임. 본 방법론은 트랜스포머 기반의 Teacher Model을 활용하여 다중 모드 입력으로부터 인간 인지 표현을 학습한 후, 지식 증류(knowledge distillation)를 통해 경량화된 Student Model에 적용함. 이를 통해 실시간 환경에서도 적응적이며 사회적으로 규범을 준수하는 로봇 행동 추론이 가능하며, 기존 대비 평균 29.8%의 항법 예측 성능 향상을 입증함."
+  },
+  {
+    "title": "사족 보행 로봇의 행동 기반 구축: ABot-C0 기술 보고서",
+    "original_title": "Behavior Foundations for Quadruped Robots: ABot-C0 Technical Report",
+    "link": "https://arxiv.org/abs/2607.07370",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "ABot-C0은 사족 보행 로봇을 위한 범용 모션 제어 시스템으로, 확장 가능한 다중 소스 모션 데이터 파이프라인 구축을 통해 데이터 기반을 마련함. 이 시스템은 Flow-Matching generalist policy와 3단계 프레임워크를 통합하여 제로샷(zero-shot) 능력을 갖춘 모션 추적 및 로버스트한 전천후 이동 능력을 확보함. 궁극적으로 다중 정책 실행, 에너지 효율성, 안전 기능을 통합하여 실세계 환경에서 제품 수준의 행동 지능 및 자율 주행을 구현함을 입증함."
+  },
+  {
     "title": "UMA, 차세대 휴머노이드 로봇 비전 공개함",
     "original_title": "UMA Unveils Its Vision for the Next Generation of Humanoid Robots - 매일타임즈",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1mQTBNbDdvV3hGNjhMbU5VMy1tcXljZlg5V2t0aGtGZ20tbk56VzNGeklaQmx5eE1OTHhfaFJJYkd2cHRPSGRFTk91MDBTUE1idVdBQWpzVF9vaFR4VlE?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Hand/Sensor Startups - EN)",
     "category": "hand",
     "summary": "Sharpa Wave is a high-end dexterous robotic hand with 22 DoF, high-sensitivity dynamic tactile array  CNX Software"
-  },
-  {
-    "title": "NVIDIA CEO Jensen Huang Open to Hosting GTC in Seoul, Emphasizes Robotics Investment - aju press",
-    "original_title": "NVIDIA CEO Jensen Huang Open to Hosting GTC in Seoul, Emphasizes Robotics Investment - aju press",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6UWw5dVdHUkltTW9OZUJqU21zdlhIMjk2enc1ZGk2UDBDdUhob2FOZ2JuWGxuRDhSeFFQT2FnX2NwYVp3VnVSUTRCbzl5R0NUb0VnNEx1WWI5eG_SAVdBVV95cUxQc015N0lCM1l4OE5wazlqVk9GNnNGMVVucUwxZS1jYmNrbzFIcjdFMXgyYTNaMXM3ekxHclFsOTlOblN2VnBOcTl3aTItOVdGOWZVSlhnNEE?oc=5",
-    "date": "2026-06-01 22:51",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA CEO Jensen Huang Open to Hosting GTC in Seoul, Emphasizes Robotics Investment  aju press"
-  },
-  {
-    "title": "NVIDIA CEO Jensen Huang Open to Hosting GTC in Seoul, Emphasizes Robotics Investment - aju press",
-    "original_title": "NVIDIA CEO Jensen Huang Open to Hosting GTC in Seoul, Emphasizes Robotics Investment - aju press",
-    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBzTXk3SUIzWXg4TnBrOWpWT0Y2c0YxVW5xTDFlLWNiY2tvMUhyN0UxeDJhM1oxczd6TEdyUWw5OU5uU3ZWcE5xOXdpMi05V0Y5ZlVKWGc0QdIBV0FVX3lxTFBzTXk3SUIzWXg4TnBrOWpWT0Y2c0YxVW5xTDFlLWNiY2tvMUhyN0UxeDJhM1oxczd6TEdyUWw5OU5uU3ZWcE5xOXdpMi05V0Y5ZlVKWGc0QQ?oc=5",
-    "date": "2026-06-01 22:51",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA CEO Jensen Huang Open to Hosting GTC in Seoul, Emphasizes Robotics Investment  aju press"
-  },
-  {
-    "title": "NVIDIA releases new and updated tools for physical AI developers - The Robot Report",
-    "original_title": "NVIDIA releases new and updated tools for physical AI developers - The Robot Report",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdnFQU29oaC1aTmpoRWptUXZic1hzdlkwQWx0cENHbTZ1djZ4dW00eEFxU1ZVSGlqaVp4clNkcTBxcUZzLXZkOU5aNVFud2dsS1pFd1pqWExjZlotUFZCWkZRTEZiSkotdGhoVWxleGNlamxPLWVLSDBfdkpjZDhzYnFjcnRtR2poOEcwWFBYZWJ4MG4wTTNtU0xaQVpFdw?oc=5",
-    "date": "2026-06-01 21:30",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA releases new and updated tools for physical AI developers  The Robot Report"
-  },
-  {
-    "title": "NVIDIA releases new and updated tools for physical AI developers",
-    "original_title": "NVIDIA releases new and updated tools for physical AI developers",
-    "link": "https://www.therobotreport.com/nvidia-releases-new-updated-tools-physical-ai-gtc-taipei-computex/",
-    "date": "2026-06-01 21:27",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "NVIDIA has released open-source physical AI agent skills and tools, as well as an Isaac GR00T humanoid reference robot.\nThe post NVIDIA releases new and updated tools for physical AI developers appeared first on The Robot Report."
-  },
-  {
-    "title": "Nvidia expands humanoid robot partnerships to US, Europe - The American Bazaar",
-    "original_title": "Nvidia expands humanoid robot partnerships to US, Europe - The American Bazaar",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTmVDOGlvODlPdDZ3d2FKc2FwXzNPWVM2d2FQNi1JMEloUkNiN3VPdDBVZ1JqTEUzRGlFQWx3ZU1fc1VzbHdWMXRucnI5cV9QUzRNOThGUmtiM1NRR1NWZGg3RVlSbjJDb1dyQjFvSUsxLUc2M244aUpHRkVBOUtBQkdQV2FJTy1CYUpXWjhHcHk3YnZuTUVkMnV2SzhzMDJkcGlFMlQ5ZTdWdjA?oc=5",
-    "date": "2026-06-01 21:23",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Nvidia expands humanoid robot partnerships to US, Europe  The American Bazaar"
-  },
-  {
-    "title": "ANSCER Robotics closes Series A round for industrial material handling",
-    "original_title": "ANSCER Robotics closes Series A round for industrial material handling",
-    "link": "https://www.therobotreport.com/anscer-robotics-closes-series-a-round-industrial-material-handling/",
-    "date": "2026-06-01 19:55",
-    "source": "The Robot Report",
-    "category": "hand",
-    "summary": "ANSCER Robotics has raised $5.4 million to scale its hybrid industrial automation robots in North America and globally.\nThe post ANSCER Robotics closes Series A round for industrial material handling appeared first on The Robot Report."
-  },
-  {
-    "title": "China's Unitree Robotics clears stock market listing review, leading wave of hi-tech listings - bastillepost.com",
-    "original_title": "China's Unitree Robotics clears stock market listing review, leading wave of hi-tech listings - bastillepost.com",
-    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPelVhanlocnB2NzM4REFrdGhYSUJ3aGM4WmNadDMzdHp0Q29iV1AtVmNQd3llb2tTMkRsZ3FzTzBHdDhxRnRyYURPQUZYeDVpT0UxYkN4dldqZUZXUHJRRFhGSHp5MENidlNHQk5hc1hLbVo0VFpzT3Nrb0pnUEtPNVJYRWppamdDVG1BRFBxd2dlSE9ydG9SX19FQzNTM0R1NTJpTWY5a05JV0RRTmJSR0xJYzd5bEJQYXB1SVBUb3hmNFdyUzkzUmE4QmVFNnhOY2plZXhYRk96a1E?oc=5",
-    "date": "2026-06-01 19:17",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China's Unitree Robotics clears stock market listing review, leading wave of hi-tech listings  bastillepost.com"
-  },
-  {
-    "title": "Nvidia Taps Chinese Company Unitree for First Humanoid Robot System Sold to Researchers - International Business Times",
-    "original_title": "Nvidia Taps Chinese Company Unitree for First Humanoid Robot System Sold to Researchers - International Business Times",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMDZ6S2dSU2ZWa1dzbGV2Rmc5Rzk1bVVINU54SGFsVXozRVhaV0pPS0V3LWVfdE4tb19ZYWFQcERhWk11TnF0NGpJY3lKVWdHRElNaTk3STktRDFtdTN2cVc1c1hLTEd3NGRmQWtvdFoyYzR3T3JNSVA3MVdfLUJqTExsUXNlSmpMdUlxamtVdVcybmZvUXZTeWItTXJLQlJmMWV5bGRPbWNFRF9ESldLbkdn?oc=5",
-    "date": "2026-06-01 18:44",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Nvidia Taps Chinese Company Unitree for First Humanoid Robot System Sold to Researchers  International Business Times"
   }
 ]
