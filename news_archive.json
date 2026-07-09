@@ -306,6 +306,15 @@
     "summary": "오프라인 강화학습(Offline RL)은 반환 극대화와 행동 제약 간의 상충 관계가 주요 과제였음. 본 논문은 원본 액션 공간의 Q-gradient를 미분 가능한 One-Step MeanFlow 정책을 통해 백프로파게이션함으로써, 잠재 공간에서 고충실도의 정책 개선을 이뤄내는 Latent Policy Steering (LPS) 기법을 제안함. LPS는 기존 잠재 비평가(latent critics)의 정보 손실 문제를 해결하고 원본 액션 공간의 비평가를 활용하여 전체 잠재 최적화를 안내함으로써, 최소한의 튜닝만으로 최고의 성능을 달성하는 것으로 분석됨."
   },
   {
+    "title": "암시적 시간 단계 기법을 활용한 소프트 로봇 제어의 신속한 학습 방안 제시",
+    "original_title": "Rapidly Learning Soft Robot Control via Implicit Time-Stepping",
+    "link": "https://arxiv.org/abs/2511.06667",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "소프트 로봇 정책 학습에 필요한 계산 비용과 느린 시뮬레이션 속도 문제를 해결하는 연구임. 본 논문은 일반 목적의 implicit soft-body simulator인 DisMech를 활용하여 암시적 시간 단계 기반의 소프트 로봇 학습 환경을 구축했음. 이로써 최대 40배에 달하는 학습 속도 향상을 달성함과 동시에, 정확도를 손상시키지 않은 채 시뮬레이터 간 전이가 가능하다는 점을 입증함."
+  },
+  {
     "title": "UMA, 차세대 휴머노이드 로봇 비전 공개함",
     "original_title": "UMA Unveils Its Vision for the Next Generation of Humanoid Robots - 매일타임즈",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1mQTBNbDdvV3hGNjhMbU5VMy1tcXljZlg5V2t0aGtGZ20tbk56VzNGeklaQmx5eE1OTHhfaFJJYkd2cHRPSGRFTk91MDBTUE1idVdBQWpzVF9vaFR4VlE?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2601.11460v2 Announce Type: replace \nAbstract: Learning structured task representations from human demonstrations is essential for bimanual manipulation, where action ordering, object involvement, and interaction geometry vary significantly across executions. A key challenge lies in jointly capturing the discrete semantic task structure and the temporal evolution of object-centric geometric relations in a form that supports reasoning over task progression. We introduce a semantic--geometric graph-based task representation that jointly encodes object identities, inter-object semantic relations, and per-object motion histories, via a Message Passing Neural Network (MPNN) encoder and a Transformer-based decoder. The encoder operates solely on the temporal scene graph, producing structured representations decoupled from action labels. The decoder then conditions on action-context to forecast future actions, associated objects, and object motions. This decoupling learns task-agnostic representations, enabling encoder reuse across embodiments through decoder-only finetuning on a small robot dataset. Across eleven bimanual tasks from two datasets, we find that the benefit of structured semantic--geometric representations over simpler sequence-based models grows with task variability in action ordering and object involvement. At deployment, a planner couples the action and motion predictions with learned Probabilistic Movement Primitives, achieving full task success on two real-robot bimanual tasks and outperforming graph ablations, Transformer, decoder-only, and finetuned vision-language model baselines."
-  },
-  {
-    "title": "PLanAR: Planning-Language-Grounded Agentic Reasoning for Robot Manipulation",
-    "original_title": "PLanAR: Planning-Language-Grounded Agentic Reasoning for Robot Manipulation",
-    "link": "https://arxiv.org/abs/2602.01662",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.01662v4 Announce Type: replace \nAbstract: Recent advances in vision-language models (VLMs) have enabled increasing progress in real-world robot manipulation. However, long-horizon manipulation in unstructured environments requires VLMs to reason about changing scene states, action constraints, and execution outcomes, which remains difficult with natural language reasoning alone. We present PLanAR, a planning-language-grounded robot agent framework for open-vocabulary, long-horizon manipulation. PLanAR uses a planning-language interface to define the VLM reasoning space: object predicates represent scene states, action schemas specify robot skills with preconditions and effects, and symbolic plans provide executable intermediate representations. This interface enables stepwise verification: after each action, PLanAR uses onboard observations to check whether the expected symbolic effects have been achieved, allowing the VLM-based agent to update task states, detect failures, and replan when execution deviates from expectation. Across robot embodiments, VLM backends, and tasks including stacking, crossword solving, and long-horizon kitchen workflows, PLanAR demonstrates strong real-world capability while revealing key limitations of current VLMs in embodied reasoning."
   }
 ]
