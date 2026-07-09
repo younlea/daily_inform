@@ -1,5 +1,14 @@
 [
   {
+    "title": "스트리밍 대 배치: 데이터 처리의 두 가지 철학",
+    "original_title": "Streaming vs Batch: Two Philosophies of Data Processing",
+    "link": "https://blog.bytebytego.com/p/streaming-vs-batch-two-philosophies",
+    "date": "2026-07-09 15:31",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "데이터 처리 방식 중 스트리밍(Streaming)과 배치(Batch)는 데이터가 컴퓨팅 단계로 이동할 준비가 되었는지 여부(completeness)를 핵심 쟁점으로 다룸. 이 과정에서 데이터를 실시간으로 처리할지, 아니면 데이터의 완전한 수집 후에 일괄적으로 처리할지 결정하는 것이 중요한 과제임."
+  },
+  {
     "title": "다 빈치를 넘어선 미래: 다재다능한 휴머노이드 로봇이 개척할 수술 분야",
     "original_title": "Beyond da Vinci: Why versatile humanoid robots are the next frontier in surgery",
     "link": "https://www.therobotreport.com/beyond-da-vinci-why-versatile-humanoid-robots-are-next-frontier-surgery/",
@@ -2590,6 +2599,15 @@
     "source": "Humanoid Tech Blog",
     "category": "humanoid",
     "summary": "Alva Industries has secured €16 million in equity financing to support the company’s industrial scale-up and international growth. The round is led by Nysnø Climate Investments, Sandwater and Emerald Technology Ventures, on behalf of Nabtesco Technology Ventures. Further funding participation from existing investors, including Statkraft Ventures and EnvisionTech. Samsung Ventures’ investment from December 2025 is […]\nThe post Alva Industries Secures €16 Million to Support Scaling Electric Motor Technology appeared first on Humanoid Robotics Technology."
+  },
+  {
+    "title": "중국, 동반 목적 초현실적 휴머노이드 로봇 공개됨",
+    "original_title": "China unveils ultra-realistic humanoid robots for companionship - MSN",
+    "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPelVJcFZ5NkpVN2FHbmFtTG1yUVd4cTRwbGk0czFCUlo4c0ptTXhDYjVJU0xxSFZNYmd0ejJkNGhjRmRiaVh0LXVzRi1Zc3BRaVYzeThhTjRMOUY3UndkVUZMb1A3dEZyclZoUTVFSmN1ZjFZMlpoRnhucnRSWjM2bThLNVJEQzJJc1RVaHNTRTIwWTMzZTZTaGxJekdvY2VNZzVYX3FfblJrSFl2aGJHTkltU1UtNVh6cVFJdi1nanVsS0hiOWZYQS1sUTZ1SG5faEFHZ0dkSDRUSTJMRVBjVFlza0FTbTE3bVFWVTdzX1dfcHREOFBsMg?oc=5",
+    "date": "2026-07-03 07:03",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "중국이 높은 수준의 실사구현도를 자랑하는 휴머노이드 로봇을 공개함. 해당 로봇들은 인간과의 정서적 교감 및 동반자 역할을 수행하도록 설계되었으며, 가정 및 공공장소에서의 생활 지원 목적으로 활용될 예정임."
   },
   {
     "title": "DexRobot의 로봇 원격 조작 플랫폼이 매니퓰레이션 기술을 재정립함 - AI CERTs",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.02577v1 Announce Type: new \nAbstract: Scaling robot learning requires large-scale, diverse demonstrations, yet real-world data collection via teleoperation remains prohibitively expensive and time-consuming. While video diffusion models offer a promising avenue for data scaling, existing generative approaches are often limited to superficial visual augmentation, or suffer from embodiment hallucinations that yield physically infeasible motions. We present a generalizable embodiment-centric world model that achieves scalable data generation by synthesizing photorealistic demonstrations with novel objects, in novel scenes, and from novel viewpoints. Our approach anchors generation to rendered robot motion while conditioning on explicit scene and object priors, effectively decoupling trajectory execution from environment synthesis. This formulation has the potential to unlock two powerful data scaling capabilities: (1) retrieval and rebirth, which repurposes existing trajectories into entirely new contexts without new motion data; and (2) prop-free teleoperation, where operators manipulate empty air and the model hallucinates the target objects and scene afterwards, eliminating reset time. We demonstrate with real-world experiments that our generated data consistently improves downstream policy performance and significantly reduces real-world data requirements across diverse manipulation tasks."
-  },
-  {
-    "title": "From Demonstrations to Rewards: Test-Time Prompt Optimization for VLM Reward Models",
-    "original_title": "From Demonstrations to Rewards: Test-Time Prompt Optimization for VLM Reward Models",
-    "link": "https://arxiv.org/abs/2606.00083",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.00083v1 Announce Type: cross \nAbstract: Reinforcement learning relies on accurate reward functions, which are often hand-crafted or even unavailable in real-world applications, such as robotics. Recent work has explored the zero-shot reasoning capabilities of pre-trained Vision-Language Models (VLMs) as reward models. However, without careful prompt engineering, these approaches tend to produce suboptimal rewards, where false positive predictions can severely degrade downstream policy learning. In robotics, limited datasets comprising expert demonstrations are often collected to bootstrap policy learning. This scenario provides an opportunity to optimize a reward model prior policy training. We propose Demo2Reward a test-time adaptation technique to optimize the language instruction of a reward model based on a few demonstrations (3-10 trajectories) to reduce false positives while preserving true positives. Crucially, this requires no additional model training or computation resources during policy learning. We show that Demo2Reward consistently outperforms existing zero- and few-shot VLM reward models across a range of simulated robotic tasks and policy backbones. Finally, we demonstrate that Demo2Reward effectively transfers to a real-world robotic learning scenario, enabling policy learning without manually engineering a reward function."
-  },
-  {
-    "title": "StressDream: Steering Video World Models for Robust Policy Evaluation and Improvement",
-    "original_title": "StressDream: Steering Video World Models for Robust Policy Evaluation and Improvement",
-    "link": "https://arxiv.org/abs/2606.00267",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.00267v1 Announce Type: cross \nAbstract: Video world models (WMs) have shown promise for policy evaluation and improvement by imagining realistic future observations conditioned on ego-robot actions. While WMs can model distributions over futures, policy evaluation and improvement typically rely on nominal imaginations, which can miss high-impact outcomes of robot actions unless prohibitively many samples are drawn. To enable robust policy evaluation and improvement over WM imaginations, we propose StressDream, which steers imaginations toward high-impact yet plausible outcomes specified at inference time by optimizing the initial noise of diffusion-based WMs. However, optimizing high-dimensional noise is challenging: the optimization must reason about nuanced, scene-dependent target events in generated videos while avoiding out-of-distribution (OOD) noise that yields implausible imaginations. We address this with two complementary objectives: a semantic objective with a Vision-Language Model that provides informative gradients by reasoning about the generated video, and a plausibility objective that prevents the optimized noise from drifting OOD. With state-of-the-art video world models for autonomous driving and robotic manipulation, we show that StressDream effectively steers imaginations toward high-impact yet plausible outcomes specified by text at inference time, such as task failures, enabling robust policy evaluation and improvement by identifying actions whose plausible futures include undesirable outcomes. Video results are available at https://junwon.me/StressDream/."
   }
 ]
