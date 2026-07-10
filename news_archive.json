@@ -1,5 +1,14 @@
 [
   {
+    "title": "로봇 간 AI 구동을 위한 핵심 인프라 구축 완료",
+    "original_title": "Researchers build missing infrastructure to move AI between robots",
+    "link": "https://techxplore.com/news/2026-07-infrastructure-ai-robots.html",
+    "date": "2026-07-10 12:20",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "로보틱스 연구는 새로운 로봇의 행동 테스트를 위해 수 주 또는 수개월에 걸친 복잡한 초기 설정 과정에 어려움을 겪었음. 이에 CMU(카네기멜런 대학교) 연구진은 이러한 설정 과정을 줄일 수 있는 오픈 소스 소프트웨어 프레임워크를 개발함. 이 프레임워크를 통해 연구원들은 AI 시스템을 여러 로봇에 걸쳐 처음부터 소프트웨어를 재구축할 필요 없이 쉽게 배포할 수 있게 되었음."
+  },
+  {
     "title": "자동화가 직원 성과 추적 및 인정 체계를 변화시키는 방식",
     "original_title": "How Automation is Changing Employee Performance Tracking and Recognition",
     "link": "https://roboticsandautomationnews.com/2026/07/10/how-automation-is-changing-employee-performance-tracking-and-recognition/103221/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.00063v1 Announce Type: new \nAbstract: Systems moving in low Reynolds number fluid regimes are known to be governed by a ``motility map'' which linearly relates their shape change rates to they body frame velocity moving through the fluid. A consequence of this is ``Purcell's Scallop Theorem'' -- a locomotion system that undergoes shape changes that follow the same path forward and backward in time (reciprocal body deformations) cannot achieve net displacement, regardless of pacing of those changes.We show that linear-in-velocity motility maps extend to any power law viscosity (a.k.a. Ostwald--de Waele fluid), and therefore to many biological fluids in intermediate shear ranges. We also show that the linear-in-velocity property can be violated in Carreau-Yasuda fluids to produce net motion using an ``inchworm'' model consisting of two unequal masses with unequal drag coefficients performing reciprocal motions. Interestingly, the direction of motion can be switched by changing speeds. Our results show that the linear motility map of geometric mechaincs can be used to analyze and design locomotion in power-law fluids, and that some nonlinear drag relationships such as Carreau-Yasuda can be exploited to generate net locomotion in seeming violation of the ``scallop theorem''."
-  },
-  {
-    "title": "Whole-Body Inverse Kinematics with Graph Diffusion",
-    "original_title": "Whole-Body Inverse Kinematics with Graph Diffusion",
-    "link": "https://arxiv.org/abs/2606.00086",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.00086v1 Announce Type: new \nAbstract: Inverse kinematics (IK) is a fundamental problem in robotics, requiring the generation of joint configurations that satisfy target end-effector poses. Existing approaches often struggle to generalize across diverse robot morphologies and to effectively model the multi-modal nature of IK, particularly in articulated systems with multiple kinematic branches. In this work, we propose GraphDiff-IK, a structure-aware graph diffusion framework for inverse kinematics. Specifically, we represent the robot as a kinematic graph constructed from the robot URDF, where nodes correspond to actuated joints and edges encode kinematic dependencies. Building upon this representation, we formulate IK as a conditional graph diffusion process that directly generates joint configurations on the robot graph. To better capture structural dependencies in articulated systems, we further introduce a structure-aware graph reasoning framework with hierarchical stage-wise message passing and torso-aware conditioning for multi-branch robots. In addition, we incorporate noisy forward kinematics feedback and task-space supervision to improve geometric consistency during denoising. The proposed framework provides a unified formulation that naturally supports single-arm robots, dual-arm systems, and articulated robots with torso or waist structures. Extensive experiments on diverse robotic platforms demonstrate that the proposed method achieves accurate and stable IK performance while preserving the ability to generate multiple feasible solutions for redundant robotic systems."
   }
 ]
