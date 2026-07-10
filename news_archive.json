@@ -180,6 +180,15 @@
     "summary": "Robbyant가 오픈소스로 차세대 비전-언어-액션(VLA) 모델인 LingBot-VLA 2.0을 발표함. 이 모델은 기존 LingBot-VLA 1.0의 기반을 확장하여 형태 일반화(morphological generalization), 자유도(DoF) 지원, 배포 효율성 등 여러 면에서 비약적인 발전을 이룸. 이를 통해 실제 세계 로봇공학에 적용 가능한 고도화된 '범용 뇌(universal brain)'를 제공하는 것이 목표임."
   },
   {
+    "title": "UMA, 차세대 휴머노이드 로봇 비전 공개",
+    "original_title": "UMA Unveils Its Vision for the Next Generation of Humanoid Robots - AI포스트",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE51cDRlWEZsZndxcHhsT2ZQbmJidTM5bDBjdUVxMU9PTnVpLWxDeW91bUpqWlBzakw3Z3dNQm9kSHlHemZSWWZ0Sk5Kcm5aQ1I3dk5HOGxFaUctamxyR0FhRzd1VTE0X2Zza1ItZk930gFyQVVfeXFMTjFkYnJ4ZG5QYU1oLWRzYWZYVV9vRWk0Z0t3eHh5bG54Q2RCVDNtLTA2clhxLTNzOEZLdDhyNVFTUW1MV1RudUVVRmFaNGRHZ3h3UVpoQkRMWXBMdlhSRjFzZGZPQ3A2U3U5N0YzWUlfanJR?oc=5",
+    "date": "2026-07-09 07:06",
+    "source": "Google News (Humanoid)",
+    "category": "humanoid",
+    "summary": "UMA가 차세대 휴머노이드 로봇 개발을 위한 비전 및 방향성을 공식 공개함. 해당 비전은 로봇이 수행할 수 있는 임무의 범위와 지능화 측면에서 새로운 패러다임을 제시하는 데 초점을 맞춤. 이는 향후 산업 현장에 적용될 로봇 기술의 새로운 지평을 열 것으로 예상됨."
+  },
+  {
     "title": "무인 항공 로봇 및 양팔 조작에 활용되는 VLA 모델 분석: 리뷰",
     "original_title": "Vision Language Action (VLA) Models for Unmanned Aerial Robotics and Bimanual Manipulation: A Review",
     "link": "https://arxiv.org/abs/2607.06706",
@@ -520,6 +529,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "모듈식 소프트 로봇(MSR) 제어는 비선형 역학 및 구조적 복잡성 때문에 난제로 남아있으며, 형태 변화 시 재학습이 필수적임. 본 연구는 지속 학습(Continual Learning) 기반의 프레임워크를 제안하여, 이전 지식 손실 없이 로봇 형태 변화에 점진적으로 적응할 수 있는 제어 방안을 제시함. 이 프레임워크는 모듈별 역학을 분산 학습하여 국지적 제어의 정밀도를 높였으며, 시뮬레이션과 실제 공압식 소프트 로봇 팔 실험을 통해 그 우수성을 검증함."
+  },
+  {
+    "title": "CILC: 다중 에이전트 협업 SLAM을 위한 암호학적 보안 에이전트 간 루프 클로저 후보 감지",
+    "original_title": "CILC: Cryptographically-secure Inter-agent Loop Closure Candidate Detection for Multi-Agent Collaborative SLAM",
+    "link": "https://arxiv.org/abs/2607.06700",
+    "date": "2026-07-09 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "다중 에이전트 SLAM/CSLAM 환경에서 전송되는 Global Descriptors(GD)는 단순 암호화만으로는 손상된 에이전트의 정보 유출에 취약함. 이에 연구진은 Secure Multi-Party Computation (SMPC)을 활용하여 GD를 클리어(clear) 상태로 교환하지 않고 에이전트 간 Loop Closure 후보를 탐지하는 CILC 시스템을 제안함. 이 방법론은 특히 민감한 GD 유사도 비교 과정에만 SMPC를 적용하여 높은 프라이버시 보호와 실시간 운영의 효율성(privacy-to-overhead trade-off)을 동시에 확보한 점이 특징임. 시뮬레이션 및 하드웨어 검증을 통해 다양한 모달리티 GD에 대한 실시간성 및 통신 적합성 입증함."
   },
   {
     "title": "UMA, 차세대 휴머노이드 로봇 비전 공개함",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.01241v1 Announce Type: new \nAbstract: Navigation and manipulation are fundamental capabilities of embodied intelligence, enabling robots to interpret natural language commands and interact physically with their surroundings. However, current Vision-Language-Action (VLA) models remain constrained by task-specific architectures, specializing in either navigation or manipulation, which hinders the development of general-purpose robotic agents. To bridge this gap, we introduce OneVLA, a unified architecture that integrates these distinct tasks into a single, cohesive framework. Specifically, we design a unified action head capable of generating both navigation and manipulation actions without requiring task-specific variants. Furthermore, we propose a multi stage progressive training strategy-incorporating curated data construction and Chain-of-Thought (CoT) fine-tuning that facilitates strong positive transfer and mutual reinforcement between the two domains. Extensive experiments in both simulated and real-world environments demonstrate that OneVLA achieves state-of-the-art performance, significantly outperforming both specialized single-task and existing cross-task models. By unifying these core capabilities, OneVLA paves the way for truly general-purpose robotic systems. The model and source code will be publicly released."
-  },
-  {
-    "title": "S2M-Trek: From Single to Multi-Sphere Transport via Per-Frame Deep Sets on a Wheel-Legged Robot",
-    "original_title": "S2M-Trek: From Single to Multi-Sphere Transport via Per-Frame Deep Sets on a Wheel-Legged Robot",
-    "link": "https://arxiv.org/abs/2606.01332",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.01332v1 Announce Type: new \nAbstract: We study the problem of scaling dynamic loco-manipulation from a single free-rolling sphere to multiple spheres transported simultaneously on the back of a wheel-legged quadruped, without fences, grippers, or mechanical stops. Multiple identical free-rolling spheres form an unordered set with no persistent identity: their ordering may change independently at each history frame, creating a \\emph{per-frame permutation symmetry} that standard history-concatenation set encoders do not explicitly enforce -- these encoders impose only a shared, diagonal permutation symmetry over the full history. We show that this symmetry mismatch leads to a concrete failure mode in curriculum-based reinforcement learning. Within the same PPO training budget, flat MLPs and branch-wise encoders plateau at or below the two-sphere stage, while a history-concatenation Deep Sets baseline (\\HCDS) fails to progress past the two-sphere stage in our runs unless ball-to-slot assignments are randomised during training, suggesting that it exploits slot indices as a curriculum shortcut rather than learning identity-free multi-sphere dynamics. We propose \\textbf{Per-Frame Deep Sets (\\PFDS)}, which performs permutation-invariant pooling within each history frame before temporal readout; we prove that \\PFDS is $\\Gframe$-invariant and universally approximates continuous $\\Gframe$-invariant policies. A $2{\\times}2$ ablation over encoder architecture and slot randomisation separates the architectural and data-augmentation pathways, and \\PFDS reaches the five-sphere stage with 100\\% no-drop transport in simulation across all five random seeds. We further distill the \\PFDS teacher into \\TactSet via DAgger, replacing privileged sphere-state observations with a $16{\\times}16$ Boolean union contact map, yielding a compact and naturally $\\Gframe$-invariant tactile representation."
-  },
-  {
-    "title": "LEGS: Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting World",
-    "original_title": "LEGS: Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting World",
-    "link": "https://arxiv.org/abs/2606.01458",
-    "date": "2026-06-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.01458v1 Announce Type: new \nAbstract: Training vision-language-action (VLA) policies for humanoid loco-manipulation is constrained by the high cost and complexity of collecting human teleoperation demonstrations. VLA policies fine-tuned in simulators have, until now, failed to transfer effectively in humanoid loco-manipulation tasks. We present LEGS (Loco-manipulation via Embodied Gaussian Splatting), a hybrid simulator that composites a mesh foreground (robot, objects, props) over a photorealistic 3D Gaussian Splatting (3DGS) background reconstructed from a handheld scene capture. LEGS uses a procedural motion-primitive generator to synthesize labeled demonstrations at scale without human teleoperation, and a deterministic two-stage color calibration to align the rendered 3DGS image to the robot's deployment camera. On a Unitree G1 humanoid robot, across three pick-and-place tasks of increasing whole-body difficulty and three VLA backbones (psi_0, pi_0.5, GR00T N1.6), a policy trained purely on LEGS data matches or exceeds one trained on human teleoperation demos on every experiment. It also outperforms a mesh-only simulation baseline that ablates the effect of the 3DGS background, showing that photorealistic rendering is a key enabler for synthetic data transfer. Humanoid motion is recorded independently of scene appearance in LEGS, allowing the same auto-generated demonstrations to be re-rendered under new backgrounds and object meshes--covering a new scene at more than 15x lower cost than teleoperation--to augment training data for robustness to scene variations. Under combined object-and-scene appearance shift, the policy trained on re-rendered LEGS-AUG data maintains task success while the baseline trained on teleoperation data fails entirely. Our project page is located at https://legsvla.github.io/."
   }
 ]
