@@ -1,5 +1,14 @@
 [
   {
+    "title": "'The Robot Report'의 모회사 WTWH Media, Arrowfly로 리브랜딩",
+    "original_title": "The Robot Report parent company, WTWH Media, rebrands as Arrowfly",
+    "link": "https://www.therobotreport.com/the-robot-report-parent-company-wtwh-media-rebrands-as-arrowfly/",
+    "date": "2026-07-13 12:04",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "WTWH Media의 모회사가 Arrowfly로 리브랜딩을 단행함. 이 새로운 브랜드는 B2B 콘텐츠 및 이벤트의 미래를 목표로 하며, 40개 이상의 다양한 브랜드를 통합하는 역할을 수행함."
+  },
+  {
     "title": "로보틱스 및 자동화 분야에서 니어쇼어 콜센터의 역할 모색",
     "original_title": "Exploring the Role of Nearshore Call Centers in Robotics and Automation",
     "link": "https://roboticsandautomationnews.com/2026/07/13/exploring-the-role-of-nearshore-call-centers-in-robotics-and-automation/103273/",
@@ -1384,6 +1393,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "다중 에이전트 SLAM/CSLAM 환경에서 전송되는 Global Descriptors(GD)는 단순 암호화만으로는 손상된 에이전트의 정보 유출에 취약함. 이에 연구진은 Secure Multi-Party Computation (SMPC)을 활용하여 GD를 클리어(clear) 상태로 교환하지 않고 에이전트 간 Loop Closure 후보를 탐지하는 CILC 시스템을 제안함. 이 방법론은 특히 민감한 GD 유사도 비교 과정에만 SMPC를 적용하여 높은 프라이버시 보호와 실시간 운영의 효율성(privacy-to-overhead trade-off)을 동시에 확보한 점이 특징임. 시뮬레이션 및 하드웨어 검증을 통해 다양한 모달리티 GD에 대한 실시간성 및 통신 적합성 입증함."
+  },
+  {
+    "title": "UMA, 차세대 휴머노이드 로봇 비전 공개",
+    "original_title": "UMA Unveils Its Vision for the Next Generation of Humanoid Robots - 세계뉴스통신",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5qYm9Bclpybk9jeWpMUVJXLTgxTWRJUTVRcWVtbTJuR0tDNGRTWUVyVzlUZG9KVTk1LUNqWEQyX2hjLVlGaTFQTU9tUGRUNVFETkpORDB2MHNLcU45a3pMVUVWeTRTQ0RTOXBQWEZUS3RFTkI1?oc=5",
+    "date": "2026-07-09 01:32",
+    "source": "Google News (Humanoid)",
+    "category": "humanoid",
+    "summary": "UMA가 차세대 휴머노이드 로봇에 대한 새로운 비전을 공개함. 해당 비전은 로봇 공학 기술의 다음 단계 발전 방향과 미래 로드맵을 제시하는 데 초점을 맞추고 있음."
   },
   {
     "title": "UMA, 차세대 휴머노이드 로봇 비전 공개함",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.03834v1 Announce Type: new \nAbstract: Flow matching has recently emerged as a powerful approach for imitation learning, enabling scalable, expressive, and multimodal motion policies. However, incorporating formal stability guarantees into these generative models, a prerequisite to ensure safe and generalizable robot behaviors, remains a significant challenge. While modeling robot motions as dynamical systems allows for such stability-based inductive biases, existing frameworks struggle to capture the rich action distributions inherent in complex robotic tasks. This paper introduces Stable Flow Matching Dynamical Systems (SFMDS), a novel framework that bridges the gap between high-capacity generative modeling and formal Lyapunov stability guarantees. SFMDS parametrizes dynamical systems via flow matching while simultaneously constraining the model to a family of stable solutions. We propose two variants: a soft constraint based on a penalty term, and a hard structural constraint embedded directly in the model architecture. We further extend both formulations to Lie groups. Experiments on benchmark datasets, in simulation, and on a humanoid robot show that SFMDS learns stable, scalable, and multimodal dynamical systems in low- and high-dimensional state spaces, enabling safe and expressive robot motion generation."
-  },
-  {
-    "title": "Denoising Tells When to Replan: Denoising-Variance Adaptive Chunking for Flow-Based Robot Policies",
-    "original_title": "Denoising Tells When to Replan: Denoising-Variance Adaptive Chunking for Flow-Based Robot Policies",
-    "link": "https://arxiv.org/abs/2606.03847",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.03847v1 Announce Type: new \nAbstract: Action chunking has become a common inference strategy for flow-based robot policies, improving action coherence by modeling multi-step temporal dependencies in demonstrations. However, the execution horizon is still typically set as an empirical fixed value, overlooking that predictable free-space motions and precision-critical interaction phases often require different replanning frequencies. In this work, we first show that the denoising process of flow-based policies contains an intrinsic signal of task phases: clean-action estimates remain stable during predictable motion phases, but fluctuate more strongly around contact-rich or precision-sensitive operations. Motivated by this observation, we propose DVAC (Denoising-Variance Adaptive Chunking), a test-time method that adaptively determines how many actions to execute from each predicted chunk. DVAC measures the variance of clean-action estimates over the final denoising steps, executes the stable low-variance prefix, and replans before high-variance future actions are committed. To transfer across tasks and rollouts, DVAC further calibrates the threshold with a rolling estimate of the local variance scale. Experiments on LIBERO, RoboTwin, CALVIN, and real-world manipulation show that DVAC improves task success while reducing replanning frequency. With a $\\pi_{0.5}$-based policy, DVAC improves LIBERO success from 94.75% to 98.00% and reduces replanning by 43.0%, while also yielding aggregate gains on RoboTwin and CALVIN and improving real-world execution efficiency."
-  },
-  {
-    "title": "PointAction: 3D Points as Universal Action Representations for Robot Control",
-    "original_title": "PointAction: 3D Points as Universal Action Representations for Robot Control",
-    "link": "https://arxiv.org/abs/2606.03943",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.03943v1 Announce Type: new \nAbstract: Video-Action Models (VAMs) leverage the broad visual dynamics captured by pre-trained video diffusion models, offering a promising path toward generalizable robot manipulation. However, RGB-only video rollouts are not directly actionable: they leave metric 3D motion, contact geometry, and fine-grained spatial constraints under-specified, making action grounding ambiguous. Meanwhile, scaling action supervision across diverse tasks and embodiments remains costly. We present PointAction, a framework that bridges video predictions to robot actions through explicit point-based 4D modeling. PointAction fine-tunes a foundation video generation model to jointly predict future RGB frames and dynamic 3D pointmaps, producing temporally consistent 3D motion of task-relevant scene geometry. These point dynamics serve as a structured, embodiment-agnostic action interface, which a diffusion-based action decoder maps to executable robot actions. By using metric 3D point dynamics as the interface between video prediction and control, PointAction reduces the ambiguity of RGB-only action grounding and supports transfer across tasks and embodiments with limited action supervision. Experiments show that PointAction achieves state-of-the-art 4D generation quality on robot scenes, outperforms existing baselines in simulation, and generalizes to two real robot arms unseen during pretraining."
   }
 ]
