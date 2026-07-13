@@ -1,5 +1,14 @@
 [
   {
+    "title": "로보틱스 및 자동화 분야에서 니어쇼어 콜센터의 역할 모색",
+    "original_title": "Exploring the Role of Nearshore Call Centers in Robotics and Automation",
+    "link": "https://roboticsandautomationnews.com/2026/07/13/exploring-the-role-of-nearshore-call-centers-in-robotics-and-automation/103273/",
+    "date": "2026-07-13 08:32",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "로보틱스와 자동화 기술이 제조, 병원, 물류 등 다양한 영역의 근로 환경을 혁신하며 비용 절감 및 빠른 스케일업을 실현하는 추세임. 하지만 아무리 진보된 기술이라 할지라도 시스템 오류나 복잡한 문제 발생 시에는 여전히 인간의 전문적인 지원과 개입이 필수적임."
+  },
+  {
     "title": "자동화가 출하 업무의 오류를 줄이는 5가지 방법 제시",
     "original_title": "5 Ways Automation is Eliminating Errors at the Shipping Desk",
     "link": "https://roboticsandautomationnews.com/2026/07/13/5-ways-automation-is-eliminating-errors-at-the-shipping-desk/103268/",
@@ -205,6 +214,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "본 논문은 단순한 시각적 움직임 정보를 넘어선 실제 로봇 조작에 필요한 물리적 실현 가능성을 확보하는 GenVid2Robot 프레임워크를 제시함. 이 프레임워크는 초기 RGB-D 관찰 및 작업 지시를 기반으로 생성된 비디오 움직임을 분석하며, sparse relative $SE(3)$ 모델을 이용해 기하학적으로 일관된 움직임만 추출하는 것이 핵심임. 그 결과, 시각적 움직임 예측과 물리적 파지(Grasp) 구속 조건이 모두 반영된, 신뢰도가 향상된 로봇 실행 궤적을 성공적으로 생성함."
+  },
+  {
+    "title": "B-스플라인 정책: B-스플라인 액션 표현을 활용한 매니퓰레이션 정책 가속화",
+    "original_title": "B-spline Policy: Accelerating Manipulation Policies via B-spline Action Representations",
+    "link": "https://arxiv.org/abs/2607.09648",
+    "date": "2026-07-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 매니퓰레이션 정책 가속화를 위해 B-spline Policy (BSP)를 제시함. BSP는 기존의 이산적 액션 예측 방식을 탈피하여, knots와 control points로 연속적인 B-spline 곡선 형태로 액션을 매개변수화하는 방식임. 이 접근법은 시간적으로 스케일링 가능한 부드러운 궤적을 제공하며, 실험 결과 태스크 완료 시간 단축 측면에서 기존 베이스라인 대비 상당한 성능 개선을 입증함."
   },
   {
     "title": "전자 장치 없이 촉각을 로봇 동작으로 전환하는 신형 소프트 센서 개발",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.02979v1 Announce Type: cross \nAbstract: We present a novel compact deep multi-task learning model to handle various autonomous driving perception tasks in one forward pass. The model performs multiple views of semantic segmentation, depth estimation, light detection and ranging (LiDAR) segmentation, and bird's eye view projection simultaneously without being supported by other models. We also provide an adaptive loss weighting algorithm to tackle the imbalanced learning issue that occurred due to plenty of given tasks. Through data pre-processing and intermediate sensor fusion techniques, the model can process and combine multiple input modalities retrieved from RGB cameras, dynamic vision sensors (DVS), and LiDAR placed at several positions on the ego vehicle. Therefore, a better understanding of a dynamically changing environment can be achieved. Based on the ablation study, the model variant trained with our proposed method achieves a better performance. Furthermore, a comparative study is also conducted to clarify its performance and effectiveness against the combination of some recent models. As a result, our model maintains better performance even with much fewer parameters. Hence, the model can inference faster with less GPU memory utilization. Moreover, the result tends to be consistent in 3 different CARLA simulation datasets and 1 real-world nuScenes-lidarseg dataset. To support future research, we share codes and other files publicly at https://github.com/oskarnatan/compact-perception."
-  },
-  {
-    "title": "SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single Image",
-    "original_title": "SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single Image",
-    "link": "https://arxiv.org/abs/2606.03994",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.03994v1 Announce Type: cross \nAbstract: Reconstructing interactive, simulation-ready 3D scenes from a single image is a critical bottleneck for robotic manipulation. While recent single-image lifters recover plausible per-object shapes, composing them yields scenes that collapse under physical simulation due to interpenetrating, hovering, or sinking objects. Existing physics-aware methods address this strictly as a post-hoc layout correction, leaving the underlying geometric errors unresolved. To address this, we introduce SimuScene, a compositional 3D reconstruction pipeline that puts physics in the loop of shape and layout estimation. Rather than using physics merely for layout cleanup, we utilize the physics engine as a diagnostic measurement tool during the generative process itself. By diagnostically simulating reconstructed objects under gravity, we convert penetration and support failures into quantitative correction signals that drive gravity-axis stretching and amodal shape resampling. This physics-informed feedback loop mitigates accumulated reconstruction errors and produces a stable, simulation-ready compositional 3D scene. Extensive experiments demonstrate state-of-the-art performance on physical stability and geometric alignment benchmarks. We further highlight SimuScene's utility by deploying reconstructed environments in humanoid control and robot-arm manipulation tasks."
-  },
-  {
-    "title": "OMP: One-step Meanflow Policy with Directional Alignment",
-    "original_title": "OMP: One-step Meanflow Policy with Directional Alignment",
-    "link": "https://arxiv.org/abs/2512.19347",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2512.19347v3 Announce Type: replace \nAbstract: Robot manipulation has increasingly adopted data-driven generative policy frameworks, yet the field faces a persistent trade-off: diffusion models suffer from high inference latency, while flow-based methods often require complex architectural constraints. Although in image generation domain, the MeanFlow paradigm offers a path to single-step inference, its direct application to robotics is impeded by critical theoretical pathologies, specifically spectral bias and gradient starvation in low-velocity regimes. To overcome these limitations, we propose the One-step MeanFlow Policy (OMP), a novel framework designed for high-fidelity, real-time manipulation. We introduce a lightweight directional alignment mechanism to explicitly synchronize predicted velocities with true mean velocities. Furthermore, we implement a Differential Derivation Equation (DDE) to approximate the Jacobian-Vector Product (JVP) operator, which decouples forward and backward passes to significantly reduce memory complexity. Extensive experiments on the Adroit and Meta-World benchmarks demonstrate that OMP outperforms state-of-the-art methods in success rate and trajectory accuracy, particularly in high-precision tasks, while retaining the efficiency of single-step generation."
   }
 ]
