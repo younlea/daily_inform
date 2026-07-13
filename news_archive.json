@@ -1,5 +1,14 @@
 [
   {
+    "title": "온다스(Ondas), DZYNE 인수 완료 및 국방 역량 확장 발표",
+    "original_title": "Ondas acquires DZYNE for $875.8M, expanding its defense capabilities",
+    "link": "https://www.therobotreport.com/ondas-acquires-dzyne-875-8m-expanding-its-defense-capabilities/",
+    "date": "2026-07-13 22:16",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Ondas가 DZYNE Technologies를 8억 7,580만 달러에 인수하며 국방 역량 확장을 발표함. DZYNE는 장시간 운용 가능한 자율 항공기, 드론 카운터 시스템, 자율 효과(autonomous effects) 기술에 특화된 업체임. 이번 인수를 통해 Ondas는 첨단 국방 분야의 포트폴리오를 대폭 강화하게 됨."
+  },
+  {
     "title": "야스카와 아메리카, 정보 보안 인증 획득",
     "original_title": "Yaskawa America gets information security certification",
     "link": "https://www.therobotreport.com/yaskawa-america-gets-information-seccurity-certification/",
@@ -358,6 +367,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "생성형 로봇 정책이 실제 환경의 실패 모드를 극복하기 어려워진 상황을 해결하기 위해 FlowDAgger라는 효율적인 적응 방법을 제시함. 이 기법은 '액션 역변환(action inversion)'을 핵심 아이디어로 활용하여, 인간의 개입을 잠재 공간의 노이즈 신호로 변환하고 이를 활용해 가벼운 잠재 정책을 학습함. 그 결과, FlowDAgger는 시뮬레이션 및 실세계의 이중/단일 팔 매니퓰레이션 환경에서 기존 정책의 성능을 유지하며 높은 적응력을 입증함."
+  },
+  {
+    "title": "로보스트림(RoboStream): 로보틱스 비전-언어 모델에 메모리 기반 시공간 추론 결합",
+    "original_title": "RoboStream: Weaving Spatio-Temporal Reasoning with Memory in Vision-Language Models for Robotics",
+    "link": "https://arxiv.org/abs/2603.12939",
+    "date": "2026-07-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 VLM 기반 플래너는 각 단계를 독립적으로 처리하여 장기적이고 복잡한 로봇 조작 환경에서 누적 오류 및 메모리 손실이 발생하는 한계가 존재함. 이에 필자는 지속적인 기억 능력을 결합한 RoboStream 프레임워크를 제안함. 본 시스템은 Spatio-Temporal Fusion Tokens(STF-Tokens)와 Causal Spatio-Temporal Graph(CSTG)를 활용하여 행동에 따른 원인-결과 관계를 추적하며, 이를 통해 장기 범위(long-horizon)의 로봇 조작에서도 높은 신뢰성을 확보했음."
   },
   {
     "title": "전자 장치 없이 촉각을 로봇 동작으로 전환하는 신형 소프트 센서 개발",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.03240v1 Announce Type: new \nAbstract: Current Vision--Language--Action (VLA) models often optimize for semantic grounding, whereas executable manipulation requires geometry-aware spatial alignment and dynamic affordance selection. We introduce GeoAlign, a state-guided spatial alignment architecture for VLA policy learning. GeoAlign post-trains an RGB geometry branch with robot-domain RGB-D supervision, yielding RGB-derived Geometry-Enhanced Post-Trained (GEP) features for policy rollout. The robot's proprioceptive state queries the GEP feature grid, producing compact, phase-dependent geometry tokens for action prediction. GeoAlign achieves 99.0% on LIBERO, 85.3% across three SimplerEnv-Fractal tasks, and 78.8% on eight geometry-critical real-world ALOHA tasks, with ablations confirming the value of geometry post-training and proprioceptive-state-guided querying."
-  },
-  {
-    "title": "AirDreamer: Generalist Drone Navigation with World Models",
-    "original_title": "AirDreamer: Generalist Drone Navigation with World Models",
-    "link": "https://arxiv.org/abs/2606.03252",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.03252v1 Announce Type: new \nAbstract: Navigating a drone in unseen and cluttered environments requires reliable generalization to unseen scene layouts and understanding of environmental structure relative to the robot's capabilities. Previous methods, which assume the same environment configuration, often rely heavily on human-designed perception pipelines and predefined rules to guide the robot toward the target. This process is environment-dependent and generalizes poorly across environments. Inspired by animal navigation behavior, we design a navigation framework that navigates with a reinforcement-learning-based policy on top of a world-model-based environment understanding to overcome these issues. In addition, a sparse reward function without hand-crafted shaping terms is designed to avoid local minima traps and encourage yaw control behaviors. In simulation and on real drones, our method exhibits emergent capabilities for navigating complex, unseen environments and escaping local optima where other methods fail. In challenging maps, it achieves a 5.3% higher navigation success rate than best baseline. Furthermore, the proposed framework achieves effective sim-to-real transfer without any tuning during deployment. The code will be publicly available."
-  },
-  {
-    "title": "EaDex: A Cross-Embodiment Dexterous Manipulation Framework from Low-Cost Demonstrations",
-    "original_title": "EaDex: A Cross-Embodiment Dexterous Manipulation Framework from Low-Cost Demonstrations",
-    "link": "https://arxiv.org/abs/2606.03268",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.03268v1 Announce Type: new \nAbstract: Dexterous manipulation learning has long been hindered by the high costs of data and training, as pure reinforcement learning typically requires large-scale interactive exploration and imitation learning depends on high-quality demonstrations that are expensive to collect. To address this problem, we propose EaDex, a multi-embodiment dexterous manipulation learning framework under low-cost demonstration conditions, which enables rapid generation of demonstration data and consequently reduces training time for efficient dexterous manipulation. At the data level, EaDex captures human hand motions using only a single RGB-D camera and constructs structured demonstration data through MANO-based hand modeling, data normalization, and motion retargeting. At the learning level, we introduce a contact-reward-based dynamic demonstration annealing mechanism, which guides early-stage exploration under demonstration and gradually transitions to autonomous optimization with accumulating contact rewards. Using our custom dataset, we evaluate EaDex on three dexterous hands and three articulated object-opening tasks, covering nine cross-embodiment manipulation settings, achieving a 55.3% relative improvement over the baseline without demonstration annealing. These results validate the effectiveness of the proposed low-cost demonstration pipeline and the dynamic demonstration annealing strategy for dexterous manipulation learning."
   }
 ]
