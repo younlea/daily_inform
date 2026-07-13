@@ -1,5 +1,14 @@
 [
   {
+    "title": "야스카와 아메리카, 정보 보안 인증 획득",
+    "original_title": "Yaskawa America gets information security certification",
+    "link": "https://www.therobotreport.com/yaskawa-america-gets-information-seccurity-certification/",
+    "date": "2026-07-13 19:55",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "야스카와 아메리카가 독립적인 ISO/IEC 27001:2022 정보 보안 인증을 획득함. 해당 인증은 회사가 고객 정보 보호에 중점을 두고 있음을 입증하는 것임. 이번 소식은 The Robot Report를 통해 처음 공개됨."
+  },
+  {
     "title": "상업용 LED 조명의 점검이 필요한 징후들 파악",
     "original_title": "Signs Your Commercial LED Lights Need Maintenance",
     "link": "https://roboticsandautomationnews.com/2026/07/13/signs-your-commercial-led-lights-need-maintenance/103313/",
@@ -124,6 +133,15 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "로봇.콤은 산업 현장의 인력난에 대응하기 위해 휴머노이드 로봇 'R-noid'를 상용화함. 이 로봇은 반복적이고 교대 근무가 잦은 고난도 작업에 특화되었으며, Robot-as-a-Service (RaaS) 모델을 통해 고객 현장의 초기 방문부터 완전 자율 운영까지 포괄적인 노동 솔루션을 제공할 예정임."
+  },
+  {
+    "title": "중국 휴머노이드 로봇 산업의 개발 현황 분석",
+    "original_title": "중국 휴머노이드 로봇 산업의 개발 현황 - 브런치",
+    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE4xdTNOcDg0blVJVGlKSGJxM0tZeEFTX2h5UFdQRjZ5Q0VZcTJodmpfbFA2YWNvTzMzV2M0cUZweG8yX0xfZmhJaQ?oc=5",
+    "date": "2026-07-13 06:00",
+    "source": "Google News (China Robotics - KR)",
+    "category": "humanoid",
+    "summary": "중국의 휴머노이드 로봇 산업이 정부 주도 하에 급속한 기술 발전과 산업화를 이루고 있음. 주요 기술 기업들이 로봇 성능 향상과 실제 산업 적용에 집중 투자하는 상황임. 이는 중국이 미래 첨단 제조업 및 노동력 부족 문제 해결을 위한 핵심 전략으로 로봇 공학을 활용하고 있음을 의미함."
   },
   {
     "title": "AgenticFocus: 인간 FPV 비디오 기반 객체 보존형 혼합 현실 합성을 통한 정교한 휴머노이드 학습",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.03268v1 Announce Type: new \nAbstract: Dexterous manipulation learning has long been hindered by the high costs of data and training, as pure reinforcement learning typically requires large-scale interactive exploration and imitation learning depends on high-quality demonstrations that are expensive to collect. To address this problem, we propose EaDex, a multi-embodiment dexterous manipulation learning framework under low-cost demonstration conditions, which enables rapid generation of demonstration data and consequently reduces training time for efficient dexterous manipulation. At the data level, EaDex captures human hand motions using only a single RGB-D camera and constructs structured demonstration data through MANO-based hand modeling, data normalization, and motion retargeting. At the learning level, we introduce a contact-reward-based dynamic demonstration annealing mechanism, which guides early-stage exploration under demonstration and gradually transitions to autonomous optimization with accumulating contact rewards. Using our custom dataset, we evaluate EaDex on three dexterous hands and three articulated object-opening tasks, covering nine cross-embodiment manipulation settings, achieving a 55.3% relative improvement over the baseline without demonstration annealing. These results validate the effectiveness of the proposed low-cost demonstration pipeline and the dynamic demonstration annealing strategy for dexterous manipulation learning."
-  },
-  {
-    "title": "SplitAdapter: Load-Aware Humanoid Loco-Manipulation via Factorized Adaptation",
-    "original_title": "SplitAdapter: Load-Aware Humanoid Loco-Manipulation via Factorized Adaptation",
-    "link": "https://arxiv.org/abs/2606.03297",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.03297v1 Announce Type: new \nAbstract: Humanoid loco-manipulation requires stable whole-body control under varying object masses and pickup/placement heights. This becomes particularly challenging in sim-to-real transfer, where object-induced load variation and robot-side dynamics mismatch interact during physical contact. Existing history-based adapters often compress these factors into a single latent representation, which can weaken robustness under heavy-load manipulation. We propose \\textbf{SplitAdapter: Load-Aware Humanoid Loco-Manipulation via Factorized Adaptation}, which freezes a pretrained box manipulation policy and extends it with object/load and dynamics-aware context encoders trained with split world-model objectives, GRL-based cross-adversarial regularization, and hierarchical Feature-wise Linear Modulation (FiLM). In sim-to-sim experiments and real-world deployment, SplitAdapter improves Full-task success over the base policy and world-model FiLM baselines across object masses of $2$, $4$, and $6$ kg and pickup/placement heights of $0$, $30$, and $60$ cm, with the largest improvements under heavy-load conditions."
-  },
-  {
-    "title": "GPU-Parallel Multi-Task Reinforcement Learning with Demonstration Guided Policy Optimization",
-    "original_title": "GPU-Parallel Multi-Task Reinforcement Learning with Demonstration Guided Policy Optimization",
-    "link": "https://arxiv.org/abs/2606.03335",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.03335v1 Announce Type: new \nAbstract: Large scale GPU-parallel reinforcement learning has changed what can be trained in robot simulation, yet most systems still optimize one specialist policy per task. We propose a construction methodology for turning structured manipulation task families into GPU-parallel multi-task RL benchmarks, and instantiate it as MT-Libero using LIBERO assets and task predicates in Isaac Lab. The resulting benchmark supports simultaneous reinforcement learning over heterogeneous task suites with parallel rendering, physics randomization, and state-input or visual-input policies. To make such training practical under sparse success signals and limited prior data, we further propose DGPO, an on-policy demonstration guided method that combines importance weighted PPO with adaptive behavior cloning on matched demonstration actions. DGPO enables a tunable preference toward demonstrated task distributions, outperforming both prior-free RL and existing demonstration-based methods while preserving the stability and online improvement benefits of on-policy PPO."
   }
 ]
