@@ -1,5 +1,77 @@
 [
   {
+    "title": "AgenticFocus: 인간 FPV 비디오 기반 객체 보존형 혼합 현실 합성을 통한 정교한 휴머노이드 학습",
+    "original_title": "AgenticFocus: Object-Preserving Mixed Reality Synthesis from Human FPV Video for Dexterous Humanoid Learning",
+    "link": "https://arxiv.org/abs/2607.08857",
+    "date": "2026-07-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "인간의 1인칭 시점(FPV) 영상은 휴머노이드 정책 학습의 확장 가능한 감독 자료이나, 기존 방식은 손-객체 가려짐(occlusion)이나 동작 단순화 등의 한계가 존재함. 이에 개발된 AgenticFocus는 MR 합성 파이프라인으로, 일반 FPV 영상을 객체 기하학 복원, 손 동작 완전 복구, 그리고 카메라 상대 정렬을 통한 휴머노이드 동작 재타겟팅 방식으로 변환함. 그 결과, 시각적 관찰과 동기화된 로봇 동작 및 상태를 결합한 데이터셋을 성공적으로 구축하였으며, 기존 기준 대비 낮은 궤적 오차와 부드러운 손목 움직임을 구현함."
+  },
+  {
+    "title": "SplatCtrl: 가우시안 장면 표현 및 반응형 로봇 제어를 통한 지각-행동 연동",
+    "original_title": "SplatCtrl: Perception-Action Coupling via Gaussian Scene Representations and Reactive Robot Control",
+    "link": "https://arxiv.org/abs/2607.08948",
+    "date": "2026-07-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 매니퓰레이터의 비구조적, 동적 환경 대응을 위해 SplatCtrl이라는 통합 프레임워크가 제시됨. 이 프레임워크는 3D Gaussian Splatting(3D-GS)을 기반으로 환경 변화에 따른 실시간 장면 재구성을 수행함. 나아가 가우시안으로부터 연속적인 부호 거리 함수를 도출하여 이를 Control Barrier Functions에 통합함으로써, 불확실하고 역동한 환경에서도 안정적이고 신뢰성 높은 지각-행동 연동 기반의 로봇 제어 구현이 가능함."
+  },
+  {
+    "title": "고정밀 BLDC 모터 모델링을 위한 잔여물 물리정보 신경망(Residual Physics-Informed Neural Networks)",
+    "original_title": "Residual Physics-Informed Neural Networks for High-Fidelity BLDC Motor Modeling",
+    "link": "https://arxiv.org/abs/2607.09136",
+    "date": "2026-07-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 고성능 로봇 제어의 핵심인 BLDC 모터 역학 모델링을 위해 ResNet 기반의 PINN을 제시함. 이 네트워크는 입력 전압 및 파라미터를 기반으로 로터 각도, 전류, 온도 등 다수의 상태 변수를 예측함과 동시에, 복합 물리-데이터 손실을 통해 전자기학 및 열역학 ODE를 만족시키는 것이 특징임. 특히, 추론 시 0.1–22 $\\mu$s 수준의 초저지연성을 달성하여 기존 ODE 솔버 대비 최대 118배 빠른 실시간 관측기 및 제어 시스템 적용이 가능함."
+  },
+  {
+    "title": "TactiDex: 인간 유사 정교 조작을 위한 실세계 촉각 기반 벤치마크",
+    "original_title": "TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2607.09190",
+    "date": "2026-07-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 정교 조작 연구가 촉각 피드백에 의존하지 않아 발생하는 한계를 지적하며, 실세계 촉각 신호를 통합한 벤치마크 'TactiDex'를 제시함. 이를 바탕으로, 인간 시연을 물리적으로 구현하는 촉각 기반 전이 프레임워크 'TactiSkill'을 제안함. TactiSkill은 접촉 제약을 통합한 독창적인 삼중 구성 요소 촉각 보상(tri-component tactile reward)을 활용하여, 로봇의 물리적 현실성과 조작 성공률 측면에서 우수성을 입증함."
+  },
+  {
+    "title": "예측 기반 사회력 모델을 활용한 모바일 로봇의 보행자 안전성 평가",
+    "original_title": "Empirical Pedestrian Safety Assessment in a Mobile Robot Using a Predictive Social Force Model",
+    "link": "https://arxiv.org/abs/2607.09192",
+    "date": "2026-07-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "본 연구는 모바일 로봇이 보행자 간 충돌 없이 안전하게 이동하는 것을 목표로, 예측적 사회력 모델(PSFM, PTSFM)을 구현하고 실증 평가함. 실험 결과, 객관적 안전 지표 측면에서는 PTTC(Projected Time-to-collision) 통합을 통한 안전성 향상이 입증됨. 반면, 주관적 안전성 평가 측면에서는 예측 모델이 기존 방식 대비 유의미한 추가적인 개선 효과를 제공하지 않음을 밝힘."
+  },
+  {
+    "title": "전 팔 조작을 위한 촉각 및 비전 조건화 접촉 중심 제어",
+    "original_title": "Tactile and Vision Conditioned Contact-Centric Control for Whole-Arm Manipulation",
+    "link": "https://arxiv.org/abs/2607.09218",
+    "date": "2026-07-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "복잡한 전 팔 조작 환경에서의 다중 접촉과 힘 상호작용 문제를 해결하기 위해, TACTIC(Tactile and Vision Conditioned Contact-Centric Control)이라는 접촉 중심 예측 제어기 제안됨. TACTIC은 RGB-D, 분산 촉각 센싱 및 2D 근접 표현을 통합한 하이브리드 예측 모델을 사용하여, 접촉 변화에 민감한 MPC 플래너를 통해 전 팔의 힘 조절과 작업 목표 달성 과정을 동시에 최적화함을 보여줌. 이는 시뮬레이션 및 실제 로봇 환경에서 다중 접촉 과제를 성공적으로 수행하며 기존 방법론 대비 우수한 성능을 입증함."
+  },
+  {
+    "title": "휴머노이드 로봇의 보행 안내 중 로봇 접촉이 노년층 사용자에게 미치는 영향",
+    "original_title": "Effects of Robotic Touch on Older Users During Walking Guidance by a Humanoid Robot",
+    "link": "https://arxiv.org/abs/2607.09323",
+    "date": "2026-07-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "요양 시설 인력 부족 문제를 해결하기 위해 로봇을 보행 안내에 활용하는 방안을 연구함. 24명의 노년층 참여자를 대상으로 접촉 유무 및 종류(손목 잡기, 팔 연결, 팔뚝 지지 등)에 따른 신체적, 심리적 반응을 다각도로 측정함. 연구 결과, 생리학적 지표에서 경미한 스트레스 증가가 나타났으나, 전반적인 로봇 접촉 수용도는 높았으며, 특히 접촉력이 높은 조건에서 참여자와 로봇 간의 근접도가 높아져 신뢰도 및 안정감이 확보됨을 확인, 노년층에게 부드럽고 안정적인 접촉 방식이 효과적임을 제시함."
+  },
+  {
+    "title": "힘 제약 엘라스틱 맵 기반의 원샷 다중 모드 시연 학습",
+    "original_title": "One-Shot Multimodal Learning from Demonstration with Force-Constrained Elastic Maps",
+    "link": "https://arxiv.org/abs/2607.09515",
+    "date": "2026-07-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 매니퓰레이션 작업에서 필수적인 힘 상호작용을 기존 LfD 방법들이 간과하는 한계를 극복하기 위한 연구임. 본 연구는 다중 모드 확률적 세그멘테이션과 힘 제약을 통합한 엘라스틱 맵을 확장하여, 단일 시연으로부터 움직임과 접촉 힘을 동시에 재현하는 원샷 다중 모드 LfD 프레임워크를 제시함. 실험 결과, 두 가지 다른 힘 센싱 설정을 갖춘 실제 로봇 플랫폼에서 높은 강건성과 범용성이 입증됨."
+  },
+  {
     "title": "전자 장치 없이 촉각을 로봇 동작으로 전환하는 신형 소프트 센서 개발",
     "original_title": "New soft sensor can turn touch into robotic action without electronics",
     "link": "https://techxplore.com/news/2026-07-soft-sensor-robotic-action-electronics.html",
@@ -17926,77 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "While FORT has traditionally worked with technology in industrial environments, Mapless AI brings experience in more unstructured settings. \nThe post FORT Robotics acquires Mapless AI to expand teleop capabilities appeared first on The Robot Report."
-  },
-  {
-    "title": "Odessa Oilfield Accident Lawyer: Your Guide to Legal Support and Justice",
-    "original_title": "Odessa Oilfield Accident Lawyer: Your Guide to Legal Support and Justice",
-    "link": "https://roboticsandautomationnews.com/2026/06/02/odessa-oilfield-accident-lawyer-your-guide-to-legal-support-and-justice/102184/",
-    "date": "2026-06-02 16:45",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "When disaster hits in the Permian Basin, you need more than a lawyer. You need a strong advocate who fights for your future. Our team, as top Odessa oilfield accident lawyers, is ready to take on big corporations for your pain. We’ve won billions of dollars for workers and their families. Our unbeaten record shows […]"
-  },
-  {
-    "title": "What signals are sent by Chinese robot firms racing to go public?: Global Times editorial - Global Times",
-    "original_title": "What signals are sent by Chinese robot firms racing to go public?: Global Times editorial - Global Times",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5zdVQxYTRtZnFMREpfNC1rZ2R6Y3ktVXNHYnB5VTVCNk5ra1BnWWtPZ2JDTDY1MTZYSjdHODZkaGpjZW85ZjNFX3VJZDEtMDB1SGJ2NU1sMFVVdDNfR3VtazJn?oc=5",
-    "date": "2026-06-02 16:03",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "What signals are sent by Chinese robot firms racing to go public?: Global Times editorial  Global Times"
-  },
-  {
-    "title": "Nvidia expands humanoid robot push beyond China’s Unitree - MSN",
-    "original_title": "Nvidia expands humanoid robot push beyond China’s Unitree - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNTkZoMzRZSmtJdURYdm9JSU1vN2VrV3pkNk5SaWx1eEhSV3RxNTBzU2lRc2JUX1pJQmdmaDN5M0pub083T3BWYVdleTNkdE01bTdMdjBtcWtQd1B1QkVOVTJKOWVMU0dTVlQ3ZThuWjViMmF1NmRRUWlPd2xtNzZ2LWlXZTQ4T1BsNnJsYUExQks5Y204T3hYLVFYbjBpY0dVaENyNmtLaENxWUtrN3NlWTRlYXY3bElmWnE1akJTeDBNZ0FmQW5tYVZiQlcybW9KZy15V1FPbmZGeGFIQkJ6Y0tGZDkwc2RpMGF6X0NSZWg?oc=5",
-    "date": "2026-06-02 15:59",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Nvidia expands humanoid robot push beyond China’s Unitree  MSN"
-  },
-  {
-    "title": "LLMs help robots understand vague instructions and focus on key details",
-    "original_title": "LLMs help robots understand vague instructions and focus on key details",
-    "link": "https://techxplore.com/news/2026-06-llms-robots-vague-focus-key.html",
-    "date": "2026-06-02 15:20",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "Imagine working at a warehouse or office sometime in the near future, and you're asked to help a new trainee learn the basics of their job. The catch: It's a robot. To teach them, you might want to play a game of \"show and tell\"—that is, physically showing how to do something a few different ways, while also explaining what you're doing."
-  },
-  {
-    "title": "UBTECH Launches Pre-sales for Full-size Hyper-bionic Humanoid Robot on JD.com - Gasgoo",
-    "original_title": "UBTECH Launches Pre-sales for Full-size Hyper-bionic Humanoid Robot on JD.com - Gasgoo",
-    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSzdWS0NkQ2hzUGkyVTFFcVZaNVIyeGxfamJxNkJBb1VqbEl1SUxzaGtOVzlrZnlBSWgzRjRfa1pkWU1HckVpQ2FlUTI0NnNKSERrLVBqNklDcjN2M1ljOEpKWTZvWndyTGxKcEQxM2s2ODJ6SF9EZVI2N3dTdTFmVTJfbExfZmFTazYwSG1pQWVSdHJmS2RRR0s4RE5ESEJRMzBYQUhpUFM4b3ZETXUyOWw0TzVYRnVGWW5mazFieFpET052Z3Jjem5weGNyZUYxN3Vr?oc=5",
-    "date": "2026-06-02 15:18",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "UBTECH Launches Pre-sales for Full-size Hyper-bionic Humanoid Robot on JD.com  Gasgoo"
-  },
-  {
-    "title": "Ubtech Robotics Debuts Consumer Robot Walker C1 as Humanoid Sales Explode and Stock Struggles - AD HOC NEWS",
-    "original_title": "Ubtech Robotics Debuts Consumer Robot Walker C1 as Humanoid Sales Explode and Stock Struggles - AD HOC NEWS",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPeWZWbjlrdEF5RnlkQmkyeXhMQXh5WjcxenR6QlIxUmRDeXRxWWpTdm8za2JjMGZUT2VXaFd2cWxMN2x4eGdfNy14ZmVkV09FakI3am9SdjZQM1FESVdsdnhwUV90akI3WkJHSWdnX3pvNC1WU05iN3N4ZE1BOHJTWVdnMHp1c0hTd3Zyc3plcU9rczF6V3Y1bTgyWWM5MGtlQUtod0laY1JZamY5aG8tMkszZDFZZ19CUmNjZ3JRSS1scWdnd0RpeTBiVmQ?oc=5",
-    "date": "2026-06-02 14:57",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Ubtech Robotics Debuts Consumer Robot Walker C1 as Humanoid Sales Explode and Stock Struggles  AD HOC NEWS"
-  },
-  {
-    "title": "A Practical Guide to Becoming an AI-Native Engineer",
-    "original_title": "A Practical Guide to Becoming an AI-Native Engineer",
-    "link": "https://blog.bytebytego.com/p/a-practical-guide-to-becoming-an",
-    "date": "2026-06-02 14:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "This piece is a working guide for engineers who want to land on the productive side of that split."
-  },
-  {
-    "title": "Sensory Robotics says ‘the end of robotic cages starts now’",
-    "original_title": "Sensory Robotics says ‘the end of robotic cages starts now’",
-    "link": "https://roboticsandautomationnews.com/2026/06/02/sensory-robotics-says-the-end-of-robotic-cages-starts-now/102180/",
-    "date": "2026-06-02 14:27",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "A University of Cincinnati 1819 Innovation Hub corporate partner, Sensory Robotics, says it has “broken through the fence line with a next-generation safety solution”. Their flagship technology, the SR-1 system, is designed to be installed in and integrated with existing industrial robots, setting a new benchmark for how robots can safely transform into cobots and […]"
   }
 ]
