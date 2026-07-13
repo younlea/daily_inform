@@ -1,5 +1,14 @@
 [
   {
+    "title": "마이크로소프트의 기업용 AI 에이전트 대규모 배포 전략 분석",
+    "original_title": "How Microsoft Ships AI Agents at Enterprise Scale",
+    "link": "https://blog.bytebytego.com/p/how-microsoft-ships-ai-agents-at",
+    "date": "2026-07-13 15:02",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "마이크로소프트 Core AI의 VP Product인 Marco Casalaina와의 인터뷰를 통해 기업 규모(Enterprise Scale)에서 AI Agent를 실제로 배포하는 데 필요한 방법론과 기술적 과정을 심층 분석함."
+  },
+  {
     "title": "UBTECH와 히타치, 지능형 로봇 솔루션 공동 탐색을 위한 전략적 파트너십 지속",
     "original_title": "UBTECH and Hitachi Continue Strategic Partnership to Jointly Explore Intelligent Robotic Solutions",
     "link": "https://humanoidroboticstechnology.com/industry-news/ubtech-and-hitachi-continue-strategic-partnership-to-jointly-explore-intelligent-robotic-solutions/",
@@ -268,6 +277,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "본 연구는 VR이 실제 환경에서 관찰되는 다중 모드 인간-로봇 상호작용(HRI)을 정확히 포착하는지 검증하는 데 초점을 맞춤. 연구진은 참여자들에게 PR2 모바일 매니퓰레이터 로봇과의 공동 내비게이션을 실제 아레나와 VR 환경에서 모두 수행하게 함. 그 결과, 참여자들은 VR 환경에서도 로봇의 사회적 인지 수준과 상호작용 편안함을 실제 환경과 유사하게 평가하며, VR이 풍부한 다중 모드 행동 연구를 위한 신뢰할 수 있는 플랫폼임을 입증함."
+  },
+  {
+    "title": "FlowDAgger: 잠재 공간에서의 인간 개입형 생성 로봇 정책 적응",
+    "original_title": "FlowDAgger: Human-in-the-Loop Adaptation of Generative Robot Policies in Latent Space",
+    "link": "https://arxiv.org/abs/2607.08877",
+    "date": "2026-07-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "생성형 로봇 정책이 실제 환경의 실패 모드를 극복하기 어려워진 상황을 해결하기 위해 FlowDAgger라는 효율적인 적응 방법을 제시함. 이 기법은 '액션 역변환(action inversion)'을 핵심 아이디어로 활용하여, 인간의 개입을 잠재 공간의 노이즈 신호로 변환하고 이를 활용해 가벼운 잠재 정책을 학습함. 그 결과, FlowDAgger는 시뮬레이션 및 실세계의 이중/단일 팔 매니퓰레이션 환경에서 기존 정책의 성능을 유지하며 높은 적응력을 입증함."
   },
   {
     "title": "전자 장치 없이 촉각을 로봇 동작으로 전환하는 신형 소프트 센서 개발",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.03598v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have achieved remarkable success in language-conditioned robotic manipulation. However, deploying these models in open-ended environments requires continuously acquiring novel skills, a process that inevitably triggers severe catastrophic forgetting of previously learned behaviors. While experience replay (ER) serves as a standard mitigating strategy, naive uniform sampling fundamentally misaligns with the temporal characteristics of manipulation trajectories. It systematically under-samples brief but causally critical sub-skills, leading to phase starvation, and completely overlooks the varying degrees of forgetting across historical tasks. To overcome these limitations, we introduce PHASER, an architecture-agnostic continual learning framework. PHASER employs a phase-centric capacity allocation to guarantee equal memory support for all sub-skills, coupled with a multi-modal interference routing strategy that dynamically prioritizes historical phases at high risk of forgetting. Furthermore, to enable fully autonomous lifelong adaptation, we integrate Auto-PC, a lightweight pipeline combining unsupervised action-signal change-point detection with VLM-based semantic verification to extract temporal boundaries without intensive manual supervision. Evaluated across three VLA backbones on LIBERO continual learning suites, PHASER yields substantial empirical improvements, increasing Average Success Rate (ASR) by up to 31% over matched-budget ER and achieving an 87.8% final ASR on the LIBERO-Goal CL setting."
-  },
-  {
-    "title": "Revisiting Embodied Chain-of-Thought for Generalizable Robot Manipulation",
-    "original_title": "Revisiting Embodied Chain-of-Thought for Generalizable Robot Manipulation",
-    "link": "https://arxiv.org/abs/2606.03784",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.03784v1 Announce Type: new \nAbstract: Embodied chain-of-thought (CoT) aims to bridge linguistic reasoning and robotic control, but its effective form and integration strategy remain underexplored. In this paper, we revisit embodied CoT for vision-language-action (VLA) models at large scale. We construct the largest embodied CoT corpus to date, comprising 978,743 trajectories, 226.3M samples, and 2592.5 hours of robot data. Through extensive experiments, we find that effective embodied CoT should ground high-level semantic understanding into concrete action guidance, such as end-effector movement descriptions and image-space trajectories, while high-level reasoning alone brings only marginal gains. We further show that explicit CoT does not scale reliably when used as an autoregressive action prefix, as it suffers from compounding inference errors and unstable reasoning-action coupling. To address these limitations, we propose ERVLA, a VLA model that uses embodied CoT as representation-shaping supervision rather than mandatory test-time reasoning. ERVLA is trained with a reasoning-dropout strategy, enabling the model to absorb rich reasoning traces during training while predicting actions directly without CoT decoding during inference. This design improves scalability with increasing pre-training data and avoids autoregressive instability. ERVLA achieves state-of-the-art performance on LIBERO-Plus with an 86.9% success rate and reaches 53.2% success rate on VLABench, demonstrating strong out-of-distribution generalization. In real-robot experiments, ERVLA further outperforms competitive state-of-the-art baselines, especially on tasks requiring semantic disambiguation and long-horizon execution. Code, data, and model checkpoints will be released."
-  },
-  {
-    "title": "Optimal Design and Analytical Modeling of a Soft Fin-Ray Effect Gripper Finger Using the Finite Rigid Elements Method",
-    "original_title": "Optimal Design and Analytical Modeling of a Soft Fin-Ray Effect Gripper Finger Using the Finite Rigid Elements Method",
-    "link": "https://arxiv.org/abs/2606.03798",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.03798v1 Announce Type: new \nAbstract: Fin Ray-inspired soft grippers offer a promising solution for gently handling delicate, irregular objects, especially in agriculture. The objective of this research is to design, fabricate, and model a Fin Ray Effect (FRE) soft gripper finger to enable precise force control in future applications. This design aims to gently grasp delicate agricultural products, such as tomatoes, that require both adaptability and accurate force application. To address the inherent challenges of soft robotics, including nonlinear behavior, infinite degrees of freedom, and variable material properties, the Finite Rigid Elements Method (FREM) was employed for modeling. This method preserves analytical accuracy while providing a reliable foundation for the development of a force controller in later stages. A detailed Finite Element Model (FEM) was created using ANSYS, and the analytical results were validated through simulation and experimental testing. The gripper's fingers were optimized based on four key criteria: tip displacement, total deflection, stress distribution, and contact force. The optimal finger configuration includes a length of 30 mm, rib spacing of 10 mm, seven ribs angled at -15 deg, and a rib thickness of 1 mm. Theoretical modeling using the FREM predicted finger deformation with a 3% error, while the ANSYS numerical model achieved 2% error."
   }
 ]
