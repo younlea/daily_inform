@@ -1,5 +1,14 @@
 [
   {
+    "title": "로봇 심판 도입으로 타자 편애 억제, 스타 플레이어 영향 분석",
+    "original_title": "Batter up, bias down: Robot umpires curb favoritism for star hitters",
+    "link": "https://techxplore.com/news/2026-07-batter-bias-robot-umpires-curb.html",
+    "date": "2026-07-13 16:20",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "한국 프로야구 리그가 2024년 '로봇 심판'의 볼-스트라이크 판정 시스템을 도입함. 이로 인해 스타 타자들은 전반적인 영향이 감지되는 반면, 스타 투수들에게는 큰 차이가 없는 것으로 분석됨."
+  },
+  {
     "title": "마이크로소프트의 기업용 AI 에이전트 대규모 배포 전략 분석",
     "original_title": "How Microsoft Ships AI Agents at Enterprise Scale",
     "link": "https://blog.bytebytego.com/p/how-microsoft-ships-ai-agents-at",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.03545v1 Announce Type: new \nAbstract: Event-based tactile sensing offers low-latency signal acquisition for contact-rich robotic interaction. This paper investigates contact-angle estimation using event streams from an event-based tactile sensor (NeuroTac) and compares three event-derived spatial contour representations: a dynamic representation capturing recent event activity, a static representation recovering a more persistent contact state, and their combined representation. Across the evaluated motion scenarios, all representation pipelines exhibited P99 processing latency below 10 ms at all tested sampling intervals, demonstrating their potential for high-frequency event-based tactile angle estimation in robotic manipulation. The static representation consistently achieved marginally better performance than the dynamic and combined representations under scenario-specific training, yielding a mean overall MAE of 0.160{\\deg} during continuous sensor rolling and a stop-phase mean MAE of 0.251{\\deg} during randomly inserted motion interruptions. It also exhibited smaller performance fluctuations across speed and indentation depth variations than the other two representations."
-  },
-  {
-    "title": "PHASER: Phase-Aware and Semantic Experience Replay for Vision-Language-Action Models",
-    "original_title": "PHASER: Phase-Aware and Semantic Experience Replay for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2606.03598",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.03598v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have achieved remarkable success in language-conditioned robotic manipulation. However, deploying these models in open-ended environments requires continuously acquiring novel skills, a process that inevitably triggers severe catastrophic forgetting of previously learned behaviors. While experience replay (ER) serves as a standard mitigating strategy, naive uniform sampling fundamentally misaligns with the temporal characteristics of manipulation trajectories. It systematically under-samples brief but causally critical sub-skills, leading to phase starvation, and completely overlooks the varying degrees of forgetting across historical tasks. To overcome these limitations, we introduce PHASER, an architecture-agnostic continual learning framework. PHASER employs a phase-centric capacity allocation to guarantee equal memory support for all sub-skills, coupled with a multi-modal interference routing strategy that dynamically prioritizes historical phases at high risk of forgetting. Furthermore, to enable fully autonomous lifelong adaptation, we integrate Auto-PC, a lightweight pipeline combining unsupervised action-signal change-point detection with VLM-based semantic verification to extract temporal boundaries without intensive manual supervision. Evaluated across three VLA backbones on LIBERO continual learning suites, PHASER yields substantial empirical improvements, increasing Average Success Rate (ASR) by up to 31% over matched-budget ER and achieving an 87.8% final ASR on the LIBERO-Goal CL setting."
   }
 ]
