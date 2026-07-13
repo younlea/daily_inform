@@ -171,6 +171,15 @@
     "summary": "무제한 환경에서 일반화 가능한 로봇 작업을 위해 능동적 지각(active perception) 능력의 필요성이 강조됨. 이에 본 연구는 대규모 자가중심 인간 데이터를 활용하여 범용적인 탐색 및 조작 사전 지식을 학습하는 CoMe-VLA라는 인지 및 메모리 인식 Vision-Language-Action (VLA) 프레임워크를 제시함. 이 프레임워크는 인지 보조 헤드와 이중 트랙 메모리 시스템을 통합하여 인간과 로봇의 움직임을 통합된 자가중심 동작 공간에서 학습시키며, 휠 기반 휴머노이드를 이용한 장기 목표 작업 실험을 통해 높은 강건성과 적응성을 입증함."
   },
   {
+    "title": "GenVid2Robot: 강체 기하학적 일관성을 통한 영상 생성 기반 로봇 매니퓰레이션 구현",
+    "original_title": "GenVid2Robot: From Video Generation to Robot Manipulation via Rigid-Geometric Consistency",
+    "link": "https://arxiv.org/abs/2607.09191",
+    "date": "2026-07-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 단순한 시각적 움직임 정보를 넘어선 실제 로봇 조작에 필요한 물리적 실현 가능성을 확보하는 GenVid2Robot 프레임워크를 제시함. 이 프레임워크는 초기 RGB-D 관찰 및 작업 지시를 기반으로 생성된 비디오 움직임을 분석하며, sparse relative $SE(3)$ 모델을 이용해 기하학적으로 일관된 움직임만 추출하는 것이 핵심임. 그 결과, 시각적 움직임 예측과 물리적 파지(Grasp) 구속 조건이 모두 반영된, 신뢰도가 향상된 로봇 실행 궤적을 성공적으로 생성함."
+  },
+  {
     "title": "전자 장치 없이 촉각을 로봇 동작으로 전환하는 신형 소프트 센서 개발",
     "original_title": "New soft sensor can turn touch into robotic action without electronics",
     "link": "https://techxplore.com/news/2026-07-soft-sensor-robotic-action-electronics.html",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2604.04974v2 Announce Type: replace \nAbstract: Video is a scalable observation of physical dynamics: it captures how objects move, how contact unfolds, and how scenes evolve under interaction -- all without requiring robot action labels. Yet translating this temporal structure into reliable robotic control remains an open challenge, because video lacks action supervision and differs from robot experience in embodiment, viewpoint, and physical constraints. This survey reviews methods that exploit non-action-annotated temporal video to learn control interfaces for robotic manipulation. We introduce an interface-centric taxonomy organized by where the video-to-control interface is constructed and what control properties it enables, identifying three families: direct video-action policies, which keep the interface implicit; latent-action methods, which route temporal structure through a compact learned intermediate; and explicit visual interfaces, which predict interpretable targets for downstream control. For each family, we analyze control-integration properties -- how the loop is closed, what can be verified before execution, and where failures enter. A cross-family synthesis reveals that the most pressing open challenges center on the robotics integration layer -- the mechanisms that connect video-derived predictions to dependable robot behavior -- and we outline research directions toward closing this gap."
-  },
-  {
-    "title": "DiscreteRTC: Discrete Diffusion Policies are Natural Asynchronous Executors",
-    "original_title": "DiscreteRTC: Discrete Diffusion Policies are Natural Asynchronous Executors",
-    "link": "https://arxiv.org/abs/2604.25050",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2604.25050v2 Announce Type: replace \nAbstract: Unlike chatbots, physical AI must act while the world keeps evolving. Therefore, the inter-chunk pause of synchronous executors are fatal for dynamic tasks regardless of how fast the inference is. Asynchronous execution -- thinking while acting -- is therefore a structural requirement, and real-time chunking (RTC) makes it viable by recasting chunk transitions as inpainting: freezing committed actions and consistently generating the remainder. However, RTC with flow-matching policy is structurally suboptimal: its inpainting comes from inference-time corrections rather than the base policy, yielding little pre-training benefit, specific fine-tuning, heuristic guidance, and extra computation that inflates the latency. In this work, we observe that discrete diffusion policies, which generate actions by iteratively unmasking, are natural asynchronous executors that resolve all limitations at once: they are fine-tuning free since inpainting is their native operation, while early stopping further provides adaptive guidance and reduces inference cost. We propose DiscreteRTC, which replaces external corrections with native unmasking, and show on dynamic simulated benchmarks and real-world dynamic manipulation tasks that it achieves higher success rates than continuous RTC and other baselines. In summary, DiscreteRTC is simpler to implement with 0 lines of additional code to enable async inpainting, faster at inference with only $\\sim 0.7\\times$ computation compared with generating actions from scratch, and better at execution with 65\\% higher success rate in real-world hockey defend task compared with flow-matching RTC, and 30\\% higher compared with training-time flow-matching RTC.More visualizations are on https://outsider86.github.io/DiscreteRTCSite/."
   }
 ]
