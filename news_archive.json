@@ -63,6 +63,15 @@
     "summary": "UBTECH와 Hitachi (China)는 전략적 협력 계약을 체결함. 중국 제조업의 지능형 전환 및 고도화 추세에 발맞춰, 두 기업은 스마트 제조 환경에 휴머노이드 로봇 적용 방안을 공동으로 탐색할 계획임. 이는 유연 생산 시스템 구축과 전반적인 효율성 향상에 중점을 둔 사업 추진임을 밝힘."
   },
   {
+    "title": "중국 기술 기업들, 휴머노이드 로보틱스 및 체화 AI(Embodied AI) 분야에 집중함",
+    "original_title": "Chinese Tech Vendors Converge on Humanoid Robotics and Embodied AI - AI Business",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWUlxekE1WFRmYmc3RWZTZHdyRXJtQnMyR2U2SHJaZ2tBNmxfV0xWTWRycXVsSkpDZFNfWnMzRFZfNDNXZmZGTjNfTmluVjFzNG56RXVZUDBYeUNBanJlT1lKb1gtYVFqZWEzb1JiTV9pNFlWbTVEeUNWX2ZjanVNQzh0TzlRRUJvZ1lHN2xEZW9pdHlmbXc?oc=5",
+    "date": "2026-07-13 13:12",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "중국의 여러 기술 기업들이 첨단 AI 기술을 기반으로 휴머노이드 로보틱스 및 Embodied AI 분야에 역량을 집중시키고 있는 추세임. 이들 기업들은 소프트웨어와 하드웨어를 통합하여 로봇을 현실 세계의 복잡한 환경에 적용하는 것을 목표로 하고 있음. 이는 중국이 향후 로봇 공학 시장에서 강력한 주도권을 확보하려는 움직임으로 분석됨."
+  },
+  {
     "title": "'The Robot Report'의 모회사 WTWH Media, Arrowfly로 리브랜딩",
     "original_title": "The Robot Report parent company, WTWH Media, rebrands as Arrowfly",
     "link": "https://www.therobotreport.com/the-robot-report-parent-company-wtwh-media-rebrands-as-arrowfly/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.03335v1 Announce Type: new \nAbstract: Large scale GPU-parallel reinforcement learning has changed what can be trained in robot simulation, yet most systems still optimize one specialist policy per task. We propose a construction methodology for turning structured manipulation task families into GPU-parallel multi-task RL benchmarks, and instantiate it as MT-Libero using LIBERO assets and task predicates in Isaac Lab. The resulting benchmark supports simultaneous reinforcement learning over heterogeneous task suites with parallel rendering, physics randomization, and state-input or visual-input policies. To make such training practical under sparse success signals and limited prior data, we further propose DGPO, an on-policy demonstration guided method that combines importance weighted PPO with adaptive behavior cloning on matched demonstration actions. DGPO enables a tunable preference toward demonstrated task distributions, outperforming both prior-free RL and existing demonstration-based methods while preserving the stability and online improvement benefits of on-policy PPO."
-  },
-  {
-    "title": "Grasp-Then-Plan with Failure Attribution: A Closed Two-Stage Framework for Precise and Generalizable Robotic Manipulation",
-    "original_title": "Grasp-Then-Plan with Failure Attribution: A Closed Two-Stage Framework for Precise and Generalizable Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2606.03385",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.03385v1 Announce Type: new \nAbstract: In robotic manipulation, the tight coupling between grasping and motion planning often obscures the true source of failure, leading to inefficient trial-and-error. To enable efficient long-horizon manipulation, we propose GTP-FA (Grasp-Then-Plan with Failure Attribution), a task-oriented two-stage grasp-then-plan framework that generates grasp candidates and performs downstream motion planning conditioned on the selected grasp. Given a failed manipulation trajectory, we learn a failure attribution model that generalizes to unseen grasps and produces a stable distribution over failure modes for diagnosis-guided optimization. Based on these attribution results, we then optimize both modules in a diagnosis-driven manner: on the grasping side, we inject task-level priors and risk penalties into grasp candidate scoring and optimization to suppress unstable or task-incompatible grasps; on the planning side, we target high-risk initial states through data collection and fine-tuning to address genuine planning bottlenecks. We evaluate the proposed framework in both simulation and real-robot experiments, and show that GTP-FA improves the corresponding base learners across RL, IL, diffusion-policy, and VLA-based settings, achieving substantially higher overall task success rates."
   }
 ]
