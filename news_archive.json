@@ -495,6 +495,24 @@
     "summary": "기존의 강화 학습(RL) 모델(MDP)은 시스템과 에이전트 간의 상호작용을 순간적이고 이상적으로 가정하는 한계가 있어, 현실 세계의 무작위적이고 관측 불가능한 지연 문제에 직면함. 이에 본 연구는 시간 변화가 심하고 관측이 어려운 지연을 적응적으로 처리하는 '상호작용 레이어(interaction layer)' 프레임워크를 제시함. 이를 기반으로 개발된 ACDA(Actor-Critic with Delay Adaptation) 알고리즘은 지연 패턴 변화에 동적으로 적응하며, 실제 측정된 지연이 포함된 다양한 로코모션 벤치마크 환경에서 최고 수준의 성능을 입증함."
   },
   {
+    "title": "수치적으로 강건한 iG-LIO의 ROS 2 포팅: 증분 GICP LiDAR-관성 오도메트리에서 툴체인 유발 오류 진단 및 수정",
+    "original_title": "A Numerically-Robust ROS 2 Port of iG-LIO: Diagnosing and Fixing Toolchain-Induced Failures in Incremental GICP LiDAR-Inertial Odometry",
+    "link": "https://arxiv.org/abs/2607.09947",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 보고서는 iG-LIO 시스템의 오픈소스 ROS 2 Jazzy 포트를 공개하며, 알고리즘 문제가 아닌 현대 ROS 2 툴체인(Toolchain) 자체에서 발생하는 수치적 오류(Numerical Failures)를 성공적으로 진단 및 수정했음을 보고함. 구체적으로 QoS 불일치로 인한 IMU 샘플링 손실 및 oneTBB + Eigen 조합에서 발생하는 초기화 문제 등 툴체인 레벨의 문제점들을 해결함. 아울러 Ouster, Velodyne, Livox 등 다양한 센서와의 호환성 개선을 진행했으며, Ouster 및 Livox 등 최신 하드웨어에서 그 성능을 검증함."
+  },
+  {
+    "title": "VehAnchor: 항공 영상에서 차량 단서를 활용한 메타데이터 무관 메트릭 스케일 복구",
+    "original_title": "VehAnchor: Metadata-Free Metric Scale Recovery from Vehicle Cues in Aerial Imagery",
+    "link": "https://arxiv.org/abs/2603.04277",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "GPS나 통신 환경이 열악한 자율 항공 로봇 시스템은 메트릭 스케일 정보 손실 및 공간 스케일 환각(spatial scale hallucinations) 문제를 겪는 상황임. 이에 연구진은 환경에 존재하는 차량을 분석하여 Ground Sample Distance(GSD)를 추정하는 경량의 결정론적 지각 스킬인 VehAnchor를 제안함. 이 도구는 GSD 추정치와 복합 신뢰도 점수를 동시에 제공하여, LLM 기반 에이전트가 스스로 측정의 신뢰성을 판단하고 안전한 자율 공간 추론을 수행하도록 지원하는 핵심 요소임."
+  },
+  {
     "title": "온다스(Ondas), DZYNE 인수 완료 및 국방 역량 확장 발표",
     "original_title": "Ondas acquires DZYNE for $875.8M, expanding its defense capabilities",
     "link": "https://www.therobotreport.com/ondas-acquires-dzyne-875-8m-expanding-its-defense-capabilities/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2512.24698v2 Announce Type: replace \nAbstract: Generating dynamic motions for legged robots remains a challenging problem. While reinforcement learning has achieved notable success in various legged locomotion tasks, producing highly dynamic behaviors often requires extensive reward tuning or high-quality demonstrations. Leveraging reduced-order models can help mitigate these challenges. However, the model discrepancy poses a significant challenge when transferring policies to full-body dynamics environments. In this work, we introduce a continuation-based learning framework that combines simplified model pretraining and model-homotopy-inspired transfer to efficiently generate and refine complex dynamic behaviors. First, we pretrain the policy using a single rigid body model to capture core motion patterns in a simplified environment. Next, we employ a continuation strategy to progressively transfer the policy to the full-body environment, minimizing performance loss. To define the continuation path, we introduce a parametric transition path from the single rigid body model to the full-body model by gradually redistributing mass and inertia between the trunk and legs. The proposed method achieves faster convergence and demonstrates superior stability during the transfer process compared to baseline methods. Our framework is validated on a range of dynamic tasks, including flips and wall-assisted maneuvers, and is successfully deployed on a real quadrupedal robot."
-  },
-  {
-    "title": "How Users Understand Robot Foundation Model Performance through Task Success Rates and Beyond",
-    "original_title": "How Users Understand Robot Foundation Model Performance through Task Success Rates and Beyond",
-    "link": "https://arxiv.org/abs/2602.03920",
-    "date": "2026-06-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.03920v2 Announce Type: replace \nAbstract: Robot Foundation Models (RFMs) represent a promising approach to developing general-purpose home robots. Given the broad capabilities of RFMs, users will inevitably ask an RFM-based robot to perform tasks that the RFM was not trained or evaluated on. In these cases, it is crucial that users understand the risks associated with attempting novel tasks due to the relatively high cost of failure. Furthermore, an informed user who understands an RFM's capabilities will know what situations and tasks the robot can handle. In this paper, we study how non-roboticists interpret performance information from RFM evaluations. These evaluations typically report task success rate (TSR) as the primary performance metric. While TSR is intuitive to experts, it is necessary to validate whether novices also use this information as intended. Toward this end, we conducted a study in which users saw real evaluation data, including TSR, failure case descriptions, and videos from multiple published RFM research projects. The results highlight that non-experts not only use TSR in a manner consistent with expert expectations but also highly value other information types, such as failure cases that are not often reported in RFM evaluations. Furthermore, we find that users want access to both real data from previous evaluations of the RFM and estimates from the robot about how well it will do on a novel task."
-  },
-  {
-    "title": "LDA-1B: Scaling Latent Dynamics Action Model via Universal Embodied Data Ingestion",
-    "original_title": "LDA-1B: Scaling Latent Dynamics Action Model via Universal Embodied Data Ingestion",
-    "link": "https://arxiv.org/abs/2602.12215",
-    "date": "2026-06-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.12215v2 Announce Type: replace \nAbstract: Recent robot foundation models largely rely on large-scale behavior cloning, which imitates expert actions but discards transferable dynamics knowledge embedded in heterogeneous embodied data. While the Unified World Model (UWM) formulation has the potential to leverage such diverse data, existing instantiations struggle to scale to foundation-level due to coarse data usage and fragmented datasets. We introduce LDA-1B, a robot foundation model that scales through universal embodied data ingestion by jointly learning dynamics, policy, and visual forecasting, assigning distinct roles to data of varying quality. To support this regime at scale, we assemble and standardize EI-30k, an embodied interaction dataset comprising over 30k hours of human and robot trajectories in a unified format. Scalable dynamics learning over such heterogeneous data is enabled by prediction in a structured DINO latent space, which avoids redundant pixel-space appearance modeling. Complementing this representation, LDA-1B employs a multi-modal diffusion transformer to handle asynchronous vision and action streams, enabling stable training at the 1B-parameter scale. Experiments in simulation and the real world show LDA-1B outperforms prior methods (e.g., $\\pi_{0.5}$) by up to 21\\%, 48\\%, and 23\\% on contact-rich, dexterous, and long-horizon tasks, respectively. Notably, LDA-1B enables data-efficient fine-tuning, gaining 10\\% by leveraging 30\\% low-quality trajectories typically harmful and discarded."
   }
 ]
