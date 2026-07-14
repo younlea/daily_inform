@@ -1,5 +1,14 @@
 [
   {
+    "title": "중국 신규 AI 규제, Ubtech 소비자 로봇 시장 전략에 드리운 그림자",
+    "original_title": "China’s Coming AI Rules Cast a Long Shadow Over Ubtech’s Consumer Robot Bet - Ad Hoc News",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPV1NFZmRGZGQ2NmVlcDd3VmxlYmhWaFIxUUVUZjd5b2VoZkstT2RuUGtPWDExLXFYVlRXQVdaNXh0eldBaVdyQ3ZpNVN2ak5RMFhoNHIxR2NMeFpHdFRGV0dPQ3ZkY3A2SHdiajlqdlFRUjhBaFR5LXd3aGJCWlNoaWRwYVpQZHF3OVB2T29Db2JKT3h4STFDcFl6NGFXeFgyX2dPUmdpSXlsZHEzck10R3RNTXFqRjhPUHo0c2FNVS1iUQ?oc=5",
+    "date": "2026-07-14 16:55",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "중국 정부가 강화하는 AI 규제가 첨단 기술 기업들에게 큰 불확실성으로 작용함. 특히 Ubtech의 소비자 로봇 사업 추진에 법적, 기술적 제약이라는 그림자를 드리우며 업계의 주시 대상이 되고 있음. 이에 따른 규제 준수와 비즈니스 모델 재설계가 주요 과제로 제시됨."
+  },
+  {
     "title": "LLM의 유용성 학습 방법: RLHF와 DPO 비교 분석",
     "original_title": "How LLMs Learn to Be Helpful (RLHF vs DPO)",
     "link": "https://blog.bytebytego.com/p/how-llms-learn-to-be-helpful-rlhf",
@@ -664,6 +673,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "본 연구는 접촉 기반 매니퓰레이션에서 발생하는 불확실성에 대응하기 위해 분포론적 강건 제어(Distributionally Robust Control)를 제시함. Stein 변분 추론을 활용한 독자적인 모델을 통해 기존 모델 기반 컨트롤러의 한계를 극복하고 태스크 민감한 파라미터 불확실성을 명시적으로 모델링함. 그 결과, 기존 방법 대비 최대 3배 향상된 높은 강건성이 실험적으로 입증되어 신뢰도와 성능 모두를 확보했음."
+  },
+  {
+    "title": "TS-Mask VLA: 효과적인 브리징을 적용한 비전-언어-행동 모델을 위한 2D 시공간 마스킹",
+    "original_title": "TS-Mask VLA: 2D Temporal-Spatial Masking for Vision-Language-Action Model with Effective Bridging",
+    "link": "https://arxiv.org/abs/2607.09818",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "행동 생성의 한계(단순 토큰 예측)를 극복하기 위해 로봇 매니퓰레이션을 위한 Vision-Language-Action(VLA) 프레임워크인 TS-Mask VLA가 제안됨. 해당 모델은 VLM과의 다층 조건화를 가능하게 하는 Bridge Attention 기반의 Diffusion Expert와 시간-공간적 2D 마스킹 전략을 핵심 요소로 채택함. 그 결과, LIBERO 벤치마크에서 소형 모델임에도 95.7%의 높은 성공률을 기록하며, CALVIN 등 실제 환경 태스크에서 장기적이고 구조적으로 일관된 성능을 입증함."
   },
   {
     "title": "온다스(Ondas), DZYNE 인수 완료 및 국방 역량 확장 발표",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.04172v1 Announce Type: new \nAbstract: Task-conditioned manipulation requires grounding instructions to task-relevant functional parts rather than object categories. This setting is scene-dependent and often one-to-many in cluttered scenes: the same object may afford different interactions across tasks, while a single task may correspond to either one functional region or multiple valid functional regions, depending on the scene layout. Existing affordance datasets and benchmarks remain misaligned with this setting, as they typically focus on grasping or object-level affordances, rely on synthetic scenes, or assume a single instruction-region correspondence. We present Affordance2Action (A2A), a benchmark-centered learning framework for scene-level, task-conditioned part affordance grounding. At its core is A2A-Bench, a manipulation-oriented benchmark that covers both single-region and multi-region instruction correspondences in everyday scenes, with the latter highlighting the ambiguity and diversity of affordance grounding in realistic multi-object environments. To construct it at scale, we build A2A-AffordGen, an agent-assisted annotation pipeline that combines language-model filtering, interactive part segmentation, instance-level mask-out refinement, task-reasoning instruction generation, and human verification. A2A-Bench's supervision further supports diverse downstream applications, with real-time affordance grounding and affordance-conditioned manipulation policies as two representative examples. Experiments show that A2A exposes substantial gaps in generic segmentation, VLM-based grounding, and affordance distillation baselines, while improving task-level localization and providing useful spatial priors for downstream manipulation. All datasets and code will be publicly released to promote open research."
-  },
-  {
-    "title": "DLO-Lab: Benchmarking Deformable Linear Object Manipulations with Differentiable Physics",
-    "original_title": "DLO-Lab: Benchmarking Deformable Linear Object Manipulations with Differentiable Physics",
-    "link": "https://arxiv.org/abs/2606.04206",
-    "date": "2026-06-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.04206v1 Announce Type: new \nAbstract: We address the challenge of enabling robots to manipulate deformable linear objects (DLOs), such as ropes, cables, and rubber bands. Prior work has primarily focused on narrow, task-specific problems, often relying on real-world demonstrations or handcrafted heuristics. Such approaches, however, struggle to scale to the wide variety of materials and tasks encountered in practice, and collecting sufficiently diverse real-world data is often impractical. Additionally, existing simulation environments offer limited support for the broad spectrum of material behaviors necessary for generalizable DLO manipulation. To overcome these limitations, we introduce a differentiable simulator explicitly designed for versatile DLO manipulation. Our simulator models a wide range of material properties-including (in)extensibility, elasticity, bending plasticity, and complex interactions with other objects-providing a robust foundation for learning and evaluating manipulation skills. Building on this simulator, we propose a benchmark suite of representative tasks that highlight the unique challenges of DLO manipulation. The successful execution of these tasks is often hindered by the topological complexity and grasp sensitivity inherent to DLOs. Therefore, we introduce a specialized DLO agent that explicitly manages these challenges by proposing strategic grasping points and decomposing long-horizon tasks to maximize control authority. Finally, we evaluate various policy-learning algorithms using our framework, alongside sim-to-real transfer experiments, demonstrating our platform's potential to advance DLO manipulation."
-  },
-  {
-    "title": "Towards Estimating Normal and Shear Interface Pressures in Prosthetic Sockets via Least Squares and Mechanics Modeling",
-    "original_title": "Towards Estimating Normal and Shear Interface Pressures in Prosthetic Sockets via Least Squares and Mechanics Modeling",
-    "link": "https://arxiv.org/abs/2606.04222",
-    "date": "2026-06-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.04222v1 Announce Type: new \nAbstract: Prosthetic socket fitting remains largely manual and iterative, and objective fit metrics are still limited. Part of the challenge is the lack of long-term real-life pressure data at the residual limb--socket interface. Traditional pressure sensors are prone to drift over time, and capture only normal pressures at sparse locations within the socket, missing a critical component for biomechanical analysis: shear. Although some sensors can report both normal and shear interface stresses, these components are often difficult to decouple because of measurement crosstalk. One potential path forward is to develop models that can augment available measurements. This work introduces a testbed to evaluate model performance under sparse pressure sensing using two complementary validation signals: (i) the global wrench (\\ie, total forces and moments expressed in an orthonormal frame) transmitted through the socket, by an artificial residual-limb, and (ii) local interface loads (\\ie, decoupled normal and shear pressure components in a right-hand-rule orthogonal frame that lives in each instrumented location) measured by sparse sensing clusters, each composed of four capacitance-sensing channels. Rather than presenting full-field pressure estimates, the focus is on an analysis sequence that quantifies how well candidate mechanical models explain both global and local measurements under controlled conditions. A quasi-static spring--mass contact model is evaluated, and its parameters are identified via a two-stage convex least-squares problem. Validation under static loading shows that estimating constant bias terms reduces steady offsets in the wrench channels and improves agreement with local measurements. A Pareto-front sensitivity analysis further illustrates how the trade-off between global and local objectives changes when bias terms are included."
   }
 ]
