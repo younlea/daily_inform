@@ -72,6 +72,78 @@
     "summary": "본 논문은 전신 균형, 롤링 접촉, 속도 의존적 자세 조절이 필요한 휴머노이드 롤러 스케이팅 구현을 위해 적대적 모션 사전 기반의 강화 학습 프레임워크를 제시함. 이 프레임워크는 Pump Glide 및 Push Glide 두 가지 보행을 독립적으로 학습하며, 이를 위해 모션 캡처 데이터를 활용한 별도의 정책 및 보상 아키텍처를 구축함. 시뮬레이션 환경에서 보행 품질, 속도 추적, 회전 등의 성능을 종합적으로 평가한 연구임."
   },
   {
+    "title": "산업 로봇 조작 환경에서의 VLA 모델을 위한 LoRA 미세 조정 효율성 연구",
+    "original_title": "On the Efficiency of LoRA Fine-Tuning for Vision-Language-Action Models in Industrial Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2607.10172",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 조작을 위한 Vision-Language-Action (VLA) 모델의 구현 시 Full Fine-Tuning(FFT) 대비 LoRA 기법의 효율성을 체계적으로 분석함. 그 결과, LoRA 랭크(r)가 32일 때 성능이 최적화되며, Vision-Language-Model (VLM)과 Vision Encoder 모두에 대한 적응이 필수적임이 밝혀짐. 이는 LoRA r=32를 적용하고 Vision Encoder를 온전히 미세 조정함으로써 VRAM을 획기적으로 절감하고도 성능 손실을 최소화하는 실용적인 구현 방안임을 시사함."
+  },
+  {
+    "title": "모델 불확실성 하의 한계 핸들링에서의 차량 안정화를 위한 확산-잔차 모델 예측 조향 제어",
+    "original_title": "Diffusion-Residual Model Predictive Steering Control for Vehicle Stabilization at the Limit of Handling under Model Uncertainty",
+    "link": "https://arxiv.org/abs/2607.10243",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "차량의 한계 핸들링(Limit of Handling) 조건에서 발생하는 모델 불확실성 문제를 해결하기 위해 Diffusion-Residual Model Predictive Control (D-res)을 제안함. 본 제어기는 조건부 확산 잔차 모델을 이용하여 추적해야 할 요 레이트 참조와 안정적인 핸들링 영역을 사전에 예측하여 선제적으로 제어를 수행함. 7-DOF 모델과 CarMaker 공동 시뮬레이션 검증 결과, D-res는 저마찰 기동 상황에서 최대 사이드 슬립을 줄이고 방향 안정성을 복원하는 성능을 입증했으며, 온라인 구동 시 낮은 계산 부하로 100 Hz 환경에서 실시간 적용이 가능함."
+  },
+  {
+    "title": "다중 작업 블록 밀기를 위한 단일 Diffusion-Policy 제어기 개발 및 Zero-Shot Sim-to-Real 전이 적용",
+    "original_title": "A Single Diffusion-Policy Controller for Multi-Task Block Pushing with Zero-Shot Sim-to-Real Transfer",
+    "link": "https://arxiv.org/abs/2607.10892",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 Multi-task robotic manipulation을 위해 Reinforcement Learning(RL) 기반의 단일 diffusion policy 학습 프레임워크를 제시함. 기존 Behavior Cloning(BC) 기반의 손실 함수를 RL에 적용하여 다중 블록 밀기 작업에 활용하며, 역방향 커리큘럼 생성 및 objective-centric representations를 도입함. 훈련된 정책이 목표 위치, 블록 형태, 마찰 등 다양한 환경 조건 변화 속에서도 Zero-shot Sim-to-Real 전이가 가능함을 실제 블록 밀기 실험을 통해 입증함."
+  },
+  {
+    "title": "Lightweight Flow Matching을 이용한 코끼리 모방 소프트 트렁크 전신 의미-액추에이션 접지 기술 개발",
+    "original_title": "Whole-Body Semantic-to-Actuation Grounding of Elephant-Inspired Soft-Trunk Motion via Lightweight Flow Matching",
+    "link": "https://arxiv.org/abs/2607.11018",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "근거리 인간-로봇 상호작용(HRI)에서 전신 표현을 구현하기 위한 소프트 트렁크 매니퓰레이터의 운동 제어 방안을 제시함. 연구진은 lightweight flow matching 기반의 전신 의미-액추에이션 접지 프레임워크를 제안하여, LLM 응답을 구조화된 의도-강도 튜플로 변환하고 rectifying-flow generator를 통해 실현 가능한 전신 트렁크 움직임을 샘플링함. 실험 결과, 제안된 프레임워크는 기존 대비 접지 정확도를 크게 향상하고 추론 시간을 단축하는 성과를 보였으며, 실제 HRI 환경에서는 해당 모션 채널 추가가 사용자 만족도를 46%에서 82%로 높이는 효과를 입증함."
+  },
+  {
+    "title": "GraspGraphNet: 그래프 구조 기반의 다중 체형 정교 그리핑 생성",
+    "original_title": "GraspGraphNet: Graph-Structured Multi-Embodiment Dexterous Grasp Generation",
+    "link": "https://arxiv.org/abs/2607.11031",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 손의 키네마틱 구조적 차이로 발생하는 정교 그리핑 생성의 어려움 해결을 위해 토폴로지 인식 프레임워크 GraspGraphNet을 제안함. 본 모델은 각 손을 URDF 기반의 키네마틱 그래프로 모델링하고, 계층적 객체 표면 인코딩과 미분 가능 전진 운동학 등을 결합하여 실행 가능한 관절 상태 및 팔 포즈를 직접 생성하는 것이 특징임. Barrett, Allegro, Shadow 등 다양한 손 모델로 학습된 공유 모델은 40개 객체 벤치마크에서 평균 83.48%의 성공률을 달성하며, 구조 변화에 대한 높은 강건성을 입증함."
+  },
+  {
+    "title": "PAKE: 부분 키네마틱 임베딩을 이용한 전신 로코-매니퓰레이션 학습",
+    "original_title": "PAKE: Learning Whole-Body Loco-Manipulation with Partial Kinematic Embeddings",
+    "link": "https://arxiv.org/abs/2607.11041",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고차원 액션 공간과 시스템 중복성 관리가 어려운 전신 로코-매니퓰레이션 문제 해결을 위해 새로운 제어 프레임워크를 제안함. 이 프레임워크는 Kinematic Normalizing Flow (KNF) 모델을 통해 다양한 부분 레퍼런스 모션을 생성하고, 이를 고수준/저수준 컨트롤러가 결합하여 물리적으로 타당하고 정확한 움직임을 구현함. 사족 보행 로봇에 적용한 결과, 기존 SOTA 대비 우수한 트래킹 정확도와 작업 공간 커버리지를 달성하며 실용적이고 강력한 전신 로봇 솔루션을 입증함."
+  },
+  {
+    "title": "GeoGS-SLAM: 기하학적 사전 정보를 활용한 온라인 단안(Monocular) 재구성 및 Gaussian Splatting 기술 적용",
+    "original_title": "GeoGS-SLAM: Online Monocular Reconstruction Using Gaussian Splatting with Geometric Priors",
+    "link": "https://arxiv.org/abs/2607.11184",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "3D Gaussian Splatting (3DGS) 기반 SLAM의 한계를 극복한 GeoGS-SLAM 시스템이 개발됨. 본 시스템은 학습된 기하학적 사전 정보(geometric priors)를 3DGS 지도 표현에 결합하여 온라인 단안 재구성을 구현함. 피드포워드 모델을 이용해 사전 정보를 예측하고, 광도 및 기하학적 손실을 공동 최적화하는 방식을 통해 실시간 환경에서 최첨단 재구성 품질과 추적 정확도를 달성함."
+  },
+  {
+    "title": "지연 시간 인지형 고유수용성 네비게이션 원시 요소 기반의 맵리스 사족 보행 로봇 검사",
+    "original_title": "Stop to Decide: Latency-Aware Proprioceptive Navigation Primitives for Mapping-Free Quadruped Inspection",
+    "link": "https://arxiv.org/abs/2607.11204",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "Compute-constrained 환경에서 발생하는 낮은 네비게이션 루프 속도 문제를 해결하고자 지연 시간을 고려한 고유수용성 네비게이션 기법을 제안함. 이 시스템은 추가적인 매핑이나 학습 과정 없이, 온보드 IMU, 발력 센서 등을 활용하여 계단 이동, 라인 팔로우, 90도 코너링 등 복합적인 검사 임무를 수행함. 테스트 결과, 로봇은 19 Hz의 임계 루프 속도에서도 높은 안정성을 유지했으며, 실제 검사 코스에서 90%의 성공률을 달성함."
+  },
+  {
     "title": "온다스(Ondas), DZYNE 인수 완료 및 국방 역량 확장 발표",
     "original_title": "Ondas acquires DZYNE for $875.8M, expanding its defense capabilities",
     "link": "https://www.therobotreport.com/ondas-acquires-dzyne-875-8m-expanding-its-defense-capabilities/",
@@ -17926,77 +17998,5 @@
     "source": "Google News (NVIDIA GTC)",
     "category": "humanoid",
     "summary": "NVIDIA CEO Jensen Huang Highlights Robotics Investment Potential in South Korea  aju press"
-  },
-  {
-    "title": "Robotics firm Eternal and seed breeder Rijk Zwaan partner to optimize tomato varieties for greenhouse automation",
-    "original_title": "Robotics firm Eternal and seed breeder Rijk Zwaan partner to optimize tomato varieties for greenhouse automation",
-    "link": "https://roboticsandautomationnews.com/2026/06/03/robotics-firm-eternal-and-seed-breeder-rijk-zwaan-partner-to-optimize-tomato-varieties-for-greenhouse-automation/102198/",
-    "date": "2026-06-03 07:14",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "eternal.ag and Rijk Zwaan are collaborating in exploring which tomato varieties can support robotic crop work operations in greenhouses. By sharing knowledge and insights, the initiative aims to better understand which plant characteristics are suited for a future where crop work in greenhouse environments is fully automated. By combining Rijk Zwaan’s global experience in fruit […]"
-  },
-  {
-    "title": "Yamaha expands autonomous farming platform with new weed-control system for orchards and vineyards",
-    "original_title": "Yamaha expands autonomous farming platform with new weed-control system for orchards and vineyards",
-    "link": "https://roboticsandautomationnews.com/2026/06/03/yamaha-expands-autonomous-farming-platform-with-new-weed-control-system-for-orchards-and-vineyards/102195/",
-    "date": "2026-06-03 07:07",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Yamaha Agriculture is expanding the capabilities of its Prospr autonomous farming platform with a new herbicide attachment designed to automate weed control in orchards and vineyards. Developed with Croplands Equipment, the system adds precision herbicide application to Prospr’s growing list of autonomous field operations, helping specialty crop growers reduce labor requirements, improve spraying consistency, and […]"
-  },
-  {
-    "title": "Why Precision Swiss Machining is Critical to the Future of Robotics and Automation",
-    "original_title": "Why Precision Swiss Machining is Critical to the Future of Robotics and Automation",
-    "link": "https://roboticsandautomationnews.com/2026/06/03/why-precision-swiss-machining-is-critical-to-the-future-of-robotics-and-automation/102192/",
-    "date": "2026-06-03 06:08",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "The rapid growth of robotics, factory automation, and intelligent manufacturing systems is transforming industrial production worldwide. Modern manufacturing environments increasingly rely on highly precise mechanical systems capable of operating continuously with minimal deviation, especially as automation technologies become more advanced and interconnected. From collaborative robots and automated assembly systems to sensor-driven manufacturing equipment, precision-engineered components […]"
-  },
-  {
-    "title": "BYD-backed robotics firm PaXini weighs Hong Kong IPO - CnEVPost",
-    "original_title": "BYD-backed robotics firm PaXini weighs Hong Kong IPO - CnEVPost",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9xLW90cnpPQzZhWjYxRUxxclQ3ZnhYQ0ZqZXRNSEtzZjVNVDdJQVRJSk1PY1FOYXQ1WUR0LWcxSlNyaHB0S0NsTmhtWC1QRkFnUVNZYm9PV1JwRVNVaU1FV1J3cmlHOF9sa2MzMTBJN0xGZmV3alE?oc=5",
-    "date": "2026-06-03 05:52",
-    "source": "Google News (China Hand/Sensor Startups - EN)",
-    "category": "hand",
-    "summary": "BYD-backed robotics firm PaXini weighs Hong Kong IPO  CnEVPost"
-  },
-  {
-    "title": "Investors bet humanoid robots will transform industry and homes over the next decade - CNBC",
-    "original_title": "Investors bet humanoid robots will transform industry and homes over the next decade - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPb3YzODd0aFllSUd5aW1iSWd5Vm5KS0twRzdaYXQza2NlS3pJLVZWTEp1X1hNTFVpSWRKeW9jUnJJbTdKa3J6clZQQUNQdUc3MWdwc2E5MEhscFk4Umw4WjI4cF9TQXplaWllU3IxY0lObTM3NVBMSmdEWndiVHVqeDJPaV_SAYoBQVVfeXFMTXJQcTRqNVQ0X1lROEptVUQxNk8yWjBlT0RBb0puc2F4S3FTRklib29BaHRobWUxVXdLNVdTR0pTWWlwaUFVX2pWSGl5M05mMTEzdDJMS0dCNTRZVGh2ZGhrVGV4YlBZNUM3MG1udThBTndPQVhWMGI4S0xKcFlFV3hfYjZiOUpGWFBR?oc=5",
-    "date": "2026-06-03 05:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Investors bet humanoid robots will transform industry and homes over the next decade  CNBC"
-  },
-  {
-    "title": "PaXini is testing Hong Kong's appetite for China's robotics boom - Startup Fortune",
-    "original_title": "PaXini is testing Hong Kong's appetite for China's robotics boom - Startup Fortune",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOd1lFajRRemlraWtCSEg5aDRFWkdhMm5ERUJmM0pLYkR0dVJaTHpxcmhBT1hpUHBsaWl6QjdNMWIwTUk0MmJYQXA0dFVfT2EySkdxRExFMVNvOFctOUwxMW5SRmpBdVhOMUh1WGRmZVdxNG9PZmxZZ002SG80dF9rOHJHeGw2ektBbUxkRUtOREdBNnAx?oc=5",
-    "date": "2026-06-03 04:29",
-    "source": "Google News (China Hand/Sensor Startups - EN)",
-    "category": "hand",
-    "summary": "PaXini is testing Hong Kong's appetite for China's robotics boom  Startup Fortune"
-  },
-  {
-    "title": "Universal bioinspired adhesives for arbitrary unknown surfaces toward dexterous robotic manipulation - Nature",
-    "original_title": "Universal bioinspired adhesives for arbitrary unknown surfaces toward dexterous robotic manipulation - Nature",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9CTE96TmpQcURjaldqWWZWdVcyeFVEX211aFl4Unk5YVl1c0laaHpYbzBqTEFFbG10MXRHR3RkOXo2T3dnSVF1dnpFX1V4OVlnS1c2UzRyTzlXazJCSmFv?oc=5",
-    "date": "2026-06-03 04:29",
-    "source": "Google News (Global Hand/Gripper)",
-    "category": "hand",
-    "summary": "Universal bioinspired adhesives for arbitrary unknown surfaces toward dexterous robotic manipulation  Nature"
-  },
-  {
-    "title": "SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos",
-    "original_title": "SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos",
-    "link": "https://arxiv.org/abs/2606.02745",
-    "date": "2026-06-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.02745v1 Announce Type: new \nAbstract: Vision-language-action models (VLAs) are promising general-purpose robot policies, but adapting them to new tasks typically requires costly task-specific teleoperation data. As an alternative, we study one-shot demo-conditioned VLAs, where a robot policy is conditioned on a single demonstration video of an unseen task. We find that existing end-to-end approaches often struggle when successful execution requires precisely localizing small target regions. To address this limitation, we propose SeeTraceAct, a demo-conditioned VLA framework that encourages precise spatial grounding through visibility-aware prediction of future end-effector traces. To enable reproducible evaluation with cross-embodiment demonstrations, we introduce and release RoboCasa-DC, a demo-conditioned extension of RoboCasa with episode-paired humanoid videos. Experiments on RoboCasa-DC and a real-world benchmark, where a Franka Panda arm is conditioned on human demonstrations, show that SeeTraceAct outperforms baselines, achieving the best success rate across all four RoboCasa-DC settings and improving real-world average success by 12.5 percentage points."
   }
 ]
