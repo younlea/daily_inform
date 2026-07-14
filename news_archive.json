@@ -1,5 +1,14 @@
 [
   {
+    "title": "휴머노이드 글로벌, MBody AI 기술 진전 발표",
+    "original_title": "Humanoid Global Announces MBody AI’s Advancements",
+    "link": "https://humanoidroboticstechnology.com/industry-news/humanoid-global-announces-mbody-ais-advancements/",
+    "date": "2026-07-14 08:10",
+    "source": "Humanoid Tech Blog",
+    "category": "humanoid",
+    "summary": "휴머노이드 로봇 및 Embodied AI 분야에 집중하는 투자사 Humanoid Global Holdings Corp.가 포트폴리오사 MBody AI Corp.의 기술 발전상을 공식 발표함. MBody AI는 Humanoid Global가 소수 지분을 보유한 회사로, 해당 발표는 MBody AI가 2026년 3월을 기점으로 지속적으로 쌓아온 진전된 성과에 초점을 맞추고 있음."
+  },
+  {
     "title": "로봇 매니퓰레이터의 혼잡 환경 대응을 위한 에이전트 AI 기반 내비게이션 및 장애물 회피 시스템 (RoboNav-Arm)",
     "original_title": "RoboNav-Arm: Agentic AI-Driven Navigation and Obstacle Avoidance for Robotic Manipulator in Cluttered Environments",
     "link": "https://arxiv.org/abs/2607.09716",
@@ -358,6 +367,78 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "본 논문은 복잡한 비선형 동역학을 갖는 시스템을 위한 효율적인 Model Predictive Path Integral (MPPI) 제어 프레임워크를 제시함. 계산 효율 개선을 위해 비선형 동역학을 학습된 선형 Deep Koopman Operator (DKO) 모델로 대체하여 궤적 샘플링 속도를 획기적으로 개선함. DKO 모델은 상호작용 데이터에서 직접 학습되어 시스템 모델의 필요성을 없애며, 사족 보행 로봇 실험을 통해 기존 MPPI에 준하는 제어 성능을 유지하면서 실시간 제어에 필요한 계산 비용을 절감하는 것이 입증됨."
+  },
+  {
+    "title": "행동 레이블링된 시연과 액션 비포함 영상으로부터 실행 가능한 잠재 행동을 학습하는 WALA 프레임워크",
+    "original_title": "WALA Learning Executable Latent Actions from Action-Labeled Demonstrations and Action-Free Videos",
+    "link": "https://arxiv.org/abs/2607.11397",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "일반적인 로봇 정책이 직면하는 데이터 수집의 비효율성을 해결하기 위해 WALA 프레임워크를 제시함. 본 방법론은 행동 레이블이 있는 시연 데이터와 라벨이 없는 대규모 비디오를 모두 활용하여, DINOv3 특성 공간 기반으로 실행 가능한 잠재 행동을 학습하는 것이 핵심임. 실험 결과, RoboTwin에서 우수한 성능을 기록하고 RoboCasa에서 평균 성공률 75.2%의 최고 기록(SOTA)을 달성하며 실제 매니퓰레이션 작업에서 정책 성능 및 일반화 성능 개선을 입증함."
+  },
+  {
+    "title": "작업 복귀 환경에서의 상지 이동성 장애를 위한 온라인 로봇 상호작용 적응 기법 연구",
+    "original_title": "Towards Online Robot Interaction Adaptation to Human Upper-limb Mobility Impairments in Return-to-Work Scenarios",
+    "link": "https://arxiv.org/abs/2510.05425",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "상지 이동성 장애를 겪는 사용자의 업무 참여를 촉진하기 위한 새로운 온라인 적응형 Human-Robot Interaction (HRI) 프레임워크를 제시함. 본 프레임워크는 이동성 모델을 계층적 최적 제어기에 통합하여, 로봇이 사용자 장애 부위를 고려한 반응적이고 이동성 인식적인 행동을 실시간으로 생성할 수 있도록 구현됨. 이 방법론은 다양한 상지 장애가 있는 상황에서 핸드오버(handover) 태스크를 통해 테스트되었으며, 사용자의 기능적 제한 범위에 맞춰 상호작용을 개인화하고 관절 사용을 촉진하는 결과를 확인함."
+  },
+  {
+    "title": "InCoM: 모바일 매니퓰레이션을 위한 의도 기반 인지 및 구조적 협력",
+    "original_title": "InCoM: Intent-Driven Perception and Structured Coordination for Mobile Manipulation",
+    "link": "https://arxiv.org/abs/2602.23024",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "모바일 매니퓰레이션의 핵심 난제인 기지-매니퓰레이터 간의 결합 문제와 동적 시점 변화에 따른 인지 분산 문제를 해결하기 위해 InCoM 프레임워크가 제안됨. 본 프레임워크는 의도(intent) 추론을 통해 다중 스케일 인지 특징의 가중치를 동적으로 재조정하고, 디커플링된 Flow Matching Action Decoder를 활용하여 제어 결합 문제를 완화하는 것이 특징임. 실험 결과, ManiSkill-HAB 세 가지 시나리오에서 기존 SOTA 대비 각각 28.2%, 26.1%, 23.6%의 성공률 향상을 기록하였으며, 실제 환경에서도 우수한 성능을 입증함."
+  },
+  {
+    "title": "가우시안 궤적 예측기 재고찰: 안전한 계획을 위한 불확실성 보정",
+    "original_title": "Rethinking Gaussian Trajectory Predictors: Calibrated Uncertainty for Safe Planning",
+    "link": "https://arxiv.org/abs/2603.10407",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "자율 주행 환경의 안전한 궤적 예측을 위해, 본 연구는 기존 Gaussian 예측기가 가진 신뢰할 수 없는 확신 수준(Confidence Level)의 문제점을 제기함. 이에 대한 해결책으로, KDE를 활용하여 예측 불확실성을 보정하는 새로운 손실 함수를 제안하고, 이 손실 함수가 Chi-squared 분포의 속성과 일치하도록 설계함. 실험 결과, 해당 방법론은 궤적 예측기의 신뢰성을 획기적으로 개선하여, Model Predictive Control(MPC)과 같은 안전 계획 알고리즘의 복잡한 실세계 시나리오에서의 성능을 향상시키는 데 기여함을 입증함."
+  },
+  {
+    "title": "SmoothTurn: 사족보행 로봇의 민첩한 주행을 위한 부드러운 회전 학습 방법론",
+    "original_title": "SmoothTurn: Learning to Turn Smoothly for Agile Navigation with Quadrupedal Robots",
+    "link": "https://arxiv.org/abs/2603.12842",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "사족보행 로봇의 임무 수행 시 발생하는 연속적인 방향 전환 및 운동량 유지의 어려움을 해결하기 위해 SmoothTurn 프레임워크를 개발함. 이 프레임워크는 순차 목표 달성을 위한 새로운 보상 설계, 미래 목표를 관측하는 확장된 시야(lookahead) 공간, 자동 목표 커리큘럼 등을 적용함. 그 결과, 로봇이 목표 지점을 전환할 때도 부드러운 회전과 운동량 제어를 유지하는 민첩한 이동 정책을 학습하고 실시간 로봇 환경에서 그 성능을 입증함."
+  },
+  {
+    "title": "저비용 산업용 빈 피킹을 위한 6D 포즈 추정 기술 활용 시스템, Pickalo",
+    "original_title": "Pickalo: Leveraging 6D Pose Estimation for Low-Cost Industrial Bin Picking",
+    "link": "https://arxiv.org/abs/2604.04690",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "산업 환경에서 빈번한 클러터와 높은 센서 비용 문제를 해결하기 위해, Pickalo는 저비용 하드웨어 기반의 6D 포즈 추정 빈 피킹 파이프라인을 제시함. 이 시스템은 손목 장착형 RGB-D 카메라를 활용하고, Mask-RCNN과 zero-shot SAM-6D 같은 모델로 객체를 세분화하며, Pose Buffer 모듈을 통해 다중 시점 관찰 데이터를 통합하여 포즈 노이즈를 줄임. 실제 UR5e 로봇에 적용하여 시간당 평균 600개의 높은 성공률(96-99%)을 달성하며, 강력한 성능과 안정성을 입증함."
+  },
+  {
+    "title": "모션 생성 및 추적 기반 전신 휴머노이드 로코모션 학습 기술 연구",
+    "original_title": "Learning Whole-Body Humanoid Locomotion via Motion Generation and Motion Tracking",
+    "link": "https://arxiv.org/abs/2604.17335",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "전신 휴머노이드 로코모션은 고차원 제어 및 실시간 지형 변화 적응이 필수적임. 본 연구에서는 참조 모션 기반 학습과 지형 인식 적응력을 결합한 프레임워크를 제안함. 구체적으로 확산 모델(diffusion model)을 활용해 지형 인식 레퍼런스 모션을 예측하고, 이를 바탕으로 RL 기반 전신 레퍼런스 트래커를 학습시켜 안정성을 확보함. 이 시스템은 Unitree G1 휴머노이드 로봇에 성공적으로 구현되어 계단, 장애물 등 다양한 복합 지형에서 우수한 이동 능력과 전신 적응력을 입증함."
+  },
+  {
+    "title": "촉각 인지 사족 보행체 이동-조작 정책 학습",
+    "original_title": "Learning Tactile-Aware Quadrupedal Loco-Manipulation Policies",
+    "link": "https://arxiv.org/abs/2604.27224",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "사족 보행체의 접촉 기반 이동-조작 과제를 해결하기 위해 촉각 인지(tactile-aware) 고수준 정책 학습 파이프라인을 제시함. 본 시스템은 인간 시연 데이터를 활용한 시각-촉각 고수준 정책과 대규모 강화학습 기반의 전신 제어 정책을 계층적으로 결합함. 그 결과, 인-핸드 리오리엔테이션 및 밸브 조임 등 접촉이 풍부한 실세계 작업에서 기존 방식 대비 평균 28.54%의 성능 향상을 입증함."
   },
   {
     "title": "온다스(Ondas), DZYNE 인수 완료 및 국방 역량 확장 발표",
@@ -17917,86 +17998,5 @@
     "source": "Google News (NVIDIA GTC)",
     "category": "humanoid",
     "summary": "NVIDIA Unveils Isaac GR00T Humanoid Reference Platform  Let's Data Science"
-  },
-  {
-    "title": "BYD enters humanoid robot market, may sell through dealer network - Moomoo",
-    "original_title": "BYD enters humanoid robot market, may sell through dealer network - Moomoo",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQN3l2UG5XYkozMHVWdUdSbUpVYlk2UG5tQlBFbXFBaVJvM2Vqamlfeng2aVk0VXduVTZfNFJ6eDlFUXlKZEN5WldTWWkyajF1TnZFdWFCdmJ1WklMX1ZsclI0bzUxTURhQVZwZXNHNTRGTmU5dEp5NTRNWmF5b2xRdWYwSlFSUmFyVTlXN3gzajJBaUx0MlJMYXgzYVp0UWJzb3BJX2p1VlU1ZmpBZGdDRzVkOUpUZjZYcGc?oc=5",
-    "date": "2026-06-04 00:00",
-    "source": "Google News (China Hand/Sensor Startups - EN)",
-    "category": "hand",
-    "summary": "BYD enters humanoid robot market, may sell through dealer network  Moomoo"
-  },
-  {
-    "title": "BYD enters humanoid robot market, may sell through dealer network - Moomoo",
-    "original_title": "BYD enters humanoid robot market, may sell through dealer network - Moomoo",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPS1pYM2wyNFM0eTN1QU85eHRhS2hvWmNiVE9YNV9sOE5lWndhZ0phZ1A1ZTl0LTVDRHk3NWZWTXhBVFA2RkNjT0dTTTRIXy1wdjhpQTdORFM3TlNvNE5aa2xOempuVzAtbi1UWWktZHFxdl8zMXI4MDVpdkQ1N0tNZXdxTlh6N1RyZ0x2UUlkRHNRWkRnV3JlU1pHcXBodGZ5SFZMazdtYXRtMWJBS29neHVreTFwMWpn?oc=5",
-    "date": "2026-06-04 00:00",
-    "source": "Google News (China Hand/Sensor Startups - EN)",
-    "category": "hand",
-    "summary": "BYD enters humanoid robot market, may sell through dealer network  Moomoo"
-  },
-  {
-    "title": "US partnership highlights China’s growth - KLSE Screener",
-    "original_title": "US partnership highlights China’s growth - KLSE Screener",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcGtJSllzS1FlMlROeHpjTFJZUkhSQm03OGNoOEw5RWFjX3MyYzFqa1UxTXNZdFBoMUExbjl2M0ZSZFlBMDFBdVp0aG4wOXJESWluQzlfZXZNRVV0aHM5MC1NLWZHc1VoWldhWGtlaG9pVUJRTGlaaWNESjhNTzR1UU9WcloxQXNsaFg0XzRDRk5EYzZR?oc=5",
-    "date": "2026-06-03 23:13",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "US partnership highlights China’s growth  KLSE Screener"
-  },
-  {
-    "title": "US partnership highlights China’s growth - KLSE Screener",
-    "original_title": "US partnership highlights China’s growth - KLSE Screener",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdWhoMFludkZoZXpIbU9PcmNZckQ1WkF2Tks3RjlJcXB6dnJ3Sl9NdTBmYUx0MS11dERGbmQwX1ExS0p3ZmIwOTM1OC15UHVGQzBiWjJieGI0WlU3aV9IQUdlSTVUNGNheXo4ZWNjbUZOSmU0R3lVakFJZDdXZ01NUjhCdENWbnVJOUlSVDI0eS1OZXNU?oc=5",
-    "date": "2026-06-03 23:13",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "US partnership highlights China’s growth  KLSE Screener"
-  },
-  {
-    "title": "Autonomous defense manufacturer Mach Industries raises $300M",
-    "original_title": "Autonomous defense manufacturer Mach Industries raises $300M",
-    "link": "https://www.therobotreport.com/autonomous-defense-manufacturer-mach-industries-raises-300m/",
-    "date": "2026-06-03 21:41",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Mach Industries will use the funding to accelerate executing government contracts, acquire talent, develop products, and expand its network. \nThe post Autonomous defense manufacturer Mach Industries raises $300M appeared first on The Robot Report."
-  },
-  {
-    "title": "Finding the best ways for humans and robots to work together requires 'swarm' thinking",
-    "original_title": "Finding the best ways for humans and robots to work together requires 'swarm' thinking",
-    "link": "https://techxplore.com/news/2026-06-ways-humans-robots-requires-swarm.html",
-    "date": "2026-06-03 19:40",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "If the future of warehouse work belongs to humans and robots working side by side, a key question remains: What is the most effective way for them to collaborate?"
-  },
-  {
-    "title": "Nvidia Powers Unitree's H2 Plus Humanoid With AI Brain - The Tech Buzz",
-    "original_title": "Nvidia Powers Unitree's H2 Plus Humanoid With AI Brain - The Tech Buzz",
-    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZ2Y1cXJjSXFWX3ExUlRLOG5wZFlhUnBkMmdjSF9JSXkwTVkzZTdadEozWkVvTEI2TFdJbG9PbkRIcjl1UDhCSDhSbzFUYmNNWmNvY2Z3YmdXekVKbXZ1MG14bTU0aVVDaWFfdXFRdVZVTDl2Zi1JcElvR25ORm9nR2YtSElEOEkwUkxxMnNlQkI?oc=5",
-    "date": "2026-06-03 18:50",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Nvidia Powers Unitree's H2 Plus Humanoid With AI Brain  The Tech Buzz"
-  },
-  {
-    "title": "ABB and Salzburg researchers patent AI system to cut energy use in industrial robots",
-    "original_title": "ABB and Salzburg researchers patent AI system to cut energy use in industrial robots",
-    "link": "https://roboticsandautomationnews.com/2026/06/03/abb-and-salzburg-researchers-patent-ai-system-to-cut-energy-use-in-industrial-robots/102231/",
-    "date": "2026-06-03 18:38",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Salzburg University of Applied Sciences and ABB’s Machine Automation Division – B&R –  are working together to apply artificial intelligence to improve energy efficiency in industrial automation. The collaboration, anchored in the Josef Ressel Center for Intelligent and Secure Industrial Automation (JRZ ISIA), focuses on translating advanced research into practical solutions for industrial drive systems. […]"
-  },
-  {
-    "title": "Robotiq launches AI platform to automate robotic workcell integration",
-    "original_title": "Robotiq launches AI platform to automate robotic workcell integration",
-    "link": "https://roboticsandautomationnews.com/2026/06/03/robotiq-launches-ai-platform-to-automate-robotic-workcell-integration/102227/",
-    "date": "2026-06-03 18:23",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Robotiq has introduced IQ, an AI-enabled platform designed to make robotic Workcell integration faster, more predictable, and easier to scale. Enabling a much-needed shift from a manual, expert-dependent approach to automatic integration, IQ captures unstructured automation project data, coordinates engineering workflows, and helps partners generate validated workcell designs based on real customer inputs and historical […]"
   }
 ]
