@@ -441,6 +441,60 @@
     "summary": "사족 보행체의 접촉 기반 이동-조작 과제를 해결하기 위해 촉각 인지(tactile-aware) 고수준 정책 학습 파이프라인을 제시함. 본 시스템은 인간 시연 데이터를 활용한 시각-촉각 고수준 정책과 대규모 강화학습 기반의 전신 제어 정책을 계층적으로 결합함. 그 결과, 인-핸드 리오리엔테이션 및 밸브 조임 등 접촉이 풍부한 실세계 작업에서 기존 방식 대비 평균 28.54%의 성능 향상을 입증함."
   },
   {
+    "title": "WarpMPC: 언롤드 $LDL^\\top$ 분해를 활용한 GPU 기반 대규모 배치 MPC 가속화 기술",
+    "original_title": "WarpMPC: Large-Batch MPC on GPU via ADMM with Unrolled $LDL^\\top$ Factorization",
+    "link": "https://arxiv.org/abs/2607.11603",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "본 논문은 대규모 배치(10,000개 이상)의 MPC 문제를 GPU 환경에서 처리하기 위한 수치 최적화 방안을 제시함. WarpMPC 툴박스는 MPC 문제들이 공유하는 희소성(sparsity)을 활용하여 ADMM 솔버의 주요 계산 단계를 언롤링(unrolling)하고, 메모리 최적화 및 종속성 스케줄링을 통해 병목 현상을 해결함. 그 결과, 나노 쿼드로터 및 휴머노이드 로봇 같은 까다로운 로봇 벤치마크에서 초당 25만 회 이상의 SQP 반복률을 달성하며 기존 대비 대폭적인 처리 속도 향상을 입증함."
+  },
+  {
+    "title": "IBPA: 통합 결손부 감지를 활용한 증분 볼 피보팅 기반 실시간 자유형 매니폴드 메시 재구성",
+    "original_title": "IBPA: Real-time Free-form Manifold Mesh Reconstruction via Incremental Ball Pivoting with Integrated Hole Detection",
+    "link": "https://arxiv.org/abs/2607.11627",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "수중 로봇(ROV/AUV)의 측량 데이터 결손 문제와 기존 모델의 표현 한계를 극복하기 위해 IBPA(Incremental BPA)가 개발됨. 본 방법은 스트리밍 포인트 클라우드 데이터로부터 실시간으로 자유형의 매니폴드 메시를 증분 재구성하며, 통합 결손부 감지 기능을 통해 복잡하고 비정형적인 수중 표면 토폴로지까지 처리할 수 있는 것이 특징임."
+  },
+  {
+    "title": "DTEA(듀얼 토폴로지 엘라스틱 액추에이터): 시리즈 및 병렬 컴플라이언스 간 실시간 전환을 지원하는 신규 개발 액추에이터",
+    "original_title": "DTEA: A Dual-Topology Elastic Actuator Enabling Real-Time Switching Between Series and Parallel Compliance",
+    "link": "https://arxiv.org/abs/2604.15865",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 액추에이터가 구현하기 어려웠던 SEA(Series Elastic Actuator)와 PEA(Parallel Elastic Actuator) 토폴로지 간의 실시간 동적 전환을 가능하게 하는 DTEA가 개발됨. 개발된 프로토타입은 부하 조건에서 324회의 토폴로지 전환 사이클을 손상 없이 수행하는 안정성을 입증함. 특히, 전환 시간은 33.33ms 미만으로 매우 빠르며, PEA 모드는 SEA 모드 대비 높은 강성과 향상된 외란 거동 성능을 보임."
+  },
+  {
+    "title": "원자력 해체 공정 로봇 레이저 절단 시뮬레이션을 위한 저비용 목업 제시",
+    "original_title": "A low-cost mockup to simulate robotic laser cutting in nuclear decommissioning",
+    "link": "https://arxiv.org/abs/2605.08947",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 원자력 해체 과정 중 컨테이너 절단 작업을 시뮬레이션할 수 있는 저비용 실험 목업을 공개함. 해당 시스템은 6-DOF 매니퓰레이터와 비전 시스템을 활용하며, 보정 과정이 필요 없는 제약 조건 기반의 적응형 동작 제어기(adaptive motion controller)를 채택하여 충돌 회피 기능을 구현함. 특히, 전체 엔드-이펙터 포즈가 아닌 4-DOF의 자외선(UV) 빔 제어를 통해 추적 경로를 제어함으로써, 초기 보정 없이도 높은 수준의 평균 추적 정확도를 확보했음이 입증됨."
+  },
+  {
+    "title": "TactileReflex: 노이즈 통계 기반 비전-촉각 반사 제어를 통한 힘 민감 조작",
+    "original_title": "TactileReflex: Noise-Statistics-Driven Vision-Tactile Reflex Control for Force-Sensitive Manipulation",
+    "link": "https://arxiv.org/abs/2605.23568",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "취약한 컨테이너와 같은 대상의 조작은 실시간으로 좁은 힘 마진 내에서 정밀한 힘 적응을 요구함. 본 연구는 노이즈 통계 기반의 캘리브레이션 드라이브 반사 제어 패러다임을 제시하며, 비전-촉각 센서의 고유 노이즈 특성 분석만으로 컨트롤러 임계값을 도출하여 외부 캘리브레이션 과정을 생략함. 이 3채널 클로즈드 루프 컨트롤러(TactileReflex)는 전단 강도, 접촉 강도, 압력 중심 등의 프록시 값을 활용하여 미끄럼 억제, 무게 적응형 분리, 힘 보호를 수행하며, 동적 포링 작업에서 높은 성공률을 보여 고차원 제어 파이프라인에 적용 가능한 플러그 앤 플레이 안전 레이어 역할을 할 수 있음을 입증함."
+  },
+  {
+    "title": "관측 불가능한 무작위 지연에 대응하는 적응적 강화 학습 기법",
+    "original_title": "Adaptive Reinforcement Learning for Unobservable Random Delays",
+    "link": "https://arxiv.org/abs/2506.14411",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존의 강화 학습(RL) 모델(MDP)은 시스템과 에이전트 간의 상호작용을 순간적이고 이상적으로 가정하는 한계가 있어, 현실 세계의 무작위적이고 관측 불가능한 지연 문제에 직면함. 이에 본 연구는 시간 변화가 심하고 관측이 어려운 지연을 적응적으로 처리하는 '상호작용 레이어(interaction layer)' 프레임워크를 제시함. 이를 기반으로 개발된 ACDA(Actor-Critic with Delay Adaptation) 알고리즘은 지연 패턴 변화에 동적으로 적응하며, 실제 측정된 지연이 포함된 다양한 로코모션 벤치마크 환경에서 최고 수준의 성능을 입증함."
+  },
+  {
     "title": "온다스(Ondas), DZYNE 인수 완료 및 국방 역량 확장 발표",
     "original_title": "Ondas acquires DZYNE for $875.8M, expanding its defense capabilities",
     "link": "https://www.therobotreport.com/ondas-acquires-dzyne-875-8m-expanding-its-defense-capabilities/",
@@ -17944,59 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2602.12215v2 Announce Type: replace \nAbstract: Recent robot foundation models largely rely on large-scale behavior cloning, which imitates expert actions but discards transferable dynamics knowledge embedded in heterogeneous embodied data. While the Unified World Model (UWM) formulation has the potential to leverage such diverse data, existing instantiations struggle to scale to foundation-level due to coarse data usage and fragmented datasets. We introduce LDA-1B, a robot foundation model that scales through universal embodied data ingestion by jointly learning dynamics, policy, and visual forecasting, assigning distinct roles to data of varying quality. To support this regime at scale, we assemble and standardize EI-30k, an embodied interaction dataset comprising over 30k hours of human and robot trajectories in a unified format. Scalable dynamics learning over such heterogeneous data is enabled by prediction in a structured DINO latent space, which avoids redundant pixel-space appearance modeling. Complementing this representation, LDA-1B employs a multi-modal diffusion transformer to handle asynchronous vision and action streams, enabling stable training at the 1B-parameter scale. Experiments in simulation and the real world show LDA-1B outperforms prior methods (e.g., $\\pi_{0.5}$) by up to 21\\%, 48\\%, and 23\\% on contact-rich, dexterous, and long-horizon tasks, respectively. Notably, LDA-1B enables data-efficient fine-tuning, gaining 10\\% by leveraging 30\\% low-quality trajectories typically harmful and discarded."
-  },
-  {
-    "title": "3PoinTr: 3D Point Tracks for Learning Manipulation from Unconstrained Human Videos",
-    "original_title": "3PoinTr: 3D Point Tracks for Learning Manipulation from Unconstrained Human Videos",
-    "link": "https://arxiv.org/abs/2603.08485",
-    "date": "2026-06-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.08485v2 Announce Type: replace \nAbstract: Learning manipulation policies from human videos could greatly reduce the need for expensive robot demonstrations, but existing approaches typically require restrictive assumptions such as choreographed human motions, predefined keypoints, manual annotations, or known grasp locations. We propose 3PoinTr, a method for pretraining sample-efficient robot policies from unconstrained human videos by predicting dense 3D point tracks. In the unconstrained human demonstration videos, humans are free to follow whatever trajectories and manipulation strategies they see fit, rather than choreographing their motions to mimic a robot. 3PoinTr uses a lightweight visibility-aware transformer to learn how scene points should move from human videos, and then trains a closed-loop multitask robot policy to flexibly extract action-relevant priors from those predicted point tracks. With only 20 action-labeled robot demonstrations, 3PoinTr achieves a 25.0 percentage point higher average success rate than the strongest behavior cloning and video-pretraining baselines on real-world tasks, and a 29.6 percentage point higher average success rate in simulation. Targeted ablations support the key design choices and confirm the benefit of learning from actionless videos. We further show that 3PoinTr's point track prediction transformer outperforms a strong baseline by preserving supervision over partially occluded points. Project page: https://adamhung60.github.io/3PoinTr/."
-  },
-  {
-    "title": "ZeroWBC: Learning Natural Whole-Body Humanoid Interaction from Human Egocentric Data",
-    "original_title": "ZeroWBC: Learning Natural Whole-Body Humanoid Interaction from Human Egocentric Data",
-    "link": "https://arxiv.org/abs/2603.09170",
-    "date": "2026-06-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2603.09170v2 Announce Type: replace \nAbstract: Achieving versatile and natural whole-body humanoid interaction control remains challenging due to the high cost of whole-body teleoperation data. We present ZeroWBC, a teleoperation-free framework that learns humanoid whole-body interaction from human egocentric videos paired with synchronized whole-body motion and text annotations. ZeroWBC adopts a generation-then-tracking formulation to tackle the static scene whole-body interaction control problem. Given an initial egocentric image and a language instruction, a fine-tuned Vision-Language Model generates future human whole-body motion tokens, which are decoded into continuous motions and retargeted to the humanoid. The resulting reference motions, together with root and key body-part trajectories, are then executed by a general interactive motion tracking policy. To improve interaction performance, we introduce an interaction-oriented tracking reward that prioritizes global root and key body-part trajectory alignment while preserving natural whole-body motion. Experiments on the Unitree G1 humanoid robot show that ZeroWBC enables diverse scene-aware behaviors without robot teleoperation demonstrations. These results suggest a scalable paradigm for learning natural humanoid whole-body interaction from human egocentric data."
-  },
-  {
-    "title": "ContactExplorer: Contact Coverage-Guided Exploration for General-Purpose Dexterous Manipulation",
-    "original_title": "ContactExplorer: Contact Coverage-Guided Exploration for General-Purpose Dexterous Manipulation",
-    "link": "https://arxiv.org/abs/2603.10971",
-    "date": "2026-06-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.10971v2 Announce Type: replace \nAbstract: Reinforcement learning has achieved remarkable success in domains such as Atari games, navigation, and locomotion, where exploration can often be guided by novelty over states or dynamics. In contrast, dexterous manipulation requires rich physical hand--object interactions, but existing methods often suffer from unstable contact-based novelty signals, inefficient distance novelty signals, or reliance on task-specific priors. We propose ContactExplorer, a general exploration method for dexterous manipulation tasks. ContactExplorer represents contact as the intersection between object surface points and hand keypoints, encouraging dexterous hands to discover diverse and novel contact patterns, namely which fingers contact which object regions. It maintains a contact counter conditioned on discretized object states obtained via learned hash codes, capturing how frequently each finger interacts with different object regions. This counter is leveraged in two complementary ways: (1) to assign a count-based contact coverage reward that promotes exploration of novel contact patterns, and (2) an energy-based reaching reward that guides the agent toward under-explored contact regions. We evaluate ContactExplorer on a diverse set of dexterous manipulation tasks. Experimental results show that ContactExplorer substantially improves sample efficiency and success rates over existing exploration methods, and that the contact patterns learned with ContactExplorer transfer robustly to the real world. Project page is https://contact-explorer.github.io."
-  },
-  {
-    "title": "China Focus: Humanoid Robot Study Tours Ignite New Passion for AI among Chinese Youth - iChongqing",
-    "original_title": "China Focus: Humanoid Robot Study Tours Ignite New Passion for AI among Chinese Youth - iChongqing",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMWMtWndWeUUxWW1UaHdiZVh4dmN4V0JjN0ZINURoa2d4aGJJbkJRaTdhdjcxdHZ4TDNObUVrMVNqSG00OUtlU29xZEpuY2JQcFpSZ0g1S1VNZFB5bGNPVTZaMzRYMVotT0lTNnNlbGxuR2twbW9YSEhnWlNIdExVUHoydlByNHZPVEhZZ1N3Umt3TGc5dC1UX2hhY180MkhUM2M4OGRNb01RWTRDeUZGZk9zb1ZQMGoyMzMtaWhhRXBjb1lvZk040gHHAUFVX3lxTE4xYy1ad1Z5RTFZbVRod2JlWHh2Y3hXQmM3Rkg1RGhrZ3hoYkluQlFpN2F2NzF0dnhMM05tRWsxU2pIbTQ5S2VTb3FkSm5jYlBwWlJnSDVLVU1kUHlsY09VNlozNFgxWi1PSVM2c2VsbG5Ha3Btb1hISGdaU0h0TFVQejJ2UHI0dk9USFlnU3dSa3dMZzl0LVRfaGFjXzQySFQzYzg4ZE1vTVFZNEN5RkZmT3NvVlAwajIzMy1paGFFcGNvWW9mTTg?oc=5",
-    "date": "2026-06-04 03:56",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China Focus: Humanoid Robot Study Tours Ignite New Passion for AI among Chinese Youth  iChongqing"
-  },
-  {
-    "title": "The 'Wintel' of robotics? Nvidia allies with Unitree to standardize AI humanoid development - digitimes",
-    "original_title": "The 'Wintel' of robotics? Nvidia allies with Unitree to standardize AI humanoid development - digitimes",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUmFlalZFZ0Fiby1GeHhiSzhVQk5KWGZCWTNaQ09VVFZ1X1M1RDZONXg5Y1pDcDVudEJDeUxwTTdnZmJTOTRIY1hmbTBWa3F1TDR1QnNfeGZia29hMzhxTS1ibGp2TldBNG9rdjBJU3FsMHBCMXRleXhCR21kUHVvTjFXUEt6SHFiWEExVWNOQlp3cG40djJCOFkyMFJVMTJVdzc4?oc=5",
-    "date": "2026-06-04 03:01",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "The 'Wintel' of robotics? Nvidia allies with Unitree to standardize AI humanoid development  digitimes"
-  },
-  {
-    "title": "NVIDIA Unveils Isaac GR00T Humanoid Reference Platform - Let's Data Science",
-    "original_title": "NVIDIA Unveils Isaac GR00T Humanoid Reference Platform - Let's Data Science",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNS00QXYwaVczS1VkVVMxNHlVeG1qWXZXU3daWkgyYmo4TGVYN2ZmZm9iMkJpbm13VmxiRGh6ZHd2V1RpWmU3WFdJMmpMemRPTkVXNjFpQTZLQzg0YW14Y2hlQW9IbzV2V3UwaFdCT25DbkxhMjNXZkRDZEcwMlJWRjhSZ1d1elo4TmJkUWxXYzVpRkNSUmI0cjlVNjY?oc=5",
-    "date": "2026-06-04 01:43",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA Unveils Isaac GR00T Humanoid Reference Platform  Let's Data Science"
   }
 ]
