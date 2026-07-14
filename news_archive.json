@@ -585,6 +585,15 @@
     "summary": "로봇 제어의 어려움을 해결하기 위해, 본 연구는 로봇 제어 과제를 에이전트적 작업으로 재정의하고 VIA(Visual Interface Agent) 프레임워크를 제시함. VIA는 로봇에 특화된 파인튜닝 없이 범용 FM 기반 에이전트가 브라우저 3D 인터페이스를 통해 시각적 입력을 받고 일반 도구를 이용해 매니퓰레이터를 제어하는 방식임. 이러한 접근 방식은 에이전트가 가진 강력한 일반 추론 및 폐쇄 루프 오류 복구 능력이 별도의 로봇 특화 학습 없이 로봇 제어에도 직접적으로 전이 가능함을 보여줌."
   },
   {
+    "title": "사용자 비언어적 단서 기반, 능동적 대응 소셜 로봇 시스템 개발 (15% 장벽 돌파)",
+    "original_title": "Breaking the 15% Barrier: A Real-World Data-Driven System for Proactive Social Robot Triggered by User Nonverbal Cues",
+    "link": "https://arxiv.org/abs/2607.11633",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 서비스 로봇이 STT-LLM-TTS 등 오디오 기반 상호작용에 크게 의존하는 한계를 지적함. 실제 상점 환경 분석 결과, 로봇 발화 중 15.3%가 사용자 접근, 손짓 등 비언어적 행동에 의해 시작된 것으로 확인됨. 이에 연구진은 비언어적 단서를 실시간으로 인식하는 다중 레이블 인식기를 개발하고, 이를 LLM의 발화 생성에 조건화하여 능동적인 대응이 가능한 로봇 프레임워크를 제안하고 온라인 프로토타입을 구현함."
+  },
+  {
     "title": "온다스(Ondas), DZYNE 인수 완료 및 국방 역량 확장 발표",
     "original_title": "Ondas acquires DZYNE for $875.8M, expanding its defense capabilities",
     "link": "https://www.therobotreport.com/ondas-acquires-dzyne-875-8m-expanding-its-defense-capabilities/",
@@ -682,6 +691,15 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "WTWH Media의 모회사가 Arrowfly로 리브랜딩을 단행함. 이 새로운 브랜드는 B2B 콘텐츠 및 이벤트의 미래를 목표로 하며, 40개 이상의 다양한 브랜드를 통합하는 역할을 수행함."
+  },
+  {
+    "title": "일반화된 로봇 공학의 발전을 위한 새로운 접근 방식: 경험적 증거 기반, 전이 가능한 인지 구조의 통합.",
+    "original_title": "Building a Foundation Stack for General-Purpose Robots",
+    "link": "https://spectrum.ieee.org/x-square-robot-embodied-ai-stack",
+    "date": "2026-07-13 10:19",
+    "source": "IEEE Spectrum",
+    "category": "humanoid",
+    "summary": "통합된 지식 모델**  로봇 공학의 미래는 단순한 기능 구현을 넘어, 인간의 인지 과정과 유사하게 지식을 축적하고, 상황에 따라 재사용하며, 실패로부터 학습하는 능력에 달려 있습니다. 현재의 로봇 시스템들은 개별 작업에 특화된 ‘규칙 기반’ 또는 ‘지도 학습 기반’ 모델에 의존하여, 새로운 환경이나 예상치 못한 상황에 직면하면 극심한 취약성을 보입니다. 진정한 범용 인공지능(AGI)에 근접하기 위해서는, 로봇이 습득한 지식을 하나의 일관된 '신경 심층 지식 구조(Neuro-Deep Knowledge Graph)' 안에 통합하고, 이 그래프를 통해 지식 간의 관계를 추론해내는 능력이 필수적입니다.  이러한 새로운 프레임워크의 핵심은 다음과 같습니다.  1. **지식의 그래프화 및 추론 (Knowledge Graph & Inference):**    모든 경험(센서 데이터, 액션, 결과)은 독립적인 데이터 포인트로 남는 것이 아니라, '개념(Concept)', '엔티티(Entity)', '관계(Relation)'로 변환되어 지식 그래프 내에 노드와 엣지로 저장됩니다. 로봇이 \"컵을 들어서 탁자 위에 두었다\"는 경험은 `(액션: 들기) -> (개체: 컵) -> (관계: 담지질/제거) -> (개체: 탁자) -> (최종 상태)`. 이 그래프 덕분에 로봇은 '들어 올리는 동작' 자체를 재활용하여, 컵을 드는 과정에서 넘어지려는 물건을 감지했을 때도 동작을 예측하고 수정할 수 있게 됩니다.  2. **메타 학습과 전이 (Meta-Learning & Transfer):**    지식 그래프는 메타 학습의 최적의 기반입니다. 로봇이 A 환경에서 성공적으로 문제를 해결하기 위해 학습한 패턴(예: ‘물체를 잡는 그리핑의 일반 원리’)은 지식 그래프 내에 추상적인 '원리 노드'로 저장됩니다. 이후 B 환경(예: 물체가 비정형적인 환경)에서 새로운 문제를 접했을 때, 로봇은 B 환경의 시각적 특징과 A 환경에서 학습한 '그리핑 원리' 노드를 연결하여, 마치 인간이 배운 원리를 다른 문제에 적용하듯이 빠르고 적은 데이터로 학습(Few-Shot Learning)할 수 있습니다.  3. **인지적 자기 성찰 (Cognitive Self-Reflection):**    가장 진보된 단계는 로봇이 자신의 행동과 지식 구조를 평가하는 단계입니다. \"내가 지금 이 방법으로 접근하는 것이 최적의 경로인가? 이 결정을 내리게 된 근거는 무엇인가?\"와 같은 질문을 던지며, 자신의 지식 그래프 내에서 모순되거나 불완전한 부분을 식별하고, 이를 보완하는 방식으로 학습 주기를 거듭하게 됩니다.  **결론적 의의:**  이러한 통합된 지식 기반 접근 방식은 로봇을 '프로그램된 기계'에서 **'지속적으로 성장하는 인지 주체'**로 격상시킵니다. 로봇은 단순히 주어진 작업을 수행하는 것이 아니라, 세상의 원리를 이해하고, 그 이해를 바탕으로 미지의 문제를 해결하는 진정한 의미의 범용성을 확보하게 될 것입니다."
   },
   {
     "title": "로보틱스 및 자동화 분야에서 니어쇼어 콜센터의 역할 모색",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.04749v1 Announce Type: new \nAbstract: Safe robot control requires maximizing return while satisfying safety constraints. In off-policy safe reinforcement learning, reward and safety Q-values are commonly learned by separate critic ensembles, with uncertainty handled independently for each objective. This objective-wise treatment neglects inter-objective correlation and can lead to overly conservative value estimates, thereby reducing sample efficiency. To address this issue, we propose Cholesky-Ordered Projection Q-learning (COP-Q), a safety-first method that incorporates inter-objective covariance into vector-valued Q-value estimation. COP-Q constructs a generalized confidence bound in the joint Q-value space and uses Cholesky factorization to encode objective priority in a sequential form. This preserves conservatism on safety while adaptively reducing excessive conservatism on the reward objective. The resulting estimate is used in both temporal-difference target computation and actor optimization. COP-Q incurs minimal computational overhead and is readily compatible with most existing deep Q-learning frameworks. Experiments on robot locomotion in Brax and safe navigation in Safety-Gymnasium, covering both hard- and soft-safety settings, demonstrate that COP-Q achieves strong safety performance together with competitive or improved sample efficiency relative to representative baselines."
-  },
-  {
-    "title": "SoftPINCH: EMG-Driven Soft Exoskeleton Assistance for Finger Flexion and Grasping",
-    "original_title": "SoftPINCH: EMG-Driven Soft Exoskeleton Assistance for Finger Flexion and Grasping",
-    "link": "https://arxiv.org/abs/2606.04776",
-    "date": "2026-06-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.04776v1 Announce Type: new \nAbstract: Surface electromyography (sEMG) provides a non-invasive interface for detecting hand-movement intention and controlling wearable assistive devices. However, reliable EMG-driven hand assistance remains challenging because EMG signals are affected by noise, motion artifacts, electrode placement, muscle fatigue, and inter-subject variability. At the same time, many hand exoskeletons remain mechanically restrictive or bulky, limiting comfort and natural hand motion. This work presents SoftPINCH, an EMG-driven soft wearable exoskeleton for thumb-index finger flexion and pinch grasp assistance. The system combines a tendon-driven soft exoskeleton, fingertip magnetic contact sensing, and neural EMG decoding for intention-based assistance. Surface EMG was recorded from forearm muscles during index and thumb movements, and three subject-independent decoding architectures were evaluated: LSTM, CNN+LSTM, and CNN+LSTM with attention. The CNN+LSTM and CNN+LSTM-attention models both achieved 99.4% LOSO test accuracy, outperforming the standalone LSTM, which reached 97.8%. However, the attention mechanism did not provide a significant improvement over CNN+LSTM, indicating that CNN-based feature extraction was sufficient for robust EMG representation. The CNN+LSTM model was therefore selected for real-time deployment due to its high accuracy and lower architectural complexity. Functional evaluation showed that active exoskeleton assistance reduced muscular effort during isolated finger flexion and object grasping. During weighted grasping, assistance reduced muscular effort across all tested loads, with a 92.6% reduction at the highest load. These results demonstrate the potential of SoftPINCH for intuitive, low-effort pinch assistance using real-time EMG-driven soft robotic control."
-  },
-  {
-    "title": "HapTile: A Haptic-Informed Vision-Tactile-Language-Action Dataset for Contact-Rich Imitation Learning",
-    "original_title": "HapTile: A Haptic-Informed Vision-Tactile-Language-Action Dataset for Contact-Rich Imitation Learning",
-    "link": "https://arxiv.org/abs/2606.04825",
-    "date": "2026-06-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.04825v1 Announce Type: new \nAbstract: Despite the importance of tactile sensing for reliable manipulation, most existing Vision-Language-Action (VLA) datasets remain vision-only, and those that do incorporate tactile information typically lack the joint combination of task diversity, language conditioning, and action trajectories. Furthermore, existing teleoperation pipelines rarely provide haptic feedback to the operator, despite its established role in demonstration quality and manipulation stability. In this work, we present HapTile, a contact-grounded visuotactile manipulation dataset that advances beyond vision-only trajectory datasets by embedding physical interaction sensing at two levels: fingertip tactile feedback at the robot end-effector, and haptic-informed demonstrations at the teleoperator side. The data collection platform integrates haptic feedback directly into the teleoperation controller, enabling the operator to perceive contact interactions in real time. It is built around a standard and reproducible robotic system equipped with custom-designed fingertip tactile sensors. The dataset comprises everyday manipulation tasks spanning a broad range of contact-rich skills, including pick-and-place, folding, pressing, stacking, and other routine activities. Each task is paired with language instructions that condition the policy on the manipulation objective, together with synchronized visuotactile observations and action trajectories. In addition, we provide a benchmarking study on contact-rich policy learning using two baseline models to evaluate the effectiveness of the proposed contact-grounded dataset. The dataset and additional details are available on our website: haptile-dataset.github.io."
   }
 ]
