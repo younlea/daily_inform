@@ -144,6 +144,78 @@
     "summary": "Compute-constrained 환경에서 발생하는 낮은 네비게이션 루프 속도 문제를 해결하고자 지연 시간을 고려한 고유수용성 네비게이션 기법을 제안함. 이 시스템은 추가적인 매핑이나 학습 과정 없이, 온보드 IMU, 발력 센서 등을 활용하여 계단 이동, 라인 팔로우, 90도 코너링 등 복합적인 검사 임무를 수행함. 테스트 결과, 로봇은 19 Hz의 임계 루프 속도에서도 높은 안정성을 유지했으며, 실제 검사 코스에서 90%의 성공률을 달성함."
   },
   {
+    "title": "SegDiff: 일관되고 적응적인 로봇 매니퓰레이션을 위한 세그먼트 트래젝토리 확산 기술",
+    "original_title": "SegDiff: Segmented Trajectory Diffusion for Consistent and Adaptive Robot Manipulation",
+    "link": "https://arxiv.org/abs/2607.11027",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 모방 학습의 오차 누적 및 실시간성 제약을 극복하기 위해 SegDiff라는 새로운 폐루프(closed-loop) 비주오모터 정책을 제안함. SegDiff는 시연된 데이터를 Keypose 기반의 Motion Segment로 분해하고 Diffusion Model을 활용하여 장기 예측과 실시간 정교화를 동시에 수행함. 특히 Dynamic Temporal Ensembling 기법을 도입하여 동적 환경에 효율적으로 대응하고 높은 제어 안정성을 확보하는 것이 특징임."
+  },
+  {
+    "title": "Desc++: 기존 Visual SLAM 시스템의 데이터 연관을 위한 효율적인 디스크립터 강화",
+    "original_title": "Desc++: Efficient Descriptor Enhancement for Data Association in Existing Visual SLAM Systems",
+    "link": "https://arxiv.org/abs/2607.11099",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 V-SLAM 시스템의 핵심 난제인 디스크립터의 환경 변화에 대한 취약성과 학습 기반 방식의 높은 연산 부하를 해결하기 위해, 기존 형식을 유지하며 컨텍스트 표현력을 개선한 경량 강화 모듈 Desc++를 제안함. Desc++는 순서에 독립적인 글로벌 어텐션과 기하학적 순차 모델링을 결합한 하이브리드 아키텍처를 활용하여 공간적 컨텍스트를 효과적으로 통합함. 실험 결과, Desc++는 기존 V-SLAM 파이프라인에 손쉽게 통합되면서도 최고 수준의 매칭 정확도 향상과 안정적인 궤적 추정 성능 확보를 입증함."
+  },
+  {
+    "title": "스케치 기반 사전 정보를 활용한 실내 UAV 군집 임무 지향 협력 항법 프레임워크",
+    "original_title": "From Sketch Prior to Trajectories: A Mission-Oriented Coordinated Navigation Framework for Indoor UAV Swarm",
+    "link": "https://arxiv.org/abs/2607.11386",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "실내 검사나 물류 등 임무 지향적 작업을 수행하는 UAV 군집을 위해, 스케치 맵 사전 정보(sketch-map priors)를 활용하는 협력 항법 프레임워크를 제안함. 본 프레임워크는 온보드 관측을 이용해 토폴로지 정렬을 수행하고 사전 지식과 온라인 관측 데이터를 융합하여 임무 지향적 이동 가능성 표현을 구축함. 궁극적으로 2D 경로 계획과 3D 궤적 최적화를 결합한 레이어드 시스템을 통해, 통신 손실이나 다층 구조에서도 동적으로 실현 가능하고 충돌 회피가 가능한 궤적 생성이 가능함을 검증함."
+  },
+  {
+    "title": "인간 수준의 고난도 원격 조작(Teleoperation) 구현을 목표로 함",
+    "original_title": "Towards Human-level Dexterous Teleoperation",
+    "link": "https://arxiv.org/abs/2607.11481",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "복잡한 손-물체(hand-object) 접촉 전환과 조작을 재현하기 위한 방안을 제시함. 연구진은 작업자 의도를 학습된 저수준 접촉 실행으로 매핑하는 'TeleDexter'라는 hand-object co-tracking controller를 개발함. 이 컨트롤러는 하이브리드 보상과 RL(Reinforcement Learning)을 통해 훈련되며, random action masking 및 domain randomization을 활용해 실 robot에 zero-shot 전이가 가능함을 입증함. 평가 결과, 다양한 민첩성 조작 태스크에서 75%의 높은 평균 성공률을 기록하며 기존 방식의 한계를 극복함."
+  },
+  {
+    "title": "SKooP: 강화 학습 기반, 대칭 코프만 예측을 통한 고성능 및 범용 다리형 로봇 구동 기술 제시",
+    "original_title": "SKooP: Symmetric Koopman Predictions for Faster and More Generalizable Legged Robot Locomotion with Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2607.11624",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "본 논문은 강화 학습(RL)의 낮은 샘플 효율성 문제를 해결하기 위해 SKooP(Symmetric Koopman Predictions)라는 새로운 접근법을 제시함. SKooP는 시스템 동역학의 Koopman 모델을 학습하고 형태학적 대칭성을 결합하여 정책 학습의 정확도를 높이는 것이 핵심임. 쿼드러펫 로봇의 까다로운 보행 테스트를 통해, SKooP가 기존 방식 대비 수렴 시간 단축 및 높은 일반화 성능을 달성하는 것으로 입증됨."
+  },
+  {
+    "title": "DA-Nav: 방향 인지 도시 규모 비전-언어 내비게이션",
+    "original_title": "DA-Nav: Direction-Aware City-Scale Vision-Language Navigation",
+    "link": "https://arxiv.org/abs/2607.11638",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "도시 규모 실외 내비게이션의 한계를 극복하기 위해, 본 연구는 상용 내비게이션 도구의 방향 지침을 활용하는 DA-Nav 프레임워크를 제안함. DA-Nav는 내비게이션을 에고중심 2D 이미지 평면상의 이산 공간 접지 문제로 재구성하고, Chain-of-Thought (CoT) 추론을 적용하여 경로 이탈을 평가하고 복구함. CARLA 환경 테스트에서 기존 SoTA 대비 우수한 성공률을 기록했으며, 추가 미세 조정 없이 사족보행 및 휴머노이드 로봇에 적용 가능함을 입증함."
+  },
+  {
+    "title": "종합 Gröbner 시스템 기반 실수 한정자 소거를 활용한 3-DOF 로봇 매니퓰레이터의 궤적 계획 및 인증",
+    "original_title": "Trajectory Planning and Certification for 3-DOF Robot Manipulators Using Real Quantifier Elimination Based on Comprehensive Gr\\\"obner Systems",
+    "link": "https://arxiv.org/abs/2607.11657",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "3-DOF 로봇 매니퓰레이터의 궤적 계획 및 인증을 위한 새로운 알고리즘을 제시함. 본 방법은 종합 Gröbner 시스템(CGS) 기반의 실수 한정자 소거(Real QE)를 활용하여, 궤적 계획 시 매개변수 시스템에 대한 CGS 계산을 통해 효율성을 높임. 특히, CGS-QE 방법을 통해 엔드 이펙터의 전체 궤적에 대한 역기구학 해의 존재 여부를 인증할 수 있으며, 직선 및 cubic natural spline 등 다양한 궤적에 대한 인증도 가능함."
+  },
+  {
+    "title": "가상 HRI를 이용한 전신 사회 촉각 센서 요구사항 기반 설계 방안",
+    "original_title": "Requirement-Driven Design of Whole-Body Social Tactile Sensing via Virtual Human-Robot Interaction",
+    "link": "https://arxiv.org/abs/2607.11690",
+    "date": "2026-07-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 기존 하드웨어 중심 접근의 한계를 극복하고, 인간-로봇 상호작용 데이터로부터 사회-신체 촉각 센싱의 요구사항(공간 해상도 및 배치)을 도출하는 프레임워크를 제시함. 연구팀은 VR 기반 햅틱 피드백 플랫폼을 통해 다양한 사회 시나리오에서 5,520회의 고해상도 전신 접촉 데이터를 수집하여 오픈 소스 데이터셋을 구축함. 이 방법론은 특정 로봇 형태에 관계없이 전이 가능하며, 하드웨어 제작 전 체형에 따른 맞춤형 센싱 요구사항 정의를 가능하게 하는 것이 핵심임."
+  },
+  {
     "title": "온다스(Ondas), DZYNE 인수 완료 및 국방 역량 확장 발표",
     "original_title": "Ondas acquires DZYNE for $875.8M, expanding its defense capabilities",
     "link": "https://www.therobotreport.com/ondas-acquires-dzyne-875-8m-expanding-its-defense-capabilities/",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Nvidia picks Unitree for humanoid robot platform as Chinese startup eyes IPO  MSN"
-  },
-  {
-    "title": "NVIDIA Works With TSMC and Unitree on AI for Chips and Robots - Thomasnet",
-    "original_title": "NVIDIA Works With TSMC and Unitree on AI for Chips and Robots - Thomasnet",
-    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE40TE5xOHBnMk45X2pwaDVQcTQxLUt5enFCbGJ4QVpyVXh6SmJmd2xhVUhXa2xjRlpFTGNsQ2pBSUF5Z0ZTd0oyZzdZS1hFY0hZa3pSNWdHOFJibmFxZkZMTGNTek1vOFlMZzRFYXR2TV9tNEctM3Vv?oc=5",
-    "date": "2026-06-03 10:12",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "NVIDIA Works With TSMC and Unitree on AI for Chips and Robots  Thomasnet"
-  },
-  {
-    "title": "BYD-Backed PaXini Eyes Hong Kong IPO Amid Robotics Boom Push - Asia Business Outlook",
-    "original_title": "BYD-Backed PaXini Eyes Hong Kong IPO Amid Robotics Boom Push - Asia Business Outlook",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcFB0bjhLVGNhNHprNmlqZE8yQWVSNmdfSGdxQ0xDSHNuaFhMX0d5bENLelJJNFNNTXRiRVU1dnpyaXdUR0d3dHdKVF9ZYWpDbUZQUVhBaXMwVDg5Z3VXdUlfZHhsbjV0VGxSdUFucDdsRXZybGdBaWhqWFdSWkJidU1tc2xMQlgtU2wwMGRxWmZ5VlctNkpUQklUZ21CZ2dEa1JBWTRjcnZhdDFaemJVZlZNUUZYUVk?oc=5",
-    "date": "2026-06-03 09:17",
-    "source": "Google News (China Hand/Sensor Startups - EN)",
-    "category": "hand",
-    "summary": "BYD-Backed PaXini Eyes Hong Kong IPO Amid Robotics Boom Push  Asia Business Outlook"
-  },
-  {
-    "title": "Humanoid robot maker Unitree close to record-breaking IPO - Dao Insights",
-    "original_title": "Humanoid robot maker Unitree close to record-breaking IPO - Dao Insights",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ZOGZGVGJqVWFuU3pHNDhVai0yc05ONzRVR1h2WWc4a1g0ZzZzWjZoZXRlbjNLQ0p4MTZDaUs2bUh4bDZCMEVZYWlDc3gxZk5BVmFF?oc=5",
-    "date": "2026-06-03 09:14",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Humanoid robot maker Unitree close to record-breaking IPO  Dao Insights"
-  },
-  {
-    "title": "Global robotics technology roadmap",
-    "original_title": "Global robotics technology roadmap",
-    "link": "https://robohub.org/global-robotics-technology-roadmap/",
-    "date": "2026-06-03 09:13",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "Deborah Lupton / Pop Chips / Licenced by CC-BY 4.0. Henrik I Christensen, Professor of Computer Science & Engineering at University of California San Diego, has recently released a global robotics technology roadmap. This position paper focuses on Asia, Europe, and America and outlines the current state-of-the-art in robotics, and highlights the main opportunities. The […]"
-  },
-  {
-    "title": "Inside NVIDIA’s Four Groundbreaking AI Announcements at GTC Taipei - Geeky Gadgets",
-    "original_title": "Inside NVIDIA’s Four Groundbreaking AI Announcements at GTC Taipei - Geeky Gadgets",
-    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9zTnZ5aDBFNVNoUDI2UWd4cnRtbGF3THpBQ0hFLUVhSm9hOHVyYzZVdGtWRVJRTVBvS3duWXZpb3ZLU3BGT1ZnYm91a1dkR3hFcDZpZURheXgxRHFLTm9GSmV1dnA?oc=5",
-    "date": "2026-06-03 08:52",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "Inside NVIDIA’s Four Groundbreaking AI Announcements at GTC Taipei  Geeky Gadgets"
-  },
-  {
-    "title": "BYD-backed robotics firm PaXini plans Hong Kong IPO, Bloomberg reports - The Standard (HK)",
-    "original_title": "BYD-backed robotics firm PaXini plans Hong Kong IPO, Bloomberg reports - The Standard (HK)",
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNXzhNdUZaWUtIZFRRdEl2dzk4S3Zsem0zME1kbUNaUWJKN3NldEJHdUZfcExuTXlCVVJCMU9YV0NwejN4VVotOWRWZUc4YXlSSmlSLXdxUGd1YU9PLWZVSFZiTjgxNXM5RlIxYUNKNVpFNkY0d3A1aW1GM3BNY185cXVoMmJ0NEtJbjh1MW8wazBhQmpyNG9Wc1ZwcTJBZVcwYkpmc0RfeGp5Wm4wSTdORzl0Y0tYNUt6QzUxRElPbkQ?oc=5",
-    "date": "2026-06-03 08:39",
-    "source": "Google News (China Hand/Sensor Startups - EN)",
-    "category": "hand",
-    "summary": "BYD-backed robotics firm PaXini plans Hong Kong IPO, Bloomberg reports  The Standard (HK)"
-  },
-  {
-    "title": "Unitree hopes Nvidia partnership will advance robotics industry - China.org.cn",
-    "original_title": "Unitree hopes Nvidia partnership will advance robotics industry - China.org.cn",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE94VVR3b01zUkhJRkFYblZSTnBDcUdacUFwRTNUeHRfTmxSaEZ2eHJzNmdxX3JWREZVYU1jOGNkb1d1bTJWTUVEWkl3NDB6OURTS2NjbGc0VlBnc3J5V3pZaHpUcFRvSloxR3c?oc=5",
-    "date": "2026-06-03 07:56",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree hopes Nvidia partnership will advance robotics industry  China.org.cn"
-  },
-  {
-    "title": "NVIDIA CEO Jensen Huang Highlights Robotics Investment Potential in South Korea - aju press",
-    "original_title": "NVIDIA CEO Jensen Huang Highlights Robotics Investment Potential in South Korea - aju press",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBOTDlDcVBibTVTdi1fNmdGTjh2UUpKT2JGd3FaSDNGTnFrNndkOXQ2QzFHeUdSdUVEeWVjclBZM094MTh1bmJrSDFQamY2ZEhHZjRybnd3WEpWSWPSAVdBVV95cUxPeUhuZ2NidzI3WFBlUEF2RXhJblR2a1FSaUU2YTJLUFFYZ3BIaXNoUkZlbE5rbk04U0FGODZyWlN6RU5aMS1SZTN0ZXRHc0czMUxhTjRsRTQ?oc=5",
-    "date": "2026-06-03 07:52",
-    "source": "Google News (NVIDIA GTC)",
-    "category": "humanoid",
-    "summary": "NVIDIA CEO Jensen Huang Highlights Robotics Investment Potential in South Korea  aju press"
   }
 ]
