@@ -1,5 +1,23 @@
 [
   {
+    "title": "Agility, 미국 휴머노이드 로봇 정책 관련 6가지 권고안 제시함",
+    "original_title": "Agility outlines six recommendations for U.S. humanoid robot policies",
+    "link": "https://www.therobotreport.com/agility-outlines-six-recommendations-for-u-s-humanoid-robot-policies/",
+    "date": "2026-07-15 18:58",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Agility의 CEO 페기 존슨은 미국이 휴머노이드 산업의 성과를 강화할 정책 프레임워크 구축이 필요하다고 밝힘. 이에 애질리티는 미국 휴머노이드 로봇 산업 정책에 관한 구체적인 6가지 권고안을 발표함. 이는 현 산업 발전의 지속 가능성을 위한 제언임."
+  },
+  {
+    "title": "Vicarious Surgical, 회사 해산 이사회 의결 요구",
+    "original_title": "Vicarious Surgical board seeks to dissolve company",
+    "link": "https://www.therobotreport.com/vicarious-surgical-board-seeks-to-dissolve-company/",
+    "date": "2026-07-15 18:43",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Vicarious Surgical 이사회는 7월 21일 특별 주주총회를 통해 회사 해산 및 청산 계획 승인을 요청함. 이사회는 투자자들이 회수하게 될 금액 규모나 시점에 대해서는 예측이 불가능하다고 밝힘."
+  },
+  {
     "title": "이카루스 로보틱스, KULR 기술로 JOY 자율 비행 우주 로봇 구동",
     "original_title": "Icarus Robotics uses KULR technology to power JOY free-flying space robot",
     "link": "https://www.therobotreport.com/icarus-robotics-uses-kulr-technology-to-power-joy-free-flying-space-robot/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.05572v1 Announce Type: cross \nAbstract: We address the challenge of engineering distributed haptic displays capable of reproducing multiple localized, independently addressable vibrations -- representing virtual tactile pixels -- at arbitrary locations on a surface. Our technique is based on the focusing of mechanical waves in a flexural plate using a sparse set of actuators. At tactile frequencies, wave diffraction prevents the formation of localized virtual tactile pixels at spatial scales relevant for multi-digit touch interactions. We overcome this limitation by augmenting the plate with a lattice of mechanical resonators, forming a locally resonant metamaterial plate. Coupling between the plate's dynamic modes and those of the resonators alters the dispersion relation governing wave transmission, introducing a slow-wave branch that enables focusing beyond the diffraction limit imposed by the unmodified plate. We use numerical simulations to engineer the dispersion relation of the metamaterial system for high-resolution focusing at tactile frequencies. We then fabricate a metamaterial tactile display and experimentally demonstrate virtual pixels that are far more localized than those generated on an otherwise identical plate without resonators, resulting in a tenfold reduction in virtual-pixel area. In behavioral experiments, we show that this system can deliver perceptually localized single- and multi-point tactile feedback and moving tactile sources while maintaining independent control over temporal waveforms at multiple display locations. The methods reported here can enable high-resolution haptic displays for widespread applications using a small number of actuated degrees of freedom."
-  },
-  {
-    "title": "Synthetic Data Generation and Vision-based Wrinkle and Keypoint Detection for Bimanual Cloth Manipulation",
-    "original_title": "Synthetic Data Generation and Vision-based Wrinkle and Keypoint Detection for Bimanual Cloth Manipulation",
-    "link": "https://arxiv.org/abs/2606.06292",
-    "date": "2026-06-05 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.06292v1 Announce Type: cross \nAbstract: Robotic manipulation of textiles remains challenging because continuous deformation and self-occlusions hinder the robust visual perception required to estimate the cloth's state. To address the lack of annotated real-world data, we developed a Blender-based synthetic pipeline exporting auto-annotated keypoints, and combined manually labeled renders with real-world data to train a wrinkle detector. We present a perception framework integrating a CNN for permutation-invariant keypoint detection and a YOLOv8-OpenCV pipeline to extract grasping points from structural wrinkles. A proposed bimanual algorithm uses this system to stretch fully folded garments via wrinkles, transitioning to keypoint-based ironing once corners emerge. The keypoint model achieves a Mean Position Error (MPE) of 1.7615 pixels. The perception system transfers to physical fabrics without fine-tuning, outperforming baselines that fail in high-occlusion states or yield false positives on severe folds."
-  },
-  {
-    "title": "Is Diversity All You Need for Scalable Robotic Manipulation?",
-    "original_title": "Is Diversity All You Need for Scalable Robotic Manipulation?",
-    "link": "https://arxiv.org/abs/2507.06219",
-    "date": "2026-06-05 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2507.06219v2 Announce Type: replace \nAbstract: Data scaling has driven remarkable success in foundation models for Natural Language Processing (NLP) and Computer Vision (CV), yet the principles of effective data scaling in robotic manipulation remain insufficiently understood. In this work, we investigate the nuanced role of data diversity in robot learning by examining three critical dimensions-task (what to do), embodiment (which robot to use), and expert (who demonstrates)-challenging the conventional intuition of \"more diverse is better\". Throughout extensive experiments on various robot platforms, we reveal that (1) task diversity proves more critical than per-task demonstration quantity, benefiting transfer from diverse pre-training tasks to novel downstream scenarios; (2) multi-embodiment pre-training data is optional for cross-embodiment transfer-models trained on high-quality single-embodiment data can efficiently transfer to different platforms, showing more desirable scaling property during fine-tuning than multi-embodiment pre-trained models; and (3) expert diversity, arising from individual operational preferences and stochastic variations in human demonstrations, can be confounding to policy learning, with velocity multimodality emerging as a key contributing factor. Based on this insight, we propose a distribution debiasing method to mitigate velocity ambiguity, the yielding GO-1-Pro achieves substantial performance gains of 15%, equivalent to using 2.5 times pre-training data. Collectively, these findings provide new perspectives and offer practical guidance on how to scale robotic manipulation datasets effectively."
   }
 ]
