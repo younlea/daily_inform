@@ -1,5 +1,77 @@
 [
   {
+    "title": "강화 학습 및 기계 설계를 활용한 사전 지식 기반의 견고한 손 내부 조작 구현",
+    "original_title": "Robust In-Hand Manipulation via Priors in Reinforcement Learning and Mechanical Design",
+    "link": "https://arxiv.org/abs/2607.12105",
+    "date": "2026-07-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "외부 센싱 없이 이루어지는 In-Hand Manipulation은 접촉 불확실성과 외란으로 인해 난이도가 높음. 본 연구는 글로벌 grasp-quality prior와 로컬 contact-geometry prior라는 두 가지 물리적 사전 지식을 제시함. 이 사전 지식들은 reinforcement learning의 보상 설계와 손가락 끝 기계 설계에 결합되어, 손 내부 롤링 작업의 회전 효율성, 그립 안정성, 외란 제거 능력을 크게 향상시킴이 입증됨."
+  },
+  {
+    "title": "GaitSpan: 걷기에서 달리기까지 확장되는 휴머노이드 보행 제어 기술",
+    "original_title": "GaitSpan: Growing Humanoid Locomotion from Walking to Running",
+    "link": "https://arxiv.org/abs/2607.12114",
+    "date": "2026-07-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존의 휴머노이드 보행 정책들은 속도 및 지형 변화에 대한 유연성 확보에 한계가 있었음. GaitSpan은 기본적인 걷기(walking) 정책을 씨앗 기술로 간주하고, 리듬 생성(rhythm generation), 보폭 조절(stride shaping), 잔여 적응(residual adaptation)의 3가지 메커니즘을 통해 이를 달리기(running) 수준까지 확장하는 혁신적인 프레임워크임. 이로써 걷기부터 달리기까지의 연속적인 속도 범위를 단일 명령어 조건부 정책으로 구현했으며, 이는 다양한 체형 및 미지 환경에 대한 전이 학습(transfer)이 가능한 최초의 성과임."
+  },
+  {
+    "title": "매니퓰레이터를 넘어서: 추진제 사용 없는 자유 부유 우주선의 자세 기동 계획 수립",
+    "original_title": "More than a Manipulator: Planning Propellant-Free Attitude Maneuvers for Free-Floating Spacecraft",
+    "link": "https://arxiv.org/abs/2607.12130",
+    "date": "2026-07-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "우주선 자세 제어에 있어 전통적으로 사용되던 추진제 기반 방식을 탈피하여, 로봇 매니퓰레이터의 움직임을 자세 제어 액추에이터로 활용하는 방안을 제시함. 본 연구는 트래젝토리 최적화 문제 접근을 통해 복잡한 slew 및 detumble 궤적을 시연하였으며, 매니퓰레이터의 제어 권한이 reaction wheel arrays와 비교되어 동등하거나 그 이상의 잠재력을 가짐을 입증함. 이는 특히 고상대 질량분을 취급하는 우주 공간 조립 및 제조 임무에 활용 가능한 다목적 자세 제어 시스템의 프레임워크를 제공함."
+  },
+  {
+    "title": "특권 표현 학습 기반 휴머노이드 축구 시각 드리블링 연구",
+    "original_title": "Vision-Based Dribbling for Humanoid Soccer via Privileged Representation Learning",
+    "link": "https://arxiv.org/abs/2607.12702",
+    "date": "2026-07-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "휴머노이드 로봇의 복잡한 축구 환경 구현을 위해, 기존의 인지 및 운동 분리 접근법의 한계를 극복하는 통합적 프레임워크를 제안함. 이 방식은 Temporal depth encoder를 Reinforcement Learning 정책에 통합하여, 명시적 상태 추정 없이도 시각 기반의 드리블링을 학습하는 것이 핵심임. Booster T1 시뮬레이션 결과, 명목적 드리블링에서 100% 성공률을 달성하며 복잡한 동적 환경에서도 강건한 드리블링이 가능함을 입증함."
+  },
+  {
+    "title": "청크Flow: 연속성 일관성을 갖춘 청킹 정책 학습 방안 제시",
+    "original_title": "ChunkFlow: Towards Continuity-Consistent Chunked Policy Learning",
+    "link": "https://arxiv.org/abs/2607.12992",
+    "date": "2026-07-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Vision-language action (VLA) 모델이 실시간 제약을 위해 채택하는 청크 액션 방식은 경계 영역에서 예측 불일치(boundary jitter)를 발생시켜 시간적 일관성 저하 문제가 있음. 이에 본 논문은 경계 인식(seam-aware) 훈련 및 실행 프레임워크인 ChunkFlow를 제안함. ChunkFlow는 청크 구조와 경계 실행을 정렬하고, seam 및 연속성 손실을 적용하여 모델을 훈련하며, CALVIN, LIBERO 등 로봇 테스트에서 낮은 지연 시간과 향상된 성공-안정성 트레이드오프 성능을 입증함."
+  },
+  {
+    "title": "TerraZero: 대규모 자율주행을 위한 절차적 시뮬레이션 및 제로 데모 기반 자가 학습",
+    "original_title": "TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale",
+    "link": "https://arxiv.org/abs/2607.13028",
+    "date": "2026-07-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "TerraZero는 대규모 강화 학습이 가능한 절차적 주행 시뮬레이션 및 자가 학습 스택임. 이 시스템은 높은 처리 효율성으로 무한하고 사실적인 주행 시나리오를 생성하며, 로그 데이터만을 이용해 규칙 기반의 지능형 환경을 구성함. 인간의 시연(demonstrations) 없이 순수 강화 학습(RL)만을 통해 정책을 훈련시키며, 주요 자율주행 벤치마크에서 최고 성능을 기록하고 차량, 보행자 등 다중 개체에 대한 공동 제어 능력을 입증함."
+  },
+  {
+    "title": "'Robot Drummer' 프레임워크: 휴머노이드의 리듬 연주 기술 습득 연구",
+    "original_title": "Robot Drummer: Learning Rhythmic Skills for Humanoid Drumming",
+    "link": "https://arxiv.org/abs/2507.11498",
+    "date": "2026-07-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "휴머노이드 로봇의 예술적 표현 영역 활용에 주목하여 'Robot Drummer'라는 시뮬레이션 프레임워크가 개발됨. 본 연구는 드럼 연주를 Rhythmic Contact Chain으로 정의하고, 장기적인 음악 수행을 위해 Reinforcement Learning을 적용, 트랙을 고정 길이 세그먼트로 분해하여 단일 정책 학습을 수행함. 광범위한 실험을 통해 높은 F1 점수를 달성하는 동시에, 크로스 암 스트라이크와 같은 인간 유사 전략 및 적응형 스틱 배치를 구현하며 로봇의 창의적 음악 수행 잠재력을 입증함."
+  },
+  {
+    "title": "LapSurgie: 원격 조작 핸드헬드 복강경을 활용한 휴머노이드 로봇 수술 수행",
+    "original_title": "LapSurgie: Humanoid Robots Performing Surgery via Teleoperated Handheld Laparoscopy",
+    "link": "https://arxiv.org/abs/2510.03529",
+    "date": "2026-07-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "복강경 수술의 의료 접근성 격차 해소를 목표로, 본 연구는 휴머노이드 기반의 복강경 원격 조작 프레임워크인 LapSurgie를 개발함. 이 시스템은 역변환 매핑(inverse-mapping) 전략을 활용하여 추가적인 인프라 없이도 표준 수술 도구에 대한 정밀한 원격 제어를 가능하게 함. 사용자 연구를 통해 LapSurgie 프레임워크가 휴머노이드 로봇을 이용한 복강경 수술에 실질적으로 적용 가능함을 제시함."
+  },
+  {
     "title": "거리에 등장한 휴머노이드 로봇과 드론 배송 서비스 등, 중국 선전이 '일상적인 기술 쇼케이스'로 기능함",
     "original_title": "Humanoid robots on the streets, milk tea delivered by drones… In Shenzhen, China, it's ‘CES every day’ - 경향신문",
     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSXZEdWxxZE1tMTNiUVdUeFlJeUZfTXVvLWY1d0p5OVhXSVpETjNBZVJmWTR3czZmRUQxMnFUTFpoT0I0TzBfTHA5bTAyQWRBYjB2dEt0aERkdndPWm53a3F0RW9ZYlc5cVlzcjBLRVIwOUhSb2pPcTFDNWZUZHJpaFJWYVBDYjVkWlhIb3Y4Ylpwc0cxbHlMWE44YzUxdm9VdVBxb1ZIcGxSMG5XOVE2Yg?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Unitree and Nvidia unveil H2 Plus humanoid robot reference design  news.cgtn.com"
-  },
-  {
-    "title": "Interview with GFT Technologies’ Brandon Speweik: Moving AI from detection to action on the factory floor",
-    "original_title": "Interview with GFT Technologies’ Brandon Speweik: Moving AI from detection to action on the factory floor",
-    "link": "https://roboticsandautomationnews.com/2026/06/04/interview-with-gft-technologies-brandon-speweik-moving-ai-from-detection-to-action-on-the-factory-floor/102267/",
-    "date": "2026-06-04 13:30",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Artificial intelligence has become one of the most widely discussed technologies in manufacturing, but much of the conversation remains focused on software – dashboards, analytics, predictive models, and digital decision-making tools. Increasingly, however, manufacturers are asking a more practical question: how can AI move beyond identifying problems and begin helping to solve them on the […]"
-  },
-  {
-    "title": "‘Brilliant’: US public cheers dancing Unitree robots while Congress looks to ban them - South China Morning Post",
-    "original_title": "‘Brilliant’: US public cheers dancing Unitree robots while Congress looks to ban them - South China Morning Post",
-    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQZnBCYy1tX1I3azc3TERXM19xdFU1NHRXZFZUNDYybE1OU0lEZ0tfTGRpZGZXRG5McTg3ZFhfX19vcnRJMy00VWFFZko3VXVLdS1CSndjTl9QWGJrbngzODJ2RnRUd1R5dWEteXlRLWs3QmxOT0dMY1g1Xy1XMWQzWnI3V3Y5WnJOUGs1TlpLSnF5enBlRVhObURMN1ljRFBCdGJZWkhCUzVEc2pCM0t5R2p2MkpFVF9EeU9HZlgwZHFROVUzU3k2VXdwQWZoUQ?oc=5",
-    "date": "2026-06-04 13:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "‘Brilliant’: US public cheers dancing Unitree robots while Congress looks to ban them  South China Morning Post"
-  },
-  {
-    "title": "US public cheers dancing Unitree robots while Congress looks to ban them - South China Morning Post",
-    "original_title": "US public cheers dancing Unitree robots while Congress looks to ban them - South China Morning Post",
-    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQZnBCYy1tX1I3azc3TERXM19xdFU1NHRXZFZUNDYybE1OU0lEZ0tfTGRpZGZXRG5McTg3ZFhfX19vcnRJMy00VWFFZko3VXVLdS1CSndjTl9QWGJrbngzODJ2RnRUd1R5dWEteXlRLWs3QmxOT0dMY1g1Xy1XMWQzWnI3V3Y5WnJOUGs1TlpLSnF5enBlRVhObURMN1ljRFBCdGJZWkhCUzVEc2pCM0t5R2p2MkpFVF9EeU9HZlgwZHFROVUzU3k2VXdwQWZoUdIBzgFBVV95cUxObEQ1RDFFNjVZaUV4OHNra2lCQzdIa0N1elF4WTM4azJXd3pHQXNZQU1FbDB4V0pSTVk1cGlpWHlMX05FNnludlBCaWZGU1VPQkY4VDJ6Nks4Z1lwUjVyRWRncHMwVHgyaE00Z05aM0ZoMXJtRjFQNGkyRTN6djBmS2lHTXZHNkFieHJvaG0teGFvRlBMdERINTVUM1lFa29hbjRrUVVtdlQ3VGllVk9QSXJJZFdYLTFVQTFqZlNpWnY3b0ZER0ZTVUtMRVNqUQ?oc=5",
-    "date": "2026-06-04 13:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "US public cheers dancing Unitree robots while Congress looks to ban them  South China Morning Post"
-  },
-  {
-    "title": "Voyager Technologies acquires Astrobotic to advance lunar initiatives",
-    "original_title": "Voyager Technologies acquires Astrobotic to advance lunar initiatives",
-    "link": "https://www.therobotreport.com/voyager-technologies-acquires-astrobotic-advance-lunar-initiatives/",
-    "date": "2026-06-04 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Voyager intends to accelerate investment to scale Astrobotic’s programs, including lunar and reusable rocket programs.\nThe post Voyager Technologies acquires Astrobotic to advance lunar initiatives appeared first on The Robot Report."
-  },
-  {
-    "title": "Improving efficiency in modern construction projects",
-    "original_title": "Improving efficiency in modern construction projects",
-    "link": "https://roboticsandautomationnews.com/2026/06/04/improving-efficiency-in-modern-construction-projects/102264/",
-    "date": "2026-06-04 12:07",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "You notice it early on a job site when efficiency starts to slip. Small delays often build into larger setbacks that affect the whole schedule. In modern construction, you work in an environment where margins depend on timing as much as skill. Rising material costs and tighter deadlines push you to think more carefully about […]"
-  },
-  {
-    "title": "Video: China’s Unitree humanoid robots stun judges on ‘America’s Got Talent’ with synchronised dance act - The Indian Express",
-    "original_title": "Video: China’s Unitree humanoid robots stun judges on ‘America’s Got Talent’ with synchronised dance act - The Indian Express",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOOFBLZnhtREZ6Nm1ySVAwN2ZOQUFRaDEzYWtnYm1tR1NMdkFtX2ZCTVZ2TFZmVnhpZGRfcmluRVFlYUMtMzg1eFp6WThtRlI0NFFHb1lhd09IZVlCLW5JTmo0VUZZS21rTnA0NHM2RG10M05TODRNNENkYVVfVUVvWlg3R0MxR25Kb0kzR1lKb0pPUC11dEZIUC00NXBWdjBmcVFSRzM5alBwVjY1UFI2QzJmNll0NG0zMVp1bFZvTDg2emhs0gHLAUFVX3lxTE5aY0tsYXhIOExVMm5EUmtjd25PWGtqRFR5T05uVC1ncU5wOXdwbl8wLUVWajY2elBCYkpDUXFoQTlDZlBJcUp4T3ZlaE50cjI1OGdFVDl4ZkZlR0I4cVZjcV9JTk5KUVhGVUJKckxiX0VQc0gydUdlRzJ6aWRaeDlDc3czWnVrSlRweXZQMzRQb3FtdnNFQ0p2MmI3cERQM3pxZXNscU10UXktS2VmZzZSelNnRk9Cemh0Xy1xdEN5RDhpYS02RjFqZTZR?oc=5",
-    "date": "2026-06-04 11:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Video: China’s Unitree humanoid robots stun judges on ‘America’s Got Talent’ with synchronised dance act  The Indian Express"
-  },
-  {
-    "title": "Video: China’s Unitree humanoid robots stun judges on ‘America’s Got Talent’ with synchronised dance act - The Indian Express",
-    "original_title": "Video: China’s Unitree humanoid robots stun judges on ‘America’s Got Talent’ with synchronised dance act - The Indian Express",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWmNLbGF4SDhMVTJuRFJrY3duT1hrakRUeU9OblQtZ3FOcDl3cG5fMC1FVmo2NnpQQmJKQ1FxaEE5Q2ZQSXFKeE92ZWhOdHIyNThnRVQ5eGZGZUdCOHFWY3FfSU5OSlFYRlVCSnJMYl9FUHNIMnVHZUcyemlkWng5Q3N3M1p1a0pUcHl2UDM0UG9xbXZzRUNKdjJiN3BEUDN6cWVzbHFNdFF5LUtlZmc2UnpTZ0ZPQnpodF8tcXRDeUQ4aWEtNkYxamU2UdIBywFBVV95cUxOWmNLbGF4SDhMVTJuRFJrY3duT1hrakRUeU9OblQtZ3FOcDl3cG5fMC1FVmo2NnpQQmJKQ1FxaEE5Q2ZQSXFKeE92ZWhOdHIyNThnRVQ5eGZGZUdCOHFWY3FfSU5OSlFYRlVCSnJMYl9FUHNIMnVHZUcyemlkWng5Q3N3M1p1a0pUcHl2UDM0UG9xbXZzRUNKdjJiN3BEUDN6cWVzbHFNdFF5LUtlZmc2UnpTZ0ZPQnpodF8tcXRDeUQ4aWEtNkYxamU2UQ?oc=5",
-    "date": "2026-06-04 11:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Video: China’s Unitree humanoid robots stun judges on ‘America’s Got Talent’ with synchronised dance act  The Indian Express"
-  },
-  {
-    "title": "Interview with CreateMe CEO Campbell Myers: From stitching to bonding – physical AI could transform the way clothes are made",
-    "original_title": "Interview with CreateMe CEO Campbell Myers: From stitching to bonding – physical AI could transform the way clothes are made",
-    "link": "https://roboticsandautomationnews.com/2026/06/04/interview-with-createme-ceo-campbell-myers-from-stitching-to-bonding-physical-ai-could-transform-the-way-clothes-are-made/102258/",
-    "date": "2026-06-04 08:59",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "For decades, apparel manufacturing has remained one of the most labor-intensive sectors in global industry. While robots have transformed automotive production, electronics assembly, and warehouse operations, handling soft, deformable materials such as fabric has proven far more difficult to automate. Textiles stretch, wrinkle, drape, and shift unpredictably, creating challenges that traditional industrial automation systems were […]"
   }
 ]
