@@ -90,6 +90,42 @@
     "summary": "연구진은 이중 팔(Bimanual) 정교 조작의 복잡한 다중 모드 입력 처리 문제를 해결하기 위해 DECO(Decoupled Multimodal Diffusion Transformer)를 제안함. 이 모델은 vision, proprioception, tactile 신호를 전문화된 경로로 분리하여 구조적이고 제어 가능한 통합을 가능하게 하며, 촉각 정보를 효율적으로 주입하는 경량 어댑터도 함께 제시됨. DECO-50 데이터셋과 2,000개 이상의 로봇 구동 테스트를 통해 실험한 결과, DECO는 전반적인 평균 성공률 72.25%를 기록했으며, 촉각 어댑터 추가를 통해 복잡한 접촉 환경에서 평균 성공률을 10.25% 추가 향상시키는 뛰어난 성능을 입증함."
   },
   {
+    "title": "시간적 중복성 감소를 통한 효율적 Vision-Language-Action 추론 성능 개선",
+    "original_title": "Reducing Temporal Redundancy for Efficient Vision-Language-Action Inference",
+    "link": "https://arxiv.org/abs/2607.12287",
+    "date": "2026-07-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Vision-Language-Action (VLA) 모델의 실시간 로봇 제어 배포를 제한하는 높은 추론 지연 시간 문제를 해결하는 방안 제시. 반복적인 시각 인코딩과 다단계 디퓨전 샘플링의 시간적 중복성을 줄이는 시스템 가속 전략을 구축함. 실험 결과, Libero 등 여러 플랫폼에서 2배 이상의 속도 향상을 달성하는 동시에 최대 98%에 달하는 높은 일반 조작(manipulation) 성공률을 입증함."
+  },
+  {
+    "title": "MAMMOTH: 누락 모달리티에 강건한 비포장 환경 이동성을 위한 멀티모달 엔드-투-엔드 정책",
+    "original_title": "MAMMOTH: A Multi-Modal End-to-End Policy for Off-Road Mobility Robust to Missing Modality",
+    "link": "https://arxiv.org/abs/2607.12965",
+    "date": "2026-07-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "비포장 환경에서 발생하는 극심한 지형 다양성 및 센서 열화 문제는 기존 자율 주행 기술의 주요 한계점으로 지적됨. 이에 연구진은 MAMMOTH(MASKing Multi-Modal inputs for Off-road Traversability Heuristic-informed navigation)라는 통합 엔드-투-엔드 정책을 제시함. MAMMOTH는 RGB, Thermal, 3D Pointcloud 등 다양한 모달리티를 결합하고 modality dropout 방식을 채택하여 센서 모달리티 손실에 강건하게 작동하며, 환경 지식 기반의 휴리스틱을 활용하여 안전하고 부드러운 경로 계획이 가능함."
+  },
+  {
+    "title": "전역적 시각 안내와 국소 초음파 단서를 활용한 견고한 수동 3D 초음파 재구성",
+    "original_title": "Seeing Globally, Refining Locally: Global Visual Guidance and Local Ultrasound Cues for Robust Freehand 3-D Ultrasound Reconstruction",
+    "link": "https://arxiv.org/abs/2607.12398",
+    "date": "2026-07-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "수동 3D 초음파(US) 재구성이 가진 자세 추정 오차 누적 문제를 해결하기 위해, 외부 카메라 데이터를 이용한 전역적 안정화와 초음파 B-mode 이미지를 이용한 해부학적 국소 정제 기능을 결합한 Global-to-Local 자세 추정 프레임워크를 제안함. 이 프레임워크는 크로스모달 융합 모듈을 통해 카메라 특징과 해부학적 US 특징을 통합하며, 다중 스케일 포즈 손실을 적용하여 안정성을 극대화함. 실험 결과, 기존 Dual-Cam 베이스라인 대비 궤적 드리프트를 16.50%에서 27.12%까지 크게 감소시키고, *in vivo* 환경에서도 낮은 Hausdorff 거리(1.58 mm)를 달성하며 뛰어난 재구성 성능을 입증함."
+  },
+  {
+    "title": "불확실성 극복을 위한 접근: 자유 에너지 기반 강건 시각 항법 실시간 적응 기술",
+    "original_title": "Seeing Through Uncertainty: Free-Energy-Inspired Real-Time Adaptation for Robust Visual Navigation",
+    "link": "https://arxiv.org/abs/2403.01977",
+    "date": "2026-07-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "강건한 시각 내비게이션을 위해 자유 에너지 원리(FEP)를 활용한 FEP-Nav 프레임워크를 제시함. 본 모델은 상향식 디코더와 Adaptive Normalisation을 결합하여, 환경의 노이즈와 변화에 맞춰 변이 자유 에너지(VFE)를 최소화하며 실시간으로 적응하는 메커니즘을 구현함. 실험 결과, FEP-Nav는 시뮬레이션 및 실제 환경에서 시각적 손상이 발생했을 때 기존의 비적응형 및 다른 적응형 방법론보다 월등한 성능을 입증함."
+  },
+  {
     "title": "거리에 등장한 휴머노이드 로봇과 드론 배송 서비스 등, 중국 선전이 '일상적인 기술 쇼케이스'로 기능함",
     "original_title": "Humanoid robots on the streets, milk tea delivered by drones… In Shenzhen, China, it's ‘CES every day’ - 경향신문",
     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSXZEdWxxZE1tMTNiUVdUeFlJeUZfTXVvLWY1d0p5OVhXSVpETjNBZVJmWTR3czZmRUQxMnFUTFpoT0I0TzBfTHA5bTAyQWRBYjB2dEt0aERkdndPWm53a3F0RW9ZYlc5cVlzcjBLRVIwOUhSb2pPcTFDNWZUZHJpaFJWYVBDYjVkWlhIb3Y4Ylpwc0cxbHlMWE44YzUxdm9VdVBxb1ZIcGxSMG5XOVE2Yg?oc=5",
@@ -17962,41 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "The next leap in robotics won’t come from faster processors or more sophisticated mechanical design. It will come from better data, specifically, from training environments that replicate how the physical world actually behaves.  What is physical AI? Physical AI refers to 3D assets and simulation environments built with real physical properties embedded at their core, […]"
-  },
-  {
-    "title": "The Path of a Request: A Tour of Modern Web Architecture",
-    "original_title": "The Path of a Request: A Tour of Modern Web Architecture",
-    "link": "https://blog.bytebytego.com/p/the-path-of-a-request-a-tour-of-modern",
-    "date": "2026-06-04 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "In this article, we follow the journey of a web request one hop at a time."
-  },
-  {
-    "title": "Robot in Clown Wig Roundhouse Kicks Small Child - Futurism",
-    "original_title": "Robot in Clown Wig Roundhouse Kicks Small Child - Futurism",
-    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSHhRb3N3SWlsLU84OWEtM1NTVm9LV0JCSDlOMnRZT3U5ckZsM1NadDl1VWx0M3QtRlZMd2s5VXIzMmZkVGp1MG1SejJ2U0tqV0s0UVRBUl8talhCVmtqYmhxR0tYbW5ITUpTb1VjclpBV1Q2ZmVrLTVZaWpfZDF5MlhQa19KUQ?oc=5",
-    "date": "2026-06-04 14:54",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Robot in Clown Wig Roundhouse Kicks Small Child  Futurism"
-  },
-  {
-    "title": "New app lets anyone operate a robot from their phone",
-    "original_title": "New app lets anyone operate a robot from their phone",
-    "link": "https://techxplore.com/news/2026-06-app-robot.html",
-    "date": "2026-06-04 14:20",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "Someone with no computing experience may soon be able to remotely control a robot from anywhere on the planet using a smartphone, thanks to new technology developed by Georgia Tech. The new technology is also set to revolutionize the scale of policy training data collection, which is essential to advancing robotic capabilities and meeting growing production demand."
-  },
-  {
-    "title": "Neolix partners with QuikBot to develop autonomous delivery network",
-    "original_title": "Neolix partners with QuikBot to develop autonomous delivery network",
-    "link": "https://roboticsandautomationnews.com/2026/06/04/neolix-partners-with-quikbot-to-develop-autonomous-delivery-network/102275/",
-    "date": "2026-06-04 14:06",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Neolix, a developer of Level 4 autonomous logistics vehicles, has announced a strategic partnership with Singapore-based deep-tech company QuikBot Technologies, to build an end-to-end autonomous delivery solution spanning public roads, building interiors and individual doorsteps. The collaboration will support Neolix’s Singapore pilot deployment and compliance preparation, while advancing both companies’ autonomous delivery offerings across Asia-Pacific, […]"
   }
 ]
