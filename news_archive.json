@@ -189,6 +189,51 @@
     "summary": "본 연구는 로봇 매니퓰레이션을 'Move'(대략적 이동)와 'Operate'(접촉 민감 상호작용)의 두 독립된 단계로 분리하는 Vision-Language-Action (VLA) 프레임워크인 Move-Then-Operate를 제시함. 이 아키텍처는 학습 가능한 phase selector를 통해 단계별 동역학을 분리하고, MLLM 기반 파이프라인으로 인간의 운동 패턴에 맞춰 동작 단계 레이블을 자동 생성함. RoboTwin2 벤치마크에서 평균 68.9%의 성공률을 기록하며, 기존 단일 정책 대비 월등한 성능 향상과 효율성을 입증한 결과임."
   },
   {
+    "title": "잠재력 기반의 동력원: 햅틱 응용을 위한 정전기 액추에이터 설문조사",
+    "original_title": "Power from Potential: A Survey of Electrostatic Actuators for Haptics",
+    "link": "https://arxiv.org/abs/2607.13058",
+    "date": "2026-07-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "햅틱 인터페이스의 발전으로 부드럽고 에너지 효율적인 액추에이터 수요가 증가함에 따라, 본 연구는 고전압 정전기 액추에이터(HVEAs)를 핵심 대안으로 제시함. HVEAs의 네 가지 주요 유형(전계 구동 접착제, 유전체 엘라스토머 등)을 심층 분석하여, 웨어러블 환경에서 촉각 및 운동감각 피드백 구현 가능성을 검토함. 이를 통해 HVEAs가 햅틱 상호작용 분야를 발전시키는 데 필요한 기술적 제약 조건과 미래 연구 방향을 종합적으로 제시함."
+  },
+  {
+    "title": "표현 앵커링 및 언어-행동 정렬을 통한 일반화 가능한 VLA 미세 조정 방안",
+    "original_title": "Generalizable VLA Finetuning via Representation Anchoring and Language-Action Alignment",
+    "link": "https://arxiv.org/abs/2607.13429",
+    "date": "2026-07-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "VLA 모델의 표준인 Behavior Cloning (BC) 기반 미세 조정은 표현 손실 및 언어-행동 불일치를 야기하는 문제점을 지적함. 본 연구에서는 Vision-Language Anchoring을 통해 사전 학습된 표현을 보존하고, Language-Action Alignment를 통해 언어 및 행동 예측을 동일한 관측 기반으로 공동 학습하는 Anchor-Align 기법을 제안함. 이 방법론은 실제 xArm7 로봇과 LIBERO-PRO, CALVIN 등의 시뮬레이션 환경에서 모두 높은 성공률 및 OOD(Out-of-Distribution) 환경에서의 일관된 성능 개선을 입증함."
+  },
+  {
+    "title": "로봇 액션 표현의 의미론적 고정(Semantic Anchoring) 기법",
+    "original_title": "Semantic Anchoring for Robotic Action Representations",
+    "link": "https://arxiv.org/abs/2607.13597",
+    "date": "2026-07-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Vision-Language-Action (VLA) 모델은 사전 학습된 Vision-Language Models의 풍부한 의미론을 사용하나, 제한된 데이터로의 미세 조정 시 이 구조가 훼손되어 일반화 성능이 저하됨. 이에 본 연구는 로봇 액션 표현을 의미론적 매니폴드에 앵커링하는 새로운 플러그 앤 플레이(plug-and-play) 방법을 제안함. 이 방법은 표현을 공유 의미 채널과 사적 채널로 분해하고 추론 시 사적 채널을 제거하여, 실제 환경과 시뮬레이션에서 인-디스트리뷰션 과제에 최대 +21.5%의 성능 향상을 달성함."
+  },
+  {
+    "title": "S-squared-VLA: 자율 주행을 위한 비전-언어-행동(VLA) 모델의 의미론적 및 공간적 스트림 분리 기법",
+    "original_title": "S-squared-VLA: Decoupling Semantic and Spatial Streams in Vision-Language-Action Models for Autonomous Driving",
+    "link": "https://arxiv.org/abs/2607.13926",
+    "date": "2026-07-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "자율 주행을 위한 VLA 모델은 언어와 물리 제어 간의 괴리(semantic-physical gap)로 인해 공간 표현에 심각한 손실을 경험하는 한계가 존재함. 이를 극복하기 위해, 본 연구는 S-squared-VLA를 제안하며 VLA 모델의 의미론적 스트림과 공간적 스트림을 명시적으로 분리하는 방식을 도입함. 의미론적 스트림이 고수준 의도를 추론하는 동안, 독립적인 공간적 스트림은 시각 인코더로부터 압축되지 않은 공간적 특징을 직접 보존하며, 이 두 스트림을 결합한 결과 NAVSIM 벤치마크에서 기존 대비 최고 성능을 달성하는 것으로 입증됨."
+  },
+  {
+    "title": "완벽한 시연이 오히려 방해 요소가 되는 경우: 핵심 동작 세그먼트를 통한 견고한 정렬 학습",
+    "original_title": "Perfect Demo Makes Poor Teacher: Learning Robust Alignment from Critical Motion Segments",
+    "link": "https://arxiv.org/abs/2606.15587",
+    "date": "2026-07-16 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇의 정교한 조작(fine-grained manipulation)에서 전문가 시연은 결정적인 순간을 지나치게 압축하여, 정책에게 필요한 정밀 구간의 감독(supervision)을 부족하게 하는 문제가 발견됨. 이에 연구진은 비전-언어 모델과 액션 전문가를 연결하는 STAIR(Spatio-Temporal feature As an Interface for Robot learning)라는 시공간 동적 특징 표현을 도입함. STAIR는 짧은 구간의 동작을 밀도 높고 동작 인지적인 감독 신호로 변환하며, 유창한 데이터만으로도 기존 의도적 시연 수준에 근접하는 높은 정렬 성능을 회복함을 입증함."
+  },
+  {
     "title": "중국, 로봇을 통해 인간의 행동 학습 시도함",
     "original_title": "China sends robots out into the world to learn how to be human - The Japan Times",
     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYUV3enhmcVU1SUZuUExNX2MxSm5NdHU0aU1xSEhiU0VUUnNud0E5WDdGWGVvQWtQdkYyZHNTSHJyenplYk9MMVlhNlExVVFCY2ZZVXhzaG0zVlNZdHdhdHdUaWNlUmFXZXc3c3dSNFg3ai10THRQeE12cmlsU21pbnJnQzU?oc=5",
@@ -17953,50 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "UBTECH's First Full-Size Biomimetic Humanoid Robot Surpasses 1,000 Pre-Orders in 3 Days  Pandaily"
-  },
-  {
-    "title": "Méca-Précis utilizes robotic measurement cell to eliminate inspection bottlenecks",
-    "original_title": "Méca-Précis utilizes robotic measurement cell to eliminate inspection bottlenecks",
-    "link": "https://roboticsandautomationnews.com/2026/06/05/meca-precis-utilizes-robotic-measurement-cell-to-eliminate-inspection-bottlenecks/102297/",
-    "date": "2026-06-05 07:26",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "French precision engineering company Méca-Précis has automated part inspection using a robotic measurement cell that combines a coordinate measuring machine (CMM) from Mitutoyo with automation technology from a company called Engineering Data. The system was introduced after inspection processes became a bottleneck as production volumes increased, particularly for aerospace and space-sector customers that require 100 […]"
-  },
-  {
-    "title": "Kirisense wins funding to develop robotic fingertips that can sense touch and slip",
-    "original_title": "Kirisense wins funding to develop robotic fingertips that can sense touch and slip",
-    "link": "https://roboticsandautomationnews.com/2026/06/05/kirisense-wins-funding-to-develop-robotic-fingertips-that-can-sense-touch-and-slip/102292/",
-    "date": "2026-06-05 06:55",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "UK robotics startup Kirisense has secured funding from the Henry Royce Institute to develop advanced tactile sensing technology designed to give robots a more human-like sense of touch. The project, supported through the Henry Royce Institute’s Industrial Collaboration Programme and delivered in partnership with the University of Sheffield, will focus on creating robotic fingertips capable […]"
-  },
-  {
-    "title": "Europe’s most important industrial lubrication conference celebrates its 10th anniversary in Bilbao",
-    "original_title": "Europe’s most important industrial lubrication conference celebrates its 10th anniversary in Bilbao",
-    "link": "https://roboticsandautomationnews.com/2026/06/05/europes-most-important-industrial-lubrication-conference-celebrates-its-10th-anniversary-in-bilbao/102287/",
-    "date": "2026-06-05 06:41",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Europe’s most important conference on industrial lubricants will celebrate its 10th anniversary at the Euskalduna Convention Centre in Bilbao. On Wednesday and Thursday of this week, 200 professionals from Europe, Asia and America will attend this new edition of LUBMAT, a leading international biennial event specialising in lubricants, tribology and production equipment monitoring. For two […]"
-  },
-  {
-    "title": "Humanoid robot kicks child during public performance in Xinjiang - The Online Citizen",
-    "original_title": "Humanoid robot kicks child during public performance in Xinjiang - The Online Citizen",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPV2cxMnYwd0xqZDhYLVUzQkZTWDdUb2V4em9rYzRJWUs1Qk5WaXV6WWZFelZQMmtHbndNcC1QR3FfUGNOaERwNXZqSFZpQ3hERnN3eVM2QnhnZkJHV20xY0QwQ3NlSmJ3T2ZzZW9Qb1BIaXF4b1N5V3psLUNmalNwQTVJQkhRNjR6Uk5tY08wMk9Wd3Q0MHJDMHh4LUJIQ01xblZFSjVrSQ?oc=5",
-    "date": "2026-06-05 04:13",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Humanoid robot kicks child during public performance in Xinjiang  The Online Citizen"
-  },
-  {
-    "title": "OLIVE: Online Low-Rank Incremental Learning for Efficient Adaptive Exoskeletons",
-    "original_title": "OLIVE: Online Low-Rank Incremental Learning for Efficient Adaptive Exoskeletons",
-    "link": "https://arxiv.org/abs/2606.05234",
-    "date": "2026-06-05 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.05234v1 Announce Type: new \nAbstract: Wearable exoskeleton systems hold promise for restoring mobility in individuals with physical impairments, yet most existing controllers rely on static gait policies that lack the ability to adapt to dynamic real-world environments or individual user characteristics. We present \\olive (\\underline{O}nline \\underline{L}ow-rank \\underline{I}ncremental Learning for Efficient Adapti\\underline{ve} Exoskeletons), a parameter-efficient online adaptation framework that continuously personalizes exoskeleton control during deployment. \\olive decomposes the adaptive component of the control policy into a low-rank residual form~$\\dW = \\At\\Bt^\\top$ with rank~$r!\\ll!\\min(d,k)$, reducing online update cost from $\\mathcal{O}(dk)$ to $\\mathcal{O}(r(d{+}k))$ while preserving the stability of a pretrained base controller~$\\Wz$. Parameters are updated via a reward-shaped policy gradient driven purely by on-body sensor feedback (EMG, IMU, vibration), eliminating dependence on offline reference trajectories. A gating mechanism modulates the strength of personalization based on contextual state, and a dynamic rank scheduler adapts the update dimensionality to terrain complexity -- allocating minimal capacity on simple flat terrain and expanding to higher-rank updates on demanding uneven surfaces -- enabling robust performance across diverse activities: flat walking, stair navigation, slopes, and uneven terrain. Experiments on the wearable platform demonstrate that \\olive achieves +13, +22, and +15 percentage-point improvements in gait smoothness, effort reduction, and motion stability over the strongest baseline, converging within $\\sim$1{,}800 walking steps at 7.4,ms end-to-end latency. Our code implementation is available at https://github.com/FastLM/OLIVE."
   }
 ]
