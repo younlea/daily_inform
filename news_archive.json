@@ -360,6 +360,15 @@
     "summary": "NVIDIA가 범용 로봇 정책의 실세계 배포 평가 방법을 공유함. 해당 기술은 RoboLab의 연구 결과를 활용하여 NVIDIA Isaac Lab-Arena이라는 오픈소스 시뮬레이션 프레임워크로 구체화됨. 이 Isaac Lab-Arena은 대규모 정책(policy)의 설정 및 평가를 위한 환경을 제공하는 것이 핵심임."
   },
   {
+    "title": "미국 휴머노이드 로봇 산업 개발 동향 분석",
+    "original_title": "미국 휴머노이드 로봇 산업의 개발 현황 - 브런치",
+    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9wR2pTa1B4SmhGSHhNT0M5aEEtcC1ORDdsWHdILXdTQThCaGFOa1BfeF9McDc0RzZFalc5X0YxWlJZZXRiWkpIYQ?oc=5",
+    "date": "2026-07-14 18:52",
+    "source": "Google News (Humanoid)",
+    "category": "humanoid",
+    "summary": "최근 미국 시장에서 주요 기술 기업들을 중심으로 휴머노이드 로봇 개발 경쟁이 가속화되고 있음. 기업들은 AI 통합과 고성능 구동 시스템을 통해 범용 로봇 솔루션 구현에 집중하고 있는 상황임. 해당 로봇들은 제조업, 물류, 서비스업 등 다양한 산업 현장에 실질적으로 도입되어 노동력 부족 해소에 기여할 것으로 기대됨."
+  },
+  {
     "title": "중국 신규 AI 규제, Ubtech 소비자 로봇 시장 전략에 드리운 그림자",
     "original_title": "China’s Coming AI Rules Cast a Long Shadow Over Ubtech’s Consumer Robot Bet - Ad Hoc News",
     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPV1NFZmRGZGQ2NmVlcDd3VmxlYmhWaFIxUUVUZjd5b2VoZkstT2RuUGtPWDExLXFYVlRXQVdaNXh0eldBaVdyQ3ZpNVN2ak5RMFhoNHIxR2NMeFpHdFRGV0dPQ3ZkY3A2SHdiajlqdlFRUjhBaFR5LXd3aGJCWlNoaWRwYVpQZHF3OVB2T29Db2JKT3h4STFDcFl6NGFXeFgyX2dPUmdpSXlsZHEzck10R3RNTXFqRjhPUHo0c2FNVS1iUQ?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.06323v1 Announce Type: new \nAbstract: Humans often take longer to demonstrate a task than a robot would need to execute it. Rather than learning to replicate the demonstration at the same pace, many industrial and practical applications require robots to perform tasks as quickly as possible. In this paper, we investigate several hypotheses for learning policies that operate faster-than-demonstrations. Our experiments show that the most effective strategy is to downsample recorded demonstrations and train the robot's policy on this accelerated data. However, uniformly downsampling an entire trajectory can be problematic. Some parts of a task can be safely sped up (e.g., unconstrained motion), while others demand slower, more precise motion (e.g., object interactions or fine manipulation). To address this challenge, we introduce VOLT, a vision-and-language trajectory segmentation method that reasons over video demonstrations, and leverages contextual cues to determine when acceleration is appropriate and when careful precision is required. VOLT identifies segments where slow, deliberate motion is necessary, then selectively downsamples the remaining segments. The resulting reformatted trajectories can be used with standard imitation learning approaches, such as diffusion policies. Our results highlight that segmentation quality is critical -- baseline methods often misidentify when acceleration is possible, leading to overly cautious or unreliable policies. Compared to state-of-the-art alternatives, VOLT allows robots to execute tasks faster while maintaining strong performance."
-  },
-  {
-    "title": "TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies",
-    "original_title": "TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies",
-    "link": "https://arxiv.org/abs/2606.06491",
-    "date": "2026-06-05 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.06491v1 Announce Type: new \nAbstract: Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs through model compression, KV-cache reuse, or reinforcement learning only shift the policy from one fixed speed to another, and leave deceleration almost unexplored. We observe that the magnitude of each predicted action already governs how fast the robot moves, opening a direct route to controllable execution speed. We turn this observation into TempoVLA, a single VLA whose execution speed is controlled by an explicit condition. TempoVLA combines two coupled components. (1) A data-side Variable-Speed Trajectory Augmentation (VSTA) that re-times demonstration to any target speed by merging or splitting actions while preserving its motion semantics. (2) A model-side conditioning mechanism that feeds the speed to the policy. Statistics show that VSTA reaches the requested speed with negligible motion error. Experiments in simulation and on real-world tasks demonstrate that TempoVLA achieves flexible speed control in both directions, while VSTA additionally boosts the default $1\\times$ performance via better data utilization. Furthermore, by cooperating with a large multimodal model, TempoVLA realizes dynamic speed control, accelerating through low-risk phases and decelerating for high-risk ones."
   }
 ]
