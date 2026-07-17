@@ -1,5 +1,23 @@
 [
   {
+    "title": "엔터프라이즈 AI 에이전트의 확산과 인프라 대응 능력 점검 필요",
+    "original_title": "Enterprise AI Agents Are Taking Over – Is Your Infrastructure Built to Last?",
+    "link": "https://roboticsandautomationnews.com/2026/07/17/enterprise-ai-agents-are-taking-over-is-your-infrastructure-built-to-last/103342/",
+    "date": "2026-07-17 06:17",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "기업용 AI 에이전트가 연구실 단계를 넘어 실제 업무 시스템에 전면 도입되고 있으며, 워크플로우 추적, 보고서 생성, 의사 결정 등 복합적인 업무 처리가 가능해짐. 이러한 기능 확대는 운영 효율성을 높이지만, 동시에 기술 환경에 큰 부하를 초래함. 따라서 변동하는 워크로드를 처리하고 보안 접근성을 확보하며 데이터 품질을 유지할 수 있는 강력한 AI 에이전트 인프라 구축이 핵심 과제로 부상함."
+  },
+  {
+    "title": "로봇 시뮬레이션 구동 전 개발 시스템 벤치마킹 방법론 수립",
+    "original_title": "How to Benchmark Your Development System Before Running Robotics Simulations",
+    "link": "https://roboticsandautomationnews.com/2026/07/17/how-to-benchmark-your-development-system-before-running-robotics-simulations/103338/",
+    "date": "2026-07-17 06:09",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "로봇 개발은 공장 현장보다 시뮬레이션 환경에서 설계 검증이 선행되는 것이 일반적임. 엔지니어들은 로봇 시뮬레이션을 활용하여 제어 알고리즘을 정교화하고 잠재적 문제를 식별하는 등 핵심 작업을 수행함. 해당 가상 환경은 실제 로봇 구동에 준하는 높은 기술적 요구 사항을 갖는 것이 특징임."
+  },
+  {
     "title": "휴머노이드 로봇 Part 1: 미-중 양분화와 공급망 통제권 (TrendForce)",
     "original_title": "Humanoid Robots Part 1: The US-China Divide and Who Controls the Supply Chain - TrendForce",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBiaXlmVTJ1QXVzMVloWnptZy1QNk1RNlpLdGdtV3VzbVNiSDhNb3JuNlU3ajFSbFk5My0tTXdFSHpKQWVjWlJ2aHRCbXprTHBtNjdFaW0tQzF4dWZ1YUd4S2Z1b1F3YUE5Y09aa2pZcXIzRjQ?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.07383v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have shown strong potential for robotic manipulation, but real-time deployment on edge hardware remains challenging. In this work, we identify VLM visual and context tokens as a major source of deployment latency: for GEMM-dominated projection operators, computation grows linearly with the number of input tokens when model dimensions are fixed. Motivated by this observation, we propose RhinoVLA, a deployment-oriented VLA model co-designed with the Huixi R1 edge SoC. RhinoVLA adopts a token-efficient Qwen3-VL backbone and a continuous Action Expert, reducing the VLM-side token and computation burden while preserving pretrained multimodal capability. To support cross-robot learning, RhinoVLA further introduces a unified interface that combines View Registry, 72D physical state-action slot space, and robotinstance LoRA, allowing heterogeneous robot observations and action schemas to be aligned under a shared policy. On the deployment side, RhinoVLA is optimized through hardware-aware compilation, mixed-precision execution, and parallel visual encoding. Experiments show that RhinoVLA achieves downstream performance comparable to {\\pi}0.5 at a similar parameter scale, while reaching 11.69 Hz end-to-end inference on Huixi R1, meeting the 10 Hz real-time closedloop control target. The project will be open-sourced at https://github.com/HuixiAI/RhinoVLA."
-  },
-  {
-    "title": "Spline Policy: A Structured Representation for Robot Policies",
-    "original_title": "Spline Policy: A Structured Representation for Robot Policies",
-    "link": "https://arxiv.org/abs/2606.07386",
-    "date": "2026-06-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.07386v1 Announce Type: new \nAbstract: Modern imitation-learning policies for robot manipulation often represent actions as fixed-resolution action chunks, which are simple and effective but expose limited geometric and temporal structure before execution. This paper studies Spline Policy (SP), a structured representation that replaces action chunks with spline parameters while keeping the policy backbone unchanged. The predicted spline can be decoded as a compact continuous trajectory, queried at different temporal resolutions, constrained or edited in parameter space, and passed to downstream controllers. For quadratic spline outputs, the same representation can also be converted into a state-dependent vector field through an analytical distance-field construction. Under the regularity and projection assumptions of this construction, the induced dynamics do not increase the distance to the generated spline, yielding a principled local corrective mechanism around the predicted motion. The spline output further supports uncertainty propagation from observations to spline parameters, trajectories, and flow fields, and can be combined with classical control mechanisms such as null-space collision avoidance without retraining the policy backbone. We instantiate SP with diffusion, flow-matching, transformer-based, and vision-language-action backbones. Experiments in low-dimensional motion learning, simulated manipulation under matched backbones, dexterous manipulation, and real-robot case studies show that SP remains compatible with modern policy learners while exposing useful motion-structure properties, including compact decoding, temporal resampling, local correction around predicted motions, uncertainty evaluation, and controller compatibility."
-  },
-  {
-    "title": "Simulation-Driven Imitation Learning for Biosignals-Free Shared-Autonomy Prosthetic Grasping",
-    "original_title": "Simulation-Driven Imitation Learning for Biosignals-Free Shared-Autonomy Prosthetic Grasping",
-    "link": "https://arxiv.org/abs/2606.07389",
-    "date": "2026-06-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.07389v1 Announce Type: new \nAbstract: Biosignals-free shared-autonomy control of upper-limb prosthetic hands aims to enable natural and low-effort manipulation without relying on EMG or other physiological signals. Recent imitation-learning-based approaches have shown promising results, but their scalability is limited by the cost and variability of collecting large amounts of real-world human demonstration data. In this work, we present a scalable simulation framework that automatically generates diverse reach-to-grasp demonstrations from a wrist-mounted virtual camera. The framework combines physically feasible grasp synthesis, natural reaching trajectories retargeting, and reach--grasp--lift execution in procedurally generated indoor environments. It records wrist-view observations, proprioception, and actions to build a large-scale demonstration dataset for imitation learning. Through extensive simulation benchmarks, we evaluate object and scene generalization and compare several representative state-of-the-art imitation learning methods. Results show that the simulated demonstrations are sufficiently rich and consistent for effective policy learning. In three realistic settings, the learned sim-to-real policy achieves over 90\\% grasp success, surpasses baseline methods, and exhibits stronger generalization, highlighting the promise of simulation-driven training for biosignals-free shared-autonomy prosthetic grasping. The demonstrations are available at \\href{https://sites.google.com/view/sim-prosthetic-grasp/home}{https://sites.google.com/view/sim-prosthetic-grasp/home}."
   }
 ]
