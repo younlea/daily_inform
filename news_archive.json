@@ -1,5 +1,23 @@
 [
   {
+    "title": "새로운 자금 확보에 힘입어, 모뉴멘탈, 건설 로봇을 미국에 도입할 계획",
+    "original_title": "With new funding, Monumental plans to bring its construction robots to the U.S.",
+    "link": "https://www.therobotreport.com/with-new-funding-monumental-plans-bring-construction-robots-u-s/",
+    "date": "2026-07-17 12:30",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "모뉴멘탈은 건설 현장에서 협력업체(subcontractor)로 활동하며, 계약자들로부터 로봇 활용에 대한 대가 대신 완성된 벽체(finished walls) 기준으로 비용을 청구하는 것이 특징임. 최근 추가 자금 조달에 성공함에 따라, 모뉴멘탈은 건설 로봇 기술을 미국 시장에 실제로 선보이는 계획을 구체화함."
+  },
+  {
+    "title": "AI 에이전트, 공장 현장 너머 서비스 레이어까지 자동화 영역 확장함",
+    "original_title": "AI agents are automating the service layer beyond the factory floor",
+    "link": "https://roboticsandautomationnews.com/2026/07/17/ai-agents-are-automating-the-service-layer-beyond-the-factory-floor/103388/",
+    "date": "2026-07-17 12:16",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Triad Industrial은 로봇공학, PLC, 머신 비전 등으로 공장 생산 현장의 자동화 구현에 성공했음. 하지만, 운영을 지원하는 사무실 등 서비스 영역의 작업은 여전히 수동 개입이 많은 것으로 파악됨. 이에 따라 자동화의 영역이 물리적 공장 바닥을 넘어 서비스 계층까지 확장되고 있음을 보여줌."
+  },
+  {
     "title": "Mondo Robotics, 소비자용 전지형 AI 카메라 로봇 'Beni' 공개함",
     "original_title": "Mondo Robotics unveils Beni, an all-terrain AI camera robot for consumers",
     "link": "https://roboticsandautomationnews.com/2026/07/17/mondo-robotics-unveils-beni-an-all-terrain-ai-camera-robot-for-consumers/103385/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.06790v1 Announce Type: new \nAbstract: This paper presents ERNEST, a four-wheeled planetary rover concept equipped with a two-degree-of-freedom Active Gimbal Suspension that combines yaw and roll actuation to enable wheel reconfiguration, steering, and active load redistribution. A single neural network controller, trained to track a desired path across challenging terrain, fully unlocks the capabilities of this actuated suspension system for autonomous obstacle negotiation. A reinforcement learning framework is developed using the high-fidelity DARTS simulation engine, which combines rigid-contact dynamics and Bekker-Wong terramechanics, enabling the emergence of locomotion strategies adapted to loose-soil conditions. To obtain a single unified controller across heterogeneous terrains, a policy consolidation strategy merges the experience of terrain-specialized agents into one neural network, eliminating the need for explicit terrain classification and controller switching. The resulting controller operates on a combination of proprioceptive and exteroceptive feedback, including sparse stereo-derived terrain elevation, chassis attitude, joint states, and force-torque measurements. Zero-shot transfer to the physical rover is achieved through domain randomization, sensor noise injection, and model-to-real system identification. Experimental results demonstrate autonomous traversal of rock fields, a bump trap, a wheel-high step, sand ripples, and sandy slopes. On a 20{\\deg} sandy slope, the learned controller reduces the cost of transport by 37% on dry sand despite the additional actuation, and achieves superior performance on wet sand where the passive suspension becomes completely immobilized."
-  },
-  {
-    "title": "Three-dimensional hydro-cluttered locomotion by an undulatory robot",
-    "original_title": "Three-dimensional hydro-cluttered locomotion by an undulatory robot",
-    "link": "https://arxiv.org/abs/2606.06829",
-    "date": "2026-06-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.06829v1 Announce Type: new \nAbstract: Aquatic robots have expanded human access to underwater environments, yet many underwater spaces contain obstacles that can disrupt open-water locomotion. In \"hydro-cluttered\" environments, water is interspersed with rigid and flexible clutter, making body-obstacle contact unavoidable. Operating in these spaces requires robots that can regulate and exploit contact, but this regime remains difficult to model or simulate. Building on recent advances in mechanical intelligence in terradynamically capable limbless robotics, we develop principles for 3D aquatic locomotion using AquaMILR, an elongate limbless robot that combines bilateral cable-driven actuation, programmable body compliance, distributed depth regulation, corrosion-resistant enclosures, and onboard power and electronics for untethered field operation. Systematic robophysical experiments reveal that programmable body compliance regulates body deformation and converts body-environment interactions into fast, robust, forward progression across increasing hydro-clutter constraint strength. Depth regulation provides three-dimensional access, allowing the robot to bypass clutter, recover from obstruction, and continue through otherwise inaccessible routes. In potential jamming scenarios, emergent inertia-induced rolling acts as a spontaneous recovery mechanism, freeing the robot from clutter that would otherwise lead to failure and allowing locomotion to continue without additional control. Tests of the robot in an aquatic mangrove field demonstrate that these principles transfer to practical operation, enabling navigation and onboard visual inspection of inaccessible root zones. These results establish principles for hydro-cluttered locomotion and a design paradigm in which aquatic robots exploit environmental complexity as a locomotor resource."
-  },
-  {
-    "title": "STRIPS-WM: Learning Grounded Propositional STRIPS-style World Models from Images",
-    "original_title": "STRIPS-WM: Learning Grounded Propositional STRIPS-style World Models from Images",
-    "link": "https://arxiv.org/abs/2606.06832",
-    "date": "2026-06-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.06832v1 Announce Type: new \nAbstract: Robots performing long-horizon visual manipulation observe high-dimensional images, but successful plans depend on action-relevant facts: what can be done now and what changes afterward. A useful planning representation should discard irrelevant visual details while preserving action applicability and effects. Classical task planners exploit this structure through symbolic operators with preconditions and effects, but obtaining such representations from raw visual experience remains challenging. We study a visual task-planning setting in which a robot receives only image transitions: the current image, executed high-level action, and the resulting image. At test time, given a start image and a goal image, the robot must produce a sequence of high-level actions that reaches the goal. To address this problem, we introduce STRIPS-WM, a framework for learning image-grounded STRIPS-style world models directly from visual transitions. STRIPS-WM first induces a finite abstract transition graph from images, then learns latent binary predicates and one grounded propositional operator per action label. The learned operators form a symbolic action model with sparse preconditions and add/delete effects. Finally, the learned predicates are distilled into a visual encoder, enabling classical planning directly from novel start and goal images. Experiments on visual rearrangement tasks show that STRIPS-WM improves image-to-plan success over the tested visual rollout, latent graph-search and latent-symbolic baselines."
   }
 ]
