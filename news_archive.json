@@ -72,6 +72,96 @@
     "summary": "손가락 움직임에 의한 가려짐(Occlusion) 문제가 발생하는 손 안 조작 환경을 위해, 본 연구는 햅틱 신호와 비전 데이터를 융합하는 새로운 프레임워크 KineFuse를 제안함. 제안된 방식은 운동학적 인식을 기반으로 하는 핑거 레벨 인코더를 도입하여, 기존의 단순 융합 방식보다 뛰어난 객체 포즈 추적 성능을 확보함. 실험 결과, 특히 순차적 트래킹(sequential open-loop tracking) 과정에서 구조적 차이가 최대 15배까지 증폭됨을 입증하며, Downstream 리오리엔테이션 태스크에서 개선된 트래킹 성능을 검증함."
   },
   {
+    "title": "BridgeFlow: Flow Matching을 이용한 빠르고 강력한 SE(2)-등변 Motion Planning",
+    "original_title": "BridgeFlow: Fast and Robust SE(2)-Equivariant Motion Planning with Flow Matching",
+    "link": "https://arxiv.org/abs/2607.14725",
+    "date": "2026-07-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로보틱스 모션 플래닝의 핵심 난제인 SE(2)-등변성 확보를 위해 BridgeFlow라는 빠르고 엄격하게 SE(2)-등변성을 지닌 생성 모션 플래닝 프레임워크가 제시됨. 본 프레임워크는 기존의 무거운 등변 네트워크 대신 경량 canonicalization 모듈을 활용하여 정확한 공간적 등변성을 구현하는 것이 특징임. Brownian bridge informative prior와 mini-batch optimal transport를 결합하여 추론 속도를 높이고, 2D 환경 및 7-DoF Franka 매니퓰레이터 등 평가를 통해 기존 SOTA 대비 최대 15배의 추론 속도 향상 및 2배 높은 유효 궤적률 등 뛰어난 일반화 능력이 입증됨."
+  },
+  {
+    "title": "기계적 해석 가능성과 최적 제어를 통한 월드 액션 모델의 강인성 확보",
+    "original_title": "Steering Robustness into World Action Models via Mechanistic Interpretability and Optimal Control",
+    "link": "https://arxiv.org/abs/2607.14943",
+    "date": "2026-07-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "World Action Models (WAMs)의 분포 변화 취약성 문제를 해결하고자 기계적 해석 가능성을 활용하여 WAM 활성화 공간의 강인성 특성을 분석함. 연구진은 모델 기반 최적 제어(Optimal Control)를 통해 World-Action Linear Quadratic Regulator (WA-LQR)를 개발하여, WAM의 피드백 제어 효율성을 높임. 그 결과, Cosmos-Policy와 DiT4DiT와 같은 모델에서 카메라, 그리퍼, 시각 노이즈 등 다양한 외부 교란에 대한 강인성 향상이 입증됨."
+  },
+  {
+    "title": "군중 환경 대응을 위한 사족 보행 로봇의 민첩한 주행 학습 방안",
+    "original_title": "Learning Agile Navigation in Crowded Environments for Quadruped Robots",
+    "link": "https://arxiv.org/abs/2607.15036",
+    "date": "2026-07-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "사족 보행 로봇이 센서 가려짐이 심한 군중 환경에서 안전성과 적응성을 동시에 확보하는 것이 핵심 과제임. 이에 연구진은 Velocity Obstacle (VO)의 기하학적 안전성과 End-to-end 학습의 높은 적응성을 결합한 VOP-Nav 시스템을 개발함. 이 시스템은 LiDAR 다중 프레임 데이터를 처리해 VO 이론에 기반한 안전 속도 영역을 예측하며, Isaac Gym과 Unitree Go2 로봇을 통해 기존 방식보다 높은 성공률과 효율적인 동작 안정성을 검증함."
+  },
+  {
+    "title": "휴머노이드 로봇을 위한 행동 기반 파운데이션 모델(BFM) 확장 연구",
+    "original_title": "Scaling Behavior Foundation Model for Humanoid Robots",
+    "link": "https://arxiv.org/abs/2607.15163",
+    "date": "2026-07-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "휴머노이드 제어의 어려움 해결을 위한 대규모 Behavior Foundation Models(BFMs)의 활용 가능성을 재조명함. 본 연구는 전신 행동을 전역 좌표계에서 재현하는 모션 추적 학습 패러다임, 온-정책 롤아웃과 레퍼런스 모션의 시너지, 그리고 Humanoid Transformer라는 확장성 높은 아키텍처 결합을 통해 BFM의 성능 향상을 구현함. 그 결과, 시뮬레이션 및 실제 환경 테스트에서 기존 휴머노이드 컨트롤러 대비 MPKPE를 대폭 감소시키며 뛰어난 제어 충실도와 태스크 일반화 성능을 입증함."
+  },
+  {
+    "title": "AHEAD: 인간 의도 예측 기반의 선제적 핸드 구동 원격 제어 기술 개발",
+    "original_title": "AHEAD: Anticipatory Hand-Driven Teleoperation via Human Intent Prediction",
+    "link": "https://arxiv.org/abs/2607.15172",
+    "date": "2026-07-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존의 수동/감독형 원격 제어 방식이 가진 느린 반응 속도와 작업자 피로도 문제를 해결하기 위해 AHEAD 시스템이 개발됨. 본 시스템은 3D 손 및 머리 신호와 장면 맥락을 이용한 어텐션 기반 분류기를 통해 작업자의 의도를 예측하여, 로봇이 다음 명령을 기다릴 필요 없이 능동적으로 제어할 수 있게 함. 실제 테스트 결과, AHEAD는 기존 방식 대비 로봇 반응 지연 시간을 현저히 단축시키고 작업자 부하를 낮추는 성능을 입증함."
+  },
+  {
+    "title": "열 인지적 VLA 모델을 활용한 안전 필수 조작을 위한 Safe-Night VLA 구현",
+    "original_title": "Safe-Night VLA: Seeing the Unseen via Thermal-Perceptive Vision-Language-Action Models for Safety-Critical Manipulation",
+    "link": "https://arxiv.org/abs/2603.05754",
+    "date": "2026-07-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 VLA 모델의 RGB 의존성 및 안전 제약 부족 문제를 해결하고자, 열 감지(thermal-perceptive) 기능을 통합한 다중 모드 조작 프레임워크 Safe-Night VLA가 제안됨. 이 프레임워크는 장파장 적외선 열 인지 정보를 VLA 백본에 통합하여 열역학적 속성에 기반한 추론을 수행하며, Control Barrier Functions 기반의 안전 필터를 적용하여 구동 중 결정론적 제약 강제화가 가능함. Franka 매니퓰레이터 실증 결과를 통해, Safe-Night VLA가 비가시적 열 모달리티를 활용하여 RGB 기반 모델 대비 높은 견고성과 성능을 보임이 입증됨."
+  },
+  {
+    "title": "단순 인간 동작 데이터만으로는 신뢰성 있는 보행 생체 역학 추정 불가",
+    "original_title": "Human Motion Data Alone Does Not Guarantee Plausible Gait Biomechanics",
+    "link": "https://arxiv.org/abs/2603.12408",
+    "date": "2026-07-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "로보틱스 분야에서 활용되는 모션 모방 학습(IL)이 명시적인 동역학 정보 없이 생체 역학적 관절 모멘트를 추정할 수 있는지 검토함. 연구 결과, 단순 모션 기반의 MOIL은 GRF, CoP, 관절 모멘트 추정에서 큰 오차를 보인 반면, 동역학 정보를 통합한 KAIL이 생체 역학적 값과 더욱 일관된 결과를 도출함. 해당 연구는 MOIL 방식이 인간 보행 역학의 일관된 동역학 추정에는 근본적인 한계를 가질 수 있음을 지적함."
+  },
+  {
+    "title": "무선 통신 환경에서 다중 로봇 시스템 자율성을 위한 네트워크 코딩 통합 연구",
+    "original_title": "Bringing Network Coding into Multi-Robot Systems: Interplay Study for Autonomous Systems over Wireless Communications",
+    "link": "https://arxiv.org/abs/2603.17472",
+    "date": "2026-07-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "다중 로봇 시스템(MRS)의 안전 및 자율성 운영에 필수적인 무선 통신 채널의 지연 및 손실 문제에 주목함. 본 연구는 기존 재전송 기반 프로토콜의 긴 지연 문제를 극복하기 위해 적응형 및 인과적 네트워크 코딩을 제시함. 분석 결과, 네트워크 코딩 적용 시 협력적 로컬라이제이션 및 안전 임계 오버테이킹 기동 등에서 재전송 기반 방식 대비 높은 정확도와 신뢰성 향상을 입증하며, 자율 알고리즘과 통신 메커니즘의 공동 설계 필요성을 강조함."
+  },
+  {
+    "title": "중국, 최초의 로봇 MMA 격투 개최: 도니 옌, 격렬한 킥 목격 보고 (Athlon Sports)",
+    "original_title": "China Hosts First Robot MMA Fight: Donnie Yen Witnesses Brutal Head Kick Decapitation - Athlon Sports",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbmt3MEhkaEFzSnd4ZE52Q0diZTFDZ0UycEtNeTUzSzlYR01wTlhrbTdva3NLemlnY2xhbzBBZEwyVWh3dVNxRlh4SE5JTFBqNG44N19MTWh5dzUtZG1lcGwzdUVidTdaMEZlSXZYZTY2eXR2Q2ZRaTBXZ0oycFFQSkZkOUd4Z2tYNFZIbw?oc=5",
+    "date": "2026-07-17 03:26",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "중국에서 최초의 로봇 MMA 격투가 개최된 사실이 보도됨. 이 행사에서는 도니 옌이 참가한 로봇들의 잔혹하고 격렬한 헤드 킥 기술 및 decapitation과 같은 전투 장면을 목격한 내용임. 첨단 기술을 활용한 로봇 격투 이벤트가 현지에서 시연되었음을 의미함."
+  },
+  {
+    "title": "쉔젠 최초 글로벌 휴머노이드 격투 대회, 로봇들이 펀치와 하이킥으로 격돌 및 신체 손상 후에도 전투 지속함",
+    "original_title": "Robots battle with punches, high kicks and even fight on after losing heads in debut global humanoid fighting contest in Shenzhen - Global Times",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5DNXh2TjhtamVXLU55Wk03VWJEOGQ2cENDaTNqYnhXem1zTFFTTjV4cE5pM21ZQzdwN21vX3FvXzd3TDhGcUpyOVhpVEp3UE00clFmcDdXWTVveVlsVnU0VDF3?oc=5",
+    "date": "2026-07-17 02:32",
+    "source": "Google News (China Robotics - EN)",
+    "category": "hand",
+    "summary": "쉔젠에서 개최된 첫 글로벌 휴머노이드 격투 대회 현장의 모습이 보고됨. 참가 로봇들은 펀치, 하이킥 등 다양한 격투 기술을 사용하며 치열하게 대결을 벌임. 특히, 로봇들이 머리 등 신체 일부 손실 상황에서도 전투를 멈추지 않고 지속하는 모습이 확인됨."
+  },
+  {
     "title": "테라피르마, 건설 로봇 인프라 구축을 위한 1억 1,500만 달러 유치",
     "original_title": "TerraFirma raises $115M to build robotic infrastructure for construction",
     "link": "https://www.therobotreport.com/terrafirma-raises-115m-build-robotic-infrastructure-construction/",
@@ -17908,95 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.07100v1 Announce Type: cross \nAbstract: Visual-language action (VLA) models enable robots to predict actions directly from observations and language instructions, but their performance depends on large-scale, high-quality data and is limited by the scarcity of real-world robot action datasets. To facilitate VLA model learning with abundant unlabeled human videos, Latent Action Models (LAM) learn latent action representations from visual dynamics to provide additional supervision for VLA learning. However, LAM and VLA are typically trained separately, leaving LAM ungrounded during VLA training and VLA models constrained by frozen LAM representations. To address these issues, we propose Latent Action Representation Alignment (LARA), a plug-and-play framework that jointly optimizes LAM and VLA via representation alignment. This enables reciprocal benefits where LAMs learn with action trajectories to avoid spurious visual changes, while VLAs are regularized by forward dynamics learned within LAMs to reduce hallucinations of functionally ineffective trajectories. We demonstrate LARA versatility and effectiveness for pre-training, post-training enhancement of pre-trained VLA models, and LAM refinement, achieving an average of ~10%, ~5%, and ~15% improvement over 3 simulation and 1 meticulously designed real-world robotic manipulation benchmarks."
-  },
-  {
-    "title": "Dash2Sim: Closed-Loop Driving Simulation from in-the-wild Dashcam Videos",
-    "original_title": "Dash2Sim: Closed-Loop Driving Simulation from in-the-wild Dashcam Videos",
-    "link": "https://arxiv.org/abs/2606.07366",
-    "date": "2026-06-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.07366v1 Announce Type: cross \nAbstract: Self-driving simulations typically rely on data collected in a small number of cities or on hand-authored synthetic scenarios. Dashcam videos cover a far broader range of locations and situations, including rare or long-tailed scenarios. They are considered less usable for simulation because it is difficult to recover accurate 4D scenes from monocular in-the-wild videos. Work zones are one such class of long-tailed situations that dashcams capture. We present Dash2Sim, a framework that turns in-the-wild monocular dashcam videos into metric, geo-referenced 4D driving logs compatible with existing simulators, and verifies eachone against an independently maintained map without annotations. We apply Dash2Sim to a large video corpus to create the ROADWork4D benchmark dataset, which spans 4,244 scenes with 2.7M 3D objects across 17 cities. On a verified subset ROADWork4D-CL (2,201 scenes), we study privileged closed-loop planners and find that work zone scenarios are difficult: while rule-based and hybrid planners generalize better than learning-based ones, all fall short, failing to make the lane changes that temporary work zone channels require. Beyond planning, dense depth recovered by Dash2Sim improves novel-view synthesis quality by up to 19% on perceptual metrics, suggesting its potential to provide rich conditioning for closed-loop sensor simulation from monocular videos."
-  },
-  {
-    "title": "Error-State LQR Formulation for Quadrotor UAV Trajectory Tracking",
-    "original_title": "Error-State LQR Formulation for Quadrotor UAV Trajectory Tracking",
-    "link": "https://arxiv.org/abs/2501.15768",
-    "date": "2026-06-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2501.15768v2 Announce Type: replace \nAbstract: This article presents an error-state Linear Quadratic Regulator (LQR) formulation for robust trajectory tracking in quadrotor Unmanned Aerial Vehicles (UAVs). The proposed approach leverages error-state dynamics and employs exponential coordinates to represent orientation errors, enabling a linearized system representation for real-time control. The control strategy integrates an LQR-based full-state feedback controller for trajectory tracking, combined with a cascaded bodyrate controller to handle actuator dynamics. Detailed derivations of the error-state dynamics, the linearization process, and the controller design are provided, highlighting the applicability of the method for precise and stable quadrotor control in dynamic environments."
-  },
-  {
-    "title": "CRAFT: Coaching Reinforcement Learning Autonomously using Foundation Models for Multi-Robot Coordination Tasks",
-    "original_title": "CRAFT: Coaching Reinforcement Learning Autonomously using Foundation Models for Multi-Robot Coordination Tasks",
-    "link": "https://arxiv.org/abs/2509.14380",
-    "date": "2026-06-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2509.14380v3 Announce Type: replace \nAbstract: Multi-Agent Reinforcement Learning (MARL) provides a powerful framework for learning coordination in multi-agent systems. However, applying MARL to robotics remains challenging due to their high-dimensional continuous joint action spaces, complex reward design, and non-stationarity from concurrently learning agents. On the other hand, humans often learn complex coordination with the help of coaches, who guide learning through carefully designed curricula and detailed feedback. Building on the reasoning capabilities of foundation models, we argue that these models can similarly coach robots to learn coordination. Motivated by this, we propose CRAFT: Coaching Reinforcement learning Autonomously using Foundation models for learning coordination Tasks, a framework that leverages foundation models to act as a \"coach\" for multi-robot coordination. CRAFT automatically decomposes long-horizon coordination tasks into sequences of subtasks using the planning capability of Large Language Models (LLMs). Then, CRAFT trains each subtask using LLM-generated reward functions, and refines them through a Vision Language Model (VLM)-guided reward-refinement loop. We evaluate CRAFT on multi-quadruped navigation and bimanual manipulation tasks, and demonstrate its capability to learn complex coordination behaviors. In addition, in a multi-quadruped navigation setting, we show that our learned policies transfer to the real world. Project website is https://iconlab.negarmehr.com/CRAFT/"
-  },
-  {
-    "title": "ActiveGrasp: Information-Guided Active Grasping with Calibrated Energy-based Model",
-    "original_title": "ActiveGrasp: Information-Guided Active Grasping with Calibrated Energy-based Model",
-    "link": "https://arxiv.org/abs/2511.12795",
-    "date": "2026-06-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2511.12795v2 Announce Type: replace \nAbstract: Grasping in a densely cluttered environment is a challenging task for robots. Previous methods tried to solve this problem by actively gathering multiple views before grasp pose generation. However, they either overlooked the importance of the grasp distribution for information gain estimation or relied on the projection of the grasp distribution, which ignores the structure of grasp poses on the SE(3) manifold. To tackle these challenges, we propose a calibrated energy-based model for grasp pose generation and an active view selection method that estimates information gain from grasp distribution. Our energy-based model captures the multi-modality nature of grasp distribution on the SE(3) manifold. The energy level is calibrated to the success rate of grasps so that the predicted distribution aligns with the real distribution. The next best view is selected by estimating the information gain for grasp from the calibrated distribution conditioned on the reconstructed environment, which could efficiently drive the robot to explore affordable parts of the target object. Experiments on simulated environments and real robot setups demonstrate that our model could successfully grasp objects in a cluttered environment with limited view budgets compared to previous state-of-the-art models. Our simulated environment can serve as a reproducible platform for future research on active grasping. The source code of our paper will be made public when the paper is released to the public."
-  },
-  {
-    "title": "Where to Touch, How to Contact: Hierarchical RL-MPC Framework for Geometry-Aware Long-Horizon Dexterous Manipulation",
-    "original_title": "Where to Touch, How to Contact: Hierarchical RL-MPC Framework for Geometry-Aware Long-Horizon Dexterous Manipulation",
-    "link": "https://arxiv.org/abs/2601.10930",
-    "date": "2026-06-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2601.10930v3 Announce Type: replace \nAbstract: A key challenge in contact-rich dexterous manipulation is the need to jointly reason over global geometry and nonsmooth contact dynamics. End-to-end policies bypass this complexity, but often require large amounts of data and transfer poorly from simulation to reality. We address the limitations with a simple insight: dexterous manipulation is inherently hierarchical--at a high level, a robot decides where to touch (geometry); at a low level it determines how to move the object through contact dynamics. Building on this insight, we propose a hierarchical RL--MPC framework in which a high-level reinforcement learning (RL) policy predicts a contact intention, a novel object-centric interface that specifies (i) an object-surface contact location and (ii) a post-contact object subgoal pose. Conditioned on the contact intention, a low-level contact-implicit model predictive control (MPC) optimizes local contact modes and real-time (re)plans through contact dynamics to generate robot actions that robustly move the object toward each subgoal. We evaluate the framework on non-prehensile tasks, including geometry-generalized pushing across diverse object shapes, pivoting/flipping-based object reorientation, and environment-assisted object repositioning. It achieves high success rate with substantially reduced data (10 times less than end-to-end baselines), highly robust performance, and zero-shot sim-to-real transfer."
-  },
-  {
-    "title": "SERNF: Sample-Efficient Real-World Dexterous Policy Fine-Tuning via Action-Chunked Critics and Normalizing Flows",
-    "original_title": "SERNF: Sample-Efficient Real-World Dexterous Policy Fine-Tuning via Action-Chunked Critics and Normalizing Flows",
-    "link": "https://arxiv.org/abs/2602.09580",
-    "date": "2026-06-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.09580v4 Announce Type: replace \nAbstract: Real-world fine-tuning of dexterous manipulation policies remains challenging due to limited real-world interaction budgets and highly multimodal action distributions. Diffusion-based policies, while expressive, do not permit conservative likelihood-based updates during fine-tuning because action probabilities are intractable. In contrast, conventional Gaussian policies collapse under multimodality, particularly when actions are executed in chunks, and standard per-step critics fail to align with chunked execution, leading to poor credit assignment. We present SERFN, a sample-efficient off-policy fine-tuning framework with normalizing flow (NF) to address these challenges. The normalizing flow policy yields exact likelihoods for multimodal action chunks, allowing conservative, stable policy updates through likelihood regularization and thereby improving sample efficiency. An action-chunked critic evaluates entire action sequences, aligning value estimation with the policy's temporal structure and improving long-horizon credit assignment. To our knowledge, this is the first demonstration of a likelihood-based, multimodal generative policy combined with chunk-level value learning on real robotic hardware. We evaluate SERFN on two challenging dexterous manipulation tasks in the real world: cutting tape with scissors retrieved from a case, and in-hand cube rotation with a palm-down grasp -- both of which require precise, dexterous control over long horizons. On these tasks, SERFN achieves stable, sample-efficient adaptation where standard methods struggle."
-  },
-  {
-    "title": "Chameleon: Control-Indexed Prospective Memory for Visuomotor Manipulation",
-    "original_title": "Chameleon: Control-Indexed Prospective Memory for Visuomotor Manipulation",
-    "link": "https://arxiv.org/abs/2603.24576",
-    "date": "2026-06-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.24576v2 Announce Type: replace \nAbstract: Robots often observe information that determines a future action long before that action is executed. In a shell game, for example, a robot first sees which cup hides the ball, watches the cups move, and only later needs to choose the correct cup. The final observation alone is not enough for a decision: the correct action depends on an earlier event. We refer to this temporal gap as observation-action delay. It makes memory a policy-facing problem: a policy must keep similar histories distinct, retrieve the past event relevant to the current decision, and convert that recall into an action-ready state. We call these requirements separability, addressability, and prospectiveness. We introduce Chameleon, a ~60M visuomotor policy for control-indexed prospective memory. Chameleon writes embodied event memory, preserves separable histories, retrieves control-relevant traces, and trains the resulting working state to be prospective. We also introduce Camo-Dataset, a real-robot benchmark that isolates observation-action delay by making the decision scene visually ambiguous, so the correct action must be inferred from earlier observations. Chameleon improves decision/end-to-end success on Camo-Dataset from 22.5%/21.3% to 80.8%/71.3%. On public long-horizon memory benchmarks, it achieves 87.1% +/- 0.8% on LIBERO-10, 97.3% +/- 4.5% on MemoryBench, and 75.1% +/- 1.4% on MIKASA-Robo, setting the state of the art for same-size models and exceeding multiple larger VLA baselines under the reported protocols. Probes and ablations show that Chameleon learns separable, addressable, and prospective memory, and that these properties drive its performance gains."
-  },
-  {
-    "title": "ViVa: A Video-Generative Value Model for Robot Reinforcement Learning",
-    "original_title": "ViVa: A Video-Generative Value Model for Robot Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2604.08168",
-    "date": "2026-06-08 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2604.08168v2 Announce Type: replace \nAbstract: Vision-language-action (VLA) models have advanced robot manipulation through large-scale pretraining, but real-world deployment remains challenging due to partial observability and delayed feedback. Reinforcement learning addresses this via value functions, which assess task progress and guide policy improvement. However, existing value models built on vision-language models (VLMs) struggle to capture temporal dynamics and physical interactions, undermining reliable value estimation in long-horizon tasks. In this paper, we propose ViVa, a video-generative value model that repurposes a pretrained video generator to jointly predict future proprioception and a scalar value. By grounding value estimation in anticipated embodiment dynamics, ViVa leverages spatiotemporal priors to intrinsically couple value with foresight beyond static snapshots. ViVa achieves state-of-the-art results in metric-based evaluation across three tasks, producing reliable value signals that accurately track task progress and detect execution errors. Integrated into RECAP, it achieves an average success rate of 80%, highlighting the promise of video-generative models for value estimation."
-  },
-  {
-    "title": "Humanoid robot kicks child during public demonstration in China - VnExpress International",
-    "original_title": "Humanoid robot kicks child during public demonstration in China - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWlBZQ0hMYzZzQmhBVFNDY1JfRE8wZFdfV0NQai0xcWxpMFhGc0VtaDFiMDlWOUMzVGJaUmprdGktWGdoNkFCaWVFMWZyR0g3d3J1dXF1T2lMUDN4WWVsY09ld2p1UVBMUW5taUFwbkNjRWIwV2dDYURudTl2WEhTMEhzQ2JqVUVhLUJGS2RJajZHZVlpOW5jeUpVaEg3Z1JqS0VoTzBEU3E3N081aWRnVUd2Yzljc01BVnRETw?oc=5",
-    "date": "2026-06-08 03:16",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Humanoid robot kicks child during public demonstration in China  VnExpress International"
-  },
-  {
-    "title": "Robot Crew from China Wows America’s Got Talent - bastillepost.com",
-    "original_title": "Robot Crew from China Wows America’s Got Talent - bastillepost.com",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMzNETU1zMlZIdGxDYWd3cE1wOG9DMlhBYy1saC1VcF9uNFZ0Z0lObjVKNFdDX3hmVVh2eGNTRm9uR3RlS0t1cjA3ZzlyNnZUZDBseDZRVEdBaDI3RDJzbmlEdm9SX0RrMUNJUW9QTUt6NU5fS0VzYlVQQmVvZFhrOFlXaG42RndEWVVqVk1BWkc5NzNtOTdxbE5KZ3VzQWM?oc=5",
-    "date": "2026-06-08 02:20",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Robot Crew from China Wows America’s Got Talent  bastillepost.com"
   }
 ]
