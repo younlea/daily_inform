@@ -1,5 +1,14 @@
 [
   {
+    "title": "글로벌 AI 컨퍼런스: 업계 리더들, 중국 휴머노이드 로봇 산업의 급속한 발전 발표함",
+    "original_title": "China's humanoid robotics sector is advancing rapidly, industry leaders tell Global AI Conference - Anadolu Ajansı",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPdG1aUHU2RERsZXdWUjg2dFlWMm5NbGRSYzZBTDg4RWRmYm1BQzUzUnRicWJwTW1xbElUUTR2VGQ0bjRGYjFKcU00YUN0RGFZdmlWaUFwLVJGTmhaa1REZHdnbElSdzFuRUJ2eHgxV3pHSllaQ1RDYUlwZTJFbXc1VDZRYkVXenprZ0NaeTBZLUJ1d0tucVVPZDhzcWdEdTB5bGdpWGhaWmpyLUNkWDcyMkE1aDFFMmtfOU5YRlozNzNVVEVEeEpLMWh3dmFEZUx1XzB3dUtmMnU?oc=5",
+    "date": "2026-07-18 17:23",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "글로벌 AI 컨퍼런스에서 업계 리더들은 중국의 휴머노이드 로보틱스 섹터가 현재 급속도로 발전하고 있음을 강조함. 해당 부문은 중국의 핵심 산업 동력으로 자리매김하며, 기술 혁신과 실제 상업적 응용 측면에서 폭발적인 성장이 기대됨을 시사하는 내용임."
+  },
+  {
     "title": "MCP vs A2A vs ACP: AI 에이전트 간의 실제 통신 방식 분석",
     "original_title": "MCP vs A2A vs ACP: How AI Agents Actually Talk to Each Other",
     "link": "https://blog.bytebytego.com/p/mcp-vs-a2a-vs-acp-how-ai-agents-actually",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.09798v1 Announce Type: new \nAbstract: Human hand-object interactions encode functional intent, but direct transfer to robotic hands often fails under morphology, contact, and reachability constraints. We present SynManDex, a synthetic pipeline that uses generated human pre-grasps as affordance-aware proposals and resolves the final contacts with robot-native optimization. SynManDex samples object-conditioned digital human pre-grasps, retargets them to dexterous robotic hand poses, optimizes force-closure contacts on the target embodiment, and admits trajectories that pass checks from each step. The resulting keyframes support both grasp-and-lift demonstrations and various prehensile manipulation tasks such as tea pouring, photo taking, and flute playing, designed via VLM agents. As a result, SynManDex combines high grasp quality (86.4\\% grasp stability) with 4.67/5 human-likeness (93.4\\%). It achieves 80.7\\% successes in simulation and 25/30 (83.3\\%) real-robot successes when applied to a 36-DOF bimanual dexterous robotic platform."
-  },
-  {
-    "title": "AHA-WAM:Asynchronous Horizon-Adaptive World-Action Modeling with Observation-Guided Context Routing",
-    "original_title": "AHA-WAM:Asynchronous Horizon-Adaptive World-Action Modeling with Observation-Guided Context Routing",
-    "link": "https://arxiv.org/abs/2606.09811",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.09811v1 Announce Type: new \nAbstract: World-action models have emerged as a promising paradigm for robot manipulation, jointly modeling visual scene dynamics and actions to inject physical priors into policy learning. However, existing world-action models couple world prediction and action execution at the same temporal resolution, forcing the world branch to model near-term frame variations that are redundant and weakly informative. We posit that strictly binding world prediction and action execution to the same temporal rhythm may underutilize the potential of the video branch for embodied control. Therefore, we propose AHA-WAM, an Asynchronous Horizon-Adaptive World-Action Model built on a dual Diffusion Transformer (DiT) architecture that reorganizes world-action modeling around this temporal asymmetry. AHA-WAM instantiates the video DiT as a low-frequency world planner that maintains rolling key-value memory over past observations and exposes reusable layerwise latent context encoding long-horizon scene evolution, while a high-frequency action DiT executes short action chunks in closed loop by querying this context through layerwise joint attention. To support asynchronous execution, we introduce horizon-adaptive offset training and Observation-Guided Video-Context Routing (OVCR), which together let the action expert exploit long-horizon world context while remaining responsive to real-time execution state without rerunning the video DiT. Experiments on RoboTwin and real-world manipulation tasks show that AHA-WAM achieves state-of-the-art performance without any robot-data pretraining, attaining 92.80% average success on RoboTwin and 78.3% success across 4 real-world tasks, while reaching 24.17 Hz closed-loop control with a 4.59x speedup over Fast-WAM."
   }
 ]
