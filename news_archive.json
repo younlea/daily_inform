@@ -1,5 +1,14 @@
 [
   {
+    "title": "AGIBOT, WAIC 2026에서 4대 로봇 공개: 글로벌 수출 추진과 중국의 스파이법 규제 충돌",
+    "original_title": "AGIBOT Debuts Four Robots at WAIC 2026: Global Export Push Meets China's Spy Law Obligation - Tech Times",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZVE3LVFtWXhIemhZbzA2MVlRMHJzc2JQZlMxR3YtVG15NVgxamxGSkRCQnlWWHFmN1JJVFd4VER2T2FHMEgzU2cya0o4UHFwXzNCUmlXeWVfQl9ydTI5YzFiVUFFQmtnOHJGMVFfN0Z3VVVmWlhKUkZJc01yeDI0alpfclduRWxIeFE5a1FaQjhiT3hQWEJNZlNRY1VlMm1xdUtmNHAzb1NPcXJ5ZW5RaE43eEVWamFzcDNqcVdHUE55U25kUkNkTExxaGNPY3NxVlJPeHkyb0M?oc=5",
+    "date": "2026-07-18 14:05",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "AGIBOT가 WAIC 2026에서 4종의 로봇 라인업을 공개하며 글로벌 시장 확장을 적극적으로 추진함. 이는 로봇 산업의 해외 수출 확대 기조와 맞물리나, 중국의 스파이법과 관련된 규제 및 법적 의무가 시장 진출의 주요 난관으로 작용하고 있는 상황임."
+  },
+  {
     "title": "Palm Garden AI, 인간 친화 로봇용 Coherence Guard 관계 결정 레이어 개발",
     "original_title": "Palm Garden AI develops Coherence Guard relational decision layer for human-facing robots",
     "link": "https://www.therobotreport.com/palm-garden-ai-develops-coherence-guard-relational-decision-layer-human-facing-robots/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.09813v1 Announce Type: new \nAbstract: Embodied world models have emerged as a pivotal paradigm for visual robotic decision-making and interactive environment simulation. However, conventional embodied frameworks rely on low-dimensional structured action vectors (e.g., joint angles and end-effector poses), which suffer from limited expressive capacity, poor generalization across diverse embodiments, and unnatural dynamic modeling for complex physical interactions. To address these limitations, this paper proposesiMac (Image as Action Control), a novel unified control paradigm that treats raw visual images as native action representations for embodied world models. Departing from traditional explicit kinematic action encoding, iMac formulates continuous visual manipulation as image-based action tokens, which inherently encapsulate spatial motion intentions, interactive geometric constraints and subtle physical dynamics. We construct a dual-branch embodied architecture consisting of an image-action encoder and a dynamic world predictor: the encoder compresses target-driven visual images into compact action embeddings, while the predictor learns environment transition rules conditioned on image actions to achieve high-fidelity future state prediction and closed-loop embodied control. Extensive experiments are conducted on public embodied manipulation benchmarks and real-world robotic scenarios. The results demonstrate that iMac outperforms vector-based action control baselines in prediction accuracy, task success rate and cross-scene generalization ability. Moreover, our image-action design eliminates the reliance on manually defined action spaces, realizing flexible and universal control for heterogeneous embodied agents. This work provides an innovative visual-action perspective for embodied world models, offering a simple yet effective paradigm for scalable robotic perception and manipulation."
-  },
-  {
-    "title": "MemoryVLA++: Temporal Modeling via Memory and Imagination in Vision-Language-Action Models",
-    "original_title": "MemoryVLA++: Temporal Modeling via Memory and Imagination in Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2606.09827",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.09827v1 Announce Type: new \nAbstract: Temporal modeling is essential for robotic manipulation, as effective control requires both memory of past interactions and imagination of future states. However, most VLA models rely primarily on the current observation and therefore struggle with long-horizon, temporally dependent tasks. Cognitive science suggests that humans rely on working memory to buffer short-lived context, the hippocampal system to preserve episodic memory of past experience, and internal models to imagine possible future state evolution. Inspired by these mechanisms, we propose MemoryVLA++, a full temporal modeling framework that equips VLA models with memory and imagination for robotic manipulation. A pretrained VLM encodes the current observation into perceptual and cognitive tokens, forming working memory. These tokens query a Perceptual-Cognitive Memory Bank to retrieve relevant historical context. This bank stores low-level details and high-level semantics from past interactions, and is updated through redundancy-aware consolidation. A world model imagines future states in a denoising latent space, and the imagined latents are integrated under memory guidance to form full temporal-aware tokens. The resulting tokens condition a diffusion action expert to predict temporally consistent action sequences. We conduct extensive experiments on 5 simulation benchmarks and 3 categories of real-robot tasks across 3 robots, covering general manipulation, long-horizon temporal tasks, robustness, and generalization. Our method achieves strong performance across Libero, SimplerEnv, Mikasa-Robo, Calvin, Libero-Plus, and diverse real-robot tasks, validating the effectiveness of full temporal modeling with memory and imagination. For example, on real robots, it achieves +9%, +26%, +28% gains on general, memory-dependent, and imagination-dependent tasks. Project Page: https://shihao1895.github.io/MemoryVLA-PP-Web"
   }
 ]
