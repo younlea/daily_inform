@@ -1,5 +1,23 @@
 [
   {
+    "title": "후지쯔, Nvidia 기술 활용해 파나우치, 야스카와, 가와사키와 물리적 AI 발전 추진",
+    "original_title": "Fujitsu partners with Fanuc, Yaskawa and Kawasaki to advance physical AI using Nvidia technology",
+    "link": "https://roboticsandautomationnews.com/2026/07/18/fujitsu-partners-with-fanuc-yaskawa-and-kawasaki-to-advance-physical-ai-using-nvidia-technology/103488/",
+    "date": "2026-07-18 10:40",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "후지쯔가 일본의 로봇 제조사 Fanuc, Yaskawa Electric, Kawasaki Heavy Industries와 협력하여 제조, 물류, 헬스케어 분야 전반의 Physical AI 개발 및 배포를 모색함. 이 프로젝트는 Nvidia의 Physical AI 기술을 통합하며, 디지털 시스템과 로봇을 연결하는 협업 제어 플랫폼 개발을 목표로 함."
+  },
+  {
+    "title": "토요타와 엔비디아, 차량·공장·도시 통합 AI 개발을 위한 파트너십 확장 발표",
+    "original_title": "Toyota and Nvidia expand partnership to develop AI for vehicles, factories and cities",
+    "link": "https://roboticsandautomationnews.com/2026/07/18/toyota-and-nvidia-expand-partnership-to-develop-ai-for-vehicles-factories-and-cities/103485/",
+    "date": "2026-07-18 10:28",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "토요타와 엔비디아는 차세대 차량, 제조, 로보틱스, 도시 인프라를 아우르는 물리적 AI 기술 개발을 위해 파트너십을 확장함. 이번 협력은 작년에 발표된 계약을 기반으로 하며, 토요타는 엔비디아 DRIVE AGX 인베히클 컴퓨팅 플랫폼을 활용하여 첨단 운전자 보조 기능을 갖춘 차세대 차량 개발에 주력할 예정임."
+  },
+  {
     "title": "중국 휴머노이드 격투 대회, 머리 탈락에도 전투를 지속한 로봇 등장함",
     "original_title": "Robot keeps fighting after its head snaps off in China humanoid combat tournament - Moneycontrol.com",
     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOb2Y4WEhPaHhfN25NeWxtbUs2QVJrdWpncldmY0NFRTJyWUszSFdmNHJTUFBsM19oeVFSMVBFYjBYUXk5UVBfNkVKVUVjaVQ2WnVTc3NLSXc2YlpUWVUtTkFvemRORXFESnBaOGtyWEFYMW5hUTBFR1VLMjZVQ1RyMUFBT0JPLW1reGhkR09fZ1l6TGVIOUxiOEM1dkhBUzBBMFBuci1FU2tYNm1Od3pJSlA0YW1odUhfb3FJX0hzSG4tMExJc0hpZ0FNVHBONG42LWfSAdcBQVVfeXFMTVpjZlEwYUpKSW11WW1LSmQwbUZ0TjFhN0c5NlBXX0p1UWZYSEVfTDdRSm13bFJ2eFNVdTlCV05KQUFnZE91U3dzeVNYM2ljRnZ0YkpKZFF2RTFPb1JyNDIzbkRWN0cxbXQxQXhJeXhLT1BZeEVUVXk0d0dGUXFFYUttS0g0MVBnems2Uy12dWVwVG96dHktQ2gyTElReDZoczZHR2w5UXBGcEZTczZBMExBMTI1T2p3ajFLQ0pkTGZHWnNxUFQ2NEFPWlRJdnhONjlOQWpoazg?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2510.01661v3 Announce Type: replace \nAbstract: Multi-step manipulation in dynamic environments remains challenging. Imitation learning (IL) is reactive but lacks compositional generalization, since monolithic policies do not decide which skill to reuse when scenes change. Classical task-and-motion planning (TAMP) offers compositionality, but its high planning latency prevents real-time failure recovery. We introduce SymSkill, a unified framework that jointly learns predicates, operators, and skills from unlabeled, unsegmented demonstrations, combining compositional generalization with real-time recovery. Offline, SymSkill learns symbolic abstractions and goal-oriented skills directly from demonstrations. Online, given a conjunction of learned predicates, it uses a symbolic planner to compose and reorder skills to achieve symbolic goals while recovering from failures at both the motion and symbolic levels in real time. Coupled with a compliant controller, SymSkill supports safe execution under human and environmental disturbances. In RoboCasa simulation, SymSkill executes 12 single-step tasks with 85% success and composes them into multi-step plans without additional data. On a real Franka robot, it learns from 5 minutes of play data and performs 12-step tasks from goal specifications. Code and additional analysis are available at https://symskill.github.io/ ."
-  },
-  {
-    "title": "How Well Do Latent World Models Understand Partially Observable Safety Constraints?",
-    "original_title": "How Well Do Latent World Models Understand Partially Observable Safety Constraints?",
-    "link": "https://arxiv.org/abs/2510.06492",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2510.06492v2 Announce Type: replace \nAbstract: Latent world models are a promising approach for learning state representations and dynamics directly from high-dimensional observations, enabling robot control in hard-to-model settings. However, control performance ultimately depends on the latent representation encoding the required information for the task. In this work, we study latent-space safe control problems and show how partial observability can induce control failures when safety-relevant information is not preserved in the latent state. Specifically, we identify two world model failure modes: estimation gaps, where current observations do not reveal safety-critical quantities (e.g., temperature in a cooking task), and prediction gaps, where failures are observable once they occur but cannot be reliably anticipated from available observations. We introduce two diagnostics for these gaps: a mutual-information-based measure of safety observability and a rollout-based measure of future safety predictability. Finally, we present mitigation strategies for each failure mode: privileged multimodal supervision for estimation gaps and conformal risk calibration for prediction gaps. Across two hardware case studies -- using unimodal RGB world models and multimodal RGB+Tactile and RGB+Thermal variants -- we show that these mitigation strategies improve the safety of a Franka Research 3 manipulator on challenging cooking tasks under partial observability, albeit with increased conservativeness. More broadly, our work raises the question of when world model state representations are sufficient for reliable robot control"
-  },
-  {
-    "title": "Programmable Deformation Design of Porous Soft Actuator through Volumetric-Pattern-Induced Anisotropy",
-    "original_title": "Programmable Deformation Design of Porous Soft Actuator through Volumetric-Pattern-Induced Anisotropy",
-    "link": "https://arxiv.org/abs/2512.12320",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2512.12320v2 Announce Type: replace \nAbstract: Conventional soft pneumatic actuators, typically based on hollow elastomeric chambers, often suffer from small structural support and require costly geometry-specific redesigns for multimodal functionality. Porous materials such as foam, filled into chambers, can provide structural stability for the actuators. However, methods to achieve programmable deformation by tailoring the porous body itself remain underexplored. In this paper, a novel design method is presented to realize soft porous actuators with programmable deformation by incising specific patterns into the porous foam body. This approach introduces localized structural anisotropy of the foam guiding the material's deformation under a global vacuum input. Furthermore, three fundamental patterns on a cylindrical foam substrate are discussed: transverse for bending, longitudinal for tilting, and diagonal for twisting. A computational model is built with Finite Element Analysis (FEA), to investigate the mechanism of the incision-patterning method. Experiments demonstrate that with a potential optimal design of the pattern array number N, actuators can achieve bending up to $80^{\\circ}$ (N=2), tilting of $18^{\\circ}$ (N=1), and twisting of $115^{\\circ}$ (N=8). The versatility of our approach is demonstrated via pattern transferability, scalability, and mold-less rapid prototyping of complex designs. As a comprehensive application, we translate the human hand crease map into a functional incision pattern, creating a bio-inspired soft robot hand capable of human-like adaptive grasping. Our work provides a new, efficient, and scalable paradigm for the design of multi-functional soft porous robots."
   }
 ]
