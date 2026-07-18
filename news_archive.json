@@ -1,5 +1,32 @@
 [
   {
+    "title": "Aetina, Nvidia Jetson T3000 및 T2000 AI 모듈 지원 추가 확정",
+    "original_title": "Aetina adds support for Nvidia Jetson T3000 and T2000 AI modules",
+    "link": "https://roboticsandautomationnews.com/2026/07/18/aetina-adds-support-for-nvidia-jetson-t3000-and-t2000-ai-modules/103456/",
+    "date": "2026-07-18 06:35",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "엣지 AI 컴퓨팅 전문 기업 Aetina가 로보틱스 및 산업용 엣지 AI 애플리케이션을 목표로 Nvidia Jetson Thor 기반 시스템 포트폴리오를 확장함. 이에 따라 신규 발표된 Nvidia Jetson T3000 및 T2000 모듈에 대한 지원을 추가할 예정임. Aetina는 upcoming DeviceEdge AIE-KT 팬 기반 시스템과 새로운 AIE-PT 팬리스 플랫폼을 통해 해당 시스템-온-모듈을 제공함."
+  },
+  {
+    "title": "Strider Robotics, 40kg 페이로드 사족보행 로봇 시연 및 상용 파일럿 진입",
+    "original_title": "Strider Robotics demonstrates 40 kg payload quadruped robot as commercial pilots begin",
+    "link": "https://roboticsandautomationnews.com/2026/07/18/strider-robotics-demonstrates-40-kg-payload-quadruped-robot-as-commercial-pilots-begin/103453/",
+    "date": "2026-07-18 06:24",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "인도의 로봇 스타트업 Strider Robotics가 40kg의 페이로드를 지지하며 험지에서도 안정성을 유지하는 사족보행 로봇을 성공적으로 시연함. 이 회사는 프로토타입 개발을 완료하고 현재 상업적 전개 단계로 진입하고 있는 상황임. 구체적으로 주요 석유 기업과 함께 필드 파일럿을 진행하며 로봇의 현장 적용 가능성을 검증하는 중임."
+  },
+  {
+    "title": "IEEE 연구, 고속 광 인터커넥트를 위한 극저온 VCSEL 주목",
+    "original_title": "IEEE study highlights cryogenic VCSELs for high-speed optical interconnects",
+    "link": "https://roboticsandautomationnews.com/2026/07/18/ieee-study-highlights-cryogenic-vcsels-for-high-speed-optical-interconnects/103450/",
+    "date": "2026-07-18 06:09",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "UIUC 연구진은 극저온 VCSEL(cryo-VCSELs)이 적외선 이미징 시스템의 데이터 전송에 에너지 효율성을 높이고 열 부하를 줄일 수 있음을 입증함. 해당 연구 결과는 IEEE Photonics Technology Letters에 게재되었으며, 첨단 적외선 FPA(Focal Plane Arrays)가 직면하는 고성능화 난제 해결에 중요한 기술적 돌파를 제시함."
+  },
+  {
     "title": "태국 총리, WAIC에서 AgiBot 방문 중 중국의 체화형 AI 혁신 극찬",
     "original_title": "Thai PM praises China’s embodied AI innovation during AgiBot visit at WAIC - Global Times",
     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBaYl80dVVaalo5M203UUZUYXNLUUJ5c0pfQWEyRVc3d1hoMkRuRENfdGVjaFRHNHZocUdHRnRGaWdjNnFSY2ZZSDJrOUItUnpiWEItdG50YlA4XzNSbndvdEln?oc=5",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2604.20689v3 Announce Type: replace \nAbstract: Dexterous robotic manipulation requires perception that remains informative from pre-contact approach to contact initiation and post-contact control. We introduce FingerEye, a sensing and learning framework that strengthens robotic dexterity through continuous vision-tactile feedback throughout interaction. On the sensing side, FingerEye integrates binocular RGB cameras with a compliant contact interface to support perception both before and after contact. Before contact, the fingertip cameras provide close-range visual cues and implicit stereo for precise approach and object localization. After contact, marker-tracked deformation of the compliant ring provides a proxy for contact wrench sensing. On the learning side, we build real-and-sim infrastructure for data collection and evaluation, systematically study policy-interface designs for learning with multiple FingerEye sensors, and develop FingerEye Policy, which applies group-structured modality fusion to reduce modality shortcuts and better exploit distributed fingertip feedback. Across seven contact-sensitive task settings, FingerEye improves wrist-only policy by over 30 percentage points in mean success rate in both simulation and the real world."
-  },
-  {
-    "title": "CodeGraphVLP: Code-as-Planner Meets Semantic-Graph State for Non-Markovian Vision-Language-Action Models",
-    "original_title": "CodeGraphVLP: Code-as-Planner Meets Semantic-Graph State for Non-Markovian Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2604.22238",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2604.22238v2 Announce Type: replace \nAbstract: Vision-Language-Action (VLA) models promise generalist robot manipulation, but are typically trained and deployed as short-horizon policies that assume the latest observation is sufficient for action reasoning. This assumption breaks in non-Markovian long-horizon tasks, where task-relevant evidence can be occluded or appear only earlier in the trajectory, and where clutter and distractors make fine-grained visual grounding brittle. We present CodeGraphVLP, a hierarchical framework that enables reliable long-horizon manipulation by combining a persistent semantic-graph state with an executable code-based planner and progress-guided visual-language prompting. The semantic-graph maintains task-relevant entities and relations under partial observability. The synthesized planner executes over this semantic-graph to perform efficient progress checks and outputs a subtask instruction together with subtask-relevant objects. We use these outputs to construct clutter-suppressed observations that focus the VLA executor on critical evidence. On real-world non-Markovian tasks, CodeGraphVLP improves task completion over strong VLA baselines and history-enabled variants while substantially lowering planning latency compared to VLM-in-the-loop planning. We also conduct extensive ablation studies to confirm the contributions of each component."
-  },
-  {
-    "title": "UAOR: Uncertainty-aware Observation Reinjection for Vision-Language-Action Models",
-    "original_title": "UAOR: Uncertainty-aware Observation Reinjection for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2602.18020",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.18020v2 Announce Type: replace-cross \nAbstract: Vision-Language-Action (VLA) models leverage pretrained Vision-Language Models (VLMs) as backbones to map images and instructions to actions, demonstrating remarkable potential for generalizable robotic manipulation. To enhance performance, existing methods often incorporate extra observation cues (e.g., depth maps, point clouds) or auxiliary modules (e.g., object detectors, encoders) to enable more precise and reliable task execution, yet these typically require costly data collection and additional training. Inspired by the finding that Feed-Forward Network (FFN) in language models can act as \"key-value memory\", we propose Uncertainty-aware Observation Reinjection (UAOR), an effective, training-free and plug-and-play module for VLA models. Specifically, when the current language model layer exhibits high uncertainty, measured by Action Entropy, it reinjects key observation information into the next layer's Feed-Forward Network (FFN) through attention retrieval. This mechanism directly augments the hidden states with observation evidence at high-uncertainty layers, enabling more accurate and reliable action generation. Comprehensive experiments show that our method consistently improves diverse VLA models across simulation and real-world tasks with minimal overhead. Notably, UAOR eliminates the need for additional observation cues or modules, making it a versatile and practical plug-in for existing VLA pipelines. The project page is at https://uaor.jiabingyang.cn."
-  },
-  {
-    "title": "Pentagon says top Chinese internet firms Alibaba, Baidu are aiding military - The Washington Post",
-    "original_title": "Pentagon says top Chinese internet firms Alibaba, Baidu are aiding military - The Washington Post",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOeGNxSnNMMkhtZ2tUUE1WZHVqMll4MEpldDNpeXUtd3FXaEViQ1R5VlFUblo4YnNUaHRZeGRfVFVsczJVT2RJVjNFMllsMWN4cTlxZTZFQXdEVFQ5T01ISWI1OElzUERjaHdlR1QxYzlBOGppXzBRZWQwRllJbW1aOGx0RDl3LVlrOTJPX1Ezd3FydG1UcVNxWHhSTFlpV0NRUi1nSG1hZGF4al9Oenc2ZEZJbEJjRGI0dmZIRUttcGw5dVROWnJCSkZpYw?oc=5",
-    "date": "2026-06-09 02:39",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Pentagon says top Chinese internet firms Alibaba, Baidu are aiding military  The Washington Post"
   }
 ]
