@@ -1,5 +1,14 @@
 [
   {
+    "title": "엔비디아-허깅페이스, 신규 오픈 로보틱스 AI 툴로 LeRobot 플랫폼 확대",
+    "original_title": "Nvidia and Hugging Face expand LeRobot with new open robotics AI tools",
+    "link": "https://roboticsandautomationnews.com/2026/07/18/nvidia-and-hugging-face-expand-lerobot-with-new-open-robotics-ai-tools/103491/",
+    "date": "2026-07-18 11:08",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Nvidia와 Hugging Face가 협력을 강화하며 오픈소스 로보틱스 플랫폼 LeRobot을 확장함. 이번 협력은 로봇 개발 접근성을 높이는 것을 목표로 하며, 다양한 AI 모델, 프레임워크, 개발 툴이 추가됨. 특히 휴머노이드 로봇을 위한 오픈 VLA 기반 모델인 Nvidia Isaac GR00T 1.7 등 최신 기술들이 공개된 것임."
+  },
+  {
     "title": "후지쯔, Nvidia 기술 활용해 파나우치, 야스카와, 가와사키와 물리적 AI 발전 추진",
     "original_title": "Fujitsu partners with Fanuc, Yaskawa and Kawasaki to advance physical AI using Nvidia technology",
     "link": "https://roboticsandautomationnews.com/2026/07/18/fujitsu-partners-with-fanuc-yaskawa-and-kawasaki-to-advance-physical-ai-using-nvidia-technology/103488/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2509.16136v5 Announce Type: replace \nAbstract: Designing effective reward functions remains a major challenge in reinforcement learning (RL), often requiring considerable human expertise and iterative refinement. Recent advances leverage Large Language Models (LLMs) for automated reward design, but these approaches are limited by hallucinations, reliance on human feedback, and challenges with handling complex, multi-step tasks. In this work, we introduce Reward Evolution with Graph-of-Thoughts (RE-GoT), a novel bi-level framework that enhances LLMs with structured graph-based reasoning and integrates Visual Language Models (VLMs) for automated rollout evaluation. RE-GoT first decomposes tasks into text-attributed graphs, enabling comprehensive analysis and reward function generation, and then iteratively refines rewards using visual feedback from VLMs without human intervention. Extensive experiments on 10 RoboGen and 4 ManiSkill2 tasks demonstrate that RE-GoT consistently outperforms existing LLM-based baselines. On RoboGen, our method improves average task success rates by 32.25%, with notable gains on complex multi-step tasks. On ManiSkill2, RE-GoT achieves an average success rate of 93.73% across four diverse manipulation tasks, significantly surpassing prior LLM-based approaches and even exceeding expert-designed rewards. Our results indicate that combining LLMs and VLMs with graph-of-thoughts reasoning provides a scalable and effective solution for autonomous reward evolution in RL."
-  },
-  {
-    "title": "Symskill: Symbol and Skill Co-Invention for Data-Efficient and Reactive Long-Horizon Manipulation",
-    "original_title": "Symskill: Symbol and Skill Co-Invention for Data-Efficient and Reactive Long-Horizon Manipulation",
-    "link": "https://arxiv.org/abs/2510.01661",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2510.01661v3 Announce Type: replace \nAbstract: Multi-step manipulation in dynamic environments remains challenging. Imitation learning (IL) is reactive but lacks compositional generalization, since monolithic policies do not decide which skill to reuse when scenes change. Classical task-and-motion planning (TAMP) offers compositionality, but its high planning latency prevents real-time failure recovery. We introduce SymSkill, a unified framework that jointly learns predicates, operators, and skills from unlabeled, unsegmented demonstrations, combining compositional generalization with real-time recovery. Offline, SymSkill learns symbolic abstractions and goal-oriented skills directly from demonstrations. Online, given a conjunction of learned predicates, it uses a symbolic planner to compose and reorder skills to achieve symbolic goals while recovering from failures at both the motion and symbolic levels in real time. Coupled with a compliant controller, SymSkill supports safe execution under human and environmental disturbances. In RoboCasa simulation, SymSkill executes 12 single-step tasks with 85% success and composes them into multi-step plans without additional data. On a real Franka robot, it learns from 5 minutes of play data and performs 12-step tasks from goal specifications. Code and additional analysis are available at https://symskill.github.io/ ."
   }
 ]
