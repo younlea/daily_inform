@@ -1,5 +1,23 @@
 [
   {
+    "title": "Palm Garden AI, 인간 친화 로봇용 Coherence Guard 관계 결정 레이어 개발",
+    "original_title": "Palm Garden AI develops Coherence Guard relational decision layer for human-facing robots",
+    "link": "https://www.therobotreport.com/palm-garden-ai-develops-coherence-guard-relational-decision-layer-human-facing-robots/",
+    "date": "2026-07-18 12:30",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Palm Garden AI가 인간-로봇 상호작용 및 관계 구현을 목표로 하드웨어 독립적인 소프트웨어 레이어 개발에 착수함. 해당 레이어는 핵심 기술인 'Coherence Guard'라는 관계 결정 기능을 포함함. 이는 로봇이 인간과의 관계를 보다 정교하게 모델링하고 처리할 수 있게 함."
+  },
+  {
+    "title": "Faraday Future, Automate 2026에서 로보틱스 사업 확장 및 출하 성과 발표",
+    "original_title": "Faraday Future highlights robotics expansion and shipment milestone at Automate 2026",
+    "link": "https://roboticsandautomationnews.com/2026/07/18/faraday-future-highlights-robotics-expansion-and-shipment-milestone-at-automate-2026/103494/",
+    "date": "2026-07-18 12:09",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Faraday Future의 AI 자회사 FFAI는 Automate 2026에 참가하며 상업용 로보틱스 분야 확장에 속도를 냄. 해당 행사에서 ‘one brain, multiple forms’ 로보틱스 플랫폼을 공개하고 상반기 출하 목표 달성 계획을 발표함. 특히 6월 기준 로봇 출하 대수가 100대를 초과할 것으로 예상됨을 밝힘."
+  },
+  {
     "title": "엔비디아-허깅페이스, 신규 오픈 로보틱스 AI 툴로 LeRobot 플랫폼 확대",
     "original_title": "Nvidia and Hugging Face expand LeRobot with new open robotics AI tools",
     "link": "https://roboticsandautomationnews.com/2026/07/18/nvidia-and-hugging-face-expand-lerobot-with-new-open-robotics-ai-tools/103491/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.07895v1 Announce Type: cross \nAbstract: Discrete Vision-Language-Action (VLA) models typically formulate action generation as next-token prediction over discretized action spaces, conditioning each token autoregressively on prior context. While effective, this paradigm incurs high inference latency and largely ignores the temporal structure inherent in action trajectories. Recent efforts introduce parallel decoding to improve efficiency, enabling faster inference, but lack explicit mechanisms for modeling token dependencies. We introduce TBD-VLA, a discrete token-based VLA framework that incorporates block diffusion to enable temporal action generation. We partition action sequences into temporal blocks and perform masked discrete diffusion within each block, while maintaining autoregressive generation across blocks. This design unifies temporal autoregression and parallel action decoding, achieving both strong temporal coherence and improved inference speed. In addition, the explicit temporal modeling enables asynchronous execution of action chunks (e.g., Real-Time Chunking) via temporal in-painting. TBD-VLA significantly outperforms prior VLA approaches in both simulation and real-world manipulation tasks, offering a scalable path toward fast, temporally aware, discrete VLA models. Project webpage: https://tbd-vla.github.io/"
-  },
-  {
-    "title": "Autonomous Aerial Manipulation via Contextual Contrastive Meta Reinforcement Learning",
-    "original_title": "Autonomous Aerial Manipulation via Contextual Contrastive Meta Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2606.08533",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.08533v1 Announce Type: cross \nAbstract: Unmanned aerial vehicles (UAVs) are increasingly being deployed in logistics, service robotics, and other real-world applications, creating a growing demand for autonomous payload acquisition and delivery. Existing approaches typically assume pre-attached payloads or rely on specialized grippers, leaving versatile end-to-end aerial delivery largely unresolved, where different payloads induce highly variable flight dynamics, requiring a single policy to adapt online without manual calibration or explicit system identification. To this end, we study \\textbf{A}utonomous \\textbf{A}erial Manipulation via \\textbf{Co}ntextual \\textbf{Co}ntrastive Meta Reinforcement Learning (\\textbf{\\textit{Aco2}}), a fully autonomous aerial delivery setting in which a quadrotor equipped with a lightweight hook continuously picks up, transports, and delivers diverse handle-equipped objects between randomized locations, all without human intervention. First, we design a contextual observation encoder that infers a compact latent context from recent interaction history, enabling the policy to adapt online to payload-dependent dynamics. To further improve the quality of this context, we introduce a contrastive objective that structures the context embedding around task-relevant variations, improving generalization across diverse payloads without requiring explicit system identification. Trained entirely in simulation with extensive domain randomization, \\textit{Aco2} can be directly deployed on a physical quadrotor without real-world fine-tuning."
-  },
-  {
-    "title": "Reward Evolution with Graph-of-Thoughts: A Bi-Level Language Model Framework for Reinforcement Learning",
-    "original_title": "Reward Evolution with Graph-of-Thoughts: A Bi-Level Language Model Framework for Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2509.16136",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2509.16136v5 Announce Type: replace \nAbstract: Designing effective reward functions remains a major challenge in reinforcement learning (RL), often requiring considerable human expertise and iterative refinement. Recent advances leverage Large Language Models (LLMs) for automated reward design, but these approaches are limited by hallucinations, reliance on human feedback, and challenges with handling complex, multi-step tasks. In this work, we introduce Reward Evolution with Graph-of-Thoughts (RE-GoT), a novel bi-level framework that enhances LLMs with structured graph-based reasoning and integrates Visual Language Models (VLMs) for automated rollout evaluation. RE-GoT first decomposes tasks into text-attributed graphs, enabling comprehensive analysis and reward function generation, and then iteratively refines rewards using visual feedback from VLMs without human intervention. Extensive experiments on 10 RoboGen and 4 ManiSkill2 tasks demonstrate that RE-GoT consistently outperforms existing LLM-based baselines. On RoboGen, our method improves average task success rates by 32.25%, with notable gains on complex multi-step tasks. On ManiSkill2, RE-GoT achieves an average success rate of 93.73% across four diverse manipulation tasks, significantly surpassing prior LLM-based approaches and even exceeding expert-designed rewards. Our results indicate that combining LLMs and VLMs with graph-of-thoughts reasoning provides a scalable and effective solution for autonomous reward evolution in RL."
   }
 ]
