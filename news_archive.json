@@ -1,5 +1,14 @@
 [
   {
+    "title": "MCP vs A2A vs ACP: AI 에이전트 간의 실제 통신 방식 분석",
+    "original_title": "MCP vs A2A vs ACP: How AI Agents Actually Talk to Each Other",
+    "link": "https://blog.bytebytego.com/p/mcp-vs-a2a-vs-acp-how-ai-agents-actually",
+    "date": "2026-07-18 16:46",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "AI 에이전트는 개별적으로도 자체적인 능력을 보유하고 있음. 이러한 개별 능력이 외부 도구(tools)나 다른 에이전트들과 결합됨으로써 기능적 역량이 기하급수적으로 증폭되는 양상을 보여주고 있음."
+  },
+  {
     "title": "AGIBOT, WAIC 2026에서 4대 로봇 공개: 글로벌 수출 추진과 중국의 스파이법 규제 충돌",
     "original_title": "AGIBOT Debuts Four Robots at WAIC 2026: Global Export Push Meets China's Spy Law Obligation - Tech Times",
     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZVE3LVFtWXhIemhZbzA2MVlRMHJzc2JQZlMxR3YtVG15NVgxamxGSkRCQnlWWHFmN1JJVFd4VER2T2FHMEgzU2cya0o4UHFwXzNCUmlXeWVfQl9ydTI5YzFiVUFFQmtnOHJGMVFfN0Z3VVVmWlhKUkZJc01yeDI0alpfclduRWxIeFE5a1FaQjhiT3hQWEJNZlNRY1VlMm1xdUtmNHAzb1NPcXJ5ZW5RaE43eEVWamFzcDNqcVdHUE55U25kUkNkTExxaGNPY3NxVlJPeHkyb0M?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.09811v1 Announce Type: new \nAbstract: World-action models have emerged as a promising paradigm for robot manipulation, jointly modeling visual scene dynamics and actions to inject physical priors into policy learning. However, existing world-action models couple world prediction and action execution at the same temporal resolution, forcing the world branch to model near-term frame variations that are redundant and weakly informative. We posit that strictly binding world prediction and action execution to the same temporal rhythm may underutilize the potential of the video branch for embodied control. Therefore, we propose AHA-WAM, an Asynchronous Horizon-Adaptive World-Action Model built on a dual Diffusion Transformer (DiT) architecture that reorganizes world-action modeling around this temporal asymmetry. AHA-WAM instantiates the video DiT as a low-frequency world planner that maintains rolling key-value memory over past observations and exposes reusable layerwise latent context encoding long-horizon scene evolution, while a high-frequency action DiT executes short action chunks in closed loop by querying this context through layerwise joint attention. To support asynchronous execution, we introduce horizon-adaptive offset training and Observation-Guided Video-Context Routing (OVCR), which together let the action expert exploit long-horizon world context while remaining responsive to real-time execution state without rerunning the video DiT. Experiments on RoboTwin and real-world manipulation tasks show that AHA-WAM achieves state-of-the-art performance without any robot-data pretraining, attaining 92.80% average success on RoboTwin and 78.3% success across 4 real-world tasks, while reaching 24.17 Hz closed-loop control with a 4.59x speedup over Fast-WAM."
-  },
-  {
-    "title": "iMaC: Translating Actions into Motion and Contact Images for Embodied World Models",
-    "original_title": "iMaC: Translating Actions into Motion and Contact Images for Embodied World Models",
-    "link": "https://arxiv.org/abs/2606.09813",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.09813v1 Announce Type: new \nAbstract: Embodied world models have emerged as a pivotal paradigm for visual robotic decision-making and interactive environment simulation. However, conventional embodied frameworks rely on low-dimensional structured action vectors (e.g., joint angles and end-effector poses), which suffer from limited expressive capacity, poor generalization across diverse embodiments, and unnatural dynamic modeling for complex physical interactions. To address these limitations, this paper proposesiMac (Image as Action Control), a novel unified control paradigm that treats raw visual images as native action representations for embodied world models. Departing from traditional explicit kinematic action encoding, iMac formulates continuous visual manipulation as image-based action tokens, which inherently encapsulate spatial motion intentions, interactive geometric constraints and subtle physical dynamics. We construct a dual-branch embodied architecture consisting of an image-action encoder and a dynamic world predictor: the encoder compresses target-driven visual images into compact action embeddings, while the predictor learns environment transition rules conditioned on image actions to achieve high-fidelity future state prediction and closed-loop embodied control. Extensive experiments are conducted on public embodied manipulation benchmarks and real-world robotic scenarios. The results demonstrate that iMac outperforms vector-based action control baselines in prediction accuracy, task success rate and cross-scene generalization ability. Moreover, our image-action design eliminates the reliance on manually defined action spaces, realizing flexible and universal control for heterogeneous embodied agents. This work provides an innovative visual-action perspective for embodied world models, offering a simple yet effective paradigm for scalable robotic perception and manipulation."
   }
 ]
