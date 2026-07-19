@@ -1,5 +1,14 @@
 [
   {
+    "title": "호주 기업가들, 중국 로봇 공학이 미래 생산성을 견인하는 동력으로 인식함",
+    "original_title": "Australian entrepreneurs see Chinese robotics driving future productivity - bastillepost.com",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbzdaMW9ScU9rU2J0NDRaZjBLeThzNkNCYzBpeEhsR3BaTU96LWRTeDBqbHBIS1BzbTZQZUEtN2ZOQURoWjZUT0F4bkl2V1djejVGMXFDS2x4R3VlUEtVVDE4b3NobkVIZDRaNExSZ2hneVZNT1VNSjVPRkZobUxNSkdiLVM3SVV1STRBRkh2TzRlNHNUT09Ub1FmS0NrYS1QdGJaVjdqVFJNa256ck5yOG8ybmhCYy1CTk92SlF4TXUwRjA?oc=5",
+    "date": "2026-07-19 10:22",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "호주 기업가들이 중국의 로봇 기술 역량에 높은 관심을 보임. 이들은 중국산 로봇 공학 기술이 향후 호주 산업의 전반적인 생산성 향상 및 경제 성장에 핵심적인 동력으로 작용할 것으로 전망함."
+  },
+  {
     "title": "세계 최초 양산형 휴머노이드 로봇 모터, 중국 시장 출시 임박 - New Atlas",
     "original_title": "'World's 1st mass-produced humanoid robot' motors to market in China - New Atlas",
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbXVoeV95NjhGWjVGTkMwNEVlSFhlX0lHdzVMa1BxWWlIZzFlcUlwb3hYcUUtVHluaGZXNEdlTzhaOGdQVGxQblgtTHA1dXJ4M0FWdTBzR3NPOWF2OUo4VTlOcHZMcFRzYlhZMkx4WGFETGlhR0dnSmt3LXY1clpGNw?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.09740v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models demonstrate strong perfor-1 mance on language-conditioned robotic manipulation within their training dis-2 tribution, yet their generalization capabilities remain fundamentally limited. They3 lack the robustness required to handle perturbations, frequently failing when con-4 fronted with lighting changes, altered camera viewpoints, or small initial-state5 variations. We propose PROBEACT, a training-free runtime intervention frame-6 work that detects and recovers from grasping and placement failures in pre-7 trained VLA policies without modifying their weights or requiring additional8 demonstrations. PROBEACT combines three components: (i) a lightweight multi-9 target hidden-state probe that predicts the 3D positions of task-relevant objects10 from intermediate VLA features, with Hungarian-matched identity tracking for11 multi-object scenes; (ii) an object-agnostic kinematic state machine that detects12 grasp, transport, and placement failures using only gripper-internal signals and13 end-effector kinematics; and (iii) a hierarchical Control Barrier Function (CBF)14 filter that encodes repeated-failure locations as soft safe-set constraints, mini-15 mally correcting VLA actions while preserving baseline behavior. As a plug-and-16 play, training-free intervention loop, PROBEACT is orthogonal to existing train-17 ing pipelines. Evaluated on the LIBERO-plus benchmark, our framework acts as18 a universal safety net, improving the success rate of the OpenVLA-OFT model19 from 69.6% to 74.1%, while demonstrating broad applicability to both base and20 fine-tuned VLA policies."
-  },
-  {
-    "title": "Your Model Already Knows: Attention-Guided Safety Filter for Vision-Language-Action Models",
-    "original_title": "Your Model Already Knows: Attention-Guided Safety Filter for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2606.09749",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.09749v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have demonstrated impressive end-to-end performance across a variety of robotic manipulation tasks. However, these policies offer no guarantees against collisions with task-irrelevant objects in the scene. Existing safety filters sidestep this problem by querying a vision-language model (VLM) to identify obstacles and their locations. This, however, is too slow to run in the control loop and can only be invoked at episode initialization, leaving the filter unable to track moving obstacles. We discover that a small number of attention heads within a VLA model reliably localize the object the policy intends to approach. These heads can be exploited within a training-free safety framework that obtains the active target from the attention heads at every step, treats the remainder of the scene as obstacles, and feeds these into a Control Barrier Function (CBF) filter. Together with a lightweight real-time object tracker, this allows for collision avoidance for non-static obstacles. We evaluate our framework on SafeLIBERO, which we extend with moving obstacles. On the original static benchmark, our method performs comparably to an oracle that uses privileged simulator state to identify the target, emulating a VLM-based identification step run once at episode initialization. On the dynamic variant, where the oracle's init-time target assignment becomes stale, our method substantially outperforms it by 43%, on average. Our findings suggest that the perceptual signals needed for real-time safety filtering are already present within VLA policies and can be exploited without additional training or heavy auxiliary models."
   }
 ]
