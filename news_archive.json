@@ -1,5 +1,14 @@
 [
   {
+    "title": "Ubtech Robotics, 소비자 불신과 규제 역풍 속 기록적 산업 주문 확보함",
+    "original_title": "Ubtech Robotics Clinches Record Industrial Orders While Consumer Doubts and Regulatory Headwinds Mou - ad-hoc-news.de",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNjd5TGZKX3EydGJrQWVFNEppRjVRckNkaVFVd0ZJQzdIWm1lZGRRTm8tQVRyajFPSFJQZ0NFTndoa19meVJ4dWtUa1daY2pwQ1MxUzlYUFMwTk9yZUNmcVF6V1liRjNYVFYxaFEyZWo4ZFBoY044TFZqTWlOdlRuQ2tXMHlrd0xmWDR2ZDNzQ2R6SVZwdXN4ejg2TUFKaHVWYlpoempLTnpwYjhQTmMtWXA0SlJzbGRJTEpzdUFoa3p2RFlEMVV0OF93?oc=5",
+    "date": "2026-07-19 14:32",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Ubtech Robotics가 산업 부문에서 사상 최대 규모의 주문을 확보하며 성과를 거둠. 그러나 시장은 소비자들의 불확실성 증대와 까다로운 규제 환경이라는 복합적인 역풍에 직면한 상황임. 이러한 대비되는 시장 상황이 주요 관심사로 떠오름."
+  },
+  {
     "title": "로봇 개발에서 텔레오퍼레이션 의존성을 피하는 방법",
     "original_title": "How to avoid the teleoperation trap in robotics development",
     "link": "https://www.therobotreport.com/how-to-avoid-teleoperation-trap-robotics-development/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.09615v1 Announce Type: new \nAbstract: Dexterous manipulation presents substantial challenges for imitation learning due to its high-dimensional action space and complex contact-rich dynamics. Policies trained purely from demonstrations often suffer from compounding errors during deployment and require large amounts of expert data to achieve reliable performance. To move beyond the limitations of demonstration data, in this work, we propose DexPIE, a post-training framework for dexterous policy improvement from experience collected through real-world deployment. First, DexPIE enables effective exploration coverage through a dexterous-hand-adapted intervention system and multi-stage DAgger-style data collection across initial and intermediate task stages, providing reliable supervision for accurate policy evaluation. To reduce temporal noise between post-training rollouts and demonstration data, we introduce asynchronous inference in the relative action space, which better aligns rollout data with demonstrated behavior and allows the critic to learn a value function induced by a more consistent underlying policy. Finally, DexPIE improves the policy through conditioning on a continuous optimality indicator, allowing the policy to leverage the quality of data in a more fine-grained manner. Across three challenging real-world dexterous manipulation tasks, DexPIE achieves a 37% improvement in success rate over the demonstration-based reference policy, outperforming all baseline methods and demonstrating stronger robustness. The source code and dataset will be made publicly available."
-  },
-  {
-    "title": "ReCoVLA: VLM-Guided Reward Compilation for Failure Recovery in Vision-Language-Action Policies",
-    "original_title": "ReCoVLA: VLM-Guided Reward Compilation for Failure Recovery in Vision-Language-Action Policies",
-    "link": "https://arxiv.org/abs/2606.09630",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.09630v1 Announce Type: new \nAbstract: Vision-language-action (VLA) policies provide strong priors for language-conditioned manipulation, but remain brittle in off-nominal states requiring targeted recovery. We propose ReCoVLA -- a failure-conditioned residual recovery framework that keeps a pretrained VLA policy frozen, uses an external vision-language model (VLM) to infer the failure mode and recovery stage, and compiles a structured reward from task-relevant components. Rather than using the VLM to generate actions or rewards directly, ReCoVLA uses it as a semantic reward selector: it predicts a recovery descriptor and reward mask for in-simulation residual-policy training, followed by zero-shot sim-to-real deployment of the trained recovery policies. This decouples high-level failure understanding from low-level corrective control to support different VLAs. Experiments across short-horizon, long-horizon, and contact-rich manipulation tasks show that ReCoVLA outperforms the tested baselines on average. In simulation, our reward compiler improves average success from 36.7% for the fine-tuned $\\pi_{0.5}$ baseline to 66.7%. In physical zero-shot sim-to-real experiments, ReCoVLA achieves the best average performance, with 61.7% success."
   }
 ]
