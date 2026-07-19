@@ -1,5 +1,14 @@
 [
   {
+    "title": "세계 최초 양산형 휴머노이드 로봇 모터, 중국 시장 출시 임박 - New Atlas",
+    "original_title": "'World's 1st mass-produced humanoid robot' motors to market in China - New Atlas",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbXVoeV95NjhGWjVGTkMwNEVlSFhlX0lHdzVMa1BxWWlIZzFlcUlwb3hYcUUtVHluaGZXNEdlTzhaOGdQVGxQblgtTHA1dXJ4M0FWdTBzR3NPOWF2OUo4VTlOcHZMcFRzYlhZMkx4WGFETGlhR0dnSmt3LXY1clpGNw?oc=5",
+    "date": "2026-07-19 06:06",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "New Atlas가 세계 최초의 양산형 휴머노이드 로봇용 핵심 모터를 중국 시장에 출시할 예정임. 이 기술은 고성능 모터 구동 시스템을 기반으로 하며, 실제 상업용 로봇 시장에 대한 기대감을 높이고 있음."
+  },
+  {
     "title": "머리를 잃어도 전투를 지속하는 휴머노이드 로봇, 중국 행사에서 관중 압도 퍼포먼스 선보임",
     "original_title": "Video: Humanoid Robot Keeps Fighting After Losing Its Head, Stuns Crowd At China Combat Event - NDTV",
     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQ0oybEo4Y2lZeEtURHNyR2dHQUZkOWplNHdVaHNlRE03a1FMaDBXVy1sYl81MTJORkJ3UE5VUlRaRW1ZdzRiMzVUUWtVYURXci1jM1ZEVVcwWFV0Tk52TW95Ty1veUlXRnQ0TGV2ZXFOU0tCOFlaSXBLV2o4VEFXQVVwYWxQOWJKNmRiVU5NRzhWcV9JU0pjV0k2YmJOSGFpNkhUNVRWaWE3ZXpGYk9OaF9qdHpVSmdNd2o4WGtWY09ZNmlQbjRYbWFtZ2hxV0XSAdcBQVVfeXFMTS02YTlIcmFiZTBPVFVnY3I2eVF1amFTVExuSEx1WE45dTlvQUJFOGdhdW0yOXpOZV9tVm0zX0lCU24yUUdiNGRKTDVkbm9ZbTFUdzFYMjZOR1V2cFBPUjQyc1dHMGNBOGFoSVV5M2FZWWVQWDU5Y3Q3a2pIRU9qLWdzaTJXSzZrYmtlTzMtWTZZTWxSaTRWUm44dW1neWRZekxwQTI5OVRGbVhxajVTZ2w5OHN6OWJVNU5zcEFHTEY0YmxxVVNIMVZ5dDVRWlVEeDFaV0FwQ00?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.09749v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have demonstrated impressive end-to-end performance across a variety of robotic manipulation tasks. However, these policies offer no guarantees against collisions with task-irrelevant objects in the scene. Existing safety filters sidestep this problem by querying a vision-language model (VLM) to identify obstacles and their locations. This, however, is too slow to run in the control loop and can only be invoked at episode initialization, leaving the filter unable to track moving obstacles. We discover that a small number of attention heads within a VLA model reliably localize the object the policy intends to approach. These heads can be exploited within a training-free safety framework that obtains the active target from the attention heads at every step, treats the remainder of the scene as obstacles, and feeds these into a Control Barrier Function (CBF) filter. Together with a lightweight real-time object tracker, this allows for collision avoidance for non-static obstacles. We evaluate our framework on SafeLIBERO, which we extend with moving obstacles. On the original static benchmark, our method performs comparably to an oracle that uses privileged simulator state to identify the target, emulating a VLM-based identification step run once at episode initialization. On the dynamic variant, where the oracle's init-time target assignment becomes stale, our method substantially outperforms it by 43%, on average. Our findings suggest that the perceptual signals needed for real-time safety filtering are already present within VLA policies and can be exploited without additional training or heavy auxiliary models."
-  },
-  {
-    "title": "Difference-Aware Retrieval Policies for Imitation Learning",
-    "original_title": "Difference-Aware Retrieval Policies for Imitation Learning",
-    "link": "https://arxiv.org/abs/2606.09758",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.09758v1 Announce Type: new \nAbstract: Parametric imitation learning via behavior cloning can suffer from poor generalization to out-of-distribution states due to compounding errors during deployment. We show that reusing the training data during inference via a semi-parametric retrieval-based imitation learning approach can alleviate this challenge. We present Difference-Aware Retrieval Policies for Imitation Learning (DARP), a semi-parametric retrieval-based imitation learning approach that addresses this limitation by reparameterizing the imitation learning problem in terms of local neighborhood structure rather than direct state-to-action mappings. Instead of learning a global policy, DARP trains a model to predict actions based on $k$-nearest neighbors from expert demonstrations, their corresponding actions, and the relative distance vectors between neighbor states and query states. DARP requires no additional assumptions beyond those made for standard behavior cloning -- it does not require additional data collection, online expert feedback, or task-specific knowledge. We demonstrate consistent performance improvements of 15-46% over standard behavior cloning across diverse domains, including continuous control and robotic manipulation, and across different representations, including high-dimensional visual features. Code and demos are available at https://weirdlabuw.github.io/darp-site/."
   }
 ]
