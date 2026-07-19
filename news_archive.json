@@ -1,5 +1,14 @@
 [
   {
+    "title": "로봇 개발에서 텔레오퍼레이션 의존성을 피하는 방법",
+    "original_title": "How to avoid the teleoperation trap in robotics development",
+    "link": "https://www.therobotreport.com/how-to-avoid-teleoperation-trap-robotics-development/",
+    "date": "2026-07-19 12:30",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Flexion CEO는 휴머노이드 로봇 훈련에 텔레오퍼레이션이 필수적임에도 불구하고, 이를 개발의 유일한 방법으로 삼는 '함정'을 경계해야 한다고 지적함. 로봇 개발의 성공적인 방향성을 제시하며, 텔레오퍼레이션과 더불어 강화 학습(Reinforcement Learning) 및 시뮬레이션 기술을 필수적으로 병행해야 함을 강조함."
+  },
+  {
     "title": "호주 기업가들, 중국 로봇 공학이 미래 생산성을 견인하는 동력으로 인식함",
     "original_title": "Australian entrepreneurs see Chinese robotics driving future productivity - bastillepost.com",
     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbzdaMW9ScU9rU2J0NDRaZjBLeThzNkNCYzBpeEhsR3BaTU96LWRTeDBqbHBIS1BzbTZQZUEtN2ZOQURoWjZUT0F4bkl2V1djejVGMXFDS2x4R3VlUEtVVDE4b3NobkVIZDRaNExSZ2hneVZNT1VNSjVPRkZobUxNSkdiLVM3SVV1STRBRkh2TzRlNHNUT09Ub1FmS0NrYS1QdGJaVjdqVFJNa256ck5yOG8ybmhCYy1CTk92SlF4TXUwRjA?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.09630v1 Announce Type: new \nAbstract: Vision-language-action (VLA) policies provide strong priors for language-conditioned manipulation, but remain brittle in off-nominal states requiring targeted recovery. We propose ReCoVLA -- a failure-conditioned residual recovery framework that keeps a pretrained VLA policy frozen, uses an external vision-language model (VLM) to infer the failure mode and recovery stage, and compiles a structured reward from task-relevant components. Rather than using the VLM to generate actions or rewards directly, ReCoVLA uses it as a semantic reward selector: it predicts a recovery descriptor and reward mask for in-simulation residual-policy training, followed by zero-shot sim-to-real deployment of the trained recovery policies. This decouples high-level failure understanding from low-level corrective control to support different VLAs. Experiments across short-horizon, long-horizon, and contact-rich manipulation tasks show that ReCoVLA outperforms the tested baselines on average. In simulation, our reward compiler improves average success from 36.7% for the fine-tuned $\\pi_{0.5}$ baseline to 66.7%. In physical zero-shot sim-to-real experiments, ReCoVLA achieves the best average performance, with 61.7% success."
-  },
-  {
-    "title": "ProbeAct: Probe-Guided Training-Free Failure Recovery in Vision-Language-Action Models",
-    "original_title": "ProbeAct: Probe-Guided Training-Free Failure Recovery in Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2606.09740",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.09740v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models demonstrate strong perfor-1 mance on language-conditioned robotic manipulation within their training dis-2 tribution, yet their generalization capabilities remain fundamentally limited. They3 lack the robustness required to handle perturbations, frequently failing when con-4 fronted with lighting changes, altered camera viewpoints, or small initial-state5 variations. We propose PROBEACT, a training-free runtime intervention frame-6 work that detects and recovers from grasping and placement failures in pre-7 trained VLA policies without modifying their weights or requiring additional8 demonstrations. PROBEACT combines three components: (i) a lightweight multi-9 target hidden-state probe that predicts the 3D positions of task-relevant objects10 from intermediate VLA features, with Hungarian-matched identity tracking for11 multi-object scenes; (ii) an object-agnostic kinematic state machine that detects12 grasp, transport, and placement failures using only gripper-internal signals and13 end-effector kinematics; and (iii) a hierarchical Control Barrier Function (CBF)14 filter that encodes repeated-failure locations as soft safe-set constraints, mini-15 mally correcting VLA actions while preserving baseline behavior. As a plug-and-16 play, training-free intervention loop, PROBEACT is orthogonal to existing train-17 ing pipelines. Evaluated on the LIBERO-plus benchmark, our framework acts as18 a universal safety net, improving the success rate of the OpenVLA-OFT model19 from 69.6% to 74.1%, while demonstrating broad applicability to both base and20 fine-tuned VLA policies."
   }
 ]
