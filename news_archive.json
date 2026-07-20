@@ -1,5 +1,14 @@
 [
   {
+    "title": "로봇 정책 훈련 및 평가를 위한 인터랙티브 월드 시뮬레이터",
+    "original_title": "Interactive world simulator for robot policy training and evaluation",
+    "link": "https://robohub.org/interactive-world-simulator-for-robot-policy-training-and-evaluation/",
+    "date": "2026-07-20 08:39",
+    "source": "Robohub",
+    "category": "humanoid",
+    "summary": "로봇 학습의 일반적인 방법은 실제 로봇에서 수많은 전문가 시연 데이터를 수집하고, 이를 기반으로 모방 학습(imitation learning) 정책을 훈련한 후, 다시 실제 로봇으로 평가하는 방식임. 이러한 과정은 높은 자원 소모와 시간적 제약이 따르므로, 효과적인 로봇 교육 및 평가를 위한 시뮬레이터 활용의 중요성이 커지고 있는 상황임."
+  },
+  {
     "title": "세계 최초 MMA 스타일 로봇 격투 토너먼트, 휴머노이드 로봇의 격렬한 전투 장면 연출",
     "original_title": "Humanoid robot kicks opponent's head off at world's first MMA-style robot fighting tournament - VnExpress International",
     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVG94R3FsSTMwc1JzTTZQZm45NlUwMEszVnl4UDFhQ29BLXpEem9vc2hfX3llYmcxdE0tTVU4MjAwZEtxeFQwa0lHVDI2eW1ZZV9xZmdsUThNWjZpZnJxT2Q1WVJ6ZW9PQkZ0SkZ5QU5nS0ZHX0lkZmNlN1VPdHJsdGxQamJyUG56OWlqbFhlQTN3dWJpUk02TmNzUW5faEUtUVhZbTV0aUdzS3lYVVNkVkw3VWdtTzI0ZHNoUWlBdHhQMi1QZzBEcnhuVENKdWF5U3dUbXRrWUJkWHd2NXhLekY3UDQ?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.08278v1 Announce Type: new \nAbstract: Humanoid foundation models are advancing faster than we can evaluate them. While real-world testing is expensive and difficult to reproduce, existing simulation benchmarks focus primarily on table-top or wheeled robots. A scalable and reproducible benchmark for whole-body humanoid loco-manipulation remains an open problem. To this end, we present SIMPLE, a unified simulation testbed for humanoid policy learning and evaluation. SIMPLE couples the accurate contact-rich dynamics of MuJoCo with the photorealistic rendering of IsaacSim. It provides a large-scale environment comprising 60 diverse whole-body tasks, 50 indoor scenes, and over 1,000 object assets. To facilitate scalable data collection, the framework integrates two data generation pipelines: automated trajectory generation via motion planning and a low-latency VR teleoperation interface. We further integrate and benchmark mainstream humanoid policies at scale in SIMPLE, including lightweight imitation networks, large vision-language-action (VLA) models, and recent world action models (WAMs). Our experiments reveal a strong correlation between policy performance in simulation and the real world. Furthermore, we demonstrate that policies trained on data collected in SIMPLE can be transferred zero-shot to physical humanoid robots under similar settings, providing a robust and reproducible foundation for humanoid robotics research."
-  },
-  {
-    "title": "MotionVLA: Injecting Geometric Motion into Vision-Language-Action Model",
-    "original_title": "MotionVLA: Injecting Geometric Motion into Vision-Language-Action Model",
-    "link": "https://arxiv.org/abs/2606.08288",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.08288v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models increasingly condition robot policies on history, depth, or 4D features to resolve ambiguity in long-horizon manipulation. However, more spatiotemporal evidence is not necessarily better: when the injected evidence is not motion-consistent, it can introduce geometric drift, fragmented temporal cues, and unstable action generation. This raises a simple question: should a VLA remember past frames, or remember the motion that connects them? We introduce MotionVLA, a motion-history interface that converts a short past-only video window into compact, time-continuous trajectory-field tokens. Instead of treating history as a sparse set of ndependently lifted frames, MotionVLA represents recent observations as physically coherent motion evidence. Current visual tokens query this history to retrieve task-relevant motion information, which is then recoupled into the VLA stream under trajectory-grounded supervision. Experiments across simulation benchmarks and preliminary real-robot rollouts show that MotionVLA improves long-horizon manipulation while producing smoother and more direct executions. These results suggest that effective VLA memory is not just about providing more 4D context, but about exposing motion-consistent evidence that is usable for control."
   }
 ]
