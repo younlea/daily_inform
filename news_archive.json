@@ -144,6 +144,33 @@
     "summary": "CASAband는 컴플라이언스 증폭 형상기억합금 액추에이터(CASA)를 직물 밴드에 통합한 비연결형 햅틱 손목 인터페이스임. 이 장치는 경량(63g)하며 노이즈가 없고, 공간적/시간적 햅틱 피드백을 제공하여 뛰어난 착용성을 확보함. 사용자 테스트를 통해 높은 신호 식별 정확도(90% 이상)가 입증되어, 실생활 안내 및 내비게이션 등 다양한 환경에서의 활용 잠재력이 높다고 평가됨."
   },
   {
+    "title": "HRI 환경에서 대화형 발견을 통한 페르소나 적응 (PACE) 기술 개발",
+    "original_title": "PACE: Persona Adaptation through Conversational Elicitation in Human-Robot Interaction",
+    "link": "https://arxiv.org/abs/2607.15579",
+    "date": "2026-07-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "인간-로봇 상호작용(HRI)의 자연성을 높이기 위해 기존의 정적 페르소나 한계를 극복하고자 함. 본 연구는 Ameca 휴머노이드 로봇에 적용할 수 있는 PACE 프레임워크를 제시함. 이 시스템은 사용자와의 Q&A를 통해 심리적으로 기반한 맞춤형 페르소나를 동적으로 발견하고, 이를 다중 모달 행동으로 구현하여 사용자 신뢰도 및 상호작용 품질 향상에 기여함을 입증함."
+  },
+  {
+    "title": "사족 보행 로봇의 상태 추정을 위한 노이즈 공분산 및 기구학 동시 보정: 이중 레벨 최적화 기법 활용",
+    "original_title": "Simultaneous Calibration of Noise Covariance and Kinematics for State Estimation of Legged Robots via Bi-level Optimization",
+    "link": "https://arxiv.org/abs/2510.11539",
+    "date": "2026-07-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "동적 환경에서 필수적인 로봇의 상태 추정 문제를 해결하기 위해 노이즈 공분산과 기구학 매개변수를 동시에 보정하는 이중 레벨 최적화 프레임워크가 제시됨. 해당 방법은 추정기-루프(estimator-in-the-loop) 방식을 채택하여 공분산 행렬과 모델 매개변수의 공동 보정 및 정확도 높은 상태 추정 달성함. 사족 보행 및 휴머노이드 로봇 검증을 통해 기존 방식 대비 추정 정확도와 불확실성 보정 성능이 월등히 개선됨을 입증함."
+  },
+  {
+    "title": "MuxGel: 공간 다중화 및 딥 재구성을 통한 동시 이중 모드 시각-촉각 감지",
+    "original_title": "MuxGel: Simultaneous Dual-Modal Visuo-Tactile Sensing via Spatially Multiplexing and Deep Reconstruction",
+    "link": "https://arxiv.org/abs/2603.09761",
+    "date": "2026-07-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "정밀 로봇 매니퓰레이션을 위해 필수적인 시각-촉각 감지 능력을 확보하고자 공간 다중화된 센서 MuxGel이 개발됨. MuxGel은 체커보드 코팅 패턴을 적용하여 외부 시각 정보와 접촉 기반 촉각 신호를 단일 카메라로 동시에 획득하는 구조를 가짐. 연구진은 U-Net 기반의 재구성 프레임워크를 구축하여 복합 입력 데이터를 재현하였으며, 이 기술은 GelSight 스타일의 센서에 쉽게 통합되어 단일 카메라로 로컬 비주얼 피드백과 재구성된 촉각 피드백을 제공함."
+  },
+  {
     "title": "중국, 세계 최초 휴머노이드 로봇 격투 토너먼트 개최",
     "original_title": "China stages world’s first humanoid robot fighting tournament - VIDEO - Caliber.Az",
     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNOWJuM1d6U01yNm9GQmtqUWk5anVLMGNsV2ZwaXJZcVdtMXBPaDNCNHpyamNrVVVoNWNaeWFYZXhYM2lxbE51bzJSSnJldkM5SnlkNDRkYjRZVFhFRU5RRVVFOFlnUXA3RnFidWRNUW0zRG5faHg2TWZmTXA3LXNCVDlLc1RZdWhYdksyZ1E0TVBkZw?oc=5",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.08555v1 Announce Type: new \nAbstract: Force signals provide critical interaction cues for contact-rich robotic manipulation. However, existing methods mostly use force as an additional observation modality, without fully exploiting its role in modeling future interaction dynamics or guiding execution-time feedback correction. In this paper, we propose FAWAM, a force-aware world action model that incorporates force information at three levels: perception, prediction, and closed-loop execution. FAWAM first encodes historical 6-axis force/torque signals to modulate action generation, then jointly predicts future actions and end-effector wrenches to explicitly model contact evolution. It further introduces a residual correction module that uses the predicted wrench trajectory as an execution-time reference to refine actions online based on real-time force feedback. Real-world experiments across multiple contact-rich tasks show that FAWAM improves the average success rate by 36.25% over vision-only baselines and 21.25% over existing force-aware baselines, demonstrating the effectiveness of our force-aware framework for robust contact-rich manipulation."
-  },
-  {
-    "title": "Real-IKEA: Physical Fidelity is the Prerequisite for Robust Manipulation",
-    "original_title": "Real-IKEA: Physical Fidelity is the Prerequisite for Robust Manipulation",
-    "link": "https://arxiv.org/abs/2606.08564",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.08564v1 Announce Type: new \nAbstract: Robotic manipulation robustness often founders on the physics gap between simplified simulations and the resistance-laden real world. In this work, we emphasize that physical realism in articulated interaction is an important ingredient for robust policy learning. We present Real-IKEA, a dataset and simulation framework designed with physical accuracy as a first-class goal. Real-IKEA provides 1,079 articulated asset configurations, derived from 83 authentic IKEA handles and knobs processed through a meticulous six-step physical workflow. For contact-geometry accuracy, we introduce a bidirectional surface-deviation metric to quantify collision meshes. For dynamics realism, we establish resistance-calibrated configurations that vary damping and friction. Crucially, we demonstrate through a Reinforcement Learning (RL) policy that high-fidelity assets enable the discovery of robust \"hooking\" and \"levering\" strategies that prioritize mechanical advantage over fragile friction-pulling. Together, these results position Real-IKEA as a critical benchmark for developing manipulation policies capable of human-level robustness in articulated object tasks."
-  },
-  {
-    "title": "HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning",
-    "original_title": "HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2606.08610",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.08610v1 Announce Type: new \nAbstract: Reinforcement learning (RL) has become a powerful paradigm for robot learning, particularly in sim-to-real settings, but its broader adoption remains limited by the engineering pipeline surrounding the algorithms. Building tasks, shaping rewards, and tuning hyperparameters require substantial expert effort, making RL workflows costly and difficult to scale. We introduce HARBOR, an agentic framework that frames robot RL automation as a harness-engineering problem: given a simulator codebase and a task specification, it automates the workflow from environment setup to policy training in simulation. HARBOR decomposes such high-level objectives into bounded stages executed by specialized agents through standardized commands, persistent artifacts, executable gates, and reusable knowledge, and scales iteration via decentralized parallel trials and experience learning across runs. We evaluate HARBOR across 6 benchmarks and 16 tasks in total, spanning manipulation, locomotion, and bimanual dexterous control. We demonstrate that HARBOR automates the simulation RL workflow end-to-end, designs rewards, tunes algorithms to match or improve over default configurations, and reduces engineering effort at practical token and wall-clock cost; the resulting policies can also be transferred to real robots."
-  },
-  {
-    "title": "Latent Diffusion Policy: Shaping Latent Spaces for Diffusion-Based Robotic Manipulation",
-    "original_title": "Latent Diffusion Policy: Shaping Latent Spaces for Diffusion-Based Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2606.08657",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.08657v1 Announce Type: new \nAbstract: Diffusion-based visuomotor policies operating directly in raw action spaces conflate scene comprehension with trajectory generation within a single denoising process. The resulting velocity field must simultaneously encode scene information and generate precise trajectories, increasing learning complexity and limiting performance on tasks demanding precise temporal coordination across multiple arms. To simplify this joint learning problem, we introduce Latent Diffusion Policy (LDP), a two-stage framework performing flow matching in a deliberately shaped latent space. By absorbing scene understanding into an observation-conditioned CVAE encoder, LDP concentrates the conditional distribution of each observation. Consequently, the flow model avoids implicitly resolving scene-dependent structures; instead, it generates within a pre-concentrated distribution featuring a smoother velocity field, simplifying learning from limited demonstrations. Furthermore, to capture temporal dependencies among latent tokens, LDP trains with per-token diffusion forcing and employs staircase inference sampling to resolve the resulting distributional mismatch. We also propose reconstruction FID (rFID) as a lightweight proxy predicting downstream task success solely from latent space statistics. On coordination-intensive tasks from RoboTwin 2.0, LDP outperforms DP3 by a substantial margin and transfers effectively to real-world bimanual deployments."
   }
 ]
