@@ -261,6 +261,15 @@
     "summary": "EmbodiedDiffusion은 확산 기반 프레임워크로, RGB 이미지를 활용하여 이동 가능성 맵 예측과 실행 가능한 이동 궤적(trajectory) 생성을 동시에 수행하는 시스템임. 본 모델은 VLM의 지식을 경량화하고 FiLM 기반 모듈화를 통해 로봇 플랫폼별 추론을 분리함으로써, 새로운 로봇에 대한 재학습 없이도 빠른 적응이 가능하도록 설계됨. 실제 실험에서는 사족 보행 및 공중 로봇을 대상으로 전 영역에서 80~100%의 높은 성공률과 실시간 추론(90ms)을 달성하며, 이종 로봇을 위한 통합적이고 확장성 높은 이동성 추론 및 경로 생성 능력을 입증함."
   },
   {
+    "title": "ContactFusion: 시각 및 접촉 센싱을 통한 확률론적 포아송 표면 맵",
+    "original_title": "ContactFusion: Stochastic Poisson Surface Maps from Visual and Contact Sensing",
+    "link": "https://arxiv.org/abs/2503.16592",
+    "date": "2026-07-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 정밀 로봇 조립 과정에서 노이즈 문제를 해결하기 위한 ContactFusion 기법을 제안함. 이 방법은 전역 맵핑 정보와 손목의 Force/Torque 센싱을 통한 지역 접촉 정보를 융합하여 확률론적 포아송 표면 맵(SPSMap)을 생성함. 시뮬레이션 및 peg-in-hole 태스크 평가를 통해, 접촉 정보와 SPSMap의 융합이 홀 자세 추정 정확도 향상에 기여함을 입증함."
+  },
+  {
     "title": "중국, 세계 최초 휴머노이드 로봇 격투 토너먼트 개최",
     "original_title": "China stages world’s first humanoid robot fighting tournament - VIDEO - Caliber.Az",
     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNOWJuM1d6U01yNm9GQmtqUWk5anVLMGNsV2ZwaXJZcVdtMXBPaDNCNHpyamNrVVVoNWNaeWFYZXhYM2lxbE51bzJSSnJldkM5SnlkNDRkYjRZVFhFRU5RRVVFOFlnUXA3RnFidWRNUW0zRG5faHg2TWZmTXA3LXNCVDlLc1RZdWhYdksyZ1E0TVBkZw?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.08154v1 Announce Type: new \nAbstract: In-context imitation learning (ICIL) enables robots to learn new tasks from a small number of demonstrations by conditioning a pre-trained policy on task-specific examples, without retraining at test time. Despite this promise, training generalizable and scalable in-context imitation policies remains an open challenge. We present SynthICL, a scalable framework that trains ICIL policies entirely from RGB-only synthetic data. Specifically, we build a data generation pipeline to produce high-fidelity ICIL data and train a flow-matching transformer policy on the resulting dataset. SynthICL avoids the need for depth sensing, precise camera calibration, and real-world training data in prior approaches, offering a simpler and more scalable alternative. We further incorporate subgoal prediction by training the model to predict the next subgoal images, enabling more precise and visually grounded control. Evaluated on 16 unseen real-world manipulation tasks, SynthICL achieves an average success rate of 79% with only one demonstration provided at test time and outperforms prior methods. Project page: https://synth-icl.github.io"
-  },
-  {
-    "title": "Mind Your Steps: A General Learning Framework for Accurate Humanoid Foothold Tracking",
-    "original_title": "Mind Your Steps: A General Learning Framework for Accurate Humanoid Foothold Tracking",
-    "link": "https://arxiv.org/abs/2606.08253",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.08253v1 Announce Type: new \nAbstract: Enabling humanoid robots to operate in complex, dynamic environments remains a critical challenge, fundamentally limited by the ability to navigate robustly, safely, and accurately. While reinforcement learning with velocity-commanded policies has achieved remarkable robustness in humanoid locomotion, this approach lacks explicit control of the foothold placement, leading to unsafe behavior, such as stepping onto human feet, or imprecise navigation, hindering the following manipulation task. Conversely, explicit foothold-tracking policies offer a promising alternative by directly being commanded with target foot poses. However, existing approaches are often limited by unrealistic state assumptions, compromising real-world deployment, or they are part of staged pipelines, making them tied to specific downstream tasks. In this work, we introduce a novel, lightweight framework for training general-purpose 3D foothold-tracking policies. By dynamically providing footstep support through a goal sampler, this method enables the learned policy to be agnostic to specific terrains. Our new target representation effectively mitigates challenges arising in the real world, such as noisy and inaccurate pose estimation and foot contact estimation. Designed for direct real-world transfer, our policy acts as a standalone low-level controller that can be seamlessly paired with various high-level foothold generators. We demonstrate the effectiveness of our framework through extensive experiments in simulation and in the real world. By coupling our policy with different upstream planners, we achieve natural and accurate locomotion in challenging settings, paving the way for loco-manipulation tasks in complex environments."
   }
 ]
