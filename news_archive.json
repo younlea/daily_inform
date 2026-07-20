@@ -171,6 +171,33 @@
     "summary": "정밀 로봇 매니퓰레이션을 위해 필수적인 시각-촉각 감지 능력을 확보하고자 공간 다중화된 센서 MuxGel이 개발됨. MuxGel은 체커보드 코팅 패턴을 적용하여 외부 시각 정보와 접촉 기반 촉각 신호를 단일 카메라로 동시에 획득하는 구조를 가짐. 연구진은 U-Net 기반의 재구성 프레임워크를 구축하여 복합 입력 데이터를 재현하였으며, 이 기술은 GelSight 스타일의 센서에 쉽게 통합되어 단일 카메라로 로컬 비주얼 피드백과 재구성된 촉각 피드백을 제공함."
   },
   {
+    "title": "미지 로봇 조작 환경에서의 일반화를 위한 동역학 인식 메타 모방 (Dynamics-Aware Meta-Imitation for Generalization to Unseen Robotic Manipulation)",
+    "original_title": "Dynamics-Aware Meta-Imitation for Generalization to Unseen Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2607.15880",
+    "date": "2026-07-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 모방 학습의 데이터 희소성 및 미지 환경 일반화 문제를 해결하기 위해 DAMI(Dynamics-Aware Meta-Imitation) 프레임워크를 제안함. 이 프레임워크는 메타 학습 기반으로 공유 스킬 공간을 구축하고, VMT, U2T, TCFM 등 복합 모듈을 통합하여 작업의 근본적인 동역학 및 다중 모달리티 정보를 포착하는 것이 핵심임. 실험 결과, 본 방법론은 시뮬레이션과 실제 환경 모두에서 미지의 새로운 과제에 대한 강력한 일반화 능력을 입증하며 기존 SOTA 대비 우위를 점함."
+  },
+  {
+    "title": "접촉 기반 조작(Contact-Rich Manipulation)을 위한 핵심 데이터 및 학습 전략",
+    "original_title": "Data and Learning Where it Matters for Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2607.15982",
+    "date": "2026-07-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 End-to-End 학습 정책이 고정밀 작업에서 취약성을 보이는 문제점을 해결함. 연구진은 데이터 수집의 구조화에 초점을 맞춰, 전체 과정 중 '접촉이 중요한 핵심 구간'에만 집중적으로 데이터를 수집하고 나머지 단순 동작 구간에는 전통적인 플래닝(planning)을 결합하는 방식을 제안함. 그 결과, 2~2.5시간의 자율 데이터 수집만으로 평균 96%의 높은 성공률을 달성하며, 기존 최고 성능 대비 월등한 일반화 성능을 입증함."
+  },
+  {
+    "title": "NeoSLAM의 새로운 구현과 RatSLAM과의 비교 평가",
+    "original_title": "A New Implementation of NeoSLAM and a Comparative Evaluation with RatSLAM",
+    "link": "https://arxiv.org/abs/2607.16143",
+    "date": "2026-07-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 NeoSLAM 알고리즘을 모듈형 아키텍처로 전면 재작성한 새로운 구현을 제시함. 이 ROS2 기반 버전은 입력 데이터 손실을 최소화하며 실시간 실행 능력을 확보함. 비교 평가 결과, 새로운 NeoSLAM은 기존 대비 처리량(throughput) 측면에서 우수한 성능을 보였으며, 지도 재구성(map reconstruction) 측면에서는 RatSLAM과 비교 가능한 성능을 달성한 것으로 분석됨."
+  },
+  {
     "title": "중국, 세계 최초 휴머노이드 로봇 격투 토너먼트 개최",
     "original_title": "China stages world’s first humanoid robot fighting tournament - VIDEO - Caliber.Az",
     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNOWJuM1d6U01yNm9GQmtqUWk5anVLMGNsV2ZwaXJZcVdtMXBPaDNCNHpyamNrVVVoNWNaeWFYZXhYM2lxbE51bzJSSnJldkM5SnlkNDRkYjRZVFhFRU5RRVVFOFlnUXA3RnFidWRNUW0zRG5faHg2TWZmTXA3LXNCVDlLc1RZdWhYdksyZ1E0TVBkZw?oc=5",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.08530v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models achieve strong benchmark performance but still struggle in real-world deployment with unseen objects, background shifts, and different robot embodiments. We argue that this stems from the lack of a unified geometry-aware manipulation representation, leaving existing VLAs vulnerable to low-level trajectory supervision, misaligned 3D features, and embodiment differences. To address this, we propose GEAR-VLA, a VLA framework for learning unified geometry-aware action representations for generalizable robotic manipulation. GEAR-VLA adopts coarse-to-fine action learning, where multi-source embodied pretraining equips the VLM with embodied reasoning and discrete action understanding before latent action tokens connect action semantics to a gradient-decoupled DiT continuous action expert. It further performs semantic-aligned 3D integration by aligning a trainable 3D spatial backbone with the VLA representation while freezing the original VLM-aligned visual pathway. To share this representation across robots, GEAR-VLA uses embodiment canonicalization, where embodiment-aware states and embodiment-invariant actions confine robot differences to the low-level interface. Extensive simulation and real-world experiments demonstrate strong generalization: GEAR-VLA achieves state-of-the-art performance on LIBERO, zero-shot LIBERO-Plus, and RoboTwin 2.0, reaches 85.9% success on AgileX and 81.0% on the pretraining-unseen LDT-01 embodiment, and obtains 90.1% success on a 6,360-trial universal grasping benchmark with 212 unseen objects. Code and models will be released at https://github.com/babynabeauty/GEAR-VLA."
-  },
-  {
-    "title": "When Video Misreads: Closed-Loop Distillation of Reading Heuristics for Exploratory Manipulation Trace QA",
-    "original_title": "When Video Misreads: Closed-Loop Distillation of Reading Heuristics for Exploratory Manipulation Trace QA",
-    "link": "https://arxiv.org/abs/2606.08542",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.08542v1 Announce Type: new \nAbstract: Exploratory manipulation often turns an apparent failed attempt into the key evidence for what to do next. For example, a robot pulls a locked cabinet drawer, fails, and only succeeds after opening the lock. The failed pull reveals a latent precondition (the drawer is locked) that determines the minimal-success action chain (the fewest actions that complete the task), here [lock-open, drawer-pull]. Correctly reading this trace is therefore the prerequisite for recovering that chain. We formalize this setting as Exploratory Manipulation Trace QA (EMT-QA): given synchronized video and proprioception from an exploratory trace, predict the minimal-success action chain under the latent precondition revealed by the probe. However, even state-of-the-art VLMs and embodied multimodal LLMs misread this evidence: they do not reliably recover the chain from raw video, raw proprioception, or their combination.\n  We introduce Closed-Loop Trace Distillation, a pipeline that uses a per-task coding agent to inspect labeled training traces and distill a one-line natural-language prompt over the trace, which we call the Distilled Reading Heuristic (DRH). At inference, no agent is invoked and no model weights are updated; a frozen VLM receives the raw trace plus the DRH as a prompt entry. Across three simulator and two real-robot tasks, the DRH improves chain accuracy by +0.38 to +0.47 over the best raw-modality baseline. The same DRH also serves as the sole specification for one-shot programmatic classifiers that match the prompted VLM."
-  },
-  {
-    "title": "OASIS: From Simulation Data Collection to Real-World Humanoid Loco-Manipulation",
-    "original_title": "OASIS: From Simulation Data Collection to Real-World Humanoid Loco-Manipulation",
-    "link": "https://arxiv.org/abs/2606.08548",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.08548v1 Announce Type: new \nAbstract: Recent progress in robot manipulation has been largely driven by learning from large-scale demonstrations. For humanoid robot loco-manipulation tasks, however, existing data sources force an unsatisfying tradeoff between trajectory quality and scalability. Real-world teleoperation provides the highest-quality trajectories but requires dedicated physical space and time-consuming scene resets. Simulation offers an alternative way out of this dilemma: it can produce clean, embodiment-aligned data at scale without any physical hardware. In this paper, we propose OASIS, a simulation-data-driven framework for humanoid loco-manipulation. OASIS automatically reconstructs realistic object assets from real-world images using a 3D generative model. Based on these assets, trajectories are first collected through teleoperation in simulation, and then augmented under diverse domain randomizations in a post-processing stage. With the resulting simulation data, we further design a hierarchical visuomotor policy for humanoid loco-manipulation. Extensive experiments on the real humanoid robot show that, under zero-shot deployment, the policy trained on our simulation data achieves higher success rates on most tasks than that trained on real-robot teleoperation data, owing largely to the broad lighting and environmental variations covered by our simulation rendering, which real-robot data fails to capture. The project page is available at https://oasis-humanoid.github.io/."
-  },
-  {
-    "title": "FAWAM: Force-Aware World Action Models for Closed-Loop Contact-Rich Manipulation",
-    "original_title": "FAWAM: Force-Aware World Action Models for Closed-Loop Contact-Rich Manipulation",
-    "link": "https://arxiv.org/abs/2606.08555",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.08555v1 Announce Type: new \nAbstract: Force signals provide critical interaction cues for contact-rich robotic manipulation. However, existing methods mostly use force as an additional observation modality, without fully exploiting its role in modeling future interaction dynamics or guiding execution-time feedback correction. In this paper, we propose FAWAM, a force-aware world action model that incorporates force information at three levels: perception, prediction, and closed-loop execution. FAWAM first encodes historical 6-axis force/torque signals to modulate action generation, then jointly predicts future actions and end-effector wrenches to explicitly model contact evolution. It further introduces a residual correction module that uses the predicted wrench trajectory as an execution-time reference to refine actions online based on real-time force feedback. Real-world experiments across multiple contact-rich tasks show that FAWAM improves the average success rate by 36.25% over vision-only baselines and 21.25% over existing force-aware baselines, demonstrating the effectiveness of our force-aware framework for robust contact-rich manipulation."
   }
 ]
