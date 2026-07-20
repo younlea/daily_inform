@@ -1,5 +1,23 @@
 [
   {
+    "title": "2026년 비트코인 안전 보관 가이드: 지갑 보안 및 자체 수탁 방안 제시",
+    "original_title": "How to Store Bitcoin Safely in 2026: Wallet Security and Self-Custody Guide",
+    "link": "https://roboticsandautomationnews.com/2026/07/20/how-to-store-bitcoin-safely-in-2026-wallet-security-and-self-custody-guide/103512/",
+    "date": "2026-07-20 16:28",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "2025년 2월 발생한 Bybit 해킹 사건에서 $1.5억 규모의 자금이 멀티시그(multisig) 지갑에서 유출됨. 해당 공격은 코드의 취약점을 이용한 것이 아니라 다중 서명 승인 프로세스 자체를 조작하는 방식으로 진행됨. 이 사례를 통해 중앙화 거래소의 보안 시스템이 외부 조작에 취약할 수 있다는 점이 드러나면서, 개인의 강력한 자체 수탁(Self-Custody) 방안 마련이 중요해지고 있음."
+  },
+  {
+    "title": "재향 군인 대상, 기지 근처 은퇴의 장단점 분석",
+    "original_title": "Retiring Near Base: Pros and Cons for Veterans",
+    "link": "https://roboticsandautomationnews.com/2026/07/20/retiring-near-base-pros-and-cons-for-veterans/103508/",
+    "date": "2026-07-20 16:06",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "군 복무지 근처 거주는 익숙한 환경과 기존 커뮤니티 유지라는 강력한 이점으로 매력적임. 그러나 이러한 편안함이 은퇴 이후 수십 년에 걸친 삶의 가장 적합한 모델이 아닐 수 있다는 점을 분석함."
+  },
+  {
     "title": "AGIBOT, WAIC에서 실세계 운영용 체화 AI 제품 네 가지 공개함",
     "original_title": "AGIBOT unveils four embodied AI products for real-world operations at WAIC",
     "link": "https://www.therobotreport.com/agibot-unveils-four-embodied-ai-products-real-world-operations-waic/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.07723v1 Announce Type: new \nAbstract: Open-vocabulary long-horizon manipulation requires robots to reason over flexible instructions and complex multi-object scenes while adaptively planning, executing, monitoring, and recovering from failures. We address these demands with a closed agent loop in which a VLM orchestrates heterogeneous robot capabilities as interruptible tools. Unlike in virtual AI agents, the timing of decisions, actions and tool calls is important in a physical world that does not pause for reasoning. We refer to this setting as Physical Orchestration, and propose VoLoAgent, a VLM that plans, monitors, and recovers by treating a VLA/WAM as an interruptible tool it steers mid-rollout alongside vision models and action primitives. To evaluate these long-horizon capabilities, we introduce RoboVoLo, a high-fidelity benchmark for open-vocabulary long-horizon manipulation across common sense, memory/state tracking, complex references, and world knowledge, with both task-level success and failure-mode diagnostics. Experiments show VoLoAgent substantially outperforms single VLA/VLM or tool-based systems, with validation on real-robot experiments. Project page: https://chicychen.github.io/VoLo/"
-  },
-  {
-    "title": "Path Planning Using Deep Deterministic Policy Gradient: A Reinforcement Learning Approach",
-    "original_title": "Path Planning Using Deep Deterministic Policy Gradient: A Reinforcement Learning Approach",
-    "link": "https://arxiv.org/abs/2606.07855",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.07855v1 Announce Type: new \nAbstract: Path-planning for autonomous vehicles in threat-laden environments is a fundamental challenge because the problem is nonlinear and nonconvex even in simplest scenarios. While traditional optimal control methods can be used to find ideal paths, the computational time is often too slow for real-time decision-making. To solve this challenge, we propose a method based on Deep Deterministic Policy Gradient (DDPG) and model the threat as possibly multiple circular 'no-go' zones. A mission is regarded as a failure if the vehicle enters this restricted zone at any time or does not reach a neighborhood of the destination. The DDPG agent is trained through trial and error in a simulated environment, learning a direct mapping from its current state (position and heading) to a series of feasible actions that guide the agent to safely reach its destination. The reword function has three parts: (a) an attractive field centered at the final destination, (b) some repulsive fields centered at the origins of circular obstacles, and (c) a penalty of control energy consumption (the magnitude of heading change) that indirectly in favor for straight path. The DDPG trains the agent using these incentives to find the largest possible set of starting points wherein a safe path to the destination is guaranteed. This provides critical information for mission planning, showing beforehand whether a task is achievable from a given starting point, assisting pre-mission planning activities. The approach is validated in simulation. A comparison between the DDPG method and a traditional optimal control (pseudo-spectral) method is carried out. The results show that the learning-based agent produces effective paths while being significantly faster, making it a better fit for real-time applications."
-  },
-  {
-    "title": "End-to-End Control of a Powered Knee-Ankle Prosthesis Towards Unified, Tuning-Free Assistance",
-    "original_title": "End-to-End Control of a Powered Knee-Ankle Prosthesis Towards Unified, Tuning-Free Assistance",
-    "link": "https://arxiv.org/abs/2606.07902",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.07902v1 Announce Type: new \nAbstract: Powered prostheses conventionally rely on impedance controllers that require extensive manual tuning and explicit mode classification. In this work, we present real-time deployment of an end-to-end prosthesis controller that estimates continuous actuator signals from onboard sensors, eliminating the need for intent classifiers and subject-specific tuning. Temporal Convolutional Networks were trained on a multi-terrain dataset from 18 individuals with transfemoral amputation and deployed in real time across five locomotion modes. Four participants (three able-bodied, one with transfemoral amputation) ambulated across level ground, ramp ascent and descent, and stair ascent and descent. During level walking, the deployed controller reproduced the training-data scaling of peak ankle torque with walking speed (deployed 0.85 Nm/kg per m/s, p = 0.001; training 0.96 Nm/kg per m/s, 95% CI [0.42, 1.50], p = 0.002), after excluding one outlier traced to atypical prosthesis loading. During ramp ascent, the controller scaled knee pre-flexion with grade (deployed 2.92 deg/deg, p = 0.027; training 3.30 deg/deg, 95% CI [1.83, 4.77], p < 0.001). During ramp descent, the controller increased resistive knee torque relative to level walking (deployed +0.16 Nm/kg, p < 0.001; training +0.16 Nm/kg, p = 0.008). Seamless stair transitions were generated for both intact- and prosthetic-side-leading sequences in ascent and descent, despite the training data containing only one limb-leading sequence. These results provide initial evidence towards end-to-end control that can provide unified, mode-adaptive prosthetic assistance without subject-specific tuning."
   }
 ]
