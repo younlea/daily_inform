@@ -1,5 +1,14 @@
 [
   {
+    "title": "유비테크 로보틱스, 한국 협약 배경으로 산업용 주문 급증세에도 소비자 로봇 사전 주문은 부진함",
+    "original_title": "Ubtech Robotics: Industrial Orders Surge on South Korea Pact, But Consumer Robot Pre-Orders Fail to - ad-hoc-news.de",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZXBnNm8xRzBBVWZNUDhKZ1lFZXV3LWtMSVdLWDlzRE9CdkxHTGxwTXA5ZDRHVHE2YkNJVnhNS3ZHVnFRaENvSUZRUlJTb29NaV9OeXpaUG9FOFpsdzhxTFlGMlhkYmhFaDdhWTk1OGVZNnd1U0pYY2dRSGwtYk5mcnhDVndBdWdSNWVRUFJHNkQtWHJGdEx2aVlYZFQ4azZFeEx1X1ROUmlMclN1NktYcWtOSWFOTElaSWkteVNJR1A5RE9Dd3NTTHIxTQ?oc=5",
+    "date": "2026-07-20 14:33",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "유비테크 로보틱스는 한국과의 협약 체결에 힘입어 산업용 로봇 분야에서 큰 주문 급증세가 나타남. 하지만 시장 분석 결과, 일반 소비자를 대상으로 하는 로봇 제품의 사전 주문 실적은 기대 이하의 부진세를 보임. 이는 로봇 시장 내 산업용과 소비자용 부문 간의 상이한 시장 흐름을 보여주는 사례임."
+  },
+  {
     "title": "AGIBOT, WAIC 2026에서 신규 휴머노이드 및 다양한 로봇 공개 임박",
     "original_title": "AGIBOT unveils new humanoid alongside other robots at WAIC 2026 - Interesting Engineering",
     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5LSlBLNm1mT0pQUmNSYjJqRjZQMUpmZGgxRkJ3VjlaMW5aT0trWmVBRUVHV3VkVlRiZThYckZ6VzhnTXNoVFV1WGlpX3JhODlfOFE5emdoalkwOUJfRE1kYnpqcDgyUWRodUFfTlc5QVJEVnRLMlYxejRDN0ktYlU?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.08029v1 Announce Type: new \nAbstract: Object navigation requires a robot to search for an unobserved target in an unknown environment by deciding where to explore next under partial observability. Effective search resembles human-like exploration: selectively probing visually promising frontiers while relying on spatial memory to avoid redundant revisits. We propose IntentNav, a spatial-visual imitation framework that learns human-like ObjectNav policies from human demonstrations. To infer high-level search intent from low-level human actions, we introduce Frontier-based Human-Intent Labeling, which looks ahead in human demonstrations and labels the frontier that best explains the demonstrator's future search direction. We construct a spatial-visual candidate space, where BEV memory tracks explored regions, unexplored frontiers, and trajectory history, while egocentric visual memory provides semantic cues for each candidate. A VLM policy is trained to select among these grounded candidates, using Intent-Aligned Objective to encourage consistent and human-like exploration. IntentNav achieves state-of-the-art performance on the MP3D, HM3D-v1 and HM3D-v2 ObjectNav benchmarks. The proposed candidate-level navigation interface transfers zero-shot to wheeled, quadruped, and humanoid robots without further VLM fine-tuning. \\href{https://anonymous.4open.science/w/IntentNav/}{Project page}."
-  },
-  {
-    "title": "MuJoCo-Drones-Gym: A GPU-Accelerated Multi-Drone Simulator for Control and Reinforcement Learning",
-    "original_title": "MuJoCo-Drones-Gym: A GPU-Accelerated Multi-Drone Simulator for Control and Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2606.08039",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.08039v1 Announce Type: new \nAbstract: Robotic simulators are a cornerstone of modern research in aerial robotics, serving both as a vehicle for the development of new control algorithms and as the data source for training reinforcement learning (RL) policies. Yet, existing quadcopter learning environments often face a trade-off between physical fidelity, multi-agent support, and the throughput required by modern deep RL pipelines. In this paper, we present MuJoCo-Drones-Gym, an open-source Gymnasium-compatible multi-drone environment built on top of the MuJoCo physics engine. MuJoCo-Drones-Gym supports an arbitrary number of Bitcraze Crazyflie 2.x nano-quadcopters and exposes a modular API for selecting (i)~the physics model (rigid-body MuJoCo, explicit Python dynamics, or any subset of ground effect, blade drag, and inter-drone downwash), (ii)~the action interface (per-motor RPMs, collective normalized thrust, velocity setpoints, or PID waypoint commands), and (iii)~the observation space (kinematic state vectors, RGB / depth / segmentation cameras, or neighbourhood adjacency information). A PettingZoo ParallelEnv wrapper enables drop-in multi-agent reinforcement learning, while a suite of seven task environments, hover, velocity tracking, multi-drone hover, waypoint navigation, formation flight, gate racing, and a generic multi-agent template, demonstrates the breadth of the interface. We describe the environment design, the underlying physics and quadcopter dynamics, and illustrate its use through control and learning examples that mirror those of the closely related gym-pybullet-drones project, while taking advantage of MuJoCo's improved contact handling, rendering, and parallelizability."
   }
 ]
