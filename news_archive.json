@@ -1,5 +1,14 @@
 [
   {
+    "title": "Unitree 휴머노이드 로봇, 미 국방부의 중국 군사 기술 지적 직후 유럽 진입",
+    "original_title": "Unitree Humanoid Robot Enters Europe Days After Pentagon Flags It as Chinese Military Tech - Tech Times",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQy14UzE4WmpRWVdPNXhULXdraGlRWmlVWHo5NUduTERYWXpqV3JmblFxTkJId1lRNHg0UkNwNkJCajRiZFl2MDhLeDEyY0tBSXZVUnpOYzBubzFIaG1aRy04WGFQTGxIWjVWdFhXMFlmVHhuaF91a1NJMldlM2U0QXZFV2JPOVJLeEg5RDJRRURtTUZwNDBZbEpEN2xrbXFqSElRNmlQM1B1YjF4aDRjZDhSMUo4UmpiMDJ0OWNFeXZPYW95TkNLZHNXb3Znb1dlTWlSWUZBNjQ5QQ?oc=5",
+    "date": "2026-07-20 10:09",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree 사의 휴머노이드 로봇이 미 국방부(Pentagon)가 해당 기술을 중국 군사 기술로 규정한 지 얼마 지나지 않아 유럽 지역에 진입함. 이 사안은 미국의 기술 검열 강화 및 지정학적 기술 통제 기조 속에서 나타난 주요 사례로 주목됨."
+  },
+  {
     "title": "로봇 정책 훈련 및 평가를 위한 인터랙티브 월드 시뮬레이터",
     "original_title": "Interactive world simulator for robot policy training and evaluation",
     "link": "https://robohub.org/interactive-world-simulator-for-robot-policy-training-and-evaluation/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.08253v1 Announce Type: new \nAbstract: Enabling humanoid robots to operate in complex, dynamic environments remains a critical challenge, fundamentally limited by the ability to navigate robustly, safely, and accurately. While reinforcement learning with velocity-commanded policies has achieved remarkable robustness in humanoid locomotion, this approach lacks explicit control of the foothold placement, leading to unsafe behavior, such as stepping onto human feet, or imprecise navigation, hindering the following manipulation task. Conversely, explicit foothold-tracking policies offer a promising alternative by directly being commanded with target foot poses. However, existing approaches are often limited by unrealistic state assumptions, compromising real-world deployment, or they are part of staged pipelines, making them tied to specific downstream tasks. In this work, we introduce a novel, lightweight framework for training general-purpose 3D foothold-tracking policies. By dynamically providing footstep support through a goal sampler, this method enables the learned policy to be agnostic to specific terrains. Our new target representation effectively mitigates challenges arising in the real world, such as noisy and inaccurate pose estimation and foot contact estimation. Designed for direct real-world transfer, our policy acts as a standalone low-level controller that can be seamlessly paired with various high-level foothold generators. We demonstrate the effectiveness of our framework through extensive experiments in simulation and in the real world. By coupling our policy with different upstream planners, we achieve natural and accurate locomotion in challenging settings, paving the way for loco-manipulation tasks in complex environments."
-  },
-  {
-    "title": "SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loco-manipulation",
-    "original_title": "SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loco-manipulation",
-    "link": "https://arxiv.org/abs/2606.08278",
-    "date": "2026-06-09 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.08278v1 Announce Type: new \nAbstract: Humanoid foundation models are advancing faster than we can evaluate them. While real-world testing is expensive and difficult to reproduce, existing simulation benchmarks focus primarily on table-top or wheeled robots. A scalable and reproducible benchmark for whole-body humanoid loco-manipulation remains an open problem. To this end, we present SIMPLE, a unified simulation testbed for humanoid policy learning and evaluation. SIMPLE couples the accurate contact-rich dynamics of MuJoCo with the photorealistic rendering of IsaacSim. It provides a large-scale environment comprising 60 diverse whole-body tasks, 50 indoor scenes, and over 1,000 object assets. To facilitate scalable data collection, the framework integrates two data generation pipelines: automated trajectory generation via motion planning and a low-latency VR teleoperation interface. We further integrate and benchmark mainstream humanoid policies at scale in SIMPLE, including lightweight imitation networks, large vision-language-action (VLA) models, and recent world action models (WAMs). Our experiments reveal a strong correlation between policy performance in simulation and the real world. Furthermore, we demonstrate that policies trained on data collected in SIMPLE can be transferred zero-shot to physical humanoid robots under similar settings, providing a robust and reproducible foundation for humanoid robotics research."
   }
 ]
