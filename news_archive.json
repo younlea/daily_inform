@@ -1,5 +1,14 @@
 [
   {
+    "title": "컨텍스트 플랫폼이 산업용 AI 에이전트의 상용화를 이끄는 방법",
+    "original_title": "How Context Platforms Make Industrial AI Agents Production-Ready",
+    "link": "https://roboticsandautomationnews.com/2026/07/21/how-context-platforms-make-industrial-ai-agents-production-ready/103529/",
+    "date": "2026-07-21 11:33",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "컨텍스트 플랫폼은 AI 에이전트에 필요한 메타데이터, 비즈니스 지식, 운영 절차 등을 관리하는 통제된 계층임. 이는 접근 통제(access controls), 정책, 감사 추적(audit trails) 기능을 통해 핵심 컨텍스트를 제공함. 따라서 해당 플랫폼은 단순한 데모를 넘어 산업 현장에서 실제로 신뢰할 수 있는 AI 에이전트 구축에 필수적인 핵심 요소임."
+  },
+  {
     "title": "BMW Group Plant Landshut, 부품 생산용 휴머노이드 로봇 소프트웨어 개발",
     "original_title": "BMW Group Plant Landshut Builds Software for Humanoid Robotics in Component Production",
     "link": "https://humanoidroboticstechnology.com/humanoid-ai/bmw-group-plant-landshut-builds-software-for-humanoid-robotics-in-component-production/",
@@ -376,6 +385,24 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "본 논문은 로봇이 단일 목표 이미지(Instance Image)만을 가지고 미지의 환경에서 목표 객체를 탐색하는 IIN(Instance Image Goal Navigation) 문제에 대한 새로운 아키텍처인 SplatSearch를 제안함. SplatSearch는 희소 뷰 3D Gaussian Splatting(3DGS) 재구성을 기반으로 다중 뷰 렌더링을 수행하며, Diffusion Model을 이용해 손실된 영역을 보완하여 목표 이미지와의 특징 매칭을 강화함. 나아가 목표 이미지의 의미적 컨텍스트와 합성된 뷰의 시각적 컨텍스트를 활용하는 독자적인 프론티어 탐색 정책을 통해, 실제 환경에서 기존 최고 수준(SOTA) 방법 대비 높은 성공률과 효율성을 입증함."
+  },
+  {
+    "title": "TempoVLA: 속도 제어 기능을 갖춘 Vision-Language-Action(VLA) 정책 학습",
+    "original_title": "TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies",
+    "link": "https://arxiv.org/abs/2606.06491",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 매니퓰레이션 작업은 고속의 이동과 정밀한 접촉이 교차하는 속도 가변성이 필수이나, 기존 VLA 모델은 단일 고정 속도로 구동하는 한계가 존재함. 연구진은 이 문제를 해결하고자 속도를 명시적 조건으로 제어하는 TempoVLA를 제안하며, 데이터 측면의 VSTA(Variable-Speed Trajectory Augmentation)와 모델 측의 속도 조건화 메커니즘을 결합함. 실험 결과, TempoVLA는 저위험/고위험 구간에 따라 속도를 능동적으로 가감속하는 등 양방향의 유연한 속도 제어 구현이 가능함이 입증됨."
+  },
+  {
+    "title": "PIXIE: 조립 결함이 있는 미확인 물체에 대한 제로샷 텍스처 불변 6D 포즈 추정 프레임워크",
+    "original_title": "PIXIE: A Zero-Shot texture-invariant 6D pose estimation framework for unseen objects with assembly defects",
+    "link": "https://arxiv.org/abs/2607.16015",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "6D 포즈 추정은 산업 환경에서 데이터 파이프라인 의존성 및 물리적 손상에 취약함. PIXIE는 텍스처가 없는 3D 모델과 RGB 이미지만 활용하여 합성 깊이 및 노멀 맵을 이용해 6D 포즈를 추정하는 제로샷 프레임워크임. 본 방식은 오직 기하학적 정보에 의존하므로 조명 및 텍스처 변화에 본질적으로 강하며, 조립 결함 등의 실세계 환경에서도 높은 적용 가능성을 입증함."
   },
   {
     "title": "알마티에서 탄생: 카자흐스탄의 신규 AI 휴머노이드 개발 로드맵",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.10818v1 Announce Type: new \nAbstract: Real-world robotic manipulation tasks often involve forceful interactions with the environment, such as using tools of varying weights, transporting objects with different masses, and performing contact-rich tasks like table wiping. Previous learning-based approaches typically employ imitation learning policies that output target end-effector poses tracked by low-level impedance controllers. In these systems, forceful interactions are either implicitly realized through steady-state tracking errors or explicitly commanded using wrist force/torque or tactile sensors. However, implicit approaches generalize poorly across object weights, while explicit approaches require specialized hardware and increase system complexity. In this work, we propose IMPACT, a framework that decouples these forceful tasks into task-planning and internal-model-based predictive control. Extensive simulation and real-world experiments demonstrate that the proposed framework achieves higher success rates and improved generalization to unseen object weights, as well as better safety and energy efficiency."
-  },
-  {
-    "title": "MV-Actor: Aligning Multi-View Semantics and Spatial Awareness for Bimanual Manipulation",
-    "original_title": "MV-Actor: Aligning Multi-View Semantics and Spatial Awareness for Bimanual Manipulation",
-    "link": "https://arxiv.org/abs/2606.10899",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.10899v1 Announce Type: new \nAbstract: Robotic manipulation has been widely applied in industrial scenarios. Compared with single-arm manipulation, bimanual manipulation is equipped with multiple cameras to capture information from different viewpoints. However, existing multi-view policies encode each view independently or fuse view features shallowly, resulting in limited sharing semantic perception and unreliable spatial awareness. In this paper, we propose \\textbf{MV-Actor}, a multi-view perception framework that builds a unified semantic-spatial representation for bimanual manipulation. First, MV-Actor performs Multi-view Semantic Interaction to share semantic perception across views. Then it uses Semantic-Spatial Token Interaction to ground visual semantics with feed-forward reconstruction model features and acquire reliable spatial awareness. Finally, a Guided Metric Depth Repair module refines degraded sensor depth to provide more reliable metric anchors under consumer-grade depth noise. In simulation experiments conducted on the PerAct2 bimanual benchmark, MV-Actor achieves a state-of-the-art average success rate of 87.8\\%. In real-world evaluations with more frequent viewpoint changes and unstable consumer-grade depth, MV-Actor outperforms both RGB and RGB-D baselines, further demonstrating the benefit of sharing semantic perception and reliable spatial awareness for bimanual manipulation."
-  },
-  {
-    "title": "AgniNav: Configuration-Driven Cross-Embodiment Local Planning for Robot Navigation",
-    "original_title": "AgniNav: Configuration-Driven Cross-Embodiment Local Planning for Robot Navigation",
-    "link": "https://arxiv.org/abs/2606.10903",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.10903v1 Announce Type: new \nAbstract: Monocular local navigation is attractive for lightweight robots, but existing vision-based policies often couple perception to a specific body, camera height, and footprint, making transfer from wheeled bases to legged platforms dependent on retraining or active depth hardware. This paper introduces AgniNav, a configuration-driven local navigation framework that standardizes cross-embodiment transfer at the collision-envelope level. Each robot is specified by a measurable four-parameter safety envelope: collision-relevant height, front length, rear length, and half width. The height parameter conditions an image-to-scan network to predict a one-dimensional, collision-relevant pseudo-laserscan from a monocular color image, while the remaining footprint parameters configure a dimension-aware local planner for collision checking. Training uses height-conditioned column-minimum scan labels generated from paired color-depth data, allowing the same image to supervise different safety envelopes without collecting robot-specific data. To the best of our knowledge, AgniNav is the first monocular local-navigation framework that jointly conditions perception and planning on a shared collision-envelope configuration for zero-retraining deployment across wheeled, quadruped, and humanoid platforms. Real-robot experiments on a Turtlebot2, Unitree Go2, and Accelerated Evolution K1 achieve 39/40, 18/20, and 18/20 successes with 0/40, 1/20, and 2/20 collisions, respectively, while running at 30 Hz on Jetson Orin."
-  },
-  {
-    "title": "Task Robustness via Re-Labelling Vision-Action Robot Data",
-    "original_title": "Task Robustness via Re-Labelling Vision-Action Robot Data",
-    "link": "https://arxiv.org/abs/2606.10918",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.10918v1 Announce Type: new \nAbstract: The recent trend in scaling models for robot learning has resulted in impressive policies that can perform various manipulation tasks and generalize to novel scenarios. However, these policies continue to struggle with following instructions, likely due to the limited linguistic and action sequence diversity in existing robotics datasets. This paper introduces Task Robustness via Re-Labelling Vision-Action Robot Data (TREAD), a scalable framework that leverages large Vision-Language Models (VLMs) to augment existing robotics datasets without additional data collection, harnessing the transferable knowledge embedded in these models. Our approach leverages a pretrained VLM through three stages: generating semantic sub-tasks from original instruction labels and initial scenes, segmenting demonstration videos conditioned on these sub-tasks, and producing diverse instructions that incorporate object properties, effectively decomposing longer demonstrations into grounded language-action pairs. We further enhance robustness by augmenting the data with linguistically diverse versions of the text goals. Evaluations on LIBERO demonstrate that policies trained on our augmented datasets exhibit improved performance on novel, unseen tasks and goals. Our results show that TREAD enhances both planning generalization through trajectory decomposition and language-conditioned policy generalization through increased linguistic diversity."
   }
 ]
