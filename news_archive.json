@@ -324,6 +324,51 @@
     "summary": "로봇 시스템이 실환경에서 발생하는 다양한 실패 로그를 대규모로 수동 분석하는 것은 비효율적임. 본 연구는 Vision-Language Reasoning과 클러스터링을 결합하여 원시 로그로부터 구조화된 실패 설명을 추출하고, 이를 의미론적 공간에서 분석함으로써 이산적인 에피소드 수준이 아닌 반복적인 실패 모드를 비지도적으로 발견하는 방법을 제안함. 이 방법론은 로봇 매니퓰레이션, 실내 내비게이션, 자율 주행 등 다양한 도메인에서 검증되었으며, 발견된 실패 분류체계가 타겟 데이터 수집 및 런타임 실패 모니터링 시스템의 정확도를 높이는 데 기여함을 입증함."
   },
   {
+    "title": "역방향 동역학 추출 및 비쌍 도메인 번역을 통한 시뮬레이션-실제 격차 최소화: World Translation",
+    "original_title": "World Translation: Minimizing Sim-to-Real Gap with Backward Dynamics Extraction and Unpaired Domain Translation",
+    "link": "https://arxiv.org/abs/2607.18154",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "로봇 정책 배포의 근본적인 난제인 시뮬레이션-실제 격차를 줄이는 World Translation 기법이 제안됨. 기존 학습 모델의 부분 관찰 가능성 문제를 해결하기 위해, 관찰된 전이(transition)를 역방향으로 추출하여 관측 불가능한 동역학 정보를 확보하는 것이 핵심임. 이 정보를 비쌍 도메인 번역 문제로 처리하여 시뮬레이터와 실제 환경 간의 동역학을 전이하며, 인간형 및 사족 보행 로봇 등 다양한 플랫폼에서 높은 동역학 모델링 정확도를 입증함."
+  },
+  {
+    "title": "Patch Policy: 조밀한 시각 표현을 이용한 효율적 체현 제어 구현",
+    "original_title": "Patch Policy: Efficient Embodied Control via Dense Visual Representations",
+    "link": "https://arxiv.org/abs/2607.18236",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Vision Transformers(ViTs)의 밀도 높은 시각 특징을 로봇 학습에 활용하는 것이 핵심 과제였으나, 기존 정책들은 계산 부담이 크거나 세부 정보 손실 문제가 존재함. Patch Policy는 이러한 간극을 메우기 위해 VLM의 막대한 연산 비용 없이 패치 토큰을 직접 사용하는 최소한의 아키텍처 확장임. 이 방법론은 기존 최고 성능의 글로벌 풀링 표현 대비 40%의 상대적 성능 개선을 달성했으며, 극도로 적은 매개변수 사용으로 고주파 반응 제어에 효율적임을 입증함."
+  },
+  {
+    "title": "InLiER: 중간 혼합-진수 구조적 키포인트 토큰화를 통한 학습 불필요 이종 LiDAR 위치 인식",
+    "original_title": "InLiER: Learning-Free Heterogeneous LiDAR Place Recognition via Intermediate Mixed-Radix Structural Keypoint Tokenization",
+    "link": "https://arxiv.org/abs/2607.16862",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 플랫폼에 다양한 LiDAR가 결합됨에 따라 기존 위치 인식 디스크립터의 성능이 저하되는 문제를 해결함. InLiER는 중간 토큰화 단계를 기반으로 개발된 학습 불필요 파이프라인으로, 구조적 요소의 키포인트를 혼합-진수 토큰으로 압축하여 특징을 표현함. 이 토큰들은 히스토그램 교차, 비트마스크 정렬, 기하학적 검증 등 3단계 검색 과정을 거쳐 6-DoF 자세를 추정하며, HeLiPR 데이터셋에서 최신 핸드크래프트 방식 중 최고 성능을 달성함."
+  },
+  {
+    "title": "보행 로봇을 위한 태스크 조건부 불확실성 비용맵 생성",
+    "original_title": "Task-Conditioned Uncertainty Costmaps for Legged Locomotion",
+    "link": "https://arxiv.org/abs/2605.00261",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "보행 로봇의 이동 계획은 불규칙한 지형에서 미래 접지점 예측의 어려움을 겪는 문제임. 본 연구는 terrain 관측과 명령된 움직임에 기반하여 예측되는 footholds의 epistemic uncertainty를 모델링하는 방식을 제시함. 이 방법은 OOD(out-of-distribution) 영역을 탐지하고, 이를 비용맵 생성 프레임워크에 통합함으로써 기존 방식 대비 더 높은 신뢰도와 개선된 OOD 탐지 성능을 통한 안정적인 경로 계획 수행이 가능함."
+  },
+  {
+    "title": "'폴딩 학습' 기술 구현: LeHome Challenge 2026 수상작 공개 (온라인 1위, 오프라인 2위)",
+    "original_title": "Learning to Fold: prizewinning solution at LeHome Challenge 2026 (1st place online, 2nd offline)",
+    "link": "https://arxiv.org/abs/2606.27163",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 LeHome Challenge 2026에서 다룬 양손(Bimanual) 의류 접기 문제에 대한 해결책을 제시함. 시스템은 강화 학습(Reinforcement Learning) 루프를 활용하여 Vision-Language-Action (VLA) 정책을 개선하였으며, 정책 자체가 성공 및 진행도를 예측하는 가치 함수 역할을 수행하는 것이 특징임. AWR과 RECAP을 결합한 VLA 모델, HuggingFace Hub 기반의 비동기 분산 훈련 파이프라인, DAgger 기반의 sim-to-real 레시피 등 다양한 최신 RL 및 최적화 기법들을 융합적으로 적용하여 높은 성능을 입증함."
+  },
+  {
     "title": "알마티에서 탄생: 카자흐스탄의 신규 AI 휴머노이드 개발 로드맵",
     "original_title": "Made in Almaty: Timeline for Kazakhstan’s new AI humanoids - Kursiv Media",
     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPT29ldlNiSnBDbVJGLTFIeWhhTE5XQ0F6Q1lmalBJaV93SmpRZEtPSmFIdFBwbl8wZ084RFE0dW5YY1BDZ0g5eUdPd3lGQ2RjdHdIcjFNal9sZC1oempDV1EyeS1adGVUNW0ySlFJcS1tTlJyZmVTSS1jM1JqUnVMUDhEQ21mRVdDYi1DdUQ0TUxnVmtvNl96YXhvWTJKSDYyVFgxY0ZfRk_SAa4BQVVfeXFMTUU2MFhQQzlySlVCbWY3MmJXZ2JRYml6b1RRS2VLXzB6WkxIY2VuYnlzWTlsUnNaZ1FLS1lSc2ppbUZQMmNNcUpEMEM2ekZuZzRFaDhvMjNKUzc1Qk8wQ1NfMXYzSnpRN3dXemk4UHp0ak10b2lsQzJmMWdrNDBKakhrZDhaX2RZamgtVWtET1kzZzJvSHNoODI3QmRVZGR4NEZYZ19hSDhWVVBLbFdR?oc=5",
@@ -17953,50 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.11034v1 Announce Type: new \nAbstract: Spiking Neural Networks (SNNs) coupled with neuromorphic hardware offer energy-efficient solutions for humanoid robot control. However, existing SNN-based motor control systems address bipedal locomotion and arm control in isolation, leaving integrated control of both unaddressed. We present a spiking architecture that coordinates force-based arm control and bipedal locomotion in a simulated humanoid, using the Neural Engineering Framework (NEF) and Semantic Pointer Architecture (SPA). High-level action selection between locomotor and arm control is mediated by a biologically grounded spiking basal ganglia model. We validate the system through co-simulation of Nengo, for the neural control, and Isaac Sim, demonstrating successful target reaching, continuous digit drawing, path-following locomotion, and finally, switching between walking and arm control via basal ganglia disinhibition. To our knowledge, this is the first integrated spiking controller to combine bipedal locomotion and arm control on a full-scale humanoid platform. The full spike-based implementation enables future deployment on low-power neuromorphic hardware."
-  },
-  {
-    "title": "RoboNaldo: Accurate, Stable and Powerful Humanoid Soccer Shooting via Motion-Guided Curriculum Reinforcement Learning",
-    "original_title": "RoboNaldo: Accurate, Stable and Powerful Humanoid Soccer Shooting via Motion-Guided Curriculum Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2606.11092",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.11092v1 Announce Type: new \nAbstract: Elite humanoid soccer shooting requires whole-body stability, high-impulse whole-body interactions, and accuracy to targets. Motion tracking-driven reinforcement learning (RL) provides stability in whole-body movement coordination, but a fixed reference makes it hard to adapt to varied ball positions and strike timings; in contrast, task reward-driven RL struggles to explore and discover valid kicks from scratch. We therefore introduce RoboNaldo, a three-stage motion-guided curriculum RL framework for high-impulse humanoid interaction. A single human-kick reference is used as a scaffold and progressively shifts optimization towards shooting performance. The curriculum first learns a stable whole-body kicking prior, then adapts the kick to free-kick settings where the ball is stationary at random positions, and finally extends it to moving-ball shooting through a locomotion-command and kick-trigger interface. A high-level heuristic planner controls this interface during training, while alternative high-level controllers can drive the same low-level policy at inference. In simulation, RoboNaldo demonstrates free-kick shot error 48.6% lower and shoot velocity 2.96x than prior work baselines. In real world on a Unitree G1 with onboard perception, RoboNaldo attains 0.73 m and 0.86 m average target shooting error from 3 m away in free-kick and moving-ball cases, accordingly. And the post-contact ball velocity reaches 13.10 m/s, which is 59-71% of reported professional open-play shot speed. Project page: $\\href{https://opendrivelab.com/RoboNaldo}{\\text{opendrivelab.com/RoboNaldo}}$."
-  },
-  {
-    "title": "EM-Fall: Embodied mmWave Sensing for Day-and-Night Fall Detection on Humanoid Robots",
-    "original_title": "EM-Fall: Embodied mmWave Sensing for Day-and-Night Fall Detection on Humanoid Robots",
-    "link": "https://arxiv.org/abs/2606.11109",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.11109v1 Announce Type: new \nAbstract: Falls are one of the leading causes of injury and hospitalization among elderly individuals, making reliable fall awareness an essential capability for safety monitoring in residential environments. However, existing fall detection systems often rely on wearable devices or fixed sensing installations, which may suffer from low user compliance, limited spatial coverage, or degraded performance under occlusion and poor lighting conditions. In this work, we propose \\textbf{EM-Fall}, an embodied fall detection framework deployed on a mobile humanoid robot. The system integrates millimeter-wave (mmWave) sensing with robotic mobility, allowing the robot to actively adjust its sensing viewpoint and maintain target observability across rooms and under occlusion. To address interference in complex residential environments, including pet motion and multipath artifacts, we design a human-centered perception pipeline combined with lightweight temporal modeling to capture motion evolution before, during, and after fall events. We evaluate the proposed system across eight real indoor environments with four participants and construct an in-home mmWave fall detection dataset. Experimental results show that the embodied mobile sensing paradigm improves monitoring continuity and maintains robust fall detection performance under diverse environmental conditions. The proposed framework provides a practical solution for robot-assisted safety monitoring in home environments."
-  },
-  {
-    "title": "JOIN: Anchor-Grasp-Conditioned Joining via Opposition, Inference, and Navigation for Bimanual Assistive Manipulation",
-    "original_title": "JOIN: Anchor-Grasp-Conditioned Joining via Opposition, Inference, and Navigation for Bimanual Assistive Manipulation",
-    "link": "https://arxiv.org/abs/2606.11151",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.11151v1 Announce Type: new \nAbstract: Assistive mobility and manipulation platforms have received increasing attention as a means of restoring independence to individuals with disabilities. While effective for many basic activities of daily living (ADLs), a significant percentage of everyday tasks such as opening a jar, pouring a liquid, lifting a tray, or basic meal preparation, is fundamentally bimanual and remains out of reach for any single-arm system. Adding a second arm to a wheelchair is impractical, due to the additional power draw, cost, and the loss of space required for transfers and mobility. We instead propose a heterogeneous, on-demand bimanual system, in which a wheelchair-mounted anchor arm is joined when needed by a summoned mobile manipulator that serves as a complement arm. The central technical problem, which we call bimanual joining, is conditional: the anchor has already committed to a grasp, and the complement arm must choose where to stand and what to grasp to complete the task. We formulate bimanual joining as a three-phase decomposition (plan, drive, grasp) and show that a vision-language model (VLM), coupled with standard geometric tools, provides task-level knowledge sufficient to solve a representative class of bimanual ADLs. Our system JOIN, contributes (i) a wheelchair-referenced opposition score, and (ii) task-conditioned directional manipulability. We evaluate JOIN on a Kinova Gen3 anchor and a Hello Robot Stretch~3 complement on representative same-object and different-object tasks. JOIN accomplished more attempts (19/20) than state-of-the-art methods (14/20) and required markedly less correction by the operator."
-  },
-  {
-    "title": "TacForeSight: Force-Guided Tactile World Model for Contact-Rich Manipulation",
-    "original_title": "TacForeSight: Force-Guided Tactile World Model for Contact-Rich Manipulation",
-    "link": "https://arxiv.org/abs/2606.11184",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.11184v1 Announce Type: new \nAbstract: Contact-rich manipulation requires robots to continuously perceive and regulate evolving physical interactions under dynamic contact transitions or complex surface geometries. Recent imitation learning methods improve contact-aware control by incorporating tactile or force feedback, but they rarely model the asymmetric spatiotemporal roles of global force and local tactile sensing. To address this, we propose TacForeSight, a lightweight force-conditioned tactile foresight framework for real-time manipulation. The core component is TacForceWM, a tactile world model that predicts short-horizon tactile latent dynamics from dual-finger tactile observations conditioned on high-frequency wrist force and torque signals. Another key component, the Predictive Tactile-Conditioned Policy, leverages the predicted latents as anticipatory contact priors, models the current-to-future tactile evolution via cross-attention, and adaptively fuses visuo-tactile features through a tactile-guided gating module. By forecasting purely within a compact latent space, TacForeSight enables proactive contact reasoning with efficient real-time inference suitable for high-frequency manipulation control. Real-robot experiments on five representative tasks and three in-process perturbation settings show that TacForeSight consistently outperforms existing baselines, particularly under dynamic contact disturbances. All models and datasets will be made publicly available on the project website at https://tacforesight.github.io/ProjectPage."
-  },
-  {
-    "title": "SAFE-Pruner: Semantic Attention-Guided Future-Aware Token Pruning for Efficient Vision-Language-Action Manipulation",
-    "original_title": "SAFE-Pruner: Semantic Attention-Guided Future-Aware Token Pruning for Efficient Vision-Language-Action Manipulation",
-    "link": "https://arxiv.org/abs/2605.29662",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.29662v1 Announce Type: cross \nAbstract: Real-time inference of vision-language-action (VLA) models is essential for robotic control. While visual token pruning has shown strong potential for accelerating inference, most existing methods mainly base pruning decisions on shallow-layer cues and risk discarding visual information required by deep layers. To address this issue, we propose SAFE-Pruner, a plug-and-play pruning framework that incorporates attention cues of future layers into pruning decisions. Specifically, we identify semantic attention consistency, the tendency that VLA models concentrate their attention probability mass on the same semantic entity across execution steps. Based on this observation, we design a forward-looking strategy to forecast the token saliency in deep layers, which prevents the premature removal of critical tokens and leads to more stable acceleration. We further introduce an adaptive subtask division strategy to detect abrupt attention shifts, thereby improving forecasting accuracy and pruning reliability. Extensive experiments in simulation and real-world settings demonstrate that our method achieves up to 1.89x speedup with a minimal degradation in success rate of less than 1.7%, while outperforming state-of-the-art methods by up to 1.9%."
   }
 ]
