@@ -369,6 +369,15 @@
     "summary": "본 연구는 LeHome Challenge 2026에서 다룬 양손(Bimanual) 의류 접기 문제에 대한 해결책을 제시함. 시스템은 강화 학습(Reinforcement Learning) 루프를 활용하여 Vision-Language-Action (VLA) 정책을 개선하였으며, 정책 자체가 성공 및 진행도를 예측하는 가치 함수 역할을 수행하는 것이 특징임. AWR과 RECAP을 결합한 VLA 모델, HuggingFace Hub 기반의 비동기 분산 훈련 파이프라인, DAgger 기반의 sim-to-real 레시피 등 다양한 최신 RL 및 최적화 기법들을 융합적으로 적용하여 높은 성능을 입증함."
   },
   {
+    "title": "SplatSearch: 3D Gaussian Splatting 및 Diffusion Model을 활용한 모바일 로봇의 인스턴스 이미지 목표 탐색",
+    "original_title": "SplatSearch: Instance Image Goal Navigation for Mobile Robots using 3D Gaussian Splatting and Diffusion Models",
+    "link": "https://arxiv.org/abs/2511.12972",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 로봇이 단일 목표 이미지(Instance Image)만을 가지고 미지의 환경에서 목표 객체를 탐색하는 IIN(Instance Image Goal Navigation) 문제에 대한 새로운 아키텍처인 SplatSearch를 제안함. SplatSearch는 희소 뷰 3D Gaussian Splatting(3DGS) 재구성을 기반으로 다중 뷰 렌더링을 수행하며, Diffusion Model을 이용해 손실된 영역을 보완하여 목표 이미지와의 특징 매칭을 강화함. 나아가 목표 이미지의 의미적 컨텍스트와 합성된 뷰의 시각적 컨텍스트를 활용하는 독자적인 프론티어 탐색 정책을 통해, 실제 환경에서 기존 최고 수준(SOTA) 방법 대비 높은 성공률과 효율성을 입증함."
+  },
+  {
     "title": "알마티에서 탄생: 카자흐스탄의 신규 AI 휴머노이드 개발 로드맵",
     "original_title": "Made in Almaty: Timeline for Kazakhstan’s new AI humanoids - Kursiv Media",
     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPT29ldlNiSnBDbVJGLTFIeWhhTE5XQ0F6Q1lmalBJaV93SmpRZEtPSmFIdFBwbl8wZ084RFE0dW5YY1BDZ0g5eUdPd3lGQ2RjdHdIcjFNal9sZC1oempDV1EyeS1adGVUNW0ySlFJcS1tTlJyZmVTSS1jM1JqUnVMUDhEQ21mRVdDYi1DdUQ0TUxnVmtvNl96YXhvWTJKSDYyVFgxY0ZfRk_SAa4BQVVfeXFMTUU2MFhQQzlySlVCbWY3MmJXZ2JRYml6b1RRS2VLXzB6WkxIY2VuYnlzWTlsUnNaZ1FLS1lSc2ppbUZQMmNNcUpEMEM2ekZuZzRFaDhvMjNKUzc1Qk8wQ1NfMXYzSnpRN3dXemk4UHp0ak10b2lsQzJmMWdrNDBKakhrZDhaX2RZamgtVWtET1kzZzJvSHNoODI3QmRVZGR4NEZYZ19hSDhWVVBLbFdR?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.10918v1 Announce Type: new \nAbstract: The recent trend in scaling models for robot learning has resulted in impressive policies that can perform various manipulation tasks and generalize to novel scenarios. However, these policies continue to struggle with following instructions, likely due to the limited linguistic and action sequence diversity in existing robotics datasets. This paper introduces Task Robustness via Re-Labelling Vision-Action Robot Data (TREAD), a scalable framework that leverages large Vision-Language Models (VLMs) to augment existing robotics datasets without additional data collection, harnessing the transferable knowledge embedded in these models. Our approach leverages a pretrained VLM through three stages: generating semantic sub-tasks from original instruction labels and initial scenes, segmenting demonstration videos conditioned on these sub-tasks, and producing diverse instructions that incorporate object properties, effectively decomposing longer demonstrations into grounded language-action pairs. We further enhance robustness by augmenting the data with linguistically diverse versions of the text goals. Evaluations on LIBERO demonstrate that policies trained on our augmented datasets exhibit improved performance on novel, unseen tasks and goals. Our results show that TREAD enhances both planning generalization through trajectory decomposition and language-conditioned policy generalization through increased linguistic diversity."
-  },
-  {
-    "title": "A Spiking Neural Architecture for Coordinating Arm and Locomotor Control",
-    "original_title": "A Spiking Neural Architecture for Coordinating Arm and Locomotor Control",
-    "link": "https://arxiv.org/abs/2606.11034",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.11034v1 Announce Type: new \nAbstract: Spiking Neural Networks (SNNs) coupled with neuromorphic hardware offer energy-efficient solutions for humanoid robot control. However, existing SNN-based motor control systems address bipedal locomotion and arm control in isolation, leaving integrated control of both unaddressed. We present a spiking architecture that coordinates force-based arm control and bipedal locomotion in a simulated humanoid, using the Neural Engineering Framework (NEF) and Semantic Pointer Architecture (SPA). High-level action selection between locomotor and arm control is mediated by a biologically grounded spiking basal ganglia model. We validate the system through co-simulation of Nengo, for the neural control, and Isaac Sim, demonstrating successful target reaching, continuous digit drawing, path-following locomotion, and finally, switching between walking and arm control via basal ganglia disinhibition. To our knowledge, this is the first integrated spiking controller to combine bipedal locomotion and arm control on a full-scale humanoid platform. The full spike-based implementation enables future deployment on low-power neuromorphic hardware."
   }
 ]
