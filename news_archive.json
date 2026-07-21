@@ -144,6 +144,78 @@
     "summary": "본 연구는 강화학습(RL)을 활용하여 사족보행 로봇의 전신 제어(whole-body control)가 가능한 보행 프레임워크를 제시함. Nvidia의 Isaac Sim과 Isaac Lab을 이용해 시뮬레이션에서 실제 환경으로의 전이(zero-shot sim-to-real policy)를 성공적으로 구현함. 실제 Unitree Go1 하드웨어 테스트 결과, 사족보행체의 통합 컨트롤러 수준의 속도 추적 성능을 보여주었으며, 큰 외란으로부터의 회복 능력이 뛰어나고 2.0 m/s의 선형 속도 달성이 가능함을 입증함."
   },
   {
+    "title": "SHAPE: 얇고 긴 유연 튜브를 활용한 센서리스 원격 액추에이터의 동시 수압 구동 및 위치 추정",
+    "original_title": "SHAPE: Simultaneous Water Hydraulic Actuation and Position Estimation of a Sensorless Remote Actuator through a Thin and Long Flexible Tube",
+    "link": "https://arxiv.org/abs/2607.17054",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 극한 환경에서 발생하는 센서 오작동 문제를 해결하고자, 물을 채운 유연 튜브를 통해 액추에이터 측 센서 없이 구동 전력과 위치 정보를 동시에 원격 전송하는 방법을 제시함. 압력 변동에 따른 체적 손실 및 공기 포집을 모델링하여 최대 50m까지 위치 추정 및 전력 전송이 가능하도록 구현함. 이는 기존 센서리스 시스템에서 구현하기 어려웠던 안정적인 피드백 제어 및 위치 제어를 가능케 함."
+  },
+  {
+    "title": "반인형 로봇 NICO를 활용한 팔 동작 모방 기술 개발",
+    "original_title": "Imitation of Arm Gestures by the Semi-Humanoid Robot NICO",
+    "link": "https://arxiv.org/abs/2607.18197",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "인간-로봇 상호작용(HRI) 강화를 위해 반인형 로봇 NICO의 팔 동작 모방 시스템을 개발함. 해당 시스템은 MediaPipe 모델을 이용해 RGB 입력 프레임에서 인간의 관절 3D 좌표를 추출하고, 이를 기반으로 계산된 각도를 NICO의 모터 구성에 매핑하여 동작을 수행함. 초기 실험 결과, 단일 카메라(monocular) RGB 입력만으로 의미 있는 모방 동작 구현이 확인되었으나, 복잡한 자세 및 손목 관련 움직임에는 한계가 있음이 보고됨."
+  },
+  {
+    "title": "시각 기반 내비게이션을 위한 적응적 안전 여유 공간 학습",
+    "original_title": "Learning Adaptive Safety Margins for Visual Navigation",
+    "link": "https://arxiv.org/abs/2607.18200",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "복잡한 실내 공간에서 로봇의 이동 실패 원인이 고정된 안전 여유 공간(safety margin)의 오보정 임을 분석하고, 이를 해결하기 위한 맥락 조건부 안전 크리틱(context-conditioned safety critic)을 제안함. 해당 크리틱은 안전성, 효율성, 거리 제약 조건 매칭의 세 가지 구성 요소를 통해 확산 기반 경로 후보의 적응적 안전 선호도를 학습함. 시뮬레이션에서 학습된 이 방법은 HM3D 및 MP3D 데이터셋에서 최고 성공률을 달성하며, 별도의 태스크 조정 없이 Unitree G1 휴머노이드와 같은 실제 로봇 플랫폼에 높은 전이 성능을 보여줌."
+  },
+  {
+    "title": "휴머노이드 로봇 NICO의 Sim-to-Real 전이 최적화 연구",
+    "original_title": "Optimization of sim-to-real transfer in the humanoid robot NICO",
+    "link": "https://arxiv.org/abs/2607.18210",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "휴머노이드 로봇 NICO의 로보틱 그립팅에서 발생하는 Sim-to-Real gap 문제를 해결하기 위해, 연구진은 기존 햅틱 보정 방식을 테이블 상 물체 그리핑으로 확장함. 이 과정에서 YOLO 기반 물체/손 감지, 스테레오 비전 기반 위치 추정 등 외부 트래킹 장비 없이 작동하는 독창적인 보정 파이프라인을 구축함. 실험 결과, 시각 피드백 모델을 추가 적용하여 전체 작업 공간에서 가장 높은 성공적인 그리핑 성능을 달성한 것으로 보고됨."
+  },
+  {
+    "title": "통신 두절 상황에서의 강건한 다중 에이전트 협력을 위한 가치 기반 예측 기법",
+    "original_title": "Value-Aware Prediction for Robust Multi-Agent Coordination Under Communication Loss",
+    "link": "https://arxiv.org/abs/2607.17914",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 통신 두절 환경에서 다중 에이전트 협력을 위해 Value-Aware MARO 기법을 제안함. 이는 액터-크리틱 기반의 Advantage 추정치를 손실 함수에 가중치로 적용하여, 예측 모델의 학습 초점을 에이전트의 의도적이고 고효율적인 행동에 맞추는 것이 핵심임. 실험 결과, 본 방식은 통신 신뢰도가 낮은 환경에서도 성능 저하를 효과적으로 방지하며, 표준 예측 모델 대비 평균 리턴 20% 이상의 성능 향상을 입증함."
+  },
+  {
+    "title": "지형 적응 보행을 위한 물리적 실현 가능 반응 합성 기법",
+    "original_title": "Physically-Feasible Reactive Synthesis for Terrain-Adaptive Locomotion",
+    "link": "https://arxiv.org/abs/2509.23185",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존의 로봇 보행 방식의 한계(높은 계산 비용 또는 낮은 안정성)를 극복하기 위해, 본 연구는 동적 지형에서의 네 발 보행을 위한 통합 계획 프레임워크를 제시함. 이는 반응 합성(reactive synthesis)을 통해 신호 레벨의 제어기를 생성하고, MICP(mixed-integer convex programming)를 이용해 발걸음 계획을 수립하는 것이 핵심임. 특히, 실시간으로 물리적 오류를 보정하는 심볼릭 복구 메커니즘을 도입하여, 실제 환경에서도 안정적이고 효과적인 보행이 가능함을 검증함."
+  },
+  {
+    "title": "폐루프 구조 로봇을 위한 통합 외란 인식 안전 운동학 제어",
+    "original_title": "Unified Disturbance Aware Safe Kinematic Control for Closed-Architecture Robots",
+    "link": "https://arxiv.org/abs/2512.05292",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "상업용 산업 매니퓰레이터의 고정된 내부 토크 컨트롤러 한계를 극복하기 위해, 외란 보상 제어와 강건 제어 장벽 함수(robust control barrier function)를 결합한 외부 루프 추가 기능을 개발함. 본 솔루션은 내부 루프 컨트롤러가 불완전하거나 동적 모델에 큰 불확실성이 있을 경우에도 전체 시스템에 걸쳐 높은 추적 정밀도와 안전한 제어를 보장함. 안정성 분석과 PUMA 로봇을 사용한 하드웨어 실험을 통해 구현의 간편성, 강건성, 안전성 측면에서 기존 기술 대비 우수한 성능을 입증함."
+  },
+  {
+    "title": "장기 시계열 계획을 위한 구성적 확산 및 가이드 검색",
+    "original_title": "Compositional Diffusion with Guided Search for Long-Horizon Planning",
+    "link": "https://arxiv.org/abs/2601.00126",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "생성 모델 기반 계획의 핵심 과제인 다중 모드 분포의 평균화 문제를 해결하기 위해 Compositional Diffusion with Guided Search (CDGS)를 제안함. 본 방법은 검색 과정을 Diffusion 디노이징 프로세스에 직접 내장하여 Population-based Sampling과 반복적 리샘플링을 통해 국소적 및 전역적 일관성을 확보함. CDGS는 7가지 로봇 매니퓰레이션 작업에서 최고 성능을 달성하였으며, 텍스트 기반 파노라마 이미지 및 장기 비디오 합성 등 다양한 도메인으로 일반화됨을 입증함."
+  },
+  {
     "title": "중국 로봇 기업들, \"'두뇌(Brain)'와 대규모 데이터 확보가 관건\"이라 토로함",
     "original_title": "China’s robot firms’ lament: if we only had a ‘brain’, and more data - South China Morning Post",
     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOFhlY2xTR29VU0JNbFFPUERHdjdfWTlKek1oeVhIcnRGMER3VldFbWFQWUJtNzRSSGtPSG1TUFd1UFNWT2JKR3VRVEEyMjluZ2dsdDNLczRVbE01SkxvQkFZYlgtZ05WcWV3a1RqTERMYk9aazJyYnRQR2Q1U0FVUHFCZDdLNUlacUdUVjMtVFREX1hqcnFQYTk1anJ5RHFNSlJPN2F3S2NjcTN1eHRhZdIBsAFBVV95cUxQOFhlY2xTR29VU0JNbFFPUERHdjdfWTlKek1oeVhIcnRGMER3VldFbWFQWUJtNzRSSGtPSG1TUFd1UFNWT2JKR3VRVEEyMjluZ2dsdDNLczRVbE01SkxvQkFZYlgtZ05WcWV3a1RqTERMYk9aazJyYnRQR2Q1U0FVUHFCZDdLNUlacUdUVjMtVFREX1hqcnFQYTk1anJ5RHFNSlJPN2F3S2NjcTN1eHRhZQ?oc=5",
@@ -610,6 +682,15 @@
     "source": "Google News (Humanoid)",
     "category": "humanoid",
     "summary": "AGIBOT이 WAIC 2026에서 네 가지 신제품을 공개하며 로보틱스 기술력을 과시함. 이번 제품들은 'Embodied AI'를 핵심으로 실제 환경에서의 작동 능력을 중점적으로 시연함. 이를 통해 로봇공학 기술의 현장 적용 및 상용화 가능성을 입증함."
+  },
+  {
+    "title": "호주, AI 시대 전환과 함께 휴머노이드 로봇 개발에 주력함",
+    "original_title": "Australia is making humanoid robots in the midst of its AI reckoning - ABC News & Headlines – Australian Broadcasting Corporation",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOY1FaeFdoZHR3bkk4VkNMcjFRcDk1OXhILUY0aUdsbk1Rdkg2eDA1VDA2VTNVNW45UFRiX2doaVRtcmpHY0NVdk5JUzExWjBDSXNPNjlzZS0zY2t3ampNRkZXRGpPMmRQLVJrSnVhVk1Nc2FrdE5lem5LcDE2cGo4N1JzNER0amJUMnRmYTZxM21rMUdUNW1vbkFialFyYmpyLTJPa0pSY09udTVEbFdJ?oc=5",
+    "date": "2026-07-19 19:00",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "호주가 AI 기술 전환 과제(AI reckoning)를 맞아 휴머노이드 로봇 개발에 역량을 집중하는 모습임. 이는 인공지능 기술을 단순 연구 단계를 넘어 실질적인 산업 및 사회 응용 분야에 적용하려는 국가적인 움직임으로 분석됨."
   },
   {
     "title": "중국, 세계 최초 휴머노이드 로봇 격투 토너먼트 개최",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2510.14836v3 Announce Type: replace-cross \nAbstract: Spatial perception and reasoning are crucial for Vision-Language-Action (VLA) models to accomplish fine-grained manipulation tasks. However, existing approaches often lack the ability to understand and reason over the essential 3D structures necessary for precise control. To address this limitation, we propose QDepth-VLA, a general framework that augments VLA models with an auxiliary depth prediction task. A dedicated depth expert is designed to predict quantized latent tokens of depth maps obtained from a VQ-VAE encoder, enabling the model to learn depth-aware representations that capture critical geometric cues. Experimental results on the simulation benchmarks and real-world tasks demonstrate that QDepth-VLA yields strong spatial reasoning and competitive performance on manipulation tasks."
-  },
-  {
-    "title": "Glove2Hand: Synthesizing Natural Hand-Object Interaction from Multi-Modal Sensing Gloves",
-    "original_title": "Glove2Hand: Synthesizing Natural Hand-Object Interaction from Multi-Modal Sensing Gloves",
-    "link": "https://arxiv.org/abs/2603.20850",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.20850v2 Announce Type: replace-cross \nAbstract: Understanding hand-object interaction (HOI) is fundamental to computer vision, robotics, and AR/VR. However, conventional hand videos often lack essential physical information such as contact forces and motion signals, and are prone to frequent occlusions. To address the challenges, we present Glove2Hand, a framework that translates multi-modal sensing glove HOI videos into photorealistic bare hands, while faithfully preserving the underlying physical interaction dynamics. We introduce a novel 3D Gaussian hand model that ensures temporal rendering consistency. The rendered hand is seamlessly integrated into the scene using a diffusion-based hand restorer, which effectively handles complex hand-object interactions and non-rigid deformations. Leveraging Glove2Hand, we create HandSense, the first multi-modal HOI dataset featuring glove-to-hand videos with synchronized tactile and IMU signals. We demonstrate that HandSense significantly enhances downstream bare-hand applications, including video-based contact estimation and hand tracking under severe occlusion."
-  },
-  {
-    "title": "China humanoid robot footballer dents wall with powerful kick - VnExpress International",
-    "original_title": "China humanoid robot footballer dents wall with powerful kick - VnExpress International",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaUh4TFRpSDBrRXNnZkdjQ1dQY3JseG5lWDJET283RFAzV3JNYWJTcmtMWWRDRnY5Y2hwcXdTTWpVbEJPRnBFSHdvdmtveEVWVFRTVnFLdEhVVlJrOU9UMExxRjNfTXdsekNUVEJqaFJIN0x0S3lwU1ljQTlJbVRBRzZ6ZjlwTWdaTWpLN1RraVRybXJMMHp2dlg4Rk1CZ0JjZnc0QlkyWkhpS0lXNjByWDQwNl9PTDBDOGc?oc=5",
-    "date": "2026-06-10 03:34",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China humanoid robot footballer dents wall with powerful kick  VnExpress International"
-  },
-  {
-    "title": "Tianjin develops sensors for embodied AI - China Daily",
-    "original_title": "Tianjin develops sensors for embodied AI - China Daily",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBsNXcyaVJBUlUwQlRKakZGSGdwMThmNVp5RWdEZXVwbm1Rb3cybDlLdllYV0JOWTBGdXotSVhmd0llNko1RFY3aFU1ZFFkV2hoOHN0d2J6elVndmxzY0x3RHVfNExNOUtaX0ZBTHQzNnROYmNadEE3bVBPQlZJZw?oc=5",
-    "date": "2026-06-10 02:14",
-    "source": "Google News (China Hand/Sensor Startups - EN)",
-    "category": "hand",
-    "summary": "Tianjin develops sensors for embodied AI  China Daily"
-  },
-  {
-    "title": "Chinese Humanoid Robots Take the Internet by Storm as Overseas Influencers - Pandaily",
-    "original_title": "Chinese Humanoid Robots Take the Internet by Storm as Overseas Influencers - Pandaily",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWS1NS2dnSlBFUmM1TWZWbnRnQWV4eGFUUHFzLXJLbXhMSWZwQ2JYNmozUnR5cmE3RjlsRldSb1NWQ1N4NVRmTGxMejgwb2xQXzI2S3ROTmpDZE1Ba1ZFNzRvU2xhLWJlU0RVNm1sVUhJZXRNejFwMzBod2JsLW1iRk5jSkZCaG8?oc=5",
-    "date": "2026-06-10 01:53",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese Humanoid Robots Take the Internet by Storm as Overseas Influencers  Pandaily"
-  },
-  {
-    "title": "Chinese robotics firm eyes growth opportunities in Indonesia - Global Times",
-    "original_title": "Chinese robotics firm eyes growth opportunities in Indonesia - Global Times",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9aaURMd0dYY2tPZjJLM0ktWkhjbG9XR0w3MEpRNDlscXY3WUpjbnhQQzNhYW5VWnFreUl0dzdVWm5oQ3hsSUxBOE5qdTh2Q083eTZzeXBzbElfN2tCaFZvVDVB?oc=5",
-    "date": "2026-06-10 01:38",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese robotics firm eyes growth opportunities in Indonesia  Global Times"
-  },
-  {
-    "title": "Chinese robotics firm eyes growth opportunities in Indonesia - People's Daily Online",
-    "original_title": "Chinese robotics firm eyes growth opportunities in Indonesia - People's Daily Online",
-    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBVcXlBNWNpczZGR293NDM1Wl9tR3pVUzdGM2Y3Zmx2VV9jWWNmckJobTFDLTA2YzBzdERNd0xfX1oxaXJheWdvQjBLSXhDblU3aVNOMGVibjY1dkh1bFZwN1Zuaw?oc=5",
-    "date": "2026-06-10 01:35",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese robotics firm eyes growth opportunities in Indonesia  People's Daily Online"
-  },
-  {
-    "title": "Mega IPOs by SpaceX, OpenAI, CXMT, Unitree Draw Mixed Reactions - 조선일보",
-    "original_title": "Mega IPOs by SpaceX, OpenAI, CXMT, Unitree Draw Mixed Reactions - 조선일보",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcHJ4Q1N3LVZqeUw0TndoWXlVOXc4dnRpRTRnZnlxU04tUW5jOVZkZEMwcHplTXk1MVh5YnZTWmRPOGZZT05YYWJEb2pSRnJKU28yWG5ISzdFLVd1dm9lVE1TZVNYa0FhY2NNRmllUTM4RTU2akFmelFBLTd2VE8zaG91TjNwZGF5bjVVWWRB?oc=5",
-    "date": "2026-06-10 00:07",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Mega IPOs by SpaceX, OpenAI, CXMT, Unitree Draw Mixed Reactions  조선일보"
-  },
-  {
-    "title": "Robots learn to anticipate chaos, but still fail to read a decidedly human signal",
-    "original_title": "Robots learn to anticipate chaos, but still fail to read a decidedly human signal",
-    "link": "https://techxplore.com/news/2026-06-robots-chaos-human.html",
-    "date": "2026-06-09 21:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "Cornell researchers are investigating the potential for using artificial intelligence to give robots social intelligence—the ability to read facial cues, anticipate the needs of those around them, and function within society. The new study tested the ability of vision language models (VLMs)—AI systems that can interpret and generate both visual information and language—to predict whether a tense scenario in a short video would end well or badly, such as a toddler carrying an overly full mug of coffee."
-  },
-  {
-    "title": "Walmart, Wing add 7 markets in drone delivery expansion",
-    "original_title": "Walmart, Wing add 7 markets in drone delivery expansion",
-    "link": "https://www.therobotreport.com/walmart-wing-add-7-markets-in-drone-delivery-expansion/",
-    "date": "2026-06-09 19:38",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Wing plans to bring drone deliveries to Memphis, New Orleans, Philadelphia, Phoenix, San Diego, San Francisco, and Salt Lake City.\nThe post Walmart, Wing add 7 markets in drone delivery expansion appeared first on The Robot Report."
   }
 ]
