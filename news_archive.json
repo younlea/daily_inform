@@ -315,6 +315,15 @@
     "summary": "기존 Vision-Language-Action (VLA) 모델은 데이터 비효율성 및 일반화 성능 저하 등의 문제에 직면함. 본 논문은 재사용성 확보를 위해 '원시 요소 중심의 분해 및 조립(Primitive-Centric Disassemble & Assemble)' 패러다임을 제시하는 PrimitiveVLA 프레임워크를 제안함. 이 방식은 데모를 재사용 가능한 원시 요소로 분해하고, VLM 플래너 및 LLM 기반 스위치 모듈을 활용하여 궤적을 조립함으로써, 모델의 데이터 효율성과 제로샷(zero-shot) 일반화 성능을 극대화함."
   },
   {
+    "title": "배포 로그를 활용한 실패 분류체계의 비지도 학습적 발견",
+    "original_title": "Unsupervised Discovery of Failure Taxonomies from Deployment Logs",
+    "link": "https://arxiv.org/abs/2506.06570",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 시스템이 실환경에서 발생하는 다양한 실패 로그를 대규모로 수동 분석하는 것은 비효율적임. 본 연구는 Vision-Language Reasoning과 클러스터링을 결합하여 원시 로그로부터 구조화된 실패 설명을 추출하고, 이를 의미론적 공간에서 분석함으로써 이산적인 에피소드 수준이 아닌 반복적인 실패 모드를 비지도적으로 발견하는 방법을 제안함. 이 방법론은 로봇 매니퓰레이션, 실내 내비게이션, 자율 주행 등 다양한 도메인에서 검증되었으며, 발견된 실패 분류체계가 타겟 데이터 수집 및 런타임 실패 모니터링 시스템의 정확도를 높이는 데 기여함을 입증함."
+  },
+  {
     "title": "알마티에서 탄생: 카자흐스탄의 신규 AI 휴머노이드 개발 로드맵",
     "original_title": "Made in Almaty: Timeline for Kazakhstan’s new AI humanoids - Kursiv Media",
     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPT29ldlNiSnBDbVJGLTFIeWhhTE5XQ0F6Q1lmalBJaV93SmpRZEtPSmFIdFBwbl8wZ084RFE0dW5YY1BDZ0g5eUdPd3lGQ2RjdHdIcjFNal9sZC1oempDV1EyeS1adGVUNW0ySlFJcS1tTlJyZmVTSS1jM1JqUnVMUDhEQ21mRVdDYi1DdUQ0TUxnVmtvNl96YXhvWTJKSDYyVFgxY0ZfRk_SAa4BQVVfeXFMTUU2MFhQQzlySlVCbWY3MmJXZ2JRYml6b1RRS2VLXzB6WkxIY2VuYnlzWTlsUnNaZ1FLS1lSc2ppbUZQMmNNcUpEMEM2ekZuZzRFaDhvMjNKUzc1Qk8wQ1NfMXYzSnpRN3dXemk4UHp0ak10b2lsQzJmMWdrNDBKakhrZDhaX2RZamgtVWtET1kzZzJvSHNoODI3QmRVZGR4NEZYZ19hSDhWVVBLbFdR?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2605.29662v1 Announce Type: cross \nAbstract: Real-time inference of vision-language-action (VLA) models is essential for robotic control. While visual token pruning has shown strong potential for accelerating inference, most existing methods mainly base pruning decisions on shallow-layer cues and risk discarding visual information required by deep layers. To address this issue, we propose SAFE-Pruner, a plug-and-play pruning framework that incorporates attention cues of future layers into pruning decisions. Specifically, we identify semantic attention consistency, the tendency that VLA models concentrate their attention probability mass on the same semantic entity across execution steps. Based on this observation, we design a forward-looking strategy to forecast the token saliency in deep layers, which prevents the premature removal of critical tokens and leads to more stable acceleration. We further introduce an adaptive subtask division strategy to detect abrupt attention shifts, thereby improving forecasting accuracy and pruning reliability. Extensive experiments in simulation and real-world settings demonstrate that our method achieves up to 1.89x speedup with a minimal degradation in success rate of less than 1.7%, while outperforming state-of-the-art methods by up to 1.9%."
-  },
-  {
-    "title": "RAPTOR: Rapid Aerial Pickup and Transport of Objects by Robots",
-    "original_title": "RAPTOR: Rapid Aerial Pickup and Transport of Objects by Robots",
-    "link": "https://arxiv.org/abs/2203.03018",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2203.03018v3 Announce Type: replace \nAbstract: Rapid aerial grasping through robots can lead to many applications that utilize fast and dynamic picking and placing of objects. Rigid grippers traditionally used in aerial manipulators require high precision and specific object geometries for successful grasping. We propose RAPTOR, a quadcopter platform combined with a custom Fin Ray gripper to enable more flexible grasping of objects with different geometries, leveraging the properties of soft materials to increase the contact surface between the gripper and the objects. To reduce the communication latency, we present a new lightweight middleware solution based on Fast DDS (Data Distribution Service) as an alternative to ROS (Robot Operating System). We show that RAPTOR achieves an average of 83% grasping efficacy in a real-world setting for four different object geometries while moving at an average velocity of 1 m/s during grasping. In a high-velocity setting, RAPTOR supports up to four times the payload compared to previous works. Our results highlight the potential of aerial drones in automated warehouses and other manipulation applications where speed, swiftness, and robustness are essential while operating in hard-to-reach places."
   }
 ]
