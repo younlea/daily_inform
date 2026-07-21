@@ -1,5 +1,14 @@
 [
   {
+    "title": "로블록스의 월드 모델 활용 전략 분석",
+    "original_title": "Inside Roblox’s Bet on World Models",
+    "link": "https://blog.bytebytego.com/p/inside-robloxs-bet-on-world-models",
+    "date": "2026-07-21 14:30",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "Roblox의 Anupam Singh 수석 엔지니어링 부사장이 월드 모델을 활용한 실사급 멀티플레이어 게임 구현 과정과 그 핵심 인사이트를 공개함. 해당 내용은 로블록스가 현재 추구하는 기술적 방향성과 개발 과정에서의 중요한 시사점을 제공함. 또한, 팀이 향후 집중하고 있는 다음 단계의 주요 기술 개발 동향도 함께 논의됨."
+  },
+  {
     "title": "휴머노이드, 시리즈 A 투자 유치 성공 및 1억 5,200만 달러 확보",
     "original_title": "Humanoid Raises $152 million in Series A Financing",
     "link": "https://humanoidroboticstechnology.com/industry-news/humanoid-raises-152-million-in-series-a-financing/",
@@ -502,6 +511,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "기존 비전 시스템이 직면하는 높은 혼합/낮은 생산량 환경에서의 유연성 문제를 해결하기 위해 zero-shot 6D pose estimation 기술인 xperception을 제시함. 본 기술은 객체별 미세 조정 과정 및 데이터 주석 작업 없이 CAD 모델과 DINOv2 같은 foundation models의 시맨틱 피처를 활용하여 밀리미터급의 6D pose 추정 정확도를 달성함. 이는 산업 현장의 Edge Hardware(NVIDIA Jetson Thor 등)에 배포가 가능하며, 고난이도 환경에서 플러그 앤 플레이 방식의 자동화를 가능하게 함."
+  },
+  {
+    "title": "FM-VLA: 접촉 기반 조작 환경을 위한 힘 기반 메모리 Vision-Language-Action 모델",
+    "original_title": "FM-VLA: Force-based Memory for Vision-Language-Action Models in Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2607.18231",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 Vision-Language-Action(VLA) 모델은 시각적 불분명성으로 인해 접촉 상호작용(Contact-Rich Manipulation) 환경에서 어려움을 겪는 문제점을 지님. 이에 본 연구는 힘 기반 메모리(Force-based Memory)를 갖춘 FM-VLA를 제안, VAE를 통해 힘 이력을 압축 토큰화하여 비마르코프적(non-Markovian) 컨텍스트 추론을 가능하게 함. FM-VLA는 이를 바탕으로 다양한 메모리 의존적 작업에서 기존 방식 대비 우수한 성공률과 경량성을 동시에 달성함을 입증함."
   },
   {
     "title": "알마티에서 탄생: 카자흐스탄의 신규 AI 휴머노이드 개발 로드맵",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.10340v1 Announce Type: new \nAbstract: Humanoid whole-body control has made significant progress in recent years, yet existing approaches remain limited to few-skill policies with heavy reward engineering, or motion trackers that are difficult to extend to new input modalities. We argue that the key to general-purpose humanoid control is to build a scalable brain, a module capable of reasoning with diverse conditioning modalities, atop a reactive motion tracking cerebellum, mirroring the hierarchical structure of biological motor systems. Two challenges arise in realizing this vision: acquiring a vast amount of high-quality data to achieve general purpose control, and equipping the generator with the capability to condition on compositional, extensible multi-modal inputs. We present OMG, which addresses these challenges with a meticulous data curation, filtering and labeling pipeline, as well as a diffusion-based motion generation backbone that conditions on language, audio, and human reference motions. Extensive experiments validate OMG as an omni-modal whole-body controller exhibiting state-of-the-art performance, model scaling behavior and efficient adaptation to new distributions and modalities, marking a concrete step toward foundation models for humanoid robots."
-  },
-  {
-    "title": "HiMem-WAM: Hierarchical Memory-Gated World Action Models for Robotic Manipulation",
-    "original_title": "HiMem-WAM: Hierarchical Memory-Gated World Action Models for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2606.10363",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.10363v1 Announce Type: new \nAbstract: World Action Models (WAMs) have emerged as a new powerful paradigm for embodied intelligence, learning action-relevant visual dynamics that significantly enhance generalization and robustness. However, existing WAMs still struggle with task-relevant memory in long-horizon robotic manipulation. To address this, we present HiMem-WAM, a Hierarchical Memory-Gated WAM that integrates motion-centric latent actions, high-level skill latents, and boundary-triggered memory updates. Specifically, we develop a hierarchical latent action framework that jointly learns low-level motion and high-level skill latents, providing structured temporal abstraction. Meanwhile, a boundary-aware memory gate writes compact task states at predicted skill transitions, enabling causal inference without test-time generation of future video or optical flow estimation. Evaluated on LIBERO, LIBERO-PLUS, RMBench and real-world tasks, HiMem-WAM shows that hierarchical latents improve robustness under deployment perturbations, and the memory module substantially benefits memory-dependent long-horizon manipulation."
-  },
-  {
-    "title": "Test-time Adversarial Takeover: A Real-time Hijacking Interface against Robotic Diffusion Policies",
-    "original_title": "Test-time Adversarial Takeover: A Real-time Hijacking Interface against Robotic Diffusion Policies",
-    "link": "https://arxiv.org/abs/2606.10371",
-    "date": "2026-06-10 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.10371v1 Announce Type: new \nAbstract: Diffusion-based action generation has become a foundational component of embodied AI, but its reliance on visual conditioning leaves deployed visuomotor policies vulnerable to adversarial manipulation. Most prior attacks focus on disruption: they perturb the observation stream to reduce task success or induce erratic behavior. We study a stronger threat, Test-time Adversarial Takeover (TAKO), in which an attacker obtains a real-time steering interface over a frozen robot policy and turns it into a remotely piloted instrument. TAKO learns a small vocabulary of reusable universal patches through differentiable diffusion inference; at test time, the attacker switches among these patches in the camera stream to compose attacker-chosen trajectories. This works because the perturbation acts on the visual conditioning pathway, where the induced bias can persist through iterative generative inference. We further show that the natural targeted baseline, target-policy matching, fails because the victim policy cannot reliably supervise itself on out-of-distribution target shifts. Across four tasks (2D manipulation, simulated aerial delivery, simulated ground navigation, and physical-world ground navigation), two visual encoders (ResNet-18 and EfficientNet-B0 + Transformer), and three generative inference families (DDPM, DDIM, and flow matching), human operators achieve 100\\% takeover success on attacker-defined objectives in every evaluated setting. The project page is available at https://tako-attack.github.io."
   }
 ]
