@@ -72,6 +72,78 @@
     "summary": "공공장소에서 이동하는 로봇은 보행자의 편안성 확보가 필수적이나, 기존 알고리즘은 Nonholonomic Mobile Robots (NMR)의 특성과 주관적 인자 모델링에 미흡함. 본 논문은 NMR를 위한 사회 인지 알고리즘을 개발하고, Social Force Model (SFM)과 Time-to-collision Social Force Model (TSFM)을 도입하여 시스템의 안정성을 증명함. 실험 결과, 제안된 모델이 보행자 군중 환경에서 높은 성능을 보이며, 로봇의 이동 시 보행자의 편안도를 실질적으로 개선시키는 것으로 분석됨."
   },
   {
+    "title": "사족 보행 로봇을 이용한 협동 운송을 위한 ADMM 기반 안전 필수 분산 NMPC",
+    "original_title": "ADMM-Based Safety-Critical Distributed NMPC for Cooperative Transportation by Quadrupedal Robots",
+    "link": "https://arxiv.org/abs/2607.17007",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "본 논문은 사족 보행 로봇 팀의 협력 페이로드 운송을 위한 안전 필수 분산 NMPC(DNMPC) 프레임워크를 제시함. 이 접근법은 동적 결합 시스템을 모델링하고, 중앙 최적 제어 문제를 ADMM(Alternating Direction Method of Multipliers)을 통해 병렬적인 분산 NMPC 서브문제로 분해함. 그 결과, 페이로드 상태와 상호 작용 렌치에 대한 합의를 강제하며, 높은 차수 제어 장벽 함수(HOCBFs)를 이용한 안전 필수 장애물 회피가 가능함을 입증함. 중앙 집중식 방식 대비 평균 NLP 해결 시간을 최대 23% 단축하는 등 안전하고 견고한 운송 능력이 검증됨."
+  },
+  {
+    "title": "버퍼 제한 핸드오버 스테이션을 이용한 장기 다중 서브시스템 픽업 및 배송",
+    "original_title": "Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations",
+    "link": "https://arxiv.org/abs/2607.17724",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "다중 에이전트 픽업 및 배송(MAPD) 환경에서 페이로드 이송 시 발생하는 공유 스테이션의 Blocking 및 Starvation 문제를 다룸. 이에 Handover-Aware Reservation and Routing (HARR)이라는 온라인 제어기를 제안하며, 이는 공유 도크 예약 캘린더와 버퍼 점유율 예측을 활용하여 동작을 조정함. 시뮬레이션 결과, HARR은 기존 방식 대비 최대 77% 높은 처리량과 92% 낮은 백로그를 달성하며, 모듈형 다중 서브시스템 운송의 안정성 향상에 기여함을 입증함."
+  },
+  {
+    "title": "Seg2Grasp: 픽킹 환경에서의 견고한 모듈형 흡착 그리핑 연구",
+    "original_title": "Seg2Grasp: A Robust Modular Suction Grasping in Bin Picking",
+    "link": "https://arxiv.org/abs/2607.17757",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 종단간 학습 방식의 한계를 극복하기 위해, Seg2Grasp는 Segmentation(Transformer 기반 마스크 생성), Grasping, Classification(Mask-CLIP)의 3단계 모듈식 파이프라인으로 설계됨. 본 방법론은 RGB-D 이미지에서 정확한 객체 마스크를 생성하고 표면 법선 정보를 활용하는 등 다중 모듈 접근 방식을 채택함. 실제 실험 결과, Seg2Grasp는 기존 방식 대비 높은 성공률과 적응성을 보여 산업 현장 자동화 픽킹 분야에 강력한 대안으로 제시됨."
+  },
+  {
+    "title": "수어 생성(SLG)부터 휴머노이드 실행까지, 충돌 완화를 위한 시각-언어 기반 리타겟팅 기술 구현",
+    "original_title": "From Sign Language Generation to Humanoid Execution: Vision-Language Guided Retargeting with Collision Mitigation",
+    "link": "https://arxiv.org/abs/2607.17769",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존 SLG 시스템의 3D 동작은 휴머노이드 구동 과정에서 자가 교차 및 충돌을 일으켜 비실현적인 역기구학(IK) 솔루션을 야기하는 문제점을 제시함. 이에 본 논문은 이를 해결하기 위해 물리적으로 타당한 자세로 조정하는 volumetric SMPL-X 충돌 완화 모듈과, VLM을 활용하여 동작 오류를 감지하고 수정하는 vision-language-guided retargeting 알고리즘으로 구성된 시스템 프레임워크를 제안함. 연구 결과, 충돌 처리와 인식 기반의 정제(refinement)가 신뢰성 높은 휴머노이드 수어 구현에 필수적인 핵심 요소임을 입증함."
+  },
+  {
+    "title": "파지 인지 물체 자세를 반영한 수신자 중심 로봇-인간 핸드오버 시스템",
+    "original_title": "Receiver-Centered Robot-to-Human Handover with Grasp-Aware Object Orientation",
+    "link": "https://arxiv.org/abs/2607.17839",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "협업 로봇과 인간 간의 도구 인계 과정에서 발생하는 불편함을 해소하기 위해 수신자 중심의 적응형 핸드오버 시스템을 제안함. LLM 기반 의도 인식과 MediaPipe를 활용한 3D 손 추적을 통해 도구의 방향을 인체공학적으로 최적화하여 제시하는 방식임. 실험 결과, 본 적응형 시스템이 기존 정적 핸드오버 방식 대비 파지 지연 시간을 감소시키고, 상호작용의 유창성 및 예측 가능성 등 신뢰도 인식 향상에 효과적임을 입증함."
+  },
+  {
+    "title": "UMCP: 수하물 트롤리 포즈 추정을 위한 통합 다중 작업 협업 인식 네트워크",
+    "original_title": "UMCP: A Unified Multi-Task Collaborative Perception Network for Luggage Trolley Pose Estimation",
+    "link": "https://arxiv.org/abs/2607.17950",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇의 수하물 트롤리 수집을 위해 높은 정확도와 실시간 성능을 갖춘 비전 시스템의 구현이 요구됨. 기존 방법의 높은 추론 지연 시간 및 비용 문제를 해결하고자, 통합 다중 작업 협업 인식 네트워크(UMCP)를 제안함. UMCP는 YOLOv12 아키텍처 기반으로 트롤리 탐지, 키포인트 검출 및 방향 추정을 동시 수행하며, KL 발산 손실 및 특징 융합을 통해 정확도를 높였음. 실험 결과, 모델 복잡도와 계산 비용을 크게 줄이면서도 기존 방식 대비 경쟁력 있는 전반적 정확도를 입증함."
+  },
+  {
+    "title": "휴머노이드 VLA의 폐쇄 루프 구성: 검증 가능한 기동 조작을 위한 영속적 3D 객체 토큰",
+    "original_title": "Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation",
+    "link": "https://arxiv.org/abs/2607.18016",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "장기적인 휴머노이드 거동 조작에서 발생하는 객체 상태 이탈(object-state divergence) 문제를 해결하기 위해, 본 연구는 역할 지수화된 3D 객체 기록을 활용하는 '영속적 객체 토큰화(Persistent Object Tokenization, POT)'를 제안함. 이를 통해 구축된 POT-VLA는 객체 상태를 행동화하고 검증하는 폐쇄 루프 실행 시스템을 구현하며, 실제 Unitree G1 및 Being-0 기반 서비스 환경에서 현존 대비 높은 성공률을 기록함. 이는 영속적인 객체 중심 상태 정보가 검증 가능한 휴머노이드 VLA 실행에 핵심적인 추상화임을 입증함."
+  },
+  {
+    "title": "Isaac Sim 기반 실세계 전이: 사족보행 로봇을 위한 강화학습 보행 제어",
+    "original_title": "Isaac Sim-to-Real: Reinforcement Learning based Locomotion for Quadrupeds",
+    "link": "https://arxiv.org/abs/2607.18135",
+    "date": "2026-07-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "본 연구는 강화학습(RL)을 활용하여 사족보행 로봇의 전신 제어(whole-body control)가 가능한 보행 프레임워크를 제시함. Nvidia의 Isaac Sim과 Isaac Lab을 이용해 시뮬레이션에서 실제 환경으로의 전이(zero-shot sim-to-real policy)를 성공적으로 구현함. 실제 Unitree Go1 하드웨어 테스트 결과, 사족보행체의 통합 컨트롤러 수준의 속도 추적 성능을 보여주었으며, 큰 외란으로부터의 회복 능력이 뛰어나고 2.0 m/s의 선형 속도 달성이 가능함을 입증함."
+  },
+  {
     "title": "중국 로봇 기업들, \"'두뇌(Brain)'와 대규모 데이터 확보가 관건\"이라 토로함",
     "original_title": "China’s robot firms’ lament: if we only had a ‘brain’, and more data - South China Morning Post",
     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOFhlY2xTR29VU0JNbFFPUERHdjdfWTlKek1oeVhIcnRGMER3VldFbWFQWUJtNzRSSGtPSG1TUFd1UFNWT2JKR3VRVEEyMjluZ2dsdDNLczRVbE01SkxvQkFZYlgtZ05WcWV3a1RqTERMYk9aazJyYnRQR2Q1U0FVUHFCZDdLNUlacUdUVjMtVFREX1hqcnFQYTk1anJ5RHFNSlJPN2F3S2NjcTN1eHRhZdIBsAFBVV95cUxQOFhlY2xTR29VU0JNbFFPUERHdjdfWTlKek1oeVhIcnRGMER3VldFbWFQWUJtNzRSSGtPSG1TUFd1UFNWT2JKR3VRVEEyMjluZ2dsdDNLczRVbE01SkxvQkFZYlgtZ05WcWV3a1RqTERMYk9aazJyYnRQR2Q1U0FVUHFCZDdLNUlacUdUVjMtVFREX1hqcnFQYTk1anJ5RHFNSlJPN2F3S2NjcTN1eHRhZQ?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "Wing plans to bring drone deliveries to Memphis, New Orleans, Philadelphia, Phoenix, San Diego, San Francisco, and Salt Lake City.\nThe post Walmart, Wing add 7 markets in drone delivery expansion appeared first on The Robot Report."
-  },
-  {
-    "title": "Sharpa brings dexterous robot hands to Nvidia and Unitree humanoid reference design",
-    "original_title": "Sharpa brings dexterous robot hands to Nvidia and Unitree humanoid reference design",
-    "link": "https://roboticsandautomationnews.com/2026/06/09/sharpa-brings-dexterous-robot-hands-to-nvidia-and-unitree-humanoid-reference-design/102424/",
-    "date": "2026-06-09 18:51",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "Sharpa has announced that its Wave tactile robot hands have been integrated into the Unitree H2 Plus humanoid robot reference design, making it the first dexterous humanoid platform built on Nvidia’s Isaac GR00T development framework to feature the company’s tactile manipulation technology. The companies say the configuration is designed to help robotics developers and researchers […]"
-  },
-  {
-    "title": "Sharpa brings dexterous robot hands to Nvidia and Unitree humanoid reference design - Robotics & Automation News",
-    "original_title": "Sharpa brings dexterous robot hands to Nvidia and Unitree humanoid reference design - Robotics & Automation News",
-    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxONjNtdmpJeFN3ZzNHTzc5V3AtUTk2REJ0NzdNbExsRzJPZEZlbEFyQlBRaV9jVU5ES3B2QjBmWTlzajJGTFp4RHdaZE5pNTdTMnhfc3VwaFVyUmZpempQTXVkUjJIalVXVEQzOEsyZmdJdmRyM2wycEY3a3oyUkRROTFqbE5SaUJuekNZMi1aMGFxbFBVY2ZtTGZSWURtMk9xNUZyeVY3TWQya2FMbVFlSEQwemc1eVRxcXlNOTR3SVhGUjJuWUtvVUlTS0NVWTRfbU9tZEtBNA?oc=5",
-    "date": "2026-06-09 18:51",
-    "source": "Google News (China Hand/Sensor Startups - EN)",
-    "category": "hand",
-    "summary": "Sharpa brings dexterous robot hands to Nvidia and Unitree humanoid reference design  Robotics & Automation News"
-  },
-  {
-    "title": "Automation is Hiring Faster Than Schools Can Graduate Engineers",
-    "original_title": "Automation is Hiring Faster Than Schools Can Graduate Engineers",
-    "link": "https://roboticsandautomationnews.com/2026/06/09/automation-is-hiring-faster-than-schools-can-graduate-engineers/102421/",
-    "date": "2026-06-09 18:41",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Automation is no longer a future promise. It is a present-day hiring engine. Across factories, warehouses, energy grids, and research labs, companies are deploying robots and intelligent systems at a pace that demands a steady supply of skilled engineers. The trouble is simple to state and hard to solve. The machines are arriving faster than […]"
-  },
-  {
-    "title": "MIT researchers channel AI to turn hand gestures into robot training data",
-    "original_title": "MIT researchers channel AI to turn hand gestures into robot training data",
-    "link": "https://techxplore.com/news/2026-06-mit-channel-ai-gestures-robot.html",
-    "date": "2026-06-09 17:03",
-    "source": "Tech Xplore",
-    "category": "hand",
-    "summary": "Humanoid robots struggling with tasks like grasping a cup have a new teacher—a person wearing an ultrasound wristband that captures the movement of muscles, tendons and ligaments beneath the skin."
-  },
-  {
-    "title": "Mesoware raises $1.5 million funding to build AI-powered robots for manufacturing",
-    "original_title": "Mesoware raises $1.5 million funding to build AI-powered robots for manufacturing",
-    "link": "https://roboticsandautomationnews.com/2026/06/09/mesoware-raises-1-5-million-funding-to-build-ai-powered-robots-for-manufacturing/102416/",
-    "date": "2026-06-09 16:27",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Mesoware has announced $1.5 million to build the next chapter of AI-powered robotics solutions for automated manufacturing. The pre-seed round was led by Pillar VC. Joe Mattekatt, co-founder and CEO of Mesoware, says: “With hardware costs falling and AI advancing, the final hurdle in robotics is putting it all together at scale. “Mesoware is that […]"
-  },
-  {
-    "title": "Nebius and Nvidia launch Physical AI Living Lab for European robotics startups",
-    "original_title": "Nebius and Nvidia launch Physical AI Living Lab for European robotics startups",
-    "link": "https://roboticsandautomationnews.com/2026/06/09/nebius-and-nvidia-launch-physical-ai-living-lab-for-european-robotics-startups/102413/",
-    "date": "2026-06-09 16:13",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Nebius, the AI cloud company, has announced the Physical AI Living Lab, a six-month program that equips British and European robotics startups with Nvidia’s physical AI development tools and Nebius’s AI cloud infrastructure.  Physical AI depends on large-scale simulation, synthetic data, and accelerated compute that most early-stage robotics companies cannot assemble on their own. The […]"
-  },
-  {
-    "title": "Q&A: Riyadh Air CEO Tony Douglas on launching a new airline, expanding its fleet, and the future of air travel",
-    "original_title": "Q&A: Riyadh Air CEO Tony Douglas on launching a new airline, expanding its fleet, and the future of air travel",
-    "link": "https://roboticsandautomationnews.com/2026/06/09/qa-riyadh-air-ceo-tony-douglas-on-launching-a-new-airline-expanding-its-fleet-and-the-future-of-air-travel/102409/",
-    "date": "2026-06-09 15:39",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Three years after Saudi Arabia’s Crown Prince Mohammed bin Salman launched Riyadh Air, the airline is preparing to begin operations with the delivery of its first Boeing 787-9 Dreamliners and ambitious plans for rapid expansion. In an exclusive interview with Al Arabiya English aboard one of the airline’s newly delivered aircraft, Riyadh Air CEO Tony […]"
-  },
-  {
-    "title": "Güdel expands robotic grinding reach with integrated vertical and horizontal motion",
-    "original_title": "Güdel expands robotic grinding reach with integrated vertical and horizontal motion",
-    "link": "https://roboticsandautomationnews.com/2026/06/09/gudel-expands-robotic-grinding-reach-with-integrated-vertical-and-horizontal-motion/102405/",
-    "date": "2026-06-09 15:22",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Grinding and surface finishing of fabricated parts is one of the classic 3D (Dull, Dirty, Dangerous) applications that are perfect for robot automation. Unfortunately, automating the grinding of large fabrications means multiple robots and complex part repositioning, which add significant cost and extended cycle times while introducing new sources of variation in the process. At […]"
   }
 ]
