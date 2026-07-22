@@ -1,5 +1,23 @@
 [
   {
+    "title": "현업 적용 가능한 AI 에이전트 구축 최적화 방안",
+    "original_title": "Best Practices for Building AI Agents That Work in Production",
+    "link": "https://blog.bytebytego.com/p/best-practices-for-building-ai-agents",
+    "date": "2026-07-22 15:30",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "본 기사는 복잡한 이론적 지식을 소수의 핵심 실천 방안으로 재구성하여 제시함. 단순한 항목 나열 방식을 지양하고, 각 실천 방안의 배경 논리 및 작동 원리에 대한 깊이 있는 설명에 초점을 맞춘 내용임."
+  },
+  {
+    "title": "페이스북이 주요 정신 건강 소송의 중심이 된 방식",
+    "original_title": "How Facebook Became the Center of a Major Mental Health Lawsuit",
+    "link": "https://roboticsandautomationnews.com/2026/07/22/how-facebook-became-the-center-of-a-major-mental-health-lawsuit/103578/",
+    "date": "2026-07-22 15:19",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "청소년의 불안 및 우울증과 같은 정신 건강 문제는 학업 스트레스, 사회적 갈등, 가족 스트레스 등 다면적인 원인을 갖는 것이 일반적임. 페이스북과 같은 소셜 미디어 플랫폼은 이러한 복합적인 문제의 여러 요소 중 하나로 작용하는 측면이 있음. 따라서 원인 규명의 복잡성으로 인해, 피해를 주장하는 가정이 단일한 책임을 법적으로 입증하는 데 어려움이 발생하는 상황임."
+  },
+  {
     "title": "프로세스 최적화 도구: 적절한 방법론, 기법, 기술 선정 방법",
     "original_title": "Process Optimization tools: How to choose the right method, technique, and technology",
     "link": "https://roboticsandautomationnews.com/2026/07/22/process-optimization-tools-how-to-choose-the-right-method-technique-and-technology/103572/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.12105v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models inherit a shared synchronous clock from vision-language pretraining, processing every input at one rate. This is misaligned with physical interaction, where a high-frequency modality changes at hundreds of hertz, vision evolves more slowly, and language stays constant across an episode. A synchronous VLA oversamples slow modalities, undersamples fast ones, and caps action generation at the lowest effective frequency. We hypothesize that decoupling temporal processing per modality, letting each update and retain information at its own sensor rate, yields stronger representations and more robust control. We present DAM-VLA, which maintains per-modality latent buffers refreshed at sensor rates and read continuously by the action head, integrating new high-frequency modalities through gated cross-attention that leaves the pretrained backbone intact. Across seven contact-rich real-world manipulation tasks, DAM-VLA more than doubles the average success rate of the strongest synchronous baseline (95.2\\% vs.\\ 40.95\\%) while sustaining smooth, reactive 100\\,Hz control. Project website: \\href{https://intuitive-robots.github.io/DAM-VLA/}{intuitive-robots.github.io/DAM-VLA/}"
-  },
-  {
-    "title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
-    "original_title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
-    "link": "https://arxiv.org/abs/2606.12109",
-    "date": "2026-06-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.12109v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have demonstrated remarkable zero-shot generalization in robotic manipulation, yet the vast majority of pre-trained pipelines remain strictly confined to low-DoF parallel grippers. Adapting these rich semantic priors to high-DoF dexterous hands introduces a severe morphology gap, direct end-to-end joint fine-tuning inherently causes catastrophic forgetting of spatial reasoning and acute action manifold collapse due to data scarcity. In this paper, we present InDex, a novel, data-efficient adaptation framework rooted in cross-morphology semantic inheritance. Rather than discarding the pre-trained 1-DoF parallel grasp output, we repurpose it as a continuous, macroscopic virtual grasp intent proxy to sequentialize the control topology. We implement a two-stage decoupled learning architecture: the first stage parameter-efficiently aligns the VLA backbone to predict continuous arm trajectories and the scalar grasp intent; the second stage freezes this spatial backbone and leverages an intent-conditioned denoising diffusion head to decode fine-grained joint articulations for multi-fingered end-effectors. Extensive simulation benchmarks across a suite of multi-stage, contact-rich dexterous manipulation tasks demonstrate that InDex effectively masters intricate skills with minimal demonstration data, substantially outperforming monolithic baselines while preserving the robust spatial generalizability of the original VLA prior."
-  },
-  {
-    "title": "Intelligent Automation for Embodied Benchmark Construction: Pipelines, Embodiments, Simulators, and Trends",
-    "original_title": "Intelligent Automation for Embodied Benchmark Construction: Pipelines, Embodiments, Simulators, and Trends",
-    "link": "https://arxiv.org/abs/2606.12207",
-    "date": "2026-06-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.12207v1 Announce Type: new \nAbstract: Embodied intelligence now spans navigation, household assistance, manipulation, autonomous driving, aerial agents, and multimodal large-model control. This expansion has made benchmark construction a central bottleneck for reliable evaluation. Unlike static datasets, embodied benchmarks combine task specifications, environments, robot data, demonstrations, annotations, metrics, evaluation scripts, and release policies into a single evaluation system. This survey reviews the literature through a five-stage construction pipeline: requirement and task construction, data acquisition, data cleaning and annotation, benchmark suite generation and metric definition, and evaluation execution with diagnostic feedback. For each stage, the survey analyzes the transition from manual curation to traditional automation, foundation-model assistance, and agentic closed-loop workflows. It also compares qualitative construction costs across human labor, data and asset acquisition, compute and simulation, validation and debugging, governance and maintenance, and rework risk. The main conclusion is that automation does not simply reduce benchmark cost. Instead, it often shifts cost toward validation, auditability, version control, and long-term governance. Progress in embodied evaluation will therefore depend not only on larger benchmark suites, but also on construction pipelines that are diagnosable, auditable, and responsibly refreshable."
   }
 ]
