@@ -1,5 +1,14 @@
 [
   {
+    "title": "프로세스 최적화 도구: 적절한 방법론, 기법, 기술 선정 방법",
+    "original_title": "Process Optimization tools: How to choose the right method, technique, and technology",
+    "link": "https://roboticsandautomationnews.com/2026/07/22/process-optimization-tools-how-to-choose-the-right-method-technique-and-technology/103572/",
+    "date": "2026-07-22 14:57",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "조직의 프로세스 최적화 문제는 도구 부족이 아닌, 개선할 필요성을 정의하기 전에 도구를 선택하는 데서 기인하는 것이 일반적임. 단순히 워크플로우 소프트웨어 등을 도입하는 것보다, 문제의 근본 원인을 명확히 파악하거나 제거가 필요한 업무 절차를 먼저 식별하는 것이 핵심임. 따라서 기술 적용에 앞서 '무엇을 개선할지'에 대한 명확한 분석이 우선되어야 함."
+  },
+  {
     "title": "라이트휠, SimReadyGen 출시함",
     "original_title": "Lightwheel Launches SimReadyGen",
     "link": "https://humanoidroboticstechnology.com/industry-news/lightwheel-launches-simreadygen/",
@@ -340,6 +349,15 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "휴머노이드 수준의 접촉 기반 조작을 위해 느린 글로벌 컨텍스트를 제공하는 비전 정보와 빠른 로컬 다이내믹스를 포착하는 힘 센싱 데이터를 결합하는 새로운 접근 방식을 제시함. 본 연구에서는 Structural Slow-Fast Learning과 Virtual-target-based Representation Regularization이라는 메커니즘을 도입하여 비동기적인 시각 및 힘 토큰을 통합적으로 처리하는 통합 End-to-End 정책인 ImplicitRDP를 개발함. 실험 결과, ImplicitRDP는 접촉이 많은 환경의 다양한 태스크에서 기존의 비전 전용 또는 계층적 접근 방식 대비 뛰어난 반응성과 성공률을 달성하는 것으로 확인됨."
+  },
+  {
+    "title": "통합 월드 모델링을 위한 마스크된 시각적 액션",
+    "original_title": "Masked Visual Actions for Unified World Modeling",
+    "link": "https://arxiv.org/abs/2607.19343",
+    "date": "2026-07-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "비디오 모델이 로봇의 세계 모델링에 유용성을 제공하는 추세에 따라, 본 연구에서는 행동을 픽셀 공간에서 부분적으로 드러내는 'Masked Visual Actions'라는 새로운 제어 인터페이스를 제시함. 이 방법론은 모델을 저수준 로봇 행동에 대한 장면의 반응을 예측하는 전방 역학 모델(forward dynamics)로 기능하게 하며, 원하는 객체 움직임으로부터 로봇 행동을 복원하는 역추론 모델(inverse modeling) 역할까지 수행함. 실제 데이터와 시뮬레이션의 최소한의 예시만으로도 높은 시각적 충실도와 제어 가능성을 달성, 계획, 의사결정 등 다양한 후속 조작(downstream manipulation) 환경에 활용 가능함을 입증함."
   },
   {
     "title": "영국 기반 휴머노이드, 시리즈 A 투자 유치 1억 5,200만 달러 달성",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.12207v1 Announce Type: new \nAbstract: Embodied intelligence now spans navigation, household assistance, manipulation, autonomous driving, aerial agents, and multimodal large-model control. This expansion has made benchmark construction a central bottleneck for reliable evaluation. Unlike static datasets, embodied benchmarks combine task specifications, environments, robot data, demonstrations, annotations, metrics, evaluation scripts, and release policies into a single evaluation system. This survey reviews the literature through a five-stage construction pipeline: requirement and task construction, data acquisition, data cleaning and annotation, benchmark suite generation and metric definition, and evaluation execution with diagnostic feedback. For each stage, the survey analyzes the transition from manual curation to traditional automation, foundation-model assistance, and agentic closed-loop workflows. It also compares qualitative construction costs across human labor, data and asset acquisition, compute and simulation, validation and debugging, governance and maintenance, and rework risk. The main conclusion is that automation does not simply reduce benchmark cost. Instead, it often shifts cost toward validation, auditability, version control, and long-term governance. Progress in embodied evaluation will therefore depend not only on larger benchmark suites, but also on construction pipelines that are diagnosable, auditable, and responsibly refreshable."
-  },
-  {
-    "title": "DrivingAgent: Design and Scheduling Agents for Autonomous Driving Systems",
-    "original_title": "DrivingAgent: Design and Scheduling Agents for Autonomous Driving Systems",
-    "link": "https://arxiv.org/abs/2606.12236",
-    "date": "2026-06-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.12236v1 Announce Type: new \nAbstract: Many autonomous driving systems are increasingly incorporating foundation models to improve generalization and handle long-tail scenarios. However, this trend introduces two key challenges: (i) the manual and labor-intensive process of designing and integrating new models, and (ii) the lack of intelligent, dynamic scheduling mechanisms to meet strict real-time constraints. While Large Language Model (LLM)-based agents offer a promising avenue for automation, existing frameworks are ill-suited for autonomous driving. Specifically, they fail to distinguish between the fundamentally different requirements of system design and real-time scheduling, treat modules as opaque black boxes, and are not designed for continuous operation. To address these limitations, we propose DrivingAgent, a novel agent framework tailored to the dual challenges of autonomous driving system design and scheduling. In the design phase, DrivingAgent automates module development by interpreting system architecture, generating code, and validating modules via super-network training. In the scheduling phase, it employs a lightweight LLM trained with reinforcement learning to dynamically orchestrate system modules in real time, supported by a structured memory that integrates long-term storage with timestamped short-term context. Experimental results demonstrate that DrivingAgent achieves a superior speed--accuracy trade-off on both the nuScenes and Bench2Drive benchmarks."
-  },
-  {
-    "title": "CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy",
-    "original_title": "CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy",
-    "link": "https://arxiv.org/abs/2606.12352",
-    "date": "2026-06-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.12352v1 Announce Type: new \nAbstract: Multi-robot collaboration allows robots to efficiently take on a wide range of tasks, from moving a couch through a doorway to assembling structures on a construction site. However, achieving such coordination in mobile multi-robot settings remains challenging: centralized methods conditioned on the combined observations of a team scale poorly with team size, and decentralized methods that train one policy per robot often require explicit alignment procedures or information sharing at inference time to overcome partial observability. Our key insight is that the visuomotor priors of pretrained vision-language-action (VLA) models should enable reactive, decentralized collaboration from each robot's local observations alone, without these inference-time assumptions. We propose CHORUS, a framework that adapts a single VLA backbone to control diverse, multi-robot teams. At inference time, each robot runs an independent copy of CHORUS, conditioned only on its own observations and a robot-identifying prompt. In real-world experiments including mobile tape measurement, library book handovers, and laundry basket lifting, CHORUS achieves a 64% point improvement over decentralized, from-scratch models, improves reactivity to teammate behavior by 40% points, and outperforms centralized baselines. Together, these results show that a shared VLA backbone is capable of achieving decentralized multi-robot collaboration, without per-robot policies or inter-robot communication at inference."
   }
 ]
