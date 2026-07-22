@@ -27,6 +27,15 @@
     "summary": "중국의 로봇 제조업체 AgiBot이 홍콩의 급성장 시장에 상장을 추진함. 이는 AgiBot이 글로벌 시장 진출을 가속화하고 자본 시장을 통해 기업 가치를 극대화하려는 움직임으로 파악됨. 해당 공시는 기업의 해외 시장 공략 의지를 명확히 보여주고 있음."
   },
   {
+    "title": "중국 로봇 기업 AgiBot, 홍콩 시장 상장 목표 추진 임박",
+    "original_title": "Chinese robot maker AgiBot targets a listing in Hong Kong’s booming market - South China Morning Post",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObkJJQ0N6c1VSQ3ZLSVJBRlBpVGpLNHlTalNHcnY3M0FOYktld1dUSXdSd3RIS2xVSS1hemlaSFFJXzZtZHpmbzhOaWtrS3ZBaFN1TDVGT0FoMjZROUk0R0pPc3g2OHY4SUdOSnVzclJ5VERDRzBzdVdRYlFCSy1Pc1Vfb1RCSXhRQ005ekQwZW5pQkFKU1JwaXlTaFBIS254UDlxOGxNYlVLbU0xc3d1SFVFb2duTkdtSzViMdIBvAFBVV95cUxNVnk5LUluLUdxMExoc0ZFSkw1YXRqRWF1STZ1bWhoSDVaRlVJMTRfQkh6a1NvODhMVXlPS1JwdWdEd2dDRUxEeW5xZ3MzajdrZnQ2SnRTSWE1UDlnUFhUcnM3NjE1akIwR25WVzNST0Z3ckR5VVFxYlFHZ2o4RkRvWUJWcHlCVW56Z0FaUjl0NjZLSHFYZ0lzRFY4Z2xYclhKTUZ6SFFKNnBNR0RBWC1iREFZemNBakNHajd5Ng?oc=5",
+    "date": "2026-07-22 07:09",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "중국 로봇 제조사 AgiBot이 홍콩의 급성장하는 자본 시장 상장을 목표로 삼은 것으로 파악됨. 이는 중국 기술 기업들이 글로벌 자본 시장을 통해 자금 조달 및 해외 진출을 가속화하려는 움직임으로 분석됨. AgiBot의 상장 추진이 글로벌 로봇 산업 시장의 주목을 받고 있음."
+  },
+  {
     "title": "로봇에 촉각 지능을 부여하다: HBK와 Siléane, 고속 화장품 포장에 촉각 센싱 도입",
     "original_title": "When robots start to feel: HBK and Siléane bring tactile intelligence to high-speed cosmetics packaging",
     "link": "https://roboticsandautomationnews.com/2026/07/22/when-robots-start-to-feel-hbk-and-sileane-bring-tactile-intelligence-to-high-speed-cosmetics-packaging/103567/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.12372v1 Announce Type: new \nAbstract: Human-in-the-loop reinforcement learning (HiL-RL) has emerged as an effective paradigm for real-world robotic manipulation, enabling online policy improvement with human guidance. However, current HiL-RL frameworks remain intervention-intensive, relying on frequent human corrections to redirect the policy out of unproductive exploration, which incurs high labor cost and limits real-world scalability. To address this, we propose UniIntervene, an agentic intervention model that detects unproductive exploration and autonomously recovers the policy toward high-value states, taking over the bulk of interventions from human operators. Specifically, UniIntervene first performs future-conditioned action-value estimation, predicting the latent consequence of the current action and evaluating its induced value, which provides a more stable progress signal. Building on this, a temporal value-risk critic aggregates recent value dynamics and triggers intervention when the estimated value exhibits sustained stagnation or degradation. When intervention is required, UniIntervene retrieves a high-value recovery target from a memory of past intervention episodes and produces executable corrective actions through a goal-conditioned recovery policy. In this way, UniIntervene turns intervention from passive human correction into a value-aware recovery process for efficient real-world RL. Extensive experiments on diverse real-world manipulation tasks demonstrate that UniIntervene improves the average success rate by 8.6% while reducing human interventions by 57% relative to state-of-the-art HiL-RL baselines."
-  },
-  {
-    "title": "DIRECT: When and Where Should You Allocate Test-Time Compute in Embodied Planners?",
-    "original_title": "DIRECT: When and Where Should You Allocate Test-Time Compute in Embodied Planners?",
-    "link": "https://arxiv.org/abs/2606.12402",
-    "date": "2026-06-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.12402v1 Announce Type: new \nAbstract: Vision-Language Models (VLMs) are increasingly deployed as high-level planners for embodied agents, with an emerging strategy of scaling test-time compute to improve capability. However, we observe that doing so increases latency, token usage, and FLOPs while yielding uneven, often diminishing gains in downstream success, limiting where embodied agents can be deployed. We argue that choosing when and where to spend test-time compute is central to bringing frontier performance to the real world. We introduce DIRECT, a routing framework that uses multimodal scene context to allocate compute per prompt, improving the success--cost Pareto frontier over fixed model selection. Across three dominant scaling axes, namely chain-of-thought depth, model size, and memory history, our experiments on VLABench and RoboMME show that test-time compute is not a uniform lever: different axes yield qualitatively distinct capability gains. We validate these insights on a physical Franka arm in a DROID setup spanning zero-shot manipulation and long-horizon chaining, where our router matches or exceeds a stronger model's success rate at up to 65% lower average latency. Ultimately, our results show that naively scaling test-time compute is wasteful, and that DIRECT can provide frontier-level embodied planning in robotic systems at a fraction of the cost. Project page can be found at jadee-dao.github.io/direct/."
   }
 ]
