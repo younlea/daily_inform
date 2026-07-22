@@ -1,5 +1,77 @@
 [
   {
+    "title": "FARO: 실현 가능성 인지 로봇 동작 최적화",
+    "original_title": "FARO: Feasibility-Aware Robot Motion Optimization",
+    "link": "https://arxiv.org/abs/2607.18362",
+    "date": "2026-07-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "인간형 로코-매니퓰레이션의 빠른 동작 계획은 고차원적이고 하이브리드적인 특성으로 인해 난제임. 본 논문에서는 후보 접촉 시퀀스를 기반으로 신속한 실현 가능성 검사 및 동적 일관성 궤적 생성을 위한 중첩 kino-dynamic 프레임워크를 제안함. 이 프레임워크를 feasibility-guided tree search와 LLM 기반 접촉 계획 샘플링 전략에 결합하여 검색 효율성을 대폭 개선했으며, 생성된 궤적은 RL 기반 컨트롤러로 추적되어 실세계 로코-매니퓰레이션 시나리오 적용에 충분한 품질을 갖는 것으로 입증됨."
+  },
+  {
+    "title": "사족 보행 로커모션에 적용하는 토크 구동 강화 학습 연구",
+    "original_title": "Towards Torque-Driven Reinforcement Learning for Quadruped Locomotion",
+    "link": "https://arxiv.org/abs/2607.18365",
+    "date": "2026-07-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존 RL 로커모션 프레임워크의 위치 기반 및 상태 추정 한계를 극복하기 위해, 본 연구는 고토크 헤비급 사족보행 로봇을 위한 RL 토크 제어 프레임워크를 제시함. 이 프레임워크는 현재 속도 지식 없이 험지 이동 및 계단 등반이 가능하며, Nvidia Isaac Sim을 활용한 Unitree B1 시뮬레이션 결과 3.5 m/s의 고속 이동 성능 및 1.5 rad/s의 성능을 입증함."
+  },
+  {
+    "title": "오픈 앤트(Open Ant): 강화 학습 연구를 위한 로봇 플랫폼 제안",
+    "original_title": "The Open Ant: A Robot Platform for Reinforcement Learning Research",
+    "link": "https://arxiv.org/abs/2607.18488",
+    "date": "2026-07-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "강화 학습(RL) 연구의 주요 난제인 시뮬레이션과 실제 환경 간의 격차 해소를 위해 물리적 플랫폼인 Open Ant가 제안됨. 이 플랫폼은 Gymnasium Ant 환경을 구현한 것으로, SARSA($\\lambda$) 및 Soft Actor-Critic (SAC) 등 두 알고리즘 모두에서 약 한 시간 내에 보행 정책을 학습하는 것을 시연함. 또한, 시뮬레이션 학습 정책의 실제 전이 가능성을 입증하고, 전체 하드웨어와 소프트웨어를 오픈 소스로 공개하여 RL 연구자들이 로봇 실험을 효율적으로 통합할 수 있는 환경을 제공함."
+  },
+  {
+    "title": "ITNTN 환경 다중 UAV 항법을 위한 지능형 계층적 LLM 접근법",
+    "original_title": "Intelligent Multi-UAV Navigation in ITNTNs: A Hierarchical LLM Approach",
+    "link": "https://arxiv.org/abs/2607.18604",
+    "date": "2026-07-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고속 3D 항공 고속도로에서 UAV의 복잡한 항법 및 네트워크 핸드오버를 위해 기존 DRL과 LLM의 한계를 극복한 방식 제시함. 본 연구는 HAPS 기반 대규모 LLM을 이용해 전역적인 부하 분산을 관리하고, 개별 UAV의 경량 Edge-LLM이 지역적 전술 목표를 생성하여 빠른 DRL 컨트롤러를 안내하는 계층적 제어 프레임워크를 제안함. 시뮬레이션 결과, 이 에이전트형 아키텍처가 충돌률을 현저히 낮추고 시스템 처리량(Throughput)을 개선함을 입증함."
+  },
+  {
+    "title": "MVP-Tac: 로봇 보조 최소 침습 수술을 위한 소형 이중 모드 비전 및 광탄성 촉각 센서",
+    "original_title": "MVP-Tac: A Miniaturized Dual-Modal Vision and Photoelastic Tactile Sensor for Robot-Assisted Minimally Invasive Surgery",
+    "link": "https://arxiv.org/abs/2607.18660",
+    "date": "2026-07-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 보조 최소 침습 수술(RMIS)의 필수 요소인 시각적 피드백과 촉각 피드백의 동시 확보를 위해 MVP-Tac 센서가 개발됨. 이 센서는 광탄성 이미징을 활용하여 반사형 폴라스코프를 통해 시각 모드와 촉각 모드 전환을 가능하게 함. 실험적 검증 결과, 조직 모델에서 종양 분류 시 높은 정확도(97% 및 92%)를 입증하였으며, 제한된 공간에서의 시뮬레이션 테스트를 통해 RMIS에 필요한 실질적 촉각 기능 복원에 기여함."
+  },
+  {
+    "title": "자기조직지도 기반 휴머노이드 로봇 운동 원시 탐지 및 위상 인식 연구",
+    "original_title": "Motion Primitive Discovery in a Humanoid Robot via Self-Organising Maps for Phase Recognition",
+    "link": "https://arxiv.org/abs/2607.18737",
+    "date": "2026-07-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "인간-로봇 상호작용(HRI) 환경에서 액션 인식을 위한 2단계 아키텍처를 NICO 휴머노이드 로봇에 적용함. 이 아키텍처는 1단계에서 A-SOM과 H-SOM 두 개의 Self-Organising Maps를 통해 운동학적 표현을 학습하고, 2단계에서 Echo State Network(ESN)을 활용하여 SOM 활성화 궤적의 시간적 분석을 통해 온라인 운동 위상 인식을 수행함. 연구 결과, SOM 기반 궤적이 움직임의 주요 위상 구별 구조를 효과적으로 보존하는 것으로 나타나, 자기조직된 운동 표현을 통한 온라인 위상 인식의 실현 가능성을 입증함."
+  },
+  {
+    "title": "Koopman DCM: 보행 균형을 위한 데이터 기반 불안정 고유함수 적용",
+    "original_title": "Koopman DCM: Unstable Eigenfunctions as Data-driven Representations for Legged Balancing",
+    "link": "https://arxiv.org/abs/2607.18760",
+    "date": "2026-07-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "보행 균형 제어의 핵심 상태인 Divergent Components of Motion (DCMs)을 Koopman 고유함수로 일반화하는 방법론 제시됨. 기존의 제한적 모델을 넘어, 큰 고윳값을 지닌 불안정한 고유쌍을 탐색하여 실물 로봇 데이터 기반의 Koopman DCMs를 도출함. 이 결과는 실물 이족 보행 로봇의 레퍼런스 트래킹 성능을 개선하고, Model Predictive Control (MPC)와 결합하여 상태 기반 생존 가능성 제약 조건 제공에 활용 가능함."
+  },
+  {
+    "title": "낮은 이동성 작업을 위한 직렬 로봇의 트위스트 분해",
+    "original_title": "The Twist Decomposition of Serial Robots Under Lower-Mobility Tasks",
+    "link": "https://arxiv.org/abs/2607.18940",
+    "date": "2026-07-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 낮은 이동성 작업을 수행하는 직렬 매니퓰레이터를 위한 새로운 트위스트 분해 프레임워크를 제시함. 이 방법은 기존의 Jacobian null-space 투영에 의존하지 않고, 기하학적으로 정의된 트위스트 프로젝트를 통해 end-effector twist를 작업 관련 및 중복 요소로 분리함. 이러한 접근법은 작업 공간에서 관련 운동과 무관 운동을 직관적으로 구분하여, 로봇과 작업의 중복도를 자연스럽게 처리하는 간결한 역기구학(Inverse Kinematics) 체계를 구현하는 데 기여함."
+  },
+  {
     "title": "영국 기반 휴머노이드, 시리즈 A 투자 유치 1억 5,200만 달러 달성",
     "original_title": "U.K.-based Humanoid secures $152M in Series A funding",
     "link": "https://www.therobotreport.com/uk-based-humanoid-secures-152m-in-series-a-funding/",
@@ -17926,77 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "Having already produced and delivered more than 10,000 robots globally, with its products deployed in real-world industrial and infrastructure scenarios, GENISOM AI made its debut at ICRA 2026 during June 2-4 with a clear message: Embodied AI is moving from research to reality. At the event, the company demonstrated its GENISOM M1 and GENISOM L1 […]"
-  },
-  {
-    "title": "Best Managed Virtual Assistant Services for Startups in 2026",
-    "original_title": "Best Managed Virtual Assistant Services for Startups in 2026",
-    "link": "https://roboticsandautomationnews.com/2026/06/10/best-managed-virtual-assistant-services-startups/102431/",
-    "date": "2026-06-10 14:40",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Startup founders usually do not need more meetings. They need reliable help with admin, inbox cleanup, CRM follow-ups and front-desk coverage without adding another full-time salary. I wrote this for operators in robotics, automation and industrial tech who need coverage that can scale without creating more process debt. The picks below cover managed assistants, US […]"
-  },
-  {
-    "title": "How AI APIs are strengthening phishing detection and email security across industrial enterprises",
-    "original_title": "How AI APIs are strengthening phishing detection and email security across industrial enterprises",
-    "link": "https://roboticsandautomationnews.com/2026/06/10/how-ai-apis-are-strengthening-phishing-detection-and-email-security-across-industrial-enterprises/102428/",
-    "date": "2026-06-10 13:39",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Phishing is no longer just an IT problem. For manufacturers, robotics integrators, and logistics operators, a single well-crafted fraudulent email can halt a production line, divert a supplier payment, or compromise the credentials that control an automated warehouse. The threat is industrial now, and the defences need to catch up.  The expanding attack surface of […]"
-  },
-  {
-    "title": "Robotics will not have a clean Llama moment",
-    "original_title": "Robotics will not have a clean Llama moment",
-    "link": "https://www.therobotreport.com/robotics-will-not-have-a-clean-llama-moment/",
-    "date": "2026-06-10 13:13",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "The Llama moment in robotics will not be the day a policy becomes downloadable. It will be the day another team can take that policy, adapt it to its robot, release it into a customer process, and still know what failed weeks later when the line stops repeating.\nThe post Robotics will not have a clean Llama moment appeared first on The Robot Report."
-  },
-  {
-    "title": "Bike robot lands first unassisted front flip thanks to Ph.D. student",
-    "original_title": "Bike robot lands first unassisted front flip thanks to Ph.D. student",
-    "link": "https://techxplore.com/news/2026-06-bike-robot-unassisted-front-flip.html",
-    "date": "2026-06-10 13:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "A bicycle robot from the Robotics and AI Institute (RAI) in Cambridge, Massachusetts, has become the first to perform an unassisted acrobatic front flip. RAI calls the bicycle robot an ultra-mobility vehicle (UMV). It can reach a height of 3 feet (0.9 meters) and can jump from the floor onto a platform. The contributions of a Georgia Tech Ph.D. student helped make these feats possible through a robot control policy he developed."
-  },
-  {
-    "title": "China’s Lifelike Emotional Companion Bots Go on Sale - Sixth Tone",
-    "original_title": "China’s Lifelike Emotional Companion Bots Go on Sale - Sixth Tone",
-    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE55dWhMZ2pMYzdrSlJreFo1UGtPdGI1LTdOdHVadm1VWVBUZTQ1dUFVbUJieVE5TDFiakJtMXRfN0NpRFdnRkFNVEo5Z0VGQ0k?oc=5",
-    "date": "2026-06-10 12:41",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China’s Lifelike Emotional Companion Bots Go on Sale  Sixth Tone"
-  },
-  {
-    "title": "China’s Lifelike Emotional Companion Bots Go on Sale - Sixth Tone",
-    "original_title": "China’s Lifelike Emotional Companion Bots Go on Sale - Sixth Tone",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdkdPdlZIVGFfZVJxY1FxWnJvWFJnang5MGIzRkxFbVhvMmtYZTd3SmRBWjhXV1VvS1FFd0UtOVQtXzBPeERGcUUzVXc2Z25yYXZuZGZvSTFKWGFKUW94czJQWmRPQ1FEeVdxcnhEQWZESTFaV21yN2JzbkpyelRsd0NmZ3pTRkQwMlpRdTVJYVlfSmd1WUFPQVBXNVRQZHl3?oc=5",
-    "date": "2026-06-10 12:33",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China’s Lifelike Emotional Companion Bots Go on Sale  Sixth Tone"
-  },
-  {
-    "title": "NVIDIA selects Unitree's robot body but uses Sharpa's hand for the reference design. - KuCoin",
-    "original_title": "NVIDIA selects Unitree's robot body but uses Sharpa's hand for the reference design. - KuCoin",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbHpBTTkzZ1JCLWpJaDVxYnZFaXd5Q0xiSWJTc1FTUWdSX2xfVXREWG5jUjJCNzB0dHMwdHJRNWdJc1Fkb05yTDFoa0gwUHV4SUUyaHJGNDhRcmRKNVVhUGNiZ2l5RGxwbjJMV1lVckw1RFhrakozbDJiR1NUSEowdkk4dUZJTElVS0dCdzdqV0hWZnBmdmJSTDJtWHRJbTU5eXdBZEtEVjJNSlVTNm5CcXlwRQ?oc=5",
-    "date": "2026-06-10 11:52",
-    "source": "Google News (China Hand/Sensor Startups - EN)",
-    "category": "hand",
-    "summary": "NVIDIA selects Unitree's robot body but uses Sharpa's hand for the reference design.  KuCoin"
-  },
-  {
-    "title": "NVIDIA selected Unitree, but replaced Unitree's dexterous hands - 36 Kr",
-    "original_title": "NVIDIA selected Unitree, but replaced Unitree's dexterous hands - 36 Kr",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9MODZHenRUWjVVRVIxMlpaSGoyVHhsNXFjNVJuNkhrVUtUWk1SREVxUVNzNk96dUoxallZeXV3SDB3WlVCRXA1b2VBSnR0VkFWZ1pN?oc=5",
-    "date": "2026-06-10 11:24",
-    "source": "Google News (China Hand/Sensor Startups - EN)",
-    "category": "hand",
-    "summary": "NVIDIA selected Unitree, but replaced Unitree's dexterous hands  36 Kr"
   }
 ]
