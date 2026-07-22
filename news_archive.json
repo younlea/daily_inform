@@ -27,6 +27,15 @@
     "summary": "조직의 프로세스 최적화 문제는 도구 부족이 아닌, 개선할 필요성을 정의하기 전에 도구를 선택하는 데서 기인하는 것이 일반적임. 단순히 워크플로우 소프트웨어 등을 도입하는 것보다, 문제의 근본 원인을 명확히 파악하거나 제거가 필요한 업무 절차를 먼저 식별하는 것이 핵심임. 따라서 기술 적용에 앞서 '무엇을 개선할지'에 대한 명확한 분석이 우선되어야 함."
   },
   {
+    "title": "Ubtech Robotics, 휴머노이드 판매 2,200% 급증에도 불구하고 규제 환경 변화와 소비자 시장 역풍이 난제 요인으로 작용함",
+    "original_title": "Ubtech Robotics: Humanoid Sales Surge 2,200% But Regulatory Storm and Consumer Setbacks Weigh on Sha - Ad-hoc-news.de",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcXFPcGlYeFZQRFcteXVsZy1ZTi1oQVNZYUl5S2NKMGxha0xKRG9LeGNKMlRORzU1dWNfc2FuUkFfWHMwbEx2WjVzTmxtSGZEd19IMmpicGdoeVJXXzZlV3l1RllqR0p3SG9VN1gydml6UnNSd0dMSnlfaUJQTEgtU3I4Qloxbkd6ODhnQ21CRTlzZVhrbjJQM1RXZ2phVWNLTUxkcUQ1d2VlWnhHSndkVmdrSDlWc2NKZ0wtRlJ1YW9teVFIYV8tVERR?oc=5",
+    "date": "2026-07-22 14:55",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Ubtech Robotics의 휴머노이드 판매가 2,200%라는 폭발적인 성장세를 기록하며 시장의 주목을 받고 있음. 다만, 이러한 급성장세에도 불구하고 정부 규제 강화 등 제도적 불확실성과 소비자 시장의 역풍이 기업 운영의 주요 과제로 작용하고 있는 상황임."
+  },
+  {
     "title": "라이트휠, SimReadyGen 출시함",
     "original_title": "Lightwheel Launches SimReadyGen",
     "link": "https://humanoidroboticstechnology.com/industry-news/lightwheel-launches-simreadygen/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.12070v1 Announce Type: new \nAbstract: State space projections and decompositions have emerged as powerful tools to tackle the curse of dimensionality in high-dimensional, multi-robot motion planning problems. However, existing methods lack a unified framework which seamlessly handles combinations of projections (prioritization or task-space) and decompositions (parallel or decoupled subspaces). To fill this gap, we introduce fibration trees, which are trees consisting of state spaces as nodes and fibrations as edges, whereby a fibration models a projection from a higher-dimensional space to a lower-dimensional (or simplified) space. By modeling projections as fibrations, we unify sequential prioritization, parallel decomposition, and task-space projections under a single, coherent formalism. Building on this, we develop the rapidly-exploring random fibration trees (Fibration-RRT) planner, a sampling-based motion planner that generalizes strategies from quotient-space RRT (for sequential prioritizations) and discrete RRT (for parallel decompositions), while allowing the inclusion of task-space projections. Fibration-RRT operates on user-defined fibration trees and is proven to be probabilistically complete. To test the generality and efficiency of Fibration-RRT, we provide an open-source implementation and conduct experiments on 32 scenarios using multi robot teams with up to 96 degrees of freedom. Our results indicate that Fibration-RRT efficiently solves high-dimensional problems by exploiting user-defined fibration trees, thereby establishing fibration trees as a powerful, unified framework for multi-robot motion planning."
-  },
-  {
-    "title": "DAM-VLA: Decoupled Asynchronous Multimodal Vision Language Action model",
-    "original_title": "DAM-VLA: Decoupled Asynchronous Multimodal Vision Language Action model",
-    "link": "https://arxiv.org/abs/2606.12105",
-    "date": "2026-06-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.12105v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models inherit a shared synchronous clock from vision-language pretraining, processing every input at one rate. This is misaligned with physical interaction, where a high-frequency modality changes at hundreds of hertz, vision evolves more slowly, and language stays constant across an episode. A synchronous VLA oversamples slow modalities, undersamples fast ones, and caps action generation at the lowest effective frequency. We hypothesize that decoupling temporal processing per modality, letting each update and retain information at its own sensor rate, yields stronger representations and more robust control. We present DAM-VLA, which maintains per-modality latent buffers refreshed at sensor rates and read continuously by the action head, integrating new high-frequency modalities through gated cross-attention that leaves the pretrained backbone intact. Across seven contact-rich real-world manipulation tasks, DAM-VLA more than doubles the average success rate of the strongest synchronous baseline (95.2\\% vs.\\ 40.95\\%) while sustaining smooth, reactive 100\\,Hz control. Project website: \\href{https://intuitive-robots.github.io/DAM-VLA/}{intuitive-robots.github.io/DAM-VLA/}"
   }
 ]
