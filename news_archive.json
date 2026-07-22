@@ -1,5 +1,14 @@
 [
   {
+    "title": "라이트휠, SimReadyGen 출시함",
+    "original_title": "Lightwheel Launches SimReadyGen",
+    "link": "https://humanoidroboticstechnology.com/industry-news/lightwheel-launches-simreadygen/",
+    "date": "2026-07-22 10:35",
+    "source": "Humanoid Tech Blog",
+    "category": "humanoid",
+    "summary": "물리적 AI 구동을 위해 대규모의 고정밀 시뮬레이션 환경 구축이 필수적인 상황임. 이에 Lightwheel은 에이전트 기반의 시뮬레이션 생성 엔진인 SimReadyGen을 공개함. SimReadyGen은 OpenUSD 및 NVIDIA Omniverse Libraries를 기반으로 텍스트 프롬프트 입력만으로 시뮬레이션에 즉시 사용 가능한 구조적 에셋을 생성하는 것이 핵심 기능임."
+  },
+  {
     "title": "DEEP Robotics, WAIC 2026에서 로봇 제품 포트폴리오 공개",
     "original_title": "DEEP Robotics Showcases Robotics Product Lineup at WAIC 2026",
     "link": "https://humanoidroboticstechnology.com/industry-news/deep-robotics-showcases-robotics-product-lineup-at-waic-2026/",
@@ -322,6 +331,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "기존 VLA 정책의 단일 공간 최적화 방식이 미세한 오류 수정 신호를 압도하는 한계가 있었음. 이에 연구진은 VLA 행동 모델링을 거시적 궤적 앵커 예측과 실행 레벨의 잔여 정제(Residual Refinement)를 분리한 계층적 프레임워크인 AnchorRefine을 제안함. 본 방법은 결정 인식이 가능한 그리퍼 정제 메커니즘을 포함하며, LIBERO 및 CALVIN 등 다양한 환경에서 시뮬레이션 성공률 최대 7.8%, 실세계 성공률 최대 18% 향상을 달성했음이 입증됨."
+  },
+  {
+    "title": "ImplicitRDP: 구조적 Slow-Fast 학습 기반의 엔드투엔드 시각-힘 확산 정책",
+    "original_title": "ImplicitRDP: An End-to-End Visual-Force Diffusion Policy with Structural Slow-Fast Learning",
+    "link": "https://arxiv.org/abs/2512.10946",
+    "date": "2026-07-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "휴머노이드 수준의 접촉 기반 조작을 위해 느린 글로벌 컨텍스트를 제공하는 비전 정보와 빠른 로컬 다이내믹스를 포착하는 힘 센싱 데이터를 결합하는 새로운 접근 방식을 제시함. 본 연구에서는 Structural Slow-Fast Learning과 Virtual-target-based Representation Regularization이라는 메커니즘을 도입하여 비동기적인 시각 및 힘 토큰을 통합적으로 처리하는 통합 End-to-End 정책인 ImplicitRDP를 개발함. 실험 결과, ImplicitRDP는 접촉이 많은 환경의 다양한 태스크에서 기존의 비전 전용 또는 계층적 접근 방식 대비 뛰어난 반응성과 성공률을 달성하는 것으로 확인됨."
   },
   {
     "title": "영국 기반 휴머노이드, 시리즈 A 투자 유치 1억 5,200만 달러 달성",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.12352v1 Announce Type: new \nAbstract: Multi-robot collaboration allows robots to efficiently take on a wide range of tasks, from moving a couch through a doorway to assembling structures on a construction site. However, achieving such coordination in mobile multi-robot settings remains challenging: centralized methods conditioned on the combined observations of a team scale poorly with team size, and decentralized methods that train one policy per robot often require explicit alignment procedures or information sharing at inference time to overcome partial observability. Our key insight is that the visuomotor priors of pretrained vision-language-action (VLA) models should enable reactive, decentralized collaboration from each robot's local observations alone, without these inference-time assumptions. We propose CHORUS, a framework that adapts a single VLA backbone to control diverse, multi-robot teams. At inference time, each robot runs an independent copy of CHORUS, conditioned only on its own observations and a robot-identifying prompt. In real-world experiments including mobile tape measurement, library book handovers, and laundry basket lifting, CHORUS achieves a 64% point improvement over decentralized, from-scratch models, improves reactivity to teammate behavior by 40% points, and outperforms centralized baselines. Together, these results show that a shared VLA backbone is capable of achieving decentralized multi-robot collaboration, without per-robot policies or inter-robot communication at inference."
-  },
-  {
-    "title": "APT: Action Expert Pretraining Improves Instruction Generalization of Vision-Language-Action Policies",
-    "original_title": "APT: Action Expert Pretraining Improves Instruction Generalization of Vision-Language-Action Policies",
-    "link": "https://arxiv.org/abs/2606.12366",
-    "date": "2026-06-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.12366v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models that couple pretrained Vision-Language Models (VLMs) with continuous action experts have achieved strong manipulation performance, yet generalization to out-of-distribution (OOD) language instructions remains poor. A known challenge is the structural imbalance in VLA data, where language is far less diverse than visual and action content, making policies prone to visual shortcuts. While discrete-action methods mitigate this through vision-language co-training, continuous action experts lack such protection: they start from random initialization and learn entirely from imbalanced data, producing noisy gradients that corrupt the VLM and fail to exploit its language capability. We address this from a Bayesian perspective, factorizing the policy into a language-agnostic Vision-Action (VA) prior and a language-conditioned VLA likelihood, and propose APT, a two-stage training method emphasizing Action expert PreTraining. In Stage 1, the action expert is pretrained as a VA prior on vision-action pairs from a frozen VLM, bypassing the language imbalance. In Stage 2, language tokens are injected through a gated fusion mechanism that integrates VLM features while preserving the learned visuomotor prior. APT applies to mainstream VLA architectures, including the $\\pi$ and GR00T-style architectures. Comprehensive experiments validate that APT achieves consistent gains on unseen instructions and compositional tasks. Project Page: https://xukechun.github.io/papers/APT/"
-  },
-  {
-    "title": "UniIntervene: Agentic Intervention for Efficient Real-World Reinforcement Learning",
-    "original_title": "UniIntervene: Agentic Intervention for Efficient Real-World Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2606.12372",
-    "date": "2026-06-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.12372v1 Announce Type: new \nAbstract: Human-in-the-loop reinforcement learning (HiL-RL) has emerged as an effective paradigm for real-world robotic manipulation, enabling online policy improvement with human guidance. However, current HiL-RL frameworks remain intervention-intensive, relying on frequent human corrections to redirect the policy out of unproductive exploration, which incurs high labor cost and limits real-world scalability. To address this, we propose UniIntervene, an agentic intervention model that detects unproductive exploration and autonomously recovers the policy toward high-value states, taking over the bulk of interventions from human operators. Specifically, UniIntervene first performs future-conditioned action-value estimation, predicting the latent consequence of the current action and evaluating its induced value, which provides a more stable progress signal. Building on this, a temporal value-risk critic aggregates recent value dynamics and triggers intervention when the estimated value exhibits sustained stagnation or degradation. When intervention is required, UniIntervene retrieves a high-value recovery target from a memory of past intervention episodes and produces executable corrective actions through a goal-conditioned recovery policy. In this way, UniIntervene turns intervention from passive human correction into a value-aware recovery process for efficient real-world RL. Extensive experiments on diverse real-world manipulation tasks demonstrate that UniIntervene improves the average success rate by 8.6% while reducing human interventions by 57% relative to state-of-the-art HiL-RL baselines."
   }
 ]
