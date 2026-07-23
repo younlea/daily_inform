@@ -441,6 +441,15 @@
     "summary": "비디오 모델이 로봇의 세계 모델링에 유용성을 제공하는 추세에 따라, 본 연구에서는 행동을 픽셀 공간에서 부분적으로 드러내는 'Masked Visual Actions'라는 새로운 제어 인터페이스를 제시함. 이 방법론은 모델을 저수준 로봇 행동에 대한 장면의 반응을 예측하는 전방 역학 모델(forward dynamics)로 기능하게 하며, 원하는 객체 움직임으로부터 로봇 행동을 복원하는 역추론 모델(inverse modeling) 역할까지 수행함. 실제 데이터와 시뮬레이션의 최소한의 예시만으로도 높은 시각적 충실도와 제어 가능성을 달성, 계획, 의사결정 등 다양한 후속 조작(downstream manipulation) 환경에 활용 가능함을 입증함."
   },
   {
+    "title": "RoboInspector: LLM 기반 로봇 매니퓰레이션 정책 코드의 신뢰성 취약점 분석",
+    "original_title": "RoboInspector: Unveiling the Unreliability of Policy Code for LLM-enabled Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2508.21378",
+    "date": "2026-07-22 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "LLM 기반 로봇 매니퓰레이션은 정책 코드 생성을 통해 로봇 동작을 구현하나, 실제 환경의 복잡한 요구사항과 명령어 다양성으로 인해 코드 생성의 신뢰성 문제가 존재함. 이에 연구진은 정책 코드의 취약점을 분석하는 RoboInspector 파이프라인을 개발하여 매니퓰레이션 실패를 유발하는 네 가지 주요 오류 패턴을 규명함. 나아가 실패 정책 코드 피드백을 활용하는 정제 접근법을 제시하여, 시뮬레이션 및 실제 환경에서 LLM 기반 로봇 매니퓰레이션의 신뢰성을 최대 35%까지 개선했음을 입증함."
+  },
+  {
     "title": "영국 기반 휴머노이드, 시리즈 A 투자 유치 1억 5,200만 달러 달성",
     "original_title": "U.K.-based Humanoid secures $152M in Series A funding",
     "link": "https://www.therobotreport.com/uk-based-humanoid-secures-152m-in-series-a-funding/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.11826v1 Announce Type: new \nAbstract: Designing anthropomorphic dexterous robotic hands remains challenging as the design space straddles morphology, actuation, and sensing properties, and performance metrics span both task-dependent and task-agnostic. Existing optimization methods are often unstructured or consider only a single performance metric, limiting systematic comparison and targeted refinement. While the design considerations of the entire hand are significant, the individual finger properties play a key role in dexterity. By developing a robotic hand platform where fingers can be modularly integrated into a full teleoperated hand, we propose that optimizing the fingers can significantly improve overall hand performance. This approach enables rapid screening of different finger-level prototypes through a number of quantitative benchmarks before their integration into the hand for task-level validation. Candidate finger designs (incorporating variations in joint, bone, skin, and sensor placement) are assessed using both mechanism-oriented and task-relevant metrics, which establish a quantitative link between component design and full hand embodiment. The framework is validated through the development of an anthropomorphic robotic hand with optimized fingers, demonstrating how these fingers enable performance improvements across tasks, including multi-object grasping and light bulb screwing."
-  },
-  {
-    "title": "Critic Architecture Matters: Dual vs. Unified Critics for Humanoid Loco-Manipulation",
-    "original_title": "Critic Architecture Matters: Dual vs. Unified Critics for Humanoid Loco-Manipulation",
-    "link": "https://arxiv.org/abs/2606.11891",
-    "date": "2026-06-11 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.11891v1 Announce Type: new \nAbstract: Multi-objective reinforcement learning for humanoid robots must coordinate locomotion and manipulation within a single policy. A natural design choice is whether to use a single (unified) critic that estimates the combined value of all objectives, or separate (dual) critics with disjoint reward signals. We present a controlled comparison on the Unitree G1 humanoid (23 active DoF) in NVIDIA Isaac Lab, training loco-manipulation policies through a sequential curriculum spanning 13 levels from stationary reaching to walking with variable-orientation targets. In standardized evaluation, dual-critic policies reach targets 3.5$\\times$ faster (6.5 vs. 22.6 simulation steps), achieve 2$\\times$ higher throughput (14.3 vs. 7.0 validated reaches per 1,000 steps), and attain higher validated reach rates (65.2% vs. 53.8%) compared to the unified-critic policy. Notably, additional anti-gaming reward mechanisms provide no further improvement beyond the architectural change alone (60.9% vs. 65.2%). These results have direct implications for the emerging paradigm of RL fine-tuning of imitation-learned policies: when refining a pre-trained manipulation policy with RL, a unified critic risks suppressing the learned behavior through competing locomotion gradients. These findings demonstrate that critic architecture is a primary - and often overlooked - design choice in multi-objective humanoid RL, with greater impact than reward engineering on reaching efficiency."
   }
 ]
