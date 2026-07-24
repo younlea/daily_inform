@@ -1,5 +1,14 @@
 [
   {
+    "title": "Generalist의 GEN-1 파운데이션 모델, 다양한 로봇 엔드 이펙터 지원",
+    "original_title": "Generalist’s GEN-1 foundation model now supports a range of robot end effectors",
+    "link": "https://www.therobotreport.com/generalists-gen-1-foundation-model-now-supports-a-range-of-robot-end-effectors/",
+    "date": "2026-07-24 18:23",
+    "source": "The Robot Report",
+    "category": "hand",
+    "summary": "Generalist는 GEN-1을 새로운 핸드에 맞춰 훈련시키면서 단일 기반 모델이 여러 로봇에서 센서운동 정책(sensorimotor policies)을 학습할 수 있음을 입증함. 해당 성과는 로봇 시스템의 높은 범용성과 유연성을 확보했음을 의미하며, 로봇 공학 분야의 발전을 예고함."
+  },
+  {
     "title": "시계열 데이터베이스, 로봇 공학을 위한 실시간 데이터 확보 방안",
     "original_title": "How time series databases unlock real-time data for robotics",
     "link": "https://www.therobotreport.com/how-time-series-databases-unlock-real-time-data-for-robotics/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.12859v1 Announce Type: new \nAbstract: Aerial manipulation systems have long suffered from representation coupling in end-to-end control, as platform-level Unmanned Aerial Vehicle (UAV) movement and end-effector-level arm manipulation differ substantially in action scale, dynamics, and control objectives. In this paper, we propose AIR-VLA+, a flow matching action generation architecture specifically designed for aerial manipulation, featuring cascaded dual-action decoders and an asymmetric feature-level Mixture of Experts (MoE). We construct cascaded manipulation and movement decoders, allowing the UAV to unidirectionally observe the manipulator's intent during movement to achieve workflow coordination, while isolating the impact of UAV movement information backpropagation on arm manipulation stability. Addressing the characteristic that UAV movement is highly dependent on high-level semantics and responsible for task state transitions in aerial manipulation, we design an input feature enhancement module for the UAV movement decoder. This module introduces an implicit visual grasp projector to perceive the interaction state between the gripper and the object, and injects compressed global semantic features. Within the UAV movement decoder, we deploy an implicit MoE architecture, enabling different movement experts to spontaneously exhibit capacity inclinations for various task stages during training. Through dense soft blending computation on the feature manifold, the UAV movement is endowed with stronger task-stage adaptability. Experiments on the standardized AIR-VLA benchmark demonstrate that our method comprehensively surpasses all baselines with an overall average score of 48.0. The overall task completion score improves by 80.2\\% compared to the single-head $\\pi_{0.5}$ policy, effectively mitigating the heterogeneous coordinated control conflicts of composite robots."
-  },
-  {
-    "title": "Bounding Boxes as Goals: Language-Conditioned Grasping via Neuro-Symbolic Planning",
-    "original_title": "Bounding Boxes as Goals: Language-Conditioned Grasping via Neuro-Symbolic Planning",
-    "link": "https://arxiv.org/abs/2606.12910",
-    "date": "2026-06-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.12910v1 Announce Type: new \nAbstract: For robotics to be effectively integrated into household or industrial environments, machines must adapt to natural-language prompts in real time. Although Vision-Language Models (VLMs) have enabled zero-shot generalization in robot task and motion planning (TAMP), current state-of-the-art approaches often remain computationally \"heavyweight\" or require extensive training on thousands of demonstrations. We present GRASP (Grounded Reasoning and Symbolic Planning), a framework designed as a step toward open-vocabulary tabletop manipulation. Our approach leverages a pretrained VLM to translate natural-language queries into neuro-symbolic goal states, grounded in the physical world via a bounding-box detection pipeline. Unlike methods that rely on fixed color lists or hard-coded coordinates, GRASP enables robots to interpret abstract spatial concepts such as \"top shelf\" and execute tasks without additional fine-tuning. We achieve 73.3% overall success across 90 real-robot trials at three difficulty levels, requiring no task-specific training."
   }
 ]
