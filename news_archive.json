@@ -1,5 +1,77 @@
 [
   {
+    "title": "신호등 교차로의 교통 충돌 예측을 위한 HERMES: 이기종 엣지-관계형 다중 헤드 임베디드 SSM 어텐션",
+    "original_title": "HERMES: Heterogeneous Edge-Relational Multi-Head Embedded SSM Attention for Traffic Conflict Prediction at Signalized Intersections",
+    "link": "https://arxiv.org/abs/2607.20505",
+    "date": "2026-07-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "본 연구는 기존 방식의 다중 에이전트 장면 위험 표현 한계를 극복하고자, 교통 충돌 평가를 시간적 이기종 장면 그래프 분류로 정의함. 핵심 모델인 HERMES는 이기종 엣지-관계형 그래프 신경망(GNN)을 활용하여 차량과 보행자를 노드로, 상호작용을 관계별 엣지로 인코딩하고, SSM 기반의 다중 헤드 어텐션과 관계별 어텐션을 결합해 충돌 확률을 추정함. 대규모 트래픽 데이터셋 평가 결과, HERMES는 0.9898 수준의 AUC-ROC를 달성하며 기존 최강의 Transformer 기반 기준 모델 및 XGBoost보다 뛰어난 성능을 기록, 이기종 상호작용 구조 보존을 통한 안전 모니터링 가능성을 제시함."
+  },
+  {
+    "title": "비구조 환경을 위한 역량 기반 이동성 내비게이션 연구",
+    "original_title": "Towards Capability-Aware Traversability Navigation for Unstructured Environments",
+    "link": "https://arxiv.org/abs/2607.20679",
+    "date": "2026-07-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "로봇의 물리적 구동 능력(embodiment)을 고려하여 이동 가능성을 추정하는 CAT(Capability-Aware Traversability) 프레임워크가 제안됨. 이 프레임워크는 로봇의 물리적 한계를 공간 특징 공간에 직접 통합하고, SPADE 블록을 통해 로봇별 이동 가능 벡터를 지도에 적응적으로 결합함. 테스트 결과, CAT는 여러 성능 지표에서 기존 최고 성능을 크게 상회하였으며, 사족 보행 로봇 및 바퀴형 로봇 모두에 성공적으로 구현되어 임베디드 환경에서 역량 인식 장애물 회피 능력이 입증됨."
+  },
+  {
+    "title": "FELT: 시각 정보를 이용한 촉각 신호 생성 및 시각-촉각 조작 적용",
+    "original_title": "FELT: Generating Tactile Signals from Vision for Visuo-Tactile Manipulation",
+    "link": "https://arxiv.org/abs/2607.20683",
+    "date": "2026-07-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "촉각 데이터 확보의 어려움을 극복하기 위해, 본 연구는 RGB 관측 영상으로부터 손가락별 압력 촉각 이미지를 합성하는 학습 기반 프레임워크 FELT를 개발함. FELT는 비전 인코더와 쿼리 디코더를 사용하여 추론 시 RGB 데이터만으로 촉각 신호를 예측함으로써, 기존 비전 전용 데이터를 촉각 정보로 효과적으로 증강시키는 것이 가능해짐. 실험 결과, 해당 프레임워크가 적용된 정책이 접촉이 중요한 조작 과제에서 비전 단독 대비 개선된 성공률을 보임이 입증됨."
+  },
+  {
+    "title": "ZONDA: 다층 환경에서 동적 회피 기능을 갖춘 제로샷 객체 내비게이션",
+    "original_title": "ZONDA: Zero-shot Object Navigation with Dynamic Avoidance in Multi-floor Environments",
+    "link": "https://arxiv.org/abs/2607.21025",
+    "date": "2026-07-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존의 객체 내비게이션 방법이 정적이고 단일 층 환경에 국한되는 한계를 극복하기 위해, ZONDA(Zero-shot Object Navigation with Dynamic Avoidance) 프레임워크가 제안됨. ZONDA는 계단 이동을 지원하는 휴리스틱 다층 계획, Vision-Language Model을 활용한 다중 시점 목표 검증, 그리고 예측적 행동을 기반으로 하는 동적 보행자 회피 기능을 핵심 구성 요소로 통합함. 실제 Direct Drive Tech TITA 휴머노이드 로봇 및 HM3D 등 광범위한 시뮬레이션 환경에서 기존 대비 현저히 개선된 내비게이션 성능을 달성함."
+  },
+  {
+    "title": "GuidedAttention: 모방 학습을 활용한 OOD 강건 로봇 매니퓰레이션을 위한 해석 가능 및 교정 가능 시각적 주의",
+    "original_title": "GuidedAttention: Interpretable and Correctable Visual Attention for OOD-Robust Robot Manipulation via Imitation Learning",
+    "link": "https://arxiv.org/abs/2607.21049",
+    "date": "2026-07-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 End-to-end visuomotor 정책은 시각적 주의에 대한 인간의 이해나 교정 기회가 부족하다는 한계가 있음. 이에 본 연구는 해석 가능하고 교정 가능한 시각적 주의를 명시적 중간 표현으로 도입한 GuidedAttention 프레임워크를 제안함. 사용자가 초기 Keypoints를 검사 및 교정한 정보는 추적 모듈을 통해 자동으로 전파되며, 시뮬레이션 및 실제 환경에서 OOD 조건 하의 로봇 매니퓰레이션 성능을 효과적으로 개선함을 입증함."
+  },
+  {
+    "title": "로봇 두개골 절개술을 위한 인간 모방 프레임워크: 다중 모드 융합 및 적응형 궤적 조정 통합임",
+    "original_title": "Human-Inspired Framework for Robotic Craniotomy: Integrating Multimodal Fusion and Adaptive Trajectory Adjustment",
+    "link": "https://arxiv.org/abs/2607.21058",
+    "date": "2026-07-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 개방형 로봇 시스템의 한계를 극복하기 위해 인간 동작을 모방한 폐쇄 루프형 로봇 두개골 절개술 프레임워크를 제시함. 본 시스템은 다중 모드 센서 융합과 적응형 궤적 조정 기술을 통해 복잡한 두개골 구조에서 실시간으로 깊이 변화를 보정하며 돌파 지점을 감지함. 실험 결과, 97%의 높은 예측 정확도와 함께 신경막 손상 없이 안전하고 자율적인 두개골 절개술 수행이 가능함이 입증됨."
+  },
+  {
+    "title": "구성적 확산 및 에너지 기반 최적화를 통한 양팔 물체 재배치: 파지, 핸드오버, 회전 과정의 효율화",
+    "original_title": "Grasp, Handover, Rotate: Bimanual Object Reorientation via Compositional Diffusion and Energy-Based Optimization",
+    "link": "https://arxiv.org/abs/2607.21341",
+    "date": "2026-07-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "물체 재배치 과정(grasping, handover, reorient)에서 발생하는 충돌 및 운동학적 제약 문제를 해결하기 위해, 본 논문은 구성적 확산(Compositional Diffusion)과 에너지 기반 모델(EBM)을 결합한 BiCompoDiff 프레임워크를 제안함. 해당 방법론은 물체 잡기, 핸드오버, 재잡기 및 모션 계획을 다중 제약 조건 하에 공동으로 최적화함. 시뮬레이션 및 실제 환경 테스트를 통해 기존 방식 대비 높은 성공률과 매끄러운 궤적을 확보했으며, 효과적인 sim-to-real 전이 성능까지 검증함."
+  },
+  {
+    "title": "OLIVE: 효율적 적응 외골격 시스템을 위한 온라인 저랭크 증분 학습 기술",
+    "original_title": "OLIVE: Online Low-Rank Incremental Learning for Efficient Adaptive Exoskeletons",
+    "link": "https://arxiv.org/abs/2606.05234",
+    "date": "2026-07-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "OLIVE는 정적인 게이트 폴리시 기반 외골격 제어의 한계를 극복하는 온라인 적응 프레임워크임. 저랭크 잔차 분해(low-rank residual form)를 활용하여 파라미터 효율성을 극대화하고, EMG, IMU 등 생체 센서 피드백만을 기반으로 사용자에게 맞춘 지속적인 개인화 제어가 가능함. 특히 지형의 복잡도에 따라 업데이트 차원을 동적으로 조절하여 평지부터 험지까지 광범위한 환경에서 높은 수준의 보행 매끄러움 및 안정성 개선을 입증함."
+  },
+  {
     "title": "홀리데이 로보틱스, 자사 'FRIDAY' 휠형 휴머노이드 개발을 위해 1억 5백만 달러 유치함",
     "original_title": "Holiday Robotics raises $105M for its FRIDAY wheeled humanoid",
     "link": "https://www.therobotreport.com/holiday-robotics-raises-105m-wheeled-humanoid-friday/",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Humanoid robots enter mass market  China Daily - Global Edition"
-  },
-  {
-    "title": "Humanoid robots enter mass market - ecns.cn",
-    "original_title": "Humanoid robots enter mass market - ecns.cn",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1pSUJETkVQZ2p2dUEyM3lPZEl6VktnZXFaUTdLQ3RHQldnX3JZVE1JYTNPY1JEd3J1bk9KMFRfa0lpV3I0Vk14Z3VCVjlUOEVSMkZNam15NFI2TFpOdGlyMmlfRURybE9uYjZoVTEzMW15Ukl3X0E?oc=5",
-    "date": "2026-06-12 00:53",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Humanoid robots enter mass market  ecns.cn"
-  },
-  {
-    "title": "Humanoid robots enter mass market - China Daily",
-    "original_title": "Humanoid robots enter mass market - China Daily",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8yV3RteGcwRG8tQWd1YUltQVhIclo1LUpEbGx5WjRkekNQTVJkOG52bWh0eFJZSEZsTTBKNldnek4wM3hFVUpfVElaOTJDU0cyNE5NNktGSmZhMl8xZGpXOWwxVXRDTWRUblduNG4xMGl6d0ZRWDVXakNYOUxNQQ?oc=5",
-    "date": "2026-06-11 23:19",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Humanoid robots enter mass market  China Daily"
-  },
-  {
-    "title": "Tianjin develops sensors for embodied AI - The Star",
-    "original_title": "Tianjin develops sensors for embodied AI - The Star",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQlNNVzZXaHBUaG5nR3VkM1VOay1BRW1FOXU2cTNOdFRUWnprQ3J0bk55QkxUbEpuRnB6R0xVOHRNN0I0OHNHZGYxNmlESGJiTjNFaU5LSWl2MUZ5Rmp5NlFEQlljbjAzS0VhaUtYTUJPVDhfYnJhWlhxbVdNZkZ3S2xIVjdTR3FnQl9WRWpZV09HN2NmbjBKWVhEOEhKY0dES1k4?oc=5",
-    "date": "2026-06-11 23:04",
-    "source": "Google News (China Hand/Sensor Startups - EN)",
-    "category": "hand",
-    "summary": "Tianjin develops sensors for embodied AI  The Star"
-  },
-  {
-    "title": "Hello Robot is recognized by World Economic Forum as a tech pioneer",
-    "original_title": "Hello Robot is recognized by World Economic Forum as a tech pioneer",
-    "link": "https://www.therobotreport.com/hello-robot-is-recognized-by-world-economic-forum-as-a-tech-pioneer/",
-    "date": "2026-06-11 21:24",
-    "source": "The Robot Report",
-    "category": "hand",
-    "summary": "The World Economic Forum has honored Hello Robot, whose Stretch system provides mobile manipulation to older adults and people with disabilities.\nThe post Hello Robot is recognized by World Economic Forum as a tech pioneer appeared first on The Robot Report."
-  },
-  {
-    "title": "NASA robotic tech demonstration will advance prototype gamma-ray detectors",
-    "original_title": "NASA robotic tech demonstration will advance prototype gamma-ray detectors",
-    "link": "https://techxplore.com/news/2026-06-nasa-robotic-tech-advance-prototype.html",
-    "date": "2026-06-11 21:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "A new type of gamma-ray sensor developed by NASA, called AstroPix, will take part in a robotic arm demonstration on the agency's upcoming Fly Foundational Robots mission, set to launch in late 2027."
-  },
-  {
-    "title": "Pemba, a Climbing Robot, Summits Chimborazo and Wants To Go To Everest - Explorersweb »",
-    "original_title": "Pemba, a Climbing Robot, Summits Chimborazo and Wants To Go To Everest - Explorersweb »",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZGZ2NmpxVEtqLXF3WHlEQ2VxZDduMFk2eFgtcW1sZlZsejhlX1pEMTRPaE1QdjRZa0dCVjZWdExVazA4YWNnVFdZUlFETUxjWkZMRVItS29FNUw3LVQ4Wk0wMVBLVkVxYnZESHdjSjBSemcyRU03ZFlyakw3cUlWdlV0cEp1TzNhcFJSSVR5QWVnbHVOcURxbjl3?oc=5",
-    "date": "2026-06-11 16:43",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Pemba, a Climbing Robot, Summits Chimborazo and Wants To Go To Everest  Explorersweb »"
-  },
-  {
-    "title": "Can Pepper the robot be a good playmate?",
-    "original_title": "Can Pepper the robot be a good playmate?",
-    "link": "https://techxplore.com/news/2026-06-pepper-robot-good-playmate.html",
-    "date": "2026-06-11 16:00",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "What's it like to play a physical game with or against a robot that both looks and behaves like a person? That's what NTNU researchers wanted to find out when they conducted a controlled laboratory experiment with Pepper, a social robot designed to interact with humans."
-  },
-  {
-    "title": "Must- Know Deployment Strategies: From Big-Bang to Progressive Delivery",
-    "original_title": "Must- Know Deployment Strategies: From Big-Bang to Progressive Delivery",
-    "link": "https://blog.bytebytego.com/p/must-know-deployment-strategies-from",
-    "date": "2026-06-11 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "In this article, we’ll go through the main deployment strategies used in production today, looking at how each one works, what it costs, and when it makes sense to use."
   }
 ]
