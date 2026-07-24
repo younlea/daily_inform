@@ -324,6 +324,15 @@
     "summary": "기존 대규모 모델의 한계를 극복하기 위해, 본 연구는 내비게이션 작업을 분석적 기하학 구조와 세 개의 소형 학습 모듈로 분해하는 모델을 제시함. 이 시스템은 총 22.7M 중 단 0.58M의 학습 매개변수만을 사용하여 6060점 목표 에피소드 및 60개 환경의 내비게이션 작업에서 최첨단 모델(SOTA)급 성능에 근접했음. 또한, 매개변수 효율성 및 10Hz 이상의 고속 추론 속도를 달성하며, 센서 손상 시에도 투명하고 분석적으로 오류를 수정할 수 있는 높은 강건성을 확보함."
   },
   {
+    "title": "VPWEM: 작업 및 에피소드 기억을 활용한 비마르코프 시각-운동 정책",
+    "original_title": "VPWEM: Non-Markovian Visuomotor Policy with Working and Episodic Memory",
+    "link": "https://arxiv.org/abs/2603.04910",
+    "date": "2026-07-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 제어에서 장기 기억이 요구되는 비마르코프 태스크의 근본적인 한계를 극복하기 위해 작업 메모리 및 에피소드 기억을 통합한 VPWEM을 제안함. VPWEM은 슬라이딩 윈도우 기반의 단기 작업 메모리와 트랜스포머 기반의 에피소드 기억 압축기를 결합하여 장단기 경험 정보를 효과적으로 처리하는 것이 특징임. 실험 결과, 해당 모델은 MIKASA 및 MoMaRT 등 메모리 집약적인 조작(manipulation) 태스크에서 기존 최신 모델 대비 20% 이상의 성능 향상을 입증함."
+  },
+  {
     "title": "홀리데이 로보틱스, 자사 'FRIDAY' 휠형 휴머노이드 개발을 위해 1억 5백만 달러 유치함",
     "original_title": "Holiday Robotics raises $105M for its FRIDAY wheeled humanoid",
     "link": "https://www.therobotreport.com/holiday-robotics-raises-105m-wheeled-humanoid-friday/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.12814v1 Announce Type: new \nAbstract: Recent reinforcement learning approaches have shown great promise in improving humanoid motion tracking performance and achieving fall recovery under disturbances. However, most existing works treat motion tracking and fall recovery as different tasks and require multi-stage training with specialized recovery rewards and/or separate recovery policies. Moreover, existing reinforcement learning-based methods often terminate training episodes immediately after severe tracking failures, limiting recovery-oriented exploration in unstable or fallen states. To address the above issues, we propose Stubborn, a streamlined and unified reinforcement learning framework to achieve robust humanoid motion tracking and fall recovery. Specifically, Stubborn uses an asymmetric Actor-Critic architecture and consists of three major components. First, a yaw-aligned tracking representation is adopted to reduce sensitivity to global drift and heading disturbances while preserving gravity-related balance information. Second, we introduce a Bernoulli-based probabilistic termination mechanism that enables the policy to encourage exploration of fall-recovery behaviors under varying failure modes. Third, we propose a probabilistic termination and tracking-error-driven strategy that dynamically reshapes the sampling distribution based on tracking performance, increasing the training efficiency for difficult motion segments and unstable states. Extensive comparisons with SOTA methods and ablation studies show that Stubborn achieved competitive performance, and the proposed probabilistic termination mechanism and adaptive sampling strategy contributed to the performance and robustness gains. For real-world demonstrations, please refer to https://aislab-sustech.github.io/Stubborn/."
-  },
-  {
-    "title": "AIR-VLA+: Decoupling Movement and Manipulation via Cascaded Dual-Action Decoders with Asymmetric MoE for Aerial Robots",
-    "original_title": "AIR-VLA+: Decoupling Movement and Manipulation via Cascaded Dual-Action Decoders with Asymmetric MoE for Aerial Robots",
-    "link": "https://arxiv.org/abs/2606.12859",
-    "date": "2026-06-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.12859v1 Announce Type: new \nAbstract: Aerial manipulation systems have long suffered from representation coupling in end-to-end control, as platform-level Unmanned Aerial Vehicle (UAV) movement and end-effector-level arm manipulation differ substantially in action scale, dynamics, and control objectives. In this paper, we propose AIR-VLA+, a flow matching action generation architecture specifically designed for aerial manipulation, featuring cascaded dual-action decoders and an asymmetric feature-level Mixture of Experts (MoE). We construct cascaded manipulation and movement decoders, allowing the UAV to unidirectionally observe the manipulator's intent during movement to achieve workflow coordination, while isolating the impact of UAV movement information backpropagation on arm manipulation stability. Addressing the characteristic that UAV movement is highly dependent on high-level semantics and responsible for task state transitions in aerial manipulation, we design an input feature enhancement module for the UAV movement decoder. This module introduces an implicit visual grasp projector to perceive the interaction state between the gripper and the object, and injects compressed global semantic features. Within the UAV movement decoder, we deploy an implicit MoE architecture, enabling different movement experts to spontaneously exhibit capacity inclinations for various task stages during training. Through dense soft blending computation on the feature manifold, the UAV movement is endowed with stronger task-stage adaptability. Experiments on the standardized AIR-VLA benchmark demonstrate that our method comprehensively surpasses all baselines with an overall average score of 48.0. The overall task completion score improves by 80.2\\% compared to the single-head $\\pi_{0.5}$ policy, effectively mitigating the heterogeneous coordinated control conflicts of composite robots."
   }
 ]
