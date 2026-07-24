@@ -306,6 +306,15 @@
     "summary": "로봇이 다양한 지침을 수행하기 위해서는 조합적 일반화가 필수적이나, 기존 정책들은 언어적 지침을 해석할 때 특정 요인에 과도하게 의존하는 '편향(Bias)' 문제가 있음. 연구진은 진단 프레임워크를 통해 색상, 객체, 동사 등 개별 '지시 요인(instruction factors)'의 편향도를 측정하고, 이를 바탕으로 학습이 부족한 요인(예: 동사, 크기)에 데이터 수집 예산을 재분배하는 전략을 제시함. 이 편향 인식 기반의 데이터 수집 전략은 시뮬레이션 및 실제 로봇 환경에서 기존 대비 월등히 높은 샘플 효율성과 일반화 성능을 달성함."
   },
   {
+    "title": "0.58M 매개변수만으로 구현한 효율적인 내비게이션 학습 기법",
+    "original_title": "Learning to Navigate Efficiently with Only 0.58M Trainable Parameters",
+    "link": "https://arxiv.org/abs/2607.11029",
+    "date": "2026-07-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 대규모 모델의 한계를 극복하기 위해, 본 연구는 내비게이션 작업을 분석적 기하학 구조와 세 개의 소형 학습 모듈로 분해하는 모델을 제시함. 이 시스템은 총 22.7M 중 단 0.58M의 학습 매개변수만을 사용하여 6060점 목표 에피소드 및 60개 환경의 내비게이션 작업에서 최첨단 모델(SOTA)급 성능에 근접했음. 또한, 매개변수 효율성 및 10Hz 이상의 고속 추론 속도를 달성하며, 센서 손상 시에도 투명하고 분석적으로 오류를 수정할 수 있는 높은 강건성을 확보함."
+  },
+  {
     "title": "홀리데이 로보틱스, 자사 'FRIDAY' 휠형 휴머노이드 개발을 위해 1억 5백만 달러 유치함",
     "original_title": "Holiday Robotics raises $105M for its FRIDAY wheeled humanoid",
     "link": "https://www.therobotreport.com/holiday-robotics-raises-105m-wheeled-humanoid-friday/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.12910v1 Announce Type: new \nAbstract: For robotics to be effectively integrated into household or industrial environments, machines must adapt to natural-language prompts in real time. Although Vision-Language Models (VLMs) have enabled zero-shot generalization in robot task and motion planning (TAMP), current state-of-the-art approaches often remain computationally \"heavyweight\" or require extensive training on thousands of demonstrations. We present GRASP (Grounded Reasoning and Symbolic Planning), a framework designed as a step toward open-vocabulary tabletop manipulation. Our approach leverages a pretrained VLM to translate natural-language queries into neuro-symbolic goal states, grounded in the physical world via a bounding-box detection pipeline. Unlike methods that rely on fixed color lists or hard-coded coordinates, GRASP enables robots to interpret abstract spatial concepts such as \"top shelf\" and execute tasks without additional fine-tuning. We achieve 73.3% overall success across 90 real-robot trials at three difficulty levels, requiring no task-specific training."
-  },
-  {
-    "title": "An Embodied Simulation Platform, Benchmark, and Data-Efficient Augmentation Framework for Wet-Lab Robotics",
-    "original_title": "An Embodied Simulation Platform, Benchmark, and Data-Efficient Augmentation Framework for Wet-Lab Robotics",
-    "link": "https://arxiv.org/abs/2606.12936",
-    "date": "2026-06-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.12936v1 Announce Type: new \nAbstract: Wet-lab robots can improve the reproducibility, throughput, and safety of biomedical experiments, but scaling their learning requires customizable simulators for safe and reproducible task generation, open editable laboratory assets, and efficient pipelines that turn limited demonstrations into usable training data. We present Pipette, an embodied simulation platform, benchmark, and data-efficient augmentation framework for wet-lab robot learning. Pipette releases over 43 open-source and re-editable wet-lab assets, together with an extensible asset-building pipeline. A key component of Pipette is its simulation-based data augmentation pipeline, replaying human demonstrations in simulation, applies lighting, camera, speed, and action perturbations, and filters generated episodes with automatic task success checks, rapidly expanding usable training data from limited manual demonstrations. We further introduce an 11-task wet-lab embodied benchmark covering sample handling, culture-ware manipulation, device operation, and precision placement. With only 30 demonstrations per task, ACT achieves 65.5% average success rate, while simulation augmentation improves SmolVLA from 44.1% to 74.7% and {\\pi}0 from 40.4% to 46.5%, validating the effectiveness of Pipette for data-efficient VLA training and evaluation. Pipette also supports natural-language-driven scene construction and task registration, lowering the barrier for non-expert users to define new wet-lab robotic tasks."
   }
 ]
