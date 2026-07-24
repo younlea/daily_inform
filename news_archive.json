@@ -333,6 +333,15 @@
     "summary": "로봇 제어에서 장기 기억이 요구되는 비마르코프 태스크의 근본적인 한계를 극복하기 위해 작업 메모리 및 에피소드 기억을 통합한 VPWEM을 제안함. VPWEM은 슬라이딩 윈도우 기반의 단기 작업 메모리와 트랜스포머 기반의 에피소드 기억 압축기를 결합하여 장단기 경험 정보를 효과적으로 처리하는 것이 특징임. 실험 결과, 해당 모델은 MIKASA 및 MoMaRT 등 메모리 집약적인 조작(manipulation) 태스크에서 기존 최신 모델 대비 20% 이상의 성능 향상을 입증함."
   },
   {
+    "title": "임피던스 제어 기반 정밀 삽입을 위한 궤적 편집을 활용한 힘 인지 잔여 DAgger 구현",
+    "original_title": "Force-Aware Residual DAgger via Trajectory Editing for Precision Insertion with Impedance Control",
+    "link": "https://arxiv.org/abs/2603.04038",
+    "date": "2026-07-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 Imitation Learning이 가진 공변량 변화(covariate shift) 문제를 해결하고자, 궤적 편집(Trajectory Editing) 기반의 Force-Aware Residual DAgger(TER-DAgger) 프레임워크를 제시함. 이는 최적화 기반 잔여 정책 학습과 힘 인지 고장 예측 메커니즘을 결합하여, 전문가의 지속적인 모니터링 필요성을 크게 낮추고 Cartesian impedance control 내에서 안전성을 확보함. 실시간 시뮬레이션 및 실제 정밀 삽입 태스크 실험을 통해 TER-DAgger가 기존 방식 대비 평균 성공률을 37% 이상 향상시키며 접촉 기반 매니퓰레이션의 확장성을 입증함."
+  },
+  {
     "title": "홀리데이 로보틱스, 자사 'FRIDAY' 휠형 휴머노이드 개발을 위해 1억 5백만 달러 유치함",
     "original_title": "Holiday Robotics raises $105M for its FRIDAY wheeled humanoid",
     "link": "https://www.therobotreport.com/holiday-robotics-raises-105m-wheeled-humanoid-friday/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.12759v1 Announce Type: new \nAbstract: Explicit 3D representations are attractive for manipulation because they expose object shape, workspace geometry, and robot-object relations in metric coordinates. However, sparse 3D encoders are often learned through downstream task objectives, tying the representation to a particular data distribution, policy architecture, and action parameterization. We introduce Sparse2Act, an observation-action alignment framework for pretraining sparse point-cloud encoders. The key idea is to use task-space end-effector actions as geometric supervision: masked sparse 3D tokens are trained to organize scene features around the workspace motion paired with the observation. After pretraining, only the encoder initialization is reused by downstream policies, allowing them to retain their own architectures and action spaces, including joint-space commands. On the LIBERO-10 benchmark, our method achieves 86.9% average success after 500 fine-tuning steps. The same pretrained encoder supports LIBERO-to-Meta-World cross-domain transfer, achieving 73.4% average success on the Meta-World-5 benchmark. Ablations on the objective and decoder capacity show that the gains come from the masked action-alignment signal and remain useful across downstream action decoders. In real-world experiments, simulation pretraining followed by limited real-data fine-tuning achieves an average success rate of 72.5% across four tasks, demonstrating effective sim-to-real transfer. These results suggest that robot actions can provide compact geometric supervision for reusable sparse 3D representations."
-  },
-  {
-    "title": "Stubborn: A Streamlined and Unified Reinforcement Learning Framework for Robust Motion Tracking and Fall Recovery for Humanoids",
-    "original_title": "Stubborn: A Streamlined and Unified Reinforcement Learning Framework for Robust Motion Tracking and Fall Recovery for Humanoids",
-    "link": "https://arxiv.org/abs/2606.12814",
-    "date": "2026-06-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.12814v1 Announce Type: new \nAbstract: Recent reinforcement learning approaches have shown great promise in improving humanoid motion tracking performance and achieving fall recovery under disturbances. However, most existing works treat motion tracking and fall recovery as different tasks and require multi-stage training with specialized recovery rewards and/or separate recovery policies. Moreover, existing reinforcement learning-based methods often terminate training episodes immediately after severe tracking failures, limiting recovery-oriented exploration in unstable or fallen states. To address the above issues, we propose Stubborn, a streamlined and unified reinforcement learning framework to achieve robust humanoid motion tracking and fall recovery. Specifically, Stubborn uses an asymmetric Actor-Critic architecture and consists of three major components. First, a yaw-aligned tracking representation is adopted to reduce sensitivity to global drift and heading disturbances while preserving gravity-related balance information. Second, we introduce a Bernoulli-based probabilistic termination mechanism that enables the policy to encourage exploration of fall-recovery behaviors under varying failure modes. Third, we propose a probabilistic termination and tracking-error-driven strategy that dynamically reshapes the sampling distribution based on tracking performance, increasing the training efficiency for difficult motion segments and unstable states. Extensive comparisons with SOTA methods and ablation studies show that Stubborn achieved competitive performance, and the proposed probabilistic termination mechanism and adaptive sampling strategy contributed to the performance and robustness gains. For real-world demonstrations, please refer to https://aislab-sustech.github.io/Stubborn/."
   }
 ]
