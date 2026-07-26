@@ -2295,6 +2295,15 @@
     "summary": "AGIBOT이 WAIC 2026에서 네 가지 신제품을 공개하며 로보틱스 기술력을 과시함. 이번 제품들은 'Embodied AI'를 핵심으로 실제 환경에서의 작동 능력을 중점적으로 시연함. 이를 통해 로봇공학 기술의 현장 적용 및 상용화 가능성을 입증함."
   },
   {
+    "title": "2026년 7월 13일~20일 휴머노이드 로봇 뉴스 요약: RoboZaps",
+    "original_title": "This Week in Humanoid Robot News: July 13–20, 2026 - RoboZaps",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9VaGRyWF92VkNRSFAtUGF2d1ktRTgtd2pMV0YzOWRKeV8weElUdEo5dGFkR1RXWWxEUkZuM0FDcDZtTUcxNDEyUmhrNUhoalV0Um54RFZqQm43UEEzbGx2MjNCVW9xS002TkplanQ5N25hS0NPMjg4?oc=5",
+    "date": "2026-07-19 22:43",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "해당 내용은 2026년 7월 13일부터 20일까지의 휴머노이드 로봇 산업 동향을 정리한 주간 뉴스 브리핑 형태임. 주간 보고서로, 해당 기간 동안의 주요 로봇 기술 발전 상황 및 시장 관련 정보를 요약하여 제공하는 형식임."
+  },
+  {
     "title": "호주, AI 시대 전환과 함께 휴머노이드 로봇 개발에 주력함",
     "original_title": "Australia is making humanoid robots in the midst of its AI reckoning - ABC News & Headlines – Australian Broadcasting Corporation",
     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOY1FaeFdoZHR3bkk4VkNMcjFRcDk1OXhILUY0aUdsbk1Rdkg2eDA1VDA2VTNVNW45UFRiX2doaVRtcmpHY0NVdk5JUzExWjBDSXNPNjlzZS0zY2t3ampNRkZXRGpPMmRQLVJrSnVhVk1Nc2FrdE5lem5LcDE2cGo4N1JzNER0amJUMnRmYTZxM21rMUdUNW1vbkFialFyYmpyLTJPa0pSY09udTVEbFdJ?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.12475v1 Announce Type: new \nAbstract: Human-robot collaboration (HRC) combines the complementary strengths of humans and robots to improve task efficiency. However, many existing collaborative systems rely on hand-engineered pipelines, limiting their scalability and flexibility for new tasks. In this work, we show that models trained end-to-end with imitation learning, specifically vision-language-action (VLA) models, can support collaborative manipulation, and characterize the key factors affecting their real-world performance. We evaluate two state-of-the-art models and identify a failure mode of action-chunking policies in implicit HRC, where demonstration action leakage (i.e., action chunks crossing latent task transitions) can cause premature assistive behavior. We find that this issue increases with longer execution horizons and occurs in real-world collaborative VLA systems, such as when a robot attempts to hand over a tool before the person is ready. We propose an inference-time steering method to mitigate these erroneous assistive actions while preserving policy performance. Finally, through a 16-participant user study on a long-horizon collaborative assembly task, we show that steering enables a longer execution horizon while mitigating premature assistance, leading to faster collaboration and fewer failures compared to a shorter-horizon policy."
-  },
-  {
-    "title": "Action-Effect Memory Pretraining for Robot Manipulation",
-    "original_title": "Action-Effect Memory Pretraining for Robot Manipulation",
-    "link": "https://arxiv.org/abs/2606.12499",
-    "date": "2026-06-12 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.12499v1 Announce Type: new \nAbstract: We present AEM, an Action-Effect Memory pretraining framework for robot manipulation that learns compact temporal representations from vision-action history. Unlike prior robot representation pretraining methods that mainly focus on single-frame visual encoding, AEM targets the temporal nature of manipulation, where the current observation alone is often insufficient under partial observability. AEM models manipulation as an action-driven interaction process by interleaving visual and action features and applying masked modeling to recover missing content from incomplete histories, thereby learning action-conditioned state evolution. The Mamba-encoded output of the final vision token is used as a compact history representation, serving as the global context for decoding and downstream control. This design preserves a single-vector temporal bottleneck while keeping inference efficient. We evaluate AEM with Diffusion Policy and Flow Policy. AEM consistently improves manipulation performance in both simulation and real-world settings, outperforming baselines across clean scenes, cluttered and random scenes, and non-Markovian tasks. Ablation studies further show that history-aware pretraining surpasses single-frame pretraining and direct frame stacking, while reducing inference latency and computational cost."
   }
 ]
