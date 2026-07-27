@@ -45,6 +45,15 @@
     "summary": "NVIDIA Applied Deep Learning Research 부사장인 Bryan Catanzaro가 오픈 모델 구축 과정과 아키텍처의 근거를 설명함. 이와 함께 NVIDIA가 많은 기술을 오픈소스로 공개하는 배경과 전략적 이유가 함께 제시된 내용임."
   },
   {
+    "title": "크라켄 테크놀로지, 자율 운항 선박 개발을 위한 시리즈 B 투자 유치",
+    "original_title": "Kraken Technology raises Series B funding for autonomous vessels",
+    "link": "https://www.therobotreport.com/kraken-technology-raises-series-b-funding-autonomous-vessels/",
+    "date": "2026-07-27 14:02",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Kraken Technology가 자율 운항 선박(autonomous vessels) 개발을 위해 시리즈 B 라운드 투자를 유치함. 확보된 자금은 무인 수상 선박(uncrewed surface vessels)의 개발을 지속하고, 글로벌 제조 거점을 현지화하는 데 활용될 예정임."
+  },
+  {
     "title": "Unitree Robotics 창립자, TIME지 특집 소개됨",
     "original_title": "Unitree Robotics founder featured in TIME magazine - China Daily",
     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5SVkVGZVd0TEVySFdYVVZTVW1jWEV6WWdpcEk5Rm1GaU13YUZVNjBoYXF4bFN6UzgwWTh6cXlWVUR1bzlMdGVfeWk5ajNiZlZrX0ZneVpPWUh4a3VYNm5RTWp0LWptOHc4UllTR05FNk9tR0VnanExSi03UlBzdw?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2603.05230v2 Announce Type: replace-cross \nAbstract: The increasing demand for sustainable textile recycling requires robust automation solutions capable of handling deformable garments and detecting foreign objects in cluttered environments. This work presents a digital twin driven robotic sorting system that integrates grasp prediction, multi modal perception, and semantic reasoning for real world textile classification. A dual arm robotic cell equipped with RGBD sensing, capacitive tactile feedback, and collision-aware motion planning autonomously separates garments from an unsorted basket, transfers them to an inspection zone, and classifies them using state of the art Visual Language Models (VLMs). We benchmark nine VLM s from five model families on a dataset of 223 inspection scenarios comprising shirts, socks, trousers, underwear, foreign objects (including garments outside of the aforementioned classes), and empty scenes. The evaluation assesses per class accuracy, hallucination behavior, and computational performance under practical hardware constraints. Results show that the Qwen model family achieves the highest overall accuracy (up to 87.9 %), with strong foreign object detection performance, while lighter models such as Gemma3 offer competitive speed accuracy trade offs for edge deployment. A digital twin combined with MoveIt enables collision aware path planning and integrates segmented 3D point clouds of inspected garments into the virtual environment for improved manipulation reliability. The presented system demonstrates the feasibility of combining semantic VLM reasoning with conventional grasp detection and digital twin technology for scalable, autonomous textile sorting in realistic industrial settings."
-  },
-  {
-    "title": "OGPO: Sample Efficient Full-Finetuning of Generative Control Policies",
-    "original_title": "OGPO: Sample Efficient Full-Finetuning of Generative Control Policies",
-    "link": "https://arxiv.org/abs/2605.03065",
-    "date": "2026-06-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2605.03065v3 Announce Type: replace-cross \nAbstract: Generative control policies (GCPs), such as diffusion- and flow-based control policies, have emerged as effective parameterizations for robot learning. This work introduces Off-policy Generative Policy Optimization (OGPO), a sample-efficient algorithm for finetuning GCPs that maintains off-policy critic networks to maximize data reuse and propagate policy gradients through the full generative process of the policy via a modified PPO objective, using critics as the terminal reward. OGPO achieves state-of-the-art performance on manipulation tasks spanning multi-task settings, high-precision insertion, and dexterous control. To our knowledge, it is also the only method that can fine-tune poorly-initialized behavior cloning policies to near full task-success with no expert data in the online replay buffer, and does so with few task-specific hyperparameter tuning. Through extensive empirical investigations, we demonstrate that OGPO drastically outperforms methods alternatives on policy steering and learning residual corrections, and identify the key mechanisms behind its performance. We further introduce practical stabilization tricks, including success-buffer regularization, two-sided conservative advantages, and Q-variance reduction, to mitigate critic over-exploitation across state- and pixel-based settings. Beyond proposing OGPO, we conduct a systematic empirical study of GCP finetuning, identifying the stabilizing mechanisms and failure modes that govern successful off-policy full-policy improvement."
   }
 ]
