@@ -1,5 +1,14 @@
 [
   {
+    "title": "AI 시대, NVIDIA의 오픈 모델 구축 방식 공개",
+    "original_title": "How NVIDIA Builds Open Models for the Age of AI",
+    "link": "https://blog.bytebytego.com/p/how-nvidia-builds-open-models-for",
+    "date": "2026-07-27 15:01",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "NVIDIA Applied Deep Learning Research 부사장인 Bryan Catanzaro가 오픈 모델 구축 과정과 아키텍처의 근거를 설명함. 이와 함께 NVIDIA가 많은 기술을 오픈소스로 공개하는 배경과 전략적 이유가 함께 제시된 내용임."
+  },
+  {
     "title": "Unitree Robotics 창립자, TIME지 특집 소개됨",
     "original_title": "Unitree Robotics founder featured in TIME magazine - China Daily",
     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5SVkVGZVd0TEVySFdYVVZTVW1jWEV6WWdpcEk5Rm1GaU13YUZVNjBoYXF4bFN6UzgwWTh6cXlWVUR1bzlMdGVfeWk5ajNiZlZrX0ZneVpPWUh4a3VYNm5RTWp0LWptOHc4UllTR05FNk9tR0VnanExSi03UlBzdw?oc=5",
@@ -160,6 +169,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "단안 깊이(Monocular depth) 모델이 모호한 입력에서 비현실적인 3D 구조를 환각하는 '3D 신기루' 문제를 정의함. 이를 체계적으로 진단하기 위해 문맥 변화와 실제 환영을 결합한 벤치마크 3D-Mirage를 구축하고, 구조적 변위 점수(DCS)와 혼란 점수(CCS)라는 두 가지 평가 지표를 제시함. 나아가, 배경 지식 손실을 최소화하며 환각을 해결하는 'Grounded Self-Distillation' 방법을 개발, MDE 평가가 픽셀 정확도 중심에서 구조적 및 문맥적 강건성 중심으로 전환되어야 함을 강조함."
+  },
+  {
+    "title": "Mag4D-SLAM 데이터셋: 위치 추정 및 매핑을 위한 반복 주행 다중 모드 4D 지자기 데이터셋",
+    "original_title": "Mag4D-SLAM Dataset: A Repeated-Traversal Multi-Modal 4D Geomagnetic Dataset for Localization and Mapping",
+    "link": "https://arxiv.org/abs/2607.21986",
+    "date": "2026-07-27 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "지자기 센싱은 GNSS나 시각 정보 손상에 강한 절대 방향 참조를 제공하나, 이를 뒷받침할 대규모 실외 SLAM 연구 데이터셋의 부재가 문제로 제기됨. 이에 연구진은 LiDAR, 카메라, IMU, 지자기 센서 등을 동기화 측정한 18km 규모의 최초 실외 지자기 SLAM 데이터셋인 Mag4D-SLAM을 공개함. 본 데이터셋은 반복 주행 및 주야간 조건에 걸친 구조화된 궤적을 제공하며, 야(Yaw) 드리프트 완화 및 장기적인 위치 인식 연구의 새로운 기반 마련함."
   },
   {
     "title": "일본 엔지니어들, Unitree G1 로봇 분해 및 단기적 중국 추격 어려움 인정",
@@ -17980,23 +17998,5 @@
     "source": "IEEE Spectrum",
     "category": "hand",
     "summary": "This article is part of our exclusive IEEE Journal Watch series in partnership with IEEE Xplore.\nAs robots advance in terms of dexterity and other physical capabilities, it becomes more likely that humans may find themselves working alongside them. If that happens, how will robots’ emotional capabilities need to advance for them to successfully work with people?In a recent study, researchers trained collaborative robots to read human emotions by not only accounting for facial expressions, but also contextual factors in the interactions as well. Through experiments with 40 volunteers, the researchers then evaluated how a robot’s ability to read human emotions and adjust its behaviour in turn impacted a human’s perception of the robot and its capabilities as the two collaborated on tasks. The results—which show that the emotional capabilities of robots only go so far with humans—were published 18 May in IEEE Robotics and Automation Letters.Seung Chan Hong led the study as part of his undergraduate thesis while studying at the University of Melbourne, in Australia. He notes that, while there has been a lot of hype in the advancing physical abilities of robots, this is only one piece of the puzzle. “We need to also innovate when it comes to them actually interacting with humans, not just their physical capabilities,” he says.This prompted him to dig deeper into the emotional aspects of human-robot interactions. First, Hong and his co-authors decided to train a robot to read human emotions using a vision language model (VLM), which is similar to large language models such as ChatGPT, but which can also take visual inputs.Training VLMs for Human Emotion RecognitionTo train their VLM, the researchers had volunteers watch videos of robots handing over objects to humans—with varying degrees of success—and describe the emotions the humans were expressing. Importantly, the volunteers labeling these videos were able to take into account more context in these interactions, rather than reporting solely on the facial expressions of the humans in the video. For example, a person pausing to think with a furrowed brow may simply be concentrating on their task at hand, and not necessarily be angry. Contextual factors such as drumming their fingers, pursing their lips, or other behaviors can point to the real cause of a person’s furrowed brow.The researchers then compared their VLM to a conventional AI system which relies on standard facial analysis and object tracking that is used in human-robot interactions. They found that the VLM outperformed the traditional approach. On a scale from 0 (no similarity in meaning to the emotion identified by the human volunteers) to 1 (a perfect match in meaning), the conventional AI system achieved a score of 0.77. In comparison, the VLM achieved a score of 0.86.Hong says, “I think [the VLM] was able to align with what human observers were seeing a lot better, because it wasn’t just looking at the person’s face for a brief amount of time, but seeing the whole scene—where the person was and what they were doing, and how they were interacting with the robot.”In a second experiment, the research team asked 40 volunteers to interact with a robot using their VLM—but purposefully programmed the robot to make an error. The robot then had to offer either an emotionally adaptive apology that accounted for the human’s perceived response to the mistake, or a pre-scripted spoken apology.Participants overwhelmingly preferred the emotionally adaptive response, with 31 out of 40 people favouring this approach over a boilerplate apology.However, their survey responses underscored how this emotional adaptivity was far less important than the robot’s functionality. After collaborating with a robot that failed in its task, many participants ranked their trust in the robot as lower, regardless of how it apologized for its mistake. “A personalized apology acts as a social lubricant, but it cannot repair the trust lost by the robot failing its physical task,” Hong says.Interestingly, the VLM classified the emotions of its human partners similarly to human volunteers who observed an interaction from a third-party perspective. But when the VLM’s assessments were measured against humans’ self-reported emotions during the second experiment—the most accurate descriptions of their true emotions—its ability to accurately predict emotions dropped significantly.“While the VLM is a good observer of outward social cues, it isn’t a mind reader,” says Hong. “It matched third-person human observers well, but it didn’t always align with the user’s internal, self-reported feelings.”Together, these results show that robots are not perfect at reading human emotions. So while people might appreciate their efforts, they still ultimately will want competent co-workers."
-  },
-  {
-    "title": "Windows for robots: Edge AI expands usability",
-    "original_title": "Windows for robots: Edge AI expands usability",
-    "link": "https://www.therobotreport.com/computers-software-windows-utility-robots/",
-    "date": "2026-06-13 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Before Windows, only engineers and computer scientists could work with computers. Edge AI is causing a similar accessibility shift for robotics.\nThe post Windows for robots: Edge AI expands usability appeared first on The Robot Report."
-  },
-  {
-    "title": "Humanoid robot seen 'begging' for money in China sparks debate over AI's future - Moneycontrol.com",
-    "original_title": "Humanoid robot seen 'begging' for money in China sparks debate over AI's future - Moneycontrol.com",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNkU2WnZHd2dia01yZ0JyNXZmZXlVbUdNenV0T0F1aFl4Mm5ZNlRqc05WWURJamw4Z0g0SlN1VVNLT1N0eDZTcUptRDBIZ3Voc0pBSW5jSUk5TjdfeWRwX3JjakdPallEbUVTNzZseVgyYW9HdzRab3R1dW5ZeXoyNGNkaTBvc2FtbHh5dzlscC12T2FuekRjNlI5YW5wel9ZOTZmQXpyVk0wckdWbUtaY3A5R0ZoX3hlZ016Qk9XYlhQeW41Vkx2ZU9zY1rSAdIBQVVfeXFMTWhfT0I4dV8yT280WDZRVm9ZQnFDUERwUkhaZDN5aV9PTGV5TDl3SVVqOHRneXlFcF9LcHFkS2Y4TkxLQXgydU55eFB4bjU1WEJOSmw0d0JIQ2ZOWEFwd0c3NTR6LW8taS1VdUxLYW9EaHlNX1hDOVlzWXpVZjVGOXg3a01VckE0N1g3cFdPSXhJREhBMTBlLTJPV0wwMlQ5OWlaZkNTWENzRnBoT0VnOFdNRXg1QVNudHc2TVRydzN5Q0NodW8wUmVQWTB1Q3dkY0NB?oc=5",
-    "date": "2026-06-13 09:03",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Humanoid robot seen 'begging' for money in China sparks debate over AI's future  Moneycontrol.com"
   }
 ]
