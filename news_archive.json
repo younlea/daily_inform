@@ -234,6 +234,15 @@
     "summary": "로봇이 복잡한 실내외 환경에서 특정 사물을 찾아내기 위해서는 단순히 사물 자체에 대한 메모리를 넘어 주변 지점과의 관계적 정보가 필수적임. 연구진은 이러한 요구를 충족하기 위해 실시간으로 오픈 보캐뷸러리, 기하학, 시각-언어 기술을 통합한 FARM 시스템을 개발하였으며, 이는 VLM을 활용하여 공간 제약 조건을 명시적으로 처리함으로써 검색 정확도를 높임. 광범위한 실험에서 FARM은 기존 방식 대비 Recall@5 및 Recall@10에서 각각 164%, 224%의 성능 개선을 보였으며, 실제 사족보행 로봇에 적용하는 클로즈 루프 배포가 가능함을 입증함."
   },
   {
+    "title": "Vision-Language-Action 기반 조작을 위한 Real2Sim2Real 방법론: AMD ROCm 기반 파이프라인",
+    "original_title": "Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline",
+    "link": "https://arxiv.org/abs/2607.22997",
+    "date": "2026-07-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "Physical AI 시대의 도래에 맞춰, 본 논문은 체화된 조작을 위한 엔드투엔드 및 완전한 AMD 가속 기술 스택을 제시함. 이 스택은 데이터센터, Radeon PRO 시뮬레이션/렌더링, Ryzen AI 엣지 컴퓨팅을 하나의 ROCm 소프트웨어 스택으로 통합하여, VLA 기반 조작 정책 구현이 CUDA 종속성에서 벗어날 수 있음을 입증함. 주요 결과로는 SmolVLA를 이용한 Sim-to-Real 파이프라인, 언어 기반 객체 선택 작업, 3D Gaussian Splatting을 융합한 Real2Sim 합성 데이터 생성, 그리고 사족/인간형 로봇 보행을 위한 대규모 강화 학습 등이 보고됨."
+  },
+  {
     "title": "중국 Unitree Robotics, 휴머노이드 수요 충족 위해 생산 능력 확대 검토",
     "original_title": "China's Unitree Robotics eyes capacity boost to meet humanoid demand - Nikkei Asia",
     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNM080TDhRVkFrdDBZemIzZDF3S0VnTExVTks0TUx1Tk9qVTBGb0xnZUd3Y0dCUVM0QzhzMjFKRWlyTklzYTljZDZfM0dPNWc0MnZkblZNd21WVWp3Nkd6b1lKYnZEdzZYZGg3WmxOUW50a19sRmJoRU8zd3pKVWZWcWNyX3pFMGU0UTZ1cXgya0lieHF3dzhfQ0Z4MDN0RUFpbmFoc1BFTUhuMTNrWmV1Zy1nT2hEQl9J?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.13970v1 Announce Type: new \nAbstract: Learning with missing modalities is a fundamental challenge in multimodal robot learning, as real-world robotic systems often operate in environments with incomplete sensor data. Attention-based models are appealing for processing multimodal data because they can handle multiple modalities with a single backbone network. However, most multimodal models assume that all modalities are available during both training and inference, limiting their applicability in robotic perception and decision-making. In this paper, we introduce a multimodal model designed to handle missing modalities during both training and inference. The model is formulated as a conditional variational autoencoder (CVAE) and incorporates a transformer-based architecture that leverages attention mechanisms to learn a unified, fixed-dimensional representation, even when some modalities are missing. We show that our proposed model can be trained with missing modalities while approximating a robust representation of all modalities. We evaluate our approach on five multimodal datasets across two robot learning tasks: human trajectory prediction and robot manipulation forecasting. Experimental results demonstrate that our model effectively learns from incomplete data and is superior to prior multimodal fusion approaches."
-  },
-  {
-    "title": "From Attacks to Curricula: Learnability-Guided Adversarial Training for Safe Autonomous Driving",
-    "original_title": "From Attacks to Curricula: Learnability-Guided Adversarial Training for Safe Autonomous Driving",
-    "link": "https://arxiv.org/abs/2606.14032",
-    "date": "2026-06-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.14032v1 Announce Type: new \nAbstract: Closed-loop adversarial training improves autonomous driving safety by exposing policies to rare safety-critical scenarios. Standard pipelines first generate adversarial scenarios and then sample them for policy optimization. However, most existing frameworks remain attack-oriented: collision-driven generators often synthesize unsolvable extreme situations, which can degrade learning, while heuristic samplers ignore the evolving capability of the driving policy, causing sample inefficiency and delayed convergence. We propose AlignADV, a learnability-guided closed-loop adversarial training framework that converts adversarial scenarios into resolvable and capability-aligned curricula. First, we reformulate adversarial scenario generation as a preference alignment problem and employ direct preference optimization to guide the generator toward critical yet resolvable scenarios. Second, we introduce behavioral fingerprints to capture the intrinsic characteristics of the evolving policy and construct a multi-modal capability prediction model that estimates policy performance without expensive closed-loop simulations. By combining resolvability-aligned scenarios with capability predictions, AlignADV develops a dynamic curriculum sampling mechanism that prioritizes scenarios targeting the current policy's vulnerabilities. Experiments on the Waymo Open Motion Dataset demonstrate that AlignADV improves convergence efficiency and final performance, reducing training steps by up to 40.6 percent compared with baseline methods while lowering collision rate and improving route completion under both normal and adversarial traffic conditions. These results highlight a shift from attack-oriented scenario generation to learnability-guided policy improvement, offering a principled direction for safer and more efficient autonomous driving training. Project page: https://meiyuewen.github.io/AlignADV/."
   }
 ]
