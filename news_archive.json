@@ -1,5 +1,77 @@
 [
   {
+    "title": "전동 무릎-발목 의족 제어기 개인화를 위한 리플레이 제약 시뮬레이션 프레임워크",
+    "original_title": "A Replay-Constrained Simulation Framework for Personalization of Powered Knee--Ankle Prosthesis Controllers",
+    "link": "https://arxiv.org/abs/2607.22858",
+    "date": "2026-07-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "개인화된 전동 의족 제어는 복잡한 인간 생체역학 모델링이 핵심 과제였으나, 본 연구진은 MuJoCo 기반의 Replay-Constrained Simulation Framework를 제안함. 이 프레임워크는 개별 보행 데이터의 궤적과 지면 반력 정보를 재활용하여 인간의 신경근 제어 과정을 건너뛰고 의족 동역학을 성공적으로 재현함. DRL 기반의 이 방법론은 실제 실험에서 강력한 시뮬레이션-하드웨어 예측 유효성(Pearson r=0.96~0.997)을 입증하며, 개인화된 의족 제어기의 생체모방성 보상을 최대 59%까지 개선함."
+  },
+  {
+    "title": "촉각 장갑의 자세 관련 아티팩트 완화를 위한 자세 인식 모델링",
+    "original_title": "Pose-Aware Modeling to Mitigate Pose-Related Artifacts in Tactile Gloves",
+    "link": "https://arxiv.org/abs/2607.22964",
+    "date": "2026-07-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "촉각 장갑은 정교한 로봇 작업을 가능하게 하지만, 손 자세 변화에 따른 아티팩트(PRAs)가 최소 감지 힘(MDF)을 높이는 문제가 발생함. 본 연구는 손의 자세 정보를 활용하여 PRAs를 완화하는 장갑 비의존적 알고리즘 프레임워크를 제안하며, 자세 유발 변형을 명시적으로 계산하는 잔여 예측 분지를 도입하여 촉각-힘 파이프라인을 강화함. 3가지 장갑 디자인 및 15명 사용자를 대상으로 검증한 결과, 모든 평가 지표에서 MDF를 최대 18.3%까지 감소시키며 실용적인 성능 개선을 입증함."
+  },
+  {
+    "title": "$N_0$-VTLA: 잠재적 촉각 토큰을 활용한 시각-촉각-언어-행동 모델 확장",
+    "original_title": "$N_0$-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens",
+    "link": "https://arxiv.org/abs/2607.23782",
+    "date": "2026-07-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "$N_0$-VTLA는 촉각 인식 및 피드백 제어에 특화된 Vision-Tactile-Language-Action (VTLA) 기반 모델임. 대규모 비전-촉각 데이터셋인 NeoData로 사전 학습하고, 적응형 오프라인 강화학습 방법인 ALTER를 결합하여 접촉이 중요한 정교한 조작 능력을 확보함. 이로써 $N_0$-VTLA는 실시간 로봇 환경 및 시뮬레이션 등 다양한 접촉 기반 벤치마크에서 기존 최고 성능 모델 대비 월등히 우수한 성공률을 기록하며 차세대 로봇 조작의 기반을 제시함."
+  },
+  {
+    "title": "$N_0$-TWAM: 접촉 기반 조작을 위한 촉각 네이티브 월드-액션 모델 스케일링",
+    "original_title": "$N_0$-TWAM: Scaling Tactile-Native World-Action Model for Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2607.23783",
+    "date": "2026-07-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "접촉 환경 기반의 조작을 위해 미래의 시각 및 접촉 정보를 예측하는 촉각 네이티브 월드-액션 모델 $N_0$-TWAM이 개발되어 공개됨. 이 모델은 NeoForce 기반의 통합적인 힘 정보를 활용하여 6개 에뮬레이션 및 450개 태스크의 대규모 시각-촉각 결합 데이터로 학습됨. 비대칭 Mixture-of-Transformers 아키텍처를 적용하여 실시간 효율성을 높였으며, 이는 개방형 접촉 환경에서 정밀하고 섬세한 조작을 위한 강력한 기반을 제공하는 것으로 평가됨."
+  },
+  {
+    "title": "FutureRTC: 선행 조건 기반 액션 청킹을 이용한 실시간 로봇 제어 구현",
+    "original_title": "FutureRTC: Real-Time Robot Execution with Anticipatory-Conditioned Action Chunking",
+    "link": "https://arxiv.org/abs/2607.24008",
+    "date": "2026-07-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Vision-Language-Action (VLA) 정책의 실시간 배포 시 발생하는 예측-실행 불일치 문제를 해결하기 위해 FutureRTC라는 플러그 앤 플레이 프레임워크가 제안됨. 본 프레임워크는 상태 보정 모듈과 동작 인지 기반 특징 전송을 활용하여 실행 시간의 관측 및 상태를 예측하며, 정책 일관성 손실(policy consistency loss)을 통해 액션 청크의 정합성을 높임. 실험 결과, FutureRTC는 추론 지연에 대한 뛰어난 강건성을 입증하며, 더욱 부드러운 궤적과 일관되게 높은 작업 성공률을 달성함."
+  },
+  {
+    "title": "케이블 구동 소프트 매니퓰레이터의 이동 예측 지평 추정 및 비선형 모델 예측 제어",
+    "original_title": "Moving-Horizon Estimation and Nonlinear Model Predictive Control of Cable-Driven Soft Manipulators",
+    "link": "https://arxiv.org/abs/2607.24029",
+    "date": "2026-07-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "소프트 매니퓰레이터 제어의 어려움을 극복하기 위해 Reduced Cosserat 역학을 기반으로 하는 이동 예측 지평 추정(MHE) 및 비선형 모델 예측 제어(NMPC) 프레임워크를 제안함. 본 프레임워크는 케이블 장력 직접 감지 없이 케이블 길이 측정을 통한 제어 방식을 구축하는 것이 핵심임. 시뮬레이션 및 4개 케이블 프로토타입 실험을 통해, 제안된 MHE-NMPC 방식이 실시간 구현이 가능하며 높은 정확도의 엔드-이펙터 위치 추적을 실현함을 입증함."
+  },
+  {
+    "title": "WARL: 다지형 로봇의 태스크 비특이적 학습을 위한 렌치(Wrench) 증강 강화 학습",
+    "original_title": "WARL: Wrench-Augmented Reinforcement Learning for Task-Agnostic Learning in Legged Robots",
+    "link": "https://arxiv.org/abs/2607.24036",
+    "date": "2026-07-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존의 보행 로봇 강화 학습은 관절 공간에 국한된 행동 제어의 한계가 있었으며, 이에 본 연구는 액션 공간에 렌치(Wrench: 힘 및 토크)를 도입한 WARL(Wrench-Augmented Reinforcement Learning)을 제안함. WARL은 렌치 가이드 탐색과 성공률 기반 커리큘럼을 결합하여, 별도의 환경 조정이나 복잡한 설계 없이도 다지형 로봇이 다양한 지형에서 태스크 비특이적인 강건한 학습을 수행함을 입증함. 또한, 연구 결과는 렌치 기반 탐색이 학습 효율성을 높이나, 로봇의 물리적 구조와 일치하는 방식으로 설계하는 것이 핵심 과제임을 제시함."
+  },
+  {
+    "title": "3개 공공장소에 활용된 휴머노이드 로봇 헤드의 수용성 사례 연구",
+    "original_title": "A Case Study on the Acceptance of a Humanoid Robotic Head Employed in Three Public Spaces",
+    "link": "https://arxiv.org/abs/2607.24113",
+    "date": "2026-07-28 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "본 연구는 3개 공공장소에서 운영된 감정 기반 다중 양식(multimodal) 로봇의 사용자 수용성을 분석함. 사용자들은 다국어 응답 기능에 높은 만족도를 보였으며, 일반 공공시설(관광 안내소, 도서관)이 사무실 환경보다 적합함을 밝힘. 다만, 일부 사용자로부터 응답 속도가 대화의 흐름을 방해한다는 피드백이 제기되어 향후 성능 개선이 필요한 것으로 분석됨."
+  },
+  {
     "title": "중국 Unitree Robotics, 휴머노이드 수요 충족 위해 생산 능력 확대 검토",
     "original_title": "China's Unitree Robotics eyes capacity boost to meet humanoid demand - Nikkei Asia",
     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNM080TDhRVkFrdDBZemIzZDF3S0VnTExVTks0TUx1Tk9qVTBGb0xnZUd3Y0dCUVM0QzhzMjFKRWlyTklzYTljZDZfM0dPNWc0MnZkblZNd21WVWp3Nkd6b1lKYnZEdzZYZGg3WmxOUW50a19sRmJoRU8zd3pKVWZWcWNyX3pFMGU0UTZ1cXgya0lieHF3dzhfQ0Z4MDN0RUFpbmFoc1BFTUhuMTNrWmV1Zy1nT2hEQl9J?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.14617v1 Announce Type: new \nAbstract: Floating-base robots must balance under rigid contact constraints while interacting safely with humans. Existing whole-body control~(WBC) frameworks allocate the full joint space to locomotion or rely on fixed-gain impedance feedback that accumulates steady-state error under sustained physical human--robot interaction~(pHRI) forces. This paper extends the authors' fixed-base two-layer Impedance MPC to floating-base platforms through a three-level architecture: a centroidal MPC plans contact forces over a 500\\,ms horizon; a priority-driven WBC layer resolves balance into joint torques through contact-consistent null-space projection; and the residual null space is governed by a receding-horizon quadratic program~(QP) that predicts and rejects pHRI disturbances using a Kalman-augmented state. A contact-consistent feedback linearization reduces the arm end-effector plant to a double integrator with a \\emph{constant} state matrix within each contact mode, enabling offline precomputation of the QP cost and ${\\geq}1$\\,kHz operation. A covariance-inflation protocol preserves the disturbance estimate across contact-mode switches, guaranteeing zero steady-state error under bounded constant pHRI loads, and an Impedance Equivalence Theorem shows the infinite-horizon limit recovers a classical task-space impedance law whose effective mass, damping, and stiffness adapt to posture and contact configuration. Simulations on a 17-DOF biped and the Unitree G1 humanoid validate the design."
-  },
-  {
-    "title": "EgoGuide: Egocentric Guidance for Efficient Robot-Free Demonstration Collection and Learning",
-    "original_title": "EgoGuide: Egocentric Guidance for Efficient Robot-Free Demonstration Collection and Learning",
-    "link": "https://arxiv.org/abs/2606.14665",
-    "date": "2026-06-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.14665v1 Announce Type: new \nAbstract: Robot learning from real-world demonstrations is currently constrained by data scaling. Universal Manipulation Interface (UMI) provides an efficient robot-free data collection interface, yet current UMI-style pipelines often collect redundant demonstrations and lack global scene context. To improve data efficiency, we present EgoGuide, a collection interface that records synchronized wrist and head/egocentric observations and couples them with online visual-geometric data quality guidance. We also introduce a Gated Egocentric Residual Policy for robust learning from a viewpoint-varying egocentric camera, allowing head/egocentric context to correct ambiguous local observations while preserving stable wrist-view control. Real-world experiments show that EgoGuide reduces the required number of data episodes and improves data efficiency. The residual policy further improves robustness under visual occlusion. Project Page: https://silicx.github.io/EgoGuide"
-  },
-  {
-    "title": "WAM4D: Fast 4D World Action Model via Spatial Register Tokens",
-    "original_title": "WAM4D: Fast 4D World Action Model via Spatial Register Tokens",
-    "link": "https://arxiv.org/abs/2606.14048",
-    "date": "2026-06-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.14048v1 Announce Type: cross \nAbstract: World action models (WAMs) have recently shown promise in jointly modeling future observations and executable robot actions. However, most existing WAMs still operate in 2D video or latent spaces, where visually plausible rollouts miss the 3D spatial constraints and occluded contact geometry required for precise manipulation. While geometric foundation models offer strong priors for recovering dense 3D structure and motion from visual observations, forcing WAMs to predict the dense 4D representation introduces costly geometric decoding and slows down causal action generation. To address the trade-off, we present WAM4D, a fast 4D world action model that uses lightweight spatial register tokens as training-time future-depth readouts to transfer pretrained geometric priors into a causal video-action transformer, then removes the register branch for lightweight action inference. To prevent non-causal shortcuts, we further design causal mixture attention for the Mixture-of-Transformers (MoT) WAM backbone, defining modality-specific visibility among video, action, and geometry tokens. Comprehensive experiments on RoboTwin 2.0 and challenging real-world manipulation tasks show that WAM4D improves spatial consistency and achieves competitive action prediction while maintaining efficient inference."
-  },
-  {
-    "title": "ADAPT: An Autonomous Forklift for Construction Site Operation",
-    "original_title": "ADAPT: An Autonomous Forklift for Construction Site Operation",
-    "link": "https://arxiv.org/abs/2503.14331",
-    "date": "2026-06-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2503.14331v4 Announce Type: replace \nAbstract: Efficient material logistics play a critical role in controlling costs and schedules in the construction industry. However, manual material handling remains prone to inefficiencies, delays, and safety risks. Autonomous forklifts offer a promising solution to streamline on-site logistics, reducing reliance on human operators and mitigating labor shortages. This paper presents the development and evaluation of ADAPT (Autonomous Dynamic All-terrain Pallet Transporter), a fully autonomous off-road forklift designed for construction environments. Unlike structured warehouse settings, construction sites pose significant challenges, including dynamic obstacles, unstructured terrain, and varying weather conditions. To address these challenges, our system integrates AI-driven perception techniques with traditional approaches for decision making, planning, and control, enabling reliable operation in complex environments. We validate the system through extensive real-world testing, comparing its continuous performance against an experienced human operator across various weather conditions. Our findings demonstrate that autonomous outdoor forklifts can operate near human-level performance, offering a viable path toward safer and more efficient construction logistics."
-  },
-  {
-    "title": "Asymmetric Friction in Geometric Locomotion",
-    "original_title": "Asymmetric Friction in Geometric Locomotion",
-    "link": "https://arxiv.org/abs/2512.22484",
-    "date": "2026-06-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2512.22484v2 Announce Type: replace \nAbstract: Geometric mechanics models of locomotion have provided insight into how robots and animals use environmental interactions to convert internal shape changes into displacement through the world, encoding this relationship in a ``motility map''. A key class of such motility maps arises from (possibly anisotropic) linear drag acting on the system's individual body parts, formally described via Riemannian metrics on the motions of the system's individual body parts. The motility map can then be generated by invoking a sub-Riemannian constraint on the aggregate system motion under which the position velocity induced by a given shape velocity is that which minimizes the power dissipated via friction. The locomotion of such systems is ``geometric'' in the sense that the final position reached by the system depends only on the sequence of shapes that the system passes through, but not on the rate with which the shape changes are made.\n  In this paper, we consider a far more general class of systems in which the drag may be not only anisotropic (with different coefficients for forward/backward and left/right motions), but also asymmetric (with different coefficients for forward and backward motions). Formally, including asymmetry in the friction replaces the Riemannian metrics on the body parts with Finsler metrics. We demonstrate that the sub-Riemannian approach to constructing the system motility map extends naturally to a sub-Finslerian approach and identify system properties analogous to the constraint curvature of sub-Riemannian systems that allow for the characterization of the system motion capabilities."
-  },
-  {
-    "title": "A Pragmatic VLA Foundation Model",
-    "original_title": "A Pragmatic VLA Foundation Model",
-    "link": "https://arxiv.org/abs/2601.18692",
-    "date": "2026-06-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2601.18692v3 Announce Type: replace \nAbstract: Offering great potential in robotic manipulation, a capable Vision-Language-Action (VLA) foundation model is expected to faithfully generalize across tasks and platforms while ensuring cost efficiency (e.g., data and GPU hours required for adaptation). To this end, we develop LingBot-VLA with around 20,000 hours of real-world data from 9 popular dual-arm robot configurations. Through a systematic assessment on 3 robotic platforms, each completing 100 tasks with 130 post-training episodes per task, our model achieves clear superiority over competitors, showcasing its strong performance and broad generalizability. We have also built an efficient codebase, which delivers a throughput of 261 samples per second with an 8-GPU training setup, representing a 1.5~2.8$\\times$ (depending on the relied VLM base model) speedup over existing VLA-oriented codebases. The above features ensure that our model is well-suited for real-world deployment. To advance the field of robot learning, we provide open access to the code, base model, and benchmark data, with a focus on enabling more challenging tasks and promoting sound evaluation standards."
-  },
-  {
-    "title": "A Unified Control Architecture for Macro-Micro Manipulation using a Active Remote Center of Compliance for Manufacturing Applications",
-    "original_title": "A Unified Control Architecture for Macro-Micro Manipulation using a Active Remote Center of Compliance for Manufacturing Applications",
-    "link": "https://arxiv.org/abs/2602.01948",
-    "date": "2026-06-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2602.01948v2 Announce Type: replace \nAbstract: Macro-micro manipulators combine a macro manipulator with a large workspace, such as an industrial robot, with a lightweight, high-bandwidth micro manipulator. This enables highly dynamic interaction control while preserving the wide workspace of the robot. Traditionally, position control is assigned to the macro manipulator, while the micro manipulator handles the interaction with the environment, limiting the achievable interaction control bandwidth. To solve this, we propose a novel control architecture that incorporates the macro manipulator into the active interaction control. This leads to a increase in control bandwidth by a factor of 2.1 compared to the state of the art architecture, based on the leader-follower approach and factor 12.5 compared to traditional robot-based force control. Further we propose surrogate models for a more efficient controller design and easy adaptation to hardware changes. We validate our approach by comparing it against the other control schemes in different experiments, like collision with an object, following a force trajectory and industrial assembly tasks."
-  },
-  {
-    "title": "Estimation of Ground Reaction Forces from Kinematic Data during Locomotion",
-    "original_title": "Estimation of Ground Reaction Forces from Kinematic Data during Locomotion",
-    "link": "https://arxiv.org/abs/2602.03177",
-    "date": "2026-06-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2602.03177v2 Announce Type: replace \nAbstract: Ground reaction forces (GRFs) provide fundamental insight into human gait mechanics and are widely used to assess joint loading, limb symmetry, balance control, and motor function. Despite their clinical relevance, the use of GRF remains underutilised in clinical workflows due to the practical limitations of force plate systems. In this work, we present a force-plate-free approach for estimating GRFs using only marker-based motion capture data. This kinematics only method to estimate and decompose GRF makes it well suited for widespread clinical depolyment. By using kinematics from sixteen body segments, we estimate the centre of mass (CoM) and compute GRFs, which are subsequently decomposed into individual components through a minimization-based approach. Through this framework, we can identify gait stance phases and provide access to clinically meaningful kinetic measures without a dedicated force plate system. Experimental results demonstrate the viability of CoM and GRF estimation based solely on kinematic data, supporting force-plate-free gait analysis."
-  },
-  {
-    "title": "X-Loco: Towards Generalist Humanoid Locomotion Control via Synergetic Policy Distillation",
-    "original_title": "X-Loco: Towards Generalist Humanoid Locomotion Control via Synergetic Policy Distillation",
-    "link": "https://arxiv.org/abs/2603.03733",
-    "date": "2026-06-15 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2603.03733v2 Announce Type: replace \nAbstract: While recent advances have demonstrated strong performance in individual humanoid skills such as upright locomotion, fall recovery and whole-body coordination, learning a single policy that masters all these skills remains challenging due to the diverse dynamics and conflicting control objectives involved. To address this, we introduce X-Loco, a framework for training a vision-based generalist humanoid locomotion policy. X-Loco trains multiple oracle specialist policies and adopts a synergetic policy distillation with a case-adaptive specialist selection mechanism, which dynamically leverages multiple specialist policies to guide a vision-based student policy. This design enables the student to acquire a broad spectrum of locomotion skills, ranging from fall recovery to terrain traversal and whole-body coordination skills. To the best of our knowledge, X-Loco is the first framework to demonstrate vision-based humanoid locomotion that jointly integrates upright locomotion, whole-body coordination and fall recovery, while operating solely under velocity commands without relying on reference motions. Experimental results show that X-Loco achieves superior performance, demonstrated by tasks such as fall recovery and terrain traversal. Ablation studies further highlight that our framework effectively leverages specialist expertise and enhances learning efficiency."
   }
 ]
