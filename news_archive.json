@@ -9,6 +9,15 @@
     "summary": "Boing Boing의 4만 달러급 로보독이 무대 공연에서 전통 무술(kung fu) 대신 브레이크댄스 퍼포먼스를 선보이며 화제가 되고 있음. 로보독은 높은 수준의 움직임과 엔터테인먼트 요소를 결합한 것이 특징임."
   },
   {
+    "title": "FCC, 중국 겨냥한 해외 휴머노이드 로봇 사용 금지 발표",
+    "original_title": "FCC announces ban on foreign humanoid robots, targeting China - The American Bazaar",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaEo0R0ZObDg4OUhEcUd0MzZzRXdKdktidnZJeDF5bHJEVTd2WndSYkdUQ0lrSVlXZms2VUJNVGp6MXFfc0dKLUJxQmkxZTI4dDRFMS1WT3FERlZLalRVY1pOZXRnMkNGT1lrQTUzcjdSeThFR202SEVuaE55Zl9sbVFfMUNYVUh3amN3Sl9UVVpJLVJzanpVaVRMVnREV2xCRGRqVi0yTTFIWGllYzNyR1l3?oc=5",
+    "date": "2026-07-29 19:02",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "FCC가 해외 휴머노이드 로봇 사용에 대한 금지 조치를 발표함. 이 규제는 특히 중국산 제품에 대한 제재 성격으로 해석됨."
+  },
+  {
     "title": "미국, 국가 안보 위험 이유로 중국산 휴머노이드 로봇 및 전력 인버터 수입 금지",
     "original_title": "US Bans Import of Chinese Humanoid Robots and Power Inverters Citing National Security Risks - Ratopati",
     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbFFaMm42c3VUSmxzQ3pLUDRRdTJNX190ZlhzQWRpemJqcXpYYl9TeEFMY0RPdFJPbEVfLWVZUS02ZUI4Slk5SVBwQjlhZ1k5VkZ4UzFQSFo0Y3VfMjZ1X3FKNWtHX0tqMmhLSkFvQVVkT3Z1aG5NcjlkSHJsdUhmNFZfUW1oVUo2WTlSVFllWnU?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.18955v1 Announce Type: cross \nAbstract: Training generalist Vision-Language-Action(VLA) models typically requires massive, diverse robotic datasets with high-fidelity action annotations. While egocentric human manipulation videos are abundant and capture significant environmental diversity, the absence of action labels makes them difficult to use in conventional training paradigms. To address this, we propose a latent-action-based framework designed to extract general action priors from unlabeled human videos. The architecture features a Hybrid Disentangled VQ-VAE that decouples motion dynamics from environmental backgrounds through physical masks, enabling the construction of a cross-embodiment action codebook. By pre-training on human videos with the codebook, the VLM backbone learns deep representations of action intent. For adaptation to specific embodiments, we introduce an intent-perception decoupling strategy where the VLM predicts the action intent while a separate frozen visual encoder provides state-specific features to the action expert, thereby reducing action hallucinations. Results in simulation and real-world environments show that our method, pre-trained exclusively on unlabeled human videos, performs competitively with state-of-the-art VLA models trained on massive annotated datasets, requiring only 50 trajectories for downstream adaptation."
-  },
-  {
-    "title": "Mem-World: Memory-Augmented Action-Conditioned World Models for Persistent Robot Manipulation",
-    "original_title": "Mem-World: Memory-Augmented Action-Conditioned World Models for Persistent Robot Manipulation",
-    "link": "https://arxiv.org/abs/2606.18960",
-    "date": "2026-06-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.18960v1 Announce Type: cross \nAbstract: Action-conditioned world models have emerged as a promising paradigm for robot learning, offering a scalable alternative to costly real-world experimentation by generating action-consistent video rollouts. However, persistent world modeling remains challenging in manipulation: frequent end-effector occlusions and rapid wrist-camera motion make the current observation insufficient for predicting future views, causing models to forget or hallucinate scene details seen in earlier frames. Existing memory retrieval strategies often fail to identify informative history in dynamic manipulation scenarios. To address this limitation, we propose Mem-World, a memory-augmented multi-view action-conditioned world model. At its core, we present W-VMem, a 4D wrist-view-centered surfel-indexed memory that anchors historical observations to temporally evolving surface elements. By explicitly modeling when and where scene elements are observed, W-VMem enables geometry-aware retrieval of relevant history frames conditioned on future actions. During generation, relevant history frames are selected via surfel-based rendering and scoring, providing informative and non-redundant context for prediction. Extensive experiments show that Mem-World generates persistent rollouts in complex manipulation scenarios, enables more reliable policy evaluation than Ctrl-World, improving the Pearson correlation with real-world performance by 14.5\\%, and supports effective policy improvement through synthetic data generation, increasing success rates from 58\\% to 72\\% on long-horizon tasks."
   }
 ]
