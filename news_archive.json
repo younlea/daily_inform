@@ -1,5 +1,86 @@
 [
   {
+    "title": "Star-World 작업 공간 리셰이핑을 통한 Franka 암의 반응형 3D 모션 플래닝",
+    "original_title": "Reactive 3D Motion Planning for a Franka Arm via Star-World Workspace Reshaping",
+    "link": "https://arxiv.org/abs/2607.25138",
+    "date": "2026-07-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "안전 팽창으로 인한 장애물 중첩 문제를 해결하기 위해 Star-World 작업 공간 리셰이핑 기법을 적용하여 Franka Emika Panda 매니퓰레이터를 3차원 반응형 제어하는 방식이 연구됨. PyBullet 6가지 시나리오 비교 결과, 리셰이핑은 목표 달성률 향상 및 중첩 벽 케이스 해결 능력을 입증했으나, 경로 길이 증가와 근접 평형점 생성 등의 실용적 한계점도 함께 제시됨. 이는 작업 공간 기하학적 보장(Star-World guarantees)을 다중 자유도 매니퓰레이터의 역기구학 기반 제어에 적용하는 것의 잠재력과 실질적 과제를 보여줌."
+  },
+  {
+    "title": "SONG: 소셜 네비게이션 벤치마킹을 위한 사실적인 3D 가우시안 시뮬레이션 플랫폼",
+    "original_title": "SONG: A Photorealistic 3D Gaussian Simulation Platform for Benchmarking Social Navigation",
+    "link": "https://arxiv.org/abs/2607.25219",
+    "date": "2026-07-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "시각 기반 소셜 네비게이션 연구의 한계를 극복하기 위해 3D Gaussian Splatting(3DGS)을 활용한 'SONG' 플랫폼이 공개됨. 본 플랫폼은 3DGS를 이용한 장면 및 아바타 표현과 더불어, LLM 기반의 동적 보행자 생성을 통해 높은 현실 충실도를 구현함. 개발진은 SONG-Bench 평가를 통해 시각 기반 사회성 확보에 있어 안전(Safety) 확보가 사회적 에티켓(Social Compliance)보다 선행되어야 함을 제시하며, 실제 데이터의 중요성을 강조함."
+  },
+  {
+    "title": "$\\pi\\mathbf{R}^2$: 반응형 실시간 흐름 정책",
+    "original_title": "$\\pi\\mathbf{R}^2$: Reactive Real-time Flow Policies",
+    "link": "https://arxiv.org/abs/2607.26055",
+    "date": "2026-07-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존의 액션 청크(action-chunking) 기반 정책이 가지는 높은 지연(latency) 및 낮은 반응성 문제를 해결하고자 $\\pi\\mathbf{R}^2$가 제시됨. 이 정책은 조건화(conditioning)를 빠른 고유감각(proprioception) 채널과 느린 비전-언어(vision-language) 채널로 분리하고, 지연에 적응하는 흐름 스케줄을 적용해 실시간 반응성을 극대화함. 그 결과, 실제 xArm6+XHand 플랫폼에서 기본 정책보다 약 4배 빠른 재계획 속도를 확보하며, 시뮬레이션 및 실제 로봇 조작 작업에서 성공률을 최대 30%까지 개선함."
+  },
+  {
+    "title": "UniReLo, 다양한 지형 환경에서 낙상 회복부터 보행까지 통합적인 휴머노이드 정책 학습 구현",
+    "original_title": "UniReLo: Learning a Unified Humanoid Policy from Fall Recovery to Locomotion across Diverse Terrains",
+    "link": "https://arxiv.org/abs/2606.08922",
+    "date": "2026-07-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "휴머노이드 로봇의 자율 작동에 필수적인 낙상 회복부터 보행까지의 안정적인 연속성 확보를 목표로 함. 본 연구는 UniReLo라는 통합 정책 학습 프레임워크를 제안하며, 이는 이질적인 야외 지형에서 낙상 회복과 보행 전환을 단일 정책으로 학습하는 것이 특징임. UniReLo는 multi-scale motion priors와 지형 조건부 회복 가이드를 결합하여, 복잡한 환경에서도 안정적이고 연속적인 움직임 전환 성능을 입증함."
+  },
+  {
+    "title": "InDex: 의도 조건부 팔-손 협응을 이용한 VLA 모델의 정교 조작 능력 향상",
+    "original_title": "InDex: Empowering VLA Models with Intent-Conditioned Arm-Hand Coordination for Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2606.12109",
+    "date": "2026-07-29 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 Vision-Language-Action (VLA) 모델의 병렬 그리퍼 한계를 극복하기 위한 의도 조건부 적응 프레임워크인 InDex가 소개됨. InDex는 잡(Grasp) 의도와 다지점(multi-joint) 손 동작 생성을 분리하여, 재표적화된 시연으로부터 정규화된 잡 의도를 도출함. 이를 바탕으로 확산 디코더가 VLA 문맥 및 고유수용성 감각(proprioception)을 조건으로 다지점 손 동작을 생성함으로써, 정교한 작업 수행 시 초기 접근 단계에서 안정적인 파지까지의 전환율을 획기적으로 개선함."
+  },
+  {
+    "title": "미국, 국가 안보 우려로 중국산 휴머노이드 로봇 사용 금지",
+    "original_title": "US bans Chinese humanoid robots over national security fears - India Today",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObHU0YnF2VUwySFBncGd0dHNRSXRIaWxkNlVzTVh5OGVETDVtUHVOUFpQdXJfRDg5X29SXzQ3S3ctWWVVSHRzd2M1bndRNERTekg1TWczdUlxX3g4dkhHS3pycGJlMnBYclJJZERDQnJtS2puQ2xiVGdCUjBBY0pGRkdRVm1feVZqaGFnMkJYbmtDc2NkTTlESVMwczl5TnJHUGdRdUV1VGpMRUdCbmR4Wm9Gd1NqUzlueGxRQlJiZTc1REczNFHSAcsBQVVfeXFMUFd5Q2hiRUVyYTBqRXJFOHBGenRFWEgtSTkwNVduMDNiVXF1bVkzdC1BZ1RYXy1XOUh4X3o5YWwzVWFHLTViYWV1WDV2dGgzV3pkdU1reHV5RjVUUW53RWsycDB5VkE1RkJnNVU3R1pWcU9vazF5RWlpTkFVYWFnWFQ0UmtRNm51SkY0NFpWXzR6cjU3aC1ULXp6MVpJcWpPNUdSeTBvSjExd001ekdaVUhSd1FhTnRSc0NPXzFMZU9naXd1dFZLaVNfQUE?oc=5",
+    "date": "2026-07-29 03:56",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "미국 정부가 국가 안보상의 문제점을 근거로 중국산 휴머노이드 로봇의 사용 및 수입에 대한 규제 강화 조치를 발표함. 이는 핵심 기술 유출 방지 및 잠재적 안보 위협을 차단하기 위한 조치로 파악됨. 관련 정책의 구체적인 내용은 현재 추가 분석이 진행 중인 상황임."
+  },
+  {
+    "title": "중국, 글로벌 휴머노이드 로봇 스타트업 순위 선두 장악에 따른 현황 분석",
+    "original_title": "China sweeps global humanoid robot start-up ranking as US imposes ban - South China Morning Post",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYkVSMk9kbGxlMGZCeDRTLWY0b2JUdEFFUUFQM1pwTTRTYXRSNm5CcHQ0dXNsbFdpcDFJdzQ1SXA2ZjgwSzVaRzhmN1RvUUpQeFp6ZC0ydVVUSE1qSnZZSG41NXRzTFdwT2VOWC1EZk8zTThYUDRKbFBwZ1Z0YXRzZUMyUGltcnFkU2JjYktxLXVGZ1BWUlZUNmxCNnpuV0o1c0FaenBYVUl4dVRtWmp0QzJEZmlhOEptZFdIZtIBvAFBVV95cUxQUmZ4eEdSYXJaNjl5RXV0aWo0b1RBMnY1Q0hVMHMtVmVjVmdIZm04NHNDN1J2cnhHdk1wYjRGUENxM1FvOG1kY1pQQlprSWN5bEhlRDd5RDRxLWFNQmUzc1JISXJOVzB5ZUxUd3pJcHI5bGZJWUt5YWpudkRUeTJ2ZzJTSUFDOHkxYjItT2VPZmttZWg5ZlVtWnhmeXN2aDFGMWpiNS1Ya0hMaWg5MkU1VTBGSTFKdjdkc2VDcQ?oc=5",
+    "date": "2026-07-29 02:59",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "중국이 글로벌 휴머노이드 로봇 스타트업 분야에서 강력한 선두권을 형성하며 시장을 주도함. 반면 미국은 특정 기술 분야에 대한 규제나 금지 조치를 시행하는 등 정책적 제약이 가해지고 있는 상황임. 이로 인해 국가 간 기술 패권 경쟁이 심화되는 양상으로 관측됨."
+  },
+  {
+    "title": "트럼프 행정부, 중국산 휴머노이드 로봇 도입 금지 조치 발표",
+    "original_title": "Trump administration bans new Chinese humanoid robots - Eastern Riverina Chronicle",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWDl2aldabHVpUUxBNlRxekFtUW50NzZTa2d3RUJnaFBiZV9yWk5DeVNNcHFNRTBHakxfRlg4QkhzbkZKUm8yY3hOQ0xMblRGcVpoQmZjUnZmbEk2bG9fYWZuZVlSSGR5YWpWdGF1amNZSWNFeDJLZ3VGMjlxZGNSNzd1aW5BdXIzbDlBMGNhUVFmdHY5MVZOWTZZVEEwZWFzaTBKMWR4TUY0d0pOT3QzcFJ3?oc=5",
+    "date": "2026-07-29 02:58",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "트럼프 행정부가 중국산 휴머노이드 로봇의 신규 도입에 대해 금지 조치(ban)를 취함. 이 조치는 특정 국가 출신 로봇의 시장 진입을 막는 정책적 변화를 의미함. 전문가들은 해당 규제가 글로벌 로봇 공급망과 시장 흐름에 영향을 미칠 것으로 분석함."
+  },
+  {
+    "title": "AI 산업 생태계 보호 위한 미국, 중국산 휴머노이드 로봇 도입 제한 조치 발표",
+    "original_title": "US bans new Chinese humanoid robots to protect AI buildout - Nikkei Asia",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNXzhsWjhNaG1yX2cxWVdTS0E5bFRuaWdSbXRXUmZFTm5rYTBGam9HU0kzTlhCUHg3OUVGVGdUemRqVVpXWHg5NkxhLXRWWndIMDQ4OUdSTXZmcF9qeVpYNnBBY0lwaUVTeFVXc3J4RTJSUkV2QkJpV1lBNUV0LUpJYWs2azZnSG0tcmxDZGkzLVQ4Y0JkRW9NQnVZSnNzdXN4S1dYNUs5NVphMmRYUkVoWEg0aw?oc=5",
+    "date": "2026-07-29 00:16",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "미국 정부가 자국 AI 기술 생태계 보호를 목적으로 중국산 휴머노이드 로봇의 신규 도입을 제한하는 규제에 착수한 것으로 파악됨. 이는 AI 기술 주권 확보 및 핵심 공급망 관리를 강화하기 위한 미국의 정책적 움직임임."
+  },
+  {
     "title": "트럼프 행정부, 중국산 휴머노이드 로봇 금지 추진 (BBC)",
     "original_title": "Trump administration bans new Chinese humanoid robots - BBC",
     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE85LWoxTEdBcXVVd1ZRLWJJTk53T292ZVl5NHBKTmE2TnVXWlJaWTZUQXp5Q2pOVXBDbFJTaF9CallXbS00OFlRSHlPUUJ0YklUd2Y5cTc0VTZyOFRw?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "The Robot Report",
     "category": "hand",
     "summary": "PSYONIC is combining its Ability Hand with ABB Robotics' GoFa cobot arm to apply data from prosthetics users to robotic grasping.\nThe post PSYONIC partners with ABB Robotics to apply human touch to robot dexterity appeared first on The Robot Report."
-  },
-  {
-    "title": "TacStyle: Personalizing Tactile Robot Policies using Structured Behavior Representations",
-    "original_title": "TacStyle: Personalizing Tactile Robot Policies using Structured Behavior Representations",
-    "link": "https://arxiv.org/abs/2606.14862",
-    "date": "2026-06-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.14862v1 Announce Type: new \nAbstract: Robotic systems that assist humans should be capable of adapting their behaviors to individual user preferences. For instance, users may want a robot arm to adjust the amount of force it applies while folding their laundry or cleaning furniture. Natural language provides an intuitive way for humans to communicate such preferences. Recent progress in language-conditioned robot policies has shown that robots can successfully use language prompts to determine what task to perform. However, extending the same approach to realize how the task should be performed requires detailed labels describing the preferences or styles of trajectories in the task data. Not only is collecting such annotations challenging, but conditioning directly on these labels may also fail to provide fine-grained control over a continuous range of behaviors. For example, it can be difficult to convey the exact force that a robot must apply through abstract instructions like \"apply a bit more pressure than before\". Therefore, in this work, we propose using language to reason over preferred behaviors instead of directly generating them. We first learn a structured latent representation that organizes user preferences according to differences in the corresponding trajectories. Then, given a preference prompt, we use a foundation model to interpret this latent space and choose a value that produces the desired behavior. Through both simulation and real-world experiments, we show that selecting robot behaviors from an intuitively structured latent space enables more precise adaptation to user preferences while requiring significantly fewer preference labels than language-conditioned policies."
-  },
-  {
-    "title": "Inference-time Policy Steering via Vision and Touch",
-    "original_title": "Inference-time Policy Steering via Vision and Touch",
-    "link": "https://arxiv.org/abs/2606.14981",
-    "date": "2026-06-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.14981v1 Announce Type: new \nAbstract: Inference-time steering adapts pre-trained generative robot policies during deployment by verifying candidate actions before execution. While prior methods typically perform this verification only with visual observations, vision alone is often insufficient for contact-rich manipulation, where success depends on both global task progress and subtle local interactions such as contact force. We introduce ViTaL, a visuo-tactile inference-time steering framework that formulates multimodal guidance as a bi-level optimization problem. At the high level, visual sampling-and-verification performs long-horizon mode selection, deciding what behavior the robot should execute. At the low level, tactile-guided diffusion editing refines the selected action sequence over a shorter horizon to satisfy local contact requirements. To support outcome-based steering, ViTaL learns a visuo-tactile latent world model and employs semantically aligned visual and tactile verifiers, including a novel text-conditioned tactile reward that scores predicted tactile futures directly in latent space. Across three real-world contact-rich manipulation tasks, ViTaL improves overall success by 51% over the base policy, outperforms unimodal steering by at least 33%, and exceeds naive multimodal fusion by at least 20%. Website: https://yilin-wu98.github.io/vital_website."
-  },
-  {
-    "title": "LV-Calib: LiDAR-Camera Extrinsic Calibration with Boundary-Response Modeling",
-    "original_title": "LV-Calib: LiDAR-Camera Extrinsic Calibration with Boundary-Response Modeling",
-    "link": "https://arxiv.org/abs/2606.15010",
-    "date": "2026-06-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.15010v1 Announce Type: new \nAbstract: We present LV-Calib, a calibration framework for LiDAR-camera extrinsic estimation and LiDAR boundary-response calibration using a printable planar target. The target serves as a shared observation carrier: visual fiducials provide indexed image measurements, while circular reflectivity boundaries provide LiDAR-observable structural feature points. Instead of directly fitting boundary points as ideal geometric contours, LV-Calib automatically crops background points, estimates the target plane, and iteratively refines accurate LiDAR-side 3-D feature points from intensity and geometric constraints. The refinement explicitly handles the broadened and distorted transition band induced by finite beam footprint and mixed-intensity returns around black-white reflectivity discontinuities. Given these refined LiDAR features, we formulate a weighted reprojection-consistent extrinsic optimization with LiDAR feature alignment, where image observations are kept in the reprojection domain and LiDAR feature residuals are weighted by refinement confidence. Finally, using the estimated extrinsic and the extracted transition band, LV-Calib calibrates the LiDAR boundary response by estimating pitch-yaw-range residual statistics of boundary-overlap samples. Experiments on printed-board calibration data demonstrate sub-pixel reprojection accuracy, millimeter-level LiDAR feature consistency, and improved odometry performance. Code and calibration data will be released for reproducible evaluation."
-  },
-  {
-    "title": "Steering Autoregressive Vision-Language-Action Policies via Action Token Intervention",
-    "original_title": "Steering Autoregressive Vision-Language-Action Policies via Action Token Intervention",
-    "link": "https://arxiv.org/abs/2606.15021",
-    "date": "2026-06-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.15021v1 Announce Type: new \nAbstract: We present Token Steering (TS), a method for dynamically steering trajectories generated by an autoregressive vision-language-action (VLA) model through direct intervention in the action-token space. TS injects low-dimensional user inputs into the model's native action-token representation, allowing users to influence trajectory generation without modifying the underlying vision-language model (VLM) architecture. Because TS operates entirely at inference time, it requires no additional training or finetuning. User inputs guide rather than override the pretrained policy, allowing users to influence robot actions while preserving the dexterity, smoothness, and task priors learned by the VLA. We evaluate TS on two household manipulation tasks -- drawer closing after object placement and state-aware object swapping -- and improve success rates from 10.0% to 72.5% and from 16.7% to 93.8%, respectively. By enabling lightweight, intuitive steering over robot foundation models, our interface has the potential to improve human-robot interaction in consumer environments and broaden accessibility for individuals with limited physical control. Project website: https://jasontchan.github.io/token-steering/ ."
-  },
-  {
-    "title": "Exact, Efficient, and Safe Occlusion-Aware Planning Using AH-Polyhedrons",
-    "original_title": "Exact, Efficient, and Safe Occlusion-Aware Planning Using AH-Polyhedrons",
-    "link": "https://arxiv.org/abs/2606.15046",
-    "date": "2026-06-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.15046v1 Announce Type: new \nAbstract: Safely handling occlusions is a fundamental challenge for autonomous mobile robots operating in dynamic environments. This issue is especially prominent in autonomous valet parking (AVP), where traffic rules are lax, occlusions are frequent and cluttered, and overly conservative behavior can leave vehicles stuck. However, existing methods either lack formal safety guarantees, assume agents follow road structures, or introduce conservatism, leaving occlusion-aware planning for AVP an open challenge. In this paper, we propose APRO (AH-Polyhedron Reachability for Occlusions), an exact and efficient occlusion-aware planning framework based on game-theoretic active perception and AH-polyhedron reachability analysis with AVP as our canonical use case. Our key insight is to reformulate set-based safety conditions in prior work as unions of AH-polyhedrons, enabling exact safety verification through linear programming (LP) without any additional conservatism in set computations or assumptions on road topology. We further show how the resulting safety conditions can be integrated into optimization-based planners or a bisection search scheme for real-time applications. We validate our method in simulation and hardware experiments, including data replay on a real-world parking lot dataset. Experimental results demonstrate that our method consistently achieved a 100% safety rate across all evaluated scenarios while maintaining real-time performance, resulting in safer and more optimal decisions than existing methods with formal safety guarantees."
-  },
-  {
-    "title": "DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects",
-    "original_title": "DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects",
-    "link": "https://arxiv.org/abs/2606.15133",
-    "date": "2026-06-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.15133v1 Announce Type: new \nAbstract: Dexterous interaction with articulated objects is important for household, assistive, and humanoid manipulation, where multi-finger hands can provide compliant contact patterns beyond parallel-jaw grasping. However, articulated-object manipulation differs from static-object manipulation: the target part cannot be directly actuated, and its motion must emerge through sustained physical hand--handle contact. This makes the transition from object-centric articulated generation to hand-driven dexterous hand--object interaction non-trivial, since geometric trajectory replay or open-loop execution does not model the contact dynamics required to move the articulated part. Moreover, policies trained only for task completion under fixed dynamics can overfit nominal contact loads, especially without tactile or force feedback, and may degrade when the contact load changes. To address these challenges, we present DragMesh-2, a contact-driven framework for dexterous interaction with articulated objects that extends articulated interaction from object-centric generation to hand-driven dexterous hand--object interaction, where articulated motion must arise through physical contact. We further propose PICA, a physically informed contact-aware training mechanism that injects physical signals into policy learning without tactile or force feedback, improving robustness and task success under changing contact loads. Finally, we conduct systematic evaluation across multiple damping conditions and articulated-object categories to study robustness under contact-load variation, and provide a pure-geometry dexterous interaction resource to support future loco-manipulation and humanoid hand--object interaction research. Across seven GAPartNet objects, DragMesh-2 achieves stronger robustness under contact-load variation than the compared methods while maintaining high task success across damping conditions."
-  },
-  {
-    "title": "MimicIK: Real-Time Generative Inverse Kinematics from Teleoperation with FK Consistency",
-    "original_title": "MimicIK: Real-Time Generative Inverse Kinematics from Teleoperation with FK Consistency",
-    "link": "https://arxiv.org/abs/2606.15148",
-    "date": "2026-06-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.15148v2 Announce Type: new \nAbstract: Inverse kinematics (IK) remains a critical bottleneck for real-time robot manipulation. Classical numerical solvers achieve high geometric precision but often suffer from discontinuous branch switching and unstable behavior near kinematic singularities during closed-loop deployment. Meanwhile, learned IK approaches frequently struggle to balance spatial accuracy, motion smoothness, and real-time efficiency, particularly when trained on noisy human teleoperation data. We present \\textbf{MimicIK}, a real-time generative inverse kinematics framework that learns smooth and robust joint-space motion priors from teleoperation demonstrations through conditional flow matching. Given the current joint configuration and a target end-effector pose, MimicIK predicts continuous delta-joint commands using an efficient two-step iterative refinement process based on a Minimal Iterative Policy (MIP) backbone. To enforce physical consistency, we further introduce an FK consistency loss, a differentiable forward-kinematics regularization that penalizes task-space deviations from the target pose during training. We evaluate MimicIK on a real-world 6-DOF robot dataset containing 8,848 teleoperation demonstrations. MimicIK achieves a mean position error of 4.65 mm, a 10 mm success rate of 92.01\\%, and a trajectory spike rate of only 7.99\\%. Compared with a UNet diffusion baseline, our method improves both spatial accuracy and motion smoothness while reducing inference latency from 21.66 ms to 6.74 ms. Furthermore, unlike deterministic MLP baselines that catastrophically diverge under out-of-distribution deployment, MimicIK remains stable near singular configurations and enables robust 20 Hz real-time control on deployment hardware."
-  },
-  {
-    "title": "Seam-to-Graph Reconstruction for Garment Configuration Alignment",
-    "original_title": "Seam-to-Graph Reconstruction for Garment Configuration Alignment",
-    "link": "https://arxiv.org/abs/2606.15171",
-    "date": "2026-06-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.15171v1 Announce Type: new \nAbstract: Seams encode rich structural information about garments but are frequently partially observable in robotic manipulation scenarios. To robustly leverage seam information, we propose a Seam-to-Graph network based on graph neural networks and attention mechanisms. This network maps unstructured seam observations to a topology-encoded structural skeleton graph for real-time garment state estimation. Using this skeleton-graph-based state estimation, we design a deformation-aware, hierarchical visual servoing controller for garment configuration alignment. We implement this controller on a bimanual robot system to load a garment onto a screen printing platen and to align it to the desired configuration precisely. Real-robot experiments demonstrate that the robot using the proposed method not only achieves human-level alignment accuracy with reduced variance in alignment error but is also robust to different garments. These results demonstrate that the use of seam information is effective for garment manipulation."
-  },
-  {
-    "title": "Rethinking Implicit Spatial Representation in Visuomotor Policy Learning",
-    "original_title": "Rethinking Implicit Spatial Representation in Visuomotor Policy Learning",
-    "link": "https://arxiv.org/abs/2606.15232",
-    "date": "2026-06-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.15232v1 Announce Type: new \nAbstract: Generative model-based imitation learning has become a widely adopted paradigm for robotic manipulation, where policy performance depends critically on the conditioned visual representations. Although spatial softmax-based representations have been adopted in prior visuomotor policies, their effectiveness and underlying mechanisms remain insufficiently understood. This work rethinks the use of spatial softmax pooling: do such implicit spatial representations provide effective and stable visual features for robotic manipulation? Through systematic studies of different pooling methods in visual encoders, we find that this pooling operation produces compact and stable spatial representations, which outperform feature-value representations, despite using substantially fewer dimensions. Complementary saliency analysis further suggests that these spatial representations guide the encoder to focus more consistently on task-relevant regions. However, this advantage is limited by a representation bottleneck in current visual encoders: repeated downsampling operations weaken fine-grained spatial information before the action-generation module can use it, especially under low-resolution observations. Motivated by these findings, we propose PRISM, a visual encoder that preserves multiscale implicit spatial information through top-down cross-attention fusion. Experiments across multiple tasks and policy backbones show consistent improvements. In particular, on the low-resolution, high-precision ToolHang task, PRISM shows clear gains, improving the average success rate from 5.0% to 13.4% while increasing parameters by only 15.4%. These results support the use of multiscale implicit spatial representations as an effective and efficient design principle for robotic manipulation."
   }
 ]
