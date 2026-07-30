@@ -1,5 +1,14 @@
 [
   {
+    "title": "중국, 휴머노이드 로봇 수입에 대한 미국 규제 강화에 보복 경고함",
+    "original_title": "China warns of retaliation over tougher U.S. restrictions on humanoid robot imports - 디지털투데이",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQ3h2b0lBWGlsWXJiZ1ZfSVJzTGQ4S1M2c0ZaZHo4OU1RM3dTd1JVQnFfYi1jYVR6clhyR3h4UUNycUJ0eHNjbGtyaEdvMUVhZXlnU3hNYkdXRGwxaU5MdThSVF9hanR4ODBYLTR1RXd6blVZNGx1THg0Ty1FeWdSWjJPQkJrNDhGYU5UUVViMGtOejVEV05jYjlqdENpcHh3bGZFTzhxa0RwcVhz?oc=5",
+    "date": "2026-07-30 04:38",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "중국이 휴머노이드 로봇 수입과 관련된 미국의 규제 강화 조치에 대해 경고함. 중국은 이 같은 제재에 대응하여 보복 조치를 취할 수 있음을 공식적으로 시사한 내용임."
+  },
+  {
     "title": "MoMo: 시공간 액션 토큰화를 활용한 로봇 매니퓰레이션의 운동 모드 다이얼링",
     "original_title": "MoMo: Dial Motion Mode in Robot Manipulation with Spatiotemporal Action Tokenization",
     "link": "https://arxiv.org/abs/2607.26315",
@@ -142,6 +151,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "외부 Ground Truth 없이 Photogrammetric 재구성의 자체 신뢰도를 추정하는 'Track-Leakage-Free Hold-Out' 프로토콜을 제시함. 해당 방법은 재구성의 내부 기하학적 일관성(internal geometric consistency)을 측정하여 구조적 손상을 감지하는 데 효과적임. 다만, 내부적으로 자체 일관성을 갖추지만 글로벌하게 왜곡된(globally distorted) 모델을 탐지하는 데는 근본적인 한계가 있어, 여전히 기존의 통제점(control-point) 기반 정확도 평가가 필요함."
+  },
+  {
+    "title": "StructureGS: 구조 인식을 활용한 가우시안 스플래팅 기반 관절 구동 객체 재구성",
+    "original_title": "StructureGS: Structure-aware Gaussian Splatting for Articulated Object Reconstruction",
+    "link": "https://arxiv.org/abs/2607.26889",
+    "date": "2026-07-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "관절 구동 객체의 재구성은 기하학, 외관, 움직임 변수 간의 복잡한 상호 의존성으로 인해 기존 방법론에서 구조 분해 및 아티팩트 발생의 한계가 존재함. 이를 해결하기 위해 연구진은 3D Gaussian Splatting에 구조 인지 안내(Structure-aware guidance)를 통합한 StructureGS 프레임워크를 제안함. 이 접근법은 객체 부위의 공간적 일관성과 구조적 연결성이라는 두 가지 구조적 제약을 명시적인 손실 함수로 주입하여, 기존 대비 우수한 부위 분해 및 고품질의 객체 재구성 성과를 입증함."
   },
   {
     "title": "중국, 미국 휴머노이드 로봇 규제에 보복 위협하며 양국 관계 훼손 주장",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.18514v1 Announce Type: new \nAbstract: Neural combinatorial optimization (NCO) offers a promising alternative to traditional heuristic-based methods for solving complex graph optimization problems by proposing to learn heuristics through data. This class of problems frequently arises in automation, as it can be used to model a variety of applications. While NCO has been extensively studied for deterministic combinatorial optimization problems, there are only a few works that aim to solve stochastic combinatorial optimization problems. In this work, we present N(CO)$^2$: Neural Combinatorial Optimization with Chance cOnstraints to solve the Stochastic Orienteering Problem (SOP) without the use of hand-crafted heuristics. By integrating a reinforcement learning (RL) framework, the model optimizes path selection under uncertainty, effectively balancing exploration and exploitation. Empirical results demonstrate that our method generalizes well across diverse SOP instances, achieving competitive performance compared to the state-of-the-art mixed-integer linear program (MILP) for the task. The proposed approach reduces human effort in heuristic design while enabling adaptive and efficient decision-making in uncertain environments."
-  },
-  {
-    "title": "DREAM-Chunk: Reactive Action Chunking with Latent World Model",
-    "original_title": "DREAM-Chunk: Reactive Action Chunking with Latent World Model",
-    "link": "https://arxiv.org/abs/2606.18589",
-    "date": "2026-06-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.18589v1 Announce Type: new \nAbstract: Action chunking has become a common interface for vision-language-action (VLA) models, enabling low-frequency policy inference to drive high-frequency robot execution. However, once an action chunk is committed, its open-loop execution can be brittle under stochastic dynamics, hardware execution errors, and partial observability. We propose DREAM-Chunk, a test-time scaling method that augments chunking-based policies with a lightweight latent world model, without requiring additional policy fine-tuning. At test time, DREAM-Chunk samples multiple candidate action chunks, rolls out their predicted latent futures, and selects actions from the chunk whose predicted state best matches the observed rollout. In this way, DREAM-Chunk uses additional test-time computation to cover multiple plausible stochastic futures and improve reactivity during long-horizon chunk execution. On the Kinetix benchmark, DREAM-Chunk improves robustness under increasing action noise and benefits from larger candidate sample sizes, especially when demonstrations contain corrective behaviors. We further validate DREAM-Chunk on four manipulation tasks across two robot platforms and two VLA policies under various sources of stochasticity. Across simulation and hardware experiments, DREAM-Chunk improves the robustness of action-chunking policies in stochastic dynamics."
-  },
-  {
-    "title": "Benchmarking Action Spaces in Reinforcement Learning for Vision-based Robotic Manipulation",
-    "original_title": "Benchmarking Action Spaces in Reinforcement Learning for Vision-based Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2606.18594",
-    "date": "2026-06-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.18594v1 Announce Type: new \nAbstract: In real-world reinforcement learning (RL), the choice of action space can play a key role in shaping motion smoothness, safety, and overall task performance. In this study, we evaluate pose increment, pose velocity, joint position increment, and joint velocity across two vision-based manipulation tasks: object picking and pushing. We train policies in simulation and deploy them to the real world using sim-to-real transfer. We find that action-space representation indeed significantly affects sim-to-real performance. In particular, we find that the joint velocity action space is best for the vision-based picking and pushing tasks in terms of smoothness and final task performance. We also provide practical guidance for RL practitioners in choosing action spaces for both simulation and real-world experiments."
   }
 ]
