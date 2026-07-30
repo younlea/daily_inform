@@ -1,5 +1,32 @@
 [
   {
+    "title": "멱등성, 전송 의미론, 중복 제거에 대한 심층 가이드",
+    "original_title": "A Detailed Guide to Idempotency, Delivery Semantics, and Deduplication",
+    "link": "https://blog.bytebytego.com/p/a-detailed-guide-to-idempotency-delivery",
+    "date": "2026-07-30 15:30",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "서비스 요청이 만료되거나 응답이 없을 경우 발생하는 데이터 처리 오류에 대한 방안을 다루고 있음. 특히 고객 청구와 같은 중요한 트랜잭션에서 요청 실패 시 발생할 수 있는 중복 처리 문제 및 데이터 일관성 유지 방안을 설명함. 이는 분산 시스템에서 안정적인 결제 처리를 위한 핵심 메커니즘에 관한 지침 제공임."
+  },
+  {
+    "title": "COPA-DATA, 잘츠부르크 R&D 본부 확장을 위해 1,500만 유로 투자함",
+    "original_title": "COPA-DATA invests €15 million to expand Salzburg R&D headquarters",
+    "link": "https://roboticsandautomationnews.com/2026/07/30/copa-data-invests-e15-million-to-expand-salzburg-rd-headquarters/103787/",
+    "date": "2026-07-30 15:28",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "산업 및 에너지 부문 전반에서 디지털화 솔루션에 대한 글로벌 수요가 지속적으로 증가하는 추세임. COPA-DATA는 이러한 시장 요구에 대응하기 위해 zenon 소프트웨어 플랫폼을 중심으로 사업 확장을 진행함. 주요 동력으로는 산업 디지털화와 더불어, 안정적인 공급망 확보 및 에너지 부문의 지속 가능한 확장이 꼽힘."
+  },
+  {
+    "title": "헬벤더, 피츠버그 거점 확장을 통한 물리 AI 제조 역량 확대",
+    "original_title": "Hellbender expands Pittsburgh operations to scale physical AI manufacturing",
+    "link": "https://roboticsandautomationnews.com/2026/07/30/hellbender-expands-pittsburgh-operations-to-scale-physical-ai-manufacturing/103783/",
+    "date": "2026-07-30 15:20",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "물리 AI 인프라 기업 Hellbender가 글로벌 본사를 Hazelwood Green의 Roundhouse로 이전하고 운영을 확장함. 이번 확장으로 Mill 19에서 제조 시설을 운영하며 500개 이상의 현지 일자리를 창출하는 등 대규모 역량을 확보함. 이는 물리적 환경에서 지능형 시스템을 구동하는 인프라 구축 역량 강화에 중점을 둔 계획임."
+  },
+  {
     "title": "테솔로, 기업공개(IPO) 준비 돌입",
     "original_title": "Tesollo Begins Preparations for its IPO",
     "link": "https://humanoidroboticstechnology.com/industry-news/tesollo-begins-preparations-for-its-ipo/",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2509.19658v2 Announce Type: replace \nAbstract: In-context imitation learning (ICIL) enables robots to learn tasks from prompts consisting of just a handful of demonstrations. By eliminating the need for parameter updates at deployment time, this paradigm supports few-shot adaptation to novel tasks. However, recent ICIL methods rely on Transformers, which have computational limitations and tend to underperform when handling longer prompts than those seen during training. In this work, we introduce RoboSSM, a scalable recipe for in-context imitation learning based on state-space models (SSM). Specifically, RoboSSM replaces Transformers with Longhorn -- a state-of-the-art SSM that provides linear-time inference and strong extrapolation capabilities, making it well-suited for long-context prompts. Through diverse experiments on the LIBERO benchmark, we demonstrate the effectiveness of applying SSMs to ICIL, achieving improved generalization to both unseen and long-horizon tasks than Transformer-based ICIL methods by handling longer contexts at test-time. These results show for the first time that SSMs are an efficient and scalable backbone for ICIL. Our code is available at https://github.com/youngjuY/RoboSSM."
-  },
-  {
-    "title": "Humanoid Everyday: A Comprehensive Robotic Dataset for Open-World Humanoid Manipulation",
-    "original_title": "Humanoid Everyday: A Comprehensive Robotic Dataset for Open-World Humanoid Manipulation",
-    "link": "https://arxiv.org/abs/2510.08807",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2510.08807v2 Announce Type: replace \nAbstract: From loco-motion to dextrous manipulation, humanoid robots have made remarkable strides in demonstrating complex full-body capabilities. However, the majority of current robot learning datasets and benchmarks mainly focus on stationary robot arms, and the few existing humanoid datasets are either confined to fixed environments or limited in task diversity, often lacking human-humanoid interaction and lower-body locomotion. Moreover, there are a few standardized evaluation platforms for benchmarking learning-based policies on humanoid data. In this work, we present Humanoid Everyday, a large-scale and diverse humanoid manipulation dataset characterized by extensive task variety involving dextrous object manipulation, human-humanoid interaction, locomotion-integrated actions, and more. Leveraging a highly efficient human-supervised teleoperation pipeline, Humanoid Everyday aggregates high-quality multimodal sensory data, including RGB, depth, LiDAR, and tactile inputs, together with natural language annotations, comprising 10.3k trajectories and over 3 million frames of data across 260 tasks across 7 broad categories. In addition, we conduct an analysis of representative policy learning methods on our dataset, providing insights into their strengths and limitations across different task categories. For standardized evaluation, we introduce a cloud-based evaluation platform that allows researchers to seamlessly deploy their policies in our controlled setting and receive performance feedback. By releasing Humanoid Everyday along with our policy learning analysis and a standardized cloud-based evaluation platform, we intend to advance research in general-purpose humanoid manipulation and lay the groundwork for more capable and embodied robotic agents in real-world scenarios. Our dataset, data collection code, and cloud evaluation website are made publicly available on our project website."
-  },
-  {
-    "title": "Learning Category-level Last-meter Navigation from RGB Demonstrations of a Single-instance",
-    "original_title": "Learning Category-level Last-meter Navigation from RGB Demonstrations of a Single-instance",
-    "link": "https://arxiv.org/abs/2512.11173",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2512.11173v3 Announce Type: replace \nAbstract: Achieving precise positioning of the mobile manipulator's base is essential for successful manipulation actions that follow. Most of the RGB-based navigation systems only guarantee coarse, meter-level accuracy, making them less suitable for the precise positioning phase of mobile manipulation. This gap prevents manipulation policies from operating within the distribution of their training demonstrations, resulting in frequent execution failures. We address this gap by introducing an object-centric imitation learning framework for last-meter navigation, enabling a quadruped mobile manipulator robot to achieve manipulation-ready positioning using only RGB observations from its onboard cameras. Our method conditions the navigation policy on three inputs: goal images, multi-view RGB observations from the onboard cameras, and a text prompt specifying the target object. A language-driven segmentation module and a spatial score-matrix decoder then supply explicit object grounding and relative pose reasoning. Using real-world data from a single object instance within a category, the system generalizes to unseen object instances across diverse environments with challenging lighting and background conditions. To comprehensively evaluate this, we introduce two metrics: an edge-alignment metric, which uses ground truth orientation, and an object-alignment metric, which evaluates how well the robot visually faces the target. Under these metrics, our policy achieves 74.58% success in edge-alignment and 89.42% success in object-alignment when positioning relative to unseen target objects. These results show that precise last-meter navigation can be achieved at a category-level without depth, LiDAR, or map priors, enabling a scalable pathway toward unified mobile manipulation. Project page: https://rpm-lab-umn.github.io/category-level-last-meter-nav/"
-  },
-  {
-    "title": "Bring My Cup! Personalizing Vision-Language-Action Models with Visual Attentive Prompting",
-    "original_title": "Bring My Cup! Personalizing Vision-Language-Action Models with Visual Attentive Prompting",
-    "link": "https://arxiv.org/abs/2512.20014",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2512.20014v3 Announce Type: replace \nAbstract: While Vision-Language-Action (VLA) models generalize well to generic instructions, they struggle with personalized commands such as \"bring my cup,\" where the robot must act on one specific instance among visually similar objects. We study this setting of manipulating personal objects, in which a VLA must identify and control a user-specific object unseen during training using only a few reference images. To address this challenge, we propose Visual Attentive Prompting (VAP), a simple-yet-effective training-free perceptual adapter that equips frozen VLAs with top-down selective attention. VAP treats the reference images as a non-parametric visual memory, grounds the personal object in the scene through open-vocabulary detection and embedding-based matching, and then injects this grounding as a visual prompt by highlighting the object and rewriting the instruction. We construct two simulation benchmarks, Personalized-SIMPLER and Personalized-VLABench, and a real-world tabletop benchmark to evaluate personalized manipulation across multiple robots and tasks. Experiments show that VAP consistently outperforms generic policies and token-learning baselines in both success rate and correct-object manipulation, helping to bridge the gap between semantic understanding and instance-level control."
   }
 ]
