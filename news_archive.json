@@ -99,6 +99,15 @@
     "summary": "미국이 중국산 휴머노이드 로봇에 대한 잠재적 스파이 위협 및 보안 우려를 표명함. 이에 따라 관련 기술의 도입 및 상용화에 제동을 거는 정책적 움직임이 감지되고 있음. 이는 첨단 로봇 기술 분야에서 국가 안보와 기술 통제가 중요하게 다루어지고 있음을 시사함."
   },
   {
+    "title": "GMEX Robotics, 소셜 인텔리전스 강화를 위해 MediaMeta.ai 지분 인수함",
+    "original_title": "GMEX Robotics to acquire MediaMeta.ai for social intelligence",
+    "link": "https://www.therobotreport.com/gmex-robotics-to-acquire-mediameta-ai-social-intelligence/",
+    "date": "2026-07-29 14:53",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "GMEX Robotics가 서비스 로봇에 소셜 인텔리전스 역량을 통합하기 위해 MediaMeta의 지분을 인수 완료함. 이를 통해 로봇의 지능화 수준을 높이고 사용자 상호작용 능력을 강화할 계획임을 발표함."
+  },
+  {
     "title": "FCC의 신형 휴머노이드 및 모바일 로봇 수입 제한에 대한 전문가들의 반응 분석",
     "original_title": "Experts react to FCC limits on U.S. imports of new humanoid and mobile robots - therobotreport.com",
     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSTItNXlMTEc1ZkN6TUVicmMtU0JuUTI3Y092Q2FVMHJ1V1EzaEY1U211NXdiUkYyTlVweWtBNDI4UG9QNzZrV3dLWld3VldUNVdENzhaZE55Rm5jOFFMZDRjMWxGZzV0OFZPN09HY29NNC1TQmhHMmY3RWJ4VFJjSG45TmpjLWM0aXRDT2pDMkw1NGR5bTJFdVBkTnQ4dw?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.19333v1 Announce Type: new \nAbstract: How can we scalably generate data for robotic manipulation, especially on human-like platforms such as dexterous multi-fingered hands? Learning from human videos has recently emerged as a likely answer to this question. However, difficulties in estimating hand-object interaction and crossing the human-to-robot embodiment gap have hindered the adoption of abundant monocular RGB-only human videos as the primary source of robot manipulation data. In this work, we present DO AS I DO, an algorithm to reconstruct and retarget monocular RGB human videos to multi-fingered dexterous robotic hands. DO AS I DO reconstructs hand-object interactions from various egocentric and exocentric in-the-wild video sources. The algorithm then retargets these hand-object interaction estimates into a sequence of actions executable in the real world, yielding robot-complete manipulation data from disparate human videos. Overall, DO AS I DO outperforms previous state of the art in estimating hand-object interactions and extracting dexterous manipulation trajectories from RGB videos, as we show in experiments on datasets with ground truths and on a dataset of video clips collected online. Our experiments enable us to propose an efficacy playbook for practitioners collecting human data for manipulation."
-  },
-  {
-    "title": "Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
-    "original_title": "Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
-    "link": "https://arxiv.org/abs/2606.19340",
-    "date": "2026-06-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19340v1 Announce Type: new \nAbstract: We present a zero-shot framework for long-horizon dexterous manipulation that grounds language instructions into executable 3D task plans from calibrated multi-view RGB images. Rather than training an end-to-end policy, our system uses a vision-language model (VLM) to produce reference-frame task grounding and primitive-level 2D keypoints, then lifts them into 3D via multi-view fusion. This lifting combines triangulation of view-wise VLM groundings with reference-view ray voting, which searches along a semantic camera ray for geometrically consistent candidates across neighboring views. The resulting 3D keypoints support both pick-and-place and tool-use: for tool-use, we retrieve an object-centric atomic action corresponding to the inferred skill category and align its stored 6D tool trajectory to the scene; for dexterous execution, we expand the lifted grasp keypoint into a task-conditioned grasp affordance region and generate feasible grasp-motion pairs with an arm-hand motion generator. Real-world experiments show improved 3D grounding accuracy and execution reliability over single-view RGB-D grounding and fine-tuned VLA baselines. We further demonstrate long-horizon manipulation through closed-loop status verification and replan, enabling zero-shot execution on unseen objects and tool-use tasks in novel scenes."
   }
 ]
