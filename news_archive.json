@@ -1,5 +1,77 @@
 [
   {
+    "title": "MoMo: 시공간 액션 토큰화를 활용한 로봇 매니퓰레이션의 운동 모드 다이얼링",
+    "original_title": "MoMo: Dial Motion Mode in Robot Manipulation with Spatiotemporal Action Tokenization",
+    "link": "https://arxiv.org/abs/2607.26315",
+    "date": "2026-07-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇이 다양한 환경에 적응하기 위한 행동 변이 학습에 초점을 맞춰, MoMo라는 2단계 모방 학습 프레임워크를 제시함. 이는 시공간 액션 토크나이저와 동작 복제 트랜스포머를 통해 과제와 연속적인 운동 모드 조건을 받아 행동을 학습하는 방식임. 실험 결과, MoMo는 기존에 학습하지 않은 과제와 모드의 조합에도 일반화가 가능함을 입증하며, 운동 모드가 매니퓰레이션 스킬의 수행 방식 자체를 제어할 수 있다는 점을 보여줌."
+  },
+  {
+    "title": "저비용 사족보행 하드웨어에서의 강화 학습 적용",
+    "original_title": "Reinforcement Learning on Cost-Constrained Quadrupedal Hardware",
+    "link": "https://arxiv.org/abs/2607.26434",
+    "date": "2026-07-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "저가형 로봇 플랫폼에서의 제어 정책 적용 시 액추에이터 지연으로 인한 심-현실 격차(sim-to-real gap) 발생. 본 연구는 생체 모방적 접근을 통해 노이즈 및 지연 피드백을 처리하는 방법을 제안함. 시간 인식 신경망(time-aware neural network)과 평균 액추에이터 지연을 결합한 순방향 모델(forward model)을 사용하여, 최대 320ms의 지연에도 강건한 로커모션이 가능하며, 생물체의 척수에서 발견되는 중앙 패턴 발생기(CPG: Central Pattern Generator)가 학습됨을 보고함."
+  },
+  {
+    "title": "Speech2Grasp: 휴머노이드 로봇을 위한 텍스트 조건부 그리핑 감지 기능의 음성 기반 데이터 효율적 전환",
+    "original_title": "Speech2Grasp: Data-Efficient Transfer of Text-Conditioned Grasp Detection to Speech in Humanoid Robots",
+    "link": "https://arxiv.org/abs/2607.26567",
+    "date": "2026-07-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "휴머노이드 로봇의 자연스러운 상호작용을 위해 다중 모드 이해가 요구됨에 따라, 본 논문은 Text-Conditioned Grasp Detection 모델을 음성 입력으로 데이터 효율적으로 전이하는 Speech2Grasp 프레임워크를 제시함. ALBEF를 사례 연구로 활용한 분석을 통해, 경량의 MLP 기반 프로젝트어가 의미 구별 및 강건성 유지와 동시에 음성 입력 적응이 가능함을 입증함. 실제 로봇 실험 결과, Speech2Grasp는 기존의 ASR 기반 파이프라인 대비 우수한 성능과 낮은 추론 지연 시간을 달성한 것으로 보고됨."
+  },
+  {
+    "title": "레이더를 활용한 에고-속도 추정의 밀집 소프트 가중치화 기법",
+    "original_title": "Dense Soft Weighting for Radar Ego-Velocity Estimation",
+    "link": "https://arxiv.org/abs/2607.26980",
+    "date": "2026-07-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "카메라 및 LiDAR 기반 센서의 신뢰도가 떨어지는 환경에서 에고-속도 추정은 핵심 기술임. 기존 레이더 방식이 CFAR 임계치 적용으로 잠재적 움직임 정보를 가진 데이터를 손실시키는 문제를 해결함. 연구진은 모든 range-Doppler 셀을 이진 임계치 대신 연속적인 신뢰도 지표로 매핑하는 Dense Soft Weighting 기법을 개발하고, 이를 통해 에고-속도를 보다 정확하게 추정하며 최대 45%의 에러 감소를 달성하는 것이 주요 성과임."
+  },
+  {
+    "title": "케이블 구동 로봇을 위한 새로운 비선형 적응 법칙을 이용한 시간 지연 제어",
+    "original_title": "Time-delay Control Using a New Nonlinear Adaptive Law for Cable-Driven Robots",
+    "link": "https://arxiv.org/abs/2607.26383",
+    "date": "2026-07-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "케이블 구동 매니퓰레이터의 비선형성과 낮은 강성 문제를 해결하기 위해 Time-delay-Estimation (TDE) 기반의 적응 분수 차수 비특이 단말 슬라이딩 모드 (AFONTSM) 제어 전략 제시됨. 본 연구의 핵심은 적응 지수(adaptive exponential term)를 포함한 새로운 적응 법칙으로, 노이즈 유발 채터링을 억제하면서 트래킹 성능을 개선하는 메커니즘을 구현함. 실험 결과, 제안된 컨트롤러가 기존 방식 대비 RMSE, ITAE 등 주요 성능 지표에서 높은 개선율을 달성하며 로봇의 로버스트성과 반복성을 입증함."
+  },
+  {
+    "title": "TurboVLA: RTX 4090 환경에서 32Hz로 구동되는 초저전력 실시간 VLA 모델 제시",
+    "original_title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM",
+    "link": "https://arxiv.org/abs/2607.27205",
+    "date": "2026-07-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 VLA 모델의 고비용 LLM 중심 V $\\to$ L $\\to$ A 경로를 대체한 TurboVLA는, 시각 정보와 언어 명령어를 독립적으로 인코딩하고 경량한 양방향 상호작용을 통해 직접 V + L $\\to$ A 매핑을 구현함. 이로써 대형 언어 모델 사용에 따른 과도한 연산 및 메모리 비용을 획기적으로 절감하였음. TurboVLA는 RTX 4090 환경에서 높은 성공률과 낮은 추론 지연 시간을 달성하며, 효율적인 로봇 매니퓰레이션을 위한 새로운 VLA 패러다임을 제시함."
+  },
+  {
+    "title": "휴머노이드 로봇 계단 등반을 위한 지각 기반 보행 프레임워크, PolyMap",
+    "original_title": "PolygMap: A Perceptive Locomotion Framework for Humanoid Robot Stair Climbing",
+    "link": "https://arxiv.org/abs/2510.12346",
+    "date": "2026-07-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "로봇이 미지 공간에서 인간 보행을 모방하기 위해, 본 연구는 PolyMap이라는 지각 기반 보행 계획 프레임워크를 제시함. 이 프레임워크는 LiDAR, RGB-D 카메라, IMU 등 멀티센서 퓨전을 활용하여 실시간 다각형 계단 평면 시맨틱 맵을 구축하고, 이를 바탕으로 보폭 계획을 수행함. NVIDIA Orin 플랫폼에 구현되어 20~30 Hz의 전신 움직임 계획 출력을 보여주며, 실내외 실험에서 뛰어난 효율성과 견고함을 입증함."
+  },
+  {
+    "title": "LLM 기반 계층적 시간 논리를 활용한 인간 인지형 다중 로봇 핸드오버 동적 작업 계획",
+    "original_title": "LLM-Grounded Dynamic Task Planning with Hierarchical Temporal Logic for Human-Aware Multi-Robot Handover",
+    "link": "https://arxiv.org/abs/2602.09472",
+    "date": "2026-07-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "LLM이 생성한 다중 로봇 작업 계획의 기구학적 비현실성 및 비효율성 문제를 해결하기 위해, 본 연구는 인간 지침을 계층적 LTLf 사양으로 기반화하고 STAP 문제를 해결하는 뉴로-심볼릭 프레임워크를 제시함. 이 시스템은 Receding Horizon Planning(RHP) 루프를 활용하여 사용자 움직임과 같은 확률적 환경 변화에 실시간으로 대응하며, 기존 방식 대비 성공률과 상호작용의 유창성 측면에서 우수한 성능을 입증함."
+  },
+  {
     "title": "중국, 미국 휴머노이드 로봇 규제에 보복 위협하며 양국 관계 훼손 주장",
     "original_title": "China threatens retaliation against U.S. humanoid robot ban, says it 'severely damages' relations - cnbc.com",
     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOX1UxZDZBTnlWTGNJa09BWWx4Y3p4TDVNTWd3OG9NS2o1YmRGUV9pa1ZYbmo0c2dBOWxUNkNfdWR2MjVQcmlhWG9tMG1Ha0FnM2hydDFFTDE2SFk2MTE5ME82dDFCUldQRFhfYmhrMnBiNklaV2daTEJYSXhFVzBQbG1R0gGHAUFVX3lxTE1HQTdaTkZZbUxjbmlBS1E1eXBIWEF2eS1kM0RTMWZaUkd2NWw1QS1SVm1BdkVOWFZ6U3FCZk94dUdEelh2YmJrYWFZVXd3MEMtc016QWpBdVlXT0E3VzBQbmNOWjk2VWFRUUJvMm91QUY1VzJMUC1JdzFsQndZd05PdmRUSzdXMA?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.18953v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models can generalize across diverse manipulation tasks, but their imitation-learning-based policies remain brittle in precise physical interactions due to compounding execution errors; Can a reinforcement learning policy trained purely in simulation improve the robustness of real-world VLAs zero-shot? Residual RL, which learns a corrective policy on top of a frozen VLA, offers a natural framework, but existing approaches face a fundamental sim-to-real dilemma: privileged-state methods require lossy distillation for deployment; image-based methods suffer from the visual domain gap; and real-world RL is costly and unsafe. We propose an object-centric residual RL framework that refines VLA actions using object poses, enabling a compact observation space that transfers consistently between simulation and reality. To align the two domains, we additionally replay the same teleoperation demonstrations in simulation to train a sim counterpart of the real-world VLA. The residual RL policy is trained only in simulation with pose noise injection and dropout, and transfers zero-shot to the real robot. Across five manipulation tasks on a real Franka Research 3 (FR3) robot, our method improves the success rate from 42% to 76% zero-shot, and the improved rollouts can be further reused to retrain the base VLA for self-improvement without additional teleoperation. Project page: https://www.microsoft.com/en-us/research/articles/object-centric-residual-rl/"
-  },
-  {
-    "title": "TactSpace: Learning a Physics-enriched Shared Latent Space for Tactile Sim-to-Real Transfer",
-    "original_title": "TactSpace: Learning a Physics-enriched Shared Latent Space for Tactile Sim-to-Real Transfer",
-    "link": "https://arxiv.org/abs/2606.18959",
-    "date": "2026-06-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.18959v1 Announce Type: new \nAbstract: Tactile sensing provides direct measurements of contact interactions that are essential for robotic manipulation. However, current simulators lack the fidelity to faithfully model the complex deformation and transduction mechanics of tactile sensors, severely hindering sim-to-real transfer in robot learning pipelines. To address this challenge, we propose a multi-modal representation learning framework that aligns heterogeneous tactile modalities within a shared latent space, eliminating the need for accurate raw-signal simulation while preserving relevant contact information. Our approach employs modality-specific encoders to project diverse tactile observations, such as simulated penetration depth and real-world capacitance, into a common embedding space. The model is trained using self- and cross-reconstruction objectives alongside contrastive alignment, encouraging modality-invariant yet information-rich representations. We evaluate the learned embeddings on indenter shape identification, force prediction, and geometric reconstruction tasks, training exclusively in simulation and testing directly on real sensor measurements. Our results demonstrate zero-shot sim-to-real transfer across physically dissimilar representations. Furthermore, incorporating multi-physics simulation modalities yields more informative embeddings that transfer across diverse downstream tasks, demonstrating a 16.7% reduction in force prediction error and a 45.8% reduction in shape reconstruction error. Finally, we release an efficient Warp-based implementation of a penalty-based tactile simulation model for Isaac Lab, enabling scalable tactile data generation."
-  },
-  {
-    "title": "Sensor Configuration Matters: A Systematic Evaluation of Multimodal SLAM on Quadruped Robots",
-    "original_title": "Sensor Configuration Matters: A Systematic Evaluation of Multimodal SLAM on Quadruped Robots",
-    "link": "https://arxiv.org/abs/2606.19067",
-    "date": "2026-06-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19067v1 Announce Type: new \nAbstract: Autonomous navigation of quadrupedal robots in diverse environments fundamentally relies on resilient Simultaneous Localization and Mapping (SLAM). While visual-inertial SLAM has matured across wheeled, handheld, and aerial platforms, a critical evaluation gap remains regarding how hardware-level sensor configurations affect performance under the aggressive dynamics of legged locomotion. Quadrupeds introduce distinct embodiment-induced sensory challenges, including foot-impact shocks, high-frequency mechanical vibrations, and rapid angular rotations, which degrade standard perception pipelines. To address this gap, we present a systematic evaluation of state-of-the-art visual, visual-inertial, and LiDAR-visual-inertial SLAM methods using the GrandTour dataset recorded on an ANYmal D quadruped. We isolate and quantify the impacts of camera modalities, shutter techniques, and inertial sensor tiers, analyzing their trade-offs across localization accuracy, algorithmic robustness, and computational resource utilization. Our empirical findings demonstrate that hardware selection has substantial influence on system resilience: stereo configurations consistently outperform monocular and RGB-D modalities, global shutter cameras significantly mitigate motion-induced tracking failures compared to rolling shutter cameras, and, crucially, standard inertial integration can degrade the performance of primarily vision-based frameworks under harsh legged locomotion. These insights additionally offer concrete design guidelines for tailoring custom sensor payloads to achieve dependable perception on agile legged systems."
-  },
-  {
-    "title": "ReSiReg: Towards Spatially Consistent Semantics in Language-Conditioned Robotic Tasks",
-    "original_title": "ReSiReg: Towards Spatially Consistent Semantics in Language-Conditioned Robotic Tasks",
-    "link": "https://arxiv.org/abs/2606.19088",
-    "date": "2026-06-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19088v1 Announce Type: new \nAbstract: Vision-Language Models (VLMs) enable robots to follow open-language instructions. However, dense VLM embeddings have shown to be noisy and lack spatial consistency. This is problematic for robotic applications, which require simultaneous reasoning over semantics and 3D space. We examine spatial structure across recent VLMs and propose ReSiReg, a feature reconstruction method that uses spatially consistent VLM intermediates to improve dense language-grounded retrieval. ReSiReg clusters intermediates into visual prototypes, derives their language descriptors, and reconstructs each patch as a soft mixture of prototype-level language embeddings. We evaluate quantitatively on OVSS and 3D mapping across backbones, and qualitatively in real-world manipulation scenes. Quantitative results show improved dense retrieval; manipulation scenes show more spatially consistent target activations. We further provide a compact 25M dense VLM for robotic applications, substantially smaller than and competitive with ViT-B baselines. Available at https://resireg.github.io"
-  },
-  {
-    "title": "ART-VS: Adaptive Resolution Tiling for Vision Transformer Visual Servoing",
-    "original_title": "ART-VS: Adaptive Resolution Tiling for Vision Transformer Visual Servoing",
-    "link": "https://arxiv.org/abs/2606.19089",
-    "date": "2026-06-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19089v1 Announce Type: new \nAbstract: Visual servoing with self-supervised Vision Transformer (ViT) features enables training-free robotic positioning with strong generalization, but faces a fundamental trade-off between robustness and precision. Coarse patch-level descriptors provide stable correspondences yet limit positioning accuracy. Increasing image resolution improves precision but yields only marginal robustness gains - under perturbation, high-resolution processing improves convergence success rate from 76.6% to just 81.0% despite 12x more ViT patches. Therefore, we propose Adaptive Resolution Tiling Visual Servoing (ART-VS), a two-phase method that adapts feature granularity to servoing progress: a coarse phase at native ViT resolution for stable alignment, then a tiled high-resolution phase that restricts matching to local neighborhoods improving positioning accuracy. Without any task-specific training, ART-VS achieves 95.4% convergence under perturbation, outperforming standard and full-resolution ViT-based servoing by 18.8 and 14.4 percentage points. Over the former it reduces positioning error by 53%, while running at over 10x higher speed and 27% lower VRAM than the latter. We validate ART-VS across three ViT backbones and demonstrate real-world category-level grasping of unseen object instances, achieving 95/100 on transparent bottles and 98/100 on shoes. Code available under https://art-vs.github.io/."
-  },
-  {
-    "title": "GCNGrasp-VP: Affordance-Guided View Planning for Efficient Task-Oriented Grasping",
-    "original_title": "GCNGrasp-VP: Affordance-Guided View Planning for Efficient Task-Oriented Grasping",
-    "link": "https://arxiv.org/abs/2606.19091",
-    "date": "2026-06-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19091v1 Announce Type: new \nAbstract: Task-oriented grasping performance degrades significantly when object views suffer from occlusions. Existing task-oriented grasping methods typically assume task-relevant regions are visible in the initial frame, while view planning approaches enable active perception but often ignore task semantics and rely on time-consuming scene reconstruction. To address these limitations, we present GCNGrasp-VP, an efficient framework integrating affordance field prediction with active view planning. Central to this framework is GCNGrasp-v2, a task-oriented grasp model that simultaneously supports grasp evaluation and affordance field prediction, achieving constant-time inference complexity. Leveraging this capability, our Affordance-guided View Planner (Affordance-VP) utilizes the affordance field as an information gain metric to guide camera observation of task-relevant regions without requiring scene reconstruction. View planning results show that our method significantly outperforms scene-uncertainty-driven baselines with only one view adjustment. Real-world validation further confirms substantial improvements in grasp success rates for single-object scenarios while maintaining millisecond-level computational latency. Code and models are available at https://github.com/Instinct323/GCNGrasp-VP."
-  },
-  {
-    "title": "HT-Bench: Benchmarking and Learning Dexterous Full-Hand Tactile Representations with Egocentric Vision",
-    "original_title": "HT-Bench: Benchmarking and Learning Dexterous Full-Hand Tactile Representations with Egocentric Vision",
-    "link": "https://arxiv.org/abs/2606.19161",
-    "date": "2026-06-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19161v1 Announce Type: new \nAbstract: Establishing a universal benchmark for tactile representation learning in robotic manipulation remains challenging due to the diversity of tactile sensor designs, data formats, and robot embodiments. Rather than seeking to establish such, we explore a scalable and promising direction for future development: egocentric vision paired with full-hand tactile data. To this end, we introduce \\textbf{HT-Bench}, a large-scale multi-task benchmark for dexterous full-hand tactile sensing, comprising 10M RGB frames and 7.8M tactile frames collected across 226 tasks. HT-Bench evaluates tactile representations from three key perspectives: whether they encode meaningful contact geometry, whether they can align tactile observations with visual information, and whether they generalize to unseen tasks. To assess these capabilities, HT-Bench includes four tasks: fine-grained tactile similarity retrieval, masked tactile inpainting, vision-to-tactile synthesis, and multimodal tactile frame prediction. We further propose \\textbf{HandTouch}, a vector-quantized vision--tactile encoder that learns tactile representations through progressive spatial, cross-modal, and temporal training. Across HT-Bench, HandTouch consistently outperforms representative tactile encoder baselines, improving Recall@5 on fine-grained tactile similarity retrieval from 74.65\\% to 85.23\\%, reducing RMSE on masked tactile inpainting from 0.022 to 0.010, and increasing OOD cIoU on vision-to-tactile synthesis from 0.628 to 0.705. These results demonstrate the effectiveness of HandTouch and suggest that large-scale egocentric full-hand tactile data provides a scalable basis for evaluating and advancing tactile representation learning in dexterous manipulation."
-  },
-  {
-    "title": "Invertible Neural Network Adapter for One-Step Flow Matching in Robot Manipulation",
-    "original_title": "Invertible Neural Network Adapter for One-Step Flow Matching in Robot Manipulation",
-    "link": "https://arxiv.org/abs/2606.19194",
-    "date": "2026-06-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19194v1 Announce Type: new \nAbstract: This paper presents an invertible neural network adapter for general robotic manipulation, designed to generate precise high-dimensional actions conditioned on multimodal observations, including visual, linguistic, and proprioceptive inputs, through a one-step denoising process. Built upon a flow-matching formulation, the proposed adapter effectively constrains the action generation trajectory within an invertible latent space, thereby enabling efficient and high-quality dexterous action synthesis with only a single inference step. Compared with conventional iterative flow-matching policies, the proposed framework substantially reduces inference complexity while maintaining strong action prediction accuracy and stability. Extensive experiments are conducted across a diverse set of simulation benchmarks and real-world robotic platforms to evaluate the effectiveness of the proposed method. Across simulation benchmarks, the proposed adapter consistently demonstrates superior or near state-of-the-art performance on a wide range of manipulation tasks. Furthermore, real-world experiments reveal a significant improvement in inference efficiency for vision-language-action (VLA) models, reducing the average inference latency from 110 ms to 61 ms while maintaining strong task performance."
-  },
-  {
-    "title": "Constant Time-Delay Leader Following with Neural Networks and Invariant Extended Kalman Filters for Arbitrary Trajectories",
-    "original_title": "Constant Time-Delay Leader Following with Neural Networks and Invariant Extended Kalman Filters for Arbitrary Trajectories",
-    "link": "https://arxiv.org/abs/2606.19227",
-    "date": "2026-06-18 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19227v1 Announce Type: new \nAbstract: This paper proposes a constant time-delay trajectory tracking method for vehicle convoys operating without inter-vehicle communication, a common coordinate system, or global positioning. The method integrates a probabilistic sequence-to-sequence (Seq2Seq) neural network with an invariant extended Kalman filter (IEKF) to warm-start the prediction process, allowing accurate estimation of a leader vehicle's relative trajectory on the SE(2) manifold. A geometric model predictive controller is further incorporated to fully exploit the manifold-based trajectory predictions for improved control performance. The system can handle arbitrary nonlinear trajectories with varying speeds and motion profiles while reducing the need for expert-based domain knowledge for the design of trajectory following systems, even under long trajectory delays. The effectiveness of the method is validated through comparisons with a pure IEKF baseline, learning-based methods, and the ground-truth trajectory in kinematic simulations, as well as in experiments using real robotic vehicles."
   }
 ]
