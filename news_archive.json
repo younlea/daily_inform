@@ -531,6 +531,15 @@
     "summary": "기존 SIGReg은 단일 태스크 환경에서 안정적인 World Model 학습을 구현했으나, 다중 작업 환경에서는 표현 압축 및 태스크 간 클러스터 분리 정보 손실이라는 근본적인 한계가 존재함. 본 연구에서는 잠재 변수 분포 전체에 적용하는 대신, 시간 축 기반의 잔차(temporally centered residuals)에 SIGReg을 적용하는 새로운 방법을 제안함. 해당 기법은 태스크 간의 분리성을 유지하면서도 모델의 안정성을 확보하여, LIBERO 벤치마크 등에서 평균 성공률을 53.2%에서 73.6%로 크게 향상시키는 성과를 입증함."
   },
   {
+    "title": "센서 배치에 구애받지 않는 소노미오그래피: 사지마비 환자의 연속적 고차원 제어 방향",
+    "original_title": "Sensor-Placement-Agnostic Sonomyography: Toward Continuous High-Dimensional Control by Users with Tetraplegia",
+    "link": "https://arxiv.org/abs/2607.26401",
+    "date": "2026-07-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 기존 SMG(Sonomyography) 시스템의 한계였던 데이터 의존성 및 낮은 자유도 문제를 해결하기 위해, 최소 보정으로 실시간 구동 가능한 센서 배치에 무관한(Sensor-placement-agnostic) SMG 제어 시스템을 제시함. 1~2자유도(DOF) 제어 시스템을 척추 손상 환자 및 건강한 피험자를 대상으로 평가한 결과, 다양한 부위의 센서 위치와 관계없이 연속적인 제어 및 2D 그리기 작업이 성공적으로 수행됨을 입증함. 해당 알고리즘을 OpenMyoControl 프로젝트로 공개하며, SMG를 통한 빠르고 고차원적인 웨어러블 디바이스 제어의 높은 가능성을 제시함."
+  },
+  {
     "title": "중국, 미국 휴머노이드 로봇 규제에 보복 위협하며 양국 관계 훼손 주장",
     "original_title": "China threatens retaliation against U.S. humanoid robot ban, says it 'severely damages' relations - cnbc.com",
     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOX1UxZDZBTnlWTGNJa09BWWx4Y3p4TDVNTWd3OG9NS2o1YmRGUV9pa1ZYbmo0c2dBOWxUNkNfdWR2MjVQcmlhWG9tMG1Ha0FnM2hydDFFTDE2SFk2MTE5ME82dDFCUldQRFhfYmhrMnBiNklaV2daTEJYSXhFVzBQbG1R0gGHAUFVX3lxTE1HQTdaTkZZbUxjbmlBS1E1eXBIWEF2eS1kM0RTMWZaUkd2NWw1QS1SVm1BdkVOWFZ6U3FCZk94dUdEelh2YmJrYWFZVXd3MEMtc016QWpBdVlXT0E3VzBQbmNOWjk2VWFRUUJvMm91QUY1VzJMUC1JdzFsQndZd05PdmRUSzdXMA?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.20193v1 Announce Type: new \nAbstract: Parallel-jaw grippers are the default manipulator choice in robotics because they are simple, robust, and inexpensive. Their limited in-hand mobility, however, often forces large arm motions and restricts dexterous manipulation in confined workspaces. We present a parallel-gripper upgrade: a double-soft-belt-based finger module that preserves standard opening/closing while adding three in-hand degrees of freedom (DoF): translation, pitch, and roll. The mechanism is deliberately kept simple and engineered for inexpensive manufacturing and straightforward integration, preserving the reliability and precise control of traditional parallel grippers while greatly broadening the range of manipulation capabilities. To demonstrate the utility of the added DoFs, we integrate the gripper in two control pipelines. First, we adapt a model predictive controller for in-hand manipulation of known objects. Second, we introduce a lightweight teleoperation interface that enables simultaneous control of the robot arm and gripper (10 DoFs total) with minimal hardware. Across a suite of challenging manipulation tasks executed via teleoperation, MPC, and trained policies, the proposed gripper consistently improves dexterity and task feasibility compared to a conventional parallel gripper"
-  },
-  {
-    "title": "Mobile Target Search with Imperfect Perception: A Partially Observable Stochastic Game Theoretical Approach",
-    "original_title": "Mobile Target Search with Imperfect Perception: A Partially Observable Stochastic Game Theoretical Approach",
-    "link": "https://arxiv.org/abs/2606.20232",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.20232v1 Announce Type: new \nAbstract: This paper investigates mobile target search under imperfect perceptions caused by sensor limitations, malicious jamming, or communication noise. Searchers and targets operate in a grid-shaped area with bounded mobility, leading to a dynamic interplay between search and evasion. To capture this adversarial interaction under imperfect perceptions, we adopt the partially observable stochastic game (POSG) approach, which generalizes partially observable Markov decision processes (POMDPs) by incorporating target intelligence. To handle false alarms and missed detections caused by perceptual uncertainties, we propose a novel detectability concept to determine whether a search strategy guarantees eventual detection, and provide sufficient detectability criteria based on stochastic recurrence analysis. We further develop a server-assisted distributed algorithm that utilizes the aggregative potential game structure for searchers and a KL-divergence-based reduction for target prediction. Numerical simulations validate the effectiveness of the proposed algorithm and support the detectability analysis."
   }
 ]
