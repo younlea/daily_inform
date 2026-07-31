@@ -1,5 +1,77 @@
 [
   {
+    "title": "DexDirect: 정교한 시연 데이터 수집을 위한 직접 운동학 팔 안내",
+    "original_title": "DexDirect: Direct Kinesthetic Arm Guidance for Efficient Dexterous Demonstration Collection",
+    "link": "https://arxiv.org/abs/2607.27784",
+    "date": "2026-07-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 학습의 병목 지점인 정교한 시연 데이터 수집 효율성 제고를 위해 DexDirect가 개발됨. 이는 사용자가 6-DoF 로봇 팔을 직접 조작하며 웹캠을 통해 나머지 손을 13-DoF 로봇 손에 재타겟팅하는 방식임. 연구 결과, 기존 방식 대비 월등히 높은 성공률로 시연 데이터가 수집되었으며, 이를 학습한 정책이 큐브 집기 작업에서 90%의 성공률을 달성하는 등 저비용으로 고효율을 구현하는 새로운 인터페이스임을 제시함."
+  },
+  {
+    "title": "RoboBRIDGE: 정책 지식을 활용하여 견고한 실세계 로봇 에이전트를 구축하는 모듈형 프레임워크",
+    "original_title": "RoboBRIDGE: A Modular Framework for Bridging Policies to Robust Real-World Robotic Agents",
+    "link": "https://arxiv.org/abs/2607.27881",
+    "date": "2026-07-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "VLA(Vision-Language-Action) 모델이 로봇 매니퓰레이션의 핵심 기술로 주목받으나, 실세계 환경에서의 실패 복구, 장기적 일관성, 관측 변화에 대한 견고성 확보에 한계점이 있음. 이를 극복하기 위해 발표된 RoboBRIDGE는 Monitor, Perceptor, Planner, Controller 등 5개 코디네이션 모듈로 구성된 모듈형 프레임워크임. 본 프레임워크는 기존 VLA를 기반으로 로봇 에이전트를 체계적으로 구성하며, 구조적 오케스트레이션을 통해 기존 정책만으로 얻기 어려운 신뢰성 높은 로봇 에이전트 구동이 가능함을 실증적으로 입증함."
+  },
+  {
+    "title": "UniCross: 통합 교차 스킬을 활용한 정교 조작 합성",
+    "original_title": "UniCross: Unified Cross-Skill Dexterous Manipulation Synthesis",
+    "link": "https://arxiv.org/abs/2607.28198",
+    "date": "2026-07-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 정교 조작(dexterous manipulation)에 필요한 파지(grasping), 위치 이동(relocation), 손목 회전(in-hand rotation), 손목 병진(in-hand translation) 네 가지 핵심 스킬을 단일 통합 프레임워크로 모델링함. 이 접근법은 기존 개별 스킬 모델이 가진 연속성 및 호환성 문제를 해결하여, 단일 교차 스킬 정책(cross-skill policy)을 통해 높은 범용성과 강한 성능을 구현함을 입증함. 결과적으로, 이 프레임워크는 다양한 손 형태(hand morphologies)를 넘나들며 스킬을 매끄럽게 연결하는 장기적 조작(long-horizon manipulation) 수행에 활용 가능함."
+  },
+  {
+    "title": "Mechanics-Aware Tactile Prediction을 활용한 앵커 기반 월드 액션 모델, TacWAM",
+    "original_title": "TacWAM: Anchor-Guided World Action Model with Mechanics-Aware Tactile Prediction",
+    "link": "https://arxiv.org/abs/2607.28391",
+    "date": "2026-07-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 World Action Model(WAM)은 접촉 기반 조작에 필요한 힘, 변형, 미끄러짐 등 물리적 촉각 예측 정보를 부족하게 다루는 문제점을 가짐. TacWAM은 Spatially Aligned Fusion(SAF) Tactile Encoder, Tactile History Encoder, Anchor-Guided Tri-Modal Attention을 결합하여 메커니즘 인식 촉각 예측을 수행함. 실제 접촉 중심의 조작 과제에서 평균 성공률 75.0%를 달성하며, 이는 기존 최고 성능 기준 대비 큰 폭의 성능 개선을 보여준 결과임."
+  },
+  {
+    "title": "FasTac: 고속·고정밀 3D 형상 및 힘 인식을 위한 곡면 멀티스펙트럴 비전 기반 촉각 센서 기술 개발",
+    "original_title": "FasTac: A Curved Multispectral Vision-Based Tactile Sensor for High-Speed High-Precision 3D Shape and Force Perception",
+    "link": "https://arxiv.org/abs/2607.28416",
+    "date": "2026-07-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 곡면 촉각 센서의 한계를 극복하기 위해, FasTac은 멀티스펙트럴 포토메트릭 스테레오와 다이내믹 컨볼루션 힘 추정 기법을 통합한 비전 기반 촉각 센서임. 본 시스템은 FPGA에 구현되어 깊이 재구성 정확도를 대폭 향상(MAE 0.2730 mm → 0.0415 mm)하고, 프로세싱 지연 시간도 GPU 대비 3.26 ms에서 1.09 ms로 단축됨. 이로써 고정밀 3D 형상 파악과 안정적인 3축 힘 피드백이 가능한 차세대 로봇 그리핑 및 접촉 센싱 기술의 가능성을 입증함."
+  },
+  {
+    "title": "SharedAssembly: 공유 원격 조립을 통한 데이터 수집 접근법",
+    "original_title": "SharedAssembly: A Data Collection Approach via Shared Tele-Assembly",
+    "link": "https://arxiv.org/abs/2503.12287",
+    "date": "2026-07-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고정밀 및 좁은 간격의 조립(assembly) 데이터 확보가 필요한 상황에서, 양방향 공유 자율성(shared-autonomy) 기반의 새로운 원격 조작 프레임워크 SharedAssembly를 제안함. 이 시스템은 조립별 인텔리전스를 결합하여 서브-밀리미터 수준의 까다로운 작업에서도 97%의 높은 성공률을 달성함. 또한, 숙련도의 장벽을 효과적으로 제거하여 초보자도 전문가 수준의 성능 발휘가 가능하게 함으로써, 접촉 기반 조작(contact-rich manipulation) 분야의 데이터 대규모 수집을 위한 효율적이고 접근성 높은 솔루션으로 기능함."
+  },
+  {
+    "title": "공중에 매달린 이족 보행 로봇에 인간 동작을 재현하기 위한 3단계 오프라인 SDRE 기반 제어 프레임워크 제시",
+    "original_title": "A Three-Stage Offline SDRE-Based Control Framework for Human Motion Reproduction on a Suspended Bipedal Robot",
+    "link": "https://arxiv.org/abs/2506.04680",
+    "date": "2026-07-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "Exoskeleton 테스트 과정에서 인간 사용자에게 위험을 줄이기 위해, 인간의 하체 동작을 로봇 하드웨어 실행 명령으로 변환하는 3단계 오프라인 프레임워크를 개발함. 본 프레임워크는 State-Dependent Riccati Equation (SDRE) 제어 기반의 목표 토크를 설정하고, 매개변수 최적화 및 PID-LQR 보상 과정을 거쳐 동작 명령을 생성하는 방식임. 그 결과, 해당 방법은 낮은 RMSE 및 STD 값을 기록하며, 인간 대상 실습 전 예비 테스트 환경으로서 높은 반복성과 작동 가능성을 제공함을 입증함."
+  },
+  {
+    "title": "REFINE-DP: 강화학습을 이용한 휴머노이드 보행 및 조작(Loco-manipulation)을 위한 Diffusion Policy 미세 조정",
+    "original_title": "REFINE-DP: Diffusion Policy Fine-tuning for Humanoid Loco-manipulation via Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2603.13707",
+    "date": "2026-07-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "휴머노이드 로봇의 복잡한 보행 및 조작(loco-manipulation)은 운동 계획과 제어기의 안정적인 결합이 필수적임. 본 연구는 DP 운동 계획과 RL 제어기를 공동으로 최적화하는 계층적 프레임워크인 REFINE-DP를 제시함. REFINE-DP는 PPO 기반의 미세 조정을 통해 분포 불일치(distributional mismatch)를 최소화하고, 시뮬레이션 및 실세계 환경에서 90% 이상의 높은 성공률과 신뢰성을 달성함을 입증함."
+  },
+  {
     "title": "FCC, 신규 수입 금지 기조 속 주요 AI 분야 중국 휴머노이드 특허 5배 급증 - Tech Times",
     "original_title": "China Humanoid Patents Surge Fivefold in Key AI Category as FCC Bans New Imports - Tech Times",
     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTkVyM04zdlRRdjk3UmRJZFh0VlQzQkVBTm90aUs3aXlOTHBOVzJBT21WbG16WVl3dklCSVA1dUZSYW9nR1dwUXpMOThud2ZiTGZnTjlkRGRCYy0xSlBTbmNSRy1rRC10eTBJOEhKdkprWGJraThrbFBOc0hRdC10ZktsUTRWcjFocUFGWDZ0MzRoYUstTmdFYlA5b1REVXFDTEJXaHNQOEpoak9IUGUycl90LTl0OUlHOHloTVBjTDNUYVU1dUpaNA?oc=5",
@@ -7,6 +79,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Tech Times 보도에 따르면, FCC의 신규 수입 금지 조치가 배경이 되면서 중국의 휴머노이드 관련 특허 출원이 핵심 AI 분야에서 5배가량 급증한 것으로 분석됨. 이는 글로벌 시장 변화 속에서 중국이 로보틱스 및 AI 기술 분야의 특허 경쟁력을 극대화하고 있음을 시사함."
+  },
+  {
+    "title": "Unitree Robotics, 6억 1,900만 달러 목표 상하이 IPO 도전과 미국 제재 리스크 직면",
+    "original_title": "Unitree Robotics heads into its Shanghai IPO with a $619 million target and a US ban hanging over it - Startup Fortune",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQWsyVW81OFF1Q0lCSEwxaXZvYk9lMWJCd1l0T3cxMjhUaHRsbmVpbUhyTno0ZEplcW1iVjJBVDVoQ3hQS1g4aTltekh3Q19JVmw5YjRhTzFIMUNaS2RNV1JkckdXbEEyR0trNi1FM2s5ZVdoZnZVLVg5b0JSSnMwXy1URVBKdHR3Y3h6SGJ3MFMxbkJIeWxSMmpwVk1fMklvSW56NzBHdTA5SHhURndjM1lSRWFCNmpxYnRFajhyN2U5SXp4NlE?oc=5",
+    "date": "2026-07-30 23:58",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree Robotics가 6억 1,900만 달러 규모의 상하이 증시 상장(IPO)을 추진함. 다만, 미국 정부의 수출 통제 및 제재 리스크가 상장 과정에 중요한 걸림돌로 작용하는 상황임. 이에 회사는 국제적인 시장 상황 및 규제 대응이 필수적인 과제로 부상함."
   },
   {
     "title": "2026년 로보틱스 변화를 주도할 5대 물리적 AI 인프라 플랫폼 제시",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.19656v1 Announce Type: new \nAbstract: A natural recipe for intelligent robotic decision-making is initializing from pretrained generative control policies, which have summarized offline experience, and adapting them to self-collected online experience. We present DF-ExpEnse, an exploration technique that improves the quality of online experience collection, thus increasing finetuning sample-efficiency. DF-ExpEnse leverages the multimodal modeling capabilities of the generative control policy to create an expressive and tractably evaluatable candidate set. It then utilizes an ensemble of critics to identify the action that best balances quality with high exploration interest. In fleet settings, DF-ExpEnse further enables cross-agent communication to facilitate collaborative exploration as a group. DF-ExpEnse can be seamlessly integrated with existing strategies that finetune pretrained generative control policies via reinforcement learning. We experimentally validate consistent sample-efficiency benefits through DF-ExpEnse across a variety of manipulation and locomotion tasks, compared to default finetuning and alternative action selection schemes. Project can be found at https://df-expense.github.io."
-  },
-  {
-    "title": "Comparative Study on Agility, Efficiency, and Impact Absorption of Bipedal Robots with Active Toes",
-    "original_title": "Comparative Study on Agility, Efficiency, and Impact Absorption of Bipedal Robots with Active Toes",
-    "link": "https://arxiv.org/abs/2606.19699",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.19699v1 Announce Type: new \nAbstract: Human legs exhibit high efficiency, agility, and impact absorption, with toes playing a crucial role in these capabilities. While many attempts have been made to implement human-like toes in robots, they have not fully replicated human characteristics nor rigorously validated their benefits. We propose a 14-DOF biped robot emulating human toes' lightweight, high-torque, robust nature. To quantitatively analyze the effectiveness of the active toes in terms of agility, efficiency, and impact absorption, we developed a high-fidelity simulation training environment that reflects actual actuators with coupled transmissions and accurate power consumption. To ensure a fair comparison between configurations with and without active toes, we designed a minimal RL reward function and applied an identical training procedure to both. The simulation results indicate that, at 1.33 m/s walking, the toe-equipped robot reduced CoT by 17.5% and heel-strike GRF by 5.0% compared with the toe-ablation configuration. On the agility test, average and maximum path deviation decreased by 25.0% and 34.0%, respectively."
-  },
-  {
-    "title": "Bidirectional Tutoring for Developmental Motor Learning in Robots: Co-Developed Interaction Dynamics Support Stable Learning",
-    "original_title": "Bidirectional Tutoring for Developmental Motor Learning in Robots: Co-Developed Interaction Dynamics Support Stable Learning",
-    "link": "https://arxiv.org/abs/2606.19728",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19728v1 Announce Type: new \nAbstract: Infants are well known to develop their motor skills through dense interaction with caregivers. Although such social interaction is crucial for human development, motor-skill learning in robots is often treated as a unidirectional process in which robots passively receive demonstrations from tutors. This overlooks a key property of social interaction: it is inherently bidirectional, with tutor and learner dynamically adapting to each other. In such interactions, the robot's past experiences may function as prior constraints that shape the dynamics of their co-developed trajectories. We hypothesize that bidirectional tutoring allows such constraints to guide the formation of consistent behavioral patterns that preserve behavioral coherence and support generalization, whereas unidirectional interaction lacks such constraints and leads to broader, less consistent behavioral patterns. To examine this hypothesis, we conducted two experiments with a physical humanoid robot performing an object manipulation task: one involving human-robot interaction and another employing an AI tutor interacting with the real robot through an adaptive intervention mechanism designed to examine whether similar effects would emerge under more controlled conditions. We implement the developmental learning framework using a free-energy-principle-based neural network extended with generative replay, which supports stable sequence-by-sequence learning from single tutored episodes. Across both settings, bidirectional tutoring fostered consistent behaviors and stage-wise generalization, while the robot gradually required less tutor guidance. These results suggest that bidirectional tutoring, as an embodied and socially grounded approach, provides an effective scaffold for developmental motor learning in robots."
-  },
-  {
-    "title": "Temporal Self-Imitation Learning",
-    "original_title": "Temporal Self-Imitation Learning",
-    "link": "https://arxiv.org/abs/2606.19752",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19752v1 Announce Type: new \nAbstract: Long-horizon robot manipulation policies trained with reward shaping can still exploit dense rewards through inefficient interaction, while rare efficient behaviors may be forgotten during training. We argue that temporal efficiency itself provides a powerful and underutilized source of self-supervision for reinforcement learning. We introduce Temporal Self-Imitation Learning (TSIL), a reinforcement learning framework that mines temporally efficient successful trajectories generated during learning and converts them into reusable supervision for future policy improvement. TSIL progressively refines learning using configuration-conditioned adaptive temporal targets derived from fast successful trajectories, while preserving and replaying efficient behaviors through efficiency-weighted self-imitation learning. Across 15 distinct long-horizon manipulation tasks, TSIL consistently improves learning efficiency, task-completion efficiency, revisitation of fast successful behaviors, and robustness to unstable training conditions. More broadly, our results suggest that the temporal structure of successful behavior itself provides a scalable self-supervisory signal for reinforcement learning beyond manually engineered reward shaping alone."
-  },
-  {
-    "title": "Data Standards for Humanoid Robotics: The Missing Infrastructure for Physical AI",
-    "original_title": "Data Standards for Humanoid Robotics: The Missing Infrastructure for Physical AI",
-    "link": "https://arxiv.org/abs/2606.19769",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19769v1 Announce Type: new \nAbstract: The scalability of humanoid robots will depend not only on models and hardware, but also on whether physical experience can accumulate across robots, tasks, organizations, and time. Drawing on the authors' work in developing ISO/WD 26264-1, Humanoid robot datasets -- Part 1: General requirements, within ISO/TC 299/WG 16, this article argues that data standards are becoming foundational infrastructure for Physical AI. We develop three insights. First, humanoid robot data is embodied interaction data, not a collection of isolated digital samples; a useful dataset must preserve the relationship among robot body, action, task, scene, execution trace, and outcome. Second, its value depends on physical coherence: multimodal streams are reusable only when timing, coordinate frames, calibration, kinematics, units, and synchronization assumptions remain inspectable. Third, the main bottleneck is not only data scarcity, but non-cumulative data caused by high collection costs, data silos, and inconsistent evaluation. We argue that humanoid robot data standards address these bottlenecks by making embodied experience interpretable, shareable, traceable, and reusable. A general standard should provide horizontal infrastructure for lifecycle management, metadata, provenance, quality, versioning, and traceability, while capability-specific parts should define domain grammar for manipulation, locomotion, human-robot interaction, cognition, and future humanoid capabilities. As AI moves from screens into bodies, data standards must evolve from organizing digital information to structuring physical interaction."
-  },
-  {
-    "title": "Start Right, Arrive Right: Asynchronous Execution via Initial Noise Selection",
-    "original_title": "Start Right, Arrive Right: Asynchronous Execution via Initial Noise Selection",
-    "link": "https://arxiv.org/abs/2606.19774",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19774v1 Announce Type: new \nAbstract: Action chunking enables robot policies to produce temporally coherent behavior, but generating multi-step action sequences with flow-based policies incurs latency that is incompatible with real-time control. Under asynchronous execution, the robot continues executing the current chunk while the next one is generated, causing even minor delays to create inconsistencies at chunk boundaries. Existing methods address this problem by steering generation toward the already executed action prefix. We instead show that prefix consistency can be achieved by selecting an appropriate initial noise before generation begins, allowing the unmodified flow ODE to produce a coherent next chunk. This reframes asynchronous inference as a noise selection problem rather than a trajectory steering problem. We introduce \\textbf{PAINT}, a training-free method that finds this noise via backward Euler inversion and constructs the final chunk through a repainting rule. In summary, \\texttt{PAINT} requires no gradients, retraining, or policy modification; yet it improves execution consistency and task performance across \\textit{12 simulated benchmarks} and \\textit{6 real-world manipulation tasks} spanning single-arm, bimanual, and humanoid embodiments. Website: ~\\href{https://paint-action-chunking.github.io}{\\texttt{https://paint-action-chunking.github.io}}."
-  },
-  {
-    "title": "EquiVLA: A General Framework for Rotationally Equivariant Vision-Language-Action Models",
-    "original_title": "EquiVLA: A General Framework for Rotationally Equivariant Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2606.19784",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19784v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have emerged as a powerful paradigm for generalist robot manipulation, yet they lack geometric inductive biases: policies trained at specific orientations require substantially more data to generalize across rotational configurations. We present \\textsc{EquiVLA}, the first general framework for end-to-end $\\mathrm{SO}(2)$-equivariant VLA models, applicable to any architecture coupling a frozen vision-language backbone with a flow-matching Diffusion Transformer action head. \\textsc{EquiVLA} introduces \\textsc{EquiPerceptor}, which produces approximately $\\mathrm{SO}(2)$-equivariant visual representations from frozen ViT features; and \\textsc{EquiActor}, an exactly $\\mathrm{SO}(2)$-equivariant flow-matching Diffusion Transformer action head. Together, they establish an approximate $\\mathrm{SO}(2)$ equivariance chain from camera observations to predicted action sequences. Instantiated on GR00T~N1.5 and evaluated across four LIBERO suites, CALVIN ABCD$\\to$D, and five real-robot tasks on Mobile ALOHA, \\textsc{EquiVLA} achieves $92.6\\%$ average success on LIBERO (vs. $78.1\\%$ baseline), an average sequence length of $4.03$ on CALVIN (vs. $3.45$), and improves real-robot success from $54\\%$ to $72\\%$."
-  },
-  {
-    "title": "One-to-Two Acting: A Novel Framework for Single-arm Agent Action Expansion to Dual Arms",
-    "original_title": "One-to-Two Acting: A Novel Framework for Single-arm Agent Action Expansion to Dual Arms",
-    "link": "https://arxiv.org/abs/2606.19897",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19897v1 Announce Type: new \nAbstract: Dual-arm manipulation can improve throughput via parallel execution, but collecting bimanual demonstrations for training is costly and difficult. We present ExS2D, a hierarchical action expansion framework that enables dual-arm manipulation from single-arm supervision. ExS2D first generates structured subtasks from textual instructions while explicitly capturing temporal precedence. It then grounds each subtask into executable actions through subtask-guided action mapping in observation. Finally, precedence-aware action allocation and synchronized planning are performed by a multimodal large language model driven coordinator to select collision-free dual-arm executions. Simulation experiments demonstrate that ExS2D reduces the average execution steps by 54.4% while maintaining a comparable success rate to a single-arm baseline. Real-robot experiments on four tasks further demonstrate the reliability of ExS2D for dual-arm execution under few-shot single-arm samples, while using zero bimanual demonstrations."
-  },
-  {
-    "title": "SWAP: Symmetric Equivariant World-Model for Agile Robot Parkour",
-    "original_title": "SWAP: Symmetric Equivariant World-Model for Agile Robot Parkour",
-    "link": "https://arxiv.org/abs/2606.19928",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.19928v1 Announce Type: new \nAbstract: While latent world models enable the proactive predictions required for extreme parkour, their purely data-driven nature forces them to redundantly encode left-right symmetric interactions as independent patterns. This inflates the learning burden and hinders the capture of geometric regularities, restricting the latent space's efficiency for downstream policies. To address this, we propose SWAP, an end-to-end equivariant symmetric world model. This framework embeds symmetry directly into both the world model and the actor-critic networks. In real-world tests, the robot leaps across a 2.13 m gap and climbs a 1.63 m platform, breaking records for quadruped parkour. Furthermore, the framework exhibits robust geometric generalization to unseen mirrored terrains and exceptional zero-shot transferability across diverse outdoor environments. These results demonstrate that symmetry equivariance is an effective structural prior for pushing the physical boundaries of learned legged locomotion."
-  },
-  {
-    "title": "Evaluation of Augmented Reality-based Intuitive Interface for Robot-Assisted Transesophageal Echocardiography: A User Study",
-    "original_title": "Evaluation of Augmented Reality-based Intuitive Interface for Robot-Assisted Transesophageal Echocardiography: A User Study",
-    "link": "https://arxiv.org/abs/2606.19971",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.19971v1 Announce Type: new \nAbstract: TransEsophageal Echocardiography (TEE) is essential for diagnosing and guiding Structural Heart Disease (SHD) interventions. However, manual TEE manipulation demands significant operator expertise, is physically demanding, and exposes clinicians to radiation when performed alongside fluoroscopy. Robotic-assisted TEE systems have been introduced to improve probe handling and reduce operator fatigue, yet the design of intuitive and effective user interfaces remains an open challenge. This study presents and evaluates a model-enhanced, Augmented Reality (AR)-based intuitive interface for robot-assisted TEE, designed to improve spatial awareness and control intuitiveness. A robotic TEE platform integrated with electromagnetic tracking and a virtual simulator was used to compare three user interfaces differing in visualization and interaction modalities: 2D jointlevel (2D-JI), 3D joint-level (3D-JI), and 3D tip-level (3D-TI). Thirty six participants performed standardized navigation tasks to reproduce target echocardiographic views, with performance assessed via position and orientation errors, completion time, and NASA-TLX workload scores. Results show that 3D visualization significantly improved spatial accuracy, reducing median position error from 13 mm to 3 mm and halving the orientation error compared with the 2D interface. Tip-level interaction yielded a further 50% reduction in orientation error and reduced interuser variability relative to joint-level control. Overall, the 3D-TI configuration, combining immersive visualization with direct tip-level control, proved the most effective and ergonomic interface, supporting the integration of AR-based visualization and intuitive control paradigms into next-generation robotic TEE systems to enhance operator performance and procedural safety."
   }
 ]
