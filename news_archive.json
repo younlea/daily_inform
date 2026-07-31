@@ -558,6 +558,15 @@
     "summary": "기존 World model이 물리적 접촉 제약 및 특정 그리퍼에 국한되는 문제점을 해결하기 위해, 액터와 목표물 간의 3D 접촉점 궤적을 인코딩하는 체현 독립적(embodiment-agnostic) 표현인 Contact Flow를 제안함. Contact Flow를 통해 인간 시연 및 로봇 상호작용 비디오를 결합하여 대규모 World model을 학습할 수 있게 되어, 물리적으로 타당한 조작 결과를 예측함. 이는 DROID 데이터셋 및 실제 테이블탑 조작 작업에서 다양한 로봇 체현으로의 액션 전이 가능성을 입증함."
   },
   {
+    "title": "SymmGrid: 병렬화된 대칭성과 자기중심/외부중심 시각 인지를 통한 온-로봇 학습 초규모 확장 기술",
+    "original_title": "SymmGrid: Super-Scaling On-Robot Learning with Parallelized Symmetries and Egocentric-Exocentric Visual Perception",
+    "link": "https://arxiv.org/abs/2607.26985",
+    "date": "2026-07-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "로봇의 온-로봇 학습은 훈련 시간의 병목 현상을 겪는 문제에 주목, SymmGrid 프레임워크가 병렬화된 대칭성을 활용하여 궤적 레벨 증강(trajectory level augmentation) 기법을 제시함. 이 기술은 자기중심 및 외부중심 시각 정보와 프로프리오셉션 정보를 대칭성 트리(symmetry tree) 하에 모델링하여 재현 버퍼(replay buffer)의 경험을 효과적으로 증대시킴. 실제 로봇 조작 과제 테스트 결과, 기존 최고 성능 대비 최대 2.59x의 성능 향상 및 훈련 수렴 속도 1.37~2.17x 단축 등의 뛰어난 결과를 기록하며, 하만로이드(humanoid)를 위한 온-로봇 학습 시간 단축에 근접함을 입증함."
+  },
+  {
     "title": "중국, 미국 휴머노이드 로봇 규제에 보복 위협하며 양국 관계 훼손 주장",
     "original_title": "China threatens retaliation against U.S. humanoid robot ban, says it 'severely damages' relations - cnbc.com",
     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOX1UxZDZBTnlWTGNJa09BWWx4Y3p4TDVNTWd3OG9NS2o1YmRGUV9pa1ZYbmo0c2dBOWxUNkNfdWR2MjVQcmlhWG9tMG1Ha0FnM2hydDFFTDE2SFk2MTE5ME82dDFCUldQRFhfYmhrMnBiNklaV2daTEJYSXhFVzBQbG1R0gGHAUFVX3lxTE1HQTdaTkZZbUxjbmlBS1E1eXBIWEF2eS1kM0RTMWZaUkd2NWw1QS1SVm1BdkVOWFZ6U3FCZk94dUdEelh2YmJrYWFZVXd3MEMtc016QWpBdVlXT0E3VzBQbmNOWjk2VWFRUUJvMm91QUY1VzJMUC1JdzFsQndZd05PdmRUSzdXMA?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.19971v1 Announce Type: new \nAbstract: TransEsophageal Echocardiography (TEE) is essential for diagnosing and guiding Structural Heart Disease (SHD) interventions. However, manual TEE manipulation demands significant operator expertise, is physically demanding, and exposes clinicians to radiation when performed alongside fluoroscopy. Robotic-assisted TEE systems have been introduced to improve probe handling and reduce operator fatigue, yet the design of intuitive and effective user interfaces remains an open challenge. This study presents and evaluates a model-enhanced, Augmented Reality (AR)-based intuitive interface for robot-assisted TEE, designed to improve spatial awareness and control intuitiveness. A robotic TEE platform integrated with electromagnetic tracking and a virtual simulator was used to compare three user interfaces differing in visualization and interaction modalities: 2D jointlevel (2D-JI), 3D joint-level (3D-JI), and 3D tip-level (3D-TI). Thirty six participants performed standardized navigation tasks to reproduce target echocardiographic views, with performance assessed via position and orientation errors, completion time, and NASA-TLX workload scores. Results show that 3D visualization significantly improved spatial accuracy, reducing median position error from 13 mm to 3 mm and halving the orientation error compared with the 2D interface. Tip-level interaction yielded a further 50% reduction in orientation error and reduced interuser variability relative to joint-level control. Overall, the 3D-TI configuration, combining immersive visualization with direct tip-level control, proved the most effective and ergonomic interface, supporting the integration of AR-based visualization and intuitive control paradigms into next-generation robotic TEE systems to enhance operator performance and procedural safety."
-  },
-  {
-    "title": "Pose6DAug: Physically Plausible Multi-view Object Swapping for Robot Data Augmentation",
-    "original_title": "Pose6DAug: Physically Plausible Multi-view Object Swapping for Robot Data Augmentation",
-    "link": "https://arxiv.org/abs/2606.20118",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.20118v1 Announce Type: new \nAbstract: Vision-language-action (VLA) policies have shown strong potential for general-purpose manipulation, yet they often fail on novel, out-of-distribution objects whose appearance or geometry deviates from the training distribution. The standard remedy is to collect multi-view teleoperation data for every failure case, but this scales poorly in both cost and time. We introduce Pose6DAug, a failure-driven data augmentation framework that turns a policy's own successful episodes into targeted demonstrations for its failure modes, without any new data collection. Our key insight is that each successful episode already encodes a physically valid action trajectory together with calibrated multi-view observations. By swapping only the manipulated object while preserving this trajectory, we obtain new and physically grounded demonstrations. However, naive 2D video editing breaks multi-view consistency and physical plausibility, particularly under heavy occlusion and egocentric viewpoints. Our method instead operates directly in 3D, anchoring the target object with an explicit mesh driven by a temporally coherent 6D pose trajectory, ensuring geometrically consistent renderings across all camera views. Fine-tuning a VLA on data augmented by our method improves success rates by 16.5% relative to the state-of-the-art baseline on novel objects, while preserving in-distribution performance. These results show that multi-view and physically consistent augmentation is a practical path to scalable VLA generalization."
   }
 ]
