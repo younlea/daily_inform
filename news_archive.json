@@ -540,6 +540,15 @@
     "summary": "본 연구는 기존 SMG(Sonomyography) 시스템의 한계였던 데이터 의존성 및 낮은 자유도 문제를 해결하기 위해, 최소 보정으로 실시간 구동 가능한 센서 배치에 무관한(Sensor-placement-agnostic) SMG 제어 시스템을 제시함. 1~2자유도(DOF) 제어 시스템을 척추 손상 환자 및 건강한 피험자를 대상으로 평가한 결과, 다양한 부위의 센서 위치와 관계없이 연속적인 제어 및 2D 그리기 작업이 성공적으로 수행됨을 입증함. 해당 알고리즘을 OpenMyoControl 프로젝트로 공개하며, SMG를 통한 빠르고 고차원적인 웨어러블 디바이스 제어의 높은 가능성을 제시함."
   },
   {
+    "title": "ContactFlow: 다양한 체현(Embodiment)에 전이 가능한 비디오 액션 조건화 구현",
+    "original_title": "ContactFlow: A video action conditioning that transfers across embodiments",
+    "link": "https://arxiv.org/abs/2607.26579",
+    "date": "2026-07-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 World model이 물리적 접촉 제약 및 특정 그리퍼에 국한되는 문제점을 해결하기 위해, 액터와 목표물 간의 3D 접촉점 궤적을 인코딩하는 체현 독립적(embodiment-agnostic) 표현인 Contact Flow를 제안함. Contact Flow를 통해 인간 시연 및 로봇 상호작용 비디오를 결합하여 대규모 World model을 학습할 수 있게 되어, 물리적으로 타당한 조작 결과를 예측함. 이는 DROID 데이터셋 및 실제 테이블탑 조작 작업에서 다양한 로봇 체현으로의 액션 전이 가능성을 입증함."
+  },
+  {
     "title": "중국, 미국 휴머노이드 로봇 규제에 보복 위협하며 양국 관계 훼손 주장",
     "original_title": "China threatens retaliation against U.S. humanoid robot ban, says it 'severely damages' relations - cnbc.com",
     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOX1UxZDZBTnlWTGNJa09BWWx4Y3p4TDVNTWd3OG9NS2o1YmRGUV9pa1ZYbmo0c2dBOWxUNkNfdWR2MjVQcmlhWG9tMG1Ha0FnM2hydDFFTDE2SFk2MTE5ME82dDFCUldQRFhfYmhrMnBiNklaV2daTEJYSXhFVzBQbG1R0gGHAUFVX3lxTE1HQTdaTkZZbUxjbmlBS1E1eXBIWEF2eS1kM0RTMWZaUkd2NWw1QS1SVm1BdkVOWFZ6U3FCZk94dUdEelh2YmJrYWFZVXd3MEMtc016QWpBdVlXT0E3VzBQbmNOWjk2VWFRUUJvMm91QUY1VzJMUC1JdzFsQndZd05PdmRUSzdXMA?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.20135v1 Announce Type: new \nAbstract: Flow matching has emerged as a standard paradigm for robotic manipulation owing to its strong expressive power for modelling complex, multimodal action distributions, alongside similar approaches like diffusion policy. However, existing methods rely on discretized action chunks, making them brittle to demonstrations collected at heterogeneous control frequencies and prone to temporally inconsistent actions that degrade control stability. In this paper, we propose Frequency-Aware Flow Matching (FAFM), which outputs continuous, temporally consistent actions. To handle heterogeneous frequency input, we transform discrete action sequences into the frequency domain with the discrete cosine transform (DCT), perform flow matching over the resulting coefficients, and reconstruct continuous actions via cosine basis expansion. To generate temporally consistent actions, we regularize the first-order temporal derivative to promote smooth actions. This corresponds to a Sobolev-type constraint that suppresses high-frequency errors and discourages abrupt action changes. Our FAFM is simple, introduces no additional network parameters and applies to standalone flow-matching policies and vision-language action models. Across synthetic toy benchmark, obstacle avoidance, LapGym, and LIBERO, FAFM improves success rates, multimodal expressivity, motion smoothness, convergence speed, robustness to mechanical bias and mixed-frequency input. These gains are consistent when deployed on a real-world Franka robot. Code available at https://anonymous.4open.science/r/FAFM."
-  },
-  {
-    "title": "Belt-Finger: An Affordable Soft Belt-Driven Gripper for Dexterous In-Hand Manipulation",
-    "original_title": "Belt-Finger: An Affordable Soft Belt-Driven Gripper for Dexterous In-Hand Manipulation",
-    "link": "https://arxiv.org/abs/2606.20193",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.20193v1 Announce Type: new \nAbstract: Parallel-jaw grippers are the default manipulator choice in robotics because they are simple, robust, and inexpensive. Their limited in-hand mobility, however, often forces large arm motions and restricts dexterous manipulation in confined workspaces. We present a parallel-gripper upgrade: a double-soft-belt-based finger module that preserves standard opening/closing while adding three in-hand degrees of freedom (DoF): translation, pitch, and roll. The mechanism is deliberately kept simple and engineered for inexpensive manufacturing and straightforward integration, preserving the reliability and precise control of traditional parallel grippers while greatly broadening the range of manipulation capabilities. To demonstrate the utility of the added DoFs, we integrate the gripper in two control pipelines. First, we adapt a model predictive controller for in-hand manipulation of known objects. Second, we introduce a lightweight teleoperation interface that enables simultaneous control of the robot arm and gripper (10 DoFs total) with minimal hardware. Across a suite of challenging manipulation tasks executed via teleoperation, MPC, and trained policies, the proposed gripper consistently improves dexterity and task feasibility compared to a conventional parallel gripper"
   }
 ]
