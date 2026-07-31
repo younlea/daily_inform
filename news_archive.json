@@ -1,5 +1,14 @@
 [
   {
+    "title": "FCC, 신규 수입 금지 기조 속 주요 AI 분야 중국 휴머노이드 특허 5배 급증 - Tech Times",
+    "original_title": "China Humanoid Patents Surge Fivefold in Key AI Category as FCC Bans New Imports - Tech Times",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTkVyM04zdlRRdjk3UmRJZFh0VlQzQkVBTm90aUs3aXlOTHBOVzJBT21WbG16WVl3dklCSVA1dUZSYW9nR1dwUXpMOThud2ZiTGZnTjlkRGRCYy0xSlBTbmNSRy1rRC10eTBJOEhKdkprWGJraThrbFBOc0hRdC10ZktsUTRWcjFocUFGWDZ0MzRoYUstTmdFYlA5b1REVXFDTEJXaHNQOEpoak9IUGUycl90LTl0OUlHOHloTVBjTDNUYVU1dUpaNA?oc=5",
+    "date": "2026-07-31 01:55",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Tech Times 보도에 따르면, FCC의 신규 수입 금지 조치가 배경이 되면서 중국의 휴머노이드 관련 특허 출원이 핵심 AI 분야에서 5배가량 급증한 것으로 분석됨. 이는 글로벌 시장 변화 속에서 중국이 로보틱스 및 AI 기술 분야의 특허 경쟁력을 극대화하고 있음을 시사함."
+  },
+  {
     "title": "2026년 로보틱스 변화를 주도할 5대 물리적 AI 인프라 플랫폼 제시",
     "original_title": "5 Physical AI Infrastructure Platforms Shaping Robotics in 2026",
     "link": "https://www.therobotreport.com/5-physical-ai-infrastructure-platforms-shaping-robotics-in-2026/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.20118v1 Announce Type: new \nAbstract: Vision-language-action (VLA) policies have shown strong potential for general-purpose manipulation, yet they often fail on novel, out-of-distribution objects whose appearance or geometry deviates from the training distribution. The standard remedy is to collect multi-view teleoperation data for every failure case, but this scales poorly in both cost and time. We introduce Pose6DAug, a failure-driven data augmentation framework that turns a policy's own successful episodes into targeted demonstrations for its failure modes, without any new data collection. Our key insight is that each successful episode already encodes a physically valid action trajectory together with calibrated multi-view observations. By swapping only the manipulated object while preserving this trajectory, we obtain new and physically grounded demonstrations. However, naive 2D video editing breaks multi-view consistency and physical plausibility, particularly under heavy occlusion and egocentric viewpoints. Our method instead operates directly in 3D, anchoring the target object with an explicit mesh driven by a temporally coherent 6D pose trajectory, ensuring geometrically consistent renderings across all camera views. Fine-tuning a VLA on data augmented by our method improves success rates by 16.5% relative to the state-of-the-art baseline on novel objects, while preserving in-distribution performance. These results show that multi-view and physically consistent augmentation is a practical path to scalable VLA generalization."
-  },
-  {
-    "title": "Frequency-Aware Flow Matching for Continuous and Consistent Robotic Action Generation",
-    "original_title": "Frequency-Aware Flow Matching for Continuous and Consistent Robotic Action Generation",
-    "link": "https://arxiv.org/abs/2606.20135",
-    "date": "2026-06-19 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.20135v1 Announce Type: new \nAbstract: Flow matching has emerged as a standard paradigm for robotic manipulation owing to its strong expressive power for modelling complex, multimodal action distributions, alongside similar approaches like diffusion policy. However, existing methods rely on discretized action chunks, making them brittle to demonstrations collected at heterogeneous control frequencies and prone to temporally inconsistent actions that degrade control stability. In this paper, we propose Frequency-Aware Flow Matching (FAFM), which outputs continuous, temporally consistent actions. To handle heterogeneous frequency input, we transform discrete action sequences into the frequency domain with the discrete cosine transform (DCT), perform flow matching over the resulting coefficients, and reconstruct continuous actions via cosine basis expansion. To generate temporally consistent actions, we regularize the first-order temporal derivative to promote smooth actions. This corresponds to a Sobolev-type constraint that suppresses high-frequency errors and discourages abrupt action changes. Our FAFM is simple, introduces no additional network parameters and applies to standalone flow-matching policies and vision-language action models. Across synthetic toy benchmark, obstacle avoidance, LapGym, and LIBERO, FAFM improves success rates, multimodal expressivity, motion smoothness, convergence speed, robustness to mechanical bias and mixed-frequency input. These gains are consistent when deployed on a real-world Franka robot. Code available at https://anonymous.4open.science/r/FAFM."
   }
 ]
