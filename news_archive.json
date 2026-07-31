@@ -1,5 +1,23 @@
 [
   {
+    "title": "Google DeepMind, Gemini Robotics 2 공개: Apptronik 휴머노이드 전신 AI 시연함",
+    "original_title": "Google DeepMind unveils Gemini Robotics 2 as Apptronik humanoid demonstrates whole-body AI",
+    "link": "https://roboticsandautomationnews.com/2026/07/31/google-deepmind-unveils-gemini-robotics-2-as-apptronik-humanoid-demonstrates-whole-body-ai/103802/",
+    "date": "2026-07-31 10:26",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Google DeepMind가 휴머노이드 및 로봇의 자율성을 극대화한 AI 모델 스위트인 Gemini Robotics 2를 공개함. 이 시스템은 전신 제어(whole-body control), 고도화된 민첩성, 다중 로봇 협업 기능을 제공하는 것이 특징임. 실제 시연에서는 Apptronik의 Apollo 2 휴머노이드 로봇에 적용되어 걷기, 웅크리기 등 전신 자율 구동 능력을 입증함."
+  },
+  {
+    "title": "FedEx, 자율 트레일러 적재를 위해 Dexterity 물리 AI 배포 확대함",
+    "original_title": "FedEx expands Dexterity physical AI deployment for autonomous trailer loading",
+    "link": "https://roboticsandautomationnews.com/2026/07/31/fedex-expands-dexterity-physical-ai-deployment-for-autonomous-trailer-loading/103798/",
+    "date": "2026-07-31 10:14",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "글로벌 물류 회사 FedEx와 창고 자동화 전문 기업 Dexterity가 협력 규모를 확대함. 이번 협력은 Maryland에 위치한 FedEx Hagerstown Hub에서 Dexterity의 Foresight world model과 Mech 트레일러 적재 시스템을 대규모로 확장 적용함. 이는 다년간의 공동 개발 및 테스트를 거쳐 프로그램이 기존의 파일럿 사이트를 넘어 규모를 확장하는 것을 의미함."
+  },
+  {
     "title": "디지털 환경 정리의 중요성",
     "original_title": "Why Digital Cleanliness Matters",
     "link": "https://roboticsandautomationnews.com/2026/07/31/why-digital-cleanliness-matters/103795/",
@@ -223,6 +241,33 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "기존 Diffusion Policy(DP) 모델이 긴 시간 간격의 로봇 조작(long-horizon manipulation)에서 발생하는 시간 모델링의 한계점을 극복하기 위해, 본 연구는 시간 변화를 포착하는 SEGA(Self-Evolving Gated Attention) 모듈을 제안함. 이를 DP에 통합하여 개발된 SeedPolicy는 장기적 문맥 정보를 효율적으로 누적하며, RoboTwin 2.0 벤치마크에서 DP 대비 높은 성능 개선율을 기록하며 높은 효율성을 입증함. 이 결과는 SeedPolicy가 장기 로봇 조작 분야에서 최첨단(SOTA) 모방 학습 방법론임을 시사함."
+  },
+  {
+    "title": "RedFlow: 실패 경험을 행동 레벨 교정 감독으로 재지정하는 Flow-matching VLA 정책",
+    "original_title": "RedFlow: Redirect Failure into Action-Level Corrections for Flow-matching VLA Policy",
+    "link": "https://arxiv.org/abs/2607.27782",
+    "date": "2026-07-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Flow-matching Vision-Language-Action (VLA) 정책은 배치 환경에서 발생하는 분포 변화로 인해 누적 오류에 취약하며, RedFlow는 이러한 실패 경험을 행동 수준의 교정 감독(corrective supervision)으로 활용하는 오프라인 RL 프레임워크임. RedFlow는 실패 유발 행동을 식별하고 성공적인 대안 행동을 찾아 학습을 강화하는 Context-Aware Corrective Matching 및 적응형 재지정 목적(Adaptive Redirection Objective)을 핵심 컴포넌트로 구성함. LIBERO 벤치마크 및 실제 조작(manipulation) 과제에서 기존 최고 성능 모델 대비 높은 실세계 성공률을 달성하며, 온-정책 방법론과 견줄 만한 성능을 적은 데이터로 입증함."
+  },
+  {
+    "title": "FA-RDP: 접촉 중심 조작을 위한 주파수 적응형 반응성 확산 정책",
+    "original_title": "FA-RDP: A Frequency-Adaptive Reactive Diffusion Policy for Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2607.28596",
+    "date": "2026-07-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "접촉이 많은 조작(Contact-rich manipulation)에서 발생하는 다중 모드 보존과 실시간 반응성 간의 근본적 상충 문제 해결을 목표로 함. FA-RDP는 주파수 적응형 Diffusion Policy로, 공유 Multi-frequency Transformer를 활용하여 접촉 전에는 다중 모드 보존을 위한 저주파 다단계 샘플링을, 접촉 후에는 반응성 확보를 위한 고주파 단일 단계 샘플링을 동적으로 전환하는 것이 핵심임. 또한 Manifold Consistency Distillation (MCD)을 도입하여 로봇 동작 매니폴드 위에서 액션을 예측하며, 실험을 통해 접촉 환경에서 높은 성공률과 다양한 사전 접촉 궤적 모드를 모두 보존함을 입증함."
+  },
+  {
+    "title": "HALO: 안전한 에이전트 실행을 위한 국소적 의무 기반 이종 입고 프로토콜",
+    "original_title": "HALO: Heterogeneous Admission through Localized Obligations for Safe Agentic Execution",
+    "link": "https://arxiv.org/abs/2607.27636",
+    "date": "2026-07-31 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "최근 에이전트 AI 시스템의 복합 응답은 외부 환경 변화에 취약하여, 전체 폐기 또는 독립 검사 시 데이터 손실 위험이 있음. 이에 연구진은 실행 시점에서 전제 조건을 유지하는 구성 요소를 보존하고 액션을 재검증하는 런타임 프로토콜인 HALO를 개발함. HALO는 모든 입고 기대치와 프로토콜 테스트를 성공적으로 통과했으며, PX4/Gazebo 환경에서도 stale route를 차단하고 신선한 복구를 완료하는 높은 안정성을 입증함."
   },
   {
     "title": "FCC, 신규 수입 금지 기조 속 주요 AI 분야 중국 휴머노이드 특허 5배 급증 - Tech Times",
@@ -17953,50 +17998,5 @@
     "source": "ByteByteGo",
     "category": "humanoid",
     "summary": "Twelve models worth knowing in 2026, each with one standout strength."
-  },
-  {
-    "title": "Defense manufacturing readiness hinges on autonomous finishing, says GrayMatter Robotics",
-    "original_title": "Defense manufacturing readiness hinges on autonomous finishing, says GrayMatter Robotics",
-    "link": "https://www.therobotreport.com/defense-manufacturing-readiness-hinges-autonomous-surface-prep-says-graymatter/",
-    "date": "2026-06-20 14:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "The Navy's industrial base review identified a projected need for 174,000 new workers. GrayMatter says robotics can fill this gap.\nThe post Defense manufacturing readiness hinges on autonomous finishing, says GrayMatter Robotics appeared first on The Robot Report."
-  },
-  {
-    "title": "Chinese Humanoid Robot ‘Begs’ On Street; Asks For Donation To Pay ‘Electricity Bills’ - Times Now",
-    "original_title": "Chinese Humanoid Robot ‘Begs’ On Street; Asks For Donation To Pay ‘Electricity Bills’ - Times Now",
-    "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNODZkaTU1TXBaMWo0ckM5NGxmclN5dFVjck9zalBMd2otZnFKQmRmQ1F2aGhwWlBHeDBpVmNiNkUwX2JiR0RNVUxJYXpnbkpGZWpXblgtX3dlTUJGVjRlbHByTDFJVGNQNFdkaWdxYld3dnFnV0ZOeEdJbEN1Z2pMal9FZk9ZMDBQSFlPS2doeVpleFpuVlVuZ3NEb2tGZnUtMW9KT2lIODRTZk9XeHlSUlhNcTdzX2ZXaE13UnltUEVjSFFuQVVkYmVKRkVhdlo3aVd3OG1naHJYcVBUbjFESFl5V09YWjc0bFVPaTc4WjA4b2NQ0gH6AUFVX3lxTE5RazBlWEhLcDdVVkVVWloyeVVoMVExQkgtS3RGbWNJSjh1RlBFaVJYSERBRUVCNUFwVXowUV9ZYk9Wb0NUMm1zOUxYbzV3ZVoyQmx6U2EtQTY1MTMtVUp0VkYzc0s4Z1paTXZUMEZSb0pGQkVJUUFfSGZFSXdyYUJ3NmZwX19ZQTlxUno5WUNqdkJxUEJtVzlvR2ZVSjNlX1ViS3dqbEpsLTJEWGdlLWswcXR4Vzg1UGhoemp5MlpzdGh2MVBPYUhCWldNR3dmanAzY2NGX21DdWNiYXpuRkwyd1dtZWVjdHZFNzVxVHZKRWU0WGNHODZscUE?oc=5",
-    "date": "2026-06-20 13:28",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese Humanoid Robot ‘Begs’ On Street; Asks For Donation To Pay ‘Electricity Bills’  Times Now"
-  },
-  {
-    "title": "Is Robotic Surgery Worth Traveling Abroad for? – Patient Guide",
-    "original_title": "Is Robotic Surgery Worth Traveling Abroad for? – Patient Guide",
-    "link": "https://roboticsandautomationnews.com/2026/06/20/is-robotic-surgery-worth-traveling-abroad-for-patient-guide/102667/",
-    "date": "2026-06-20 00:43",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "For most people, the idea of traveling abroad for robotic surgery usually comes up after hearing that the wait is too long, the technology isn’t available locally, or the surgeon who specializes in this procedure is booked for months. That’s when patients begin to wonder if the same operation might be easier – or simply […]"
-  },
-  {
-    "title": "How Distressed M&A Transactions Differ from Standard Acquisition Processes",
-    "original_title": "How Distressed M&A Transactions Differ from Standard Acquisition Processes",
-    "link": "https://roboticsandautomationnews.com/2026/06/20/how-distressed-ma-transactions-differ-from-standard-acquisition-processes/102664/",
-    "date": "2026-06-20 00:27",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "A standard acquisition process is designed to maximize seller value. A distressed deal is designed to preserve value before it erodes further, satisfy creditor priorities, or stabilize a business under financial pressure. That difference changes everything: who controls the process, how much information buyers receive, how fast decisions must be made, and which risks matter […]"
-  },
-  {
-    "title": "Myanmar President visits leading technology firms in Hangzhou - Global New Light Of Myanmar",
-    "original_title": "Myanmar President visits leading technology firms in Hangzhou - Global New Light Of Myanmar",
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOX1dkTUFaekpFV01PcDRFaFhXMmNRN1dRN2RqRVNzNWJpS29JZmpicHhVU2puZ2JnSGNrNGFtQXV1R0xqbnZPSndjNmV4Z2Y5aDR5cm9rb2R3anY4c0tuX2NfODZabXNTN1c1Nmd6ck5ybm80ZmExLU16NWM3MnY4UUV5TVdDc1FPU2FuTzFvUQ?oc=5",
-    "date": "2026-06-19 23:27",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Myanmar President visits leading technology firms in Hangzhou  Global New Light Of Myanmar"
   }
 ]
