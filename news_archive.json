@@ -1,5 +1,14 @@
 [
   {
+    "title": "유니트리, 상하이 IPO 앞두고 미국의 로봇 규제 리스크 경고",
+    "original_title": "Unitree Warns US Robot Restrictions Could Limit Growth Ahead of Shanghai IPO - AI Insider",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVVF4MFY3LUVPb21tX2pJWTVLRlNpUzluQXVRYldvakZfOFAyQlA3QzJKa21CdExCWjRZM01YWUJZdENCNFFxWGl0T2ZIQ0tnR3k2NWl3bTdMTVhkb1JIdUIyRkRlMFZub2NMZ0oweTFxVkx3bms3MmNETDZHMHZBM21zbFFOQmJwU25BQWNWNlVPcWozeWNuTk43NU5rbF83bW5lbTdZVXBhakpXd0p3cHEtWDI?oc=5",
+    "date": "2026-08-01 13:40",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "로봇 전문 기업 Unitree가 미국의 강화되는 로봇 규제가 회사의 향후 성장 잠재력에 제약을 가할 수 있다고 경고함. 특히 상하이 IPO를 앞두고 이러한 미국 측의 규제 환경 변화가 투자 심리 및 기업 가치에 영향을 미칠 수 있다는 우려가 제기됨."
+  },
+  {
     "title": "2026년 7월 로보틱스 주요 이슈 10선",
     "original_title": "Top 10 robotics stories of July 2026",
     "link": "https://www.therobotreport.com/top-10-robotics-stories-july-2026/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2603.02742v2 Announce Type: replace \nAbstract: Autonomous drone racing (ADR) demands state estimation that is simultaneously computationally efficient and resilient to the perceptual degradation experienced during extreme velocity and maneuvers. Traditional frameworks typically rely on conventional visual-inertial pipelines with loosely-coupled gate-based Perspective-n-Points (PnP) corrections that suffer from a rigid requirement for four visible features and information loss in intermediate steps. Furthermore, the absence of GNSS and Motion Capture systems in uninstrumented, competitive racing environments makes the objective evaluation of such systems remarkably difficult. To address these limitations, we propose ADR-VINS, a robust, monocular visual-inertial state estimation framework based on an Error-State Kalman Filter (ESKF) tailored for autonomous drone racing. Our approach integrates direct pixel reprojection errors from gate corners features as innovation terms within the filter. By bypassing intermediate PnP solvers, ADR-VINS maintains valid state updates with as few as two visible corners and utilizes robust reweighting instead of RANSAC-based schemes to handle outliers, enhancing computational efficiency. Furthermore, we introduce ADR-FGO, an offline Factor-Graph Optimization framework to generate high-fidelity reference trajectories that facilitate post-flight performance evaluation and analysis on uninstrumented, GNSS-denied environments. The proposed system is validated using TII-RATM dataset, where ADR-VINS achieves an average RMS translation error of 0.143 m, while ADR-FGO yields 0.060 m as a smoothing-based reference. Finally, ADR-VINS was successfully deployed in the A2RL Drone Championship Season 2, maintaining stable and robust estimation despite noisy detections during high-agility flight at top speeds of 20.9 m/s. We further utilize ADR-FGO for post-flight evaluation in uninstrumented racing environments."
-  },
-  {
-    "title": "You've Got a Golden Ticket: Improving Generative Robot Policies With A Single Noise Vector",
-    "original_title": "You've Got a Golden Ticket: Improving Generative Robot Policies With A Single Noise Vector",
-    "link": "https://arxiv.org/abs/2603.15757",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.15757v3 Announce Type: replace \nAbstract: What happens when a pretrained generative robot policy is provided a constant initial noise as input, rather than repeatedly sampling it from a Gaussian? We demonstrate that the performance of a pretrained, frozen diffusion or flow matching policy can be improved with respect to a downstream reward by swapping the sampling of initial noise from the prior distribution (typically isotropic Gaussian) with a well-chosen, constant initial noise input - a golden ticket. We propose simple search methods to find golden tickets using Monte-Carlo policy evaluation that keeps the pretrained policy frozen, does not train any new networks, and is applicable to all diffusion/flow matching policies (and therefore many VLAs). Our approach to policy improvement makes no assumptions beyond being able to inject initial noise into the policy and calculate (sparse) task rewards of episode rollouts, making it deployable with no additional infrastructure or models. Our method improves the performance of policies in 46 out of 51 tasks across simulated and real-world robot manipulation benchmarks, with absolute improvements in success rate by up to 55% for some simulated tasks, and 28% within 60 search episodes for real-world tasks. Our approach naturally extends to multi-task settings, where we improve the average performance of a VLA policy across 7 tasks by 14% using a single noise vector. Further, we find that, a golden ticket optimized for one task can also boost performance in other related tasks for the same VLA policy. We release a codebase with pretrained policies and golden tickets for simulation benchmarks using VLAs, diffusion policies, and flow matching policies."
   }
 ]
