@@ -1,5 +1,23 @@
 [
   {
+    "title": "HEBI Robotics, 소형 액추에이터 개발 가속화를 위한 NASA SBIR 보조금 확보",
+    "original_title": "HEBI Robotics earns NASA SBIR grant to fast track miniaturized actuators",
+    "link": "https://www.therobotreport.com/hebi-robotics-earns-nasa-sbir-grant-fast-track-miniaturized-actuators/",
+    "date": "2026-08-03 17:17",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "HEBI Robotics가 Phase I 단계의 NASA SBIR 보조금을 획득함. 해당 수상은 회사의 전체 로드맵 중 일부에 불과하며, 기존 액추에이션 하드웨어 개발을 지속할 계획임을 밝힘."
+  },
+  {
+    "title": "미국 정부, 중국산 로봇 수입 차단 조치 발표",
+    "original_title": "U.S. Government Blocks Import of Chinese Robots - Assembly Magazine",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNSUxjcGM0WUplSTVlNm9BSm5laFZLU0tEX0tPbUtoOU5sRnlleDMtclVnVkxHeGlEcGRnSDVDU0xhc09NMDBPendJdjA4SzVLUXlJWXFUM3Z4bG5RcVhyUE85bEJBMVJUMnV5X1JJVWNsRzdqLXpiSWF3aWhZMURHX3V1TUgxRkRtdV9wV2ZiaWVRY00?oc=5",
+    "date": "2026-08-03 17:06",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "미국 정부가 국가 안보 및 기술적 이유로 중국산 로봇 제품의 수입을 전면적으로 차단하는 조치를 시행함. 이는 대중국 첨단 기술 규제 흐름의 일환으로 해석됨. 해당 조치는 로봇 산업 공급망 및 관련 시장에 중대한 변화를 예고함."
+  },
+  {
     "title": "월든 로보틱스, 실용적 휴머노이드 로봇 개발 위해 도요타와 협력 체결",
     "original_title": "Walden Robotics Partners With Toyota on Practical Humanoids",
     "link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
@@ -61,6 +79,15 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "로봇 시스템의 제어 및 운영 영역이 물리적 설비에서 작업자의 스마트폰이나 태블릿 등 모바일 디바이스로 확장되는 추세임. 이에 따라 컴패니언 앱은 단순한 보조 기능을 넘어, 하드웨어만큼 중요한 역할을 수행하고 있음. 현장 관리자는 앱을 통해 설비의 상태를 원격으로 점검하고, 유지보수 기술자는 현장 접근 전 사전 진단 작업을 수행하며 운영 효율성이 높아지고 있음."
+  },
+  {
+    "title": "중국 UBTech, 소비자용 휴머노이드 로봇 시리즈 선주문 13,361건 기록",
+    "original_title": "China's UBTech logs 13,361 preorders for consumer humanoid robot series - 디지털투데이",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQ25fNDV1aURvdmNHRTVubkU2Z05aYU1MX3kxRXVqRmdBQmx5TlJXVm5ac3RGUHMzRloxaHZHc1NPZXJReUhyWEJEZ3U1NW1HNmtlNnVoVktiZ0ZrNjJVNW0takoxcWdEdWN4VDB3eVVYT3hwdndJNGlWWGVtVFRtUTFmam4td3YzOElIaUhHOVo0eko5MG44UnVhd1BoZE0ybkZR?oc=5",
+    "date": "2026-08-03 12:00",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "중국 UBTech가 개발한 소비자용 휴머노이드 로봇 시리즈가 시장의 주목을 받음. 해당 로봇은 총 13,361건의 선주문을 달성하며 중국 소비자 로봇 시장에서의 높은 상업적 성공 가능성을 입증함."
   },
   {
     "title": "시뮬레이션 제브라피쉬 및 시각 로봇 물고기를 이용해 신체 구조가 뇌 회로에 미치는 영향 규명",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.22881v1 Announce Type: new \nAbstract: LiDAR (Light Detection and Ranging) sensors capture the surrounding environment as dense 3D point clouds by measuring the time-of-flight of emitted laser pulses, making them foundational across autonomous vehicles, robotics, and large-scale mapping. PCAP (Packet Capture) files from these sensors are the starting point of most 3D perception pipelines, yet internal packet structures, UDP (User Datagram Protocol) port conventions and encoding schemes differ enough across manufacturers that no single tool reads them all. Ouster, Velodyne, Hesai, and Livox each require their own SDK (Software Development Kit), their own environment setup, and their own conversion workflow. Supporting all four means maintaining four disconnected pipelines with no shared infrastructure. The pipeline described here takes a raw PCAP as input and handles vendor identification automatically, scoring six independent file characteristics through a weighted multi-signal approach to determine the source sensor. C++ SDKs handle Ouster and Velodyne, while Hesai and Livox rely on Python-based dpkt parsing where no open source SDK exists. From there, a single command writes output to any of five industry-standard formats. We tested on real outdoor captures. Ouster peaks at 2.08M points per second, Velodyne at 1.47M, both running through native C++ packet decoding. Hesai and Livox land at 110K and 150K respectively, where Python-layer parsing introduces overhead that compounds under sustained load. The 8-10x gap held consistently across runs. Tested on a consumer-grade i3 with 8GB RAM, no vendor configuration required"
-  },
-  {
-    "title": "Improving Robotic Imitation Learning via Trajectory Standardization",
-    "original_title": "Improving Robotic Imitation Learning via Trajectory Standardization",
-    "link": "https://arxiv.org/abs/2606.22907",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22907v1 Announce Type: new \nAbstract: Imitation learning for robotic manipulation relies on large sets of human demonstration trajectories, which are often noisy and temporally irregular due to variable operator speed, intermittent pauses, and inconsistent action density. A common preprocessing strategy is time-uniform downsampling to shorten sequences, but it cannot effectively remove speed-induced non-uniformity or redundant pauses. This mismatch degrades data quality and hinders policy learning. To address this issue, we propose Information-Standardized Trajectory Resampling (ISR), an offline preprocessing method for effective imitation learning. ISR resamples each trajectory by enforcing approximately equal information distance between adjacent points. Specifically, we map trajectories onto an information-modulated Riemannian manifold and perform geodesic-equidistant parameterization. We construct an information-intensity field from velocity and acceleration norms: the velocity term removes small-motion redundancy, while the acceleration term preserves high-curvature and fine-manipulation phases. We evaluate ISR on three real-world manipulation tasks with mainstream imitation learning policies. Compared with the baseline time-uniform 3x downsampling, ISR improves task success rates by about 25%, remains robust across datasets collected from different operators, and reduces both dataset size and training cost. The code and videos are publicly available at https://d-robotics-ai-lab.github.io/isr.page."
-  },
-  {
-    "title": "PanoVine: Whole-Body Visuomotor Control for Soft Growing Vine Robot",
-    "original_title": "PanoVine: Whole-Body Visuomotor Control for Soft Growing Vine Robot",
-    "link": "https://arxiv.org/abs/2606.22923",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22923v1 Announce Type: new \nAbstract: Vine robots, a class of soft, growing robots, are suitable for navigating complex and confined environments due to their compliant bodies and self-supporting growth mechanism. However, hysteresis, tether interactions, and deformations make them difficult to predict and model, which in turn limits the effectiveness of conventional planning and control approaches. In this work, we present a data-driven, vision-based control framework for the first autonomous vine robot system. Our system integrates 19 cameras distributed along the robot's body to provide comprehensive feedback of both the robot state and the surrounding environment. Using this rich whole-body vision feedback, we train an end-to-end visuomotor policy from demonstrations for closed-loop autonomous control in complex environments. The policy efficiently aggregates information from distributed sensing while maintaining robustness to inaccurate robot states and actuation. Experimental results demonstrate that the learned policy enables robust navigation and manipulation in challenging scenarios, including steering through branched structures, climbing up slopes, traversing unsupported terrain, reaching objects precisely, and maneuvering through confined spaces and obstacles. Project website https://panovine-bot.github.io"
-  },
-  {
-    "title": "Humanoid-OmniOcc: Stereo-Based Full-View Occupancy Dataset for Embodied AI",
-    "original_title": "Humanoid-OmniOcc: Stereo-Based Full-View Occupancy Dataset for Embodied AI",
-    "link": "https://arxiv.org/abs/2606.22971",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.22971v1 Announce Type: new \nAbstract: Occupancy prediction at voxel-level granularity is essential for safe robotic navigation and interaction in complex environments. Existing occupancy datasets, however, are predominantly designed for autonomous driving with vehicle-centric biases -- forward-facing cameras, far-field geometry, and static road priors -- limiting their applicability to embodied humanoid perception. We present Humanoid-OmniOcc, a large-scale panoramic stereo-based occupancy dataset tailored for humanoid robots. The dataset encompasses 15 diverse simulated indoor scenes and 5 real-world environments, yielding over 155K samples with broad scene and style diversity. Importantly, the dataset is designed around a Real2Sim2Real closed-loop paradigm: real sensor specifications drive physically accurate simulation, simulation produces large-scale annotated training data, and models trained in simulation are directly evaluated on real-world captures -- enabling iterative refinement of the sim-to-real pipeline. We further propose \\textbf{H}umanoid \\textbf{S}urround \\textbf{S}tereo-guided \\textbf{Occ}upancy model (Humanoid-OmniOcc) that exploits robust depth priors for accurate 2D-to-3D lifting. Extensive experiments show that Humanoid-OmniOcc consistently outperforms monocular baselines and generalizes well to both unseen simulated test scenes and real-world environments, validating the effectiveness of the Real2Sim2Real design. Code and data will be available upon acceptance at https://d-robotics-ai-lab.github.io/humanoid-omniocc."
   }
 ]
