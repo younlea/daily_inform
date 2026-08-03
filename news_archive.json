@@ -1,5 +1,23 @@
 [
   {
+    "title": "LLM 보안 기본: 전체 위협 모델 분석",
+    "original_title": "LLM Security Basics: The Full Threat Model",
+    "link": "https://blog.bytebytego.com/p/llm-security-basics-the-full-threat",
+    "date": "2026-08-03 15:31",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "본 기사는 LLM의 보안을 위협하는 전체 공격 표면(full attack surface)을 분석하는 내용을 담고 있음. 이를 통해 LLM 시스템의 취약점을 종합적으로 파악하고 위협 모델을 구축하는 방법을 제시함."
+  },
+  {
+    "title": "자동화 기업의 단일 공급업체 종속성 탈피 및 AI 통합 방안",
+    "original_title": "How Automation Companies Add AI Without Locking into One Provider",
+    "link": "https://roboticsandautomationnews.com/2026/08/03/how-automation-companies-add-ai-without-locking-into-one-provider/103847/",
+    "date": "2026-08-03 15:16",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "자동화 및 로보틱스는 신뢰할 수 있는 하드웨어와 고도화된 소프트웨어 결합이 핵심임. 소프트웨어 부문은 인공지능(AI) 중심으로 빠르게 전환되는 추세이며, 비전 시스템, 자연어 인터페이스, 예측 모델 등 다양한 AI 기술이 현장 적용되고 있음."
+  },
+  {
     "title": "샤오즈 주간 뉴스: Unitree, 8월 10일 IPO 청약 진행 및 AgiBot, 홍콩 상장 추진함",
     "original_title": "XiaoZhi Weekly News | Unitree IPO subscription on August 10; AgiBot launches HK listing process - Gasgoo",
     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNd3VFd1dnc25JUTJrQTE5ZWVpUmg3Z2ZKNVluUHdRYVA1bF9XNmh1eWV5SUlVMURyUVhTbHN2UThLTDRRcnpkLVF3dEgwZjVYOS1Bdm9QQjBWX25ycm5ZOVdvbUptSG96LV9rX1ZETXJnUGdFaGNlaEVXSnBsWVg1UFZPZ0xiR3ZCTlBUMVZJeGwteTVodmxoY0tnakYwNFVtVW9ZM1hVSEVnSXREc1R0S3J0QllGUzUtUmF2LWVzWmYtYS1uZ3hEcFk5STM4TzhVN3Ewd1ZESGQwNWU5Z2pTX0FPaVpkcUpSZUE?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.22982v1 Announce Type: new \nAbstract: Multi-arm manipulation demands precise spatiotemporal coordination, yet many centralized approaches scale poorly as team size increases. To address this, we propose CLS-DP, a decentralized multi-agent framework that enables implicit coordination under partial observability without shared global views, explicit state information, or inter-agent communication. Under the centralized training and decentralized execution (CTDE) paradigm, CLS-DP distills privileged multi-agent dynamics into a latent space. At deployment, each agent infers a collaborative latent from its local RGB observation and a shared task instruction; it then conditions the diffusion denoising process on this latent. This design enables implicit coordination with a per-agent cost independent of team size. Across six RoboFactory benchmark tasks spanning two to four agents, CLS-DP achieves a 38% mean success rate, outperforming the best centralized baseline (20%) and a decentralized ablation without the collaborative latent (9%). It also maintains superior parameter efficiency across all agent configurations. Attribution maps show that an agent conditioned on the collaborative latent places high attribution on the joints and grippers of both itself and its teammates throughout execution. This suggests that the learned latent efficiently encodes collaborative dynamics from local observation, which facilitates implicit coordination in realistic settings characterized by partial observability."
-  },
-  {
-    "title": "TEXEDO : Test Time Scaling for Controller-aware Language-conditioned Humanoid Motion Generation",
-    "original_title": "TEXEDO : Test Time Scaling for Controller-aware Language-conditioned Humanoid Motion Generation",
-    "link": "https://arxiv.org/abs/2606.22998",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.22998v1 Announce Type: new \nAbstract: Text-conditioned motion generation is a promising interface for programming humanoid robots, yet current generators are often trained on human motion datasets retargeted to robot morphologies. Although such data provides rich semantic and kinematic priors, it fails to capture the nuances of whole-body tracking controllers, including balance, contact dynamics, actuation limits, and controller-specific failure modes. As a result, generated motions can be semantically plausible but difficult or impossible for the robot to execute. We introduce TEXEDO, a test-time scaling framework for humanoid motion generation that improves motion quality without requiring a stronger underlying generator. Given a text prompt, TEXEDO samples multiple candidate motions from a pretrained text-conditioned generator and selects the best motion that is both executable and task-aligned. The reward model combines a dynamic feasibility verifier, distilled from whole-body tracking rollouts to predict physical executability, with a semantic alignment verifier that measures text-motion alignment in a learned co-embedding space. Our pipeline treats dynamic feasibility as a hard constraint and semantic alignment as the selection objective within the feasible set. Through large-scale simulation studies and real-world deployment on a Unitree G1 humanoid robot, we show that TEXEDO consistently improves both tracking fidelity and text alignment. These results demonstrate that grounded verification is an effective path toward deployable language-guided humanoid motion generation. Project website: https://jianuocao.github.io/TEXEDO/"
-  },
-  {
-    "title": "AdaReP:Adaptive Re-Planning under Model Mismatch for Neural World-Model Predictive Control",
-    "original_title": "AdaReP:Adaptive Re-Planning under Model Mismatch for Neural World-Model Predictive Control",
-    "link": "https://arxiv.org/abs/2606.23079",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23079v1 Announce Type: new \nAbstract: Neural world models coupled with model predictive control (MPC) replan at every environment step to bound accumulated prediction error, but this incurs substantial computational overhead. Reusing a cached plan reduces this overhead, yet its effectiveness depends on how prediction mismatch propagates through the local dynamics. We analyze this trade-off with a perturbation-based dynamic-regret framework and show that stale-plan penalties scale with the reuse tolerance, the accumulated mismatch since the last replanning step, and the local dynamics sensitivity. Based on this structure, we propose AdaReP, a training-free wrapper that adapts the replanning tolerance online using the current deviation from the cached rollout and a local sensitivity estimate, without modifying the learned world model or planner. Across image-space planning, latent-space control, and real-world robotic manipulation, AdaReP substantially reduces planner-side computation while maintaining comparable task performance, including over 80% fewer queries on a 50-trial physical robot study."
   }
 ]
