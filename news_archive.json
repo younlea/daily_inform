@@ -1,5 +1,14 @@
 [
   {
+    "title": "FCC, Unitree 북미 판매 제한됨; 아시아 배포 및 IPO 수요일 개시 예정",
+    "original_title": "FCC Barred Unitree From North America: Asia Deployment and IPO Open Wednesday - Tech Times",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOR1JyNWFQU2wxd1JrXzZyS1RHUFBQWmZPWS0yM2k5bTczQ194ZFpaU1hVOGpjMWprc3FBeTJYRHBQa2VnbkU0cC0xVHVscTN3emlwLURMYWZYRnUwamsyaDZTQU51UldxM0d6MUFOTnRoZ2I5UmJKVEZELVVLbHJFdE8wZUtRZTZnUUVMVW1kZGFvaXlJa2lrTGdTUDR2UXplYXI5LXkwZlV4SUZCdWwzTVQ1ZndfU2FuSWw5VTltcw?oc=5",
+    "date": "2026-08-03 19:57",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "FCC에 의해 Unitree의 북미 지역 판매가 제한됨에 따라, 해당 기업은 아시아 시장을 중심으로 제품 배포 전략을 전개하는 것으로 알려짐. 또한, Unitree의 IPO가 오는 수요일에 개시될 예정임."
+  },
+  {
     "title": "HEBI Robotics, 소형 액추에이터 개발 가속화를 위한 NASA SBIR 보조금 확보",
     "original_title": "HEBI Robotics earns NASA SBIR grant to fast track miniaturized actuators",
     "link": "https://www.therobotreport.com/hebi-robotics-earns-nasa-sbir-grant-fast-track-miniaturized-actuators/",
@@ -331,6 +340,15 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "오프라인 환경에서 모방 제약 조건을 기반으로 행동의 다양성을 극대화하는 알고리즘 Dual-Force가 제안됨. 본 알고리즘은 기존 방식의 불안정성을 해결하기 위해 스킬 판별기를 제거하고 VdW force estimator를 활용하여 다양성을 최대화하며, Functional Reward Encoding (FRE)을 통해 내재적 보상을 안정화함. Solo12 시뮬레이션 벤치마크(로코모션 및 장애물 탐색)에서 다양한 고성능 행동을 성공적으로 재현하고 적대적 변화에 대한 높은 강건성을 입증함."
+  },
+  {
+    "title": "RynnBrain 1.1: 더욱 능숙하고 범용적인 구현 기반 모델을 향한 발전",
+    "original_title": "RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model",
+    "link": "https://arxiv.org/abs/2607.17977",
+    "date": "2026-08-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "RynnBrain 1.1은 2B부터 122B-A10B 규모까지의 구현 기반 모델군으로, 통합된 시공간 및 물리 기반 프레임워크를 통해 로봇의 인식, 공간 추론, 계획 능력을 지원함. 특히 모델군에 접촉점 예측 및 3D 네이티브 접지 기능을 추가하여 로봇 조작(manipulation) 분야에서 표현력을 높인 것이 주요 개선점임. 122B-A10B 모델은 VSI-Bench, MMSI 등 다수의 벤치마크에서 기존의 선도적 모델들을 능가하는 성능을 기록했으며, 실로봇 환경에서도 다중 임무 및 다중 구현체 훈련 시 높은 성공률을 입증함."
   },
   {
     "title": "EngineAI 설립자, 중국의 글로벌 휴머노이드 로봇 선도 잠재력 제시",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.22491v1 Announce Type: new \nAbstract: This paper presents \"PenduMorph\", a wireless reconfigurable rolling spherical robot designed as a modular platform for enclosed locomotion and inter-module interaction in challenging environments. The proposed robot extends our previous pendulum-actuated rolling disk concept to a fully enclosed spherical architecture integrating a 2-DoF internal pendulum, onboard control, battery-powered operation, and magnetic docking. The design aims to combine independent rolling mobility with protected hardware and reliable reconfigurability. We first present the robot design and an analytical study of the magnetic coupling mechanism to evaluate retention and interaction between coupled modules. We then experimentally investigate key motion behaviors at both the single-module and dual-module levels, including independent rolling, magnetic coupling, and coordinated coupled motion. The results show that the proposed platform enables stable wireless operation and a set of distinctive reconfigurable rolling behaviors, providing a useful foundation for future modular spherical robots operating in contact-rich and demanding environments."
-  },
-  {
-    "title": "UniFS: Unified Fast-to-Slow Hierarchical Architecture for Vision-Language-Action Models",
-    "original_title": "UniFS: Unified Fast-to-Slow Hierarchical Architecture for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2606.22794",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22794v1 Announce Type: new \nAbstract: Mainstream Fast-Slow dual system vision-language-action models decouple a high-frequency action expert from a low-frequency vision-language model for efficiency, yet they face a fundamental frequency dilemma: large update gaps cause semantic drift from stale context, while small gaps erode the intended computational savings. Moreover, because the action expert receives only the VLM's final-layer representation at a single fixed frequency, rich intermediate features are discarded, limiting both information coupling and manipulation precision. Inspired by multi-timescale neural processing in the human brain, we introduce UniFS, a unified fast-to-slow architecture that resolves these challenges through three key designs. First, we stratify the VLM layers into groups with progressively decreasing update frequencies, enabling shallow layers to capture fast-changing dynamics while deeper layers cache stable semantic context. Second, a latent vector inversion mechanism re-routes the interaction order between multi-scale VLM features and the action expert, aligning fast-varying representations with fine-grained action decoding and slow-varying ones with coarse planning. Third, a multi-level supervision strategy enforces a coarse-to-fine learning hierarchy across temporal scales. Together, these designs enable richer cross-frequency information transfer within a single backbone, while the low-frequency pathways additionally preserve temporal context across steps. Experiments on LIBERO show that UniFS achieves state-of-the-art performance (98.3\\% average success rate, a 2.5\\% gain over VLA-Adapter baseline) while reducing average inference latency from 36.5~ms to 17.8~ms (2.1$\\times$ speedup). Real-robot experiments on a Franka platform further validate its practical applicability. Code is opensourced at https://github.com/linsun449/UniFS."
-  },
-  {
-    "title": "Cloak: Zero-Shot Cross-Embodiment Manipulation by Masking the End-Effector from the VLA",
-    "original_title": "Cloak: Zero-Shot Cross-Embodiment Manipulation by Masking the End-Effector from the VLA",
-    "link": "https://arxiv.org/abs/2606.22836",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22836v1 Announce Type: new \nAbstract: We present Cloak, a training recipe that endows a Vision-Language-Action (VLA) model with zero-shot cross-embodiment transfer by cloaking the end-effector from its own wrist camera. The end-effector occupies a large and consistent region of the wrist view and masking it allows for embodiment-agnostic visual reasoning. Cloak renders a mask in simulation from the robot's known geometry, accurately and in real time, with no segmentation or generative models. During training, we augment the mask so the model generalizes to embodiments unseen at training time. We demonstrate the recipe with Cloak-VLA, a VLA trained with Cloak on a single parallel-jaw gripper dataset. No data of new embodiments is ever collected. Cloak-VLA transfers zero-shot to various unseen embodiments, including another gripper, another arm, and a five-fingered hand, while preserving the source embodiment's performance. By decoupling the wrist view from its own embodiment, Cloak allows data to outlive the hardware it was collected on."
   }
 ]
