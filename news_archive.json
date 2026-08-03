@@ -1,5 +1,14 @@
 [
   {
+    "title": "시뮬레이션 제브라피쉬 및 시각 로봇 물고기를 이용해 신체 구조가 뇌 회로에 미치는 영향 규명",
+    "original_title": "Simulated zebrafish and a vision-equipped robotic fish reveal how the body shapes brain circuits",
+    "link": "https://robohub.org/simulated-zebrafish-and-a-vision-equipped-robotic-fish-reveal-how-the-body-shapes-brain-circuits/",
+    "date": "2026-08-03 11:17",
+    "source": "Robohub",
+    "category": "humanoid",
+    "summary": "물고기가 강물 흐름에 맞서 위치를 유지하려면 속도와 방향을 계산하는 복잡한 제어 능력이 필요함. 대부분의 물고기는 시각을 활용하여 주변 환경의 흐름(optic flow)을 감지하고 방향을 파악하는 것으로 알려짐. 연구진은 시뮬레이션 제브라피쉬와 시각 장착 로봇 물고기를 활용하여 이러한 생체 메커니즘을 분석하고 뇌 회로 연결 방식을 규명함."
+  },
+  {
     "title": "AGIBOT 파운데이션 모델, 오디오-비주얼 추론 벤치마크 최고 성능 달성",
     "original_title": "AGIBOT’s foundation model tops benchmark test for audio-visual reasoning",
     "link": "https://roboticsandautomationnews.com/2026/08/03/agibots-foundation-model-tops-benchmark-test-for-audio-visual-reasoning/103832/",
@@ -187,6 +196,24 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로봇 모방 학습에서 발생하는 시간적 불일치 문제를 해결하기 위해 TRACT라는 액션 청크 구조를 제시함. 이는 과업별 그래프를 활용하여 액션을 현재 단계와 미래의 단일 경계로 분해하고, 접촉 기반 동작을 위해 원인 기반 응답 부족 적분기를 도입하여 정책 의도와 실제 움직임을 정밀하게 비교함. 실robot 테스트 결과, TRACT는 풀 시퀀스 성공률 10/10 및 99.00%의 위프(wipe) 완료율을 기록했으며, 기존 대비 단계 모호성 및 정지 현상 발생을 모두 0/10으로 감소시킴을 입증함."
+  },
+  {
+    "title": "CorrelationFlow: LiDAR 장면 흐름 추정을 위한 트레이닝 프리 기하학적 접근법",
+    "original_title": "CorrelationFlow: A Training-Free Geometric Approach for LiDAR Scene Flow Estimation",
+    "link": "https://arxiv.org/abs/2607.29237",
+    "date": "2026-08-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 LiDAR 장면 흐름 추정 방법들이 특정 아키텍처와 손실 함수에 의존하는 구조적 취약성을 내포하는 문제를 지적함. 본 논문은 트레이닝이 불필요한 CorrelationFlow라는 기하학적 프레임워크를 제시하며, 장면 흐름 문제를 연결 요소 분할 및 상관관계 극대화 같은 고전 컴퓨터 비전 연산으로 환원시키는 방식임. 이 방법은 단일 스윕 쌍에 적용 가능한 희소 대안을 개발하여 Argoverse 2 2026 챌린지 등에서 높은 신뢰성을 보여주었으며, 장면 흐름 문제 해결에 있어 고전 CV 기법의 역할을 재조명함."
+  },
+  {
+    "title": "Fast Feature Field ($\\text{F}^3$): 이벤트의 예측적 표현",
+    "original_title": "Fast Feature Field ($\\text{F}^3$): A Predictive Representation of Events",
+    "link": "https://arxiv.org/abs/2509.25146",
+    "date": "2026-08-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "본 논문은 event-based camera 데이터를 처리하기 위한 새로운 예측적 표현 $\\text{F}^3$를 제시함. $\\text{F}^3$는 과거 이벤트를 예측하여 미래 이벤트를 모델링함으로써 장면 구조와 움직임 정보를 보존하며, 이벤트 데이터의 희소성 및 변화에 강한 특성을 가짐. 해당 방법은 광학 흐름, 의미 분할, 단안 깊이 추정 등 다양한 하류 과제에서 최첨단 성능을 달성했으며, 자율주행 차량, 사족 보행 로봇 등 다양한 로봇 플랫폼 및 환경 조건에서 그 효용성이 입증됨."
   },
   {
     "title": "EngineAI 설립자, 중국의 글로벌 휴머노이드 로봇 선도 잠재력 제시",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.23371v1 Announce Type: new \nAbstract: For imitation learning in robotic manipulation, high data collection costs result in the scarcity of high quality data. In this paper, we leverage the inherent heterogeneity of trajectories to address this challenge. Based on our observations of manipulation tasks, we categorize motions into transitional, precise, and agile types, defining the latter two as trajectory saliency due to their criticality to task success in contrast to the prevalent but less relevant transitional motions. Therefore, we propose the Trajectory Saliency Detector (TSD), a training-free and plug-and-play framework to identify trajectory saliency. TSD employs two physically-grounded metrics: spatial entropy to capture fine-grained manipulation and centripetal acceleration to detect agile maneuvering. We further leverage TSD to develop a dataset compression method that reduces training costs and a dataset expansion strategy that improves data collection efficiency. Extensive experiments in both simulation and real-world settings demonstrate that models trained on TSD-condensed datasets achieve comparable or even superior performance with 25% less data on average. These results validate the effectiveness of our dataset compression and expansion strategies, thereby confirming the utility of TSD. Consequently, TSD offers a scalable and cost-effective pathway to synthesize information-dense datasets for efficient robot learning. Project page: https://trajectory-saliency-detector.github.io/trajectory-saliency-detector/"
-  },
-  {
-    "title": "Flowing With Purpose: Latent Action Guided Flow Matching Policies For Robotic Manipulation",
-    "original_title": "Flowing With Purpose: Latent Action Guided Flow Matching Policies For Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2606.23420",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23420v1 Announce Type: new \nAbstract: Flow matching has recently become a new standard for behavior cloning in robotic manipulation. However, state-of-the-art flow matching policies suffer from a systematic structural mismatch: they rely on a globally fixed isotropic source distribution despite the strongly fragmented and heteroscedastic structure of robotic action spaces. This agnostic initialization forces the model to learn highly entangled vector fields, bottlenecking training efficiency and limiting overall policy performance. To address this limitation, we introduce Latent Action Guided Flow Matching (LAFM), a novel framework that replaces the monolithic Gaussian with an adaptive library of learned prior distributions. By grounding these distributions using a latent action model, LAFM maps current observations to discrete motion primitives, selecting a specialized base distribution that provides an informed, structurally aligned initialization for the denoising process. This dynamic adaptivity naturally accommodates heteroscedasticity in human demonstrations and makes transport trajectories shorter and less entangled. Empirically, LAFM substantially outperforms standard flow matching formulations, increasing task success rates by 23.4% in real-world robotic deployments and by 10.4% on the LIBERO-90 benchmark. Furthermore, we demonstrate that LAFM achieves state-of-the-art results, surpassing massively pre-trained vision-language-action models while utilizing significantly smaller architectures."
-  },
-  {
-    "title": "DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy",
-    "original_title": "DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy",
-    "link": "https://arxiv.org/abs/2606.23431",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23431v1 Announce Type: new \nAbstract: Fine-grained, bimanual dexterous manipulation remains a foundational challenge in robotics. Traditional teleoperation systems often fail in contact-rich tasks because embodiment gaps hinder accurate kinematic mapping, while tactile and force feedback remain absent. Consequently, data collection efficiency for high-precision tasks remains prohibitively low. To address these limitations, we propose a tactile-driven adaptation strategy designed to enable fine-grained manipulation on top of teleoperation pipelines. Instantiated within our bimanual dexterous framework, DexTeleop-0, this strategy introduces a real-time optimization loop that bridges the embodiment gap by translating coarse human tracking intents into precise, force-compliant robotic commands with tactile sensing. By estimating accurate contact points and leveraging a tactile-enabled fingertip force-sensing profile, the system dynamically computes localized corrections using the operational space Jacobian with respect to joint angle updates. We rigorously evaluate this tactile-driven adaptation strategy across both simulated environments and real-world hardware. Compared with representative baselines, the proposed method consistently achieves higher task success rates and improved execution efficiency in robust grasping, disturbance-resilient manipulation, and complex dexterous tasks."
-  },
-  {
-    "title": "HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory",
-    "original_title": "HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory",
-    "link": "https://arxiv.org/abs/2606.23565",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23565v1 Announce Type: new \nAbstract: LLM agents follow a practical execution loop in digital environments: they reason over structured states, invoke tools, inspect feedback, and revise actions. Extending this loop to physical robots is difficult because physical execution is continuous, embodiment-dependent, uncertain, and constrained by safety. Existing embodied-AI systems have advanced manipulation, spatial understanding, navigation, and humanoid control, but these capabilities often remain specialized modules or loosely coupled decision loops. In this work, we introduce HoloAgent-0, a unified embodied agent framework for real-world robot deployment. Embodied AgentOS converts language instructions into executable skill graphs, schedules robot resources, monitors execution, and triggers clarification or re-planning from runtime feedback. HoloAgent-0 organizes heterogeneous robot models and controllers through three coupled layers: Embodied AgentOS for closed-loop execution, 3D spatial memory for physical world grounding, and embodied skills for robot action. We deploy HoloAgent-0 on real hardware and evaluate its spatial memory, long-horizon navigation, and closed-loop execution across motion generation, object search, cross-robot coordination, and mobile manipulation."
   }
 ]
