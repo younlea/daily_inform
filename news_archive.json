@@ -1,5 +1,14 @@
 [
   {
+    "title": "월든 로보틱스, 실용적 휴머노이드 로봇 개발 위해 도요타와 협력 체결",
+    "original_title": "Walden Robotics Partners With Toyota on Practical Humanoids",
+    "link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
+    "date": "2026-08-03 16:05",
+    "source": "IEEE Spectrum",
+    "category": "humanoid",
+    "summary": "월든 로보틱스(Walden Robotics)는 TRI의 스핀오프 기업으로서, 연구 중심에서 벗어나 실제 산업 현장에 필요한 가치 중심의 실용적 휴머노이드 로봇 개발에 집중함. 이들은 개발 과정에서 레그(leg) 기반 대신 안정성과 통합성이 높은 휠(wheeled) 기반을 채택했으며, 제조 및 물류 현장의 반복적이고 단순한 작업을 주요 타겟 시장으로 설정함. 월든은 단순한 상업적 성공을 넘어, 도요타의 철학에 따라 로봇 기술이 노동자의 삶의 질 향상에 기여하는 데 목표를 두고 점진적인 시장 확대를 계획함."
+  },
+  {
     "title": "LLM 보안 기본: 전체 위협 모델 분석",
     "original_title": "LLM Security Basics: The Full Threat Model",
     "link": "https://blog.bytebytego.com/p/llm-security-basics-the-full-threat",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.22971v1 Announce Type: new \nAbstract: Occupancy prediction at voxel-level granularity is essential for safe robotic navigation and interaction in complex environments. Existing occupancy datasets, however, are predominantly designed for autonomous driving with vehicle-centric biases -- forward-facing cameras, far-field geometry, and static road priors -- limiting their applicability to embodied humanoid perception. We present Humanoid-OmniOcc, a large-scale panoramic stereo-based occupancy dataset tailored for humanoid robots. The dataset encompasses 15 diverse simulated indoor scenes and 5 real-world environments, yielding over 155K samples with broad scene and style diversity. Importantly, the dataset is designed around a Real2Sim2Real closed-loop paradigm: real sensor specifications drive physically accurate simulation, simulation produces large-scale annotated training data, and models trained in simulation are directly evaluated on real-world captures -- enabling iterative refinement of the sim-to-real pipeline. We further propose \\textbf{H}umanoid \\textbf{S}urround \\textbf{S}tereo-guided \\textbf{Occ}upancy model (Humanoid-OmniOcc) that exploits robust depth priors for accurate 2D-to-3D lifting. Extensive experiments show that Humanoid-OmniOcc consistently outperforms monocular baselines and generalizes well to both unseen simulated test scenes and real-world environments, validating the effectiveness of the Real2Sim2Real design. Code and data will be available upon acceptance at https://d-robotics-ai-lab.github.io/humanoid-omniocc."
-  },
-  {
-    "title": "Distilling Collaborative Dynamics into Latent Space for Implicit Coordination in Decentralized Multi-Agent Manipulation",
-    "original_title": "Distilling Collaborative Dynamics into Latent Space for Implicit Coordination in Decentralized Multi-Agent Manipulation",
-    "link": "https://arxiv.org/abs/2606.22982",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22982v1 Announce Type: new \nAbstract: Multi-arm manipulation demands precise spatiotemporal coordination, yet many centralized approaches scale poorly as team size increases. To address this, we propose CLS-DP, a decentralized multi-agent framework that enables implicit coordination under partial observability without shared global views, explicit state information, or inter-agent communication. Under the centralized training and decentralized execution (CTDE) paradigm, CLS-DP distills privileged multi-agent dynamics into a latent space. At deployment, each agent infers a collaborative latent from its local RGB observation and a shared task instruction; it then conditions the diffusion denoising process on this latent. This design enables implicit coordination with a per-agent cost independent of team size. Across six RoboFactory benchmark tasks spanning two to four agents, CLS-DP achieves a 38% mean success rate, outperforming the best centralized baseline (20%) and a decentralized ablation without the collaborative latent (9%). It also maintains superior parameter efficiency across all agent configurations. Attribution maps show that an agent conditioned on the collaborative latent places high attribution on the joints and grippers of both itself and its teammates throughout execution. This suggests that the learned latent efficiently encodes collaborative dynamics from local observation, which facilitates implicit coordination in realistic settings characterized by partial observability."
   }
 ]
