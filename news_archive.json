@@ -72,6 +72,42 @@
     "summary": "투명 실험 장비 조작은 오류 발생 시 위험도가 높아 안정적인 파지 기술이 핵심임. 기존 시스템은 인식, 깊이 복원, 파지 계획이 독립적이라 오차와 불안정성이 발생함. TransGraspNet은 경계, 표면, 물리적 일관성이라는 세 가지 원칙을 통합하여 인식부터 실행까지의 일관성을 확보함. 이로써 복잡한 환경에서도 높은 파지 성공률과 액체 유출이 없는 실세계 운용 성능을 구현함."
   },
   {
+    "title": "물체 질량을 고려한 휴머노이드 균형 제어 연구: 트레이드오프 분석 및 리프팅 제어",
+    "original_title": "Balancing of Humanoid with Object Mass: Trade-off Analyses and Lifting Control",
+    "link": "https://arxiv.org/abs/2607.29625",
+    "date": "2026-08-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "물체 질량의 동적 효과를 전신 역학(whole-body dynamics)에 반영하여 휴머노이드의 균형 안정성을 분석함. 연구진은 Biped 시스템의 균형 상태 영역(BSB)을 구축하고, 물체 질량에 따른 모멘텀 조절 능력과 시스템의 제한 요소 간의 트레이드오프 관계를 정량화함. 특히 '임계 질량(critical mass)'과 '전환 질량(transition mass)'을 핵심 파라미터로 제시하고, 이를 BSB 기반 전신 궤적 최적화에 적용하여 안정적인 물체 리프팅 및 유지 제어를 성공적으로 구현하였음."
+  },
+  {
+    "title": "다양한 다리형 로봇을 위한 시스템적 Sim-to-Real 전이 연구 제시",
+    "original_title": "Towards bridging the gap: Systematic sim-to-real transfer for diverse legged robots",
+    "link": "https://arxiv.org/abs/2509.06342",
+    "date": "2026-08-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "실환경 적용을 위해서는 에너지 효율성과 로코모션의 안정성이 필수적이나, 기존의 Sim-to-Real 방식은 액추에이터의 에너지 손실을 간과하는 문제점을 지님. 이에 본 논문은 물리 기반의 에너지 모델을 강화학습(RL)에 통합한 새로운 프레임워크를 제시하며, 전자기적 및 기계적 소산을 반영하는 간결한 보상 구조를 활용함. 다수의 플랫폼에서 검증된 결과, ANYmal의 전송 비용(Cost of Transport)을 기존 최고 성능 대비 32%까지 절감하는 등 탁월한 정책 전이 성능을 입증함."
+  },
+  {
+    "title": "DuetHOI: 언어 기반의 관절 계획 및 접촉 정제를 통한 양손-물체 동작 생성",
+    "original_title": "DuetHOI: Language-Guided Bimanual Hand--Object Motion Generation with Articulation Planning and Contact Refinement",
+    "link": "https://arxiv.org/abs/2603.08390",
+    "date": "2026-08-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 양손과 관절 물체 간의 복잡한 상호작용 생성을 위한 구조적 프레임워크 DuetHOI를 제안함. DuetHOI는 ContactVAE를 통해 접촉 의도를 예측하고, ArtPlanner와 DualFormer를 결합하여 물체 상태 기반의 전역적 상호작용을 생성함. 이후 ProxiRefine을 사용하여 손-물체 근접성을 정밀하게 보정하여 국부적인 표면 정렬을 개선하였으며, 다수의 실험에서 기존 대비 높은 성능을 입증함."
+  },
+  {
+    "title": "운동역학적 다중 접촉 전신 궤적 최적화를 통한 휴머노이드 보행 모션 리타겟팅",
+    "original_title": "Kinodynamic Motion Retargeting for Humanoid Locomotion via Multi-Contact Whole-Body Trajectory Optimization",
+    "link": "https://arxiv.org/abs/2603.09956",
+    "date": "2026-08-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "본 연구는 기존 모션 캡처(MoCap) 데이터 기반 리타겟팅 방식의 물리적 비일관성 문제를 해결하는 Kinodynamic Motion Retargeting (KDMR) 프레임워크를 제시함. KDMR은 리타겟팅 과정을 다중 접촉 전신 궤적 최적화 문제로 모델링하고, 강체 역학 및 지면 반력력(GRF) 측정을 통합하여 복잡한 인간의 접촉 패턴을 재현함. 실험 결과, KDMR은 기존 운동학적 방법 대비 역동적으로 실현 가능한 기준 궤적을 성공적으로 생성하여, 다운스트림 제어 정책의 수렴 속도와 전반적인 보행 안정성을 크게 향상시키는 것으로 입증됨."
+  },
+  {
     "title": "EngineAI 설립자, 중국의 글로벌 휴머노이드 로봇 선도 잠재력 제시",
     "original_title": "China has potential to lead global humanoid robotics: Founder of EngineAI - AOL.com",
     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNT05FcEc1Y29uR20xUFJCeGdXU0tWb3pDTTBnaFlSeWRVZ2hxNHRaZTA5bmRMSHFQYUxpVFJyeFRoaEQzTFBDTEhFVEV4b0FkblI2RDRSQkhKUktaUFo2S3hfaTlQV1V2Z3FPeXVJUUc0VS10aUYzV2x6anZOMmI4Y2RRRWQtUUU?oc=5",
@@ -17962,41 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.20857v1 Announce Type: cross \nAbstract: Vision-Language-Action (VLA) models enable robots to execute manipulation tasks from natural-language instructions grounded in visual observations. However, existing VLA interfaces primarily rely on speech or text input, limiting accessibility for deaf, hard-of-hearing, and speech-impaired users. We present SignVLA, a real-time sign-language-guided VLA framework for accessible human-robot interaction. The system introduces a modular sign-to-text interface that converts visual sign gestures into semantic instructions compatible with downstream VLA policies. Given video streams, SignVLA extracts hand landmark features and employs an attention-enhanced Long Short-Term Memory (LSTM) network to capture temporal gesture dynamics for alphabet- and command-level sign recognition. A temporal stabilization module further improves prediction consistency in real-time interaction settings.The generated instruction sequence is then passed to a downstream VLA policy for sign-conditioned robotic manipulation. Experimental results demonstrate stable real-time sign recognition and successful execution of manipulation tasks driven by sign-language inputs. Our findings suggest that lightweight temporal sign recognition can serve as an effective and practical accessibility layer for multimodal embodied intelligence."
-  },
-  {
-    "title": "Can Single-View Mesh Reconstruction Generalize to Robot Camera Rotation?",
-    "original_title": "Can Single-View Mesh Reconstruction Generalize to Robot Camera Rotation?",
-    "link": "https://arxiv.org/abs/2606.22987",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22987v1 Announce Type: cross \nAbstract: Single-view mesh reconstruction predicts object meshes and spatial layouts from a single observation, making it attractive for fast robot spatial reasoning and real-to-sim digital twins. However, robot-mounted cameras naturally rotate during manipulation and navigation, while learned single-view reconstruction models often rely on view-dependent priors and may generalize poorly to out-of-distribution camera rotations. Such rotations can introduce 3D inconsistencies, incorrect layouts, and violations of physical constraints, but this failure mode remains under-evaluated. We introduce an evaluation protocol with controlled axis-wise roll, pitch, and yaw sweeps to trace errors in monocular depth estimation (MDE), canonical object meshes, camera-space layout, and physical plausibility within a representative SAM3D-style pipeline. On the Aria Digital Twin dataset and a real Franka wrist-camera sequence, camera rotations induce MDE distortion, layout drift, and collision penetration, while canonical mesh predictions remain relatively stable. A two-stage SAM3D+FoundationPose pipeline is more robust than one-stage feed-forward layout prediction, and our Gravity-Aware Refinement reduces one-stage pairwise ICP-based layout-orientation error by 47.1$\\%$. Our evaluation reveals that current single-view mesh reconstruction methods generalize poorly to robot camera rotation, and suggests that explicit gravity cues are important for reliable robotic single-view mesh reconstruction."
-  },
-  {
-    "title": "Flow6D: Discrete-to-Continuous Flow Matching for Efficient and Accurate Category-Level 6D Pose Estimation",
-    "original_title": "Flow6D: Discrete-to-Continuous Flow Matching for Efficient and Accurate Category-Level 6D Pose Estimation",
-    "link": "https://arxiv.org/abs/2606.23293",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23293v1 Announce Type: cross \nAbstract: 6D pose estimation is a key task in computer vision and embodied AI, widely used in robotic manipulation, augmented reality, etc. Existing methods directly regress in a high-dimensional continuous space, facing two key challenges in category-level pose estimation: limited accuracy due to noise and local optima, and inefficient search over an infinite space that hinders real-time performance. This paper proposes Flow6D, a hierarchical flow matching framework with a two-stage discrete latent space localization-continuous pose regression strategy. Rotation and translation parameters are first discretized into bins, with a discrete flow matching model locking the latent space around the true pose to reduce search complexity. Then, by sampling in the latent space, a continuous flow matching model predicts local pose residuals to optimize the estimate and regress to an accurate pose. The framework also naturally extends to articulated objects, outperforming state-of-the-art methods on synthetic and real datasets with real-time inference at 70 FPS. Project website: https://flow6d.github.io/."
-  },
-  {
-    "title": "A Watermark for Vision-Language-Action and World Action Models",
-    "original_title": "A Watermark for Vision-Language-Action and World Action Models",
-    "link": "https://arxiv.org/abs/2606.23574",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23574v1 Announce Type: cross \nAbstract: Vision-language-action (VLA) models and world-action models (WAM) are the generative models now driving general-purpose robot control, turning raw camera input directly into motor commands. They are increasingly deployed as black-box services, where a partner runs the policy through an interface while the owner keeps the weights private. Training such a model takes proprietary data and heavy computational power, making the deployed model itself a valuable intellectual property.\n  To address this, we propose the \\emph{keyed latent-provenance verification} method, which fingerprints the policy through the seed of the Gaussian noise vector that the models draw before generation. At the injection stage, the owner swaps this seed for a keyed one with the same distribution as ordinary noise, so the fingerprinted actions are statistically identical to those of an ordinary run and an adversary watching the output finds no signal to detect or remove. At the verification stage, the owner runs the suspect model under authorized access and records the action channels the robot executes, a partial and possibly post-processed view of the policy's output. From this view, the verifier recovers the seed by gradient-based maximum a posteriori (MAP) optimization, tests it for the secret key to score each rollout, and aggregates these scores into a single decision on whether the suspect model belongs to the owner.\n  We evaluate the method on two representative models across two robot suites. The experiments cover detection of the fingerprint, identification of which of several keys a suspect carries, robustness to a range of attacks, and an analysis of why the design works. Across both models, the fingerprint can be detected reliably with little change to task performance, and it remains detectable under output-side removal attacks and weight-level edits."
-  },
-  {
-    "title": "Learning Process Rewards via Success Visitation Matching for Efficient RL",
-    "original_title": "Learning Process Rewards via Success Visitation Matching for Efficient RL",
-    "link": "https://arxiv.org/abs/2606.23640",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23640v1 Announce Type: cross \nAbstract: In many modern applications of reinforcement learning (RL), the natural reward for a task of interest is inherently sparse: a reward of 0 is given everywhere except when the task is completed, when a reward of +1 is given. Training a policy to maximize such a sparse reward requires solving a challenging credit assignment problem, leading to slow or ineffective RL improvement. We propose a simple approach to transform a sparse outcome reward into a dense process reward. Our approach relies on training a discriminator to distinguish between previous successful and unsuccessful episodes, and using this discriminator to incentivize the RL-learned policy to match the state-action visitations of successful episodes, while avoiding those of unsuccessful episodes. By incentivizing the policy to match the visitations over all states, not just those that correspond to task success, this reward provides dense feedback on whether progress is being made towards task completion, and, we show, provably achieves this without changing the optimal policy. Focusing on finetuning of robotic control policies, we demonstrate that our approach leads to significantly faster RL finetuning performance on both simulated and real-world manipulation tasks, as compared to simply maximizing the sparse outcome reward."
   }
 ]
