@@ -1,5 +1,14 @@
 [
   {
+    "title": "AGIBOT 파운데이션 모델, 오디오-비주얼 추론 벤치마크 최고 성능 달성",
+    "original_title": "AGIBOT’s foundation model tops benchmark test for audio-visual reasoning",
+    "link": "https://roboticsandautomationnews.com/2026/08/03/agibots-foundation-model-tops-benchmark-test-for-audio-visual-reasoning/103832/",
+    "date": "2026-08-03 09:29",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "AGIBOT의 멀티모달 파운데이션 모델 'WITA-Omni Preview'가 'Daily-Omni' 오디오-비주얼 추론 벤치마크에서 최고 점수를 기록함. 해당 모델은 85.21%의 평균 정확도를 기록하며 Alibaba, Google, ByteDance 등 주요 경쟁사들의 모델을 능가하는 성과를 발표함. 이는 AI 기술 분야에서 AGIBOT의 기술력을 입증한 결과임."
+  },
+  {
     "title": "리이마진 로보틱스, 현장 학습 로봇으로 베일 벗다",
     "original_title": "Reimagine Robotics emerges from stealth with robots that ‘learn on the job’",
     "link": "https://www.therobotreport.com/reimagine-robotics-emerges-stealth-with-robotslearn-on-the-job/",
@@ -160,6 +169,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "본 논문은 Flow Matching 생성 모델과 Control Barrier Function (CBF) 안전 보장 기법을 결합한 모듈형 추론 프레임워크를 제시함. 기존의 외부 필터링 방식과 달리, 모델의 노이즈 제거 과정 자체를 수정하여 안전성을 내재적으로 생성하는 것이 핵심임. 이는 추가적인 안전 데이터셋이나 모델 재학습 없이도 로봇 매니퓰레이션 및 2D 내비게이션 등 다양한 플랫폼에서 높은 신뢰도의 안전성을 확보할 수 있음을 검증함."
+  },
+  {
+    "title": "조작 대상 선택의 중요성: 바운딩 박스를 활용한 시맨틱 조작 데이터 스케일링 법칙 규명",
+    "original_title": "Choose What to Manipulate: Revealing Data Scaling Laws in Bounding-Box Guided Policies for Semantic Manipulation",
+    "link": "https://arxiv.org/abs/2602.11885",
+    "date": "2026-08-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "텍스트 명령 기반 정책의 한계를 극복하기 위해, 본 연구는 바운딩 박스 지침을 활용하여 목표 대상을 직접 지정하는 Semantic Manipulation 프레임워크를 제안함. 이를 위해 Label-UMI라는 자동화된 세분화 장비를 구축하고, object detection과 bounding-box-guided diffusion policy를 결합한 새로운 Semantic-motion-decoupled 프레임워크를 개발함. 실험 결과, 데이터 일반화 성능이 포화되는 데이터 스케일링 법칙을 규명했으며, 6,400개의 데모를 통해 복잡한 환경에서도 85%의 높은 성공률을 달성했음을 보고함."
   },
   {
     "title": "EngineAI 설립자, 중국의 글로벌 휴머노이드 로봇 선도 잠재력 제시",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.23589v1 Announce Type: new \nAbstract: Long-horizon robot manipulation remains challenging because similar observations may occur at different execution stages, while the appropriate action depends on previously completed operations. Memory can address this ambiguity by enabling policies to infer task progress from execution history. However, existing memory-augmented approaches often either retain dense histories that require compression or rely primarily on recent context that may discard earlier task-relevant events. In this work, we propose propose KEMO, a lightweight plug-in memory framework that automatically selectively preserves keyframes associated with task-relevant state changes for VLA policies. KEMO combines robot kinematics with visual filtering to detect events, encodes the selected keyframes as compact temporally ordered memory tokens, and integrates them with current visual features through cross-attention and gated residual fusion for VLA training. The detected events also define higher-weight training samples near critical transitions. We evaluate KEMO on various real-world dual-arm manipulation tasks spanning 2 to 6 scored subtasks, and trajectory length ranging from 830 steps to 2846 execution steps (durations from 28 to 95 seconds). Compared with the memory-free baseline (e.g., $\\pi_{0.5}$), KEMO improves aggregate Task Success Rate by 23.6\\% and Stage Completion Rate by 34.1\\%. Ablations show that event-driven keyframe selection outperforms uniform sampling and recent-frame retention, while the proposed gated fusion and keyframe-aligned loss weighting provide complementary gains."
-  },
-  {
-    "title": "dVLA-RL: Reinforcement Learning over Denoising Trajectories for Discrete Diffusion Vision-Language-Action Models",
-    "original_title": "dVLA-RL: Reinforcement Learning over Denoising Trajectories for Discrete Diffusion Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2606.23623",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23623v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have established a powerful paradigm for generalist robotic manipulation by grounding control into the semantic reasoning of VLMs. Prevailing architectures typically model actions continuously via diffusion or flow processes, or discretely through either autoregressive generation or parallel decoding. Recently, Discrete Diffusion VLAs (dVLAs) have emerged as a distinct alternative, unifying vision, language, and action into a single discrete token space via masked generative modeling. While combining iterative refinement with unified representations, its training has thus far been restricted to Supervised Fine-Tuning (SFT), leaving the potential of Reinforcement Learning (RL) for further policy refinement largely unexplored. A fundamental challenge in RL for dVLAs is that the marginal probability of the final action generated by dVLAs remains intractable. To solve this problem, we propose \\textbf{dVLA-RL}, shifting the learning objective from the marginal action probability to the joint probability of the sampled generation path. Specifically, by modeling the denoising process as a Markov Decision Process (MDP), we mathematically formulate this path probability as a product of step-wise transitions. This trajectory-level objective provides a unified formulation that natively accommodates variable denoising steps. Leveraging this intrinsic fexibility, we introduce a unified step scheduling approach for complex multi-task learning, tailoring denoising steps to specific task complexities to maximize both success rates and computational effciency. Extensive evaluations demonstrate that our approach achieves a success rate of \\textbf{99.7\\%} on LIBERO. Furthermore, it establishes strong VLA-based results on RoboTwin 2.0 by delivering a \\textbf{30.6\\%} improvement over the SFT baseline, remaining competitive with strong World-Action Model baselines."
-  },
-  {
-    "title": "Learning to See While Learning to Act: Diffusion Models for Active Perception in Robot Imitation",
-    "original_title": "Learning to See While Learning to Act: Diffusion Models for Active Perception in Robot Imitation",
-    "link": "https://arxiv.org/abs/2606.23625",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23625v1 Announce Type: new \nAbstract: Most imitation learning methods assume full observability in table-top settings. In practice, objects are often occluded, requiring robots to both search and act, and learning this coupled behavior from limited demonstrations remains challenging. We propose See2Act, an imitation learning approach that conditions action prediction on a sequence of actively-inferred viewpoints at test time, by coupling action denoising with viewpoint refinement. The policy is trained using camera poses anchored to keyframe actions from offline demonstrations, enabling implicit learning of where to see, while learning how to act. We empirically demonstrate that in Ravens the policy recovers informative viewpoints under severe occlusions, and on RLBench tasks it improves performance by up to 34% over prior methods. In the real world, we collect 50 demonstrations in a digital twin and achieve zero-shot sim-to-real transfer on pick-and-place tasks using depth observations. The policy handles significant occlusions, showing that learned viewpoint reasoning enables robust manipulation under partial observability."
   }
 ]
