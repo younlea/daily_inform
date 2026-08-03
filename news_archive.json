@@ -153,6 +153,15 @@
     "summary": "본 연구는 정밀 로봇 조작 시 초기 파지 오류로 발생하는 문제를 해결하고자, 파지 사전 학습 강화(GPA) 기술과 효율적인 실시간 처리를 위한 로봇 어텐션 만바(RAM)를 결합한 GPA-RAM 프레임워크를 제안함. GPA-RAM은 RLBench 및 ALOHA 등의 플랫폼에서 기존 방법 대비 현저히 높은 평균 성공률을 기록함. 이는 정밀한 조작 능력과 높은 처리 속도의 실시간 로봇 구동 능력을 동시에 달성했음을 의미함."
   },
   {
+    "title": "배리어 강화 흐름 매칭을 통한 안전한 시각-언어-행동 모델",
+    "original_title": "Safe Vision Language Action Models via Barrier Enhanced Flow Matching",
+    "link": "https://arxiv.org/abs/2607.29569",
+    "date": "2026-08-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 Flow Matching 생성 모델과 Control Barrier Function (CBF) 안전 보장 기법을 결합한 모듈형 추론 프레임워크를 제시함. 기존의 외부 필터링 방식과 달리, 모델의 노이즈 제거 과정 자체를 수정하여 안전성을 내재적으로 생성하는 것이 핵심임. 이는 추가적인 안전 데이터셋이나 모델 재학습 없이도 로봇 매니퓰레이션 및 2D 내비게이션 등 다양한 플랫폼에서 높은 신뢰도의 안전성을 확보할 수 있음을 검증함."
+  },
+  {
     "title": "EngineAI 설립자, 중국의 글로벌 휴머노이드 로봇 선도 잠재력 제시",
     "original_title": "China has potential to lead global humanoid robotics: Founder of EngineAI - AOL.com",
     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNT05FcEc1Y29uR20xUFJCeGdXU0tWb3pDTTBnaFlSeWRVZ2hxNHRaZTA5bmRMSHFQYUxpVFJyeFRoaEQzTFBDTEhFVEV4b0FkblI2RDRSQkhKUktaUFo2S3hfaTlQV1V2Z3FPeXVJUUc0VS10aUYzV2x6anZOMmI4Y2RRRWQtUUU?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.23625v1 Announce Type: new \nAbstract: Most imitation learning methods assume full observability in table-top settings. In practice, objects are often occluded, requiring robots to both search and act, and learning this coupled behavior from limited demonstrations remains challenging. We propose See2Act, an imitation learning approach that conditions action prediction on a sequence of actively-inferred viewpoints at test time, by coupling action denoising with viewpoint refinement. The policy is trained using camera poses anchored to keyframe actions from offline demonstrations, enabling implicit learning of where to see, while learning how to act. We empirically demonstrate that in Ravens the policy recovers informative viewpoints under severe occlusions, and on RLBench tasks it improves performance by up to 34% over prior methods. In the real world, we collect 50 demonstrations in a digital twin and achieve zero-shot sim-to-real transfer on pick-and-place tasks using depth observations. The policy handles significant occlusions, showing that learned viewpoint reasoning enables robust manipulation under partial observability."
-  },
-  {
-    "title": "CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation",
-    "original_title": "CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation",
-    "link": "https://arxiv.org/abs/2606.23680",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23680v1 Announce Type: new \nAbstract: Humanoid loco-manipulation is often simplified into a stop-and-go process: walking to an object, stopping to manipulate it, and then resuming locomotion. It also commonly relies on low degree-of-freedom (DoF) end effectors that behave like an open-close grasp primitive. We introduce CoorDex, a learning pipeline that converts high-dimensional body and dexterous hand control into coordinated latent residual control, enabling high-DoF dexterous loco-manipulation on the move. Starting from simulated whole-body and hand demonstrations, CoorDex trains privileged motion tracking teachers for the humanoid body and dexterous hand, distills them into proprioception-conditioned latent priors, and uses the frozen priors as the action space for downstream residual reinforcement learning. A coordinated latent residual policy composes these priors through shared task context and separate body-hand residual heads, preserving natural whole-body motion while improving finger-level contact reliability. CoorDex enables a Unitree G1 humanoid with a 20-DoF WUJI hand to execute dexterous manipulation while in motion, including non-stop bottle grasping and carrying, fridge door opening on the move, and cube pick-and-turn. Ablations on the walk-grasp-carry task show that joint-space PPO, joint-space hand control, and monolithic latent prediction all fail under the same reward budget, while the latent-prior interface and coordinated residual structure make high-dimensional contact-rich loco-manipulation trainable. Project Page: https://skevinci.github.io/coordex/"
   }
 ]
