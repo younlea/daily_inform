@@ -270,6 +270,15 @@
     "summary": "중국의 로봇 기업 Unitree가 휴머노이드 로봇 시장의 급성장에 힘입어 기업공개(IPO) 절차를 시작함. 이는 로봇 분야의 시장 확대 추세에 발맞춰 대규모 자본 시장 진출을 모색하는 행보임. 해당 움직임은 중국 로봇 산업 전반에 대한 투자 기대감을 고조시키고 있음."
   },
   {
+    "title": "FCC 로봇 규제(금지)가 잠재적 보안 강화 속에서 큰 과제를 제기함 - Fierce Sensors",
+    "original_title": "FCC robot ban poses huge challenges amid potential security plus - Fierce Sensors",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTFdYOFY0Q3U5R2Z2dnFMdnI1OE1vM3ljd290V0t4bl9ZS2pDODRRU2FVQi1pUlFvVDNrT2FXd2lWbDRLWERaYmI4X3JxS0Fpdm9jS2huTFo5RlRzdU9ybUwyejB3NlpOTWg5aEhLUVQ1QTNodkdXWEs3bGRJc01vTWJPY0dpUEJENy0xVnQ5RURmTmlON2tybU5WeHh0NXJ0R1lfaEVoSEY2bFZQYWc?oc=5",
+    "date": "2026-07-31 13:20",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "FCC의 로봇 규제 움직임이 기술 및 산업 전반에 걸쳐 막대한 난제들을 야기하고 있는 상황임. 해당 규제는 잠재적인 보안 강화라는 요소와 결합되며 현장 적용의 복잡성을 높이는 것으로 파악됨."
+  },
+  {
     "title": "Procore Technologies, DroneDeploy $8억 4,500만 달러 인수",
     "original_title": "Procore Technologies acquires DroneDeploy for $845M",
     "link": "https://www.therobotreport.com/procore-technologies-acquires-dronedeploy-845m/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2506.02849v3 Announce Type: replace \nAbstract: In this letter we study 1v1 quadrotor pursuit-evasion, where a pursuer and an evader are trained via reinforcement learning (RL) by competing against each other. Such adversarial settings face well-known challenges: each agent's policy changes during training, creating a non-stationary environment; agents might overfit to the current opponent and forget earlier strategies (catastrophic forgetting); and the competitive dynamics can cause strategy cycling or policy collapse. To address these issues, we propose Asynchronous Multi-Stage Population-Based training with Hedge sampling (AMSPBH), a method based on Policy-Space Response Oracles (PSRO) and adapted to quadrotor RL control. PSRO maintains a population of previously trained policies and trains new approximate best responses against mixtures of that population instead of against a single opponent. In AMSPBH, each generation trains one agent with Proximal Policy Optimization (PPO) against frozen opponent policies, while a Hedge sampler assigns higher probability to opponents that are currently difficult to beat. We show that: (i) AMSPBH discovers new strategies while retaining competence against older opponents, reaching a regime where additional best-response training gives limited improvement; (ii) compared to training against only the latest opponent, population-based training generalizes better across diverse and unseen strategies; and (iii) the learned population contains distinct pursuit and evasion behaviors, providing useful strategic diversity for finding weaknesses and improving controller robustness. We validate the trained policies with hardware experiments on Crazyflie brushless quadrotors, showing zero-shot sim-to-real transfer of agile, reactive pursuit-evasion behavior against both handcrafted and learned adversaries, with physical flights reaching up to 4.87 m/s."
-  },
-  {
-    "title": "CLAR: Learning 3D Representations for Robotic Manipulation by Fusing Masked Reconstruction with Multi-Level Contrastive Alignment",
-    "original_title": "CLAR: Learning 3D Representations for Robotic Manipulation by Fusing Masked Reconstruction with Multi-Level Contrastive Alignment",
-    "link": "https://arxiv.org/abs/2507.08262",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2507.08262v2 Announce Type: replace \nAbstract: The spatial information inherent in 3D point clouds is crucial for robotic manipulation. However, existing 3D pre-training methods face a fundamental trade-off: Masked Autoencoding (MAE) excels at capturing spatial-geometric features but lacks semantics, whereas contrastive learning, while able to distill semantics from 2D foundation models, is ill-suited for the fine-grained details required for manipulation tasks. To address these challenges, we propose CLAR, a novel 3D pre-training framework that synergizes global understanding with fine-grained local alignment. Our framework unifies MAE with global cross-modal contrastive learning to integrate robust spatial awareness with rich semantic understanding. To enhance its focus on fine-grained details, at the local level, we introduce an adaptive alignment mechanism that leverages deformable attention to force precise correspondences between local 3D geometry and 2D visual features, thereby overcoming the limitations of conventional global alignment in manipulation tasks. Extensive experiments in simulation and the real world demonstrate that CLAR achieves state-of-the-art performance, significantly outperforming existing methods in visuomotor policy learning."
   }
 ]
