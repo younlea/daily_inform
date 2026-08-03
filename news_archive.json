@@ -1,5 +1,14 @@
 [
   {
+    "title": "로봇 및 자동화 시스템을 위한 컴패니언 모바일 앱 설계",
+    "original_title": "Designing Companion Mobile Apps for Robotics and Automation Systems",
+    "link": "https://roboticsandautomationnews.com/2026/08/03/designing-companion-mobile-apps-for-robotics-and-automation-systems/103837/",
+    "date": "2026-08-03 12:16",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "로봇 시스템의 제어 및 운영 영역이 물리적 설비에서 작업자의 스마트폰이나 태블릿 등 모바일 디바이스로 확장되는 추세임. 이에 따라 컴패니언 앱은 단순한 보조 기능을 넘어, 하드웨어만큼 중요한 역할을 수행하고 있음. 현장 관리자는 앱을 통해 설비의 상태를 원격으로 점검하고, 유지보수 기술자는 현장 접근 전 사전 진단 작업을 수행하며 운영 효율성이 높아지고 있음."
+  },
+  {
     "title": "시뮬레이션 제브라피쉬 및 시각 로봇 물고기를 이용해 신체 구조가 뇌 회로에 미치는 영향 규명",
     "original_title": "Simulated zebrafish and a vision-equipped robotic fish reveal how the body shapes brain circuits",
     "link": "https://robohub.org/simulated-zebrafish-and-a-vision-equipped-robotic-fish-reveal-how-the-body-shapes-brain-circuits/",
@@ -214,6 +223,24 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "본 논문은 event-based camera 데이터를 처리하기 위한 새로운 예측적 표현 $\\text{F}^3$를 제시함. $\\text{F}^3$는 과거 이벤트를 예측하여 미래 이벤트를 모델링함으로써 장면 구조와 움직임 정보를 보존하며, 이벤트 데이터의 희소성 및 변화에 강한 특성을 가짐. 해당 방법은 광학 흐름, 의미 분할, 단안 깊이 추정 등 다양한 하류 과제에서 최첨단 성능을 달성했으며, 자율주행 차량, 사족 보행 로봇 등 다양한 로봇 플랫폼 및 환경 조건에서 그 효용성이 입증됨."
+  },
+  {
+    "title": "AquaJEPA: 수중 로봇 동역학을 위한 액션 조건 기반 다중 모드 예측 표현",
+    "original_title": "AquaJEPA: Action-Conditioned Multimodal Predictive Representations for Underwater Robot Dynamics",
+    "link": "https://arxiv.org/abs/2607.29393",
+    "date": "2026-08-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "수중 로봇의 가시성 및 환경 변화에 따른 센서 신뢰도 문제를 해결하기 위해 액션 조건 기반 다중 모드 예측 모델인 AquaJEPA가 소개됨. 이 모델은 RGB 카메라, 전방 소나, 전정감각 데이터를 행동 명령과 결합하여 통합 예측하고, 공유 레세딩-호라이즌 플래너에 속도 및 소나 프로파일을 제공함. 120개 환경의 테스트 결과, AquaJEPA는 DVL(도플러 가속도계) 손실 조건 하에서도 기존의 상태 기반 또는 순환형 세계 모델 대비 현저히 낮은 평균 최종 오차를 달성하며 우수한 폐루프 성능을 입증함."
+  },
+  {
+    "title": "반복 학습 기반 반응형 접근법을 활용한 중복 다중 링크 및 하이브리드 케이블 구동 병렬 로봇의 삼공간 운용 제어",
+    "original_title": "Tri-Space Operational Control of Redundant Multilink and Hybrid Cable-Driven Parallel Robots Using an Iterative-Learning based Reactive Approach",
+    "link": "https://arxiv.org/abs/2607.29500",
+    "date": "2026-08-03 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 케이블 구동 병렬 로봇(CDPR)의 고질적인 삼공간 제어 문제를 해결하기 위해 Reactive Control(RC)과 Iterative-Learning Control(ILC)을 결합한 새로운 삼공간 제어 프레임워크를 제안함. 이 프레임워크는 운용 공간 궤적 추적을 실시간으로 수행하는 동시에, 케이블 간섭 및 구동성 손실을 회피함. 또한, Null Space 벡터에 대한 최적 파라미터를 찾아내어 반복 실행 시 시스템 성능 향상을 유도하며, 이는 다양한 실제 로봇 하드웨어에 효과적으로 적용 가능함이 입증됨."
   },
   {
     "title": "EngineAI 설립자, 중국의 글로벌 휴머노이드 로봇 선도 잠재력 제시",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.23157v1 Announce Type: new \nAbstract: This paper presents a modular training-free framework for zero-shot, language-guided robotic manipulation in semi-structured environments. The architecture bridges the gap between high-level reasoning and low-level kinematics by decomposing the vision-action pipeline into three stages: visual perception, semantic interpretation, and task execution. To overcome the spatial ambiguity and semantic hallucinations inherent in standard Vision-Language Models (VLMs), the perception module employs FastSAM and Set-of-Mark (SoM) prompting to dynamically generate grounded, alphanumeric visual anchors. The same foundation model then operates purely as a Large Language Model (LLM) to act as a semantic router, translating unconstrained human directives into verifiable, reconfigurable configurations. Finally, these configurations are dynamically parsed by a Task Orchestrator into MoveIt Task Constructor (MTC) to generate collision-free trajectories. The framework is evaluated across two zero-shot experimental setups: unconstrained open-world sequential manipulation and dense relational spatial reasoning, achieving a 62% end-to-end task success rate across both scenarios, demonstrating its capacity to reliably execute complex physical actions without domain-specific training or manual coordinate programming."
-  },
-  {
-    "title": "Lessons from the Field: A Case Study of Robotic Intervention in an Industrial Emergency",
-    "original_title": "Lessons from the Field: A Case Study of Robotic Intervention in an Industrial Emergency",
-    "link": "https://arxiv.org/abs/2606.23246",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23246v1 Announce Type: new \nAbstract: Incidents in chemical plants can pose a high level of risk and harsh environments for first responders. Contamination and explosion hazards can deny human access to the affected infrastructure, underscoring the need for capable robot systems. This field report documents the successful deployment of a robotic task force to neutralize an explosive gas hazard at a chemical plant after a fire incident. An Unmanned Ground Vehicle (UGV) with a custom manipulation tool opened a critical valve under hazardous conditions, averting the threat of a large-scale explosion. We provide insights into robot deployment and use the mission results to highlight both the importance of rescue robotics and limitations of using research platforms in real emergency deployments, such as communication constraints and the need for enhanced operator-assistance functions."
-  },
-  {
-    "title": "LP-NavOA: Integrated Local Navigation and Obstacle Avoidance for Humanoid Robots under Limited Perception",
-    "original_title": "LP-NavOA: Integrated Local Navigation and Obstacle Avoidance for Humanoid Robots under Limited Perception",
-    "link": "https://arxiv.org/abs/2606.23249",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.23249v1 Announce Type: new \nAbstract: Humanoid local navigation in cluttered environments must jointly resolve obstacle avoidance, sparse-goal recovery, and stable whole-body locomotion under short-range and partially observable sensing. Explicit planner-control decompositions introduce latency and can mismatch agile humanoid command-tracking limits, while purely reactive controllers may lose the goal after obstacle occlusion. We present LP-NavOA, a limited-perception navigation and obstacle-avoidance framework for humanoid robots. A raycast-conditioned perception-action proximal policy optimization (PPO) locomotion backbone is first trained with a robot-centered circular heading-speed command and a shared command-side safety filter. With this backbone frozen, A-star and waypoint teachers generate rollouts for distilling a recurrent local planner that overwrites only the heading command at deployment, leaving the whole-body policy intact. At runtime, LP-NavOA uses proprioception, short-range local range sensing, and a body-frame goal direction, requiring no global map, waypoint stream, or external planner. In MuJoCo open-wall and indoor layouts, the distilled planner produces obstacle bypassing and post-avoidance goal recovery, raising teacher-calibrated on-time arrival from 38--40\\% to 85--97\\% and reducing brush/contact-heavy progress relative to a backbone-only controller. Ablations show that dynamic route shaping, teacher-active data collection, and the circular command interface are important for navigation efficiency and for training the 3.0\\,m/s backbone. A Unitree G1 deployment analysis demonstrates hardware executability without continuous joystick steering."
-  },
-  {
-    "title": "TSD: A Physics-Inspired Trajectory Saliency Detector for Efficient Imitation Learning",
-    "original_title": "TSD: A Physics-Inspired Trajectory Saliency Detector for Efficient Imitation Learning",
-    "link": "https://arxiv.org/abs/2606.23371",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23371v1 Announce Type: new \nAbstract: For imitation learning in robotic manipulation, high data collection costs result in the scarcity of high quality data. In this paper, we leverage the inherent heterogeneity of trajectories to address this challenge. Based on our observations of manipulation tasks, we categorize motions into transitional, precise, and agile types, defining the latter two as trajectory saliency due to their criticality to task success in contrast to the prevalent but less relevant transitional motions. Therefore, we propose the Trajectory Saliency Detector (TSD), a training-free and plug-and-play framework to identify trajectory saliency. TSD employs two physically-grounded metrics: spatial entropy to capture fine-grained manipulation and centripetal acceleration to detect agile maneuvering. We further leverage TSD to develop a dataset compression method that reduces training costs and a dataset expansion strategy that improves data collection efficiency. Extensive experiments in both simulation and real-world settings demonstrate that models trained on TSD-condensed datasets achieve comparable or even superior performance with 25% less data on average. These results validate the effectiveness of our dataset compression and expansion strategies, thereby confirming the utility of TSD. Consequently, TSD offers a scalable and cost-effective pathway to synthesize information-dense datasets for efficient robot learning. Project page: https://trajectory-saliency-detector.github.io/trajectory-saliency-detector/"
   }
 ]
