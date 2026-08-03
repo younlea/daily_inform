@@ -1,5 +1,14 @@
 [
   {
+    "title": "샤오즈 주간 뉴스: Unitree, 8월 10일 IPO 청약 진행 및 AgiBot, 홍콩 상장 추진함",
+    "original_title": "XiaoZhi Weekly News | Unitree IPO subscription on August 10; AgiBot launches HK listing process - Gasgoo",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNd3VFd1dnc25JUTJrQTE5ZWVpUmg3Z2ZKNVluUHdRYVA1bF9XNmh1eWV5SUlVMURyUVhTbHN2UThLTDRRcnpkLVF3dEgwZjVYOS1Bdm9QQjBWX25ycm5ZOVdvbUptSG96LV9rX1ZETXJnUGdFaGNlaEVXSnBsWVg1UFZPZ0xiR3ZCTlBUMVZJeGwteTVodmxoY0tnakYwNFVtVW9ZM1hVSEVnSXREc1R0S3J0QllGUzUtUmF2LWVzWmYtYS1uZ3hEcFk5STM4TzhVN3Ewd1ZESGQwNWU5Z2pTX0FPaVpkcUpSZUE?oc=5",
+    "date": "2026-08-03 14:44",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "샤오즈(XiaoZhi) 주간 뉴스에 따르면, 로봇 기업 Unitree가 8월 10일 IPO 청약을 앞두고 있음. 또한, 관련 로봇 기업인 AgiBot이 홍콩 증시(HK listing) 상장 절차를 시작한 것으로 알려짐."
+  },
+  {
     "title": "플로리다에서 감가상각가치, 전손, 공정시장가치 평가를 위한 독립 차량 감정사 선정 가이드",
     "original_title": "How to Choose an Independent Car Appraiser in Florida for Diminished Value, Total Loss, and Fair Market Value Assessments",
     "link": "https://roboticsandautomationnews.com/2026/08/03/how-to-choose-an-independent-car-appraiser-in-florida-for-diminished-value-total-loss-and-fair-market-value-assessments/103844/",
@@ -484,6 +493,15 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "KUKA가 오하이오의 주요 제조 시설인 KTPO에 Automation Management Platform을 성공적으로 배포함. 이 시스템은 북미 지역 자동차 제조업체들을 대상으로 하는 자동화 관리 솔루션의 실제 적용 사례임."
+  },
+  {
+    "title": "비디오 프라이데이: Google DeepMind의 Gemini Robotics 2 공개",
+    "original_title": "Video Friday: Meet Google DeepMind’s Gemini Robotics 2",
+    "link": "https://spectrum.ieee.org/video-robot-gemini2-ai-robot",
+    "date": "2026-07-31 16:00",
+    "source": "IEEE Spectrum",
+    "category": "humanoid",
+    "summary": "이번 'Video Friday'는 로봇 공학 분야의 다양한 최신 기술 발전상을 총망라하여 보여줌. 주요 하이라이트로는 Google DeepMind가 공개한 Gemini Robotics 2가 있으며, 이는 지능형 전신 제어, 뛰어난 민첩성, 다중 로봇 간의 협업 능력을 갖추었음. 이와 더불어 신체 역학적 표현, 인간-사족 보행 모션 전이, 실내 안전 이동 로봇 등 여러 선도적인 기술 진보들이 전 세계적으로 제시되고 있음을 알 수 있음."
   },
   {
     "title": "다공성 3D 프린팅 발을 활용한 사족 로봇 전력 효율 개선 연구",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.23079v1 Announce Type: new \nAbstract: Neural world models coupled with model predictive control (MPC) replan at every environment step to bound accumulated prediction error, but this incurs substantial computational overhead. Reusing a cached plan reduces this overhead, yet its effectiveness depends on how prediction mismatch propagates through the local dynamics. We analyze this trade-off with a perturbation-based dynamic-regret framework and show that stale-plan penalties scale with the reuse tolerance, the accumulated mismatch since the last replanning step, and the local dynamics sensitivity. Based on this structure, we propose AdaReP, a training-free wrapper that adapts the replanning tolerance online using the current deviation from the cached rollout and a local sensitivity estimate, without modifying the learned world model or planner. Across image-space planning, latent-space control, and real-world robotic manipulation, AdaReP substantially reduces planner-side computation while maintaining comparable task performance, including over 80% fewer queries on a 50-trial physical robot study."
-  },
-  {
-    "title": "Foresight: Failure Detection for Long-Horizon Robotic Manipulation with Action-Conditioned World Model Latents",
-    "original_title": "Foresight: Failure Detection for Long-Horizon Robotic Manipulation with Action-Conditioned World Model Latents",
-    "link": "https://arxiv.org/abs/2606.23085",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23085v1 Announce Type: new \nAbstract: Long-horizon tasks are common in real-world robotic deployments, yet failure detection for such tasks remains underexplored. Detecting failures in long-horizon robotic tasks is particularly challenging because failure onset is often ambiguous and dense temporal annotations are typically unavailable. We present Foresight, a failure detection framework that monitors manipulation trajectories using latent representations from an action-conditioned world model. Foresight is trained using only final task-level success or failure labels. By leveraging predictive world-model embeddings, our method provides a unified framework for failure detection across different policies. We further use functional conformal prediction (FCP) to calibrate detection thresholds adaptively. We evaluate Foresight with state-of-the-art vision-language-action policies in simulation on LIBERO-Long, ManiSkill-Long, and BEHAVIOR-1K, compare it against state-of-the-artfailure detection methods, and validate it on real robots with three long-horizon tasks on a ReactorX-200 arm and one task on a Franka arm. Our results suggest that action-conditioned world-model embeddings provide a scalable representation for reliable failure monitoring in long-horizon manipulation."
-  },
-  {
-    "title": "Flow as Flow: Modeling Robot Velocity Fields as Probability Velocity Fields for Flow-Based Object Manipulation",
-    "original_title": "Flow as Flow: Modeling Robot Velocity Fields as Probability Velocity Fields for Flow-Based Object Manipulation",
-    "link": "https://arxiv.org/abs/2606.23090",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.23090v1 Announce Type: new \nAbstract: Cross-embodiment data have become central to training robotic foundation models. To leverage such heterogeneous data, we focus on flow-based object manipulation, where robot flows (robot velocity fields) serve as embodiment-agnostic motion representations. Previous studies do not formulate robot flows as dense velocity fields, but as displacements of sparse keypoints, while such velocity fields better match the continuous-time nature of motions. We propose Flow as Flow, a framework that models robot flows as probability flows based on a flow matching formulation. By naturally modeling such velocity fields within this formulation, our method achieves efficient and high-quality robot flow generation. Across standard benchmarks, our method outperforms representative baseline methods on standard metrics, while achieving approximately 33$\\times$ faster generation. Furthermore, through real-world experiments evaluating 9 methods with 260 trials per method across 13 manipulation tasks, we show that our method achieves a higher average success rate than the baseline methods. Our project page is available at https://flow-as-flow-u0n5y.kinsta.page."
   }
 ]
