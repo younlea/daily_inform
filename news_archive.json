@@ -72,6 +72,87 @@
     "summary": "기존 World Action Models(WAMs)가 행동별 구체적인 결과를 포착하지 못하는 한계를 극복함. SelfWAM은 MoT(Mixture-of-Transformers) 아키텍처를 기반으로 행동, 행동 조건부 미래 RGB 프레임, 로봇 자가 마스크(self-masks)를 공동으로 예측함. 이는 미래 예측을 로봇의 가시적 움직임에 근거하여 행동 민감도를 높이고 빠른 정책 추론 능력을 유지하며, 실제 로봇 매니퓰레이션 작업에서 높은 성능을 보임."
   },
   {
+    "title": "새로운 휴머노이드, 양발 보행 틀에서 벗어나다",
+    "original_title": "New humanoids break from the two-legged mold - 네이트",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1KbnNHZS05M1lRajRHblh6Vy1OdW84NjgybGUtc2hpS2RaNVdlNDRUdElzWW5kR3RrQmd6ZmJ3WGpidDRZck0wTWFkSms4ZXFnOHlPUEV0ZWpnNklXS09XRA?oc=5",
+    "date": "2026-08-04 04:00",
+    "source": "Google News (Humanoid)",
+    "category": "humanoid",
+    "summary": "최근 개발된 휴머노이드 로봇들이 기존의 양발 보행(bipedal) 방식에서 벗어난 새로운 움직임을 선보임. 이는 로봇의 기동성과 적용 가능성을 높이기 위한 설계 변화로 파악됨."
+  },
+  {
+    "title": "LooperMuscle: 구조화된 전문가 혼합을 통한 휴머노이드 전신 추적의 빠르고 안정적인 학습",
+    "original_title": "LooperMuscle: Fast and Stable Learning of Humanoid Whole-Body Tracking via Structured Mixture-of-Experts",
+    "link": "https://arxiv.org/abs/2608.00820",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "휴머노이드 전신 추적 작업에서 기존 FastSAC와 PPO 간의 속도와 성능 격차를 해소하기 위한 LooperMuscle 프레임워크를 제시함. 이 프레임워크는 구조화된 Mixture-of-Experts actor, expert-aware distributional critic, contribution-routed replay 등 세 가지 구성 요소를 결합한 전문가 정책 학습 방식을 채택함. 실험 결과, LooperMuscle은 FastSAC보다 높은 추적 정확도를 보이면서도 PPO 수준의 성능에 근접하며, 약 45분이라는 실질적인 시간으로 높은 훈련 효율성을 달성함."
+  },
+  {
+    "title": "GeminiPainter의 지각-인지-계획-행동 단계 시퀀스형 파이프라인 구현",
+    "original_title": "GeminiPainter's sequence-formed pipeline comprised of perception, cognition, planning, and action stages",
+    "link": "https://arxiv.org/abs/2608.00829",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "실시간 얼굴 감지, AI 기반 스케치 생성, 로봇 드로잉을 결합한 자율 로봇 초상화 생성 시스템이 공개됨. 본 시스템은 Gemini Vision API를 활용하여 추출된 얼굴 영역을 단일 라인 스케치로 변환하고, 그래프 기반 경로 계획을 통해 획 순서를 최적화하여 6-DoF 협동 매니퓰레이터로 실행함. 이는 컴퓨터 비전, 신경 예술 추상화, 동작 최적화, 로봇 제어를 통합한 지각-인지-행동 파이프라인의 성공적인 구현 사례로 평가됨."
+  },
+  {
+    "title": "GraRe: 고정된 6-DoF 파지 검출기를 위한 파지 후보 재순위화",
+    "original_title": "GraRe: Grasp Candidate Re-Ranking for Frozen 6-DoF Grasp Detectors",
+    "link": "https://arxiv.org/abs/2608.00946",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 6-DoF 파지 검출기가 단순히 신뢰도에 의존하여 파지 후보 순위를 매기는 한계점을 분석함. 이를 개선하기 위해 본 연구는 GraRe라는 기법을 제시하며, 후보의 속성, 쉘-층위 로컬 지오메트리, 오브젝트 컨텍스트를 종합하여 파지 품질을 독립적으로 재순위화하는 방식임. GraRe는 기존의 신뢰도 점수와 결합하여 최종 순위를 결정하며, GraspNet-1Billion 등의 실험과 실제 로봇 환경 테스트에서 평균 AP 및 파지 성능의 유의미한 향상을 입증함."
+  },
+  {
+    "title": "샘플링 기반 가시성 태스크 플래닝",
+    "original_title": "Sampling-Based Visibility Task Planning",
+    "link": "https://arxiv.org/abs/2608.01027",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 gripper나 센서 같은 가시성 기반 장비가 필수적인 로봇 TAMP 알고리즘의 한계점을 분석함. 전통적인 계획 방식이 어려움을 겪는 가시성 관련 태스크를 해결하기 위해, VisPRM과 VisRRT라는 두 가지 새로운 샘플링 기반 알고리즘을 제시함. VisPRM은 환경의 계층적 분해를 통해, VisRRT는 타겟 방향을 인지하는 기능을 활용하며, 이들이 기존 RRT, PRM 등 대비 높은 성공률과 빠른 처리 속도를 달성함을 실험을 통해 입증함."
+  },
+  {
+    "title": "희소 및 밀집 대응 활용: 강체-변형체 상호작용 기반 로봇 매니퓰레이션 구현",
+    "original_title": "Sparse Meets Dense: Correspondence Guided Robotic Manipulation with Rigid-Deformable Interactions",
+    "link": "https://arxiv.org/abs/2608.01083",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "의류 걸기나 의인 착장 등 강체와 변형체가 복합적으로 상호작용하는 일상생활 작업은 높은 난이도를 가지는 영역임. 이에 본 논문은 구조-, 작업-, 상호작용 인지 희소 키포인트와 변형체에 대한 밀집 대응을 결합한 하이브리드 대응 기반 표현을 제시함. 이 독특한 하이브리드 방식은 희소점의 풍부한 작업 특화 정보를 활용하는 동시에 밀집 대응을 통해 추적의 정확성과 범용성을 높이며, 적은 시연만으로 새로운 작업에의 전이가 가능함을 입증함."
+  },
+  {
+    "title": "CAAT: 데이터 효율성을 위한 접촉 인지 어텐션 스케일링 및 촉각 마스킹 기반의 접촉 풍부 조작",
+    "original_title": "CAAT: Contact-Aware Attention Scaling and Tactile Masking for Data-Efficient Contact-Rich Manipulation",
+    "link": "https://arxiv.org/abs/2608.01102",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 시각-촉각 기반의 조작 정책들은 접촉 상황에 대한 명시적 인지 정보를 활용하는 데 한계가 있음. 이에 CAAT(Contact-Aware Attention Scaling and Tactile Masking) 프레임워크가 제안됨. CAAT는 어텐션 스케일링과 동적 촉각 마스킹을 결합하여 접촉 전 시각 정보와 접촉 중 촉각 정보를 명시적으로 분리 강조하고 배경 노이즈를 억제함. 실험 결과, 이 방법은 시뮬레이션 및 실제 UMI 플랫폼 환경에서 기존 최고 성능 기준 대비 평균 21.1%p에 달하는 높은 성공률 향상을 입증함."
+  },
+  {
+    "title": "GenTrack: 로봇 네이티브 동작 생성을 위한 물리적 정렬 및 제로샷 휴머노이드 추적",
+    "original_title": "GenTrack: Physical Alignment for Robot-Native Motion Generation and Zero-Shot Humanoid Tracking",
+    "link": "https://arxiv.org/abs/2608.01410",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존 휴머노이드 트래커와 텍스트-모션 생성 모델들은 인간 동작의 운동학적 가능성과 로봇 구동 가능성 사이의 실행 가능성 격차(executability gap)를 내포함. 본 연구는 온라인 생성기-트래커 프레임워크인 GenTrack을 제시하며, 새로 생성된 레퍼런스를 활용하여 실행 기반의 반복적인 공동 학습을 수행하는 것이 핵심임. 실험 결과, GenTrack은 트래킹 정확도를 향상시키고, 추가 데이터 수집 없이도 로봇이 실제 구동 가능한 동작을 성공적으로 생성함으로써 제로샷 휴머노이드 제어의 실질적인 한계를 확장함을 입증함."
+  },
+  {
+    "title": "사족 보행을 위한 신속한 구현 적응 기술",
+    "original_title": "Rapid Embodiment Adaptation for Quadrupedal Locomotion",
+    "link": "https://arxiv.org/abs/2608.01506",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "로봇 하드웨어의 속성 변화(노화, 부하 등)에 대응하기 위한 사족 보행 온라인 구현 적응 프레임워크를 제시함. 이 방법은 짧은 상호작용 이력으로부터 신체 매개변수를 실시간으로 추론하고, 이를 활용하여 폐쇄 루프 제어를 구현하는 것이 핵심임. 실제 Unitree Go2 로봇 테스트를 통해 사지 제한 또는 5kg 페이로드와 같은 심각한 환경 변화 상황에서도 안정적인 보행이 가능함을 입증함."
+  },
+  {
     "title": "Unitree, 휴머노이드 로봇 수요 증가에 힘입어 2026년 상반기 매출 35% 이상 증가 전망",
     "original_title": "Unitree sees 1H26 revenue rise over 35% on humanoid robot demand - digitimes",
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS3NWLVdtcFVSZmQtbGNXSjVjYnRJQTl3NGJhWGN5R3QwZFNUR2FWUmJvRHFsdFRTYmp1d1pSNFkyMFU4U2NHNmt1V3hkeGROWkZUejctanlWVko5aWI1X1lBRkRvN282Q29sRHJ6ZFlROHFMb1NrUks1bmJVX0xraU01cHlxYWlF?oc=5",
@@ -1827,6 +1908,15 @@
     "summary": "미국발 중국산 휴머노이드 로봇 금지화 조치로 인해 글로벌 시장의 경쟁 구도가 재편되는 추세임. 이로 인해 주요 산업 주체인 Atlas가 시장의 선두 주자로서 어떤 전략적 경로를 확보하고 경쟁력을 유지할 수 있을지에 대한 분석이 핵심 과제임."
   },
   {
+    "title": "미국, 국가 안보 명분으로 중국 겨냥해 외산 휴머노이드 로봇 금지",
+    "original_title": "U.S. bans foreign-made humanoid robots, targeting China over national security - PBS",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZktHcTNzSWwybUpFeWFfdVJWaTJUZW54U3hGU1FXLXZvNjNUajNCSVVyVFhOZmtjU01UWXRvLTlTaVBjQnlLWVVQZGw3dzVlMmVrd2kwRHEzZlpxTks1d1VlUjd0aFlmOUR5cEJ6c3NKU0F3WkFtWUVZbEJEMldyLUJEUGVibkNsUDlMeF96c2NHR24yU0NFLWg0Uk81VUd4VUlWUTBUQVhhNmItZll4aNIBtgFBVV95cUxNYlVyVTdweUtaMmZOb3FsWENnRzJDM3pCRXV5dXhDcjFYbjZZSFJvMnUtdlpJRy1PTFFNTGRzMHk3MTRGMDg0LXRrVGd1TXZFNm9ZbUJnSC1vOEJ4TFhJYTJNYnUyd2lYYXpBbE9jSDJTT2ZZbGxrUTAtSzZXdHVsLUtWR0QtX24zbjYyNGh5WFNjY0tWNFlyektpTV95cE1ZLWRVSTRHWWZmaXFoM0k5Rk5HUzZ3QQ?oc=5",
+    "date": "2026-07-29 22:00",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "미국이 국가 안보를 이유로 외국산 휴머노이드 로봇 전반에 대한 금지 조치를 취함. 해당 규제는 특히 중국의 첨단 기술력을 견제하는 목적을 띠고 있으며, 관련 시장에 큰 파장을 예고함."
+  },
+  {
     "title": "4만 달러 로보독, 쿵푸 대신 브레이크댄스 선보여 - Boing Boing",
     "original_title": "This $40,000 robodog breakdances instead of showing off kung fu - Boing Boing",
     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVE1Mb1lmUkRWd3dEcC1tdWI1QXdlbGlDbVFaM2VRZnRoakFwRnFacUNMN1ZsMEhHUnF4OUNpTjRKVGZHejltTTdaSWN5amlLbzNoWTYyRGNNSGJYakJfYU9MMnVsbVZ3dE9nbmlDYWkwM3Y2dnA4aGhDYmsxX2xZVUJXdGczVjVTaDRmQld6SEoyYzY0UldtVHJKRHVMeHBKSVHSAacBQVVfeXFMTmRBRFY0MnlQOXYtdUpfbW9oRzRWRDdVcXJib0NhMF9COHY3WjhoNVY0eGJ3c1dkbU94anNFa1lLTk5VMFNoM2poLTZUSmVfSDBPYXRqRVFaS0psemk4cVdxcURxUTQ2QWgtRDhsRkE5bHNwWV95azJTZ184VTVaYURYRDVFVEFTOU01WC1qcTZmaWJjaFBXcWVZMHdOTEU4NkI2b29iRFE?oc=5",
@@ -2356,6 +2446,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "FCC가 안보 우려를 주요 근거로 중국산 휴머노이드 로봇에 대한 판매 금지 조치를 취함. 이는 로봇 기술이 초래할 수 있는 잠재적인 보안 위험 및 데이터 유출 우려가 반영된 규제임."
+  },
+  {
+    "title": "FCC, 보안 우려로 중국산 휴머노이드 로봇 판매 전면 금지",
+    "original_title": "FCC Bans Chinese Humanoid Robots Over Security Concerns - 700WLW",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSkFLYVRXaVNtQ0J6cUxfbjdfLW9hamNyU0lhMmhOOU9neEtmSG1GeEoxVnFLMlFfdFBiRW1VV2VsZ2tpcS1CN3BoRlBEZ1ZJVWxuZFMzRUZxM2ZYcGlXUnV0UzRRZXNZcU1nUEZ4VGcxVmRSbkp1cmRPQldJeWp4TE9fb2RBbDhkVEswWXFxZDY4V2c0OXVuWFctQnh6ZVlqOFQw?oc=5",
+    "date": "2026-07-29 06:49",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "FCC가 보안 문제를 이유로 중국산 휴머노이드 로봇에 대한 판매 금지 조치를 발표함. 이는 미국 시장 내에서 중국산 로봇 제품의 유통 및 판매에 제한을 가하는 것으로 파악됨. 해당 조치 배경으로는 국가 안보 및 데이터 보안에 대한 심각한 우려가 제기됨."
   },
   {
     "title": "미국, AI 공급망 확보 위해 중국산 휴머노이드, 로봇 개, 인버터 등 핵심 품목 규제 강화",
@@ -17899,104 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.21935v1 Announce Type: new \nAbstract: Diffusion models excel at capturing multi-modal action distributions in robot imitation learning. However, in multi-task and long-horizon scenarios, monolithic architectures lack structural generalization capabilities, suffering from gradient conflicts between distinct semantic sub-stages. While pure data-driven Mixture-of-Experts (MoE) methods introduce labor division, they frequently trigger routing collapse, and instantiating full-scale experts causes parameter explosion and high expansion costs. To address these issues, we propose Concept-prior Routed Diffusion Experts (CoRDE), a structure-guided variational distillation framework. CoRDE extracts semantic distributions from a frozen concept encoder to guide the variational posterior responsibility via a learnable soft mapping matrix. This mechanism introduces an entropy-controlled responsibility inference process that encourages confident routing under reliable semantic predictions while preserving the stochastic diffusion term for behavioral diversity. To overcome parameter inflation, CoRDE employs a parameter-efficient expert pool using Low-Rank Adaptation (LoRA) on a shared frozen backbone. Theoretical analysis shows that the mixture score discrepancy is bounded by responsibility-weighted local expert errors, supporting high-fidelity generation under low-rank expert adaptation. Empirical evaluations confirm that, compared to existing baselines, CoRDE systematically reduces routing collapse, forming robust, semantically aligned expert allocations while achieving superior action quality and incremental learning efficiency."
-  },
-  {
-    "title": "RARM: Confidence-Gated Progress Reward Modeling for RL in Manipulation",
-    "original_title": "RARM: Confidence-Gated Progress Reward Modeling for RL in Manipulation",
-    "link": "https://arxiv.org/abs/2606.22027",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22027v1 Announce Type: new \nAbstract: Reinforcement learning for robot manipulation is often bottlenecked by reward design, especially in long-horizon tasks: sparse success rewards provide weak supervision, while hand-crafted dense rewards are tedious to design and generalize poorly across tasks. Progress-based reward models offer a promising alternative by estimating how far an observation has advanced toward task completion, but existing approaches often require task-specific demonstrations or progress labels, and can assign high rewards to visually plausible but physically incorrect states. We introduce the Reference-Anchored Reward Model (RARM), a lightweight visual comparator that converts a single successful demonstration into a dense, progress-aware reward. RARM is trained once on general-purpose videos with a contrastive temporal objective, requiring no robot-specific data, task-specific reward labels, or per-task reward engineering. At deployment, RARM matches rollout clips to reference clips and rewards only confident forward progress, suppressing uncertain matches that may otherwise produce false-positive rewards. Across 9 simulated manipulation tasks from LIBERO and MetaWorld and 4 real-world tasks, RARM achieves the best overall success rates in subsequent RL training, with particularly large gains on long-horizon tasks such as cloth folding, where unreliable progress estimates are especially harmful."
-  },
-  {
-    "title": "GeoFlow-SLAM++: A Robust Multi-Camera Visual-Inertial SLAM System with Relocalization",
-    "original_title": "GeoFlow-SLAM++: A Robust Multi-Camera Visual-Inertial SLAM System with Relocalization",
-    "link": "https://arxiv.org/abs/2606.22051",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22051v1 Announce Type: new \nAbstract: Monocular and RGB-D visual-inertial SLAM systems remain susceptible to limited field of view, sensor-specific failure modes, and unreliable cross-session relocalization. To address these issues, we present GeoFlow-SLAM++, a tightly coupled multi-camera visual-inertial SLAM system that extends GeoFlow-SLAM from a single RGB-D sensor to a calibrated multi-camera rig with a unified body-centric formulation. Within this multi-camera framework, GeoFlow-SLAM++ supports two interchangeable visual front-ends: a conventional ORB front-end and a neural network feature (NN-Feature) front-end built on SuperPoint and LightGlue. The system unifies tracking, mapping, and relocalization on a shared body state, and combines multi-camera reprojection constraints, IMU pre-integration, cross-view place recognition, and dual-stream optical flow/NN-Feature tracking for robust localization. As an optional extension, the system can further incorporate cross-view-consistent pseudo-depth predictions from RGB images as auxiliary geometric constraints. We evaluate GeoFlow-SLAM++ on EuRoC, OpenLORIS, TUM, Hilti, and a self-collected handheld multi-camera dataset. Results show that the NN-Feature front-end improves robustness in appearance-challenging scenarios, the multi-camera formulation achieves competitive localization accuracy on Hilti, and the unified cross-view relocalization design reaches LiDAR-comparable performance on the handheld dataset."
-  },
-  {
-    "title": "Dynamics, stability, and energy efficiency of an energy-recycling rimless wheel with spring-clutch legs",
-    "original_title": "Dynamics, stability, and energy efficiency of an energy-recycling rimless wheel with spring-clutch legs",
-    "link": "https://arxiv.org/abs/2606.22073",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.22073v1 Announce Type: new \nAbstract: This paper proposes an energy-recycling rimless wheel with spring-clutch legs. The proposed mechanism uses a lockable clutch to store part of the impact-induced elastic energy after foot contact and reinject it in the next gait cycle. First, we develop a hybrid dynamic model of the energy-recycling rimless wheel. Second, numerical simulations are used to examine the dynamics, local stability of periodic gaits, and the Cost of Transport (CoT) of the proposed mechanism. The simulation results show that the proposed mechanism reduces the CoT by up to 16.13% compared with a benchmark viscoelastic-legged rimless wheel with telescopic spring-damper legs. Compared with the rigid rimless wheel, the viscoelastic-legged and energy-recycling models reduce the CoT by more than 50%. The energy-recycling model also maintains locally stable periodic gaits over the tested slope and stiffness ranges. Finally, prototype experiments on an inclined plane are conducted to examine the feasibility of the proposed mechanism. The experimental results show that the proposed rimless wheel achieves passive walking on a shallow 1{\\deg} slope, corresponding to a CoT of approximately 0.02. These results suggest that the proposed spring-clutch mechanism can improve the simulated walking efficiency of the energy-recycling rimless wheel, while the prototype experiments support the feasibility of passive walking with the mechanism."
-  },
-  {
-    "title": "KITE: Decoupling Kinematics and Interaction for Zero-Shot Cross-Embodiment Manipulation",
-    "original_title": "KITE: Decoupling Kinematics and Interaction for Zero-Shot Cross-Embodiment Manipulation",
-    "link": "https://arxiv.org/abs/2606.22113",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22113v1 Announce Type: new \nAbstract: Generalizing manipulation policies across robot embodiments remains difficult because standard policies entangle task reasoning with embodiment-specific motor control. We study zero-shot cross-embodiment manipulation, where a policy trained on source embodiments must be deployed on a structurally different target embodiment without additional task demonstrations. We introduce Kinematic Interaction Transfer across Embodiments (KITE), which decouples manipulation into embodiment-agnostic task reasoning and embodiment-specific motor control, connected through a learned latent representation of interaction intent based on contact patterns. Task reasoning is performed by a shared policy that predicts latent intents from source demonstrations, while motor control is performed by an intent-conditioned action decoder learned from each embodiment's kinematic model. With KITE, adaptation to a new embodiment requires only training a new action decoder using its kinematic model, without recollecting demonstration data. We evaluate KITE on three manipulation tasks spanning transfer between parallel grippers, dexterous hands, and composite embodiments. KITE consistently achieves zero-shot transfer to structurally different target embodiments, outperforming state-of-the-art baselines in transfer success and task-embodiment scope."
-  },
-  {
-    "title": "DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects",
-    "original_title": "DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects",
-    "link": "https://arxiv.org/abs/2606.22116",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22116v1 Announce Type: new \nAbstract: Deformable linear objects (DLOs) such as wires, cables, and ropes are common in robotic manipulation tasks, yet simulating them with both visual realism and physical accuracy remains challenging. Existing visual simulation methods typically rely on procedural geometric primitives that lack physically grounded deformation behavior, while physics-based approaches with robot learning support often approximate DLOs as rigid-link chains or generic soft bodies, failing to accurately capture the bending, twisting, and shear mechanics of slender elastic structures. In this work, we introduce DeformX, a co-simulation framework that integrates a dedicated Cosserat rod physics engine with NVIDIA Isaac Sim, enabling DLO simulations that are both physically faithful and visually realistic. Our Cosserat rod engine simulates the dynamics and self-collisions of DLOs, and contact interactions with arbitrary free-form meshes. To achieve high-fidelity visualization, we employ mesh skinning to map discrete rod deformations onto imported CAD models. To the best of our knowledge, DeformX is the one of the first frameworks for DLO simulation that unifies realistic visualization, principled physics, and compatibility with robot learning pipelines. We demonstrate its versatility across synthetic data generation and policy learning for DLO manipulation, and validate visual and physical fidelity through comparisons against real-world experiments. Notably, fine-tuning Segment Anything Model 3 (SAM3) on DeformX-generated data yields a 10.2% mAP@75 improvement in real-image wire segmentation, and a rope-swinging policy trained entirely in DeformX achieves a mean target-hitting error of 6.6 cm on a UR5e manipulator in real-world trials, highlighting its strong sim-to-real transfer capability."
-  },
-  {
-    "title": "Durability-Aware Multi-Objective Optimization of the Jansen Linkage: Trading Gait Quality Against Joint Wear",
-    "original_title": "Durability-Aware Multi-Objective Optimization of the Jansen Linkage: Trading Gait Quality Against Joint Wear",
-    "link": "https://arxiv.org/abs/2606.22129",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.22129v1 Announce Type: new \nAbstract: The Jansen linkage is a single-degree-of-freedom planar leg mechanism whose eleven \"holy numbers\" were evolved by Theo Jansen to optimize the foot-path gait alone, with no regard for the wear of its revolute joints. This paper introduces a durability objective into the design of the Jansen leg. A parametric forward-kinematic model (two-circle-intersection solver), an inverse-dynamic model (constraint-Jacobian / Lagrange-multiplier formulation of a seven-body, ten-joint system, independently cross-verified by a reduced-DOF energy method), and an Archard wear model are coupled to evaluate, for any set of link lengths, both gait quality and the per-cycle sliding wear at every pin. Because the wear is computed on ideal, clearance-free revolute joints, the resulting wear figures are a relative comparative ranking rather than an absolute life prediction. A bi-objective problem -- composite gait error versus total joint wear, subject to step-length, ground-clearance, duty-factor and assembly constraints -- is solved with NSGA-II. Under the adopted gait metric the classical Jansen design is Pareto-dominated: for a representative design, link-length adjustments within +/-29% simultaneously flatten the stance (-28%), smooth the stance velocity (-58%) and reduce total joint wear by ~56%. A sensitivity study shows the wear advantage is robust across a crank-speed x payload envelope (48%-56%) and identifies the link lengths that most strongly govern wear. A variance-based global (Sobol) analysis confirms that two link lengths dominate the wear variance, and a Monte-Carlo manufacturing-tolerance study shows the wear advantage degrades gracefully under realistic fabrication error. The framework provides a practical route to longer-lived walking linkages and a baseline for future wear-clearance-impact coupled studies."
-  },
-  {
-    "title": "Wh0: Generative World Models as Scalable Sources of Egocentric Human Hand Manipulation Data",
-    "original_title": "Wh0: Generative World Models as Scalable Sources of Egocentric Human Hand Manipulation Data",
-    "link": "https://arxiv.org/abs/2606.22136",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22136v1 Announce Type: new \nAbstract: Scaling dexterous manipulation requires generalization across objects, scenes, and tasks, yet existing data sources face a trade-off between scale and scene/embodiment alignment: teleoperation data is well aligned with robot deployment but expensive to collect; simulation is scalable but limited by the sim-to-real gap; and real egocentric videos scale effectively but remain misaligned with robot deployment. We propose Wh0, a framework that uses generative video world models as scalable and controllable sources of egocentric human-hand manipulation data to unlock the manipulation capabilities of pretrained dexterous VLA models. Conditioned on language, objects, and scenes, Wh0 uses a generative world model to produce WM-H, a 50k-episode dataset of egocentric human-object interaction videos. Wh0 then converts the generated videos into robot-trainable supervision through hand motion reconstruction and visual editing. Co-trained with a limited amount of real robot data, WM-H adapts pretrained VLA models to dexterous manipulation deployment. Across 18 real-world dexterous manipulation tasks, compared with a model post-trained only on robot data, Wh0 improves zero-shot success on unseen tasks from 8.3% to 38.9%. Ablation studies further show that scalable generation and scene/embodiment alignment are key drivers of performance gains. Videos and open-source code can be found on our project website: https://chenyt31.github.io/wh0.github.io/."
-  },
-  {
-    "title": "RoboLineage: Agent-Native Data Lifecycle Governance Across Robot Policy Iterations",
-    "original_title": "RoboLineage: Agent-Native Data Lifecycle Governance Across Robot Policy Iterations",
-    "link": "https://arxiv.org/abs/2606.22142",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22142v1 Announce Type: new \nAbstract: We present RoboLineage, an agent-native data lifecycle governance system for robot policy iteration. Modern robot policies improve through repeated data collection, review, retraining, evaluation, and release decisions, but the evidence connecting these steps is often scattered across local tools, scripts, and expert memory. RoboLineage makes this lifecycle explicit by representing rollouts, reviews, dataset decisions, training runs, policy metadata, evaluations, deployment recommendations, and next-collection plans as typed lineage artifacts. Agents interpret embodied rollout evidence, adapt accepted data to existing training stacks, maintain data health, and summarize cross-iteration state under explicit artifact boundaries. In real-robot manipulation workflows, RoboLineage makes routine policy iteration faster and more auditable while maintaining downstream policy performance. We open source RoboLineage as a lightweight lifecycle layer for different robot embodiments and training families. Project page: https://robolineage.github.io/"
-  },
-  {
-    "title": "Physics-Informed Eikonal Caging for Whole-Arm Manipulation Planning",
-    "original_title": "Physics-Informed Eikonal Caging for Whole-Arm Manipulation Planning",
-    "link": "https://arxiv.org/abs/2606.22143",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22143v1 Announce Type: new \nAbstract: Planning contact-rich whole-arm manipulation is challenging because interactions that involve extended robot geometry give rise to complex contact dynamics that are difficult to model accurately. This creates a need for planning principles that do not rely heavily on precise contact models. Caging offers one such geometric notion of robustness to modeling inaccuracy by restricting object escape through geometrically enclosing the object. However, existing caging formulations are difficult to incorporate into continuous optimization-based manipulation planning. We reformulate caging as a minimum-time escape problem in which the object seeks to leave an enclosing robot geometry in the shortest time. This yields a continuous escape-time field that measures the robot's enclosure quality and we show it satisfies an eikonal equation. We therefore can approximate this field using a physics-informed neural network, producing a smooth differentiable representation that can be embedded directly into manipulation planning. The resulting objective supports whole-arm manipulation planning to favor robot configurations resisting object escape. This improves the manipulation robustness to contact model mismatch, thus enabling planning with simplified contact models, including quasi-dynamic approximations and simplified object geometry. Across simulation and real-world experiments, we show improved robustness to disturbances and contact-model mismatch relative to baselines. These results suggest that geometric enclosure can serve as a practical robustness primitive for whole-arm manipulation. A supplementary video, which includes an intuitive overview of our method and experiment video results, is available on our project webpage."
-  },
-  {
-    "title": "Zero-shot Transfer of Reinforcement Learning Control Policies for the Swing-Up and Stabilization of a Cart-Pole System",
-    "original_title": "Zero-shot Transfer of Reinforcement Learning Control Policies for the Swing-Up and Stabilization of a Cart-Pole System",
-    "link": "https://arxiv.org/abs/2606.22145",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22145v1 Announce Type: new \nAbstract: Reinforcement learning (RL) is a powerful and convenient tool to modernize controller design. In this work, we study the zero-shot transfer of RL-based control policies from simulation to hardware for cart-pole swing-up and stabilization. The two policies are trained independently, and the handoff is implemented in Simulink via switching logic. We apply a first-order action smoothing filter to prevent hardware damage from high-frequency oscillatory actuation. Pairing this bandwidth-aware filtering with sensitivity-guided domain randomization (DR) and a simple linear curriculum learning (CL) schedule, we obtain a swing-up policy that in all of our experiments injects sufficient energy for handoff into the stabilizer's region of attraction. The stabilization policy rejects disturbances within the tested range, and the swing-up policy can re-engage after larger perturbations and restores the pendulum to the inverted position."
-  },
-  {
-    "title": "Full Nonlinear Nonholonomic Dynamics and Motion Analysis of a 3-DoF Underactuated Spherical Rolling Robot",
-    "original_title": "Full Nonlinear Nonholonomic Dynamics and Motion Analysis of a 3-DoF Underactuated Spherical Rolling Robot",
-    "link": "https://arxiv.org/abs/2606.22169",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.22169v1 Announce Type: new \nAbstract: This paper presents a full nonlinear constrained dynamic model of MonoRollBot, a novel 3-DoF spherical rolling robot driven by a single motor, a lead-screw transmission, and a spring-coupled internal moving mass, together with motion analysis of its behavior. To the best of our knowledge, this is one of the first full nonlinear nonholonomic models reported for a mono-actuated, super-underactuated spherical rolling robot of this kind. Because rolling without slipping is nonholonomic, the dynamics are derived using the Lagrange--d'Alembert formulation, with the lead-screw relation imposed as a holonomic constraint and the rolling condition imposed in Pfaffian form. The formulation retains the complete generalized coordinates of shell translation, shell attitude, screw travel, nut rotation, and radial mass motion. Simulations and representative motion studies show qualitative agreement with prototype behavior and reveal how gravity, compliance, and inertia jointly shape the locomotion and motion capabilities of this strongly underactuated robot. The resulting model also provides a mechanically consistent basis for future state estimation and hybrid controller design for this nonholonomic mono-actuated rolling robot."
   }
 ]
