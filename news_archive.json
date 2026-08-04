@@ -1,5 +1,77 @@
 [
   {
+    "title": "MPC 기반 모바일 매니퓰레이터의 출입구 통과 모션 계획",
+    "original_title": "Motion Planning for Mobile Manipulators Navigating Doorways via Model Predictive Control",
+    "link": "https://arxiv.org/abs/2608.00206",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 모바일 매니퓰레이터가 인간 환경의 출입구를 자율적으로 통과하기 위한 모션 플래닝 프레임워크를 제시함. 로봇과 문을 결합된 동적 시스템으로 모델링하고, Nonlinear Model Predictive Control (MPC) 최적화 프레임워크를 활용하여 동역학적으로 실현 가능하고 충돌이 없는 경로를 생성하는 방식임. 시뮬레이션과 하드웨어 실험을 통해 출입구 통과 경로 계획의 성공적인 수행이 입증됨."
+  },
+  {
+    "title": "상호작용 표현 및 기술 구성을 이용한 조작 및 보행 능력 결합 개발",
+    "original_title": "Developing Combined Manipulation and Locomotion Skills with Interaction Representation and Skill Composition",
+    "link": "https://arxiv.org/abs/2608.00208",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 휴머노이드 로봇이 발달적 원칙에 따라 운동 정책을 학습하고, 이를 결합하여 복잡한 행동을 수행하는 방법을 제시함. 구체적으로, 입방 하모닉스(cubic harmonics)를 활용하여 외부 데이터 없이도 일반화된 grasping 정책을 학습함과 동시에, 이를 standing-up 및 walking 정책과 결합하여 전체 동작 정책을 구성함. 그 결과, 미지 객체에 대한 grasping에서 93%의 zero-shot 성공률을, 물체를 들고 일어서기에서 96-100%의 성공률을 기록하며 높은 성능을 입증함."
+  },
+  {
+    "title": "첫 번째 실용적 동적 CoM: 휴머노이드 단발 균형을 위한 통합 정책 및 방법론 독립적 벤치마크",
+    "original_title": "First Deployable Dynamic-CoM: A Unified Policy and Method-Agnostic Benchmark for Humanoid Single-Leg Balance",
+    "link": "https://arxiv.org/abs/2608.00500",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존 휴머노이드 정책의 단발 균형 유지 한계를 극복하고자, 연구진은 엔코더와 IMU만을 이용해 구현 가능한 '동적 CoM' 관측값을 제시함. 이를 기반으로 개발된 FDDC 정책은 실제 로봇 Unitree G1에서 86/90의 높은 단발 균형 성공률을 달성하는 성과를 보였음. 또한, 본 연구는 휴머노이드 단발 균형 성능 평가를 위한 최초의 방법론 독립적(method-agnostic) 벤치마크 스택을 공개함."
+  },
+  {
+    "title": "시각-촉각 예측 분리: 세계 행동 모델을 위한 오라클 기반 인터페이스 발견",
+    "original_title": "Disentangling Visuo-Tactile Foresight: Oracle-Guided Interface Discovery for World Action Models",
+    "link": "https://arxiv.org/abs/2608.00547",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "접촉이 많은 환경에서의 로봇 제어는 시각 정보 외에 미래의 시각 및 촉각 상호작용 예측에 크게 의존함. 이에 연구진은 성공적인 궤적을 제공하는 Oracle Visuo-Tactile Foresight (OVTF)라는 제어 프레임워크를 구축하고, 비대칭 위상 국소 미래 메모리(AFM)를 제안함. UniVTAC 시뮬레이션 벤치마크 7개 태스크에서 AFM이 32.0%의 평균 성공률을 달성하며, 완전 모달리티 분리 방식보다 선택적이고 위상에 맞춘 시각-촉각 라우팅이 더 높은 가동성 인터페이스를 제공함을 입증함."
+  },
+  {
+    "title": "DexMani: 정교한 회전 동작을 위한 인간 기반 조작성 가이드",
+    "original_title": "DexMani: Human-Derived Manipulability Guidance for Dexterous Rotation",
+    "link": "https://arxiv.org/abs/2608.00554",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "정교한 물체 회전은 접촉 기반의 순차적 결정 문제로, 기존의 강화 학습(RL) 기법들은 접촉 변화가 후속 동작에 미치는 영향을 명시적으로 고려하지 못함. 이에 연구진은 인간의 시연을 접촉 조건 기반의 조작성 변화(manipulability evolution)로 변환하는 DexMani 프레임워크를 개발함. DexMani는 이를 학습하여 다양한 로봇 구현체에 걸쳐 회전 기술을 습득하는 데 활용되며, Shadow Hand, Allegro Hand 등 평가 환경 전반에서 높은 성공률을 달성함."
+  },
+  {
+    "title": "플래너 없는 그랩 실행: 인증된 안전성과 보장된 품질을 갖춘 구성 공간 그랩 거리 필드(GDF)",
+    "original_title": "Grasp Execution Without a Planner: Configuration-Space Grasp Distance Fields with Certified Safety & Guaranteed Quality",
+    "link": "https://arxiv.org/abs/2608.00600",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 로봇 팔의 그리프 실행 구조가 가지는 계획(planning) 의존성 문제를 해결하기 위해, 본 연구는 팔-핸드 구성 공간 상의 Grasp Distance Fields (GDFs)를 제안함. 제어기는 GDF의 negative gradient를 따라 움직이며 그리프를 실행하고, 안전성을 위해 CBF-CLF Quadratic Program (QP)을 활용하여 충돌 및 작업공간 제약 조건을 만족시킴. 이를 Unitree G1 휴머노이드에 적용한 실험 결과, 복잡하고 동적인 환경에서 50개 오브젝트 중 46개를 성공적으로 파지 및 리프팅하는 등 높은 성공률과 안정적인 그리프 품질을 달성했음을 입증함."
+  },
+  {
+    "title": "고관절 외골격을 위한 단계별 다중 에이전트 훈련(SMAT): 시뮬레이션 훈련된 공동 적응형 제어기의 대사 및 생체역학적 검증",
+    "original_title": "Staged Multi-Agent Training (SMAT) for Hip Exoskeletons: Metabolic and Biomechanical Validation of a Simulation-Trained Co-Adaptive Controller",
+    "link": "https://arxiv.org/abs/2608.00715",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "인간-장치 공동 적응 문제 해결을 위해 고안된 단계별 다중 에이전트 훈련(SMAT) 방법론을 개발하고, 이를 실제 성인 8명에게 적용하여 대사 및 생체역학적 검증을 완료함. 연구 결과, 능동 보조가 수동 조건 대비 순수 대사율을 19.7% 감소시키는 유의미한 에너지 절감 효과를 입증함. 특히, 해당 정책이 개별 대상자 재훈련 없이도 다양한 보행 속도와 지형 조건에서 높은 범용성(Generalization)을 확보함이 확인됨."
+  },
+  {
+    "title": "SelfWAM: 빠른 로봇 제어를 위한 자체 기반 통합 세계 행동 모델",
+    "original_title": "SelfWAM: A Self-Grounded Unified World Action Model for Fast Robot Control",
+    "link": "https://arxiv.org/abs/2608.00725",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 World Action Models(WAMs)가 행동별 구체적인 결과를 포착하지 못하는 한계를 극복함. SelfWAM은 MoT(Mixture-of-Transformers) 아키텍처를 기반으로 행동, 행동 조건부 미래 RGB 프레임, 로봇 자가 마스크(self-masks)를 공동으로 예측함. 이는 미래 예측을 로봇의 가시적 움직임에 근거하여 행동 민감도를 높이고 빠른 정책 추론 능력을 유지하며, 실제 로봇 매니퓰레이션 작업에서 높은 성능을 보임."
+  },
+  {
     "title": "Unitree, 휴머노이드 로봇 수요 증가에 힘입어 2026년 상반기 매출 35% 이상 증가 전망",
     "original_title": "Unitree sees 1H26 revenue rise over 35% on humanoid robot demand - digitimes",
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS3NWLVdtcFVSZmQtbGNXSjVjYnRJQTl3NGJhWGN5R3QwZFNUR2FWUmJvRHFsdFRTYmp1d1pSNFkyMFU4U2NHNmt1V3hkeGROWkZUejctanlWVko5aWI1X1lBRkRvN282Q29sRHJ6ZFlROHFMb1NrUks1bmJVX0xraU01cHlxYWlF?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.22169v1 Announce Type: new \nAbstract: This paper presents a full nonlinear constrained dynamic model of MonoRollBot, a novel 3-DoF spherical rolling robot driven by a single motor, a lead-screw transmission, and a spring-coupled internal moving mass, together with motion analysis of its behavior. To the best of our knowledge, this is one of the first full nonlinear nonholonomic models reported for a mono-actuated, super-underactuated spherical rolling robot of this kind. Because rolling without slipping is nonholonomic, the dynamics are derived using the Lagrange--d'Alembert formulation, with the lead-screw relation imposed as a holonomic constraint and the rolling condition imposed in Pfaffian form. The formulation retains the complete generalized coordinates of shell translation, shell attitude, screw travel, nut rotation, and radial mass motion. Simulations and representative motion studies show qualitative agreement with prototype behavior and reveal how gravity, compliance, and inertia jointly shape the locomotion and motion capabilities of this strongly underactuated robot. The resulting model also provides a mechanically consistent basis for future state estimation and hybrid controller design for this nonholonomic mono-actuated rolling robot."
-  },
-  {
-    "title": "OpenHLM: An Empirical Recipe for Whole-Body Humanoid Loco-Manipulation",
-    "original_title": "OpenHLM: An Empirical Recipe for Whole-Body Humanoid Loco-Manipulation",
-    "link": "https://arxiv.org/abs/2606.22174",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22174v1 Announce Type: new \nAbstract: Whole-body humanoid loco-manipulation requires coordinating the robot's entire kinematic chain. However, most existing systems typically decouple the upper and lower bodies into separate controllers, limiting such coordination and yielding behaviors similar to those of a wheeled dual-arm platform. In this paper, we ask what it takes to build a whole-body native vision-language-action (VLA) model that maps language and pixels directly to all of the humanoid's degrees of freedom. We conduct a systematic empirical study organized as a roadmap of one-variable-at-a-time experiments across three phases: whole-body teleoperation, VLA model design, and heterogeneous co-training. Our study yields several intriguing findings: a joint-based whole-body teleoperation interface outperforms alternatives that only partially expose the humanoid's degrees of freedom; a VLA pretrained on static and wheeled dual-arm platforms transfers surprisingly well to a humanoid's full action space; and co-training with HuMI, the humanoid analog of UMI, extends the policy to new objects and instructions without additional whole-body teleoperation on those targets. Following this roadmap yields OpenHLM, an open-source recipe for whole-body humanoid loco-manipulation. In a challenging long-horizon task that spans a wide vertical range of the humanoid, OpenHLM outperforms two state-of-the-art humanoid VLA baselines (GR00T N1.6 and $\\Psi_0$) using less than half the total demonstration time. Our code, training data, and model checkpoints are available at [https://openhlm-project.github.io/]."
-  },
-  {
-    "title": "Geometric Reconstruction of Extrinsic Contact Trajectories using Tactile Sensing and Proprioception for Tool Manipulation",
-    "original_title": "Geometric Reconstruction of Extrinsic Contact Trajectories using Tactile Sensing and Proprioception for Tool Manipulation",
-    "link": "https://arxiv.org/abs/2606.22251",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22251v1 Announce Type: new \nAbstract: Tactile sensing enables robots to perceive rich contact information at the grasp, supporting tasks such as object recognition, in-hand pose estimation, and slip detection. However, in many tool-mediated manipulation tasks, the interaction that determines task success occurs at the tool tip, away from the tactile sensor, making direct sensing of tool-environment contact difficult, particularly when the contact moves during interaction. In this work, we reconstruct the trajectory of extrinsic tool-tip contact using tactile sensing and robot proprioception. We formulate tool-tip trajectory reconstruction as a geometric inference problem under a single-point contact assumption. Our method first estimates the global tool-tip contact location from a calibration segment designed to approximate fixed-point behavior, and then reconstructs the full trajectory by composing relative tool motion estimated from tactile marker observations under continuous contact. Across n=51 trials with multiple trajectories, tools, wrist poses, and grasp configurations, the proposed pipeline achieves a trajectory RMSE of 8.59 +/- 2.41 mm in the world frame and a shape RMSE of 5.96 +/- 1.16 mm, while operating online at 14.00 +/- 4.11 Hz. Overall, the results show that extrinsic tool-tip trajectory geometry can be recovered consistently from grasp-level tactile sensing, with trajectory shape remaining stable across variations in tools, wrist poses, and grasp configurations."
-  },
-  {
-    "title": "Any-Body Guard: Universal Safeguarding for Manipulation Policies via Action Masking",
-    "original_title": "Any-Body Guard: Universal Safeguarding for Manipulation Policies via Action Masking",
-    "link": "https://arxiv.org/abs/2606.22278",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22278v1 Announce Type: new \nAbstract: Ensuring safety of learning-enabled robotic manipulation across diverse embodiments and tasks still requires significant manual engineering. Existing approaches typically rely on heuristically designed fallback controllers or complex forward invariance assessments. These methods are often too conservative for task success, too computationally expensive for real-time execution, too heuristic to provide useful safety guarantees, or too engineering-heavy to transfer between setups. In this paper, we propose a universal safeguarding approach, X-Safe, which reasons directly in the robot's configuration space to provide formal probabilistic guarantees for collision avoidance. By operating in the configuration space, our method transfers across embodiments while relying solely on an object-based, quasi-static scene representation and a forward kinematics model of the robotic manipulator. Thus, X-Safe provides useful formal safety guarantees without requiring additional data, or engineering effort for different embodiments or scenes. We demonstrate X-Safe for diverse embodiments and policies, both in simulation and on hardware. We observe less degradation in task performance compared to state-of-the-art safeguarding, no collisions on hardware experiments, and empirically corroborate our formal guarantees."
-  },
-  {
-    "title": "FlowDPG: Deterministic Policy Gradient on Flow Matching Policies for Real-World Manipulation",
-    "original_title": "FlowDPG: Deterministic Policy Gradient on Flow Matching Policies for Real-World Manipulation",
-    "link": "https://arxiv.org/abs/2606.22303",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22303v1 Announce Type: new \nAbstract: Real-world reinforcement learning for robotic manipulation remains challenging, and this difficulty is amplified for flow matching policies: applying policy gradient methods to these policies is fundamentally limited by the need to backpropagate through time(BPTT) along the multi-step ODE that maps noise to actions, which is computationally prohibitive and numerically fragile. We propose FlowDPG, a DDPG-style method specifically designed for flow matching policies that distills the critic gradient into the velocity field at training time, bypassing BPTT entirely. Intuitively, FlowDPG combines two complementary vectors: the demonstration-driven velocity that keeps the action feasible, and the critic-driven correction that steers it toward higher value. Our contributions are threefold: (1) a BPTT-free distillation framework that enables stable DDPG-style policy improvement on flow matching policies, (2) a formal connection between the FlowDPG update direction and vanilla Deterministic Policy Gradient via three explicit approximations, and (3) real-world validation on a long-horizon, multi-stage, dual-arm AirPods assembly task, where FlowDPG attains a 92% end-to-end success rate, substantially outperforming recent RL methods spanning value-conditioning, auxiliary-module adaptation, and adjoint-based critic-gradient approaches. Videos and more results are provided on the project page https://flowdpg.github.io."
-  },
-  {
-    "title": "EmbodiedUS-FS: Fast Slow Intelligence for Ultrasound Robotics",
-    "original_title": "EmbodiedUS-FS: Fast Slow Intelligence for Ultrasound Robotics",
-    "link": "https://arxiv.org/abs/2606.22319",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22319v1 Announce Type: new \nAbstract: Robotic ultrasound scanning in real clinical environments requires both high-level clinical workflow reasoning and low-level closed-loop execution. Physicians natural-language instructions often contain implicit anatomical targets, procedural logic, image-quality requirements, and safety constraints, while execution is affected by patient motion, contact variations, and target drift. We propose a fast and slow hierarchical embodied ultrasound system for safe and interpretable robotic ultrasound assistance. The Slow Brain performs intent parsing and stage-wise task planning with knowledge augmentation from an API and handbook corpus, and generates executable plans through task-graph construction and structured plan verification. The Fast Brain fuses multimodal feedback, including ultrasound images, robot pose and force states, and patient-motion information, to refine local actions and perform image-quality-guided recovery behaviors. The system further integrates a Safety Shield and a hierarchical escalation policy to constrain risky actions and trigger replanning or human confirmation under persistent failures or safety-bound violations. Experiments on planning evaluation, closed-loop execution under dynamic perturbations, and safety-mechanism validation demonstrate that the proposed hierarchical design improves task success rates while reducing safety violations."
-  },
-  {
-    "title": "Tactile Genesis: Exploring Tactile Sensors at Scale for Learning Dexterous Tasks",
-    "original_title": "Tactile Genesis: Exploring Tactile Sensors at Scale for Learning Dexterous Tasks",
-    "link": "https://arxiv.org/abs/2606.22332",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22332v1 Announce Type: new \nAbstract: Tactile sensing is critical for contact-rich dexterous manipulation, yet it remains unclear which tactile abstractions a policy needs and when richer tactile fields justify their hardware cost. This is hard to study empirically: each sensor effectively defines a new robot, and no lab can replicate the same learning experiment across all of them. We present Tactile Genesis, a GPU-parallel tactile sensor simulation platform that exposes binary contact, contact depth, per-taxel kinematic force/torque, elastomer marker displacement, geometry-aware proximity, contact audio, and a voxelized temperature field (the first of its kind in robot learning physics simulation platforms) under a common interface, with configurable placement, resolution, and a realistic noise model (drift, hysteresis, dead taxels, crosstalk). It scales past 20,000 parallel environments and 1,000 taxels on a single GPU, improving throughput by 3 to 20 times over previous tactile simulators. We train teacher-student policies on three dexterous tasks, ablating sensor type, placement, resolution, and noise, and verify transfer to the real XHand1. Proprioception alone is insufficient on every task. Sensor placement dominates sensor type: fingertip-only coverage trails whole-hand coverage by a wide margin, while adding the palm and proximal phalanges closes most of the gap to the privileged teacher. Resolution matters far less than coverage: placing 200 taxels across the whole hand suffices across tasks. We find that force/torque per taxel is consistently the most useful sensor type. These results give concrete guidance for both future tactile hardware design for improving robot hands and policy-side observation choice in dexterous manipulation. https://neuroagents-lab.github.io/2026-tactile-genesis/"
-  },
-  {
-    "title": "Do Rigid-Body Simulators Dream of Soft Robots? Learning Contact-Rich Manipulation for Tendon-Driven Continuum Robots",
-    "original_title": "Do Rigid-Body Simulators Dream of Soft Robots? Learning Contact-Rich Manipulation for Tendon-Driven Continuum Robots",
-    "link": "https://arxiv.org/abs/2606.22397",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.22397v1 Announce Type: new \nAbstract: Learning contact-rich, whole-body manipulation for soft continuum robots is held back by the lack of simulation infrastructure that has accelerated rigid-robot manipulation. Existing soft robot simulators are physically grounded but lack the contact handling, actuation support, or learning integration needed for contact-rich manipulation; rigid-body approximations offer these capabilities but sacrifice physical grounding. We bridge this gap for tendon-driven continuum robots (TDCRs) by deriving a continuum-mechanics-informed discretization that places the soft robot natively inside MuJoCo, unifying tendon forces, body contact, and dynamics in a single physics pipeline. We validate the simulator against a Cosserat rod reference (static and dynamic) and real TDCR hardware. We then train state-based imitation learning policies via teleoperation in simulation and deploy them zero-shot to a physical 3-segment TDCR on a 7-DoF Franka arm across two contact-rich manipulation tasks. To our knowledge, this is the first demonstration of sim-to-real transfer for contact-rich manipulation with continuum robots."
-  },
-  {
-    "title": "SPiralRoll: A Novel Adjustable-Stiffness Underactuated 3-DoF Joint with Torsion Springs for Rolling Robots",
-    "original_title": "SPiralRoll: A Novel Adjustable-Stiffness Underactuated 3-DoF Joint with Torsion Springs for Rolling Robots",
-    "link": "https://arxiv.org/abs/2606.22443",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.22443v1 Announce Type: new \nAbstract: Compliant mechanisms are important in robotics because they can improve adaptability, safety, and energy efficiency while reducing hardware complexity. This paper presents SPiralRoll, a novel torsion-spring-based underactuated compliant mechanism for rolling robots and compliant robotic actuation. The mechanism uses arc-distributed elastic members and two motor inputs to realize three physically observable output motions: rotational motion, radial expansion/contraction, and axial spin induced by nonlinear compliant deformation. Two configurations, namely full-arc and single-arc designs, are developed and experimentally evaluated. Beyond benchtop validation, the mechanism is integrated into a spherical rolling robot, where proof-of-concept experiments demonstrate forward rolling and turning. The results show that the full-arc design provides better structural support and smoother deformation, whereas the single-arc design yields larger deformation and stronger inertial excitation, making it more suitable for pendulum-driven rolling locomotion. Overall, SPiralRoll provides a low-cost, compact, and fully 3D-printable solution for underactuated compliant rolling robots and adaptive robotic joints."
   }
 ]
