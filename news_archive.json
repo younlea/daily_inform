@@ -837,6 +837,15 @@
     "summary": "Multi-agent reinforcement learning(MARL) 기반 군집 제어의 낮은 일반화 성능 및 비효율성 문제를 해결하기 위해, Local-Canonicalization Equivariant Graph Neural Networks(LEGO)라는 모듈형 정책 아키텍처가 제안됨. LEGO는 에이전트 중심의 Canonicalization과 역할 인지 Graph Encoding을 결합하여 전역 좌표계 의존성을 제거하고, 변동하는 팀 규모에 대응하는 E(2)-동변환 정책을 구현함. 그 결과, LEGO-MAPPO는 다양한 협력 및 경쟁 시뮬레이션 환경에서 샘플 효율성과 태스크 성능을 기존 모델 대비 향상시키며, 미훈련된 조건이나 일부 에이전트 손실 상황에서도 높은 범용성을 유지하는 것으로 확인됨."
   },
   {
+    "title": "로봇 매니퓰레이션에서의 목표 조건부 강화 학습을 위한 동적 대비 제어 기반 적응형 커리큘럼 계획(ACDC)",
+    "original_title": "ACDC: Adaptive Curriculum Planning with Dynamic Contrastive Control for Goal-Conditioned Reinforcement Learning in Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2603.02104",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존의 목표 조건부 강화 학습 방식이 수집된 경험에 의존하여 최적화 성능에 한계를 보임에 따라, 다차원 적응형 커리큘럼(AC) 계획과 동적 대비(DC) 제어를 통합한 ACDC 패러다임이 제안됨. AC는 에이전트의 성공률 및 훈련 진행도에 따라 탐색과 활용의 균형을 조절하는 커리큘럼 스케줄링을 수행하며, DC는 이를 정규화 제약을 통해 경험 선택에 반영하여 학습을 가이드함. 실험 결과, ACDC는 까다로운 로봇 조작 작업에서 기존 SOTA 모델 대비 샘플 효율성 및 최종 과제 성공률에서 지속적인 우위를 입증함."
+  },
+  {
     "title": "Unitree, 휴머노이드 로봇 수요 증가에 힘입어 2026년 상반기 매출 35% 이상 증가 전망",
     "original_title": "Unitree sees 1H26 revenue rise over 35% on humanoid robot demand - digitimes",
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS3NWLVdtcFVSZmQtbGNXSjVjYnRJQTl3NGJhWGN5R3QwZFNUR2FWUmJvRHFsdFRTYmp1d1pSNFkyMFU4U2NHNmt1V3hkeGROWkZUejctanlWVko5aWI1X1lBRkRvN282Q29sRHJ6ZFlROHFMb1NrUks1bmJVX0xraU01cHlxYWlF?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.24633v1 Announce Type: new \nAbstract: Human demonstrations for robot imitation learning often contain mistakes and corrective behaviors, such as imprecise grasps, object misalignment, unstable contact, and repeated attempts. While these segments are commonly treated as noisy or suboptimal data, they provide valuable evidence about when execution deviates from a desirable path and how task feasibility can be restored. However, existing reward and value models often rely on monotonic progress assumptions, which capture coarse task advancement but may overlook local execution errors and corrective behaviors in imperfect demonstrations. In this work, we propose ReTVL (ReTry-Supervised Value Learning), a framework for learning mistake-sensitive value functions from mixed-quality robot demonstrations by leveraging retry events as sparse supervision. ReTVL captures the local degradation-and-recovery structure around mistakes by combining global progress calibration with local pairwise preference learning induced by sparsely annotated retry keypoints. The learned value model is then used to reweight demonstration chunks for downstream behavior cloning, reducing the influence of harmful execution errors while preserving useful corrective behaviors. Experiments on real-robot manipulation tasks show that ReTVL produces more fine-grained value estimates than progress-based baselines and improves imitation learning from imperfect demonstrations."
-  },
-  {
-    "title": "TACTFUL: Tactile-Driven Exploration For Object Localization and Identification in Confined Environments",
-    "original_title": "TACTFUL: Tactile-Driven Exploration For Object Localization and Identification in Confined Environments",
-    "link": "https://arxiv.org/abs/2606.24712",
-    "date": "2026-06-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.24712v1 Announce Type: new \nAbstract: Humans effortlessly locate and identify objects by touch alone, even without vision. In contrast, robotic systems rely heavily on vision and struggle with autonomous tactile exploration and object identification. We present TACTFUL, a vision-free tactile exploration framework that enables a multi-fingered robot to autonomously explore confined workspaces, discover objects through contact, and identify them via tactile reconstruction. Trained entirely on real hardware without simulation, our system learns a single policy that balances global workspace exploration with local surface refinement through a dynamic reward schedule. Our results demonstrate that tactile sensing, when paired with structured learning, can serve as an effective primary modality for object-level reasoning, achieving 77% success with 0.015 m average reconstruction error and outperforming baseline approaches on real-world objects."
   }
 ]
