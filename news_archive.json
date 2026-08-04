@@ -153,6 +153,78 @@
     "summary": "로봇 하드웨어의 속성 변화(노화, 부하 등)에 대응하기 위한 사족 보행 온라인 구현 적응 프레임워크를 제시함. 이 방법은 짧은 상호작용 이력으로부터 신체 매개변수를 실시간으로 추론하고, 이를 활용하여 폐쇄 루프 제어를 구현하는 것이 핵심임. 실제 Unitree Go2 로봇 테스트를 통해 사지 제한 또는 5kg 페이로드와 같은 심각한 환경 변화 상황에서도 안정적인 보행이 가능함을 입증함."
   },
   {
+    "title": "KING: 보행 및 바퀴 구동 로봇의 통합 운동 표현을 위한 구체화 인식 운동학 그래프 신경망",
+    "original_title": "KING: Embodiment-Aware Kinematic Graph Neural Network for Unified Motion Representation of Legged and Wheeled Robots",
+    "link": "https://arxiv.org/abs/2608.01015",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존 운동학 학습 모델은 로봇의 구체화(embodiment) 차이에 따른 일반화에 어려움이 있었음. 이를 해결하기 위해, 본 연구는 로봇의 구체화를 공통 그래프로 통합하는 GNN 기반 운동학 모델인 KING을 제시함. KING은 휠 및 다리 로봇의 운동학을 단일한 통합 표현으로 학습하며, 적은 데이터(few-shot learning)만으로 새로운 로봇 체계에도 높은 정확도의 odometry 추정 및 즉각적인 적응이 가능함."
+  },
+  {
+    "title": "nR-Planar 매니퓰레이터의 작업 공간-섬유 분해 기반 완전 구동 경로 계획 기법 제안",
+    "original_title": "Complete Motion Planning using Workspace-Fibered Decomposition for nR-Planar Manipulator",
+    "link": "https://arxiv.org/abs/2608.01172",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 복잡한 환경에서 작동하는 nR Planar Redundant Manipulator의 운동 계획을 위해 작업 공간-섬유 분해(Workspace-Fibered Decomposition) 프레임워크를 제안함. 고차원의 전체 설정 공간(Configuration Space)에서 직접 경로를 계획하는 대신, 저차원 비여유도 서브 체인의 작업 공간을 순차적으로 구축하고 이를 여유도 방향의 섬유를 통해 재귀적으로 확장하는 방식임. 이는 전체 C-space 장애물 기하학적 정의를 회피하면서도 충돌 없는 연결 구조를 유지하는 reduced planning manifold를 제공하여, 충돌 검사 복잡도를 획기적으로 낮추는 효율적인 경로 계획 방법임을 입증함."
+  },
+  {
+    "title": "건설 현장 작업 수행을 위한 휴머노이드 로봇 인식-행동 시스템 구축",
+    "original_title": "Perception-and-action system for humanoid robot task execution in construction",
+    "link": "https://arxiv.org/abs/2608.01600",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "건설 현장의 작업 난이도를 해결하기 위해 인간의 시연을 통해 작업을 학습하는 새로운 인식-행동 시스템이 제안됨. 해당 시스템은 Humanoid-PoseNet과 Humanoid-ActionNet을 활용하여 로봇이 인간의 자세를 추출하고 실행 가능한 동작을 학습하도록 함. 실험 결과, 휴머노이드 로봇이 8가지 건설 관련 동작을 성공적으로 수행했으며, 평균 MPJPE는 82.45 mm를 달성하는 성과를 보임."
+  },
+  {
+    "title": "AffordTrajDP: 로봇 매니퓰레이션을 위한 동적 어포던스 기반 시각-운동 정책 학습",
+    "original_title": "AffordTrajDP: Dynamic Affordance-Guided Visuomotor Policy Learning for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2608.01603",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 정적 affordance 방식은 환경 변화에 취약하여 trajectory drift 문제를 일으키는 한계가 있음. 이에 연구진은 객체 중심 시간 전파(object-centric temporal propagation)를 통해 동적 affordance trajectory를 구성하는 AffordTrajDP 프레임워크를 제안함. 이 프레임워크는 물체의 SE(3) pose를 전파 매체로 활용하여 시점 일관성이 유지되는 state-aware guidance를 제공하며, ManiSkill3에서 70.0%의 높은 성공률을 달성하고 Galaxea A1 및 UR7e 실환경 테스트에서도 견고성을 입증함."
+  },
+  {
+    "title": "시뮬레이터 측 동역학 정규화를 통한 병렬 연결형 다리 메커니즘의 Sim-to-Real 격차 해소",
+    "original_title": "Bridging the Sim-to-Real Gap in Parallel-Link Leg Mechanisms via Simulator-Side Dynamics Normalization",
+    "link": "https://arxiv.org/abs/2608.01697",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "본 논문은 병렬 연결형 메커니즘을 직렬 트리로 모델링할 때 발생하는 동역학적 Sim-to-Real 격차를 다루고, Simulator-Side System Normalization (S3N) 기법을 제안함. S3N-Full은 기존 방식에서 누락되었던 링크의 관성과 감쇠력을 복원하여 시뮬레이터의 동역학을 정규화함. 이로써 Joint RMSE 및 지면 반력력 오차를 80% 이상 감소시키고, 보행 과정에서의 Sim-to-Real 격차를 9.9%까지 줄여 물리적 일관성을 크게 향상시키는 것이 입증됨."
+  },
+  {
+    "title": "접촉 환경 기반 조작 학습을 위한 촉각 웨어러블 등가 로봇 팔 네트워크 시스템 TWINS",
+    "original_title": "TWINS: A Tactile Wearable Isomorphic Arm Networked System for Contact-Rich Manipulation Learning",
+    "link": "https://arxiv.org/abs/2608.01733",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 로봇 시스템의 한계로 인해 팔과 몸체 표면 접촉이 필수적인 조작 학습 및 수행에 어려움이 존재함. 이에 본 논문에서는 착용형 이중 팔 장치(Wearable Dual-Arm Device)와 구조적으로 동일한 등가 로봇(Isomorphic Robot)을 결합한 TWINS 시스템을 개발함. 이 시스템은 몸체 표면에 내장된 촉각 센서를 통해 접촉 데이터를 수집하고, 이를 활용하여 몸체 표면의 접촉을 고려한 조작 시연 및 실행이 가능한 통합적 로봇 시스템 구현을 입증함."
+  },
+  {
+    "title": "환경 앵커링을 이용해 접촉 기반 작업을 수행하는 그리퍼 장착 틸트-로터 UAV 개발",
+    "original_title": "A Tilt-Rotor UAV with a Gripper for Stable Contact-Based Tasks via Environmental Anchoring",
+    "link": "https://arxiv.org/abs/2608.01736",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "물리적 상호작용 중 안정적인 자세 유지는 항공 로봇의 핵심 과제임. 본 연구는 틸트-로터와 환경 앵커링용 그리퍼를 통합한 UAV 플랫폼을 제시하며, 이를 통해 불안정한 자유 비행 상태를 넘어 안정적인 작업 환경으로 전이하는 방식을 구현함. 실제 테스트 결과, 환경에 앵커링하는 것만으로도 위치 드리프트 RMSE가 95% 이상 대폭 개선되어, 강풍 조건에서도 3mm 이하의 안정적인 자세 유지가 가능함을 입증함."
+  },
+  {
+    "title": "ReTouch: 온라인 정제된 촉각 예측을 통한 접촉 기반 정교 조작 능력 향상",
+    "original_title": "ReTouch: Empowering Contact-Rich Dexterous Manipulation with Online-Refined Tactile Prediction",
+    "link": "https://arxiv.org/abs/2608.01824",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "접촉이 복잡한 정교 조작 분야의 한계 극복을 위해 VLA 모델인 ReTouch를 제안함. ReTouch는 Tactile-Patch Encoder를 통해 촉각 관찰을 구조화하고, 실행 중 피드백을 활용해 촉각 예측과 행동을 온라인으로 정제하는 Closed-loop Action Generation 메커니즘을 구축함. XHT-Dataset 기반의 실로봇 실험 결과, ReTouch가 기존 최고 성능의 기준 모델 대비 높은 평균 성공률 개선을 달성했음을 입증함."
+  },
+  {
     "title": "Unitree, 휴머노이드 로봇 수요 증가에 힘입어 2026년 상반기 매출 35% 이상 증가 전망",
     "original_title": "Unitree sees 1H26 revenue rise over 35% on humanoid robot demand - digitimes",
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS3NWLVdtcFVSZmQtbGNXSjVjYnRJQTl3NGJhWGN5R3QwZFNUR2FWUmJvRHFsdFRTYmp1d1pSNFkyMFU4U2NHNmt1V3hkeGROWkZUejctanlWVko5aWI1X1lBRkRvN282Q29sRHJ6ZFlROHFMb1NrUks1bmJVX0xraU01cHlxYWlF?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.21669v1 Announce Type: new \nAbstract: Robust locomotion and navigation for legged robots relies heavily on dependable odometry. Traditional multi-sensor fusion for such state estimation requires meticulous sensor calibration and platform-specific kinematic modeling, which complicates deployment. Industrially packaged exteroceptive sensors can provide accurate motion tracking but remain vulnerable to perceptually degraded conditions. We thus develop a plug-and-play, robust legged odometry system that eliminates the need for explicit exteroceptive-to-proprioceptive calibration or system kinematic modeling. Our approach leverages established exteroceptive motion pipelines as a continuous supervisory signal to train an online learned velocity neural network directly from proprioceptive data. An Invariant EKF (InEKF) is then used to fuse the learned proprioceptive or exteroceptive velocity (if any) and IMU data. When exteroception fails due to environmental degradation, the system seamlessly falls back to using the learned proprioceptive model, yielding a resilient legged odometry that readily adapts to new hardware. We demonstrate the platform-agnostic, easily deployable nature of our approach on different quadruped platforms, showcasing promising results in maintaining robust motion estimation across challenging scenarios."
-  },
-  {
-    "title": "Imitation from Heterogeneous Demonstrations using Grounded Latent-Action World Models",
-    "original_title": "Imitation from Heterogeneous Demonstrations using Grounded Latent-Action World Models",
-    "link": "https://arxiv.org/abs/2606.21672",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21672v1 Announce Type: new \nAbstract: Imitation learning has emerged as a powerful paradigm for learning visuomotor policies, but its generalisation and stability are limited by the scale and quality of demonstration data needed. A promising direction is to leverage more abundant but heterogeneous data sources, which differ in action space and often lack action labels altogether. Existing co-training approaches that combine heterogeneous data sources rely on heuristic and hand-engineered alignment techniques. In contrast, we argue that action representations should be grounded in prediction: actions that produce the same effect on the environment should share the same representation, regardless of their sources. To this end, we instantiate this principle by using a grounded latent-action world model (GLAM), a pair of generative models with a shared latent action space across data sources that is grounded by predicting future observations consistently across sources. This latent action space is used to train downstream behavioural cloning (BC) policies which map observations to latent actions and decode them back to robot actions, providing a paradigm for learning from heterogeneous data. Empirically, we demonstrate that GLAM successfully learns an aligned latent action space that facilitates action transfer across data sources with and without action labels. Across five manipulation tasks in simulation and in the real world, GLAM-aligned policies significantly outperform BC baselines and prior latent-action methods, achieving an average of +48% improvement in task success rate with the same data-scarce setting. Videos and code are available at https://viccccciv.github.io/glam/."
-  },
-  {
-    "title": "Shape-programmable Magnetic Soft Membranes for Mechanically Active Microchannels",
-    "original_title": "Shape-programmable Magnetic Soft Membranes for Mechanically Active Microchannels",
-    "link": "https://arxiv.org/abs/2606.21716",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21716v1 Announce Type: new \nAbstract: The capability to encode spatially distinct magnetization patterns within soft materials enables remote control over complex deformations. This characteristic is especially important for microfluidic platforms, where limited dynamic control of channel boundaries and laminar flow conditions usually restrict fluid transport and interactions. The present study introduces a shape-programmable magnetic soft membrane actuator as an active microchannel component that can dynamically modulate its shape under magnetic fields and therefore the microfluidic environment. The membrane is magnetically programmed using a template-based approach, which allows it to be controllably deformed in the form of a sinusoid under the influence of an external magnetic field. The membrane's integration into a microchannel converts a passive channel wall into a dynamically changeable interface, allowing active fluid manipulation and enhancing micromixing in laminar flow conditions. The proposed approach establishes a versatile platform for wirelessly controlled deformable interfaces in next-generation microfluidic and lab-on-chip systems."
-  },
-  {
-    "title": "Programmable magnetic soft robots with controlled locomotion and directional liquid cargo release",
-    "original_title": "Programmable magnetic soft robots with controlled locomotion and directional liquid cargo release",
-    "link": "https://arxiv.org/abs/2606.21737",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.21737v1 Announce Type: new \nAbstract: Magnetically programmable soft elastomers enable complex shape morphing and locomotion dynamics in small scale soft robots under external magnetic fields. Benefiting from their programmed deformation and wireless actuation capabilities, magnetic soft robots have emerged as promising platforms for targeted drug delivery, especially in human gastrointestinal tract. However, achieving controlled directional liquid cargo release toward desired tissue interface while preserving the encoded shape morphing and locomotion capabilities remain a significant challenge. Here, we report a new design strategy that employs an optimized magnetization profile to enable controlled directional release of aqueous cargo without compromising shape morphing and locomotion capabilities. Magnetic soft robots with a specific spatially distributed magnetization profile allow directional alignment of the release interface with the orientation of the external magnetic field. This orientation control ensures active alignment of the release interface toward the intestinal wall prior to drug release. An interconnected microporous elastomer is embedded within the robot for aqueous cargo storage, while a thin microcrystalline wax layer seals the release opening hole to isolate the stored liquid cargo from external environment during transport. Triggered release is achieved by mechanically rupturing the wax sealing layer under a higher magnitude external magnetic field. Controlled directional flipping, locomotion, and triggered release are decoupled through external magnetic field's direction and strength. The controlled directional release strategy reported here integrates directional targeted liquid cargo release, shape morphing, and locomotion, which establishes the groundwork for target drug delivery in gastrointestinal tract applications."
-  },
-  {
-    "title": "Rotation-Aware Point-Cloud Embeddings for Vision-Based In-Hand Reorientation",
-    "original_title": "Rotation-Aware Point-Cloud Embeddings for Vision-Based In-Hand Reorientation",
-    "link": "https://arxiv.org/abs/2606.21788",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21788v1 Announce Type: new \nAbstract: Point-cloud goals provide a direct way to specify dexterous in-hand reorientation: instead of defining an object-specific pose frame or estimating 6D pose at test time, the policy is given the desired 3D geometry of the object. Yet raw point-cloud goal conditioning is poorly conditioned for policy learning. Current and goal clouds are unordered, independently sampled, and often visibility-dependent, so their discrepancy entangles object rotation with permutation, resampling, and unstable correspondence structure. For this reason, prior point-cloud manipulation methods typically add structure outside the representation itself, such as explicit pose or relative-pose inputs, dense flow features, or distillation from privileged teachers. We close this gap by learning a rotation-aware point-cloud embedding whose Euclidean latent distance is calibrated to the SO(3) geodesic error between object orientations. The resulting representation turns current-goal comparison into a smooth control signal, allowing a model-free RL policy to act from current and goal point-cloud embeddings, proprioception, and centroid metadata, without object pose, relative pose, dense flow, or teacher-action supervision. In in-hand reorientation experiments, this interface matches privileged-state and distillation-based baselines while avoiding brittle test-time computation of structured pose or flow inputs. These results suggest that point-cloud goals become practical for this task when the representation, rather than an external module, encodes the task-relevant geometry of rotation. We also show evidence that generic visual point-cloud pretraining is insufficient for such a current-goal comparison because it discards the task-relevant state and preserves only shape features."
-  },
-  {
-    "title": "THREAD: Trajectory Planning for Hybrid Rigid-Soft Manipulators with Environment-Aware Diffusion",
-    "original_title": "THREAD: Trajectory Planning for Hybrid Rigid-Soft Manipulators with Environment-Aware Diffusion",
-    "link": "https://arxiv.org/abs/2606.21792",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21792v1 Announce Type: new \nAbstract: Manipulation in confined environments, such as threading a manipulator through narrow apertures, remains a fundamental challenge, especially for conventional rigid robots. Hybrid rigid-soft manipulators offer promise but face two compounding planning challenges: backbone shapes feasible in free space become infeasible under environmental contact, and planning rigid and soft segments independently ignores their kinematic coupling. We present THREAD, the first diffusion-based trajectory planner for hybrid manipulation, learning a generative prior over physically realizable backbone trajectories conditioned on local environment geometry, with physics-inspired losses encoding curvature, smoothness, and collision constraints jointly across both segments. Trained in simulation, THREAD achieves 92.4% task success with 5x fewer collisions than the strongest baseline. We show cross-embodiment real-world transfer with minimal online updates, successfully threading through apertures as small as 1.3x the soft segment diameter."
-  },
-  {
-    "title": "SurGE: Surrogate Gradient-guided Evolution for Co-design of Legged Robots with Parallel Elasticity",
-    "original_title": "SurGE: Surrogate Gradient-guided Evolution for Co-design of Legged Robots with Parallel Elasticity",
-    "link": "https://arxiv.org/abs/2606.21866",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21866v1 Announce Type: new \nAbstract: Co-design of legged robots with elastic elements is challenging due to the non-differentiability of contact dynamics and mechanism engagement. This paper presents SurGE, a framework that computes surrogate gradients of the design objective through a differentiable pipeline consisting of a kinodynamic single-rigid-body (Kino-SRB) model and a design-aware control policy, and injects them into CMA-ES via mean shift with cosine-annealed step decay. On a 4-DOF design space of a hopping robot with unidirectional parallel spring, SurGE achieves 6 times lower cross-seed standard deviation and 18% tighter population concentration compared to vanilla CMA-ES, while matching or improving the best objective. Hardware experiments on a 2D design subspace show that, starting from a hand-tuned initial design, SurGE reduces the design objective by 37.65% on hardware, with the improvement trend identified in simulation transferring consistently to the physical system. SurGE provides the potential to accelerate non-differentiable co-design problems in legged robots via surrogate model gradients."
-  },
-  {
-    "title": "Predictive Gaze Is Preserved but Reorganized toward Monitoring during Robot-Mediated Manipulation",
-    "original_title": "Predictive Gaze Is Preserved but Reorganized toward Monitoring during Robot-Mediated Manipulation",
-    "link": "https://arxiv.org/abs/2606.21920",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21920v1 Announce Type: new \nAbstract: Goal-directed eye movements are a fundamental component of visuomotor control, enabling humans to anticipate and guide their actions. Whether this anticipatory and task-driven behavior is preserved when actions are executed through a robot rather than through one's own body remains unclear. Here we address this question by investigating gaze behavior during goal-directed telemanipulation to determine how visuomotor control adapts to altered embodiment. Our findings show that gaze remains strongly aligned with task goals, preserving its predictive role even during robot-mediated manipulation. At the same time, teleoperation systematically redistributes visual attention toward the robotic end-effector and manipulated objects, increasing online monitoring. These findings show that predictive gaze is not lost under altered embodiment, but reorganized in response to changes in sensory feedback and control demands. More broadly, they reveal the flexibility of the human visuomotor system when the natural sensorimotor coupling is disrupted and identify gaze as an informative signal for inferring action intentions in human-robot interaction."
-  },
-  {
-    "title": "CoRDE: Concept-Prior Routed Diffusion Experts for Structural Generalization in Robot Manipulation",
-    "original_title": "CoRDE: Concept-Prior Routed Diffusion Experts for Structural Generalization in Robot Manipulation",
-    "link": "https://arxiv.org/abs/2606.21935",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21935v1 Announce Type: new \nAbstract: Diffusion models excel at capturing multi-modal action distributions in robot imitation learning. However, in multi-task and long-horizon scenarios, monolithic architectures lack structural generalization capabilities, suffering from gradient conflicts between distinct semantic sub-stages. While pure data-driven Mixture-of-Experts (MoE) methods introduce labor division, they frequently trigger routing collapse, and instantiating full-scale experts causes parameter explosion and high expansion costs. To address these issues, we propose Concept-prior Routed Diffusion Experts (CoRDE), a structure-guided variational distillation framework. CoRDE extracts semantic distributions from a frozen concept encoder to guide the variational posterior responsibility via a learnable soft mapping matrix. This mechanism introduces an entropy-controlled responsibility inference process that encourages confident routing under reliable semantic predictions while preserving the stochastic diffusion term for behavioral diversity. To overcome parameter inflation, CoRDE employs a parameter-efficient expert pool using Low-Rank Adaptation (LoRA) on a shared frozen backbone. Theoretical analysis shows that the mixture score discrepancy is bounded by responsibility-weighted local expert errors, supporting high-fidelity generation under low-rank expert adaptation. Empirical evaluations confirm that, compared to existing baselines, CoRDE systematically reduces routing collapse, forming robust, semantically aligned expert allocations while achieving superior action quality and incremental learning efficiency."
   }
 ]
