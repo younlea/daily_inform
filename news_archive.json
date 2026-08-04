@@ -315,6 +315,78 @@
     "summary": "본 연구는 휴머노이드 로봇이 일반 트래킹 범위를 벗어나는 낙상이나 비정상 상태에서 발생하는 동작의 위험성을 해결함. StableMimic은 트래킹 분포를 넘어선 환경에서 학습된 통합 트래커로, 트래킹과 복구(recovery)를 위한 전용 전문가와 게이트를 사용하여 두 동작을 결합하는 방식임. 테스트 결과, StableMimic은 LAFAN1 댄스 서브세트 등에서 모든 트래킹 지표 대비 최저 오차를 달성하며, 낙상 시 100/100의 높은 복구율을 기록하여 향상된 상호작용 안전성을 입증함."
   },
   {
+    "title": "순응형 구체 격자 접촉: 구체 기반 로봇 표현을 위한 분포 접촉 모델링",
+    "original_title": "Compliant Sphere Lattice Contact: Distributed Contact Modeling for Sphere-Based Robot Representations",
+    "link": "https://arxiv.org/abs/2608.00263",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "구체 기반 로봇 모델링은 계산 효율성은 우수하나 점 접촉에 의존하여 접촉 패치나 압력 분포 등 물리적 정확도가 떨어진다는 한계가 있었음. 이를 해결하고자 Compliant Sphere Lattice Contact (CSLC)가 개발되었으며, 이는 로봇 인터페이스를 순응성 구체 격자로 모델링함. CSLC는 물체와 접촉할 때 격자의 변형을 통해 공간적으로 분포된 접촉 패치를 생성함으로써, 구체 기반 접촉 모델의 물리적 정확성을 획기적으로 높이고 파지 안정성을 개선함."
+  },
+  {
+    "title": "캐시가 아닌 게이트: 게이트 출처가 학습 없는 VLA 토큰 스키핑의 폐루프 신뢰성을 결정함",
+    "original_title": "The Gate, Not the Cache: Gate Provenance Bounds the Closed-Loop Reliability of Training-Free VLA Token Skipping",
+    "link": "https://arxiv.org/abs/2608.00391",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "VLA 모델의 토큰 스키핑 방식은 가속화되나, 게이트가 이전 단계의 포워드에서 재사용될 경우 건너뛴 토큰의 손상이 누적되어 폐루프 신뢰성이 저하되는 문제점 발견됨. 이를 해결하기 위해, 본 연구는 로봇의 액션 수행 시간을 활용하여 비판 경로 외부에 완전한 밀집 통과(dense pass)를 수행하는 actuation-slack refresh를 제안함. 이 기법은 속도 손실 없이 깨끗한 게이트와 신선한 KV base를 제공하여, 스키핑 기반 VLA 정책의 안정성을 크게 향상시키는 것으로 보고됨."
+  },
+  {
+    "title": "OC-VLA++: 시점 강건 로봇 매니퓰레이레이션을 위한 단안 기하학 기반 교차 뷰 일관성",
+    "original_title": "OC-VLA++: Monocular Geometry-Guided Cross-View Consistency for Viewpoint-Robust Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2608.01066",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 OC-VLA가 제한된 카메라 시점에 과적합되는 문제를 해결하기 위해, OC-VLA++는 기하학적 쌍(paired-view) 지도와 교차 뷰 액션-등변성(cross-view action-equivariance) 목적 함수를 도입함. 이 모델은 액션 예측이 시점 변화에 따라 일관되게 변환되는 원리를 학습함으로써, 제한적인 카메라 커버리지 환경에서도 높은 시점 일반화 성능을 확보함. 해당 결과는 로봇의 실세계 배포를 위해 교차 뷰 액션 등변성이 핵심적인 보완책임을 입증함."
+  },
+  {
+    "title": "좌측 불변 리만 계량 하의 부드러운 SE(3) 궤적 학습 프레임워크 제시",
+    "original_title": "Learning Smooth SE(3) Trajectories under Left-Invariant Riemannian Metrics",
+    "link": "https://arxiv.org/abs/2608.01562",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "SE(3) 리만 기하학적 공간에서의 최적 궤적 생성은 기존에 계산 비용이 높아 실시간 제어에 어려움이 존재했음. 이에 본 논문은 고차 다항식과 신경망(Neural Network)을 결합한 학습 기반 프레임워크를 제시하여, 좌측 불변 리만 계량 하에서 지오메트리 구조를 유지하는 부드러운 궤적을 근사함. 이 방법은 Euler-Lagrange 최적화 조건 등을 손실 함수로 활용하여 높은 일반화 능력을 보이며, 밀리초 단위의 추론 시간으로 실제 로봇 플래닝 및 쿼드콥터 제어 등 실시간 응용 가능함을 입증함."
+  },
+  {
+    "title": "선호 기반 최적화 및 동적 동작 원시 요소 결합을 통한 적응형 인간-로봇 협업 페인팅 기술 구현",
+    "original_title": "Adaptive Human-Robot Collaborative Painting Combining Preference-Based Optimization and Dynamic Motion Primitives",
+    "link": "https://arxiv.org/abs/2608.01981",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 선호 기반 최적화(PBO)와 동적 동작 원시 요소(DMPs)를 결합한 인간 중심의 협업 프레임워크를 제시함. 이 시스템은 로봇이 작업자의 손 움직임에 맞춰 실시간으로 행동을 조정하고 방향을 최적화하는 방식임. PBO는 사용자 피드백을 이용해 제어 파라미터를 반복적으로 정교화하여, 결과적으로 작업자 피로도를 낮추면서 작업 과정을 최적화함이 입증됨."
+  },
+  {
+    "title": "전신 원격 조종 기반 모바일 매니퓰레이션에 적용하는 파노라마 인식 VLA 학습",
+    "original_title": "Learning Panorama-Aware VLA for Mobile Manipulation with Whole-Body Teleoperation",
+    "link": "https://arxiv.org/abs/2608.02257",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "모바일 매니퓰레이션의 난이도 증대 및 제한된 시야각 문제를 해결하기 위해, 연구진은 전신 원격 조종 시스템과 파노라마 인지 기능을 탑재한 VLA 정책인 PanoVLA를 개발함. PanoVLA는 Mixtrue-of-Transformers 아키텍처에 전역 공간 컨텍스트 인코딩을 도입하여, 파노라마 관찰 정보를 언어 지시 및 로봇 상태와 효과적으로 통합하는 것이 특징임. 실제 환경의 모바일 매니퓰레이션 과제 네 가지에 대한 평가 결과, PanoVLA는 로컬 뷰 모델 대비 뛰어난 성능을 입증하며 평균 스테이지 완성률 91.3%, 종단 간 성공률 73.4%를 달성함."
+  },
+  {
+    "title": "사족 보행 로봇 기반 검색 및 구조 임무를 위한 상황 인식 프런티어 우선순위화 전략",
+    "original_title": "Situation Aware Frontier Prioritization for Quadruped Search and Rescue",
+    "link": "https://arxiv.org/abs/2608.02571",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "사족 보행 로봇은 복잡한 실내 환경에서의 Search and Rescue(SAR) 임무에 유망함. 본 논문은 기존 탐색 전략이 가진 한계를 극복하기 위해, Information Gain, Rescue Relevance, Terrain Penalty 등 다양한 요소를 통합한 상황 인식 프런티어 우선순위화 방식을 제안함. Gazebo 시뮬레이션 결과, 제안된 방법은 특히 복잡하고 모호한 환경에서 최고 수준의 임무 완수율과 생존자 회수율을 달성하는 것으로 분석됨."
+  },
+  {
+    "title": "Ego2Robot: 주관적 인간 데이터 기반의 확장형 로봇 데이터 합성 시스템",
+    "original_title": "Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data",
+    "link": "https://arxiv.org/abs/2608.02580",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "대규모의 범용 로봇 매니퓰레이션 정책 학습을 위해, 주관적(egocentric) 인간의 활동 비디오를 로봇 훈련 데이터로 변환하는 확장형 파이프라인 Ego2Robot이 개발됨. 이 시스템은 액션 재타겟팅과 시각적 합성을 통해 15가지 로봇 형태에 걸쳐 총 18,561시간에 달하는 대규모 로봇 학습 데이터셋을 구축함. 실험 결과, Ego2Robot으로 합성된 데이터와 실제 로봇 데이터를 결합하여 사전 훈련할 경우, 시각적 외관, 환경 레이아웃, 체현 형태 등 다양한 섭동 축(perturbation axes) 전반에 걸쳐 분포 외 일반화 성능 향상이 검증됨."
+  },
+  {
     "title": "Unitree, 휴머노이드 로봇 수요 증가에 힘입어 2026년 상반기 매출 35% 이상 증가 전망",
     "original_title": "Unitree sees 1H26 revenue rise over 35% on humanoid robot demand - digitimes",
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS3NWLVdtcFVSZmQtbGNXSjVjYnRJQTl3NGJhWGN5R3QwZFNUR2FWUmJvRHFsdFRTYmp1d1pSNFkyMFU4U2NHNmt1V3hkeGROWkZUejctanlWVko5aWI1X1lBRkRvN282Q29sRHJ6ZFlROHFMb1NrUks1bmJVX0xraU01cHlxYWlF?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.21011v1 Announce Type: new \nAbstract: We present R2HandoverSim, a simulation benchmark for robot-to-human (R2H) object handovers. Although R2H handover methods have advanced rapidly, the lack of standardized evaluation protocols impedes objective comparison. Our benchmark enables reproducible evaluation by systematically comparing four baselines on their predicted shared grasp poses. We conduct a user study with 30 participants, analyze baseline performance, and show that simulation results correlate with real-world evaluation outcomes. Crucially, five complementary metrics (planning feasibility, reachability, grasp stability, grasp affordance, and safety) better reflect user-perceived handover quality than overall success rate alone. Website and code: https://robot-future.github.io/r2handoversim/."
-  },
-  {
-    "title": "BayesFP: Posterior Estimation for Flow-Based Policies via Feynman-Kac Sampling",
-    "original_title": "BayesFP: Posterior Estimation for Flow-Based Policies via Feynman-Kac Sampling",
-    "link": "https://arxiv.org/abs/2606.21014",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21014v1 Announce Type: new \nAbstract: Robots must generate trajectories that remain faithful to learned expert behavior while satisfying safety constraints and task-specific objectives specified only at inference time. We formulate constrained trajectory generation for pretrained diffusion and flow-matching policies as Bayesian posterior sampling, with the learned demonstration distribution as a prior and an inference-time, cost-derived likelihood tilting it toward feasible, optimal trajectories. To sample from this posterior without any retraining of the base policy, we leverage the Feynman--Kac corrector framework, originally formulated for diffusion models, and extend it to deterministic flow-matching policies. The result is a unified, inference-time, retraining-free sampler for diffusion and flow policies. We validate the approach on pretrained Diffusion Policy, GR00T-N1.6, and $\\pi_{0.5}$ checkpoints across simulated and real-world manipulation tasks, including planning around non-convex obstacles introduced at inference time, and show improvements over the base $\\pi_{0.5}$ on zero-shot tasks."
-  },
-  {
-    "title": "ReFPO: Reflow Regularization for Flow Matching Policy Gradients",
-    "original_title": "ReFPO: Reflow Regularization for Flow Matching Policy Gradients",
-    "link": "https://arxiv.org/abs/2606.21086",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.21086v1 Announce Type: new \nAbstract: We present Reflow-regularized Flow Matching Policy Gradients (ReFPO), a simple online RL method that adds explicit Reflow regularization to FPO for efficient flow-based control. We uncover a key structural property: the gradient updates in Flow Matching Policy Gradients (FPO) can be interpreted as an implicit advantage-weighted Reflow process, providing a new geometric perspective on flow-based policy gradients. Building on this insight, ReFPO introduces an explicit geometric regularizer that can be implemented with a single line of code change without incurring additional computational overhead or auxiliary distillation stages. By synergizing advantage-guided updates with path rectification, our method reduces CFM proxy-ratio spikes, stabilizes PPO-style training, and enables high-fidelity one-step inference that often matches or exceeds multi-step performance. We experimentally demonstrate that ReFPO improves average performance and discretization robustness across GridWorld, MuJoCo Playground, and high-dimensional Humanoid Control tasks, providing a scalable and stable approach for generative policies in complex physical simulations."
-  },
-  {
-    "title": "MV-WAM: Manifold-Aware World Action Model with Value Augmentation",
-    "original_title": "MV-WAM: Manifold-Aware World Action Model with Value Augmentation",
-    "link": "https://arxiv.org/abs/2606.21088",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21088v1 Announce Type: new \nAbstract: Achieving robust and generalizable manipulation across diverse environments remains a fundamental challenge in embodied robotics. Recent world action models achieve strong in-domain performance, yet their gains do not extend proportionally to out-of-distribution scenarios. We attribute this to a structural mismatch between visual and action modalities, whose intrinsically heterogeneous manifolds cause joint optimization to disproportionately degrade action robustness under distribution shift. To address this, we propose MV-WAM, a novel end-to-end framework that jointly models visual prediction, action generation, and value estimation designed to effectively leverage video priors during both training and inference for enhanced action generalization. Key to this unification is a cross-modality causal mask that hierarchically grounds actions in predicted video frames and value function tokens in both modalities. To further narrow the generalization gap, MV-WAM adopts a manifold-aware optimization scheme that explicitly accounts for the structural heterogeneity across modalities. Finally, MV-WAM introduces a progress-value regulation mechanism that estimates task completion and detects misalignment between predicted frames and generated actions, enabling the policy to autonomously identify execution deviations and recover through value-guided rollback. On the RoboTwin simulation, MV-WAM achieves a 55.7% mean success rate on random scenarios without any randomized action supervision, outperforming the strongest baseline by 29.3%. MV-WAM achieves a 77.5% mean success rate across four real-world tasks of varying difficulty on a dual-arm robot. Our results demonstrate that manifold-aware cross-modal alignment is essential for robust policy generalization, offering a path toward deployable robotic manipulation."
-  },
-  {
-    "title": "Factor-Aware Mixture-of-Experts with Pretrained Encoder for Combinatorial Generalization",
-    "original_title": "Factor-Aware Mixture-of-Experts with Pretrained Encoder for Combinatorial Generalization",
-    "link": "https://arxiv.org/abs/2606.21100",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21100v1 Announce Type: new \nAbstract: The integration of pretrained encoders with diffusion policies has become a dominant paradigm for visual robotic manipulation. However, it still struggles to generalize across complex environments with varying factors such as lighting and surface textures. To address this, we propose FAME, a framework that integrates a factor-aware mixture-of-experts (MoE) with a pretrained encoder to enhance generalization to environmental variations. FAME follows a three-stage training process: (1) policy warmup, where a diffusion policy is trained on standard-environment data with a frozen encoder; (2) factor-specific adapter training, where lightweight adapters inserted between the frozen encoder and the temporarily frozen policy are trained on customized datasets, each targeting a distinct environmental variation; and (3) joint fine-tuning, where a central router and the warmed policy are trained on mixed data to handle multiple factors jointly. FAME is ``factor-aware'' because the central router softly weights frozen factor-specific adapters as a dense MoE, enabling combinatorial generalization across multiple factors. Evaluations on the Meta-World benchmark show that FAME outperforms diffusion policy baselines by 34%. We further validate FAME in a real-world pick-and-place task using a compact model trained on newly collected data, where FAME achieves a 35% improvement in generalization under real-world variations."
-  },
-  {
-    "title": "Pose-Agnostic Robotic Functional Grasping via Observation-Action Canonicalization",
-    "original_title": "Pose-Agnostic Robotic Functional Grasping via Observation-Action Canonicalization",
-    "link": "https://arxiv.org/abs/2606.21148",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21148v1 Announce Type: new \nAbstract: Functional robotic grasping requires a policy that generalizes across diverse object geometries and poses while maintaining task-specific contact precision. We study this challenge through mug-handle grasping, where thin handles, instance variation, and upright or inverted placements make both perception and control sensitive to object configuration. Grasp pose detection methods operate open-loop and are sensitive to estimation errors on thin handle structures. Learned visuomotor policies must implicitly learn to handle the coupled variation in visual appearance and action direction induced by different object placements, limiting generalization. We propose AnyMug, a canonicalized visuomotor reinforcement learning framework for functional grasping that trains a single closed-loop policy entirely in simulation and deploys it zero-shot on a real robot. AnyMug introduces observation-action canonicalization, which transforms both the depth observation and the predicted end-effector action into a shared object-centric frame. The policy therefore sees a consistent mug-centered view and emits actions in a canonical direction regardless of mug placement, allowing the same grasping behavior to be reused across configurations. A handle-aware reward further encourages precise approach, gripper alignment, and opposing-finger placement, while a pose curriculum and domain randomization improve training stability and sim-to-real transfer. In simulation, AnyMug achieves over 93% success rate on both unseen upright and inverted mugs and transfers zero-shot to a real Franka Panda, reaching 80% success rate on 5 held-out physical mugs across both pose categories."
-  },
-  {
-    "title": "Remember what you did?: Learning Behavioral Memories for Partially Observable Object Manipulation",
-    "original_title": "Remember what you did?: Learning Behavioral Memories for Partially Observable Object Manipulation",
-    "link": "https://arxiv.org/abs/2606.21188",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21188v1 Announce Type: new \nAbstract: Long horizon, contact-rich manipulation is inherently partially observable. This is as a single visual observation rarely captures a robot's full action context, including prior attempts, interactions, or progress. Consequently, standard visuomotor policies or vision-language-action models are prone to struggle in such tasks due to a lack of memory. To address this, we introduce Compressed Action Memory Policy (CAMP) based on the insight that a robot's own action history serves as a highly informative, self-supervised signal, enabling the policy to learn a robust, compact history representation. In our approach, we train a memory module to maintain a compressed representation of past actions, forcing it to encode a latent behavioral memory of all the robot's past interactions that can then be used to better contextualize future actions. This allows our approach to implicitly track generalized task progress and learn from failed attempts without any additional supervision, or external oversight. We evaluate CAMP across four real-robot setups and two novel simulation benchmarks: Memory-T-Bench and Memory-Manip-Bench. By demonstrating substantial gains over state-of-the-art baselines, CAMP is, to our knowledge, the first policy to demonstrate substantial success on contact-rich partially observable manipulation tasks purely through learned memory."
-  },
-  {
-    "title": "A Human-Inspired Thumb-Index Robotic Hand with Strain Gauges Embedded in Soft Joints",
-    "original_title": "A Human-Inspired Thumb-Index Robotic Hand with Strain Gauges Embedded in Soft Joints",
-    "link": "https://arxiv.org/abs/2606.21245",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21245v1 Announce Type: new \nAbstract: Human hand grasp adaptation depends mainly on the synergy between physical structure and biological feedback. Inspired by this biomechanical principle, the Safe Thumb-Index Robotic (STIR) Hand was developed as a minimal, lightweight, and low-cost two-digit prototype featuring an asymmetric thumb-index configuration. By pairing an underactuated, tendon-driven mechanical design with flexible strain gauges embedded into silicone-encapsulated soft joints, the system achieves passive grasp adaptation while establishing both internal proprioception and external perception. Unsupervised analysis was carried out on a dataset of the STIR hand grasping 20 different objects, along with an object classification task and an ablation study to highlight the contribution of the soft joint sensors. The object classification task discriminated object size, shape, and material stiffness with a high classification accuracy. In contrast to traditional industrial grippers and robotic hands, the STIR Hand demonstrates that sensorized compliant joints significantly improve overall sensitivity and ensure safe grasping, while remaining independent of additional fingertip tactile elements or external vision systems. Finally, a comparison to similar devices grasping identical objects validates the utility of the STIR Hand."
-  },
-  {
-    "title": "RogueRover: Autonomous Rogue Device Localization for Incident Response",
-    "original_title": "RogueRover: Autonomous Rogue Device Localization for Incident Response",
-    "link": "https://arxiv.org/abs/2606.21264",
-    "date": "2026-06-23 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.21264v1 Announce Type: new \nAbstract: Physically localizing unauthorized wireless devices remains a critical bottleneck in cyber-physical security operations, where rogue access points can provide entry points for lateral movement and persistent compromise. While such devices can often be detected through network-side mechanisms, determining their physical location typically requires dense sensing infrastructure, site-specific RF fingerprinting, or manual inspection, limiting timely incident response. We investigate whether a single commodity robot can autonomously detect and localize rogue wireless devices under zero-configuration constraints, without RF fingerprinting, pre-installed sensors, or site calibration. We present RogueRover, an end-to-end system in which a quadruped robot autonomously patrols, collects spatially labeled RSSI measurements via a standard 802.11 interface, and estimates device locations offline. We evaluate the system across 11 patrol runs in a real indoor environment, with 6 rogue devices deployed under heterogeneous propagation conditions. Across 62 AP-patrol sessions, RogueRover achieves a median single-patrol localization error of 1.62 m without prior RF knowledge. Under multi-run aggregation, five of six devices are localized within 1 m. A blind trial validates the full pipeline, correctly identifying rogue devices among 73 observed BSSIDs and localizing them with errors of 0.34 m and 1.84 m. Across environments, simple weighted-centroid estimators perform comparably to, or better than, parametric path-loss models, indicating that measurement coverage from autonomous patrols is the primary determinant of localization accuracy under zero-prior constraints. Our results demonstrate that infrastructure-free, autonomous localization is feasible in practice, enabling rapid physical incident response in cyber-physical environments without additional sensing infrastructure."
   }
 ]
