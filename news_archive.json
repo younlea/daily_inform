@@ -846,6 +846,15 @@
     "summary": "기존의 목표 조건부 강화 학습 방식이 수집된 경험에 의존하여 최적화 성능에 한계를 보임에 따라, 다차원 적응형 커리큘럼(AC) 계획과 동적 대비(DC) 제어를 통합한 ACDC 패러다임이 제안됨. AC는 에이전트의 성공률 및 훈련 진행도에 따라 탐색과 활용의 균형을 조절하는 커리큘럼 스케줄링을 수행하며, DC는 이를 정규화 제약을 통해 경험 선택에 반영하여 학습을 가이드함. 실험 결과, ACDC는 까다로운 로봇 조작 작업에서 기존 SOTA 모델 대비 샘플 효율성 및 최종 과제 성공률에서 지속적인 우위를 입증함."
   },
   {
+    "title": "Mamba Policy: 하이브리드 선택 상태 모델 기반의 효율적인 3D Diffusion Policy 구현 접근",
+    "original_title": "Mamba Policy: Towards Efficient 3D Diffusion Policy with Hybrid Selective State Models",
+    "link": "https://arxiv.org/abs/2409.07163",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "3D 조작(3D manipulation) 분야에서 확산 모델(Diffusion models)은 높은 정확도를 보이나, 대규모 UNet 구조로 인한 자원 제약이 과제였음. 이에 본 연구는 효율적인 시퀀스 모델인 Mamba를 활용한 Mamba Policy를 제안하며, 이를 통해 기존 정책 네트워크 대비 파라미터를 80% 이상 절감함. 핵심인 XMamba Block을 도입하여 Mamba와 Attention 기법을 결합한 깊은 특징 추출이 가능하며, Adroit, Dexart, MetaWorld 등 주요 데이터셋에서 뛰어난 성능과 높은 견고성을 입증함."
+  },
+  {
     "title": "Unitree, 휴머노이드 로봇 수요 증가에 힘입어 2026년 상반기 매출 35% 이상 증가 전망",
     "original_title": "Unitree sees 1H26 revenue rise over 35% on humanoid robot demand - digitimes",
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS3NWLVdtcFVSZmQtbGNXSjVjYnRJQTl3NGJhWGN5R3QwZFNUR2FWUmJvRHFsdFRTYmp1d1pSNFkyMFU4U2NHNmt1V3hkeGROWkZUejctanlWVko5aWI1X1lBRkRvN282Q29sRHJ6ZFlROHFMb1NrUks1bmJVX0xraU01cHlxYWlF?oc=5",
@@ -1294,6 +1303,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "엔진AI 창업자는 중국이 글로벌 휴머노이드 로보틱스 시장을 이끌 주도권을 가질 잠재력을 보유하고 있다고 분석함. 해당 발언은 중국이 핵심 기술력과 인프라를 바탕으로 휴머노이드 로보틱스 분야의 글로벌 시장 선점 가능성이 높다는 점을 시사함."
+  },
+  {
+    "title": "EngineAI 설립자, 중국의 글로벌 휴머노이드 로보틱스 시장 선도 잠재력 분석함",
+    "original_title": "China has potential to lead global humanoid robotics: Founder of EngineAI - nwitimes.com",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPemlXSkcwRE5uN1dTVUVDRVA2Ty1sczFvYlB3bWlBdnYzZVhCRld0ZVYwTWpkV1hzZHZoQzBNZm5EOGFVRkxjZmt5S3ZVTGpQaE5ZaURHRHZ4eEs5aW91MEJyY1Y0MGd2ay13b0dLLWxQcVlzQ1JRRy1pTERVeDFlZVBLaHJJZEo0NzI2WWNUb2szNUduOXZURVMxMjZvN1llaTlz?oc=5",
+    "date": "2026-08-02 07:38",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "EngineAI의 설립자는 중국이 글로벌 휴머노이드 로보틱스 분야에서 강력한 선도 잠재력을 갖추고 있다고 평가함. 이는 중국의 제조 역량과 첨단 기술 개발 능력이 해당 산업의 주도권을 확보할 수 있음을 시사함."
   },
   {
     "title": "엇갈리는 시선: 중국의 반려 로봇, 가정 내 시장 안착 가능성 탐구",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.24628v1 Announce Type: new \nAbstract: Deploying robots in unstructured real-world environments needs accurate, interactive models of the objects. Constructing these models at scale remains a critical bottleneck for robotic system integration. We present ArtiTwinSplat, a framework that automatically constructs articulated, photo-realistic digital twins of objects directly from RGB-D videos, requiring no CAD models, simulation assets, or manual annotations. Our method is built on 3D Gaussian Splatting that preserve geometric fidelity and photometric realism, coupled with an unsupervised articulation discovery pipeline that recovers part structure and joint kinematics from observed motion alone. With tracking and optimization stages our method provides stable, queryable digital twins that support real-time rendering, viewpoint control, and interactive manipulation. Unlike prior methods confined to simulation, ArtiTwinSplat operates directly on real-world observations and produces twins that are immediately usable by downstream robot planning and learning systems. This method offers a practical, scalable pathway toward digital twin construction, lowering the integration barrier for articulated object manipulation in embodied AI and human-robot collaboration contexts."
-  },
-  {
-    "title": "Optimization-based Safe Trajectory Planning for Autonomous Ground Vehicle in Multi-Floor Scenarios",
-    "original_title": "Optimization-based Safe Trajectory Planning for Autonomous Ground Vehicle in Multi-Floor Scenarios",
-    "link": "https://arxiv.org/abs/2606.24631",
-    "date": "2026-06-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.24631v1 Announce Type: new \nAbstract: The development of trajectory planning strategies for autonomous ground vehicles (AGVs) represents a prevailing research interest within the domain of intelligent transportation systems. This paper introduces a trajectory planning framework tailored for multi-floor scenarios. The framework consists of two main modules: the task planning module and the trajectory planning module. The task planning module involves a strategic selection phase, where a task planning strategy based on generalized voronoi diagrams (GVD) and multi-objective algorithms is proposed to select the floor exits for each floor. The trajectory planning module utilizes optimization-based methods to generate high-quality trajectories, and a warm-started hierarchical planning framework is designed to ensure rapid convergence. Additionally, for handling complex obstacle constraints, a correlation constraint calculation method is designed for reducing obstacle constraints in trajectory planning. Finally, the feasibility and effectiveness of the proposed framework are verified through simulations."
-  },
-  {
-    "title": "Beyond Monotonic Progress: Retry-Supervised Value Learning for Robot Imitation",
-    "original_title": "Beyond Monotonic Progress: Retry-Supervised Value Learning for Robot Imitation",
-    "link": "https://arxiv.org/abs/2606.24633",
-    "date": "2026-06-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.24633v1 Announce Type: new \nAbstract: Human demonstrations for robot imitation learning often contain mistakes and corrective behaviors, such as imprecise grasps, object misalignment, unstable contact, and repeated attempts. While these segments are commonly treated as noisy or suboptimal data, they provide valuable evidence about when execution deviates from a desirable path and how task feasibility can be restored. However, existing reward and value models often rely on monotonic progress assumptions, which capture coarse task advancement but may overlook local execution errors and corrective behaviors in imperfect demonstrations. In this work, we propose ReTVL (ReTry-Supervised Value Learning), a framework for learning mistake-sensitive value functions from mixed-quality robot demonstrations by leveraging retry events as sparse supervision. ReTVL captures the local degradation-and-recovery structure around mistakes by combining global progress calibration with local pairwise preference learning induced by sparsely annotated retry keypoints. The learned value model is then used to reweight demonstration chunks for downstream behavior cloning, reducing the influence of harmful execution errors while preserving useful corrective behaviors. Experiments on real-robot manipulation tasks show that ReTVL produces more fine-grained value estimates than progress-based baselines and improves imitation learning from imperfect demonstrations."
   }
 ]
