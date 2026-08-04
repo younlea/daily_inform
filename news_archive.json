@@ -855,6 +855,15 @@
     "summary": "3D 조작(3D manipulation) 분야에서 확산 모델(Diffusion models)은 높은 정확도를 보이나, 대규모 UNet 구조로 인한 자원 제약이 과제였음. 이에 본 연구는 효율적인 시퀀스 모델인 Mamba를 활용한 Mamba Policy를 제안하며, 이를 통해 기존 정책 네트워크 대비 파라미터를 80% 이상 절감함. 핵심인 XMamba Block을 도입하여 Mamba와 Attention 기법을 결합한 깊은 특징 추출이 가능하며, Adroit, Dexart, MetaWorld 등 주요 데이터셋에서 뛰어난 성능과 높은 견고성을 입증함."
   },
   {
+    "title": "실시간 월드 액션 모델 구현을 위한 비동기 배포 기반의 부드러운 실행 실증 연구",
+    "original_title": "World Action Models in Real Time: An Empirical Study of Smooth Execution via Asynchronous Deployment",
+    "link": "https://arxiv.org/abs/2608.01880",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "World Action Models(WAMs)의 반복적 denoising 과정에서 발생하는 높은 추론 지연(latency)으로 인해 로봇 실행 중 끊김이나 비연속성이 발생하여 실시간 제어에 어려움이 있었음. 이에 연구진은 모델 추론과 액션 실행을 중첩시키는 비동기 배포(asynchronous deployment) 전략을 10 Hz 양손 로봇 환경에서 실증적으로 비교함. 그 결과, Prefix-conditioned generation 방식이 일관된 액션 연속성을 학습하여 작업 성능, 실행 속도, 궤적 부드러움 간의 가장 균형 잡힌 성능을 달성하는 것으로 분석됨."
+  },
+  {
     "title": "Unitree, 휴머노이드 로봇 수요 증가에 힘입어 2026년 상반기 매출 35% 이상 증가 전망",
     "original_title": "Unitree sees 1H26 revenue rise over 35% on humanoid robot demand - digitimes",
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS3NWLVdtcFVSZmQtbGNXSjVjYnRJQTl3NGJhWGN5R3QwZFNUR2FWUmJvRHFsdFRTYmp1d1pSNFkyMFU4U2NHNmt1V3hkeGROWkZUejctanlWVko5aWI1X1lBRkRvN282Q29sRHJ6ZFlROHFMb1NrUks1bmJVX0xraU01cHlxYWlF?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.24552v1 Announce Type: new \nAbstract: Simulator-in-the-loop optimization offers a promising inference-time mechanism for robot manipulation. It uses a physical simulator as a backend rollout engine to evaluate candidate trajectories in parallel and refine nominal actions online, a paradigm proven effective in rigid-body manipulation where state and contact are relatively tractable. We bring this paradigm to real-world cloth manipulation from a single RGB input through three pillars. (i) We design a scalable synthetic-data generation and inference-time rollout pipeline built on FLASH, a deformable-object simulator that provides a practical balance among physical fidelity, numerical stability, and rollout efficiency. (ii) We develop a real-to-sim module, trained purely on synthetic data, that maps a single RGB observation to simulation-compatible cloth state by fusing pretrained visual features with learnable canonical tokens. (iii) We perform online planning by coupling a sparse-mesh rollout backend with prior-guided MPPI, anchored at an offline-distilled policy trajectory, preserving manipulation-relevant deformation and contact while enabling sufficient parallel rollout batches. Real-robot experiments show higher success rates and stronger robustness than baseline methods."
-  },
-  {
-    "title": "ArtiTwinSplat: Interactable Digital Twin Reconstruction via Gaussian Splatting from RGB-D videos",
-    "original_title": "ArtiTwinSplat: Interactable Digital Twin Reconstruction via Gaussian Splatting from RGB-D videos",
-    "link": "https://arxiv.org/abs/2606.24628",
-    "date": "2026-06-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.24628v1 Announce Type: new \nAbstract: Deploying robots in unstructured real-world environments needs accurate, interactive models of the objects. Constructing these models at scale remains a critical bottleneck for robotic system integration. We present ArtiTwinSplat, a framework that automatically constructs articulated, photo-realistic digital twins of objects directly from RGB-D videos, requiring no CAD models, simulation assets, or manual annotations. Our method is built on 3D Gaussian Splatting that preserve geometric fidelity and photometric realism, coupled with an unsupervised articulation discovery pipeline that recovers part structure and joint kinematics from observed motion alone. With tracking and optimization stages our method provides stable, queryable digital twins that support real-time rendering, viewpoint control, and interactive manipulation. Unlike prior methods confined to simulation, ArtiTwinSplat operates directly on real-world observations and produces twins that are immediately usable by downstream robot planning and learning systems. This method offers a practical, scalable pathway toward digital twin construction, lowering the integration barrier for articulated object manipulation in embodied AI and human-robot collaboration contexts."
   }
 ]
