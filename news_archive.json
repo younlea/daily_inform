@@ -423,6 +423,15 @@
     "summary": "기존 LDM은 일반적인 VAE에 의존하여 로봇 조작(Embodied Manipulation)에 필요한 압축성과 제어 가능성이 부족한 문제점을 노출함. 이를 해결하기 위해, 본 연구진은 이중 인코더와 비대칭 시공간 압축 모듈을 갖춘 EmbodiedVAE라는 새로운 비디오 VAE를 제시함. 해당 모델은 로봇 팔의 움직임을 배경으로부터 자동으로 분리(Disentangle)하고, 최적 수송 기반 일관성 모듈을 추가하여 높은 재구성 품질과 정교한 액션 제어 능력을 입증함."
   },
   {
+    "title": "드리프팅 기반의 빠른 월드 모델링: DriftWorld",
+    "original_title": "DriftWorld: Fast World Modeling through Drifting",
+    "link": "https://arxiv.org/abs/2607.15065",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇의 예측 계획을 위한 월드 모델은 속도 제약이 문제였으며, 기존 확산 기반 모델은 다단계 롤아웃(rollout) 과정에서 병목 현상을 겪음. 이에 연구진은 액션 기반 드리프팅 모델인 DriftWorld를 개발하여, 반복적인 디노이징 과정 없이 단일 포워드 패스로 30fps 이상의 초고속 미래 프레임 생성이 가능하게 함. 이로써 DriftWorld는 기존 확산 모델 대비 월등히 빠른 속도와 높은 정확도를 동시에 확보하며, 로봇 매니퓰레이션 벤치마크 등에서 최신(SOTA) 성능을 입증함."
+  },
+  {
     "title": "Unitree Robotics, 스타 마켓 IPO 가격 책정 시작, 가치 59억 돌파 전망 (Global Times)",
     "original_title": "Unitree Robotics kicks off STAR market IPO pricing, expected to exceed 5.9 billion in value - Global Times",
     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1wcW02ZDNxUWoxZS1TMkprMTRiRHdlUTQtbXFrTWdhVlJ2cWhwTmxmVTNKbFdNVVVsWUNTb29HNjJPUWUwM2FKZ3N6eEhFWldQQ2pXT0lxSnZrY3NVZk1GRXlR?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.25877v1 Announce Type: new \nAbstract: Vision-based tactile sensors (VBTSs) enable robots to infer contact geometry and force-related cues by imaging deformation through an internal camera, yet generalisation across sensor designs remains poorly understood. We present TacVerse, a multi-sensor dataset and benchmark for cross-sensor vision-based tactile perception. The dataset contains 106,800 tactile images from seven VBTSs and supports three downstream tasks: shape classification, grating classification, and force regression. Experiments are conducted under three settings: within-sensor training, zero-shot cross-sensor transfer, and few-shot adaptation. Strong within-sensor performance across all tasks indicates that the collected tactile observations are informative for the target objectives. Direct cross-sensor transfer, however, leads to substantial degradation. Shape classification is comparatively robust, whereas grating classification and force regression are more sensitive to sensor shift. Few-shot adaptation for force regression consistently improves performance on unseen target sensors but does not fully close the gap to within-sensor upper bounds. A representation study further shows that MAE (Masked Autoencoder) pretraining provides the most consistent gains across tasks and sensors. TacVerse provides a controlled testbed for studying sensor shift, data-efficient adaptation, and self-supervised learning in tactile perception."
-  },
-  {
-    "title": "A 3D-Printable Dataset for Fair Testing and Comparisons of Tactile Sensors",
-    "original_title": "A 3D-Printable Dataset for Fair Testing and Comparisons of Tactile Sensors",
-    "link": "https://arxiv.org/abs/2606.25886",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.25886v1 Announce Type: new \nAbstract: Existing texture datasets for tactile sensing primarily consist of sensor readings from a specific sensor interacting with available surfaces/objects rather than describing the textures themselves, limiting fair comparison between tactile sensors and hindering reproducible research. In this work, we introduce a 3D-printable dataset of mathematically defined textures designed to be fabricated reliably across different printers and filament types. The dataset consists of six parametrically generated surface patterns derived from combinations of sine-wave and Fourier-based functions, giving controlled variation in spatial frequency, amplitude, and directional structure. We evaluate the reproducibility of these textures across three popular 3D printers and multiple filament types by measuring variance in images captured using an optical TacTip sensor under controlled contact conditions. Our results show that print quality, particularly peak sharpness and stringing, affects tactile variance, with higher-end printers producing significantly more consistent signatures. Classification experiments using neural networks and PCA-based models further demonstrate that high-quality prints support strong within-printer generalisation, while cross-printer generalisation remains challenging due to geometric inconsistencies. This work establishes the first openly available, physically reproducible 3D-printed texture benchmark, providing a foundation for fair comparison of tactile sensors."
   }
 ]
