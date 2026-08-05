@@ -882,6 +882,15 @@
     "summary": "World Action Models(WAMs)의 반복적 denoising 과정에서 발생하는 높은 추론 지연(latency)으로 인해 로봇 실행 중 끊김이나 비연속성이 발생하여 실시간 제어에 어려움이 있었음. 이에 연구진은 모델 추론과 액션 실행을 중첩시키는 비동기 배포(asynchronous deployment) 전략을 10 Hz 양손 로봇 환경에서 실증적으로 비교함. 그 결과, Prefix-conditioned generation 방식이 일관된 액션 연속성을 학습하여 작업 성능, 실행 속도, 궤적 부드러움 간의 가장 균형 잡힌 성능을 달성하는 것으로 분석됨."
   },
   {
+    "title": "WAM 기반 선택적 정책 개입을 위한 협력 계약 프레임워크, CoWAM",
+    "original_title": "CoWAM: Coordination Contracts for Selective Policy Intervention with WAMs",
+    "link": "https://arxiv.org/abs/2608.02578",
+    "date": "2026-08-04 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "World Action Models(WAMs)의 정책 개입 한계를 극복하기 위해, CoWAM은 동기화와 역할 호환성을 계약 형태로 표현하는 선택적 개입 계층을 제안함. 이 프레임워크는 안전성을 최우선으로 하여 명목 행동을 유지하되, 모든 의무를 충족하는 명확하고 낮은 위험도의 개선이 있을 때만 개입하는 방식임. 시뮬레이션된 양손 태스크에서 CoWAM은 선택적 협력 유효성 및 폐루프 성공률을 크게 향상시키며, 안전한 정책 개입의 효율적인 인터페이스 역할을 성공적으로 입증함."
+  },
+  {
     "title": "Unitree, 휴머노이드 로봇 수요 증가에 힘입어 2026년 상반기 매출 35% 이상 증가 전망",
     "original_title": "Unitree sees 1H26 revenue rise over 35% on humanoid robot demand - digitimes",
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS3NWLVdtcFVSZmQtbGNXSjVjYnRJQTl3NGJhWGN5R3QwZFNUR2FWUmJvRHFsdFRTYmp1d1pSNFkyMFU4U2NHNmt1V3hkeGROWkZUejctanlWVko5aWI1X1lBRkRvN282Q29sRHJ6ZFlROHFMb1NrUks1bmJVX0xraU01cHlxYWlF?oc=5",
@@ -2644,6 +2653,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "미국이 안보 문제에 대한 우려를 이유로 중국산 첨단 기술 제품 수입을 금지함. 주요 금지 품목으로는 휴머노이드 로봇, 로봇 개, 전력 인버터 등이 포함됨. 해당 조치는 미국의 기술 안보를 강화하기 위한 강력한 정책적 조치임."
+  },
+  {
+    "title": "중국 로봇 군대가 영국 리테일 산업을 변화시키는 현상 분석 - BBC",
+    "original_title": "The Chinese robot army transforming the UK's retail industry - BBC",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9vYlBJZF9xOGpsaDBRRkVnRGpsN2FDNXdfSXVGM0pfYlhOM0tYQ1JjbjdoczktRHBrbVhNbGM5TThUeFI4YTkzcWl6WFkyOEJOMUpabGZCZzA0Zw?oc=5",
+    "date": "2026-07-29 22:08",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "BBC 보도에 따르면, 중국발 로봇 기술 도입이 영국 리테일 산업 전반에 걸쳐 급격한 변화를 초래하고 있음. 자동화된 로봇 시스템들이 매장 관리, 물류, 고객 서비스 등 소매업의 핵심 영역에 깊숙이 침투하며 산업 구조의 대변혁을 가속화하고 있음."
   },
   {
     "title": "중국산 휴머노이드 로봇 미국 금지화, Atlas의 시장 선두 주자 가능성 분석",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.24445v1 Announce Type: new \nAbstract: Effective robot-to-human communication can increase transparency and trust, reduce uncertainty, and contribute to safer collaboration in shared workspaces. Designing and validating an effective robot communication strategy is challenging due to the varying and often limited communication modalities across robots, differences in how diverse recipients interpret messages, and the underexplored virtual-to-real gap in studies of communication legibility. We present a systematic, large-scale comparative validation of existing communication strategies for a mobile non-humanoid robot across message types and settings (online and in-person). Based on the prescribed message types in the existing standards for industrial robots, we realize and compare a low-expressive, unimodal LED-based strategy with a highly expressive, multimodal one that leverages robotic gaze, gestures, and voice. For each strategy, we analyze the communication of a turning intention, an attention request, error status, whether the robot is stuck, and whether it is functioning normally. We evaluate these strategies in replicated online and in-person experiments. We find strong evidence that highly expressive multimodal communication is perceived as more legible and intuitive than unimodal LED-based communication. Comparing the online and real-world study findings, we observe a notable decrease in overall legibility, particularly for signaling with LEDs. Similarly, confidence in message interpretation decreases during the real-world evaluation."
-  },
-  {
-    "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
-    "original_title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
-    "link": "https://arxiv.org/abs/2606.24450",
-    "date": "2026-06-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.24450v1 Announce Type: new \nAbstract: Perceiving physical contact is fundamental to dexterous manipulation. While robots often rely on dedicated hardware tactile sensors, humans exhibit a remarkable ability to infer contact by integrating visual information with an innate sense of their body's pose and movement. Inspired by this embodied perceptual skill, we investigate whether a robot can learn to infer contact from vision, an approach that also offers a scalable alternative to tactile hardware specifically for binary contact estimation, which faces practical challenges in cost, fragility, and integration. We present NoContactNoWorries, a transformer-based multimodal framework that fuses RGB-D vision with the robot's proprioception to infer binary contact states as a pseudo-tactile signal for hand-object interactions. We validate by training a single contact prediction model on multiple objects and show that the inferred contact signal supports downstream reinforcement learning agents for in-hand object reorientation, generalizing to novel objects. Experiments in both simulation and on a real-world robot validate our approach, highlighting the feasibility of inferring contact from vision and proprioception. Project Page: https://soham2560.github.io/no-contact-no-worries/"
-  },
-  {
-    "title": "FT-WBC: Learning Fault-Tolerant Whole-Body Control for Legged Loco-Manipulation",
-    "original_title": "FT-WBC: Learning Fault-Tolerant Whole-Body Control for Legged Loco-Manipulation",
-    "link": "https://arxiv.org/abs/2606.24466",
-    "date": "2026-06-24 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.24466v1 Announce Type: new \nAbstract: Legged manipulators combine the mobility of legged platforms with the manipulation capability of robotic arms. However, arm-induced Center-of-Mass shifts and dynamic disturbances make the system more prone to instability under actuator failures, potentially leading to falls, task failures, or safety risks. Existing fault-tolerant control methods mainly focus on locomotion alone, leaving the coupled problem of whole-body stability and arm reachability in fault-tolerant loco-manipulation largely unaddressed. To bridge this gap, we propose FT-WBC, a fault-tolerant loco-manipulation framework for robust whole-body control of legged manipulators under actuator failures. FT-WBC adopts a decoupled upper- and lower-body policy architecture and introduces two key modules: a Fault Estimator (FE) and a Posture Adaptation Module (PAM). The FE predicts faulty joints from lower-body proprioceptive histories, while the PAM uses this fault information to adapt the base posture plan generated by the arm policy, converting potentially unstable posture requests into safe and executable base posture commands. Through this fault-aware posture adaptation mechanism, FT-WBC synthesizes compensatory gaits under actuator failures and preserves as much arm workspace as possible while maintaining whole-body stability. Simulation and real-world experiments show that FT-WBC significantly improves survival rate and workspace under weakening or locked failures, and transfers zero-shot to a real legged manipulator in the real world."
   }
 ]
