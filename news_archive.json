@@ -1,5 +1,14 @@
 [
   {
+    "title": "산업 자동화 확장의 핵심은 '인지(Perception)' 기술에 있음",
+    "original_title": "Why perception is the key to scaling industrial autonomy",
+    "link": "https://www.therobotreport.com/why-perception-is-the-key-to-scaling-industrial-autonomy/",
+    "date": "2026-08-05 15:56",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "자율성이 단순히 로봇 모터 기술에 그치지 않고, 대규모 환경에서 기계 인식(Machine awareness), 동적 의사결정, 다중 차량 협업, 그리고 공간적 정밀도를 포괄하는 개념으로 확장되었음. 이에 따라 산업 현장 전반에서 고도화된 '인지' 기술 확보가 자율화 규모를 키우는 핵심 동력으로 작용함."
+  },
+  {
     "title": "대형 모델이 소형 모델을 지능적으로 학습시키는 원리 분석",
     "original_title": "How Big Models Teach Small Models to Be Smart",
     "link": "https://blog.bytebytego.com/p/how-big-models-teach-small-models",
@@ -340,6 +349,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로봇 매니퓰레이션 작업의 다양한 기억 요구사항을 해결하기 위해, 단순히 관측 이력을 확장하는 방식의 한계를 극복한 Gated Memory Policy (GMP)가 제안됨. GMP는 필요한 시점에 기억을 선택적으로 활성화하는 학습된 메모리 게이트와 잠재 기억 표현을 구축하는 교차 어텐션 모듈을 핵심으로 채택함. 또한 역사적 행동에 Diffusion 노이즈를 주입하여 강건성을 높인 GMP는 비-마르코프 벤치마크 MemMimic에서 장기 이력 기반 모델 대비 평균 30.1%의 성공률 향상을 달성한 것으로 보고됨."
+  },
+  {
+    "title": "저비용 하이브리드 레저버 컴퓨팅 모델을 이용한 단독 수어 영상 인식",
+    "original_title": "A Low-Cost Hybrid Reservoir Computing Model for Isolated Sign Language Video Recognition",
+    "link": "https://arxiv.org/abs/2608.03444",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "수어 인식(SLR)의 높은 연산 비용 문제를 해결하기 위해 경량화된 하이브리드 레저버 컴퓨팅(HRC) 기반의 새로운 접근법을 제안함. 이 방법은 MediaPipe가 추출한 신체 및 손동작 키포인트를 HRC 구조로 처리하여 고차원의 동적 표현을 생성하고, 리그회귀 모델로 클래스 라벨을 매핑함. WLASL100 데이터셋에서 경쟁력 있는 성능을 달성함과 동시에, DL 기반 방식 대비 현저히 낮은 연산 비용과 빠른 학습 시간을 확보하여 엣지 디바이스 배포 가능성을 입증함."
   },
   {
     "title": "Unitree Robotics, 스타 마켓 IPO 가격 책정 시작, 가치 59억 돌파 전망 (Global Times)",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.26095v1 Announce Type: new \nAbstract: Most Vision-Language-Action (VLA) models build on a Vision-Language Model (VLM) backbone by attaching an action module and optimizing the full policy jointly. This design inherits strong visual and linguistic priors from the VLM, but leaves the action module to learn physical motion almost from scratch. As a result, the policy lacks an explicit motion prior, forcing early optimization to simultaneously discover temporal action dynamics and cross-modal alignment, a challenge further amplified in cross-embodiment settings. In this work, we propose to pretrain the action module with motion priors before cross-modal VLA alignment. Specifically, we introduce a two-stage training framework that equips the action module with cross-embodiment temporal motion structure before VLA training begins. In Stage~1, a lightweight flow-matching-based encoder-decoder action module efficiently learns temporal motion structure solely from unconditioned action trajectories, without processing visual or language tokens. In Stage~2, this learned prior is transferred to VLA training through decoder reuse and early-stage latent distillation, aligning visual-language features with the action embedding space while still allowing end-to-end policy refinement. In addition, the trained encoder serves as a compact history compressor, summarizing state-action histories into a single temporal context token for history-aware modeling at negligible cost. Extensive experiments across 13 diverse cross-embodiment tasks on both simulated and real-world platforms validate the effectiveness of our approach. Compared with VLA training without action priors, our model achieves faster convergence, higher success rates, and substantially stronger performance on data-scarce real-world tasks. Moreover, scaling up the action data in Stage~1 yields a more generalizable action prior that directly improves downstream VLA performance."
-  },
-  {
-    "title": "MANGO: Automated Multi-Agent Test Oracle Generation for Vision-Language-Action Models",
-    "original_title": "MANGO: Automated Multi-Agent Test Oracle Generation for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2606.24815",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.24815v1 Announce Type: cross \nAbstract: Vision-Language-Action (VLA) models are emerging robotic control systems that integrate perception, language understanding, and action generation in a unified architecture. Existing testing approaches for VLA-enabled robots rely on manually constructed symbolic test oracles that determine task success from final environment states. These oracles are costly to construct, require domain expertise, and are often tightly coupled to specific tasks and environments, limiting scalability and reuse. Furthermore, they provide only end-state assessments of task outcomes, offering limited insight into intermediate behavior and fault localization. To address these limitations, we introduce MANGO, a multi-agent framework that automatically generates fine-grained oracles from natural-language descriptions of robotic tasks. MANGO first generates a reusable library of atomic tasks, then generates simulator-grounded oracle definitions for each atomic task, and finally produces executable fine-grained oracles by decomposing complex instructions into ordered sequences of atomic actions and corresponding oracles. The framework uses collaborative Generator, Assessor, and Judge agents that iteratively refine generated artifacts through structured feedback. We evaluate MANGO on the LIBERO_10 and RoboCasa Humanoid Tabletop benchmarks. Results show that MANGO generates executable, fine-grained oracles that detect a similar number of failures as symbolic oracles while accurately localizing them and providing richer diagnostic information. Through ablation studies, we further analyzed component contributions and the effect of initial task set, while preserving oracle quality. Overall, the results show the feasibility and effectiveness of test oracle generation for VLA-enabled robots testing."
-  },
-  {
-    "title": "Swarm-Inspired Generation of Collective Behaviors in Graph Dynamical Systems",
-    "original_title": "Swarm-Inspired Generation of Collective Behaviors in Graph Dynamical Systems",
-    "link": "https://arxiv.org/abs/2606.24958",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.24958v1 Announce Type: cross \nAbstract: Collective behavior arises when locally interacting units produce coordinated global organization, from synchronization in dynamical systems to task-relevant information flow on graphs. The central challenge is not only to explain how collective behavior emerges, but to design local interaction rules that can produce desired global organization and generalize across graphs, dynamics and tasks.To address this challenge, we introduce the Swarm-Inspired Emergent Synchronizer (SIES), a graph-dynamical framework that learns generalizable local-interaction laws for controllable collective organization. Each node is an agent-like dynamical unit with a state and task cue, and signed source-target-conditioned attention acts as an adaptive coupling term inside an explicit evolution model. Therefore, SIES combines an explicit dynamical engine with local agent intelligence, similar to biological swarms. For synchronization control, SIES learns a generalizable coupling operator that produces prescribed synchronization patterns for CDSs across untrained network scales, target phase relations, and intrinsic node dynamics without retraining. The learned operator also reaches gait-related modes faster than three oscillator baselines and generalizes synchronization-driven locomotion to simulated multi-legged robots of different scales and a physical hexapod after leg disablement. For graph representation learning, SIES applies the same signed interaction principle to message passing and achieves the highest performance among the compared methods on heterophilous node-classification benchmarks. Together, these results position SIES as a generalizable and learnable graph-dynamical interaction framework with promise for synchronization control, adaptive robot coordination, and heterophilous graph representation learning."
   }
 ]
