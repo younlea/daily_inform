@@ -63,6 +63,15 @@
     "summary": "중국의 로봇 전문 기업 Unitree가 IPO를 앞두고 투자설명서(Prospectus)를 공개함. 해당 자료를 통해 업계 거물로 분류되는 대규모 기술 투자자들의 지원 배경과 참여가 구체적으로 드러남."
   },
   {
+    "title": "유니트리 로보틱스, 상하이 IPO 이후 기업가치 74억 달러 예상",
+    "original_title": "Unitree Robotics expected to be worth $7.4 BN after Shanghai IPO - chinaeconomicreview.com",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeE45YVRPSFhRdnA1TlA5alFQZFNnQWlvd05YdnNVR2thNXRTa2xrdlF4NllCQk9uYTlMdl9GclVhbUxYRFNxUWFnODNzWG04UmZiQ3loY1F5TEcwcnpRdG1lVi1KWkF4WTRkUnQxZmYtMmJZTTU4Mk1lZnVwdkZDRHZRdXYzekg4OXdYSHdYYXVjWHQtbzM1UjRSZjnSAaIBQVVfeXFMTzRPQzQ4c3owS0ZOd3A2aDdPVGE3dnJGN1g1aHB1YWtPV1lfQVFOUFYtaEtDczY3ZE5pRzFtNGI0ZmtMRU9ZcF9ZcE53MHhMQ254alZxUXNzdFJlU1VQSHoyMWNkeVZCbTZLczJVRmlRUVVuVFU2aWtObmNGN05BMndlUW5ROUxvQnRTc1l2NzBXa1ZFWWE2SFgtWlNWXzNLT2RR?oc=5",
+    "date": "2026-08-05 07:03",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree Robotics가 상하이 IPO를 앞두고 약 74억 달러(7.4 BN) 규모의 기업가치가 예상되는 것으로 분석됨. 이는 로봇 산업 분야에서 회사가 보유한 기술력과 높은 시장 성장 잠재력이 반영된 수치임."
+  },
+  {
     "title": "휴머노이드 로봇 2부: 중국의 자체 로봇 공급망 구축 전략 분석",
     "original_title": "Humanoid Robots Part 2: China's Playbook for Building Its Own Robot Supply Chain - insights.trendforce.com",
     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1PTWxCS2E5OGo5ZzhjZ05EMl9VbTdNZDRMclBBVWNGMjIzMWNKMWN4MVRJTUhkWG5qazFpTTlfRzVLeUQ4elpJR1dNUkxnYm93Wk41ZlNjLTMtSVBheXJpalZ4ZkdnVWNveXVsRUJxMkUybkh6VUVz?oc=5",
@@ -304,6 +313,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "기존 Diffusion Policy가 가진 추론 지연 시간과 액션 청킹 기법의 한계를 극복하기 위해 DPA-FTG라는 계층적 정책을 제안함. 이 방법은 저주파 플래닝과 고주파 힘 제어를 분리하여, 실시간 접촉 안정성 유지를 통해 동적이고 복잡한 조작 작업이 가능하도록 함. 실험 결과, DPA-FTG는 이인 손 배터리 분리 작업 등에서 기존 최신 기술들 대비 우수한 성능을 입증함."
+  },
+  {
+    "title": "게이티드 메모리 정책(Gated Memory Policy): 문맥 기반 기억화 및 적응 능력 확보",
+    "original_title": "Gated Memory Policy: In-Context Memorization and Adaptation",
+    "link": "https://arxiv.org/abs/2604.18933",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 매니퓰레이션 작업의 다양한 기억 요구사항을 해결하기 위해, 단순히 관측 이력을 확장하는 방식의 한계를 극복한 Gated Memory Policy (GMP)가 제안됨. GMP는 필요한 시점에 기억을 선택적으로 활성화하는 학습된 메모리 게이트와 잠재 기억 표현을 구축하는 교차 어텐션 모듈을 핵심으로 채택함. 또한 역사적 행동에 Diffusion 노이즈를 주입하여 강건성을 높인 GMP는 비-마르코프 벤치마크 MemMimic에서 장기 이력 기반 모델 대비 평균 30.1%의 성공률 향상을 달성한 것으로 보고됨."
   },
   {
     "title": "Unitree Robotics, 스타 마켓 IPO 가격 책정 시작, 가치 59억 돌파 전망 (Global Times)",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2510.07094v2 Announce Type: replace \nAbstract: This work focuses on sampling strategies of configuration variations for generating robust universal locomotion policies for quadrupedal robots. We investigate the effects of sampling physical robot parameters and joint proportional-derivative gains to enable training a single reinforcement learning policy that generalizes to multiple parameter configurations. Three fundamental joint gain sampling strategies are compared: parameter sampling with (1) linear and polynomial function mappings of mass-to-gains, (2) performance-based adaptive filtering, and (3) uniform random sampling. We improve the robustness of the policy by biasing the configurations using nominal priors and reference models. All training was conducted using the RaiSim simulation environment, tested in simulation on a range of diverse quadrupeds, and zero-shot deployed onto hardware using the ANYmal quadruped robot. Compared to multiple baseline implementations, our results demonstrate the need for significant joint controller gains randomization for robust closing of the sim-to-real gap."
-  },
-  {
-    "title": "RoDyn: Taming Interactive Robot-Dynamic 2.5D World Model for Robotic Manipulation",
-    "original_title": "RoDyn: Taming Interactive Robot-Dynamic 2.5D World Model for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2510.09036",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2510.09036v2 Announce Type: replace \nAbstract: Learned world models hold significant potential as neural simulators for robotic manipulation. However, prevalent 2D video-based models inherently lack the spatial and kinematic reasoning crucial for physical interactions. We introduce RoDyn, a novel Robot-Dynamic 2.5D World Model that formulates environmental dynamics within a highly efficient, geometry-aware latent space. Through the proposed Robot-Dynamic Tokenizer, we explicitly couple semantic visual appearances with spatial and agent-centric priors via an RGB-dominated cross-attention mechanism and dynamic mask guidance. Furthermore, by injecting these mask priors directly into sequence transitions, our Mask-guided Autoregressive architecture drives the model to focus on active robot-object interaction regions. Extensive experiments demonstrate that RoDyn establishes SOTA generation fidelity across large-scale datasets. Crucially, it translates these predictive capabilities into substantial downstream gains, accelerating model-based reinforcement learning and achieving a 42\\% improvement in real-world imitation learning success rates over pure 2D baselines."
-  },
-  {
-    "title": "Beyond Topology: A Morphological Symmetry Graph Representation for Locomotion Policy Learning",
-    "original_title": "Beyond Topology: A Morphological Symmetry Graph Representation for Locomotion Policy Learning",
-    "link": "https://arxiv.org/abs/2512.00727",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2512.00727v2 Announce Type: replace \nAbstract: Reinforcement learning has enabled impressive locomotion skills on articulated robots, but common policy representations remain only weakly aligned with robot physics. Generic networks ignore kinematic structure, while graph-based policies encode connectivity without specifying how physical quantities transform across symmetric body parts. We introduce a morphological symmetry graph representation for locomotion policy learning and instantiate it in MS-PPO. Starting from the robot's topological graph, our representation augments each observation and action space with the permutation and sign transformations induced by morphological symmetry. This yields a symmetry-equivariant graph actor and a symmetry-invariant graph critic, enforcing the desired policy and value constraints by construction rather than through reward shaping or data augmentation. We evaluate MS-PPO on a variety of locomotion tasks using both Unitree Go2 quadruped and Unitree G1 humanoid, including command tracking, asymmetric joint failures, out-of-distribution command generalization, and zero-shot sim-to-real deployment. Experiments show improved symmetry generalization, robustness, sample efficiency, and model efficiency over topology- and symmetry-aware baselines."
   }
 ]
