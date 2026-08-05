@@ -432,6 +432,15 @@
     "summary": "로봇의 예측 계획을 위한 월드 모델은 속도 제약이 문제였으며, 기존 확산 기반 모델은 다단계 롤아웃(rollout) 과정에서 병목 현상을 겪음. 이에 연구진은 액션 기반 드리프팅 모델인 DriftWorld를 개발하여, 반복적인 디노이징 과정 없이 단일 포워드 패스로 30fps 이상의 초고속 미래 프레임 생성이 가능하게 함. 이로써 DriftWorld는 기존 확산 모델 대비 월등히 빠른 속도와 높은 정확도를 동시에 확보하며, 로봇 매니퓰레이션 벤치마크 등에서 최신(SOTA) 성능을 입증함."
   },
   {
+    "title": "CrossScope: 이중 스코프 기반 수술 영상 공동 예측을 위한 역할 비대칭 세계 모델",
+    "original_title": "CrossScope: A Role-Asymmetric World Model for Joint Dual-Scope Surgical Video Prediction",
+    "link": "https://arxiv.org/abs/2608.03211",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 시각 세계 모델이 단일 관측 흐름에 국한되는 문제를 해결하기 위해, 본 연구는 ERCP와 같은 역할 의존적 환경에 적용 가능한 CrossScope라는 이중 스트림 세계 모델을 제안함. 이 모델은 뷰별 전문가 구조를 유지하면서, 예측 대상의 공간적 요구에 따라 증거를 선택적으로 전달하는 '역할 비대칭적' 방식으로 작동함. 실험 결과, CrossScope는 각 스코프의 고유한 관점을 훼손하지 않으면서도 최신 수술 영상 생성 기반 모델들보다 일관되게 높은 성능을 기록함."
+  },
+  {
     "title": "Unitree Robotics, 스타 마켓 IPO 가격 책정 시작, 가치 59억 돌파 전망 (Global Times)",
     "original_title": "Unitree Robotics kicks off STAR market IPO pricing, expected to exceed 5.9 billion in value - Global Times",
     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1wcW02ZDNxUWoxZS1TMkprMTRiRHdlUTQtbXFrTWdhVlJ2cWhwTmxmVTNKbFdNVVVsWUNTb29HNjJPUWUwM2FKZ3N6eEhFWldQQ2pXT0lxSnZrY3NVZk1GRXlR?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.25765v1 Announce Type: new \nAbstract: Climbing hollow stairs remains a challenging problem for quadruped robots due to the high risk of leg trapping, severe depth sparsity, and high-frequency depth-sensing noise. In this paper, we propose StairMaster, a novel three-stage reinforcement learning framework for stable locomotion on such extreme discontinuous terrains. Our architecture integrates a Cross-Attention mechanism to extract structural features from noisy depth data, alongside a Spatial-aware Recurrent Unit (SRU) that maintains robust spatio-temporal memory to mitigate perception blind spots. To bridge the sim-to-real gap in depth perception, we propose a high-fidelity sim-to-real depth sensor modeling pipeline that faithfully replicates real-world sensor artifacts. Additionally, we employ a 3D waypoint-guided active perception reward for proactive sensing, alongside hollow gap kinematic and stair edge penalties to ensure precise foothold placement. We successfully deployed StairMaster on a Unitree Go2 robot, demonstrating its ability to conquer hollow stairs with an unprecedented incline of up to 55$^\\circ$ through zero-shot transfer. To the best of our knowledge, this is the first RL-based policy to achieve such steep hollow stair climbing in real-world environments.\n  Project Website: https://sivan666666.github.io/StairMaster/."
-  },
-  {
-    "title": "TacVerse: A Multi-Sensor Dataset and Benchmark for Cross-Sensor Vision-Based Tactile Perception",
-    "original_title": "TacVerse: A Multi-Sensor Dataset and Benchmark for Cross-Sensor Vision-Based Tactile Perception",
-    "link": "https://arxiv.org/abs/2606.25877",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.25877v1 Announce Type: new \nAbstract: Vision-based tactile sensors (VBTSs) enable robots to infer contact geometry and force-related cues by imaging deformation through an internal camera, yet generalisation across sensor designs remains poorly understood. We present TacVerse, a multi-sensor dataset and benchmark for cross-sensor vision-based tactile perception. The dataset contains 106,800 tactile images from seven VBTSs and supports three downstream tasks: shape classification, grating classification, and force regression. Experiments are conducted under three settings: within-sensor training, zero-shot cross-sensor transfer, and few-shot adaptation. Strong within-sensor performance across all tasks indicates that the collected tactile observations are informative for the target objectives. Direct cross-sensor transfer, however, leads to substantial degradation. Shape classification is comparatively robust, whereas grating classification and force regression are more sensitive to sensor shift. Few-shot adaptation for force regression consistently improves performance on unseen target sensors but does not fully close the gap to within-sensor upper bounds. A representation study further shows that MAE (Masked Autoencoder) pretraining provides the most consistent gains across tasks and sensors. TacVerse provides a controlled testbed for studying sensor shift, data-efficient adaptation, and self-supervised learning in tactile perception."
   }
 ]
