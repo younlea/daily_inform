@@ -1,5 +1,41 @@
 [
   {
+    "title": "인간의 행동 인식 로봇이 협력 파트너에 맞춰 적응하며 팀 리프팅 시 근골격 부담을 경감시킴",
+    "original_title": "Human-aware robots adapt to partners, reducing back strain during team lifting",
+    "link": "https://techxplore.com/news/2026-08-human-aware-robots-partners-strain.html",
+    "date": "2026-08-05 12:00",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "인간은 팀 단위 작업 시 더 넓은 범위의 문제 해결과 효율성 증대가 가능한 것으로 분석됨. 따라서 로봇이 인간 파트너에게 효과적으로 도움을 제공하려면 인간의 행동과 명령을 신속히 해석하는 예측 능력이 필수적임. 로봇은 이러한 해석을 바탕으로 필요한 도움을 계획하고 정밀하게 실행하는 방향으로 발전함."
+  },
+  {
+    "title": "스마트 홈 자동화 솔루션: 실제로 작동하는 통합 시스템 구축 가이드",
+    "original_title": "Smart Home Automation Solutions: How to Build a System That Actually Works Together",
+    "link": "https://roboticsandautomationnews.com/2026/08/05/smart-home-automation-solutions-how-to-build-a-system-that-actually-works-together/103921/",
+    "date": "2026-08-05 11:40",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "스마트 홈 시스템은 기기 설치보다 통합(Integration) 단계에서 실패하는 경우가 많음. 성공적인 시스템 구축을 위해서는 디바이스를 고르기 전에 네트워크 레이어를 설계하는 것이 필수적임. 로컬 기능 구성을 파악한 후, 단일 주(Primary) 프로토콜을 선정하고 해당 프로토콜과 상호 운용 가능한 허브를 중심으로 시스템을 구성해야 함."
+  },
+  {
+    "title": "로봇 설계와 실제 현장 적용 간의 격차 해소",
+    "original_title": "Bridging the Gap Between Robotics Design and Deployment",
+    "link": "https://roboticsandautomationnews.com/2026/08/05/bridging-the-gap-between-robotics-design-and-deployment/103917/",
+    "date": "2026-08-05 11:24",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "로봇 시스템이 실제 현장에 배포될 경우, 통제된 실험실 환경과 달리 고유한 문제에 직면하는 사례가 많음. 조명 변화, 인간 행동의 가변성, 다양한 지면, 그리고 배경 소음 등은 현장에서 예측하기 어려운 마찰 지점들을 발생시키는 요인임. 이는 로보틱스 기술의 현장 테스트 환경의 한계점과 실제 구동 환경 간의 괴리가 크다는 점을 시사함."
+  },
+  {
+    "title": "스마트 로스팅: 아날로그 커피 로스터를 IoT 장치로의 전환",
+    "original_title": "Smart Roasting: Turning an Analog Coffee Roaster into an IoT Device",
+    "link": "https://roboticsandautomationnews.com/2026/08/05/smart-roasting-turning-an-analog-coffee-roaster-into-an-iot-device/103912/",
+    "date": "2026-08-05 11:09",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "커피 로스팅은 전통적으로 장인의 직관과 감각에 의존해 왔으나, 사업 규모가 증가함에 따라 인적 오류 리스크가 커지는 상황임. 이에 따라, 아날로그 로스터 기기를 IoT(사물인터넷) 기술로 스마트화하여 정밀한 데이터 기반의 로스팅 환경을 구축하는 것이 핵심 과제로 부상함."
+  },
+  {
     "title": "부동산 공동 소유주 간 의견 충돌 시 법적 대응 방안 분석",
     "original_title": "What Legal Options Are Available When Property Owners Disagree?",
     "link": "https://roboticsandautomationnews.com/2026/08/05/what-legal-options-are-available-when-property-owners-disagree/103908/",
@@ -17962,41 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2601.14945v2 Announce Type: replace \nAbstract: Large-scale Vision-Language-Action (VLA) models offer semantic generalization but suffer from high inference latency, limiting them to low-frequency batch-and-execute paradigm. This frequency mismatch creates an execution blind spot, causing failures in dynamic environments where targets move during the open-loop execution window. We propose TIDAL (Temporally Interleaved Diffusion and Action Loop), a hierarchical framework that decouples semantic reasoning from high-frequency actuation. TIDAL operates as a backbone-agnostic module for diffusion-based VLAs, using a dual-frequency architecture to redistribute the computational budget. Specifically, a low-frequency macro-intent loop caches semantic embeddings, while a high-frequency micro-control loop interleaves single-step flow integration with execution. This design enables approximately 9 Hz control updates on edge hardware (vs. approximately 2.4 Hz baselines) without increasing marginal overhead. To handle the resulting latency shift, we introduce a temporally misaligned training strategy where the policy learns predictive compensation using stale semantic intent alongside real-time proprioception. Additionally, we address the insensitivity of static vision encoders to velocity by incorporating a differential motion predictor. TIDAL is architectural, making it orthogonal to system-level optimizations. Experiments show a 2x performance gain over open-loop baselines in dynamic interception tasks. Despite a marginal regression in static success rates, our approach yields a 4x increase in feedback frequency and extends the effective horizon of semantic embeddings beyond the native action chunk size. Under non-paused inference protocols, TIDAL remains robust where standard baselines fail due to latency."
-  },
-  {
-    "title": "Spotlighting Task-Relevant Features: Object-Centric Representations for Better Generalization in Robotic Manipulation",
-    "original_title": "Spotlighting Task-Relevant Features: Object-Centric Representations for Better Generalization in Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2601.21416",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2601.21416v2 Announce Type: replace \nAbstract: The generalization capabilities of robotic manipulation policies are heavily influenced by the choice of visual representations. Existing approaches typically rely on representations extracted from pre-trained encoders, using two dominant types of features: global features, which summarize an entire image via a single pooled vector, and dense features, which preserve a patch-wise embedding from the final encoder layer. While widely used, both feature types mix task-relevant and irrelevant information, leading to poor generalization under distribution shifts, such as changes in lighting, textures, or the presence of distractors. In this work, we explore an intermediate structured alternative: Slot-Based Object-Centric Representations (SBOCR), which group dense features into a finite set of object-like entities. This representation permits to naturally reduce the noise provided to the robotic manipulation policy while keeping enough information to efficiently perform the task. We benchmark a range of global and dense representations against intermediate slot-based representations, across a suite of simulated and real-world manipulation tasks ranging from simple to complex. We evaluate their generalization under diverse visual conditions, including changes in lighting, texture, and the presence of distractors. Our findings reveal that SBOCR-based policies outperform dense and global representation-based policies in generalization settings, even without task-specific pretraining. These insights suggest that SBOCR is a promising direction for designing visual systems that generalize effectively in dynamic, real-world robotic environments."
-  },
-  {
-    "title": "RoboRouter: Training-Free Policy Routing for Robotic Manipulation",
-    "original_title": "RoboRouter: Training-Free Policy Routing for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2603.07892",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.07892v4 Announce Type: replace \nAbstract: Research on robotic manipulation has developed a diverse set of policy paradigms, including vision-language-action (VLA) models, vision-action (VA) policies, and code-based compositional approaches. Concrete policies typically attain high success rates on specific task distributions, but limited generalization beyond it. Rather than proposing another monolithic policy, we propose to leverage the complementary strengths of existing approaches through intelligent policy routing. We introduce RoboRouter, a training-free framework that maintains a pool of heterogeneous policies and learns to select the best-performing policy for each task through accumulated execution experience. Given a new task, RoboRouter constructs a semantic task representation, retrieves historical records of similar tasks, predicts the optimal policy choice without requiring trial-and-error, and incorporates structured feedback to refine subsequent routing decisions. Integrating a new policy into the system requires only a lightweight evaluation and does not incur training overhead. Across simulation benchmark and real-world evaluations, RoboRouter consistently outperforms individual policies, improving the average success rate by more than 3% in simulation and 13% in real-world settings, while preserving execution efficiency. Our results demonstrate that intelligent routing across heterogeneous, off-the-shelf policies provides a practical and scalable pathway toward building more capable robotic systems."
-  },
-  {
-    "title": "PhyGile: Physics-Prefix Guided Motion Generation for Agile General Humanoid Motion Tracking",
-    "original_title": "PhyGile: Physics-Prefix Guided Motion Generation for Agile General Humanoid Motion Tracking",
-    "link": "https://arxiv.org/abs/2603.19305",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2603.19305v2 Announce Type: replace \nAbstract: Humanoid robots are expected to execute agile and expressive whole-body motions in real-world settings. Existing text-to-motion generation models are predominantly trained on captured human motion datasets, whose priors assume human biomechanics, actuation, mass distribution, and contact strategies. When such motions are directly retargeted to humanoid robots, the resulting trajectories may satisfy geometric constraints (e.g., joint limits and pose continuity) and appear kinematically reasonable. However, they frequently violate the physical feasibility required for real-world execution. To address these issues, we present PhyGile, a unified framework that closes the loop between robot-native motion generation and General Motion Tracking (GMT). PhyGile performs physics-prefix-guided robot-native motion generation at inference time, directly generating robot-native motions in a 262-dimensional skeletal space with physics-guided prefixes, thereby eliminating inference-time retargeting artifacts and reducing generation-execution discrepancies. Before physics-prefix adaptation, we train the GMT controller with a curriculum-based mixture-of-experts scheme, followed by post-training on unlabeled motion data to improve robustness over large-scale robot motions. During physics-prefix adaptation, the GMT controller is further fine-tuned with generated objectives under physics-derived prefixes, enabling agile and stable execution of complex motions on real robots. Extensive offline and real-robot experiments demonstrate that PhyGile expands the frontier of text-driven humanoid control, enabling stable tracking of agile, highly difficult whole-body motions that go well beyond walking and low-dynamic motions typically achieved by prior methods."
-  },
-  {
-    "title": "Unitree’s IPO will test the ‘embodied AI’ valuation shortcut - The Business Times",
-    "original_title": "Unitree’s IPO will test the ‘embodied AI’ valuation shortcut - The Business Times",
-    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaE12MkxyWThMU1F4MWl1ZEZnUlNmbUJqNmc0UnRJZXJJMGlWOEFubHFiQ3lMVExiMHZTY2M2bUxGNWtBazN1UW1PS3dUYVYyRVBIR3lxYi03clI5ZXdCbUlKTThVWVdac2IxdW4tWkIxLVh4ZFRWWVMydWFVU2xuVVNGZm9OMS1DTVQwQ2tSXzBfQ2hELXZlT1h3c3lIYXFKenFwYjVR?oc=5",
-    "date": "2026-06-24 23:30",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree’s IPO will test the ‘embodied AI’ valuation shortcut  The Business Times"
   }
 ]
