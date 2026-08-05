@@ -1,5 +1,14 @@
 [
   {
+    "title": "대형 모델이 소형 모델을 지능적으로 학습시키는 원리 분석",
+    "original_title": "How Big Models Teach Small Models to Be Smart",
+    "link": "https://blog.bytebytego.com/p/how-big-models-teach-small-models",
+    "date": "2026-08-05 15:30",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "본 기사에서는 대형 모델(Big Models)의 지식을 소형 모델(Small Models)로 전이하여 모델의 지능을 향상시키는 근본적인 메커니즘과 기술적 접근 방식을 깊이 있게 다룰 예정임. 이를 통해 효율적인 AI 경량화 및 배포 방안을 제시함."
+  },
+  {
     "title": "중국 유니트리 로보틱스, STAR 마켓 IPO 공모가 책정 시작; 기업가치 1,090억 위안 초과 예상",
     "original_title": "China’s Unitree Robotics kicks off STAR Market IPO pricing; valuation may top 109b yuan - Global Times",
     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE50TTk2WDl2Zy00emJXTmRNN0xoWjNGaWxnaWQwRDJLamRNMVVTZ2hrblBJcjhyWmxrZXdKOG1RM1N0T0hvYnpKM0dkS0FrVEIwQ25nMGt6YzJmOWZrLUNPM2pn?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.24958v1 Announce Type: cross \nAbstract: Collective behavior arises when locally interacting units produce coordinated global organization, from synchronization in dynamical systems to task-relevant information flow on graphs. The central challenge is not only to explain how collective behavior emerges, but to design local interaction rules that can produce desired global organization and generalize across graphs, dynamics and tasks.To address this challenge, we introduce the Swarm-Inspired Emergent Synchronizer (SIES), a graph-dynamical framework that learns generalizable local-interaction laws for controllable collective organization. Each node is an agent-like dynamical unit with a state and task cue, and signed source-target-conditioned attention acts as an adaptive coupling term inside an explicit evolution model. Therefore, SIES combines an explicit dynamical engine with local agent intelligence, similar to biological swarms. For synchronization control, SIES learns a generalizable coupling operator that produces prescribed synchronization patterns for CDSs across untrained network scales, target phase relations, and intrinsic node dynamics without retraining. The learned operator also reaches gait-related modes faster than three oscillator baselines and generalizes synchronization-driven locomotion to simulated multi-legged robots of different scales and a physical hexapod after leg disablement. For graph representation learning, SIES applies the same signed interaction principle to message passing and achieves the highest performance among the compared methods on heterophilous node-classification benchmarks. Together, these results position SIES as a generalizable and learnable graph-dynamical interaction framework with promise for synchronization control, adaptive robot coordination, and heterophilous graph representation learning."
-  },
-  {
-    "title": "ROAD-VLA: Robust Online Adaptation via Self-Distillation for Vision-Language-Action Models",
-    "original_title": "ROAD-VLA: Robust Online Adaptation via Self-Distillation for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2606.25800",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.25800v1 Announce Type: cross \nAbstract: Effective online adaptation of vision-language-action (VLA) models remains challenging, as sparse rewards provide weak supervision for high-dimensional autoregressive action policies. Although self-distillation can in principle provide denser training signals, we find that text-based privileged teachers conditioned on demonstrations, retrieved experiences, or high-level plans are ineffective for VLA adaptation, exposing a modality gap between symbolic guidance and low-level robot actions. We propose ROAD-VLA, an advantage-guided self-distillation framework that constructs a proximal teacher directly in action space by perturbing action-token logits with calibrated advantage estimates. This converts sparse rewards into dense token-level supervision while keeping the teacher close to the current policy. We further derive a policy-improvement lower bound under calibrated advantages and accurate teacher matching. Across seven robotic manipulation environments with in-distribution and out-of-distribution shifts, ROADVLA outperforms PPO in nearly all settings, demonstrating robust online VLA adaptation."
   }
 ]
