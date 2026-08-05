@@ -72,6 +72,78 @@
     "summary": "기존 동작 사전 지식(motion priors)은 작업 맥락을 고려하지 않아 비관련 지식을 제공하는 문제가 있음. 이에 본 연구는 Context-Aware Motion Priors (CMP) 프레임워크를 제시하며, 이 방법은 별도의 라벨링 없이 일반적인 동작 사전 지식을 현재 작업 문맥에 맞게 적응시키는 것을 목표로 함. CMP는 고도 이득 정책 롤아웃(high-advantage policy rollouts)을 통해 동작과 문맥의 적합도를 학습하며, 다양한 휴머노이드 제어 태스크에서 성능 개선과 샘플 효율성을 입증함."
   },
   {
+    "title": "확산 모델 및 일관성 증류를 통한 인간 인식 로봇 궤적 생성 가속화",
+    "original_title": "Accelerating Human-Aware Robot Trajectory Generation via Diffusion and Consistency Distillation",
+    "link": "https://arxiv.org/abs/2608.03159",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 HRI 환경에서 복합적인 충돌 회피 및 자체 충돌 제약 조건을 고려한 로봇 매니퓰레이터의 운동 계획 프레임워크를 제시함. RRT*로 생성된 데이터셋을 활용하여 Diffusion Model을 훈련하고, 추론 시간 단축을 위해 Consistency Distillation을 적용하는 것이 핵심임. 또한, Joint Jerk Regularization을 도입하여 궤적의 부드러움을 높였으며, 그 결과 100ms 미만의 빠른 속도와 높은 성공률을 달성하였음을 시뮬레이션으로 입증함."
+  },
+  {
+    "title": "SE(3)-등변 MeanFlow 기반 적은 단계 6-DoF 파지 생성 모델 GraspMeanFlow",
+    "original_title": "GraspMeanFlow: SE(3)-Equivariant MeanFlow for Few-Step 6-DoF Grasp Generation",
+    "link": "https://arxiv.org/abs/2608.03295",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존의 데이터 기반 6-DoF 파지 생성 모델은 반복적인 수치 적분 과정이 필요하여 실시간 제어에 한계가 있었음. 본 연구는 SE(3)-등변 MeanFlow 프레임워크인 GraspMeanFlow를 제안하여, 유한 시간 간격 동안의 평균 속도(average velocity)를 학습하고 이를 통해 단일 함수 평가만으로 정확한 강체 변위(rigid-body displacement)를 재현함. 실험 결과, GraspMeanFlow는 기존 다단계 SE(3) Flow 모델과 유사한 수준의 성능을 보이면서 파지 성공률을 최대 24.3점까지 향상시키는 것으로 입증됨."
+  },
+  {
+    "title": "통합 시각-운동 목표(UVT): 물리적 동작을 넘어선 VLA 학습 감독 기법",
+    "original_title": "Unified Visuomotor Targets: Supervising VLAs Beyond Physical Actions",
+    "link": "https://arxiv.org/abs/2608.03563",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "VLA 모델의 고수준 시각-언어 임베딩과 저수준 로봇 행동 간의 근본적인 불일치를 해결하기 위해, 모터 제어와 시각 장면 변화 정보를 결합하는 통합 잠재 예측 목표(UVT)가 제안됨. 이 방법론은 아키텍처 변경이나 추가 데이터 없이 적용 가능하며, 시뮬레이션 환경과 실제 이족/양손 조작 과제에서 모델의 학습 효율성 및 최종 성능, 정책의 강인성 향상을 입증함."
+  },
+  {
+    "title": "LiLa-WAM: 로봇 매니퓰레이션을 위한 경량 잠재 공간 추론 월드-액션 모델",
+    "original_title": "LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2608.03701",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 World-Action Model(WAM)의 높은 계산 복잡도를 해결하기 위해, 미래를 컴팩트한 잠재 공간에서 추론하는 경량 모델 LiLa-WAM을 제안함. 이 모델은 미래 상태 예측과 액션 생성을 결합한 구조를 바탕으로 경량화되었으며, 언어 의존성이 낮은 작업 표현 방식인 Visual Transition Token(VTT)을 함께 제시함. 실험 결과, LiLa-WAM은 단일 GPU 환경의 학습만으로 RoboTwin 2.0, LIBERO 등 다양한 로봇 작업에서 90.48%의 높은 성공률을 입증함."
+  },
+  {
+    "title": "GORDON: 장기 시점 조작의 분해를 위한 그래프 기반 객체 중심 보상 학습 방법",
+    "original_title": "GORDON: Graph-based Object-centric Rewards for Decomposition of Long-Horizon Manipulation",
+    "link": "https://arxiv.org/abs/2608.03753",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Reinforcement learning을 이용한 장기 시점 조작(Long-horizon manipulation)의 과제는 보상 설계의 어려움 및 희소성 보상(sparse rewards) 문제에 직면함. 본 연구는 GORDON이라는 그래프 기반의 객체 중심 보상 학습 프레임워크를 제시하며, 시각 장면을 객체 및 공간 관계의 그래프로 모델링하고 GNN을 통해 작업에 맞는 잠재 공간에 임베딩함. 이를 통해 작업 진척도를 측정하는 밀도 높은 보상을 생성하고, 수동 개입 없이도 단계별 객체 상태 변화를 파악하여 복잡한 장기 과제의 성공적인 자동 분해 및 정책 학습을 지원함."
+  },
+  {
+    "title": "AI 기반 클라우드-엣지 아키텍처를 활용한 연결형 정밀 농업 시스템 설계 및 평가",
+    "original_title": "Design and Evaluation of an AI-Enabled Cloud-Edge Architecture for Connected Precision Agriculture Farms",
+    "link": "https://arxiv.org/abs/2608.03816",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "식물 질병으로 인한 수확량 손실 문제 해결을 위해 AI 기반 클라우드-엣지 아키텍처가 제안됨. 본 아키텍처는 IoT 센서, UAV, 딥러닝, Azure IoT Hub 등의 기술을 통합하여 토마토 질병을 실시간으로 탐지함. 실험 결과 92~95%의 높은 탐지 정확도를 기록하며, 인력 의존도를 낮추고 지속 가능한 연결형 정밀 농업 실현에 기여할 것으로 기대됨."
+  },
+  {
+    "title": "8GB 예산 내 양손 조작 구현: 저전력 Jetson 환경에서의 제로-카피 센싱 및 양자화 ACT 적용",
+    "original_title": "Bimanual Manipulation Within an 8 GB Budget: Zero-Copy Sensing and Quantized ACT on an Entry-Level Jetson",
+    "link": "https://arxiv.org/abs/2608.03938",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "저사양 임베디드 장치(Jetson Orin Nano Super)를 활용하여 양손 조작 정책의 배포 가능성을 제시함. 연구팀은 GStreamer 기반의 제로-카피 센싱을 구현하여 CPU 자원과 지연 시간 개선을 달성하는 한편, ACT 정책이 높은 성능을 보여 Diffusion Policy 대비 우수함을 입증함. 나아가 ACT를 TensorRT로 양자화(FP16, INT8)하는 과정을 통해 추론 지연 시간을 최대 9.0배까지 획기적으로 단축하며 태스크 성공률을 유지하는 데 성공함."
+  },
+  {
+    "title": "고강도 운용이 가능한 정전기 클러치 기반 기계식 멀티플렉서 개발",
+    "original_title": "Electrostatic Clutch-Based Mechanical Multiplexer with Increased Force Capability",
+    "link": "https://arxiv.org/abs/2501.08469",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 시스템의 자유도 증가에 따른 구동부 제약 문제를 해결하기 위해, 단일 모터로 다중 출력을 제어하는 정전기 캡스탄 클러치 기반의 기계식 멀티플렉서 아키텍처가 제시됨. 이 시스템은 최대 212 N의 개별 출력 힘을 달성하며 다수의 출력을 독립적이고 동시에 완전히 작동시키는 것이 가능함. 실제로 건(tendon)-구동 손에 적용된 결과, 수직 그립 강도를 4.09배 향상시키고 수평 운반 용량을 111.2 N까지 높이는 등 기존 기계식 멀티플렉서의 한계를 극복함이 입증됨."
+  },
+  {
     "title": "Unitree Robotics, 스타 마켓 IPO 가격 책정 시작, 가치 59억 돌파 전망 (Global Times)",
     "original_title": "Unitree Robotics kicks off STAR market IPO pricing, expected to exceed 5.9 billion in value - Global Times",
     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1wcW02ZDNxUWoxZS1TMkprMTRiRHdlUTQtbXFrTWdhVlJ2cWhwTmxmVTNKbFdNVVVsWUNTb29HNjJPUWUwM2FKZ3N6eEhFWldQQ2pXT0lxSnZrY3NVZk1GRXlR?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "Mantis said the robot allows for new flexibility in how to configure automation in complex, real-world environments.\nThe post Mantis Robotics launches dual-arm, fenceless robot appeared first on The Robot Report."
-  },
-  {
-    "title": "THEi Hosts Interdisciplinary Technology Symposium to Launch HK-Specific Mobile Charging Robot, Advancing Smart City via Industry-Academia-Research-Application Collaboration - KIPOST",
-    "original_title": "THEi Hosts Interdisciplinary Technology Symposium to Launch HK-Specific Mobile Charging Robot, Advancing Smart City via Industry-Academia-Research-Application Collaboration - KIPOST",
-    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1XMjN6UjgxMkJqQXZVaDMzV1BRQ0Y5SlJsa3pqTGFYeF83VVZLY3dHVzhLY1VhQzdpcUp2V0FfWVJRVVFJNkV0aUQxWEZYTTdQSFZWXzB6MGJqVWNpTEdNX2RwT1RnSlU30gFsQVVfeXFMT2w0bWF5dENjbDgyLTlqaUpjSmlSYzBwQTN6MGV1SHhTdkhGWnVhRXVBaEZNdTZtNlQwNklpRHN1LTE2Y05KMHVZSHo0YlFtN0p5ek9vSVhpNGdHcF95OVU0S3VPUWNjU3hrcmF0?oc=5",
-    "date": "2026-06-24 12:10",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "THEi Hosts Interdisciplinary Technology Symposium to Launch HK-Specific Mobile Charging Robot, Advancing Smart City via Industry-Academia-Research-Application Collaboration  KIPOST"
-  },
-  {
-    "title": "Proception Advances Physical AI with Dex­terous Robotic Hand Designed Using Autodesk Fusion - Autodesk",
-    "original_title": "Proception Advances Physical AI with Dex­terous Robotic Hand Designed Using Autodesk Fusion - Autodesk",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE50UDR3cHV6ZWdocm11eERVYnBCWlZ2NXBmOW5haEpiM2hGZkdFcE81ZUozcld1OTM3VkcyR0NheWFhbl9ESFFkaUZndU9KNjdYNlpQQXcwczdGeUxYaUxuUXJXalB5Y1JCdHVVTF9pLXpFU2pQNUxhakdzV2JGZw?oc=5",
-    "date": "2026-06-24 11:53",
-    "source": "Google News (Global Hand/Gripper)",
-    "category": "hand",
-    "summary": "Proception Advances Physical AI with Dex­terous Robotic Hand Designed Using Autodesk Fusion  Autodesk"
-  },
-  {
-    "title": "BYD's Stella Li tells BI she wants to put humanoid robots in every car showroom - Business Insider",
-    "original_title": "BYD's Stella Li tells BI she wants to put humanoid robots in every car showroom - Business Insider",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQXZmc01FR0Q1YzlsVHRNMDRSaElvWUJuSjJuZkZUUkJQRDlYZ2lnNUlmOEczUUEwQ0Itc3RQZWxxR2JtTXFYTFN1dXEyamJKMjNYNjdHbmp1WjU4QTgyT0lBU25mdHJzNlRWVS1uWHlnWURIeVJCbWpoemdHa3FsRWVxa01xMzc4aWp5ZnRPdHdnZnQ0?oc=5",
-    "date": "2026-06-24 11:44",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "BYD's Stella Li tells BI she wants to put humanoid robots in every car showroom  Business Insider"
-  },
-  {
-    "title": "Agility Robotics to Go Public Through Merger with Churchill Capital Corp XI",
-    "original_title": "Agility Robotics to Go Public Through Merger with Churchill Capital Corp XI",
-    "link": "https://humanoidroboticstechnology.com/news/agility-robotics-to-go-public-through-merger-with-churchill-capital-corp-xi/",
-    "date": "2026-06-24 10:34",
-    "source": "Humanoid Tech Blog",
-    "category": "humanoid",
-    "summary": "Agility Robotics and Churchill Capital Corp XI have announced they have entered into a definitive business combination agreement (the “Transaction”). Upon closing of the Transaction, the combined company is expected to operate as Agility and be listed on a major North American exchange under the ticker symbol “AGLT.” Agility’s mission is to build robot partners […]\nThe post Agility Robotics to Go Public Through Merger with Churchill Capital Corp XI appeared first on Humanoid Robotics Technology."
-  },
-  {
-    "title": "China’s robot rush: Morgan Stanley raises 2026 forecast to 50,000 units - South China Morning Post",
-    "original_title": "China’s robot rush: Morgan Stanley raises 2026 forecast to 50,000 units - South China Morning Post",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOODRYR3lNTkZvN0Flb0ZhY29fSXB4aHRnTVNUQmpwNWYwQlBHY2pUZ0stc2hFeW4xV3N1amNxVFlSdGVOMk9PY2pOVFU2V3lHQjROUV9lQVFPSjhldmZvQkZueDFnZm5VZC05ZF9FZEpYLTMyZXE3VnlOMjg5WGpTNW4zdnVuQ3JpcV9yMHduYXJFNnVfbDJQcVpMYzhjVndkdlVOVmJqZ2lLUEdoV080emdNSTfSAbQBQVVfeXFMTVFiN0JrN3JCQ0QyMjBlSjJFNEtWeDAyVDN3S0t5aDdWT2ZtRUVodGYwUnBmVEdTWkozaENPZHFDV1RPZURZSll5MkhTMC15QU40bVdjbWF1czRSbnFoZVd0cE1ERFg3eEZVcjN2amQwdENrLUxTSnRsQXZZQXVhMXZMUGNZUWpSRlE5b0EzaTI1S1ZHNzgzVlpjeUI0OFg4UXBocGtsMlozZGY1dzVVbEFQSExa?oc=5",
-    "date": "2026-06-24 10:30",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China’s robot rush: Morgan Stanley raises 2026 forecast to 50,000 units  South China Morning Post"
-  },
-  {
-    "title": "China’s robot rush: Morgan Stanley raises 2026 forecast to 50,000 units - South China Morning Post",
-    "original_title": "China’s robot rush: Morgan Stanley raises 2026 forecast to 50,000 units - South China Morning Post",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOODRYR3lNTkZvN0Flb0ZhY29fSXB4aHRnTVNUQmpwNWYwQlBHY2pUZ0stc2hFeW4xV3N1amNxVFlSdGVOMk9PY2pOVFU2V3lHQjROUV9lQVFPSjhldmZvQkZueDFnZm5VZC05ZF9FZEpYLTMyZXE3VnlOMjg5WGpTNW4zdnVuQ3JpcV9yMHduYXJFNnVfbDJQcVpMYzhjVndkdlVOVmJqZ2lLUEdoV080emdNSTc?oc=5",
-    "date": "2026-06-24 10:30",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China’s robot rush: Morgan Stanley raises 2026 forecast to 50,000 units  South China Morning Post"
-  },
-  {
-    "title": "How Equipment Asset Management Practices Must Evolve for Industry 4.0 to Deliver on its Promise",
-    "original_title": "How Equipment Asset Management Practices Must Evolve for Industry 4.0 to Deliver on its Promise",
-    "link": "https://roboticsandautomationnews.com/2026/06/24/equipment-asset-management-practices-industry-4-0/102777/",
-    "date": "2026-06-24 08:42",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Industry 4.0 carries an enormous promise. Connected sensors feeding real-time data into intelligent systems, machines that predict their own failures, production lines that self-optimise in response to demand signals, supply chains that adjust without human intervention. The technology is real, the investment is substantial, and the case studies are credible. So why are so many […]"
-  },
-  {
-    "title": "Morgan Stanley doubles China humanoid robot shipment forecast as commercialization accelerates - CNBC",
-    "original_title": "Morgan Stanley doubles China humanoid robot shipment forecast as commercialization accelerates - CNBC",
-    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQmJVLW85SEhKLWxzNTZoQi1lRWlaeHM2SjBaNmpmUHlLVXNYYzhKZHRIVkUzRU9YaWxnRjJMa0UyR3paXzFOTlJWX1FGRW83aWRqMTZDNGNFM1NtNHhBUEkzNFIyNnNRUTYxbjBvN3VZUkdPbXJEQkdlYl9pVjBQbTdDeGRTeDdBcU9TRTdyRWFkQdIBlwFBVV95cUxONnVfX1dJa2dKeDg4b3czN29BblRDcFNWZ3BKSzRCaFlZZ0FiOXBCQ0ZibTNVLWpmTGNibjdZdlBMeDRSN2lFb21tNlY1ZnlCcHdEQWJWWUVXekRjX0Z3d29hQ1dfQnM2OC1lTXJZSktLTkF6TzFpWDJMZHItVmlCam9vQXdfTkYwWFhKdkRLekRJSHEzaDdv?oc=5",
-    "date": "2026-06-24 06:39",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Morgan Stanley doubles China humanoid robot shipment forecast as commercialization accelerates  CNBC"
   }
 ]
