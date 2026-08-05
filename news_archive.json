@@ -1,5 +1,23 @@
 [
   {
+    "title": "플로리다 대학교, 산업화 건설 전용 로봇 공학 연구소 개소",
+    "original_title": "University of Florida opens new robotics lab dedicated to industrialized construction",
+    "link": "https://www.therobotreport.com/university-of-florida-opens-new-robotics-lab-dedicated-to-industrialized-construction/",
+    "date": "2026-08-05 17:41",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "플로리다 대학교(UF)가 주택 부족 및 노동력 감소 문제 해결을 목표로 산업화 건설에 특화된 로봇 공학 연구소를 개설함. 이 연구소는 Autodesk의 지원을 바탕으로 설립되었으며, 관련 연구를 진행할 예정임."
+  },
+  {
+    "title": "Moove, 자율주행차 인프라 구축을 위한 2억 5천만 달러 자금 확보함",
+    "original_title": "Moove raises $250M to build infrastructure for autonomous vehicles",
+    "link": "https://www.therobotreport.com/moove-raises-250m-to-build-infrastructure-for-autonomous-vehicles/",
+    "date": "2026-08-05 16:53",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Moove가 자율주행 차량 인프라 구축을 위해 2억 5천만 달러 규모의 자금 조달을 완료함. 확보된 자금은 자율 차량 보유고 확장과 로보틱스 기반의 차고지(depot) 인프라인 ‘Nests’ 구축에 활용될 예정임. 해당 내용은 The Robot Report를 통해 공개됨."
+  },
+  {
     "title": "산업 자동화 확장의 핵심은 '인지(Perception)' 기술에 있음",
     "original_title": "Why perception is the key to scaling industrial autonomy",
     "link": "https://www.therobotreport.com/why-perception-is-the-key-to-scaling-industrial-autonomy/",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.26008v1 Announce Type: new \nAbstract: This chapter describes EMCAR, a novel software tool for programming robot motion that leverages the unique affordances of artistic practices such as puppetry and drawing to conceive, design, and program novel interactions and realize new use cases for HRI. The advantage of this no-code platform is that it expands creative applications for collaborative robots - putting robots directly in the hands of artists - and provides an inclusive environment that enables individuals with little or no technical backgrounds to engage meaningfully in collaborations and robotics research."
-  },
-  {
-    "title": "ForceBand: Learning Forceful Manipulation with sEMG",
-    "original_title": "ForceBand: Learning Forceful Manipulation with sEMG",
-    "link": "https://arxiv.org/abs/2606.26093",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.26093v1 Announce Type: new \nAbstract: Human demonstrations are a scalable data source for learning robot manipulation policies. However, common sources of human demonstration data, such as motion-capture trajectories and internet videos, capture mostly motion and appearance while missing the contact forces that are critical for force-sensitive manipulation. In this paper, we introduce ForceBand, a low-cost wrist-worn sEMG system that turns human muscle activity into force-enriched demonstrations. We first collect a 10-hour multimodal dataset containing egocentric video, sEMG, IMU, and fingertip force measurements across diverse actions and objects. Using this dataset, we pre-train an EMG2Force model that predicts per-finger forces from sEMG and IMU signals. After a short user-specific calibration, users can collect target-task demonstrations using only ForceBand and video; EMG2Force then labels these demonstrations with per-finger force traces, producing force-augmented demonstrations for robot policy learning. Experiments show that ForceBand recovers fine-grained fingertip interactions with over 50% lower force prediction error than vision-based baselines and achieves an 87% success rate on pick, squeeze, and place tasks that require object-specific force control across objects with diverse shapes, sizes, and weights. Project website: https://forceband-emg.github.io"
-  },
-  {
-    "title": "Learning Action Priors for Cross-embodiment Robot Manipulation",
-    "original_title": "Learning Action Priors for Cross-embodiment Robot Manipulation",
-    "link": "https://arxiv.org/abs/2606.26095",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.26095v1 Announce Type: new \nAbstract: Most Vision-Language-Action (VLA) models build on a Vision-Language Model (VLM) backbone by attaching an action module and optimizing the full policy jointly. This design inherits strong visual and linguistic priors from the VLM, but leaves the action module to learn physical motion almost from scratch. As a result, the policy lacks an explicit motion prior, forcing early optimization to simultaneously discover temporal action dynamics and cross-modal alignment, a challenge further amplified in cross-embodiment settings. In this work, we propose to pretrain the action module with motion priors before cross-modal VLA alignment. Specifically, we introduce a two-stage training framework that equips the action module with cross-embodiment temporal motion structure before VLA training begins. In Stage~1, a lightweight flow-matching-based encoder-decoder action module efficiently learns temporal motion structure solely from unconditioned action trajectories, without processing visual or language tokens. In Stage~2, this learned prior is transferred to VLA training through decoder reuse and early-stage latent distillation, aligning visual-language features with the action embedding space while still allowing end-to-end policy refinement. In addition, the trained encoder serves as a compact history compressor, summarizing state-action histories into a single temporal context token for history-aware modeling at negligible cost. Extensive experiments across 13 diverse cross-embodiment tasks on both simulated and real-world platforms validate the effectiveness of our approach. Compared with VLA training without action priors, our model achieves faster convergence, higher success rates, and substantially stronger performance on data-scarce real-world tasks. Moreover, scaling up the action data in Stage~1 yields a more generalizable action prior that directly improves downstream VLA performance."
   }
 ]
