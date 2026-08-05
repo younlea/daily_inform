@@ -297,6 +297,15 @@
     "summary": "접촉이 풍부한 작업 환경에서 로봇 임피던스를 설정하는 것이 핵심 과제임. 이에 본 논문은 작업자의 포즈 명령을 받아 로봇 임피던스를 실시간으로 조정하는 비전 기반 정책, Stiffness Copilot을 제시함. 이 정책은 시뮬레이션 학습을 통해 얻은 지식으로 손목 카메라 이미지를 분석하여 로봇의 강성을 예측하며, 이를 통해 안전성과 높은 효율성을 모두 달성할 수 있음을 입증함."
   },
   {
+    "title": "시간 변화하는 힘이 필요한 조작 작업을 위한 모방 학습의 계층적 접근법",
+    "original_title": "A Hierarchical Approach to Imitation Learning for Manipulation Tasks Requiring Time Varying Forces",
+    "link": "https://arxiv.org/abs/2608.03103",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 Diffusion Policy가 가진 추론 지연 시간과 액션 청킹 기법의 한계를 극복하기 위해 DPA-FTG라는 계층적 정책을 제안함. 이 방법은 저주파 플래닝과 고주파 힘 제어를 분리하여, 실시간 접촉 안정성 유지를 통해 동적이고 복잡한 조작 작업이 가능하도록 함. 실험 결과, DPA-FTG는 이인 손 배터리 분리 작업 등에서 기존 최신 기술들 대비 우수한 성능을 입증함."
+  },
+  {
     "title": "Unitree Robotics, 스타 마켓 IPO 가격 책정 시작, 가치 59억 돌파 전망 (Global Times)",
     "original_title": "Unitree Robotics kicks off STAR market IPO pricing, expected to exceed 5.9 billion in value - Global Times",
     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1wcW02ZDNxUWoxZS1TMkprMTRiRHdlUTQtbXFrTWdhVlJ2cWhwTmxmVTNKbFdNVVVsWUNTb29HNjJPUWUwM2FKZ3N6eEhFWldQQ2pXT0lxSnZrY3NVZk1GRXlR?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2512.00727v2 Announce Type: replace \nAbstract: Reinforcement learning has enabled impressive locomotion skills on articulated robots, but common policy representations remain only weakly aligned with robot physics. Generic networks ignore kinematic structure, while graph-based policies encode connectivity without specifying how physical quantities transform across symmetric body parts. We introduce a morphological symmetry graph representation for locomotion policy learning and instantiate it in MS-PPO. Starting from the robot's topological graph, our representation augments each observation and action space with the permutation and sign transformations induced by morphological symmetry. This yields a symmetry-equivariant graph actor and a symmetry-invariant graph critic, enforcing the desired policy and value constraints by construction rather than through reward shaping or data augmentation. We evaluate MS-PPO on a variety of locomotion tasks using both Unitree Go2 quadruped and Unitree G1 humanoid, including command tracking, asymmetric joint failures, out-of-distribution command generalization, and zero-shot sim-to-real deployment. Experiments show improved symmetry generalization, robustness, sample efficiency, and model efficiency over topology- and symmetry-aware baselines."
-  },
-  {
-    "title": "TIDAL: Temporally Interleaved Diffusion and Action Loop for High-Frequency VLA Control",
-    "original_title": "TIDAL: Temporally Interleaved Diffusion and Action Loop for High-Frequency VLA Control",
-    "link": "https://arxiv.org/abs/2601.14945",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2601.14945v2 Announce Type: replace \nAbstract: Large-scale Vision-Language-Action (VLA) models offer semantic generalization but suffer from high inference latency, limiting them to low-frequency batch-and-execute paradigm. This frequency mismatch creates an execution blind spot, causing failures in dynamic environments where targets move during the open-loop execution window. We propose TIDAL (Temporally Interleaved Diffusion and Action Loop), a hierarchical framework that decouples semantic reasoning from high-frequency actuation. TIDAL operates as a backbone-agnostic module for diffusion-based VLAs, using a dual-frequency architecture to redistribute the computational budget. Specifically, a low-frequency macro-intent loop caches semantic embeddings, while a high-frequency micro-control loop interleaves single-step flow integration with execution. This design enables approximately 9 Hz control updates on edge hardware (vs. approximately 2.4 Hz baselines) without increasing marginal overhead. To handle the resulting latency shift, we introduce a temporally misaligned training strategy where the policy learns predictive compensation using stale semantic intent alongside real-time proprioception. Additionally, we address the insensitivity of static vision encoders to velocity by incorporating a differential motion predictor. TIDAL is architectural, making it orthogonal to system-level optimizations. Experiments show a 2x performance gain over open-loop baselines in dynamic interception tasks. Despite a marginal regression in static success rates, our approach yields a 4x increase in feedback frequency and extends the effective horizon of semantic embeddings beyond the native action chunk size. Under non-paused inference protocols, TIDAL remains robust where standard baselines fail due to latency."
   }
 ]
