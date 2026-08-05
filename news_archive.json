@@ -378,6 +378,15 @@
     "summary": "수어 인식(SLR)의 높은 연산 비용 문제를 해결하기 위해 경량화된 하이브리드 레저버 컴퓨팅(HRC) 기반의 새로운 접근법을 제안함. 이 방법은 MediaPipe가 추출한 신체 및 손동작 키포인트를 HRC 구조로 처리하여 고차원의 동적 표현을 생성하고, 리그회귀 모델로 클래스 라벨을 매핑함. WLASL100 데이터셋에서 경쟁력 있는 성능을 달성함과 동시에, DL 기반 방식 대비 현저히 낮은 연산 비용과 빠른 학습 시간을 확보하여 엣지 디바이스 배포 가능성을 입증함."
   },
   {
+    "title": "GEM-4D: 로봇 조작에 최적화된 기하학 기반 비디오 월드 모델",
+    "original_title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2605.22882",
+    "date": "2026-08-05 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 비디오 월드 모델이 가진 시간적 물리 일관성 부족 문제를 해결하기 위해, GEM-4D가 개발된 모델임. 본 모델은 사전에 학습된 기하학 기반 모델에서 추출한 4D 대응(correspondence) 감독 신호를 학습에 주입함으로써, 외관 정보와 기하학적 구조를 동시에 포착함. 더 나아가 역동학 모듈을 통해 비디오 롤아웃을 실제 로봇 트래젝토리로 변환할 수 있으며, 실세계 매니퓰레이션 성공률을 61%에서 81%로 향상시키는 성능을 입증함."
+  },
+  {
     "title": "Unitree Robotics, 스타 마켓 IPO 가격 책정 시작, 가치 59억 돌파 전망 (Global Times)",
     "original_title": "Unitree Robotics kicks off STAR market IPO pricing, expected to exceed 5.9 billion in value - Global Times",
     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1wcW02ZDNxUWoxZS1TMkprMTRiRHdlUTQtbXFrTWdhVlJ2cWhwTmxmVTNKbFdNVVVsWUNTb29HNjJPUWUwM2FKZ3N6eEhFWldQQ2pXT0lxSnZrY3NVZk1GRXlR?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.25985v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models have shown strong potential for general-purpose robot manipulation, but their inference latency remains a major obstacle to stable high-frequency control. Asynchronous execution mitigates this bottleneck by overlapping policy inference with action execution, yet the next action chunk is still predicted from stale observations while the robot continues to move. Direct chunk stitching therefore introduces handoff discontinuities, action jitter, and failures in contact-rich manipulation. Existing remedies typically require either full-policy retraining or architecture-specific runtime logic. This work proposes Action ControlNet (ACNet), a lightweight delay-aware adapter that uses the executed motion suffix as a residual condition for a mostly frozen action head. ACNet leaves the pretrained backbone unchanged, introduces few trainable parameters, and remains compatible with generative action heads such as diffusion and flow matching. On Kinetix, Meta-World MT50, and a real-world SO-ARM101 platform, ACNet improves robustness under inference delay and yields smoother asynchronous trajectories than direct chunk stitching, while remaining more lightweight than full delay-conditioned retraining."
-  },
-  {
-    "title": "Emcar: Embodied Controller for Animating Robots",
-    "original_title": "Emcar: Embodied Controller for Animating Robots",
-    "link": "https://arxiv.org/abs/2606.26008",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.26008v1 Announce Type: new \nAbstract: This chapter describes EMCAR, a novel software tool for programming robot motion that leverages the unique affordances of artistic practices such as puppetry and drawing to conceive, design, and program novel interactions and realize new use cases for HRI. The advantage of this no-code platform is that it expands creative applications for collaborative robots - putting robots directly in the hands of artists - and provides an inclusive environment that enables individuals with little or no technical backgrounds to engage meaningfully in collaborations and robotics research."
   }
 ]
