@@ -90,6 +90,33 @@
     "summary": "저항성 압력 배열을 활용한 새로운 촉각 인지 모델 Tactus가 공개됨. 본 모델은 텍스트 질의를 통해 압력 데이터만으로 객체 인식이 가능함을 입증함. STAG 벤치마크에서 훈련된 분류기 없이도 높은 인식 성능(top-1 0.771)을 달성하며, 저비용 센서 기반 로보틱스 인지 분야의 성능 기준을 제시함."
   },
   {
+    "title": "파운데이션 모델 기반 주방 로봇 매니퓰레이션 기술 개발",
+    "original_title": "Kitchen Robotic Manipulation utilizing Foundation Models",
+    "link": "https://arxiv.org/abs/2608.04042",
+    "date": "2026-08-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "주방 환경에서의 로봇 적용을 목표로, 오픈-보캐뷸러리 탐지 및 3D 재구성 기반의 모듈식 인식 파이프라인을 제시함. 해당 파이프라인은 2D-3D 특성 융합 전략을 통해 6D 자세 추정 및 그랩 플래닝을 수행하며, 특정 구성(LLMDet + SAMv2 + DINOv2 + GeoTransformer)이 20개 주방 벤치마크에서 높은 성능을 기록함. 이 결과는 환경 특정 재학습 없이 물리적 로봇에 성공적으로 구현되어 가정용 로봇 시스템으로서의 높은 적응성과 확장성을 입증함."
+  },
+  {
+    "title": "지표 근접 효과를 활용한 이온 추진 마이크로 호버크래프트의 설계 및 비행",
+    "original_title": "Design and Flight of an Ion-propelled Micro Hovercraft Leveraging Ground Proximity Effects",
+    "link": "https://arxiv.org/abs/2608.04343",
+    "date": "2026-08-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고효율, 저소음 마이크로 에어 비히클 개발을 목표로, 연구팀은 지표 근접 효과(Ground Proximity Effect)를 활용하는 이온 추진 마이크로 호버크래프트 설계를 진행함. 손바닥 크기의 프로토타입은 뛰어난 안정성 및 수십 회의 이착륙 사이클을 견디는 성능을 입증함. 특히 16 mN/W의 높은 추력 효율과 더불어, 기존 유사 규모 로봇을 능가하는 성능을 달성하며 새로운 클래스의 로봇 기술적 가능성을 제시함."
+  },
+  {
+    "title": "Arnold: 다중 작업 및 다중 신체 구현을 위한 근육 트랜스포머 정책",
+    "original_title": "Arnold: A multi-task, multi-embodiment muscle transformer policy",
+    "link": "https://arxiv.org/abs/2508.18066",
+    "date": "2026-08-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "고차원의 근골격계 모델 제어라는 기초 과학적 난제 해결을 위해 트랜스포머 기반의 근육 제어 정책 'Arnold'가 개발됨. 이 정책은 동작 복제(behavior cloning)와 강화 학습(RL)을 결합하여, 조작, 도달, 보행 등 14가지 복합 과제와 다양한 체형에서 전문가 수준의 성능을 달성함. 특히, 핵심 기술인 '센서운동 어휘(sensorimotor vocabulary)'를 통해 효율적인 다중 작업 및 다중 신체 구현 학습을 지원하며, 신규 과제에 대한 빠른 적응력을 제공함."
+  },
+  {
     "title": "상하이에서 실제 환경 시나리오로 훈련된 체화 지능 로봇",
     "original_title": "Embodied intelligence robots trained in real-world scenarios in Shanghai - en.people.cn",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE92Y29yemdIMWk0RlRWb2VkMFhYa2JyNlI3aGtDbGhmY0h1OXlFY25xMmZMS0hSVFRvb1lQZ3VlSW96Nm9RbjBUYmlnNkUtSVd0T2ZDT0RGbFltbjhESFFoUVBLSWM?oc=5",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.25136v1 Announce Type: new \nAbstract: General-purpose robots operating in partially observable environments, such as homes, require memory to support autonomy. They must recall diverse information from the past, such as where objects were placed, which tasks a human partner has completed, and when an appliance was turned on. Achieving this versatility requires a general memory retrieval mechanism. Transformer architectures that use attention over long contexts for memory retrieval provide a promising approach, as they learn retrieval from data rather than relying on task-specific or hand-designed rules. However, directly incorporating them into imitation learning from offline data introduces two key challenges: (1) the policy may learn spurious correlations between past information and predicted actions, and (2) errors accumulate in memory due to prediction inaccuracies and their compounding interactions with the environment, causing model drift and cascading failures. To address both challenges, we introduce HALO, a visuomotor policy with an attention-based memory retrieval mechanism for long-horizon control. First, to suppress spurious correlations, HALO distills vision-language model (VLM) priors into the policy. It generates memory-dependent question--answer pairs from demonstration trajectories and trains jointly with a video question--answering objective, steering retrieval toward task-relevant information. Second, to reduce the impact of accumulated errors in memory during closed-loop control, HALO uses sparse attention that restricts retrieval to only the most relevant parts of the history. Together, these components enable more reliable long-horizon control by guiding the policy to retrieve task-relevant information from up to eight minutes of past experience. Project website: https://robin-lab.cs.utexas.edu/HALO"
-  },
-  {
-    "title": "Learning Perceptive Platform Adaptive Locomotion Controllers for Quadrupedal Robots",
-    "original_title": "Learning Perceptive Platform Adaptive Locomotion Controllers for Quadrupedal Robots",
-    "link": "https://arxiv.org/abs/2606.25179",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.25179v1 Announce Type: new \nAbstract: Universal quadrupedal locomotion remains limited by the difficulty of integrating perception across diverse robot morphologies. State-of-the-art controllers rely on single-robot training or blind policies that omit real-time perception, leading to poor cross-embodiment generalization. Designing locomotion policies that remain robust across related quadruped morphologies while incorporating perception is challenging. Moreover, fully perceptive policies are often sensitive to noise, whereas blind controllers lack terrain awareness. In this work, we study how perception should be integrated into morphology-aware reinforcement learning architectures for deployable quadrupedal control. Building on MorAL, we train morphology-specialized universal controllers on multiple reference quadrupeds using adaptive terrain curricula. We compare a blind baseline, a critic-perceptive variant (MorAL+), and a fully perceptive actor-critic (PPAL). Policies are evaluated in simulation on flat and rough terrains, and deployed on ANYmal hardware. Results show that critic-only perception improves robustness and tracking consistency over blind baselines while remaining more stable than fully perceptive policies under perception noise. These findings highlight that perception placement and curriculum design are key factors for scalable, morphology-aware locomotion."
-  },
-  {
-    "title": "Wear-Clearance-Impact Coupling in the Jansen Linkage: A Gait-Durability-Optimized Design Slows Joint Loosening",
-    "original_title": "Wear-Clearance-Impact Coupling in the Jansen Linkage: A Gait-Durability-Optimized Design Slows Joint Loosening",
-    "link": "https://arxiv.org/abs/2606.25208",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.25208v1 Announce Type: new \nAbstract: A companion study introduced joint durability into the dimensional design of the Theo Jansen walking linkage and found its classical \"holy numbers\" Pareto-dominated, but it modelled the revolute joints as ideal, clearance-free pins, so its wear figures were relative rankings, not a prediction of in-service degradation. Here we relax that idealization. We build a forward-dynamic model of the Jansen leg in which a revolute joint becomes a clearance joint with a continuous normal contact law (Lankarani-Flores, hysteresis-damped) and Ambrosio friction, integrated as a constraint-stabilized differential-algebraic system, and couple it to the Archard law in a wear->clearance->impact feedback loop. Three findings emerge. First, neglecting clearance underestimates the peak joint load: the clearance model gives a peak contact force of ~104 N at the load-bearing pin against ~48 N for the ideal joint (~2x amplification), rising to ~426 N when two joints carry clearance at once. Second, the coupling is strongly impact-sensitive--single trajectories are non-monotonic and can reverse the design ranking, a chaos consistent with the literature--so designs must be compared statistically; over an ensemble of 16 randomized phases the optimized joint is robustly more durable, with per-cycle wear ~9-7x lower (peak force ~4x lower) at one clearance joint and still ~1.7x lower on both with two (p<0.01 throughout). Third, the wear is strongly non-uniform--it concentrates on a ~10 deg load arc--so assuming uniform clearance growth underestimates local clearance growth by ~36x. The clearance-free durability advantage thus survives the chaotic, multi-joint, non-uniformly-worn coupling in the ensemble mean. We deliver the first clearance-coupled forward-dynamic model of the Jansen leg and specify a falsifiable protocol to test each prediction."
-  },
-  {
-    "title": "RigPI: Dynamic Parameter Identification of Rigid Body via VLM-Seeded Differentiable Simulation",
-    "original_title": "RigPI: Dynamic Parameter Identification of Rigid Body via VLM-Seeded Differentiable Simulation",
-    "link": "https://arxiv.org/abs/2606.25212",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.25212v1 Announce Type: new \nAbstract: Accurate physical parameter identification of manipulated objects is fundamental to advanced robotic manipulation and the construction of faithful digital twins. However, acquiring physically consistent inertial and frictional properties from real-world interactions remains challenging due to sensing noise, modeling errors, and limited prior knowledge. This paper presents \\textbf{RigPI}, a systematic framework for identifying dynamic parameters of both unconstrained rigid bodies and multi-link rigid bodies during robot-object interaction. RigPI integrates vision-based semantic priors, force-torque measurements, and motion observations within a differentiable simulation pipeline. A vision-language model (VLM) provides informed initialization and a constrained search space, while gradient information from a differentiable physics simulator enables efficient and stable parameter refinement. The proposed two-stage optimization strategy alleviates sensitivity to noise and avoids physically implausible solutions. Extensive real-world experiments on objects with revolute and prismatic joints demonstrate that RigPI achieves accurate and stable parameter estimates, and successfully reproduces manipulation trajectories on a real robot with parameter-aware predictive validity. These results highlight the effectiveness and robustness of RigPI for real-world robotic system identification tasks."
   }
 ]
