@@ -1,5 +1,23 @@
 [
   {
+    "title": "이카루스 로보틱스 공동 창업자 제이미 파머 인터뷰: '우주를 위한 로봇 노동력' 구축 임박",
+    "original_title": "Interview with Icarus Robotics co-founder Jamie Palmer: Building a ‘robotic labor force for space’",
+    "link": "https://roboticsandautomationnews.com/2026/08/06/interview-with-icarus-robotics-co-founder-jamie-palmer-building-a-robotic-labor-force-for-space/103978/",
+    "date": "2026-08-06 20:44",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "상업 우주 정거장 및 달 인프라 구축이 가속화됨에 따라, 우주에서의 노동 주체가 중요한 과제로 부상함. 브루클린 기반 스타트업 Icarus Robotics는 이와 같은 우주 작업의 대부분이 지능형 로봇 노동자에 의해 수행될 것이라 예측함."
+  },
+  {
+    "title": "HII, Path Robotics 및 GrayMatter Robotics와 9억 달러 규모 계약 체결",
+    "original_title": "HII signs up to $900M agreement with Path Robotics, GrayMatter Robotics",
+    "link": "https://www.therobotreport.com/hii-signs-up-to-900m-agreement-with-path-robotics-graymatter-robotics/",
+    "date": "2026-08-06 20:19",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "HII가 Path Robotics와 GrayMatter Robotics와 9억 달러 규모의 계약을 체결하며, 기존 HYPER Program을 확장하는 내용을 담았음. 이번 계약은 협력 로봇 솔루션 역량을 대폭 강화하는 계기가 될 전망임."
+  },
+  {
     "title": "중국 로봇 제조사, 90억 달러 규모 IPO 추진 및 테슬라 옵티머스(Optimus) 비교 분석",
     "original_title": "Chinese Robot Maker To IPO At $9 Bil. How It Compares To Tesla's Optimus. - Investor's Business Daily",
     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeWRuY0FETUdBUFY5SzQ2RjlWamlLNmZiTEttZnVfTjBrZmRpR3Y4a0dLaUNfRFZQX01RRkNCLVo3VG9ORUk5am02RUtkR19qeGdRY25WMEk0YV9lVllqX29pTzB4dUItakJpYnB5eUEtbjk5Ul9CNzFPS2hIMUhVbnd3?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.27344v1 Announce Type: new \nAbstract: Dexterous manipulation depends on contact events that are fast, local, and often visually occluded. Piezoelectric microphones offer a compact and high-bandwidth way to sense these interactions, but the resulting vibro-acoustic signals are difficult to simulate faithfully enough for end-to-end sim-to-real policy learning on dexterous robot hands. We propose VibeAct, a framework that bridges real vibrotactile sensing and simulation-based reinforcement learning through a shared physical representation of contact and slip. In the real world, we embed piezoelectric microphones into a dexterous robot hand and collect vibro-acoustic data through teleoperation, then replay the recordings in a calibrated digital clone to automatically label per-finger contact and slip. A tactile estimator learns to predict contact and slip from real microphone waveforms, while manipulation policies are trained in simulation on the same representation computed directly from simulated contacts. This decoupling lets policies exploit rapid tactile feedback without simulating raw audio. Across five contact-rich tasks spanning regrasping, in-hand reorientation, and insertion, VibeAct consistently outperforms a proprioception-and-point-cloud baseline in simulation, with the largest gains on tasks requiring sustained reactive control, where the continuous slip-magnitude channel proves the most informative observation. The learned policies transfer to a physical dexterous hand-arm platform, improving success rates on deployed tasks. Project videos and additional details are at https://vibeact.github.io/."
-  },
-  {
-    "title": "World Action Models Enable Continual Imitation Learning with Recurrent Generative Replays",
-    "original_title": "World Action Models Enable Continual Imitation Learning with Recurrent Generative Replays",
-    "link": "https://arxiv.org/abs/2606.27374",
-    "date": "2026-06-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.27374v1 Announce Type: new \nAbstract: Going beyond predicting robot actions, World Action Models (WAMs) can also generate future visual observations. We build on this generative capability to propose Recurrent Generative Replay (REGEN), a continual imitation learning framework that synthesizes pseudo-replay trajectories, enabling a robot policy to rehearse previously learned tasks without storing their original human demonstrations. During continual adaptation, REGEN recursively queries the WAM to synthesize pseudo-replay trajectories conditioned only on prior task instructions and current-task observations. Experiments in both simulation and real-world manipulation settings show that REGEN reduces catastrophic forgetting by up to $50\\%$ relative to sequential fine-tuning, while approaching the performance of privileged experience replay methods that require access to real replay data. Finally, we analyze the factors limiting generated replay, identifying long-horizon visual degradation and action-observation inconsistency as the primary bottlenecks. Our results establish WAMs as a promising foundation for continual robot learning without stored demonstrations."
-  },
-  {
-    "title": "Scalable Behavior Cloning with Open Data, Training, and Evaluation",
-    "original_title": "Scalable Behavior Cloning with Open Data, Training, and Evaluation",
-    "link": "https://arxiv.org/abs/2606.27375",
-    "date": "2026-06-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.27375v1 Announce Type: new \nAbstract: We introduce ABC, a fully open-source stack for manipulation with behavior cloning. At its core is ABC-130K: the largest open-source teleoperation dataset to date, featuring 3,500 hours of data spanning over 130K episodes across 195 diverse tasks. Furthermore, we open-source our accessible hardware setup, training infrastructure, and simulation pipeline. We also release 400 hours of sim-teleop data and provide a co-training recipe that produces correlated simulation and real-world evaluation, offering a reliable proxy for ablating model-design and training decisions before costly real-world evaluation. We explore various training recipes and compare common architectural choices for Diffusion Transformers (DiT) and Vision-Language-Action (VLA) models, grounding our findings in real-world evaluations. The resulting policies successfully execute dexterous tasks such as box folding and extracting credit cards from wallets. By providing a reproducible toolkit, we aim to place researchers on an equal footing, establishing the necessary foundation to learn the ABCs of Behavior Cloning together as a community."
   }
 ]
