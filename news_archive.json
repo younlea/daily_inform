@@ -144,6 +144,15 @@
     "summary": "Unitree의 IPO를 앞두고 중국 로봇 시장의 핵심 기업으로 큰 주목을 받음. 관련 시장 분석에 따르면, 해당 기업의 잠재적 기업가치가 70억 달러(한화 약 9조 원) 이상에 달할 것으로 예상됨. 이는 Unitree가 글로벌 로봇 산업 내에서 강력한 경쟁력을 확보했음을 시사함."
   },
   {
+    "title": "자율 이동 로봇 기술 발전 현황 보고서 검토",
+    "original_title": "Report looks at advances in autonomous mobile robots",
+    "link": "https://www.therobotreport.com/report-looks-at-advances-in-autonomous-mobile-robots/",
+    "date": "2026-08-06 12:26",
+    "source": "The Robot Report",
+    "category": "hand",
+    "summary": "해당 보고서는 자율 이동 로봇(AMR)의 최신 기술 발전 현황을 다루고 있음. 자재 핸들링(material handling) 및 자동화 저장(automated storage) 시스템 등 다양한 산업 애플리케이션에서의 발전 사례들을 중점적으로 분석함."
+  },
+  {
     "title": "중국 로봇 제조사 Unitree, 상하이 IPO 가격 책정",
     "original_title": "Chinese robot maker Unitree prices Shanghai IPO - srnnews.com",
     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBzc2VzWTVkYS1WQXdWZmJDQ0kwdHpjTmdYX09keXgtWERxVjU2ZFV2NGZmNnE5aS1jYWI2VXh0clB6X3FaOW51VzJxWk9razhWNVY5TmZTTENBZ3FZb2pYS1A2cUZqWExIRzNTZ1dQTFRrUzM1eDVj?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.27295v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models are commonly pretrained on robot demonstrations by jointly mapping visual observations and language instructions to actions. However, dense visual-action supervision can dominate the comparatively sparse language-action signal. As a result, policies may rely on visual shortcuts rather than learn how language conditions action execution, making them sensitive to visual variations. To address this limitation, we propose LA4VLA, a language-action pretraining framework that enables policies to acquire language-conditioned action priors without visual observations. These priors capture reusable manipulation skills shared across tasks and scenes, reducing reliance on scene-specific visual cues. Specifically, LA4VLA decomposes expert demonstration trajectories into atomic action segments and pairs each segment with a corresponding low-level action description. This yields LA4-33K, a dataset of 33K Language-Action (LA) episodes derived entirely from existing demonstrations without additional robot data collection. We further develop LA4VLA-1B, a lightweight 1B-parameter VLA model, and investigate three paradigms for incorporating language-action supervision into VLA learning: LA-only pretraining, sequential LA-to-VLA pretraining, and mixed LA-VLA pretraining. Across simulation and real-world tasks, LA-pretrained policies consistently outperform matched VLA-pretrained counterparts, while combining LA and VLA supervision leads to further gains. In particular, mixed LA-VLA pretraining improves the average success rate of LA4VLA-1B over the no-pretraining baseline by up to 17.8 and 45.0 percentage points in simulation and real-world tasks, respectively. These results establish LA4VLA as an effective and complementary pretraining strategy for building stronger and more robust VLA policies."
-  },
-  {
-    "title": "VibeAct: Vibration to Actions for Contact-Rich Reactive Robot Dexterity",
-    "original_title": "VibeAct: Vibration to Actions for Contact-Rich Reactive Robot Dexterity",
-    "link": "https://arxiv.org/abs/2606.27344",
-    "date": "2026-06-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.27344v1 Announce Type: new \nAbstract: Dexterous manipulation depends on contact events that are fast, local, and often visually occluded. Piezoelectric microphones offer a compact and high-bandwidth way to sense these interactions, but the resulting vibro-acoustic signals are difficult to simulate faithfully enough for end-to-end sim-to-real policy learning on dexterous robot hands. We propose VibeAct, a framework that bridges real vibrotactile sensing and simulation-based reinforcement learning through a shared physical representation of contact and slip. In the real world, we embed piezoelectric microphones into a dexterous robot hand and collect vibro-acoustic data through teleoperation, then replay the recordings in a calibrated digital clone to automatically label per-finger contact and slip. A tactile estimator learns to predict contact and slip from real microphone waveforms, while manipulation policies are trained in simulation on the same representation computed directly from simulated contacts. This decoupling lets policies exploit rapid tactile feedback without simulating raw audio. Across five contact-rich tasks spanning regrasping, in-hand reorientation, and insertion, VibeAct consistently outperforms a proprioception-and-point-cloud baseline in simulation, with the largest gains on tasks requiring sustained reactive control, where the continuous slip-magnitude channel proves the most informative observation. The learned policies transfer to a physical dexterous hand-arm platform, improving success rates on deployed tasks. Project videos and additional details are at https://vibeact.github.io/."
   }
 ]
