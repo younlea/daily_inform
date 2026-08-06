@@ -72,6 +72,24 @@
     "summary": "로봇 구동 공간의 비유클리드 기하학적 구조를 반영하기 위해 리만 다양체 상에서 작동하는 새로운 샘플링 기반 모션 플래닝 프레임워크를 제안함. 본 방법론은 효율적인 미드포인트 근사법과 리만 자연 기울기(Riemannian natural gradients) 기반 로컬 플래너를 통해 계산 효율성과 기하학적 충실도를 동시에 확보함. 2-링크 planar arm 및 7-DoF Franka 매니퓰레이터 등의 실험을 통해, 제안된 접근법이 기존 유클리드 기반 계획법 및 수치 기반 솔버 대비 일관되게 낮은 비용의 궤적을 생성함을 입증함."
   },
   {
+    "title": "SSC: 양손 조작 라벨링을 위한 검증 가능한 구조화 표현 방식",
+    "original_title": "SSC: A Verifiable Structured Representation for Bimanual Manipulation Labelling",
+    "link": "https://arxiv.org/abs/2608.04425",
+    "date": "2026-08-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "장시간에 걸친 로봇 조작 시연의 라벨링의 어려움(자연어의 가변성 및 기존 템플릿의 경직성)을 해결하기 위해 구조화된 서브태스크 체인(SSC)을 제안함. SSC는 핵심 액션 구성 요소, 조건, 베이스-모션 필드, 아프터-스테이트 시퀀스 그래프 등으로 구성된 상태 전이 표현 방식임. 이 방식은 자연어 변환은 물론, 4가지 상태 전이 규칙에 기반한 논리적 검증 및 데이터의 미지 필드 자동 완성 기능까지 지원하는 것이 특징임."
+  },
+  {
+    "title": "Tactus: 저비용 압력 배열을 이용한 개방형 어휘 객체 인식",
+    "original_title": "Tactus: Open-Vocabulary Object Recognition from Low-Cost Pressure Arrays",
+    "link": "https://arxiv.org/abs/2608.04043",
+    "date": "2026-08-06 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "저항성 압력 배열을 활용한 새로운 촉각 인지 모델 Tactus가 공개됨. 본 모델은 텍스트 질의를 통해 압력 데이터만으로 객체 인식이 가능함을 입증함. STAG 벤치마크에서 훈련된 분류기 없이도 높은 인식 성능(top-1 0.771)을 달성하며, 저비용 센서 기반 로보틱스 인지 분야의 성능 기준을 제시함."
+  },
+  {
     "title": "상하이에서 실제 환경 시나리오로 훈련된 체화 지능 로봇",
     "original_title": "Embodied intelligence robots trained in real-world scenarios in Shanghai - en.people.cn",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE92Y29yemdIMWk0RlRWb2VkMFhYa2JyNlI3aGtDbGhmY0h1OXlFY25xMmZMS0hSVFRvb1lQZ3VlSW96Nm9RbjBUYmlnNkUtSVd0T2ZDT0RGbFltbjhESFFoUVBLSWM?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.25212v1 Announce Type: new \nAbstract: Accurate physical parameter identification of manipulated objects is fundamental to advanced robotic manipulation and the construction of faithful digital twins. However, acquiring physically consistent inertial and frictional properties from real-world interactions remains challenging due to sensing noise, modeling errors, and limited prior knowledge. This paper presents \\textbf{RigPI}, a systematic framework for identifying dynamic parameters of both unconstrained rigid bodies and multi-link rigid bodies during robot-object interaction. RigPI integrates vision-based semantic priors, force-torque measurements, and motion observations within a differentiable simulation pipeline. A vision-language model (VLM) provides informed initialization and a constrained search space, while gradient information from a differentiable physics simulator enables efficient and stable parameter refinement. The proposed two-stage optimization strategy alleviates sensitivity to noise and avoids physically implausible solutions. Extensive real-world experiments on objects with revolute and prismatic joints demonstrate that RigPI achieves accurate and stable parameter estimates, and successfully reproduces manipulation trajectories on a real robot with parameter-aware predictive validity. These results highlight the effectiveness and robustness of RigPI for real-world robotic system identification tasks."
-  },
-  {
-    "title": "GRAFT: Graph-Based Affordance Transfer via Part Correspondence",
-    "original_title": "GRAFT: Graph-Based Affordance Transfer via Part Correspondence",
-    "link": "https://arxiv.org/abs/2606.25241",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.25241v1 Announce Type: new \nAbstract: Generalizing robotic manipulation to unseen objects remains challenging, as learning-based approaches require many demonstrations and fail in few-shot settings. Prior work transfers affordances through semantic retrieval, but semantics alone neglect geometric similarity, which is critical for manipulation. We propose GRAFT, a geometry-aware correspondence framework for zero-shot manipulation transfer using only one demonstration per object. Objects are represented as part-based graphs, where part-level descriptors support global instance retrieval and part correspondence, and vertex-level descriptors enable fine-grained contact point matching. For an unseen object, our method first retrieves the most functionally and geometrically similar instance from the demonstration buffer with aligned functional parts, and finally propagates the contact points through point-wise correspondence."
-  },
-  {
-    "title": "DynaMOMA: Instantaneous Prediction of Grasp Poses for Mobile Manipulation of Dynamic Objects",
-    "original_title": "DynaMOMA: Instantaneous Prediction of Grasp Poses for Mobile Manipulation of Dynamic Objects",
-    "link": "https://arxiv.org/abs/2606.25295",
-    "date": "2026-06-25 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.25295v1 Announce Type: new \nAbstract: Mobile manipulation is a fundamental robotics task and has advanced rapidly in recent years, enabling robots to navigate, reach, and interact with objects in complex environments. However, mobile manipulation of dynamic objects remains highly challenging, as robots must coordinate the mobile base and arm while adapting to continuously evolving target poses. A key challenge lies in predicting temporally consistent short-horizon grasp trajectories from dynamic observations. In this work, we propose \\ours{}, a dynamic mobile manipulation framework that couples instantaneous grasp trajectory prediction with whole-body control policy. Our predictor uses an anchor-based diffusion model to generate temporally consistent short-horizon grasp trajectories conditioned on historical observations. The predicted trajectories are then encoded as compact features and fed to a whole-body reinforcement learning policy, which controls the mobile manipulator for dynamic grasping. We further introduce a anticipation-guided reward that equips the policy with an anticipatory grasping horizon by adaptively shifting the target from the current grasp observation to the instantaneously predicted grasp trajectory. Through extensive experiments in Isaac Gym simulation, we show that our method achieves strong performance in mobile manipulation of dynamic objects across diverse settings and grasping metrics. Furthermore, our predictor and policy demonstrate strong generalizability in real-world experiments."
   }
 ]
