@@ -1,5 +1,23 @@
 [
   {
+    "title": "창고 환경에서 생존 가능한 로봇 개발",
+    "original_title": "Building robots that survive the warehouse",
+    "link": "https://www.therobotreport.com/building-robots-that-survive-warehouse/",
+    "date": "2026-08-07 22:01",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Nomagic은 실제 생산 데이터가 회사의 핵심 경쟁 우위(moat)라고 주장함. 실제 창고 환경의 복잡하고 예측 불가능한 조건이야말로 로봇이 성능을 입증하거나 실패할 수 있는 결정적인 시험대임. 이에 기반하여 실전 데이터를 통해 로봇의 신뢰성을 확보하는 것이 중요함."
+  },
+  {
+    "title": "Tecta Systems, TactaBot으로 고숙련 제조 작업 시장 공략",
+    "original_title": "Tacta Systems takes aim at high-skilled manufacturing work with TactaBot",
+    "link": "https://www.therobotreport.com/tacta-systems-takes-aim-high-skilled-manufacturing-work-tactabot/",
+    "date": "2026-08-07 21:53",
+    "source": "The Robot Report",
+    "category": "hand",
+    "summary": "Tacta Systems가 로봇에게 새로운 민첩한(dexterous) 스킬을 가르칠 수 있는 3단계 시스템을 공개함. 이 시스템은 로봇 핸드를 포함한 구성을 특징으로 하며, 이를 통해 고숙련 제조 작업 등 복잡한 분야의 로봇 적용 가능성을 제시함."
+  },
+  {
     "title": "유니트리 IPO 분석: 로봇 주식의 중요성 탐구",
     "original_title": "Unitree IPO Explained: Why Robot Stocks Matter - The Zero Net",
     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5VYkZLNmhfT2VXeURaakJPeG40ckEtZEZQZHlZRTFhSFFaQzhNcVhsNHlwTENTd3FmQWZ4NnQxODlrdWhZQW9QdnM3aEs1OVdyS2hpeENOajk?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2602.05233v2 Announce Type: replace \nAbstract: Vision-language-action models have advanced robotic manipulation but remain constrained by reliance on the large, teleoperation-collected datasets dominated by the static, tabletop scenes. We propose a simulation-first framework to verify VLA architectures before real-world deployment and introduce MobileManiBench, a large-scale benchmark for mobile-based robotic manipulation. Built on NVIDIA Isaac Sim and powered by reinforcement learning, our pipeline autonomously generates diverse manipulation trajectories with rich annotations (language instructions, multi-view RGB-depth-segmentation images, synchronized object/robot states and actions). MobileManiBench features 2 mobile platforms (parallel-gripper and dexterous-hand robots), 2 synchronized cameras (head and right wrist), 630 objects in 20 categories, 5 skills (open, close, pull, push, pick) with over 100 tasks performed in 100 realistic scenes, yielding 300K trajectories. This design enables controlled, scalable studies of robot embodiments, sensing modalities, and policy architectures, accelerating research on data efficiency and generalization. We benchmark representative VLA models and report insights into perception, reasoning, and control in complex simulated environments, with all code, datasets, and models publicly released."
-  },
-  {
-    "title": "AeroGrab: A Unified Framework for Aerial Grasping in Cluttered Environments",
-    "original_title": "AeroGrab: A Unified Framework for Aerial Grasping in Cluttered Environments",
-    "link": "https://arxiv.org/abs/2603.15097",
-    "date": "2026-06-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2603.15097v2 Announce Type: replace \nAbstract: Reliable aerial grasping in cluttered environments remains challenging due to occlusions and collision risks. Existing aerial manipulation pipelines largely rely on centroid-based grasping and lack integration between the grasp pose generation models, active exploration, and language-level task specification, resulting in the absence of a complete end-to-end system. In this work, we present an integrated pipeline for reliable aerial grasping in cluttered environments. Given a scene and a language instruction, the system identifies the target object and actively explores it to gain better views of the object. During exploration, a grasp generation network predicts multiple 6-DoF grasp candidates for each view. Each candidate is evaluated using a collision-aware feasibility framework, and the overall best grasp is selected and executed using standard trajectory generation and control methods. Experiments in cluttered real-world scenarios demonstrate robust and reliable grasp execution, highlighting the effectiveness of combining active perception with feasibility-aware grasp selection for aerial manipulation."
-  },
-  {
-    "title": "Web2Grasp: Learning Functional Grasps from Web Images of Hand-Object Interactions",
-    "original_title": "Web2Grasp: Learning Functional Grasps from Web Images of Hand-Object Interactions",
-    "link": "https://arxiv.org/abs/2505.05517",
-    "date": "2026-06-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2505.05517v3 Announce Type: replace-cross \nAbstract: Functional grasping is essential for enabling dexterous multi-finger robot hands to manipulate objects effectively. Prior work largely focuses on power grasps, which only involve holding an object, or relies on in-domain demonstrations for specific objects. We propose leveraging human grasp information extracted from web images, which capture natural and functional hand-object interactions (HOI). Using a pretrained 3D reconstruction model, we recover 3D human HOI meshes from RGB images. To train on these noisy HOI data, we propose to use: (1) an interaction-centric model to learn the functional interaction pattern between hand and object, and (2) geometry-based filtering to remove the infeasible grasps and physical simulation to retain grasps who can resist disturbance. In IssacGym simulation, our model trained on reconstructed HOI grasps achieves a 75.8% success rate on objects from the web dataset and generalizes to unseen objects, outperforming baseline methods in both grasp success and functional quality. In real-world experiments with the LEAP hand and Inspire hand, it attains a 77.5% success rate across 12 objects, including challenging ones such as a syringe, spray bottle, knife, and tongs. Project website is at: https://web2grasp.github.io/."
   }
 ]
