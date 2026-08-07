@@ -153,6 +153,33 @@
     "summary": "월드 액션 모델(WAMs)이 시각 정보만으로는 접촉 기반 조작 과정의 미세한 물리 상태 파악에 한계가 있음. 이에 촉각 정보를 효과적으로 통합하기 위해 비대칭 어텐션을 도입한 Tactile-WAM을 제시함. 이 모델은 시각적 동역학을 유지하면서 행동 예측 과정에만 촉각 정보를 집중시키는 방식이며, ManiFeel 테스트와 5가지 실제 로봇 작업을 통해 평균 성공률을 크게 향상시켜 49.2%의 높은 성능을 달성함."
   },
   {
+    "title": "VLAff: 통합 실행 가능 어포던스를 위한 비전-언어-어포던스 모델",
+    "original_title": "VLAff: Vision-Language-Affordance Model for Unified Actionable Affordances",
+    "link": "https://arxiv.org/abs/2608.05215",
+    "date": "2026-08-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇이 인간의 행동을 학습하는 과정에서 발생하는 체현 불일치(embodiment mismatch) 문제를 해결하기 위해, 본 연구는 인간의 전방위적 비디오를 활용하여 시각적, 파지(grasp), 궤적 등 실행 가능한 어포던스를 추출함. 이를 바탕으로 대규모 데이터셋 EgoAffordance를 구축하고, 모든 어포던스의 교차 모드 상관관계를 학습하는 통합 기초 모델 VLAff를 제안함. VLAff는 시각적 입력과 지시를 받아 어포던스 맵, 파지 자세, 궤적을 생성하며, 3D 공간 정보와 결합하여 직접 실행 가능한 행동으로 변환함으로써 제로샷 조작 등 실시간 로봇 응용 분야에서 최고 성능을 달성했음을 입증함."
+  },
+  {
+    "title": "제로샷 환경에서의 시각 정보 접지 능력 분석 (Visual Grounding in Zero-Shot Vision-Language Control)",
+    "original_title": "Visual Grounding in Zero-Shot Vision-Language Control",
+    "link": "https://arxiv.org/abs/2608.06154",
+    "date": "2026-08-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 Vision-Language Models (VLMs)의 제로샷 컨트롤러 활용에 대한 광범위한 입력 결손(input-ablation) 분석을 수행했음. 실험 결과, 대부분의 VLM이 시각적 입력 근거 없이 동작하는 사례를 보이며, 특히 방향 전환 인식이나 반사 대칭성(mirror equivariance) 측면에서 한계를 드러냄. 다만, 후처리된 대칭성 합의(symmetry-consensus) 시스템을 도입했을 경우 높은 정확도(최대 0.973 balanced accuracy)를 달성하며, VLM이 통일된 제로샷 컨트롤러보다는 경계가 설정된 선택적 위험 보조 시스템으로 기능함을 입증함."
+  },
+  {
+    "title": "형상 인지 기반 방향성 경계 상자(OBB)의 수평 경계 상자(HBB) 변환",
+    "original_title": "Shape-Aware Oriented Bounding Box (OBB) to Horizontal Bounding Box (HBB) Conversion",
+    "link": "https://arxiv.org/abs/2608.05858",
+    "date": "2026-08-07 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "원격 탐사 이미지에서의 객체 탐지 정확도는 바운딩 박스 표현 방식에 크게 의존하며, 방향성 객체에는 OBB가 HBB보다 우수한 성능을 보임. 기존 OBB를 HBB로 변환하는 방식은 공간 낭비나 데이터 손실의 문제가 존재함. 이에 본 논문은 선체 형상, 채움도, 방향성 정보를 활용한 새로운 형상 인지 기반 OBB-to-HBB 변환 방법을 제안하고, 이를 세 가지 기존 방법론과 비교 검증함."
+  },
+  {
     "title": "DeepSeek과 국영 석유 대기업, 휴머노이드 로봇 제조사 Unitree의 9억 달러 IPO에 참여함",
     "original_title": "DeepSeek, state oil giant back humanoid robot maker Unitree's $900m IPO - Nikkei Asia",
     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdXBWVF8zeGZ6emVGSDlZNUhPYXNlTDVsUlhFMFFfbUdSelhPZnZzVk43WGRSaXRaOEk1NFVGT1NCSmNweV9KYmhaNWZpRmlIYVFidGdqemdDSkJJNVpNcGxBMlRMREs0ZkE3Nmk5dl93U3g5aVVDRVpuTFJkU3NybTM4RVJ5c2hqNXJaaW80VWR5d3h5Y25HTE1yS1JKUFJ2bVpfd1lxMFNoMmgxWXc5TmNhYzQ?oc=5",
@@ -17971,32 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Michigan Data Center to Deploy 143 Chinese Humanoid Robots as US Weighs Restrictions  ibtimes.sg"
-  },
-  {
-    "title": "RMTL: Reinforced Micro-task Learning for Long-Horizon Manipulation with VLM Rewards",
-    "original_title": "RMTL: Reinforced Micro-task Learning for Long-Horizon Manipulation with VLM Rewards",
-    "link": "https://arxiv.org/abs/2606.26175",
-    "date": "2026-06-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.26175v1 Announce Type: new \nAbstract: Reinforcement learning (RL) for robotic manipulation often requires manually designing a dense reward function, which is difficult to tune and often fragile, or learning a reward from human demonstrations or preferences, which can be expensive. A recent line of work uses pretrained vision-language models (VLMs) as zero-shot reward models, replacing these costs with a single text prompt. However, we argue that a single global prompt is too coarse for long-horizon manipulation tasks with randomized initial conditions. The single-prompt VLM reward is near-flat for much of the trajectory, making early progress hard for the agent to detect. We propose Reinforced Micro-Task Learning (RMTL), an approach that decomposes a manipulation task into a small set of language-described micro-tasks and trains the agent to switch between them. At each step, the agent receives a multi-view VLM reward computed using the prompt of the currently active micro-task and averaged across multiple camera views to reduce the effect of view-specific occlusions. A reverse curriculum gradually exposes the agent to harder initial conditions, while a PPO worker is first trained with a fixed distance-based rule that selects the active micro-task. We then replace this rule with a learned hierarchical manager, turning rule-based phase selection into a fully learned hierarchical policy. We instantiate RMTL on the Fetch manipulation environment using three short stage-specific prompts and without additional prompt tuning. Experiments show that RMTL provides more informative reward signals than single-prompt VLM rewards, enabling faster learning. These results suggest that decomposing VLM rewards into micro-task-specific language prompts can substantially improve the scalability of language-guided reinforcement learning for robotic manipulation."
-  },
-  {
-    "title": "LiMoDE: Rethinking Lifelong Robot Manipulation from a Mixture-of-Dynamic-Experts Perspective",
-    "original_title": "LiMoDE: Rethinking Lifelong Robot Manipulation from a Mixture-of-Dynamic-Experts Perspective",
-    "link": "https://arxiv.org/abs/2606.26183",
-    "date": "2026-06-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.26183v1 Announce Type: new \nAbstract: Building a generalist robot that can leverage prior knowledge for continuous task adaptation remains a significant challenge. Previous works alleviate the catastrophic forgetting problem by parameter-efficient fine-tuning for single-task adaptation. However, they fail to extract reusable skills and model the interaction with other skills effectively. Recent works try to address these issues by learning prompts. Differently, this paper presents an architectural perspective on the Lifelong Mixture of Dynamic Experts (\\textit{LiMoDE}), a novel two-stage learning scheme for lifelong robot manipulation. Specifically, a dynamic MoE structure is first proposed in the multi-task pre-training stage to learn prior knowledge, where a varied number of heterogeneous experts are activated based on the motion information to address different short-term manipulations. Subsequently, in the task adaptation stage, we design a lifelong MoE adaptation mechanism % (LiMoEAM) that learns lifelong experts and dynamically combines them with frozen ones for new tasks, facilitating the knowledge transfer during adaptation. The proposed \\textit{LiMoDE} is evaluated on both the simulated lifelong learning benchmark and real-world tasks. Extensive experiments demonstrate its effectiveness in achieving superior performance and strong lifelong adaptation by introducing a moderate number of additional trainable parameters and inference overhead."
-  },
-  {
-    "title": "Morphology-Specific Closed-Loop Control of Logarithmic-Spiral Continuum Arms via Online Jacobian Error Compensation",
-    "original_title": "Morphology-Specific Closed-Loop Control of Logarithmic-Spiral Continuum Arms via Online Jacobian Error Compensation",
-    "link": "https://arxiv.org/abs/2606.26188",
-    "date": "2026-06-26 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.26188v1 Announce Type: new \nAbstract: Logarithmic spirals are ubiquitous in biological appendages and provide an attractive morphology for continuum manipulators capable of reaching, wrapping, and grasping. Recently reported logarithmic-spiral robots demonstrated scalable fabrication and versatile grasping but lacked inverse kinematics and closed-loop control. This work presents the first morphology-specific closed-loop task-space control framework for logarithmic-spiral continuum arms. A segmented tendon-driven model with a centerline backbone and equilateral tendon routing is developed in MuJoCo to capture tapered compliance and contact dynamics. An analytical task-space Jacobian is derived directly from the logarithmic-spiral kinematics and combined with online Jacobian error compensation using a Broyden secant update and Kalman-filter estimation. The resulting controller continuously corrects modeling errors arising from nonlinear deformation, contact, and geometric mismatch. The framework is validated through planar and spatial simulations, including trajectory tracking, attitude regulation, disturbance rejection, three-dimensional position tracking, and simultaneous position-orientation control. Compared with a piecewise-constant-curvature (PCC) baseline, the proposed method consistently reduces tracking errors, suppresses attitude drift, and maintains a bounded Jacobian estimation error. The controller is further applied to morphology-enabled manipulation tasks, including obstacle-assisted reach-wrap-release motions, adaptive whole-arm grasping, and cooperative multi-arm object handling. Results demonstrate that combining logarithmic-spiral morphology with online Jacobian compensation enables accurate, robust, and scalable control of highly underactuated continuum manipulators. The proposed framework establishes a physics-grounded baseline for future hardware implementation and learning-augmented soft robotic control."
   }
 ]
