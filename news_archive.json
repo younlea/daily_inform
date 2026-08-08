@@ -225,6 +225,15 @@
     "summary": "중국의 로봇들이 곡예와 벽면 등반 같은 고난도 임무를 수행하는 기술력을 보유함. 본 기사는 이러한 첨단 로봇 기술의 현황을 조명하고, 해당 기술들이 시장의 관심을 받아 투자 유치에 성공할 수 있을지에 대한 가능성을 분석함. 로봇 산업의 다음 단계를 가늠할 중요한 기회 분석으로 평가됨."
   },
   {
+    "title": "Unitree Robotics, IPO 가격 150.80 위안/주 책정 및 왕싱싱 창업자 자산 $30억 돌파 전망, 핵심 직원별 $1,040만 이상 주식 보유 사실 공개",
+    "original_title": "Unitree Robotics Prices IPO at 150.80 Yuan/Share, Founder Wang Xingxing's Fortune Could Exceed $3.0 Billion, Core Employees Hold Stock Worth Over $10.4 Million Each - finance.biggo.com",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xRThFMXR2S0s4ckdWR29IRlBVZmQ3WWVFeEEtajB6MnE2VTJWODlDUlVNRXRWRXktZEZkWUtDMHlPUUx2bWNlSEhzYkxJZ2FSQnZiUmYwOUJWcGxJYmF2NkxYS1hKUVNHdzFaUl9ZNlA2TFhYRkE?oc=5",
+    "date": "2026-08-07 06:06",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree Robotics가 주당 150.80 위안 가격으로 IPO를 진행함. 이로써 창업자 왕싱싱의 총 자산이 30억 달러를 초과할 것으로 예상됨. 또한, 핵심 직원들 또한 1인당 1,040만 달러 이상의 가치가 있는 주식을 보유하고 있는 것으로 파악됨."
+  },
+  {
     "title": "중국, 휴머노이드 로봇 IPO 추진 가속화; Unitree가 상하이 상장 주도",
     "original_title": "China speeds humanoid robot IPO push as Unitree leads Shanghai listing - CHOSUNBIZ - Chosunbiz",
     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUzl1SVRoUkNVRFpZcjlxT2k1Nk5rcklYcG1FUWo1d05UY1lXWnRJOUtkMVR6NGZjeUFDWThLb3FzLXc3WDhRaHR0S0pVRkYxR2UzRzBLTGQ2VmJFZWVNX09iaFB1aHRNQ1NoWW9aWTBZcVNhVkpmcVUzYkpiVWdFWTJ30gGWAUFVX3lxTE43SXQwRC1MbDVyRlRUWGllcGt1X2I5MmZ6dnFMTkZXeV9nZ0V2VjhmdTBUYU50WDFOc2NNUVFMNWRlQ1FiVDg2Z1hKMlhtQ2RfQjhuTnBHc2J0WU4ybGZvN1lZVEF1VFEzX1lHZnBqZFhVeDJTRXJzRUNVa2NCM21OUUxVSmVzUldSNkc1NmZhenRHMkU1QQ?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.28320v1 Announce Type: new \nAbstract: Scaling imitation learning requires large datasets, yet human teleoperation inevitably produces mixed-quality demonstrations containing hesitations and recoveries. Prior frame-level progress reward models supervise on absolute temporal progress proxies that suffer from label noise, or require costly human annotations to define subtask boundaries. We present WARP (Warp-Augmented Relative Progress), a novel fully self-supervised algorithm for learning dense, signed relative progress magnitudes directly from successful demonstrations. WARP generates per-frame progress targets via time-warp augmentations of demonstrations (variable playback speeds and reversals) and we train WARP-RM to predict the normalized elapsed time between input frames. Aggregating these predictions across overlapping windows yields a dense frame-level progress signal. We then introduce WARP-BC, which leverages these scalar reward estimates to upweight high-advantage action chunks during behavior cloning, where chunk-level advantage is obtained by aggregating per-frame rewards. We evaluate our approach on a physical bimanual robot system performing a long-horizon deformable object manipulation task: folding T-shirts from a random crumpled start. To evaluate policy robustness against suboptimal data, we construct training datasets of varying quality using episode length as a proxy for teleoperation sub-optimality. As the dataset is widened to admit more inefficiencies, WARP-BC maintains a 19/20 success rate compared to vanilla BC's collapse to 2/20, improving throughput by up to 18x."
-  },
-  {
-    "title": "DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand",
-    "original_title": "DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand",
-    "link": "https://arxiv.org/abs/2606.28323",
-    "date": "2026-06-29 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.28323v1 Announce Type: new \nAbstract: Dexterous manipulation policies can solve individual skills, but composing them to perform multiple tasks with a single hand remains challenging. Adding a new task on top of an existing manipulation skill often imposes conflicting demands on overlapping fingers and contact modes, causing destructive interference between preserving an existing manipulation outcome and executing a new one. We propose DexCompose, a role-aware residual composition framework that reuses pretrained dexterous policies for multi-task manipulation through explicit finger-level action ownership. Given two pretrained full-hand policies, DexCompose first collects successful post-task states from the first skill and performs release tests over candidate finger masks to identify which fingers are necessary for maintaining the established skill state. It then trains two asymmetric residual modules: a bounded residual stabilizer for task preservation, and a context-aware residual that adapts the frozen downstream policy only within the action subspace assigned to the new task. We evaluate the framework on 16 composite dexterous manipulation tasks spanning four object-retention skills and four downstream interactions. DexCompose achieves a 77.4% average composite success rate, demonstrating that structural action ownership with dual residuals offers a promising direction for composing dexterous skills beyond conventional policy chaining."
   }
 ]
