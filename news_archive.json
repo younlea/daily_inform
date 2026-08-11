@@ -1,5 +1,32 @@
 [
   {
+    "title": "클라우드flare의 AI 콘텐츠 비용 지불 시스템 분석",
+    "original_title": "How Cloudflare Is Making AI Pay for Content",
+    "link": "https://blog.bytebytego.com/p/how-cloudflare-is-making-ai-pay-for",
+    "date": "2026-08-11 15:30",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "본 기사는 Cloudflare가 제시하는 AI 기반 콘텐츠 비용 청구 솔루션의 작동 원리를 다루고 있음. 해당 솔루션의 구조와 적용 방식을 명확히 설명하며, 구체적인 기술적 분석을 총 5단계에 걸쳐 상세히 전개함."
+  },
+  {
+    "title": "중국의 신규 IPO가 기술적 부상에 대한 글로벌 논쟁의 명확성을 가져올 수 있을까?",
+    "original_title": "Can China’s new IPOs bring clarity to global debate over its technological rise? - Global Times",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFByVmdvbFZJWlJKMFFLUUFLNU1QNFNHQjVWRlNvanA4QjExSzUtbGcwWVdoZHZEdWRnNmM4MG5jdlFrdld5b1JfWVU1Ul9lN3lkZEhsaGpUN3FidUxVV2I5RlBB?oc=5",
+    "date": "2026-08-11 15:13",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "중국발 신규 IPO가 국가 차원의 글로벌 기술 발전 논쟁에 어떤 명확성을 제공할 수 있는지 분석함. 이는 중국이 추진하는 기술적 부상의 방향성을 자본 시장 메커니즘을 통해 검증하려는 움직임으로 해석됨."
+  },
+  {
+    "title": "Unitree, IPO 성공률 0.018% 기록하며 높은 투자 수요 입증",
+    "original_title": "Unitree IPO winning rate at approximately 0.018%, signaling heated investor demand - Global Times",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE12VkVQcVhUcXVIMVU4SWVEdEN2aHota1JGY0NQZ1VaeTJXQWhGaHZ5b3BlajM4Z2xiM1RQVmlMOU9TLTl3TXV6UXBNVjQybnBGTU9kVEc1LWl4UC1qQ2pBM1Fn?oc=5",
+    "date": "2026-08-11 15:05",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree의 IPO 성공률이 약 0.018% 수준으로 집계됨. 이는 낮은 성공률 수치 자체보다 시장 전반에서 해당 기업에 대한 매우 뜨거운 투자 관심과 높은 자본 수요가 존재함을 시사하는 신호로 해석됨."
+  },
+  {
     "title": "창고 내 로봇 플릿의 안전 및 확장성 논의 웹세미나 개최 예정",
     "original_title": "Webinar to discuss safety and scaling robot fleets in the warehouse",
     "link": "https://www.therobotreport.com/webinar-to-discuss-safety-scaling-robot-fleets-warehouse/",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.31132v1 Announce Type: new \nAbstract: Generative control policies (GCPs), such as diffusion policies and flow-based vision-language-action models, enable test-time scaling in robot control. Test-time compute can be allocated along two axes: sequential scaling, which increases denoising steps to refine actions, and parallel scaling, which samples multiple candidate actions to search across modes of the policy distribution. However, the optimal allocation of sequential and parallel compute is hard to know a priori as it is state-, task-, and policy-dependent. For example, early stages of a grasp may benefit from broader parallel exploration, while near-contact phases may require more sequential refinement for precision. We present ELASTIC, an algorithm that learns state-dependent test-time compute schedules for GCPs. We formulate compute allocation as a meta-Markov Decision Process in which a meta-policy interacts with a frozen pretrained robot policy and selects sequential steps and parallel samples at each denoising iteration to maximize task success while minimizing compute. Using reinforcement learning, this meta-policy also learns adaptive compute schedules without access to the GCP's training data. Across simulated manipulation benchmarks with diffusion policies, ELASTIC Pareto-dominates fixed and single-axis scaling baselines at matched compute budgets. On real-world robot manipulation with the $\\pi_{0.5}$ vision-language-action model, ELASTIC matches best-of-$10$ success while reducing wall-clock latency by 34%."
-  },
-  {
-    "title": "LLM-Powered Interactive Robotic Action Synthesis from Multimodal Speech, Gestures, and Music",
-    "original_title": "LLM-Powered Interactive Robotic Action Synthesis from Multimodal Speech, Gestures, and Music",
-    "link": "https://arxiv.org/abs/2606.31158",
-    "date": "2026-07-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.31158v1 Announce Type: new \nAbstract: The quest for intuitive and natural human-robot interaction (HRI) remains a significant challenge in robotics. Traditional methods often rely on rigid, pre-programmed commands that limit the robot's expressiveness and adaptability. This paper introduces a novel framework that leverages the reasoning capabilities of Large Language Models (LLMs) to synthesize complex robotic actions from a rich tapestry of multimodal human inputs: natural speech, hand gestures, and music/sound beats. Our system architecture integrates a speech transcription model, a gesture recognition module, and a signal processing pipeline for beat detection. These processed inputs are contextualized using prompt templates and fed into a LLM. The LLM, informed by a predefined robot action space, reasons over the combined inputs to generate a coherent sequence of actions. This sequence is dispatched to an action queue for execution on a quadruped robot over ROS. The framework has ability to interpret and fuse semantic commands from speech, deictic information from gestures, and rhythmic cues from music. This work represents a step towards creating robots that can interact with humans in a more fluid, creative, and context-aware manner."
-  },
-  {
-    "title": "TactX: Learning Shared Tactile Representations Across Diverse Sensors",
-    "original_title": "TactX: Learning Shared Tactile Representations Across Diverse Sensors",
-    "link": "https://arxiv.org/abs/2606.31236",
-    "date": "2026-07-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.31236v1 Announce Type: new \nAbstract: Tactile sensors provide critical information for contact-rich manipulation, yet tactile representations and policies remain tightly coupled to each specific sensor, limiting transferability across robots and hardware platforms. We propose TactX, a framework for learning a transferable tactile representation across sensors spanning three fundamentally different transduction modalities: resistive, magnetic, and vision-based. TactX maps heterogeneous tactile observations into a shared latent space through modality-specific encoders trained on paired contact data. Such paired interactions provide a natural alignment signal across modalities, and the encoders are jointly trained across all sensor pairs, inducing a consistent latent space for all sensor types. Our experiments show that TactX aligns tactile representations across sensors while preserving object-level contact information, as evidenced by sensor-identity prediction and object classification in the learned latent space. We evaluate TactX on four contact-rich manipulation tasks: pick-and-place, plug insertion, board wiping, and object reorientation, and show that policies trained with one sensor transfer zero-shot to physically distinct sensors through the shared latent. This improves the average success rate from 27.5% for vision-only policy to 45.9%, providing a step toward sensor-agnostic tactile manipulation."
-  },
-  {
-    "title": "3D HAMSTER: Bridging Planning and Control in Hierarchical Vision Language Action Models through 3D Trajectory Guidance",
-    "original_title": "3D HAMSTER: Bridging Planning and Control in Hierarchical Vision Language Action Models through 3D Trajectory Guidance",
-    "link": "https://arxiv.org/abs/2606.31329",
-    "date": "2026-07-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.31329v1 Announce Type: new \nAbstract: Hierarchical Vision-Language-Action (VLA) models decouple high-level planning from low-level control to improve generalization in robot manipulation. Recent work in this paradigm uses 2D end-effector trajectories predicted by a Vision-Language Model (VLM) as explicit guidance for a downstream policy. However, state-of-the-art low-level policies operate in 3D metric space on point clouds, and feeding them 2D guidance that lacks depth forces each waypoint to be assigned the depth of whatever scene surface lies beneath it, producing geometrically distorted trajectories. We propose 3D HAMSTER, a hierarchical framework that closes this gap by having the planner directly output metrically reliable 3D trajectories. We augment a VLM with a dedicated depth encoder and a dense depth reconstruction objective to predict 3D waypoint sequences, which are directly integrated into a pointcloudbased low-level policy. Across 3D trajectory prediction, simulation, and real-world manipulation, 3D HAMSTER consistently outperforms proprietary VLMs and 2D-guided baselines, with the largest gains under appearance-altering shifts and unseen language, spatial, and visual conditions. The project page is available at https://davian-robotics.github.io/3D_HAMSTER/."
   }
 ]
