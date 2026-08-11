@@ -1,5 +1,86 @@
 [
   {
+    "title": "물리적 상호작용 학습: 촉각 및 힘 인지 로봇 학습 동향 분석",
+    "original_title": "Learning Physical Interaction: A Survey of Tactile- and Force-aware Robot Learning",
+    "link": "https://arxiv.org/abs/2608.07558",
+    "date": "2026-08-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "물리적 환경에서의 로봇 인지 및 상호작용은 힘(Force) 및 촉각(Tactile) 정보 통합을 요구하며, 이는 기존 로봇 학습의 핵심 과제임. 이에 본 연구는 다중 모드 센싱과 다단계 시스템 설계를 통합하여 최근 연구들을 체계적으로 분류하는 'TF-ART'라는 통합적 Taxonomy를 제시함. 이 프레임워크는 관찰 방식, 이종 센서 융합, 다단계 액션 정제 등 알고리즘적 방법론과 실질적인 물리적 요구사항을 결합하여 로봇 학습을 총체적으로 조명하는 역할을 수행함."
+  },
+  {
+    "title": "투영-수축 MPPI: 매니퓰레이터를 위한 정확한 제약 매니폴드 제어",
+    "original_title": "Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators",
+    "link": "https://arxiv.org/abs/2608.07573",
+    "date": "2026-08-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 MPPI가 처리하기 어려운 폐쇄 운동 사슬이나 관절 한계 같은 하드 제약 조건을 해결하기 위해 Projection-Retraction MPPI(PR-MPPI)가 제안됨. PR-MPPI는 샘플링된 속도를 제약 매니폴드에 투영하고 명령을 수치적으로 수축(retract)하는 과정을 거쳐 제약 조건을 정확하게 강제함. 이는 14-DoF 이중 팔 시스템에서 시뮬레이션 및 Unitree H1-2 실기 하드웨어 테스트를 통해 폐쇄 운동 사슬 유지 및 장애물 회피에서 높은 효용성을 입증함."
+  },
+  {
+    "title": "AdaDexGrasp: 3D 시각-촉각 표현 융합 기반의 적응형 정교 파지",
+    "original_title": "AdaDexGrasp: Adaptive Dexterous Grasping via 3D Visuo-Tactile Representation Fusion",
+    "link": "https://arxiv.org/abs/2608.07600",
+    "date": "2026-08-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 로봇 파지 방식은 시각 정보에 의존하여 접촉 후의 적응성이 부족한 한계를 가짐. 이에 본 연구는 파지 생성, 실현 가능성 예측, 적응적 정제 과정을 통합하는 Visuo-Tactile-Fusion 프레임워크를 제안함. 이 방법은 지문(finger identities)을 연관시켜 객체의 기하학적 정보와 촉각 신호를 결합한 효율적인 Visuo-Tactile Representation을 구축하며, 이를 통해 접촉 인식 기반의 파지 생성과 동적 파지 조정 능력을 크게 향상시킴."
+  },
+  {
+    "title": "혼합 강성 인체모방 손가락 끝을 활용한 동전 파지 작동 범위 확장 가능성 제시",
+    "original_title": "A Mixed-Stiffness Anthropomimetic Fingertip Broadens the Operating Range for Coin Grasping",
+    "link": "https://arxiv.org/abs/2608.07887",
+    "date": "2026-08-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "얇고 평평한 물체(동전)를 로봇으로 파지하는 과정은 높은 기계적 제약이 따르는 난제임. 본 연구는 Shore E10과 A60의 혼합 강성을 갖는 인체모방 손가락 끝을 제작하여, 균일한 부드러움의 끝과 비교함. 실험 결과, 혼합 강성 구조가 다양한 접근 조건 및 동작 변화 속에서도 높은 성공률을 유지하며 동전 파지의 작동 범위를 현저히 넓히는 것으로 분석됨. 이는 물체의 파지 성능이 단순히 부드러움뿐 아니라 강성을 배치하는 경계 위치에 의해 결정됨을 시사함."
+  },
+  {
+    "title": "사회적 내비게이션을 위한 가우시안 기반 인간 비용 함수를 적용한 MPPI 플래닝",
+    "original_title": "MPPI Planning with Gaussian Based Human Cost Function for Social Navigation",
+    "link": "https://arxiv.org/abs/2608.08323",
+    "date": "2026-08-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "로봇이 혼잡한 공간에서 안전하게 이동하기 위해 동적 위험 요소를 반영한 계획 수립이 필요함. 본 연구는 보행자의 예측 경로를 공간-시간적으로 전파하여 방향성에 따른 비등방성 가우시안 반발장을 구현하는 PGIF를 제안함. 이 PGIF-MPPI는 로봇의 이동 경로가 보행자의 이동 경로를 침범할 경우 강력한 패널티를 부여함으로써, 기존 MPPI 대비 획기적인 충돌률 감소 및 실시간 플래닝 성능을 확보한 것으로 평가됨."
+  },
+  {
+    "title": "구조화된 파라미터 환경에서의 커리큘럼 생성을 통한 강건한 내비게이션 정책 수립",
+    "original_title": "Curriculum Generation under Structured Parametric Environments for Robust Navigation Policies",
+    "link": "https://arxiv.org/abs/2608.08545",
+    "date": "2026-08-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "자율 에이전트의 강건한 내비게이션 정책 확보를 위해, 변화하는 환경 조건에 대응하는 적응적 커리큘럼 생성 방안이 필요함. 본 연구는 구조화된 연속 환경 파라미터를 활용한 재매개변수화된 커리큘럼 생성 프레임워크를 Unidirectional Gradient-based 최적화를 통해 제안함. 특히, 이미지 및 스칼라 입력을 다루는 다중 모드 관측 공간의 강건성을 높이기 위해 분포 이동 정규화(distribution-shift regularization)를 도입하였으며, 2D Car Racing 및 Bipedal Walker 등 표준 OpenAI Gym 환경에서 기존의 최신 RL 기법들보다 일관되게 우수한 성능을 보임."
+  },
+  {
+    "title": "OnEvoMemory: 온라인 로봇 롤아웃을 통한 사전 학습 로봇 정책의 메모리 진화",
+    "original_title": "OnEvoMemory: Evolving Memory through Online Robot Rollouts for Pretrained Robot Policies",
+    "link": "https://arxiv.org/abs/2608.08749",
+    "date": "2026-08-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "장기 작업이 필요한 로봇 매니퓰레이션 환경의 한계를 극복하기 위해 OnEvoMemory라는 value-guided 메모리 모듈이 제안됨. 이 모듈은 온라인 로봇 롤아웃을 활용하여 고가치 경험과 핵심 전환점을 학습하며, 로봇 정책이 작업 단계 전환을 정확히 인지하고 반복적 실수를 방지하도록 메모리 선택 과정을 정교화함. 실험 결과, OnEvoMemory는 오프라인 초기화와 온라인 메모리 진화를 모두 통해 기존 VLA 정책의 성능을 효과적으로 개선함."
+  },
+  {
+    "title": "협소 환경에서의 수중 차량-매니퓰레이터 시스템의 계층적 위상 인식 계획 및 제어",
+    "original_title": "Hierarchical Topology-Aware Planning and Control of Underwater Vehicle-Manipulator Systems in Confined Environments",
+    "link": "https://arxiv.org/abs/2608.08871",
+    "date": "2026-08-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 복잡하고 협소한 환경에서의 자율적인 수중 작업 개입을 위해 3단계의 계층적 계획 및 제어 프레임워크인 MANTA를 제안함. MANTA는 전역 연결성 분석을 통한 통로 후보 추출, 기구 및 암 트래젝토리의 최적화, 그리고 MBRL 기반의 정지 유지 정책 학습을 결합함. 평가 결과, MANTA는 기존 방식 대비 높은 작업 성공률과 더 큰 안전 여유 공간을 확보하며, 동굴이나 해저 구조물과 같은 제약된 환경에서의 자율적인 작동에 효과적임."
+  },
+  {
+    "title": "중국 IPO 심사관들마저 AI 열풍에 굴복하는 추세 포착",
+    "original_title": "Breakingviews - Even China's IPO gatekeepers succumb to AI fever - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOajhBeERFcVE1eXVqOTBwTkdwbWhHSmxFMjBnNjkyUy05bUs2WERMZlF2MmN1YUI0NXNmalhYUDh6bVhpYVJ4VEdLVmxwY0NaTEU3Mk81Mm40Y0JNZHNXYkJxbEpyUThyOFNkOHhGOFFqM09ja01ZT3ByN2dabGl4SmFLM2NQWDJwenNDS1k5Q1B1SmI2VFNFVjZJRThfRkhhcFN2aHMyVFI?oc=5",
+    "date": "2026-08-11 03:36",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "금융 분석 기관 브레이킹뷰즈(Breakingviews)의 보도에 따르면, 중국의 주요 IPO 게이트키퍼(gatekeepers)들이 AI 산업에 대한 강한 관심을 표출하며 심사 기조가 변화하고 있음. 이는 그동안 매우 보수적이었던 중국 자본 시장의 IPO 심사 과정이 AI 관련 분야에 무게를 두는 현상이 나타나고 있음을 시사함."
+  },
+  {
     "title": "중국 휴머노이드 로봇 제조사, 상반기 글로벌 출하량 97% 점유",
     "original_title": "Chinese humanoid robot makers hold 97% global shipments in H1 - China Daily",
     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00dlpJa09IQUNWNjBNWmtIaE1VQTgzLVF5OUphc0pVOTZId3hBRUtORm9vVXh5Z3hLeUhhYjlhX2xmcTVsRF9tb0tMbUVhX2Q3OVRhTmVnNUN5Y0tadFNLaXRPTUp4dWRYUmdEVDRDQkhiZk1MZUlRTExCaHBSQQ?oc=5",
@@ -7,6 +88,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중국발(China Daily) 보도에 따르면, 상반기(H1) 글로벌 휴머노이드 로봇 출하 시장에서 중국 제조사들이 97%라는 압도적인 점유율을 기록함. 해당 수치는 중국의 로봇 산업 제조 역량이 글로벌 시장을 주도하고 있음을 시사하는 것으로 분석됨."
+  },
+  {
+    "title": "중국 휴머노이드 로봇 제작사, 상반기 글로벌 출하량 97% 점유",
+    "original_title": "Chinese humanoid robot makers hold 97% global shipments in H1 - China Daily Global Edition",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeEJVUHE1bGZNbzdvN3dySVZ3dmpsdG4xb3Q1cUFDNnR5T2NSdkd5enRjdFRwZHoxMUhCZVVsQ1daWkZ5WkRlUEh4TmhFbHhJWC1nN3VLZ1hsbUF4MExZVklJcWltTG43TC1nNFFNa1FNNWRWTXk5LUo2RVlwdXpRSQ?oc=5",
+    "date": "2026-08-11 02:38",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "중국의 휴머노이드 로봇 제작사들이 상반기(H1) 글로벌 출하량의 97%를 점유한 것으로 분석됨. 이는 중국 기업들이 전 세계 휴머노이드 로봇 시장의 지배적인 위치를 확보했음을 보여주는 수치임. 해당 현상은 글로벌 로봇 산업 공급망의 중국 의존도 심화를 시사함."
   },
   {
     "title": "중국의 Agibot, 2026년 상반기 글로벌 휴머노이드 로봇 출하량 1위 기록",
@@ -17908,95 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "morph launched a physically intelligent soft robotics platform that designs and manufactures what it calls “soft robotic cells.” \nThe post Soft, robotic cells from morph embed physical AI into hardware appeared first on The Robot Report."
-  },
-  {
-    "title": "UBTech launches world’s first full-size hyper-bionic humanoid robots - chinadailyasia.com",
-    "original_title": "UBTech launches world’s first full-size hyper-bionic humanoid robots - chinadailyasia.com",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBXeWtWVjB3S251bG1EQU53cWhKcWZSTV84ajU4ZnZENVZaUUVwNnJtdGJ0cTJkd1FKYjc3NmJLNGFOcGJzZzNxWmhSVDBnYW84d1R1VDlROHU?oc=5",
-    "date": "2026-06-30 12:09",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "UBTech launches world’s first full-size hyper-bionic humanoid robots  chinadailyasia.com"
-  },
-  {
-    "title": "프로셉션, 테슬라 영업 비밀 소송 합의 및 로봇 손 개발 자금 1,100만 달러 확보함",
-    "original_title": "Proception settles Tesla trade secret lawsuit, raises $11M for robotic hand development - Cryptopolitan",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9hZXVmM3FITnNyYmljSmFuSjFSZ19RSWdZMW1JMW15UmpuNlZZT1gyUDR3R0xERHRvQTFKTkJqSm1BbDU2TUNCSmlMZi1rZk54WTRTTEdFa3BjN0k1Zno5UGhEX3VINTN4SnJWaGZQZVcxTFphU0p4QU5xQ0Y?oc=5",
-    "date": "2026-06-30 12:04",
-    "source": "Google News (Global Hand/Gripper)",
-    "category": "hand",
-    "summary": "로보틱스 기업 프로셉션(Proception)이 테슬라(Tesla)와의 영업 비밀 관련 소송을 합의로 종결했음. 이 과정에서 확보된 자금 1,100만 달러를 로봇 손 개발에 활용하기로 함. 이는 회사의 로보틱스 분야 연구개발(R&D) 역량 강화에 중요한 밑거름이 된 것으로 평가됨."
-  },
-  {
-    "title": "Hyper-realistic Humanoid Robot Sales Begin in China: Prices Up to $146,000 - Zamin.uz",
-    "original_title": "Hyper-realistic Humanoid Robot Sales Begin in China: Prices Up to $146,000 - Zamin.uz",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdHc5NG1wUmxTeEhBWDhhZER0d3BVZmtWekthMzNqQjVCZ2lGTnItVUk2VE1zVFhJdG9JVmlXLVJ6N0ZpUDMwVFBsdElzN3F3XzNfeVJsaVZhX2dFejJlWENPUi1Oc21HR0RQMUhQaS1GN3ZGYU00Mm90Y2NhaGI3ZTBKUVFSVjdaX0NTalkwUWZhajhWOFpZbndPaE9GNzM3SjBBYkd1Z2VlYjFwUmNHM2ZrZjk0dw?oc=5",
-    "date": "2026-06-30 10:59",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Hyper-realistic Humanoid Robot Sales Begin in China: Prices Up to $146,000  Zamin.uz"
-  },
-  {
-    "title": "Huge demand for Ubtech's affective companion robots - Korben",
-    "original_title": "Huge demand for Ubtech's affective companion robots - Korben",
-    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBLVGp1UjkwbVhxTVlZcHhuSU55Y05xMk9aRFJjYXhoNkUwNXM0WWdNS2hkVzJJa3g3UENWc1R6R0lPeFB0MHVfTnFobktLNWt5bG83dVE0dFNtblNhYURqVEVma3ZwNkJubFl2Tk9YMXctZzdaSDJ5S0h3?oc=5",
-    "date": "2026-06-30 10:56",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Huge demand for Ubtech's affective companion robots  Korben"
-  },
-  {
-    "title": "Chinese robot completes six-day factory shift with 99% success rate - Yahoo! Finance Canada",
-    "original_title": "Chinese robot completes six-day factory shift with 99% success rate - Yahoo! Finance Canada",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNUhhNDEzVmRkQjVMeGYyVGlUS1ctSTgtVmVvVHhmcmhYUTVqckFaMkszVjFvUXJBNHRHZVJTMmpSenM2T3hVT05IVU92RzEyZFJFWGgySmQ0UF9zT0stMGtkLTFPaGRhWDFBN1BJSHZQODE2Znhxa25PQVBRSGhBY3R0bHBOZzQ?oc=5",
-    "date": "2026-06-30 10:54",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese robot completes six-day factory shift with 99% success rate  Yahoo! Finance Canada"
-  },
-  {
-    "title": "Chinese robot completes six-day factory shift with 99% success rate - The Independent",
-    "original_title": "Chinese robot completes six-day factory shift with 99% success rate - The Independent",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVDR4TWdIczBkNDFkU0oyNjJfRUJfSUo4NWJLa3kyNGR1a2NHQW9rTDFLdmRNUkpiTlRyRTM5OHJmU0wxLVpYdzYwX0Q5TXplTDNpSE92VmwzOGdCb28xY3RVX2tPSE8yakx5MjV1YjJ6dHVNRy0wQnZXVzVIbHlqcGROWDBLenhRU1ZDdA?oc=5",
-    "date": "2026-06-30 10:54",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese robot completes six-day factory shift with 99% success rate  The Independent"
-  },
-  {
-    "title": "Chinese robot completes six-day factory shift with 99% success rate - Yahoo Finance UK",
-    "original_title": "Chinese robot completes six-day factory shift with 99% success rate - Yahoo Finance UK",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWHhCRVdCQkpPN09PWUJSOVExRTk0MVdnbDkzV1pCRGo2UDk3RG9NZzdGd1FiU0dkVjF5cEVITTRqX3ktRlVDOU5KSHdVemd5ZHc3Sk8xZ3U3LUFDUVJrQW5RZ2hfZGJGSmF4Qm9rMmtOTkRPdEFpVWM0WkY1ZXBDQVMwVjBfeE0?oc=5",
-    "date": "2026-06-30 10:54",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese robot completes six-day factory shift with 99% success rate  Yahoo Finance UK"
-  },
-  {
-    "title": "Sonair ADAR One 3D ultrasonic sensor is now safety-certified",
-    "original_title": "Sonair ADAR One 3D ultrasonic sensor is now safety-certified",
-    "link": "https://www.therobotreport.com/sonair-3d-ultrasonic-sensor-is-now-safety-certified/",
-    "date": "2026-06-30 09:55",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Sonair says ADAR One was assessed as a human detection sensor according to the IEC 61496 standard for electrosensitive protection devices.\nThe post Sonair ADAR One 3D ultrasonic sensor is now safety-certified appeared first on The Robot Report."
-  },
-  {
-    "title": "Capital Floods Into China's Robotics Sector, Producing Two New Unicorns - news.sbs.co.kr",
-    "original_title": "Capital Floods Into China's Robotics Sector, Producing Two New Unicorns - news.sbs.co.kr",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9CZVRUQzFRS0xYTFhTMUx3dmV2d1pTZV90ck52OTZpY0tCbkpFdnowT3pqYWNmSFNqRGVoRWZzMFZtWWFZeDlZR3E5OC1ydHJwZXctQ3Q4cXdPVUQwNEEzem1QSXN3aHROMmFyUEtn?oc=5",
-    "date": "2026-06-30 09:34",
-    "source": "Google News (China Robotics - KR)",
-    "category": "humanoid",
-    "summary": "Capital Floods Into China's Robotics Sector, Producing Two New Unicorns  news.sbs.co.kr"
-  },
-  {
-    "title": "Dürr implementing a CO2-efficient paint shop with cross-plant system integration",
-    "original_title": "Dürr implementing a CO2-efficient paint shop with cross-plant system integration",
-    "link": "https://roboticsandautomationnews.com/2026/06/30/durr-implementing-a-co2-efficient-paint-shop-with-cross-plant-system-integration/102937/",
-    "date": "2026-06-30 08:32",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Dürr is building a turnkey paint shop for Volkswagen Autoeuropa while simultaneously implementing a comprehensive software solution. The project combines state-of-the-art application and drying technologies designed to maximise CO2 reduction, along with an innovative SCADA integration that unifies three separate paint shops in a single system. In 2024, a total of 236,100 vehicles – an […]"
   }
 ]
