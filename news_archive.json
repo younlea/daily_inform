@@ -1,5 +1,23 @@
 [
   {
+    "title": "창고 내 로봇 플릿의 안전 및 확장성 논의 웹세미나 개최 예정",
+    "original_title": "Webinar to discuss safety and scaling robot fleets in the warehouse",
+    "link": "https://www.therobotreport.com/webinar-to-discuss-safety-scaling-robot-fleets-warehouse/",
+    "date": "2026-08-11 14:34",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "업계 전문가들이 창고 내 모바일 로봇을 운영할 때 안전성 확보와 생산성 유지라는 두 가지 핵심 목표를 달성하며 로봇 군집(fleet)을 확장하는 방안을 심층적으로 논의할 예정임."
+  },
+  {
+    "title": "3700억 달러 규모의 경쟁: 통합 설계가 급성장하는 시장에서 휴머노이드 제조사 성공에 기여하는 방식",
+    "original_title": "The 370-billion-dollar race: How integrated design can help humanoid manufacturers succeed in a rapidly growing market",
+    "link": "https://www.therobotreport.com/the-370-billion-dollar-race-how-integrated-design-can-help-humanoid-manufacturers-succeed-in-a-rapidly-growing-market/",
+    "date": "2026-08-11 14:17",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "휴머노이드 로보틱스의 미래가 예상보다 가까워지고 있음을 언급함. 급성장하는 시장에서 제조사들이 성공하기 위해서는 통합 설계(integrated design)가 핵심 요소로 작용할 전망임."
+  },
+  {
     "title": "2D 아이디어에서 출력 가능한 현실로: Hi3D의 이미지 변환 및 스마트 프린팅 워크플로우를 통한 AI 3D 제작 간소화 방법",
     "original_title": "From 2D Ideas to Printable Reality: How Hi3D Makes AI 3D Creation Easier with Image Conversion and Smart Printing Workflows",
     "link": "https://roboticsandautomationnews.com/2026/08/11/from-2d-ideas-to-printable-reality-how-hi3d-makes-ai-3d-creation-easier-with-image-conversion-and-smart-printing-workflows/104057/",
@@ -547,6 +565,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "로봇의 연속적인 조작(continuous manipulation)에 초점을 맞춘 경량 정책 모델 SLIM(Self-supervised Latent Interaction Model)을 제안함. 이 모델은 0.5B 파라미터를 사용하여 행동 기반 예측 잠재 변수(action-grounded predictive latents)를 학습하며, 자기 지도 마스크 트라젝토리 예측 방식을 통해 행동 재구성 및 미래 잠재 예측을 결합함. SLIM은 MoT(Mixture-of-Transformers) 백본과 Flow matching을 활용하여 언어 조건부 행동 생성 기능을 구현, 기존 대형 VLA 및 월드-액션 모델 대비 낮은 파라미터 수와 추론 지연 시간을 유지하며 성능을 입증함."
+  },
+  {
+    "title": "오프라인 대규모 언어 모델 기반 로봇 팔 다중 모드 상호작용 제어",
+    "original_title": "Multi-modal Interactive Control of Robotic Arm based on Offline Large Language Models",
+    "link": "https://arxiv.org/abs/2608.08183",
+    "date": "2026-08-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 LLM의 비개방성과 높은 비용 문제를 해결하기 위해, 오픈소스 LLM을 로컬 서버에 배포하는 효율적인 방안을 제시함. 이에 따라 오프라인 대규모 언어 모델을 활용한 'Socratic Models-ChatGLM' 알고리즘을 구현하여, PyBullet 플랫폼을 기반으로 로봇 팔의 다중 모드 상호작용 제어를 수행함. 본 연구는 복잡한 텍스트-이미지 통합 다단계 장기 로봇 조작(long-horizon robotic manipulation) 작업에 높은 적용 잠재력을 보임."
   },
   {
     "title": "중국 IPO 시장의 관문 통제자들마저 AI 열풍에 휩싸임",
@@ -17971,32 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.31329v1 Announce Type: new \nAbstract: Hierarchical Vision-Language-Action (VLA) models decouple high-level planning from low-level control to improve generalization in robot manipulation. Recent work in this paradigm uses 2D end-effector trajectories predicted by a Vision-Language Model (VLM) as explicit guidance for a downstream policy. However, state-of-the-art low-level policies operate in 3D metric space on point clouds, and feeding them 2D guidance that lacks depth forces each waypoint to be assigned the depth of whatever scene surface lies beneath it, producing geometrically distorted trajectories. We propose 3D HAMSTER, a hierarchical framework that closes this gap by having the planner directly output metrically reliable 3D trajectories. We augment a VLM with a dedicated depth encoder and a dense depth reconstruction objective to predict 3D waypoint sequences, which are directly integrated into a pointcloudbased low-level policy. Across 3D trajectory prediction, simulation, and real-world manipulation, 3D HAMSTER consistently outperforms proprietary VLMs and 2D-guided baselines, with the largest gains under appearance-altering shifts and unseen language, spatial, and visual conditions. The project page is available at https://davian-robotics.github.io/3D_HAMSTER/."
-  },
-  {
-    "title": "Stage-Transition Dense Reward Modeling for Reinforcement Learning",
-    "original_title": "Stage-Transition Dense Reward Modeling for Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2606.31377",
-    "date": "2026-07-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.31377v1 Announce Type: new \nAbstract: Reinforcement learning for long-horizon robotic manipulation is often limited by sparse and delayed rewards, while manually designing dense shaping signals is costly and brittle to changes in environments and object configurations. This work proposes Stage-Transition Dense Reward (STDR), a visual reward-learning framework that converts unstructured expert videos into logically grounded dense rewards for training RL agents from scratch. STDR leverages semantic understanding to infer a task's stage structure from demonstrations, and delivers two complementary learning signals during online training: (i) stage-transition feedback that provides goal-directed reward, and (ii) within-stage progress feedback that supplies fine-grained guidance toward completing each stage. Furthermore, an out-of-distribution (OOD) detection mechanism and a grasping regulation module are integrated to enhance robustness and prevent reward hacking. Experiments on 14 manipulation tasks across MetaWorld, ManiSkill, and Franka Kitchen show that STDR consistently improves sample efficiency and success rates over multiple baselines, and matches or surpasses handcrafted dense rewards on several challenging tasks. Real-robot evaluations further indicate that STDR assigns stable, progress-aligned rewards on successful executions while producing appropriately low rewards for failures, suggesting robustness to visual noise and better-calibrated reward assignment across settings."
-  },
-  {
-    "title": "UniTac: A Unified Multimodal Model for Cross-Sensor Tactile Understanding and Generation",
-    "original_title": "UniTac: A Unified Multimodal Model for Cross-Sensor Tactile Understanding and Generation",
-    "link": "https://arxiv.org/abs/2606.31451",
-    "date": "2026-07-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.31451v1 Announce Type: new \nAbstract: Unified multimodal models (UMMs) have shown great promise in integrating understanding and generation across diverse modalities. However, existing research rarely extends this paradigm to the tactile domain, where both object-level semantics and sensor-level configurations jointly determine the meaning of touch. To address this gap, we propose UniTac, the first UMM designed for tactile understanding and generation. UniTac models the tactile process as a transition from non-contact to contact, capturing the physical interaction between sensors and objects through a dual-level representation that encodes both sensor and object attributes. For tactile understanding, UniTac introduces two tasks, object property description and sensor identification, to enhance reasoning over physical and cross-sensor information. For tactile generation, we design a two-stage training paradigm consisting of reconstruction and alignment, together with a sensor-prior-based sampling strategy that simulates realistic tactile contact. Trained on large-scale multi-sensor datasets, UniTac achieves state-of-the-art performance in tactile understanding and generates realistic tactile signals across sensors."
-  },
-  {
-    "title": "ChronoFlow-Policy: Unifying Past-Current-Future Interaction Flow in Visuomotor Policy Learning",
-    "original_title": "ChronoFlow-Policy: Unifying Past-Current-Future Interaction Flow in Visuomotor Policy Learning",
-    "link": "https://arxiv.org/abs/2606.31493",
-    "date": "2026-07-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.31493v1 Announce Type: new \nAbstract: Visual signals play a crucial role in policy learning by enabling models to capture object motion and interaction dynamics. Just as humans reason about actions using both past experience and anticipated outcomes, effective policies should integrate past interactions with future predictions. However, existing visuomotor policies typically model either historical context or future dynamics in isolation, lacking a unified temporal representation of interaction dynamics. In this work, we introduce \\textbf{ChronoFlow}, a temporally unified representation that captures \\textbf{past, current, and future} interaction dynamics through sparse 3D keypoints of both objects and the gripper. Based on this representation, we propose \\textbf{ChronoFlow-Policy}, a diffusion-based visuomotor policy that jointly learns ChronoFlow and action sequences through a co-training objective. Experiments on 14 simulated tasks and 5 real-world manipulation tasks demonstrate that ChronoFlow-Policy consistently outperforms strong diffusion-policy baselines and improves robustness in long-horizon and non-Markovian manipulation scenarios."
   }
 ]
