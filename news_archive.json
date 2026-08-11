@@ -711,6 +711,15 @@
     "summary": "Vision-Language-Action (VLA) 모델은 높은 계산 지연 문제를 안고 있으며, WAM-Diff2는 이 문제를 해결하기 위해 사전 학습된 자동회귀(autoregressive) 일반 모델을 병렬 디퓨전(diffusion) 모델로 전환하는 3단계 계층적 증류 프레임워크를 제시함. WAM-Diff2는 아키텍처 전환 과정에서 발생하는 의미론적(semantic) 정보 손실을 최소화하며, 자율주행 이해, 인식, 계획 벤치마크에서 기존 방식과 동등한 성능을 달성함. 특히, 이 변환 과정은 디코딩 속도를 획기적으로 높여 시스템 레벨 최적화와 결합 시 최대 15.1배의 가속도를 구현하는 것으로 보고됨."
   },
   {
+    "title": "Hoverflie: 마이크로 항공 차량을 다중 모드 호버크래프트로 변환하기 위한 로터 슈라우드에 대한 경험적 연구",
+    "original_title": "Hoverflie: An empirical investigation of rotor shrouds to transform micro air vehicles into multi-modal hovercraft",
+    "link": "https://arxiv.org/abs/2608.06707",
+    "date": "2026-08-10 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "실내 또는 건물 환경용 마이크로 로터크래프트의 제한된 비행 시간을 개선하기 위한 새로운 슈라우드 시스템을 개발함. 이 시스템은 Crazyflie 2.1 기체를 고효율 호버크래프트 또는 자유 비행 드론으로 운용하는 다중 모드 로봇으로 변환하는 것을 목표로 함. 전용 플랫폼을 이용한 테스트 결과, 최적화된 슈라우드는 그라운드 효과(in-ground-effect) 힘을 최대 3배까지 증가시키며 전력 손실을 줄임으로써, 지면 효과 구간에서 비행 시간은 60% 증가함이 입증됨. 최종적으로 간단한 모드 스위칭 컨트롤러를 활용하여 호버링과 비행 간의 전환 제어 능력을 성공적으로 시연함."
+  },
+  {
     "title": "영국, 30년 가까이 기록되던 30°C 폭염 기록 경신함",
     "original_title": "UK Breaks 30°C Heat Record Set Nearly Three Decades Ago - Межа. Новини України.",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Eb3pWUktBdjlBRXlxLTJqeENrVVV2aEpwRVhEbnh2R2xOZDVNb2ZQSHB0M05QOHYxRDhqUlRuakhjNnBJTTduUmJmSWRuUUJ0N3NaQlpsWGpZSmRuY1FPMG15c1c?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.28385v1 Announce Type: new \nAbstract: Recent advances in robot world models enable synthetic video generation for embodied prediction and planning. However, evaluating these videos is challenging: visually realistic outputs often violate physical laws, temporal consistency, or task logic, while conventional metrics and monolithic Vision-Language Model (VLM) judges fail to generalize or provide precise diagnostic value. We present RoboGaze, a training-free, multi-agent VLM framework that provides structured, interpretable evaluation for generated robot-manipulation videos. Given a task instruction and video, RoboGaze operates via a three-stage pipeline: task-scene grounding, dimension-specific specialist routing, and critic-based verification. It outputs temporally localized glitch reports categorized under a novel 6-dimension, 30-type robotics-specific taxonomy. To benchmark RoboGaze, we introduce a human-validated dataset of 382 clips spanning simulated and real-world multi-view manipulation. Evaluating eight open-source and proprietary VLM backbones, RoboGaze dramatically outperforms zero-shot baselines, improving description-F1 by up to +43 points and temporal alignment (F1 x IoU) by up to +37 points, closing approximately 85% of the gap to the human ceiling. Furthermore, its critic verifier mitigates the \"cry-wolf\" false-positive flaw of standard VLMs, lifting clean-clip accuracy from under 25% to over 80%. RoboGaze offers a scalable, highly interpretable diagnostic tool for the rigorous evaluation of robot world models."
-  },
-  {
-    "title": "When May I Help You? On The Effect of Proactivity on Group Human-Robot Collaboration",
-    "original_title": "When May I Help You? On The Effect of Proactivity on Group Human-Robot Collaboration",
-    "link": "https://arxiv.org/abs/2606.28469",
-    "date": "2026-06-30 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.28469v1 Announce Type: new \nAbstract: Robot initiative is a central challenge in multi-party human-robot collaboration. A robot that contributes without being addressed may provide timely support, but it may also disrupt coordination, divide attention, or interrupt turn-taking; a robot that waits to be addressed may preserve human control, but it may also miss opportunities to assist. We investigate this design challenge in a collaborative escape room in which pairs of participants work with a humanoid robot under either a reactive interaction model, where the robot responds only when addressed, or a proactive model, where it listens continuously, contributes autonomously, and periodically re-initiates interaction. We evaluate both models using puzzle-solving performance, interaction frequency, and participant ratings on the Godspeed and RoSAS scales. The proactive model substantially increases interaction frequency, whereas the reactive model shows a descriptively higher overall success rate (92.86% vs. 71.42%). The strongest differences emerge when prior experience and personality are taken into account: participants with LLM experience solve the early puzzles faster in the reactive condition, and participants with prior robot experience show modified evaluations of proactive and reactive interaction as do introverted participants. These findings demonstrate that the effects of robot initiative are simultaneously shaped by users' prior experience, personality traits and more generally by the needs of the group."
   }
 ]
