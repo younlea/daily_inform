@@ -1,5 +1,14 @@
 [
   {
+    "title": "2D 아이디어에서 출력 가능한 현실로: Hi3D의 이미지 변환 및 스마트 프린팅 워크플로우를 통한 AI 3D 제작 간소화 방법",
+    "original_title": "From 2D Ideas to Printable Reality: How Hi3D Makes AI 3D Creation Easier with Image Conversion and Smart Printing Workflows",
+    "link": "https://roboticsandautomationnews.com/2026/08/11/from-2d-ideas-to-printable-reality-how-hi3d-makes-ai-3d-creation-easier-with-image-conversion-and-smart-printing-workflows/104057/",
+    "date": "2026-08-11 11:06",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "3D 프린팅이 개인화된 창작 활동의 일부로 자리 잡는 가운데, AI 기술 발전이 3D 모델링 접근성을 높이는 추세임. Hi3D는 이러한 흐름 속에서 이미지 변환(Image Conversion) 및 스마트 프린팅 워크플로우를 결합하여, 2D 형태의 초기 아이디어를 실제 출력 가능한 3D 현실로 쉽게 구현할 수 있도록 지원함."
+  },
+  {
     "title": "주(State)별 도로세 구조 분석: 동일 차량의 주(State)별 가격 차이 발생 이유",
     "original_title": "State Road Tax Slabs Explained: Why the Same Vehicle Costs More in Different States",
     "link": "https://roboticsandautomationnews.com/2026/08/11/state-road-tax-slabs-explained-why-the-same-vehicle-costs-more-in-different-states/104052/",
@@ -511,6 +520,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "본 논문은 심장 및 호흡 맥동에 따라 움직이는 조직에 삽입 도구를 배치하기 위한 예측 기반 상대 운동 제어기 개발 내용을 담고 있음. 오프셋 프리(offset-free) 모델 예측 제어(MPC)를 통해 지연된 주기적 표면 운동을 예측하고, 이를 활용하여 낮은 상대 배치 오차(예: 1.9 µm RMS)를 달성한 것으로 보고됨. 다만, 유연 섬유 역학, 생체 손상 역치, 실제 센싱 및 타이밍 등의 검증이 필요한 시뮬레이션 기반 연구임."
+  },
+  {
+    "title": "웨어러블 로봇 시스템을 위한 오픈소스 소프트웨어 및 메카트로닉스 인프라 'Epically Powerful' 공개",
+    "original_title": "Epically Powerful: An open-source software and mechatronics infrastructure for wearable robotic systems",
+    "link": "https://arxiv.org/abs/2511.05033",
+    "date": "2026-08-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "Epically Powerful는 웨어러블 로봇 시스템의 개발 과정을 간소화하기 위해 설계된 오픈소스 로봇 공학 인프라임. 통신 프로토콜, 액추에이터 제어, 센서 데이터 획득 및 시각화 등 전체 시스템 구동 체계를 통합 관리하며, Python 기반 코드로 다양한 QDD 액추에이터와 SBC에 손쉽게 연동 가능함. 이 인프라는 연구자가 로우 하드웨어에서 모듈형 로봇 장치로 신속하게 진입할 수 있도록 개발 장벽을 낮추었으며, 웨어러블 분야뿐만 아니라 광범위한 로봇 제어 도메인에 적용 가능함."
   },
   {
     "title": "중국 IPO 시장의 관문 통제자들마저 AI 열풍에 휩싸임",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "arXiv:2606.31691v1 Announce Type: new \nAbstract: Scalable reinforcement learning has popularized high-throughput sampling architectures, which significantly compresses the training time for off-policy methods in robotic locomotion. However, the rapid increase of data volume and update frequency undermines the stability of value-based methods and diminishes the plasticity of policy networks. To address these challenges, this work presents FastDSAC, a fast and high-performance variant of the Distributional Actor-Critic algorithm designed for parallel sampling scenarios. Specifically, we introduce a truncated Gaussian distribution to approximate the learned policy, which effectively excludes out-of-distribution actions that strain target value estimation while keeping necessary stochasticity for exploration. The proposed action constraint functions as an implicit regularization, which counteracts the plasticity loss typically caused by aggressive gradient updates. This preservation of network adaptability enhances sample efficiency, particularly in scenarios with a high update-to-data ratio, and accelerates the early training process. In contrast to prior fast reinforcement learning approaches that rely on discrete value distributions, our method utilizes a continuous Gaussian representation equipped with adaptive variance regulation, which improves value estimation accuracy by sampling confident and informative transitions. Extensive experiments on MuJoCo Playground and HumanoidBench demonstrate that FastDSAC not only stabilizes the overall training process but also achieves superior asymptotic performance and faster convergence compared to state-of-the-art baselines."
-  },
-  {
-    "title": "RCT: A Robot-Collected Touch-Vision-Language Dataset for Tactile Generalization",
-    "original_title": "RCT: A Robot-Collected Touch-Vision-Language Dataset for Tactile Generalization",
-    "link": "https://arxiv.org/abs/2606.31694",
-    "date": "2026-07-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.31694v1 Announce Type: new \nAbstract: For robots manipulating open-world objects, tactile representations must generalize to unseen materials. We introduce RCT (Robotic Contact Tactile), a robot-collected touch-vision-language dataset with 29,279 tactile frames from full robot presses on 122 industrial reference materials in 7 categories, recorded with three DIGIT sensors at multiple contact positions. RCT preserves each press as a contact sequence, enabling held-out evaluation across materials, categories, sensors, contact positions, and contact sequences. Frames from one press are strongly correlated: frame-random splits can place near-duplicate observations of the same physical interaction in both training and test. With the encoder held fixed, removing contact-sequence overlap reduces tactile-to-text Recall@1 by 17.7 percentage points. When materials are additionally held out at training time, performance drops sharply, leaving held-out-material Recall@1 at 25.1 +/- 6.1% averaged over three held-out draws. The public TVL/HCT split shows the same structure: every test contact sequence appears in training, and raw-pixel nearest neighbors recover the correct sequence in 98.3% of cases. Uniformly sampling a press improves contrastive training, and RCT-trained embeddings improve category probes on unseen materials. RCT makes contact-sequence-aware, held-out-material evaluation reproducible and exposes novel-material generalization as a central challenge for robotic tactile perception. The RCT dataset is open-sourced at https://faerber-lab.github.io/RCT/"
-  },
-  {
-    "title": "UniTacVLA: Unified Tactile Understanding and Prediction in Vision Language Action Models",
-    "original_title": "UniTacVLA: Unified Tactile Understanding and Prediction in Vision Language Action Models",
-    "link": "https://arxiv.org/abs/2606.31723",
-    "date": "2026-07-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2606.31723v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models have achieved strong performance in many robotic manipulation tasks, yet remain limited in contact-rich dexterous manipulation. To overcome this limitation, recent vision-tactile-language-action (VTLA) methods incorporate tactile sensing into VLA models to provide direct contact information. However, they typically treat tactile signals as passive auxiliary inputs, making it difficult to model tactile semantics and future physical interactions. To this end, we propose a unified tactile learning framework for contact-rich manipulation that models tactile signals as dynamic interaction cues for both contact understanding and prediction. Specifically, we construct a unified tactile latent space and jointly model current tactile states and future contact changes through tactile chain-of-thought reasoning and coarse-to-fine future tactile prediction, thereby forming a state-aware and dynamics-aware tactile prior. Based on this prior, we introduce a tactile-action mixed controller that combines real-time and predicted tactile feedback to refine low-frequency action chunks with high-frequency corrections. Real-world experiments on four categories of contact-rich tasks, including adjustment, insertion, wiping, and assembly, under both clean and externally perturbed settings, show that our method improves success rate, manipulation accuracy, and contact robustness over existing methods, demonstrating its effectiveness in dexterous physical interaction."
   }
 ]
