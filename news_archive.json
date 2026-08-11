@@ -531,6 +531,15 @@
     "summary": "Epically Powerful는 웨어러블 로봇 시스템의 개발 과정을 간소화하기 위해 설계된 오픈소스 로봇 공학 인프라임. 통신 프로토콜, 액추에이터 제어, 센서 데이터 획득 및 시각화 등 전체 시스템 구동 체계를 통합 관리하며, Python 기반 코드로 다양한 QDD 액추에이터와 SBC에 손쉽게 연동 가능함. 이 인프라는 연구자가 로우 하드웨어에서 모듈형 로봇 장치로 신속하게 진입할 수 있도록 개발 장벽을 낮추었으며, 웨어러블 분야뿐만 아니라 광범위한 로봇 제어 도메인에 적용 가능함."
   },
   {
+    "title": "SLIM-0.5B: 로봇 조작을 위한 행동 기반 예측 잠재 변수 학습",
+    "original_title": "SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2608.09771",
+    "date": "2026-08-11 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇의 연속적인 조작(continuous manipulation)에 초점을 맞춘 경량 정책 모델 SLIM(Self-supervised Latent Interaction Model)을 제안함. 이 모델은 0.5B 파라미터를 사용하여 행동 기반 예측 잠재 변수(action-grounded predictive latents)를 학습하며, 자기 지도 마스크 트라젝토리 예측 방식을 통해 행동 재구성 및 미래 잠재 예측을 결합함. SLIM은 MoT(Mixture-of-Transformers) 백본과 Flow matching을 활용하여 언어 조건부 행동 생성 기능을 구현, 기존 대형 VLA 및 월드-액션 모델 대비 낮은 파라미터 수와 추론 지연 시간을 유지하며 성능을 입증함."
+  },
+  {
     "title": "중국 IPO 시장의 관문 통제자들마저 AI 열풍에 휩싸임",
     "original_title": "Even China's IPO gatekeepers succumb to AI fever - Breakingviews",
     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcE5XeXdXbW9FbzVLanRUbjR1b25MTkpTYS1sWHdvWUZnQV8yLTUxeVUwTGJPcG5ZS2VkWmN2eHVsVzg0UUdtd1NBR0Iza0IySnlpWUdjMzUzX1R3Y1pTcEdfRkFEYmJZQXlFTk5TYXl5UFo1YkJ4RS1rSDFkUTVJckJZTEZVb09FN3pDN0hPTG1mc0F0aG4ySnNQS2kyamFiZjlNOFBZdjB2amYz?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2606.31682v1 Announce Type: new \nAbstract: Large-scale demonstration datasets have been central to recent progress in general-purpose robot policies. However, existing datasets are collected in human-absent settings, and policies trained on such data may perform tasks competently in isolation but fail to exhibit human-aware behaviors. To address this gap, we introduce HABIT, a large-scale robot demonstration dataset for human-present environments. We organize tasks into three roles capturing distinct modes of human-robot interaction: Collaborator, where human and robot jointly accomplish a task; Coworker, where they pursue separate tasks in a shared space; and Supervisor, where the human directs the robot. The dataset comprises over 10K episodes and over 160 hours across 60 tasks. Our experiments show that training on human-present data elicits human-aware behaviors that robot-only data fails to produce: spatiotemporal synchronization in Collaborator tasks, yielding in Coworker tasks, and gesture grounding in Supervisor tasks. Moreover, training on HABIT enables rapid adaptation to new human-robot interaction tasks. By introducing human presence as a new axis of dataset diversity, HABIT extends robot policies to environments shared with humans."
-  },
-  {
-    "title": "FastDSAC: Enhancing Policy Plasticity via Constrained Exploration for Scalable Humanoid Locomotion",
-    "original_title": "FastDSAC: Enhancing Policy Plasticity via Constrained Exploration for Scalable Humanoid Locomotion",
-    "link": "https://arxiv.org/abs/2606.31691",
-    "date": "2026-07-01 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2606.31691v1 Announce Type: new \nAbstract: Scalable reinforcement learning has popularized high-throughput sampling architectures, which significantly compresses the training time for off-policy methods in robotic locomotion. However, the rapid increase of data volume and update frequency undermines the stability of value-based methods and diminishes the plasticity of policy networks. To address these challenges, this work presents FastDSAC, a fast and high-performance variant of the Distributional Actor-Critic algorithm designed for parallel sampling scenarios. Specifically, we introduce a truncated Gaussian distribution to approximate the learned policy, which effectively excludes out-of-distribution actions that strain target value estimation while keeping necessary stochasticity for exploration. The proposed action constraint functions as an implicit regularization, which counteracts the plasticity loss typically caused by aggressive gradient updates. This preservation of network adaptability enhances sample efficiency, particularly in scenarios with a high update-to-data ratio, and accelerates the early training process. In contrast to prior fast reinforcement learning approaches that rely on discrete value distributions, our method utilizes a continuous Gaussian representation equipped with adaptive variance regulation, which improves value estimation accuracy by sampling confident and informative transitions. Extensive experiments on MuJoCo Playground and HumanoidBench demonstrate that FastDSAC not only stabilizes the overall training process but also achieves superior asymptotic performance and faster convergence compared to state-of-the-art baselines."
   }
 ]
