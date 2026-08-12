@@ -1,5 +1,14 @@
 [
   {
+    "title": "중국 전시회 및 리테일 센터에서 로봇 작동 모습 포착",
+    "original_title": "See Robots in action at China’s exhibitions and retail centers - USA Today",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQX3RsQk5ZUWFoQTBhM1JNM1ZvWlU1Wm1HRFpwQWlHb042U09SVnlfZXlva1F0VU1TTnRaMk0tTTE2b1pMQXdwMU1zRG52NDVsSHFka1QycjFMWS1FVXZYV2cwRGVMVHFiTVdTNkhUbXhxN1RaSzE0cWRLdUdDSzZhT3cwMDM3RjZ5SnVCM0FTT0VCaDg4dHFiRQ?oc=5",
+    "date": "2026-08-12 18:42",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "중국 전역의 전시회와 리테일 센터에서 로봇들이 실제로 작동하는 모습이 다수 포착됨. 이는 로봇 기술이 중국 내 상업 및 일상생활 영역에 깊숙이 적용되고 있음을 시사함. 중국은 로봇 기술의 실질적인 현장 적용을 적극적으로 보여주는 추세임."
+  },
+  {
     "title": "2035년까지 로봇 산업, 3500만 미국 가구 전력 소비량에 육박 전망",
     "original_title": "Robots could consume as much electricity as 35 million US homes by 2035",
     "link": "https://roboticsandautomationnews.com/2026/08/12/robots-could-consume-as-much-electricity-as-35-million-us-homes-by-2035/104073/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2607.01051v1 Announce Type: new \nAbstract: Different stages of manipulation tasks exhibit varying levels of difficulty, suggesting stage-dependent motion speeds and temporal prediction horizons. However, existing IL-based visuomotor policies typically imitate the execution speed of expert demonstrations and operate with a fixed temporal prediction horizon, limiting flexibility and overall task throughput. In this paper, we introduce AutoSpeed, a model-agnostic learning framework that enables existing visuomotor policies to predict trajectories with stage-adaptive motion speeds, without requiring speed or stage annotations. We treat future trajectories at different speeds as candidate optimization targets, evaluate each candidate using a composite cost that trades off prediction error against prediction horizon, and optimize the policy toward the minimum-cost candidate. With a fixed-length action sequence, speed modulation adjusts the effective temporal prediction horizon: simple stages are executed faster with a longer prediction horizon, whereas complex stages are executed more slowly with a shorter prediction horizon. Specifically, we implement speed modulation in the frequency domain via the discrete cosine transform (DCT), which enables smooth, non-integer speed scaling and thus preserves motion continuity. Extensive evaluations show that AutoSpeed substantially reduces task execution time while also improving success rates. Under the AutoSpeed framework, the inferred motion speeds exhibit a strong correspondence with task stages."
-  },
-  {
-    "title": "Human-Centric Transferable Tactile Pre-Training for Dexterous Robotic Manipulation",
-    "original_title": "Human-Centric Transferable Tactile Pre-Training for Dexterous Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2607.01067",
-    "date": "2026-07-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2607.01067v1 Announce Type: new \nAbstract: As an essential modality for dexterous and contact-rich tasks, tactile sensing provides precise force feedback that cannot be reliably inferred from vision. However, limited by hardware and data collection systems, existing datasets with tactility remain small in scale and narrow in contact coverage. Meanwhile, Vision-Language-Action (VLA) models with tactile modality are constrained on dynamics-agnostic post-training, which limits the performance ceiling on downstream tasks. In this paper, we present H-Tac, a large-scale tactile-action dataset with 160-hour egocentric human videos containing more than 300 tasks and 135k episodes. Building upon this, we propose Transferable Tactile Pre-Training (TTP), a system of tactile-based pre-training on human data for fine-grained robotic tasks. To bridge the gap between humans and robots, we use unified tactile and action spaces throughout the pre-training and post-training phases, preserving prior knowledge during human-to-robot transfer. By leveraging a tactile expert for future tactile prediction, our framework explicitly models the contact dynamics and precise physical interactions. Extensive experiments in simulation and on real robots demonstrate that our model achieves superior performance, exhibiting robust generalization and fine-grained manipulation capabilities. TTP paves the way for scalable tactile pre-training via human-to-robot transfer."
   }
 ]
