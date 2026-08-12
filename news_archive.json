@@ -1,5 +1,86 @@
 [
   {
+    "title": "보행자 군중 속 인간 추적을 위한 근접성-안전성 균형 제어: 제약 조건 분해 기법",
+    "original_title": "Navigating the Proximity-Safety Balance: Constraint Decomposition for Human Following in Pedestrian Crowds",
+    "link": "https://arxiv.org/abs/2608.10056",
+    "date": "2026-08-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "로봇이 밀집된 보행자 군중 속에서 인간을 추적하는 과정에서 발생하는 근접성(Proximity)과 안전성(Safety) 간의 상충 문제를 해결함. 본 연구는 기존 RL의 단일 밀집 보상 방식의 한계를 극복하기 위해, 작업을 희소한 태스크 보상과 독립적인 다중 제약 조건(Multi-constraint RL)으로 분해하는 방식을 제시함. 이는 비용 임계값(Cost Threshold)을 통해 근접성과 안전성 간의 트레이드오프를 명시적으로 조절할 수 있게 하며, 인간의 움직임 예측 불확실성 통합을 통해 실세계 로봇 환경에서도 높은 효과성을 입증함."
+  },
+  {
+    "title": "자가 충돌 회피 참조 기반, 협소 공간 이동형 휴머노이드 전신 계획 기술 개발",
+    "original_title": "Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References",
+    "link": "https://arxiv.org/abs/2608.10220",
+    "date": "2026-08-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "휴머노이드 로봇의 협소 공간 이동 시 발생하는 복잡한 충돌 및 다중 접촉의 어려움을 해결하기 위한 3단계 전신 계획 프레임워크가 제안됨. 이 프레임워크는 미분 가능한 충돌 회피 기능을 접목하여 기구학적으로 도달 가능한 체적 정보를 활용하는 가이드를 생성, 전신 경로 최적화를 수행함. 이를 Unitree G1 휴머노이드에 적용한 결과, NIST 표준을 초과하는 벤치마크 테스트에서 복잡한 접촉을 동반한 장시간 임무 수행 능력을 입증함."
+  },
+  {
+    "title": "단일 시각 관측 기반 실세계 협업 양손 정교 파지 구현",
+    "original_title": "Real-World Cooperative Bimanual Dexterous Grasp of Large Objects from Single-View Observations",
+    "link": "https://arxiv.org/abs/2608.10383",
+    "date": "2026-08-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 매니퓰레이션의 핵심 난제인 대형 물체의 협업 양손 파지 문제를 해결하기 위해 실세계 기반의 파지 프레임워크를 제안함. 이 프레임워크는 멀티모달 데이터셋과 DDPM 기반 모듈을 결합하여 관절 레벨의 파지 구성을 생성하고, 동작 계획과 온라인 정제 전략을 통합해 물리적 안정성을 확보함. 이 접근 방식은 완전한 3D 물체 모델 없이 단일 시야 입력만으로 실행 가능한 양손 파지를 합성하며, 이중 팔 로봇을 통해 다양한 미관찰 물체에서 높은 성공률을 입증함."
+  },
+  {
+    "title": "Hip Energized Monopedal Hopping",
+    "original_title": "Hip Energized Monopedal Hopping",
+    "link": "https://arxiv.org/abs/2608.10387",
+    "date": "2026-08-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2608.10387v1 Announce Type: new \nAbstract: We present a novel stepping strategy for pitch unlocked planar monopeds where the reaction torques from stabilizing pitch with a conventional PD + feedfoward controller are recruited to counteract energetic losses from damping. By moving the location of the mass center, our controller increases the pitch stabilization torque, thereby adding energy to the gait. A new stepping policy adjusts the distribution of energy between the radial and angular degrees of freedom to counteract dissipative losses and achieve a user specified balance between steady state fore-aft speed and apex height. Hybrid averaging analysis yields closed form expressions for the fixed points and eigenvalues of the resulting gait, lending insight into the interplay between the physical and control parameters' influence on performance. Simulation studies on a generic 5 link biped and a careful model of the Penn Jerboa reveal a useful correspondence to these analytical predictions. Physical experiments on the Penn Jerboa exhibit stable locomotion with speeds ranging from 1.02 m/s to 1.77 m/s (5.10 leg lengths/s to 8.85 leg lengths/s) in a manner effectively approximated by the mathematical analysis."
+  },
+  {
+    "title": "접촉 기반 검사용 작동 부족 공중 매니퓰레이터에 대한 견고한 슬라이딩 모드 및 어드미턴스 제어",
+    "original_title": "Robust Sliding Mode and Admittance Control of Underactuated Aerial Manipulators for Contact-Based Inspection",
+    "link": "https://arxiv.org/abs/2608.10656",
+    "date": "2026-08-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 접촉 환경에서 안정적인 상호작용이 요구되는 작동 부족 헥사로터 기반의 공중 매니퓰레이터를 위한 견고한 제어 프레임워크를 제시함. SMC(Sliding Mode Control)와 어드미턴스 제어를 통합하여, 접촉력을 자세 피드포워드 항에 매핑하고 1-DoF 팔이 기울기를 능동적으로 보정함으로써 표면 정렬을 유지함. 시뮬레이션 결과, SMC 기반 제어 방식이 기존 PID 대비 우수한 추적 성능 및 커플링 거부 능력을 보였으며, 0.12N의 낮은 RMSE를 달성하며 안정적인 접촉 검사 효용성을 입증함."
+  },
+  {
+    "title": "자율 변형 조작을 위한 TCAM: WBCD 2026 트랙 4의 RMC2 우승 시스템",
+    "original_title": "TCAM for Autonomous Deformable Manipulation: The RMC2 Champion System for WBCD 2026 Track 4",
+    "link": "https://arxiv.org/abs/2608.10718",
+    "date": "2026-08-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 보고서는 RMC2 팀이 WBCD 2026 Deformable Manipulation Challenge를 위해 구축한 TCAM(TermiBrain Causal Action Model) 기반의 완전 자율 시스템을 기술함. 이 시스템은 3D 프린팅 그리퍼와 4개 카메라를 활용하여 섬유 분리, 정렬, 표면 평활화 등의 복잡한 작업을 수행하며, TCAM이 궤적을 분석하여 정책을 지속적으로 개선하는 구조를 가짐. 결과적으로 평균 23초 만에 25개 티셔츠를 적재하는 우수한 성능을 입증하며 트랙 4에서 우승을 달성함."
+  },
+  {
+    "title": "AECNav: 효율적인 제로샷 오픈-어휘 객체 탐색을 위한 능동 증거 통합",
+    "original_title": "AECNav: Active Evidence Consolidation for Efficient Zero-Shot Open-Vocabulary Object Navigation",
+    "link": "https://arxiv.org/abs/2608.10817",
+    "date": "2026-08-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "개방형 어휘(open-vocabulary) 환경에서의 제로샷 객체 탐색(ZSON)의 높은 지연 시간 및 부정확성 문제를 해결하기 위해, ZSON을 증거 기반의 인식-결정 문제로 재정의함. 본 연구는 증거 게이팅 인식, 클러스터 레벨 로그-오즈 신념 기반의 증거 통합(Evidence consolidation), 능동 증거 확보를 포함하는 AECNav라는 훈련 불필요(training-free) 파이프라인을 제시함. AECNav는 주요 벤치마크에서 최고 성능(SOTA)을 달성함과 동시에, 물리적 사족 보행 로봇에서도 5Hz 수준에서 높은 성공률을 입증함."
+  },
+  {
+    "title": "능동 지원 기반의 관찰자 활용 핸드 가이딩을 통한 확장 가능한 운동학적 교육 구현",
+    "original_title": "Enabling Scalable Kinesthetic Teaching via Observer-based Hand-guiding with Active Support",
+    "link": "https://arxiv.org/abs/2608.10847",
+    "date": "2026-08-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존의 키네스틱 티칭(Kinesthetic Teaching)은 장시간 세션에서 운영자 피로도와 스케일링 한계 문제가 있음. 이에 연구진은 추가 하드웨어 없이 모델 기반 힘 추정(model-based force estimation)을 활용하여 작동자의 의도된 동작을 능동 지원하는 RHOAS를 제안함. 이 방법은 모델 기반 토크 추정 및 내부 관절 토크 센싱을 통해 물리적 노력을 획기적으로 줄이고 조작성 및 사용자 만족도를 향상시키는 것이 입증됨."
+  },
+  {
+    "title": "유니트리(Unitree)란 무엇이며, 중국 휴머노이드 로봇 기업들의 상장 경쟁 배경은 무엇인지 분석함",
+    "original_title": "What is Unitree and why are China’s humanoid robot makers racing to list? - The Japan Times",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPeTlydDh3Y2o0NXlYVDU2S3NBeUFxbVBEVDlxYTFnNldJZ0EwZ2JJMjBvMXlrWEZTMW5NUDh2bzNQUHM3Y2VKWGl6MFdBeDQzTk5JcHltMWxiTDZXN0dUT3dGRVMtTllSZGxiNWpzX2pxZVpsczZ5ZGpqX3lubXd6cmU4T0RJdXRsOW5NNHJjZjV2emhV?oc=5",
+    "date": "2026-08-12 02:31",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "급부상하는 중국의 휴머노이드 로봇 산업 내에서 핵심 주역인 Unitree 등의 기업들이 상장(IPO)을 서두르는 상황을 조명함. 이는 기술적 역량 입증과 막대한 자금 확보를 통해 글로벌 시장 지배력을 강화하려는 산업 전반의 흐름으로 파악됨."
+  },
+  {
     "title": "Unitree Robotics, IPO 앞두고 10개 제조 허브에 산업 대학 설립함",
     "original_title": "Unitree Robotics Has Built Industrial Colleges in Ten Manufacturing Hubs Ahead of Its IPO - Pandaily",
     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZXh6SFdJbTFLT3JVMDFqV3lucFc3dkNId2FoOFQ2NGhMcGFzYkNnanZoV1NZLUFGMHJMN21lVVVvTUNQdkk0N0p1VS12SGZDU2ExNVJGMnJ4NzFZZDlRWlUzUVNBMHBvSjJsMzNuWE5NRFpiRDd5ZVd3eU1xQkdwUnRNTWd0MktIQXhpcWZGdFRQeXhTTUd5QWR5QQ?oc=5",
@@ -17917,86 +17998,5 @@
     "source": "ByteByteGo",
     "category": "humanoid",
     "summary": "In this article, we will look at the entire journey in detail and challenges the OpenAI engineering team faced."
-  },
-  {
-    "title": "Chinese firm sells hyper-real, 'always loyal' humanoid robots",
-    "original_title": "Chinese firm sells hyper-real, 'always loyal' humanoid robots",
-    "link": "https://techxplore.com/news/2026-07-chinese-firm-hyper-real-loyal.html",
-    "date": "2026-07-01 13:16",
-    "source": "Tech Xplore",
-    "category": "hand",
-    "summary": "Their metallic frames covered in supple, lifelike skin, a posse of new Chinese robots meant for companionship can offer users AI-generated conversation or a hand to hold, complete with manicured nails."
-  },
-  {
-    "title": "Chinese firm sells hyper-real, 'always loyal' humanoid robots - Tech Xplore",
-    "original_title": "Chinese firm sells hyper-real, 'always loyal' humanoid robots - Tech Xplore",
-    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9SbWtaM2VOSkNuRWZ1VTA1RVQzeU55NFd4UzNOSHRXRnRXYjFDbXNiZlRPc21GVUsyYTlPOFZERWZPQXpRQUViZlZOT25RTS1nSnpmQ3BOOXBUNGdONW96WnNTREpQUTgwXzRRM0xENmZDd00yekNHSFFn?oc=5",
-    "date": "2026-07-01 13:16",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese firm sells hyper-real, 'always loyal' humanoid robots  Tech Xplore"
-  },
-  {
-    "title": "Apptronik unveils Apollo 2 and a flagship data collection and training facility",
-    "original_title": "Apptronik unveils Apollo 2 and a flagship data collection and training facility",
-    "link": "https://www.therobotreport.com/apptronik-unveils-apollo-2-flagship-data-collection-training-facility/",
-    "date": "2026-07-01 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Built as a data collection and training platform, Apollo 2 enables continuous learning through deployment, Apptronik said.\nThe post Apptronik unveils Apollo 2 and a flagship data collection and training facility appeared first on The Robot Report."
-  },
-  {
-    "title": "Building dexterous, intelligent and versatile robotic hands - Texas A&M University",
-    "original_title": "Building dexterous, intelligent and versatile robotic hands - Texas A&M University",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNjBEQmthOHFqY0ZlY3hPU0lqN3VRTkhhSm54cTdQNG5rR2RCMVE3ZGJERnM0QnpuRVhuZVZaQW5IZFU3VmdxaG9DU0dFVmtYZ2RkVzNpY2ZtLS0wY1B0RExlejc1SnY4emFqUFJsTHFUSDFjbGxWV0dQbzZUV0dsU0RDTEQ5cExDVmxBOTJRZ2FUSmx2WEl6TFVveHBBRXV5dWk2VllZdmVGXzk3SVE?oc=5",
-    "date": "2026-07-01 12:30",
-    "source": "Google News (Global Hand/Gripper)",
-    "category": "hand",
-    "summary": "Building dexterous, intelligent and versatile robotic hands  Texas A&M University"
-  },
-  {
-    "title": "Chinese firm sells hyper-real, ‘always loyal’ humanoid robots - The Straits Times",
-    "original_title": "Chinese firm sells hyper-real, ‘always loyal’ humanoid robots - The Straits Times",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUTFnaDkwVWJSOE4wRFhQSE9BVC15b01HMldUVEZIQ05HcnhOS3R6SnN0QndJbklCQW5mS2h6X0x5STQtTHUwTnJ5WHJuRWJnelJfcndoSlVqZmlrLVJtWndEb09kTmhyZExfTU9fREQ5bmgzd01ianFPTTNfMm1OMmpLTVZSaWllbTBGNnBBTmxWTnZLUlZpNkJ5WDlySktOSy1qWA?oc=5",
-    "date": "2026-07-01 11:37",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese firm sells hyper-real, ‘always loyal’ humanoid robots  The Straits Times"
-  },
-  {
-    "title": "중국 기업, '무조건적인 사랑' 테마의 초현실 로봇 판매 보도",
-    "original_title": "\"Will Love You Unconditionally\": Chinese Firm Sells Hyper-Real Robots - NDTV",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRnBsdnZqTGVWMFpYNDd3WGRLQlhWWVllU1BidnNCNlg4aVpYaVNTY2x3VFV6cTF1THpOQlZNd0d5SzVyZmpreXNnTUJXMzdrVGxiUHpFOGlqNm5JSlhwTXRYZGdPMjRTQmc2aFFrQ29RUlRSV0ZpSFFZTEhvTGljTElHZ0s3ZjkwVW80SmFnUk1qRXN2c0V6NFRnNFVscGg4Y1oxbS0wTFRCVEHSAbMBQVVfeXFMUGxoN1NFNVlWcHlXaV96YVZidjlWa0h1bGw4bGZLVEFWbVoybDkxWVFmV3N2SmxWR2xuZHJyUy1aWU5wTjFteXdfYjBaMFMzLTZzQld1b094VUpsdGxNb1Zyc3FKa2h3UzZTSFVkQmRXdzZzcjZ6anl4LXV2UVBiRVVLTGxHeWZpMVA0dDVXRlRyeXVVcmJfaFNKbmZEcElxY0NfaDJRRElXT3lXR19WSk9YT00?oc=5",
-    "date": "2026-07-01 11:36",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 한 기업이 매우 사실적인(hyper-real) 로봇 제품을 판매하며 주목받고 있음. 이 로봇들은 단순한 기계적 기능 구현을 넘어 '무조건적인 사랑'과 같은 감성적 주제를 활용하여 사용자에게 접근하고 있음. 이는 로봇이 향후 인간의 심리적 교감이나 정서적 영역에서 활용될 잠재력을 보여주는 사례임."
-  },
-  {
-    "title": "UBTech's US$137,000 companion robot sparks buzz and backlash - citynewsservice.cn",
-    "original_title": "UBTech's US$137,000 companion robot sparks buzz and backlash - citynewsservice.cn",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdFpZdmNxaEFMMGc5bVpCVEFYV2hhS1VoeFVSVHRGS29uSlExckx6M0ktUHlPOXFpSTBCdHFVUUdQR0tMZUNJYWFfTXBXLS1hNVJFUVk5WlYtOUdNbWQ5REVzOXhza19ERy00RWpOWExMMzYxOWJqMlM3dmRBdEl3eEpVaFc1RHcxQ25hLVVVQ2FpNUN3eGhSODlkS2VlU2lWSXJZYVp5cFk1NmZBRG5DMmpDS1B4VjNTcTlpUnNOM2tneFE?oc=5",
-    "date": "2026-07-01 11:21",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "UBTech's US$137,000 companion robot sparks buzz and backlash  citynewsservice.cn"
-  },
-  {
-    "title": "China's UBTech unveils eerily lifelike companion robots, and yes, they want to move in with you - Digital Trends",
-    "original_title": "China's UBTech unveils eerily lifelike companion robots, and yes, they want to move in with you - Digital Trends",
-    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPeUlKNFd2el9KdlJybFZRQTV1bGNFRVA4TU1VelFJTE82dWFhOXZCb0NWTmlZdjR0djhXTHloWHFRTVk3TDZrVnRfSlNpTVFrN2kyRHlnaEl4ZWFhV1lYbmMtY3FRZ3ZTSzdGYzd5bEVMZE1iSUdXNVkwUUJRNFVvSW5QVWN5Y3AtYW1DSGNxOTQ3V0tnRUU4Ykp1RVF1MjNUM3MxbGxKMUJVa1c2Zk14Ymo2MERCTndaVXlXSmZwZ29Yc1cwWUExT3c2SzFiQQ?oc=5",
-    "date": "2026-07-01 11:13",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China's UBTech unveils eerily lifelike companion robots, and yes, they want to move in with you  Digital Trends"
-  },
-  {
-    "title": "UBTech launches U1 humanoid robots for emotional companionship in China - The News International",
-    "original_title": "UBTech launches U1 humanoid robots for emotional companionship in China - The News International",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTktndkNPX0V6bmJ4OE5xYm92elQ2RzF5eVkwOXZ4RXZxVDJibFYxQVdOQjFZc2F6UnN0bk5PMFh6N0E5bUlJWG5MWG5FQWdwVTRpcUFDSloxZFN4eWdwTGg2YkRWZ0ttZEN0WmJ2TllBTFhMSVNJVHg4TVltZ0U1Yy1kUzNBbUNvLUZVd05qSmlBdElfdGlpMDZiNkpoUTZlekFaSlBDak9PZEJWUElhZlctOA?oc=5",
-    "date": "2026-07-01 10:36",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "UBTech launches U1 humanoid robots for emotional companionship in China  The News International"
   }
 ]
