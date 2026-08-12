@@ -1,5 +1,14 @@
 [
   {
+    "title": "A3 보고, 2026년 2분기 산업 전반 로봇 수요 증가함",
+    "original_title": "Q2 2026 robotics demand increased across industries, reports A3",
+    "link": "https://www.therobotreport.com/q2-2026-robotics-demand-increased-across-industries-reports-a3/",
+    "date": "2026-08-12 14:18",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "A3에 따르면, 2026년 2분기 로봇 수요가 산업 전반에 걸쳐 증가세를 보임. 특히 식품, 전자, 헬스케어 분야의 강력한 주문이 자동차 제조업 부문의 수요 부진을 상쇄하는 핵심 동력으로 작용함."
+  },
+  {
     "title": "미 육군 지속 능력 강화를 위한 자율 분배 시스템 TALUS 개발 계약 수주",
     "original_title": "Strengthening U.S. Army sustainment: TALUS to deliver autonomous distribution",
     "link": "https://www.therobotreport.com/strengthening-u-s-army-sustainment-talus-to-deliver-autonomous-distribution/",
@@ -232,6 +241,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "안전 필수 소프트웨어의 신뢰성 평가는 운영 데이터를 통해 이루어지나, 데이터의 상세도가 부족할 경우 신뢰성 주장이 위험할 정도로 낙관적일 수 있음. 본 연구는 보수적 베이즈 추론(CBI) 기법을 확장하여, 상세도가 부족한 운영 데이터가 자율주행차 안전성 평가에 미치는 영향을 분석하고 그 견고성을 검증함. 결과적으로, 데이터의 낮은 충실도가 신뢰성 주장을 심각하게 훼손할 수 있음을 밝히며, 정확한 안전 평가를 위한 데이터 충실도의 중요성을 강조함."
+  },
+  {
+    "title": "자율주행차의 환각 주입을 통한 컴포넌트 비종속적 안전성 평가 프레임워크 구축",
+    "original_title": "Injecting Hallucinations in Autonomous Vehicles: A Component-Agnostic Safety Evaluation Framework",
+    "link": "https://arxiv.org/abs/2510.07749",
+    "date": "2026-08-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "자율주행차의 지각 오류(Perception failures)에 대한 기존의 결함 주입 연구는 특정 센서나 모듈에 국한되어 일반화에 어려움이 있었음. 본 연구는 이러한 오류를 관측 가능한 '환각(hallucinations)' 개념으로 재정의하여, 컴포넌트의 종류와 무관하게 AV의 상황 인지 훼손을 분석할 수 있는 틀을 제시함. 개발된 개방형 시뮬레이터 기반의 환각 주입 프레임워크는 테스트를 통해 특정 환각 유형이 충돌 위험을 유의미하게 높임을 입증하였으며, 이는 AV 안전 검증 과정을 가속화하는 확장성 높은 도구로 활용 가능함."
   },
   {
     "title": "유니트리(Unitree)란 무엇이며, 중국 휴머노이드 로봇 기업들의 상장 경쟁 배경은 무엇인지 분석함",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2505.20857v2 Announce Type: replace \nAbstract: Motion retargeting for specific robot from existing motion datasets is one critical step in transferring motion patterns from human behaviors to and across various robots. However, inconsistencies in topological structure, geometrical parameters as well as joint correspondence make it difficult to handle diverse embodiments with a unified retargeting architecture. In this work, we propose a novel unified graph-conditioned diffusion-based motion generation framework for retargeting reference motions across diverse embodiments. The intrinsic characteristics of heterogeneous embodiments are represented with graph structure that effectively captures topological and geometrical features of different robots. Such a graph-based encoding further allows for knowledge exploitation at the joint level with a customized attention mechanisms developed in this work. For lacking ground truth motions of the desired embodiment, we utilize an energy-based guidance formulated as retargeting losses to train the diffusion model. As one of the first cross-embodiment motion retargeting methods in robotics, our experiments validate that the proposed model can retarget motions across heterogeneous embodiments in a unified manner. Moreover, it demonstrates a certain degree of generalization to both diverse skeletal structures and similar motion patterns."
-  },
-  {
-    "title": "KungfuBot: Physics-Based Humanoid Whole-Body Control for Learning Highly-Dynamic Skills",
-    "original_title": "KungfuBot: Physics-Based Humanoid Whole-Body Control for Learning Highly-Dynamic Skills",
-    "link": "https://arxiv.org/abs/2506.12851",
-    "date": "2026-07-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "arXiv:2506.12851v3 Announce Type: replace \nAbstract: Humanoid robots are promising to acquire various skills by imitating human behaviors. However, existing algorithms are only capable of tracking smooth, low-speed human motions, even with delicate reward and curriculum design. This paper presents a physics-based humanoid control framework, aiming to master highly-dynamic human behaviors such as Kungfu and dancing through multi-steps motion processing and adaptive motion tracking. For motion processing, we design a pipeline to extract, filter out, correct, and retarget motions, while ensuring compliance with physical constraints to the maximum extent. For motion imitation, we formulate a bi-level optimization problem to dynamically adjust the tracking accuracy tolerance based on the current tracking error, creating an adaptive curriculum mechanism. We further construct an asymmetric actor-critic framework for policy training. In experiments, we train whole-body control policies to imitate a set of highly-dynamic motions. Our method achieves significantly lower tracking errors than existing approaches and is successfully deployed on the Unitree G1 robot, demonstrating stable and expressive behaviors. The project page is https://kungfubot.github.io."
-  },
-  {
-    "title": "Manifold-constrained Hamilton-Jacobi Reachability Learning for Decentralized Multi-Agent Motion Planning",
-    "original_title": "Manifold-constrained Hamilton-Jacobi Reachability Learning for Decentralized Multi-Agent Motion Planning",
-    "link": "https://arxiv.org/abs/2511.03591",
-    "date": "2026-07-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2511.03591v2 Announce Type: replace \nAbstract: Safe multi-agent motion planning (MAMP) under task-induced constraints is a critical challenge in robotics. Many real-world scenarios require robots to navigate dynamic environments while adhering to manifold constraints imposed by tasks. For example, service robots must carry cups upright while avoiding collisions with humans or other robots. Despite recent advances in decentralized MAMP for high-dimensional systems, incorporating manifold constraints remains difficult. To address this, we propose a manifold-constrained Hamilton-Jacobi reachability (HJR) learning framework for decentralized MAMP. Our method solves HJR problems under manifold constraints to capture task-aware safety conditions, which are then integrated into a decentralized trajectory optimization planner. This enables robots to generate motion plans that are both safe and task-feasible without requiring assumptions about other agents' policies. Our approach generalizes across diverse manifold-constrained tasks and scales effectively to high-dimensional multi-agent manipulation problems. Experiments show that our method outperforms existing constrained motion planners and operates at speeds suitable for real-world applications. Video demonstrations are available at https://youtu.be/RYcEHMnPTH8 ."
   }
 ]
