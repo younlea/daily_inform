@@ -1,5 +1,14 @@
 [
   {
+    "title": "중국의 휴머노이드 로봇 선두 경쟁: AgiBot, Unitree 추월하며 우위 확보함",
+    "original_title": "AgiBot overtakes Unitree as China expands its lead in humanoid robots - digitimes",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdDQzOG5zdWNFa1U4c0lDNzJZUmFndnQ0VU4zVU12azdIdV9jOV91Nld4RklJQS1ieXNpdDFJaS1XaFd1TmVkWnhLQlVjMGZKdHBkNHdFYTFVaktnVlJJLWJMYWhpU21acDd3LTgwMi1hYjZCMVFDbWZsbzRBNkNleDRVSmkzbUNueElN?oc=5",
+    "date": "2026-08-13 00:06",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "AgiBot이 Unitree를 추월하며 시장 선두 경쟁에서 우위를 점한 것으로 파악됨. 이는 중국이 휴머노이드 로봇 산업 분야에서 글로벌 리더십을 확장하고 있음을 시사하는 움직임임."
+  },
+  {
     "title": "최신 로봇 IPO, 8000배 초과 수요 기록. 휴머노이드 로봇이 다음 대세일 경우 주목할 ETF들",
     "original_title": "The Latest Robotics IPO is 8000X Oversubscribed. These ETFs Could Take Off if Humanoid Robotics Are The Next Big Thing. - 24/7 Wall St.",
     "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNUlVhakpSYTdFRy1yRUtXT19wY3FFT0FRc3Y0aDA1NURsdXRiSUljd0F5ZkpiSFgyc1VfQ3BOcDZhZ0s2WmpoQUNZUkpyN3p6TXEwb3djY3EtVDBJSnlmWV9BeFVpcWtSNUR3YVlqYkMwcUMteFBUdXpIWldXcUFSa1M2dDZlSUJoWmRVWDlyaWdCNjlwY3Zad1l5ay1PekZKZXFXcERnZElhX2wyVURfVTNvb3lJRnZ0WHppX2xvUUljZ0JZWUllcjVocmlQcVRwOHpLcTRKNUR0MjQ2MXZxbzlwM21oQS1SRHdqbDc3VEk4Rlc0SzdsQw?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2607.00442v1 Announce Type: new \nAbstract: Reinforcement learning (RL) for quadruped locomotion commonly depends on fixed, hand-crafted, and Markovian reward functions that limit both interpretability of learned policies and lack explicit control over gait behaviors. We introduce a framework where distinct gaits are specified using parameterized constraints expressed in Signal Temporal Logic (STL). These include safety bounds, gait synchronization constraints, command tracking, and actuation bounds. From these specifications, we develop a reward shaping mechanism that provides learning agents a dense, continuous reward landscape that encodes desired behavior. We define parametric STL templates for three speed regimes (walking-trot, trot, bound), calibrate their parameters from reference rollouts, and compute rewards from using smooth approximations of STL robustness over the rollouts. The generated rewards can be used to provide shaped gradients compatible with Proximal Policy Optimization (PPO). We instantiate the approach on Google's Barkour quadruped robot in MuJoCo XLA (MJX). We use parallelization within the simulator to improve training speeds and use domain randomization to robustify learned policies. We show that compared to a baseline of hand-crafted rewards, the STL-shaped rewards yield tighter velocity tracking and more stable training. Videos can be found on our project website: https://stl-locomotion.github.io/."
-  },
-  {
-    "title": "Search-Based Spatiotemporal and Multi-Robot Motion Planning on Graphs of Space-Time Convex Sets",
-    "original_title": "Search-Based Spatiotemporal and Multi-Robot Motion Planning on Graphs of Space-Time Convex Sets",
-    "link": "https://arxiv.org/abs/2607.00444",
-    "date": "2026-07-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2607.00444v1 Announce Type: new \nAbstract: Spatiotemporal motion planning, especially in multi-robot settings, requires robots to reason about collision-free regions that change over time, which is challenging in continuous spaces when feasible regions are transient and geometrically constrained. We present an algorithmic framework based on graphs of space-time convex sets (ST-GCSs), where collision-free regions are represented as convex sets in space-time and trajectories correspond to paths on the graph together with continuous motions within the selected sets. We formulate time-optimal planning on ST-GCSs as a graph-search problem over path-indexed states and develop a best-first search solver that evaluates partial paths via continuous trajectory optimization, guided by admissible heuristics and dominance checks. We further present an Exact Convex Decomposition (ECD) scheme to reserve trajectory occupancies in space-time, enabling unified handling of dynamic obstacles and multi-robot interactions. For multi-robot motion planning, we integrate ST-GCS planning and ECD into prioritized planning methods and introduce a windowed coordination scheme to improve efficiency. Extensive experiments on single-robot and multi-robot problems demonstrate substantial speedups over various planners while maintaining high solution quality, particularly in environments with narrow and transient feasible regions. Large-scale demonstrations further show that the proposed multi-robot motion planner can solve instances with up to $100$ robots within only a few minutes. Project homepage: https://sites.google.com/view/stgcs"
   }
 ]
