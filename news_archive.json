@@ -387,6 +387,15 @@
     "summary": "본 연구는 로봇의 접촉 기반 물리적 상호작용의 한계를 극복하기 위해 확산 기반 임피던스 학습 프레임워크를 제시함. Transformer 기반 Diffusion Model과 에너지 일관성 임피던스 제어를 결합하여, 측정된 외부 와렌치(external wrenches)를 이용해 Zero-Force Trajectories (sZFTs)를 재구성하고 지향성 강성 및 댐핑을 통해 임피던스를 온라인 적응시키는 것이 핵심 기술임. 이 모델은 KUKA LBR iiwa에 적용되어 장애물 통과 및 Peg-in-hole 삽입 작업 등에서 높은 성공률과 전반적인 작업 일반화 성능을 입증함."
   },
   {
+    "title": "JEPA-WAM: 로봇 매니퓰레이션에서의 월드-액션 모델을 위한 단계 수준 결합 임베딩 예측",
+    "original_title": "JEPA-WAM: Stage-Level Joint-Embedding Prediction for World-Action Models in Robot Manipulation",
+    "link": "https://arxiv.org/abs/2608.10780",
+    "date": "2026-08-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 로봇 일반화 정책이 단기적인 물리적 미래 예측에 국한되는 한계점을 지적하며, 본 연구는 작업 진행의 '단계 수준' 의미적 미래를 포착하는 JEPA-WAM을 제안함. JEPA-WAM은 기존 World Action Model (WAM)을 Stage-JEPA로 증강하여 현재 상태를 기반으로 다음 추론 단계의 잠재적 목표를 예측하는 구조임. 이 모델은 50개의 RoboTwin 2.0 태스크를 통해 전반적 성공률 90.25%를 달성하고, 성공적인 동작 수행 과정의 평균 단계를 5.97% 감소시키는 성과를 입증함."
+  },
+  {
     "title": "유니트리(Unitree)란 무엇이며, 중국 휴머노이드 로봇 기업들의 상장 경쟁 배경은 무엇인지 분석함",
     "original_title": "What is Unitree and why are China’s humanoid robot makers racing to list? - The Japan Times",
     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPeTlydDh3Y2o0NXlYVDU2S3NBeUFxbVBEVDlxYTFnNldJZ0EwZ2JJMjBvMXlrWEZTMW5NUDh2bzNQUHM3Y2VKWGl6MFdBeDQzTk5JcHltMWxiTDZXN0dUT3dGRVMtTllSZGxiNWpzX2pxZVpsczZ5ZGpqX3lubXd6cmU4T0RJdXRsOW5NNHJjZjV2emhV?oc=5",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2607.00424v1 Announce Type: new \nAbstract: Redundant robotic manipulators operating in constrained and human-interactive environments require accurate task-space tracking together with rigorous safety guarantees under dynamic uncertainties. Classical operational space computed torque controller (OSCTC) relies on accurate dynamic models and degrades in the presence of disturbances. In contrast, the data-driven paradigm of residual learning approximates disturbances as functions learned from full-state measurements, which are often noisy in practice, lack rigorous theoretical guarantees, and introduce additional design complexity. This paper proposes a robust OSCTC framework that integrates an extended state observer (ESO) with conformal prediction to combine model-based robustness and data-driven adaptability. The ESO estimates lumped disturbances directly in operational space without requiring full-state measurements as in residual learning, and a robust control barrier function (CBF) is constructed to enforce safety under uncertainty. However, robust CBFs require a known disturbance-variation bound to guarantee absolute safety, which often leads to conservatism in practice. To address this limitation, we further employ a sliding-window conformal prediction mechanism to estimate the bound online in a distribution-free manner, thereby achieving practical probabilistic safety guarantees. Experiments on a 7-DoF Franka Research 3 manipulator demonstrate millimeter-level tracking accuracy and real-time safe control at 1~kHz under various disturbances."
-  },
-  {
-    "title": "Learning Gait-Aware Quadruped Locomotion with Temporal Logic Specifications",
-    "original_title": "Learning Gait-Aware Quadruped Locomotion with Temporal Logic Specifications",
-    "link": "https://arxiv.org/abs/2607.00442",
-    "date": "2026-07-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2607.00442v1 Announce Type: new \nAbstract: Reinforcement learning (RL) for quadruped locomotion commonly depends on fixed, hand-crafted, and Markovian reward functions that limit both interpretability of learned policies and lack explicit control over gait behaviors. We introduce a framework where distinct gaits are specified using parameterized constraints expressed in Signal Temporal Logic (STL). These include safety bounds, gait synchronization constraints, command tracking, and actuation bounds. From these specifications, we develop a reward shaping mechanism that provides learning agents a dense, continuous reward landscape that encodes desired behavior. We define parametric STL templates for three speed regimes (walking-trot, trot, bound), calibrate their parameters from reference rollouts, and compute rewards from using smooth approximations of STL robustness over the rollouts. The generated rewards can be used to provide shaped gradients compatible with Proximal Policy Optimization (PPO). We instantiate the approach on Google's Barkour quadruped robot in MuJoCo XLA (MJX). We use parallelization within the simulator to improve training speeds and use domain randomization to robustify learned policies. We show that compared to a baseline of hand-crafted rewards, the STL-shaped rewards yield tighter velocity tracking and more stable training. Videos can be found on our project website: https://stl-locomotion.github.io/."
   }
 ]
