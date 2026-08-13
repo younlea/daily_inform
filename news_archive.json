@@ -360,6 +360,24 @@
     "summary": "음성 안내를 통한 원격 제어 시스템은 사람의 변화하는 커뮤니케이션 동역학을 정적으로 간주하는 경향이 있음. 본 연구는 손가락 지시와 드론 원격 조종 실험을 통해, 자발적인 음성 유도가 Orientation, Approach, Adjustment의 세 가지 궤적적, 언어적으로 뚜렷한 단계로 조직됨을 입증함. 이 3단계 구조가 다양한 모터 인터페이스에서 반복적으로 나타나, 인간 공간 유도의 내재적 특성임을 시사하며 OAA 인식 적응 제어 구현에 대한 함의를 제시함."
   },
   {
+    "title": "시맨틱 3D 가우시안 스플래팅 기반 개방형 어휘 이동 매니퓰레이션을 위한 구현형 다중 모드 접지",
+    "original_title": "Embodied Multimodal Grounding for Open-Vocabulary Mobile Manipulation via Semantic 3D Gaussian Splatting",
+    "link": "https://arxiv.org/abs/2608.10756",
+    "date": "2026-08-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "이동 로봇의 동작 수행을 위해 언어, 시각, 3D 구조 정보를 통합하는 구현형 다중 모드 접지 프레임워크를 제시함. 이 프레임워크는 Semantic-3DGS를 핵심 인터페이스로 활용하여 능동 센싱, 3D 위치 추정, 행동 모델을 통합적으로 구동함. 실제 로봇 평가 결과, 기존 VLA 접근법 대비 월등히 높은 성공률을 기록하며 복잡한 환경 및 시점 변화에 대한 강건성(robustness)을 크게 개선했음을 입증함."
+  },
+  {
+    "title": "확산 기반 임피던스 학습을 이용한 접촉 기반 매니퓰레이션 작업",
+    "original_title": "Diffusion-Based Impedance Learning for Contact-Rich Manipulation Tasks",
+    "link": "https://arxiv.org/abs/2509.19696",
+    "date": "2026-08-12 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 연구는 로봇의 접촉 기반 물리적 상호작용의 한계를 극복하기 위해 확산 기반 임피던스 학습 프레임워크를 제시함. Transformer 기반 Diffusion Model과 에너지 일관성 임피던스 제어를 결합하여, 측정된 외부 와렌치(external wrenches)를 이용해 Zero-Force Trajectories (sZFTs)를 재구성하고 지향성 강성 및 댐핑을 통해 임피던스를 온라인 적응시키는 것이 핵심 기술임. 이 모델은 KUKA LBR iiwa에 적용되어 장애물 통과 및 Peg-in-hole 삽입 작업 등에서 높은 성공률과 전반적인 작업 일반화 성능을 입증함."
+  },
+  {
     "title": "유니트리(Unitree)란 무엇이며, 중국 휴머노이드 로봇 기업들의 상장 경쟁 배경은 무엇인지 분석함",
     "original_title": "What is Unitree and why are China’s humanoid robot makers racing to list? - The Japan Times",
     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPeTlydDh3Y2o0NXlYVDU2S3NBeUFxbVBEVDlxYTFnNldJZ0EwZ2JJMjBvMXlrWEZTMW5NUDh2bzNQUHM3Y2VKWGl6MFdBeDQzTk5JcHltMWxiTDZXN0dUT3dGRVMtTllSZGxiNWpzX2pxZVpsczZ5ZGpqX3lubXd6cmU4T0RJdXRsOW5NNHJjZjV2emhV?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2607.00444v1 Announce Type: new \nAbstract: Spatiotemporal motion planning, especially in multi-robot settings, requires robots to reason about collision-free regions that change over time, which is challenging in continuous spaces when feasible regions are transient and geometrically constrained. We present an algorithmic framework based on graphs of space-time convex sets (ST-GCSs), where collision-free regions are represented as convex sets in space-time and trajectories correspond to paths on the graph together with continuous motions within the selected sets. We formulate time-optimal planning on ST-GCSs as a graph-search problem over path-indexed states and develop a best-first search solver that evaluates partial paths via continuous trajectory optimization, guided by admissible heuristics and dominance checks. We further present an Exact Convex Decomposition (ECD) scheme to reserve trajectory occupancies in space-time, enabling unified handling of dynamic obstacles and multi-robot interactions. For multi-robot motion planning, we integrate ST-GCS planning and ECD into prioritized planning methods and introduce a windowed coordination scheme to improve efficiency. Extensive experiments on single-robot and multi-robot problems demonstrate substantial speedups over various planners while maintaining high solution quality, particularly in environments with narrow and transient feasible regions. Large-scale demonstrations further show that the proposed multi-robot motion planner can solve instances with up to $100$ robots within only a few minutes. Project homepage: https://sites.google.com/view/stgcs"
-  },
-  {
-    "title": "VLM-AR3L: Vision-Language Models for Absolute and Relative Rewards in Reinforcement Learning",
-    "original_title": "VLM-AR3L: Vision-Language Models for Absolute and Relative Rewards in Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2607.00483",
-    "date": "2026-07-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2607.00483v1 Announce Type: new \nAbstract: Designing effective reward functions remains a major challenge in reinforcement learning (RL), particularly in open-ended environments where task goals are abstract and difficult to quantify. In this work, we present VLM-AR3L, a framework that leverages Vision-Language Models (VLMs) to provide both absolute and relative rewards for RL. VLM-AR3L interprets an agent's visual observations in the context of a natural language task goal, and learns both absolute and relative rewards from VLM-generated preference labels. The absolute reward model predicts scalar evaluations for individual states, while the relative reward model compares consecutive observations to infer progress or regression toward the task goal. Their integration combines the stability of state-based evaluation with the robustness of comparative supervision. We evaluate VLM-AR3L across benchmarks spanning classic control, manipulation, and open-world embodied tasks, with a particular focus on Minecraft given its visual complexity and long-horizon decision-making requirements. Experimental results show that VLM-AR3L consistently outperforms prior VLM-based reward learning methods."
-  },
-  {
-    "title": "From Technical Metrics to User Perception: A User Study of a Multimodal Human-Robot Interaction System for Object Detection and Grasping",
-    "original_title": "From Technical Metrics to User Perception: A User Study of a Multimodal Human-Robot Interaction System for Object Detection and Grasping",
-    "link": "https://arxiv.org/abs/2607.00530",
-    "date": "2026-07-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2607.00530v1 Announce Type: new \nAbstract: Improvements in the technical performance of human--robot interaction (HRI) systems do not automatically translate into differences that human users can detect during live interaction. This paper investigates whether a 15 percentage point gain in end-to-end task success (from 75% in a multimodal baseline system to 90% in an improved configuration identified through a prior ablation study) is sufficient to produce consistent and measurable differences in user perception. The baseline system combines Whisper for speech recognition, Florence-2 for open-vocabulary object detection, LLaMA 3.1 for action extraction, and an interval Type-2 fuzzy logic controller for motion execution. The improved configuration replaces the perception and language modules with Grounding DINO + SAM and Qwen 3.5 9B, respectively, while retaining the same controller. A within-subject user study with 24 participants compared both systems on the same tabletop object-grasping task. After interacting with each configuration, participants rated perceived speed, reliability, and overall competence and fluency on a 7-point Likert scale. Results show that 17 out of 24 participants (70.83%) preferred the improved system (exact binomial test, p = 0.043, h = 0.43), and all three perceptual constructs were rated significantly higher for the improved configuration after Holm correction, with large to very large effect sizes (p < 0.001). These findings confirm that the identified technical improvements are perceptible to users in direct interaction and underscore the importance of complementing benchmark evaluation with user-centred evidence when assessing robotic manipulation pipelines."
   }
 ]
