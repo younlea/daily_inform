@@ -72,6 +72,24 @@
     "summary": "본 논문은 in-hand manipulation을 위한 혁신적인 변형형 촉각 센서를 소개함. 이 센서는 속도, 힘/토크, 압력 맵 센싱 등 여러 모달리티를 단일하고 compliant한 구조에 통합한 최초의 시도로 알려짐. 해당 센서는 다양한 평면 및 곡면 표면 추적에 강점을 보이며, 표준 PCB 제조 및 rapid prototyping 기법을 결합하여 신속하고 저렴한 제작이 가능함."
   },
   {
+    "title": "주의력 기반 증강을 통한 비헤이비어 클로닝의 시각 도메인 강건성 향상",
+    "original_title": "Enhancing Visual Domain Robustness in Behaviour Cloning via Saliency-Guided Augmentation",
+    "link": "https://arxiv.org/abs/2608.11870",
+    "date": "2026-08-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 비전 기반 비헤이비어 클로닝(BC)은 그림자, 배경, 조명 변화 같은 시각 도메인 변화에 취약하며, 기존의 증강 기법은 작업에 중요한 시멘틱 정보를 손상시킬 위험이 있음. 이에 본 연구는 주의력(Saliency) 기반의 증강 기법인 RoboSaGA를 제안함. RoboSaGA는 정책 주도적 주의력을 이용해 핵심 정보를 보존하면서 작업에 불필요한 영역만 적극적으로 증강함으로써, 시뮬레이션 및 실제 환경 모두에서 도메인 변화에 대한 강건성을 대폭 향상시키는 결과를 보여줌."
+  },
+  {
+    "title": "TMRL: 확산 시간 단계 변조 사전 학습을 통한 효율적인 정책 미세 조정을 위한 탐색 기능 구현함",
+    "original_title": "TMRL: Diffusion Timestep-Modulated Pretraining Enables Exploration for Efficient Policy Finetuning",
+    "link": "https://arxiv.org/abs/2605.12236",
+    "date": "2026-08-13 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 Behavioral Cloning(BC) 기반의 로봇 정책 사전 학습은 제한적인 행동 분포를 가져 다운스트림 탐색에 한계가 있었음. 본 연구는 Context-Smoothed Pre-training(CSP)을 통해 행동 모방과 광범위한 동작 범위를 연결하는 사전 훈련 과정을 구축하고, Timestep-Modulated Reinforcement Learning(TMRL)을 통해 확산 시간 단계를 조절하며 탐색을 명시적으로 제어함. TMRL은 다양한 입력(State, 3D Point Clouds 등)에 통합 가능하며, 복잡한 실제 조작(manipulation) 작업에서도 효율적인 RL 미세 조정 성능을 달성했음."
+  },
+  {
     "title": "휴머노이드 로봇의 '최초 주식' 등장: Unitree Technology의 실제 가치 분석임",
     "original_title": "“ The first stock of humanoid robots ” — how much is Unitree Technology really worth? - odaily.news",
     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE82SUpXcXc3NnY2ZldXM09NVXhTNGlrQTg0em9MNXByUVZKUHZqOWo1V096bDF3dWFqLVpSU3oxOFVTTnpwOGlQR1Nta1l6Nk15?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Chinese robot manufacturer UBTech has unveiled the 'UWorld U1' series of humanoid robots, featuring realistic silicone skin and emotional AI, and capable of reproducing the voices of real people.  GIGAZINE"
-  },
-  {
-    "title": "EmbodimentSemantic: A Spatial Scene-Graph Dataset and Benchmark for Vision-Language Models on Embodied Manipulation Trajectories",
-    "original_title": "EmbodimentSemantic: A Spatial Scene-Graph Dataset and Benchmark for Vision-Language Models on Embodied Manipulation Trajectories",
-    "link": "https://arxiv.org/abs/2607.00020",
-    "date": "2026-07-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2607.00020v1 Announce Type: new \nAbstract: Spatial grounding remains a key limitation of vision-language-action (VLA) systems for robotic manipulation. While current models can recognize objects and follow language instructions, they often lack an explicit representation of how objects are arranged in space, including support, containment, ordering, occlusion, and depth-sensitive relations. We introduce EmbodimentSemantic, a spatial scene-graph dataset and benchmark for evaluating relational grounding in embodied manipulation. EmbodimentSemantic represents scenes as directed object-relation-object triplets, where each triplet specifies a spatial relation between an ordered pair of objects using a fixed set of relations. This representation enables direct evaluation of object binding, relation prediction, and spatial consistency. The dataset includes real-world manipulation observations collected with the low-cost SO101 robot arm, together with generated scene graphs for studying spatial grounding in practical robotic settings. To provide controlled validation, we also introduce a simulator-grounded LIBERO benchmark with over 60K manipulation frames and more than 120K camera-specific scene graphs across paired third-person and wrist views, where ground-truth relations are derived automatically from MuJoCo geometry, world coordinates, camera projections, and visibility constraints. We further test whether scene graphs improve downstream control by injecting them into existing VLA policy prompts. Experiments across open-source and commercial VLMs show that current models often predict plausible relations but struggle with exact depth-aware and viewpoint-dependent spatial structure. EmbodimentSemantic provides a unified framework for diagnosing spatial grounding in VLM perception and testing its utility for VLA manipulation."
-  },
-  {
-    "title": "FLYNN: Robust Neural Network for Robot Navigation using Fly Brain Topology",
-    "original_title": "FLYNN: Robust Neural Network for Robot Navigation using Fly Brain Topology",
-    "link": "https://arxiv.org/abs/2607.00025",
-    "date": "2026-07-02 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2607.00025v1 Announce Type: new \nAbstract: While deep learning models achieve state-of-the-art performance in complex tasks, they remain brittle when faced with new environments or sensory deprivation. In contrast, biological systems exhibit remarkable tolerance to these challenges. We address this vulnerability by developing a recurrent neural network (RNN) whose architecture is directly derived from the synaptic-resolution brain connectome of the fruit fly Drosophila melanogaster. We demonstrate the feasibility of training the fly connectome neural network (FLYNN) to perform vision-based navigation in MuJoCo, achieving performance comparable to modern hand-crafted networks of similar parameter counts. Crucially, FLYNN exhibits superior resistance to out-of-distribution (OOD) data and tolerance to sensory loss without further training. It remained functional even under total vision loss while hand-crafted networks largely failed, even when specifically trained with camera dropout. Principal Component Analysis (PCA) of the internal state of FLYNN suggests that it exhibits a particularly high degree of representational modularity, which might be related to its robustness. Our work provides a new direction for designing resilient artificial agents following the topology of biological brains."
   }
 ]
