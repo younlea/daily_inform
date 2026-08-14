@@ -1,5 +1,14 @@
 [
   {
+    "title": "월가 상장 로봇 기업: 로보틱스 기업의 공모 시장 진출 비전통적 경로 분석",
+    "original_title": "Robots on Wall Street: Non-traditional paths to public markets for robotics companies",
+    "link": "https://www.therobotreport.com/robots-on-wall-street-non-traditional-paths-public-markets-robotics-companies/",
+    "date": "2026-08-14 12:30",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Agility의 SPAC(Special Purpose Acquisition Company) 거래 사례를 통해 로보틱스 기업의 상장 경로가 단일하지 않음이 확인됨. 공모 시장 진출을 위해 SPAC 합병, 리버스 합병, 전통적인 IPO 등 다양한 방식이 활용 가능함. 각 경로는 기업에 상이한 장점과 이점을 제공하는 것으로 분석됨."
+  },
+  {
     "title": "LG, 2027년 초 Nvidia 기반 휴머노이드 로봇 공개 예정",
     "original_title": "LG to unveil new Nvidia-powered humanoid robot in early 2027",
     "link": "https://roboticsandautomationnews.com/2026/08/14/lg-to-unveil-new-nvidia-powered-humanoid-robot-in-early-2027/104173/",
@@ -376,6 +385,15 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "기존 로봇 매니퓰레이션의 실패 감지는 접촉 발생 후에 이루어져 성능에 한계가 존재함. 이에 연구진은 계획된 동작 청크를 기반으로 잠재 시각 공간에서의 단기적 결과를 예측하는 사전 접촉 실행 모니터링 시스템인 ContactGuard를 제시함. 이 시스템은 예측된 미래 잠재 공간 상태가 실패를 암시할 경우 사전에 작업을 중단(abort)시키며, 실제 접촉이 필요한 작업 환경에서도 높은 정확도로 안정성을 제공함."
+  },
+  {
+    "title": "궤적 우선: 다양한 정책 탐색을 위한 학습 커리큘럼 제시",
+    "original_title": "Trajectory First: A Curriculum for Discovering Diverse Policies",
+    "link": "https://arxiv.org/abs/2506.01568",
+    "date": "2026-08-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 매니퓰레이션 등 복잡한 작업에서 에이전트의 다양성 확보는 중요함. 이에 본 연구는 스플라인 기반의 궤적 사전(trajectory prior)을 도입한 2단계 커리큘럼을 제안함. 이 커리큘럼은 첫 단계에서 다양한 고보상 행동을 생성하고, 이를 반응형의 단계별 정책으로 변환하여 높은 태스크 성능을 유지하며 학습된 기술의 다양성을 높이는 것으로 입증됨."
   },
   {
     "title": "2026년, 구독료 없는 최고의 무료 사람 찾기 웹사이트 7선 공개",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2607.01721v1 Announce Type: new \nAbstract: Reward design remains a central challenge in reinforcement learning (RL). Hand-crafted rewards are often difficult to specify and may lead to suboptimal policies, while learned rewards from preferences can suffer from inefficiency and unstable training. Inspired by the dual nature of human learning explored in cognitive science, we decompose rewards into two complementary components: Formal Rewards (FR), explicitly designed based on task knowledge, and Residual Rewards (RR), learned from observations to capture implicit and nuanced preferences. Based on this decomposition, we propose CoRe, a hybrid framework that integrates FR and RR with vision-language models (VLMs) feedback to achieve preference-aligned policies without human involvement. Our contributions are twofold: (1) We propose a Formal Reward Module (FRM) that leverages VLMs to iteratively design and optimize FR based on task knowledge and preference feedback, enabling the continual improvement of policy during training; (2) We introduce a Residual Reward Module (RRM) that learns RR from video-level preference by employing VLMs to generate preference labels and capturing nuanced rewards that complement FR, ensuring alignment with human intent. Through the synergy of FRM and RRM, CoRe enables the automatic construction of reliable rewards that are efficient and preference-aligned. Extensive experiments demonstrate that CoRe outperforms existing approaches in terms of policy learning effectiveness and efficiency on ten robotic manipulation tasks in simulation and five real-worlds. Videos can be found on our project website: https://core-2026.github.io/"
-  },
-  {
-    "title": "VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon",
-    "original_title": "VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon",
-    "link": "https://arxiv.org/abs/2607.01804",
-    "date": "2026-07-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2607.01804v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) foundation models have recently achieved strong progress in embodied intelligence. To reduce policy-call frequency while preserving temporal coherence, most generative policies adopt an action chunk mechanism, executing multiple future actions in an open-loop manner under a fixed action horizon. However, this \"predict-then-blindly-execute\" paradigm sacrifices closed-loop reactivity: in contact-rich physical interactions, even small local perturbations can rapidly amplify within the open-loop blind spot, leading to compounding errors and ultimately task failure. To address this limitation, we propose VLA-Corrector, a lightweight corrective inference framework for action-chunked VLA policies. Without modifying the backbone policy weights, VLA-Corrector introduces a lightweight Latent-space Vision Monitor (LVM) that continuously compares predicted and actual visual feature evolution, enabling online detection of visual dynamics deviations. Once persistent deviation is detected, the system triggers a truncation event, discards the remaining stale actions, and invokes corrective replanning via Online Gradient Guidance (OGG). The detect-and-correct mechanism of VLA-Corrector naturally induces an event-triggered adaptive action horizon: it preserves long-horizon execution when the current chunk remains reliable, and invokes short-horizon corrective replanning when execution begins to drift. In doing so, VLA-Corrector mitigates the trade-off imposed by static horizons between execution robustness and policy-call frequency. It can be integrated into different VLA models without further retraining the VLA backbone, interrupting compounding errors while preserving much of the efficiency benefit of action chunking and substantially improving robustness in long-horizon, contact-rich robotic manipulation tasks."
-  },
-  {
-    "title": "PhysMani: Physics-principled 3D World Model for Dynamic Object Manipulation",
-    "original_title": "PhysMani: Physics-principled 3D World Model for Dynamic Object Manipulation",
-    "link": "https://arxiv.org/abs/2607.01938",
-    "date": "2026-07-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2607.01938v1 Announce Type: new \nAbstract: Manipulating fast and dynamically moving targets in unstructured 3D environments remains challenging for embodied AI. Existing visual-language-action models and world models struggle with accurate 3D geometry and physically meaningful forecasting. We propose PhysMani, a framework that couples a physics-principled 3D Gaussian world model with a future-aware action policy model. The world model learns a divergence-free Gaussian velocity field via online optimization for fast and physically grounded future dynamics prediction. The policy model integrates the predicted 3D scene future dynamics through a learnable token based cross-attention module. We introduce PhysMani-Bench, a dynamic manipulation benchmark with 16 tasks, and demonstrate a superior success rate over strong baselines in both simulation and real-world robot experiments."
   }
 ]
