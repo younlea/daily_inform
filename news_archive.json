@@ -1,5 +1,14 @@
 [
   {
+    "title": "로봇이 사람을 넘어 공간과 대화하기 위한 조건은 무엇인가",
+    "original_title": "What does it take for a robot to hold a conversation with a room, not just a person?",
+    "link": "https://robohub.org/what-does-it-take-for-a-robot-to-hold-a-conversation-with-a-room-not-just-a-person/",
+    "date": "2026-08-14 09:04",
+    "source": "Robohub",
+    "category": "humanoid",
+    "summary": "필자는 Imperial Robotics Summer School(런던)에 참석하여 로봇공학에 대한 사고의 전환을 경험함. 주요 질문은 로봇이 인간과의 상호작용을 넘어, 방과 같은 환경(Room) 자체와 어떻게 대화하고 상호작용할 수 있는지에 집중됨. 이는 로봇 문제를 기존의 틀에서 벗어난 새로운 각도에서 접근하게 된 계기가 됨."
+  },
+  {
     "title": "오토스토어, 아마존과 글로벌 공급 계약 체결",
     "original_title": "AutoStore signs global supply agreement with Amazon",
     "link": "https://roboticsandautomationnews.com/2026/08/14/autostore-signs-global-supply-agreement-with-amazon/104162/",
@@ -17989,14 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "arXiv:2607.02403v1 Announce Type: new \nAbstract: Decision-time planning with action-conditioned world models has become a popular paradigm for embodied control. However, the standard planning cost judges a candidate solely by how close its predicted terminal state lies to the goal, leaving the realizability of the intermediate transitions unchecked -- a predicted trajectory can look convincing while the environment rollout drifts away from it. In this paper, we propose ACID, a decision-time planning framework that introduces cycle action consistency: the action inferred backward from a predicted transition by an inverse dynamics model should recover the one that was conditioned on. We fold this per-step residual into the planning cost via a scale-invariant adaptive weight. Across four action-conditioned world models and six tasks spanning rigid and deformable manipulation, articulated control, and visual navigation, ACID consistently improves planning and matches the baseline's accuracy with substantially less planning compute."
-  },
-  {
-    "title": "LIME: Learning Intent-aware Camera Motion from Egocentric Video",
-    "original_title": "LIME: Learning Intent-aware Camera Motion from Egocentric Video",
-    "link": "https://arxiv.org/abs/2607.02417",
-    "date": "2026-07-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "arXiv:2607.02417v1 Announce Type: new \nAbstract: Autonomous robots often need to move their camera before they can act: to inspect an object, reveal an occluded region, or obtain a view that responds to a user's intent. While vision-language navigation translates instructions to base motion and vision-language-action policies map instructions to manipulation actions, language-conditioned camera motion remains comparatively underexplored as a first-class action. We formulate language-conditioned camera motion generation: given a current RGB observation and a free-form natural-language intent, predict a relative target camera pose for the next observation. This task is inherently non-trivial: viewpoint changes are driven by latent perceptual intentions, and a valid motion may operate at different semantic granularity, from entering a room to looking around a corner, inspecting a visible object, or revealing an occluded detail. To model this structure, we mine multi-intention camera-motion supervision from egocentric video, pairing plausible intents and observation-gain descriptions with relative SE(3) target poses. We propose LIME, a vision-language camera-motion generator that combines an auto-regressive observation-gain output with a continuous flow-matching pose head. This design lets the model jointly predict what the next view should reveal while representing multi-hypothesis target views. Across experiments and downstream robotic tasks, we show that LIME can learn to actively choose camera poses from passive human video, turning ordinary egocentric recordings into supervision for intent-aware active perception."
   }
 ]
