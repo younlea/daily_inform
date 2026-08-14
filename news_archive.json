@@ -1,5 +1,77 @@
 [
   {
+    "title": "합성 조작 기술 일반화를 통한 실제 환경 민첩성 확보: RoboSynChallenge",
+    "original_title": "RoboSynChallenge: Mastering Real-World Dexterity via Generalizing Synthesized Manipulation Skills",
+    "link": "https://arxiv.org/abs/2608.12416",
+    "date": "2026-08-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇의 범용적 조작(manipulation) 능력 확보가 핵심 난제임. RoboSynChallenge는 실세계 데이터의 부족 문제를 해결하기 위해 대규모 합성 데이터 생성과 표준화된 실세계 평가를 통합한 벤치마크를 제시함. 본 챌린지는 합성 환경에서의 학습을 거쳐 실제 환경에서 성능을 검증하는 과정을 통해, 데이터 효율적이며 범용성이 높은 일반 로봇 지능 시스템 개발을 목표로 함."
+  },
+  {
+    "title": "HumanoidVLN: 다양한 인간형 구현체를 위한 물리 기반 비전-언어 내비게이션 시뮬레이터 및 벤치마크",
+    "original_title": "HumanoidVLN: A Physics-Grounded Simulator and Benchmark for Vision-Language Navigation Across Diverse Humanoid Embodiments",
+    "link": "https://arxiv.org/abs/2608.12860",
+    "date": "2026-08-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "HumanoidVLN은 인간형 로봇의 물리적 제약(bipedal locomotion 등)을 해결하기 위해 개발된 물리 기반 시뮬레이터이자 벤치마크임. NVIDIA Isaac Sim을 기반으로 Unitree G1 등을 포함하는 다양한 인간형 구현체를 지원하며, Reinforcement Learning 및 MPC/PD를 결합한 하이브리드 제어 스택을 활용함. 이 플랫폼은 다양한 VLN 모델과의 호환성을 입증하는 동시에, 시뮬레이션과 실제 환경 간 높은 상관관계(r=0.935)를 보이는 우수한 Sim-to-Real 전이 성능을 보고함."
+  },
+  {
+    "title": "FAM-DQ: 고토크 상호작용을 위한 듀얼 쿼드로터 기반 완전 구동 공중 매니퓰레이터임",
+    "original_title": "FAM-DQ: A Dual-Quadrotor-Based Fully Actuated Aerial Manipulator for High-Torque Interaction",
+    "link": "https://arxiv.org/abs/2608.13220",
+    "date": "2026-08-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 높은 토크 상호작용을 위해 설계된 듀얼 쿼드로터 기반 완전 구동 공중 매니퓰레이터인 FAM-DQ를 제시함. FAM-DQ는 패시브 조인트와 기어 구동 서보를 결합하여 6-DoF의 분리된 종단 효과기 제어와 전방향 매니퓰레이션 기능을 구현함. 실험 결과, 총 질량 0.447kg의 FAM-DQ가 최대 1.019 N·m의 토크를 달성하며 2.28 N·m/kg의 높은 토크 대 중량비를 검증함."
+  },
+  {
+    "title": "동적 환경에서 안전한 로봇 매니퓰레이터 원격 조작을 위한 예측 상대 속도 조향",
+    "original_title": "Predictive Relative-Velocity Steering for Safe Robotic Manipulator Teleoperation in Dynamic Environments",
+    "link": "https://arxiv.org/abs/2608.13284",
+    "date": "2026-08-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "본 논문은 로봇 매니퓰레이터의 충돌 회피 안전성 강화를 위한 경량 모듈형 프레임워크를 제시함. 이 프레임워크는 Time-to-Collision (TTC)을 예측하고 Rodrigues' 회전 공식으로 상대 속도 벡터를 조향함으로써, 기존 Potential Field 방식의 데드락 문제를 해결하고 원격 조작 과정의 지연 시간까지 보정함. 시뮬레이션 및 물리 시스템 실험을 통해 높은 충돌 회피율을 달성하며, 고주파수 원격 제어의 실효성을 입증함."
+  },
+  {
+    "title": "NestDex: 정교 조작을 위한 Copilot 지원 원격 조작 기반 중첩 정책 학습",
+    "original_title": "NestDex: Nested Policy Learning with Copilot Assisted Teleoperation for Dexterous Manipulation",
+    "link": "https://arxiv.org/abs/2608.13362",
+    "date": "2026-08-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "정교한 조작 동작은 완벽하고 일관된 시연 수집이 어려워 로봇 행동 학습의 제약 요인이 됨. 이에 NestDex라는 중첩 정책 학습 프레임워크가 제안됨. 이는 Copilot 지원 원격 조작 방식을 활용해 학습된 손 스킬로 데모 수집 부담을 낮추며, 팔과 손을 동시에 제어하는 외부 시각-운동 정책 학습을 구현함. 실제 환경 실험을 통해 데모의 신뢰성과 효율성을 개선하는 것이 입증됨."
+  },
+  {
+    "title": "의식적 훈련(Deliberate Practice): 제한된 예산 내 로봇 스킬 학습 기법",
+    "original_title": "Deliberate Practice: Learning Robot Skills under a Budget",
+    "link": "https://arxiv.org/abs/2608.13415",
+    "date": "2026-08-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "제한된 학습 예산 내에서 순차적인 로봇 스킬 자율 학습 문제를 해결하기 위해 'Deliberate Practice (DP)'라는 능동적 스킬 학습 알고리즘을 제안함. DP는 스킬 마스터에 필요한 시간과 태스크의 누적 보상을 추정하여, 예산 제약 내에서 기댓값 누적 보상을 최대화하는 최적의 스킬 조합을 계산하는 것이 핵심임. 이항 프로그램(bilinear program) 기반의 DP 접근 방식은 실제 장기 조작 작업(long-horizon manipulation) 환경에서 제한된 학습 시간을 활용하여 유용한 정책을 최적으로 확보할 수 있음을 입증함."
+  },
+  {
+    "title": "HumanTracker: 포괄적이며 인간 지향적인 모션 트래킹 벤치마크 제시",
+    "original_title": "HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark",
+    "link": "https://arxiv.org/abs/2608.13555",
+    "date": "2026-08-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "기존 휴머노이드 모션 트래킹 평가는 운동학적 오류만 측정하여, 발 미끄러짐이나 접촉 오류와 같은 물리적 결함을 파악하는 데 한계가 있었음. 이에 연구진은 인간의 인지 영역과 확장성을 확보한 HumanTracker 벤치마크를 공개하고, 인간의 선호도에 기반한 HumanScore 메트릭을 제안함. HumanScore는 기존의 운동학적 지표가 놓치기 쉬운 접촉 및 안정성 실패 지점을 정확히 예측하며 로봇 움직임 평가의 신뢰성을 높일 수 있음."
+  },
+  {
+    "title": "EgoPHI: 자기중심 시각 정보 기반 접촉 및 힘 추정",
+    "original_title": "EgoPHI: Estimating Contact and Force from Egocentric Vision",
+    "link": "https://arxiv.org/abs/2608.13014",
+    "date": "2026-08-14 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "인간의 핸드-오브젝트 상호작용 분석을 위해 단순 접촉 위치 파악을 넘어선 물리적 힘 추정이 필수적임. 연구진은 단일 모노 RGB 이미지와 객체 지오메트리를 활용하여 접촉 맵 및 3D 힘 분포를 공동 추정하는 'EgoPHI' 방법론을 제안함. 본 모델은 물리 기반 시뮬레이션 파이프라인을 통해 데이터셋을 확장하고, 시뮬레이션 및 실제 환경에서도 의미 있는 3D 접촉 및 힘 분포 복원 능력을 입증하여 자기중심적 상호작용 이해도를 높임."
+  },
+  {
     "title": "2026년, 구독료 없는 최고의 무료 사람 찾기 웹사이트 7선 공개",
     "original_title": "7 Best Free People Finder Sites in 2026 – No Subscription Required",
     "link": "https://roboticsandautomationnews.com/2026/08/13/7-best-free-people-finder-sites-in-2026-no-subscription-required/104135/",
@@ -17926,77 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "Experts are recognizing the importance of mechanical positioning and its impact on the machine’s mobility, range and speed.\nThe post Why you should combine robot dexterity with mechanical positioning for complex assembly operations appeared first on The Robot Report."
-  },
-  {
-    "title": "Unitree secures IPO approval as Chinese tech firms race into capital market - Global Times",
-    "original_title": "Unitree secures IPO approval as Chinese tech firms race into capital market - Global Times",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5oemhVaE50QmpXMmFiTXpma0tjY1VkVnpVYzhNS0N1RjBLM1c2ZmxoVndfUVFYMHNCakRwaWY2UENkRVFPcE5yaS1wVE9pN0Q5dnZXY0hLZE91UUtuLXVjS3dn?oc=5",
-    "date": "2026-07-02 12:20",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree secures IPO approval as Chinese tech firms race into capital market  Global Times"
-  },
-  {
-    "title": "Luxonis closes Series A round to scale physical AI perception layer",
-    "original_title": "Luxonis closes Series A round to scale physical AI perception layer",
-    "link": "https://www.therobotreport.com/luxonis-closes-series-a-round-to-scale-physical-ai-perception-layer/",
-    "date": "2026-07-02 12:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Luxonis said it plans to scale production of its OAK camera and refine its platform to support robotics and industrial automation. \nThe post Luxonis closes Series A round to scale physical AI perception layer appeared first on The Robot Report."
-  },
-  {
-    "title": "UBTech’s humanoid robots deployed to control crowds at China’s busy international border - MSN",
-    "original_title": "UBTech’s humanoid robots deployed to control crowds at China’s busy international border - MSN",
-    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZHZlOXBTbzhlYWppR0JrbXhvNV9vU05jRVhjeEgwdFdVanZrSS1XOVpRVUhpT2dXc1BkOWlRN1V4RmVMS18xQmZ5eVNjTXBsbk1pbTA4U1Z0WmVyOEpIdi0waEpjYS10QkFUOUtvbjJIUXlIMzRibTB3azR4U0Q5YXZldWw5ZVNYa2lfZmZjcDNUcEFCb0dzUmlDTzVUZERXT1VEZEdkMWgzeV92Y1BNS2R6S05yaXpiNFNlQktRWFUySmtQTnRERmlxUE5tM3FEb2NXbQ?oc=5",
-    "date": "2026-07-02 11:38",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "UBTech’s humanoid robots deployed to control crowds at China’s busy international border  MSN"
-  },
-  {
-    "title": "Blattner awards Built Robotics $75M contract for physical AI to help meet energy demand",
-    "original_title": "Blattner awards Built Robotics $75M contract for physical AI to help meet energy demand",
-    "link": "https://www.therobotreport.com/blattner-awards-built-robotics-75m-contract-meet-energy-demands/",
-    "date": "2026-07-02 11:06",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Blattner has expanded its partnership with Built Robotics to scale autonomous systems for solar construction.\nThe post Blattner awards Built Robotics $75M contract for physical AI to help meet energy demand appeared first on The Robot Report."
-  },
-  {
-    "title": "New humanlike robots are built to never betray you - geekspin",
-    "original_title": "New humanlike robots are built to never betray you - geekspin",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5wSGx1dDFmVzJCcXVMS2NGVDlSMm03WVF4Y1NoUEZPMmNFRHFDamE4VXNmTi1ibGJTdGNMSDhTZUpZVUZNOHkySGNMSU5vQlZENTNWTmt4WFdXMjd5bnJzclRFeHYxWXFzY2dF?oc=5",
-    "date": "2026-07-02 11:02",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "New humanlike robots are built to never betray you  geekspin"
-  },
-  {
-    "title": "What Are the Biggest Challenges in Modern Electronics Manufacturing?",
-    "original_title": "What Are the Biggest Challenges in Modern Electronics Manufacturing?",
-    "link": "https://roboticsandautomationnews.com/2026/07/02/what-are-the-biggest-challenges-in-modern-electronics-manufacturing/103012/",
-    "date": "2026-07-02 10:31",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Walk the floor of any active facility today and you see the same stress points. The machines are faster. The placement heads are more precise. But getting a product from a schematic to a boxed unit on a pallet is harder than it was ten years ago. We are dealing with parts that look like […]"
-  },
-  {
-    "title": "What Are the Best AI Tools for Creating Content Faster in 2026?",
-    "original_title": "What Are the Best AI Tools for Creating Content Faster in 2026?",
-    "link": "https://roboticsandautomationnews.com/2026/07/02/what-are-the-best-ai-tools-for-creating-content-faster-in-2026/103007/",
-    "date": "2026-07-02 10:24",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Content production right now feels like a treadmill that keeps speeding up. You produce a solid piece of original content, and immediately the expectation is that it gets sliced into multiple formats for several different platforms. Doing this manually is a massive drain on your daily resources. We are well past the novelty phase of […]"
-  },
-  {
-    "title": "Why Does Quality Wiring Matter More Than Ever in Modern Electronic Devices?",
-    "original_title": "Why Does Quality Wiring Matter More Than Ever in Modern Electronic Devices?",
-    "link": "https://roboticsandautomationnews.com/2026/07/02/why-does-quality-wiring-matter-more-than-ever-in-modern-electronic-devices/103001/",
-    "date": "2026-07-02 10:15",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "People tend to view modern electronics as magic boxes. You plug them in, turn them on, and they just work. But anyone who actually builds these devices knows there’s no magic involved. It’s just physics, heat management, and an endless battle for physical space. Ten years ago, a standard consumer device pulled maybe 15 watts […]"
   }
 ]
