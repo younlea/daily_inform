@@ -1,5 +1,77 @@
 [
   {
+    "title": "BICPO-VLA: 부드러운 비동기 시각-언어-행동 제어를 위한 행동 식별 지속성 선호도 최적화",
+    "original_title": "BICPO-VLA: Behavior-Identified Continuation Preference Optimization for Smooth Asynchronous Vision-Language-Action Control",
+    "link": "https://arxiv.org/abs/2608.13924",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇 작업 전환(hand-off) 과정에서 발생하는 모호성 및 물리적 드리프트 등의 문제를 다루는 새로운 모델임. 명령어 인식 인과 이력 인코더를 이용해 의도된 행동을 식별하고, 순차적인 Haar subspace 생성을 통해 액션 청크의 정확도를 높이는 과정을 거침. 궁극적으로 Flow-DPO 기법을 적용하여 예상되는 아웃고잉 액션을 실제 핸드오프 상태에 맞춰 조정하며, 의도된 행동을 유지하는 미스매치를 최소화함."
+  },
+  {
+    "title": "AdvDex: 관절 정렬 동작과 적대적 학습을 통한 인간 시연 기반 정교 조작 학습",
+    "original_title": "AdvDex: Learning Dexterous Manipulation from Human Demonstrations via Joint-Aligned Actions and Adversarial Learning",
+    "link": "https://arxiv.org/abs/2608.14028",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "로봇의 정교 조작(dexterous manipulation) 학습의 난점을 해결하기 위해, AdvDex라는 통합 Vision-Language-Action 프레임워크가 제시됨. 이 프레임워크는 대규모 멀티모달 데이터셋 OmniShare와 $\\mathrm{SE}(3)$ 손목 자세 및 15개 손가락 관절을 포함하는 Joint-Aligned Action Space (JAAS)를 활용함. 또한, 도메인 적대적 학습(domain-adversarial learning)을 통해 체현체별(embodiment-specific) 정보를 제거함으로써, 제로샷 전이 및 미지의 환경으로의 일반화 성능을 효과적으로 확보함을 입증함."
+  },
+  {
+    "title": "ATMOS를 이용한 손실 및 지연 통신 환경에서의 우주 로봇 원격 운용 시연",
+    "original_title": "Demonstration of Space Robot Teleoperation over a Lossy and Delayed Network using ATMOS",
+    "link": "https://arxiv.org/abs/2608.14031",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "ATMOS(Autonomy Testbed for Multi-purpose Orbiting Systems)를 활용하여 마이크로 중력과 유사한 환경에서 우주 로봇의 항법 및 제어 전략을 검증함. 본 연구에서는 상태 예측과 궤적 추적 제어를 결합한 도킹 기동 제어 전략을 개발하고, 시간 가변적인 통신 지연을 반영하여 실험적으로 검증함. 서울과 스톡홀름 간 장거리 원격 제어를 성공적으로 시연함으로써, ATMOS가 우주 궤도 상의 운용 개념을 신뢰성 있고 경제적으로 테스트할 수 있는 역량을 입증함."
+  },
+  {
+    "title": "PILOT: 부분 관측 환경 하 자율 UAV의 종단 간 동작 계획을 위한 특권적 모방 학습",
+    "original_title": "PILOT: Privileged Imitation Learning for End-to-End Motion Planning of Autonomous UAVs under Partial Observability",
+    "link": "https://arxiv.org/abs/2608.14082",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "부분 관측 환경에서의 자율 UAV 항법 문제를 해결하고자 제약 인식 특권적 모방 학습 프레임워크인 PILOT이 제안됨. 본 프레임워크는 TCN 기반 시공간적 인식 융합 모듈과 이중 목적 손실 함수를 활용하여 안전 및 동역학적 제약 조건 하에 동작 계획을 학습함. 시뮬레이션 결과, PILOT은 기존 전문가 수준의 성능을 달성하면서도 계산 오버헤드를 80% 이상 절감하는 효율성을 입증했으며, 실내외 환경에서의 제로샷 배포를 통해 높은 실용적 범용성을 확보함."
+  },
+  {
+    "title": "가상 환경 기반 치료용 휴머노이드 로봇 'THRIVE' 공개",
+    "original_title": "THRIVE: Therapeutic Humanoid Robot In Virtual Environment",
+    "link": "https://arxiv.org/abs/2608.14462",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "THRIVE는 가상현실(VR) 게임, 실시간 동작 추적 시스템, 그리고 상호작용 로봇 치료사를 통합한 아동 대상의 가정용 재활 플랫폼임. 본 시스템은 상지 운동 장애 아동의 기능적 움직임을 목표로 하며, 로봇 치료사가 적응형 피드백을 제공하여 재활을 유도함. 특히, 로봇의 구현체에 구애받지 않는(robot-agnostic) 모듈식 설계를 채택하여 경제성과 확장성을 확보하고, 가정 내 지속적인 치료 활용을 가능하게 함."
+  },
+  {
+    "title": "Genie Sim 3.0: 휴머노이드 로봇용 고충실도 종합 시뮬레이션 플랫폼",
+    "original_title": "Genie Sim 3.0 : A High-Fidelity Comprehensive Simulation Platform for Humanoid Robot",
+    "link": "https://arxiv.org/abs/2601.02078",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "물리적 환경 데이터의 한계와 시뮬레이션의 충실도 문제를 해결하고자 통합 시뮬레이션 플랫폼 Genie Sim 3.0이 개발되어 공개됨. 이 플랫폼은 LLM 기반의 'Genie Sim Generator'를 활용하여 자연어 명령어만으로 고충실도 및 다차원적 환경을 생성할 수 있는 것이 핵심임. 아울러 LLM을 이용한 자동 평가 벤치마크를 최초로 제시하고, 200개 이상 태스크의 10,000시간 분량 합성 데이터를 공개하며 견고한 zero-shot sim-to-real 전이 성능을 입증함."
+  },
+  {
+    "title": "OctoSplat: 원예 로봇을 위한 OctoMap-Gaussian Splatting 하이브리드 방식으로 능동적 시맨틱 매핑 및 표현형 분석 구현함",
+    "original_title": "OctoSplat: Hybrid OctoMap-Gaussian Splatting for Active Semantic Mapping and Phenotyping with Horticultural Robots",
+    "link": "https://arxiv.org/abs/2601.12122",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "기존 농업 현장의 매핑 한계를 극복하고자, 이동식 매니퓰레이터에 OctoMap과 3D Gaussian Splatting을 결합한 능동 3D 재구축 프레임워크를 제안함. 이 시스템은 OctoMap 기반의 계획 수립과 Gaussian Splatting을 활용한 고정밀 시각정보 융합을 통해 매핑 정확도를 높임. 시뮬레이션 및 실증 환경 테스트를 통해, 기존 방식 대비 재구축 정확도와 과일 개수/부피 추정 정확도에서 획기적인 성능 개선을 보여 뛰어난 실효성을 입증함."
+  },
+  {
+    "title": "서브 밀리미터 공차 환경에서의 촉각 증강 정밀 조립: 접근부터 삽입까지",
+    "original_title": "From Reach to Insert: Tactile-Augmented Precision Assembly under Sub-Millimeter Tolerances",
+    "link": "https://arxiv.org/abs/2605.04649",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "고정밀 조립의 난제인 좁은 공차 환경에서의 삽입 문제를 해결하기 위해, 본 논문은 Imitation Learning(IL)과 Reinforcement Learning(RL)을 결합한 2단계 촉각 증강 방법을 제안함. 이 방법은 IL을 활용하여 목표 근처로의 접근 정책을 학습하고, RL을 이용해 삽입 및 접촉 기반 실패 복구를 수행함. 실험 결과, 최대 난이도의 0.05mm 공차 환경에서 67%의 성공률을 달성하였으며, 상호작용 힘을 최대 60%까지 줄여 조립의 효과성과 안전성을 동시에 입증함."
+  },
+  {
     "title": "휴머노이드가 글로벌 비즈니스를 재편하며 중국과 미국이 규모 확대 경쟁을 벌임",
     "original_title": "Humanoids reshape global business as China and US race to scale - Nation Thailand",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9qeDI4MW9fdFh2U015RWRDWnNhaVJvN0ZxYkMxNlVpTHdwd0tqOThrQllBMndieE9PMTFoRG1EUi1GUTdweDdvMC0zZ295RW9VdDZ5ZXUxcFEzbWNEemI0Mm5sUmcxNXNUOUtv?oc=5",
@@ -16,6 +88,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "물리적 AI(physical AI) 기술 경쟁이 격화되면서 로보틱스 산업 전반에 걸쳐 중국발 충격이 임박한 상황임. 싱크탱크 분석에 따르면, 중국의 급속한 기술 발전과 시장 역동성이 글로벌 로보틱스 생태계에 중대한 변수로 작용할 것임. 이에 따라 전 세계 기업들이 중국 시장에 대한 전략적 검토가 필요함."
+  },
+  {
+    "title": "휴머노이드 로봇 뉴스: Unitree의 기록적인 IPO 청약 (2026년 8월 17일) - RoboZaps",
+    "original_title": "Humanoid Robot News: Unitree's Record IPO Subscription (Aug 17, 2026) - RoboZaps",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB1NS1KQURsYmJRRDF3dF83RW1oVWFvLW1RNWhVNzBlQ1U2TWlKeDVUQ0ZMSjBNWDlvX0VGLXkzY2JUUXdjajFNaTZnUHRYM2tWX0pNT2U5anY4WklIVjlTQV9tOEFQbzU4Tkc0elZzejVPT1hmZEo1U3VB?oc=5",
+    "date": "2026-08-16 22:55",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "휴머노이드 로봇 기업 Unitree가 공개된 IPO 과정에서 사상 최대 규모의 청약을 기록함. 이는 Unitree의 시장 지위 및 휴머노이드 로봇 분야에 대한 투자자들의 높은 신뢰도를 반영하는 것임."
   },
   {
     "title": "유니트리 로보틱스, 상하이 IPO 기대감 증폭과 트레이더들의 높은 잠재 가치 반영",
@@ -17917,86 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중국의 로봇 전문 기업 Unitree Robotics가 상하이 IPO 승인을 받았으며, 1,000억 위안 규모의 자금 조달을 통해 글로벌 휴머노이드 로봇 시장을 선도할 전략을 발표함. 이번 자금 조달은 회사의 시장 지위 강화 및 기술 개발 가속화를 위한 발판이 됨."
-  },
-  {
-    "title": "색상 변화 촉각 센서로 로봇이 촉각 정보를 '인지'하게 됨",
-    "original_title": "Robots can now 'see' touch thanks to a new color-changing tactile sensor",
-    "link": "https://techxplore.com/news/2026-07-robots-tactile-sensor.html",
-    "date": "2026-07-03 18:00",
-    "source": "Tech Xplore",
-    "category": "hand",
-    "summary": "런던 Queen Mary University of London의 엔지니어들이 색상 변화 촉각 센서를 개발함. 이 기술은 보이지 않는 힘을 역동적인 색상 패턴으로 변환하여 로봇이 촉각 정보를 실시간으로 인지하게 함. 이를 통해 접촉, 변형(strain), 압력에 대한 고해상도 지도를 즉각적으로 확보하는 것이 가능해짐."
-  },
-  {
-    "title": "현대 소프트웨어를 활용한 카타르 건설 현장의 스마트 및 안전 작업 방식 구축",
-    "original_title": "How Modern Software Helps Construction Companies in Qatar Work Smarter and Safer",
-    "link": "https://roboticsandautomationnews.com/2026/07/03/how-modern-software-helps-construction-companies-in-qatar-work-smarter-and-safer/103044/",
-    "date": "2026-07-03 16:49",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "카타르는 높은 기준과 야심 찬 목표를 가진 국가로, 모든 산업에서 높은 수준의 성과를 요구함. 건설 프로젝트는 본질적으로 높은 난이도를 지니고 있으나, 카타르 기업들의 거대한 목표 달성을 위해서는 첨단 소프트웨어 기술을 도입하여 작업의 효율성 및 안전성을 극대화하는 방안이 주요 과제임."
-  },
-  {
-    "title": "영상 금요일: 달을 위한 지구 기반 화성 로버 기술 동향",
-    "original_title": "Video Friday: An Earthbound Mars Rover for the Moon",
-    "link": "https://spectrum.ieee.org/video-friday-nasa-lunar-rover",
-    "date": "2026-07-03 15:00",
-    "source": "IEEE Spectrum",
-    "category": "hand",
-    "summary": "이번 주간 영상에서는 우주 탐사 분야의 최신 동향을 다루었으며, NASA가 달의 남극점 기지 계획에 맞춰 첨단 핵 동력 로버 개념을 검토 중인 사실이 공개됨. 또한, 로봇 공학 분야 전반에 걸쳐 인간과 협업하는 소프트 컴패니언 로봇, 감성 AI 기반 휴머노이드 로봇, 그리고 불확실한 환경에서 작동하는 범용 인텔리전스 확보 노력이 주요 이슈로 제시됨. 이와 함께 아폴로 2 시설 등 다양한 연구기관들이 실생활 데이터를 수집하며 자율 로봇 기술의 상용화를 가속화하고 있음."
-  },
-  {
-    "title": "MANUS와 Lightwheel, 전략적 파트너십 체결 발표",
-    "original_title": "MANUS and Lightwheel Announce Strategic Partnership",
-    "link": "https://humanoidroboticstechnology.com/industry-news/manus-and-lightwheel-announce-strategic-partnership/",
-    "date": "2026-07-03 14:01",
-    "source": "Humanoid Tech Blog",
-    "category": "hand",
-    "summary": "MANUS와 Lightwheel이 정교한 로봇 시스템 개발 및 배포 가속화를 위한 전략적 파트너십을 체결함. 본 협력은 Physical AI 데이터 스택의 두 핵심 레이어를 연결하는 것이 주된 목적이며, MANUS는 고정밀 손동작 포착(hand motion capture) 데이터를, Lightwheel은 실세계 인간 시연 포착 및 대규모 시뮬레이션 인프라를 제공함."
-  },
-  {
-    "title": "China robotics maker Unitree poised for IPO - Mobile World Live",
-    "original_title": "China robotics maker Unitree poised for IPO - Mobile World Live",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNV29vcGwtT1RmQ1d3TWd5UlM2cFNqYmpnVjBCVThtX195OFhNRzlrTFpUWkxQVW14cjk2TDdMdDAxSC1RVUtiNVY1QmkwVXctVnlTZ2t3b2cxOEpKWUJXS3duZ0FyUnluSWRfRlowMTFDOHgwbHV1LXRoeGpZNUNrMGVJQWFRQkRGRkJVYnZn?oc=5",
-    "date": "2026-07-03 13:48",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "China robotics maker Unitree poised for IPO  Mobile World Live"
-  },
-  {
-    "title": "Quarterhill discusses transport modernization as U.S. marks 70 years of federal highways",
-    "original_title": "Quarterhill discusses transport modernization as U.S. marks 70 years of federal highways",
-    "link": "https://www.therobotreport.com/quarterhill-discusses-transport-modernization-u-s-marks-70-years-federal-highways/",
-    "date": "2026-07-03 13:01",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "At the U.S. celebrates 250 years of independence and 70 years of its highway system, an expert looks at the future of autonomous transport. \nThe post Quarterhill discusses transport modernization as U.S. marks 70 years of federal highways appeared first on The Robot Report."
-  },
-  {
-    "title": "Chinese firm unveils hyper-realistic humanoid robots for companionship - The Business Standard",
-    "original_title": "Chinese firm unveils hyper-realistic humanoid robots for companionship - The Business Standard",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPN1d2LXU0TVIxYU5TUk5hd3A1dlIxWUtWYzhCNTBST3pvLVF5RklkUG9wUDlqQjlWbldXSmY0YjlveVRuUlU0UzRLNk9zS2NfaDBMYUJMeVNhUHNYUEd4VzVtemsyZ2VPYWNwdVpOTXh5S0c5ZTU0aHk0VmdFTUl5NXdyQnRtanBsTTgxTjd2aUJvNGNFd3pvajFrLUEtc2U5MF9ZSGk5VdIBrAFBVV95cUxQdlFPWG5hMDhBQUFzN3pzQWpuOHlCQTRWMmV0ZXd5Rl9NSWJXQ3JuTkw1ZTVZRnJQUGZqLWc1YzQxLTFsMWZVQnNMb0x2bW5xbHRwZGZ1Z0VFRkxmNzMtLUlXdkh2S2ZXd08xNTJRQTdiQzlUOW5uUmx1b1JNMXNNMEZhbTRWRDNJRHlTRmJmbW1pOHkwYjlFMGc1S3ZJT3hxUk9xSVplY1hickRR?oc=5",
-    "date": "2026-07-03 11:15",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Chinese firm unveils hyper-realistic humanoid robots for companionship  The Business Standard"
-  },
-  {
-    "title": "UBTech’s lifelike humanoid robots built for companionship arriving in homes across China - The Star",
-    "original_title": "UBTech’s lifelike humanoid robots built for companionship arriving in homes across China - The Star",
-    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQa05vVnMtaUVLZEVYQXcxa2N6V1ZfV05YVmo0ekppWmVTR09HWi1PR1BTWk1pSklxa2NIOVJZY0MyampyTF94akVWay02OXJndkdUaHBITWRIcGV0Uk5MclZJc3RJNmp6RGxldkNsdHBoN001Sy1IQ3hiRkJaeUxkaTNnanBSaFdqUnBTSzBPaHZXaVlCcFdkTnR2amk2eHJkVlN6c2dzWjNNRG56Njd0dUJTSnVzaTkwNzZGREVJWmlKaVhoY0loSzlFanF1bGNROWlyeUc1eHBUNDQzTXE3ZVhoVFo?oc=5",
-    "date": "2026-07-03 10:45",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "UBTech’s lifelike humanoid robots built for companionship arriving in homes across China  The Star"
-  },
-  {
-    "title": "Bionic Humanoids: Chinese firm launches mass-produced ultra-bionic humanoid robot - news.cgtn.com",
-    "original_title": "Bionic Humanoids: Chinese firm launches mass-produced ultra-bionic humanoid robot - news.cgtn.com",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9lc2hHWDF1SHR5LWkyc19jZHUwMWt6aG84WG5hbmgwN1NGcXMtT291MXRkdXE1MUs0WGhNUkJqR19oUkdkTjd1S0xfS2U3T2pXWnFuSXdHWkpzQmgxUWRMUE0wSGp0TjZHTHBDQzliQkp0a1RGelFPNw?oc=5",
-    "date": "2026-07-03 10:23",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Bionic Humanoids: Chinese firm launches mass-produced ultra-bionic humanoid robot  news.cgtn.com"
   }
 ]
