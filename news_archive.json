@@ -171,6 +171,78 @@
     "summary": "평면 물체의 조작은 미파지블 구성 및 높은 기하학적 변이로 인해 어려움이 존재하는 영역임. 본 연구진은 조작 과정을 전략 생성기 및 액션 실행 모듈로 분리하는 통합 프레임워크를 제안함. 또한, 다양한 평면 물체를 위한 고충실도 물리 시뮬레이션 환경인 포괄적 벤치마크 'FlatLab'을 개발하였으며, 실험 결과 기존 대비 높은 범용성을 입증함."
   },
   {
+    "title": "Knowledge-Data-Dual-Driven Reinforcement Learning for Autonomous Vehicle Control in Mixed Traffic",
+    "original_title": "Knowledge-Data-Dual-Driven Reinforcement Learning for Autonomous Vehicle Control in Mixed Traffic",
+    "link": "https://arxiv.org/abs/2608.13878",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.13878v1 Announce Type: new \nAbstract: In mixed traffic, decision-making for autonomous vehicles (AVs) confronts three interrelated challenges. First, physics-based priors incorporated into reinforcement learning (RL) models fail to capture latent interactive vehicle intentions and diverse driver behaviors, limiting the proactive reasoning capabilities. Second, abrupt maneuvers by surrounding vehicles cause non-stationarity, leaving long-tail safety events under-explored. Third, hybrid action spaces destabilize unified RL training due to the different temporal scales of continuous car-following and discrete lane-changing maneuvers. To address these issues, we propose Knowledge-Data Dual-driven Reinforcement Learning (KDDRL). First, a conditional deep generative model synthesizes intention-aware future trajectories, converting passive perception into proactive predictive states. Second, a knowledge-data dual-driven paradigm operates on these predictive states, fusing probabilistic data-driven insights with physical constraints to guide safe exploration through safety-critical scenarios. Third, a coupling module compresses both intention-aware trajectories and physical constraints into compact shared embeddings. This unified representation enables asynchronous multi-timescale optimization of continuous car-following and discrete lane-changing while preserving mutual information. Evaluations on dataset-calibrated simulations demonstrate that KDDRL effectively handles intention uncertainty, accelerates training convergence, and outperforms conventional baseline methods in terms of safety, efficiency, and comfort."
+  },
+  {
+    "title": "PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment",
+    "original_title": "PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment",
+    "link": "https://arxiv.org/abs/2608.14284",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.14284v1 Announce Type: new \nAbstract: Fine-grained robotic evaluation matters for understanding embodied models, going beyond binary success rates and rule-based process scores. We present PRM-as-a-Judge 1.5, a toolkit for robot process assessment that turns rollout videos into dense progress curves and derives multiple fine metrics. PRM-as-a-Judge 1.5 introduces three metrics, building on version 1.0, that characterize failure-side progress, post-drawdown recovery, and success-side execution quality, helping users understand embodied model capability. Based on the rollout videos from benchmarks, we perform a comprehensive assessment of the embodied models, providing some fine-grained metric results and key findings. We further introduce RoboPulse++ to evaluate the reliability of process reward models (PRM), providing evaluators with a more accurate testing platform. Moreover, we release a user-friendly assessment suite, including the benchmark, metric implementation, and visualization tools, to support reproducible manipulation process evaluation. We call on the community to rethink how robots are evaluated and establish transparent, procedural, and reproducible assessment as a foundation for the next generation of embodied intelligence."
+  },
+  {
+    "title": "Reflex: Enabling Fast and Predictive Vision-Language-Action Models for Reaction-Critical Manipulation",
+    "original_title": "Reflex: Enabling Fast and Predictive Vision-Language-Action Models for Reaction-Critical Manipulation",
+    "link": "https://arxiv.org/abs/2608.14379",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.14379v1 Announce Type: new \nAbstract: Vision-Language-Action (VLA) models have recently achieved promising performance in robotic manipulation. However, existing benchmarks mainly evaluate generalization on static manipulation tasks and largely overlook dynamic interaction scenarios. To address this gap, we present ReflexBench, a benchmark for reaction-critical manipulation. ReflexBench contains six dynamic tasks and introduces an evaluation framework that decouples simulator stepping from robot control while supporting configurable latency under synchronous and asynchronous inference. Building upon ReflexBench, we propose ReflexVLA, an efficient VLA model designed for reaction-critical manipulation without large-scale robot-data pretraining. ReflexVLA enhances temporal reasoning through latent future prediction and multi-frame temporal fusion within the vision backbone, while reducing deployment latency through batched visual encoding and CUDA Graph replay. Experiments show that ReflexVLA consistently improves dynamic manipulation performance while maintaining competitive accuracy on standard static manipulation benchmarks, and real-world experiments further demonstrate its effectiveness under practical deployment conditions. Project website: https://reflexvla.github.io"
+  },
+  {
+    "title": "Effect of Twisted-Yarn Architecture on Pressure and Proximity Sensing Characteristics of Textile Capacitive Sensors for Robotic Skin",
+    "original_title": "Effect of Twisted-Yarn Architecture on Pressure and Proximity Sensing Characteristics of Textile Capacitive Sensors for Robotic Skin",
+    "link": "https://arxiv.org/abs/2608.14406",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.14406v1 Announce Type: new \nAbstract: Textile-integrated capacitive sensors offer flexible and conformable tactile sensing for wearable electronics and human-robot interaction; however, the influence of yarn-level architecture on capacitive transduction characteristics remains insufficiently quantified. This work presents a textile capacitive sensing platform based on silver-coated yarns coated with polydimethylsiloxane and assembled into one-, two-, and four-layer twisted configurations. The influence of effective electrode overlap area and inter-fiber separation on the capacitive response is systematically investigated, enabling architecture-dependent tuning of pressure and proximity sensing characteristics. Pressure was calculated using the localized single-fiber contact area, corresponding to stresses of 0.4-3.9 MPa. Increasing the layer number improved mechanical strength and sensing performance: elongation at break increased from 37.5% to 62.5% and 85.0%, while the maximum load increased from 23.3 to 42.7 and 89.7 N. Sensitivity increased with layer number and frequency, reaching 0.1331 MPa$^{-1}$ for the four-layer sensor at 100 kHz. The four-layer configuration also exhibited low hysteresis, minimal thermal drift from 25 to 90 $^\\circ$C, and stable operation over 15,000 cycles. Proximity detection ranges of 60, 50, and 40 mm were obtained for the one-, two-, and four-layer sensors, respectively, revealing an architecture-dependent sensitivity-range trade-off. A 4$\\times$4 textile sensing array enabled spatial contact mapping, while robotic-arm integration demonstrated real-time touch and proximity detection with an end-to-end robotic system latency (from detection to robot reaction) of 403 ms. The results establish yarn architecture as a tunable design parameter governing the measurement characteristics of textile-integrated capacitive sensing systems."
+  },
+  {
+    "title": "MorphIt: Flexible Spherical Approximation of Robot Morphology for Representation-driven Adaptation",
+    "original_title": "MorphIt: Flexible Spherical Approximation of Robot Morphology for Representation-driven Adaptation",
+    "link": "https://arxiv.org/abs/2507.14061",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2507.14061v3 Announce Type: replace \nAbstract: What if a robot could rethink its own morphological representation to better meet the demands of diverse tasks? Most robotic systems today treat their physical form as a fixed constraint rather than an adaptive resource, forcing the same rigid geometric representation to serve applications with vastly different computational and precision requirements. We introduce MorphIt, a novel spherical approximation framework that treats morphological representation as a tunable resource. MorphIt enables automatic task-driven morphological adaptation through gradient-based optimization with tunable parameters that provide explicit control over the accuracy-efficiency tradeoff. Unlike existing approaches that rely on either labor-intensive manual specification or inflexible computational methods optimized for visualization rather than robotics, MorphIt generates spherical approximations up to 100x faster than optimization-based methods while maintaining superior geometric fidelity. Quantitative evaluations demonstrate that MorphIt outperforms baseline approaches and achieves better mesh approximation with fewer spheres. Through seamless integration with existing robotics infrastructure, MorphIt enables enhanced capabilities in collision detection accuracy, contact-rich interaction simulation, and navigation through confined spaces. By dynamically adapting geometric representations to task requirements, robots can now exploit their physical embodiment as an active resource rather than an inflexible parameter, opening new frontiers for manipulation in environments where physical form must continuously balance precision with computational tractability."
+  },
+  {
+    "title": "AtomBridge: Agentic VLA Inference Plugin for Long-Horizon Tasks in Scientific Experiments",
+    "original_title": "AtomBridge: Agentic VLA Inference Plugin for Long-Horizon Tasks in Scientific Experiments",
+    "link": "https://arxiv.org/abs/2602.09430",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2602.09430v2 Announce Type: replace \nAbstract: Robotic laboratories play a critical role in autonomous scientific discovery by enabling scalable, continuous experimental execution. Recent vision-language-action (VLA) models offer a promising foundation for robotic laboratories. However, scientific experiments typically involve long-horizon tasks composed of multiple atomic tasks. Existing VLA models may fail to perform composed tasks formed by reordering and composing these known atomic actions. This limitation can arise from a skill-chaining gap caused by robot-state mismatch: the terminal robot state of one skill can fall outside the valid initial-state distribution of the next. To address this challenge, we propose AtomBridge, an Agentic VLA Inference Plugin for Long-Horizon Tasks in Scientific Experiments. AtomBridge attaches at inference time to a VLA policy already fine-tuned on atomic tasks, while keeping its weights fixed. At each task boundary, it uses LLM-based transition reasoning and robotic-action code generation to insert transitional actions between consecutive tasks. This plug-and-play design mitigates the skill-chaining gap caused by robot-state mismatch without additional VLA fine-tuning or demonstrations of composed long-horizon sequences. Across scientific manipulation sequences in simulation and a real-world experimental environment, AtomBridge improves execution continuity and per-step atomic-task success. On 8-step composed tasks, AtomBridge improves full-sequence success by 10%~25%."
+  },
+  {
+    "title": "CoViLLM: An Adaptive Human-Robot Collaborative Assembly Framework Using Large Language Models",
+    "original_title": "CoViLLM: An Adaptive Human-Robot Collaborative Assembly Framework Using Large Language Models",
+    "link": "https://arxiv.org/abs/2603.11461",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2603.11461v3 Announce Type: replace \nAbstract: With increasing demand for mass customization, traditional manufacturing robots that rely on rule-based operations lack the flexibility to accommodate customized or new product variants. Human-Robot Collaboration has demonstrated potential to improve system adaptability by leveraging human versatility and decision-making capabilities. However, existing Human-Robot Collaborative frameworks typically depend on predefined perception-manipulation pipelines, limiting their ability to autonomously generate task plans for new product assembly. In this work, we propose CoViLLM, an adaptive human-robot collaborative assembly framework that supports the assembly of customized and previously unseen products. CoViLLM combines depth-camera-based localization for object position estimation, human operator classification for identifying new components, and a Large Language Model for assembly task planning based on natural language instructions. The framework is validated on the NIST Assembly Task Board for known, customized, and new product cases. Experimental results show that the proposed framework enables flexible collaborative assembly by extending Human-Robot Collaboration beyond predefined product and task settings."
+  },
+  {
+    "title": "HierDAMap: Towards Universal Domain Adaptive BEV Mapping via Hierarchical Perspective Priors",
+    "original_title": "HierDAMap: Towards Universal Domain Adaptive BEV Mapping via Hierarchical Perspective Priors",
+    "link": "https://arxiv.org/abs/2503.06821",
+    "date": "2026-08-17 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2503.06821v2 Announce Type: replace-cross \nAbstract: The exploration of Bird's-Eye View (BEV) mapping technology has driven significant innovation in visual perception technology for autonomous driving. BEV mapping models need to be applied to the unlabeled real world, making the study of unsupervised domain adaptation models an essential path. However, research on unsupervised domain adaptation for BEV mapping remains limited and cannot perfectly accommodate all BEV mapping tasks. To address this gap, this paper proposes HierDAMap, a universal and holistic BEV domain adaptation framework with hierarchical perspective priors. Unlike existing research that solely focuses on image-level learning using prior knowledge, this paper explores the guiding role of perspective prior knowledge across three distinct levels: global, sparse, and instance levels. With these priors, HierDAMap consists of three essential components, including Semantic-Guided Pseudo Supervision (SGPS), Dynamic-Aware Coherence Learning (DACL), and Cross-Domain Frustum Mixing (CDFM). SGPS constrains the cross-domain consistency of perspective feature distribution through pseudo labels generated by vision foundation models in 2D space. To mitigate feature distribution discrepancies caused by spatial variations, DACL employs uncertainty-aware predicted depth as an intermediary to derive dynamic BEV labels from perspective pseudo-labels, thereby constraining the coarse BEV features derived from corresponding perspective features. CDFM, on the other hand, leverages perspective masks of the view frustum to mix multi-view perspective images from both domains, which guides cross-domain view transformation and encoding learning through mixed BEV labels. Furthermore, this paper introduces intra-domain feature exchange data augmentation to enhance the efficiency of domain adaptation learning. The source code will be made publicly available at https://github.com/lynn-yu/HierDAMap."
+  },
+  {
     "title": "휴머노이드가 글로벌 비즈니스를 재편하며 중국과 미국이 규모 확대 경쟁을 벌임",
     "original_title": "Humanoids reshape global business as China and US race to scale - Nation Thailand",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9qeDI4MW9fdFh2U015RWRDWnNhaVJvN0ZxYkMxNlVpTHdwd0tqOThrQllBMndieE9PMTFoRG1EUi1GUTdweDdvMC0zZ295RW9VdDZ5ZXUxcFEzbWNEemI0Mm5sUmcxNXNUOUtv?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중국이 개발한 높은 실사 수준의 휴머노이드 로봇 기술이 주요하게 주목받고 있음. 해당 로봇의 발전 속도와 구현된 성능이 일본 및 테슬라의 현재 개발 수준을 앞지르고 있다는 분석이 제기됨. 이는 중국 로봇 공학 분야의 급격한 기술 우위를 시사함."
-  },
-  {
-    "title": "중국 AgiBot, 공장 라이브 스트림 테스트 성공 후 15,000번째 휴머노이드 로봇 출하함",
-    "original_title": "China’s AgiBot Ships 15,000th Humanoid Robot as Factory Livestream Test Concludes - 一财全球Yicai Global",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTkgyZG9YOVBrUjN6VFZkemI2Sml3WWx1SmZVQm5oQ2YtTDAteFAzSndmdzlNTnlSZmpuWENEMEdmQkx2eVozdUpXSEhndFNLWWxncS1NOGZMeGllVGp5UDdjNTFMbTZvN2p4WWJTLTFuajFKMERUWElrM0FJbG5waUhmZVQ3aGdTVk5zcUpkZF9LWUdnWFhneVFNek85N1RqSDROMjZ0WTlOREJYeGRqejZha2k2bmFVT0NLNG1R?oc=5",
-    "date": "2026-07-04 16:59",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 AgiBot이 공장 환경 라이브 스트림 테스트를 성공적으로 완료함. 이번 출하를 통해 누적 15,000대 규모의 휴머노이드 로봇을 공급하는 성과를 거두었음. 이는 중국 로봇 제조 기술의 현장 적용 가능성과 생산 규모의 중요한 이정표로 분석됨."
-  },
-  {
-    "title": "중국 기업, '항상 충성하는' 극사실적 휴머노이드 로봇 판매",
-    "original_title": "Chinese firm sells hyper-real, ‘always loyal’ humanoid robots - Taipei Times",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE15ZzdrZmk4ZVAxZnpiek9HY2ZFTVJrTnJqZzhkejZnOVlRS2xyZlYxX0NrY2I5UllsaVg5ODkyOXlRM2FyZEhwU0l5Nk04WEJQd3MtbHRfcHNhanV2YmRYSGtOQXhkU051NDVnNERURlFoQ05hNmc?oc=5",
-    "date": "2026-07-04 16:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 기업이 극사실적이며 '항상 충성하는' 특성을 지닌 휴머노이드 로봇의 판매를 진행함. 이 로봇들은 높은 수준의 현실감을 갖추었으며 사용자에게 안정적이고 전적인 충성도를 제공하는 것이 특징임. 이는 AI와 로보틱스 시장에서 새로운 형태의 상업적 활용 가능성을 제시함."
-  },
-  {
-    "title": "'일부 직업은 대체되기를 원한다': 중국 로봇 기업 Agibot, 휴머노이드가 위험 작업은 물론 교육 분야까지 담당할 것이라고 전망함",
-    "original_title": "‘In some jobs, they want to be replaced’: Chinese robotics company Agibot says humanoids could take over ‘dangerous’ jobs — and one day even teach children - TechRadar",
-    "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOcFBCNEk3NmtsQmh0N3VZWHpLd2VLZWE3ckhWVkl6VlJ3eURZRnZ5V20yRHVVeFdxb2NIelV3dHAya0lZSGZfMzlpZ3lvNjluREh1YkJ4X2NKZk5nbFdNV2NCRmFwRmIxRGkxcllXcW9BVzVwbmZXSThNemVkWExiUGxpcld0NVJvMktIblp4eHpSa29uWlE3VmRMZlJfcGJHZVNVWlFISXhpUTUyVm1ZTktCT280bFg0blR6Rl8td3VDd1JsaU1lZ1daZ1FHZDdENGlnR1dRZGlDLWItRk94SEV0SG9yaUJFTGlYLXl6WGtFb0hVclkzeHNtb2lqSFRLNkNNTXNJbVhQdw?oc=5",
-    "date": "2026-07-04 16:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 로봇 기업 Agibot은 휴머노이드 로봇이 인류의 노동을 대체하는 영역에 대해 구체적인 비전을 제시함. 해당 로봇들은 인간에게 위험한 '위험 작업(dangerous jobs)'을 수행하는 것이 가능하며, 장기적으로는 교육 서비스 분야까지 확대 적용될 것이라고 설명함."
-  },
-  {
-    "title": "중국 로봇 기업 아지봇, 휴머노이드가 위험 직업 대체부터 아동 교육까지 수행 가능성 제시",
-    "original_title": "Chinese robotics company Agibot says humanoids could take over ‘dangerous’ jobs — and one day even teach children - Yahoo Tech",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYTROMmZMV2xubEFSb29mOWYtelhsWHRMS1ZISTNXZlA2RzRSNjVHUUhxUzBsY3BIRVMxSTE3aFF2d3gyOGZyOFF1SFQzOV9hWGt1NjZ0clo2M0VaNW1ZQk5oOXpBY0FrTHRqTXF1TDN6aHcyR3hHNUIwTFI3VjdxcGxadTZmSWNVOEp3a2pSbU9OQVBoTWdWZWl3?oc=5",
-    "date": "2026-07-04 16:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 로봇 기업 Agibot은 휴머노이드가 위험한 환경에서의 작업 등 다양한 인간의 직업을 대체할 수 있는 잠재력을 보유하고 있음을 제시함. 나아가 로봇이 단순 노동력 공급을 넘어 아동 교육과 같은 영역까지 수행하는 미래 비전을 공개함."
-  },
-  {
-    "title": "Ubtech Robotics, 산업 변화 대응 및 기술 발전 현황 보고",
-    "original_title": "Ubtech Robotics actively responds to industry development in... - Futubull Community - 富途牛牛",
-    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9NUlJoRzFBS1ZRbEhhX2RZR3puTFlmSzFXZ25YTU1kU0Y0R3lwZEJyM1lrbWd6ZXI0ZGMxUGZIZUE1YnVrd2ptRS1MaWJhclRSQVVKajNqcw?oc=5",
-    "date": "2026-07-04 15:39",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "본 기사는 Ubtech Robotics가 급변하는 산업 환경에 능동적으로 대응하기 위한 전략적 움직임을 보고함. 구체적인 기술적 진전 사항이나 계획 발표보다는, 업계 변화에 발맞춘 기업의 적극적인 대응 의지를 강조하는 내용임."
-  },
-  {
-    "title": "'휴먼 증명(Proof of Human)' 기술: 개인이 실재하고 고유함을 검증하는 방법",
-    "original_title": "Proof of Human: How to Verify a Person Is Real and Unique",
-    "link": "https://blog.bytebytego.com/p/proof-of-human-how-to-verify-a-person",
-    "date": "2026-07-04 15:30",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "World 팀의 핵심 인력들과 인터뷰를 진행하여 'Proof of Human' 문제 해결 방안을 다룬 기사임. 특히 Tools for Humanity의 Tiago Sada와 Lily Gordon 등을 포함한 팀이 본 문제를 해결하기 위해 어떤 방식을 시도하고 있는지 논의함."
-  },
-  {
-    "title": "25,000달러의 동반자 역할 휴머노이드 로봇 공개",
-    "original_title": "This humanoid robot will keep you company for $25,000 - Cybernews",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1QWWlJVGsxNVByb21lYkMyalR5eDh3VGd1WGNDWG0xOHMzOVp3dWZBOURqU005dGc4ZXVrMk9QNDZtck1fanRQWFlYbUJhSXBJeUFqZDJGVWVkTDZPS0lz?oc=5",
-    "date": "2026-07-04 14:45",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "동반자 기능을 수행하는 휴머노이드 로봇이 공개됨. 해당 모델의 판매 가격은 2만 5천 달러로 책정된 것으로 알려짐."
-  },
-  {
-    "title": "'맥락의 중요성': Avride가 배달 로봇에 클라우드 VLM을 활용한 안전 시스템 구축 방식",
-    "original_title": "Context is king: How Avride uses cloud VLMs as a safety net for delivery robots",
-    "link": "https://www.therobotreport.com/how-avride-uses-cloud-vlms-safety-net-delivery-robots/",
-    "date": "2026-07-04 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Avride가 배달 로봇의 환경 인지 능력 향상을 목표로 VLM(Vision-Language Models)을 활용하는 방식을 도입함. 이를 통해 로봇의 안전망 역할을 강화하며, 실시간 상황 인지도를 높이는 데 집중함."
   }
 ]
