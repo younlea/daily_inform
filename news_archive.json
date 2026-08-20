@@ -1,5 +1,113 @@
 [
   {
+    "title": "Revisiting the \"Push-T\" Robot Manipulation Task with Agentic Robotics",
+    "original_title": "Revisiting the \"Push-T\" Robot Manipulation Task with Agentic Robotics",
+    "link": "https://arxiv.org/abs/2608.18227",
+    "date": "2026-08-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.18227v1 Announce Type: new \nAbstract: Push-T is an iconic benchmark for learning manipulation policies from human demonstrations. The robot must use a single point of contact to push a T-shaped block into a target pose. In this short paper, we revisit the Push-T task in the context of emerging advances in Agentic Robotics where an LLM coding agent -- Claude Code with Fable 5 -- is prompted to create an algorithmic solution that does not require any demonstration data. We study how effective the agentic coding loop can solve the Push-T task, and compare the resulting code as policy with the visuomotor imitation learning policy. Results suggest that the agent found the 2D gym simulation online, and used sim experiments to learn push mechanics, iteratively optimizing to achieve 100% success rate using 46% fewer steps than the best diffusion policy trained with 200 human demonstrations. The coding agent also solve extensions from T to the full alphabet (Push-A to Push-Z) using a self generated curriculum and generated simulation code for the Franka and UR5 robot arms in 3D cross-embodiment simulations with visual feedback. Videos, policies and details will be posted online."
+  },
+  {
+    "title": "GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction",
+    "original_title": "GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction",
+    "link": "https://arxiv.org/abs/2608.18234",
+    "date": "2026-08-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2608.18234v1 Announce Type: new \nAbstract: Whole-body motion tracking policies turn a humanoid into a robust control interface: the teleoperator---or an upstream model---only supplies a coarse movement intent, while the low-level policy keeps the robot balanced and physically feasible. Existing trackers deliver this interface only on flat ground: trained in empty scenes, they never learn how contact with terrain and objects reshapes their dynamics, and they attempt to teach the policy to balance under any command by continually enlarging the reference-motion corpus, which stops working once feasible behaviors become environment-dependent. We present GigaBrain-WBC-0.5, the first Behavior World Model (BWM) for humanoid whole-body control. Rather than a purely reactive tracker, we train a causal Transformer to jointly predict its next action, next state, and the distribution over its next latent behavior command, so the network that acts also models how the environment shapes what it can do next. An automatic terrain-annotation pipeline recovers full 3D contact geometry from retargeted motion, enabling terrain annotation at the scale of existing motion datasets. The predicted distribution is reused at deployment to detect implausible commands online and retract them onto learned behaviors, so the robot attempts tasks in a \"best-effort\" manner. The result is a unified policy that takes real-time command, interacts with environment, and stays robust to implausible commands, falls, and disturbances. GigaBrain-WBC-0.5 achieves the highest success rate across all four regimes among three large-scale tracker baselines: 81.3% on terrain interaction (4.3x the strongest baseline), 83.1% under implausible commands, and 99.3% fall recovery (16.8x the strongest baseline). Hardware trials show robust interaction under missing supports and disturbances; the Unitree G1 checkpoint transfers to the Maker L01 robot with simple fine-tuning."
+  },
+  {
+    "title": "VERAGMIL: Virtual Environment for Scooping Granular Foods with Imitation Learning Models",
+    "original_title": "VERAGMIL: Virtual Environment for Scooping Granular Foods with Imitation Learning Models",
+    "link": "https://arxiv.org/abs/2608.18258",
+    "date": "2026-08-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.18258v1 Announce Type: new \nAbstract: Robot-Assisted Feeding (RAF) systems are essential for assisting individuals with disabilities or motor impairments in eating tasks. Manipulating granular food items, such as rice and beans, poses significant challenges due to their dynamic physical properties. Learning from human demonstrations offers a promising solution, but acquiring high-quality demonstrations is complex. To address this, we present VERAGMIL, a framework that combines a high-fidelity simulator with an intuitive Virtual Reality (VR) interface for recording demonstrations and supporting different imitation learning methods. VERAGMIL provides a realistic environment for training RAF systems to handle granular materials, including robots, sensors, and various food items with distinct physical characteristics. We evaluate VERAGMIL by training three imitation learning models, BC, BC-RNN, and BCQ, on granular scooping and transporting tasks using both VR interface and 3D space mouse demonstrations, comparing them with a human-expert baseline. The models are assessed on success rate, spillage, generalization to unseen food items, and task completion time. Results show that VR-based demonstrations significantly outperform 3D space mouse data, with BCQ achieving the best overall performance, particularly in reducing spillage and approaching human performance. These findings underscore the effectiveness of our framework for training RAF systems in granular material handling. The code for our framework is publicly available at: https://github.com/AmanuelErgogo/VERAGMIL.git."
+  },
+  {
+    "title": "HarvestPoint-ACT: Explicit Target Selection and Harvest-Point Conditioning for Robotic Fruit Harvesting under Occlusion",
+    "original_title": "HarvestPoint-ACT: Explicit Target Selection and Harvest-Point Conditioning for Robotic Fruit Harvesting under Occlusion",
+    "link": "https://arxiv.org/abs/2608.18446",
+    "date": "2026-08-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.18446v1 Announce Type: new \nAbstract: End-to-end imitation learning avoids hand-made robot motion for approaching and grasping, but the policy must still decide which fruit to pick and where to close the gripper. Occlusion can make the policy lose the selected fruit during harvesting, and the correct closing point is difficult to infer from pixels alone. This paper presents HarvestPoint-ACT, which makes both decisions explicit in perception and provides them to the policy. An instance segmentation front end with a keypoint branch predicts a mask and a harvest point for each visible fruit, where the harvest point specifies the location to close the gripper. A scheduler ranks detected candidates by occlusion and travel distance and selects one target. After each attempt, it redetects and reranks the candidates because the canopy may have changed. The selected fruit is encoded for an action chunking transformer as an eight-dimensional state, containing the absolute harvest point, the vector from the gripper to that point, a validity flag, and a confidence score. When the selected fruit is temporarily undetected, the system retains the last harvest point estimate in the robot base frame and marks it as stale, and aborts the attempt if the loss persists. On a canopy mock-up, HarvestPoint-ACT achieves a success rate of 88%, and of 75% under heavy occlusion."
+  },
+  {
+    "title": "An Experimental Study of Downwash Effects on a Continuum Manipulator Integrated with a Multirotor UAV",
+    "original_title": "An Experimental Study of Downwash Effects on a Continuum Manipulator Integrated with a Multirotor UAV",
+    "link": "https://arxiv.org/abs/2608.18507",
+    "date": "2026-08-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.18507v1 Announce Type: new \nAbstract: Continuum arm aerial manipulation systems leverage soft-manipulator compliance and dexterity for tasks in confined or hazardous environments, but propeller downwash can degrade performance, particularly near walls and the ground. This effect remains uncharacterized for continuum manipulators. This letter experimentally studies downwash-induced kinematic deviations of a tendon-driven continuum manipulator integrated with a multirotor platform. Under still-air conditions, the CM is compared with a constant-curvature (CC) model. Downwash- induced end-effector pose deviations are then quantified relative to the mean still-air experimental baseline at four propeller throttle levels in free space, and at maximum throttle near a wall, and near the ground. Vertical position and yaw show the largest deviations and are amplified by ground effect. A CC-guided Gaussian process regression (GPR) residual model is learned from experimental data that improves forward pose prediction RMSE (position by 89-95%, orientation by 47-79%), and support compensation-oriented, downwash-aware modeling of continuum arm aerial manipulation systems."
+  },
+  {
+    "title": "Real-Time Control-Constrained DDP for Underactuated Balancing of Legged Robots",
+    "original_title": "Real-Time Control-Constrained DDP for Underactuated Balancing of Legged Robots",
+    "link": "https://arxiv.org/abs/2608.18552",
+    "date": "2026-08-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.18552v1 Announce Type: new \nAbstract: This paper presents a real-time control-constrained Differential Dynamic Programming (DDP) framework for underactuated legged robots. To address the limitation of classical DDP in handling control constraints, we propose an Accelerated Projected Gradient (APG)-based control-constrained DDP (ABC-DDP), which efficiently computes constrained solutions and identifies active sets without repeated Karush-Kuhn-Tucker (KKT) inversions. A virtual constraint is introduced to integrate control constraints within a feasibility-driven multiple-shooting framework, enabling stable optimization even from dynamically infeasible initializations. The proposed method supports real-time model predictive control (MPC) with short horizons under strong underactuation. Simulation results demonstrate static two-leg standing under external disturbances, along with diverse dynamic motions including slow catwalk, upright walking, and high-speed running within a unified MPC framework. To the best of our knowledge, this is the first demonstration of static two-leg standing of a quadruped robot achieved using real-time finite-horizon MPC."
+  },
+  {
+    "title": "LabDex: A Hierarchical Benchmark for Dexterous Manipulation in Laboratories",
+    "original_title": "LabDex: A Hierarchical Benchmark for Dexterous Manipulation in Laboratories",
+    "link": "https://arxiv.org/abs/2608.18618",
+    "date": "2026-08-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.18618v1 Announce Type: new \nAbstract: Autonomous laboratories hold great promise for accelerating scientific discovery. To achieve this vision, robots are supposed to dexterously manipulate diverse labware and instruments and execute long-horizon, state-dependent experimental procedures. Yet existing benchmarks do not jointly capture dexterous hand use, real-world laboratory interactions, and multi-stage experimental procedures, limiting systematic training and evaluation. To bridge this gap, we introduce LabDex, a large-scale real-world dataset and benchmark for dexterous manipulation in chemistry laboratories, organized around a hierarchical task taxonomy spanning atomic skills, compositional tasks, and long-horizon experiments. First, LabDex is cross-platform and, for the first time, unifies real-world and simulation platforms under a common framework, providing standardized task definitions, demonstrations, and evaluation protocols. Second, LabDex is large-scale and systematically organizes chemistry laboratory operations into three interconnected levels: Atomic Skills, which characterize fundamental dexterous manipulation capabilities; Compositional Skills; and Long-Horizon Laboratory Workflows. This hierarchical design not only supports the evaluation of end-task performance, but also enables the analysis of how fundamental dexterous skills compose and influence more complex laboratory operations. We conduct cross-level evaluations of representative robot learning methods in both real-world and simulation environments. The experimental results validate the effectiveness of the LabDex task design and demonstration data, and show that the benchmark supports the training and systematic evaluation of existing robotic policies across laboratory dexterous manipulation tasks at different levels, providing a foundation for further research and development of autonomous laboratory robots."
+  },
+  {
+    "title": "SoftVTBench: A Deformation-Aware Visuo-Tactile Dataset and Benchmark for Deformable-Object Manipulation",
+    "original_title": "SoftVTBench: A Deformation-Aware Visuo-Tactile Dataset and Benchmark for Deformable-Object Manipulation",
+    "link": "https://arxiv.org/abs/2608.18701",
+    "date": "2026-08-20 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.18701v1 Announce Type: new \nAbstract: Physical interaction quality is central to deformable-object manipulation, yet most benchmarks evaluate task success alone. A policy may complete the task while allowing slip or causing excessive compression. A primary bottleneck is the absence of visuo-tactile datasets that pair policy-visible contact observations with independent physical ground truth over complete tasks. We introduce SoftVTBench, a visuo-tactile dataset for physical-interaction-aware deformable-object manipulation. It contains 4,000 expert demonstrations and more than 50 assets, including volumetric deformable objects and visually matched rigid twins. At 20 Hz, each episode synchronizes multi-view RGB, dual-finger tactile RGB and marker motion, proprioception, language, and binary and continuous gripper actions, alongside evaluator-only finite-element (FEM) states. Building upon this dataset, we establish a closed-loop benchmark that uses fixed object-specific calibration to define the Deformation-aware Success Rate (DSR), which counts a rollout as successful only when it completes the task and keeps peak normalized deformation within tolerance. Across Diffusion Policy, $\\pi_{0.5}$, and FastWAM, all 12 in-distribution configurations contain successful rollouts that violate the deformation tolerance, accounting for 0.7--24% of each configuration's successes. Under distribution shift, visuo-tactile variants achieve higher task success in all six policy--suite comparisons and higher DSR in five, whereas their in-distribution benefits are mixed. These results show that making touch available does not by itself ensure effective multimodal fusion. SoftVTBench therefore provides a common visuo-tactile resource for studying not only whether a policy succeeds, but how it physically interacts with deformable objects and when touch improves that interaction."
+  },
+  {
+    "title": "Analysis: Unitree IPO exposes the economics behind China's humanoid robot boom - digitimes",
+    "original_title": "Analysis: Unitree IPO exposes the economics behind China's humanoid robot boom - digitimes",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUHRFNUdaTEZzbHN3WjJ6dnlXcU1KN0FCWU5GT1N6dXFBSjdzZ0tKZzB4S0hmb1Z0TUxoa292WU1TWkwzMTM1dWdtMzM2dnkyNFA3Z3BwWU1pNmdSd1lUR2tweTg4dWpMbkkydnBtV0RQU28tMzUwQjFzR0NKYzlOVFFKV25waVA2VWdXcjlR?oc=5",
+    "date": "2026-08-20 03:25",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Analysis: Unitree IPO exposes the economics behind China's humanoid robot boom  digitimes"
+  },
+  {
+    "title": "Unitree founder sees robots reaching ‘mass market’ within 10 years - The Edge Malaysia",
+    "original_title": "Unitree founder sees robots reaching ‘mass market’ within 10 years - The Edge Malaysia",
+    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1PV2lqQnRlbTFyaG1uOThReXlUZU1NalE4ampXbW1ma1hwN2xFSW5INUNoX0VYdG9rUWFoNFF6c3phaDJYcDl4VDRRZWdxaFA0?oc=5",
+    "date": "2026-08-20 03:22",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree founder sees robots reaching ‘mass market’ within 10 years  The Edge Malaysia"
+  },
+  {
+    "title": "Humanoid robots may reach 'ChatGPT moment' in about two to three years: Unitree founder - Global Times",
+    "original_title": "Humanoid robots may reach 'ChatGPT moment' in about two to three years: Unitree founder - Global Times",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBvUHVrVkxlaFB0NGw4TEw3X0pkRjNNTDExa1FkeUplLWVJOG9MNjQ0emNZSGx4QkdXSG1QN05tZi1JeG9QVGNRTzg5bzgyUGpaZERFRHl6ZWUtanV4MG92OFFR?oc=5",
+    "date": "2026-08-20 02:57",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Humanoid robots may reach 'ChatGPT moment' in about two to three years: Unitree founder  Global Times"
+  },
+  {
+    "title": "Unitree Founder Sees Robots Reaching ‘Mass Market’ Within Decade - Bloomberg.com",
+    "original_title": "Unitree Founder Sees Robots Reaching ‘Mass Market’ Within Decade - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQVpNcFdaTmwyakZhMnFyVHZXdnQ3SDd5U2JERHpqbUxRbjhPTnB2d0NqOVQycFQya2ZOVk5VRW10VEFCbUdMV2RVTmtrQjgweHJYY3RHYWtiVGFwanhXWXRxWnJoa2F4RTdzcE9rUUJQX3FWTjRHV01iSFhTQUsyY0xhMl9qVUtLV3ZtU2ltekFITGZsWHNxVDNIT21hVU94aGRjVGxSODQtdnhtdEw3NGllZw?oc=5",
+    "date": "2026-08-20 02:49",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree Founder Sees Robots Reaching ‘Mass Market’ Within Decade  Bloomberg.com"
+  },
+  {
     "title": "WRC 2026: Unitree GD01 mecha, Ubtech bionic U1 headline China's humanoid robot showcase - digitimes",
     "original_title": "WRC 2026: Unitree GD01 mecha, Ubtech bionic U1 headline China's humanoid robot showcase - digitimes",
     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZzlmUjJKd0x4RHRJQU0wa3JVdDZEQU0xRXRrYUV1M21TM1Y3Z2NnX2QwUUxJQUxPaXM5ZW1DNnJ6SjM3VWx0dHBqaUk0ZzJfaHdmeDlVMUxVbVV1NWdYZkhZQnZMMlF6RFFJejFCUUc1Zm9FcGUwTDloMzNrcnh4MzliOWZ6ZUgwdDR5bTctbUp4RGR2?oc=5",
@@ -17890,113 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "본 논문은 복잡한 비선형 동역학을 갖는 시스템을 위한 효율적인 Model Predictive Path Integral (MPPI) 제어 프레임워크를 제시함. 계산 효율 개선을 위해 비선형 동역학을 학습된 선형 Deep Koopman Operator (DKO) 모델로 대체하여 궤적 샘플링 속도를 획기적으로 개선함. DKO 모델은 상호작용 데이터에서 직접 학습되어 시스템 모델의 필요성을 없애며, 사족 보행 로봇 실험을 통해 기존 MPPI에 준하는 제어 성능을 유지하면서 실시간 제어에 필요한 계산 비용을 절감하는 것이 입증됨."
-  },
-  {
-    "title": "행동 레이블링된 시연과 액션 비포함 영상으로부터 실행 가능한 잠재 행동을 학습하는 WALA 프레임워크",
-    "original_title": "WALA Learning Executable Latent Actions from Action-Labeled Demonstrations and Action-Free Videos",
-    "link": "https://arxiv.org/abs/2607.11397",
-    "date": "2026-07-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "일반적인 로봇 정책이 직면하는 데이터 수집의 비효율성을 해결하기 위해 WALA 프레임워크를 제시함. 본 방법론은 행동 레이블이 있는 시연 데이터와 라벨이 없는 대규모 비디오를 모두 활용하여, DINOv3 특성 공간 기반으로 실행 가능한 잠재 행동을 학습하는 것이 핵심임. 실험 결과, RoboTwin에서 우수한 성능을 기록하고 RoboCasa에서 평균 성공률 75.2%의 최고 기록(SOTA)을 달성하며 실제 매니퓰레이션 작업에서 정책 성능 및 일반화 성능 개선을 입증함."
-  },
-  {
-    "title": "작업 복귀 환경에서의 상지 이동성 장애를 위한 온라인 로봇 상호작용 적응 기법 연구",
-    "original_title": "Towards Online Robot Interaction Adaptation to Human Upper-limb Mobility Impairments in Return-to-Work Scenarios",
-    "link": "https://arxiv.org/abs/2510.05425",
-    "date": "2026-07-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "상지 이동성 장애를 겪는 사용자의 업무 참여를 촉진하기 위한 새로운 온라인 적응형 Human-Robot Interaction (HRI) 프레임워크를 제시함. 본 프레임워크는 이동성 모델을 계층적 최적 제어기에 통합하여, 로봇이 사용자 장애 부위를 고려한 반응적이고 이동성 인식적인 행동을 실시간으로 생성할 수 있도록 구현됨. 이 방법론은 다양한 상지 장애가 있는 상황에서 핸드오버(handover) 태스크를 통해 테스트되었으며, 사용자의 기능적 제한 범위에 맞춰 상호작용을 개인화하고 관절 사용을 촉진하는 결과를 확인함."
-  },
-  {
-    "title": "InCoM: 모바일 매니퓰레이션을 위한 의도 기반 인지 및 구조적 협력",
-    "original_title": "InCoM: Intent-Driven Perception and Structured Coordination for Mobile Manipulation",
-    "link": "https://arxiv.org/abs/2602.23024",
-    "date": "2026-07-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "모바일 매니퓰레이션의 핵심 난제인 기지-매니퓰레이터 간의 결합 문제와 동적 시점 변화에 따른 인지 분산 문제를 해결하기 위해 InCoM 프레임워크가 제안됨. 본 프레임워크는 의도(intent) 추론을 통해 다중 스케일 인지 특징의 가중치를 동적으로 재조정하고, 디커플링된 Flow Matching Action Decoder를 활용하여 제어 결합 문제를 완화하는 것이 특징임. 실험 결과, ManiSkill-HAB 세 가지 시나리오에서 기존 SOTA 대비 각각 28.2%, 26.1%, 23.6%의 성공률 향상을 기록하였으며, 실제 환경에서도 우수한 성능을 입증함."
-  },
-  {
-    "title": "가우시안 궤적 예측기 재고찰: 안전한 계획을 위한 불확실성 보정",
-    "original_title": "Rethinking Gaussian Trajectory Predictors: Calibrated Uncertainty for Safe Planning",
-    "link": "https://arxiv.org/abs/2603.10407",
-    "date": "2026-07-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "자율 주행 환경의 안전한 궤적 예측을 위해, 본 연구는 기존 Gaussian 예측기가 가진 신뢰할 수 없는 확신 수준(Confidence Level)의 문제점을 제기함. 이에 대한 해결책으로, KDE를 활용하여 예측 불확실성을 보정하는 새로운 손실 함수를 제안하고, 이 손실 함수가 Chi-squared 분포의 속성과 일치하도록 설계함. 실험 결과, 해당 방법론은 궤적 예측기의 신뢰성을 획기적으로 개선하여, Model Predictive Control(MPC)과 같은 안전 계획 알고리즘의 복잡한 실세계 시나리오에서의 성능을 향상시키는 데 기여함을 입증함."
-  },
-  {
-    "title": "SmoothTurn: 사족보행 로봇의 민첩한 주행을 위한 부드러운 회전 학습 방법론",
-    "original_title": "SmoothTurn: Learning to Turn Smoothly for Agile Navigation with Quadrupedal Robots",
-    "link": "https://arxiv.org/abs/2603.12842",
-    "date": "2026-07-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "사족보행 로봇의 임무 수행 시 발생하는 연속적인 방향 전환 및 운동량 유지의 어려움을 해결하기 위해 SmoothTurn 프레임워크를 개발함. 이 프레임워크는 순차 목표 달성을 위한 새로운 보상 설계, 미래 목표를 관측하는 확장된 시야(lookahead) 공간, 자동 목표 커리큘럼 등을 적용함. 그 결과, 로봇이 목표 지점을 전환할 때도 부드러운 회전과 운동량 제어를 유지하는 민첩한 이동 정책을 학습하고 실시간 로봇 환경에서 그 성능을 입증함."
-  },
-  {
-    "title": "저비용 산업용 빈 피킹을 위한 6D 포즈 추정 기술 활용 시스템, Pickalo",
-    "original_title": "Pickalo: Leveraging 6D Pose Estimation for Low-Cost Industrial Bin Picking",
-    "link": "https://arxiv.org/abs/2604.04690",
-    "date": "2026-07-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "산업 환경에서 빈번한 클러터와 높은 센서 비용 문제를 해결하기 위해, Pickalo는 저비용 하드웨어 기반의 6D 포즈 추정 빈 피킹 파이프라인을 제시함. 이 시스템은 손목 장착형 RGB-D 카메라를 활용하고, Mask-RCNN과 zero-shot SAM-6D 같은 모델로 객체를 세분화하며, Pose Buffer 모듈을 통해 다중 시점 관찰 데이터를 통합하여 포즈 노이즈를 줄임. 실제 UR5e 로봇에 적용하여 시간당 평균 600개의 높은 성공률(96-99%)을 달성하며, 강력한 성능과 안정성을 입증함."
-  },
-  {
-    "title": "모션 생성 및 추적 기반 전신 휴머노이드 로코모션 학습 기술 연구",
-    "original_title": "Learning Whole-Body Humanoid Locomotion via Motion Generation and Motion Tracking",
-    "link": "https://arxiv.org/abs/2604.17335",
-    "date": "2026-07-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "전신 휴머노이드 로코모션은 고차원 제어 및 실시간 지형 변화 적응이 필수적임. 본 연구에서는 참조 모션 기반 학습과 지형 인식 적응력을 결합한 프레임워크를 제안함. 구체적으로 확산 모델(diffusion model)을 활용해 지형 인식 레퍼런스 모션을 예측하고, 이를 바탕으로 RL 기반 전신 레퍼런스 트래커를 학습시켜 안정성을 확보함. 이 시스템은 Unitree G1 휴머노이드 로봇에 성공적으로 구현되어 계단, 장애물 등 다양한 복합 지형에서 우수한 이동 능력과 전신 적응력을 입증함."
-  },
-  {
-    "title": "촉각 인지 사족 보행체 이동-조작 정책 학습",
-    "original_title": "Learning Tactile-Aware Quadrupedal Loco-Manipulation Policies",
-    "link": "https://arxiv.org/abs/2604.27224",
-    "date": "2026-07-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "사족 보행체의 접촉 기반 이동-조작 과제를 해결하기 위해 촉각 인지(tactile-aware) 고수준 정책 학습 파이프라인을 제시함. 본 시스템은 인간 시연 데이터를 활용한 시각-촉각 고수준 정책과 대규모 강화학습 기반의 전신 제어 정책을 계층적으로 결합함. 그 결과, 인-핸드 리오리엔테이션 및 밸브 조임 등 접촉이 풍부한 실세계 작업에서 기존 방식 대비 평균 28.54%의 성능 향상을 입증함."
-  },
-  {
-    "title": "WarpMPC: 언롤드 $LDL^\\top$ 분해를 활용한 GPU 기반 대규모 배치 MPC 가속화 기술",
-    "original_title": "WarpMPC: Large-Batch MPC on GPU via ADMM with Unrolled $LDL^\\top$ Factorization",
-    "link": "https://arxiv.org/abs/2607.11603",
-    "date": "2026-07-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "본 논문은 대규모 배치(10,000개 이상)의 MPC 문제를 GPU 환경에서 처리하기 위한 수치 최적화 방안을 제시함. WarpMPC 툴박스는 MPC 문제들이 공유하는 희소성(sparsity)을 활용하여 ADMM 솔버의 주요 계산 단계를 언롤링(unrolling)하고, 메모리 최적화 및 종속성 스케줄링을 통해 병목 현상을 해결함. 그 결과, 나노 쿼드로터 및 휴머노이드 로봇 같은 까다로운 로봇 벤치마크에서 초당 25만 회 이상의 SQP 반복률을 달성하며 기존 대비 대폭적인 처리 속도 향상을 입증함."
-  },
-  {
-    "title": "IBPA: 통합 결손부 감지를 활용한 증분 볼 피보팅 기반 실시간 자유형 매니폴드 메시 재구성",
-    "original_title": "IBPA: Real-time Free-form Manifold Mesh Reconstruction via Incremental Ball Pivoting with Integrated Hole Detection",
-    "link": "https://arxiv.org/abs/2607.11627",
-    "date": "2026-07-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "수중 로봇(ROV/AUV)의 측량 데이터 결손 문제와 기존 모델의 표현 한계를 극복하기 위해 IBPA(Incremental BPA)가 개발됨. 본 방법은 스트리밍 포인트 클라우드 데이터로부터 실시간으로 자유형의 매니폴드 메시를 증분 재구성하며, 통합 결손부 감지 기능을 통해 복잡하고 비정형적인 수중 표면 토폴로지까지 처리할 수 있는 것이 특징임."
-  },
-  {
-    "title": "DTEA(듀얼 토폴로지 엘라스틱 액추에이터): 시리즈 및 병렬 컴플라이언스 간 실시간 전환을 지원하는 신규 개발 액추에이터",
-    "original_title": "DTEA: A Dual-Topology Elastic Actuator Enabling Real-Time Switching Between Series and Parallel Compliance",
-    "link": "https://arxiv.org/abs/2604.15865",
-    "date": "2026-07-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존 액추에이터가 구현하기 어려웠던 SEA(Series Elastic Actuator)와 PEA(Parallel Elastic Actuator) 토폴로지 간의 실시간 동적 전환을 가능하게 하는 DTEA가 개발됨. 개발된 프로토타입은 부하 조건에서 324회의 토폴로지 전환 사이클을 손상 없이 수행하는 안정성을 입증함. 특히, 전환 시간은 33.33ms 미만으로 매우 빠르며, PEA 모드는 SEA 모드 대비 높은 강성과 향상된 외란 거동 성능을 보임."
-  },
-  {
-    "title": "원자력 해체 공정 로봇 레이저 절단 시뮬레이션을 위한 저비용 목업 제시",
-    "original_title": "A low-cost mockup to simulate robotic laser cutting in nuclear decommissioning",
-    "link": "https://arxiv.org/abs/2605.08947",
-    "date": "2026-07-14 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 원자력 해체 과정 중 컨테이너 절단 작업을 시뮬레이션할 수 있는 저비용 실험 목업을 공개함. 해당 시스템은 6-DOF 매니퓰레이터와 비전 시스템을 활용하며, 보정 과정이 필요 없는 제약 조건 기반의 적응형 동작 제어기(adaptive motion controller)를 채택하여 충돌 회피 기능을 구현함. 특히, 전체 엔드-이펙터 포즈가 아닌 4-DOF의 자외선(UV) 빔 제어를 통해 추적 경로를 제어함으로써, 초기 보정 없이도 높은 수준의 평균 추적 정확도를 확보했음이 입증됨."
   }
 ]
