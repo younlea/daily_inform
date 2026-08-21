@@ -162,6 +162,78 @@
     "summary": "arXiv:2608.19977v1 Announce Type: new \nAbstract: Although legged animals are capable of performing explosive motions while traversing confined spaces, replicating this behavior in quadrupedal robots has been a longstanding challenge. Here, we propose a hierarchical reinforcement learning pipeline that empowers the robots to perform aggressive locomotion through constrained obstacles--a narrow gate. The imitation learning technique is used to train the low-level policy, which mimics the behaviors of real animals and forms a set of diverse skills. The high-level controller, having an awareness of the capability of low-level skills and acquiring the gate information via vision-based detection, determines the suitable maneuvers with collision-free trajectories to traverse it dynamically. Notably, we also verify that this framework can be extended to other highly dynamic tasks. This is one of the first works that perform autonomous and agile aerial gate traversal tasks on ground-walking robots, extending the lifelike agility of legged robots to match that of their biological counterparts."
   },
   {
+    "title": "Evidence-Gated Task and Motion Planning with Vision-Language Models",
+    "original_title": "Evidence-Gated Task and Motion Planning with Vision-Language Models",
+    "link": "https://arxiv.org/abs/2608.20084",
+    "date": "2026-08-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.20084v1 Announce Type: new \nAbstract: Robots executing long-horizon manipulation tasks from natural-language instructions must reason about both semantic task structure and geometric feasibility. However, under partial observability, the availability of goal-relevant objects may be uncertain. In such cases, approaches that combine Vision-Language Models (VLMs) with Task and Motion Planning (TAMP) may generate subgoals that rely on the VLM's prior knowledge without observational support, leading to execution failures or unintended outcomes. We propose Evidence Acquisition and Feasibility Gating (EAFG), a framework that acquires visual evidence through VLM-generated exploratory subgoals and TAMP-based execution. EAFG then applies a feasibility gate to decide whether to proceed with task planning, acquire further evidence, or halt. Our experiments show that, in cooking tasks with ambiguous object use, EAFG improves recipe completion by discovering task-relevant objects before planning. For instructions requiring an absent object, EAFG promotes appropriate halt decisions and reduces repeated attempts to manipulate that object."
+  },
+  {
+    "title": "Towards Professional Tennis Styles for Humanoid Robots with Adaptive Motion Planning and Tracking",
+    "original_title": "Towards Professional Tennis Styles for Humanoid Robots with Adaptive Motion Planning and Tracking",
+    "link": "https://arxiv.org/abs/2608.20087",
+    "date": "2026-08-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2608.20087v1 Announce Type: new \nAbstract: Humanoid robots have recently demonstrated promising capabilities in real-world ball sports. However, achieving professional motion styles while maintaining strong task performance remains challenging. In this work, we propose AdaPT, an Adaptive Motion Planning and Tracking framework that learns professional tennis serving and rally styles directly from broadcast videos. This hierarchical design is motivated by the key insight that the planner generates stylistic kinematic motions, while the tracker executes them with minimal interference with planning. Despite its effectiveness in simulation, a substantial sim-to-real gap emerges: tracking performance inevitably degrades on real robots, and this degradation is partially overlooked by autoregressive planning and further compounded by noisy perception. To address these issues, our adaptation mechanism improves tracking robustness by learning to track randomized execution speeds, while conditioning the planner on a learned motion-speed adapter to mitigate compounding errors. Real-world experiments on the Unitree G1 demonstrate the effectiveness of our adaptation mechanism in bridging the sim-to-real gap. We further deploy AdaPT policies on the full-size Dobot Atom humanoid robot (1.7m) and demonstrate in-the-wild serving without motion capture. Beyond these results, our real-world experiments reveal both algorithmic and engineering insights for future humanoid ball-sports systems. Videos and code are available on our \\href{https://humanoidtennis.github.io/AdaPT/}{project website}."
+  },
+  {
+    "title": "Video2DoorTraversal: Push Door Traversal via Simulated Door Twins",
+    "original_title": "Video2DoorTraversal: Push Door Traversal via Simulated Door Twins",
+    "link": "https://arxiv.org/abs/2608.20251",
+    "date": "2026-08-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.20251v1 Announce Type: new \nAbstract: Door opening and traversal is a long-horizon loco-manipulation task that requires precise handle interaction and coordinated base-arm control. We present Video2DoorTraversal, a single-video real-to-sim-to-real framework for wheel-legged mobile manipulators. Given one RGB video of a real door, DoorTwin reconstructs an instance-aligned, articulated, and simulation-ready door twin with realistic geometry and appearance. A simulation-in-the-loop agent converts the recovered articulation into a parameterized skill program and iteratively refines failed rollouts to generate physically executable demonstrations. These demonstrations are used to train ArticuACT, a dual-depth policy that predicts coordinated base, arm, and gripper commands using robot-centric camera conditioning and interaction-aware supervision. With all perception and policy inference running onboard, the system achieves a 96.57% average success rate across five real doors and an 80.95% zero-shot success rate on structurally similar unseen doors, while completing the full approach, opening, and traversal sequence in approximately 13s on average. Project Page: https://video2doortraversal.github.io/."
+  },
+  {
+    "title": "Multi-Tool Robotics Enables In-Situ Sample Manipulation for Time-Resolved Synchrotron Measurements",
+    "original_title": "Multi-Tool Robotics Enables In-Situ Sample Manipulation for Time-Resolved Synchrotron Measurements",
+    "link": "https://arxiv.org/abs/2608.19280",
+    "date": "2026-08-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.19280v1 Announce Type: cross \nAbstract: The high photon flux at synchrotron beamlines allows for the measurement of fast dynamical processes. However, beamline radiation-safety protocols prohibit human intervention during X-ray experiments, limiting the ability to perform versatile real-time sample manipulations during continuous data acquisition. Here we present a robotic platform at an X-ray scattering beamline to enable real-time sample handling and processing in the experimental hutch, revealing previously inaccessible transient in-situ dynamics in perovskite thin films. This modular multi-tool robotic architecture enables in-hutch sample manipulation beyond human-access constraints, establishing a foundation for automated and autonomous synchrotron experimentation."
+  },
+  {
+    "title": "Learning Hierarchical Skill Policies with Offline Quality-Diversity Reinforcement Learning",
+    "original_title": "Learning Hierarchical Skill Policies with Offline Quality-Diversity Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2608.19684",
+    "date": "2026-08-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.19684v1 Announce Type: cross \nAbstract: Recent studies investigate how to leverage pre-collected datasets to improve the policy performance and sample efficiency of RL. One promising approach to achieve this goal is to employ a two-stage strategy: In the first stage, diverse skills are extracted as a low-level policy from a given dataset, and a high-level policy is trained to solve a specific task in the second stage. Typically, extraction of the low-level policy is performed based on unsupervised learning such as trajectory VAE. However, a limitation of this approach is that the quality of the low-level policy highly depends on the quality of the dataset. To address this issue, we introduce QDOS (Quality-Diversity Offline Skill learning), a unified pipeline for robust offline-to-online learning. Our approach incorporates an Advantage-Weighted Quality-Diversity pretraining objective, which weights the skill extraction and diversity objectives by the estimated advantage of each trajectory segment. This approach allows the model to extract diverse and high-value skills. By providing robust and task-relevant skill representations, QDOS significantly improves the quality of the embedded skill space used by the low-level policy. We further integrate this with a dual dataset reuse strategy, where offline data is used both for skill pretraining and for populating the online replay buffer via pseudo-labeling. Experiments demonstrate that QDOS significantly outperforms strong baselines in structured manipulation tasks and unstructured locomotion tasks, confirming its ability to accelerate exploration and improve final returns in challenging sparse-reward domains."
+  },
+  {
+    "title": "SafeBranch: Branch-Pair Safety Alignment for Embodied Agents",
+    "original_title": "SafeBranch: Branch-Pair Safety Alignment for Embodied Agents",
+    "link": "https://arxiv.org/abs/2608.19729",
+    "date": "2026-08-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.19729v1 Announce Type: cross \nAbstract: Vision-language-model-based embodied agents can complete instructed tasks but often violate safety constraints in the process, a problem recently framed as interactive safety. Training such agents to act safely is difficult, since safety and task success are distinct objectives, and safety arises only at a small number of safety-critical steps within a trajectory. Standard supervision is insufficient: imitating safe trajectories teaches behavior without explaining why it is safe, and contrasting arbitrary safe and unsafe trajectories mixes the safety signal with unrelated differences. We propose SafeBranch, a framework that aligns an embodied actor on safety through branch pairs constructed from the actor's own unsafe rollouts via environment rollback. SafeBranch rolls each unsafe rollout back to the safety-critical step that caused the violation, queries the actor for a safe alternative, and pairs the original action with the alternative so that the two branches differ only at that step. The trained actor acts safely at deployment with no critic in the loop. On IS-Bench, SafetyALFRED, and out-of-distribution variants with unseen tasks and objects, it handles safety reliably without sacrificing task success, achieving roughly ten times more safe successes than the untrained baseline on the unseen-object variant."
+  },
+  {
+    "title": "DECOWAM: Decoupled Whole-Body World-Action Model for Legged Mobile Manipulation",
+    "original_title": "DECOWAM: Decoupled Whole-Body World-Action Model for Legged Mobile Manipulation",
+    "link": "https://arxiv.org/abs/2608.20114",
+    "date": "2026-08-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.20114v1 Announce Type: cross \nAbstract: Mobile manipulation requires a robot to predict how locomotion and arm motion jointly alter future observations and control. Existing world-action models, developed largely for fixed-base platforms, do not explicitly distinguish camera ego-motion from base and arm actions. Here we introduce DECOWAM, a whole-body world-action model that separates these factors through dedicated conditional interfaces. DECOWAM freezes an adapted FastWAM backbone and trains residual adapters, an action-equivalent future bottleneck distilled from privileged observations, adversarially separated base and arm latents, and base-velocity conditioning for video prediction. We further introduce ARMDOG, a real-robot dataset that synchronizes video, whole-body state and action, and language. On a fixed replay protocol, DECOWAM improved both future-video and action prediction over FastWAM, reducing action MSE by 21.7% with 25.95M trainable adaptation parameters. Across 79 closed-loop trials per method, it achieved the highest observed whole-body coordination and base-displacement robustness among the compared systems, while task completion remained comparable to the strongest baseline. These results show that embodiment-aware factorization can support parameter-efficient joint visual prediction and whole-body control under moving viewpoints."
+  },
+  {
+    "title": "DiffDef: A Diffusion Model for Generating Multimodal Goal Shapes From Demonstrations for Deformable Object Manipulation",
+    "original_title": "DiffDef: A Diffusion Model for Generating Multimodal Goal Shapes From Demonstrations for Deformable Object Manipulation",
+    "link": "https://arxiv.org/abs/2506.18779",
+    "date": "2026-08-21 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2506.18779v2 Announce Type: replace \nAbstract: Deformable object manipulation is a key capability in many robotic applications. A promising paradigm for this problem is shape servoing, which aims to control deformable objects toward desired goal shapes. However, existing approaches typically rely on impractical goal-shape acquisition methods, such as domain-knowledge engineering or manual manipulation. Moreover, prior methods generally assume a single deterministic goal and fail to handle multimodal goal settings, a common scenario in many real-world tasks where multiple distinct goal shapes can all lead to successful task completion. In this paper, we introduce DiffDef, a novel neural network that uses a diffusion model to learn a distribution of feasible goal shapes rather than predicting a single deterministic outcome. This allows DiffDef to generate diverse goal configurations while avoiding the mode-averaging artifacts common in deterministic predictors. We evaluate our method on several deformable manipulation tasks inspired by manufacturing and surgical applications, both in simulation and on two physical robotic platforms: the da Vinci Research Kit (dVRK) and a bimanual KUKA-based robotic system. The results demonstrate that DiffDef effectively captures multimodal goal distributions and significantly improves task performance in practical robotic settings. Website: sites.google.com/view/diffdef."
+  },
+  {
     "title": "Chinese humanoid robots' biggest obstacle: humans are still (mostly) better - CNBC",
     "original_title": "Chinese humanoid robots' biggest obstacle: humans are still (mostly) better - CNBC",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZkV3TjVvMDc4eFdoQURkRWRic25QRWVRekF0VGhYUHpjTU5BNHJXR3o2NkRINWhBVk0zbjhjQkk0WldnZ0JnSEFIRjVFZDJucWpxVWFGSXlMdnhkRWNuT0daTVlqcjVtTm50aVliVndiT3pyMFFxOHVtcnM3VGFlWVA1SEl4VWE5R1g0cVNHWGJYVEVQTjdvUEJRQUlKaVJURmJJ0gGoAUFVX3lxTE9LcGRQNEFoVlVFeWN0ZUd1d2UzcVF5eURsM0JORXpyNkJWbFpvV3RfNmdjbEFadGhOQXVtYzVIdDhhalJyRE1WQy1BMVJXc1E4MDBOSGczckV0bWN2RjByeW9ncmZjODM4bl9DZmdRaTYxeXFBVDNrRFphZ1R5YkV6WjZKSTlhNjcyb0F4QTJyZVhIajYzSG9ad0NidWw5bGtZVXdaWlFTRw?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "인간-로봇 협업(HRC) 환경에서 로봇의 불완전한 인식에서 발생하는 불확실성(uncertainty)을 표현하기 위한 수학적 프레임워크를 제시함. 본 연구는 Laban Movement Analysis를 활용하여, 신뢰도, 호기심, 주저함 등의 불확실성 상태를 5가지 운동 기본 단위와 11개 이상의 운동 기술자(kinematic descriptors)에 매핑하는 방식임. 이를 검증한 결과, 로봇의 움직임이 인간 참가자들에게 의도된 행동 상태를 효과적으로 전달하는 것이 확인되어, 향후 공동 작업 환경에서의 로봇 동작 생성 기반을 마련함."
-  },
-  {
-    "title": "로봇 시스템의 비평활 충격 방향(NSID) 분석",
-    "original_title": "The Nonsmooth Impact Direction (NSID) of Robotic Systems",
-    "link": "https://arxiv.org/abs/2607.13768",
-    "date": "2026-07-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "로봇과 환경의 충돌 상황을 분석하며, 충격으로 인해 발생하는 시스템 속도의 특성을 '비평활 충격 방향(NSID)'에 초점을 맞춰 체계적으로 규명함. NSID는 충돌의 고유한 특성 방향으로 접촉 물성으로부터 독립적이며, 백드라이브 시스템과 유연 관절 시스템에 광범위하게 적용 가능함을 입증함. 본 연구는 이러한 이론적 분석을 통해 인간형 로봇 보행이나 해머링 등 충격 기반 로봇 애플리케이션의 제어 및 플래닝 알고리즘 개발을 위한 기반을 마련함."
-  },
-  {
-    "title": "체화 AI를 위한 확장 및 신뢰성 확보를 위한 GPU 가속 시뮬레이터 벤치마크(GPUSimBench) 공개",
-    "original_title": "GPUSimBench: Towards Scalable and Reliable GPU-Accelerated Simulators in Embodied AI",
-    "link": "https://arxiv.org/abs/2607.13059",
-    "date": "2026-07-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "데이터 기반 체화 AI는 대규모 병렬 시뮬레이션에 의존하며, GPU 가속 시뮬레이터가 핵심 데이터 인프라 역할을 수행함. 본 논문은 GPUSimBench를 통해 기존 시뮬레이터의 확장성, 물리적 일관성, 계산 결정성 한계를 심층 분석함. 특히, GPU 배치 실행 과정에서 발생하는 미미하지만 중요한 비결정성을 정량화하고, 무분별한 스케일링이 재현성을 훼손할 수 있음을 경고함."
-  },
-  {
-    "title": "하나의 시연으로 다중 환경 구축: 오픈 월드 이동형 조작(Manipulation) 학습을 위한 합성 데이터 엔진",
-    "original_title": "Worlds in One Demo: A Synthetic Data Engine for Learning Open-World Mobile Manipulation",
-    "link": "https://arxiv.org/abs/2607.13154",
-    "date": "2026-07-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "WANDA는 단 하나의 인간 시연(demonstration)을 활용하여 오픈 월드 이동형 조작 정책 학습을 위한 대규모 합성 데이터 엔진임을 제시함. Gaussian splatting을 통해 환경을 재구성하고 전신 동작 계획(whole-body motion planning) 및 교정 상태 확장(Corrective State Expansion)을 적용하여, 최소한의 데이터만으로도 광범위하고 다양한 궤적 데이터를 생성함. 실험 결과, WANDA로 훈련된 정책은 장기적 강건성, 넓은 공간적 일반화, 그리고 이질적인 로봇(cross-embodiment)으로의 전이 가능성을 성공적으로 입증함."
-  },
-  {
-    "title": "역행을 통한 발전: 역전된 쉬운 작업을 활용한 텔레오퍼레이션 비용 효율적 고난도 정책 학습",
-    "original_title": "Reverse to Advance: Teleoperation-Cost Effective Hard Policy Learning from Reversed Easy Tasks",
-    "link": "https://arxiv.org/abs/2607.13455",
-    "date": "2026-07-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "고난도 작업을 위한 고품질 텔레오퍼레이션 데이터 수집의 어려움에 착안, 작업의 방향성 비대칭성(directional asymmetry)을 활용하여 역전된 쉬운 작업 궤적을 난이도 높은 작업의 감독 신호로 사용함을 제안함. 본 연구는 자동화된 데이터 수집, 키네마틱 사전 지식 기반의 계층적 데이터 정제, 그리고 반복적인 온라인 학습을 결합한 통합 프레임워크를 제시함. 이를 통해 복잡하고 정밀한 매니퓰레이션 작업의 데이터 효율적이고 안정적인 학습이 가능하며, 실제 로봇 실험에서 기존 방법론 대비 우수한 성능 향상을 입증함."
-  },
-  {
-    "title": "\"쿼드보트(QuadBoat)\": 익사 구조용 사족 보행 수상 차량의 설계 및 제어 기술",
-    "original_title": "Design and Control of the \"QuadBoat\": A Quadruped Surface Vehicle for Drowning Rescue",
-    "link": "https://arxiv.org/abs/2607.13633",
-    "date": "2026-07-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "본 논문은 익사 구조 임무에 필수적인 무인 수상 차량(USV)인 QuadBoat를 제시함. QuadBoat는 생체 모방 사족 보행 구조를 채택하고, 능동적 자세 조절과 inverse kinematics 기반 제어 및 cascaded MPC-PID 컨트롤러를 활용하여 높은 민첩성을 확보함. 실험 결과, 본 차량이 물 표면의 물체를 정밀하게 추적하고 회수하는 높은 운동 정확도와 현장 구조 효율성을 검증함."
-  },
-  {
-    "title": "객체 자세 불확실성 처리를 위한 모듈식 빈-픽킹 프레임워크 제안",
-    "original_title": "Towards a Modular Bin-picking Framework for Handling Object Pose Uncertainties",
-    "link": "https://arxiv.org/abs/2607.13698",
-    "date": "2026-07-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 빈-픽킹의 신뢰성 향상을 목표로, 객체 자세 불확실성(pose uncertainty)과 그리핑 오류(grasping error)를 동시에 처리하는 모듈형 프레임워크를 제시함. 해당 프레임워크는 객체 자세 분포 추정 및 보조 시점(second-viewpoint) 모듈을 이용해 자세 불확실성을 줄이며, 그리핑 오류 보상 모듈까지 통합하여 시스템 효율성을 극대화함. 이 접근법은 그리핑 및 객체 자세 불확실성을 개별 모듈로 공동 처리하는 선도적인 방법론으로 평가됨."
-  },
-  {
-    "title": "계층적 강화 학습 기반의 클러스터 환경 딸기 수확을 위한 비전 장애물 분리 기법",
-    "original_title": "Vision-Based Obstacle Separation for Strawberry Harvesting in Clusters Using Hierarchical Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2607.13799",
-    "date": "2026-07-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "딸기의 가려짐(occlusion)으로 인한 선택적 수확의 어려움을 해결하기 위해, 본 논문은 비전 안내 의사결정 메커니즘과 PAES를 결합한 계층적 강화 학습 프레임워크(VGPA)를 제안함. 이 프레임워크는 수확 임무를 장애물 분리와 목표물 파지 두 단계로 분해 처리함. 시뮬레이션 및 자체 개발한 병렬 로봇(parallel robot)을 활용한 시뮬레이션-현실 전이 실험에서 최대 88.3%에 달하는 성공률을 기록하며 복잡한 환경에서의 로봇 수확 적용 가능성을 검증함."
-  },
-  {
-    "title": "단일 미완성 시연 기반, 제약 환경 조작 과제의 전진 및 역방향 기술 학습 방안 제시",
-    "original_title": "Learning Forward & Reverse Skills from a Single Unfinished Demonstration for Constrained Manipulation Tasks",
-    "link": "https://arxiv.org/abs/2607.13882",
-    "date": "2026-07-16 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 기존의 어려움이 있던 접촉이 많은 제약 조작(constrained manipulation) 과제를 위해 단일 미완성 시연으로부터 전진 및 역방향 기술을 동시에 학습하는 통합 프레임워크를 제안함. 해당 방법은 시연을 비접촉(DMP)과 접촉 단계로 분해하고, 접촉 운동을 geometry-driven twist-direction segmentation 알고리즘 기반의 screw motion primitives로 표현함. 이 프레임워크는 시연 트랙을 넘어선 임무 완료와 역방향 기술 실행을 지원하며, Peg insertion 등 다양한 과제에서 기존 대비 향상된 성공률과 강건성을 보여줌."
   }
 ]
