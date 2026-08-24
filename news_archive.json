@@ -1,5 +1,95 @@
 [
   {
+    "title": "Humanoid Musical Robots as Experimental Interfaces for Music-Evoked Emotion",
+    "original_title": "Humanoid Musical Robots as Experimental Interfaces for Music-Evoked Emotion",
+    "link": "https://arxiv.org/abs/2608.20433",
+    "date": "2026-08-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.20433v1 Announce Type: new \nAbstract: Advances in technology have led to increasingly sophisticated musical humanoid robots. However, their use has largely been limited to performance and related research in human-robot interaction. In this position paper, we propose a novel perspective: musical humanoid robots as experimental interfaces for investigating music-evoked emotions. We argue that current research is constrained by paradigms relying on pre-recorded auditory stimuli, which fail to capture the multimodal, embodied, and interactive nature of real-world musical experience. Building on existing theories of music cognition and emotion, we identify mechanisms that require controlled manipulation of both acoustic and non-acoustic variables. We show that humanoid robots are well-suited as they enable parametric control of performance variables, reproducibility across trials, and the decoupling and recombination of auditory, visual, and interactive components. We illustrate the technical feasibility of this perspective through a case study of the WAseda Saxophonist Robot 5 (WAS-5), demonstrating reproducible control of acoustic and interaction variables that are prerequisites for future music-emotion experiments. Our work positions musical humanoid robots as a methodological platform that enables future controlled investigations of music-evoked emotions."
+  },
+  {
+    "title": "Koala Gripper: Co-designing Robotic Grippers and Data-Capture Devices for Scaling Dexterous Manipulation Learning",
+    "original_title": "Koala Gripper: Co-designing Robotic Grippers and Data-Capture Devices for Scaling Dexterous Manipulation Learning",
+    "link": "https://arxiv.org/abs/2608.20546",
+    "date": "2026-08-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.20546v1 Announce Type: new \nAbstract: As the demand for larger manipulation datasets grows, handheld robotic gripper data collection and the associated gripper designs become more vital. Current data collection device designs trend towards matching the morphologies of existing robotic grippers, sacrificing ergonomics and manipulation performance. In this paper, we propose a co-design framework that guides the simultaneous development of both data collection and robotic execution devices by weaving both platform constraints into the design process. Through this workflow, we present the Koala Gripper system, a data capture device and robotic gripper platform that improves dexterity and grasp capability compared to parallel jaw grippers while preserving scalability and ease-of-use. The design introduces a novel force-optimized finger/trigger linkage mechanism with directional reflected mass characteristics, a unique monolithic dual-thumb, and user-centered ergonomic design. The design's actuated robotic fingers are backdrivable, with effective mass on the order of tens of grams. We show that these grippers are capable of secure grasps over a wide range of objects, forceful tool use, and precise singulation. We further validate the platform by deploying it with an end-to-end data collection and policy execution pipeline that highlights its capabilities through learning from demonstration. More information available at http://koalagripper.rai-inst.com"
+  },
+  {
+    "title": "Natural Sit-to-Stand Motion Synthesis For Humanoids via Guided Assistance Curricula and Staged Rewards",
+    "original_title": "Natural Sit-to-Stand Motion Synthesis For Humanoids via Guided Assistance Curricula and Staged Rewards",
+    "link": "https://arxiv.org/abs/2608.20823",
+    "date": "2026-08-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2608.20823v1 Announce Type: new \nAbstract: A humanoid has infinitely many ways to stand up from sitting while maintaining balance, making sit-to-stand (STS) a challenging control problem. We synthesise natural humanoid STS motion from scratch using reinforcement learning, without demonstrations or reference trajectories. A single Proximal Policy Optimisation policy learns smooth, human-like rising driven by three complementary components. (i) A coupled force/chair-height curriculum is used. A vertical pelvis-assist force aids early trajectory exploration and decays over training. Taller chairs are unlocked with decaying assisting force. This ensures that the policy masters a viable STS trajectory at each chair height before being exposed to harder ones, avoiding the premature distribution shift that otherwise collapses generalisation. (ii) Motion robustness is achieved by randomly sampling from a large number of inverse kinematics-generated initial and target poses spanning over eight chair heights. (iii) A set of rewards is defined inspired from biomechanics and optimal control studies. They shape the robot's angular momentum for seat-off, and enable support-region transition via centre of pressure attraction function to ensure smooth low-effort actuation. On a deterministic force-free evaluator, the policy attains more than 97% balanced-standing success across eight chair heights. The policy generalises smooth motion across chair heights and enables the robot to rise from substantially deep-seated postures as compared to the state of the art."
+  },
+  {
+    "title": "Demonstration-Guided Humanoid Stand-Up on an Emulated Deformable Surface",
+    "original_title": "Demonstration-Guided Humanoid Stand-Up on an Emulated Deformable Surface",
+    "link": "https://arxiv.org/abs/2608.20852",
+    "date": "2026-08-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2608.20852v1 Announce Type: new \nAbstract: This paper presents a reference-guided reinforcement learning framework to generate stand-up motion for a 29-DOF Unitree G1 humanoid on deformable soft ground, using a human demonstration recorded on hard ground. The terrain compliance is modelled using solref and solimp parameters from MuJoCo's rigid body soft-contact model. The rewards consists of (i) reference motion tracking through residual joint-position control and (ii) explicit recovery objectives such as pelvis height, torso uprightness, and the final posture. First, the policy is trained with the specified rewards considering hard ground. Next, the terrain stiffness is lowered by updating solref and the nominal surface penetration zone is expanded using solimp. Subsequent training enables the policy to adapt to the delayed support force generation due to significant surface penetration during contact-intensive phases while preserving the original demonstration pattern. The learned policy successfully completes the fallen-to-standing task in simulation, reaching the targeted pelvis height and uprightness, with a maximum contact penetration of approximately 40 mm during the process. The proposed method is demonstrated on two stand-up sequences and successfully achieves the final recovery objective on both hard and soft ground. Ablation studies show that reference tracking alone is insufficient for successful stand-up, and that explicit recovery rewards are essential."
+  },
+  {
+    "title": "Fast Coordinated Bimanual Motion Planning With Hard Constraints",
+    "original_title": "Fast Coordinated Bimanual Motion Planning With Hard Constraints",
+    "link": "https://arxiv.org/abs/2608.20946",
+    "date": "2026-08-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.20946v1 Announce Type: new \nAbstract: Bimanual manipulation enables complex tasks but introduces added complexity from the high number of degrees of freedom involved. When handling rigid objects, the relative transformation between the two end effectors must remain fixed throughout the motion, manifesting as a nonlinear equality constraint that confines the feasible configuration space to a measure-zero manifold and challenges conventional motion planners. We propose a fast bimanual motion planning pipeline that enforces this hard transformation constraint continuously along the entire path, using a leader-follower parameterization: the leader's configuration is treated as a free variable, while the follower's is determined via inverse kinematics to satisfy the constraint. We extensively evaluate the method in simulation across diverse environments, constraints and bimanual platforms, achieving 19.4x faster planning than prior work while guaranteeing continuous constraint satisfaction. Real-world experiments on a bimanual Kinova Gen3 setup, involving tray transport and elongated-object manipulation, validate direct transfer of planned trajectories to physical hardware."
+  },
+  {
+    "title": "Hybrid Roller-Jamming Gripper for Object Acquisition and Retention Under Pose Uncertainty",
+    "original_title": "Hybrid Roller-Jamming Gripper for Object Acquisition and Retention Under Pose Uncertainty",
+    "link": "https://arxiv.org/abs/2608.20962",
+    "date": "2026-08-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.20962v1 Announce Type: new \nAbstract: In household manipulation, pose uncertainty often results in off-centre or partial initial contact, making reliable object acquisition difficult. Roller-based grippers can actively draw objects inward but often provide limited post-capture stability, whereas granular-jamming grippers require sufficient contact before jamming to achieve strong retention. This paper presents a hybrid roller-jamming gripper that integrates active object intake and post-capture retention within a single gripper. The proposed gripper uses inward roller rotation to increase contact and draw the object toward the gripper centre, followed by vacuum-induced granular jamming to stiffen the rollers and stabilise the grasp. The paper also presents a simplified geometric analysis of the gripper and a bench-level characterisation of the prototype's force capability. The gripper prototype was mounted on a 7-DoF robotic arm and evaluated using eight test objects. Furthermore, controlled planar position and orientation offsets were applied, with each condition repeated three times. The main evaluation comprised 840 grasp trials, including 216 planar-offset trials and 624 orientation-offset trials. Overall, the gripper succeeded in 812/840 trials: 215/216 planar-offset trials and 597/624 orientation-offset trials. The ablation evaluation comprised 162 trials on three objects. The roller-only and jamming-only conditions achieved 54/81 and 24/81 successes, respectively, showing their different contributions. These results provide initial mechanism-level evidence that hybrid roller-jamming is a promising strategy for improving acquisition and retention after imperfect first contact."
+  },
+  {
+    "title": "PhysCaP: Grounding Code-as-Policy Agent with Physics-Informed Exploration",
+    "original_title": "PhysCaP: Grounding Code-as-Policy Agent with Physics-Informed Exploration",
+    "link": "https://arxiv.org/abs/2608.21031",
+    "date": "2026-08-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.21031v1 Announce Type: new \nAbstract: We present PhysCaP, a Physics-Informed Code-as-Policy agent for active perception in robotic manipulation. While vision-language-action policies excel at imitating demonstrations, they rely on passive observation and fail to infer latent physical properties critical for manipulation. PhysCaP augments code-as-policy frameworks with a physics-informed exploration layer that enables explicit information-seeking through interaction. It introduces training-free physical property extraction modules that estimate object mass and stiffness from robot proprioception without additional sensors. To balance exploration costs and the efficiency of information obtained, PhysCaP employs a dual-agent design: a Planner that decides when to explore and when to stop, and a Prioritizer that filters implausible interactions and ranks the remainder using a heuristic priority score, enabling efficient, targeted exploration. We evaluate PhysCaP on real-world tabletop manipulation tasks (searching for hidden objects, detecting empty cans, and finding ripe avocados) and a simulated task in LIBERO. The results show that existing passive and naive interactive baselines either fail when physical properties are hidden or over-explore, whereas PhysCaP achieves comparable performance with fewer interactions and reduced execution time. Ablation studies further validate the effectiveness of the proposed physical property extraction modules. Project page: https://physcap.github.io"
+  },
+  {
+    "title": "TaPeR: Probabilistic Recovery of Sparse Task Precedence Graphs from a Handful of Demonstrations",
+    "original_title": "TaPeR: Probabilistic Recovery of Sparse Task Precedence Graphs from a Handful of Demonstrations",
+    "link": "https://arxiv.org/abs/2608.21035",
+    "date": "2026-08-24 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.21035v1 Announce Type: new \nAbstract: Long-horizon manipulation tasks are often only partially ordered. For example, when assembling an electronic device, the battery and circuit board may be installed in either order, but both must be in place before the enclosure is closed. Recovering such dependencies enables robots to flexibly reorder subtasks while preserving task validity. Existing approaches typically infer task structure from human demonstrations using both temporal and symbolic supervision. However, symbolic predicates require explicit grounding, which is difficult to obtain in realistic settings. In this work, we present an approach for extracting task dependency structures from demonstrations using only simple kinematic graphs and distributions over relative object poses. From these representations, our method estimates pairwise task-step-dependency probabilities and uses them to initialize the edge weights of a precedence graph. We then introduce a filtering pipeline that converts this graph of probability estimates into the final task dependency graph. We evaluate our approach on an existing benchmark and on a new dataset comprising longer tasks with more complex dependencies. We find that our method recovers more accurate task structures from fewer demonstrations than the baselines. Finally, we demonstrate that the inferred graphs can be used to generate multiple valid robotic execution orders for the same task."
+  },
+  {
+    "title": "Chinese Humanoid Robot Beats Usain Bolt’s Record at Beijing Games - SOFX",
+    "original_title": "Chinese Humanoid Robot Beats Usain Bolt’s Record at Beijing Games - SOFX",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRmxYdDh3cUxjNnFIZXZOekxheTNyMUtVQWVGNkZDV05adVVDS2VZMVQ3dndQd0JqakFVZkw3RUgtUUF3UThVRVNIanQ1dm9uYWs1cTE3TjM0UTJNamExekFVRXFnQlZOT3pWLThKVDI4U0Z4NFFkdlNRZlNpYm1Lak5tQWJmRXVSdFlDeWFqQQ?oc=5",
+    "date": "2026-08-24 03:43",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Chinese Humanoid Robot Beats Usain Bolt’s Record at Beijing Games  SOFX"
+  },
+  {
+    "title": "Humanoid Robot News: Unitree's Shanghai Debut Soars (Aug 2026) - RoboZaps",
+    "original_title": "Humanoid Robot News: Unitree's Shanghai Debut Soars (Aug 2026) - RoboZaps",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE15TWpHUHN3SjNxd0JKYjlLcjR5d2I1VWg4alJ2ZGJLaVJsZW9wRFVPak1YQ0paaHRkaFhZbVVvQzV0LW16NDVqVF9XWWFFUjZfb0pPWVQ0czlfaXl3YnJhRm91Ym9OeG1qVnZEdzhSdHcxbnllNGg4bUlR?oc=5",
+    "date": "2026-08-24 03:27",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Humanoid Robot News: Unitree's Shanghai Debut Soars (Aug 2026)  RoboZaps"
+  },
+  {
     "title": "중국이 로봇 기술에서 선도적 위치를 차지하다",
     "original_title": "New release shows China in the lead of robot technology - East Anglia Bylines",
     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZEpDNGJKbnIzVlhmbzlZS0t5RUxVYVJiRTViRkMyeDRzNDdTOEdtSU54ck84ZTNJc0ozd3dRMGhEUUVwOTVTSlpqQm55bkZnRzJhanJQNDF3cENjSWgxeWxtSDZwUXpXdk5rYkhSaTRKRTR4N3BHMy1fN0oyaGNKdGhMalpTWF9EdUpUVmxLQXhhM0c4bXhSTzlZWnBFalhw?oc=5",
@@ -17908,95 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중국에서 개최된 전투 이벤트에서 한 휴머노이드 로봇의 강인한 성능이 공개됨. 이 로봇은 머리를 분실한 상황에서도 전투 행동을 멈추지 않고 지속하며 놀라운 모습을 보여주었음. 해당 영상은 로봇 공학 기술의 새로운 가능성을 입증하며 현장 관객들의 이목을 집중시킴."
-  },
-  {
-    "title": "머리를 잃어도 전투를 지속하는 휴머노이드 로봇, 중국 격투 이벤트에서 관중에게 충격 선사 (Video)",
-    "original_title": "Video: Humanoid Robot Keeps Fighting After Losing Its Head, Stuns Crowd At China Combat Event - NDTV",
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQ0oybEo4Y2lZeEtURHNyR2dHQUZkOWplNHdVaHNlRE03a1FMaDBXVy1sYl81MTJORkJ3UE5VUlRaRW1ZdzRiMzVUUWtVYURXci1jM1ZEVVcwWFV0Tk52TW95Ty1veUlXRnQ0TGV2ZXFOU0tCOFlaSXBLV2o4VEFXQVVwYWxQOWJKNmRiVU5NRzhWcV9JU0pjV0k2YmJOSGFpNkhUNVRWaWE3ZXpGYk9OaF9qdHpVSmdNd2o4WGtWY09ZNmlQbjRYbWFtZ2hxV0U?oc=5",
-    "date": "2026-07-19 03:53",
-    "source": "Google News (China Robotics - EN)",
-    "category": "hand",
-    "summary": "중국에서 개최된 전투 이벤트에서 휴머노이드 로봇이 출현하여 화제가 됨. 이 로봇은 신체 일부(머리)를 손실하는 심각한 결함 상황에서도 전투 능력을 지속적으로 유지하는 모습을 보여줌. 이는 로봇의 놀라운 회복력 및 강인한 성능을 입증하며 관중들에게 깊은 충격을 안겨준 것으로 분석됨."
-  },
-  {
-    "title": "글로벌 AI 컨퍼런스: 업계 리더들, 중국 휴머노이드 로봇 산업의 급속한 발전 발표함",
-    "original_title": "China's humanoid robotics sector is advancing rapidly, industry leaders tell Global AI Conference - Anadolu Ajansı",
-    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPdG1aUHU2RERsZXdWUjg2dFlWMm5NbGRSYzZBTDg4RWRmYm1BQzUzUnRicWJwTW1xbElUUTR2VGQ0bjRGYjFKcU00YUN0RGFZdmlWaUFwLVJGTmhaa1REZHdnbElSdzFuRUJ2eHgxV3pHSllaQ1RDYUlwZTJFbXc1VDZRYkVXenprZ0NaeTBZLUJ1d0tucVVPZDhzcWdEdTB5bGdpWGhaWmpyLUNkWDcyMkE1aDFFMmtfOU5YRlozNzNVVEVEeEpLMWh3dmFEZUx1XzB3dUtmMnU?oc=5",
-    "date": "2026-07-18 17:23",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "글로벌 AI 컨퍼런스에서 업계 리더들은 중국의 휴머노이드 로보틱스 섹터가 현재 급속도로 발전하고 있음을 강조함. 해당 부문은 중국의 핵심 산업 동력으로 자리매김하며, 기술 혁신과 실제 상업적 응용 측면에서 폭발적인 성장이 기대됨을 시사하는 내용임."
-  },
-  {
-    "title": "MCP vs A2A vs ACP: AI 에이전트 간의 실제 통신 방식 분석",
-    "original_title": "MCP vs A2A vs ACP: How AI Agents Actually Talk to Each Other",
-    "link": "https://blog.bytebytego.com/p/mcp-vs-a2a-vs-acp-how-ai-agents-actually",
-    "date": "2026-07-18 16:46",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "AI 에이전트는 개별적으로도 자체적인 능력을 보유하고 있음. 이러한 개별 능력이 외부 도구(tools)나 다른 에이전트들과 결합됨으로써 기능적 역량이 기하급수적으로 증폭되는 양상을 보여주고 있음."
-  },
-  {
-    "title": "중국, 세계 최초 휴머노이드 로봇 MMA 토너먼트 개최 관련 보도됨",
-    "original_title": "Watch: China hosts world's first humanoid robot MMA tournament - Geo News",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNUNmckhpU3g3V0hmWXUtZDhNLUpTVTJnZmdLM2U3TjBBeFpka1NDOVZSeURTNWgtOXJ5c2k4bkxxQ0ZKdlhtbWJxaWtBUXA4MVFmdWxsUDUtcW83YjViSnJWN3RldHVnTlU0TVJuc0R6ZExpYXFJYWJqVHZ4SnlrSjRmTTRsTU16RENlRUVGMkptdUJWSVAteQ?oc=5",
-    "date": "2026-07-18 15:05",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국에서 세계 최초의 휴머노이드 로봇 MMA 토너먼트가 개최됨. 이번 대회는 로봇 공학 기술의 최신 발전 수준을 입증하는 자리임. 참가 로봇들의 실제 격투 능력을 통해 기술력 과시 및 향후 로봇 활용 분야에 대한 주목이 집중됨."
-  },
-  {
-    "title": "AGIBOT, WAIC 2026에서 4대 로봇 공개: 글로벌 수출 추진과 중국의 스파이법 규제 충돌",
-    "original_title": "AGIBOT Debuts Four Robots at WAIC 2026: Global Export Push Meets China's Spy Law Obligation - Tech Times",
-    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZVE3LVFtWXhIemhZbzA2MVlRMHJzc2JQZlMxR3YtVG15NVgxamxGSkRCQnlWWHFmN1JJVFd4VER2T2FHMEgzU2cya0o4UHFwXzNCUmlXeWVfQl9ydTI5YzFiVUFFQmtnOHJGMVFfN0Z3VVVmWlhKUkZJc01yeDI0alpfclduRWxIeFE5a1FaQjhiT3hQWEJNZlNRY1VlMm1xdUtmNHAzb1NPcXJ5ZW5RaE43eEVWamFzcDNqcVdHUE55U25kUkNkTExxaGNPY3NxVlJPeHkyb0M?oc=5",
-    "date": "2026-07-18 14:05",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "AGIBOT가 WAIC 2026에서 4종의 로봇 라인업을 공개하며 글로벌 시장 확장을 적극적으로 추진함. 이는 로봇 산업의 해외 수출 확대 기조와 맞물리나, 중국의 스파이법과 관련된 규제 및 법적 의무가 시장 진출의 주요 난관으로 작용하고 있는 상황임."
-  },
-  {
-    "title": "Palm Garden AI, 인간 친화 로봇용 Coherence Guard 관계 결정 레이어 개발",
-    "original_title": "Palm Garden AI develops Coherence Guard relational decision layer for human-facing robots",
-    "link": "https://www.therobotreport.com/palm-garden-ai-develops-coherence-guard-relational-decision-layer-human-facing-robots/",
-    "date": "2026-07-18 12:30",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Palm Garden AI가 인간-로봇 상호작용 및 관계 구현을 목표로 하드웨어 독립적인 소프트웨어 레이어 개발에 착수함. 해당 레이어는 핵심 기술인 'Coherence Guard'라는 관계 결정 기능을 포함함. 이는 로봇이 인간과의 관계를 보다 정교하게 모델링하고 처리할 수 있게 함."
-  },
-  {
-    "title": "Faraday Future, Automate 2026에서 로보틱스 사업 확장 및 출하 성과 발표",
-    "original_title": "Faraday Future highlights robotics expansion and shipment milestone at Automate 2026",
-    "link": "https://roboticsandautomationnews.com/2026/07/18/faraday-future-highlights-robotics-expansion-and-shipment-milestone-at-automate-2026/103494/",
-    "date": "2026-07-18 12:09",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Faraday Future의 AI 자회사 FFAI는 Automate 2026에 참가하며 상업용 로보틱스 분야 확장에 속도를 냄. 해당 행사에서 ‘one brain, multiple forms’ 로보틱스 플랫폼을 공개하고 상반기 출하 목표 달성 계획을 발표함. 특히 6월 기준 로봇 출하 대수가 100대를 초과할 것으로 예상됨을 밝힘."
-  },
-  {
-    "title": "엔비디아-허깅페이스, 신규 오픈 로보틱스 AI 툴로 LeRobot 플랫폼 확대",
-    "original_title": "Nvidia and Hugging Face expand LeRobot with new open robotics AI tools",
-    "link": "https://roboticsandautomationnews.com/2026/07/18/nvidia-and-hugging-face-expand-lerobot-with-new-open-robotics-ai-tools/103491/",
-    "date": "2026-07-18 11:08",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Nvidia와 Hugging Face가 협력을 강화하며 오픈소스 로보틱스 플랫폼 LeRobot을 확장함. 이번 협력은 로봇 개발 접근성을 높이는 것을 목표로 하며, 다양한 AI 모델, 프레임워크, 개발 툴이 추가됨. 특히 휴머노이드 로봇을 위한 오픈 VLA 기반 모델인 Nvidia Isaac GR00T 1.7 등 최신 기술들이 공개된 것임."
-  },
-  {
-    "title": "후지쯔, Nvidia 기술 활용해 파나우치, 야스카와, 가와사키와 물리적 AI 발전 추진",
-    "original_title": "Fujitsu partners with Fanuc, Yaskawa and Kawasaki to advance physical AI using Nvidia technology",
-    "link": "https://roboticsandautomationnews.com/2026/07/18/fujitsu-partners-with-fanuc-yaskawa-and-kawasaki-to-advance-physical-ai-using-nvidia-technology/103488/",
-    "date": "2026-07-18 10:40",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "후지쯔가 일본의 로봇 제조사 Fanuc, Yaskawa Electric, Kawasaki Heavy Industries와 협력하여 제조, 물류, 헬스케어 분야 전반의 Physical AI 개발 및 배포를 모색함. 이 프로젝트는 Nvidia의 Physical AI 기술을 통합하며, 디지털 시스템과 로봇을 연결하는 협업 제어 플랫폼 개발을 목표로 함."
-  },
-  {
-    "title": "토요타와 엔비디아, 차량·공장·도시 통합 AI 개발을 위한 파트너십 확장 발표",
-    "original_title": "Toyota and Nvidia expand partnership to develop AI for vehicles, factories and cities",
-    "link": "https://roboticsandautomationnews.com/2026/07/18/toyota-and-nvidia-expand-partnership-to-develop-ai-for-vehicles-factories-and-cities/103485/",
-    "date": "2026-07-18 10:28",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "토요타와 엔비디아는 차세대 차량, 제조, 로보틱스, 도시 인프라를 아우르는 물리적 AI 기술 개발을 위해 파트너십을 확장함. 이번 협력은 작년에 발표된 계약을 기반으로 하며, 토요타는 엔비디아 DRIVE AGX 인베히클 컴퓨팅 플랫폼을 활용하여 첨단 운전자 보조 기능을 갖춘 차세대 차량 개발에 주력할 예정임."
   }
 ]
