@@ -207,6 +207,78 @@
     "summary": "arXiv:2608.24155v1 논문은 고정식 보철물 설치를 위한 최적의 치아 구조 제거, 즉 톱니 제거 준비 과정을 자동화하기 위해 새로운 로봇 시스템을 제안함. 이 시스템은 밀집된 치과 작업 공간에서 미세한 위치 오차로 인한 결과 품질 저하와 근처 구조물 손상을 방지하는 안전성을 확보하며, 기술자 설계 모델에 정확히 부합하면서 인접 치아를 보호하는 도구 경로 계획 알고리즘과 연부 조직 간섭 위험을 줄이는 효과적인 접근 전략을 포함하고 있음."
   },
   {
+    "title": "Macro-Operator Generation and Predicate Selection for TAMP Operator Learning",
+    "original_title": "Macro-Operator Generation and Predicate Selection for TAMP Operator Learning",
+    "link": "https://arxiv.org/abs/2608.23629",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.23629v1 Announce Type: new \nAbstract: Creating symbolic operators by hand is one of the main bottlenecks in deploying Task and Motion Planning systems (TAMP). Recent works show that these operators can instead be learned directly from demonstration data. Existing methods, however, typically learn each action in isolation and cannot capture the recurring multi-step structure of manipulation tasks, so the search becomes intractable on long sequential tasks. A further inefficiency arises in the symbolic state: every provided predicate is evaluated at every search node, even when it never appears in any learned operator. We present a system that addresses both problems together. Its central component is the automatic generation of macro-operators, composite actions that compress a recurring sequence of individual actions into a single planning step. Our system discovers causally linked action pairs directly from the training data, where one action produces exactly the condition that the next one requires, and turns each pair into a new operator. Alongside this, our system prunes every predicate that no learned operator references, which shrinks the symbolic state evaluated at each search node. Together, these changes shorten the effective planning horizon, and the benefit they bring grows with the length of the task. Across four TAMP domains, our method reaches up to a 4.6x planning speedup compared to the baseline method, namely Learning Operators for TAMP. More importantly, it solves a long sequential task that the baseline cannot solve. Macro-operator discovery thus not only accelerates planning but, in certain domains, determines solvability in practice."
+  },
+  {
+    "title": "Learning to Act While Waiting: RL Finetuning of Generalist Robot Policies Under Inference Latency",
+    "original_title": "Learning to Act While Waiting: RL Finetuning of Generalist Robot Policies Under Inference Latency",
+    "link": "https://arxiv.org/abs/2608.23831",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.23831v1 Announce Type: new \nAbstract: While reinforcement learning (RL) allows generalist robot policies to continually improve during deployment, the large model size of modern generalist policies, such as VLAs, poses a fundamental obstacle to effective RL improvement. In particular, their severe inference latency---which can lead to pauses or jerky movements---can alter the effective environment dynamics and, if not correctly accounted for, break the Markov assumption that RL relies on, causing standard RL algorithms to fail completely. In this work, we introduce a latency-aware framework, Asynchronous RL with Intermediate Information (ARLI), that enables RL-based improvement of generalist policies under inference delays.\n  Our framework builds on asynchronous inference approaches, which interleave action generation with execution to hide latency, and addresses its incompatibility with RL by providing a low-latency RL policy design that maximizes reactivity within the inference window through two contributions: state augmentations that restore near-Markovian structure by incorporating committed actions and a mid-inference observation.\n  We evaluate our approach across simulated and real-world manipulation tasks, and find that it enables effective finetuning under inference delays where standard RL fails entirely, even matching or exceeding the performance of standard RL in idealized no-latency settings."
+  },
+  {
+    "title": "Hierarchical Skill Retrieval for Data-Efficient Adaptation of Vision-Language-Action Models",
+    "original_title": "Hierarchical Skill Retrieval for Data-Efficient Adaptation of Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2608.24042",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.24042v1 Announce Type: new \nAbstract: While Vision-Language-Action (VLA) models pretrained on large-scale robot datasets provide a strong foundation for robot manipulation, their performance can degrade when adapted to new tasks with limited task-specific demonstrations. Retrieval offers a practical way to reuse existing demonstrations for data-efficient adaptation, but existing methods often rely on visual similarity, state-action representations, or task-level language matching. These approaches may overlook the hierarchical structure of long-horizon manipulation tasks, where complete task matches are rare but reusable skills are often abundant. To address this challenge, we propose Hierarchical Skill Retrieval (HSR), a retrieval framework for data-efficient VLA adaptation. Specifically, HSR first decomposes a target task into candidate skill sequences. It evaluates each plan based on both semantic plausibility and skill reliability estimated from the prior dataset. The selected decomposition is then used for hybrid retrieval. This combines subtask-level language retrieval with behavior-feature reranking to identify demonstrations that are both semantically relevant and compatible with the target task. Finally, we adapt the policy through a two-stage pretraining and finetuning pipeline, which separates general skill acquisition from task-specific adaptation. Experiments on the LIBERO benchmark and several real-world robot manipulation tasks show that HSR improves the average success rate by 10.3% and 21.3% over the strongest baseline, respectively. These results demonstrate the effectiveness of structured skill-level retrieval for data-efficient VLA adaptation. Videos and code are available at https://hoar012.github.io/HSR-Project."
+  },
+  {
+    "title": "TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks",
+    "original_title": "TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks",
+    "link": "https://arxiv.org/abs/2608.24101",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.24101v1 Announce Type: new \nAbstract: Robot actions are inherently embodiment-specific and only weakly aligned with image-space visual changes, limiting their effectiveness as conditioning signals for robot world models. In contrast, visual tracks provide an embodiment-agnostic representation of how task-relevant points move through a scene, offering dense image-space guidance for accurate and spatially precise future video prediction. Building on this observation, we propose TrAct, a world-model-based robot decision-making framework that uses visual tracks as an intermediate interface between control and prediction. TrAct consists of three components: a Vision-Language-Action-and-Track model (VLAT) that jointly predicts candidate actions and corresponding visual tracks from the current observation and language instruction; a track-conditioned world model (TWM) that predicts future visual outcomes conditioned on the proposed tracks; and a vision-language reward model (VLAC) that scores the predicted outcomes. At inference time, VLAT generates candidate action-track pairs, TWM rolls out their visual consequences, and VLAC selects the track whose predicted outcome best satisfies the instruction; the action paired with the selected track is then executed by the robot. Experiments on the proposed LIBERO-INTEGRAL benchmark and real-world Franka manipulation show that TrAct improves success rates from 27% to 55% in simulation and from 49% to 76% on real-world tasks compared with the strong VLA baseline $\\pi_{0.5}$. Furthermore, TWM consistently improves video prediction quality over the action-conditioned world model (AWM). These results demonstrate that visual tracks provide an effective shared interface between robot control and visual prediction, enabling more accurate world modeling and stronger robot generalization."
+  },
+  {
+    "title": "One-Shot Learning from Demonstration of Contact-Rich Robotic Manipulation by Identifying Physical Interactions",
+    "original_title": "One-Shot Learning from Demonstration of Contact-Rich Robotic Manipulation by Identifying Physical Interactions",
+    "link": "https://arxiv.org/abs/2608.24741",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.24741v1 Announce Type: new \nAbstract: Learning from Demonstration (LfD) allows robots to learn manipulation tasks directly from humans, thereby supporting the versatile application of robots. Most LfD methods do not explicitly model the physical interactions between a robot and its environment, such as the making and breaking of contact, while these are crucial during manipulation tasks. Because the same basic physical interactions recur often, they can be a basis for robust, generalizable, and adaptive task reproduction. We propose an LfD method that explicitly uses what physical interactions take place where and when. Using that information, a hybrid position-force controller tracks demonstrated trajectories until contact-based transition conditions from the demonstrations are met. We evaluate our method in real robot experiments consisting of opening doors and locks, bolt picking and screwing, dislodging, and surface contouring. We show that explicitly modeling physical interactions benefits LfD in four ways. First, by allowing reproduction of complex, sequential, and contact-rich manipulation tasks using only a single demonstration and no prior knowledge of the task. Second, by facilitating robustness to unknown geometric variations in the environment. Third, by facilitating generalization when geometric variations are known. Fourth, by facilitating online adaptation using geometric information explored during task reproduction. We discuss how robustness, generalization, and adaptivity can be explicitly implemented, which is generally lacking in the LfD literature. Thereby, our work aims to close a gap in interpretable few-shot LfD of robotic manipulation."
+  },
+  {
+    "title": "Latent Action as Intention Enables Efficient Future Imagination for World Action Models",
+    "original_title": "Latent Action as Intention Enables Efficient Future Imagination for World Action Models",
+    "link": "https://arxiv.org/abs/2608.24882",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.24882v1 Announce Type: new \nAbstract: World action models (WAMs) improve robot control by modeling how observations evolve, but generating future observations at test time incurs substantial latency. Fast-WAM removes this process for efficiency; however, our matched implementations show lower generalization for Fast-WAM than for future-aware alternatives, especially with scarce robot demonstrations and in out-of-distribution scenarios. To bridge this gap, we introduce **LAWA**, a WAM architecture that uses compact latent actions as an operational representation of future intentions, enabling efficient test-time future imagination without generating future observations. Specifically, a discrete tokenizer enhanced by action-free pre-training produces manipulation-centric codebook targets. LAWA jointly denoises a continuous latent state anchored to these targets with executable action chunks while omitting the future-video branch at inference. On RoboCasa, LAWA achieves state-of-the-art average success rates of 65.6% and 80.8% in the few-shot and full data settings, improving over the matched Fast-WAM baseline by 9.6 and 4.5 points, respectively. It also preserves the performance level of the matched Joint-WAM variant while requiring 42.9% lower inference latency. LAWA also demonstrates competitive zero-shot robustness on LIBERO-Plus and superior performance on real-world tasks. These results show that future imagination need not be discarded: retaining it with compact latent actions yields an effective trade-off among performance, generalization, and latency. Code and models will be released."
+  },
+  {
+    "title": "A study on the effects of mixed explicit and implicit communications in human-artificial-agent interactions",
+    "original_title": "A study on the effects of mixed explicit and implicit communications in human-artificial-agent interactions",
+    "link": "https://arxiv.org/abs/2409.18745",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2409.18745v5 Announce Type: replace \nAbstract: Communication between humans and artificial agents is essential for their interaction. This is often inspired by human communication, which uses gestures, facial expressions, gaze direction, and other explicit and implicit means. This work presents interaction experiments where humans and artificial agents interact through explicit and implicit communication to evaluate the effect of mixed explicit-implicit communication against purely explicit communication and the impact of the task difficulty in this evaluation. Results obtained using Bayesian parameter estimation show that the task execution time did not significantly change when mixed explicit and implicit communications were used in neither of our experiments, which varied in the type of artificial agent (virtual agent and humanoid robot) used and task difficulty. The number of errors was affected by the communication only when the human was executing a more difficult task, and an impact on the perceived efficiency of the interaction was only observed in the interaction with the robot, for both easy and difficult tasks. In contrast, acceptance, sociability, and transparency of the artificial agent increased when using mixed communication modalities in both our experiments and task difficulty levels. This suggests that task-related measures, such as time, number of errors, and perceived efficiency of the interaction, as well as the impact of the communication on them, are more sensitive to the type of task and the difficulty level, whereas the combination of explicit and implicit communications more consistently improves human perceptions about artificial agents."
+  },
+  {
+    "title": "VGGT-DP: Generalizable Robot Control via Vision Foundation Models",
+    "original_title": "VGGT-DP: Generalizable Robot Control via Vision Foundation Models",
+    "link": "https://arxiv.org/abs/2509.18778",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2509.18778v2 Announce Type: replace \nAbstract: Visual imitation learning frameworks allow robots to learn manipulation skills from expert demonstrations. While existing approaches mainly focus on policy design, they often neglect the structure and capacity of visual encoders, limiting spatial understanding and generalization. Inspired by biological vision systems, which rely on both visual and proprioceptive cues for robust control, we propose VGGT-DP, a visuomotor policy framework that integrates geometric priors from a pretrained 3D perception model with proprioceptive feedback. We adopt the Visual Geometry Grounded Transformer (VGGT) as the visual encoder and introduce a proprioception-guided visual learning strategy to align perception with internal robot states, improving spatial grounding and closed-loop control. To reduce inference latency, we design a frame-wise token reuse (FTR) mechanism that reuses cached VGGT aggregator tokens from overlapping observation frames and computes features only for the latest frame, substantially reducing redundant visual encoding. We further apply random token pruning to enhance policy robustness and reduce overfitting. Experiments on challenging MetaWorld tasks show that VGGT-DP significantly outperforms strong baselines such as DP and DP3, particularly in precision-critical and long-horizon scenarios."
+  },
+  {
     "title": "유나이트 주식 45% 급락…IPO 이후 최고점 대비",
     "original_title": "Unitree shares slide 45% from post-IPO peak after 460% debut surge, raising robot bubble alarm - 디지털투데이",
     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQX0piZTFJdW85d0RtUnpZdFozU2pnbkVmTEZGcWFXeVk3aGNGVzFjZFZubnhMd2l6dWhkNDVxcFcwZzlYR0k3bEdXTDI1ZEFLZVFCemcwZXVoaTJCQTVvSTkxeFEyZnBkTHlXWUZiTGdZN080RTZtd1JjcjFwNUJOblhmcTVGRG5CeFBmMTBreW1TZUw3d1drekFQb1UtWl9aMHFDdzhPVkwyak1Oal9CM1BNbnRoRWRqMlE?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "Robotics & Automation News",
     "category": "humanoid",
     "summary": "영국 기반의 산업용 휴머노이드 로봇 개발사 Humanoid가 13.5억 달러의 기업 가치 평가를 받고 1억 5,200만 달러 규모의 Series A 투자를 유치함. 이 투자 유치로 현재까지의 누적 투자액은 2억 7,000만 달러를 기록함. 이번 라운드는 벤처 캐피털 펌인 Prime Movers Lab이 주도함."
-  },
-  {
-    "title": "중국 유니트리, 로봇의 'GPT급 혁명적 순간'은 아직 시간 필요성 언급",
-    "original_title": "China's Unitree says 'GPT moment' for robots remains years away - Nikkei Asia",
-    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZlBRVnRXV1AzTDJvOWJtcWhINmlxQnp6WmhIZVVzaExzUkJ3ZXpfckFCaXJ3VVlrOWYwc1cwQUpxN1NLUUFRUDBZZk8xOFEtNEdZTUl1TzNjWmtiMVhkMkFKTzZETFBxWlpJa0pOYk1XNk15VFBEcC1pTC13cXYtUlZkanFjamRUV1A5YUJzTnRJbzJqTGRoZy1nM25UeGYzQzh3U052WTZsMUVLNVBWb3hiUWNQVERiUDJQZjFmSlFHN2xHakJiYXZvVlRNQnRybDJ2MTF3RjVjSzdyM1ZvU0lGVWY4eVdlU2ItS3hB?oc=5",
-    "date": "2026-07-22 04:48",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree 측에 따르면, 로봇 분야에서 시장이 기대하는 'GPT급 혁명적 변곡점'은 기술적 성숙도와 범용 AI의 완전한 결합이 필요하여 아직 수년 거리가 있음. 단순한 기능 추가 수준을 넘어선 진정한 자율성과 지능화 단계는 아직 초기 단계로 평가됨. 따라서 기대되는 급격한 혁명적 변화는 근시일 내에 나타나기 어려울 전망임."
-  },
-  {
-    "title": "FARO: 실현 가능성 인지 로봇 동작 최적화",
-    "original_title": "FARO: Feasibility-Aware Robot Motion Optimization",
-    "link": "https://arxiv.org/abs/2607.18362",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "인간형 로코-매니퓰레이션의 빠른 동작 계획은 고차원적이고 하이브리드적인 특성으로 인해 난제임. 본 논문에서는 후보 접촉 시퀀스를 기반으로 신속한 실현 가능성 검사 및 동적 일관성 궤적 생성을 위한 중첩 kino-dynamic 프레임워크를 제안함. 이 프레임워크를 feasibility-guided tree search와 LLM 기반 접촉 계획 샘플링 전략에 결합하여 검색 효율성을 대폭 개선했으며, 생성된 궤적은 RL 기반 컨트롤러로 추적되어 실세계 로코-매니퓰레이션 시나리오 적용에 충분한 품질을 갖는 것으로 입증됨."
-  },
-  {
-    "title": "사족 보행 로커모션에 적용하는 토크 구동 강화 학습 연구",
-    "original_title": "Towards Torque-Driven Reinforcement Learning for Quadruped Locomotion",
-    "link": "https://arxiv.org/abs/2607.18365",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "기존 RL 로커모션 프레임워크의 위치 기반 및 상태 추정 한계를 극복하기 위해, 본 연구는 고토크 헤비급 사족보행 로봇을 위한 RL 토크 제어 프레임워크를 제시함. 이 프레임워크는 현재 속도 지식 없이 험지 이동 및 계단 등반이 가능하며, Nvidia Isaac Sim을 활용한 Unitree B1 시뮬레이션 결과 3.5 m/s의 고속 이동 성능 및 1.5 rad/s의 성능을 입증함."
-  },
-  {
-    "title": "오픈 앤트(Open Ant): 강화 학습 연구를 위한 로봇 플랫폼 제안",
-    "original_title": "The Open Ant: A Robot Platform for Reinforcement Learning Research",
-    "link": "https://arxiv.org/abs/2607.18488",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "강화 학습(RL) 연구의 주요 난제인 시뮬레이션과 실제 환경 간의 격차 해소를 위해 물리적 플랫폼인 Open Ant가 제안됨. 이 플랫폼은 Gymnasium Ant 환경을 구현한 것으로, SARSA($\\lambda$) 및 Soft Actor-Critic (SAC) 등 두 알고리즘 모두에서 약 한 시간 내에 보행 정책을 학습하는 것을 시연함. 또한, 시뮬레이션 학습 정책의 실제 전이 가능성을 입증하고, 전체 하드웨어와 소프트웨어를 오픈 소스로 공개하여 RL 연구자들이 로봇 실험을 효율적으로 통합할 수 있는 환경을 제공함."
-  },
-  {
-    "title": "ITNTN 환경 다중 UAV 항법을 위한 지능형 계층적 LLM 접근법",
-    "original_title": "Intelligent Multi-UAV Navigation in ITNTNs: A Hierarchical LLM Approach",
-    "link": "https://arxiv.org/abs/2607.18604",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "고속 3D 항공 고속도로에서 UAV의 복잡한 항법 및 네트워크 핸드오버를 위해 기존 DRL과 LLM의 한계를 극복한 방식 제시함. 본 연구는 HAPS 기반 대규모 LLM을 이용해 전역적인 부하 분산을 관리하고, 개별 UAV의 경량 Edge-LLM이 지역적 전술 목표를 생성하여 빠른 DRL 컨트롤러를 안내하는 계층적 제어 프레임워크를 제안함. 시뮬레이션 결과, 이 에이전트형 아키텍처가 충돌률을 현저히 낮추고 시스템 처리량(Throughput)을 개선함을 입증함."
-  },
-  {
-    "title": "MVP-Tac: 로봇 보조 최소 침습 수술을 위한 소형 이중 모드 비전 및 광탄성 촉각 센서",
-    "original_title": "MVP-Tac: A Miniaturized Dual-Modal Vision and Photoelastic Tactile Sensor for Robot-Assisted Minimally Invasive Surgery",
-    "link": "https://arxiv.org/abs/2607.18660",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 보조 최소 침습 수술(RMIS)의 필수 요소인 시각적 피드백과 촉각 피드백의 동시 확보를 위해 MVP-Tac 센서가 개발됨. 이 센서는 광탄성 이미징을 활용하여 반사형 폴라스코프를 통해 시각 모드와 촉각 모드 전환을 가능하게 함. 실험적 검증 결과, 조직 모델에서 종양 분류 시 높은 정확도(97% 및 92%)를 입증하였으며, 제한된 공간에서의 시뮬레이션 테스트를 통해 RMIS에 필요한 실질적 촉각 기능 복원에 기여함."
-  },
-  {
-    "title": "자기조직지도 기반 휴머노이드 로봇 운동 원시 탐지 및 위상 인식 연구",
-    "original_title": "Motion Primitive Discovery in a Humanoid Robot via Self-Organising Maps for Phase Recognition",
-    "link": "https://arxiv.org/abs/2607.18737",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "인간-로봇 상호작용(HRI) 환경에서 액션 인식을 위한 2단계 아키텍처를 NICO 휴머노이드 로봇에 적용함. 이 아키텍처는 1단계에서 A-SOM과 H-SOM 두 개의 Self-Organising Maps를 통해 운동학적 표현을 학습하고, 2단계에서 Echo State Network(ESN)을 활용하여 SOM 활성화 궤적의 시간적 분석을 통해 온라인 운동 위상 인식을 수행함. 연구 결과, SOM 기반 궤적이 움직임의 주요 위상 구별 구조를 효과적으로 보존하는 것으로 나타나, 자기조직된 운동 표현을 통한 온라인 위상 인식의 실현 가능성을 입증함."
-  },
-  {
-    "title": "Koopman DCM: 보행 균형을 위한 데이터 기반 불안정 고유함수 적용",
-    "original_title": "Koopman DCM: Unstable Eigenfunctions as Data-driven Representations for Legged Balancing",
-    "link": "https://arxiv.org/abs/2607.18760",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "보행 균형 제어의 핵심 상태인 Divergent Components of Motion (DCMs)을 Koopman 고유함수로 일반화하는 방법론 제시됨. 기존의 제한적 모델을 넘어, 큰 고윳값을 지닌 불안정한 고유쌍을 탐색하여 실물 로봇 데이터 기반의 Koopman DCMs를 도출함. 이 결과는 실물 이족 보행 로봇의 레퍼런스 트래킹 성능을 개선하고, Model Predictive Control (MPC)와 결합하여 상태 기반 생존 가능성 제약 조건 제공에 활용 가능함."
   }
 ]
