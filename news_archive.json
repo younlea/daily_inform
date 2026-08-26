@@ -576,6 +576,78 @@
     "summary": "CAVERS는 스페인 마라가의 빌야드라 카베다에서 획득한 24개 시퀀스를 포함하며, 이더랄즈 RGB-D-I 카메라, 오포트리스 열화상 카메라 및 벨로데일네 LiDAR 센서가 결합된 다중모달 데이터셋으로, 각 센서는 손에 들거나 휠식 로버 위에 장착되어 완전한 어둠과 인공 조명에서 작동한다. 이 데이터셋은 최신 SLAM 및 오도메트리 알고리즘을 평가하고 3D 재구성 파이프라인의 사용성을 입증한다."
   },
   {
+    "title": "Mamba-based Selective State Space Modeling Improves the Accuracy-Complexity Tradeoff of SmolVLA Vision-Language-Action Experts",
+    "original_title": "Mamba-based Selective State Space Modeling Improves the Accuracy-Complexity Tradeoff of SmolVLA Vision-Language-Action Experts",
+    "link": "https://arxiv.org/abs/2608.21407",
+    "date": "2026-08-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.21407v1 Announce Type: new \nAbstract: Vision-language-action (VLA) models face a crucial tradeoff between their task success rate and the policy-call frequency. Executing a single action per inference ($N=1$) enables accurate robot control but comes at the cost of huge compute time overheads, making real-time implementation infeasible. On the other hand, executing longer action horizons before replanning ($N\\gg1$) reduces compute complexity, but inevitably degrades the system's success rate. In order to improve the VLA accuracy-complexity tradeoff, this paper investigates Mamba's selective state-space modeling as an alternative to causal self-attention within the action expert of the popular SmolVLA model, widely used as a reference model for its highly accurate yet low complexity nature. We evaluate both the Mamba- and Transformer-based experts on the widely-adopted LIBERO benchmark suites across three execution horizons $N\\!\\in\\!\\{1,25,50\\}$, respectively corresponding to high, moderate and low compute complexities. Our results remarkably show that the advantage of the Mamba expert increases with the execution horizon, indicating significant success retention under long execution horizons $N = 50$ and $N = 25$. When $N = 50$ actions are executed before replanning (i.e., corresponding to feasible real-time deployment), the Mamba expert outperforms the Transformer baseline by $7.8\\%$. In addition, when $N = 25$ actions are executed before replanning, our Mamba expert outperforms the Transformer baseline by $3.7\\%$. Finally, under per-action replanning ($N=1$), our Mamba variant matches the Transformer-based mean success rate while significantly reducing the overall model parameter complexity by $24\\%$ thanks to Mamba's compute-efficient nature."
+  },
+  {
+    "title": "Vision Guided Target Conditioned Control for Autonomous Excavation",
+    "original_title": "Vision Guided Target Conditioned Control for Autonomous Excavation",
+    "link": "https://arxiv.org/abs/2608.21778",
+    "date": "2026-08-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.21778v1 Announce Type: new \nAbstract: Autonomous excavation requires an intelligent control system that can convert spatial work intent into coordinated bucket motion under contact-rich soil interaction. This paper presents a target-conditioned intelligent control framework for autonomous excavation in a physics-based deformable-soil simulation workflow. An image-aligned target mask serves as a visual spatial command for the desired digging region, while a mask-conditioned Action Chunking Transformer maps multi-view RGB observations, proprioception, and the target mask to temporally extended joystick commands. To reduce target-ignoring behavior, demonstrations are organized with paired-condition supervision, where the same or closely matched scene is demonstrated with different target masks and corresponding action chunks. The framework is evaluated through both a diagnostic manipulation task and an excavation simulation benchmark with single-scoop and sequential pile-clearing protocols. In manipulation, target success is 4\\% for no-condition ACT, 63\\% for non-paired mask-conditioned ACT, and 96\\% for paired-condition mask-conditioned ACT. In sequential pile clearing, paired-condition mask-conditioned ACT removes 76.8\\% of the pile versus 27.4\\% and 15.7\\% for the two baselines, with 91.0\\% human-normalized efficiency. The results show that visual target conditioning, paired demonstration structure, and action-chunk control form a practical cyber-physical simulation pipeline for excavator automation."
+  },
+  {
+    "title": "Vision-Guided Morphing Quadcopter for Multi-Geometry Payload Transport through Narrow Passages",
+    "original_title": "Vision-Guided Morphing Quadcopter for Multi-Geometry Payload Transport through Narrow Passages",
+    "link": "https://arxiv.org/abs/2608.21879",
+    "date": "2026-08-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.21879v1 Announce Type: new \nAbstract: Aerial payload transport using multirotor unmanned aerial vehicles is challenging because payload geometry, contact interaction, grasp stability, flight control, and narrow-passage traversal are strongly coupled during pickup and transport. Object-specific grippers often cannot adapt their footprint or grasp geometry when the payload shape or passage width changes. This paper presents a vision-guided morphing quadcopter for multi-geometry payload transport through narrow passages. The proposed platform uses four hybrid arm-leg structures that function as both landing supports and grasping members. A centrally placed actuator drives a tendon-based morphing mechanism, enabling all four arms to synchronously retract or expand for object grasping, footprint reduction, and post-transport release. Onboard vision estimates the payload geometry and passage width, while endpoint force feedback is used to confirm grasp contact during payload engagement. A phase-wise mission planner, PID-based flight stabilization, and morphology-adaptive grasp controller are implemented in a MuJoCo simulation environment. The framework is evaluated using box, cylindrical, and spherical payloads, representing flat-faced, rolling-curved, and fully curved contact conditions. Across the three cases, the simulated system completes the pickup-transport-release sequence with a maximum RMS position error of 0.31 m, a final drop-zone error below 0.18 m, a compact grasp footprint of 0.09-0.21 m2, and a footprint reduction of 75.0-89.7 percent. The results demonstrate that a single-actuator morphing quadcopter can adapt its grasp footprint for the transport of payloads with different geometries while reducing its overall footprint for narrow-passage traversal."
+  },
+  {
+    "title": "CIDER: Continual Interactive Distillation for Embodied Reinforcement Learning",
+    "original_title": "CIDER: Continual Interactive Distillation for Embodied Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2608.21899",
+    "date": "2026-08-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.21899v1 Announce Type: new \nAbstract: Human-in-the-loop real-world reinforcement learning enables rapid acquisition of effective robotic manipulation policies for individual tasks, often within tens of minutes. Yet it remains unclear how to extend this paradigm to continual learning, where a single policy must acquire new skills without losing previously learned behaviors. Existing real-world continual learning methods do not explicitly constrain prior behaviors, leading to severe catastrophic forgetting. We introduce Continual Interactive Distillation for Embodied Reinforcement Learning (CIDER), a continual reinforcement learning framework that freezes the accumulated historical policy as a teacher before learning each new task and interleaves task learning with distillation-based retention. We further introduce gradient routing to separate the gradients used for acquiring new tasks from those used for preserving prior behaviors. We evaluate our method with a single shared actor on six real-world household and industrial manipulation tasks. Interactive Distillation maintains high measured success on previously learned tasks across our six-task real-robot sequence while acquiring each new task in 10 to 20 minutes, whereas every baseline forgets at least one previous task. Additional ablations reveal the key design choices that govern the tradeoff between stability and plasticity in real-world continual reinforcement learning."
+  },
+  {
+    "title": "Ludi${}_{\\scriptscriptstyle 0.1}$: An Agentic System for Socially Intelligent Robots",
+    "original_title": "Ludi${}_{\\scriptscriptstyle 0.1}$: An Agentic System for Socially Intelligent Robots",
+    "link": "https://arxiv.org/abs/2608.22035",
+    "date": "2026-08-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.22035v1 Announce Type: new \nAbstract: Robot foundation models have substantially advanced perception and control, but natural human-robot collaboration requires more than executing isolated commands. A robot must recognize ambiguity, maintain context across turns, communicate its intentions, and revise ongoing behavior as the user's intent changes. We present $\\scriptstyle\\mathsf{Ludi}_{\\scriptscriptstyle 0.1}$, an agentic system for socially intelligent robots that integrates interactive speech, multimodal reasoning, memory, navigation, and learned manipulation. Its decision-making core is a fine-tuned vision-language model trained on multi-turn interaction traces spanning ambiguous requests, clarifications, corrections, interruptions, mixed social and task dialogue, and multi-step tasks. A purpose-built harness manages the model-tool interaction loop, while specialized navigation and manipulation policies execute physical skills. Ludi${}_{\\scriptscriptstyle 0.1}$ demonstrates a practical path toward fluid human-robot collaboration today while producing the multimodal interaction traces needed to develop a more deeply integrated foundation model for robots and people."
+  },
+  {
+    "title": "Inferring Action from Future Latent State for Robotic Manipulation",
+    "original_title": "Inferring Action from Future Latent State for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2608.22067",
+    "date": "2026-08-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.22067v1 Announce Type: new \nAbstract: World-Action Models (WAMs) build robot control on video-generation backbones, which jointly predict dense future visual trajectories and robot actions. We argue that video generation is an unnecessary intermediate objective for world-action modeling. For robotic manipulation, the goal of a world model is not to reproduce how the world looks at every intermediate moment, but to predict the state that the world will reach after an action is executed. The intermediate frames only describe the visual transition between physical states, which consumes substantial model capacity and computation, but do not directly specify the physical outcome that the robot action is intended to produce. In this paper, we propose DELE-w0.5, which infers robot actions from predicted future states without relying on video generation. Concretely, DELE-w0.5 infers the action sequence from its corresponding compact future latent state. The future latent state captures the action-relevant physical outcome of robot interaction and serves as an explicit bridge between world modeling and action generation. The core design principle of DELE-w0.5 is to model how the physical world changes under robot actions, rather than how its visual appearance evolves frame by frame. This formulation removes the high-dimensional visual redundancy introduced by dense video representations, and it therefore enables cheaper training and low-latency inference. Across 480 real-robot trials on four long-horizon manipulation tasks, our DELE-w0.5 achieves the best performance among all compared policies, attaining 62.5 overall full-task success and 81.3 macro ordered-stage progress, outperforming the strongest baseline by 47.5 and 30.7 percentage points, respectively."
+  },
+  {
+    "title": "Contact-Rich Robotic Manipulation in Construction via Zero-Shot Learning: A Diffusion Policy-Guided Adaptive Control",
+    "original_title": "Contact-Rich Robotic Manipulation in Construction via Zero-Shot Learning: A Diffusion Policy-Guided Adaptive Control",
+    "link": "https://arxiv.org/abs/2608.22100",
+    "date": "2026-08-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.22100v1 Announce Type: new \nAbstract: Construction robotics and automation offer promising means of improving productivity, alleviating workforce shortages, and reducing workers' exposure to physically demanding tasks. However, reliable contact-rich robotic assembly remains challenging under tight tolerances, fabrication inaccuracies, and uncertain contact dynamics. To address this challenge, we present a framework coupling diffusion policies trained on simulation-generated pose and force/torque data with an L1-inspired adaptive controller that corrects policy-predicted actions online to compensate for unmodeled contact dynamics. We benchmark the framework against baselines in timber joinery, pipe fitting, and sequential full-scale truss assembly. It achieves 100% success on single-task assemblies and 90-100% success across sequential truss assembly subtasks, with lower, more stable contact forces than the baselines. By enabling zero-shot sim-to-real transfer for force-aware contact-rich assembly, the framework reduces costly, labor-intensive real-world data collection for policy training and advances scalable, robust automation of multistage assembly, motivating extension to broader contact-rich manipulation tasks in construction."
+  },
+  {
+    "title": "The Imitator Game: Benchmarking Robot Imitative Ability Beyond Action Prediction",
+    "original_title": "The Imitator Game: Benchmarking Robot Imitative Ability Beyond Action Prediction",
+    "link": "https://arxiv.org/abs/2608.22301",
+    "date": "2026-08-25 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.22301v1 Announce Type: new \nAbstract: Humans imitate at the level of intent: given a demonstration, we infer its goal and carry it out with whatever tools, objects, and layouts are at hand. Current robot policies instead learn observation-to-action mappings from visual inputs and language instructions, without explicitly inferring the demonstrated task. Learning from human video thus remains largely trajectory-level: models can replay motions in near-identical scenes, but still struggle to imitate what the demonstrator intends rather than merely what they do. We introduce The Imitator Game, a four-level benchmark (L0-L3) that progressively widens the gap between the human demonstration and the robot's own scene, isolating where trajectory replay ceases to suffice and task understanding becomes necessary. We pair it with IG-10K, the largest environment-aligned paired human-robot dataset to date and the only one instantiated across all four levels in both real and simulated settings (20,000+ paired episodes, 50+ tasks, 6 domains), and Imitator Arena, an open platform for blind A/B human evaluation. Across nine state-of-the-art models, performance is stable from L0 to L2 but collapses at L3, identifying functional substitution - achieving the same intent through a different object affordance - as the decisive barrier to intent-level imitation. Human-video-conditioned models outperform caption-conditioned ones, yet every model falls below 13% zero-shot success on unseen tasks; fine-tuning IG-10K-pretrained models with only $10$ paired human-robot demonstrations yields large gains that grow with pretraining scale. The project website and access to Imitator Arena are available at https://imitator-game.github.io."
+  },
+  {
     "title": "China robot maker Unitree's post-listing slump sparks bubble fears - AOL.com",
     "original_title": "China robot maker Unitree's post-listing slump sparks bubble fears - AOL.com",
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWkh2SkxVbXo5aHY1aUJIOFY2c014ZXJoUXFkMzBfcnFpa081bFR2MzVxeXY4TDlURThPbE5UUDlYOEtpeE9hTlBxcTJCNmI1eG5JVEFYRG5KWG9RaVd4VUY5Qmh4NS1uWjJVNm1URVZVU0QyTjFWTDdRQXBKd2RveA?oc=5",
@@ -17926,77 +17998,5 @@
     "source": "The Robot Report",
     "category": "humanoid",
     "summary": "Vicarious Surgical의 공식 폐쇄가 확인됨. 이 회사는 과거 총 약 3억 달러에 달하는 자금을 유치한 이력이 있음. 해당 자금 중 대부분은 2021년 SPAC merger를 통해 확보된 것으로 알려짐."
-  },
-  {
-    "title": "중국 AI 브랜드, 세계 최초 휴머노이드 로봇 격투 리그 출범",
-    "original_title": "Chinese AI brand launches world’s first humanoid robot fight league - Dao Insights",
-    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1LWmQ4LUpkck1yc3BjVUJtT0pKX0xGVkhhQjQxYTU3NV9fZ0dvell0UzZnbG9uZGotYkhUOUJhMkxuc2FLaDFYVTJmQUNwMjVYSmRwSll1Ykh0dmYyRzJlVTh5UXhfWjhVOEdqMnZ1UmVaOTA?oc=5",
-    "date": "2026-07-21 23:11",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국의 한 AI 브랜드가 세계 최초의 휴머노이드 로봇 격투 리그를 공식 런칭함. 이는 로봇 공학 기술을 엔터테인먼트 및 경쟁 콘텐츠로 접목한 시도로 평가됨. 이번 리그 출범은 휴머노이드 로봇의 실전 테스트와 새로운 상업적 활용 모델 제시를 목표로 함."
-  },
-  {
-    "title": "Generative Bionics, 전신 촉각 감지 기능 탑재 휴머노이드 로봇 공개",
-    "original_title": "Generative Bionics unveils humanoid robot with full-body tactile sensing",
-    "link": "https://www.therobotreport.com/generative-bionics-unveils-humanoid-robot-with-full-body-tactile-sensing/",
-    "date": "2026-07-21 19:44",
-    "source": "The Robot Report",
-    "category": "hand",
-    "summary": "Generative Bionics가 개발한 휴머노이드 로봇 Gene.01이 전신에 센서를 탑재하여 구현됨. 이 로봇은 전신 센서화를 통해 인간의 존재를 빠르고 정확하게 감지하며 대응하는 기능을 갖추게 된 것임."
-  },
-  {
-    "title": "Unitree의 신형 Omni 모델, 휴머노이드 로봇의 중단 상황 작업 능력 구현",
-    "original_title": "Unitree's new omni model lets humanoid robots work through interruptions - Interesting Engineering",
-    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQU2NjNVQwMnBuM2hsZ2RmYjFsMGlnZmN3OGtDUkRsMVFBck9mZTBFSDVteUlxWGN0RXZRdzNqT1VvWkx3LXkxdThFelRyOUZaWktRR2VoV2RGZ20yMTBFcG9TbmFHOWhyUGpzX0VDM1pySlN2ZE1qWk5LMzFpYmVLQkUwYlF0Q3dRZ2VMVUJmeDBDLW9hT2Z1UVFfTlZCSVVuTHVHREdqMUxsUkFwNTFZSHhGQ1hjaENpSWl1Q0NIc0dQWHh6QkNoMQ?oc=5",
-    "date": "2026-07-21 18:08",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree가 새로운 omni 모델을 개발하여 휴머노이드 로봇의 임무 수행 연속성을 확보함. 이 모델은 작업 환경 내에서 발생하는 예상치 못한 중단이나 방해 상황에도 불구하고 로봇이 작업을 효율적으로 중단 없이 이어나갈 수 있도록 설계된 것이 핵심임."
-  },
-  {
-    "title": "AI가 의사의 환자 케어 시간 증대에 기여하는 방식",
-    "original_title": "How AI is Helping Doctors Spend More Time With Patients",
-    "link": "https://roboticsandautomationnews.com/2026/07/21/how-ai-is-helping-doctors-spend-more-time-with-patients/103555/",
-    "date": "2026-07-21 17:14",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "의사-환자 간의 진료 과정은 환자의 증상 청취, 상태 설명 및 의사의 심층적인 질의응답에 상당한 시간을 소요하는 구조임. AI 기술은 이러한 시간 소모적인 진료 지원 업무를 보조함으로써 의사가 행정적 부담을 줄이고 환자와의 정서적 교감 및 핵심적인 진단 과정에 집중할 수 있도록 돕는 것이 핵심임."
-  },
-  {
-    "title": "감정가(Appraisal)가 제시 가격을 상회하게 만드는 6가지 요인",
-    "original_title": "Six Things That Push an Appraisal Above Your Offer",
-    "link": "https://roboticsandautomationnews.com/2026/07/21/six-things-that-push-an-appraisal-above-your-offer/103552/",
-    "date": "2026-07-21 17:01",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "주택 매매 과정은 단순한 가격 합의를 넘어 감정평가(Appraisal) 단계가 필수적임. 감정평가는 전문 인력이 주택의 시장 가치를 추정하는 과정이며, 이 값이 구매 계약서상의 가격보다 높게 나오는 사례가 발생함. 이는 해당 주택의 시장 가치가 현재 여러 요인들에 의해 충분히 뒷받침됨을 의미함."
-  },
-  {
-    "title": "'나를 믿는 법, 당신을 믿는 법': 연구자들이 인간과 지능형 기계 간의 관계 재설계 방안 모색",
-    "original_title": "Trusting me, trusting you: How researchers are redesigning relationships between humans and intelligent machines",
-    "link": "https://techxplore.com/news/2026-07-redesigning-relationships-humans-intelligent-machines.html",
-    "date": "2026-07-21 16:20",
-    "source": "Tech Xplore",
-    "category": "humanoid",
-    "summary": "맨체스터 연구진은 Ferranti Mark I부터 공감형 AI에 이르기까지 인간-기계 관계의 변화를 탐구함. 지능형 기계가 인간의 행동 및 사회적 단서를 이해하고 신뢰를 구축할 수 있는 기술적 방안에 초점을 맞추고 있음. 이는 직장, 병원, 가정 등 일상생활 전반에 걸쳐 인간과의 관계를 재설계하는 데 활용될 것으로 전망됨."
-  },
-  {
-    "title": "AGIBOT, WAIC 2026서 로봇 15,000대 출하 및 A3 Ultra 휴머노이드 공개",
-    "original_title": "AGIBOT ships 15,000 robots and debuts A3 Ultra humanoid at WAIC 2026 - Gagadget.com",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPLWJLT1Y0WGRQbldTMV80M24zckpNajdPS3NyZkp4N3FfbkcxNkRuaHhFOW14c1gxdGhZN01PYXF1eU8tOXRjSVhtSWFSS01MUVd3YTNsMENwVDgyUjBmY0dSdUdRSllYTGQyVEZnM1JhYkxEZ3QteXJmd2w0SDAxTHgzclNpX2pOYXFDZGNfY1diYi1tYzhnaEQ2cHRYVl9yYUJMR3dJbWkwZzNsRWpJSHltVGxtSDdhRnlFblMwazhjTGfSAcgBQVVfeXFMUFhVMHFPNlJMT3d2RmJ4UDR0WE1ZSmUtcjRad09TY3JTT0VnVTJKS3gtcEppQWpEMmNvUUh1SjVmcW1DOEgwcUJfM3c3RFVraWc4ZUpvS20tTlpsQWJSWlhLSjl6RkdQdGZwOGxlcjYwaWJqZG1HNTFLTEFrZ1VENE1YZTNDNk1HbFJYQWVnaTRfOUlJbVRUc2I1cVpQWXhudUhKNGZPaTN3cWdTTGNsb3BrazY5R0MxdXBkai1KV3RrV3hNTXBjR1o?oc=5",
-    "date": "2026-07-21 16:10",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "AGIBOT이 WAIC 2026에서 15,000대의 로봇 출하를 발표하며 대규모 시장 공략을 예고함. 또한, 최신 휴머노이드 로봇 모델인 A3 Ultra를 공식적으로 데뷔시키는 등, 기업의 기술력과 성장세를 과시함. 해당 발표는 로봇 산업의 국내외 시장 확대 움직임을 보여주는 주요 이벤트로 평가됨."
-  },
-  {
-    "title": "우브테크 로보틱스, 소비자 휴머노이드 13,000개 이상 수주에도 '강한 매도' 평가 지속",
-    "original_title": "Ubtech Robotics Lands 13,000+ Orders for Consumer Humanoid, But 'Strong Sell' Rating Reflects Persis - Ad-hoc-news.de",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZ0RkZGZZNFM5TWM0ckw3Mno0VnBiZzhEUThhMmZXT2xIcm0yUzUwRTZkejFCeW1sS0swVVpGRlhRazVVbnZZREQ2aHZwaUNLdC1qVDVpeWRDYVlrcnV2Wk5VOW9VMkVSUV93ZloyQ2FLZWRUVVYyZHJkTTJlOHFISjVyajBwVV9mU05tTFNhb09KMk01V281NEdMclFvX0wtWjBGaUNJbUM3V1FDMC04Wk5HNVJLZUt0UDNtMnFlWTVRNXFId3c?oc=5",
-    "date": "2026-07-21 15:14",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Ubtech Robotics가 소비자용 휴머노이드 제품으로 13,000개 이상의 대규모 수주를 기록함. 그러나 분석기관 Persis는 이러한 높은 수주 실적에도 불구하고 여전히 'Strong Sell' 투자의견을 유지하는 것으로 파악됨."
   }
 ]
