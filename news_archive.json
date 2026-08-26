@@ -72,6 +72,24 @@
     "summary": "arXiv:2608.24714v1 Announce Type: new \nAbstract: World-Action Models (WAMs) jointly learn future visual prediction and action generation, using video dynamics as a representation-learning signal for robotic manipulation. However, their video latents are primarily optimized for visual prediction and are not explicitly encouraged to preserve cross-view geometric structure or spatially localized, object-relevant semantics. We propose \\textbf{GaussianWAM}, a training-time representation-enhancement framework that organizes geometric and semantic supervision through a 3D Gaussian field. Given synchronized multi-view observations, frozen geometry and vision foundation models provide depth, camera parameters, and dense semantic features. GaussianWAM binds these heterogeneous signals to shared Gaussian primitives and renders spatially aligned semantic, depth, and coverage targets, which are distilled into the current-observation representations of the WAM. All teacher models, Gaussian components, and auxiliary prediction heads are removed after training, leaving the original WAM inference path without additional modules or forward computation. On LIBERO-Plus, GaussianWAM improves FastWAM from 52.05\\% to 71.29\\% and Cosmos Policy from 71.52\\% to 77.30\\%. Direct CLIP and VGGT distillation already establishes a strong FastWAM baseline of 69.37\\%, while Gaussian-field unification further improves it to 71.29\\%, supporting the benefit of spatially organizing heterogeneous teacher signals. GaussianWAM also improves performance on standard LIBERO and shows positive transfer trends on RoboTwin and real-world manipulation. These results suggest that training-time Gaussian distillation provides a practical way to inject geometry- and semantics-related supervision into WAM representations without changing their deployment architecture."
   },
   {
+    "title": "변이 지도 스페이셜 어텐션 융합으로 안정적인 종단간 운전 실현",
+    "original_title": "Variance-Guided Spatial Attention Fusion for Robust End-to-End Driving under Asymmetric Sensor Degradation",
+    "link": "https://arxiv.org/abs/2608.24366",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "연구팀은 비대칭 센서 손상에서도 안정성을 보장하는 Variance-Guided Spatial Attention Fusion (VG-SAF) 기법을 제안하였으며, 이 기법은 물리적 오류의 심각도에 따른 신뢰성 지도를 통해 불신뢰적인 피처가 플래너에 영향을 미치지 않도록 하여 종단간 운전 성능 향상에 성공하였다."
+  },
+  {
+    "title": "자율주행에서 3D 인식 오류 평가를 위한 노력 기반 임계값 메트릭스",
+    "original_title": "Effort-Based Criticality Metrics for Evaluating 3D Perception Errors in Autonomous Driving",
+    "link": "https://arxiv.org/abs/2603.28029",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "이 논문은 충돌 위험성을 측정하는 시간별 충돌 임박 지수(TTC) 외에, 허위 양성(FP), 허위 음성(FN) 인식 오류의 운영 결과를 구분할 수 있는 두 가지 메트릭스인 가상 탐지 관련 속도 손실(False Speed Reduction, FSR)과 누락된 물체에 대한 제동 요구량(Maximum Deceleration Rate, MDR)을 제안함. 여기에는 횡단 방향 피하속도(Lateral Evasion Acceleration, LEA)와 최소 조향 노력도 계산이 포함되어 있으며, nuScenes 및 Argoverse 2 데이터셋에서의 평가를 통해 이 메트릭스들이 각각 65%부터 93%까지의 오류들을 임계값 아래에 놓여 있음을 확인하였음."
+  },
+  {
     "title": "유나이트 주식 45% 급락…IPO 이후 최고점 대비",
     "original_title": "Unitree shares slide 45% from post-IPO peak after 460% debut surge, raising robot bubble alarm - 디지털투데이",
     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQX0piZTFJdW85d0RtUnpZdFozU2pnbkVmTEZGcWFXeVk3aGNGVzFjZFZubnhMd2l6dWhkNDVxcFcwZzlYR0k3bEdXTDI1ZEFLZVFCemcwZXVoaTJCQTVvSTkxeFEyZnBkTHlXWUZiTGdZN080RTZtd1JjcjFwNUJOblhmcTVGRG5CeFBmMTBreW1TZUw3d1drekFQb1UtWl9aMHFDdzhPVkwyak1Oal9CM1BNbnRoRWRqMlE?oc=5",
@@ -17980,23 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "사족 보행 로봇의 상태 추정은 외장 센서의 신뢰도 저하 시 고유수용 측정에 의존하나, 기존 방식은 이상적인 점 접촉 가정의 한계로 정확도가 저하되는 문제가 존재함. 이에 연구진은 IMM(Interacting Multiple Model) 기반의 고유수용 오도메트리 프레임워크를 제안함. 본 방법은 통합 확률론적 틀 내에서 다중 접촉 가설을 포함하여 온라인 모드 스위칭 및 확률적 데이터 융합을 가능하게 하며, 시뮬레이션 및 실제 실험을 통해 기존 대비 우수한 자세 추정 정확도를 확보함."
-  },
-  {
-    "title": "VOFA: 휴머노이드를 위한 힘 적응 제어를 활용한 시각적 객체 목표 밀기",
-    "original_title": "VOFA: Visual Object Goal Pushing with Force-Adaptive Control for Humanoids",
-    "link": "https://arxiv.org/abs/2605.01518",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "VOFA는 휴머노이드 로봇이 알 수 없는 물리적 속성을 지닌 객체를 목표 지점까지 밀어 이동시키는 시각 기반 로코-매니퓰레이션 시스템임. 고수준 시각-운동 정책과 저수준 힘 적응 전신 제어기로 구성된 이 시스템은 실시간 폐쇄 루프 환경에서 다양한 목표 조건의 변화에 강인하게 대응함. 연구 결과에 따르면 시뮬레이션 및 실제 환경 모두에서 90% 이상의 높은 성공률을 기록했으며, 로봇 본체 무게의 절반 이상에 달하는 17kg의 물체까지 밀기 성공을 입증함."
-  },
-  {
-    "title": "Assistax: 보조 로봇공학을 위한 다중 에이전트 하드웨어 가속 강화 학습 벤치마크",
-    "original_title": "Assistax: A Multi-Agent Hardware-Accelerated Reinforcement Learning Benchmark for Assistive Robotics",
-    "link": "https://arxiv.org/abs/2507.21638",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "일상생활 지원을 목표로 하는 로봇 분야의 한계점 극복을 위해, Assistax가 JAX 및 MuJoCo-MJX 기반의 고성능 GPU 가속 다중 에이전트 RL 벤치마크를 제시함. 이 툴은 능동적인 휴머노이드 에이전트를 시뮬레이션된 파트너로 포함하며, 인간-로봇 상호작용을 Ad-Hoc Teamwork(AHT) 문제로 정의하고 MARL을 활용함. Assistax는 기존 RL 알고리즘이 새로운 조건의 파트너와 협력할 때 발생하는 조정 격차(coordination gap)를 식별하며, 해당 분야 연구에 실질적인 지표를 제공함."
   }
 ]
