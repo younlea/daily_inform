@@ -1,5 +1,77 @@
 [
   {
+    "title": "손感触なし安全把持技術",
+    "original_title": "Sensorless damage-safe grasping",
+    "link": "https://arxiv.org/abs/2608.23983",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.23983v1에서 발표된 연구는 robotic fruit harvesting 시스템이 과일을 손상 없이 안전하게 집기 가능함을 보여주며, 이를 위해 제조물의 압축 변형률을 사용자 지정한 한계 내로 제어기를 작동시킴. 이 방법은 손이나 힘-토크 센서가 필요 없이 모터와 인코더만으로도 적용 가능하며, 실험 결과 다양한 단단함의 과일에서도 안전하게 집기 성공률을 높이고 부드러운 물체에 대한 손상을 크게 줄이는 것으로 나타남."
+  },
+  {
+    "title": "Trajectory-Level Continuous Action Representation for Robotic Manipulation",
+    "original_title": "Trajectory-Level Continuous Action Representation for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2608.24111",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.24111v1 Announce Type: new \nAbstract: We propose CAT, a trajectory-level continuous action representation framework for robotic manipulation. Existing visuomotor systems often entangle action representation with control frequency or rely on fixed temporal parameterizations. This leads to representational redundancy at high sampling rates and limits the modeling of critical motion. CAT instead encodes action trajectories within a fixed real-time interval into a set of continuous latent tokens. To ensure temporal consistency across varying control frequencies, we further incorporate a frequency-aware positional encoding that establishs a shared temporal coordinate system. Trajectory-level regularization further stabilizes the latent representation. This approach prevents representation growth with timestep density and avoids reliance on predefined temporal parameterizations. Extensive system-level evaluations on LIBERO, MimicGen, and real-world long-horizon manipulation tasks demonstrate that CAT-based policies consistently outperform both competitive VQ-based and continuous visuomotor baselines under matched training settings. Across various model backbones and control frequencies, CAT consistently improves success rates. These results highlight the advantages of trajectory-level continuous action modeling for scalable robotic manipulation across varying control rates."
+  },
+  {
+    "title": "Robust Slip Detection and Material Classification via Spatiotemporal Transformers on a Uniformly-Illuminated Visuo-Tactile Sensor",
+    "original_title": "Robust Slip Detection and Material Classification via Spatiotemporal Transformers on a Uniformly-Illuminated Visuo-Tactile Sensor",
+    "link": "https://arxiv.org/abs/2608.24162",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.24162v1 Announce Type: new \nAbstract: Tactile sensing is central to robotic manipulation, among which slip detection stands out as a quintessential and critical task. However, existing slip datasets are predominantly limited to binary classification, lacking fine-grained directional perception. To address this limitation, we propose a visuo-tactile sensor featuring customized uniform RGB illumination, alongside a unified perception framework. At the hardware level, the sensor achieves high-precision, sub-millimeter depth reconstruction. Based on this capability, we collect a multi-task visuo-tactile dataset encompassing 15 objects, synchronously generating depth information for each data sample. Algorithmically, we design a dual-head TimeSformer network to process dynamic spatiotemporal slip. On unseen objects, this network achieves robust accuracies of 95.5% and 91.5% for 3-class contact state prediction and fine-grained 8-class slip direction classification, respectively. Furthermore, static tactile-based object class recognition utilizing a ResNet-50 backbone yields an outstanding accuracy of 98.8% across 15 categories. The proposed hardware-software framework provides high-fidelity feedback and a powerful multi-modal perception baseline for complex robotic manipulation."
+  },
+  {
+    "title": "CARO: Contact-Agnostic Residual Observation for Zero-Shot Robust Quadruped Locomotion",
+    "original_title": "CARO: Contact-Agnostic Residual Observation for Zero-Shot Robust Quadruped Locomotion",
+    "link": "https://arxiv.org/abs/2608.24217",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2608.24217v1 Announce Type: new \nAbstract: We propose CARO, a contact-agnostic residual observation framework for policy adaptation. CARO embeds a fixed-base Euler--Lagrange model into the reinforcement learning control loop and constructs a torque-level residual observation without requiring torque sensors, explicit contact estimation, or vision-based measurements of the floating-base position and linear velocity. A disturbance observer extracts a structured signal representing dynamics mismatch, while the policy learns to exploit this feedback for online adaptation. CARO is trained under the same terrain, command, and domain-randomization conditions as the nominal policy, without specialized disturbance curricula or additional adaptation supervision. Nevertheless, it achieves substantially improved zero-shot robustness in simulation and sim-to-real transfer tasks involving out-of-distribution payloads, center-of-mass shifts, terrain geometries, abrupt dynamics changes, and elevated-platform landings."
+  },
+  {
+    "title": "A Durable Vision-Based Tactile Fingertip for Robotic Manipulation",
+    "original_title": "A Durable Vision-Based Tactile Fingertip for Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2608.24242",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.24242v1 Announce Type: new \nAbstract: Currently available commercial vision-based tactile sensors provide rich contact information but remain vulnerable to abrasion and repeated concentrated loading, limiting their use in demanding robotic applications. This work presents a durable tactile fingertip comprising a soft silicone gel with a nonpigmented, textured, thin thermoplastic-polyurethane protective film and a replaceable sensing cartridge. Durability was evaluated using two accelerated laboratory procedures: a rotating-drum sanding test and a repetitive probe test applying 39.2 N (4.0 kgf) at 45 cycles per minute. Under the defined sanding conditions, the developed sensor reached the protective-film rupture endpoint after approximately 2-3 hours. During repetitive probe testing, all nine developed sensors remained functionally usable when testing was discontinued: seven after 5 days, one after 6 days, and one after 8 days. Commercial GelSight Mini and DIGIT specimens exhibited initial surface-film rupture after approximately 24-30 seconds of sanding and 25-35 minutes of repetitive loading. Damage to the developed sensor progressed gradually and produced little interference with tactile imaging at the test endpoints. These observations establish durability improvements of more than two orders of magnitude under the defined accelerated conditions. Combining increased durability, gradual degradation, and rapid cartridge replacement offers a practical approach to maintainable vision-based tactile sensing for demanding robotic applications."
+  },
+  {
+    "title": "Fiber Optic Sensing Glove for High Performance Dexterous Manipulation Capture",
+    "original_title": "Fiber Optic Sensing Glove for High Performance Dexterous Manipulation Capture",
+    "link": "https://arxiv.org/abs/2608.24572",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.24572v1 Announce Type: new \nAbstract: Capturing hand pose during dexterous manipulation remains difficult: vision-based methods degrade under occlusion and challenging lighting, while sensorized gloves, though occlusion-free, are prone to drift and magnetic interference and rarely match motion-capture accuracy. We introduce a fiber optic sensing glove for full hand pose tracking that targets these failure modes, using multi-core shape-sensing fibers that capture each fiber's full 3D shape rather than curvature alone. A novel pipeline registers each reconstructed fiber shape to a common hand reference frame, and a new inverse-kinematics solver reconstructs full hand pose at 60 Hz using curve constraints. Benchmarked on a 2-hour dataset of dexterous object manipulation tasks across 5 subjects, the glove achieves 7.2 mm mean fingertip position error against motion capture ground truth, reduced to 4.9 mm by a one-time factory calibration of the fiber routing hub that transfers across users and sessions. These capabilities enable high-fidelity data capture and bimanual virtual teleoperation - both essential to advancing the robotics field."
+  },
+  {
+    "title": "Gripper-aware Vision Language Action Models",
+    "original_title": "Gripper-aware Vision Language Action Models",
+    "link": "https://arxiv.org/abs/2608.24603",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.24603v1 Announce Type: new \nAbstract: Vision language action models (VLAs) have advanced general purpose robotic grasping and manipulation by enabling robots to interpret visual observations and natural language instructions to generate executable action sequences. However, existing VLAs often implicitly assume gripper invariance, despite grasping strategies being inherently embodiment-dependent. Different gripper types, such as parallel-jaw and suction, usually require distinct interaction strategies to achieve the same grasping objective. Moreover, current datasets for VLAs predominantly rely on parallel-jaw grippers, limiting gripper-aware learning. To address this gap, we introduce MiGA, a multi-gripper-aware dataset spanning five distinct gripper types across multiple robots with 103,000 demonstrations, explicitly capturing strategy divergence under shared task objectives. We further propose GVLA, which combines a new multi-gripper tokenizer with adapter-based policy routing. Our new gripper encoding induces structured embedding information that balances parameter sharing and strategy differentiation, while layer-wise probing confirms meaningful gripper-conditioned representations for VLAs. Intensive experiments in both simulation and real-world robots show that our GVLA outperforms the current baselines across evaluated settings. Our method also improves zero-shot generalization or few-shot adaptation to new objects or unseen tasks, and enable more efficient gripper adaptation."
+  },
+  {
+    "title": "GaussianWAM: Distilling Geometry and Semantics from 3D Gaussian Fields into World-Action Models",
+    "original_title": "GaussianWAM: Distilling Geometry and Semantics from 3D Gaussian Fields into World-Action Models",
+    "link": "https://arxiv.org/abs/2608.24714",
+    "date": "2026-08-26 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2608.24714v1 Announce Type: new \nAbstract: World-Action Models (WAMs) jointly learn future visual prediction and action generation, using video dynamics as a representation-learning signal for robotic manipulation. However, their video latents are primarily optimized for visual prediction and are not explicitly encouraged to preserve cross-view geometric structure or spatially localized, object-relevant semantics. We propose \\textbf{GaussianWAM}, a training-time representation-enhancement framework that organizes geometric and semantic supervision through a 3D Gaussian field. Given synchronized multi-view observations, frozen geometry and vision foundation models provide depth, camera parameters, and dense semantic features. GaussianWAM binds these heterogeneous signals to shared Gaussian primitives and renders spatially aligned semantic, depth, and coverage targets, which are distilled into the current-observation representations of the WAM. All teacher models, Gaussian components, and auxiliary prediction heads are removed after training, leaving the original WAM inference path without additional modules or forward computation. On LIBERO-Plus, GaussianWAM improves FastWAM from 52.05\\% to 71.29\\% and Cosmos Policy from 71.52\\% to 77.30\\%. Direct CLIP and VGGT distillation already establishes a strong FastWAM baseline of 69.37\\%, while Gaussian-field unification further improves it to 71.29\\%, supporting the benefit of spatially organizing heterogeneous teacher signals. GaussianWAM also improves performance on standard LIBERO and shows positive transfer trends on RoboTwin and real-world manipulation. These results suggest that training-time Gaussian distillation provides a practical way to inject geometry- and semantics-related supervision into WAM representations without changing their deployment architecture."
+  },
+  {
     "title": "유나이트 주식 45% 급락…IPO 이후 최고점 대비",
     "original_title": "Unitree shares slide 45% from post-IPO peak after 460% debut surge, raising robot bubble alarm - 디지털투데이",
     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQX0piZTFJdW85d0RtUnpZdFozU2pnbkVmTEZGcWFXeVk3aGNGVzFjZFZubnhMd2l6dWhkNDVxcFcwZzlYR0k3bEdXTDI1ZEFLZVFCemcwZXVoaTJCQTVvSTkxeFEyZnBkTHlXWUZiTGdZN080RTZtd1JjcjFwNUJOblhmcTVGRG5CeFBmMTBreW1TZUw3d1drekFQb1UtWl9aMHFDdzhPVkwyak1Oal9CM1BNbnRoRWRqMlE?oc=5",
@@ -1429,6 +1501,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "Chinese humanoid robots smash human records in 100m sprint and high jump at Beijing robot games  ABC7 Bay Area"
+  },
+  {
+    "title": "중국 인형로봇, 베이징 로보틱스 경기 100m 달리기와 장애물 뛰어넘기에서 인간 기록 초월",
+    "original_title": "Chinese humanoid robots smash human records in 100m sprint and high jump at Beijing robot games - ABC30 Fresno",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbkRXdDRiMG96MWE1cWtCa0lRZEN2UjRxQUdTcEVfa0FNX1Mwb1BOaXRZLWRubFduOUQ2RWFRX0ZCRkNWeEpsN0F6b1d3VXJCWVR4M0xsSmV6NUlMcURIcUwtUFkzZWJhRDRKUjdrdlhPQm9lLUZUeG5QS2RpczNjUzRodlNzcEJqRFI4NmExb1JMTlVKR0FjeGdzbDdZdXFhTGNDQ2ZoUE9WdnN2ZDhEVmdkS1Q5WEVQXzljMlpMa9IBvwFBVV95cUxNbkRXdDRiMG96MWE1cWtCa0lRZEN2UjRxQUdTcEVfa0FNX1Mwb1BOaXRZLWRubFduOUQ2RWFRX0ZCRkNWeEpsN0F6b1d3VXJCWVR4M0xsSmV6NUlMcURIcUwtUFkzZWJhRDRKUjdrdlhPQm9lLUZUeG5QS2RpczNjUzRodlNzcEJqRFI4NmExb1JMTlVKR0FjeGdzbDdZdXFhTGNDQ2ZoUE9WdnN2ZDhEVmdkS1Q5WEVQXzljMlpMaw?oc=5",
+    "date": "2026-08-22 18:34",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "중국의 인형로봇들이 베이징 로보틱스 경기에서 100미터 달리기와 장애물 뛰어넘기 부문에서 인간 기록을 넘어섰다."
   },
   {
     "title": "Chinese humanoid robots smash human records in 100m sprint and high jump at Beijing robot games - ABC7 Los Angeles",
@@ -17917,86 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "humanoid",
     "summary": "일상생활 지원을 목표로 하는 로봇 분야의 한계점 극복을 위해, Assistax가 JAX 및 MuJoCo-MJX 기반의 고성능 GPU 가속 다중 에이전트 RL 벤치마크를 제시함. 이 툴은 능동적인 휴머노이드 에이전트를 시뮬레이션된 파트너로 포함하며, 인간-로봇 상호작용을 Ad-Hoc Teamwork(AHT) 문제로 정의하고 MARL을 활용함. Assistax는 기존 RL 알고리즘이 새로운 조건의 파트너와 협력할 때 발생하는 조정 격차(coordination gap)를 식별하며, 해당 분야 연구에 실질적인 지표를 제공함."
-  },
-  {
-    "title": "보행체 모방 발 관절 구조의 착지 유발 점탄성 변화, 발 구조 및 자세에 따른 조절 양상 규명",
-    "original_title": "Landing-Induced Viscoelastic Changes in an Anthropomimetic Foot Joint Structure are Modulated by Foot Structure and Posture",
-    "link": "https://arxiv.org/abs/2601.14634",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "인간 발의 골격 구조와 착지 자세가 충격 후 점탄성 응답에 미치는 영향을 알아보기 위해 anthropomimetic 발 관절 구조를 개발하고 실험함. 연구 결과, 다관절 구조가 단순하고 강체적인 발 구조 대비 우수한 감쇠율을 나타냄이 확인됨. 또한 발목 배측 굴곡 및 발가락 신전 등의 자세 변화가 감쇠율을 체계적으로 조절하는 것으로 분석되어, 생체역학적 설계가 자세 조정을 통해 충격 완화 기능을 정교하게 튜닝할 수 있음을 제시함."
-  },
-  {
-    "title": "RAPT: 시뮬레이션-실제 휴머노이드 전개 환경을 위한 모델 예측 기반 OOD 탐지 및 실패 진단",
-    "original_title": "RAPT: Model-Predictive Out-of-Distribution Detection and Failure Diagnosis for Sim-to-Real Humanoid Deployment",
-    "link": "https://arxiv.org/abs/2602.01515",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "시뮬레이션 환경에서 검증된 정책이 실제 환경으로 전이(Sim-to-Real)될 때 발생하는 Out-of-Distribution (OOD) 상태 진입 및 오류를 감지하기 위해 RAPT(Recurrent Anomaly Probabilistic Trajectory Model)가 개발됨. 이 경량의 자가지도 학습 모니터는 50Hz의 실시간 예측 편차 신호를 온라인으로 생성하며, OOD 탐지 능력과 함께 시간적 saliency 및 LLM 기반의 의미론적 추론을 결합하여 실패의 근본 원인을 진단함. 실제 하드웨어 및 시뮬레이션 테스트에서 높은 TPR을 달성하고 21개 범주에 걸쳐 75%의 의미론적 실패 진단 정확도를 입증했음."
-  },
-  {
-    "title": "시각-언어-행동 기반 로봇의 불확실성 및 수행 품질 평가 방안 제시",
-    "original_title": "Evaluating Uncertainty and Quality of Visual Language Action-enabled Robots",
-    "link": "https://arxiv.org/abs/2507.17049",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "VLA(Vision-Language-Action) 로봇의 기존 평가는 단순한 성공/실패 여부(Binary success rate)에만 의존하여 작업의 질적 수행이나 로봇의 결정에 대한 자신감(Confidence)을 포착하지 못하는 한계가 존재함. 이에 본 논문은 VLA 로봇 매니퓰레이션 태스크에 특화된 8가지 불확실성 지표와 5가지 품질 지표를 개발하여 적용함. 대규모 실증 연구 결과, 제안된 지표들이 인간 전문가의 주관적 평가와 높은 상관관계를 보이며, 로봇의 작업 품질 및 모델의 신뢰도를 평가하는 새로운 방법론을 제시함."
-  },
-  {
-    "title": "신호교차로 협력 주행을 위한 무결성 기반 Eco-CACC: 인식적 허용성 확보",
-    "original_title": "Integrity-Gated Eco-CACC: Epistemic Admissibility for Cooperative Driving at Signalized Intersections",
-    "link": "https://arxiv.org/abs/2607.18565",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존 Eco-CACC 시스템은 센싱 오류나 의미론적 불일치 발생 시 내부 모델에 의존하여 취약함. 본 연구는 내부 차량 신념과 외부 센싱 간의 일관성을 명시적으로 모니터링하는 Integrity-Gated Eco-CACC 프레임워크를 제안함. 위치 혁신, 관측 가능성 손실, 의미론적 불일치를 결합한 통합 무결성 지표를 통해 제어 권한을 조절하며, 이를 통해 에너지 최적 제어의 허용성을 규제하고 무결성 저하 시 안전 우선의 대체 기동으로 전환함을 시연함."
-  },
-  {
-    "title": "AnchorRefine: 궤적 앵커와 잔여 정제를 기반으로 한 시너지 조작을 위한 Vision-Language-Action 모델",
-    "original_title": "AnchorRefine: Synergy-Manipulation Based on Trajectory Anchor and Residual Refinement for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2604.17787",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존 VLA 정책의 단일 공간 최적화 방식이 미세한 오류 수정 신호를 압도하는 한계가 있었음. 이에 연구진은 VLA 행동 모델링을 거시적 궤적 앵커 예측과 실행 레벨의 잔여 정제(Residual Refinement)를 분리한 계층적 프레임워크인 AnchorRefine을 제안함. 본 방법은 결정 인식이 가능한 그리퍼 정제 메커니즘을 포함하며, LIBERO 및 CALVIN 등 다양한 환경에서 시뮬레이션 성공률 최대 7.8%, 실세계 성공률 최대 18% 향상을 달성했음이 입증됨."
-  },
-  {
-    "title": "ImplicitRDP: 구조적 Slow-Fast 학습 기반의 엔드투엔드 시각-힘 확산 정책",
-    "original_title": "ImplicitRDP: An End-to-End Visual-Force Diffusion Policy with Structural Slow-Fast Learning",
-    "link": "https://arxiv.org/abs/2512.10946",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "휴머노이드 수준의 접촉 기반 조작을 위해 느린 글로벌 컨텍스트를 제공하는 비전 정보와 빠른 로컬 다이내믹스를 포착하는 힘 센싱 데이터를 결합하는 새로운 접근 방식을 제시함. 본 연구에서는 Structural Slow-Fast Learning과 Virtual-target-based Representation Regularization이라는 메커니즘을 도입하여 비동기적인 시각 및 힘 토큰을 통합적으로 처리하는 통합 End-to-End 정책인 ImplicitRDP를 개발함. 실험 결과, ImplicitRDP는 접촉이 많은 환경의 다양한 태스크에서 기존의 비전 전용 또는 계층적 접근 방식 대비 뛰어난 반응성과 성공률을 달성하는 것으로 확인됨."
-  },
-  {
-    "title": "통합 월드 모델링을 위한 마스크된 시각적 액션",
-    "original_title": "Masked Visual Actions for Unified World Modeling",
-    "link": "https://arxiv.org/abs/2607.19343",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "비디오 모델이 로봇의 세계 모델링에 유용성을 제공하는 추세에 따라, 본 연구에서는 행동을 픽셀 공간에서 부분적으로 드러내는 'Masked Visual Actions'라는 새로운 제어 인터페이스를 제시함. 이 방법론은 모델을 저수준 로봇 행동에 대한 장면의 반응을 예측하는 전방 역학 모델(forward dynamics)로 기능하게 하며, 원하는 객체 움직임으로부터 로봇 행동을 복원하는 역추론 모델(inverse modeling) 역할까지 수행함. 실제 데이터와 시뮬레이션의 최소한의 예시만으로도 높은 시각적 충실도와 제어 가능성을 달성, 계획, 의사결정 등 다양한 후속 조작(downstream manipulation) 환경에 활용 가능함을 입증함."
-  },
-  {
-    "title": "RoboInspector: LLM 기반 로봇 매니퓰레이션 정책 코드의 신뢰성 취약점 분석",
-    "original_title": "RoboInspector: Unveiling the Unreliability of Policy Code for LLM-enabled Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2508.21378",
-    "date": "2026-07-22 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "LLM 기반 로봇 매니퓰레이션은 정책 코드 생성을 통해 로봇 동작을 구현하나, 실제 환경의 복잡한 요구사항과 명령어 다양성으로 인해 코드 생성의 신뢰성 문제가 존재함. 이에 연구진은 정책 코드의 취약점을 분석하는 RoboInspector 파이프라인을 개발하여 매니퓰레이션 실패를 유발하는 네 가지 주요 오류 패턴을 규명함. 나아가 실패 정책 코드 피드백을 활용하는 정제 접근법을 제시하여, 시뮬레이션 및 실제 환경에서 LLM 기반 로봇 매니퓰레이션의 신뢰성을 최대 35%까지 개선했음을 입증함."
-  },
-  {
-    "title": "휴머노이드 로봇 상용화를 향한 글로벌 경쟁 심화",
-    "original_title": "Global race to commercialize humanoid robots intensifies - 네이트",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1yN0t6RWVqMW9TZGRDRmpCZVN5bW16YUhsb1lSSlBHT1ZPbHhkblpxRGt3WFFxNVZQdnZYdlVWWWt2MVczdkFtMkJUU1BIcWRucGNF?oc=5",
-    "date": "2026-07-22 00:10",
-    "source": "Google News (Humanoid)",
-    "category": "humanoid",
-    "summary": "전 세계적으로 휴머노이드 로봇의 상업화 경쟁이 가속화되고 있는 상황임. 다수의 선도 기업들이 AI 기술을 통합하고 실제 산업 및 생활 현장에 적용 가능한 실질적인 모델 개발에 집중하는 양상으로 파악됨."
   }
 ]
