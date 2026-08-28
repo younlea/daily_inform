@@ -268,6 +268,45 @@
             font-size: 0.9rem;
             padding-bottom: 30px;
         }
+
+        .refresh-btn {
+            margin-top: 12px;
+            padding: 8px 18px;
+            border: none;
+            border-radius: 20px;
+            background: #2563eb;
+            color: #fff;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .refresh-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .refresh-btn:disabled {
+            background: #aaa;
+            cursor: default;
+        }
+
+        .refresh-reset {
+            background: none;
+            border: none;
+            color: #aaa;
+            font-size: 0.75rem;
+            text-decoration: underline;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+
+        .refresh-status {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 8px;
+            min-height: 1.2em;
+        }
     </style>
 </head>
 
@@ -276,6 +315,11 @@
         <div class="header-title">
             <h1>Daily Market Monitor</h1>
             <div class="last-updated">Updated: 2026-08-28 08:37:50 (KST)</div>
+            <div>
+                <button id="refreshBtn" class="refresh-btn" onclick="triggerStockRefresh()">🔄 지금 업데이트</button>
+                <button class="refresh-reset" onclick="resetGithubToken()" title="저장된 GitHub 토큰 삭제">토큰 재설정</button>
+            </div>
+            <div id="refreshStatus" class="refresh-status"></div>
         </div>
 
         <div class="top-metrics">
@@ -400,6 +444,108 @@ Abstract: Currently available commercial vision-based tactile sensors provide ri
                 Auto-updates hourly (09:00 - 16:00 KST)
             </footer>
         </div>
+
+        <script>
+            (function () {
+                const OWNER = 'younlea';
+                const REPO = 'daily_inform';
+                const WORKFLOW_FILE = 'daily_update.yml';
+                const BRANCH = 'master';
+                const TOKEN_KEY = 'daily_inform_gh_pat';
+
+                function setStatus(msg) {
+                    const el = document.getElementById('refreshStatus');
+                    if (el) el.textContent = msg;
+                }
+
+                function getToken() {
+                    let token = localStorage.getItem(TOKEN_KEY);
+                    if (!token) {
+                        token = prompt(
+                            'GitHub Personal Access Token을 입력하세요.\n' +
+                            '(이 저장소에 대한 Actions 실행 권한 필요 - classic PAT는 "repo" 스코프, fine-grained PAT는 "Actions: Read and write")\n' +
+                            '토큰은 이 브라우저의 localStorage에만 저장되며 외부로 전송되지 않습니다.'
+                        );
+                        if (token) {
+                            token = token.trim();
+                            localStorage.setItem(TOKEN_KEY, token);
+                        }
+                    }
+                    return token;
+                }
+
+                window.resetGithubToken = function () {
+                    localStorage.removeItem(TOKEN_KEY);
+                    setStatus('저장된 토큰을 삭제했습니다. 다음 업데이트 시 다시 입력합니다.');
+                };
+
+                async function pollAndReload(sinceISO, token) {
+                    const headers = { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github+json' };
+                    for (let i = 0; i < 30; i++) {
+                        await new Promise((r) => setTimeout(r, 5000));
+                        try {
+                            const res = await fetch(
+                                `https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${WORKFLOW_FILE}/runs?event=workflow_dispatch&per_page=5`,
+                                { headers }
+                            );
+                            if (!res.ok) continue;
+                            const data = await res.json();
+                            const run = (data.workflow_runs || []).find((r) => new Date(r.created_at) >= new Date(sinceISO));
+                            if (run) {
+                                setStatus(`실행 상태: ${run.status}${run.conclusion ? ' / ' + run.conclusion : ''} (${(i + 1) * 5}초 경과)`);
+                                if (run.status === 'completed') {
+                                    setStatus('업데이트 완료! 새로고침합니다...');
+                                    setTimeout(() => location.reload(), 1500);
+                                    return;
+                                }
+                            } else {
+                                setStatus(`실행 대기 중... (${(i + 1) * 5}초 경과)`);
+                            }
+                        } catch (e) { /* 일시적 네트워크 오류는 무시하고 재시도 */ }
+                    }
+                    setStatus('시간이 초과되었습니다. 잠시 후 수동으로 새로고침 해주세요.');
+                }
+
+                window.triggerStockRefresh = async function () {
+                    const token = getToken();
+                    if (!token) { setStatus('토큰이 필요합니다.'); return; }
+
+                    const btn = document.getElementById('refreshBtn');
+                    btn.disabled = true;
+                    setStatus('업데이트 요청 중...');
+
+                    const sinceISO = new Date().toISOString();
+                    try {
+                        const res = await fetch(
+                            `https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${WORKFLOW_FILE}/dispatches`,
+                            {
+                                method: 'POST',
+                                headers: {
+                                    'Authorization': 'Bearer ' + token,
+                                    'Accept': 'application/vnd.github+json',
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify({ ref: BRANCH })
+                            }
+                        );
+                        if (res.status === 204) {
+                            setStatus('업데이트 요청됨! 최신 주가를 가져오는 중입니다 (약 30~90초 소요)...');
+                            await pollAndReload(sinceISO, token);
+                        } else if (res.status === 401) {
+                            setStatus('토큰이 유효하지 않습니다. 다시 시도해주세요.');
+                            localStorage.removeItem(TOKEN_KEY);
+                        } else {
+                            const body = await res.text();
+                            setStatus(`요청 실패 (${res.status}): ${body.slice(0, 150)}`);
+                        }
+                    } catch (e) {
+                        setStatus('네트워크 오류로 요청에 실패했습니다: ' + e.message);
+                    } finally {
+                        btn.disabled = false;
+                    }
+                };
+            })();
+        </script>
 </body>
 
 </html>
