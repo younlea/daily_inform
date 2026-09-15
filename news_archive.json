@@ -1,5 +1,86 @@
 [
   {
+    "title": "휴머노이드 자동 진화 AI: 메커니즘, 안전성 및 배포 후 자체 개선 평가",
+    "original_title": "Self-Evolving AI for Humanoids: Mechanisms, Safety, and Evaluation of Post-Deployment Self-Improvement",
+    "link": "https://arxiv.org/abs/2609.13236",
+    "date": "2026-09-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "이 논문은 휴머노이드 로봇의 실제 환경에서의 자기 진화 과정을 조사하며, 기존 연구 대부분이 무신체 소프트웨어 에이전트에 초점을 맞춘 반면, 물리적 몸을 가진 에이전트의 경우 어떻게 달라지는지 분석한다. 또한 휴머노이드 로봇에서 자기 진화를 위한 네 가지 메커니즘(self-learning, self-adaptation, self-optimization, self-generation)과 안전성 및 불확실성을 고려한 설계 차원을 제시하며, 자체 개선의 평가 방법론 역시 논의한다."
+  },
+  {
+    "title": "다항로터에서 정적 제어 할당의 미분 실현 가능성: 비누드런 전체 작동 하에서는 불가능하고 중복 작동 하에서는 의사 역행렬 장애 발생",
+    "original_title": "Differential Realizability of Static Control Allocation in Multirotors: An Impossibility under Nonredundant Full Actuation and a Pseudoinverse Obstruction under Redundant Actuation",
+    "link": "https://arxiv.org/abs/2609.13588",
+    "date": "2026-09-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "다항로터에 대한 양방향 프로펠러 제어 할당은 일반적으로 부호부여된 추력 변수에서 선형 꼴의 wrench map을 사용한다. 하지만 실제 로터 속도로부터 추력을 구하는 부호화된 2차 함수는 정지 상태에서는 미분 동형인데, 이 연구에서는 비누드런 전체 작동 하에서는 단일 프로펠러 역전이 즉각적인 작업 방향 하나를 제거하여 전역 연속적으로 미분가능한 정적 할당기가 존재하지 않음을 밝혔다. 중복 작동 하에서는 물리적 작업 맵은 정칙성을 유지하나, 교차 의사 역행렬 절단이 무한한 로터 속도 도함수를 요구한다.\n \n||\n \n정확성 및 일계 유효 조건을 유도하고 구조적 순위 손실과 할당기-유발 속도 특이점을 구분하며, 국소 nullspace 변형은 고립된 의사 역행렬 역전을 수리하고 전역 고정 사등면 구성은 정칙 섹션의 존재를 확보함."
+  },
+  {
+    "title": "로보틱스 경로 최적화 기술 GROOVE 공개됨",
+    "original_title": "GROOVE: Geometry-Guided Reduction of Operational-Space Jerk in VLA Execution",
+    "link": "https://arxiv.org/abs/2609.13695",
+    "date": "2026-09-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv에서 GROOVE라는 온라인 제어기법이 발표되어, 로봇의 조각화 시각-언어-행위 정책(VLA) 실행 과정에서 발생하는 진동과 예측 불가능한 움직임을 최소화함. 이 기술은 원래 계획 경로를 바탕으로 쿼리 별 새 구간의 주기적 손상을 줄이며, LIBERO 벤치마크에서는 각도 및 위치 진동을 각각 43.42%, 33.02% 감소시키는 것을 확인헀음."
+  },
+  {
+    "title": "손 안에서의 객체 위치 조절을 위한 학습 방법론 공개됨",
+    "original_title": "Learning In-Hand Object Reaching to General 6D Poses",
+    "link": "https://arxiv.org/abs/2609.13761",
+    "date": "2026-09-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "연구진은 다각도의 손 움직임으로 그립 상태를 유지한 채 물체의 6D 위치를 조정하는 POISE 프레임워크를 제시하였으며, 이는 시뮬레이션에서 높은 성공률을 보였고 실제 테스트에서도 외부 간섭에 대처할 수 있음."
+  },
+  {
+    "title": "가시적 터치: 시각 및 동작 정책에 접촉 정보 통합",
+    "original_title": "Visible Touch: Rendering Contact for Visuomotor Policies",
+    "link": "https://arxiv.org/abs/2609.14156",
+    "date": "2026-09-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv에서 발표된 이 논문은 가시적 터치라는 접근법을 제안하며, 이를 통해 이미지 조건 정책이 직접적으로 접촉 정보를 활용할 수 있게 되었다. 저자는 저렴한 자기식 촉각 센서와 함께 사용하여 LIBERO 벤치마크에서 BC-Transformer 성공률을 평균 15.7% 향상시키는 등 다양한 실험에서 우수한 성과를 보였다."
+  },
+  {
+    "title": "Gloves-Inferred Force Transfer: 터치 센서 없이 착용형 감지 장갑에서 로봇 팔로 포스 인식 스킬 전송 가능함",
+    "original_title": "GIFT: Glove-Inferred Force Transfer: Force-Aware Human-to-Robot Skill Transfer from a Wearable Sensing Glove to a Robot Hand Without Tactile Sensors",
+    "link": "https://arxiv.org/abs/2609.14173",
+    "date": "2026-09-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "GIFT는 휴대용 감지 장갑을 통해 인간의 손가락 굽힘, 교정된 손끝 포스 및 손목 방위를 기록하고, 이를 바탕으로 로봇이 힘을 추정하는 파이프라인으로, 두 가지 정책 모두 샘플 크기와 평가 지표를 고려한 50 롤아웃 평가에서 모든 25 롤아웃 성공함. 포스 입력이 없는 경우 비전만 주어진 정책은 척çek하지 못했으며, 손끝 포스 입력이 어떻게 강하게 쥔다는 결정을 하는데 기여함."
+  },
+  {
+    "title": "VLBiMan++: 비전-언어 기반 일샷 양손 조작 일반화 경계 확장",
+    "original_title": "VLBiMan++: Expanding the Generalization Boundary of Vision-Language Anchored One-Shot Bimanual Manipulation",
+    "link": "https://arxiv.org/abs/2609.14310",
+    "date": "2026-09-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "VLBiMan++은 단일 인체 실연에서 시작하여 복잡한 환경에서도 재사용 가능한 기술 분해와 시각-언어 기반의 기하학적 적응을 통해 양손 조작의 일반화 범위를 확대하는 프레임워크로, 다섯 가지 차원에 걸쳐 일반화 능력을 향상시킴. 이는 다양한 작업, 물체, 장면, 로봇 플랫폼, 그리고 장기적 배치 조건에서도 신뢰성 있는 양손 조작을 보장하며, 실제 세계 실험에서 뛰어난 성능을 입증함."
+  },
+  {
+    "title": "EMoG: 표현성 로보틱스 보행을 위한 감정 조절 보행 생성 프레임워크",
+    "original_title": "EMoG: Emotion-Modulated Gait Generation for Expressive Humanoid Locomotion",
+    "link": "https://arxiv.org/abs/2609.14432",
+    "date": "2026-09-15 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "EMoG은 스테빌리티와 태스크 수행에 초점을 맞춘 기존의 인간형 로봇 보행 시스템과 달리, 감성을 반영하는 보행 제어를 실현하기 위한 프레임워크로, 전문 배우들의 감성 주석 데이터셋을 바탕으로 학습하며 인터랙티브한 컨트롤을 위해 언어 모델 기반 파서도 통합하였다."
+  },
+  {
+    "title": "유나이트 로보틱스 상장으로 중국의 복합재료 기회가 확대될 수 있음",
+    "original_title": "Unitree Robotics’ STAR Market Listing Could Speed Up China’s Opportunities in Composite Materials - Global Sources",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNYVo0VG8wYkNvcGZ5M1pZbURXSEkwajRCc0diTmN1Tkxsd2lMaFVjR09vNEVQU3c2RXplUVlvR240RFdiNFdFM2xBdG5DS0RYSW1JcmZsWmxuUmNKVGhxczVkMWptVTd6TnNaMU5kY0RNLVIwSWt1eXNpdGJxdzJHMmRORGd2UjN0OXNmNWE3RWZKZUJ4X2xNU3Y5VGxWd3JFcF9XSE0wdmdOYk0xakh0NTNyLW5EbGZfeWxOQWtDcmZud1hDM2hqR1JCZDBjQ193aFdtM0VndU5jZ095Q01CdTlFOURfaTNIVGpN?oc=5",
+    "date": "2026-09-15 03:56",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "유나이트 로보틱스의 STAR 마켓 상장을 통해 중국의 복합재료 산업 발전 속도가 빨라질 것으로 전망됨"
+  },
+  {
     "title": "유나이티드 로보틱스의 STAR 시장 상장 가능성 중국의 복합재료 기회 진작에 속도 붙일 수 있음 - 글로벌 소스",
     "original_title": "Unitree Robotics’ STAR Market Listing Could Speed Up China’s Opportunities in Composite Materials - Global Sources",
     "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNOFZvQTcxa1o1Q2xDdlhsRDdTNTUxa3VDc0FNMEFvZGdUbjhaVFJkdklzLUxSMEw2LTBDYlhpcUVhWmVfVGRnajdob1Z4c1pBVWVKT1hYazkzR29kUHJ2ZUs5ZTV5bThPemdrLU1GaXJlRkdNbVZqeTM1cFNRMmx0RDVidHdUX1pqb25sTndrVlAtSXlUVHYycGtEbnB2YjRoNzdUVTRLTjE1dV9jN1BZbko5QkxBN1pwVEgzRFAwNllGZVctemU0dks3TE9QelFObGRZRHFkeUt4R05lSXlyR045RkgtWjBBYkVF?oc=5",
@@ -7,6 +88,15 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "유나이티드 로보틱스가 STAR 마켓에 상장할 경우 중국의 복합재료 산업 발전에 긍정적인 영향을 미칠 것으로 전망됨. 이를 통해 중국 기업들의 복합재료 시장 진출과 혁신 가속화가 예상됨."
+  },
+  {
+    "title": "휴머노이드 로봇 공장을 만드는 '로봇들이 로봇을 만든다' 시대가 시작됨",
+    "original_title": "A humanoid robot factory where 'robots make robots' has begun production. - GIGAZINE",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE10OGRjWWR4aW9mMDZzM2ZSRFBXd09sSm9Gc3pROGtNX0VhT055TUtJaXVfMElxTVVZOGJrdG5Na3VHQU1CTlhxb2FBSjlpY01EV3N2cHhBZGdRUnBjbDhLa1JzellmbGtrRl9tM2RlNDdkY2VtUXluZHN3?oc=5",
+    "date": "2026-09-15 02:26",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "일본 GIGAZINE은 휴먼형태의 로봇이 로봇을 생산하는 혁신적인 제조공장이 본격적으로 운영되기 시작했다고 보도하였음"
   },
   {
     "title": "로보틱스-as-a-Service 모델이 구독 모델만으로는 부족함",
@@ -17908,95 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "미국이 국가 안보를 이유로 외국산 휴머노이드 로봇의 사용을 금지하는 조치를 발표함. 해당 규제는 특히 중국산 제품들을 주요 표적으로 삼은 것으로 파악됨. 이는 글로벌 로봇 산업의 공급망 및 기술 통제와 관련된 중대한 사안임."
-  },
-  {
-    "title": "스마트폰 유리 커팅부터 빛을 이용한 '페인팅'까지: 펨토초 레이저의 3가지 활용 분야",
-    "original_title": "From cutting smartphone glass to ‘painting’ with light: Three applications of femtosecond lasers",
-    "link": "https://roboticsandautomationnews.com/2026/07/29/from-cutting-smartphone-glass-to-painting-with-light-three-applications-of-femtosecond-lasers/103702/",
-    "date": "2026-07-29 12:29",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "펨토초 레이저는 정밀 제조 공정에서 주변 구조물 손상 없이 소재를 가공할 수 있는 최첨단 도구임. LITILIT 전문가에 따르면, 이 레이저 기술의 상용화에 주요한 걸림돌은 실험실 수준에서 발전된 시스템을 대량으로 생산하기 어렵다는 점임. 대규모 적용을 위해서는 스케일업(Scale-up) 기술 확보가 핵심 과제로 제시됨."
-  },
-  {
-    "title": "Neura Robotics, RWTH Aachen University와의 협력으로 글로벌 물리 AI 훈련망 확장 발표",
-    "original_title": "Neura Robotics expands global physical AI training network in partnership with RWTH Aachen University",
-    "link": "https://roboticsandautomationnews.com/2026/07/29/neura-robotics-expands-global-physical-ai-training-network-in-partnership-with-rwth-aachen-university/103699/",
-    "date": "2026-07-29 11:56",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Neura Robotics가 글로벌 Physical AI 훈련 네트워크 확장 차원에서 RWTH Aachen University와 파트너십을 체결함. 이에 따라 독일 내 새로운 훈련 시설 'Neura Gym RWTH Aachen'을 구축할 예정임. 해당 시설은 2026년 말까지 대학의 Hightech Campus Melaten에서 개장함이 확정됨."
-  },
-  {
-    "title": "미국, 중국산 휴머노이드 로봇에 대한 규제 배경 분석",
-    "original_title": "Why Has the US Banned New Chinese-Made Humanoid Robots? - AI Magazine",
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYnZGekNZVGp2azIxSm13bkJiQ2lhbTl0dmlOY1U4dlZ2R1BhZFVCeUZxWGZ5YVpFTHZSai1raWdqZTV1bF9wSFZpVV9kSDN0Y3VwSXJCaDA4SXFSb2twNlRDTkdxLVpCa2N1TmRzMlRROG51MGYxbzlxUVZLeXJzMnFEQ1ZHOWU1NWkzRUVtaw?oc=5",
-    "date": "2026-07-29 11:48",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "미국이 중국산 휴머노이드 로봇에 대해 규제를 강화하거나 금지 조치를 취하는 배경을 분석함. 주요 원인으로는 기술 안보 문제 및 첨단 산업 기술 유출 방지, 지정학적 긴장 고조에 따른 국가 간 경쟁 심화 등이 거론됨."
-  },
-  {
-    "title": "NoTip, 오하이오에서 로봇 기반 음식 배달 플랫폼 공개 베타 테스트 돌입",
-    "original_title": "NoTip launches public beta of robotic food delivery platform in Ohio",
-    "link": "https://roboticsandautomationnews.com/2026/07/29/notip-launches-public-beta-of-robotic-food-delivery-platform-in-ohio/103696/",
-    "date": "2026-07-29 11:43",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "NoTip이 오하이오주 Mason에서 로봇 음식 배달 플랫폼의 공개 베타 테스트를 개시함. 이 서비스는 자율 주행 전기 차량과 배달 로봇을 결합한 형태의 자율 배송 시스템임. 특허 출원된 이중 단계 시스템을 활용하여 전기차로 주문을 운송하고, 로봇이 최종적으로 문 앞 배달을 완료하는 방식임."
-  },
-  {
-    "title": "지멘스, AI 기반 Simcenter 출시로 시뮬레이션 포트폴리오 통합",
-    "original_title": "Siemens unifies simulation portfolio with AI-powered Simcenter release",
-    "link": "https://roboticsandautomationnews.com/2026/07/29/siemens-unifies-simulation-portfolio-with-ai-powered-simcenter-release/103691/",
-    "date": "2026-07-29 11:33",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Siemens가 AI 기반 기능, GPU 가속화 및 멀티피직스 워크플로우가 탑재된 최신 Simcenter 엔지니어링 시뮬레이션 소프트웨어를 출시함. 본 업데이트는 엔지니어가 제품 개발 속도를 높이고 다양한 디자인 옵션을 탐색하도록 지원하는 것이 주요 목적임. 특히 이번 배포는 Siemens와 Altair의 시뮬레이션 기술을 통합하여 통일된 Simcenter 포트폴리오를 구축한 최초의 사례로 주목받음."
-  },
-  {
-    "title": "Tacta Systems, 고부가가치 제조를 위한 AI 기반 로봇 핸드 공개",
-    "original_title": "Tacta Systems unveils AI-powered robotic hand for high-value manufacturing",
-    "link": "https://roboticsandautomationnews.com/2026/07/29/tacta-systems-unveils-ai-powered-robotic-hand-for-high-value-manufacturing/103688/",
-    "date": "2026-07-29 10:55",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "Tacta Systems가 인간과 유사한 민첩성과 촉감을 산업 자동화에 구현한 로보틱스 플랫폼을 공개함. 이 플랫폼은 Electronics, AI 인프라, 자동차 제조 등 고부가가치 제조 분야를 주요 타겟으로 함. 핵심 제품인 TactaBot은 로봇 핸드, 웨어러블 스킬 캡처 시스템, 그리고 AI 엔진을 통합하여 로봇이 복잡하고 섬세한 작업을 수행할 수 있도록 지원함."
-  },
-  {
-    "title": "Kall Morris, ISS에서 우주 잔해 제거용 궤도 '견인 로봇' 테스트 완료",
-    "original_title": "Kall Morris tests orbital ‘tow truck’ for space debris removal aboard International Space Station",
-    "link": "https://roboticsandautomationnews.com/2026/07/29/kall-morris-tests-orbital-tow-truck-for-space-debris-removal-aboard-international-space-station/103684/",
-    "date": "2026-07-29 10:45",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "미국 스타트업 Kall Morris(KMI)가 ISS를 활용하여 로봇 시스템 REACCH(Responsive Engaging Arms for Captive Care and Handling)의 테스트를 성공적으로 수행함. 이 시스템은 궤도상의 우주 잔해를 포획하고, 재배치하며, 궁극적으로 제거하는 기능을 시연한 것임. 해당 테스트는 우주 산업이 직면한 우주 쓰레기 문제 해결 노력에 중요한 진전으로 평가됨."
-  },
-  {
-    "title": "Sapphire, 물리적 AI 응용을 위한 AMD 기반 로봇 플랫폼 공개",
-    "original_title": "Sapphire launches AMD-powered robotics platform for physical AI applications",
-    "link": "https://roboticsandautomationnews.com/2026/07/29/sapphire-launches-amd-powered-robotics-platform-for-physical-ai-applications/103679/",
-    "date": "2026-07-29 10:23",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "Sapphire Technology가 AMD Ryzen AI Embedded X100 Series 프로세서를 탑재한 생산 준비형 하드웨어 플랫폼, EDGE+ Apex SOM/Carrier Robotics Platform을 공개함. 이 플랫폼은 자율 로봇공학 분야에서 물리적 AI(physical AI)의 개발 및 배포 가속화를 목표로 함. 해당 솔루션은 샌프란시스코에서 열린 AMD Advancing AI 2026 행사에서 처음 선보여짐."
-  },
-  {
-    "title": "Intelligrated, Trew, Transnorm의 통합으로 '선도적인 창고 자동화 제공업체' 구축",
-    "original_title": "Intelligrated, Trew and Transnorm unite to create ‘leading warehouse automation provider’",
-    "link": "https://roboticsandautomationnews.com/2026/07/29/intelligrated-trew-and-transnorm-unite-to-create-leading-warehouse-automation-provider/103675/",
-    "date": "2026-07-29 10:07",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "American Industrial Partners(AIP)가 Honeywell Technologies Warehouse and Workflow Solutions 사업부를 성공적으로 인수 완료함. 이에 Intelligrated, Trew, Transnorm 세 회사가 단일 조직으로 통합 운영됨. 해당 기업은 소매, 이커머스, 제조 등 다양한 산업에 최적화된 최고 수준의 창고 자동화 및 워크플로우 솔루션을 제공하는 데 주력할 방침임."
-  },
-  {
-    "title": "중국, 휴머노이드 로봇 금지에 대한 미국의 '억압' 논란 제기",
-    "original_title": "China accuses US of suppression over humanoid robot ban - Macau Business",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOT0p5cHNFcm9RTTNrbnpxZi15aEd0cEpHSV9qTkZ0Szh0dF9wUllGUDNtQjNSUExhOVpIcnRPNnlubkoxXzNjRDBTYnotbzZYN1dERlBFZmtmMnZsUHlxcDJRaGVZcWdpZFhFQkhoeVR1ck84MGhWcUpJNFd6OFYwenBrNlpTaklzZVE?oc=5",
-    "date": "2026-07-29 09:39",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 매체는 미국이 휴머노이드 로봇 기술 개발 및 활용에 대해 부당하게 정책적 억압을 가하고 있다고 주장하며 비난함. 해당 보도는 미국 정부 및 관련 산업계의 기술 규제 정책을 둘러싼 국제적인 논란을 다시 한번 부각시키는 내용을 담고 있음."
   }
 ]
