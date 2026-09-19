@@ -432,6 +432,78 @@
     "summary": "arXiv:2609.18620v2 Announce Type: replace \nAbstract: Creating deformable assets for robot manipulation requires jointly specifying their geometry, appearance, and physical properties. This is especially challenging for deformable objects, since text and images provide limited evidence about how they deform and respond to contact, yet these responses directly affect their suitability for interaction. Automated generation therefore needs to resolve coupled physical requirements and use interaction evidence to guide construction and refinement. We present DeformSmith, a framework that enables automated generation of interactive, physically credible deformable assets from text or a single image. Through hierarchical agentic construction and a shared physics-grounded harness, it progressively builds, tests, and refines geometry, physical models, material behavior, and robot interaction until the resulting asset is ready for simulation and manipulation. Robot interaction closes the generation loop through manipulation feedback and replayable interaction data. Results show that DeformSmith generates assets with better visual quality and physical plausibility than state-of-the-art baselines, including PhysGen3D, PhysGM, and PhysX-Omni, while supporting the synthesis of data for robotic manipulation of deformable objects. Project page: https://can-lee.github.io/deformsmith-web/"
   },
   {
+    "title": "From Rollout to Reset: A Graph-Based Harness for Autonomous Long-Horizon Manipulation Evaluation",
+    "original_title": "From Rollout to Reset: A Graph-Based Harness for Autonomous Long-Horizon Manipulation Evaluation",
+    "link": "https://arxiv.org/abs/2609.19413",
+    "date": "2026-09-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2609.19413v1 Announce Type: new \nAbstract: Robot manipulation policies are improving quickly, and real-robot evaluation remains the standard evidence for that progress. It still relies on a human to reset the scene between rollouts, which consumes operator time and leaves the initial state distribution unspecified, so results reproduce poorly. A recent system, AutoEval, automates both reset and scoring, but only for single-step tasks, because a long-horizon rollout can terminate in combinatorially many configurations that no single learned reset policy covers. We present HALTER, a Harness for Autonomous Long-horizon Task Evaluation and Reset, which restores the scene by planning over a library of learned atomic reset skills, so demonstration cost scales with the size of that library rather than with the number of terminal states. HALTER builds a spatial scene graph online from point clouds and vision foundation models, and an LLM reasons over this graph to score the rollout, plan the reset, and verify that the reset succeeded, without collecting labeled success images for any task. On four long-horizon tasks on a Franka arm, HALTER restores the scene in 76% of episodes, against 52% for AutoEval and 65% for a motion-planning reset, and it estimates the completed-skill fraction correctly in 90% of episodes, against 76%. Its reset-verification verdict is correct in 91% of episodes, compared with 78% for AutoEval. It also cuts the operator time of an evaluation campaign by 72% relative to manual reset. We further measure compositional generalization on three held-out tasks, where HALTER resets 74.7% of episodes against 1.3% for a per-task reset policy, and we ablate the scene representation and the graph update rate."
+  },
+  {
+    "title": "FASA: Feedback-Aware Sampling Adaptation for Efficient Diffusion-Based VLA Models",
+    "original_title": "FASA: Feedback-Aware Sampling Adaptation for Efficient Diffusion-Based VLA Models",
+    "link": "https://arxiv.org/abs/2609.19475",
+    "date": "2026-09-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2609.19475v1 Announce Type: new \nAbstract: Diffusion-based Vision-Language-Action (VLA) models achieve strong performance in embodied tasks, but their iterative sampling imposes heavy computational and memory-access cost, blocking real-time deployment on edge platforms. Existing acceleration methods either require expensive training (e.g., distillation, flow matching) or degrade perception via statically scheduled pruning and caching, ignoring the dynamic workload variance of robotic interactions. This paper presents FASA (Feedback-Aware Sampling Adaptation), a training-free runtime framework that treats real-time multimodal feedback as a control signal for the denoising pipeline: an interaction-driven range adaptor modulates the global sampling-step budget based on visual and gripper-force feedback, and a proprioception-aware step adaptor pinpoints the optimized step within the adapted range. This co-designed framework allows the underlying hardware architecture to adaptively match the workload demands of different execution phases. Comparative evaluations across several benchmarks show that the inference speed can be increased by up to 1.45$\\times$ while maintaining competitive success rates, providing a novel dynamic runtime architecture paradigm for deploying heavy generative embodied AI workloads onto resource-constrained computing platforms."
+  },
+  {
+    "title": "SLAMSqueezeBench: Comparing SLAM Systems under Resource Constraints",
+    "original_title": "SLAMSqueezeBench: Comparing SLAM Systems under Resource Constraints",
+    "link": "https://arxiv.org/abs/2609.19533",
+    "date": "2026-09-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2609.19533v1 Announce Type: new \nAbstract: Simultaneous localization and mapping (SLAM) is one of the services running on an autonomous robot. It is typically run to assist other tasks such as planning, manipulation, etc. All these tasks are run on edge hardware and are subject to severe resource constraints. However, most SLAM systems are built and tested in isolation, and their performance is reported as if they are the only task running on a system. We observe that existing benchmarks lack a common mechanism for comparing SLAM systems under realistic resource constraints. To address this limitation, we have developed SLAMSqueezeBench, a framework that allows testing of SLAM systems under realistic workloads on edge hardware. It does so by imposing constraints on compute and memory resources available for the SLAM system during execution. It also simulates realistic camera frame acquisition with frame drops when a finite buffer is full. Using SLAMSqueezeBench, we compare nine SLAM systems spanning classical systems, learning-based systems, and approaches for Gaussian splatting. Our testing framework will be available for use by the community upon publication."
+  },
+  {
+    "title": "Quantifying Mechanical Intelligence in Legged Robots with Information Theory",
+    "original_title": "Quantifying Mechanical Intelligence in Legged Robots with Information Theory",
+    "link": "https://arxiv.org/abs/2609.19588",
+    "date": "2026-09-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2609.19588v1 Announce Type: new \nAbstract: Mechanical intelligence, loosely defined as the reduction in control burden afforded by a robot's physical form, has become a prominent concept in robotics, with instantiations in bioinspired robotics, soft robotics, robotic swarms, and many other areas. However, rigorous theoretical understanding and quantitative measures of mechanical intelligence have lagged behind the engineering systems that the community has developed. In this work, using modern legged robots as a benchmark and exemplar, we propose several information-theoretic metrics for quantifying mechanical intelligence. By viewing body dynamics as both a computational process and a communication channel, we show that several prior insights in legged-robot engineering can be described using information theory, and we quantify how bits are processed by mechanical modes and across robot coordinates. Specifically, we examine the trade-off between explicitly incorporating compliance through series-elastic actuation and using so-called proprioceptive, low-gear-ratio transmissions, and we explore how these mechanisms interact with control policies during locomotion. We develop these results on systems of increasing complexity: a simplified linear model of a robot-leg transmission, a nonlinear single-leg simulation, and simulated quadruped robots controlled by a learned policy while navigating challenging terrain. These results lay the groundwork for broader study of robot mechanisms and their role in embodied computation."
+  },
+  {
+    "title": "WorldContact: A Contact-Centric World Model for Scalable Robot Learning",
+    "original_title": "WorldContact: A Contact-Centric World Model for Scalable Robot Learning",
+    "link": "https://arxiv.org/abs/2609.19600",
+    "date": "2026-09-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2609.19600v1 Announce Type: new \nAbstract: Adapting robots to new objects and tasks requires interaction experience that can be costly to obtain. We present WorldContact, a contact-centric world model for deformable-object manipulation, constructed from a limited set of high-quality trajectories to generate additional training data efficiently. It predicts object dynamics using larger time steps than the source numerical simulator, which requires small integration steps to resolve rapid motion and prevent interpenetration. We evaluate WorldContact across 16 shopping-bag manipulation tasks. State-rollout measurements on a single H100 GPU show a $10\\times$ speedup over the source simulator, excluding rendering and disk I/O. We use the generated data to fine-tune an existing vision-language-action policy and deploy it directly on a real robot. In bag lifting, the same policy achieves 65% single-attempt success when fine-tuned on source simulation data alone, compared with 95% when fine-tuned on the dataset expanded with WorldContact. These results support efficient data generation with WorldContact for robot policy adaptation."
+  },
+  {
+    "title": "Runtime Safety Filtering for Two-Terminal Hazards in Robotic Battery Recycling",
+    "original_title": "Runtime Safety Filtering for Two-Terminal Hazards in Robotic Battery Recycling",
+    "link": "https://arxiv.org/abs/2609.19665",
+    "date": "2026-09-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2609.19665v1 Announce Type: new \nAbstract: Runtime safety filters for learned manipulation policies typically define unsafe states as unions of object-wise keep-out regions. This representation can be unnecessarily restrictive for hazards that depend on a joint spatial relation, such as battery recycling, where a conductive payload can short a charged cell only when it approaches both terminals simultaneously. We study runtime filtering for this two-terminal hazard in LIBERO using frozen OpenVLA policies. We factor a runtime filter into three design choices: the predicate structure, its geometric margin, and the fallback action applied when a commanded action is rejected. We compare a conjunctive predicate, a conventional two-site keep-out, and a composite of the two. For each predicate, we vary its margin to obtain a frontier between task success and residual hazard. We then compare four fallback strategies at matched operating points: holding, retreat, sampled search, and a continuous-action barrier projection. Across three workcells, the three predicate families trace nearly identical safety--utility frontiers once each is evaluated over its own margin. In contrast, the fallback strategy has a substantially larger effect: holding reduces task success by up to 0.302 relative to retreat without reducing hazard, while both minimally invasive fallbacks leave substantially more residual hazard. This ordering transfers to a second policy and task suite, while retreat-based filtering remains effective under standing errors in the clearances available to the filter, although correlated error in the estimated payload size is more damaging than larger independent errors in terminal position. These results show that, for proximity-defined manipulation hazards, margin selection and fallback strategy can matter more than predicate structure in determining the safety--utility trade-off of a runtime filter."
+  },
+  {
+    "title": "LYRIC: Language-Driven Physics-Based Character Control for Contact-Rich Whole-Body Object Interaction",
+    "original_title": "LYRIC: Language-Driven Physics-Based Character Control for Contact-Rich Whole-Body Object Interaction",
+    "link": "https://arxiv.org/abs/2609.19688",
+    "date": "2026-09-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2609.19688v1 Announce Type: new \nAbstract: We present LYRIC, a generative flow-matching controller for language-driven physics-based contact-rich interaction control, that enables simulated characters to perform contact-rich whole-body object interactions from a free-form language instruction and a sparse terminal object goal. To obtain reliable expert trajectories from imperfect motion-capture references, a single tracking policy is trained using geometry-conditioned interaction rewards and relaxed reference tracking near hand-object contact. To guide interaction progress without prescribing a full-body kinematic reference, we factorize the controller into a task-level planner that predicts short-horizon object and humanoid-root trajectories, and an action generator that resolves whole-body motion and contacts in closed loop. After behavior cloning, we freeze the planner and post-tune the action generator on policy using the planner's predictions as stable supervision for intermediate task progression. In a controlled OMOMO evaluation, our tracker achieves 64.3% success compared with 53.2% for an InterMimic reimplementation, while a unified policy achieves 76.5% on the full OMOMO dataset. On the held-out split, LYRIC achieves 90.3% task success, compared with 74.2% for the strongest matched kinematic-planner baseline, with better semantic alignment and motion quality. Without retraining, the controller also supports test-time object-waypoint guidance. Qualitative results further demonstrate robust, natural contact-rich interactions and zero-shot transfer to novel object shapes. The webpage is available at https://neu-vi.github.io/LYRIC/"
+  },
+  {
+    "title": "UniExo: Unified Multi-Skill Policies for Musculoskeletal Locomotion and Co-Adaptive Exoskeleton Control",
+    "original_title": "UniExo: Unified Multi-Skill Policies for Musculoskeletal Locomotion and Co-Adaptive Exoskeleton Control",
+    "link": "https://arxiv.org/abs/2609.19690",
+    "date": "2026-09-18 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2609.19690v1 Announce Type: new \nAbstract: Daily locomotion encompasses diverse activities and frequent transitions between them, yet most exoskeleton controllers are designed for a single activity or a narrow set of related movements. Changes in activity therefore typically require explicit mode switching and separately tuned or retrained controllers. Simulation-based learning reduces the need for hardware-based tuning but generally retains this limitation. Here we present UniExo, a framework that first constructs a multi-skill musculoskeletal human policy and then jointly trains an exoskeleton control policy with it. Four single-skill imitation experts for walking, turning, running and backward walking are distilled into a single network structured by a skill latent and subsequently fine-tuned through reinforcement learning on transition sequences. The resultant unified human policy achieves a mean tracking success rate of 94.7% on unseen clips of the four skills and exhibits greater robustness to perturbations than its constituent experts. A single hip exoskeleton controller (UniExo) is initialized from hip moment prediction of the human policy and co-adapted with it through multi-agent reinforcement learning across the four skills. This co-adaptation shifts the timing of the assistance torque and raises the fraction of positive work delivered to the hip. When deployed on a custom hip exoskeleton, the controller generalizes across four treadmill speeds in six participants and assists one participant through a continuous route of all four skills and their transitions, without skill labels or explicit mode switching. UniExo thus provides a step towards replacing activity-specific controllers with unified, user-specific controllers that support diverse locomotor activities and the transitions between them."
+  },
+  {
     "title": "자动飞行无人机绘制之字形路线清除斜屋顶上的青苔",
     "original_title": "Autopilot drone maps zigzag routes to clear moss from sloping roofs",
     "link": "https://techxplore.com/news/2026-09-autopilot-drone-zigzag-routes-moss.html",
@@ -17926,77 +17998,5 @@
     "source": "Google News (China Robotics - EN)",
     "category": "humanoid",
     "summary": "중국 시장 내 컴패니언 로봇의 도입 가능성에 대해 복합적인 시각이 존재함. 로봇 기술 자체의 발전세에도 불구하고, 소비자의 실제적인 수용도와 가정 내 역할 정의에 대한 과제가 남아있음. 향후 로봇이 실질적인 효용을 입증하며 시장의 주류로 자리 잡을지 여부가 핵심 관건임."
-  },
-  {
-    "title": "엇갈리는 시선: 중국의 반려 로봇이 가정 시장에서 자리를 찾을 수 있을까?",
-    "original_title": "Mixed feelings: can China’s companion robots win a place at home? - South China Morning Post",
-    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPN3N5TEl5bnk5b1B6cTM0QzljVTQ3NlVYekdBM3RNVVY4dEQxNEtTNkd0X1lMV0hwVkM4YzlyY2djdkU5Y2ZtV0dnMDhxSjMzTTZiazFWdEVpazZfLXpacklFZFdXQ1JFZ3NIUm0wdTVpeVJZb1NFYUdscTVsUDBhVGlxREFWcVRrYmhlN0FlUUVzOUdtQm82N0hBd19jaGQzTHBPcE9rTUpVVDBLc2Z0MDZsVFhpdnAwc1FhSjZSUEZrXzkzV2FZWG1iaUg3X3E4MHc?oc=5",
-    "date": "2026-08-02 06:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국이 개발한 반려 로봇의 가정 시장 도입 가능성에 대해 사회적 수용성에 엇갈리는 시선이 존재함. 로봇 기술의 발전에도 불구하고, 실제 가정 내 환경에서 소비자의 마음을 사로잡고 자리를 잡는 것이 주요 과제로 부각됨. 본 기사는 중국 반려 로봇 산업의 현재 시장 상황과 미래 성장 동력 및 난관을 심층적으로 분석함."
-  },
-  {
-    "title": "중국, 글로벌 선도 지속 속 트럼프의 신규 휴머노이드 로봇 및 인버터 차단 움직임 포착",
-    "original_title": "China Holds Global Lead as Trump Moves to Block New Humanoid Robots and Inverters - 巴士的報",
-    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQQXN6NGNHZXRNOFFMaEphNnZCQ2NDdFYzTF9qQ2ZvZklsUEdjcWlVSHdJV0xROVBFZjNxRy1tLU4wS1RSRkRwdXZBRTlKTVl6N210cE9CU3ZueU1sSG1KNC10Yk5qWWs5UlMtTUVjNHFndzV1ZF9laF9oU1Nrbk1FSm8xTVR5NzNtQ2R3UGdRamo0R1U4Z1NWUi03c3RBdnI0Y1hIWWFoVDFMcDN5UDllYk1Kb3RjSHJHVGVTaGVNdVJxVzBUOFVHWHRONFdRdw?oc=5",
-    "date": "2026-08-02 01:38",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국이 첨단 기술 분야에서 글로벌 리더십을 유지하는 상황임. 이에 트럼프 전 대통령이 신규 휴머노이드 로봇과 인버터에 대한 제한적 차단 움직임을 보이고 있다는 내용임. 이는 주요 첨단 기술 산업을 둘러싼 국가 간 지정학적 경쟁이 심화되고 있음을 시사함."
-  },
-  {
-    "title": "중국, 상위 10대 휴머노이드 로봇 모델 6개 점유; 미국이 품질 면에서 선도하는 현황 분석",
-    "original_title": "China holds six of top 10 humanoid robot spots; US leads in quality - Interesting Engineering",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeGNfel9kM3hUM2NrZFdjcUU5Y2RxUWJfZ0dXQzJOM2VBT1IwTVZpWlh5a2M5OUEtWXpMUFRzclhUSHphdFgtZllhLTQ2ZEJWajBUTTdUeWtmN21XQ1R2ai11LW9Oa1luemI5ZUU2Q1NrZ1dPREhXdXVaeks5VG1DWXpBck5EV2QwcTdj?oc=5",
-    "date": "2026-08-01 15:08",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국이 상위 10개 휴머노이드 로봇 모델 포지션 중 6개를 차지하며 높은 시장 점유율을 기록함. 다만, 전반적인 제품 품질과 기술 완성도 측면에서는 미국이 경쟁 우위를 점하며 업계의 선두를 유지하고 있는 것으로 분석됨."
-  },
-  {
-    "title": "유니트리, 상하이 IPO 앞두고 미국의 로봇 규제 리스크 경고",
-    "original_title": "Unitree Warns US Robot Restrictions Could Limit Growth Ahead of Shanghai IPO - AI Insider",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVVF4MFY3LUVPb21tX2pJWTVLRlNpUzluQXVRYldvakZfOFAyQlA3QzJKa21CdExCWjRZM01YWUJZdENCNFFxWGl0T2ZIQ0tnR3k2NWl3bTdMTVhkb1JIdUIyRkRlMFZub2NMZ0oweTFxVkx3bms3MmNETDZHMHZBM21zbFFOQmJwU25BQWNWNlVPcWozeWNuTk43NU5rbF83bW5lbTdZVXBhakpXd0p3cHEtWDI?oc=5",
-    "date": "2026-08-01 13:40",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "로봇 전문 기업 Unitree가 미국의 강화되는 로봇 규제가 회사의 향후 성장 잠재력에 제약을 가할 수 있다고 경고함. 특히 상하이 IPO를 앞두고 이러한 미국 측의 규제 환경 변화가 투자 심리 및 기업 가치에 영향을 미칠 수 있다는 우려가 제기됨."
-  },
-  {
-    "title": "2026년 7월 로보틱스 주요 이슈 10선",
-    "original_title": "Top 10 robotics stories of July 2026",
-    "link": "https://www.therobotreport.com/top-10-robotics-stories-july-2026/",
-    "date": "2026-08-01 12:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "7월 로보틱스 분야는 대규모 펀딩 라운드, 새로운 로봇 훈련 방법론, 그리고 신규 로봇 모델 출시 등 다양한 이슈로 주목받음. 로봇 훈련을 위한 접근 방식의 혁신적 진전이 주요 관심사였으며, 해당 소식은 The Robot Report를 통해 가장 먼저 다뤄짐."
-  },
-  {
-    "title": "중국 로봇의 부상: 합리적인 우수성",
-    "original_title": "The Rise of Chinese Robots: Affordable Excellence - Alwihda Info",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWmN6MU9mNDM0Nlk4a1pDM3ZIZU5UVTJ2UTMwVWlRc2RzUzBsSC1JM0RQaFpaSkZUU3liYjZOemtiTE0yQ2RFUzFhYjQtbHB2amFpYm5xVGZnRG4yY0UxdmpybldMdzgzN3VJcEVoa3EyUXRhbDhsVHN2ZXlMYWNfWE9BQQ?oc=5",
-    "date": "2026-08-01 09:46",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 로봇 시장이 가파르게 성장하는 추세를 보임. 이들 제품은 뛰어난 기술적 완성도와 성능을 갖추면서도 합리적인 가격대를 형성하는 것이 특징임. 이는 글로벌 로보틱스 시장의 경쟁 구도를 재편하는 핵심 동력으로 작용하고 있음."
-  },
-  {
-    "title": "휴머노이드 로봇: 트럼프의 차기 중국 무역 갈등 배경 분석",
-    "original_title": "Humanoid Robots: Trump's Latest China Trade Battle? - Tempo.co English",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNS2JwRGF5U3FKZjMyRGJ6RHM5YzBoak1oRmJSV2JmeFdpdTAtVUMyeC13VFQtYjZYcG9qTmFYUEF0VzIwMUhPSFl2em9tanJRTGFQT0dXcmRFWHVWeGc4VEZ1aG1MSktteGg4aVdnS1ZzOEE4RlI5SW9uOGtaanM5UVJuT3JqMFZ4?oc=5",
-    "date": "2026-08-01 07:43",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "본 기사는 휴머노이드 로봇 기술 시장이 향후 미국과 중국 간의 무역 갈등 및 기술 패권 경쟁의 주요 전선이 될 가능성을 제시함. 첨단 로봇을 둘러싼 공급망 통제와 기술 수출 규제가 새로운 경제적 갈등 요인으로 부상할 전망임."
-  },
-  {
-    "title": "Seedance 2.5: 현대 콘텐츠 워크플로우를 위한 AI 영상 제작의 진보",
-    "original_title": "Seedance 2.5: Advancing AI Video Creation for Modern Content Workflows",
-    "link": "https://roboticsandautomationnews.com/2026/08/01/seedance-2-5-advancing-ai-video-creation-for-modern-content-workflows/103829/",
-    "date": "2026-08-01 07:30",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "AI 기술이 디지털 콘텐츠 제작 방식 전반에 걸쳐 근본적인 변화를 주도하고 있으며, Seedance 2.5는 이러한 흐름의 최신 단계임. 크리에이터와 기업들이 요구하는 빠르고 매력적인 시각 콘텐츠 제작의 필요성이 높아짐에 따라, AI 기반 영상 도구가 필수적인 생산 요소로 자리매김하고 있음."
   }
 ]
