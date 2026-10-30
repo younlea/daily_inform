@@ -1,5 +1,932 @@
 [
   {
+    "title": "Robot Talk Episode 168 – Advancing robotics with novel electronics, with Zlatka Stoeva",
+    "original_title": "Robot Talk Episode 168 – Advancing robotics with novel electronics, with Zlatka Stoeva",
+    "link": "https://robohub.org/robot-talk-episode-168-advancing-robotics-with-novel-electronics-with-zlatka-stoeva/",
+    "date": "2026-10-30 13:33",
+    "source": "Robohub",
+    "category": "hand",
+    "summary": "Claire chatted to Zlatka Stoeva from DZP Technologies about flexible, stretchable and soft printed electronics for dexterous robots. Zlatka Stoeva is a founder and managing director of DZP Technologies, a Cambridge-based company specialising in advanced materials and novel forms of electronics. Zlatka’s background is in materials chemistry, and she developed the innovative electronic materials which […]"
+  },
+  {
+    "title": "RoboBusiness 2026 recap",
+    "original_title": "RoboBusiness 2026 recap",
+    "link": "https://www.therobotreport.com/robobusiness-2026-recap/",
+    "date": "2026-10-30 12:30",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "The Robot Report editorial team sits down for a recap of noteworthy sessions and networking around the 2026 RoboBusiness event.\nThe post RoboBusiness 2026 recap appeared first on The Robot Report."
+  },
+  {
+    "title": "Humanoid robot achieves 85% task success rate with AGIBOT's GO-3 model - Interesting Engineering",
+    "original_title": "Humanoid robot achieves 85% task success rate with AGIBOT's GO-3 model - Interesting Engineering",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcHpPbWlPQTZ1Tk1zTERvQXdPb1A4S3dtWDN1aUllRUpscXpEWVlvc2lqeW5YbG44NDB0N0FyUE01bDRTUV96alFiODZlLThkeXFfdXZXV0JGMTZWOUc3dWF3MzgzdEYybU9NdGpFVDhqdWFrTE9DMWVOYTVvbDJHSlFkZ21ONHd0R0RXcl9jZEI2eEFaUTFPNEJ3?oc=5",
+    "date": "2026-10-30 10:59",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Humanoid robot achieves 85% task success rate with AGIBOT's GO-3 model  Interesting Engineering"
+  },
+  {
+    "title": "DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks",
+    "original_title": "DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks",
+    "link": "https://arxiv.org/abs/2610.37799",
+    "date": "2026-10-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2610.37799v1 Announce Type: new \nAbstract: Human-level dexterity remains a central open problem in robotics, yet few simulation frameworks cover the full workflow of dexterous manipulation, from setting up a robot to collecting dexterous demonstrations and evaluating policies. We present DexSuite, an all-in-one simulation framework for dexterous manipulation built on the Genesis simulator. DexSuite provides 30 tasks and assembles its 10 arms and 12 end-effectors, from parallel-jaw grippers to dexterous hands, into more than 100 single-arm robots and thousands of bimanual pairs. It also ships a standardized environment API, integrated teleoperation, and simulated tactile sensing. Moreover, we define a benchmark of 16 task-embodiment pairs spanning diverse contact complexities and horizons, and release a dataset of 4,700 successful episodes in simulation from human teleoperation, scripted experts, and learned policies. We release DexSuite as open source and hope others will build on it. Videos and datasets are available at https://dexsuiteorg.github.io"
+  },
+  {
+    "title": "An Empirical Study of Wrist-Target Construction and Joint-Angle Limits in Humanoid Arm Retargeting",
+    "original_title": "An Empirical Study of Wrist-Target Construction and Joint-Angle Limits in Humanoid Arm Retargeting",
+    "link": "https://arxiv.org/abs/2610.37801",
+    "date": "2026-10-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2610.37801v1 Announce Type: new \nAbstract: Motion retargeting maps a demonstrated human movement onto a robot to compute its joint motion. This study examines how the construction of the desired wrist position affects whether computed arm joint angles reach their permitted limits on a Unitree H1-2. A reconstructed target is formed from demonstrated arm directions and robot segment lengths, so its shoulder-to-wrist distance depends on the demonstrated angle between the segments even when no posture-matching preference is applied. A reach-normalized target retains that direction while rescaling the distance, using the same processed demonstrations and the same joint-angle method. Across a forward-reach sweep the reconstructed target places a joint angle at a bound in 10 of 20 repetitions and the reach-normalized target in none. Across 25 recordings from one participant the corresponding counts are 8 and 6 on the reaching arm and 14 and 5 on the supporting arm, and a second participant repeats the bricklaying and lifting comparison. In hardware replay a joint is commanded to a bound in 12 of 16 direction-matching arm-records and in none of the 16 normalized records, and within the eligible records both tracking error and executed torque at those frames exceed their values elsewhere in the same run. Cross-body reach and arm-to-arm clearance identify limits of radial adjustment. The findings support treating target construction and posture matching as separate retargeting decisions, and evaluating both alongside the wrist positions and clearance that manipulation requires."
+  },
+  {
+    "title": "TACOS: Terrain-Aware COntact Supervision for Visual Footstep Planning",
+    "original_title": "TACOS: Terrain-Aware COntact Supervision for Visual Footstep Planning",
+    "link": "https://arxiv.org/abs/2610.37806",
+    "date": "2026-10-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2610.37806v1 Announce Type: new \nAbstract: Humans navigate their environment based on their vision system, anticipating how the ground will respond before committing to a step. Self-supervised learning could provide legged robots the same ability, but the supervisory signal is typically chosen on intuition, and its effect on what the model learns is rarely examined. We present Terrain-Aware COntact Supervision (TACOS), which proposes a meaningful and consistent footstep instability score, based on the residual of a factor graph in legged state estimation. It projects the continuous score into preceding images to supervise a dense visual predictor. We propose two variants, a hard score that exploits hindsight and a causal soft score available immediately. Both metrics are compared against state-of-the-art alternatives in two independent evaluations that share no data or labels. On 1716 manually annotated contacts, both variants outperform every evaluated alternative at detecting instability and ranking its severity, improving pooled severity ranking by 28 % over the strongest baseline. On three outdoor test runs, our metric also trains the most accurate visual predictor, improving rank correlation by 58 % over the strongest alternative, and by a further 25 % when supplemented with onboard context. In a real-world experiment over a 50 m forest trajectory, the trained predictor handles non-geometric terrain properties such as mud and vegetation, while stepping around geometric obstacles like fallen branches. Code is available for reproducibility at https://github.com/norlab-ulaval/TACOS."
+  },
+  {
+    "title": "Echo: Scaling Visual Reinforcement Learning with Off-policy Experience",
+    "original_title": "Echo: Scaling Visual Reinforcement Learning with Off-policy Experience",
+    "link": "https://arxiv.org/abs/2610.37865",
+    "date": "2026-10-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2610.37865v1 Announce Type: new \nAbstract: Scaling visual reinforcement learning (RL) with GPU-accelerated simulation is computationally expensive due to rendering and visual-policy inference costs. Consequently, two-stage teacher--student distillation is commonly used to train visual policies, but introduces an imitation gap. In this preliminary study, we introduce \\echomethod{}, \\textbf{a single-stage off-policy RL framework that scales experience collection without proportionally increasing visual computation}. Through \\textbf{inverse distillation}, a state-based auxiliary policy imitates the evolving visual policy and collects inexpensive, unrendered experience. Echo leverages this experience for off-policy value learning, directly improving the visual policy through a shared privileged critic. We instantiate \\echomethod{} with FastTD3 and evaluate it on three visual control tasks and two dexterous manipulation tasks in Genesis. Relative to \\sdpgmethod{} under the evaluated configurations, Echo reduces time to reference returns by an average of \\textbf{60\\% across the three locomotion tasks} and \\textbf{56\\% across both hand tasks}, while improving peak mean returns by \\textbf{62\\% and 12\\%}, respectively. Both hand tasks also achieve higher mean returns at matched simulator-transition budgets. These initial results suggest that scaling off-policy experience is a promising approach to efficient direct visual RL."
+  },
+  {
+    "title": "FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion",
+    "original_title": "FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion",
+    "link": "https://arxiv.org/abs/2610.37974",
+    "date": "2026-10-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2610.37974v1 Announce Type: new \nAbstract: This paper presents a two-stage learning framework for versatile and agile humanoid locomotion that couples online reduced-order model (ROM) reference generation with whole-body tracking control. In the first stage, we train a command-conditioned whole-body reference generator using single rigid body dynamics combined with full humanoid kinematics. In the second stage, the frozen ROM policy is rolled out online to generate references for training a whole-body tracking policy on the full-order dynamics model. Learning a kino-dynamically consistent reference generator in the simplified ROM space enables us to generate references over a broad command space and over multiple locomotion strategies using a single unified framework. We demonstrate the approach on a Unitree G1 humanoid robot, achieving longitudinal velocities from -2.0 m/s to 2.8 m/s, lateral velocities up to +-1.0 m/s, angular velocities up to +-3.0 rad/s, one-legged hopping, and continuous transitions across the commands, all using one unified reference policy and one whole-body tracking policy."
+  },
+  {
+    "title": "Active Constraints for Simultaneous Guidance and Safety in Handheld Micromanipulation",
+    "original_title": "Active Constraints for Simultaneous Guidance and Safety in Handheld Micromanipulation",
+    "link": "https://arxiv.org/abs/2610.37981",
+    "date": "2026-10-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2610.37981v1 Announce Type: new \nAbstract: In micromanipulation, erroneous hand motion limits unaided manipulation accuracy, which can affect task performance and safety in critical applications like microsurgery. Handheld robots (micromanipulators) enable motion accuracy beyond human limits by providing robotic assistance in a low-cost, compact, intuitive form factor. Particularly, active constraints are an effective form of robotic assistance, which aids the operator by restricting the robot's permissible motion based on task-specific requirements or objectives, thereby providing task guidance and enforcing safety. However, existing formulations of active constraints for handheld systems are limited, most notably because of the inability to provide guidance and enforce safety simultaneously. Implementing active constraints with optimization-based methods can address these limitations, but existing implementations are designed for free-standing robots, and neglect that handheld robots actuate relative to the operator's hand with a limited workspace. In this work, we propose an optimization-based active constraint framework for handheld micromanipulation that enables simultaneous guidance and safety enforcement. The formulation was implemented in a handheld robot and demonstrated on a medically relevant artificial task. Results show that the proposed formulation reduced safety violation rate by more than two orders of magnitude relative to baselines, while recovering the threefold accuracy loss from enforcing safety alone."
+  },
+  {
+    "title": "Self-Labeled Preference Transfer for Steerable Robot Manipulation",
+    "original_title": "Self-Labeled Preference Transfer for Steerable Robot Manipulation",
+    "link": "https://arxiv.org/abs/2610.38000",
+    "date": "2026-10-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "hand",
+    "summary": "arXiv:2610.38000v1 Announce Type: new \nAbstract: Vision-language-action (VLA) policies can learn to follow execution preferences, such as where to grasp an object or how to move around an obstacle, from demonstrations annotated with preference labels. Providing these annotations for every new task, however, is costly. We study whether learned preference control can transfer to new tasks whose demonstrations contain the desired behaviors but lack preference annotations. We find that a policy trained with preference annotations can follow preferences on a new task before adaptation but achieves limited task success. Fine-tuning on target demonstrations without these annotations improves task success while weakening preference control. Motivated by this finding, we introduce Self-Labeled Preference Transfer (SPT). SPT jointly trains a shared vision-language backbone for preference-conditioned action prediction and preference recognition on annotated source demonstrations. It then freezes the recognizer to preserve its cross-task preference recognition capability and uses it to self-label target demonstrations for policy fine-tuning. Across five types of execution preferences in simulation, the recognizer achieves 96.4% accuracy, and SPT reaches 84.8% preference following and 89.2% task success, compared with 59.4% and 88.0% for naive finetuning. We further extend to multiple preferences, achieving 93.8% preference following compared with 42.5% of baselines. In real-world experiments, SPT increases preference following from 52.5% to 92.5% relative to naive finetuning across two task transfers. These results show that SPT can support preference adaptation across tasks and objects while maintaining success, without additional manual preference annotations."
+  },
+  {
+    "title": "METATRON: A Promptable Whole-Body Execution Layer for Humanoids",
+    "original_title": "METATRON: A Promptable Whole-Body Execution Layer for Humanoids",
+    "link": "https://arxiv.org/abs/2610.38027",
+    "date": "2026-10-30 04:00",
+    "source": "ArXiv (Robotics)",
+    "category": "humanoid",
+    "summary": "arXiv:2610.38027v1 Announce Type: new \nAbstract: Humanoid controllers often require task-specific training despite sharing the need for balance and whole-body coordination. We present Metatron, a promptable whole-body execution layer combining a generative base policy with a programmable skill layer. The base policy receives partial goals, collectively called a prompt, that can combine timed body-part targets, velocity commands, and style cues. It produces diverse whole-body motions consistent with these goals. Training combines motion capture, synthetic recovery trajectories, and retargeted scene-interaction motions. After training, the policy is frozen. Stateful programs called skills express task intent as prompts at each control step, drawing rough geometric sketches that the policy turns into coordinated movement. Skills are ordinary code, refined by coding agents that analyze motion data and fit compact rules without task-specific policy training. On the physical Unitree G1, one frozen checkpoint supports walking, recovery, teleoperated object pickup, and sitting on furniture. Comparative evaluations show higher reaching success and push robustness than the tested reference-tracking pipelines. The same recipe produces climbing and acrobatics on a simulated character. Metatron enables coding agents to turn learned motor capabilities into new skills through code, without further policy training."
+  },
+  {
+    "title": "White House makes Section 232 determination regarding foreign-made robots",
+    "original_title": "White House makes Section 232 determination regarding foreign-made robots",
+    "link": "https://www.therobotreport.com/white-house-makes-section-232-determination-regarding-foreign-made-robots/",
+    "date": "2026-10-29 20:46",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "The U.S. secretary of commerce's Section 232 investigation concluded that dependence on robotics imports poses a national security risk.\nThe post White House makes Section 232 determination regarding foreign-made robots appeared first on The Robot Report."
+  },
+  {
+    "title": "2026 Robotics Handbook looks at humanoids, AI, and design choices",
+    "original_title": "2026 Robotics Handbook looks at humanoids, AI, and design choices",
+    "link": "https://www.therobotreport.com/2026-robotics-handbook-looks-at-humanoids/",
+    "date": "2026-10-29 19:36",
+    "source": "The Robot Report",
+    "category": "hand",
+    "summary": "The 2026 Robotics Handbook examines design choices behind dexterous manipulation, humanoid robots, and construction automation.\nThe post 2026 Robotics Handbook looks at humanoids, AI, and design choices appeared first on The Robot Report."
+  },
+  {
+    "title": "AGIBOT introduces Worken to measure productive robot work at AGIBOT Innovation Day 2026",
+    "original_title": "AGIBOT introduces Worken to measure productive robot work at AGIBOT Innovation Day 2026",
+    "link": "https://roboticsandautomationnews.com/2026/10/29/agibot-introduces-worken-to-measure-productive-robot-work-at-agibot-innovation-day-2026/106452/",
+    "date": "2026-10-29 16:49",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "AGIBOT unveils its AHA3 integrated hardware platform, GO-3 Preview and WITA-Omni 1.0 model, formally launches G2 Max and Link-U OS 1.0, and highlights real-world deployments AGIBOT has introduced Worken, a proposed framework for measuring the productive work performed by robots in real-world environments, at AGIBOT Innovation Day 2026 in Shanghai. Combining the words “Work” and […]"
+  },
+  {
+    "title": "110 Robots. One Dance Floor. China Just Set a Guinness World Record. - Gadget Review",
+    "original_title": "110 Robots. One Dance Floor. China Just Set a Guinness World Record. - Gadget Review",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ09JRXZmNmNqUDFJZDhJZVlJWlJ2aGJxZFhIeUdFclhzN0NPNGc2SmR0c2tyUGxVMTZFcWl5MmFZZkcxcldXTHNNYzVwRDhlT0FkdUp3d3Vqbl9jRDhkUzVqajVsZnFPb2w3WVg3Q0ZUNEt3cG4tOXc5amd5T1RscGt5MlNwSHNWM003dWdUeFBKWFhvRmd0LTVR?oc=5",
+    "date": "2026-10-29 15:56",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "110 Robots. One Dance Floor. China Just Set a Guinness World Record.  Gadget Review"
+  },
+  {
+    "title": "Data Movement Strategies In System Design",
+    "original_title": "Data Movement Strategies In System Design",
+    "link": "https://blog.bytebytego.com/p/data-movement-strategies-in-system",
+    "date": "2026-10-29 15:31",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "To manage this movement of data, you need to make decisions about when and how information should travel within a system and outside it."
+  },
+  {
+    "title": "Humanoid robot firms including AgiBot report rapid revenue growth - Global Times",
+    "original_title": "Humanoid robot firms including AgiBot report rapid revenue growth - Global Times",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1qS2xYOXYycHBxdlpka0d1cnFhRGhaU2R4cGplQW5UZnR2TllEU0tUQlFMbFRCeVg5emZFMWw3VEYybURuTlczSlhTVHFCd1pLWTFSUHlOMlJfbk5BZEg0WlJR?oc=5",
+    "date": "2026-10-29 14:31",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Humanoid robot firms including AgiBot report rapid revenue growth  Global Times"
+  },
+  {
+    "title": "AgiBot Introduces Worken Metric to Measure Productive Robot Labor - AI Insider",
+    "original_title": "AgiBot Introduces Worken Metric to Measure Productive Robot Labor - AI Insider",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTTlzMnF1Wm44aS1ScWVYUkh3VzVUcTRsOGgwdkRqMkNkUmZBcThISGZwSFFEcFdJQ1RUSW55Z05ka0x3N0hUV3FMNjNCeWh2ekZiTlBfSGl0R0VGbEFfQ0JRY01uQkJleUcwMlU1MmdwWGl1Vno5WVAtQlJ0c1k3aDhUd2xXZTR4Mnl2eDdEMVlGZ0JMQnNyemI1d1hyN2RnckZ4c2VR?oc=5",
+    "date": "2026-10-29 13:48",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "AgiBot Introduces Worken Metric to Measure Productive Robot Labor  AI Insider"
+  },
+  {
+    "title": "10 Top Custom Energy Management Development Companies to Know in 2026",
+    "original_title": "10 Top Custom Energy Management Development Companies to Know in 2026",
+    "link": "https://roboticsandautomationnews.com/2026/10/29/10-top-custom-energy-management-development-companies-to-know-in-2026/106448/",
+    "date": "2026-10-29 10:55",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Household electrification is becoming mainstream in parts of Europe. According to the European Heat Pump Association, Lithuania recorded Europe’s highest heat pump sales rate in 2025, with 46 units per 1,000 households. Each new unit adds another controllable load to the grid. Utilities, building owners, and energy startups need software that coordinates these loads with […]"
+  },
+  {
+    "title": "Unitree Sales Jump 70% in First Post-IPO Report, Profit Falls 17% - Seoul Economic Daily",
+    "original_title": "Unitree Sales Jump 70% in First Post-IPO Report, Profit Falls 17% - Seoul Economic Daily",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLXdrMWczV1czY2lvODVGUEdXY1dfd2p2THM2OWVPU2pFNjRaN0wzQXp4b3FuYVZsU0lDT0J2TW9DZ1RHR19teFVyUU9hQXB6RGdVVDVOcXpFOHpDWWRZT2MtMEtOdndWb04xbUFxdEprU2xkNTRfTG5tZDZxMlE5S0k0TEFBdTVUeFNHbWNZYlhjTjJLTVBLRlYxbWlxdVRVUnVRZA?oc=5",
+    "date": "2026-10-29 09:47",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree Sales Jump 70% in First Post-IPO Report, Profit Falls 17%  Seoul Economic Daily"
+  },
+  {
+    "title": "Winners of The Humanoid Robotics Industry Awards 2026",
+    "original_title": "Winners of The Humanoid Robotics Industry Awards 2026",
+    "link": "https://humanoidroboticstechnology.com/news/winners-of-the-humanoid-robotics-industry-awards-2026/",
+    "date": "2026-10-29 08:19",
+    "source": "Humanoid Tech Blog",
+    "category": "humanoid",
+    "summary": "Humanoid Robotics Technology is proud to announce the winners of the Humanoid Robotics Industry Awards 2026, recognising the remarkable contributions of individuals, organisations, and technologies advancing the humanoid robotics industry.  The 2026 categories span Industry Leadership, Outstanding Company, Outstanding Research Organisation, Ground-breaking Technology, and Best Use of AI. Your 2026 Winners Are Here: Category: Industry […]\nThe post Winners of The Humanoid Robotics Industry Awards 2026 appeared first on Humanoid Robotics Technology."
+  },
+  {
+    "title": "AGIBOT introduces Worken to measure robot productivity at AGIBOT Innovation Day 2026",
+    "original_title": "AGIBOT introduces Worken to measure robot productivity at AGIBOT Innovation Day 2026",
+    "link": "https://www.therobotreport.com/agibot-introduces-worken-measure-robot-productivity-innovation-day-2026/",
+    "date": "2026-10-29 04:01",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "AGIBOT unveiled its AHA3 integrated platform, GO-3 Preview, and WITA-Omni 1.0 model, as well as the G2 Max robot and Link-U OS 1.0 framework.\nThe post AGIBOT introduces Worken to measure robot productivity at AGIBOT Innovation Day 2026 appeared first on The Robot Report."
+  },
+  {
+    "title": "Humanoid Robots Made in Serbia: Minth Group and AGIBOT - The Region",
+    "original_title": "Humanoid Robots Made in Serbia: Minth Group and AGIBOT - The Region",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9LZnh4MEhva0NQcGlhR0R6UHVMOGlLcEFSMW5EbmV4bWZla1E5bV94ODlZcnBZbGpqcExDZUx0UEEzSFl1cWpPSWd6UTlCci1RZTRhRUppd0gtU3NDYnpmQkVYc2FqZWxJVExneVZpTlZPd28?oc=5",
+    "date": "2026-10-29 02:00",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Humanoid Robots Made in Serbia: Minth Group and AGIBOT  The Region"
+  },
+  {
+    "title": "Self-adjusting drone controls could make for smoother formation flying",
+    "original_title": "Self-adjusting drone controls could make for smoother formation flying",
+    "link": "https://techxplore.com/news/2026-10-adjusting-drone-smoother-formation-flying.html",
+    "date": "2026-10-28 20:40",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "A new method for controlling groups of drones, technically known as unmanned aerial vehicles (UAVs), could make formation flying smoother and reduce energy consumption and mechanical wear, according to research in the International Journal of Systems, Control and Communications. The work combines fuzzy logic processing with a self-adjusting control system, known as a self-coupling proportional-integral-derivative (PID) controller."
+  },
+  {
+    "title": "China’s 110 Dancing Humanoid Robots Set Guinness Record - ColombiaOne.com",
+    "original_title": "China’s 110 Dancing Humanoid Robots Set Guinness Record - ColombiaOne.com",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeVRvRU1oZ0NQNHNBX0JKQWZBMk1MbFl6WlpELVFjTDM3TU05bm9uMnFIbEpYMTdiTHBXWXNlZF9xNWF5Mk9rTG1mOF92amFVR0hOWkhjMFo1V2w1ejJlNnE2LVRyNm9yVzB5REFrQnlfSy1UQjBZZnNwQjlmcS04R01jb1VydEJpR0VfY3hqT2daWjlW?oc=5",
+    "date": "2026-10-28 20:24",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China’s 110 Dancing Humanoid Robots Set Guinness Record  ColombiaOne.com"
+  },
+  {
+    "title": "Interview with Faraday Future chairman: Moving from Chinese robot sourcing to US manufacturing",
+    "original_title": "Interview with Faraday Future chairman: Moving from Chinese robot sourcing to US manufacturing",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/interview-with-faraday-future-chairman-moving-from-chinese-robot-sourcing-to-us-manufacturing/106438/",
+    "date": "2026-10-28 19:31",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Faraday Future is best known as an electric vehicle company, but it is increasingly positioning robotics as a major part of its future, describing itself more broadly as a “physical AI ecosystem company”. The California-based company is now trying to build a US robotics business around technology and products that currently rely substantially on Chinese […]"
+  },
+  {
+    "title": "Neura Robotics and TUM open €17 million RoboGym and unveil new humanoid",
+    "original_title": "Neura Robotics and TUM open €17 million RoboGym and unveil new humanoid",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/neura-robotics-and-tum-open-e17-million-robogym-and-unveil-new-humanoid/106435/",
+    "date": "2026-10-28 19:09",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Neura Robotics and the Technical University of Munich have opened a €17 million robotics research and training center near Munich Airport, while unveiling the latest generation of Neura’s 4NE1 humanoid robot. The TUM RoboGym powered by Neura covers more than 2,300 square meters at LabCampus and combines robotics research, training and industrial applications. Built in […]"
+  },
+  {
+    "title": "Maxinsights raises $30 million to build training data platform for physical AI",
+    "original_title": "Maxinsights raises $30 million to build training data platform for physical AI",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/maxinsights-raises-30-million-to-build-training-data-platform-for-physical-ai/106432/",
+    "date": "2026-10-28 19:02",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Maxinsights has raised $30 million in seed funding to expand its physical AI data platform, which pays people to record everyday activities such as cooking, cleaning and other work to generate training data for robots and AI models. The company was founded by robotics and autonomous-driving veterans, with its wider engineering team including former employees […]"
+  },
+  {
+    "title": "North American robot orders climb 24.8% in Q3 of 2026, says A3",
+    "original_title": "North American robot orders climb 24.8% in Q3 of 2026, says A3",
+    "link": "https://www.therobotreport.com/north-american-robot-orders-climb-24-8-q3-2026-says-a3/",
+    "date": "2026-10-28 18:59",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Robot demand from automotive component manufacturers nearly doubled in Q3, as other sectors posted strong gains, reported A3.\nThe post North American robot orders climb 24.8% in Q3 of 2026, says A3 appeared first on The Robot Report."
+  },
+  {
+    "title": "What Symbotic’s Walmart growth teaches robotics startups about anchor customers",
+    "original_title": "What Symbotic’s Walmart growth teaches robotics startups about anchor customers",
+    "link": "https://www.therobotreport.com/what-symbotic-growth-with-walmart-teaches-robotics-startups-about-anchor-customers/",
+    "date": "2026-10-28 18:40",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Symbotic’s growth with Walmart shows how an anchor customer can fund a robotics startup’s scale while creating risks around customer concentration, contractual restrictions and the challenge of building a diversified, repeatable business.\nThe post What Symbotic’s Walmart growth teaches robotics startups about anchor customers appeared first on The Robot Report."
+  },
+  {
+    "title": "The Payroll Challenges of Scaling Robotics Businesses",
+    "original_title": "The Payroll Challenges of Scaling Robotics Businesses",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/the-payroll-challenges-of-scaling-robotics-businesses/106429/",
+    "date": "2026-10-28 18:26",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Robotics companies are continuously expanding into new markets. As a result, many businesses are setting up offices in multiple countries or hiring remote international workers to accommodate their growth. While this is helping robotics businesses scale their operations, it does come with its fair share of challenges. One of the biggest is managing payroll. So, […]"
+  },
+  {
+    "title": "The Factory PCs Nobody Patches: Why Automation Needs Remote Monitoring",
+    "original_title": "The Factory PCs Nobody Patches: Why Automation Needs Remote Monitoring",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/the-factory-pcs-nobody-patches-why-automation-needs-remote-monitoring/106423/",
+    "date": "2026-10-28 18:19",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "By Nathan Spitalny, CEO of RDE Technologies Walk through most small and mid-sized plants and you’ll find them: the Windows box running the HMI on line two, the SCADA workstation in the control room, the engineering laptop that only comes out when a PLC program needs changing. They keep production moving, and they are often […]"
+  },
+  {
+    "title": "Warp Sciences emerges from stealth, to apply robotics to drug research",
+    "original_title": "Warp Sciences emerges from stealth, to apply robotics to drug research",
+    "link": "https://www.therobotreport.com/warp-sciences-emerges-stealth-apply-robotics-drug-research/",
+    "date": "2026-10-28 16:28",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Warp Sciences has co-founders from OpenAI, Meta, and more, plus funding to build infrastructure for automated drug discovery in the U.S.\nThe post Warp Sciences emerges from stealth, to apply robotics to drug research appeared first on The Robot Report."
+  },
+  {
+    "title": "Unitree's post-IPO results show strong revenue growth - Global Times",
+    "original_title": "Unitree's post-IPO results show strong revenue growth - Global Times",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1wUFBISGhuNTBaUjFQMk1BOVRYczRfbHk3TWJnNHBOUGMzWlFjLWMyNmxISzQ5amJxRGlrZFFhY1NNeWxoVHZmVnNRZ1NyRGthazZtLTFLUE43akpfU2V1TlRB?oc=5",
+    "date": "2026-10-28 15:43",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree's post-IPO results show strong revenue growth  Global Times"
+  },
+  {
+    "title": "A new flexible foot pad enables this one-legged, hopping robot to go where few robots have gone before",
+    "original_title": "A new flexible foot pad enables this one-legged, hopping robot to go where few robots have gone before",
+    "link": "https://techxplore.com/news/2026-10-flexible-foot-pad-enables-legged.html",
+    "date": "2026-10-28 15:40",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "A team of University of Toronto Engineering researchers has developed a flexible foot pad for the \"Hopcopter\"—a one-legged, hopping robot they developed—significantly enhancing its performance on sand, ice and other difficult terrain."
+  },
+  {
+    "title": "How Uber Built A Gateway For AI Agents To Access Tools",
+    "original_title": "How Uber Built A Gateway For AI Agents To Access Tools",
+    "link": "https://blog.bytebytego.com/p/how-uber-built-a-gateway-for-ai-agents",
+    "date": "2026-10-28 15:31",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "In this article, we’ll look at how Uber built this gateway in detail."
+  },
+  {
+    "title": "WorldOracle Tests Whether World Models Can Reliably Predict Real-World Executions",
+    "original_title": "WorldOracle Tests Whether World Models Can Reliably Predict Real-World Executions",
+    "link": "https://www.therobotreport.com/worldoracle-tests-whether-world-models-can-reliably-predict-real-world-executions/",
+    "date": "2026-10-28 13:44",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "In one case showcased by WorldOracle, a robot's grasp missed, yet the world model predicted that the robot had successfully picked up the fruit.\nThe post WorldOracle Tests Whether World Models Can Reliably Predict Real-World Executions appeared first on The Robot Report."
+  },
+  {
+    "title": "Unitree sees quarterly profit jump, but AI investment weighs on core earnings - South China Morning Post",
+    "original_title": "Unitree sees quarterly profit jump, but AI investment weighs on core earnings - South China Morning Post",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPM2dheTlDQXlvUy1Ec1M2OU1tNmtaZzNXMU5aRlFxRnhCX2x5RWZaQTZLcGhYYzYyRXN2RmVxeFAzakJZajJYb1lfQ0dsTEQxOVZacFB0UXplanZJUXFzdmRSa3RkZkZ2a2NqVEg1X3d6X1Rpa1N2QTQxeGRLOUswaTFuTy1Pb3I5bUlvQ09qVlQ2YXU4S2tOaTU1S21CTm1VY21HY1BjTnpHdWc5bVRpU2VkRW5rVEljMENFQjVEbjHSAcABQVVfeXFMUFJ5VXp1cUZuaWs1c19LSkNSQndiWmlwNUsxaldlaTZldW9VT0F6WXpTTk1tWFhKOEw4blFzTDluTjA0M2RwTXFUR09MZW1qazRRSmNsaG9lN1U1bVo5Vy1CdlhKSE4zM2FscGYyT01VMzNiVTBWQTRwbVFNUWdCWDI2NkpWV1dFQlZFbDczRjFOVk5QRUlCU2FlYkpUenY2QmlWVjBnT09fWmRDWHJEZjZrSlVZWElOT0hZcWZpOEFr?oc=5",
+    "date": "2026-10-28 13:38",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree sees quarterly profit jump, but AI investment weighs on core earnings  South China Morning Post"
+  },
+  {
+    "title": "China's Unitree Robotics posts mixed Q3: nine-month net profit surges 2.7x, quarterly R&D spending jumps 249% - BigGo Finance",
+    "original_title": "China's Unitree Robotics posts mixed Q3: nine-month net profit surges 2.7x, quarterly R&D spending jumps 249% - BigGo Finance",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBvZUhZaXF1UkFiWllEN2sxNVdRTGNrTl9XQU91eTJwbm9tOVB0ajlYMlRoZXM5LURuX0gxZUdjQm1ObUlVUUN6dUZZUW1TdFBmWjJ1UTZzUGsyVFlNUXI4cnlMd21STmNzZ1l4ZHU4UW9EdG1GZFE?oc=5",
+    "date": "2026-10-28 13:25",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China's Unitree Robotics posts mixed Q3: nine-month net profit surges 2.7x, quarterly R&D spending jumps 249%  BigGo Finance"
+  },
+  {
+    "title": "China Physical AI Roundup: Unitree Earnings, AgiBot Robot Launch, XPeng Robotaxi Update, Plus Funding & Xiaomi's New Hand - AI Insider",
+    "original_title": "China Physical AI Roundup: Unitree Earnings, AgiBot Robot Launch, XPeng Robotaxi Update, Plus Funding & Xiaomi's New Hand - AI Insider",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZmdHTUlRdjRDV2dWcXRBVkZHMlBqdGo0SDhJS0ZXLWVrZ3JMcklibDluYUIwamRtbDZ5bHBBekQtZ2hXTVFRLUNka2txUmNfNUlnR1BtbHZ3MjlIQjZRNnRBeWdZdUtyeXF2MUZJZmo0OUgwc3ZOZ3FDVTdwODF3RmJiaEQ2aXVja1RpVm5pdnBvTXYzZXRsOXBvcGNHNldKamFLT0hJTGZEX2syVFlfVzZzMDByUktTYWhaRlk2QXlyUjZMVVdEZWRlaWk0YXBvVEZtUm0wQUFnV2RkOEdUXzNQRUpoUmVfeFFRYzcyeUM?oc=5",
+    "date": "2026-10-28 13:11",
+    "source": "Google News (China Robotics - EN)",
+    "category": "hand",
+    "summary": "China Physical AI Roundup: Unitree Earnings, AgiBot Robot Launch, XPeng Robotaxi Update, Plus Funding & Xiaomi's New Hand  AI Insider"
+  },
+  {
+    "title": "Unitree's quarterly revenue surges 70pc in test for China's robotics sector - The Standard (HK)",
+    "original_title": "Unitree's quarterly revenue surges 70pc in test for China's robotics sector - The Standard (HK)",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPS3YxYTZ0emtoa1pOR2hPcDdkOEFpeHhiamRfdnB2RmdSOE45ajMzM0ZrS2NmVGhTb3I4Qll5NFdpakw0b0ZnQkh2VDBNQUJOMUt5TER3aF96T0RYY0dQQXdZTDZjVXRkSFVSaWJtX21HYlNQWE1yU1pSWHItX0FBcU5PVmt2bTVoZEhkdUdDUk16d2xiWjQwcUUyWTU3b3RuOTQ2RTlKbURKeG9oUmY0SGZZdnkzcWYzNHJYRkFadlFNZjlOcnc?oc=5",
+    "date": "2026-10-28 12:46",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree's quarterly revenue surges 70pc in test for China's robotics sector  The Standard (HK)"
+  },
+  {
+    "title": "Unitree's quarterly revenue surges 70% in test for China's robotics sector - Reuters",
+    "original_title": "Unitree's quarterly revenue surges 70% in test for China's robotics sector - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdkkxMGZFaG5UVFVwY2JaNVA0RG9TTnNJOXoxaElhSmhhT0RQQWxTSUNxNkFFMWg2em1GclFpMFlYRkc1ZTQ5VGJCdHY5WFdYUDFIRU9XWk9UX2FYV054dEVtZnZzZkpyd3c1Nkc5Z2Q1cWl6RTc3RnN1V0FzbkMxMXg0bjRCZjZVbjJlbElFcm8zcGVlOHNDRWFZSVlHQ3YxaHpJTi16NVJDN1U1NklWcEZRcXdvTGpSUlE?oc=5",
+    "date": "2026-10-28 12:36",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree's quarterly revenue surges 70% in test for China's robotics sector  Reuters"
+  },
+  {
+    "title": "Insect-inspired flying robot bounces back after collisions",
+    "original_title": "Insect-inspired flying robot bounces back after collisions",
+    "link": "https://techxplore.com/news/2026-10-insect-flying-robot-collisions.html",
+    "date": "2026-10-28 11:40",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "Flying insects, such as fruit flies, bees, dragonflies and mosquitoes, can dart through narrow spaces and survive collisions with various objects. In contrast, many flying robots fall, suffer damage or even break down when they hit nearby surfaces or objects."
+  },
+  {
+    "title": "Fort Robotics secures approximately $20 million in additional funding",
+    "original_title": "Fort Robotics secures approximately $20 million in additional funding",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/fort-robotics-secures-approximately-20-million-in-additional-funding/106419/",
+    "date": "2026-10-28 11:26",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Fort Robotics, a developer of security systems for physical AI, has announced approximately $20 million in new commitments from existing investors, expanding the capital available to support Fort’s next phase of growth. Tiger Global is leading an approximately $10 million financing, with participation from Mark Cuban Companies, that is expected to close this week. Tiger […]"
+  },
+  {
+    "title": "Avride delivery robots expand to four US cities through Wonder partnership",
+    "original_title": "Avride delivery robots expand to four US cities through Wonder partnership",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/avride-delivery-robots-expand-to-four-us-cities-through-wonder-partnership/106416/",
+    "date": "2026-10-28 11:18",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Wonder is expanding its partnership with autonomous technology developer Avride to scale AI-powered robot delivery across Jersey City and Hoboken in New Jersey, Arlington County in Virginia and Philadelphia, Pennsylvania. The expansion brings autonomous delivery to dozens of additional merchants on the Grubhub marketplace, including at least one Wonder location in each market, with more […]"
+  },
+  {
+    "title": "Unitree's Q3 profit down 17.4% on-year, in test for China's robotics sector - Yahoo Finance",
+    "original_title": "Unitree's Q3 profit down 17.4% on-year, in test for China's robotics sector - Yahoo Finance",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNG51ZWVVWl9sVS1xRThqOHV0aUF5dXVpMDRsVFpPZEN4X0pCSmdmbmpXMldoT1VxSTlnRGE5RWNPckNxcWFFYWVteEJid2NNZkI2US1IWmd5alI3QU5yMjV2VnZmc2NNcjFoSzlMTjJDWU5heXZxU1hyNFg4TllRRnJTVU1XY0NlNjNMODZ5REg?oc=5",
+    "date": "2026-10-28 11:09",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree's Q3 profit down 17.4% on-year, in test for China's robotics sector  Yahoo Finance"
+  },
+  {
+    "title": "Leiden University study finds autonomous UV-C robot meets disinfection standards",
+    "original_title": "Leiden University study finds autonomous UV-C robot meets disinfection standards",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/leiden-university-study-finds-autonomous-uv-c-robot-meets-disinfection-standards/106410/",
+    "date": "2026-10-28 11:01",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "An autonomous UV-C disinfection robot developed by Ryberg Healthcare has met international disinfection standards, according to a study by researchers at Leiden University. The Omnia robot was evaluated by researchers at the university’s Institute of Biology Leiden in a furnished laboratory designed to emulate a hospital environment. Published in the peer-reviewed journal Infection Prevention in […]"
+  },
+  {
+    "title": "Teradyne Robotics and Sereact partner to drive physical AI solutions for retail and logistics",
+    "original_title": "Teradyne Robotics and Sereact partner to drive physical AI solutions for retail and logistics",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/teradyne-robotics-and-sereact-partner-to-drive-physical-ai-solutions-for-retail-and-logistics/106406/",
+    "date": "2026-10-28 10:48",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Teradyne Robotics and Sereact have formed a partnership to combine Sereact’s physical AI technology with Universal Robots’ collaborative robots for applications in retail, logistics and manufacturing. The partnership pairs Sereact’s physical AI platform with collaborative industrial robots from Universal Robots to bring intelligent, adaptable automation to real-world operations previously hard to automate, such as the […]"
+  },
+  {
+    "title": "Siemens and Nvidia advance AI-powered PCB inspection from digital twin to factory",
+    "original_title": "Siemens and Nvidia advance AI-powered PCB inspection from digital twin to factory",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/siemens-and-nvidia-advance-ai-powered-pcb-inspection-from-digital-twin-to-factory/106398/",
+    "date": "2026-10-28 10:34",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "Siemens is collaborating with Nvidia to develop adaptive AI-powered manufacturing capabilities that combine industrial software, Siemens’ Digital Twin technology and Nvidia Cosmos to accelerate production planning, inspection preparation and optimization. The collaboration combines Siemens’ Teamcenter software for product lifecycle management (PLM) and Process Preparation X with Nvidia Cosmos to create an AI-powered workflow for printed […]"
+  },
+  {
+    "title": "110 humanoid robots dance in perfect sync to set Guinness World Record in China - Interesting Engineering",
+    "original_title": "110 humanoid robots dance in perfect sync to set Guinness World Record in China - Interesting Engineering",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPa0FrSWlNVFBpY292UmdycVFJOGVDV3hHOWduZHZHSF9RU0JGeUM2cEFUOWJIMGtGbXh1Z0w2aUhLU2ZYdHVQNkY1Nk85NDJVYjNRY2U3NndHVWNTdk42MWMyaWl2T0Y1TWliT1ZjU2ptZFJaT2E2SW5pQ3JLSE5VUUprQ1RfTXo0cHhfQUFjd1p5VmUxUmd4Vw?oc=5",
+    "date": "2026-10-28 10:31",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "110 humanoid robots dance in perfect sync to set Guinness World Record in China  Interesting Engineering"
+  },
+  {
+    "title": "Shadow Robot and Fraunhofer IFF to investigate dexterous robotics - The Engineer",
+    "original_title": "Shadow Robot and Fraunhofer IFF to investigate dexterous robotics - The Engineer",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUnNxVkRnWFk5Z2tRWllVMXliR2pKb0wtQ3FPeDk5U0FQNmpKUzg3Y2hoa1drbFZ1WnBGdXEwajZpb2xJN0hON3pCMnVHNU9hWlA0NTdpUm5ZRFpaZmNzQ3VTVjNGSVU1cnNMSnJlczdHMU9xenQ0Z1pMMjVmUGZlbE5TUk1RRTQ0c3h6MzBaczJXSGN0SXdnNUxVNHNhaXQ5?oc=5",
+    "date": "2026-10-28 09:54",
+    "source": "Google News (Global Hand/Gripper)",
+    "category": "hand",
+    "summary": "Shadow Robot and Fraunhofer IFF to investigate dexterous robotics  The Engineer"
+  },
+  {
+    "title": "New book envisions new era of global robot sports",
+    "original_title": "New book envisions new era of global robot sports",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/new-book-envisions-new-era-of-global-robot-sports/106395/",
+    "date": "2026-10-28 09:13",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "A new book, called The Robot Goal Federation has set out an ambitious vision to sports entertainment: a governing institution, professional leagues, robotic athletes, and fans with a meaningful role in the competition. David D’Arcangelo presents that vision in his new book: The Robot Goal Federation: A Blueprint for a New Era of Sports Entertainment, […]"
+  },
+  {
+    "title": "Competing in RoboCup@Home and winning the 2026 best paper award: an interview with Raphael Memmesheimer",
+    "original_title": "Competing in RoboCup@Home and winning the 2026 best paper award: an interview with Raphael Memmesheimer",
+    "link": "https://robohub.org/competing-in-robocuphome-and-winning-the-2026-best-paper-award-an-interview-with-raphael-memmesheimer/",
+    "date": "2026-10-28 09:07",
+    "source": "Robohub",
+    "category": "humanoid",
+    "summary": "Team NimbRo’s robot in action during the RoboCup@Home competition at RoboCup 2026. Raphael leads the team. Raphael Memmesheimer has been successfully competing in the RoboCup@Home league winning the RoboCup@Home competition five times. He and his colleagues won the best paper award at RoboCup 2026 for their work “Efficient Image Annotation via Semi-Supervised Object Segmentation with […]"
+  },
+  {
+    "title": "Unitree unveils new humanoid robot with advanced rescue capabilities - CCTV.com English",
+    "original_title": "Unitree unveils new humanoid robot with advanced rescue capabilities - CCTV.com English",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9RVlJPbENHU1FsVG5TdnhDS1VOamVjNDZUeDZUajlWeFZ1QUY3XzIwb2FiT3o3NklfZkZFYTR0Nl9Lc0pSMkFEZjhaZDMyQ29WZU1vUi03dXJfNl9ySVBaMlNlT0FCdWJwb1VGeXpnRzU0U3RncHRRNTNaTW0?oc=5",
+    "date": "2026-10-28 07:49",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree unveils new humanoid robot with advanced rescue capabilities  CCTV.com English"
+  },
+  {
+    "title": "Unitree unveils H2-X humanoid guardian robot with martial arts moves - China Daily",
+    "original_title": "Unitree unveils H2-X humanoid guardian robot with martial arts moves - China Daily",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE42c3Q3QlRKTnJPSVVTLVF4TFU4d25BNXMtdmdIdk1EdU5SQmZ2VEtqWU01SlJaQ1VQYTdLcHZELWh4N3Y4RUY4OWN6VDBEdV9mdHV1T3VLZTNuSWJoeHRPc082Sk1FWDJzWFp6M0JURjhmdzhwZmRJaUVGT0lldw?oc=5",
+    "date": "2026-10-28 07:46",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree unveils H2-X humanoid guardian robot with martial arts moves  China Daily"
+  },
+  {
+    "title": "Bringing dexterous robots to the world: Sharpa's founder on why Singapore is the launchpad for the future of embodied AI - Singapore Economic Development Board (EDB)",
+    "original_title": "Bringing dexterous robots to the world: Sharpa's founder on why Singapore is the launchpad for the future of embodied AI - Singapore Economic Development Board (EDB)",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQWTlpaXJ5U1B0eG5YSUxIejlVaExBbHg4UGpnT2c3SkhEcENCejNrY3Y1Nlg2RU40OWdrNkdmOEJ4UUhuQmxfR21BbnBsR0RzRkN2SF85Y3ZrMUNnZHFBNWcwcUItdzZkNDdKNUx5b0w3ODJVclZYMHdnaGlGeXp5Z2R2djFERzAzdm8xUDFyUGhES2NTQ09OWHdMTXYtQlFhTzhYSDFZN242RDl3RVFGdDJNRWlKN2tzaHhlMmdlaVctblRuaGpHZ1Z1TlpKdjNrUUZzaGs4OWl5b3VJbG1SNDVMSWtnNFVjSUhxZmRSV1c?oc=5",
+    "date": "2026-10-28 07:00",
+    "source": "Google News (Global Hand/Gripper)",
+    "category": "hand",
+    "summary": "Bringing dexterous robots to the world: Sharpa's founder on why Singapore is the launchpad for the future of embodied AI  Singapore Economic Development Board (EDB)"
+  },
+  {
+    "title": "China Robot Stocks Extend Rally With Unitree Earnings in Focus - Bloomberg.com",
+    "original_title": "China Robot Stocks Extend Rally With Unitree Earnings in Focus - Bloomberg.com",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbUgtN1ctOUdwcjFkVFZweHh2azZlUGpQZFRtOXRIUzg0MU9VeVpPWWVwTDc0bHVCZDczVHBXZ204WjFieHFCbkRPSUtxODR0clQ5dzFoNmx6SV9SSUVzZ0RyN0pjVUtfTVBGeGxZNVVCUmtMekM3Q0h6T3Z6M3Fwd2JOaXNWNjEySDdRaW14RTZPLVMycUptTENtV28xYzZBLTcyTFlLNGVhTWxXZVlxX0JSRQ?oc=5",
+    "date": "2026-10-28 04:41",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China Robot Stocks Extend Rally With Unitree Earnings in Focus  Bloomberg.com"
+  },
+  {
+    "title": "World's largest humanoid robot maker sets Guinness record with 110 robots dancing in sync - VnExpress International",
+    "original_title": "World's largest humanoid robot maker sets Guinness record with 110 robots dancing in sync - VnExpress International",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQaUZYeWU3Rjk2Y0lCaDRkZUpKOTFFc0R2UHZ5LVdtbkFTSFhDc0s2Ykh1enhTTFNsY1M3MVRnaTlVWWdfeFFyNTBPN0RiZURiZWdFaVplTmFxVTBJNUJ0UlpaWEwxRjhzS3Ezc0FjQWI3ZnZIR1FGRDMyaGhiaFlyc3E5V25RMERFa3R5R0RoLVhRamZzb1JfSnYwakF0dVVzeGlHbmFZOGpJeWNFaDRwM01yd0xrSHFybUZlckYyRElWNVV2X05oRVZZM2tFNkE2d08xOXRXVm8zT3lJazNz?oc=5",
+    "date": "2026-10-28 03:46",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "World's largest humanoid robot maker sets Guinness record with 110 robots dancing in sync  VnExpress International"
+  },
+  {
+    "title": "The Three Foundational Material Categories Shaping Robot Manufacturing",
+    "original_title": "The Three Foundational Material Categories Shaping Robot Manufacturing",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/the-three-foundational-material-categories-shaping-robot-manufacturing/106388/",
+    "date": "2026-10-28 02:48",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "2026 has been called the “year of mass production” for humanoid robots. In the first half of the year alone, output exceeded 40,000 units, with full-year projections surpassing 100,000. As robots transition from stage performers to workers in factories and retail spaces, a fundamental question emerges: what enables them to execute movements that look increasingly […]"
+  },
+  {
+    "title": "How Robotics and Automation Suppliers Can Win More B2B Leads with Paid Search",
+    "original_title": "How Robotics and Automation Suppliers Can Win More B2B Leads with Paid Search",
+    "link": "https://roboticsandautomationnews.com/2026/10/28/how-robotics-and-automation-suppliers-can-win-more-b2b-leads-with-paid-search/106384/",
+    "date": "2026-10-28 02:03",
+    "source": "Robotics & Automation News",
+    "category": "humanoid",
+    "summary": "According to Gartner, buyers spend only about 17% of their buying time meeting suppliers. They would have spent the largest chunk researching and deliberating within the team. Most of that research happens online. This is why more robotics and automation firms now use specialist Google Ads services for B2B brands to reach engineers who are […]"
+  },
+  {
+    "title": "Robots Need a \"Sense of Touch\" Too: PaXini on Tactile Sensing, Data, and Physical AI | Silicon Valley 101 Annual Offline Conference｜硅谷101 - finance.biggo.com",
+    "original_title": "Robots Need a \"Sense of Touch\" Too: PaXini on Tactile Sensing, Data, and Physical AI | Silicon Valley 101 Annual Offline Conference｜硅谷101 - finance.biggo.com",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ZWG5QRDgxRUEya0RtbVpPSVJkVUNRa3FUM2txdHlfTVg3OHprd0RqMjRFcHoyNk5KLVVFZXZHcDVnbl9WU1NUZ3hCMUpNWTJpcFVYRHF0OV9HQVpJalN3?oc=5",
+    "date": "2026-10-27 20:17",
+    "source": "Google News (China Hand/Sensor Startups - EN)",
+    "category": "hand",
+    "summary": "Robots Need a \"Sense of Touch\" Too: PaXini on Tactile Sensing, Data, and Physical AI | Silicon Valley 101 Annual Offline Conference｜硅谷101  finance.biggo.com"
+  },
+  {
+    "title": "NVIDIA’s GR00T Humanoids Have a Standardization Problem - https://mikekalil.com/",
+    "original_title": "NVIDIA’s GR00T Humanoids Have a Standardization Problem - https://mikekalil.com/",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBhSmFtZzYwT29TaXAtSXJ1Mmx2dDNOaG5teFkwUTdQTERXUzYxNjJ0TzBaMnBxdUdJbk1QUlFfOWJ3cDNPQ05CQ2RwZ28tQnRvdkd2bHpmNzU3b2tfaEZoVjRKd3M?oc=5",
+    "date": "2026-10-27 17:22",
+    "source": "Google News (NVIDIA GTC)",
+    "category": "humanoid",
+    "summary": "NVIDIA’s GR00T Humanoids Have a Standardization Problem  https://mikekalil.com/"
+  },
+  {
+    "title": "How Apple Fits an LLM on Your iPhone",
+    "original_title": "How Apple Fits an LLM on Your iPhone",
+    "link": "https://blog.bytebytego.com/p/how-apple-fits-an-llm-on-your-iphone",
+    "date": "2026-10-27 15:31",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "How is Apple able to fit such a model on an iPhone without any adverse impact on the device?"
+  },
+  {
+    "title": "ANYbotics begins delivering ANYmal X legged robot for explosive atmospheres",
+    "original_title": "ANYbotics begins delivering ANYmal X legged robot for explosive atmospheres",
+    "link": "https://www.therobotreport.com/anybotics-begins-delivering-anymal-x-legged-robot-explosive-atmospheres/",
+    "date": "2026-10-27 14:29",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "ANYbotics has designed the ANYmal X inspection robot to comply with the strictest safety standards of the oil, gas, and chemical industries.\nThe post ANYbotics begins delivering ANYmal X legged robot for explosive atmospheres appeared first on The Robot Report."
+  },
+  {
+    "title": "Embotech and BMW move 1M vehicles with automated driving technology",
+    "original_title": "Embotech and BMW move 1M vehicles with automated driving technology",
+    "link": "https://www.therobotreport.com/embotech-bmw-move-1m-vehicles-automated-driving-technology/",
+    "date": "2026-10-27 12:45",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Embotech is automatically moving 3,500 vehicles around the clock daily across four BMW sites in the U.K. and Germany.\nThe post Embotech and BMW move 1M vehicles with automated driving technology appeared first on The Robot Report."
+  },
+  {
+    "title": "Xpanner launches autonomous pile driver for solar farm contruction",
+    "original_title": "Xpanner launches autonomous pile driver for solar farm contruction",
+    "link": "https://www.therobotreport.com/xpanner-launches-new-autonomous-pile-driver-solar-farm-contruction/",
+    "date": "2026-10-27 11:44",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Xpanner's new X1 Piling R6 robot autonomously drives solar posts with one operator, improving placement accuracy while cutting on-site labor.\nThe post Xpanner launches autonomous pile driver for solar farm contruction appeared first on The Robot Report."
+  },
+  {
+    "title": "DS투자증권 \"휴머노이드 로봇, 전기전자 부품 기업에 새로운 기회\" - 로봇신문",
+    "original_title": "DS투자증권 \"휴머노이드 로봇, 전기전자 부품 기업에 새로운 기회\" - 로봇신문",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5FUDV3ZjZPT3FMUGJBemhNQU81NlhwOGJMME9nc0RpVDJveXVrQlY1ZnhwRmRIVV9KVnQxcXNkN1B3Zk4tUDhSbXdwck90VENXY1UzQ251ZThaZHN2UVh2N1AyNXBvbXJKSzBNMw?oc=5",
+    "date": "2026-10-27 11:16",
+    "source": "Google News (Humanoid)",
+    "category": "humanoid",
+    "summary": "DS투자증권 \"휴머노이드 로봇, 전기전자 부품 기업에 새로운 기회\"  로봇신문"
+  },
+  {
+    "title": "Artificial skin helps robots grasp pencil lead and pull away from needles",
+    "original_title": "Artificial skin helps robots grasp pencil lead and pull away from needles",
+    "link": "https://techxplore.com/news/2026-10-artificial-skin-robots-grasp-pencil.html",
+    "date": "2026-10-27 11:10",
+    "source": "Tech Xplore",
+    "category": "hand",
+    "summary": "Researchers have covered robotic fingers with a new artificial skin that allows the hand to grasp fragile pencil lead and pull away from a needle before it punctures the covering. Both actions depend on more than sensitive sensors. The robot must also receive and interpret their signals quickly enough to respond."
+  },
+  {
+    "title": "Agile Robots and NVIDIA Unveil Agile ONE SN Humanoid Robot for Research - Gasgoo",
+    "original_title": "Agile Robots and NVIDIA Unveil Agile ONE SN Humanoid Robot for Research - Gasgoo",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPYl9qZV9Nd3pwa0Q2WUY2bUpzRGdXOEhzSXNuMENnTmgySXNweE1HR0xIYlRFcjNNOGlHdi16eU03dmxRejJYNjU1NGZuMmJkbzZvbGJsQ0ZObmtGRmFSRTJwbldkN1pTNXY1R1RaNURmcFVKWG45WUFtb1NVbEtlWl85UUw0WV8ycHJPZ0RoNERKcEJidFpSRHFwNlhPc0xLRWVGSkw4UmJUZzdHdmpjRTQyRlNmNll3dEdsZzQ1RWZUSzFRSjY2ZDQ2M0F0UQ?oc=5",
+    "date": "2026-10-27 10:43",
+    "source": "Google News (NVIDIA GTC)",
+    "category": "humanoid",
+    "summary": "Agile Robots and NVIDIA Unveil Agile ONE SN Humanoid Robot for Research  Gasgoo"
+  },
+  {
+    "title": "Can Boston Dynamics keep up with Tesla and China in the humanoid robot race? - MassLive",
+    "original_title": "Can Boston Dynamics keep up with Tesla and China in the humanoid robot race? - MassLive",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWVBHNEVBR05VR1NCSExqMWJ5cjJxUUlqRGtKOExZczNKN3plMFFQaS1ZYUktNGlpUWlGcUVYV21vR1l6X25tMGNuaWhCeFZPdkl6bUxZUUtTRkpqeGlpR0RPYl9wdDZWOVJWTGJoRFJyelJZNWJkNUk0TTRHcG1HakRCZHZPRVZzODhZSTFCNTdfNWRyTmRiTDhXbTRoamItWkdGcW12cGtUZlNQSjRnNHNVWVJzMmJydlE?oc=5",
+    "date": "2026-10-27 09:33",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Can Boston Dynamics keep up with Tesla and China in the humanoid robot race?  MassLive"
+  },
+  {
+    "title": "Agile Robots Launches Agile ONE SN Humanoid at NVIDIA GTC Berlin and Pilots Humanoids with Audi - Yahoo Finance",
+    "original_title": "Agile Robots Launches Agile ONE SN Humanoid at NVIDIA GTC Berlin and Pilots Humanoids with Audi - Yahoo Finance",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeVEyVGNjTHp3SEdrY0ZoMWR5NHBfbFl4MDdIZjFPaVhYeHJHLVlObDZqeEx1X0lXamsyc2xwZncxNVZJdzVmaGRYRHRLR1pxdUlwMEJ6VFdkaFN1Y0xXTnJDQjFLUXN5MTd0VUxKTVlIVDVFOFpPanVsRzRyV3BjLXAtSHhhcF9UbW4xN29kSmltMERlMzNlQWFfTQ?oc=5",
+    "date": "2026-10-27 06:22",
+    "source": "Google News (NVIDIA GTC)",
+    "category": "humanoid",
+    "summary": "Agile Robots Launches Agile ONE SN Humanoid at NVIDIA GTC Berlin and Pilots Humanoids with Audi  Yahoo Finance"
+  },
+  {
+    "title": "In China, the AI bubble has already burst - The Business Standard",
+    "original_title": "In China, the AI bubble has already burst - The Business Standard",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNLUgyZW5hTV9VVndSa3N5ZGh1Z3JheDdlaUpxQWNUQzRvNzVZZC1fWTJnZ3NZempidVZlbVdEUktxZlVnT2lkdmRFYXlLYjVsNGt6bThDSlpJdFcxYzNnb0x3ZWZDaUhia2RyNnhteldKalczVW5xNWl1SE13akF6TmlsTEp3TXM?oc=5",
+    "date": "2026-10-27 05:55",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "In China, the AI bubble has already burst  The Business Standard"
+  },
+  {
+    "title": "China's Unitree Robotics shares surge over 60% in less than two weeks despite industry risks warning - CNA",
+    "original_title": "China's Unitree Robotics shares surge over 60% in less than two weeks despite industry risks warning - CNA",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQUl3UTdZOVBIY0FZSEcwWjh0cWswX1VpNFRJQWN2TjcxN2VlYl90ZHFwckJhcl9zdU5tcHFHY0hvLWdPR3NVYW5lSmprVmJnS0pIVGh5QzJrX2tCZGNzNW5Dd3ZTekZvODRfcXdRSDQ1cV9FdXBHc1Z5bmpMcE8zUnJXR1RYeUJNNXNmd25vZGxoUQ?oc=5",
+    "date": "2026-10-27 05:25",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China's Unitree Robotics shares surge over 60% in less than two weeks despite industry risks warning  CNA"
+  },
+  {
+    "title": "Bedrock Robotics nears $1B in total funding as demand for autonomous heavy equipment surges",
+    "original_title": "Bedrock Robotics nears $1B in total funding as demand for autonomous heavy equipment surges",
+    "link": "https://www.therobotreport.com/bedrock-robotics-nears-1b-in-total-funding-as-demand-for-autonomous-heavy-equipment-surges/",
+    "date": "2026-10-26 21:15",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Bedrock Robotics has secured $600 million to scale autonomous heavy equipment and combat construction labor shortages.\nThe post Bedrock Robotics nears $1B in total funding as demand for autonomous heavy equipment surges appeared first on The Robot Report."
+  },
+  {
+    "title": "Last chance to get every live course in one membership",
+    "original_title": "Last chance to get every live course in one membership",
+    "link": "https://blog.bytebytego.com/p/last-chance-to-get-every-live-course",
+    "date": "2026-10-26 20:24",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "We’ll stop selling ByteByteGo Live annual memberships on October 28 at 2 PM PT. After that, courses will be sold individually."
+  },
+  {
+    "title": "OMRON to acquire OnLogic to address edge AI applications",
+    "original_title": "OMRON to acquire OnLogic to address edge AI applications",
+    "link": "https://www.therobotreport.com/omron-acquires-onlogic-address-edge-ai-applications/",
+    "date": "2026-10-26 20:13",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "OMRON will add industrial computing from OnLogic to its industrial automation expertise to serve data- and AI-intensive applications.\nThe post OMRON to acquire OnLogic to address edge AI applications appeared first on The Robot Report."
+  },
+  {
+    "title": "The AI bubble has burst in China: losses have reached $480 billion - UkrMedia News",
+    "original_title": "The AI bubble has burst in China: losses have reached $480 billion - UkrMedia News",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE51OUJRZmZGZjVfeldBQzB4a0ktb2ZOYVFYRUJPR1pjWjJMamkwX0hhTnNYTnZQd0lGaWk5UXlBVW5wZTZtdnVzZHNQTGNsb2Uxc29jQVR4dVRsbll2Y2FQa0NCOTN2NDIyb3VyaHFmQ1NIa29oWVE?oc=5",
+    "date": "2026-10-26 16:37",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "The AI bubble has burst in China: losses have reached $480 billion  UkrMedia News"
+  },
+  {
+    "title": "A Deep Dive into Salesforce’s Agent Tech Stack",
+    "original_title": "A Deep Dive into Salesforce’s Agent Tech Stack",
+    "link": "https://blog.bytebytego.com/p/a-deep-dive-into-salesforces-agent",
+    "date": "2026-10-26 15:30",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "Salesforce moved to a new design, a multi-layer system that combines deterministic code with reasoning models for maximum reliability."
+  },
+  {
+    "title": "Agility and GXO Logistics plan expanded deployment of Digit humanoid",
+    "original_title": "Agility and GXO Logistics plan expanded deployment of Digit humanoid",
+    "link": "https://www.therobotreport.com/agility-gxo-logistics-plan-expanded-deployment-digit-humanoid/",
+    "date": "2026-10-26 14:05",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "GXO Logistics, which has tested humanoid robots from multiple companies, will deploy Agility's Digit at two more sites.\nThe post Agility and GXO Logistics plan expanded deployment of Digit humanoid appeared first on The Robot Report."
+  },
+  {
+    "title": "China's Robot Stocks Surge: 23 Hit Limit-Up as Unitree Climbs 65% in Seven Days to Reclaim 270 Billion Yuan Market Cap - BigGo Finance",
+    "original_title": "China's Robot Stocks Surge: 23 Hit Limit-Up as Unitree Climbs 65% in Seven Days to Reclaim 270 Billion Yuan Market Cap - BigGo Finance",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBEeG1Vc0xqRXFfUEkwTFBrdHVmRmFLMWJLUEFYQ0dMN0RtUURvOEdUYTVTMG9NNFQ2dlEtZGFnY3lLV3l0a0RabThYamhhMmtVZU5BYzI0UzVoQmlJS3dzTDRsYWtfbTV4dlQ1RkVuVUhyVElGeEE?oc=5",
+    "date": "2026-10-26 13:25",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China's Robot Stocks Surge: 23 Hit Limit-Up as Unitree Climbs 65% in Seven Days to Reclaim 270 Billion Yuan Market Cap  BigGo Finance"
+  },
+  {
+    "title": "Morgan Stanley survey: Chinese companies willing to try humanoid robots, but 72% demand unit prices below 100,000 yuan and payback within three years - BigGo Finance",
+    "original_title": "Morgan Stanley survey: Chinese companies willing to try humanoid robots, but 72% demand unit prices below 100,000 yuan and payback within three years - BigGo Finance",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9oZ0Z6cEE4TjVaby03SWhsdDBxN0UwVmdMRjEtXzRrXy01bUxwWVNfbGRwemFrczRqbGpRR0ROTkJRcGwzbjRRU0t3U1VfNWl1QkxmdHA4c1FVYVFVQnRGcXQ0NDdGU3hUaWlIT0g1ZmdmVWhkRmc?oc=5",
+    "date": "2026-10-26 13:25",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Morgan Stanley survey: Chinese companies willing to try humanoid robots, but 72% demand unit prices below 100,000 yuan and payback within three years  BigGo Finance"
+  },
+  {
+    "title": "Robots in Society, Business and Culture: September 2026",
+    "original_title": "Robots in Society, Business and Culture: September 2026",
+    "link": "https://robohub.org/robots-in-society-business-and-culture-september-2026/",
+    "date": "2026-10-26 10:17",
+    "source": "Robohub",
+    "category": "hand",
+    "summary": "A walking robotic hand, from Fingers as Legs: Learning Self-Supported Locomotion and Manipulation with an Anthropomorphic Hand, Amirhossein Kazemipour, Hehui Zheng, Robert Katzschmann. By Emmet Cole In our monthly series, we showcase a selection of robotics stories from society, business, research and culture, as we track the field’s ongoing journey from specialized industrial machines to […]"
+  },
+  {
+    "title": "China’s 110 humanoid robots set Guinness World Records title for synchronised dancing - Moneycontrol.com",
+    "original_title": "China’s 110 humanoid robots set Guinness World Records title for synchronised dancing - Moneycontrol.com",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQeDZxWGpLRFFSb3BteC1pOGNTR2JwejdRVjJndGx0R2dld0JhQlBORUk1c2k2amlPdTJoN0RkdUlSSjRpMUxmMktVWkhmTEpJM29JQlNseWx5TVNPRDNpbUFqYXJBM0lYUmRsT1REcXZmVy1aT0hTSDJzQ0JNcHpKdi12aFFrN2RqNGdhTTJPRXl0aDVTbEpXWnZKWUs5S3dzSmt2LTRwZWpYRG45QWczMXBLVTBMbGphcHFybWxQUE1pUWwwZVNJOEhNc1pzWXk4S2Q3cW9NQ3ZQYlJG0gHiAUFVX3lxTE1MY3h5WmFtMnI2LTVMSXRaeXEwc3h6OTJWRTFFamNzcERjNmFBUXBzSFNRczIxM2p6LUtUeXh0Q1czOFNaMlU2NXpIb1VVSzYzR0p4NFM2QUVKWEJzUjJCMVRxR1Rlb1F0OUdwT2FvN2NmRjBjeC1jcGhPRFc4dk1DSlFFX0U5eEpmWFI1VWRrZWF2ajUzaTZiYnNaUE82bW83dVJQYnozcGJhU0wyR0NVa3lHZGhWcDdhMGhzejhZRmxacmluXzJ5MDM0czR5YlpMbE9uWk9yMENtM1hNZkdrWEE?oc=5",
+    "date": "2026-10-26 08:45",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China’s 110 humanoid robots set Guinness World Records title for synchronised dancing  Moneycontrol.com"
+  },
+  {
+    "title": "Unitree H2-X humanoid robot stumbles during Kung fu demo in China, sparks safety concerns - Education Times",
+    "original_title": "Unitree H2-X humanoid robot stumbles during Kung fu demo in China, sparks safety concerns - Education Times",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQeUNnXzk1UVFfNnlEMzlQb0VwQVFfckZROUJBUHd6d0Qzb2ZlVkUxS3VadXR2UU05QjhnaWk2OGZMMVVCOVFZMUY0ejdxb3hNWUNNN1hXZ0FkUHRvMXJmV1ZwX1F2QlA3UFp5NWo4ejJfUkhJTXdBMkFBNk1mY25uNkZYWTY2dkRNNnV2cERGQ19fWVFFejdTTWdiOXVzZEFzNk9faTNkNmR0ZU0wTEE4Z2FKNDhMeHRjMlUyR0NBeFkxOGdLMHNRTkhHWEE4bjVpQVVUTVZtZ0VxTDVkTXIzWDcybHpDaUZIZVE?oc=5",
+    "date": "2026-10-26 07:48",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree H2-X humanoid robot stumbles during Kung fu demo in China, sparks safety concerns  Education Times"
+  },
+  {
+    "title": "When 110 humanoids hit the dance floor - The Rundown AI",
+    "original_title": "When 110 humanoids hit the dance floor - The Rundown AI",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBGLVI2RnAtOEpaN3ljbXpKYmJuMGJNajZEVEFHcEZFaUc5QktMNzFnbURJYzl6UnlqS3h2WjdaLVZfU1FHY3V2aGR1YnFEZjlCNFlDbUZRZDBZTTlZYW9tUkh3dkh6VTAwcDJhM21vMXpvV25lTEdzcG41elB0QQ?oc=5",
+    "date": "2026-10-26 07:00",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "When 110 humanoids hit the dance floor  The Rundown AI"
+  },
+  {
+    "title": "Did it lose a leg? China's Unitree robot fails a \"kung fu flip\" at 2026 physical AI conference - Moneycontrol.com",
+    "original_title": "Did it lose a leg? China's Unitree robot fails a \"kung fu flip\" at 2026 physical AI conference - Moneycontrol.com",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPNFFoZGI5QkE4VklJdFFMUE1XXzdtZjJjQ2VlNEVzYTN0Z3J2RFhVUVFJUk9BaEVPcUt5VEc0MUZXRUtmNVI1dWZIRU1SNXMtQS04SFFGVUc1WFNDVlBVcWlhSFVmQjhrWXhrbklocTJ2bnNkYTRwbld3MjY2U19VODhTUjdnekJwNWxBRENXTkFTMXZFcXB0OVowbzFTc19kUENOb3M0d0wxaUM3RlhpaE50d2tkbzJ6c0RNaWV1S2hOSkxkT1M4S2x3UmxZYV9FcFF6a285VmVuc3QyTjNHalYweEzSAeoBQVVfeXFMUEd6QjNVZ1RjOHN2VHhrM0F1bm92WlZaeTJZeW1hQUYyRWxJZkNVNVc5bHEwQmhwclM4NExCT2pjZWRINWZ4SzM1STJtclBrQXFfRWxZaFZ1NW9GOHZ4dTdjWDlBTDJ2UktMa0ZnWU9JdlF6ZE9Tdm5sMjgyVHlYQjNkT3B1TUhTbkRoN1dKQi1HVExILUJYWGVKRkVmdXF4aXl1Y2FVa3c2ZE9IMGJmUWNpdFpFRE5nQy16bkRrRXdnRHdLRnFpUm5lUHBtbkFwV0dGVzBuZVZSSG82S2VPc281bEZ2T2VIZXp3?oc=5",
+    "date": "2026-10-26 05:45",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Did it lose a leg? China's Unitree robot fails a \"kung fu flip\" at 2026 physical AI conference  Moneycontrol.com"
+  },
+  {
+    "title": "Tsinghua Research Team Builds HandsOn Dexterous Manipulation Benchmark: Comprehensive 66-Task Evaluation of Robot Bimanual Capabilities - eu.36kr.com",
+    "original_title": "Tsinghua Research Team Builds HandsOn Dexterous Manipulation Benchmark: Comprehensive 66-Task Evaluation of Robot Bimanual Capabilities - eu.36kr.com",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1GZW5CQ3N2czF5SGNmYThOTjhLZ1U3dU55ZU12RURJcWZUVkZJekpCMEMtVDY1dE80dzBGUDFSZU5RWC1YQkdHeWQtNVdVZkJsV3Iw?oc=5",
+    "date": "2026-10-26 00:44",
+    "source": "Google News (Global Hand/Gripper)",
+    "category": "hand",
+    "summary": "Tsinghua Research Team Builds HandsOn Dexterous Manipulation Benchmark: Comprehensive 66-Task Evaluation of Robot Bimanual Capabilities  eu.36kr.com"
+  },
+  {
+    "title": "Teradyne Robotics partners with Sereact to scale physical AI in retail and logistics",
+    "original_title": "Teradyne Robotics partners with Sereact to scale physical AI in retail and logistics",
+    "link": "https://www.therobotreport.com/teradyne-robotics-partners-sereact-scale-physical-ai-retail-logistics/",
+    "date": "2026-10-25 12:35",
+    "source": "The Robot Report",
+    "category": "humanoid",
+    "summary": "Sereact and Teradyne have already shipped hundreds of UR robots in dual-arm systems to live customer sites across Europe.\nThe post Teradyne Robotics partners with Sereact to scale physical AI in retail and logistics appeared first on The Robot Report."
+  },
+  {
+    "title": "Unitree's newly unveiled humanoid robot stumbles at demo, drawing mixed reactions on Chinese social media - Global Times",
+    "original_title": "Unitree's newly unveiled humanoid robot stumbles at demo, drawing mixed reactions on Chinese social media - Global Times",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB0QmpJcl9wSXRkYUZpNHg4QjNQRjNKTjBsaXR1Ymo3OHlfX01Kb2tlb2lvYkJyOHhTNGNPX1dhOW83VnV6NDZoTDJrVDBFZ0JWOVFTaVhqa2ZkMlVyOUozR0VR?oc=5",
+    "date": "2026-10-25 11:35",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree's newly unveiled humanoid robot stumbles at demo, drawing mixed reactions on Chinese social media  Global Times"
+  },
+  {
+    "title": "110 humanoid robots set Guinness world record for synchronized dancing in China, eyeing large-scale deployment - Global Times",
+    "original_title": "110 humanoid robots set Guinness world record for synchronized dancing in China, eyeing large-scale deployment - Global Times",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE80QVQxRktxem15Uy02NkFZcGRVb1Y3czV3ZHFpU0x3UEJBOU5yMXJ1RzZlMkxLdmFQb3RIZC1qTHVGNm1ZT1BmTEdjX3hNTU9mX2hBSWNwbDBrYmN1bHdfcG53?oc=5",
+    "date": "2026-10-25 02:59",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "110 humanoid robots set Guinness world record for synchronized dancing in China, eyeing large-scale deployment  Global Times"
+  },
+  {
+    "title": "Nvidia's $399 Microduck Robot Duck Surpasses 20,000 Preorders After Viral GTC Berlin Keynote - BigGo Finance",
+    "original_title": "Nvidia's $399 Microduck Robot Duck Surpasses 20,000 Preorders After Viral GTC Berlin Keynote - BigGo Finance",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBVYnZUcC00ZHNteGJhREJwOVpRY09BcXBuVjdMTGhvRGMzelA5ejREb1JoWFk3cXpLdFJ2X3BZZUNsUnFlWUZCYXVQZWZEWnNuZkxHbjZXUkswZWNQWVNqb1BzOC0wdVlNMm14WUJIbW1zakltcEE?oc=5",
+    "date": "2026-10-24 18:06",
+    "source": "Google News (NVIDIA GTC)",
+    "category": "humanoid",
+    "summary": "Nvidia's $399 Microduck Robot Duck Surpasses 20,000 Preorders After Viral GTC Berlin Keynote  BigGo Finance"
+  },
+  {
+    "title": "Wearable system captures human activity data for robot training",
+    "original_title": "Wearable system captures human activity data for robot training",
+    "link": "https://techxplore.com/news/2026-10-wearable-captures-human-robot.html",
+    "date": "2026-10-24 16:00",
+    "source": "Tech Xplore",
+    "category": "humanoid",
+    "summary": "Humanoid robots, robotic systems with a body shape that resembles that of humans, could tackle various chores and everyday manual tasks. To successfully complete these tasks, however, the robots should be able to reliably coordinate their movements, posture and how they touch or grasp different objects."
+  },
+  {
+    "title": "EP230: RAG vs Agentic RAG",
+    "original_title": "EP230: RAG vs Agentic RAG",
+    "link": "https://blog.bytebytego.com/p/ep230-rag-vs-agentic-rag",
+    "date": "2026-10-24 15:30",
+    "source": "ByteByteGo",
+    "category": "humanoid",
+    "summary": "Here's how RAG and agentic RAG typically work."
+  },
+  {
+    "title": "Watch: China's Kung Fu Robot Kicks Car Doors And Fights Off Knife Attacker - NDTV",
+    "original_title": "Watch: China's Kung Fu Robot Kicks Car Doors And Fights Off Knife Attacker - NDTV",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPR2JvY3RWLWdQV1pMWTk5Y2tYV29od0V2bUhpak5ydmRfNDlQWk5RU2YwNW5fQkpad2E3Q1FvVFNHZjJCYzhqWTA2cVhqZXlOaEd5Sm9RVnpaSmRZeWdwM0lnWG1hU2ZZQTJJRTFlc2REOXc2MGllYVVTUG9xUENTZjlIUmY3a1l3NGt0ekRTYVI4OXNROTIwQ1N4MWgzaXp4YUd0bTNrY0VmV2lYZXhZ0gG3AUFVX3lxTE54ZXhZb3dwdEV4dU5uNXlMcjdSS0xsOVd4WjdaVEdlRlZ3cFNmWFd4WWxIeEQ0ZnllQW1xcElfajFqV0V3c2syRW5yZk9sU1VreThiaXZwd3BmWTBuM3FCM21UNWpSd01JU3RGYjQ3alhxVGRvQ24yRUJkTEgzMTFxeUVBSnhyOWNJY3kyZm92djJOOEdBMzNpZzQzTDVFY0EwREJGYjktaXBLUHI2MjZOTzI4eGs5Yw?oc=5",
+    "date": "2026-10-24 05:31",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Watch: China's Kung Fu Robot Kicks Car Doors And Fights Off Knife Attacker  NDTV"
+  },
+  {
+    "title": "Unitree ramps up push for AI breakthroughs - China Daily",
+    "original_title": "Unitree ramps up push for AI breakthroughs - China Daily",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8zMVBfYzhLalF6THNDX2czc0J5RVhKVG04bHQwaUNJRnd3ZkMtYzBnMXdna0c1RW83dDNuRWRjYkE3NEJ5Wk0tZ1o2ZVA1Zjl1Z0xrYTlweWoyTWNRMnhFeTRyZDJ5UFNpMEVBejJqQ0lkWDJWaFNPRzBsWG9OQQ?oc=5",
+    "date": "2026-10-24 00:50",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree ramps up push for AI breakthroughs  China Daily"
+  },
+  {
+    "title": "Flexible robot arms learn to predict their next move",
+    "original_title": "Flexible robot arms learn to predict their next move",
+    "link": "https://techxplore.com/news/2026-10-flexible-robot-arms.html",
+    "date": "2026-10-23 21:00",
+    "source": "Tech Xplore",
+    "category": "hand",
+    "summary": "A robot arm that bends like an elephant's trunk can slip into tight spaces and handle fragile objects. Controlling it is harder because its smooth bending makes its next move hard to predict. Researchers have now developed a method that keeps computer predictions of the arm's motion on track, even when the arm moves faster than the model was trained for."
+  },
+  {
+    "title": "Video Friday: Quadruped Robot Solves Giant Rubik’s Cube by Itself",
+    "original_title": "Video Friday: Quadruped Robot Solves Giant Rubik’s Cube by Itself",
+    "link": "https://spectrum.ieee.org/video-friday-rubiks-cube-robot",
+    "date": "2026-10-23 15:30",
+    "source": "IEEE Spectrum",
+    "category": "hand",
+    "summary": "Video Friday is your weekly selection of awesome robotics videos, collected by your friends at IEEE Spectrum robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please send us your events for inclusion.CoRL 2026: 9–12 November 2026, AUSTINHumanoids 2026: 6–9 December 2026, SANTA CLARA, CAEnjoy today’s videos! A quadruped robot autonomously solves a giant Rubik’s Cube using only its feet.[ ETH Zurich Robotics Systems Lab ]Humans effortlessly react to the world; they adeptly return a tennis shot, catch a falling cup, step aside from a passing cart, or pass a box tossed during truck unloading. These everyday actions require anticipating a moving target and reflexively responding with the whole body within about a second. Such visual reactive whole-body control remains challenging for humanoids. We present Reflex, a three-stage framework that learns these capabilities stage by stage while connecting them through a compact representation of object dynamics.[ Reflex ]Thanks, Weikai!I have long advocated for exactly this in the context of robotic laundry folding, or more broadly, other robot recognition and manipulation tasks. Why not make it easy when we can make it easy?[ ACM SIGCHI ]We first wrote about Parallel Systems in 2022. Nice to see them still rolling.[ Parallel Systems ]I’ll be honest with you: The end of this video is freaking me out a little bit for some reason.This video showcases the whole-body loco-manipulation capabilities of KAIST Humanoid v0.9, developed at the DRCD Lab in collaboration with RAILAB, which developed the robot’s arms. Using onboard visual feedback, the humanoid demonstrates pushing objects weighing up to 35 kilograms and lifting objects up to 20 kg to arrange the letters “KAIST.”[ KAIST DRCD Lab ]When you don’t spend any money on sensors for your robots, you can afford much bigger wheels.[ RaiLab Kaist ]Those robots with wires have gotten somewhat weirder.[ JSK Robotics Laboratory ]The AthenaZero has two, three-fingered robot hands driven by tendons. This design allows the fingers to interdigitate to hold objects of different sizes, such as an egg or a hammer. Each finger is powered by a motor located in the robot’s torso to keep the hand light, transmitting force through flexible cables. This hand is both fast (closing in about 80 milliseconds) and strong.  With the addition of highly accurate barometric pressure sensors, it can also be gentle.[ Robotics and AI Institute ] via [ Science Robotics ]A biohybrid robot combines living tissue with engineered materials—here, lab-grown skeletal muscle paired with a soft, 3D-printed scaffold that turns the muscle’s contraction into movement. What if you designed the living muscle and the soft scaffold together, instead of growing the muscle and then building a skeleton around it? In this work from the Soft Robotics Lab at ETH Zurich, we adapted a soft-body simulation framework to co-optimize both at once—and the resulting centimeter-scale bioactuators achieve up to 11x more range of motion than previous systems of comparable tissue volume. Strong enough to jump, swim, walk, and grasp.[ ETH Zurich Soft Robotics Lab ]Oh yes, this is definitely the use case that will scale humanoid robots.[ Unitree ]Here are a couple more teasers from the upcoming ACM Symposium on User Interface Software and Technology (UIST).  [ ACM Symposium on User Interface Software and Technology ]In three hours, on a single GPU, SuperMimic surpasses the return of a state-of-the-art motion tracker baseline trained for seven days on 128 GPUs. It reduces GPU-hours by more than 1,000× and fails on only 25 of 129,514 benchmark motions, versus 179 failures for the baseline. After 9.8 hours on two GPUs, SuperMimic achieves zero failures.[ Hybrid Robotics ]This is getting out of hand! Now there are two of them!Introducing the Grain Weevil dual robot attachment. Two robots linked into one larger machine, run by a single operator, doing the work of up to three robots.[ Grain Weevil ]Today [21 October 2026] at CES Unveiled Milan, Generative Bionics announced its plan to build Europe’s largest Physical AI Data Factory, with AMD as its AI infrastructure partner.[ Generative Bionics ]From robotic rovers exploring the rugged lunar landscape to lunar terrain vehicles carrying Artemis astronauts across the surface, mobility will play a crucial role in establishing an enduring human presence on the moon. During the early phases of Moon Base development, these vehicles will help NASA investigate the lunar South Pole region, conduct scientific research, test new technologies, and gather the information that will inform future missions. In this Moon Base update, get a closer look at some of the lunar terrain vehicles and robotic rovers helping to pave the way for humanity’s first lunar outpost. [ NASA ]I appreciate the designer of this single motor drone crediting previous research, which included some cool drones from UPenn that we wrote about in 2014.[ Joshua Bird ]Why choose a bipedal, human-form robot over specialized wheels, gantry arms, or quadruped platforms? Speaking at the Humanoids Summit Seoul 2026, Michael Perry from Persona AI tackles the single most debated question in the industry and delivers the definitive business and engineering justification for the humanoid form factor.[ Humanoids Summit ]"
+  },
+  {
+    "title": "NEXCOM Introduces RoboWIZ AI Robotics Platform at NVIDIA GTC Berlin - USA Today",
+    "original_title": "NEXCOM Introduces RoboWIZ AI Robotics Platform at NVIDIA GTC Berlin - USA Today",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcmcxV1NYeVFfNlhfdGpxeDlaalRpb0VHSjFsLXA1WW9uejhKQXE3Zjc4Vk1obnZqbzZsU2ZVWjJYOFBvbWlLbThMcy1NQkpkREhCOERES0g2SHJMbnNfbnRNWlZKWkRjMTRQelI0R09zR2pQOFAwdHlsUGlpaXVCRzduN2s5RDU1NXBPc3pBaFg0aThaX0xTQ2FHamRwS2xmTmVyRE1JTWREWURCQ1hhX2NJR2RIMDBkRERJ?oc=5",
+    "date": "2026-10-23 12:47",
+    "source": "Google News (NVIDIA GTC)",
+    "category": "humanoid",
+    "summary": "NEXCOM Introduces RoboWIZ AI Robotics Platform at NVIDIA GTC Berlin  USA Today"
+  },
+  {
+    "title": "Robot Talk Episode 167 – Automating construction, with Jan Petrš",
+    "original_title": "Robot Talk Episode 167 – Automating construction, with Jan Petrš",
+    "link": "https://robohub.org/robot-talk-episode-167-automating-construction-with-jan-petrs/",
+    "date": "2026-10-23 11:43",
+    "source": "Robohub",
+    "category": "humanoid",
+    "summary": "Claire chatted to Jan Petrš from École Polytechnique Fédérale de Lausanne (EPFL) and Déploya Robotics about novel robot designs for construction and architecture. Jan Petrš is a roboticist, architect, and entrepreneur working at the intersection of robotics and construction. He is currently the co-founder of Déploya Robotics, an EPFL spin-off developing deployable robotic systems for […]"
+  },
+  {
+    "title": "China’s humanoid robots go job hunting in South Korea - South China Morning Post",
+    "original_title": "China’s humanoid robots go job hunting in South Korea - South China Morning Post",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTFRKeEdIdDcwZVhzXy11UTc3YTVKX0FENzFzWkczSm9FZ1pibEpGdFpKbXMyMHpJc25vdnRDRjFRamx0NnRkMGdNTUwwcU5Fd3VCQkViZk1XajVJN21HRjFPTkhpR1VIWXY0OTBtQTRqeHhnQ3pqYWRBVUUyaVNJVEVGdTZ4YlJNVDItWGM1V1VaRnNjYmRpazliZnEySFdpTGRuSU5tX1BBQm1YNGlPRWNWbWV6LWwwcXU1bGd30gG-AUFVX3lxTE5aQnlhNTZtWl90WWZVNWVKSUtEa0Y5OTFOUkxXcEpBTkFybG5ONWJRVGNFelZPZU0xY0ZhQnRJS2NoQWNUdkRyRVRhUFdObVc4eTFaZVlxUmRTS3RzVG1uTDJKNS05U2I1UEwzMGNsd1lXazZJUmh5d1VfYldCUnRZRnBQRGFVWXFNYWZvVVdzbC1tdE1FdktZblAtb09aczFsZjJ4ZFY4MDMwQU40MVBnUUJ2TnFyVVRRd0JmWFE?oc=5",
+    "date": "2026-10-23 08:00",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "China’s humanoid robots go job hunting in South Korea  South China Morning Post"
+  },
+  {
+    "title": "AtechX start-up Bellboy Robotics continues successful development of Physical AI at NVIDIA GTC Berlin - ASSETPHYSICS",
+    "original_title": "AtechX start-up Bellboy Robotics continues successful development of Physical AI at NVIDIA GTC Berlin - ASSETPHYSICS",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPRTNrMm9MR0xfenB6OWlwRi1hTGNyZzZUakduUWFpMXpfZTdtT0ZMajJ0QzN2cHpVbXdmTGlydEtDSVFfR0J5TnhvdDZhbTlUeFNIWUNSMjdDYmt2OHc2Umw0MnlIUTJ5MFVHbDRnc2tiUTNSM2lTaUpUT3N0V3FEUVdsU1JteC1WdURaTjI3alZDU0lQSzhKeHRSQU9fb2xjM2pScXpYckJoRkhqdElkVE52UmFoYU83TldBT3BZOFN3elltVDd5RU9TdkwyTjZwSi1Z?oc=5",
+    "date": "2026-10-23 07:06",
+    "source": "Google News (NVIDIA GTC)",
+    "category": "humanoid",
+    "summary": "AtechX start-up Bellboy Robotics continues successful development of Physical AI at NVIDIA GTC Berlin  ASSETPHYSICS"
+  },
+  {
+    "title": "Nvidia CEO Jensen Huang showcases AI-trained Microduck robots at GTC Berlin keynote - Moneycontrol.com",
+    "original_title": "Nvidia CEO Jensen Huang showcases AI-trained Microduck robots at GTC Berlin keynote - Moneycontrol.com",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOUUxURnE1OUdZa3JiS1NVbklPMUZPRHZBaGVYSjBWWTZpNkVxYkVicnlIZzh0SHNLODZ6SUVCV2VrUUNXcm1CQi15Si0wcUlqUm9rWDdaaHlRNnN6VzloY1E0b3FhbjdQenlUQl9hNThJOXdsZEdNZVREeHpaUk1MTHhlMzNYOWZHb1ZzUDVaSlc5STVIVm03QVBaRjByUk4wQ002bXU0VjktVUZkdS1LdG80QnYzcHpQNGlFNnNrcFVCTVdSVm14dmM2VVB1R0JkSE1GbmVEQ1NINDNjVkHSAeMBQVVfeXFMTS1FMHpKQURaaVg2LXdpaEIwekZWbHk3R1I5S0xpeHJ0amIySTk4eXZDSmdURjF5b0EzdVVuN3RPYVpiQkJyVUFtTVB1VEtQX214TXlWMGxSMU5EWjZSSHdGQ2tfQ2ZkLThpX0ZnYXZHbnBmTU1SWnRQQzVXRlgtRzQ5OS1XZ2w3dzRuaVBWZWJsendXcE9TSE5jMWM5MVc5ZVB2QTVISEtVVnNLOUUwVVZPemJXRHNrMDVYMmNZWVBqVEZtMXhVYVNSQTg1ekdBYWo3ZnpxM3hCQ2U5bE1QVnBZeTg?oc=5",
+    "date": "2026-10-23 03:33",
+    "source": "Google News (NVIDIA GTC)",
+    "category": "humanoid",
+    "summary": "Nvidia CEO Jensen Huang showcases AI-trained Microduck robots at GTC Berlin keynote  Moneycontrol.com"
+  },
+  {
+    "title": "Unitree chief says humanoid AI's 'ChatGPT moment' arriving in 1-2 yrs - China Daily",
+    "original_title": "Unitree chief says humanoid AI's 'ChatGPT moment' arriving in 1-2 yrs - China Daily",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE03VHFfTUZ3TkY2a1YyQVAzQlpkRG9PTVllQW1HSjBtMEl0Q3ZCWFRaWGtVb3NDT2NOVzZreDcyMjFrTXVFYmFOb0VaQmVhQWs0N1JCOVNmMEdLUFRYVzRlU2Y4UndiRzhoblJUZnl5OTRJT2YwczhmMWxNUDFLQQ?oc=5",
+    "date": "2026-10-23 01:30",
+    "source": "Google News (China Robotics - EN)",
+    "category": "humanoid",
+    "summary": "Unitree chief says humanoid AI's 'ChatGPT moment' arriving in 1-2 yrs  China Daily"
+  },
+  {
     "title": "EP226: API Concepts Every Software Engineer Should Know",
     "original_title": "EP226: API Concepts Every Software Engineer Should Know",
     "link": "https://blog.bytebytego.com/p/ep226-api-concepts-every-software",
@@ -17071,932 +17998,5 @@
     "source": "ArXiv (Robotics)",
     "category": "hand",
     "summary": "기존 정적 affordance 방식은 환경 변화에 취약하여 trajectory drift 문제를 일으키는 한계가 있음. 이에 연구진은 객체 중심 시간 전파(object-centric temporal propagation)를 통해 동적 affordance trajectory를 구성하는 AffordTrajDP 프레임워크를 제안함. 이 프레임워크는 물체의 SE(3) pose를 전파 매체로 활용하여 시점 일관성이 유지되는 state-aware guidance를 제공하며, ManiSkill3에서 70.0%의 높은 성공률을 달성하고 Galaxea A1 및 UR7e 실환경 테스트에서도 견고성을 입증함."
-  },
-  {
-    "title": "시뮬레이터 측 동역학 정규화를 통한 병렬 연결형 다리 메커니즘의 Sim-to-Real 격차 해소",
-    "original_title": "Bridging the Sim-to-Real Gap in Parallel-Link Leg Mechanisms via Simulator-Side Dynamics Normalization",
-    "link": "https://arxiv.org/abs/2608.01697",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "본 논문은 병렬 연결형 메커니즘을 직렬 트리로 모델링할 때 발생하는 동역학적 Sim-to-Real 격차를 다루고, Simulator-Side System Normalization (S3N) 기법을 제안함. S3N-Full은 기존 방식에서 누락되었던 링크의 관성과 감쇠력을 복원하여 시뮬레이터의 동역학을 정규화함. 이로써 Joint RMSE 및 지면 반력력 오차를 80% 이상 감소시키고, 보행 과정에서의 Sim-to-Real 격차를 9.9%까지 줄여 물리적 일관성을 크게 향상시키는 것이 입증됨."
-  },
-  {
-    "title": "접촉 환경 기반 조작 학습을 위한 촉각 웨어러블 등가 로봇 팔 네트워크 시스템 TWINS",
-    "original_title": "TWINS: A Tactile Wearable Isomorphic Arm Networked System for Contact-Rich Manipulation Learning",
-    "link": "https://arxiv.org/abs/2608.01733",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존 로봇 시스템의 한계로 인해 팔과 몸체 표면 접촉이 필수적인 조작 학습 및 수행에 어려움이 존재함. 이에 본 논문에서는 착용형 이중 팔 장치(Wearable Dual-Arm Device)와 구조적으로 동일한 등가 로봇(Isomorphic Robot)을 결합한 TWINS 시스템을 개발함. 이 시스템은 몸체 표면에 내장된 촉각 센서를 통해 접촉 데이터를 수집하고, 이를 활용하여 몸체 표면의 접촉을 고려한 조작 시연 및 실행이 가능한 통합적 로봇 시스템 구현을 입증함."
-  },
-  {
-    "title": "환경 앵커링을 이용해 접촉 기반 작업을 수행하는 그리퍼 장착 틸트-로터 UAV 개발",
-    "original_title": "A Tilt-Rotor UAV with a Gripper for Stable Contact-Based Tasks via Environmental Anchoring",
-    "link": "https://arxiv.org/abs/2608.01736",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "물리적 상호작용 중 안정적인 자세 유지는 항공 로봇의 핵심 과제임. 본 연구는 틸트-로터와 환경 앵커링용 그리퍼를 통합한 UAV 플랫폼을 제시하며, 이를 통해 불안정한 자유 비행 상태를 넘어 안정적인 작업 환경으로 전이하는 방식을 구현함. 실제 테스트 결과, 환경에 앵커링하는 것만으로도 위치 드리프트 RMSE가 95% 이상 대폭 개선되어, 강풍 조건에서도 3mm 이하의 안정적인 자세 유지가 가능함을 입증함."
-  },
-  {
-    "title": "ReTouch: 온라인 정제된 촉각 예측을 통한 접촉 기반 정교 조작 능력 향상",
-    "original_title": "ReTouch: Empowering Contact-Rich Dexterous Manipulation with Online-Refined Tactile Prediction",
-    "link": "https://arxiv.org/abs/2608.01824",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "접촉이 복잡한 정교 조작 분야의 한계 극복을 위해 VLA 모델인 ReTouch를 제안함. ReTouch는 Tactile-Patch Encoder를 통해 촉각 관찰을 구조화하고, 실행 중 피드백을 활용해 촉각 예측과 행동을 온라인으로 정제하는 Closed-loop Action Generation 메커니즘을 구축함. XHT-Dataset 기반의 실로봇 실험 결과, ReTouch가 기존 최고 성능의 기준 모델 대비 높은 평균 성공률 개선을 달성했음을 입증함."
-  },
-  {
-    "title": "ORCESTRA: Mixed Reality 환경에서의 VLM 기반 시각 로봇 프로그래밍",
-    "original_title": "ORCESTRA: VLM-driven Visual Robot programming in Mixed Reality",
-    "link": "https://arxiv.org/abs/2608.00775",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "ORCESTRA는 Mixed Reality 시스템으로, No-code 웨이포인트 튜닝과 언어 안내(language-guided) 제어를 통해 로봇 디지털 트윈을 프로그래밍하는 것을 목표함. 사용자는 패스스루 작업 공간에서 로봇의 궤적을 학습시키거나 음성/텍스트 명령을 내리면, VLM이 이를 구조화된 디지털 트윈 계획으로 변환함. 이 시스템은 고정형 매니퓰레이터, 모바일 베이스, 휴머노이드 등 이종 로봇 체형을 지원하며, 실제 물리적 배포 전 안전 계층(safety layer)으로서 MR 검증을 제공하는 것이 특징임."
-  },
-  {
-    "title": "Teleopit: 전신 구현 인간형 원격 조종 시스템",
-    "original_title": "Teleopit: A Full-Embodiment Humanoid Teleoperation System",
-    "link": "https://arxiv.org/abs/2608.01834",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "전신 신체, 손, 머리 신호를 VR에서 인간형 로봇에 매핑하는 전신 구현 원격 조종 시스템 'Teleopit' 공개. 본 시스템은 History Encoder와 Failure-aware Rewind Sampling 기능을 통합하여 동작 추적 및 재타겟팅 정확도를 높였음. 이를 통해 수집된 데이터를 활용해 학습된 ACT와 GR00T N1.7 정책은 휴머노이드 로봇에 적용 시 각각 90.0%와 95.0%의 높은 태스크 성공률을 기록하며 성능 입증함."
-  },
-  {
-    "title": "MANGO-Grasp: 기하학 중심 3D Gaussian 기반의 다체 구현 솜씨 파지를 위한 Mahalanobis Field 활용",
-    "original_title": "MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping",
-    "link": "https://arxiv.org/abs/2608.02014",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 Cross-embodiment dexterous grasping 문제를 해결하기 위해 MANGO-Grasp라는 새로운 접촉 상호작용 프레임워크를 제안함. 이 방식은 객체를 기하학적 3D Gaussian으로, 로봇 손을 형태-운동학적 디스크립터로 표현하고, Mahalanobis Field를 활용하여 파지 예측을 수행함. 그 결과, CMAP 및 MultiGripperGrasp와 같은 주요 벤치마크에서 기존 최고 성능 모델을 능가하는 결과를 보였으며, 실제 환경에서도 86%의 높은 성공률을 달성함."
-  },
-  {
-    "title": "Open-DiffLoco: 배포형 블라인드 쿼드러펫 보행을 위한 오픈소스 미분 학습 방법론",
-    "original_title": "Open-DiffLoco: Open-Source Differentiable Learning for Deployable Blind Quadruped Locomotion",
-    "link": "https://arxiv.org/abs/2608.02069",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "Open-DiffLoco는 미분 시뮬레이션을 활용하여 블라인드 쿼드러펫의 배포형 보행 정책을 학습하는 오픈소스 프레임워크임. 본 프레임워크는 복잡한 보상 설계가 필요했던 기존 RL의 한계를 극복하고 SHAC 알고리즘을 통해 정책을 개발함. 실제 하드웨어(Unitree Go2)에 배포된 정책은 전지형 환경과 외부 물리적 교란에도 높은 강인성과 속도를 유지함을 입증하며, 낮은 VRAM 소모량으로도 효율적인 학습 환경을 제공함."
-  },
-  {
-    "title": "인간형 로봇용 기하학적 확장 가능한 전신 촉각: 3D 프린팅 컨포멀 EIT 피부",
-    "original_title": "Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin",
-    "link": "https://arxiv.org/abs/2608.02080",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "전신 촉각 센싱의 스케일링 한계를 극복하기 위해 기하학적 적응형 3D 프린팅 방식으로 컨포멀 EIT(Electrical Impedance Tomography) 촉각 스킨을 개발함. 이 스킨은 유연한 conductive TPU 레이어와 전도성 패치를 결합하여 연속적인 감지 도메인을 형성하며, 이온 결합을 통해 접촉 위치를 높은 정확도로 검증함. 해당 기술은 복잡한 곡면 구조에서도 활용 가능함을 입증하며, 휴머노이드에 적용 가능한 대면적 접촉 감지 솔루션을 제공함."
-  },
-  {
-    "title": "사족 보행 로봇 상태 추정을 위한 잔차 기반 적응 칼만 필터링",
-    "original_title": "Residual-Based Adaptive Kalman Filtering for Legged Robot State Estimation",
-    "link": "https://arxiv.org/abs/2608.02316",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "모델 기반 로봇 상태 추정의 핵심 과제인 노이즈 매개변수 튜닝의 어려움을 해결하기 위해 온라인 적응 전략을 제시함. 이 연구는 필터 잔차 및 Innovation-based 방법을 활용하여 로봇의 Process Noise Covariance(Q)와 Measurement Noise Covariance(R)를 적응적으로 조정하는 방식을 제안함. Unitree Go2를 이용한 실험 결과, 특히 R만 적응시키더라도 기존 InEKF 대비 트로팅 보행에서 25%의 정확도 향상을 입증하였으며, 추가적인 발 힘 측정 장치나 복잡한 매개변수 튜닝 없이도 높은 성능을 달성했음."
-  },
-  {
-    "title": "ChainVLA: 통합 실행 상태를 통한 장기 작업 조작을 위한 VLA 쿼리 연속 연결 기술",
-    "original_title": "ChainVLA: Chaining Vision-Language-Action Queries through a Unified Execution State for Long-Horizon Manipulation",
-    "link": "https://arxiv.org/abs/2608.02326",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존의 Vision-Language-Action (VLA) 정책이 쿼리마다 재계획하는 한계를 극복하기 위해, 1.2B 매개변수 규모의 ChainVLA 모델이 개발됨. 이 모델은 'Progress Context'와 'Motion Tail'이라는 두 핵심 요소를 통합한 실행 상태를 구축하여, 시간 경과에 따른 장기 작업(Long-Horizon Manipulation) 수행 능력을 확보함. 결과적으로 RMBench에서 62.8%, LIBERO 4개 스위트에서 98.8%라는 높은 성공률을 기록하며 연속적이고 통합적인 행동 계획의 중요성을 입증함."
-  },
-  {
-    "title": "StableMimic: 휴머노이드 모션 트래킹의 부드러운 인간형 복구 달성 및 낙상 후 구조화된 행동 학습 방안 제시",
-    "original_title": "StableMimic: Smooth Human-Like Recovery for Humanoid Motion Tracking - Learning Beyond the Tracking Distribution for Structured Post-Fall Behavior",
-    "link": "https://arxiv.org/abs/2608.02385",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "본 연구는 휴머노이드 로봇이 일반 트래킹 범위를 벗어나는 낙상이나 비정상 상태에서 발생하는 동작의 위험성을 해결함. StableMimic은 트래킹 분포를 넘어선 환경에서 학습된 통합 트래커로, 트래킹과 복구(recovery)를 위한 전용 전문가와 게이트를 사용하여 두 동작을 결합하는 방식임. 테스트 결과, StableMimic은 LAFAN1 댄스 서브세트 등에서 모든 트래킹 지표 대비 최저 오차를 달성하며, 낙상 시 100/100의 높은 복구율을 기록하여 향상된 상호작용 안전성을 입증함."
-  },
-  {
-    "title": "순응형 구체 격자 접촉: 구체 기반 로봇 표현을 위한 분포 접촉 모델링",
-    "original_title": "Compliant Sphere Lattice Contact: Distributed Contact Modeling for Sphere-Based Robot Representations",
-    "link": "https://arxiv.org/abs/2608.00263",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "구체 기반 로봇 모델링은 계산 효율성은 우수하나 점 접촉에 의존하여 접촉 패치나 압력 분포 등 물리적 정확도가 떨어진다는 한계가 있었음. 이를 해결하고자 Compliant Sphere Lattice Contact (CSLC)가 개발되었으며, 이는 로봇 인터페이스를 순응성 구체 격자로 모델링함. CSLC는 물체와 접촉할 때 격자의 변형을 통해 공간적으로 분포된 접촉 패치를 생성함으로써, 구체 기반 접촉 모델의 물리적 정확성을 획기적으로 높이고 파지 안정성을 개선함."
-  },
-  {
-    "title": "캐시가 아닌 게이트: 게이트 출처가 학습 없는 VLA 토큰 스키핑의 폐루프 신뢰성을 결정함",
-    "original_title": "The Gate, Not the Cache: Gate Provenance Bounds the Closed-Loop Reliability of Training-Free VLA Token Skipping",
-    "link": "https://arxiv.org/abs/2608.00391",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "VLA 모델의 토큰 스키핑 방식은 가속화되나, 게이트가 이전 단계의 포워드에서 재사용될 경우 건너뛴 토큰의 손상이 누적되어 폐루프 신뢰성이 저하되는 문제점 발견됨. 이를 해결하기 위해, 본 연구는 로봇의 액션 수행 시간을 활용하여 비판 경로 외부에 완전한 밀집 통과(dense pass)를 수행하는 actuation-slack refresh를 제안함. 이 기법은 속도 손실 없이 깨끗한 게이트와 신선한 KV base를 제공하여, 스키핑 기반 VLA 정책의 안정성을 크게 향상시키는 것으로 보고됨."
-  },
-  {
-    "title": "OC-VLA++: 시점 강건 로봇 매니퓰레이레이션을 위한 단안 기하학 기반 교차 뷰 일관성",
-    "original_title": "OC-VLA++: Monocular Geometry-Guided Cross-View Consistency for Viewpoint-Robust Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2608.01066",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존 OC-VLA가 제한된 카메라 시점에 과적합되는 문제를 해결하기 위해, OC-VLA++는 기하학적 쌍(paired-view) 지도와 교차 뷰 액션-등변성(cross-view action-equivariance) 목적 함수를 도입함. 이 모델은 액션 예측이 시점 변화에 따라 일관되게 변환되는 원리를 학습함으로써, 제한적인 카메라 커버리지 환경에서도 높은 시점 일반화 성능을 확보함. 해당 결과는 로봇의 실세계 배포를 위해 교차 뷰 액션 등변성이 핵심적인 보완책임을 입증함."
-  },
-  {
-    "title": "좌측 불변 리만 계량 하의 부드러운 SE(3) 궤적 학습 프레임워크 제시",
-    "original_title": "Learning Smooth SE(3) Trajectories under Left-Invariant Riemannian Metrics",
-    "link": "https://arxiv.org/abs/2608.01562",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "SE(3) 리만 기하학적 공간에서의 최적 궤적 생성은 기존에 계산 비용이 높아 실시간 제어에 어려움이 존재했음. 이에 본 논문은 고차 다항식과 신경망(Neural Network)을 결합한 학습 기반 프레임워크를 제시하여, 좌측 불변 리만 계량 하에서 지오메트리 구조를 유지하는 부드러운 궤적을 근사함. 이 방법은 Euler-Lagrange 최적화 조건 등을 손실 함수로 활용하여 높은 일반화 능력을 보이며, 밀리초 단위의 추론 시간으로 실제 로봇 플래닝 및 쿼드콥터 제어 등 실시간 응용 가능함을 입증함."
-  },
-  {
-    "title": "선호 기반 최적화 및 동적 동작 원시 요소 결합을 통한 적응형 인간-로봇 협업 페인팅 기술 구현",
-    "original_title": "Adaptive Human-Robot Collaborative Painting Combining Preference-Based Optimization and Dynamic Motion Primitives",
-    "link": "https://arxiv.org/abs/2608.01981",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 선호 기반 최적화(PBO)와 동적 동작 원시 요소(DMPs)를 결합한 인간 중심의 협업 프레임워크를 제시함. 이 시스템은 로봇이 작업자의 손 움직임에 맞춰 실시간으로 행동을 조정하고 방향을 최적화하는 방식임. PBO는 사용자 피드백을 이용해 제어 파라미터를 반복적으로 정교화하여, 결과적으로 작업자 피로도를 낮추면서 작업 과정을 최적화함이 입증됨."
-  },
-  {
-    "title": "전신 원격 조종 기반 모바일 매니퓰레이션에 적용하는 파노라마 인식 VLA 학습",
-    "original_title": "Learning Panorama-Aware VLA for Mobile Manipulation with Whole-Body Teleoperation",
-    "link": "https://arxiv.org/abs/2608.02257",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "모바일 매니퓰레이션의 난이도 증대 및 제한된 시야각 문제를 해결하기 위해, 연구진은 전신 원격 조종 시스템과 파노라마 인지 기능을 탑재한 VLA 정책인 PanoVLA를 개발함. PanoVLA는 Mixtrue-of-Transformers 아키텍처에 전역 공간 컨텍스트 인코딩을 도입하여, 파노라마 관찰 정보를 언어 지시 및 로봇 상태와 효과적으로 통합하는 것이 특징임. 실제 환경의 모바일 매니퓰레이션 과제 네 가지에 대한 평가 결과, PanoVLA는 로컬 뷰 모델 대비 뛰어난 성능을 입증하며 평균 스테이지 완성률 91.3%, 종단 간 성공률 73.4%를 달성함."
-  },
-  {
-    "title": "사족 보행 로봇 기반 검색 및 구조 임무를 위한 상황 인식 프런티어 우선순위화 전략",
-    "original_title": "Situation Aware Frontier Prioritization for Quadruped Search and Rescue",
-    "link": "https://arxiv.org/abs/2608.02571",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "사족 보행 로봇은 복잡한 실내 환경에서의 Search and Rescue(SAR) 임무에 유망함. 본 논문은 기존 탐색 전략이 가진 한계를 극복하기 위해, Information Gain, Rescue Relevance, Terrain Penalty 등 다양한 요소를 통합한 상황 인식 프런티어 우선순위화 방식을 제안함. Gazebo 시뮬레이션 결과, 제안된 방법은 특히 복잡하고 모호한 환경에서 최고 수준의 임무 완수율과 생존자 회수율을 달성하는 것으로 분석됨."
-  },
-  {
-    "title": "Ego2Robot: 주관적 인간 데이터 기반의 확장형 로봇 데이터 합성 시스템",
-    "original_title": "Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data",
-    "link": "https://arxiv.org/abs/2608.02580",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "대규모의 범용 로봇 매니퓰레이션 정책 학습을 위해, 주관적(egocentric) 인간의 활동 비디오를 로봇 훈련 데이터로 변환하는 확장형 파이프라인 Ego2Robot이 개발됨. 이 시스템은 액션 재타겟팅과 시각적 합성을 통해 15가지 로봇 형태에 걸쳐 총 18,561시간에 달하는 대규모 로봇 학습 데이터셋을 구축함. 실험 결과, Ego2Robot으로 합성된 데이터와 실제 로봇 데이터를 결합하여 사전 훈련할 경우, 시각적 외관, 환경 레이아웃, 체현 형태 등 다양한 섭동 축(perturbation axes) 전반에 걸쳐 분포 외 일반화 성능 향상이 검증됨."
-  },
-  {
-    "title": "VLA 모델의 궤적 사전 정보로 활용된 헤르미트 곡선",
-    "original_title": "Hermite Curves as Trajectory Priors for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2608.01265",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 매니퓰레이션 분야에서 액션 청크의 구조적 약점으로 인해 발생하는 운동의 불연속성 문제를 해결하기 위해 헤르미트 궤적 사전 정보(Hermite trajectory priors)가 제시됨. 이는 엔드포인트 위치와 속도를 이용해 궤적의 부드러움과 연속성을 명시적으로 강제하는 방식임. 세 가지 변형 중 Hermite Regularization이 가장 우수한 성능을 보였으며, 추가적인 추론 오버헤드 없이 실제 로봇 플랫폼의 성공률을 획기적으로 개선하는 결과임."
-  },
-  {
-    "title": "DreamTrajectory: 모바일 매니퓰레이레이션을 위한 월드 모델 정렬 기반 궤적 유도 행동 생성",
-    "original_title": "DreamTrajectory: Trajectory-Guided Action Generation with World Model Alignment for Mobile Manipulation",
-    "link": "https://arxiv.org/abs/2608.01381",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존 VLA 정책이 가지던 모바일 매니퓰레이션 동작 예측의 부정확성과 개방 루프 실행의 오차 누적 문제를 해결하기 위해 DreamTrajectory 프레임워크가 제시됨. 본 시스템은 의도 레벨의 end-effector 궤적을 공동 예측하여 기저-팔 동작 생성을 명시적으로 가이드하며, 경량의 세계 모델과 테스트 시간 검색 기법을 통해 계획된 궤적과 실제 동작의 정렬을 확보함. 이 결과, MS-HAB 및 다양한 실제 환경의 모바일 매니퓰레이션 태스크에서 높은 평균 성공률 향상을 보임."
-  },
-  {
-    "title": "다중 시점 통합 카메라 필드: RGB 전용 다중 카메라 VLA 정책을 위한 기하학 기반 행동 표현 구현",
-    "original_title": "Multi-View Unified Camera Fields: Geometry-Shaped Action-Facing Representations for RGB-Only Multi-Camera VLA Policies",
-    "link": "https://arxiv.org/abs/2608.01826",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 매니퓰레이션의 복잡한 접촉 기반 작업을 위해, 본 연구는 다중 시점 통합 카메라 필드(MVUCF)라는 훈련 프레임워크를 제안함. MVUCF는 여러 뷰에 걸쳐 공유된 action-facing 잠재장을 형성하고, 좌표 쿼리 깊이 및 대응 관계 목표를 통해 메트릭 깊이와 뷰 간 정합성을 동시에 확보함. 이 방법론은 추가 추론 FLOPs 없이 RGB 전용 환경에서 뛰어난 깊이 복구 및 크로스-뷰 매칭 성능을 입증하였으며, 실제 휴머노이드 환경에서도 높은 실용적 효과가 확인됨."
-  },
-  {
-    "title": "로봇 댄싱: 잔여 동작(Residual-Action) 강화 학습을 통한 로봇 휴머노이드의 견고한 장기 동작 추적 구현",
-    "original_title": "RobotDancing: Residual-Action Reinforcement Learning Enables Robust Long-Horizon Humanoid Motion Tracking",
-    "link": "https://arxiv.org/abs/2509.20717",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "장기적이고 역동적인 휴머노이드 동작 추적은 레퍼런스 동작과 로봇의 동역학적 불일치로 인해 불안정성이 발생하는 문제에 직면함. 이에 연구진은 동작을 참조 동작 대비 잔여 보정(residual correction)으로 간주하는 'RobotDancing'이라는 단일 단계 강화 학습 기법을 제안함. 이 방법은 정책이 동작 전체를 재합성하는 대신, 로봇의 구동 한계, 지연, 마찰 등 동역학적 불일치 보상에 집중하여, Unitree G1 등을 통해 장시간의 고에너지 댄스 동작 수행의 안정성을 확보했음."
-  },
-  {
-    "title": "DPL: 현실적인 깊이 합성 및 크로스-어텐션 지형 재구성을 통한 깊이 전용 휴머노이드 로커모션",
-    "original_title": "DPL: Depth-only Perceptive Humanoid Locomotion via Realistic Depth Synthesis and Cross-Attention Terrain Reconstruction",
-    "link": "https://arxiv.org/abs/2510.07152",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "기존 휴머노이드 로커모션의 깊이 이미지 기반 및 고도 지도 기반 방식의 한계를 극복하는 새로운 프레임워크가 제시됨. 이 프레임워크는 깊이 정보만 활용하는 지형 인식 정책과 Multi-Modality Cross-Attention Transformer, 그리고 Realistic Depth Images Synthetic Method를 통합하여 노이즈 깊이 이미지로부터 구조화된 지형 표현을 재구성함. 결과적으로 제한된 데이터와 자원에서도 효율적인 정책 학습이 가능하며, 실제 전신 로봇에 적용되어 다양한 험지에서 민첩하고 적응적인 보행 능력을 성공적으로 입증함."
-  },
-  {
-    "title": "HapticVLA: 추론 시간 촉각 센싱 없이 시각-언어-행동 모델로 접촉 기반 조작 실현",
-    "original_title": "HapticVLA: Contact-Rich Manipulation via Vision-Language-Action Model without Inference-Time Tactile Sensing",
-    "link": "https://arxiv.org/abs/2603.15257",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "VLA 아키텍처에서 필수적인 접촉 기반 조작 능력을 확보하는 HapticVLA를 제시함. 본 모델은 Safety-Aware Reward-Weighted Flow Matching(SA-RWFM)과 Tactile Distillation(TD)의 두 단계를 결합하여, 촉각 지식을 추출한 후 기존 VLA 모델에 통합함. 결과적으로, 온보드 촉각 센서가 필요함에도 불구하고 배포 과정에서 접촉 인식(tactile-aware)이 가능한 행동 생성을 구현하며, 높은 성공률을 기록함."
-  },
-  {
-    "title": "GenerativeMPC: 가상 임피던스를 활용한 VLM-RAG 기반 전신 MPC를 이용한 양팔 모바일 매니퓰레이션",
-    "original_title": "GenerativeMPC: VLM-RAG-guided Whole-Body MPC with Virtual Impedance for Bimanual Mobile Manipulation",
-    "link": "https://arxiv.org/abs/2604.19522",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 논문은 고수준의 의미론적 이해와 안전한 물리적 상호작용을 통합하는 GenerativeMPC라는 계층적 사이버-피지컬 프레임워크를 제시함. 이 시스템은 VLM-RAG를 통해 시각 및 언어적 컨텍스트를 전신 MPC의 동적 제약 조건과 가상 임피던스 제어의 컴플라이언스 게인으로 변환함. 실험 결과, 인간 근접 환경에서 60%의 속도 저감과 같이 안전하고 사회적 인지 능력을 갖춘 매니퓰레이션 및 내비게이션 구현이 가능함을 입증함."
-  },
-  {
-    "title": "정교한 조작을 위한 상호작용 동역학",
-    "original_title": "Interaction Dynamics for Dexterous Manipulation",
-    "link": "https://arxiv.org/abs/2606.14606",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "정교한 조작은 접촉력 제어와 안전성 확보를 포함하는 상호작용 역학 문제임. 본 연구는 constant-$A_d$ double-integrator 아키텍처를 기반으로 상호작용 동역학을 명시화하고, 500 Hz의 재귀 예측(receding-horizon QP) 제어를 통해 접촉력, 구동 제약 등 다중 제약을 처리함. 시뮬레이션 결과, 기존 임피던스 제어 대비 월등한 성능 향상을 입증하였으며, 16-DOF LEAP Hand MuJoCo 모델까지 확장 적용 가능함."
-  },
-  {
-    "title": "실패를 지도로 활용: 견고한 장기 지평체 임베디드 플래닝을 위한 DynamicEnvPlan",
-    "original_title": "From Failures to Supervision: DynamicEnvPlan for Robust Long-Horizon Embodied Planning",
-    "link": "https://arxiv.org/abs/2608.00613",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "물리적 환경의 비정상성(non-stationary condition)에 대응하기 위해, 실패를 학습 신호로 활용하는 폐쇄 루프 프레임워크 DynamicEnvPlan을 제안함. 해당 프레임워크는 휴머노이드 에이전트, 고수준 프리미티브 스킬, 구조화된 메모리 및 제어 가능한 교란(perturbations)을 통합하여 실패 상황을 복구 중심의 궤적(recovery-oriented traces)으로 전환함. 이러한 데이터셋을 활용한 지도 미세 조정(supervised fine-tuning) 결과, 기본 플래너 대비 성공률이 33.3%에서 76.2%로 향상되며, 실세계 상호작용에 필수적인 모든 평가 지표에서 성능 개선을 입증함."
-  },
-  {
-    "title": "프롬프트가 로봇을 통제하는 방식: 다중 에이전트 로봇 시스템에서의 프롬프트 주입 공격",
-    "original_title": "When Prompts Control Robots: Prompt Injection Attacks in Multi-Agent Robotic Systems",
-    "link": "https://arxiv.org/abs/2608.00747",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "자율 로봇 시스템에 LLM이 통합되면서 시스템 안전성에 대한 심각한 우려가 제기됨. 본 연구는 다중 에이전트 LLM 기반 시스템을 대상으로 직접 및 간접적인 프롬프트 주입 공격을 체계적으로 평가함. 실험 결과, 해당 공격이 시스템 내 적대적 행동을 유발하며 공유되는 프롬프트 구조를 통해 에이전트 간에 전파되어 손상도를 가중시키는 현상이 확인됨."
-  },
-  {
-    "title": "DynamicWAM: 동적 매니퓰레이션을 위한 World-Action Models의 이중 경로 모션 조건화",
-    "original_title": "DynamicWAM: Dual-Path Motion Conditioning for World-Action Models in Dynamic Manipulation",
-    "link": "https://arxiv.org/abs/2608.00793",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 기존 World-Action Models(WAMs)의 동적 환경에서의 모션 인지 및 반응성을 개선한 DynamicWAM을 제안함. DynamicWAM은 역사적 흐름(history-flow) 조건화와 운동학적 기술자(displacement, velocity, acceleration 등)를 결합한 이중 경로 모션 조건화를 도입하여 실시간 응답성을 확보함. 테스트 결과, DOMINO 및 12개 실세계 과제에서 기존 베이스라인 대비 획기적으로 높은 성공률과 조작 점수를 기록하는 것으로 검증됨."
-  },
-  {
-    "title": "FRA-NBV: 빠르고 반사 특성 인지형 다음 최적 뷰 전략",
-    "original_title": "FRA-NBV: A Fast and Reflectivity-Aware Next-Best-View Strategy",
-    "link": "https://arxiv.org/abs/2608.01950",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Depth 센서 기반 자율 3D 재구성은 반사 표면으로 인해 측정 오류 발생률이 높아 기존 Next-Best-View(NBV) 전략의 효과성이 크게 저하되는 문제점 존재함. 이에 본 연구는 Fast Reflectivity-Aware Next-Best-View(FRA-NBV) 전략을 제안하며, 사전 모델링 없이 반사로 인한 깊이 손실 문제를 다루는 것이 핵심임. 누락된 깊이 측정 분포를 이용해 반사 영역을 식별하고, 센서의 입사각을 변경하는 추가 포즈를 선정함으로써 재구성 커버리지를 획기적으로 개선하는 결과 보고함."
-  },
-  {
-    "title": "MemoAct: 로봇 매니퓰레이션을 위한 애트킨슨-쉬프린 기반 계층적 메모리 증강 정책",
-    "original_title": "MemoAct: Atkinson-Shiffrin-Inspired Hierarchical Memory-Augmented Policy for Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2603.18494",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "장기 기억 및 정확한 작업 상태 추적에 어려움을 겪던 기존 로봇 정책의 한계를 극복하기 위해, MemoAct를 제안함. 이 정책은 애트킨슨-쉬프린 모델에서 영감을 받아 Sensory, Short-Term, Long-Term의 세 가지 메모리 계층을 활용하는 것이 특징임. 또한 MemoryRTBench를 구축하여 순차적, 공간적, 일화적 메모리 능력을 체계적으로 평가하였으며, 기존 방법론 대비 우수한 성능을 입증함."
-  },
-  {
-    "title": "ARMOR: 물리적 공격 환경에서의 UAV를 위한 강건한 강화학습 기반 제어 구현",
-    "original_title": "ARMOR: Robust Reinforcement Learning-based Control for UAVs under Physical Attacks",
-    "link": "https://arxiv.org/abs/2506.22423",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "무인항공기(UAV)는 GPS 스푸핑과 같은 물리적 공격에 취약하여 안전 제어에 어려움을 겪는 문제 해결을 목표함. 제안된 ARMOR(Adaptive Robust Manipulation-Optimized State Representations)는 모델 프리(model-free) RL 컨트롤러로, 원시 센서 데이터에 의존하는 대신 두 단계 학습 프레임워크를 통해 공격에 강건한 잠재적 상태 표현을 학습함. 이 기법은 Teacher 및 Student 인코더 구성을 활용하여 공격 상황에서도 UAV의 안전한 운용을 보장하며, 높은 일반화 능력과 낮은 학습 비용을 입증함."
-  },
-  {
-    "title": "SynAgent: 단일(Solo)에서 협업(Cooperative) 에이전트 시너지를 활용한 일반화 가능한 휴머노이드 협업 조작",
-    "original_title": "SynAgent: Generalizable Cooperative Humanoid Manipulation via Solo-to-Cooperative Agent Synergy",
-    "link": "https://arxiv.org/abs/2604.18557",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "본 논문은 데이터 부족 및 다중 에이전트 조정의 어려움을 해결하기 위한 통합 프레임워크 SynAgent를 제시함. 이는 Interact Mesh 기반의 상호작용 보존 리타겟팅과 다중 에이전트 PPO를 활용하여 단일 에이전트의 기술을 협업 시나리오로 확장함. 실험 결과, SynAgent는 협업 모방 및 궤적 조건부 제어 능력 전반에서 기존 최고 성능 방식 대비 우수한 일반화 성능을 입증함."
-  },
-  {
-    "title": "Vision-Language-Action 모델의 위치적 사각지대 탐지 및 보완 방안 제시",
-    "original_title": "Uncovering and Mitigating Positional Blind Spots in Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2608.01573",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 매니퓰레이션에 활용되는 Vision-Language-Action (VLA) 모델은 공간적 전반에 걸친 균일한 성능을 가정하는 구조적 한계가 있음. 이에 본 논문은 그리드 기반 통계적 검정(log-likelihood-ratio test)을 활용하여 국소적인 높은 오류 위험 영역인 Positional Blind Spots (PBS)를 발견하는 프레임워크를 제안함. PBS가 확인된 영역의 시연 데이터로 LoRA를 사용해 정책을 정밀하게 미세 조정함으로써, 전반적인 로봇의 실패율을 실질적으로 대폭 감소시키는 성과를 달성함."
-  },
-  {
-    "title": "TravKAN: 콜모고로프-아놀드 네트워크를 이용한 빠르고 해석 가능한 비선형 이동 가능성 분석",
-    "original_title": "TravKAN: Fast and Interpretable Nonlinear Traversability Analysis with Kolmogorov-Arnold Networks",
-    "link": "https://arxiv.org/abs/2608.02320",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "자율 로봇의 이동 가능성 분석을 위해 해석 가능성을 높인 Kolmogorov-Arnold Network(KAN) 기반 프레임워크인 TravKAN을 제안함. TravKAN은 KAN 구조를 활용해 분석적 표현을 얻고, LiDAR 반사율 채널에서 도출된 새로운 수작업 특징(handcrafted features)을 결합하는 것이 핵심임. 평가 결과, TravKAN은 기존 딥러닝 모델보다 높은 성능을 보여주며, 안전 필수 시스템에 요구되는 실시간 계산 효율성과 투명성(Interpretability)을 모두 확보함을 입증함."
-  },
-  {
-    "title": "Good Weights: 연속적이고 견고한 Visual SLAM을 위한 능동적이고 적응형 Dead Reckoning 융합",
-    "original_title": "Good Weights: Proactive, Adaptive Dead Reckoning Fusion for Continuous and Robust Visual SLAM",
-    "link": "https://arxiv.org/abs/2509.22910",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Visual SLAM이 텍스처 부족 환경에서 발생하는 추적 손실 문제를 해결하기 위해 Good Weights (GW) 알고리즘이 제안됨. 이 알고리즘은 Dead Reckoning (DR) 데이터를 Passive Visual SLAM에 적응적으로 통합하는 프레임워크를 제공하는 것이 특징임. GW는 시각 트래킹의 신뢰도 변화에 따라 DR의 영향도를 능동적으로 조절하여, 외부 환경 변화에도 지속적이고 견고한 프레임 단위의 자세 추정이 가능하도록 함."
-  },
-  {
-    "title": "DriveCode: LLM 기반 자율 주행을 위한 도메인 특화 수치 인코딩",
-    "original_title": "DriveCode: Domain Specific Numerical Encoding for LLM-Based Autonomous Driving",
-    "link": "https://arxiv.org/abs/2603.00919",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "LLM 기반 자율 주행의 한계로 지적되던 수치 이산화 과정에서의 정밀도 손실 문제를 해결하기 위해, 본 논문은 숫자를 텍스트 토큰이 아닌 전용 임베딩으로 표현하는 새로운 방식 'DriveCode'를 제시함. DriveCode는 Number Projector를 활용하여 숫자를 언어 모델의 Hidden Space에 통합하며, OmniDrive 및 DriveGPT4 등 실제 데이터셋 평가를 통해 궤적 예측 및 제어 신호 생성에서 월등한 성능을 입증함."
-  },
-  {
-    "title": "강화 학습을 활용한 자전거 아크로바틱 동작 구현",
-    "original_title": "Bicycle Acrobatics with Reinforcement Learning",
-    "link": "https://arxiv.org/abs/2608.00880",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "본 연구는 Reinforcement Learning (RL)을 활용하여 구조적 한계가 있는 자전거 로봇이 다양한 아크로바틱 스턴트(점프, 플립, 휠리 등)를 자율적으로 학습하도록 하는 방법을 제시함. 웨이포인트 추적, 자세 도달 등 여러 RL 포뮬레이션과 상태 의존적 오케스트레이터를 도입하여 복잡한 장거리 아크로바틱 동작의 구현이 가능함을 입증함. 실제 자전거 로봇 UMV를 이용한 테스트 결과, 높은 연속성과 다양한 장애물 극복 능력을 보여주었으며, 이는 RL이 바퀴형 로봇에게 보행 플랫폼 수준의 고도화된 기동성을 부여할 수 있는 근거를 마련했음을 의미함."
-  },
-  {
-    "title": "핵심 영역 인지: VLA 모델을 위한 적응형 시각 정제",
-    "original_title": "Look Where It Matters: Adaptive Visual Refinement for Vision-Language-Action Models",
-    "link": "https://arxiv.org/abs/2608.02197",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "VLA 모델의 시각 표현은 공간적으로 정밀한 로봇 조작에 한계가 있으며, 전역 토큰 용량 제한으로 인해 중요한 공간 정보가 손실되는 문제점 발견. 이에 연구진은 시각 인코더에 학습 가능한 register 토큰을 삽입하는 AtVLA 프레임워크를 제안, 공간 정보의 손실을 보완하고 불확실성이 감지된 영역만 고해상도로 크롭하여 재인코딩하는 적응적 시각 정제 방식을 적용함. 그 결과, AtVLA는 다양한 벤치마크에서 로봇 성공률을 획기적으로 개선하며, 연산 비용 증가를 최소화하는 효율성도 확보했음을 입증함."
-  },
-  {
-    "title": "장기 지평선 양손 작업 및 모션 계획을 위한 접지 비전-언어 해석기",
-    "original_title": "Grounded Vision-Language Interpreter for Long-Horizon Bimanual Task and Motion Planning",
-    "link": "https://arxiv.org/abs/2506.03270",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존 Vision-Language Model(VLM)의 해석 가능성 부족 및 양손 협업 작업 처리 미흡 문제를 해결하기 위해, 본 논문은 검증 가능하고 자율적인 이도(Bimanual) 로봇 동작을 위한 하이브리드 계획 프레임워크인 ViLaIn-TAMP를 제안함. ViLaIn-TAMP는 VLM을 구조적 PDDL 문제로 변환하는 ViLaIn, 이를 실행 가능한 궤적으로 연결하는 TAMP, 그리고 모션 실패 피드백을 받아 VLM을 정교화하는 Corrective Planning(CP) 모듈로 구성됨. 주방 환경의 양손 작업을 통해 테스트 결과, ViLaIn-TAMP가 기존 VLM 기반 계획기보다 높은 평균 성공률을 보이며 실물 이도 로봇 시스템에서도 검증됨."
-  },
-  {
-    "title": "FabriVLA: 컨포멀 액션 청크 불확실성을 갖춘 경량 Vision-Language-Action 모델",
-    "original_title": "FabriVLA: A Lightweight Vision-Language-Action Model with Conformal Action Chunk Uncertainty",
-    "link": "https://arxiv.org/abs/2607.08575",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존 VLA 모델의 연산 비용 및 불확실성 인식 한계를 극복한 경량 모델 FabriVLA를 제시함. FabriVLA는 VLM 레이어 융합 및 액션 게이팅을 통해 효율성을 확보했으며, Meta-World MT50에서 0.88B 파라미터로 90.0%의 최고 성능을 기록함. 나아가 Joint Conformal Action Chunk Calibration(JCAC)이라는 후처리 기법을 추가하여 실행된 액션 접두사 전체의 위험도까지 정량화하는 감사 가능한(auditable) 로봇 매니퓰레이션 프레임워크를 제공함."
-  },
-  {
-    "title": "범용 언어 조건부 잠재 안전 필터 연구",
-    "original_title": "Towards General Language-Conditioned Latent Safety Filters",
-    "link": "https://arxiv.org/abs/2608.00315",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "VLA(Vision-Language-Action) 모델의 일반화 추세에 맞춰, 사용자 및 환경 변화에 대응하는 안전 필터링 기술의 필요성이 대두됨. 본 연구에서는 Hamilton-Jacobi 기반 안전 액터 및 크리틱을 언어 명시 제약 조건에 조건화하는 언어 조건부 안전 필터를 제안함. 그리퍼 작업, 테이블 닦기 등 비전 기반 환경에서 평가한 결과, 해당 필터가 제약 조건 위반을 줄이고 미지의 제약 조건에도 부분적으로 전이되는 성능을 입증함."
-  },
-  {
-    "title": "안전한 유도형 카테터-조직 상호작용을 위한 상호작용 동역학 모델링 및 예측 제어",
-    "original_title": "Interaction Dynamics Modeling and Predictive Control for Safe Steerable Catheter--Tissue Interaction",
-    "link": "https://arxiv.org/abs/2607.20939",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 카테터의 움직임이 계획된 궤적을 따르면서도 주변 조직에 손상을 주지 않도록 안전성을 확보하는 제어 문제를 다루며, 카테터-조직 상호작용 동역학을 모델링함. 단일 카테터의 움직임에 컨택트 포스(contact-force), 텐던 포스 등 물리적 경계를 포함하는 예측 최적화(predictive optimizer) 기반의 제어기가 적용됨. 시뮬레이션 결과, 이러한 명시적 제약 조건이 목표 추적(tracking)과 접촉 안전성이라는 상충될 수 있는 두 가지 핵심 목표를 동시에 만족시키는 데 결정적인 역할을 수행함이 입증됨."
-  },
-  {
-    "title": "접촉 기반 작업에서 VLA 모델의 실패 원인 분석 및 개선 방안 제시",
-    "original_title": "Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them",
-    "link": "https://arxiv.org/abs/2608.01402",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 정밀한 물리적 상호작용이 필요한 Contact-Rich Manipulation 작업에서 Vision-Language-Action (VLA) 모델의 실패 원인을 분석함. 그동안 간과되었던 실패의 근본 원인으로 Flow-Matching 기반의 Precision Failure와 Force Signal 구조에 기인한 Force Failure 두 가지를 규명함. 이를 동시에 개선한 FACT 메커니즘을 제시하며, 2,500회의 실환경 롤아웃 평가에서 이전 최고 성능 대비 평균 성공률을 41%에서 66%로 향상시키는 성과를 입증함."
-  },
-  {
-    "title": "DynamicManip: 단일 정적 시연 기반 동적 조작 역량 구현",
-    "original_title": "DynamicManip: Enabling Dynamic Manipulation from a Single Static Demonstration",
-    "link": "https://arxiv.org/abs/2608.01452",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 복잡한 동적 환경에서 발생하는 로봇의 동적 조작(Dynamic Manipulation) 난이도 극복을 위해 DynamicManip을 제안함. DynamicManip은 단일 정적 시연으로부터 다양한 동적 시연 데이터를 합성하는 static-to-dynamic 증강 파이프라인과, 과제 동역학에 맞춰 추론 빈도를 조정하는 dynamic-aware adaptive policy를 핵심적으로 활용함. 실험 결과, DynamicManip은 데이터 효율성을 대폭 개선했을 뿐만 아니라, mean success rate에서 18.4%p 향상, policy-query latency에서 32.9% 감소 등의 우수한 성능을 기록함."
-  },
-  {
-    "title": "샘플 효율적 및 일반화 가능한 군집 로봇 제어를 위한 로컬-표준화 동변환 Graph Neural Networks",
-    "original_title": "Local-Canonicalization Equivariant Graph Neural Networks for Sample-Efficient and Generalizable Swarm Robot Control",
-    "link": "https://arxiv.org/abs/2509.14431",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "Multi-agent reinforcement learning(MARL) 기반 군집 제어의 낮은 일반화 성능 및 비효율성 문제를 해결하기 위해, Local-Canonicalization Equivariant Graph Neural Networks(LEGO)라는 모듈형 정책 아키텍처가 제안됨. LEGO는 에이전트 중심의 Canonicalization과 역할 인지 Graph Encoding을 결합하여 전역 좌표계 의존성을 제거하고, 변동하는 팀 규모에 대응하는 E(2)-동변환 정책을 구현함. 그 결과, LEGO-MAPPO는 다양한 협력 및 경쟁 시뮬레이션 환경에서 샘플 효율성과 태스크 성능을 기존 모델 대비 향상시키며, 미훈련된 조건이나 일부 에이전트 손실 상황에서도 높은 범용성을 유지하는 것으로 확인됨."
-  },
-  {
-    "title": "로봇 매니퓰레이션에서의 목표 조건부 강화 학습을 위한 동적 대비 제어 기반 적응형 커리큘럼 계획(ACDC)",
-    "original_title": "ACDC: Adaptive Curriculum Planning with Dynamic Contrastive Control for Goal-Conditioned Reinforcement Learning in Robotic Manipulation",
-    "link": "https://arxiv.org/abs/2603.02104",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존의 목표 조건부 강화 학습 방식이 수집된 경험에 의존하여 최적화 성능에 한계를 보임에 따라, 다차원 적응형 커리큘럼(AC) 계획과 동적 대비(DC) 제어를 통합한 ACDC 패러다임이 제안됨. AC는 에이전트의 성공률 및 훈련 진행도에 따라 탐색과 활용의 균형을 조절하는 커리큘럼 스케줄링을 수행하며, DC는 이를 정규화 제약을 통해 경험 선택에 반영하여 학습을 가이드함. 실험 결과, ACDC는 까다로운 로봇 조작 작업에서 기존 SOTA 모델 대비 샘플 효율성 및 최종 과제 성공률에서 지속적인 우위를 입증함."
-  },
-  {
-    "title": "Mamba Policy: 하이브리드 선택 상태 모델 기반의 효율적인 3D Diffusion Policy 구현 접근",
-    "original_title": "Mamba Policy: Towards Efficient 3D Diffusion Policy with Hybrid Selective State Models",
-    "link": "https://arxiv.org/abs/2409.07163",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "3D 조작(3D manipulation) 분야에서 확산 모델(Diffusion models)은 높은 정확도를 보이나, 대규모 UNet 구조로 인한 자원 제약이 과제였음. 이에 본 연구는 효율적인 시퀀스 모델인 Mamba를 활용한 Mamba Policy를 제안하며, 이를 통해 기존 정책 네트워크 대비 파라미터를 80% 이상 절감함. 핵심인 XMamba Block을 도입하여 Mamba와 Attention 기법을 결합한 깊은 특징 추출이 가능하며, Adroit, Dexart, MetaWorld 등 주요 데이터셋에서 뛰어난 성능과 높은 견고성을 입증함."
-  },
-  {
-    "title": "실시간 월드 액션 모델 구현을 위한 비동기 배포 기반의 부드러운 실행 실증 연구",
-    "original_title": "World Action Models in Real Time: An Empirical Study of Smooth Execution via Asynchronous Deployment",
-    "link": "https://arxiv.org/abs/2608.01880",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "World Action Models(WAMs)의 반복적 denoising 과정에서 발생하는 높은 추론 지연(latency)으로 인해 로봇 실행 중 끊김이나 비연속성이 발생하여 실시간 제어에 어려움이 있었음. 이에 연구진은 모델 추론과 액션 실행을 중첩시키는 비동기 배포(asynchronous deployment) 전략을 10 Hz 양손 로봇 환경에서 실증적으로 비교함. 그 결과, Prefix-conditioned generation 방식이 일관된 액션 연속성을 학습하여 작업 성능, 실행 속도, 궤적 부드러움 간의 가장 균형 잡힌 성능을 달성하는 것으로 분석됨."
-  },
-  {
-    "title": "WAM 기반 선택적 정책 개입을 위한 협력 계약 프레임워크, CoWAM",
-    "original_title": "CoWAM: Coordination Contracts for Selective Policy Intervention with WAMs",
-    "link": "https://arxiv.org/abs/2608.02578",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "World Action Models(WAMs)의 정책 개입 한계를 극복하기 위해, CoWAM은 동기화와 역할 호환성을 계약 형태로 표현하는 선택적 개입 계층을 제안함. 이 프레임워크는 안전성을 최우선으로 하여 명목 행동을 유지하되, 모든 의무를 충족하는 명확하고 낮은 위험도의 개선이 있을 때만 개입하는 방식임. 시뮬레이션된 양손 태스크에서 CoWAM은 선택적 협력 유효성 및 폐루프 성공률을 크게 향상시키며, 안전한 정책 개입의 효율적인 인터페이스 역할을 성공적으로 입증함."
-  },
-  {
-    "title": "Roomer: 3D 실내 레이아웃 합성을 위한 반영적 객체 기반 모델 편집 및 복구",
-    "original_title": "Roomer: Reflective Object-Grounded Model Editing and Repair for 3D Indoor Layout Synthesis",
-    "link": "https://arxiv.org/abs/2608.01973",
-    "date": "2026-08-04 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존 3D 실내 레이아웃 생성 모델은 전역적으로 그럴듯한 구조를 만들지만, 충돌이나 막힘 같은 국소적 위반이 잔존하는 문제점 보유함. 이에 Roomer라는 반영적 복구 프레임워크를 제시하며, 오류를 특정 객체에 기반한 희소한 복구 문제로 정의함. 이 시스템은 구조적 로컬 편집을 제안하고, 전역 검증을 거쳐 기존 위반을 해결하면서도 유효한 영역의 손상 없는 복구를 목표로 함. 나아가 물리적 유효성 및 실용성을 평가하는 Roomer-Eval을 새롭게 도입함."
-  },
-  {
-    "title": "Unitree, 휴머노이드 로봇 수요 증가에 힘입어 2026년 상반기 매출 35% 이상 증가 전망",
-    "original_title": "Unitree sees 1H26 revenue rise over 35% on humanoid robot demand - digitimes",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS3NWLVdtcFVSZmQtbGNXSjVjYnRJQTl3NGJhWGN5R3QwZFNUR2FWUmJvRHFsdFRTYmp1d1pSNFkyMFU4U2NHNmt1V3hkeGROWkZUejctanlWVko5aWI1X1lBRkRvN282Q29sRHJ6ZFlROHFMb1NrUks1bmJVX0xraU01cHlxYWlF?oc=5",
-    "date": "2026-08-03 23:53",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "Unitree가 휴머노이드 로봇 시장의 높은 수요를 바탕으로 2026년 상반기(1H26) 매출이 35% 이상 증가할 것으로 전망함. 해당 성장세는 로봇 산업의 구조적 변화와 관련되며, 시장 분석 매체인 digitimes를 통해 관련 내용이 공개됨."
-  },
-  {
-    "title": "미국발 중국 로봇 신규 금지 조치, 역효과를 낼 수 있음",
-    "original_title": "The US ban on new Chinese robots could backfire - The Business Times",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMDhnVGVjekRvdG4yX0hpQXo2WHhvQlJEWVNyOFBhR0RSMGpidE1mVTEzR1FVM3ZiR0hBWDZuY1BjQUp2TFhEWXJpaEVMX0ozZDlSY3c3NDhIdnd5YWhNSlpVS0QzdVpPWV9RaFNrT3N5Q0dVdjAyeGtqRzR2OHcySndOY29henYyZFBDY1IxQk9VUUxk?oc=5",
-    "date": "2026-08-03 23:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "미국이 중국산 신규 로봇 도입에 제재를 가할 경우, 기술 시장 및 공급망 전반에 걸쳐 부정적인 영향이나 예상치 못한 역효과가 발생할 수 있다는 분석이 제기됨. 이는 미국의 정책이 무역 장벽으로 작용할 가능성을 시사함."
-  },
-  {
-    "title": "igus, 산업용 로봇용 600도 회전 에너지 체인 출시",
-    "original_title": "igus launches energy chain with 600-degree rotation for industrial robots",
-    "link": "https://www.therobotreport.com/igus-launches-energy-chain-600-degree-rotation-industrial-robots/",
-    "date": "2026-08-03 21:06",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "igus가 최대 600도 회전을 지원하는 새로운 twisterchain 에너지 체인을 공개함. 해당 제품은 팔레타이징과 같은 난이도 높은 산업용 로봇 애플리케이션에서 안정적인 케이블 관리를 제공하여 시스템의 신뢰성 향상에 기여할 것으로 예상됨."
-  },
-  {
-    "title": "FCC, Unitree 북미 판매 제한됨; 아시아 배포 및 IPO 수요일 개시 예정",
-    "original_title": "FCC Barred Unitree From North America: Asia Deployment and IPO Open Wednesday - Tech Times",
-    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOR1JyNWFQU2wxd1JrXzZyS1RHUFBQWmZPWS0yM2k5bTczQ194ZFpaU1hVOGpjMWprc3FBeTJYRHBQa2VnbkU0cC0xVHVscTN3emlwLURMYWZYRnUwamsyaDZTQU51UldxM0d6MUFOTnRoZ2I5UmJKVEZELVVLbHJFdE8wZUtRZTZnUUVMVW1kZGFvaXlJa2lrTGdTUDR2UXplYXI5LXkwZlV4SUZCdWwzTVQ1ZndfU2FuSWw5VTltcw?oc=5",
-    "date": "2026-08-03 19:57",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "FCC에 의해 Unitree의 북미 지역 판매가 제한됨에 따라, 해당 기업은 아시아 시장을 중심으로 제품 배포 전략을 전개하는 것으로 알려짐. 또한, Unitree의 IPO가 오는 수요일에 개시될 예정임."
-  },
-  {
-    "title": "HEBI Robotics, 소형 액추에이터 개발 가속화를 위한 NASA SBIR 보조금 확보",
-    "original_title": "HEBI Robotics earns NASA SBIR grant to fast track miniaturized actuators",
-    "link": "https://www.therobotreport.com/hebi-robotics-earns-nasa-sbir-grant-fast-track-miniaturized-actuators/",
-    "date": "2026-08-03 17:17",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "HEBI Robotics가 Phase I 단계의 NASA SBIR 보조금을 획득함. 해당 수상은 회사의 전체 로드맵 중 일부에 불과하며, 기존 액추에이션 하드웨어 개발을 지속할 계획임을 밝힘."
-  },
-  {
-    "title": "미국 정부, 중국산 로봇 수입 차단 조치 발표",
-    "original_title": "U.S. Government Blocks Import of Chinese Robots - Assembly Magazine",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNSUxjcGM0WUplSTVlNm9BSm5laFZLU0tEX0tPbUtoOU5sRnlleDMtclVnVkxHeGlEcGRnSDVDU0xhc09NMDBPendJdjA4SzVLUXlJWXFUM3Z4bG5RcVhyUE85bEJBMVJUMnV5X1JJVWNsRzdqLXpiSWF3aWhZMURHX3V1TUgxRkRtdV9wV2ZiaWVRY00?oc=5",
-    "date": "2026-08-03 17:06",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "미국 정부가 국가 안보 및 기술적 이유로 중국산 로봇 제품의 수입을 전면적으로 차단하는 조치를 시행함. 이는 대중국 첨단 기술 규제 흐름의 일환으로 해석됨. 해당 조치는 로봇 산업 공급망 및 관련 시장에 중대한 변화를 예고함."
-  },
-  {
-    "title": "월든 로보틱스, 실용적 휴머노이드 로봇 개발 위해 도요타와 협력 체결",
-    "original_title": "Walden Robotics Partners With Toyota on Practical Humanoids",
-    "link": "https://spectrum.ieee.org/humanoid-robots-walden-robotics-toyota",
-    "date": "2026-08-03 16:05",
-    "source": "IEEE Spectrum",
-    "category": "humanoid",
-    "summary": "월든 로보틱스(Walden Robotics)는 TRI의 스핀오프 기업으로서, 연구 중심에서 벗어나 실제 산업 현장에 필요한 가치 중심의 실용적 휴머노이드 로봇 개발에 집중함. 이들은 개발 과정에서 레그(leg) 기반 대신 안정성과 통합성이 높은 휠(wheeled) 기반을 채택했으며, 제조 및 물류 현장의 반복적이고 단순한 작업을 주요 타겟 시장으로 설정함. 월든은 단순한 상업적 성공을 넘어, 도요타의 철학에 따라 로봇 기술이 노동자의 삶의 질 향상에 기여하는 데 목표를 두고 점진적인 시장 확대를 계획함."
-  },
-  {
-    "title": "LLM 보안 기본: 전체 위협 모델 분석",
-    "original_title": "LLM Security Basics: The Full Threat Model",
-    "link": "https://blog.bytebytego.com/p/llm-security-basics-the-full-threat",
-    "date": "2026-08-03 15:31",
-    "source": "ByteByteGo",
-    "category": "humanoid",
-    "summary": "본 기사는 LLM의 보안을 위협하는 전체 공격 표면(full attack surface)을 분석하는 내용을 담고 있음. 이를 통해 LLM 시스템의 취약점을 종합적으로 파악하고 위협 모델을 구축하는 방법을 제시함."
-  },
-  {
-    "title": "자동화 기업의 단일 공급업체 종속성 탈피 및 AI 통합 방안",
-    "original_title": "How Automation Companies Add AI Without Locking into One Provider",
-    "link": "https://roboticsandautomationnews.com/2026/08/03/how-automation-companies-add-ai-without-locking-into-one-provider/103847/",
-    "date": "2026-08-03 15:16",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "자동화 및 로보틱스는 신뢰할 수 있는 하드웨어와 고도화된 소프트웨어 결합이 핵심임. 소프트웨어 부문은 인공지능(AI) 중심으로 빠르게 전환되는 추세이며, 비전 시스템, 자연어 인터페이스, 예측 모델 등 다양한 AI 기술이 현장 적용되고 있음."
-  },
-  {
-    "title": "샤오즈 주간 뉴스: Unitree, 8월 10일 IPO 청약 진행 및 AgiBot, 홍콩 상장 추진함",
-    "original_title": "XiaoZhi Weekly News | Unitree IPO subscription on August 10; AgiBot launches HK listing process - Gasgoo",
-    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNd3VFd1dnc25JUTJrQTE5ZWVpUmg3Z2ZKNVluUHdRYVA1bF9XNmh1eWV5SUlVMURyUVhTbHN2UThLTDRRcnpkLVF3dEgwZjVYOS1Bdm9QQjBWX25ycm5ZOVdvbUptSG96LV9rX1ZETXJnUGdFaGNlaEVXSnBsWVg1UFZPZ0xiR3ZCTlBUMVZJeGwteTVodmxoY0tnakYwNFVtVW9ZM1hVSEVnSXREc1R0S3J0QllGUzUtUmF2LWVzWmYtYS1uZ3hEcFk5STM4TzhVN3Ewd1ZESGQwNWU5Z2pTX0FPaVpkcUpSZUE?oc=5",
-    "date": "2026-08-03 14:44",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "샤오즈(XiaoZhi) 주간 뉴스에 따르면, 로봇 기업 Unitree가 8월 10일 IPO 청약을 앞두고 있음. 또한, 관련 로봇 기업인 AgiBot이 홍콩 증시(HK listing) 상장 절차를 시작한 것으로 알려짐."
-  },
-  {
-    "title": "플로리다에서 감가상각가치, 전손, 공정시장가치 평가를 위한 독립 차량 감정사 선정 가이드",
-    "original_title": "How to Choose an Independent Car Appraiser in Florida for Diminished Value, Total Loss, and Fair Market Value Assessments",
-    "link": "https://roboticsandautomationnews.com/2026/08/03/how-to-choose-an-independent-car-appraiser-in-florida-for-diminished-value-total-loss-and-fair-market-value-assessments/103844/",
-    "date": "2026-08-03 13:30",
-    "source": "Robotics & Automation News",
-    "category": "hand",
-    "summary": "독립적인 차량 감정은 클레임 및 법률 문제 발생 시 객관적인 차량 가치를 확보하는 데 필수적임. 보험사들이 차량 가치를 저평가할 수 있어, 독립 감정사를 통해 편견 없는 보고서를 확보하는 것이 중요함. 이러한 전문 보고서는 재산권 보호와 감가상각가치, 전손 등에 대한 협상 과정에서 강력한 근거 자료로 활용됨."
-  },
-  {
-    "title": "전문 시스템 통합업체를 통한 로봇 생산 셀 시운전 위험 감소 방안",
-    "original_title": "How certified systems integrators reduce commissioning risk in robotic production cells",
-    "link": "https://roboticsandautomationnews.com/2026/08/03/how-certified-systems-integrators-reduce-commissioning-risk-in-robotic-production-cells/103840/",
-    "date": "2026-08-03 13:04",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "로봇 생산 셀의 시운전은 로봇 제어, 구동 장치, 안전 기능, 현장 기기 및 플랜트 네트워크 등 다양한 시스템 간의 정교한 통합 테스트를 필요로 함. 로봇 셀이 쇼룸에서는 정상 작동하더라도, 실제 공장 환경에서는 구동 장치 파라미터 오류 등 설정상의 문제로 가동에 지연이 발생할 수 있음. 따라서 인증된 시스템 통합업체가 개입하여 이러한 복잡한 시운전 과정에서 발생하는 위험 요소를 최소화하는 것이 중요함."
-  },
-  {
-    "title": "로봇 및 자동화 시스템을 위한 컴패니언 모바일 앱 설계",
-    "original_title": "Designing Companion Mobile Apps for Robotics and Automation Systems",
-    "link": "https://roboticsandautomationnews.com/2026/08/03/designing-companion-mobile-apps-for-robotics-and-automation-systems/103837/",
-    "date": "2026-08-03 12:16",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "로봇 시스템의 제어 및 운영 영역이 물리적 설비에서 작업자의 스마트폰이나 태블릿 등 모바일 디바이스로 확장되는 추세임. 이에 따라 컴패니언 앱은 단순한 보조 기능을 넘어, 하드웨어만큼 중요한 역할을 수행하고 있음. 현장 관리자는 앱을 통해 설비의 상태를 원격으로 점검하고, 유지보수 기술자는 현장 접근 전 사전 진단 작업을 수행하며 운영 효율성이 높아지고 있음."
-  },
-  {
-    "title": "중국 UBTech, 소비자용 휴머노이드 로봇 시리즈 선주문 13,361건 기록",
-    "original_title": "China's UBTech logs 13,361 preorders for consumer humanoid robot series - 디지털투데이",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQ25fNDV1aURvdmNHRTVubkU2Z05aYU1MX3kxRXVqRmdBQmx5TlJXVm5ac3RGUHMzRloxaHZHc1NPZXJReUhyWEJEZ3U1NW1HNmtlNnVoVktiZ0ZrNjJVNW0takoxcWdEdWN4VDB3eVVYT3hwdndJNGlWWGVtVFRtUTFmam4td3YzOElIaUhHOVo0eko5MG44UnVhd1BoZE0ybkZR?oc=5",
-    "date": "2026-08-03 12:00",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "중국 UBTech가 개발한 소비자용 휴머노이드 로봇 시리즈가 시장의 주목을 받음. 해당 로봇은 총 13,361건의 선주문을 달성하며 중국 소비자 로봇 시장에서의 높은 상업적 성공 가능성을 입증함."
-  },
-  {
-    "title": "시뮬레이션 제브라피쉬 및 시각 로봇 물고기를 이용해 신체 구조가 뇌 회로에 미치는 영향 규명",
-    "original_title": "Simulated zebrafish and a vision-equipped robotic fish reveal how the body shapes brain circuits",
-    "link": "https://robohub.org/simulated-zebrafish-and-a-vision-equipped-robotic-fish-reveal-how-the-body-shapes-brain-circuits/",
-    "date": "2026-08-03 11:17",
-    "source": "Robohub",
-    "category": "humanoid",
-    "summary": "물고기가 강물 흐름에 맞서 위치를 유지하려면 속도와 방향을 계산하는 복잡한 제어 능력이 필요함. 대부분의 물고기는 시각을 활용하여 주변 환경의 흐름(optic flow)을 감지하고 방향을 파악하는 것으로 알려짐. 연구진은 시뮬레이션 제브라피쉬와 시각 장착 로봇 물고기를 활용하여 이러한 생체 메커니즘을 분석하고 뇌 회로 연결 방식을 규명함."
-  },
-  {
-    "title": "AGIBOT 파운데이션 모델, 오디오-비주얼 추론 벤치마크 최고 성능 달성",
-    "original_title": "AGIBOT’s foundation model tops benchmark test for audio-visual reasoning",
-    "link": "https://roboticsandautomationnews.com/2026/08/03/agibots-foundation-model-tops-benchmark-test-for-audio-visual-reasoning/103832/",
-    "date": "2026-08-03 09:29",
-    "source": "Robotics & Automation News",
-    "category": "humanoid",
-    "summary": "AGIBOT의 멀티모달 파운데이션 모델 'WITA-Omni Preview'가 'Daily-Omni' 오디오-비주얼 추론 벤치마크에서 최고 점수를 기록함. 해당 모델은 85.21%의 평균 정확도를 기록하며 Alibaba, Google, ByteDance 등 주요 경쟁사들의 모델을 능가하는 성과를 발표함. 이는 AI 기술 분야에서 AGIBOT의 기술력을 입증한 결과임."
-  },
-  {
-    "title": "리이마진 로보틱스, 현장 학습 로봇으로 베일 벗다",
-    "original_title": "Reimagine Robotics emerges from stealth with robots that ‘learn on the job’",
-    "link": "https://www.therobotreport.com/reimagine-robotics-emerges-stealth-with-robotslearn-on-the-job/",
-    "date": "2026-08-03 07:00",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "구글 딥마인드의 전직 로보틱스 리더들이 설립한 Reimagine Robotics가 전문 프로그래밍 지식이 필요 없는 시스템 개발을 발표함. 해당 기업은 현장에서 스스로 학습하며 작동하는 로봇 기술을 공개하며 시장에 진출함."
-  },
-  {
-    "title": "일본, 중국 Unitree Robotics로부터 혁신 학습하는가?",
-    "original_title": "Is Japan Learning Innovation Lessons from China's Unitree Robotics? - 36 Kr",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9IWWQ3TFFmS3A3bWdNc3dTdUgzUUhZcDBlSUR3V25ZZTR0cXhDMEgxd2cxazNpQ0xOYzRHcVEyWkQ5Q3EtbzhUOEVZZjBzYl9nYng0?oc=5",
-    "date": "2026-08-03 05:42",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "일본이 중국의 Unitree Robotics를 중심으로 급성장하는 로봇 기술 혁신 사례를 주시하며 학습하고 있는지 분석함. 해당 내용은 중국의 로봇 기술 발전이 일본 로봇 산업에 미칠 잠재적 영향과 경쟁 구도를 조명하는 데 초점을 맞추고 있음."
-  },
-  {
-    "title": "지체형 로봇의 발전 방향, 과제, 그리고 기회 탐색",
-    "original_title": "Advances, challenges, and opportunities for legged robots",
-    "link": "https://arxiv.org/abs/2607.28952",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "휴머노이드 및 사족 보행 로봇이 산업 및 사회에 혁명을 가져올 잠재력이 분석됨. 본 연구는 하드웨어, 구동, 자율성 등 현 시스템의 역량을 종합적으로 평가하고, 광범위한 상용화를 위해 극복해야 할 핵심 기술적 과제들을 제시함. 또한 로봇이 가져올 윤리적 고려사항, 경제적 잠재력, 정책적 함의 등 사회 전반에 걸친 미래 전망을 논하고 있음."
-  },
-  {
-    "title": "VSTaI: 3D 프린팅 구조 직물을 이용한 가변 강성 촉각 인터페이스의 설계 및 특성 분석",
-    "original_title": "VSTaI: Design and Characterization of Variable-Stiffness Tactile Interfaces Based on 3D-Printed Structured Fabrics",
-    "link": "https://arxiv.org/abs/2607.29102",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존 시뮬레이터가 구현하기 어려웠던 연조직 강성 변화 묘사를 위해, 3D 프린팅 구조 직물의 진공 유도 잼밍을 활용한 가변 강성 촉각 인터페이스(VSTaI)가 개발됨. 내부 압력 조절을 통해 강성을 서브-메가파스칼(MPa)에서 메가파스칼 수준까지 크게 증폭시키며, 특정 패턴에서는 최대 140%의 강성 증가를 구현함. 본 기술은 높은 형태 적응성을 유지하면서 강성을 조절할 수 있어, 신체 검진 훈련을 위한 실용적인 하드웨어로 활용 가능함."
-  },
-  {
-    "title": "CLIFT: 비침습적 폐쇄 루프 반복 미세 조정을 통한 Gemini Robotics On-Device의 휴머노이드 전문가화",
-    "original_title": "CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning",
-    "link": "https://arxiv.org/abs/2607.29172",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "기존의 로봇 기초 모델들은 Proprietary한 폐쇄형 구조로 인해 SFT(Supervised Fine-Tuning) API 기반의 제한적 학습만 가능했음. 연구진은 고난이도 접촉 기반 작업에서 발생하는 정책 개선의 간극을 메우기 위해 CLIFT(Closed-Loop Iterative Fine-Tuning)를 개발함. CLIFT는 배포 시점의 보상 피드백을 API 호환 데이터로 전환하여, 모델의 내부 가중치나 기울기 접근 없이 폐쇄 루프 개선을 실현하며 GROD를 거의 완벽한 성공률로 끌어올림을 입증함."
-  },
-  {
-    "title": "까다로운 조명 환경에서의 이벤트 기반 상체 휴머노이드 텔레오퍼레이션",
-    "original_title": "Event-Based Upper-Body Humanoid Teleoperation Under Challenging Illumination",
-    "link": "https://arxiv.org/abs/2607.29227",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "본 연구는 이벤트 기반 비전(event-based vision)을 활용하여 상체 동작을 인간으로부터 휴머노이드에 실시간으로 모방하는 프레임워크 제시함. 고정 적분 시간으로 인해 발생하는 기존 RGB 센서의 HDR 및 저조도 환경 문제를 해결하기 위해 고대역동 범위를 가진 Prophesee EVK4 이벤트 카메라를 사용함. 저지연 인식 모듈과 키네마틱 리타겟팅을 통합한 해당 시스템은 임베디드 NVIDIA Booster T1 플랫폼에서 23~34ms의 엔드투엔드 지연 시간을 달성하며, 특히 조명이 불안정한 상체 원격 조작 환경에서 RGB 기반 시스템 대비 높은 실용적 우위를 입증함."
-  },
-  {
-    "title": "TacPrint: 인간-로봇 상호작용 접촉 재현을 위한 웨어러블 핑거팁 촉각 센서",
-    "original_title": "TacPrint: A Wearable Fingertip Tactile Sensor for Human-to-Robot Contact Reproduction",
-    "link": "https://arxiv.org/abs/2607.29231",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "TacPrint라는 웨어러블 핑거팁 촉각 센서가 개발되어 인간-로봇 접촉 상호작용 데이터 수집의 난제를 해결함. 본 센서는 실리콘 피부에 24개의 커패시티브 taxel을 배치하여 미세한 손가락 끝 접촉을 국소적으로 포착하는 원리임. 이를 통해 얻어진 정밀한 접촉 깊이 맵(contact-depth map) 데이터는 인간-로봇 재현 시 촉각 안내 기반 보상(tactile-guided compensation)을 구현하여 그리핑 및 와이핑 성공률을 대폭 향상시키는 성과를 보임."
-  },
-  {
-    "title": "Coarse-Zone VLM 추론 기반 의미적 어포던스 안내 파지 계획 (SAGP)",
-    "original_title": "SAGP: Semantic Affordance-Guided Grasp Planning via Coarse-Zone VLM Reasoning",
-    "link": "https://arxiv.org/abs/2607.29374",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존의 파지 계획 방식은 기능적 의미를 무시하여 비실용적인 파지를 생성하는 문제가 있었음. 본 연구에서는 이러한 한계를 극복하기 위해 'Semantic Affordance-Guided Grasp Planning (SAGP)'을 제안하며, 정밀 세분화 과정 없이 Coarse-Zone 추상화 레이어를 통해 물체 영역을 분할함. VLM을 활용하여 각 영역의 파지 적합성을 평가하고 기하학적 정보와 융합함으로써, 높은 성공률을 유지하면서도 기능적으로 적합한 파지 계획을 도출함을 입증함."
-  },
-  {
-    "title": "다양한 길이의 신축성 섬유 자동 직선 봉제 시스템 기술",
-    "original_title": "Automated Straight-line Sewing of Stretchable Fabrics with Different Lengths",
-    "link": "https://arxiv.org/abs/2607.29464",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 길이가 다른 신축성 섬유를 직선으로 봉제하는 까다로운 과정(DLAS)을 해결하고자 새로운 로봇 봉제 시스템인 DLRoSS를 제안함. DLRoSS는 6-DoF 매니퓰레이터와 롤러형 엔드-이펙터를 활용하여 섬유 감기, 실시간 봉제 및 정렬, 봉제 완료, 섬유 분리 등 4단계의 자동화된 과정을 구현함. 실험 결과, 해당 시스템은 다양한 소재와 길이의 신축성 섬유에 걸쳐 일관되고 높은 품질의 봉제 성능을 달성함을 입증함."
-  },
-  {
-    "title": "TransGraspNet: 투명 실험 장비의 물리적 및 기하학적 일관성을 갖춘 조작 기술",
-    "original_title": "TransGraspNet: Physically and Geometrically Consistent Manipulation of Transparent Labware",
-    "link": "https://arxiv.org/abs/2607.29567",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "투명 실험 장비 조작은 오류 발생 시 위험도가 높아 안정적인 파지 기술이 핵심임. 기존 시스템은 인식, 깊이 복원, 파지 계획이 독립적이라 오차와 불안정성이 발생함. TransGraspNet은 경계, 표면, 물리적 일관성이라는 세 가지 원칙을 통합하여 인식부터 실행까지의 일관성을 확보함. 이로써 복잡한 환경에서도 높은 파지 성공률과 액체 유출이 없는 실세계 운용 성능을 구현함."
-  },
-  {
-    "title": "물체 질량을 고려한 휴머노이드 균형 제어 연구: 트레이드오프 분석 및 리프팅 제어",
-    "original_title": "Balancing of Humanoid with Object Mass: Trade-off Analyses and Lifting Control",
-    "link": "https://arxiv.org/abs/2607.29625",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "물체 질량의 동적 효과를 전신 역학(whole-body dynamics)에 반영하여 휴머노이드의 균형 안정성을 분석함. 연구진은 Biped 시스템의 균형 상태 영역(BSB)을 구축하고, 물체 질량에 따른 모멘텀 조절 능력과 시스템의 제한 요소 간의 트레이드오프 관계를 정량화함. 특히 '임계 질량(critical mass)'과 '전환 질량(transition mass)'을 핵심 파라미터로 제시하고, 이를 BSB 기반 전신 궤적 최적화에 적용하여 안정적인 물체 리프팅 및 유지 제어를 성공적으로 구현하였음."
-  },
-  {
-    "title": "다양한 다리형 로봇을 위한 시스템적 Sim-to-Real 전이 연구 제시",
-    "original_title": "Towards bridging the gap: Systematic sim-to-real transfer for diverse legged robots",
-    "link": "https://arxiv.org/abs/2509.06342",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "실환경 적용을 위해서는 에너지 효율성과 로코모션의 안정성이 필수적이나, 기존의 Sim-to-Real 방식은 액추에이터의 에너지 손실을 간과하는 문제점을 지님. 이에 본 논문은 물리 기반의 에너지 모델을 강화학습(RL)에 통합한 새로운 프레임워크를 제시하며, 전자기적 및 기계적 소산을 반영하는 간결한 보상 구조를 활용함. 다수의 플랫폼에서 검증된 결과, ANYmal의 전송 비용(Cost of Transport)을 기존 최고 성능 대비 32%까지 절감하는 등 탁월한 정책 전이 성능을 입증함."
-  },
-  {
-    "title": "DuetHOI: 언어 기반의 관절 계획 및 접촉 정제를 통한 양손-물체 동작 생성",
-    "original_title": "DuetHOI: Language-Guided Bimanual Hand--Object Motion Generation with Articulation Planning and Contact Refinement",
-    "link": "https://arxiv.org/abs/2603.08390",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 논문은 양손과 관절 물체 간의 복잡한 상호작용 생성을 위한 구조적 프레임워크 DuetHOI를 제안함. DuetHOI는 ContactVAE를 통해 접촉 의도를 예측하고, ArtPlanner와 DualFormer를 결합하여 물체 상태 기반의 전역적 상호작용을 생성함. 이후 ProxiRefine을 사용하여 손-물체 근접성을 정밀하게 보정하여 국부적인 표면 정렬을 개선하였으며, 다수의 실험에서 기존 대비 높은 성능을 입증함."
-  },
-  {
-    "title": "운동역학적 다중 접촉 전신 궤적 최적화를 통한 휴머노이드 보행 모션 리타겟팅",
-    "original_title": "Kinodynamic Motion Retargeting for Humanoid Locomotion via Multi-Contact Whole-Body Trajectory Optimization",
-    "link": "https://arxiv.org/abs/2603.09956",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "본 연구는 기존 모션 캡처(MoCap) 데이터 기반 리타겟팅 방식의 물리적 비일관성 문제를 해결하는 Kinodynamic Motion Retargeting (KDMR) 프레임워크를 제시함. KDMR은 리타겟팅 과정을 다중 접촉 전신 궤적 최적화 문제로 모델링하고, 강체 역학 및 지면 반력력(GRF) 측정을 통합하여 복잡한 인간의 접촉 패턴을 재현함. 실험 결과, KDMR은 기존 운동학적 방법 대비 역동적으로 실현 가능한 기준 궤적을 성공적으로 생성하여, 다운스트림 제어 정책의 수렴 속도와 전반적인 보행 안정성을 크게 향상시키는 것으로 입증됨."
-  },
-  {
-    "title": "ActFovea: 시공간적 시각-행동 일관성을 통한 VLA 정책의 런타임 안전 보장",
-    "original_title": "ActFovea: Runtime Safeguarding for VLA Policies via Spatiotemporal Visual-Action Consistency",
-    "link": "https://arxiv.org/abs/2607.29169",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 매니퓰레이션에 사용되는 VLA(Vision-Language-Action) 정책이 런타임 환경의 방해에 취약하다는 문제를 해결함. 이에 ActFovea라는 플러그 앤 플레이 안전 프레임워크가 제안됨. ActFovea는 로봇 운동학 및 프로프리오셉티브 상태를 활용하여 시각-행동 영역에 초점을 맞추고, 시각 정보와 기하학적/행동적 변화 간의 시공간적 일관성을 평가함으로써 런타임 오류를 탐지하고 안전한 복구를 수행함을 입증함."
-  },
-  {
-    "title": "MDIR: 접촉 기반 원격 조작을 위한 태스크 매니폴드 임피던스 리타겟팅 기법",
-    "original_title": "MDIR: A Task-Manifold Impedance Retargeting Method for Contact-Rich Teleoperation",
-    "link": "https://arxiv.org/abs/2607.29271",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "고정 카테시안 임피던스는 접촉이 많은 원격 조작에서 충격 및 힘 변동성을 야기하는 문제점을 안고 있음. 본 연구에서 제안된 MDIR(Manifold-Decomposed Impedance Retargeting)은 기록된 컨트롤러를 태스크 채널 변수 임피던스 명령으로 결정론적으로 재매개변수화하는 방식을 제시함. MDIR은 작업, 노력, 지지 채널을 분리하여 분석하고 Manifold-Constrained Parameter Optimization (MPO)을 적용함으로써, 고정 임피던스 대비 낮은 손목 힘 피크 및 힘 변동성을 보이며 Franka Panda 기반의 다양한 작업에서 성공적인 성능을 입증함."
-  },
-  {
-    "title": "GPA-RAM: 공간적 태스크 학습을 위한 파지 사전 학습 강화 로봇 어텐션 만바",
-    "original_title": "GPA-RAM: Grasp-Pretraining Augmented Robotic Attention Mamba for Spatial Task Learning",
-    "link": "https://arxiv.org/abs/2504.19683",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 연구는 정밀 로봇 조작 시 초기 파지 오류로 발생하는 문제를 해결하고자, 파지 사전 학습 강화(GPA) 기술과 효율적인 실시간 처리를 위한 로봇 어텐션 만바(RAM)를 결합한 GPA-RAM 프레임워크를 제안함. GPA-RAM은 RLBench 및 ALOHA 등의 플랫폼에서 기존 방법 대비 현저히 높은 평균 성공률을 기록함. 이는 정밀한 조작 능력과 높은 처리 속도의 실시간 로봇 구동 능력을 동시에 달성했음을 의미함."
-  },
-  {
-    "title": "배리어 강화 흐름 매칭을 통한 안전한 시각-언어-행동 모델",
-    "original_title": "Safe Vision Language Action Models via Barrier Enhanced Flow Matching",
-    "link": "https://arxiv.org/abs/2607.29569",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 논문은 Flow Matching 생성 모델과 Control Barrier Function (CBF) 안전 보장 기법을 결합한 모듈형 추론 프레임워크를 제시함. 기존의 외부 필터링 방식과 달리, 모델의 노이즈 제거 과정 자체를 수정하여 안전성을 내재적으로 생성하는 것이 핵심임. 이는 추가적인 안전 데이터셋이나 모델 재학습 없이도 로봇 매니퓰레이션 및 2D 내비게이션 등 다양한 플랫폼에서 높은 신뢰도의 안전성을 확보할 수 있음을 검증함."
-  },
-  {
-    "title": "조작 대상 선택의 중요성: 바운딩 박스를 활용한 시맨틱 조작 데이터 스케일링 법칙 규명",
-    "original_title": "Choose What to Manipulate: Revealing Data Scaling Laws in Bounding-Box Guided Policies for Semantic Manipulation",
-    "link": "https://arxiv.org/abs/2602.11885",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "텍스트 명령 기반 정책의 한계를 극복하기 위해, 본 연구는 바운딩 박스 지침을 활용하여 목표 대상을 직접 지정하는 Semantic Manipulation 프레임워크를 제안함. 이를 위해 Label-UMI라는 자동화된 세분화 장비를 구축하고, object detection과 bounding-box-guided diffusion policy를 결합한 새로운 Semantic-motion-decoupled 프레임워크를 개발함. 실험 결과, 데이터 일반화 성능이 포화되는 데이터 스케일링 법칙을 규명했으며, 6,400개의 데모를 통해 복잡한 환경에서도 85%의 높은 성공률을 달성했음을 보고함."
-  },
-  {
-    "title": "접촉 환경 조작을 위한 시간 경로 지정 액션 청크 및 연대기적 단계 권한 (TRACT: Temporally Routed Action Chunks with Chronological Phase Authority for Contact-Rich Manipulation)",
-    "original_title": "TRACT: Temporally Routed Action Chunks with Chronological Phase Authority for Contact-Rich Manipulation",
-    "link": "https://arxiv.org/abs/2607.29285",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "로봇 모방 학습에서 발생하는 시간적 불일치 문제를 해결하기 위해 TRACT라는 액션 청크 구조를 제시함. 이는 과업별 그래프를 활용하여 액션을 현재 단계와 미래의 단일 경계로 분해하고, 접촉 기반 동작을 위해 원인 기반 응답 부족 적분기를 도입하여 정책 의도와 실제 움직임을 정밀하게 비교함. 실robot 테스트 결과, TRACT는 풀 시퀀스 성공률 10/10 및 99.00%의 위프(wipe) 완료율을 기록했으며, 기존 대비 단계 모호성 및 정지 현상 발생을 모두 0/10으로 감소시킴을 입증함."
-  },
-  {
-    "title": "CorrelationFlow: LiDAR 장면 흐름 추정을 위한 트레이닝 프리 기하학적 접근법",
-    "original_title": "CorrelationFlow: A Training-Free Geometric Approach for LiDAR Scene Flow Estimation",
-    "link": "https://arxiv.org/abs/2607.29237",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "기존 LiDAR 장면 흐름 추정 방법들이 특정 아키텍처와 손실 함수에 의존하는 구조적 취약성을 내포하는 문제를 지적함. 본 논문은 트레이닝이 불필요한 CorrelationFlow라는 기하학적 프레임워크를 제시하며, 장면 흐름 문제를 연결 요소 분할 및 상관관계 극대화 같은 고전 컴퓨터 비전 연산으로 환원시키는 방식임. 이 방법은 단일 스윕 쌍에 적용 가능한 희소 대안을 개발하여 Argoverse 2 2026 챌린지 등에서 높은 신뢰성을 보여주었으며, 장면 흐름 문제 해결에 있어 고전 CV 기법의 역할을 재조명함."
-  },
-  {
-    "title": "Fast Feature Field ($\\text{F}^3$): 이벤트의 예측적 표현",
-    "original_title": "Fast Feature Field ($\\text{F}^3$): A Predictive Representation of Events",
-    "link": "https://arxiv.org/abs/2509.25146",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "본 논문은 event-based camera 데이터를 처리하기 위한 새로운 예측적 표현 $\\text{F}^3$를 제시함. $\\text{F}^3$는 과거 이벤트를 예측하여 미래 이벤트를 모델링함으로써 장면 구조와 움직임 정보를 보존하며, 이벤트 데이터의 희소성 및 변화에 강한 특성을 가짐. 해당 방법은 광학 흐름, 의미 분할, 단안 깊이 추정 등 다양한 하류 과제에서 최첨단 성능을 달성했으며, 자율주행 차량, 사족 보행 로봇 등 다양한 로봇 플랫폼 및 환경 조건에서 그 효용성이 입증됨."
-  },
-  {
-    "title": "AquaJEPA: 수중 로봇 동역학을 위한 액션 조건 기반 다중 모드 예측 표현",
-    "original_title": "AquaJEPA: Action-Conditioned Multimodal Predictive Representations for Underwater Robot Dynamics",
-    "link": "https://arxiv.org/abs/2607.29393",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "수중 로봇의 가시성 및 환경 변화에 따른 센서 신뢰도 문제를 해결하기 위해 액션 조건 기반 다중 모드 예측 모델인 AquaJEPA가 소개됨. 이 모델은 RGB 카메라, 전방 소나, 전정감각 데이터를 행동 명령과 결합하여 통합 예측하고, 공유 레세딩-호라이즌 플래너에 속도 및 소나 프로파일을 제공함. 120개 환경의 테스트 결과, AquaJEPA는 DVL(도플러 가속도계) 손실 조건 하에서도 기존의 상태 기반 또는 순환형 세계 모델 대비 현저히 낮은 평균 최종 오차를 달성하며 우수한 폐루프 성능을 입증함."
-  },
-  {
-    "title": "반복 학습 기반 반응형 접근법을 활용한 중복 다중 링크 및 하이브리드 케이블 구동 병렬 로봇의 삼공간 운용 제어",
-    "original_title": "Tri-Space Operational Control of Redundant Multilink and Hybrid Cable-Driven Parallel Robots Using an Iterative-Learning based Reactive Approach",
-    "link": "https://arxiv.org/abs/2607.29500",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "본 논문은 케이블 구동 병렬 로봇(CDPR)의 고질적인 삼공간 제어 문제를 해결하기 위해 Reactive Control(RC)과 Iterative-Learning Control(ILC)을 결합한 새로운 삼공간 제어 프레임워크를 제안함. 이 프레임워크는 운용 공간 궤적 추적을 실시간으로 수행하는 동시에, 케이블 간섭 및 구동성 손실을 회피함. 또한, Null Space 벡터에 대한 최적 파라미터를 찾아내어 반복 실행 시 시스템 성능 향상을 유도하며, 이는 다양한 실제 로봇 하드웨어에 효과적으로 적용 가능함이 입증됨."
-  },
-  {
-    "title": "Dual-Force: 모방 제약 하에서의 향상된 오프라인 다양성 극대화",
-    "original_title": "Dual-Force: Enhanced Offline Diversity Maximization under Imitation Constraints",
-    "link": "https://arxiv.org/abs/2501.04426",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "humanoid",
-    "summary": "오프라인 환경에서 모방 제약 조건을 기반으로 행동의 다양성을 극대화하는 알고리즘 Dual-Force가 제안됨. 본 알고리즘은 기존 방식의 불안정성을 해결하기 위해 스킬 판별기를 제거하고 VdW force estimator를 활용하여 다양성을 최대화하며, Functional Reward Encoding (FRE)을 통해 내재적 보상을 안정화함. Solo12 시뮬레이션 벤치마크(로코모션 및 장애물 탐색)에서 다양한 고성능 행동을 성공적으로 재현하고 적대적 변화에 대한 높은 강건성을 입증함."
-  },
-  {
-    "title": "RynnBrain 1.1: 더욱 능숙하고 범용적인 구현 기반 모델을 향한 발전",
-    "original_title": "RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model",
-    "link": "https://arxiv.org/abs/2607.17977",
-    "date": "2026-08-03 04:00",
-    "source": "ArXiv (Robotics)",
-    "category": "hand",
-    "summary": "RynnBrain 1.1은 2B부터 122B-A10B 규모까지의 구현 기반 모델군으로, 통합된 시공간 및 물리 기반 프레임워크를 통해 로봇의 인식, 공간 추론, 계획 능력을 지원함. 특히 모델군에 접촉점 예측 및 3D 네이티브 접지 기능을 추가하여 로봇 조작(manipulation) 분야에서 표현력을 높인 것이 주요 개선점임. 122B-A10B 모델은 VSI-Bench, MMSI 등 다수의 벤치마크에서 기존의 선도적 모델들을 능가하는 성능을 기록했으며, 실로봇 환경에서도 다중 임무 및 다중 구현체 훈련 시 높은 성공률을 입증함."
-  },
-  {
-    "title": "EngineAI 설립자, 중국의 글로벌 휴머노이드 로봇 선도 잠재력 제시",
-    "original_title": "China has potential to lead global humanoid robotics: Founder of EngineAI - AOL.com",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNT05FcEc1Y29uR20xUFJCeGdXU0tWb3pDTTBnaFlSeWRVZ2hxNHRaZTA5bmRMSHFQYUxpVFJyeFRoaEQzTFBDTEhFVEV4b0FkblI2RDRSQkhKUktaUFo2S3hfaTlQV1V2Z3FPeXVJUUc0VS10aUYzV2x6anZOMmI4Y2RRRWQtUUU?oc=5",
-    "date": "2026-08-02 19:31",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "EngineAI 설립자가 중국이 글로벌 휴머노이드 로봇 산업을 선도할 잠재력을 가졌다고 분석함. 해당 발언은 중국의 로봇 기술 생태계가 급속히 성장하며 시장을 주도할 수 있는 기반을 갖추었음을 시사함."
-  },
-  {
-    "title": "딥마인드, Gemini Robotics 2로 전신 제어 능력 구현 가능 발표",
-    "original_title": "Google DeepMind says Gemini Robotics 2 enables full body control",
-    "link": "https://www.therobotreport.com/google-deepmind-says-gemini-robotics-2-enables-full-body-control/",
-    "date": "2026-08-02 12:31",
-    "source": "The Robot Report",
-    "category": "humanoid",
-    "summary": "Google DeepMind에 따르면 Gemini Robotics 2는 로봇이 모든 동작에 대해 추론할 수 있는 능력을 부여함. 이는 로봇이 기존보다 훨씬 폭넓은 범위의 다양한 작업을 수행할 수 있도록 핵심적인 기능을 개방함으로 분석됨."
-  },
-  {
-    "title": "EngineAI 설립자 Lelezard, \"중국이 글로벌 휴머노이드 로봇 분야를 주도할 잠재력을 가짐\"",
-    "original_title": "China has potential to lead global humanoid robotics: Founder of EngineAI - Lelezard",
-    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBiWW1MTy1uaWtwc2x1Y1dKOXBqNnB4NWRuc21nYjFEdjR5SDdHa2FpUFEweHBUWHdkYTdmMC1UMWNMU3VXSmhDMWFPMWpLZENkYjhiSVNfNmZLUQ?oc=5",
-    "date": "2026-08-02 09:01",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "EngineAI의 설립자인 Lelezard는 중국이 글로벌 휴머노이드 로봇 분야를 주도할 상당한 잠재력을 보유하고 있다고 분석함. 이는 중국 시장의 급성장과 기술 역량을 근거로 제시된 관점임."
-  },
-  {
-    "title": "중국, 글로벌 휴머노이드 로보틱스 시장을 주도할 잠재력 보유: EngineAI 창업자 분석",
-    "original_title": "China has potential to lead global humanoid robotics: Founder of EngineAI - us.acrofan.com",
-    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qbGZ6dGZ2NmpDZDVUZ0ZHV3hmc3JlUUpfcGpNbUdseGw4UERudjM1WXMwZHlJdzhRcE1qV093ckxJcmJLWF9jTmItY3l1UGt0RVZFQi0zS3JsdFd6?oc=5",
-    "date": "2026-08-02 08:02",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "EngineAI 창업자가 중국이 글로벌 휴머노이드 로보틱스 시장을 선도할 강력한 잠재력을 지녔다고 분석 발표함. 해당 분석은 중국의 급격한 기술 발전 속도와 거대한 시장 수요가 주요 동력임을 강조함. 이는 중국이 미래 로보틱스 산업의 핵심 주역이 될 것이라는 전망임."
-  },
-  {
-    "title": "엔진AI 창립자, \"중국이 글로벌 휴머노이드 로봇 시장을 주도할 잠재력 보유\"",
-    "original_title": "China has potential to lead global humanoid robotics: Founder of EngineAI - StreetInsider",
-    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQci1ZaW1CSVZHdTd0cXp6ZE5ETUZTSWJjLVNKdE5BQk9NOHE2bWpEeC1Oa2RhdFhuRmVDdGszM0hvYWItbkpBTm9FYV96OGJtMVlhdnY5bm0xVXRGSUhUS2lJcDExdUxWTDBVQlNZREpxTDNJcVBWc2J3VEl3d3plSjVFSXg3V296NXAxVWlGSTlTM0JxRnlYenZKWnV1TmNpMTZncW1Eci1QQmVQaGxNMGRPWTJONkR6TnZGZ2x1U1NPMmNrQk9xVjZ3?oc=5",
-    "date": "2026-08-02 07:40",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "EngineAI의 창립자는 중국이 글로벌 휴머노이드 로봇 분야를 선도할 강력한 잠재력을 지녔다고 분석함. 이는 중국의 막대한 자본력과 정부 지원 아래 로봇 공학 산업이 빠르게 성장하고 있음을 시사함. 해당 기고는 글로벌 시장의 향후 핵심 경쟁 구도와 중국의 로봇 기술 발전을 조명함."
-  },
-  {
-    "title": "EngineAI 창립자, 중국이 글로벌 휴머노이드 로보틱스를 선도할 잠재력 지적",
-    "original_title": "China has potential to lead global humanoid robotics: Founder of EngineAI - PR Newswire",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWHVLMjk2VlBZeFBYemdNVm5mbTdmQ1RPS1V0UjRLTDdoN1gxLW1BM09XMXBXQm5DVjVtcnBJM2VZSnl0WnFBXy14ZGZmbThOSGJ2YlBPajJKRTZwbWZwSzdIZ3pjOFpJSlJjMDJ3U3VKME9VLUJ2NnZQaC1Gc213MTExSXRIOHY5WWdfdUY1ajdFRVMzSjVRR3YwQ0hsR3N1UWY4NEdxX0lkVjJGeGtMaXVUaTc0SmVHa2RDek5kMWRUZi1sMmRV?oc=5",
-    "date": "2026-08-02 07:38",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "EngineAI 창립자는 중국이 글로벌 휴머노이드 로보틱스 분야에서 선도적인 역할을 수행할 강력한 잠재력을 갖추고 있다고 평가함. 해당 분석은 중국의 거대한 시장 규모와 빠른 기술 발전 속도를 근거로 제시함."
-  },
-  {
-    "title": "EngineAI 설립자, 글로벌 휴머노이드 로봇 시장 선도 가능성 언급",
-    "original_title": "China has potential to lead global humanoid robotics: Founder of EngineAI - IT비즈뉴스",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02MTYtTkdmXzNBc1hFaUM3WTMxdk1GcG1CblZOam82VFZveUl2UTdqNW1BR3FQSkpVQUlncmNjWEk5R1dzbXk2SjNMR3JZU0N1VHNZWjNqbDFEUHlGMEFVNFllajg5Qk16TEUwcA?oc=5",
-    "date": "2026-08-02 07:38",
-    "source": "Google News (China Robotics - KR)",
-    "category": "humanoid",
-    "summary": "EngineAI의 창립자는 중국이 글로벌 휴머노이드 로봇 시장을 이끌어갈 강력한 잠재력을 지니고 있다고 분석함. 이는 중국이 급변하는 로봇 공학 분야에서 주요 시장 리더로 급부상할 것임을 시사하는 전문적인 의견임."
-  },
-  {
-    "title": "중국, 글로벌 휴머노이드 로봇 시장 선도 가능성 제시: EngineAI 창립자 발언",
-    "original_title": "China has potential to lead global humanoid robotics: Founder of EngineAI - Yahoo Finance",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcWY1VUNGNk1XeTMxSllrNUFUaW41NTBHRE5NTnNTZlp5MUY5bkQ5TTUzT3BPR0pLMWh0SExxd1lUckRRa1JYLUgydXF2emNHNFN1aEJNWXpVQUdjZHNyNzlvRkNud1BkSzE2MUctT1VaX1N0dHktUWhrMDdPanhPYkZzck9peWtYOW83aHdyM0s1WF9DQnFxbUdYN1N2WGdqb1E?oc=5",
-    "date": "2026-08-02 07:38",
-    "source": "Google News (China Robotics - EN)",
-    "category": "humanoid",
-    "summary": "EngineAI의 창립자는 중국이 전 세계 휴머노이드 로봇 공학 분야에서 주도권을 잡을 잠재력을 보유하고 있다고 분석함. 이는 중국의 기술 개발력과 시장 역량을 바탕으로 한 글로벌 시장 전망 제시임."
   }
 ]
